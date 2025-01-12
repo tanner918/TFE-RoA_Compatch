@@ -1,0 +1,285 @@
+﻿
+d_damot = {
+	361.1.1 = {	change_development_level = 1 }
+	532.1.1 = {	change_development_level = 2 }
+	768.1.1 = {	change_development_level = 3 }
+	763.1.1 = {
+		liege = 0
+		holder = 145970
+		government = tribal_government
+	}
+}
+
+
+c_damot = {
+
+	361.1.1 = {
+		holder = welayta_01
+		government = tribal_government
+	}
+	460.1.1 = {
+		holder = welayta_06
+	}
+	523.1.1 = {
+		holder = welayta_11
+	}
+	623.1.1 = {
+		holder = welayta_16
+	}
+	763.1.1 = {
+		liege = "d_damot"
+		holder = 145970
+	}
+}
+
+
+c_berta = {
+	361.1.1 = {	change_development_level = 0 }
+	768.1.1 = {	change_development_level = 1 }
+	361.1.1 = {
+		holder = welayta_01
+	}
+	460.1.1 = {
+		holder = welayta_06
+	}
+	523.1.1 = {
+		holder = welayta_11
+	}
+	623.1.1 = {
+		holder = welayta_16
+	}
+	760.1.1 = {
+		holder = welayta_21
+		liege = d_damot
+	}
+	
+}
+
+
+c_wellega = {
+	361.1.1 = {	change_development_level = 0 }
+	768.1.1 = {	change_development_level = 1 }
+	361.1.1 = {
+		holder = welayta_02
+	}
+	460.1.1 = {
+		holder = welayta_07
+	}
+	523.1.1 = {
+		holder = welayta_12
+	}
+	623.1.1 = {
+		holder = welayta_17
+	}
+	760.1.1 = {
+		holder = welayta_21
+		liege = d_damot
+	}
+	
+}
+
+
+c_innarya = {
+	361.1.1 = {
+		holder = welayta_03
+	}
+	460.1.1 = {
+		holder = welayta_08
+	}
+	523.1.1 = {
+		holder = welayta_13
+	}
+	623.1.1 = {
+		holder = welayta_18
+	}
+	763.1.1 = {
+		liege = "d_damot"
+		holder = 145970
+		government = tribal_government
+	}
+}
+
+
+c_kaffa = {
+	361.1.1 = {	change_development_level = 0 }
+	532.1.1 = {	change_development_level = 1 }
+	768.1.1 = {	change_development_level = 2 }
+	361.1.1 = {
+		holder = welayta_02
+	}
+	460.1.1 = {
+		holder = welayta_07
+	}
+	523.1.1 = {
+		holder = welayta_12
+	}
+	623.1.1 = {
+		holder = welayta_17
+	}
+	760.1.1 = {
+		holder = welayta_22
+	}
+}
+
+
+c_welamo = {
+	361.1.1 = {	change_development_level = 1 }
+	768.1.1 = {	change_development_level = 2 }
+	361.1.1 = {
+		holder = welayta_03
+	}
+	460.1.1 = {
+		holder = welayta_08
+	}
+	523.1.1 = {
+		holder = welayta_13
+	}
+	623.1.1 = {
+		holder = welayta_18
+	}
+	760.1.1 = {
+		holder = welayta_22
+	}
+}
+
+
+c_gamo = {
+	361.1.1 = {	change_development_level = 0 }
+	768.1.1 = {	change_development_level = 1 }
+	361.1.1 = {
+		holder = aari_misc_01
+	}
+	395.1.1 = {
+		holder = aari_misc_02
+	}
+	476.1.1 = {
+		holder = aari_misc_03
+	}
+	532.1.1 = {
+		holder = aari_misc_04
+	}
+	632.1.1 = {
+		holder = aari_misc_05
+	}
+	769.1.1 = {
+		holder = aari_misc_06
+	}
+}
+
+
+c_sharka = {
+	361.1.1 = {	change_development_level = 1 }
+	532.1.1 = {	change_development_level = 2 }
+	768.1.1 = {	change_development_level = 3 }
+
+	361.1.1 = {
+		holder = welayta_04
+	}
+	460.1.1 = {
+		holder = welayta_09
+	}
+	523.1.1 = {
+		holder = welayta_14
+	}
+	623.1.1 = {
+		holder = welayta_19
+	}
+	758.1.1 = {
+		liege = "k_abyssinia"
+		holder = 145973
+		government = tribal_government
+	}
+}
+
+
+c_burji = {
+	361.1.1 = {	change_development_level = 0 }
+	768.1.1 = {	change_development_level = 1 }
+	361.1.1 = {
+		holder = aari_misc_01
+	}
+	395.1.1 = {
+		holder = aari_misc_02
+	}
+	476.1.1 = {
+		holder = aari_misc_03
+	}
+	532.1.1 = {
+		holder = aari_misc_04
+	}
+	632.1.1 = {
+		holder = aari_misc_05
+	}
+	769.1.1 = {
+		holder = aari_misc_06
+	}
+}
+
+
+c_dara = {
+	361.1.1 = {	change_development_level = 0 }
+	768.1.1 = {	change_development_level = 1 }
+
+	361.1.1 = {
+		holder = welayta_05
+	}
+	460.1.1 = {
+		holder = welayta_10
+	}
+	523.1.1 = {
+		holder = welayta_15
+	}
+	623.1.1 = {
+		holder = welayta_20
+	}
+	760.1.1 = {
+		holder = welayta_23
+	}
+
+}
+
+
+c_hadya = {
+	361.1.1 = {	change_development_level = 1 }
+	532.1.1 = {	change_development_level = 2 }
+	768.1.1 = {	change_development_level = 3 }
+
+	361.1.1 = {
+		holder = welayta_04
+	}
+	460.1.1 = {
+		holder = welayta_09
+	}
+	523.1.1 = {
+		holder = welayta_14
+	}
+	623.1.1 = {
+		holder = welayta_19
+	}
+	758.1.1 = {
+		liege = "k_abyssinia"
+		holder = 145973
+		government = tribal_government
+	}
+}
+
+c_waj = {
+
+	361.1.1 = {
+		holder = welayta_04
+	}
+	460.1.1 = {
+		holder = welayta_09
+	}
+	523.1.1 = {
+		holder = welayta_14
+	}
+	623.1.1 = {
+		holder = welayta_19
+	}
+	758.1.1 = {
+		liege = "k_abyssinia"
+		holder = 145973
+		government = tribal_government
+	}
+}

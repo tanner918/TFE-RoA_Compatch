@@ -1,0 +1,247 @@
+﻿totalitarian_edict = {
+	default = totalitarian_edict_unenacted
+	cumulative = no
+	flag = edict
+	flag = first
+
+	totalitarian_edict_unenacted = {
+		modifier = {
+		}
+		can_keep = { 
+			has_imperial_laws = yes 
+		}
+
+		can_pass = { 
+			has_imperial_laws = yes 
+		}
+		
+		pass_cost = {
+			gold = 0
+		}
+		
+		on_pass = { }
+	}
+	
+	totalitarian_edict_enacted = {
+		modifier = {
+			monthly_income = -5
+			dread_baseline_add = 10
+			monthly_piety_gain_per_dread_mult = 0.15
+			monthly_prestige_gain_per_dread_mult = 0.15
+			dread_gain_mult = 0.1
+		}
+
+		can_keep = { 
+			has_imperial_laws = yes 
+			AND = {
+				has_realm_law = mil_law_4_2
+				has_realm_law = civic_law_3_5
+			}
+		}
+		
+		pass_cost = {
+			gold = 50
+		}
+		
+		on_pass = { }
+	}
+}
+
+frugality_edict = {
+	default = frugality_edict_unenacted
+	cumulative = no
+	flag = edict
+
+	frugality_edict_unenacted = {
+		modifier = {
+		}
+		flag = hidden_policy
+		can_keep = { 
+			has_imperial_laws = yes 
+		}
+
+		can_pass = { 
+			has_imperial_laws = yes 
+		}
+		
+		pass_cost = {
+			gold = 0
+		}
+		
+		on_pass = { }
+	}
+	
+	frugality_edict_enacted = {
+		modifier = {
+			monthly_income = -5
+			army_maintenance_mult = -0.2
+			men_at_arms_maintenance = -0.1
+			men_at_arms_maintenance_per_dread_mult = -0.01
+			build_gold_cost = -0.2
+		}
+
+		can_keep = { 
+			has_imperial_laws = yes 
+			AND = {
+				has_realm_law = mil_law_3_2
+				has_realm_law = civic_law_4_3
+			}
+		}
+
+		
+		pass_cost = {
+			gold = 50
+		}
+		
+		on_pass = { }
+	}
+}
+
+populating_edict = {
+	default = populating_edict_unenacted
+	cumulative = no
+	flag = edict
+
+	populating_edict_unenacted = {
+		modifier = {
+		}
+		flag = hidden_policy
+		can_keep = { 
+			has_imperial_laws = yes 
+		}
+
+		can_pass = { 
+			has_imperial_laws = yes 
+		}
+		
+		pass_cost = {
+			gold = 0
+		}
+		
+		on_pass = { }
+	}
+	
+	populating_edict_enacted = {
+		modifier = {
+			monthly_county_control_growth_add = 0.1
+			minority_different_culture_opinion = -5
+			controlled_province_advantage = 3
+			monthly_income = -5
+		}
+
+		can_keep = { 
+			has_imperial_laws = yes 
+			AND = {
+				has_realm_law = mil_law_3_1
+				has_realm_law = diplo_law_3_5
+			}
+		}
+
+		
+		pass_cost = {
+			gold = 50
+		}
+		
+		on_pass = { }
+	}
+}
+
+logistics_edict = {
+	default = logistics_edict_unenacted
+	cumulative = no
+	flag = edict
+
+	logistics_edict_unenacted = {
+		modifier = {
+		}
+		flag = hidden_policy
+		can_keep = { 
+			has_imperial_laws = yes 
+		}
+
+		can_pass = { 
+			has_imperial_laws = yes 
+		}
+		
+		pass_cost = {
+			gold = 0
+		}
+		
+		on_pass = { }
+	}
+	
+	logistics_edict_enacted = {
+		modifier = {
+			supply_capacity_mult = 0.1
+			character_travel_speed_mult = 0.1
+			movement_speed = 0.05
+			monthly_income = -5
+		}
+
+		can_keep = { 
+			has_imperial_laws = yes 
+			AND = {
+				has_realm_law = mil_law_2_3
+				has_realm_law = civic_law_4_2
+			}
+		}
+
+		
+		pass_cost = {
+			gold = 50
+		}
+		
+		on_pass = { }
+	}
+}
+
+envoy_edict = {
+	default = envoy_edict_unenacted
+	cumulative = no
+	flag = edict
+	flag = last
+
+	envoy_edict_unenacted = {
+		modifier = {
+		}
+		flag = hidden_policy
+		can_keep = { 
+			has_imperial_laws = yes 
+		}
+
+		can_pass = { 
+			has_imperial_laws = yes 
+		}
+		
+		pass_cost = {
+			gold = 0
+		}
+		
+		on_pass = { }
+	}
+	
+	envoy_edict_enacted = {
+		modifier = {
+			general_opinion = 5
+			independent_ruler_opinion = 5
+			diplomatic_range_mult = 0.1
+			monthly_prestige = 0.25
+			monthly_income = -5
+		}
+
+		can_keep = { 
+			has_imperial_laws = yes 
+			AND = {
+				has_realm_law = diplo_law_2_3
+				has_realm_law = civic_law_4_2
+			}
+		}
+
+		
+		pass_cost = {
+			gold = 50
+		}
+		
+		on_pass = { }
+	}
+}

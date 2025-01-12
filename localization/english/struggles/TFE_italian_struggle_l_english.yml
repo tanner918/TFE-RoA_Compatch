@@ -1,0 +1,118 @@
+﻿l_english:
+ TFE_italian_struggle_region: "Italia"
+ TFE_italian_struggle_region_minus_constantinople: "Italia"
+ TFE_struggle_italian_ends_tt:0 "The [italian_struggle|E] ends"
+ ITALIAN_STRUGGLE:0 "[italian_struggle|E]"
+ TFE_italian_struggle_begins:0 "The [italian_struggle|E] [struggle|E] begins"
+ TFE_every_county_in_italian_struggle_region:0 "Every [county|E] in [GetGeographicalRegion('TFE_italian_struggle_region_minus_constantinople').GetName]"
+ every_direct_and_indirect_vassal:0 "Every direct and indirect [vassal|E]"
+ every_direct_and_indirect_roman_vassal:0 "Every direct and indirect [vassal|E] of $heritage_hellenistic_name$ or $heritage_latin_name$ [heritage|E]"
+ every_direct_and_indirect_non_roman_vassal:0 "Every direct and indirect [vassal|E] NOT of $heritage_hellenistic_name$ or $heritage_latin_name$ [heritage|E]"
+ every_courtier_and_guest_roman:0 "Every [courtier|E] and [guest|E] of $heritage_hellenistic_name$ or $heritage_latin_name$ [heritage|E]"
+ every_courtier_and_guest_non_roman:0 "Every [courtier|E] and [guest|E]  NOT of $heritage_hellenistic_name$ or $heritage_latin_name$ [heritage|E]"
+ TFE_italian_struggle_no_independent_king_or_emperor:0 "There are no other [independent|E] [rulers|E] of [king|E] or [emperor|E] [rank|E] in [GetGeographicalRegion('TFE_italian_struggle_region').GetName]"
+ TFE_italian_struggle_no_independent_king_or_emperor_no_constantinople:0 "There are no other [independent|E] [rulers|E] of [king|E] or [emperor|E] [rank|E] in [GetGeographicalRegion('TFE_italian_struggle_region').GetName] (not counting [GetTitleByKey('c_byzantion').GetNameNoTier])"
+ TFE_every_ruler_in_italia:0 "Every [ruler|E] in [GetGeographicalRegion('TFE_italian_struggle_region').GetName]"
+ subjugator_opinion:0 "Barbarian Subjugator"
+
+ # Phases
+ italian_struggle: "$game_concept_italian_struggle$"
+ struggle_TFE_italian_phase_devastation: "Devastation"
+ struggle_TFE_italian_phase_devastation_desc: "$game_concept_struggle_phase_italian_devastation_desc$"
+ struggle_TFE_italian_phase_turmoil: "Turmoil"
+ struggle_TFE_italian_phase_turmoil_desc: "$game_concept_struggle_phase_italian_turmoil_desc$"
+ struggle_TFE_italian_phase_rebuilding: "Rebuilding"
+ struggle_TFE_italian_phase_rebuilding_desc: "$game_concept_struggle_phase_italian_rebuilding_desc$"
+
+ # Catalysts
+ catalyst_TFE_major_historical_event_devastation:0 "Major historical event (Devastation)"
+ catalyst_TFE_major_historical_event_devastation_desc:0 "Major historical event (Devastation)"
+ catalyst_TFE_major_historical_event_turmoil:0 "Major historical event (Turmoil)"
+ catalyst_TFE_major_historical_event_turmoil_desc:0 "Major historical event (Turmoil)"
+ catalyst_TFE_major_historical_event_rebuilding:0 "Major historical event (Rebuilding)"
+ catalyst_TFE_major_historical_event_rebuilding_desc:0 "Major historical event (Rebuilding)"
+ catalyst_TFE_roman_grain:0 "Took the [decision|E] to $distribute_bread_decision$ as a [culture|E] without the $tradition_bread_and_circuses_name$ [tradition|E] [struggle_catalyst_catalyst|E]"
+ catalyst_TFE_roman_grain_desc:0 "Take the [decision|E] to $distribute_bread_decision$ as a [culture|E] without the $tradition_bread_and_circuses_name$ [tradition|E]"
+ catalyst_TFE_roman_races:0 "Staged a [GetActivityType('activity_TFE_races').GetName] as a [culture|E] without the $tradition_bread_and_circuses_name$ [tradition|E] [struggle_catalyst_catalyst|E]"
+ catalyst_TFE_roman_races_desc:0 "Stage a [GetActivityType('activity_TFE_races').GetName] as a [culture|E] without the $tradition_bread_and_circuses_name$ [tradition|E]"
+ catalyst_TFE_plague_spread: 0 "Spread of the Justinianic Plague [struggle_catalyst_catalyst|E]"
+ catalyst_TFE_plague_spread_desc: 0 "Spread of the Justinianic Plague"
+ catalyst_TFE_siege_victory: 0 "[holding|E] fell in a siege [struggle_catalyst_catalyst|E]"
+ catalyst_TFE_siege_victory_desc: 0 "[holding|E] falls in a siege"
+ catalyst_tfe_declared_war: 0 "Declared a [war|E] as an attacker [struggle_catalyst_catalyst|E]"
+ catalyst_tfe_declared_war_desc: 0 "Declare a [war|E] as an attacker"
+ catalyst_tfe_completed_travel: 0 "Returned home safetly after [traveling|E] [struggle_catalyst_catalyst|E]"
+ catalyst_tfe_completed_travel_desc: 0 "Return home safetly after [traveling|E]"
+ catalyst_tfe_high_opinion_liege: 0 "Had greater than or equal to #P 50#! [opinion_i] [opinion|E] of [liege|E] (Annual)"
+ catalyst_tfe_high_opinion_liege_desc: 0 "Has greater than or equal to #P 50#! [opinion_i] [opinion|E] of [liege|E] (Annual) [struggle_catalyst_catalyst|E]"
+ catalyst_tfe_low_opinion_liege: 0 "Had lower than or equal to #N -50#! [opinion_i] [opinion|E] of [liege|E] (Annual)"
+ catalyst_tfe_low_opinion_liege_desc: 0 "Has lower than or equal to #N -50#! [opinion_i] [opinion|E] of [liege|E] (Annual) [struggle_catalyst_catalyst|E]"
+ catalyst_tfe_completed_pilgrimage: 0 "Went on a [pilgrimage|E] [struggle_catalyst_catalyst|E]"
+ catalyst_tfe_completed_pilgrimage_desc: 0 "Go on a [pilgrimage|E]"
+
+ # activity_TFE_races
+ # Ending decisions
+ # Req
+ TFE_struggle_italian_ending_synthesis_hellenistic_roman_heritage_tt: "Your [culture|E] is descended from at least one [culture|E] of $heritage_hellenistic_name$ or $heritage_latin_name$ [heritage|E]"
+ TFE_struggle_italian_ending_synthesis_outside_heritage_tt: "Your [culture|E] is descended from at least one [culture|E] that is of neither $heritage_hellenistic_name$ nor $heritage_latin_name$ [heritage|E]"
+ TFE_italian_struggle_ending_development_tt:0 "Every [county|E] in the [de_jure|E] [duchy|E] of your [capital|E] has at least #V [EmptyScope.ScriptValue('TFE_italian_struggle_ending_development_level')|0]#! [development_i|E] [development|E]"
+
+ # Synthesis
+ struggle_italian_ending_synthesis_decision: "Roman Synthesis"
+ struggle_italian_ending_synthesis_decision_desc: "Rome never died, even after the collapse of [GetTitleByKey('e_western_roman_empire').GetNameNoTier]. It simply changed. Both those who are native to [GetGeographicalRegion('TFE_italian_struggle_region').GetName] and those who came from outside of it will unite as one, and not only continue the legacy of Rome but improve on it, under a [ROOT.Char.GetPrimaryTitle.GetAdjectiveNoTooltip] banner!"
+ struggle_italian_ending_synthesis_decision_tooltip: "End the $italian_struggle$"
+ struggle_italian_ending_synthesis_decision_confirm: "$struggle_italian_ending_synthesis_decision_tooltip$"
+ TFE_italian_struggle_synthesis_culture_tt:0 "All [struggle_involved|E] [cultures|E] gain #positive_value +[SCOPE.ScriptValue('TFE_italian_struggle_synthesis_culture_acceptance_value')|0]%#! [cultural_acceptance|E] of each other"
+ TFE_italian_struggle_synthesis_acceptance_tt:0 "Post-Roman Cultural Synthesis"
+ struggle_italian_ending_synthesis_region_tt:0 "You control more than [EmptyScope.ScriptValue('struggle_italian_ending_synthesis_owned_percent_value')|0]% of [GetGeographicalRegion('TFE_italian_struggle_region').GetName] as an [independent|E] [ruler|E] (Current: [SCOPE.ScriptValue('TFE_italian_struggle_region_owned_percent_value')|0]%)"
+
+ # Incorporation
+ struggle_italian_ending_incorporation_decision: "Roman Incorporation"
+ struggle_italian_ending_incorporation_decision_desc: "The collapse of the Western half of the Roman Empire can be reversed, but only through negotiation and cooperation. Under the leadership of the [ROOT.Char.GetDynasty.GetName] [dynasty|E], we will rebuild Roman infrastructure and institutions, and peacefully return [GetGeographicalRegion('TFE_italian_struggle_region').GetName] to its rightful rulers."
+ struggle_italian_ending_incorporation_decision_tooltip: "End the $italian_struggle$"
+ struggle_italian_ending_incorporation_decision_confirm: "$struggle_italian_ending_incorporation_decision_tooltip$"
+ struggle_italian_ending_incorporation_region_tt:0 "You control more than [EmptyScope.ScriptValue('struggle_italian_ending_incorporation_owned_percent_value')|0]% of [GetGeographicalRegion('TFE_italian_struggle_region').GetName]  as an [independent|E] [ruler|E] (Current: [SCOPE.ScriptValue('TFE_italian_struggle_region_owned_percent_value')|0]%)"
+
+ # Restoration
+ struggle_italian_ending_restoration_decision: "Roman Restoration"
+ struggle_italian_ending_restoration_decision_desc: "The loss of [GetGeographicalRegion('TFE_italian_struggle_region').GetName] to squabbling barbarian warlords and corrupt Roman aristocrats was a great humiliation to Rome. As true Romans, our mighty legions will reconquer the peninsula – [GetGeographicalRegion('TFE_italian_struggle_region').GetName] shall return to the Empire!"
+ struggle_italian_ending_restoration_decision_tooltip: "End the $italian_struggle$"
+ struggle_italian_ending_restoration_decision_confirm: "$struggle_italian_ending_restoration_decision_tooltip$"
+ struggle_italian_ending_restoration_region_tt:0 "You control more than [EmptyScope.ScriptValue('struggle_italian_ending_restoration_owned_percent_value')|0]% of [GetGeographicalRegion('TFE_italian_struggle_region').GetName]  as an [independent|E] [ruler|E] (Current: [SCOPE.ScriptValue('TFE_italian_struggle_region_owned_percent_value')|0]%)"
+
+ # Subjugation
+ struggle_italian_ending_subjugation_decision: "Outside Subjugation"
+ struggle_italian_ending_subjugation_decision_desc: "Though ruined, the lands of [GetGeographicalRegion('TFE_italian_struggle_region').GetName] will make a perfect new home for the [ROOT.Char.GetCulture.GetCollectiveNoun] if we can displace the local warlords and aristocrats. Whatever remains of old Rome is dying, and we shall hasten its demise by acting as its executioner."
+ struggle_italian_ending_subjugation_decision_tooltip: "End the $italian_struggle$"
+ struggle_italian_ending_subjugation_decision_confirm: "$struggle_italian_ending_subjugation_decision_tooltip$"
+
+
+
+ # Ending Events
+ italian_struggle.ending.intro:0 "Since the collapse of Roman authority in [GetGeographicalRegion('TFE_italian_struggle_region').GetName], some believed the once powerful, prosperous heartlands of the old Roman Empire would decline into a permanent state of pitiful existence.\n\n"
+
+ # Synthesis
+ italian_struggle.1000.t:0 "$struggle_italian_ending_synthesis_decision$ in [GetGeographicalRegion('TFE_italian_struggle_region').GetNameNoTooltip]"
+ italian_struggle.1000.desc:1 "$italian_struggle.ending.intro$Perhaps Roman authority will never be restored to [GetGeographicalRegion('TFE_italian_struggle_region').GetNameNoTooltip]. However, the surviving Romans and the other peoples of [GetGeographicalRegion('TFE_italian_struggle_region').GetNameNoTooltip] have used this opportunity to become something greater than their individual communities –  a synthesis of both Roman and foreign ideas, customs, institutions, and peoples into one.\n\nThe [italian_struggle_ender.GetCulture.GetCollectiveNoun] under [italian_struggle_ender.GetTitledFirstName] have emerged as the most influential and driving force behind these developments. The Roman Empire will forever remain a respected part of the history of the peninsula, but [GetGeographicalRegion('TFE_italian_struggle_region').GetNameNoTooltip], having overcome many hardships, can now truly emerge in a world without the Roman Empire: not a world of ruin and barbarity, but one of harmony and prosperity.\n\n#weak And behold, a black horse; and he who sat on it had a pair of scales in his hand.#!"
+ italian_struggle.1000.a:0 "The old Rome is dead – long live the new Rome!"
+
+ # Incorporation
+ italian_struggle.1001.t:0 "$struggle_italian_ending_incorporation_decision$ of [GetGeographicalRegion('TFE_italian_struggle_region').GetNameNoTooltip]"
+ italian_struggle.1001.desc:1 "$italian_struggle.ending.intro$After years of autocratic rule by tyrannical emperors, nefarious scheming by corrupt local aristocrats, and constant violence between powerhungry generals and barbarian warlords, some claimed that the glorious ways of ancient Rome were no more.\n\nThe naysayers, however, have been proven wrong. There #italic is#! someone who embodies the old Roman virtues, in the vein of heroes of old like Cincinnatus: [italian_struggle_ender.GetTitledFirstName].\n\nDespite controlling much of [GetGeographicalRegion('TFE_italian_struggle_region').GetNameNoTooltip], [italian_struggle_ender.GetFirstNameNoTooltip] has relinquished any claims of independence, and acknowledged the supreme authority of [emperor.GetTitledFirstName]. By peacefully transferring power back to the Roman Empire, the wartorn, ravaged peninsula can now rebuild. [GetGeographicalRegion('TFE_italian_struggle_region').GetNameNoTooltip] is rightfully Roman once more.\n\n#weak And behold, a black horse; and he who sat on it had a pair of scales in his hand.#!"
+ italian_struggle.1001.a:0 "[GetGeographicalRegion('TFE_italian_struggle_region').GetNameNoTooltip] undoubtedly welcomes the return of Rome."
+
+ # Restoration
+ italian_struggle.1002.t:0 "$struggle_italian_ending_restoration_decision$ of [GetGeographicalRegion('TFE_italian_struggle_region').GetNameNoTooltip]"
+ italian_struggle.1002.desc:1 "$italian_struggle.ending.intro$Those dark days are gone. Years of toil, conflict, and struggle have culminated in a magnificent achievement for the leaders and people of [empire.GetName], who have now recovered [GetGeographicalRegion('TFE_italian_struggle_region').GetNameNoTooltip] for the empire through military and political means. [italian_struggle_ender.GetTitledFirstName], the current ruler of [empire.GetNameNoTierNoTooltip], has been credited with this great restoration of Roman border.\n\nFew doubt [italian_struggle_ender.GetFirstNamePossessiveNoTooltip] abilities as a leader, and [italian_struggle_ender.GetSheHe] will undoubtedly stand alongside the likes of Augustus, Trajan, or Constantine as the greatest of the Romans, as order and prosperity return to the peninsula. [GetGeographicalRegion('TFE_italian_struggle_region').GetNameNoTooltip] is rightfully Roman once more.\n\n#weak And behold, a white horse, and he who sat on it had a bow; and a crown was given to him, and he went out conquering and to conquer.#!"
+ italian_struggle.1002.a:0 "To Rome, [italian_struggle_ender.GetFirstNameNoTooltip] restored what was Rome's."
+
+ # Subjugation
+ italian_struggle.1003.t:0 "$struggle_italian_ending_subjugation_decision$ of [GetGeographicalRegion('TFE_italian_struggle_region').GetNameNoTooltip]"
+ italian_struggle.1003.desc:1 "$italian_struggle.ending.intro$That future did not come to pass, but order was restored at a cost. The [italian_struggle_ender.GetCulture.GetCollectiveNoun], under several leaders culminating in [italian_struggle_ender.GetTitledFirstName], overran [GetGeographicalRegion('TFE_italian_struggle_region').GetNameNoTooltip] and subjugated all in their way – Roman and non-Roman – and enforced a new order on the region.\n\nSome who cling to the Roman past scorn [italian_struggle_ender.GetFirstNameNoTooltip] as a vulgar, parvenu warlord who is not a legitimate successor to Rome. Yet their disdain matters little in this world born from violence.\n\nTo [italian_struggle_ender.GetFirstNameNoTooltip], Rome is buried in the ashes of history. [italian_struggle_ender.GetSheHe|U] and [italian_struggle_ender.GetHerHis] [italian_struggle_ender.GetCulture.GetCollectiveNounNoTooltip] have baptized [GetGeographicalRegion('TFE_italian_struggle_region').GetNameNoTooltip] in the blood of conquest.\n\n#weak And behold, a red horse, and power was given to him that sat thereon to take peace from the earth.#!"
+ italian_struggle.1003.a:0 "The dream of Rome is no more."
+
+ # Devastation
+ italian_struggle.1004.t:0 "$struggle_TFE_italian_phase_devastation$ of [GetGeographicalRegion('TFE_italian_struggle_region').GetNameNoTooltip]"
+ italian_struggle.1004.desc:1 "$italian_struggle.ending.intro$Such fears have been vindicated, though few would celebrate that. After years of warfare, plague, faminine, and all manner of devastation, [GetGeographicalRegion('TFE_italian_struggle_region').GetNameNoTooltip] has declined to the point it is a wasteland, its so-called cities impoverishd, mere husks. Some still call themselves successors of the Romans, but they are delusional pretenders.\n\nWhy should one talk of restoring the Roman Empire, or Roman civilization, when there is nothing left to restore? [GetGeographicalRegion('TFE_italian_struggle_region').GetNameNoTooltip] is no longer Roman as it used to be; now, it is merely an abyss of ruination, filled with bitter memories of a glorious Rome long gone, and the whispers of mourning dead in the shadows of decayed stone ruins.\n\n#weak And behold a pale horse: and his name that sat on him was Death, and Hell followed with him. And power was given unto them over the fourth part of the earth, to kill with sword, and with hunger, and with death, and with the beasts of the earth.#!"
+ italian_struggle.1004.a:0 "Rome is dead. Now comes a new age of darkness."
+

@@ -1,0 +1,2123 @@
+﻿### Dolaucothi Gold Mines
+dolaucothi_gold_mines_01 = {
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = {
+		culture = {
+			has_innovation = innovation_crop_rotation
+		}
+	}
+	
+	is_enabled = {
+		custom_tooltip = {
+			text = dolaucothi_gold_mines_01_roman_departure_keep_active
+			
+			OR = {
+				# You have the Roman Empire as your liege
+				county_controller.top_liege = {
+					OR = {
+						has_title = title:e_western_roman_empire
+						has_title = title:e_byzantium
+						has_title = title:e_roman_empire
+					}
+				}
+				# Or the holder is a non-Tribal with the right culture
+				county_controller = {
+					NOT = { government_has_flag = government_is_tribal }
+					culture = { has_innovation = innovation_crop_rotation }
+				}
+			}
+		}
+	}
+	
+	cost_gold = expensive_building_tier_3_cost
+	
+	province_modifier = {
+		monthly_income = special_mine_building_tax_tier_1
+	}
+	county_modifier = {
+		tax_mult = 0.2
+		development_growth_factor = 0.05
+	}
+	
+	next_building = dolaucothi_gold_mines_02
+	
+	ai_value = {
+		base = 100
+		ai_tier_1_building_modifier = yes
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_economic
+}
+
+dolaucothi_gold_mines_02 = {
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = {
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	
+	is_enabled = {
+		OR = {
+			# You have the Roman Empire as your liege
+			county_controller.top_liege = {
+				OR = {
+					has_title = title:e_western_roman_empire
+					has_title = title:e_byzantium
+					has_title = title:e_roman_empire
+				}
+			}
+			# Or the holder is a non-Tribal with the right culture
+			county_controller = {
+				NOT = { government_has_flag = government_is_tribal }
+				culture = { has_innovation = innovation_crop_rotation }
+			}
+		}
+	}
+	
+	cost_gold = expensive_building_tier_4_cost
+	
+	province_modifier = {
+		monthly_income = special_mine_building_tax_tier_2
+	}
+	county_modifier = {
+		tax_mult = 0.25
+		development_growth_factor = 0.1
+	}
+	
+	next_building = dolaucothi_gold_mines_03
+	
+	ai_value = {
+		base = 100
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_economic
+}
+
+dolaucothi_gold_mines_03 = {
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = {
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 03 }
+		culture = {
+			has_innovation = innovation_windmills
+		}
+	}
+	
+	is_enabled = {
+		OR = {
+			# You have the Roman Empire as your liege
+			county_controller.top_liege = {
+				OR = {
+					has_title = title:e_western_roman_empire
+					has_title = title:e_byzantium
+					has_title = title:e_roman_empire
+				}
+			}
+			# Or the holder is a non-Tribal with the right culture
+			county_controller = {
+				NOT = { government_has_flag = government_is_tribal }
+				culture = { has_innovation = innovation_crop_rotation }
+			}
+		}
+	}
+	
+	cost_gold = expensive_building_tier_5_cost
+	
+	province_modifier = {
+		monthly_income = special_mine_building_tax_tier_3
+	}
+	county_modifier = {
+		tax_mult = 0.3
+		development_growth_factor = 0.15
+	}
+	
+	next_building = dolaucothi_gold_mines_04
+	
+	ai_value = {
+		base = 100
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_economic
+}
+
+dolaucothi_gold_mines_04 = {
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = {
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 04 }
+		culture = {
+			has_innovation = innovation_cranes
+		}
+	}
+	
+	is_enabled = {
+		OR = {
+			# You have the Roman Empire as your liege
+			county_controller.top_liege = {
+				OR = {
+					has_title = title:e_western_roman_empire
+					has_title = title:e_byzantium
+					has_title = title:e_roman_empire
+				}
+			}
+			# Or the holder is a non-Tribal with the right culture
+			county_controller = {
+				NOT = { government_has_flag = government_is_tribal }
+				culture = { has_innovation = innovation_crop_rotation }
+			}
+		}
+	}
+	
+	cost_gold = expensive_building_tier_6_cost
+	
+	province_modifier = {
+		monthly_income = special_mine_building_tax_tier_4
+	}
+	county_modifier = {
+		tax_mult = 0.35
+		development_growth_factor = 0.2
+	}
+	
+	ai_value = {
+		base = 100
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_economic
+}
+### Garamantes mines carnelian amazonite
+carnelian_amazonite_mines_01 = {
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	#can_construct_potential = {
+	#	culture = {
+	#		has_innovation = innovation_crop_rotation
+	#	}
+	#}
+	
+	cost_gold = expensive_building_tier_3_cost
+	
+	province_modifier = {
+		monthly_income = special_mine_building_tax_tier_1
+	}
+	county_modifier = {
+		tax_mult = 0.1
+		development_growth_factor = 0.05
+	}
+	
+	next_building = carnelian_amazonite_mines_02
+	
+	ai_value = {
+		base = 100
+		ai_tier_1_building_modifier = yes
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_economic
+}
+
+carnelian_amazonite_mines_02 = {
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = {
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	
+	cost_gold = expensive_building_tier_4_cost
+	
+	province_modifier = {
+		monthly_income = special_mine_building_tax_tier_2
+	}
+	county_modifier = {
+		tax_mult = 0.10
+		development_growth_factor = 0.05
+	}
+	
+	next_building = carnelian_amazonite_mines_03
+	
+	ai_value = {
+		base = 100
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_economic
+}
+
+carnelian_amazonite_mines_03 = {
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = {
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	
+	cost_gold = expensive_building_tier_4_cost
+	
+	province_modifier = {
+		monthly_income = special_mine_building_tax_tier_2
+	}
+	county_modifier = {
+		tax_mult = 0.15
+		development_growth_factor = 0.1
+	}
+	
+	next_building = carnelian_amazonite_mines_04
+	
+	ai_value = {
+		base = 100
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_economic
+} 
+
+carnelian_amazonite_mines_04 = {
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = {
+	}
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 03 }
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	
+	cost_gold = expensive_building_tier_4_cost
+	
+	province_modifier = {
+		monthly_income = special_mine_building_tax_tier_2
+	}
+	county_modifier = {
+		tax_mult = 0.2
+		development_growth_factor = 0.2
+	}
+	
+	# next_building = carnelian_amazonite_mines_04
+	
+	ai_value = {
+		base = 100
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_economic
+} 
+
+### Hadrian's Walls but which doesn't suck
+real_hadrians_wall_01 = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_hadrians_wall.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 3000
+	
+	county_modifier = {
+		defender_holding_advantage = 5
+		hostile_raid_time = 0.25
+	}
+
+	province_modifier = {
+		garrison_size = 0.25
+		fort_level = 1
+	}
+	
+	ai_value = {
+		base = 100
+		ai_tier_1_building_modifier = yes
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_martial_minor
+}
+
+aurelian_walls_01 = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_aurelian_walls.dds"
+	
+	can_construct_potential = {
+		barony = title:b_roma
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 3000
+	
+	max_garrison = 500
+	
+	duchy_capital_county_modifier = {
+		levy_size = 0.15
+		tax_mult = 0.15
+	}
+	county_modifier = {
+		development_growth = 0.2
+		development_growth_factor = 0.1
+		hostile_raid_time = 0.5
+	}
+	province_modifier = {
+		fort_level = 3
+		garrison_size = 0.5
+	}
+	
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+		ai_tier_1_building_modifier = yes
+	}
+	
+	type = duchy_capital
+}
+
+library_of_alexandria = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_library_of_alexandria.dds"
+
+	can_construct_potential = {
+		barony = title:b_alexandria
+		building_requirement_tribal = no
+	}
+
+	can_construct = {
+		NOR = {
+			scope:holder ?= {
+				religion = religion:christianity_religion
+			}
+			scope:holder.top_liege ?= {
+				religion = religion:christianity_religion
+			}
+		}
+	}
+
+	cost_gold = 1000
+
+	character_modifier = {
+		learning_per_prestige_level = 2
+		monthly_lifestyle_xp_gain_mult = 0.15
+		different_culture_opinion = 10
+		cultural_head_fascination_mult = 0.15
+		faith_creation_piety_cost_mult = -0.2
+	}
+	county_modifier = {
+		tax_mult = 0.2
+		development_growth = 0.2
+		development_growth_factor = 0.2
+	}
+	ai_value = {
+		base = 100
+		ai_tier_1_building_modifier = yes
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_learning
+}
+
+# Built after 525 by Justinian, rival to Constantinopolis' for along time, then rip
+edessa_cathedral_01 = { # Scaffoldings
+	construction_time = slow_construction_time
+	
+	cost_gold = 2000
+
+	character_modifier = {
+		monthly_dynasty_prestige_mult = 0.05
+	}
+	
+	# county_modifier = {
+	#	development_growth_factor = 0.05
+	# }
+	
+	next_building = edessa_cathedral_02
+
+	type_icon = "icon_structure_hagia_sophia.dds"
+	
+	ai_value = {
+		base = 100
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_religious
+	
+ }
+
+ edessa_cathedral_02 = { # Bottom only
+	construction_time = slow_construction_time
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 2000
+
+	character_modifier = {
+		monthly_dynasty_prestige_mult = 0.05
+	}
+	
+	county_modifier = {
+		development_growth_factor = 0.05
+	}
+	
+	next_building =  edessa_cathedral_03
+
+	type_icon = "icon_structure_hagia_sophia.dds"
+	
+	ai_value = {
+		base = 100
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_religious
+ 
+ }
+
+ edessa_cathedral_03 = { # Full Cathedral
+	construction_time = slow_construction_time
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 3000
+
+	character_modifier = {
+		monthly_dynasty_prestige_mult = 0.2
+	}
+	
+	county_modifier = {
+		development_growth_factor = 0.2
+	}
+	
+	type_icon = "icon_structure_hagia_sophia.dds"
+	
+	ai_value = {
+		base = 100
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_religious
+	
+}
+
+marib_dam = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "gibraltar.dds"
+	asset = { type = pdxmesh name = "wonder_arabian_dam_mesh" }
+
+	can_construct_potential = {
+		always = yes
+	}
+
+	can_construct = {
+		always = yes
+	}
+
+	character_modifier = {
+		cultural_head_fascination_mult = 0.05
+		stress_loss_mult = 0.05
+	}
+	county_modifier = {
+		tax_mult = 0.1
+		development_growth = 0.1
+	}
+	ai_value = {
+		base = 100
+		ai_tier_1_building_modifier = yes
+	}
+	cost_gold = expensive_building_tier_3_cost
+	type = special
+	flag = travel_point_of_interest_economic
+}
+
+#Taq-Kasra, The Only Surviving Remnant of Ctesiphon
+
+taq-kasra = {
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_taq-kasra.dds"
+
+	can_construct_potential = {
+#		barony = title:c_an-nahrawan
+		building_requirement_tribal = no
+	}
+
+	can_construct = {
+		OR = {
+			scope:holder ?= {
+				religion = religion:zoroastrianism_religion
+			}
+		}
+	}
+
+	character_modifier = {
+		powerful_vassal_opinion = 5
+		clergy_opinion = 5
+		monthly_prestige_gain_per_happy_powerful_vassal_add = 0.1
+		tyranny_gain_mult = -0.2
+		monthly_dynasty_prestige_mult = 0.05
+	}
+	county_modifier = {
+		tax_mult = 0.2
+		development_growth = 0.2
+		development_growth_factor = 0.2
+	}
+	ai_value = {
+		base = 100
+		ai_tier_1_building_modifier = yes
+	}
+	
+	type = special
+	flag = travel_point_of_interest_wonder
+}
+
+great_gurgan_wall = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_theodosian_walls.dds"
+
+	can_construct_potential = {
+		always = yes
+	}
+
+	can_construct = {
+		always = yes
+	}
+
+	character_modifier = {
+		cultural_head_fascination_mult = 0.05
+		stress_loss_mult = 0.05
+	}
+	county_modifier = {
+		fort_level = 6
+		tax_mult = 0.5
+	}
+	ai_value = {
+		base = 100
+		ai_tier_1_building_modifier = yes
+	}
+	on_complete = {
+		every_county_in_region = {
+			region = region_gurgan_wall
+			add_county_modifier = gurgan_wall_modifier
+		}
+	}
+	cost_gold = expensive_building_tier_3_cost
+	type = special
+	flag = travel_point_of_interest_martial_minor
+}
+
+palace_khawarnaq = {
+	construction_time = slow_construction_time
+
+	type_icon = "aljaferia.dds"
+
+	can_construct_potential = {
+		always = yes
+	}
+
+	can_construct = {
+		always = yes
+	}
+
+	character_modifier = {
+		vassal_opinion = 5
+		monthly_prestige_gain_per_happy_powerful_vassal_add = 0.05
+		monthly_dynasty_prestige_mult = 0.05
+	}
+	county_modifier = {
+		tax_mult = 0.1
+		development_growth_factor = 0.05
+	}
+	ai_value = {
+		base = 100
+		ai_tier_1_building_modifier = yes
+	}
+	on_complete = {
+		county_controller = {
+			trigger_event = TFE_flavour_events.0007
+		}
+	}
+	cost_gold = expensive_building_tier_3_cost
+	type = special
+	flag = travel_point_of_interest_wonder
+}
+
+oblivion_prison = {
+	construction_time = slow_construction_time
+
+	type_icon = "icon_building_ramparts.dds"
+
+	can_construct_potential = {
+		always = yes
+	}
+
+	can_construct = {
+		always = yes
+	}
+
+	character_modifier = {
+		abduct_scheme_phase_duration_add = medium_scheme_phase_duration_bonus_value
+		dread_gain_mult = 0.05
+		dread_baseline_add = 5
+		prisoner_opinion = -10
+	}
+	county_modifier = {
+		tax_mult = 0.1
+	}
+	ai_value = {
+		base = 100
+		ai_tier_1_building_modifier = yes
+	}
+	cost_gold = expensive_building_tier_3_cost
+	type = special
+	flag = travel_point_of_interest_martial_minor
+}
+
+palace_diocletian = {
+	construction_time = slow_construction_time
+
+	type_icon = "aljaferia.dds"
+
+	can_construct_potential = {
+		always = yes
+	}
+
+	can_construct = {
+		always = yes
+	}
+
+	county_holder_character_modifier = {
+		vassal_opinion = 5
+		monthly_prestige_gain_per_happy_powerful_vassal_add = 0.05
+		stewardship = 2
+	}
+	max_garrison = 500
+	county_modifier = {
+		garrison_size = 1
+		fort_level = 3
+	}
+	ai_value = {
+		base = 100
+		ai_tier_1_building_modifier = yes
+	}
+	cost_gold = expensive_building_tier_3_cost
+	type = special
+	flag = travel_point_of_interest_wonder
+}
+
+aflag_irrigation_systems = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_building_peat_quarries.dds"
+
+	can_construct_potential = {
+		always = yes
+	}
+
+	can_construct = {
+		always = yes
+	}
+	county_modifier = {
+		development_growth = 0.1
+		development_growth_factor = 0.3
+		tax_mult = 0.03
+	}
+	ai_value = {
+		base = 100
+		ai_tier_1_building_modifier = yes
+	}
+	cost_gold = expensive_building_tier_3_cost
+	type = special
+	flag = travel_point_of_interest_economic
+}
+astana_cemetary = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_buddhas_of_bamiyan.dds"
+
+	can_construct_potential = {
+		always = yes
+	}
+	can_construct = {
+		always = no
+	}
+
+	is_enabled = {
+		custom_description = {
+			text = buddhas_of_bamian_trigger
+			scope:holder ?= {
+				religion = { is_in_family = rf_eastern }
+			}
+		}
+	}
+	character_modifier = {
+		monthly_piety = 0.5
+		monthly_prestige = 1
+	}
+	ai_value = {
+		base = 100
+		ai_tier_1_building_modifier = yes
+	}
+	cost_gold = expensive_building_tier_3_cost
+	type = special
+	flag = travel_point_of_interest_religious
+}
+monumental_tomb_of_abalessa = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_megalith.dds"
+
+	can_construct_potential = {
+		always = yes
+	}
+
+	can_construct = {
+		always = no
+	}
+	county_holder_character_modifier = {
+		monthly_piety = 0.5
+		martial = 2
+		knight_effectiveness_mult = 0.1
+	}
+	ai_value = {
+		base = 100
+		ai_tier_1_building_modifier = yes
+	}
+	cost_gold = expensive_building_tier_3_cost
+	type = special
+	flag = travel_point_of_interest_learning
+}
+mogao_caves = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = {
+		always = yes
+	}
+	can_construct = {
+		always = no
+	}
+
+	is_enabled = {
+		custom_description = {
+			text = buddhas_of_bamian_trigger
+			scope:holder ?= {
+				religion = { is_in_family = rf_eastern }
+			}
+		}
+	}
+	county_holder_character_modifier = {
+		monthly_piety_gain_mult = 0.05
+		monthly_prestige_gain_mult = 0.05
+		stewardship = 1
+		learning = 1
+	}
+	
+	county_modifier = {
+		development_growth = 0.05
+		development_growth_factor = 0.1
+	}
+		
+	ai_value = {
+		base = 100
+		ai_tier_1_building_modifier = yes
+	}
+	cost_gold = expensive_building_tier_3_cost
+	type = special
+	flag = travel_point_of_interest_religious
+}
+kizil_caves = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = {
+		always = yes
+	}
+	can_construct = {
+		always = no
+	}
+
+	is_enabled = {
+		custom_description = {
+			text = buddhas_of_bamian_trigger
+			scope:holder ?= {
+				religion = { is_in_family = rf_eastern }
+			}
+		}
+	}
+	character_modifier = {
+		monthly_piety_gain_mult = 0.05
+		diplomacy = 1
+		stewardship = 1
+	}
+	
+	county_modifier = {
+		development_growth = 0.05
+		development_growth_factor = 0.1
+	}
+		
+	ai_value = {
+		base = 100
+		ai_tier_1_building_modifier = yes
+	}
+	cost_gold = expensive_building_tier_3_cost
+	type = special
+	flag = travel_point_of_interest_religious
+}
+bezeklik_caves = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = {
+		always = yes
+	}
+	can_construct = {
+		always = no
+	}
+
+	is_enabled = {
+		custom_description = {
+			text = buddhas_of_bamian_trigger
+			scope:holder ?= {
+				religion = { is_in_family = rf_eastern }
+			}
+		}
+	}
+	county_holder_character_modifier = {
+		monthly_piety_gain_mult = 0.05
+		diplomacy = 1
+		stewardship = 1
+	}
+	
+	county_modifier = {
+		development_growth = 0.05
+		development_growth_factor = 0.1
+	}
+		
+	ai_value = {
+		base = 100
+		ai_tier_1_building_modifier = yes
+	}
+	cost_gold = expensive_building_tier_3_cost
+	type = special
+	flag = travel_point_of_interest_religious
+}
+pyramids_of_meroe = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_the_pyramids.dds"
+
+	can_construct_potential = {
+		always = yes
+	}
+
+	can_construct = {
+		always = no
+	}
+	county_modifier = {
+		church_holding_build_speed = -0.1
+		church_holding_build_gold_cost = -0.1
+	}
+	character_modifier = {
+		monthly_piety = 1
+	}
+	ai_value = {
+		base = 100
+		ai_tier_1_building_modifier = yes
+	}
+	cost_gold = expensive_building_tier_3_cost
+	type = special
+	flag = travel_point_of_interest_wonder
+}
+senegambian_stone_circles = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_megalith.dds"
+
+	can_construct_potential = {
+		always = yes
+	}
+
+	can_construct = {
+		always = no
+	}
+	character_modifier = {
+		learning = 2
+		monthly_learning_lifestyle_xp_gain_mult = 0.1
+		faith_conversion_piety_cost_mult = -0.15
+	}
+	ai_value = {
+		base = 100
+		ai_tier_1_building_modifier = yes
+	}
+	cost_gold = expensive_building_tier_3_cost
+	type = special
+	flag = travel_point_of_interest_religious
+}
+sharada_peeth = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_khajuraho_temples.dds"
+
+	can_construct_potential = {
+		always = yes
+	}
+
+	can_construct = {
+		custom_description = {
+			text = buddhas_of_bamian_trigger
+			scope:holder ?= {
+				religion = { is_in_family = rf_eastern }
+			}
+		}
+	}
+	is_enabled = {
+		custom_description = {
+			text = buddhas_of_bamian_trigger
+			scope:holder ?= {
+				religion = { is_in_family = rf_eastern }
+			}
+		}
+	}
+	character_modifier = {
+		monthly_piety = 1
+		monthly_learning_lifestyle_xp_gain_mult = 0.15
+		learning = 2
+	}
+	ai_value = {
+		base = 100
+		ai_tier_1_building_modifier = yes
+	}
+	cost_gold = expensive_building_tier_3_cost
+	type = special
+	flag = travel_point_of_interest_religious
+}
+temples_of_panikant = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_khajuraho_temples.dds"
+
+	can_construct_potential = {
+		always = yes
+	}
+
+	can_construct = {
+		custom_description = {
+			text = buddhas_of_bamian_trigger
+			scope:holder ?= {
+				religion = { is_in_family = rf_eastern }
+			}
+		}
+	}
+	is_enabled = {
+		custom_description = {
+			text = buddhas_of_bamian_trigger
+			scope:holder ?= {
+				religion = { is_in_family = rf_eastern }
+			}
+		}
+	}
+	character_modifier = {
+		monthly_piety = 1
+		monthly_prestige = 2
+		vassal_opinion = 5
+	}
+	ai_value = {
+		base = 100
+		ai_tier_1_building_modifier = yes
+	}
+	cost_gold = expensive_building_tier_3_cost
+	type = special
+	flag = travel_point_of_interest_religious
+}
+
+secret_harbor_avernus = {
+	construction_time = slow_construction_time
+
+	type_icon = "icon_building_tradeport.dds"
+
+	can_construct_potential = {
+		always = yes
+	}
+
+	can_construct = {
+		always = no
+	}
+
+	is_enabled = {
+		custom_description = {
+			text = secret_harbor_avernus_trigger
+			county_controller.top_liege = {
+				OR = {
+					has_title = title:e_western_roman_empire
+					has_title = title:e_byzantium
+					has_title = title:e_roman_empire
+				}
+			}
+		}
+	}
+	character_modifier = {
+		monthly_prestige = 0.25
+		embarkation_cost_mult = -0.05
+	}
+	ai_value = {
+		base = 100
+		ai_tier_1_building_modifier = yes
+	}
+	cost_gold = expensive_building_tier_3_cost
+	type = special
+	flag = travel_point_of_interest_economic
+}
+
+west_trajans_bridge = {
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_walls_of_genoa.dds"
+
+	can_construct_potential = {
+		always = yes
+	}
+
+	can_construct = {
+		always = no
+	}
+
+	is_enabled = {
+		custom_description = {
+			text = secret_harbor_avernus_trigger
+			county_controller.top_liege = {
+				OR = {
+					has_title = title:e_western_roman_empire
+					has_title = title:e_byzantium
+					has_title = title:e_roman_empire
+				}
+			}
+		}
+		county_controller = {
+			NOT = { government_has_flag = government_is_tribal }
+		}
+		county_controller = {
+			culture = { has_innovation = innovation_crop_rotation }
+		}
+	}
+	county_holder_character_modifier = {
+		monthly_prestige = 0.25
+	}
+	county_modifier = {
+		build_speed = -0.05
+	}
+	ai_value = {
+		base = 100
+		ai_tier_1_building_modifier = yes
+	}
+	cost_gold = expensive_building_tier_3_cost
+	type = special
+	flag = travel_point_of_interest_martial_minor
+}
+
+east_trajans_bridge = {
+	construction_time = slow_construction_time
+	
+	type_icon = "icon_structure_walls_of_genoa.dds"
+
+	can_construct_potential = {
+		always = yes
+	}
+
+	can_construct = {
+		always = no
+	}
+
+	is_enabled = {
+		custom_description = {
+			text = secret_harbor_avernus_trigger
+			county_controller.top_liege = {
+				OR = {
+					has_title = title:e_western_roman_empire
+					has_title = title:e_byzantium
+					has_title = title:e_roman_empire
+				}
+			}
+		}
+		county_controller = {
+			NOT = { government_has_flag = government_is_tribal }
+		}
+		county_controller = {
+			culture = { has_innovation = innovation_crop_rotation }
+		}
+	}
+	county_holder_character_modifier = {
+		monthly_prestige = 0.25
+	}
+	county_modifier = {
+		build_speed = -0.05
+	}
+	ai_value = {
+		base = 100
+		ai_tier_1_building_modifier = yes
+	}
+	cost_gold = expensive_building_tier_3_cost
+	type = special
+	flag = travel_point_of_interest_martial_minor
+}
+
+temple_of_hadrian = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "compostela.dds"
+
+	can_construct_potential = {
+		always = yes
+	}
+
+	can_construct = {
+		scope:holder ?= {
+			religion = religion:hellenism_religion
+		}
+	}
+	is_enabled = {
+		scope:holder ?= {
+			religion = religion:hellenism_religion
+		}
+	}
+	county_holder_character_modifier = {
+		monthly_prestige = 0.5
+	}
+	ai_value = {
+		base = 100
+		ai_tier_1_building_modifier = yes
+	}
+	cost_gold = expensive_building_tier_3_cost
+	type = special
+	flag = travel_point_of_interest_religious
+}
+
+aula_palatina = {
+	construction_time = slow_construction_time
+
+	type_icon = "icon_building_leisure_palace.dds"
+
+	can_construct_potential = {
+		always = yes
+	}
+
+	can_construct = {
+		always = yes
+	}
+
+	county_holder_character_modifier = {
+		learning = 1
+		monthly_prestige = 1
+	}
+	
+	ai_value = {
+		base = 100
+		ai_tier_1_building_modifier = yes
+	}
+	cost_gold = expensive_building_tier_3_cost
+	type = special
+	flag = travel_point_of_interest_learning
+}
+
+tower_of_hercules = {
+	construction_time = slow_construction_time
+
+	type_icon = "hercules.dds"
+
+	can_construct_potential = {
+		always = yes
+	}
+
+	can_construct = {
+		always = yes
+	}
+
+	is_enabled = {
+		always = yes
+	}
+	
+	county_holder_character_modifier = {
+		monthly_prestige = 0.25
+	}
+	county_modifier = {
+		tax_mult = 0.05
+	}
+	
+	ai_value = {
+		base = 100
+		ai_tier_1_building_modifier = yes
+	}
+	cost_gold = expensive_building_tier_3_cost
+	type = special
+	flag = travel_point_of_interest_economic
+}
+sigiriya = {
+	construction_time = very_slow_construction_time
+	
+	type_icon = "gibraltar.dds" 
+	
+	can_construct_potential = {
+		always = yes
+	}
+	character_modifier = {
+		monthly_piety = 2
+	}
+
+	province_modifier = {
+		fort_level = 4
+		defender_holding_advantage = 5
+	}
+	
+	ai_value = {
+		base = 100
+		ai_tier_1_building_modifier = yes
+	}
+	cost_gold = expensive_building_tier_3_cost
+	type = special
+	flag = travel_point_of_interest_martial_minor
+}
+
+hegra = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_petra.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 3000
+
+	county_modifier = {
+		tax_mult = 0.05
+		supply_limit_mult = 0.15
+		development_growth = 0.1
+		development_growth_factor = 0.1
+	}
+	
+	province_modifier = {
+		monthly_income = good_building_tax_tier_1
+	}
+	
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+	flag = travel_point_of_interest_stewardship
+}
+
+walls_of_amida = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_aurelian_walls.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 1000
+	
+	county_holder_character_modifier = {
+		monthly_prestige = 1
+	}
+	county_modifier = {
+		defender_holding_advantage = 5
+		development_growth_factor = 0.1
+		development_growth = 0.3
+		hostile_raid_time = 0.5
+		tax_mult = 0.05
+	}
+	
+	province_modifier = {
+		fort_level = 3
+	}
+	
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+	flag = travel_point_of_interest_martial
+}
+
+walls_of_aosta = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_aurelian_walls.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 1000
+	
+	county_holder_character_modifier = {
+		monthly_prestige = 1
+	}
+	county_modifier = {
+		defender_holding_advantage = 5
+		development_growth_factor = 0.1
+		development_growth = 0.3
+		hostile_raid_time = 0.5
+		tax_mult = 0.05
+	}
+	
+	province_modifier = {
+		fort_level = 3
+	}
+	
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+	flag = travel_point_of_interest_martial
+}
+
+walls_of_nikaea = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_aurelian_walls.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 1000
+	
+	county_modifier = {
+		defender_holding_advantage = 5
+		development_growth_factor = 0.1
+		development_growth = 0.3
+		hostile_raid_time = 0.5
+		tax_mult = 0.05
+	}
+	
+	province_modifier = {
+		fort_level = 3
+	}
+	
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+	flag = travel_point_of_interest_martial
+}
+
+arles_cryptoporticus = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = {
+		always = yes
+	}
+
+	can_construct = {
+		always = no
+	}
+	is_enabled = {
+		always = yes
+	}
+	county_holder_character_modifier = {
+		monthly_prestige = 0.25
+	}
+
+	county_modifier = {
+		tax_mult = 0.05
+	}
+	ai_value = {
+		base = 100
+		ai_tier_1_building_modifier = yes
+	}
+	cost_gold = expensive_building_tier_3_cost
+	type = special
+	flag = travel_point_of_interest_learning
+}
+
+theater_of_bosra = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_colosseum.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 3000
+
+	character_modifier = {
+		general_opinion = 10
+	}
+	
+	
+	ai_value = {
+		base = 100
+		modifier = {
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+	flag = travel_point_of_interest_diplomatic
+}
+theater_of_aspendos = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_colosseum.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 3000
+
+	county_holder_character_modifier = {
+		general_opinion = 10
+	}
+	
+	county_modifier = {
+		tax_mult = 0.10
+	}
+	
+	ai_value = {
+		base = 100
+		modifier = {
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+	flag = travel_point_of_interest_diplomatic
+}
+
+royal_tomb_of_mauritania = {
+	asset = { type = pdxmesh name = "wonder_numidian_tomb_mesh" }
+
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_megalith.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		always = no
+	}
+	cost_gold = 3000
+
+	character_modifier = {
+		monthly_piety = 1
+		learning = 1
+	}
+	
+	
+	ai_value = {
+		base = 100
+		modifier = {
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+	flag = travel_point_of_interest_learning
+}
+
+sacred_rocks_of_hunza = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_stonehenge.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 3000
+
+	character_modifier = {
+		diplomacy = 1
+		learning = 1
+		character_travel_safety_mult = 0.05
+		character_travel_speed_mult = 0.1
+		diplomatic_range_mult = 0.1
+	}
+	
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+	flag = travel_point_of_interest_diplomatic
+}
+
+ajanta_caves = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_buddhas_of_bamiyan.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	is_enabled = {
+		custom_description = {
+			text = buddhas_of_bamian_trigger
+			scope:holder ?= {
+				religion = { is_in_family = rf_eastern }
+			}
+		}
+	}
+	
+	cost_gold = 3000
+
+	character_modifier = {
+		monthly_piety_gain_mult = 0.1
+		diplomacy_per_piety_level = 1
+	}
+	county_modifier = {
+		tax_mult = 0.1
+		development_growth = 0.1
+		development_growth_factor = 0.3
+	}
+	
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+	flag = travel_point_of_interest_religious
+}
+
+mamallapuram_temples = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_buddhas_of_bamiyan.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	is_enabled = {
+		custom_description = {
+			text = buddhas_of_bamian_trigger
+			scope:holder ?= {
+				religion = { is_in_family = rf_eastern }
+			}
+		}
+	}
+	
+	cost_gold = 3000
+
+	character_modifier = {
+		monthly_piety_gain_mult = 0.1
+		diplomacy_per_piety_level = 1
+	}
+	county_modifier = {
+		tax_mult = 0.1
+		development_growth = 0.1
+		development_growth_factor = 0.3
+	}
+	
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+	flag = travel_point_of_interest_religious
+}
+
+#### Sacred Gokturk Iron Mines in the Kuektanar Mountain Pass
+### Soraya: It will already be built in the 476 Start Date with an event to settle the Ashina clan in the Altai Mountains in the 395 Start for Shelun (and possibly others) when he conquers d_altay.
+## The suckiness of the first level and the drastic increase with succeeding levels is meant to model how the mine became considerably more important in the late 5th and 6th centuries
+## Sources: 
+# https://www.sciencedirect.com/science/article/abs/pii/S1040618217306523 (Information on the Mine)
+# https://www.jstor.org/stable/23658608 (For the ritual position of Iron Mines in Tujue society)
+
+# Informal Tujue Settlements have begun in the Kuektanar mountain pass for both economic and religious reasons after the land grant to the Ashina
+kuektanar_iron_mines_01 = {
+	effect_desc = mines_effect_desc
+
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	can_construct_potential = {
+		culture = { has_cultural_tradition = tradition_sacred_iron_mines }
+	}
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+	
+	cost_gold = expensive_building_tier_3_cost
+	
+	province_modifier = {
+		monthly_income = 0.5
+	}
+	county_modifier = {
+		tax_mult = 0.1
+	}
+	is_enabled = {
+		scope:holder.culture = { has_cultural_tradition = tradition_sacred_iron_mines }
+	}
+
+	character_modifier = {
+		monthly_piety = 0.5
+	}
+	
+	next_building = kuektanar_iron_mines_02
+	
+	ai_value = {
+		base = 100
+	}
+	
+	type = special
+	
+	flag = travel_point_of_interest_religious
+}
+
+# Proper Mines have been constructed
+kuektanar_iron_mines_02 = {
+	effect_desc = mines_effect_desc
+
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = {
+		culture = { has_cultural_tradition = tradition_sacred_iron_mines }
+	}
+	can_construct = {
+	}
+	is_enabled = {
+		scope:holder.culture = { has_cultural_tradition = tradition_sacred_iron_mines }
+	}
+	
+	cost_gold = expensive_building_tier_4_cost
+	
+	province_modifier = {
+		monthly_income = 1
+		stationed_maa_damage_mult = high_maa_damage_tier_1
+	}
+	county_modifier = {
+		tax_mult = 0.2
+		development_growth_factor = 0.05
+	}
+	character_modifier = {
+		monthly_piety = 0.7
+		army_maintenance_mult = -0.05
+	}
+	
+	next_building = kuektanar_iron_mines_03
+	
+	ai_value = {
+		base = 100
+	}
+	
+	type = special
+	
+	flag = travel_point_of_interest_religious
+}
+
+# The Mines have been expanded
+kuektanar_iron_mines_03 = {
+	effect_desc = mines_effect_desc
+
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = {
+		culture = { has_cultural_tradition = tradition_sacred_iron_mines }
+	}
+	can_construct = {
+	}
+	is_enabled = {
+		scope:holder.culture = { has_cultural_tradition = tradition_sacred_iron_mines }
+	}
+	
+	cost_gold = expensive_building_tier_5_cost
+	
+	province_modifier = {
+		monthly_income = 2
+		stationed_maa_damage_mult = high_maa_damage_tier_2
+	}
+	county_modifier = {
+		tax_mult = 0.3
+		development_growth = 0.05
+		development_growth_factor = 0.1
+	}
+	character_modifier = {
+		monthly_piety = 0.9
+		army_maintenance_mult = -0.1
+	}
+	
+	next_building = kuektanar_iron_mines_04
+	
+	ai_value = {
+		base = 100
+	}
+	
+	type = special
+	
+	flag = travel_point_of_interest_religious
+	flag = travel_point_of_interest_economic
+}
+
+# Kuektanar is now the large mining complex and religious centre that it became during the height of the Gokturk Khaganate
+kuektanar_iron_mines_04 = {
+	effect_desc = mines_effect_desc
+
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = {
+		culture = { has_cultural_tradition = tradition_sacred_iron_mines }
+	}
+	can_construct = {
+	}
+	is_enabled = {
+		scope:holder.culture = { has_cultural_tradition = tradition_sacred_iron_mines }
+	}
+	
+	cost_gold = 2000
+	
+	province_modifier = {
+		monthly_income = 4
+		stationed_maa_damage_mult = high_maa_damage_tier_4
+	}
+	county_modifier = {
+		tax_mult = 0.4
+		development_growth = 0.1
+		development_growth_factor = 0.2
+	}
+	character_modifier = {
+		monthly_piety = 1.1
+		army_maintenance_mult = -0.2
+	}
+	
+	ai_value = {
+		base = 100
+	}
+	
+	type = special
+	
+	flag = travel_point_of_interest_religious
+	flag = travel_point_of_interest_economic
+	flag = travel_point_of_interest_wonder
+}
+
+beirut_university = {
+	asset = {
+		type = pdxmesh name = "mediterranean_university_mesh"
+	}
+	
+	construction_time = very_slow_construction_time
+	effect_desc = {
+		desc = unlocks_building_desc
+		triggered_desc = {
+			trigger = { has_dlc_feature = tours_and_tournaments }
+			desc = university_toto_effect_desc
+		}
+		triggered_desc = {
+			trigger = { has_dlc_feature = royal_court }
+			desc = university_roco_effect_desc
+		}
+		desc = university_effect_desc
+	}
+
+	type_icon = "icon_building_university.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+		building_university_requirement = yes
+	}
+	
+	show_disabled = yes
+	
+	cost_gold = 1000
+
+	character_modifier = {
+		learning_per_prestige_level = 1
+		stewardship_per_prestige_level = 1
+		monthly_lifestyle_xp_gain_mult = 0.1
+		cultural_head_fascination_mult = 0.05
+		monthly_dynasty_prestige = 0.25
+		monthly_tyranny = -0.1
+		tyranny_gain_mult = -0.25
+		tyranny_loss_mult = 0.25
+	}
+	
+	county_modifier = {
+		development_growth_factor = 0.2
+		development_growth = 0.3
+	}
+	
+	ai_value = {
+		base = 8
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_learning
+}
+
+adur_gushnasp = {
+	asset = {
+		type = entity
+		name = "building_special_cathedral_zoroastrian_01_a_entity"
+	}
+
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_great_fire_temple.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	
+	can_construct = {
+		custom_description = {
+			text = holy_site_building_trigger
+			barony = {
+				is_holy_site_of = scope:holder.faith
+			}
+		}
+		scope:holder = {
+			culture = {
+				has_innovation = innovation_crop_rotation
+			}
+		}
+	}
+	
+	is_enabled = {
+		custom_description = {
+			text = holy_site_building_trigger
+			barony = {
+				is_holy_site_of = scope:holder.faith
+			}
+		}
+	}
+	
+	cost_gold = 1000
+
+	character_modifier = {
+		monthly_piety = 0.25
+		monthly_prestige = 0.5
+		monthly_dynasty_prestige_mult = 0.1
+		men_at_arms_maintenance = -0.05
+		short_reign_duration_mult = -0.2
+		monthly_county_control_growth_factor = 0.05
+	}
+	
+	county_modifier = {
+		tax_mult = 0.2
+		development_growth_factor = 0.5
+		development_growth = 0.25
+	}
+	
+	province_modifier = {
+		monthly_income = 3
+	}
+	
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_religious
+}
+
+# Royal Necropolis of Ballana
+TFE_royal_necropolis_of_ballana = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_stonehenge.dds"
+
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		always = no
+	}
+	cost_gold = 3000
+
+	character_modifier = {
+		stewardship = 1
+		legitimacy_gain_mult = 0.15
+		monthly_prestige = 0.15
+		monthly_county_control_growth_factor = 0.1
+	}
+	
+	
+	ai_value = {
+		base = 100
+		modifier = {
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+	flag = travel_point_of_interest_learning
+
+}

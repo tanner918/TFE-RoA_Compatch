@@ -1,0 +1,319 @@
+﻿# On actions for war events, triggered automatically by the game
+
+# called for when a casus belli resolves in one of the following ways.
+# same scopes are available in these events as in the CBs themselves, this just fires for all CBs instead of a specific CB.
+# note that any events/effects fired here WILL NOT show up in the war summary tooltip; they fire at the same time as the war resolution, but are not actually part of the war resolution itself.
+
+on_war_won_attacker = {
+	on_actions = { TFE_on_war_won_attacker }
+	on_actions = { TFE_on_war_won_attacker_family_destroy }
+}
+
+TFE_on_war_won_attacker_family_destroy = {
+    trigger = {
+        scope:defender = {
+            highest_held_title_tier <= tier_duchy
+        }
+    }
+    effect = {
+        scope:defender = {
+            every_held_title = {
+                limit = {
+                    is_noble_family_title = yes
+                }
+                save_temporary_scope_as = family_title
+                prev = { destroy_title = scope:family_title }
+            }
+        }
+    }
+}
+
+TFE_on_war_won_attacker = {
+	effect = {
+		scope:attacker = {
+			add_character_flag = {
+				flag = recently_won_war_lol
+				years = 10
+			}
+			set_variable = {
+				name = years_since_last_war
+				value = 0
+			}
+		
+			scope:attacker = {
+				add_character_flag = {
+					flag = recent_victory_5_years
+					years = 5
+				}
+			}
+			scope:defender = {
+				add_character_flag = {
+					flag = recently_lost_war_lol
+					years = 10
+				}
+				set_variable = {
+					name = years_since_last_war
+					value = 0
+				}
+			}
+			if = {
+				limit = { culture = { has_cultural_parameter = can_use_bend_swords_decision } }
+				add_character_flag = {
+					flag = can_bend
+					months = 10
+				}
+				set_variable = {
+					name = recent_foe
+					value = scope:defender
+				}
+			}
+		}
+		#senate shiz
+		if = {
+			limit = {
+				global_var:italy_senate_tasks = flag:conquer
+				global_var:italy_senate_conquer = scope:defender
+				OR = {
+					scope:attacker = {
+						access_to_italian_senate = yes
+					}
+					scope:attacker = {
+						any_liege_or_above = {
+							access_to_italian_senate = yes
+						}
+					}
+				}
+			}
+			scope:attacker = {
+				trigger_event = senate.0003
+			}
+			set_global_variable = {
+				name = italy_senate_tasks
+				value = flag:none
+			}
+		}
+		if = {
+			limit = {
+				global_var:eastern_senate_tasks = flag:conquer
+				global_var:eastern_senate_conquer = scope:defender
+				OR = {
+					scope:attacker = {
+						access_to_eastern_senate = yes
+					}
+					scope:attacker = {
+						any_liege_or_above = {
+							access_to_eastern_senate = yes
+						}
+					}
+				}
+			}
+			scope:attacker = {
+				trigger_event = senate.0003
+			}
+			set_global_variable = {
+				name = eastern_senate_tasks
+				value = flag:none
+			}
+		}
+		if = {
+			limit = {
+				scope:defender = {
+					is_landed = yes
+					highest_held_title_tier > tier_barony
+					top_liege = scope:attacker
+					OR = {
+						culture = { has_cultural_tradition = tradition_nomadic_migrations }
+						culture = { has_cultural_tradition = tradition_migrations }
+					}
+				}
+				scope:attacker = {
+					has_title = title:e_hunnic_empire
+				}
+			}
+			scope:defender = {
+				save_scope_as = migration_leader
+			}
+			every_county_in_region = {
+				region = custom_western_roman_empire_no_britain
+				limit = {
+					NOT = {
+						is_in_list = hun_migration_list
+					}
+				}
+				add_to_list = hun_migration_list
+			}
+			random_in_list = {
+				list = hun_migration_list
+				save_scope_as = migration_target
+				weight = {
+					base = 1
+					modifier = {
+						add = 100
+						holder = { top_liege = { has_title = title:e_western_roman_empire } }
+					}
+					modifier = {
+						add = -100
+						duchy = { is_in_list = already_target_migration }
+					}
+				}
+			}
+			if = {
+				limit = {
+					scope:defender = {
+						culture = { has_cultural_tradition = tradition_nomadic_migrations }
+					}
+				}
+				scope:defender = {
+					trigger_event = western_roman.0079
+				}
+			}
+			if = {
+				limit = {
+					scope:defender = {
+						culture = { has_cultural_tradition = tradition_migrations }
+					}
+				}
+				scope:defender = {
+					trigger_event = western_roman.0080
+				}
+			}
+		}
+	}
+}
+
+on_war_won_defender = {
+	on_actions = { TFE_on_war_won_defender }
+}
+
+TFE_on_war_won_defender = {
+	effect = {
+		scope:defender = {
+			add_character_flag = {
+				flag = recently_won_war_lol
+				years = 10
+			}
+			if = {
+				limit = { culture = { has_cultural_parameter = can_use_bend_swords_decision } }
+				add_character_flag = {
+					flag = can_bend
+					years = 10
+				}
+				set_variable = {
+					name = recent_foe
+					value = scope:attacker
+				}
+			}
+		}
+		scope:attacker = {
+			add_character_flag = {
+				flag = recently_lost_war_lol
+				years = 10
+			}
+		}
+	}
+}
+
+usurp_war_trigger = {
+	effect = {
+		start_war = {
+			cb = usurper_WRE_cb
+			target = title:e_western_roman_empire.holder
+		}
+	}
+}
+
+on_war_white_peace = {
+	on_actions = { TFE_on_war_white_peace }
+}
+
+TFE_on_war_white_peace = {
+	effect = {
+		scope:attacker = {
+			set_variable = {
+				name = years_since_last_war
+				value = 0
+			}
+		}
+		scope:defender = {
+			set_variable = {
+				name = years_since_last_war
+				value = 0
+			}
+		}
+	}
+}
+
+on_war_started = {
+	on_actions = { TFE_on_war_started }
+}
+
+TFE_on_war_started = {
+	effect = {
+		scope:attacker = {
+			if = {
+				limit = {
+					any_character_struggle = {
+						involvement = involved
+						phase_has_catalyst = catalyst_tfe_declared_war
+					}
+				}
+				every_character_struggle = {
+					involvement = involved
+					limit = {
+						phase_has_catalyst = catalyst_tfe_declared_war
+					}
+					activate_struggle_catalyst = {
+						catalyst = catalyst_tfe_declared_war
+						character = scope:attacker
+					}
+				}
+			}
+			set_variable = {
+				name = years_since_last_war
+				value = 0
+			}
+		}
+		scope:defender = {
+			set_variable = {
+				name = years_since_last_war
+				value = 0
+			}
+			every_vassal_or_below = {
+				save_temporary_scope_as = join_war_holder_d
+				if = {
+					limit = {
+						scope:join_war_holder_d = {
+							has_government = legion_government
+						}
+						any_in_list = {
+							list = target_titles
+							kingdom = {
+								any_in_de_jure_hierarchy = {
+									holder = scope:join_war_holder_d
+								}
+							}
+						}
+					}
+					scope:war = {
+						add_defender = scope:join_war_holder_d
+					}
+				}
+			}
+			if = {
+				limit = {
+					exists = var:my_suzerain
+					var:my_suzerain = {
+						is_alive = yes
+						is_landed = yes
+					}
+				}
+				var:my_suzerain = {
+					save_scope_as = join_war_holder_d
+				}
+				scope:war = {
+					add_defender = scope:join_war_holder_d
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,53 @@
+﻿########################################################
+# 
+# ADAPTED FROM RICE
+# DO **NOT** REMOVE, RENAME, OR ALTER FORMAT OF FILE
+# THIS IS TO ENSURE COMPATIBILITY WITH RICE
+# 
+########################################################
+
+#### Local Types ####
+@RICE_qanats = "gfx/interface/icons/culture_innovations/innovation_RICE_qanats.dds"
+
+# NOTE: DO NOT RENAME THIS, THIS IS TO ENSURE THIS PLAYS NICELY WITH THE RICE MOD!
+innovation_RICE_qanats = {
+	group = culture_group_regional
+	culture_era = culture_era_tribal
+	region = TFE_qanat_region
+	icon = @RICE_qanats
+	
+	# potential = {
+	# 	OR = {
+	# 		has_cultural_pillar = heritage_arabic
+	# 		has_cultural_pillar = heritage_berber
+	# 		has_cultural_pillar = heritage_iranian
+	# 		has_cultural_pillar = heritage_turkic
+	# 		has_cultural_pillar = heritage_iberian
+	# 		has_cultural_pillar = heritage_tocharian
+	# 		has_cultural_pillar = heritage_levantine
+	# 		has_cultural_pillar = heritage_syriac
+	# 		has_cultural_pillar = heritage_kemetic
+	# 		this = culture:syrian
+	# 		any_parent_culture_or_above = {
+	# 			this = culture:syrian
+	# 		}
+	# 		this = culture:aegyptian
+	# 		any_parent_culture_or_above = {
+	# 			this = culture:aegyptian
+	# 		}
+	# 		this = culture:afro_roman
+	# 		any_parent_culture_or_above = {
+	# 			this = culture:afro_roman
+	# 		}
+
+	# 	}
+	# }
+	
+	character_modifier = {
+		development_growth_factor = 0.05
+	}
+
+	custom = TFE_qanat_decision_unlock
+
+	flag = global_regional
+}

@@ -1,0 +1,200 @@
+
+
+
+
+#################
+#	Meshes	#
+#################
+
+
+##Example##  Add these after exporting from Maya
+
+#pdxmesh = {  #PLACEHOLDER
+#	name = "test_cube_mesh"
+#	file = "test_cube.mesh"
+#
+#	meshsettings = {
+#		name = "pCubeShape1"
+#		index = 0
+#		texture_diffuse = "test_diffuse.dds"
+#		texture_normal = "nonormal.dds"
+#		texture_specular = "nospec.dds"
+#		shader = "court"
+#		shader_file = "gfx/FX/court_scene.shader"
+#	}
+#}
+
+##### Swords -----------------------------------------
+
+pdxmesh = {
+	name = "tfe_roman_gladius_01_a_mesh"
+	file = "tfe_roman_gladius_01_a.mesh"
+
+	lod_percentages = {
+		lod = { index = 1 percent = 16.0 }
+		lod = { index = 2 percent = 8.0 }
+	}
+
+	meshsettings = {
+		name = "tfe_roman_gladius_01_a_LOD0Shape"
+		index = 0
+		texture_diffuse = "tfe_roman_gladius_01_a_diffuse.dds"
+		texture_normal = "tfe_roman_gladius_01_a_normal.dds"
+		texture_specular = "tfe_roman_gladius_01_a_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+
+	meshsettings = {
+		name = "ep1_western_weaponrack_01_LOD0Shape"
+		index = 0
+		texture_diffuse = "ep1_western_weaponrack_01_diffuse.dds"
+		texture_normal = "ep1_western_weaponrack_01_normal.dds"
+		texture_specular = "ep1_western_weaponrack_01_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+
+	meshsettings = {
+		name = "tfe_roman_gladius_01_a_LOD1Shape"
+		index = 0
+		texture_diffuse = "tfe_roman_gladius_01_a_diffuse.dds"
+		texture_normal = "tfe_roman_gladius_01_a_normal.dds"
+		texture_specular = "tfe_roman_gladius_01_a_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+
+	meshsettings = {
+		name = "ep1_western_weaponrack_02_LOD1Shape"
+		index = 0
+		texture_diffuse = "ep1_western_weaponrack_01_diffuse.dds"
+		texture_normal = "ep1_western_weaponrack_01_normal.dds"
+		texture_specular = "ep1_western_weaponrack_01_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+
+	meshsettings = {
+		name = "tfe_roman_gladius_01_a_LOD2Shape"
+		index = 0
+		texture_diffuse = "tfe_roman_gladius_01_a_diffuse.dds"
+		texture_normal = "tfe_roman_gladius_01_a_normal.dds"
+		texture_specular = "tfe_roman_gladius_01_a_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+
+	meshsettings = {
+		name = "ep1_western_weaponrack_02_LOD2Shape"
+		index = 0
+		texture_diffuse = "ep1_western_weaponrack_01_diffuse.dds"
+		texture_normal = "ep1_western_weaponrack_01_normal.dds"
+		texture_specular = "ep1_western_weaponrack_01_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+}
+
+pdxmesh = {
+	name = "tfe_roman_spatha_01_a_mesh"
+	file = "tfe_roman_spatha_01_a.mesh"
+
+	lod_percentages = {
+		lod = { index = 1 percent = 3.0 }
+		lod = { index = 2 percent = 1.0 }
+	}
+
+	meshsettings = {
+		name = "tfe_roman_spatha_01_a_LOD0Shape"
+		index = 0
+		texture_diffuse = "tfe_roman_spatha_01_a_diffuse.dds"
+		texture_normal = "tfe_roman_spatha_01_a_normal.dds"
+		texture_specular = "tfe_roman_spatha_01_a_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+
+	meshsettings = {
+		name = "ep1_western_weaponrack_01_LOD0Shape"
+		index = 0
+		texture_diffuse = "ep1_western_weaponrack_01_diffuse.dds"
+		texture_normal = "ep1_western_weaponrack_01_normal.dds"
+		texture_specular = "ep1_western_weaponrack_01_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+
+	meshsettings = {
+		name = "tfe_roman_spatha_01_a_LOD1Shape"
+		index = 0
+		texture_diffuse = "tfe_roman_spatha_01_a_diffuse.dds"
+		texture_normal = "tfe_roman_spatha_01_a_normal.dds"
+		texture_specular = "tfe_roman_spatha_01_a_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+
+	meshsettings = {
+		name = "ep1_western_weaponrack_02_LOD1Shape"
+		index = 0
+		texture_diffuse = "ep1_western_weaponrack_01_diffuse.dds"
+		texture_normal = "ep1_western_weaponrack_01_normal.dds"
+		texture_specular = "ep1_western_weaponrack_01_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+
+	meshsettings = {
+		name = "tfe_roman_spatha_01_a_LOD2Shape"
+		index = 0
+		texture_diffuse = "tfe_roman_spatha_01_a_diffuse.dds"
+		texture_normal = "tfe_roman_spatha_01_a_normal.dds"
+		texture_specular = "tfe_roman_spatha_01_a_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+
+	meshsettings = {
+		name = "ep1_western_weaponrack_02_LOD2Shape"
+		index = 0
+		texture_diffuse = "ep1_western_weaponrack_01_diffuse.dds"
+		texture_normal = "ep1_western_weaponrack_01_normal.dds"
+		texture_specular = "ep1_western_weaponrack_01_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+}
+
+#################
+#	Entities	#
+#################
+
+
+#entity = {
+#	name 	= "test_cube_entity"
+#	pdxmesh	= "test_cube_mesh"
+#}
+
+##### Swords -----------------------------------------
+
+entity = {
+	name = "tfe_roman_gladius_01_a_entity"
+	pdxmesh = "tfe_roman_gladius_01_a_mesh"
+}
+
+entity = {
+	name = "tfe_roman_spatha_01_a_entity"
+	pdxmesh = "tfe_roman_spatha_01_a_mesh"
+}
+
+#################
+#	Clones		#
+#################
+
+#entity = {
+#	name 	= "test_clone_entity"
+#	clone 	= "test_cube_entity"
+#
+#}
+#

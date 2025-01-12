@@ -1,0 +1,11 @@
+﻿
+clean_brythonic_adventurer_effect = {
+	scope:attacker = {
+		every_held_title = {
+			limit = { has_variable = temporary_title }
+			save_scope_as = destroyable_title
+			scope:attacker = { destroy_title = scope:destroyable_title }
+		}
+		remove_character_modifier = brythonic_adventurer_modifier
+	}
+}

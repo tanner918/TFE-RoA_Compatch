@@ -1,0 +1,627 @@
+﻿k_caucasus = {
+	768.1.1 = { change_development_level = 0 }
+	
+	385.1.1 = {
+		holder = balamer_01 #Uldin
+		government = tribal_government
+		liege = e_hunnic_empire
+		de_jure_liege = e_hunnic_empire
+	}
+	395.1.1 = {
+		liege = e_hunnic_empire
+	}
+	399.1.1 = {
+		holder = 990000 #Uldin
+	}
+	412.1.1 = {
+		holder = 990003 #Rugila
+	}
+	434.1.1 = {
+		holder = 990006 #Attila
+	}
+	454.3.1 = {
+		holder = 990009 #Ernak
+	}
+	473.1.1 = {
+		holder = 0
+		de_jure_liege = e_caspian-pontic_steppe
+	}
+}
+
+d_khazaria = {
+	691.1.1 = {
+		liege = e_caspian-pontic_steppe
+		holder = 74007
+	}
+	715.1.1 = {
+		holder = 74008
+	}
+	731.1.1 = {
+		holder = 74009
+	}
+	749.1.1 = {
+		holder = 74012
+	}
+	763.1.1 = {
+		holder = 146203
+	}
+}
+
+
+c_sarkel = {
+	476.1.1 = { change_development_level = 1 }
+	350.1.1 = {
+		holder = alan_03 #Don Alans
+		liege = d_alania
+	}
+	370.1.1 = {
+		holder = alan_05
+	}
+	395.1.1 = {
+		liege = k_caucasus
+	}
+	453.1.1 = {
+		holder = 990009 #Ernak
+	}
+	473.1.1 = {
+		holder = 990011 #Utigur
+	}
+	499.1.1 = {
+		holder = 990020 #Grod
+	}
+	528.1.1 = {
+		holder = 990019 #Mugel
+	}
+	530.1.1 = {
+		holder = 990022 #Sandil
+	}
+	532.1.1 = {
+		holder = hun_misc_002
+		liege = d_azov
+	}
+	630.1.1 = {
+		holder = hun_02 #BÄ‚Å›ri
+		liege = d_azov
+	}
+	691.1.1 = {
+		liege = e_caspian-pontic_steppe
+		holder = 74007
+		government = tribal_government
+	}
+	760.1.1 = {
+		holder = khazar_01
+		liege = e_caspian-pontic_steppe
+	}
+}
+
+
+c_astrakhan = {
+	361.1.1 = { change_development_level = 1 }
+	768.1.1 = { change_development_level = 9 }
+	350.1.1 = {
+		holder = ciscaucasian_03 # Dz
+		liege = d_alania
+	}
+	395.1.1 = {
+		liege = k_caucasus
+	}
+	460.1.1 = {
+		holder = hun_01 # Bagrasik
+		liege = d_azov
+	}
+	530.1.1 = {
+		holder = sabir_06
+		liege = k_caspian_steppe
+	}
+	630.1.1 = {
+		holder = 74003 #BÄ‚Å›ri
+		liege = e_turan
+	}
+	691.1.1 = {
+		liege = e_caspian-pontic_steppe
+		holder = 74007
+		government = tribal_government
+	}
+	715.1.1 = {
+		holder = 74008
+	}
+	731.1.1 = {
+		holder = 74009
+	}
+	749.1.1 = {
+		holder = 74012
+	}
+	763.1.1 = {
+		holder = 146203
+	}
+}
+
+
+c_beksima = {
+	361.1.1 = { change_development_level = 1 }
+	350.1.1 = {
+		holder = alan_03 #Don Alans
+		liege = d_alania
+	}
+	370.1.1 = {
+		holder = alan_05
+	}
+	395.1.1 = {
+		liege = k_caucasus
+	}
+	460.1.1 = {
+		holder = hun_01 # Bagrasik
+		liege = d_azov
+	}
+	530.1.1 = {
+		holder = sabir_06
+		liege = k_caspian_steppe
+	}
+	630.1.1 = {
+		holder = 74003 #BÄ‚Å›ri
+		liege = e_turan
+	}
+	691.1.1 = {
+		liege = e_caspian-pontic_steppe
+		holder = 74007
+		government = tribal_government
+	}
+	715.1.1 = {
+		holder = 74008
+	}
+	731.1.1 = {
+		holder = 74009
+	}
+	749.1.1 = {
+		holder = 74012
+	}
+	763.1.1 = {
+		holder = 146203
+	}
+}
+
+
+d_azov = {
+	
+	453.1.1 = {
+		holder = 990009 #Ernak
+	}
+	473.1.1 = {
+		holder = 990011 #Utigur
+	}
+	499.1.1 = {
+		holder = 990020 #Grod
+	}
+	528.1.1 = {
+		holder = 990019 #Mugel
+	}
+	530.1.1 = {
+		holder = 990022 #Sandil
+	}
+	632.1.1 = {
+		holder = 159117 #Kubrat
+	}
+	665.1.1 = {
+		holder = 159127
+	}
+	760.1.1 = {
+		holder = khazar_01
+		liege = e_caspian-pontic_steppe
+	}
+}
+
+
+c_tmutarakan = {
+	395.1.1 = { change_development_level = 1 }
+	768.1.1 = { change_development_level = 2 }
+	350.1.1 = {
+		holder = ciscaucasian_02 # Zygii
+	}
+	385.1.1 = {
+		holder = balamer_01 #Uldin
+		government = tribal_government
+	}
+	399.1.1 = {
+		holder = 990000 #Uldin
+	}
+	412.1.1 = {
+		holder = 990003 #Rugila
+	}
+	445.1.1 = {
+		holder = 990006 #Attila
+	}
+	453.1.1 = {
+		holder = 990009 #Ernak
+	}
+	473.1.1 = {
+		holder = 990011 #Utigur
+	}
+	499.1.1 = {
+		holder = 990020 #Grod
+	}
+	528.1.1 = {
+		holder = 990019 #Mugel
+	}
+	530.1.1 = {
+		holder = 990022 #Sandil
+	}
+	632.1.1 = {
+		holder = 159117 #Kubrat
+	}
+	665.1.1 = {
+		holder = 159127
+	}
+	760.1.1 = {
+		holder = khazar_01
+		liege = e_caspian-pontic_steppe
+	}
+}
+
+
+c_khumar = {
+	395.1.1 = { change_development_level = 1 }
+	350.1.1 = {
+		holder = alan_03 #Don Alans
+		liege = d_alania
+	}
+	385.1.1 = {
+		holder = balamer_01 #Uldin
+		government = tribal_government
+	}
+	399.1.1 = {
+		holder = 990000 #Uldin
+	}
+	412.1.1 = {
+		holder = 990003 #Rugila
+	}
+	445.1.1 = {
+		holder = 990006 #Attila
+	}
+	453.1.1 = {
+		holder = 990009 #Ernak
+	}
+	473.1.1 = {
+		holder = 990011 #Utigur
+	}
+	499.1.1 = {
+		holder = 990020 #Grod
+	}
+	528.1.1 = {
+		holder = 990019 #Mugel
+	}
+	530.1.1 = {
+		holder = 990022 #Sandil
+	}
+	632.1.1 = {
+		holder = 159117 #Kubrat
+	}
+	665.1.1 = {
+		holder = 159127
+	}
+	760.1.1 = {
+		holder = khazar_01
+		liege = e_caspian-pontic_steppe
+	}
+}
+
+
+c_azov = {
+	476.1.1 = { change_development_level = 1 }
+	350.1.1 = {
+		holder = alan_03 #Don Alans
+		liege = d_alania
+	}
+	453.1.1 = {
+		holder = 990009 #Ernak
+	}
+	370.1.1 = {
+		holder = alan_05
+	}
+	395.1.1 = {
+		liege = k_caucasus
+	}
+	473.1.1 = {
+		holder = 990011 #Utigur
+	}
+	499.1.1 = {
+		holder = 990020 #Grod
+	}
+	528.1.1 = {
+		holder = 990019 #Mugel
+	}
+	530.1.1 = {
+		holder = 990022 #Sandil
+	}
+	532.1.1 = {
+		holder = hun_misc_002
+		liege = d_azov
+	}
+	630.1.1 = {
+		holder = hun_02 #BÄ‚Å›ri
+		liege = d_azov
+	}
+	760.1.1 = {
+		holder = khazar_01
+		liege = e_caspian-pontic_steppe
+	}
+}
+
+
+d_alania = {
+	250.1.1 = {
+		holder = 999517
+	}
+	345.1.1 = {
+		holder = 999500
+	}
+	370.1.1 = {
+		holder = 999501
+		liege = e_hunnic_empire
+	}
+	557.1.1 = {
+		holder = 999521 # Saros
+		liege = 0
+	}
+	#Alans tributaries to Khazars
+	741.1.1 = {
+		holder = 146205	#Buriberdi Zmbalani
+		liege = e_caspian-pontic_steppe
+		government = tribal_government
+	}
+	
+}
+
+
+c_cabardinia = {
+	250.1.1 = {
+		holder = 999517
+	}
+	345.1.1 = {
+		holder = 999500
+	}
+	370.1.1 = {
+		holder = 999501
+	}
+	418.1.1 = {
+		holder = 999509
+	}
+	450.1.1 = {
+		holder = 999510
+		liege = d_azov
+	}
+	495.1.1 = {
+		holder = 999520
+	}
+	530.1.1 = {
+		holder = 999521
+	}
+	632.1.1 = {
+		holder = alan_08
+	}
+	#Alans tributaries to Khazars
+	741.1.1 = {
+		holder = 146205	#Buriberdi Zmbalani
+		liege = d_alania
+		government = tribal_government
+	}
+	
+}
+
+
+c_maghas = {
+	476.1.1 = { change_development_level = 1 }
+	768.1.1 = { change_development_level = 2 }
+	
+	250.1.1 = {
+		holder = 999517
+	}
+	345.1.1 = {
+		holder = 999500
+	}
+	395.1.1 = {
+		liege = k_caucasus
+	}
+	470.1.1 = {
+		holder = hun_08
+		liege = d_azov
+	}
+	500.1.1 = {
+		holder = 999520
+	}
+	530.1.1 = {
+		holder = 999521
+	}
+	632.1.1 = {
+		holder = alan_08
+	}
+	#Alans tributaries to Khazars
+	741.1.1 = {
+		holder = 146205	#Buriberdi Zmbalani
+		liege = d_alania
+		government = tribal_government
+	}
+	
+}
+
+
+c_zichia = {
+	476.1.1 = { change_development_level = 1 }
+	350.1.1 = {
+		holder = ciscaucasian_02 # Zygii
+	}
+	395.1.1 = {
+		liege = k_caucasus
+	}
+	470.1.1 = {
+		holder = hun_08
+		liege = d_azov
+	}
+	530.1.1 = {
+		holder = 990022 # Sandilk
+	}
+	### 532
+	632.1.1 = {
+		holder = 159117 #Kubrat
+	}
+	665.1.1 = {
+		holder = 159127
+	}
+	#Alans tributaries to Khazars
+	741.1.1 = {
+		holder = 146205	#Buriberdi Zmbalani
+		liege = d_alania
+		government = tribal_government
+	}
+}
+
+
+c_derbent = {
+	361.1.1 = { change_development_level = 4 }
+	476.1.1 = { change_development_level = 5 }
+	532.1.1 = { change_development_level = 6 }
+	632.1.1 = { change_development_level = 7 }
+	768.1.1 = { change_development_level = 8 }
+	
+	270.1.1 = {
+		holder = 159580
+	}
+	300.1.1 = {
+		holder = 159581
+	}
+	330.1.1 = {
+		holder = 159582
+	}
+	372.1.1 = {
+		holder = 159583
+	}
+	402.1.1 = {
+		holder = 159585
+	}
+	435.1.1 = {
+		holder = 159586
+	}
+	440.1.1 = {
+		holder = 159587
+	}
+	460.1.1 = {
+		holder = 159588
+	}
+	465.1.1 = {
+		holder = 159589
+	}
+	500.1.1 = {
+		holder = 159591
+	}
+	530.1.1 = {
+		holder = 159615
+	}
+	570.1.1 = {
+		holder = 159617
+	}
+	600.1.1 = {
+		holder = 159618
+	}
+	635.1.1 = {
+		holder = 160036
+	}
+	636.1.1 = {
+		holder = 159619
+	}
+	668.1.1 = {
+		holder = 159620
+	}
+	699.1.1 = {
+		holder = 159627
+	}
+	705.1.1 = {
+		holder = 160037
+	}
+	710.1.1 = {
+		holder = 159628
+	}
+	732.1.1 = {
+		liege = "k_armenia"
+	}
+	740.1.1 = {
+		holder = 159629
+	}
+}
+
+
+c_samander = {
+	350.1.1 = {
+		holder = ciscaucasian_01 # Lehks
+	}
+	395.1.1 = {
+		liege = k_caucasus
+	}
+	400.1.1 = {
+		holder = ciscaucasian_04 # Lehks
+	}
+	430.1.1 = {
+		holder = ciscaucasian_05 # Lehks
+	}
+	460.1.1 = {
+		holder = ciscaucasian_06 # Lehks
+		liege = 0
+	}
+	500.1.1 = {
+		holder = ciscaucasian_07 # Lehks
+	}
+	530.1.1 = {
+		holder = ciscaucasian_08 # Lehks
+	}
+	560.1.1 = {
+		holder = ciscaucasian_09 # Lehks
+	}
+	590.1.1 = {
+		holder = ciscaucasian_10 # Lehks
+	}
+	629.1.1 = {
+		holder = ciscaucasian_11 # Lehks
+	}
+	659.1.1 = {
+		holder = ciscaucasian_12 # Lehks
+	}
+	700.1.1 = {
+		holder = ciscaucasian_13 # Lehks
+	}
+	730.1.1 = {
+		holder = ciscaucasian_14 # Lehks
+		liege = d_alania
+	}
+}
+
+
+c_samiran = {
+	350.1.1 = {
+		holder = ciscaucasian_01 # Lehks
+	}
+	395.1.1 = {
+		liege = k_caucasus
+	}
+	400.1.1 = {
+		holder = ciscaucasian_04 # Lehks
+	}
+	430.1.1 = {
+		holder = ciscaucasian_05 # Lehks
+	}
+	460.1.1 = {
+		holder = 999510
+		liege = d_azov
+	}
+	495.1.1 = {
+		holder = 999520
+	}
+	530.1.1 = {
+		holder = 999521
+	}
+	630.1.1 = {
+		holder = 74003
+	}
+	730.1.1 = {
+		holder = ciscaucasian_14 # Lehks
+		liege = d_alania
+	}
+}
+

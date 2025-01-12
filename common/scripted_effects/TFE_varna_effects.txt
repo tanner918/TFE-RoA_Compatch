@@ -1,0 +1,506 @@
+﻿caste_trait_assign = {
+	if = {
+		limit = {
+			AND = {
+				exists = father
+				NOT = {
+					exists = mother
+				}
+			}
+		}
+		father = {
+			switch = {
+				trigger = has_trait
+				$TRAIT_THINKER$ = {
+					PREV = {
+						add_trait = $TRAIT_THINKER$
+					}
+				}
+				$TRAIT_RULER$ = {
+					PREV = {
+						add_trait = $TRAIT_RULER$
+					}
+				}
+				$TRAIT_TRADER$ = {
+					PREV = {
+						add_trait = $TRAIT_TRADER$
+					}
+				}
+				$TRAIT_WORKER$ = {
+					PREV = {
+						add_trait = $TRAIT_WORKER$
+					}
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			AND = {
+				exists = mother
+				NOT = {
+					exists = father
+				}
+			}
+		}
+		mother = {
+			switch = {
+				trigger = has_trait
+				$TRAIT_THINKER$ = {
+					PREV = {
+						add_trait = $TRAIT_THINKER$
+					}
+				}
+				$TRAIT_RULER$ = {
+					PREV = {
+						add_trait = $TRAIT_RULER$
+					}
+				}
+				$TRAIT_TRADER$ = {
+					PREV = {
+						add_trait = $TRAIT_TRADER$
+					}
+				}
+				$TRAIT_WORKER$ = {
+					PREV = {
+						add_trait = $TRAIT_WORKER$
+					}
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			AND = {
+				NOT = {
+					exists = mother
+				}
+				NOT = {
+					exists = father
+				}
+			}
+		}
+		if = {
+			limit = {
+				is_lowborn = yes
+				NOT = {
+					is_clergy = yes
+				}
+				
+			}
+			add_trait = $TRAIT_WORKER$
+		}
+		else_if = {
+			limit = {
+				OR = {
+					is_clergy = yes
+					OR = {
+						has_trait = education_learning_1
+						has_trait = education_learning_2
+						has_trait = education_learning_3
+						has_trait = education_learning_4
+					}
+				}
+			}
+			add_trait = $TRAIT_THINKER$
+		}
+		else_if = {
+			limit = {
+				OR = {
+					is_landed = yes
+					OR = {
+						has_trait = education_martial_1
+						has_trait = education_martial_2
+						has_trait = education_martial_3
+						has_trait = education_martial_4
+					}
+				}
+			}
+			add_trait = $TRAIT_RULER$
+		}
+		else_if = {
+			limit = {
+				OR = {
+					OR = {
+						has_trait = education_diplomacy_1
+						has_trait = education_diplomacy_2
+						has_trait = education_diplomacy_3
+						has_trait = education_diplomacy_4
+					}
+					OR = {
+						has_trait = education_stewardship_1
+						has_trait = education_stewardship_2
+						has_trait = education_stewardship_3
+						has_trait = education_stewardship_4
+					}
+					OR = {
+						has_trait = education_intrigue_1
+						has_trait = education_intrigue_2
+						has_trait = education_intrigue_3
+						has_trait = education_intrigue_4
+					}
+				}
+			}
+			add_trait = $TRAIT_TRADER$
+		}
+	}
+	else_if = {
+		limit = {
+			AND = {
+				exists = mother
+				exists = father
+			}
+		}
+		if = {
+			limit = {
+				mother = {
+					has_trait = $TRAIT_THINKER$
+				}
+				NOT = {
+					OR = {
+						father = {
+							has_trait = $TRAIT_THINKER$
+						}
+					}
+				}
+			}
+			add_trait = $TRAIT_WORKER$
+		}
+		else_if = {
+			limit = {
+				mother = {
+					has_trait = $TRAIT_RULER$
+				}
+				NOT = {
+					OR = {
+						father = {
+							has_trait = $TRAIT_RULER$
+						}
+						father = {
+							has_trait = $TRAIT_THINKER$
+						}
+					}
+				}
+			}
+			add_trait = $TRAIT_WORKER$
+		}
+		else_if = {
+			limit = {
+				mother = {
+					has_trait = $TRAIT_TRADER$
+				}
+				father = {
+					has_trait = $TRAIT_WORKER$
+				}
+			}
+			add_trait = $TRAIT_WORKER$
+		}
+		else = {
+			father = {
+				switch = {
+					trigger = has_trait
+					$TRAIT_THINKER$ = {
+						PREV = {
+							add_trait = $TRAIT_THINKER$
+						}
+					}
+					$TRAIT_RULER$ = {
+						PREV = {
+							add_trait = $TRAIT_RULER$
+						}
+					}
+					$TRAIT_TRADER$ = {
+						PREV = {
+							add_trait = $TRAIT_TRADER$
+						}
+					}
+					$TRAIT_WORKER$ = {
+						PREV = {
+							add_trait = $TRAIT_WORKER$
+						}
+					}
+				}
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			NOT = {
+				OR = {
+					has_trait = $TRAIT_THINKER$
+					has_trait = $TRAIT_RULER$
+					has_trait = $TRAIT_TRADER$
+					has_trait = $TRAIT_WORKER$
+				}
+			}
+		}
+		if = {
+			limit = {
+				is_lowborn = yes
+				NOT = {
+					is_clergy = yes
+				}
+			}
+			add_trait = $TRAIT_WORKER$
+		}
+		else_if = {
+			limit = {
+				OR = {
+					is_clergy = yes
+					OR = {
+						has_trait = education_learning_1
+						has_trait = education_learning_2
+						has_trait = education_learning_3
+						has_trait = education_learning_4
+					}
+				}
+			}
+			add_trait = $TRAIT_THINKER$
+		}
+		else_if = {
+			limit = {
+				OR = {
+					is_landed = yes
+					OR = {
+						has_trait = education_martial_1
+						has_trait = education_martial_2
+						has_trait = education_martial_3
+						has_trait = education_martial_4
+					}
+				}
+			}
+			add_trait = $TRAIT_RULER$
+		}
+		else_if = {
+			limit = {
+				OR = {
+					OR = {
+						has_trait = education_diplomacy_1
+						has_trait = education_diplomacy_2
+						has_trait = education_diplomacy_3
+						has_trait = education_diplomacy_4
+					}
+					OR = {
+						has_trait = education_stewardship_1
+						has_trait = education_stewardship_2
+						has_trait = education_stewardship_3
+						has_trait = education_stewardship_4
+					}
+					OR = {
+						has_trait = education_intrigue_1
+						has_trait = education_intrigue_2
+						has_trait = education_intrigue_3
+						has_trait = education_intrigue_4
+					}
+				}
+			}
+			add_trait = $TRAIT_TRADER$
+		}
+	}
+}
+
+caste_trait_newborn = {
+	if = {
+		limit = {
+			AND = {
+				exists = father
+				NOT = {
+					exists = mother
+				}
+			}
+		}
+		father = {
+			switch = {
+				trigger = has_trait
+				$TRAIT_THINKER$ = {
+					PREV = {
+						add_trait = $TRAIT_THINKER$
+					}
+				}
+				$TRAIT_RULER$ = {
+					PREV = {
+						add_trait = $TRAIT_RULER$
+					}
+				}
+				$TRAIT_TRADER$ = {
+					PREV = {
+						add_trait = $TRAIT_TRADER$
+					}
+				}
+				$TRAIT_WORKER$ = {
+					PREV = {
+						add_trait = $TRAIT_WORKER$
+					}
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			AND = {
+				exists = mother
+				NOT = {
+					exists = father
+				}
+			}
+		}
+		mother = {
+			switch = {
+				trigger = has_trait
+				$TRAIT_THINKER$ = {
+					PREV = {
+						add_trait = $TRAIT_THINKER$
+					}
+				}
+				$TRAIT_RULER$ = {
+					PREV = {
+						add_trait = $TRAIT_RULER$
+					}
+				}
+				$TRAIT_TRADER$ = {
+					PREV = {
+						add_trait = $TRAIT_TRADER$
+					}
+				}
+				$TRAIT_WORKER$ = {
+					PREV = {
+						add_trait = $TRAIT_WORKER$
+					}
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			AND = {
+				NOT = {
+					exists = mother
+				}
+				NOT = {
+					exists = father
+				}
+			}
+		}
+		random_list = {
+			25 = {
+				add_trait = $TRAIT_THINKER$
+			}
+			25 = {
+				add_trait = $TRAIT_RULER$
+			}
+			25 = {
+				add_trait = $TRAIT_TRADER$
+			}
+			25 = {
+				add_trait = $TRAIT_WORKER$
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			AND = {
+				exists = mother
+				exists = father
+			}
+		}
+		if = {
+			limit = {
+				mother = {
+					has_trait = $TRAIT_THINKER$
+				}
+				NOT = {
+					OR = {
+						father = {
+							has_trait = $TRAIT_THINKER$
+						}
+					}
+				}
+			}
+			add_trait = $TRAIT_WORKER$
+		}
+		else_if = {
+			limit = {
+				mother = {
+					has_trait = $TRAIT_RULER$
+				}
+				NOT = {
+					OR = {
+						father = {
+							has_trait = $TRAIT_RULER$
+						}
+						father = {
+							has_trait = $TRAIT_THINKER$
+						}
+					}
+				}
+			}
+			add_trait = $TRAIT_WORKER$
+		}
+		else_if = {
+			limit = {
+				mother = {
+					has_trait = $TRAIT_TRADER$
+				}
+				father = {
+					has_trait = $TRAIT_WORKER$
+				}
+			}
+			add_trait = $TRAIT_WORKER$
+		}
+		else = {
+			father = {
+				switch = {
+					trigger = has_trait
+					$TRAIT_THINKER$ = {
+						PREV = {
+							add_trait = $TRAIT_THINKER$
+						}
+					}
+					$TRAIT_RULER$ = {
+						PREV = {
+							add_trait = $TRAIT_RULER$
+						}
+					}
+					$TRAIT_TRADER$ = {
+						PREV = {
+							add_trait = $TRAIT_TRADER$
+						}
+					}
+					$TRAIT_WORKER$ = {
+						PREV = {
+							add_trait = $TRAIT_WORKER$
+						}
+					}
+				}
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			NOT = {
+				OR = {
+					has_trait = $TRAIT_THINKER$
+					has_trait = $TRAIT_RULER$
+					has_trait = $TRAIT_TRADER$
+					has_trait = $TRAIT_WORKER$
+				}
+			}
+		}
+		random_list = {
+			25 = {
+				add_trait = $TRAIT_THINKER$
+			}
+			25 = {
+				add_trait = $TRAIT_RULER$
+			}
+			25 = {
+				add_trait = $TRAIT_TRADER$
+			}
+			25 = {
+				add_trait = $TRAIT_WORKER$
+			}
+		}
+	}
+}

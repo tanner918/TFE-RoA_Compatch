@@ -1,0 +1,32 @@
+﻿
+
+
+tfe_character_any_involvement_north_indian_struggle_trigger = {
+	OR = {
+		tfe_character_involved_in_north_indian_struggle_trigger = yes
+		tfe_character_interloper_in_north_indian_struggle_trigger = yes
+	}
+}
+
+tfe_character_involved_in_north_indian_struggle_trigger = {
+	any_character_struggle = {
+		involvement = involved
+		is_struggle_type = north_indian_struggle
+	}
+}
+
+tfe_character_interloper_in_north_indian_struggle_trigger = {
+	any_character_struggle = {
+		involvement = interloper
+		is_struggle_type = north_indian_struggle
+	}
+}
+
+
+struggle_north_indian_ending_domination_percent_region_trigger = {
+	any_county_in_region = {
+		region = TFE_north_indian_struggle_region
+		percent > struggle_north_indian_ending_domination_owned_percent_decimal_value
+		holder.top_liege = root
+	}
+}

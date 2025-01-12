@@ -1,0 +1,28 @@
+pdxmesh = {
+	name = "egyptian_archaic_city_temple_mesh"
+	file = "egyptian_archaic_city_temple.mesh"
+	scale = 0.45
+	
+	meshsettings = {
+		name = "egyptian_archaic_city_temple"
+		texture_diffuse = "building_egyptian_archaic_diffuse.dds"
+		texture_normal = "building_egyptian_archaic_normal.dds"
+		texture_specular = "building_egyptian_archaic_properties.dds"
+		shader = "snap_to_terrain"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "decal"
+		index = 0
+		texture_diffuse = "building_egyptian_archaic_decal_diffuse.dds"
+		texture_normal = "building_egyptian_archaic_decal_normal.dds"
+		texture_specular = "building_egyptian_archaic_decal_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+}
+entity = {
+	name = "egyptian_archaic_city_temple_entity"
+	pdxmesh = "egyptian_archaic_city_temple_mesh"
+}

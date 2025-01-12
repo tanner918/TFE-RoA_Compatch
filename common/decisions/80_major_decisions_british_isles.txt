@@ -1,0 +1,178 @@
+﻿#############################################
+# Negotiate the Danelaw						#
+# by Linnéa Thimrén & Ewan Cowhig Croft		#
+#############################################
+negotiate_the_danelaw_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	}
+	decision_group_type = major
+
+	ai_check_interval = 120
+
+	desc = negotiate_the_danelaw_decision_desc
+
+	is_shown = {
+		# Viking Age has Started
+		TFE_viking_age_has_started = yes
+		# Standard filter checks.
+		negotiate_the_danelaw_basic_filter_trigger = yes
+		is_landed_or_landless_administrative = yes
+		# Must be in the vague region.
+		any_held_title = {
+			tier = tier_county
+			title_province = { geographical_region = world_europe_west_britannia }
+		}
+		# Cannot have an existing k_england.
+		title:k_england = { is_title_created = no }
+		# Can only be fired by someone in the Tribal Era (though their rival need not be).
+		culture = {
+			NOT = { has_cultural_era_or_later = culture_era_high_medieval }
+		}
+		# Not repeatable.
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:negotiate_the_danelaw_decision
+			}
+		}
+		exists = struggle:britannia_struggle
+	}
+
+	is_valid = {
+		# Some extra standard-ish filtering.
+		negotiate_the_danelaw_additional_filter_trigger = yes
+		# Should have a decent prestige level.
+		prestige_level >= medium_prestige_level
+		# Must have a valid opponent to negotiate with.
+		custom_description = {
+			text = negotiate_the_danelaw.valid_opponent.tt
+			any_county_in_region = {
+				region = world_europe_west_britannia
+				holder = { negotiate_the_danelaw_valid_danelaw_opponent_trigger = yes }
+			}
+		}
+		# And completely control any two duchies within k_england.
+		custom_description = {
+			text = negotiate_the_danelaw.controlled_duchies.tt
+			any_held_title = {
+				count >= 2
+				tier = tier_duchy
+				any_this_title_or_de_jure_above = { this = title:k_england }
+				save_temporary_scope_as = de_jure_duchy
+				root = { completely_controls = scope:de_jure_duchy }
+			}
+		}
+		# Can only be fired by someone in the Tribal Era (though their rival need not be).
+		## Reshow this here so players know they're on a timer.
+		culture = {
+			NOT = { has_cultural_era_or_later = culture_era_high_medieval }
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_imprisoned = no
+		is_available_adult = yes
+		is_at_war = no
+	}
+
+	effect = {
+		# We can't show the effects in the decision window, since they rely on scopes & the tooltips will error, so just display a preview tooltip instead.
+		custom_tooltip = negotiate_the_danelaw.preview.tt
+		custom_tooltip = negotiate_the_danelaw.clarification.tt
+		trigger_event = british_isles.1011
+		# Notifying other players is handled in the response event for scope:ntd_recipient, since they might reject it.
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:negotiate_the_danelaw_decision
+			}
+		}
+	}
+	
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+formalise_the_daneland_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_found_kingdom.dds"
+	}
+	decision_group_type = major
+
+	ai_check_interval = 120
+
+	desc = formalise_the_daneland_decision_desc
+
+	is_shown = {
+		# Viking Age has Started
+		TFE_viking_age_has_started = yes
+		# Has k_danelaw.
+		any_held_title = { this = title:k_danelaw }
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:formalise_the_daneland_decision
+			}
+		}
+	}
+
+	is_valid = {
+		# Should have a decent prestige level.
+		prestige_level >= high_prestige_level
+		# Must be in a suitably late era & must be past at least a reasonable date.
+	}
+
+	is_valid_showing_failures_only = {
+		is_imprisoned = no
+		is_available_adult = yes
+		is_at_war = no
+	}
+
+	cost = { prestige = 750 }
+
+	effect = {
+		# Grab characters for loc & general effects.
+		save_scope_as = founder
+		## We want the King of England for portrait effects and such (there'll always be one, else this decision won't be available).
+		title:k_england.holder = { save_scope_as = england }
+		# Show consequences.
+		show_as_tooltip = { formalise_the_daneland_effect = yes }
+		# Send notification events.
+		## For scope:founder.
+		scope:founder = { trigger_event = british_isles.1061 }
+		## For scope:england.
+		scope:england = { trigger_event = british_isles.1062 }
+		## For other players in the region.
+		every_player = {
+			limit = {
+				NOR = {
+					this = scope:founder
+					this = scope:england
+				}
+				any_sub_realm_county = {
+					title_province = { geographical_region = world_europe_west_britannia }
+				}
+			}
+			trigger_event = british_isles.1063
+		}
+		# Mark the decision as completed.
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:formalise_the_daneland_decision
+		}
+	}
+	
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}

@@ -1,0 +1,40 @@
+
+
+
+
+#################
+#	Meshes	#
+#################
+
+##### Unique -----------------------------------------
+
+
+pdxmesh = {
+	name = "galea_helmet_mesh"
+	file = "galea_helmet.mesh"
+
+	meshsettings = {
+		name = "galea_helmetShape"
+		index = 0
+		texture_diffuse = "galea_helmet_diffuse.dds"
+		texture_normal = "galea_helmet_normal.dds"
+		texture_specular = "galea_helmet_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+
+
+
+#################
+#	Entities	#
+#################
+
+
+
+##### Unique -----------------------------------------
+entity = {
+	name = "galea_helmet_entity"
+	pdxmesh = "galea_helmet_mesh"
+}

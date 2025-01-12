@@ -1,0 +1,96 @@
+﻿# Obedianus, Arabic chieftain in Pharan/Wadi Feiran (in Sinai)
+# Supposedly was a pagan who converted to Christianity, and protected the monks of Saint Anthony's monastery from a raid by Blemmyes or Saracens
+nabatean_001 = {
+	name="Obedianus"
+	dynasty=dynasty_obedianus
+	religion="nabataean_pagan"
+	culture="nabatean"
+	trait=education_martial_3
+	trait=brave
+	trait=just
+	trait=diligent
+	339.6.3={ # Unknown
+		birth=yes
+	}
+	370.1.1 = { # Unknown
+		religion = nicene
+	}
+	411.11.11={ # Unknown
+		death=yes
+	}
+}
+
+# Fictional Nabatean chieftain of the attested Nabatean (Nabateanized?) Arabs of Sinai/Firaun
+nabatean_002 = {
+	name="Paran"
+	religion="chalcedonian"
+	culture="nabatean"
+	443.3.22={ # Unknown
+		birth=yes
+	}
+	504.3.21={ # Unknown
+		death=yes
+	}
+}
+
+# Fictional Nabatean chieftain of the attested Nabatean (Nabateanized?) Arabs of Sinai/Firaun
+nabatean_003 = {
+	name="Is_mail"
+	religion="chalcedonian"
+	culture="nabatean"
+	505.5.15={ # Unknown
+		birth=yes
+	}
+	555.5.25={ # Unknown
+		death=yes
+	}
+}
+
+# Fictional Nabatean chieftain of the attested Nabatean (Nabateanized?) Arabs of Sinai/Firaun
+nabatean_004 = {
+	name="Is_mail"
+	religion="chalcedonian"
+	culture="nabatean"
+	600.6.26={ # Unknown
+		birth=yes
+	}
+	636.3.6={ # Unknown
+		death=yes
+	}
+}
+
+
+
+
+#############################################################
+# 
+# MISCELLANEOUS
+# 
+# Done by Cybrxkhan
+# 
+#############################################################
+
+# Wahb'el, an Arab traveler or nomad who is attested in a historiographically important inscription found in the Jordanian desert
+# Because it is possibly the earliest attestation of Jesus/Christianity in an Arabic context
+# It was written in the Safaitic script, which went extinct around or after the 4th century
+# Wahb'el may have been a sedentary/city Arab who was traveling through, or a nomad from the region
+# His maternal side was connected to the Ashlalite tribes, as the inscription is about Wahb'el grieving for his uncle
+# Because Wahb'el was using an almost extinct script for a religion just spreading among the Arabs, he may have been a convert
+# See this article for more info: https://library.biblicalarchaeology.org/article/jesus-in-arabia-tracing-the-spread-of-christianity-into-the-desert/ 
+# Another helpful article: https://www.academia.edu/73883276/Al_Jallad_2021_The_Pre_Islamic_Divine_Name_%CA%BFsy_and_the_Background_of_the_Qur%CA%BE%C4%81nic_Jesus_with_Ali_al_Manaser
+nabatean_misc_001 = {
+	name="Wahb_el"
+	dynasty = TFE_dynasty_wahbel
+	religion="nicene"
+	culture="nabatean"
+	334.4.19={ # Unknown
+		birth=yes
+		effect = { add_character_flag = do_not_generate_starting_family }
+	}
+	393.1.26={ # Unknown
+		death=yes
+	}
+}
+
+
+

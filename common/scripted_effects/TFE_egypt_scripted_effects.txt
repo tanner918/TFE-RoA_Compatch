@@ -1,0 +1,228 @@
+﻿
+TFE_upper_egypt_visit_aswan_temples_completed_log_entry_effect = {
+	scope:activity = {
+		add_activity_log_entry = {
+			key = TFE_upper_egypt_visit_aswan_temples_completed_log
+			tags = { completed }
+			# this line below adds the entry to the Effects section of the conclusion UI
+			show_in_conclusion = yes
+			character = root
+			scope:host = {
+				TFE_local_pilgrimage_generic_host_effect = yes
+				add_character_modifier = {
+					modifier = RICE_upper_egypt_worshipped_at_aswan
+					years = 5
+				}
+				show_as_tooltip = {
+					if = {
+						limit = {
+							has_character_modifier = RICE_upper_egypt_philae_honored_isis
+						}
+						add_character_modifier = {
+							modifier = RICE_upper_egypt_philae_honored_isis
+							years = 5
+						}
+					}
+					else_if = {
+						limit = {
+							has_character_modifier = RICE_upper_egypt_philae_honored_osiris
+						}
+						add_character_modifier = {
+							modifier = RICE_upper_egypt_philae_honored_osiris
+							years = 5
+						}
+					}
+					else_if = {
+						limit = {
+							has_character_modifier = RICE_upper_egypt_philae_honored_horus
+						}
+						add_character_modifier = {
+							modifier = RICE_upper_egypt_philae_honored_horus
+							years = 5
+						}
+					}
+					else_if = {
+						limit = {
+							has_character_modifier = RICE_upper_egypt_elephantine_honored_khnum
+						}
+						add_character_modifier = {
+							modifier = RICE_upper_egypt_elephantine_honored_khnum
+							years = 5
+						}
+					}
+					else_if = {
+						limit = {
+							has_character_modifier = RICE_upper_egypt_elephantine_honored_satet
+						}
+						add_character_modifier = {
+							modifier = RICE_upper_egypt_elephantine_honored_satet
+							years = 5
+						}
+					}
+					else_if = {
+						limit = {
+							has_character_modifier = RICE_upper_egypt_elephantine_honored_anuket
+						}
+						add_character_modifier = {
+							modifier = RICE_upper_egypt_elephantine_honored_anuket
+							years = 5
+						}
+					}
+					else_if = {
+						limit = {
+							has_character_modifier = RICE_upper_egypt_kalabsha_honored_imhotep
+						}
+						add_character_modifier = {
+							modifier = RICE_upper_egypt_kalabsha_honored_imhotep
+							years = 5
+						}
+					}
+					else_if = {
+						limit = {
+							has_character_modifier = RICE_upper_egypt_kalabsha_honored_tutu
+						}
+						add_character_modifier = {
+							modifier = RICE_upper_egypt_kalabsha_honored_tutu
+							years = 5
+						}
+					}					
+				}
+			}
+			every_attending_character = {
+				limit = { NOT = { this = scope:host } }
+				custom = EVERY_ACTIVITY_PARTICIPANT_EFFECT
+				RICE_local_pilgrimage_generic_guest_effect = yes
+				add_character_modifier = {
+					modifier = RICE_upper_egypt_worshipped_at_aswan
+					years = 5
+				}
+			}	
+		}
+	}
+}
+
+TFE_close_aswan_general_effect = {
+
+	add_legitimacy = minor_legitimacy_gain
+
+	add_gold = 200
+	add_piety = major_piety_gain
+
+	faith = {
+		change_fervor = {
+			value = 3
+			desc = fervor_gain_RICE_closed_aswan_temple
+		}
+	}
+
+}
+
+TFE_close_aswan_philae_effect = {	
+	custom_tooltip = TFE_close_aswan_temples_philae_effect_tooltip
+	title:c_aswan = {
+		add_county_modifier = {
+			modifier = RICE_upper_egypt_recently_closed_philae
+			years = 10
+		}
+	}		
+	set_global_variable = {
+		name = RICE_upper_egypt_philae_closed
+		value = yes
+	}
+}
+
+TFE_close_aswan_elephantine_effect = {	
+	custom_tooltip = TFE_close_aswan_temples_elephantine_effect_tooltip
+	title:c_aswan = {
+		add_county_modifier = {
+			modifier = RICE_upper_egypt_recently_closed_elephantine
+			years = 10
+		}
+	}		
+	set_global_variable = {
+		name = RICE_upper_egypt_elephantine_closed
+		value = yes
+	}
+}
+
+TFE_close_aswan_kalabsha_effect = {	
+	custom_tooltip = TFE_close_aswan_temples_kalabsha_effect_tooltip
+	title:c_aswan = {
+		add_county_modifier = {
+			modifier = RICE_upper_egypt_recently_closed_kalabsha
+			years = 10
+		}
+	}		
+	set_global_variable = {
+		name = RICE_upper_egypt_kalabsha_closed
+		value = yes
+	}
+}
+
+TFE_reopen_aswan_general_effect = {
+
+	add_legitimacy = minor_legitimacy_gain
+
+	add_piety = major_piety_gain
+
+	dynasty ?= {
+		add_dynasty_prestige = major_dynasty_prestige_gain
+	}
+
+	faith = {
+		change_fervor = {
+			value = 3
+			desc = fervor_gain_RICE_reopened_aswan_temple
+		}
+	}
+
+}
+
+TFE_reopen_aswan_philae_effect = {	
+	custom_tooltip = TFE_reopen_aswan_temples_philae_effect_tooltip
+	title:c_aswan = {
+		add_county_modifier = {
+			modifier = RICE_upper_egypt_recently_reopened_philae
+			years = 10
+		}
+	}		
+	remove_global_variable = RICE_upper_egypt_philae_closed
+}
+
+TFE_reopen_aswan_elephantine_effect = {	
+	custom_tooltip = TFE_reopen_aswan_temples_elephantine_effect_tooltip
+	title:c_aswan = {
+		add_county_modifier = {
+			modifier = RICE_upper_egypt_recently_reopened_elephantine
+			years = 10
+		}
+	}		
+	remove_global_variable = RICE_upper_egypt_elephantine_closed
+}
+
+TFE_reopen_aswan_kalabsha_effect = {	
+	custom_tooltip = TFE_reopen_aswan_temples_kalabsha_effect_tooltip
+	title:c_aswan = {
+		add_county_modifier = {
+			modifier = RICE_upper_egypt_recently_reopened_kalabsha
+			years = 10
+		}
+	}		
+	remove_global_variable = RICE_upper_egypt_kalabsha_closed
+}
+
+TFE_remove_closed_aswan_temple_modifiers_test_effect = {
+	title:c_aswan = {
+		remove_county_modifier = RICE_upper_egypt_recently_closed_philae
+		remove_county_modifier = RICE_upper_egypt_recently_closed_elephantine
+		remove_county_modifier = RICE_upper_egypt_recently_closed_kalabsha
+	}
+}
+
+TFE_remove_reopened_aswan_temple_modifiers_test_effect = {
+	title:c_aswan = {
+		remove_county_modifier = RICE_upper_egypt_recently_reopened_philae
+		remove_county_modifier = RICE_upper_egypt_recently_reopened_elephantine
+		remove_county_modifier = RICE_upper_egypt_recently_reopened_kalabsha
+	}
+}

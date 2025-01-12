@@ -1,0 +1,125 @@
+﻿namespace = tfe_british_isles
+
+##################################################
+
+### British Isles Major Decision Events
+
+# 0001 - Consolidating the Heptarchy
+
+##################################################
+
+##################################################
+# Consolidating the Heptarchy
+# by Juli
+##################################################
+
+tfe_british_isles.0001 = {
+	type = character_event
+	title = tfe_british_isles.0001.t
+	desc = tfe_british_isles.0001.desc
+	theme = realm
+	left_portrait = {
+		character = scope:claimer
+		animation = personality_honorable
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		save_scope_as = claimer
+	}
+
+	option = {
+		name = tfe_british_isles.0001.a
+		every_player = {
+			limit = {
+				AND = {
+					NOT = {
+						THIS = root
+					}
+					NOT = {
+						TFE_is_heptarch_trigger = yes
+					}
+				}
+			}
+			trigger_event = tfe_british_isles.0002
+		}
+		every_ruler = {
+			limit = { 
+				capital_county = { title_province = { geographical_region = world_europe_west_britannia } }
+				NOT = {
+					THIS = root
+				}
+				TFE_is_heptarch_trigger = yes
+			}
+			trigger_event = tfe_british_isles.0003
+		}
+		dynasty = {
+			add_dynasty_modifier = {
+				modifier = TFE_heptarch_modifier
+			}
+		}
+		add_prestige = massive_prestige_gain
+	}
+}
+
+# Players informed
+tfe_british_isles.0002 = {
+	type = character_event
+	title = tfe_british_isles.0001.t
+	desc = tfe_british_isles.0002.desc
+	theme = realm
+	left_portrait = {
+		character = scope:claimer
+		animation = personality_honorable
+	}
+
+	option = { # 
+		name = tfe_british_isles.0002.a
+	}
+	option = { # 
+		name = tfe_british_isles.0002.b
+	}
+}
+
+tfe_british_isles.0003 = {
+	type = character_event
+	title = tfe_british_isles.0001.t
+	desc = tfe_british_isles.0001.desc
+	theme = realm
+
+	
+	right_portrait = {
+		character = scope:claimer
+		animation = personality_honorable
+	}
+	left_portrait = {
+		character = scope:heptarch
+		animation = personality_zealous
+	}
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		save_scope_as = heptarch
+	}
+	option = { # Heptarch
+		name = tfe_british_isles.0001.a
+		trigger = {
+			TFE_is_heptarch_trigger = yes
+		}
+		add_prestige = massive_prestige_gain
+		add_truce_both_ways = {
+			character = scope:claimer
+			days = 1825
+			name = TRUCE_CLAIMED_ENGLAND_ROOT
+		}
+		add_opinion = {
+			target = scope:claimer
+			modifier = fellow_heptarch
+		}
+		dynasty = {
+			add_dynasty_modifier = {
+				modifier = TFE_heptarch_modifier
+			}
+		}
+		change_government = feudal_government
+	}
+}

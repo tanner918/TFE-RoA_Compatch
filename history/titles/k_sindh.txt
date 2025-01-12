@@ -1,0 +1,703 @@
+﻿
+k_sindh = {
+
+	361.1.1 = {	change_development_level = 5 }
+	476.1.1 = {	change_development_level = 6 }
+	532.1.1 = {	change_development_level = 7 }
+	632.1.1 = {	change_development_level = 8 }
+	768.1.1 = {	change_development_level = 9 }
+
+	480.1.1 = {
+		holder = rai_001
+		government = gupta_government
+	}
+
+	524.8.8 = {
+		holder = rai_002
+	}
+
+	531.1.11 = {
+		holder = rai_003
+	}	
+
+	561.9.14 = {
+		holder = rai_004
+	}
+
+	609.4.22 = {
+		holder = rai_005
+	}
+
+	632.1.9 = {
+		holder = sindh_brahman_002
+	}
+
+	671.3.5 = {
+		holder = sindh_brahman_003
+	}
+
+	679.2.24 = {
+		holder = sindh_brahman_004
+	}
+	
+	711.1.1 = {
+		liege = e_arabia
+	}
+	
+	# 711-747: Umayyad governors
+	# 747-768: Abbasid governors
+	
+	768.1.1 = {
+		holder = 188533 # Hisham ibn 'Amr al-Taghlibi
+		liege = 0 # De facto
+	}
+	
+	
+}
+
+d_sauvira = {
+	361.1.1 = { change_development_level = 6 }
+	476.1.1 = { change_development_level = 7 }
+	532.1.1 = { change_development_level = 8 }
+	632.1.1 = { change_development_level = 9 }
+	768.1.1 = { change_development_level = 10 }
+	867.1.1 = { change_development_level = 12 }
+	360.1.1 = {
+		holder = pars_28
+		government = eranshar_government
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = pars_29
+	}
+	# 476.1.1 = {
+	# 	holder = pars_30
+	# }
+	476.1.1 = {
+		holder = rai_001
+		government = gupta_government
+	}
+	480.1.1 = {
+		liege = k_sindh
+	}
+	524.8.8 = {
+		holder = rai_002
+	}
+	531.1.11 = {
+		holder = rai_003
+	}
+	561.9.14 = {
+		holder = rai_004
+	}
+	609.4.22 = {
+		holder = rai_005
+	}
+	632.1.9 = {
+		holder = sindh_brahman_002
+	}
+	671.3.5 = {
+		holder = sindh_brahman_003
+	}
+	679.2.24 = {
+		holder = sindh_brahman_004
+	}	
+}
+
+c_debul = {
+	361.1.1 = {	change_development_level = 7 }
+	476.1.1 = {	change_development_level = 8 }
+	532.1.1 = {	change_development_level = 9 }
+	632.1.1 = {	change_development_level = 10 }
+	768.1.1 = {	change_development_level = 11 }
+	#Unkown indian dynasty
+	345.1.1 = {
+		holder = debul_01 #Placeholder
+		government = eranshar_government
+		liege = e_persia
+	}
+	388.1.1 = {
+		holder = debul_02 #Placeholder, father of Sapinud, spouse of Bahram V
+	}
+	# 476.1.1 = {
+	# 	holder = pars_30
+	# }
+	476.1.1 = {
+		holder = rai_001
+		government = gupta_government
+	}
+	480.1.1 = {
+		liege = k_sindh
+	}
+	524.8.8 = {
+		holder = rai_002
+	}
+	531.1.11 = {
+		holder = rai_003
+	}
+	561.9.14 = {
+		holder = rai_004
+	}
+	609.4.22 = {
+		holder = rai_005
+	}
+	632.1.9 = {
+		holder = sindh_brahman_002
+	}
+	671.3.5 = {
+		holder = sindh_brahman_003
+	}
+	679.2.24 = {
+		holder = sindh_brahman_004
+	}	
+	768.1.1 = {
+		liege = k_sindh
+		holder = 188287 # Lakho Ghuraro Samma
+	}
+	
+}
+
+
+c_sonda = {	
+	360.1.1 = {
+		holder = pars_28
+		government = eranshar_government
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = pars_29
+	}
+	# 476.1.1 = {
+	# 	holder = pars_30
+	# }
+	476.1.1 = {
+		holder = rai_001
+		government = gupta_government
+	}
+	480.1.1 = {
+		liege = k_sindh
+	}
+	524.8.8 = {
+		holder = rai_002
+	}
+	531.1.11 = {
+		holder = rai_003
+	}
+	561.9.14 = {
+		holder = rai_004
+	}
+	609.4.22 = {
+		holder = rai_005
+	}
+	632.1.9 = {
+		holder = sindh_brahman_002
+	}
+	671.3.5 = {
+		holder = sindh_brahman_003
+	}
+	679.2.24 = {
+		holder = sindh_brahman_004
+	}	
+	768.1.1 = {
+		liege = k_sindh
+		holder = 188287 # Lakho Ghuraro Samma
+	}
+	
+}
+
+
+c_mansura = {
+	360.1.1 = {
+		holder = pars_28
+		government = eranshar_government
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = pars_29
+	}
+	# 476.1.1 = {
+	# 	holder = pars_30
+	# }
+	476.1.1 = {
+		holder = rai_001
+		government = gupta_government
+	}
+	480.1.1 = {
+		liege = k_sindh
+	}
+	524.8.8 = {
+		holder = rai_002
+	}
+	531.1.11 = {
+		holder = rai_003
+	}
+	561.9.14 = {
+		holder = rai_004
+	}
+	609.4.22 = {
+		holder = rai_005
+	}
+	632.1.9 = {
+		holder = sindh_brahman_002
+	}
+	671.3.5 = {
+		holder = sindh_brahman_003
+	}
+	679.2.24 = {
+		holder = sindh_brahman_004
+	}	
+	# 711.1.1 = {
+	# 	liege = k_sindh
+	# }
+	
+	# 711-747: Umayyad governors
+	# 747-768: Abbasid governors
+	
+	768.1.1 = {
+		holder = 188533 # Hisham ibn 'Amr al-Taghlibi
+	}
+	
+	
+}
+
+
+c_ranikot = {
+	360.1.1 = {
+		holder = pars_28
+		government = eranshar_government
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = pars_29
+	}
+	# 476.1.1 = {
+	# 	holder = pars_30
+	# }
+	476.1.1 = {
+		holder = rai_001
+		government = gupta_government
+	}
+	480.1.1 = {
+		liege = k_sindh
+	}
+	524.8.8 = {
+		holder = rai_002
+	}
+	531.1.11 = {
+		holder = rai_003
+	}
+	532.1.1 = {
+		holder = jat_misc_001
+	}
+	# Left here for reference
+	# 561.9.14 = {
+	# 	holder = rai_004
+	# }
+	# 609.4.22 = {
+	# 	holder = rai_005
+	# }
+	# 632.1.9 = {
+	# 	holder = sindh_brahman_002
+	# }
+	# 671.3.5 = {
+	# 	holder = sindh_brahman_003
+	# }
+	# 679.2.24 = {
+	# 	holder = sindh_brahman_004
+	# }	
+	# 711.1.1 = {
+	# 	liege = k_sindh
+	# }
+	
+	# 711-747: Umayyad governors
+	# 747-768: Abbasid governors
+	
+	768.1.1 = {
+		holder = 188533 # Hisham ibn 'Amr al-Taghlibi
+	}
+	
+	
+}
+
+
+c_siwistan = {
+	360.1.1 = {
+		holder = pars_28
+		government = eranshar_government
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = pars_29
+	}
+	# 476.1.1 = {
+	# 	holder = pars_30
+	# }
+	476.1.1 = {
+		holder = rai_001
+		government = gupta_government
+	}
+	480.1.1 = {
+		liege = k_sindh
+	}
+	524.8.8 = {
+		holder = rai_002
+	}
+	531.1.11 = {
+		holder = rai_003
+	}
+	561.9.14 = {
+		holder = rai_004
+	}
+	609.4.22 = {
+		holder = rai_005
+	}
+	632.1.9 = {
+		holder = sindh_brahman_002
+	}
+	671.3.5 = {
+		holder = sindh_brahman_003
+	}
+	679.2.24 = {
+		holder = sindh_brahman_004
+	}	
+	# 711.1.1 = {
+	# 	liege = k_sindh
+	# }
+	
+	# 711-747: Umayyad governors
+	
+	762.1.1 = {
+		holder = 188560
+	}
+	
+	# 747-854: Abbasid governors
+	
+	
+}
+
+
+d_bhakkar = {
+	361.1.1 = { change_development_level = 6 }
+	476.1.1 = { change_development_level = 7 }
+	532.1.1 = { change_development_level = 8 }
+	632.1.1 = { change_development_level = 9 }
+	768.1.1 = { change_development_level = 10 }
+	360.1.1 = {
+		holder = pars_25
+		government = eranshar_government
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = pars_26
+	}
+	# 476.1.1 = {
+	# 	holder = pars_30
+	# }
+	476.1.1 = {
+		holder = rai_001
+		government = gupta_government
+	}
+	480.1.1 = {
+		liege = k_sindh
+	}
+	524.8.8 = {
+		holder = rai_002
+	}
+	531.1.11 = {
+		holder = rai_003
+	}
+	561.9.14 = {
+		holder = rai_004
+	}
+	609.4.22 = {
+		holder = rai_005
+	}
+	632.1.9 = {
+		holder = sindh_brahman_002
+	}
+	671.3.5 = {
+		holder = sindh_brahman_003
+	}
+	679.2.24 = {
+		holder = sindh_brahman_004
+	}	
+	# 711.1.1 = {
+	# 	liege = k_sindh
+	# }
+}
+
+
+c_bhakkar = {
+	360.1.1 = {
+		holder = pars_25
+		government = eranshar_government
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = pars_26
+	}
+	# 476.1.1 = {
+	# 	holder = pars_27
+	# }
+	476.1.1 = {
+		holder = rai_001
+		government = gupta_government
+	}
+	480.1.1 = {
+		liege = k_sindh
+	}
+	524.8.8 = {
+		holder = rai_002
+	}
+	531.1.11 = {
+		holder = rai_003
+	}
+	532.1.1 = {
+		holder = jat_misc_001
+	}
+	# Left here for reference
+	# 561.9.14 = {
+	# 	holder = rai_004
+	# }
+	# 609.4.22 = {
+	# 	holder = rai_005
+	# }
+	# 632.1.9 = {
+	# 	holder = sindh_brahman_002
+	# }
+	# 671.3.5 = {
+	# 	holder = sindh_brahman_003
+	# }
+	# 679.2.24 = {
+	# 	holder = sindh_brahman_004
+	# }	
+	# 711.1.1 = {
+	# 	liege = k_sindh
+	# }
+	
+	# 711-747: Umayyad governors
+	
+	760.1.1 = {
+		holder = 188561
+	}
+	
+	
+}
+
+
+c_aror = {
+	# 476.1.1 = {
+	# 	holder = pars_30
+	# }
+	476.1.1 = {
+		holder = rai_001
+		government = gupta_government
+	}
+	480.1.1 = {
+		liege = k_sindh
+	}
+	524.8.8 = {
+		holder = rai_002
+	}
+	531.1.11 = {
+		holder = rai_003
+	}
+	532.1.1 = {
+		holder = jat_misc_001
+	}
+	# Left here for reference
+	# 561.9.14 = {
+	# 	holder = rai_004
+	# }
+	# 609.4.22 = {
+	# 	holder = rai_005
+	# }
+	# 632.1.9 = {
+	# 	holder = sindh_brahman_002
+	# }
+	# 671.3.5 = {
+	# 	holder = sindh_brahman_003
+	# }
+	# 679.2.24 = {
+	# 	holder = sindh_brahman_004
+	# }	
+	# 711.1.1 = {
+	# 	liege = k_sindh
+	# }
+	
+	# 711-747: Umayyad governors
+	
+	759.1.1 = {
+		holder = 188558
+	}
+	
+	
+}
+
+
+c_rajanpur = {
+	360.1.1 = {
+		holder = pars_25
+		government = eranshar_government
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = pars_26
+	}
+	# 476.1.1 = {
+	# 	holder = pars_27
+	# }
+	476.1.1 = {
+		holder = rai_001
+		government = gupta_government
+	}
+	480.1.1 = {
+		liege = k_sindh
+	}
+	524.8.8 = {
+		holder = rai_002
+	}
+	532.1.1 = {
+		holder = parata_001
+	}
+	# Commented out but kept here for reference in case they need to be reactivated
+	# 531.1.11 = {
+	# 	holder = rai_003
+	# }
+	# 561.9.14 = {
+	# 	holder = rai_004
+	# }
+	# 609.4.22 = {
+	# 	holder = rai_005
+	# }
+	# 632.1.9 = {
+	# 	holder = sindh_brahman_002
+	# }
+	# 671.3.5 = {
+	# 	holder = sindh_brahman_003
+	# }
+	# 679.2.24 = {
+	# 	holder = sindh_brahman_004
+	# }	
+	# 711.1.1 = {
+	# 	liege = k_sindh
+	# }
+	
+	# 711-747: Umayyad governors
+	
+	767.1.1 = {
+		holder = 188557
+	}
+	
+	
+}
+
+
+c_vijnot = {
+	# 476.1.1 = {
+	# 	holder = pars_30
+	# }
+	476.1.1 = {
+		holder = rai_001
+		government = gupta_government
+	}
+	480.1.1 = {
+		liege = k_sindh
+	}
+	524.8.8 = {
+		holder = rai_002
+	}
+	531.1.11 = {
+		holder = rai_003
+	}	
+	532.1.1 = {
+		holder = madraka_misc_001
+	}
+	# Left here for reference
+	# 561.9.14 = {
+	# 	holder = rai_004
+	# }
+	# 609.4.22 = {
+	# 	holder = rai_005
+	# }
+	# 632.1.9 = {
+	# 	holder = sindh_brahman_002
+	# }
+	# 671.3.5 = {
+	# 	holder = sindh_brahman_003
+	# }
+	# 679.2.24 = {
+	# 	holder = sindh_brahman_004
+	# }
+		
+	# 711.1.1 = {
+	# 	liege = k_sindh
+	# }
+	
+	# 711-747: Umayyad governors
+	# 747-768: Abbasid governors
+	
+	767.1.1 = {
+		holder = 188564
+	}
+	
+	
+}
+
+
+c_sibi = {
+	360.1.1 = {
+		holder = pars_25
+		government = eranshar_government
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = pars_26
+	}
+	# 476.1.1 = {
+	# 	holder = pars_27
+	# }
+	476.1.1 = {
+		holder = rai_001
+		government = gupta_government
+	}
+	480.1.1 = {
+		liege = k_sindh
+	}
+	524.8.8 = {
+		holder = rai_002
+	}
+	532.1.1 = {
+		holder = parata_001
+	}
+	# Commented out but kept here for reference in case they need to be reactivated
+	# 531.1.11 = {
+	# 	holder = rai_003
+	# }
+	# 561.9.14 = {
+	# 	holder = rai_004
+	# }
+	# 609.4.22 = {
+	# 	holder = rai_005
+	# }
+	# 632.1.9 = {
+	# 	holder = sindh_brahman_002
+	# }
+	# 671.3.5 = {
+	# 	holder = sindh_brahman_003
+	# }
+	# 679.2.24 = {
+	# 	holder = sindh_brahman_004
+	# }	
+	# 711.1.1 = {
+	# 	liege = k_sindh
+	# }
+	
+	# 711-747: Umayyad governors
+	
+	767.1.1 = {
+		holder = 188556
+	}
+	
+	
+}
+

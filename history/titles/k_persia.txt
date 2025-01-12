@@ -1,0 +1,1667 @@
+﻿k_persia = { # REVISED 12/22 - JULI
+	361.1.1 = {	change_development_level = 5 }
+	532.1.1 = {	change_development_level = 6 }
+	768.1.1 = {	change_development_level = 7 }
+}
+
+
+d_isfahan = { #SASSANID PROVINCE OF SPAHAN# REVISED 12/22 - JULI
+	361.1.1 = {	change_development_level = 5 }
+	532.1.1 = {	change_development_level = 6 }
+	768.1.1 = {	change_development_level = 7 }
+
+	# No known governors of Spahan other then Varzim in 200's during Sassanid rule.
+	200.1.1 = {
+		name = SPAHAN
+		government = eranshar_government
+	}
+	220.3.17 = {
+		holder = mihran_01
+		liege = e_persia
+	}
+	251.1.1={
+		holder=mihran_02
+	}
+	278.1.1={
+		holder=mihran_03
+	}
+	322.1.1={
+		holder=mihran_05
+	}
+	330.1.1={
+		holder=0
+	}
+}
+
+
+c_isfahan = { #SASSANID PROVINCE OF SPAHAN# REVISED 12/22 - JULI
+	361.1.1 = {	change_development_level = 7 }
+	532.1.1 = {	change_development_level = 8 }
+	768.1.1 = {	change_development_level = 9 }
+
+	# No known governors of Spahan other then Varzim in 200's during Sassanid rule.
+	200.1.1 = {
+		name = SPAHAN
+		government = eranshar_government
+	}
+	359.6.1={
+		holder=mihran_06
+		liege=d_rayy
+	}
+	379.1.1={
+		holder=mihran_09
+	}
+
+	419.1.1={
+	
+		holder=mihran_10
+	}
+	463.1.1={
+		holder=mihran_11
+	}
+	474.1.1={
+		holder=mihran_27
+	}
+	513.1.1={
+		holder=mihran_29
+	}
+	562.1.1={
+		holder=mihran_30
+		liege=e_persia
+	}
+	585.1.1={
+		holder=mihran_31
+	}
+	590.1.1={
+		holder=mihran_32
+	}
+	630.1.1={
+		holder=mihran_22
+	}
+	# 633 # Muslim Conquest to-do
+	633.1.1 = {
+		reset_name = yes
+	}
+
+}
+
+
+c_ardestan = { #SASSANID PROVINCE OF SPAHAN# REVISED 12/22 - JULI
+	# No known governors of Spahan other then Varzim in 200's during Sassanid rule.
+	200.1.1 = {
+		government = eranshar_government
+	}
+	359.6.1={
+		holder=mihran_06
+		liege=d_rayy
+	}
+	379.1.1={
+		holder=mihran_09
+	}
+
+	419.1.1={
+	
+		holder=mihran_10
+	}
+	463.1.1={
+		holder=mihran_11
+	}
+	474.1.1={
+		holder=mihran_27
+	}
+	513.1.1={
+		holder=mihran_29
+	}
+	562.1.1={
+		holder=mihran_30
+		liege=e_persia
+	}
+	585.1.1={
+		holder=mihran_31
+	}
+	590.1.1={
+		holder=mihran_32
+	}
+	630.1.1={
+		holder=mihran_22
+	}
+	# 633 # Muslim Conquest to-do
+	633.1.1 = {
+		reset_name = yes
+	}
+
+}
+
+
+c_qumisha = { #SASSANID PROVINCE OF SPAHAN# REVISED 12/22 - JULI
+	359.6.1={
+		holder=mihran_06
+		liege=d_rayy
+	}
+	379.1.1={
+		holder=mihran_09
+	}
+
+	419.1.1={
+	
+		holder=mihran_10
+	}
+	463.1.1={
+		holder=mihran_11
+	}
+	474.1.1={
+		holder=mihran_27
+	}
+	513.1.1={
+		holder=mihran_29
+	}
+	562.1.1={
+		holder=mihran_30
+		liege=e_persia
+	}
+	585.1.1={
+		holder=mihran_31
+	}
+	590.1.1={
+		holder=mihran_32
+	}
+	630.1.1={
+		holder=mihran_22
+	}
+	# 633 # Muslim Conquest to-do
+	633.1.1 = {
+		reset_name = yes
+	}
+
+}
+
+
+c_luristan = { #SASSANID PROVINCE OF SPAHAN# REVISED 12/22 - JULI
+	# No known governors of Spahan other then Varzim in 200's during Sassanid rule.
+	200.1.1 = {
+		government = eranshar_government
+	}
+	359.6.1={
+		holder=mihran_06
+		liege=d_rayy
+	}
+	379.1.1={
+		holder=mihran_09
+	}
+
+	419.1.1={
+	
+		holder=mihran_10
+	}
+	463.1.1={
+		holder=mihran_11
+	}
+	474.1.1={
+		holder=mihran_27
+	}
+	513.1.1={
+		holder=mihran_29
+	}
+	562.1.1={
+		holder=mihran_30
+		liege=e_persia
+	}
+	585.1.1={
+		holder=mihran_31
+	}
+	590.1.1={
+		holder=mihran_32
+	}
+	630.1.1={
+		holder=mihran_22
+	}
+	# 633 # Muslim Conquest to-do
+	633.1.1 = {
+		reset_name = yes
+	}
+
+}
+
+
+d_yazd = { #SASSANID PROVINCE OF YSSATIS # REVISED 12/22 - JULI
+	361.1.1 = {	change_development_level = 3 }
+	532.1.1 = {	change_development_level = 4 }
+	768.1.1 = {	change_development_level = 5 }
+	# No known governors of Yazd.
+	200.1.1 = {
+		government = eranshar_government
+		name = YSATIS
+	}
+	340.1.1 = {
+		holder = yazd_361
+		liege = e_persia
+	}
+	380.1.1 = {
+		holder = yazd_395
+	}
+	420.1.1 = {
+		reset_name = yes #Refounded by Yazdegerd I
+	}
+	456.1.1 = {
+		holder = yazd_476
+	}
+	520.1.1 = {
+		holder = mihran_16
+	}
+	620.1.1 = {
+		holder = yazd_632
+	}
+	# 633 # Muslim Conquest to-do
+}
+
+c_yazd = { #SASSANID PROVINCE OF YSSATIS # REVISED 12/22 - JULI
+	361.1.1 = {	change_development_level = 4 }
+	420.1.1 = { change_development_level = 10 } #Refounded by Yazdegerd I
+	# No known governors of Yazd.
+	200.1.1 = {
+		government = eranshar_government
+		name = YSATIS
+	}
+	340.1.1 = {
+		holder = yazd_361
+		liege = e_persia
+	}
+	380.1.1 = {
+		holder = yazd_395
+	}
+	420.1.1 = {
+		reset_name = yes #Refounded by Yazdegerd I
+	}
+	456.1.1 = {
+		holder = yazd_476
+	}
+	520.1.1 = {
+		holder = mihran_16
+	}
+	620.1.1 = {
+		holder = yazd_632
+	}
+	# 633 # Muslim Conquest to-do
+	# VANILLA CONTENT
+	#644.1.1 = {
+	#	liege = d_fars
+	#}
+	#768.1.1 = {
+	#	holder = 188730
+	#}
+	
+}
+b_yazd = {  #SASSANID PROVINCE OF YSSATIS # REVISED 12/22 - JULI
+	200.1.1 = {
+		name = YSATIS
+	}
+	420.1.1 = {
+		reset_name = yes #Refounded by Yazdegerd I
+	}
+}
+c_mafaza = {  #SASSANID PROVINCE OF YSSATIS # REVISED 12/22 - JULI
+	# No known governors of Yazd.
+	200.1.1 = {
+		government = eranshar_government
+		name = YSATIS
+	}
+	340.1.1 = {
+		holder = yazd_361
+		liege = e_persia
+	}
+	380.1.1 = {
+		holder = yazd_395
+	}
+	420.1.1 = {
+		reset_name = yes #Refounded by Yazdegerd I
+	}
+	456.1.1 = {
+		holder = yazd_476
+	}
+	520.1.1 = {
+		holder = mihran_16
+	}
+	620.1.1 = {
+		holder = yazd_632
+	}
+	# 633 # Muslim Conquest to-do
+	# VANILLA CONTENT
+	#644.1.1 = {
+	#	liege = d_fars
+	#}
+	#768.1.1 = {
+	#	holder = 188730
+	#}
+}
+
+
+d_media = { #SASSANID PROVINCE OF MEDIA # REVISED 12/22 - JULI
+	# No known governors of Media but house of Karen was active in the region
+	200.1.1 = {
+		government = eranshar_government
+	}
+	266.1.1 = {
+		holder = 160309 # Founder of House of Karen
+		liege = e_persia
+	}
+	330.1.1 = {
+		holder = 160308 #
+	}
+	375.1.1 = {
+		holder = 160307 #
+	}
+	400.1.1 = {
+		holder = 160306 #
+	}
+	450.1.1 = {
+		holder = 160305 #
+	}
+	470.1.1 = {
+		holder = 160304 #
+	}
+	# FICTIONAL KARINS
+	490.1.1 = {
+		holder = sukhra_02 #
+	}
+	495.1.1 = {
+		holder = sukhra_11 # Sawar
+	}
+	548.1.1 = {
+		holder = sukhra_10 # Alanda
+	}
+	612.1.1 = {
+		holder = sukhra_09 # Sukhra
+	}
+	630.1.1 = {
+		holder = sukhra_08 # Sawar
+	}
+	# 633 # Muslim Conquest to-do
+	# VANILLA CONTENT
+	#661.2.28 = {
+	#	liege = e_arabia
+	#}
+	#
+	#768.1.1 = {
+	#	holder = 34002
+	#}
+}
+
+
+c_hamadan = { #SASSANID PROVINCE OF MEDIA # REVISED 12/22 - JULI
+	361.1.1 = {	change_development_level = 6 }
+	532.1.1 = {	change_development_level = 7 }
+	768.1.1 = {	change_development_level = 8 }
+	# No known governors of Media but house of Karen was active in the region
+	200.1.1 = {
+		government = eranshar_government
+	}
+	266.1.1 = {
+		holder = 160309 # Founder of House of Karen
+		liege = e_persia
+	}
+	330.1.1 = {
+		holder = 160308 #
+	}
+	375.1.1 = {
+		holder = 160307 #
+	}
+	400.1.1 = {
+		holder = 160306 #
+	}
+	450.1.1 = {
+		holder = 160305 #
+	}
+	470.1.1 = {
+		holder = 160304 #
+	}
+	# FICTIONAL KARINS
+	490.1.1 = {
+		holder = sukhra_02 #
+	}
+	495.1.1 = {
+		holder = sukhra_11 # Sawar
+	}
+	548.1.1 = {
+		holder = sukhra_10 # Alanda
+	}
+	612.1.1 = {
+		holder = sukhra_09 # Sukhra
+	}
+	630.1.1 = {
+		holder = sukhra_08 # Sawar
+	}
+	# 633 # Muslim Conquest to-do
+	# VANILLA CONTENT
+	#750.1.1 = {
+	#	liege = d_media
+	#}
+	#
+	#768.1.1 = {
+	#	holder = 34003 # al-Mahdi Abbasid (fictitious assignment)
+	#}
+}
+
+
+c_nihawand = { #SASSANID PROVINCE OF MEDIA # REVISED 12/22 - JULI
+	361.1.1 = {	change_development_level = 3 }
+	532.1.1 = {	change_development_level = 4 }
+	768.1.1 = {	change_development_level = 5 }
+	
+	# No known governors of Media but house of Karen was active in the region
+	200.1.1 = {
+		government = eranshar_government
+	}
+	266.1.1 = {
+		holder = 160309 # Founder of House of Karen
+		liege = e_persia
+	}
+	330.1.1 = {
+		holder = 160308 #
+	}
+	375.1.1 = {
+		holder = 160307 #
+	}
+	400.1.1 = {
+		holder = 160306 #
+	}
+	450.1.1 = {
+		holder = 160305 #
+	}
+	470.1.1 = {
+		holder = 160304 #
+	}
+	# FICTIONAL KARINS
+	490.1.1 = {
+		holder = sukhra_02 #
+	}
+	495.1.1 = {
+		holder = sukhra_11 # Sawar
+	}
+	548.1.1 = {
+		holder = sukhra_10 # Alanda
+	}
+	612.1.1 = {
+		holder = sukhra_09 # Sukhra
+	}
+	630.1.1 = {
+		holder = sukhra_08 # Sawar
+	}
+	# 633 # Muslim Conquest to-do
+	# VANILLA CONTENT
+	#750.1.1 = {
+	#	liege = d_media
+	#}
+	#
+	#768.1.1 = {
+	#	holder = 34003 # al-Mahdi Abbasid (fictitious assignment)
+	#}
+}
+
+
+c_dinawar = {  #SASSANID PROVINCE OF MEDIA # REVISED 12/22 - JULI
+	# No known governors of Media but house of Karen was active in the region
+	200.1.1 = {
+		government = eranshar_government
+	}
+	266.1.1 = {
+		holder = 160309 # Founder of House of Karen
+		liege = e_persia
+	}
+	330.1.1 = {
+		holder = 160308 #
+	}
+	375.1.1 = {
+		holder = 160307 #
+	}
+	400.1.1 = {
+		holder = 160306 #
+	}
+	450.1.1 = {
+		holder = 160305 #
+	}
+	470.1.1 = {
+		holder = 160304 #
+	}
+	# FICTIONAL KARINS
+	490.1.1 = {
+		holder = sukhra_02 #
+	}
+	495.1.1 = {
+		holder = sukhra_11 # Sawar
+	}
+	548.1.1 = {
+		holder = sukhra_10 # Alanda
+	}
+	612.1.1 = {
+		holder = sukhra_09 # Sukhra
+	}
+	630.1.1 = {
+		holder = sukhra_08 # Sawar
+	}
+	# 633 # Muslim Conquest to-do
+	# VANILLA CONTENT
+	#765.1.1 = {
+	#	liege = d_azerbaijan
+	#	holder = 188659
+	#}
+}
+
+d_kirman = {
+	220.1.1={
+		holder=snakeyboy_0
+	}
+		### Sasanian Dynasty Kirman Province
+	230.1.1 = {
+		holder = sassanid_11 #Adreshir Kirmanshah
+		government = eranshar_government
+		liege = e_persia
+	}
+	360.1.1 = {
+		holder = 180616 # Shapur III
+	}
+	379.1.1 = {
+		holder = 180618 # Bahram IV Kirmanshah
+	}
+	388.1.1 = {
+		holder = pars_23
+	}
+	476.1.1 = {
+		holder = pars_24
+	}
+	530.1.1={
+		holder=sukhra_01
+	}
+	661.2.28 = {
+		liege = e_arabia
+	}
+	
+	765.1.1 = {
+		holder = 188606
+	}
+	
+}
+
+c_kirman = {
+	361.1.1 = {	change_development_level = 8 }
+	532.1.1 = {	change_development_level = 9 }
+	768.1.1 = {	change_development_level = 10 }
+
+	361.1.1 = {
+		holder = 180616
+		government = eranshar_government
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = pars_23
+	}
+	476.1.1 = {
+		holder = pars_24
+	}
+	644.1.1 = {
+		liege = d_sistan
+	}
+	
+	766.1.1 = {
+		holder = 188660 # fictitious assignment
+	}
+	
+	
+
+}
+
+
+c_behabad = {
+	361.1.1 = {	change_development_level = 3 }
+	532.1.1 = {	change_development_level = 4 }
+	768.1.1 = {	change_development_level = 5 }
+	
+	361.1.1 = {
+		holder = pars_22
+		government = eranshar_government
+		liege = d_kirman
+	}
+	395.1.1 = {
+		holder = pars_23
+	}
+	476.1.1 = {
+		holder = pars_24
+	}
+	644.1.1 = {
+		liege = d_sistan
+	}
+	
+	766.1.1 = {
+		holder = 188660 # fictitious assignment
+	}
+	
+	
+
+}
+
+
+c_bam = {
+	220.1.1={
+		holder=snakeyboy_0
+	}
+	
+	361.1.1 = {
+		holder = pars_22
+		government = eranshar_government
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = pars_23
+	}
+	476.1.1 = {
+		holder = pars_24
+	}
+	644.1.1 = {
+		liege = d_sistan
+	}
+	
+	766.1.1 = {
+		holder = 188660 # fictitious assignment
+	}
+	
+	
+
+}
+
+
+c_sirjan = {
+	361.1.1 = {
+		holder = pars_01
+		government = eranshar_government
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = pars_02
+	}
+	476.1.1 = {
+		holder = pars_03
+	}
+	532.1.1 = {
+		holder = persian_misc_001
+		liege = k_pars
+	}
+	644.1.1 = {
+		liege = d_fars
+	}
+	
+	762.1.1 = {
+		holder = 187686
+	}
+	
+	
+
+}
+
+
+c_jiruft = {
+	
+	361.1.1 = {
+		holder = pars_07
+		government = eranshar_government
+		liege = k_pars
+	}
+	395.1.1 = {
+		holder = pars_08
+	}
+	476.1.1 = {
+		holder = pars_09
+	}
+	532.1.1 = {
+		holder = persian_misc_001
+		liege = k_pars
+	}
+	644.1.1 = {
+		liege = d_sistan
+	}
+	
+	766.1.1 = {
+		holder = 188660 # fictitious assignment
+	}
+	
+	
+
+}
+
+
+
+
+c_shahre-babak = {
+	361.1.1 = {
+		holder = pars_01
+		government = eranshar_government
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = pars_02
+	}
+	476.1.1 = {
+		holder = pars_03
+	}
+	644.1.1 = {
+		liege = d_fars
+	}
+	768.1.1 = {
+		holder = 188730
+	}
+	
+}
+
+d_rayy = {
+	79.6.20 = {
+		holder = karen_3
+		government = eranshar_government
+	}
+	119.12.4 = {
+		holder = karen_5
+	}
+	180.6.9 = {
+		holder = karen_7
+	}
+	220.3.17 = {
+		holder = mihran_01
+		liege = e_persia
+	}
+	251.1.1={
+		holder=mihran_02
+	}
+	278.1.1={
+		holder=mihran_03
+	}
+	322.1.1={
+		holder=mihran_05
+	}
+	363.6.1={
+		holder=mihran_06
+	}
+	379.1.1={
+		holder=mihran_07
+	}
+	425.1.1={
+		holder=mihran_08
+	}
+	459.6.1={
+		holder=mihran_105
+	}
+	460.1.1={
+		holder=mihran_10
+	}
+	463.1.1={
+		holder=mihran_11
+	}
+	479.1.1={
+		holder=mihran_12
+	}
+	555.1.1={
+		holder=mihran_14
+	}
+	588.1.1={
+		holder=180645
+	}
+	591.1.1={
+		holder=mihran_25
+	}
+	599.1.1={
+		holder=mihran_21
+	}
+	631.1.1={
+		holder=mihran_22
+	}
+	
+	661.2.28 = {
+		liege = d_media
+	}
+	
+	768.1.1 = {
+		holder = 188648 # al-Hadi Abbasid (actually 800 AD)
+	}
+}
+c_rayy = {
+	361.1.1 = {	change_development_level = 9 }
+	532.1.1 = {	change_development_level = 10 }
+	768.1.1 = {	change_development_level = 11 }
+	28.1.1 = {
+		holder = karen_1
+		government = eranshar_government
+	}
+	79.6.20 = {
+		holder = karen_3
+	}
+	119.12.4 = {
+		holder = karen_5
+	}
+	180.6.9 = {
+		holder = karen_7
+	}
+	220.3.17 = {
+		holder = mihran_01
+		liege = e_persia
+	}
+	251.1.1={
+		holder=mihran_02
+	}
+	278.1.1={
+		holder=mihran_03
+	}
+	322.1.1={
+		holder=mihran_05
+	}
+	363.6.1={
+		holder=mihran_06
+	}
+	379.1.1={
+		holder=mihran_07
+	}
+	425.1.1={
+		holder=mihran_08
+	}
+	459.6.1={
+		holder=mihran_105
+	}
+	460.1.1={
+		holder=mihran_10
+	}
+	463.1.1={
+		holder=mihran_11
+	}
+	479.1.1={
+		holder=mihran_12
+	}
+	555.1.1={
+		holder=mihran_14
+	}
+	588.1.1={
+		holder=180645
+	}
+	591.1.1={
+		holder=mihran_25
+	}
+	599.1.1={
+		holder=mihran_21
+	}
+	631.1.1={
+		holder=mihran_22
+	}
+
+	661.2.28 = {
+		liege = d_media
+	}
+	
+	768.1.1 = {
+		holder = 188648 # al-Hadi Abbasid (actually 800 AD)
+	}
+	
+	
+	
+	
+	
+
+}
+
+
+c_khuwar = {
+	28.1.1 = {
+		holder = karen_1
+		government = eranshar_government
+	}
+	79.6.20 = {
+		holder = karen_3
+	}
+	119.12.4 = {
+		holder = karen_5
+	}
+	180.6.9 = {
+		holder = karen_7
+	}
+	220.3.17 = {
+		holder = mihran_01
+		liege = e_persia
+	}
+	251.1.1={
+		holder=mihran_02
+	}
+	278.1.1={
+		holder=mihran_03
+	}
+	322.1.1={
+		holder=mihran_05
+	}
+	363.6.1={
+		holder=mihran_06
+	}
+	379.1.1={
+		holder=mihran_07
+	}
+	425.1.1={
+		holder=mihran_08
+	}
+	459.6.1={
+		holder=mihran_105
+	}
+	460.1.1={
+		holder=mihran_10
+	}
+	463.1.1={
+		holder=mihran_11
+	}
+	479.1.1={
+		holder=mihran_12
+	}
+	555.1.1={
+		holder=mihran_14
+	}
+	588.1.1={
+		holder=180645
+	}
+	591.1.1={
+		holder=mihran_25
+	}
+	599.1.1={
+		holder=mihran_21
+	}
+	631.1.1={
+		holder=mihran_22
+	}
+	
+	661.2.28 = {
+		liege = d_media
+	}
+	
+	768.1.1 = {
+		holder = 188648 # al-Hadi Abbasid (actually 800 AD)
+	}
+	
+	
+	
+	
+	
+
+}
+
+
+c_qom = {
+	28.1.1 = {
+		holder = karen_1
+		government = eranshar_government
+	}
+	79.6.20 = {
+		holder = karen_3
+	}
+	119.12.4 = {
+		holder = karen_5
+	}
+	180.6.9 = {
+		holder = karen_7
+	}
+	220.3.17 = {
+		holder = mihran_01
+		liege = e_persia
+	}
+	251.1.1={
+		holder=mihran_02
+	}
+	278.1.1={
+		holder=mihran_03
+	}
+	322.1.1={
+		holder=mihran_05
+	}
+	363.6.1={
+		holder=mihran_06
+	}
+	379.1.1={
+		holder=mihran_07
+	}
+	425.1.1={
+		holder=mihran_08
+	}
+	459.6.1={
+		holder=mihran_105
+	}
+	460.1.1={
+		holder=mihran_10
+	}
+	463.1.1={
+		holder=mihran_11
+	}
+	479.1.1={
+		holder=mihran_12
+	}
+	555.1.1={
+		holder=mihran_14
+	}
+	588.1.1={
+		holder=180645
+	}
+	591.1.1={
+		holder=mihran_25
+	}
+	599.1.1={
+		holder=mihran_21
+	}
+	631.1.1={
+		holder=mihran_22
+	}
+	
+	661.2.28 = {
+		liege = d_media
+	}
+	
+	768.1.1 = {
+		holder = 188648 # al-Hadi Abbasid (actually 800 AD)
+	}
+}
+
+k_pars = {
+	361.1.1 = {
+		holder = pars_01
+		government = eranshar_government
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = suren_54
+	}
+	476.1.1 = {
+		holder = pars_03
+	}
+	520.1.1={
+		holder=pars_real
+	}
+	661.2.28 = {
+		liege = e_arabia
+	}
+	
+}
+
+
+d_fars = {
+	361.1.1 = {
+		holder = pars_01
+		government = eranshar_government
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = pars_02
+	}
+	476.1.1 = {
+		holder = pars_03
+	}
+	661.2.28 = {
+		liege = e_arabia
+	}
+	
+}
+
+d_adrashir_khwarrah = {
+	361.1.1 = {
+		holder = pars_04
+		government = eranshar_government
+		liege = k_pars
+	}
+	395.1.1 = {
+		holder = suren_54
+	}
+	476.1.1 = {
+		holder = pars_06
+	}
+}
+
+c_shiraz = {
+	361.1.1 = {	change_development_level = 10 }
+	532.1.1 = {	change_development_level = 11 }
+	768.1.1 = {	change_development_level = 12 }
+	
+	361.1.1 = {
+		holder = pars_04
+		government = eranshar_government
+		liege = k_pars
+	}
+	395.1.1 = {
+		holder = suren_54
+	}
+	476.1.1 = {
+		holder = pars_06
+	}
+	644.1.1 = {
+		liege = d_fars
+	}
+	
+	762.1.1 = {
+		holder = 187688
+	}
+	
+	
+}
+
+
+c_lar = {
+	361.1.1 = {
+		holder = pars_04
+		government = eranshar_government
+		liege = k_pars
+	}
+	395.1.1 = {
+		holder = suren_54
+	}
+	476.1.1 = {
+		holder = pars_06
+	}
+	532.1.1 = {
+		holder = persian_misc_002
+		liege = k_pars
+	}
+	644.1.1 = {
+		liege = d_fars
+	}
+	
+	762.1.1 = {
+		holder = 187688
+	}
+	
+}
+
+
+c_darabjerd = {
+	361.1.1 = {
+		holder = pars_01
+		government = eranshar_government
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = pars_02
+	}
+	476.1.1 = {
+		holder = pars_03
+	}
+	532.1.1 = {
+		holder = persian_misc_001
+		liege = k_pars
+	}
+	644.1.1 = {
+		liege = d_fars
+	}
+	
+	762.1.1 = {
+		holder = 187688
+	}
+	
+}
+
+d_shapur_khwarrah = {
+	361.1.1 = {
+		holder = pars_10
+		government = eranshar_government
+		liege = k_pars
+	}
+	395.1.1 = {
+		holder = pars_11
+	}
+	476.1.1 = {
+		holder = pars_12
+	}
+}
+c_arrajan = {
+	361.1.1 = {
+		holder = pars_10
+		government = eranshar_government
+		liege = k_pars
+	}
+	395.1.1 = {
+		holder = pars_11
+	}
+	476.1.1 = {
+		holder = pars_12
+	}
+	532.1.1 = {
+		holder = persian_misc_003
+		liege = k_pars
+	}
+	644.1.1 = {
+		liege = d_fars
+	}
+	
+	762.1.1 = {
+		holder = 187688
+	}
+	
+	
+}
+
+
+c_istakhr = {
+	361.1.1 = {
+		holder = pars_01
+		government = eranshar_government
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = pars_02
+	}
+	476.1.1 = {
+		holder = pars_03
+	}
+	644.1.1 = {
+		liege = d_fars
+	}
+	
+	762.1.1 = {
+		holder = 187688
+	}
+	
+	
+}
+
+
+c_mandestan = {
+	361.1.1 = {
+		holder = pars_04
+		government = eranshar_government
+		liege = k_pars
+	}
+	395.1.1 = {
+		holder = suren_54
+	}
+	476.1.1 = {
+		holder = pars_06
+	}
+	532.1.1 = {
+		holder = persian_misc_004
+		liege = k_pars
+	}
+	644.1.1 = {
+		liege = d_fars
+	}
+	
+	762.1.1 = {
+		holder = 187688
+	}
+	
+	
+	
+
+}
+
+
+c_irahistan = {
+	361.1.1 = {	change_development_level = 8 }
+	532.1.1 = {	change_development_level = 9 }
+	768.1.1 = {	change_development_level = 10 }
+	
+	361.1.1 = {
+		holder = pars_04
+		government = eranshar_government
+		liege = k_pars
+	}
+	395.1.1 = {
+		holder = suren_54
+	}
+	476.1.1 = {
+		holder = pars_06
+	}
+	532.1.1 = {
+		holder = persian_misc_004
+		liege = k_pars
+	}
+	644.1.1 = {
+		liege = d_fars
+	}
+	
+	762.1.1 = {
+		holder = 187688
+	}
+	
+	
+	
+
+}
+
+d_hormuz = {
+	361.1.1 = {	change_development_level = 6 }
+	532.1.1 = {	change_development_level = 7 }
+	768.1.1 = {	change_development_level = 8 }
+	361.1.1 = {
+		holder = pars_07
+		government = eranshar_government
+		liege = k_pars
+	}
+	395.1.1 = {
+		holder = pars_08
+	}
+	476.1.1 = {
+		holder = pars_09
+	}
+}
+
+c_hormuz = {
+	361.1.1 = {	change_development_level = 8 }
+	532.1.1 = {	change_development_level = 9 }
+	768.1.1 = {	change_development_level = 10 }
+	361.1.1 = {
+		holder = pars_07
+		government = eranshar_government
+		liege = k_pars
+	}
+	395.1.1 = {
+		holder = pars_08
+	}
+	476.1.1 = {
+		holder = pars_09
+	}
+	
+	644.1.1 = {
+		liege = "d_kirman"
+	}
+	765.1.1 = {
+		holder = 188664
+	}
+	
+	
+}
+
+
+c_sif-i-umara = {
+	361.1.1 = {
+		holder = pars_07
+		government = eranshar_government
+		liege = k_pars
+	}
+	395.1.1 = {
+		holder = pars_08
+	}
+	476.1.1 = {
+		holder = pars_09
+	}
+	532.1.1 = {
+		holder = persian_misc_002
+		liege = k_pars
+	}
+	644.1.1 = {
+		liege = "d_kirman"
+	}
+	765.1.1 = {
+		holder = 188664
+	}
+	
+	
+}
+
+
+d_khuzestan = {
+	361.1.1 = {
+		holder = pars_16
+		government = eranshar_government
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = pars_17
+	}
+	476.1.1 = {
+		holder = pars_18
+	}
+	520.1.1={
+		holder=zabergan_01
+	}
+}
+
+
+c_sardan = {
+	361.1.1 = {	change_development_level = 3 }
+	532.1.1 = {	change_development_level = 4 }
+	768.1.1 = {	change_development_level = 5 }
+	361.1.1 = {
+		holder = pars_10
+		government = eranshar_government
+		liege = k_pars
+	}
+	395.1.1 = {
+		holder = pars_11
+	}
+	476.1.1 = {
+		holder = pars_12
+	}
+	532.1.1 = {
+		holder = persian_misc_003
+		liege = k_pars
+	}
+	
+	644.1.1 = {
+		liege = "d_kirman"
+	}
+	765.1.1 = {
+		holder = 188664
+	}
+	
+	
+}
+
+
+c_ramhurmuz = {
+	361.1.1 = {
+		holder = pars_16
+		government = eranshar_government
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = pars_17
+	}
+	476.1.1 = {
+		holder = pars_18
+	}
+	644.1.1 = {
+		liege = "d_kirman"
+	}
+	765.1.1 = {
+		holder = 188664
+	}
+	
+}
+
+
+c_tustar = {
+	361.1.1 = {	change_development_level = 3 }
+	532.1.1 = {	change_development_level = 4 }
+	768.1.1 = {	change_development_level = 5 }
+	
+	361.1.1 = {
+		holder = pars_16
+		government = eranshar_government
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = pars_17
+	}
+	476.1.1 = {
+		holder = pars_18
+	}
+	
+	644.1.1 = {
+		liege = "d_kirman"
+	}
+	765.1.1 = {
+		holder = 188664
+	}
+	
+	
+}
+
+
+c_ahvaz = {
+	361.1.1 = {	change_development_level = 6 }
+	532.1.1 = {	change_development_level = 7 }
+	768.1.1 = {	change_development_level = 8 }
+	
+	361.1.1 = {
+		holder = pars_16
+		government = eranshar_government
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = pars_17
+	}
+	476.1.1 = {
+		holder = pars_18
+	}
+	530.1.1={
+		holder=varaz_84
+	}
+	750.1.1 = {
+		liege = d_wasit
+	}
+}
+
+
+c_abbadan = {
+
+	361.1.1 = {
+		holder = pars_16
+		government = eranshar_government
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = pars_17
+	}
+	476.1.1 = {
+		holder = pars_18
+	}
+	750.1.1 = {
+		liege = d_wasit
+	}
+	
+	768.1.1 = {
+		holder = 188666
+	}
+	
+	
+}
+
+
+c_dawraq = {
+	361.1.1 = {
+		holder = pars_16
+		government = eranshar_government
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = pars_17
+	}
+	476.1.1 = {
+		holder = pars_18
+	}
+	750.1.1 = {
+		liege = d_wasit
+	}
+	
+	768.1.1 = {
+		holder = 188666
+	}
+	
+	
+}
+
+
+d_kermanshah = {
+	360.1.1 = {
+		holder = pars_37
+		government = eranshar_government
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = pars_38
+	}
+	476.1.1 = {
+		holder = pars_39
+	}
+	530.1.1={
+		holder=babak_01
+	}
+	661.2.28={
+		liege=e_arabia
+	}
+	
+	768.1.1={
+		holder = 34002
+	}
+	
+	
+}
+
+
+c_kermanshah = {
+	361.1.1 = {	change_development_level = 6 }
+	532.1.1 = {	change_development_level = 7 }
+	768.1.1 = {	change_development_level = 8 }
+	
+	360.1.1 = {
+		holder = pars_37
+		government = eranshar_government
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = pars_38
+	}
+	476.1.1 = {
+		holder = pars_39
+	}
+	750.1.1 = {
+		liege = d_media
+	}
+	
+	764.1.1 = {
+		holder = 188726
+	}
+
+}
+
+
+c_masabadhan = {
+	360.1.1 = {
+		holder = pars_37
+		government = eranshar_government
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = pars_38
+	}
+	476.1.1 = {
+		holder = pars_39
+	}
+	750.1.1 = {
+		liege = d_media
+	}
+	
+	764.1.1 = {
+		holder = 188726
+	}
+	
+
+}
+
+c_saimara = {
+	361.1.1 = {	change_development_level = 3 }
+	532.1.1 = {	change_development_level = 4 }
+	768.1.1 = {	change_development_level = 5 }
+	
+	360.1.1 = {
+		holder = pars_37
+		government = eranshar_government
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = pars_38
+	}
+	476.1.1 = {
+		holder = pars_39
+	}
+	661.2.28 = {
+		liege = e_arabia
+	}
+	
+	768.1.1 = {
+		holder = 188631 # Khuzaymah b Khazmi (fictitious assignment)
+	}
+
+}
+

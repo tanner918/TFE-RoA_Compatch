@@ -1,0 +1,234 @@
+﻿namespace = formation_events
+
+##################################################
+# #Standard Events
+# 0001 - 0010	Establish Supremacy over the Red Sea. - Hróðvitnir
+# 0011 - 0020	Settle as Titular Tribal Kingdom. - Hróðvitnir
+##################################################
+
+# Founder event
+formation_events.0001 = {
+	type = character_event
+	title = formation_events.0001.t
+	desc = formation_events.0001.desc
+	theme = realm
+	left_portrait = {
+		character = scope:founder
+		animation = personality_honorable
+	}
+	override_background = { reference = docks }
+
+	immediate = {
+		play_music_cue = "TFE_General_Cue"
+		#Apply decision effects.
+		establish_red_sea_effect = yes
+	}
+
+	option = {
+		name = formation_events.0001.a
+		
+		give_nickname = nick_the_great
+		
+		ai_chance = {
+			base = 50
+		}
+	}
+	
+	option = {
+		name = formation_events.0001.b
+		
+		give_nickname = nick_the_red
+		
+		ai_chance = {
+			base = 50
+		}
+	}
+}
+
+# Vassal notification event
+formation_events.0002 = {
+	type = character_event
+	title = formation_events.0002.t
+	desc = formation_events.0002.desc
+	theme = realm
+	left_portrait = {
+		character = scope:founder
+		animation = personality_honorable
+	}
+	override_background = { reference = docks }
+
+	immediate = {
+		play_music_cue = "TFE_General_Cue"
+		show_as_tooltip = { establish_red_sea_effect = yes }
+	}
+
+	option = {
+		name = formation_events.0002.a
+
+		ai_chance = {
+			base = 50
+		}
+	}
+
+	option = {
+		name = formation_events.0002.b
+
+		ai_chance = {
+			base = 50
+		}
+	}
+}
+
+# Other notification event.
+formation_events.0003 = {
+	type = character_event
+	title = formation_events.0003.t
+	desc = formation_events.0003.desc
+	theme = realm
+	left_portrait = {
+		character = scope:founder
+		animation = personality_honorable
+	}
+	override_background = { reference = docks }
+
+	immediate = {
+		play_music_cue = "TFE_General_Cue"
+		show_as_tooltip = { establish_red_sea_effect = yes }
+	}
+
+	option = {
+		name = formation_events.0003.a
+		trigger = { faith = scope:founder.faith }
+
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = {
+		name = formation_events.0003.b
+		trigger = {
+			NOT = { faith = scope:founder.faith }
+		}
+
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	#Emperors get antsy.
+	option = {
+		name = formation_events.0003.c
+		trigger = { highest_held_title_tier >= tier_empire }
+
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+# Founder event
+formation_events.0011 = {
+	type = character_event
+	title = formation_events.0011.t
+	desc = formation_events.0011.desc
+	theme = realm
+	left_portrait = {
+		character = scope:founder
+		animation = personality_honorable
+	}
+
+	immediate = {
+		play_music_cue = "TFE_General_Cue"
+		#Apply decision effects.
+		titular_settle_effect = yes
+	}
+
+	option = {
+		name = formation_events.0011.a
+		
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+# Vassal notification event
+formation_events.0012 = {
+	type = character_event
+	title = formation_events.0012.t
+	desc = formation_events.0012.desc
+	theme = realm
+	left_portrait = {
+		character = scope:founder
+		animation = personality_honorable
+	}
+
+	immediate = {
+		play_music_cue = "TFE_General_Cue"
+		show_as_tooltip = { titular_settle_effect = yes }
+	}
+
+	option = {
+		name = formation_events.0012.a
+
+		ai_chance = {
+			base = 50
+		}
+	}
+
+	option = {
+		name = formation_events.0012.b
+
+		ai_chance = {
+			base = 50
+		}
+	}
+}
+
+# Other notification event.
+formation_events.0013 = {
+	type = character_event
+	title = formation_events.0013.t
+	desc = formation_events.0013.desc
+	theme = realm
+	left_portrait = {
+		character = scope:founder
+		animation = personality_honorable
+	}
+
+	immediate = {
+		play_music_cue = "TFE_General_Cue"
+		show_as_tooltip = { titular_settle_effect = yes }
+	}
+
+	option = {
+		name = formation_events.0013.a
+		trigger = { faith = scope:founder.faith }
+
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = {
+		name = formation_events.0013.b
+		trigger = {
+			NOT = { faith = scope:founder.faith }
+		}
+
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	#Emperors get antsy.
+	option = {
+		name = formation_events.0013.c
+		trigger = { highest_held_title_tier >= tier_empire }
+
+		ai_chance = {
+			base = 100
+		}
+	}
+}

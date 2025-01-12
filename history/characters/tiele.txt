@@ -1,0 +1,1687 @@
+﻿
+
+#### bugut_dynasty 
+tiele_18 = {
+	name = TO_rtogul # Fictional
+	dynasty = bugut_dynasty # bugut_dynasty tribe
+	religion = tengri_pagan
+	culture = tiele
+	
+	344.1.1 = { birth = yes }
+	423.1.1 = { death = yes }
+}
+tiele_19 = {
+	name = Kozel # Fictional
+	dynasty = bugut_dynasty # bugut_dynasty tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = tiele_18
+	
+	374.1.1 = { birth = yes }
+	453.1.1 = { death = yes }
+}
+tiele_20 = {
+	name = Tugor # Fictional
+	dynasty = bugut_dynasty # bugut_dynasty tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = tiele_19
+	
+	409.1.1 = { birth = yes }
+	480.1.1 = { death = yes }
+}
+tiele_21 = {
+	name = Kotyan # Fictional
+	dynasty = bugut_dynasty # bugut_dynasty tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = tiele_20
+	
+	453.1.1 = { birth = yes }
+	524.1.1 = { death = yes }
+}
+tiele_28 = {
+	name = Kotyan # Fictional
+	dynasty = bugut_dynasty # bugut_dynasty tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = tiele_21
+	
+	490.1.1 = { birth = yes }
+	540.1.1 = { death = yes }
+}
+#### tongluo_dynasty
+tiele_06 = {
+	name = EldeC_yuk # Fictional
+	dynasty = tongluo_dynasty # yenisei tribe
+	religion = tengri_pagan
+	culture = tiele
+	
+	329.1.1 = { birth = yes }
+	399.1.1 = { death = yes }
+}
+tiele_07 = {
+	name = Itlar # Fictional
+	dynasty = tongluo_dynasty # tongluo_dynasty tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = tiele_06 # tongluo_dynasty Eldeçyuk
+	
+	369.1.1 = { birth = yes }
+	435.1.1 = { death = yes }
+}
+tongluo_1 = {
+	name = EldeC_yuk # Fictional
+	dynasty = tongluo_dynasty # tongluo_dynasty tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = tiele_07 # tongluo_dynasty Eldeçyuk
+	
+	410.1.1 = { birth = yes }
+	478.1.1 = { death = yes }
+}
+#### Hulu
+tiele_01 = {
+	name = Kozel # Fictional
+	dynasty = hulu # Hulu tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = hulu_01
+	
+	336.1.1 = { birth = yes }
+	384.1.1 = { death = yes }
+}
+
+# Beihouli, leader of the Hulu tribe that tried to defeat Rouran founder Shelun in 402
+# Later escaped to Northern Wei, and his descendants became officials/generals for successive dynasties as late as the early Sui era (?)
+tiele_02 = {
+	name = Beihouli # Historical
+	dynasty = hulu # Hulu tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = tiele_01 # Fictional Hulu Kozel
+	trait = education_learning_3 # Said to be good at divination	
+	trait = brave # Brave
+	trait = honest # Said to be straightforward
+	trait = trusting # Said to be straightforward
+	trait = physique_good_2 # Said to be strong
+	trait = lifestyle_mystic # Said to be good at divination
+	362.3.7 = {
+		birth = yes
+	}
+	385.1.1 = {
+		add_spouse = hulu_04
+	}
+	406.2.8 = { # Year unknown, but passed away during the reign of Emperor Daowu of Wei (371-409)
+		death = yes
+	}
+}
+
+# Tiele turncoat who supported Shelun's takeover of the Hulu tribe
+# Was later appointed to look after Shelun's children (?)
+tiele_03 = {
+	name = Chiluohou # Historical
+	dynasty = hulu # Hulu tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = hulu_05 # Fictional
+	trait = deceitful
+	
+	361.1.1 = {
+		birth = yes
+	}
+	# 395.1.1 = {
+	# 	set_relation_friend = character:yujiulu_072
+	# }
+	430.1.1 = {
+		death = yes
+	}
+}
+
+hulu_01 = {
+	name = Batoya # Fictional
+	dynasty = hulu # Hulu tribe
+	religion = tengri_pagan
+	culture = tiele
+
+	303.3.3 = {
+		birth = yes
+	}
+	353.5.3 = { 
+		death = yes
+	}
+	
+}
+
+hulu_02 = {
+	name = Fandijin # Historical
+	dynasty = hulu # Hulu tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = tiele_02
+	
+	# Father died during the reign of Emperor Daowu of Wei (371-409)
+	387.2.16 = { 
+		birth = yes
+	}
+	466.6.4 = {
+		death = yes
+	}
+}
+
+hulu_03 = {
+	name = Hetang # Historical
+	dynasty = hulu # Hulu tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = tiele_02
+	
+	# Father died during the reign of Emperor Daowu of Wei (371-409)
+	390.6.9 = { 
+		birth = yes
+	}
+	456.7.8 = {
+		death = yes
+	}
+}
+
+hulu_04 = {
+	name = Songul # Fictional wife of Beihouli
+	female = yes
+	#dynasty = hulu # Hulu tribe
+	religion = tengri_pagan
+	culture = tiele
+	
+	367.1.19 = { 
+		birth = yes
+	}
+	417.4.30 = {
+		death = yes
+	}
+}
+
+hulu_05 = {
+	name = Gostun # Fictional
+	dynasty = hulu # Hulu tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = hulu_01
+	
+	342.6.15 = { birth = yes }
+	389.2.4 = { death = yes }
+}
+
+tiele_14 = {
+	name = Bolkhadar # Fictional
+	dynasty = hulu # Hulu tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = tiele_03 # Chiluohou of the Hulu
+	
+	399.1.1 = { birth = yes }
+	477.1.1 = { death = yes }
+}
+tiele_15 = {
+	name = Yeke # Fictional
+	dynasty = hulu # Hulu tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = tiele_14 # Bolkhadar of the Hulu
+	
+	443.1.1 = { birth = yes }
+	502.1.1 = { death = yes }
+}
+
+#### fuluo_dynasty
+tiele_08 = {
+	name = Bonyak # Fictional
+	dynasty = fuluo_dynasty # fuluo_dynasty tribe
+	religion = tengri_pagan
+	culture = tiele
+	
+	331.1.1 = { birth = yes }
+	399.1.1 = { death = yes }
+}
+tiele_09 = {
+	name = Blush # Fictional
+	dynasty = fuluo_dynasty # fuluo_dynasty tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = tiele_08 # fuluo_dynasty Bonyak
+	
+	358.1.1 = { birth = yes }
+	435.1.1 = { death = yes }
+}
+fuluo_01 = {
+	name = Blush # Fictional
+	dynasty = fuluo_dynasty # fuluo_dynasty tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = tiele_09 # fuluo_dynasty Bonyak
+	
+	400.1.1 = { birth = yes }
+	480.1.1 = { death = yes }
+}
+fuluo_02 = {
+	name = Bonyak # Fictional
+	dynasty = fuluo_dynasty # fuluo_dynasty tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = fuluo_01
+	
+	440.1.1 = { birth = yes }
+	500.1.1 = { death = yes }
+}
+fuluo_03 = {
+	name = Dayan # Fictional
+	dynasty = fuluo_dynasty # fuluo_dynasty tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = fuluo_02
+	
+	477.1.1 = { birth = yes }
+	540.1.1 = { death = yes }
+}
+
+#### siqit_dynasty
+tiele_10 = {
+	name = Sugr # Fictional
+	dynasty = siqit_dynasty # siqit_dynasty tribe
+	religion = tengri_pagan
+	culture = tiele
+	
+	332.1.1 = { birth = yes }
+	399.1.1 = { death = yes }
+}
+tiele_11 = {
+	name = Pulad # Fictional
+	dynasty = siqit_dynasty # fuluo_dynasty tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = tiele_10 # siqit_dynasty Sugr
+	
+	360.1.1 = { birth = yes }
+	435.1.1 = { death = yes }
+}
+siqit_01 = {
+	name = Sugr # Fictional
+	dynasty = siqit_dynasty # fuluo_dynasty tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = tiele_11 # siqit_dynasty Sugr
+	
+	415.1.1 = { birth = yes }
+	480.1.1 = { death = yes }
+}
+
+
+#### huxae_dynasty
+tiele_12 = {
+	name = Tardush # Fictional
+	dynasty = huxae_dynasty # huxae_dynasty tribe
+	religion = tengri_pagan
+	culture = tiele
+	
+	338.1.1 = { birth = yes }
+	401.1.1 = { death = yes }
+}
+tiele_13 = {
+	name = SirC_an # Fictional
+	dynasty = huxae_dynasty # huxae_dynasty tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = tiele_12 # huxae_dynasty Tardush
+	
+	373.1.1 = { birth = yes }
+	435.1.1 = { death = yes }
+}
+huxuae_01 = {
+	name = Tardush # Fictional
+	dynasty = huxae_dynasty # huxae_dynasty tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = tiele_13 # huxae_dynasty Tardush
+	
+	423.1.1 = { birth = yes }
+	490.1.1 = { death = yes }
+}
+huxuae_02 = {
+	name = Khertek # Fictional
+	dynasty = huxae_dynasty # huxae_dynasty tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = huxuae_01 # huxae_dynasty Tardush
+	
+	476.1.1 = { birth = yes }
+	440.1.1 = { death = yes }
+}
+
+###Rouran Vassals ###UNUSED
+tiele_22 = {
+	name = Aibek # Fictional
+	religion = tengri_pagan
+	culture = tiele
+
+	441.1.1 = { birth = yes }
+	503.1.1 = { death = yes }
+}
+tiele_23 = {
+	name = Atrak # Fictional
+	religion = tengri_pagan
+	culture = tiele
+
+	446.1.1 = { birth = yes }
+	503.1.1 = { death = yes }
+}
+tiele_24 = {
+	name = Sukhrab # Fictional
+	religion = tengri_pagan
+	culture = tiele
+
+	452.1.1 = { birth = yes }
+	503.1.1 = { death = yes }
+}
+tiele_25 = {
+	name = Itlar # Fictional
+	religion = tengri_pagan
+	culture = tiele
+
+	450.1.1 = { birth = yes }
+	503.1.1 = { death = yes }
+}
+tiele_26 = {
+	name = Kutan # Fictional
+	religion = tengri_pagan
+	culture = tiele
+
+	448.1.1 = { birth = yes }
+	503.1.1 = { death = yes }
+}
+tiele_27 = {
+	name = Kutan # Fictional
+	religion = tengri_pagan
+	culture = tiele
+
+	448.1.1 = { birth = yes }
+	503.1.1 = { death = yes }
+}
+qibi_01 = {
+	name = Itlar # Fictional
+	dynasty = Qibi_dynasty
+	religion = tengri_pagan
+	culture = tiele
+
+	330.1.1 = { birth = yes }
+	400.1.1 = { death = yes }
+}
+qibi_02 = {
+	name = Kutan # Fictional
+	dynasty = Qibi_dynasty
+	religion = vajrayana
+	culture = tiele
+
+	380.1.1 = { birth = yes }
+	430.1.1 = { death = yes }
+}
+qibi_03 = {
+	name = Chagatai # Fictional
+	dynasty = Qibi_dynasty
+	religion = vajrayana
+	culture = tiele
+
+	423.1.1 = { birth = yes }
+	500.1.1 = { death = yes }
+}
+bolouzhi_01 = {
+	name = Bonyak # Fictional
+	dynasty = bolouzhi_dynasty
+	religion = tengri_pagan
+	culture = tiele
+
+	330.1.1 = { birth = yes }
+	400.1.1 = { death = yes }
+}
+bolouzhi_02 = {
+	name = Inancha # Fictional
+	dynasty = bolouzhi_dynasty
+	religion = vajrayana
+	culture = tiele
+
+	380.1.1 = { birth = yes }
+	430.1.1 = { death = yes }
+}
+bolouzhi_03 = {
+	name = Atrak # Fictional
+	dynasty = bolouzhi_dynasty
+	religion = vajrayana
+	culture = tiele
+
+	423.1.1 = { birth = yes }
+	500.1.1 = { death = yes }
+}
+yunihuan_01 = {
+	name = Yeke # Fictional
+	dynasty = yunihuan_dynasty
+	religion = tengri_pagan
+	culture = tiele
+
+	330.1.1 = { birth = yes }
+	400.1.1 = { death = yes }
+}
+yunihuan_02 = {
+	name = Inancha # Fictional
+	dynasty = yunihuan_dynasty
+	religion = vajrayana
+	culture = tiele
+
+	380.1.1 = { birth = yes }
+	430.1.1 = { death = yes }
+}
+yunihuan_03 = {
+	name = Atrak # Fictional
+	dynasty = yunihuan_dynasty
+	religion = vajrayana
+	culture = tiele
+
+	423.1.1 = { birth = yes }
+	500.1.1 = { death = yes }
+}
+yedie_01 = {
+	name = SirC_an # Fictional
+	dynasty = yedie_dynasty
+	religion = tengri_pagan
+	culture = tiele
+
+	330.1.1 = { birth = yes }
+	400.1.1 = { death = yes }
+}
+yedie_02 = {
+	name = Inancha # Fictional
+	dynasty = yedie_dynasty
+	religion = vajrayana
+	culture = tiele
+
+	380.1.1 = { birth = yes }
+	430.1.1 = { death = yes }
+}
+yedie_03 = {
+	name = Atrak # Fictional
+	dynasty = yedie_dynasty
+	religion = vajrayana
+	culture = tiele
+
+	423.1.1 = { birth = yes }
+	500.1.1 = { death = yes }
+}
+hegu_01 = {
+	name = Sugr # Fictional
+	dynasty = hegu_dynasty
+	religion = tengri_pagan
+	culture = tiele
+
+	330.1.1 = { birth = yes }
+	400.1.1 = { death = yes }
+}
+hegu_02 = {
+	name = Inancha # Fictional
+	dynasty = hegu_dynasty
+	religion = vajrayana
+	culture = tiele
+
+	380.1.1 = { birth = yes }
+	430.1.1 = { death = yes }
+}
+hegu_03 = {
+	name = Atrak # Fictional
+	dynasty = hegu_dynasty
+	religion = vajrayana
+	culture = tiele
+
+	423.1.1 = { birth = yes }
+	500.1.1 = { death = yes }
+}
+wuhuan_01 = {
+	name = Kutan # Fictional
+	dynasty = wuhuan_dynasty
+	religion = tengri_pagan
+	culture = tiele
+
+	330.1.1 = { birth = yes }
+	400.1.1 = { death = yes }
+}
+wuhuan_02 = {
+	name = Inancha # Fictional
+	dynasty = wuhuan_dynasty
+	religion = vajrayana
+	culture = tiele
+
+	380.1.1 = { birth = yes }
+	430.1.1 = { death = yes }
+}
+wuhuan_03 = {
+	name = Isperikh # Fictional
+	dynasty = wuhuan_dynasty
+	religion = vajrayana
+	culture = tiele
+
+	423.1.1 = { birth = yes }
+	500.1.1 = { death = yes }
+}
+nahe_01 = {
+	name = Tardush # Fictional
+	dynasty = nahe_dynasty
+	religion = tengri_pagan
+	culture = tiele
+
+	330.1.1 = { birth = yes }
+	400.1.1 = { death = yes }
+}
+nahe_02 = {
+	name = Inancha # Fictional
+	dynasty = nahe_dynasty
+	religion = vajrayana
+	culture = tiele
+
+	380.1.1 = { birth = yes }
+	430.1.1 = { death = yes }
+}
+nahe_03 = {
+	name = Khudbard # Fictional
+	dynasty = nahe_dynasty
+	religion = vajrayana
+	culture = tiele
+
+	423.1.1 = { birth = yes }
+	500.1.1 = { death = yes }
+}
+supo_01 = {
+	name = Umor # Fictional
+	dynasty = supo_dynasty
+	religion = tengri_pagan
+	culture = tiele
+
+	330.1.1 = { birth = yes }
+	400.1.1 = { death = yes }
+}
+supo_02 = {
+	name = Inancha # Fictional
+	dynasty = supo_dynasty
+	religion = vajrayana
+	culture = tiele
+
+	380.1.1 = { birth = yes }
+	430.1.1 = { death = yes }
+}
+supo_03 = {
+	name = Ruga # Fictional
+	dynasty = supo_dynasty
+	religion = vajrayana
+	culture = tiele
+
+	423.1.1 = { birth = yes }
+	500.1.1 = { death = yes }
+}
+yidie_01 = {
+	name = Chaka # Fictional
+	dynasty = yidie_dynasty
+	religion = tengri_pagan
+	culture = tiele
+
+	330.1.1 = { birth = yes }
+	400.1.1 = { death = yes }
+}
+yidie_02 = {
+	name = Inancha # Fictional
+	dynasty = yidie_dynasty
+	religion = vajrayana
+	culture = tiele
+	father = yidie_01
+	380.1.1 = { birth = yes }
+	430.1.1 = { death = yes }
+}
+yidie_03 = {
+	name = Togay # Fictional
+	dynasty = yidie_dynasty
+	religion = vajrayana
+	culture = tiele
+	father = yidie_02
+	423.1.1 = { birth = yes }
+	480.1.1 = { death = yes }
+}
+yidie_04 = {
+	name = Bayan # Fictional
+	dynasty = yidie_dynasty
+	religion = vajrayana
+	culture = tiele
+	father = yidie_03
+	460.1.1 = { birth = yes }
+	510.1.1 = { death = yes }
+}
+yidie_05 = {
+	name = Chaka # Fictional
+	dynasty = yidie_dynasty
+	religion = vajrayana
+	culture = tiele
+	father = yidie_04
+	490.1.1 = { birth = yes }
+	540.1.1 = { death = yes }
+}
+####
+dzungaria_05 = {
+	name = Chagatai # Fictional
+	religion = tengri_pagan
+	culture = tiele
+	dynasty = fufuluo_dynasty
+	
+	338.1.1 = { birth = yes }
+	400.1.1 = { death = yes }
+}
+fufuluo_01 = {
+	name = Inancha # Fictional
+	religion = tengri_pagan
+	culture = tiele
+	dynasty = fufuluo_dynasty
+	father = dzungaria_05
+
+	374.1.1 = { birth = yes }
+	441.1.1 = { death = yes }
+}
+fufuluo_02 = {
+	name = Jaglaqar # Fictional
+	religion = tengri_pagan
+	culture = tiele
+	dynasty = fufuluo_dynasty
+	father = fufuluo_01
+
+	402.1.1 = { birth = yes }
+	474.1.1 = { death = yes }
+}
+fufuluo_03 = {
+	name = Afuzhiluo	 # Not Actually Fictional, This Guy Is Securely Historically Attested From Contemporary Sources
+	religion = tengri_pagan
+	culture = tiele
+	dynasty = fufuluo_dynasty
+	father = fufuluo_02
+	martial = 10
+	trait = arrogant
+	trait = ambitious
+	trait = sadistic
+	diplomacy = 6
+
+	442.1.1 = { birth = yes }
+	487.1.1 = {
+		give_nickname = nick_houlufule
+	}
+	506.1.1 = { death = yes }
+}
+fufuluo_04 = {
+	name = Blush	
+	religion = tengri_pagan
+	culture = tiele
+	dynasty = fufuluo_dynasty
+	father = fufuluo_01
+
+	410.1.1 = { birth = yes }
+	477.1.1 = { death = yes }
+}
+fufuluo_05 = {
+	name = Qiongqi	
+	religion = tengri_pagan
+	culture = tiele
+	dynasty = fufuluo_dynasty
+	father = fufuluo_04
+
+	449.1.1 = { birth = yes }
+	474.1.1={
+		set_relation_friend = character:fufuluo_03
+	}
+	494.1.1 = { 
+		death = {
+			death_reason = death_murder_known
+			killer = hephthalite_004 
+		}
+	}
+}
+fufuluo_06 = {
+	name = Balian	
+	religion = tengri_pagan
+	culture = tiele
+	dynasty = fufuluo_dynasty
+	father = fufuluo_04
+
+	452.1.1 = { birth = yes }
+	507.1.1 = { death = yes }
+}
+fufuluo_07 = {
+	name = Mi'etu	
+	religion = tengri_pagan
+	culture = tiele
+	dynasty = fufuluo_dynasty
+	father = fufuluo_05
+
+	475.1.1 = { birth = yes }
+	516.1.1 = { death = yes }
+}
+fufuluo_08 = {
+	name = Yifu	 
+	religion = tengri_pagan
+	culture = tiele
+	dynasty = fufuluo_dynasty
+	father = fufuluo_05
+	martial = 10
+	trait = trusting
+	learning = 8
+	stewardship = 8
+	trait = education_martial_3
+	478.1.1 = { birth = yes }
+	524.1.1 = { 
+		death = {
+			death_reason = death_murder_known
+			killer = fufuluo_09
+		}
+	}
+}
+fufuluo_09 = {
+	name = Yuejue	
+	religion = tengri_pagan
+	culture = tiele
+	dynasty = fufuluo_dynasty
+	father = fufuluo_05
+	trait = education_intrigue_2
+	martial = 2
+
+	490.1.1 = { birth = yes }
+	536.1.1 = { 
+		death = {
+			death_reason = death_murder_known
+			killer = fufuluo_10
+		} 
+	}
+}
+fufuluo_10 = {
+	name = Bishi	
+	religion = tengri_pagan
+	culture = tiele
+	dynasty = fufuluo_dynasty
+	father = fufuluo_08
+	trait=education_intrigue_4
+	martial=0
+
+	490.1.1 = { birth = yes }
+	524.1.1={
+		set_relation_rival = character:fufuluo_09
+	}
+	536.1.1 = { death = yes }
+}
+fufuluo_11 = {
+	name = Qubin
+	religion = tengri_pagan
+	culture = tiele
+	dynasty = fufuluo_dynasty
+	father = fufuluo_09
+
+	490.1.1 = { birth = yes }
+	536.1.1 = { death = yes }
+}
+
+
+turuhe_1 = {
+	name = Isbul # Fictional
+	dynasty = turuhe # turuhe tribe
+	religion = tengri_pagan
+	culture = tiele
+	
+	340.1.1 = { birth = yes }
+	401.1.1 = { death = yes }
+}
+turuhe_2 = {
+	name = Khinialon # Fictional
+	dynasty = turuhe # turuhe tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = turuhe_1 # turuhe Tardush
+	
+	382.1.1 = { birth = yes }
+	435.1.1 = { death = yes }
+}
+turuhe_3 = {
+	name = Telek # Fictional
+	dynasty = turuhe # turuhe tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = turuhe_2 # turuhe Tardush
+	
+	423.1.1 = { birth = yes }
+	500.1.1 = { death = yes }
+}
+
+mengchan_1 = {
+	name = Bayan # Fictional
+	dynasty = mengchan # mengchan tribe
+	religion = tengri_pagan
+	culture = tiele
+	
+	342.1.1 = { birth = yes }
+	401.1.1 = { death = yes }
+}
+mengchan_2 = {
+	name = Umor # Fictional
+	dynasty = mengchan # mengchan tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = mengchan_1 # mengchan Tardush
+	
+	372.1.1 = { birth = yes }
+	435.1.1 = { death = yes }
+}
+mengchan_3 = {
+	name = Umor # Fictional
+	dynasty = mengchan # mengchan tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = mengchan_2 # mengchan Tardush
+	
+	402.1.1 = { birth = yes }
+	480.1.1 = { death = yes }
+}
+uyghur_1 = {
+	name = Labertrum # Fictional
+	dynasty = uyghur # uyghur tribe
+	religion = tengri_pagan
+	culture = tiele
+	
+	330.1.1 = { birth = yes }
+	401.1.1 = { death = yes }
+}
+uyghur_2 = {
+	name = Telek # Fictional
+	dynasty = uyghur # uyghur tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = uyghur_1 # uyghur Tardush
+	
+	371.1.1 = { birth = yes }
+	435.1.1 = { death = yes }
+}
+uyghur_3 = {
+	name = Telek # Fictional
+	dynasty = uyghur # uyghur tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = uyghur_2 # uyghur Tardush
+	
+	410.1.1 = { birth = yes }
+	480.1.1 = { death = yes }
+}
+uyghur_4 = {
+	name = Bilge # Fictional
+	dynasty = uyghur # uyghur tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = uyghur_3 # uyghur Tardush
+	
+	433.1.1 = { birth = yes }
+	475.1.1 = { death = yes }
+}
+uyghur_5 = {
+	name = Chabush # Fictional
+	dynasty = uyghur # uyghur tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = uyghur_4 # uyghur Tardush
+	
+	456.1.1 = { birth = yes }
+	499.1.1 = { death = yes }
+}
+uyghur_6 = {
+	name = Kutlug # Fictional
+	dynasty = uyghur # uyghur tribe
+	religion = tengri_pagan
+	culture = uyghur
+	father = uyghur_5 # uyghur Tardush
+	
+	496.1.1 = { birth = yes }
+	549.1.1 = { death = yes }
+}
+uyghur_7 = {
+	name = Bolmush # Fictional
+	dynasty = uyghur # uyghur tribe
+	religion = tengri_pagan
+	culture = uyghur
+	father = uyghur_6 # uyghur Tardush
+	
+	526.1.1 = { birth = yes }
+	579.1.1 = { death = yes }
+}
+hun_1 = {
+	name = Dometa # Fictional
+	dynasty = hun # hun tribe
+	religion = tengri_pagan
+	culture = tiele
+	
+	329.1.1 = { birth = yes }
+	401.1.1 = { death = yes }
+}
+hun_2 = {
+	name = Alzek # Fictional
+	dynasty = hun # hun tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = hun_1 # hun Tardush
+	
+	361.1.1 = { birth = yes }
+	435.1.1 = { death = yes }
+}
+hun_3 = {
+	name = Alzek # Fictional
+	dynasty = hun # hun tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = hun_2 # hun Tardush
+	
+	401.1.1 = { birth = yes }
+	480.1.1 = { death = yes }
+}
+dzungaria_02 = {
+	name = Kokochu # Fictional
+	religion = tengri_pagan
+	culture = tiele
+	dynasty = dieler_dynasty
+	
+	331.1.1 = { birth = yes }
+	400.1.1 = { death = yes }
+}
+dieleer_01 = {
+	name = Belek # Fictional
+	religion = tengri_pagan
+	culture = tiele
+	dynasty = dieler_dynasty
+	father = dzungaria_02
+	
+	370.1.1 = { birth = yes }
+	420.1.1 = { death = yes }
+}
+dieleer_02 = {
+	name = Kutlug # Fictional
+	religion = tengri_pagan
+	culture = tiele
+	dynasty = dieler_dynasty
+	father = dieleer_01
+	
+	404.4.4 = { birth = yes }
+	483.1.1 = { death = yes }
+}
+dieleer_03 = {
+	name = Mengucek # Fictional
+	religion = tengri_pagan
+	culture = tiele
+	dynasty = dieler_dynasty
+	father = dieleer_02
+	
+	445.6.12 = { birth = yes }
+	511.1.1 = { death = yes }
+}
+dieleer_04 = {
+	name = Dundar # Fictional
+	religion = tengri_pagan
+	culture = tiele
+	dynasty = dieler_dynasty
+	father = dieleer_03
+	
+	479.6.18 = { birth = yes }
+	527.1.1 = { death = yes }
+}
+dieleer_05 = {
+	name = Tutus # Fictional
+	religion = tengri_pagan
+	culture = tiele
+	dynasty = dieler_dynasty
+	father = dieleer_04
+	
+	509.11.26 = { birth = yes }
+	557.1.1 = { death = yes }
+}
+dzungaria_03 = {
+	name = Bulughan # Fictional
+	religion = tengri_pagan
+	culture = tiele
+	dynasty = shipen_dynasty
+	
+	332.1.1 = { birth = yes }
+	400.1.1 = { death = yes }
+}
+shipen_01 = {
+	name = Toruntay # Fictional
+	religion = tengri_pagan
+	culture = tiele
+	dynasty = shipen_dynasty
+	father = dzungaria_03
+	
+	370.1.1 = { birth = yes }
+	420.1.1 = { death = yes }
+}
+shipen_02 = {
+	name = Magotin # Fictional
+	religion = tengri_pagan
+	culture = tiele
+	dynasty = shipen_dynasty
+	father = shipen_01
+	
+	410.1.1 = { birth = yes }
+	486.1.1 = { death = yes }
+}
+shipen_03 = {
+	name = Artuk # Fictional
+	religion = tengri_pagan
+	culture = tiele
+	dynasty = shipen_dynasty
+	father = shipen_02
+	
+	453.12.6 = { birth = yes }
+	519.1.1 = { death = yes }
+}
+shipen_04 = {
+	name = Ertan # Fictional
+	religion = tengri_pagan
+	culture = tiele
+	dynasty = shipen_dynasty
+	father = shipen_03
+	
+	489.2.14 = { birth = yes }
+	547.1.1 = { death = yes }
+}
+dzungaria_04 = {
+	name = Babur # Fictional
+	religion = tengri_pagan
+	culture = tiele
+	dynasty = daqi_dynasty
+	
+	336.1.1 = { birth = yes }
+	400.1.1 = { death = yes }
+}
+daqi_01 = {
+	name = UluC_ # Fictional
+	religion = tengri_pagan
+	culture = tiele
+	dynasty = daqi_dynasty
+	father = dzungaria_04
+	
+	370.1.1 = { birth = yes }
+	420.1.1 = { death = yes }
+}
+daqi_02 = {
+	name = Sencer # Fictional
+	religion = tengri_pagan
+	culture = tiele
+	dynasty = daqi_dynasty
+	father = daqi_01
+	
+	410.1.1 = { birth = yes }
+	480.1.1 = { death = yes }
+}
+
+###EPO
+guligan_01 = {
+	name = Timurtas # Fictional
+	religion = tengri_pagan
+	culture = tiele
+	dynasty = guligan_dynasty
+	
+	336.1.1 = { birth = yes }
+	400.1.1 = { death = yes }
+}
+guligan_02 = {
+	name = Umur # Fictional
+	religion = tengri_pagan
+	culture = tiele
+	dynasty = guligan_dynasty
+	father = guligan_01
+	
+	370.1.1 = { birth = yes }
+	420.1.1 = { death = yes }
+}
+guligan_04 = {
+	name = Tunga # Fictional
+	religion = tengri_pagan
+	culture = tiele
+	dynasty = guligan_dynasty
+	father = guligan_02
+	
+	410.1.1 = { birth = yes }
+	480.1.1 = { death = yes }
+}
+dubo_1 = {
+	name = Ilgazi # Fictional
+	dynasty = dubo_dynasty # dubo tribe
+	religion = tengri_pagan
+	culture = tiele
+	
+	333.1.1 = { birth = yes }
+	401.1.1 = { death = yes }
+}
+dubo_2 = {
+	name = Yaman # Fictional
+	dynasty = dubo_dynasty # dubo tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = dubo_1 # dubo Tardush
+	
+	361.1.1 = { birth = yes }
+	435.1.1 = { death = yes }
+}
+dubo_3 = {
+	name = Kotrag # Fictional
+	dynasty = dubo_dynasty # dubo tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = dubo_2 # dubo Tardush
+	
+	447.1.1 = { birth = yes }
+	480.1.1 = { death = yes }
+}
+dubo_4 = {
+	name = Galsan # Fictional
+	dynasty = dubo_dynasty # dubo tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = dubo_3
+	
+	489.1.1 = { birth = yes }
+	540.1.1 = { death = yes }
+}
+fuwenhun_1 = {
+	name = Bezmer # Fictional
+	dynasty = fuwenhun_dynasty # fuwenhun tribe
+	religion = tengri_pagan
+	culture = tiele
+	
+	339.1.1 = { birth = yes }
+	401.1.1 = { death = yes }
+}
+fuwenhun_2 = {
+	name = Anzi # Fictional
+	dynasty = fuwenhun_dynasty # fuwenhun tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = fuwenhun_1 # fuwenhun Tardush
+	
+	378.1.1 = { birth = yes }
+	455.1.1 = { death = yes }
+}
+fuwenhun_3 = {
+	name = Tanrivermis # Fictional
+	dynasty = fuwenhun_dynasty # fuwenhun tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = fuwenhun_2 # fuwenhun Tardush
+	
+	444.1.1 = { birth = yes }
+	519.1.1 = { death = yes }
+}
+fuwenhun_4 = {
+	name = Yerneslu # Fictional
+	dynasty = fuwenhun_dynasty # fuwenhun tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = fuwenhun_3 # fuwenhun Tardush
+	
+	490.1.1 = { birth = yes }
+	545.1.1 = { death = yes }
+}
+berujiuli_1 = {
+	name = Sabin # Fictional
+	dynasty = berujiuli_dynasty # berujiuli tribe
+	religion = tengri_pagan
+	culture = tiele
+	
+	332.1.1 = { birth = yes }
+	401.1.1 = { death = yes }
+}
+berujiuli_2 = {
+	name = Irnek # Fictional
+	dynasty = berujiuli_dynasty # berujiuli tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = berujiuli_1 # berujiuli Tardush
+	
+	373.1.1 = { birth = yes }
+	459.1.1 = { death = yes }
+}
+berujiuli_3 = {
+	name = Kuvrat # Fictional
+	dynasty = berujiuli_dynasty # berujiuli tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = berujiuli_2 # berujiuli Tardush
+	
+	440.1.1 = { birth = yes }
+	520.1.1 = { death = yes }
+}
+berujiuli_4 = {
+	name = Taridin # Fictional
+	dynasty = berujiuli_dynasty # berujiuli tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = berujiuli_3 # berujiuli Tardush
+	
+	485.1.1 = { birth = yes }
+	549.1.1 = { death = yes }
+}
+enqu_1 = {
+	name = Magotin # Fictional
+	dynasty = enqu_dynasty # enqu tribe
+	religion = tengri_pagan
+	culture = tiele
+	
+	332.1.1 = { birth = yes }
+	401.1.1 = { death = yes }
+}
+enqu_2 = {
+	name = Kutrigur # Fictional
+	dynasty = enqu_dynasty # enqu tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = enqu_1 # enqu Tardush
+	
+	362.1.1 = { birth = yes }
+	435.1.1 = { death = yes }
+}
+enqu_3 = {
+	name = Tarasiy # Fictional
+	dynasty = enqu_dynasty # enqu tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = enqu_2 # enqu Tardush
+	
+	442.1.1 = { birth = yes }
+	500.1.1 = { death = yes }
+}
+enqu_4 = {
+	name = Kaytun # Fictional
+	dynasty = enqu_dynasty # enqu tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = enqu_3 # enqu Tardush
+	
+	477.1.1 = { birth = yes }
+	530.1.1 = { death = yes }
+}
+enqu_5 = {
+	name = Baturay # Fictional
+	dynasty = enqu_dynasty # enqu tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = enqu_4 # enqu Tardush
+	
+	510.1.1 = { birth = yes }
+	567.1.1 = { death = yes }
+}
+
+#### bayirku
+bayirku_1 = {
+	name = Labertrum # Fictional
+	dynasty = bayirku # bayirku tribe
+	religion = tengri_pagan
+	culture = tiele
+	
+	330.1.1 = { birth = yes }
+	401.1.1 = { death = yes }
+}
+bayirku_2 = {
+	name = Telek # Fictional
+	dynasty = bayirku # bayirku tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = bayirku_1 # bayirku Tardush
+	
+	371.1.1 = { birth = yes }
+	435.1.1 = { death = yes }
+}
+bayirku_3 = {
+	name = Isbul # Fictional
+	dynasty = bayirku # bayirku tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = bayirku_2 # bayirku Tardush
+	
+	420.1.1 = { birth = yes }
+	488.1.1 = { death = yes }
+}
+bayirku_4 = {
+	name = Tingiz # Fictional
+	dynasty = bayirku # bayirku tribe
+	religion = tengri_pagan
+	culture = tiele
+	father = bayirku_3 # bayirku Tardush
+	
+	455.1.1 = { birth = yes }
+	500.1.1 = { death = yes }
+}
+
+
+#########################################
+# YUEBAN REMNANTS
+#########################################
+
+yueban_misc_01 = {
+	name = "Tingiz"
+	culture = "tiele"
+	religion = "tengri_pagan"
+	dynasty = chumuhun_dynasty
+	501.4.23 = {
+		birth = yes
+	}
+	555.5.5 = {
+		death = yes
+	}
+}
+
+yueban_misc_02 = {
+	name = "Hudbad"
+	culture = "tiele"
+	religion = "tengri_pagan"
+	dynasty = chuban_dynasty
+	495.3.15 = {
+		birth = yes
+	}
+	561.4.22 = {
+		death = yes
+	}
+}
+
+yueban_misc_03 = {
+	name = "Vetam"
+	culture = "tiele"
+	religion = "tengri_pagan"
+	dynasty = chuyue_dynasty
+	509.12.14 = {
+		birth = yes
+	}
+	569.3.31 = {
+		death = yes
+	}
+}
+
+yueban_misc_04 = {
+	name = "Vakrim"
+	culture = "tiele"
+	religion = "tengri_pagan"
+	dynasty = chumi_dynasty
+	512.6.2 = {
+		birth = yes
+	}
+	571.9.14 = {
+		death = yes
+	}
+}
+
+
+
+#########################################################################################################
+# 
+# MISC TURKIC TRIBES
+# By Cybrxkhan
+# 
+#########################################################################################################
+
+# Hedie - north of Samarkand
+hedie_01 = {
+	name = "Aydogan"
+	dynasty = TFE_Hedie_dynasty
+	religion = tengri_pagan
+	culture = tiele
+	
+	459.8.14 = {
+		birth = yes
+	}
+	519.6.17 = {
+		death = yes
+	}
+}
+hedie_02 = {
+	name = "Tutus"
+	dynasty = TFE_Hedie_dynasty
+	religion = tengri_pagan
+	culture = tiele
+	father=hedie_01
+	
+	502.8.30 = {
+		birth = yes
+	}
+	556.6.12 = {
+		death = yes
+	}
+}
+
+# Hejie - north of Samarkand
+hejie_01 = {
+	name = "BO_ru"
+	dynasty = TFE_Hejie_dynasty
+	religion = tengri_pagan
+	culture = tiele
+	
+	460.1.2 = {
+		birth = yes
+	}
+	530.3.1 = {
+		death = yes
+	}
+}
+hejie_02 = {
+	name = "Kaikaus"
+	dynasty = TFE_Hejie_dynasty
+	religion = tengri_pagan
+	culture = tiele
+	father=hejie_01
+	
+	513.6.19 = {
+		birth = yes
+	}
+	557.2.22 = {
+		death = yes
+	}
+}
+
+# Bohu - north of Samarkand
+bohu_01 = {
+	name = "Kaiqobad"
+	dynasty = TFE_Bohu_dynasty
+	religion = tengri_pagan
+	culture = tiele
+	
+	453.2.16 = {
+		birth = yes
+	}
+	514.3.17 = {
+		death = yes
+	}
+}
+bohu_02 = {
+	name = "C_aka"
+	dynasty = TFE_Bohu_dynasty
+	religion = tengri_pagan
+	culture = tiele
+	father=bohu_01
+	
+	490.12.16 = {
+		birth = yes
+	}
+	549.12.7 = {
+		death = yes
+	}
+}
+
+# Bigan - north of Samarkand
+bigan_01 = {
+	name = "Dundar"
+	dynasty = TFE_Bigan_dynasty
+	religion = tengri_pagan
+	culture = tiele
+	
+	452.8.9 = {
+		birth = yes
+	}
+	517.11.20 = {
+		death = yes
+	}
+}
+bigan_02 = {
+	name = "Balaban"
+	dynasty = TFE_Bigan_dynasty
+	religion = tengri_pagan
+	culture = tiele
+	father=bigan_01
+	
+	490.12.16 = {
+		birth = yes
+	}
+	549.12.7 = {
+		death = yes
+	}
+}
+
+# Juhai - north of Samarkand
+juhai_01 = {
+	name = "Cuneyd"
+	dynasty = TFE_Juhai_dynasty
+	religion = tengri_pagan
+	culture = tiele
+	
+	450.9.2 = {
+		birth = yes
+	}
+	527.3.9 = {
+		death = yes
+	}
+}
+juhai_02 = {
+	name = "Hizir"
+	dynasty = TFE_Juhai_dynasty
+	religion = tengri_pagan
+	culture = tiele
+	father=juhai_01
+
+	496.4.23 = {
+		birth = yes
+	}
+	581.11.20 = {
+		death = yes
+	}
+}
+
+# Hebixi - north of Samarkand
+hebixi_01 = {
+	name = "Batuhan"
+	dynasty = TFE_Hebixi_dynasty
+	religion = tengri_pagan
+	culture = tiele
+	
+	459.1.13 = {
+		birth = yes
+	}
+	524.3.2 = {
+		death = yes
+	}
+}
+hebixi_02 = {
+	name = "Korkut"
+	dynasty = TFE_Hebixi_dynasty
+	religion = tengri_pagan
+	culture = tiele
+	father=hebixi_01
+	
+	506.4.17 = {
+		birth = yes
+	}
+	553.8.23 = {
+		death = yes
+	}
+}
+
+# Hecuosu - north of Samarkand
+hecuosu_01 = {
+	name = "Tanrivermis"
+	dynasty = TFE_Hecuosu_dynasty
+	religion = tengri_pagan
+	culture = tiele
+	
+	447.4.14 = {
+		birth = yes
+	}
+	529.3.6 = {
+		death = yes
+	}
+}
+hecuosu_02 = {
+	name = "Mengucek"
+	dynasty = TFE_Hecuosu_dynasty
+	religion = tengri_pagan
+	culture = tiele
+	father=hecuosu_01
+	
+	506.4.17 = {
+		birth = yes
+	}
+	553.8.23 = {
+		death = yes
+	}
+}
+
+# Bayewei - north of Samarkand
+bayewei_01 = {
+	name = "Ridvan"
+	dynasty = TFE_Bayewei_dynasty
+	religion = tengri_pagan
+	culture = tiele
+	
+	457.10.13 = {
+		birth = yes
+	}
+	510.2.24 = {
+		death = yes
+	}
+}
+bayewei_02 = {
+	name = "Saltuk"
+	dynasty = TFE_Bayewei_dynasty
+	religion = tengri_pagan
+	culture = tiele
+	father=bayewei_01
+
+	503.2.19 = {
+		birth = yes
+	}
+	542.10.31 = {
+		death = yes
+	}
+}
+
+# Keda - north of Samarkand
+keda_01 = {
+	name = "Umur"
+	dynasty = TFE_Keda_dynasty
+	religion = tengri_pagan
+	culture = tiele
+	
+	449.3.15 = {
+		birth = yes
+	}
+	502.1.20 = {
+		death = yes
+	}
+}
+keda_02 = {
+	name = "Savur"
+	dynasty = TFE_Keda_dynasty
+	religion = tengri_pagan
+	culture = tiele
+	father=keda_01
+	
+	489.6.22 = {
+		birth = yes
+	}
+	561.8.29 = {
+		death = yes
+	}
+}
+

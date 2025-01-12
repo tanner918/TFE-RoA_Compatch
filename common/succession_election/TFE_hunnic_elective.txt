@@ -1,0 +1,159 @@
+﻿hunnic_elective = {
+	elector_vote_strength = {
+		base = 10
+		elector_voting_strength_hunnic_elective_modifier = yes
+		modifier = { #Current ruler gets a total of 20.
+			desc = tooltip_elective_current_ruler
+			add = 10
+			this = scope:holder
+		}
+		modifier = { #Imperial Dignity
+			desc = tooltip_feudal_vote_strength_emperor_tier
+			add = 30
+			highest_held_title_tier = 5
+		}
+		modifier = { #Royal Dignity
+			desc = tooltip_feudal_vote_strength_king_tier
+			add = 20
+			highest_held_title_tier = 4
+		}
+		modifier = { #Princely Dignity
+			desc = tooltip_feudal_vote_strength_duke_tier
+			add = 10
+			highest_held_title_tier = 3
+		}
+		modifier = { #Powerful Vassal
+			desc = tooltip_feudal_vote_strength_powerful_vassal
+			add = {
+				value = 10
+				if = { #Additional point if the vassal is more powerful than the current ruler
+					limit = {
+						max_military_strength > scope:holder.max_military_strength
+					}
+					add = 10
+				}
+			}
+			NOT = { this = scope:holder }
+			is_powerful_vassal = yes
+			liege = scope:holder
+		}
+		modifier = { #Regent Influence
+			desc = tooltip_feudal_vote_strength_is_diarch
+			add = 40
+			is_diarch_of_target = scope:holder
+		}
+	}
+	
+	electors = {
+		add = holder
+		#add = {
+		#	type = holder_direct_vassals
+		#	limit = {
+		#		is_powerful_vassal_of = scope:holder #Only Powerful, same culture vassals are potential electors
+		#		highest_held_title_tier > tier_barony
+		#		culture = scope:holder.culture
+		#	}
+		#}
+		add = {
+			type = holder_direct_vassals
+			limit = {
+				highest_held_title_tier > 1
+				#culture = scope:holder.culture
+				OR = {
+					culture = { has_same_culture_heritage = scope:holder.culture }
+					government_has_flag = government_is_nomadic
+					culture = { has_cultural_parameter = hunnic_elective_enabled }
+				}
+				#OR = { #1 tier of difference for Electors.
+				#	AND = {
+				#		scope:title = { tier = tier_duchy }
+				#		highest_held_title_tier > tier_barony
+				#	}
+				#	AND = {
+				#		scope:title = { tier = tier_kingdom }
+				#		highest_held_title_tier > tier_county
+				#	}
+				#	AND = {
+				#		scope:title = { tier = tier_empire }
+				#		highest_held_title_tier > tier_kingdom
+				#	}
+				#}
+			}
+		}
+	}
+
+	candidate_score = {
+		base = 0
+		######################	Elector self-voting pattern	##########################
+		elector_self_voting_pattern_feudal_elective_modifier = yes
+
+		##########################	Holder voting pattern	##########################
+		holder_voting_pattern_feudal_elective_modifier = yes
+
+		##########################	Elector voting patterns (circumstances)	##########################
+		elector_voting_pattern_circumstances_feudal_elective_modifier = yes
+		#elector_voting_pattern_circumstances_saxon_elective_modifier = yes
+		#elector_voting_pattern_circumstances_gothic_elective_modifier = yes
+		elector_voting_pattern_circumstances_hunnic_elective_modifier = yes
+
+		##########################	Elector voting patterns (prestige/piety)	##########################
+		elector_voting_pattern_prestige_piety_feudal_elective_modifier = yes
+
+		##########################	Elector voting patterns (traits)	##########################
+		elector_voting_pattern_traits_feudal_elective_modifier = yes
+
+		##########################	Elector voting patterns (opinion)	##########################
+		elector_voting_pattern_opinion_feudal_elective_modifier = yes
+	}
+	
+	#scope:candidate = Candidate, scope:title = Title, scope:holder_candidate = Candidate currently selected by ruler.
+	candidates = {
+		#add = {
+		#	type = holder_direct_vassals
+		#	limit = {
+		#		is_powerful_vassal_of = scope:holder #Only Powerful, same culture vassals are potential electors
+		#		highest_held_title_tier > 1
+		#		culture = scope:holder.culture
+		#	}
+		#}
+		add = {
+			type = holder_direct_vassals
+			limit = {
+				highest_held_title_tier > 1
+				#culture = scope:holder.culture
+				OR = {
+					culture = { has_same_culture_heritage = scope:holder.culture }
+					government_has_flag = government_is_nomadic
+					culture = { has_cultural_parameter = hunnic_elective_enabled }
+				}
+				#OR = { #1 tier of difference for Candidates.
+				#	AND = {
+				#		scope:title = { tier = tier_duchy }
+				#		highest_held_title_tier > tier_barony
+				#	}
+				#	AND = {
+				#		scope:title = { tier = tier_kingdom }
+				#		highest_held_title_tier > tier_county
+				#	}
+				#	AND = {
+				#		scope:title = { tier = tier_empire }
+				#		highest_held_title_tier > tier_kingdom
+				#	}
+				#}
+			}
+		}
+		add = {
+			type = title_claimants
+			limit = {
+				feudal_elective_potential_landless_claimant_candidate_trigger = yes
+			}
+		}
+		add = {
+			type = holder_close_or_extended_family
+			limit = {
+				#is_child_of = scope:holder #In Saxon Elective filter only the children of the current holder.
+				feudal_elective_potential_landless_dynastic_candidate_trigger = yes
+			}
+		}
+	}
+}

@@ -1,0 +1,324 @@
+﻿post_resources_modifier = {
+	icon = post_resources
+	development_growth = 0.1
+	tax_mult = 0.1
+}
+market_resources_modifier = {
+	icon = market_resources
+	development_growth = 0.2
+	tax_mult = 0.1
+}
+port_resources_modifier = {
+	icon = port_resources
+	development_growth = 0.2
+	tax_mult = 0.2
+}
+
+post1_bonus_modifier = {
+	icon = trade_resources
+	stewardship = 1
+}
+post2_bonus_modifier = {
+	icon = trade_resources
+	stewardship = 2
+}
+post3_bonus_modifier = {
+	icon = trade_resources
+	stewardship = 2
+	diplomacy = 1
+}
+
+market1_bonus_modifier = {
+	icon = trade_resources
+	stewardship = 1
+}
+market2_bonus_modifier = {
+	icon = trade_resources
+	stewardship = 2
+}
+market3_bonus_modifier = {
+	icon = trade_resources
+	stewardship = 2
+	diplomacy = 1
+}
+
+trade1_bonus_modifier = {
+	icon = trade_resources
+	stewardship = 2
+}
+trade2_bonus_modifier = {
+	icon = trade_resources
+	stewardship = 2
+	diplomacy = 1
+}
+trade3_bonus_modifier = {
+	icon = trade_resources
+	stewardship = 3
+	diplomacy = 1
+}
+
+cloth_resources_modifier = {
+	icon = cloth_resources
+}
+
+fur_resources_modifier = {
+	icon = fur_resources
+}
+
+copper_resources_modifier = {
+	icon = copper_resources
+}
+
+iron_resources_modifier = {
+	icon = iron_resources
+}
+
+salt_resources_modifier = {
+	icon = salt_resources
+}
+
+wine_resources_modifier = {
+	icon = wine_resources
+}
+
+wool_resources_modifier = {
+	icon = wool_resources
+}
+
+leather_resources_modifier = {
+	icon = leather_resources
+}
+
+stone_resources_modifier = {
+	icon = stone_resources
+}
+
+wood_resources_modifier = {
+	icon = wood_resources
+}
+
+marble_resources_modifier = {
+	icon = marble_resources
+}
+
+glass_resources_modifier = {
+	icon = glass_resources
+}
+
+dyes_resources_modifier = {
+	icon = dyes_resources
+}
+
+silk_resources_modifier = {
+	icon = silk_resources
+}
+
+cotton_resources_modifier = {
+	icon = cotton_resources
+}
+
+amber_resources_modifier = {
+	icon = amber_resources
+}
+
+cloth_resources2_modifier = {
+	icon = cloth_resources
+	monthly_prestige_gain_mult = 0.05
+}
+cloth_resources3_modifier = {
+	icon = cloth_resources
+	monthly_prestige_gain_mult = 0.1
+}
+cloth_resources4_modifier = {
+	icon = cloth_resources
+	monthly_prestige_gain_mult = 0.15
+}
+
+fur_resources2_modifier = {
+	icon = fur_resources
+	monthly_prestige_gain_mult = 0.05
+}
+fur_resources3_modifier = {
+	icon = fur_resources
+	monthly_prestige_gain_mult = 0.1
+}
+fur_resources4_modifier = {
+	icon = fur_resources
+	monthly_prestige_gain_mult = 0.15
+}
+
+copper_resources2_modifier = {
+	icon = copper_resources
+	monthly_income_mult = 0.05
+	
+}
+copper_resources3_modifier = {
+	icon = copper_resources
+	monthly_income_mult = 0.1
+}
+
+iron_resources2_modifier = {
+	icon = iron_resources
+	heavy_cavalry_damage_mult = 0.02
+	heavy_infantry_damage_mult = 0.02
+	pikemen_damage_mult = 0.02
+}
+iron_resources3_modifier = {
+	icon = iron_resources
+	heavy_cavalry_damage_mult = 0.05
+	heavy_infantry_damage_mult = 0.05
+	pikemen_damage_mult = 0.05
+}
+
+salt_resources2_modifier = {
+	icon = salt_resources
+	county_opinion_add = 5
+}
+salt_resources3_modifier = {
+	icon = salt_resources
+	county_opinion_add = 10
+}
+
+wine_resources2_modifier = {
+	icon = wine_resources
+	direct_vassal_opinion = 5
+}
+wine_resources3_modifier = {
+	icon = wine_resources
+	direct_vassal_opinion = 5
+}
+wine_resources4_modifier = {
+	icon = wine_resources
+	direct_vassal_opinion = 10
+	religious_vassal_opinion = 5
+}
+
+wool_resources2_modifier = {
+	icon = wool_resources
+	tax_mult = 0.02 
+}
+wool_resources3_modifier = {
+	icon = wool_resources
+	tax_mult = 0.05 
+}
+wool_resources4_modifier = {
+	icon = wool_resources
+	tax_mult = 0.1 
+}
+
+cotton_resources2_modifier = {
+	icon = cotton_resources
+	tax_mult = 0.02 
+}
+cotton_resources3_modifier = {
+	icon = cotton_resources
+	tax_mult = 0.05 
+}
+cotton_resources4_modifier = {
+	icon = cotton_resources
+	tax_mult = 0.1 
+}
+
+leather_resources2_modifier = {
+	icon = leather_resources
+	archers_toughness_mult = 0.02
+	skirmishers_toughness_mult = 0.02
+	light_cavalry_toughness_mult = 0.02
+}
+leather_resources3_modifier = {
+	icon = leather_resources
+	archers_toughness_mult = 0.05
+	skirmishers_toughness_mult = 0.05
+	light_cavalry_toughness_mult = 0.05
+}
+
+stone_resources2_modifier = {
+	icon = stone_resources
+	holding_build_gold_cost = -0.05
+	build_gold_cost = -0.05
+}
+stone_resources3_modifier = {
+	icon = stone_resources
+	holding_build_gold_cost = -0.1
+	build_gold_cost = -0.1
+}
+
+wood_resources2_modifier = {
+	icon = wood_resources
+	holding_build_speed = -0.05
+	build_speed = -0.05
+}
+wood_resources3_modifier = {
+	icon = wood_resources
+	holding_build_speed = -0.1
+	build_speed = -0.1
+}
+
+marble_resources2_modifier = {
+	icon = marble_resources
+	monthly_dynasty_prestige_mult = 0.05
+}
+marble_resources3_modifier = {
+	icon = marble_resources
+	monthly_dynasty_prestige_mult = 0.1
+}
+
+amber_resources2_modifier = {
+	icon = amber_resources
+	monthly_dynasty_prestige_mult = 0.05
+}
+amber_resources3_modifier = {
+	icon = amber_resources
+	monthly_dynasty_prestige_mult = 0.1
+}
+amber2_resources2_modifier = {
+	icon = amber_resources
+	monthly_dynasty_prestige_mult = 0.05
+	monthly_income = -2
+}
+
+glass_resources2_modifier = {
+	icon = glass_resources
+	monthly_piety_gain_mult = 0.05
+}
+glass_resources3_modifier = {
+	icon = glass_resources
+	monthly_piety_gain_mult = 0.1
+}
+glass2_resources2_modifier = {
+	icon = glass_resources
+	monthly_piety_gain_mult = 0.05
+	monthly_income = -1
+}
+
+dyes_resources2_modifier = {
+	icon = dyes_resources
+	monthly_prestige_gain_mult = 0.05
+}
+dyes_resources3_modifier = {
+	icon = dyes_resources
+	monthly_prestige_gain_mult = 0.1
+	monthly_income_mult = 0.05
+}
+dyes2_resources2_modifier = {
+	icon = dyes_resources
+	monthly_prestige_gain_mult = 0.05
+	monthly_income = -1
+}
+
+
+silk_resources2_modifier = {
+	icon = silk_resources
+	monthly_prestige_gain_mult = 0.1
+	monthly_income_mult = 0.05
+}
+silk_resources3_modifier = {
+	icon = silk_resources
+	monthly_prestige_gain_mult = 0.15
+	monthly_income_mult = 0.1
+}
+silk2_resources2_modifier = {
+	icon = silk_resources
+	monthly_prestige_gain_mult = 0.1
+	monthly_income = -2
+}

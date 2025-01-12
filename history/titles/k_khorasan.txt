@@ -1,0 +1,1196 @@
+﻿k_khorasan = {
+	361.1.1 = {	change_development_level = 3 }
+	476.1.1 = {	change_development_level = 4 }
+	532.1.1 = {	change_development_level = 5 }
+	632.1.1 = {	change_development_level = 6 }
+	768.1.1 = {	change_development_level = 7 }
+
+}
+d_nishapur = {
+	361.1.1 = {	change_development_level = 4 }
+	476.1.1 = {	change_development_level = 5 }
+	532.1.1 = {	change_development_level = 6 }
+	632.1.1 = {	change_development_level = 7 }
+	768.1.1 = {	change_development_level = 8 }
+	361.1.1 = {
+		holder = khorasan_07
+		government = eranshar_government
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = khorasan_08
+	}
+	476.1.1 = {
+		holder = khorasan_09
+	}
+	499.7.6 = {
+		holder = khorasan_22
+	}
+}
+
+
+c_nishapur = {
+	361.1.1 = {	change_development_level = 6 }
+	476.1.1 = {	change_development_level = 7 }
+	532.1.1 = {	change_development_level = 8 }
+	632.1.1 = {	change_development_level = 9 }
+	768.1.1 = {	change_development_level = 10 }
+
+	361.1.1 = {
+		holder = khorasan_07
+		government = eranshar_government
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = khorasan_08
+	}
+	476.1.1 = {
+		holder = khorasan_09
+	}
+	499.7.6 = {
+		holder = khorasan_22
+	}
+	650.1.1 = {
+		liege = d_merv
+	}
+	
+	768.1.1 = {
+		holder = 188602 # Homayd ibn Qahtaba
+	}
+}
+
+
+c_tus = {
+	361.1.1 = {
+		holder = khorasan_10
+		government = eranshar_government
+		liege = d_nishapur
+	}
+	395.1.1 = {
+		holder = khorasan_11
+	}
+	476.1.1 = {
+		holder = khorasan_12
+	}
+	499.7.6 = {
+		holder = khorasan_22
+	}
+	532.1.1 = {
+		holder = parthian_12
+	}
+	650.1.1 = {
+		liege = d_merv
+	}
+	
+	768.1.1 = {
+		holder = 188690 # fictitious assignment
+	}
+
+}
+
+
+c_samaiqan = {
+	361.1.1 = {
+		holder = khorasan_10
+		government = eranshar_government
+		liege = d_nishapur
+	}
+	395.1.1 = {
+		holder = khorasan_11
+	}
+	476.1.1 = {
+		holder = khorasan_12
+	}
+	499.7.6 = {
+		holder = khorasan_22
+	}
+	532.1.1 = {
+		holder = parthian_13
+	}
+	650.1.1 = {
+		liege = d_merv
+	}
+	
+	768.1.1 = {
+		holder = 188602 # Homayd ibn Qahtaba
+	}
+}
+
+
+c_juwain = {
+	361.1.1 = {
+		holder = khorasan_10
+		government = eranshar_government
+		liege = d_nishapur
+	}
+	395.1.1 = {
+		holder = khorasan_11
+	}
+	476.1.1 = {
+		holder = khorasan_12
+	}
+		499.7.6 = {
+		holder = khorasan_22
+	}
+	650.1.1 = {
+		liege = d_merv
+	}
+	
+	768.1.1 = {
+		holder = 188602 # Homayd ibn Qahtaba
+	}
+	
+	
+}
+
+
+c_baihaq = {
+	361.1.1 = {	change_development_level = 1 }
+	532.1.1 = {	change_development_level = 2 }
+	768.1.1 = {	change_development_level = 3 }
+	361.1.1 = {
+		holder = khorasan_07
+		government = eranshar_government
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = khorasan_08
+	}
+	476.1.1 = {
+		holder = khorasan_09
+	}
+	#499.7.6 = {
+	#	holder = khorasan_09
+	#}
+	650.1.1 = {
+		liege = d_merv
+	}
+	
+	768.1.1 = {
+		holder = 188602 # Homayd ibn Qahtaba
+	}
+	
+}
+
+c_damghan = {
+	361.1.1 = {
+		holder = khorasan_07
+		government = eranshar_government
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = khorasan_08
+	}
+	476.1.1 = {
+		holder = khorasan_09
+	}
+	#499.7.6 = {
+	#	holder = khorasan_09
+	#}	
+	532.1.1 = {
+		holder = parthian_14
+		liege = d_nishapur
+	}
+	650.1.1 = {
+		liege = d_merv
+	}
+	
+	768.1.1 = {
+		holder = 188602 # Homayd ibn Qahtaba
+	}
+}
+
+
+d_merv = {
+	### Sasanian Dynasty
+	230.1.1 = {
+		holder = sassanid_12 #Adreshir Mervshah
+		government = eranshar_government
+		liege = e_persia
+	}
+	361.1.1 = {
+		holder = kushano_sassanid_02 # Kushano-sassanians
+		liege = k_kabulistan
+	}
+	395.1.1 = {
+		holder = khorasan_02
+		liege = e_persia
+	}
+	476.1.1 = {
+		holder = khorasan_03
+	}
+	484.1.1 = {
+		holder = hephthalite_004
+		government = nomadic_government
+		liege = "e_hephthalite"
+	}
+	505.5.5 = {
+		holder = hephthalite_006
+	}
+	530.1.1 = {
+		holder = hephthalite_misc_017
+	}
+	# 554.3.21 = {
+	# 	holder = hephthalite_007
+	# }
+}
+
+
+c_merv = {
+	361.1.1 = {	change_development_level = 6 }
+	476.1.1 = {	change_development_level = 7 }
+	532.1.1 = {	change_development_level = 8 }
+	632.1.1 = {	change_development_level = 9 }
+	768.1.1 = {	change_development_level = 10 }
+	361.1.1 = {
+		holder = kushano_sassanid_02 # Kushano-sassanians
+		government = eranshar_government
+		liege = d_merv
+	}
+	395.1.1 = {
+		holder = khorasan_02
+	}
+	476.1.1 = {
+		holder = khorasan_03
+	}
+	650.1.1 = {
+		liege = d_merv
+	}
+	
+	768.1.1 = {
+		holder = 188602 # Homayd ibn Qahtaba
+	}
+	
+	
+}
+
+
+c_sarakhs = {
+	361.1.1 = {
+		holder = khorasan_01
+		government = eranshar_government
+		liege = d_merv
+	}
+	395.1.1 = {
+		holder = marcionite_iranian_01
+	}
+	476.1.1 = {
+		holder = marcionite_iranian_02
+	}
+	532.1.1 = {
+		holder = parthian_10
+		liege = d_merv
+	}
+	# 650.1.1 = {
+	# 	liege = d_merv
+	# }
+	
+	768.1.1 = {
+		holder = 188602 # Homayd ibn Qahtaba
+	}
+	
+	
+}
+
+
+c_marvarrud = {
+	361.1.1 = {	change_development_level = 4 }
+	476.1.1 = {	change_development_level = 5 }
+	532.1.1 = {	change_development_level = 6 }
+	632.1.1 = {	change_development_level = 7 }
+	768.1.1 = {	change_development_level = 8 }
+	361.1.1 = {
+		holder = khorasan_04
+		government = eranshar_government
+		liege = d_merv
+	}
+	395.1.1 = {
+		holder = khorasan_05
+	}
+	476.1.1 = {
+		holder = khorasan_06
+	}
+	650.1.1 = {
+		liege = d_merv
+	}
+	
+	768.1.1 = {
+		holder = 188602 # Homayd ibn Qahtaba
+	}
+	
+	
+}
+
+
+c_rivsharan = {
+	361.1.1 = {
+		holder = khorasan_04
+		government = eranshar_government
+		liege = d_merv
+	}
+	395.1.1 = {
+		holder = khorasan_05
+	}
+	476.1.1 = {
+		holder = khorasan_06
+	}
+	532.1.1 = {
+		holder = hephthalite_misc_021
+	}
+	
+	650.1.1 = {
+		liege = d_merv
+	}
+	
+	768.1.1 = {
+		holder = 188602 # Homayd ibn Qahtaba
+	}
+	
+	
+}
+
+
+c_guzgan = {
+	361.1.1 = {
+		holder = khorasan_04
+		government = eranshar_government
+		liege = d_merv
+	}
+	395.1.1 = {
+		holder = khorasan_05
+	}
+	442.1.2 = {
+		holder = hephthalite_003
+		government = nomadic_government
+		liege = "e_hephthalite"
+	}
+	456.10.12 = {
+		holder = hephthalite_004
+	}
+	# Conquest by Hephthalites
+	480.1.1 = {
+		liege = "d_merv"
+	}
+	505.5.5 = {
+		holder = hephthalite_006
+	}
+	532.1.1 = {
+		holder = hephthalite_007
+	}
+	650.1.1 = {
+		liege = d_merv
+	}
+	
+	768.1.1 = {
+		holder = 188602 # Homayd ibn Qahtaba
+	}
+	
+	
+}
+
+
+c_amol = {
+	361.1.1 = {
+		holder = sogdian_misc_022
+		government = eranshar_government
+		liege = d_merv
+	}
+	395.1.1 = {
+		holder = khorasan_02
+		liege = e_persia
+	}
+	# Conquest by Hephthalites
+	442.1.2 = {
+		holder = hephthalite_003
+		government = nomadic_government
+		liege = "e_hephthalite"
+	}
+	456.10.12 = {
+		holder = hephthalite_004
+	}
+	480.1.1 = {
+		liege = "d_merv"
+		liege = "e_hephthalite"
+	}
+	505.5.5 = {
+		holder = hephthalite_006
+	}
+	532.1.1 = {
+		holder = sogdian_misc_023
+	}
+	650.1.1 = {
+		liege = d_merv
+	}
+	
+	768.1.1 = {
+		holder = 188602 # Homayd ibn Qahtaba
+	}
+	
+	
+}
+
+
+c_zamm = {
+	361.1.1 = {
+		holder = kushano_sassanid_02
+		government = eranshar_government
+		liege = d_merv
+	}
+	395.1.1 = {
+		holder = khorasan_02
+		liege = e_persia
+	}
+	442.1.2 = {
+		holder = hephthalite_003
+		government = nomadic_government
+		liege = "e_hephthalite"
+	}
+	456.10.12 = {
+		holder = hephthalite_004
+	}
+	# Conquest by Hephthalites
+	480.1.1 = {
+		liege = "d_merv"
+	}
+	505.5.5 = {
+		holder = hephthalite_006
+	}
+	532.1.1 = {
+		holder = hephthalite_misc_029
+		liege = "e_hephthalite"
+	}	
+	650.1.1 = {
+		liege = d_merv
+	}
+	
+	768.1.1 = {
+		holder = 188602 # Homayd ibn Qahtaba
+	}
+	
+	
+}
+
+
+d_ghur = {
+	361.1.1 = {	change_development_level = 1 }
+	532.1.1 = {	change_development_level = 2 }
+	768.1.1 = {	change_development_level = 3 }
+	361.1.1 = {
+		holder = khorasan_13
+		government = eranshar_government
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = khorasan_14
+	}
+	476.1.1 = {
+		holder = nezak_016
+		government = feudal_government
+		liege = k_nezak_hun
+	}
+	500.8.25 = {
+		holder = nezak_005
+	}
+	507.10.29 = {
+		holder = nezak_006
+	}
+	510.11.12 = {
+		holder = nezak_007
+	}
+	531.1.3 = {
+		holder = nezak_008
+	}
+	582.5.28 = {
+		holder = nezak_009
+	}
+	586.3.24 = {
+		holder = nezak_010
+	}
+	592.9.18 = {
+		holder = nezak_011
+	}
+	613.1.24 = {
+		holder = nezak_012
+	}
+	618.4.7 = {
+		holder = nezak_013
+	}
+	625.4.2 = {
+		holder = nezak_014
+	}
+	631.12.30 = {
+		holder = nezak_015
+		liege = 0
+	}
+}
+
+
+c_ghur = {
+	361.1.1 = {	change_development_level = 3 }
+	476.1.1 = {	change_development_level = 4 }
+	532.1.1 = {	change_development_level = 5 }
+	632.1.1 = {	change_development_level = 6 }
+	768.1.1 = {	change_development_level = 7 }
+	361.1.1 = {
+		holder = khorasan_13
+		government = eranshar_government
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = khorasan_14
+	}
+	476.1.1 = {
+		holder = nezak_016
+		government = feudal_government
+		liege = k_nezak_hun
+	}
+	500.8.25 = {
+		holder = nezak_005
+	}
+	507.10.29 = {
+		holder = nezak_006
+	}
+	510.11.12 = {
+		holder = nezak_007
+	}
+	531.1.3 = {
+		holder = nezak_008
+	}
+	532.1.1 = {
+		holder = bactrian_misc_016
+	}
+	582.5.28 = {
+		holder = nezak_009
+	}
+	586.3.24 = {
+		holder = nezak_010
+	}
+	592.9.18 = {
+		holder = nezak_011
+	}
+	613.1.24 = {
+		holder = nezak_012
+	}
+	618.4.7 = {
+		holder = nezak_013
+	}
+	625.4.2 = {
+		holder = nezak_014
+	}
+	631.12.30 = {
+		holder = nezak_015
+		liege = 0
+	}
+
+}
+
+
+c_darmashan = {
+	361.1.1 = {
+		holder = khorasan_13
+		government = eranshar_government
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = khorasan_14
+	}
+	476.1.1 = {
+		holder = nezak_016
+		government = feudal_government
+		liege = k_nezak_hun
+	}
+	500.8.25 = {
+		holder = nezak_005
+	}
+	507.10.29 = {
+		holder = nezak_006
+	}
+	510.11.12 = {
+		holder = nezak_007
+	}
+	531.1.3 = {
+		holder = nezak_008
+	}
+	532.1.1 = {
+		holder = bactrian_misc_015
+	}
+	582.5.28 = {
+		holder = nezak_009
+	}
+	586.3.24 = {
+		holder = nezak_010
+	}
+	592.9.18 = {
+		holder = nezak_011
+	}
+	613.1.24 = {
+		holder = nezak_012
+	}
+	618.4.7 = {
+		holder = nezak_013
+	}
+	625.4.2 = {
+		holder = nezak_014
+	}
+	631.12.30 = {
+		holder = nezak_015
+		liege = 0
+	}
+
+}
+
+
+c_upper_ghur = {
+	361.1.1 = {
+		holder = pactyan_001
+		government = eranshar_government
+		liege = d_ghur
+	}
+	395.1.1 = {
+		holder = pactyan_002
+	}
+	476.1.1 = {
+		holder = pactyan_003
+		government = feudal_government
+		#liege = k_nezak_hun
+	}
+	500.8.25 = {
+		holder = nezak_005
+	}
+	507.10.29 = {
+		holder = nezak_006
+	}
+	510.11.12 = {
+		holder = nezak_007
+	}
+	531.1.3 = {
+		holder = nezak_008
+	}
+	532.1.1 = {
+		holder = bactrian_misc_017
+	}
+	582.5.28 = {
+		holder = nezak_009
+	}
+	586.3.24 = {
+		holder = nezak_010
+	}
+	592.9.18 = {
+		holder = nezak_011
+	}
+	613.1.24 = {
+		holder = nezak_012
+	}
+	618.4.7 = {
+		holder = nezak_013
+	}
+	625.4.2 = {
+		holder = nezak_014
+	}
+	631.12.30 = {
+		holder = nezak_015
+		liege = 0
+	}
+
+}
+
+
+d_herat = {
+	361.1.1 = {	change_development_level = 2 }
+	768.1.1 = {	change_development_level = 3 }
+	270.1.1 = {
+		holder = varaz_1
+		liege = e_persia
+		government = eranshar_government
+	}
+	310.2.2 = {
+		holder = varaz_3
+	}
+	374.12.8 = {
+		holder = varaz_6
+	}
+	393.6.2 = {
+		holder = varaz_23
+	}
+	415.2.13 = {
+		holder = varaz_26
+	}
+	431.12.18 = {
+		holder = varaz_30
+	}
+	# Conquest by Hephthalites
+	484.1.1 = {
+		holder = hephthalite_004
+		government = nomadic_government
+		liege = "e_hephthalite"
+	}
+	505.5.5 = {
+		holder = hephthalite_006
+	}
+	530.1.1 = {
+		holder = hephthalite_misc_017
+	}
+	# 554.3.21 = {
+	# 	holder = hephthalite_007
+	# }
+}
+
+
+c_herat = {
+	361.1.1 = {	change_development_level = 4 }
+	476.1.1 = {	change_development_level = 5 }
+	532.1.1 = {	change_development_level = 6 }
+	632.1.1 = {	change_development_level = 7 }
+	768.1.1 = {	change_development_level = 8 }
+	270.1.1 = {
+		holder = varaz_1
+		liege = e_persia
+		government = eranshar_government
+	}
+	310.2.2 = {
+		holder = varaz_3
+	}
+	374.12.8 = {
+		holder = varaz_6
+	}
+	393.6.2 = {
+		holder = varaz_23
+	}
+	415.2.13 = {
+		holder = varaz_26
+	}
+	431.12.18 = {
+		holder = varaz_30
+	}
+	532.1.1 = {
+		holder = hephthalite_misc_020
+		liege = d_merv
+	}
+	760.1.1 = {
+		holder = 188688 # Ruzaiq Tahirid
+		liege = d_herat
+	}
+	
+}
+
+
+c_bakharz = {
+	361.1. = {
+		holder = parthian_03
+		liege = d_herat
+		government = eranshar_government
+	}
+	395.1.1 = {
+		holder = parthian_04
+	}
+	476.1.1 = {
+		holder = parthian_05
+	}
+	# 270.1.1 = {
+	# 	holder = varaz_1
+	# 	liege = e_persia
+	# 	government = eranshar_government
+	# }
+	# 310.2.2 = {
+	# 	holder = varaz_3
+	# }
+	# 374.12.8 = {
+	# 	holder = varaz_6
+	# }
+	# 393.6.2 = {
+	# 	holder = varaz_23
+	# }
+	# 415.2.13 = {
+	# 	holder = varaz_26
+	# }
+	# 431.12.18 = {
+	# 	holder = varaz_30
+	# }
+	532.1.1 = {
+		holder = parthian_11
+		liege = d_merv
+	}
+	760.1.1 = {
+		holder = 188688 # Ruzaiq Tahirid
+		liege = d_herat
+	}
+
+}
+
+
+c_badghis = {
+	361.1. = {
+		holder = parthian_06
+		liege = d_herat
+		government = eranshar_government
+	}
+	395.1.1 = {
+		holder = parthian_07
+	}
+	476.1.1 = {
+		holder = parthian_08
+	}
+	# 270.1.1 = {
+	# 	holder = varaz_1
+	# 	liege = e_persia
+	# 	government = eranshar_government
+	# }
+	# 310.2.2 = {
+	# 	holder = varaz_3
+	# }
+	# 374.12.8 = {
+	# 	holder = varaz_6
+	# }
+	# 393.6.2 = {
+	# 	holder = varaz_23
+	# }
+	# 415.2.13 = {
+	# 	holder = varaz_26
+	# }
+	# 431.12.18 = {
+	# 	holder = varaz_30
+	# }
+	532.1.1 = {
+		holder = parthian_10
+		liege = d_merv
+	}
+	760.1.1 = {
+		holder = 188688 # Ruzaiq Tahirid
+		liege = d_herat
+	}
+
+}
+
+
+c_sabzevar = {
+	
+	361.1.1 = {	change_development_level = 1 }
+	476.1.1 = {	change_development_level = 2 }
+	532.1.1 = {	change_development_level = 3 }
+	632.1.1 = {	change_development_level = 4 }
+	768.1.1 = {	change_development_level = 5 }
+	270.1.1 = {
+		holder = varaz_1
+		liege = e_persia
+		government = eranshar_government
+	}
+	310.2.2 = {
+		holder = varaz_3
+	}
+	374.12.8 = {
+		holder = varaz_6
+	}
+	393.6.2 = {
+		holder = varaz_23
+	}
+	415.2.13 = {
+		holder = varaz_26
+	}
+	431.12.18 = {
+		holder = varaz_30
+	}
+	532.1.1 = {
+		holder = hephthalite_misc_020
+		liege = d_merv
+	}
+	760.1.1 = {
+		holder = 188688 # Ruzaiq Tahirid
+		liege = d_herat
+	}
+
+}
+
+
+c_zirkuh = {
+	270.1.1 = {
+		holder = varaz_1
+		liege = e_persia
+		government = eranshar_government
+	}
+	310.2.2 = {
+		holder = varaz_3
+	}
+	374.12.8 = {
+		holder = varaz_6
+	}
+	393.6.2 = {
+		holder = varaz_23
+	}
+	415.2.13 = {
+		holder = varaz_26
+	}
+	431.12.18 = {
+		holder = varaz_30
+	}
+	532.1.1 = {
+		holder = parthian_11
+		liege = d_merv
+	}
+	760.1.1 = {
+		holder = 188688 # Ruzaiq Tahirid
+		liege = d_herat
+	}
+
+}
+
+d_balkh = {
+	361.1.1 = {	change_development_level = 3 }
+	476.1.1 = {	change_development_level = 4 }
+	532.1.1 = {	change_development_level = 5 }
+	632.1.1 = {	change_development_level = 6 }
+	768.1.1 = {	change_development_level = 7 }
+
+	361.1.1 = {
+		holder = alchonid_001
+		government = nomadic_government
+		liege = "k_kidaria"
+	}
+	442.1.1 = {
+		holder = hephthalite_003
+		liege = "e_hephthalite"
+	}
+	456.10.12 = {
+		holder = hephthalite_004
+	}
+	505.5.5 = {
+		holder = hephthalite_006
+	}
+	532.1.1 = {
+		holder = hephthalite_007
+	}
+}
+
+c_balkh = {
+	361.1.1 = {	change_development_level = 8 }
+	476.1.1 = {	change_development_level = 10 }
+	532.1.1 = {	change_development_level = 12 }
+	632.1.1 = {	change_development_level = 14 }
+	768.1.1 = {	change_development_level = 16 }
+	340.1.1 = {
+		holder = xionite_005
+		government = nomadic_government 
+	}
+	360.3.9 = {
+		holder = xionite_001
+		liege = "k_kidaria"
+	}
+	422.6.17 = {
+		holder = xionite_018
+	}
+	431.4.17 = {
+		holder = xionite_019
+	}
+	442.1.1 = {
+		holder = hephthalite_003 
+		liege = "e_hephthalite"
+	}
+	456.10.12 = {
+		holder = hephthalite_004
+	}
+	505.5.5 = {
+		holder = hephthalite_006
+	}
+	532.1.1 = {
+		holder = hephthalite_007
+	}
+	663.1.1 = {
+		liege = d_merv
+	}
+	671.1.1 = {
+		liege = 0 # Nazak Tarkhan's rule
+	}
+	715.1.1 = {
+		liege = d_merv
+	}
+	
+	737.1.1 = {
+		holder = 188637 # Saman-Khuda Samanid
+	}
+}
+
+
+c_west-tokharestan = {
+	# Kingdom of Rob
+	361.1.1 = {
+		holder = hephthalite_misc_011
+		government = trade_city_state_government
+		liege = d_balkh
+	}
+	399.1.1 = {
+		holder = hephthalite_misc_014
+	}
+	442.12.19 = {
+		holder = hephthalite_misc_015
+		liege = k_alchon_hun
+	}
+	458.7.5 = {
+		holder = hephthalite_misc_008
+	}
+	505.5.5 = {
+		liege = e_hephthalite
+	}
+	517.5.6 = {
+		holder = hephthalite_misc_009
+	}
+
+	663.1.1 = {
+		liege = d_merv
+	}
+	671.1.1 = {
+		liege = 0 # Nazak Tarkhan's rule
+	}
+	715.1.1 = {
+		liege = d_merv
+	}
+	
+	737.1.1 = {
+		holder = 188637 # Saman-Khuda Samanid
+	}
+}
+
+
+c_east-tokharestan = {
+	361.1.1 = {	change_development_level = 3 }
+	476.1.1 = {	change_development_level = 4 }
+	532.1.1 = {	change_development_level = 5 }
+	632.1.1 = {	change_development_level = 6 }
+	768.1.1 = {	change_development_level = 7 }
+
+	395.1.1 = {
+		holder = xionite_015 
+	}
+	663.1.1 = {
+		liege = d_merv
+	}
+	671.1.1 = {
+		liege = 0 # Nazak Tarkhan's rule
+	}
+	715.1.1 = {
+		liege = d_merv
+	}
+	
+	737.1.1 = {
+		holder = 188637 # Saman-Khuda Samanid
+	}
+}
+
+d_nasa = {
+	361.1.1 = {	change_development_level = 1 }
+	532.1.1 = {	change_development_level = 2 }
+	768.1.1 = {	change_development_level = 3 }
+	
+}
+
+c_abivard = {
+	361.1.1 = {
+		holder = khorasan_16
+		government = eranshar_government
+		de_jure_liege = d_merv
+		liege = d_merv
+	}
+	395.1.1 = {
+		holder = khorasan_17
+	}
+	476.1.1 = {
+		holder = khorasan_18
+	}
+	532.1.1 = {
+		holder = parthian_09
+		liege = d_merv
+	}
+	# 650.1.1 = {
+	# 	liege = d_merv
+	# }
+	
+	768.1.1 = {
+		holder = 188602 # Homayd ibn Qahtaba
+	}
+
+}
+
+
+c_farava = {
+	361.1.1 = {
+		holder = khorasan_16
+		government = eranshar_government
+		de_jure_liege = d_merv
+		liege = d_merv
+	}
+	395.1.1 = {
+		holder = khorasan_17
+	}
+	476.1.1 = {
+		holder = khorasan_18
+	}
+	532.1.1 = {
+		holder = parthian_09
+		liege = d_merv
+	}
+	# 650.1.1 = {
+	# 	liege = d_merv
+	# }
+	
+	768.1.1 = {
+		holder = 188602 # Homayd ibn Qahtaba
+	}
+	
+	
+
+}
+
+
+d_kohestan = {
+	361.1.1 = {	change_development_level = 1 }
+	532.1.1 = {	change_development_level = 2 }
+	768.1.1 = {	change_development_level = 3 }
+}
+
+c_qain = {
+	361.1.1 = {
+		holder = khorasan_19
+		government = eranshar_government
+		de_jure_liege = d_nishapur
+		liege = d_nishapur
+	}
+	395.1.1 = {
+		holder = khorasan_20
+	}
+	476.1.1 = {
+		holder = khorasan_21
+	}
+	650.1.1 = {
+		liege = d_merv
+	}
+	
+	768.1.1 = {
+		holder = 188602 # Homayd ibn Qahtaba
+	}
+	
+	
+
+}
+
+
+c_tun = {
+	361.1.1 = {
+		holder = khorasan_19
+		government = eranshar_government
+		de_jure_liege = d_nishapur
+		liege = d_nishapur
+	}
+	395.1.1 = {
+		holder = khorasan_20
+	}
+	476.1.1 = {
+		holder = khorasan_21
+	}
+	650.1.1 = {
+		liege = d_merv
+	}
+	
+	768.1.1 = {
+		holder = 188602 # Homayd ibn Qahtaba
+	}
+	
+}
+

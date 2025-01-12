@@ -1,0 +1,467 @@
+﻿k_spanish_galicia = {
+	867.1.1 = { change_development_level = 5 }
+	de_jure_liege = e_spain
+}
+
+d_porto = {
+	### Suebic Kingdom
+	400.1.1 = {
+		government = tribal_government
+		liege = 0
+		de_jure_liege = k_spanish_galicia
+	}
+	406.1.1 = {
+		holder = quadi_04 # Hermenerich, First King, Abdicated and Died later
+	}
+	438.1.1 = {
+		holder = 999601 # Rechila, son of Hermerich
+	}
+	448.1.1 = {
+		holder = 999603 # Rechiar, son of Rechila
+	}
+	456.1.1 = {
+		holder = suevi_01 # Agiulf, Gothic Usurper 
+	}
+	457.1.1 = {
+		holder = maldras_02 # Maldras, Usurper
+	}
+	460.1.1 = {
+		holder = maldras_03 # Rechimund, son of Maldra
+	}
+	463.1.1 = {
+		holder = maldras_04 # Frumar, son of Maldra
+	}
+	464.1.1 = {
+		holder = maldras_05 # Remismund, son of Maldra
+	}
+	469.1.1 = {
+		holder = maldras_06 # Hermenerich, son of Maldra
+	}
+	532.1.1 = {
+		holder = theodemund_the_unknown
+	}
+}
+
+c_porto = {
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = d_galicia
+		liege = d_galicia
+	}
+	361.1.1 = {
+		holder = galicia_01
+	}
+	395.1.1 = {
+		holder = galicia_02 
+	}
+	### Suebic Kingdom
+	400.1.1 = {
+		government = tribal_government
+		liege = 0
+		de_jure_liege = d_porto
+	}
+	406.1.1 = {
+		holder = quadi_04 # Hermenerich, First King, Abdicated and Died later
+	}
+	438.1.1 = {
+		holder = 999601 # Rechila, son of Hermerich
+	}
+	448.1.1 = {
+		holder = 999603 # Rechiar, son of Rechila
+	}
+	456.1.1 = {
+		holder = suevi_01 # Agiulf, Gothic Usurper 
+	}
+	457.1.1 = {
+		holder = maldras_02 # Maldras, Usurper
+	}
+	460.1.1 = {
+		holder = maldras_03 # Rechimund, son of Maldra
+	}
+	463.1.1 = {
+		holder = maldras_04 # Frumar, son of Maldra
+	}
+	464.1.1 = {
+		holder = maldras_05 # Remismund, son of Maldra
+	}
+	469.1.1 = {
+		holder = maldras_06 # Hermenerich, son of Maldra
+	}
+}
+
+
+c_braganza = {
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = d_galicia
+		liege = d_galicia
+	}
+	361.1.1 = {
+		holder = galicia_01
+	}
+	395.1.1 = {
+		holder = galicia_02 
+	}
+	### Suebic Kingdom
+	400.1.1 = {
+		government = tribal_government
+		liege = 0
+		de_jure_liege = d_porto
+	}
+	406.1.1 = {
+		holder = quadi_04 # Hermenerich, First King, Abdicated and Died later
+	}
+	438.1.1 = {
+		holder = 999601 # Rechila, son of Hermerich
+	}
+	448.1.1 = {
+		holder = 999603 # Rechiar, son of Rechila
+	}
+	456.1.1 = {
+		holder = suevi_01 # Agiulf, Gothic Usurper 
+	}
+	457.1.1 = {
+		holder = maldras_02 # Maldras, Usurper
+	}
+	460.1.1 = {
+		holder = maldras_03 # Rechimund, son of Maldra
+	}
+	463.1.1 = {
+		holder = maldras_04 # Frumar, son of Maldra
+	}
+	464.1.1 = {
+		holder = maldras_05 # Remismund, son of Maldra
+	}
+	469.1.1 = {
+		holder = maldras_06 # Hermenerich, son of Maldra
+	}
+}
+
+d_galicia = {
+	# Diocletian Division
+	200.1.1 = {
+		de_jure_liege = k_hispania
+		liege = k_hispania
+	}
+	360.1.1 = {
+		holder = galicia_01
+	}
+	395.1.1 = {
+		holder = galicia_02 
+	}
+	476.1.1 = {
+		de_jure_liege = k_spanish_galicia
+	}
+	532.1.1 = {
+		holder = theodemund_the_unknown
+	}
+	741.1.1 = {
+		holder = 70011 # Duke Fruela Pérez of Cantabria
+		liege = k_asturias
+	}
+	757.1.1 = {
+		holder = 0
+	}
+}
+
+c_coruna = {
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = d_galicia
+		liege = d_galicia
+	}
+	361.1.1 = {
+		holder = galicia_03
+	}
+	395.1.1 = {
+		holder = galicia_04 
+	}
+	# Suebic Kingdom
+	460.1.1 = {
+		holder = galicia_10 # Independent Olisipo
+		liege = d_porto
+		government = tribal_government
+		de_jure_liege = d_galicia
+	}
+	532.1.1 = {
+		holder = gallaecian_001
+	}
+}
+
+c_santiago = {
+	867.1.1 = { change_development_level = 7 }
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = d_galicia
+		liege = d_galicia
+	}
+	361.1.1 = {
+		holder = galicia_03
+	}
+	395.1.1 = {
+		holder = galicia_04 
+	}
+	# Suebic Kingdom
+	460.1.1 = {
+		holder = galicia_10 # Independent Olisipo
+		liege = d_porto
+		government = tribal_government
+		de_jure_liege = d_galicia
+	}
+	532.1.1 = {
+		holder = gallaecian_001
+	}
+	741.1.1 = {
+		holder = 70011 # Duke Fruela Pérez of Cantabria
+		liege = d_galicia
+	}
+	757.1.1 = {
+		holder = 70004 # King Fruela I of Asturias
+		liege = k_asturias
+	}
+	768.1.1 = {
+		holder = 70012 # King Aurelio of Asturias
+	}
+	
+}
+
+c_tui = {
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = d_galicia
+		liege = d_galicia
+	}
+	361.1.1 = {
+		holder = galicia_01
+	}
+	395.1.1 = {
+		holder = galicia_02 
+	}
+	### Suebic Kingdom
+	400.1.1 = {
+		government = tribal_government
+		liege = 0
+		de_jure_liege = d_galicia
+	}
+	406.1.1 = {
+		holder = quadi_04 # Hermenerich, First King, Abdicated and Died later
+	}
+	438.1.1 = {
+		holder = 999601 # Rechila, son of Hermerich
+	}
+	448.1.1 = {
+		holder = 999603 # Rechiar, son of Rechila
+	}
+	456.1.1 = {
+		holder = suevi_01 # Agiulf, Gothic Usurper 
+	}
+	457.1.1 = {
+		holder = maldras_02 # Maldras, Usurper
+	}
+	460.1.1 = {
+		holder = maldras_03 # Rechimund, son of Maldra
+	}
+	463.1.1 = {
+		holder = maldras_04 # Frumar, son of Maldra
+	}
+	464.1.1 = {
+		holder = maldras_05 # Remismund, son of Maldra
+	}
+	469.1.1 = {
+		holder = maldras_06 # Hermenerich, son of Maldra
+	}
+	532.1.1 = {
+		holder = hispano_roman_misc_001
+		liege = d_galicia
+	}
+	741.1.1 = {
+		holder = 200058 # Luifredo de Suevonia
+	}
+	757.1.1 = {
+		liege = k_asturias
+	}
+	770.1.1 = {
+		holder = 70012 # King Aurelio of Asturias
+	}
+	
+}
+
+c_astorga = {
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = d_galicia
+		liege = d_galicia
+	}
+	361.1.1 = {
+		holder = galicia_03
+	}
+	395.1.1 = {
+		holder = galicia_04 
+	}
+	# Suebic Kingdom
+	460.1.1 = {
+		holder = galicia_10 # Independent Olisipo
+		liege = d_porto
+		government = tribal_government
+		de_jure_liege = d_galicia
+	}
+	532.1.1 = {
+		holder = hispano_roman_misc_001
+		liege = d_galicia
+	}
+}
+
+c_monterrei = {
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = d_galicia
+		liege = d_galicia
+	}
+	361.1.1 = {
+		holder = galicia_01
+	}
+	395.1.1 = {
+		holder = galicia_02 
+	}
+	### Suebic Kingdom
+	400.1.1 = {
+		government = tribal_government
+		liege = 0
+		de_jure_liege = d_galicia
+	}
+	406.1.1 = {
+		holder = quadi_04 # Hermenerich, First King, Abdicated and Died later
+	}
+	438.1.1 = {
+		holder = 999601 # Rechila, son of Hermerich
+	}
+	448.1.1 = {
+		holder = 999603 # Rechiar, son of Rechila
+	}
+	456.1.1 = {
+		holder = suevi_01 # Agiulf, Gothic Usurper 
+	}
+	457.1.1 = {
+		holder = maldras_02 # Maldras, Usurper
+	}
+	460.1.1 = {
+		holder = maldras_03 # Rechimund, son of Maldra
+	}
+	463.1.1 = {
+		holder = maldras_04 # Frumar, son of Maldra
+	}
+	464.1.1 = {
+		holder = maldras_05 # Remismund, son of Maldra
+	}
+	469.1.1 = {
+		holder = maldras_06 # Hermenerich, son of Maldra
+	}
+}
+
+d_coimbra = {
+	476.1.1 = {
+		de_jure_liege = k_badajoz
+	}
+	532.1.1 = {
+		holder = theodemund_the_unknown
+	}
+	711.1.1 = {
+		de_jure_liege = k_spanish_galicia
+	}
+}
+
+c_coimbra = {
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = d_badajoz
+		liege = d_badajoz
+	}
+	361.1.1 = {
+		holder = galicia_07
+	}
+	395.1.1 = {
+		holder = galicia_08
+	}
+	# Suebic Kingdom
+	460.1.1 = {
+		holder = lusitania_04 # Independent Olisipo
+		liege = d_porto
+		government = tribal_government
+		de_jure_liege = d_coimbra
+	}
+	532.1.1 = {
+		holder = lusitania_09
+	}
+}
+
+c_viseu = {
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = d_badajoz
+		liege = d_badajoz
+	}
+	361.1.1 = {
+		holder = galicia_05
+	}
+	395.1.1 = {
+		holder = galicia_06
+	}
+	# Suebic Kingdom
+	460.1.1 = {
+		holder = galicia_09 # Independent Olisipo
+		liege = d_porto
+		government = tribal_government
+		de_jure_liege = d_coimbra
+	}
+	532.1.1 = {
+		holder = old_suebi_misc_001
+	}
+}
+
+c_aveiro = {
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = d_badajoz
+		liege = d_badajoz
+	}
+	361.1.1 = {
+		holder = galicia_07
+	}
+	395.1.1 = {
+		holder = galicia_08
+	}
+	# Suebic Kingdom
+	460.1.1 = {
+		holder = galicia_09 # Independent Olisipo
+		liege = d_porto
+		government = tribal_government
+		de_jure_liege = d_coimbra
+	}
+	532.1.1 = {
+		holder = old_suebi_misc_001
+	}
+}
+
+c_castelo_branco = {
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = d_badajoz
+		liege = d_badajoz
+	}
+	361.1.1 = {
+		holder = galicia_05
+	}
+	395.1.1 = {
+		holder = galicia_06
+	}
+	# Suebic Kingdom
+	460.1.1 = {
+		holder = lusitania_04 # Independent Olisipo
+		liege = d_porto
+		government = tribal_government
+		de_jure_liege = d_coimbra
+	}
+	532.1.1 = {
+		holder = lusitania_09
+	}
+}

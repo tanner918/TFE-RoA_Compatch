@@ -1,0 +1,919 @@
+﻿k_delhi = {
+	361.1.1 = { change_development_level = 4 }
+	476.1.1 = { change_development_level = 5 }
+	532.1.1 = { change_development_level = 6 }
+	632.1.1 = { change_development_level = 7 }
+	768.1.1 = { change_development_level = 8 }
+	### Aulikaras
+	528.1.1 = {
+		holder = aulikara_09
+	}
+	580.1.1 = {
+		holder = pushyabhuti_05
+	}
+	605.1.1 = {
+		holder = pushyabhuti_06
+	}
+	606.1.1 = {
+		holder = pushyabhuti_07
+	}
+}
+
+
+d_kuru = {
+	361.1.1 = { change_development_level = 7 }
+	476.1.1 = { change_development_level = 8 }
+	532.1.1 = { change_development_level = 9 }
+	632.1.1 = { change_development_level = 10 }
+	768.1.1 = { change_development_level = 11 }
+	
+	### Yaudheyas
+	361.1.2 = {
+		holder = matraka_16
+		government = gana_sangha_government
+		succession_laws = { gana_sangha_elective_succession_law }
+	}
+	476.1.1 = {
+		holder = matraka_17
+	}
+	# 398.1.1 = {
+	# 	holder = matraka_02
+	# 	liege = e_bengal
+	# }
+	# 421.1.1 = {
+	# 	holder = matraka_03
+	# }
+	# 460.1.1 = {
+	# 	holder = matraka_04
+	# }
+	395.1.1 = {
+		liege = e_bengal
+	}
+	476.1.1 = {
+		holder = guptasad_35
+		liege = e_bengal
+	}
+	525.1.1 = {
+		holder = pushyabhuti_03
+		liege = k_malwa
+		government = gupta_government
+	}
+	555.1.1 = {
+		holder = pushyabhuti_04
+		liege = 0
+	}
+	580.1.1 = {
+		holder = pushyabhuti_05
+	}
+	605.1.1 = {
+		holder = pushyabhuti_06
+	}
+	606.1.1 = {
+		holder = pushyabhuti_07
+	}
+	736.3.1 = {
+		holder = 170151 #Anangpal Tomar
+		liege = k_punjab
+	}
+	754.3.1 = {
+		holder = 170152 #Vasudev Tomar
+	}
+	755.1.1 = {
+		liege = 0
+	}
+}
+
+
+c_delhi = {
+	
+	### Yaudheyas
+	361.1.2 = {
+		holder = matraka_16
+		government = gana_sangha_government
+		succession_laws = { gana_sangha_elective_succession_law }
+	}
+	476.1.1 = {
+		holder = matraka_17
+	}
+	# 398.1.1 = {
+	# 	holder = matraka_02
+	# 	liege = e_bengal
+	# }
+	# 421.1.1 = {
+	# 	holder = matraka_03
+	# }
+	# 460.1.1 = {
+	# 	holder = matraka_04
+	# }
+	395.1.1 = {
+		liege = e_bengal
+	}
+	476.1.1 = {
+		holder = guptasad_35
+		liege = e_bengal
+	}
+	525.1.1 = {
+		holder = pushyabhuti_03
+		liege = k_malwa
+	}
+	555.1.1 = {
+		holder = pushyabhuti_04
+		liege = 0
+	}
+	580.1.1 = {
+		holder = pushyabhuti_05
+	}
+	605.1.1 = {
+		holder = pushyabhuti_06
+	}
+	606.1.1 = {
+		holder = pushyabhuti_07
+	}
+	736.3.1 = {
+		liege = d_kuru
+		holder = 170151 #Anangpal Tomar
+	}
+	754.3.1 = {
+		holder = 170152 #Vasudev Tomar
+	}
+}
+
+
+c_hastinapura = {
+	### Yaudheyas
+	361.1.2 = {
+		holder = matraka_16
+		government = gana_sangha_government
+		succession_laws = { gana_sangha_elective_succession_law }
+	}
+	476.1.1 = {
+		holder = matraka_17
+	}
+	# 398.1.1 = {
+	# 	holder = matraka_02
+	# 	liege = e_bengal
+	# }
+	# 421.1.1 = {
+	# 	holder = matraka_03
+	# }
+	# 460.1.1 = {
+	# 	holder = matraka_04
+	# }
+	395.1.1 = {
+		liege = e_bengal
+	}
+	476.1.1 = {
+		holder = guptasad_35
+		liege = e_bengal
+	}
+	525.1.1 = {
+		holder = pushyabhuti_03
+		liege = k_malwa
+	}
+	532.1.1 = {
+		holder = maukhari_08
+		liege = d_kuru
+	}
+	632.1.1 = {
+		holder = pushyabhuti_8
+		liege = k_delhi
+	}
+	736.3.1 = {
+		holder = 170151 #Anangpal Tomar
+		liege = d_kuru
+	}
+	754.3.1 = {
+		holder = 170152 #Vasudev Tomar
+	}
+}
+
+
+c_sthanisvara = {
+	### Yaudheyas
+	361.1.2 = {
+		holder = matraka_16
+		government = gana_sangha_government
+		succession_laws = { gana_sangha_elective_succession_law }
+	}
+	476.1.1 = {
+		holder = matraka_17
+	}
+	# 398.1.1 = {
+	# 	holder = matraka_02
+	# 	liege = e_bengal
+	# }
+	# 421.1.1 = {
+	# 	holder = matraka_03
+	# }
+	# 460.1.1 = {
+	# 	holder = matraka_04
+	# }
+	498.1.1 = {
+		holder = pushyabhuti_01
+		liege = 0
+	}
+	500.1.1 = {
+		holder = pushyabhuti_02
+	}
+	525.1.1 = {
+		holder = pushyabhuti_03
+		liege = k_malwa
+	}
+	555.1.1 = {
+		holder = pushyabhuti_04
+		liege = 0
+	}
+	580.1.1 = {
+		holder = pushyabhuti_05
+	}
+	605.1.1 = {
+		holder = pushyabhuti_06
+	}
+	606.1.1 = {
+		holder = pushyabhuti_07
+	}
+	740.1.1 = {
+		holder = 191016
+		liege = d_kuru
+	}
+}
+
+
+c_hisar = {
+	### Yaudheyas
+	361.1.2 = {
+		holder = matraka_16
+		government = gana_sangha_government
+		succession_laws = { gana_sangha_elective_succession_law }
+	}
+	476.1.1 = {
+		holder = matraka_17
+	}
+	# 398.1.1 = {
+	# 	holder = matraka_02
+	# 	liege = e_bengal
+	# }
+	# 421.1.1 = {
+	# 	holder = matraka_03
+	# }
+	# 460.1.1 = {
+	# 	holder = matraka_04
+	# }
+	498.1.1 = {
+		holder = pushyabhuti_01
+		liege = 0
+	}
+	500.1.1 = {
+		holder = pushyabhuti_02
+	}
+	525.1.1 = {
+		holder = pushyabhuti_03
+		liege = k_malwa
+	}
+	555.1.1 = {
+		holder = pushyabhuti_04
+		liege = 0
+	}
+	580.1.1 = {
+		holder = pushyabhuti_05
+	}
+	605.1.1 = {
+		holder = pushyabhuti_06
+	}
+	606.1.1 = {
+		holder = pushyabhuti_07
+	}
+	760.1.1 = {
+		holder = 191960 #Virbhan Khichar
+		liege = d_kuru
+	}
+}
+
+d_haritanaka = {
+	361.1.1 = { change_development_level = 5 }
+	476.1.1 = { change_development_level = 6 }
+	532.1.1 = { change_development_level = 7 }
+	632.1.1 = { change_development_level = 8 }
+	768.1.1 = { change_development_level = 9 }
+	### Yaudheyas
+	361.1.2 = {
+		holder = matraka_16
+		government = gana_sangha_government
+		succession_laws = { gana_sangha_elective_succession_law }
+	}
+	400.1.1 = {
+		liege = e_bengal
+	}
+	476.1.1 = {
+		holder = matraka_17
+	}
+	# 398.1.1 = {
+	# 	holder = matraka_02
+	# 	liege = e_bengal
+	# }
+	# 421.1.1 = {
+	# 	holder = matraka_03
+	# }
+	# 460.1.1 = {
+	# 	holder = matraka_04
+	# }
+	498.1.1 = {
+		holder = pushyabhuti_01
+		liege = 0
+	}
+	500.1.1 = {
+		holder = pushyabhuti_02
+	}
+	525.1.1 = {
+		holder = pushyabhuti_03
+		liege = k_malwa
+	}
+	555.1.1 = {
+		holder = pushyabhuti_04
+		liege = 0
+	}
+	580.1.1 = {
+		holder = pushyabhuti_05
+	}
+	605.1.1 = {
+		holder = pushyabhuti_06
+	}
+	606.1.1 = {
+		holder = pushyabhuti_07
+	}
+}
+
+c_tribandapura = {
+	### Maitrakas
+	361.1.2 = {
+		holder = matraka_16
+		government = gana_sangha_government
+		succession_laws = { gana_sangha_elective_succession_law }
+	}
+	476.1.1 = {
+		holder = matraka_17
+		liege = e_bengal
+	}
+	# 361.1.1 = {
+	# 	holder = matraka_01
+	# 	government = gana_sangha_government
+		succession_laws = { gana_sangha_elective_succession_law }
+	# }
+	# 398.1.1 = {
+	# 	holder = matraka_02
+	# 	liege = e_bengal
+	# }
+	# 421.1.1 = {
+	# 	holder = matraka_03
+	# }
+	# 460.1.1 = {
+	# 	holder = matraka_04
+	# }
+	498.1.1 = {
+		holder = pushyabhuti_01
+		liege = 0
+	}
+	500.1.1 = {
+		holder = pushyabhuti_02
+	}
+	525.1.1 = {
+		holder = pushyabhuti_03
+		liege = k_malwa
+	}
+	555.1.1 = {
+		holder = pushyabhuti_04
+		liege = 0
+	}
+	580.1.1 = {
+		holder = pushyabhuti_05
+	}
+	605.1.1 = {
+		holder = pushyabhuti_06
+	}
+	606.1.1 = {
+		holder = pushyabhuti_07
+	}
+	740.1.1 = {
+		holder = 191016
+		liege = d_kuru
+	}
+}
+
+
+c_sarasvati = {
+	### Yaudheyas
+	361.1.2 = {
+		holder = matraka_16
+		government = gana_sangha_government
+		succession_laws = { gana_sangha_elective_succession_law }
+	}
+	476.1.1 = {
+		holder = matraka_17
+	}
+	# 398.1.1 = {
+	# 	holder = matraka_02
+	# 	liege = e_bengal
+	# }
+	# 421.1.1 = {
+	# 	holder = matraka_03
+	# }
+	# 460.1.1 = {
+	# 	holder = matraka_04
+	# }
+	498.1.1 = {
+		holder = pushyabhuti_01
+		liege = 0
+	}
+	500.1.1 = {
+		holder = pushyabhuti_02
+	}
+	525.1.1 = {
+		holder = pushyabhuti_03
+		liege = k_malwa
+	}
+	555.1.1 = {
+		holder = pushyabhuti_04
+		liege = 0
+	}
+	580.1.1 = {
+		holder = pushyabhuti_05
+	}
+	605.1.1 = {
+		holder = pushyabhuti_06
+	}
+	606.1.1 = {
+		holder = pushyabhuti_07
+	}
+	765.1.1 = {
+		holder = 191011	#Balan Singh Burdak
+		liege = d_jangladesh
+	}
+	768.1.1 = {
+		holder = 191012 #Mal Singh Burdak
+	}
+}
+
+
+d_mathura = {
+	361.1.1 = { change_development_level = 9 }
+	476.1.1 = { change_development_level = 10 }
+	532.1.1 = { change_development_level = 11 }
+	632.1.1 = { change_development_level = 12 }
+	768.1.1 = { change_development_level = 13 }
+	
+	# Nagas
+	178.1.1 = {
+		holder = 901050
+	}
+	210.1.1 = {
+		holder = 901051
+	}
+	230.1.1 = {
+		holder = 901052
+	}
+	252.1.1 = {
+		holder = 901053
+	}
+	257.1.1 = {
+		holder = 901054
+	}
+	269.1.1 = {
+		holder = 901055
+	}
+	287.1.1 = {
+		holder = 901056
+	}
+	288.1.1 = {
+		holder = 901057
+	}
+	289.1.1 = {
+		holder = 901058
+	}
+	300.1.1 = {
+		holder = 901059
+	}
+	310.1.1 = {
+		holder = 901060
+	}
+	339.1.1 = {
+		holder = 901061
+		liege = e_bengal
+	}
+	390.1.1 = {
+		government = gupta_government
+		holder = 901061
+	}
+	500.1.1 = {
+		holder = maukhari_01
+		liege = 0
+	}
+	512.1.1 = {
+		holder = maukhari_02
+	}
+	518.1.1 = {
+		holder = maukhari_03
+	}
+	525.1.1 = {
+		liege = k_malwa
+	}
+	540.1.1 = {
+		liege = 0
+	}
+	550.1.1 = {
+		holder = maukhari_04
+	}
+	560.1.1 = {
+		holder = maukhari_05
+	}
+	575.1.1 = {
+		holder = maukhari_06
+	}
+	600.1.1 = {
+		holder = maukhari_07
+	}
+	740.1.1 = {
+		holder = 191015	#Yadavs
+		liege = k_kosala
+	}
+}
+
+
+c_mathura = {
+	361.1.1 = { change_development_level = 11 }
+	476.1.1 = { change_development_level = 12 }
+	532.1.1 = { change_development_level = 13 }
+	632.1.1 = { change_development_level = 14 }
+	768.1.1 = { change_development_level = 15 }
+	178.1.1 = {
+		holder = 901050
+	}
+	210.1.1 = {
+		holder = 901051
+	}
+	230.1.1 = {
+		holder = 901052
+	}
+	252.1.1 = {
+		holder = 901053
+	}
+	257.1.1 = {
+		holder = 901054
+	}
+	269.1.1 = {
+		holder = 901055
+	}
+	287.1.1 = {
+		holder = 901056
+	}
+	288.1.1 = {
+		holder = 901057
+	}
+	289.1.1 = {
+		holder = 901058
+	}
+	300.1.1 = {
+		holder = 901059
+	}
+	310.1.1 = {
+		holder = 901060
+	}
+	339.1.1 = {
+		holder = 901061
+	}
+	390.1.1 = {
+		liege = e_bengal
+		government = gupta_government
+		holder = 901061
+	}
+	476.1.1 = {
+		holder = guptasad_33
+		liege = e_bengal
+	}
+	500.1.1 = {
+		holder = maukhari_01
+		liege = 0
+	}
+	512.1.1 = {
+		holder = maukhari_02
+	}
+	518.1.1 = {
+		holder = maukhari_03
+	}
+	525.1.1 = {
+		liege = k_malwa
+	}
+	540.1.1 = {
+		liege = 0
+	}
+	550.1.1 = {
+		holder = maukhari_04
+	}
+	560.1.1 = {
+		holder = maukhari_05
+	}
+	575.1.1 = {
+		holder = maukhari_06
+	}
+	600.1.1 = {
+		holder = maukhari_07
+	}
+	632.1.1 = {
+		holder = pushyabhuti_9
+		liege = k_delhi
+	}
+	760.1.1 = {
+		liege = d_mathura
+		holder = 191015	#Yadavs
+	}
+}
+
+
+c_kol = {
+	178.1.1 = {
+		holder = 901050
+	}
+	210.1.1 = {
+		holder = 901051
+	}
+	230.1.1 = {
+		holder = 901052
+	}
+	252.1.1 = {
+		holder = 901053
+	}
+	257.1.1 = {
+		holder = 901054
+	}
+	269.1.1 = {
+		holder = 901055
+	}
+	287.1.1 = {
+		holder = 901056
+	}
+	288.1.1 = {
+		holder = 901057
+	}
+	289.1.1 = {
+		holder = 901058
+	}
+	300.1.1 = {
+		holder = 901059
+	}
+	310.1.1 = {
+		holder = 901060
+	}
+	339.1.1 = {
+		holder = 901061
+	}
+	390.1.1 = {
+		liege = e_bengal
+		government = gupta_government
+		holder = 901061
+	}
+	476.1.1 = {
+		holder = guptasad_34
+		liege = e_bengal
+	}
+	512.1.1 = {
+		holder = maukhari_02
+	}
+	518.1.1 = {
+		holder = maukhari_03
+	}
+	525.1.1 = {
+		liege = k_malwa
+	}
+	540.1.1 = {
+		liege = 0
+	}
+	550.1.1 = {
+		holder = maukhari_04
+	}
+	560.1.1 = {
+		holder = maukhari_05
+	}
+	575.1.1 = {
+		holder = maukhari_06
+	}
+	600.1.1 = {
+		holder = maukhari_07
+	}
+	632.1.1 = {
+		holder = pushyabhuti_9
+		liege = k_delhi
+	}
+	735.1.1 = {
+		liege = d_mathura
+		holder = 191015	#Yadavs
+	}
+}
+
+
+c_sripatha = {
+	# Nagas
+	178.1.1 = {
+		holder = 901050
+	}
+	210.1.1 = {
+		holder = 901051
+	}
+	230.1.1 = {
+		holder = 901052
+	}
+	252.1.1 = {
+		holder = 901053
+	}
+	257.1.1 = {
+		holder = 901054
+	}
+	269.1.1 = {
+		holder = 901055
+	}
+	287.1.1 = {
+		holder = 901056
+	}
+	288.1.1 = {
+		holder = 901057
+	}
+	289.1.1 = {
+		holder = 901058
+	}
+	300.1.1 = {
+		holder = 901059
+	}
+	310.1.1 = {
+		holder = 901060
+	}
+	476.1.1 = {
+		holder = guptasad_33
+		liege = e_bengal
+	}
+	512.1.1 = {
+		holder = maukhari_02
+	}
+	518.1.1 = {
+		holder = maukhari_03
+	}
+	525.1.1 = {
+		liege = k_malwa
+	}
+	540.1.1 = {
+		liege = 0
+	}
+	550.1.1 = {
+		holder = maukhari_04
+	}
+	560.1.1 = {
+		holder = maukhari_05
+	}
+	575.1.1 = {
+		holder = maukhari_06
+	}
+	600.1.1 = {
+		holder = maukhari_07
+	}
+	632.1.1 = {
+		holder = pushyabhuti_9
+		liege = k_delhi
+	}
+	720.1.1 = {
+		holder = 191013	#Matsyas
+		liege = k_kosala
+	}
+	760.1.1 = {
+		holder = 191014	#Matsyas
+	}
+}
+
+
+d_vodamayutja = {
+	361.1.1 = { change_development_level = 7 }
+	476.1.1 = { change_development_level = 8 }
+	532.1.1 = { change_development_level = 9 }
+	632.1.1 = { change_development_level = 10 }
+	768.1.1 = { change_development_level = 11 }
+	
+	725.1.1 = {
+		holder = 191000 #Yasovarman
+	}
+	752.1.1 = {
+		holder = 191002 #Ama
+	}
+	762.1.1 = {
+		holder = 191003 #Dundaka
+	}
+}
+
+
+c_vodamayutja = {
+	361.1.1 = {
+		holder = guptasad_31
+		liege = e_bengal
+	}
+	476.1.1 = {
+		holder = guptasad_34
+		liege = e_bengal
+	}
+	532.1.1 = {
+		holder = bharatiya_misc_001
+		liege = d_kuru
+	}
+	632.1.1 = {
+		holder = pushyabhuti_8
+		liege = k_delhi
+	}
+	725.1.1 = {
+		holder = 191000 #Yasovarman
+		liege = d_vodamayutja
+	}
+	740.1.1 = {
+		holder = 191552 #Chhindas
+	}
+}
+
+
+c_sambhal = {
+	### Yaudheyas
+	361.1.2 = {
+		holder = matraka_16
+		government = gana_sangha_government
+		succession_laws = { gana_sangha_elective_succession_law }
+	}
+	476.1.1 = {
+		holder = matraka_17
+	}
+	# 398.1.1 = {
+	# 	holder = matraka_02
+	# 	liege = e_bengal
+	# }
+	# 421.1.1 = {
+	# 	holder = matraka_03
+	# }
+	# 460.1.1 = {
+	# 	holder = matraka_04
+	# }
+	395.1.1 = {
+		liege = e_bengal
+	}
+	476.1.1 = {
+		holder = guptasad_35
+		liege = e_bengal
+	}
+	532.1.1 = {
+		holder = maukhari_08
+		liege = d_kuru
+	}
+	725.1.1 = {
+		holder = 191000 #Yasovarman
+		liege = d_vodamayutja
+	}
+	740.1.1 = {
+		holder = 191552 #Chhindas
+	}
+}
+
+
+c_katehar = {
+	### Yaudheyas
+	361.1.2 = {
+		holder = matraka_16
+		government = gana_sangha_government
+		succession_laws = { gana_sangha_elective_succession_law }
+	}
+	476.1.1 = {
+		holder = matraka_17
+	}
+	# 398.1.1 = {
+	# 	holder = matraka_02
+	# 	liege = e_bengal
+	# }
+	# 421.1.1 = {
+	# 	holder = matraka_03
+	# }
+	# 460.1.1 = {
+	# 	holder = matraka_04
+	# }
+	395.1.1 = {
+		liege = e_bengal
+	}
+	476.1.1 = {
+		holder = guptasad_35
+		liege = e_bengal
+	}
+	532.1.1 = {
+		holder = maukhari_08
+		liege = d_kuru
+	}
+	632.1.1 = {
+		holder = pushyabhuti_8
+		liege = k_delhi
+	}
+	725.1.1 = {
+		holder = 191000 #Yasovarman
+		liege = d_vodamayutja
+	}
+	740.1.1 = {
+		holder = 191552 #Chhindas
+	}
+}
+

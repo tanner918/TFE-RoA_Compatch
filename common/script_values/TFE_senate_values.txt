@@ -1,0 +1,1379 @@
+﻿italy_aristocratic_size = {
+	value = 0
+	every_in_global_list = {
+		variable  = aristocratic_senate_italy
+		add = 1
+	}
+}
+italy_populist_size = {
+	value = 0
+	every_in_global_list = {
+		variable  = populist_senate_italy
+		add = 1
+	}
+}
+italy_traditionalist_size = {
+	value = 0
+	every_in_global_list = {
+		variable  = traditionalist_senate_italy
+		add = 1
+	}
+}
+eastern_aristocratic_size = {
+	value = 0
+	every_in_global_list = {
+		variable  = aristocratic_senate_eastern
+		add = 1
+	}
+}
+eastern_populist_size = {
+	value = 0
+	every_in_global_list = {
+		variable  = populist_senate_eastern
+		add = 1
+	}
+}
+eastern_traditionalist_size = {
+	value = 0
+	every_in_global_list = {
+		variable  = traditionalist_senate_eastern
+		add = 1
+	}
+}
+italy_aristocratic_party_level_of_loyalty = {
+	value = 0
+	add = {
+		value = lol_italy_aristocratic_opinion
+		desc = "lol_senate_opinion"
+	}
+	add = {
+		value = lol_italy_diocese_recently_established
+		desc = "lol_diocese_recently_established"
+	}
+	add = {
+		value = lol_italy_war_recently_won
+		desc = "lol_war_recently_won"
+	}
+	add = {
+		value = lol_italy_high_competence
+		desc = "lol_italy_high_competence"
+	}
+	add = {
+		value = lol_italy_aristocratic_bribed
+		desc = "lol_senate_bribed"
+	}
+	add = {
+		value = lol_italy_war_recently_lost
+		desc = "lol_italy_war_recently_lost"
+	}
+	add = {
+		value = lol_italy_debt
+		desc = "lol_italy_debt"
+	}
+	add = {
+		value = lol_italy_low_competence
+		desc = "lol_italy_low_competence"
+	}
+	add = {
+		value = lol_italy_high_income
+		desc = "lol_high_income"
+	}
+	add = {
+		value = lol_italy_low_income
+		desc = "lol_low_income"
+	}
+	add = {
+		value = lol_italy_high_reserves
+		desc = "lol_high_reserves"
+	}
+	add = {
+		value = lol_italy_low_reserves
+		desc = "lol_low_reserves"
+	}
+	add = {
+		value = lol_italy_high_stewardship
+		desc = "lol_high_stewardship"
+	}
+	add = {
+		value = lol_italy_low_stewardship
+		desc = "lol_low_stewardship"
+	}
+	min = 0
+	max = 100
+}
+lol_italy_high_reserves = {
+	value = 0
+	if = {
+		limit = {
+			title:c_roma.holder.top_liege = {
+				gold >= 800
+			}
+		}
+		add = 15
+	}
+}
+lol_italy_low_reserves = {
+	value = 0
+	if = {
+		limit = {
+			title:c_roma.holder.top_liege = {
+				gold <= -400
+			}
+		}
+		subtract = 15
+	}
+}
+lol_italy_aristocratic_opinion = {
+	value = 0
+	every_in_global_list = {
+		variable  = aristocratic_senate_italy
+		add = lol_opinion_value
+		
+	}
+	if = {
+		limit = {
+			any_in_global_list = {
+				count = all
+				variable  = aristocratic_senate_italy
+				lol_opinion_value >= 4
+		
+			}
+		}
+		add = 70
+	}
+}
+lol_italy_aristocratic_bribed = {
+	value = 0
+	title:c_roma.holder.top_liege = {
+		if = {
+			limit = {
+				has_character_flag = bribed_aristocrats_italy
+			}
+			add = 65
+		}
+	}
+}
+italy_populists_party_level_of_loyalty = {
+	value = 0
+	add = {
+		value = lol_italy_populists_opinion
+		desc = "lol_senate_opinion"
+	}
+	add = {
+		value = lol_italy_diocese_recently_established
+		desc = "lol_diocese_recently_established"
+	}
+	add = {
+		value = lol_italy_war_recently_won
+		desc = "lol_war_recently_won"
+	}
+	add = {
+		value = lol_italy_high_competence
+		desc = "lol_italy_high_competence"
+	}
+	add = {
+		value = lol_italy_populists_bribed
+		desc = "lol_senate_bribed"
+	}
+	add = {
+		value = lol_italy_war_recently_lost
+		desc = "lol_italy_war_recently_lost"
+	}
+	add = {
+		value = lol_italy_debt
+		desc = "lol_italy_debt"
+	}
+	add = {
+		value = lol_italy_low_competence
+		desc = "lol_italy_low_competence"
+	}
+	add = {
+		value = lol_italy_high_alliances
+		desc = "lol_high_alliances"
+	}
+	add = {
+		value = lol_italy_low_alliances
+		desc = "lol_low_alliances"
+	}
+	add = {
+		value = lol_italy_high_diplomacy
+		desc = "lol_high_diplomacy"
+	}
+	add = {
+		value = lol_italy_low_diplomacy
+		desc = "lol_low_diplomacy"
+	}
+	min = 0
+	max = 100
+}
+lol_italy_high_alliances = {
+	value = 0
+	if = {
+		limit = {
+			title:c_roma.holder.top_liege = {
+				any_ally = {
+					count >= 2
+					is_alive = yes
+				}
+			}
+		}
+		add = 15
+	}
+}
+lol_italy_low_alliances = {
+	value = 0
+	if = {
+		limit = {
+			title:c_roma.holder.top_liege = {
+				any_ally = {
+					count = 0
+					is_alive = yes
+				}
+			}
+		}
+		subtract = 15
+	}
+}
+lol_italy_high_diplomacy = {
+	value = 0
+	if = {
+		limit = {
+			title:c_roma.holder.top_liege = {
+				diplomacy >= 15
+			}
+		}
+		add = 15
+	}
+}
+lol_italy_low_diplomacy = {
+	value = 0
+	if = {
+		limit = {
+			title:c_roma.holder.top_liege = {
+				diplomacy < 10
+			}
+		}
+		subtract = 15
+	}
+}
+
+lol_italy_high_income = {
+	value = 0
+	if = {
+		limit = {
+			title:c_roma.holder.top_liege = {
+				monthly_character_balance >= 25
+			}
+		}
+		add = 15
+	}
+}
+lol_italy_low_income = {
+	value = 0
+	if = {
+		limit = {
+			title:c_roma.holder.top_liege = {
+				monthly_character_balance <= 1
+			}
+		}
+		subtract = 15
+	}
+}
+lol_italy_high_stewardship = {
+	value = 0
+	if = {
+		limit = {
+			title:c_roma.holder.top_liege = {
+				stewardship >= 15
+			}
+		}
+		add = 15
+	}
+}
+lol_italy_low_stewardship = {
+	value = 0
+	if = {
+		limit = {
+			title:c_roma.holder.top_liege = {
+				stewardship < 10
+			}
+		}
+		subtract = 15
+	}
+}
+lol_italy_populists_opinion = {
+	value = 0
+	every_in_global_list = {
+		variable  = populist_senate_italy
+		add = lol_opinion_value
+		
+	}
+	if = {
+		limit = {
+			any_in_global_list = {
+				count = all
+				variable  = populist_senate_italy
+				lol_opinion_value >= 4
+		
+			}
+		}
+		add = 70
+	}
+}
+lol_italy_populists_bribed = {
+	value = 0
+	title:c_roma.holder.top_liege = {
+		if = {
+			limit = {
+				has_character_flag = bribed_populists_italy
+			}
+			add = 65
+		}
+	}
+}
+italy_traditionalist_party_level_of_loyalty = {
+	value = 0
+	add = {
+		value = lol_italy_traditionalist_opinion
+		desc = "lol_senate_opinion"
+	}
+	add = {
+		value = lol_italy_diocese_recently_established
+		desc = "lol_diocese_recently_established"
+	}
+	add = {
+		value = lol_italy_war_recently_won
+		desc = "lol_war_recently_won"
+	}
+	add = {
+		value = lol_italy_high_competence
+		desc = "lol_italy_high_competence"
+	}
+	add = {
+		value = lol_italy_traditionalist_bribed
+		desc = "lol_senate_bribed"
+	}
+	add = {
+		value = lol_italy_war_recently_lost
+		desc = "lol_italy_war_recently_lost"
+	}
+	add = {
+		value = lol_italy_debt
+		desc = "lol_italy_debt"
+	}
+	add = {
+		value = lol_italy_low_competence
+		desc = "lol_italy_low_competence"
+	}
+	add = {
+		value = lol_italy_high_maa
+		desc = "lol_high_maa"
+	}
+	add = {
+		value = lol_italy_low_maa
+		desc = "lol_low_maa"
+	}
+	add = {
+		value = lol_italy_high_prowess
+		desc = "lol_high_prowess"
+	}
+	add = {
+		value = lol_italy_low_prowess
+		desc = "lol_low_prowess"
+	}
+	add = {
+		value = lol_italy_high_martial
+		desc = "lol_high_martial"
+	}
+	add = {
+		value = lol_italy_low_martial
+		desc = "lol_low_martial"
+	}
+	min = 0
+	max = 100
+}
+lol_italy_high_maa = {
+	value = 0
+	if = {
+		limit = {
+			title:c_roma.holder.top_liege = {
+				number_of_maa_regiments >= 5
+			}
+		}
+		add = 15
+	}
+}
+lol_italy_low_maa = {
+	value = 0
+	if = {
+		limit = {
+			title:c_roma.holder.top_liege = {
+				number_of_maa_regiments <= 3
+			}
+		}
+		subtract = 15
+	}
+}
+lol_italy_high_prowess = {
+	value = 0
+	if = {
+		limit = {
+			title:c_roma.holder.top_liege = {
+				prowess >= 14
+			}
+		}
+		add = 15
+	}
+}
+lol_italy_low_prowess = {
+	value = 0
+	if = {
+		limit = {
+			title:c_roma.holder.top_liege = {
+				prowess < 9
+			}
+		}
+		subtract = 15
+	}
+}
+lol_italy_high_martial = {
+	value = 0
+	if = {
+		limit = {
+			title:c_roma.holder.top_liege = {
+				martial >= 15
+			}
+		}
+		add = 15
+	}
+}
+lol_italy_low_martial = {
+	value = 0
+	if = {
+		limit = {
+			title:c_roma.holder.top_liege = {
+				martial < 10
+			}
+		}
+		subtract = 15
+	}
+}
+lol_italy_traditionalist_opinion = {
+	value = 0
+	every_in_global_list = {
+		variable  = traditionalist_senate_italy
+		add = lol_opinion_value
+		
+	}
+	if = {
+		limit = {
+			any_in_global_list = {
+				count = all
+				variable  = traditionalist_senate_italy
+				lol_opinion_value >= 4
+		
+			}
+		}
+		add = 70
+	}
+}
+lol_italy_traditionalist_bribed = {
+	value = 0
+	title:c_roma.holder.top_liege = {
+		if = {
+			limit = {
+				has_character_flag = bribed_traditionalist_italy
+			}
+			add = 65
+		}
+	}
+}
+lol_opinion_value = {
+	value = 0
+	title:c_roma.holder.top_liege = {
+		save_temporary_scope_as = emperor
+	}
+	if = {
+		limit = {
+			opinion = {
+				target = scope:emperor
+				value >= 90
+			}
+		}
+		add = 5
+	}
+	else_if = {
+		limit = {
+			opinion = {
+				target = scope:emperor
+				value >= 70
+			}
+		}
+		add = 4
+	}
+	else_if = {
+		limit = {
+			opinion = {
+				target = scope:emperor
+				value >= 50
+			}
+		}
+		add = 3
+	}
+	else_if = {
+		limit = {
+			opinion = {
+				target = scope:emperor
+				value >= 30
+			}
+		}
+		add = 2
+	}
+	else_if = {
+		limit = {
+			opinion = {
+				target = scope:emperor
+				value >= 10
+			}
+		}
+		add = 1
+	}
+
+	if = {
+		limit = {
+			opinion = {
+				target = scope:emperor
+				value <= -90
+			}
+		}
+		add = -5
+	}
+	else_if = {
+		limit = {
+			opinion = {
+				target = scope:emperor
+				value <= -70
+			}
+		}
+		add = -4
+	}
+	else_if = {
+		limit = {
+			opinion = {
+				target = scope:emperor
+				value <= -50
+			}
+		}
+		add = -3
+	}
+	else_if = {
+		limit = {
+			opinion = {
+				target = scope:emperor
+				value <= -30
+			}
+		}
+		add = -2
+	}
+	else_if = {
+		limit = {
+			opinion = {
+				target = scope:emperor
+				value <= -10
+			}
+		}
+		add = -1
+	}
+
+	if = {
+		limit = {
+			has_trait =high_senator  
+		}
+		multiply = 3
+	}
+	else_if = {
+		limit = {
+			has_trait = senator  
+		}
+		multiply = 2
+	}
+}
+lol_opinion_value_eastern = {
+	value = 0
+	title:c_byzantion.holder.top_liege = {
+		save_temporary_scope_as = emperor
+	}
+	if = {
+		limit = {
+			opinion = {
+				target = scope:emperor
+				value >= 90
+			}
+		}
+		add = 5
+	}
+	else_if = {
+		limit = {
+			opinion = {
+				target = scope:emperor
+				value >= 70
+			}
+		}
+		add = 4
+	}
+	else_if = {
+		limit = {
+			opinion = {
+				target = scope:emperor
+				value >= 50
+			}
+		}
+		add = 3
+	}
+	else_if = {
+		limit = {
+			opinion = {
+				target = scope:emperor
+				value >= 30
+			}
+		}
+		add = 2
+	}
+	else_if = {
+		limit = {
+			opinion = {
+				target = scope:emperor
+				value >= 10
+			}
+		}
+		add = 1
+	}
+
+	if = {
+		limit = {
+			opinion = {
+				target = scope:emperor
+				value <= -90
+			}
+		}
+		add = -5
+	}
+	else_if = {
+		limit = {
+			opinion = {
+				target = scope:emperor
+				value <= -70
+			}
+		}
+		add = -4
+	}
+	else_if = {
+		limit = {
+			opinion = {
+				target = scope:emperor
+				value <= -50
+			}
+		}
+		add = -3
+	}
+	else_if = {
+		limit = {
+			opinion = {
+				target = scope:emperor
+				value <= -30
+			}
+		}
+		add = -2
+	}
+	else_if = {
+		limit = {
+			opinion = {
+				target = scope:emperor
+				value <= -10
+			}
+		}
+		add = -1
+	}
+
+	if = {
+		limit = {
+			has_trait =high_senator  
+		}
+		multiply = 3
+	}
+	else_if = {
+		limit = {
+			has_trait = senator  
+		}
+		multiply = 2
+	}
+}
+lol_italy_diocese_recently_established = {
+	value = 0
+	title:c_roma.holder.top_liege = {
+		if = {
+			limit = {
+				has_character_flag = recently_established_diocese
+			}
+			add = 15
+		}
+	}
+}
+lol_italy_war_recently_won = {
+	value = 0
+	title:c_roma.holder.top_liege = {
+		if = {
+			limit = {
+				has_character_flag = recently_won_war_lol
+			}
+			add = 5
+		}
+	}
+}
+lol_italy_war_recently_lost = {
+	value = 0
+	title:c_roma.holder.top_liege = {
+		if = {
+			limit = {
+				has_character_flag = recently_won_lost_lol
+			}
+			subtract = 25
+		}
+	}
+}
+lol_italy_high_competence = {
+	value = 0
+	title:c_roma.holder.top_liege = {
+		if = {
+			limit = {
+				AND = {
+					exists = var:mil_comp
+					var:mil_comp >= 3500
+				}
+			}
+			add = 10
+		}
+		if = {
+			limit = {
+				AND = {
+					exists = var:diplo_comp
+					var:diplo_comp >= 3500
+				}
+			}
+			add = 10
+		}
+		if = {
+			limit = {
+				AND = {
+					exists = var:civic_comp
+					var:civic_comp >= 3500
+				}
+			}
+			add = 10
+		}
+	}
+}
+lol_italy_debt = {
+	value = 0
+	title:c_roma.holder.top_liege = {
+		if = {
+			limit = {
+				gold < 0
+			}
+			subtract = 25
+		}
+	}
+}
+lol_italy_low_competence = {
+	value = 0
+	title:c_roma.holder.top_liege = {
+		if = {
+			limit = {
+				AND = {
+					exists = var:mil_comp
+					var:mil_comp < 1200
+				}
+			}
+			subtract = 15
+		}
+		if = {
+			limit = {
+				AND = {
+					exists = var:diplo_comp
+					var:diplo_comp < 1200
+				}
+			}
+			subtract = 15
+		}
+		if = {
+			limit = {
+				AND = {
+					exists = var:civic_comp
+					var:civic_comp < 1200
+				}
+			}
+			subtract = 15
+		}
+	}
+}
+eastern_aristocratic_party_level_of_loyalty = {
+	value = 0
+	add = {
+		value = lol_eastern_aristocratic_opinion
+		desc = "lol_senate_opinion"
+	}
+	add = {
+		value = lol_eastern_diocese_recently_established
+		desc = "lol_diocese_recently_established"
+	}
+	add = {
+		value = lol_eastern_war_recently_won
+		desc = "lol_war_recently_won"
+	}
+	add = {
+		value = lol_eastern_high_competence
+		desc = "lol_italy_high_competence"
+	}
+	add = {
+		value = lol_eastern_aristocratic_bribed
+		desc = "lol_senate_bribed"
+	}
+	add = {
+		value = lol_eastern_war_recently_lost
+		desc = "lol_italy_war_recently_lost"
+	}
+	add = {
+		value = lol_eastern_debt
+		desc = "lol_italy_debt"
+	}
+	add = {
+		value = lol_eastern_low_competence
+		desc = "lol_italy_low_competence"
+	}
+	add = {
+		value = lol_eastern_high_income
+		desc = "lol_high_income"
+	}
+	add = {
+		value = lol_eastern_low_income
+		desc = "lol_low_income"
+	}
+	add = {
+		value = lol_eastern_high_stewardship
+		desc = "lol_high_stewardship"
+	}
+	add = {
+		value = lol_eastern_low_stewardship
+		desc = "lol_low_stewardship"
+	}
+	add = {
+		value = lol_eastern_high_reserves
+		desc = "lol_high_reserves"
+	}
+	add = {
+		value = lol_eastern_low_reserves
+		desc = "lol_low_reserves"
+	}
+	min = 0
+	max = 100
+}
+lol_eastern_high_reserves = {
+	value = 0
+	if = {
+		limit = {
+			title:c_byzantion.holder.top_liege = {
+				gold >= 800
+			}
+		}
+		add = 15
+	}
+}
+lol_eastern_low_reserves = {
+	value = 0
+	if = {
+		limit = {
+			title:c_byzantion.holder.top_liege = {
+				gold <= -400
+			}
+		}
+		subtract = 15
+	}
+}
+lol_eastern_high_income = {
+	value = 0
+	if = {
+		limit = {
+			title:c_byzantion.holder.top_liege = {
+				monthly_character_balance >= 25
+			}
+		}
+		add = 15
+	}
+}
+lol_eastern_low_income = {
+	value = 0
+	if = {
+		limit = {
+			title:c_byzantion.holder.top_liege = {
+				monthly_character_balance <= 1
+			}
+		}
+		subtract = 15
+	}
+}
+lol_eastern_high_stewardship = {
+	value = 0
+	if = {
+		limit = {
+			title:c_byzantion.holder.top_liege = {
+				stewardship >= 15
+			}
+		}
+		add = 15
+	}
+}
+lol_eastern_low_stewardship = {
+	value = 0
+	if = {
+		limit = {
+			title:c_byzantion.holder.top_liege = {
+				stewardship < 10
+			}
+		}
+		subtract = 15
+	}
+}
+lol_eastern_aristocratic_opinion = {
+	value = 0
+	every_in_global_list = {
+		variable  = aristocratic_senate_eastern
+		add = lol_opinion_value_eastern
+		
+	}
+	if = {
+		limit = {
+			any_in_global_list = {
+				count = all
+				variable  = aristocratic_senate_eastern
+				lol_opinion_value_eastern >= 4
+		
+			}
+		}
+		add = 70
+	}
+}
+lol_eastern_aristocratic_bribed = {
+	value = 0
+	title:c_byzantion.holder.top_liege = {
+		if = {
+			limit = {
+				has_character_flag = bribed_aristocrats_eastern
+			}
+			add = 65
+		}
+	}
+}
+eastern_populists_party_level_of_loyalty = {
+	value = 0
+	add = {
+		value = lol_eastern_populists_opinion
+		desc = "lol_senate_opinion"
+	}
+	add = {
+		value = lol_eastern_diocese_recently_established
+		desc = "lol_diocese_recently_established"
+	}
+	add = {
+		value = lol_eastern_war_recently_won
+		desc = "lol_war_recently_won"
+	}
+	add = {
+		value = lol_eastern_high_competence
+		desc = "lol_italy_high_competence"
+	}
+	add = {
+		value = lol_eastern_populists_bribed
+		desc = "lol_senate_bribed"
+	}
+	add = {
+		value = lol_eastern_war_recently_lost
+		desc = "lol_italy_war_recently_lost"
+	}
+	add = {
+		value = lol_eastern_debt
+		desc = "lol_eastern_debt"
+	}
+	add = {
+		value = lol_eastern_low_competence
+		desc = "lol_italy_low_competence"
+	}
+	add = {
+		value = lol_eastern_high_alliances
+		desc = "lol_high_alliances"
+	}
+	add = {
+		value = lol_eastern_low_alliances
+		desc = "lol_low_alliances"
+	}
+	add = {
+		value = lol_eastern_high_diplomacy
+		desc = "lol_high_diplomacy"
+	}
+	add = {
+		value = lol_eastern_low_diplomacy
+		desc = "lol_low_diplomacy"
+	}
+	
+	min = 0
+	max = 100
+}
+lol_eastern_high_alliances = {
+	value = 0
+	if = {
+		limit = {
+			title:c_byzantion.holder.top_liege = {
+				any_ally = {
+					count >= 2
+					is_alive = yes
+				}
+			}
+		}
+		add = 15
+	}
+}
+lol_eastern_low_alliances = {
+	value = 0
+	if = {
+		limit = {
+			title:c_byzantion.holder.top_liege = {
+				any_ally = {
+					count = 0
+					is_alive = yes
+				}
+			}
+		}
+		subtract = 15
+	}
+}
+lol_eastern_high_diplomacy = {
+	value = 0
+	if = {
+		limit = {
+			title:c_byzantion.holder.top_liege = {
+				diplomacy >= 15
+			}
+		}
+		add = 15
+	}
+}
+lol_eastern_low_diplomacy = {
+	value = 0
+	if = {
+		limit = {
+			title:c_byzantion.holder.top_liege = {
+				diplomacy < 10
+			}
+		}
+		subtract = 15
+	}
+}
+lol_eastern_populists_opinion = {
+	value = 0
+	every_in_global_list = {
+		variable  = populist_senate_eastern
+		add = lol_opinion_value_eastern
+		
+	}
+	if = {
+		limit = {
+			any_in_global_list = {
+				count = all
+				variable  = populist_senate_eastern
+				lol_opinion_value_eastern >= 4
+		
+			}
+		}
+		add = 70
+	}
+}
+lol_eastern_populists_bribed = {
+	value = 0
+	title:c_byzantion.holder.top_liege = {
+		if = {
+			limit = {
+				has_character_flag = bribed_populists_eastern
+			}
+			add = 65
+		}
+	}
+}
+eastern_traditionalist_party_level_of_loyalty = {
+	value = 0
+	add = {
+		value = lol_eastern_traditionalist_opinion
+		desc = "lol_senate_opinion"
+	}
+	add = {
+		value = lol_eastern_diocese_recently_established
+		desc = "lol_diocese_recently_established"
+	}
+	add = {
+		value = lol_eastern_war_recently_won
+		desc = "lol_war_recently_won"
+	}
+	add = {
+		value = lol_eastern_high_competence
+		desc = "lol_italy_high_competence"
+	}
+	add = {
+		value = lol_eastern_traditionalist_bribed
+		desc = "lol_senate_bribed"
+	}
+	add = {
+		value = lol_eastern_war_recently_lost
+		desc = "lol_italy_war_recently_lost"
+	}
+	add = {
+		value = lol_eastern_debt
+		desc = "lol_eastern_debt"
+	}
+	add = {
+		value = lol_eastern_low_competence
+		desc = "lol_italy_low_competence"
+	}
+	add = {
+		value = lol_eastern_high_maa
+		desc = "lol_high_maa"
+	}
+	add = {
+		value = lol_eastern_low_maa
+		desc = "lol_low_maa"
+	}
+	add = {
+		value = lol_eastern_high_prowess
+		desc = "lol_high_prowess"
+	}
+	add = {
+		value = lol_eastern_low_prowess
+		desc = "lol_low_prowess"
+	}
+	add = {
+		value = lol_eastern_high_martial
+		desc = "lol_high_martial"
+	}
+	add = {
+		value = lol_eastern_low_martial
+		desc = "lol_low_martial"
+	}
+	min = 0
+	max = 100
+}
+lol_eastern_high_maa = {
+	value = 0
+	if = {
+		limit = {
+			title:c_byzantion.holder.top_liege = {
+				number_of_maa_regiments >= 5
+			}
+		}
+		add = 15
+	}
+}
+lol_eastern_low_maa = {
+	value = 0
+	if = {
+		limit = {
+			title:c_byzantion.holder.top_liege = {
+				number_of_maa_regiments <= 3
+			}
+		}
+		subtract = 15
+	}
+}
+lol_eastern_high_prowess = {
+	value = 0
+	if = {
+		limit = {
+			title:c_byzantion.holder.top_liege = {
+				prowess >= 14
+			}
+		}
+		add = 15
+	}
+}
+lol_eastern_low_prowess = {
+	value = 0
+	if = {
+		limit = {
+			title:c_byzantion.holder.top_liege = {
+				prowess < 9
+			}
+		}
+		subtract = 15
+	}
+}
+lol_eastern_high_martial = {
+	value = 0
+	if = {
+		limit = {
+			title:c_byzantion.holder.top_liege = {
+				martial >= 15
+			}
+		}
+		add = 15
+	}
+}
+lol_eastern_low_martial = {
+	value = 0
+	if = {
+		limit = {
+			title:c_byzantion.holder.top_liege = {
+				martial < 10
+			}
+		}
+		subtract = 15
+	}
+}
+lol_eastern_traditionalist_opinion = {
+	value = 0
+	every_in_global_list = {
+		variable  = traditionalist_senate_eastern
+		add = lol_opinion_value_eastern
+		
+	}
+	if = {
+		limit = {
+			any_in_global_list = {
+				count = all
+				variable  = traditionalist_senate_eastern
+				lol_opinion_value_eastern >= 4
+		
+			}
+		}
+		add = 70
+	}
+}
+lol_eastern_traditionalist_bribed = {
+	value = 0
+	title:c_byzantion.holder.top_liege = {
+		if = {
+			limit = {
+				has_character_flag = bribed_traditionalist_eastern
+			}
+			add = 65
+		}
+	}
+}
+lol_eastern_diocese_recently_established = {
+	value = 0
+	title:c_byzantion.holder.top_liege = {
+		if = {
+			limit = {
+				has_character_flag = recently_established_diocese
+			}
+			add = 15
+		}
+	}
+}
+lol_eastern_war_recently_won = {
+	value = 0
+	title:c_byzantion.holder.top_liege = {
+		if = {
+			limit = {
+				has_character_flag = recently_won_war_lol
+			}
+			add = 5
+		}
+	}
+}
+lol_eastern_war_recently_lost = {
+	value = 0
+	title:c_byzantion.holder.top_liege = {
+		if = {
+			limit = {
+				has_character_flag = recently_won_lost_lol
+			}
+			subtract = 25
+		}
+	}
+}
+lol_eastern_high_competence = {
+	value = 0
+	title:c_byzantion.holder.top_liege = {
+		if = {
+			limit = {
+				AND = {
+					exists = var:mil_comp
+					var:mil_comp >= 3500
+				}
+			}
+			add = 10
+		}
+		if = {
+			limit = {
+				AND = {
+					exists = var:diplo_comp
+					var:diplo_comp >= 3500
+				}
+			}
+			add = 10
+		}
+		if = {
+			limit = {
+				AND = {
+					exists = var:civic_comp
+					var:civic_comp >= 3500
+				}
+			}
+			add = 10
+		}
+	}
+}
+lol_eastern_debt = {
+	value = 0
+	title:c_byzantion.holder.top_liege = {
+		if = {
+			limit = {
+				gold < 0
+			}
+			subtract = 25
+		}
+	}
+}
+lol_eastern_low_competence = {
+	value = 0
+	title:c_byzantion.holder.top_liege = {
+		if = {
+			limit = {
+				AND = {
+					exists = var:mil_comp
+					var:mil_comp < 1200
+				}
+			}
+			subtract = 15
+		}
+		if = {
+			limit = {
+				AND = {
+					exists = var:diplo_comp
+					var:diplo_comp < 1200
+				}
+			}
+			subtract = 15
+		}
+		if = {
+			limit = {
+				AND = {
+					exists = var:civic_comp
+					var:civic_comp < 1200
+				}
+			}
+			subtract = 15
+		}
+	}
+}
+
+half_activity_mny = {
+	value = standard_activity_cost
+	divide = 2
+}

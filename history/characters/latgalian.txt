@@ -1,0 +1,83 @@
+﻿# Latgalians
+latgale_01 = {  # Ruler
+	name = "Sabe"
+	dynasty = dynasty_latgale
+	culture = aestian
+	religion = baltic_pagan
+	329.8.6 = {
+		birth = yes
+	}
+	380.8.24 = {
+		death = yes
+	}
+}
+
+latgale_11 = {  # Ruler
+	name = "Milzas"
+	dynasty = dynasty_latgale
+	culture = aestian
+	religion = baltic_pagan
+	father = latgale_01
+	356.9.29 = {
+		birth = yes
+	}
+	404.3.18 = {
+		death = yes
+	}
+}
+
+latgale_21 = {  # Ruler
+	name = "Rusins"
+	dynasty = dynasty_latgale
+	culture = aestian
+	religion = baltic_pagan
+	father = latgale_11
+	390.8.23 = {
+		birth = yes
+	}
+	433.4.3 = {
+		death = yes
+	}
+}
+
+latgale_31 = {  # Ruler
+	name = "Klavess"
+	dynasty = dynasty_latgale
+	culture = aestian
+	religion = baltic_pagan
+	father = latgale_21
+	429.3.25 = {
+		birth = yes
+	}
+	468.7.6 = {
+		death = yes
+	}
+}
+
+latgale_41 = {  # Ruler
+	name = "Kerstigens"
+	dynasty = dynasty_latgale
+	culture = aestian
+	religion = baltic_pagan
+	father = latgale_31
+	459.1.31 = {
+		birth = yes
+	}
+	511.6.13 = {
+		death = yes
+	}
+}
+
+latgale_42 = {  # Ruler
+	name = "Kodere"
+	dynasty = dynasty_latgale
+	culture = aestian
+	religion = baltic_pagan
+	father = latgale_41
+	485.1.1 = {
+		birth = yes
+	}
+	555.1.11 = {
+		death = yes
+	}
+}

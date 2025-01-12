@@ -1,0 +1,982 @@
+﻿tatianus_01 = { #Real people
+	name = "Antonius"
+	culture = syrian
+	religion = nicene
+	dynasty = dynasty_Tatianus
+	300.1.1 = {
+		birth = yes
+	}
+	383.1.1 = {
+		death = yes
+	}
+}
+aegyptus_02 = { #Real people
+	name = "Eutolmius"
+	culture = syrian
+	religion = nicene
+	dynasty = dynasty_Tatianus
+	father = tatianus_01
+	330.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+tatianus_02 = { #Real people
+	name = "Proklus"
+	culture = syrian
+	religion = nicene
+	dynasty = dynasty_Tatianus
+	father = aegyptus_02
+	300.1.1 = {
+		birth = yes
+	}
+	383.1.1 = {
+		death = yes
+	}
+}
+salutaris_01 = { #Real people
+	name = "Eutolmius"
+	culture = syrian
+	religion = nicene
+	330.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+salutaris_02 = { #Real people
+	name = "Rufinus"
+	culture = syrian
+	religion = nicene
+	370.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+salutaris_03 = { #Real people
+	name = "Petrus"
+	culture = syrian
+	religion = nicene
+	440.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+britannia_03 = {
+	name = "Alypius"
+	religion = "hellenic_pagan"
+	culture = "syrian"
+	340.1.1 = {
+		birth = yes
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+
+### Roman Emperors
+145267 = {
+	name = "Heliogabalus"
+	# Marcus Aurelius Antoninus Augustus
+	dynasty = 1022216
+	religion = "emesa_pagan"
+	culture = "syrian"
+	female = yes
+	sexuality = bisexual
+	trait = reveler_1
+	trait = lustful
+	trait = drunkard
+	trait = lazy
+	trait = zealous
+	trait = education_learning_1
+	203.1.1 = {
+		birth = "203.1.1"
+	}
+	222.3.11 = {
+		death = "222.3.11"
+	}
+}
+145266 = {
+	name = "Alexander"
+	# Caesar Marcus Aurelius Severus Alexander Augustus
+	dynasty = 1022215
+	religion = "hellenic_pagan"
+	culture = "syrian"
+	trait = honest
+	trait = humble
+	trait = education_stewardship_3
+	trait = apotheosised_trait
+	208.10.1 = {
+		birth = "208.10.1"
+	}
+	235.3.19 = {
+		death = "235.3.19"
+	}
+}
+#### kek
+##
+mesopotamia_02 = {
+	name = "Georgios"
+	religion = "nicene"
+	culture = "syrian"
+	338.1.12 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+mesopotamia_03 = {
+	name = "Maurikios"
+	religion = "nicene"
+	culture = "syrian"
+	370.12.6 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+mesopotamia_04 = {
+	name = "Gennadius"
+	religion = "nicene"
+	culture = "syrian"
+	445.1.2 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+mesopotamia_05 = {
+	name = "Iosephos"
+	religion = "nicene"
+	culture = "syrian"
+	336.7.8 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+mesopotamia_07 = {
+	name = "Damianos"
+	religion = "chalcedonian"
+	culture = "syrian"
+	451.5.4 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+mesopotamia_08 = {
+	name = "Damianos"
+	religion = "nicene"
+	culture = "syrian"
+	330.5.4 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+##### Orientis
+palestina_01 = {
+	name = "Isidoros"
+	religion = "nicene"
+	culture = "syrian"
+	330.5.4 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+palestina_02 = {
+	name = "Theophylaktos"
+	religion = "nicene"
+	culture = "syrian"
+	373.4.14 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+palestina_07 = {
+	name = "Alexandros"
+	religion = "nicene"
+	culture = "syrian"
+	440.2.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+palestina_03 = {
+	name = "Pelagios"
+	religion = "nicene"
+	culture = "syrian"
+	331.2.2 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+palestina_04 = {
+	name = "Ioannes"
+	religion = "nicene"
+	culture = "syrian"
+	368.12.23 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+palestina_08 = {
+	name = "Alypios"
+	religion = "nicene"
+	culture = "syrian"
+	448.1.21 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+palestina_05 = {
+	name = "Ignatios"
+	religion = "nicene"
+	culture = "syrian"
+	328.8.7 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+palestina_06 = {
+	name = "Arsenios"
+	religion = "nicene"
+	culture = "syrian"
+	359.1.22 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+palestina_09 = {
+	name = "Petros"
+	religion = "nicene"
+	culture = "syrian"
+	450.9.15 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+
+70587 = {
+	name = "Ioannes" # Chrisostomos
+	dynasty = 8658
+	martial = 3
+	diplomacy = 5
+	intrigue = 10
+	stewardship = 9
+	religion = nicene
+	culture = "syrian"
+	trait = just
+	trait = education_learning_4
+	347.1.1 = {
+		birth = yes
+	}
+	407.9.14 = {
+		death = yes
+	}
+}
+syria_01 = {
+	name = "Ignatios"
+	religion = "nicene"
+	culture = "syrian"
+	328.8.7 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+syria_02 = {
+	name = "Arsenios"
+	religion = "nicene"
+	culture = "syrian"
+	359.1.22 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+syria_03 = {
+	name = "Petros"
+	religion = "nicene"
+	culture = "syrian"
+	450.9.15 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+syria_05 = {
+	name = "Eusebios"
+	religion = "nicene"
+	culture = "syrian"
+	359.1.22 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+syria_06 = {
+	name = "Hypatios"
+	religion = "nicene"
+	culture = "syrian"
+	450.9.15 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+syria_07 = {
+	name = "Anthemios"
+	religion = "nicene"
+	culture = "syrian"
+	328.8.7 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+syria_08 = {
+	name = "Markos"
+	religion = "nicene"
+	culture = "syrian"
+	359.1.22 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+syria_09 = {
+	name = "Petros"
+	religion = "nicene"
+	culture = "syrian"
+	450.9.15 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+syria_10 = {
+	name = "Niphon"
+	religion = "marcionite"
+	culture = "syrian"
+	334.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+syria_11 = {
+	name = "Helias"
+	religion = "marcionite"
+	culture = "syrian"
+	360.2.13 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+syria_12 = {
+	name = "Tiberios"
+	religion = "nicene"
+	culture = "syrian"
+	450.9.15 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+syria_13 = {
+	name = "Iosephos"
+	religion = "nicene"
+	culture = "syrian"
+	336.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+syria_14 = {
+	name = "Helias"
+	religion = "nicene"
+	culture = "syrian"
+	372.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+syria_15 = {
+	name = "Tiberios"
+	religion = "nicene"
+	culture = "syrian"
+	452.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+syria_22 = {
+	name = "Akakios"
+	dna = dna_theodora
+	religion = "coptic"
+	culture = "syrian"
+	trait = strong
+	trait = brave
+	480.1.1 = {
+		birth = yes
+	}
+	515.1.1 = {
+		death = yes
+	}
+
+}
+syria_19 = {
+	name = "Theodora" # AKA Empress Theodora
+	female = yes
+	dna = dna_theodora
+	religion = "coptic" # converted after meeting the patriarch of alexandria
+	culture = "syrian" # or cypriot, it's debated
+	diplomacy = 10
+	martial = 3
+	stewardship = 7
+	intrigue = 9
+	learning = 5
+	prowess = 3
+	father = syria_22
+	trait = brave
+	trait = ambitious
+	trait = zealous
+	trait = education_diplomacy_3
+	trait = fornicator
+	trait = beauty_good_3
+	trait = intellect_good_2
+	trait = blue_support
+	sexuality = heterosexual
+	500.1.1 = {
+		birth = yes
+	}
+	530.1.1 = {
+		effect = {
+			add_opinion = {
+				target = character:cappadocia_07
+				modifier = hate_opinion
+				opinion = -100
+			}
+		}
+	}
+	548.6.28 = {
+		death = yes
+	}
+}
+syria_20 = {
+	name = "Anastasia" # Illegitimate daughter of Theodora, name unknown
+	female = yes
+	religion = "chalcedonian"
+	culture = "syrian"
+	trait = bastard
+	mother = syria_19
+	520.1.1 = {
+		birth = yes
+	}
+	559.1.1 = {
+		death = yes
+	}
+}
+syria_21 = {
+	name = "Ioannes" # Illegitimate son of Theodora, make an event where he joins byzantine court some years after the nika riots
+	religion = "coptic"
+	culture = "aegyptian"
+	trait = bastard
+	mother = syria_19
+	526.1.1 = {
+		birth = yes
+	}
+	554.1.1 = {
+		death = yes
+	}
+
+}
+syria_23 = {
+	name = "Comito"
+	female = yes
+	religion = "coptic"
+	culture = "syrian"
+	father = syria_22
+	498.1.1 = {
+		birth = yes
+	}
+	530.1.1 = {
+		add_spouse = thracio_01
+	}
+	560.1.1 = {
+		death = yes
+	}
+}
+syria_24 = {
+	name = "Anastasia"
+	female = yes
+	religion = "coptic"
+	culture = "syrian"
+	father = syria_22
+	501.1.1 = {
+		birth = yes
+	}
+	561.1.1 = {
+		death = yes
+	}
+}
+syria_25 = {
+	name = "Argyros"
+	dynasty = dynasty_argyros
+	culture = "syrian"
+	religion = "hellenic_pagan"
+	270.1.1 = {
+		birth = yes
+	}
+	325.1.1 = {
+		death = yes
+	}
+}
+syria_26 = {
+	name = "Zenobios"
+	dynasty = dynasty_argyros
+	culture = "syrian"
+	religion = "hellenic_pagan"
+	father = syria_25
+	296.1.1 = {
+		birth = yes
+	}
+	359.1.1 = {
+		death = yes
+	}
+}
+syria_27 = {
+	name = "Boethos"
+	dynasty = dynasty_argyros
+	culture = "syrian"
+	religion = "hellenic_pagan"
+	father = syria_25
+	298.1.1 = {
+		birth = yes
+	}
+	362.1.1 = {
+		death = yes
+	}
+}
+syria_28 = {
+	name = "Argyros"
+	dynasty = dynasty_argyros
+	culture = "syrian"
+	religion = "hellenic_pagan"
+	father = syria_26
+	300.1.1 = {
+		birth = yes
+	}
+	380.1.1 = {
+		death = yes
+	}
+}
+syria_29 = {
+	name = "Boethos"
+	dynasty = dynasty_argyros
+	culture = "syrian"
+	religion = "hellenic_pagan"
+	father = syria_27
+	322.1.1 = {
+		birth = yes
+	}
+	380.1.1 = {
+		death = yes
+	}
+}
+syria_30 = {
+	name = "Euboulos"
+	dynasty = dynasty_argyros
+	culture = "syrian"
+	religion = "nicene"
+	father = syria_28
+	320.1.1 = {
+		birth = yes
+	}
+	388.1.1 = {
+		death = yes
+	}
+}
+syria_31 = {
+	name = "Obodianos"
+	dynasty = dynasty_argyros
+	culture = "syrian"
+	religion = "hellenic_pagan"
+	father = syria_28
+	322.1.1 = {
+		birth = yes
+	}
+	392.1.1 = {
+		death = yes
+	}
+}
+syria_32 = {
+	name = "Argyros"
+	dynasty = dynasty_argyros
+	culture = "syrian"
+	religion = "hellenic_pagan"
+	father = syria_31
+	342.1.1 = {
+		birth = yes
+	}
+	397.1.1 = {
+		death = yes
+	}
+}
+syria_33 = {
+	name = "Argyros"
+	dynasty = dynasty_argyros
+	culture = "syrian"
+	religion = "hellenic_pagan"
+	father = syria_32
+	365.1.1 = {
+		birth = yes
+	}
+	430.1.1 = {
+		death = yes
+	}
+}
+syria_34 = {
+	name = "Ioannes"
+	dynasty = dynasty_malalas
+	culture = "syrian"
+	religion = "chalcedonian"
+	trait = scholar
+	491.1.1 = {
+		birth = yes
+	}
+	578.1.1 = {
+		death = yes
+	}
+}
+syria_35 = {
+	name = "Diogenes"
+	dynasty = sampsigeramis_dynasty
+	culture = "syrian"
+	religion = "emesa_pagan"
+	426.1.1 = {
+		birth = yes
+	}
+	454.1.1 = {
+		add_spouse = syria_36
+	}
+	471.1.1 = {
+		death = yes
+	}
+}
+syria_36 = {
+	name = "Kyrina"
+	female = yes
+	culture = "syrian"
+	religion = "emesa_pagan"
+	428.1.1 = {
+		birth = yes
+	}
+	476.1.1 = {
+		death = yes
+	}
+}
+syria_37 = { # Real philosopher
+	name = "Theodora"
+	female = yes
+	dynasty = sampsigeramis_dynasty
+	culture = "syrian"
+	religion = "emesa_pagan"
+	father = syria_35
+	mother = syria_36
+	trait = education_learning_4
+	trait = scholar
+	trait = chaste
+	trait = lifestyle_mystic
+	456.1.1 = {
+		birth = yes
+	}
+	476.11.2 = {
+		set_relation_friend = character:aegyptus_94
+	}
+	533.1.1 = {
+		death = yes
+	}
+}
+syria_38 = { # Real philosopher
+	name = "Marinos"
+	dynasty = neapolis_dynasty
+	culture = "syrian"
+	religion = "samaritan"
+	trait = education_learning_4
+	trait = scholar
+	trait = lifestyle_mystic
+	trait = poet
+	435.1.1 = {
+		birth = yes
+	}
+	476.1.1 = {
+		set_relation_friend = character:greek_20
+		set_relation_friend = character:aegyptus_94
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+syria_39 = { # Real philosopher
+	name = "Libanios"
+	culture = "syrian"
+	religion = "hellenic_pagan"
+	trait = education_learning_4
+	trait = diligent
+	trait = zealous
+	trait = calm
+	trait = scholar
+	314.1.1 = {
+		birth = yes
+	}
+	361.1.1 = {
+		set_relation_friend = character:145237
+	}
+	392.1.1 = {
+		death = yes
+	}
+}
+### Roman Oriential Province of Arabia ###
+roman_arabia_01 = {
+	name = "Ioannes"
+	religion = "nicene"
+	culture = "syrian"
+	322.1.1 = {
+		birth = yes
+	}
+	368.1.1 = {
+		death = yes
+	}
+}
+roman_arabia_02 = {
+	name = "Nikephoros"
+	religion = "nicene"
+	culture = "syrian"
+	372.1.1 = {
+		birth = yes
+	}
+	418.1.1 = {
+		death = yes
+	}
+}
+roman_arabia_03 = {
+	name = "Nikephoros"
+	religion = "chalcedonian"
+	culture = "syrian"
+	429.1.1 = {
+		birth = yes
+	}
+	479.1.1 = {
+		death = yes
+	}
+}
+
+
+
+#############################################################
+# 
+# SELEUCID CHARACTERS
+# 
+# Done by Cybrxkhan
+# 
+#############################################################
+
+# Ptolemy V's wife, Cleopatra
+# (Seleucid)
+seleucid_001 = {
+	name = "Cleopatra"
+	female = yes
+	dynasty = dynasty_seleucid
+	culture = syrian
+	religion = "hellenic_pagan"
+	-203.5.14 = { # Unknown
+		birth = yes
+	}
+	-193.12.25 = {
+		religion = "greco_egyptian_pagan"
+	}
+	-175.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+
+
+#############################################################
+# 
+# MISC PLACEHOLDERS AND HISTORICAL CHARACTERS
+# 
+# Done by Cybrxkhan
+# 
+#############################################################
+
+
+syrian_misc_01 = {
+	name = "Niketas"
+	religion = "syriac"
+	culture = "syrian"
+	501.3.22 = {
+		birth = yes
+	}
+	560.8.2 = {
+		death = yes
+	}
+}
+
+syrian_misc_02 = {
+	name = "Pelagios"
+	religion = "syriac"
+	culture = "syrian"
+	497.7.10 = {
+		birth = yes
+	}
+	549.6.2 = {
+		death = yes
+	}
+}
+
+syrian_misc_03 = {
+	name = "Bardas"
+	religion = "syriac"
+	culture = "syrian"
+	507.3.1 = {
+		birth = yes
+	}
+	590.2.6 = {
+		death = yes
+	}
+}
+
+syrian_misc_04 = {
+	name = "Akakios"
+	religion = "syriac"
+	culture = "syrian"
+	488.6.4 = {
+		birth = yes
+	}
+	553.2.11 = {
+		death = yes
+	}
+}
+
+syrian_misc_05 = {
+	name = "Pavlos"
+	religion = "syriac"
+	culture = "syrian"
+	494.9.2 = {
+		birth = yes
+	}
+	549.3.6 = {
+		death = yes
+	}
+}
+
+# Damascius
+# Last of the Athenian Neoplatonists
+syrian_misc_06 = {
+	name = "Damaskios"
+	dynasty = TFE_damascius_dynasty
+	culture = "syrian"
+	religion = "hellenic_pagan"
+	trait = education_learning_4
+	trait = scholar
+	trait = zealous
+	trait = lifestyle_mystic
+	trait = poet
+	460.1.1 = { # Around 462, moved a little down so he's an adult in 476
+		birth = yes
+		effect = { add_character_flag = do_not_generate_starting_family }
+	}
+	476.11.2 = {
+		set_relation_friend = character:greek_20
+		set_relation_friend = character:aegyptus_91
+		set_relation_friend = character:syrian_misc_07
+		set_relation_friend = character:syria_37
+	}
+	538.11.2 = { # Supposedly around 538
+		death = yes
+	}
+}
+

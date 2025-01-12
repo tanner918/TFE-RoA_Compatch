@@ -1,0 +1,1348 @@
+﻿headgear_armor = {
+
+	usage = game
+	selection_behavior = weighted_random
+	priority = 4
+
+## DDE HRE ##
+
+	dde_hre_war_low_nobles = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = dde_hre_war
+				accessory = m_headgear_sec_dde_hre_war_nob_01_lo
+			}
+		}
+		outfit_tags = { military_outfit }
+		weight = {
+			base = 0
+			modifier = {
+				add = 60 # larger than the western war headgear
+				portrait_war_nobles_helmet_trigger = {
+					CULTURE_INPUT = dde_hre
+				}
+                OR = {
+                    portrait_commoner_armor_trigger = { 
+                        CULTURE_INPUT = dde_hre
+                    }
+                    portrait_low_nobles_armor_trigger = { 
+                        CULTURE_INPUT = dde_hre
+                    }
+                }
+			}
+            modifier = {
+                factor = 0       # Should NOT show up if EP2 is active and we're not in the right era
+                has_ep2_dlc_trigger = yes   
+                NOT = { portrait_era3_trigger = yes } 
+            }
+		}
+	}
+
+	dde_hre_war_high_nobles = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = dde_hre_war
+				accessory = m_headgear_sec_dde_hre_war_nob_01_hi
+			}
+		}
+		outfit_tags = { military_outfit }
+		weight = {
+			base = 0
+			modifier = {
+				add = 60 # larger than the western war headgear
+				portrait_war_nobles_helmet_trigger = {
+					CULTURE_INPUT = dde_hre
+				}
+                portrait_high_nobles_armor_trigger = {
+                    CULTURE_INPUT = dde_hre
+                }
+			}
+            modifier = {
+                factor = 0       # Should NOT show up if EP2 is active and we're not in the right era
+                has_ep2_dlc_trigger = yes   
+                NOT = { portrait_era3_trigger = yes } 
+            }
+		}
+	}
+
+	dde_hre_war_royalty = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = dde_hre_war
+				accessory = m_headgear_sec_dde_hre_war_nob_01_roy
+			}
+		}
+		outfit_tags = { military_outfit }
+		weight = {
+			base = 0
+			modifier = {
+				add = 60 # larger than the western war headgear
+				portrait_war_nobles_helmet_trigger = {
+					CULTURE_INPUT = dde_hre
+				}
+                portrait_royalty_armor_trigger = {
+                    CULTURE_INPUT = dde_hre
+                }
+			}
+            modifier = {
+                factor = 0       # Should NOT show up if EP2 is active and we're not in the right era
+                has_ep2_dlc_trigger = yes   
+                NOT = { portrait_era3_trigger = yes } 
+            }
+		}
+	}
+
+## Western ##
+
+	western_war = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = western_war
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 50
+				portrait_war_nobles_helmet_trigger = {
+					CULTURE_INPUT = western 
+				}
+			}
+            modifier = {
+                factor = 0       # Should NOT show up if EP2 is active and we're not in the right era
+                has_ep2_dlc_trigger = yes   
+                portrait_era1_trigger = yes
+            }
+		}
+	}
+
+	ep2_western_era1_war = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = ep2_western_era1_war_nobility
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 90
+				portrait_war_nobles_helmet_trigger = {
+					CULTURE_INPUT = western 
+				}
+				has_ep2_dlc_trigger = yes
+				portrait_era1_armor_trigger = yes
+			}
+		}
+	}
+
+	ep2_western_era2_war = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = ep2_western_era2_war_nobility
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 90
+				portrait_war_nobles_helmet_trigger = {
+					CULTURE_INPUT = western 
+				}
+				has_ep2_dlc_trigger = yes
+				OR = {
+                    portrait_era2_armor_trigger = yes
+                    portrait_era3_armor_trigger = yes
+                }
+			}
+		}
+	}
+
+	ep2_western_era3_war_commoners = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = ep2_western_era3_war_nobility
+				value = 0
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 90
+				portrait_war_nobles_helmet_trigger = {
+					CULTURE_INPUT = western 
+				}
+                portrait_commoner_armor_trigger = { 
+                    CULTURE_INPUT = western
+                }
+				has_ep2_dlc_trigger = yes
+				portrait_era3_trigger = yes # not using the armor trigger here because that was changed to be less historically accurate
+			}
+		}
+	}
+
+	ep2_western_era3_war_low_nobles = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = ep2_western_era3_war_nobility
+				value = 0.5
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 90
+				portrait_war_nobles_helmet_trigger = {
+					CULTURE_INPUT = western 
+				}
+                portrait_low_nobles_armor_trigger = { 
+                    CULTURE_INPUT = western
+                }
+				has_ep2_dlc_trigger = yes
+				portrait_era3_trigger = yes # not using the armor trigger here because that was changed to be less historically accurate
+			}
+		}
+	}
+
+	ep2_western_era3_war_high_nobles = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = ep2_western_era3_war_nobility
+				value = 1
+			}
+			accessory = {
+                mode = add
+                gene = secondary_headgears
+                template = coa_crest
+                value = 1
+            }
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				portrait_war_nobles_helmet_trigger = {
+					CULTURE_INPUT = western 
+				}
+                portrait_high_nobles_armor_trigger = {
+                    CULTURE_INPUT = dde_hre
+                }
+				has_ep2_dlc_trigger = yes
+				portrait_era3_trigger = yes # not using the armor trigger here because that was changed to be less historically accurate
+			}
+		}
+	}
+
+	ep2_western_era4_war = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = ep2_western_era4_war_nobility
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				portrait_war_nobles_helmet_trigger = {
+					CULTURE_INPUT = western 
+				}
+				has_ep2_dlc_trigger = yes
+				portrait_era4_armor_trigger = yes
+			}
+		}
+	}
+
+	crusades_western_war = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = crusades_western_war
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		outfit_tags = { military_outfit }
+		weight = {
+			base = 0
+			modifier = {
+				add = 110
+				current_date >= 900.1.1
+				portrait_wear_helmet_trigger = yes
+				portrait_western_crusades_trigger = yes
+			}
+			modifier = {
+				add = 110
+				current_date >= 900.1.1
+				portrait_wear_helmet_trigger = yes
+				portrait_ep2_disguised_woman_trigger = yes
+			}
+		}
+	}
+
+## Byzantine ##
+
+    byzantine_war_low_nobles = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = byzantine_war
+                accessory = m_headgear_sec_byzantine_war_nob_01_lo
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50 # larger than the western war headgear
+                portrait_war_nobles_helmet_trigger = {
+                    CULTURE_INPUT = byzantine
+                }
+                OR = {
+                    portrait_commoner_armor_trigger = { 
+                        CULTURE_INPUT = byzantine
+                    }
+                    portrait_low_nobles_armor_trigger = { 
+                        CULTURE_INPUT = byzantine
+                    }
+                }
+            }
+        }
+    }
+
+    byzantine_war_high_nobles = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = byzantine_war
+                accessory = m_headgear_sec_byzantine_war_nob_01_hi
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50 # larger than the western war headgear
+                portrait_war_nobles_helmet_trigger = {
+                    CULTURE_INPUT = byzantine
+                }
+                portrait_high_nobles_armor_trigger = {
+                    CULTURE_INPUT = byzantine
+                }
+            }
+        }
+    }
+
+    byzantine_war_royalty = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = byzantine_war
+                accessory = m_headgear_sec_byzantine_war_nob_01_roy
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 60 # larger than the western war headgear
+                portrait_war_nobles_helmet_trigger = {
+                    CULTURE_INPUT = byzantine
+                }
+                portrait_royalty_armor_trigger = {
+                    CULTURE_INPUT = byzantine
+                }
+            }
+        }
+    }
+
+	ep2_byzantine_war = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = ep2_byzantine_war_nobility
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		outfit_tags = { military_outfit }
+		weight = {
+			base = 0
+			modifier = {
+				add = 60
+				portrait_war_nobles_helmet_trigger = {
+					CULTURE_INPUT = byzantine
+				}
+				has_ep2_dlc_trigger = yes 
+			}
+			modifier = {
+                factor = 0        # Not used if EP3 is active and we're in the wrong era
+                has_ep3_dlc_trigger = yes
+                OR = {
+                    portrait_era1_armor_trigger = yes
+                    portrait_era2_armor_trigger = yes
+                }
+            }
+		}
+	}
+
+	ep3_byzantine_era1_war = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = ep3_byzantine_era1_war_nobility
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 60
+                portrait_war_nobles_helmet_trigger = {
+                    CULTURE_INPUT = byzantine
+                }
+                has_ep3_dlc_trigger = yes
+                OR = {
+                    portrait_era1_armor_trigger = yes
+                    portrait_era2_armor_trigger = yes
+                }
+            }
+        }
+    }
+
+    ep3_byzantine_era2_war = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = ep3_byzantine_era2_war_nobility
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 60
+                portrait_war_nobles_helmet_trigger = {
+                    CULTURE_INPUT = byzantine
+                }
+                has_ep3_dlc_trigger = yes
+                OR = {
+                    portrait_era3_armor_trigger = yes
+                    portrait_era4_armor_trigger = yes
+                }
+            }
+        }
+    }
+
+## Indian ##
+
+    indian_war_low_nobles = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = indian_war
+                accessory = m_headgear_sec_indian_war_nob_01_lo
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50 # larger than the western war headgear
+                portrait_war_nobles_helmet_trigger = {
+                    CULTURE_INPUT = indian
+                }
+                OR = {
+                    portrait_commoner_armor_trigger = { 
+                        CULTURE_INPUT = indian
+                    }
+                    portrait_low_nobles_armor_trigger = { 
+                        CULTURE_INPUT = indian
+                    }
+                }
+            }
+        }
+    }
+
+    indian_war_high_nobles = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = indian_war
+                accessory = m_headgear_sec_indian_war_nob_01_hi
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50 # larger than the western war headgear
+                portrait_war_nobles_helmet_trigger = {
+                    CULTURE_INPUT = indian
+                }
+                portrait_high_nobles_armor_trigger = {
+                    CULTURE_INPUT = indian
+                }
+            }
+        }
+    }
+
+    indian_war_royalty = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = indian_war
+                accessory = m_headgear_sec_indian_war_nob_01_roy
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 101 
+                portrait_war_nobles_helmet_trigger = {
+                    CULTURE_INPUT = indian
+                }
+                portrait_royalty_armor_trigger = {
+                    CULTURE_INPUT = indian
+                }
+            }
+        }
+    }
+
+	ep2_indian_war = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = ep2_indian_war_nobility
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		outfit_tags = { military_outfit }
+		weight = {
+			base = 0
+			modifier = {
+				add = 60
+                portrait_war_nobles_helmet_trigger = {
+                    CULTURE_INPUT = indian
+                }
+                has_ep2_dlc_trigger = yes
+			}
+		}
+	}
+
+## MENA ##
+
+    mena_war_low_nobles = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = mena_war
+                range = { 0 0.49 }
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50 
+                portrait_war_nobles_helmet_trigger = {
+                    CULTURE_INPUT = mena
+                }
+                OR = {
+                    portrait_commoner_armor_trigger = { 
+                        CULTURE_INPUT = mena
+                    }
+                    portrait_low_nobles_armor_trigger = { 
+                        CULTURE_INPUT = mena
+                    }
+                }
+            }
+        }
+    }
+
+    mena_war_high_nobles = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = mena_war
+                range = { 0.51 1 }
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50 
+                portrait_war_nobles_helmet_trigger = {
+                    CULTURE_INPUT = mena
+                }
+                portrait_high_nobles_armor_trigger = {
+                    CULTURE_INPUT = mena
+                }
+            }
+        }
+    }
+
+	ep2_mena_war = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = ep2_mena_war_nobility
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		outfit_tags = { military_outfit }
+		weight = {
+			base = 0
+			modifier = {
+				add = 60
+                portrait_war_nobles_helmet_trigger = {
+                    CULTURE_INPUT = mena
+                }
+                has_ep2_dlc_trigger = yes
+			}
+		}
+	}
+
+## DDE Abbasid ##
+
+    dde_abbasid_war_low_nobles = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = dde_abbasid_war
+                accessory = m_headgear_sec_dde_abbasid_war_nob_01_lo
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50 
+                portrait_war_nobles_helmet_trigger = {
+                    CULTURE_INPUT = dde_abbasid
+                }
+                OR = {
+                    portrait_commoner_armor_trigger = { 
+                        CULTURE_INPUT = dde_abbasid
+                    }
+                    portrait_low_nobles_armor_trigger = { 
+                        CULTURE_INPUT = dde_abbasid
+                    }
+                }
+            }
+        }
+    }
+
+    dde_abbasid_war_high_nobles = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = dde_abbasid_war
+                accessory = m_headgear_sec_dde_abbasid_war_nob_01_hi
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50 
+                portrait_war_nobles_helmet_trigger = {
+                    CULTURE_INPUT = dde_abbasid
+                }
+                portrait_high_nobles_armor_trigger = {
+                    CULTURE_INPUT = dde_abbasid
+                }
+            }
+        }
+    }
+
+## Steppe ##
+
+    steppe_war_low_nobles = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = steppe_war
+                accessory = m_headgear_sec_steppe_war_nob_01_lo
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50 
+                portrait_war_nobles_helmet_trigger = {
+                    CULTURE_INPUT = steppe
+                }
+                OR = {
+                    portrait_commoner_armor_trigger = { 
+                        CULTURE_INPUT = steppe
+                    }
+                    portrait_low_nobles_armor_trigger = { 
+                        CULTURE_INPUT = steppe
+                    }
+                }
+            }
+        }
+    }
+
+    steppe_war_high_nobles = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = steppe_war
+                accessory = m_headgear_sec_steppe_war_nob_01_hi
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50 
+                portrait_war_nobles_helmet_trigger = {
+                    CULTURE_INPUT = steppe
+                }
+                portrait_high_nobles_armor_trigger = {
+                    CULTURE_INPUT = steppe
+                }
+            }
+        }
+    }
+
+	ep2_steppe_war = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = ep2_steppe_war_nobility
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		outfit_tags = { military_outfit }
+		weight = {
+			base = 0
+			modifier = {
+				add = 60
+                portrait_war_nobles_helmet_trigger = {
+                    CULTURE_INPUT = steppe
+                }
+                has_ep2_dlc_trigger = yes
+			}
+		}
+	}
+
+## Northern ##
+
+    northern_war_low_nobles = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = northern_war
+                accessory = m_headgear_sec_northern_war_nob_01_lo
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50 
+                portrait_war_nobles_helmet_trigger = {
+                    CULTURE_INPUT = northern
+                }
+                OR = {
+                    portrait_commoner_armor_trigger = { 
+                        CULTURE_INPUT = northern
+                    }
+                    portrait_low_nobles_armor_trigger = { 
+                        CULTURE_INPUT = northern
+                    }
+                }
+            }
+        }
+    }
+
+    northern_war_high_nobles = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = northern_war
+                accessory = m_headgear_sec_northern_war_nob_01_hi
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 50 
+                portrait_war_nobles_helmet_trigger = {
+                    CULTURE_INPUT = northern
+                }
+                portrait_high_nobles_armor_trigger = {
+                    CULTURE_INPUT = northern
+                }
+            }
+        }
+    }
+
+## FP2 Fate of Iberia ##
+
+	fp2_iberian_muslim_war_low_nobles = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = fp2_muslim_war_nobility
+				accessory = m_headgear_sec_fp2_iberian_muslim_war_nob_01_lo
+			}
+		}
+		outfit_tags = { military_outfit }
+		weight = {
+			base = 0
+			modifier = {
+				add = 60 # slightly higher
+                current_date >= 900.1.1
+                portrait_war_nobles_helmet_trigger = {
+                    CULTURE_INPUT = fp2_iberian_muslim
+                }
+                OR = {
+                    portrait_commoner_armor_trigger = { 
+                        CULTURE_INPUT = fp2_iberian_muslim
+                    }
+                    portrait_low_nobles_armor_trigger = { 
+                        CULTURE_INPUT = fp2_iberian_muslim
+                    }
+                }
+			}
+		}
+	}
+
+	fp2_iberian_muslim_war_high_nobles = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = fp2_muslim_war_nobility
+				accessory = m_headgear_sec_fp2_iberian_muslim_war_nob_01_hi
+			}
+		}
+		outfit_tags = { military_outfit }
+		weight = {
+			base = 0
+			modifier = {
+				add = 60 # slightly higher
+                current_date >= 900.1.1
+				portrait_war_nobles_fancy_helmet_trigger = yes
+                portrait_war_nobles_helmet_trigger = {
+                    CULTURE_INPUT = fp2_iberian_muslim
+                }
+                portrait_high_nobles_armor_trigger = {
+                    CULTURE_INPUT = fp2_iberian_muslim
+                }
+			}
+		}
+	}
+
+    fp2_iberian_christian_war_low_nobles = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = fp2_christian_war_nobility
+                accessory = m_headgear_sec_fp2_iberian_christian_war_nob_01_lo
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 60 # larger than the western war headgear
+                current_date >= 900.1.1
+                portrait_war_nobles_helmet_trigger = {
+                    CULTURE_INPUT = fp2_iberian_christian
+                }
+                OR = {
+                    portrait_commoner_armor_trigger = { 
+                        CULTURE_INPUT = fp2_iberian_christian
+                    }
+                    portrait_low_nobles_armor_trigger = { 
+                        CULTURE_INPUT = fp2_iberian_christian
+                    }
+                }
+            }
+            modifier = {
+                factor = 0       # Should NOT show up if EP2 is active and we're not in the right era
+                has_ep2_dlc_trigger = yes   
+                NOR = { 
+                	portrait_era2_trigger = yes 
+                	portrait_era3_trigger = yes
+                } 
+            }
+        }
+    }
+
+    fp2_iberian_christian_war_high_nobles = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = fp2_christian_war_nobility
+                accessory = m_headgear_sec_fp2_iberian_christian_war_nob_01_hi
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 60 # larger than the western war headgear
+                current_date >= 900.1.1
+                portrait_war_nobles_helmet_trigger = {
+                    CULTURE_INPUT = fp2_iberian_christian
+                }
+                portrait_high_nobles_armor_trigger = {
+                    CULTURE_INPUT = fp2_iberian_christian
+                }
+            }
+            modifier = {
+                factor = 0       # Should NOT show up if EP2 is active and we're not in the right era
+                has_ep2_dlc_trigger = yes   
+                NOR = { 
+                	portrait_era2_trigger = yes 
+                	portrait_era3_trigger = yes
+                } 
+            }
+        }
+    }
+
+## FP1 Norse ##
+
+	fp1_norse_war = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = fp1_war
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		outfit_tags = { military_outfit }
+		weight = {
+			base = 0
+			modifier = {
+				add = 60 # slightly higher than northern
+                portrait_war_nobles_fancy_helmet_trigger = yes
+                portrait_war_nobles_helmet_trigger = {
+                    CULTURE_INPUT = fp1_norse
+                }
+			}
+		}
+	}
+
+	fp1_norse_war_common = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = fp1_war_common
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 60
+                portrait_war_nobles_helmet_trigger = {
+                    CULTURE_INPUT = fp1_norse
+                }
+			}
+		}
+	}
+
+## Sub-Saharan Africans ##
+
+	sub_saharan_war = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = mena_war
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		outfit_tags = { military_outfit }
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+                portrait_war_nobles_helmet_trigger = {
+                    CULTURE_INPUT = african
+                }
+			}
+		}
+	}
+	persian_war = {
+		dna_modifiers = {
+	        accessory = {
+	            mode = add
+	            gene = headgear
+	            template = tfe_sasanian_war_nobility_headgear
+	            range = { 0 1 }
+	        }
+			morph = {	### this should fix the nose clipping issue - aj
+				mode = modify_multiply				
+				gene = gene_bs_nose_size
+				value = 0.0
+			}			
+	    }
+		outfit_tags = { military_outfit }
+		weight = {
+	        base = 0
+	        modifier = {
+				add = 500
+				AND = {
+					portrait_wear_helmet_trigger = yes
+					culture = {
+						OR = {
+							has_cultural_pillar = heritage_syriac
+							has_cultural_pillar = heritage_iranian
+							has_cultural_pillar = heritage_caucasian
+						}
+					}
+
+					NOT = {
+						any_equipped_character_artifact = {
+							has_variable = aurelianhelmet
+						}
+					}
+				}
+			}
+			modifier = {
+				add = 500
+				AND = {
+					portrait_wear_helmet_trigger = yes
+					culture = {
+						OR = {
+							has_cultural_pillar = heritage_syriac
+							has_cultural_pillar = heritage_iranian
+							has_cultural_pillar = heritage_caucasian
+						}
+					}
+					highest_held_title_tier >= tier_kingdom
+					NOT = {
+						any_equipped_character_artifact = {
+							has_variable = aurelianhelmet
+						}
+					}
+				}
+			}
+	    }
+	}
+    roman_war = {
+		dna_modifiers = {
+	        accessory = {
+	            mode = add
+	            gene = headgear
+	            template = roman_war
+	            range = { 0 1 }
+	        }
+	    }
+		outfit_tags = { military_outfit }
+		weight = {
+	        base = 0
+	        modifier = {
+				add = 600
+				AND = {
+					portrait_wear_helmet_trigger = yes
+					OR = {
+						any_liege_or_above = {
+							OR = {
+								government_has_flag = government_is_administrative
+								government_has_flag = government_is_imperial
+								government_has_flag = government_is_autocratic
+								government_has_flag = government_is_autocratic_ep3
+								government_has_flag = government_is_imperial_cult
+							}
+						}
+						OR = {
+							government_has_flag = government_is_administrative
+							government_has_flag = government_is_imperial
+							government_has_flag = government_is_autocratic
+							government_has_flag = government_is_autocratic_ep3
+							government_has_flag = government_is_imperial_cult
+							government_has_flag = government_is_roman
+						}
+						culture = {
+							has_cultural_pillar = heritage_latin
+						}
+					}
+
+					NOT = {
+						any_equipped_character_artifact = {
+							has_variable = aurelianhelmet
+						}
+					}
+				}
+			}
+	    }
+	}
+    gladiator_war = {
+		dna_modifiers = {
+	        accessory = {
+	            mode = add
+	            gene = headgear
+	            template = gladiator_war
+	            range = { 0 1 }
+	        }
+	    }
+		weight = {
+	        base = 0
+	        modifier = {
+				add = 600
+				OR = {
+					has_trait = gladiator_trait
+					has_trait = former_gladiator_trait
+				}
+			}
+	    }
+	}
+    waterloo_helmet = {
+		dna_modifiers = {
+	        accessory = {
+	            mode = add
+	            gene = headgear
+	            template = celtic_waterloo
+	            range = { 0 1 }
+	        }
+	    }
+		outfit_tags = { military_outfit }
+		weight = {
+	        base = 0
+	        modifier = {
+				add = 600
+				AND = {
+					OR = {
+						portrait_wear_helmet_trigger = yes
+						AND = {
+							is_commanding_army = yes
+							highest_held_title_tier >= tier_duchy
+						}
+					}
+					culture = {
+						OR = {
+							has_cultural_pillar = heritage_celtic
+							has_cultural_pillar = heritage_pictish
+							has_cultural_pillar = heritage_brythonic
+							has_cultural_pillar = heritage_goidelic
+						}
+					}
+					highest_held_title_tier >= tier_duchy
+					NOT = {
+						any_equipped_character_artifact = {
+							has_variable = aurelianhelmet
+						}
+					}
+				}
+			}
+	    }
+	}
+	berru_helmet = {
+		dna_modifiers = {
+	        accessory = {
+	            mode = add
+	            gene = headgear
+	            template = celtic_berru
+	            range = { 0 1 }
+	        }
+	    }
+		outfit_tags = { military_outfit }
+		weight = {
+	        base = 0
+	        modifier = {
+				add = 500
+				AND = {
+					portrait_wear_helmet_trigger = yes
+					culture = {
+						OR = {
+							has_cultural_pillar = heritage_celtic
+							has_cultural_pillar = heritage_pictish
+							has_cultural_pillar = heritage_brythonic
+							has_cultural_pillar = heritage_goidelic
+						}
+					}
+					NOT = {
+						any_equipped_character_artifact = {
+							has_variable = aurelianhelmet
+						}
+					}
+				}
+			}
+	    }
+	}
+
+	aurelianhelmet = {
+		dna_modifiers = {
+	        accessory = {
+	            mode = add
+	            gene = headgear
+	            template = aurelianhelmet
+	            range = { 0 1 }
+	        }
+	    }
+		weight = {
+	        base = 0
+	        modifier = {
+				add = 702
+				AND = {
+					is_commanding_army = yes
+					exists = this
+					any_equipped_character_artifact = {
+						has_variable = aurelianhelmet
+					}
+				}
+			}
+	    }
+	}
+
+	centurionhelmet = {
+		dna_modifiers = {
+	        accessory = {
+	            mode = add
+	            gene = headgear
+	            template = centurionhelmet
+	            range = { 0 1 }
+	        }
+	    }
+		weight = {
+	        base = 0
+	        modifier = {
+				add = 701
+				AND = {
+					is_commanding_army = yes
+					exists = this
+					any_equipped_character_artifact = {
+						has_variable = centurionhelmet
+					}
+				}
+			}
+	    }
+	}
+
+	galeahelmet = {
+		dna_modifiers = {
+	        accessory = {
+	            mode = add
+	            gene = headgear
+	            template = galeahelmet
+	            range = { 0 1 }
+	        }
+	    }
+		weight = {
+	        base = 0
+	        modifier = {
+				add = 700
+				AND = {
+					is_commanding_army = yes
+					exists = this
+					any_equipped_character_artifact = {
+						has_variable = galeahelmet
+					}
+				}
+			}
+	    }
+	}
+	#Thracian
+	thracianInfantry = {
+		dna_modifiers = {
+	        accessory = {
+	            mode = add
+	            gene = headgear
+	            template = thracianInfantry
+	            range = { 0 1 }
+	        }
+	    }
+		weight = {
+	        base = 0
+	        modifier = {
+				add = 600
+				AND = {
+					portrait_wear_helmet_trigger = yes
+					culture = {
+						has_cultural_pillar = heritage_daco_thracian
+					}
+				}
+			}
+	    }
+	}
+
+    ## FP3 Iranian ##
+    
+    fp3_iranian_war = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = fp3_iranian_war
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+        outfit_tags = { military_outfit }
+        weight = {
+            base = 0
+            modifier = {
+                add = 60 # slightly higher than mena
+                OR = {
+                    portrait_war_nobles_helmet_trigger = {
+                        CULTURE_INPUT = fp3_iranian
+                    }
+                    portrait_high_nobles_armor_trigger = {
+                        CULTURE_INPUT = fp3_iranian
+                    }
+                }
+                has_fp3_dlc_trigger = yes
+            }
+        }
+    }
+}

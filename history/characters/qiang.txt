@@ -1,0 +1,1343 @@
+﻿#Fictional Qiang tribes
+
+qiang_01  = {
+	name="Kuanh"
+	religion="rrmeaism"
+	culture="qiang"
+	dynasty = qiang_01
+	340.1.1={
+		birth=yes
+	}
+	370.1.1 = {
+		religion = tengri_pagan
+		culture = tuyuhun
+	}
+	410.1.1={
+		death=yes
+	}
+}
+qiang_02  = {
+	name="Zjik"
+	religion="rrmeaism"
+	culture="qiang"
+	dynasty = qiang_02
+	310.1.1={
+		birth=yes
+	}
+	370.1.1={
+		death=yes
+	}
+}
+qiang_03  = {
+	name="Guang"
+	religion="rrmeaism"
+	culture="qiang"
+	dynasty = qiang_02
+	father = qiang_02
+	female = yes
+	344.1.1={
+		birth=yes
+	}
+	415.1.1={
+		death=yes
+	}
+}
+qiang_09  = {
+	name="Bai"
+	religion="rrmeaism"
+	culture="qiang"
+	dynasty = qiang_02
+	mother = qiang_03
+	368.1.1={
+		birth=yes
+	}
+	416.1.1 = {
+		religion = tengri_pagan
+		culture = tuyuhun
+	}
+	430.1.1={
+		death=yes
+	}
+}
+qiang_04  = {
+	name="Luanluan"
+	religion="old_bon"
+	culture="qiang"
+	dynasty = qiang_03
+	female = yes
+	345.1.1={
+		birth=yes
+	}
+	415.1.1={
+		death=yes
+	}
+}
+qiang_05  = {
+	name="Chu"
+	religion="rrmeaism"
+	culture="qiang"
+	dynasty = qiang_04
+	female = yes
+	345.1.1={
+		birth=yes
+	}
+	415.1.1={
+		death=yes
+	}
+}
+qiang_10  = {
+	name="Qungu"
+	religion="rrmeaism"
+	culture="qiang"
+	dynasty = qiang_04
+	female = yes
+	mother = qiang_05
+	371.1.1={
+		birth=yes
+	}
+	421.1.1={
+		death=yes
+	}
+}
+qiang_11  = {
+	name="Shen"
+	religion="old_bon"
+	culture="qiang"
+	female = yes
+	427.1.1={
+		birth=yes
+	}
+	489.1.1={
+		death=yes
+	}
+}
+qiang_12  = {
+	name="Cuiluan"
+	religion="old_bon"
+	culture="qiang"
+	female = yes
+	mother = qiang_11
+	469.1.1={
+		birth=yes
+	}
+	560.1.1={
+		death=yes
+	}
+}
+qiang_13  = {
+	name="Hongfu"
+	religion="rrmeaism"
+	culture="qiang"
+	female = yes
+	341.1.1={
+		birth=yes
+	}
+	401.1.1={
+		death=yes
+	}
+}
+qiang_14  = {
+	name="Shiguang"
+	religion="rrmeaism"
+	culture="qiang"
+	female = yes
+	339.1.1={
+		birth=yes
+	}
+	401.1.1={
+		death=yes
+	}
+}
+#Xi Dynasty - fictional placeholders
+qiang0001 = {
+	name="Kai"
+	dynasty=2003093 #Xi
+	religion="rrmeaism"
+	culture="qiang"
+	740.1.1={
+		birth=yes
+	}
+	800.1.1={
+		death=yes
+	}
+}
+
+qiang0002 = {
+	name="Pyox"
+	dynasty=2003093 #Xi
+	religion="rrmeaism"
+	culture="qiang"
+	father=qiang0001
+	760.1.1={
+		birth=yes
+	}
+	820.1.1={
+		death=yes
+	}
+}
+
+qiang0003 = {
+	name="Chjyo"
+	dynasty=2003093 #Xi
+	religion="rrmeaism"
+	culture="qiang"
+	father=qiang0002
+	780.1.1={
+		birth=yes
+	}
+	840.1.1={
+		death=yes
+	}
+}
+
+# Moved to Sumpa file
+
+# #Sumpa 
+# qiang_17 = {
+# 	name="Nuoujin"
+# 	religion="old_bon"
+# 	culture="qiang"
+# 	dynasty=2003070 #Sumpa
+# 	female = yes
+# 	298.1.1={
+# 		birth=yes
+# 	}
+# 	361.1.1={
+# 		death=yes
+# 	}
+# }
+# qiang_08  = {
+# 	name="Sun"
+# 	religion="old_bon"
+# 	culture="qiang"
+# 	dynasty=2003070 #Sumpa
+# 	female = yes
+# 	mother = qiang_17
+# 	333.1.1={
+# 		birth=yes
+# 	}
+# 	394.1.1={
+# 		death=yes
+# 	}
+# }
+# qiang_18  = {
+# 	name="Miaoyin"
+# 	religion="old_bon"
+# 	culture="qiang"
+# 	dynasty=2003070 #Sumpa
+# 	female = yes
+# 	mother = qiang_08
+# 	352.1.1={
+# 		birth=yes
+# 	}
+# 	403.1.1={
+# 		death=yes
+# 	}
+# }
+# qiang_06  = {
+# 	name="Smarkangshe"
+# 	religion="old_bon"
+# 	culture="qiang"
+# 	dynasty=2003070 #Sumpa
+# 	female = yes
+# 	mother = qiang_17
+# 	328.1.1={
+# 		birth=yes
+# 	}
+# 	415.1.1={
+# 		death=yes
+# 	}
+# }
+# sumpa_01  = {
+# 	name="Tiseto"
+# 	religion="old_bon"
+# 	culture="qiang"
+# 	dynasty=2003070 #Sumpa
+# 	female = yes
+# 	mother = qiang_06
+# 	368.1.1={
+# 		birth=yes
+# 	}
+# 	430.1.1={
+# 		death=yes
+# 	}
+# }
+# sumpa_02  = {
+# 	name="Dangra"
+# 	religion="old_bon"
+# 	culture="qiang"
+# 	dynasty=2003070 #Sumpa
+# 	female = yes
+# 	mother = sumpa_01
+# 	391.1.1={
+# 		birth=yes
+# 	}
+# 	460.1.1={
+# 		death=yes
+# 	}
+# }
+# sumpa_03  = {
+# 	name="Gemang"
+# 	religion="old_bon"
+# 	culture="qiang"
+# 	dynasty=2003070 #Sumpa
+# 	mother = sumpa_02
+# 	418.1.1={
+# 		birth=yes
+# 	}
+# 	488.1.1={
+# 		death=yes
+# 	}
+# }
+# qiang_19  = {
+# 	name="Tian"
+# 	religion="old_bon"
+# 	culture="qiang"
+# 	dynasty=2003070 #Sumpa
+# 	mother = sumpa_03
+# 	423.1.1={
+# 		birth=yes
+# 	}
+# 	499.1.1={
+# 		death=yes
+# 	}
+# }
+# sumpa_04  = {
+# 	name="Nerkya"
+# 	religion="old_bon"
+# 	culture="qiang"
+# 	dynasty=2003070 #Sumpa
+# 	father = sumpa_03
+# 	442.1.1={
+# 		birth=yes
+# 	}
+# 	512.1.1={
+# 		death=yes
+# 	}
+# }
+# sumpa_13  = {
+# 	name="Youfei"
+# 	religion="old_bon"
+# 	culture="qiang"
+# 	dynasty=2003070 #Sumpa
+# 	father = sumpa_03
+# 	461.1.1={
+# 		birth=yes
+# 	}
+# 	540.1.1={
+# 		death=yes
+# 	}
+# }
+# sumpa_05  = {
+# 	name="Mewar"
+# 	religion="old_bon"
+# 	culture="qiang"
+# 	dynasty=2003070 #Sumpa
+# 	father = sumpa_04
+# 	female = yes
+# 	482.1.1={
+# 		birth=yes
+# 	}
+# 	540.1.1={
+# 		death=yes
+# 	}
+# }
+# sumpa_12  = {
+# 	name="Dong"
+# 	religion="old_bon"
+# 	culture="qiang"
+# 	dynasty=2003070 #Sumpa
+# 	father = sumpa_04
+# 	female = yes
+# 	487.1.1={
+# 		birth=yes
+# 	}
+# 	540.1.1={
+# 		death=yes
+# 	}
+# }
+# sumpa_06  = {
+# 	name="Khirnyiri"
+# 	religion="old_bon"
+# 	culture="qiang"
+# 	dynasty=2003070 #Sumpa
+# 	mother = sumpa_05
+# 	female = yes
+# 	508.1.1={
+# 		birth=yes
+# 	}
+# 	588.1.1={
+# 		death=yes
+# 	}
+# }
+# sumpa_07  = {
+# 	name="KU_nzang"
+# 	religion="old_bon"
+# 	culture="qiang"
+# 	dynasty=2003070 #Sumpa
+# 	mother = sumpa_06
+# 	female = yes
+# 	534.1.1={
+# 		birth=yes
+# 	}
+# 	590.1.1={
+# 		death=yes
+# 	}
+# }
+# sumpa_09  = {
+# 	name="Pucha"
+# 	religion="old_bon"
+# 	culture="qiang"
+# 	dynasty=2003070 #Sumpa
+# 	mother = sumpa_07
+# 	female = yes
+# 	561.1.1={
+# 		birth=yes
+# 	}
+# 	620.1.1={
+# 		death=yes
+# 	}
+# }
+# sumpa_14  = {
+# 	name="Meilin"
+# 	religion="old_bon"
+# 	culture="qiang"
+# 	dynasty=2003070 #Sumpa
+# 	mother = sumpa_07
+# 	female = yes
+# 	566.1.1={
+# 		birth=yes
+# 	}
+# 	620.1.1={
+# 		death=yes
+# 	}
+# }
+# sumpa_15  = {
+# 	name="Junxmyon"
+# 	religion="old_bon"
+# 	culture="qiang"
+# 	dynasty=2003070 #Sumpa
+# 	mother = sumpa_14
+# 	598.1.1={
+# 		birth=yes
+# 	}
+# 	658.1.1={
+# 		death=yes
+# 	}
+# }
+# sumpa_10  = {
+# 	name="Chunqin"
+# 	religion="old_bon"
+# 	culture="qiang"
+# 	dynasty=2003070 #Sumpa
+# 	mother = sumpa_09
+# 	female = yes
+# 	595.1.1={
+# 		birth=yes
+# 	}
+# 	670.1.1={
+# 		death=yes
+# 	}
+# }
+# sumpa_16  = {
+# 	name="Dianni"
+# 	religion="old_bon"
+# 	culture="qiang"
+# 	dynasty=2003070 #Sumpa
+# 	mother = sumpa_09
+# 	female = yes
+# 	599.1.1={
+# 		birth=yes
+# 	}
+# 	670.1.1={
+# 		death=yes
+# 	}
+# }
+# sumpa_17  = {
+# 	name="Kungtriak"
+# 	religion="old_bon"
+# 	culture="qiang"
+# 	dynasty=2003070 #Sumpa
+# 	mother = sumpa_09
+# 	602.1.1={
+# 		birth=yes
+# 	}
+# 	670.1.1={
+# 		death=yes
+# 	}
+# }
+# sumpa_11  = {
+# 	name="Ghaux"
+# 	religion="old_bon"
+# 	culture="qiang"
+# 	dynasty=2003070 #Sumpa
+# 	mother = sumpa_10
+# 	632.1.1={
+# 		birth=yes
+# 	}
+# 	699.1.1={
+# 		death=yes
+# 	}
+# }
+# qiang_07  = {
+# 	name="Kungliangh"
+# 	religion="old_bon"
+# 	culture="qiang"
+# 	dynasty=2003070 #Sumpa
+# 	mother = qiang_17
+# 	329.1.1={
+# 		birth=yes
+# 	}
+# 	398.1.1={
+# 		death=yes
+# 	}
+# }
+# qiang_15  = {
+# 	name="Khrauxngyuk"
+# 	religion="old_bon"
+# 	culture="qiang"
+# 	father = qiang_07
+# 	female = yes
+# 	dynasty=2003070 #Sumpa
+# 	356.1.1={
+# 		birth=yes
+# 	}
+# 	433.1.1={
+# 		death=yes
+# 	}
+# }
+# qiang_16  = {
+# 	name="Deyao"
+# 	religion="old_bon"
+# 	culture="qiang"
+# 	father = qiang_15
+# 	dynasty=2003070 #Sumpa
+# 	423.1.1={
+# 		birth=yes
+# 	}
+# 	489.1.1={
+# 		death=yes
+# 	}
+# }
+### Gyalrong
+qiang_33  = {
+	name="Zjik"
+	religion="rrmeaism"
+	culture="qiang"
+	332.1.1={
+		birth=yes
+	}
+	400.1.1={
+		death=yes
+	}
+}
+qiang_34  = {
+	name="Kai"
+	religion="rrmeaism"
+	culture="qiang"
+	333.1.1={
+		birth=yes
+	}
+	400.1.1={
+		death=yes
+	}
+}
+qiang_35  = {
+	name="Shiguang"
+	religion="rrmeaism"
+	culture="qiang"
+	female = yes
+	322.1.1={
+		birth=yes
+	}
+	400.1.1={
+		death=yes
+	}
+}
+qiang_20  = {
+	name="Hongfu"
+	religion="rrmeaism"
+	culture="qiang"
+	female = yes
+	319.1.1={
+		birth=yes
+	}
+	400.1.1={
+		death=yes
+	}
+}
+### 
+qiang_25  = {
+	name="Kuanh"
+	religion="rrmeaism"
+	culture="qiang"
+	440.1.1={
+		birth=yes
+	}
+	500.1.1={
+		death=yes
+	}
+}
+qiang_26 = {
+	name="Luanluan"
+	religion="rrmeaism"
+	culture="qiang"
+	female = yes
+	451.1.1={
+		birth=yes
+	}
+	500.1.1={
+		death=yes
+	}
+}
+qiang_27 = {
+	name="Cuiluan"
+	religion="rrmeaism"
+	culture="qiang"
+	female = yes
+	423.1.1={
+		birth=yes
+	}
+	500.1.1={
+		death=yes
+	}
+}
+qiang_28 = {
+	name="Shen"
+	religion="rrmeaism"
+	culture="qiang"
+	female = yes
+	438.1.1={
+		birth=yes
+	}
+	500.1.1={
+		death=yes
+	}
+}
+qiang_31 = {
+	name="Pyox"
+	religion="rrmeaism"
+	culture="qiang"
+	431.1.1={
+		birth=yes
+	}
+	500.1.1={
+		death=yes
+	}
+}
+## Kham
+qiang_100 = {
+	name="Ludrub"
+	religion="old_bon"
+	culture="qiang"
+	329.1.1={
+		birth=yes
+	}
+	368.1.1={
+		death=yes
+	}
+}
+qiang_101 = {
+	name="Meri"
+	religion="old_bon"
+	culture="qiang"
+	365.1.1={
+		birth=yes
+	}
+	400.1.1={
+		death=yes
+	}
+}
+qiang_102 = {
+	name="Troto"
+	religion="old_bon"
+	culture="qiang"
+	438.1.1={
+		birth=yes
+	}
+	500.1.1={
+		death=yes
+	}
+}
+qiang_103 = {
+	name="Ngyuk"
+	religion="old_bon"
+	culture="qiang"
+	331.1.1={
+		birth=yes
+	}
+	368.1.1={
+		death=yes
+	}
+}
+qiang_104 = {
+	name="Zeghen"
+	religion="old_bon"
+	culture="qiang"
+	372.1.1={
+		birth=yes
+	}
+	400.1.1={
+		death=yes
+	}
+}
+qiang_105 = {
+	name="Dangra"
+	religion="old_bon"
+	culture="qiang"
+	female = yes
+	436.1.1={
+		birth=yes
+	}
+	500.1.1={
+		death=yes
+	}
+}
+qiang_106 = {
+	name="Skamar"
+	religion="old_bon"
+	culture="qiang"
+	319.1.1={
+		birth=yes
+	}
+	368.1.1={
+		death=yes
+	}
+}
+qiang_107 = {
+	name="Mangmo"
+	religion="old_bon"
+	culture="qiang"
+	female = yes
+	367.1.1={
+		birth=yes
+	}
+	400.1.1={
+		death=yes
+	}
+}
+qiang_108 = {
+	name="Karma"
+	religion="old_bon"
+	culture="qiang"
+	441.1.1={
+		birth=yes
+	}
+	500.1.1={
+		death=yes
+	}
+}
+qiang_109 = {
+	name="Zhamze"
+	religion="old_bon"
+	culture="qiang"
+	female = yes
+	323.1.1={
+		birth=yes
+	}
+	368.1.1={
+		death=yes
+	}
+}
+qiang_110 = {
+	name="Mertri"
+	religion="old_bon"
+	culture="qiang"
+	365.1.1={
+		birth=yes
+	}
+	400.1.1={
+		death=yes
+	}
+}
+qiang_111 = {
+	name="Muh"
+	religion="old_bon"
+	culture="qiang"
+	442.1.1={
+		birth=yes
+	}
+	500.1.1={
+		death=yes
+	}
+}
+qiang_112 = {
+	name="Panpan"
+	religion="rrmeaism"
+	culture="qiang"
+	female = yes
+	321.1.1={
+		birth=yes
+	}
+	368.1.1={
+		death=yes
+	}
+}
+qiang_113 = {
+	name="Dung"
+	religion="rrmeaism"
+	culture="qiang"
+	358.1.1={
+		birth=yes
+	}
+	400.1.1={
+		death=yes
+	}
+}
+qiang_114 = {
+	name="Tao"
+	religion="rrmeaism"
+	culture="qiang"
+	female = yes
+	432.1.1={
+		birth=yes
+	}
+	500.1.1={
+		death=yes
+	}
+}
+qiang_115 = {
+	name="Zjin"
+	religion="rrmeaism"
+	culture="qiang"
+	330.1.1={
+		birth=yes
+	}
+	378.1.1={
+		death=yes
+	}
+}
+qiang_116 = {
+	name="Zhaoyun"
+	religion="rrmeaism"
+	culture="qiang"
+	female = yes
+	370.1.1={
+		birth=yes
+	}
+	400.1.1={
+		death=yes
+	}
+}
+qiang_117 = {
+	name="Tuan"
+	religion="rrmeaism"
+	culture="qiang"
+	447.1.1={
+		birth=yes
+	}
+	500.1.1={
+		death=yes
+	}
+}
+qiang_118 = {
+	name="Wulinda"
+	religion="rrmeaism"
+	culture="qiang"
+	female = yes
+	331.1.1={
+		birth=yes
+	}
+	378.1.1={
+		death=yes
+	}
+}
+qiang_119 = {
+	name="Ngak"
+	religion="rrmeaism"
+	culture="qiang"
+	369.1.1={
+		birth=yes
+	}
+	400.1.1={
+		death=yes
+	}
+}
+qiang_120 = {
+	name="Yan"
+	religion="rrmeaism"
+	culture="qiang"
+	female = yes
+	446.1.1={
+		birth=yes
+	}
+	500.1.1={
+		death=yes
+	}
+}
+qiang_121 = {
+	name="Hyoh"
+	religion="rrmeaism"
+	culture="qiang"
+	331.1.1={
+		birth=yes
+	}
+	378.1.1={
+		death=yes
+	}
+}
+qiang_122 = {
+	name="Yi"
+	religion="rrmeaism"
+	culture="qiang"
+	female = yes
+	369.1.1={
+		birth=yes
+	}
+	400.1.1={
+		death=yes
+	}
+}
+qiang_123 = {
+	name="Jiwu"
+	religion="rrmeaism"
+	culture="qiang"
+	446.1.1={
+		birth=yes
+	}
+	500.1.1={
+		death=yes
+	}
+}
+#### UNUSED
+qiang_124 = {
+	name="Shuogu"
+	religion="rrmeaism"
+	culture="qiang"
+	female = yes
+	329.1.1={
+		birth=yes
+	}
+	378.1.1={
+		death=yes
+	}
+}
+qiang_125 = {
+	name="Ziek"
+	religion="rrmeaism"
+	culture="qiang"
+	356.1.1={
+		birth=yes
+	}
+	400.1.1={
+		death=yes
+	}
+}
+qiang_126 = {
+	name="Cuiluan"
+	religion="rrmeaism"
+	culture="qiang"
+	female = yes
+	438.1.1={
+		birth=yes
+	}
+	500.1.1={
+		death=yes
+	}
+}
+qiang_127 = {
+	name="Kuanh"
+	religion="rrmeaism"
+	culture="qiang"
+	500.1.1={
+		birth=yes
+	}
+	550.1.1={
+		death=yes
+	}
+}
+qiang_128 = {
+	name="Muh"
+	religion="rrmeaism"
+	culture="qiang"
+	500.1.1={
+		birth=yes
+	}
+	550.1.1={
+		death=yes
+	}
+}
+qiang_129 = {
+	name="Chen"
+	religion="rrmeaism"
+	culture="qiang"
+	505.1.1={
+		birth=yes
+	}
+	550.1.1={
+		death=yes
+	}
+}
+qiang_130 = {
+	name="Jiwu"
+	religion="rrmeaism"
+	culture="qiang"
+	504.1.1={
+		birth=yes
+	}
+	550.1.1={
+		death=yes
+	}
+}
+qiang_131 = {
+	name="Cuiluan"
+	female = yes
+	religion="rrmeaism"
+	culture="qiang"
+	505.1.1={
+		birth=yes
+	}
+	550.1.1={
+		death=yes
+	}
+}
+qiang_132 = {
+	name="Tuan"
+	religion="rrmeaism"
+	culture="qiang"
+	502.1.1={
+		birth=yes
+	}
+	550.1.1={
+		death=yes
+	}
+}
+qiang_133 = {
+	name="Ginhan"
+	religion="rrmeaism"
+	culture="qiang"
+	502.1.1={
+		birth=yes
+	}
+	550.1.1={
+		death=yes
+	}
+}
+qiang_134 = {
+	name="Nalan"
+	female = yes
+	religion="rrmeaism"
+	culture="qiang"
+	504.1.1={
+		birth=yes
+	}
+	550.1.1={
+		death=yes
+	}
+}
+qiang_135 = {
+	name="Lin"
+	religion="rrmeaism"
+	culture="qiang"
+	500.1.1={
+		birth=yes
+	}
+	550.1.1={
+		death=yes
+	}
+}
+
+#############################################################
+# 
+# ER QIANG/CHUO QIANG RULERS
+# Mistakenly called Tibetans sometimes, but probably more like Qiang proper
+# Or, because Qiang was an ambiguous term that was often reinterpreted to describe different groups,
+# These Qiang may have even been Yuezhi/Dardic/Iranian who assimilated into Tibetan/Dardic later on
+# MIGHT HAVE TO LOOK INTO WHETHER TO DEPICT THEM AS IRANIAN/DARDIC/YUEZHI OR NOT LATER
+# 
+# Done by Cybrxkhan
+# 
+#############################################################
+
+# Er Qiang South of Nandou (Gilgit)
+er_qiang_south_001 = {
+	name="Synmyox"
+	religion="nuristani_pagan"
+	culture="qiang"
+	dynasty=dynasty_er_qiang
+	329.1.14={
+		birth=yes
+	}
+	389.6.7={
+		death=yes
+	}
+}
+
+er_qiang_south_002 = {
+	name="Gianx"
+	religion="nuristani_pagan"
+	culture="qiang"
+	dynasty=dynasty_er_qiang
+	father=er_qiang_south_001
+	359.3.5={
+		birth=yes
+	}
+	421.3.14={
+		death=yes
+	}
+}
+
+er_qiang_south_003 = {
+	name="Myonkuangx"
+	religion="nuristani_pagan"
+	culture="qiang"
+	dynasty=dynasty_er_qiang
+	father=er_qiang_south_002
+	382.6.10={
+		birth=yes
+	}
+	447.12.30={
+		death=yes
+	}
+}
+
+er_qiang_south_004 = {
+	name="Lit"
+	religion="nuristani_pagan"
+	culture="qiang"
+	dynasty=dynasty_er_qiang
+	father=er_qiang_south_003
+	411.11.2={
+		birth=yes
+	}
+	468.1.24={
+		death=yes
+	}
+}
+
+er_qiang_south_005 = {
+	name="Chjyo"
+	religion="nuristani_pagan"
+	culture="qiang"
+	dynasty=dynasty_er_qiang
+	father=er_qiang_south_004
+	449.12.6={
+		birth=yes
+	}
+	529.7.1={
+		death=yes
+	}
+}
+
+er_qiang_south_006 = {
+	name="Ciep"
+	religion="nuristani_pagan"
+	culture="qiang"
+	dynasty=dynasty_er_qiang
+	father=er_qiang_south_005
+	489.2.6={
+		birth=yes
+	}
+	551.12.19={
+		death=yes
+	}
+}
+
+# Er Qiang around Rutog
+chuo_qiang_001 = {
+	name="Ngang"
+	religion="rrmeaism"
+	culture="qiang"
+	dynasty=dynasty_chuo_qiang
+	333.7.22={
+		birth=yes
+	}
+	393.12.4={
+		death=yes
+	}
+}
+
+chuo_qiang_002 = {
+	name="Zrix_an"
+	religion="rrmeaism"
+	culture="qiang"
+	dynasty=dynasty_chuo_qiang
+	father=chuo_qiang_001
+	371.1.3={
+		birth=yes
+	}
+	437.10.9={
+		death=yes
+	}
+}
+
+chuo_qiang_003 = {
+	name="Synh"
+	religion="rrmeaism"
+	culture="qiang"
+	dynasty=dynasty_chuo_qiang
+	father=chuo_qiang_002
+	406.4.12={
+		birth=yes
+	}
+	464.7.3={
+		death=yes
+	}
+}
+
+chuo_qiang_004 = {
+	name="Kionx"
+	religion="rrmeaism"
+	culture="qiang"
+	dynasty=dynasty_chuo_qiang
+	father=chuo_qiang_003
+	443.7.30={
+		birth=yes
+	}
+	501.10.3={
+		death=yes
+	}
+}
+
+chuo_qiang_005 = {
+	name="Sieuhdriuh"
+	religion="rrmeaism"
+	culture="qiang"
+	dynasty=dynasty_chuo_qiang
+	father=chuo_qiang_004
+	477.7.6={
+		birth=yes
+	}
+	525.8.2={
+		death=yes
+	}
+}
+
+chuo_qiang_006 = {
+	name="Khraix"
+	religion="rrmeaism"
+	culture="qiang"
+	dynasty=dynasty_chuo_qiang
+	father=chuo_qiang_005
+	511.2.6={
+		birth=yes
+	}
+	578.4.1={
+		death=yes
+	}
+}
+
+
+
+
+#############################################################
+# 
+# QUEENDOM/KINGDOM OF WOMEN
+# Per Bettina Zeisler, it is unreasonable to assume no historical basis for the legendary "Queendom of Women" (Nuguo in Chinese sources, Strirajya in Indian sources)
+# This is because the Tuyuhun entered a political alliance with the Hephthalites (or some other Eastern Huns?) c. 445 CE
+# And around this time, also offered the Chinese court golden wine vases from Nuguo as tribute.
+# This implies Nuguo *was* a place, and perhaps one on the way from the Tuyuhun territory in eastern TIbet to Eastern Hun territory, aka the area around Ladakh
+# Zeisler also mentions an envoy from Nuguo at the Chinese court as well.
+# There appears to possibly have been two states known as Nuguo, on the opposite ends of Tibet, so Zeisler suggests they were two different polities.
+# Ultimately, whether the Queendom of Women exists or not, I believe a reasonable way to depict this is as a petty territory in northern Ladakh.
+# I have made them Qiang, rather than Saka/Iranian (which might have been their ultimate origin), in order to take advantage of the Equal Inheritance tradiiton
+# I put them in Aksai Chin which might be a bit to the east of where Zeisler has them, but within reasonable range.
+# MIGHT HAVE TO LOOK INTO WHETHER TO DEPICT THEM AS IRANIAN/DARDIC/YUEZHI OR NOT LATER
+# 
+# Done by Cybrxkhan
+# 
+#############################################################
+
+nuguo_001 = {
+	name="Ghungngyuk"
+	female=yes
+	religion="rrmeaism"
+	culture="qiang"
+	dynasty=dynasty_nuguo
+	331.7.6={
+		birth=yes
+	}
+	391.12.14={
+		death=yes
+	}
+}
+
+nuguo_002 = {
+	name="Zhuzhu"
+	female=yes
+	religion="rrmeaism"
+	culture="qiang"
+	dynasty=dynasty_nuguo
+	mother=nuguo_001
+	366.9.1={
+		birth=yes
+	}
+	418.11.10={
+		death=yes
+	}
+}
+
+nuguo_003 = {
+	name="Jiuge"
+	female=yes
+	religion="rrmeaism"
+	culture="qiang"
+	dynasty=dynasty_nuguo
+	mother=nuguo_002
+	397.1.26={
+		birth=yes
+	}
+	468.5.23={
+		death=yes
+	}
+}
+
+nuguo_004 = {
+	name="Hiangyon"
+	female=yes
+	religion="rrmeaism"
+	culture="qiang"
+	dynasty=dynasty_nuguo
+	mother=nuguo_003
+	431.7.8={
+		birth=yes
+	}
+	509.7.18={
+		death=yes
+	}
+}
+
+nuguo_005 = {
+	name="Pucha"
+	female=yes
+	religion="rrmeaism"
+	culture="qiang"
+	dynasty=dynasty_nuguo
+	mother=nuguo_004
+	460.1.9={
+		birth=yes
+	}
+	518.11.10={
+		death=yes
+	}
+}
+
+nuguo_006 = {
+	name="Shuiqiu"
+	female=yes
+	religion="rrmeaism"
+	culture="qiang"
+	dynasty=dynasty_nuguo
+	mother=nuguo_005
+	492.5.3={
+		birth=yes
+	}
+	531.7.12={
+		death=yes
+	}
+}
+
+nuguo_007 = {
+	name="Jinluan"
+	female=yes
+	religion="rrmeaism"
+	culture="qiang"
+	dynasty=dynasty_nuguo
+	mother=nuguo_006
+	513.4.26={
+		birth=yes
+	}
+	567.4.3={
+		death=yes
+	}
+}

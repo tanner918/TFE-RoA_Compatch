@@ -1,0 +1,15 @@
+﻿l_english:
+
+ 365_earthquake_GLOSS: "In the year 365, a major #bold earthquake#! occurred at dawn in the eastern Mediterranean, with an epicenter near western Crete. It was estimated to have a magnitude of 8.5 or greater, and was followed by a massive tsunami; the earthquake and subsequent tsunami caused widespread devastation throughout the Mediterranean, particularly in the east, which took years to recover from. Alexandria in particular was hit hard by the earthquake and tsunami, suffering massive damage."
+ TFE_365_earthquake_impact_region_greater: "Eastern Mediterranean"
+
+ major_disasters.0011.t:0 "The Great Earthquake"
+ major_disasters.0011.desc:0 "After the sun rose today, there was a quick succession of what felt like violent thunderbolts across the Mediterranean region. The whole earth shuddered and shook with unimaginable intensity from this [Glossary( 'earthquake', '365_earthquake_GLOSS' )]: buildings everywhere collapsed, and many perished as they cried to [ROOT.Char.GetFaith.HighGodName] for protection. Young and old, rich and poor, men and women – none were spared."
+ major_disasters.0011.desc.earthquake:0 "\n\nAlready, even though this earthquake just happened, there are reports of significant damage to the settlements and infrastructure within the territories I rule due to the earthquake."
+ major_disasters.0011.desc.tsunami:0 "\n\nFurthermore, there are alarming reports from the coastal regions of my territories. After the earthquake, the waters receded back into the ocean, stranding ship and sea animal alike on the sands. Then the sea returned, as a mass of roaring water razed all in its path."
+ major_disasters.0011.desc.conclusion:0 "\n\nNever before had such a calamity been witnessed by anyone alive. There is little doubt that an earthquake of massive proportions will never be seen again in our lifetimes. There is no doubt that this is a sign of divine anger – but anger against what, no one knows."
+ major_disasters.0011.a:0 "What a terrifying [Glossary( 'earthquake', '365_earthquake_GLOSS' )]!"
+ major_disasters.0011.tooltip.general_damage:0 "All [counties|E] in the [GetGeographicalRegion('TFE_365_earthquake_impact_region_greater').GetName] lose [control_i|E] [control|E] and [development_i|E] [development|E]."
+ major_disasters.0011.tooltip.earthquake_damage:0 "At least one [county|E] you rule has gained a #N negative#! [county_modifier|E], and lost extra [control_i|E] [control|E] and [development_i|E] [development|E] due to the earthquake. Additionally, [buildings|E] in that [county|E] may have been destroyed."
+ major_disasters.0011.tooltip.tsunami_damage:0 "At least one coastal [county|E] you rule has gained a #N negative#! [county_modifier|E], and lost extra [control_i|E] [control|E] and [development_i|E] [development|E] due to the subsequent tsunami. Additionally, [buildings|E] in that [county|E] may have been destroyed."
+ major_disasters.0011.tooltip.deaths:0 "Characters who were in [counties|E] affected by the earthquake or tsunami may have #N died#!."

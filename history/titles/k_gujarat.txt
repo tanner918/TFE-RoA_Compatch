@@ -1,0 +1,892 @@
+﻿k_gujarat = {
+	361.1.1 = { change_development_level = 3 }
+	476.1.1 = { change_development_level = 4 }
+	532.1.1 = { change_development_level = 5 }
+	632.1.1 = { change_development_level = 6 }
+	768.1.1 = { change_development_level = 7 }
+	## Indo Scythians
+	78.1.1 = {
+		#Start of the Kardamaka dynasty
+		holder = 900918 #Kastana Kardamaka, founder of house Kardamaka 
+		government = gupta_government
+	}
+	120.1.1 = {
+		holder = 900920 #Rudradaman, son of Jayadaman
+	}
+	150.1.1 = {
+		holder = 900921 #Damajadrasi, son of Rudradaman
+	}
+	175.1.1 = {
+		holder = 900922 #Jivadaman, son of Damajadrasi
+	}
+	197.1.1 = {
+		holder = 900923 #Rudrasimha, son of Damajadrasi, usurped Jivadaman
+	}
+	198.1.1 = {
+		holder = 900924 #Satyadaman, son of Rudrasimha
+	}
+	199.1.1 = {
+		holder = 900922 #Jivadaman, son of Damajadrasi, restored
+	}
+	199.8.1 = {
+		holder = 900925 #Rudrasena, son of Jivadaman
+	}
+	222.1.1 = {
+		holder = 900927 #Samghadaman, second son of Rudrasena
+	}
+	223.1.1 = {
+		holder = 900928 #Damasena, third son of Rudrasena, murdered
+	}
+	232.1.1 = {
+		holder = 900931 #Isvardatta
+	}
+	239.1.1 = {
+		holder = 900933 #Vijayasena, son of Damasena
+	}
+	250.1.1 = {
+		holder = 900934 #Damajadrasi III, son of Damasena
+	}
+	255.1.1 = {
+		holder = 900935 #Rudrasena II, son of Damajadrasi III
+	}
+	277.1.1 = {
+		holder = 900936 #Visvasimha, son of Rudrasena II
+	}
+	282.1.1 = {
+		holder = 900937 #Bhartrdaman, second son of Rudrasena II
+	}
+	295.1.1 = {
+		holder = 900938 #Visvasena, son of Bhartrdaman
+	}
+	304.1.1 = {
+		##SECOND BRANCH OF THE KARDAMAKAS
+		holder = 900941 #Rudrasimha II, son of Jivadaman, took the throne of Visvasena probably in a revolt
+	}
+	348.1.1 = {
+		holder = 900945 #Rudrasena III , son of Yasodaman, grandson of Rudrasimha II
+	}
+	380.1.1 = {
+		holder = 900946 #Simhasena, son of Rudrasena III
+	}
+	385.1.1 = {
+		holder = 900947 #Rudrasena IV , son of Simhasena
+	}
+	388.1.1 = {
+		holder = 900948 #Rudrasimha III , son of Rudrasena IV
+	}
+	397.1.1 = {
+		holder = 0
+	}
+
+	#Maitraka
+	475.1.1 = {
+		holder = 191643 #Bhatarka Maitraka
+	}
+	493.1.1 = {
+		holder = 191644 #Dharasena
+	}
+	502.1.1 = {
+		holder = 191645 #Dronasimha (son of Bhatarka)
+	}
+	525.1.1 = {
+		holder = 191646 #Dhruvasena (son of Bhatarka)
+	}
+	502.1.1 = {
+		holder = 191645 #Dronasimha
+	}
+	525.1.1 = {
+		holder = 191646 #Dhruvasena
+	}
+	545.1.1 = {
+		holder = 191647 #Dharapatta
+	}
+	556.1.1 = {
+		holder = 191648 #Guhasena
+	}
+	571.1.1 = {
+		holder = 191649 #Dharasena
+	}
+	595.1.1 = {
+		holder = 191650 #Siladitya
+	}
+	616.1.1 = {
+		holder = 191651 #Kharagraha
+	}
+	623.1.1 = {
+		holder = 191652 #Dharasena
+	}
+	629.1.1 = {
+		holder = 191653 #Dhruvasena
+	}
+	640.1.1 = {
+		holder = 191654 #Dharasena
+	}
+	651.1.1 = {
+		holder = 191656 #Dhruvasena
+	}
+	653.1.1 = {
+		holder = 191657 #Kharagraha
+	}
+	662.1.1 = {
+		holder = 191659 #Siladitya II
+	}
+	691.1.1 = {
+		holder = 191660 #Siladitya III
+	}
+	722.1.1 = {
+		holder = 191661 #Siladitya IV
+	}
+}
+
+
+d_gurjara_mandala = {
+	361.1.1 = { change_development_level = 8 }
+	476.1.1 = { change_development_level = 9 }
+	532.1.1 = { change_development_level = 10 }
+	632.1.1 = { change_development_level = 11 }
+	768.1.1 = { change_development_level = 12 }
+	317.1.1 = {
+		government = gupta_government
+		holder = 900944 #Sridharavarman II, SUbking
+		liege = k_malwa
+	}
+	389.1.1 = {
+		holder = shaka_05 #Fictional
+	}
+	#Maitraka
+	475.1.1 = {
+		holder = 191643 #Bhatarka Maitraka
+	}
+	493.1.1 = {
+		holder = 191644 #Dharasena
+	}
+	502.1.1 = {
+		holder = 191645 #Dronasimha
+		liege = k_gujarat
+	}
+	525.1.1 = {
+		holder = 191646 #Dhruvasena
+	}
+	545.1.1 = {
+		holder = 191647 #Dharapatta
+	}
+	556.1.1 = {
+		holder = 191648 #Guhasena
+	}
+	571.1.1 = {
+		holder = 191649 #Dharasena
+	}
+	595.1.1 = {
+		holder = 191650 #Siladitya
+	}
+	616.1.1 = {
+		holder = 191651 #Kharagraha
+	}
+	623.1.1 = {
+		holder = 191652 #Dharasena
+	}
+	629.1.1 = {
+		holder = 191653 #Dhruvasena
+	}
+	640.1.1 = {
+		holder = 191654 #Dharasena
+	}
+	651.1.1 = {
+		holder = 191656 #Dhruvasena
+	}
+	653.1.1 = {
+		holder = 191657 #Kharagraha
+	}
+	662.1.1 = {
+		holder = 191659 #Siladitya II
+	}
+	691.1.1 = {
+		holder = 191660 #Siladitya III
+	}
+	722.1.1 = {
+		holder = 191661 #Siladitya IV
+	}
+	745.1.1 = {
+		holder = 188063 # Vanaraja Capa
+		liege = k_malwa
+	}
+	756.1.1 = {
+		liege = 0	#Capas assert independence during weak Pratihara rulers
+	}
+}
+
+
+c_sarasvata_mandala = {
+	317.1.1 = {
+		government = gupta_government
+		holder = 900944 #Sridharavarman II, SUbking
+		liege = k_malwa
+	}
+	389.1.1 = {
+		holder = shaka_05 #Fictional
+	}
+	#Maitraka
+	475.1.1 = {
+		holder = 191643 #Bhatarka Maitraka
+	}
+	493.1.1 = {
+		holder = 191644 #Dharasena
+	}
+	502.1.1 = {
+		holder = 191645 #Dronasimha (son of Bhatarka)
+	}
+	525.1.1 = {
+		holder = 191646 #Dhruvasena (son of Bhatarka)
+	}
+	745.1.1 = {
+		liege = k_gujarat
+		holder = 188063 # Vanaraja Capa
+	}
+}
+
+
+c_khetaka = {
+	317.1.1 = {
+		government = gupta_government
+		holder = 900944 #Sridharavarman II, SUbking
+		liege = k_malwa
+	}
+	389.1.1 = {
+		holder = shaka_05 #Fictional
+	}
+
+	#Maitraka
+	475.1.1 = {
+		holder = 191643 #Bhatarka Maitraka
+	}
+	493.1.1 = {
+		holder = 191644 #Dharasena
+	}
+	502.1.1 = {
+		holder = 191645 #Dronasimha (son of Bhatarka)
+	}
+	525.1.1 = {
+		holder = 191646 #Dhruvasena (son of Bhatarka)
+	}
+	545.1.1 = {
+		holder = 191647 #Dharapatta(son of Bhatarka)
+	}
+	556.1.1 = {
+		holder = 191648 #Guhasena
+	}
+	571.1.1 = {
+		holder = 191649 #Dharasena
+	}
+	595.1.1 = {
+		holder = 191650 #Siladitya
+	}
+	616.1.1 = {
+		holder = 191651 #Kharagraha
+	}
+	623.1.1 = {
+		holder = 191652 #Dharasena
+	}
+	629.1.1 = {
+		holder = 191653 #Dhruvasena
+	}
+	640.1.1 = {
+		holder = 191654 #Dharasena
+	}
+	651.1.1 = {
+		holder = 191656 #Dhruvasena
+	}
+	653.1.1 = {
+		holder = 191657 #Kharagraha
+	}
+	662.1.1 = {
+		holder = 191659 #Siladitya II
+	}
+	691.1.1 = {
+		holder = 191660 #Siladitya III
+	}
+	722.1.1 = {
+		holder = 191661 #Siladitya IV
+	}
+	740.1.1 = {
+		liege = d_gurjara_mandala
+	}
+	760.1.1 = {
+		holder = 191662 #Siladitya V
+	}
+	766.1.1 = {
+		holder = 191663 #Siladitya VI
+	}
+}
+
+
+c_mohadavasaka = {
+	317.1.1 = {
+		government = gupta_government
+		holder = 900944 #Sridharavarman II, SUbking
+		liege = k_malwa
+	}
+	389.1.1 = {
+		holder = shaka_05 #Fictional
+	}
+	#Maitraka
+	475.1.1 = {
+		holder = aulikara_06
+	}
+	760.1.1 = {
+		holder = 191920 #Hunas
+		liege = d_dadhipadra
+	}
+}
+
+c_dhamalpur = {
+	361.1.1 = { change_development_level = 9 }
+	476.1.1 = { change_development_level = 10 }
+	532.1.1 = { change_development_level = 11 }
+	632.1.1 = { change_development_level = 12 }
+	768.1.1 = { change_development_level = 13 }
+	# Western Satraps
+	361.1.2 = {
+		holder = shaka_02
+		government = gupta_government
+		liege = d_saurashtra
+	}
+	#Maitraka
+	475.1.1 = {
+		holder = gujarati_03 #Bhatarka Maitraka
+		liege = d_gurjara_mandala
+	}
+
+	745.1.1 = {
+		liege = d_saurashtra
+		holder = 188063 # Vanaraja Capa
+	}
+}
+
+d_anartta = {
+	361.1.1 = { change_development_level = 1 }
+	476.1.1 = { change_development_level = 2 }
+	532.1.1 = { change_development_level = 3 }
+	632.1.1 = { change_development_level = 4 }
+	768.1.1 = { change_development_level = 5 }
+	532.1.1 = {
+		holder = 191647
+		liege = k_gujarat
+	}
+}
+
+c_dvaraka = {
+	361.1.1 = { change_development_level = 11 }
+	476.1.1 = { change_development_level = 12 }
+	532.1.1 = { change_development_level = 13 }
+	632.1.1 = { change_development_level = 14 }
+	768.1.1 = { change_development_level = 15 }
+	# Western Satraps
+	361.1.2 = {
+		holder = shaka_02
+		government = gupta_government
+		liege = d_saurashtra
+	}
+	#Maitraka
+	475.1.1 = {
+		holder = gujarati_03 #Bhatarka Maitraka
+		liege = d_gurjara_mandala
+	}
+	725.1.1 = {
+		liege = d_saurashtra
+		holder = 188265 # Pushyadeva Saindhava
+	}
+	750.1.1 = {
+		holder = 188266 # Krishnaraja I
+	}
+}
+
+
+c_kutch = {
+	# Western Satraps
+	361.1.1 = {
+		holder = shaka_01
+		liege = k_malwa
+		government = gupta_government
+	}
+	#Maitraka
+	475.1.1 = {
+		holder = gujarati_02 #Bhatarka Maitraka
+		liege = d_gurjara_mandala
+	}
+	#Kathis of Kanthakota
+	768.1.1 = {
+		holder = 191682
+	}
+}
+
+
+d_saurashtra = {
+	361.1.1 = { change_development_level = 9 }
+	476.1.1 = { change_development_level = 10 }
+	532.1.1 = { change_development_level = 11 }
+	632.1.1 = { change_development_level = 12 }
+	768.1.1 = { change_development_level = 13 }
+	#Western Satraps
+	361.1.1 = {
+		holder = shaka_03
+		liege = k_malwa
+		government = gupta_government
+	}
+	475.1.1 = {
+		holder = 191643 #Bhatarka Maitraka
+	}
+	493.1.1 = {
+		holder = 191644 #Dharasena
+	}
+	502.1.1 = {
+		holder = 191645 #Dronasimha
+		liege = k_gujarat
+	}
+	525.1.1 = {
+		holder = 191646 #Dhruvasena
+	}
+	545.1.1 = {
+		holder = 191647 #Dharapatta
+	}
+	556.1.1 = {
+		holder = 191648 #Guhasena
+	}
+	571.1.1 = {
+		holder = 191649 #Dharasena
+	}
+	595.1.1 = {
+		holder = 191650 #Siladitya
+	}
+	616.1.1 = {
+		holder = 191651 #Kharagraha
+	}
+	623.1.1 = {
+		holder = 191652 #Dharasena
+	}
+	629.1.1 = {
+		holder = 191653 #Dhruvasena
+	}
+	640.1.1 = {
+		holder = 191654 #Dharasena
+	}
+	651.1.1 = {
+		holder = 191656 #Dhruvasena
+	}
+	653.1.1 = {
+		holder = 191657 #Kharagraha
+	}
+	662.1.1 = {
+		holder = 191659 #Siladitya II
+	}
+	691.1.1 = {
+		holder = 191660 #Siladitya III
+	}
+	722.1.1 = {
+		holder = 191661 #Siladitya IV
+	}
+	745.1.1 = {
+		holder = 188063 # Vanaraja Capa
+		liege = k_malwa
+	}
+	756.1.1 = {
+		liege = 0	#Capas assert independence during weak Pratihara rulers
+	}
+}
+
+
+c_bhumilka = {
+	#Western Satraps
+	361.1.1 = {
+		holder = shaka_03
+		liege = k_malwa
+		government = gupta_government
+	}
+	#Maitraka
+	475.1.1 = {
+		holder = gujarati_04 #Bhatarka Maitraka
+		liege = d_gurjara_mandala
+	}
+	725.1.1 = {
+		liege = d_saurashtra
+		holder = 188265 # Pushyadeva Saindhava
+	}
+	750.1.1 = {
+		holder = 188266 # Krishnaraja I
+	}
+}
+
+
+c_somnath = {
+	#Western Satraps
+	361.1.1 = {
+		holder = shaka_03
+		liege = k_malwa
+		government = gupta_government
+	}
+	#Maitraka
+	475.1.1 = {
+		holder = gujarati_04 #Bhatarka Maitraka
+		liege = d_gurjara_mandala
+	}
+	740.1.1 = {
+		liege = d_saurashtra
+		holder = 191672 # Calukya
+	}
+	760.1.1 = {
+		holder = 191673 # Kalla
+	}
+}
+
+
+c_vardhamana = {
+	#Western Satraps
+	361.1.1 = {
+		holder = shaka_03
+		liege = k_malwa
+		government = gupta_government
+	}
+	#Maitraka
+	475.1.1 = {
+		holder = gujarati_04 #Bhatarka Maitraka
+		liege = d_gurjara_mandala
+	}
+	502.1.1 = {
+		holder = 191645 #Dronasimha
+		liege = d_saurashtra
+	}
+	525.1.1 = {
+		holder = 191646 #Dhruvasena
+	}
+	545.1.1 = {
+		holder = 191647 #Dharapatta
+	}
+	556.1.1 = {
+		holder = 191648 #Guhasena
+	}
+	571.1.1 = {
+		holder = 191649 #Dharasena
+	}
+	595.1.1 = {
+		holder = 191650 #Siladitya
+	}
+	616.1.1 = {
+		holder = 191651 #Kharagraha
+	}
+	623.1.1 = {
+		holder = 191652 #Dharasena
+	}
+	629.1.1 = {
+		holder = 191653 #Dhruvasena
+	}
+	640.1.1 = {
+		holder = 191654 #Dharasena
+	}
+	651.1.1 = {
+		holder = 191656 #Dhruvasena
+	}
+	653.1.1 = {
+		holder = 191657 #Kharagraha
+	}
+	662.1.1 = {
+		holder = 191659 #Siladitya II
+	}
+	691.1.1 = {
+		holder = 191660 #Siladitya III
+	}
+	722.1.1 = {
+		holder = 191661 #Siladitya IV
+	}
+	745.1.1 = {
+		holder = 188063 # Vanaraja Capa
+	}
+	760.1.1 = {
+		holder = 191664 #Mahavaraha Varaha
+	}
+}
+
+
+c_valabhi = {
+	#Western Satraps
+	361.1.1 = {
+		holder = shaka_03
+		liege = k_malwa
+		government = gupta_government
+	}
+	475.1.1 = {
+		holder = 191643 #Bhatarka Maitraka
+	}
+	493.1.1 = {
+		holder = 191644 #Dharasena
+	}
+	502.1.1 = {
+		holder = 191645 #Dronasimha
+	}
+	525.1.1 = {
+		holder = 191646 #Dhruvasena
+	}
+	545.1.1 = {
+		holder = 191647 #Dharapatta
+	}
+	556.1.1 = {
+		holder = 191648 #Guhasena
+	}
+	571.1.1 = {
+		holder = 191649 #Dharasena
+	}
+	595.1.1 = {
+		holder = 191650 #Siladitya
+	}
+	616.1.1 = {
+		holder = 191651 #Kharagraha
+	}
+	623.1.1 = {
+		holder = 191652 #Dharasena
+	}
+	629.1.1 = {
+		holder = 191653 #Dhruvasena
+	}
+	640.1.1 = {
+		holder = 191654 #Dharasena
+	}
+	651.1.1 = {
+		holder = 191656 #Dhruvasena
+	}
+	653.1.1 = {
+		holder = 191657 #Kharagraha
+	}
+	662.1.1 = {
+		holder = 191659 #Siladitya II
+	}
+	691.1.1 = {
+		holder = 191660 #Siladitya III
+	}
+	722.1.1 = {
+		holder = 191661 #Siladitya IV
+	}
+	745.1.1 = {
+		liege = d_saurashtra
+		holder = 188063 # Vanaraja Capa
+	}
+}
+
+
+d_lata = {
+	361.1.1 = { change_development_level = 13 }
+	476.1.1 = { change_development_level = 14 }
+	532.1.1 = { change_development_level = 15 }
+	632.1.1 = { change_development_level = 16 }
+	768.1.1 = { change_development_level = 17 }
+	#Western Satraps
+	361.1.1 = {
+		holder = shaka_04
+		liege = k_malwa
+		government = gupta_government
+	}
+	532.1.1 = {
+		holder = 191648
+		liege = k_gujarat
+	}
+	570.1.1 = {
+		holder = 191624 #Dadda I
+		#liege = k_gujarat
+	}
+	595.1.1 = {
+		holder = 191625 #Jayabhata I Pratihara
+	}
+	620.1.1 = {
+		holder = 191626 #Dadda II Pratihara
+	}
+	645.1.1 = {
+		holder = 191627 #Jayabhata II Pratihara
+	}
+	665.1.1 = {
+		holder = 191628 #Dadda III Pratihara
+	}
+	695.1.1 = {
+		holder = 191629 #Jayabhata III Pratihara
+		liege = k_rajputana
+	}
+	715.1.1 = {
+		holder = 191630 #Ahirola Pratihara
+	}
+	720.1.1 = {
+		holder = 191631 #Jayabhata IV Pratihara
+	}
+	738.1.1 = {
+		holder = 191635 #Annexed by Calukyas of Lata
+		liege = k_karnata
+	}
+	747.1.1 = {
+		holder = 74409 #Conquered by Dantidurga
+	}
+	756.1.1 = {
+		holder = 191623 #Karka Rashtrakuta, grant by Dantidurga
+	}
+}
+
+
+c_navasarika = {
+	#Western Satraps
+	361.1.1 = {
+		holder = shaka_04
+		liege = k_malwa
+		government = gupta_government
+	}
+	#Maitraka
+	475.1.1 = {
+		holder = gujarati_01 #Bhatarka Maitraka
+		liege = d_gurjara_mandala
+	}
+	570.1.1 = {
+		holder = 191624 #Dadda I Pratihara
+		liege = d_lata
+	}
+	595.1.1 = {
+		holder = 191625 #Jayabhata I Pratihara
+	}
+	620.1.1 = {
+		holder = 191626 #Dadda II Pratihara
+	}
+	645.1.1 = {
+		holder = 191627 #Jayabhata II Pratihara
+	}
+	665.1.1 = {
+		holder = 191628 #Dadda III Pratihara
+	}
+	695.1.1 = {
+		holder = 191629 #Jayabhata III Pratihara
+	}
+	715.1.1 = {
+		holder = 191630 #Ahirola Pratihara
+	}
+	720.1.1 = {
+		holder = 191631 #Jayabhata IV Pratihara
+	}
+	738.1.1 = {
+		holder = 191635 #Annexed by Calukyas of Lata
+	}
+	757.1.1 = {
+		holder = 191642 #Bhartrvaddha II Chahamana
+		liege = d_dadhipadra
+	}
+}
+
+
+c_daman = {
+190.1.1 = {
+		holder = abhira_01
+		government = gupta_government
+		liege = k_gujarat
+	}
+	223.1.1 = {
+		holder = abhira_02
+	}
+	248.1.1 = {
+		holder = abhira_03
+		liege = 0
+	}
+	276.1.1 = {
+		holder = abhira_04
+	}
+	302.1.1 = {
+		holder = abhira_05
+	}
+	345.1.1 = {
+		holder = abhira_06
+	}
+	#Western Satraps
+	361.1.1 = {
+		holder = shaka_04
+		government = gupta_government
+	}
+	380.1.1 = {
+		holder = 900946 #Simhasena, son of Rudrasena III
+	}
+	385.1.1 = {
+		holder = 900947 #Rudrasena IV , son of Simhasena
+	}
+	388.1.1 = {
+		holder = 900948 #Rudrasimha III , son of Rudrasena IV
+	}
+	397.1.1 = {
+		holder = 0
+	}
+	#Maitraka
+	475.1.1 = {
+		holder = gujarati_01 #Bhatarka Maitraka
+		liege = d_gurjara_mandala
+	}
+	#Up to 670 under the Sendrakas and then the Maitrakas
+	670.1.1 = {
+		holder = 191632 #Jayasimha Chalukya (of Lata)
+		liege = d_nasikya
+	}
+	690.1.1 = {
+		holder = 191634 #Mangalarasa
+	}
+	738.1.1 = {
+		holder = 191635 #Pulakesin
+	}
+	747.1.1 = {
+		holder = 74409 #Conquered by Dantidurga
+		liege = d_lata
+	}
+	756.1.1 = {
+		holder = 191623 #Karka Rashtrakuta, grant by Dantidurga
+	}
+}
+
+
+c_vadodara = {
+	#Western Satraps
+	361.1.1 = {
+		holder = shaka_04
+		liege = k_malwa
+		government = gupta_government
+	}
+	#Maitraka
+	475.1.1 = {
+		holder = 191643 #Bhatarka Maitraka
+	}
+	493.1.1 = {
+		holder = 191644 #Dharasena
+	}
+	502.1.1 = {
+		holder = 191645 #Dronasimha (son of Bhatarka)
+	}
+	525.1.1 = {
+		holder = 191646 #Dhruvasena (son of Bhatarka)
+	}
+	570.1.1 = {
+		holder = 191624 #Dadda I Pratihara
+		liege = d_lata
+	}
+	595.1.1 = {
+		holder = 191625 #Jayabhata I Pratihara
+	}
+	620.1.1 = {
+		holder = 191626 #Dadda II Pratihara
+	}
+	640.1.1 = {
+		holder = 191637 #Mahesvardama Chahamana
+	}
+	650.1.1 = {
+		holder = 191638 #Bhimadama
+	}
+	680.1.1 = {
+		holder = 191639 #Bhartrvaddha
+	}
+	700.1.1 = {
+		holder = 191640 #Haradama
+	}
+	730.1.1 = {
+		holder = 191641 #Dhrubhata
+	}
+	738.1.1 = {
+		liege = d_dadhipadra
+	}
+	757.1.1 = {
+		holder = 191642 #Bhartrvaddha
+	}
+}
+

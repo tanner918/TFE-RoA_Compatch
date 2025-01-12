@@ -1,0 +1,40 @@
+﻿### Code from Silk Road mod: https://steamcommunity.com/workshop/filedetails/?id=2493459927
+
+custom_map_mode_initialize = {
+	effect = {
+		set_global_variable = {
+			name = custom_map_mode
+			value = flag:none
+		}
+		mapping_map_barony = yes
+	}
+	is_valid = {
+		exists = global_var:custom_map_mode
+		NOT = { global_var:custom_map_mode = flag:none	}
+	}
+}
+
+resources_map = {
+	effect = {
+		if = {
+			limit = {NOT = { global_var:custom_map_mode = flag:resources_map } }
+			set_global_variable = {
+				name = custom_map_mode_changing
+				value = 1
+			}
+			set_global_variable = {
+				name = custom_map_mode
+				value = flag:resources_map
+			}
+			mapping_resources_map = yes
+			remove_global_variable = custom_map_mode_changing
+		}
+	}
+	is_shown = {
+		exists = global_var:custom_map_mode
+		global_var:custom_map_mode = flag:resources_map
+	}
+	is_valid = {
+		NOT = { exists = global_var:custom_map_mode_changing }
+	}
+}

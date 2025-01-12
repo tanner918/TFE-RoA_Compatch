@@ -1,0 +1,321 @@
+﻿namespace = celtic
+
+##################################################
+# Restore the Druids by julijajo
+##################################################
+
+celtic.0001 = {
+	type = character_event
+	title = celtic.0001.t
+	desc = celtic.0001.desc
+	theme = faith
+	left_portrait = {
+		character = scope:scoped_ruler
+		animation = personality_zealous
+	}
+	right_portrait = {
+		character = scope:new_priest
+		animation = happiness
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_faith_conversion"
+		save_scope_as = scoped_ruler
+		if = { # Check if Temporal first.
+			limit = {
+				faith = { has_doctrine = doctrine_temporal_head }
+			}
+			save_scope_as = new_priest
+		}
+		else_if = { # Pick your chaplain first.
+			limit = {
+				exists = cp:councillor_court_chaplain
+				cp:councillor_court_chaplain = { faith = scope:scoped_ruler.faith }
+			}
+			cp:councillor_court_chaplain = { save_scope_as = new_priest }
+		}
+		else = {
+			hidden_effect = {
+				create_character = {
+					employer = root
+					template = religious_leader_character
+					random_traits = no
+					save_scope_as = new_priest
+					dynasty = generate
+				}
+			}
+			scope:new_priest = {
+				add_trait = education_learning_3
+				add_trait = zealous
+				add_trait = intellect_good_1
+				random_list = {
+					1 = { add_trait = lustful }
+					1 = { add_trait = chaste }
+					1 = { add_trait = wrathful }
+					1 = { add_trait = diligent }
+					1 = { add_trait = impatient }
+					1 = { add_trait = arrogant }
+					1 = { add_trait = humble }
+					1 = { add_trait = gregarious }
+				}
+				random_list = {
+					1 = { add_trait = honest }
+					1 = { add_trait = ambitious }
+					1 = { add_trait = just }
+					1 = { add_trait = cynical }
+					1 = { add_trait = zealous }
+					1 = { add_trait = compassionate }
+					1 = { add_trait = stubborn }
+				}
+			}
+		}
+		create_title_and_vassal_change = {
+			type = created
+			save_scope_as = change
+			add_claim_on_loss = no
+		}
+		root.faith.religious_head_title = {
+			change_title_holder = {
+				holder = scope:new_priest
+				change = scope:change
+			}
+		}
+		resolve_title_and_vassal_change = scope:change
+	}
+
+	option = {
+		name = celtic.0001.a
+		add_prestige = major_prestige_gain
+		add_piety = major_piety_gain
+		faith = { 
+			change_fervor = {
+				value = 10
+				desc = celtic_druids_restored
+			}
+		}
+		if = { # Vassalize if possible/needed.
+			limit = {
+				highest_held_title_tier > scope:new_priest.highest_held_title_tier
+				NOT = { scope:new_priest = { any_liege_or_above = { this = root } } }
+			}
+			create_title_and_vassal_change = {
+				type = created
+				save_scope_as = change
+				add_claim_on_loss = no
+			}
+			scope:new_priest = {
+				change_liege = {
+					liege = root
+					change = scope:change
+				}
+			}
+			resolve_title_and_vassal_change = scope:change
+		}
+		hidden_effect = {
+			every_player = {
+				limit = {
+					NOT = { this = root }
+					OR = {
+						faith.religion = root.faith.religion
+						AND = {
+							is_landed = yes
+							capital_province = {
+								OR = {
+									geographical_region = world_europe_west
+								}
+							}
+						}
+					}
+				}
+				trigger_event = celtic.0002
+			}
+		}
+	}
+}
+
+# Players notified.
+celtic.0002 = {
+	type = character_event
+	title = celtic.0001.t
+	desc = {
+		first_valid = {
+			# Zoroastrian Reaction
+			triggered_desc = {
+				trigger = {
+					root.faith.religion = scope:scoped_ruler.faith.religion
+				}
+				desc = celtic.0001.desc
+			}
+			# Muslim Reaction
+			triggered_desc = {
+				trigger = {
+					root.faith.religion = faith:nicene.religion
+				}
+				desc = celtic.0002.desc.christian
+			}
+			# Everybody else
+			triggered_desc = {
+				trigger = {
+					NOR = {
+						root.faith.religion = scope:scoped_ruler.faith.religion
+						root.faith.religion = faith:nicene.religion
+					}
+				}
+				desc = celtic.0002.desc.others
+			}
+		}
+	}
+	theme = faith
+	left_portrait = {
+		character = scope:scoped_ruler
+		animation = personality_zealous
+	}
+	right_portrait = {
+		character = scope:new_priest
+		animation = happiness
+	}
+
+	immediate = {
+		#Zoroastrian characters get some chilled music.
+		if = {
+			limit = {
+				faith = { religion_tag = pagan_religion }
+			}
+			play_music_cue = "mx_cue_faith_conversion"
+		}
+	}
+
+	option = {
+		name = celtic.0002.a
+		trigger = {
+			root.faith.religion = scope:scoped_ruler.faith.religion
+		}
+	}
+	option = {
+		name = celtic.0002.b
+		trigger = {
+			NOT = {
+				root.faith.religion = scope:scoped_ruler.faith.religion
+			}
+		}
+	}
+	option = {
+		name = celtic.0002.c
+		trigger = {
+			NOR = {
+				root.faith.religion = scope:scoped_ruler.faith.religion
+				root.faith.religion = faith:ashari.religion
+			}
+		}
+	}
+}
+
+##################################################
+# Restore Kingdom of Galatia by sungross
+##################################################
+
+celtic.0003 = {
+	type = character_event
+	title = celtic.0003.t
+	desc = celtic.0003.desc
+	theme = realm
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+	}
+	option = {
+		name = celtic.0003.a
+	
+	#Create the title and set proper de jure
+	hidden_effect = {
+		title:d_bucellaria = {
+			save_scope_as = title_d_bucellaria
+			set_de_jure_liege_title = title:k_galatia
+		}
+		title:d_charsianon = {
+			save_scope_as = title_d_charsianon
+			set_de_jure_liege_title = title:k_galatia
+		}
+		title:d_opsikion = {
+			save_scope_as = title_d_opsikion
+			set_de_jure_liege_title = title:k_galatia
+		}
+		title:d_pisidia = {
+			save_scope_as = title_d_pisidia
+			set_de_jure_liege_title = title:k_galatia
+		}
+		title:d_cappadocia = {
+			save_scope_as = title_d_cappadocia 
+			set_de_jure_liege_title = title:k_galatia 
+		}
+		title:d_anatolia = {
+			save_scope_as = title_d_anatolia 
+			set_de_jure_liege_title = title:k_galatia 
+		}
+		title:k_galatia = {
+			save_scope_as = title_k_galatia
+		}
+	}
+
+	create_title_and_vassal_change = {
+		type = created
+		save_scope_as = title_change
+		add_claim_on_loss = no
+	}
+	title:k_galatia = {
+		change_title_holder = {
+			holder = root
+			change = scope:title_change
+		}
+		save_scope_as = title_k_galatia
+	}
+	set_primary_title_to = title:k_galatia
+	
+	resolve_title_and_vassal_change = scope:title_change
+	
+	
+	}
+	
+}
+
+
+##################################################
+# Form Wales by cybrxkhan
+##################################################
+
+
+# Wales has been founded
+celtic.0004 = {
+	type = character_event
+	title = celtic.0004.t
+	desc = celtic.0004.desc
+	theme = realm
+	
+	left_portrait = {
+		character = scope:wales_founder
+		animation = personality_bold
+	}
+	
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+	}
+
+	option = {
+		name = celtic.0004.a
+		trigger = {
+			NOT = { has_title = title:k_wales } 
+		}
+	}
+	option = {
+		name = celtic.0004.b
+		trigger = {
+			has_title = title:k_wales	
+		}
+	}
+}
+
+

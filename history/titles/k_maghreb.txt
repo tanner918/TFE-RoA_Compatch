@@ -1,0 +1,733 @@
+﻿k_maghreb = {
+	361.1.1 = {	change_development_level = 3 }
+	476.1.1 = {	change_development_level = 4 }
+	532.1.1 = {	change_development_level = 5 }
+	632.1.1 = {	change_development_level = 6 }
+	768.1.1 = {	change_development_level = 7 }
+}
+
+
+
+d_rif = {
+	300.1.1 = {
+		de_jure_liege = k_hispania
+	}
+	360.1.1 = {
+		holder = mauretania_01
+		liege = k_hispania
+	}
+	395.1.1 = {
+		holder = mauretania_02
+		liege = k_hispania
+	}
+	476.1.1 = {
+		de_jure_liege = k_mauria
+	}
+}
+d_marrakesh = {
+	#361.1.1 = {
+	#	holder = mauri_01
+	#	government = tribal_government
+	#}	
+}
+
+
+c_marrakesh = {
+	361.1.1 = {	change_development_level = 4 }
+	476.1.1 = {	change_development_level = 5 }
+	532.1.1 = {	change_development_level = 6 }
+	632.1.1 = {	change_development_level = 7 }
+	768.1.1 = {	change_development_level = 8 }
+
+	361.1.1 = {
+		#holder = mauri_01
+		holder = gaetuli_09
+		liege = 0
+	}
+	410.1.1 = {
+		holder = gaetuli_10
+		liege = 0
+	}
+	420.1.1 = {
+		holder = gaetuli_25
+		liege = 0
+	}
+	459.1.1 = {
+		holder = gaetuli_26
+		liege = 0
+	}
+	#476.1.1 = {
+	#	holder = mauri_15
+	#	liege = 0
+	#}
+	767.1.1 = {
+		holder = 210039
+	}
+}
+
+
+c_tadla = {
+	361.1.1 = {
+		#holder = mauri_01
+		holder = mauri_27
+		government = tribal_government
+		#liege = d_baquates
+	}
+	370.1.1 = {
+		holder = mauri_28
+	}
+	405.1.1 = {
+		holder = mauri_29
+	}
+	440.1.1 = {
+		holder = mauri_30
+	}
+	487.1.1 = {
+		holder = mauri_31
+	}
+	#476.1.1 = {
+	#	holder = mauri_10
+	#	liege = 0
+	#}
+	767.1.1 = {
+		holder = 210039
+	}
+}
+
+
+c_fazaz = {
+	361.1.1 = {
+		#holder = mauri_01
+		holder = gaetuli_09
+		government = tribal_government
+	}
+	410.1.1 = {
+		holder = gaetuli_10
+		liege = 0
+	}
+	420.1.1 = {
+		holder = gaetuli_25
+		liege = 0
+	}
+	459.1.1 = {
+		holder = gaetuli_26
+		liege = 0
+	}
+	#476.1.1 = {
+	#	holder = mauri_10
+	#	liege = 0
+	#}
+	767.1.1 = {
+		holder = 210039
+	}
+}
+
+
+c_tamasna = {
+	361.1.1 = {
+		#holder = mauri_01
+		government = tribal_government
+		holder = gaetuli_13
+	}
+	410.1.1 = {
+		holder = gaetuli_14
+		liege = 0
+	}
+	419.1.1 = {
+		holder = gaetuli_27
+		liege = 0
+	}
+	470.1.1 = {
+		holder = gaetuli_28
+		liege = 0
+	}
+	#476.1.1 = {
+	#	holder = mauri_10
+	#	liege = 0
+	#}
+	767.1.1 = {
+		government = clan_government
+		holder = 168276
+	}
+}
+
+
+c_asfi = {
+	361.1.1 = {	change_development_level = 4 }
+	476.1.1 = {	change_development_level = 5 }
+	532.1.1 = {	change_development_level = 6 }
+	632.1.1 = {	change_development_level = 7 }
+	768.1.1 = {	change_development_level = 8 }
+	361.1.1 = {
+		#holder = mauri_01
+		government = tribal_government
+		holder = gaetuli_13
+	}
+	410.1.1 = {
+		holder = gaetuli_14
+		liege = 0
+	}
+	419.1.1 = {
+		holder = gaetuli_27
+		liege = 0
+	}
+	470.1.1 = {
+		holder = gaetuli_28
+		liege = 0
+	}
+	#476.1.1 = {
+	#	holder = mauri_15
+	#	liege = 0
+	#}
+	767.1.1 = {
+		government = clan_government
+		holder = 168276
+	}
+}
+
+
+c_tinmallal = {
+	361.1.1 = {	change_development_level = 4 }
+	476.1.1 = {	change_development_level = 5 }
+	532.1.1 = {	change_development_level = 6 }
+	632.1.1 = {	change_development_level = 7 }
+	768.1.1 = {	change_development_level = 8 }
+	#361.1.1 = {
+	#	holder = mauri_01
+	#	government = tribal_government
+	#}	
+	476.1.1 = {
+		holder = mauri_15
+		liege = 0
+	}
+	767.1.1 = {
+		holder = 210038
+	}
+}
+
+d_sous = {
+	#395.1.1 = {
+	#	holder = mauri_03
+	#}
+}
+
+c_sous = {
+	361.1.1 = {
+		#holder = mauri_02
+		government = tribal_government
+		holder = gaetuli_11
+	}
+	#395.1.1 = {
+		#holder = mauri_03
+	#}	
+	476.1.1 = {
+		holder = mauri_16
+		liege = 0
+	}
+}
+
+
+c_agadir = {
+	361.1.1 = {
+		#holder = mauri_02
+		government = tribal_government
+		holder = gaetuli_11
+	}
+	#395.1.1 = {
+	#	holder = mauri_03
+	#}
+	408.1.1 = {
+		holder = gaetuli_12
+		liege = 0
+	}
+	418.1.1 = {
+		holder = gaetuli_29
+		liege = 0
+	}
+	461.1.1 = {
+		holder = gaetuli_30
+		liege = 0
+	}
+	#476.1.1 = {
+	#	holder = mauri_15
+	#	liege = 0
+	#}
+}
+
+
+c_ifni = {
+	361.1.1 = {
+		holder = mauri_02
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = mauri_03
+	}	
+	476.1.1 = {
+		holder = mauri_16
+		liege = 0
+	}
+}
+
+
+c_draa = {
+	361.1.1 = {
+		#holder = mauri_02
+		government = tribal_government
+		holder = gaetuli_11
+	}
+	#395.1.1 = {
+	#	holder = mauri_03
+	#}	
+	476.1.1 = {
+		holder = mauri_16
+		liege = 0
+	}
+}
+
+d_canarias = {
+	361.1.1 = {	change_development_level = 1 }
+	532.1.1 = {	change_development_level = 2 }
+	768.1.1 = {	change_development_level = 3 }
+}
+
+c_canarias = {
+	361.1.1 = {
+		holder = guanche_01
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = guanche_02
+	}
+	476.1.1 = {
+		holder = guanche_07
+	}
+	767.1.1 = {
+		holder = 210040
+		government = tribal_government
+	}
+}
+
+c_fuerteventura = {
+	361.1.1 = {
+		holder = guanche_03
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = guanche_04
+	}
+	476.1.1 = {
+		holder = guanche_08
+	}
+	767.1.1 = {
+		holder = 210040
+		government = tribal_government
+	}
+}
+
+c_madeira = {
+	361.1.1 = {
+		holder = guanche_05
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = guanche_06
+	}
+	476.1.1 = {
+		holder = guanche_09
+	}
+	767.1.1 = {
+		holder = 210040
+		government = tribal_government
+	}
+}
+
+d_tafilalt = {
+	361.1.1 = {	change_development_level = 1 }
+	476.1.1 = {	change_development_level = 2 }
+	532.1.1 = {	change_development_level = 3 }
+	632.1.1 = {	change_development_level = 4 }
+	768.1.1 = {	change_development_level = 5 }
+}
+
+c_sijilmasa = {
+	361.1.1 = {	change_development_level = 4 }
+	476.1.1 = {	change_development_level = 5 }
+	532.1.1 = {	change_development_level = 6 }
+	632.1.1 = {	change_development_level = 7 }
+	768.1.1 = {	change_development_level = 8 }
+	361.1.1 = {
+		holder = lamtuna_01
+		government = tribal_government
+	}
+	476.1.1 = {
+		holder = lamtuna_04
+		liege = 0
+	}
+	
+}
+
+
+c_tudgha = {
+	361.1.1 = {
+		#holder = lamtuna_01
+		holder = gaetuli_21
+		government = tribal_government
+	}
+	410.1.1 = {
+		holder = gaetuli_22
+	}
+	420.1.1 = {
+		holder = gaetuli_23
+	}
+	450.1.1 = {
+		holder = gaetuli_24
+	}
+	490.1.1 = {
+		holder = gaetuli_33
+	}
+	#476.1.1 = {
+	#	holder = lamtuna_04
+	#	liege = 0
+	#}
+}
+
+
+c_ziz = {
+	361.1.1 = {
+		#holder = lamtuna_01
+		holder = gaetuli_21
+		government = tribal_government
+	}
+	410.1.1 = {
+		holder = gaetuli_22
+	}
+	420.1.1 = {
+		holder = gaetuli_23
+	}
+	450.1.1 = {
+		holder = gaetuli_24
+	}
+	490.1.1 = {
+		holder = gaetuli_33
+	}
+	#476.1.1 = {
+	#	holder = lamtuna_04
+	#	liege = 0
+	#}
+}
+
+
+d_fes = {
+	361.1.1 = {	change_development_level = 6 }
+	476.1.1 = {	
+		change_development_level = 7 
+		de_jure_liege = k_mauria
+	}
+	532.1.1 = {	change_development_level = 8 }
+	632.1.1 = {	change_development_level = 9 }
+	768.1.1 = {	change_development_level = 10 }
+}
+
+
+c_fes = {
+	361.1.1 = {	change_development_level = 10 }
+	476.1.1 = {	change_development_level = 11 }
+	532.1.1 = {	change_development_level = 12 }
+	632.1.1 = {	change_development_level = 13 }
+	768.1.1 = {	change_development_level = 14 }
+	
+	
+	340.1.1 = {
+		holder = tahert_11
+		government = tribal_government
+		liege = d_rif
+	}
+	360.1.1 = {	
+		liege = d_rif
+		holder = tahert_12
+	}
+	363.1.1 = {
+		#holder = nuvelan_04
+	}
+	369.1.1 = {
+		#holder = nuvelan_03
+	}
+	375.1.1 = {
+		#holder = nuvelan_07
+		#liege = "k_hispania"
+		#liege = 0
+	}
+	390.1.1 = {
+		holder = tahert_13
+		liege = d_rif
+	}
+	476.1.1 = {
+		holder = mauri_10
+		de_jure_liege = d_fes
+		liege = 0
+	}
+	767.1.1 = {
+		holder = 210037
+	}
+	
+
+}
+
+
+c_muluya = {
+	361.1.1 = {	change_development_level = 3 }
+	476.1.1 = {	change_development_level = 4 }
+	532.1.1 = {	change_development_level = 5 }
+	632.1.1 = {	change_development_level = 6 }
+	768.1.1 = {	change_development_level = 7 }
+	
+	340.1.1 = {
+		holder = mauri_17
+		government = tribal_government
+		#liege = d_fes 
+	}
+	385.1.1 = {
+		holder = mauri_18
+	}
+	415.1.1 = {
+		holder = mauri_19
+	}
+	445.1.1 = {
+		holder = mauri_20
+	}
+	475.1.1 = {
+		holder = mauri_21
+	}
+	476.1.1 = {
+		de_jure_liege = d_fes
+	}
+	505.1.1 = {
+		holder = mauri_33
+	}
+	767.1.1 = {
+		holder = 210037
+	}
+
+}
+
+
+c_taza = {
+	340.1.1 = {
+		holder = mauri_17
+		government = tribal_government
+		#liege = d_fes 
+	}
+	385.1.1 = {
+		holder = mauri_18
+	}
+	415.1.1 = {
+		holder = mauri_19
+	}
+	445.1.1 = {
+		holder = mauri_20
+	}
+	475.1.1 = {
+		holder = mauri_21
+	}
+	476.1.1 = {
+		de_jure_liege = d_fes
+	}
+	505.1.1 = {
+		holder = mauri_33
+	}
+	767.1.1 = {
+		holder = 210037
+	}
+
+}
+
+
+c_meknes = {
+	340.1.1 = {
+		#holder = nuvelan_01
+		holder = mauri_27
+		government = tribal_government
+		#liege = d_fes
+		#liege = d_baquates
+	}
+	363.1.1 = {
+		#holder = nuvelan_04
+	}
+	369.1.1 = {
+		#holder = nuvelan_03
+	}
+	370.1.1 = {
+		holder = mauri_28
+	}
+	375.1.1 = {
+		#holder = nuvelan_07
+	}
+	405.1.1 = {
+		holder = mauri_29
+	}
+	440.1.1 = {
+		holder = mauri_30
+	}
+	476.1.1 = {
+		de_jure_liege = d_fes
+	}
+	487.1.1 = {
+		holder = mauri_31
+	}
+	767.1.1 = {
+		holder = 210037
+	}
+}
+
+
+c_gharb = {
+	340.1.1 = {
+		#holder = nuvelan_01
+		holder = tahert_12
+		government = tribal_government
+		#liege = d_rif
+
+	}
+	361.1.1 = {
+		liege = d_rif
+	}
+	361.4.1 = {
+		#holder = nuvelan_04
+		holder = gaetuli_07
+		#liege = d_rif
+	}
+	#369.1.1 = {
+	#	holder = nuvelan_03
+	#}
+	#375.1.1 = {
+	#	holder = nuvelan_07
+	#}
+	400.1.1 = {
+		holder = gaetuli_08
+	}
+	476.1.1 = {
+		holder = mauri_10
+		liege = 0
+		de_jure_liege = d_fes
+	}
+	767.1.1 = {
+		holder = 210038
+	}
+}
+c_tangiers = {
+	361.1.1 = {	change_development_level = 6 }
+	476.1.1 = {	change_development_level = 7 }
+	532.1.1 = {	change_development_level = 8 }
+	632.1.1 = {	change_development_level = 9 }
+	768.1.1 = {	change_development_level = 10 }
+
+	
+	361.1.1 = {
+		holder = mauretania_01
+		liege = k_hispania
+	}
+	395.1.1 = {
+		holder = mauretania_02
+		liege = k_hispania
+	}
+	476.1.1 = {
+		holder = mauretania_03
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+		liege = k_vandals
+	}
+	766.1.1 = {
+		holder = 73981
+		government = clan_government
+	}
+}
+
+
+c_ceuta = {
+	361.1.1 = {	change_development_level = 6 }
+	476.1.1 = {	change_development_level = 7 }
+	532.1.1 = {	change_development_level = 8 }
+	632.1.1 = {	change_development_level = 9 }
+	768.1.1 = {	change_development_level = 10 }
+
+	
+	361.1.1 = {
+		holder = mauretania_01
+		liege = k_hispania
+	}
+	395.1.1 = {
+		holder = mauretania_02
+		liege = k_hispania
+	}
+	476.1.1 = {
+		holder = mauretania_03
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+		liege = 0
+	}
+	690.1.1 = {
+		holder = 73980 # Conde Don Juliï¿½n
+		government = clan_government
+	}
+}
+
+c_melilla = {
+	361.1.1 = {
+		holder = mauretania_01
+		liege = k_hispania
+	}
+	385.1.1 = {
+		holder = mauretania_02
+		liege = k_hispania
+	}
+	415.1.1 = {
+		holder = mauri_19
+	}
+	445.1.1 = {
+		holder = mauri_20
+	}
+	475.1.1 = {
+		holder = mauri_21
+		#liege = 0
+	}
+	505.1.1 = {
+		holder = mauri_33
+	}
+	710.1.1 = {
+		government = clan_government
+		holder = 168254
+	}
+	749.1.1 = {
+		holder = 168255
+	}
+	755.1.1 = {
+		holder = 168256
+	}
+	760.1.1 = {
+		holder = 168257
+	}
+}
+

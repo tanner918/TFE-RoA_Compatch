@@ -1,0 +1,379 @@
+﻿#Garamantean Kingdom
+
+garamantian_01 = {
+	name = "Mastan"
+	religion = "amazigh_pagan"
+	culture = "laguatan"
+	dynasty = ataremid
+	323.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+garamantian_02 = {
+	name = "Iken"
+	religion = "ammon_pagan"
+	culture = "garamantian"
+	dynasty = fezzanid
+	341.1.1 = {
+		birth = yes
+	}
+	415.1.1 = {
+		death = yes
+	}
+}
+garamantian_03 = { 
+	name= "Yeften"
+	religion="ammon_pagan"
+	culture="laguatan"
+	431.1.1 = {
+		birth = yes
+	}
+	499.1.1 = {
+		death = yes
+	}
+}
+garamantian_04 = { 
+	name= "Masgaba"
+	religion="ammon_pagan"
+	culture="laguatan"
+	427.1.1 = {
+		birth = yes
+	}
+	489.1.1 = {
+		death = yes
+	}
+}
+garamantian_05 = { 
+	name= "Thakiya"
+	religion="ammon_pagan"
+	culture="garamantian"
+	501.1.1 = {
+		birth = yes
+	}
+	559.1.1 = {
+		death = yes
+	}
+}
+garamantian_06 = { 
+	name= "Khenchela"
+	religion="ammon_pagan"
+	culture="garamantian"
+	489.1.1 = {
+		birth = yes
+	}
+	543.1.1 = {
+		death = yes
+	}
+}
+garamantian_07 = {
+	name= "Sifal"
+	religion="chalcedonian"
+	culture="garamantian"
+	600.1.1 = {
+		birth = yes
+	}
+	668.1.1 = {
+		death = yes
+	}
+}
+garamantian_08 = {
+	name= "Beddis"
+	religion="chalcedonian"
+	culture="garamantian"
+	607.1.1 = {
+		birth = yes
+	}
+	668.1.1 = {
+		death = yes
+	}
+}
+garamantian_09 = {
+	name = "Beddis"
+	religion = "amazigh_pagan"
+	culture = "laguatan"
+	father = garamantian_01
+	dynasty = ataremid
+	373.1.1 = {
+		birth = yes
+	}
+	440.1.1 = {
+		death = yes
+	}
+}
+
+garamantian_10 = {
+	name = "Thakiya"
+	religion = "ammon_pagan"
+	culture = "garamantian"
+	father = garamantian_02
+	dynasty = fezzanid
+	361.1.1 = {
+		birth = yes
+	}
+	425.1.1 = {
+		death = yes
+	}
+}
+
+garamantian_11 = {
+	name = "Masgaba"
+	religion = "amazigh_pagan"
+	culture = "garamantian"
+	dynasty = gamphasantes
+	trait = craven
+	trait = content
+	321.1.1 = {
+		birth = yes
+	}
+	405.1.1 = {
+		death = yes
+	}
+}
+
+garamantian_12 = {
+	name = "Yeften"
+	religion = "amazigh_pagan"
+	culture = "garamantian"
+	father = garamantian_11
+	dynasty = gamphasantes
+	trait = craven
+	trait = content
+	361.1.1 = {
+		birth = yes
+	}
+	445.1.1 = {
+		death = yes
+	}
+}
+
+garamantian_13 = {
+	name = "Sifal"
+	religion = "ammon_pagan"
+	culture = "laguatan"
+	dynasty = austuriani
+	325.1.1 = {
+		birth = yes
+	}
+	360.1.1 = {
+		set_realm_capital = title:c_awjila
+		add_pressed_claim = title:c_syrte
+	}
+	414.1.1 = {
+		death = yes
+	}
+}
+
+garamantian_14 = {
+	name = "Khenchela"
+	religion = "ammon_pagan"
+	culture = "laguatan"
+	father = garamantian_13
+	dynasty = austuriani
+	390.1.1 = {
+		birth = yes
+		add_pressed_claim = title:c_syrte
+	}
+	455.1.1 = {
+		death = yes
+	}
+}
+
+garamantian_15 = {
+	name = "Beddis"
+	religion = "ammon_pagan"
+	culture = "laguatan"
+	father = garamantian_14
+	dynasty = austuriani
+	430.1.1 = {
+		birth = yes
+		add_pressed_claim = title:c_syrte
+	}
+	495.1.1 = {
+		death = yes
+	}
+}
+
+garamantian_16 = {
+	name = "Beddis"
+	religion = "ammon_pagan"
+	culture = "garamantian"
+	father = garamantian_10
+	dynasty = fezzanid
+	409.1.1 = {
+		birth = yes
+	}
+	468.1.1 = {
+		death = yes
+	}
+}
+
+garamantian_17 = {
+	name = "Masgaba"
+	religion = "ammon_pagan"
+	culture = "garamantian"
+	father = garamantian_16
+	dynasty = fezzanid
+	460.1.1 = {
+		birth = yes
+	}
+	535.1.1 = {
+		death = yes
+	}
+}
+
+garamantian_18 = {
+	name = "Ierna"
+	religion = "ammon_pagan"
+	culture = "laguatan"
+	father = garamantian_15
+	dynasty = austuriani
+	490.1.1 = {
+		birth = yes
+		add_pressed_claim = title:c_syrte
+	}
+	546.1.1 = {
+		death = yes
+	}
+}
+
+garamantian_19 = {
+	name = "Carcasan"
+	religion = "ammon_pagan"
+	culture = "garamantian"
+	dynasty = dynasty_ifuraces
+    trait = education_learning_3 # High Priest of Gurzil
+    trait = zealous
+    trait = brave
+	508.2.8 = {
+		birth = yes
+	}
+	548.4.1 = { # Battle of Caon Fields
+		death = {
+			death_reason = death_battle
+			killer = greek_02
+		}
+	}
+}
+
+garamantian_20 = {
+	name = "Sidifan"
+	religion = "ammon_pagan"
+	culture = "laguatan"
+	dynasty = dynasty_naffur
+	489.4.4 = {
+		birth = yes
+	}
+	528.1.1 = {
+		add_courtier = character:garamantian_26
+		add_courtier = character:garamantian_27
+	}
+	546.7.8 = { 
+		death = yes
+	}
+}
+
+garamantian_21 = {
+	name = "Autilitan"
+	religion = "ammon_pagan"
+	culture = "laguatan"
+	dynasty = dynasty_naffur
+	father=garamantian_20
+	516.1.14 = {
+		birth = yes
+	}
+	568.12.10 = { 
+		death = yes
+	}
+}
+
+garamantian_22 = {
+	name = "Cabaon"
+	religion = "ammon_pagan"
+	culture = "laguatan"
+	#dynasty = dynasty_naffur
+	478.6.5 = {
+		birth = yes
+	}
+	525.8.28 = { 
+		death = yes
+	}
+}
+
+garamantian_23 = {
+	name = "Bruten"
+	religion = "ammon_pagan"
+	culture = "laguatan"
+	dynasty = macares
+	trait = education_martial_3
+	trait = brave
+	504.3.21 = {
+		birth = yes
+	}
+	567.8.9 = { 
+		death = yes
+	}
+}
+
+garamantian_24 = {
+	name = "Camalus"
+	religion = "ammon_pagan"
+	culture = "laguatan"
+	dynasty = seli
+	trait = education_martial_3
+	trait = brave
+	503.1.21 = {
+		birth = yes
+	}
+	567.8.9 = { 
+		death = yes
+	}
+}
+
+garamantian_25 = {
+	name = "Varinus"
+	religion = "ammon_pagan"
+	culture = "laguatan"
+	dynasty = caunes
+	trait = education_martial_3
+	trait = brave
+	502.8.21 = {
+		birth = yes
+	}
+	567.8.9 = { 
+		death = yes
+	}
+}
+
+garamantian_26 = {
+	name = "Labbas"
+	religion = "ammon_pagan"
+	culture = "laguatan"
+	dynasty = gurbissenses
+	trait = education_diplomacy_3
+	trait = forgiving
+	trait = fickle
+	trait = generous
+	diplomacy = 6
+	480.5.21 = {
+		birth = yes
+	}
+	567.8.9 = { 
+		death = yes
+	}
+}
+garamantian_27 = {
+	name = "Zabeas"
+	religion = "ammon_pagan"
+	culture = "laguatan"
+	dynasty = seli
+	trait = education_martial_3
+	497.4.21 = {
+		birth = yes
+	}
+	567.8.9 = { 
+		death = yes
+	}
+}

@@ -1,0 +1,470 @@
+﻿k_valencia = {
+	361.1.1 = { change_development_level = 4 }
+	476.1.1 = { change_development_level = 5 }
+	532.1.1 = { change_development_level = 6 }
+	632.1.1 = { change_development_level = 7 }
+	768.1.1 = { change_development_level = 8 }
+}
+
+d_valencia = {
+	476.1.1 = {
+		de_jure_liege = k_carthaginensis
+	}
+	532.1.1 = {
+		holder = 200280
+	}
+	711.1.1 = {
+		government = clan_government
+	}
+}
+
+
+d_murcia = {
+	200.1.1 = {
+		liege = k_hispania
+		de_jure_liege = k_hispania
+	}
+	360.1.1 = {
+		holder = valencia_07
+	}
+	395.1.1 = {
+		holder = valencia_08
+	}
+	476.1.1 = {
+		holder = 0
+		liege = 0
+		de_jure_liege = k_carthaginensis
+	}
+	532.1.1 = {
+		holder = 200280
+	}
+	695.1.1 = {
+		holder = 73901 # Teodomiro de Orihuela
+		government = clan_government
+	}
+	711.1.1 = {
+		liege = k_andalusia
+	}
+	743.1.1 = {
+		holder = 200064 # Atanagildo de Orihuela
+	}
+	745.1.1 = {
+		holder = 73903 # Ali Nadirid
+	}
+}
+c_valencia = {
+	361.1.1 = {
+		holder = valencia_04
+		liege = d_murcia
+		de_jure_liege = d_murcia
+	}
+	395.1.1 = {
+		holder = valencia_05
+	}
+	476.1.1 = {
+		holder = valencia_03
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+		de_jure_liege = d_valencia
+		liege = 0
+	}
+	498.1.1 = {
+		holder = valencia_12
+		government = theocracy_government
+		liege = k_visigoths
+	}
+	758.1.1 = {
+		holder = 200226 # Hisham Petrid
+		liege = k_andalusia
+		government = clan_government
+	}
+}
+
+
+c_castellon = {
+	300.1.1 = { #Diocletian reform
+		liege = d_aragon
+		de_jure_liege = d_aragon
+	}
+	361.1.1 = {
+		holder = valencia_01
+	}
+	395.1.1 = {
+		holder = valencia_02
+	}
+	476.1.1 = {
+		holder = valencia_03
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+		de_jure_liege = d_valencia
+		liege = 0
+	}
+	498.1.1 = {
+		holder = valencia_12
+	}
+	758.1.1 = {
+		holder = 200226 # Hisham Petrid
+		liege = k_andalusia
+		government = clan_government
+	}
+}
+
+
+c_teruel = {
+	300.1.1 = { #Diocletian reform
+		liege = d_aragon
+		de_jure_liege = d_aragon
+	}
+	361.1.1 = {
+		holder = valencia_01
+	}
+	395.1.1 = {
+		holder = valencia_02
+	}
+	476.1.1 = {
+		holder = valencia_03
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+		de_jure_liege = d_valencia
+		liege = 0
+	}
+	498.1.1 = {
+		holder = valencia_12
+	}
+	758.1.1 = {
+		holder = 200226 # Hisham Petrid
+		liege = k_andalusia
+		government = clan_government
+	}
+}
+
+
+c_denia = {
+	361.1.1 = {
+		holder = valencia_04
+		liege = d_murcia
+		de_jure_liege = d_murcia
+	}
+	395.1.1 = {
+		holder = valencia_05
+	}
+	476.1.1 = {
+		holder = valencia_06
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+		de_jure_liege = d_valencia
+		liege = 0
+	}
+	527.1.1 = {
+		holder = valencia_14
+		liege = k_visigoths
+	}
+	758.1.1 = {
+		holder = 200226 # Hisham Petrid
+		liege = k_andalusia
+		government = clan_government
+	}
+}
+
+
+c_alicante = {
+	361.1.1 = {
+		holder = valencia_04
+		liege = d_murcia
+		de_jure_liege = d_murcia
+	}
+	395.1.1 = {
+		holder = valencia_05
+	}
+	476.1.1 = {
+		holder = valencia_06
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+		de_jure_liege = d_valencia
+		liege = 0
+	}
+	527.1.1 = {
+		holder = valencia_14
+	}
+	695.1.1 = {
+		holder = 73901 # Teodomiro de Orihuela
+		liege = d_murcia
+		government = clan_government
+	}
+	743.1.1 = {
+		holder = 200064 # Atanagildo de Orihuela
+	}
+	745.1.1 = {
+		holder = 73903 # Ali Nadirid
+	}
+}
+
+c_murcia = {
+	361.1.1 = {
+		holder = valencia_07
+		liege = k_hispania
+	}
+	395.1.1 = {
+		holder = valencia_08
+	}
+	476.1.1 = {
+		holder = valencia_09
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+		liege = 0
+	}
+	529.1.1 = {
+		holder = valencia_13
+		liege = k_visigoths
+	}
+	695.1.1 = {
+		holder = 73901 # Teodomiro de Orihuela
+		liege = d_murcia
+		government = clan_government
+	}
+	743.1.1 = {
+		holder = 200064 # Atanagildo de Orihuela
+	}
+	745.1.1 = {
+		holder = 73903 # Ali Nadirid
+	}
+}
+
+
+c_alcaraz = {
+	361.1.1 = {
+		holder = valencia_07
+		liege = k_hispania
+	}
+	395.1.1 = {
+		holder = valencia_08
+	}
+	476.1.1 = {
+		holder = valencia_09
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+		liege = 0
+	}
+	529.1.1 = {
+		holder = valencia_13
+	}
+	695.1.1 = {
+		holder = 73901 # Teodomiro de Orihuela
+		liege = d_murcia
+		government = clan_government
+	}
+	743.1.1 = {
+		holder = 200064 # Atanagildo de Orihuela
+	}
+	745.1.1 = {
+		holder = 73903 # Ali Nadirid
+	}
+}
+
+
+c_alarcon = {
+	361.1.1 = {
+		holder = valencia_07
+		liege = k_hispania
+	}
+	395.1.1 = {
+		holder = valencia_08
+	}
+	476.1.1 = {
+		holder = valencia_09
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+		liege = 0
+	}
+	529.1.1 = {
+		holder = valencia_13
+	}
+	695.1.1 = {
+		holder = 73901 # Teodomiro de Orihuela
+		liege = d_murcia
+		government = clan_government
+	}
+	743.1.1 = {
+		holder = 200064 # Atanagildo de Orihuela
+	}
+	745.1.1 = {
+		holder = 73903 # Ali Nadirid
+	}
+}
+
+
+d_mallorca = {
+	361.1.1 = { change_development_level = 2 }
+	532.1.1 = { change_development_level = 3 }
+	768.1.1 = { change_development_level = 4 }
+	
+	361.1.1 = {
+		holder = valencia_10
+		liege = k_hispania
+		de_jure_liege = k_hispania
+	}
+	395.1.1 = {
+		holder = valencia_11
+	}
+	476.1.1 = {
+		holder = balearica_01
+		government = feudal_government
+		liege = k_vandals
+		de_jure_liege = k_carthaginensis
+	}
+	532.1.1 = {
+		holder = vandals_013b
+	}
+	711.1.1 = {
+		de_jure_liege = k_valencia
+	}
+}
+
+
+c_mallorca = {
+	361.1.1 = {
+		holder = valencia_10
+		liege = k_hispania
+	}
+	395.1.1 = {
+		holder = valencia_11
+	}
+	476.1.1 = {
+		holder = balearica_01
+		government = feudal_government
+		liege = k_vandals
+	}
+	744.1.1 = {
+		holder = 200223 # Theodoros Spanikos
+		liege = e_byzantium
+	}
+}
+
+
+c_menorca = {
+	361.1.1 = {
+		holder = valencia_10
+		liege = k_hispania
+	}
+	395.1.1 = {
+		holder = valencia_11
+	}
+	476.1.1 = {
+		holder = balearica_01
+		government = feudal_government
+		liege = k_vandals
+	}
+	744.1.1 = {
+		holder = 200223 # Theodoros Spanikos
+		liege = e_byzantium
+	}
+}
+
+
+c_iviza = {
+	361.1.1 = {
+		holder = valencia_10
+		liege = k_hispania
+	}
+	395.1.1 = {
+		holder = valencia_11
+	}
+	476.1.1 = {
+		holder = balearica_01
+		government = feudal_government
+		liege = k_vandals
+	}
+	744.1.1 = {
+		holder = 200223 # Theodoros Spanikos
+		liege = e_byzantium
+	}
+}
+

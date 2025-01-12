@@ -1,0 +1,1943 @@
+﻿k_italy = {
+	361.1.1 = { change_development_level = 5 }
+	451.1.1 = { change_development_level = 3 }
+	768.1.1 = { change_development_level = 5 }
+	476.9.4 = {
+		holder = 996002 # Odoacer
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = roman_government
+				}
+			}
+		}
+	}
+	493.3.15 = {
+		holder = 992016 # Theodoric
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = roman_government
+				}
+			}
+		}
+	}
+	526.1.1 = {
+		#name = OSTROGOTHIC
+		holder = 992023 # Athalaric
+		#succession_laws = { scandinavian_elective_succession_law male_only_law }
+		succession_laws = { gothic_elective_succession_law male_only_law }
+	}
+	565.1.1 = {
+		holder = 190124 # Alboin Gausi
+	}
+	572.6.28 = {
+		holder = 190168 # Clef Beleos
+	}
+	574.1.1 = {
+		holder = 0
+		#reset_name = yes
+	}
+	584.1.1 = {
+		holder = 190169 # Authari Beleos
+	}
+	590.9.5 = {
+		holder = 190170 # Agilolf Anawas
+	}
+	616.1.1 = {
+		holder = 190173 # Adaloald
+	}
+	626.1.1 = {
+		holder = 190174 # Arioald Arioaldidi
+	}
+	636.1.1 = {
+		holder = 190176 # Rothari Arodingi
+	}
+	652.1.1 = {
+		holder = 190177 # Rodoald
+	}
+	652.6.1 = {
+		holder = 190181 # Aripert I Baiuvari
+	}
+	661.1.1 = {
+		holder = 190182 # Godepert
+	}
+	662.1.1 = {
+		holder = 190185 # Pectarit
+	}
+	662.6.1 = {
+		holder = 190133 # Grimoald Gausi
+	}
+	671.1.1 = {
+		holder = 190136 # Garipald
+	}
+	671.6.1 = {
+		holder = 190185 # Pectarit (2nd time)
+	}
+	688.1.1 = {
+		holder = 190188 # Cunicpert
+	}
+	689.1.1 = {
+		holder = 190354 # Alachis Alachisidi
+	}
+	689.6.1 = {
+		holder = 190188 # Cunicpert (2nd time)
+	}
+	700.1.1 = {
+		holder = 190189 # Liutpert
+	}
+	701.1.1 = {
+		holder = 190183 # Raginpert
+	}
+	701.6.1 = {
+		holder = 190189 # Liutpert (2nd time)
+	}
+	702.1.1 = {
+		holder = 190184 # Aripert II Baiuvari
+	}
+	712.1.1 = {
+		holder = 190193 # Ansprand Ansprandidi
+	}
+	712.7.1 = {
+		holder = 190196 # Liutprand
+	}
+	744.1.1 = {
+		holder = 190198 # Hildeprand
+	}
+	744.8.1 = {
+		holder = 190343 # Ratchis Billonidi
+	}
+	749.1.1 = {
+		holder = 190331 # Aistulf
+	}
+	756.12.1 = {
+		holder = 190343 # Ratchis (2nd time)
+	}
+	757.1.1 = {
+		holder = 190347 # Desiderius Desideridi
+	}
+}
+
+
+d_friuli = {
+	361.1.1 = { change_development_level = 6 }
+	451.1.1 = { change_development_level = 4 }
+	## Roman Province
+	361.1.1 = {
+		name = VENETIA_ET_HISTRIA
+		de_jure_liege = k_italia_annonariae
+		liege = k_italia_annonariae
+	}
+	361.1.1 = {
+		holder = italia_02
+	}
+	395.1.1 = {
+		holder = italia_03
+	}
+	# Odoarcer's Kingdom
+	476.9.4 = {
+		holder = italia_20
+		liege = k_italy
+		government = feudal_government
+		de_jure_liege = k_italy
+	}
+	525.1.1 = {
+		holder = 992100
+	}
+	591.1.1 = {
+		liege = k_italy
+	}
+}
+
+
+c_aquileia = {
+	361.1.1 = { change_development_level = 8 }
+	## Roman Province
+	361.1.1 = {
+		holder = italia_02
+	}
+	395.1.1 = {
+		holder = italia_03
+	}
+	451.1.1={
+		change_development_level = 2
+	}
+	# Odoarcer's Kingdom
+	476.9.4 = {
+		holder = italia_20
+		liege = k_italy
+		government = feudal_government
+		de_jure_liege = k_italy
+	}
+	525.1.1 = {
+		holder = 992100 # Withigis ostrogothic
+		liege = k_italy
+	}
+	569.1.1 = {
+		liege = k_italy
+	}
+	569.1.1 = {
+		holder = 190126 #Gisulf I
+	}
+	591.1.1 = {
+		holder = 190128 #Gisulf II
+	}
+	610.1.1 = {
+		holder = 190244 #Taso
+	}
+	625.1.1 = {
+		holder = 190246 #Grasulf
+	}
+	641.1.1 = {
+		holder = 190247 #Ago
+	}
+	663.1.1 = {
+		holder = 190248 #Lupus
+	}
+	666.1.1 = {
+		holder = 190249 #Arnefrit
+	}
+	666.6.1 = {
+		holder = 190250 #Wechtar
+	}
+	671.1.1 = {
+		holder = 190251 #Landar
+	}
+	690.1.1 = {
+		holder = 190252 #Rodoald
+	}
+	694.1.1 = {
+		holder = 190255 #Ansfrid
+	}
+	694.6.1 = {
+		holder = 190254 #Ado
+	}
+	695.1.1 = {
+		holder = 190256 #Ferdulf
+	}
+	705.1.1 = {
+		holder = 190257 #Corvulus
+	}
+	705.6.1 = {
+		holder = 190342 #Pemmo
+	}
+	739.1.1 = {
+		holder = 190343 #Ratchis
+	}
+	744.1.1 = {
+		holder = 190331 #Aistulf
+	}
+	749.1.1 = {
+		holder = 190260 #Anselm
+	}
+	751.1.1 = {
+		holder = 190262 #Peter
+	}
+}
+
+
+c_friuli = {
+	## Roman Province
+	361.1.1 = {
+		holder = italia_02
+	}
+	395.1.1 = {
+		holder = italia_03
+	}
+	# Odoarcer's Kingdom
+	476.9.4 = {
+		holder = italia_20
+		liege = k_italy
+		government = feudal_government
+		de_jure_liege = k_italy
+	}
+	525.1.1 = {
+		holder = 992100 # Withigis ostrogothic
+		liege = k_italy
+	}
+	763.1.1 = {
+		liege = k_italy
+	}
+	763.1.1 = {
+		holder = 190323 #Engelbert
+	}
+
+}
+
+
+c_gorz = {
+	## Roman Province
+	361.1.1 = {
+		holder = italia_02
+	}
+	395.1.1 = {
+		holder = italia_03
+	}
+	# Odoarcer's Kingdom
+	476.9.4 = {
+		holder = italia_20
+		liege = k_italy
+		government = feudal_government
+		de_jure_liege = k_italy
+	}
+	525.1.1 = {
+		holder = 992100 # Withigis ostrogothic
+		liege = k_italy
+	}
+	532.1.1 = {
+		holder = 992101
+		liege = d_friuli
+	}
+	569.1.1 = {
+		liege = k_italy
+	}
+	569.1.1 = {
+		holder = 190126 #Gisulf I
+	}
+	591.1.1 = {
+		holder = 190128 #Gisulf II
+	}
+	610.1.1 = {
+		holder = 190244 #Taso
+	}
+	625.1.1 = {
+		holder = 190246 #Grasulf
+	}
+	641.1.1 = {
+		holder = 190247 #Ago
+	}
+	663.1.1 = {
+		holder = 190248 #Lupus
+	}
+	666.1.1 = {
+		holder = 190249 #Arnefrit
+	}
+	666.6.1 = {
+		holder = 190250 #Wechtar
+	}
+	671.1.1 = {
+		holder = 190251 #Landar
+	}
+	690.1.1 = {
+		holder = 190252 #Rodoald
+	}
+	694.1.1 = {
+		holder = 190255 #Ansfrid
+	}
+	694.6.1 = {
+		holder = 190254 #Ado
+	}
+	695.1.1 = {
+		holder = 190256 #Ferdulf
+	}
+	705.1.1 = {
+		holder = 190257 #Corvulus
+	}
+	705.6.1 = {
+		holder = 190342 #Pemmo
+	}
+	739.1.1 = {
+		holder = 190343 #Ratchis
+	}
+	744.1.1 = {
+		holder = 190331 #Aistulf
+	}
+	749.1.1 = {
+		holder = 190260 #Anselm
+	}
+	751.1.1 = {
+		holder = 190262 #Peter
+	}
+
+}
+
+
+d_verona = {
+	361.1.1 = { change_development_level = 7 }
+	525.1.1 = {
+		holder = 992030 # Hildibald ostrogothic
+		liege = k_italy
+	}
+	569.1.1 = {
+		holder = 190126 #Gisulf I
+		liege = 0
+	}
+	591.1.1 = {
+		holder = 190128 #Gisulf II
+		liege = k_italy
+	}
+	610.1.1 = {
+		holder = 190244 #Taso
+	}
+	625.1.1 = {
+		holder = 190246 #Grasulf
+	}
+	641.1.1 = {
+		holder = 190247 #Ago
+	}
+	663.1.1 = {
+		holder = 190248 #Lupus
+	}
+	666.1.1 = {
+		holder = 190249 #Arnefrit
+	}
+	666.6.1 = {
+		holder = 190250 #Wechtar
+	}
+	671.1.1 = {
+		holder = 190251 #Landar
+	}
+	690.1.1 = {
+		holder = 190252 #Rodoald
+	}
+	694.1.1 = {
+		holder = 190255 #Ansfrid
+	}
+	694.6.1 = {
+		holder = 190254 #Ado
+	}
+	695.1.1 = {
+		holder = 190256 #Ferdulf
+	}
+	705.1.1 = {
+		holder = 190257 #Corvulus
+	}
+	705.6.1 = {
+		holder = 190342 #Pemmo
+	}
+	739.1.1 = {
+		holder = 190343 #Ratchis
+	}
+	744.1.1 = {
+		holder = 190331 #Aistulf
+	}
+	749.1.1 = {
+		holder = 190260 #Anselm
+	}
+	751.1.1 = {
+		holder = 190262 #Peter
+	}
+}
+
+
+c_verona = {
+	361.1.1 = { change_development_level = 8 }
+	## Roman Province
+	361.1.1 = {
+		de_jure_liege = d_friuli
+		liege = d_friuli
+	}
+	361.1.1 = {
+		holder = italia_04
+	}
+	395.1.1 = {
+		holder = italia_05
+	}
+	# Odoarcer's Kingdom
+	476.9.4 = {
+		holder = italia_21
+		liege = d_friuli
+		government = feudal_government
+		de_jure_liege = d_verona
+	}
+	525.1.1 = {
+		holder = 992030 # Hildibald ostrogothic
+		liege = k_italy
+	}
+	751.1.1 = {
+		liege = k_italy
+	}
+	751.1.1 = {
+		holder = 190271 #Ademaro
+	}
+	768.1.1 = {
+		holder = 190272 #Ademaro
+	}
+
+}
+
+
+c_treviso = {
+	## Roman Province
+	361.1.1 = {
+		de_jure_liege = d_friuli
+		liege  = d_friuli
+	}
+	361.1.1 = {
+		holder = italia_12
+	}
+	395.1.1 = {
+		holder = italia_13
+	}
+	# Odoarcer's Kingdom
+	476.9.4 = {
+		holder = italia_22
+		liege = d_friuli
+		government = feudal_government
+		de_jure_liege = d_verona
+	}
+	525.1.1 = {
+		holder = 992030 # Hildibald ostrogothic
+		liege = k_italy
+	}
+	763.1.1 = {
+		liege = k_italy
+	}
+	763.1.1 = {
+		holder = 190323 #Engelbert
+	}
+
+}
+
+
+c_padua = {
+	## Roman Province
+	361.1.1 = {
+		de_jure_liege = d_friuli
+		liege = d_friuli
+	}
+	361.1.1 = {
+		holder = italia_04
+	}
+	395.1.1 = {
+		holder = italia_05
+	}
+	# Odoarcer's Kingdom
+	476.9.4 = {
+		holder = italia_21
+		liege = d_friuli
+		government = feudal_government
+		de_jure_liege = d_verona
+	}
+	525.1.1 = {
+		holder = 992030 # Hildibald ostrogothic
+		liege = k_italy
+	}
+	569.1.1 = {
+		holder = 190126 #Gisulf I
+	}
+	591.1.1 = {
+		holder = 190128 #Gisulf II
+		liege = k_italy
+	}
+	610.1.1 = {
+		holder = 190244 #Taso
+	}
+	625.1.1 = {
+		holder = 190246 #Grasulf
+	}
+	641.1.1 = {
+		holder = 190247 #Ago
+	}
+	663.1.1 = {
+		holder = 190248 #Lupus
+	}
+	666.1.1 = {
+		holder = 190249 #Arnefrit
+	}
+	666.6.1 = {
+		holder = 190250 #Wechtar
+	}
+	671.1.1 = {
+		holder = 190251 #Landar
+	}
+	690.1.1 = {
+		holder = 190252 #Rodoald
+	}
+	694.1.1 = {
+		holder = 190255 #Ansfrid
+	}
+	694.6.1 = {
+		holder = 190254 #Ado
+	}
+	695.1.1 = {
+		holder = 190256 #Ferdulf
+	}
+	705.1.1 = {
+		holder = 190257 #Corvulus
+	}
+	705.6.1 = {
+		holder = 190342 #Pemmo
+	}
+	739.1.1 = {
+		holder = 190343 #Ratchis
+	}
+	744.1.1 = {
+		holder = 190331 #Aistulf
+	}
+	749.1.1 = {
+		holder = 190260 #Anselm
+	}
+	751.1.1 = {
+		holder = 190262 #Peter
+	}
+}
+
+
+c_polesine = {
+	## Roman Province
+	361.1.1 = {
+		de_jure_liege = d_friuli
+		liege = d_friuli
+	}
+	361.1.1 = {
+		holder = italia_14
+	}
+	395.1.1 = {
+		holder = italia_15
+	}
+	# Odoarcer's Kingdom
+	476.9.4 = {
+		holder = italia_23
+		liege = d_friuli
+		government = feudal_government
+		de_jure_liege = d_verona
+	}
+	525.1.1 = {
+		holder = 992030 # Hildibald ostrogothic
+		liege = k_italy
+	}
+	569.1.1 = {
+		holder = 190126 #Gisulf I
+	}
+	591.1.1 = {
+		holder = 190128 #Gisulf II
+		liege = k_italy
+	}
+	610.1.1 = {
+		holder = 190244 #Taso
+	}
+	625.1.1 = {
+		holder = 190246 #Grasulf
+	}
+	641.1.1 = {
+		holder = 190247 #Ago
+	}
+	663.1.1 = {
+		holder = 190248 #Lupus
+	}
+	666.1.1 = {
+		holder = 190249 #Arnefrit
+	}
+	666.6.1 = {
+		holder = 190250 #Wechtar
+	}
+	671.1.1 = {
+		holder = 190251 #Landar
+	}
+	690.1.1 = {
+		holder = 190252 #Rodoald
+	}
+	694.1.1 = {
+		holder = 190255 #Ansfrid
+	}
+	694.6.1 = {
+		holder = 190254 #Ado
+	}
+	695.1.1 = {
+		holder = 190256 #Ferdulf
+	}
+	705.1.1 = {
+		holder = 190257 #Corvulus
+	}
+	705.6.1 = {
+		holder = 190342 #Pemmo
+	}
+	739.1.1 = {
+		holder = 190343 #Ratchis
+	}
+	744.1.1 = {
+		holder = 190331 #Aistulf
+	}
+	749.1.1 = {
+		holder = 190260 #Anselm
+	}
+	751.1.1 = {
+		holder = 190262 #Peter
+	}
+}
+
+
+d_genoa = {
+	361.1.1 = { change_development_level = 7 }
+	768.1.1 = { change_development_level = 6 }
+	## Roman Province
+	361.1.1 = {
+		name = ALPES_COTTIAE
+		de_jure_liege = k_italia_annonariae
+		liege = k_italia_annonariae
+	}
+	361.1.1 = {
+		holder = italia_10
+	}
+	395.1.1 = {
+		holder = italia_11
+	}
+	# Odoarcer's Kingdom
+	476.9.4 = {
+		holder = italia_24
+		liege = k_italy
+		government = feudal_government
+		de_jure_liege = k_italy
+		reset_name = yes
+	}
+	532.1.1 = {
+		holder = roman_06
+	}
+}
+
+c_genoa = {
+	361.1.1 = { change_development_level = 8 }
+	## Roman Province
+	361.1.1 = {
+		holder = italia_10
+	}
+	395.1.1 = {
+		holder = italia_11
+	}
+	# Odoarcer's Kingdom
+	476.9.4 = {
+		holder = italia_24
+		government = feudal_government
+	}
+	625.1.1 = {
+		holder = isaac_the_armenian
+	}
+	741.1.1 = {
+		liege = k_italy
+		holder = 190274 # Adalpert of Genoa
+	}
+	762.1.1 = {
+		holder = 190275 # Ademaro of Genoa
+	}
+}
+
+c_luni = {
+	## Roman Province
+	361.1.1 = {
+		holder = italia_10
+	}
+	395.1.1 = {
+		holder = italia_11
+	}
+	# Odoarcer's Kingdom
+	476.9.4 = {
+		holder = italia_24
+		government = feudal_government
+	}
+	741.1.1 = {
+		liege = k_italy
+		holder = 190274 # Adalpert of Genoa
+	}
+	762.1.1 = {
+		holder = 190275 # Ademaro of Genoa
+	}
+}
+
+c_monferrato = {
+	361.1.1 = { change_development_level = 6 }
+	## Roman Province
+	361.1.1 = {
+		de_jure_liege = d_genoa
+		liege = d_genoa
+	}
+	361.1.1 = {
+		holder = italia_06
+	}
+	395.1.1 = {
+		holder = italia_07
+	}
+	# Odoarcer's Kingdom
+	476.9.4 = {
+		holder = italia_25
+		liege = d_genoa
+		government = feudal_government
+		de_jure_liege = d_piedmonte
+	}
+	525.1.1 = {
+		holder = 992105 # Sisigis
+		liege = k_italy
+	}
+	757.1.1 = {
+		liege = k_italy
+		holder = 190324 # Liutfred Liutfredidi
+	}
+
+}
+
+d_piedmonte = {
+	361.1.1 = { change_development_level = 6 }
+	575.1.1 = {
+		holder = 190170 # Agilolf of Italy
+		liege = k_italy
+	}
+	590.9.5 = {
+		holder = 190174 # Arioald of Italy
+	}
+	626.1.1 = {
+		holder = 0 # Unknown
+	}
+	663.1.1 = {
+		holder = 190136 # Garipald of Italy
+	}
+	671.1.1 = {
+		holder = 190183 # Raginpert of Italy
+	}
+	701.1.1 = {
+		holder = 190184 # Aripert II of Italy
+	}
+	702.1.1 = {
+		holder = 0
+	}
+}
+
+c_turin = {
+	## Roman Province
+	361.1.1 = {
+		de_jure_liege = d_genoa
+		liege = d_genoa
+	}
+	361.1.1 = {
+		holder = italia_06
+	}
+	395.1.1 = {
+		holder = italia_07
+	}
+	# Odoarcer's Kingdom
+	476.9.4 = {
+		holder = italia_25
+		liege = d_genoa
+		government = feudal_government
+		de_jure_liege = d_piedmonte
+	}
+	525.1.1 = {
+		holder = 992105 # Sisigis
+		liege = k_italy
+	}
+	575.1.1 = {
+		holder = 190170 # Agilolf of Italy
+		liege = d_piedmonte
+	}
+	590.9.5 = {
+		holder = 190174 # Arioald of Italy
+	}
+	663.1.1 = {
+		holder = 190136 # Garipald of Italy
+	}
+	671.1.1 = {
+		holder = 190183 # Raginpert of Italy
+	}
+	701.1.1 = {
+		holder = 190184 # Aripert II of Italy
+	}
+	702.1.1 = {
+		liege = k_italy
+	}
+	756.1.1 = {
+		holder = 190330 # Liutprand Liutprandidi
+	}
+}
+
+c_novara = {
+	# Roman Province
+	361.1.1 = {
+		de_jure_liege = d_lombardia
+	}
+	361.11.3 = {
+		holder = italia_01 # Faventius- Semi historical
+	}
+	395.1.17 = {
+		holder = 145227 #Honorius
+	}
+	# Odoarcer's Kingdom
+	476.9.4 = {
+		holder = italia_26
+		government = feudal_government
+		de_jure_liege = d_piedmonte
+	}
+	525.1.1 = {
+		holder = 992105 # Sisigis
+		liege = k_italy
+	}
+	756.1.1 = {
+		liege = k_italy
+		holder = 190330 # Liutprand of Cuneo
+	}
+}
+
+c_cuneo = {
+	## Roman Province
+	361.1.1 = {
+		de_jure_liege = d_genoa
+		liege = d_genoa
+	}
+	361.1.1 = {
+		holder = italia_06
+	}
+	395.1.1 = {
+		holder = italia_07
+	}
+	# Odoarcer's Kingdom
+	476.9.4 = {
+		holder = italia_25
+		liege = d_genoa
+		government = feudal_government
+		de_jure_liege = d_piedmonte
+	}
+	525.1.1 = {
+		holder = 992105 # Sisigis
+		liege = k_italy
+	}
+	756.1.1 = {
+		liege = k_italy
+	}
+	756.1.1 = {
+		holder = 190330 # Liutprand Liutprandidi
+	}
+}
+
+d_lombardia = {
+	361.1.1 = { change_development_level = 8 }
+	# Roman Province
+	361.1.1 = {
+		de_jure_liege = k_italia_annonariae
+		name = LIGURIA
+	}
+	361.11.3 = {
+		holder = italia_01 # Faventius- Semi historical
+	}
+	395.1.17 = {
+		holder = 145227 #Honorius
+	}
+	# Odoarcer's Kingdom
+	476.9.4 = {
+		holder = italia_26
+		government = feudal_government
+		de_jure_liege = k_italy
+		liege = k_italy
+	}
+	525.1.1 = {
+		holder = rugian_17
+	}
+}
+
+
+c_lombardia = {
+	361.1.1 = { change_development_level = 13 }
+	# Roman Province
+	361.1.1 = {
+		de_jure_liege = d_lombardia
+	}
+	361.11.3 = {
+		holder = italia_01 # Faventius- Semi historical
+	}
+	395.1.17 = {
+		holder = 145227 #Honorius
+	}
+	451.1.1={
+		change_development_level = 8
+	}
+	# Odoarcer's Kingdom
+	476.9.4 = {
+		holder = italia_26
+		government = feudal_government
+	}
+	525.1.1 = {
+		holder = rugian_17 # Eraric ostrogothic
+		liege = k_italy
+	}
+	766.1.1 = {
+		liege = k_italy
+	}
+	766.1.1 = {
+		holder = 190320 # Paldo Paldidi
+	}
+}
+
+c_brescia = {
+	# Roman Province
+	361.1.1 = {
+		de_jure_liege = d_lombardia
+	}
+	361.11.3 = {
+		holder = italia_01 # Faventius- Semi historical
+	}
+	395.1.17 = {
+		holder = 145227 #Honorius
+	}
+	# Odoarcer's Kingdom
+	476.9.4 = {
+		holder = italia_26
+		government = feudal_government
+	}
+	525.1.1 = {
+		holder = rugian_17 # Eraric ostrogothic
+		liege = k_italy
+	}
+	603.1.1 = {
+		liege = k_italy
+		holder = 190175 # Nandinig Arodingi
+	}
+	626.1.1 = {
+		holder = 190176 # Rothari of Italy
+	}
+	652.1.1 = {
+		holder = 190177 # Radoald of Italy
+	}
+	680.1.1 = {
+		holder = 190354 # Alachis of Italy
+	}
+	756.1.1 = {
+		holder = 190325 # Potho Gaidoaldidi
+	}
+}
+
+
+c_como = {
+	# Roman Province
+	361.1.1 = {
+		de_jure_liege = d_lombardia
+	}
+	361.11.3 = {
+		holder = italia_01 # Faventius- Semi historical
+	}
+	395.1.17 = {
+		holder = 145227 #Honorius
+	}
+	# Odoarcer's Kingdom
+	476.9.4 = {
+		holder = italia_misc_02
+		liege = d_lombardia
+		government = feudal_government
+	}
+	525.1.1 = {
+		holder = rugian_17 # Eraric ostrogothic
+		liege = k_italy
+	}
+	766.1.1 = {
+		liege = k_italy
+		holder = 190320 # Paldo of Lombardia
+	}
+}
+
+c_trent = {
+	## Roman Province
+	361.1.1 = {
+		de_jure_liege = d_friuli
+		liege  = d_friuli
+	}
+	361.1.1 = {
+		holder = italia_12
+	}
+	395.1.1 = {
+		holder = italia_13
+	}
+	# Odoarcer's Kingdom
+	476.9.4 = {
+		holder = italia_22
+		liege = d_friuli
+		government = feudal_government
+		de_jure_liege = d_lombardia
+	}
+	525.1.1 = {
+		holder = 992030 # Hildibald ostrogothic
+		liege = k_italy
+	}
+	678.1.1 = {
+		liege = k_italy
+		holder = 190354 # Alachis of Italy
+	}
+}
+
+
+c_pavia = {
+	361.1.1 = { change_development_level = 10 }
+	# Roman Province
+	361.1.1 = {
+		de_jure_liege = d_lombardia
+	}
+	361.11.3 = {
+		holder = italia_01 # Faventius- Semi historical
+	}
+	395.1.17 = {
+		holder = 145227 #Honorius
+	}
+	451.1.1 = { change_development_level = 7 }
+	# Odoarcer's Kingdom
+	476.9.4 = {
+		holder = italia_26
+		government = feudal_government
+	}
+	525.1.1 = {
+		holder = rugian_17 # Eraric ostrogothic
+		liege = k_italy
+	}
+	565.1.1 = {
+		holder = 190124 # Alboin  of Italy
+		liege = k_italy
+	}
+	572.6.28 = {
+		holder = 190168 # Clef of Italy
+	}
+	574.1.1 = {
+		holder = 190169 # Authari of Italy
+	}
+	590.9.5 = {
+		holder = 190170 # Agilolf of Italy
+	}
+	616.1.1 = {
+		holder = 190173 # Adaloald of Italy
+	}
+	626.1.1 = {
+		holder = 190174 # Arioald of Italy
+	}
+	636.1.1 = {
+		holder = 190176 # Rothari of Italy
+	}
+	652.1.1 = {
+		holder = 190177 # Rodoald of Italy
+	}
+	652.6.1 = {
+		holder = 190181 # Aripert I of Italy
+	}
+	661.1.1 = {
+		holder = 190182 # Godepert of Italy
+	}
+	662.1.1 = {
+		holder = 190185 # Pectarit of Italy
+	}
+	662.6.1 = {
+		holder = 190133 # Grimoald of Italy
+	}
+	671.1.1 = {
+		holder = 190136 # Garipald of Italy
+	}
+	671.6.1 = {
+		holder = 190185 # Pectarit (2nd time)
+	}
+	688.1.1 = {
+		holder = 190188 # Cunicpert of Italy
+	}
+	689.1.1 = {
+		holder = 190354 # Alachis of Italy
+	}
+	689.6.1 = {
+		holder = 190188 # Cunicpert (2nd time)
+	}
+	700.1.1 = {
+		holder = 190189 # Liutpert of Italy
+	}
+	701.1.1 = {
+		holder = 190183 # Raginpert of Italy
+	}
+	701.6.1 = {
+		holder = 190189 # Liutpert of Italy
+	}
+	702.1.1 = {
+		holder = 190184 # Aripert II of Italy
+	}
+	712.1.1 = {
+		holder = 190193 # Ansprand of Italy
+	}
+	712.7.1 = {
+		holder = 190196 # Liutprand of Italy
+	}
+	744.1.1 = {
+		holder = 190198 # Hildeprand of Italy
+	}
+	744.8.1 = {
+		holder = 190343 # Ratchis of Italy
+	}
+	749.1.1 = {
+		holder = 190331 # Aistulf of Italy
+	}
+	756.12.1 = {
+		holder = 190343 # Ratchis (2nd time)
+	}
+	757.1.1 = {
+		holder = 190347 # Desiderius of Italy
+	}
+}
+
+
+c_cremona = {
+	361.1.1 = {
+		de_jure_liege = d_lombardia
+	}
+	361.11.3 = {
+		holder = italia_01 # Faventius- Semi historical
+	}
+	395.1.17 = {
+		holder = 145227 #Honorius
+	}
+	# Odoarcer's Kingdom
+	476.9.4 = {
+		holder = italia_26
+		government = feudal_government
+	}
+	525.1.1 = {
+		holder = rugian_17 # Eraric ostrogothic
+		liege = k_italy
+	}
+	590.9.5 = {
+		holder = 190170 # Agilolf of Italy
+		liege = k_italy
+	}
+	616.1.1 = {
+		holder = 190173 # Adaloald of Italy
+	}
+	626.1.1 = {
+		holder = 190174 # Arioald of Italy
+	}
+	636.1.1 = {
+		holder = 190176 # Rothari of Italy
+	}
+	652.1.1 = {
+		holder = 190177 # Rodoald of Italy
+	}
+	652.6.1 = {
+		holder = 190181 # Aripert I of Italy
+	}
+	661.1.1 = {
+		holder = 190182 # Godepert of Italy
+	}
+	662.1.1 = {
+		holder = 190185 # Pectarit of Italy
+	}
+	662.6.1 = {
+		holder = 190133 # Grimoald of Italy
+	}
+	671.1.1 = {
+		holder = 190136 # Garipald of Italy
+	}
+	671.6.1 = {
+		holder = 190185 # Pectarit (2nd time)
+	}
+	688.1.1 = {
+		holder = 190188 # Cunicpert of Italy
+	}
+	689.1.1 = {
+		holder = 190354 # Alachis of Italy
+	}
+	689.6.1 = {
+		holder = 190188 # Cunicpert (2nd time)
+	}
+	700.1.1 = {
+		holder = 190189 # Liutpert of Italy
+	}
+	701.1.1 = {
+		holder = 190183 # Raginpert of Italy
+	}
+	701.6.1 = {
+		holder = 190189 # Liutpert of Italy
+	}
+	702.1.1 = {
+		holder = 190184 # Aripert II of Italy
+	}
+	712.1.1 = {
+		holder = 190193 # Ansprand of Italy
+	}
+	712.7.1 = {
+		holder = 190196 # Liutprand of Italy
+	}
+	744.1.1 = {
+		holder = 190198 # Hildeprand of Italy
+	}
+	744.8.1 = {
+		holder = 190343 # Ratchis of Italy
+	}
+	749.1.1 = {
+		holder = 190331 # Aistulf of Italy
+	}
+	756.12.1 = {
+		holder = 190343 # Ratchis (2nd time)
+	}
+	757.1.1 = {
+		holder = 190347 # Desiderius of Italy
+	}
+}
+
+d_emilia = {
+	361.1.1 = { change_development_level = 7 }
+	## Roman Province
+	361.1.1 = {
+		de_jure_liege = k_italia_annonariae
+		liege = k_italia_annonariae
+	}
+	361.1.1 = {
+		holder = italia_08
+	}
+	395.1.1 = {
+		holder = italia_09
+	}
+	# Odoarcer's Kingdom
+	476.9.4 = {
+		holder = italia_27
+		government = feudal_government
+		de_jure_liege = k_italy
+		liege = k_italy
+	}
+	532.1.1 = {
+		holder = roman_07
+	}
+}
+c_parma = {
+	361.1.1 = { change_development_level = 10 }
+	## Roman Province
+	361.1.1 = {
+		de_jure_liege = d_emilia
+	}
+	361.1.1 = {
+		holder = italia_08
+	}
+	395.1.1 = {
+		holder = italia_09
+	}
+	451.1.1 = { change_development_level = 7 }
+
+	# Odoarcer's Kingdom
+	476.9.4 = {
+		holder = italia_27
+		government = feudal_government
+	}
+	769.1.1 = {
+		liege = k_italy
+	}
+}
+
+c_tortona = {
+	## Roman Province
+	361.1.1 = {
+		de_jure_liege = d_emilia
+	}
+	361.1.1 = {
+		holder = italia_08
+	}
+	395.1.1 = {
+		holder = italia_09
+	}
+	# Odoarcer's Kingdom
+	476.9.4 = {
+		holder = italia_27
+		government = feudal_government
+	}
+	565.1.1 = {
+		holder = 190124 # Alboin  of Italy
+		liege = k_italy
+	}
+	572.6.28 = {
+		holder = 190168 # Clef of Italy
+	}
+	574.1.1 = {
+		holder = 190169 # Authari of Italy
+	}
+	590.9.5 = {
+		holder = 190170 # Agilolf of Italy
+	}
+	616.1.1 = {
+		holder = 190173 # Adaloald of Italy
+	}
+	626.1.1 = {
+		holder = 190174 # Arioald of Italy
+	}
+	636.1.1 = {
+		holder = 190176 # Rothari of Italy
+	}
+	652.1.1 = {
+		holder = 190177 # Rodoald of Italy
+	}
+	652.6.1 = {
+		holder = 190181 # Aripert I of Italy
+	}
+	661.1.1 = {
+		holder = 190182 # Godepert of Italy
+	}
+	662.1.1 = {
+		holder = 190185 # Pectarit of Italy
+	}
+	662.6.1 = {
+		holder = 190133 # Grimoald of Italy
+	}
+	671.1.1 = {
+		holder = 190136 # Garipald of Italy
+	}
+	671.6.1 = {
+		holder = 190185 # Pectarit (2nd time)
+	}
+	688.1.1 = {
+		holder = 190188 # Cunicpert of Italy
+	}
+	689.1.1 = {
+		holder = 190354 # Alachis of Italy
+	}
+	689.6.1 = {
+		holder = 190188 # Cunicpert (2nd time)
+	}
+	700.1.1 = {
+		holder = 190189 # Liutpert of Italy
+	}
+	701.1.1 = {
+		holder = 190183 # Raginpert of Italy
+	}
+	701.6.1 = {
+		holder = 190189 # Liutpert of Italy
+	}
+	702.1.1 = {
+		holder = 190184 # Aripert II of Italy
+	}
+	712.1.1 = {
+		holder = 190193 # Ansprand of Italy
+	}
+	712.7.1 = {
+		holder = 190196 # Liutprand of Italy
+	}
+	744.1.1 = {
+		holder = 190198 # Hildeprand of Italy
+	}
+	744.8.1 = {
+		holder = 190343 # Ratchis of Italy
+	}
+	749.1.1 = {
+		holder = 190331 # Aistulf of Italy
+	}
+	756.12.1 = {
+		holder = 190343 # Ratchis (2nd time)
+	}
+	757.1.1 = {
+		holder = 190347 # Desiderius of Italy
+	}
+}
+
+c_modena = {
+	## Roman Province
+	361.1.1 = {
+		de_jure_liege = d_emilia
+	}
+	361.1.1 = {
+		holder = italia_08
+	}
+	395.1.1 = {
+		holder = italia_09
+	}
+	# Odoarcer's Kingdom
+	476.9.4 = {
+		holder = italia_27
+		government = feudal_government
+	}
+	761.1.1 = {
+		liege = k_italy
+	}
+	761.1.1 = {
+		holder = 190322 #Lambert
+	}
+}
+
+c_mantua = {
+	## Roman Province
+	361.1.1 = {
+		de_jure_liege = d_friuli
+		liege = d_friuli
+	}
+	361.1.1 = {
+		holder = italia_04
+	}
+	395.1.1 = {
+		holder = italia_05
+	}
+	# Odoarcer's Kingdom
+	476.9.4 = {
+		holder = italia_21
+		liege = d_friuli
+		government = feudal_government
+		de_jure_liege = d_lombardia
+	}
+	525.1.1 = {
+		holder = rugian_17 # Eraric ostrogothic
+		liege = k_italy
+	}
+	756.1.1 = {
+		liege = k_italy
+	}
+	756.1.1 = {
+		holder = 190312 #Varbert
+	}
+
+}
+
+
+d_toscana = {
+	361.1.1 = { change_development_level = 6 }
+	768.1.1 = { change_development_level = 8 }
+	# Roman Province
+	361.1.1 = {
+		de_jure_liege = k_italia_suburbicariae
+		liege = k_italia_suburbicariae
+		name = TUSCIA_ET_UMBRIA
+	}
+	361.1.1 = {
+		holder = italia_18
+	}
+	395.1.1 = {
+		holder = italia_19
+	}
+	# Odoarcer's Kingdom
+	476.9.4 = {
+		holder = italia_28
+		liege = k_italy
+		government = feudal_government
+		de_jure_liege = k_italy
+	}
+	522.1.1 = {
+		holder = 992022
+	}
+	713.1.1 = {
+		liege = k_italy
+	}
+	713.1.1 = {
+		holder = 190278
+	}
+	754.1.1 = {
+		holder = 190279
+	}
+}
+
+
+d_pisa = {
+	
+}
+
+
+c_pisa = {
+	361.1.1 = { change_development_level = 7 }
+	768.1.1 = { change_development_level = 8 }
+	# Roman Province
+	361.1.1 = {
+		de_jure_liege = d_toscana
+		liege = d_toscana
+		holder = italia_16
+}
+	395.1.1 = {
+		holder = italia_17
+	}
+	# Odoarcer's Kingdom
+	476.9.4 = {
+		holder = italia_29
+		liege = d_toscana
+		de_jure_liege = d_pisa
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = feudal_government
+			}
+		}
+	}
+	}
+	525.1.1 = {
+		holder = 992022 # Theodahad
+		liege = k_italy
+	}
+	532.1.1 = {
+		holder = roman_misc_001
+		liege = d_toscana
+	}
+	713.1.1 = {
+		liege = k_italy
+	}
+	713.1.1 = {
+		holder = 190278 #Walperto
+	}
+	754.1.1 = {
+		holder = 190279 #Alperto
+	}
+}
+
+
+b_piombino = {
+	768.1.1 = {
+		holder = 190329 #Faroald
+	}
+}
+
+
+c_firenze = {
+	361.1.1 = { change_development_level = 8 }
+	# Roman Province
+	361.1.1 = {
+		holder = italia_18
+	}
+	395.1.1 = {
+		holder = italia_19
+	}
+	# Odoarcer's Kingdom
+	476.9.4 = {
+		holder = italia_28
+		government = feudal_government
+	}
+	525.1.1 = {
+		holder = 992022 # Theodahad
+		liege = k_italy
+	}
+	565.1.1 = {
+		holder = 190124 #Alboin
+	}
+	572.1.1 = {
+		holder = 190168 #Cleph
+	}
+	574.1.1 = {
+		holder = 190169 #Authari
+	}
+	590.1.1 = {
+		holder = 190170 #Agilulf
+	}
+	616.1.1 = {
+		holder = 190173 #Adaloald
+	}
+	626.1.1 = {
+		holder = 190174 #Arioald
+	}
+	636.1.1 = {
+		holder = 190176 #Rothari
+	}
+	652.1.1 = {
+		holder = 190177 #Rodoald
+	}
+	653.1.1 = {
+		holder = 190181 #Aripert I
+	}
+	661.1.1 = {
+		holder = 190182 #Godepert
+	}
+	662.1.1 = {
+		holder = 190185 #Pectarit
+	}
+	662.6.1 = {
+		holder = 190133 #Grimoald
+	}
+	671.1.1 = {
+		holder = 190136 #Garibald
+	}
+	671.6.1 = {
+		holder = 190185 #Pectarit
+	}
+	688.1.1 = {
+		holder = 190188 #Cunipert
+	}
+	689.1.1 = {
+		holder = 190354 #Alahis
+	}
+	689.6.1 = {
+		holder = 190188 #Cunipert
+	}
+	700.1.1 = {
+		holder = 190189 #Liutpert
+	}
+	701.1.1 = {
+		holder = 190183 #Raginpert
+	}
+	701.6.1 = {
+		holder = 190189 #Liutpert
+	}
+	702.1.1 = {
+		holder = 190184 #Aripert II
+	}
+	712.1.1 = {
+		holder = 190193 #Ansprand
+	}
+	712.6.1 = {
+		holder = 190196 #Liutprand
+	}
+	744.1.1 = {
+		holder = 190198 #Hildeprand
+	}
+	744.6.1 = {
+		holder = 190343 #Rathchis
+	}
+	749.1.1 = {
+		holder = 190331 #Aistulf
+	}
+	756.1.1 = {
+		holder = 190347 #Desiderius
+	}
+}
+
+
+c_lucca = {
+	# Roman Province
+	361.1.1 = {
+		liege = d_toscana
+	}
+	361.1.1 = {
+		holder = italia_16
+	}
+	395.1.1 = {
+		holder = italia_17
+	}
+	# Odoarcer's Kingdom
+	476.9.4 = {
+		holder = italia_29
+		liege = d_toscana
+		government = feudal_government
+	}
+	525.1.1 = {
+		holder = 992022 # Theodahad
+		liege = k_italy
+	}
+	532.1.1 = {
+		holder = roman_misc_002
+		liege = d_toscana
+	}
+	713.1.1 = {
+		liege = k_italy
+		holder = 190278
+	}
+	754.1.1 = {
+		holder = 190279
+	}
+}
+
+
+c_arezzo = {
+	361.1.1 = {
+		holder = italia_18
+	}
+	395.1.1 = {
+		holder = italia_19
+	}
+	# Odoarcer's Kingdom
+	476.9.4 = {
+		holder = italia_28
+		government = feudal_government
+	}
+	525.1.1 = {
+		holder = 992022 # Theodahad
+		liege = k_italy
+	}
+	713.1.1 = {
+		liege = k_italy
+	}
+	713.1.1 = {
+		holder = 190278 #Walperto
+	}
+	754.1.1 = {
+		holder = 190279 #Alperto
+	}
+}
+
+
+c_siena = {
+	361.1.1 = {
+		holder = italia_18
+	}
+	395.1.1 = {
+		holder = italia_19
+	}
+	# Odoarcer's Kingdom
+	476.9.4 = {
+		holder = italia_28
+		government = feudal_government
+	}
+	525.1.1 = {
+		holder = 992022 # Theodahad
+		liege = k_italy
+	}
+	765.1.1 = {
+		liege = k_italy
+	}
+	765.1.1 = {
+		holder = 190326 #Taso
+	}
+}
+
+
+c_orbetello = {
+	# Roman Province
+	361.1.1 = {
+		liege = d_toscana
+	}
+	361.1.1 = {
+		holder = italia_16
+	}
+	395.1.1 = {
+		holder = italia_17
+	}
+	# Odoarcer's Kingdom
+	476.9.4 = {
+		holder = italia_29
+		government = feudal_government
+		liege = d_toscana
+	}
+	525.1.1 = {
+		holder = 992022 # Theodahad
+		liege = k_italy
+	}
+	532.1.1 = {
+		holder = thurings_01 # Amalafrid, Theodahad's nephew who fled to him in 532 after his father the Thuringian king Hermanfrid was killed
+		liege = d_toscana
+	}
+	767.1.1 = {
+		liege = k_papal_state
+	}
+	767.1.1 = {
+		holder = 190569 #Amonius
+	}
+}
+
+d_krain = {
+	768.1.1 = {
+		holder = 0
+	}
+}
+
+
+c_kranj = {
+	#Roman Province
+	361.1.1 = { change_development_level = 4 }
+	200.1.1 = {
+		de_jure_liege = d_friuli
+		liege = d_friuli
+	}
+	361.1.1 = {
+		holder = bavaria_15
+		liege = d_friuli
+		liege = d_friuli
+	}
+	361.7.1 = {
+		liege = d_friuli
+	}
+	476.1.1 = {
+		de_jure_liege = d_friuli
+	}
+	#Odoacer's Kingdom
+	476.1.1 = {
+		holder = bavaria_19
+		liege = k_italy
+	}
+	#Ostrogothica
+	530.1.1 = {
+		holder = rhaetia_05
+		liege = d_friuli
+		#liege = "k_italy"
+	}
+	#Avar Khaganate
+	628.1.1 = {
+		holder = venedian_03
+		liege = d_osterreich
+	}
+	764.1.1 = {
+		liege = k_bavaria
+	}
+	764.1.1 = {
+		holder = 190568 #Grgur
+		government = feudal_government
+		de_jure_liege = d_krain
+	}
+	
+}
+
+
+c_ljubljana = {
+	#Roman PRovince
+	361.1.1 = { change_development_level = 4 }
+	200.1.1 = {
+		de_jure_liege = d_friuli
+	}
+	361.1.1 = {
+		holder = bavaria_15
+		liege = d_friuli
+	}
+	361.7.1 = {
+		liege = d_friuli
+	}
+	476.1.1 = {
+		de_jure_liege = d_friuli
+	}
+	#Odoacer's Kingdom
+	476.1.1 = {
+		holder = bavaria_19
+		liege = k_ostrogoths
+	}
+	#Ostrogothica
+	530.1.1 = {
+		holder = rhaetia_05
+		liege = d_friuli
+	}
+	#Croatia
+	630.1.1 = {
+		holder = croats_02
+		liege = d_croatia
+		government = tribal_government
+	}
+	764.1.1 = {
+		liege = k_bavaria
+		government = feudal_government
+	}
+	764.1.1 = {
+		holder = 190568 #Grgur
+		de_jure_liege = d_krain
+	}
+	
+}
+
+c_pula = {
+	#Roman Province
+	361.1.1 = { change_development_level = 6 }
+	467.1.1 = { change_development_level = 7 }
+	200.1.1 = {
+		de_jure_liege = d_friuli
+	}
+	361.1.1 = {
+		holder = bavaria_15
+		liege = d_friuli
+	}
+	361.7.1 = {
+		liege = d_friuli
+	}
+	476.1.1 = {
+		de_jure_liege = d_friuli
+	}
+	#Odoacer's Kingdom
+	465.8.1 = {
+		holder = dalmatia_09
+		liege = d_dalmatia
+		de_jure_liege = d_croatia
+	}
+	#Ostrogothica
+	530.1.1 = {
+		holder = rhaetia_05
+		liege = d_friuli
+	}
+	569.1.1 = {
+		liege = k_italy
+	}
+	569.1.1 = {
+		holder = 190126 #Gisulf I
+	}
+	591.1.1 = {
+		holder = 190128 #Gisulf II
+	}
+	610.1.1 = {
+		holder = 190244 #Taso
+	}
+	625.1.1 = {
+		holder = 190246 #Grasulf
+	}
+	632.1.1 = {
+		holder = pula_01
+		liege = e_byzantium
+		government = feudal_government
+	}
+	768.1.1 = {
+		holder = pula_02
+		liege = d_dalmatia
+	}
+}
+

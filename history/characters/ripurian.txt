@@ -1,0 +1,77 @@
+﻿
+faramund_03 = {
+	name="Okter"
+	dynasty= ripuri_dynasty 
+	religion="central_pagan"
+	culture="ripurian"
+	father = faramund_02
+	431.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+frankish_01 = {
+	name="Trutgard"
+	religion="central_pagan"
+	culture="ripurian"
+	431.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+frankish_02 = {
+	name="Otker"
+	religion="central_pagan"
+	culture="ripurian"
+	437.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+frankish_03 = {
+	name="Ragambald"
+	religion="central_pagan"
+	culture="ripurian"
+	440.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+
+#############################################################
+# 
+# MISC PLACEHOLDERS AND HISTORICAL CHARACTERS
+# 
+# Done by Cybrxkhan
+# 
+#############################################################
+
+# Germanic bandit and mercenary/military officer during Julian's reign
+ripurian_misc_001 = {
+	name = "Charietto"
+	dynasty = TFE_dynasty_charietto
+	religion = "central_pagan"
+	culture = "ripurian"
+	trait = education_martial_3
+	trait = gallowsbait
+	trait = brave
+	trait = greedy
+	trait = ambitious
+	328.4.15 = { # Unknown, but active by c. 350
+		birth = yes
+		effect = { add_character_flag = do_not_generate_starting_family }
+	}
+	365.4.21 = { # Roughly
+		death = {
+			death_reason = death_battle
+		}
+	}
+}

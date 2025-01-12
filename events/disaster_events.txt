@@ -1,0 +1,956 @@
+﻿
+namespace = disaster
+
+# Events to destroy the world!
+# By Shatzi
+
+# Edessa Event Chain
+disaster.0002 = { # Character event for Edessa : the Anger
+	type = character_event
+	title = disaster.0002.t
+	desc = disaster.0002.desc
+	theme = skull
+
+	override_background = { reference = garden }
+
+	right_portrait = {
+		character = root
+		animation = disbelief
+	}
+	lower_left_portrait = { 
+		character = scope:emissary
+	}
+
+	trigger = { # Only triggers if player owns Edessa for now waiting for more input
+		# has_title = title:c_edessa
+		religion = religion:christianity_religion
+	}
+
+	immediate = {
+		title:c_edessa = {
+			save_scope_as = edessa
+		}
+		create_character = {
+			employer = root
+			age = { 25 35 }
+			trait = wounded_1
+			culture = title:c_edessa.culture
+			faith = title:c_edessa.faith
+			template = servant_character 
+			save_scope_as = emissary
+		}
+		#remove_global_variable = tfe_disaster_edassa_floods_yes # no
+	}
+
+	option = { # Right away! (very expensive but chance for the IMAGE)
+		name = disaster.0002.a
+		#trigger_event = disaster.0003
+		stress_impact = {
+			base = major_stress_impact_gain
+			architect = minor_stress_impact_gain
+			diligent = minor_stress_impact_gain
+			trusting = miniscule_prestige_loss
+			compassionate = minor_stress_impact_loss
+			lazy = minor_stress_impact_gain
+			paranoid = minor_stress_impact_gain
+		}
+		trigger_event = disaster.0003
+		set_global_variable = {
+			name = tfe_disaster_edassa_emissary_now
+			value = yes
+		}
+	}
+
+	option = { # stop! hammer time! (cheaper but little chance for the IMAGE)
+		name = disaster.0002.b
+		stress_impact = {
+			base = minor_stress_impact_gain
+			architect = major_stress_impact_gain
+			diligent = major_stress_impact_gain
+			trusting = miniscule_prestige_loss
+			compassionate = minor_stress_impact_loss
+			lazy = minor_stress_impact_gain
+			paranoid = minor_stress_impact_gain
+		}
+		trigger_event = {
+			id = disaster.0004
+			days = { 7 10 }
+		}
+	}
+
+	option = { # I AM CRAZY haHAAAA
+		trigger = { 
+			OR = {
+				has_trait = lunatic_1
+				has_trait = lunatic_genetic
+				has_trait = possessed_1
+				has_trait = possessed_genetic
+				has_trait = sadistic
+				has_trait = paranoid
+				has_trait = callous
+				has_trait = torturer
+			}
+		}
+		name = disaster.0002.c
+		root = {
+			imprison = {
+				target = scope:emissary
+				type = house_arrest
+			}
+		}
+		# set_global_variable = tfe_disaster_edessa_no
+	}
+
+	option = { # I AM ARBITRARY AND I DO NOT CARE
+		trigger = {
+			OR = {
+				has_trait = arbitrary
+				has_trait = sadistic
+				has_trait = arrogant
+				has_trait = wrathful
+				has_trait = callous
+			}
+		}
+		name = disaster.0002.d
+		custom_tooltip = disaster.0002.info
+		# set_global_variable = tfe_disaster_edessa_no
+	}
+ }
+
+ disaster.0003 = { # Character event for Edessa #2 : the Emissary (now)
+	type = character_event
+	title = disaster.0003.t
+	desc = disaster.0003.desc
+	theme = skull
+
+	right_portrait = {
+		character = scope:root
+		animation = personality_honorable	
+	}
+	left_portrait = {
+		character = scope:emissary
+		animation = pain
+	}
+
+	immediate = {
+		title:c_edessa = {
+			save_scope_as = edessa
+		}
+	}
+
+	option = { # EVENT SHROUD . RECONSTRUCTION + MASS
+		name = disaster.0003.a
+		remove_long_term_gold = major_gold_value
+		stress_impact = {
+			base = minor_stress_impact_loss
+			architect = major_stress_impact_loss
+			diligent = major_stress_impact_loss
+			compassionate = major_stress_impact_loss
+			lazy = major_stress_impact_gain
+		}
+		scope:edessa = { 
+			remove_county_modifier = edessa_flooded
+			add_county_modifier = {
+				modifier = disaster.edessa.secured.heavy.1
+				years = 10
+			}
+		}
+		trigger_event = {
+			id = disaster.0006
+			days = { 7 15 }
+		}
+		trigger_event = {
+			id = disaster.0005
+			years = 10
+		}
+		set_global_variable = tfe_disaster_edessa_heavy
+	}
+	option = { # EVENT SHROUD . RECONSTRUCTION + MASS
+		name = disaster.0003.b
+		remove_long_term_gold = medium_gold_value
+		stress_impact = {
+			base = minor_stress_impact_gain
+			architect = minor_stress_impact_loss
+			diligent = minor_stress_impact_loss
+			compassionate = minor_stress_impact_loss
+			lazy = minor_stress_impact_gain
+		}
+		scope:edessa = { 
+			remove_county_modifier = edessa_flooded
+			add_county_modifier = {
+				modifier = disaster.edessa.secured.light.1
+				years = 10
+			}
+		}
+		trigger_event = {
+			id = disaster.0006
+			days = { 7 15 }
+		}
+		trigger_event = {
+			id = disaster.0005
+			years = 10
+		}
+		set_global_variable = tfe_disaster_edessa_light
+	}
+	option = { # RIP Edessa xd
+		name = disaster.0003.c
+		stress_impact = {
+			base = medium_stress_impact_loss
+			architect = major_stress_impact_gain
+			diligent = major_stress_impact_gain
+			compassionate = minor_stress_impact_gain
+			lazy = medium_stress_impact_loss
+			paranoid = minor_stress_impact_gain
+		}
+		# set_global_variable = tfe_disaster_edessa_no
+	}
+ }
+
+ disaster.0004 = { # Character event for Edessa #2 : the Emissary (wait)
+	type = character_event
+	title = disaster.0004.t
+	desc = disaster.0004.desc
+	theme = skull
+
+	immediate = {
+		title:c_edessa = {
+			save_scope_as = edessa
+		}
+	}
+
+	option = { # RECONSTRUCTION + MASS
+		name = disaster.0004.a
+		remove_long_term_gold = medium_gold_value
+		stress_impact = {
+			base = minor_stress_impact_gain
+			architect = minor_stress_impact_loss
+			diligent = minor_stress_impact_loss
+			compassionate = minor_stress_impact_loss
+			lazy = minor_stress_impact_gain
+		}
+		scope:edessa = { 
+			remove_county_modifier = edessa_flooded
+			add_county_modifier = {
+				modifier = disaster.edessa.secured.heavy.2
+				years = 10
+			}
+		}
+		trigger_event = {
+			id = disaster.0005
+			years = 10
+		}
+		set_global_variable = tfe_disaster_edessa_heavy
+	}
+	option = { # RECONSTRUCTION + MASS
+		name = disaster.0004.b
+		remove_long_term_gold = minor_gold_value
+		stress_impact = {
+			base = minor_stress_impact_gain
+			architect = minor_stress_impact_loss
+			diligent = minor_stress_impact_loss
+			compassionate = minor_stress_impact_loss
+			lazy = minor_stress_impact_gain
+		}
+		scope:edessa = { 
+			remove_county_modifier = edessa_flooded
+			add_county_modifier = {
+				modifier = disaster.edessa.secured.light.2
+				years = 10
+			}
+		}
+		trigger_event = {
+			id = disaster.0005
+			years = 10
+		}
+		set_global_variable = tfe_disaster_edessa_light
+	}
+	option = { # RIP Edessa xd
+		name = disaster.0004.c
+		stress_impact = {
+			base = medium_stress_impact_loss
+			architect = major_stress_impact_gain
+			diligent = major_stress_impact_gain
+			compassionate = minor_stress_impact_gain
+			lazy = medium_stress_impact_loss
+			paranoid = minor_stress_impact_gain
+		}
+		# set_global_variable = tfe_disaster_edessa_no
+	}
+ }
+
+ disaster.0005 = { # Character event for Edessa #3 : the Reconstruction
+	type = character_event
+	title = disaster.0005.t
+	desc = disaster.0005.desc
+	theme = faith
+
+	left_portrait = {
+		character = cp:councillor_court_chaplain
+		animation = happiness
+	}
+
+	immediate = {
+		title:c_edessa = {
+			save_scope_as = edessa
+			change_county_control = 100
+		}
+	}
+
+	option = { # Build a cathedral to pray for salvation
+		name = disaster.0005.a
+			if = {
+				limit = {
+					has_global_variable = tfe_disaster_edessa_heavy
+				}
+				scope:edessa = {
+					add_county_modifier = {
+						modifier = edessa_rebuilt
+						years = 20
+					}
+					change_development_level = 15
+				}
+			}
+			if = {
+				limit = {
+					has_global_variable = tfe_disaster_edessa_light
+				}
+				scope:edessa = {
+					add_county_modifier = {
+						modifier = edessa_rebuilt
+						years = 20
+					}
+					change_development_level = 10
+				}
+			}
+			scope:edessa_shroud = {
+				reforge_artifact = {
+					modifier = former_bells_of_santiago_modifier
+				}
+			}
+		if = {
+			limit = {
+				title:b_edessa = {
+					title_province = { has_special_building = no }
+				}
+			}
+			title:b_edessa.title_province = {
+				add_special_building = edessa_cathedral_01
+			}
+		}
+		piety = 1000
+		add_prestige = 300
+		pay_long_term_gold = 1000
+	}
+
+	option = { # Organize a perpetual mass
+		name = disaster.0005.b
+		if = {
+			limit = {
+				has_global_variable = tfe_disaster_edessa_heavy
+			}
+			scope:edessa = {
+				add_county_modifier = {
+					modifier = edessa_rebuilt
+					years = 20
+				}
+				change_development_level = 15
+			}
+		}
+		if = {
+			limit = {
+				has_global_variable = tfe_disaster_edessa_light
+			}
+			scope:edessa = {
+				add_county_modifier = {
+					modifier = edessa_rebuilt
+					years = 20
+				}
+				change_development_level = 10
+			}
+		}
+		piety = 1000
+		add_prestige = 300
+		pay_long_term_gold = 200
+	}
+
+	option = { # Good work everyone!
+		name = disaster.0005.c
+		if = {
+			limit = {
+				has_global_variable = tfe_disaster_edessa_heavy
+			}
+			scope:edessa = {
+				add_county_modifier = {
+					modifier = edessa_rebuilt
+					years = 20
+				}
+				change_development_level = 15
+			}
+		}
+		if = {
+			limit = {
+				has_global_variable = tfe_disaster_edessa_light
+			}
+			scope:edessa = {
+				add_county_modifier = {
+					modifier = edessa_rebuilt
+					years = 20
+				}
+				change_development_level = 10
+			}
+		}
+		add_prestige = 300
+	}
+ }
+
+ disaster.0006 = { # Character event for Edessa #4 : The Shroud
+	type = character_event
+	title = disaster.0006.t
+	desc = disaster.0006.desc
+	theme = faith
+
+	right_portrait = {
+		character = root
+		animation = personality_zealous
+	}
+
+	artifact = { # To display the artifact in the event-window
+		target = scope:epic
+		position = lower_center_portrait
+	}
+
+	immediate = {
+		title:c_edessa.holder = {
+			create_artifact_wall_banner_edessa_effect = { OWNER = this }
+		}
+	}
+
+	option = { # praise the Holy Spirit 
+		name = disaster.0006.a
+	}
+ }
+
+
+disaster.0009 = { # Hidden event that will trigger the EDESSA chain
+	scope = none
+	hidden = yes 
+	# type = character_event #debug
+	trigger = {
+		current_year > 520
+		NOR = {
+			has_global_variable = tfe_disaster_edessa_no
+		}
+	}
+
+	immediate = {
+		title:c_edessa = {
+			save_scope_as = edessa
+		}
+		set_global_variable = tfe_disaster_edessa_no
+		scope:edessa = {
+			add_county_modifier = {
+				modifier = edessa_flooded
+				years = 10
+			}
+			change_development_level = -100
+		}
+		if = {
+			limit = {
+				any_skull_county = { THIS = title:c_edessa }
+				is_independent_ruler = yes
+				title:c_edessa.holder = {
+				is_vassal_or_below_of = root
+				}
+			}
+			trigger_event = {
+				id = disaster.0002
+				days = { 7 14 }
+			}
+		}
+		else_if = {
+			limit = {
+				title:c_edessa.holder = { is_ai = no }
+			}
+			trigger_event = {
+				id = disaster.0002
+				days = { 7 14 }
+			}
+		}
+		else_if = {
+			title:c_edessa.holder = {
+				create_artifact_wall_banner_edessa_effect = { OWNER = this }
+			}
+			send_interface_message = {
+				type = event_generic_neutral
+				title = disaster_notif_edessa_floods.t
+				left_icon = title:c_roma.holder
+				show_as_tooltip = {
+					custom_tooltip = disaster_notif_edessa_floods.tt
+				}
+			}
+		}
+	}
+}
+
+
+
+# Misc
+
+
+disaster.0010 = { # The Dust Veil
+	type = character_event
+	title = disaster.0010.t
+	desc = disaster.0010.desc
+	theme = skull
+	override_background = { reference = alley_night }
+
+	right_portrait = {
+		character = root
+		animation = disbelief
+	}
+
+	trigger = {
+		current_year > 535
+		NOT = { has_global_variable = disaster_dust_veil_yes }
+	}
+
+	option = { # A blessing!
+		name = disaster.0010.a
+		add_piety = 50
+		stress_impact = {
+			zealous = medium_stress_impact_loss
+			cynical = medium_stress_impact_gain
+		}
+		set_global_variable = disaster_dust_veil_yes
+	}
+	option = { # A hassle!
+		name = disaster.0010.b
+		add_prestige = 50
+		stress_impact = {
+			zealous = medium_stress_impact_gain
+			cynical = medium_stress_impact_loss
+		}
+		set_global_variable = disaster_dust_veil_yes
+	}
+}
+
+disaster.0011 = { # Earthquake in Latium! 
+	type = character_event
+	title = disaster.0011.t
+	desc = disaster.0011.desc
+	theme = skull
+	
+	# override_background = { reference = councilchamber }
+
+	right_portrait = {
+		character = root
+		animation = disbelief
+	}
+
+	trigger = {
+		current_year > 420
+		current_year < 425
+		any_skull_county = {
+			random_county_province = {
+				geographical_region = disaster_latium_duchy
+			}
+		}
+		NOT = { has_global_variable = disaster_latium_earthquake_yes }
+	}
+
+	weight_multiplier = {
+		base = 100
+	}
+
+	immediate = {
+		every_county_in_region = {
+			region = disaster_latium_duchy
+			limit = { tier = tier_county }
+			change_development_level = -1
+			add_county_modifier = {
+				modifier = disaster_earthquake_latium
+				years = 2
+			}
+		}
+		send_interface_message = {
+			type = event_generic_neutral
+			title = disaster_notif_latium_earthquake.t
+			left_icon = title:c_roma.holder
+			show_as_tooltip = {
+				custom_tooltip = disaster_notif_latium_earthquake.tt
+			}
+		}
+		set_global_variable = disaster_latium_earthquake_yes
+	}
+
+	option = { # Oh no!
+	name = disaster.0011.a
+		stress_impact = {
+			base = minor_stress_impact_gain
+			compassionate = minor_stress_impact_gain
+			generous = minor_stress_impact_gain
+			callous = minor_stress_impact_loss
+			diligent = major_stress_impact_gain
+			lazy = major_stress_impact_loss
+		}
+	}
+}
+
+disaster.0012 = { # Overwork & fever in Latium
+	type = character_event
+	title = disaster.0012.t
+	desc = disaster.0012.desc
+	theme = skull
+
+	override_background = { reference = wilderness_wetlands }
+
+	right_portrait = {
+		character = root
+		animation = disbelief
+	}
+	# lower_left_portrait = { # cool idea looks ugly xd
+	# 	character = cp:councillor_steward
+	# }
+
+	trigger = {
+		disaster_latium_land_trigger = yes
+		# current_date > 395.1.1 # don't need this 
+		NOT = {
+			has_global_variable = disaster_latium_fever_yes
+		}
+	}
+
+	weight_multiplier = {
+		base = 100
+	}
+
+	immediate = {
+		random_county_in_region = {
+			region = disaster_latium_duchy
+			limit = { tier = tier_county }
+			save_scope_as = wrecked_county
+		}
+		scope:wrecked_county = {
+			add_county_modifier = {
+				modifier = disaster_ager_wrecked
+				years = 5
+			}
+		}
+		set_global_variable = disaster_latium_fever_yes
+	}
+
+	option = { # Nuhuh
+	name = disaster.0012.a
+		add_prestige = miniscule_prestige_loss
+		stress_impact = {
+			greedy = minor_stress_impact_loss
+			compassionate = minor_stress_impact_gain
+			generous = minor_stress_impact_gain
+			callous = minor_stress_impact_loss
+			diligent = major_stress_impact_gain
+			lazy = major_stress_impact_loss
+		}
+	}
+	option = { # Help 'em
+		name = disaster.0012.b
+		stress_impact = {
+			greedy = minor_stress_impact_gain
+			compassionate = minor_stress_impact_loss
+			generous = minor_stress_impact_loss
+			callous = minor_stress_impact_gain
+			diligent = major_stress_impact_loss
+			lazy = major_stress_impact_gain
+		}
+		remove_short_term_gold = 50
+		scope:wrecked_county = {
+			remove_county_modifier = disaster_ager_wrecked
+			add_county_modifier = {
+				modifier = disaster_ager_helped
+				days = 730
+			}
+		}
+	}
+ }
+
+ disaster.0013 = { # Earthquake
+	scope = none
+	hidden = yes
+
+	immediate = {
+		random_province = { 
+			limit = {
+				has_holding = yes
+			}
+			add_province_modifier = {
+				modifier = disaster_random_earthquake
+				years = 5
+			}
+			save_scope_as = wrecked_county
+		}
+		send_interface_message = {
+			type = event_generic_neutral
+			title = disaster_notif_random_earthquake.t
+			show_as_tooltip = {
+				custom_tooltip = disaster_notif_random_earthquake.tt
+			}
+		}
+	}
+ }
+
+ disaster.0014 = { # Fires
+	scope = none
+	hidden = yes
+
+	immediate = {
+		random_province = { 
+			limit = { 
+				OR = {
+					terrain = taiga
+					terrain = forest
+					# terrain = jungle
+				}
+				has_holding = yes
+			}
+			add_province_modifier = {
+				modifier = disaster_random_fires
+				years = 5
+			}
+			save_scope_as = wrecked_county
+		}
+		send_interface_message = {
+			type = event_generic_neutral
+			title = disaster_notif_random_fires.t
+			show_as_tooltip = {
+				custom_tooltip = disaster_notif_random_fires.tt
+			}
+		}
+	}
+ }
+
+ disaster.0015 = { # Floods
+	scope = none
+	hidden = yes
+
+	immediate = {
+		random_province = { 
+			limit = { 
+				OR = {
+					terrain = floodplains
+					terrain = farmlands
+				}
+				has_holding = yes
+			}
+			add_province_modifier = {
+				modifier = disaster_random_floods
+				years = 5
+			}
+			save_scope_as = wrecked_county
+		}
+		send_interface_message = {
+			type = event_generic_neutral
+			title = disaster_notif_random_floods.t
+			if = {
+				limit = {
+					scope:wrecked_county = {
+						terrain = farmlands
+					}
+				}
+				show_as_tooltip = {
+					custom_tooltip = disaster_notif_random_farms_floods.tt
+				}
+			}
+			else_if = {
+				show_as_tooltip = {
+					custom_tooltip = disaster_notif_random_floodplains_floods.tt
+				}
+			}
+		}
+	}
+ }
+
+
+ disaster.0016 = { # Tornadoes
+	scope = none
+	hidden = yes
+
+	immediate = {
+		random_province = { 
+			limit = { 
+				AND ={
+					geographical_region = world_europe
+					OR = {
+						terrain = plains
+						terrain = farmlands
+						terrain = steppe
+					}
+				}
+				has_holding = yes
+			}
+			add_province_modifier = {
+				modifier = disaster_random_tornado
+				years = 5
+			}
+			save_scope_as = wrecked_county
+		}
+		send_interface_message = {
+			type = event_generic_neutral
+			title = disaster_notif_random_tornado.t
+			show_as_tooltip = {
+				custom_tooltip = disaster_notif_random_tornado.tt
+			}
+		}
+	}
+ }
+
+
+ disaster.0017 = { # Landslide
+	scope = none
+	hidden = yes 
+
+	trigger = {
+		time_of_year = {
+			min = 1.1
+			max = 5.30
+		}
+	}
+
+	immediate = {
+		random_province = { 
+			limit = { 
+				OR = {
+					terrain = floodplains
+					terrain = mountains
+					terrain = hills
+				}
+				has_holding = yes
+			}
+			add_province_modifier = {
+				modifier = disaster_random_landslide
+				years = 5
+			}
+			save_scope_as = wrecked_county
+		}
+		send_interface_message = {
+			type = event_generic_neutral
+			title = disaster_notif_random_landslide.t
+			show_as_tooltip = {
+				custom_tooltip = disaster_notif_random_landslide.tt
+			}
+		}
+	}
+ }
+
+ disaster.0018 = { # Avalanche
+	scope = none
+	hidden = yes 
+
+
+	# trigger = { any_county = { terrain = mountains } }
+	# ok that was a stupid trigger xdddd leaving it as an artifact in case someone finds it
+
+	trigger = {
+		OR = { 
+			time_of_year = {
+				min = 1.1
+				max = 3.30
+			}
+			time_of_year = {
+				min = 10.1
+				max = 12.30
+			}
+		}
+	}
+
+	immediate = {
+		random_province = { 
+			limit = {
+				terrain = mountains
+				has_holding = yes
+			}
+			add_province_modifier = {
+				modifier = disaster_random_avalanche
+				years = 5
+			}
+			save_scope_as = wrecked_county
+		}
+		send_interface_message = {
+			type = event_generic_neutral
+			title = disaster_notif_random_avalanche.t
+			show_as_tooltip = {
+				custom_tooltip = disaster_notif_random_avalanche.tt
+			}
+		}
+	}
+ }
+
+
+
+# Debug Events
+disaster.1000 = { # DEBUG 1
+	name = debug.artifact.1000
+	type = character_event
+	title = debug.artifact.1000
+	desc = debug.artifact.1000
+	theme = skull
+
+	right_portrait = {
+		character = root
+		animation = disbelief
+	}
+
+	artifact = { # To display the artifact in the event-window
+		target = scope:epic
+		position = lower_center_portrait
+	}
+
+	immediate = {
+		title:c_edessa.holder = {
+			create_artifact_wall_banner_edessa_effect = { OWNER = this }
+		}
+	}
+
+	option = {
+		name = yay
+	}
+ }
+disaster.2000 = { # DEBUG 2
+	name = debug.artifact.2000
+	type = character_event
+	title = debug.artifact.2000
+	desc = debug.artifact.2000
+	theme = skull
+
+	right_portrait = {
+		character = root
+		animation = scheme
+	}
+
+	artifact = { # DEBUG 2
+		target = scope:epic
+		position = lower_center_portrait
+	}
+
+	immediate = {
+		random_character_artifact = {
+			limit = { has_variable = banner_edessa }
+			save_scope_as = edessa_shroud
+		}
+	}
+
+	option = {
+		name = yay
+		title:c_edessa = {
+			save_scope_as = edessa
+		}
+		if = {
+			limit = {
+				title:b_edessa = {
+					title_province = { has_special_building = no }
+				}
+			}
+			title:b_edessa.title_province = {
+				add_special_building = edessa_cathedral_01
+			}
+		}
+	}
+}

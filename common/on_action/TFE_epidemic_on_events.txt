@@ -1,0 +1,38 @@
+﻿epidemic_ongoing_events = {
+	on_actions = { TFE_epidemic_ongoing_events }
+}
+
+TFE_epidemic_ongoing_events = {
+    effect = {
+        if = {
+			limit = {	
+				any_realm_province = {
+					OR = {
+						any_province_epidemic = {
+							epidemic_type.epidemic_trait = trait:bubonic_plague
+							outbreak_intensity = major
+						}
+						any_province_epidemic = {
+							epidemic_type.epidemic_trait = trait:bubonic_plague
+							outbreak_intensity = apocalyptic
+						}
+					}
+				}
+				NOT = { has_variable = recent_infection_catalyst}
+				any_character_struggle = {		
+					phase_has_catalyst = catalyst_TFE_plague_spread
+				}
+			}
+            
+			set_variable = {
+				name = recent_infection_catalyst
+				years = 2
+			}
+			every_character_struggle = {
+				activate_struggle_catalyst = {
+					catalyst = catalyst_TFE_plague_spread
+				}
+			}
+		}
+    }
+}

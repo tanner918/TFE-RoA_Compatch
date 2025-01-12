@@ -1,0 +1,259 @@
+﻿# County changes faith.
+# Root is the county title
+# scope:old_faith is the faith it used to have
+on_county_faith_change = {
+	on_actions = {
+		on_senate_county_faith
+	}
+}
+
+# Root = County title
+# scope:old_culture = old culture
+on_county_culture_change = {
+	on_actions = {
+		on_senate_county_culture
+	}
+}
+
+on_senate_county_culture = {
+	effect = {
+		if = {
+			limit = {
+				AND = {
+					global_var:italy_senate_tasks = flag:convert_culture
+					global_var:italy_senate_convert_culture_county = THIS
+					holder = {
+						OR = {
+							title:c_roma.holder.top_liege = THIS
+							any_liege_or_above = {
+								title:c_roma.holder.top_liege = THIS
+							}
+						}
+					}
+					title:c_roma.holder.top_liege = {
+						access_to_italian_senate = yes
+						culture = root.culture
+					}
+
+				}
+			}
+			holder = {
+				if = {
+					limit = {
+						culture = title:c_roma.holder.top_liege.culture
+					}
+					trigger_event = senate.0001
+				}
+				every_liege_or_above = {
+					if = {
+						limit = {
+							culture = title:c_roma.holder.top_liege.culture
+						}
+						trigger_event = senate.0001
+					}
+				}
+			}
+			set_global_variable = {
+				name = italy_senate_tasks
+				value = flag:none
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					global_var:eastern_senate_tasks = flag:convert_culture
+					global_var:eastern_senate_convert_culture_county = THIS
+					holder = {
+						OR = {
+							title:c_byzantion.holder.top_liege = THIS
+							any_liege_or_above = {
+								title:c_roma.holder.top_liege = THIS
+							}
+						}
+					}
+					title:c_byzantion.holder.top_liege = {
+						access_to_eastern_senate = yes
+						culture = root.culture
+					}
+
+				}
+			}
+			holder = {
+				if = {
+					limit = {
+						culture = title:c_byzantion.holder.top_liege.culture
+					}
+					trigger_event = senate.0001
+				}
+				every_liege_or_above = {
+					if = {
+						limit = {
+							culture = title:c_byzantion.holder.top_liege.culture
+						}
+						trigger_event = senate.0001
+					}
+				}
+			}
+			set_global_variable = {
+				name = eastern_senate_tasks
+				value = flag:none
+			}
+		}
+	}
+}
+
+on_senate_county_faith = {
+	effect = {
+		if = {
+			limit = {
+				AND = {
+					global_var:italy_senate_tasks = flag:convert_faith
+					global_var:italy_senate_convert_faith_county = THIS
+					holder = {
+						OR = {
+							title:c_roma.holder.top_liege = THIS
+							any_liege_or_above = {
+								title:c_roma.holder.top_liege = THIS
+							}
+						}
+					}
+					title:c_roma.holder.top_liege = {
+						access_to_italian_senate = yes
+						faith = root.faith
+					}
+
+				}
+			}
+			holder = {
+				if = {
+					limit = {
+						faith = title:c_roma.holder.top_liege.faith
+					}
+					trigger_event = senate.0002
+				}
+				every_liege_or_above = {
+					if = {
+						limit = {
+							faith = title:c_roma.holder.top_liege.faith
+						}
+						trigger_event = senate.0002
+					}
+				}
+			}
+			set_global_variable = {
+				name = italy_senate_tasks
+				value = flag:none
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					global_var:eastern_senate_tasks = flag:convert_faith
+					global_var:eastern_senate_convert_faith_county = THIS
+					holder = {
+						OR = {
+							title:c_byzantion.holder.top_liege = THIS
+							any_liege_or_above = {
+								title:c_byzantion.holder.top_liege = THIS
+							}
+						}
+					}
+					title:c_byzantion.holder.top_liege = {
+						access_to_eastern_senate = yes
+						faith = root.faith
+					}
+		
+				}
+			}
+			holder = {
+				if = {
+					limit = {
+						faith = title:c_byzantion.holder.top_liege.faith
+					}
+					trigger_event = senate.0002
+				}
+				every_liege_or_above = {
+					if = {
+						limit = {
+							faith = title:c_byzantion.holder.top_liege.faith
+						}
+						trigger_event = senate.0002
+					}
+				}
+			}
+			set_global_variable = {
+				name = eastern_senate_tasks
+				value = flag:none
+			}
+		}
+	}
+}
+
+on_building_completed = {
+	on_actions = {
+		on_senate_province
+	}
+}
+
+on_senate_province = {
+	effect = {
+		if = {
+			limit = {
+				county = {
+					global_var:italy_senate_tasks = flag:building
+					global_var:italy_senate_building_county = THIS
+					holder = {
+						OR = {
+							title:c_roma.holder.top_liege = THIS
+							any_liege_or_above = {
+								title:c_roma.holder.top_liege = THIS
+							}
+						}
+					}
+				}
+				title:c_roma.holder.top_liege = {
+					access_to_italian_senate = yes
+				}
+			}
+			province_owner = {
+				trigger_event = senate.0004
+				every_liege_or_above = {
+					trigger_event = senate.0004
+				}
+			}
+			set_global_variable = {
+				name = italy_senate_tasks
+				value = flag:none
+			}
+		}
+		if = {
+			limit = {
+				county = {
+					global_var:eastern_senate_tasks = flag:building
+					global_var:eastern_senate_building_county = THIS
+					holder = {
+						OR = {
+							title:c_byzantion.holder.top_liege = THIS
+							any_liege_or_above = {
+								title:c_byzantion.holder.top_liege = THIS
+							}
+						}
+					}
+				}
+				title:c_byzantion.holder.top_liege = {
+					access_to_eastern_senate = yes
+				}
+			}
+			province_owner = {
+				trigger_event = senate.0004
+				every_liege_or_above = {
+					trigger_event = senate.0004
+				}
+			}
+			set_global_variable = {
+				name = eastern_senate_tasks
+				value = flag:none
+			}
+		}
+	}
+}

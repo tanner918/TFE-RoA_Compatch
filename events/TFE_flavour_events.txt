@@ -1,0 +1,2349 @@
+﻿namespace = TFE_flavour_events
+
+# By Shatzi
+
+TFE_flavour_events.0001 = { # Monastery of Auxerre
+	type = character_event
+	title = TFE_flavour_events.0001.t
+	desc = TFE_flavour_events.0001.desc
+	theme = faith
+
+	right_portrait = { # cool idea looks ugly xd
+		character = cp:councillor_court_chaplain
+	}
+
+	trigger = {
+		current_date >= 448.1.1 # monastery was founded in 448 
+		#or has monastery county modifier. Do tell if I must add founding of the 
+		# monastery event
+		religion = religion:christianity_religion
+		NOT = { # cannae hae it twace
+			title:c_auxerre = {
+				has_county_modifier = auxerre_monastery
+			}
+		}
+	}
+
+	immediate = {
+		title:c_auxerre = {
+			add_county_modifier = {
+				modifier = auxerre_monastery
+			}
+			save_scope_as = auxerre
+		}
+	}
+
+	option = { # Praised be Saint Germain!
+		name = TFE_flavour_events.0001.a
+		add_piety = 75
+	}
+}
+
+TFE_flavour_events.0002 = { # BLOOOOOOODY BARBARIANS !!!!
+	type = character_event
+	title = TFE_flavour_events.0002.t
+	desc = TFE_flavour_events.0002.desc
+	theme = friend_relation
+
+	right_portrait = { # cool idea looks ugly xd
+		character = root
+		animation = anger
+	}
+
+	trigger = {
+		OR = {
+			has_trait = wrathful
+			has_trait = callous
+			has_trait = sadistic
+			has_trait = lunatic_1
+			has_trait = lunatic_genetic
+			has_trait = possessed_1
+			has_trait = possessed_genetic
+		}
+		culture = {
+			OR = {
+				this = culture:roman
+				any_parent_culture_or_above = {
+					this = culture:roman
+				}
+			}
+		}
+	}
+
+	immediate = {
+		random_held_title = {
+			limit = { tier = tier_county }
+			save_scope_as = county
+			add_county_modifier = {
+				modifier = bloody_pants
+				years = 5
+			}
+		}
+	}
+
+	option = { # BAN 'EM
+		name = TFE_flavour_events.0002.a
+		add_character_modifier = {
+			modifier = bloody_pants_char
+			years = 5
+		}
+		stress_impact = {
+			base = medium_stress_impact_gain
+		}
+		add_prestige = -25
+	}
+
+	option = { # GO FURTHER!
+		name = TFE_flavour_events.0002.b
+		add_character_modifier = {
+			modifier = bloody_pants_char
+			years = 5
+		}
+		stress_impact = {
+			base = minor_stress_impact_gain
+		}
+		add_prestige = -100
+	}
+}
+
+TFE_flavour_events.0003 = {
+	title = TFE_flavour_events.0003.t
+	desc = TFE_flavour_events.0003.desc
+	scope = character
+	theme = stewardship
+
+	override_background = {
+		reference = wilderness_desert
+	}
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+
+	option = {
+		name = TFE_flavour_events.0003.a
+		random_list = {
+			75 = {
+				title:c_jawf-al-yamani.kingdom = {
+					every_in_de_jure_hierarchy = {
+						limit = {
+							tier = tier_county
+						}
+						add_county_modifier = {
+							modifier = marib_dam_restored
+							years = 5
+						}
+					}
+				}
+			}
+			25 = {
+				title:c_jawf-al-yamani.kingdom = {
+					every_in_de_jure_hierarchy = {
+						limit = {
+							tier = tier_county
+						}
+						add_county_modifier = {
+							modifier = marib_dam_restored_fail
+							years = 5
+						}
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = TFE_flavour_events.0003.b
+		add_gold = 150
+		remove_decision_cooldown = restore_the_mardib_dam
+	}
+}
+
+TFE_flavour_events.0004 = {
+	title = TFE_flavour_events.0004.t
+	desc = TFE_flavour_events.0004.desc
+	scope = character
+	theme = stewardship
+
+	override_background = {
+		reference = bp1_crossroads_inn
+	}
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+
+	option = {
+		name = TFE_flavour_events.0004.a
+		title:c_jawf-al-yamani.kingdom = {
+			every_in_de_jure_hierarchy = {
+				limit = {
+
+				}
+				add_county_modifier = {
+					modifier = marib_dam_restored
+				}
+			}
+		}
+	}
+}
+
+TFE_flavour_events.0005 = {
+	title = TFE_flavour_events.0005.t
+	desc = TFE_flavour_events.0005.desc
+	scope = character
+	theme = martial
+
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	right_portrait = {
+		character = title:k_yemen.holder
+		animation = rage
+	}
+	immediate = {
+		add_pressed_claim = title:k_yemen
+	}
+	option = {
+		name = TFE_flavour_events.0005.a
+		start_war = {
+			cb = claim_cb
+			target = title:k_yemen.holder
+			target_title = title:k_yemen
+			claimant = root
+		}
+		spawn_army = {
+			name = AKSUM_CHRISTIAN_ARMY
+			levies = 500
+			men_at_arms = {
+				type = bowmen
+				stacks = 2
+			}
+			men_at_arms = {
+				type = light_horsemen
+				stacks = 1
+			}
+			men_at_arms = {
+				type = light_footmen
+				stacks = 3
+			}
+			location = root.capital_province
+		}
+		add_prestige = 150
+		add_piety = 100
+		ai_chance = { base = 10 } #F them himyars
+	}
+	option = {
+		name = TFE_flavour_events.0005.b
+		add_prestige = -50
+		add_piety = -50
+		ai_chance = { base = 1 }
+	}
+	option = {
+		name = TFE_flavour_events.0005.c
+		remove_claim = title:k_yemen
+		add_prestige = -100
+		add_piety = -100
+		ai_chance = { base = 1 }
+	}
+}
+
+TFE_flavour_events.0006 = {
+	title = TFE_flavour_events.0006.t
+	desc = TFE_flavour_events.0006.desc
+	scope = character
+	theme = martial
+
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	option = {
+		name = TFE_flavour_events.0006.a
+		add_gold = 500
+		create_artifact = {
+			name = artifact_strangering_name
+			description = artifact_strangering_description
+			visuals = ring 
+			type = miscellaneous 
+			modifier = artifact_strangering_modifier
+			wealth = 20
+			quality = 100
+			history = {
+				type = created_before_history
+			}
+			save_scope_as = strangering
+		}
+		scope:strangering = {
+			set_variable = { name = historical_unique_artifact value = yes }
+		}
+	}
+}
+
+TFE_flavour_events.0007 = {
+	title = TFE_flavour_events.0007.t
+	desc = TFE_flavour_events.0007.desc
+	scope = character
+	theme = martial
+	trigger = {
+		character:cenmar_01 = {
+			is_alive = yes
+		}
+	}
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = rage
+	}
+	right_portrait = {
+		character = character:cenmar_01
+		animation = worry
+	}
+	option = {
+		name = TFE_flavour_events.0007.a
+		character:cenmar_01 = {
+			death = {
+				death_reason = death_defenestration
+				killer = root
+			}
+		}
+		add_dread = 10
+		add_prestige = -100
+		stress_impact = {
+			vengeful = minor_stress_impact_loss
+			sadistic = minor_stress_impact_loss
+			compassionate = minor_stress_impact_gain
+		}
+	}
+	option = {
+		name = TFE_flavour_events.0007.b
+		add_prestige = 100
+		stress_impact = {
+			vengeful = minor_stress_impact_gain
+			sadistic = minor_stress_impact_gain
+			compassionate = minor_stress_impact_loss
+		}
+		remove_courtier_or_guest = character:cenmar_01
+	}
+}
+
+TFE_flavour_events.0008 = {
+	title = TFE_flavour_events.0008.t
+	desc = TFE_flavour_events.0008.desc
+	scope = character
+	theme = martial
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	option = {
+		name = TFE_flavour_events.0008.a
+		give_nickname = nick_parthicus
+		add_prestige = 1000
+		capital_county = {
+			add_county_modifier = {
+				modifier = carrhae_avenged
+				years = 50
+			}
+		}
+		province:4796 = {
+			remove_building = taq-kasra
+		}
+		title:k_mesopotamia = {
+			change_development_level = -5
+		}
+		title:c_ctesiphon = {
+			change_development_level = -5
+		}
+	}
+}
+
+TFE_flavour_events.0009 = {
+	title = TFE_flavour_events.0009.t
+	desc = TFE_flavour_events.0009.desc
+	scope = character
+	theme = diplomacy
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	right_portrait = {
+		character = liege
+		animation = personality_honorable
+	}
+	option = {
+		name = TFE_flavour_events.0009.a
+		custom_tooltip = TFE_flavour_events.0009.a.tt
+	}
+}
+
+#Scapulimancy
+TFE_flavour_events.0010 = {
+	type = character_event
+	title = TFE_flavour_events.0010.t
+	desc = TFE_flavour_events.0010.desc.beginning
+	theme = faith
+	override_background = {
+		reference = corridor_night
+	}
+	left_portrait = root
+
+	immediate = {
+		random_list = {
+			1 = {
+				save_scope_value_as = {
+					name = scapulimancy_outcome
+					value = flag:insane_outcome
+				}
+			}
+			4 = {
+				save_scope_value_as = {
+					name = scapulimancy_outcome
+					value = flag:great_outcome
+				}
+			}
+			60 = {
+				save_scope_value_as = {
+					name = scapulimancy_outcome
+					value = flag:good_outcome
+				}
+			}
+			25 = {
+				save_scope_value_as = {
+					name = scapulimancy_outcome
+					value = flag:neutral_outcome
+				}
+			}
+			9 = {
+				save_scope_value_as = {
+					name = scapulimancy_outcome
+					value = flag:bad_outcome
+				}
+			}
+			1 = {
+				save_scope_value_as = {
+					name = scapulimancy_outcome
+					value = flag:terrible_outcome
+				}
+			}
+		}
+	}
+
+	option = {
+		name = TFE_flavour_events.0010.a
+		trigger_event = {
+			id = TFE_flavour_events.0011
+		}
+	}
+	option = {
+		name = TFE_flavour_events.0010.b
+		trigger_event = {
+			id = TFE_flavour_events.0012
+		}
+	}
+	option = {
+		name = TFE_flavour_events.0010.c
+		trigger_event = {
+			id = TFE_flavour_events.0013
+		}
+	}
+	option = {
+		name = TFE_flavour_events.0010.d
+		trigger_event = {
+			id = TFE_flavour_events.0014
+		}
+	}
+	option = {
+		name = TFE_flavour_events.0010.e
+		trigger_event = {
+			id = TFE_flavour_events.0015
+		}
+	}
+}
+
+TFE_flavour_events.0011 = {
+	type = character_event
+	title = TFE_flavour_events.0011.t
+	theme = faith
+	override_background = {
+		reference = corridor_night
+	}
+	left_portrait = root
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					scope:scapulimancy_outcome = flag:insane_outcome
+				}
+				desc = TFE_flavour_events.0011.desc.insane_outcome
+			}
+			triggered_desc = {
+				trigger = {
+					scope:scapulimancy_outcome = flag:great_outcome
+				}
+				desc = TFE_flavour_events.0011.desc.great_outcome
+			}
+			triggered_desc = {
+				trigger = {
+					scope:scapulimancy_outcome = flag:good_outcome
+				}
+				desc = TFE_flavour_events.0011.desc.good_outcome
+			}
+			triggered_desc = {
+				trigger = {
+					scope:scapulimancy_outcome = flag:neutral_outcome
+				}
+				desc = TFE_flavour_events.0011.desc.neutral_outcome
+			}
+			triggered_desc = {
+				trigger = {
+					scope:scapulimancy_outcome = flag:bad_outcome
+				}
+				desc = TFE_flavour_events.0011.desc.bad_outcome
+			}
+			triggered_desc = {
+				trigger = {
+					scope:scapulimancy_outcome = flag:terrible_outcome
+				}
+				desc = TFE_flavour_events.0011.desc.terrible_outcome
+			}
+		}
+	}
+
+	option = {
+		name = TFE_flavour_events.0011.a
+
+		if = {
+			limit = {
+				scope:scapulimancy_outcome = flag:insane_outcome
+			}
+			add_character_modifier = {
+				modifier = insane_diplomacy_scapulimancy
+				years = 5
+			}
+		}
+		else_if = {
+			limit = {
+				scope:scapulimancy_outcome = flag:great_outcome
+			}
+			add_character_modifier = {
+				modifier = great_diplomacy_scapulimancy
+				years = 5
+			}
+		}
+		else_if = {
+			limit = {
+				scope:scapulimancy_outcome = flag:good_outcome
+			}
+			add_character_modifier = {
+				modifier = good_diplomacy_scapulimancy
+				years = 5
+			}
+		}
+		else_if = {
+			limit = {
+				scope:scapulimancy_outcome = flag:neutral_outcome
+			}
+			add_character_modifier = {
+				modifier = neutral_diplomacy_scapulimancy
+				years = 5
+			}
+		}
+		else_if = {
+			limit = {
+				scope:scapulimancy_outcome = flag:bad_outcome
+			}
+			add_character_modifier = {
+				modifier = bad_diplomacy_scapulimancy
+				years = 5
+			}
+		}
+		else_if = {
+			limit = {
+				scope:scapulimancy_outcome = flag:terrible_outcome
+			}
+			add_character_modifier = {
+				modifier = terrible_diplomacy_scapulimancy
+				years = 5
+			}
+		}
+	}
+}
+
+TFE_flavour_events.0012 = {
+	type = character_event
+	title = TFE_flavour_events.0011.t
+	theme = faith
+	override_background = {
+		reference = corridor_night
+	}
+	left_portrait = root
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					scope:scapulimancy_outcome = flag:insane_outcome
+				}
+				desc = TFE_flavour_events.0011.desc.insane_outcome
+			}
+			triggered_desc = {
+				trigger = {
+					scope:scapulimancy_outcome = flag:great_outcome
+				}
+				desc = TFE_flavour_events.0011.desc.great_outcome
+			}
+			triggered_desc = {
+				trigger = {
+					scope:scapulimancy_outcome = flag:good_outcome
+				}
+				desc = TFE_flavour_events.0011.desc.good_outcome
+			}
+			triggered_desc = {
+				trigger = {
+					scope:scapulimancy_outcome = flag:neutral_outcome
+				}
+				desc = TFE_flavour_events.0011.desc.neutral_outcome
+			}
+			triggered_desc = {
+				trigger = {
+					scope:scapulimancy_outcome = flag:bad_outcome
+				}
+				desc = TFE_flavour_events.0011.desc.bad_outcome
+			}
+			triggered_desc = {
+				trigger = {
+					scope:scapulimancy_outcome = flag:terrible_outcome
+				}
+				desc = TFE_flavour_events.0011.desc.terrible_outcome
+			}
+		}
+	}
+
+	option = {
+		name = TFE_flavour_events.0011.a
+
+		if = {
+			limit = {
+				scope:scapulimancy_outcome = flag:insane_outcome
+			}
+			add_character_modifier = {
+				modifier = insane_military_scapulimancy
+				years = 5
+			}
+		}
+		else_if = {
+			limit = {
+				scope:scapulimancy_outcome = flag:great_outcome
+			}
+			add_character_modifier = {
+				modifier = great_military_scapulimancy
+				years = 5
+			}
+		}
+		else_if = {
+			limit = {
+				scope:scapulimancy_outcome = flag:good_outcome
+			}
+			add_character_modifier = {
+				modifier = good_military_scapulimancy
+				years = 5
+			}
+		}
+		else_if = {
+			limit = {
+				scope:scapulimancy_outcome = flag:neutral_outcome
+			}
+			add_character_modifier = {
+				modifier = neutral_military_scapulimancy
+				years = 5
+			}
+		}
+		else_if = {
+			limit = {
+				scope:scapulimancy_outcome = flag:bad_outcome
+			}
+			add_character_modifier = {
+				modifier = bad_military_scapulimancy
+				years = 5
+			}
+		}
+		else_if = {
+			limit = {
+				scope:scapulimancy_outcome = flag:terrible_outcome
+			}
+			add_character_modifier = {
+				modifier = terrible_military_scapulimancy
+				years = 5
+			}
+		}
+	}
+}
+
+TFE_flavour_events.0013 = {
+	type = character_event
+	title = TFE_flavour_events.0011.t
+	theme = faith
+	override_background = {
+		reference = corridor_night
+	}
+	left_portrait = root
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					scope:scapulimancy_outcome = flag:insane_outcome
+				}
+				desc = TFE_flavour_events.0011.desc.insane_outcome
+			}
+			triggered_desc = {
+				trigger = {
+					scope:scapulimancy_outcome = flag:great_outcome
+				}
+				desc = TFE_flavour_events.0011.desc.great_outcome
+			}
+			triggered_desc = {
+				trigger = {
+					scope:scapulimancy_outcome = flag:good_outcome
+				}
+				desc = TFE_flavour_events.0011.desc.good_outcome
+			}
+			triggered_desc = {
+				trigger = {
+					scope:scapulimancy_outcome = flag:neutral_outcome
+				}
+				desc = TFE_flavour_events.0011.desc.neutral_outcome
+			}
+			triggered_desc = {
+				trigger = {
+					scope:scapulimancy_outcome = flag:bad_outcome
+				}
+				desc = TFE_flavour_events.0011.desc.bad_outcome
+			}
+			triggered_desc = {
+				trigger = {
+					scope:scapulimancy_outcome = flag:terrible_outcome
+				}
+				desc = TFE_flavour_events.0011.desc.terrible_outcome
+			}
+		}
+	}
+
+	option = {
+		name = TFE_flavour_events.0011.a
+
+		if = {
+			limit = {
+				scope:scapulimancy_outcome = flag:insane_outcome
+			}
+			add_character_modifier = {
+				modifier = insane_stewardship_scapulimancy
+				years = 5
+			}
+		}
+		else_if = {
+			limit = {
+				scope:scapulimancy_outcome = flag:great_outcome
+			}
+			add_character_modifier = {
+				modifier = great_stewardship_scapulimancy
+				years = 5
+			}
+		}
+		else_if = {
+			limit = {
+				scope:scapulimancy_outcome = flag:good_outcome
+			}
+			add_character_modifier = {
+				modifier = good_stewardship_scapulimancy
+				years = 5
+			}
+		}
+		else_if = {
+			limit = {
+				scope:scapulimancy_outcome = flag:neutral_outcome
+			}
+			add_character_modifier = {
+				modifier = neutral_stewardship_scapulimancy
+				years = 5
+			}
+		}
+		else_if = {
+			limit = {
+				scope:scapulimancy_outcome = flag:bad_outcome
+			}
+			add_character_modifier = {
+				modifier = bad_stewardship_scapulimancy
+				years = 5
+			}
+		}
+		else_if = {
+			limit = {
+				scope:scapulimancy_outcome = flag:terrible_outcome
+			}
+			add_character_modifier = {
+				modifier = terrible_stewardship_scapulimancy
+				years = 5
+			}
+		}
+	}
+}
+
+TFE_flavour_events.0014 = {
+	type = character_event
+	title = TFE_flavour_events.0011.t
+	theme = faith
+	override_background = {
+		reference = corridor_night
+	}
+	left_portrait = root
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					scope:scapulimancy_outcome = flag:insane_outcome
+				}
+				desc = TFE_flavour_events.0011.desc.insane_outcome
+			}
+			triggered_desc = {
+				trigger = {
+					scope:scapulimancy_outcome = flag:great_outcome
+				}
+				desc = TFE_flavour_events.0011.desc.great_outcome
+			}
+			triggered_desc = {
+				trigger = {
+					scope:scapulimancy_outcome = flag:good_outcome
+				}
+				desc = TFE_flavour_events.0011.desc.good_outcome
+			}
+			triggered_desc = {
+				trigger = {
+					scope:scapulimancy_outcome = flag:neutral_outcome
+				}
+				desc = TFE_flavour_events.0011.desc.neutral_outcome
+			}
+			triggered_desc = {
+				trigger = {
+					scope:scapulimancy_outcome = flag:bad_outcome
+				}
+				desc = TFE_flavour_events.0011.desc.bad_outcome
+			}
+			triggered_desc = {
+				trigger = {
+					scope:scapulimancy_outcome = flag:terrible_outcome
+				}
+				desc = TFE_flavour_events.0011.desc.terrible_outcome
+			}
+		}
+	}
+
+	option = {
+		name = TFE_flavour_events.0011.a
+
+		if = {
+			limit = {
+				scope:scapulimancy_outcome = flag:insane_outcome
+			}
+			add_character_modifier = {
+				modifier = insane_intrigue_scapulimancy
+				years = 5
+			}
+		}
+		else_if = {
+			limit = {
+				scope:scapulimancy_outcome = flag:great_outcome
+			}
+			add_character_modifier = {
+				modifier = great_intrigue_scapulimancy
+				years = 5
+			}
+		}
+		else_if = {
+			limit = {
+				scope:scapulimancy_outcome = flag:good_outcome
+			}
+			add_character_modifier = {
+				modifier = good_intrigue_scapulimancy
+				years = 5
+			}
+		}
+		else_if = {
+			limit = {
+				scope:scapulimancy_outcome = flag:neutral_outcome
+			}
+			add_character_modifier = {
+				modifier = neutral_intrigue_scapulimancy
+				years = 5
+			}
+		}
+		else_if = {
+			limit = {
+				scope:scapulimancy_outcome = flag:bad_outcome
+			}
+			add_character_modifier = {
+				modifier = bad_intrigue_scapulimancy
+				years = 5
+			}
+		}
+		else_if = {
+			limit = {
+				scope:scapulimancy_outcome = flag:terrible_outcome
+			}
+			add_character_modifier = {
+				modifier = terrible_intrigue_scapulimancy
+				years = 5
+			}
+		}
+	}
+}
+
+TFE_flavour_events.0015 = {
+	type = character_event
+	title = TFE_flavour_events.0011.t
+	theme = faith
+	override_background = {
+		reference = corridor_night
+	}
+	left_portrait = root
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					scope:scapulimancy_outcome = flag:insane_outcome
+				}
+				desc = TFE_flavour_events.0011.desc.insane_outcome
+			}
+			triggered_desc = {
+				trigger = {
+					scope:scapulimancy_outcome = flag:great_outcome
+				}
+				desc = TFE_flavour_events.0011.desc.great_outcome
+			}
+			triggered_desc = {
+				trigger = {
+					scope:scapulimancy_outcome = flag:good_outcome
+				}
+				desc = TFE_flavour_events.0011.desc.good_outcome
+			}
+			triggered_desc = {
+				trigger = {
+					scope:scapulimancy_outcome = flag:neutral_outcome
+				}
+				desc = TFE_flavour_events.0011.desc.neutral_outcome
+			}
+			triggered_desc = {
+				trigger = {
+					scope:scapulimancy_outcome = flag:bad_outcome
+				}
+				desc = TFE_flavour_events.0011.desc.bad_outcome
+			}
+			triggered_desc = {
+				trigger = {
+					scope:scapulimancy_outcome = flag:terrible_outcome
+				}
+				desc = TFE_flavour_events.0011.desc.terrible_outcome
+			}
+		}
+	}
+
+	option = {
+		name = TFE_flavour_events.0011.a
+
+		if = {
+			limit = {
+				scope:scapulimancy_outcome = flag:insane_outcome
+			}
+			add_character_modifier = {
+				modifier = insane_learning_scapulimancy
+				years = 5
+			}
+		}
+		else_if = {
+			limit = {
+				scope:scapulimancy_outcome = flag:great_outcome
+			}
+			add_character_modifier = {
+				modifier = great_learning_scapulimancy
+				years = 5
+			}
+		}
+		else_if = {
+			limit = {
+				scope:scapulimancy_outcome = flag:good_outcome
+			}
+			add_character_modifier = {
+				modifier = good_learning_scapulimancy
+				years = 5
+			}
+		}
+		else_if = {
+			limit = {
+				scope:scapulimancy_outcome = flag:neutral_outcome
+			}
+			add_character_modifier = {
+				modifier = neutral_learning_scapulimancy
+				years = 5
+			}
+		}
+		else_if = {
+			limit = {
+				scope:scapulimancy_outcome = flag:bad_outcome
+			}
+			add_character_modifier = {
+				modifier = bad_learning_scapulimancy
+				years = 5
+			}
+		}
+		else_if = {
+			limit = {
+				scope:scapulimancy_outcome = flag:terrible_outcome
+			}
+			add_character_modifier = {
+				modifier = terrible_learning_scapulimancy
+				years = 5
+			}
+		}
+	}
+}
+
+
+TFE_flavour_events.0016 = {
+	title = TFE_flavour_events.0016.t
+	desc = TFE_flavour_events.0016.desc
+	scope = character
+	theme = martial
+	immediate = {
+		add_dread = 100
+		dynasty = {
+			add_dynasty_modifier = pirates_of_illyria
+		}
+		get_title = title:e_illyria_pirate
+		culture = {
+			add_culture_tradition = tradition_pirate_kings
+		}
+	}
+	override_background = {
+		reference = ocean
+	}
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	option = {
+		name = TFE_flavour_events.0016.a
+	}
+}
+
+# Adopt a higher varna as Shudra
+TFE_flavour_events.0017 = {
+	title = TFE_flavour_events.0017.t
+	desc = TFE_flavour_events.0017.desc
+	scope = character
+	theme = faith	
+	override_background = {
+		reference = throne_room_india
+	}
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	option = {
+		name = TFE_flavour_events.0017.a
+		remove_long_term_gold = 300
+	}
+	option = {
+		name = TFE_flavour_events.0017.b
+		add_prestige = -200
+		add_character_modifier = {
+			modifier = shared_power_with_clergy
+			years = 10
+		}
+	}
+	option = {
+		name = TFE_flavour_events.0017.c
+		add_character_modifier = {
+			modifier = disrespected_clergy
+			years = 10
+		}
+	}
+}
+
+TFE_flavour_events.0018 = {
+	type = character_event
+	title = TFE_flavour_events.0018.t
+	desc = TFE_flavour_events.0018.desc
+	theme = realm
+
+	right_portrait = {
+		character = title:c_niani.holder
+		animation = personality_greedy
+	}
+	immediate = {
+		title:b_figuira.title_province = {
+			set_holding_type = castle_holding
+			add_special_building_slot = mali_mines_01
+		}
+	}
+	option = {
+		name = TFE_flavour_events.0018.a
+		every_player = {
+			limit = {
+				NOT = { has_title = title:c_niani }
+			}
+			trigger_event = TFE_flavour_events.0019
+		}
+	}
+}
+
+TFE_flavour_events.0019 = {
+	type = character_event
+	title = TFE_flavour_events.0018.t
+	desc = TFE_flavour_events.0018.desc
+	theme = realm
+
+	right_portrait = {
+		character = title:c_niani.holder
+		animation = personality_greedy
+	}
+	option = {
+		name = TFE_flavour_events.0018.a
+	}
+}
+
+TFE_flavour_events.0020 = {
+	type = character_event
+	title = TFE_flavour_events.0018.t
+	desc = TFE_flavour_events.0018.desc
+	theme = realm
+
+	right_portrait = {
+		character = title:c_bure.holder
+		animation = personality_greedy
+	}
+	immediate = {
+		title:b_siguiri.title_province = {
+			set_holding_type = castle_holding
+			add_special_building_slot = mali_mines_01
+		}
+	}
+	option = {
+		name = TFE_flavour_events.0018.a
+		every_player = {
+			limit = {
+				NOT = { has_title = title:c_bure }
+			}
+			trigger_event = TFE_flavour_events.0021
+		}
+	}
+}
+
+TFE_flavour_events.0021 = {
+	type = character_event
+	title = TFE_flavour_events.0018.t
+	desc = TFE_flavour_events.0018.desc
+	theme = realm
+
+	right_portrait = {
+		character = title:c_bure.holder
+		animation = personality_greedy
+	}
+	option = {
+		name = TFE_flavour_events.0018.a
+	}
+}
+
+TFE_flavour_events.0022 = {
+	type = character_event
+	title = TFE_flavour_events.0018.t
+	desc = TFE_flavour_events.0018.desc
+	theme = realm
+
+	right_portrait = {
+		character = title:c_bambuk.holder
+		animation = personality_greedy
+	}
+	immediate = {
+		title:b_yaresna.title_province = {
+			set_holding_type = castle_holding
+			add_special_building_slot = mali_mines_01
+		}
+	}
+	option = {
+		name = TFE_flavour_events.0018.a
+		every_player = {
+			limit = {
+				NOT = { has_title = title:c_bambuk }
+			}
+			trigger_event = TFE_flavour_events.0023
+		}
+	}
+}
+
+TFE_flavour_events.0023 = {
+	type = character_event
+	title = TFE_flavour_events.0018.t
+	desc = TFE_flavour_events.0018.desc
+	theme = realm
+
+	right_portrait = {
+		character = title:c_bambuk.holder
+		animation = personality_greedy
+	}
+	option = {
+		name = TFE_flavour_events.0018.a
+	}
+}
+
+TFE_flavour_events.0024 = {
+	type = character_event
+	title = TFE_flavour_events.0018.t
+	desc = TFE_flavour_events.0018.desc
+	theme = realm
+
+	right_portrait = {
+		character = title:c_chalkidike.holder
+		animation = personality_greedy
+	}
+	immediate = {
+		title:b_polygyros.title_province = {
+			set_holding_type = castle_holding
+			add_special_building_slot = siderokausia_mines_01
+		}
+	}
+	option = {
+		name = TFE_flavour_events.0018.a
+		every_player = {
+			limit = {
+				NOT = { has_title = title:c_chalkidike }
+			}
+			trigger_event = TFE_flavour_events.0025
+		}
+	}
+}
+
+TFE_flavour_events.0025 = {
+	type = character_event
+	title = TFE_flavour_events.0018.t
+	desc = TFE_flavour_events.0018.desc
+	theme = realm
+
+	right_portrait = {
+		character = title:c_chalkidike.holder
+		animation = personality_greedy
+	}
+	option = {
+		name = TFE_flavour_events.0018.a
+	}
+}
+
+TFE_flavour_events.0026 = {
+	type = character_event
+	title = TFE_flavour_events.0018.t
+	desc = TFE_flavour_events.0018.desc
+	theme = realm
+
+	right_portrait = {
+		character = title:c_trenscen.holder
+		animation = personality_greedy
+	}
+	immediate = {
+		title:b_turoc.title_province = {
+			set_holding_type = castle_holding
+			add_special_building_slot = kremnica_mines_01
+		}
+	}
+	option = {
+		name = TFE_flavour_events.0018.a
+		every_player = {
+			limit = {
+				NOT = { has_title = title:c_trenscen }
+			}
+			trigger_event = TFE_flavour_events.0027
+		}
+	}
+}
+
+TFE_flavour_events.0027 = {
+	type = character_event
+	title = TFE_flavour_events.0018.t
+	desc = TFE_flavour_events.0018.desc
+	theme = realm
+
+	right_portrait = {
+		character = title:c_trenscen.holder
+		animation = personality_greedy
+	}
+	option = {
+		name = TFE_flavour_events.0018.a
+	}
+}
+
+TFE_flavour_events.0028 = {
+	type = character_event
+	title = TFE_flavour_events.0018.t
+	desc = TFE_flavour_events.0018.desc
+	theme = realm
+
+	right_portrait = {
+		character = title:c_dalabergslagen.holder
+		animation = personality_greedy
+	}
+	immediate = {
+		title:b_falene.title_province = {
+			set_holding_type = castle_holding
+			add_special_building_slot = falun_mines_01
+		}
+	}
+	option = {
+		name = TFE_flavour_events.0018.a
+		every_player = {
+			limit = {
+				NOT = { has_title = title:c_dalabergslagen }
+			}
+			trigger_event = TFE_flavour_events.0029
+		}
+	}
+}
+
+TFE_flavour_events.0029 = {
+	type = character_event
+	title = TFE_flavour_events.0018.t
+	desc = TFE_flavour_events.0018.desc
+	theme = realm
+
+	right_portrait = {
+		character = title:c_dalabergslagen.holder
+		animation = personality_greedy
+	}
+	option = {
+		name = TFE_flavour_events.0018.a
+	}
+}
+
+TFE_flavour_events.0030 = {
+	type = character_event
+	title = TFE_flavour_events.0018.t
+	desc = TFE_flavour_events.0018.desc
+	theme = realm
+
+	right_portrait = {
+		character = title:c_caslav.holder
+		animation = personality_greedy
+	}
+	immediate = {
+		title:b_caslav.title_province = {
+			set_holding_type = castle_holding
+			add_special_building_slot = kutna_hora_mines_01
+		}
+	}
+	option = {
+		name = TFE_flavour_events.0018.a
+		every_player = {
+			limit = {
+				NOT = { has_title = title:c_caslav }
+			}
+			trigger_event = TFE_flavour_events.0031
+		}
+	}
+}
+
+TFE_flavour_events.0031 = {
+	type = character_event
+	title = TFE_flavour_events.0018.t
+	desc = TFE_flavour_events.0018.desc
+	theme = realm
+
+	right_portrait = {
+		character = title:c_caslav.holder
+		animation = personality_greedy
+	}
+	option = {
+		name = TFE_flavour_events.0018.a
+	}
+}
+
+TFE_flavour_events.0032 = {
+	hidden = yes
+	scope = none
+
+	immediate = {
+		if = {
+			limit = {
+				title:e_mongolia.holder = {
+					any_vassal = {
+						dynasty = dynasty:12269
+						culture = culture:tujue
+					}
+				}	
+			}
+			title:e_mongolia.holder = {
+				random_vassal = {
+					limit = {
+						dynasty = dynasty:12269
+						culture = culture:tujue
+					}
+					save_scope_as = gokturk_leader
+				}
+			}
+		}
+		else = {
+			title:e_mongolia.holder = {
+				random_realm_county = {
+					limit = {
+						culture = culture:tujue
+					}
+					random_county_province = {
+						save_scope_as = gokturk_leader_province
+					}
+				}
+			}
+			create_character = {
+				gender = male
+				location = scope:gokturk_leader_province
+				age = { 21 30 }
+				faith = faith:tengri_pagan
+				culture = culture:tujue
+				trait = education_martial_4
+				dynasty = dynasty:12269
+				save_scope_as = gokturk_leader
+			}
+		}
+		scope:gokturk_leader = {
+			add_character_flag = {
+				flag = immune_to_disease
+				years = 15
+			}
+			if = {
+				limit = {
+					is_landed = no
+				}
+				create_title_and_vassal_change = {
+					type = usurped
+					save_scope_as = title_change
+					add_claim_on_loss = no
+				}
+				title:d_gokturks = {
+					change_title_holder = {
+						holder = scope:gokturk_leader
+						change = scope:title_change
+					}
+				}
+				resolve_title_and_vassal_change = scope:title_change
+				change_government = nomadic_government
+			}
+			else = {
+				spawn_army = {
+					name = "GOKTURK_INVADERS"
+					levies = 9000
+					men_at_arms = {
+						type = light_horsemen
+						stacks = 25
+					}
+					men_at_arms = {
+						type = horse_archers
+						stacks = 20
+					}
+					men_at_arms = {
+						type = light_footmen
+						stacks = 15
+					}
+					location = capital_province
+					uses_supply = no
+				}
+			}
+			trigger_event = TFE_flavour_events.0033
+		}
+		
+	}
+}
+TFE_flavour_events.0033 = {
+	type = character_event
+	title = TFE_flavour_events.0033.t
+	desc = TFE_flavour_events.0033.desc
+	theme = martial
+	override_background = {
+		reference = battlefield
+	}
+	right_portrait = {
+		character = root
+		animation = rage
+	}
+	left_portrait = {
+		character = scope:rouran_leader
+		animation = dismissal
+	}
+
+	immediate = {
+		title:e_mongolia.holder = {
+			save_scope_as = rouran_leader
+		}
+		show_as_tooltip = {			
+			spawn_army = {
+				name = "GOKTURK_INVADERS"
+				levies = 9000
+				men_at_arms = {
+					type = light_horsemen
+					stacks = 25
+				}
+				men_at_arms = {
+					type = horse_archers
+					stacks = 20
+				}
+				men_at_arms = {
+					type = light_footmen
+					stacks = 15
+				}
+				location = capital_province
+				uses_supply = no
+			}
+		}
+	}
+
+	option = {
+		name = TFE_flavour_events.0033.a
+		start_war = {
+			cb = gokturk_rouran_war 
+			target = title:e_mongolia.holder
+		}
+		title:e_mongolia.holder = {
+			trigger_event = TFE_flavour_events.0034
+		}
+	}
+}
+TFE_flavour_events.0034 = {
+	type = character_event
+	title = TFE_flavour_events.0034.t
+	desc = TFE_flavour_events.0034.desc
+	theme = martial
+	override_background = {
+		reference = battlefield
+	}
+	left_portrait = {
+		character = scope:rouran_leader
+		animation = dismissal
+	}
+	right_portrait = {
+		character = scope:gokturk_leader
+		animation = rage
+	}
+	immediate = {
+		show_as_tooltip = {
+			scope:gokturk_leader = {
+				spawn_army = {
+					name = "GOKTURK_INVADERS"
+					levies = 9000
+					men_at_arms = {
+						type = light_horsemen
+						stacks = 25
+					}
+					men_at_arms = {
+						type = horse_archers
+						stacks = 20
+					}
+					men_at_arms = {
+						type = light_footmen
+						stacks = 15
+					}
+					location = capital_province
+					uses_supply = no
+				}
+			}
+		}
+	}
+	option = {
+		name = TFE_flavour_events.0034.a
+	}
+}
+
+TFE_flavour_events.0035 = {
+	type = character_event
+	title = TFE_flavour_events.0035.t
+	desc = TFE_flavour_events.0035.desc
+	theme = martial
+	override_background = {
+		reference = battlefield
+	}
+	left_portrait = {
+		character = scope:truce_breaker
+		animation = dismissal
+	}
+	right_portrait = {
+		character = scope:truce_breakee
+		animation = rage
+	}
+	option = {
+		name = TFE_flavour_events.0035.a
+	}
+}
+
+TFE_flavour_events.0036 = {
+	type = character_event
+	title = TFE_flavour_events.0036.t
+	desc = TFE_flavour_events.0036.desc
+	theme = martial
+	override_background = {
+		reference = battlefield
+	}
+	left_portrait = {
+		character = scope:truce_breaker
+		animation = dismissal
+	}
+	right_portrait = {
+		character = scope:truce_breakee
+		animation = rage
+	}
+	option = {
+		name = TFE_flavour_events.0036.a
+	}
+}
+
+TFE_flavour_events.0037 = {
+	type = character_event
+	title = TFE_flavour_events.0037.t
+	desc = TFE_flavour_events.0037.desc
+	theme = realm
+
+	right_portrait = {
+		character = title:c_ghur.holder
+		animation = personality_honorable
+	}
+	immediate = {
+		title:b_firuzkuh.title_province = {
+			set_holding_type = castle_holding
+			add_special_building_slot = minarets_and_remains_of_jam_01
+		}
+	}
+	option = {
+		name = TFE_flavour_events.0037.a
+		every_player = {
+			limit = {
+				NOT = { has_title = title:c_ghur }
+			}
+			trigger_event = TFE_flavour_events.0038
+		}
+	}
+}
+
+TFE_flavour_events.0038 = {
+	type = character_event
+	title = TFE_flavour_events.0037.t
+	desc = TFE_flavour_events.0037.desc
+	theme = realm
+
+	right_portrait = {
+		character = title:c_ghur.holder
+		animation = personality_honorable
+	}
+	option = {
+		name = TFE_flavour_events.0037.a
+	}
+}
+
+#TFE_flavour_events.0039 = {
+#	type = character_event
+#	title = TFE_flavour_events.0039.t
+#	desc = TFE_flavour_events.0039.desc
+#	theme = realm
+#
+#	right_portrait = {
+#		character = title:c_daylam.holder
+#		animation = personality_honorable
+#	}
+#	immediate = {
+#		title:b_alamut.title_province = {
+#			set_holding_type = castle_holding
+#			add_special_building_slot = alamut_castle_01
+#		}
+#	}
+#	option = {
+#		name = TFE_flavour_events.0039.a
+#		every_player = {
+#			limit = {
+#				NOT = { has_title = title:c_daylam }
+#			}
+#			trigger_event = TFE_flavour_events.0040
+#		}
+#	}
+#}
+
+#TFE_flavour_events.0040 = {
+#	type = character_event
+#	title = TFE_flavour_events.0039.t
+#	desc = TFE_flavour_events.0039.desc
+#	theme = realm
+#
+#	right_portrait = {
+#		character = title:c_daylam.holder
+#		animation = personality_honorable
+#	}
+#	option = {
+#		name = TFE_flavour_events.0039.a
+#	}
+#}
+
+
+TFE_flavour_events.0039 = {
+	type = character_event
+	title = TFE_flavour_events.0039.t
+	desc = TFE_flavour_events.0039.desc
+	theme = skull
+	override_background = {
+		reference = corridor_night
+	}
+	left_portrait = {
+		character = root
+		animation = paranoia
+	}
+	right_portrait = {
+		character = scope:first_blood_plague
+		animation = sick
+	}
+	immediate = {
+		capital_province = {
+			create_epidemic_outbreak = {
+				type = bubonic_plague_justinian
+				intensity = apocalyptic
+			}
+		}
+		capital_province = {
+			random_province_epidemic = {
+				limit = {
+					outbreak_intensity = apocalyptic
+				}
+				set_global_variable = {
+					name = justinian_plague_scope
+					value = THIS
+				}
+			}
+		}
+		random_courtier_or_guest = {
+			limit = {
+				is_foreign_court_or_pool_guest = yes
+				is_adult = yes
+				is_imprisoned = no
+				is_male = yes #not sexism I just don't want to do GetHeShe every time 
+			}
+			save_scope_as = first_blood_plague
+			add_trait = bubonic_plague
+			death = {
+				death_reason = sickness
+			}
+		}
+	}
+	option = {
+		name = TFE_flavour_events.0039.a
+		custom_tooltip = TFE_flavour_events.0039.a.tt
+		set_global_variable = {
+			name = plague_event_counter
+			value = 1
+		}
+		set_global_variable = {
+			name = plague_event_num_counter
+			value = 1
+		}
+		
+			change_global_variable = {
+				name = plague_event_counter
+				add = { 9000 12000 }
+			}
+		
+	}
+}
+
+TFE_flavour_events.0040 = {
+	type = character_event
+	title = TFE_flavour_events.0039.t
+	desc = TFE_flavour_events.0040.desc
+	theme = skull
+	override_background = {
+		reference = temple_church
+	}
+	left_portrait = {
+		character = root
+		animation = happiness
+	}
+	right_portrait = {
+		character = cp:councillor_court_chaplain
+		animation = personality_zealous
+	}
+	trigger = {
+		title:c_byzantion.holder.capital_province = {
+			any_province_epidemic = {
+				THIS = global_var:justinian_plague_scope
+			}
+		}
+	}
+	option = {
+		name = TFE_flavour_events.0040.a
+		add_piety = 200
+		title:c_byzantion = {
+			add_county_modifier = {
+				modifier = plague_priests_healing
+				years = 3
+			}
+		}
+		
+			change_global_variable = {
+				name = plague_event_counter
+				add = { 3000 7000 }
+			}
+		
+	}
+}
+
+TFE_flavour_events.0041 = {
+	type = character_event
+	title = TFE_flavour_events.0039.t
+	desc = TFE_flavour_events.0041.desc
+	theme = skull
+	override_background = {
+		reference = market
+	}
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	right_portrait = {
+		character = cp:councillor_steward
+		animation = worry
+	}
+	trigger = {
+		title:c_byzantion.holder.capital_province = {
+			any_province_epidemic = {
+				THIS = global_var:justinian_plague_scope
+			}
+		}
+	}
+	option = {
+		name = TFE_flavour_events.0041.a
+		add_prestige = -200
+		title:c_byzantion = {
+			add_county_modifier = {
+				modifier = plague_trade_closed
+				years = 3
+			}
+		}
+		
+			change_global_variable = {
+				name = plague_event_counter
+				add = { 13000 20000 }
+			}
+		
+	}
+}
+
+TFE_flavour_events.0042 = {
+	type = character_event
+	title = TFE_flavour_events.0039.t
+	desc = TFE_flavour_events.0042.desc
+	theme = skull
+	override_background = {
+		reference = market
+	}
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	right_portrait = {
+		character = cp:councillor_martial
+		animation = worry
+	}
+	trigger = {
+		title:c_byzantion.holder.capital_province = {
+			any_province_epidemic = {
+				THIS = global_var:justinian_plague_scope
+			}
+		}
+	}
+	option = {
+		name = TFE_flavour_events.0042.a
+		add_prestige = -400
+		title:c_byzantion = {
+			add_county_modifier = {
+				modifier = plague_garrisons_reduced
+				years = 3
+			}
+		}
+		
+			change_global_variable = {
+				name = plague_event_counter
+				add = { 11000 15000 }
+			}
+		
+	}
+}
+
+#No longer used
+TFE_flavour_events.0043 = {
+	type = character_event
+	title = TFE_flavour_events.0039.t
+	desc = TFE_flavour_events.0043.desc
+	theme = skull
+	override_background = {
+		reference = council_chamber
+	}
+	left_portrait = {
+		character = root
+		animation = grief
+	}
+	right_portrait = {
+		character = scope:plague_kill
+		animation = fear
+	}
+	trigger = {
+		title:c_byzantion.holder.capital_province = {
+			any_province_epidemic = {
+				THIS = global_var:justinian_plague_scope
+			}
+		}
+	}
+	immediate = {
+		random_courtier_or_guest = {
+			limit = {
+				is_adult = yes
+				is_imprisoned = no
+				is_male = yes #not sexism I just don't want to do GetHeShe every time 
+			}
+			save_scope_as = plague_kill
+			add_trait = bubonic_plague
+			death = {
+				death_reason = sickness
+			}
+		}
+	}
+	option = {
+		name = TFE_flavour_events.0043.a
+		
+			change_global_variable = {
+				name = plague_event_counter
+				add = { 11000 13000 }
+			}
+		
+	}
+}
+
+TFE_flavour_events.0044 = {
+	type = character_event
+	title = TFE_flavour_events.0039.t
+	desc = TFE_flavour_events.0044.desc
+	theme = skull
+	override_background = {
+		reference = physicians_study
+	}
+	left_portrait = {
+		character = root
+		animation = ecstasy
+	}
+	trigger = {
+		title:c_byzantion.holder.capital_province = {
+			any_province_epidemic = {
+				THIS = global_var:justinian_plague_scope
+			}
+		}
+	}
+	option = {
+		name = TFE_flavour_events.0044.a
+		title:c_byzantion = {
+			add_county_modifier = {
+				modifier = plague_excellent_physician
+				years = 3
+			}
+		}
+		
+			change_global_variable = {
+				name = plague_event_counter
+				add = { 5000 10000 }
+			}
+		
+	}
+}
+
+TFE_flavour_events.0045 = {
+	type = character_event
+	title = TFE_flavour_events.0039.t
+	desc = TFE_flavour_events.0045.desc
+	theme = skull
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = rage
+	}
+	trigger = {
+		title:c_byzantion.holder.capital_province = {
+			any_province_epidemic = {
+				THIS = global_var:justinian_plague_scope
+			}
+		}
+	}
+	option = {
+		name = TFE_flavour_events.0045.a
+		title:c_byzantion = {
+			add_county_modifier = {
+				modifier = plague_riots
+				years = 3
+			}
+		}
+		
+			change_global_variable = {
+				name = plague_event_counter
+				add = { 10000 13000 }
+			}
+		
+	}
+}
+
+TFE_flavour_events.0046 = {
+	type = character_event
+	title = TFE_flavour_events.0039.t
+	desc = TFE_flavour_events.0046.desc
+	theme = skull
+	override_background = {
+		reference = physicians_study
+	}
+	left_portrait = {
+		character = root
+		animation = rage
+	}
+	trigger = {
+		title:c_byzantion.holder.capital_province = {
+			any_province_epidemic = {
+				THIS = global_var:justinian_plague_scope
+			}
+		}
+	}
+	option = {
+		name = TFE_flavour_events.0046.a
+		title:c_byzantion = {
+			add_county_modifier = {
+				modifier = plague_incompetent_physician
+				years = 3
+			}
+		}
+		
+			change_global_variable = {
+				name = plague_event_counter
+				add = { 16000 20000 }
+			}
+		
+	}
+}
+
+TFE_flavour_events.0047 = {
+	type = character_event
+	title = TFE_flavour_events.0039.t
+	desc = TFE_flavour_events.0047.desc
+	theme = skull
+	override_background = {
+		reference = tavern
+	}
+	left_portrait = {
+		character = root
+		animation = toast_goblet
+	}
+	trigger = {
+		title:c_byzantion.holder.capital_province = {
+			any_province_epidemic = {
+				THIS = global_var:justinian_plague_scope
+			}
+		}
+	}
+	option = {
+		name = TFE_flavour_events.0047.a
+		add_prestige = 200
+		
+			change_global_variable = {
+				name = plague_event_counter
+				add = { 13000 16000 }
+			}
+		
+	}
+	option = {
+		name = TFE_flavour_events.0047.b
+		add_prestige = -200
+		
+			change_global_variable = {
+				name = plague_event_counter
+				add = { 6000 9000 }
+			}
+		
+	}
+}
+
+TFE_flavour_events.0048 = {
+	type = character_event
+	title = TFE_flavour_events.0039.t
+	desc = TFE_flavour_events.0048.desc
+	theme = skull
+	override_background = {
+		reference = docks
+	}
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	trigger = {
+		title:c_byzantion.holder.capital_province = {
+			any_province_epidemic = {
+				THIS = global_var:justinian_plague_scope
+			}
+		}
+	}
+	option = {
+		name = TFE_flavour_events.0048.a
+		title:c_byzantion = {
+			add_county_modifier = {
+				modifier = plague_supplies_reduced
+				years = 3
+			}
+		}
+		
+			change_global_variable = {
+				name = plague_event_counter
+				add = { 10000 15000 }
+			}
+		
+	}
+}
+
+TFE_flavour_events.0049 = {
+	type = character_event
+	title = TFE_flavour_events.0039.t
+	desc = TFE_flavour_events.0049.desc
+	theme = skull
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	trigger = {
+		title:c_byzantion.holder.capital_province = {
+			any_province_epidemic = {
+				THIS = global_var:justinian_plague_scope
+			}
+		}
+	}
+	option = {
+		name = TFE_flavour_events.0049.a
+		title:c_byzantion = {
+			add_county_modifier = {
+				modifier = plague_curfew
+				years = 7
+			}
+		}
+		
+			change_global_variable = {
+				name = plague_event_counter
+				add = { 1000 6000 }
+			}
+		
+	}
+}
+
+TFE_flavour_events.0050 = {
+	type = character_event
+	title = TFE_flavour_events.0039.t
+	desc = TFE_flavour_events.0050.desc
+	theme = skull
+	override_background = {
+		reference = docks
+	}
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	
+	option = {
+		name = TFE_flavour_events.0050.a
+		add_prestige = 250
+		title:c_byzantion = {
+			remove_all_county_modifier_instances = plague_priests_healing
+			remove_all_county_modifier_instances = plague_excellent_physician
+			remove_all_county_modifier_instances = plague_incompetent_physician
+			remove_all_county_modifier_instances = plague_trade_closed
+			remove_all_county_modifier_instances = plague_garrisons_reduced
+			remove_all_county_modifier_instances = plague_riots
+			remove_all_county_modifier_instances = plague_supplies_reduced
+			remove_all_county_modifier_instances = plague_curfew
+
+			if = {
+				limit = {
+					global_var:plague_event_counter <= 75000
+				}
+				title:c_byzantion = {
+					add_county_modifier = {
+						modifier = plague_best_ending
+						years = 50
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					global_var:plague_event_counter <= 80000
+				}
+				title:c_byzantion = {
+					add_county_modifier = {
+						modifier = plague_mid_ending
+						years = 50
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					global_var:plague_event_counter <= 90000
+				}
+				title:c_byzantion = {
+					add_county_modifier = {
+						modifier = plague_bad_ending
+						years = 50
+					}
+				}
+			}
+			else = {
+				title:c_byzantion = {
+					add_county_modifier = {
+						modifier = plague_worst_ending
+						years = 50
+					}
+				}
+			}
+		}
+	}
+}
+
+TFE_flavour_events.0051 = {
+	hidden = yes
+	scope = none
+
+	immediate = {
+		if = {
+			limit = {
+				character:vandals_013 = {
+					is_alive = yes
+					is_landed = yes
+					is_vassal_or_below_of = scope:defender
+				}
+			}
+			scope:war = {
+				add_defender = character:vandals_013
+			}
+		}
+		if = {
+			limit = {
+				character:vandals_146 = {
+					is_alive = yes
+					is_landed = yes
+					is_vassal_or_below_of = scope:defender
+				}
+			}
+			scope:war = {
+				add_attacker = character:vandals_146
+			}
+		}
+		
+	}
+}
+
+TFE_flavour_events.0052 = {
+	type = character_event
+	title = TFE_flavour_events.0052.t
+	desc = TFE_flavour_events.0052.desc
+	theme = realm
+
+	right_portrait = {
+		character = title:c_torda.holder
+		animation = personality_greedy
+	}
+	immediate = {
+		title:b_torda.title_province = {
+			add_special_building_slot = turda_mines_01
+		}
+	}
+	option = {
+		name = TFE_flavour_events.0052.a
+		every_player = {
+			limit = {
+				NOT = { has_title = title:c_torda }
+			}
+			trigger_event = TFE_flavour_events.0053
+		}
+	}
+}
+
+TFE_flavour_events.0053 = {
+	type = character_event
+	title = TFE_flavour_events.0052.t
+	desc = TFE_flavour_events.0052.desc
+	theme = realm
+
+	right_portrait = {
+		character = title:c_torda.holder
+		animation = personality_greedy
+	}
+	option = {
+		name = TFE_flavour_events.0052.a
+	}
+}
+
+TFE_flavour_events.0054 = {
+	type = character_event
+	title = TFE_flavour_events.0054.t
+	desc = TFE_flavour_events.0054.desc
+	theme = realm
+
+	right_portrait = {
+		character = title:c_dalabergslagen.holder
+		animation = personality_greedy
+	}
+	immediate = {
+		title:b_falene.title_province = {
+			add_special_building_slot = falun_mines_01
+		}
+	}
+	option = {
+		name = TFE_flavour_events.0054.a
+		every_player = {
+			limit = {
+				NOT = { has_title = title:c_dalabergslagen }
+			}
+			trigger_event = TFE_flavour_events.0055
+		}
+	}
+}
+
+TFE_flavour_events.0055 = {
+	type = character_event
+	title = TFE_flavour_events.0055.t
+	desc = TFE_flavour_events.0055.desc
+	theme = realm
+
+	right_portrait = {
+		character = title:c_dalabergslagen.holder
+		animation = personality_greedy
+	}
+	option = {
+		name = TFE_flavour_events.0055.a
+	}
+}

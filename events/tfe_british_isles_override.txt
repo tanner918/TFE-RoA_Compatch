@@ -1,0 +1,40 @@
+﻿namespace = british_isles
+
+british_isles.1061 = {
+	type = character_event
+	title = british_isles.1061.t
+	desc = british_isles.1061.desc
+	type = character_event
+	window = fullscreen_event
+	theme = crown
+	left_portrait = {
+		character = scope:founder
+		animation = personality_honorable
+	}
+	right_portrait = {
+		character = scope:england
+		animation = rage
+	}
+	override_background = { reference = farmland }
+
+	immediate = {
+		play_music_cue = "mx_cue_peace_ensues"
+		# Show the effects playing out elsewhere.
+		formalise_the_daneland_effect = yes
+	}
+
+	# We shall find out together.
+	option = {
+		name = british_isles.1061.a
+
+		# Gain a hefty chunk of prestige.
+		add_prestige = major_prestige_gain
+
+		# No stress for a simply notification event.
+		ai_chance = {
+			# No need for complex AI chance for single-option event.
+			base = 100
+		}
+	}
+}
+

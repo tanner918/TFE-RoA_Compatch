@@ -1,0 +1,382 @@
+﻿# Polans
+polans_61 = {  # Lech
+	name = "Lech"
+	dynasty = 9124
+	culture = polish
+	religion = slavic_pagan
+	father = polans_51
+	trait = brave
+	trait = adventurer
+	515.1.24 = {
+		birth = yes
+	}
+	581.9.19 = {
+		death = yes
+	}
+}
+
+polans_71 = {
+	name = "Wojuta"
+	dynasty = 9124
+	culture = polish
+	religion = slavic_pagan
+	father = polans_61
+	543.2.22 = {
+		birth = yes
+	}
+	601.10.22 = {
+		death = yes
+	}
+}
+
+polans_81 = {
+	name = "Piskla"
+	dynasty = 9124
+	culture = polish
+	religion = slavic_pagan
+	father = polans_71
+	572.5.19 = {
+		birth = yes
+	}
+	607.12.2 = {
+		death = yes
+	}
+}
+
+polans_91 = {
+	name = "Z_elibrat"
+	dynasty = 9124
+	culture = polish
+	religion = slavic_pagan
+	father = polans_81
+	595.10.3 = {
+		birth = yes
+	}
+	635.6.12 = {
+		death = yes
+	}
+}
+
+polans_101 = {
+	name = "SzczE_sny"
+	dynasty = 9124
+	culture = polish
+	religion = slavic_pagan
+	father = polans_91
+	632.10.24 = {
+		birth = yes
+	}
+	676.11.30 = {
+		death = yes
+	}
+}
+
+polans_111 = {
+	name = "Wysz"
+	dynasty = 9124
+	culture = polish
+	religion = slavic_pagan
+	father = polans_101
+	670.6.20 = {
+		birth = yes
+	}
+	725.12.8 = {
+		death = yes
+	}
+}
+
+polans_121 = {
+	name = "dynn_ChoS_cisko"  # ChoÅ›cisko, Piast's father
+	dynasty = 9124
+	culture = polish
+	religion = slavic_pagan
+	father = polans_111
+	704.7.24 = {
+		birth = yes
+	}
+	744.2.4 = {
+		death = yes
+	}
+}
+
+polans_131 = {  # Piast the Wheelwright
+	name = "Piast"
+	dynasty = 699  # Piast
+	culture = polish
+	religion = slavic_pagan
+	father = polans_121
+
+	martial = 5
+	diplomacy = 6
+	intrigue = 3
+	stewardship = 8
+	trait = honest
+	trait = just
+	trait = education_stewardship_2
+
+	740.7.27 = {
+		birth = yes
+		give_nickname = nick_the_wheelwright
+	}
+	744.2.4 = {
+		capital = c_poznanska
+	}
+	760.1.1 = {
+		add_spouse = polans_132
+	}
+	861.6.3 = {
+		death = yes
+	}
+}
+
+polans_132 = {  # Rzepicha, Piast's wife
+	name = "Rzepicha"
+	female = yes
+	religion = "slavic_pagan"
+	culture = "polish"
+	744.4.22 = {
+		birth = yes
+	}
+	823.5.21 = {
+		death = yes
+	}
+}
+
+polans_141 = {  # Siemowit, Piast's son
+	name = "Siemowit"
+	dynasty = 699  # Piast
+	culture = polish
+	religion = slavic_pagan
+	father = polans_131
+	mother = polans_132
+
+	martial = 6
+	diplomacy = 6
+	intrigue = 4
+	stewardship = 6
+	trait = brave
+	trait = honest
+	trait = education_martial_2
+
+	767.12.10 = {
+		birth = yes
+	}
+	834.10.9 = {
+		birth = yes
+	}
+}
+
+# Goplans
+# Kujawy
+goplans_51 = {
+	name = "Domawuj"
+	dynasty = 2001007  # z Goplan
+	culture = polish
+	religion = slavic_pagan
+	father = goplans_41
+	495.3.26 = {
+		birth = yes
+	}
+	536.8.25 = {
+		death = yes
+	}
+}
+
+goplans_61 = {
+	name = "Dobrogost"
+	dynasty = 2001007  # z Goplan
+	culture = polish
+	religion = slavic_pagan
+	father = goplans_51
+	526.11.16 = {
+		birth = yes
+	}
+	562.12.21 = {
+		death = yes
+	}
+}
+
+goplans_71 = {
+	name = "MaL_owuj"
+	dynasty = 2001007  # z Goplan
+	culture = polish
+	religion = slavic_pagan
+	father = goplans_61
+	557.10.25 = {
+		birth = yes
+	}
+	614.7.30 = {
+		death = yes
+	}
+}
+
+goplans_81 = {
+	name = "MirosL_aw"
+	dynasty = 2001007  # z Goplan
+	culture = polish
+	religion = slavic_pagan
+	father = goplans_71
+	597.11.26 = {
+		birth = yes
+	}
+	643.7.16 = {
+		death = yes
+	}
+}
+
+goplans_91 = {  # Leszko I
+	name = "Leszko"
+	dynasty = 2001007  # z Goplan
+	culture = polish
+	religion = slavic_pagan
+	father = goplans_81
+	628.11.28 = {
+		birth = yes
+	}
+	698.10.19 = {
+		death = yes
+	}
+}
+
+goplans_101 = {  # Leszko II, first Popielid
+	name = "Leszko"
+	dynasty = dynasty_popielid  # Popielid
+	culture = polish
+	religion = slavic_pagan
+	father = goplans_91
+	661.10.5 = {
+		birth = yes
+	}
+	719.8.8 = {
+		death = yes
+	}
+}
+
+goplans_111 = {  # Leszko III
+	name = "Leszko"
+	dynasty = dynasty_popielid  # Popielid
+	culture = polish
+	religion = slavic_pagan
+	father = goplans_101
+	686.9.20 = {
+		birth = yes
+	}
+	752.5.19 = {
+		death = yes
+	}
+}
+
+goplans_121 = {  # Popiel I
+	name = "Popiel"
+	dynasty = dynasty_popielid  # Popielid
+	culture = polish
+	religion = slavic_pagan
+	father = goplans_111
+	713.5.11 = {
+		birth = yes
+	}
+	762.8.21 = {
+		death = yes
+	}
+}
+
+goplans_131 = {  # Popiel II, last Popielid
+	name = "Popiel"
+	dynasty = dynasty_popielid  # Popielid
+	culture = polish
+	religion = slavic_pagan
+	father = goplans_121
+	746.9.23 = {
+		birth = yes
+	}
+	767.1.1 = {
+		add_spouse = goplans_132
+	}
+	807.8.31 = {
+		death = yes
+	}
+}
+
+goplans_132 = {  # Unnamed German princess
+	name = "Heilika"
+	female = yes
+	culture = bavarian
+	religion = chalcedonian
+	751.4.13 = {
+		birth = yes
+	}
+	800.12.11 = {
+		death = yes
+	}
+}
+
+# ÅÄ™czyca
+goplans_52 = {
+	name = "Lestko"
+	dynasty = 2001008  # z ÅÄ™czycan
+	culture = polish
+	religion = slavic_pagan
+	father = goplans_42
+	485.4.7 = {
+		birth = yes
+	}
+	540.5.3 = {
+		death = yes
+	}
+}
+
+goplans_62 = {
+	name = "Boz"
+	dynasty = 2001008  # z ÅÄ™czycan
+	culture = polish
+	religion = slavic_pagan
+	father = goplans_52
+	516.2.23 = {
+		birth = yes
+	}
+	575.12.15 = {
+		death = yes
+	}
+}
+
+goplans_72 = {
+	name = "Yaroslav"
+	dynasty = 2001008  # z ÅÄ™czycan
+	culture = polish
+	religion = slavic_pagan
+	father = goplans_62
+	546.7.12 = {
+		birth = yes
+	}
+	584.7.10 = {
+		death = yes
+	}
+}
+
+goplans_82 = {
+	name = "Stanislav"
+	dynasty = 2001008  # z ÅÄ™czycan
+	culture = polish
+	religion = slavic_pagan
+	father = goplans_72
+	573.10.31 = {
+		birth = yes
+	}
+	611.4.7 = {
+		death = yes
+	}
+}
+
+goplans_92 = {
+	name = "Lestko"
+	dynasty = 2001008  # z ÅÄ™czycan
+	culture = polish
+	religion = slavic_pagan
+	father = goplans_82
+	608.5.13 = {
+		birth = yes
+	}
+	643.7.16 = {
+		death = yes
+	}
+}

@@ -1,0 +1,3103 @@
+﻿namespace = TFE_chariot_events
+
+#Results counter -- Add 1 for Green win, subtract 1 for Blue win
+
+TFE_chariot_events.0001 = { # Start
+	type = activity_event
+	title = TFE_chariot_events.0001.t
+	desc = TFE_chariot_events.0001.desc
+	
+	theme = war
+	override_background = {
+		reference = circuit
+	}
+	left_portrait = {
+		character = root
+		animation = ecstasy
+	}
+
+	immediate = {
+		root = {
+			save_scope_as = person
+		}
+	}
+	
+	option = { #Blue
+		name = TFE_chariot_events.0001.a
+		if = {
+			limit = {
+				has_trait = blue_support
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = green_support
+			}
+			remove_trait = green_support
+			add_trait = blue_support
+			add_prestige = minor_prestige_loss
+			remove_short_term_gold = tiny_gold_value
+			TFE_favor_the_blues_effect = yes
+		}
+		else = {
+			add_trait = blue_support
+			add_prestige = minor_prestige_gain
+			remove_short_term_gold = tiny_gold_value
+			TFE_favor_the_blues_effect = yes
+		}
+		ai_chance = {
+			base = 1
+			modifier = {
+				add = 50
+				has_trait = blue_support
+			}
+		}
+	}
+	option = { #Green
+		name = TFE_chariot_events.0001.b
+		if = {
+			limit = {
+				has_trait = green_support
+			}
+		}
+		else_if = {
+			limit = {
+				has_trait = blue_support
+			}
+			remove_trait = blue_support
+			add_trait = green_support
+			add_prestige = minor_prestige_loss
+			remove_short_term_gold = tiny_gold_value
+			TFE_favor_the_greens_effect = yes
+		}
+		else = {
+			add_trait = green_support
+			add_prestige = minor_prestige_gain
+			remove_short_term_gold = tiny_gold_value
+			TFE_favor_the_greens_effect = yes
+		}
+		ai_chance = {
+			base = 1
+			modifier = {
+				add = 50
+				has_trait = green_support
+			}
+		}
+	}
+	option = { #Neutral
+		name = TFE_chariot_events.0001.c
+		if = {
+			limit = {
+				has_trait = blue_support
+			}
+			remove_trait = blue_support
+		}
+		if = {
+			limit = {
+				has_trait = green_support
+			}
+			remove_trait = green_support
+		}
+		ai_chance = {
+			base = 1
+			#modifier = {
+			#	add = 50
+			#	has_trait = blue_support
+			#}
+		}
+	}
+}
+
+TFE_chariot_events.0002 = { #Regular Race
+	type = activity_event
+	title = TFE_chariot_events.0002.t
+	desc = TFE_chariot_events.0002.desc
+	
+	theme = war
+	override_background = {
+		reference = circuit
+	}
+	left_portrait = {
+		character = scope:winner
+		animation = ecstasy
+	}
+	right_portrait = {
+		character = scope:loser
+		animation = sadness
+	}
+
+	immediate = {
+		TFE_chariot_race_prowess = yes
+	}
+	option = {
+		name = TFE_chariot_events.0002.a
+		trigger = {
+			has_trait = blue_support
+			local_var:win_team = flag:blue
+		}
+		add_prestige = minor_prestige_gain
+		stress_impact = {
+			base = minor_stress_impact_loss
+			ambitious = minor_stress_impact_loss
+		}
+		ai_chance = {
+			base = 100
+			#ai_value_modifier = {
+			#	ai_honor = -1
+			#}
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0002.b
+		trigger = {
+			has_trait = blue_support
+			local_var:win_team = flag:green
+		}
+		add_prestige = minor_prestige_loss
+		stress_impact = {
+			base = minor_stress_impact_gain
+			ambitious = minor_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			#ai_value_modifier = {
+			#	ai_honor = -1
+			#}
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0002.c
+		trigger = {
+			has_trait = green_support
+			local_var:win_team = flag:green
+		}
+		add_prestige = minor_prestige_gain
+		stress_impact = {
+			base = minor_stress_impact_loss
+			ambitious = minor_stress_impact_loss
+		}
+		ai_chance = {
+			base = 100
+			#ai_value_modifier = {
+			#	ai_honor = -1
+			#}
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0002.d
+		trigger = {
+			has_trait = green_support
+			local_var:win_team = flag:blue
+		}
+		add_prestige = minor_prestige_loss
+		stress_impact = {
+			base = minor_stress_impact_gain
+			ambitious = minor_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			#ai_value_modifier = {
+			#	ai_honor = -1
+			#}
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0002.e
+		trigger = {
+			NOT = {
+				OR = {
+					has_trait = green_support
+					has_trait = blue_support
+				}
+			}
+		}
+		stress_impact = {
+			base = miniscule_stress_impact_loss
+		}
+		ai_chance = {
+			base = 100
+			#ai_value_modifier = {
+			#	ai_honor = -1
+			#}
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0002.f
+		trigger = {
+			AND = {
+				root = scope:host
+				OR = {
+					AND = {
+						has_trait = blue_support
+						local_var:win_team = flag:green
+					}
+					has_trait = arbitrary
+				}
+			}
+		}
+		add_prestige = medium_prestige_loss
+		custom_tooltip = anger_the_greens_tt
+		TFE_favor_the_blues_unfair_effect = yes
+		TFE_change_win_to_blue_effect = yes
+		stress_impact = {
+			base = major_stress_impact_gain
+			arbitrary = medium_stress_impact_loss
+		}
+		ai_chance = {
+			base = 25
+			ai_value_modifier = {
+				ai_honor = -1
+			}
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0002.g
+		trigger = {
+			AND = {
+				root = scope:host
+				OR = {
+					AND = {
+						has_trait = green_support
+						local_var:win_team = flag:blue
+					}
+					has_trait = arbitrary
+				}
+			}
+		}
+		add_prestige = medium_prestige_loss
+		custom_tooltip = anger_the_blues_tt
+		TFE_favor_the_greens_unfair_effect = yes
+		TFE_change_win_to_green_effect = yes
+		stress_impact = {
+			base = major_stress_impact_gain
+			arbitrary = medium_stress_impact_loss
+		}
+		ai_chance = {
+			base = 25
+			ai_value_modifier = {
+				ai_honor = -1
+			}
+		}
+	}
+}
+
+TFE_chariot_events.0003 = { #Cheating -- Sabotage!
+	type = activity_event
+	title = TFE_chariot_events.0003.t
+	desc = TFE_chariot_events.0003.desc
+	
+	theme = war
+	override_background = {
+		reference = circuit
+	}
+	left_portrait = {
+		character = scope:winner
+		animation = schadenfreude
+	}
+	right_portrait = {
+		character = scope:loser
+		animation = anger
+	}
+
+	immediate = {
+		TFE_chariot_race_intrigue = yes
+	}
+	option = {
+		name = TFE_chariot_events.0003.a
+		trigger = {
+			has_trait = blue_support
+			local_var:win_team = flag:blue
+		}
+		add_prestige = minor_prestige_gain
+		if = {
+			limit = {
+				root = scope:host
+			}
+			custom_tooltip = anger_the_greens_tt
+			TFE_favor_the_blues_unfair_effect = yes
+		}
+		stress_impact = {
+			just = medium_stress_impact_gain
+			arbitrary = medium_stress_impact_loss
+			diligent = medium_stress_impact_gain
+			lazy = medium_stress_impact_loss
+		}
+		ai_chance = {
+			base = 25
+			ai_value_modifier = {
+				ai_honor = -0.25
+				ai_energy = -0.25
+			}
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0003.b
+		trigger = {
+			has_trait = green_support
+			local_var:win_team = flag:green
+		}
+		add_prestige = minor_prestige_gain
+		if = {
+			limit = {
+				root = scope:host
+			}
+			custom_tooltip = anger_the_blues_tt
+			TFE_favor_the_greens_unfair_effect = yes
+		}
+		stress_impact = {
+			just = medium_stress_impact_gain
+			arbitrary = medium_stress_impact_loss
+			diligent = medium_stress_impact_gain
+			lazy = medium_stress_impact_loss
+		}
+		ai_chance = {
+			base = 25
+			ai_value_modifier = {
+				ai_honor = -0.25
+				ai_energy = -0.25
+			}
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0003.c
+		trigger = {
+			OR = {
+				AND = {
+					has_trait = blue_support
+					local_var:win_team = flag:green
+				}
+				AND = {
+					has_trait = green_support
+					local_var:win_team = flag:blue
+				}
+				AND = {
+					NOT = { has_trait = blue_support }
+					NOT = { has_trait = green_support }
+				}
+				OR = {
+					has_trait = just
+					has_trait = diligent
+				}
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						has_trait = blue_support
+						local_var:win_team = flag:green
+					}
+					AND = {
+						has_trait = green_support
+						local_var:win_team = flag:blue
+					}
+				}
+			}
+			duel = { #Success
+				skill = intrigue
+				value = scope:winner.intrigue
+				40 = {
+					compare_modifier = {
+						value = scope:duel_value
+						multiplier = 3.5
+					}
+					add_prestige = medium_prestige_gain
+					custom_tooltip = chariot_investigation_success_tt
+					if = {
+						limit = {
+							local_var:win_team = flag:blue
+						}
+						TFE_change_win_to_green_effect = yes
+					}
+					else_if = {
+						limit = {
+							local_var:win_team = flag:green
+						}
+						TFE_change_win_to_blue_effect = yes
+					}
+				}
+				60 = {
+					compare_modifier = {
+						value = scope:duel_value
+						multiplier = -2
+					}
+					add_prestige = medium_prestige_loss
+					custom_tooltip = chariot_investigation_failure_tt
+				}
+			}
+		}
+		else = {
+			duel = { #Success
+				skill = intrigue
+				value = scope:winner.intrigue
+				40 = {
+					compare_modifier = {
+						value = scope:duel_value
+						multiplier = 3.5
+					}
+					add_prestige = minor_prestige_gain
+					custom_tooltip = chariot_investigation_success_tt
+					if = {
+						limit = {
+						local_var:win_team = flag:blue
+						}
+						TFE_change_win_to_green_effect = yes
+					}
+					else_if = {
+						limit = {
+							local_var:win_team = flag:green
+						}
+						TFE_change_win_to_blue_effect = yes
+					}
+				}
+				60 = {
+					compare_modifier = {
+						value = scope:duel_value
+						multiplier = -2
+					}
+					custom_tooltip = chariot_investigation_failure_tt
+				}
+			}
+		}
+		stress_impact = {
+			base = medium_stress_impact_gain
+			just = minor_stress_impact_loss
+			diligent = minor_stress_impact_loss
+			lazy = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 10
+			ai_value_modifier = {
+				ai_honor = 0.5
+				ai_energy = 0.25
+			}
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0003.d
+		trigger = {
+			AND = {
+				root = scope:host
+				OR = {
+					AND = {
+						has_trait = blue_support
+						local_var:win_team = flag:green
+					}
+					AND = {
+						has_trait = green_support
+						local_var:win_team = flag:blue
+					}
+					has_trait = arbitrary
+				}
+			}
+		}
+		add_prestige = medium_prestige_loss
+		if = {
+			limit = {
+				local_var:win_team = flag:green
+			}
+			custom_tooltip = anger_the_greens_tt
+			TFE_favor_the_blues_unfair_effect = yes
+			TFE_change_win_to_blue_effect = yes
+		}
+		else_if = {
+			limit = {
+				local_var:win_team = flag:blue
+			}
+			custom_tooltip = anger_the_blues_tt
+			TFE_favor_the_greens_unfair_effect = yes
+			TFE_change_win_to_green_effect = yes
+		}
+		stress_impact = {
+			base = major_stress_impact_gain
+			arbitrary = medium_stress_impact_loss
+		}
+		ai_chance = {
+			base = 5
+			ai_value_modifier = {
+				ai_honor = -1
+			}
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0003.e
+		trigger = {
+			OR = {
+				AND = {
+					has_trait = blue_support
+					local_var:win_team = flag:green
+				}
+				AND = {
+					has_trait = green_support
+					local_var:win_team = flag:blue
+				}
+				NOT = {
+					OR = {
+						has_trait = blue_support
+						has_trait = green_support
+					}
+				}
+			}
+		}
+		add_prestige = minor_prestige_gain
+		stress_impact = {
+			just = medium_stress_impact_gain
+			diligent = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 25
+			ai_value_modifier = {
+				ai_energy = -0.5
+			}
+		}
+	}
+}
+
+TFE_chariot_events.0004 = { #Cheating -- Bribery!
+	type = activity_event
+	title = TFE_chariot_events.0004.t
+	desc = TFE_chariot_events.0004.desc
+	
+	theme = war
+	override_background = {
+		reference = circuit
+	}
+	left_portrait = {
+		character = scope:winner
+		animation = schadenfreude
+	}
+	right_portrait = {
+		character = scope:loser
+		animation = personality_greedy
+	}
+
+	immediate = {
+		TFE_chariot_race_intrigue = yes
+	}
+	option = {
+		name = TFE_chariot_events.0004.a
+		trigger = {
+			has_trait = blue_support
+			local_var:win_team = flag:blue
+		}
+		add_prestige = minor_prestige_gain
+		if = {
+			limit = {
+				root = scope:host
+			}
+			custom_tooltip = anger_the_greens_tt
+			TFE_favor_the_blues_unfair_effect = yes
+		}
+		stress_impact = {
+			just = medium_stress_impact_gain
+			arbitrary = medium_stress_impact_loss
+			diligent = medium_stress_impact_gain
+			lazy = medium_stress_impact_loss
+		}
+		ai_chance = {
+			base = 25
+			ai_value_modifier = {
+				ai_honor = -0.25
+				ai_energy = -0.25
+			}
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0004.b
+		trigger = {
+			has_trait = green_support
+			local_var:win_team = flag:green
+		}
+		add_prestige = minor_prestige_gain
+		if = {
+			limit = {
+				root = scope:host
+			}
+			custom_tooltip = anger_the_blues_tt
+			TFE_favor_the_greens_unfair_effect = yes
+		}
+		stress_impact = {
+			just = medium_stress_impact_gain
+			arbitrary = medium_stress_impact_loss
+			diligent = medium_stress_impact_gain
+			lazy = medium_stress_impact_loss
+		}
+		ai_chance = {
+			base = 25
+			ai_value_modifier = {
+				ai_honor = -0.25
+				ai_energy = -0.25
+			}
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0004.c
+		trigger = {
+			OR = {
+				AND = {
+					has_trait = blue_support
+					local_var:win_team = flag:green
+				}
+				AND = {
+					has_trait = green_support
+					local_var:win_team = flag:blue
+				}
+				AND = {
+					NOT = { has_trait = blue_support }
+					NOT = { has_trait = green_support }
+				}
+				OR = {
+					has_trait = just
+					has_trait = diligent
+				}
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						has_trait = blue_support
+						local_var:win_team = flag:green
+					}
+					AND = {
+						has_trait = green_support
+						local_var:win_team = flag:blue
+					}
+				}
+			}
+			duel = { #Success
+				skill = intrigue
+				value = scope:winner.intrigue
+				40 = {
+					compare_modifier = {
+						value = scope:duel_value
+						multiplier = 3.5
+					}
+					add_prestige = medium_prestige_gain
+					custom_tooltip = chariot_investigation_success_tt
+					if = {
+						limit = {
+							local_var:win_team = flag:blue
+						}
+						TFE_change_win_to_green_effect = yes
+					}
+					else_if = {
+						limit = {
+							local_var:win_team = flag:green
+						}
+						TFE_change_win_to_blue_effect = yes
+					}
+				}
+				60 = {
+					compare_modifier = {
+						value = scope:duel_value
+						multiplier = -2
+					}
+					add_prestige = medium_prestige_loss
+					custom_tooltip = chariot_investigation_failure_tt
+				}
+			}
+		}
+		else = {
+			duel = { #Success
+				skill = intrigue
+				value = scope:winner.intrigue
+				40 = {
+					compare_modifier = {
+						value = scope:duel_value
+						multiplier = 3.5
+					}
+					add_prestige = minor_prestige_gain
+					custom_tooltip = chariot_investigation_success_tt
+					if = {
+						limit = {
+						local_var:win_team = flag:blue
+						}
+						TFE_change_win_to_green_effect = yes
+					}
+					else_if = {
+						limit = {
+							local_var:win_team = flag:green
+						}
+						TFE_change_win_to_blue_effect = yes
+					}
+				}
+				60 = {
+					compare_modifier = {
+						value = scope:duel_value
+						multiplier = -2
+					}
+					custom_tooltip = chariot_investigation_failure_tt
+				}
+			}
+		}
+		stress_impact = {
+			base = medium_stress_impact_gain
+			just = minor_stress_impact_loss
+			diligent = minor_stress_impact_loss
+			lazy = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 10
+			ai_value_modifier = {
+				ai_honor = 0.5
+				ai_energy = 0.25
+			}
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0004.d
+		trigger = {
+			AND = {
+				root = scope:host
+				OR = {
+					AND = {
+						has_trait = blue_support
+						local_var:win_team = flag:green
+					}
+					AND = {
+						has_trait = green_support
+						local_var:win_team = flag:blue
+					}
+					has_trait = arbitrary
+				}
+			}
+		}
+		add_prestige = medium_prestige_loss
+		if = {
+			limit = {
+				local_var:win_team = flag:green
+			}
+			custom_tooltip = anger_the_greens_tt
+			TFE_favor_the_blues_unfair_effect = yes
+			TFE_change_win_to_blue_effect = yes
+		}
+		else_if = {
+			limit = {
+				local_var:win_team = flag:blue
+			}
+			custom_tooltip = anger_the_blues_tt
+			TFE_favor_the_greens_unfair_effect = yes
+			TFE_change_win_to_green_effect = yes
+		}
+		stress_impact = {
+			base = major_stress_impact_gain
+			arbitrary = medium_stress_impact_loss
+		}
+		ai_chance = {
+			base = 5
+			ai_value_modifier = {
+				ai_honor = -1
+			}
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0004.e
+		trigger = {
+			OR = {
+				AND = {
+					has_trait = blue_support
+					local_var:win_team = flag:green
+				}
+				AND = {
+					has_trait = green_support
+					local_var:win_team = flag:blue
+				}
+				NOT = {
+					OR = {
+						has_trait = blue_support
+						has_trait = green_support
+					}
+				}
+			}
+		}
+		add_prestige = minor_prestige_gain
+		stress_impact = {
+			just = medium_stress_impact_gain
+			diligent = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 25
+			ai_value_modifier = {
+				ai_energy = -0.5
+			}
+		}
+	}
+}
+
+TFE_chariot_events.0005 = { #Good horse
+	type = activity_event
+	title = TFE_chariot_events.0005.t
+	desc = TFE_chariot_events.0005.desc
+	
+	theme = war
+	override_background = {
+		reference = circuit
+	}
+	left_portrait = {
+		character = scope:winner
+		animation = ecstasy
+	}
+	right_portrait = {
+		character = scope:loser
+		animation = sadness
+	}
+	immediate = {
+		TFE_chariot_race_prowess = yes
+		root = {
+			save_scope_as = person
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0005.a
+		duel = { #Success
+			skill = prowess
+			value = 12
+			50 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.5
+				}
+				add_prestige = minor_prestige_gain
+				scope:person = {
+					start_warhorse_story_cycle_effect = yes
+				}
+			}
+			50 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -2
+				}
+				scope:person = {
+					increase_wounds_no_death_effect = { REASON = duel }
+				}
+				add_prestige = minor_prestige_loss
+			}
+		}
+		stress_impact = {
+			craven = medium_stress_impact_gain
+			brave = medium_stress_impact_loss
+		}
+		ai_chance = {
+			base = 10
+			ai_value_modifier = {
+				ai_energy = 0.5
+				ai_boldness = 0.5
+			}
+			modifier = {
+				OR = {
+					has_trait = wounded_1
+					has_trait = wounded_2
+					has_trait = wounded_3
+					has_trait = maimed
+					has_trait = ill
+					has_trait = infirm
+				}
+				factor = 0
+			}
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0005.b
+		trigger = {
+			short_term_gold >= 150
+		}
+		remove_short_term_gold = 150
+		scope:person = {
+			start_warhorse_story_cycle_effect = yes
+		}
+		stress_impact = {
+			greedy = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 10
+			ai_value_modifier = {
+				ai_greed = -0.5
+			}
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0005.c
+		stress_impact = {
+			ambitious = medium_stress_impact_gain
+			brave = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 50
+			ai_value_modifier = {
+				ai_boldness = -0.25
+				ai_greed = 0.25
+				ai_energy = -0.25
+			}
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0005.d
+		trigger = {
+			scope:host = scope:person
+			is_chariots_races_very_good = yes
+		}
+		add_prestige = medium_prestige_gain
+		scope:person = {
+			start_warhorse_story_cycle_effect = yes
+		}
+		stress_impact = {
+			base = medium_stress_impact_loss
+			greedy = medium_stress_impact_loss
+		}
+		ai_chance = {
+			base = 500
+		}
+	}
+}
+
+TFE_chariot_events.0006 = { #Famous Charioteer
+	type = activity_event
+	title = TFE_chariot_events.0006.t
+	desc = TFE_chariot_events.0006.desc
+	
+	theme = war
+	override_background = {
+		reference = circuit
+	}
+	left_portrait = {
+		character = root
+		animation = ecstasy
+	}
+	right_portrait = {
+		character = scope:winner
+		animation = happiness
+	}
+	
+	immediate = {
+		create_character = {
+			employer = scope:host
+			template = old_gladiator
+			gender_female_chance = {
+				value = 0	
+				if = {
+					limit = { scope:host.culture = { has_cultural_parameter = martial_custom_male_only_combatant } }
+					add = 0
+				}
+				else_if = {
+					limit = { scope:host.culture = { has_cultural_parameter = martial_custom_female_only_combatant } }
+					add = 100
+				}
+				else = {
+					add = 50
+				}
+			}
+			faith = scope:host.faith
+			culture = scope:host.culture
+			dynasty = none
+			save_scope_as = winner
+		}
+		hidden_effect = {
+			scope:winner = {
+				random_list = {
+					50 = {
+						add_trait = shrewd
+					}
+					50 = {
+						add_trait = strong
+					}
+					10 = {
+						add_trait = shrewd
+						add_trait = strong
+					}
+				}
+			}
+		}
+	}
+	
+	# Give them the honours of a winner
+	option = {
+		name = TFE_chariot_events.0006.a
+		add_prestige = medium_prestige_gain
+		hidden_effect = { scope:winner = { death = { death_reason = death_vanished } } }
+		stress_impact = {
+			base = medium_stress_impact_loss
+		}
+		ai_chance = {
+			base = 500
+		}
+	}
+	
+	# They should join me!
+	option = {
+		name = TFE_chariot_events.0006.b
+		trigger = {
+			short_term_gold >= 100
+		}
+		remove_short_term_gold = 100
+		add_courtier = scope:winner
+		stress_impact = {
+			base = medium_stress_impact_loss
+			greedy = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+TFE_chariot_events.0007 = { #Chariot Crash
+	type = activity_event
+	title = TFE_chariot_events.0007.t
+	desc = {
+	first_valid = {
+		triggered_desc = {
+			trigger = {
+				NOT = {
+				OR = {
+					is_chariots_races_good = yes
+					is_chariots_races_very_good = yes
+				}
+				}
+			}
+			desc = TFE_chariot_events.0007.desc.bad
+		}
+		triggered_desc = {
+			trigger = {
+				OR = {
+					is_chariots_races_good = yes
+					is_chariots_races_very_good = yes
+				}
+			}
+			desc = TFE_chariot_events.0007.desc
+		}
+	}
+	}
+	
+	theme = war
+	override_background = {
+		reference = circuit
+	}
+	left_portrait = {
+		character = scope:host
+		animation = grief
+	}
+	right_portrait = {
+		character = scope:loser
+		animation = anger
+	}
+
+	immediate = {
+		TFE_chariot_race_prowess = yes
+		if = {
+			limit = {
+				root = scope:host
+			}
+			scope:loser = {
+				increase_wounds_no_death_effect = { REASON = trampled_by_horse }
+			}
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							scope:activity = { is_chariots_races_good = yes }
+							scope:activity = { is_chariots_races_very_good = yes }
+						}
+					}
+				}
+				scope:loser = {
+					increase_wounds_no_death_effect = { REASON = trampled_by_horse }
+				}
+				scope:activity = {
+					every_attending_character = {
+						random_list = {
+							1 = {
+								death = {
+									death_reason = death_trampled_by_horse
+								}
+							}
+							5 = {
+								increase_wounds_no_death_effect = { REASON = trampled_by_horse }
+								add_to_list = the_wounded
+							}
+							94 = {
+								
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0007.a
+		trigger = {
+			has_trait = blue_support
+			local_var:win_team = flag:blue
+			OR = {
+				scope:activity = { is_chariots_races_good = yes }
+				scope:activity = { is_chariots_races_very_good = yes }
+			}
+		}
+		add_prestige = minor_prestige_gain
+		stress_impact = {
+			base = minor_stress_impact_loss
+			ambitious = minor_stress_impact_loss
+		}
+		ai_chance = {
+			base = 100
+			#ai_value_modifier = {
+			#	ai_honor = -1
+			#}
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0007.b
+		trigger = {
+			has_trait = green_support
+			local_var:win_team = flag:green
+			OR = {
+				scope:activity = { is_chariots_races_good = yes }
+				scope:activity = { is_chariots_races_very_good = yes }
+			}
+		}
+		add_prestige = minor_prestige_gain
+		stress_impact = {
+			base = minor_stress_impact_loss
+			ambitious = minor_stress_impact_loss
+		}
+		ai_chance = {
+			base = 100
+			#ai_value_modifier = {
+			#	ai_honor = -1
+			#}
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0007.c
+		trigger = {
+			root = scope:host
+			OR = {
+				scope:activity = { is_chariots_races_good = yes }
+				scope:activity = { is_chariots_races_very_good = yes }
+			}
+			OR = {
+				AND = {
+					has_trait = blue_support
+					local_var:win_team = flag:green
+				}
+				AND = {
+					has_trait = green_support
+					local_var:win_team = flag:blue
+				}
+				has_trait = just
+				has_trait = diligent
+				NOT = {
+					OR = {
+						has_trait = blue_support
+						has_trait = green_support
+					}
+				}
+			}
+		}
+		if = {
+			limit = { 
+				local_var:win_team = flag:green
+			}
+			TFE_reset_green_win_effect = yes
+		}
+		else = {
+			TFE_reset_blue_win_effect = yes
+		}
+		add_prestige = minor_prestige_gain
+		stress_impact = {
+			just = minor_stress_impact_loss
+			diligent = minor_stress_impact_loss
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_honor = 0.5
+				ai_energy = 0.5
+			}
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0007.d
+		trigger = {
+			root = scope:host
+			short_term_gold >= major_gold_value
+			NOT = {
+				OR = {
+					scope:activity = { is_chariots_races_good = yes }
+					scope:activity = { is_chariots_races_very_good = yes }
+				}
+			}
+		}
+		add_prestige = minor_prestige_loss
+		remove_short_term_gold = major_gold_value
+		every_in_list = {
+			list = the_wounded
+			add_character_modifier = { modifier = safe_disease_treatment_success_low_modifier days = disease_treatment_short_duration }
+		}
+		stress_impact = {
+			base = medium_stress_impact_gain
+			greedy = major_stress_impact_gain
+			sadistic = major_stress_impact_gain
+			just = medium_stress_impact_loss
+			generous = medium_stress_impact_loss
+			compassionate = major_stress_impact_loss
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_honor = 1
+				ai_greed = -1
+			}
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0007.e
+		trigger = {
+			NOT = {
+				OR = {
+					scope:activity = { is_chariots_races_good = yes }
+					scope:activity = { is_chariots_races_very_good = yes }
+				}
+			}
+		}
+		if = {
+			limit = {
+				root = scope:host
+			}
+			add_prestige = major_prestige_loss
+			scope:activity.activity_location.county = {
+				add_county_modifier = { modifier = governance_1054_upset_peasants_modifier years = 10 }
+			}
+			TFE_upset_chariots_effect = yes
+		}
+		stress_impact = {
+			base = medium_stress_impact_gain
+			callous = medium_stress_impact_loss
+			sadistic = medium_stress_impact_loss
+			just = medium_stress_impact_gain
+			compassionate = major_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_honor = -0.5
+				ai_greed = 1
+			}
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0007.f
+		trigger = {
+			NOT = { root = scope:host }
+			short_term_gold >= medium_gold_value
+			NOT = {
+				OR = {
+					scope:activity = { is_chariots_races_good = yes }
+					scope:activity = { is_chariots_races_very_good = yes }
+				}
+			}
+		}
+		remove_short_term_gold = medium_gold_value
+		add_prestige = medium_prestige_value
+		every_in_list = {
+			list = the_wounded
+			add_character_modifier = { modifier = safe_disease_treatment_success_low_modifier days = disease_treatment_short_duration }
+		}
+		stress_impact = {
+			greedy = major_stress_impact_gain
+			sadistic = major_stress_impact_gain
+			just = medium_stress_impact_loss
+			generous = medium_stress_impact_loss
+			compassionate = major_stress_impact_loss
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_honor = 1
+				ai_greed = -1
+			}
+		}
+	}
+}
+
+TFE_chariot_events.0008 = { #Status Report
+	type = activity_event
+	title = TFE_chariot_events.0008.t
+	desc = {
+	first_valid = {
+		triggered_desc = {
+			trigger = {
+				scope:activity = {
+					exists = var:blue_win
+				}
+			}
+			desc = TFE_chariot_events.0008_blue.desc
+		}
+		triggered_desc = {
+			trigger = {
+				scope:activity = {
+					exists = var:green_win
+				}
+			}
+			desc = TFE_chariot_events.0008_green.desc
+		}
+		triggered_desc = {
+			trigger = {
+				OR = {
+					scope:activity = {
+						exists = var:tie
+					}
+					NOT = {
+						OR = {
+							scope:activity = {
+								exists = var:green_win
+							}
+							scope:activity = {
+								exists = var:blue_win
+							}
+						}
+					}
+				}
+			}
+			desc = TFE_chariot_events.0008_tie.desc
+		}
+		triggered_desc = {
+			trigger = {
+				scope:activity = {
+					exists = var:error
+				}
+			}
+			desc = TFE_chariot_events.0008_error.desc
+		}
+	}
+	}
+	
+	theme = feast_activity
+	left_portrait = {
+		character = root
+		animation = personality_just
+	}
+	immediate = {
+		scope:activity = {
+			save_scope_as = activity_now
+		}
+		if = {
+			limit = {
+				NOT = { exists = scope:activity.var:result_counter }
+			}
+			scope:activity = {
+				set_variable = {
+					name = result_counter
+					value = 0
+				}
+			}
+			scope:activity = {
+				set_variable = tie
+			}
+		}
+		else_if = {
+			limit = {
+				AND = {
+				exists = scope:activity.var:result_counter
+				scope:activity.var:result_counter <= -1
+				}
+			}
+			scope:activity = {
+				change_variable = {
+					name = result_counter
+					multiply = -1
+				}
+				set_variable = blue_win
+			}
+		}
+		else_if = {
+			limit = {
+				AND = {
+				exists = scope:activity.var:result_counter
+				scope:activity.var:result_counter >= 1
+				}
+			}
+			scope:activity = {
+				set_variable = green_win
+			}
+		}
+		else_if = {
+			limit = {
+				AND = {
+				exists = scope:activity.var:result_counter
+				scope:activity.var:result_counter = 0
+				}
+			}
+			scope:activity = {
+				set_variable = tie
+			}
+		}
+		else = {
+			scope:activity = {
+				set_variable = error
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+				exists = scope:activity.var:blue_anger
+				}
+			}
+			scope:activity = {
+				set_variable = {
+					name = blue_anger
+					value = 0
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+				exists = scope:activity.var:green_anger
+				}
+			}
+			scope:activity = {
+				set_variable = {
+					name = green_anger
+					value = 0
+				}
+			}
+		}
+		if = {
+			limit = {
+				scope:activity.var:result_counter > 10 #Since every guest gets the race events need this to cut down on win count
+			}
+			scope:activity = {
+				change_variable = {
+					name = result_counter
+					multiply = 0.1
+					round =  yes
+				}
+			}
+		}
+		scope:activity = {
+			set_variable = {
+				name = prestige_gain_races
+				value = scope:activity.var:result_counter
+			}
+		}
+		scope:activity = {
+			change_variable = {
+				name = prestige_gain_races
+				multiply = 100
+			}
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0008.a
+		trigger = {
+			exists = scope:activity.var:green_anger
+			exists = scope:activity.var:blue_anger
+			scope:activity.var:green_anger = 1
+			scope:activity.var:blue_anger = 0
+		}
+		custom_tooltip = the_teams_deliberate_tt
+		trigger_event = {
+			id = TFE_chariot_events.0010
+			days = 1
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0008.b
+		trigger = {
+			exists = scope:activity.var:green_anger
+			exists = scope:activity.var:blue_anger
+			scope:activity.var:green_anger = 0
+			scope:activity.var:blue_anger = 1
+		}
+		custom_tooltip = the_teams_deliberate_tt
+		trigger_event = {
+			id = TFE_chariot_events.0011
+			days = 1
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0008.c
+		trigger = {
+			exists = scope:activity.var:green_anger
+			exists = scope:activity.var:blue_anger
+			scope:activity.var:green_anger >= 2
+			scope:activity.var:blue_anger = 0
+		}
+		custom_tooltip = the_teams_deliberate_tt
+		trigger_event = {
+			id = TFE_chariot_events.0012
+			days = 1
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0008.d
+		trigger = {
+			exists = scope:activity.var:green_anger
+			exists = scope:activity.var:blue_anger
+			scope:activity.var:green_anger = 0
+			scope:activity.var:blue_anger >= 2
+		}
+		custom_tooltip = the_teams_deliberate_tt
+		trigger_event = {
+			id = TFE_chariot_events.0013
+			days = 1
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0008.e
+		trigger = {
+			exists = scope:activity.var:green_anger
+			exists = scope:activity.var:blue_anger
+			scope:activity.var:green_anger >= 1
+			scope:activity.var:blue_anger >= 1
+		}
+		custom_tooltip = the_teams_deliberate_tt
+		trigger_event = {
+			id = TFE_chariot_events.0014
+			days = 1
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0008.f
+		trigger = {
+			exists = scope:activity.var:green_anger
+			exists = scope:activity.var:blue_anger
+			scope:activity.var:green_anger = 0
+			scope:activity.var:blue_anger = 0
+		}
+		custom_tooltip = the_teams_deliberate_tt
+		trigger_event = {
+			id = TFE_chariot_events.0015
+			days = 1
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0008.g
+		trigger = {
+			OR = {
+			NOT = { exists = scope:activity.var:green_anger }
+			NOT = { exists = scope:activity.var:blue_anger }
+			}
+		}
+	}
+}
+
+TFE_chariot_events.0009 = { #modified Feast Start Event
+	type = activity_event
+	title = feast.2001.t
+	desc = {
+		first_valid = {
+			random_valid = {
+				triggered_desc = {
+					trigger = {
+						OR = {
+							has_trait = comfort_eater
+							has_trait = drunkard
+							has_trait = lifestyle_reveler
+							has_trait = gregarious
+							has_education_diplomacy_trigger = yes
+						}
+					}
+					desc = feast.2001.desc_gregarious
+				}
+				triggered_desc = {
+					trigger = {
+						OR = {
+							has_trait = shy
+							has_trait = reclusive
+							has_trait = paranoid
+							has_trait = craven
+						}
+					}
+					desc = feast.2001.desc_shy
+				}
+				triggered_desc = {
+					trigger = {
+						OR = {
+							has_trait = ambitious
+							has_trait = arrogant
+							has_trait = deceitful
+							has_trait = cynical
+							has_education_intrigue_trigger = yes
+						}
+					}
+					desc = feast.2001.desc_ambitious
+				}
+				triggered_desc = {
+					trigger = {
+						OR = {
+							has_trait = scholar
+							has_trait = theologian
+							has_education_learning_trigger = yes
+						}
+					}
+					desc = feast.2001.desc_nerd
+				}
+				triggered_desc = {
+					trigger = {
+						OR = {
+							has_trait = brave
+							has_trait = impatient
+							has_trait = wrathful
+							has_education_martial_trigger = yes
+						}
+					}
+					desc = feast.2001.desc_martial
+				}
+				triggered_desc = {
+					trigger = {
+						has_lustful_adjacent_trait_trigger = yes
+					}
+					desc = feast.2001.desc_lustful
+				}
+				desc = feast.2001.desc_fallback
+			}
+		}
+	}
+	theme = feast_activity
+	left_portrait = {
+		character = root
+		animation = toast_goblet
+	}
+
+	trigger = {
+		this = scope:activity.activity_host
+	}
+
+	immediate = {
+		play_music_cue = grandfeast_cue
+		if = {
+			limit = {
+				scope:activity = {
+					any_attending_character = {
+						is_spouse_of = root 
+						is_healthy = yes
+					}
+				}
+			}
+			scope:activity = {
+				random_attending_character = {
+					limit = {
+						is_spouse_of = root
+						is_healthy = yes
+					}
+					save_scope_as = my_spouse
+				}
+			}
+		}
+	}
+
+	option = {
+		name = feast.2001.a
+		custom_tooltip = feast.2001.a.tt
+	}
+}
+
+TFE_chariot_events.0010 = { #Green Anger 1
+	type = activity_event
+	title = TFE_chariot_events.0010.t
+	desc = {
+	first_valid = {
+		triggered_desc = {
+			trigger = {
+				scope:activity = {
+					exists = var:blue_win
+				}
+			}
+			desc = TFE_chariot_events.0010_blue.desc
+		}
+		triggered_desc = {
+			trigger = {
+				scope:activity = {
+					exists = var:green_win
+				}
+			}
+			desc = TFE_chariot_events.0010_green.desc
+		}
+		triggered_desc = {
+			trigger = {
+				OR = {
+					scope:activity = {
+						exists = var:tie
+					}
+					NOT = {
+						OR = {
+							scope:activity = {
+								exists = var:green_win
+							}
+							scope:activity = {
+								exists = var:blue_win
+							}
+						}
+					}
+				}
+			}
+			desc = TFE_chariot_events.0010_tie.desc
+		}
+	}
+	}
+	
+	theme = feast_activity
+	left_portrait = {
+		character = root
+		animation = toast_goblet
+	}
+	right_portrait = {
+		character = scope:green_rep
+		animation = anger
+	}
+	immediate = {
+		scope:host.primary_title = {
+			random_in_list = {
+				variable = green_team
+				save_scope_as = green_rep
+			}
+		}
+		scope:host.primary_title = {
+			random_in_list = {
+				variable = blue_team
+				save_scope_as = blue_rep
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						has_trait = blue_support
+						scope:activity = {
+							exists = var:blue_win
+						}
+					}
+					AND = {
+						has_trait = green_support
+						scope:activity = {
+							exists = var:green_win
+						}
+					}
+				}
+			}
+			add_prestige = scope:activity.var:prestige_gain_races
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0010.a
+		trigger = {
+			scope:activity = {
+				exists = var:blue_win
+			}
+			OR = {
+				NOT = { has_trait = blue_support }
+				has_trait = arbitrary
+			}
+		}
+		if = {
+			limit = {
+				has_trait = blue_support
+			}
+			remove_trait = blue_support
+		}
+		add_prestige = medium_prestige_loss
+		custom_tooltip = anger_the_blues_tt
+		scope:host.primary_title = {
+			every_in_list = {
+				variable = blue_team
+				add_opinion = {
+					modifier = angry_opinion
+					target = scope:host
+					opinion = -15
+				}
+			}
+		}
+		random_list = {
+			50 = { 
+			
+			}
+			25 = {
+				scope:host = {
+					set_relation_rival = {
+						target = scope:blue_rep
+						reason = rival_grave_insult
+					}
+				}
+				scope:host.capital_county = {
+					change_county_control = -25
+					add_county_modifier = { modifier = upset_blues_modifier years = 3 }
+				}
+			}
+			25 = {
+				scope:host = {
+					set_relation_rival = {
+						target = scope:blue_rep
+						reason = rival_grave_insult
+					}
+				}
+			}
+		}
+		stress_impact = {
+			base = medium_stress_impact_gain
+			just = medium_stress_impact_gain
+			arbitrary = medium_stress_impact_loss
+		}
+		ai_chance = {
+			base = 25
+			ai_value_modifier = {
+				ai_honor = -0.5
+			}
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0010.b
+		trigger = {
+			short_term_gold >= medium_gold_value
+		}
+		remove_short_term_gold = medium_gold_value
+		stress_impact = {
+			base = medium_stress_impact_gain
+			greedy = medium_stress_impact_gain
+			brave = minor_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_greed = -0.5
+			}
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0010.c
+		if = {
+			limit = {
+				has_trait = green_support
+			}
+			remove_trait = green_support
+		}
+		random_list = {
+			50 = { 
+			
+			}
+			50 = {
+				scope:host = {
+					set_relation_rival = {
+						target = scope:green_rep
+						reason = rival_grave_insult
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						has_trait = blue_support
+						scope:activity = {
+							exists = var:blue_win
+						}
+					}
+					AND = {
+						has_trait = green_support
+						scope:activity = {
+							exists = var:green_win
+						}
+					}
+				}
+			}
+			add_prestige = scope:activity.var:prestige_gain_races
+		}
+		scope:host.capital_county = {
+			change_county_control = -50
+			add_county_modifier = { modifier = upset_greens_modifier years = 5 }
+		}
+		custom_tooltip = anger_the_greens_tt
+		scope:host.primary_title = {
+			every_in_list = {
+				variable = green_team
+				add_opinion = {
+					modifier = angry_opinion
+					target = scope:host
+					opinion = -15
+				}
+			}
+		}
+		stress_impact = {
+			base = medium_stress_impact_gain
+			just = minor_stress_impact_loss
+			brave = minor_stress_impact_loss
+		}
+		ai_chance = {
+			base = 50
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0010.d
+		trigger = {
+			scope:activity = {
+				exists = var:tie
+			}
+		}
+		add_prestige = medium_prestige_loss
+		custom_tooltip = anger_the_blues_tt
+		scope:host.primary_title = {
+			every_in_list = {
+				variable = blue_team
+				add_opinion = {
+					modifier = angry_opinion
+					target = scope:host
+					opinion = -15
+				}
+			}
+		}
+		stress_impact = {
+			base = medium_stress_impact_gain
+			just = medium_stress_impact_gain
+			arbitrary = medium_stress_impact_loss
+		}
+		ai_chance = {
+			base = 25
+			ai_value_modifier = {
+				ai_honor = -0.5
+			}
+		}
+	}
+}
+
+TFE_chariot_events.0011 = { #Blue Anger 1
+	type = activity_event
+	title = TFE_chariot_events.0011.t
+	desc = {
+	first_valid = {
+		triggered_desc = {
+			trigger = {
+				scope:activity = {
+					exists = var:blue_win
+				}
+			}
+			desc = TFE_chariot_events.0011_blue.desc
+		}
+		triggered_desc = {
+			trigger = {
+				scope:activity = {
+					exists = var:green_win
+				}
+			}
+			desc = TFE_chariot_events.0011_green.desc
+		}
+		triggered_desc = {
+			trigger = {
+				OR = {
+					scope:activity = {
+						exists = var:tie
+					}
+					NOT = {
+						OR = {
+							scope:activity = {
+								exists = var:green_win
+							}
+							scope:activity = {
+								exists = var:blue_win
+							}
+						}
+					}
+				}
+			}
+			desc = TFE_chariot_events.0011_tie.desc
+		}
+	}
+	}
+	
+	theme = feast_activity
+	left_portrait = {
+		character = root
+		animation = toast_goblet
+	}
+	right_portrait = {
+		character = scope:blue_rep
+		animation = anger
+	}
+	immediate = {
+		scope:host.primary_title = {
+			random_in_list = {
+				variable = green_team
+				save_scope_as = green_rep
+			}
+		}
+		scope:host.primary_title = {
+			random_in_list = {
+				variable = blue_team
+				save_scope_as = blue_rep
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						has_trait = blue_support
+						scope:activity = {
+							exists = var:blue_win
+						}
+					}
+					AND = {
+						has_trait = green_support
+						scope:activity = {
+							exists = var:green_win
+						}
+					}
+				}
+			}
+			add_prestige = scope:activity.var:prestige_gain_races
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0011.a
+		trigger = {
+			scope:activity = {
+				exists = var:green_win
+			}
+			OR = {
+				NOT = { has_trait = green_support }
+				has_trait = arbitrary
+			}
+		}
+		if = {
+			limit = {
+				has_trait = green_support
+			}
+			remove_trait = green_support
+		}
+		add_prestige = medium_prestige_loss
+		custom_tooltip = anger_the_greens_tt
+		scope:host.primary_title = {
+			every_in_list = {
+				variable = green_team
+				add_opinion = {
+					modifier = angry_opinion
+					target = scope:host
+					opinion = -15
+				}
+			}
+		}
+		random_list = {
+			50 = { 
+			
+			}
+			25 = {
+				scope:host = {
+					set_relation_rival = {
+						target = scope:green_rep
+						reason = rival_grave_insult
+					}
+				}
+				scope:host.capital_county = {
+					change_county_control = -25
+					add_county_modifier = { modifier = upset_greens_modifier years = 3 }
+				}
+			}
+			25 = {
+				scope:host = {
+					set_relation_rival = {
+						target = scope:green_rep
+						reason = rival_grave_insult
+					}
+				}
+			}
+		}
+		stress_impact = {
+			base = medium_stress_impact_gain
+			just = medium_stress_impact_gain
+			arbitrary = medium_stress_impact_loss
+		}
+		ai_chance = {
+			base = 25
+			ai_value_modifier = {
+				ai_honor = -0.5
+			}
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0010.b
+		trigger = {
+			short_term_gold >= medium_gold_value
+		}
+		remove_short_term_gold = medium_gold_value
+		stress_impact = {
+			base = medium_stress_impact_gain
+			greedy = medium_stress_impact_gain
+			brave = minor_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_greed = -0.5
+			}
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0010.c
+		if = {
+			limit = {
+				has_trait = blue_support
+			}
+			remove_trait = blue_support
+		}
+		random_list = {
+			50 = { 
+			
+			}
+			50 = {
+				scope:host = {
+					set_relation_rival = {
+						target = scope:blue_rep
+						reason = rival_grave_insult
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						has_trait = blue_support
+						scope:activity = {
+							exists = var:blue_win
+						}
+					}
+					AND = {
+						has_trait = green_support
+						scope:activity = {
+							exists = var:green_win
+						}
+					}
+				}
+			}
+			add_prestige = scope:activity.var:prestige_gain_races
+		}
+		scope:host.capital_county = {
+			change_county_control = -50
+			add_county_modifier = { modifier = upset_blues_modifier years = 5 }
+		}
+		custom_tooltip = anger_the_blues_tt
+		scope:host.primary_title = {
+			every_in_list = {
+				variable = blue_team
+				add_opinion = {
+					modifier = angry_opinion
+					target = scope:host
+					opinion = -15
+				}
+			}
+		}
+		stress_impact = {
+			base = medium_stress_impact_gain
+			just = minor_stress_impact_loss
+			brave = minor_stress_impact_loss
+		}
+		ai_chance = {
+			base = 50
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0010.d
+		trigger = {
+			scope:activity = {
+				exists = var:tie
+			}
+		}
+		add_prestige = medium_prestige_loss
+		custom_tooltip = anger_the_greens_tt
+		scope:host.primary_title = {
+			every_in_list = {
+				variable = green_team
+				add_opinion = {
+					modifier = angry_opinion
+					target = scope:host
+					opinion = -15
+				}
+			}
+		}
+		stress_impact = {
+			base = medium_stress_impact_gain
+			just = medium_stress_impact_gain
+			arbitrary = medium_stress_impact_loss
+		}
+		ai_chance = {
+			base = 25
+			ai_value_modifier = {
+				ai_honor = -0.5
+			}
+		}
+	}
+}
+
+TFE_chariot_events.0012 = { #Green Anger 2
+	type = activity_event
+	title = TFE_chariot_events.0012.t
+	desc = {
+	first_valid = {
+		triggered_desc = {
+			trigger = {
+				scope:activity = {
+					exists = var:blue_win
+				}
+			}
+			desc = TFE_chariot_events.0012_blue.desc
+		}
+		triggered_desc = {
+			trigger = {
+				scope:activity = {
+					exists = var:green_win
+				}
+			}
+			desc = TFE_chariot_events.0012_green.desc
+		}
+		triggered_desc = {
+			trigger = {
+				OR = {
+					scope:activity = {
+						exists = var:tie
+					}
+					NOT = {
+						OR = {
+							scope:activity = {
+								exists = var:green_win
+							}
+							scope:activity = {
+								exists = var:blue_win
+							}
+						}
+					}
+				}
+			}
+			desc = TFE_chariot_events.0012_tie.desc
+		}
+	}
+	}
+	
+	theme = feast_activity
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	right_portrait = {
+		character = scope:green_rep
+		animation = anger
+	}
+	immediate = {
+		scope:host.primary_title = {
+			random_in_list = {
+				variable = green_team
+				save_scope_as = green_rep
+			}
+		}
+		scope:host.primary_title = {
+			random_in_list = {
+				variable = blue_team
+				save_scope_as = blue_rep
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						has_trait = blue_support
+						scope:activity = {
+							exists = var:blue_win
+						}
+					}
+					AND = {
+						has_trait = green_support
+						scope:activity = {
+							exists = var:green_win
+						}
+					}
+				}
+			}
+			add_prestige = scope:activity.var:prestige_gain_races
+		}
+		scope:activity = {
+			set_variable = {
+				name = bribe_money
+				value = major_gold_value
+			}
+		}
+		scope:activity = {
+			change_variable = {
+				name = bribe_money
+				multiply = scope:activity.var:green_anger
+			}
+		}
+		scope:activity = {
+			set_variable = {
+				name = bribe_prestige
+				value = major_prestige_value
+			}
+		}
+		scope:activity = {
+			change_variable = {
+				name = bribe_prestige
+				multiply = scope:activity.var:green_anger
+			}
+		}
+		scope:activity = {
+			change_variable = {
+				name = bribe_prestige
+				multiply = -1
+			}
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0012.a
+		trigger = {
+			prestige_level >= 2
+		}
+		add_prestige_level = -1
+		add_prestige = scope:activity.var:bribe_prestige
+		scope:host.primary_title = {
+			every_in_list = {
+				variable = green_team
+				add_hook = {
+					target = scope:host
+		  			type = favor_hook
+				}
+			}
+		}
+		stress_impact = {
+			base = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 50
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0012.b
+		trigger = {
+			short_term_gold >= scope:activity.var:bribe_money
+		}
+		add_prestige_level = -1
+		remove_short_term_gold = scope:activity.var:bribe_money
+		stress_impact = {
+			base = medium_stress_impact_gain
+			greedy = medium_stress_impact_gain
+			brave = minor_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_greed = -0.5
+			}
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0012.c
+		if = {
+			limit = {
+				has_trait = green_support
+			}
+			remove_trait = green_support
+		}
+		random_list = {
+			15 = {
+				scope:host.capital_county = {
+					change_county_control = -75
+					add_county_modifier = { modifier = upset_greens_modifier years = 5 }
+				}
+			}
+			50 = {
+				#custom_tooltip = riots_everywhere_tt
+				every_held_title = {
+					limit = {
+						tier = tier_county
+					}
+					change_county_control = -75
+					add_county_modifier = { modifier = upset_greens_modifier years = 5 }
+				}
+			}
+			35 = {
+				custom_tooltip = vassals_incited_tt
+				#custom_tooltip = riots_everywhere_tt
+				every_held_title = {
+					limit = {
+						tier = tier_county
+					}
+					change_county_control = -75
+					add_county_modifier = { modifier = upset_greens_modifier years = 5 }
+				}
+				hidden_effect = {
+				every_vassal = {
+					add_opinion = {
+						modifier = angry_opinion
+						target = scope:host
+						opinion = -10
+					}
+				}
+				}
+				
+			}
+		}
+		stress_impact = {
+			base = medium_stress_impact_gain
+			lazy = minor_stress_impact_loss
+			arbitrary = minor_stress_impact_loss
+		}
+		ai_chance = {
+			base = 50
+			ai_value_modifier = {
+				ai_energy = -0.5
+			}
+		}
+	}
+}
+
+TFE_chariot_events.0013 = { #Blue Anger 2
+	type = activity_event
+	title = TFE_chariot_events.0013.t
+	desc = {
+	first_valid = {
+		triggered_desc = {
+			trigger = {
+				scope:activity = {
+					exists = var:blue_win
+				}
+			}
+			desc = TFE_chariot_events.0013_blue.desc
+		}
+		triggered_desc = {
+			trigger = {
+				scope:activity = {
+					exists = var:green_win
+				}
+			}
+			desc = TFE_chariot_events.0013_green.desc
+		}
+		triggered_desc = {
+			trigger = {
+				OR = {
+					scope:activity = {
+						exists = var:tie
+					}
+					NOT = {
+						OR = {
+							scope:activity = {
+								exists = var:green_win
+							}
+							scope:activity = {
+								exists = var:blue_win
+							}
+						}
+					}
+				}
+			}
+			desc = TFE_chariot_events.0013_tie.desc
+		}
+	}
+	}
+	
+	theme = feast_activity
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	right_portrait = {
+		character = scope:blue_rep
+		animation = anger
+	}
+	immediate = {
+		scope:host.primary_title = {
+			random_in_list = {
+				variable = green_team
+				save_scope_as = green_rep
+			}
+		}
+		scope:host.primary_title = {
+			random_in_list = {
+				variable = blue_team
+				save_scope_as = blue_rep
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						has_trait = blue_support
+						scope:activity = {
+							exists = var:blue_win
+						}
+					}
+					AND = {
+						has_trait = green_support
+						scope:activity = {
+							exists = var:green_win
+						}
+					}
+				}
+			}
+			add_prestige = scope:activity.var:prestige_gain_races
+		}
+		scope:activity = {
+			set_variable = {
+				name = bribe_money
+				value = major_gold_value
+			}
+		}
+		scope:activity = {
+			change_variable = {
+				name = bribe_money
+				multiply = scope:activity.var:blue_anger
+			}
+		}
+		scope:activity = {
+			set_variable = {
+				name = bribe_prestige
+				value = major_prestige_value
+			}
+		}
+		scope:activity = {
+			change_variable = {
+				name = bribe_prestige
+				multiply = scope:activity.var:blue_anger
+			}
+		}
+		scope:activity = {
+			change_variable = {
+				name = bribe_prestige
+				multiply = -1
+			}
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0013.a
+		trigger = {
+			prestige_level >= 2
+		}
+		add_prestige_level = -1
+		add_prestige = scope:activity.var:bribe_prestige
+		scope:host.primary_title = {
+			every_in_list = {
+				variable = blue_team
+				add_hook = {
+					target = scope:host
+		  			type = favor_hook
+				}
+			}
+		}
+		stress_impact = {
+			base = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 50
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0013.b
+		trigger = {
+			short_term_gold >= scope:activity.var:bribe_money
+		}
+		add_prestige_level = -1
+		remove_short_term_gold = scope:activity.var:bribe_money
+		stress_impact = {
+			base = medium_stress_impact_gain
+			greedy = medium_stress_impact_gain
+			brave = minor_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_greed = -0.5
+			}
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0013.c
+		if = {
+			limit = {
+				has_trait = blue_support
+			}
+			remove_trait = blue_support
+		}
+		random_list = {
+			15 = {
+				scope:host.capital_county = {
+					change_county_control = -75
+					add_county_modifier = { modifier = upset_blues_modifier years = 5 }
+				}
+			}
+			50 = {
+				#custom_tooltip = riots_everywhere_tt
+				every_held_title = {
+					limit = {
+						tier = tier_county
+					}
+					change_county_control = -75
+					add_county_modifier = { modifier = upset_blues_modifier years = 5 }
+				}
+			}
+			35 = {
+				custom_tooltip = vassals_incited_tt
+				#custom_tooltip = riots_everywhere_tt
+				every_held_title = {
+					limit = {
+						tier = tier_county
+					}
+					change_county_control = -75
+					add_county_modifier = { modifier = upset_blues_modifier years = 5 }
+				}
+				hidden_effect = {
+				every_vassal = {
+					add_opinion = {
+						modifier = angry_opinion
+						target = scope:host
+						opinion = -10
+					}
+				}
+				}
+			}
+		}
+		stress_impact = {
+			base = medium_stress_impact_gain
+			lazy = minor_stress_impact_loss
+			arbitrary = minor_stress_impact_loss
+		}
+		ai_chance = {
+			base = 50
+			ai_value_modifier = {
+				ai_energy = -0.5
+			}
+		}
+	}
+}
+
+TFE_chariot_events.0014 = { #Both Anger
+	type = activity_event
+	title = TFE_chariot_events.0014.t
+	desc = {
+	first_valid = {
+		triggered_desc = {
+			trigger = {
+				scope:activity = {
+					exists = var:blue_win
+				}
+			}
+			desc = TFE_chariot_events.0014_blue.desc
+		}
+		triggered_desc = {
+			trigger = {
+				scope:activity = {
+					exists = var:green_win
+				}
+			}
+			desc = TFE_chariot_events.0014_green.desc
+		}
+		triggered_desc = {
+			trigger = {
+				OR = {
+					scope:activity = {
+						exists = var:tie
+					}
+					NOT = {
+						OR = {
+							scope:activity = {
+								exists = var:green_win
+							}
+							scope:activity = {
+								exists = var:blue_win
+							}
+						}
+					}
+				}
+			}
+			desc = TFE_chariot_events.0014_tie.desc
+		}
+	}
+	}
+	
+	theme = feast_activity
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	center_portrait = {
+		character = scope:green_rep
+		animation = anger
+	}
+	right_portrait = {
+		character = scope:blue_rep
+		animation = anger
+	}
+	immediate = {
+		scope:host.primary_title = {
+			random_in_list = {
+				variable = green_team
+				save_scope_as = green_rep
+			}
+		}
+		scope:host.primary_title = {
+			random_in_list = {
+				variable = blue_team
+				save_scope_as = blue_rep
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						has_trait = blue_support
+						scope:activity = {
+							exists = var:blue_win
+						}
+					}
+					AND = {
+						has_trait = green_support
+						scope:activity = {
+							exists = var:green_win
+						}
+					}
+				}
+			}
+			add_prestige = scope:activity.var:prestige_gain_races
+		}
+		scope:activity = {
+			set_variable = {
+				name = total_anger
+				value = scope:activity.var:blue_anger
+			}
+		}
+		scope:activity = {
+			change_variable = {
+				name = total_anger
+				add = scope:activity.var:green_anger
+			}
+		}
+		scope:activity = {
+			set_variable = {
+				name = bribe_money
+				value = medium_gold_value
+			}
+		}
+		scope:activity = {
+			change_variable = {
+				name = bribe_money
+				multiply = scope:activity.var:total_anger
+			}
+		}
+		scope:activity = {
+			set_variable = {
+				name = bribe_prestige
+				value = medium_prestige_value
+			}
+		}
+		scope:activity = {
+			change_variable = {
+				name = bribe_prestige
+				multiply = scope:activity.var:total_anger
+			}
+		}
+		scope:activity = {
+			change_variable = {
+				name = bribe_prestige
+				multiply = -1
+			}
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0014.a
+		trigger = {
+			scope:activity.var:total_anger >= 3
+		}
+		add_prestige_level = -1
+		#custom_tooltip = riots_everywhere_tt
+		every_held_title = {
+			limit = {
+				tier = tier_county
+			}
+			change_county_control = -75
+			add_county_modifier = { modifier = upset_blues_modifier years = 5 }
+			add_county_modifier = { modifier = upset_greens_modifier years = 5 }
+		}
+		stress_impact = {
+			base = medium_stress_impact_gain
+			ambitious = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_greed = -0.5
+			}
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0014.b
+		trigger = {
+			NOT = { scope:activity.var:total_anger >= 3 }
+		}
+		#custom_tooltip = riots_everywhere_tt
+		every_held_title = {
+			limit = {
+				tier = tier_county
+			}
+			change_county_control = -50
+			add_county_modifier = { modifier = upset_blues_modifier years = 3 }
+			add_county_modifier = { modifier = upset_greens_modifier years = 3 }
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0014.c
+		trigger = {
+			short_term_gold >= scope:activity.var:bribe_money
+			NOT = { scope:activity.var:total_anger >= 3 }
+		}
+		remove_short_term_gold = scope:activity.var:bribe_money
+		stress_impact = {
+			base = medium_stress_impact_gain
+			greedy = medium_stress_impact_gain
+			brave = minor_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_greed = -0.5
+			}
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0014.d
+		trigger = {
+			prestige_level >= 2
+			NOT = { scope:activity.var:total_anger >= 3 }
+		}
+		add_prestige = scope:activity.var:bribe_prestige
+		scope:host.primary_title = {
+			every_in_list = {
+				variable = blue_team
+				add_hook = {
+					target = scope:host
+		  			type = favor_hook
+				}
+			}
+		}
+		scope:host.primary_title = {
+			every_in_list = {
+				variable = green_team
+				add_hook = {
+					target = scope:host
+		  			type = favor_hook
+				}
+			}
+		}
+		stress_impact = {
+			base = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 50
+		}
+	}
+}
+
+TFE_chariot_events.0015 = { #Everybody Happy
+	type = activity_event
+	title = TFE_chariot_events.0015.t
+	desc = {
+	first_valid = {
+		triggered_desc = {
+			trigger = {
+				scope:activity = {
+					exists = var:blue_win
+				}
+			}
+			desc = TFE_chariot_events.0015_blue.desc
+		}
+		triggered_desc = {
+			trigger = {
+				scope:activity = {
+					exists = var:green_win
+				}
+			}
+			desc = TFE_chariot_events.0015_green.desc
+		}
+		triggered_desc = {
+			trigger = {
+				OR = {
+					scope:activity = {
+						exists = var:tie
+					}
+					NOT = {
+						OR = {
+							scope:activity = {
+								exists = var:green_win
+							}
+							scope:activity = {
+								exists = var:blue_win
+							}
+						}
+					}
+				}
+			}
+			desc = TFE_chariot_events.0015_tie.desc
+		}
+	}
+	}
+	
+	theme = feast_activity
+	left_portrait = {
+		character = root
+		animation = toast_goblet
+	}
+	center_portrait = {
+		character = scope:green_rep
+		animation = toast_goblet
+	}
+	right_portrait = {
+		character = scope:blue_rep
+		animation = toast_goblet
+	}
+	immediate = {
+		scope:host.primary_title = {
+			random_in_list = {
+				variable = green_team
+				save_scope_as = green_rep
+			}
+		}
+		scope:host.primary_title = {
+			random_in_list = {
+				variable = blue_team
+				save_scope_as = blue_rep
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						has_trait = blue_support
+						scope:activity = {
+							exists = var:blue_win
+						}
+					}
+					AND = {
+						has_trait = green_support
+						scope:activity = {
+							exists = var:green_win
+						}
+					}
+				}
+			}
+			add_prestige = scope:activity.var:prestige_gain_races
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0015.a
+		trigger = {
+			scope:activity = {
+				exists = var:blue_win
+			}
+		}
+		add_prestige = medium_prestige_gain
+		add_character_modifier = {
+			modifier = honored_chariot_winners
+			years = 5
+		}
+		stress_impact = {
+			base = medium_stress_impact_loss
+		}
+		ai_chance = {
+			base = 50
+			ai_value_modifier = {
+				ai_honor = 0.5
+			}
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0015.b
+		trigger = {
+			OR = {
+				AND = {
+					scope:activity = {
+						exists = var:green_win
+					}
+					has_trait = blue_support
+				}
+				has_trait = arbitrary
+			}
+		}
+		add_piety = medium_piety_gain
+		add_character_modifier = {
+			modifier = honored_chariot_losers
+			years = 5
+		}
+		stress_impact = {
+			base = medium_stress_impact_loss
+		}
+		ai_chance = {
+			base = 50
+			ai_value_modifier = {
+				ai_honor = -0.5
+			}
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0015.c
+		trigger = {
+			scope:activity = {
+				exists = var:green_win
+			}
+		}
+		add_prestige = medium_prestige_gain
+		add_character_modifier = {
+			modifier = honored_chariot_winners
+			years = 5
+		}
+		stress_impact = {
+			base = medium_stress_impact_loss
+		}
+		ai_chance = {
+			base = 50
+			ai_value_modifier = {
+				ai_honor = 0.5
+			}
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0015.d
+		trigger = {
+			OR = {
+				AND = {
+					scope:activity = {
+						exists = var:blue_win
+					}
+					has_trait = green_support
+				}
+				has_trait = arbitrary
+			}
+		}
+		add_piety = medium_piety_gain
+		add_character_modifier = {
+			modifier = honored_chariot_losers
+			years = 5
+		}
+		stress_impact = {
+			base = medium_stress_impact_loss
+		}
+		ai_chance = {
+			base = 50
+			ai_value_modifier = {
+				ai_honor = -0.5
+			}
+		}
+	}
+	option = {
+		name = TFE_chariot_events.0015.e
+		add_prestige = minor_prestige_gain
+		add_piety = minor_piety_gain
+		add_character_modifier = {
+			modifier = honored_charioteers
+			years = 5
+		}
+		stress_impact = {
+			base = medium_stress_impact_loss
+		}
+		ai_chance = {
+			base = 50
+			ai_value_modifier = {
+				ai_energy = -0.5
+			}
+		}
+	}
+}

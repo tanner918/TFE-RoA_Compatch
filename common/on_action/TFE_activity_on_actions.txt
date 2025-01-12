@@ -1,0 +1,161 @@
+﻿gladiator_opening_on_action = {
+	effect = {
+		involved_activity = {
+			every_attending_character = { 
+				trigger_event = sponsor_gladiatorial_games.0001 
+				#trigger_event = TFE_gladiator_events.9999
+			}
+		}
+	}
+}
+
+gladiator_new_event_selection_host_default = {
+	random_events = {
+		20 = sponsor_gladiatorial_games.0010 #Regular fight end
+		5 = sponsor_gladiatorial_games.0011 #Gladiator can retire
+		10 = sponsor_gladiatorial_games.0012 #Tired gladiators
+		10 = sponsor_gladiatorial_games.0013 #No gladiators
+		10 = sponsor_gladiatorial_games.0013 #New gladiator champion
+	}
+}
+
+gladiator_new_event_selection_host_bad = {
+	random_events = {
+		20 = sponsor_gladiatorial_games.0010 #Regular fight end
+		5 = sponsor_gladiatorial_games.0011 #Gladiator can retire
+		20 = sponsor_gladiatorial_games.0012 #Tired gladiators
+		20 = sponsor_gladiatorial_games.0013 #No gladiators
+		5 = sponsor_gladiatorial_games.0013 #New gladiator champion
+	}
+}
+
+gladiator_new_event_selection_host_good = {
+	random_events = {
+		20 = sponsor_gladiatorial_games.0010 #Regular fight end
+		6 = sponsor_gladiatorial_games.0011 #Gladiator can retire
+		7 = sponsor_gladiatorial_games.0012 #Tired gladiators
+		7 = sponsor_gladiatorial_games.0013 #No gladiators
+		10 = sponsor_gladiatorial_games.0013 #New gladiator champion
+	}
+}
+
+gladiator_new_event_selection_host_very_good = {
+	random_events = {
+		20 = sponsor_gladiatorial_games.0010 #Regular fight end
+		7 = sponsor_gladiatorial_games.0011 #Gladiator can retire
+		5 = sponsor_gladiatorial_games.0012 #Tired gladiators
+		5 = sponsor_gladiatorial_games.0013 #No gladiators
+		15 = sponsor_gladiatorial_games.0013 #New gladiator champion
+		8 = TFE_gladiator_events.0003 #Animals
+	}
+}
+
+gladiator_new_event_selection_host_excellent = {
+	random_events = {
+		20 = sponsor_gladiatorial_games.0010 #Regular fight end
+		7 = sponsor_gladiatorial_games.0011 #Gladiator can retire
+		5 = sponsor_gladiatorial_games.0012 #Tired gladiators
+		5 = sponsor_gladiatorial_games.0013 #No gladiators
+		15 = sponsor_gladiatorial_games.0013 #New gladiator champion
+		13 = TFE_gladiator_events.0003 #Animals
+	}
+}
+
+#DOESN'T WORK DO IN ACTIVITY DIRECTLY
+gladiator_new_event_selection_guest = {
+	if = {
+		limit = {
+			#scope:TFE_games_option_fights ?= flag:TFE_games_option_fights_good
+			scope:activity = { is_lodgings_good = yes }
+		}
+		on_action = gladiator_new_event_selection_guest_good
+	}
+	else_if = {
+		limit = {
+			scope:activity = { is_lodgings_very_good = yes }
+		}
+		on_action = gladiator_new_event_selection_guest_very_good
+	}
+	else_if = {
+		limit = {
+			scope:activity = { is_lodgings_bad = yes }
+		}
+		on_action = gladiator_new_event_selection_guest_bad
+	}
+	else = {
+		on_action = gladiator_new_event_selection_guest_default
+	}
+}
+
+gladiator_new_event_selection_guest_default = {
+	random_events = {
+		10 = TFE_gladiator_events.0005 #Local school
+		10 = TFE_gladiator_events.0006 #Escaped gladiator
+		10 = TFE_gladiator_events.0007 #Tavern
+		10 = TFE_gladiator_events.0008 #Marketplace
+		10 = TFE_gladiator_events.0009 #Collapsed stands
+		10 = TFE_gladiator_events.0010 #Riots
+	}
+}
+
+gladiator_new_event_selection_guest_bad = {
+	random_events = {
+		10 = TFE_gladiator_events.0005 #Local school
+		20 = TFE_gladiator_events.0006 #Escaped gladiator
+		10 = TFE_gladiator_events.0007 #Tavern
+		10 = TFE_gladiator_events.0008 #Marketplace
+		20 = TFE_gladiator_events.0009 #Collapsed stands
+		20 = TFE_gladiator_events.0010 #Riots
+	}
+}
+
+gladiator_new_event_selection_guest_good = {
+	random_events = {
+		15 = TFE_gladiator_events.0005 #Local school
+		7 = TFE_gladiator_events.0006 #Escaped gladiator
+		10 = TFE_gladiator_events.0007 #Tavern
+		10 = TFE_gladiator_events.0008 #Marketplace
+		7 = TFE_gladiator_events.0009 #Collapsed stands
+		7 = TFE_gladiator_events.0010 #Riots
+	}
+}
+
+gladiator_new_event_selection_guest_very_good = {
+	random_events = {
+		20 = TFE_gladiator_events.0005 #Local school
+		5 = TFE_gladiator_events.0006 #Escaped gladiator
+		10 = TFE_gladiator_events.0007 #Tavern
+		10 = TFE_gladiator_events.0008 #Marketplace
+		5 = TFE_gladiator_events.0009 #Collapsed stands
+		5 = TFE_gladiator_events.0010 #Riots
+	}
+}
+
+gladiator_new_event_selection_no_recruit = {
+	random_events = {
+		10 = TFE_gladiator_events.0007 #Tavern
+		10 = TFE_gladiator_events.0008 #Marketplace
+		5 = TFE_gladiator_events.0010 #Riots
+	}
+}
+
+chariot_opening_on_action = {
+	effect = {
+		involved_activity = {
+			every_attending_character = { 
+				trigger_event = TFE_chariot_events.0001
+			}
+		}
+	}
+}
+
+chariot_race_new_event_selection = {
+	random_events = {
+		40 = TFE_chariot_events.0002 #Regular race
+		20 = TFE_chariot_events.0003 #Sabotage
+		20 = TFE_chariot_events.0004 #Bribery
+		10 = TFE_chariot_events.0005 #Good horse
+		10 = TFE_chariot_events.0006 #Charioteer
+		10 = TFE_chariot_events.0007 #Chariot accident
+	}
+}

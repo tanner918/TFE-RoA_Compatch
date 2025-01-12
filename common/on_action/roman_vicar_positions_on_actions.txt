@@ -1,0 +1,497 @@
+﻿on_game_start = {
+	on_actions = {
+		on_vicar_start
+	}
+}
+
+
+on_vicar_start = {
+	effect = {
+		if = {
+			limit = {
+				exists = title:e_western_roman_empire.holder
+			}
+			title:e_western_roman_empire.holder = {
+				if = {
+					limit = { exists = title:k_gallia.holder }
+					appoint_court_position = { recipient = title:k_gallia.holder court_position = k_gallia_governor }
+				}
+				if = {
+					limit = { exists = title:k_britannia.holder }
+					appoint_court_position = { recipient = title:k_britannia.holder court_position = k_britannia_governor }
+				}
+				if = {
+					limit = { exists = title:k_italia_suburbicariae.holder }
+					appoint_court_position = { recipient = title:k_italia_suburbicariae.holder court_position = k_italia_suburbicariae_governor }
+				}
+				if = {
+					limit = { exists = title:k_africae.holder }
+					appoint_court_position = { recipient = title:k_africae.holder court_position = k_africae_governor }
+				}
+				if = {
+					limit = { exists = title:k_hispania.holder }
+					appoint_court_position = { recipient = title:k_hispania.holder court_position = k_hispania_governor }
+				}
+				if = {
+					limit = { exists = title:k_septem_provinciae.holder }
+					appoint_court_position = { recipient = title:k_septem_provinciae.holder court_position = k_septem_provinciae_governor }
+				}
+				if = {
+					limit = { exists = title:k_pannonia.holder }
+					appoint_court_position = { recipient = title:k_pannonia.holder court_position = k_pannonia_governor }
+				}
+			}
+		}
+		if = {
+			limit = {
+				exists = title:e_byzantium.holder
+			}
+			title:e_byzantium.holder = {
+				title:e_byzantium.holder = {
+					if = {
+						limit = { exists = title:k_daciae.holder }
+						appoint_court_position = { recipient = title:k_daciae.holder court_position = k_daciae_governor }
+					}
+					if = {
+						limit = { exists = title:k_aegyptus.holder }
+						appoint_court_position = { recipient = title:k_aegyptus.holder court_position = k_aegyptus_governor }
+					}
+					if = {
+						limit = { exists = title:k_asiae.holder }
+						appoint_court_position = { recipient = title:k_asiae.holder court_position = k_asiae_governor }
+					}
+					if = {
+						limit = { exists = title:k_orientis.holder }
+						appoint_court_position = { recipient = title:k_orientis.holder court_position = k_orientis_governor }
+					}
+					if = {
+						limit = { exists = title:k_macedon.holder }
+						appoint_court_position = { recipient = title:k_macedon.holder court_position = k_macedon_governor }
+					}
+					if = {
+						limit = { exists = title:k_nikaea.holder }
+						appoint_court_position = { recipient = title:k_nikaea.holder court_position = k_nikaea_governor }
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				exists = title:e_roman_empire.holder
+			}
+			title:e_roman_empire.holder = {
+				title:e_roman_empire.holder = {
+					if = {
+						limit = { exists = title:k_daciae.holder }
+						appoint_court_position = { recipient = title:k_daciae.holder court_position = k_daciae_governor }
+					}
+					if = {
+						limit = { exists = title:k_aegyptus.holder }
+						appoint_court_position = { recipient = title:k_aegyptus.holder court_position = k_aegyptus_governor }
+					}
+					if = {
+						limit = { exists = title:k_asiae.holder }
+						appoint_court_position = { recipient = title:k_asiae.holder court_position = k_asiae_governor }
+					}
+					if = {
+						limit = { exists = title:k_orientis.holder }
+						appoint_court_position = { recipient = title:k_orientis.holder court_position = k_orientis_governor }
+					}
+					if = {
+						limit = { exists = title:k_macedon.holder }
+						appoint_court_position = { recipient = title:k_macedon.holder court_position = k_macedon_governor }
+					}
+					if = {
+						limit = { exists = title:k_nikaea.holder }
+						appoint_court_position = { recipient = title:k_nikaea.holder court_position = k_nikaea_governor }
+					}
+					if = {
+						limit = { exists = title:k_gallia.holder }
+						appoint_court_position = { recipient = title:k_gallia.holder court_position = k_gallia_governor }
+					}
+					if = {
+						limit = { exists = title:k_britannia.holder }
+						appoint_court_position = { recipient = title:k_britannia.holder court_position = k_britannia_governor }
+					}
+					if = {
+						limit = { exists = title:k_italia_suburbicariae.holder }
+						appoint_court_position = { recipient = title:k_italia_suburbicariae.holder court_position = k_italia_suburbicariae_governor }
+					}
+					if = {
+						limit = { exists = title:k_africae.holder }
+						appoint_court_position = { recipient = title:k_africae.holder court_position = k_africae_governor }
+					}
+					if = {
+						limit = { exists = title:k_hispania.holder }
+						appoint_court_position = { recipient = title:k_hispania.holder court_position = k_hispania_governor }
+					}
+					if = {
+						limit = { exists = title:k_septem_provinciae.holder }
+						appoint_court_position = { recipient = title:k_septem_provinciae.holder court_position = k_septem_provinciae_governor }
+					}
+					if = {
+						limit = { exists = title:k_pannonia.holder }
+						appoint_court_position = { recipient = title:k_pannonia.holder court_position = k_pannonia_governor }
+					}
+					if = {
+						limit = { exists = title:k_italia_annonariae.holder }
+						appoint_court_position = { recipient = title:k_italia_annonariae.holder court_position = k_italia_annonariae_governor }
+					}
+				}
+			}
+		}
+	}
+}
+
+on_title_gain = {
+	on_actions = {
+		on_vicar_title_gain
+	}
+	on_actions = {
+		on_emperor_succession
+	}
+}
+
+on_vicar_title_gain = {
+	effect = {
+		if = {
+			limit = {
+				is_independent_ruler = no
+				top_liege = {
+					highest_held_title_tier = tier_empire
+					OR = { government_has_flag = government_is_imperial government_has_flag = government_is_imperial_cult government_has_flag = government_is_administrative }
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+						OR = {
+							scope:transfer_type = flag:inheritance
+							scope:transfer_type = flag:abdication
+							scope:transfer_type = flag:conquest_populist
+							scope:transfer_type = flag:faction_demand
+						}
+						scope:title.tier >= tier_duchy
+						scope:title = {
+							is_titular = no
+						}
+					}
+				}
+				scope:title = {
+					create_title_and_vassal_change = {
+						type = revoked
+						save_scope_as = change
+						add_claim_on_loss = no
+					}
+					change_title_holder = {
+						holder = root.liege
+						change = scope:change
+					}
+					resolve_title_and_vassal_change = scope:change
+					
+				}
+				root.liege = {
+					if = {
+						limit = {
+							OR = {
+								AND = {
+									OR = {
+										access_to_eastern_senate = yes
+										top_liege = {
+											access_to_eastern_senate = yes
+										}
+									}
+									global_var:office_events_eastern = flag:no
+								}
+								AND = {
+									OR = {
+										access_to_italian_senate = yes
+										top_liege = {
+											access_to_italian_senate = yes
+										}
+									}
+									global_var:office_events_italy = flag:no
+								}
+							}
+						}
+						roman_office_event_two_effect = yes
+					}
+					else = {
+						#trigger_event = tfe_title_event.0002
+					}
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						scope:title = title:k_gallia
+					}
+					liege = {
+						appoint_court_position = { recipient = title:k_gallia.holder court_position = k_gallia_governor }
+					}
+				}
+				else_if = {
+					limit = {
+						scope:title = title:k_britannia
+					}
+					liege = {
+						appoint_court_position = { recipient = title:k_britannia.holder court_position = k_britannia_governor }
+					}
+				}
+				else_if = {
+					limit = {
+						scope:title = title:k_italia_suburbicariae
+					}
+					liege = {
+						appoint_court_position = { recipient = title:k_italia_suburbicariae.holder court_position = k_italia_suburbicariae_governor }
+					}
+				}
+				else_if = {
+					limit = {
+						scope:title = title:k_africae
+					}
+					liege = {
+						appoint_court_position = { recipient = title:k_africae.holder court_position = k_africae_governor }
+					}
+				}
+				else_if = {
+					limit = {
+						scope:title = title:k_hispania
+					}
+					liege = {
+						appoint_court_position = { recipient = title:k_hispania.holder court_position = k_hispania_governor }
+					}
+				}
+				else_if = {
+					limit = {
+						scope:title = title:k_septem_provinciae
+					}
+					liege = {
+						appoint_court_position = { recipient = title:k_septem_provinciae.holder court_position = k_septem_provinciae_governor }
+					}
+				}
+				else_if = {
+					limit = {
+						scope:title = title:k_pannonia
+					}
+					liege = {
+						appoint_court_position = { recipient = title:k_pannonia.holder court_position = k_pannonia_governor }
+					}
+				}
+				else_if = {
+					limit = {
+						scope:title = title:k_daciae
+					}
+					liege = {
+						appoint_court_position = { recipient = title:k_daciae.holder court_position = k_daciae_governor }
+					}
+				}
+				else_if = {
+					limit = {
+						scope:title = title:k_aegyptus
+					}
+					liege = {
+						appoint_court_position = { recipient = title:k_aegyptus.holder court_position = k_aegyptus_governor }
+					}
+				}
+				else_if = {
+					limit = {
+						scope:title = title:k_asiae
+					}
+					liege = {
+						appoint_court_position = { recipient = title:k_asiae.holder court_position = k_asiae_governor }
+					}
+				}
+				else_if = {
+					limit = {
+						scope:title = title:k_orientis
+					}
+					liege = {
+						appoint_court_position = { recipient = title:k_orientis.holder court_position = k_orientis_governor }
+					}
+				}
+				else_if = {
+					limit = {
+						scope:title = title:k_macedon
+					}
+					liege = {
+						appoint_court_position = { recipient = title:k_macedon.holder court_position = k_macedon_governor }
+					}
+				}
+				else_if = {
+					limit = {
+						scope:title = title:k_nikaea
+					}
+					liege = {
+						appoint_court_position = { recipient = title:k_nikaea.holder court_position = k_nikaea_governor }
+					}
+				}
+			}
+		}
+		
+		
+	}
+}
+
+on_emperor_succession = {
+	effect = {
+		if = {
+			limit = {
+				OR = {
+					scope:title = title:e_western_roman_empire
+					scope:title = title:e_roman_empire
+				}
+			}
+			if = {
+				limit = {
+					any_vassal = {
+						has_title = title:k_italia_annonariae
+					}
+				}
+				title:k_italia_annonariae.holder = {
+					every_held_title = {
+						limit = {
+							tier >= tier_duchy
+							is_titular = no
+							OR = {
+								AND  = {
+									tier = tier_duchy
+									kingdom = title:k_italia_annonariae
+									
+								}
+								THIS = title:k_italia_annonariae
+							}
+							
+						}
+						create_title_and_vassal_change = {
+							type = granted
+							save_scope_as = change
+							add_claim_on_loss = no
+						}
+						change_title_holder_include_vassals = {
+							holder = root
+							change = scope:change
+						}
+						resolve_title_and_vassal_change = scope:change
+					}
+				}
+				every_held_title = {
+					limit = {
+						OR = {
+							AND  = {
+								tier = tier_duchy
+								NOT = {
+									kingdom = title:k_italia_annonariae
+								}
+							}
+							
+							AND = {
+								NOT = {
+									THIS = title:k_italia_annonariae
+								}
+								tier = tier_kingdom
+							}
+						}
+						
+						is_titular = no
+					}
+					save_scope_as = title_old_office
+					root = {
+						if = {
+							limit = {
+								OR = {
+									AND = {
+										OR = {
+											access_to_eastern_senate = yes
+											top_liege = {
+												access_to_eastern_senate = yes
+											}
+										}
+										global_var:office_events_eastern = flag:no
+									}
+									AND = {
+										OR = {
+											access_to_italian_senate = yes
+											top_liege = {
+												access_to_italian_senate = yes
+											}
+										}
+										global_var:office_events_italy = flag:no
+									}
+								}
+							}
+							roman_office_event_three_effect = yes
+						}
+						else = {
+							trigger_event = tfe_title_event.0003
+						}
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				scope:title = title:e_byzantium
+			}
+			if = {
+				limit = {
+					any_vassal = {
+						has_title = title:k_thessalonika
+					}
+				}
+				title:k_thessalonika.holder = {
+					every_held_title = {
+						limit = {
+							tier >= tier_duchy
+							is_titular = no
+							OR = {
+								AND  = {
+									tier = tier_duchy
+									kingdom = title:k_thessalonika
+									
+								}
+								THIS = title:k_thessalonika
+							}
+							
+						}
+						create_title_and_vassal_change = {
+							type = granted
+							save_scope_as = change
+							add_claim_on_loss = no
+						}
+						change_title_holder_include_vassals = {
+							holder = root
+							change = scope:change
+						}
+						resolve_title_and_vassal_change = scope:change
+					}
+				}
+				every_held_title = {
+					limit = {
+						OR = {
+							AND  = {
+								tier = tier_duchy
+								NOT = {
+									kingdom = title:k_thessalonika
+								}
+							}
+							
+							AND = {
+								NOT = {
+									THIS = title:k_thessalonika
+								}
+								tier = tier_kingdom
+							}
+						}
+						
+						is_titular = no
+					}
+					save_scope_as = title_old_office
+					root = {
+						trigger_event = tfe_title_event.0003
+					}
+				}
+			}
+		}
+	}
+}

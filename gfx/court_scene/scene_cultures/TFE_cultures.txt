@@ -1,0 +1,131 @@
+﻿roman = {
+	trigger = {
+		exists = capital_county
+		OR = {
+			capital_county.culture = {
+				has_cultural_pillar = heritage_latin
+			}
+			capital_county.culture = {
+				has_cultural_pillar = heritage_hellenistic
+			}
+		}
+		is_landed = yes
+		highest_held_title_tier = tier_empire
+	}
+}
+
+byzantine = {
+	trigger = {
+		has_ep3_dlc_trigger = yes
+		OR = {
+			capital_county ?= title:c_byzantion
+			primary_title ?= title:e_byzantium
+			AND = {
+				primary_title ?= title:e_roman_empire
+				title:e_roman_empire = {
+					has_variable = rome_was_restored_by_byzantium
+				}
+			}
+		}
+		NOT = { government_allows = administrative }
+	}
+}
+
+mediterranean = {
+	trigger = {
+		exists = capital_county
+		capital_county.culture = {
+			OR = {
+				has_graphical_mediterranean_culture_group_trigger = yes
+				AND = {
+					has_graphical_iberian_culture_group_trigger = yes
+					NOT = { prev.religion = religion:islam_religion }
+				}
+			}
+		}
+		NOT = {
+			AND = {
+				exists = capital_county
+				OR = {
+					capital_county.culture = {
+						has_cultural_pillar = heritage_latin
+					}
+					capital_county.culture = {
+						has_cultural_pillar = heritage_hellenistic
+					}
+				}
+				is_landed = yes
+				highest_held_title_tier = tier_empire
+			}
+		}
+	}
+}
+
+mena = {
+	trigger = {
+		exists = capital_county
+		capital_county.culture = {
+			OR = {
+				has_graphical_mena_culture_group_trigger = yes
+				has_graphical_iranian_culture_group_trigger = yes
+				has_graphical_african_culture_group_trigger = yes
+				has_graphical_steppe_culture_group_trigger = yes
+				AND = {
+					has_graphical_iberian_culture_group_trigger  = yes
+					prev.religion = religion:islam_religion
+				}
+			}
+		}
+		NOT = {
+			AND = {
+				exists = capital_county
+				capital_county.culture = {
+					has_cultural_pillar = heritage_latin
+				}
+				is_landed = yes
+				highest_held_title_tier = tier_empire
+			}
+		}
+	}
+}
+
+indian = {
+	trigger = {
+		exists = capital_county
+		capital_county.culture = {
+			has_graphical_india_culture_group_trigger = yes
+		}
+		NOT = {
+			AND = {
+				exists = capital_county
+				capital_county.culture = {
+					has_cultural_pillar = heritage_latin
+				}
+				is_landed = yes
+				highest_held_title_tier = tier_empire
+			}
+		}
+	}
+}
+
+western = {
+	trigger = {
+		exists = capital_county
+		capital_county.culture = {
+			OR = {
+				has_graphical_western_culture_group_trigger = yes
+				has_graphical_norse_culture_group_trigger = yes
+			}
+		}
+		NOT = {
+			AND = {
+				exists = capital_county
+				capital_county.culture = {
+					has_cultural_pillar = heritage_latin
+				}
+				is_landed = yes
+				highest_held_title_tier = tier_empire
+			}
+		}
+	}
+}

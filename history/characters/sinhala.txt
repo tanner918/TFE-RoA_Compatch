@@ -1,0 +1,986 @@
+﻿189000 = {
+	name = "Manavanna" #
+	dynasty = 1043001
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	650.1.1 = {
+		birth = "650.1.1"
+	}
+	726.1.1 = {
+		death = "726.1.1"
+	}
+}
+
+189001 = {
+	name = "Aggabodhi" #V
+	dynasty = 1043001
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = 189000
+	670.1.1 = {
+		birth = "670.1.1"
+	}
+	732.1.1 = {
+		death = "732.1.1"
+	}
+}
+
+189002 = {
+	name = "Kassapa" #III
+	dynasty = 1043001
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = 189000
+	675.1.1 = {
+		birth = "675.1.1"
+	}
+	738.1.1 = {
+		death = "738.1.1"
+	}
+}
+
+189003 = {
+	name = "Mahinda" #I
+	dynasty = 1043001
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = 189000
+	680.1.1 = {
+		birth = "680.1.1"
+	}
+	741.1.1 = {
+		death = "741.1.1"
+	}
+}
+
+189004 = {
+	name = "Aggabodhi" #VII
+	dynasty = 1043001
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = 189003
+	710.1.1 = {
+		birth = "710.1.1"
+	}
+	787.1.1 = {
+		death = "787.1.1"
+	}
+}
+
+189005 = {
+	name = "Aggabodhi" #VI
+	dynasty = 1043001
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = 189002
+	705.1.1 = {
+		birth = "705.1.1"
+	}
+	781.1.1 = {
+		death = "781.1.1"
+	}
+}
+
+189006 = {
+	name = "Mahinda" #II
+	dynasty = 1043001
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = 189005
+	730.1.1 = {
+		birth = "730.1.1"
+	}
+	807.1.1 = {
+		death = "807.1.1"
+	}
+}
+
+189007 = {
+	name = "Dappula" #II
+	dynasty = 1043001
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = 189006
+	750.1.1 = {
+		birth = "750.1.1"
+	}
+	812.1.1 = {
+		death = "812.1.1"
+	}
+}
+
+#SriLanka
+lambakana_01 = {
+	name = "Vasabha"
+	# Founder of the Lambakanna Dynasty
+	dynasty = 1043001
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	48.1.1 = {
+		birth = yes
+	}
+	111.1.1 = {
+		death = yes
+	}
+}
+lambakana_02 = {
+	name = "Vankanasika"
+	# Vankanasika second King of the Lambakanna Dynasty
+	dynasty = 1043001
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = lambakana_01 #Vasabha
+	65.1.1 = {
+		birth = yes
+	}
+	113.1.1 = {
+		death = yes
+	}
+}
+lambakana_03 = {
+	name = "Gajabahu"
+	# Third King of the Lambakanna Dynasty
+	dynasty = 1043001
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = lambakana_02 # Vankanasika
+	83.1.1 = {
+		birth = yes
+	}
+	135.1.1 = {
+		death = yes
+	}
+}
+lambakana_04 = {
+	name = "Mahallaka"
+	# Fourth King of the Lambakanna Dynasty
+	dynasty = 1043001
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = lambakana_03 #Gajabahu
+	104.1.1 = {
+		birth = yes
+	}
+	141.1.1 = {
+		death = yes
+	}
+}
+lambakana_05 = {
+	name = "Bhatika"
+	# Fifth King of the Lambakanna Dynasty
+	dynasty = 1043001
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = lambakana_04 #Mahallaka
+	121.1.1 = {
+		birth = yes
+	}
+	165.1.1 = {
+		death = yes
+	}
+}
+lambakana_06 = {
+	name = "Kanittha"
+	# Sixth King of the Lambakanna Dynasty
+	dynasty = 1043001
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = lambakana_04 #Mahallaka
+	139.1.1 = {
+		birth = yes
+	}
+	193.1.1 = {
+		death = yes
+	}
+}
+lambakana_07 = {
+	name = "Cula"
+	# Seventh King of the Lambakanna Dynasty
+	dynasty = 1043001
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = lambakana_06 #Kanittha
+	164.1.1 = {
+		birth = yes
+	}
+	195.1.1 = {
+		death = yes
+	}
+}
+lambakana_08 = {
+	name = "Kuda"
+	# Eigth King of the Lambakanna Dynasty and younger brother of Cula
+	dynasty = 1043001
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = lambakana_06 #Kanittha
+	167.1.1 = {
+		birth = yes
+	}
+	196.1.1 = {
+		death = yes
+	}
+}
+lambakana_09 = {
+	name = "Siri"
+	# Ninth King of the Lambakanna Dynasty and son in law of Kanittha
+	dynasty = 1043001
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = lambakana_06 #Kanittha
+	167.1.1 = {
+		birth = yes
+	}
+	215.1.1 = {
+		death = yes
+	}
+}
+lambakana_10 = {
+	name = "Voharika"
+	# Ninth King of the Lambakanna Dynasty
+	dynasty = 1043001
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = lambakana_09 #Siri
+	188.1.1 = {
+		birth = yes
+	}
+	237.1.1 = {
+		death = yes
+	}
+}
+lambakana_11 = {
+	name = "Abhaya"
+	# Thenth King of the Lambakanna Dynasty, younger brother of Voharika
+	dynasty = 1043001
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = lambakana_09 #Siri
+	196.1.1 = {
+		birth = yes
+	}
+	245.1.1 = {
+		death = yes
+	}
+}
+lambakana_12 = {
+	name = "Siri"
+	# Siri II ,Eleventh King of the Lambakanna Dynasty, son of Voharika
+	dynasty = 1043001
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = lambakana_10 #Voharika
+	213.1.1 = {
+		birth = yes
+	}
+	247.1.1 = {
+		death = yes
+	}
+}
+lambakana_13 = {
+	name = "Vijaya"
+	# Thirteenth King of the Lambakanna Dynasty, son of Siri II
+	dynasty = 1043001
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = lambakana_12 #Siri
+	230.1.1 = {
+		birth = yes
+	}
+	248.1.1 = {
+		death = yes
+	}
+}
+lambakana_14 = {
+	name = "Sangha"
+	# Fourteenth King of the Lambakanna Dynasty,
+	dynasty = 1043001
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = lambakana_09 #Siri
+	201.1.1 = {
+		birth = yes
+	}
+	252.1.1 = {
+		death = yes
+	}
+}
+lambakana_15 = {
+	name = "Sanghabodi"
+	# Sixteenth King of the Lambakanna Dynasty,
+	dynasty = 1043001
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = lambakana_09 #Siri
+	210.1.1 = {
+		birth = yes
+	}
+	254.1.1 = {
+		death = yes
+	}
+}
+lambakana_16 = {
+	name = "Gothabhaya"
+	# Seventeenth King of the Lambakanna Dynasty,
+	dynasty = 1043001
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = lambakana_09 #Siri
+	202.1.1 = {
+		birth = yes
+	}
+	267.1.1 = {
+		death = yes
+	}
+}
+lambakana_17 = {
+	name = "Jettha"
+	# Eighteenth King of the Lambakanna Dynasty,son of Gothabhaya
+	dynasty = 1043001
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = lambakana_16 #Gothabhaya
+	247.1.1 = {
+		birth = yes
+	}
+	277.1.1 = {
+		death = yes
+	}
+}
+lambakana_18 = {
+	name = "Mahasena"
+	# Nineteenth King of the Lambakanna Dynasty,son of Gothabhaya
+	dynasty = 1043001
+	religion = "mahayana"
+	culture = "sinhala"
+	trait = kshatriya
+	father = lambakana_16 #Gothabhaya
+	258.1.1 = {
+		birth = yes
+	}
+	304.1.1 = {
+		death = yes
+	}
+}
+lambakana_19 = {
+	name = "Sirimeghavanna"
+	# Twentieth King of the Lambakanna Dynasty,son of Mahasena
+	dynasty = 1043001
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = lambakana_18 #Mahasena
+	289.1.1 = {
+		birth = yes
+	}
+	332.1.1 = {
+		death = yes
+	}
+}
+lambakana_20 = {
+	name = "Jetta"
+	# Twenty First King of the Lambakanna Dynasty,son of Sirimeghavanna
+	dynasty = 1043001
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = lambakana_19 #Sirimeghavanna
+	305.1.1 = {
+		birth = yes
+	}
+	341.1.1 = {
+		death = yes
+	}
+}
+lambakana_21 = {
+	name = "Buddhadasa"
+	# Twenty Second King of the Lambakanna Dynasty,son of Jetta II
+	dynasty = 1043001
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = lambakana_20 #Jetta II
+	trait = education_stewardship_3
+	trait = architect
+	learning = 7
+	stewardship = 10
+	trait = just
+	trait = compassionate
+	327.1.1 = {
+		birth = yes
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+lambakana_22 = {
+	name = "Upatissa"
+	# Twenty Third King of the Lambakanna Dynasty,son of Buddhadasa
+	dynasty = 1043001
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = lambakana_21 #Buddhadasa
+	stewardship = 10
+	358.1.1 = {
+		birth = yes
+	}
+	412.1.1 = {
+		death = yes
+	}
+}
+lambakana_23 = {
+	name = "Mahanama"
+	# Twenty Fourth King of the Lambakanna Dynasty,son of Buddhadasa
+	dynasty = 1043001
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = lambakana_21 #Buddhadasa
+	362.1.1 = {
+		birth = yes
+	}
+	434.1.1 = {
+		death = yes
+	}
+}
+lambakana_24 = {
+	name = "Soththisena"
+	# Twenty Fifth King of the Lambakanna Dynasty,son of Mahanama
+	dynasty = 1043001
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = lambakana_23 #Mahanama
+	362.1.1 = {
+		birth = yes
+	}
+	434.1.2 = {
+		death = yes
+	}
+}
+lambakana_25 = {
+	name = "Chattagahaka"
+	# Twenty Fifth King of the Lambakanna Dynasty,son of Mahanama
+	dynasty = 1043001
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	female = yes
+	father = lambakana_23 #Mahanama
+	362.1.1 = {
+		birth = yes
+	}
+	434.1.2 = {
+		death = yes
+	}
+}
+lambakana_27 = {
+	name = "Sangha"
+	# Twenty Fifth King of the Lambakanna Dynasty,son of Mahanama
+	dynasty = 1043001
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	female = yes
+	father = lambakana_23 #Mahanama
+	369.1.1 = {
+		birth = yes
+	}
+	434.1.2 = {
+		death = yes
+	}
+}
+lambakana_26 = {
+	name = "Mittasena"
+	# Twenty Fifth King of the Lambakanna Dynasty,son of Mahanama
+	dynasty = 1043001
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = lambakana_24 #Anuradhapura
+	398.1.1 = {
+		birth = yes
+	}
+	436.1.1 = {
+		death = yes
+	}
+}
+####
+moriya_01 = {
+	name = "Dathanama"
+	# Twenty Fifth King of the Lambakanna Dynasty,son of Mahanama
+	dynasty = moriya_dynasty
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	400.1.1 = {
+		birth = yes
+	}
+	438.1.1 = {
+		death = yes
+	}
+}
+moriya_02 = {
+	name = "Dhatusena"
+	# Twenty Fifth King of the Lambakanna Dynasty,son of Mahanama
+	dynasty = moriya_dynasty
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = moriya_01
+	mother = lambakana_27
+	trait = zealous
+	trait = diligent
+	trait = just
+	trait = education_stewardship_4	
+	trait = kinslayer_3
+	421.1.1 = {
+		birth = yes
+	}
+	473.1.1 = {
+		death = {
+			death_reason = death_execution
+			killer = moriya_03
+		}
+	}
+}
+moriya_03 = {
+	name = "Kassapa"
+	# Twenty Fifth King of the Lambakanna Dynasty,son of Mahanama
+	dynasty = moriya_dynasty
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = moriya_02
+	trait = ambitious
+	trait = greedy
+	trait = callous
+	trait = child_of_concubine # bastard
+	trait = education_martial_2	
+	trait = kinslayer_3
+	stewardship = 10
+	443.1.1 = {
+		birth = yes
+	}
+	473.1.1 = {
+        give_nickname = nick_the_patricide
+		effect = {
+			set_relation_rival = { target = character:moriya_04 reason = rival_historical }
+		}
+	}
+	495.1.1 = {
+		death = yes
+	}
+}
+moriya_031 = {
+	name = "Bodhi"
+	# Twenty Fifth King of the Lambakanna Dynasty,son of Mahanama
+	dynasty = moriya_dynasty
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = moriya_03
+	female = yes
+	463.1.1 = {
+		birth = yes
+	}
+	495.1.1 = {
+		death = yes
+	}
+}
+moriya_032 = {
+	name = "Uthpalawanna"
+	# Twenty Fifth King of the Lambakanna Dynasty,son of Mahanama
+	dynasty = moriya_dynasty
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = moriya_03
+	female = yes
+	467.1.1 = {
+		birth = yes
+	}
+	495.1.1 = {
+		death = yes
+	}
+}
+moriya_04 = {
+	name = "Moggallana"
+	dynasty = moriya_dynasty
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = moriya_02
+	trait = education_learning_3
+	trait = zealous
+	trait = paranoid
+	trait = fickle
+	446.1.1 = {
+		birth = yes
+	}
+	515.1.1 = {
+		death = yes
+	}
+}
+
+
+
+# Name unknown
+# Dhatusena's sister and Migara's mother
+moriya_15 = {
+	name = "Pusamitta"
+	dynasty = moriya_dynasty
+	religion = "theravada"
+	culture = "sinhala"
+	father = moriya_01
+	trait = kshatriya
+	female = yes
+	423.1.5 = {
+		birth = yes
+	}
+	472.1.1 = {
+		death = {
+			death_reason = death_execution
+			killer = moriya_02
+		}
+	}
+}
+# Cybr: Commander of the king's army and Kassapa's cousin, married to Kassapa's sister
+# Convinced Kassapa to overthrow his father, because of a disagreement between himself and the old king
+# Disagreement was caused when Kassapa injured the sister, and in retaliation Dhatusena killed his sister/Migara's mother
+moriya_06 = {
+	name = "Migara"
+	religion = "theravada"
+	culture = "sinhala"
+	mother = moriya_15
+	trait = kshatriya
+	trait = education_martial_3
+	trait = vengeful
+	trait = deceitful
+	trait = wrathful
+	444.4.4 = {
+		birth = yes
+	}
+	470.1.1 = {
+		add_spouse = moriya_07
+	}
+	490.5.14 = {
+		death = {
+			death_reason = death_execution
+			killer = moriya_06
+		}
+	}
+}
+# Kassapa and Moggallana's sister, Migara's wife
+moriya_07 = {
+	name = "Lilavati"
+	dynasty = moriya_dynasty
+	religion = "theravada"
+	culture = "sinhala"
+	father = moriya_02
+	trait = kshatriya
+	female = yes
+	452.3.16 = {
+		birth = yes
+	}
+	511.1.5 = {
+		death = yes
+	}
+}
+
+
+
+moriya_100 = {
+	name = "Kumara_Dhatusena"
+	dynasty = moriya_dynasty
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = moriya_04
+	464.1.1 = {
+		birth = yes
+	}
+	524.1.1 = {
+		death = yes
+	}
+}
+moriya_101 = {
+	name = "Kittisena"
+	dynasty = moriya_dynasty
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = moriya_100
+	500.1.1 = {
+		birth = yes
+	}
+	524.6.1 = {
+		death = {
+			death_reason = death_assassination
+			killer = moriya_102
+		}
+	}
+}
+# Cybr: Supposed to be uncle of Kittisena, but I'm not sure if he was a maternal or paternal uncle or a distant cousin
+# Having him as the younger brother of Kittisena's father, Kumara Dhatusena, for now
+moriya_102 = {
+	name = "Siva"
+	dynasty = moriya_dynasty
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = moriya_04
+	465.1.1 = {
+		birth = yes
+	}
+	525.1.1 = {
+		death = yes
+	}
+}
+# Wikipedia says he's the son-in-law of Siva, so I guess he's technically not related?
+moriya_103 = {
+	name = "Upatissa"
+	dynasty = moriya_dynasty
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	#father = moriya_102
+	480.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		add_spouse = moriya_104
+	}
+	526.1.1 = {
+		death = yes
+	}
+}
+moriya_104 = {
+	name = "Suriguta"
+	female=yes
+	dynasty = moriya_dynasty
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = moriya_102
+	483.1.1 = {
+		birth = yes
+	}
+	530.1.1 = {
+		death = yes
+	}
+}
+# Wikipedia says he's Upatissa's son-in-law, and of Lambakanna descent, not sure what's up with that
+moriya_105 = {
+	name = "Silakala_Ambosamanera"
+	dynasty = moriya_dynasty
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	501.1.1 = {
+		birth = yes
+	}
+	518.1.1 = {
+		add_spouse = moriya_108
+	}
+	539.1.1 = {
+		death = yes
+	}
+}
+moriya_106 = {
+	name = "Dathappabhuti"
+	dynasty = moriya_dynasty
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = moriya_105
+	mother = moriya_108
+	522.1.1 = {
+		birth = yes
+	}
+	540.1.1 = {
+		death = yes
+	}
+}
+moriya_107 = {
+	name = "Moggallana"
+	dynasty = moriya_dynasty
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = moriya_105
+	mother = moriya_108
+	519.1.1 = {
+		birth = yes
+	}
+	560.1.1 = {
+		death = yes
+	}
+}
+moriya_108 = {
+	name = "Pamatissa"
+	female=yes
+	dynasty = moriya_dynasty
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = moriya_103
+	mother = moriya_104
+	500.1.1 = {
+		birth = yes
+	}
+	560.1.1 = {
+		death = yes
+	}
+}
+moriya_109 = {
+	name = "Kittisiri_Meghavanna"
+	dynasty = moriya_dynasty
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	father = moriya_107
+	539.1.1 = {
+		birth = yes
+	}
+	561.1.1 = {
+		death = yes
+	}
+}
+
+
+
+
+
+##################################################################################
+# 
+# MALDIVES
+# 
+##################################################################################
+
+
+
+
+
+### More to be added
+maldives_01 = {
+	name = "Moggallana"
+	religion = "vajrayana"
+	culture = "sinhala"
+	trait = kshatriya
+	340.1.1 = {
+		birth = yes
+	}
+	365.1.1 = {
+		death = yes
+	}
+}
+maldives_02 = {
+	name = "Aggabodhi"
+	religion = "vajrayana"
+	culture = "sinhala"
+	trait = kshatriya
+	371.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+maldives_03 = {
+	name = "Manavanna"
+	religion = "vajrayana"
+	culture = "sinhala"
+	trait = kshatriya
+	432.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+maldives_04 = {
+	name = "Sanghatissa"
+	religion = "vajrayana"
+	culture = "sinhala"
+	trait = kshatriya
+	507.1.1 = {
+		birth = yes
+	}
+	579.1.1 = {
+		death = yes
+	}
+}
+
+##################################################################################
+# 
+# FICTITIOUS PLACEHOLDERS
+# By Cybrxkhan
+# 
+##################################################################################
+
+sinhala_misc_001 = {
+	name = "Sumana"
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	509.11.13 = {
+		birth = yes
+	}
+	569.4.20 = {
+		death = yes
+	}
+}
+
+sinhala_misc_002 = {
+	name = "Hujata"
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	492.6.17 = {
+		birth = yes
+	}
+	589.6.19 = {
+		death = yes
+	}
+}
+
+sinhala_misc_003 = {
+	name = "Rohaka"
+	religion = "theravada"
+	culture = "sinhala"
+	trait = kshatriya
+	487.12.11 = {
+		birth = yes
+	}
+	549.6.12 = {
+		death = yes
+	}
+}
+

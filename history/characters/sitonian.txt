@@ -1,0 +1,253 @@
+﻿frosti_01 = {
+	name = "Fornjot"
+	dynasty = fornjot_dynasty
+	religion = "finnish_pagan"
+	culture = "sitonian"
+	259.1.1 = {
+		birth = yes
+	}
+	315.1.1 = {
+		death = yes
+	}
+}
+frosti_02 = {
+	name = "Skjalf"
+	female = yes
+	dynasty = fornjot_dynasty
+	father = fornjot_01
+	religion = "finnish_pagan"
+	culture = "sitonian"
+	326.1.1 = {
+		birth = yes
+	}
+	390.1.1 = {
+		death = yes
+	}
+}
+frosti_03 = {
+	name = "Kari"
+	dynasty = fornjot_dynasty
+	father = frosti_01
+	religion = "finnish_pagan"
+	culture = "sitonian"
+	284.1.1 = {
+		birth = yes
+	}
+	343.1.1 = {
+		death = yes
+	}
+}
+frosti_04 = {
+	name = "Logi"
+	dynasty = fornjot_dynasty
+	father = frosti_01
+	religion = "finnish_pagan"
+	culture = "sitonian"
+	286.1.1 = {
+		birth = yes
+	}
+	349.1.1 = {
+		death = yes
+	}
+}
+frosti_05 = {
+	name = "Agir"
+	dynasty = fornjot_dynasty
+	father = frosti_01
+	religion = "finnish_pagan"
+	culture = "sitonian"
+	281.1.1 = {
+		birth = yes
+	}
+	341.1.1 = {
+		death = yes
+	}
+}
+fornjot_01 = {
+	name = "Frosti"
+	dynasty = fornjot_dynasty
+	religion = "finnish_pagan"
+	culture = "sitonian"
+	father = frosti_03
+	304.1.1 = {
+		birth = yes
+	}
+	360.1.1 = {
+		death = yes
+	}
+}
+fornjot_02 = {
+	name = "Snio"
+	dynasty = fornjot_dynasty
+	religion = "finnish_pagan"
+	culture = "sitonian"
+	father = fornjot_01
+	321.1.1 = {
+		birth = yes
+	}
+	386.1.1 = {
+		give_nickname = nick_the_old
+		death = yes
+	}
+}
+fornjot_03 = {
+	name = "Thorri"
+	dynasty = fornjot_dynasty
+	religion = "finnish_pagan"
+	culture = "sitonian"
+	father = fornjot_02
+	340.1.1 = {
+		birth = yes
+	}
+	395.1.1 = {
+		death = yes
+	}
+}
+fornjot_04 = {
+	name = "Nor"
+	dynasty = fornjot_dynasty
+	religion = "norse_pagan"
+	culture = "sitonian"
+	father = fornjot_03
+	363.1.1 = {
+		birth = yes
+	}
+	385.1.1 = {
+		add_spouse = jutland_13
+		culture = "norse"
+	}
+	415.1.1 = {
+		death = yes
+	}
+}
+fornjot_05 = {
+	name = "Gor"
+	dynasty = fornjot_dynasty
+	religion = "finnish_pagan"
+	culture = "sitonian"
+	father = fornjot_03
+	364.1.1 = {
+		birth = yes
+	}
+	415.1.1 = {
+		death = yes
+	}
+}
+fornjot_06 = {
+	name = "Goi"
+	female = yes
+	dynasty = fornjot_dynasty
+	religion = "finnish_pagan"
+	culture = "sitonian"
+	father = fornjot_03
+	365.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+fornjot_07 = {
+	name = "Heiti"
+	dynasty = fornjot_dynasty
+	religion = "finnish_pagan"
+	culture = "sitonian"
+	father = fornjot_05
+	396.1.1 = {
+		birth = yes
+	}
+	445.1.1 = {
+		death = yes
+	}
+}
+fornjot_08 = {
+	name = "Beiti"
+	dynasty = fornjot_dynasty
+	religion = "finnish_pagan"
+	culture = "sitonian"
+	father = fornjot_05
+	398.1.1 = {
+		birth = yes
+	}
+	443.1.1 = {
+		death = yes
+	}
+}
+fornjot_09 = {
+	name = "Myndill"
+	dynasty = fornjot_dynasty
+	religion = "finnish_pagan"
+	culture = "sitonian"
+	father = fornjot_07
+	422.1.1 = {
+		birth = yes
+	}
+	474.1.1 = {
+		death = yes
+	}
+}
+fornjot_10 = {
+	name = "Sveidi"
+	dynasty = fornjot_dynasty
+	religion = "finnish_pagan"
+	culture = "sitonian"
+	father = fornjot_07
+	426.1.1 = {
+		birth = yes
+	}
+	476.1.1 = {
+		death = yes
+	}
+}
+fornjot_11 = {
+	name = "Ekkill"
+	dynasty = fornjot_dynasty
+	religion = "finnish_pagan"
+	culture = "sitonian"
+	father = fornjot_09
+	440.1.1 = {
+		birth = yes
+	}
+	490.1.1 = {
+		death = yes
+	}
+}
+fornjot_12 = {
+	name = "Skekkill"
+	dynasty = fornjot_dynasty
+	religion = "finnish_pagan"
+	culture = "sitonian"
+	father = fornjot_09
+	445.1.1 = {
+		birth = yes
+	}
+	505.1.1 = {
+		death = yes
+	}
+}
+fornjot_13 = {
+	name = "Vifill"
+	female = yes
+	dynasty = fornjot_dynasty
+	religion = "finnish_pagan"
+	culture = "sitonian"
+	father = fornjot_08
+	426.1.1 = {
+		birth = yes
+	}
+	476.1.1 = {
+		death = yes
+	}
+}
+
+kven_01 = {
+	name = "Gylfi"
+	religion = "finnish_pagan"
+	culture = "sitonian"
+	502.1.1 = {
+		birth = yes
+	}
+	565.1.1 = {
+		death = yes
+	}
+}

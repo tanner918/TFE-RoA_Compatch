@@ -1,0 +1,65 @@
+﻿
+struggle_north_indian_house_terror_modifier = {
+	icon = blood_positive
+	prowess = 2
+	dread_baseline_add = 10
+	siege_phase_time = -0.3
+}
+
+struggle_north_indian_house_mastery_modifier = {
+	icon = county_modifier_control_positive
+	intrigue = 2
+	army_maintenance_mult = -0.05
+	max_hostile_schemes_add = 1
+}
+
+struggle_north_indian_house_authority_modifier = {
+	icon = dread_positive
+	martial = 2
+	vassal_tax_mult = 0.15
+	men_at_arms_cap = 1	
+}
+
+struggle_north_indian_house_majesty_modifier = {
+	icon = prestige_positive
+	diplomacy = 2
+	independent_ruler_opinion = 10
+	monthly_dynasty_prestige_mult = 0.03	
+}
+
+struggle_north_indian_house_might_modifier = {
+	icon = hunt_positive
+	martial = 2
+	mercenary_hire_cost_mult = -0.2
+	additional_fort_level = 1
+}
+
+struggle_north_indian_house_opulence_modifier = {
+	icon = treat_positive
+	stewardship = 2
+	build_gold_cost = -0.05
+	max_personal_schemes_add = 1
+}
+
+struggle_north_indian_house_religious_modifier = {
+	icon = fertility_positive
+	learning = 2
+	monthly_county_control_growth_add = 0.2
+	monthly_lifestyle_xp_gain_mult = 0.15
+}
+
+struggle_north_indian_house_cultural_modifier = {
+	icon = letter_positive
+	diplomacy = 2
+	cultural_head_fascination_mult = 0.15
+	development_growth = 0.2
+}
+
+struggle_north_indian_house_economical_modifier = {
+	icon = goods_positive
+	stewardship = 2
+	build_gold_cost = -0.05	
+	domain_tax_mult = 0.05	
+}
+
+# knight_effectiveness_mult = 0.1

@@ -1,0 +1,1113 @@
+﻿namespace = gothic_wars
+
+########################################
+## 0001-0004: King of the Goths       ##
+## 0011-0016: Invasion of Radagaisus  ##
+########################################
+
+### King of the Goths is crowned after the Death of Theodosius and starts a rebellion 
+### by Juli
+gothic_wars.0001 = {
+	type = character_event
+	theme = war
+	title = gothic_wars_0001.t
+	desc = gothic_wars_0001.desc
+	override_icon = { reference = "gfx/interface/icons/event_types/special_visigoths.dds" }
+
+	left_portrait = {
+		character = ROOT 
+		animation = rage 
+	}
+	right_portrait = {
+		character = character:70534
+		animation = zealous
+	}
+	lower_left_portrait = {
+		character = title:e_western_roman_empire.holder
+		animation = cynical
+	}
+	lower_right_portrait = {
+		character = title:e_byzantium.holder
+		animation = grief
+	}
+	
+	option = {
+		name = gothic_wars_0001.a
+		add_character_modifier = {
+			modifier = TFE_king_of_the_goths_modifier # They became King of the Goths
+		}
+	}
+}
+### King of the Goth Has won the rebellion and now can choose to press demands on the emperor
+### by Juli
+gothic_wars.0002 = {
+	type = character_event
+	theme = war
+	title = gothic_wars_0002.t
+	desc = gothic_wars_0002.desc
+	override_icon = { reference = "gfx/interface/icons/event_types/special_visigoths.dds" }
+
+	left_portrait = {
+		character = ROOT 
+		animation = personality_zealous 
+	}
+	right_portrait = {
+		character = title:e_byzantium.holder
+		animation = shame
+	}
+	
+	option = { # The King chooses to pressure the Emperor into giving him an office
+		custom_tooltip = gothic_wars_0002.option.a.tooltip
+		name = gothic_wars_0002.a
+		title:e_byzantium.holder = {trigger_event = gothic_wars.0003 }
+		ai_chance = {
+			# AI should always be fairly likely to pick this.
+			base = 100
+		}
+	}
+	option = { # The King chooses to forgive the romans and settle with the plundering he gained
+		name = gothic_wars_0002.b
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+### Emperor of Byzantium recieves demand from the Goths
+### by Juli
+gothic_wars.0003 = {
+	type = character_event
+	theme = war
+	title = gothic_wars_0003.t
+	desc = gothic_wars_0003.desc
+	override_icon = { reference = "gfx/interface/icons/event_types/special_visigoths.dds" }
+
+	left_portrait = {
+		character = title:k_visigoths.holder
+		animation = personality_greedy
+	}
+	right_portrait = {
+		character = title:e_byzantium.holder
+		animation = vengeful
+	}
+	
+	option = { # The Emperor accepts the demands
+		name = gothic_wars_0003.a
+		title:k_visigoths.holder = {trigger_event = gothic_wars.0004 }
+		ai_chance = {
+			# AI should always be fairly likely to pick this.
+			base = 100
+		}
+	}
+	option = { # The Emperor declines the offer, making the goths rebel again
+		name = gothic_wars_0003.b
+		title:k_visigoths.holder = {
+			start_war = {
+				casus_belli = depose_war
+				target = title:e_byzantium.holder
+				target_title = title:e_byzantium
+			}
+		}
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+### King of the Goths is granted an Office in Illyricum
+### by Juli
+gothic_wars.0004 = {
+	type = character_event
+	theme = war
+	title = gothic_wars_0004.t
+	desc = gothic_wars_0004.desc
+	override_icon = { reference = "gfx/interface/icons/event_types/special_visigoths.dds" }
+
+	left_portrait = {
+		character = ROOT 
+		animation = personality_bold
+	}
+	right_portrait = {
+		character = title:e_byzantium.holder
+		animation = shame
+	}
+	
+	option = { # The Emperor accepted the demands and grants Illyricum to Alaric
+		name = gothic_wars_0004.a
+		every_county_in_region = {
+			region = custom_roman_illyricum
+			limit = {
+				holder = {
+					highest_held_title_tier < tier_kingdom #to not vassalize the vicar
+					top_liege = title:e_byzantium.holder
+				}
+			}
+			create_title_and_vassal_change = {
+			  type = conquest
+			  save_scope_as = change
+			  add_claim_on_loss = no
+			}
+			holder = {
+				change_liege = {
+					liege = root
+					change = scope:change
+				}
+			}
+			resolve_title_and_vassal_change = scope:change
+		}
+		hidden_effect = {
+			every_realm_county = {
+				limit = {
+					NOT = {
+						any_county_in_region = {
+							region = custom_roman_illyricum
+							THIS = PREV
+						}
+					}
+					holder = {
+						OR = {
+							any_liege_or_above = {
+								THIS = root
+							}
+							THIS = root
+						}
+					}
+				}
+				if = {
+					limit = {
+						holder = root
+					}
+					create_character = {
+						location = THIS.title_province
+						gender = male
+						dynasty = generate
+						faith = root.faith
+						culture = root.culture
+						save_scope_as = local_warlord
+					}
+					create_title_and_vassal_change = {
+						type = usurped
+						save_scope_as = change
+						add_claim_on_loss = no
+					}
+					change_title_holder = {
+						holder = scope:local_warlord
+						change = scope:change
+						take_baronies = yes
+					}
+					resolve_title_and_vassal_change = scope:change
+					create_title_and_vassal_change = {
+						type = conquest
+						save_scope_as = change
+						add_claim_on_loss = no
+					}
+					scope:local_warlord = {
+						change_liege = {
+							liege = title:e_byzantium.holder
+							change = scope:change
+						}
+					}
+					resolve_title_and_vassal_change = scope:change
+				}
+				else = {
+					holder = {
+						create_title_and_vassal_change = {
+							type = conquest
+							save_scope_as = change
+							add_claim_on_loss = no
+						}
+						change_liege = {
+							liege = title:e_byzantium.holder
+							change = scope:change
+						}
+						resolve_title_and_vassal_change = scope:change
+					}
+				}
+				
+			}
+		}
+		add_pressed_claim = title:k_italia_suburbicariae
+	}
+}
+
+### Invasion of the Gothic pagan Radagaisus around in 405-406 - Hróð
+gothic_wars.0011 = {
+	scope = none
+	hidden = yes
+
+	immediate = {
+		debug_log = "Radagaisus appeared!"
+		debug_log_date = yes
+		spawn_radagaisus_character_effect = yes
+	}
+}
+## Radagaisus notification event global - Hróð
+gothic_wars.0012 = {
+	type = character_event
+	theme = war
+	title = gothic_wars_0012.t
+	desc = gothic_wars_0012.desc
+
+	left_portrait = {
+		character = character:radagaisian_02
+		animation = rage 
+	}
+	right_portrait = {
+		character = title:e_western_roman_empire.holder
+		animation = fear
+	}
+
+	option = {
+		name = gothic_wars_0012.a
+	}
+}
+## Radagaisus notification event for defender - Hróð
+gothic_wars.0013 = {
+	type = character_event
+	theme = war
+	title = gothic_wars_0012.t
+	desc = gothic_wars_0013.desc
+
+	left_portrait = {
+		character = character:radagaisian_02
+		animation = rage 
+	}
+	right_portrait = {
+		character = ROOT
+		animation = fear
+	}
+
+	option = {
+		name = gothic_wars_0013.a
+	}
+}
+## Defender event if Radagaisus wins - Hróð
+gothic_wars.0014 = {
+	type = character_event
+	theme = war
+	title = gothic_wars_0012.t
+	desc = gothic_wars_0014.desc
+
+	left_portrait = {
+		character = character:radagaisian_02
+		animation = personality_bold
+	}
+	right_portrait = {
+		character = scope:defender
+		animation = shame
+	}
+
+	option = {
+		name = gothic_wars_0014.a
+		scope:defender = {
+			add_pressed_claim = title:k_italia_annonariae
+			add_pressed_claim = title:k_italia_suburbicariae
+		}
+	}
+}
+## Event for the Visigothic King if Radagaisus loses - Hróð
+gothic_wars.0015 = {
+	type = character_event
+	theme = war
+	title = gothic_wars_0012.t
+	desc = gothic_wars_0015.desc
+
+	left_portrait = {
+		character = scope:defender
+		animation = personality_bold
+	}
+	right_portrait = {
+		character = character:radagaisian_02
+		animation = grief
+	}
+
+	option = {
+		name = gothic_wars_0015.a
+		scope:visigothic_king = {
+			add_unpressed_claim = title:k_italia_annonariae
+			add_unpressed_claim = title:k_italia_suburbicariae
+		}
+		title:e_western_roman_empire.holder = {
+			add_opinion = {
+				target = scope:visigothic_king
+				modifier = angry_opinion
+				opinion = -30
+			}
+		}
+		title:e_byzantium.holder = {
+			add_opinion = {
+				target = scope:visigothic_king
+				modifier = angry_opinion
+				opinion = -30
+			}
+		}
+		spawn_smaller_gothic_troops_effect = yes
+		ai_chance = {
+			base = 50
+
+			opinion_modifier = {
+				if = {
+					exists = scope:visigothic_king.liege
+				}
+				who = scope:visigothic_king
+				opinion_target = scope:visigothic_king.liege
+				multiplier = 1
+			}
+		}
+	}
+	option = {
+		name = gothic_wars_0015.b
+		title:e_western_roman_empire.holder = {
+			add_opinion = {
+				target = scope:visigothic_king
+				modifier = pleased_opinion
+				opinion = 30
+			}
+		}
+		title:e_byzantium.holder = {
+			add_opinion = {
+				target = scope:visigothic_king
+				modifier = pleased_opinion
+				opinion = 30
+			}
+		}
+		ai_chance = {
+			base = 50
+
+			opinion_modifier = {
+				if = {
+					exists = scope:visigothic_king.liege
+				}
+				who = scope:visigothic_king
+				opinion_target = scope:visigothic_king.liege
+				multiplier = 1
+			}
+		}
+	}
+}
+## Event for Radagaisus' execution - Hróð
+gothic_wars.0016 = {
+	scope = none
+	hidden = yes
+
+	# Execution
+	immediate = {
+		title:k_goths.holder = {
+			death = {
+				death_reason = death_execution
+				killer = IMPRISONER
+			}
+		}
+		scope:dead = {
+			every_close_family_member = {
+				limit = { NOT = { this = IMPRISONER } }
+				add_opinion = {
+					modifier = pleased_opinion
+					opinion = 30
+					target = IMPRISONER
+				}
+			}
+		}
+		execute_opinion_effect = { VICTIM = title:k_goths.holder EXECUTIONER = IMPRISONER }
+	}
+}
+
+gothic_wars.0017 = {
+	scope = none
+	hidden = yes
+
+	# Execution
+	immediate = {
+		theodric_tributary_effect = yes
+	}
+}
+
+gothic_wars.0018 = {
+	scope = none
+	hidden = yes
+
+	immediate = {
+		trigger_event = gothic_wars.0022
+		trigger_event = gothic_wars.0023
+		trigger_event = {
+			id = gothic_wars.0024
+			days = 1
+		}
+	}
+}
+
+gothic_wars.0019 = {
+	type = character_event
+	theme = war
+	title = gothic_wars_0019.t
+	desc = gothic_wars_0019.desc
+
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+
+	option = {
+		name = gothic_wars_0019.a
+		custom_tooltip = gothic_wars_0019.a.tt
+		hidden_effect = { start_suebi_migration_effect = yes }
+		spawn_army = {
+			name = "Suebic Migrators"
+			levies = 1000
+			men_at_arms = {
+				type = bowmen
+				stacks = 2
+			}
+			men_at_arms = {
+				type = light_horsemen
+				stacks = 2
+			}
+			men_at_arms = {
+				type = light_footmen
+				stacks = 2
+			}
+			location = province:4147
+			inheritable = no
+		}
+		spawn_army = {
+			name = "Suebic Migrators"
+			levies = 1000
+			men_at_arms = {
+				type = bowmen
+				stacks = 2
+			}
+			men_at_arms = {
+				type = light_horsemen
+				stacks = 2
+			}
+			men_at_arms = {
+				type = light_footmen
+				stacks = 2
+			}
+			location = province:4147
+			inheritable = no
+		}
+		spawn_army = {
+			name = "Suebic Migrators"
+			levies = 1000
+			men_at_arms = {
+				type = bowmen
+				stacks = 2
+			}
+			men_at_arms = {
+				type = light_horsemen
+				stacks = 2
+			}
+			men_at_arms = {
+				type = light_footmen
+				stacks = 2
+			}
+			location = province:4147
+			inheritable = yes
+		}
+		spawn_army = {
+			name = "Suebic Migrators"
+			levies = 1000
+			men_at_arms = {
+				type = bowmen
+				stacks = 2
+			}
+			men_at_arms = {
+				type = light_horsemen
+				stacks = 2
+			}
+			men_at_arms = {
+				type = light_footmen
+				stacks = 2
+			}
+			location = province:4147
+			inheritable = yes
+		}
+		ai_chance = { base = 100 }
+	}
+	option = {
+		name = gothic_wars_0019.b
+		ai_chance = { base = 0 }
+	}
+}
+
+gothic_wars.0020 = {
+	type = character_event
+	theme = war
+	title = gothic_wars_0019.t
+	desc = gothic_wars_0019.desc
+
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+
+	option = {
+		name = gothic_wars_0019.a
+		custom_tooltip = gothic_wars_0019.a.tt
+		hidden_effect = { start_hasdingi_migration_effect = yes }
+		spawn_army = {
+			name = "Vandal Migrators"
+			levies = 1000
+			men_at_arms = {
+				type = bowmen
+				stacks = 2
+			}
+			men_at_arms = {
+				type = light_horsemen
+				stacks = 2
+			}
+			men_at_arms = {
+				type = light_footmen
+				stacks = 2
+			}
+			location = root.capital_province
+			inheritable = no
+		}
+		spawn_army = {
+			name = "Vandal Migrators"
+			levies = 1000
+			men_at_arms = {
+				type = bowmen
+				stacks = 2
+			}
+			men_at_arms = {
+				type = light_horsemen
+				stacks = 2
+			}
+			men_at_arms = {
+				type = light_footmen
+				stacks = 2
+			}
+			location = root.capital_province
+			inheritable = yes
+		}
+		ai_chance = { base = 100 }
+	}
+	option = {
+		name = gothic_wars_0019.b
+		ai_chance = { base = 0 }
+	}
+}
+
+gothic_wars.0021 = {
+	type = character_event
+	theme = war
+	title = gothic_wars_0019.t
+	desc = gothic_wars_0019.desc
+
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+
+	option = {
+		name = gothic_wars_0019.a
+		custom_tooltip = gothic_wars_0019.a.tt
+		hidden_effect = { start_silingi_migration_effect = yes }
+		spawn_army = {
+			name = "Vandal Migrators"
+			levies = 1000
+			men_at_arms = {
+				type = bowmen
+				stacks = 2
+			}
+			men_at_arms = {
+				type = light_horsemen
+				stacks = 2
+			}
+			men_at_arms = {
+				type = light_footmen
+				stacks = 2
+			}
+			location = root.capital_province
+			inheritable = no
+		}
+		spawn_army = {
+			name = "Vandal Migrators"
+			levies = 1000
+			men_at_arms = {
+				type = bowmen
+				stacks = 2
+			}
+			men_at_arms = {
+				type = light_horsemen
+				stacks = 2
+			}
+			men_at_arms = {
+				type = light_footmen
+				stacks = 2
+			}
+			location = root.capital_province
+			inheritable = yes
+		}
+		ai_chance = { base = 100 }
+	}
+	option = {
+		name = gothic_wars_0019.b
+		ai_chance = { base = 0 }
+	}
+}
+
+gothic_wars.0022 = {
+	scope = none
+	hidden = yes
+
+	immediate = {
+		spawn_suebi_character_effect = yes
+		create_dynamic_title = {
+			tier = duchy
+			name = {
+				first_valid = {
+					triggered_desc = {
+						trigger = {
+							faith = { has_doctrine = doctrine_gender_male_dominated }
+						}
+						desc = "Suebic Migrators"
+					}
+					#Fallback, just in case.
+					desc = "Suebic Migrators"
+				}
+			}
+		}
+		create_title_and_vassal_change = {
+			type = created
+			save_scope_as = change
+			add_claim_on_loss = no
+		}
+		scope:new_title = {
+			set_capital_county = title:c_zatec
+			set_landless_title = yes
+			set_destroy_on_gain_same_tier = yes
+			set_no_automatic_claims = yes
+			set_can_be_named_after_dynasty = no
+			change_title_holder = {
+				holder = scope:suebi_king
+				change = scope:change
+			}
+		}
+		resolve_title_and_vassal_change = scope:change
+		scope:new_title = {
+			generate_coa = yes
+			set_variable = {
+				name = temporary_title
+				value = yes
+			}
+		}
+		scope:suebi_king = {
+			add_prestige = 1500
+			trigger_event = gothic_wars.0019
+		}
+	}
+}
+
+gothic_wars.0023 = {
+	scope = none
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = {
+				any_ruler = {
+					culture = culture:vandal
+					is_at_war = no
+					OR = {
+						is_independent_ruler = yes
+						AND = {
+							NOT = { culture = liege.culture }
+							NOT = { culture = top_liege.culture }
+						}
+					}
+				}
+			}
+			random_ruler = {
+				limit = {
+					culture = culture:vandal
+					is_at_war = no
+					OR = {
+						is_independent_ruler = yes
+						AND = {
+							NOT = { culture = liege.culture }
+							NOT = { culture = top_liege.culture }
+						}
+					}
+				}
+				save_scope_as = vandal_king1
+				weight = {
+					base = 1
+					modifier = {
+						add = 100
+						has_title = title:d_hasdingi_vandals
+					}
+				}
+			}
+			scope:vandal_king1 = {
+				trigger_event = gothic_wars.0020
+			}
+		}
+		else = {
+			spawn_vandal1_character_effect = yes
+			create_dynamic_title = {
+				tier = duchy
+				name = {
+					first_valid = {
+						triggered_desc = {
+							trigger = {
+								faith = { has_doctrine = doctrine_gender_male_dominated }
+							}
+							desc = "Vandal Migrators"
+						}
+						#Fallback, just in case.
+						desc = "Vandal Migrators"
+					}
+				}
+			}
+			create_title_and_vassal_change = {
+				type = created
+				save_scope_as = change
+				add_claim_on_loss = no
+			}
+			scope:new_title = {
+				set_capital_county = title:c_komarom
+				set_landless_title = yes
+				set_destroy_on_gain_same_tier = yes
+				set_no_automatic_claims = yes
+				set_can_be_named_after_dynasty = no
+				change_title_holder = {
+					holder = scope:vandal_king1
+					change = scope:change
+				}
+			}
+			resolve_title_and_vassal_change = scope:change
+			scope:new_title = {
+				generate_coa = yes
+				set_variable = {
+					name = temporary_title
+					value = yes
+				}
+			}
+			scope:vandal_king1 = {
+				add_prestige = 1500
+				spawn_army = {
+					name = "Vandal Migrators"
+					levies = 1000
+					men_at_arms = {
+						type = bowmen
+						stacks = 2
+					}
+					men_at_arms = {
+						type = light_horsemen
+						stacks = 2
+					}
+					men_at_arms = {
+						type = light_footmen
+						stacks = 2
+					}
+					location = province:522
+					inheritable = no
+				}
+				spawn_army = {
+					name = "Vandal Migrators"
+					levies = 1000
+					men_at_arms = {
+						type = bowmen
+						stacks = 2
+					}
+					men_at_arms = {
+						type = light_horsemen
+						stacks = 2
+					}
+					men_at_arms = {
+						type = light_footmen
+						stacks = 2
+					}
+					location = province:522
+					inheritable = yes
+				}
+				trigger_event = gothic_wars.0020
+			}
+		}
+	}
+}
+
+gothic_wars.0024 = {
+	scope = none
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = {
+				any_ruler = {
+					culture = culture:vandal
+					is_at_war = no
+					NOT = { this = scope:vandal_king1 }
+					OR = {
+						is_independent_ruler = yes
+						AND = {
+							NOT = { culture = liege.culture }
+							NOT = { culture = top_liege.culture }
+						}
+					}
+				}
+			}
+			random_ruler = {
+				limit = {
+					culture = culture:vandal
+					is_at_war = no
+					NOT = { this = scope:vandal_king1 }
+					OR = {
+						is_independent_ruler = yes
+						AND = {
+							NOT = { culture = liege.culture }
+							NOT = { culture = top_liege.culture }
+						}
+					}
+				}
+				save_scope_as = vandal_king2
+				weight = {
+					base = 1
+					modifier = {
+						add = 100
+						has_title = title:d_silingi_vandals
+					}
+				}
+			}
+			scope:vandal_king2 = {
+				trigger_event = gothic_wars.0021
+			}
+		}
+		else = {
+			spawn_vandal2_character_effect = yes
+			create_dynamic_title = {
+				tier = duchy
+				name = {
+					first_valid = {
+						triggered_desc = {
+							trigger = {
+								faith = { has_doctrine = doctrine_gender_male_dominated }
+							}
+							desc = "Vandal Migrators"
+						}
+						#Fallback, just in case.
+						desc = "Vandal Migrators"
+					}
+				}
+			}
+			create_title_and_vassal_change = {
+				type = created
+				save_scope_as = change
+				add_claim_on_loss = no
+			}
+			scope:new_title = {
+				set_capital_county = title:c_spreewald
+				set_landless_title = yes
+				set_destroy_on_gain_same_tier = yes
+				set_no_automatic_claims = yes
+				set_can_be_named_after_dynasty = no
+				change_title_holder = {
+					holder = scope:vandal_king2
+					change = scope:change
+				}
+			}
+			resolve_title_and_vassal_change = scope:change
+			scope:new_title = {
+				generate_coa = yes
+				set_variable = {
+					name = temporary_title
+					value = yes
+				}
+			}
+			scope:vandal_king2 = {
+				add_prestige = 1500
+				spawn_army = {
+					name = "Vandal Migrators"
+					levies = 1000
+					men_at_arms = {
+						type = bowmen
+						stacks = 2
+					}
+					men_at_arms = {
+						type = light_horsemen
+						stacks = 2
+					}
+					men_at_arms = {
+						type = light_footmen
+						stacks = 2
+					}
+					location = province:3140
+					inheritable = no
+				}
+				spawn_army = {
+					name = "Vandal Migrators"
+					levies = 1000
+					men_at_arms = {
+						type = bowmen
+						stacks = 2
+					}
+					men_at_arms = {
+						type = light_horsemen
+						stacks = 2
+					}
+					men_at_arms = {
+						type = light_footmen
+						stacks = 2
+					}
+					location = province:3140
+					inheritable = yes
+				}
+				trigger_event = gothic_wars.0021
+			}
+		}
+	}
+}
+
+gothic_wars.0025 = {
+	scope = none
+	hidden = yes
+
+	immediate = {
+		spawn_alan_character_effect = yes
+		create_dynamic_title = {
+			tier = duchy
+			name = {
+				first_valid = {
+					triggered_desc = {
+						trigger = {
+							faith = { has_doctrine = doctrine_gender_male_dominated }
+						}
+						desc = "Alan Migrators"
+					}
+					#Fallback, just in case.
+					desc = "Alan Migrators"
+				}
+			}
+		}
+		create_title_and_vassal_change = {
+			type = created
+			save_scope_as = change
+			add_claim_on_loss = no
+		}
+		scope:new_title = {
+			set_capital_county = title:c_breisgau
+			set_landless_title = yes
+			set_destroy_on_gain_same_tier = yes
+			set_no_automatic_claims = yes
+			set_can_be_named_after_dynasty = no
+			change_title_holder = {
+				holder = scope:alan_king
+				change = scope:change
+			}
+		}
+		resolve_title_and_vassal_change = scope:change
+		scope:new_title = {
+			generate_coa = yes
+			set_variable = {
+				name = temporary_title
+				value = yes
+			}
+		}
+		scope:alan_king = {
+			add_prestige = 1500
+			trigger_event = gothic_wars.0026
+		}
+	}
+}
+
+gothic_wars.0026 = {
+	type = character_event
+	theme = war
+	title = gothic_wars_0019.t
+	desc = gothic_wars_0019.desc
+
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+
+	immediate = {
+		root = {
+			save_scope_as = alan_king
+		}
+	}
+
+	option = {
+		name = gothic_wars_0019.a
+		custom_tooltip = gothic_wars_0019.a.tt
+		hidden_effect = { start_alan_migration_effect = yes }
+		spawn_army = {
+			name = "Alan Migrators"
+			levies = 1000
+			men_at_arms = {
+				type = bowmen
+				stacks = 2
+			}
+			men_at_arms = {
+				type = light_horsemen
+				stacks = 2
+			}
+			men_at_arms = {
+				type = light_footmen
+				stacks = 2
+			}
+			location = province:2751
+			inheritable = no
+		}
+		spawn_army = {
+			name = "Alan Migrators"
+			levies = 1000
+			men_at_arms = {
+				type = bowmen
+				stacks = 2
+			}
+			men_at_arms = {
+				type = horse_archers
+				stacks = 2
+			}
+			men_at_arms = {
+				type = light_footmen
+				stacks = 2
+			}
+			location = province:2751
+			inheritable = no
+		}
+		spawn_army = {
+			name = "Alan Migrators"
+			levies = 1000
+			men_at_arms = {
+				type = bowmen
+				stacks = 2
+			}
+			men_at_arms = {
+				type = light_horsemen
+				stacks = 2
+			}
+			men_at_arms = {
+				type = light_footmen
+				stacks = 2
+			}
+			location = province:2751
+			inheritable = yes
+		}
+		spawn_army = {
+			name = "Alan Migrators"
+			levies = 1000
+			men_at_arms = {
+				type = bowmen
+				stacks = 2
+			}
+			men_at_arms = {
+				type = horse_archers
+				stacks = 2
+			}
+			men_at_arms = {
+				type = light_footmen
+				stacks = 2
+			}
+			location = province:2751
+			inheritable = yes
+		}
+		ai_chance = { base = 100 }
+	}
+	option = {
+		name = gothic_wars_0019.b
+		ai_chance = { base = 0 }
+	}
+}

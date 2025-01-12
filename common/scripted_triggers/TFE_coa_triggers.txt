@@ -1,0 +1,37 @@
+﻿coa_switch_to_roman_trigger = {
+	AND = {
+		exists = holder
+		holder = { 
+			OR = {
+				any_liege_or_above = { 
+					AND = { 
+						highest_held_title_tier = tier_empire 
+						OR = {
+							AND = {
+								government_has_flag = government_is_administrative
+								is_greek_or_roman = yes
+							}
+							government_has_flag = government_is_imperial 
+							government_has_flag = government_is_imperial_cult
+						} 
+					} 
+				} 
+				AND = {
+					highest_held_title_tier = tier_empire 
+					OR = {
+						AND = {
+							government_has_flag = government_is_administrative
+							is_greek_or_roman = yes
+						}
+						government_has_flag = government_is_imperial 
+						government_has_flag = government_is_imperial_cult
+					}
+				}
+			}
+			
+		}
+	}
+}
+coa_switch_to_germanic_trigger = {
+	holder.religion = religion:germanic_religion
+}

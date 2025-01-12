@@ -1,0 +1,2088 @@
+﻿### Hejaz, Najd and Oman
+k_arabia = {
+	361.1.1 = {	change_development_level = 2 }
+	632.1.1 = {	change_development_level = 3 }
+
+	768.1.1 = {
+		name = ARABIA
+	}
+}
+d_medina = {
+	200.1.1 = {
+		name = YATHRIB
+	}
+	767.1.1 = {
+		liege = e_arabia
+		holder = 163125 # Hasan ibn Zayd ibn Hasan
+	}	
+}
+
+c_medina = {
+	361.1.1 = {	change_development_level = 4 }
+	632.1.1 = {	change_development_level = 8 }
+	768.1.1 = {	change_development_level = 10 }
+	
+	200.1.1 = {
+		name = YATHRIB
+	}
+	361.1.1 = {
+		holder = yatrib_05
+	}
+	430.1.1 = {
+		holder = khazraj_02
+	}
+	525.1.1 = {
+		holder = khazraj_03
+	}
+	560.1.1 = {
+		holder = khazraj_04
+	}
+	600.1.1 = {
+		holder = khazraj_05
+		reset_name = yes
+	}
+	627.1.1 = {
+		holder = 33922 #Muhammad
+	}
+	632.6.8 = {
+		holder = 163014 #Abu Bakr
+	}
+	767.1.1 = {
+		liege = d_medina
+		holder = 163125 # Hasan ibn Zayd ibn Hasan
+	}
+	
+}
+
+b_al-madina = {
+	200.1.1 = {
+		name = YATHRIB
+	}
+}
+
+b_as-sayaa = {
+	361.1.1 = {
+		holder = aws_01
+	}
+	410.1.1 = {
+		holder = aws_02
+	}
+	450.1.1 = {
+		holder = aws_03
+	}
+	525.1.1 = {
+		holder = aws_04
+	}
+	600.1.1 = {
+		holder = aws_05
+		reset_name = yes
+	}
+}
+
+b_batn_nakhl = {
+	361.1.1 = {
+		holder = khazraj_01
+	}
+	430.1.1 = {
+		holder = yatrib_04
+	}
+	525.1.1 = {
+		holder = yatrib_03
+	}
+	560.1.1 = {
+		holder = yatrib_02
+	}
+	600.1.1 = {
+		holder = yatrib_01
+		reset_name = yes
+	}
+}
+
+
+c_wajh = {
+
+	361.1.1 = {	change_development_level = 4 }
+	632.1.1 = {	change_development_level = 5 }
+	768.1.1 = {	change_development_level = 6 }
+	
+
+	360.1.1 = {
+		holder = bali_01
+	}
+	410.1.1 = {
+		holder = bali_02
+	}
+	455.1.1 = {
+		holder = bali_03
+	}
+	500.1.1 = {
+		holder = bali_04
+	}
+	533.1.1 = {
+		holder = bali_05
+	}
+	567.1.1 = {
+		holder = bali_06
+	}
+	600.1.1 = {
+		holder = bali_07
+	}
+	623.1.1 = {
+		holder = bali_08
+		liege = k_ghassanid
+	}
+	650.1.1 = {
+		holder = bali_09
+	}
+
+	767.1.1 = {
+		liege = "d_medina"
+		holder = 188620
+	}
+}
+
+
+c_khaybar = {
+
+	361.1.1 = {	change_development_level = 3 }
+	632.1.1 = {	change_development_level = 5 }
+	768.1.1 = {	change_development_level = 6 }
+	
+	
+	360.1.1 = {
+		holder = khaybar_01
+	}
+	467.1.1 = {
+		holder = khaybar_02
+	}
+	627.1.1 = {
+		holder = 33922 #Muhammad
+	}
+	632.6.8 = {
+		holder = 163014 #Abu Bakr
+	}
+	767.1.1 = {
+		liege = d_medina
+		holder = 163125 # Hasan ibn Zayd ibn Hasan
+	}
+	
+}
+
+
+c_yanbu = {
+	361.1.1 = {	change_development_level = 4 }
+	632.1.1 = {	change_development_level = 5 }
+	768.1.1 = {	change_development_level = 7 }
+	
+	360.1.1 = {
+		holder = juhaynah_01
+	}
+	410.1.1 = {
+		holder = juhaynah_02
+	}
+	455.1.1 = {
+		holder = juhaynah_03
+	}
+	500.1.1 = {
+		holder = juhaynah_04
+	}
+	533.1.1 = {
+		holder = juhaynah_05
+	}
+	567.1.1 = {
+		holder = juhaynah_06
+	}
+	600.1.1 = {
+		holder = juhaynah_07
+	}
+	623.1.1 = {
+		holder = juhaynah_08
+	}
+	627.1.1 = {
+		liege = e_arabia
+	}
+	650.1.1 = {
+		holder = juhaynah_09
+	}
+	
+	767.1.1 = {
+		liege = d_medina
+		holder = 163125 # Hasan ibn Zayd ibn Hasan
+	}
+	
+}
+
+
+c_harrat_rahat = {
+	361.1.1 = {	change_development_level = 3 }
+	632.1.1 = {	change_development_level = 5 }
+	768.1.1 = {	change_development_level = 6 }
+	
+	360.1.1 = {
+		holder = sulaym_01
+	}
+	410.1.1 = {
+		holder = sulaym_02
+	}
+	455.1.1 = {
+		holder = sulaym_03
+	}
+	500.1.1 = {
+		holder = sulaym_04
+	}
+	533.1.1 = {
+		holder = sulaym_05
+	}
+	567.1.1 = {
+		holder = sulaym_06
+	}
+	600.1.1 = {
+		holder = sulaym_07
+	}
+	623.1.1 = {
+		holder = sulaym_08
+	}
+	627.1.1 = {
+		liege = e_arabia
+	}
+	650.1.1 = {
+		holder = sulaym_09
+	}
+	767.1.1 = {
+		government = tribal_government
+		liege = d_medina
+		holder = 163125 # Hasan ibn Zayd ibn Hasan
+	}
+	
+}
+
+d_jawf = {
+	361.1.1 = {	change_development_level = 2 }
+	632.1.1 = {	change_development_level = 3 }
+
+	768.1.1 = {
+		de_jure_liege = k_arabia
+	}
+}
+c_al_jawf = {
+
+	360.1.1 = {
+		holder = kalb_10
+	}
+	400.1.1 = {
+		holder = kalb_09
+	}
+	460.1.1 = {
+		holder = kalb_08
+	}
+	489.1.1 = {
+		holder = kalb_07
+	}
+	528.1.1 = {
+		holder = kalb_06
+		liege = k_ghassanid
+	}
+	588.1.1 = {
+		holder = kalb_05
+	}
+	642.1.1 = {
+		holder = kalb_04
+		liege = e_arabia
+	}
+	673.1.1 = {
+		holder = kalb_03
+	}
+	700.1.1 = {
+		holder = kalb_02
+	}	
+	740.1.1 = {
+		holder = kalb_01
+	}	
+	765.1.1 = {
+		holder = 188613
+	}
+	
+}
+
+c_thalabiya = {
+	361.1.1 = {	change_development_level = 2 }
+	632.1.1 = {	change_development_level = 3 }
+	768.1.1 = {	change_development_level = 5 }
+	
+	##Lakhmid Control under Banu Tamim Tribe
+	360.1.1 = {
+		holder = banu_tamim_01
+		liege = d_kufa
+	}
+	410.1.1 = {
+		holder = banu_tamim_02
+	}
+	440.1.1 = {
+		holder = banu_tamim_03
+	}
+	480.1.1 = {
+		holder = banu_tamim_04
+	}
+	514.1.1 = {
+		holder = banu_tamim_05
+	}
+	540.1.1 = {
+		holder = banu_tamim_06
+	}
+	582.1.1 = {
+		holder = banu_tamim_07
+	}
+	610.1.1 = {
+		holder = banu_tamim_08
+	}
+	627.1.1 = {
+		liege = e_arabia
+	}
+	765.1.1 = {
+		holder = 188615
+	}
+	
+}
+
+
+c_sirhan = {
+
+	360.1.1 = {
+		holder = banu_tayy_11
+	}
+	392.1.1 = {
+		holder = banu_tayy_10
+	}
+	420.1.1 = {
+		holder = banu_tayy_09
+	}
+	475.1.1 = {
+		holder = banu_tayy_08
+	}
+	500.1.1 = {
+		holder = banu_tayy_07
+		liege = k_ghassanid
+	}
+	550.1.1 = {
+		holder = banu_tayy_06
+	}
+	578.1.1 = {
+		holder = banu_tayy_05
+	}
+	627.1.1 = {
+		liege = e_arabia
+	}
+	640.1.1 = {
+		holder = banu_tayy_03
+	}
+	648.1.1 = {
+		holder = banu_tayy_02
+	}
+	678.1.1 = {
+		holder = banu_tayy_01
+	}
+	690.1.1 = {
+		liege = "d_oultrejourdain"
+		holder = 146022
+	}
+	735.1.1 = {
+		holder = 188574
+	}
+	749.8.29 = {
+		holder = 188575
+	}
+	754.1.1 = {
+		holder = 188576
+	}
+}
+
+
+d_amman = {
+	361.1.1 = {	change_development_level = 4 }
+	632.1.1 = {	change_development_level = 5 }
+	768.1.1 = {	change_development_level = 6 }
+
+	768.1.1 = {
+		de_jure_liege = k_arabia
+	}	
+	361.1.1 = {
+		name = ARABIA
+		holder = roman_arabia_01
+		liege = k_orientis
+		de_jure_liege = k_orientis
+	}
+	395.1.1 = {
+		holder = roman_arabia_02
+	}
+	476.1.1 = {
+		holder = roman_arabia_03
+	}
+	633.1.1 = {
+		holder = 0
+	}
+}
+
+
+c_balqa = {
+
+	220.1.1 = {
+		holder = ghassanid_02 ##Jafnah I
+		liege = k_tanukhids
+	}
+	265.1.1 = {
+		holder = ghassanid_03 ##'Amr
+	}
+	270.1.1 = {
+		holder = ghassanid_04 ##Tha'labah
+	}
+	287.1.1 = {
+		holder = ghassanid_05 ##Al-Harith I
+	}
+	307.1.1 = {
+		holder = ghassanid_06 ##Jablah I
+	}
+	317.1.1 = {
+		holder = ghassanid_07 ##Al-Harith II
+	}
+	327.1.1 = {
+		holder = ghassanid_08 ##Al-Mundhir I
+	}
+	330.1.1 = {
+		holder = ghassanid_09 ##Al-Aiham
+	}
+	330.1.2 = {
+		holder = ghassanid_10 ##Al-Mundhir II
+	}
+	340.1.1 = {
+		holder = ghassanid_11 ##Al-Nu'man I
+	}
+	342.1.1 = {
+		holder = ghassanid_12 ##'Amr II
+	}
+	356.1.1 = {
+		holder = ghassanid_13 ##Jabalah II
+	}
+	361.1.1 = {
+		holder = ghassanid_15 ##Al-Nu'man II
+	}
+	362.1.1 = {
+		holder = ghassanid_14 ##Jafnah II
+	}
+	391.1.1 = {
+		holder = ghassanid_17 ##Al-Nu'man III
+	}
+	418.1.1 = {
+		holder = ghassanid_18 ##Jabalah III
+	}
+	434.1.1 = {
+		holder = ghassanid_20 ##Al-Nu'man IV
+	}
+	434.1.2 = {
+		holder = ghassanid_22 ##Al-Nu'man V
+	}
+	453.1.1 = {
+		holder = ghassanid_20 ##Al-Nu'man IV
+	}
+	455.1.1 = {
+		holder = ghassanid_21 ##Al-Harith III
+	}
+	456.1.1 = {
+		holder = ghassanid_24 ##Hijr
+	}
+	465.1.1 = {
+		holder = ghassanid_23 ##Al-Mundhir II
+	}
+	472.1.1 = {
+		holder = ghassanid_43 ##'Amr III
+	}
+	486.1.1 = {
+		holder = ghassanid_25 ##Al-Harith IV
+	}
+	512.1.1 = {
+		holder = ghassanid_26 ##Jabalah IV
+	}
+	528.1.1 = {
+		holder = ghassanid_27 ##Al-Harith V
+	}
+	569.1.1 = {
+		holder = ghassanid_30 ##Al-Mundhir III
+	}
+	581.1.1 = {
+		holder = ghassanid_31 ##Abu Kirab
+	}
+	582.1.1 = {
+		holder = ghassanid_32 ##Al-Nu'man VI
+	}
+	583.1.1 = {
+		holder = ghassanid_33 ##Al-Harith VI
+	}
+	583.1.1 = {
+		holder = ghassanid_34 ##Al-Nu'man VII
+	}
+	600.1.1 = {
+		holder = ghassanid_36 ##Al-Aiham
+	}
+	614.1.1 = {
+		holder = ghassanid_37 ##Al-Mundhir IV
+	}
+	616.1.1 = {
+		holder = ghassanid_38 ##Sarahil
+	}
+	618.1.1 = {
+		holder = ghassanid_39 ##'Amr IV
+	}
+	628.1.1 = {
+		holder = ghassanid_41 ##Jabalah V
+	}
+	632.1.1 = {
+		holder = ghassanid_42 ##Jabalah VI
+	}
+	750.1.1 = {
+		liege = "d_damascus"
+		holder = 146061
+	}
+	754.1.1 = {
+		holder = 146126
+	}
+	762.1.1 = {
+		holder = 146064
+	}
+}
+
+
+c_maab = {
+
+	361.1.1 = {	change_development_level = 5 }
+	632.1.1 = {	change_development_level = 6 }
+	768.1.1 = {	change_development_level = 7 }
+
+	361.1.1 = {
+		holder = roman_arabia_01
+	}
+	395.1.1 = {
+		holder = roman_arabia_02
+	}
+	476.1.1 = {
+		holder = roman_arabia_03
+	}
+
+	690.1.1 = {
+		liege = "d_oultrejourdain"
+		holder = 146022
+	}
+	735.1.1 = {
+		holder = 188574
+	}
+	749.8.29 = {
+		holder = 188575
+	}
+	754.1.1 = {
+		holder = 188576
+	}
+}
+
+
+c_jilat = {
+
+	361.1.1 = {
+		holder = amilah_01
+		de_jure_liege = d_amman
+		liege = k_tanukhids
+	}
+	410.1.1 = {
+		holder = amilah_02
+	}
+	455.1.1 = {
+		holder = amilah_03
+		liege = k_ghassanid
+	}
+	500.1.1 = {
+		holder = amilah_04
+	}
+	533.1.1 = {
+		holder = amilah_05
+	}
+	567.1.1 = {
+		holder = amilah_06
+	}
+	600.1.1 = {
+		holder = amilah_07
+	}
+	623.1.1 = {
+		holder = amilah_08
+	}
+	650.1.1 = {
+		holder = amilah_09
+	}
+	
+	690.1.1 = {
+		liege = "d_oultrejourdain"
+		holder = 146022
+	}
+	735.1.1 = {
+		holder = 188574
+	}
+	749.8.29 = {
+		holder = 188575
+	}
+	754.1.1 = {
+		holder = 188576
+	}
+}
+
+d_shammar = {
+	690.1.1 = {
+		liege = "e_arabia"
+		holder = 146054
+	}
+	721.1.1 = {
+		holder = 146055
+	}
+	749.1.1 = {
+		holder = 146057
+	}
+	750.1.1 = {
+		holder = 0
+	}
+}
+
+
+c_tabuk = {
+	361.1.1 = {	change_development_level = 4 }
+	632.1.1 = {	change_development_level = 5 }
+	768.1.1 = {	change_development_level = 6 }
+	
+	360.1.1 = {
+		holder = judham_11
+	}
+	402.1.1 = {
+		holder = judham_10
+	}
+	455.1.1 = {
+		holder = judham_09
+	}
+	482.1.1 = {
+		holder = judham_08
+	}
+	500.1.1 = {
+		holder = judham_07
+		liege = k_ghassanid
+	}
+	543.1.1 = {
+		holder = judham_06
+	}
+	577.1.1 = {
+		holder = judham_05
+	}
+	600.1.1 = {
+		holder = judham_04
+	}
+	629.1.1 = {
+		holder = judham_03
+	}
+	672.1.1 = {
+		holder = judham_02
+	}
+	700.1.1 = {
+		holder = judham_01
+	}
+	723.1.1 = {
+		holder = 188617
+	}
+	755.1.1 = {
+		liege = "d_medina"
+		holder = 188619
+	}
+	
+
+}
+
+c_maan = {
+	361.1.1 = {	change_development_level = 4 }
+	632.1.1 = {	change_development_level = 5 }
+	768.1.1 = {	change_development_level = 6 }
+	
+	360.1.1 = {
+		holder = judham_11
+	}
+	402.1.1 = {
+		holder = judham_10
+	}
+	455.1.1 = {
+		holder = judham_09
+	}
+	482.1.1 = {
+		holder = judham_08
+	}
+	500.1.1 = {
+		holder = judham_07
+		liege = d_amman
+	}
+	543.1.1 = {
+		holder = judham_06
+	}
+	577.1.1 = {
+		holder = judham_05
+	}
+	600.1.1 = {
+		holder = judham_04
+	}
+	629.1.1 = {
+		holder = judham_03
+	}
+	672.1.1 = {
+		holder = judham_02
+	}
+	690.1.1 = {
+		liege = "d_shammar"
+		holder = 146054
+	}
+	710.1.1 = {
+		holder = 146055
+	}
+	726.1.1 = {
+		holder = 146056
+	}
+	744.1.1 = {
+		holder = 146057
+	}
+	750.1.1 = {
+		liege = "d_damascus"
+	}
+	752.1.1 = {
+		holder = 146058
+	}
+	756.1.1 = {
+		holder = 146059
+	}
+}
+
+
+c_tayma = {
+	361.1.1 = {	change_development_level = 3 }
+	632.1.1 = {	change_development_level = 4 }
+	768.1.1 = {	change_development_level = 6 }
+
+	360.1.1 = {
+		holder = tayma_01
+	}
+	467.1.1 = {
+		holder = tayma_02
+	}
+	627.1.1 = {
+		holder = tayma_03
+	}
+	632.6.8 = {
+		holder = 163014 #Abu Bakr
+	}
+	767.1.1 = {
+		liege = "d_medina"
+		holder = 188620
+	}
+	
+}
+
+c_mecca = {
+	361.1.1 = {	change_development_level = 6 }
+	632.1.1 = {	change_development_level = 10 }
+	768.1.1 = {	change_development_level = 12 }
+	
+	360.1.1 = {
+		holder = quraysh_01
+	}
+	410.1.1 = {
+		holder = quraysh_02
+	}
+	455.1.1 = {
+		holder = quraysh_03
+	}
+	500.1.1 = {
+		holder = quraysh_04
+	}
+	533.1.1 = {
+		holder = quraysh_05
+	}
+	567.1.1 = {
+		holder = quraysh_06
+	}
+	600.1.1 = {
+		holder = quraysh_07
+	}
+	623.1.1 = {
+		holder = quraysh_08
+	}
+	627.1.1 = {
+		liege = e_arabia
+	}
+	767.1.1 = {
+		liege = d_medina
+		holder = 188610 # Muhammad b Ibrahim
+	}
+	
+}
+
+
+c_taif = {
+	361.1.1 = {	change_development_level = 2 }
+	632.1.1 = {	change_development_level = 6 }
+	768.1.1 = {	change_development_level = 8 }
+	
+	360.1.1 = {
+		holder = thaqif_01
+	}
+	410.1.1 = {
+		holder = thaqif_02
+	}
+	455.1.1 = {
+		holder = thaqif_03
+	}
+	500.1.1 = {
+		holder = thaqif_04
+	}
+	533.1.1 = {
+		holder = thaqif_05
+	}
+	567.1.1 = {
+		holder = thaqif_06
+	}
+	600.1.1 = {
+		holder = thaqif_07
+	}
+	623.1.1 = {
+		holder = thaqif_08
+	}
+	627.1.1 = {
+		liege = e_arabia
+	}
+	650.1.1 = {
+		holder = thaqif_09
+	}
+	767.1.1 = {
+		government = tribal_government
+		liege = d_medina
+		holder = 188610 # Muhammad b Ibrahim
+	}
+}
+
+
+c_tihama = {
+	361.1.1 = {	change_development_level = 4 }
+	632.1.1 = {	change_development_level = 5 }
+
+	360.1.1 = {
+		holder = daws_01
+	}
+	410.1.1 = {
+		holder = daws_02
+	}
+	455.1.1 = {
+		holder = daws_03
+	}
+	500.1.1 = {
+		holder = daws_04
+	}
+	533.1.1 = {
+		holder = daws_05
+	}
+	567.1.1 = {
+		holder = daws_06
+	}
+	600.1.1 = {
+		holder = daws_07
+	}
+	623.1.1 = {
+		holder = daws_08
+	}
+	627.1.1 = {
+		liege = e_arabia
+	}
+	767.1.1 = {
+		liege = d_medina
+		holder = 188610 # Muhammad b Ibrahim
+	}
+	
+}
+
+
+c_bisha = {
+	361.1.1 = {	change_development_level = 2 }
+	632.1.1 = {	change_development_level = 3 }
+
+	360.1.1 = {
+		holder = hilal_01
+		liege = d_najd
+	}
+	410.1.1 = {
+		holder = hilal_02
+	}
+	455.1.1 = {
+		holder = hilal_03
+	}
+	500.1.1 = {
+		holder = hilal_04
+	}
+	529.1.1 = {
+		liege = 0
+	}
+	533.1.1 = {
+		holder = hilal_05
+	}
+	567.1.1 = {
+		holder = hilal_06
+	}
+	600.1.1 = {
+		holder = hilal_07
+	}
+	623.1.1 = {
+		holder = hilal_08
+	}
+	630.1.1 = {
+		liege = e_arabia
+	}
+	650.1.1 = {
+		holder = hilal_09
+	}
+	767.1.1 = {
+		government = tribal_government
+		liege = "d_medina"
+		holder = 188621
+	}
+	
+}
+
+
+c_aqiq = {
+	361.1.1 = {	change_development_level = 1 }
+	632.1.1 = {	change_development_level = 2 }
+	768.1.1 = {	change_development_level = 3 }
+	360.1.1 = {
+		holder = uqayl_01
+		liege = d_najd
+	}
+	410.1.1 = {
+		holder = uqayl_02
+	}
+	455.1.1 = {
+		holder = uqayl_03
+	}
+	500.1.1 = {
+		holder = uqayl_04
+	}
+	529.1.1 = {
+		liege = 0
+	}
+	533.1.1 = {
+		holder = uqayl_05
+	}
+	567.1.1 = {
+		holder = uqayl_06
+	}
+	600.1.1 = {
+		holder = uqayl_07
+	}
+	623.1.1 = {
+		holder = uqayl_08
+	}
+	627.1.1 = {
+		liege = e_arabia
+	}
+	650.1.1 = {
+		holder = uqayl_09
+	}
+	760.1.1 = {
+		liege = d_najd
+		holder = 188612 # Qutham Abbasid
+		government = tribal_government
+	}
+	
+}
+
+
+d_asir = {
+	361.1.1 = {	change_development_level = -1 }
+	632.1.1 = { change_development_level = 1 }
+
+	768.1.1 = {
+		de_jure_liege = k_arabia
+	}
+}
+
+
+c_asir = {
+	361.1.1 = {	change_development_level = 1 }
+	360.1.1 = {
+		holder = midhhal_01
+		liege = d_najd
+	}
+	410.1.1 = {
+		holder = midhhal_02
+	}
+	455.1.1 = {
+		holder = midhhal_03
+	}
+	500.1.1 = {
+		holder = midhhal_04
+	}
+	529.1.1 = {
+		liege = 0
+	}
+	533.1.1 = {
+		holder = midhhal_05
+	}
+	567.1.1 = {
+		holder = midhhal_06
+	}
+	600.1.1 = {
+		holder = midhhal_07
+	}
+	623.1.1 = {
+		holder = midhhal_08
+	}
+	627.1.1 = {
+		liege = e_arabia
+	}
+	650.1.1 = {
+		holder = midhhal_09
+	}
+	767.1.1 = {
+		government = tribal_government
+		liege = "d_medina"
+		holder = 188621
+	}
+	
+}
+
+
+d_najd = {
+	361.1.1 = {	change_development_level = -1 }
+	632.1.1 = {	change_development_level = 1 }
+	
+	768.1.1 = {
+		de_jure_liege = k_arabia
+	}
+
+	325.1.1 = {
+		holder = kindha_03
+		liege = 0
+	}
+	360.1.1 = {
+		holder = kindha_04
+	}
+	379.1.1 = {
+		holder = kindha_06
+	}
+	390.1.1 = {
+		holder = kindha_07
+	}
+	402.1.1 = {
+		holder = kindha_09
+	}
+	412.1.1 = {
+		holder = kindha_10
+	}
+	425.1.1 = {
+		holder = kindha_11
+	}
+	455.1.1 = {
+		holder = kindha_12
+	}
+	504.1.1 = {
+		holder = kindha_13
+	}
+	529.1.1 = {
+		holder = 0
+	}
+	760.1.1 = {
+		liege = e_arabia
+		holder = 188612 # Qutham Abbasid
+		government = tribal_government
+	}
+	
+}
+
+
+c_sharaf = {
+	361.1.1 = {	change_development_level = 1 }
+	632.1.1 = {	change_development_level = 3 }
+	768.1.1 = {	change_development_level = 6 }
+	
+	360.1.1 = {
+		holder = asad_01
+	}
+	410.1.1 = {
+		holder = asad_02
+	}
+	455.1.1 = {
+		holder = asad_03
+	}
+	500.1.1 = {
+		holder = asad_04
+	}
+	533.1.1 = {
+		holder = asad_05
+	}
+	567.1.1 = {
+		holder = asad_06
+	}
+	600.1.1 = {
+		holder = asad_07
+	}
+	623.1.1 = {
+		holder = asad_08
+	}
+	650.1.1 = {
+		holder = asad_09
+	}
+	627.1.1 = {
+		liege = e_arabia
+	}
+	
+	765.1.1 = {
+		holder = 188613
+	}
+	
+}
+
+
+c_subay = {
+	361.1.1 = {	change_development_level = 1 }
+	
+	360.1.1 = {
+		holder = hawazan_01
+	}
+	410.1.1 = {
+		holder = hawazan_02
+	}
+	455.1.1 = {
+		holder = hawazan_03
+	}
+	500.1.1 = {
+		holder = hawazan_04
+	}
+	533.1.1 = {
+		holder = hawazan_05
+	}
+	567.1.1 = {
+		holder = hawazan_06
+	}
+	600.1.1 = {
+		holder = hawazan_07
+	}
+	623.1.1 = {
+		holder = hawazan_08
+	}
+	627.1.1 = {
+		liege = e_arabia
+	}
+	650.1.1 = {
+		holder = hawazan_09
+	}
+	767.1.1 = {
+		government = tribal_government
+		liege = d_medina
+		holder = 188610 # Muhammad b Ibrahim
+	}
+}
+
+
+c_hail = {
+
+	361.1.1 = {	change_development_level = 1 }
+	
+	360.1.1 = {
+		holder = ghatafan_01
+	}
+	410.1.1 = {
+		holder = ghatafan_02
+	}
+	455.1.1 = {
+		holder = ghatafan_03
+	}
+	500.1.1 = {
+		holder = ghatafan_04
+	}
+	533.1.1 = {
+		holder = ghatafan_05
+	}
+	567.1.1 = {
+		holder = ghatafan_06
+	}
+	600.1.1 = {
+		holder = ghatafan_07
+	}
+	623.1.1 = {
+		holder = ghatafan_08
+	}
+	650.1.1 = {
+		holder = ghatafan_09
+	}
+	627.1.1 = {
+		liege = e_arabia
+		government = tribal_government
+	}
+	765.1.1 = {
+		holder = 188616
+	}
+}
+
+
+c_shaqiq = {
+
+	360.1.1 = {
+		holder = abs_01
+	}
+	410.1.1 = {
+		holder = abs_02
+	}
+	455.1.1 = {
+		holder = abs_03
+	}
+	500.1.1 = {
+		holder = abs_04
+	}
+	533.1.1 = {
+		holder = abs_05
+	}
+	567.1.1 = {
+		holder = abs_06
+	}
+	600.1.1 = {
+		holder = abs_07
+	}
+	623.1.1 = {
+		holder = abs_08
+	}
+	650.1.1 = {
+		holder = abs_09
+	}
+	627.1.1 = {
+		liege = e_arabia
+	}
+	
+}
+
+
+c_qasim = {
+
+	325.1.1 = {
+		holder = kindha_03
+	}
+	360.1.1 = {
+		holder = kindha_04
+	}
+	379.1.1 = {
+		holder = kindha_06
+	}
+	390.1.1 = {
+		holder = kindha_07
+	}
+	402.1.1 = {
+		holder = kindha_09
+	}
+	412.1.1 = {
+		holder = kindha_10
+	}
+	425.1.1 = {
+		holder = kindha_11
+	}
+	455.1.1 = {
+		holder = kindha_12
+	}
+	504.1.1 = {
+		holder = kindha_13
+	}
+	529.1.1 = {
+		holder = kindha_15
+	}
+	# 532.1.1 = {
+	# 	holder = kindha_19
+	# }
+	532.1.1 = {
+		holder = abs_04
+	}
+	533.1.1 = {
+		holder = abs_05
+	}
+	567.1.1 = {
+		holder = abs_06
+	}
+	567.1.1 = {
+		holder = abs_06
+	}
+	600.1.1 = {
+		holder = abs_07
+	}
+	623.1.1 = {
+		holder = abs_08
+	}
+	650.1.1 = {
+		holder = abs_09
+	}
+	627.1.1 = {
+		liege = e_arabia
+	}
+	
+	765.1.1 = {
+		holder = 188616
+	}
+	
+}
+
+
+c_surrah = {
+	
+	325.1.1 = {
+		holder = kindha_03
+	}
+	360.1.1 = {
+		holder = kindha_04
+	}
+	379.1.1 = {
+		holder = kindha_06
+	}
+	390.1.1 = {
+		holder = kindha_07
+	}
+	402.1.1 = {
+		holder = kindha_09
+	}
+	412.1.1 = {
+		holder = kindha_10
+	}
+	425.1.1 = {
+		holder = kindha_11
+	}
+	455.1.1 = {
+		holder = kindha_12
+	}
+	504.1.1 = {
+		holder = kindha_13
+	}
+	529.1.1 = {
+		holder = kindha_16
+	}
+	544.1.1 = {
+		holder = kindha_20
+	}
+	567.1.1 = {
+		holder = kindha_23
+	}
+	589.1.1 = {
+		holder = kindha_24
+	}
+	618.1.1 = {
+		holder = kindha_25
+	}
+	627.1.1 = {
+		liege = e_arabia
+	}
+	765.1.1 = {
+		holder = 188613
+	}
+	
+}
+
+
+d_yamama = {
+	361.1.1 = {	change_development_level = -1 }
+	632.1.1 = { change_development_level = 1 }
+	
+	768.1.1 = {
+		de_jure_liege = k_arabia
+	}
+}
+
+
+c_yamama = {
+
+	360.1.1 = {
+		holder = kaab_01
+	}
+	410.1.1 = {
+		holder = kaab_02
+	}
+	455.1.1 = {
+		holder = kaab_03
+	}
+	500.1.1 = {
+		holder = kaab_04
+	}
+	533.1.1 = {
+		holder = kaab_05
+	}
+	567.1.1 = {
+		holder = kaab_06
+	}
+	600.1.1 = {
+		holder = kaab_07
+	}
+	623.1.1 = {
+		holder = kaab_08
+	}
+	627.1.1 = {
+		liege = e_arabia
+	}
+	650.1.1 = {
+		holder = kaab_09
+	}
+	760.1.1 = {
+		liege = d_najd
+		holder = 188612 # Qutham Abbasid
+		government = tribal_government
+	}
+	
+	
+}
+
+
+c_al-arid = {
+	
+	325.1.1 = {
+		holder = kindha_03
+	}
+	360.1.1 = {
+		holder = kindha_04
+	}
+	379.1.1 = {
+		holder = kindha_06
+	}
+	390.1.1 = {
+		holder = kindha_07
+	}
+	402.1.1 = {
+		holder = kindha_09
+	}
+	412.1.1 = {
+		holder = kindha_10
+	}
+	425.1.1 = {
+		holder = kindha_11
+	}
+	455.1.1 = {
+		holder = kindha_12
+	}
+	504.1.1 = {
+		holder = kindha_13
+	}
+	529.1.1 = {
+		holder = kindha_17
+	}
+	544.1.1 = {
+		holder = kindha_20
+	}
+	567.1.1 = {
+		holder = kindha_23
+	}
+	589.1.1 = {
+		holder = kindha_24
+	}
+	618.1.1 = {
+		holder = kindha_25
+	}
+	760.1.1 = {
+		liege = d_najd #d_nefoud
+		holder = 188612 # Qutham Abbasid
+		government = tribal_government
+	}
+	
+}
+
+
+c_falaj = {
+	
+	325.1.1 = {
+		holder = kindha_03
+	}
+	360.1.1 = {
+		holder = kindha_04
+	}
+	379.1.1 = {
+		holder = kindha_06
+	}
+	390.1.1 = {
+		holder = kindha_07
+	}
+	402.1.1 = {
+		holder = kindha_09
+	}
+	412.1.1 = {
+		holder = kindha_10
+	}
+	425.1.1 = {
+		holder = kindha_11
+	}
+	455.1.1 = {
+		holder = kindha_12
+	}
+	504.1.1 = {
+		holder = kindha_13
+	}
+	529.1.1 = {
+		holder = kindha_18
+	}
+	567.1.1 = {
+		holder = kaab_06
+	}
+	600.1.1 = {
+		holder = kaab_07
+	}
+	623.1.1 = {
+		holder = kaab_08
+	}
+	627.1.1 = {
+		liege = e_arabia
+	}
+	650.1.1 = {
+		holder = kaab_09
+	}
+	760.1.1 = {
+		liege = d_najd
+		holder = 188612 # Qutham Abbasid
+		government = tribal_government
+	}
+}
+
+d_al-hasa = {
+	768.1.1 = {
+		de_jure_liege = k_arabia
+	}
+}
+
+c_al-hasa = {
+
+	361.1.1 = { change_development_level = 1 }
+
+	360.1.1 = {
+		holder = abd_ul_qays_01
+	}
+	410.1.1 = {
+		holder = abd_ul_qays_02
+	}
+	455.1.1 = {
+		holder = abd_ul_qays_03
+	}
+	500.1.1 = {
+		holder = abd_ul_qays_04
+		liege = d_kufa
+	}
+	533.1.1 = {
+		holder = abd_ul_qays_05
+	}
+	567.1.1 = {
+		holder = abd_ul_qays_06
+	}
+	600.1.1 = {
+		holder = abd_ul_qays_07
+	}
+	623.1.1 = {
+		holder = abd_ul_qays_08
+	}
+	627.1.1 = {
+		liege = e_arabia
+	}
+	650.1.1 = {
+		holder = abd_ul_qays_09
+	}
+	661.2.28 = {
+		liege = d_bahrain
+	}
+	
+	764.1.1 = {
+		government = tribal_government
+		holder = 188626 # ghatafanan b Hakim
+	}
+	
+
+}
+
+
+c_dhafra = {
+
+	361.1.1 = { change_development_level = 4 }
+
+	#Sassanid Oman
+	361.1.1 = {
+		liege = d_oman
+		holder = mazun_05
+		government = eranshar_government
+	}
+	476.1.1 = {
+		liege = d_oman
+		holder = mazun_07
+	}
+	532.1.1 = {
+		holder = mazun_10
+	}
+	623.1.1 = {
+		holder = azd_uman_10
+		liege = d_oman
+	}
+	
+	768.1.1 = {
+		government = tribal_government
+		holder = 188766
+	}
+	
+	
+}
+
+
+c_uqayr = {
+
+	361.1.1 = { change_development_level = 4 }
+	532.1.1 = {	change_development_level = 5 }
+	632.1.1 = {	change_development_level = 6 }
+	768.1.1 = {	change_development_level = 7 }
+	
+	##Sassanid Oman
+	361.1.1 = {
+		liege = d_oman
+		holder = mazun_06
+		government = eranshar_government
+	}
+	476.1.1 = {
+		liege = d_oman
+		holder = mazun_08
+	}
+	532.1.1 = {
+		liege = d_oman
+		holder = mazun_09
+	}
+	623.1.1 = {
+		holder = azd_uman_10
+		liege = d_oman
+	}
+	661.2.28 = {
+		liege = d_bahrain
+	}
+	
+	764.1.1 = {
+		holder = 188626 # ghatafanan b Hakim
+	}
+	768.1.1 = {
+		government = tribal_government
+	}
+	
+}
+
+
+c_yabrin = {
+
+	361.1.1 = { change_development_level = 1 }
+
+	360.1.1 = {
+		holder = abd_ul_qays_01
+	}
+	410.1.1 = {
+		holder = abd_ul_qays_02
+	}
+	455.1.1 = {
+		holder = abd_ul_qays_03
+	}
+	500.1.1 = {
+		holder = abd_ul_qays_04
+	}
+	533.1.1 = {
+		holder = abd_ul_qays_05
+	}
+	567.1.1 = {
+		holder = abd_ul_qays_06
+	}
+	600.1.1 = {
+		holder = abd_ul_qays_07
+	}
+	623.1.1 = {
+		holder = abd_ul_qays_08
+	}
+	627.1.1 = {
+		liege = e_arabia
+	}
+	650.1.1 = {
+		holder = abd_ul_qays_09
+	}
+	661.2.28 = {
+		liege = d_bahrain
+	}
+	
+	764.1.1 = {
+		government = tribal_government
+		holder = 188626 # ghatafanan b Hakim
+	}
+}
+
+
+d_bahrain = {
+
+	768.1.1 = {
+		de_jure_liege = k_arabia
+	}
+	##Sassanid Oman
+	360.1.1 = {
+		holder = mazun_01
+		government = eranshar_government
+	}
+	460.1.1 = {
+		holder = mazun_02
+	}
+	532.1.1 = {
+		holder = mazun_09
+		liege = e_persia
+	}
+	620.1.1 = {
+		holder = mazun_03
+	}
+	627.1.1 = {
+		liege = e_arabia
+	}
+	
+	764.1.1 = {
+		holder = 188626 # ghatafanan b Hakim
+	}
+	
+}
+
+c_qatif = {
+
+	361.1.1 = {	change_development_level = 5 }
+	476.1.1 = {	change_development_level = 6 }
+	532.1.1 = {	change_development_level = 7 }
+	632.1.1 = {	change_development_level = 8 }
+	768.1.1 = {	change_development_level = 9 }
+	
+	361.1.1 = {
+		liege = d_oman
+		holder = mazun_06
+		government = eranshar_government
+	}
+	476.1.1 = {
+		liege = d_oman
+		holder = mazun_08
+	}
+	532.1.1 = {
+		liege = d_oman
+		holder = mazun_09
+	}
+	661.2.28 = {
+		liege = d_bahrain
+	}
+	
+	764.1.1 = {
+		holder = 188626 # ghatafanan b Hakim
+	}
+}
+
+
+c_uwal = {
+
+	361.1.1 = {	change_development_level = 4 }
+
+	360.1.1 = {
+		holder = mazun_01
+		government = eranshar_government
+	}
+	460.1.1 = {
+		holder = mazun_02
+	}
+	532.1.1 = {
+		holder = mazun_09
+	}
+	620.1.1 = {
+		holder = mazun_03
+	}
+	620.1.1 = {
+		holder = mazun_03
+	}
+	
+	764.1.1 = {
+		holder = 188626 # ghatafanan b Hakim
+	}
+	
+	
+}
+
+
+c_samman = {
+
+	361.1.1 = { change_development_level = 1 }
+
+	360.1.1 = {
+		holder = bakr_01
+	}
+	410.1.1 = {
+		holder = bakr_02
+	}
+	455.1.1 = {
+		holder = bakr_03
+	}
+	500.1.1 = {
+		holder = bakr_04
+		liege = d_kufa
+	}
+	533.1.1 = {
+		holder = bakr_05
+	}
+	567.1.1 = {
+		holder = bakr_06
+	}
+	600.1.1 = {
+		holder = bakr_07
+	}
+	623.1.1 = {
+		holder = bakr_08
+		liege = e_arabia
+	}
+	650.1.1 = {
+		holder = bakr_09
+	}
+	764.1.1 = {
+		liege = e_arabia
+		holder = 188608 # Jabir b Tubah al-Kibani
+	}
+	
+
+}
+
+
+d_oman = {
+
+	768.1.1 = {
+		de_jure_liege = k_arabia
+	}
+	## Sassanian Mazun
+	360.1.1 = {
+		holder = mazun_01
+		government = eranshar_government
+	}
+	460.1.1 = {
+		holder = mazun_02
+	}
+	532.1.1 = {
+		holder = mazun_10 # daylamite_02
+		liege = e_persia
+	}
+	623.1.1 = {
+		holder = azd_uman_08
+		government = clan_government
+	}
+	627.1.1 = {
+		liege = e_arabia
+	}
+	650.1.1 = {
+		holder = azd_uman_09
+	}
+	
+	751.1.1 = {
+		liege = 0 # De facto
+		holder = bedouin0144 # Abi Affan
+	}
+	
+}
+
+c_nizwa = {
+	361.1.1 = { change_development_level = 2 }
+
+	360.1.1 = {
+		holder = azd_uman_01
+	}
+	410.1.1 = {
+		holder = azd_uman_02
+	}
+	455.1.1 = {
+		holder = azd_uman_03
+	}
+	500.1.1 = {
+		holder = azd_uman_04
+	}
+	533.1.1 = {
+		holder = azd_uman_05
+	}
+	567.1.1 = {
+		holder = azd_uman_06
+	}
+	600.1.1 = {
+		holder = azd_uman_07
+	}
+	623.1.1 = {
+		holder = azd_uman_08
+	}
+	650.1.1 = {
+		holder = azd_uman_09
+	}
+	665.1.1 = {
+		liege = d_oman
+	}
+	
+	751.1.1 = {
+		holder = bedouin0144 # Abi Affan
+	}
+	
+}
+
+
+c_julfar = {
+	361.1.1 = { change_development_level = 5 }
+
+	#Sassanid Oman
+	361.1.1 = {
+		liege = d_oman
+		holder = mazun_05
+	}
+	476.1.1 = {
+		liege = d_oman
+		holder = mazun_07
+	}
+	532.1.1 = {
+		liege = d_oman
+		holder = mazun_10 # daylamite_02
+	}
+	632.1.1 = {
+		liege = d_oman
+		holder = azd_uman_10
+	}
+	
+	768.1.1 = {
+		holder = 188766
+	}
+	
+	
+}
+
+
+c_batina = {
+	361.1.1 = {	change_development_level = 6 }
+	632.1.1 = {	change_development_level = 7 }
+	
+	## Sassanian Mazun
+	360.1.1 = {
+		holder = mazun_01
+	}
+	460.1.1 = {
+		holder = mazun_02
+	}
+	532.1.1 = {
+		holder = mazun_10 # daylamite_02
+	}
+	623.1.1 = {
+		holder = azd_uman_08
+	}
+	650.1.1 = {
+		holder = azd_uman_09
+	}
+	768.1.1 = {
+		liege = d_oman
+		holder = bedouin0119
+	}
+}
+
+c_az-dhahira = {
+
+	361.1.1 = {	change_development_level = 2 }
+	360.1.1 = {
+		holder = azd_uman_01
+	}
+	410.1.1 = {
+		holder = azd_uman_02
+	}
+	455.1.1 = {
+		holder = azd_uman_03
+	}
+	500.1.1 = {
+		holder = azd_uman_04
+	}
+	533.1.1 = {
+		holder = azd_uman_05
+	}
+	567.1.1 = {
+		holder = azd_uman_06
+	}
+	600.1.1 = {
+		holder = azd_uman_07
+	}
+	623.1.1 = {
+		holder = azd_uman_08
+	}
+	650.1.1 = {
+		holder = azd_uman_09
+	}
+	665.1.1 = {
+		government = tribal_government
+		liege = d_oman
+	}
+	
+	768.1.1 = {
+		holder = 188766
+	}
+	
+	
+}
+
+
+c_muscat = {
+
+	361.1.1 = {	change_development_level = 5 }
+	632.1.1 = {	change_development_level = 6 }
+	
+	## Sassanian Mazun
+	360.1.1 = {
+		holder = mazun_01
+	}
+	460.1.1 = {
+		holder = mazun_02
+	}
+	532.1.1 = {
+		holder = mazun_10 # daylamite_02
+	}
+	623.1.1 = {
+		holder = azd_uman_08
+	}
+	650.1.1 = {
+		holder = azd_uman_09
+	}
+	
+	751.1.1 = {
+		holder = bedouin0144 # Abi Affan
+	}
+	
+}
+
+
+c_duqm = {
+	361.1.1 = {	change_development_level = 3 }
+	
+	360.1.1 = {
+		holder = janubah_01
+	}
+	410.1.1 = {
+		holder = janubah_02
+	}
+	455.1.1 = {
+		holder = janubah_03
+	}
+	500.1.1 = {
+		holder = janubah_04
+	}
+	533.1.1 = {
+		holder = janubah_05
+	}
+	567.1.1 = {
+		holder = janubah_06
+	}
+	600.1.1 = {
+		holder = janubah_07
+	}
+	623.1.1 = {
+		holder = janubah_08
+		liege = d_oman
+	}
+	650.1.1 = {
+		holder = janubah_09
+	}
+	665.1.1 = {
+		liege = d_oman
+	}
+	
+	751.1.1 = {
+		holder = bedouin0144 # Abi Affan
+	}
+}
+

@@ -1,0 +1,320 @@
+﻿#Reform the Indo-Scythian Kingdom
+
+reform_indo_scythian_kingdom = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	}
+	decision_group_type = major
+
+	desc = reform_indo_scythian_kingdom_desc
+	selection_tooltip = reform_indo_scythian_kingdom_tooltip
+
+	ai_check_interval = 120
+
+	is_shown = {
+		is_landed_or_landless_administrative = yes
+		exists = capital_province
+		
+		OR = {
+			culture = culture:shaka
+			culture = { any_parent_culture_or_above = { this = culture:shaka }}
+		}
+	}
+
+	is_valid = {
+		prestige_level >= 3
+		is_independent_ruler = yes
+		completely_controls = title:k_gujarat
+		completely_controls = title:k_malwa
+		completely_controls = title:k_rajputana
+		completely_controls = title:k_delhi
+		completely_controls = title:k_punjab
+		completely_controls = title:k_sindh
+		completely_controls = title:k_sistan
+	}
+
+	is_valid_showing_failures_only = {
+		is_available_adult = yes
+	}
+
+	cost = {
+		# Based on Revive Greater Armenia
+		prestige = 2000
+		piety = 1000
+	}
+
+	effect = {
+		show_as_tooltip = {
+			restore_indo_scythian_kingdom_decision_scripted_effect = yes
+		}
+		save_scope_as = founder
+		trigger_event = {
+			id = tfe_south_asia_decision.1001
+		}
+		#Notify other players.
+		every_player = {
+			limit = {
+				NOT = { this = root }
+				is_within_diplo_range = { CHARACTER = root }
+			}
+			trigger_event = tfe_south_asia_decision.1002
+		}
+	}
+	
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+# Restore the main branch of the Vakataka Dynasty
+
+reclaim_vakataka_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	}
+	decision_group_type = major
+
+	desc = reclaim_vakataka_decision_desc
+	selection_tooltip = reclaim_vakataka_decision_tooltip
+
+	ai_check_interval = 120
+
+	is_shown = {
+		dynasty = dynasty:900024
+		NOT = { house = character:900900.house } #Not a member of the OG Vakatakas
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:reclaim_vakataka_decision
+			}
+		}
+	}
+
+	is_valid = {
+		is_independent_ruler = yes
+		prestige_level >= 4
+		completely_controls = title:k_maharastra
+		completely_controls = title:k_telingana
+		completely_controls = title:k_karnata
+	}
+
+	is_valid_showing_failures_only = {
+		is_available_adult = yes
+		is_landed_or_landless_administrative = yes
+	}
+	
+	cost = {
+		prestige = 850
+		piety = 500
+	}
+
+	effect = {
+		hidden_effect = { ROOT.house = { every_house_member = { set_house = character:900900.house } } }
+		set_house = character:900900.house
+		add_pressed_claim = title:e_deccan
+		add_pressed_claim = title:k_gondwana
+		add_pressed_claim = title:d_jejakabhukti
+		add_pressed_claim = title:d_akara_dasarna
+		save_scope_as = founder
+		trigger_event = {
+			id = tfe_south_asia_decision.2001
+			}
+		#Notify other Vakatakas
+		every_player = {
+			limit = {
+				dynasty = dynasty:900024
+			}
+			trigger_event = tfe_south_asia_decision.2002
+			}
+		}
+
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:reclaim_vakataka_decision
+			}
+		}
+	
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+#Expand Aryavarta to the West and South
+
+expand_aryavarta_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	}
+	decision_group_type = major
+
+	desc = expand_aryavarta_decision_desc
+	selection_tooltip = expand_aryavarta_decision_tooltip
+
+	ai_check_interval = 120
+
+	is_shown = {
+		is_ruler = yes
+		is_landed_or_landless_administrative = yes
+		AND = {
+			exists = capital_county
+			title:e_bengal = { is_de_jure_liege_or_above_target = root.capital_county }
+		}
+		culture ?= { has_cultural_pillar = heritage_indo_aryan }
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:expand_aryavarta_decision
+			}
+		}
+	}
+	
+	is_valid = {
+		is_independent_ruler = yes
+		has_title = title:e_bengal
+		completely_controls = title:k_maharastra
+		completely_controls = title:k_telingana
+		completely_controls = title:k_andhra
+		completely_controls = title:k_karnata
+		completely_controls = title:k_sistan
+		completely_controls = title:k_kabulistan
+		completely_controls = title:k_makran
+		
+		prestige_level >= 5
+	}
+
+	is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_at_war = no
+	}
+
+	cost = {
+		prestige = 2000
+		piety = 2000
+	}
+
+	effect = {
+		title:k_maharastra = { set_de_jure_liege_title = title:e_bengal }
+		title:k_telingana = { set_de_jure_liege_title = title:e_bengal }
+		title:k_andhra = { set_de_jure_liege_title = title:e_bengal }
+		title:k_karnata = { set_de_jure_liege_title = title:e_bengal }
+		title:k_sistan = { set_de_jure_liege_title = title:e_bengal }
+		title:k_kabulistan = { set_de_jure_liege_title = title:e_bengal }
+		title:k_makran = { set_de_jure_liege_title = title:e_bengal }
+		dynasty = { add_dynasty_prestige = 500 }
+
+		save_scope_as = founder
+		trigger_event = tfe_south_asia_decision.3001
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:expand_aryavarta_decision
+			}
+		}
+	}
+	
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+#Restore the Three Crowned Kings
+muvendhar_restoration_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	}
+	decision_group_type = cultural
+
+	desc = muvendhar_restoration_decision_desc
+	selection_tooltip = muvendhar_restoration_decision_tooltip
+
+	ai_check_interval = 120
+
+	is_shown = {
+		is_ruler = yes
+		is_landed_or_landless_administrative = yes
+		OR = {
+			culture = culture:tamil
+			culture = culture:malaiya
+			culture = culture:sinhala
+			culture = { any_parent_culture_or_above = { this = culture:tamil }}
+			culture = { any_parent_culture_or_above = { this = culture:malaiya }}
+			culture = { any_parent_culture_or_above = { this = culture:sinhala }}
+		}
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:muvendhar_restoration_decision
+			}
+		}
+	}
+	
+	is_valid = {
+		is_independent_ruler = yes
+		has_title = title:k_tamilakam
+		prestige_level >= 3
+		title:d_chola_nadu.holder.dynasty = dynasty:1043008
+		title:d_pandya_nadu.holder.dynasty = dynasty:1043009
+		title:d_chera_nadu.holder.dynasty = dynasty:1043010
+		NOT = { dynasty = dynasty:900026 }
+		completely_controls = title:d_chola_nadu
+		completely_controls = title:d_pandya_nadu
+		completely_controls = title:d_chera_nadu
+	}
+
+	is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_at_war = no
+	}
+
+	cost = {
+		prestige = 750
+		piety = 500
+	}
+
+	effect = {
+		if = {
+			limit = {
+				NOR = {
+					dynasty = dynasty:1043008
+					dynasty = dynasty:1043009
+					dynasty = dynasty:1043010
+				}
+			}
+			dynasty = { add_dynasty_prestige = 500 }
+		}
+		dynasty:1043008 = { add_dynasty_prestige = 500 }
+		dynasty:1043009 = { add_dynasty_prestige = 500 }
+		dynasty:1043010 = { add_dynasty_prestige = 500 }
+		save_scope_as = founder
+		trigger_event = tfe_south_asia_decision.4001
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:muvendhar_restoration_decision
+			}
+		}
+	}
+	
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}

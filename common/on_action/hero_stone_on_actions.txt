@@ -1,0 +1,405 @@
+﻿# Event targets: old_acclaimed_knight, new_accolade_type ( yes/no )
+# called on every unique owner of an army on combat end
+# root is the owning character
+# scope:combat_side is the side of combat the commander is on
+# scope:victory is whether the commander's side won
+# commanders is a list of all commanders in the combat
+# knights is a list of all knights in the combat
+
+
+on_hero_stone_death_knight ={
+    on_actions={
+        hero1
+        hero2
+        hero3
+        hero4
+        hero5
+    }
+    effect={
+        liege={
+        #add_prestige=5000
+        }
+        liege = {
+			#trigger_event=dharma_dravidian.008
+            if={
+                limit={
+                    has_variable=hero6
+                     has_variable=hero7
+                     has_variable=hero8
+                     has_variable=hero9
+                    NOT={
+                        has_variable=hero10
+                    }
+                }
+             # add_piety=5000
+			set_variable = {
+				name = hero10
+				value = scope:old_acclaimed_knight
+				years = 2
+			}
+            
+			}
+            if={
+                limit={
+                    has_variable=hero6
+                     has_variable=hero7
+                     has_variable=hero8
+                    NOT={
+                        has_variable=hero9
+                    }
+                }
+              #add_piety=5000
+			set_variable = {
+				name = hero9
+				value = scope:old_acclaimed_knight
+				years = 2
+			}
+            
+			}
+             if={
+                limit={
+                    has_variable=hero6
+                     has_variable=hero7
+                    NOT={
+                        has_variable=hero8
+                    }
+                }
+              #add_piety=5000
+			set_variable = {
+				name = hero8
+				value = scope:old_acclaimed_knight
+				years = 2
+			}
+            
+			}
+			 if={
+                limit={
+
+                    has_variable=hero6
+                    NOT={
+                        has_variable=hero7
+                    }
+                }
+              #add_piety=5000
+			set_variable = {
+				name = hero7
+				value = scope:old_acclaimed_knight
+				years = 2
+			}
+           
+			}
+			 if={
+                limit={
+                    NOT={
+                        has_variable=hero6
+                    }
+                }
+             # add_piety=5000
+			set_variable = {
+				name = hero6
+				value = scope:old_acclaimed_knight
+				years = 2
+			}
+           
+			}
+            
+            
+            
+		}
+    }
+}
+on_accolade_acclaimed_death_knight ={
+    on_actions={
+        hero1
+        hero2
+        hero3
+        hero4
+        hero5
+    }
+    effect={
+        liege={
+        #add_prestige=5000
+        }
+        liege = {
+			#trigger_event=dharma_dravidian.008
+            if={
+                limit={
+                    has_variable=hero1
+                     has_variable=hero2
+                     has_variable=hero3
+                     has_variable=hero4
+                    NOT={
+                        has_variable=hero5
+                    }
+                }
+             # add_piety=5000
+			set_variable = {
+				name = hero5
+				value = scope:old_acclaimed_knight
+				years = 2
+			}
+			if = {
+				limit = { exists = scope:theaccolade }
+			
+            	set_variable = {
+					name = hero5accolade
+					value = scope:theaccolade
+					years = 2
+				}
+			}
+			}
+            if={
+                limit={
+                    has_variable=hero1
+                     has_variable=hero2
+                     has_variable=hero3
+                    NOT={
+                        has_variable=hero4
+                    }
+                }
+              #add_piety=5000
+			set_variable = {
+				name = hero4
+				value = scope:old_acclaimed_knight
+				years = 2
+			}
+			if = {
+				limit = { exists = scope:theaccolade }
+			
+            	set_variable = {
+					name = hero4accolade
+					value = scope:theaccolade
+					years = 2
+				}
+			}
+			}
+             if={
+                limit={
+                    has_variable=hero1
+                     has_variable=hero2
+                    NOT={
+                        has_variable=hero3
+                    }
+                }
+              #add_piety=5000
+			set_variable = {
+				name = hero3
+				value = scope:old_acclaimed_knight
+				years = 2
+			}
+			if = {
+				limit = { exists = scope:theaccolade }
+			
+            	set_variable = {
+					name = hero3accolade
+					value = scope:theaccolade
+					years = 2
+				}
+			}
+			}
+			 if={
+                limit={
+
+                    has_variable=hero1
+                    NOT={
+                        has_variable=hero2
+                    }
+                }
+              #add_piety=5000
+			set_variable = {
+				name = hero2
+				value = scope:old_acclaimed_knight
+				years = 2
+			}
+			if = {
+				limit = { exists = scope:theaccolade }
+			
+            	set_variable = {
+					name = hero2accolade
+					value = scope:theaccolade
+					years = 2
+				}
+			}
+			}
+			 if={
+                limit={
+                    NOT={
+                        has_variable=hero1
+                    }
+                }
+             # add_piety=5000
+			set_variable = {
+				name = hero1
+				value = scope:old_acclaimed_knight
+				years = 2
+			}
+			if = {
+				limit = { exists = scope:theaccolade }
+			
+            	set_variable = {
+					name = hero1accolade
+					value = scope:theaccolade
+					years = 2
+				}
+			}
+			}
+            
+            
+            
+		}
+    }
+}
+hero1={
+   
+	#trigger = {
+    #    liege={
+    #    NOT={
+	#	has_variable=hero1
+    #    }
+    #    }
+	#}
+	effect = {
+
+		liege= {
+              #add_piety=5000
+			set_variable = {
+				name = hero1
+				value = scope:old_acclaimed_knight
+				years = 2
+			}
+			if = {
+				limit = { exists = scope:theaccolade }
+			
+            	set_variable = {
+					name = hero1accolade
+					value = scope:theaccolade
+					years = 2
+				}
+			}
+			
+		}
+	}
+
+}
+hero2={
+   
+	trigger = {
+        has_variable=hero1
+        NOT={
+		has_variable=hero2
+        }
+	}
+	effect = {
+		liege= {
+			set_variable = {
+				name = hero2
+				value = scope:old_acclaimed_knight
+				years = 2
+			}
+			if = {
+				limit = { exists = scope:theaccolade }
+			
+            	set_variable = {
+					name = hero2accolade
+					value = scope:theaccolade
+					years = 2
+				}
+			}
+			
+		}
+	}
+
+}
+hero3={
+   
+	trigger = {
+        has_variable=hero1
+        has_variable=hero2
+        NOT={
+		has_variable=hero3
+        }
+	}
+	effect = {
+		liege= {
+			set_variable = {
+				name = hero3
+				value = scope:old_acclaimed_knight
+				years = 2
+			}
+			if = {
+				limit = { exists = scope:theaccolade }
+			
+            	set_variable = {
+					name = hero3accolade
+					value = scope:theaccolade
+					years = 2
+				}
+			}
+			
+		}
+	}
+
+}
+hero4={
+   
+	trigger = {
+        has_variable=hero1
+        has_variable=hero2
+        has_variable=hero3
+        NOT={
+		has_variable=hero4
+        }
+	}
+	effect = {
+		liege= {
+			set_variable = {
+				name = hero4
+				value = scope:old_acclaimed_knight
+				years = 2
+			}
+			if = {
+				limit = { exists = scope:theaccolade }
+			
+            	set_variable = {
+					name = hero4accolade
+					value = scope:theaccolade
+					years = 2
+				}
+			}
+			
+		}
+	}
+
+}
+hero5={
+   
+	trigger = {
+        has_variable=hero1
+        has_variable=hero2
+        has_variable=hero3
+        has_variable=hero4
+        NOT={
+		has_variable=hero5
+        }
+	}
+	effect = {
+		liege= {
+			set_variable = {
+				name = hero5
+				value = scope:old_acclaimed_knight
+				years = 2
+			}
+			if = {
+				limit = { exists = scope:theaccolade }
+			
+            	set_variable = {
+					name = hero5accolade
+					value =scope:theaccolade
+					years = 2
+				}
+			}
+			
+		}
+	}
+
+}

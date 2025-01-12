@@ -1,0 +1,649 @@
+﻿
+##############################################################
+# 
+# BEJA KINGS
+# Dates are extremely rough
+# Cybrxkhan
+# 
+##############################################################
+
+# Yisemeniye, attested around c. 400 CE at Kalabsha
+# If Kharamadoye was a Beja king, it is uncertain if Yisemeniye was his predecessor or superior (or both!)
+# Either way, I've made him Kharamadoye's father for simplicity
+blemmyes_ruler_01 = {
+	name = "Yisemeniye"
+	dynasty = dynasty_blemmyes_rulers
+	religion = "beja_pagan"
+	culture = "beja"
+	340.1.17 = {
+		birth = yes
+	}
+	358.1.1 = {
+		add_spouse = nobatia_11
+	}
+	409.1.3 = {
+		death = yes
+	}
+}
+
+# Kharamadoye, attested around c. 400 CE at Kalabsha, possibly earliest known Blemmyes King
+# Debatable whether he is Blemmyes or Nubian/Nobadian, but former might be more likely (?)
+# However, I've made him half-Nubian as a nod to the above
+# Invoked ancient Nile deities like Amun
+blemmyes_ruler_02 = {
+	name = "Kharamadoye"
+	dynasty = dynasty_blemmyes_rulers
+	religion = "beja_pagan"
+	culture = "beja"
+	father=blemmyes_ruler_01
+	mother=nobatia_11
+	360.1.9 = {
+		birth = yes
+	}
+	380.1.1 = {
+		add_spouse = blemmyes_ruler_03
+	}
+	427.5.19 = {
+		death = yes
+	}
+}
+
+# Kharamadoye's fictitious wife
+blemmyes_ruler_03 = {
+	name = "Paphnutia"
+	female=yes
+	religion = "beja_pagan"
+	culture = "beja"
+	363.4.19 = {
+		birth = yes
+	}
+	419.11.14 = {
+		death = yes
+	}
+}
+
+# Degou: Beja king, possibly contemporary with Kharamadoye?
+# Attested early 400s as patronizing Kalabsha Temple
+# Because I can't really tell if he's related or not, I have made him a son of Kharamadoye for convenience
+blemmyes_ruler_04 = {
+	name = "Degou"
+	dynasty = dynasty_blemmyes_rulers
+	religion = "beja_pagan"
+	culture = "beja"
+	father=blemmyes_ruler_02
+	mother=blemmyes_ruler_03
+	391.12.14 = {
+		birth = yes
+	}
+	441.9.12 = {
+		death = yes
+	}
+}
+
+# Tamala: Beja king, possibly contemporary with Kharamadoye?
+# Attested early 400s as patronizing Kalabsha Temple
+# Because I can't really tell if he's related or not, I have made him a son of Kharamadoye for convenience
+blemmyes_ruler_05 = {
+	name = "Tamala"
+	dynasty = dynasty_blemmyes_rulers
+	religion = "beja_pagan"
+	culture = "beja"
+	father=blemmyes_ruler_02
+	mother=blemmyes_ruler_03
+	393.3.2 = {
+		birth = yes
+	}
+	445.12.17 = {
+		death = yes
+	}
+}
+
+# Phonen, attested in a letter dated to c. 450 CE where he corresponds with the Nobatian king Abourni about hostilities between the Beja and Nobatians
+blemmyes_ruler_06 = {
+	name = "Phonen"
+	dynasty = dynasty_blemmyes_rulers
+	religion = "beja_pagan"
+	culture = "beja"
+	father=blemmyes_ruler_04
+	423.6.15 = {
+		birth = yes
+	}
+	444.1.1 = {
+		add_spouse = blemmyes_ruler_07
+	}
+	490.6.2 = {
+		death = yes
+	}
+}
+
+
+# Phonen's fictitious wife
+blemmyes_ruler_07 = {
+	name = "Eseweret"
+	female=yes
+	religion = "beja_pagan"
+	culture = "beja"
+	425.6.13 = {
+		birth = yes
+	}
+	489.12.22 = {
+		death = yes
+	}
+}
+
+# Pokatimne, Blemmyes ruler attested in the (early?) 6th century
+# Relation to Phonen uncertain but made him his son for convenience
+blemmyes_ruler_08 = {
+	name = "Pokatimne"
+	dynasty = dynasty_blemmyes_rulers
+	religion = "beja_pagan"
+	culture = "beja"
+	father=blemmyes_ruler_06
+	mother=blemmyes_ruler_07
+	456.4.12 = {
+		birth = yes
+	}
+	514.6.2 = {
+		death = yes
+	}
+}
+
+# Kharakhen , Blemmyes ruler attested in the (early?) 6th century
+# Relation to Pokatimne uncertain but made him his son for convenience
+blemmyes_ruler_09 = {
+	name = "Kharakhen"
+	dynasty = dynasty_blemmyes_rulers
+	religion = "beja_pagan"
+	culture = "beja"
+	father=blemmyes_ruler_08
+	491.11.3 = {
+		birth = yes
+	}
+	510.1.1 = {
+		add_spouse = blemmyes_ruler_10
+	}
+	547.3.2 = {
+		death = yes
+	}
+}
+
+
+# Phonen's fictitious wife
+blemmyes_ruler_10 = {
+	name = "Tanoute"
+	female=yes
+	religion = "beja_pagan"
+	culture = "beja"
+	492.1.16 = {
+		birth = yes
+	}
+	553.3.16 = {
+		death = yes
+	}
+}
+
+# Barakhia, attested successor (probably) of Karakhen
+# Relation unknown, but I've made him his son
+# Barakhia is attested as having several children, as he entrusted the administration of an island to them (named Temsir)
+blemmyes_ruler_11 = {
+	name = "Barakhia"
+	dynasty = dynasty_blemmyes_rulers
+	religion = "beja_pagan"
+	culture = "beja"
+	father=blemmyes_ruler_09
+	mother=blemmyes_ruler_10
+	511.1.11 = {
+		birth = yes
+	}
+	588.8.2 = {
+		death = yes
+	}
+}
+
+# A semi-fictitious child of Karakhen
+blemmyes_ruler_12 = {
+	name = "Fana"
+	female = yes
+	dynasty = dynasty_blemmyes_rulers
+	religion = "beja_pagan"
+	culture = "beja"
+	father=blemmyes_ruler_09
+	mother=blemmyes_ruler_10
+	522.4.2 = {
+		birth = yes
+	}
+	575.7.5 = {
+		death = yes
+	}
+}
+
+# Child of Karakhen, attested in the Gebelen Document
+blemmyes_ruler_13 = {
+	name = "Kharahiet"
+	dynasty = dynasty_blemmyes_rulers
+	religion = "beja_pagan"
+	culture = "beja"
+	father=blemmyes_ruler_09
+	mother=blemmyes_ruler_10
+	514.9.2 = {
+		birth = yes
+	}
+	589.6.2 = {
+		death = yes
+	}
+}
+
+# Child of Karakhen, attested in the Gebelen Document
+blemmyes_ruler_14 = {
+	name = "Kharapathkur"
+	dynasty = dynasty_blemmyes_rulers
+	religion = "beja_pagan"
+	culture = "beja"
+	father=blemmyes_ruler_09
+	mother=blemmyes_ruler_10
+	516.1.9 = {
+		birth = yes
+	}
+	601.1.12 = {
+		death = yes
+	}
+}
+
+# A semi-fictitious child of Karakhen
+blemmyes_ruler_15 = {
+	name = "Ourt"
+	female=yes
+	dynasty = dynasty_blemmyes_rulers
+	religion = "beja_pagan"
+	culture = "beja"
+	father=blemmyes_ruler_09
+	mother=blemmyes_ruler_10
+	527.3.16 = {
+		birth = yes
+	}
+	590.1.12 = {
+		death = yes
+	}
+}
+
+# Fictitious child of Barakhia
+blemmyes_ruler_16 = {
+	name = "Abad"
+	dynasty = dynasty_blemmyes_rulers
+	religion = "beja_pagan"
+	culture = "beja"
+	father=blemmyes_ruler_11
+	549.3.2 = {
+		birth = yes
+	}
+	614.7.19 = {
+		death = yes
+	}
+}
+
+# Fictitious grandchild of Barakhia
+blemmyes_ruler_17 = {
+	name = "Wailali"
+	dynasty = dynasty_blemmyes_rulers
+	religion = "beja_pagan"
+	culture = "beja"
+	father=blemmyes_ruler_16
+	573.9.12 = {
+		birth = yes
+	}
+	630.1.17 = {
+		death = yes
+	}
+}
+
+# Fictitious great-grandchild of Barakhia
+blemmyes_ruler_18 = {
+	name = "Kahil"
+	dynasty = dynasty_blemmyes_rulers
+	religion = "beja_pagan"
+	culture = "beja"
+	father=blemmyes_ruler_17
+	604.4.24 = {
+		birth = yes
+	}
+	666.6.16 = {
+		death = yes
+	}
+}
+
+# Mochosak, interpreter of the Beja King Yisemeniye
+# Left inscriptions at Aswan in his king's name
+# Knew Greek and Blemmyes language
+# His background is unknown, so I've made him Beja for now
+blemmyes_ruler_19 = {
+	name = "Mochosak"
+	religion = "beja_pagan"
+	culture = "beja"
+	trait = education_learning_3
+	340.1.19 = {
+		birth = yes
+		learn_language = language_greek
+		learn_language = language_kemetic
+	}
+	411.8.8 = {
+		death = yes
+	}
+}
+
+
+# Yeny, Phonen's ambassador, possibly killed by Silko
+
+# Laize and Tiutikna, Karakhen's secretaries
+
+# Tata (?)
+
+##############################################################
+# 
+# BEJA MISC/PLACEHOLDERS
+# 
+##############################################################
+
+blemmyes_01 = {
+	name = "Barakwin" #placeholder
+	religion = "beja_pagan"
+	culture = "beja"
+	332.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+blemmyes_02 = {
+	name = "Anakw" #placeholder
+	religion = "beja_pagan"
+	culture = "beja"
+	337.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+blemmyes_03 = {
+	name = "Sinder" #placeholder
+	religion = "beja_pagan"
+	culture = "beja"
+	340.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+blemmyes_04 = {
+	name = "Sheib" #placeholder
+	religion = "beja_pagan"
+	culture = "beja"
+	330.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+blemmyes_05 = {
+	name = "Qol" #placeholder
+	religion = "beja_pagan"
+	culture = "beja"
+	338.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+blemmyes_06 = {
+	name = "Poketme" #placeholder
+	religion = "beja_pagan"
+	culture = "beja"
+	450.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+blemmyes_07 = {
+	name = "Adara" #placeholder
+	religion = "beja_pagan"
+	culture = "beja"
+	444.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+blemmyes_08 = {
+	name = "Bishara" #placeholder
+	religion = "beja_pagan"
+	culture = "beja"
+	439.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+blemmyes_09 = {
+	name = "Hassai" #placeholder
+	religion = "beja_pagan"
+	culture = "beja"
+	449.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+blemmyes_10 = {
+	name = "Phonen" #placeholder
+	religion = "beja_pagan"
+	culture = "beja"
+	432.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+blemmyes_11 = {
+	name = "Nur" #placeholder
+	religion = "beja_pagan"
+	culture = "beja"
+	501.1.1 = {
+		birth = yes
+	}
+	560.1.1 = {
+		death = yes
+	}
+}
+# Tata, Beja tribal elite attested in the royal decree of Beja King Barakhia (mid 6th century)
+# Was titled as Phylarchos
+blemmyes_12 = {
+	name = "Tata"
+	religion = "beja_pagan"
+	culture = "beja"
+	506.1.1 = {
+		birth = yes
+	}
+	560.1.1 = {
+		death = yes
+	}
+}
+# Noupika, Beja tribal elite attested in the royal decree of Beja King Barakhia (mid 6th century)
+# Was titled as Phylarchos
+blemmyes_13 = {
+	name = "Noupika"
+	religion = "beja_pagan"
+	culture = "beja"
+	506.1.1 = {
+		birth = yes
+	}
+	560.1.1 = {
+		death = yes
+	}
+}
+blemmyes_14 = {
+	name = "Kuka" #placeholder
+	religion = "beja_pagan"
+	culture = "beja"
+	509.1.1 = {
+		birth = yes
+	}
+	560.1.1 = {
+		death = yes
+	}
+}
+blemmyes_15 = {
+	name = "Telu" #placeholder
+	religion = "beja_pagan"
+	culture = "beja"
+	482.1.1 = {
+		birth = yes
+	}
+	560.1.1 = {
+		death = yes
+	}
+}
+blemmyes_16 = {
+	name = "Rayaneit" #placeholder
+	religion = "beja_pagan"
+	culture = "beja"
+	604.1.1 = {
+		birth = yes
+	}
+	660.1.1 = {
+		death = yes
+	}
+}
+blemmyes_17 = {
+	name = "Barakhia" #placeholder
+	religion = "beja_pagan"
+	culture = "beja"
+	592.1.1 = {
+		birth = yes
+	}
+	660.1.1 = {
+		death = yes
+	}
+}
+blemmyes_18 = {
+	name = "Fadil" #placeholder
+	religion = "beja_pagan"
+	culture = "beja"
+	589.1.1 = {
+		birth = yes
+	}
+	660.1.1 = {
+		death = yes
+	}
+}
+blemmyes_19 = {
+	name = "Elagai" #placeholder
+	religion = "beja_pagan"
+	culture = "beja"
+	610.1.1 = {
+		birth = yes
+	}
+	660.1.1 = {
+		death = yes
+	}
+}
+blemmyes_20 = {
+	name = "Wailali" #placeholder
+	religion = "beja_pagan"
+	culture = "beja"
+	600.1.1 = {
+		birth = yes
+	}
+	660.1.1 = {
+		death = yes
+	}
+}
+blemmyes_21 = {
+	name = "Kurb" #placeholder
+	religion = "beja_pagan"
+	culture = "beja"
+	745.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+blemmyes_22 = {
+	name = "Zanaf" #placeholder
+	religion = "beja_pagan"
+	culture = "beja"
+	730.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+# Eisoeit, Beja tribal elite attested in the royal decree of Beja King Barakhia (mid 6th century)
+# Was titled as Hypotyrannos 
+blemmyes_23 = {
+	name = "Eisoeit"
+	religion = "beja_pagan"
+	culture = "beja"
+	512.1.8 = {
+		birth = yes
+	}
+	579.6.8 = {
+		death = yes
+	}
+}
+blemmyes_24 = {
+	name = "Wailali" #placeholder
+	religion = "beja_pagan"
+	culture = "beja"
+	335.2.19 = {
+		birth = yes
+	}
+	382.6.3 = {
+		death = yes
+	}
+}
+blemmyes_25 = {
+	name = "Tamrust" #placeholder
+	religion = "beja_pagan"
+	culture = "beja"
+	father=blemmyes_24
+	364.1.25 = {
+		birth = yes
+	}
+	409.1.3 = {
+		death = yes
+	}
+}
+blemmyes_26 = {
+	name = "Wailali" #placeholder
+	religion = "beja_pagan"
+	culture = "beja"
+	340.1.30 = {
+		birth = yes
+	}
+	416.4.19 = {
+		death = yes
+	}
+}
+blemmyes_27 = {
+	name = "Rayaneit" #placeholder
+	religion = "beja_pagan"
+	culture = "beja"
+	442.3.16 = {
+		birth = yes
+	}
+	509.4.3 = {
+		death = yes
+	}
+}

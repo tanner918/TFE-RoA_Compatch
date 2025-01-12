@@ -1,0 +1,683 @@
+﻿k_jazira = {
+	361.1.1 = {	change_development_level = 3 }
+	476.1.1 = {	change_development_level = 4 }
+	768.1.1 = {	change_development_level = 5 }
+	361.1.1 = {
+		name = ARWASTAN
+	}
+}
+
+d_diyarrabia = {
+	361.1.1 = {	change_development_level = 5 }
+	476.1.1 = {	change_development_level = 6 }
+	768.1.1 = {	change_development_level = 7 }
+	
+	361.1.1 = {
+		name = ARWASTAN
+	}
+	395.1.1 = {
+		holder = mesopotamia_09
+		liege = e_persia
+		government = eranshar_government
+	}
+	476.1.1 = {
+		holder = mesopotamia_10
+	}
+	532.1.1={
+		holder = azarethes
+	}
+	765.1.1 = {
+		government = eranshar_government
+		liege = e_arabia
+		holder = 188643 # Khalid Barmakid
+	}
+
+}
+
+c_nasibin = {
+	361.1.1 = {	change_development_level = 8 }
+	476.1.1 = {	change_development_level = 9 }
+	361.1.1 = {
+		holder = mesopotamia_08
+		liege = d_diyarbakr
+	}
+	363.1.1 = {
+		government = eranshar_government
+		holder = hormazd_02 #Adurfrazgird
+		liege = e_persia
+	} 
+	395.1.1 = {
+		holder = mesopotamia_09
+		liege = e_persia
+	}
+	476.1.1 = {
+		holder = mesopotamia_10
+	}
+	530.1.1={
+		holder=nabed_01
+	}
+	742.1.1 = {
+		liege = "d_diyarbakr"
+		holder = 146132
+	}
+	761.1.1 = {
+		holder = 146134
+	}
+
+}
+
+c_mosul = {
+	768.1.1 = {	change_development_level = 10 }
+	
+	361.1.1 = {
+		government = eranshar_government
+		holder = hormazd_02 #Adurfrazgird
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = mesopotamia_09
+		liege = e_persia
+	}
+	476.1.1 = {
+		holder = mesopotamia_10
+	}
+	765.1.1 = {
+		liege = d_diyarrabia
+		holder = 188643 # Khalid Barmakid
+	}
+}
+
+
+c_ninive = {
+	361.1.1 = {	change_development_level = 6 }
+	361.1.1 = {
+		government = eranshar_government
+		holder = 180614
+		liege = e_persia
+		de_jure_liege = d_kurdistan
+	}
+	395.1.1 = {
+		holder = mesopotamia_11
+		liege = e_persia
+	}
+	476.1.1 = {
+		holder = mesopotamia_12
+	}
+	530.1.1={
+		holder=waraz_79
+	}
+	765.1.1 = {
+		liege = d_diyarrabia
+		holder = 188657
+	}
+}
+
+
+c_sinjar = {
+	361.1.2 = {
+		holder = syria_18
+		liege = d_diyarbakr
+	}
+	363.1.1 = {
+		government = eranshar_government
+		holder = hormazd_02 #Adurfrazgird
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = mesopotamia_09
+		liege = e_persia
+	}
+	476.1.1 = {
+		holder = mesopotamia_10
+	}
+	530.1.1={
+		holder=waraz_79
+	} 
+	757.1.1 = {
+		liege = "d_palmyra"
+		holder = 146129
+	}
+}
+
+
+c_khabur = {
+	361.1.1 = {
+		holder = mesopotamia_02
+		de_jure_liege = d_edessa
+	}
+	395.1.1 = {
+		holder = mesopotamia_03
+	}
+	476.1.1 = {
+		holder = mesopotamia_04
+	}
+	710.1.1 = {
+		liege = "d_palmyra"
+		holder = 146067
+	}
+	747.1.1 = {
+		holder = 188604
+	}
+	756.1.1 = {
+		holder = 146072
+	}
+}
+
+
+c_upper_khabur = {
+	361.1.2 = {
+		holder = syria_16
+		de_jure_liege = d_diyarbakr
+		liege = d_diyarbakr
+	}
+	395.1.1 = {
+		holder = mesopotamia_06
+	}
+	476.1.1 = {
+		holder = mesopotamia_07
+	}
+	638.1.1 = {
+		liege = "d_edessa"
+		holder = 146030
+	}
+	647.1.1 = {
+		holder = 146031
+	}
+	656.11.7 = {
+		holder = 146032
+	}
+	725.1.1 = {
+		holder = 146033
+	}
+	732.1.1 = {
+		holder = 146034
+	}
+	766.1.1 = {
+		holder = 146035
+	}
+}
+
+d_edessa = {
+	361.1.1 = {	change_development_level = 4 }
+	361.1.1 = {
+		holder = mesopotamia_02
+		de_jure_liege = k_orientis
+		liege = k_orientis
+	}
+	395.1.1 = {
+		holder = mesopotamia_03
+	}
+	476.1.1 = {
+		holder = mesopotamia_04
+	}
+	532.1.1  {
+		holder = greek_misc_001
+	}
+}
+c_edessa = {
+	361.1.1 = {	change_development_level = 7 }
+	361.1.1 = {
+		holder = mesopotamia_02
+	}
+	395.1.1 = {
+		holder = mesopotamia_03
+	}
+	476.1.1 = {
+		holder = mesopotamia_04
+	}
+	638.1.1 = {
+		liege = "d_edessa"
+		holder = 146030
+	}
+	658.1.1 = {
+		holder = 146032
+	}
+	732.1.1 = {
+		holder = 146033
+	}
+	766.1.1 = {
+		holder = 146034
+	}
+}
+
+
+c_harran = {
+	361.1.1 = {	change_development_level = 5 }
+	476.1.1 = {	change_development_level = 6 }
+	532.1.1 = {	change_development_level = 7 }
+	768.1.1 = {	change_development_level = 8 }
+	
+	361.1.1 = {
+		holder = mesopotamia_02
+		de_jure_liege = d_edessa
+	}
+	395.1.1 = {
+		holder = mesopotamia_03
+	}
+	476.1.1 = {
+		holder = mesopotamia_04
+	}
+	638.1.1 = {
+		liege = "d_edessa"
+		holder = 146030
+	}
+	658.1.1 = {
+		holder = 146032
+	}
+	732.1.1 = {
+		holder = 146033
+	}
+	766.1.1 = {
+		holder = 146034
+	}
+}
+
+
+c_dausar = {
+	361.1.2 = {
+		holder = syria_17
+		liege = "d_edessa"
+		de_jure_liege = d_edessa
+	}
+	395.1.1 = {
+		holder = mesopotamia_03
+	}
+	476.1.1 = {
+		holder = mesopotamia_04
+	}
+	706.1.1 = {
+		liege = "d_lebanon"
+		holder = 146014
+	}
+	735.1.1 = {
+		holder = 146015
+	}
+	750.1.1 = {
+		holder = 146017
+	}
+}
+
+d_diyarmudar = {
+	768.1.1 = {
+		change_development_level = 6
+	}
+}
+
+c_raqqa = {
+	768.1.1 = {	change_development_level = 8 }
+	
+	361.1.1 = {
+		holder = mesopotamia_02
+		de_jure_liege = d_edessa
+	}
+	395.1.1 = {
+		holder = mesopotamia_03
+	}
+	476.1.1 = {
+		holder = mesopotamia_04
+	}
+	710.1.1 = {
+		liege = "d_palmyra"
+		holder = 146067
+	}
+	747.1.1 = {
+		holder = 188604
+	}
+	756.1.1 = {
+		holder = 146072
+	}
+}
+
+
+d_diyarbakr = {
+	361.1.1 = {	change_development_level = 4 }
+	476.1.1 = {	change_development_level = 5 }
+
+	361.1.1 = {
+		holder = mesopotamia_05
+		de_jure_liege = k_orientis
+		liege = k_orientis
+	}
+	395.1.1 = {
+		holder = mesopotamia_06
+	}
+	476.1.1 = {
+		holder = mesopotamia_07
+	}
+	530.1.1 = {
+		holder = greek_02
+	}
+	742.1.1 = {
+		liege = "e_arabia"
+		holder = 146132
+	}
+}
+
+
+c_tall_basma = {
+
+	361.1.1 = {
+		holder = mesopotamia_05
+	}
+	395.1.1 = {
+		holder = mesopotamia_06
+	}
+	476.1.1 = {
+		holder = mesopotamia_07
+	}
+	646.1.1 = {
+		liege = "d_greater_armenia"
+	}
+	646.1.1 = {
+		holder = 159570
+	}
+	650.8.29 = {
+		holder = 159571
+	}
+	693.8.29 = {
+		holder = 159572
+	}
+	710.1.1 = {
+		holder = 159573
+	}
+	750.1.1 = {
+		holder = 145998
+	} # Duke of Armenia and "Lord of Taron"
+	761.1.1 = {
+		holder = 159574
+	}
+}
+
+
+c_hakkari = {
+	361.1.1 = {
+		holder = mesopotamia_08
+		liege = d_diyarbakr
+		de_jure_liege = d_kurdistan
+	}
+	363.1.1 = {
+		government = eranshar_government
+		holder = 180614
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = mesopotamia_11
+		liege = e_persia
+	}
+	476.1.1 = {
+		holder = mesopotamia_12
+	}
+	742.1.1 = {
+		liege = "d_diyarbakr"
+		holder = 146132
+	}
+	761.1.1 = {
+		holder = 146134
+	}
+}
+
+
+c_mayyafariqin = {
+	361.1.1 = {
+		holder = pontus_10
+		de_jure_liege = d_sophene
+	}
+	395.1.1 = {
+		holder = pontus_11
+	}
+	476.1.1 = {
+		holder = pontus_12
+	}
+	530.1.1 = {
+		holder = thracio_01
+		liege = k_nikaea
+	}
+	646.1.1 = {
+		liege = "d_greater_armenia"
+	}
+	646.1.1 = {
+		holder = 159570
+	}
+	650.8.29 = {
+		holder = 159571
+	}
+	693.8.29 = {
+		holder = 159572
+	}
+	710.1.1 = {
+		holder = 159573
+	}
+	750.1.1 = {
+		holder = 145998
+	} # Duke of Armenia and "Lord of Taron"
+	761.1.1 = {
+		holder = 159574
+	}
+}
+
+
+c_bakriya = {
+	361.1.1 = {
+		holder = pontus_10
+		de_jure_liege = d_sophene
+	}
+	395.1.1 = {
+		holder = pontus_11
+	}
+	476.1.1 = {
+		holder = pontus_12
+	}
+	530.1.1 = {
+		holder = thracio_01
+		liege = k_nikaea
+	}
+	646.1.1 = {
+		liege = "d_greater_armenia"
+	}
+	646.1.1 = {
+		holder = 159570
+	}
+	650.8.29 = {
+		holder = 159571
+	}
+	693.8.29 = {
+		holder = 159572
+	}
+	710.1.1 = {
+		holder = 159573
+	}
+	750.1.1 = {
+		holder = 145998
+	} # Duke of Armenia and "Lord of Taron"
+	761.1.1 = {
+		holder = 159574
+	}
+}
+
+
+c_amida = {
+	361.1.1 = {	change_development_level = 6 }
+	361.1.1 = {
+		holder = mesopotamia_05
+	}
+	395.1.1 = {
+		holder = mesopotamia_06
+	}
+	476.1.1 = {
+		holder = mesopotamia_07
+	}
+	742.1.1 = {
+		liege = "d_diyarbakr"
+		holder = 146132
+	}
+	759.1.1 = {
+		holder = 146133
+	}
+}
+
+d_euphrates = {
+	361.1.1 = {	change_development_level = 6 }
+	476.1.1 = {	change_development_level = 7 }
+	768.1.1 = {	change_development_level = 8 }
+}
+
+c_rahba = {
+	361.1.1 = {
+		government = eranshar_government
+		holder = hormazd_01 #Adurfrazgird
+		liege = e_persia
+		de_jure_liege = d_diyarrabia
+	}
+	395.1.1 = {
+		holder = mesopotamia_13
+		liege = e_persia
+	}
+	476.1.1 = {
+		holder = mesopotamia_14
+	}
+	710.1.1 = {
+		liege = "d_palmyra"
+		holder = 146067
+	}
+	747.1.1 = {
+		holder = 146070
+	}
+	761.1.1 = {
+		holder = 146071
+	}
+}
+
+
+c_hadithat-ana = {
+	361.1.1 = {
+		government = eranshar_government
+		holder = hormazd_01 #Adurfrazgird
+		liege = e_persia
+		de_jure_liege = d_diyarrabia
+	}
+	395.1.1 = {
+		holder = mesopotamia_13
+		liege = e_persia
+	}
+	476.1.1 = {
+		holder = mesopotamia_14
+	}
+	710.1.1 = {
+		liege = "d_palmyra"
+		holder = 146067
+	}
+	747.1.1 = {
+		holder = 146070
+	}
+	761.1.1 = {
+		holder = 146071
+	}
+}
+
+
+c_al-haditha = {
+	361.1.1 = {
+		government = eranshar_government
+		holder = hormazd_01 #Adurfrazgird
+		liege = e_persia
+		de_jure_liege = d_diyarrabia
+	}
+	395.1.1 = {
+		holder = mesopotamia_13
+		liege = e_persia
+	}
+	476.1.1 = {
+		holder = mesopotamia_14
+	}
+	#Bagdad
+	750.1.1 = {
+		liege = "d_baghdad"
+	holder = 34001
+	}
+	754.1.1 = {
+		holder = 34002
+	}
+}
+
+d_kurdistan = {
+	# Sassanian Shenanigans
+	245.1.1 = {
+		name = NODSIRAGAN
+		holder = sassanid_17 # Ardeshir Nodshiraganshah, son of Adreshir I
+		liege = e_persia
+		government = eranshar_government
+	}
+	344.1.1 = {
+		holder = 180614 # Adreshir II
+	}
+	395.1.1 = {
+		holder = mesopotamia_11
+		liege = e_persia
+	}
+	476.1.1 = {
+		holder = mesopotamia_12
+	}
+	532.1.1={
+		holder=nabed_01
+	}
+}
+c_kurdistan = {
+	344.1.1 = {
+		government = eranshar_government
+		holder = 180614
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = mesopotamia_11
+		liege = e_persia
+	}
+	476.1.1 = {
+		holder = mesopotamia_12
+	}
+	765.1.1 = {
+		liege = d_diyarrabia
+		holder = 188657
+	}
+	
+}
+
+c_irbil = {
+	361.1.1 = {	change_development_level = 6 }
+	344.1.1 = {
+		government = eranshar_government
+		holder = 180614
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = mesopotamia_11
+		liege = e_persia
+	}
+	476.1.1 = {
+		holder = mesopotamia_12
+	}
+	765.1.1 = {
+		liege = d_diyarrabia
+		holder = 188643 # Khalid Barmakid
+	}
+}
+
+c_shahrazur = {
+	344.1.1 = {
+		government = eranshar_government
+		holder = 180614
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = mesopotamia_11
+		liege = e_persia
+	}
+	476.1.1 = {
+		holder = mesopotamia_12
+	}
+	765.1.1 = {
+		liege = d_diyarrabia
+		holder = 188643 # Khalid Barmakid
+	}
+	
+}
+

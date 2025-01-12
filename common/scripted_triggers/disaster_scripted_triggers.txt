@@ -1,0 +1,15 @@
+﻿# general 
+disaster_latium_land_trigger = {
+	OR = {
+		has_title = title:c_viterbo
+		has_title = title:c_roma
+		has_title = title:c_tivoli
+	#	has_title = title:c_sus	
+		# https://www.youtube.com/watch?v=RrDt9a0q3P0&ab_channel=fairyeiry	
+	}
+}
+
+disaster_available = {
+	basic_is_valid_for_yearly_events_trigger = yes
+	# is_adult = yes
+}

@@ -1,0 +1,82 @@
+# Required controller: decision_option_list_controller
+
+vbox = {
+	name = "decision_view_widget_TFE_adopt_higher_varna"
+	layoutpolicy_horizontal = expanding
+	layoutpolicy_vertical = expanding
+	ignoreinvisible = yes
+
+	margin_top = 10
+	spacing = 10
+
+	text_label_center = {
+		text = "TFE_adopt_higher_varna_decision_choose_type"
+	}
+
+	hbox = {
+		layoutpolicy_horizontal = expanding
+		layoutpolicy_vertical = expanding		
+
+		scrollbox = {
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = expanding
+
+			blockoverride "scrollbox_content" {
+				vbox = {
+					datamodel = "[DecisionViewWidgetOptionList.GetEntries]"
+					spacing = 6
+
+					item = {
+						TFE_adopt_higher_varna = {}
+					}
+				}
+			}
+
+			blockoverride "scrollbox_background_fade" {}
+		}
+	}
+}
+
+types TFE_adopt_higher_varna
+{
+	type TFE_adopt_higher_varna = button_standard {
+		size = { 500 60 }
+		margin = { 10 10 }
+
+		onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+		enabled = "[Entry.IsEnabled]"
+		tooltip = "[Entry.GetTooltip]"
+		down = "[Entry.IsSelected]"
+
+		hbox = {
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = expanding
+			spacing = 10
+			margin_left = 10
+
+			icon = {
+				name = "TFE_adopt_higher_varna_icon"
+				size = { 35 35 }
+				texture = "[Entry.GetIcon]"
+			}
+
+			vbox = {
+				name = "TFE_adopt_higher_varna_info"
+
+				layoutpolicy_vertical = expanding
+				margin_left = 5
+				margin_bottom = 5
+
+				text_single = {
+					name = "TFE_adopt_higher_varna_type"
+					text = "[Entry.GetName]"
+					max_width = 250
+					align = left
+				}
+			}
+
+			expand = {}
+		}
+	}
+}
+

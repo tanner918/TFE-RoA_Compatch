@@ -1,0 +1,175 @@
+﻿
+
+TFE_illyrian_sacrifice_random_modifier_effect = {
+	if = {
+		limit = {
+			var:TFE_illyrian_sacrifice_type = flag:sun
+		}
+		random_list = {
+			10 = {
+				add_character_modifier = {
+					modifier = TFE_illyrian_sacrifice_sun_modifier_1
+					years = 10
+				}
+			}
+			10 = {
+				add_character_modifier = {
+					modifier = TFE_illyrian_sacrifice_sun_modifier_2
+					years = 10
+				}
+			}
+			10 = {
+				add_character_modifier = {
+					modifier = TFE_illyrian_sacrifice_sun_modifier_3
+					years = 10
+				}
+			}
+			10 = {
+				add_character_modifier = {
+					modifier = TFE_illyrian_sacrifice_sun_modifier_4
+					years = 10
+				}
+			}
+			10 = {
+				add_character_modifier = {
+					modifier = TFE_illyrian_sacrifice_sun_modifier_5
+					years = 10
+				}
+			}
+			10 = {
+				add_character_modifier = {
+					modifier = TFE_illyrian_sacrifice_sun_modifier_6
+					years = 10
+				}
+			}
+			10 = {
+				add_character_modifier = {
+					modifier = TFE_illyrian_sacrifice_sun_modifier_7
+					years = 10
+				}
+			}
+			10 = {
+				add_character_modifier = {
+					modifier = TFE_illyrian_sacrifice_sun_modifier_8
+					years = 10
+				}
+			}
+			10 = {
+				add_character_modifier = {
+					modifier = TFE_illyrian_sacrifice_sun_modifier_9
+					years = 10
+				}
+			}
+			10 = {
+				add_character_modifier = {
+					modifier = TFE_illyrian_sacrifice_sun_modifier_10
+					years = 10
+				}
+			}
+			10 = {
+				add_character_modifier = {
+					modifier = TFE_illyrian_sacrifice_sun_modifier_11
+					years = 10
+				}
+			}
+			10 = {
+				add_character_modifier = {
+					modifier = TFE_illyrian_sacrifice_sun_modifier_12
+					years = 10
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			var:TFE_illyrian_sacrifice_type = flag:serpent
+		}
+		random_list = {
+			10 = {
+				add_character_modifier = {
+					modifier = TFE_illyrian_sacrifice_serpent_modifier_1
+					years = 10
+				}
+			}
+			10 = {
+				add_character_modifier = {
+					modifier = TFE_illyrian_sacrifice_serpent_modifier_2
+					years = 10
+				}
+			}
+			10 = {
+				add_character_modifier = {
+					modifier = TFE_illyrian_sacrifice_serpent_modifier_3
+					years = 10
+				}
+			}
+			10 = {
+				add_character_modifier = {
+					modifier = TFE_illyrian_sacrifice_serpent_modifier_4
+					years = 10
+				}
+			}
+			10 = {
+				add_character_modifier = {
+					modifier = TFE_illyrian_sacrifice_serpent_modifier_5
+					years = 10
+				}
+			}
+			10 = {
+				add_character_modifier = {
+					modifier = TFE_illyrian_sacrifice_serpent_modifier_6
+					years = 10
+				}
+			}
+			10 = {
+				add_character_modifier = {
+					modifier = TFE_illyrian_sacrifice_serpent_modifier_7
+					years = 10
+				}
+			}
+			10 = {
+				add_character_modifier = {
+					modifier = TFE_illyrian_sacrifice_serpent_modifier_8
+					years = 10
+				}
+			}
+			10 = {
+				add_character_modifier = {
+					modifier = TFE_illyrian_sacrifice_serpent_modifier_9
+					years = 10
+				}
+			}
+			10 = {
+				add_character_modifier = {
+					modifier = TFE_illyrian_sacrifice_serpent_modifier_10
+					years = 10
+				}
+			}
+			10 = {
+				add_character_modifier = {
+					modifier = TFE_illyrian_sacrifice_serpent_modifier_11
+					years = 10
+				}
+			}
+			10 = {
+				add_character_modifier = {
+					modifier = TFE_illyrian_sacrifice_serpent_modifier_12
+					years = 10
+				}
+			}
+		}
+	}
+}
+
+
+TFE_east_african_tattoo_decision_effect = {
+	add_piety = minor_piety_gain
+	add_character_modifier = {
+		modifier = TFE_east_african_religious_tattoo
+		years = 10
+	}
+	stress_impact = {
+		#base = major_stress_impact_loss
+		zealous = minor_stress_impact_loss
+	}
+}

@@ -1,0 +1,10 @@
+﻿on_game_start = {
+	on_actions = {
+		succexpstart
+	}
+}
+succexpstart = {
+    events = {
+        succexp.004
+    }
+}

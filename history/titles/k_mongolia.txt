@@ -1,0 +1,887 @@
+﻿
+k_mongolia = {
+	361.1.1 = { change_development_level = 0 }
+	278.1.1 = {
+		holder = yujiulu_01
+		government = nomadic_government
+	}
+	300.1.1 = {
+		holder = yujiulu_02
+	}
+	310.1.1 = {
+		holder = yujiulu_03
+	}
+	320.1.1 = {
+		holder = yujiulu_04
+	}
+	340.1.1 = {
+		holder = yujiulu_05
+	}
+	351.1.1 = {
+		holder = 0
+	}
+	# 399.1.1 = {
+	# 	holder = yujiulu_07
+	# }
+	402.1.1 = {
+		holder = yujiulu_072
+	}
+	410.1.1 = {
+		holder = yujiulu_073
+	}
+	414.1.1 = {
+		holder = yujiulu_08
+	}
+	414.5.1 = {
+		holder = yujiulu_077
+	}
+	429.1.1 = {
+		holder = yujiulu_084
+	}
+	444.1.1 = {
+		holder = yujiulu_09
+	}
+	464.1.1 = {
+		holder = yujiulu_10
+	}
+}
+
+
+d_otuken = {
+	361.1.1 = { change_development_level = 2 }
+	340.1.1 = {
+		holder = yujiulu_05
+		government = nomadic_government
+	}
+	351.1.1 = {
+		holder = yujiulu_061
+	}
+	375.1.1 = {
+		holder = yujiulu_07
+	}
+	394.1.1 = {
+		holder = yujiulu_072
+	}
+	410.1.1 = {
+		holder = yujiulu_073
+	}
+	414.1.1 = {
+		holder = yujiulu_08
+	}
+	414.5.1 = {
+		holder = yujiulu_077
+	}
+	429.1.1 = {
+		holder = yujiulu_084
+	}
+	444.1.1 = {
+		holder = yujiulu_09
+	}
+	464.1.1 = {
+		holder = yujiulu_10
+	}
+}
+
+
+c_karakorum = {
+	351.1.1 = {
+		holder = yujiulu_061
+		liege = d_otuken
+		government = nomadic_government
+	}
+	375.1.1 = {
+		holder = yujiulu_07
+	}
+	394.1.1 = {
+		holder = yujiulu_073
+	}
+	414.1.1 = {
+		holder = yujiulu_08
+	}
+	414.5.1 = {
+		holder = yujiulu_077
+	}
+	429.1.1 = {
+		holder = yujiulu_084
+	}
+	444.1.1 = {
+		holder = yujiulu_09
+	}
+	464.1.1 = {
+		holder = yujiulu_10
+	}
+	476.1.1 = {
+		holder = yujiulu_10
+	}
+	532.1.1 = {
+		holder = yujiulu_115
+	}
+}
+
+
+c_karabalgasun = {
+	361.1.1 = { change_development_level = 3 }
+	532.1.1 = { change_development_level = 4 }
+	768.1.1 = { change_development_level = 5 }
+	351.1.1 = {
+		holder = yujiulu_061
+		liege = d_otuken
+		government = nomadic_government
+	}
+	375.1.1 = {
+		holder = yujiulu_07
+	}
+	394.1.1 = {
+		holder = yujiulu_073
+	}
+	414.1.1 = {
+		holder = yujiulu_08
+	}
+	414.5.1 = {
+		holder = yujiulu_077
+	}
+	429.1.1 = {
+		holder = yujiulu_084
+	}
+	444.1.1 = {
+		holder = yujiulu_09
+	}
+	464.1.1 = {
+		holder = yujiulu_10
+	}
+	476.1.1 = {
+		holder = yujiulu_10
+	}
+	532.1.1 = {
+		holder = yujiulu_115
+	}
+}
+
+
+c_mumo = {
+	351.1.1 = {
+		holder = yujiulu_061
+		government = nomadic_government
+	}
+	375.1.1 = {
+		holder = yujiulu_072
+		liege = d_otuken
+	}
+	410.1.1 = {
+		holder = yujiulu_073
+	}
+	414.1.1 = {
+		holder = yujiulu_08
+	}
+	414.5.1 = {
+		holder = yujiulu_077
+	}
+	429.1.1 = {
+		holder = yujiulu_084
+	}
+	444.1.1 = {
+		holder = yujiulu_09
+	}
+	464.1.1 = {
+		holder = yujiulu_10
+	}
+	476.1.1 = {
+		holder = yujiulu_10
+	}
+	532.1.1 = {
+		holder = yujiulu_115
+	}
+}
+
+
+d_ogrash = {
+	340.1.1 = {
+		holder = yujiulu_05
+	}
+	351.1.1 = {
+		holder = yujiulu_062
+		government = nomadic_government
+	}
+	388.1.1 = {
+		holder = yujiulu_072
+	}
+	402.1.1 = {
+		holder = yujiulu_077
+		liege = e_mongolia
+	}
+	464.1.1 = {
+		holder = yujiulu_101
+	}
+	506.1.1 = {
+		holder = yujiulu_112
+	}
+	530.1.1 = {
+		holder = han_misc_14
+		liege = e_mongolia
+	}
+}
+
+
+c_ulaanbaatar = {
+	351.1.1 = {
+		holder = yujiulu_062
+		government = nomadic_government
+	}
+	388.1.1 = {
+		holder = yujiulu_077	
+		liege = d_ogrash
+	}
+	464.1.1 = {
+		holder = yujiulu_101
+		liege = e_mongolia
+	}
+}
+
+
+c_khentii = {
+	351.1.1 = {
+		holder = yujiulu_062
+		government = nomadic_government
+	}
+	388.1.1 = {
+		holder = yujiulu_077		
+		liege = d_ogrash
+	}
+	464.1.1 = {
+		holder = yujiulu_101
+		liege = e_mongolia
+	}
+	530.1.1 = {
+		holder = borjigin_01
+		liege = e_mongolia
+	}
+}
+
+
+c_naushki = {
+	351.1.1 = {
+		holder = yujiulu_062
+		government = nomadic_government
+	}
+	388.1.1 = {
+		holder = yujiulu_077	
+		liege = d_ogrash
+	}
+	464.1.1 = {
+		holder = yujiulu_101
+		liege = e_mongolia
+	}
+}
+
+
+d_selenga_valley = {
+	530.1.1 = {
+		holder = yujiulu_118
+		liege = e_mongolia
+	}
+}
+
+
+c_selenga = {
+	361.1.1 = {
+		holder = xianbei_11
+		government = nomadic_government
+	}
+	476.1.1 = {
+		holder = yujiulu_10
+	}
+}
+
+
+c_baibalik = {
+	351.1.1 = {
+		holder = yujiulu_061
+		government = nomadic_government
+	}
+	375.1.1 = {
+		holder = yujiulu_072
+		liege = d_otuken
+	}
+	476.1.1 = {
+		holder = yujiulu_10
+	}
+}
+
+
+c_khokhoo = {
+	351.1.1 = {
+		holder = yujiulu_061
+		government = nomadic_government
+	}
+	375.1.1 = {
+		holder = yujiulu_074
+		liege = d_otuken
+	}
+	476.1.1 = {
+		holder = yujiulu_10
+	}
+}
+
+
+c_karatsagaan = {
+	351.1.1 = {
+		holder = yujiulu_061
+		government = nomadic_government
+	}
+	375.1.1 = {
+		holder = yujiulu_074
+		liege = d_otuken
+	}	
+	394.1.1 = {
+		holder = rouran_02
+	}
+	476.1.1 = {
+		holder = yujiulu_10
+	}
+}
+
+
+c_tunka = {
+	## Independent Tiele Tribes
+	
+	359.1.1 = { 
+		holder = tiele_08
+		government = nomadic_government
+	} 
+	399.1.1 = { 
+		holder = tiele_09 ##Fictional Jiepi Tribe
+	}
+	402.1.1 = {
+		liege = e_mongolia
+	}
+	## Rouran Domination
+	458.1.1 = {
+		holder = fuluo_01 # Fictional Rouran Vassal
+	}
+}
+
+
+d_ovorkhangai = {
+	340.1.1 = {
+		holder = yujiulu_05
+	}
+	351.1.1 = {
+		holder = yujiulu_06
+		government = nomadic_government
+	}
+	394.1.1 = {
+		holder = yujiulu_072
+	}
+	402.1.1 = {
+		liege = e_mongolia
+	}
+	464.1.1 = {
+		holder = yujiulu_11
+	}
+}
+
+
+c_tovkhon = {
+	351.1.1 = {
+		holder = yujiulu_06
+		government = nomadic_government
+	}
+	394.1.1 = {
+		holder = tiele_03
+		liege = d_otuken
+	}
+	402.1.1 = {
+		liege = e_mongolia
+	}
+	464.1.1 = {
+		holder = yujiulu_11
+	}
+	532.1.1 = {
+		holder = yujiulu_115
+	}
+}
+
+
+c_ongi = {
+	351.1.1 = {
+		holder = yujiulu_06
+		government = nomadic_government
+	}
+	394.1.1 = {
+		holder = tiele_03
+		liege = d_otuken
+	}
+	402.1.1 = {
+		liege = e_mongolia
+	}
+	464.1.1 = {
+		holder = yujiulu_11
+	}
+	530.1.1 = {
+		holder = rouran_04
+	}
+}
+
+
+c_ikh_bogd = {
+	351.1.1 = {
+		holder = yujiulu_06
+		government = nomadic_government
+	}
+	395.1.1 = {
+		holder = tiele_02
+		liege = d_arkhangai
+	}
+	402.1.1 = {
+		holder = yujiulu_072
+		liege = e_mongolia
+	}
+	464.1.1 = {
+		holder = yujiulu_11
+	}
+	530.1.1 = {
+		holder = rouran_04
+	}
+}
+
+
+c_bombogor = {
+	351.1.1 = {
+		holder = yujiulu_06
+		government = nomadic_government
+	}
+	395.1.1 = {
+		holder = tiele_02
+		liege = d_arkhangai
+	}
+	402.1.1 = {
+		holder = yujiulu_072
+		liege = e_mongolia
+	}
+	464.1.1 = {
+		holder = yujiulu_11
+	}
+	530.1.1 = {
+		holder = rouran_04
+	}
+}
+
+
+c_khasagt_khairkhan = {
+	360.1.1 = {
+		holder = bayirku_1 #Fictional
+		government = nomadic_government
+	}
+	395.1.1 = {
+		holder = tiele_02
+		liege = d_arkhangai
+	}
+	402.1.1 = {
+		holder = yujiulu_072
+		liege = e_mongolia
+	}
+	464.1.1 = {
+		holder = yujiulu_11
+		liege = e_mongolia
+	}
+	527.1.1 = { holder = buryat_01 }
+	623.1.1 = { holder = buryat_06 }
+	760.1.1 = { holder = buryat_08 }
+}
+
+d_arkhangai = {
+	##Semi-Historical Hulu Tribe
+	359.1.1 = { 
+		holder = tiele_01 
+		government = nomadic_government
+	} 
+	389.1.1 = {
+		holder = tiele_02
+	}
+	## Chiluohou of the Hulu Tribe
+	402.6.6 = { 
+		holder = tiele_03 
+		liege = e_mongolia
+	}
+	## Rouran Domination
+	430.1.1 = {
+		holder = tiele_14
+	}
+	477.1.1 = {
+		holder = tiele_15
+	}
+}
+
+c_tarvagatai = {
+	##Semi-Historical Hulu Tribe
+	359.1.1 = { 
+		holder = tiele_01 
+		liege = d_arkhangai
+		government = nomadic_government
+	} 
+	389.1.1 = {
+		holder = tiele_02
+	}
+	## Chiluohou of the Hulu Tribe
+	402.6.6 = { 
+		holder = tiele_03 
+	}
+	## Rouran Domination
+	430.1.1 = {
+		holder = tiele_14
+	}
+	477.1.1 = {
+		holder = tiele_15
+	}
+	532.1.1 = {
+		holder = yujiulu_115
+	}
+}
+
+
+c_oigon = {
+	##Semi-Historical Hulu Tribe
+	359.1.1 = { 
+		holder = tiele_01 
+		liege = d_arkhangai
+		government = nomadic_government
+	} 
+	389.1.1 = {
+		holder = tiele_02
+	}
+	## Chiluohou of the Hulu Tribe
+	402.6.6 = { 
+		holder = tiele_03 
+	}
+	## Rouran Domination
+	430.1.1 = {
+		holder = tiele_14
+	}
+	477.1.1 = {
+		holder = tiele_15
+	}
+	532.1.1 = {
+		holder = yujiulu_115
+	}
+}
+
+
+c_uliastai = {
+	##Semi-Historical Hulu Tribe
+	359.1.1 = { 
+		holder = tiele_01 
+		liege = d_arkhangai
+		government = nomadic_government
+	} 
+	389.1.1 = {
+		holder = tiele_02
+	}
+	## Chiluohou of the Hulu Tribe
+	402.6.6 = { 
+		holder = tiele_03 
+	}
+	## Rouran Domination
+	430.1.1 = {
+		holder = tiele_14
+	}
+	477.1.1 = {
+		holder = tiele_15
+	}
+	532.1.1 = {
+		holder = yujiulu_115
+	}
+}
+
+
+d_khovsgol = {
+	
+}
+
+
+c_darkhad_valley = {
+	## Independent Tiele Tribes
+	359.1.1 = { holder = tiele_06
+	government = nomadic_government
+	} ##Fictional Yuanhe Tribe
+	399.1.1 = { 
+		holder = tiele_07 ##Fictional Yuanhe Tribe
+	} ## Rouran Domination
+	402.1.1 = {
+		liege = e_mongolia
+	}
+	458.1.1 = {
+		holder = tongluo_1 # Fictinal Rouran Vassal
+	}
+	527.1.1 = { holder = buryat_02 }
+	631.1.1 = { holder = buryat_05 }
+	760.1.1 = { holder = buryat_09 }
+}
+
+
+c_tomorbulag = {
+	## Independent Tiele Tribes
+	359.1.1 = { 
+		holder = tiele_06
+		government = nomadic_government
+	} 
+	##Fictional Yuanhe Tribe
+	399.1.1 = { 
+		holder = tiele_07 ##Fictional Yuanhe Tribe
+	} 
+	## Rouran Domination
+	402.1.1 = {
+		liege = e_mongolia
+	}
+	458.1.1 = {
+		holder = tongluo_1 # Fictinal Rouran Vassal
+	}
+	527.1.1 = { holder = buryat_02 }
+	631.1.1 = { holder = buryat_05 }
+	760.1.1 = { holder = buryat_09 }
+}
+
+
+c_ulantaiga = {
+	## Independent Tiele Tribes
+	359.1.1 = { 
+		holder = tiele_06
+		government = nomadic_government
+	} 
+	##Fictional Yuanhe Tribe
+	399.1.1 = { 
+		holder = tiele_07 ##Fictional Yuanhe Tribe
+	} 
+	## Rouran Domination
+	402.1.1 = {
+		liege = e_mongolia
+	}
+	458.1.1 = {
+		holder = tongluo_1 # Fictinal Rouran Vassal
+	}
+	527.1.1 = { holder = buryat_02 }
+	631.1.1 = { holder = buryat_05 }
+	760.1.1 = { holder = buryat_09 }
+}
+
+
+d_gobi_altai = {
+	
+}
+
+
+c_tseel = {
+	## Independent Tiele Tribes
+	
+	359.1.1 = { 
+		holder = tiele_10 
+		government = nomadic_government
+	} ##Fictional Hugu Tribe
+	399.1.1 = { 
+		holder = tiele_11 ##Fictional Jiepi Tribe
+	} 
+	## Rouran Domination
+	402.1.1 = {
+		liege = e_mongolia
+	}
+	458.1.1 = {
+		holder = siqit_01 # Fictinal Rouran Vassal
+	}
+	527.1.1 = { holder = buryat_02 }
+	631.1.1 = { holder = buryat_05 }
+	760.1.1 = { holder = buryat_09 }
+}
+
+
+c_sharga = {
+	360.1.1 = {
+		holder = bayirku_1 #Fictional
+		government = nomadic_government
+	}
+	460.1.1 = {
+		holder = bayirku_3 #Fictional
+		liege = e_mongolia
+	}
+	527.1.1 = { holder = buryat_01 }
+	623.1.1 = { holder = buryat_06 }
+	760.1.1 = { holder = buryat_08 }
+}
+
+
+c_zarman = {
+	## Independent Tiele Tribes
+	
+	359.1.1 = { 
+		holder = tiele_10 
+		government = nomadic_government
+	} ##Fictional Hugu Tribe
+	399.1.1 = { 
+		holder = tiele_11 ##Fictional Jiepi Tribe
+	} 
+	## Rouran Domination
+	402.1.1 = {
+		liege = e_mongolia
+	}
+	458.1.1 = {
+		holder = siqit_01 # Fictinal Rouran Vassal
+	}
+	527.1.1 = { holder = buryat_02 }
+	631.1.1 = { holder = buryat_05 }
+	760.1.1 = { holder = buryat_09 }
+}
+
+
+c_uvs_nuur = {
+	#361.1.1 = {
+	#	holder = dzungaria_05
+	#	government = nomadic_government
+	#}
+	361.1.1 = {
+		holder = yidie_01
+		government = nomadic_government
+		#liege = e_mongolia
+	}
+	400.1.1 = {
+		holder = yidie_02
+		liege = e_mongolia
+	}
+	430.1.1 = {
+		holder = yidie_03
+		liege = e_mongolia
+	}
+	480.1.1 = {
+		holder = yidie_04
+		liege = e_mongolia
+	}
+	510.1.1 = {
+		holder = yidie_05
+		liege = e_mongolia
+	}
+}
+
+
+c_ulaangom = {
+	360.1.1 = {
+		holder = uyghur_1 #Fictional
+		government = nomadic_government
+	}
+	401.1.1 = {
+		holder = uyghur_2 #Fictional
+	}
+	435.1.1 = {
+		holder = uyghur_3 #Fictional
+		liege = e_mongolia
+	}
+	499.1.1 = {
+		holder = uyghur_6
+	}
+}
+
+
+c_tesiin_gol = {
+	#361.1.1 = {
+	#	holder = dzungaria_05
+	#	government = nomadic_government
+	#}
+	361.1.1 = {
+		holder = yidie_01
+		government = nomadic_government
+		#liege = e_mongolia
+	}
+	400.1.1 = {
+		holder = yidie_02
+		liege = e_mongolia
+	}
+	430.1.1 = {
+		holder = yidie_03
+		liege = e_mongolia
+	}
+	480.1.1 = {
+		holder = yidie_04
+		liege = e_mongolia
+	}
+	510.1.1 = {
+		holder = yidie_05
+		liege = e_mongolia
+	}
+}
+
+
+c_urgamal = {
+	#361.1.1 = {
+	#	holder = dzungaria_05
+	#	government = nomadic_government
+	#}
+	361.1.1 = {
+		holder = yidie_01
+		government = nomadic_government
+		#liege = e_mongolia
+	}
+	400.1.1 = {
+		holder = yidie_02
+		liege = e_mongolia
+	}
+	430.1.1 = {
+		holder = yidie_03
+		liege = e_mongolia
+	}
+	480.1.1 = {
+		holder = yidie_04
+		liege = e_mongolia
+	}
+	510.1.1 = {
+		holder = yidie_05
+		liege = e_mongolia
+	}
+}
+
+
+c_khar_us = {
+	360.1.1 = {
+		holder = bayirku_1 #Fictional
+		government = nomadic_government
+	}
+	460.1.1 = {
+		holder = bayirku_3 #Fictional
+		liege = e_mongolia
+	}
+	527.1.1 = { holder = buryat_01 }
+	623.1.1 = { holder = buryat_06 }
+	760.1.1 = { holder = buryat_08 }
+}
+
+
+c_harhiraa = {
+	360.1.1 = {
+		holder = uyghur_1 #Fictional
+		government = nomadic_government
+	}
+	401.1.1 = {
+		holder = uyghur_2 #Fictional
+	}
+	435.1.1 = {
+		holder = uyghur_3 #Fictional
+		liege = e_mongolia
+	}
+	499.1.1 = {
+		holder = uyghur_6
+	}
+}
+
+
+c_tsambagarau = {
+	360.1.1 = {
+		holder = uyghur_1 #Fictional
+		government = nomadic_government
+	}
+	401.1.1 = {
+		holder = uyghur_2 #Fictional
+	}
+	435.1.1 = {
+		holder = uyghur_3 #Fictional
+		liege = e_mongolia
+	}
+	499.1.1 = {
+		holder = uyghur_6
+	}
+}
+

@@ -1,0 +1,138 @@
+﻿
+### TFE: Remixed vanilla ###
+TFE_outdoors_pagan_altar_background = {
+	background = {
+		reference = "gfx/interface/illustrations/event_scenes/ep2_holysite_tribal.dds"
+		environment = "environment_event_garden"
+		ambience = "event:/DLC/FP1/SFX/Events/event_temple"
+	}
+}
+
+### TFE: CIRCUIT ###
+circuit = {
+	background = {
+		reference = "gfx/interface/illustrations/event_scenes/circuit.dds"
+		environment = "environment_event_genericcamp"
+		ambience = "event:/SFX/Events/Backgrounds/camp_generic_day"
+	}
+}
+
+## TFE ADDITION : basilica maxentius
+basilica_maxentius = {
+	background = {
+		reference = "gfx/interface/illustrations/event_scenes/tfe_basilica_maxentius.dds"
+		environment = "environment_frontend_mediterranean_main_event"
+		ambience = "event:/SFX/Events/Backgrounds/throneroom_mediterranean"
+	}
+}
+
+## TFE ADDITION : roman street
+roman_street = {
+	background = {
+		reference = "gfx/interface/illustrations/event_scenes/tfe_roman_street.dds"
+		environment = "environment_frontend_mediterranean_main_event"
+		ambience = "event:/SFX/Events/Backgrounds/throneroom_mediterranean"
+	}
+}
+
+## TFE ADDITION : curia julia
+curia_julia = {
+	background = {
+		reference = "gfx/interface/illustrations/event_scenes/tfe_curia_julia.dds"
+		environment = "environment_frontend_mediterranean_main_event"
+		ambience = "event:/SFX/Events/Backgrounds/throneroom_mediterranean"
+	}
+}
+
+## TFE ADDITION : curia julia
+tfe_mena_city = {
+	background = {
+		reference = "gfx/interface/illustrations/event_scenes/tfe_mena_city.dds"
+		environment = "environment_event_market_east"
+		ambience = "event:/SFX/Events/Backgrounds/town_market_middleeastern_day"
+	}
+}
+
+
+
+#### TFE Fullscreen Backgrounds ####
+
+TFE_struggle_bg_med_palace = {
+	background = {	# Intro
+		reference = "gfx/interface/illustrations/event_story/TFE_struggle_bg_med_palace.dds"
+		environment = "environment_event_study_physician" # added because it is expected in events
+		ambience = "event:/DLC/FP2/SFX/UI/fp2_struggle_start_loop"
+	}
+}
+
+TFE_struggle_bg_mena_palace = {
+	background = {	# Intro
+		reference = "gfx/interface/illustrations/event_story/TFE_struggle_bg_mena_palace.dds"
+		environment = "environment_event_study_physician" # added because it is expected in events
+		ambience = "event:/DLC/FP2/SFX/UI/fp2_struggle_end_loop_hostility"
+	}
+}
+
+TFE_struggle_bg_oasis = {
+	background = {	# Intro
+		reference = "gfx/interface/illustrations/event_story/TFE_struggle_bg_oasis.dds"
+		environment = "environment_event_study_physician" # added because it is expected in events
+		ambience = "event:/DLC/FP2/SFX/UI/fp2_struggle_end_loop_compromise"
+	}
+}
+
+TFE_struggle_bg_eastern_market = {
+	background = {	# Intro
+		reference = "gfx/interface/illustrations/event_story/TFE_struggle_bg_eastern_market.dds"
+		environment = "environment_event_study_physician" # added because it is expected in events
+		ambience = "event:/DLC/FP2/SFX/UI/fp2_struggle_end_loop_conciliation"
+	}
+}
+
+TFE_struggle_bg_indian_palace = {
+	background = {	# Intro
+		reference = "gfx/interface/illustrations/event_story/TFE_struggle_bg_indian_palace.dds"
+		environment = "environment_event_study_physician" # added because it is expected in events
+		ambience = "event:/DLC/FP2/SFX/UI/fp2_struggle_start_loop"
+	}
+}
+
+TFE_struggle_bg_indian_holy_site = {
+	background = {	# Intro
+		reference = "gfx/interface/illustrations/event_story/TFE_struggle_bg_indian_holy_site.dds"
+		environment = "environment_event_study_physician" # added because it is expected in events
+		ambience = "event:/DLC/FP2/SFX/UI/fp2_struggle_end_loop_conciliation"
+	}
+}
+
+TFE_struggle_bg_nomad_feast = {
+	background = {	# Intro
+		reference = "gfx/interface/illustrations/event_story/TFE_struggle_bg_nomad_feast.dds"
+		environment = "environment_event_study_physician" # added because it is expected in events
+		ambience = "event:/DLC/FP2/SFX/UI/fp2_struggle_end_loop_hostility"
+	}
+}
+
+TFE_struggle_bg_indian_palace = {
+	background = {	# Intro
+		reference = "gfx/interface/illustrations/event_story/TFE_struggle_bg_indian_palace.dds"
+		environment = "environment_event_study_physician" # added because it is expected in events
+		ambience = "event:/DLC/FP2/SFX/UI/fp2_struggle_end_loop_compromise"
+	}
+}
+
+TFE_struggle_bg_indian_holy_site = {
+	background = {	# Intro
+		reference = "gfx/interface/illustrations/event_story/TFE_struggle_bg_indian_holy_site.dds"
+		environment = "environment_event_study_physician" # added because it is expected in events
+		ambience = "event:/DLC/FP2/SFX/UI/fp2_struggle_end_loop_conciliation"
+	}
+}
+
+TFE_struggle_bg_mediterranean_city = {
+	background = {	# Intro
+		reference = "gfx/interface/illustrations/event_story/TFE_struggle_bg_mediterranean_city.dds"
+		environment = "environment_event_study_physician" # added because it is expected in events
+		ambience = "event:/DLC/FP2/SFX/UI/fp2_struggle_start_loop"
+	}
+}

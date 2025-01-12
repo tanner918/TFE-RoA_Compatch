@@ -1,0 +1,371 @@
+﻿##################################################################
+# 
+# STEPPE EVENTS
+# 
+# For nomads and stuff
+# 
+##################################################################
+
+
+
+namespace = steppe
+
+
+##################################################################
+# 
+# LI LING DECISION
+# steppe.0001-steppe.0009
+# 
+##################################################################
+
+
+# Descent claimed from Li Ling
+steppe.0001 = {
+	type = character_event
+	title = steppe.0001.t
+	desc = steppe.0001.desc
+	theme = hunt_activity
+	override_icon = { reference = "gfx/interface/icons/event_types/type_family.dds" }
+	
+	right_portrait = {
+		character = scope:li_ling_claimant
+		animation = personality_honorable
+	}
+	
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		scope:li_ling_claimant = {
+			show_as_tooltip = {
+				claim_li_ling_descent_effect = yes
+			}
+		}
+	}
+
+	option = {
+		name = steppe.0001.a
+		trigger = { dynasty = scope:li_ling_claimant.dynasty }
+	}
+	option = {
+		name = steppe.0001.b
+		trigger = { NOT = { dynasty = scope:li_ling_claimant.dynasty } }
+	}
+}
+
+
+# Attila the Hun
+#Unused
+steppe.0010 = {
+	title = steppe.0010.t
+	desc = steppe.0010.desc
+	scope = character
+	theme = martial
+	override_icon = { reference = "gfx/interface/icons/event_types/type_war.dds" }
+
+	override_background = {
+		reference = battlefield
+	}
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+
+	option = {
+		name = steppe.0010.option.a
+		add_trait = the_hun
+		give_nickname = nick_the_hun
+
+		if = {
+			limit = {
+				NOT = {
+					has_title = title:e_hunnic_empire
+				}
+			}
+			add_unpressed_claim = title:e_hunnic_empire
+		}
+	}
+}
+
+steppe.0011 = {
+	title = steppe.0011.t
+	desc = steppe.0011.desc
+	scope = character
+	theme = martial
+
+	override_background = {
+		reference = battlefield
+	}
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	right_portrait = {
+		character = scope:attila
+		animation = anger
+	}
+
+	option = {
+		name = steppe.0011.option.a
+		trigger = {
+			culture = {
+				any_parent_culture_or_above = {
+					THIS = culture:hun
+				}
+			}
+		}
+	}
+	option = {
+		name = steppe.0011.option.b
+		trigger = {
+			NOT = {
+				culture = {
+					any_parent_culture_or_above = {
+						THIS = culture:hun
+					}
+				}
+			}
+		}
+	}
+}
+
+steppe.0012 = {
+	title = steppe.0012.t
+	desc = steppe.0012.desc
+	scope = character
+	theme = martial
+
+	override_background = {
+		reference = throne_room_east
+	}
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	right_portrait = {
+		character = scope:recipient
+		animation = thinking
+	}
+
+	option = {
+		name = steppe.0012.option.a
+		custom_tooltip = steppe.0012.option.a.tooltip
+		set_variable = {
+			name = tribute_amount
+			value = 50
+		}
+		scope:recipient = {
+			trigger_event = { id = steppe.0013 days = 1}
+		}
+	}
+	option = {
+		name = steppe.0012.option.b
+		custom_tooltip = steppe.0012.option.b.tooltip
+		set_variable = {
+			name = tribute_amount
+			value = 200
+		}
+		scope:recipient = {
+			trigger_event = steppe.0013
+		}
+	}
+	option = {
+		name = steppe.0012.option.c
+		custom_tooltip = steppe.0012.option.c.tooltip
+		set_variable = {
+			name = tribute_amount
+			value = 500
+		}
+		scope:recipient = {
+			trigger_event = steppe.0013
+		}
+	}
+	option = {
+		name = steppe.0012.option.d
+		remove_interaction_cooldown = calling_nomadic_empire
+	}
+}
+steppe.0013 = {
+	title = steppe.0013.t
+	desc = steppe.0013.desc
+	scope = character
+	theme = martial
+
+	override_background = {
+		reference = throne_room_east
+	}
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+	right_portrait = {
+		character = scope:actor
+		animation = worry
+	}
+	immediate = {
+		scope:actor = {
+			random_war_enemy = {
+				limit = {
+					any_neighboring_and_across_water_top_liege_realm_owner = {
+						THIS = root
+					}
+				}
+				save_scope_as = empire_enemy
+			}
+		}
+	}
+	option = {
+		name = steppe.0013.option.a
+		scope:actor = {
+			pay_short_term_gold = {
+				target = root
+				gold = var:tribute_amount
+			}
+		}
+		scope:actor = {
+			random_character_war = {
+				limit = {
+					any_war_participant = {
+						THIS = scope:empire_enemy
+					}
+				}
+				if = {
+					limit = {
+						any_war_attacker = {
+							THIS = scope:empire_enemy
+						}
+					}
+					add_defender = root
+				}
+				else = {
+					add_attacker = root
+				}
+			}
+		}
+		hidden_effect = {
+			scope:actor = {
+				send_interface_toast = {
+					title = calling_nomadic_empire_accepted
+					custom_tooltip = calling_nomadic_empire_accepted_desc
+					left_icon = scope:recipient
+				}
+			}
+		}
+		scope:actor = {
+			add_opinion = {
+				target = root
+				opinion = 100
+				years = 5
+				modifier = stood_by_me_opinion
+			}
+		}
+		ai_chance = {
+			base = 10
+			
+			opinion_modifier = {
+				opinion_target = scope:actor
+				multiplier = 0.5
+				step = 5
+				max = 100
+			}
+			modifier = {
+				add = 15
+				trigger = {
+					scope:actor = {
+						var:tribute_amount >= 200
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				trigger = {
+					scope:actor = {
+						var:tribute_amount >= 500
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = steppe.0013.option.b
+		scope:actor = {
+			add_opinion = {
+				target = root
+				opinion = -100
+				years = 5
+				modifier = ignored_call_for_help
+			}
+		}
+		hidden_effect = {
+			scope:actor = {
+				send_interface_toast = {
+					title = calling_nomadic_empire_denied
+					custom_tooltip = calling_nomadic_empire_denied_desc
+					left_icon = scope:recipient
+				}
+			}
+		}
+		ai_chance = {
+			base = 5
+		}
+	}
+}
+
+steppe.6666 = {
+	scope = none
+	hidden = yes
+
+	immediate = {
+		debug_log = "Attila spawns!"
+		debug_log_date = yes
+		spawn_attila_character_effect = yes
+		set_global_variable = {
+			name = attila_spawn
+			value = yes
+		}
+		title:e_hunnic_empire.holder = {
+			save_scope_as = khan
+		}
+		scope:attila = {
+			copy_inheritable_appearance_from = character:990000
+			add_trait = the_hun
+			change_age = -3
+			give_nickname = nick_the_hun
+			set_character_faith = scope:khan.faith
+			set_culture = scope:khan.culture
+			if = {
+				limit = {
+					scope:khan = {
+						gender = male
+					}
+				}
+				set_father = scope:khan
+				set_house = scope:khan.house
+			}
+			if = {
+				limit = {
+					scope:khan = {
+						gender = female
+					}
+				}
+				set_mother = scope:khan
+				set_house = scope:khan.house
+			}
+			scope:khan = {
+				set_designated_heir = scope:attila
+				add_courtier = scope:attila
+			}
+			#Doesn't work
+			#add_martial_skill = 10
+			#add_diplomacy_skill = 5
+			#add_intrigue_skill = 5
+			#add_stewardship_skill = 5
+			#add_prowess_skill = 10
+		}
+		every_player = {
+			trigger_event = {
+				id = steppe.0011
+			}
+		}	
+	}
+
+
+}

@@ -1,0 +1,122 @@
+﻿mesopotamia_11 = {
+	name = "Adhur"
+	religion = "nicene"
+	culture = "assyrian"
+	360.2.19 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+mesopotamia_12 = {
+	name = "Adhur"
+	religion = "nestorian"
+	culture = "assyrian"
+	451.2.27 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+###
+mesopotamia_20 = {
+	name = "Chanina"
+	religion = "nicene"
+	culture = "assyrian"
+	332.2.27 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+mesopotamia_21 = {
+	name = "Abgar"
+	religion = "nestorian"
+	culture = "assyrian"
+	451.2.27 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+mesopotamia_22 = {
+	name = "Tomarsa"
+	religion = "south_mesopotamian_pagan"
+	culture = "chaldean"
+	331.2.27 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+mesopotamia_23 = {
+	name = "Qayyoma"
+	religion = "south_mesopotamian_pagan"
+	culture = "chaldean"
+	455.2.27 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+# Assyrian
+
+assyrian_01 = {
+	name = "Tomarsa"
+	dynasty = dara_dynasty
+	religion = "nestorian"
+	culture = "assyrian"
+	470.12.1 = {
+		birth = yes
+	}
+	520.1.1 = {
+		death = yes
+	}
+}
+
+assyrian_02 = {
+	name = "Solomon"
+	dynasty = dara_dynasty
+	religion = "chalcedonian"
+	culture = "assyrian"
+	father = assyrian_01
+	diplomacy = 7
+	martial = 9
+	stewardship = 10
+	intrigue = 3
+	learning = 5
+	prowess = 10
+	trait = beardless_eunuch
+	trait = brave
+	trait = diligent
+	trait = temperate
+	trait = education_martial_3
+	trait = reckless
+	trait = overseer
+	490.12.1 = {
+		birth = yes
+	}
+	544.1.1 = {
+		death = yes
+	}
+}
+
+assyrian_03 = {
+	name = "Bacchus"
+	dynasty = dara_dynasty
+	religion = "chalcedonian"
+	culture = "assyrian"
+	father = assyrian_01
+	491.12.1 = {
+		birth = yes
+	}
+	550.1.1 = {
+		death = yes
+	}
+}

@@ -1,0 +1,4404 @@
+﻿mil_law_policy_level_1 = {
+	default = mil_law_1_1
+	cumulative = no
+	flag = policy_1
+	flag = policy_level_1
+	flag = policy_mil
+	flag = policy
+
+	mil_law_1_1 = {
+		modifier = {
+		}
+
+		can_keep = { 
+			has_imperial_laws = yes 
+		}
+
+		can_pass = { 
+			has_imperial_laws = yes
+		}
+		
+		pass_cost = {
+			gold = 0
+		}
+		
+		on_pass = { }
+	}
+}
+mil_law_policy_level_2 = {
+	default = mil_law_2_0
+	cumulative = no
+	flag = policy_level_2
+	flag = policy_mil
+	flag = policy
+
+	mil_law_2_0 = {
+		modifier = {
+		}
+		flag = hidden_policy
+		can_keep = { 
+			has_imperial_laws = yes 
+		}
+
+		can_pass = { 
+			has_imperial_laws = yes 
+		}
+		
+		pass_cost = {
+			gold = 0
+		}
+		
+		on_pass = { }
+	}
+	
+	mil_law_2_1 = {
+		modifier = {
+			direct_vassal_opinion = -10
+			vassal_levy_contribution_mult = 1
+			levy_size = 1
+			movement_speed = -0.25
+			controlled_province_advantage = 10
+			men_at_arms_maintenance = 0.5
+			men_at_arms_cap = -3
+			men_at_arms_limit = -3
+		}
+
+		can_keep = { 
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_0_competency_requirement
+					var:mil_comp >= imp_policy_0_requirement
+				}
+			} 
+		}
+
+		can_pass = {
+			custom_tooltip = {
+				text = recently_changed_mil_focus_2_tt
+				NOT = { has_variable = recently_changed_mil_focus_2 }
+			}
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_0_competency_requirement
+					var:mil_comp >= imp_policy_0_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_mil_focus_2
+				years = 5
+			}
+			remove_variable = recently_changed_mil_focus_3
+			remove_variable = recently_changed_mil_focus_4
+		}
+		ai_will_do = {
+			if = {
+				limit = { NOT = { has_realm_law = mil_law_2_2 } }
+				value = 1
+			}
+		}
+	}
+	
+	mil_law_2_2 = {
+		modifier = {
+			levy_size = -5
+			vassal_levy_contribution_mult = -5
+			vassal_tax_contribution_mult = 0.25
+			domain_tax_mult = 0.25
+			direct_vassal_opinion = -10
+			men_at_arms_cap = 2
+		    men_at_arms_limit = 4
+			men_at_arms_maintenance = -0.2
+		}
+		
+		can_keep = { 
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_1_competency_requirement
+					var:mil_comp >= imp_policy_1_requirement
+				}
+			}
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_mil_focus_2_tt
+				NOT = { has_variable = recently_changed_mil_focus_2 }
+			}
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_1_competency_requirement
+					var:mil_comp >= imp_policy_1_requirement
+				}
+			}
+		}
+
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_mil_focus_2
+				years = 5
+			}
+			remove_variable = recently_changed_mil_focus_3
+			remove_variable = recently_changed_mil_focus_4
+		}
+		ai_will_do = {
+			value = 2
+		}
+	}
+	
+	mil_law_2_3 = {
+		modifier = {
+			#direct_vassal_opinion = 10
+			#men_at_arms_maintenance = -0.05
+			domain_limit = 2
+			levy_size = -0.75
+			vassal_levy_contribution_mult = -0.75
+			men_at_arms_cap = 4
+			men_at_arms_limit = -2
+			#pursue_efficiency = 0.25
+			counter_efficiency = 0.5
+			movement_speed = 0.1
+			#here be some combat modifers
+		}
+
+		can_keep = { 
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_1_competency_requirement
+					var:mil_comp >= imp_policy_1_requirement
+				}
+			}
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_mil_focus_2_tt
+				NOT = { has_variable = recently_changed_mil_focus_2 }
+			}
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_1_competency_requirement
+					var:mil_comp >= imp_policy_1_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_mil_focus_2
+				years = 5
+			}
+			remove_variable = recently_changed_mil_focus_3
+			remove_variable = recently_changed_mil_focus_4
+		}
+	}
+}
+mil_law_policy_level_3 = {
+	default = mil_law_3_0
+	cumulative = no
+	flag = policy_level_3
+	flag = policy_mil
+	flag = policy
+
+	mil_law_3_0 = {
+		modifier = {
+		}
+		flag = hidden_policy
+		can_keep = { 
+			has_imperial_laws = yes 
+		}
+
+		can_pass = { 
+			has_imperial_laws = yes 
+		}
+		
+		pass_cost = {
+			gold = 0
+		}
+		
+		on_pass = { }
+	}
+	
+	mil_law_3_1 = {
+		modifier = {
+			monthly_county_control_growth_add = 0.1
+			county_opinion_add = 10
+			travel_danger = -10
+			character_travel_safety_mult = 0.2
+			garrison_size = 0.5
+			#monthly_county_control_growth_factor = 0.05
+			#monthly_county_control_change_at_war_mult = 0.05
+		}
+
+		can_keep = { 
+			has_imperial_laws = yes 
+			has_realm_law = mil_law_2_1
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_1_competency_requirement
+					var:mil_comp >= imp_policy_1_requirement
+				}
+			} 
+		}
+
+		can_pass = {
+			custom_tooltip = {
+				text = recently_changed_mil_focus_3_tt
+				NOT = { has_variable = recently_changed_mil_focus_3 }
+			}
+			has_imperial_laws = yes 
+			has_realm_law = mil_law_2_1
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_1_competency_requirement
+					var:mil_comp >= imp_policy_1_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_mil_focus_3
+				years = 2
+			}
+			remove_variable = recently_changed_mil_focus_4
+		}
+		ai_will_do = {
+			if = {
+				limit = { NOT = { has_realm_law = mil_law_3_2 } }
+				value = 1
+			}
+		}
+	}
+	
+	mil_law_3_2 = {
+		modifier = {
+			levy_maintenance = -0.3
+			#men_at_arms_maintenance = -0.2
+			army_maintenance_mult = -0.2
+		}
+
+		can_keep = { 
+			has_imperial_laws = yes 
+			has_realm_law = mil_law_2_1
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_2_competency_requirement
+					var:mil_comp >= imp_policy_2_requirement
+				}
+			} 
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_mil_focus_3_tt
+				NOT = { has_variable = recently_changed_mil_focus_3 }
+			}
+			has_imperial_laws = yes 
+			has_realm_law = mil_law_2_1
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_2_competency_requirement
+					var:mil_comp >= imp_policy_2_requirement
+				}
+			}
+		}
+
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_mil_focus_3
+				years = 2
+			}
+			remove_variable = recently_changed_mil_focus_4
+		}
+		ai_will_do = {
+			value = 2
+		}
+	}
+	
+	mil_law_3_3 = {
+		modifier = {
+			enemy_terrain_advantage = -0.25
+			no_water_crossing_penalty = yes
+			defender_advantage = -20
+			attacker_advantage = 10
+			controlled_province_advantage = -10
+			uncontrolled_province_advantage = 10
+			max_combat_roll = 10
+			enemy_hard_casualty_modifier = 0.25
+			hard_casualty_modifier = 0.25
+		}
+
+		can_keep = { 
+			has_imperial_laws = yes 
+			has_realm_law = mil_law_2_2
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_2_competency_requirement
+					var:mil_comp >= imp_policy_2_requirement
+				}
+			}
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_mil_focus_3_tt
+				NOT = { has_variable = recently_changed_mil_focus_3 }
+			}
+			has_imperial_laws = yes 
+			has_realm_law = mil_law_2_2
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_2_competency_requirement
+					var:mil_comp >= imp_policy_2_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_mil_focus_3
+				years = 2
+			}
+			remove_variable = recently_changed_mil_focus_4
+		}
+	}
+	mil_law_3_4 = {
+		modifier = {
+			defender_advantage = 10
+			controlled_province_advantage = 20
+			uncontrolled_province_advantage = -10
+			attacker_advantage = -20
+			min_combat_roll = 5
+			enemy_hard_casualty_modifier = -0.25
+			hard_casualty_modifier = -0.25
+			retreat_losses = -0.25
+		}
+
+		can_keep = { 
+			has_imperial_laws = yes 
+			has_realm_law = mil_law_2_2
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_2_competency_requirement
+					var:mil_comp >= imp_policy_2_requirement
+				}
+			}
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_mil_focus_3_tt
+				NOT = { has_variable = recently_changed_mil_focus_3 }
+			}
+			has_imperial_laws = yes 
+			has_realm_law = mil_law_2_2
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_2_competency_requirement
+					var:mil_comp >= imp_policy_2_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_mil_focus_3
+				years = 2
+			}
+			remove_variable = recently_changed_mil_focus_4
+		}
+		ai_will_do = {
+			value = 2
+		}
+	}
+	
+	mil_law_3_5 = {
+		modifier = {
+			advantage = 10
+			min_combat_roll = 5
+			max_combat_roll = 5
+			counter_efficiency = 0.5
+			hard_casualty_modifier = -0.1
+			enemy_hard_casualty_modifier = 0.1
+			#pursue_efficiency = 0.5
+		}
+
+		can_keep = { 
+			has_imperial_laws = yes 
+			has_realm_law = mil_law_2_3
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_2_competency_requirement
+					var:mil_comp >= imp_policy_2_requirement
+				}
+			}
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_mil_focus_3_tt
+				NOT = { has_variable = recently_changed_mil_focus_3 }
+			}
+			has_imperial_laws = yes 
+			has_realm_law = mil_law_2_3
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_2_competency_requirement
+					var:mil_comp >= imp_policy_2_requirement
+				}
+			}
+		}
+
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_mil_focus_3
+				years = 2
+			}
+			remove_variable = recently_changed_mil_focus_4
+		}
+	}
+	
+	mil_law_3_6 = {
+		modifier = {
+			character_travel_safety_mult = 0.1
+			character_travel_speed_mult = 0.2
+			travel_danger = -10
+			movement_speed = 0.15
+			pursue_efficiency = 0.25
+			retreat_losses = -0.25
+			#hard_casualty_modifier = -0.05
+		}
+
+		can_keep = { 
+			has_imperial_laws = yes 
+			has_realm_law = mil_law_2_3
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_2_competency_requirement
+					var:mil_comp >= imp_policy_2_requirement
+				}
+			}
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_mil_focus_3_tt
+				NOT = { has_variable = recently_changed_mil_focus_3 }
+			}
+			has_imperial_laws = yes 
+			has_realm_law = mil_law_2_3
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_2_competency_requirement
+					var:mil_comp >= imp_policy_2_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_mil_focus_3
+				years = 2
+			}
+			remove_variable = recently_changed_mil_focus_4
+		}
+	}
+}
+mil_law_policy_level_4 = {
+	default = mil_law_4_0
+	cumulative = no
+	flag = policy_level_4
+	flag = policy_mil
+	flag = policy
+
+	mil_law_4_0 = {
+		modifier = {
+		}
+		flag = hidden_policy
+		can_keep = { 
+			has_imperial_laws = yes 
+		}
+
+		can_pass = { 
+			has_imperial_laws = yes 
+		}
+		
+		pass_cost = {
+			gold = 0
+		}
+		
+		on_pass = { }
+	}
+	
+	mil_law_4_1 = {
+		modifier = {
+			county_opinion_add = 15
+			direct_vassal_opinion = 20
+			min_combat_roll = 5
+			additional_fort_level = 1
+			#general_opinion = 5
+			#max_combat_roll = 2
+			#revolting_siege_morale_loss_mult = 0.05
+		}
+
+		can_keep = { 
+			has_imperial_laws = yes 
+			has_realm_law = mil_law_3_1
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_2_competency_requirement
+					var:mil_comp >= imp_policy_2_requirement
+				}
+			} 
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_mil_focus_4_tt
+				NOT = { has_variable = recently_changed_mil_focus_4 }
+			}
+			has_imperial_laws = yes
+			has_realm_law = mil_law_3_1 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_2_competency_requirement
+					var:mil_comp >= imp_policy_2_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_mil_focus_4
+				years = 1
+			}
+		}
+		ai_will_do = {
+			value = 2
+		}
+	}
+	
+	mil_law_4_2 = {
+		modifier = {
+			county_opinion_add = -10
+			#opinion_of_vassal = -5
+			general_opinion = -10
+			knight_effectiveness_per_dread = 0.01
+			knight_limit = 5
+			monthly_prestige_gain_per_dread_mult = 0.05
+			dread_baseline_add = 40
+			#men_at_arms_maintenance_per_dread_mult = -0.01
+		}
+
+		can_keep = { 
+			has_imperial_laws = yes 
+			has_realm_law = mil_law_3_1
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_2_competency_requirement
+					var:mil_comp >= imp_policy_2_requirement
+				}
+			} 
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_mil_focus_4_tt
+				NOT = { has_variable = recently_changed_mil_focus_4 }
+			}
+			has_imperial_laws = yes
+			has_realm_law = mil_law_3_1 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_2_competency_requirement
+					var:mil_comp >= imp_policy_2_requirement
+				}
+			}
+		}
+
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_mil_focus_4
+				years = 1
+			}
+		}
+	}
+	
+	mil_law_4_3 = {
+		modifier = {
+			#supply_limit_mult = 1
+			supply_capacity_mult = 0.5
+			movement_speed = 0.25
+			retreat_losses = -0.25
+			hostile_county_attrition = -0.5
+		}
+
+		can_keep = { 
+			has_imperial_laws = yes 
+			has_realm_law = mil_law_3_2
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_3_competency_requirement
+					var:mil_comp >= imp_policy_3_requirement
+				}
+			} 
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_mil_focus_4_tt
+				NOT = { has_variable = recently_changed_mil_focus_4 }
+			}
+			has_imperial_laws = yes
+			has_realm_law = mil_law_3_2
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_3_competency_requirement
+					var:mil_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_mil_focus_4
+				years = 1
+			}
+		}
+	}
+	mil_law_4_4 = {
+		modifier = {
+			mercenary_hire_cost_mult = -0.4
+			diplomatic_range_mult = 0.25
+			#same_culture_mercenary_hire_cost_mult = -0.05
+			#character_travel_safety_mult = 0.3
+			#max_loot_mult = 0.2
+			#domain_tax_mult = 0.05
+		}
+
+		can_keep = { 
+			has_imperial_laws = yes 
+			has_realm_law = mil_law_3_2
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_3_competency_requirement
+					var:mil_comp >= imp_policy_3_requirement
+				}
+			} 
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_mil_focus_4_tt
+				NOT = { has_variable = recently_changed_mil_focus_4 }
+			}
+			has_imperial_laws = yes
+			has_realm_law = mil_law_3_2
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_3_competency_requirement
+					var:mil_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_mil_focus_4
+				years = 1
+			}
+		}
+		ai_will_do = {
+			value = 2
+		}
+	}
+	
+	mil_law_4_5 = {
+		modifier = {
+			siege_phase_time = -0.25
+			siege_morale_loss = 0.25
+			army_siege_value_mult = 0.25
+			#levy_siege = 0.05
+		}
+
+		can_keep = { 
+			has_imperial_laws = yes 
+			has_realm_law = mil_law_3_3
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_3_competency_requirement
+					var:mil_comp >= imp_policy_3_requirement
+				}
+			} 
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_mil_focus_4_tt
+				NOT = { has_variable = recently_changed_mil_focus_4 }
+			}
+			has_imperial_laws = yes
+			has_realm_law = mil_law_3_3
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_3_competency_requirement
+					var:mil_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_mil_focus_4
+				years = 1
+			}
+		}
+	}
+	
+	mil_law_4_6 = {
+		modifier = {
+			min_combat_roll = 5
+			max_combat_roll = -5
+			hard_casualty_modifier = -0.15
+			#attacker_advantage = 1
+			defender_advantage = 10
+			movement_speed = 0.2
+		}
+
+		can_keep = { 
+			has_imperial_laws = yes 
+			has_realm_law = mil_law_3_3
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_3_competency_requirement
+					var:mil_comp >= imp_policy_3_requirement
+				}
+			} 
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_mil_focus_4_tt
+				NOT = { has_variable = recently_changed_mil_focus_4 }
+			}
+			has_imperial_laws = yes
+			has_realm_law = mil_law_3_3
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_3_competency_requirement
+					var:mil_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_mil_focus_4
+				years = 1
+			}
+		}
+	}
+	mil_law_4_7 = {
+
+		modifier = {
+			army_toughness_mult = 0.2
+			hard_casualty_modifier = -0.25
+			hostile_county_attrition = -0.25
+			movement_speed = -0.2
+			#levy_toughness = 0.05
+			#siege_morale_loss = -0.05
+			#hard_casualty_modifier = -0.05
+		}
+
+		can_keep = { 
+			has_imperial_laws = yes 
+			has_realm_law = mil_law_3_4
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_3_competency_requirement
+					var:mil_comp >= imp_policy_3_requirement
+				}
+			} 
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_mil_focus_4_tt
+				NOT = { has_variable = recently_changed_mil_focus_4 }
+			}
+			has_imperial_laws = yes
+			has_realm_law = mil_law_3_4
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_3_competency_requirement
+					var:mil_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_mil_focus_4
+				years = 1
+			}
+		}
+		ai_will_do = {
+			value = 2
+		}
+	}
+	
+	mil_law_4_8 = {
+		modifier = {
+			garrison_size = 1
+			additional_fort_level = 2
+			revolting_siege_morale_loss_mult = 0.5
+			#levy_reinforcement_rate = 0.3
+			character_travel_safety_mult = 0.2
+			travel_danger = -10
+			#hard_casualty_modifier = -0.05
+		}
+
+		can_keep = { 
+			has_imperial_laws = yes 
+			has_realm_law = mil_law_3_4
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_3_competency_requirement
+					var:mil_comp >= imp_policy_3_requirement
+				}
+			} 
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_mil_focus_4_tt
+				NOT = { has_variable = recently_changed_mil_focus_4 }
+			}
+			has_imperial_laws = yes
+			has_realm_law = mil_law_3_4
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_3_competency_requirement
+					var:mil_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_mil_focus_4
+				years = 1
+			}
+		}
+	}
+	
+	mil_law_4_9 = {
+		modifier = {
+			#character_travel_safety_mult = 0.05
+			#hard_casualty_modifier = -0.2
+			controlled_province_advantage = 10
+			additional_fort_level = 1
+			revolting_siege_morale_loss_mult = 0.5
+			county_opinion_add = 10
+		}
+
+		can_keep = { 
+			has_imperial_laws = yes 
+			has_realm_law = mil_law_3_5
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_3_competency_requirement
+					var:mil_comp >= imp_policy_3_requirement
+				}
+			} 
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_mil_focus_4_tt
+				NOT = { has_variable = recently_changed_mil_focus_4 }
+			}
+			has_imperial_laws = yes
+			has_realm_law = mil_law_3_5
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_3_competency_requirement
+					var:mil_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_mil_focus_4
+				years = 1
+			}
+		}
+	}
+	mil_law_4_10 = {
+		modifier = {
+			knight_limit = 5
+			knight_effectiveness_mult = 1
+			knight_effectiveness_per_dread = 0.01
+			dread_baseline_add = 25
+			#uncontrolled_province_advantage = 2
+			#hostile_county_attrition = -0.2
+			#attacker_advantage = 2
+			#supply_capacity_mult = 0.2
+		}
+
+		can_keep = { 
+			has_imperial_laws = yes 
+			has_realm_law = mil_law_3_5
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_3_competency_requirement
+					var:mil_comp >= imp_policy_3_requirement
+				}
+			} 
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_mil_focus_4_tt
+				NOT = { has_variable = recently_changed_mil_focus_4 }
+			}
+			has_imperial_laws = yes
+			has_realm_law = mil_law_3_5
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_3_competency_requirement
+					var:mil_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_mil_focus_4
+				years = 1
+			}
+		}
+	}
+	
+	mil_law_4_11 = {
+		modifier = {
+			naval_movement_speed_mult = 0.25
+			#movement_speed = 0.15
+			winter_movement_speed = 0.5
+			#uncontrolled_province_advantage = 2
+			controlled_province_advantage = 10
+			enemy_terrain_advantage = -0.75
+			#no_water_crossing_penalty = yes
+			county_opinion_add = 10
+			direct_vassal_opinion = 10
+		}
+
+		can_keep = { 
+			has_imperial_laws = yes 
+			has_realm_law = mil_law_3_6
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_3_competency_requirement
+					var:mil_comp >= imp_policy_3_requirement
+				}
+			} 
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_mil_focus_4_tt
+				NOT = { has_variable = recently_changed_mil_focus_4 }
+			}
+			has_imperial_laws = yes
+			has_realm_law = mil_law_3_6
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_3_competency_requirement
+					var:mil_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_mil_focus_4
+				years = 1
+			}
+		}
+	}
+	
+	mil_law_4_12 = {
+		modifier = {
+			naval_movement_speed_mult = 0.5
+			movement_speed = 0.25
+			#supply_limit_mult = -0.5
+			hostile_county_attrition = 0.25
+			supply_capacity_mult = -0.5
+			no_water_crossing_penalty = yes
+			attacker_advantage = 10
+			pursue_efficiency = 0.5
+			enemy_terrain_advantage = -0.5
+			retreat_losses = 0.25
+			#hard_casualty_modifier = -0.05
+		}
+
+		can_keep = { 
+			has_imperial_laws = yes 
+			has_realm_law = mil_law_3_6
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_3_competency_requirement
+					var:mil_comp >= imp_policy_3_requirement
+				}
+			} 
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_mil_focus_4_tt
+				NOT = { has_variable = recently_changed_mil_focus_4 }
+			}
+			has_imperial_laws = yes
+			has_realm_law = mil_law_3_6
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = mil_law_2_3_competency_requirement
+					var:mil_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_mil_focus_4
+				years = 1
+			}
+		}
+	}
+}
+civic_law_policy_level_1 = {
+	default = civic_law_1_1
+	cumulative = no
+	flag = policy_2
+	flag = policy_level_1
+	flag = policy_civic
+	flag = policy
+	
+	civic_law_1_1 = {
+		modifier = {
+		}
+
+		can_keep = { has_imperial_laws = yes }
+
+		can_pass = { 
+			has_imperial_laws = yes
+		}
+		
+		pass_cost = {
+			gold = 0
+		}
+		
+		on_pass = { }
+	}
+}
+civic_law_policy_level_2 = {
+	default = civic_law_2_0
+	cumulative = no
+	flag = policy_level_2
+	flag = policy_civic
+	flag = policy
+	civic_law_2_0 = {
+		modifier = {
+		}
+		flag = hidden_policy
+		can_keep = { 
+			has_imperial_laws = yes 
+		}
+
+		can_pass = { 
+			has_imperial_laws = yes 
+		}
+		
+		pass_cost = {
+			gold = 0
+		}
+		
+		on_pass = { }
+	}
+	civic_law_2_1 = {
+		modifier = {
+			stewardship_per_prestige_level = 1
+			domain_tax_mult = 0.25
+			domain_limit = 2
+			#character_capital_county_monthly_development_growth_add = 0.05
+			direct_vassal_opinion = -10
+			vassal_limit = -10
+		}
+
+		can_keep = { 
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_1_competency_requirement
+					var:civic_comp >= imp_policy_1_requirement
+				}
+			}	
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_civ_focus_2_tt
+				NOT = { has_variable = recently_changed_civ_focus_2 }
+			}
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_1_competency_requirement
+					var:civic_comp >= imp_policy_1_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_civ_focus_2
+				years = 5
+			}
+			remove_variable = recently_changed_civ_focus_3
+			remove_variable = recently_changed_civ_focus_4
+		}
+	}
+	
+	civic_law_2_2 = {
+		modifier = {
+			county_opinion_add = 10
+			domain_tax_mult = 0.25
+			direct_vassal_opinion = -10
+			monthly_county_control_growth_factor = 0.25
+			character_capital_county_monthly_development_growth_add = 0.05
+			development_growth_factor = 0.25
+		}
+		
+		can_keep = { 
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_1_competency_requirement
+					var:civic_comp >= imp_policy_1_requirement
+				}
+			}
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_civ_focus_2_tt
+				NOT = { has_variable = recently_changed_civ_focus_2 }
+			}
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_1_competency_requirement
+					var:civic_comp >= imp_policy_1_requirement
+				}
+			}
+		}
+
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_civ_focus_2
+				years = 5
+			}
+			remove_variable = recently_changed_civ_focus_3
+			remove_variable = recently_changed_civ_focus_4
+		}
+	}
+	
+	civic_law_2_3 = {
+		modifier = {
+			direct_vassal_opinion = 10
+			vassal_limit = 10
+			county_opinion_add = -10
+			vassal_tax_contribution_mult = -0.1
+			vassal_levy_contribution_mult = -0.1
+			#monthly_county_control_decline_add = -0.2
+		}
+
+		can_keep = { 
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_0_competency_requirement
+					var:civic_comp >= imp_policy_0_requirement
+				}
+			}	
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_civ_focus_2_tt
+				NOT = { has_variable = recently_changed_civ_focus_2 }
+			}
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_0_competency_requirement
+					var:civic_comp >= imp_policy_0_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_civ_focus_2
+				years = 5
+			}
+			remove_variable = recently_changed_civ_focus_3
+			remove_variable = recently_changed_civ_focus_4
+		}
+		ai_will_do = {
+			value = 1
+		}
+	}
+}
+civic_law_policy_level_3 = {
+	default = civic_law_3_0
+	cumulative = no
+	flag = policy_level_3
+	flag = policy_civic
+	flag = policy
+
+	civic_law_3_0 = {
+		modifier = {
+		}
+		flag = hidden_policy
+		can_keep = { 
+			has_imperial_laws = yes 
+		}
+
+		can_pass = { 
+			has_imperial_laws = yes 
+		}
+		
+		pass_cost = {
+			gold = 0
+		}
+		
+		on_pass = { }
+	}
+	
+	civic_law_3_1 = {
+		modifier = {
+			build_speed = -0.25
+			build_gold_cost = -0.1
+			holding_build_speed = -0.25
+			holding_build_gold_cost = -0.1
+			#development_growth_factor = 0.25
+			levy_size = -0.1
+			domain_tax_mult = -0.25
+			#development_growth = 0.05
+		}
+
+		can_keep = { 
+			has_realm_law = civic_law_2_1
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_2_2_competency_requirement
+					var:civic_comp >= imp_policy_2_requirement
+				}
+			} 
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_civ_focus_3_tt
+				NOT = { has_variable = recently_changed_civ_focus_3 }
+			}
+			has_realm_law = civic_law_2_1
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_2_2_competency_requirement
+					var:civic_comp >= imp_policy_2_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_civ_focus_3
+				years = 2
+			}
+			remove_variable = recently_changed_civ_focus_4
+		}
+	}
+	
+	civic_law_3_2 = {
+		modifier = {
+			direct_vassal_opinion = -10
+			vassal_tax_contribution_mult = 0.25
+			domain_tax_mult = 0.25
+			#levy_reinforcement_rate = 0.15
+			stewardship_per_prestige_level = 1
+		}
+		
+		can_keep = { 
+			has_realm_law = civic_law_2_1
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_2_2_competency_requirement
+					var:civic_comp >= imp_policy_2_requirement
+				}
+			}
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_civ_focus_3_tt
+				NOT = { has_variable = recently_changed_civ_focus_3 }
+			}
+			has_realm_law = civic_law_2_1
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_2_2_competency_requirement
+					var:civic_comp >= imp_policy_2_requirement
+				}
+			}
+		}
+
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_civ_focus_3
+				years = 2
+			}
+			remove_variable = recently_changed_civ_focus_4
+		}
+	}
+	
+	civic_law_3_3 = {
+		modifier = {
+			same_culture_opinion = 10
+			different_culture_opinion = -10
+			minority_different_culture_opinion = -10
+		}
+
+		can_keep = { 
+			has_realm_law = civic_law_2_2
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_2_2_competency_requirement
+					var:civic_comp >= imp_policy_2_requirement
+				}
+			}
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_civ_focus_3_tt
+				NOT = { has_variable = recently_changed_civ_focus_3 }
+			}
+			has_realm_law = civic_law_2_2
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_2_2_competency_requirement
+					var:civic_comp >= imp_policy_2_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_civ_focus_3
+				years = 2
+			}
+			remove_variable = recently_changed_civ_focus_4
+		}
+	}
+	civic_law_3_4 = {
+		modifier = {
+			same_culture_opinion = -10
+			different_culture_opinion = 10
+			minority_different_culture_opinion = 10
+		}
+
+		can_keep = { 
+			has_realm_law = civic_law_2_2
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_2_2_competency_requirement
+					var:civic_comp >= imp_policy_2_requirement
+				}
+			} 
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_civ_focus_3_tt
+				NOT = { has_variable = recently_changed_civ_focus_3 }
+			}
+			has_realm_law = civic_law_2_2
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_2_2_competency_requirement
+					var:civic_comp >= imp_policy_2_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_civ_focus_3
+				years = 2
+			}
+			remove_variable = recently_changed_civ_focus_4
+		}
+	}
+	
+	civic_law_3_5 = {
+		modifier = {
+			#monthly_county_control_growth_add = 0.2
+			vassal_tax_contribution_mult = 0.2
+			vassal_levy_contribution_mult = 0.2
+			intimidated_vassal_tax_contribution_mult = 0.15
+			intimidated_vassal_levy_contribution_mult = 0.15
+			cowed_vassal_tax_contribution_mult = 0.15
+			cowed_vassal_levy_contribution_mult = 0.15
+			dread_baseline_add = 25
+			vassal_limit = -15
+			direct_vassal_opinion = -20
+
+		}
+		
+		can_keep = { 
+			has_realm_law = civic_law_2_3
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_2_2_competency_requirement
+					var:civic_comp >= imp_policy_2_requirement
+				}
+			}
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_civ_focus_3_tt
+				NOT = { has_variable = recently_changed_civ_focus_3 }
+			}
+			has_realm_law = civic_law_2_3
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_2_2_competency_requirement
+					var:civic_comp >= imp_policy_2_requirement
+				}
+			}
+		}
+
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_civ_focus_3
+				years = 2
+			}
+			remove_variable = recently_changed_civ_focus_4
+		}
+		ai_will_do = {
+			value = 2
+		}
+	}
+	
+	civic_law_3_6 = {
+		modifier = {
+			vassal_tax_contribution_mult = -0.15
+			vassal_levy_contribution_mult = -0.15
+			dread_baseline_add = -10
+			vassal_limit = 10
+			direct_vassal_opinion = 10
+		}
+
+		can_keep = { 
+			has_realm_law = civic_law_2_3
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_2_1_competency_requirement
+					var:civic_comp >= imp_policy_1_requirement
+				}
+			}
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_civ_focus_3_tt
+				NOT = { has_variable = recently_changed_civ_focus_3 }
+			}
+			has_realm_law = civic_law_2_3
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_2_1_competency_requirement
+					var:civic_comp >= imp_policy_1_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_civ_focus_3
+				years = 2
+			}
+			remove_variable = recently_changed_civ_focus_4
+		}
+	}
+}
+civic_law_policy_level_4 = {
+	default = civic_law_4_0
+	cumulative = no
+	flag = policy_level_4
+	flag = policy_civic
+	flag = policy
+
+	civic_law_4_0 = {
+		modifier = {
+		}
+		flag = hidden_policy
+		can_keep = { 
+			has_imperial_laws = yes 
+		}
+
+		can_pass = { 
+			has_imperial_laws = yes 
+		}
+		
+		pass_cost = {
+			gold = 0
+		}
+		
+		on_pass = { }
+	}
+	
+	civic_law_4_1 = {
+		modifier = {
+			build_speed = -0.25
+			build_gold_cost = -0.15
+			holding_build_speed = -0.25
+			holding_build_gold_cost = -0.15
+			levy_size = -0.15
+			domain_tax_mult = -0.25
+		}
+
+		can_keep = { 
+			has_realm_law = civic_law_3_1
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_2_3_competency_requirement
+					var:civic_comp >= imp_policy_3_requirement
+				}
+			} 
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_civ_focus_4_tt
+				NOT = { has_variable = recently_changed_civ_focus_4 }
+			}
+			has_realm_law = civic_law_3_1
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_2_3_competency_requirement
+					var:civic_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_civ_focus_4
+				years = 1
+			}
+		}
+	}
+	
+	civic_law_4_2 = {
+		modifier = {
+			#supply_limit_mult = 0.25
+			hostile_county_attrition = -0.25
+			supply_capacity_mult = 0.25
+			character_travel_speed_mult = 0.25
+			development_growth_factor = 0.25
+			movement_speed = 0.1
+		}
+		
+		can_keep = { 
+			has_realm_law = civic_law_3_1
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_2_3_competency_requirement
+					var:civic_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_civ_focus_4_tt
+				NOT = { has_variable = recently_changed_civ_focus_4 }
+			}
+			has_realm_law = civic_law_3_1
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_2_3_competency_requirement
+					var:civic_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_civ_focus_4
+				years = 1
+			}
+		}
+	}
+	
+	civic_law_4_3 = {
+		modifier = {
+			direct_vassal_opinion = -10
+			domain_tax_mult = 0.5
+			vassal_tax_contribution_mult = 0.25
+			vassal_levy_contribution_mult = -0.25
+			stewardship_per_prestige_level = 1
+		}
+
+		can_keep = { 
+			has_realm_law = civic_law_3_2
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_2_3_competency_requirement
+					var:civic_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_civ_focus_4_tt
+				NOT = { has_variable = recently_changed_civ_focus_4 }
+			}
+			has_realm_law = civic_law_3_2
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_2_3_competency_requirement
+					var:civic_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_civ_focus_4
+				years = 1
+			}
+		}
+	}
+	civic_law_4_4 = {
+		modifier = {
+			county_opinion_add = -10
+			levy_reinforcement_rate = 0.5
+			levy_size = 0.25
+			vassal_levy_contribution_mult = 0.25
+			vassal_tax_contribution_mult = -0.25
+			#men_at_arms_cap = 1
+			#men_at_arms_limit = 1
+		}
+
+		can_keep = { 
+			has_realm_law = civic_law_3_2
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_2_3_competency_requirement
+					var:civic_comp >= imp_policy_3_requirement
+				}
+			} 
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_civ_focus_4_tt
+				NOT = { has_variable = recently_changed_civ_focus_4 }
+			}
+			has_realm_law = civic_law_3_2
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_2_3_competency_requirement
+					var:civic_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_civ_focus_4
+				years = 1
+			}
+		}
+	}
+	
+	civic_law_4_5 = {
+		modifier = {
+			#different_culture_opinion = -5
+			minority_different_culture_opinion = 10
+			same_culture_opinion = -5
+			zealot_same_culture_opinion = -10
+		}
+		
+		can_keep = { 
+			has_realm_law = civic_law_3_3
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_2_3_competency_requirement
+					var:civic_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_civ_focus_4_tt
+				NOT = { has_variable = recently_changed_civ_focus_4 }
+			}
+			has_realm_law = civic_law_3_3
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_2_3_competency_requirement
+					var:civic_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_civ_focus_4
+				years = 1
+			}
+		}
+	}
+	
+	civic_law_4_6 = {
+		modifier = {
+			different_culture_opinion = -10
+			minority_different_culture_opinion = -10
+			zealot_same_culture_opinion = 10
+		}
+
+		can_keep = { 
+			has_realm_law = civic_law_3_3
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_2_3_competency_requirement
+					var:civic_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_civ_focus_4_tt
+				NOT = { has_variable = recently_changed_civ_focus_4 }
+			}
+			has_realm_law = civic_law_3_3
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_2_3_competency_requirement
+					var:civic_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_civ_focus_4
+				years = 1
+			}
+		}
+	}
+	civic_law_4_7 = {
+		modifier = {
+			ignore_negative_culture_opinion = yes
+			same_culture_opinion = -10
+			zealot_same_culture_opinion = -10
+			minority_different_culture_opinion = 10
+		}
+
+		can_keep = { 
+			has_realm_law = civic_law_3_4
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_2_3_competency_requirement
+					var:civic_comp >= imp_policy_3_requirement
+				}
+			} 
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_civ_focus_4_tt
+				NOT = { has_variable = recently_changed_civ_focus_4 }
+			}
+			has_realm_law = civic_law_3_4
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_2_3_competency_requirement
+					var:civic_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_civ_focus_4
+				years = 1
+			}
+		}
+	}
+	
+	civic_law_4_8 = {
+		modifier = {
+			same_culture_opinion = 10
+			zealot_same_culture_opinion = 10
+			minority_different_culture_opinion = -10
+			different_culture_opinion = -10
+			minority_levy_contribution_mult = -0.5
+			minority_tax_contribution_mult = 0.5
+		}
+		
+		can_keep = { 
+			has_realm_law = civic_law_3_4
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_2_3_competency_requirement
+					var:civic_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_civ_focus_4_tt
+				NOT = { has_variable = recently_changed_civ_focus_4 }
+			}
+			has_realm_law = civic_law_3_4
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_2_3_competency_requirement
+					var:civic_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_civ_focus_4
+				years = 1
+			}
+		}
+	}
+	
+	civic_law_4_9 = {
+		modifier = {
+			direct_vassal_opinion = -15
+			county_opinion_add = -10
+			domain_tax_mult = 0.25
+			levy_size = 0.25
+			vassal_tax_contribution_mult = 0.25
+			vassal_levy_contribution_mult = 0.25
+			#intimidated_vassal_tax_contribution_mult = 0.1
+			#happy_vassal_tax_contribution_mult = -0.1
+		}
+
+		can_keep = { 
+			has_realm_law = civic_law_3_5
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_2_3_competency_requirement
+					var:civic_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_civ_focus_4_tt
+				NOT = { has_variable = recently_changed_civ_focus_4 }
+			}
+			has_realm_law = civic_law_3_5
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_2_3_competency_requirement
+					var:civic_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_civ_focus_4
+				years = 1
+			}
+		}
+		ai_will_do = {
+			value = 2
+		}
+	}
+	civic_law_4_10 = {
+		modifier = {
+			direct_vassal_opinion = -15
+			dynasty_opinion = 15
+			dynasty_house_opinion = 20
+			close_relative_opinion = 20
+		}
+
+		can_keep = { 
+			has_realm_law = civic_law_3_5
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_2_3_competency_requirement
+					var:civic_comp >= imp_policy_3_requirement
+				}
+			} 
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_civ_focus_4_tt
+				NOT = { has_variable = recently_changed_civ_focus_4 }
+			}
+			has_realm_law = civic_law_3_5
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_2_3_competency_requirement
+					var:civic_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_civ_focus_4
+				years = 1
+			}
+		}
+	}
+	
+	civic_law_4_11 = {
+		modifier = {
+			vassal_levy_contribution_mult = -0.25
+			vassal_tax_contribution_mult = -0.25
+			direct_vassal_opinion = 20
+			domain_tax_mult = 0.25
+			domain_limit = 2
+		}
+		
+		can_keep = { 
+			has_realm_law = civic_law_3_6
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_2_2_competency_requirement
+					var:civic_comp >= imp_policy_2_requirement
+				}
+			}
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_civ_focus_4_tt
+				NOT = { has_variable = recently_changed_civ_focus_4 }
+			}
+			has_realm_law = civic_law_3_6
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_2_2_competency_requirement
+					var:civic_comp >= imp_policy_2_requirement
+				}
+			}
+		}
+
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_civ_focus_4
+				years = 1
+			}
+		}
+	}
+	
+	civic_law_4_12 = {
+		modifier = {
+			vassal_levy_contribution_mult = 0.25
+			vassal_tax_contribution_mult = -0.75
+			direct_vassal_opinion = 10
+			domain_tax_mult = 0.25
+			domain_limit = 2
+		}
+
+		can_keep = { 
+			has_realm_law = civic_law_3_6
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_2_2_competency_requirement
+					var:civic_comp >= imp_policy_2_requirement
+				}
+			}
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_civ_focus_4_tt
+				NOT = { has_variable = recently_changed_civ_focus_4 }
+			}
+			has_realm_law = civic_law_3_6
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = civic_law_2_2_competency_requirement
+					var:civic_comp >= imp_policy_2_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_civ_focus_4
+				years = 1
+			}
+		}
+	}
+}
+diplo_law_policy_level_1 = {
+	default = diplo_law_1_1
+	cumulative = no
+	flag = policy_3
+	flag = policy_level_1
+	flag = policy_diplo
+	flag = policy
+	
+	diplo_law_1_1 = {
+		modifier = {
+		}
+
+		can_keep = { has_imperial_laws = yes }
+
+		can_pass = { 
+			has_imperial_laws = yes
+		}
+		
+		pass_cost = {
+			gold = 0
+		}
+		
+		on_pass = { }
+	}
+}
+diplo_law_policy_level_2 = {
+	default = diplo_law_2_0
+	cumulative = no
+	flag = policy_3
+	flag = policy_level_2
+	flag = policy_diplo
+	flag = policy
+	diplo_law_2_0 = {
+		modifier = {
+		}
+		flag = hidden_policy
+		can_keep = { 
+			has_imperial_laws = yes 
+		}
+
+		can_pass = { 
+			has_imperial_laws = yes 
+		}
+		
+		pass_cost = {
+			gold = 0
+		}
+		
+		on_pass = { }
+	}
+	diplo_law_2_1 = {
+		modifier = {
+			direct_vassal_opinion = 10
+			vassal_limit = 10
+			county_opinion_add = -10
+			#monthly_county_control_decline_add = -0.2
+			vassal_levy_contribution_mult = -0.1
+			vassal_tax_contribution_mult = -0.1
+			#powerful_vassal_opinion = 5
+		}
+
+		can_keep = {
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_0_competency_requirement
+					var:diplo_comp >= imp_policy_0_requirement
+				}
+			}	
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_dip_focus_2_tt
+				NOT = { has_variable = recently_changed_dip_focus_2 }
+			}
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_0_competency_requirement
+					var:diplo_comp >= imp_policy_0_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_dip_focus_2
+				years = 5
+			}
+			remove_variable = recently_changed_dip_focus_3
+			remove_variable = recently_changed_dip_focus_4
+		}
+		ai_will_do = {
+			value = 2
+		}
+	}
+	
+	diplo_law_2_2 = {
+		modifier = {
+			direct_vassal_opinion = -10
+			county_opinion_add = 10
+			domain_tax_mult = 0.2
+		}
+		
+		can_keep = { 
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_1_competency_requirement
+					var:diplo_comp >= imp_policy_1_requirement
+				}
+			}
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_dip_focus_2_tt
+				NOT = { has_variable = recently_changed_dip_focus_2 }
+			}
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_1_competency_requirement
+					var:diplo_comp >= imp_policy_1_requirement
+				}
+			}
+		}
+
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_dip_focus_2
+				years = 5
+			}
+			remove_variable = recently_changed_dip_focus_3
+			remove_variable = recently_changed_dip_focus_4
+		}
+	}
+	
+	diplo_law_2_3 = {
+		modifier = {
+			independent_ruler_opinion = 15
+			direct_vassal_opinion = -10
+			monthly_prestige = 2
+		}
+
+		can_keep = {
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_1_competency_requirement
+					var:diplo_comp >= imp_policy_1_requirement
+				}
+			}
+		}
+
+		can_pass = {
+			custom_tooltip = {
+				text = recently_changed_dip_focus_2_tt
+				NOT = { has_variable = recently_changed_dip_focus_2 }
+			}
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_1_competency_requirement
+					var:diplo_comp >= imp_policy_1_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_dip_focus_2
+				years = 5
+			}
+			remove_variable = recently_changed_dip_focus_3
+			remove_variable = recently_changed_dip_focus_4
+		}
+	}
+}
+diplo_law_policy_level_3 = {
+	default = diplo_law_3_0
+	cumulative = no
+	flag = policy_level_3
+	flag = policy_diplo
+	flag = policy
+
+	diplo_law_3_0 = {
+		modifier = {
+		}
+		flag = hidden_policy
+		can_keep = { 
+			has_imperial_laws = yes 
+		}
+
+		can_pass = { 
+			has_imperial_laws = yes 
+		}
+		
+		pass_cost = {
+			gold = 0
+		}
+		
+		on_pass = { }
+	}
+	
+	diplo_law_3_1 = {
+		modifier = {
+			direct_vassal_opinion = 20
+			#monthly_county_control_decline_add = -0.3
+			#monthly_county_control_growth_factor = -0.5
+			vassal_levy_contribution_mult = -0.2
+			vassal_tax_contribution_mult = -0.2
+		}
+
+		can_keep = {
+			has_realm_law = diplo_law_2_1
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_2_1_competency_requirement
+					var:diplo_comp >= imp_policy_1_requirement
+				}
+			} 
+		}
+
+		can_pass = {
+			custom_tooltip = {
+				text = recently_changed_dip_focus_3_tt
+				NOT = { has_variable = recently_changed_dip_focus_3 }
+			}
+			has_realm_law = diplo_law_2_1
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_2_1_competency_requirement
+					var:diplo_comp >= imp_policy_1_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_dip_focus_3
+				years = 2
+			}
+			remove_variable = recently_changed_dip_focus_4
+		}
+		ai_will_do = {
+			value = 2
+		}
+	}
+	
+	diplo_law_3_2 = {
+		modifier = {
+			dread_baseline_add = 25
+			direct_vassal_opinion = -20
+			monthly_county_control_growth_add = 0.2
+			vassal_levy_contribution_mult = 0.1
+			vassal_tax_contribution_mult = 0.1
+			#tyranny_gain_mult = 0.25
+			#tyranny_loss_mult = -0.25
+		}
+		
+		can_keep = {
+			has_realm_law = diplo_law_2_1
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_2_2_competency_requirement
+					var:diplo_comp >= imp_policy_2_requirement
+				}
+			}
+		}
+
+		can_pass = {
+			custom_tooltip = {
+				text = recently_changed_dip_focus_3_tt
+				NOT = { has_variable = recently_changed_dip_focus_3 }
+			}
+			has_realm_law = diplo_law_2_1
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_2_2_competency_requirement
+					var:diplo_comp >= imp_policy_2_requirement
+				}
+			}
+		}
+
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_dip_focus_3
+				years = 2
+			}
+			remove_variable = recently_changed_dip_focus_4
+		}
+	}
+	
+	diplo_law_3_3 = {
+		modifier = {
+			direct_vassal_opinion = -10
+			county_opinion_add = -30
+			domain_tax_mult = 0.3
+			vassal_levy_contribution_mult = -0.1
+			vassal_tax_contribution_mult = 0.25
+		}
+
+		can_keep = {
+			has_realm_law = diplo_law_2_2
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_2_2_competency_requirement
+					var:diplo_comp >= imp_policy_2_requirement
+				}
+			}
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_dip_focus_3_tt
+				NOT = { has_variable = recently_changed_dip_focus_3 }
+			}
+			has_realm_law = diplo_law_2_2
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_2_2_competency_requirement
+					var:diplo_comp >= imp_policy_2_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_dip_focus_3
+				years = 2
+			}
+			remove_variable = recently_changed_dip_focus_4
+		}
+	}
+	diplo_law_3_4 = {
+		modifier = {
+			direct_vassal_opinion = 10
+			domain_tax_mult = -0.3
+			county_opinion_add = 20
+			vassal_levy_contribution_mult = -0.1
+			vassal_tax_contribution_mult = -0.1
+		}
+
+		can_keep = {
+			has_realm_law = diplo_law_2_2
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_2_2_competency_requirement
+					var:diplo_comp >= imp_policy_2_requirement
+				}
+			} 
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_dip_focus_3_tt
+				NOT = { has_variable = recently_changed_dip_focus_3 }
+			}
+			has_realm_law = diplo_law_2_2
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_2_2_competency_requirement
+					var:diplo_comp >= imp_policy_2_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_dip_focus_3
+				years = 2
+			}
+			remove_variable = recently_changed_dip_focus_4
+		}
+	}
+	
+	diplo_law_3_5 = {
+		modifier = {
+			independent_ruler_opinion = -35
+			levy_size = 0.5
+			vassal_levy_contribution_mult = 0.1
+			direct_vassal_opinion = -10
+			county_opinion_add = -15
+		}
+		
+		can_keep = {
+			has_realm_law = diplo_law_2_3
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_2_2_competency_requirement
+					var:diplo_comp >= imp_policy_2_requirement
+				}
+			}
+		}
+
+		can_pass = {
+			custom_tooltip = {
+				text = recently_changed_dip_focus_3_tt
+				NOT = { has_variable = recently_changed_dip_focus_3 }
+			}
+			has_realm_law = diplo_law_2_3
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_2_2_competency_requirement
+					var:diplo_comp >= imp_policy_2_requirement
+				}
+			}
+		}
+
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_dip_focus_3
+				years = 2
+			}
+			remove_variable = recently_changed_dip_focus_4
+		}
+	}
+	
+	diplo_law_3_6 = {
+		modifier = {
+			same_culture_opinion = -10
+			same_faith_opinion = -10
+			ignore_negative_culture_opinion = yes
+			ignore_negative_opinion_of_culture = yes
+			ignore_different_faith_opinion = yes
+			ignore_opinion_of_different_faith = yes
+			minority_opinion = 20
+			zealot_same_culture_opinion =  -20
+			courtly_same_culture_opinion = -20
+		}
+
+		can_keep = {
+			has_realm_law = diplo_law_2_3
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_2_2_competency_requirement
+					var:diplo_comp >= imp_policy_2_requirement
+				}
+			}
+		}
+
+		can_pass = {
+			custom_tooltip = {
+				text = recently_changed_dip_focus_3_tt
+				NOT = { has_variable = recently_changed_dip_focus_3 }
+			}
+			has_realm_law = diplo_law_2_3
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_2_2_competency_requirement
+					var:diplo_comp >= imp_policy_2_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_dip_focus_3
+				years = 2
+			}
+			remove_variable = recently_changed_dip_focus_4
+		}
+	}
+}
+diplo_law_policy_level_4 = {
+	default = diplo_law_4_0
+	cumulative = no
+	flag = policy_level_4
+	flag = policy_diplo
+	flag = policy
+
+	diplo_law_4_0 = {
+		modifier = {
+		}
+		flag = hidden_policy
+		can_keep = { 
+			has_imperial_laws = yes 
+		}
+
+		can_pass = { 
+			has_imperial_laws = yes 
+		}
+		
+		pass_cost = {
+			gold = 0
+		}
+		
+		on_pass = { }
+	}
+	
+	diplo_law_4_1 = {
+		modifier = {
+			powerful_vassal_opinion = -15
+			councillor_opinion = 15
+			direct_vassal_opinion = -15
+			happy_powerful_vassal_tax_contribution_mult = 0.55
+			happy_powerful_vassal_levy_contribution_mult = 0.55
+			monthly_prestige = 2
+		}
+
+		can_keep = {
+			has_realm_law = diplo_law_3_1
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_2_3_competency_requirement
+					var:diplo_comp >= imp_policy_3_requirement
+				}
+			} 
+		}
+
+		can_pass = {
+			custom_tooltip = {
+				text = recently_changed_dip_focus_4_tt
+				NOT = { has_variable = recently_changed_dip_focus_4 }
+			}
+			has_realm_law = diplo_law_3_1
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_2_3_competency_requirement
+					var:diplo_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_dip_focus_4
+				years = 1
+			}
+		}
+	}
+	
+	diplo_law_4_2 = {
+		modifier = {
+			direct_vassal_opinion = 20
+			vassal_levy_contribution_mult = -0.2
+			vassal_tax_contribution_mult = -0.2
+		}
+		
+		can_keep = {
+			has_realm_law = diplo_law_3_1
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_2_2_competency_requirement
+					var:diplo_comp >= imp_policy_2_requirement
+				}
+			}
+		}
+
+		can_pass = {
+			custom_tooltip = {
+				text = recently_changed_dip_focus_4_tt
+				NOT = { has_variable = recently_changed_dip_focus_4 }
+			}
+			has_realm_law = diplo_law_3_1
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_2_2_competency_requirement
+					var:diplo_comp >= imp_policy_2_requirement
+				}
+			}
+		}
+
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_dip_focus_4
+				years = 1
+			}
+		}
+		ai_will_do = {
+			value = 2
+		}
+	}
+	
+	diplo_law_4_3 = {
+		modifier = {
+			tyranny_gain_mult = 0.5
+			tyranny_loss_mult = -0.5
+			dread_baseline_add = 25
+			direct_vassal_opinion = -15
+			vassal_levy_contribution_mult = 0.15
+			vassal_tax_contribution_mult = 0.15
+		}
+
+		can_keep = {
+			has_realm_law = diplo_law_3_2
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_2_3_competency_requirement
+					var:diplo_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+
+		can_pass = {
+			custom_tooltip = {
+				text = recently_changed_dip_focus_4_tt
+				NOT = { has_variable = recently_changed_dip_focus_4 }
+			}
+			has_realm_law = diplo_law_3_2
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_2_3_competency_requirement
+					var:diplo_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_dip_focus_4
+				years = 1
+			}
+		}
+	}
+	diplo_law_4_4 = {
+		modifier = {
+			tyranny_gain_mult = -0.25
+			tyranny_loss_mult = 0.25
+			monthly_tyranny = -0.1
+			dread_baseline_add = -15
+			county_opinion_add = 20
+			#vassal_levy_contribution_mult = 0.1
+			#vassal_tax_contribution_mult = 0.1
+		}
+
+		can_keep = {
+			has_realm_law = diplo_law_3_2
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_2_3_competency_requirement
+					var:diplo_comp >= imp_policy_3_requirement
+				}
+			} 
+		}
+
+		can_pass = {
+			custom_tooltip = {
+				text = recently_changed_dip_focus_4_tt
+				NOT = { has_variable = recently_changed_dip_focus_4 }
+			}
+			has_realm_law = diplo_law_3_2
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_2_3_competency_requirement
+					var:diplo_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_dip_focus_4
+				years = 1
+			}
+		}
+	}
+	
+	diplo_law_4_5 = {
+		modifier = {
+			domain_tax_mult = 0.5
+			domain_limit = 2
+			vassal_tax_contribution_mult = 0.25
+			vassal_levy_contribution_mult = -0.15
+			county_opinion_add = -30
+			direct_vassal_opinion = -10
+		}
+		
+		can_keep = {
+			has_realm_law = diplo_law_3_3
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_2_3_competency_requirement
+					var:diplo_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+
+		can_pass = {
+			custom_tooltip = {
+				text = recently_changed_dip_focus_4_tt
+				NOT = { has_variable = recently_changed_dip_focus_4 }
+			}
+			has_realm_law = diplo_law_3_3
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_2_3_competency_requirement
+					var:diplo_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_dip_focus_4
+				years = 1
+			}
+		}
+	}
+	
+	diplo_law_4_6 = {
+		modifier = {
+			county_opinion_add = 20
+			domain_tax_mult = -0.10
+			vassal_tax_contribution_mult = -0.15
+			direct_vassal_opinion = 10
+			domain_limit = 1
+		}
+
+		can_keep = {
+			has_realm_law = diplo_law_3_3
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_2_3_competency_requirement
+					var:diplo_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+
+		can_pass = {
+			custom_tooltip = {
+				text = recently_changed_dip_focus_4_tt
+				NOT = { has_variable = recently_changed_dip_focus_4 }
+			}
+			has_realm_law = diplo_law_3_3
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_2_3_competency_requirement
+					var:diplo_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_dip_focus_4
+				years = 1
+			}
+		}
+	}
+	diplo_law_4_7 = {
+		modifier = {
+			development_growth = 0.2
+			development_growth_factor = 0.25
+			monthly_county_control_decline_add = -0.5
+			monthly_county_control_growth_factor = -0.5
+		}
+
+		can_keep = {
+			has_realm_law = diplo_law_3_4
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_2_3_competency_requirement
+					var:diplo_comp >= imp_policy_3_requirement
+				}
+			} 
+		}
+
+		can_pass = {
+			custom_tooltip = {
+				text = recently_changed_dip_focus_4_tt
+				NOT = { has_variable = recently_changed_dip_focus_4 }
+			}
+			has_realm_law = diplo_law_3_4
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_2_3_competency_requirement
+					var:diplo_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_dip_focus_4
+				years = 1
+			}
+		}
+	}
+	
+	diplo_law_4_8 = {
+		modifier = {
+			levy_size = 1
+			vassal_levy_contribution_mult = 0.2
+			vassal_tax_contribution_mult = -0.1
+			county_opinion_add = -20
+			development_growth_factor = -0.25
+			development_growth = -0.1
+		}
+		
+		can_keep = {
+			has_realm_law = diplo_law_3_4
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_2_3_competency_requirement
+					var:diplo_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+
+		can_pass = {
+			custom_tooltip = {
+				text = recently_changed_dip_focus_4_tt
+				NOT = { has_variable = recently_changed_dip_focus_4 }
+			}
+			has_realm_law = diplo_law_3_4
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_2_3_competency_requirement
+					var:diplo_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_dip_focus_4
+				years = 1
+			}
+		}
+	}
+	
+	diplo_law_4_9 = {
+		modifier = {
+			direct_vassal_opinion = 10
+			minority_opinion = 20
+			vassal_levy_contribution_mult = -0.1
+			vassal_tax_contribution_mult = -0.1
+		}
+
+		can_keep = {
+			has_realm_law = diplo_law_3_5
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_2_3_competency_requirement
+					var:diplo_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+
+		can_pass = {
+			custom_tooltip = {
+				text = recently_changed_dip_focus_4_tt
+				NOT = { has_variable = recently_changed_dip_focus_4 }
+			}
+			has_realm_law = diplo_law_3_5
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_2_3_competency_requirement
+					var:diplo_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_dip_focus_4
+				years = 1
+			}
+		}
+	}
+	diplo_law_4_10 = {
+		modifier = {
+			independent_ruler_opinion = -20
+			monthly_prestige = 2
+		}
+
+		can_keep = {
+			has_realm_law = diplo_law_3_5
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_2_3_competency_requirement
+					var:diplo_comp >= imp_policy_3_requirement
+				}
+			} 
+		}
+
+		can_pass = {
+			custom_tooltip = {
+				text = recently_changed_dip_focus_4_tt
+				NOT = { has_variable = recently_changed_dip_focus_4 }
+			}
+			has_realm_law = diplo_law_3_5
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_2_3_competency_requirement
+					var:diplo_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_dip_focus_4
+				years = 1
+			}
+		}
+	}
+	
+	diplo_law_4_11 = {
+		modifier = {
+			independent_ruler_opinion = 10
+			diplomatic_range_mult = 0.25
+		}
+		
+		can_keep = {
+			has_realm_law = diplo_law_3_6
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_2_3_competency_requirement
+					var:diplo_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+
+		can_pass = { 
+			custom_tooltip = {
+				text = recently_changed_dip_focus_4_tt
+				NOT = { has_variable = recently_changed_dip_focus_4 }
+			}
+			has_realm_law = diplo_law_3_6
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_2_3_competency_requirement
+					var:diplo_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_dip_focus_4
+				years = 1
+			}
+		}
+	}
+	
+	diplo_law_4_12 = {
+		modifier = {
+			independent_ruler_opinion = 10
+			diplomatic_range_mult = 0.25
+		}
+
+		can_keep = {
+			has_realm_law = diplo_law_3_6
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_2_3_competency_requirement
+					var:diplo_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+
+		can_pass = {
+			custom_tooltip = {
+				text = recently_changed_dip_focus_4_tt
+				NOT = { has_variable = recently_changed_dip_focus_4 }
+			}
+			has_realm_law = diplo_law_3_6
+			has_imperial_laws = yes 
+			trigger_if = {
+				limit = {
+					OR = {
+						has_game_rule = imperial_competence_enabled
+						has_game_rule = imperial_competence_enabled_in_430
+					}
+				}
+				custom_tooltip = {
+					text = diplo_law_2_3_competency_requirement
+					var:diplo_comp >= imp_policy_3_requirement
+				}
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			set_variable = {
+				name = recently_changed_dip_focus_4
+				years = 1
+			}
+		}
+	}
+}
+
+mil_law_policy_level_5 = {
+	default = mil_law_5_1
+	cumulative = no
+	flag = policy_level_5
+	flag = policy_mil
+	flag = policy
+
+	mil_law_5_0 = {
+		modifier = {
+			men_at_arms_cap = 3
+			men_at_arms_limit = 3
+		}
+
+		flag = hidden_policy
+
+		can_keep = { 
+			has_realm_law = mil_law_2_1
+			has_imperial_laws = yes 
+			is_ai = yes
+		}
+
+		can_pass = { 
+			has_realm_law = mil_law_2_1
+			has_imperial_laws = yes
+			is_ai = yes
+		}
+		
+		pass_cost = {
+			gold = 0
+		}
+		
+		on_pass = { }
+		ai_will_do = {
+			value = 2
+		}
+	}
+
+	mil_law_5_1 = {
+		flag = hidden_policy
+		modifier = {
+		}
+
+		can_keep = { 
+			has_imperial_laws = yes 
+		}
+
+		can_pass = { 
+			has_imperial_laws = yes
+		}
+		
+		pass_cost = {
+			gold = 0
+		}
+		
+		on_pass = { }
+	}
+
+	mil_law_5_2 = {
+		
+		modifier = {
+			levy_size = 4.5
+			vassal_levy_contribution_mult = 4.5
+		}
+
+		flag = hidden_policy
+
+		can_keep = { 
+			has_realm_law = mil_law_2_2
+			has_imperial_laws = yes
+			is_ai = yes
+		}
+
+		can_pass = { 
+			has_realm_law = mil_law_2_2
+			has_imperial_laws = yes
+			is_ai = yes
+		}
+		
+		pass_cost = {
+			gold = 0
+		}
+		
+		on_pass = { }
+		ai_will_do = {
+			value = 2
+		}
+	}
+}
+
+civic_law_policy_level_5 = {
+	default = civic_law_5_1
+	cumulative = no
+	flag = policy_level_5
+	flag = policy_civic
+	flag = policy
+
+	civic_law_5_0 = {
+		modifier = {
+			county_opinion_add = 10
+			vassal_tax_contribution_mult = 0.1
+			vassal_levy_contribution_mult = 0.1
+		}
+
+		flag = hidden_policy
+
+		can_keep = { 
+			has_realm_law = civic_law_2_3
+			has_imperial_laws = yes 
+			is_ai = yes
+		}
+
+		can_pass = { 
+			has_realm_law = civic_law_2_3
+			has_imperial_laws = yes
+			is_ai = yes
+		}
+		
+		pass_cost = {
+			gold = 0
+		}
+		
+		on_pass = { }
+		ai_will_do = {
+			value = 2
+		}
+	}
+
+	civic_law_5_1 = {
+		flag = hidden_policy
+		modifier = {
+		}
+
+		can_keep = { 
+			has_imperial_laws = yes 
+		}
+
+		can_pass = { 
+			has_imperial_laws = yes
+		}
+		
+		pass_cost = {
+			gold = 0
+		}
+		
+		on_pass = { }
+	}
+}
+
+diplo_law_policy_level_5 = {
+	default = diplo_law_5_1
+	cumulative = no
+	flag = policy_level_5
+	flag = policy_diplo
+	flag = policy
+
+	diplo_law_5_0 = {
+		modifier = {
+			county_opinion_add = 10
+		}
+
+		flag = hidden_policy
+
+		can_keep = { 
+			has_realm_law = diplo_law_2_1
+			has_imperial_laws = yes 
+			is_ai = yes
+		}
+
+		can_pass = { 
+			has_realm_law = diplo_law_2_1
+			has_imperial_laws = yes
+			is_ai = yes
+		}
+		
+		pass_cost = {
+			gold = 0
+		}
+		
+		on_pass = { }
+		ai_will_do = {
+			value = 2
+		}
+	}
+
+	diplo_law_5_1 = {
+		flag = hidden_policy
+		modifier = {
+		}
+
+		can_keep = { 
+			has_imperial_laws = yes 
+		}
+
+		can_pass = { 
+			has_imperial_laws = yes
+		}
+		
+		pass_cost = {
+			gold = 0
+		}
+		
+		on_pass = { }
+	}
+
+	diplo_law_5_2 = {
+		
+		modifier = {
+			direct_vassal_opinion = -10
+			vassal_levy_contribution_mult = 0.1
+			vassal_tax_contribution_mult = 0.1
+		}
+
+		flag = hidden_policy
+
+		can_keep = { 
+			has_realm_law = diplo_law_3_1
+			has_imperial_laws = yes
+			is_ai = yes
+		}
+
+		can_pass = { 
+			has_realm_law = diplo_law_3_1
+			has_imperial_laws = yes
+			is_ai = yes
+		}
+		
+		pass_cost = {
+			gold = 0
+		}
+		
+		on_pass = { }
+		ai_will_do = {
+			value = 2
+		}
+	}
+
+	diplo_law_5_3 = {
+		
+		modifier = {
+			direct_vassal_opinion = -20
+			vassal_levy_contribution_mult = 0.2
+			vassal_tax_contribution_mult = 0.2
+		}
+
+		flag = hidden_policy
+
+		can_keep = { 
+			has_realm_law = diplo_law_4_2
+			has_imperial_laws = yes
+			is_ai = yes
+		}
+
+		can_pass = { 
+			has_realm_law = diplo_law_4_2
+			has_imperial_laws = yes
+			is_ai = yes
+		}
+		
+		pass_cost = {
+			gold = 0
+		}
+		
+		on_pass = { }
+		ai_will_do = {
+			value = 2
+		}
+	}
+}

@@ -1,0 +1,422 @@
+﻿###################################################################
+# 
+# DECISIONS ADAPTED FROM RICE
+# By Cybrxkhan 
+# 
+# TFE_rice_decisions.0010-TFE_rice_decisions.0029	# Egypt Stuff
+# 
+# 
+# 
+###################################################################
+
+
+namespace = TFE_rice_decisions
+
+
+
+# Close the Temple of Philae
+TFE_rice_decisions.0014 = {
+	type = character_event
+	title = TFE_rice_decisions.0014.t
+	desc = TFE_rice_decisions.0014.desc
+	theme = TFE_sacred_oasis_theme
+	
+	right_portrait = {
+		character = root
+		animation = personality_callous
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_negative"
+		save_scope_as = temple_ender
+		TFE_close_aswan_general_effect = yes
+		TFE_close_aswan_philae_effect = yes
+	}
+	
+	option = { # ok
+		name = TFE_rice_decisions.0014.a
+		every_player = {
+			limit = {
+				is_ai = no
+				OR = {
+					RICE_is_greco_egyptian_religion_group_trigger = yes
+					any_held_title = {
+						tier = tier_county
+						any_county_province = {
+							geographical_region = TFE_greater_egypt		
+						}
+					}
+				}	
+			}
+			trigger_event = TFE_rice_decisions.0015
+		}
+	}
+}
+
+# Close the Temple of Philae notification
+TFE_rice_decisions.0015 = {
+	type = character_event
+	title = TFE_rice_decisions.0015.t
+	desc = TFE_rice_decisions.0015.desc
+	theme = TFE_sacred_oasis_theme
+	
+	right_portrait = {
+		character = scope:temple_ender
+		animation = personality_callous
+	}
+	
+	immediate = {
+		play_music_cue = "mx_cue_negative"
+		show_as_tooltip = {
+			scope:temple_ender = {
+				TFE_close_aswan_general_effect = yes
+				TFE_close_aswan_philae_effect = yes
+			}
+		}
+	}
+	
+	option = { # ok
+		name = TFE_rice_decisions.0015.a
+	}
+}
+
+
+
+# Close the Temples of Elephantine
+TFE_rice_decisions.0016 = {
+	type = character_event
+	title = TFE_rice_decisions.0016.t
+	desc = TFE_rice_decisions.0016.desc
+	theme = TFE_sacred_oasis_theme
+	
+	right_portrait = {
+		character = root
+		animation = personality_callous
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_negative"
+		save_scope_as = temple_ender
+		TFE_close_aswan_general_effect = yes
+		TFE_close_aswan_elephantine_effect = yes
+	}
+	
+	option = { # ok
+		name = TFE_rice_decisions.0016.a
+		every_player = {
+			limit = {
+				is_ai = no
+				OR = {
+					RICE_is_greco_egyptian_religion_group_trigger = yes
+					any_held_title = {
+						tier = tier_county
+						any_county_province = {
+							geographical_region = TFE_greater_egypt		
+						}
+					}
+				}	
+			}
+			trigger_event = TFE_rice_decisions.0017
+		}
+	}
+}
+
+
+# Close the Temples of Elephantine notification
+TFE_rice_decisions.0017 = {
+	type = character_event
+	title = TFE_rice_decisions.0017.t
+	desc = TFE_rice_decisions.0017.desc
+	theme = TFE_sacred_oasis_theme
+	
+	right_portrait = {
+		character = scope:temple_ender
+		animation = personality_callous
+	}
+	
+	immediate = {
+		play_music_cue = "mx_cue_negative"
+		show_as_tooltip = {
+			scope:temple_ender = {
+				TFE_close_aswan_general_effect = yes
+				TFE_close_aswan_elephantine_effect = yes
+			}
+		}
+	}
+	
+	option = { # ok
+		name = TFE_rice_decisions.0017.a
+		custom_tooltip = RICE_upper_egypt_close_temple_of_elephantine_effect_tooltip
+	}
+}
+
+
+
+# Close the Temple of Kalabsha
+TFE_rice_decisions.0018 = {
+	type = character_event
+	title = TFE_rice_decisions.0018.t
+	desc = TFE_rice_decisions.0018.desc
+	theme = TFE_sacred_oasis_theme
+	
+	right_portrait = {
+		character = root
+		animation = personality_callous
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_negative"
+		save_scope_as = temple_ender
+		TFE_close_aswan_general_effect = yes
+		TFE_close_aswan_kalabsha_effect = yes
+	}
+	
+	option = { # ok
+		name = TFE_rice_decisions.0018.a
+		every_player = {
+			limit = {
+				is_ai = no
+				OR = {
+					RICE_is_greco_egyptian_religion_group_trigger = yes
+					any_held_title = {
+						tier = tier_county
+						any_county_province = {
+							geographical_region = TFE_greater_egypt		
+						}
+					}
+				}	
+			}
+			trigger_event = TFE_rice_decisions.0019
+		}
+	}
+}
+
+# Close the Temple of Kalabsha notification
+TFE_rice_decisions.0019 = {
+	type = character_event
+	title = TFE_rice_decisions.0019.t
+	desc = TFE_rice_decisions.0019.desc
+	theme = TFE_sacred_oasis_theme
+	
+	right_portrait = {
+		character = scope:temple_ender
+		animation = personality_callous
+	}
+	
+	immediate = {
+		play_music_cue = "mx_cue_negative"
+		show_as_tooltip = {
+			scope:temple_ender = {
+				TFE_close_aswan_general_effect = yes
+				TFE_close_aswan_kalabsha_effect = yes
+			}
+		}
+	}
+	
+	option = { # ok
+		name = TFE_rice_decisions.0019.a
+		custom_tooltip = RICE_upper_egypt_close_temple_of_kalabsha_effect_tooltip
+	}
+}
+
+
+
+# Reopen the Temple of Philae
+TFE_rice_decisions.0020 = {
+	type = character_event
+	title = TFE_rice_decisions.0020.t
+	desc = TFE_rice_decisions.0020.desc
+	theme = TFE_sacred_oasis_theme
+	
+	right_portrait = {
+		character = root
+		animation = personality_bold
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_sacredrite"
+		save_scope_as = temple_restorer
+		TFE_reopen_aswan_general_effect = yes
+		TFE_reopen_aswan_philae_effect = yes
+	}
+	
+	option = { # ok
+		name = TFE_rice_decisions.0020.a
+		every_player = {
+			limit = {
+				is_ai = no
+				OR = {
+					RICE_is_greco_egyptian_religion_group_trigger = yes
+					any_held_title = {
+						tier = tier_county
+						any_county_province = {
+							geographical_region = TFE_greater_egypt		
+						}
+					}
+				}	
+			}
+			trigger_event = TFE_rice_decisions.0021
+		}
+	}
+}
+
+# Reopen the Temple of Philae notification
+TFE_rice_decisions.0021 = {
+	type = character_event
+	title = TFE_rice_decisions.0021.t
+	desc = TFE_rice_decisions.0021.desc
+	theme = TFE_sacred_oasis_theme
+	
+	right_portrait = {
+		character = scope:temple_restorer
+		animation = personality_bold
+	}
+	
+	immediate = {
+		play_music_cue = "mx_cue_sacredrite"
+		show_as_tooltip = {
+			scope:temple_restorer = {
+				TFE_reopen_aswan_general_effect = yes
+				TFE_reopen_aswan_philae_effect = yes
+			}
+		}
+	}
+	
+	option = { # ok
+		name = TFE_rice_decisions.0021.a
+	}
+}
+
+
+# Reopen the Temples of Elephantine
+TFE_rice_decisions.0022 = {
+	type = character_event
+	title = TFE_rice_decisions.0022.t
+	desc = TFE_rice_decisions.0022.desc
+	theme = TFE_sacred_oasis_theme
+	
+	right_portrait = {
+		character = root
+		animation = personality_bold
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_sacredrite"
+		save_scope_as = temple_restorer
+		TFE_reopen_aswan_general_effect = yes
+		TFE_reopen_aswan_elephantine_effect = yes
+	}
+	
+	option = { # ok
+		name = TFE_rice_decisions.0022.a
+		every_player = {
+			limit = {
+				is_ai = no
+				OR = {
+					RICE_is_greco_egyptian_religion_group_trigger = yes
+					any_held_title = {
+						tier = tier_county
+						any_county_province = {
+							geographical_region = TFE_greater_egypt		
+						}
+					}
+				}	
+			}
+			trigger_event = TFE_rice_decisions.0023
+		}
+	}
+}
+
+# Reopen the Temples of Elephantine notification
+TFE_rice_decisions.0023 = {
+	type = character_event
+	title = TFE_rice_decisions.0023.t
+	desc = TFE_rice_decisions.0023.desc
+	theme = TFE_sacred_oasis_theme
+	
+	right_portrait = {
+		character = scope:temple_restorer
+		animation = personality_bold
+	}
+	
+	immediate = {
+		play_music_cue = "mx_cue_sacredrite"
+		show_as_tooltip = {
+			scope:temple_restorer = {
+				TFE_reopen_aswan_general_effect = yes
+				TFE_reopen_aswan_elephantine_effect = yes
+			}
+		}
+	}
+	
+	option = { # ok
+		name = TFE_rice_decisions.0023.a
+	}
+}
+
+
+
+# Reopen the Temple of Kalabsha
+TFE_rice_decisions.0024 = {
+	type = character_event
+	title = TFE_rice_decisions.0024.t
+	desc = TFE_rice_decisions.0024.desc
+	theme = TFE_sacred_oasis_theme
+	
+	right_portrait = {
+		character = root
+		animation = personality_bold
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_sacredrite"
+		save_scope_as = temple_restorer
+		TFE_reopen_aswan_general_effect = yes
+		TFE_reopen_aswan_kalabsha_effect = yes
+	}
+	
+	option = { # ok
+		name = TFE_rice_decisions.0024.a
+		every_player = {
+			limit = {
+				is_ai = no
+				OR = {
+					RICE_is_greco_egyptian_religion_group_trigger = yes
+					any_held_title = {
+						tier = tier_county
+						any_county_province = {
+							geographical_region = TFE_greater_egypt		
+						}
+					}
+				}	
+			}
+			trigger_event = TFE_rice_decisions.0025
+		}
+	}
+}
+
+# Reopen the Temple of Kalabsha notification
+TFE_rice_decisions.0025 = {
+	type = character_event
+	title = TFE_rice_decisions.0025.t
+	desc = TFE_rice_decisions.0025.desc
+	theme = TFE_sacred_oasis_theme
+	
+	right_portrait = {
+		character = scope:temple_restorer
+		animation = personality_bold
+	}
+	
+	immediate = {
+		play_music_cue = "mx_cue_sacredrite"
+		scope:temple_restorer = {
+			TFE_reopen_aswan_general_effect = yes
+			TFE_reopen_aswan_kalabsha_effect = yes
+		}
+	}
+	
+	option = { # ok
+		name = TFE_rice_decisions.0025.a
+	}
+}
+

@@ -1,0 +1,649 @@
+﻿k_lhomon = {
+	361.1.1 = { change_development_level = 1 }
+	532.1.1 = { change_development_level = 2 }
+	768.1.1 = { change_development_level = 3 }
+}
+
+d_bumthang = {
+	730.1.1={
+		liege = "e_tibet"
+		holder = 247004
+	}
+	775.1.1={
+		holder = 247007
+	}
+	793.1.1={
+		holder = 247008
+	}
+	836.1.1={
+		holder = 247009
+	}
+	842.1.1={
+		liege = 0
+	} # Breakup of the Tibetan Empire
+	864.1.1={
+		holder = 247010
+	}
+	895.1.1={
+		holder = 247011
+	}
+	923.1.1={
+		holder = 247012
+	}
+	955.1.1={
+		holder = 247013
+	}
+	973.1.1={
+		holder = 247014
+	}
+	995.1.1={
+		holder = 247015
+	}
+	1024.1.1={
+		holder = 247016
+	}
+	1057.1.1={
+		holder = 247017
+	}
+	1086.1.1={
+		holder = 247018
+	}
+	1106.1.1={
+		holder = 247019
+	}
+	1134.1.1={
+		holder = 247020
+	}
+	1163.1.1={
+		holder = 247021
+	}
+	1174.1.1={
+		holder = 247022
+	}
+	1208.1.1={
+		holder = 247023
+	}
+	1246.1.1={
+		holder = 247024
+	}
+	#Sakya Trizin established as overlord of Tibet by Yuan Dynasty
+	1251.1.1={
+		liege = "k_sakya_trizin"
+	}
+	1289.1.1={
+		holder = 247025
+	}
+	1311.1.1={
+		holder = 247026
+	}
+	1349.1.1={
+		holder = 247027
+	}
+	#Phagmodrupa Kingdom supersedes Sakya in U and Tsang
+	1358.1.1={
+		liege = "k_u"
+	}
+	1361.1.1={
+		holder = 247028
+	}
+	1377.1.1={
+		holder = 247029
+	}
+}
+
+
+c_bumthang = {
+	### Lhomon
+	361.1.1 = {
+		government = tribal_government
+		holder = lhomon_25 
+		liege = d_monyul
+	}
+	395.1.1 = {
+		holder = lhomon_26
+	}
+	476.1.1 = {
+		holder = lhomon_27
+	}
+	532.1.1 = {
+		holder = lhomon_31
+	}
+	730.1.1={
+		liege="d_bumthang"
+		holder = 247004
+	}
+
+}
+
+
+c_kurmaed = {
+	### Lhomon
+	361.1.1 = {
+		government = tribal_government
+		holder = lhomon_25
+		liege = d_monyul
+	}
+	395.1.1 = {
+		holder = lhomon_26
+	}
+	476.1.1 = {
+		holder = lhomon_27
+	}
+	532.1.1 = {
+		holder = lhomon_31
+	}
+	730.1.1={
+		liege="d_bumthang"
+		holder = 247004
+	}
+
+}
+
+
+c_trongsa = {
+	### Lhomon
+	361.1.1 = {
+		government = tribal_government
+		holder = lhomon_25
+		liege = d_monyul
+	}
+	395.1.1 = {
+		holder = lhomon_26
+	}
+	476.1.1 = {
+		holder = lhomon_27
+	}	
+	532.1.1 = {
+		holder = lhomon_31
+	}
+	730.1.1={
+		liege="d_bumthang"
+		holder = 247004
+	}
+
+}
+
+
+d_paro = {
+	619.1.1={
+		liege = "e_tibet"
+	}
+	730.1.1={
+		holder = 247004
+	}
+}
+
+
+c_paro = {
+	### Lhomon
+	361.1.1 = {
+		government = tribal_government
+		holder = lhomon_16
+	}
+	395.1.1 = {
+		holder = lhomon_17
+	}
+	476.1.1 = {
+		holder = lhomon_18
+		liege = d_monyul
+	}
+	532.1.1 = {
+		holder = kirati_003
+	}
+	
+	619.1.1={
+		liege="d_paro"
+	}
+	730.1.1={
+		holder = 247004
+	}
+
+}
+
+c_punakha = {
+	### Lhomon
+	361.1.1 = {
+		government = tribal_government
+		holder = lhomon_16
+	}
+	395.1.1 = {
+		holder = lhomon_17
+	}
+	476.1.1 = {
+		holder = lhomon_18
+		liege = d_monyul
+	}
+	532.1.1 = {
+		holder = kirati_003
+	}
+	619.1.1={
+		liege="d_paro"
+	}
+	730.1.1={
+		holder = 247004
+	}
+
+}
+
+
+c_daramdin = {
+	### Lhomon
+	361.1.1 = {
+		government = tribal_government
+		holder = lhomon_07
+	}
+	395.1.1 = {
+		holder = lhomon_08
+	}
+	476.1.1 = {
+		holder = lhomon_09
+	}
+	532.1.1 = {
+		holder = kirati_002
+	}
+	760.1.1 = {
+		liege="d_limbuwan"
+	}
+
+}
+
+
+c_chungthang = {
+	### Lhomon
+	361.1.1 = {
+		government = tribal_government
+		holder = lhomon_07
+	}
+	395.1.1 = {
+		holder = lhomon_08
+	}
+	476.1.1 = {
+		holder = lhomon_09
+	}	
+	532.1.1 = {
+		holder = kirati_002
+	}
+	#Thekung Adek
+	660.1.1={
+		liege = "e_tibet"
+		holder = 304080 #Thekung Adek
+	}
+	#fictional descendants of Thekung Adek
+	690.1.1={
+		holder = 304081
+	}
+	736.1.1={
+		holder = 304082
+	}
+	763.1.1={
+		holder = 304083
+	}
+}
+
+
+d_monyul = {
+	### Lhomon
+	361.1.1 = {
+		government = tribal_government
+		holder = lhomon_10
+	}
+	395.1.1 = {
+		holder = lhomon_11
+	}
+	476.1.1 = {
+		holder = lhomon_12
+	}
+	520.1.1 = {
+		holder = lhomon_28
+	}
+	#fictional Monyul dynasty
+	730.1.1={
+		liege = "e_tibet"
+	}
+}
+
+
+c_tawang = {
+	### Lhomon
+	361.1.1 = {
+		government = tribal_government
+		holder = lhomon_10
+	}
+	395.1.1 = {
+		holder = lhomon_11
+	}
+	476.1.1 = {
+		holder = lhomon_12
+	}
+	520.1.1 = {
+		holder = lhomon_28
+	}
+	#fictional Monyul dynasty
+	500.1.1={
+		liege="d_monyul"
+	}
+	
+
+}
+
+
+c_cona = {
+	### Lhomon
+	361.1.1 = {
+		government = tribal_government
+		holder = lhomon_10
+	}
+	395.1.1 = {
+		holder = lhomon_11
+	}
+	476.1.1 = {
+		holder = lhomon_12
+	}
+	520.1.1 = {
+		holder = lhomon_28
+	}
+	#fictional Monyul dynasty
+	500.1.1={
+		liege="d_monyul"
+	}
+	
+
+}
+
+
+c_lhunze = {
+	### Lhomon
+	361.1.1 = {
+		government = tribal_government
+		holder = lhomon_10
+	}
+	395.1.1 = {
+		holder = lhomon_11
+	}
+	476.1.1 = {
+		holder = lhomon_12
+	}
+	520.1.1 = {
+		holder = lhomon_28
+	}
+	#fictional Monyul dynasty
+	500.1.1={
+		liege="d_monyul"
+	}
+	
+
+}
+
+
+d_lhoyul = {
+	#fictional Lhoyul dynasty
+	730.1.1={
+		liege = "e_tibet"
+	}
+}
+
+
+c_itanagar = {
+	### Lhomon
+	361.1.1 = {
+		government = tribal_government
+		holder = lhomon_13
+	}
+	395.1.1 = {
+		holder = lhomon_14
+		liege = d_monyul
+	}
+	476.1.1 = {
+		holder = lhomon_15
+	}
+	
+	532.1.1 = {
+		holder = lhomon_29
+		liege = d_monyul
+	}
+	#fictional Lhoyul dynasty
+	
+	500.1.1={
+		liege="d_lhoyul"
+	}
+
+}
+
+
+c_along = {
+	### Lhomon
+	361.1.1 = {
+		government = tribal_government
+		holder = lhomon_13
+	}
+	395.1.1 = {
+		holder = lhomon_14
+		liege = d_monyul
+	}
+	476.1.1 = {
+		holder = lhomon_15
+	}	
+	532.1.1 = {
+		holder = lhomon_29
+		liege = d_monyul
+	}
+	#fictional Lhoyul dynasty
+	500.1.1={
+		liege="d_lhoyul"
+	}
+
+}
+
+
+#c_yingkiong = { #DELETE
+#	#fictional Lhoyul dynasty
+#	500.1.1={
+#		liege="d_lhoyul"
+#	}
+#	825.1.1={
+#		holder = 304135
+#	}
+#	768.1.1={
+#		holder = 304136
+#	}
+#	885.1.1={
+#		holder = 304137
+#	}
+#	908.1.1={
+#		holder = 304138
+#	}
+#	940.1.1={
+#		holder = 304139
+#	}
+#	963.1.1={
+#		holder = 304140
+#	}
+#	988.1.1={
+#		holder = 304141
+#	}
+#	1010.1.1={
+#		holder = 304142
+#	}
+#	1047.1.1={
+#		holder = 304143
+#	}
+#	1066.1.1={
+#		holder = 304144
+#	}
+#	1086.1.1={
+#		holder = 304145
+#	}
+#	1108.1.1={
+#		holder = 304146
+#	}
+#	1135.1.1={
+#		holder = 304147
+#	}
+#	1166.1.1={
+#		holder = 304148
+#	}
+#	1179.1.1={
+#		holder = 304149
+#	}
+#	1208.1.1={
+#		holder = 304150
+#	}
+#	1234.1.1={
+#		holder = 304151
+#	}
+#	1255.1.1={
+#		holder = 304152
+#	}
+#	1284.1.1={
+#		holder = 304153
+#	}
+#	1305.1.1={
+#		holder = 304154
+#	}
+#	1330.1.1={
+#		holder = 304155
+#	}
+#	1352.1.1={
+#		holder = 304156
+#	}
+#}
+
+
+c_mainling = {
+### Lhomon
+	361.1.1 = {
+		government = tribal_government
+		holder = lhomon_04
+	}
+	395.1.1 = {
+		holder = lhomon_05
+	}
+	476.1.1 = {
+		holder = lhomon_06
+	}	
+	532.1.1 = {
+		holder = lhomon_30
+		liege = d_monyul
+	}
+	#Nyingchi Kingdom - fictional placeholders
+	740.1.1={
+		liege="d_nyingchi"
+		holder = 304444
+	}
+}
+
+
+c_pemako = {
+	### Lhomon
+	361.1.1 = {
+		government = tribal_government
+		holder = lhomon_13
+	}
+	395.1.1 = {
+		holder = lhomon_14
+		liege = d_monyul
+	}
+	476.1.1 = {
+		holder = lhomon_15
+	}
+	532.1.1 = {
+		holder = lhomon_30
+	}
+	#Pemakö Vassals - fictional placeholders
+	740.1.1={
+		liege="d_boyul"
+		holder=304414
+	}
+}
+
+
+d_dzayul = {
+	532.1.1 = {
+		holder = lhomon_32
+	}
+	#fictional Dzayul dynasty
+	730.1.1={
+		liege = "e_tibet"
+	}
+}
+
+
+c_rima = {
+	### Lhomon
+	361.1.1 = {
+		government = tribal_government
+		holder = lhomon_19
+	}
+	395.1.1 = {
+		holder = lhomon_20
+	}
+	476.1.1 = {
+		holder = lhomon_21
+	}
+	#fictional Dzayul dynasty
+	500.1.1={
+		liege="d_dzayul"
+	}
+
+}
+
+
+c_golag = {
+	### Lhomon
+	361.1.1 = {
+		government = tribal_government
+		holder = lhomon_19
+	}
+	395.1.1 = {
+		holder = lhomon_20ç
+	}
+	476.1.1 = {
+		holder = lhomon_21
+	}
+	#fictional Dzayul dynasty
+	500.1.1={
+		liege="d_dzayul"
+	}
+
+}
+
+
+c_roing = {
+	### Lhomon
+	361.1.1 = {
+		government = tribal_government
+		holder = lhomon_22
+	}
+	395.1.1 = {
+		holder = lhomon_23
+	}
+	476.1.1 = {
+		holder = lhomon_24
+	}
+	#fictional Dzayul dynasty
+	500.1.1={
+		liege="d_dzayul"
+	}
+
+}
+
+
+c_tezu = {
+	### Lhomon
+	361.1.1 = {
+		government = tribal_government
+		holder = lhomon_22
+	}
+	395.1.1 = {
+		holder = lhomon_23
+	}
+	476.1.1 = {
+		holder = lhomon_24
+	}
+	#fictional Dzayul dynasty
+	500.1.1={
+		liege="d_dzayul"
+	}
+
+}
+

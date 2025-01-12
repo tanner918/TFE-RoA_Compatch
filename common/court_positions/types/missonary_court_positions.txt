@@ -1,0 +1,324 @@
+﻿head_missionary = { 
+	skill = learning max_available_positions = 1 
+	category = court_position_missionary 
+	opinion = { value = regular_court_position_opinion } 
+	aptitude_level_breakpoints = { 20 40 60 80 } 
+	# How good is this character in this position? root scope is the holder of the court position
+	aptitude = {
+		value = 1
+		add = {
+			value = learning
+			multiply = 2.5
+			max = 50
+			desc = court_position_skill_learning
+		}
+		if = {
+			limit = {
+				is_clergy = yes
+			}
+			add = {
+				value = 20
+				desc = court_position_clergy_trait
+			}
+		}
+		if = {
+			limit = {
+				has_trait = generous
+			}
+			add = {
+				value = 20
+				desc = court_position_generous_trait
+			}
+		}
+		if = {
+			limit = {
+				has_trait = compassionate
+			}
+			add = {
+				value = 20
+				desc = court_position_compassionate_trait
+			}
+		}
+		if = {
+			limit = {
+				has_trait = greedy
+			}
+			add = {
+				value = -10
+				desc = court_position_greedy_trait
+			}
+		}
+		if = {
+			limit = {
+				has_trait = profligate
+			}
+			add = {
+				value = -10
+				desc = court_position_profligate_trait
+			}
+		}
+		if = {
+			limit = {
+				has_trait = avaricious
+			}
+			add = {
+				value = -10
+				desc = court_position_avaricious_trait
+			}
+		}
+		if = {
+			limit = {
+				has_trait = devoted
+				culture = { has_cultural_parameter = devoted_trait_bonuses }
+			}
+			add = {
+				value = 20
+				desc = tradition_monastic_communities_name
+			}
+		}
+		if = {
+			limit = {
+				faith = {
+					has_doctrine_parameter = missionary_bonus_aptitude
+				}
+			}
+			add = {
+				value = 20
+				desc = doctrine_missionary_encouraged_bonus
+			}
+		}
+		add = court_position_aptitude_family_business_value
+		add = court_position_aptitude_low_penalty_value
+	}
+	is_shown = { 
+		faith = {
+			has_doctrine_parameter = allowed_to_hire_missionaries
+		}
+	} 
+	valid_position = { 
+		highest_held_title_tier >= tier_duchy
+	} 
+
+	valid_character = { 
+		scope:employee = {
+			faith = scope:liege.faith
+			NOT = {
+				has_court_position = missionary
+			}
+			is_landed = no
+			trigger_if = {
+				limit = {
+					faith = {
+						has_doctrine_parameter = clergy_must_be_male
+					}
+				}
+				is_male = yes
+			}
+
+			trigger_if = {
+				limit = {
+					faith = {
+						has_doctrine_parameter = clergy_must_be_female
+					}
+				}
+				is_female = yes
+			}
+		}
+	} 
+	revoke_cost = { 
+		prestige = {
+			value = 100
+		} 
+	} 
+	salary = { round = no gold = medium_court_position_salary } 
+	scaling_employer_modifiers = { 
+		terrible = { monthly_piety_gain_mult = 0.1 } 
+		poor = { monthly_piety_gain_mult = 0.2 } 
+		average = { monthly_piety_gain_mult = 0.3 } 
+		good = { monthly_piety_gain_mult = 0.4 } 
+		excellent = { monthly_piety_gain_mult = 0.5 } 
+	} 
+	modifier = { monthly_prestige = minor_court_position_prestige_salary } 
+	on_court_position_received = { 
+
+	} 
+	on_court_position_revoked = { } 
+	on_court_position_invalidated = {} 
+	candidate_score = { 
+		value = 250 
+		add = scope:base_value 
+		add = court_position_candidate_score_base_value 
+		scope:liege = {
+			# Zealous AI's like this
+			if = {
+				limit = {
+					ai_zeal > 75
+				}
+				add = 50
+			}
+		}
+		add = court_position_debt_considerations_value
+	} 
+}
+missionary = { 
+	skill = learning max_available_positions = 4 
+	category = court_position_missionary 
+	opinion = { value = regular_court_position_opinion } 
+	aptitude_level_breakpoints = { 20 40 60 80 } 
+	# How good is this character in this position? root scope is the holder of the court position
+	aptitude = {
+		value = 1
+		add = {
+			value = learning
+			multiply = 2.5
+			max = 50
+			desc = court_position_skill_learning
+		}
+		if = {
+			limit = {
+				is_clergy = yes
+			}
+			add = {
+				value = 20
+				desc = court_position_clergy_trait
+			}
+		}
+		if = {
+			limit = {
+				has_trait = generous
+			}
+			add = {
+				value = 20
+				desc = court_position_generous_trait
+			}
+		}
+		if = {
+			limit = {
+				has_trait = compassionate
+			}
+			add = {
+				value = 20
+				desc = court_position_compassionate_trait
+			}
+		}
+		if = {
+			limit = {
+				has_trait = greedy
+			}
+			add = {
+				value = -10
+				desc = court_position_greedy_trait
+			}
+		}
+		if = {
+			limit = {
+				has_trait = profligate
+			}
+			add = {
+				value = -10
+				desc = court_position_profligate_trait
+			}
+		}
+		if = {
+			limit = {
+				has_trait = avaricious
+			}
+			add = {
+				value = -10
+				desc = court_position_avaricious_trait
+			}
+		}
+		if = {
+			limit = {
+				has_trait = devoted
+				culture = { has_cultural_parameter = devoted_trait_bonuses }
+			}
+			add = {
+				value = 20
+				desc = tradition_monastic_communities_name
+			}
+		}
+		if = {
+			limit = {
+				faith = {
+					has_doctrine_parameter = doctrine_missionary_encouraged
+				}
+			}
+			add = {
+				value = 20
+				desc = doctrine_missionary_encouraged_bonus
+			}
+		}
+		add = court_position_aptitude_family_business_value
+		add = court_position_aptitude_low_penalty_value
+	}
+	is_shown = { 
+		faith = {
+			has_doctrine_parameter = allowed_to_hire_missionaries
+		}
+	} 
+	valid_position = { 
+		highest_held_title_tier >= tier_duchy
+	} 
+
+	valid_character = { 
+		scope:employee = {
+			faith = scope:liege.faith
+			NOT = {
+				has_court_position = head_missionary
+			}
+			is_landed = no
+			trigger_if = {
+				limit = {
+					faith = {
+						has_doctrine_parameter = clergy_must_be_male
+					}
+				}
+				is_male = yes
+			}
+
+			trigger_if = {
+				limit = {
+					faith = {
+						has_doctrine_parameter = clergy_must_be_female
+					}
+				}
+				is_female = yes
+			}
+		}
+	} 
+	revoke_cost = { 
+		prestige = {
+			value = 100
+		} 
+	} 
+	salary = { round = no gold = medium_court_position_salary } 
+	scaling_employer_modifiers = { 
+		terrible = { monthly_piety_gain_mult = 0.05 } 
+		poor = { monthly_piety_gain_mult = 0.1 } 
+		average = { monthly_piety_gain_mult = 0.15 } 
+		good = { monthly_piety_gain_mult = 0.2 } 
+		excellent = { monthly_piety_gain_mult = 0.25 } 
+	} 
+	modifier = { monthly_prestige = minor_court_position_prestige_salary } 
+	on_court_position_received = { 
+
+	} 
+	on_court_position_revoked = { } 
+	on_court_position_invalidated = {} 
+	candidate_score = { 
+		value = 250 
+		add = scope:base_value 
+		add = court_position_candidate_score_base_value 
+		scope:liege = {
+			# Zealous AI's like this
+			if = {
+				limit = {
+					ai_zeal > 75
+				}
+				add = 50
+			}
+		}
+		add = court_position_debt_considerations_value
+	} 
+}

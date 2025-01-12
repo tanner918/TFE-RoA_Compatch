@@ -1,0 +1,854 @@
+﻿alan_01 = {
+	name = "Respendial"
+	dna = 999503_respendial
+	dynasty = 99995001
+	religion = "scythian_pagan"
+	culture = "alan"
+	361.1.1 = {
+		birth = yes
+	}
+	384.1.1 = {
+		add_spouse = 999502
+	}
+	415.1.1 = {
+		death = yes
+	}
+}
+alan_02 = {
+	name = "Addak"
+	dynasty = 99995001
+	religion = "scythian_pagan"
+	culture = "alan"
+	father = alan_01
+	mother = 999502
+	385.1.1 = {
+		birth = yes
+	}
+	413.1.1 = {
+		add_spouse = 999505 # daughter of Hermeric
+	}
+	418.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = 200288
+		}
+	}
+}
+alan_10 = {
+	name = "Guram"
+	religion = "arianism"
+	culture = "alan"
+	443.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+alan_11 = {
+	name = "Ber"
+	religion = "arianism"
+	culture = "alan"
+	433.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+alan_12 = {
+	name = "Gokhar"
+	dynasty = 99995002
+	religion = "scythian_pagan"
+	culture = "alan"
+	378.1.1 = {
+		birth = yes
+	}
+	441.1.1 = {
+		religion = nicene
+	}
+	447.1.1 = {
+		death = yes
+	}
+}
+alan_13 = {
+	name = "Sangiban"
+	dynasty = 99995002
+	religion = "scythian_pagan"
+	culture = "alan"
+	father = alan_12
+	410.1.1 = {
+		birth = yes
+	}
+	441.1.1 = {
+		religion = nicene
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	480.1.1 = {
+		death = yes
+	}
+}
+999500 = {
+	name = "Khuddan"
+	dynasty = 99995000
+	religion = "scythian_pagan"
+	culture = "alan"
+	325.1.1 = {
+		birth = yes
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+999501 = {
+	name = "Kuluk"
+	dynasty = 99995000
+	religion = "scythian_pagan"
+	culture = "alan"
+	father = 999500
+	355.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+999502 = {
+	name = "Mada"
+	female = yes
+	dynasty = 99995000
+	religion = "scythian_pagan"
+	culture = "alan"
+	father = 999500
+	360.1.1 = {
+		birth = yes
+	}
+	390.1.1 = {
+		religion = "arianism"
+	}
+	418.1.1 = {
+		death = yes
+	}
+}
+999504 = {
+	name = "Safrak"
+	dynasty = 99995001
+	religion = "arianism"
+	culture = "alan"
+	father = alan_02
+	mother = 999505
+	414.1.1 = {
+		birth = yes
+	}
+	468.1.1 = {
+		death = yes
+	}
+}
+999505 = {
+	name = "Chindasuntha" # daughter of suebi king according to history of Coimbra city
+	female = yes
+	dynasty = quadi_dynasty
+	religion = "central_pagan"
+	culture = "old_suebi"
+	father = quadi_04
+	396.1.1 = {
+		birth = yes
+	}
+	411.1.1 = {
+		religion = "arianism"
+	}
+	442.1.1 = {
+		death = yes
+	}
+}
+999506 = {
+	name = "Sangipan"
+	religion = "scythian_pagan"
+	culture = "alan"
+	406.1.1 = {
+		birth = yes
+	}
+	455.1.1 = {
+		death = yes
+	}
+}
+999507 = {
+	name = "Sambida"
+	dynasty = 99995003
+	religion = "scythian_pagan"
+	culture = "alan"
+	407.1.1 = {
+		birth = yes
+	}
+	450.1.1 = {
+		death = yes
+	}
+}
+999508 = {
+	name = "Buurgur"
+	dynasty = 99995003
+	religion = "scythian_pagan"
+	culture = "alan"
+	father = 999507
+	423.1.1 = {
+		birth = yes
+	}
+	464.1.1 = {
+		death = yes
+	}
+}
+999509 = {
+	name = "Nikanur"
+	dynasty = 99995000
+	religion = "scythian_pagan"
+	culture = "alan"
+	father = 999501
+	385.1.1 = {
+		birth = yes
+	}
+	450.1.1 = {
+		death = yes
+	}
+}
+999510 = {
+	name = "Beler"
+	dynasty = 99995000
+	religion = "scythian_pagan"
+	culture = "alan"
+	father = 999509
+	435.1.1 = {
+		birth = yes
+	}
+	495.1.1 = {
+		death = yes
+	}
+}
+999520 = {
+	name = "Safrak"
+	dynasty = 99995000
+	religion = "scythian_pagan"
+	culture = "alan"
+	father = 999510
+	470.1.1 = {
+		birth = yes
+	}
+	530.1.1 = {
+		death = yes
+	}
+}
+999521 = {
+	name = "Saros"
+	dynasty = 99995000
+	religion = "scythian_pagan"
+	culture = "alan"
+	father = 999520
+	diplomacy = 10
+	trait = education_diplomacy_3
+	515.1.1 = {
+		birth = yes
+	}
+	598.1.1 = {
+		death = yes
+	}
+}
+999511 = {
+	name = "Ardabur"
+	religion = "scythian_pagan"
+	culture = "alan"
+	385.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		culture = "roman"
+		name = "Ardaburius"
+		add_spouse = 999515
+		religion = "arianism"
+		dynasty = ardaburius_dynasty
+	}
+	435.1.1 = {
+		death = yes
+	}
+}
+999512 = {
+	name = "Aspar"
+	dynasty = ardaburius_dynasty
+	religion = "arianism"
+	culture = "roman"
+	father = 999511
+	mother = 999515
+	405.1.1 = {
+		birth = yes
+	}
+	428.1.1 = {
+		add_spouse = strabo_05
+	}
+	471.1.1 = {
+		death = {
+			death_reason = death_execution
+			killer = 70517
+		}
+	}
+}
+999513 = {
+	name = "Ardaburius"
+	dynasty = ardaburius_dynasty
+	religion = "arianism"
+	culture = "roman"
+	father = 999512
+	mother = strabo_05
+	429.1.1 = {
+		birth = yes
+	}
+	471.1.1 = {
+		death = {
+			death_reason = death_execution
+			killer = 70517
+		}
+	}
+}
+999514 = {
+	name = "Patriciolus"
+	dynasty = ardaburius_dynasty
+	religion = "arianism"
+	culture = "roman"
+	father = 999512
+	mother = strabo_05
+	431.1.1 = {
+		birth = yes
+	}
+	477.1.1 = {
+		death = yes
+	}
+}
+999515 = {
+	name = "Ereleuva"
+	female = yes
+	religion = "arianism"
+	culture = "gothic"
+	385.1.1 = {
+		birth = yes
+	}
+	435.1.1 = {
+		death = yes
+	}
+}
+999518 = {
+	name = "Godisthea"
+	female = yes
+	dynasty = ardaburius_dynasty
+	religion = "arianism"
+	culture = "roman"
+	father = 999513
+	439.1.1 = {
+		birth = yes
+	}
+	490.1.1 = {
+		death = yes
+	}
+}
+999516 = {
+	name = "Ashkhena"
+	female = yes
+	religion = "scythian_pagan"
+	culture = "alan"
+	father = 999517
+	270.1.1 = {
+		birth = yes
+	}
+	290.1.1 = {
+		religion = "mazdayasna"
+	}
+	301.1.1 = {
+		religion = "nicene"
+	}
+	330.1.1 = {
+		death = yes
+	}
+}
+999517 = {
+	name = "Ashkhadar"
+	religion = "scythian_pagan"
+	culture = "alan"
+	230.1.1 = {
+		birth = yes
+	}
+	300.1.1 = {
+		death = yes
+	}
+}
+145265_mother = {
+	name = "Ababa"
+	female = yes
+	religion = "scythian_pagan"
+	culture = "alan"
+	147.1.1 = {
+		birth = yes
+	}
+	200.1.1 = {
+		death = yes
+	}
+}
+daciae_05 = {
+	name = "Saumak"
+	dynasty = 99995004 # sadagari
+	religion = "scythian_pagan"
+	culture = "alan"
+	344.1.1 = {
+		birth = yes
+	}
+	396.1.1 = {
+		death = yes
+	}
+}
+daciae_13 = {
+	name = "Sathis"
+	dynasty = 99995004 # sadagari
+	religion = "scythian_pagan"
+	culture = "alan"
+	father = daciae_05
+	375.1.1 = {
+		birth = yes
+	}
+	435.1.1 = {
+		death = yes
+	}
+}
+daciae_24 = {
+	name = "Candak"
+	dynasty = 99995004 # sadagari
+	religion = "scythian_pagan"
+	culture = "alan"
+	father = daciae_13
+	417.1.1 = {
+		birth = yes
+	}
+	474.1.1 = {
+		death = yes
+	}
+}
+999519 = {
+	name = "Shatana"
+	female = yes
+	dynasty = 99995004 # sadagari
+	religion = "scythian_pagan"
+	culture = "alan"
+	father = daciae_13
+	419.1.1 = {
+		birth = yes
+	}
+	470.1.1 = {
+		death = yes
+	}
+}
+aorsi_01 = {
+	name = "Fath"
+	culture = "alan"
+	religion = "scythian_pagan"
+	dynasty = aorsi_dynasty
+	328.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+
+alan_03 = {
+	name = "Skilur"
+	culture = "alan"
+	religion = "scythian_pagan"
+	dynasty = don_dynasty
+	320.1.1 = {
+		birth = yes
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+alan_04 = {
+	name = "Istor"
+	culture = "alan"
+	religion = "scythian_pagan"
+	330.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+alan_05 = {
+	name = "Taus"
+	culture = "alan"
+	religion = "scythian_pagan"
+	350.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+alan_06 = {
+	name = "Kuluk"
+	culture = "alan"
+	religion = "tengri_pagan"
+	438.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+alan_07 = {
+	name = "Ber"
+	culture = "alan"
+	religion = "tengri_pagan"
+	501.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+alan_08 = {
+	name = "Respendial"
+	culture = "alan"
+	religion = "tengri_pagan"
+	600.1.1 = {
+		birth = yes
+	}
+	680.1.1 = {
+		death = yes
+	}
+}
+alan_09 = {
+	name = "Hormidak"
+	culture = "alan"
+	religion = "scythian_pagan"
+	451.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+
+### Pre 965 Alans
+#
+146205 = {
+	name = "Buriberdi"
+	dynasty = 1022383
+	culture = "alan"
+	religion = "tengri_pagan"
+
+	720.1.1 = {
+		birth = yes
+	}
+	777.1.1 = {
+		death = yes
+	}
+}
+
+146206 = {
+	name = "Balsag"
+	dynasty = 1022383
+	culture = "alan"
+	religion = "tengri_pagan"
+	father = 146205
+	746.1.1 = {
+		birth = yes
+	}
+	805.1.1 = {
+		death = yes
+	}
+}
+
+146207 = {
+	name = "Rosmag"
+	dynasty = 1022383
+	culture = "alan"
+	religion = "tengri_pagan"
+	father = 146205
+	748.1.1 = {
+		birth = yes
+	}
+	808.1.1 = {
+		death = yes
+	}
+}
+
+146208 = {
+	name = "Alatey"
+	dynasty = 1022383
+	culture = "alan"
+	religion = "tengri_pagan"
+	father = 146205
+	750.1.1 = {
+		birth = yes
+	}
+	813.1.1 = {
+		death = yes
+	}
+}
+
+146209 = {
+	name = "Bazuk"
+	dynasty = 1022383
+	culture = "alan"
+	religion = "tengri_pagan"
+	father = 146206
+	763.1.1 = {
+		birth = yes
+	}
+	827.1.1 = {
+		death = yes
+	}
+}
+
+146210 = {
+	name = "Kaur"
+	dynasty = 1022384
+	culture = "alan"
+	religion = "tengri_pagan"
+
+	740.1.1 = {
+		birth = yes
+	}
+	794.1.1 = {
+		death = yes
+	}
+}
+
+146211 = {
+	name = "Kul"
+	dynasty = 1022384
+	culture = "alan"
+	religion = "tengri_pagan"
+	father = 146210
+	757.1.1 = {
+		birth = yes
+	}
+	820.1.1 = {
+		death = yes
+	}
+}
+
+146212 = {
+	name = "Khankhusy"
+	dynasty = 1022385
+	culture = "alan"
+	religion = "tengri_pagan"
+
+	736.1.1 = {
+		birth = yes
+	}
+	789.1.1 = {
+		death = yes
+	}
+}
+
+146213 = {
+	name = "Djadaron"
+	dynasty = 1022385
+	culture = "alan"
+	religion = "tengri_pagan"
+	father = 146212
+	753.1.1 = {
+		birth = yes
+	}
+	816.1.1 = {
+		death = yes
+	}
+}
+
+moldavia_01 = {
+	name = "Djadaron"
+	culture = "alan"
+	religion = "arianism"
+	441.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+moldavia_02 = {
+	name = "Kul"
+	culture = "alan"
+	religion = "arianism"
+	450.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+alan_20 = {
+	name = "Kul"
+	culture = "alan"
+	religion = "scythian_pagan"
+	330.1.1 = {
+		birth = yes
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+alan_21 = {
+	name = "Alatey"
+	culture = "alan"
+	religion = "scythian_pagan"
+	370.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+alan_22 = {
+	name = "Hasqar"
+	culture = "alan"
+	religion = "scythian_pagan"
+	334.1.1 = {
+		birth = yes
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+alan_23 = {
+	name = "Aslan"
+	culture = "alan"
+	religion = "scythian_pagan"
+	368.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+alan_24 = {
+	name = "Zaur"
+	culture = "alan"
+	religion = "scythian_pagan"
+	328.1.1 = {
+		birth = yes
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+alan_25 = {
+	name = "Taus"
+	culture = "alan"
+	religion = "scythian_pagan"
+	361.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+alan_26 = {
+	name = "Nikanur"
+	culture = "alan"
+	religion = "scythian_pagan"
+	337.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+alan_27 = {
+	name = "Taus"
+	culture = "alan"
+	religion = "scythian_pagan"
+	337.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+alan_africa_01 = {
+	name = "Zaidar"
+	dynasty = 99995001
+	culture = "alan"
+	religion = "arianism"
+	father = 999504
+	441.1.1 = {
+		birth = yes
+	}
+	497.1.1 = {
+		death = yes
+	}
+}
+alan_africa_02 = {
+	name = "Aslan"
+	culture = "alan"
+	religion = "arianism"
+	451.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+alan_africa_03 = {
+	name = "Ashkhadar"
+	dynasty = 99995001
+	culture = "alan"
+	religion = "arianism"
+	father = alan_africa_01
+	480.1.1 = {
+		birth = yes
+	}
+	533.1.1 = {
+		death = yes
+	}
+}
+
+#New Vanilla
+alan_sarir_1 = {
+	name = "Saratan"
+	dynasty = dagestan_sarir
+	culture = alan # technically Avar of the Northeast Caucasus
+	religion = orthodox
+	father = alan_sarir_2
+	1127.1.1 = {
+		birth = yes
+	}
+	1183.1.1 = {
+		death = yes
+	}
+}
+
+alan_sarir_2 = {
+	name = "Uruskhan"
+	dynasty = dagestan_sarir
+	culture = alan # technically Avar of the Northeast Caucasus
+	religion = orthodox
+	father = alan_sarir_3
+	1076.1.1 = {
+		birth = yes
+	}
+	1128.1.1 = {
+		death = yes
+	}
+}
+
+alan_sarir_3 = {
+	name = "Ummakhan"
+	dynasty = dagestan_sarir
+	culture = alan # technically Avar of the Northeast Caucasus
+	religion = orthodox
+	father = saririds_10
+	1041.1.1 = {
+		birth = yes
+	}
+	1092.1.1 = {
+		death = yes
+	}
+}

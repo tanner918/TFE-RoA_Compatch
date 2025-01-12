@@ -1,0 +1,675 @@
+﻿senate_italy_aristocratic_revolt = {
+		AND = {
+			OR = {
+				global_var:italy_senate_admin = flag:absolute
+				global_var:italy_senate_military = flag:retinue
+				global_var:italy_senate_legistlation = flag:absolute
+			}
+			italy_aristocratic_party_level_of_loyalty <= 15
+		}	 
+}
+senate_italy_aristocratic_disloyal = {
+		AND = {
+			OR = {
+				global_var:italy_senate_admin = flag:taxing_rights
+				global_var:italy_senate_admin = flag:absolute
+
+				global_var:italy_senate_military = flag:regular
+				global_var:italy_senate_military = flag:retinue
+
+				global_var:italy_senate_legistlation = flag:regular
+				global_var:italy_senate_legistlation = flag:absolute
+			}
+			
+			italy_aristocratic_party_level_of_loyalty <= 40
+			trigger_if = {
+				limit = {
+					OR = {
+						global_var:italy_senate_admin = flag:absolute
+						global_var:italy_senate_military = flag:retinue
+						global_var:italy_senate_legistlation = flag:absolute
+					}
+				}
+				italy_aristocratic_party_level_of_loyalty > 15
+			}
+		}	 
+}
+senate_italy_aristocratic_indifferent = {
+		OR = {
+			NOT = {
+				OR = {
+					global_var:italy_senate_admin = flag:taxing_rights
+					global_var:italy_senate_admin = flag:absolute
+	
+					global_var:italy_senate_military = flag:regular
+					global_var:italy_senate_military = flag:retinue
+	
+					global_var:italy_senate_legistlation = flag:regular
+					global_var:italy_senate_legistlation = flag:absolute
+				}
+			}
+			
+			AND = {
+				italy_aristocratic_party_level_of_loyalty > 40
+				italy_aristocratic_party_level_of_loyalty <= 60
+			}
+		}	 
+}
+senate_italy_aristocratic_supportive = {
+		AND = {
+			OR = {
+				global_var:italy_senate_admin = flag:absolute
+				global_var:italy_senate_military = flag:retinue
+				global_var:italy_senate_legistlation = flag:absolute
+			}
+			italy_aristocratic_party_level_of_loyalty > 75
+		}	 
+}
+senate_italy_aristocratic_loyal = {
+		AND = {
+			OR = {
+				global_var:italy_senate_admin = flag:taxing_rights
+				global_var:italy_senate_admin = flag:absolute
+
+				global_var:italy_senate_military = flag:regular
+				global_var:italy_senate_military = flag:retinue
+
+				global_var:italy_senate_legistlation = flag:regular
+				global_var:italy_senate_legistlation = flag:absolute
+			}
+			
+			italy_aristocratic_party_level_of_loyalty >= 61
+			trigger_if = {
+				limit = {
+					OR = {
+						global_var:italy_senate_admin = flag:absolute
+						global_var:italy_senate_military = flag:retinue
+						global_var:italy_senate_legistlation = flag:absolute
+					}
+				}
+				italy_aristocratic_party_level_of_loyalty <= 75
+			}
+		}	 
+}
+senate_italy_populist_revolt = {
+		AND = {
+			OR = {
+				global_var:italy_senate_admin = flag:absolute
+				global_var:italy_senate_military = flag:retinue
+				global_var:italy_senate_legistlation = flag:absolute
+			}
+			italy_populists_party_level_of_loyalty <= 15
+		}	 
+}
+senate_italy_populist_disloyal = {
+		AND = {
+			OR = {
+				global_var:italy_senate_admin = flag:taxing_rights
+				global_var:italy_senate_admin = flag:absolute
+
+				global_var:italy_senate_military = flag:regular
+				global_var:italy_senate_military = flag:retinue
+
+				global_var:italy_senate_legistlation = flag:regular
+				global_var:italy_senate_legistlation = flag:absolute
+			}
+			
+			italy_populists_party_level_of_loyalty <= 40
+			trigger_if = {
+				limit = {
+					OR = {
+						global_var:italy_senate_admin = flag:absolute
+						global_var:italy_senate_military = flag:retinue
+						global_var:italy_senate_legistlation = flag:absolute
+					}
+				}
+				italy_populists_party_level_of_loyalty > 15
+			}
+		}	 
+}
+senate_italy_populist_indifferent = {
+		OR = {
+			NOT = {
+				OR = {
+					global_var:italy_senate_admin = flag:taxing_rights
+					global_var:italy_senate_admin = flag:absolute
+	
+					global_var:italy_senate_military = flag:regular
+					global_var:italy_senate_military = flag:retinue
+	
+					global_var:italy_senate_legistlation = flag:regular
+					global_var:italy_senate_legistlation = flag:absolute
+				}
+			}
+			
+			AND = {
+				italy_populists_party_level_of_loyalty > 40
+				italy_populists_party_level_of_loyalty <= 60
+			}
+		}	 
+}
+senate_italy_populist_supportive = {
+		AND = {
+			OR = {
+				global_var:italy_senate_admin = flag:absolute
+				global_var:italy_senate_military = flag:retinue
+				global_var:italy_senate_legistlation = flag:absolute
+			}
+			italy_populists_party_level_of_loyalty > 75
+		}	 
+}
+senate_italy_populist_loyal = {
+		AND = {
+			OR = {
+				global_var:italy_senate_admin = flag:taxing_rights
+				global_var:italy_senate_admin = flag:absolute
+
+				global_var:italy_senate_military = flag:regular
+				global_var:italy_senate_military = flag:retinue
+
+				global_var:italy_senate_legistlation = flag:regular
+				global_var:italy_senate_legistlation = flag:absolute
+			}
+			
+			italy_populists_party_level_of_loyalty >=61
+			trigger_if = {
+				limit = {
+					OR = {
+						global_var:italy_senate_admin = flag:absolute
+						global_var:italy_senate_military = flag:retinue
+						global_var:italy_senate_legistlation = flag:absolute
+					}
+				}
+				italy_populists_party_level_of_loyalty <= 75
+			}
+		}	 
+}
+senate_italy_traditionalist_revolt = {
+		AND = {
+			OR = {
+				global_var:italy_senate_admin = flag:absolute
+				global_var:italy_senate_military = flag:retinue
+				global_var:italy_senate_legistlation = flag:absolute
+			}
+			italy_traditionalist_party_level_of_loyalty <= 15
+		}	 
+}
+senate_italy_traditionalist_disloyal = {
+		AND = {
+			OR = {
+				global_var:italy_senate_admin = flag:taxing_rights
+				global_var:italy_senate_admin = flag:absolute
+
+				global_var:italy_senate_military = flag:regular
+				global_var:italy_senate_military = flag:retinue
+
+				global_var:italy_senate_legistlation = flag:regular
+				global_var:italy_senate_legistlation = flag:absolute
+			}
+			
+			italy_traditionalist_party_level_of_loyalty <= 40
+			trigger_if = {
+				limit = {
+					OR = {
+						global_var:italy_senate_admin = flag:absolute
+						global_var:italy_senate_military = flag:retinue
+						global_var:italy_senate_legistlation = flag:absolute
+					}
+				}
+				italy_traditionalist_party_level_of_loyalty > 15
+			}
+		}	 
+}
+senate_italy_traditionalist_indifferent = {
+		OR = {
+			NOT = {
+				OR = {
+					global_var:italy_senate_admin = flag:taxing_rights
+					global_var:italy_senate_admin = flag:absolute
+	
+					global_var:italy_senate_military = flag:regular
+					global_var:italy_senate_military = flag:retinue
+	
+					global_var:italy_senate_legistlation = flag:regular
+					global_var:italy_senate_legistlation = flag:absolute
+				}
+			}
+			
+			AND = {
+				italy_traditionalist_party_level_of_loyalty > 40
+				italy_traditionalist_party_level_of_loyalty <= 60
+			}
+		}	 
+}
+senate_italy_traditionalist_supportive = {
+		AND = {
+			OR = {
+				global_var:italy_senate_admin = flag:absolute
+				global_var:italy_senate_military = flag:retinue
+				global_var:italy_senate_legistlation = flag:absolute
+			}
+			italy_traditionalist_party_level_of_loyalty > 75
+		}	 
+}
+senate_italy_traditionalist_loyal = {
+		AND = {
+			OR = {
+				global_var:italy_senate_admin = flag:taxing_rights
+				global_var:italy_senate_admin = flag:absolute
+
+				global_var:italy_senate_military = flag:regular
+				global_var:italy_senate_military = flag:retinue
+
+				global_var:italy_senate_legistlation = flag:regular
+				global_var:italy_senate_legistlation = flag:absolute
+			}
+			
+			italy_traditionalist_party_level_of_loyalty >=61
+			trigger_if = {
+				limit = {
+					OR = {
+						global_var:italy_senate_admin = flag:absolute
+						global_var:italy_senate_military = flag:retinue
+						global_var:italy_senate_legistlation = flag:absolute
+					}
+				}
+				italy_traditionalist_party_level_of_loyalty <= 75
+			}
+		}	 
+}
+senate_eastern_aristocratic_revolt = {
+		AND = {
+			OR = {
+				global_var:eastern_senate_admin = flag:absolute
+				global_var:eastern_senate_military = flag:retinue
+				global_var:eastern_senate_legistlation = flag:absolute
+			}
+			eastern_aristocratic_party_level_of_loyalty <= 15
+		}	 
+}
+senate_eastern_aristocratic_disloyal = {
+		AND = {
+			OR = {
+				global_var:eastern_senate_admin = flag:taxing_rights
+				global_var:eastern_senate_admin = flag:absolute
+
+				global_var:eastern_senate_military = flag:regular
+				global_var:eastern_senate_military = flag:retinue
+
+				global_var:eastern_senate_legistlation = flag:regular
+				global_var:eastern_senate_legistlation = flag:absolute
+			}
+			
+			eastern_aristocratic_party_level_of_loyalty <= 40
+			trigger_if = {
+				limit = {
+					OR = {
+						global_var:eastern_senate_admin = flag:absolute
+						global_var:eastern_senate_military = flag:retinue
+						global_var:eastern_senate_legistlation = flag:absolute
+					}
+				}
+				eastern_aristocratic_party_level_of_loyalty > 15
+			}
+		}	 
+}
+senate_eastern_aristocratic_indifferent = {
+		OR = {
+			NOT = {
+				OR = {
+					global_var:eastern_senate_admin = flag:taxing_rights
+					global_var:eastern_senate_admin = flag:absolute
+	
+					global_var:eastern_senate_military = flag:regular
+					global_var:eastern_senate_military = flag:retinue
+	
+					global_var:eastern_senate_legistlation = flag:regular
+					global_var:eastern_senate_legistlation = flag:absolute
+				}
+			}
+			
+			AND = {
+				eastern_aristocratic_party_level_of_loyalty > 40
+				eastern_aristocratic_party_level_of_loyalty <= 60
+			}
+		}	 
+}
+senate_eastern_aristocratic_supportive = {
+		AND = {
+			OR = {
+				global_var:eastern_senate_admin = flag:absolute
+				global_var:eastern_senate_military = flag:retinue
+				global_var:eastern_senate_legistlation = flag:absolute
+			}
+			eastern_aristocratic_party_level_of_loyalty > 75
+		}	 
+}
+senate_eastern_aristocratic_loyal = {
+		AND = {
+			OR = {
+				global_var:eastern_senate_admin = flag:taxing_rights
+				global_var:eastern_senate_admin = flag:absolute
+
+				global_var:eastern_senate_military = flag:regular
+				global_var:eastern_senate_military = flag:retinue
+
+				global_var:eastern_senate_legistlation = flag:regular
+				global_var:eastern_senate_legistlation = flag:absolute
+			}
+			
+			eastern_aristocratic_party_level_of_loyalty >=61
+			trigger_if = {
+				limit = {
+					OR = {
+						global_var:eastern_senate_admin = flag:absolute
+						global_var:eastern_senate_military = flag:retinue
+						global_var:eastern_senate_legistlation = flag:absolute
+					}
+				}
+				eastern_aristocratic_party_level_of_loyalty <= 75
+			}
+		}	 
+}
+senate_eastern_populist_revolt = {
+		AND = {
+			OR = {
+				global_var:eastern_senate_admin = flag:absolute
+				global_var:eastern_senate_military = flag:retinue
+				global_var:eastern_senate_legistlation = flag:absolute
+			}
+			eastern_populists_party_level_of_loyalty <= 15
+		}	 
+}
+senate_eastern_populist_disloyal = {
+		AND = {
+			OR = {
+				global_var:eastern_senate_admin = flag:taxing_rights
+				global_var:eastern_senate_admin = flag:absolute
+
+				global_var:eastern_senate_military = flag:regular
+				global_var:eastern_senate_military = flag:retinue
+
+				global_var:eastern_senate_legistlation = flag:regular
+				global_var:eastern_senate_legistlation = flag:absolute
+			}
+			
+			eastern_populists_party_level_of_loyalty <= 40
+			trigger_if = {
+				limit = {
+					OR = {
+						global_var:eastern_senate_admin = flag:absolute
+						global_var:eastern_senate_military = flag:retinue
+						global_var:eastern_senate_legistlation = flag:absolute
+					}
+				}
+				eastern_populists_party_level_of_loyalty > 15
+			}
+		}	 
+}
+senate_eastern_populist_indifferent = {
+		OR = {
+			NOT = {
+				OR = {
+					global_var:eastern_senate_admin = flag:taxing_rights
+					global_var:eastern_senate_admin = flag:absolute
+	
+					global_var:eastern_senate_military = flag:regular
+					global_var:eastern_senate_military = flag:retinue
+	
+					global_var:eastern_senate_legistlation = flag:regular
+					global_var:eastern_senate_legistlation = flag:absolute
+				}
+			}
+			
+			AND = {
+				eastern_populists_party_level_of_loyalty > 40
+				eastern_populists_party_level_of_loyalty <= 60
+			}
+		}	 
+}
+senate_eastern_populist_supportive = {
+		AND = {
+			OR = {
+				global_var:eastern_senate_admin = flag:absolute
+				global_var:eastern_senate_military = flag:retinue
+				global_var:eastern_senate_legistlation = flag:absolute
+			}
+			eastern_populists_party_level_of_loyalty > 75
+		}	 
+}
+senate_eastern_populist_loyal = {
+		AND = {
+			OR = {
+				global_var:eastern_senate_admin = flag:taxing_rights
+				global_var:eastern_senate_admin = flag:absolute
+
+				global_var:eastern_senate_military = flag:regular
+				global_var:eastern_senate_military = flag:retinue
+
+				global_var:eastern_senate_legistlation = flag:regular
+				global_var:eastern_senate_legistlation = flag:absolute
+			}
+			
+			eastern_populists_party_level_of_loyalty >=61
+			trigger_if = {
+				limit = {
+					OR = {
+						global_var:eastern_senate_admin = flag:absolute
+						global_var:eastern_senate_military = flag:retinue
+						global_var:eastern_senate_legistlation = flag:absolute
+					}
+				}
+				eastern_populists_party_level_of_loyalty <= 75
+			}
+		}	 
+}
+senate_eastern_traditionalist_revolt = {
+		AND = {
+			OR = {
+				global_var:eastern_senate_admin = flag:absolute
+				global_var:eastern_senate_military = flag:retinue
+				global_var:eastern_senate_legistlation = flag:absolute
+			}
+			eastern_traditionalist_party_level_of_loyalty <= 15
+		}	 
+}
+senate_eastern_traditionalist_disloyal = {
+		AND = {
+			OR = {
+				global_var:eastern_senate_admin = flag:taxing_rights
+				global_var:eastern_senate_admin = flag:absolute
+
+				global_var:eastern_senate_military = flag:regular
+				global_var:eastern_senate_military = flag:retinue
+
+				global_var:eastern_senate_legistlation = flag:regular
+				global_var:eastern_senate_legistlation = flag:absolute
+			}
+			
+			eastern_traditionalist_party_level_of_loyalty <= 40
+			trigger_if = {
+				limit = {
+					OR = {
+						global_var:eastern_senate_admin = flag:absolute
+						global_var:eastern_senate_military = flag:retinue
+						global_var:eastern_senate_legistlation = flag:absolute
+					}
+				}
+				eastern_traditionalist_party_level_of_loyalty > 15
+			}
+		}	 
+}
+senate_eastern_traditionalist_indifferent = {
+		OR = {
+			NOT = {
+				OR = {
+					global_var:eastern_senate_admin = flag:taxing_rights
+					global_var:eastern_senate_admin = flag:absolute
+	
+					global_var:eastern_senate_military = flag:regular
+					global_var:eastern_senate_military = flag:retinue
+	
+					global_var:eastern_senate_legistlation = flag:regular
+					global_var:eastern_senate_legistlation = flag:absolute
+				}
+			}
+			
+			AND = {
+				eastern_traditionalist_party_level_of_loyalty > 40
+				eastern_traditionalist_party_level_of_loyalty <= 60
+			}
+		}	 
+}
+senate_eastern_traditionalist_supportive = {
+		AND = {
+			OR = {
+				global_var:eastern_senate_admin = flag:absolute
+				global_var:eastern_senate_military = flag:retinue
+				global_var:eastern_senate_legistlation = flag:absolute
+			}
+			eastern_traditionalist_party_level_of_loyalty > 75
+		}	 
+}
+senate_eastern_traditionalist_loyal = {
+		AND = {
+			OR = {
+				global_var:eastern_senate_admin = flag:taxing_rights
+				global_var:eastern_senate_admin = flag:absolute
+
+				global_var:eastern_senate_military = flag:regular
+				global_var:eastern_senate_military = flag:retinue
+
+				global_var:eastern_senate_legistlation = flag:regular
+				global_var:eastern_senate_legistlation = flag:absolute
+			}
+			
+			eastern_traditionalist_party_level_of_loyalty >=61
+			trigger_if = {
+				limit = {
+					OR = {
+						global_var:eastern_senate_admin = flag:absolute
+						global_var:eastern_senate_military = flag:retinue
+						global_var:eastern_senate_legistlation = flag:absolute
+					}
+				}
+				eastern_traditionalist_party_level_of_loyalty <= 75
+			}
+		}	 
+}
+
+senate_italy_one_party_revolting = {
+	OR = {
+		AND = {
+			senate_italy_aristocratic_revolt = yes
+			senate_italy_populist_revolt = no
+			senate_italy_traditionalist_revolt = no
+		}
+		AND = {
+			senate_italy_aristocratic_revolt = no
+			senate_italy_populist_revolt = yes
+			senate_italy_traditionalist_revolt = no
+		}
+		AND = {
+			senate_italy_aristocratic_revolt = no
+			senate_italy_populist_revolt = no
+			senate_italy_traditionalist_revolt = yes
+		}
+	}
+}
+senate_italy_two_party_revolting = {
+	AND = {
+		OR = {
+			senate_italy_aristocratic_revolt = yes
+			senate_italy_populist_revolt = yes
+			senate_italy_traditionalist_revolt = yes
+		}
+		senate_italy_one_party_revolting = no
+		senate_italy_all_party_revolting = no
+	}
+}
+senate_italy_all_party_revolting = {
+	AND = {
+		senate_italy_aristocratic_revolt = yes
+		senate_italy_populist_revolt = yes
+		senate_italy_traditionalist_revolt = yes
+	}
+}
+senate_eastern_one_party_revolting = {
+	OR = {
+		AND = {
+			senate_eastern_aristocratic_revolt = yes
+			senate_eastern_populist_revolt = no
+			senate_eastern_traditionalist_revolt = no
+		}
+		AND = {
+			senate_eastern_aristocratic_revolt = no
+			senate_eastern_populist_revolt = yes
+			senate_eastern_traditionalist_revolt = no
+		}
+		AND = {
+			senate_eastern_aristocratic_revolt = no
+			senate_eastern_populist_revolt = no
+			senate_eastern_traditionalist_revolt = yes
+		}
+	}
+}
+senate_eastern_two_party_revolting = {
+	AND = {
+		OR = {
+			senate_eastern_aristocratic_revolt = yes
+			senate_eastern_populist_revolt = yes
+			senate_eastern_traditionalist_revolt = yes
+		}
+		senate_eastern_one_party_revolting = no
+		senate_eastern_all_party_revolting = no
+	}
+}
+senate_eastern_all_party_revolting = {
+	AND = {
+		senate_eastern_aristocratic_revolt = yes
+		senate_eastern_populist_revolt = yes
+		senate_eastern_traditionalist_revolt = yes
+	}
+}
+
+senate_italy_party_can_disloyal_loyal = {
+	OR = {
+		global_var:italy_senate_admin = flag:taxing_rights
+		global_var:italy_senate_admin = flag:absolute
+
+		global_var:italy_senate_military = flag:regular
+		global_var:italy_senate_military = flag:retinue
+
+		global_var:italy_senate_legistlation = flag:regular
+		global_var:italy_senate_legistlation = flag:absolute
+	}
+}
+
+senate_italy_party_can_revolt_supportive = {
+	OR = {
+		global_var:italy_senate_admin = flag:absolute
+		global_var:italy_senate_military = flag:retinue
+		global_var:italy_senate_legistlation = flag:absolute
+	}
+}
+
+senate_eastern_party_can_disloyal_loyal = {
+	OR = {
+		global_var:eastern_senate_admin = flag:taxing_rights
+		global_var:eastern_senate_admin = flag:absolute
+
+		global_var:eastern_senate_military = flag:regular
+		global_var:eastern_senate_military = flag:retinue
+
+		global_var:eastern_senate_legistlation = flag:regular
+		global_var:eastern_senate_legistlation = flag:absolute
+	}
+}
+
+senate_eastern_party_can_revolt_supportive = {
+	OR = {
+		global_var:eastern_senate_admin = flag:absolute
+		global_var:eastern_senate_military = flag:retinue
+		global_var:eastern_senate_legistlation = flag:absolute
+	}
+}

@@ -1,0 +1,919 @@
+﻿#
+zhangzhung_01 = {
+	name = "Ajidamel"
+	dynasty = dynsaty_Zhangzhung #Lig
+	religion = "old_bon" #Döl Bön “outbreak Bon” (rdol bon)
+	culture = "zhangzhung"
+	331.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+zhangzhung_05 = {
+	name = "Zutse"
+	dynasty = dynsaty_Zhangzhung #Lig
+	religion = "old_bon" #Döl Bön “outbreak Bon” (rdol bon)
+	culture = "zhangzhung"
+	father = zhangzhung_01
+	388.1.1 = {
+		birth = yes
+	}
+	455.1.1 = {
+		death = yes
+	}
+}
+zhangzhung_06 = {
+	name = "Sehrigyer"
+	dynasty = dynsaty_Zhangzhung #Lig
+	religion = "old_bon" #Döl Bön “outbreak Bon” (rdol bon)
+	culture = "zhangzhung"
+	father = zhangzhung_05
+	429.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+zhangzhung_02 = {
+	name = "Liknyirhya"
+	religion = "old_bon" #Döl Bön “outbreak Bon” (rdol bon)
+	culture = "zhangzhung"
+	341.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+zhangzhung_03 = {
+	name = "DralE_"
+	religion = "old_bon" #Döl Bön “outbreak Bon” (rdol bon)
+	culture = "zhangzhung"
+	female = yes
+	319.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+zhangzhung_04 = {
+	name = "Liknyashur"
+	religion = "old_bon" #Döl Bön “outbreak Bon” (rdol bon)
+	culture = "zhangzhung"
+	319.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+zhangzhung_07 = {
+	name = "Duddul"
+	religion = "old_bon" #Döl Bön “outbreak Bon” (rdol bon)
+	culture = "zhangzhung"
+	431.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+zhangzhung_08 = {
+	name = "Sangpo"
+	religion = "old_bon" #Döl Bön “outbreak Bon” (rdol bon)
+	culture = "zhangzhung"
+	441.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+zhangzhung_09 = {
+	name = "DrO_nnE_"
+	religion = "old_bon" #Döl Bön “outbreak Bon” (rdol bon)
+	culture = "zhangzhung"
+	female = yes
+	456.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+#Zhangzhung (Suvarnabhumi) Kingdom
+247000 = {
+	name = "Liknyirhya"
+	dynasty = 105809 #Lig
+	religion = "old_bon" #Döl Bön “outbreak Bon” (rdol bon)
+	culture = "zhangzhung"
+	548.1.1 = {
+		birth = yes
+	}
+	608.1.1 = {
+		death = yes
+	}
+}
+
+247001 = {
+	name = "Likmikya"
+	dynasty = 105809 #Lig
+	religion = "old_bon" #Döl Bön “outbreak Bon” (rdol bon)
+	culture = "zhangzhung"
+	father = 247000
+	595.1.1 = {
+		birth = yes
+	}
+	615.1.1 = {
+		add_spouse = 247002
+	}
+	634.1.1 = {
+		add_concubine = 247076
+	}
+	645.1.1 = {
+		death = yes
+	}
+}
+
+247002 = {
+	name = "TisE_"
+	female = yes
+	dynasty = 105810 #Ng¸lkhar
+	religion = "old_bon" #Döl Bön “outbreak Bon” (rdol bon)
+	culture = "zhangzhung"
+	599.1.1 = {
+		birth = yes
+	}
+	645.1.1 = {
+		death = yes
+	}
+}
+
+247003 = {
+	name = "DralE_"
+	female = yes
+	dynasty = 105809 #Lig
+	religion = "old_bon" #Döl Bön “outbreak Bon” (rdol bon)
+	culture = "zhangzhung"
+	father = 247000
+	604.1.1 = {
+		birth = yes
+	}
+	649.1.1 = {
+		death = yes
+	}
+}
+
+242400 = {
+	name = "Zazu" # Fictional
+	dynasty = 1053200
+	female = yes
+	
+	culture = zhangzhung
+	religion = old_bon
+	
+	744.1.1 = {
+		birth = yes
+	}
+	796.1.1 = {
+		death = yes
+	}
+}
+
+242401 = {
+	name = "Duk" # Fictional
+	dynasty = 1053201
+	female = yes
+	
+	culture = zhangzhung
+	religion = old_bon
+	
+	745.1.1 = {
+		birth = yes
+	}
+	794.1.1 = {
+		death = yes
+	}
+}
+
+242402 = {
+	name = "Zutse" # Fictional
+	dynasty = 1053202
+	
+	culture = zhangzhung
+	religion = old_bon
+	
+	753.1.1 = {
+		birth = yes
+	}
+	843.1.1 = {
+		death = yes
+	}
+}
+
+#Empress of Trisong Detsen
+247106 = {
+	name = "Magyal_Dongkar"
+	female = yes
+	dynasty = 105861 #Tsepang
+	religion = "old_bon"
+	culture = "zhangzhung"
+	trait = zealous
+	father = 252002
+	742.1.1 = {
+		birth = yes
+	}
+	770.1.1 = {
+		religion = "lamaism"
+		remove_trait = zealous
+	} #forced to convert by her husband the Emperor
+	797.1.1 = {
+		religion = "old_bon"
+		add_trait = zealous
+	} #openly supports Bön faith again upon her husband's death
+	804.1.1 = {
+		death = yes
+	}
+}
+
+#Tibetan Vassal Zhangzhung Kings
+251999 = {
+	name = "Likmur"
+	dynasty = 105809 #Lig
+	religion = "old_bon" #Döl Bön “outbreak Bon” (rdol bon)
+	culture = "zhangzhung"
+	father = 247001
+	mother = 247002
+	644.1.1 = {
+		birth = yes
+	}
+	677.6.1 = {
+		death = yes
+	}
+}
+
+252000 = {
+	name = "Liknyashur"
+	dynasty = 105809 #Lig
+	religion = "old_bon" #Döl Bön “outbreak Bon” (rdol bon)
+	culture = "zhangzhung"
+	father = 251999
+	660.1.1 = {
+		birth = yes
+	}
+	686.1.1 = {
+		add_spouse = 247092
+	}#marriage arranged in 671
+	698.1.1 = {
+		death = yes
+	}
+}
+
+252001 = {
+	name = "Liknyikya"
+	dynasty = 105809 #Lig
+	religion = "old_bon"
+	culture = "zhangzhung"
+	father = 252000
+	mother = 247092
+	687.1.1 = {
+		birth = yes
+	}
+	747.1.1 = {
+		death = yes
+	}
+}
+
+252005 = {
+	name = "Likmigyal" #Last Zhangzhung King
+	dynasty = 105809 #Lig
+	religion = "old_bon"
+	culture = "zhangzhung"
+	trait = zealous
+	father = 252001
+	737.1.1 = {
+		birth = yes
+	}
+	753.1.1 = {
+		add_spouse = 252004
+	}
+	754.1.1 = {
+		add_concubine = 242405
+		effect = {
+			set_relation_friend = character:247342
+		}
+	}
+	764.1.1 = {
+		add_concubine = 252003
+		effect = {
+			set_relation_friend = character:247106
+			set_relation_friend = character:252002
+		}
+	}
+	768.1.1 = {
+		add_concubine = 247107
+	}
+	769.1.1 = {
+		effect = {
+			set_relation_rival = character:247105
+			set_relation_lover = character:242405
+			set_relation_friend = character:242405
+		}
+		add_pressed_claim = title:k_guge
+		add_pressed_claim = title:c_tsaparang
+		add_pressed_claim = title:c_kyunglung
+		add_pressed_claim = title:c_purang
+		add_pressed_claim = title:c_gegyai
+		add_pressed_claim = title:c_zhongba
+		add_pressed_claim = title:c_gar
+		add_pressed_claim = title:c_leh
+		add_pressed_claim = title:c_diskit
+		add_pressed_claim = title:d_purang
+		add_pressed_claim = title:d_ngari
+		add_pressed_claim = title:d_ladakh
+	}
+	770.1.1 = {
+		death = yes
+	}
+}
+
+252002 = {
+	name = "Gyalwa"
+	dynasty = 105861 #Tsepang
+	religion = "old_bon"
+	culture = "zhangzhung"
+	father = 252011
+	704.1.1 = {
+		birth = yes
+	}
+	770.1.1 = {
+		death = yes
+	}
+}
+
+252003 = {
+	name = "Zangza"
+	female = yes
+	dynasty = 105861 #Tsepang
+	religion = "old_bon"
+	culture = "zhangzhung"
+	father = 252002
+	744.1.1 = {
+		birth = yes
+	}
+	792.1.1 = {
+		death = yes
+	}
+}
+
+252004 = {
+	name = "Tshogyal"
+	female = yes
+	dynasty = 105860 #Khyung
+	religion = "old_bon"
+	culture = "zhangzhung"
+	trait = zealous
+	737.1.1 = {
+		birth = yes
+	}
+	784.1.1 = {
+		death = yes
+	}
+}
+
+247107 = {
+	name = "Dronglek"
+	female = yes
+	dynasty = 105899 #Nang
+	religion = "old_bon"
+	culture = "zhangzhung"
+	752.1.1 = {
+		birth = yes
+	}
+	795.1.1 = {
+		death = yes
+	}
+}
+
+252006 = {
+	name = "Tongyung_Tuchen" #preserved Bon traditions during the era of oppression under Trisong Detsen
+	dynasty = 105900 #Ngam
+	religion = "old_bon"
+	culture = "zhangzhung"
+	trait = zealous
+	725.1.1 = {
+		birth = yes
+	}
+	798.1.1 = {
+		death = yes
+	}
+}
+
+#Tsepang clan
+247074 = {
+	name = "Driza_TO_karma"
+	female = yes
+	dynasty = 105861 #Tsepang
+	religion = "old_bon" #Döl Bön “outbreak Bon” (rdol bon)
+	culture = "zhangzhung"
+	father = 252007
+	588.1.1 = {
+		birth = yes
+	}
+	645.1.1 = {
+		death = yes
+	}
+}
+252007 = {
+	name = "Damshe"
+	dynasty = 105861 #Tsepang
+	religion = "old_bon" #Döl Bön “outbreak Bon” (rdol bon)
+	culture = "zhangzhung"
+	550.1.1 = {
+		birth = yes
+	}
+	606.1.1 = {
+		death = yes
+	}
+}
+252008 = {
+	name = "Sehrigyer"
+	dynasty = 105861 #Tsepang
+	religion = "old_bon" #Döl Bön “outbreak Bon” (rdol bon)
+	culture = "zhangzhung"
+	father = 252007
+	590.1.1 = {
+		birth = yes
+	}
+	640.1.1 = {
+		death = yes
+	}
+}
+252009 = {
+	name = "Merutse"
+	dynasty = 105861 #Tsepang
+	religion = "old_bon" #Döl Bön “outbreak Bon” (rdol bon)
+	culture = "zhangzhung"
+	father = 252008
+	627.1.1 = {
+		birth = yes
+	}
+	695.1.1 = {
+		death = yes
+	}
+}
+252010 = {
+	name = "Bonchung"
+	dynasty = 105861 #Tsepang
+	religion = "old_bon"
+	culture = "zhangzhung"
+	father = 252009
+	653.1.1 = {
+		birth = yes
+	}
+	718.1.1 = {
+		death = yes
+	}
+}
+252011 = {
+	name = "Tribon"
+	dynasty = 105861 #Tsepang
+	religion = "old_bon"
+	culture = "zhangzhung"
+	father = 252010
+	677.1.1 = {
+		birth = yes
+	}
+	734.1.1 = {
+		death = yes
+	}
+}
+
+252027 = {
+	name = "Kyidagi"
+	female = yes
+	dynasty = 105809 #Lig
+	religion = "old_bon"
+	culture = "zhangzhung"
+	father = 252001
+	738.1.1 = {
+		birth = yes
+	}
+	783.1.1 = {
+		death = yes
+	}
+}
+
+#Moloso Kingdom Vassals of Tibetan Empire - fictional placeholders
+304809 = {
+	name = "Hrido"
+	dynasty = 2003041 #Moloso
+	religion = "old_bon"
+	culture = "zhangzhung"
+	640.1.1 = {
+		birth = yes
+	}
+	700.1.1 = {
+		death = yes
+	}
+}
+
+304810 = {
+	name = "Kyeshe"
+	dynasty = 2003041 #Moloso
+	religion = "old_bon"
+	culture = "zhangzhung"
+	father = 304809
+	660.1.1 = {
+		birth = yes
+	}
+	720.1.1 = {
+		death = yes
+	}
+}
+
+304811 = {
+	name = "Wal"
+	dynasty = 2003041 #Moloso
+	religion = "old_bon"
+	culture = "zhangzhung"
+	father = 304810
+	680.1.1 = {
+		birth = yes
+	}
+	740.1.1 = {
+		death = yes
+	}
+}
+
+304812 = {
+	name = "O_kar"
+	dynasty = 2003041 #Moloso
+	religion = "old_bon"
+	culture = "zhangzhung"
+	father = 304811
+	700.1.1 = {
+		birth = yes
+	}
+	760.1.1 = {
+		death = yes
+	}
+}
+
+304813 = {
+	name = "Muwer"
+	dynasty = 2003041 #Moloso
+	religion = "old_bon"
+	culture = "zhangzhung"
+	father = 304812
+	720.1.1 = {
+		birth = yes
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+
+304814 = {
+	name = "Pebon"
+	dynasty = 2003041 #Moloso
+	religion = "old_bon"
+	culture = "zhangzhung"
+	father = 304813
+	740.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+
+304815 = {
+	name = "Gyerme"
+	dynasty = 2003041 #Moloso
+	religion = "old_bon"
+	culture = "zhangzhung"
+	father = 304814
+	760.1.1 = {
+		birth = yes
+	}
+	820.1.1 = {
+		death = yes
+	}
+}
+
+
+#Rutog Vassals of Tibetan Empire - fictional placeholders
+304851 = {
+	name = "Pholha"
+	dynasty = 2003043 #Memar
+	religion = "old_bon"
+	culture = "zhangzhung"
+	740.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+
+304852 = {
+	name = "Mumar"
+	dynasty = 2003043 #Memar
+	religion = "old_bon"
+	culture = "zhangzhung"
+	father = 304851
+	760.1.1 = {
+		birth = yes
+	}
+	820.1.1 = {
+		death = yes
+	}
+}
+
+#Kannaura vassals - fictional placeholders
+304952 = {
+	name = "Narain"
+	dynasty = 2003046 #Kannaura
+	religion = "shaivism"
+	culture = "zhangzhung" #Kinnauri
+	740.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+
+304953 = {
+	name = "Gurag"
+	dynasty = 2003046 #Kannaura
+	religion = "shaivism"
+	culture = "zhangzhung" #Kinnauri
+	father = 304952
+	760.1.1 = {
+		birth = yes
+	}
+	820.1.1 = {
+		death = yes
+	}
+}
+
+#Mu (Changtang) vassals - fictional placeholders
+304982 = {
+	name = "Pholha"
+	dynasty = 2003047 #Mu
+	religion = "old_bon"
+	culture = "zhangzhung"
+	740.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+
+304983 = {
+	name = "Hripa"
+	dynasty = 2003047 #Mu
+	religion = "old_bon"
+	culture = "zhangzhung"
+	father = 304982
+	760.1.1 = {
+		birth = yes
+	}
+	820.1.1 = {
+		death = yes
+	}
+}
+
+#Gurib dynasty
+305012 = {
+	name = "BummE_"
+	dynasty = 2003048 #Gurib
+	religion = "old_bon"
+	culture = "zhangzhung"
+	680.1.1 = {
+		birth = yes
+	}
+	709.1.1 = {
+		add_spouse = 305013
+	}
+	740.1.1 = {
+		death = yes
+	}
+}
+
+305013 = {
+	name = "DrO_nnE_"
+	female = yes
+	dynasty = 2003049 #Mangor
+	religion = "old_bon"
+	culture = "zhangzhung"
+	690.1.1 = {
+		birth = yes
+	}
+	735.1.1 = {
+		death = yes
+	}
+}
+
+305014 = {
+	name = "Nangzher_LO_po" #renowned Bön sage
+	dynasty = 2003048 #Gurib
+	religion = "old_bon"
+	culture = "zhangzhung"
+	father = 305012
+	mother = 305013
+	710.1.1 = {
+		birth = yes
+	}
+	795.1.1 = {
+		death = yes
+	}
+}
+
+#Gurib dynasty - fictional placeholders
+305015 = {
+	name = "Dokchen"
+	dynasty = 2003048 #Gurib
+	religion = "old_bon"
+	culture = "zhangzhung"
+	father = 305012
+	mother = 305013
+	720.1.1 = {
+		birth = yes
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+
+305016 = {
+	name = "Zutse"
+	dynasty = 2003048 #Gurib
+	religion = "old_bon"
+	culture = "zhangzhung"
+	father = 305015
+	740.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+
+305017 = {
+	name = "Demdruk"
+	dynasty = 2003048 #Gurib
+	religion = "old_bon"
+	culture = "zhangzhung"
+	father = 305016
+	760.1.1 = {
+		birth = yes
+	}
+	820.1.1 = {
+		death = yes
+	}
+}
+
+#Drongpa dynasty - fictional placeholders
+305046 = {
+	name = "O_sel"
+	dynasty = 2003050 #Drongpa
+	religion = "old_bon"
+	culture = "zhangzhung"
+	740.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+
+305047 = {
+	name = "Takma"
+	dynasty = 2003050 #Drongpa
+	religion = "old_bon"
+	culture = "zhangzhung"
+	father = 305046
+	760.1.1 = {
+		birth = yes
+	}
+	820.1.1 = {
+		death = yes
+	}
+}
+
+#Nyima dynasty - fictional placeholders
+305321 = {
+	name = "Sangpo"
+	dynasty = 2003058 #Nyima
+	religion = "old_bon"
+	culture = "zhangzhung"
+	740.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+
+305322 = {
+	name = "Duddul"
+	dynasty = 2003058 #Nyima
+	religion = "old_bon"
+	culture = "zhangzhung"
+	father = 305321
+	760.1.1 = {
+		birth = yes
+	}
+	820.1.1 = {
+		death = yes
+	}
+}
+
+##################################################################################
+# 
+# FICTITIOUS PLACEHOLDERS
+# By Cybrxkhan
+# 
+##################################################################################
+
+zhangzhung_misc_01 = {
+	name = "Senggetram"
+	religion = "old_bon" #Döl Bön “outbreak Bon” (rdol bon)
+	culture = "zhangzhung"
+	502.8.11 = {
+		birth = yes
+	}
+	579.1.30 = {
+		death = yes
+	}
+}
+
+zhangzhung_misc_02 = {
+	name = "Dzomar"
+	religion = "old_bon" #Döl Bön “outbreak Bon” (rdol bon)
+	culture = "zhangzhung"
+	490.8.7 = {
+		birth = yes
+	}
+	537.11.26 = {
+		death = yes
+	}
+}
+
+zhangzhung_misc_03 = {
+	name = "Gyerpung"
+	religion = "old_bon" #Döl Bön “outbreak Bon” (rdol bon)
+	culture = "zhangzhung"
+	493.3.9 = {
+		birth = yes
+	}
+	551.3.12 = {
+		death = yes
+	}
+}
+
+zhangzhung_misc_04 = {
+	name = "Merutse"
+	religion = "old_bon" #Döl Bön “outbreak Bon” (rdol bon)
+	culture = "zhangzhung"
+	499.6.12 = {
+		birth = yes
+	}
+	549.8.17 = {
+		death = yes
+	}
+}
+
+zhangzhung_misc_05 = {
+	name = "Zijid"
+	religion = "old_bon" #Döl Bön “outbreak Bon” (rdol bon)
+	culture = "zhangzhung"
+	509.3.10 = {
+		birth = yes
+	}
+	572.4.6 = {
+		death = yes
+	}
+}
+
+zhangzhung_misc_06 = {
+	name = "Pholha"
+	religion = "old_bon" #Döl Bön “outbreak Bon” (rdol bon)
+	culture = "zhangzhung"
+	503.4.14 = {
+		birth = yes
+	}
+	582.10.10 = {
+		death = yes
+	}
+}
+
+

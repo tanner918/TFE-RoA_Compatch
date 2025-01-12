@@ -1,0 +1,1351 @@
+﻿
+# Visit a Roman Bathhouse
+# By Cybrxkhan
+TFE_visit_roman_bathhouse = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_roman_bath.dds"
+	}
+	decision_group_type = cultural
+
+	ai_check_interval = 36
+
+	cooldown = { days = 1825 } #1825
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					is_greek_or_roman = yes
+				}
+				desc = TFE_visit_roman_bathhouse_desc.roman
+			}
+			triggered_desc = {
+				trigger = {
+					is_greek_or_roman = no
+				}
+				desc = TFE_visit_roman_bathhouse_desc.not_roman
+			}
+		}
+	}
+	
+	is_shown = {
+		is_ruler = yes
+		is_landed_or_landless_administrative = yes
+		OR = {
+			is_greek_or_roman = yes
+			liege = {				
+				is_greek_or_roman = yes
+			}
+			capital_province = {				
+				is_greek_or_roman = yes
+			}
+		}
+	}
+	
+	is_valid = {
+		is_landed_or_landless_administrative = yes
+		OR = {
+			custom_description = {
+				text = TFE_roman_or_greek_background			
+				is_greek_or_roman = yes
+			}
+			custom_description = {
+				text = TFE_roman_or_greek_background_liege
+				liege = {
+					custom_description = {
+						text = TFE_roman_or_greek_background			
+						is_greek_or_roman = yes
+					}
+				}	
+			}
+			custom_description = {
+				text = TFE_roman_or_greek_background_capital		
+				capital_province = {
+					is_greek_or_roman = yes
+				}	
+			}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_available_adult = yes
+	}
+
+	effect = {
+
+		if = {
+			limit = {
+				culture = {
+					has_cultural_tradition = tradition_roman_architecture
+				}
+			}
+			custom_tooltip = TFE_visit_roman_bathhouse_effect_tooltip_1
+		}
+
+		if = {
+			limit = {
+				is_greek_or_roman = no
+			}
+			custom_tooltip = TFE_visit_roman_bathhouse_effect_tooltip_2
+		}
+
+		if = {
+			limit = {
+				any_realm_county = {
+					roman_bathhouse_recently_built_trigger = yes
+				}
+			}
+			custom_tooltip = TFE_visit_roman_bathhouse_effect_tooltip_3
+		}
+
+		show_as_tooltip = {
+			TFE_bathhouse_decision_effect = yes
+		}
+
+		trigger_event = {
+			id = TFE_minor_decisions.0001
+		}
+	}
+
+	# cost = { 
+	# 	#gold = { value = minor_gold_value } # Will depend 
+	# 	prestige = { value = medium_prestige_value } 
+	# }	
+
+	ai_potential = {
+		short_term_gold >= TFE_minor_flavor_activity_cost
+	}
+
+	ai_will_do = {
+		base = 55
+		modifier = {
+			add = 10
+			has_trait = lustful
+		}
+		modifier = {
+			add = -10
+			has_trait = lazy
+		}
+		modifier = {
+			add = 10
+			has_trait = gregarious
+		}
+		modifier = {
+			add = -10
+			has_trait = shy
+		}
+		modifier = {
+			add = -25
+			is_greek_or_roman = no
+		}
+	}
+}
+
+# Build a Roman Bathhouse
+# By Cybrxkhan
+TFE_build_roman_bathhouse = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_roman_bath.dds"
+	}
+	decision_group_type = cultural
+
+	ai_check_interval = 64
+
+	cooldown = { days = 1825 } #1825
+	
+	desc = TFE_build_roman_bathhouse_desc
+	
+	is_shown = {
+		is_ruler = yes
+		is_landed_or_landless_administrative = yes
+		is_greek_or_roman = yes
+	}
+	
+	is_valid = {
+		is_landed_or_landless_administrative = yes
+		custom_description = {
+			text = TFE_roman_or_greek_background			
+			is_greek_or_roman = yes
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_available_adult = yes
+	}
+
+	minimum_cost = {
+		gold = roman_bathhouse_cost_base_value
+	}
+
+	effect = {
+
+		custom_tooltip = TFE_build_roman_bathhouse_effect_tooltip_1
+		custom_tooltip = TFE_build_roman_bathhouse_effect_tooltip_2
+		custom_tooltip = TFE_build_roman_bathhouse_effect_tooltip_3
+
+		if = {
+			limit = {
+				culture = {
+					has_cultural_tradition = tradition_roman_architecture
+				}
+			}
+			custom_tooltip = TFE_build_roman_bathhouse_effect_tooltip_4
+		}
+
+		if = {
+			limit = {
+				capital_province = {
+					is_greek_or_roman = yes				
+				}
+			}
+			custom_tooltip = TFE_build_roman_bathhouse_effect_tooltip_5
+		}
+
+		trigger_event = {
+			id = TFE_minor_decisions.0002
+		}
+	}
+
+	ai_potential = {
+		short_term_gold >= roman_bathhouse_cost_base_value
+	}
+
+	ai_will_do = {
+		base = 30
+		modifier = {
+			add = 10
+			has_trait = diligent
+		}
+		modifier = {
+			add = -10
+			has_trait = lazy
+		}
+		modifier = {
+			add = 10
+			has_trait = ambitious
+		}
+		modifier = {
+			add = -10
+			has_trait = callous
+		}
+		modifier = {
+			add = -15
+			is_greek_or_roman = no
+		}
+	}
+}
+
+# Consecrate a Holy Well
+# By Cybrxkhan
+TFE_consecrate_holy_well = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_roman_city.dds"
+	}
+	decision_group_type = cultural
+
+	ai_check_interval = 64
+
+	#cooldown = { days = 1825 } #1825
+	
+	desc = TFE_consecrate_holy_well_desc
+	
+	is_shown = {
+		is_landed_or_landless_administrative = yes
+		NOT = {
+			any_directly_owned_province = {
+				county = {
+					OR = {
+						has_county_modifier = TFE_holy_well_level_1
+						has_county_modifier = TFE_holy_well_level_2
+						has_county_modifier = TFE_holy_well_level_3
+					}
+				}
+			}
+		}
+		culture = {
+			has_cultural_tradition = tradition_sacred_springs
+		}
+	}
+	
+	is_valid = {
+		is_landed = yes
+		culture = {
+			has_cultural_tradition = tradition_sacred_springs
+		}
+		custom_description = {
+			text = TFE_no_holy_well_county
+			NOT = {
+				any_directly_owned_province = {
+					county = {
+						OR = {
+							has_county_modifier = TFE_holy_well_level_1
+							has_county_modifier = TFE_holy_well_level_2
+							has_county_modifier = TFE_holy_well_level_3
+						}
+					}
+				}
+			}	
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_available_adult = yes
+	}
+
+	cost = {
+		gold = TFE_basic_activity_cost
+		prestige = medium_prestige_value
+	}
+
+	effect = {
+
+		custom_tooltip = TFE_consecrate_holy_well_effect_tooltip_1
+		custom_tooltip = TFE_consecrate_holy_well_effect_tooltip_2
+		custom_tooltip = TFE_consecrate_holy_well_effect_tooltip_3
+
+		trigger_event = {
+			id = TFE_minor_decisions.0003
+		}
+	}
+
+	ai_potential = {
+		short_term_gold >= TFE_basic_activity_cost
+	}
+
+	ai_will_do = {
+		base = 30
+		modifier = {
+			add = 10
+			has_trait = zealous
+		}
+		modifier = {
+			add = -10
+			has_trait = cynical
+		}
+		modifier = {
+			add = 10
+			has_trait = ambitious
+		}
+		modifier = {
+			add = -10
+			has_trait = lazy
+		}
+	}
+}
+
+# Visit a Holy Well
+# By Cybrxkhan
+TFE_visit_holy_well = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_roman_city.dds"
+	}
+	decision_group_type = cultural
+
+	ai_check_interval = 64
+
+	cooldown = { days = 3650 } #1825
+	
+	desc = TFE_visit_holy_well_desc
+	
+	is_shown = {
+		is_landed_or_landless_administrative = yes
+		any_directly_owned_province = {
+			county = {
+				OR = {
+					has_county_modifier = TFE_holy_well_level_1
+					has_county_modifier = TFE_holy_well_level_2
+					has_county_modifier = TFE_holy_well_level_3
+				}
+			}
+		}
+		culture = {
+			has_cultural_tradition = tradition_sacred_springs
+		}
+		NOT = {
+			any_owned_story = {
+				story_type = story_TFE_visit_holy_well
+			}
+		}
+	}
+	
+	is_valid = {
+		culture = {
+			has_cultural_tradition = tradition_sacred_springs
+		}
+		custom_description = {
+			text = TFE_yes_holy_well_county
+			any_directly_owned_province = {
+				county = {
+					OR = {
+						has_county_modifier = TFE_holy_well_level_1
+						has_county_modifier = TFE_holy_well_level_2
+						has_county_modifier = TFE_holy_well_level_3
+					}
+				}
+			}	
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_available_adult = yes
+	}
+
+	cost = {
+		gold = TFE_basic_activity_cost
+	}
+
+	effect = {
+
+		custom_tooltip = TFE_visit_holy_well_effect_tooltip_1
+		custom_tooltip = TFE_visit_holy_well_effect_tooltip_2
+
+		add_character_flag = planning_an_activity
+		if = {
+			limit = {
+				any_directly_owned_province = {
+					county = {
+						has_county_modifier = TFE_holy_well_level_3
+					}
+				}
+			}			
+			random_directly_owned_province = {
+				limit = {
+					county = {
+						has_county_modifier = TFE_holy_well_level_3
+					}
+				}
+				county = {
+					root = {
+						set_variable = {
+							name = county_well
+							value = PREV
+						}
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				any_directly_owned_province = {
+					county = {
+						has_county_modifier = TFE_holy_well_level_2
+					}
+				}
+			}			
+			random_directly_owned_province = {
+				limit = {
+					county = {
+						has_county_modifier = TFE_holy_well_level_2
+					}
+				}
+				county = {
+					root = {
+						set_variable = {
+							name = county_well
+							value = PREV
+						}
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				any_directly_owned_province = {
+					county = {
+						has_county_modifier = TFE_holy_well_level_1
+					}
+				}
+			}			
+			random_directly_owned_province = {
+				limit = {
+					county = {
+						has_county_modifier = TFE_holy_well_level_1
+					}
+				}
+				county = {
+					root = {
+						set_variable = {
+							name = county_well
+							value = PREV
+						}
+					}
+				}
+			}
+		}
+		# Failsafe in case there's no appropriate county
+		else = {
+			root = {
+				set_variable = {
+					name = county_well
+					value = capital_county
+				}
+			}
+		}
+		create_story = story_TFE_visit_holy_well
+	}
+
+	ai_potential = {
+		short_term_gold >= 50
+	}
+
+	ai_will_do = {
+		base = 30
+		modifier = {
+			add = 10
+			has_trait = zealous
+		}
+		modifier = {
+			add = -10
+			has_trait = cynical
+		}
+		modifier = {
+			add = 10
+			has_trait = diligent
+		}
+		modifier = {
+			add = -10
+			has_trait = lazy
+		}
+	}
+}
+
+# Expel Christians From Yemen 
+# By Wrench The Cool Boi
+
+TFE_expel_christians_yemen = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+	}
+	decision_group_type = religious
+
+	ai_check_interval = 120
+	desc = TFE_expel_christians_yemen_desc
+	
+	is_shown = {
+		is_landed_or_landless_administrative = yes
+		has_title = title:k_yemen
+		any_realm_county = {
+			AND = {
+				exists = faith
+				faith.religion = religion:christianity_religion 
+				kingdom = title:k_yemen
+			}
+		}
+		NOT = {
+			AND = {
+				exists = faith
+				faith.religion = religion:christianity_religion 
+			}
+		}
+		NOT = {  #Can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:TFE_expel_christians_yemen
+			}
+		}
+	}
+	
+	is_valid = {
+		is_landed = yes
+		piety_level >= 3
+		any_realm_county = {
+			AND = {
+				faith.religion = religion:christianity_religion 
+				kingdom = title:k_yemen
+			}
+		}
+		NOT = {
+			faith.religion = religion:christianity_religion 
+		}
+		is_independent_ruler = yes
+	}
+
+	minimum_cost = {
+		gold = 500
+		piety = 300
+	}
+
+	effect = {
+		custom_tooltip = yemen_realm_switch_faiths
+		hidden_effect = {
+			every_realm_county = {
+				limit = {
+					AND = {
+						exists = faith
+						faith.religion = religion:christianity_religion 
+						kingdom = title:k_yemen
+					}
+				}
+				change_county_control = -50
+				random = {
+					chance = 75
+					set_county_faith = root.faith
+				}
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					exists = title:k_abyssinia.holder 
+					title:k_abyssinia.holder = {
+						AND = {
+							exists = faith
+							faith.religion = religion:christianity_religion 
+							is_independent_ruler = yes
+						}
+
+					}
+				}
+			}
+			custom_tooltip = TFE_expel_christians_yemen_tooltip
+			title:k_abyssinia.holder = {
+				trigger_event = TFE_flavour_events.0005
+			}
+		}
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:TFE_expel_christians_yemen
+			}
+		}
+	}
+
+	ai_will_do = {
+		base = 60
+	}
+}
+
+# Build the great wall of gorgan
+# By Wrench The Cool Boi
+
+TFE_build_the_wall_of_gorgan = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_ctesiphon.dds"
+	}
+
+	ai_check_interval = 120
+	desc = TFE_build_the_wall_of_gorgan_desc
+	
+	is_shown = {
+		is_landed_or_landless_administrative = yes
+		NOT = {  #Can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:TFE_build_the_wall_of_gorgan
+			}
+		}
+		has_title = title:e_persia
+
+
+	}
+	
+	is_valid = {
+		stewardship >= 7
+		martial >= 10
+		employs_court_position = royal_architect_court_position
+		completely_controls_region = region_gurgan_wall
+	}
+
+	minimum_cost = {
+		gold = 600
+	}
+
+	effect = {
+		custom_tooltip = TFE_build_the_wall_of_gorgan_tp
+		title:b_gurgan.title_province = {
+			add_special_building_slot = great_gurgan_wall
+		}
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:TFE_build_the_wall_of_gorgan
+			}
+		}
+	}
+
+	ai_will_do = {
+		base = 60
+	}
+}
+
+
+
+
+# TFE variation of Qanat decision from RICE
+TFE_build_a_new_qanat = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_qanat.dds"
+	}
+	decision_group_type = cultural
+
+	ai_check_interval = 36
+
+	cooldown = { days = 7300 }
+	
+	desc = TFE_build_a_new_qanat_desc
+	
+	is_shown = {
+		is_landed_or_landless_administrative = yes
+		highest_held_title_tier > tier_barony
+		culture = {
+			has_innovation = innovation_RICE_qanats
+		}
+		capital_province = {
+			geographical_region = TFE_qanat_region
+		}
+	}
+	
+	is_valid = {
+		is_landed = yes
+		culture = {
+			has_innovation = innovation_RICE_qanats
+		}
+		#OR = {
+			gold >= 50
+		#	AND = {
+		#		is_target_in_global_variable_list = {
+		#			name = unavailable_unique_decisions
+		#			target = flag:RICE_yazd_expand_infrastructure_flag
+		#		}		
+		#		has_title = title:c_yazd
+		#		gold >= 40
+		#	}
+		#}
+		custom_description = {
+			text = TFE_decision_qanat_requirement
+			capital_province = {
+				geographical_region = TFE_qanat_region
+			}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_available_adult = yes
+	}
+
+	effect = {
+	
+		# hidden_effect = {
+		# 	title:c_yazd = { save_scope_as = yazd_county }
+		# }	
+	
+		custom_tooltip = TFE_build_a_new_qanat_effect_tooltip_1
+		
+		if = {
+			limit = {
+				culture = { has_cultural_parameter = unlock_tfe_cheaper_qanats }		
+			}
+			custom_tooltip = TFE_build_a_new_qanat_effect_tooltip_3		
+			custom_tooltip = TFE_build_a_new_qanat_effect_tooltip_4		
+		}
+		else = {
+			custom_tooltip = TFE_build_a_new_qanat_effect_tooltip_2		
+		}
+		
+		# if = {
+		# 	limit = {
+		# 		has_game_rule = RICE_historical_context_on
+		# 	}
+		# 	custom_tooltip = TFE_build_a_new_qanat_context_tooltip
+		# }
+		
+		trigger_event = {
+			id = TFE_minor_decisions.0005
+		}
+	}
+
+	#cost = { 
+	#	#gold = { value = 50 } # Will depend 
+	#}	
+
+	ai_potential = {
+		short_term_gold >= 50
+	}
+
+	ai_will_do = {
+		base = 25
+		modifier = {
+			add = 10
+			has_trait = diligent
+		}
+		modifier = {
+			add = -10
+			has_trait = lazy
+		}
+		modifier = {
+			add = 10
+			has_trait = generous
+		}
+		modifier = {
+			add = -10
+			has_trait = greedy
+		}
+		modifier = {
+			add = 10
+			has_trait = compassionate
+		}
+		modifier = {
+			add = -10
+			has_trait = callous
+		}
+		modifier = {
+			add = 10
+			has_trait = just
+		}
+		modifier = {
+			add = -10
+			has_trait = arbitrary
+		}
+	}
+}
+
+
+
+
+TFE_ghana_funeral_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	}
+	decision_group_type = religious
+	
+	desc = TFE_ghana_funeral_decision_desc
+	selection_tooltip = TFE_ghana_funeral_decision_tooltip
+
+	is_shown = {
+		is_landed_or_landless_administrative = yes
+		culture = { has_cultural_pillar = heritage_sahelian }
+		OR = {
+			faith.religion = { is_in_family = rf_pagan }
+			faith = {
+				OR = {					
+					has_doctrine = unreformed_faith_doctrine
+					has_doctrine = tenet_unreformed_syncretism
+				}
+			}
+		}
+		has_variable = TFE_ghana_burial_ancestor
+		# has_variable = ancestor_to_bury
+	}
+
+	is_valid = {
+		culture = { has_cultural_pillar = heritage_sahelian }
+		OR = {
+			faith.religion = { is_in_family = rf_pagan }
+			faith = {
+				OR = {					
+					has_doctrine = unreformed_faith_doctrine
+					has_doctrine = tenet_unreformed_syncretism
+				}
+			}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+
+	}
+
+	effect = {
+		show_as_tooltip = {
+			add_piety = major_piety_value
+			if = {
+				limit = {
+					any_vassal = {
+						culture = { has_cultural_pillar = heritage_sahelian }
+						OR = {
+							custom_description = {
+								text = TFE_decision_pagan_requirement
+								faith.religion = { is_in_family = rf_pagan }
+							}
+							faith = {
+								OR = {					
+									has_doctrine = unreformed_faith_doctrine
+									has_doctrine = tenet_unreformed_syncretism
+								}
+							}
+						}
+					}
+				}
+				every_vassal = {
+					limit = {
+						culture = { has_cultural_pillar = heritage_sahelian }
+						faith.religion = { is_in_family = rf_pagan }
+					}
+					custom = TFE_ghana_burial_vassals
+					add_opinion = {
+						modifier = pleased_opinion
+						target = root
+						opinion = 20
+					}
+				}
+			}
+			every_vassal = {
+				limit = {
+					faith.religion = { is_in_family = rf_pagan }
+				}
+				custom = TFE_ghana_burial_vassals
+				add_opinion = {
+					modifier = pleased_opinion
+					target = root
+					opinion = 20
+				}
+			}
+			every_vassal = {
+				limit = {
+					NOT = { faith.religion = { is_in_family = rf_pagan } }
+				}
+				custom = TFE_ghana_burial_vassals_bad
+				add_opinion = {
+					modifier = disgusted_opinion
+					target = root
+					opinion = -20
+				}
+			}
+		}
+		custom_tooltip = TFE_ghana_funeral_decision_effect_tooltip_1
+		custom_tooltip = TFE_ghana_funeral_decision_effect_tooltip_2
+		trigger_event = TFE_africa.0002
+	}
+
+	ai_check_interval = 36
+	cooldown = { months = 12 }
+	
+	cost = { 
+		gold = { value = TFE_minor_flavor_activity_cost } # Will depend 
+	}	
+
+	ai_potential = {
+		short_term_gold >= TFE_minor_flavor_activity_cost
+	}
+
+	#ai_potential = {
+	#	always = yes
+	#}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+TFE_form_illyrian_pirate_empire_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_roman_palace.dds"
+	}
+	decision_group_type = major
+
+	desc = TFE_form_illyrian_pirate_empire_decision_desc
+	selection_tooltip = TFE_form_illyrian_pirate_empire_decision_tooltip
+
+	ai_check_interval = 360
+
+	is_shown = {
+		is_landed_or_landless_administrative = yes
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:TFE_form_illyrian_pirate_empire_decision
+			}
+		}
+		capital_county = {
+			title_province = {
+				geographical_region = region_pirate_illyria_greater
+			}
+		}
+		highest_held_title_tier < tier_empire
+		culture = {
+			OR = {
+				THIS = culture:illyrian
+				any_parent_culture_or_above = {
+					this = culture:illyrian
+				}
+			}
+		}
+		has_game_rule = fictional_larp_enabled
+		NOT = {
+			culture = { has_cultural_era_or_later = culture_era_early_medieval }
+		}
+	}
+
+	is_valid = {
+		is_landed = yes
+		is_independent_ruler = yes
+		prestige_level >= high_prestige_level
+		completely_controls_region = region_pirate_illyria
+		highest_held_title_tier < tier_empire
+		dread >= 40
+		gold >= 1000
+		NOT = {
+			culture = { has_cultural_era_or_later = culture_era_early_medieval }
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_available_adult = yes
+	}
+
+	cost = {
+		gold = 500
+		prestige = 500
+	}
+
+	effect = {
+		custom_tooltip = TFE_fictional_larp_warning_tooltip
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:TFE_form_illyrian_pirate_empire_decision
+		}
+		custom_tooltip = TFE_form_illyrian_pirate_empire_decision_tooltip.a
+		custom_tooltip = TFE_form_illyrian_pirate_empire_decision_tooltip.b
+		show_as_tooltip = {
+			add_dread = 100
+			dynasty = {
+				add_dynasty_modifier = pirates_of_illyria
+			}
+			get_title = title:e_illyria_pirate
+			culture = {
+				add_culture_tradition = tradition_pirate_kings
+			}
+		}
+		hidden_effect = {
+			every_county_in_region = {
+				region = region_pirate_illyria_greater
+				limit = {
+					AND = {
+						holder.top_liege = root
+						NOT = {
+							empire = title:e_illyria_pirate
+						}
+						root = {
+							completely_controls = PREV.duchy
+						}
+					}
+				}
+				kingdom = {
+					set_de_jure_liege_title = title:e_illyria_pirate
+				}
+			}
+		}
+		trigger_event = TFE_flavour_events.0016
+	}
+	
+}
+
+
+
+# Get a protective/apotropaic religious tattoo
+# By Cybrxkhan
+# Based on suggestions/research by Luthien and Flaviusnubel
+TFE_east_african_tattoo_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_desert_village.dds"
+	}
+	decision_group_type = cultural
+
+	desc = TFE_east_african_tattoo_decision_desc
+
+	ai_check_interval = 36
+
+	cooldown = { days = 3650 } 
+
+	is_shown = {
+		is_playable_character = yes
+		OR = {
+			culture = { has_cultural_pillar = heritage_kemetic }
+			culture = { has_cultural_pillar = heritage_east_african }
+		}
+	}
+	
+	is_valid = {
+		OR = {
+			culture = { has_cultural_pillar = heritage_kemetic }
+			culture = { has_cultural_pillar = heritage_east_african }
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_available_adult = yes
+	}
+
+	effect = {
+
+		show_as_tooltip = {
+			TFE_east_african_tattoo_decision_effect = yes
+		}
+
+		trigger_event = {
+			id = TFE_minor_decisions.0020
+		}
+	}
+
+	cost = { 
+		gold = { value = TFE_minor_flavor_activity_cost } # Will depend 
+		#prestige = { value = medium_prestige_value } 
+	}	
+
+	ai_potential = {
+		short_term_gold >= TFE_minor_flavor_activity_cost
+	}
+
+	ai_will_do = {
+		base = 40
+		modifier = {
+			add = 10
+			has_trait = zealous
+		}
+		modifier = {
+			add = -10
+			has_trait = cynical
+		}
+	}
+}
+
+############################################################
+# 
+# ADAPTED FROM RICE
+# 
+############################################################
+TFE_india_irrigation_tank_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_indian_pond.dds"
+	}
+	decision_group_type = cultural
+
+	desc = TFE_india_irrigation_tank_decision_desc
+
+	ai_check_interval = 48
+
+	cooldown = { days = 3650 }
+
+	is_shown = {
+		highest_held_title_tier > tier_barony
+		is_landed_or_landless_administrative = yes
+		OR = {
+			capital_province = {
+				geographical_region = world_india
+			}
+			culture = {			
+				has_innovation = innovation_RICE_irrigation_tanks
+			}
+
+		}	
+	}
+
+	is_valid = {
+		is_landed = yes
+		culture = {			
+			has_innovation = innovation_RICE_irrigation_tanks
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_available_adult = yes
+	}
+
+	minimum_cost = {
+		gold = TFE_irrigation_tank_small_cost
+	}
+
+	effect = {
+		
+		custom_tooltip = TFE_india_irrigation_tank_decision_effect_tooltip_1
+		custom_tooltip = TFE_india_irrigation_tank_decision_effect_tooltip_2
+
+		if = {
+			limit = {
+				culture = { has_cultural_parameter = unlock_rice_wewa_irrigation_tank_effects }
+			}
+			custom_tooltip = TFE_india_irrigation_tank_decision_effect_tooltip_3
+		}
+
+		if = {
+			limit = {
+				culture = { has_cultural_parameter = unlock_rice_stepwell_irrigation_tank_effects }
+			}
+			custom_tooltip = TFE_india_irrigation_tank_decision_effect_tooltip_4
+		}
+
+		# DO NOT REMOVE, THIS IS NEEDED FOR COMPATIBILITY WITH RICE EVEN THOUGH IT DOESN'T DO ANYTHING IN TFE!
+		if = {
+			limit = {
+				is_RICE_loaded = yes
+				RICE_sri_lanka_can_access_most_sangha_mechanics_trigger = yes			
+			}
+			custom_tooltip = RICE_india_irrigation_tank_decision_effect_tooltip_5
+		}
+
+		trigger_event = TFE_minor_decisions.0012
+	}
+
+	ai_will_do = {
+		base = 30
+
+		modifier = {
+			add = 10
+			has_trait = ambitious
+		}
+		modifier = {
+			add = -10
+			has_trait = greedy
+		}
+		modifier = {
+			add = 10
+			has_trait = diligent
+		}
+		modifier = {
+			add = -10
+			has_trait = lazy
+		}
+
+	}
+}
+
+TFE_raid_china_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_steppe_feast.dds"
+	}
+
+	desc = TFE_raid_china_decision_desc
+	selection_tooltip = TFE_raid_china_decision_tooltip
+	ai_check_interval = 120
+	cooldown = { days = 3650 }
+
+	is_shown = {
+		OR = {
+			capital_province = {
+				geographical_region = world_steppe_east
+			}
+			capital_province = {
+				geographical_region = world_tibet
+			}
+		}	
+	}
+
+	is_valid = {
+		#government_has_flag = government_is_tribal
+		custom_tooltip = {
+			text = nomad_or_tribal_china_raid_tt
+			OR = {
+				has_government = nomadic_government
+				has_government = tribal_government
+			}
+		}
+		short_term_gold >= 100
+		prestige_level >= 2
+	}
+
+	is_valid_showing_failures_only = {
+		is_available_adult = yes
+		is_at_war = no
+	}
+
+	effect = {
+		custom_tooltip = TFE_raid_china_decision_effect_tooltip_1
+		custom_tooltip = TFE_raid_china_decision_effect_tooltip_2
+		custom_tooltip = TFE_raid_china_decision_effect_tooltip_3
+		trigger_event = TFE_minor_decisions.0014
+	}
+
+	ai_will_do = {
+		base = 40
+		modifier = {
+			add = 10
+			has_trait = ambitious
+		}
+		modifier = {
+			add = 10
+			has_trait = greedy
+		}
+		modifier = {
+			add = 10
+			has_trait = brave
+		}
+		modifier = {
+			add = -10
+			has_trait = lazy
+		}
+		modifier = {
+			add = -10
+			has_trait = craven
+		}
+		modifier = {
+			add = -10
+			has_trait = content
+		}
+	}
+}
+
+dharma_raise_hero_stone_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/fp1_decision_raise_runestone.dds"
+	}
+	decision_group_type = cultural
+	
+	title = dharma_raise_hero_stone_decision_name
+	desc = raise_hero_stone_decision_desc
+	selection_tooltip = raise_hero_stone_decision_tooltip
+
+	cooldown = { years = 10 }
+	
+	is_shown = {
+		has_fp1_dlc_trigger = yes
+		# Landed characters only: nobody likes a mercenary.
+		is_landed_or_landless_administrative = yes
+		primary_title.tier > tier_barony
+		# Holds a suitable culture 
+		culture = { has_cultural_parameter = hero_stones }
+	}
+
+	is_valid = {
+		is_landed = yes
+		custom_description = {
+			text = dharma_hero_stone_decision_knight
+			OR = {
+				has_variable=hero1
+				has_variable=hero2
+				has_variable=hero3
+				has_variable=hero4
+				has_variable=hero5
+				has_variable=hero7
+				has_variable=hero8
+				has_variable=hero9
+				has_variable=hero6
+				has_variable=hero10
+			}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		# Standard checks.
+		is_adult = yes
+	
+	}
+
+	cost = { gold = raise_stele_gold_cost }
+
+	effect = {
+		# Save the gold value for refund purposes.
+		set_variable = {
+			name = raise_stele_refund
+			value = raise_stele_gold_cost
+		}
+		# Generic effects.
+		#show_as_tooltip = { 
+		#	dharma_hero_stone_bonuses_effect = yes 
+		#}
+		# Show type effects.
+		custom_tooltip = dharma_hero_stone_decision_tt.effects_list
+		# Moved ahead to selection.
+		trigger_event = dharma_dravidian.001
+	}
+
+	ai_check_interval = 36
+	
+	ai_potential = {
+		# Only take it if you can afford it.
+		short_term_gold >= raise_stele_gold_cost
+	}
+
+	ai_will_do = {
+		# We don't want too many Hero Stones all over the place.
+		base = 50
+	}
+}

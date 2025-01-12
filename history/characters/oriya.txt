@@ -1,0 +1,1398 @@
+﻿#Additional Banas
+191295 = {
+	name = "Nandivarman"
+	dynasty = 1043014
+	religion = "pashupata"
+	culture = "gond"
+	740.1.1 = {
+		birth = yes
+	}
+	810.1.1 = {
+		death = yes
+	}
+}
+
+#Nagavamsis of Cakrakota:
+191243 = {
+	name = "Vallabharaja"
+	dynasty = 1044332
+	religion = "pashupata"
+	culture = "oriya"
+	740.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+
+191244 = {
+	name = "Rajamalla"
+	dynasty = 1044332
+	religion = "pashupata"
+	culture = "oriya"
+	father = 191243
+	760.1.1 = {
+		birth = yes
+	}
+	850.1.1 = {
+		death = yes
+	}
+}
+
+191294 = {
+	name = "Ramachandra"
+	dynasty = 1044333	#Nagas of Kawardha
+	religion = "pashupata"
+	culture = "gond"
+	700.1.1 = {
+		birth = yes
+	}
+	730.1.1 = {
+		add_spouse = 191262
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+
+191263 = {
+	name = "Ahiraja"
+	dynasty = 1044333	#Nagas of Kawardha	
+	religion = "pashupata"
+	culture = "gond"
+	father = 191294
+	mother = 191262
+	750.1.1 = {
+		birth = yes
+	}
+	820.1.1 = {
+		death = yes
+	}
+}
+
+191264 = {
+	name = "Rajalla"
+	dynasty = 1044333	#Nagas of Kawardha	
+	religion = "pashupata"
+	culture = "gond"
+	father = 191263
+	770.1.1 = {
+		birth = yes
+	}
+	860.1.1 = {
+		death = yes
+	}
+}
+
+# 191304 = {
+# 	name = "Sailodbhava"
+# 	dynasty = 1044314	#Sailodbhavas
+# 	religion = "mahayana"
+# 	culture = "oriya"
+# 	640.1.1 = {
+# 		birth = yes
+# 	}
+# 	680.1.1 = {
+# 		death = yes
+# 	}
+# }
+
+# 191305 = {
+# 	name = "Ranabhita"
+# 	dynasty = 1044314	#Sailodbhavas
+# 	religion = "mahayana"
+# 	culture = "oriya"
+# 	father = 191304
+# 	680.1.1 = {
+# 		birth = yes
+# 	}
+# 	750.1.1 = {
+# 		death = yes
+# 	}
+# }
+
+# 191306 = {
+# 	name = "Sainyabhita"
+# 	dynasty = 1044314	#Sailodbhavas
+# 	religion = "mahayana"
+# 	culture = "oriya"
+# 	father = 191305
+# 	720.1.1 = {
+# 		birth = yes
+# 	}
+# 	790.1.1 = {
+# 		death = yes
+# 	}
+# }
+
+
+#New for Oriya.txt:
+
+191169 = {
+	name = "Ksemankaradeva"
+	dynasty = 1043013
+	religion = "mahayana"
+	culture = "oriya"
+	700.1.1 = {
+		birth = yes
+	}
+	756.1.1 = {
+		death = yes
+	}
+}
+
+191170 = {
+	name = "Sivakaradeva"	#I
+	dynasty = 1043013
+	religion = "mahayana"
+	culture = "oriya"
+	father = 191169
+	730.1.1 = {
+		birth = yes
+	}
+	790.1.1 = {
+		death = yes
+	}
+}
+
+191171 = {
+	name = "Subhakaradeva"	#I
+	dynasty = 1043013
+	religion = "mahayana"
+	culture = "oriya"
+	father = 191170
+	750.1.1 = {
+		birth = yes
+	}
+	809.1.1 = {
+		death = yes
+	}
+}
+
+191172 = {
+	name = "Sivakaradeva" #II
+	dynasty = 1043013
+	religion = "krishnaism"
+	culture = "oriya"
+	father = 191171
+	766.1.1 = {
+		birth = yes
+	}
+	820.1.1 = {
+		death = yes
+	}
+}
+
+191182 = {
+	name = "Silabhanja"
+	dynasty = 1029197
+	religion = "krishnaism"
+	culture = "oriya"
+	720.1.1 = {
+		birth = yes
+	}
+	760.1.1 = {
+		death = yes
+	}
+}
+
+191183 = {
+	name = "Satrubhanja"
+	dynasty = 1029197
+	father = 191182
+	religion = "krishnaism"
+	culture = "oriya"
+	740.1.1 = {
+		birth = yes
+	}
+	830.1.1 = {
+		death = yes
+	}
+}
+
+#Eastern Gangas:
+
+191188 = {
+	name = "Indravarma"
+	dynasty = 1029195
+	religion = "krishnaism"
+	culture = "kannada"
+	trait = brahmin
+	460.1.1 = {
+		birth = yes
+	}
+	534.1.1 = {
+		death = yes
+	}
+}
+
+191189 = {
+	name = "Maharajendravarma"
+	dynasty = 1029195
+	father = 191188
+	religion = "krishnaism"
+	culture = "kannada"
+	trait = brahmin
+	480.1.1 = {
+		birth = yes
+	}
+	560.1.1 = {
+		death = yes
+	}
+}
+
+191190 = {
+	name = "Mahasmantavarma"
+	dynasty = 1029195
+	father = 191189
+	religion = "krishnaism"
+	culture = "kannada"
+	trait = brahmin
+	500.1.1 = {
+		birth = yes
+	}
+	575.1.1 = {
+		death = yes
+	}
+}
+
+191191 = {
+	name = "Hastivarma"
+	dynasty = 1029195
+	father = 191190
+	religion = "krishnaism"
+	culture = "kannada"
+	trait = brahmin
+	520.1.1 = {
+		birth = yes
+	}
+	587.1.1 = {
+		death = yes
+	}
+}
+
+191192 = {
+	name = "Indravarma"
+	dynasty = 1029195
+	father = 191191
+	religion = "krishnaism"
+	culture = "kannada"
+	trait = brahmin
+	540.1.1 = {
+		birth = yes
+	}
+	587.1.1 = {
+		death = yes
+	}
+}
+
+191193 = {
+	name = "Mitravarma"
+	dynasty = 1029195
+	father = 191192
+	religion = "krishnaism"
+	culture = "kannada"
+	trait = brahmin
+	560.1.1 = {
+		birth = yes
+	}
+	624.1.1 = {
+		death = yes
+	}
+}
+
+191194 = {
+	name = "Indravarma"
+	dynasty = 1029195
+	father = 191193
+	religion = "krishnaism"
+	culture = "kannada"
+	trait = brahmin
+	580.1.1 = {
+		birth = yes
+	}
+	633.1.1 = {
+		death = yes
+	}
+}
+
+191195 = {
+	name = "Danavarna"
+	dynasty = 1029195
+	father = 191192
+	religion = "krishnaism"
+	culture = "kannada"
+	trait = brahmin
+	561.1.1 = {
+		birth = yes
+	}
+	630.1.1 = {
+		death = yes
+	}
+}
+
+191196 = {
+	name = "Indravarma"
+	dynasty = 1029195
+	father = 191195
+	religion = "krishnaism"
+	culture = "oriya"
+	trait = brahmin
+	582.1.1 = {
+		birth = yes
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+
+191197 = {
+	name = "Gunavarma"
+	dynasty = 1029195
+	father = 191196
+	religion = "krishnaism"
+	culture = "oriya"
+	trait = brahmin
+	600.1.1 = {
+		birth = yes
+	}
+	679.1.1 = {
+		death = yes
+	}
+}
+
+191198 = {
+	name = "Devendravarma"
+	dynasty = 1029195
+	father = 191197
+	religion = "krishnaism"
+	culture = "oriya"
+	trait = brahmin
+	620.1.1 = {
+		birth = yes
+	}
+	700.1.1 = {
+		death = yes
+	}
+}
+
+191199 = {
+	name = "Anantavarma"
+	dynasty = 1029195
+	father = 191198
+	religion = "krishnaism"
+	culture = "oriya"
+	trait = brahmin
+	640.1.1 = {
+		birth = yes
+	}
+	717.1.1 = {
+		death = yes
+	}
+}
+
+191200 = {
+	name = "Nandavarma"
+	dynasty = 1029195
+	father = 191199
+	religion = "krishnaism"
+	culture = "oriya"
+	trait = brahmin
+	680.1.1 = {
+		birth = yes
+	}
+	747.1.1 = {
+		death = yes
+	}
+}
+
+191201 = {
+	name = "Devendravarma"
+	dynasty = 1029195
+	father = 191200
+	religion = "krishnaism"
+	culture = "oriya"
+	trait = brahmin
+	700.1.1 = {
+		birth = yes
+	}
+	752.1.1 = {
+		death = yes
+	}
+}
+
+191202 = {
+	name = "Rajendravarma"
+	dynasty = 1029195
+	father = 191201
+	religion = "krishnaism"
+	culture = "oriya"
+	trait = brahmin
+	720.1.1 = {
+		birth = yes
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+
+191203 = {
+	name = "Anantavarma"
+	dynasty = 1029195
+	father = 191202
+	religion = "krishnaism"
+	culture = "oriya"
+	trait = brahmin
+	740.1.1 = {
+		birth = yes
+	}
+	804.1.1 = {
+		death = yes
+	}
+}
+
+191204 = {
+	name = "Devandravarma"
+	dynasty = 1029195
+	father = 191202
+	religion = "krishnaism"
+	culture = "oriya"
+	trait = brahmin
+	760.1.1 = {
+		birth = yes
+	}
+	809.1.1 = {
+		death = yes
+	}
+}
+
+#Early Somavamsis:
+
+191223 = {
+	name = "Udayana"
+	dynasty = 1029196
+	religion = "pashupata"
+	culture = "oriya"
+	630.1.1 = {
+		birth = yes
+	}
+	720.1.1 = {
+		death = yes
+	}
+}
+
+191224 = {
+	name = "Judrabala"
+	dynasty = 1029196
+	father = 191223
+	religion = "pashupata"
+	culture = "oriya"
+	660.1.1 = {
+		birth = yes
+	}
+	750.1.1 = {
+		death = yes
+	}
+}
+
+191225 = {
+	name = "Nannadeva"
+	dynasty = 1029196
+	father = 191224
+	religion = "pashupata"
+	culture = "oriya"
+	690.1.1 = {
+		birth = yes
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+
+191226 = {
+	name = "Isanadeva"
+	dynasty = 1029196
+	father = 191225
+	religion = "pashupata"
+	culture = "oriya"
+	720.1.1 = {
+		birth = yes
+	}
+	775.1.1 = {
+		death = yes
+	}
+}
+
+191227 = {
+	name = "Bhavadeva"
+	dynasty = 1029196
+	father = 191226
+	religion = "pashupata"
+	culture = "oriya"
+	760.1.1 = {
+		birth = yes
+	}
+	850.1.1 = {
+		death = yes
+	}
+}
+
+191228 = {
+	name = "Chandragupta"
+	dynasty = 1029196
+	father = 191225
+	religion = "pashupata"
+	culture = "oriya"
+	730.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+
+191229 = {
+	name = "Tivaraja"
+	dynasty = 1029196
+	father = 191225
+	religion = "pashupata"
+	culture = "oriya"
+	732.1.1 = {
+		birth = yes
+	}
+	802.1.1 = {
+		death = yes
+	}
+}
+
+191233 = {
+	name = "Jayavarmadeva"
+	dynasty = 1029205
+	religion = "pashupata"
+	culture = "oriya"
+	690.1.1 = {
+		birth = yes
+	}
+	760.1.1 = {
+		death = yes
+	}
+}
+
+191234 = {
+	name = "Anantavarman"
+	dynasty = 1029205
+	father = 191233
+	religion = "pashupata"
+	culture = "oriya"
+	720.1.1 = {
+		birth = yes
+	}
+	770.1.1 = {
+		death = yes
+	}
+}
+
+191235 = {
+	name = "Gangakavilasa"
+	dynasty = 1029205
+	father = 191234
+	religion = "pashupata"
+	culture = "oriya"
+	740.1.1 = {
+		birth = yes
+	}
+	790.1.1 = {
+		death = yes
+	}
+}
+
+191236 = {
+	name = "Bhupendravarman"
+	dynasty = 1029205
+	father = 191235
+	religion = "pashupata"
+	culture = "oriya"
+	765.1.1 = {
+		birth = yes
+	}
+	830.1.1 = {
+		death = yes
+	}
+}
+
+191240 = {
+	name = "Kanchanastambha"
+	dynasty = 1029198
+	religion = "pashupata"
+	culture = "oriya"
+	710.1.1 = {
+		birth = yes
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+
+191241 = {
+	name = "Kalahastambha"
+	dynasty = 1029198
+	religion = "pashupata"
+	culture = "oriya"
+	father = 191240
+	730.1.1 = {
+		birth = yes
+	}
+	820.1.1 = {
+		death = yes
+	}
+}
+
+191242 = {
+	name = "Kulastambha"
+	dynasty = 1029198
+	religion = "pashupata"
+	culture = "oriya"
+	father = 191241
+	748.1.1 = {
+		birth = yes
+	}
+	839.1.1 = {
+		death = yes
+	}
+}
+
+#Matsyas
+191432 = {
+	name = "Satyamartanda" #Mythical founder of kingdom
+	dynasty = 1044348	#Matsya
+	religion = "digambara"
+	culture = "oriya"
+	trait = shudra
+	460.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		trait = kshatriya
+	}
+	550.1.1 = {
+		death = yes
+	}
+}
+
+191433 = {
+	name = "Naranga" #Fictional intermediary ruler
+	dynasty = 1044348	#Matsya
+	religion = "digambara"
+	culture = "oriya"
+	trait = kshatriya
+	father = 191432
+	520.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+
+191434 = {
+	name = "Ganga" #Fictional intermediary ruler
+	dynasty = 1044348	#Matsya
+	religion = "digambara"
+	culture = "oriya"
+	trait = kshatriya
+	father = 191433
+	570.1.1 = {
+		birth = yes
+	}
+	630.1.1 = {
+		death = yes
+	}
+}
+
+191435 = {
+	name = "Atavi_Durjaya"
+	dynasty = 1044348	#Matsya
+	religion = "digambara"
+	culture = "oriya"
+	father = 191434
+	600.1.1 = {
+		birth = yes
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+
+191436 = {
+	name = "Gudda" #Fictional intermediary ruler
+	dynasty = 1044348	#Matsya
+	religion = "digambara"
+	culture = "oriya"
+	father = 191435
+	620.1.1 = {
+		birth = yes
+	}
+	680.1.1 = {
+		death = yes
+	}
+}
+
+191437 = {
+	name = "Kadni" #Fictional intermediary ruler
+	dynasty = 1044348	#Matsya
+	religion = "digambara"
+	culture = "oriya"
+	father = 191436
+	650.1.1 = {
+		birth = yes
+	}
+	700.1.1 = {
+		death = yes
+	}
+}
+
+191438 = {
+	name = "Bhima"
+	dynasty = 1044348	#Matsya
+	religion = "digambara"
+	culture = "oriya"
+	father = 191437
+	680.1.1 = {
+		birth = yes
+	}
+	740.1.1 = {
+		death = yes
+	}
+}
+
+191439 = {
+	name = "Ganga"
+	dynasty = 1044348	#Matsya
+	religion = "digambara"
+	culture = "oriya"
+	father = 191437
+	681.1.1 = {
+		birth = yes
+	}
+	760.1.1 = {
+		death = yes
+	}
+}
+
+191440 = {
+	name = "Vallabha"
+	dynasty = 1044348	#Matsya
+	religion = "digambara"
+	culture = "oriya"
+	father = 191439
+	700.1.1 = {
+		birth = yes
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+
+191441 = {
+	name = "Yudhamalla"
+	dynasty = 1044348	#Matsya
+	religion = "digambara"
+	culture = "oriya"
+	father = 191440
+	720.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+
+191442 = {
+	name = "Gonanga"
+	dynasty = 1044348	#Matsya
+	religion = "digambara"
+	culture = "oriya"
+	father = 191441
+	760.1.1 = {
+		birth = yes
+	}
+	840.1.1 = {
+		death = yes
+	}
+}
+
+####
+orissa_01 = {
+	name = "Mahendra" # Mahendra of Kosala
+	dynasty = 900038 #Kosala
+	religion = "digambara"
+	culture = "oriya"
+	trait = shudra
+	342.1.1 = {
+		birth = yes
+	}
+	396.1.1 = {
+		death = yes
+	}
+}
+orissa_02 = {
+	name = "Vyaghra" # Vyaghra of Mahakantara
+	dynasty = 900039 #Mahakantara
+	religion = "pashupata"
+	culture = "oriya"
+	trait = brahmin
+	341.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+orissa_04 = {
+	name = "Svamidatta"
+	# Svamidatta Kottura
+	dynasty = 900032
+	religion = "shaivism"
+	culture = "oriya"
+	trait = brahmin
+	336.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+orissa_07 = {
+	name = "Mantaraja"
+	# Nilaraja Avamukta
+	dynasty = kurala_dynasty
+	religion = "smartism"
+	culture = "telugu"
+	trait = shudra
+	341.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+orissa_10 = {
+	name = "Mantaraja"
+	religion = "smartism"
+	culture = "telugu"
+	trait = shudra
+	456.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+
+#### Sharabhapuriyas
+
+sharabhapuriya_01 = {
+	name = "Sharabha"
+	dynasty = sharabhapuriya_dynasty
+	religion = "vaishnavism"
+	culture = "oriya"
+	trait = vaishya
+	450.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+
+sharabhapuriya_02 = {
+	name = "Narendra"
+	dynasty = sharabhapuriya_dynasty
+	religion = "vaishnavism"
+	culture = "oriya"
+	trait = vaishya
+	father=sharabhapuriya_01
+	478.3.8 = {
+		birth = yes
+	}
+	525.8.8 = {
+		death = yes
+	}
+}
+
+sharabhapuriya_03 = {
+	name = "Prasanna"
+	dynasty = sharabhapuriya_dynasty
+	religion = "vaishnavism"
+	culture = "oriya"
+	trait = vaishya
+	father=sharabhapuriya_02
+	500.6.9 = {
+		birth = yes
+	}
+	550.3.25 = {
+		death = yes
+	}
+}
+
+sharabhapuriya_04 = {
+	name = "Jayaraja"
+	dynasty = sharabhapuriya_dynasty
+	religion = "vaishnavism"
+	culture = "oriya"
+	trait = vaishya
+	father=sharabhapuriya_03
+	524.3.29 = {
+		birth = yes
+	}
+	561.4.7 = {
+		death = yes
+	}
+}
+
+sharabhapuriya_05 = {
+	name = "Manamatra"
+	dynasty = sharabhapuriya_dynasty
+	religion = "vaishnavism"
+	culture = "oriya"
+	trait = vaishya
+	father=sharabhapuriya_03
+	529.3.17 = {
+		birth = yes
+	}
+	580.2.20 = {
+		death = yes
+	}
+}
+
+sharabhapuriya_06 = {
+	name = "Sudevaraja"
+	dynasty = sharabhapuriya_dynasty
+	religion = "vaishnavism"
+	culture = "oriya"
+	trait = vaishya
+	father=sharabhapuriya_05
+	551.4.22 = {
+		birth = yes
+	}
+	582.5.28 = {
+		death = yes
+	}
+}
+
+sharabhapuriya_07 = {
+	name = "Pravaraja"
+	dynasty = sharabhapuriya_dynasty
+	religion = "vaishnavism"
+	culture = "oriya"
+	trait = vaishya
+	father=sharabhapuriya_05
+	557.9.14 = {
+		birth = yes
+	}
+	590.3.3 = {
+		death = yes
+	}
+}
+
+#### matharas
+mathara_01 = {
+	name = "Shankaravarman"
+	dynasty = mathara_dynasty
+	religion = "pashupata"
+	culture = "oriya"
+	trait = shudra
+	340.1.1 = {
+		birth = yes
+	}
+	353.1.1 = {
+		trait = brahmin
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+mathara_02 = {
+	name = "Shaktivarman"
+	dynasty = mathara_dynasty
+	religion = "dharni"
+	culture = "khond"
+	father = mathara_01
+	trait = education_learning_04
+	trait = intellect_good_2
+	378.1.1 = {
+		birth = yes
+	}
+	409.1.1 = {
+		culture = "oriya"
+		religion = "pashupata"
+		trait = brahmin
+	}
+	423.1.1 = {
+		death = yes
+	}
+}
+mathara_03 = {
+	name = "Prabhanjanavarman"
+	dynasty = mathara_dynasty
+	religion = "pashupata"
+	culture = "oriya"
+	trait = brahmin
+	father = mathara_02
+	412.1.1 = {
+		birth = yes
+	}
+	454.1.1 = {
+		death = yes
+	}
+}
+mathara_04 = {
+	name = "Anantashaktivarman"
+	dynasty = mathara_dynasty
+	religion = "pashupata"
+	culture = "oriya"
+	trait = brahmin
+	father = mathara_03
+	440.1.1 = {
+		birth = yes
+	}
+	480.1.1 = {
+		death = yes
+	}
+}
+### Pitrbhakta
+pitrbhakta_01 = {
+	name = "Umavarman"
+	dynasty = pitrbhakta_dynasty
+	religion = "pashupata"
+	culture = "oriya"
+	trait = kshatriya
+	442.1.1 = {
+		birth = yes
+	}
+	480.1.1 = {
+		death = yes
+	}
+}
+pitrbhakta_02 = {
+	name = "Nandaprabhanjanavarman"
+	dynasty = pitrbhakta_dynasty
+	religion = "pashupata"
+	culture = "oriya"
+	trait = kshatriya
+	father = pitrbhakta_01
+	460.3.2 = {
+		birth = yes
+	}
+	513.2.3 = {
+		death = yes
+	}
+}
+pitrbhakta_03 = {
+	name = "Chandavarman"
+	dynasty = pitrbhakta_dynasty
+	religion = "pashupata"
+	culture = "oriya"
+	trait = kshatriya
+	father = pitrbhakta_02
+	479.1.16 = {
+		birth = yes
+	}
+	529.6.3 = {
+		death = yes
+	}
+}
+pitrbhakta_04 = {
+	name = "Vishakhavarman"
+	dynasty = pitrbhakta_dynasty
+	religion = "pashupata"
+	culture = "oriya"
+	trait = kshatriya
+	father = pitrbhakta_03
+	505.7.1 = {
+		birth = yes
+	}
+	567.8.9 = {
+		death = yes
+	}
+}
+### Vasishtha 
+vasishtha_01 = {
+	name = "Gunavarman"
+	dynasty = vasishtha_dynasty
+	religion = "shaivism"
+	culture = "oriya"
+	trait = kshatriya
+	432.1.1 = {
+		birth = yes
+	}
+	472.1.1 = {
+		death = yes
+	}
+}
+vasishtha_02 = {
+	name = "Prabhanjanavarman"
+	dynasty = vasishtha_dynasty
+	religion = "shaivism"
+	culture = "oriya"
+	trait = kshatriya
+	father = vasishtha_01
+	450.1.1 = {
+		birth = yes
+	}
+	489.1.1 = {
+		death = yes
+	}
+}
+
+
+######################################
+# 
+# NALA DYNASTY
+# By Cybrxkhan
+# Wikipedia seems to contradict itself, Nala Dynasty and lists of rulers of Orissa, but I'm just winging this
+# 
+######################################
+
+nala_01 = {
+	name = "Varaharaja"
+	dynasty = dynasty_nala
+	religion = "shaivism"
+	culture = "oriya"
+	480.1.2 = {
+		birth = yes
+	}
+	527.4.9 = {
+		death = yes
+	}
+}
+
+nala_02 = {
+	name = "Arthapatiraja"
+	dynasty = dynasty_nala
+	religion = "shaivism"
+	culture = "oriya"
+	father=nala_01
+	505.5.15 = {
+		birth = yes
+	}
+	559.6.17 = {
+		death = yes
+	}
+}
+
+nala_03 = {
+	name = "Bhavadatta"
+	dynasty = dynasty_nala
+	religion = "shaivism"
+	culture = "oriya"
+	father=nala_02
+	533.4.17 = {
+		birth = yes
+	}
+	579.9.18 = {
+		death = yes
+	}
+}
+
+nala_04 = {
+	name = "Skandavarman"
+	dynasty = dynasty_nala
+	religion = "shaivism"
+	culture = "oriya"
+	father=nala_03
+	533.4.17 = {
+		birth = yes
+	}
+	579.9.18 = {
+		death = yes
+	}
+}
+
+
+######################################
+# 
+# SHAILOBHAVA DYNASTY
+# By Cybrxkhan
+# I'm just winging this, plz forgive me Soraya T_T
+# Apparently PI has them as about a century later for some reason?
+# 
+######################################
+
+# Shailodbhava 
+shailodbhava_01 = {
+	name = "Aranabhita"
+	dynasty = 1044314
+	religion = "shaivism"
+	culture = "oriya"
+	506.2.14 = {
+		birth = yes
+	}
+	557.8.12 = {
+		death = yes
+	}
+}
+
+shailodbhava_02 = {
+	name = "Sainyabhita"
+	dynasty = 1044314
+	religion = "shaivism"
+	culture = "oriya"
+	father=shailodbhava_01
+	540.2.10 = {
+		birth = yes
+	}
+	590.12.16 = {
+		death = yes
+	}
+}
+
+shailodbhava_03 = {
+	name = "Ayasobhita" # Charamparāja 
+	dynasty = 1044314
+	religion = "shaivism"
+	culture = "oriya"
+	father=shailodbhava_02
+	567.12.19 = {
+		birth = yes
+	}
+	620.1.11 = {
+		death = yes
+	}
+}
+
+shailodbhava_04 = {
+	name = "Sainyabhita" 
+	dynasty = 1044314
+	religion = "shaivism"
+	culture = "oriya"
+	father=shailodbhava_03
+	601.9.12 = {
+		birth = yes
+	}
+	671.5.6 = {
+		death = yes
+	}
+}
+
+shailodbhava_05 = {
+	name = "Ayasobhita" 
+	dynasty = 1044314
+	religion = "shaivism"
+	culture = "oriya"
+	father=shailodbhava_04
+	633.2.9 = {
+		birth = yes
+	}
+	698.12.16 = {
+		death = yes
+	}
+}
+
+shailodbhava_06 = {
+	name = "Madhava" 
+	dynasty = 1044314
+	religion = "shaivism"
+	culture = "oriya"
+	father=shailodbhava_05
+	650.6.6 = {
+		birth = yes
+	}
+	703.4.24 = {
+		death = yes
+	}
+}
+
+shailodbhava_07 = {
+	name = "Manabhita" 
+	dynasty = 1044314
+	religion = "shaivism"
+	culture = "oriya"
+	father=shailodbhava_06
+	672.10.2 = {
+		birth = yes
+	}
+	727.2.7 = {
+		death = yes
+	}
+}
+
+shailodbhava_08 = {
+	name = "Ayasobhita" 
+	dynasty = 1044314
+	religion = "shaivism"
+	culture = "oriya"
+	father=shailodbhava_07
+	690.4.19 = {
+		birth = yes
+	}
+	742.4.1 = {
+		death = yes
+	}
+}
+
+shailodbhava_09 = {
+	name = "Allaparaja" 
+	dynasty = 1044314
+	religion = "shaivism"
+	culture = "oriya"
+	father=shailodbhava_08
+	711.3.16 = {
+		birth = yes
+	}
+	759.4.22 = {
+		death = yes
+	}
+}
+
+shailodbhava_10 = {
+	name = "Tailapanibha" 
+	dynasty = 1044314
+	religion = "shaivism"
+	culture = "oriya"
+	father=shailodbhava_09
+	730.4.20 = {
+		birth = yes
+	}
+	779.4.9 = {
+		death = yes
+	}
+}
+
+shailodbhava_11 = {
+	name = "Madhyamaraja"  # Madhyamarāja 
+	dynasty = 1044314
+	religion = "shaivism"
+	culture = "oriya"
+	father=shailodbhava_10
+	748.9.12 = {
+		birth = yes
+	}
+	785.6.2 = {
+		death = yes
+	}
+}
+
+
+#############################################################
+# 
+# MISC PLACEHOLDERS
+# 
+# Done by Cybrxkhan
+# 
+#############################################################
+
+
+oriya_misc_01 = {
+	name = "Manamatra"
+	religion = "vajrayana"
+	culture = "oriya"
+	499.6.30 = {
+		birth = yes
+	}
+	549.7.18 = {
+		death = yes
+	}
+}
+

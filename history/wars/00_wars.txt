@@ -1,0 +1,249 @@
+﻿# Visigothic Revolt
+war = {
+	name = "war_395_gothic_wars"
+	start_date = 395.1.17
+	end_date = 397.1.1
+	targeted_titles= {
+		k_daciae
+	}
+	casus_belli = cb_gothic_wars
+	attackers = { 999103 } #Alaric
+	defenders = { daciae_12 thessalonika_05 thessalonika_02 daciae_10 daciae_11 } #Provincial governors
+	claimant = 999103 
+}
+war = {
+	name = "Hunnic Migration"
+	start_date = 361.11.16
+	end_date = 362.1.1
+	targeted_titles={
+		k_pontic_steppe
+	}
+	casus_belli = hunnic_migration_cb
+	attackers = { 990016 }
+	defenders = { 992003 }
+	claimant = 990016 
+}
+# War of the Theodorics
+war = {
+	name = "war_476_theodoric_wars"
+	start_date = 476.9.4
+	end_date = 481.1.1
+	targeted_titles= {
+		#k_thracian_goths
+		#k_daciae
+		#k_thessalonika
+		d_turnovo
+		d_vidin
+		c_kran
+	}
+	casus_belli = cb_theodoric_wars
+	attackers = { 992016 }
+	defenders = { strabo_02 }
+	claimant = 992016 
+}
+# Gupta Invasion of the Western Satraps
+war = {
+	name = "Gupta Invasion"
+	start_date = 395.1.16
+	end_date = 396.1.1
+	targeted_titles={
+		k_malwa
+		k_gujarat
+		k_sindh
+		k_rajputana
+	}
+	casus_belli = invasion_war
+	attackers = { 2020123 }
+	defenders = { 900948 }
+	claimant = 900964 
+}
+#Hunnic Ivasion of Heruli
+war = {
+	name = "Hunnic Rugian Invasion"
+	start_date = 395.1.16
+	end_date = 396.1.1
+	targeted_titles={
+		d_ungvar
+		d_nyitra
+	}
+	casus_belli = invasion_war_hun
+	attackers = { balamer_01 }
+	defenders = { rugian_01 }
+	claimant = balamer_01 
+}
+war = {
+	name = "Hunnic Gepidian Invasion"
+	start_date = 395.1.16
+	end_date = 396.1.1
+	targeted_titles={
+		d_transcarpathia
+		d_transylvania
+		d_bihar
+		d_ungvar
+	}
+	casus_belli = invasion_war_hun
+	attackers = { balamer_01 }
+	defenders = { gepids_01 }
+	claimant = balamer_01 
+}
+war = {
+	name = "Hunnic Alan Invasion"
+	start_date = 395.1.16
+	end_date = 396.1.1
+	targeted_titles={
+		d_muntenia
+	}
+	casus_belli = invasion_war_hun
+	attackers = { balamer_01 }
+	defenders = { alan_01 }
+	claimant = balamer_01 
+}
+war = {
+	name = "Second Hunnic Alan Invasion"
+	start_date = 395.1.16
+	end_date = 396.1.1
+	targeted_titles={
+		d_transylvanian_alps
+		d_oltenia
+	}
+	casus_belli = invasion_war_hun
+	attackers = { balamer_01 }
+	defenders = { alan_12 }
+	claimant = balamer_01 
+}
+war = {
+	name = "Hunnic Taifal Invasion"
+	start_date = 395.1.16
+	end_date = 396.1.1
+	targeted_titles={
+		d_oltenia
+		d_temes
+		d_transylvania
+	}
+	casus_belli = invasion_war_hun
+	attackers = { balamer_01 }
+	defenders = { taifal_02 }
+	claimant = balamer_01 
+}
+war = {
+	name = "Hunnic Yazige Invasion"
+	start_date = 395.1.16
+	end_date = 396.1.1
+	targeted_titles={
+		d_bacs
+	}
+	casus_belli = invasion_war_hun
+	attackers = { balamer_01 }
+	defenders = { limigantes_01 }
+	claimant = balamer_01 
+}
+war = {
+	name = "Hunnic Roxolan Invasion"
+	start_date = 395.1.16
+	end_date = 396.1.1
+	targeted_titles={
+		d_temes
+	}
+	casus_belli = invasion_war_hun
+	attackers = { balamer_01 }
+	defenders = { agaragantes_01 }
+	claimant = balamer_01 
+}
+war = {
+	name = "Hunnic Hasding Invasion"
+	start_date = 395.1.16
+	end_date = 396.1.1
+	targeted_titles={
+		d_bacs
+		d_nyitra
+		d_bihar
+		d_ungvar
+	}
+	casus_belli = invasion_war_hun
+	attackers = { balamer_01 }
+	defenders = { vandals_001 }
+	claimant = balamer_01 
+}
+war = {
+	name = "Hunnic Dacian Invasion"
+	start_date = 395.1.16
+	end_date = 396.1.1
+	targeted_titles={
+		d_transylvania
+	}
+	casus_belli = invasion_war_hun
+	attackers = { balamer_01 }
+	defenders = { carpi_01 }
+	claimant = balamer_01 
+}
+war = {
+	name = "Hunnic Romano-Dacian Invasion"
+	start_date = 395.1.16
+	end_date = 396.1.1
+	targeted_titles={
+		d_bihar
+	}
+	casus_belli = invasion_war_hun
+	attackers = { balamer_01 }
+	defenders = { hungary_10 }
+	claimant = balamer_01 
+}
+
+war = {
+	name = "war_476_hephthalites_vs_persia"
+	start_date = 476.9.4
+	end_date = 484.1.1
+	targeted_titles = {
+		d_khuttal
+		d_soghd
+		d_balkh
+		c_amol
+		c_guzgan
+		c_zamm
+	}
+	casus_belli = hephthalites_event_cb
+	attackers = { 180624 }
+	defenders = { hephthalite_004 }
+	claimant = 180624
+}
+
+#Czech and Lech Wars
+war = {
+	name = "war_476_czech"
+	start_date = 476.9.4
+	end_date = 480.9.4
+	targeted_titles= {
+		d_bohemia
+	}
+	casus_belli = lech_czech_cb
+	attackers = { slavs_22 }
+	defenders = { 999605 }
+}
+war = {
+	name = "war_476_lech"
+	start_date = 476.9.4
+	end_date = 480.9.4
+	targeted_titles= {
+		d_wielkopolska
+	}
+	casus_belli = lech_czech_cb
+	attackers = { slavs_25 }
+	defenders = { przeworsk_04 }
+}
+war = {
+	name = "FRANKISH_BURGUNDY_WAR_NAME"
+	start_date = 532.2.1
+	end_date = 534.1.1
+	casus_belli = frankish_burgundy_annexation_cb
+	attackers = { 997012 997013 }
+	defenders = { 994013 }
+}
+
+war = {
+	name = "Rebellion of Godas"
+	start_date = 532.2.1
+	end_date = 533.1.1
+	casus_belli = independence_justinian_cb
+	attackers = { vandals_146 }
+	defenders = { vandals_012 vandals_013 }
+}

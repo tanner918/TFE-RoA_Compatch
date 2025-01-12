@@ -1,0 +1,810 @@
+﻿
+k_transoxiana = {
+	867.1.1 = { change_development_level = 5 }
+	
+}
+
+
+d_khuttal = {
+	361.1.1 = {	change_development_level = 3 }
+	476.1.1 = {	change_development_level = 4 }
+	532.1.1 = {	change_development_level = 5 }
+	632.1.1 = {	change_development_level = 6 }
+	768.1.1 = {	change_development_level = 7 }
+	360.1.1 = {
+		holder = hephthalite_001
+		government = nomadic_government
+		liege = "k_kidaria"
+	}
+	408.5.6 = {
+		holder = hephthalite_002
+	}	
+	442.1.1 = {
+		holder = hephthalite_003
+		liege = "e_hephthalite"
+	}
+	456.10.12 = {
+		holder = hephthalite_004
+	}
+	505.5.5 = {
+		holder = hephthalite_006
+	}
+	532.1.1 = {
+		holder = hephthalite_007
+	}
+	442.1.1 = {
+		holder = hephthalite_003
+		liege = "e_hephthalite"
+	}
+	456.10.12 = {
+		holder = hephthalite_004
+	}
+	505.5.5 = {
+		holder = hephthalite_006
+	}
+	532.1.1 = {
+		holder = hephthalite_009
+	}
+}
+c_khuttal = {
+	360.1.1 = {
+		holder = hephthalite_001
+		government = nomadic_government
+		liege = "k_kidaria"
+	}
+	408.5.6 = {
+		holder = hephthalite_002
+	}	
+	442.1.1 = {
+		holder = hephthalite_003
+		liege = "e_hephthalite"
+	}
+	456.10.12 = {
+		holder = hephthalite_004
+	}
+	505.5.5 = {
+		holder = hephthalite_006
+	}
+	532.1.1 = {
+		holder = hephthalite_007
+	}
+	442.1.1 = {
+		holder = hephthalite_003
+		liege = "e_hephthalite"
+	}
+	456.10.12 = {
+		holder = hephthalite_004
+	}
+	470.1.1 = {
+		holder = khuttal_001
+	}
+	511.7.13 = {
+		holder = khuttal_002
+	}
+	529.12.16 = {
+		holder = khuttal_003
+	}
+	532.1.1 = {
+		holder = hephthalite_009
+		liege="d_khuttal"
+	}
+}
+c_chaghaniyan = {
+	361.1.1 = {
+		holder = bactrian_misc_001
+		government = trade_city_state_government
+		liege="d_khuttal"
+	}
+	389.7.9 = {
+		holder = bactrian_misc_002
+	}
+	457.9.17 = {
+		holder = bactrian_misc_003
+	}
+	472.10.1 = {
+		holder = bactrian_misc_004
+	}
+}
+c_rasht = {
+	361.1.1 = {
+		holder = bactrian_misc_001
+		government = trade_city_state_government
+		liege="d_khuttal"
+	}
+	389.7.9 = {
+		holder = bactrian_misc_002
+	}
+	457.9.17 = {
+		holder = bactrian_misc_003
+	}
+	472.10.1 = {
+		holder = bactrian_misc_004
+	}
+}
+c_wakhsh = {
+	361.1.1 = {
+		holder = bactrian_misc_005
+		government = trade_city_state_government
+		liege="d_khuttal"
+	}
+	392.7.10 = {
+		holder = bactrian_misc_008
+	}
+	419.2.17 = {
+		holder = bactrian_misc_010
+	}
+	467.1.9 = {
+		holder = bactrian_misc_011
+	}
+	475.9.1 = {
+		holder = bactrian_misc_012
+	}
+	513.7.24 = {
+		holder = bactrian_misc_013
+	}
+}
+d_osrushana = {
+	361.1.1 = {	change_development_level = 4 }
+	476.1.1 = {	change_development_level = 5 }
+	532.1.1 = {	change_development_level = 6 }
+	632.1.1 = {	change_development_level = 7 }
+	768.1.1 = {	change_development_level = 8 }
+	460.3.4 = {
+		holder = afshin_001
+		government = trade_city_state_government
+		liege = "e_hephthalite"
+	}
+	# 505.5.5 = {
+	# 	holder = hephthalite_006
+	# }
+	# 554.3.21 = {
+	# 	holder = hephthalite_007
+	# }
+}
+c_oshrusana = {
+	360.1.1 = {
+		holder=sogdian_misc_014
+		government = trade_city_state_government
+		liege=k_kidaria		
+	}
+	391.3.8 = {
+		holder=sogdian_misc_015
+		
+	}
+	460.3.4 = {
+		holder = afshin_001
+		liege = "d_osrushana"
+	}
+	505.5.5 = {
+		holder = hephthalite_006
+	}
+	532.1.1 = {
+		holder = hephthalite_007
+	}
+}
+c_zarafshan = {
+	360.1.1 = {
+		holder=sogdian_misc_016
+		government = trade_city_state_government
+		liege=k_kidaria		
+	}
+	390.6.17 = {
+		holder=sogdian_misc_017
+		
+	}
+	460.3.4 = {
+		holder = afshin_001
+		liege = "d_osrushana"
+	}
+	505.5.5 = {
+		holder = hephthalite_006
+	}
+	532.1.1 = {
+		holder = hephthalite_007
+	}
+}
+d_ferghana = {	
+	361.1.1 = {	change_development_level = 3 }
+	476.1.1 = {	change_development_level = 4 }
+	532.1.1 = {	change_development_level = 5 }
+	632.1.1 = {	change_development_level = 6 }
+	768.1.1 = {	change_development_level = 7 }
+	340.1.1 = {
+		holder = xionite_005
+		government = nomadic_government 
+	}
+	360.3.9 = {
+		holder = xionite_001
+	}
+	390.1.1 = {
+		holder = xionite_018
+		liege=k_kidaria		
+	}
+	442.1.1 = {
+		holder = 0
+	}
+}
+c_khojand = {
+	361.1.2 = {
+		holder = ferghanan_misc_009
+		government = trade_city_state_government
+		liege = "d_ferghana"
+	}
+	395.1.1 = {
+		holder = ferghanan_misc_010
+	}
+	470.1.1 = {
+		holder = ferghanan_misc_001
+		liege = "e_hephthalite"
+	}
+	529.7.24 = {
+		holder = ferghanan_misc_002
+	}
+}
+c_isfara = {
+	361.1.1 = {
+		holder = ferghanan_misc_012
+		government = trade_city_state_government
+		liege = "d_ferghana"
+	}
+	470.1.1 = {
+		holder = ferghanan_misc_001
+		liege = "e_hephthalite"
+	}
+	529.7.24 = {
+		holder = ferghanan_misc_002
+	}
+}
+c_nasaiya = {
+	361.1.1 = {
+		holder = ferghanan_misc_011
+		government = trade_city_state_government
+		liege = "d_ferghana"
+	}
+	470.1.1 = {
+		holder = ferghanan_misc_003
+		liege = "e_hephthalite"
+	}
+	509.3.17 = {
+		holder = ferghanan_misc_004
+	}
+}
+c_ferghana = {
+	361.1.1 = {
+		holder = dayuan_001
+		liege = "d_ferghana"
+	}
+	390.1.1 = {
+		holder = xionite_018
+		liege=k_kidaria		
+	}
+	470.1.1 = {
+		holder = ferghanan_misc_005
+		government = trade_city_state_government
+		liege = "e_hephthalite"
+	}
+	492.10.19 = {
+		holder = ferghanan_misc_006
+	}
+}
+c_nasrabad = {
+	361.1.1 = {
+		holder = dayuan_001
+		liege = "d_ferghana"
+	}
+	382.11.17 = {
+		holder=dayuan_002
+	}
+	470.1.1 = {
+		holder = ferghanan_misc_007
+		government = trade_city_state_government
+		liege = "e_hephthalite"
+	}
+	531.8.7 = {
+		holder = ferghanan_misc_008
+	}
+}
+
+c_kishsh = {
+	340.1.1 = {
+		holder = xionite_005
+		government = nomadic_government 
+	}
+	360.3.9 = {
+		holder = xionite_001
+	}
+	422.6.17 = {
+		holder = xionite_018
+	}
+	431.4.17 = {
+		holder = xionite_019
+	}
+	452.7.4 = {
+		holder = xionite_020
+	}
+	460.3.4 = {
+		holder = afshin_001
+		liege = 0
+	}	
+}
+d_soghd = {
+	361.1.1 = {	change_development_level = 5 }
+	476.1.1 = {	change_development_level = 6 }
+	532.1.1 = {	change_development_level = 7 }
+	632.1.1 = {	change_development_level = 8 }
+	768.1.1 = {	change_development_level = 9 }
+	# 442.1.1 = {
+	# 	holder = hephthalite_003
+	# 	liege = "e_hephthalite"
+	# }
+	461.1.1 = {
+		holder = bukhara_001
+		government = trade_city_state_government
+		liege = "e_hephthalite"
+	}
+	519.12.2 = {
+		holder = bukhara_002
+	}
+	529.4.17 = {
+		holder = bukhara_003
+	}
+	560.1.1 = {
+		liege = 0
+	}
+	563.12.10 = {
+		holder = bukhara_004
+	}
+	577.12.2 = {
+		holder = bukhara_005
+	}
+}
+c_kishsh = {
+	361.1.1 = {
+		holder = xionite_misc_004
+		government = nomadic_government
+		liege = "k_kidaria"
+	}
+}
+# Petty Sogdian leaders
+c_bukhara = {
+	361.1.1 = {	change_development_level = 8 }
+	476.1.1 = {	change_development_level = 10 }
+	532.1.1 = {	change_development_level = 12 }
+	632.1.1 = {	change_development_level = 14 }
+	768.1.1 = {	change_development_level = 16 }
+	361.1.1 = {
+		holder = sogdian_misc_020
+		government = trade_city_state_government
+	}
+	390.1.1 = {
+		holder = xionite_016
+		liege = "k_kidaria"
+	}
+	422.6.19 = {
+		holder = xionite_018
+		liege = 0
+	}
+	461.1.1 = {
+		holder = bukhara_001
+		liege = "d_soghd"
+	}
+	519.12.2 = {
+		holder = bukhara_002
+	}
+	529.4.17 = {
+		holder = bukhara_003
+	}
+	563.12.10 = {
+		holder = bukhara_004
+	}
+	577.12.2 = {
+		holder = bukhara_005
+	}
+}
+c_nakhshab = {
+	361.1.1 = {
+		holder = sogdian_misc_020
+		government = trade_city_state_government
+	}
+	390.1.1 = {
+		holder = xionite_016
+	}
+	476.1.13 = {
+		holder = sogdian_misc_012
+		liege = "d_soghd"
+	}
+	526.9.1 = {
+		holder = sogdian_misc_013
+	}
+}
+c_firabr = {
+	361.1.1 = {
+		holder = sogdian_misc_022
+		government = trade_city_state_government
+		liege = "d_merv"
+	}
+	390.1.1 = {
+		holder = xionite_016
+		liege = "k_kidaria"
+	}
+	476.1.1 = {
+		holder = sogdian_misc_010
+		government = trade_city_state_government
+		liege = "d_soghd"
+	}
+	517.5.17 = {
+		holder = sogdian_misc_011
+	}
+}
+c_samarkand = {
+	361.1.1 = {	change_development_level = 8 }
+	476.1.1 = {	change_development_level = 10 }
+	532.1.1 = {	change_development_level = 12 }
+	632.1.1 = {	change_development_level = 14 }
+	768.1.1 = {	change_development_level = 16 }
+	361.1.1 = {
+		holder = sogdian_misc_021
+		government = trade_city_state_government
+	}
+	390.1.1 = {
+		holder = xionite_017
+		liege = "k_kidaria"
+	}
+	460.3.4 = {
+		holder = afshin_001
+		liege = "d_soghd"
+	}
+}
+c_dabusiya = {
+	361.1.1 = {
+		holder = sogdian_misc_021
+		government = trade_city_state_government
+	}
+	390.1.1 = {
+		holder = xionite_017
+	}
+	476.1.13 = {
+		holder = sogdian_misc_009
+		government = trade_city_state_government
+		liege = "e_hephthalite"
+	}
+}
+d_badakhshan = {
+	360.1.1 = {
+		holder = hephthalite_001
+		government = nomadic_government
+	}
+	390.1.1 = {
+		liege = "k_kidaria"
+	}
+	408.5.6 = {
+		holder = hephthalite_002
+	}	
+	442.1.1 = {
+		holder = hephthalite_003
+		liege = "e_hephthalite"
+	}
+	456.10.12 = {
+		holder = hephthalite_004
+	}
+	505.5.5 = {
+		holder = hephthalite_006
+	}
+	532.1.1 = {
+		holder = hephthalite_007
+	}
+}
+c_wakhan = {
+	360.1.1 = {
+		holder = hephthalite_misc_001
+		government = nomadic_government 
+		liege = d_badakhshan
+	}
+	415.2.3 = {
+		holder = hephthalite_misc_003
+	}
+	439.4.7 = {
+		holder = hephthalite_misc_004
+	}
+	470.9.30 = {
+		holder = hephthalite_misc_005
+	}
+	509.12.7 = {
+		holder = hephthalite_misc_006
+	}
+	527.6.1 = {
+		holder = hephthalite_misc_007
+	}
+}
+c_badakhshan = {
+	460.1.1 = {
+		holder = hephthalite_misc_016
+		government = nomadic_government 
+		liege = d_badakhshan
+	}
+	532.1.1 = {
+		holder = hephthalite_misc_026
+	}
+}
+c_munjan = {
+	460.1.1 = {
+		holder = hephthalite_misc_016
+		liege = d_badakhshan
+	}
+	532.1.1 = {
+		holder = hephthalite_misc_027
+	}
+}
+k_wusun = {	
+	351.1.1 = {
+		holder = wusun_001
+		government = nomadic_government
+	}
+	387.12.10 = {
+		holder = wusun_002
+	}
+	427.2.23 = {
+		holder = wusun_003
+	}
+	463.9.30 = {
+		holder = wusun_004
+		liege = "e_hephthalite"
+	}
+	501.9.8 = {
+		holder = wusun_005
+	}
+	520.6.20 = {
+		holder = wusun_006
+	}
+}
+
+c_iliq= {
+	351.1.1 = {
+		holder = wusun_001
+		government = nomadic_government
+	}
+	387.12.10 = {
+		holder = wusun_002
+	}
+	427.2.23 = {
+		holder = wusun_003
+	}
+}
+c_shughnan = {
+	361.1.1 = {
+		holder = hephthalite_misc_018
+		government = nomadic_government 
+		liege = d_badakhshan
+	}
+	384.2.25 = {
+		holder = hephthalite_misc_019
+	}
+	419.10.30 = {
+		holder = hephthalite_misc_022
+	}
+	470.6.7 = {
+		holder = hephthalite_misc_023
+	}
+	520.8.10 = {
+		holder = hephthalite_misc_024
+	}
+	525.8.28 = {
+		holder = hephthalite_misc_025
+	}
+	# Moved the Wusun a little more north, to allow room for a hypothetical Shughnan kingdom
+	# 463.9.30 = {
+	# 	holder = wusun_004
+	# 	liege = "e_hephthalite"
+	# }
+	# 501.9.8 = {
+	# 	holder = wusun_005
+	# }
+	# 520.6.20 = {
+	# 	holder = wusun_006
+	# }
+}
+c_karran = {
+	361.1.1 = {
+		holder = hephthalite_misc_018
+		government = nomadic_government 
+		liege = d_badakhshan
+	}
+	384.2.25 = {
+		holder = hephthalite_misc_019
+	}
+	419.10.30 = {
+		holder = hephthalite_misc_022
+	}
+	470.6.7 = {
+		holder = hephthalite_misc_023
+	}
+	# 520.8.10 = {
+	# 	holder = hephthalite_misc_024
+	# }
+	# 525.8.28 = {
+	# 	holder = hephthalite_misc_025
+	# }
+	532.1.1 = {
+		holder = hephthalite_misc_028
+	}
+	# Moved the Wusun a little more north, to allow room for a hypothetical Shughnan kingdom
+	# 463.9.30 = {
+	# 	holder = wusun_004
+	# 	liege = "e_hephthalite"
+	# }
+	# 501.9.8 = {
+	# 	holder = wusun_005
+	# }
+	# 520.6.20 = {
+	# 	holder = wusun_006
+	# }
+}
+
+# d_khorezm = {
+# 	867.1.1 = { change_development_level = 3 }
+
+
+# }
+
+
+c_gurganj = {
+	361.1.1 = {	change_development_level = 6 }
+	476.1.1 = {	change_development_level = 7 }
+	532.1.1 = {	change_development_level = 8 }
+	632.1.1 = {	change_development_level = 9 }
+	768.1.1 = {	change_development_level = 10 }
+	360.1.1 = {
+		holder = khwarezmian_misc_001
+		liege = "d_khorezm"
+	}
+	391.7.15 = {
+		holder = khwarezmian_misc_002
+	}
+	475.1.1 = {
+		holder = khwarezmian_misc_003
+	}
+	532.1.1 = {
+		holder = khwarezmian_misc_014
+	}
+}
+
+
+c_darghan = {
+	360.1.1 = {
+		holder = khwarezmian_misc_004
+		liege = "d_khorezm"
+	}
+	389.12.4 = {
+		holder = khwarezmian_misc_005
+	}
+	456.7.8 = {
+		holder = khwarezmian_misc_006
+	}
+}
+
+
+c_kath = {
+	320.1.1 = {
+		holder = 188580 
+	}
+	350.1.1 = {
+		holder = 188581
+	}
+	361.1.1 = {	change_development_level = 6 }
+	380.1.1 = {
+		holder = 188582
+	}
+	410.1.1 = {
+		holder = 188583
+	}
+	440.1.1 = {
+		holder = 188584
+	}
+	470.1.1 = {
+		holder = 188585
+	}
+	476.1.1 = {	change_development_level = 7 }
+	500.1.1 = {
+		holder = 188586
+	}
+	530.1.1 = {
+		holder = 188587
+	}
+	532.1.1 = {	change_development_level = 8 }
+	560.1.1 = {
+		holder = 188588
+	}
+	600.1.1 = {
+		holder = 188589
+	}
+	625.1.1 = {
+		holder = 188590
+	}
+	632.1.1 = {	change_development_level = 9 }
+	665.1.1 = {
+		holder = 188591
+	}
+	690.1.1 = {
+		holder = 188592
+	}
+	712.1.1 = {
+		holder = 188593
+	}
+	740.1.1 = {
+		holder = 188594
+	}
+	765.1.1 = {
+		holder = 188595
+	}
+	768.1.1 = {	change_development_level = 10 }
+	790.1.1 = {
+		holder = 188596
+	}
+	815.1.1 = {
+		holder = 188597
+	}
+	850.1.1 = {
+		holder = 188598
+	}
+}
+
+
+c_khiva = {
+	867.1.1 = {	change_development_level = 7 }
+
+}
+
+
+c_kurdar = {
+	360.1.1 = {
+		holder = khwarezmian_misc_007
+		liege = "d_khorezm"
+	}
+	390.1.1 = {
+		holder = khwarezmian_misc_008
+	}
+	470.1.1 = {
+		holder = khwarezmian_misc_009
+	}
+	532.1.1 = {
+		holder = khwarezmian_misc_013
+	}
+}
+
+
+d_uzboy = {
+	361.1.1 = {	change_development_level = 2 }
+	476.1.1 = {	change_development_level = 3 }
+	532.1.1 = {	change_development_level = 4 }
+	632.1.1 = {	change_development_level = 5 }
+	768.1.1 = {	change_development_level = 6 }
+	
+}
+
+c_sarykamysh = {
+	395.1.1 = {
+		holder = 1250001
+		government = feudal_government
+		liege = d_khorezm
+	}
+	466.1.1 = {
+		holder = 1250016
+	}
+	532.1.1 = {
+		holder = khwarezmian_misc_011
+	}
+}
+c_uzboy = {
+	395.1.1 = {
+		holder = 1250001
+		government = feudal_government
+		liege = d_khorezm
+	}
+	466.1.1 = {
+		holder = 1250016
+	}
+	532.1.1 = {
+		holder = khwarezmian_misc_012
+	}
+}
+

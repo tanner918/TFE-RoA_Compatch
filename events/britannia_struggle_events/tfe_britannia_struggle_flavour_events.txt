@@ -1,0 +1,109 @@
+﻿namespace = tfe_britannia_struggle_flavour
+
+##################################################
+# Quarrying Ragstone
+# by Juli and OmegaCorps
+# 0001 - 0010
+##################################################
+
+#	A quarry was found
+tfe_britannia_struggle_flavour.0001 = {
+	type = character_event
+	title = tfe_britannia_struggle_flavour.0001.t
+	desc = tfe_britannia_struggle_flavour.0001.desc
+	theme = faith
+	left_portrait = {
+		character = ROOT
+		animation = personality_rational
+	}
+	override_background = { reference = farmland }
+	cooldown = { years = 100 }
+	trigger = {
+		is_imprisoned = no
+		is_adult = yes
+		culture = {
+			OR = {
+				has_cultural_pillar = heritage_west_germanic
+				has_cultural_pillar = heritage_central_germanic
+			}
+		}
+		has_title = title:c_kent
+		NOT = {
+			exists = global_var:kent_quarry_found
+		}
+	}
+	immediate = {
+		create_character = {
+			location = root.capital_province
+			#General
+			age = 33
+			faith = root.faith
+			culture = culture:britano_roman
+			dynasty = generate
+			#Education
+			trait = education_stewardship_3
+			stewardship = 10
+			save_scope_as = britano_roman_architecht
+		} 
+		set_global_variable = {
+			name = kent_quarry_found
+			value = yes
+		}
+	}
+	
+	option = {
+		name = tfe_britannia_struggle_flavour.0001.a
+		add_dread = minor_dread_gain
+		title:c_kent = { 
+			add_county_modifier = {
+				modifier = struggle_kentish_ragstone_quarry
+			}
+		}
+		ai_chance = {
+			base = 10
+			ai_value_modifier = {
+				ai_greed = -0.25
+				ai_sociability = -0.5
+				ai_compassion = -1
+			}
+		}
+	}
+	
+	option = {
+		name = tfe_britannia_struggle_flavour.0001.b
+
+		add_courtier = scope:britano_roman_architecht
+		add_gold = 50
+		add_prestige = minor_prestige_loss
+		stress_impact = {
+			stubborn = minor_stress_impact_gain
+		}
+		ai_chance = {
+			base = 10
+			ai_value_modifier = {
+				ai_greed = 0.25
+				ai_sociability = 1
+			}
+		}
+	}
+	
+	# No beggars in GetPrimaryTitle. *Out*.
+	option = {
+		name = tfe_britannia_struggle_flavour.0001.c
+
+		# Opt out, with some consolation currency.
+		add_prestige = miniscule_prestige_gain
+		stress_impact = {
+			generous = minor_stress_impact_gain
+			ambitious = minor_stress_impact_loss
+			arrogant = minor_stress_impact_loss
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 1
+				has_trait = arrogant
+			}
+		}
+	}
+}

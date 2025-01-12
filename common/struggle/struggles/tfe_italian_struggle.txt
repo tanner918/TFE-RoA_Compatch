@@ -1,0 +1,534 @@
+﻿italian_struggle = {
+
+
+	##################################################
+	# Setup
+	##################################################
+	cultures = {
+		# East Germanic
+		ostrogothic
+		gothic
+		gepid
+		herulian
+		rugian
+		scirian
+		visigothic
+		burgundian
+		vandal
+		#frankish
+
+		# Central Germanic
+		langobard
+		thuringian
+		old_suebi
+		marcomannic
+		alamannic
+
+		# Roman
+		roman
+		illyro_roman
+		thracio_roman
+		rhaetio_roman
+		afro_roman
+		sardinian
+
+		# Hellenic		
+		greek
+		cappadocian
+		phrygian
+		pontic
+		isaurian
+		syrian
+
+		#Roman Generals
+		armenian
+		assyrian
+
+		# Balkanic
+		illyrian
+
+		# Celtic
+		noric
+
+	}
+	faiths = {
+		# Christian
+		nicene # Should be disabled after 476
+		#nazarene
+		#bardaisanism
+		#carpocratian
+		jovinian
+		novatianism
+		#encratite
+		arianism
+		# Christian faiths below become involved once they are spawned
+		chalcedonian
+		syriac
+		# Pagan
+		roman_pagan
+		hellenic_pagan
+		sardinian_pagan
+		gothic_pagan
+		central_pagan
+		illyrian_pagan
+		celto_hellenic_syncretism
+	}
+	regions = {
+		TFE_italian_struggle_region
+	}
+
+	involvement_prerequisite_percentage = 0.2 # Easier to join the struggle due to the nature of the conflict
+
+	on_start = {
+		# Starting Events
+		trigger_event = { on_action = tfe_italian_struggle_starting_events }
+	}
+
+	transition_state_duration = { months = 3 }
+
+	on_change_phase = {
+		#trigger_event = italian_struggle.0003
+	}
+	
+	# Root = the character which has joined the struggle
+ 	on_join = {
+		if = {
+			limit = {
+				is_ai = no
+			}
+
+			trigger_event = italian_struggle.0501
+		}
+		# else = {
+		# 	# assign an intent to the freshly joined character
+		# 	trigger_event = italian_struggle.0502
+		# }
+ 	} 
+
+	##################################################
+	# Phases
+	##################################################
+	start_phase = struggle_TFE_italian_phase_turmoil
+	
+	phase_list = {
+
+		struggle_TFE_italian_phase_turmoil = {
+			#duration = { points = 500 }
+
+			future_phases = {
+				struggle_TFE_italian_phase_rebuilding = {
+					# Catalyst values are low here because we track this stuff across every phase, so they need to take _roughly_ ~100-120 years to build up, all else being equal.
+					catalysts = {
+						catalyst_improve_development_vassal_diff_faith_culture = minimal_struggle_catalyst_gain # How to do AI?
+						
+						catalyst_gift_independent_ruler = minor_struggle_catalyst_gain # AI done
+						catalyst_became_friend_lover_with_character = minor_struggle_catalyst_gain
+						catalyst_high_mil_competence = minimal_struggle_catalyst_gain
+						catalyst_learned_new_language_important = minor_struggle_catalyst_gain # AI done
+						catalyst_new_building_in_city = minor_struggle_catalyst_gain # How to do AI?
+						catalyst_new_building_in_castle = minor_struggle_catalyst_gain # How to do AI?
+						catalyst_sign_truce_outside_war = minor_struggle_catalyst_gain # will need update when addding truce through wards
+						catalyst_formed_interreligious_alliance_with_important_character = minor_struggle_catalyst_gain
+						catalyst_ransom_important = medium_struggle_catalyst_gain
+						catalyst_grant_privilege_to_diff_faith_culture_vassal = medium_struggle_catalyst_gain
+						catalyst_invite_diff_faith_culture_to_feast = medium_struggle_catalyst_gain
+						catalyst_independence_from_non_dejure_vassal = major_struggle_catalyst_gain
+						catalyst_grant_land_local_noble = major_struggle_catalyst_gain
+						catalyst_became_best_friend_soulmate_with_very_important_character = major_struggle_catalyst_gain # AI done
+						catalyst_convert_local_culture_faith = major_struggle_catalyst_gain
+						catalyst_release_important = massive_struggle_catalyst_gain
+						catalyst_TFE_roman_grain = major_struggle_catalyst_gain
+						catalyst_TFE_roman_races = major_struggle_catalyst_gain
+						catalyst_TFE_major_historical_event_rebuilding = TFE_historically_significant_struggle_catalyst_gain
+						#catalyst_tfe_completed_travel = minimal_struggle_catalyst_gain
+						catalyst_tfe_completed_pilgrimage = medium_struggle_catalyst_gain
+					}
+				}
+				struggle_TFE_italian_phase_devastation = {
+					# Catalyst values are low here because we track this stuff across every phase, so they need to take _roughly_ ~100-120 years to build up, all else being equal.
+					catalysts = {
+						catalyst_TFE_siege_victory = minimal_struggle_catalyst_gain
+						catalyst_TFE_plague_spread = minimal_struggle_catalyst_gain
+						catalyst_low_mil_competence = minimal_struggle_catalyst_gain
+						catalyst_passing_of_time = minimal_struggle_catalyst_gain
+						catalyst_win_any_war_within_the_region = minor_struggle_catalyst_gain # Good
+						catalyst_becomes_rival_with_involved = major_struggle_catalyst_gain # Good
+						catalyst_unnatural_death_important_character = medium_struggle_catalyst_gain
+						catalyst_usurp_title = major_struggle_catalyst_gain # good
+						catalyst_forced_conversion = minimal_struggle_catalyst_gain
+						catalyst_broke_truce_against_important_character = massive_struggle_catalyst_gain # Cannot motivate the AI to do that without code support
+						catalyst_reveal_secret_important = minimal_struggle_catalyst_gain
+						catalyst_tfe_declared_war = minor_struggle_catalyst_gain
+						catalyst_raided_involved = minor_struggle_catalyst_gain
+
+						catalyst_TFE_major_historical_event_devastation = TFE_historically_significant_struggle_catalyst_gain
+					}
+				}
+			}
+
+			war_effects = {
+
+				name = WAR_EFFECTS_NAME
+
+				involved_parameters = {
+					unlocks_border_raid_casus_belli = yes
+					struggle_cb_cost_minor = yes
+					truces_by_involved_or_interlopers_within_region_shorter = yes
+					involved_or_interloper_wars_in_struggle_region_cheaper_prestige_costs = yes
+					involved_or_interloper_wars_in_struggle_region_cheaper_piety_costs = yes
+					involved_or_interloper_wars_in_struggle_region_cheaper_costs = yes
+				}
+
+				involved_county_modifier = {
+					# The region is more amenable for waging war.
+					levy_size = 1
+					garrison_size = -0.5
+				}
+
+				interloper_county_modifier = {
+					# Interlopers get partial benefits for waging war.
+					levy_size = 0.5
+					garrison_size = -0.25
+				}
+
+				involved_character_modifier = {
+					siege_phase_time = 0.1
+					mercenary_hire_cost_mult = -0.1
+					levy_reinforcement_rate = 0.1
+					ai_energy = 100
+					ai_boldness = 100
+					ai_war_chance = 5
+					ai_war_cooldown = -0.5
+				}
+
+				interloper_parameters = {
+					truces_by_involved_or_interlopers_within_region_shorter = yes
+					involved_or_interloper_wars_in_struggle_region_cheaper_prestige_costs = yes
+					involved_or_interloper_wars_in_struggle_region_cheaper_piety_costs = yes
+					involved_or_interloper_wars_in_struggle_region_cheaper_costs = yes
+				}
+
+				interloper_character_modifier = {
+					siege_phase_time = 0.05
+					mercenary_hire_cost_mult = -0.1
+					levy_reinforcement_rate = 0.1
+					ai_energy = 100
+					ai_boldness = 100
+					ai_war_chance = 5
+					ai_war_cooldown = -0.5
+				}
+
+			}
+
+			faith_effects = {
+				###### Common
+				common_parameters = {
+					county_faith_conversion_in_region_proceeds_slower = yes
+				}
+
+				###### Involved
+				involved_parameters = {
+					interfaith_marriages_between_involved_characters_costs_piety = yes
+					piety_from_converting_county = yes
+					piety_from_converting_involved_rulers = yes	
+				}
+
+				#involved_character_modifier = {
+					#opinion_of_different_faith = -20
+				#}
+
+				###### Interlopers
+
+				###### Uninvolved
+
+				# Nothing
+			}
+
+			culture_effects = {
+
+				###### Common
+				common_parameters = {
+					county_culture_conversion_in_region_proceeds_slower = yes
+					#cultural_acceptance_gain_mult = -0.25
+				}
+
+				###### Involved
+				involved_character_modifier = {
+					struggle_prestige_install_same_culture_claimant = yes
+					struggle_different_culture_more_likely_to_use_minority_stance = yes
+					opinion_of_different_culture = -10
+					cultural_head_acceptance_gain_mult = -0.25
+				}
+				###### Interlopers
+				interloper_character_modifier = {
+					minority_opinion = -10
+					minority_tax_contribution_mult = -0.5
+					minority_levy_contribution_mult = -0.5
+					opinion_of_different_culture = -5
+					cultural_head_acceptance_gain_mult = -0.25
+				}
+				###### Uninvolved
+
+				# Nothing
+			}
+
+			other_effects = {
+				###### Common
+				all_county_modifier = {
+					development_growth_factor = -0.2
+					tax_mult = -0.2
+					holding_build_gold_cost = 0.2
+					build_gold_cost = 0.2
+					travel_danger = 10
+				}
+
+				###### Involved
+				involved_parameters = {
+					powerful_vassal_can_claim_liege_titles = yes
+					unlocks_demand_payments_for_all = yes
+					unlocks_abduct_for_all = yes
+					unlocks_fabricate_hooks_for_all = yes
+					unlocks_claim_throne_for_all = yes
+					unlocks_incite_revolts_interaction = yes
+					unlocks_expedite_scheme_decision = yes
+				}
+				involved_character_modifier = {					
+					legitimacy_gain_mult = -0.2
+				}
+
+				###### Interlopers
+				interloper_parameters = {
+
+				}
+
+				interloper_county_modifier = {
+				}
+
+				###### Uninvolved
+				uninvolved_parameters = {
+				}
+
+				uninvolved_county_modifier = {
+				}
+			}
+
+			ending_decisions = {
+				struggle_italian_ending_synthesis_decision
+				struggle_italian_ending_incorporation_decision
+				struggle_italian_ending_restoration_decision
+				struggle_italian_ending_subjugation_decision
+			}
+		}
+
+		struggle_TFE_italian_phase_rebuilding = {
+			background = "gfx/interface/illustrations/struggle_backgrounds/struggle_opportunity_britannia.dds"
+
+			future_phases = {
+				struggle_TFE_italian_phase_rebuilding = {
+					catalysts = {
+
+						catalyst_improve_development_vassal_diff_faith_culture = minimal_struggle_catalyst_gain # How to do AI?
+						catalyst_low_mil_competence = minimal_struggle_catalyst_gain
+						catalyst_gift_independent_ruler = minor_struggle_catalyst_gain # AI done
+						catalyst_became_friend_lover_with_character = minor_struggle_catalyst_gain
+						catalyst_learned_new_language_important = minor_struggle_catalyst_gain # AI done
+						catalyst_new_building_in_city = minor_struggle_catalyst_gain # How to do AI?
+						catalyst_new_building_in_castle = minor_struggle_catalyst_gain # How to do AI?
+						catalyst_sign_truce_outside_war = minor_struggle_catalyst_gain # will need update when addding truce through wards
+						catalyst_formed_interreligious_alliance_with_important_character = minor_struggle_catalyst_gain
+						catalyst_ransom_important = medium_struggle_catalyst_gain
+						catalyst_grant_privilege_to_diff_faith_culture_vassal = medium_struggle_catalyst_gain
+						catalyst_invite_diff_faith_culture_to_feast = medium_struggle_catalyst_gain
+						catalyst_independence_from_non_dejure_vassal = major_struggle_catalyst_gain
+						catalyst_grant_land_local_noble = major_struggle_catalyst_gain
+						catalyst_became_best_friend_soulmate_with_very_important_character = major_struggle_catalyst_gain # AI done
+						catalyst_convert_local_culture_faith = major_struggle_catalyst_gain
+						catalyst_release_important = massive_struggle_catalyst_gain
+						#catalyst_tfe_completed_travel = minimal_struggle_catalyst_gain
+						catalyst_tfe_completed_pilgrimage = medium_struggle_catalyst_gain
+					}
+				}
+				struggle_TFE_italian_phase_turmoil = {
+					catalysts = {
+						catalyst_passing_of_time = minimal_struggle_catalyst_gain
+
+						catalyst_TFE_siege_victory = minimal_struggle_catalyst_gain
+						catalyst_TFE_plague_spread = minimal_struggle_catalyst_gain
+						catalyst_gain_claim_on_title = minor_struggle_catalyst_gain
+						catalyst_win_any_war_within_the_region = minor_struggle_catalyst_gain # Good
+						catalyst_high_mil_competence = minimal_struggle_catalyst_gain
+						catalyst_becomes_rival_with_involved = major_struggle_catalyst_gain # Good
+						catalyst_using_a_hook_on_very_important_character = medium_struggle_catalyst_gain # good
+						catalyst_unnatural_death_important_character = medium_struggle_catalyst_gain
+						catalyst_usurp_title = major_struggle_catalyst_gain # good
+						catalyst_forced_conversion = medium_struggle_catalyst_gain
+						catalyst_reveal_secret_important = major_struggle_catalyst_gain
+						catalyst_broke_truce_against_important_character = massive_struggle_catalyst_gain # Cannot motivate the AI to do that without code support
+						catalyst_TFE_roman_grain = major_struggle_catalyst_gain
+						catalyst_TFE_roman_races = major_struggle_catalyst_gain
+						catalyst_TFE_major_historical_event_rebuilding = TFE_historically_significant_struggle_catalyst_gain
+						catalyst_tfe_declared_war = minor_struggle_catalyst_gain
+						catalyst_raided_involved = minor_struggle_catalyst_gain
+
+						catalyst_TFE_major_historical_event_turmoil = TFE_historically_significant_struggle_catalyst_gain
+					}
+				}
+			}
+
+			war_effects = {
+				###### Common
+				common_parameters = {
+				}
+
+				###### Involved
+
+				involved_parameters = {
+					white_peace_acceptance_between_involved_or_interloper_with_region_easier = yes
+					struggle_cheaper_buy_truce = yes
+					truces_by_involved_or_interlopers_within_region_longer = yes
+					apply_truce_when_sending_ward = yes
+				}
+
+				involved_character_modifier = {
+					ai_war_chance = -0.5
+					ai_war_cooldown = 0.5
+				}
+
+				involved_county_modifier = {
+					monthly_county_control_change_at_war_add = -0.01
+					monthly_county_control_change_at_war_mult = -0.10
+				}
+
+				###### Interlopers
+				interloper_parameters = {
+					white_peace_acceptance_between_involved_or_interloper_with_region_easier = yes
+					truces_by_involved_or_interlopers_within_region_longer = yes
+				}
+
+				interloper_county_modifier = {
+					monthly_county_control_change_at_war_add = -0.02
+					monthly_county_control_change_at_war_mult = -0.25
+				}
+
+				###### Uninvolved
+				uninvolved_county_modifier = {
+					monthly_county_control_change_at_war_add = -0.05
+					monthly_county_control_change_at_war_mult = -0.5
+				}
+			}
+
+			faith_effects = {
+				###### Common
+				
+				# Nothing
+
+				###### Involved
+				involved_character_modifier = {
+					opinion_of_different_faith = 5
+					opinion_of_different_faith_liege = 5
+				}
+
+				involved_parameters = {
+					completing_building_in_temple_gives_piety = yes
+					interfaith_marriages_available_between_involved_characters = yes
+					interfaith_marriages_between_involved_characters_gives_piety = yes
+					release_prisoner_diff_faith_gives_prestige = yes
+				}
+
+				###### Interlopers
+
+				# Nothing
+
+				###### Uninvolved
+
+				# Nothing
+			}
+
+			culture_effects = {
+				###### Common
+				common_parameters = {
+					cheaper_to_convert_to_struggle_culture = yes
+				}
+
+				###### Involved
+				involved_parameters = {
+					learning_languages_gives_prestige = yes
+					granting_title_to_local_noble_gives_prestige = yes
+					gain_acceptance_when_developing_other_culture_county = yes
+					easier_culture_hybridising_for_involved_and_interlopers = yes
+					release_prisoner_diff_culture_gives_prestige = yes
+				}
+
+				involved_character_modifier = {
+					cultural_head_acceptance_gain_mult = 0.2
+					opinion_of_different_culture = 20
+					learn_language_scheme_phase_duration_add = medium_scheme_phase_duration_bonus_value
+					cultural_head_fascination_mult = 0.25
+				}
+
+				###### Interlopers
+				interloper_parameters = {
+					easier_culture_hybridising_for_involved_and_interlopers = yes
+				}
+
+				###### Uninvolved
+
+				# Nothing
+			}
+
+			other_effects = {
+				###### Common
+				all_county_modifier = {
+					development_growth_factor = 0.1
+					build_speed = 0.1
+					holding_build_gold_cost = -0.2
+					build_gold_cost = -0.2
+				}
+
+				###### Involved
+				involved_parameters = {
+					struggle_prestige_from_feast = yes
+					struggle_gifts_involved_diff_faith_culture_leads_to_friendship = yes
+					struggle_grant_titles_diff_faith_culture_to_leads_to_friendship = yes
+					struggle_cannot_execute_involved_prisoners  = yes
+					struggle_becoming_friend_gives_prestige = yes
+					involved_form_alliances_with_each_other_easier = yes
+					struggle_agents_less_likely_to_join_schemes = yes
+				}
+				involved_character_modifier = {					
+					legitimacy_gain_mult = -0.05
+				}
+
+				###### Interlopers
+
+				###### Uninvolved
+
+				# Really hard for them to stay here
+
+			}
+			ending_decisions = {
+				struggle_italian_ending_synthesis_decision
+				struggle_italian_ending_incorporation_decision
+				struggle_italian_ending_restoration_decision
+				struggle_italian_ending_subjugation_decision
+			}
+		}
+
+		# Phase Endings
+		struggle_TFE_italian_phase_devastation = {
+			save_progress = yes
+
+			on_start = {
+				
+				TFE_italian_struggle_devastation_county_effect = yes
+				TFE_italian_struggle_devastation_ruler_effect = yes
+
+				TFE_italian_struggle_end_effect = {
+					ENDING = yes
+					EVENT = italian_struggle.1004
+					FLAG = flag:TFE_italian_struggle_devastation_ending
+				}
+			}
+		}
+	}
+}

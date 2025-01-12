@@ -1,0 +1,20 @@
+﻿namespace = succexp
+
+succexp.004 = {
+    type = none
+    hidden = yes
+    immediate = {
+        if = {
+            limit = { exists = title:e_western_roman_empire }
+            title:e_western_roman_empire = {
+                add_title_law = imperial_elective_succession_law
+            }
+        }
+        if = {
+            limit = { exists = title:e_byzantium }
+            title:e_byzantium = {
+                add_title_law = imperial_elective_succession_law
+            }
+        }
+    }
+}

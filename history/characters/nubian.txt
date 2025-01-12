@@ -1,0 +1,524 @@
+﻿
+
+##############################################################
+# 
+# NOBATIAN KINGS
+# 
+# Cybrxkhan
+# 
+##############################################################
+
+# Ported directly from Vanilla
+# Cybrxkhan Note for TFE:
+# Changed dates from vanilla
+# Although some sources online list him as 6th century, apparently he is more likely to be from the 5th century
+# Possibly first Nubian king who converted to Christianity
+166183 = {
+	name = "Silko"
+	dynasty = 101778
+	religion = "coptic"
+	culture = "nubian"
+	father=nobatia_01 # Kharamadoye, predecessor of Silko
+	mother=nobatia_05
+	379.1.3 = { # Unknown
+		birth = yes
+	}
+	400.1.1 = {
+		religion = nicene
+	}
+	451.1.1 = {
+		religion = coptic
+	}
+	460.1.11 = { # Unknown, possibly killed in battle by Phonen, c. mid 5th century
+		death = {
+			death_reason = death_battle
+			killer = blemmyes_ruler_06
+		}
+	}
+}
+
+# Ported directly from Vanilla
+# Cybrxkhan Note for TFE:
+# Changed dates from vanilla
+# His existence is based on the Dendur Inscription - might have even been a local chieftain
+# The inscription dates to either 529, 544, 559, or 574 (based on comparison with Theodore bishop of Philae), but 544 and 559 are the likeliest 
+# For now, I am going with the interpretation that he was mid to late 6th century and made him Eirpanome's son
+# Adjusted his life/death dates slightly to better align with Eirpanome's dates below
+166184 = {
+	name = "Tokiltoeton"
+	dynasty = 101778
+	religion = "coptic"
+	culture = "nubian"
+	father = 166185
+	mother = nobatia_04
+	525.8.1 = {
+		birth = "525.8.1"
+	}
+	600.9.9 = {
+		death = "600.9.9"
+	}
+}
+
+# Ported directly from Vanilla
+# Cybrxkhan Note for TFE:
+# Changed dates from vanilla (slightly though)
+# He is probably 6th century, but made him born earlier so he could be ruler at the 532 bookmark
+# Relation with earlier Nobatian rulers is unknown, but for convenience, he is Silko's great-grandson
+166185 = {
+	name = "Eirpanome"
+	dynasty = 101778
+	religion = "coptic"
+	culture = "nubian"
+	father = nobatia_03 # Mouses, Abourni's son
+	490.1.8 = {
+		birth = "490.1.8"
+	}
+	524.1.1 = {
+		add_spouse = nobatia_04
+	}
+	560.1.30 = {
+		death = "560.1.30"
+	}
+}
+
+# Silko's Fictitious fatther
+nobatia_01 = {
+	name = "Soizuros"
+	dynasty = 101778
+	culture = "nubian"
+	religion = "kushitism_pagan"
+	342.6.15 = { # Unknown
+		birth = yes
+	}
+	361.1.1 = {
+		add_spouse = nobatia_05
+	}
+	419.12.13 = { # Unknown
+		death = yes
+	}
+}
+
+# Abourni, also mid 5th century, Silko's successor, possibly related
+nobatia_02 = {
+	name = "Abourni"
+	dynasty = 101778
+	culture = "nubian"
+	religion = "nicene"
+	father=166183 # Vanilla's Silko
+	411.2.4 = { # Unknown
+		birth = yes
+	}
+	451.1.1 = {
+		religion = coptic
+	}
+	488.8.4 = { # Unknown
+		death = yes
+	}
+}
+
+# Mouses, Abourni's son attested in Phonen letter, c. mid 5th century
+nobatia_03 = {
+	name = "Mouses"
+	dynasty = 101778
+	culture = "nubian"
+	religion = "coptic"
+	father=nobatia_02
+	452.3.16 = { # Unknown
+		birth = yes
+	}
+	509.3.12 = { # Unknown
+		death = yes
+	}
+}
+
+# Fictitious wife of Eirpanome
+nobatia_04 = {
+	name = "Theodorake"
+	female=yes
+	culture = "nubian"
+	religion = "coptic"
+	502.2.8 = {
+		birth = "502.2.8"
+	}
+	567.8.9 = {
+		death = "567.8.9"
+	}
+}
+
+# Fictitious wife of Kharamadoye
+nobatia_05 = {
+	name = "Penatti"
+	female=yes
+	culture = "nubian"
+	religion = "kushitism_pagan"
+	344.8.19 = { # Unknown
+		birth = yes
+	}
+	407.6.8 = { # Unknown
+		death = yes
+	}
+}
+
+# Eunuch who served under Eirpanome
+nobatia_06 = {
+	name = "Shai"
+	culture = "nubian"
+	religion = "coptic"
+	trait = beardless_eunuch
+	501.2.12 = { # Unknown
+		birth = yes
+	}
+	532.1.1 = {
+		employer = 166185
+	}
+	579.4.22 = { # Unknown
+		death = yes
+	}
+}
+
+# Papnute, office-holder under Eirpanome with the Byzantine title stepharis
+# Attested in the Dendur Inscription
+nobatia_07 = {
+	name = "Papnute"
+	dynasty = dynasty_nubian_stepharis
+	culture = "nubian"
+	religion = "coptic"
+	507.7.26 = { # Unknown
+		birth = yes
+	}
+	572.8.14 = { # Unknown
+		death = yes
+	}
+}
+
+# Epiphanios, office-holder under Eirpanome with the Byzantine title domesticus
+# Attested in the Dendur Inscription (where it is written as Epephanios (sic))
+nobatia_08 = {
+	name = "Epiphanios"
+	dynasty = dynasty_nubian_domesticus
+	culture = "nubian"
+	religion = "coptic"
+	506.11.14 = { # Unknown
+		birth = yes
+	}
+	569.12.29 = { # Unknown
+		death = yes
+	}
+}
+
+# Sirma, office-holder under Eirpanome with the Byzantine title veredarius
+# Attested in the Dendur Inscription
+nobatia_09 = {
+	name = "Sirma"
+	dynasty = dynasty_nubian_veredarius
+	culture = "nubian"
+	religion = "coptic"
+	494.12.19 = { # Unknown
+		birth = yes
+	}
+	577.12.17 = { # Unknown
+		death = yes
+	}
+}
+
+# Joseph, high official holding the title of Exarch of Talmis, associated with Eirpanome and Tokiltoeton as late as 574 CE
+# It is uncertain whether "Exarch" was a civil, military, or ecclesiastical position
+nobatia_10 = {
+	name = "Ioseph"
+	dynasty = dynasty_nubian_talmis
+	culture = "nubian"
+	religion = "coptic"
+	510.3.7 = { # Unknown
+		birth = yes
+	}
+	596.7.8 = { # Unknown
+		death = yes
+	}
+}
+
+# Fictitious mother of Kharamadoye
+nobatia_11 = {
+	name = "Douriko"
+	female=yes
+	culture = "nubian"
+	religion = "kushitism_pagan"
+	339.2.22 = {
+		birth = yes
+	}
+	406.7.18 = {
+		death = yes
+	}
+}
+
+# Moses the Black
+nobatia_12 = {
+	name = "Mouses" 
+	dna = dna_mouses
+	dynasty = dynasty_nubian_aithiops
+	culture = "nubian"
+	religion = "kushitism_pagan"
+	prowess = 8
+	trait = education_martial_2
+	trait = wrathful
+	trait = sadistic
+	trait = arbitrary
+	trait = strong
+	330.1.1 = {
+		birth = yes
+		effect = { add_character_flag = do_not_generate_starting_family }
+	}	
+	370.1.1 = {
+		religion = "nicene"
+		remove_trait = wrathful
+		remove_trait = sadistic
+		remove_trait = arbitrary
+		add_trait = humble
+		add_trait = compassionate
+		add_trait = calm
+		add_trait = devoted
+	}
+	405.1.1 = {
+		death = yes
+	}
+}
+
+
+##############################################################
+# 
+# NUBIAN MISC/PLACEHOLDERS
+# 
+##############################################################
+
+nobatia_misc_01 = {
+	name = "Zacharias"
+	culture = "nubian"
+	religion = "kushitism_pagan"
+	343.1.1 = {
+		birth = yes
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+nobatia_misc_02 = {
+	name = "Hoase"
+	culture = "nubian"
+	religion = "kushitism_pagan"
+	364.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+nobatia_misc_03 = {
+	name = "Aberikos"
+	culture = "nubian"
+	religion = "kushitism_pagan"
+	448.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+nobatia_misc_04 = {
+	name = "Stephanou"
+	culture = "nubian"
+	religion = "kushitism_pagan"
+	332.1.1 = {
+		birth = yes
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+nobatia_misc_05 = {
+	name = "Theodote"
+	culture = "nubian"
+	religion = "kushitism_pagan"
+	370.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+nobatia_misc_06 = {
+	name = "Thoma"
+	culture = "nubian"
+	religion = "kushitism_pagan"
+	456.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+nobatia_misc_07 = {
+	name = "Thoma"
+	culture = "nubian"
+	religion = "kushitism_pagan"
+	332.1.1 = {
+		birth = yes
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+nobatia_misc_08 = {
+	name = "Georgios"
+	culture = "nubian"
+	religion = "kushitism_pagan"
+	362.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+nobatia_misc_09 = {
+	name = "Simeoni"
+	culture = "nubian"
+	religion = "kushitism_pagan"
+	445.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+
+nobatia_misc_11 = {
+	name = "Theodote"
+	culture = "nubian"
+	religion = "kushitism_pagan"
+	369.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+nobatia_misc_12 = {
+	name = "Georgios"
+	culture = "nubian"
+	religion = "kushitism_pagan"
+	441.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+
+nobatia_misc_16 = { #Placeholder for Alodia
+	name = "Simeoni"
+	culture = "nubian"
+	religion = "kushitism_pagan"
+	496.4.2 = {
+		birth = yes
+	}
+	582.4.9 = {
+		death = yes
+	}
+}
+nobatia_misc_17 = { #Placeholder for Nobatia
+	name = "Philemon"
+	culture = "nubian"
+	religion = "kushitism_pagan"
+	500.3.9 = {
+		birth = yes
+	}
+	579.4.13 = {
+		death = yes
+	}
+}
+nobatia_misc_18 = { #Placeholder for Makuria
+	name = "Athanasios"
+	culture = "nubian"
+	religion = "kushitism_pagan"
+	501.12.13 = {
+		birth = yes
+	}
+	588.6.22 = {
+		death = yes
+	}
+}
+nobatia_misc_19 = { #Placeholder for Makuria
+	name = "Thadeosi"
+	culture = "nubian"
+	religion = "kushitism_pagan"
+	510.3.6 = {
+		birth = yes
+	}
+	572.4.17 = {
+		death = yes
+	}
+}
+nobatia_misc_20 = { #Placeholder for Makuria
+	name = "Kollouthos"
+	culture = "nubian"
+	religion = "kushitism_pagan"
+	322.4.9 = {
+		birth = yes
+	}
+	373.3.7 = {
+		death = yes
+	}
+}
+nobatia_misc_21 = { #Placeholder for Nubia
+	name = "Zosima"
+	culture = "nubian"
+	religion = "kushitism_pagan"
+	335.6.29 = {
+		birth = yes
+	}
+	381.9.27 = {
+		death = yes
+	}
+}
+nobatia_misc_22 = { #Placeholder for Nubia
+	name = "Menankouda"
+	culture = "nubian"
+	religion = "kushitism_pagan"
+	367.4.22 = {
+		birth = yes
+	}
+	419.6.17 = {
+		death = yes
+	}
+}
+nobatia_misc_23 = { #Placeholder for Nubia
+	name = "Lazaros"
+	culture = "nubian"
+	religion = "kushitism_pagan"
+	448.4.3 = {
+		birth = yes
+	}
+	490.11.16 = {
+		death = yes
+	}
+}
+nobatia_misc_24 = { #Placeholder for Nubia
+	name = "Papasinen"
+	culture = "nubian"
+	religion = "kushitism_pagan"
+	376.3.11 = {
+		birth = yes
+	}
+	439.6.3 = {
+		death = yes
+	}
+}
+nobatia_misc_25 = { #Placeholder for Nubia
+	name = "Hoase"
+	culture = "nubian"
+	religion = "kushitism_pagan"
+	459.1.3 = {
+		birth = yes
+	}
+	507.6.8 = {
+		death = yes
+	}
+}

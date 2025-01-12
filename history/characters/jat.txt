@@ -1,0 +1,59 @@
+﻿debul_01 = {
+	name = "Shabban"
+	religion = "pudgalavada"
+	culture = "jat"
+	328.1.1 = {
+		birth = "368.1.1"
+	}
+	388.1.1 = {
+		death = "388.1.1"
+	}
+}
+debul_02 = {
+	name = "Punhun"
+	religion = "pudgalavada"
+	culture = "jat"
+	368.1.1 = {
+		birth = "368.1.1"
+	}
+	412.1.1 = {
+		death = "412.1.1"
+	}
+}
+debul_03 = {
+	name = "Sapinud"
+	religion = "pudgalavada"
+	culture = "jat"
+	female = yes
+	father = debul_01
+	400.1.1 = {
+		birth = "400.1.1"
+	}
+	419.1.1 = {
+		add_spouse = 180620 #Bahrma V
+	}
+	456.1.1 = {
+		death = "456.1.1"
+	}
+}
+
+
+##################################################################################
+# 
+# FICTITIOUS PLACEHOLDERS
+# By Cybrxkhan
+# 
+##################################################################################
+
+
+jat_misc_001 = {
+	name = "Alhana"
+	religion = "pudgalavada"
+	culture = "jat"
+	500.3.8 = {
+		birth = yes
+	}
+	554.7.30 = {
+		death = yes
+	}
+}

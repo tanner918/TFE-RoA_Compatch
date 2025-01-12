@@ -1,0 +1,997 @@
+﻿anicia_03 = {
+	name = "Saturnius"
+	religion = roman_pagan
+	culture = afro_roman
+	dynasty = anicii
+	125.1.1 = {
+		birth = yes
+	}
+	189.1.1 = {
+		death = yes
+	}
+}
+anicia_04 = {
+	name = "Faustus"
+	religion = roman_pagan
+	culture = afro_roman
+	father = anicia_03 #Saturnius
+	dynasty = anicii
+	163.1.1 = {
+		birth = yes
+	}
+	189.1.1 = {
+		add_spouse = anicia_02 #Paulla
+	}
+	229.1.1 = {
+		death = yes
+	}
+}
+anicia_05 = {
+	name = "Paulinus"
+	religion = roman_pagan
+	culture = afro_roman
+	father = anicia_04 #Faustus
+	mother = anicia_02 #Paulla
+	dynasty = anicii
+	190.1.1 = {
+		birth = yes
+	}
+	221.1.1 = {
+		add_spouse = anicia_07 #Vibiana
+	}
+	255.1.1 = {
+		death = yes
+	}
+}
+anicia_06 = {
+	name = "Vibianus"
+	religion = roman_pagan
+	culture = afro_roman
+	169.1.1 = {
+		birth = yes
+	}
+	230.1.1 = {
+		death = yes
+	}
+}
+anicia_07 = {
+	name = "Vibiana"
+	religion = roman_pagan
+	culture = afro_roman
+	father = anicia_06 #Vibianus
+	female = yes
+	207.1.1 = {
+		birth = yes
+	}
+	262.1.1 = {
+		death = yes
+	}
+}
+anicia_08 = {
+	name = "Flavianus"
+	religion = roman_pagan
+	culture = afro_roman
+	father = anicia_05 #Paulinus
+	mother = anicia_07 #Vibiana
+	dynasty = anicii
+	221.1.1 = {
+		birth = yes
+	}
+	276.1.1 = {
+		death = yes
+	}
+}
+anicia_09 = {
+	name = "Paulinus"
+	religion = roman_pagan
+	culture = afro_roman
+	father = anicia_05 #Paulinus
+	mother = anicia_07 #Vibiana
+	dynasty = anicii
+	224.1.1 = {
+		birth = yes
+	}
+	288.1.1 = {
+		death = yes
+	}
+}
+anicia_10 = {
+	name = "Faustus"
+	religion = roman_pagan
+	culture = afro_roman
+	father = anicia_09 #Paulinus
+	dynasty = anicii
+	242.1.1 = {
+		birth = yes
+	}
+	267.1.1 = {
+		add_spouse = anicia_11 #Amnia
+	}
+	301.1.1 = {
+		death = yes
+	}
+}
+anicia_11 = {
+	name = "Amnia"
+	religion = roman_pagan
+	culture = afro_roman
+	dynasty = demetrias
+	female = yes
+	246.1.1 = {
+		birth = yes
+	}
+	312.1.1 = {
+		death = yes
+	}
+}
+anicia_12 = {
+	name = "Julianus"
+	religion = roman_pagan
+	culture = afro_roman
+	father = anicia_10 #Faustus
+	mother = anicia_11 #Amnia
+	dynasty = anicii
+	273.1.1 = {
+		birth = yes
+	}
+	301.1.1 = {
+		add_spouse = caesonii_06 #Manilia
+	}
+	325.1.1 = {
+		death = yes
+	}
+}
+anicia_13 = {
+	name = "Paulinus"
+	religion = roman_pagan
+	culture = afro_roman
+	father = anicia_10 #Faustus
+	mother = anicia_11 #Amnia
+	dynasty = anicii
+	269.1.1 = {
+		birth = yes
+	}
+	329.1.1 = {
+		death = yes
+	}
+}
+
+#Africae 
+africae_01 = {
+	name = "Anullinus"
+	religion = roman_pagan
+	culture = afro_roman
+	261.1.1 = {
+		birth = yes
+	}
+	338.1.1 = {
+		death = yes
+	}
+}
+africae_02 = {
+	name = "Volusianus"
+	religion = roman_pagan
+	culture = afro_roman
+	dynasty = rufi
+	246.1.1 = {
+		birth = yes
+	}
+	330.1.1 = {
+		death = yes
+	}
+}
+africae_03 = {
+	name = "Albinus"
+	religion = roman_pagan
+	culture = afro_roman
+	father = africae_02 #Volusianus
+	dynasty = rufi
+	289.1.1 = {
+		birth = yes
+	}
+	340.1.1 = {
+		add_spouse = africae_41 #Albina
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+africae_41 = {
+	name = "Albina"
+	religion = nicene
+	culture = afro_roman
+	female = yes
+	320.1.1 = {
+		birth = yes
+	}
+	379.1.1 = {
+		death = yes
+	}
+}
+africae_42 = {
+	name = "Volusianus"
+	religion = roman_pagan
+	culture = afro_roman
+	dynasty = rufi
+	father = africae_03 #Albinus
+	mother = africae_41 #Albina
+	358.1.1 = {
+		birth = yes
+	}
+	437.1.1 = {
+		death = yes
+	}
+}
+africae_43 = {
+	name = "Helpidius"
+	religion = nicene
+	culture = afro_roman
+	362.1.1 = {
+		birth = yes
+	}
+	437.1.1 = {
+		death = yes
+	}
+}
+africae_44 = {
+	name = "Septiminus"
+	religion = nicene
+	culture = afro_roman
+	362.1.1 = {
+		birth = yes
+	}
+	437.1.1 = {
+		death = yes
+	}
+}
+africae_45 = {
+	name = "Diotimus"
+	religion = nicene
+	culture = afro_roman
+	371.1.1 = {
+		birth = yes
+	}
+	437.1.1 = {
+		death = yes
+	}
+}
+africae_46 = {
+	name = "Proculus"
+	religion = nicene
+	culture = afro_roman
+	371.1.1 = {
+		birth = yes
+	}
+	437.1.1 = {
+		death = yes
+	}
+}
+africae_47 = {
+	name = "Donatus"
+	religion = nicene
+	culture = afro_roman
+	369.1.1 = {
+		birth = yes
+	}
+	437.1.1 = {
+		death = yes
+	}
+}
+africae_48 = {
+	name = "Palladius"
+	religion = nicene
+	culture = afro_roman
+	382.1.1 = {
+		birth = yes
+	}
+	437.1.1 = {
+		death = yes
+	}
+}
+africae_49 = {
+	name = "Apringius"
+	religion = nicene
+	culture = afro_roman
+	382.1.1 = {
+		birth = yes
+	}
+	437.1.1 = {
+		death = yes
+	}
+}
+africae_50 = {
+	name = "Eucharius"
+	religion = nicene
+	culture = afro_roman
+	382.1.1 = {
+		birth = yes
+	}
+	437.1.1 = {
+		death = yes
+	}
+}
+africae_51 = {
+	name = "Julianus"
+	religion = nicene
+	culture = afro_roman
+	382.1.1 = {
+		birth = yes
+	}
+	437.1.1 = {
+		death = yes
+	}
+}
+africae_22 = {
+	name = "Chilo"
+	religion = nicene
+	culture = afro_roman
+	339.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+africae_52 = {
+	name = "Julius"
+	religion = roman_pagan
+	culture = afro_roman
+	324.1.1 = {
+		birth = yes
+	}
+	409.1.1 = {
+		death = yes
+	}
+}
+africae_53 = {
+	name = "Bonifatius"
+	dynasty = bonifatius_dynasty
+	religion = nicene
+	culture = afro_roman
+	387.1.1 = {
+		birth = yes
+	}
+	412.1.1 = {
+		add_spouse = africae_54 # Pelagia
+	}
+	432.1.1 = {
+		death = yes
+	}
+}
+africae_54 = {
+	name = "Pelagia"
+	female = yes
+	dynasty = 99920000
+	religion = "arianism"
+	culture = "gothic"
+	father = 992007
+	390.1.1 = {
+		birth = yes
+	}
+	419.1.1 = {
+		culture = "visigothic"
+		religion = nicene
+	}
+	445.1.1 = {
+		death = yes
+	}
+}
+africae_55 = {
+	name = "Bonifatia" # fictional name
+	female = yes
+	dynasty = bonifatius_dynasty
+	religion = nicene
+	culture = afro_roman
+	father = africae_53 #Bonifatius
+	mother = africae_54 #Pelagia
+	410.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	460.1.1 = {
+		death = yes
+	}
+}
+
+
+vandals_017 = {
+	name = "Flavius"
+	religion = "arianism"
+	culture = "afro_roman"
+	423.1.1 = {
+		birth = yes
+	}
+	499.1.1 = {
+		death = yes
+	}
+}
+
+vandals_018 = {
+	name = "Ausonius"
+	religion = "arianism"
+	culture = "afro_roman"
+	499.1.1 = {
+		birth = yes
+	}
+	558.1.1 = {
+		death = yes
+	}
+}
+
+vandals_019 = {
+	name = "Julianus"
+	religion = "arianism"
+	culture = "afro_roman"
+	421.1.1 = {
+		birth = yes
+	}
+	488.1.1 = {
+		death = yes
+	}
+}
+vandals_020 = {
+	name = "Arcadius"
+	religion = "arianism"
+	culture = "afro_roman"
+	499.1.1 = {
+		birth = yes
+	}
+	549.1.1 = {
+		death = yes
+	}
+}
+#### Roman Emperors
+#### Severans
+severans_0 = {
+	name = "Macer"
+	# Severus Septimius Macer
+	dynasty = 1022218
+	religion = "roman_pagan"
+	culture = "afro_roman"
+	75.4.11 = {
+		birth = "75.4.11"
+	}
+	145.2.4 = {
+		death = "145.2.4"
+	}
+}
+severans_01 = {
+	name = "Aper"
+	# Claudius Septimius Aper
+	dynasty = 1022218
+	religion = "roman_pagan"
+	culture = "afro_roman"
+	father = severans_0
+	100.8.2 = {
+		birth = "100.8.2"
+	}
+	170.1.1 = {
+		death = "170.1.1"
+	}
+}
+severans_02 = {
+	name = "Publius"
+	# Claudius Septimius Aper
+	dynasty = 1022218
+	religion = "roman_pagan"
+	culture = "afro_roman"
+	father = severans_01
+	123.2.1 = {
+		birth = "123.2.1"
+	}
+	188.1.1 = {
+		death = "188.1.1"
+	}
+}
+severans_021 = {
+	name = "Gaius"
+	# Claudius Septimius Aper
+	dynasty = 1022218
+	religion = "roman_pagan"
+	culture = "afro_roman"
+	father = severans_01
+	150.2.1 = {
+		birth = yes
+	}
+	188.1.1 = {
+		death = "188.1.1"
+	}
+}
+severans_03 = {
+	name = "Septimius"
+	# Claudius Septimius Aper
+	dynasty = 1022218
+	religion = "roman_pagan"
+	culture = "afro_roman"
+	father = severans_02
+	173.6.17 = {
+		birth = "173.6.17"
+	}
+	200.1.1 = {
+		death = "200.1.1"
+	}
+}
+severans_08 = {
+	name = "Aper"
+	# Claudius Septimius Aper
+	dynasty = 1022218
+	religion = "roman_pagan"
+	culture = "afro_roman"
+	father = severans_03
+	190.12.1 = {
+		birth = "190.12.1"
+	}
+	234.1.1 = {
+		death = "234.1.1"
+	}
+}
+severans_012 = {
+	name = "Septimius"
+	# Lucius Septimius Severeus
+	dynasty = 1022218
+	religion = "roman_pagan"
+	culture = "afro_roman"
+	father = severans_0
+	100.2.29 = {
+		birth = "100.2.29"
+	}
+	178.1.1 = {
+		death = "178.1.1"
+	}
+}
+severans_04 = {
+	name = "Geta"
+	# Gaius Septimius Geta
+	dynasty = 1022218
+	religion = "roman_pagan"
+	culture = "afro_roman"
+	father = severans_012
+	119.9.30 = {
+		birth = "119.9.30"
+	}
+	143.1.1 = {
+		add_spouse = fulvi_02 # Pia Fulvia
+	}
+	170.1.1 = {
+		death = "170.1.1"
+	}
+}
+severans_041 = {
+	name = "Polla"
+	# Polla Septimia
+	female = yes
+	dynasty = 1022218
+	religion = "roman_pagan"
+	culture = "afro_roman"
+	father = severans_012
+	120.6.30 = {
+		birth = "120.6.30"
+	}
+	170.1.1 = {
+		death = "170.1.1"
+	}
+}
+145269 = {
+	name = "Septimius"
+	# Caesar Lucius Septimius Severus Pertinax Augustus
+	dynasty = 1022218
+	religion = "roman_pagan"
+	culture = "afro_roman"
+	trait = generous
+	trait = diligent
+	trait = zealous
+	trait = education_martial_3
+	trait = apotheosised_trait
+	father = severans_04 # Gaius Septimius Geta
+	mother = fulvi_02 # Polla Septimia
+	145.4.11 = {
+		birth = "145.4.11"
+	}
+	180.1.1 = {
+		add_spouse = basianus_02 # Iulia Bassiana
+	}
+	211.2.4 = {
+		death = "211.2.4"
+	}
+}
+severans_05 = {
+	name = "Geta"
+	# Caesar Lucius Septimius Severus Pertinax Augustus
+	dynasty = 1022218
+	religion = "roman_pagan"
+	culture = "afro_roman"
+	father = severans_04 # Gaius Septimius Geta
+	mother = fulvi_02 # Polla Septimia
+	150.6.28 = {
+		birth = "150.6.28"
+	}
+	243.2.4 = {
+		death = "243.2.4"
+	}
+}
+severans_051 = {
+	name = "Octavilla"
+	# Caesar Lucius Septimius Severus Pertinax Augustus
+	female = yes
+	dynasty = 1022218
+	religion = "roman_pagan"
+	culture = "afro_roman"
+	father = severans_04 # Gaius Septimius Geta
+	mother = fulvi_02 # Polla Septimia
+	157.2.12 = {
+		birth = "157.2.12"
+	}
+	243.2.4 = {
+		death = "243.2.4"
+	}
+}
+145268 = {
+	name = "Macrinus"
+	# Marcus Opellius Severus Macrinus Augustus Pius Felix
+	dynasty = 1022217
+	religion = "roman_pagan"
+	culture = "afro_roman"
+	trait = honest
+	trait = education_diplomacy_2
+	165.1.1 = {
+		birth = "165.1.1"
+	}
+	218.6.8 = {
+		death = "218.6.8"
+	}
+}
+145256 = {
+	name = "Aemilian"
+	# Caesar Marcus Aemilius Aemilianus Augustus
+	dynasty = 1022207
+	religion = "roman_pagan"
+	culture = "afro_roman"
+	trait = education_martial_2
+	218.1.1 = {
+		birth = "218.1.1"
+	}
+	253.8.1 = {
+		death = "253.8.1"
+	}
+}
+
+### Gens Fulvia
+fulvi_0 = {
+	name = "Pius"
+	dynasty = dynasty_fulvius
+	religion = "roman_pagan"
+	culture = "afro_roman"
+	80.9.30 = {
+		birth = "80.9.30"
+	}
+	140.1.1 = {
+		death = "140.1.1"
+	}
+}
+fulvi_001 = {
+	name = "Plautius"
+	dynasty = dynasty_fulvius
+	religion = "roman_pagan"
+	culture = "afro_roman"
+	father = fulvi_0
+	100.1.3 = {
+		birth = "100.1.3"
+	}
+	175.1.1 = {
+		death = "175.1.1"
+	}
+}
+fulvi_011 = {
+	name = "Plautius"
+	dynasty = dynasty_fulvius
+	religion = "roman_pagan"
+	culture = "afro_roman"
+	father = fulvi_001
+	143.1.30 = {
+		birth = "143.1.30"
+	}
+	175.1.1 = {
+		death = "175.1.1"
+	}
+}
+fulvi_03 = {
+	name = "Plautilla"
+	dynasty = dynasty_fulvius
+	religion = "roman_pagan"
+	culture = "afro_roman"
+	father = fulvi_011
+	female = yes
+	185.9.12 = {
+		birth = "185.9.12"
+	}
+	211.1.1 = {
+		death = "211.1.1"
+	}
+}
+fulvi_031 = {
+	name = "Plautius"
+	dynasty = dynasty_fulvius
+	religion = "roman_pagan"
+	culture = "afro_roman"
+	father = fulvi_011
+	185.9.12 = {
+		birth = "185.9.12"
+	}
+	211.1.1 = {
+		death = "211.1.1"
+	}
+}
+fulvi_0311 = {
+	name = "Plautilla"
+	dynasty = dynasty_fulvius
+	religion = "roman_pagan"
+	culture = "afro_roman"
+	father = fulvi_031
+	female = yes
+	200.9.12 = {
+		birth = "200.9.12"
+	}
+	240.1.1 = {
+		death = "240.1.1"
+	}
+}
+fulvi_01 = {
+	name = "Pius"
+	dynasty = dynasty_fulvius
+	religion = "roman_pagan"
+	culture = "afro_roman"
+	father = fulvi_0
+	102.2.21 = {
+		birth = "102.2.21"
+	}
+	175.1.1 = {
+		death = "175.1.1"
+	}
+}
+fulvi_02 = {
+	name = "Pia"
+	female = yes
+	dynasty = dynasty_fulvius
+	religion = "roman_pagan"
+	culture = "afro_roman"
+	father = fulvi_01
+	120.9.30 = {
+		birth = "120.9.30"
+	}
+	200.1.1 = {
+		death = "200.1.1"
+	}
+}
+
+##############################################################################
+# 
+# FAMILY OF SAINT AUGUSTINE
+# Research and info thanks to Huriale, coded by cybrxkhan
+# 
+##############################################################################
+
+# Saint Augustine's father
+augustine_01 = {
+	name="Patricius"
+	religion="roman_pagan"
+	culture = afro_roman
+	trait=wrathful # Violent temper
+	trait=lustful # Adulterer
+	dynasty = dynasty_hipponensis
+	310.10.3 = { # Would've been roughly 50 years old around 361 CE as he was 20 years older than Saint Augustine's mother
+		birth = yes
+	}
+	350.1.1 = {
+		add_spouse = augustine_02
+	}
+	372.1.1 = {
+		religion = "nicene"	# Converted to Christianity on deathbed
+	}
+	372.1.2 = { # Died when Saint Augustine was 17 (?)
+		death = yes
+	}
+}
+
+# Saint Augustine's mother
+augustine_02 = {
+	name="Monica"
+	female=yes
+	religion="nicene"
+	culture = afro_roman
+	trait=zealous # Very devout
+	trait=generous # Almsgiving
+	trait=compassionate # Cared deeply for her son
+	331.6.9 = { # Would've been 30 years old in 361 CE as she had Augustine in 354 at age 23
+		birth = yes
+	}
+	387.1.19 = { # Dunno exact date
+		death = yes
+	}
+}
+
+# Saint Augustine
+augustine_03 = {
+	name="Augustinus"
+	religion="nicene"
+	culture = afro_roman
+	trait=intellect_good_3
+	#trait=education_learning_4
+	#trait=theologian
+	#trait=zealous
+	father=augustine_01
+	mother=augustine_02
+	diplomacy = 7
+	martial = 2
+	learning = 8
+	prowess = 3
+	dynasty = dynasty_hipponensis
+	disallow_random_traits = yes
+	354.11.13 = { # Exact date
+		birth = yes
+	}
+	360.11.13 = {		
+		add_trait = curious
+	}
+	370.11.13 = {
+		add_trait = education_learning_4
+		add_trait = theologian
+		#add_trait = zealous
+		add_trait = lustful # Said to be a hedonist in his youth
+		add_trait = humble
+		add_trait = diligent
+		add_trait = devoted
+	}
+	376.1.1 = {
+		religion = "manichean" # Spent 10 years as a Manichean, much to the chagrin of his mother
+	}
+	386.1.1 = {
+		religion = "nicene"	# Raised Christian, became Manichean, and (re)converted to Christianity
+		remove_trait = lustful
+		add_trait = chaste
+		add_trait = zealous
+		add_trait = temperate
+	}
+	430.8.28 = { # Exact date
+		death = yes
+	}
+}
+
+# Augustine's brother
+augustine_04 = {
+	name="Navigius"
+	religion="nicene"
+	culture = afro_roman
+	father=augustine_01
+	mother=augustine_02
+	dynasty = dynasty_hipponensis
+	356.4.21 = { # Unknown
+		birth = yes
+	}
+	415.5.15 = { # Unknown
+		death = yes
+	}
+}
+
+# Augustine's sister, later abbess
+augustine_05 = {
+	name="Perpetua"
+	female=yes
+	religion="nicene"
+	culture = afro_roman
+	father=augustine_01
+	mother=augustine_02
+	dynasty = dynasty_hipponensis
+	disallow_random_traits = yes
+	359.1.7 = { # Unknown
+		birth = yes
+	}
+	375.1.7 = {
+		add_trait = education_learning_3
+		add_trait = generous
+		add_trait = zealous
+		add_trait = chaste
+	}
+	395.1.1 = {
+		add_trait = devoted
+	}
+	423.5.16 = { # Unknown but around 423
+		death = yes
+	}
+}
+
+afroroman_01 = {
+	name= Navigius
+	religion= nicene
+	culture = afro_roman
+	326.7.21 = { # Unknown
+		birth = yes
+	}
+	415.6.15 = { # Unknown
+		death = yes
+	}
+}
+
+afroroman_02 = {
+	name= Hadrianus
+	religion= nicene
+	culture = afro_roman
+	father = afroroman_01
+	379.9.16 = { # Unknown
+		birth = yes
+	}
+	448.1.14 = { # Unknown
+		death = yes
+	}
+}
+
+afroroman_03 = {
+	name= Romanus
+	religion= nicene
+	culture = afro_roman
+	father = afroroman_02
+	427.6.21 = { # Unknown
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	497.10.11 = { # Unknown
+		death = yes
+	}
+}
+afroroman_04 = {
+	name = "Faustus" # famous manichean 
+	religion = manichean
+	culture = afro_roman
+	trait = education_learning_1
+	trait = devoted
+	340.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+afroroman_05 = {
+	name = "Rogas" # father-in-law of Heraclius
+	dynasty = rogas_dynasty
+	religion = chalcedonian
+	culture = afro_roman
+	532.1.1 = {
+		birth = yes
+	}
+	595.1.1 = {
+		death = yes
+	}
+}
+afroroman_06 = {
+	name = "Fabia" # wife of Heraclius
+	female = yes
+	dynasty = rogas_dynasty
+	religion = chalcedonian
+	culture = afro_roman
+	father = afroroman_05
+	577.1.1 = {
+		birth = yes
+	}
+	610.10.1 = {
+		name = "Eudoxia"
+	}
+	612.8.13 = {
+		death = yes
+	}
+}
+afroroman_07 = { # Real
+	name = "Dracontius" # afroroman poet
+	religion = chalcedonian
+	culture = afro_roman
+	trait = poet
+	455.1.1 = {
+		birth = yes
+	}
+	515.1.1 = {
+		death = yes
+	}
+}

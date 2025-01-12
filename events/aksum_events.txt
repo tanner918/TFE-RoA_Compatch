@@ -1,0 +1,20 @@
+﻿namespace = aksum_monument
+aksum_monument.0001 = {
+	type = character_event
+	title = aksum_monument.0001.t
+	desc = aksum_monument.0001.desc
+	theme = realm
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		add_prestige = 500
+	}
+
+	option = {
+		name = aksum_monument.0001.a
+	}
+}

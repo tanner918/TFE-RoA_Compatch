@@ -1,0 +1,1193 @@
+﻿
+190361 = {
+	name = "Hadrad" #count of Sundgau and lorraine
+	dynasty = 650 #Welf
+	religion = "chalcedonian"
+	culture = bavarian
+	712.1.1 = {
+		birth = yes
+	}
+	760.1.1 = {
+		death = yes
+	}
+}
+190362 = {
+	name = "Rothard" #count of Sundgau and lorraine
+	dynasty = 650 #Welf
+	religion = "chalcedonian"
+	culture = bavarian
+	father = 190361
+	740.1.1 = {
+		birth = yes
+	}
+	761.1.1 = {
+		add_spouse = 190363
+	}
+	770.1.1 = {
+		remove_spouse = 190363
+	}
+	771.1.1 = {
+		add_spouse = 190364
+	}
+	796.1.1 = {
+		death = yes
+	}
+}
+##End of Welf dynasty
+##Start of Agilolfing dynasty
+190426 = {
+	name = "Suanachildis" #wife of charles the hammer
+	female = yes
+	dynasty = 1044033 #Agilolfing
+	religion = "chalcedonian"
+	culture = bavarian
+	father = 190233
+	700.1.1 = {
+		birth = yes
+	}
+	745.1.1 = {
+		death = yes
+	}
+}
+190178 = {
+	name = "Garibald" #Garibald I of Bavaria
+	dynasty = 1044033 #Agilolfing (Bavaria)
+	religion = "chalcedonian"
+	culture = bavarian
+	father = alamannic_05
+	535.1.1 = {
+		birth = yes
+	}
+	558.1.1 = {
+		add_spouse = 993010 # Waldrada
+	}
+	591.1.1 = {
+		death = yes
+	}
+}
+190179 = {
+	name = "Tassilo" #Tassilo I of Bavaria
+	dynasty = 1044033 #Agilolfing (Bavaria)
+	religion = "chalcedonian"
+	culture = bavarian
+	father = 190178
+	560.1.1 = {
+		birth = yes
+	}
+	610.1.1 = {
+		death = yes
+	}
+}
+190336 = {
+	name = "Garibald" #Garibald II of Bavaria
+	dynasty = 1044033 #Agilolfing (Bavaria)
+	religion = "chalcedonian"
+	culture = bavarian
+	father = 190179
+	581.1.1 = {
+		birth = yes
+	}
+	619.1.1 = {
+		add_spouse = 190132
+	}
+	630.1.1 = {
+		death = yes
+	}
+}
+190337 = {
+	name = "Theodo" #Theodo I of Bavaria
+	dynasty = 1044033 #Agilolfing (Bavaria)
+	religion = "chalcedonian"
+	culture = bavarian
+	father = 190336
+	619.1.1 = {
+		birth = yes
+	}
+	680.1.1 = {
+		death = yes
+	}
+}
+190338 = {
+	name = "Lantpert" #Lantpert of Bavaria
+	dynasty = 1044033 #Agilolfing (Bavaria)
+	religion = "chalcedonian"
+	culture = bavarian
+	father = 190337
+	635.1.1 = {
+		birth = yes
+	}
+	680.6.1 = {
+		death = yes
+	}
+}
+190339 = {
+	name = "Theodo" #Theodo II of Bavaria
+	dynasty = 1044033 #Agilolfing (Bavaria)
+	religion = "chalcedonian"
+	culture = bavarian
+	father = 190337
+	636.1.1 = {
+		birth = yes
+	}
+	716.1.1 = {
+		death = yes
+	}
+}
+190334 = {
+	name = "Theodbert" #Theodbert of Bavaria
+	dynasty = 1044033 #Agilolfing (Bavaria)
+	religion = "chalcedonian"
+	culture = bavarian
+	father = 190339
+	665.1.1 = {
+		birth = yes
+	}
+	701.1.1 = {
+		add_spouse = 190190
+	}
+	719.1.1 = {
+		death = yes
+	}
+}
+190197 = {
+	name = "Guntrud" #wife of Liutprand of Lombardy
+	female = yes
+	dynasty = 1044033 #Agilolfing (Bavaria)
+	religion = "chalcedonian"
+	culture = bavarian
+	father = 190334
+	mother = 190190
+	697.1.1 = {
+		birth = yes
+	}
+	746.1.1 = {
+		death = yes
+	}
+}
+190226 = {
+	name = "Hugbert" #Hugbert of Bavaria
+	dynasty = 1044033 #Agilolfing (Bavaria)
+	religion = "chalcedonian"
+	culture = bavarian
+	father = 190334
+	mother = 190190
+	707.1.1 = {
+		birth = yes
+	}
+	736.1.1 = {
+		death = yes
+	}
+}
+190370 = {
+	name = "Theobald" #Theobald of Bavaria
+	dynasty = 1044033 #Agilolfing (Bavaria)
+	religion = "chalcedonian"
+	culture = bavarian
+	father = 190339
+	666.1.1 = {
+		birth = yes
+	}
+	704.1.1 = {
+		add_spouse = 190224
+	}
+	719.4.1 = {
+		remove_spouse = 190224
+	}
+	719.4.1 = {
+		death = yes
+	}
+}
+190224 = {
+	name = "Biltrude" #marries Theobald then Grimoald
+	female = yes
+	dynasty = 1044055 #Lantfriding
+	religion = "chalcedonian"
+	culture = bavarian
+	687.1.1 = {
+		birth = yes
+	}
+	751.1.1 = {
+		death = yes
+	}
+}
+190371 = {
+	name = "Tassilo" #Tassilo II of Bavaria
+	dynasty = 1044033 #Agilolfing (Bavaria)
+	religion = "chalcedonian"
+	culture = bavarian
+	father = 190339
+	669.1.1 = {
+		birth = yes
+	}
+	707.1.1 = {
+		add_spouse = 190225
+	}
+	719.8.1 = {
+		death = yes
+	}
+}
+190225 = {
+	name = "Waldrada" #marries Tassilo II
+	female = yes
+	dynasty = 1044056 #Theotbalding
+	religion = "chalcedonian"
+	culture = bavarian
+	689.1.1 = {
+		birth = yes
+	}
+	751.1.1 = {
+		death = yes
+	}
+}
+190372 = {
+	name = "Grimoald" #Grimoald of Bavaria
+	dynasty = 1044033 #Agilolfing (Bavaria)
+	religion = "chalcedonian"
+	culture = bavarian
+	father = 190339
+	704.1.1 = {
+		birth = yes
+	}
+	721.1.1 = {
+		add_spouse = 190224
+	}
+	725.1.1 = {
+		death = yes
+	}
+}
+190223 = {
+	name = "Uta" #marries Gotfrid of Allemania
+	female = yes
+	dynasty = 1044033 #Agilolfing (Bavaria)
+	religion = "chalcedonian"
+	culture = bavarian
+	father = 190339
+	655.1.1 = {
+		birth = yes
+	}
+	751.1.1 = {
+		death = yes
+	}
+}
+190335 = {
+	name = "Gotfrid" #Gotfrid of Allemania
+	dynasty = 1044033 #Agilolfing (Bavaria)
+	religion = "chalcedonian"
+	culture = bavarian
+	father = 190337
+	662.1.1 = {
+		birth = yes
+	}
+	697.1.1 = {
+		add_spouse = 190223
+	}
+	709.1.1 = {
+		death = yes
+	}
+}
+190230 = {
+	name = "Lantfrid" #Lantfrid of Allemania
+	dynasty = 1044033 #Agilolfing (Bavaria)
+	religion = "chalcedonian"
+	culture = bavarian
+	father = 190335
+	mother = 190223
+	689.2.1 = {
+		birth = yes
+	}
+	730.1.1 = {
+		death = yes
+	}
+}
+190231 = {
+	name = "Lantfrid" #Lantfrid II of Allemania
+	dynasty = 1044033 #Agilolfing (Bavaria)
+	religion = "chalcedonian"
+	culture = bavarian
+	father = 190230
+	708.1.1 = {
+		birth = yes
+	}
+	751.1.1 = {
+		death = yes
+	}
+}
+190232 = {
+	name = "Theobald" #Theobald of Allemania
+	dynasty = 1044033 #Agilolfing (Bavaria)
+	religion = "chalcedonian"
+	culture = bavarian
+	father = 190335
+	mother = 190223
+	698.1.1 = {
+		birth = yes
+	}
+	745.1.1 = {
+		death = yes
+	}
+}
+190227 = {
+	name = "Odilo" #Odilo of Bavaria
+	dynasty = 1044033 #Agilolfing (Bavaria)
+	religion = "chalcedonian"
+	culture = bavarian
+	father = 190335
+	mother = 190223
+	700.1.1 = {
+		birth = yes
+	}
+	741.1.1 = {
+		add_spouse = 190433
+	}
+	748.1.1 = {
+		death = yes
+	}
+}
+190228 = {
+	name = "Tassilo" #Tassilo III of Bavaria
+	dynasty = 1044033 #Agilolfing (Bavaria)
+	religion = "chalcedonian"
+	culture = bavarian
+	father = 190227
+	mother = 190433
+	741.1.1 = {
+		birth = yes
+	}
+	766.1.1 = {
+		add_spouse = 190351
+	}
+	796.8.1 = {
+		death = yes
+	}
+}
+190229 = {
+	name = "Theodo"
+	dynasty = 1044033 #Agilolfing (Bavaria)
+	religion = "chalcedonian"
+	culture = bavarian
+	father = 190228
+	mother = 190351
+	767.1.1 = {
+		birth = yes
+	}
+	796.8.1 = {
+		death = yes
+	}
+}
+190233 = {
+	name = "Huoching"
+	dynasty = 1044033 #Agilolfing (Bavaria)
+	religion = "chalcedonian"
+	culture = bavarian
+	father = 190335
+	mother = 190223
+	675.1.1 = {
+		birth = yes
+	}
+	744.1.1 = {
+		death = yes
+	}
+}
+190234 = {
+	name = "Hnabi" #Hnabi of Allemania
+	dynasty = 1044033 #Agilolfing (Bavaria)
+	religion = "chalcedonian"
+	culture = bavarian
+	father = 190233
+	720.1.1 = {
+		birth = yes
+	}
+	740.1.1 = {
+		add_spouse = 190235
+	}
+	788.1.1 = {
+		death = yes
+	}
+}
+190235 = {
+	name = "Hereswind" #wife of Hnabi of Allemania
+	female = yes
+	dynasty = 1044057 #Herberting
+	religion = "chalcedonian"
+	culture = bavarian
+	721.1.1 = {
+		birth = yes
+	}
+	771.1.1 = {
+		death = yes
+	}
+}
+190236 = {
+	name = "Ruadbert"
+	dynasty = 1044033 #Agilolfing (Bavaria)
+	religion = "chalcedonian"
+	culture = bavarian
+	father = 190234
+	mother = 190235
+	740.1.1 = {
+		birth = yes
+	}
+	760.1.1 = {
+		add_spouse = 190237
+	}
+	785.1.1 = {
+		death = yes
+	}
+}
+190237 = {
+	name = "Eugenia" #wife of Ruadbert
+	female = yes
+	dynasty = 1044058 #Lotharing
+	religion = "chalcedonian"
+	culture = bavarian
+	742.1.1 = {
+		birth = yes
+	}
+	789.1.1 = {
+		death = yes
+	}
+}
+190238 = {
+	name = "Erbio" #Erbio of Allemania
+	dynasty = 1044033 #Agilolfing (Bavaria)
+	religion = "chalcedonian"
+	culture = bavarian
+	father = 190236
+	mother = 190237
+	763.1.1 = {
+		birth = yes
+	}
+	794.1.1 = {
+		death = yes
+	}
+}
+190241 = {
+	name = "Imma" #wife of Gerold Udalrichinger count of Thurgau
+	female = yes
+	dynasty = 1044033 #Agilolfing (Bavaria)
+	religion = "chalcedonian"
+	culture = bavarian
+	father = 190234
+	mother = 190235
+	743.1.1 = {
+		birth = yes
+	}
+	798.1.1 = {
+		death = yes
+	}
+}
+190242 = {
+	name = "Regarde" #wife of Hildeprand of Spoleto
+	female = yes
+	dynasty = 1044033 #Agilolfing (Bavaria)
+	religion = "chalcedonian"
+	culture = bavarian
+	father = 190335
+	mother = 190223
+	708.1.1 = {
+		birth = yes
+	}
+	788.1.1 = {
+		death = yes
+	}
+}
+190243 = {
+	name = "Liutfrid"
+	dynasty = 1044033 #Agilolfing (Bavaria)
+	religion = "chalcedonian"
+	culture = bavarian
+	father = 190335
+	mother = 190223
+	709.1.1 = {
+		birth = yes
+	}
+	770.1.1 = {
+		death = yes
+	}
+}
+190171 = {
+	name = "Theodelinda" #wife of Authari and Agilulf of Lombardy
+	female = yes
+	dynasty = 1044033 #Agilolfing (Bavaria)
+	religion = "chalcedonian"
+	culture = bavarian
+	father = 190178
+	568.1.1 = {
+		birth = yes
+	}
+	625.1.1 = {
+		death = yes
+	}
+}
+#190180 = {
+#	name = "Gundoald" #descendents become kings of Italy
+#	dynasty = 1044033
+#	religion = "chalcedonian"
+#	culture = bavarian
+#	father = 190178
+#	571.1.1 = {
+#		birth = yes
+#	}
+#	612.1.1 = {
+#		death = yes
+#	}
+#}
+190129 = {
+	name = "Ramhilde" #wife of Gisulf II of Friuli
+	female = yes
+	dynasty = 1044033 #Agilolfing (Bavaria)
+	religion = "chalcedonian"
+	culture = bavarian
+	father = 190178
+	578.1.1 = {
+		birth = yes
+	}
+	629.1.1 = {
+		death = yes
+	}
+}
+190192 = {
+	name = "Theodorata" #daughter of Theodo II of Bavaria
+	female = yes
+	dynasty = 1044033 #Agilolfing (Bavaria)
+	religion = "chalcedonian"
+	culture = bavarian
+	father = 190339
+	652.1.1 = {
+		birth = yes
+	}
+	746.1.1 = {
+		death = yes
+	}
+}
+##end of Agilolfing dynasty
+
+260023 = {		# Placeholder Traungau 769
+	name = "Weickhard"
+	dynasty = 1062013
+	religion = "chalcedonian"
+	culture = bavarian
+	742.1.1 = {
+		birth = yes
+	}
+	789.1.1 = {
+		death = yes
+	}
+}
+260024 = {		# Placeholder Traungau 867
+	name = "Dietmar"
+	dynasty = 1062014
+	religion = "chalcedonian"
+	culture = bavarian
+	834.1.1 = {
+		birth = yes
+	}
+	891.1.1 = {
+		death = yes
+	}
+}
+260025 = {		# Placeholder Steyr 769
+	name = "Hartneid"
+	dynasty = 1062015
+	religion = "chalcedonian"
+	culture = bavarian
+	729.1.1 = {
+		birth = yes
+	}
+	771.1.1 = {
+		death = yes
+	}
+}
+260026 = {		# Placeholder Steyr 867
+	name = "Ulrich"
+	dynasty = 1062016
+	religion = "chalcedonian"
+	culture = bavarian
+	847.1.1 = {
+		birth = yes
+	}
+	891.1.1 = {
+		death = yes
+	}
+}
+260027 = {		# Placeholder Medelike 769
+	name = "Adelbert"
+	dynasty = 1062017
+	religion = "chalcedonian"
+	culture = bavarian
+	731.1.1 = {
+		birth = yes
+	}
+	774.1.1 = {
+		death = yes
+	}
+}
+260036 = {		# Placeholder Pitten 769
+	name = "Ludwig"
+	dynasty = 1062020
+	religion = "chalcedonian"
+	culture = bavarian
+	742.1.1 = {
+		birth = yes
+	}
+	795.1.1 = {
+		death = yes
+	}
+}
+
+## End of various
+## Start of bishops of Freising
+260073 = {		# Arbeo, Bishop of Freising
+	name = "Arbeo"
+	religion = "chalcedonian"
+	culture = bavarian
+	723.1.1 = {
+		birth = yes
+	}
+	784.5.4 = {
+		death = yes
+	}
+}
+
+alamannic_05 = {
+	name = "Tassilo"
+	religion = "chalcedonian"
+	culture = "bavarian"
+	dynasty = 1044033 #Agilolfing (Bavaria)
+	father = alamannic_04
+	500.1.1 = {
+		birth = yes
+	}
+	532.1.1 = {
+		add_pressed_claim = title:d_bavaria
+	}
+	547.1.1 = {
+		death = yes
+	}
+}
+bavari_02 = {
+	name = "Hahil"
+	religion = "chalcedonian"
+	culture = bavarian
+	dynasty = 1044094
+	500.1.1 = {
+		birth = yes
+	}
+	547.1.1 = {
+		death = yes
+	}
+}
+bavari_18 = {
+	name = "Guntbert"
+	religion = "chalcedonian"
+	culture = bavarian
+	dynasty = 1044094
+	father = bavari_02 #Hahil
+	532.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+bavari_08 = {
+	name = "Guntbert"
+	religion = "chalcedonian"
+	culture = bavarian
+	dynasty = 1044094
+	father = bavari_18 #Guntbert
+	568.1.1 = {
+		birth = yes
+	}
+	640.1.1 = {
+		death = yes
+	}
+}
+bavari_23 = {
+	name = "Draoz"
+	religion = "chalcedonian"
+	culture = bavarian
+	dynasty = 1044094
+	father = bavari_08 #Guntbert
+	600.1.1 = {
+		birth = yes
+	}
+	678.1.1 = {
+		death = yes
+	}
+}
+bavari_24 = {
+	name = "Guntbert"
+	religion = "chalcedonian"
+	culture = bavarian
+	dynasty = 1044094
+	father = bavari_23 #Draoz
+	634.1.1 = {
+		birth = yes
+	}
+	700.1.1 = {
+		death = yes
+	}
+}
+bavari_25 = {
+	name = "Weichart"
+	religion = "chalcedonian"
+	culture = bavarian
+	dynasty = 1044094
+	father = bavari_24 #Guntbert
+	678.1.1 = {
+		birth = yes
+	}
+	740.1.1 = {
+		death = yes
+	}
+}
+190369 = {
+	name="Konrad" #count of Tirol and Kempten
+	dynasty= 1044094 #Hahilinga
+	religion="chalcedonian"
+	culture= bavarian
+	father = bavari_25
+	725.1.1={
+		birth=yes
+	}
+	775.1.1={
+		death=yes
+	}
+}
+bavari_06 = {
+	name = "Draoz"
+	religion = "chalcedonian"
+	culture = bavarian
+	dynasty = 1044096
+	500.1.1 = {
+		birth = yes
+	}
+	547.1.1 = {
+		death = yes
+	}
+}
+bavari_09 = {
+	name = "Weichart"
+	religion = "chalcedonian"
+	culture = bavarian
+	dynasty = 1044096
+	father = bavari_06 #Draoz
+	531.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+bavari_10 = {
+	name = "Trozza"
+	religion = "chalcedonian"
+	culture = bavarian
+	dynasty = 1044096
+	father = bavari_09 #Draoz
+	567.1.1 = {
+		birth = yes
+	}
+	640.1.1 = {
+		death = yes
+	}
+}
+bavari_29 = {
+	name = "Weichart"
+	religion = "chalcedonian"
+	culture = bavarian
+	dynasty = 1044096
+	father = bavari_10 #Arbeo
+	600.1.1 = {
+		birth = yes
+	}
+	678.1.1 = {
+		death = yes
+	}
+}
+bavari_30 = {
+	name = "Trozza"
+	religion = "chalcedonian"
+	culture = bavarian
+	dynasty = 1044096
+	father = bavari_29 #Adalwin
+	634.1.1 = {
+		birth = yes
+	}
+	700.1.1 = {
+		death = yes
+	}
+}
+bavari_31 = {
+	name = "Fagan"
+	religion = "chalcedonian"
+	culture = bavarian
+	dynasty = 1044096
+	father = bavari_30 #Arbeo
+	678.1.1 = {
+		birth = yes
+	}
+	740.1.1 = {
+		death = yes
+	}
+}
+190374 = {
+	name="Trozza" #count of Osterreich
+	dynasty=1044096 #Trozza
+	religion="chalcedonian"
+	culture=bavarian
+	father = bavari_31
+	739.1.1={
+		birth=yes
+	}
+	778.1.1={
+		death=yes
+	}
+}
+
+bavari_03 = {
+	name = "Fagan"
+	religion = "central_pagan"
+	culture = alamannic
+	dynasty = 1044093
+	477.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		culture = bavarian
+	}
+	547.1.1 = {
+		death = yes
+	}
+}
+bavari_11 = {
+	name = "Konrad"
+	religion = "central_pagan"
+	culture = bavarian
+	dynasty = 1044093
+	father = bavari_03 #Fagan
+	500.1.1 = {
+		birth = yes
+	}
+	589.1.1 = {
+		death = yes
+	}
+}
+
+bavari_12 = {
+	name = "Aribo"
+	religion = "central_pagan"
+	culture = bavarian
+	dynasty = 1044093
+	father = bavari_11 #Konrad
+	549.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+bavari_13 = {
+	name = "Aribo"
+	religion = "chalcedonian"
+	culture = bavarian
+	dynasty = 1044093
+	father = bavari_12 #Konrad
+	590.1.1 = {
+		birth = yes
+	}
+	655.1.1 = {
+		death = yes
+	}
+}
+bavari_32 = {
+	name = "Johann"
+	religion = "chalcedonian"
+	culture = bavarian
+	dynasty = 1044093
+	father = bavari_13 #Arbeo
+	600.1.1 = {
+		birth = yes
+	}
+	678.1.1 = {
+		death = yes
+	}
+}
+bavari_33 = {
+	name = "Theodo"
+	religion = "chalcedonian"
+	culture = bavarian
+	dynasty = 1044093
+	father = bavari_32 #Johann
+	634.1.1 = {
+		birth = yes
+	}
+	700.1.1 = {
+		death = yes
+	}
+}
+bavari_34 = {
+	name = "Fagulf"
+	religion = "chalcedonian"
+	culture = bavarian
+	dynasty = 1044093
+	father = bavari_33 #Theodo
+	678.1.1 = {
+		birth = yes
+	}
+	740.1.1 = {
+		death = yes
+	}
+}
+190368 = {
+	name="Fagulf" #count of Salzburg
+	dynasty=1044093 #Fagana
+	religion="chalcedonian"
+	culture=bavarian
+	father = bavari_34
+	732.1.1={
+		birth=yes
+	}
+	790.1.1={
+		death=yes
+	}
+}
+bavari_04 = {
+	name = "Annion"
+	religion = "arianism"
+	culture = bavarian
+	dynasty = 1044092
+	489.1.1 = {
+		birth = yes
+	}
+	547.1.1 = {
+		death = yes
+	}
+}
+bavari_14 = {
+	name = "Annion"
+	religion = "arianism"
+	culture = bavarian
+	dynasty = 1044092
+	father = bavari_04 #Annion
+	530.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+bavari_15 = {
+	name = "Gottfried"
+	religion = "arianism"
+	culture = bavarian
+	dynasty = 1044092
+	father = bavari_14 #Annion
+	574.1.1 = {
+		birth = yes
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+bavari_35 = {
+	name = "Berengar"
+	religion = "chalcedonian"
+	culture = bavarian
+	dynasty = 1044092
+	father = bavari_15 #Arbeo
+	600.1.1 = {
+		birth = yes
+	}
+	678.1.1 = {
+		death = yes
+	}
+}
+bavari_36 = {
+	name = "Guntbert"
+	religion = "chalcedonian"
+	culture = bavarian
+	dynasty = 1044092
+	father = bavari_35 #Johann
+	634.1.1 = {
+		birth = yes
+	}
+	700.1.1 = {
+		death = yes
+	}
+}
+bavari_37 = {
+	name = "Liutfrid"
+	religion = "chalcedonian"
+	culture = bavarian
+	dynasty = 1044092
+	father = bavari_36 #Theodo
+	678.1.1 = {
+		birth = yes
+	}
+	740.1.1 = {
+		death = yes
+	}
+}
+190367 = {
+	name="Anniulf" #count of Passau and Znojmo
+	dynasty=1044092 #Anniona
+	religion="chalcedonian"
+	culture=bavarian
+	father = bavari_37
+	730.1.1={
+		birth=yes
+	}
+	787.1.1={
+		death=yes
+	}
+}
+
+
+bavari_05 = {
+	name = "Arbeo"
+	religion = "central_pagan"
+	culture = bavarian
+	dynasty = 1044095
+	499.1.1 = {
+		birth = yes
+	}
+	547.1.1 = {
+		death = yes
+	}
+}
+bavari_16 = {
+	name = "Gottfried"
+	religion = "central_pagan"
+	culture = bavarian
+	dynasty = 1044095
+	father = bavari_05 #Arbeo
+	531.1.1 = {
+		birth = yes
+	}
+	588.1.1 = {
+		death = yes
+	}
+}
+bavari_17 = {
+	name = "Arbeo"
+	religion = "chalcedonian"
+	culture = bavarian
+	dynasty = 1044095
+	father = bavari_16 #Gottfried
+	569.1.1 = {
+		birth = yes
+	}
+	644.1.1 = {
+		death = yes
+	}
+}
+bavari_26 = {
+	name = "Adalwin"
+	religion = "chalcedonian"
+	culture = bavarian
+	dynasty = 1044095
+	father = bavari_17 #Arbeo
+	600.1.1 = {
+		birth = yes
+	}
+	678.1.1 = {
+		death = yes
+	}
+}
+bavari_27 = {
+	name = "Arbeo"
+	religion = "chalcedonian"
+	culture = bavarian
+	dynasty = 1044095
+	father = bavari_26 #Adalwin
+	634.1.1 = {
+		birth = yes
+	}
+	700.1.1 = {
+		death = yes
+	}
+}
+bavari_28 = {
+	name = "Adalbert"
+	religion = "chalcedonian"
+	culture = bavarian
+	dynasty = 1044095
+	father = bavari_27 #Arbeo
+	678.1.1 = {
+		birth = yes
+	}
+	740.1.1 = {
+		death = yes
+	}
+}
+190373 = {
+	name="Huosi" #count of Insbruck and Steirmark
+	dynasty=1044095 #Huosi
+	religion="chalcedonian"
+	culture=bavarian
+	father = bavari_28
+	738.1.1={
+		birth=yes
+	}
+	776.1.1={
+		death=yes
+	}
+}
+bavari_19 = {
+	name = "Bernhard"
+	religion = "chalcedonian"
+	culture = bavarian
+	569.1.1 = {
+		birth = yes
+	}
+	644.1.1 = {
+		death = yes
+	}
+}
+bavari_20 = {
+	name = "Gottfried"
+	religion = "chalcedonian"
+	culture = bavarian
+	599.1.1 = {
+		birth = yes
+	}
+	649.1.1 = {
+		death = yes
+	}
+}
+bavari_21 = {
+	name = "Gottfried"
+	religion = "chalcedonian"
+	culture = bavarian
+	740.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+bavari_22 = {
+	name = "Udo"
+	religion = "chalcedonian"
+	culture = bavarian
+	737.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+bavari_38 = {
+	name = "Ekbert"
+	religion = "chalcedonian"
+	culture = bavarian
+	731.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+

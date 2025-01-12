@@ -1,0 +1,257 @@
+﻿resource_dyes_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	}
+
+	desc = resource_dyes_decision_desc
+	selection_tooltip = resource_dyes_decision_tt
+	is_shown = {
+		is_ruler = yes
+		highest_held_title_tier > 3
+		NOT = {
+		any_realm_county = {
+		has_county_modifier = dyes_resources_modifier	
+			}
+		has_character_modifier = dyes2_resources2_modifier
+		has_character_flag = dyes2_resources2_no
+		}
+	}
+
+	effect = {
+		custom_tooltip = resource_dyes_decision_effect_tooltip
+		trigger_event = {
+				id = resources.0055
+			}
+	}
+	
+	ai_check_interval = 365
+
+	ai_will_do = {
+		base = 0
+	}
+}
+
+resource_dyes2_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	}
+
+	desc = resource_dyes2_decision_desc
+	selection_tooltip = resource_dyes2_decision_tt
+	is_shown = {
+		is_ruler = yes
+		highest_held_title_tier > 3
+		has_character_modifier = dyes2_resources2_modifier
+		NOT = { 
+		has_character_flag = dyes2_resources2_yes 
+		}
+	}
+
+	effect = {
+		custom_tooltip = resource_dyes2_decision_effect_tooltip
+		trigger_event = {
+				id = resources.0056
+			}
+	}
+	
+	ai_check_interval = 365
+
+	ai_will_do = {
+		base = 0
+	}
+}
+
+
+
+resource_glass_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	}
+
+	desc = resource_glass_decision_desc
+	selection_tooltip = resource_glass_decision_tt
+	is_shown = {
+		is_ruler = yes
+		highest_held_title_tier > 3
+		NOT = {
+		any_realm_county = {
+		has_county_modifier = glass_resources_modifier	
+			}
+		has_character_modifier = glass2_resources2_modifier
+		has_character_flag = glass2_resources2_no
+		}
+	}
+
+	effect = {
+		custom_tooltip = resource_glass_decision_effect_tooltip
+		trigger_event = {
+				id = resources.0057
+			}
+	}
+	
+	ai_check_interval = 365
+
+	ai_will_do = {
+		base = 0
+	}
+}
+
+resource_glass2_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	}
+
+	desc = resource_glass2_decision_desc
+	selection_tooltip = resource_glass2_decision_tt
+	is_shown = {
+		is_ruler = yes
+		highest_held_title_tier > 3
+		has_character_modifier = glass2_resources2_modifier
+		NOT = { 
+		has_character_flag = glass2_resources2_yes 
+		}
+	}
+
+	effect = {
+		custom_tooltip = resource_glass2_decision_effect_tooltip
+		trigger_event = {
+				id = resources.0058
+			}
+	}
+	
+	ai_check_interval = 365
+
+	ai_will_do = {
+		base = 0
+	}
+}
+
+
+
+resource_amber_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	}
+
+	desc = resource_amber_decision_desc
+	selection_tooltip = resource_amber_decision_tt
+	is_shown = {
+		is_ruler = yes
+		highest_held_title_tier > 3
+		NOT = {
+		any_realm_county = {
+		has_county_modifier = amber_resources_modifier	
+			}
+		has_character_modifier = amber2_resources2_modifier
+		has_character_flag = amber2_resources2_no
+		}
+	}
+
+	effect = {
+		custom_tooltip = resource_amber_decision_effect_tooltip
+		trigger_event = {
+				id = resources.0059
+			}
+	}
+	
+	ai_check_interval = 365
+
+	ai_will_do = {
+		base = 0
+	}
+}
+
+resource_amber2_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	}
+
+	desc = resource_amber2_decision_desc
+	selection_tooltip = resource_amber2_decision_tt
+	is_shown = {
+		is_ruler = yes
+		highest_held_title_tier > 3
+		has_character_modifier = amber2_resources2_modifier
+		NOT = { 
+		has_character_flag = amber2_resources2_yes 
+		}
+	}
+
+	effect = {
+		custom_tooltip = resource_amber2_decision_effect_tooltip
+		trigger_event = {
+				id = resources.0060
+			}
+	}
+	
+	ai_check_interval = 365
+
+	ai_will_do = {
+		base = 0
+	}
+}
+
+
+
+resource_silk_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	}
+
+	desc = resource_silk_decision_desc
+	selection_tooltip = resource_silk_decision_tt
+	is_shown = {
+		is_ruler = yes
+		highest_held_title_tier > 3
+		NOT = {
+		any_realm_county = {
+		has_county_modifier = silk_resources_modifier	
+			}
+		has_character_modifier = silk2_resources2_modifier
+		has_character_flag = silk2_resources2_no
+		}
+	}
+
+	effect = {
+		custom_tooltip = resource_silk_decision_effect_tooltip
+		trigger_event = {
+				id = resources.0061
+			}
+	}
+	
+	ai_check_interval = 365
+
+	ai_will_do = {
+		base = 0
+	}
+}
+
+resource_silk2_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	}
+
+	desc = resource_silk2_decision_desc
+	selection_tooltip = resource_silk2_decision_tt
+	is_shown = {
+		is_ruler = yes
+		highest_held_title_tier > 3
+		has_character_modifier = silk2_resources2_modifier
+		NOT = { 
+		has_character_flag = silk2_resources2_yes 
+		}
+	}
+
+	effect = {
+		custom_tooltip = resource_silk2_decision_effect_tooltip
+		trigger_event = {
+				id = resources.0062
+			}
+	}
+	
+	ai_check_interval = 365
+
+	ai_will_do = {
+		base = 0
+	}
+}

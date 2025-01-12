@@ -1,0 +1,1444 @@
+﻿select_preferred_caliph = {
+	category = interaction_category_religion
+	use_diplomatic_range = no
+	is_shown = {
+		scope:actor.faith = scope:recipient.faith
+		scope:actor = {
+			NOT = {
+				government_has_flag = government_is_caliphate
+			}
+			has_religion = religion:islam_religion
+		}
+		scope:recipient = {
+			government_has_flag = government_is_caliphate
+		}
+	}
+
+	auto_accept = {
+		always = yes
+	}
+
+	on_accept = {
+		scope:actor = {
+			if = {
+				limit = {
+					any_relation = {
+						type = preferred_caliph
+						count >= 1
+					}
+				}
+				every_relation = {
+					type = preferred_caliph
+					remove_relation_preferred_caliph = THIS
+				}
+			}
+			set_relation_preferred_caliph = {
+				target = scope:recipient
+				reason = new_preferred_caliph_interactions
+			}
+		}
+	}
+	
+	ai_will_do = {
+		base = 75
+		
+		opinion_modifier = {
+			opinion_target = scope:recipient
+			multiplier = 0.5
+			step = 5
+			max = 25
+		}
+	}
+}
+
+send_to_imperial_court = {
+	category = interaction_category_friendly
+	desc = send_to_imperial_court_desc
+	
+	is_shown = {
+		scope:recipient = {
+			is_child_of = scope:actor
+			is_landed = no
+			NOT = {
+				OR = {
+					has_trait = training_senator
+					has_trait = low_senator
+					has_trait = senator
+					has_trait = high_senator
+				}
+			}
+			is_male = yes
+		}
+		scope:actor = {
+			highest_held_title_tier < tier_empire
+			is_independent_ruler = no
+			top_liege = {
+				highest_held_title_tier >= tier_empire
+				OR = {
+					access_to_italian_senate = yes
+					access_to_eastern_senate = yes
+				}
+			}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		scope:recipient = {
+			OR = {
+				intrigue >= 7
+				diplomacy >= 7
+			}
+		}
+	}
+
+	cost = {
+		gold = {
+			value = 25
+		}
+	}
+
+	auto_accept = {
+		always = yes
+	}
+
+	on_accept = {
+		scope:recipient = {
+			add_trait = training_senator
+		}
+		scope:actor.top_liege = {
+			add_courtier = scope:recipient
+		}
+	}
+
+	ai_will_do = {
+		base = 10
+		modifier = {
+			add = -10
+			trigger = {
+				gold <= 25
+			}
+		}
+		modifier = {
+			add = 15
+			trigger = {
+				NOT = { scope:recipient = { is_heir_of = scope:actor } }
+			}
+		}
+	}
+}
+
+proxy_war_interaction = {
+	icon = icon_combat
+	category = interaction_category_diplomacy
+
+	desc = proxy_war_interaction_desc
+	
+	send_name = proxy_war_send
+	needs_recipient_to_open = no
+	interface = marriage
+	redirect = {
+		if = {
+			limit = {
+				exists = scope:secondary_actor
+			}
+			scope:recipient = {
+				save_scope_as = secondary_recipient
+				matchmaker = {
+					save_scope_as = recipient
+				}
+			}
+
+		}
+		else_if = {
+			scope:recipient = {
+				save_scope_as = secondary_actor
+			}
+			clear_saved_scope = recipient
+		}
+	}
+
+	populate_recipient_list = {
+		scope:secondary_actor = {
+			every_neighboring_top_liege_realm_owner = {
+				limit = {
+					NOT = {
+						OR = {
+							
+							THIS = scope:actor
+							THIS = {
+								is_allied_to = scope:actor
+							}
+							trigger_if = {
+								limit = {
+									exists = var:my_suzerain
+								}
+								var:my_suzerain = THIS
+								var:my_suzerain = {
+									OR = {
+										is_target_in_variable_list = { name = non_permanent_tributaries target = scope:actor }
+										is_target_in_variable_list = { name = permanent_tributaries target = scope:actor }
+									}
+								}
+							}
+							trigger_if = {
+								limit = {
+									exists = var:my_suzerain
+								}
+								var:my_suzerain = scope:secondary_actor
+							}
+							
+						}
+					}
+				}
+				add_to_list = characters
+			}
+		}
+	}
+
+	cost = {
+		prestige = {
+			value = 150
+		}
+	}
+
+	interface_priority = 80
+
+	# actor, recipient ... characters arranging the marriage
+	# secondary_actor, secondary_recipient ... characters that should marry
+
+	is_shown = {
+		AND = {
+			NOT = {
+				scope:secondary_actor = scope:actor
+			}
+			scope:secondary_actor = {
+				is_landed = yes
+				trigger_if = {
+					limit = {
+						exists = var:my_suzerain
+					}
+					var:my_suzerain = scope:actor
+				}
+				is_at_war = no
+				is_independent_ruler = yes
+			}
+			scope:secondary_actor.highest_held_title_tier < scope:actor.highest_held_title_tier
+			scope:actor = {
+				any_character_struggle = {
+					involvement = involved
+					is_struggle_type = roman_persian_struggle	
+				}
+			}
+		}
+	}
+
+	on_accept = {
+		scope:secondary_actor = {
+			trigger_event = proxy_war.0001
+		}
+	}
+
+	auto_accept = {
+		always = yes
+	}
+	#This option cannot be linked with the hook icon, because recipient isn't known in the right-click menu
+	
+	send_options_exclusive = no
+	
+	show_effects_in_notification = no
+	greeting = positive
+
+	ai_will_do = {
+		base = 0
+
+		modifier = {
+			add = 20
+			trigger = {
+				gold >= 1000
+			}
+		}
+
+		modifier = {
+			add = 10
+			trigger = {
+				gold >= 2000
+			}
+		}
+
+		modifier = {
+			add = 5
+			trigger = {
+				gold >= 3000
+			}
+		}
+
+		modifier = {
+			add = 15
+			trigger = {
+				any_character_struggle = {
+					involvement = involved
+					AND = {
+						is_struggle_type = roman_persian_struggle	
+						is_struggle_phase = struggle_TFE_roman_persian_phase_cold_war
+					}
+					
+				}
+			}
+		}
+		modifier = {
+			add = -15
+			trigger = {
+				any_character_struggle = {
+					involvement = involved
+					AND = {
+						is_struggle_type = roman_persian_struggle	
+						is_struggle_phase = struggle_TFE_roman_persian_phase_total_war
+					}
+					
+				}
+			}
+		}
+	}
+}
+
+select_new_great_house = {
+	category = interaction_category_vassal
+	use_diplomatic_range = yes
+	desc = select_new_great_house_desc
+	is_shown = {
+		AND = {
+			exists = title:e_persia.holder
+			scope:actor = title:e_persia.holder
+			title:e_persia.holder = {
+				government_has_flag = government_is_eranshar
+				sevenhouses_enabled = yes
+			}
+		}
+		scope:recipient = {
+			AND = {
+				is_independent_ruler = no
+				liege = scope:actor
+			}
+		}
+		NOT = {
+			any_in_global_list = {
+				variable  = seven_houses
+				THIS = scope:recipient.dynasty
+			}
+		}
+	}
+	is_valid_showing_failures_only = {
+		scope:recipient = {
+			highest_held_title_tier >= tier_duchy
+		}
+		custom_description = {
+			text = any_great_house_is_dead
+			any_in_global_list = {
+				variable  = seven_houses
+				any_dynasty_member = {
+					count = 0
+				}
+			}
+		}
+	}
+	auto_accept = {
+		always = yes
+	}
+
+	on_accept = {
+		scope:recipient.dynasty = {
+			add_dynasty_prestige = 200
+		}
+		scope:recipient = {
+			add_prestige = 350
+		}
+		custom_tooltip = select_new_great_house_notification
+		random_in_global_list = {
+			variable  = seven_houses
+			limit = {
+				any_dynasty_member = {
+					count = 0
+				}
+			}
+			remove_list_global_variable = {
+				name = seven_houses
+				target = THIS
+			}
+		}
+		add_to_global_variable_list = {
+			name = seven_houses
+			target = scope:recipient.dynasty
+		}
+		scope:recipient = {
+			trigger_event = TFE_flavour_events.0009
+		}
+	}
+	
+	ai_will_do = {
+		base = 10
+		
+		opinion_modifier = {
+			opinion_target = scope:recipient
+			multiplier = 0.5
+			step = 5
+			max = 100
+		}
+		modifier = {
+			add = 15
+			trigger = {
+				scope:recipient = {
+					highest_held_title_tier = tier_kingdom
+				}
+			}
+		}
+	}
+}
+
+calling_nomadic_empire = {
+	category = interaction_category_diplomacy
+	icon = icon_combat
+	desc = calling_nomadic_empire_desc
+	use_diplomatic_range = yes
+	cooldown = { years = 5 } 
+	is_shown = {
+		scope:recipient = {
+			government_has_flag = government_is_nomadic
+			highest_held_title_tier = tier_empire
+			is_independent_ruler = yes
+		}
+		scope:actor = {
+			is_independent_ruler = yes
+			NOT = {
+				is_allied_to = scope:recipient
+			}
+		}
+	}
+	is_valid_showing_failures_only = {
+		custom_description = {
+			text = at_war_with_bordering_non_nomadic_empire
+			scope:actor = {
+				AND = {
+					is_at_war = yes
+					any_war_enemy = {
+						any_neighboring_and_across_water_top_liege_realm_owner = {
+							THIS = scope:recipient
+						}
+					}
+				}
+			}
+		}
+		scope:actor = {
+			gold >= 50
+		}
+		scope:recipient = {
+			is_at_war = no
+		}
+	}
+	auto_accept = {
+		always = yes
+	}
+
+	on_accept = {
+		scope:actor = {
+			trigger_event = steppe.0012
+		}
+	}
+	
+	ai_will_do = {
+		base = 10
+		
+		opinion_modifier = {
+			opinion_target = scope:recipient
+			multiplier = 0.5
+			step = 5
+			max = 100
+		}
+		modifier = {
+			add = 20
+			trigger = {
+				scope:recipient = {
+					max_military_strength > 5000
+				}
+			}
+		}
+	}
+}
+
+TFE_negotiate_alliance_interaction = {
+	category = interaction_category_diplomacy
+	ai_min_reply_days = 4
+	ai_max_reply_days = 9
+	icon = alliance
+
+	send_name = negotiate_alliance_interaction
+
+	interface_priority = 60
+	desc = TFE_negotiate_alliance_interaction_desc
+
+	greeting = positive
+	notification_text = NEGOTIATE_ALLIANCE_NOTIFICATION
+
+	is_shown = {
+		scope:recipient = {
+			NOT = { this = scope:actor }
+			NOT = { is_allied_to = scope:actor }
+			is_ruler = yes
+		}
+		scope:actor = {
+			is_ruler = yes
+			OR = {
+				is_ai = no
+				highest_held_title_tier >= 2
+			}
+			has_realm_law = diplo_law_4_11
+			#childhood friendship with hostage event, where they swear to be friends forever
+			NOT = {
+				OR = {
+					is_any_family_relation_or_spouse_trigger = { CHARACTER = scope:recipient }
+					hostage_oath_of_friendship_trigger = yes
+				}
+			}
+		}
+	}
+	
+	is_valid_showing_failures_only = {
+		scope:recipient = {
+			is_landed = yes
+			is_imprisoned = no
+		}
+		scope:actor = {
+			is_landed = yes
+			is_imprisoned = no
+			NOT = {
+				is_at_war_with = scope:recipient
+			}
+		}
+		scope:recipient = { is_busy_in_events_localised = yes }
+		custom_description = {
+			text = "has_already_rejected_renegotiation"
+			subject = scope:recipient
+			NOT = {
+				scope:actor = {
+					has_opinion_modifier = {
+						modifier = refused_alliance_opinion
+						target = scope:recipient
+					}
+				}
+			}
+		}
+	}
+
+	is_valid = {
+		scope:actor = {
+			has_realm_law = diplo_law_4_11
+		}
+	}
+
+	on_auto_accept = {
+		scope:recipient = {
+			trigger_event = char_interaction.0234
+		}
+	}
+
+	#Use hook
+	send_option = {
+		is_valid = {
+			scope:actor = {
+				has_usable_hook = scope:recipient
+			}
+		}
+		flag = hook	
+		localization = GENERIC_SPEND_A_HOOK
+	}
+	should_use_extra_icon = {
+		scope:actor = { has_usable_hook = scope:recipient }
+	}
+	extra_icon = "gfx/interface/icons/character_interactions/hook_icon.dds"
+
+	send_options_exclusive = no
+		
+	on_accept = {
+		scope:actor = {
+			trigger_event = char_interaction.0235
+
+			stress_impact = {
+				shy = minor_stress_impact_gain
+			}
+
+			if = {
+				limit = {
+					scope:hook = yes
+					has_hook = scope:recipient
+				}
+				use_hook = scope:recipient
+			}
+		}
+
+		scope:recipient = {
+			custom_tooltip = negotiate_alliance_effect_recipient_tooltip
+		}
+
+		#Set up alliance, depending on relation between rulers.
+		hidden_effect = {
+			scope:actor = {
+				create_alliance = {
+					target = scope:recipient
+					allied_through_owner = scope:actor
+					allied_through_target = scope:recipient
+				}
+			}
+			scope:recipient = { # This opinion modifier controls the interaction, and is removed when breaking the alliance in any way (though on_actions)
+				add_opinion = {
+					modifier = perk_negotiated_alliance_opinion
+					target = scope:actor
+				}
+			}
+		}
+	}
+	
+	on_decline = {
+		scope:actor = {
+			trigger_event = char_interaction.0236
+		}
+		scope:actor = {
+			add_opinion = {
+				modifier = refused_alliance_opinion
+				target = scope:recipient
+			}
+		}
+	}
+
+	auto_accept = {
+		custom_description = {
+			text = "spending_hook"
+			subject = scope:actor
+			object = scope:recipient
+			scope:hook = yes
+		}
+	}
+	ai_accept = {
+		base = 0
+
+		# Tier Difference 	(+/-)
+		# Inheritance 		(+)
+		# Opinion 			(+/-)
+		# Dynasty Prestige. (+)
+		# Different Faith.	(-)
+		# Liege is asking 	(+)
+		# Dread 			(+)
+		# Power difference 	(+/-)
+		# Claimants (+/-)
+		# Same House (+)
+		# Declared war opinion
+		# Actor is at war penalty
+		
+		modifier = {
+			add = 20
+			scope:recipient = {
+				is_close_family_of = scope:actor
+			}
+			desc = CLOSE_FAMILY_REASON
+		}
+		
+		modifier = {
+			add = 10
+			scope:recipient = {
+				NOT = { is_close_family_of = scope:actor }
+				is_extended_family_of = scope:actor
+			}
+			desc = EXTENDED_FAMILY_REASON
+		}
+
+		modifier = {
+			add = -20
+			scope:recipient = {
+				NOT = { is_close_or_extended_family_of = scope:actor }
+				any_spouse = {
+					NOT = { is_close_family_of = scope:actor }
+					is_extended_family_of = scope:actor
+				}
+			}
+			desc = DISTANT_FAMILY_CONNECTION_REASON
+		}
+
+		# Tier Differences
+		modifier = {
+			scope:actor = {
+				tier_difference = {
+					target = scope:recipient
+					value >= 1
+				}
+			}
+			add = {
+				value = 30
+				if = {
+					limit = {
+						tier_difference = {
+							target = scope:recipient
+							value = 2
+						}
+					}
+					add = 30
+				}
+				if = {
+					limit = {
+						tier_difference = {
+							target = scope:recipient
+							value = 3
+						}
+					}
+					add = 60
+				}
+				if = {
+					limit = {
+						tier_difference = {
+							target = scope:recipient
+							value = 4
+						}
+					}
+					add = 90
+				}
+				if = {
+					limit = {
+						tier_difference = {
+							target = scope:recipient
+							value = 5
+						}
+					}
+					add = 120
+				}
+			}
+			desc = RANK_DIFFERENCE_REASON
+		}
+		modifier = {
+			scope:actor = {
+				tier_difference = {
+					target = scope:recipient
+					value <= -1
+				}
+			}
+			add = {
+				value = -30
+				if = {
+					limit = {
+						tier_difference = {
+							target = scope:recipient
+							value = -2
+						}
+					}
+					add = -30
+				}
+				if = {
+					limit = {
+						tier_difference = {
+							target = scope:recipient
+							value = -3
+						}
+					}
+					add = -60
+				}
+				if = {
+					limit = {
+						tier_difference = {
+							target = scope:recipient
+							value = -4
+						}
+					}
+					add = -90
+				}
+				if = {
+					limit = {
+						tier_difference = {
+							target = scope:recipient
+							value = -5
+						}
+					}
+					add = -120
+				}
+			}
+			desc = RANK_DIFFERENCE_REASON
+		}
+
+		modifier = {
+			scope:recipient = {
+				is_heir_of = scope:actor
+			}
+			scope:actor = {
+				tier_difference = {
+					target = scope:recipient
+					value > 0
+				}
+			}
+			add = {
+				value = 10
+				if = {
+					limit = {
+						scope:actor = { player_heir = scope:recipient }
+					}
+					add = 10
+				}
+			}
+			desc = IS_HEIR_REASON
+		}
+		opinion_modifier = { # More likely to accept if Recipient likes the Actor
+			who = scope:recipient
+			opinion_target = scope:actor
+			multiplier = 1
+			desc = AI_OPINION_REASON
+		}
+
+		modifier = {
+			add = 20
+			scope:recipient = {
+				has_trait = loyal
+			}
+			desc = INTERACTION_LOYAL
+		}
+
+		modifier = {
+			add = 20
+			scope:recipient = {
+				has_trait = trusting
+			}
+			desc = INTERACTION_TRUSTING
+		}
+
+		modifier = {
+			add = 5
+			scope:recipient = {
+				has_trait = craven
+			}
+			desc = INTERACTION_CRAVEN
+		}
+
+		modifier = {
+			add = -20
+			scope:recipient = {
+				has_trait = paranoid
+			}
+			desc = INTERACTION_PARANOID
+		}
+
+		modifier = {
+			add = -20
+			scope:recipient = {
+				has_trait = arrogant
+			}
+			desc = INTERACTION_ARROGANT
+		}
+
+		modifier = {
+			add = -20
+			scope:recipient = {
+				has_trait = ambitious
+			}
+			desc = INTERACTION_AMBITIOUS
+		}
+
+		modifier = {
+			add = -40
+			scope:recipient = {
+				has_trait = disloyal
+			}
+			desc = INTERACTION_DISLOYAL
+		}
+
+		modifier = {
+			add = -10
+			scope:recipient = {
+				has_trait = fickle
+			}
+			desc = INTERACTION_FICKLE
+		}
+
+		# Rivalry
+		modifier = { # Say no to rivals
+			add = -100
+			scope:recipient = {
+				has_relation_rival = scope:actor
+				NOT = { has_relation_nemesis = scope:actor }
+			}
+			desc = "ACTOR_RIVAL_TO_ME_REASON"
+		}
+		modifier = { # Say no to nemesis
+			add = -300
+			scope:recipient = {
+				has_relation_nemesis = scope:actor
+			}
+			desc = "ACTOR_NEMESIS_TO_ME_REASON"
+		}
+		
+		# Dynasty Prestige Levels
+		modifier = {
+			add = -5
+			desc = AI_DYNASTY_PRESTIGE_REASON
+			scope:actor = { has_dynasty = yes }
+			NOT = { scope:actor.dynasty = scope:recipient.dynasty }
+			scope:actor.dynasty = { dynasty_prestige_level = 0 }
+		}
+		modifier = {
+			desc = AI_DYNASTY_PRESTIGE_REASON
+			scope:actor = { has_dynasty = yes }
+			NOT = { scope:actor.dynasty = scope:recipient.dynasty }
+			scope:actor.dynasty = { dynasty_prestige_level >= 2 }
+			add = {
+				value = 10
+				if = {
+					limit = {
+						scope:actor.dynasty = { dynasty_prestige_level >= 3 }
+					}
+					add = 5
+				}
+				if = {
+					limit = {
+						scope:actor.dynasty = { dynasty_prestige_level >= 4 }
+					}
+					add = 5
+				}
+				if = {
+					limit = {
+						scope:actor.dynasty = { dynasty_prestige_level >= 5 }
+					}
+					add = 5
+				}
+				if = {
+					limit = {
+						scope:actor.dynasty = { dynasty_prestige_level >= 6 }
+					}
+					add = 5
+				}
+				if = {
+					limit = {
+						scope:actor.dynasty = { dynasty_prestige_level >= 7 }
+					}
+					add = 5
+				}
+				if = {
+					limit = {
+						scope:actor.dynasty = { dynasty_prestige_level >= 8 }
+					}
+					add = 5
+				}
+				if = {
+					limit = {
+						scope:actor.dynasty = { dynasty_prestige_level >= 9 }
+					}
+					add = 5
+				}
+				if = {
+					limit = {
+						scope:actor.dynasty = { dynasty_prestige_level >= 10 }
+					}
+					add = 5
+				}
+			}
+		}
+		modifier = { #Faith compatibility
+			scope:recipient.faith = {
+				faith_hostility_level = {
+					target = scope:actor.faith
+					value > faith_fully_accepted_level
+				}
+			}
+			NOT = {
+				scope:recipient.ai_zeal <= -50
+			}
+			add = {
+				value = -20
+				if = {
+					limit = {
+						# Exempt certain struggle phases.
+						NOT = { is_struggle_parameter_active_interfaith_marriages_available_between_involved_characters_trigger = yes }
+					}
+					if = {
+						limit = {
+							scope:recipient.faith = {
+								faith_hostility_level = {
+									target = scope:actor.faith
+									value >= faith_astray_level
+								}
+							}
+						}
+						subtract = 20
+					}
+					if = {
+						limit = {
+							scope:recipient.faith = {
+								faith_hostility_level = {
+									target = scope:actor.faith
+									value >= faith_hostile_level
+								}
+							}
+						}
+						subtract = 40
+					}
+					if = {
+						limit = {
+							scope:recipient.faith = {
+								faith_hostility_level = {
+									target = scope:actor.faith
+									value >= faith_evil_level
+								}
+							}
+						}
+						subtract = 60
+					}
+					if = {
+						limit = {
+							scope:recipient.ai_zeal <= -25
+						}
+						divide = 2
+					}
+				}
+			}
+			desc = MARRY_DIFFERENT_FAITH_REASON
+		}
+
+		modifier = { # A Recipient is more likely to agree to an alliance requested by his liege.
+			add = 20
+			scope:recipient = {
+				target_is_liege_or_above = scope:actor
+			}
+			desc = LIEGE_REASON
+		}
+		
+		modifier = {
+	  	  	add = {
+				value = 1
+				subtract = {
+					value = scope:recipient.max_military_strength # For foreign diplomacy, consider recipients max
+					divide = { value = scope:actor.current_military_strength min = 1 }
+				}
+				multiply = 20
+				min = -1000
+				max = 100
+	  		}
+			desc = AI_MILITARY_BALANCE_REASON
+		}
+		# Recipient is a Claimant to Actor's titles.
+		modifier = {
+			scope:recipient = {
+				NOT = { government_has_flag = government_is_clan }
+				any_claim = {
+					holder = scope:actor
+				}
+				NOR = {
+					is_heir_of = scope:actor
+					ai_greed <= -25
+				}
+			}
+			add = {
+				value = -50
+				if = {
+					limit = {
+						scope:recipient.ai_greed >= 25
+					}
+					add = ai_greed
+				}
+				if = {
+					limit = {
+						NOT = {
+							scope:recipient.house = scope:actor.house
+						}
+					}
+					multiply = 2
+				}
+			}
+			desc = IS_CLAIMANT_TO_ACTORS_TITLES
+		}
+		#Actor has claims on recipient's titles.
+		modifier = {
+			scope:actor = {
+				any_claim = {
+					holder = scope:recipient
+				}
+			}
+			add = 25
+			desc = IS_CLAIMANT_TO_RECIPIENT_TITLES
+		}
+		modifier = {
+			scope:recipient = {
+				NOT = {
+					any_claim = {
+						holder = scope:actor
+					}
+				}
+			}
+			scope:recipient.house = scope:actor.house
+			add = 15
+			desc = IS_SAME_HOUSE_REASON
+		}
+		modifier = {
+			scope:recipient = {
+				has_opinion_modifier = {
+					target = scope:actor
+					modifier = declared_war
+				}
+			}
+			add = -100
+			desc = DECLARED_WAR_REASON
+		}
+
+		# Don't form new alliances with people already at war.
+		modifier = {
+			scope:actor = {
+				is_at_war = yes
+
+				# Since vassals and lieges can't call us into wars, this doesn't matter for us if we have that relationship. 
+				NOR = {
+					target_is_liege_or_above = scope:recipient
+					target_is_vassal_or_below = scope:recipient
+				}
+			}
+			add = -50
+			desc = IS_AT_WAR_REASON
+		}
+
+		#Bonus from Tradition Astute Diplomats
+		modifier = {
+			scope:actor.culture = { has_cultural_parameter = facilitate_alliance_acceptance }
+			add = 50 #should be in a file 00_traditions_values
+			desc = TRADITION_ASTUTE_DIPLOMATS_ACCEPTANCE_MODIFIER
+		}
+
+		# The AI doesn't want to form alliances with AI vassals within its capital duchy, so it can revoke them
+		modifier = {
+			scope:actor = {
+				is_ai = yes
+				is_vassal_or_below_of = scope:recipient
+				any_held_title = {
+					tier = tier_county
+					de_jure_liege = scope:actor.primary_title.title_capital_county.de_jure_liege
+				}
+			}
+			scope:recipient = {
+				is_ai = yes
+			}
+			add = -5000
+		}
+
+		# Feud
+		modifier = {
+			add = -25
+			scope:recipient = {
+				existing_feud_against_target_trigger = { TARGET = scope:actor }
+			}
+			desc = MARRY_FAMILY_FEUD_REASON
+		}
+
+		# Existing Alliances
+		modifier = {
+			add = {
+				scope:actor = {
+					every_ally = {
+						add = -15
+					}
+				}
+			}
+			scope:actor = {
+				any_ally = {
+					count >= 2
+				}
+			}
+			NAND = {
+				scope:recipient = {
+					government_has_flag = government_is_clan
+					is_vassal_or_below_of = scope:actor
+				}
+			}
+			desc = EXISTING_ALLIANCES_REASON
+		}
+
+		# Existing Alliances
+		modifier = {
+			add = {
+				scope:recipient = {
+					every_ally = {
+						add = -15
+					}
+				}
+			}
+			scope:recipient = {
+				any_ally = {
+					count >= 2
+				}
+			}
+			NAND = {
+				scope:recipient = {
+					government_has_flag = government_is_clan
+					is_vassal_or_below_of = scope:actor
+				}
+			}
+			desc = THEIR_EXISTING_ALLIANCES_REASON
+		}
+		
+		modifier = {
+			add = intimidated_reason_value
+			scope:recipient = {
+				target_is_liege_or_above = scope:actor
+				has_dread_level_towards = {
+					target = scope:actor
+					level = 1
+				}
+			}
+			desc = INTIMIDATED_REASON
+		}
+		modifier = {
+			add = cowed_reason_value
+			scope:recipient = {
+				target_is_liege_or_above = scope:actor
+				has_dread_level_towards = {
+					target = scope:actor
+					level = 2
+				}
+			}
+			desc = COWED_REASON
+		}
+		
+		modifier = {
+			add = intimidated_external_reason_value
+			scope:recipient = {
+				NOT = { target_is_liege_or_above = scope:actor }
+				has_dread_level_towards = {
+					target = scope:actor
+					level = 1
+				}
+			}
+			desc = INTIMIDATED_REASON
+		}
+		modifier = {
+			add = cowed_external_reason_value
+			scope:recipient = {
+				NOT = { target_is_liege_or_above = scope:actor }
+				has_dread_level_towards = {
+					target = scope:actor
+					level = 2
+				}
+			}
+			desc = COWED_REASON
+		}
+	}
+
+	ai_potential = {
+		is_at_war = no
+	}
+	
+	ai_targets = {
+		ai_recipients = dynasty
+		max = 20
+	}
+	
+	ai_targets = {
+		ai_recipients = family
+		max = 10
+	}
+	
+	ai_targets = {
+		ai_recipients = spouses
+	}
+	ai_frequency = 72
+	
+	ai_will_do = {
+		base = 0
+		
+		modifier = {
+			add = 100
+			any_ally = {
+				count < 2
+			}
+			scope:recipient = { # Don't propose alliances to tiny insignificant rulers just because
+				OR = {
+					current_military_strength >= scope:actor.eighty_percent_of_current_military_strength
+					primary_title.tier >= scope:actor.primary_title.tier
+					AND = {
+						primary_title.tier >= tier_duchy
+						scope:actor.primary_title.tier < tier_empire
+					}
+				}
+			}
+		}
+		
+		modifier = { # Clans always want alliances with Vassals
+			add = 100
+			scope:actor = {
+				government_has_flag = government_is_clan
+			}
+			scope:recipient = {
+				is_vassal_of = scope:actor
+			}
+		}
+		
+		modifier = { # The AI shouldn't propose to their Lieges
+			factor = 0
+			is_liege_or_above_of = scope:recipient
+		}
+		
+		modifier = { # The AI shouldn't propose to their Vassals unless Clan
+			factor = 0
+			scope:actor = {
+				NOT = { government_has_flag = government_is_clan }
+			}
+			scope:recipient = {
+				is_vassal_of = scope:actor
+			}
+		}
+	}
+}
+
+relocate_legion_domain_interaction = {
+	category = interaction_category_vassal
+	common_interaction = yes
+
+	target_type = title
+	target_filter = actor_domain_titles
+
+
+	is_shown = {
+		NOT = { scope:actor = scope:recipient }
+		NOT = { is_at_war_with = scope:actor }
+		scope:recipient = {
+			has_government = legion_government
+			target_is_liege_or_above = scope:actor
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		custom_tooltip = {
+			text = recently_relocated_legion_tt
+			scope:recipient = {
+				NOT = { has_character_flag = recently_relocated_legion }
+			}
+		}
+	}
+
+	can_be_picked_title = {
+		scope:target = {
+			custom_tooltip = {
+				text = capital_county_legion_relocate_tt
+				NOT = { scope:actor.capital_county = THIS }
+			}
+			is_leased_out = no
+			tier = tier_county
+			title_province = { 
+				is_county_capital = yes
+				has_holding = yes
+				OR = {
+					has_holding_type = castle_holding
+					has_holding_type = estate_holding
+					has_holding_type = trade_center_holding
+				}
+			}
+		}
+		custom_description = {
+			text = grant_titles_interaction_title_being_wagered
+			NOT = {
+				scope:target = { has_variable = wagered_county }
+			}
+		}
+	}
+
+	auto_accept = yes
+	
+	on_accept = {
+		create_title_and_vassal_change = {
+			type = usurped
+			save_scope_as = change
+			add_claim_on_loss = no
+		}
+		scope:target = {
+			change_title_holder = {
+				holder = scope:recipient
+				change = scope:change
+			}
+		}
+		resolve_title_and_vassal_change = scope:change
+
+		scope:recipient = {
+			add_character_flag = {
+				flag = recently_relocated_legion
+				years = 5
+			}
+			every_held_title = {
+				limit = {
+					NOT = { this = scope:target }
+				}
+				add_to_list = titles_to_usurp
+			}
+		}
+
+		every_in_list = {
+			list = titles_to_usurp
+			save_scope_as = remove_legion
+			every_ruler = {
+				limit = {
+					ruler_can_use_legions_no_primary_title_tier = yes
+					has_variable_list = legion_counties
+				}
+				remove_list_variable = {
+					name = legion_counties
+					target = scope:remove_legion
+				}
+			}
+			if = {
+				limit = {
+					scope:remove_legion = {
+						tier = tier_county
+					}
+				}
+				scope:actor = {
+        	        add_to_variable_list = {
+            	        name = legion_county_available
+                	    target = scope:remove_legion
+                	}
+            	}
+			}
+		}
+
+		create_title_and_vassal_change = {
+			type = usurped
+			save_scope_as = title_change
+			add_claim_on_loss = no
+		}
+		every_in_list = {
+			list = titles_to_usurp
+			change_title_holder = {
+				holder = scope:actor
+				change = scope:title_change
+				take_baronies = no
+			}
+		}
+
+		resolve_title_and_vassal_change = scope:title_change
+
+		scope:target = {
+			save_temporary_scope_as = new_legion_tmp
+			scope:actor = {
+				add_to_variable_list = {
+					name = legion_counties
+					target = scope:new_legion_tmp
+				}
+				every_vassal = {
+					add_to_variable_list = {
+						name = legion_counties
+						target = scope:new_legion_tmp
+					}
+				}
+				if = {
+					limit = {
+						is_independent_ruler = no
+					}
+					every_liege_or_above = {
+						add_to_variable_list = {
+							name = legion_counties
+							target = scope:new_legion_tmp
+						}
+					}
+				}
+				remove_list_variable = {
+					name = legion_county_available
+					target = scope:new_legion_tmp
+				}
+			}
+		}
+	}
+}

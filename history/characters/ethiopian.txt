@@ -1,0 +1,1305 @@
+﻿145973 = {
+	name = "Mekonnen"
+	dynasty = 1042639
+	religion = "coptic"
+	culture = "ethiopian"
+
+	738.1.1 = {
+		birth = "738.1.1"
+	}
+	793.1.1 = {
+		death = "793.1.1"
+	}
+}
+
+145974 = {
+	name = "Semer"
+	dynasty = 1042639
+	religion = "coptic"
+	culture = "ethiopian"
+	father = 145973
+	755.1.1 = {
+		birth = "755.1.1"
+	}
+	818.1.1 = {
+		death = "818.1.1"
+	}
+}
+aksum_01 = {
+	name= "Gadarat"
+	religion="aksumite_pagan"
+	culture="ethiopian"
+	190.1.1 = {
+		birth = yes
+	}
+	230.1.1 = {
+		death = yes
+	}
+}
+aksum_02 = {
+	name= "Beyga"
+	religion="aksumite_pagan"
+	culture="ethiopian"
+	father = aksum_01 #Gadarat
+	215.1.1 = {
+		birth = yes
+	}
+	260.1.1 = {
+		death = yes
+	}
+}
+aksum_03 = {
+	name= "Azaba"
+	religion="aksumite_pagan"
+	culture="ethiopian"
+	202.1.1 = {
+		birth = yes
+	}
+	244.1.1 = {
+		death = yes
+	}
+}
+aksum_04 = {
+	name= "Gärma"
+	religion="aksumite_pagan"
+	culture="ethiopian"
+	father = aksum_03 #Azaba
+	231.1.1 = {
+		birth = yes
+	}
+	272.1.1 = {
+		death = yes
+	}
+}
+aksum_05 = {
+	name= "Sembrouthes"
+	religion="aksumite_pagan"
+	culture="ethiopian"
+	221.1.1 = {
+		birth = yes
+	}
+	263.1.1 = {
+		death = yes
+	}
+}
+aksum_06 = {
+	name= "Datawnas"
+	religion="aksumite_pagan"
+	culture="ethiopian"
+	234.1.1 = {
+		birth = yes
+	}
+	272.1.1 = {
+		death = yes
+	}
+}
+aksum_07 = {
+	name= "Zaqarnas"
+	religion="aksumite_pagan"
+	culture="ethiopian"
+	259.1.1 = {
+		birth = yes
+	}
+	285.1.1 = {
+		death = yes
+	}
+}
+aksum_08 = {
+	name= "Endubis"
+	religion="aksumite_pagan"
+	culture="ethiopian"
+	251.1.1 = {
+		birth = yes
+	}
+	290.1.1 = {
+		death = yes
+	}
+}
+aksum_09 = {
+	name= "Aphilas"
+	religion="aksumite_pagan"
+	culture="ethiopian"
+	271.1.1 = {
+		birth = yes
+	}
+	300.1.1 = {
+		death = yes
+	}
+}
+aksum_10 = {
+	name= "Wazeba"
+	religion="aksumite_pagan"
+	culture="ethiopian"
+	279.1.1 = {
+		birth = yes
+	}
+	310.1.1 = {
+		death = yes
+	}
+}
+aksum_11 = {
+	name= "Ousanas"
+	dynasty = ousanid_dynasty
+	religion="aksumite_pagan"
+	culture="ethiopian"
+	283.1.1 = {
+		birth = yes
+	}
+	320.1.1 = {
+		death = yes
+	}
+}
+aksum_12 = {
+	name= "Ezana"
+	religion="aksumite_pagan"
+	culture="ethiopian"
+	dynasty = ousanid_dynasty
+	father = aksum_11 #Ousanas
+	trait = ambitious
+	trait = education_martial_3
+	trait = patient
+	trait = wrathful
+	300.1.1 = {
+		birth = yes
+	}
+	340.1.1 = {
+		religion = "nicene"
+	}
+	360.1.1 = {
+		death = yes
+	}
+}
+aksum_13 = {
+	name= "Saizana"
+	religion="aksumite_pagan"
+	culture="ethiopian"
+	dynasty = ousanid_dynasty
+	father = aksum_11 #Ousanas
+	305.1.1 = {
+		birth = yes
+	}
+	340.1.1 = {
+		religion = "nicene"
+	}
+	369.1.1 = {
+		death = yes
+	}
+}
+aksum_14 = {
+	name= "Hadefa"
+	religion="aksumite_pagan"
+	culture="ethiopian"
+	dynasty = ousanid_dynasty
+	father = aksum_11 #Ousanas
+	309.1.1 = {
+		birth = yes
+	}
+	340.1.1 = {
+		religion = "nicene"
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+aksum_15 = {
+	name= "Mehadeyis"
+	religion="nicene"
+	culture="ethiopian"
+	dynasty = ousanid_dynasty
+	father = aksum_12 #Ezana
+	trait = education_martial_3
+	trait = brave # Known for prowess against enemies
+	334.1.1 = {
+		birth = yes
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+aksum_16 = {
+	name= "Ouazeba"
+	dna = DNA_ouazeba
+	religion="nicene"
+	culture="ethiopian"
+	dynasty = ousanid_dynasty
+	father = aksum_15 #Mehadeyis
+	trait = education_diplomacy_3
+	trait = calm
+	trait = content
+	trait = stubborn
+	sexuality = heterosexual
+	351.1.1 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+	403.1.1 = {
+		death = yes
+	}
+}
+aksum_17 = {
+	name= "Eon"
+	religion="nicene"
+	culture="ethiopian"
+	father = aksum_16 #Ouazeba
+	dynasty = ousanid_dynasty
+	389.1.1 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+	400.1.1 = {
+		trait = brave
+		trait = diligent
+		trait = lustful
+	}
+	441.1.1 = {
+		death = yes
+	}
+}
+aksum_18 = {
+	name= "Ebana"
+	religion="nicene"
+	culture="ethiopian"
+	trait = education_stewardship_4
+	trait = generous
+	trait = arrogant
+	trait = patient
+	423.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = coptic
+	}
+	471.1.1 = {
+		death = yes
+	}
+}
+aksum_19 = {
+	name= "Nezool"
+	religion="coptic"
+	culture="ethiopian"
+	451.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+aksum_20 = {
+	name= "Ousanas"
+	dynasty = ousanid_dynasty_2
+	religion="coptic"
+	culture="ethiopian"
+	477.1.1 = {
+		birth = yes
+	}
+	520.1.1 = {
+		death = yes
+	}
+}
+abs_12 = {
+	name = "Zabiba"
+	dynasty = ousanid_dynasty_2
+	female = yes
+	religion = "arabic_pagan"
+	culture = ethiopian
+	father = aksum_20
+	505.1.1 = {
+		birth = yes
+	}
+	580.1.1 = {
+		death = yes
+	}
+}
+aksum_21 = {
+	name= "Kaleb"
+	dynasty = ousanid_dynasty_2
+	religion="coptic"
+	culture="ethiopian"
+	father = aksum_20 #Ousanas II
+	trait = education_martial_4
+	trait = intellect_good_1
+	trait = strategist
+	trait = ambitious
+	trait = fickle
+	trait = patient
+	495.1.1 = {
+		birth = yes
+	}
+	532.1.1 = {
+		set_relation_rival = character:himyarite_30
+		add_unpressed_claim = title:k_yemen
+	}
+	542.1.1 = {
+		death = yes
+	}
+}
+aksum_22 = {
+	name= "Gabra"
+	dynasty = ousanid_dynasty_2
+	religion="coptic"
+	culture="ethiopian"
+	father = aksum_21 #Kaleb
+	516.1.1 = {
+		birth = yes
+	}
+	564.1.1 = {
+		death = yes
+	}
+}
+aksum_23 = {
+	name= "Sumuafa"
+	religion="coptic"
+	culture="ethiopian"
+	492.1.1 = {
+		birth = yes
+	}
+	529.1.1 = {
+		death = yes
+	}
+}
+# aksum_24 = {
+# 	name= "Abraha"
+# 	dynasty = dynasty_abraha
+# 	religion="coptic"
+# 	culture="ethiopian"
+# 	trait = education_military_3
+# 	trait = zealous
+# 	trait = diligent
+# 	trait = wrathful
+# 	492.1.1 = {
+# 		birth = yes
+# 	}
+# 	554.1.1 = {
+# 		death = yes
+# 	}
+# }
+aksum_25 = {
+	name= "Wazena"
+	religion="coptic"
+	culture="ethiopian"
+	523.1.1 = {
+		birth = yes
+	}
+	570.1.1 = {
+		death = yes
+	}
+}
+aksum_26 = {
+	name= "Wa'zeb"
+	dynasty = ousanid_dynasty_2
+	religion="coptic"
+	culture="ethiopian"
+	father = aksum_21 #Kaleb
+	513.1.1 = {
+		birth = yes
+	}
+	550.1.1 = {
+		death = yes
+	}
+}
+aksum_27 = {
+	name= "Ioel"
+	religion="coptic"
+	culture="ethiopian"
+	519.1.1 = {
+		birth = yes
+	}
+	573.1.1 = {
+		death = yes
+	}
+}
+aksum_28 = {
+	name= "Hataz"
+	religion="coptic"
+	culture="ethiopian"
+	522.1.1 = {
+		birth = yes
+	}
+	578.1.1 = {
+		death = yes
+	}
+}
+aksum_29 = {
+	name= "Saifu"
+	religion="coptic"
+	culture="ethiopian"
+	529.1.1 = {
+		birth = yes
+	}
+	581.1.1 = {
+		death = yes
+	}
+}
+aksum_30 = {
+	name= "Israel"
+	dynasty = ousanid_dynasty_2
+	religion="coptic"
+	culture="ethiopian"
+	father = aksum_21 #Kaleb
+	529.1.1 = {
+		birth = yes
+	}
+	601.1.1 = {
+		death = yes
+	}
+}
+aksum_31 = {
+	name= "Gersem"
+	religion="coptic"
+	culture="ethiopian"
+	576.1.1 = {
+		birth = yes
+	}
+	614.1.1 = {
+		death = yes
+	}
+}
+aksum_32 = {
+	name= "Najashi"
+	religion="coptic"
+	culture="ethiopian"
+	596.1.1 = {
+		birth = yes
+	}
+	616.1.1 = {
+		religion = "ashari"
+	}
+	631.1.1 = {
+		death = yes
+	}
+}
+aksum_33 = {
+	name= "Kwastantinos"
+	religion="ashari"
+	culture="ethiopian"
+	father = aksum_32 #Najashi
+	615.1.1 = {
+		birth = yes
+	}
+	642.1.1 = {
+		death = yes
+	}
+}
+aksum_34 = {
+	name= "Bazagar"
+	religion="coptic"
+	culture="ethiopian"
+	father = aksum_32 #Najashi
+	616.1.1 = {
+		birth = yes
+	}
+	645.1.1 = {
+		death = yes
+	}
+}
+aksum_35 = {
+	name= "Fere Shernay"
+	religion="coptic"
+	culture="ethiopian"
+	623.1.1 = {
+		birth = yes
+	}
+	647.1.1 = {
+		death = yes
+	}
+}
+aksum_36 = {
+	name= "'Adre'az"
+	religion="coptic"
+	culture="ethiopian"
+	618.1.1 = {
+		birth = yes
+	}
+	649.1.1 = {
+		death = yes
+	}
+}
+aksum_37 = {
+	name= "'Akla Wedem'"
+	religion="coptic"
+	culture="ethiopian"
+	621.1.1 = {
+		birth = yes
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+aksum_38 = {
+	name= "Germa Safar"
+	religion="coptic"
+	culture="ethiopian"
+	625.1.1 = {
+		birth = yes
+	}
+	653.1.1 = {
+		death = yes
+	}
+}
+aksum_39 = {
+	name= "Zergaz"
+	religion="coptic"
+	culture="ethiopian"
+	625.1.1 = {
+		birth = yes
+	}
+	656.1.1 = {
+		death = yes
+	}
+}
+
+# aksum_40 = {
+# 	name= "Masruq"
+# 	dynasty = dynasty_abraha
+# 	religion="coptic"
+# 	culture="ethiopian"
+# 	father = aksum_24 #Abraha
+# 	530.1.1 = {
+# 		birth = yes
+# 	}
+# 	570.1.1 = {
+# 		death = yes
+# 	}
+# }
+
+145983 = {
+	name = "Degna_Mikael"
+	dynasty = 7246
+	religion = "coptic"
+	culture = "ethiopian"
+
+	620.1.1 = {
+		birth = "620.1.1"
+	}
+	677.1.1 = {
+		death = "677.1.1"
+	}
+}
+
+145984 = {
+	name = "Bahr_Ikela"
+	dynasty = 7246
+	religion = "coptic"
+	culture = "ethiopian"
+	father = 145983
+	640.1.1 = {
+		birth = "640.1.1"
+	}
+	696.1.1 = {
+		death = "696.1.1"
+	}
+}
+145985 = {
+	name = "Gum"
+	dynasty = 7246
+	religion = "coptic"
+	culture = "ethiopian"
+	father = 145984
+	658.1.1 = {
+		birth = "658.1.1"
+	}
+	720.1.1 = {
+		death = "720.1.1"
+	}
+}
+
+145986 = {
+	name = "Asgwomgum"
+	dynasty = 7246
+	religion = "coptic"
+	culture = "ethiopian"
+	father = 145984
+	660.1.1 = {
+		birth = "660.1.1"
+	}
+	725.1.1 = {
+		death = "725.1.1"
+	}
+}
+
+145987 = {
+	name = "Letem"
+	dynasty = 7246
+	religion = "coptic"
+	culture = "ethiopian"
+	father = 145986
+	679.1.1 = {
+		birth = "679.1.1"
+	}
+	741.1.1 = {
+		death = "741.1.1"
+	}
+}
+
+145988 = {
+	name = "Talatem"
+	dynasty = 7246
+	religion = "coptic"
+	culture = "ethiopian"
+	father = 145987
+	698.1.1 = {
+		birth = "698.1.1"
+	}
+	762.1.1 = {
+		death = "762.1.1"
+	}
+}
+
+145989 = {
+	name = "Oda_Gosh"
+	dynasty = 7246
+	religion = "coptic"
+	culture = "ethiopian"
+	trait = zealous
+	trait = celibate
+	trait = generous
+	trait = just
+	trait = education_diplomacy_3
+	father = 145988
+	718.1.1 = {
+		birth = "718.1.1"
+	}
+	775.1.1 = {
+		death = "775.1.1"
+	}
+}
+
+145990 = {
+	name = "Ayzur"
+	dynasty = 7246
+	religion = "coptic"
+	culture = "ethiopian"
+	father = 145988
+	720.1.1 = {
+		birth = "720.1.1"
+	}
+	775.1.2 = {
+		death = "775.1.2"
+	}
+}
+
+145991 = {
+	name = "Dedem"
+	dynasty = 7246
+	religion = "coptic"
+	culture = "ethiopian"
+	father = 145988
+	722.1.1 = {
+		birth = "722.1.1"
+	}
+	780.1.1 = {
+		death = "780.1.1"
+	}
+}
+
+145992 = {
+	name = "Wededem"
+	dynasty = 7246
+	religion = "coptic"
+	culture = "ethiopian"
+	father = 145991
+	741.1.1 = {
+		birth = "741.1.1"
+	}
+	790.1.1 = {
+		death = "790.1.1"
+	}
+}
+
+145993 = {
+	name = "Wedem_Asfare"
+	dynasty = 7246
+	religion = "coptic"
+	culture = "ethiopian"
+	father = 145992
+	762.1.1 = {
+		birth = "762.1.1"
+	}
+	820.1.1 = {
+		death = "820.1.1"
+	}
+}
+
+145994 = {
+	name = "Rema_Armah"
+	dynasty = 7246
+	religion = "coptic"
+	culture = "ethiopian"
+	father = 145990
+	760.1.1 = {
+		birth = "760.1.1"
+	}
+	825.1.1 = {
+		death = "825.1.1"
+	}
+}
+
+
+#Vassals of Aksum
+aksum_41 = {
+	name= "Zoskales"
+	religion="aksumite_pagan"
+	culture="ethiopian"
+	100.1.1 = {
+		birth = yes
+	}
+	160.1.1 = {
+		death = yes
+	}
+}
+aksum_42 = {
+	name= "Dambale"
+	religion="aksumite_pagan"
+	culture="ethiopian"
+	father = aksum_41 #Zoskales
+	134.1.1 = {
+		birth = yes
+	}
+	201.1.1 = {
+		death = yes
+	}
+}
+aksum_43 = {
+	name= "Wedem"
+	religion="aksumite_pagan"
+	culture="ethiopian"
+	father = aksum_42 #Dambale
+	169.1.1 = {
+		birth = yes
+	}
+	232.1.1 = {
+		death = yes
+	}
+}
+aksum_44 = {
+	name= "Haqala"
+	religion="aksumite_pagan"
+	culture="ethiopian"
+	father = aksum_43 #Wedem
+	199.1.1 = {
+		birth = yes
+	}
+	269.1.1 = {
+		death = yes
+	}
+}
+aksum_45 = {
+	name= "Zalis"
+	religion="aksumite_pagan"
+	culture="ethiopian"
+	father = aksum_44 #Haqala
+	241.1.1 = {
+		birth = yes
+	}
+	298.1.1 = {
+		death = yes
+	}
+}
+aksum_46 = {
+	name= "Zoskales"
+	religion="aksumite_pagan"
+	culture="ethiopian"
+	father = aksum_45 #Zalis
+	281.1.1 = {
+		birth = yes
+	}
+	341.1.1 = {
+		death = yes
+	}
+}
+aksum_47 = {
+	name= "Qozmos"
+	religion="aksumite_pagan"
+	culture="ethiopian"
+	father = aksum_46 #Zoskales III
+	320.1.1 = {
+		birth = yes
+	}
+	343.1.1 = {
+		religion = "nicene"
+	}
+	389.1.1 = {
+		death = yes
+	}
+}
+aksum_48 = {
+	name= "Zoskales"
+	religion="nicene"
+	culture="ethiopian"
+	father = aksum_47 #Qozmos
+	356.1.1 = {
+		birth = yes
+	}
+	419.1.1 = {
+		death = yes
+	}
+}
+aksum_49 = {
+	name= "Euprepius"
+	religion="nicene"
+	culture="ethiopian"
+	431.1.1 = {
+		birth = yes
+	}	
+	451.1.1 = {
+		religion = "coptic"
+	}
+	499.1.1 = {
+		death = yes
+	}
+}
+aksum_50 = {
+	name= "Marqos"
+	religion="coptic"
+	culture="ethiopian"
+	512.1.1 = {
+		birth = yes
+	}
+	556.1.1 = {
+		death = yes
+	}
+}
+aksum_51 = {
+	name= "Qozmos"
+	religion="coptic"
+	culture="ethiopian"
+	601.1.1 = {
+		birth = yes
+	}
+	649.1.1 = {
+		death = yes
+	}
+}
+aksum_53 = {
+	name= "Wedem"
+	religion="nicene"
+	culture="ethiopian"
+	father = aksum_13 #Saizana
+	331.1.1 = {
+		birth = yes
+	}
+	399.1.1 = {
+		death = yes
+	}
+}
+aksum_54 = {
+	name= "Sumuafa"
+	religion="nicene"
+	culture="ethiopian"
+	421.1.1 = {
+		birth = yes
+	}	
+	451.1.1 = {
+		religion = "coptic"
+	}
+	480.1.1 = {
+		death = yes
+	}
+}
+aksum_55 = {
+	name = "Aryat"
+	religion = "coptic"
+	culture = "ethiopian"
+	martial = 7
+	515.1.1 = {
+		birth = yes
+	}
+	535.1.1 = {
+		death = yes
+	}
+}
+aksum_56 = {
+	name= "Dedem"
+	religion="coptic"
+	culture="ethiopian"
+	592.1.1 = {
+		birth = yes
+	}
+	631.1.1 = {
+		death = yes
+	}
+}
+aksum_57 = {
+	name= "Izena"
+	religion="nicene"
+	culture="ethiopian"
+	father = aksum_14 #Hadefa
+	331.1.1 = {
+		birth = yes
+	}
+	399.1.1 = {
+		death = yes
+	}
+}
+aksum_58 = {
+	name= "Zergaz"
+	religion="nicene"
+	culture="ethiopian"
+	437.1.1 = {
+		birth = yes
+	}	
+	451.1.1 = {
+		religion = "coptic"
+	}
+	480.1.1 = {
+		death = yes
+	}
+}
+aksum_59 = {
+	name= "Endubis"
+	religion="coptic"
+	culture="ethiopian"
+	499.1.1 = {
+		birth = yes
+	}
+	543.1.1 = {
+		death = yes
+	}
+}
+aksum_60 = {
+	name= "Wazeba"
+	religion="coptic"
+	culture="ethiopian"
+	599.1.1 = {
+		birth = yes
+	}
+	645.1.1 = {
+		death = yes
+	}
+}
+aksum_61 = {
+	name= "Mikael"
+	religion="coptic"
+	culture="ethiopian"
+	730.1.1 = {
+		birth = yes
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+aksum_52 = {
+	name= "Caleb"
+	religion="haymanot"
+	culture="ethiopian"
+	331.1.1 = {
+		birth = yes
+	}
+	399.1.1 = {
+		death = yes
+	}
+}
+aksum_62 = {
+	name= "Dawit"
+	religion="haymanot"
+	culture="ethiopian"
+	trait = zealous
+	432.1.1 = {
+		birth = yes
+	}
+	489.1.1 = {
+		death = yes
+	}
+}
+aksum_63 = {
+	name= "Israel"
+	religion="haymanot"
+	culture="ethiopian"
+	501.1.1 = {
+		birth = yes
+	}
+	549.1.1 = {
+		death = yes
+	}
+}
+aksum_64 = {
+	name= "Hiram"
+	religion="haymanot"
+	culture="ethiopian"
+	604.1.1 = {
+		birth = yes
+	}
+	653.1.1 = {
+		death = yes
+	}
+}
+aksum_65 = {
+	name= "Yacob"
+	religion="coptic"
+	culture="ethiopian"
+	604.1.1 = {
+		birth = yes
+	}
+	653.1.1 = {
+		death = yes
+	}
+}
+aksum_66 = {
+	name= "Gebre"
+	religion="nicene"
+	culture="ethiopian"
+	348.1.1 = {
+		birth = yes
+	}
+	401.1.1 = {
+		death = yes
+	}
+}
+aksum_67 = {
+	name= "Berta"
+	religion="nicene"
+	culture="ethiopian"
+	445.1.1 = {
+		birth = yes
+	}	
+	451.1.1 = {
+		religion = "coptic"
+	}
+	499.1.1 = {
+		death = yes
+	}
+}
+
+145642 = {
+	name = "Phineas"
+	dynasty = 1022242
+	religion = "haymanot"
+	culture = "ethiopian"
+	723.1.1 = {
+		birth = "723.1.1"
+	}
+	774.1.1 = {
+		death = "774.1.1"
+	}
+}
+145976 = {
+	name = "Aman"
+	dynasty = 1042640
+	religion = "coptic"
+	culture = "ethiopian"
+
+	733.1.1 = {
+		birth = "733.1.1"
+	}
+	788.1.1 = {
+		death = "788.1.1"
+	}
+}
+
+145977 = {
+	name = "Gebereal"
+	dynasty = 1042640
+	religion = "coptic"
+	culture = "ethiopian"
+	father = 145976
+	750.1.1 = {
+		birth = "750.1.1"
+	}
+	813.1.1 = {
+		death = "813.1.1"
+	}
+}
+
+#Gojjam
+
+gojjam_01 = {
+	name= "Desta"
+	religion="aksumite_pagan"
+	culture="ethiopian"
+	321.1.1 = {
+		birth = yes
+	}
+	399.1.1 = {
+		death = yes
+	}
+}
+gojjam_02 = {
+	name= "Selassie"
+	religion="aksumite_pagan"
+	culture="ethiopian"
+	432.1.1 = {
+		birth = yes
+	}	
+	# 451.1.1 = {
+	# 	religion = "coptic"
+	# }
+	499.1.1 = {
+		death = yes
+	}
+}
+gojjam_03 = {
+	name= "Benaim"
+	religion="aksumite_pagan"
+	culture="ethiopian"
+	512.1.1 = {
+		birth = yes
+	}
+	569.1.1 = {
+		death = yes
+	}
+}
+gojjam_04 = {
+	name= "Benaim"
+	religion="aksumite_pagan"
+	culture="ethiopian"
+	613.1.1 = {
+		birth = yes
+	}
+	671.1.1 = {
+		death = yes
+	}
+}
+
+# Abraha's other son
+# aksum_67 = {
+# 	name= "Yaksum"
+# 	dynasty = dynasty_abraha
+# 	religion="coptic"
+# 	culture="ethiopian"
+# 	father = aksum_24 #Abraha
+# 	528.1.1 = {
+# 		birth = yes
+# 	}
+# 	570.1.1 = {
+# 		death = yes
+# 	}
+# }
+
+
+#############################################################
+# 
+# MISC PLACEHOLDERS
+# 
+# Done by Cybrxkhan
+# 
+#############################################################
+
+aksumite_misc_001 = {
+	name= "Afework"
+	religion="aksumite_pagan"
+	culture="ethiopian"
+	313.4.19 = {
+		birth = yes
+	}
+	378.2.4 = {
+		death = yes
+	}
+}
+
+aksumite_misc_002 = {
+	name= "Loua"
+	religion="aksumite_pagan"
+	culture="ethiopian"
+	339.2.5 = {
+		birth = yes
+	}
+	381.9.18 = {
+		death = yes
+	}
+}
+
+aksumite_misc_003 = {
+	name= "Negasi"
+	religion="aksumite_pagan"
+	culture="ethiopian"
+	341.11.19 = {
+		birth = yes
+	}
+	392.7.5 = {
+		death = yes
+	}
+}
+
+aksumite_misc_004 = {
+	name= "Semer"
+	religion="aksumite_pagan"
+	culture="ethiopian"
+	369.4.20 = {
+		birth = yes
+	}
+	414.3.25 = {
+		death = yes
+	}
+}
+
+aksumite_misc_005 = {
+	name= "Getachew"
+	religion="aksumite_pagan"
+	culture="ethiopian"
+	444.4.24 = {
+		birth = yes
+	}
+	493.10.1 = {
+		death = yes
+	}
+}
+
+aksumite_misc_006 = {
+	name= "Jima"
+	religion="aksumite_pagan"
+	culture="ethiopian"
+	504.9.11 = {
+		birth = yes
+	}
+	557.2.17 = {
+		death = yes
+	}
+}
+
+aksumite_misc_007 = {
+	name= "Negus"
+	religion="damot_pagan"
+	culture="ethiopian"
+	344.1.9 = {
+		birth = yes
+	}
+	398.6.22 = {
+		death = yes
+	}
+}
+
+aksumite_misc_008 = {
+	name= "Abebe"
+	religion="damot_pagan"
+	culture="ethiopian"
+	442.4.12 = {
+		birth = yes
+	}
+	507.3.11 = {
+		death = yes
+	}
+}
+
+aksumite_misc_009 = {
+	name= "Tamirat"
+	religion="damot_pagan"
+	culture="ethiopian"
+	510.12.19 = {
+		birth = yes
+	}
+	572.1.17 = {
+		death = yes
+	}
+}
+
+aksumite_misc_010 = {
+	name= "Selassie"
+	religion="damot_pagan"
+	culture="ethiopian"
+	609.4.16 = {
+		birth = yes
+	}
+	670.3.2 = {
+		death = yes
+	}
+}
+
+
+
+
+
+

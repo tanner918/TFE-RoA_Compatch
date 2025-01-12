@@ -1,0 +1,45 @@
+﻿headgear_special = {
+
+	usage = game
+	selection_behavior = weighted_random
+	priority = 6
+
+
+	no_hat = {
+		usage = game
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = no_headgear
+				value = 0
+			}
+		}
+		outfit_tags = { no_clothes nightgown no_headgear beggar_rags }
+		weight = {
+			base = 0
+			modifier = {
+				add = 10000
+				portrait_wear_no_headgear_trigger = yes
+				portrait_ep2_wedding_clothes_trigger = no
+			}
+			modifier = {
+				add = 2000
+				has_character_flag = islam_prophet
+			}
+			modifier = {
+				add = 2000
+				trigger_if = {
+					limit = {
+						exists = global_var:prophet
+					}
+					THIS = global_var:prophet
+				}
+				trigger_else = {
+					always = no
+				}
+			}
+		}
+	}
+
+}

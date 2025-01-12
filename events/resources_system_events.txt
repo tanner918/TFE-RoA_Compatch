@@ -1,0 +1,1498 @@
+﻿namespace = resources
+namespace = resources_chain
+	
+resources.0001 = { 
+	hidden = yes
+	
+	trigger = {
+	is_ruler = yes
+	OR = {
+		has_government = feudal_government
+		has_government = clan_government
+			}
+	highest_held_title_tier > 2
+	any_realm_province = {
+		OR = {
+			has_building_or_higher = resources_market_01
+			has_building_or_higher = resources_market_02
+			has_building_or_higher = resources_market_03
+			has_building_or_higher = resources_market_04
+			has_building_or_higher = resources_market_05
+			has_building_or_higher = resources_market_06
+			has_building_or_higher = resources_market_07
+			has_building_or_higher = resources_market_08
+			has_building_or_higher = resources_market_09
+			has_building_or_higher = resources_market_10
+			has_building_or_higher = resources_market_11
+			has_building_or_higher = resources_market_12
+			has_building_or_higher = resources_market_13
+			has_building_or_higher = resources_market_14
+			has_building_or_higher = resources_market_15
+			has_building_or_higher = resources_market_16			
+			}
+		}
+	}
+	
+	immediate = {
+			trigger_event = {
+			id = resources.0002
+			}
+			trigger_event = {
+			id = resources.0003
+			}
+			trigger_event = {
+			id = resources.0004
+			}
+			trigger_event = {
+			id = resources.0005
+			}
+			trigger_event = {
+			id = resources.0006
+			}
+			trigger_event = {
+			id = resources.0007
+			}
+			trigger_event = {
+			id = resources.0008
+			}
+			trigger_event = {
+			id = resources.0009
+			}
+			trigger_event = {
+			id = resources.0010
+			}
+			trigger_event = {
+			id = resources.0011
+			}
+			trigger_event = {
+			id = resources.0012
+			}
+			
+			trigger_event = {
+			id = resources.0013
+			}
+			trigger_event = {
+			id = resources.0014
+			}
+			trigger_event = {
+			id = resources.0015
+			}
+			trigger_event = {
+			id = resources.0016
+			}
+			trigger_event = {
+			id = resources.0017
+			}
+			trigger_event = {
+			id = resources.0018
+			}
+			trigger_event = {
+			id = resources.0019
+			}
+			trigger_event = {
+			id = resources.0020
+			}
+			trigger_event = {
+			id = resources.0021
+			}
+			trigger_event = {
+			id = resources.0022
+			}
+			trigger_event = {
+			id = resources.0023
+			}
+			
+			trigger_event = {
+			id = resources.0024
+			}
+			trigger_event = {
+			id = resources.0025
+			}
+			trigger_event = {
+			id = resources.0026
+			}
+			
+			trigger_event = {
+			id = resources.0027
+			}
+			trigger_event = {
+			id = resources.0028
+			}
+			trigger_event = {
+			id = resources.0029
+			}
+			trigger_event = {
+			id = resources.0030
+			}
+			
+			trigger_event = {
+			id = resources.0031
+			}
+			trigger_event = {
+			id = resources.0032
+			}
+			trigger_event = {
+			id = resources.0033
+			}
+			trigger_event = {
+			id = resources.0034
+			}
+			trigger_event = {
+			id = resources.0035
+			}
+			
+			trigger_event = {
+			id = resources.0036
+			}
+			trigger_event = {
+			id = resources.0037
+			}
+			trigger_event = {
+			id = resources.0038
+			}
+			
+			trigger_event = {
+			id = resources.0039
+			}
+			
+			trigger_event = {
+			id = resources.0040
+			}
+			trigger_event = {
+			id = resources.0041
+			}
+			trigger_event = {
+			id = resources.0042
+			}
+			
+			trigger_event = {
+			id = resources.0043
+			}
+			trigger_event = {
+			id = resources.0044
+			}
+			trigger_event = {
+			id = resources.0045
+			}
+			
+			trigger_event = {
+			id = resources.0046
+			}
+			trigger_event = {
+			id = resources.0047
+			}
+			trigger_event = {
+			id = resources.0048
+			}
+
+		}
+	}
+
+#CLOTH
+resources.0002 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count <= 3
+	has_building_or_higher = resources_market_01	
+	}
+	NOT = {
+	any_realm_province = {
+	count = 0 
+	has_building_or_higher = resources_market_01	
+			}
+		}
+	}
+	immediate = {
+            add_character_modifier = {
+			modifier = cloth_resources2_modifier
+			days = 730
+			}
+			remove_character_modifier = cloth_resources3_modifier
+			remove_character_modifier = cloth_resources4_modifier
+		}
+	}
+resources.0003 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count > 3
+	has_building_or_higher = resources_market_01
+	}
+	NOT = {
+	any_realm_province = {
+	count > 6 
+	has_building_or_higher = resources_market_01
+			}
+		}
+	}	
+	immediate = {
+            add_character_modifier = {
+			modifier = cloth_resources3_modifier
+			days = 730
+			}
+			remove_character_modifier = cloth_resources2_modifier
+		}
+	}
+resources.0004 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count > 6
+	has_building_or_higher = resources_market_01
+		}
+	}	
+	immediate = {
+            add_character_modifier = {
+			modifier = cloth_resources4_modifier
+			days = 730
+			}
+			remove_character_modifier = cloth_resources2_modifier
+			remove_character_modifier = cloth_resources3_modifier
+		}
+	}
+	
+#COPPER	
+resources.0005 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count <= 2
+	has_building_or_higher = resources_market_02
+		}
+	NOT = {
+	any_realm_province = {
+	count = 0 
+	has_building_or_higher = resources_market_02
+			}
+		}
+	}
+	immediate = {
+            add_character_modifier = {
+			modifier = copper_resources2_modifier
+			days = 730
+			}
+			remove_character_modifier = copper_resources3_modifier
+		}
+	}
+resources.0006 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count > 2
+	has_building_or_higher = resources_market_02
+		}
+	}
+	immediate = {
+            add_character_modifier = {
+			modifier = copper_resources3_modifier
+			days = 730
+			}
+			remove_character_modifier = copper_resources2_modifier
+		}
+	}
+
+#IRON	
+resources.0007 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count <= 2
+	has_building_or_higher = resources_market_03
+	}
+	NOT = {
+	any_realm_province = {
+	count = 0 
+	has_building_or_higher = resources_market_03
+			}
+		}
+	}
+	immediate = {
+            add_character_modifier = {
+			modifier = iron_resources2_modifier
+			days = 730
+			}
+			remove_character_modifier = iron_resources3_modifier
+		}
+	}
+resources.0008 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count > 2
+	has_building_or_higher = resources_market_03
+		}
+	}	
+	immediate = {
+            add_character_modifier = {
+			modifier = iron_resources3_modifier
+			days = 730
+			}
+			remove_character_modifier = iron_resources2_modifier
+		}
+	}
+
+#SALT	
+resources.0009 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count <= 2
+	has_building_or_higher = resources_market_04
+		}
+	NOT = {
+	any_realm_province = {
+	count = 0 
+	has_building_or_higher = resources_market_04
+			}
+		}
+	}
+	immediate = {
+            add_character_modifier = {
+			modifier = salt_resources2_modifier
+			days = 730
+			}
+			remove_character_modifier = salt_resources3_modifier
+		}
+	}
+resources.0010 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count > 2
+	has_building_or_higher = resources_market_04
+		}
+	}	
+	immediate = {
+            add_character_modifier = {
+			modifier = salt_resources3_modifier
+			days = 730
+			}
+			remove_character_modifier = salt_resources2_modifier
+		}
+	}
+
+#WINE	
+resources.0011 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count > 2
+	has_building_or_higher = resources_market_05
+	}
+	NOT = {
+	any_realm_province = {
+	count > 4  
+	has_building_or_higher = resources_market_05
+			}
+		}
+	}
+	immediate = {
+            add_character_modifier = {
+			modifier = wine_resources2_modifier
+			days = 730
+			}
+		}
+	}
+resources.0012 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count > 4
+	has_building_or_higher = resources_market_05
+	}
+	NOT = {
+	any_realm_province = {
+	count > 6 
+	has_building_or_higher = resources_market_05
+			}
+		}
+	}	
+	immediate = {
+            add_character_modifier = {
+			modifier = wine_resources3_modifier
+			days = 730
+			}
+			remove_character_modifier = wine_resources2_modifier
+		}
+	}
+resources.0013 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count > 6
+	has_building_or_higher = resources_market_05
+		}
+	}	
+	immediate = {
+            add_character_modifier = {
+			modifier = wine_resources4_modifier
+			days = 730
+			}
+			remove_character_modifier = wine_resources2_modifier
+			remove_character_modifier = wine_resources3_modifier
+		}
+	}
+
+#WOOL	
+resources.0014 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count > 2
+	has_building_or_higher = resources_market_06
+	}
+	NOT = {
+	any_realm_province = {
+	count > 4 
+	has_building_or_higher = resources_market_06
+			}
+		}
+	}
+	immediate = {
+           add_character_modifier = {
+			modifier = wool_resources2_modifier
+			days = 730
+			}
+		}
+	}
+resources.0015 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count > 4
+	has_building_or_higher = resources_market_06
+	}
+	NOT = {
+	any_realm_province = {
+	count > 6 
+	has_building_or_higher = resources_market_06
+			}
+		}
+	}	
+	immediate = {
+            add_character_modifier = {
+			modifier = wool_resources3_modifier
+			days = 730
+			}
+			remove_character_modifier = wool_resources2_modifier
+		}
+	}
+resources.0016 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count > 6
+	has_building_or_higher = resources_market_06
+		}
+	}	
+	immediate = {
+            add_character_modifier = {
+			modifier = wool_resources4_modifier
+			days = 730
+			}
+			remove_character_modifier = wool_resources2_modifier
+			remove_character_modifier = wool_resources3_modifier
+		}
+	}
+
+#LEATHER	
+resources.0017 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count <= 3
+	has_building_or_higher = resources_market_07
+	}
+	NOT = {
+	any_realm_province = {
+	count = 0 
+	has_building_or_higher = resources_market_07
+			}
+		}
+	}
+	immediate = {
+            add_character_modifier = {
+			modifier = leather_resources2_modifier
+			days = 730
+			}
+			remove_character_modifier = leather_resources3_modifier
+		}
+	}
+resources.0018 = { 
+	hidden = yes
+	trigger = {
+	any_realm_province = {
+	count > 3
+	has_building_or_higher = resources_market_07
+		}
+	}	
+	immediate = {
+            add_character_modifier = {
+			modifier = leather_resources3_modifier
+			days = 730
+			}
+			remove_character_modifier = leather_resources2_modifier
+		}
+	}
+	
+#STONE
+resources.0019 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count <= 2
+	has_building_or_higher = resources_market_08
+	}
+	NOT = {
+	any_realm_province = {
+	count = 0 
+	has_building_or_higher = resources_market_08
+			}
+		}
+	}	
+	immediate = {
+            add_character_modifier = {
+			modifier = stone_resources2_modifier
+			days = 730
+			}
+			remove_character_modifier = stone_resources3_modifier
+		}
+	}
+resources.0020 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count > 2
+	has_building_or_higher = resources_market_08
+		}
+	}
+	immediate = {
+            add_character_modifier = {
+			modifier = stone_resources3_modifier
+			days = 730
+			}
+			remove_character_modifier = stone_resources2_modifier
+		}
+	}
+
+#WOOD	
+resources.0021 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count <= 3
+	has_building_or_higher = resources_market_09
+	}
+	NOT = {
+	any_realm_province = {
+	count = 0 
+	has_building_or_higher = resources_market_09
+			}
+		}
+	}	
+	immediate = {
+            add_character_modifier = {
+			modifier = wood_resources2_modifier
+			days = 730
+			}
+			remove_character_modifier = wood_resources3_modifier
+		}
+	}
+resources.0022 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count > 3
+	has_building_or_higher = resources_market_09
+		}
+	}
+	immediate = {
+            add_character_modifier = {
+			modifier = wood_resources3_modifier
+			days = 730
+			}
+			remove_character_modifier = wood_resources2_modifier
+		}
+	}
+	
+#MARBLE
+resources.0023 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count <= 2
+	has_building_or_higher = resources_market_10
+		}
+	NOT = {
+	any_realm_province = {
+	count = 0 
+	has_building_or_higher = resources_market_10
+			}
+		}
+	}	
+	immediate = {
+            add_character_modifier = {
+			modifier = marble_resources2_modifier
+			days = 730
+			}
+			remove_character_modifier = marble_resources3_modifier
+		}
+	}
+resources.0024 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count > 2
+	has_building_or_higher = resources_market_10
+		}
+	}	
+	immediate = {
+            add_character_modifier = {
+			modifier = marble_resources3_modifier
+			days = 730
+			}
+			remove_character_modifier = marble_resources2_modifier
+		}
+	}
+	
+#GLASS
+resources.0025 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count <= 2
+	has_building_or_higher = resources_market_11
+		}
+	NOT = {
+	any_realm_province = {
+	count = 0 
+	has_building_or_higher = resources_market_11
+			}
+		}
+	}	
+	immediate = {
+            add_character_modifier = {
+			modifier = glass_resources2_modifier
+			days = 730
+			}
+			remove_character_modifier = glass2_resources2_modifier
+			remove_character_modifier = glass_resources3_modifier
+		}
+	}
+resources.0026 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count > 2
+	has_building_or_higher = resources_market_11
+		}
+	}
+	immediate = {
+            add_character_modifier = {
+			modifier = glass_resources3_modifier
+			days = 730
+			}
+			remove_character_modifier = glass_resources2_modifier 
+			remove_character_modifier = glass2_resources2_modifier
+		}
+	}
+	
+#DYES
+resources.0027 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count <= 2
+	has_building_or_higher = resources_market_12
+		}
+	NOT = {
+	any_realm_province = {
+	count = 0 
+	has_building_or_higher = resources_market_12
+			}
+		}
+	}	
+	immediate = {
+            add_character_modifier = {
+			modifier = dyes_resources2_modifier
+			days = 730
+			}
+			remove_character_modifier = dyes2_resources2_modifier
+			remove_character_modifier = dyes_resources3_modifier
+		}
+	}	
+resources.0028 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count > 2
+	has_building_or_higher = resources_market_12
+		}
+	}
+	immediate = {
+            add_character_modifier = {
+			modifier = dyes_resources3_modifier
+			days = 730
+			}
+			remove_character_modifier = dyes_resources2_modifier
+			remove_character_modifier = dyes2_resources2_modifier
+		}
+	}
+	
+#SILK
+resources.0029 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count <= 2
+	has_building_or_higher = resources_market_13
+		}
+	NOT = {
+	any_realm_province = {
+	count = 0 
+	has_building_or_higher = resources_market_13
+			}
+		}
+	}	
+	immediate = {
+            add_character_modifier = {
+			modifier = silk_resources2_modifier
+			days = 730
+			}
+			remove_character_modifier = silk2_resources2_modifier
+			remove_character_modifier = silk_resources3_modifier
+		}
+	}	
+resources.0030 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count > 2
+	has_building_or_higher = resources_market_13
+		}
+	}
+	immediate = {
+            add_character_modifier = {
+			modifier = silk_resources3_modifier
+			days = 730
+			}
+			remove_character_modifier = silk_resources2_modifier   
+			remove_character_modifier = silk2_resources2_modifier
+		}
+	}
+
+#COTTON
+resources.0031 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count > 2
+	has_building_or_higher = resources_market_14
+	}
+	NOT = {
+	any_realm_province = {
+	count > 4 
+	has_building_or_higher = resources_market_14
+			}
+		}
+	}
+	immediate = {
+            add_character_modifier = {
+			modifier = cotton_resources2_modifier
+			days = 730
+			}
+			remove_character_modifier = cotton_resources3_modifier
+		}
+	}	
+resources.0032 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count > 4
+	has_building_or_higher = resources_market_14
+	}
+	NOT = {
+	any_realm_province = {
+	count > 6 
+	has_building_or_higher = resources_market_14
+			}
+		}
+	}	
+	immediate = {
+            add_character_modifier = {
+			modifier = cotton_resources3_modifier
+			days = 730
+			}
+			remove_character_modifier = cotton_resources2_modifier
+		}
+	}
+resources.0033 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count > 6
+	has_building_or_higher = resources_market_14
+		}
+	}	
+	immediate = {
+            add_character_modifier = {
+			modifier = cotton_resources4_modifier
+			days = 730
+			}
+			remove_character_modifier = cotton_resources2_modifier
+			remove_character_modifier = cotton_resources3_modifier
+		}
+	}
+
+#AMBER	
+resources.0034 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count <= 2
+	has_building_or_higher = resources_market_15
+		}
+	NOT = {
+	any_realm_province = {
+	count = 0 
+	has_building_or_higher = resources_market_15
+			}
+		}
+	}	
+	immediate = {
+            add_character_modifier = {
+			modifier = amber_resources2_modifier
+			days = 730
+			}
+			remove_character_modifier = amber2_resources2_modifier
+		}
+	}
+resources.0035 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count > 2
+	has_building_or_higher = resources_market_15
+		}
+	}	
+	immediate = {
+            add_character_modifier = {
+			modifier = amber_resources3_modifier
+			days = 730
+			}
+			remove_character_modifier = amber_resources2_modifier   
+			remove_character_modifier = amber2_resources2_modifier
+		}
+	}
+
+#FUR	
+resources.0036 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count <= 3
+	has_building_or_higher = resources_market_16	
+	}
+	NOT = {
+	any_realm_province = {
+	count = 0 
+	has_building_or_higher = resources_market_16	
+			}
+		}
+	}
+	immediate = {
+            add_character_modifier = {
+			modifier = fur_resources2_modifier
+			days = 730
+			}
+		}
+	}	
+resources.0037 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count > 3
+	has_building_or_higher = resources_market_16
+	}
+	NOT = {
+	any_realm_province = {
+	count > 6 
+	has_building_or_higher = resources_market_16
+			}
+		}
+	}	
+	immediate = {
+            add_character_modifier = {
+			modifier = fur_resources3_modifier
+			days = 730
+			}
+			remove_character_modifier = fur_resources2_modifier
+		}
+	}	
+resources.0038 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count > 6
+	has_building_or_higher = resources_market_16
+		}
+	}	
+	immediate = {
+            add_character_modifier = {
+			modifier = fur_resources4_modifier
+			days = 730
+			}
+			remove_character_modifier = fur_resources2_modifier
+			remove_character_modifier = fur_resources3_modifier
+		}
+	}
+	
+############################################################
+	
+resources.0039 = { 
+	hidden = yes
+	
+	trigger = {
+	is_ruler = yes
+	highest_held_title_tier > 2
+	}
+	
+	immediate = {			
+			trigger_event = {
+			id = resources.0040
+			}
+			trigger_event = {
+			id = resources.0041
+			}
+			trigger_event = {
+			id = resources.0042
+			}
+			
+			trigger_event = {
+			id = resources.0043
+			}
+			trigger_event = {
+			id = resources.0044
+			}
+			trigger_event = {
+			id = resources.0045
+			}
+			
+			trigger_event = {
+			id = resources.0046
+			}
+			trigger_event = {
+			id = resources.0047
+			}
+			trigger_event = {
+			id = resources.0048
+			}
+			
+			trigger_event = {
+			id = resources.0049
+			}
+			trigger_event = {
+			id = resources.0050
+			}
+			trigger_event = {
+			id = resources.0051
+			}
+			trigger_event = {
+			id = resources.0052
+			}
+			trigger_event = {
+			id = resources.0053
+			}
+			trigger_event = {
+			id = resources.0054
+			}
+
+		}
+	}
+
+resources.0040 = { 
+	hidden = yes
+	trigger = {
+	any_sub_realm_county = {
+	count >= 3
+	has_county_modifier = post_resources_modifier
+	}
+	NOT = {
+	any_sub_realm_county = {
+	count >= 5 
+	has_county_modifier = post_resources_modifier
+			}
+		}
+	}
+	immediate = {
+            add_character_modifier = {
+			modifier = post1_bonus_modifier
+			days = 730
+			}
+		}
+	}
+resources.0041 = { 
+	hidden = yes
+	trigger = {
+	any_sub_realm_county = {
+	count >= 5
+	has_county_modifier = post_resources_modifier	
+	}
+	NOT = {
+	any_sub_realm_county = {
+	count >= 7 
+	has_county_modifier = post_resources_modifier	
+			}
+		}
+	}
+	immediate = {
+            add_character_modifier = {
+			modifier = post2_bonus_modifier
+			days = 730
+			}
+		}
+	}
+resources.0042 = { 
+	hidden = yes
+	trigger = {
+	any_sub_realm_county = {
+	count >= 7
+	has_county_modifier = post_resources_modifier	
+		}
+	}
+	immediate = {
+            add_character_modifier = {
+			modifier = post3_bonus_modifier
+			days = 730
+			}
+		}
+	}
+	
+resources.0043 = { 
+	hidden = yes
+	trigger = {
+	any_sub_realm_county = {
+	count >= 3
+	OR = {
+	has_county_modifier = market_resources_modifier
+    has_county_modifier = port_resources_modifier	
+		}
+	}
+	NOT = {
+	any_sub_realm_county = {
+	count >= 5 
+	OR = {
+	has_county_modifier = market_resources_modifier	
+	has_county_modifier = port_resources_modifier	
+				}
+			}
+		}
+	}
+	immediate = {
+            add_character_modifier = {
+			modifier = market1_bonus_modifier
+			days = 730
+			}
+			remove_character_modifier = post1_bonus_modifier
+		}
+	}
+resources.0044 = { 
+	hidden = yes
+	trigger = {
+	any_sub_realm_county = {
+	count >= 5
+	OR = {
+	has_county_modifier = market_resources_modifier
+    has_county_modifier = port_resources_modifier	
+		}
+	}
+	NOT = {
+	any_sub_realm_county = {
+	count >= 7 
+	OR = {
+	has_county_modifier = market_resources_modifier	
+	has_county_modifier = port_resources_modifier	
+				}
+			}
+		}
+	}
+	immediate = {
+            add_character_modifier = {
+			modifier = market2_bonus_modifier
+			days = 730
+			}
+			remove_character_modifier = post1_bonus_modifier
+			remove_character_modifier = post2_bonus_modifier
+		}
+	}
+resources.0045 = { 
+	hidden = yes
+	trigger = {
+	any_sub_realm_county = {
+	count >= 7
+	OR = {
+	has_county_modifier = market_resources_modifier
+    has_county_modifier = port_resources_modifier	
+			}
+		}
+	}
+	immediate = {
+            add_character_modifier = {
+			modifier = market3_bonus_modifier
+			days = 730
+			}
+			remove_character_modifier = post1_bonus_modifier
+			remove_character_modifier = post2_bonus_modifier
+			remove_character_modifier = post3_bonus_modifier
+		}
+	}
+###TRADE CENTER	
+resources.0046 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count >= 3
+	has_holding_type = trade_center_holding	
+	}
+	NOT = {
+	any_realm_province = {
+	count >= 5
+	has_holding_type = trade_center_holding	
+			}
+		}
+	}
+	immediate = {
+            add_character_modifier = {
+			modifier = trade1_bonus_modifier
+			days = 730
+			}
+			remove_character_modifier = post1_bonus_modifier
+			remove_character_modifier = market1_bonus_modifier
+		}
+	}	
+resources.0047 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count >= 5
+	has_holding_type = trade_center_holding	
+	}
+	NOT = {
+	any_realm_province = {
+	count >= 7 
+	has_holding_type = trade_center_holding	
+			}
+		}
+	}
+	immediate = {
+            add_character_modifier = {
+			modifier = trade2_bonus_modifier
+			days = 730
+			}
+			remove_character_modifier = trade1_bonus_modifier
+			remove_character_modifier = post1_bonus_modifier
+			remove_character_modifier = market1_bonus_modifier
+			remove_character_modifier = post2_bonus_modifier
+			remove_character_modifier = market2_bonus_modifier
+		}
+	}	
+resources.0048 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count >= 7
+	has_holding_type = trade_center_holding	
+		}
+	}
+	immediate = {
+            add_character_modifier = {
+			modifier = trade3_bonus_modifier
+			days = 730
+			}
+			remove_character_modifier = trade1_bonus_modifier
+			remove_character_modifier = trade2_bonus_modifier
+			remove_character_modifier = post1_bonus_modifier
+			remove_character_modifier = market1_bonus_modifier
+			remove_character_modifier = post2_bonus_modifier
+			remove_character_modifier = market2_bonus_modifier
+			remove_character_modifier = post3_bonus_modifier
+			remove_character_modifier = market3_bonus_modifier
+		}
+	}
+
+###MIX
+resources.0049 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count = 1
+	has_holding_type = trade_center_holding	
+	}
+	any_sub_realm_county = {
+	count >= 4
+	OR = {
+	has_county_modifier = market_resources_modifier
+    has_county_modifier = port_resources_modifier	
+			}
+		}
+	NOT = {
+	any_sub_realm_county = {
+	count >= 7 
+	has_county_modifier = market_resources_modifier
+    has_county_modifier = port_resources_modifier	
+			}
+		}
+	}
+	immediate = {
+            add_character_modifier = {
+			modifier = trade1_bonus_modifier
+			days = 730
+			}
+			remove_character_modifier = post1_bonus_modifier
+			remove_character_modifier = market1_bonus_modifier
+		}
+	}
+	
+resources.0050 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count = 2
+	has_holding_type = trade_center_holding	
+	}
+	any_sub_realm_county = {
+	count >= 2
+	OR = {
+	has_county_modifier = market_resources_modifier
+    has_county_modifier = port_resources_modifier	
+			}
+		}
+	NOT = {
+	any_sub_realm_county = {
+	count >= 7 
+	has_county_modifier = market_resources_modifier
+    has_county_modifier = port_resources_modifier	
+			}
+		}
+	}
+	immediate = {
+            add_character_modifier = {
+			modifier = trade1_bonus_modifier
+			days = 730
+			}
+			remove_character_modifier = post1_bonus_modifier
+			remove_character_modifier = market1_bonus_modifier
+		}
+	}
+	
+resources.0051 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count = 3
+	has_holding_type = trade_center_holding	
+	}
+	any_sub_realm_county = {
+	count >= 4
+	OR = {
+	has_county_modifier = market_resources_modifier
+    has_county_modifier = port_resources_modifier	
+			}
+		}
+	}
+	immediate = {
+            add_character_modifier = {
+			modifier = trade2_bonus_modifier
+			days = 730
+			}
+			remove_character_modifier = trade1_bonus_modifier
+			remove_character_modifier = post1_bonus_modifier
+			remove_character_modifier = market1_bonus_modifier
+			remove_character_modifier = post2_bonus_modifier
+			remove_character_modifier = market2_bonus_modifier
+		}
+	}
+
+resources.0052 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count = 4
+	has_holding_type = trade_center_holding	
+	}
+	any_sub_realm_county = {
+	count >= 2
+	OR = {
+	has_county_modifier = market_resources_modifier
+    has_county_modifier = port_resources_modifier	
+			}
+		}
+	}
+	immediate = {
+            add_character_modifier = {
+			modifier = trade2_bonus_modifier
+			days = 730
+			}
+			remove_character_modifier = trade1_bonus_modifier
+			remove_character_modifier = post1_bonus_modifier
+			remove_character_modifier = market1_bonus_modifier
+			remove_character_modifier = post2_bonus_modifier
+			remove_character_modifier = market2_bonus_modifier
+		}
+	}	
+	
+resources.0053 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count = 5
+	has_holding_type = trade_center_holding	
+		}
+	any_sub_realm_county = {
+	count >= 4
+	OR = {
+	has_county_modifier = market_resources_modifier
+    has_county_modifier = port_resources_modifier	
+			}
+		}
+	}
+	immediate = {
+            add_character_modifier = {
+			modifier = trade3_bonus_modifier
+			days = 730
+			}
+			remove_character_modifier = trade1_bonus_modifier
+			remove_character_modifier = trade2_bonus_modifier
+			remove_character_modifier = post1_bonus_modifier
+			remove_character_modifier = market1_bonus_modifier
+			remove_character_modifier = post2_bonus_modifier
+			remove_character_modifier = market2_bonus_modifier
+			remove_character_modifier = post3_bonus_modifier
+			remove_character_modifier = market3_bonus_modifier
+		}
+	}
+	
+resources.0054 = { 
+	hidden = yes	
+	trigger = {
+	any_realm_province = {
+	count = 6
+	has_holding_type = trade_center_holding	
+		}
+	any_sub_realm_county = {
+	count >= 2
+	OR = {
+	has_county_modifier = market_resources_modifier
+    has_county_modifier = port_resources_modifier	
+			}
+		}
+	}
+	immediate = {
+            add_character_modifier = {
+			modifier = trade3_bonus_modifier
+			days = 730
+			}
+			remove_character_modifier = trade1_bonus_modifier
+			remove_character_modifier = trade2_bonus_modifier
+			remove_character_modifier = post1_bonus_modifier
+			remove_character_modifier = market1_bonus_modifier
+			remove_character_modifier = post2_bonus_modifier
+			remove_character_modifier = market2_bonus_modifier
+			remove_character_modifier = post3_bonus_modifier
+			remove_character_modifier = market3_bonus_modifier
+		}
+	}
+
+###DECISION
+resources.0055 = { 
+	hidden = yes	
+	immediate = {
+            add_character_modifier = {
+			modifier = dyes2_resources2_modifier
+			}
+			add_character_flag = {
+			flag = dyes2_resources2_yes
+			days = 1825
+			}
+		}
+	}	
+resources.0056 = { 
+	hidden = yes	
+	immediate = {
+		remove_character_modifier = dyes2_resources2_modifier
+		add_character_flag = {
+			flag = dyes2_resources2_no
+			days = 1825
+		}
+	}
+}	
+
+resources.0057 = { 
+	hidden = yes	
+	immediate = {
+            add_character_modifier = {
+			modifier = glass2_resources2_modifier
+			}
+			add_character_flag = {
+			flag = glass2_resources2_yes
+			days = 1825
+			}
+		}
+	}		
+resources.0058 = { 
+	hidden = yes	
+	immediate = {
+		remove_character_modifier = glass2_resources2_modifier
+		add_character_flag = {
+			flag = glass2_resources2_no
+			days = 1825
+		}
+	}
+}	
+
+resources.0059 = { 
+	hidden = yes	
+	immediate = {
+            add_character_modifier = {
+			modifier = amber2_resources2_modifier
+			}
+			add_character_flag = {
+			flag = amber2_resources2_yes
+			days = 1825
+			}
+		}
+	}		
+resources.0060 = { 
+	hidden = yes	
+	immediate = {
+		remove_character_modifier = amber2_resources2_modifier
+		add_character_flag = {
+			flag = amber2_resources2_no
+			days = 1825
+		}
+	}
+}	
+
+resources.0061 = { 
+	hidden = yes	
+	immediate = {
+            add_character_modifier = {
+			modifier = silk2_resources2_modifier
+			}
+			add_character_flag = {
+			flag = silk2_resources2_yes
+			days = 1825
+			}
+		}
+	}	
+resources.0062 = { 
+	hidden = yes	
+	immediate = {
+		remove_character_modifier = silk2_resources2_modifier
+		add_character_flag = {
+			flag = silk2_resources2_no
+			days = 1825
+		}
+	}
+}	

@@ -1,0 +1,2754 @@
+﻿ ##########################
+### EASTERN ROMAN EMPIRE ############################################################################################################################################################################################################
+ ##########################
+
+### THRACIAN COA ##################################################################
+
+#k_thessalonika = { # The Herculiani iuniores
+#	pattern = "pattern_solid.dds"
+#		color1 = "blue"
+#	colored_emblem = {
+#		texture = "ce_eagle_02.dds"
+#		color1 = "yellow"
+#		instance = { position = { 0.5 0.5 } scale = { 1.05 1.05 } }	
+#	}
+#}
+		d_thrace_roman = { # The Divitenses Gallicani
+			pattern = "pattern_solid.dds"
+				color1 = "white"
+			colored_emblem = {
+				texture = "ce_eagle_canine_01.dds"
+				color1 = "red"
+				color2 = "blue"
+				color3 = "yellow"
+				instance = { position = { 0.5 0.5 } scale = { 0.95 0.95 } }
+			}
+		}
+				c_brysis_roman = { # The Divitenses Gallicani (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_eagle_canine_01.dds"
+						color1 = "red"
+						color2 = "blue"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 0.95 0.95 } }
+					}
+				}
+				c_byzantion_roman = { # The Divitenses Gallicani (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "red"
+					colored_emblem = {
+						texture = "ce_eagle_canine_01.dds"
+						color1 = "blue"
+						color2 = "yellow"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 0.95 0.95 } }
+					}
+				}
+				c_kalliopolis_roman = { # The Divitenses Gallicani (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_eagle_canine_01.dds"
+						color1 = "red"
+						color2 = "green"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 0.95 0.95 } }
+					}
+				}
+		d_strymon_roman = { # Prima Flavia gemina
+			pattern = "pattern_solid.dds"
+				color1 = "red"
+			colored_emblem = {
+				texture = "ce_cross_roman_06.dds"
+				color1 = "yellow"
+				color2 = "white"
+				color3 = "blue"
+				instance = { position = { 0.5 0.48 } scale = { 1 1 } }	
+			}
+		}
+				c_mosynopolis_roman = { # Prima Flavia gemina (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_cross_roman_06.dds"
+						color1 = "yellow"
+						color2 = "red"
+						color3 = "blue"
+						instance = { position = { 0.5 0.48 } scale = { 1 1 } }	
+					}
+				}
+				c_serres_roman = { # Prima Flavia gemina (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "blue"
+					colored_emblem = {
+						texture = "ce_cross_roman_06.dds"
+						color1 = "yellow"
+						color2 = "white"
+						color3 = "blue"
+						instance = { position = { 0.5 0.48 } scale = { 1 1 } }	
+					}
+				}
+		d_philippopolis_roman = { # Solenses Gallicani
+			pattern = "pattern_solid.dds"
+				color1 = "red"
+			colored_emblem = {
+				texture = "ce_rays_05.dds"
+				color1 = "yellow"
+				color2 = "blue"
+				color3 = "blue"
+				instance = { position = { 0.5 0.48 } scale = { 1 1 } }	
+			}
+		}
+		d_philippopolis_roman = { # The Tzaanni
+			pattern = "pattern_solid.dds"
+				color1 = "white"
+			colored_emblem = {
+				texture = "ce_boss_rosettes_03.dds"
+				color1 = "blue"
+				color2 = "red"
+				color3 = "yellow"
+				instance = { position = { 0.5 0.49 } scale = { 0.95 0.95 } }	
+			}
+		}
+				c_philippopolis_roman = { # The Tzaanni (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_boss_rosettes_03.dds"
+						color1 = "red"
+						color2 = "red"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.49 } scale = { 0.95 0.95 } }	
+					}
+				}
+				c_rhodopes_roman = { # The Pannoniciani iuniores
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_boss_rosettes_03.dds"
+						color1 = "blue"
+						color2 = "blue"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.49 } scale = { 0.95 0.95 } }	
+					}
+				}
+		d_turnovo_roman = { # The Tertiodecimani
+			pattern = "pattern_solid.dds"
+				color1 = "white"
+			colored_emblem = {
+				texture = "ce_canine_04.dds"
+				color1 = "red"
+				color2 = "blue"
+				color3 = "yellow"
+				instance = { position = { 0.5 0.5 } scale = { 0.95 0.95 } }
+			}
+		}
+				c_aytos_roman = { # The Tertiodecimani (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_canine_04.dds"
+						color1 = "red"
+						color2 = "green"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 0.95 0.95 } }
+					}
+				}
+				c_nikopolis_roman = { # The Tertiodecimani (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "red"
+					colored_emblem = {
+						texture = "ce_canine_04.dds"
+						color1 = "yellow"
+						color2 = "yellow"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 0.95 0.95 } }
+					}
+				}
+				c_dorostorum_roman = { # The Tertiodecimani (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "blue"
+					colored_emblem = {
+						texture = "ce_canine_04.dds"
+						color1 = "white"
+						color2 = "yellow"
+						color3 = "red"
+						instance = { position = { 0.5 0.5 } scale = { 0.95 0.95 } }
+					}
+				}
+				c_turnovo_roman = { # The Tertiodecimani (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "blue"
+					colored_emblem = {
+						texture = "ce_canine_04.dds"
+						color1 = "yellow"
+						color2 = "white"
+						color3 = "red"
+						instance = { position = { 0.5 0.5 } scale = { 0.95 0.95 } }
+					}
+				}
+		d_dobrudja_roman = { # Scythae Preasent II
+			pattern = "pattern_solid.dds"
+				color1 = "red"
+			colored_emblem = {
+				texture = "ce_rhomboids_01.dds"
+				color1 = "white"
+				color2 = "yellow"
+				color3 = "blue"
+				instance = { position = { 0.5 0.49 } scale = { 0.95 0.95 } }	
+			}
+		}
+				c_constanta_roman = { # Scythae Preasent II (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_rhomboids_02.dds"
+						color1 = "blue"
+						color2 = "yellow"
+						color3 = "red"
+						instance = { position = { 0.5 0.49 } scale = { 0.95 0.95 } }	
+					}
+				}
+						c_mesembria_roman = { # Scythae Preasent II (alternative)
+							pattern = "pattern_solid.dds"
+								color1 = "black"
+							colored_emblem = {
+								texture = "ce_rhomboids_02.dds"
+								color1 = "white"
+								color2 = "yellow"
+								color3 = "red"
+								instance = { position = { 0.5 0.49 } scale = { 0.95 0.95 } }	
+							}
+						}
+						c_mesembria = { # The Tertiodecimani (alternative)
+							pattern = "pattern_solid.dds"
+								color1 = "white"
+							colored_emblem = {
+								texture = "ce_canine_04.dds"
+								color1 = "blue"
+								color2 = "red"
+								color3 = "yellow"
+								instance = { position = { 0.5 0.5 } scale = { 0.95 0.95 } }
+							}
+						}
+		d_adrianopolis_roman = { # The Quartodecimani
+			pattern = "pattern_solid.dds"
+				color1 = "white"
+			colored_emblem = {
+				texture = "ce_eagle_01.dds"
+				color1 = "red"
+				color2 = "blue"
+				color3 = "yellow"
+				instance = { position = { 0.5 0.5 } scale = { 0.95 0.95 } }
+			}
+		}
+				c_adrianopolis_roman = { # The Quartodecimani (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "blue"
+					colored_emblem = {
+						texture = "ce_eagle_01.dds"
+						color1 = "red"
+						color2 = "white"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 0.95 0.95 } }
+					}
+				}
+				c_beroe_roman = { # The Quartodecimani (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_eagle_01.dds"
+						color1 = "red"
+						color2 = "red"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 0.95 0.95 } }
+					}
+				}
+				c_burgas_roman = { # The Quartodecimani (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_eagle_01.dds"
+						color1 = "red"
+						color2 = "red"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 0.95 0.95 } }
+					}
+				}
+				c_kran_roman = { # The Quartodecimani (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "red"
+					colored_emblem = {
+						texture = "ce_eagle_01.dds"
+						color1 = "red"
+						color2 = "yellow"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 0.95 0.95 } }
+					}
+				}
+				c_zherkovo_roman = { # The Quartodecimani (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_eagle_01.dds"
+						color1 = "red"
+						color2 = "green"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 0.95 0.95 } }
+					}
+				}
+
+
+### MACEDONIA COA ##################################################################
+
+#k_macedon = { # Quinta Macedonia
+#	pattern = "pattern_solid.dds"
+#		color1 = "white"
+#	colored_emblem = {
+#		texture = "ce_flower_01.dds"
+#		color1 = "blue"
+#		color2 = "yellow"
+#		color3 = "red"
+#		instance = { position = { 0.5 0.45 } scale = { 0.96 0.96 } }	
+#	}
+#}
+		d_thessalonika_roman = { # The Cornuti
+			pattern = "pattern_solid.dds"
+				color1 = "red"
+			colored_emblem = {
+				texture = "ce_twin_headed_06.dds"
+				color1 = "yellow"
+				color2 = "green"
+				color3 = "black"
+				instance = { position = { 0.5 0.5 } scale = { 1.2 1.2 } }
+			}
+		}
+		d_thessalonika_roman = { # The Cornuti
+			pattern = "pattern_solid.dds"
+				color1 = "yellow"
+			colored_emblem = {
+				texture = "ce_twin_headed_06.dds"
+				color1 = "yellow"
+				color2 = "red"
+				color3 = "green"
+				instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+			}
+		}
+				c_chalkidike_roman = { # The Cornuti (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_twin_headed_06.dds"
+						color1 = "white"
+						color2 = "red"
+						color3 = "green"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+				c_thessalonika_roman = { # The Cornuti (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_twin_headed_06.dds"
+						color1 = "yellow"
+						color2 = "green"
+						color3 = "blue"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+				c_veria_roman = { # The Cornuti (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "red"
+					colored_emblem = {
+						texture = "ce_twin_headed_06.dds"
+						color1 = "red"
+						color2 = "yellow"
+						color3 = "green"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+		d_achaia_roman = { # The Falchovarii
+			pattern = "pattern_solid.dds"
+				color1 = "blue"
+			colored_emblem = {
+				texture = "ce_twin_headed_07.dds"
+				color1 = "white"
+				color2 = "yellow"
+				color3 = "blue"
+				instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+			}
+		}
+				c_achaia_roman = { # The Falchovarii (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_twin_headed_07.dds"
+						color1 = "black"
+						color2 = "yellow"
+						color3 = "blue"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+				c_aetolia_roman = { # The Falchovarii (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "blue"
+					colored_emblem = {
+						texture = "ce_twin_headed_07.dds"
+						color1 = "white"
+						color2 = "yellow"
+						color3 = "white"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+				c_attica_roman = { # The Falchovarii (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "red"
+					colored_emblem = {
+						texture = "ce_twin_headed_07.dds"
+						color1 = "yellow"
+						color2 = "yellow"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+				c_boeotia_roman = { # The Falchovarii (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "green"
+					colored_emblem = {
+						texture = "ce_twin_headed_07.dds"
+						color1 = "white"
+						color2 = "white"
+						color3 = "white"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+				c_euboea_roman = { # The Falchovarii (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "red"
+					colored_emblem = {
+						texture = "ce_twin_headed_07.dds"
+						color1 = "white"
+						color2 = "white"
+						color3 = "blue"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+				c_korinthos_roman = { # The Falchovarii (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "red"
+					colored_emblem = {
+						texture = "ce_twin_headed_07.dds"
+						color1 = "white"
+						color2 = "white"
+						color3 = "white"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+				c_laconia_roman = { # The Falchovarii (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "green"
+					colored_emblem = {
+						texture = "ce_twin_headed_07.dds"
+						color1 = "white"
+						color2 = "white"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+				c_messenia_roman = { # The Falchovarii (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "blue"
+					colored_emblem = {
+						texture = "ce_twin_headed_07.dds"
+						color1 = "yellow"
+						color2 = "yellow"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+		d_dyrrachion_roman = { # The Lanciarii seniores
+			pattern = "pattern_solid.dds"
+				color1 = "yellow"
+			colored_emblem = {
+				texture = "ce_rays_01.dds"
+				color1 = "red"
+				color2 = "red"
+				color3 = "yellow"
+				instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+			}
+		}
+				c_arbanon_roman = { # The Lanciarii seniores (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_rays_01.dds"
+						color1 = "red"
+						color2 = "red"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+				c_antipatreia_roman = { # The Lanciarii seniores (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_rays_01.dds"
+						color1 = "black"
+						color2 = "black"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+				c_debar_roman = { # The Lanciarii seniores (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_rays_01.dds"
+						color1 = "green"
+						color2 = "green"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+				c_dyrrachion_roman = { # The Lanciarii seniores (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "red"
+					colored_emblem = {
+						texture = "ce_rays_01.dds"
+						color1 = "yellow"
+						color2 = "yellow"
+						color3 = "red"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+				c_ohrid_roman = { # The Lanciarii seniores (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_rays_01.dds"
+						color1 = "green"
+						color2 = "green"
+						color3 = "white"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+		d_epirus_roman = { # The Vindices
+			pattern = "pattern_solid.dds"
+				color1 = "blue"
+			colored_emblem = {
+				texture = "ce_twin_headed_05.dds"
+				color1 = "yellow"
+				color2 = "yellow"
+				color3 = "black"
+				instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+			}
+		}
+		d_epirus_roman = { # The Vindices
+			pattern = "pattern_solid.dds"
+				color1 = "yellow"
+			colored_emblem = {
+				texture = "ce_twin_headed_05.dds"
+				color2 = "blue"
+				color3 = "yellow"
+				instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+			}
+		}
+				c_avlonas_roman = { # The Vindices (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_twin_headed_05.dds"
+						color2 = "white"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+				c_buthrotum_roman = { # The Vindices (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "green"
+					colored_emblem = {
+						texture = "ce_twin_headed_05.dds"
+						color2 = "yellow"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+				c_cephalonia_roman = { # The Vindices (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "blue"
+					colored_emblem = {
+						texture = "ce_twin_headed_05.dds"
+						color2 = "white"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+				c_epeiros_roman = { # The Vindices (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_twin_headed_05.dds"
+						color2 = "blue"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+				c_metzovo_roman = { # The Vindices (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "green"
+					colored_emblem = {
+						texture = "ce_twin_headed_05.dds"
+						color2 = "white"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+				c_nicopolis_roman = { # The Vindices (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "blue"
+					colored_emblem = {
+						texture = "ce_twin_headed_05.dds"
+						color2 = "yellow"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+		d_krete_roman = { # The Felices Arcadiani iuniores
+			pattern = "pattern_solid.dds"
+				color1 = "red"
+			colored_emblem = {
+				texture = "ce_star_ten_04.dds"
+				color1 = "blue"
+				color2 = "white"
+				color3 = "yellow"
+				instance = { position = { 0.5 0.5 } scale = { 1.2 1.2 } }
+			}
+		}
+				c_chandax_roman = { # The Felices Arcadiani iuniores (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "blue"
+					colored_emblem = {
+						texture = "ce_star_ten_04.dds"
+						color1 = "red"
+						color2 = "white"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1.2 1.2 } }
+					}
+				}
+				c_chania_roman = { # The Felices Arcadiani iuniores (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_star_ten_04.dds"
+						color1 = "blue"
+						color2 = "red"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1.2 1.2 } }
+					}
+				}
+#		d_thessaly = { # The Defensores
+#			pattern = "pattern_solid.dds"
+#				color1 = "yellow"
+#			colored_emblem = {
+#				texture = "ce_twin_headed_06.dds"
+#				color1 = "blue"
+#				color2 = "yellow"
+#				color3 = "black"
+#				instance = { position = { 0.5 0.5 } scale = { 1.2 1.2 } }
+#			}
+#		}
+		d_thessaly_roman = { # Quinta Macedonia
+			pattern = "pattern_solid.dds"
+				color1 = "white"
+			colored_emblem = {
+				texture = "ce_flower_01.dds"
+				color1 = "blue"
+				color2 = "yellow"
+				color3 = "red"
+				instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+			}
+		}
+				c_demetrias_roman = { # Tertia Diocletiana Thebaeorum
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_flower_01.dds"
+						color1 = "yellow"
+						color2 = "white"
+						color3 = "red"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				c_neopatras_roman = { # Quinta Macedonia (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_flower_01.dds"
+						color1 = "red"
+						color2 = "yellow"
+						color3 = "blue"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				c_thessalia_roman = { # Quinta Macedonia (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_flower_01.dds"
+						color1 = "yellow"
+						color2 = "white"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				c_thessaliotis_roman = { # Quinta Macedonia (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_flower_01.dds"
+						color1 = "green"
+						color2 = "yellow"
+						color3 = "red"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+		d_skopje_roman = { # The Secundi Theodosiani
+			pattern = "pattern_solid.dds"
+				color1 = "blue"
+			colored_emblem = {
+				texture = "ce_canine_04.dds"
+				color1 = "red"
+				color2 = "yellow"
+				color3 = "white"
+				instance = { position = { 0.5 0.5 } scale = { 1.2 1.2 } }
+			}
+		}
+
+### DACIA COA ##################################################################
+
+#k_daciae = { # Tertia Diocletiana Thebaeorum
+#	pattern = "pattern_solid.dds"
+#		color1 = "white"
+#	colored_emblem = {
+#		texture = "ce_flower_01.dds"
+#		color1 = "yellow"
+#		color2 = "white"
+#		color3 = "red"
+#		instance = { position = { 0.5 0.45 } scale = { 0.96 0.96 } }	
+#	}
+#}
+		d_dacia_mediterrania_roman = { # The Daci
+			pattern = "pattern_solid.dds"
+				color1 = "blue"
+			colored_emblem = {
+				texture = "ce_star_ten_06.dds"
+				color1 = "yellow"
+				color3 = "blue"
+				instance = { position = { 0.5 0.5 } scale = { 1.2 1.2 } }
+			}
+		}
+				c_pirin_roman = { # The Daci (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_star_ten_06.dds"
+						color1 = "white"
+						color3 = "blue"
+						instance = { position = { 0.5 0.5 } scale = { 1.2 1.2 } }
+					}
+				}
+				c_sredets_roman = { # The Daci (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_star_ten_06.dds"
+						color1 = "green"
+						color3 = "blue"
+						instance = { position = { 0.5 0.5 } scale = { 1.2 1.2 } }
+					}
+				}
+				c_strumica_roman = { # The Daci (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_star_ten_06.dds"
+						color1 = "yellow"
+						color3 = "blue"
+						instance = { position = { 0.5 0.5 } scale = { 1.2 1.2 } }
+					}
+				}
+				c_velbazhd_roman = { # The Daci (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "blue"
+					colored_emblem = {
+						texture = "ce_star_ten_06.dds"
+						color1 = "yellow"
+						color3 = "green"
+						instance = { position = { 0.5 0.5 } scale = { 1.2 1.2 } }
+					}
+				}
+		d_vidin_roman = { # The Martii
+			pattern = "pattern_solid.dds"
+				color1 = "red"
+			colored_emblem = {
+				texture = "ce_star_nine_04.dds"
+				color1 = "white"
+				color2 = "yellow"
+			instance = { position = { 0.5 0.5 } scale = { 1.1 1.1 } }	
+			}
+		}
+				c_vidin_roman = { # The Martii (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_star_nine_04.dds"
+						color1 = "red"
+						color2 = "yellow"
+					instance = { position = { 0.5 0.5 } scale = { 1.1 1.1 } }	
+					}
+				}
+				c_vratsa_roman = { # The Martii (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "green"
+					colored_emblem = {
+						texture = "ce_star_nine_04.dds"
+						color1 = "yellow"
+						color2 = "yellow"
+					instance = { position = { 0.5 0.5 } scale = { 1.1 1.1 } }	
+					}
+				}
+		d_bulgaria_roman = { # The Sagittarii lecti
+			pattern = "pattern_solid.dds"
+				color1 = "yellow"
+			colored_emblem = {
+				texture = "ce_rays_04.dds"
+				color1 = "blue"
+				color2 = "yellow"
+				color3 = "yellow"
+			instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+			}
+		}
+				c_hvosno_roman = { # The Sagittarii lecti (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_rays_04.dds"
+						color1 = "green"
+						color2 = "yellow"
+						color3 = "yellow"
+					instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				c_naissus_roman = { # The Sagittarii lecti (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_rays_04.dds"
+						color1 = "red"
+						color2 = "yellow"
+						color3 = "yellow"
+					instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				c_pomoravlje_roman = { # The Sagittarii lecti (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_rays_04.dds"
+						color1 = "red"
+						color2 = "red"
+						color3 = "yellow"
+					instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				c_skopje_roman = { # The Sagittarii lecti (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_rays_04.dds"
+						color1 = "green"
+						color2 = "yellow"
+						color3 = "yellow"
+					instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				c_sumadija_roman = { # The Sagittarii lecti (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_rays_04.dds"
+						color1 = "blue"
+						color2 = "yellow"
+						color3 = "blue"
+					instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+		d_macva_roman = { # The Mattiaci seniores (East)
+			pattern = "pattern_solid.dds"
+				color1 = "white"
+			colored_emblem = {
+				texture = "ce_birds_01.dds"
+				color1 = "black"
+				color2 = "yellow"
+				color3 = "yellow"
+			instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+			}
+		}
+				c_beograd_roman = { # The Mattiaci seniores (East) (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_birds_01.dds"
+						color1 = "black"
+						color2 = "red"
+						color3 = "red"
+					instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				c_branicevo_roman = { # The Mattiaci seniores (East) (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "blue"
+					colored_emblem = {
+						texture = "ce_birds_01.dds"
+						color1 = "black"
+						color2 = "yellow"
+						color3 = "red"
+					instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				c_macva_roman = { # The Mattiaci seniores (East) (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "red"
+					colored_emblem = {
+						texture = "ce_birds_01.dds"
+						color1 = "black"
+						color2 = "yellow"
+						color3 = "yellow"
+					instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+		d_duklja_roman = { # The Petulantes iuniores
+			pattern = "pattern_solid.dds"
+				color1 = "red"
+			colored_emblem = {
+				texture = "ce_canine_03.dds"
+				color2 = "yellow"
+				color3 = "yellow"
+			}
+		}
+				c_pomorje_roman = { # The Petulantes iuniores (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "green"
+					colored_emblem = {
+						texture = "ce_canine_03.dds"
+						color2 = "yellow"
+						color3 = "yellow"
+					}
+				}
+				c_duklja_roman = { # The Petulantes iuniores (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "red"
+					colored_emblem = {
+						texture = "ce_canine_03.dds"
+						color2 = "white"
+						color3 = "white"
+					}
+				}
+				c_podrinje_roman = { # The Petulantes iuniores (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "blue"
+					colored_emblem = {
+						texture = "ce_canine_03.dds"
+						color2 = "yellow"
+						color3 = "yellow"
+					}
+				}
+				c_rashka_roman = { # The Petulantes iuniores (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "blue"
+					colored_emblem = {
+						texture = "ce_canine_03.dds"
+						color2 = "white"
+						color3 = "white"
+					}
+				}
+				c_travunia_roman = { # The Petulantes iuniores (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_canine_03.dds"
+						color2 = "red"
+						color3 = "red"
+					}
+				}
+
+
+### ASIAN COA ##################################################################
+
+#k_asiae = { # The Fortenses (East)
+#	pattern = "pattern_solid.dds"
+#		color1 = "blue"
+#	colored_emblem = {
+#		texture = "ce_star_ten_07.dds"
+#		color1 = "yellow"
+#		color2 = "red"
+#		color3 = "blue"
+#		instance = { position = { 0.5 0.5 } scale = { 1.3 1.3 } }	
+#	}
+#}
+		d_aegean_islands_roman = { # The Nervii
+			pattern = "pattern_solid.dds"
+				color1 = "blue"
+			colored_emblem = {
+				texture = "ce_star_ten_08.dds"
+				color1 = "blue"
+				color2 = "yellow"
+				color3 = "blue"
+				instance = { position = { 0.5 0.5 } scale = { 1.3 1.3 } }	
+			}
+		}
+				c_chios_roman = { # The Nervii (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "red"
+					colored_emblem = {
+						texture = "ce_star_ten_08.dds"
+						color1 = "red"
+						color2 = "yellow"
+						color3 = "red"
+						instance = { position = { 0.5 0.5 } scale = { 1.3 1.3 } }	
+					}
+				}
+				c_lesbos_roman = { # The Nervii (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "red"
+					colored_emblem = {
+						texture = "ce_star_ten_08.dds"
+						color1 = "red"
+						color2 = "white"
+						color3 = "red"
+						instance = { position = { 0.5 0.5 } scale = { 1.3 1.3 } }	
+					}
+				}
+				c_naxos_roman = { # The Nervii (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_star_ten_08.dds"
+						color1 = "blue"
+						color2 = "blue"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1.3 1.3 } }	
+					}
+				}
+				c_rhodos_roman = { # The Nervii (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_star_ten_08.dds"
+						color1 = "yellow"
+						color2 = "blue"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1.3 1.3 } }	
+					}
+				}
+		d_anatolia_roman = { # The Salii (East)
+			pattern = "pattern_solid.dds"
+				color1 = "blue"
+			colored_emblem = {
+				texture = "ce_keyhole_canines_01.dds"
+				color1 = "red"
+				color2 = "brown"
+				color3 = "yellow"
+				instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+			}
+		}
+				c_galatia_salutaris_roman = { # The Salii (East) (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "red"
+					colored_emblem = {
+						texture = "ce_keyhole_canines_01.dds"
+						color1 = "blue"
+						color2 = "yellow"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				c_isauria_roman = { # The Salii (East) (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "green"
+					colored_emblem = {
+						texture = "ce_keyhole_canines_01.dds"
+						color1 = "blue"
+						color2 = "orange"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				c_lycaonia_roman = { # The Salii (East) (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_keyhole_canines_01.dds"
+						color1 = "blue"
+						color2 = "brown"
+						color3 = "red"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				c_pacatiana_roman = { # The Salii (East) (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_keyhole_canines_01.dds"
+						color1 = "red"
+						color2 = "brown"
+						color3 = "red"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				c_philomelium_roman = { # The Salii (East) (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "red"
+					colored_emblem = {
+						texture = "ce_keyhole_canines_01.dds"
+						color1 = "yellow"
+						color2 = "yellow"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				c_pisidia_roman = { # The Salii (East) (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "black"
+					colored_emblem = {
+						texture = "ce_keyhole_canines_01.dds"
+						color1 = "blue"
+						color2 = "yellow"
+						color3 = "white"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				c_selge_roman = { # The Salii (East) (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "green"
+					colored_emblem = {
+						texture = "ce_keyhole_canines_01.dds"
+						color1 = "blue"
+						color2 = "yellow"
+						color3 = "white"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+		d_cibyrrhaeot_roman = { # The Victores
+			pattern = "pattern_solid.dds"
+				color1 = "white"
+			colored_emblem = {
+				texture = "ce_sun_03.dds"
+				color1 = "blue"
+				color2 = "red"
+				color3 = "yellow"
+				instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+			}
+		}
+				c_caria_roman = { # The Victores (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_sun_03.dds"
+						color1 = "red"
+						color2 = "red"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				c_lycia_roman = { # The Victores (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_sun_03.dds"
+						color1 = "black"
+						color2 = "red"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				c_pamphylia_roman = { # The Victores (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_sun_03.dds"
+						color1 = "blue"
+						color2 = "blue"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+		d_ephese_roman = { # The Funditores
+			pattern = "pattern_solid.dds"
+				color1 = "white"
+			colored_emblem = {
+				texture = "ce_star_ten_07.dds"
+				color1 = "yellow"
+				color2 = "yellow"
+				color3 = "red"
+				instance = { position = { 0.5 0.5 } scale = { 1.3 1.3 } }	
+			}
+		}
+				c_abydos_roman = { # The Funditores (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "red"
+					colored_emblem = {
+						texture = "ce_star_ten_07.dds"
+						color1 = "yellow"
+						color2 = "yellow"
+						color3 = "white"
+						instance = { position = { 0.5 0.5 } scale = { 1.3 1.3 } }	
+					}
+				}
+				c_aeolis_roman = { # The Funditores (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "green"
+					colored_emblem = {
+						texture = "ce_star_ten_07.dds"
+						color1 = "yellow"
+						color2 = "yellow"
+						color3 = "red"
+						instance = { position = { 0.5 0.5 } scale = { 1.3 1.3 } }	
+					}
+				}
+				c_ionia_roman = { # The Funditores (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_star_ten_07.dds"
+						color1 = "yellow"
+						color2 = "yellow"
+						color3 = "blue"
+						instance = { position = { 0.5 0.5 } scale = { 1.3 1.3 } }	
+					}
+				}
+				c_mysia_roman = { # The Funditores (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_star_ten_07.dds"
+						color1 = "yellow"
+						color2 = "red"
+						color3 = "red"
+						instance = { position = { 0.5 0.5 } scale = { 1.3 1.3 } }	
+					}
+				}
+		d_charsianon_roman = { # The Constantiani
+			pattern = "pattern_solid.dds"
+				color1 = "white"
+			colored_emblem = {
+				texture = "ce_keyhole_rosettes_01.dds"
+				color1 = "red"
+				color2 = "blue"
+				color3 = "yellow"
+				instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+			}
+		}
+				c_charsianon_roman = { # The Constantiani (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_keyhole_rosettes_01.dds"
+						color1 = "red"
+						color2 = "blue"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				c_kaisereia_roman = { # The Constantiani (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_keyhole_rosettes_01.dds"
+						color1 = "blue"
+						color2 = "red"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				c_cappadocia_roman = { # The Constantiani (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_keyhole_rosettes_01.dds"
+						color1 = "red"
+						color2 = "white"
+						color3 = "white"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				c_kyzistra_roman = { # The Constantiani (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_keyhole_rosettes_01.dds"
+						color1 = "blue"
+						color2 = "green"
+						color3 = "white"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				c_lower_galatia_roman = { # The Constantiani (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_keyhole_rosettes_01.dds"
+						color1 = "green"
+						color2 = "red"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+		d_thracesia_roman = { # The Fortenses (East)
+			pattern = "pattern_solid.dds"
+				color1 = "blue"
+			colored_emblem = {
+				texture = "ce_star_ten_07.dds"
+				color1 = "yellow"
+				color2 = "red"
+				color3 = "blue"
+				instance = { position = { 0.5 0.5 } scale = { 1.3 1.3 } }	
+			}
+		}
+				c_chonae_roman = { # The Fortenses (East) (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "green"
+					colored_emblem = {
+						texture = "ce_star_ten_07.dds"
+						color1 = "yellow"
+						color2 = "red"
+						color3 = "green"
+						instance = { position = { 0.5 0.5 } scale = { 1.3 1.3 } }	
+					}
+				}		
+				c_hadrianeia_roman = { # The Fortenses (East) (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "red"
+					colored_emblem = {
+						texture = "ce_star_ten_07.dds"
+						color1 = "yellow"
+						color2 = "red"
+						color3 = "red"
+						instance = { position = { 0.5 0.5 } scale = { 1.3 1.3 } }	
+					}
+				}		
+				c_lydia_roman = { # The Fortenses (East) (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "orange"
+					colored_emblem = {
+						texture = "ce_star_ten_07.dds"
+						color1 = "yellow"
+						color2 = "red"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1.3 1.3 } }	
+					}
+				}		
+				c_thyatira_roman = { # The Fortenses (East) (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "blue"
+					colored_emblem = {
+						texture = "ce_star_ten_07.dds"
+						color1 = "yellow"
+						color2 = "red"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1.3 1.3 } }	
+					}
+				}
+
+
+### PONTOS COA ##################################################################
+
+#k_nikaea = { # The Brachiati iuniores
+#	pattern = "pattern_solid.dds"
+#		color1 = "blue"
+#	colored_emblem = {
+#		texture = "ce_birds_02.dds"
+#		color1 = "red"
+#		color2 = "white"
+#		color3 = "blue"
+#		instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+#	}
+#}
+		d_mesopotamia_roman = { # The Prima Armeniaca
+			pattern = "pattern_solid.dds"
+				color1 = "yellow"
+			colored_emblem = {
+				texture = "ce_amazonian_01.dds"
+				color1 = "blue"
+				color2 = "yellow"
+				instance = { position = { 0.5 0.5 } scale = { 1.2 1.2 } }	
+			}
+		}
+				c_mesopotamia_roman = { # The Prima Armeniaca (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "blue"
+					colored_emblem = {
+						texture = "ce_amazonian_01.dds"
+						color1 = "red"
+						color2 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1.2 1.2 } }	
+					}
+				}
+		d_armeniac_roman = { # The Primi Theodosiani
+			pattern = "pattern_solid.dds"
+				color1 = "yellow"
+			colored_emblem = {
+				texture = "ce_canine_05.dds"
+				color1 = "red"
+				color2 = "orange"
+				instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+			}
+		}
+				c_euchaita_roman = { # The Primi Theodosiani (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "red"
+					colored_emblem = {
+						texture = "ce_canine_05.dds"
+						color1 = "yellow"
+						color2 = "green"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				c_helenopontus_roman = { # The Primi Theodosiani (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "green"
+					colored_emblem = {
+						texture = "ce_canine_05.dds"
+						color1 = "yellow"
+						color2 = "white"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				c_sinope_roman = { # The Primi Theodosiani (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "red"
+					colored_emblem = {
+						texture = "ce_canine_05.dds"
+						color1 = "yellow"
+						color2 = "white"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				c_zela_roman = { # The Primi Theodosiani (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "red"
+					colored_emblem = {
+						texture = "ce_canine_05.dds"
+						color1 = "white"
+						color2 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+		d_chaldia_roman = { # The Pontinenses
+			pattern = "pattern_solid.dds"
+				color1 = "green"
+			colored_emblem = {
+				texture = "ce_keyhole_01.dds"
+				color1 = "white"
+				color2 = "blue"
+				instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+			}
+		}
+				c_cerasus_roman = { # The Pontinenses (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "green"
+					colored_emblem = {
+						texture = "ce_keyhole_01.dds"
+						color1 = "yellow"
+						color2 = "blue"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				c_colonea_roman = { # The Pontinenses (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "blue"
+					colored_emblem = {
+						texture = "ce_keyhole_01.dds"
+						color1 = "yellow"
+						color2 = "blue"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				c_trebizond_roman = { # The Pontinenses (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_keyhole_01.dds"
+						color1 = "green"
+						color2 = "blue"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+		d_melitene_roman = { # The Felices Arcadiani iuniores
+			pattern = "pattern_solid.dds"
+				color1 = "red"
+			colored_emblem = {
+				texture = "ce_sun_02.dds"
+				color1 = "blue"
+				color2 = "white"
+				instance = { position = { 0.5 0.5 } scale = { 1.15 1.15 } }	
+			}
+		}
+				c_ablastha_roman = { # The Felices Arcadiani iuniores (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "green"
+					colored_emblem = {
+						texture = "ce_sun_02.dds"
+						color1 = "yellow"
+						color2 = "white"
+						instance = { position = { 0.5 0.5 } scale = { 1.15 1.15 } }	
+					}
+				}
+				c_azysia_roman = { # The Felices Arcadiani iuniores (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "green"
+					colored_emblem = {
+						texture = "ce_sun_02.dds"
+						color1 = "red"
+						color2 = "white"
+						instance = { position = { 0.5 0.5 } scale = { 1.15 1.15 } }	
+					}
+				}
+				c_melitene_roman = { # The Felices Arcadiani iuniores (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_sun_02.dds"
+						color1 = "red"
+						color2 = "blue"
+						instance = { position = { 0.5 0.5 } scale = { 1.15 1.15 } }	
+					}
+				}
+		d_bucellaria_roman = { # The Brachiati iuniores
+			pattern = "pattern_solid.dds"
+				color1 = "blue"
+			colored_emblem = {
+				texture = "ce_birds_02.dds"
+				color1 = "red"
+				color2 = "white"
+				color3 = "blue"
+				instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+			}
+		}
+				c_galatia_roman = { # The Brachiati iuniores
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_birds_03.dds"
+						color1 = "red"
+						color2 = "white"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				c_hadrianopolis_roman = { # The Brachiati iuniores
+					pattern = "pattern_solid.dds"
+						color1 = "red"
+					colored_emblem = {
+						texture = "ce_birds_03.dds"
+						color1 = "yellow"
+						color2 = "white"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				c_honorias_roman = { # The Brachiati iuniores
+					pattern = "pattern_solid.dds"
+						color1 = "blue"
+					colored_emblem = {
+						texture = "ce_birds_02.dds"
+						color1 = "yellow"
+						color2 = "white"
+						color3 = "blue"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+		d_opsikion_roman = { # The Batavi seniores
+			pattern = "pattern_solid.dds"
+				color1 = "blue"
+			colored_emblem = {
+				texture = "ce_keyhole_rosettes_02.dds"
+				color1 = "red"
+				color2 = "white"
+				color3 = "blue"
+				instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+			}
+		}
+				c_bithynia_roman = { # The Batavi seniores (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_keyhole_rosettes_03.dds"
+						color1 = "red"
+						color2 = "blue"
+						color3 = "white"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				c_nikaea_roman = { # The Batavi seniores (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "blue"
+					colored_emblem = {
+						texture = "ce_keyhole_rosettes_02.dds"
+						color1 = "white"
+						color2 = "red"
+						color3 = "blue"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				c_phrygia_roman = { # The Batavi seniores (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_keyhole_rosettes_03.dds"
+						color1 = "red"
+						color2 = "red"
+						color3 = "white"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				c_prusa_roman = { # The Batavi seniores (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "red"
+					colored_emblem = {
+						texture = "ce_keyhole_rosettes_03.dds"
+						color1 = "white"
+						color2 = "blue"
+						color3 = "red"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				c_tarsos_roman = { # The Batavi seniores (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "green"
+					colored_emblem = {
+						texture = "ce_keyhole_rosettes_03.dds"
+						color1 = "yellow"
+						color2 = "red"
+						color3 = "black"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+		d_paphlagonia_roman = { # The Transtigritani
+			pattern = "pattern_solid.dds"
+				color1 = "white"
+			colored_emblem = {
+				texture = "ce_keyhole_01.dds"
+				color1 = "blue"
+				color2 = "yellow"
+				instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+			}
+		}
+				c_paphlagonia_roman = { # The Transtigritani (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_keyhole_01.dds"
+						color1 = "red"
+						color2 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				c_pompeiopolis_roman = { # The Transtigritani (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_keyhole_01.dds"
+						color1 = "green"
+						color2 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+		d_sebasteia_roman = { # The Tubantes (East)
+			pattern = "pattern_solid.dds"
+				color1 = "red"
+			colored_emblem = {
+				texture = "ce_keyhole_06.dds"
+				color1 = "yellow"
+				color2 = "blue"
+				color3 = "blue"
+				instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+			}
+		}
+				c_satala_roman = { # The Tubantes (East)
+					pattern = "pattern_solid.dds"
+						color1 = "red"
+					colored_emblem = {
+						texture = "ce_keyhole_06.dds"
+						color1 = "white"
+						color2 = "blue"
+						color3 = "blue"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				c_sebasteia_roman = { # The Tubantes (East)
+					pattern = "pattern_solid.dds"
+						color1 = "green"
+					colored_emblem = {
+						texture = "ce_keyhole_06.dds"
+						color1 = "yellow"
+						color2 = "blue"
+						color3 = "blue"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+		d_sophene_roman = { # The Prima Flavia Theodosiana
+			pattern = "pattern_solid.dds"
+				color1 = "white"
+			colored_emblem = {
+				texture = "ce_amazonian_canine_03.dds"
+				color1 = "red"
+				color2 = "yellow"
+				color3 = "red"
+				instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+			}
+		}
+				c_arsamosata_roman = { # The Prima Flavia Theodosiana (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "blue"
+					colored_emblem = {
+						texture = "ce_amazonian_canine_03.dds"
+						color1 = "red"
+						color2 = "yellow"
+						color3 = "red"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				c_bakriya_roman = { # The Prima Flavia Theodosiana (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "green"
+					colored_emblem = {
+						texture = "ce_amazonian_canine_03.dds"
+						color1 = "red"
+						color2 = "yellow"
+						color3 = "red"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				c_mayyafariqin_roman = { # The Prima Flavia Theodosiana (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "red"
+					colored_emblem = {
+						texture = "ce_amazonian_canine_03.dds"
+						color1 = "orange"
+						color2 = "yellow"
+						color3 = "orange"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				
+							
+				
+
+### ORIENTIS (SYRIA) COA ##################################################################
+
+#k_orientis = { # Balistarii seniores
+#	pattern = "pattern_solid.dds"
+#		color1 = "white"
+#	colored_emblem = {
+#		texture = "ce_boss_rosettes_01.dds"
+#		color1 = "red"
+#		color2 = "yellow"
+#		color3 = "blue"
+#		instance = { position = { 0.5 0.52 } scale = { 1 1 } }
+#	}
+#}
+		d_amman_roman = { # The Prima Flavia Constantia
+			pattern = "pattern_solid.dds"
+				color1 = "white"
+			colored_emblem = {
+				texture = "ce_boss_rosettes_01.dds"
+				color1 = "white"
+				color2 = "yellow"
+				color3 = "blue"
+				instance = { position = { 0.5 0.52 } scale = { 1 1 } }
+			}
+		}
+				c_balqa_roman = { # The Prima Flavia Constantia (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_boss_rosettes_01.dds"
+						color1 = "white"
+						color2 = "yellow"
+						color3 = "red"
+						instance = { position = { 0.5 0.52 } scale = { 1 1 } }
+					}
+				}
+				c_hauran_roman = { # The Prima Flavia Constantia (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_boss_rosettes_01.dds"
+						color1 = "white"
+						color2 = "yellow"
+						color3 = "green"
+						instance = { position = { 0.5 0.52 } scale = { 1 1 } }
+					}
+				}
+				c_irbid_roman = { # The Prima Flavia Constantia (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "red"
+					colored_emblem = {
+						texture = "ce_boss_rosettes_01.dds"
+						color1 = "blue"
+						color2 = "yellow"
+						color3 = "blue"
+						instance = { position = { 0.5 0.52 } scale = { 1 1 } }
+					}
+				}
+				c_jilat_roman = { # The Prima Flavia Constantia (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "blue"
+					colored_emblem = {
+						texture = "ce_boss_rosettes_01.dds"
+						color1 = "red"
+						color2 = "yellow"
+						color3 = "red"
+						instance = { position = { 0.5 0.52 } scale = { 1 1 } }
+					}
+				}
+				c_kerak_roman = { # The Prima Flavia Constantia (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_boss_rosettes_01.dds"
+						color1 = "red"
+						color2 = "yellow"
+						color3 = "red"
+						instance = { position = { 0.5 0.52 } scale = { 1 1 } }
+					}
+				}
+				c_maab_roman = { # The Prima Flavia Constantia (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "green"
+					colored_emblem = {
+						texture = "ce_boss_rosettes_01.dds"
+						color1 = "blue"
+						color2 = "yellow"
+						color3 = "blue"
+						instance = { position = { 0.5 0.52 } scale = { 1 1 } }
+					}
+				}
+		d_cyprus_roman = { # The Matiarii constantes
+			pattern = "pattern_solid.dds"
+				color1 = "blue"
+			colored_emblem = {
+				texture = "ce_sun_01.dds"
+				color2 = "yellow"
+				instance = { position = { 0.5 0.5 } scale = { 1.2 1.2 } }
+			}
+		}
+				c_famagusta_roman = { # The Matiarii constantes (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_sun_01.dds"
+						color2 = "green"
+						instance = { position = { 0.5 0.5 } scale = { 1.2 1.2 } }
+					}
+				}
+				c_nicosia_roman = { # The Matiarii constantes (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_sun_01.dds"
+						color2 = "blue"
+						instance = { position = { 0.5 0.5 } scale = { 1.2 1.2 } }
+					}
+				}
+		d_edessa_roman = { # The Minervii
+			pattern = "pattern_solid.dds"
+				color1 = "green"
+			colored_emblem = {
+				texture = "ce_boss_01.dds"
+				color1 = "yellow"
+				instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+			}
+		}
+				c_dausar_roman = { # The Minervii (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_boss_01.dds"
+						color1 = "green"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+				c_edessa_roman = { # The Minervii (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "red"
+					colored_emblem = {
+						texture = "ce_boss_01.dds"
+						color1 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+				c_harran_roman = { # The Minervii (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_boss_01.dds"
+						color1 = "red"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+				c_khabur_roman = { # The Minervii (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_boss_01.dds"
+						color1 = "orange"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+				c_raqqa_roman = { # The Minervii (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_boss_01.dds"
+						color1 = "blue"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+		d_aleppo_roman = { # unknown
+			pattern = "pattern_solid.dds"
+				color1 = "white"
+			colored_emblem = {
+				texture = "ce_boss_rosettes_02.dds"
+				color1 = "red"
+				color3 = "blue"
+				instance = { position = { 0.5 0.52 } scale = { 1 1 } }
+			}
+		}
+				c_aintab_roman = { # unknown (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "blue"
+					colored_emblem = {
+						texture = "ce_boss_rosettes_02.dds"
+						color1 = "red"
+						color3 = "red"
+						instance = { position = { 0.5 0.52 } scale = { 1 1 } }
+					}
+				}
+				c_aleppo_roman = { # unknown (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_boss_rosettes_02.dds"
+						color1 = "red"
+						color3 = "red"
+						instance = { position = { 0.5 0.52 } scale = { 1 1 } }
+					}
+				}
+				c_marash_roman = { # unknown (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_boss_rosettes_02.dds"
+						color1 = "red"
+						color3 = "blue"
+						instance = { position = { 0.5 0.52 } scale = { 1 1 } }
+					}
+				}
+				c_samosata_roman = { # unknown (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_boss_rosettes_02.dds"
+						color1 = "yellow"
+						color3 = "green"
+						instance = { position = { 0.5 0.52 } scale = { 1 1 } }
+					}
+				}
+				c_sukhna_roman = { # unknown (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_boss_rosettes_02.dds"
+						color1 = "blue"
+						color3 = "blue"
+						instance = { position = { 0.5 0.52 } scale = { 1 1 } }
+					}
+				}
+				c_syrrusafa_roman = { # unknown (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_boss_rosettes_02.dds"
+						color1 = "green"
+						color3 = "green"
+						instance = { position = { 0.5 0.52 } scale = { 1 1 } }
+					}
+				}
+		d_diyarbakr_roman = { # The Menapii
+			pattern = "pattern_solid.dds"
+				color1 = "white"
+			colored_emblem = {
+				texture = "ce_amazonian_canine_01.dds"
+				color1 = "red"
+				color2 = "yellow"
+				color3 = "yellow"
+				instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+			}
+		}
+				c_amida_roman = { # The Menapii (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "red"
+					colored_emblem = {
+						texture = "ce_amazonian_canine_01.dds"
+						color1 = "white"
+						color2 = "yellow"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				c_tall_basma_roman = { # The Menapii (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "red"
+					colored_emblem = {
+						texture = "ce_amazonian_canine_01.dds"
+						color1 = "white"
+						color2 = "white"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				c_upper_khabur_roman = { # The Menapii (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_amazonian_canine_01.dds"
+						color1 = "yellow"
+						color2 = "red"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+		d_palestina_prima_roman = { # The Felices Honoriani seniores
+			pattern = "pattern_solid.dds"
+				color1 = "white"
+			colored_emblem = {
+				texture = "ce_standard_01.dds"
+				color1 = "yellow"
+				color2 = "black"
+				instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+			}
+		}
+		d_palestina_prima_roman = { # The Sagittarii seniores Orientales
+			pattern = "pattern_solid.dds"
+				color1 = "blue"
+			colored_emblem = {
+				texture = "ce_amazonian_canine_02.dds"
+				color1 = "red"
+				color2 = "yellow"
+				color3 = "yellow"
+				instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+			}
+		}
+				c_ghazza_roman = { # The Sagittarii seniores Orientales (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_amazonian_canine_02.dds"
+						color1 = "blue"
+						color2 = "yellow"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				c_jaffa_roman = { # The Sagittarii seniores Orientales (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_amazonian_canine_02.dds"
+						color1 = "red"
+						color2 = "blue"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+				c_jerusalem_roman = { # The Sagittarii seniores Orientales (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "blue"
+					colored_emblem = {
+						texture = "ce_amazonian_canine_02.dds"
+						color1 = "yellow"
+						color2 = "red"
+						color3 = "red"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+					}
+				}
+		d_salutaris_roman = { # The Balistarii Dafnenses
+			pattern = "pattern_solid.dds"
+				color1 = "red"
+			colored_emblem = {
+				texture = "ce_star_ten_05.dds"
+				color1 = "white"
+				color2 = "yellow"
+				instance = { position = { 0.5 0.5 } scale = { 1.2 1.2 } }
+			}
+		}
+				c_al_aqabah_roman = { # The Balistarii Dafnenses (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "blue"
+					colored_emblem = {
+						texture = "ce_star_ten_05.dds"
+						color1 = "red"
+						color2 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1.2 1.2 } }
+					}
+				}
+				c_farama_roman = { # The Balistarii Dafnenses (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "green"
+					colored_emblem = {
+						texture = "ce_star_ten_05.dds"
+						color1 = "yellow"
+						color2 = "white"
+						instance = { position = { 0.5 0.5 } scale = { 1.2 1.2 } }
+					}
+				}
+				c_firaun_roman = { # The Balistarii Dafnenses (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "blue"
+					colored_emblem = {
+						texture = "ce_star_ten_05.dds"
+						color1 = "white"
+						color2 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1.2 1.2 } }
+					}
+				}
+				c_negev_roman = { # The Balistarii Dafnenses (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "red"
+					colored_emblem = {
+						texture = "ce_star_ten_05.dds"
+						color1 = "white"
+						color2 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1.2 1.2 } }
+					}
+				}
+				c_sinai_roman = { # The Balistarii Dafnenses (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_star_ten_05.dds"
+						color1 = "white"
+						color2 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1.2 1.2 } }
+					}
+				}
+		d_urdunn_roman = { # The Regii
+			pattern = "pattern_solid.dds"
+				color1 = "red"
+			colored_emblem = {
+				texture = "ce_star_ten_05.dds"
+				color1 = "blue"
+				color2 = "yellow"
+				instance = { position = { 0.5 0.5 } scale = { 1.2 1.2 } }
+			}
+		}
+				c_tiberias_roman = { # The Regii (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_star_ten_05.dds"
+						color1 = "green"
+						color2 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1.2 1.2 } }
+					}
+				}
+		d_lebanon_roman = { # The Felices Arcadiani seniores
+			pattern = "pattern_solid.dds"
+				color1 = "white"
+			colored_emblem = {
+				texture = "ce_keyhole_05.dds"
+				color1 = "blue"
+				color2 = "yellow"
+				color3 = "red"
+				instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+			}
+		}
+				c_beirut_roman = { # The Felices Arcadiani seniores (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_keyhole_05.dds"
+						color1 = "red"
+						color2 = "yellow"
+						color3 = "red"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+				c_tripoli_roman = { # The Felices Arcadiani seniores (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_keyhole_05.dds"
+						color1 = "green"
+						color2 = "yellow"
+						color3 = "red"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+		d_palmyra_roman = { # Sexta Parthica
+			pattern = "pattern_solid.dds"
+				color1 = "blue"
+			colored_emblem = {
+				texture = "ce_carnyces_02.dds"
+				color2 = "yellow"
+				instance = { position = { 0.5 0.53 } scale = { 0.95 0.95 } }
+			}
+		}
+				c_baalbek_roman = { # Sexta Parthica (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "green"
+					colored_emblem = {
+						texture = "ce_carnyces_02.dds"
+						color2 = "yellow"
+						instance = { position = { 0.5 0.53 } scale = { 0.95 0.95 } }
+					}
+				}
+				c_damascus_roman = { # Sexta Parthica (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "red"
+					colored_emblem = {
+						texture = "ce_carnyces_02.dds"
+						color2 = "yellow"
+						instance = { position = { 0.5 0.53 } scale = { 0.95 0.95 } }
+					}
+				}
+				c_homs_roman = { # Sexta Parthica (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_carnyces_02.dds"
+						color2 = "green"
+						instance = { position = { 0.5 0.53 } scale = { 0.95 0.95 } }
+					}
+				}
+				c_juwair_roman = { # Sexta Parthica (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "blue"
+					colored_emblem = {
+						texture = "ce_carnyces_02.dds"
+						color2 = "white"
+						instance = { position = { 0.5 0.53 } scale = { 0.95 0.95 } }
+					}
+				}
+				c_palmyra_roman = { # Sexta Parthica (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_carnyces_02.dds"
+						color2 = "blue"
+						instance = { position = { 0.5 0.53 } scale = { 0.95 0.95 } }
+					}
+				}
+				c_qaryatan_roman = { # Sexta Parthica (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_carnyces_02.dds"
+						color2 = "blue"
+						instance = { position = { 0.5 0.53 } scale = { 0.95 0.95 } }
+					}
+				}
+		d_phoenicia_roman = { # The Valentinianenses
+			pattern = "pattern_solid.dds"
+				color1 = "yellow"
+			colored_emblem = {
+				texture = "ce_twin_headed_headless_03.dds"
+				color1 = "white"
+				color2 = "blue"
+				color3 = "red"
+				instance = { position = { 0.5 0.52 } scale = { 1 1 } }
+			}
+		}
+				c_acre_roman = { # The Valentinianenses (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "red"
+					colored_emblem = {
+						texture = "ce_twin_headed_headless_03.dds"
+						color1 = "white"
+						color2 = "blue"
+						color3 = "red"
+						instance = { position = { 0.5 0.52 } scale = { 1 1 } }
+					}
+				}
+		d_antioch_roman = { # Balistarii Theodosiaci
+			pattern = "pattern_solid.dds"
+				color1 = "white"
+			colored_emblem = {
+				texture = "ce_boss_rosettes_01.dds"
+				color1 = "red"
+				color2 = "yellow"
+				color3 = "red"
+				instance = { position = { 0.5 0.52 } scale = { 1 1 } }
+			}
+		}
+				c_antiocheia_roman = { # Balistarii Theodosiaci (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_boss_rosettes_01.dds"
+						color1 = "green"
+						color2 = "yellow"
+						color3 = "green"
+						instance = { position = { 0.5 0.52 } scale = { 1 1 } }
+					}
+				}
+				c_qinnasrin_roman = { # Balistarii Theodosiaci (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "green"
+					colored_emblem = {
+						texture = "ce_boss_rosettes_01.dds"
+						color1 = "yellow"
+						color2 = "green"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.52 } scale = { 1 1 } }
+					}
+				}
+		d_homs_roman = { # The Fortenses auxiliarii
+			pattern = "pattern_solid.dds"
+				color1 = "red"
+			colored_emblem = {
+				texture = "ce_star_ten_09.dds"
+				color1 = "blue"
+				color2 = "yellow"
+				instance = { position = { 0.5 0.5 } scale = { 1.3 1.3 } }
+			}
+		}
+				c_hama_roman = { # The Fortenses auxiliarii (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_star_ten_09.dds"
+						color1 = "blue"
+						color2 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1.3 1.3 } }
+					}
+				}
+				c_shayzar_roman = { # The Fortenses auxiliarii (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "red"
+					colored_emblem = {
+						texture = "ce_star_ten_09.dds"
+						color1 = "blue"
+						color2 = "white"
+						instance = { position = { 0.5 0.5 } scale = { 1.3 1.3 } }
+					}
+				}
+				c_suriya_roman = { # The Fortenses auxiliarii (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_star_ten_09.dds"
+						color1 = "green"
+						color2 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1.3 1.3 } }
+					}
+				}
+		d_cilicia_roman = { # The Martenses seniores
+			pattern = "pattern_solid.dds"
+				color1 = "white"
+			colored_emblem = {
+				texture = "ce_bladed_01.dds"
+				color1 = "yellow"
+				color2 = "blue"
+				instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+			}
+		}
+				c_alexandretta_roman = { # The Martenses seniores (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_bladed_01.dds"
+						color1 = "red"
+						color2 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+				c_tall_hamid_roman = { # The Martenses seniores (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_bladed_01.dds"
+						color1 = "yellow"
+						color2 = "red"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+				c_cilicia_roman = { # The Martenses seniores (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_bladed_01.dds"
+						color1 = "yellow"
+						color2 = "green"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+				c_lycandus_roman = { # The Martenses seniores (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_bladed_01.dds"
+						color1 = "blue"
+						color2 = "green"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+				c_seleucia_roman = { # The Martenses seniores (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_bladed_01.dds"
+						color1 = "orange"
+						color2 = "red"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+#		d_diyarmudar = { # The Sagittarii seniores Orientales
+#			pattern = "pattern_solid.dds"
+#				color1 = "blue"
+#			colored_emblem = {
+#				texture = "ce_amazonian_canine_02.dds"
+#				color1 = "red"
+#				color2 = "yellow"
+#				color3 = "yellow"
+#				instance = { position = { 0.5 0.5 } scale = { 1 1 } }	
+#			}
+#		}
+
+### EGYPT COA ##################################################################
+
+#k_aegyptus = { # The Iulia Alexandria
+#	pattern = "pattern_solid.dds"
+#		color1 = "yellow"
+#	colored_emblem = {
+#		texture = "ce_flowers_01.dds"
+#		color1 = "blue"
+#		color2 = "green"
+#		instance = { position = { 0.5 0.52 } scale = { 1.25 1.25 } }
+#	}
+#}
+		d_alexandria_roman = { # The Iulia Alexandria
+			pattern = "pattern_solid.dds"
+				color1 = "yellow"
+			colored_emblem = {
+				texture = "ce_flowers_01.dds"
+				color1 = "blue"
+				color2 = "green"
+				instance = { position = { 0.5 0.52 } scale = { 1.25 1.25 } }
+			}
+		}
+				c_alexandria_roman = { # The Iulia Alexandria (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "blue"
+					colored_emblem = {
+						texture = "ce_flowers_01.dds"
+						color1 = "yellow"
+						color2 = "green"
+						instance = { position = { 0.5 0.52 } scale = { 1.25 1.25 } }
+					}
+				}
+				c_giza_roman = { # The Iulia Alexandria (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "black"
+					colored_emblem = {
+						texture = "ce_flowers_01.dds"
+						color1 = "blue"
+						color2 = "green"
+						instance = { position = { 0.5 0.52 } scale = { 1.25 1.25 } }
+					}
+				}
+		d_al-wahat_roman = { # The Prima Isaura sagittaria
+			pattern = "pattern_solid.dds"
+				color1 = "blue"
+			colored_emblem = {
+				texture = "ce_keyhole_01.dds"
+				color1 = "yellow"
+				color2 = "yellow"
+				instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+			}
+		}
+				c_bahnasa_roman = { # The Prima Isaura sagittaria (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_keyhole_01.dds"
+						color1 = "green"
+						color2 = "green"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+				c_bahriya_roman = { # The Prima Isaura sagittaria (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_keyhole_01.dds"
+						color1 = "green"
+						color2 = "green"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+				c_farafra_roman = { # The Prima Isaura sagittaria (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_keyhole_01.dds"
+						color1 = "blue"
+						color2 = "blue"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+				c_fayyum_roman = { # The Prima Isaura sagittaria (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "blue"
+					colored_emblem = {
+						texture = "ce_keyhole_01.dds"
+						color1 = "white"
+						color2 = "white"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+				c_ushmun_roman = { # The Prima Isaura sagittaria (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "green"
+					colored_emblem = {
+						texture = "ce_keyhole_01.dds"
+						color1 = "white"
+						color2 = "white"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+		d_delta_roman = { # The Septima gemina
+			pattern = "pattern_solid.dds"
+				color1 = "yellow"
+			colored_emblem = {
+				texture = "ce_flowers_02.dds"
+				color1 = "blue"
+				color2 = "blue"
+				color3 = "red"
+				instance = { position = { 0.5 0.52 } scale = { 1.25 1.25 } }
+			}
+		}
+				c_al-buhaira_roman = { # The Septima gemina (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_flowers_02.dds"
+						color1 = "black"
+						color2 = "black"
+						color3 = "yellow"
+						instance = { position = { 0.5 0.52 } scale = { 1.25 1.25 } }
+					}
+				}
+				c_al-gharbiya_roman = { # The Septima gemina (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "red"
+					colored_emblem = {
+						texture = "ce_flowers_02.dds"
+						color1 = "black"
+						color2 = "black"
+						color3 = "red"
+						instance = { position = { 0.5 0.52 } scale = { 1.25 1.25 } }
+					}
+				}
+				c_cairo_roman = { # The Septima gemina (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "blue"
+					colored_emblem = {
+						texture = "ce_flowers_02.dds"
+						color1 = "black"
+						color2 = "red"
+						color3 = "white"
+						instance = { position = { 0.5 0.52 } scale = { 1.25 1.25 } }
+					}
+				}
+				c_damietta_roman = { # The Septima gemina (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "green"
+					colored_emblem = {
+						texture = "ce_flowers_02.dds"
+						color1 = "yellow"
+						color2 = "yellow"
+						color3 = "green"
+						instance = { position = { 0.5 0.52 } scale = { 1.25 1.25 } }
+					}
+				}
+				c_sharkiya_roman = { # The Septima gemina (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "green"
+					colored_emblem = {
+						texture = "ce_flowers_02.dds"
+						color1 = "yellow"
+						color2 = "yellow"
+						color3 = "white"
+						instance = { position = { 0.5 0.52 } scale = { 1.25 1.25 } }
+					}
+				}
+		d_tobruk_roman = { # The Decima gemina
+			pattern = "pattern_solid.dds"
+				color1 = "blue"
+			colored_emblem = {
+				texture = "ce_flowers_03.dds"
+				color1 = "black"
+				color2 = "blue"
+				color3 = "yellow"
+				instance = { position = { 0.5 0.52 } scale = { 1.25 1.25 } }
+			}
+		}
+				c_siwa_roman = { # The Decima gemina (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_flowers_03.dds"
+						color1 = "black"
+						color2 = "blue"
+						color3 = "green"
+						instance = { position = { 0.5 0.52 } scale = { 1.25 1.25 } }
+					}
+				}
+				c_sullum_roman = { # The Decima gemina (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "green"
+					colored_emblem = {
+						texture = "ce_flowers_03.dds"
+						color1 = "black"
+						color2 = "blue"
+						color3 = "green"
+						instance = { position = { 0.5 0.52 } scale = { 1.25 1.25 } }
+					}
+				}
+				c_tobruk_roman = { # The Decima gemina (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_flowers_03.dds"
+						color1 = "black"
+						color2 = "blue"
+						color3 = "black"
+						instance = { position = { 0.5 0.52 } scale = { 1.25 1.25 } }
+					}
+				}
+		d_cyrenaica_roman = { # Schola scutariorum secunda
+			pattern = "pattern_solid.dds"
+				color1 = "blue"
+			colored_emblem = {
+				texture = "ce_dragon_04.dds"
+				color1 = "black"
+				color2 = "yellow"
+				color3 = "yellow"
+				instance = { position = { 0.5 0.5 } scale = { 0.95 0.95 } }	
+			}
+		}
+				c_barqa_roman = { # Schola scutariorum secunda (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "blue"
+					colored_emblem = {
+						texture = "ce_dragon_04.dds"
+						color1 = "black"
+						color2 = "white"
+						color3 = "white"
+						instance = { position = { 0.5 0.5 } scale = { 0.95 0.95 } }	
+					}
+				}
+				c_derna_roman = { # Schola scutariorum secunda (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_dragon_04.dds"
+						color1 = "black"
+						color2 = "white"
+						color3 = "blue"
+						instance = { position = { 0.5 0.5 } scale = { 0.95 0.95 } }	
+					}
+				}
+		d_al-said_roman = { # The Quarta Italica
+			pattern = "pattern_solid.dds"
+				color1 = "yellow"
+			colored_emblem = {
+				texture = "ce_keyhole_01.dds"
+				color1 = "blue"
+				color2 = "yellow"
+				instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+			}
+		}
+				c_aswan_roman = { # The Quarta Italica (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "red"
+					colored_emblem = {
+						texture = "ce_keyhole_01.dds"
+						color1 = "yellow"
+						color2 = "white"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+				c_asyut_roman = { # The Quarta Italica (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "yellow"
+					colored_emblem = {
+						texture = "ce_keyhole_01.dds"
+						color1 = "green"
+						color2 = "yellow"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+				c_dakhla_roman = { # The Quarta Italica (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "blue"
+					colored_emblem = {
+						texture = "ce_keyhole_01.dds"
+						color1 = "white"
+						color2 = "blue"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+				c_jabal_quzlum_roman = { # The Quarta Italica (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "blue"
+					colored_emblem = {
+						texture = "ce_keyhole_01.dds"
+						color1 = "yellow"
+						color2 = "white"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+				c_kharga_roman = { # The Quarta Italica (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_keyhole_01.dds"
+						color1 = "blue"
+						color2 = "white"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+				c_qus_roman = { # The Quarta Italica (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "white"
+					colored_emblem = {
+						texture = "ce_keyhole_01.dds"
+						color1 = "green"
+						color2 = "white"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}
+				c_qusayr_roman = { # The Quarta Italica (alternative)
+					pattern = "pattern_solid.dds"
+						color1 = "green"
+					colored_emblem = {
+						texture = "ce_keyhole_01.dds"
+						color1 = "white"
+						color2 = "green"
+						instance = { position = { 0.5 0.5 } scale = { 1 1 } }
+					}
+				}

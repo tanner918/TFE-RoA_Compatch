@@ -1,0 +1,466 @@
+﻿##############################################################
+# 
+# == ALL START DATES ==
+# 
+##############################################################
+
+
+beowulf = { # Ol Raggy S
+ 	type = heroic
+ 	quality = famed
+	is_shown = {
+ 		has_dlc_feature = legends
+ 		NOT = {
+ 			has_global_variable = beowulf_legend
+ 		}
+ 		OR = {
+			faith = faith:norse_pagan
+			faith = faith:saxon_pagan			
+			culture = { has_cultural_pillar = heritage_west_germanic }
+			culture = { has_cultural_pillar = heritage_north_germanic }
+		}
+ 		exists = character:waegmunding_2
+ 		character:waegmunding_2 = { is_alive = no }
+ 		
+ 	}
+ 	is_valid = {
+ 		is_playable_character = yes
+		prowess >= 25
+		has_trait_xp = {
+			trait = lifestyle_hunter
+			track = hunter
+			value >= 62
+		}
+
+ 		prestige_level >= high_prestige_level
+ 	}
+ 	chronicle = ancestral_glory
+ 	chronicle_properties = {
+ 		ancestor = character:waegmunding_2
+ 		title = title:e_scandinavia 
+ 	}
+}
+
+haftvad = { # Ol Raggy S
+ 	type = heroic
+ 	quality = famed
+	is_shown = {
+ 		has_dlc_feature = legends
+ 		NOT = {
+ 			has_global_variable = haftvad_legend
+ 		}
+ 		has_title = title:d_kermanshah
+ 		
+ 	}
+ 	is_valid = {
+		OR = {
+			culture = culture:persian
+			culture = {
+				any_parent_culture_or_above = {
+					this = culture:persian
+				}
+			}
+		}
+
+ 		prestige_level >= very_high_prestige_level
+ 	}
+ 	chronicle = ancestral_glory
+ 	chronicle_properties = {
+ 		ancestor = character:snakeyboy_0 
+ 		title = title:e_persia
+ 	}
+}
+
+TFE_cleopatra = {
+	type = legitimizing
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = TFE_cleopatra_legend
+		}
+		# Middle Easterners
+		OR = {
+			culture = { has_cultural_pillar = heritage_kemetic }
+			culture = { has_cultural_pillar = heritage_levantine }
+			culture = { has_cultural_pillar = heritage_syriac }
+			culture = { has_cultural_pillar = heritage_arabic }
+			culture = { has_cultural_pillar = heritage_south_semitic }
+			culture = culture:aegyptian
+			culture = {
+				any_parent_culture_or_above = {
+					this = culture:aegyptian
+				}
+			}
+		}
+		NOR = { # You must think Rome is kinda cringe
+			has_title = title:e_roman_empire
+			has_title = title:e_western_roman_empire
+			has_title = title:e_byzantium
+			has_title = title:e_hre
+		}
+	}
+	is_valid = {
+		is_playable_character = yes
+		highest_held_title_tier >= tier_duchy
+		OR = {
+			capital_province = { geographical_region = ghw_region_egypt }
+			capital_province = { geographical_region = world_middle_east_jerusalem }
+		}
+		prestige_level >= high_prestige_level
+	}
+
+	chronicle = ancestral_glory_not_in_history
+	chronicle_properties = {
+		ancestor_flag = flag:cleopatra
+		title = title:k_egypt
+	}
+}
+
+
+TFE_ashina_she_wolf = {
+	type = heroic
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = TFE_ashina_she_wolf_legend
+		}
+		dynasty = dynasty:12269
+		culture = { has_cultural_pillar = heritage_turkic }
+	}
+	is_valid = {
+		is_playable_character = yes
+		highest_held_title_tier >= tier_kingdom
+		prestige_level >= high_prestige_level
+	}
+
+	chronicle = ancestral_glory_not_in_history
+	chronicle_properties = {
+		ancestor_flag = flag:ashina_she_wolf
+		title = title:e_tartaria
+	}
+}
+
+
+TFE_kayanid = {
+	type = legitimizing
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = TFE_kayanid_legend
+		}
+		culture = { has_cultural_pillar = heritage_iranian }
+	}
+	is_valid = {
+		is_playable_character = yes
+		highest_held_title_tier >= tier_kingdom
+		prestige_level >= high_prestige_level
+		capital_province = { geographical_region = world_middle_east }
+	}
+
+	chronicle = ancestral_glory_not_in_history
+	chronicle_properties = {
+		ancestor_flag = flag:kayanid
+		title = title:e_persia
+	}
+}
+
+TFE_ashoka = {
+	type = holy
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = TFE_ashoka_legend
+		}
+		religion = religion:buddhism_religion
+	}
+	is_valid = {
+		is_playable_character = yes
+		highest_held_title_tier >= tier_kingdom
+		piety_level >= high_piety_level
+	}
+
+	chronicle = saintly_descent
+	chronicle_properties = {
+		ancestor_flag = flag:ashoka # this felt very weird to type out
+		religion = root.religion
+	}
+}
+
+
+TFE_arminius = {
+	type = heroic
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = TFE_arminius_legend
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_west_germanic }
+			culture = { has_cultural_pillar = heritage_central_germanic }
+			culture = { has_cultural_pillar = heritage_east_germanic }
+		}
+		NOR = { # You must think Rome is kinda cringe
+			has_title = title:e_roman_empire
+			has_title = title:e_western_roman_empire
+			has_title = title:e_byzantium
+			has_title = title:e_hre
+		}
+	}
+	is_valid = {
+		is_playable_character = yes
+		highest_held_title_tier >= tier_duchy
+		prestige_level >= high_prestige_level
+	}
+
+	chronicle = ancestral_glory_not_in_history
+	chronicle_properties = {
+		ancestor_flag = flag:arminius
+		title = title:e_germany
+	}
+}
+
+
+
+TFE_lydians = {
+	type = heroic
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = TFE_lydians_legend
+		}
+		culture = {
+			OR = {
+				has_cultural_pillar = language_phrygian
+				has_cultural_pillar = language_luwian
+				has_cultural_pillar = language_lydian
+			}
+		}
+	}
+	is_valid = {
+		is_playable_character = yes
+		capital_province = { geographical_region = world_asia_minor }
+		prestige_level >= very_high_prestige_level
+	}
+
+	chronicle = ancient_people
+	chronicle_properties = {
+		culture = culture:lydian
+		title = title:k_nikaea
+		original_region = geographical_region:world_asia_minor
+	}
+}
+
+
+TFE_rhaetians = {
+	type = heroic
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = TFE_rhaetians_legend
+		}
+		OR = {
+			culture = culture:rhaetian
+			culture = {
+				any_parent_culture_or_above = {
+					this = culture:rhaetian
+				}
+			}
+		}
+	}
+	is_valid = {
+		is_playable_character = yes
+		capital_province = { geographical_region = TFE_region_rhaetia }
+		prestige_level >= very_high_prestige_level
+	}
+
+	chronicle = ancient_people
+	chronicle_properties = {
+		culture = culture:rhaetian
+		title = title:d_currezia
+		original_region = geographical_region:TFE_region_rhaetia
+	}
+}
+
+
+TFE_teuta = {
+	type = heroic
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = TFE_teuta_legend
+		}
+		OR = {
+			culture = culture:illyrian
+			culture = {
+				any_parent_culture_or_above = {
+					this = culture:illyrian
+				}
+			}
+		}
+		NOR = { # You must think Rome is kinda cringe
+			has_title = title:e_roman_empire
+			has_title = title:e_western_roman_empire
+			has_title = title:e_byzantium
+			has_title = title:e_hre
+		}
+	}
+	is_valid = {
+		is_playable_character = yes
+		highest_held_title_tier >= tier_duchy
+		capital_province = { geographical_region = region_pirate_illyria }
+		prestige_level >= high_prestige_level
+	}
+
+	chronicle = ancestral_glory_not_in_history
+	chronicle_properties = {
+		ancestor_flag = flag:teuta
+		title = title:k_croatia # Localized as Illyria
+	}
+}
+
+
+TFE_dido = {
+	type = legitimizing
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = TFE_dido_legend
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_berber }
+			culture = culture:punic
+			culture = {
+				any_parent_culture_or_above = {
+					this = culture:punic
+				}
+			}
+		}
+		NOR = { # You must think Rome is kinda cringe
+			has_title = title:e_roman_empire
+			has_title = title:e_western_roman_empire
+			has_title = title:e_byzantium
+			has_title = title:e_hre
+		}
+	}
+	is_valid = {
+		is_playable_character = yes
+		highest_held_title_tier >= tier_duchy
+		capital_province = { geographical_region = world_africa_north }
+		prestige_level >= high_prestige_level
+	}
+
+	chronicle = ancestral_glory_not_in_history
+	chronicle_properties = {
+		ancestor_flag = flag:dido
+		title = title:k_africa
+	}
+}
+
+
+TFE_mithridates = {
+	type = legitimizing
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = TFE_mithridates_legend
+		}
+		OR = {
+			culture = culture:pontic
+			culture = {
+				any_parent_culture_or_above = {
+					this = culture:pontic
+				}
+			}
+		}
+		NOR = { # You must think Rome is kinda cringe
+			has_title = title:e_roman_empire
+			has_title = title:e_western_roman_empire
+			has_title = title:e_byzantium
+			has_title = title:e_hre
+		}
+	}
+	is_valid = {
+		is_playable_character = yes
+		highest_held_title_tier >= tier_kingdom
+		capital_province = { geographical_region = world_asia_minor }
+		prestige_level >= high_prestige_level
+	}
+
+	chronicle = ancestral_glory_not_in_history
+	chronicle_properties = {
+		ancestor_flag = flag:mithridates
+		title = title:k_pontus
+	}
+}
+
+
+TFE_tomyris = {
+	type = heroic
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = TFE_tomyris_legend
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_sarmatian }
+			religion = religion:iranian_religion
+		}
+		NOT = { # You must think the Persians are kinda cringe
+			has_title = title:e_persia
+		}
+	}
+	is_valid = {
+		is_playable_character = yes
+		highest_held_title_tier >= tier_kingdom
+		prestige_level >= high_prestige_level
+	}
+
+	chronicle = ancestral_glory_not_in_history
+	chronicle_properties = {
+		ancestor_flag = flag:tomyris
+		title = title:e_turan
+	}
+}
+
+TFE_modu_chanyu = {
+	type = legitimizing
+	quality = famed
+	is_shown = {
+		has_dlc_feature = legends
+		NOT = {
+			has_global_variable = TFE_modu_chanyu_legend
+		}
+		OR = {
+			has_government = nomadic_government
+			culture = { has_cultural_pillar = heritage_mongolic }
+			culture = { has_cultural_pillar = heritage_turkic }
+			culture = { has_cultural_pillar = heritage_yeniseian }
+			culture = culture:hephthalite
+			culture = { any_parent_culture_or_above = { this = culture:hephthalite } }
+			culture = culture:xionite
+			culture = { any_parent_culture_or_above = { this = culture:xionite } }
+		}
+	}
+	is_valid = {
+		is_playable_character = yes
+		highest_held_title_tier = tier_empire
+		prestige_level >= high_prestige_level
+	}
+
+	chronicle = ancestral_glory_not_in_history
+	chronicle_properties = {
+		ancestor_flag = flag:modu_chanyu
+		title = title:e_mongolia
+	}
+}

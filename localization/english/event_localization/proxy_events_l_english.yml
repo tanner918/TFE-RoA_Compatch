@@ -1,0 +1,10 @@
+﻿l_english:
+ proxy_war.0001.t:0 "A Call To War"
+ proxy_war.0001.desc:0 "We have recieved a messenger from [actor.GetName]'s court carrying with it a proposal to go to war against [recipient.GetName] to weaken their position. They will reward us for our efforts but no help will be granted directly.\nAlthough this might align with our interests, we will be left stranded if [recipient.GetFirstName] proves to be difficult to defeat"
+ proxy_war.0001.option.a:0 "We will honour the call!"
+ proxy_war.0001.option.b:0 "We won't dance like puppets on a string!"
+ PROXY_WAR_ACCEPTED:0 "Our Proposal Was Accepted!"
+ PROXY_WAR_ACCEPTED_desc:0 "[secondary_actor.GetShortUINameNoTooltip] has honoured our call and attacked [recipient.GetFirstName]"
+ PROXY_WAR_DECLINED:0 "Our Call Declined!"
+ PROXY_WAR_DECLINED_desc:0 "[secondary_actor.GetShortUINameNoTooltip] didn't accept our call and won't attack [recipient.GetFirstName]"
+ GLORYHOUNDS:0 "Gloryhounds"

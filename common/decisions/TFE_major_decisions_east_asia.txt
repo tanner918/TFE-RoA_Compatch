@@ -1,0 +1,642 @@
+﻿
+TFE_establish_northern_liang = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	}
+	decision_group_type = major
+
+	desc = TFE_establish_northern_liang_desc
+
+	ai_check_interval = 12
+
+	is_shown = {
+		game_start_date < 400.1.1
+		is_landed_or_landless_administrative = yes
+		highest_held_title_tier <= tier_duchy
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:TFE_establish_northern_liang_flag
+			}
+		}
+		NOT = { has_global_variable = TFE_order_restored_to_liang }
+		any_directly_owned_province = {
+			geographical_region = custom_liang
+		}
+	}
+
+	is_valid = {
+		highest_held_title_tier <= tier_duchy
+		prestige_level >= 2
+		completely_controls = title:d_ganzhou
+		OR = {
+			completely_controls = title:d_yijinai
+			completely_controls = title:d_wuluhai
+			completely_controls = title:d_zhenfan
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_adult = yes
+		is_available = yes
+		is_independent_ruler = yes
+	}
+
+	cost = {
+		gold = {
+			value = major_gold_value
+		}
+	}
+
+	effect = {
+	
+		#Can only happen once
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:TFE_establish_northern_liang_flag
+		}
+
+		save_scope_as = liang_ruler
+
+		establish_northern_liang_effect = yes
+
+		every_player = {
+			# Notify others
+			limit = {
+				is_ai = no
+				any_held_title = {
+					tier = tier_county
+					any_county_province = {
+						geographical_region = custom_chinese_influence_region		
+					}
+				}	
+			}
+			trigger_event = liang.0001
+		}
+
+		add_to_list = notification_sent
+	}
+
+	ai_will_do = {
+		base = 300
+	}
+}
+
+TFE_establish_eastern_liang = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	}
+	decision_group_type = major
+
+	desc = TFE_establish_eastern_liang_desc
+
+	ai_check_interval = 12
+
+	is_shown = {
+		game_start_date < 400.1.1
+		is_landed_or_landless_administrative = yes
+		highest_held_title_tier <= tier_duchy
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:TFE_establish_eastern_liang_flag
+			}
+		}
+		NOT = { has_global_variable = TFE_order_restored_to_liang }
+		any_directly_owned_province = {
+			geographical_region = custom_liang
+		}
+	}
+
+	is_valid = {
+		highest_held_title_tier <= tier_duchy
+		prestige_level >= 2
+		completely_controls = title:d_wuluhai
+		OR = {
+			completely_controls = title:d_xia
+			completely_controls = title:d_zhenfan
+			completely_controls = title:d_liangzhou
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_adult = yes
+		is_available = yes
+		is_independent_ruler = yes
+	}
+
+	cost = {
+		gold = {
+			value = major_gold_value
+		}
+	}
+
+	effect = {
+	
+		#Can only happen once
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:TFE_establish_eastern_liang_flag
+		}
+
+		save_scope_as = liang_ruler
+
+		establish_eastern_liang_effect = yes
+
+		every_player = {
+			# Notify others
+			limit = {
+				is_ai = no
+				any_held_title = {
+					tier = tier_county
+					any_county_province = {
+						geographical_region = custom_chinese_influence_region		
+					}
+				}	
+			}
+			trigger_event = liang.0002
+		}
+
+		add_to_list = notification_sent
+	}
+
+	ai_will_do = {
+		base = 300
+	}
+}
+
+TFE_establish_southern_liang = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	}
+	decision_group_type = major
+
+	desc = TFE_establish_southern_liang_desc
+
+	ai_check_interval = 12
+
+	is_shown = {
+		game_start_date < 400.1.1
+		is_landed_or_landless_administrative = yes
+		highest_held_title_tier <= tier_duchy
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:TFE_establish_southern_liang_flag
+			}
+		}
+		NOT = { has_global_variable = TFE_order_restored_to_liang }
+		any_directly_owned_province = {
+			geographical_region = custom_liang
+		}
+	}
+
+	is_valid = {
+		highest_held_title_tier <= tier_duchy
+		prestige_level >= 2
+		completely_controls = title:d_liangzhou
+		OR = {
+			completely_controls = title:d_shanzhou
+			completely_controls = title:d_qilin
+			completely_controls = title:d_xia
+			completely_controls = title:d_zhenfan
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_adult = yes
+		is_available = yes
+		is_independent_ruler = yes
+	}
+
+	cost = {
+		gold = {
+			value = major_gold_value
+		}
+	}
+
+	effect = {
+	
+		#Can only happen once
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:TFE_establish_southern_liang_flag
+		}
+
+		save_scope_as = liang_ruler
+
+		establish_southern_liang_effect = yes
+
+		every_player = {
+			# Notify others
+			limit = {
+				is_ai = no
+				any_held_title = {
+					tier = tier_county
+					any_county_province = {
+						geographical_region = custom_chinese_influence_region		
+					}
+				}	
+			}
+			trigger_event = liang.0003
+		}
+
+		add_to_list = notification_sent
+	}
+
+	ai_will_do = {
+		base = 300
+	}
+}
+
+TFE_establish_western_liang = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	}
+	decision_group_type = major
+
+	desc = TFE_establish_western_liang_desc
+
+	ai_check_interval = 12
+
+	is_shown = {
+		game_start_date < 400.1.1
+		is_landed_or_landless_administrative = yes
+		highest_held_title_tier <= tier_duchy
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:TFE_establish_western_liang_flag
+			}
+		}
+		NOT = { has_global_variable = TFE_order_restored_to_liang }
+		any_directly_owned_province = {
+			geographical_region = custom_liang
+		}
+	}
+
+	is_valid = {
+		highest_held_title_tier <= tier_duchy
+		prestige_level >= 2
+		completely_controls = title:d_guiyi
+		OR = {
+			completely_controls = title:d_aksay
+			completely_controls = title:d_qilin
+			completely_controls = title:d_ganzhou
+			completely_controls = title:d_yijinai
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_adult = yes
+		is_available = yes
+		is_independent_ruler = yes
+	}
+
+	cost = {
+		gold = {
+			value = major_gold_value
+		}
+	}
+
+	effect = {
+	
+		#Can only happen once
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:TFE_establish_western_liang_flag
+		}
+
+		save_scope_as = liang_ruler
+
+		establish_western_liang_effect = yes
+
+		every_player = {
+			# Notify others
+			limit = {
+				is_ai = no
+				any_held_title = {
+					tier = tier_county
+					any_county_province = {
+						geographical_region = custom_chinese_influence_region		
+					}
+				}	
+			}
+			trigger_event = liang.0004
+		}
+
+		add_to_list = notification_sent
+	}
+
+	ai_will_do = {
+		base = 300
+	}
+}
+
+TFE_restore_order_to_liang = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	}
+	decision_group_type = major
+
+	desc = TFE_restore_order_to_liang_desc
+
+	ai_check_interval = 12
+
+	is_shown = {
+		#game_start_date < 400.1.1
+		is_landed_or_landless_administrative = yes
+		OR = {
+			has_title = title:k_xia
+			has_title = title:k_liang_later
+			has_title = title:k_liang_north
+			has_title = title:k_liang_east
+			has_title = title:k_liang_south
+			has_title = title:k_liang_west
+		}
+		NOT = { has_global_variable = TFE_order_restored_to_liang }
+		any_directly_owned_province = {
+			geographical_region = custom_liang
+		}
+	}
+
+	is_valid = {
+		OR = {
+			has_title = title:k_xia
+			has_title = title:k_liang_later
+			has_title = title:k_liang_north
+			has_title = title:k_liang_east
+			has_title = title:k_liang_south
+			has_title = title:k_liang_west
+		}	
+		completely_controls = title:k_xia
+	}
+
+	is_valid_showing_failures_only = {
+		is_adult = yes
+		is_available = yes
+		is_independent_ruler = yes
+	}
+
+	cost = {
+		gold = {
+			value = major_gold_value
+		}
+	}
+
+	effect = {
+	
+		#Can only happen once
+		set_global_variable = {
+			name = TFE_order_restored_to_liang
+			value = yes
+		}
+
+		save_scope_as = liang_ruler
+		add_character_flag = liang_chosen_one
+
+		show_as_tooltip = {
+			restore_order_to_liang_effect = yes
+		}
+
+		every_ruler = {
+			# Notify others
+			limit = {
+				OR = {
+					is_ai = no
+					has_title = title:k_xia
+					has_title = title:k_liang_later
+					has_title = title:k_liang_north
+					has_title = title:k_liang_east
+					has_title = title:k_liang_south
+					has_title = title:k_liang_west
+					any_held_title = {
+						tier = tier_county
+						any_county_province = {
+							geographical_region = custom_chinese_influence_region		
+						}
+					}
+				}	
+			}
+			trigger_event = liang.0005
+			# trigger_event = { # For testing
+			# 	id = liang.0005
+			# 	days = 1
+			# }
+		}
+
+		add_to_list = notification_sent
+	}
+
+	ai_will_do = {
+		base = 300
+	}
+}
+
+
+TFE_claim_descent_from_li_ling = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_steppe_feast.dds"
+	}
+	decision_group_type = cultural
+
+	desc = TFE_claim_descent_from_li_ling_desc
+
+	ai_check_interval = 48
+
+	is_shown = {
+		is_landed_or_landless_administrative = yes
+		is_dynast = yes
+		culture = {
+			OR = {
+				has_cultural_pillar = heritage_turkic
+				has_cultural_pillar = heritage_mongolic
+				has_cultural_pillar = heritage_yeniseian
+			}
+		}
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:TFE_li_ling_descent_claimed_already
+			}
+		}
+	}
+
+	is_valid = {
+		custom_description = {
+			text = TFE_li_ling_already_done_requirement
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = unavailable_unique_decisions
+					target = flag:TFE_li_ling_descent_claimed_already
+				}
+			}
+		}
+		culture = {
+			OR = {
+				has_cultural_pillar = heritage_turkic
+				has_cultural_pillar = heritage_mongolic
+				has_cultural_pillar = heritage_yeniseian
+			}
+		}
+		highest_held_title_tier >= tier_kingdom
+		prestige_level >= 4
+		custom_description = {
+			text = TFE_li_ling_steppe_requirement
+			capital_province = {
+				OR = {
+					geographical_region = world_steppe_east
+					geographical_region = world_steppe_tarim
+				}
+			}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_adult = yes
+		is_available = yes
+	}
+
+	cost = {
+		gold = {
+			value = major_gold_value
+		}
+		prestige = {
+			value = massive_prestige_value
+		}
+	}
+
+	effect = {
+	
+		#Can only happen once
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:TFE_li_ling_descent_claimed_already
+		}
+
+		save_scope_as = li_ling_claimant
+
+		claim_li_ling_descent_effect = yes
+
+		every_ruler = {
+			# Notify others
+			limit = {
+				is_ai = no
+				culture = {
+					OR = {
+						has_cultural_pillar = heritage_turkic
+						has_cultural_pillar = heritage_mongolic
+						has_cultural_pillar = heritage_yeniseian
+						has_cultural_pillar = heritage_chinese
+					}
+				}
+				any_held_title = {
+					tier = tier_county
+					any_county_province = {
+						OR = {
+							geographical_region = world_steppe_east
+							geographical_region = world_steppe_tarim
+						}		
+					}
+				}
+			}
+			trigger_event = steppe.0001
+		}
+
+		add_to_list = notification_sent
+	}
+
+	ai_will_do = {
+		base = 50
+		modifier = {
+			add = 10
+			has_trait = ambitious
+		}
+	}
+}
+
+TFE_establish_the_rouran_khaganate = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_steppe_feast.dds"
+	}
+	decision_group_type = major
+
+	desc = TFE_establish_the_rouran_khaganate_desc
+	selection_tooltip = TFE_establish_the_rouran_khaganate_tooltip
+
+	ai_check_interval = 10
+
+	is_shown = {
+		is_landed_or_landless_administrative = yes
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:TFE_establish_the_rouran_khaganate
+			}
+		}
+		culture = {
+			OR = {
+				THIS = culture:rouran
+				any_parent_culture_or_above = {
+					this = culture:rouran
+				}
+			}
+		}
+		NOT = {
+			exists = title:e_mongolia.holder
+		}
+	}
+
+	is_valid = {
+		is_independent_ruler = yes
+		completely_controls_region = region_rouran_lands
+		trigger_if = {
+			limit = {
+				is_ai = no
+			}
+			dread >= 40
+			prestige_level >= high_prestige_level
+		}
+		
+	}
+
+	is_valid_showing_failures_only = {
+		is_available_adult = yes
+	}
+
+	cost = {
+		gold = {
+			value = 500
+			if = {
+				limit = { is_ai = yes }
+				multiply = 0
+			}
+		}
+		prestige = {
+			value = 500
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				multiply = 0
+			}
+		}
+	}
+
+	effect = {
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:TFE_establish_the_rouran_khaganate
+		}
+		get_title = title:e_mongolia
+		custom_tooltip = TFE_establish_the_rouran_khaganate_tooltip.a
+		add_dread = 100
+		dynasty = {
+			add_dynasty_modifier = rouran_khagans
+		}
+		add_character_modifier = rouran_khagan_founder
+	}
+	ai_will_do = {
+		base = 100
+	}
+}

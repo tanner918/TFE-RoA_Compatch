@@ -1,0 +1,1560 @@
+﻿
+k_bengal = {
+	361.1.1 = { change_development_level = 5 }
+	532.1.1 = { change_development_level = 6 }
+	768.1.1 = { change_development_level = 7 }
+	
+	755.1.1 = {
+		holder = 190027 #Gopala Pala
+	}
+}
+
+
+d_gauda = {
+	361.1.1 = { change_development_level = 7 }
+	476.1.1 = { change_development_level = 8 }
+	532.1.1 = { change_development_level = 9 }
+	632.1.1 = { change_development_level = 10 }
+	768.1.1 = { change_development_level = 11 }
+	
+	
+	523.1.1 = {
+		holder = guptasad_09
+		liege = e_bengal
+	}
+	#Independent Gauda
+	590.1.1 = {
+		holder = gauda_01
+	}
+	625.1.1 = {
+		holder = gauda_02
+	}
+	625.6.1 = {
+		holder = 0
+	}
+	755.1.1 = {
+		holder = 190027 #Gopala Pala
+	}
+}
+
+
+c_laksmanavati = {
+	#Gupta Empire Province
+	361.1.1 = {
+		holder = guptasad_01
+		liege = e_bengal
+	}
+	460.1.1 = {
+		holder = guptasad_02
+		liege = e_bengal
+	}
+	523.1.1 = {
+		holder = guptasad_09
+		#liege = k_bengal
+	}
+
+	
+	#Fragmented Gauda Kingdom
+	625.6.1 = {
+		holder = gauda_04
+	}
+	755.1.1 = {
+		holder = 190027 #Gopala Pala
+	}
+}
+
+
+c_kotivarsa = {
+	#Gupta Empire Province
+	347.1.1 = {
+		holder = 901065
+	}
+	357.1.1 = {
+		holder = guptasad_08
+		liege = e_bengal
+	}
+	460.1.1 = {
+		holder = guptasad_07
+		liege = e_bengal
+	}
+	523.1.1 = {
+		holder = guptasad_09
+		#liege = k_bengal
+	}
+	#Fragmented Gauda Kingdom
+	625.6.1 = {
+		holder = gauda_04
+	}
+	755.1.1 = {
+		holder = 190027 #Gopala Pala
+		liege = d_varendra
+	}
+}
+
+
+c_gauda = {
+	#Gupta Empire Province
+	361.1.1 = {
+		holder = guptasad_01
+		liege = e_bengal
+	}
+	460.1.1 = {
+		holder = guptasad_02
+		liege = e_bengal
+	}
+	523.1.1 = {
+		holder = guptasad_09
+		#liege = k_bengal
+	}
+
+	#Fragmented Gauda Kingdom
+	625.5.1 = {
+		holder = gauda_03
+	}
+	755.1.1 = {
+		holder = 190027 #Gopala Pala
+	}
+}
+
+
+c_radha = {
+	#Gupta Empire Province
+	361.1.1 = {
+		holder = guptasad_03
+		liege = e_bengal
+	}
+	460.1.1 = {
+		holder = guptasad_04
+		liege = e_bengal
+	}
+	#Independent Vanga
+	500.1.1 = {
+		holder = vanga_06
+	}
+	529.1.1 = {
+		liege = d_vanga
+	}
+	#Fragmented Gauda Kingdom
+	625.6.1 = {
+		holder = gauda_03
+	}
+	755.1.1 = {
+		liege = k_bengal
+	}
+	757.1.1 = {
+		holder = 191111 #Kau
+	}
+	764.1.1 = {
+		holder = 191112 #Jhau
+	}
+}
+
+
+d_varendra = {
+	361.1.1 = { change_development_level = 6 }
+	476.1.1 = { change_development_level = 7 }
+	768.1.1 = { change_development_level = 8 }
+	
+	#Gupta Empire Province
+	347.1.1 = {
+		holder = 901065
+	}
+	357.1.1 = {
+		holder = guptasad_08
+		liege = e_bengal
+	}
+	460.1.1 = {
+		holder = guptasad_07
+		liege = e_bengal
+	}
+	523.1.1 = {
+		holder = guptasad_10
+		#liege = k_bihar
+	}
+
+	#Independent Gauda
+	590.1.1 = {
+		holder = gauda_01
+	}
+	625.1.1 = {
+		holder = gauda_02
+	}
+	625.6.1 = {
+		holder = 0
+	}
+	755.1.1 = {
+		holder = 190027 #Gopala Pala
+	}
+}
+
+
+c_pundravardhana = {
+	#Gupta Empire Province
+	347.1.1 = {
+		holder = 901065
+	}
+	357.1.1 = {
+		holder = guptasad_08
+		liege = e_bengal
+	}
+	460.1.1 = {
+		holder = guptasad_07
+		liege = e_bengal
+	}
+	523.1.1 = {
+		holder = guptasad_09
+		#liege = k_bengal
+	}
+	#Fragmented Gauda Kingdom
+	625.5.1 = {
+		holder = gauda_04
+	}
+	755.1.1 = {
+		holder = 190027 #Gopala Pala
+		liege = d_varendra
+	}
+}
+
+
+c_suvarnagram = {
+	361.1.1 = { change_development_level = 3 }
+	532.1.1 = { change_development_level = 4 }
+	768.1.1 = { change_development_level = 5 }
+	
+	#Gupta Empire Vassal
+	360.1.1 = {
+		holder = guptasad_12
+		liege = e_bengal
+	}
+	410.1.1 = {
+		holder = guptasad_13
+		liege = e_bengal
+	}
+	523.1.1 = {
+		holder = guptasad_10
+		#liege = k_bengal
+	}
+	525.1.1 = {
+		holder = jaintia_01		
+		government = tribal_government
+		liege = 0
+	}
+	
+	#Khadga Dynasty
+	625.1.1 = {
+		holder = khadga_01
+	}
+	640.1.1 = {
+		holder = khadga_02
+	}
+	658.1.1 = {
+		holder = khadga_03
+	}
+	673.1.1 = {
+		holder = khadga_04
+	}
+	707.1.1 = {
+		holder = khadga_05
+	}
+	725.1.1 = {
+		holder = 190084 #Shantideva Shantideva
+	}
+	750.1.1 = {
+		holder = 190085 #Viradeva Shantideva
+	}
+}
+
+
+c_madhupur = {
+	#Gupta Empire Province
+	347.1.1 = {
+		holder = 901065
+	}
+	357.1.1 = {
+		holder = guptasad_08
+		liege = e_bengal
+	}
+	460.1.1 = {
+		holder = guptasad_07
+		liege = e_bengal
+	}
+	523.1.1 = {
+		holder = guptasad_10
+		#liege = k_bengal
+	}
+	#Fragmented Gauda Kingdom
+	625.6.1 = {
+		holder = gauda_04
+	}
+	755.1.1 = {
+		holder = 190027 #Gopala Pala
+		liege = d_varendra
+	}
+}
+
+d_samatata = {
+	361.1.1 = { change_development_level = 5 }
+	476.1.1 = { change_development_level = 6 }
+	768.1.1 = { change_development_level = 7 }
+	202.1.1 = {
+		holder = chandra_01
+	}
+	229.1.1 = {
+		holder = chandra_02
+	}
+	239.1.1 = {
+		holder = chandra_03
+	}
+	311.1.1 = {
+		holder = chandra_04
+	}
+	334.1.1 = {
+		holder = chandra_06
+	}
+	341.1.1 = {
+		holder = chandra_05
+	}
+	361.1.1 = {
+		holder = chandra_07
+	}
+	368.1.1 = {
+		holder = chandra_08
+	}
+	370.1.1 = {
+		holder = chandra_09
+	}
+	425.1.1 = {
+		holder = chandra_10
+	}
+	445.1.1 = {
+		holder = chandra_11
+	}
+	454.1.1 = {
+		holder = chandra_12
+	}
+	476.1.1 = {
+		holder = chandra_13
+	}
+	483.1.1 = {
+		holder = chandra_14
+	}
+	489.1.1 = {
+		holder = chandra_15
+	}
+	496.1.1 = {
+		holder = chandra_16
+	}
+	520.1.1 = {
+		holder = chandra_17
+	}
+	575.1.1 = {
+		holder = chandra_18
+	}
+	578.1.1 = {
+		holder = chandra_19
+	}
+	590.1.1 = {
+		holder = chandra_20
+	}
+	597.1.1 = {
+		holder = chandra_21
+	}
+	600.1.1 = {
+		holder = chandra_22
+	}
+	612.1.1 = {
+		holder = chandra_23
+	}
+	624.1.1 = {
+		holder = chandra_24
+	}
+
+	#Khadga Dynasty
+	625.1.1 = {
+		holder = khadga_01
+	}
+	640.1.1 = {
+		holder = khadga_02
+	}
+	658.1.1 = {
+		holder = khadga_03
+	}
+	673.1.1 = {
+		holder = khadga_04
+	}
+	707.1.1 = {
+		holder = khadga_05
+	}
+}
+d_vanga = {
+	361.1.1 = { change_development_level = 5 }
+	476.1.1 = { change_development_level = 6 }
+	768.1.1 = { change_development_level = 7 }
+	
+	#Independent Vanga Kingdom
+	529.1.1 = {
+		holder = vanga_01
+	}
+	547.1.1 = {
+		holder = vanga_02
+	}
+	550.1.1 = {
+		holder = vanga_03
+	}
+	564.1.1 = {
+		holder = vanga_04
+	}
+	570.1.1 = {
+		holder = vanga_05
+	}
+	578.1.1 = {
+		holder = 0
+	}
+	#Khadga Dynasty
+	625.1.1 = {
+		holder = khadga_01
+	}
+	640.1.1 = {
+		holder = khadga_02
+	}
+	658.1.1 = {
+		holder = khadga_03
+	}
+	673.1.1 = {
+		holder = khadga_04
+	}
+	707.1.1 = {
+		holder = khadga_05
+	}
+	730.1.1 = {
+		holder = 191103 #Rajarabhata
+	}
+	755.1.1 = {
+		holder = 190085 #Viradeva Shantideva
+		liege = k_bengal
+	}
+}
+
+
+c_bikrampur = {
+	#Gupta Empire Vassal
+	360.1.1 = {
+		holder = guptasad_12
+		liege = e_bengal
+	}
+	410.1.1 = {
+		holder = guptasad_13
+		liege = e_bengal
+	}
+	#Independent Vanga Kingdom
+	529.1.1 = {
+		holder = vanga_01
+	}
+	547.1.1 = {
+		holder = vanga_02
+	}
+	550.1.1 = {
+		holder = vanga_03
+	}
+	564.1.1 = {
+		holder = vanga_04
+	}
+	570.1.1 = {
+		holder = vanga_05
+	}
+	#Khadga Dynasty
+	625.1.1 = {
+		holder = khadga_01
+	}
+	640.1.1 = {
+		holder = khadga_02
+	}
+	658.1.1 = {
+		holder = khadga_03
+	}
+	673.1.1 = {
+		holder = khadga_04
+	}
+	707.1.1 = {
+		holder = khadga_05
+	}
+	
+	725.1.1 = {
+		holder = 190084 #Shantideva Shantideva
+	}
+	750.1.1 = {
+		holder = 190085 #Viradeva Shantideva
+	}
+}
+
+
+c_candradvipa = {
+	202.1.1 = {
+		holder = chandra_01
+		government = gupta_government
+	}
+	229.1.1 = {
+		holder = chandra_02
+	}
+	239.1.1 = {
+		holder = chandra_03
+	}
+	311.1.1 = {
+		holder = chandra_04
+	}
+	334.1.1 = {
+		holder = chandra_06
+	}
+	341.1.1 = {
+		holder = chandra_05
+	}
+	361.1.1 = {
+		holder = chandra_07
+	}
+	368.1.1 = {
+		holder = chandra_08
+	}
+	370.1.1 = {
+		holder = chandra_09
+	}
+	425.1.1 = {
+		holder = chandra_10
+	}
+	445.1.1 = {
+		holder = chandra_11
+	}
+	454.1.1 = {
+		holder = chandra_12
+	}
+	476.1.1 = {
+		holder = chandra_13
+	}
+	# 483.1.1 = {
+	# 	holder = chandra_14
+	# }
+	# 489.1.1 = {
+	# 	holder = chandra_15
+	# }
+	# 496.1.1 = {
+	# 	holder = chandra_16
+	# }
+	# 520.1.1 = {
+	# 	holder = chandra_17
+	# }
+	# 575.1.1 = {
+	# 	holder = chandra_18
+	# }
+	# 578.1.1 = {
+	# 	holder = chandra_19
+	# }
+	# 590.1.1 = {
+	# 	holder = chandra_20
+	# }
+	# 597.1.1 = {
+	# 	holder = chandra_21
+	# }
+	# 600.1.1 = {
+	# 	holder = chandra_22
+	# }
+	# 612.1.1 = {
+	# 	holder = chandra_23
+	# }
+	# 624.1.1 = {
+	# 	holder = chandra_24
+	# }
+	
+	#Khadga Dynasty
+	625.1.1 = {
+		holder = khadga_01
+	}
+	640.1.1 = {
+		holder = khadga_02
+	}
+	658.1.1 = {
+		holder = khadga_03
+	}
+	673.1.1 = {
+		holder = khadga_04
+	}
+	707.1.1 = {
+		holder = khadga_05
+	}
+	725.1.1 = {
+		holder = 190084 #Shantideva Shantideva
+		liege = 0
+	}
+	750.1.1 = {
+		holder = 190085 #Viradeva Shantideva
+	}
+}
+
+
+c_karmanta = {
+	361.1.1 = { change_development_level = 3 }
+	532.1.1 = { change_development_level = 4 }
+	768.1.1 = { change_development_level = 5 }
+	202.1.1 = {
+		holder = chandra_01
+		government = gupta_government
+		liege = d_arakan
+	}
+	229.1.1 = {
+		holder = chandra_02
+	}
+	239.1.1 = {
+		holder = chandra_03
+	}
+	311.1.1 = {
+		holder = chandra_04
+	}
+	334.1.1 = {
+		holder = chandra_06
+	}
+	341.1.1 = {
+		holder = chandra_05
+	}
+	361.1.1 = {
+		holder = chandra_07
+	}
+	368.1.1 = {
+		holder = chandra_08
+	}
+	370.1.1 = {
+		holder = chandra_09
+	}
+	425.1.1 = {
+		holder = chandra_10
+	}
+	445.1.1 = {
+		holder = chandra_11
+	}
+	454.1.1 = {
+		holder = chandra_12
+	}
+	476.1.1 = {
+		holder = chandra_13
+	}
+	483.1.1 = {
+		holder = chandra_14
+	}
+	489.1.1 = {
+		holder = chandra_15
+	}
+	496.1.1 = {
+		holder = chandra_16
+	}
+	520.1.1 = {
+		holder = chandra_17
+	}
+	532.1.1 = {
+		holder = kachari_misc_001
+	}
+	575.1.1 = {
+		holder = chandra_18
+	}
+	578.1.1 = {
+		holder = chandra_19
+	}
+	590.1.1 = {
+		holder = chandra_20
+	}
+	597.1.1 = {
+		holder = chandra_21
+	}
+	600.1.1 = {
+		holder = chandra_22
+	}
+	612.1.1 = {
+		holder = chandra_23
+	}
+	624.1.1 = {
+		holder = chandra_24
+	}
+	
+	#Khadga Dynasty
+	625.1.1 = {
+		holder = khadga_01
+	}
+	640.1.1 = {
+		holder = khadga_02
+	}
+	658.1.1 = {
+		holder = khadga_03
+	}
+	673.1.1 = {
+		holder = khadga_04
+	}
+	707.1.1 = {
+		holder = khadga_05
+	}
+	730.1.1 = {
+		holder = 191103 #Rajarabhata
+	}
+	755.1.1 = {
+		holder = 191105 #Lokhanata
+	}
+}
+
+
+c_samatata = {
+	#Gupta Empire Vassal
+	361.1.1 = { change_development_level = 6 }
+	476.1.1 = { change_development_level = 7 }
+	532.1.1 = { change_development_level = 8 }
+	202.1.1 = {
+		holder = chandra_01
+		government = gupta_government
+	}
+	229.1.1 = {
+		holder = chandra_02
+	}
+	239.1.1 = {
+		holder = chandra_03
+	}
+	311.1.1 = {
+		holder = chandra_04
+	}
+	334.1.1 = {
+		holder = chandra_06
+	}
+	341.1.1 = {
+		holder = chandra_05
+	}
+	361.1.1 = {
+		holder = chandra_07
+	}
+	368.1.1 = {
+		holder = chandra_08
+	}
+	370.1.1 = {
+		holder = chandra_09
+	}
+	425.1.1 = {
+		holder = chandra_10
+	}
+	445.1.1 = {
+		holder = chandra_11
+	}
+	454.1.1 = {
+		holder = chandra_12
+	}
+	476.1.1 = {
+		holder = chandra_13
+	}
+	483.1.1 = {
+		holder = chandra_14
+	}
+	489.1.1 = {
+		holder = chandra_15
+	}
+	496.1.1 = {
+		holder = chandra_16
+	}
+	520.1.1 = {
+		holder = chandra_17
+	}
+	575.1.1 = {
+		holder = chandra_18
+	}
+	578.1.1 = {
+		holder = chandra_19
+	}
+	590.1.1 = {
+		holder = chandra_20
+	}
+	597.1.1 = {
+		holder = chandra_21
+	}
+	600.1.1 = {
+		holder = chandra_22
+	}
+	612.1.1 = {
+		holder = chandra_23
+	}
+	624.1.1 = {
+		holder = chandra_24
+	}
+	
+	#Independent Vanga
+	# 529.1.1 = {
+	# 	holder = vanga_01
+	# }
+	# 547.1.1 = {
+	# 	holder = vanga_02
+	# }
+	# 550.1.1 = {
+	# 	holder = vanga_03
+	# }
+	# 564.1.1 = {
+	# 	holder = vanga_04
+	# }
+	# 570.1.1 = {
+	# 	holder = vanga_05
+	# }
+	#Khadga Dynasty
+	625.1.1 = {
+		holder = khadga_01
+	}
+	640.1.1 = {
+		holder = khadga_02
+	}
+	658.1.1 = {
+		holder = khadga_03
+	}
+	673.1.1 = {
+		holder = khadga_04
+	}
+	707.1.1 = {
+		holder = khadga_05
+	}
+	730.1.1 = {
+		holder = 191103 #Rajarabhata
+	}
+	755.1.1 = {
+		holder = 191105 #Lokhanata
+	}
+}
+
+
+c_harikela = {
+	361.1.1 = { change_development_level = 1 }
+	532.1.1 = { change_development_level = 2 }
+	768.1.1 = { change_development_level = 3 }
+	202.1.1 = {
+		holder = chandra_01
+		government = gupta_government
+		liege = d_arakan
+	}
+	229.1.1 = {
+		holder = chandra_02
+	}
+	239.1.1 = {
+		holder = chandra_03
+	}
+	311.1.1 = {
+		holder = chandra_04
+	}
+	334.1.1 = {
+		holder = chandra_06
+	}
+	341.1.1 = {
+		holder = chandra_05
+	}
+	361.1.1 = {
+		holder = chandra_07
+	}
+	368.1.1 = {
+		holder = chandra_08
+	}
+	370.1.1 = {
+		holder = chandra_09
+	}
+	425.1.1 = {
+		holder = chandra_10
+	}
+	445.1.1 = {
+		holder = chandra_11
+	}
+	454.1.1 = {
+		holder = chandra_12
+	}
+	476.1.1 = {
+		holder = chandra_13
+	}
+	483.1.1 = {
+		holder = chandra_14
+	}
+	489.1.1 = {
+		holder = chandra_15
+	}
+	496.1.1 = {
+		holder = chandra_16
+	}
+	520.1.1 = {
+		holder = chandra_17
+	}
+	532.1.1 = {
+		holder = kachari_misc_002
+	}
+	575.1.1 = {
+		holder = chandra_18
+	}
+	578.1.1 = {
+		holder = chandra_19
+	}
+	590.1.1 = {
+		holder = chandra_20
+	}
+	597.1.1 = {
+		holder = chandra_21
+	}
+	600.1.1 = {
+		holder = chandra_22
+	}
+	612.1.1 = {
+		holder = chandra_23
+	}
+	624.1.1 = {
+		holder = chandra_24
+	}
+	
+	#Khadga Dynasty
+	625.1.1 = {
+		holder = khadga_01
+	}
+	640.1.1 = {
+		holder = khadga_02
+	}
+	658.1.1 = {
+		holder = khadga_03
+	}
+	673.1.1 = {
+		holder = khadga_04
+	}
+	707.1.1 = {
+		holder = khadga_05
+	}
+	730.1.1 = {
+		holder = 191103 #Rajarabhata
+	}
+	755.1.1 = {
+		holder = 191105 #Lokhanata
+	}
+}
+
+
+d_nadia = {
+	361.1.1 = { change_development_level = 8 }
+	476.1.1 = { change_development_level = 9 }
+	532.1.1 = { change_development_level = 10 }
+	632.1.1 = { change_development_level = 11 }
+	768.1.1 = { change_development_level = 12 }
+	
+	#Independent Gauda
+	590.1.1 = {
+		holder = gauda_01
+	}
+	625.1.1 = {
+		holder = gauda_02
+	}
+	625.6.1 = {
+		holder = 0
+	}
+}
+
+
+c_nabadwipa = {
+	#Gupta Empire Province
+	361.1.1 = {
+		holder = guptasad_01
+		liege = e_bengal
+	}
+	460.1.1 = {
+		holder = guptasad_02
+		liege = e_bengal
+	}
+
+	#Independent Vanga
+	500.1.1 = {
+		holder = vanga_06
+	}
+	529.1.1 = {
+		liege = d_vanga
+	}
+	#Fragmented Gauda Kingdom
+	625.6.1 = {
+		holder = gauda_03
+	}
+	#Khadga Dynasty
+	625.1.1 = {
+		holder = khadga_01
+	}
+	640.1.1 = {
+		holder = khadga_02
+	}
+	658.1.1 = {
+		holder = khadga_03
+	}
+	673.1.1 = {
+		holder = khadga_04
+	}
+	707.1.1 = {
+		holder = khadga_05
+	}
+	725.1.1 = {
+		holder = 190084 #Shantideva Shantideva
+	}
+	750.1.1 = {
+		holder = 190085 #Viradeva Shantideva
+	}
+}
+
+
+c_saptagrama = {
+	#Gupta Empire Province
+	361.1.1 = {
+		holder = guptasad_05
+		liege = e_bengal
+	}
+	460.1.1 = {
+		holder = guptasad_06
+		liege = e_bengal
+	}
+	#Independent Vanga
+	500.1.1 = {
+		holder = vanga_06
+	}
+	529.1.1 = {
+		liege = d_vanga
+	}
+	#Fragmented Gauda
+	625.6.1 = {
+		holder = gauda_05
+	}
+	755.1.1 = {
+		holder = 191152 #Adnata
+		liege = d_suhma
+	}
+}
+
+
+c_vijayapura = {
+	#Gupta Empire Province
+	361.1.1 = {
+		holder = guptasad_03
+		liege = e_bengal
+	}
+	460.1.1 = {
+		holder = guptasad_04
+		liege = e_bengal
+	}
+	#Independent Vanga
+	500.1.1 = {
+		holder = vanga_06
+	}
+	529.1.1 = {
+		liege = d_vanga
+	}
+	#Fragmented Gauda Kingdom
+	625.6.1 = {
+		holder = gauda_03
+	}
+	755.1.1 = {
+		liege = k_bengal
+	}
+	757.1.1 = {
+		holder = 191111 #Kau
+	}
+	764.1.1 = {
+		holder = 191112 #Jhau
+	}
+}
+
+
+d_suhma = {
+	361.1.1 = { change_development_level = 8 }
+	476.1.1 = { change_development_level = 9 }
+	532.1.1 = { change_development_level = 10 }
+	632.1.1 = { change_development_level = 11 }
+	768.1.1 = { change_development_level = 12 }
+	
+	#Suhmabhukti or Daksina Radha
+	755.1.1 = {
+		holder = 191152 #Adnata
+	}
+	760.1.1 = {
+		liege = k_bengal
+	}
+}
+
+
+c_mallabhum = {
+	#Gupta Empire Province
+	361.1.1 = {
+		holder = guptasad_03
+		liege = e_bengal
+	}
+	460.1.1 = {
+		holder = guptasad_04
+		liege = e_bengal
+	}
+	#Independent Vanga
+	529.1.1 = {
+		liege = d_vanga
+		holder = guptasad_11
+	}
+	#Fragmented Gauda
+	625.6.1 = {
+		holder = gauda_05
+	}
+	695.1.1 = {
+		holder = 191106	#Adi Malla
+	}
+	710.1.1 = {
+		holder = 191107	#Jai
+	}
+	720.1.1 = {
+		holder = 191108 #Benu
+	}
+	733.1.1 = {
+		holder = 191109 #Kinu
+	}
+	742.1.1 = {
+		holder = 191110 #Indra
+	}
+	755.1.1 = {
+		liege = k_bengal
+	}
+	757.1.1 = {
+		holder = 191111 #Kau
+	}
+	764.1.1 = {
+		holder = 191112 #Jhau
+	}
+}
+
+
+c_tamralipti = {
+	361.1.1 = { change_development_level = 11 }
+	476.1.1 = { change_development_level = 12 }
+	532.1.1 = { change_development_level = 13 }
+	632.1.1 = { change_development_level = 14 }
+	768.1.1 = { change_development_level = 15 }
+	#Gupta Empire Province
+	361.1.1 = {
+		holder = guptasad_05
+		liege = e_bengal
+	}
+	395.1.1 = {
+		liege = e_bengal
+	}
+	459.1.1 = {
+		holder = guptasad_06
+		liege = e_bengal
+	}
+	#Independent Vanga
+	529.1.1 = {
+		liege = d_vanga
+		holder = guptasad_11
+	}
+	#Fragmented Gauda
+	625.5.1 = {
+		holder = gauda_05
+		liege = 0
+	}
+	755.1.1 = {
+		holder = 191152 #Adnata
+		liege = d_suhma
+	}
+}
+
+
+c_midnapore = {
+	#Gupta Empire Province
+	#Gupta Empire Province
+	361.1.1 = {
+		holder = guptasad_05
+		liege = e_bengal
+	}
+	459.1.1 = {
+		holder = guptasad_06
+		liege = e_bengal
+	}
+	#Independent Vanga
+	529.1.1 = {
+		liege = d_vanga
+		holder = guptasad_11
+	}
+	#Fragmented Gauda
+	625.6.1 = {
+		holder = gauda_05
+	}
+	755.1.1 = {
+		holder = 191152 #Adnata
+		liege = d_suhma
+	}
+}
+
+d_arakan = {
+	202.1.1 = {
+		holder = chandra_01
+		government = gupta_government
+	}
+	229.1.1 = {
+		holder = chandra_02
+	}
+	239.1.1 = {
+		holder = chandra_03
+	}
+	311.1.1 = {
+		holder = chandra_04
+	}
+	334.1.1 = {
+		holder = chandra_06
+	}
+	341.1.1 = {
+		holder = chandra_05
+	}
+	361.1.1 = {
+		holder = chandra_07
+	}
+	368.1.1 = {
+		holder = chandra_08
+	}
+	370.1.1 = {
+		holder = chandra_09
+	}
+	425.1.1 = {
+		holder = chandra_10
+	}
+	445.1.1 = {
+		holder = chandra_11
+	}
+	454.1.1 = {
+		holder = chandra_12
+	}
+	476.1.1 = {
+		holder = chandra_13
+	}
+	483.1.1 = {
+		holder = chandra_14
+	}
+	489.1.1 = {
+		holder = chandra_15
+	}
+	496.1.1 = {
+		holder = chandra_16
+	}
+	520.1.1 = {
+		holder = chandra_17
+	}
+	575.1.1 = {
+		holder = chandra_18
+	}
+	578.1.1 = {
+		holder = chandra_19
+	}
+	590.1.1 = {
+		holder = chandra_20
+	}
+	597.1.1 = {
+		holder = chandra_21
+	}
+	600.1.1 = {
+		holder = chandra_22
+	}
+	612.1.1 = {
+		holder = chandra_23
+	}
+	624.1.1 = {
+		holder = chandra_24
+	}
+}
+
+c_vaisali = {
+	361.1.1 = { change_development_level = 7 }
+	532.1.1 = { change_development_level = 8 }
+	202.1.1 = {
+		holder = chandra_01
+		government = gupta_government
+	}
+	229.1.1 = {
+		holder = chandra_02
+	}
+	239.1.1 = {
+		holder = chandra_03
+	}
+	311.1.1 = {
+		holder = chandra_04
+	}
+	334.1.1 = {
+		holder = chandra_06
+	}
+	341.1.1 = {
+		holder = chandra_05
+	}
+	361.1.1 = {
+		holder = chandra_07
+	}
+	368.1.1 = {
+		holder = chandra_08
+	}
+	370.1.1 = {
+		holder = chandra_09
+	}
+	425.1.1 = {
+		holder = chandra_10
+	}
+	445.1.1 = {
+		holder = chandra_11
+	}
+	454.1.1 = {
+		holder = chandra_12
+	}
+	476.1.1 = {
+		holder = chandra_13
+	}
+	483.1.1 = {
+		holder = chandra_14
+	}
+	489.1.1 = {
+		holder = chandra_15
+	}
+	496.1.1 = {
+		holder = chandra_16
+	}
+	520.1.1 = {
+		holder = chandra_17
+	}
+	575.1.1 = {
+		holder = chandra_18
+	}
+	578.1.1 = {
+		holder = chandra_19
+	}
+	590.1.1 = {
+		holder = chandra_20
+	}
+	597.1.1 = {
+		holder = chandra_21
+	}
+	600.1.1 = {
+		holder = chandra_22
+	}
+	612.1.1 = {
+		holder = chandra_23
+	}
+	624.1.1 = {
+		holder = chandra_24
+	}
+}
+
+c_ramu = {
+	202.1.1 = {
+		holder = chandra_01
+		government = gupta_government
+	}
+	229.1.1 = {
+		holder = chandra_02
+	}
+	239.1.1 = {
+		holder = chandra_03
+	}
+	311.1.1 = {
+		holder = chandra_04
+	}
+	334.1.1 = {
+		holder = chandra_06
+	}
+	341.1.1 = {
+		holder = chandra_05
+	}
+	361.1.1 = {
+		holder = chandra_07
+	}
+	368.1.1 = {
+		holder = chandra_08
+	}
+	370.1.1 = {
+		holder = chandra_09
+	}
+	425.1.1 = {
+		holder = chandra_10
+	}
+	445.1.1 = {
+		holder = chandra_11
+	}
+	454.1.1 = {
+		holder = chandra_12
+	}
+	476.1.1 = {
+		holder = chandra_13
+	}
+	483.1.1 = {
+		holder = chandra_14
+	}
+	489.1.1 = {
+		holder = chandra_15
+	}
+	496.1.1 = {
+		holder = chandra_16
+	}
+	520.1.1 = {
+		holder = chandra_17
+	}
+	575.1.1 = {
+		holder = chandra_18
+	}
+	578.1.1 = {
+		holder = chandra_19
+	}
+	590.1.1 = {
+		holder = chandra_20
+	}
+	597.1.1 = {
+		holder = chandra_21
+	}
+	600.1.1 = {
+		holder = chandra_22
+	}
+	612.1.1 = {
+		holder = chandra_23
+	}
+	624.1.1 = {
+		holder = chandra_24
+	}
+}
+
+c_thabeik_taung = {
+	202.1.1 = {
+		holder = chandra_01
+		government = gupta_government
+	}
+	229.1.1 = {
+		holder = chandra_02
+	}
+	239.1.1 = {
+		holder = chandra_03
+	}
+	311.1.1 = {
+		holder = chandra_04
+	}
+	334.1.1 = {
+		holder = chandra_06
+	}
+	341.1.1 = {
+		holder = chandra_05
+	}
+	361.1.1 = {
+		holder = chandra_07
+	}
+	368.1.1 = {
+		holder = chandra_08
+	}
+	370.1.1 = {
+		holder = chandra_09
+	}
+	425.1.1 = {
+		holder = chandra_10
+	}
+	445.1.1 = {
+		holder = chandra_11
+	}
+	454.1.1 = {
+		holder = chandra_12
+	}
+	476.1.1 = {
+		holder = chandra_13
+	}
+	483.1.1 = {
+		holder = chandra_14
+	}
+	489.1.1 = {
+		holder = chandra_15
+	}
+	496.1.1 = {
+		holder = chandra_16
+	}
+	520.1.1 = {
+		holder = chandra_17
+	}
+	575.1.1 = {
+		holder = chandra_18
+	}
+	578.1.1 = {
+		holder = chandra_19
+	}
+	590.1.1 = {
+		holder = chandra_20
+	}
+	597.1.1 = {
+		holder = chandra_21
+	}
+	600.1.1 = {
+		holder = chandra_22
+	}
+	612.1.1 = {
+		holder = chandra_23
+	}
+	624.1.1 = {
+		holder = chandra_24
+	}
+}
+
+c_sandoway = {
+	361.1.1 = { change_development_level = 5 }
+	532.1.1 = { change_development_level = 6 }
+	202.1.1 = {
+		holder = chandra_01
+		government = gupta_government
+	}
+	229.1.1 = {
+		holder = chandra_02
+	}
+	239.1.1 = {
+		holder = chandra_03
+	}
+	311.1.1 = {
+		holder = chandra_04
+	}
+	334.1.1 = {
+		holder = chandra_06
+	}
+	341.1.1 = {
+		holder = chandra_05
+	}
+	361.1.1 = {
+		holder = chandra_07
+	}
+	368.1.1 = {
+		holder = chandra_08
+	}
+	370.1.1 = {
+		holder = chandra_09
+	}
+	425.1.1 = {
+		holder = chandra_10
+	}
+	445.1.1 = {
+		holder = chandra_11
+	}
+	454.1.1 = {
+		holder = chandra_12
+	}
+	476.1.1 = {
+		holder = chandra_13
+	}
+	483.1.1 = {
+		holder = chandra_14
+	}
+	489.1.1 = {
+		holder = chandra_15
+	}
+	496.1.1 = {
+		holder = chandra_16
+	}
+	520.1.1 = {
+		holder = chandra_17
+	}
+	575.1.1 = {
+		holder = chandra_18
+	}
+	578.1.1 = {
+		holder = chandra_19
+	}
+	590.1.1 = {
+		holder = chandra_20
+	}
+	597.1.1 = {
+		holder = chandra_21
+	}
+	600.1.1 = {
+		holder = chandra_22
+	}
+	612.1.1 = {
+		holder = chandra_23
+	}
+	624.1.1 = {
+		holder = chandra_24
+	}
+}

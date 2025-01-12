@@ -1,0 +1,7710 @@
+﻿on_game_start = {
+	on_actions = {
+		on_resource_start
+	}
+}
+
+on_resource_start = {
+	effect = {
+		title:b_roma.title_province = {
+			set_holding_type = trade_center_holding
+			
+			add_building = trade_center_03
+		}	
+		
+		title:b_constantinople.title_province = {
+			set_holding_type = trade_center_holding
+			
+			add_building = trade_center_03
+		}
+		title:b_alexandria.title_province = {
+			set_holding_type = trade_center_holding
+			
+			add_building = trade_center_04
+		}
+		title:b_tunis.title_province = {
+			set_holding_type = trade_center_holding
+			
+			add_building = trade_center_04
+		}
+		################################################
+			title:c_balkh = {
+				add_county_modifier = {
+				modifier = market_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_chunar = {
+				add_county_modifier = {
+				modifier = market_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kerala = {
+				add_county_modifier = {
+				modifier = port_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_tamralipti = {
+				add_county_modifier = {
+				modifier = port_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_debul = {
+				add_county_modifier = {
+				modifier = port_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_al_aqabah = {
+				add_county_modifier = {
+				modifier = port_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_jenne = {
+				add_county_modifier = {
+				modifier = market_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_tirakka = {
+				add_county_modifier = {
+				modifier = market_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_gao = {
+				add_county_modifier = {
+				modifier = market_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_samarkand = {
+				add_county_modifier = {
+				modifier = market_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_isfahan = {
+				add_county_modifier = {
+				modifier = market_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_trebizond = {
+				add_county_modifier = {
+				modifier = port_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_ribe = {
+				add_county_modifier = {
+				modifier = port_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_slesvig = {
+				add_county_modifier = {
+				modifier = port_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_upland = {
+				add_county_modifier = {
+				modifier = port_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_zemigalians = {
+				add_county_modifier = {
+				modifier = port_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_itil = {
+				add_county_modifier = {
+				modifier = post_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_pskov = {
+				add_county_modifier = {
+				modifier = post_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_vitebsk = {
+				add_county_modifier = {
+				modifier = post_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_yaroslavl = {
+				add_county_modifier = {
+				modifier = post_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_smolensk = {
+				add_county_modifier = {
+				modifier = post_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_beloozero = {
+				add_county_modifier = {
+				modifier = post_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_gnezdovo = {
+				add_county_modifier = {
+				modifier = post_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_chernigov = {
+				add_county_modifier = {
+				modifier = post_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_bern = {
+				add_county_modifier = {
+				modifier = market_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_oversticht = {
+				add_county_modifier = {
+				modifier = market_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_santiago = {
+				add_county_modifier = {
+				modifier = market_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_damietta = {
+				add_county_modifier = {
+				modifier = port_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_hormuz = {
+				add_county_modifier = {
+				modifier = port_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_muscat = {
+				add_county_modifier = {
+				modifier = port_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_mandab = {
+				add_county_modifier = {
+				modifier = port_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_hampton = {
+				add_county_modifier = {
+				modifier = port_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_labourd = {
+				add_county_modifier = {
+				modifier = market_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_venaissin = {
+				add_county_modifier = {
+				modifier = port_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_coulommiers = {
+				add_county_modifier = {
+				modifier = market_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_troyes = {
+				add_county_modifier = {
+				modifier = market_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_ancona = {
+				add_county_modifier = {
+				modifier = port_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_apulia = {
+				add_county_modifier = {
+				modifier = port_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_verona = {
+				add_county_modifier = {
+				modifier = market_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_pavia = {
+				add_county_modifier = {
+				modifier = market_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_capua = {
+				add_county_modifier = {
+				modifier = port_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			#SPAGNA
+			##GLASS
+			title:c_barcelona = {
+				add_county_modifier = {
+				modifier = glass_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_caceres = {
+				add_county_modifier = {
+				modifier = glass_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##CLOTH
+			title:c_madrid = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_valencia = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_cuenca = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_olmedo = { #Segovia
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_teruel = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_calatayud = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##IRON
+			title:c_zaragoza = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_malagon = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_navarra = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_viscaya = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##WINE
+			title:c_sevilla = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_coimbra = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_porto = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_braganza = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_beja = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_alicante = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_tarragona = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_castellon = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##SALT
+			title:c_alcacer_do_sal = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_iviza = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_malaga = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_algeciras = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##WOOL
+			title:c_mallorca = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_menorca = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_valladolid = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_medellin = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_soria = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_cuellar = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_alto_aragon = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_urgell = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##SILK
+			title:c_almeria = {
+				add_county_modifier = {
+				modifier = silk_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##STONE
+			title:c_granada = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_viseu = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_monterrei = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_tudela = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_puigcerda = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##MARBLE
+			title:c_almader = {
+				add_county_modifier = {
+				modifier = marble_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_amaya = {
+				add_county_modifier = {
+				modifier = marble_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_avila = {
+				add_county_modifier = {
+				modifier = marble_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_albarracin = {
+				add_county_modifier = {
+				modifier = marble_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##DYES
+			title:c_elvas = {
+				add_county_modifier = {
+				modifier = dyes_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_silves = {
+				add_county_modifier = {
+				modifier = dyes_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_niebla = {
+				add_county_modifier = {
+				modifier = dyes_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_calatrava = {
+				add_county_modifier = {
+				modifier = dyes_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##LEATHER
+			title:c_cuenca = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_asturias_de_oviedo = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_andujar = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_leon = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_moura = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_lleida = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##WOOD
+			title:c_alcaraz = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_badajoz = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_coruna = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_plasencia = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_asturias_de_santillana = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_zaragoza = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			
+			#########################################
+			
+			#FRANCE
+			##GLASS
+			title:c_chartres = {
+				add_county_modifier = {
+				modifier = glass_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_rouen = {
+				add_county_modifier = {
+				modifier = glass_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_metz = {
+				add_county_modifier = {
+				modifier = glass_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##CLOTH
+			title:c_strassburg = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_yperen = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_bresse = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_penthievre = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_rennes = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_penthievre = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_rennes = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_bayeux = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_sable = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_anjou = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_saumur = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_montpellier = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_gevaudan = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##IRON
+			title:c_auvergne = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_clermont_sur_allier = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_vaucouleurs = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##WINE
+			title:c_provence = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_bordeaux = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_albret = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_perigord = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_agenais = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_quercy = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_carcassonne = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_albi = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_beziers = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_velay = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_tourraine = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_berry = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_reims = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_dijon = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_tonnerrois = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##SALT
+			title:c_aunis = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_montaigu = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_chalon = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_dole = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_besancon = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##WOOL
+			title:c_comminges = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_bigorre = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_armagnac = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_valentinois = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_forcalquier = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##STONE
+			title:c_foix = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_uses = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_viennois = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_lusignan = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_avalois = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_bouillon = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##DYES
+			title:c_toulouse = {
+				add_county_modifier = {
+				modifier = dyes_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_amiens = {
+				add_county_modifier = {
+				modifier = dyes_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##MARBLE
+			title:c_millau = {
+				add_county_modifier = {
+				modifier = marble_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_viviers = {
+				add_county_modifier = {
+				modifier = marble_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_bellac = {
+				add_county_modifier = {
+				modifier = marble_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##LEATHER
+			title:c_forez = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_nantes = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_alencon = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_orleans = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_bourbon = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##WOOD
+			title:c_marsan = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_thiers = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_limousin = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_la_marche = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_macon = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_blois = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_vermandois = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_neufchateau = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			
+			#########################################
+			
+			#ITALY
+			##GLASS
+			title:c_orbetello = {
+				add_county_modifier = {
+				modifier = glass_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_veneto = {
+				add_county_modifier = {
+				modifier = glass_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##CLOTH
+			title:c_lombardia = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_como = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_firenze = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_brescia = { #Segovia
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_bologna = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##IRON
+			title:c_gorz = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_cuneo = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_trent = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##WINE
+			title:c_modena = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_turin = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_monferrato = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_friuli = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_arezzo = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_siena = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_spoleto = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_teramo = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_lecce = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_bari = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_salerno = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_palermo = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_agrigento = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##WOOL
+			title:c_treviso = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##SALT
+			title:c_pula = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_ferrara = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_ravenna = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##SILK
+			title:c_rossano = {
+				add_county_modifier = {
+				modifier = silk_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##COPPER
+			title:c_tortoli = {
+				add_county_modifier = {
+				modifier = copper_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##STONE
+			title:c_logudoro = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_vecchio = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_abruzzi = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##MARBLE
+			title:c_lucca = {
+				add_county_modifier = {
+				modifier = marble_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_pisa = {
+				add_county_modifier = {
+				modifier = marble_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_luni = {
+				add_county_modifier = {
+				modifier = marble_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##LEATHER
+			title:c_orvieto = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##WOOD
+			title:c_lanciano = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_reggio_calabria = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			
+			#########################################
+			
+			#NETHERLANDS
+			##GLASS
+			title:c_antwerpen = {
+				add_county_modifier = {
+				modifier = glass_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##CLOTH
+			title:c_guines = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_cambray = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_liege = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_maastricht = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_holland = { 
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_zutphen = { 
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_groningen = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_munster = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_minden = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_brugge = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_nedersticht = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##IRON
+			title:c_luxembourg = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}  
+			##DYES
+			
+			title:c_guelders = {
+				add_county_modifier = {
+				modifier = dyes_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_hainaut = {
+				add_county_modifier = {
+				modifier = dyes_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}	
+			##SALT
+			title:c_zeeland = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_ostfriesland = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_tecklenburg = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##STONE
+			title:c_nassau = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##LEATHER
+			title:c_oldenburg = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_namur = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			
+			#########################################
+			
+			#ENGLAND
+			##CLOTH
+			title:c_middlesex = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_essex = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_cambridgeshire = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kent = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_northamptonshire = { 
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_west_riding = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_huntingdonshire = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_lothian = { 
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_suffolk = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			
+			##IRON
+			title:c_glamorgan = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_brecknockshire = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_sir_faesyfed = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_leicestershire = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_derby = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_teviotdale = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_argyll = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##SALT
+			title:c_cheshire = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##DYES
+			title:c_lincolnshire = {
+				add_county_modifier = {
+				modifier = dyes_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_somerset = {
+				add_county_modifier = {
+				modifier = dyes_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##WOOL
+			title:c_norfolk = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_devon = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_worcestershire = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_shropshire = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_lancashire = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_north_riding = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_westmorland = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_northumberland = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_annandale = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_galloway = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_carrick = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_ayrshire = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_inverness = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_atholl = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_oriel = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##COPPER
+			title:c_cornwall = {
+				add_county_modifier = {
+				modifier = copper_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_thomond = {
+				add_county_modifier = {
+				modifier = copper_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##STONE
+			title:c_breifne = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_moray = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_outer_hebrides = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_lanarkshire = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_caernarfonshire = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_cumberland = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##LEATHER
+			
+			title:c_carmarthenshire = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_buckinghamshire = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_dunbar = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_ulster = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##WOOD
+			title:c_nottinghamshire = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_bedford = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_wiltshire = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_hereford = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_maldwyn = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_durham = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_buchan = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_ailech = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_desmond = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			
+			#########################################
+			
+			#ALPI
+			##CLOTH
+			title:c_savoie = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_geneva = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			
+			##IRON
+			title:c_aargau = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_grisons = { 
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_sundgau = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_colmar = { 
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_villach = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kranj = { 
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_lienz = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##WOOL
+			title:c_zurich = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_alpsee = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			
+			#########################################
+			
+			#SCANDINAVIA
+			##FUR
+			title:c_onega = {
+				add_county_modifier = {
+				modifier = fur_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_vyangi = {
+				add_county_modifier = {
+				modifier = fur_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_pudozh = {
+				add_county_modifier = {
+				modifier = fur_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_onega_BJA = {
+				add_county_modifier = {
+				modifier = fur_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kholmogory = {
+				add_county_modifier = {
+				modifier = fur_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_velsk = {
+				add_county_modifier = {
+				modifier = fur_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kevrola = {
+				add_county_modifier = {
+				modifier = fur_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_sortavala = {
+				add_county_modifier = {
+				modifier = fur_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kakisalmi = {
+				add_county_modifier = {
+				modifier = fur_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_olavinlinna = {
+				add_county_modifier = {
+				modifier = fur_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_sysma = {
+				add_county_modifier = {
+				modifier = fur_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_tavasts = {
+				add_county_modifier = {
+				modifier = fur_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_harjadalen = {
+				add_county_modifier = {
+				modifier = fur_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_morarna = {
+				add_county_modifier = {
+				modifier = fur_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_jamtfir = {
+				add_county_modifier = {
+				modifier = fur_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_helgum = {
+				add_county_modifier = {
+				modifier = fur_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_ubmejeiednuo = {
+				add_county_modifier = {
+				modifier = fur_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_pite = {
+				add_county_modifier = {
+				modifier = fur_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_biton = {
+				add_county_modifier = {
+				modifier = fur_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_angermanland = {
+				add_county_modifier = {
+				modifier = fur_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_julevadno = {
+				add_county_modifier = {
+				modifier = fur_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_peaccam = {
+				add_county_modifier = {
+				modifier = fur_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_pedersore = {
+				add_county_modifier = {
+				modifier = fur_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kittila = {
+				add_county_modifier = {
+				modifier = fur_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kintus = {
+				add_county_modifier = {
+				modifier = fur_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_ter = {
+				add_county_modifier = {
+				modifier = fur_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_jovvkuj = {
+				add_county_modifier = {
+				modifier = fur_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_east_kiilt = {
+				add_county_modifier = {
+				modifier = fur_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_skolt = {
+				add_county_modifier = {
+				modifier = fur_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_sombio = {
+				add_county_modifier = {
+				modifier = fur_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_suondavara = {
+				add_county_modifier = {
+				modifier = fur_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_siggevara = {
+				add_county_modifier = {
+				modifier = fur_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_koutajoki = {
+				add_county_modifier = {
+				modifier = fur_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_povenets = {
+				add_county_modifier = {
+				modifier = fur_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##SALT
+			title:c_viena = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##IRON
+			title:c_nedenes = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_valdai = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kozelsk = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_varmland = { 
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_dalabergslagen = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_narke = { 
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##WOOL
+			title:c_gutland = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##LEATHER
+			title:c_sevede = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_skara = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_varend = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_nordmark = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##WOOD
+			title:c_agdeside = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kargopol = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_viipuri = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_dorpat = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_rusa = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_orsha = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kontupohja = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_halsingland = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kitka = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_njudung = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_vingulmork = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_gastrikland = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_hordalandi = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_namdalfylki = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_sjeltie = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_torne = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_messukyla = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_oulu = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			
+			#########################################
+			
+			#GRECIA
+			##CLOTH
+			title:c_adrianopolis = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_thessalonika = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kran = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##WINE
+			title:c_laconia = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_cephalonia = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_messenia = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_korinthos = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_achaia = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_naxos = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_veria = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##IRON
+			title:c_sredets = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##WOOL
+			title:c_thessalia = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_epeiros = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_antipatreia = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_arbanon = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_ohrid = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##SALT
+			title:c_burgas = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_dyrrachion = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##COPPER
+			title:c_strumica = {
+				add_county_modifier = {
+				modifier = copper_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_pirin = {
+				add_county_modifier = {
+				modifier = copper_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##STONE
+			title:c_boeotia = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_mosynopolis = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##MARBLE
+			title:c_metzovo = {
+				add_county_modifier = {
+				modifier = marble_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##LEATHER
+			title:c_skopje = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_thessaliotis = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##WOOD
+			title:c_somogy = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_krasso = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_csanad = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_torda = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_szatmar = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_buzau = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_bucuresti = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_zherkovo = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_vidin = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_hvosno = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_nicopolis = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			
+			#########################################
+			
+			#GERMANY
+			##CLOTH
+			title:c_trier = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_mainz = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_ansbach = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kempten = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_augsburg = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_munchen = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_ingolstadt = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_mecklenburg = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_luneburg = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_stendal = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_gleichenstein = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_hannover = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_ulm = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_osterland = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##DYES
+			title:c_mansfeld = {
+				add_county_modifier = {
+				modifier = dyes_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##IRON
+			title:c_puttlingen = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_parsberg = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_hallstatt = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_brandenburg = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_gottingen = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_brunswick = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_brene = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##WINE
+			title:c_speyer = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kaiserslautern = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_worms = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_frontenhausen = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_erbach = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_klingenberg = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_wurzburg = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_burgau = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}		
+			title:c_nordlingen = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##SALT
+			title:c_falkenstein = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_vaihingen = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_salzburg = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_berchtesgaden = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_hamburg = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_halberstadt = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##WOOL
+			title:c_nurnberg = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_magdeburg = { 
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_dessau = { 
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_paderborn = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_lippe = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_waldeck = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_wittenberg = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_naumburg = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##GLASS
+			title:c_breisgau = {
+				add_county_modifier = {
+				modifier = glass_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kassel = {
+				add_county_modifier = {
+				modifier = glass_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_regensburg = { 
+				add_county_modifier = {
+				modifier = glass_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_aachen = { 
+				add_county_modifier = {
+				modifier = glass_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##MARBLE
+			title:c_eschenlohe = {
+				add_county_modifier = {
+				modifier = marble_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##LEATHER
+			title:c_fyn = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_brno = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_vorbasse = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_werle = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_hildesheim = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_arnsberg = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_wiltberg = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_vogtland = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_linz = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_innsbruck = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##STONE
+			title:c_brixen = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_karnten = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			
+			title:c_leuchtenburg = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_litomerice = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_hohenberg = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##WOOD
+			title:c_viborg = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_aalborg = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_ditmarschen = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_dannenberg = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_orlamunde = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_sayn = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_marburg = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_durne = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_passau = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_plzen = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			
+			##########################################
+			
+			#BALCANI
+			##CLOTH
+			title:c_ljubljana = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_zagreb = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_usora = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##WINE
+			title:c_zagorje = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##WOOL
+			title:c_cetina = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_knin = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_zavrsje = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##SALT
+			title:c_ragusa = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_donjikraji = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_rama = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##COPPER
+			title:c_nikopolis = {
+				add_county_modifier = {
+				modifier = copper_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##STONE
+			title:c_podrinje = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_pset = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_naissus = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_vhrbosna = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##MARBLE
+			title:c_zadar = {
+				add_county_modifier = {
+				modifier = marble_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##LEATHER
+			title:c_hewes = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_rashka = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			
+			##########################################
+			
+			#BISANZIO
+			##SILK
+			title:c_byzantion = {
+				add_county_modifier = {
+				modifier = silk_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_aleppo = {
+				add_county_modifier = {
+				modifier = silk_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_prusa = {
+				add_county_modifier = {
+				modifier = silk_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##CLOTH
+			title:c_nikaea = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_mysia = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_phrygia = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_hadrianeia = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_alexandretta = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_antiocheia = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_colonea = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_edessa = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##WINE
+			title:c_nicosia = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_famagusta = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_cerasus = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##IRON
+			title:c_kyzistra = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+	
+			##COTTON
+			title:c_cilicia = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_pamphylia = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##DYES
+			title:c_bithynia = {
+				add_county_modifier = {
+				modifier = dyes_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_aeolis = {
+				add_county_modifier = {
+				modifier = dyes_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##GLASS
+			title:c_brysis = {
+				add_county_modifier = {
+				modifier = glass_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##WOOL
+			title:c_pompeiopolis = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_euchaita = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_charsianon = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_aintab = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_marash = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_samosata = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##SALT
+			title:c_caria = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_chonae = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_philomelium = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##COPPER
+			title:c_mesopotamia = {
+				add_county_modifier = {
+				modifier = copper_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_paphlagonia = {
+				add_county_modifier = {
+				modifier = copper_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##STONE
+			title:c_selge = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_pacatiana = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_cappadocia = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_sebasteia = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_lycandus = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##MARBLE
+			title:c_abydos = {
+				add_county_modifier = {
+				modifier = marble_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_ionia = {
+				add_county_modifier = {
+				modifier = marble_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_chios = {
+				add_county_modifier = {
+				modifier = marble_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_galatia_salutaris = {
+				add_county_modifier = {
+				modifier = marble_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##LEATHER
+			title:c_lycaonia = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_galatia = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_helenopontus = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_lydia = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_azysia = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_zela = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##WOOD
+			title:c_lycia = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_satala = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_melitene = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_turuberan = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			
+			##########################################
+			
+			#MIDDLE EAST
+			##CLOTH
+			title:c_yazd = {
+				add_county_modifier = {
+				modifier = silk_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_bam = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_baghdad = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_mosul = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_ninive = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_ahvaz = {
+				add_county_modifier = {
+				modifier = silk_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_masabadhan = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_hamadan = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_qazwin = {
+				add_county_modifier = {
+				modifier = silk_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_gilan = {
+				add_county_modifier = {
+				modifier = silk_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_ruyan = {
+				add_county_modifier = {
+				modifier = silk_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_mazandaran = {
+				add_county_modifier = {
+				modifier = silk_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_rayy = {
+				add_county_modifier = {
+				modifier = silk_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_qom = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_sardan = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_herat = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##SILK
+			title:c_mandestan = {
+				add_county_modifier = {
+				modifier = silk_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_shirvan = {
+				add_county_modifier = {
+				modifier = silk_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_tabriz = {
+				add_county_modifier = {
+				modifier = silk_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_svaneti = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kartli = {
+				add_county_modifier = {
+				modifier = silk_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##IRON
+			title:c_derbent = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_lar = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##WINE
+			title:c_urmiya = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_shiraz = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_istakhr = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_zanjan = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_abkhazia = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kakheti = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_klarjeti = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_vanand = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_dvin = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##WOOL
+			title:c_kufa = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_nihawand = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_shaki = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_hereti = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_bakriya = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_apahunik = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_vaspurakan = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_mayyafariqin = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_tall_basma = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_harran = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_upper_khabur = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_suenik = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_irbil = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_shahrazur = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kirkuk = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}	
+			title:c_damghan = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_baihaq = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_tun = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_sanij = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_samaiqan = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_ghur = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_az-dhahira = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_sanaa = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_asir = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##SALT
+			title:c_basra = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##COTTON
+			title:c_batiha = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_nih = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##DYES
+			title:c_acre = {
+				add_county_modifier = {
+				modifier = dyes_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_chandax = {
+				add_county_modifier = {
+				modifier = dyes_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_mugan = {
+				add_county_modifier = {
+				modifier = dyes_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_tbilisi = {
+				add_county_modifier = {
+				modifier = dyes_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##COPPER
+			title:c_sirjan = {
+				add_county_modifier = {
+				modifier = copper_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_duqm = {
+				add_county_modifier = {
+				modifier = copper_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##STONE
+			title:c_tao = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_luristan = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_bailaqan = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_bagrewand = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_juwain = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_shahre-babak = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_al-haditha = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_darmashan = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##MARBLE
+			title:c_kermanshah = {
+				add_county_modifier = {
+				modifier = marble_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_saimara = {
+				add_county_modifier = {
+				modifier = marble_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_ramhurmuz = {
+				add_county_modifier = {
+				modifier = marble_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_rivsharan = {
+				add_county_modifier = {
+				modifier = marble_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##LEATHER
+			title:c_dawraq = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_qadisiya = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_tib = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_khachen = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_maragha = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kurdistan = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_qumisha = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_bakharz = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_mafaza = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##SUGAR
+			title:c_sfax = {
+				add_county_modifier = {
+				modifier = sugar_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##WOOD
+			title:c_odishi = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_beirut = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_hulwan = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_takrit = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_nasibin = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			
+			#########################################
+			
+			#AFRICA
+			##CLOTH
+			title:c_cairo = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_labda = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_tripolitana = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_tunis = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_tangiers = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_fes = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_orania = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_tlemcen = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_meknes = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_mecca = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_medina = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##IRON
+			title:c_algier = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_baalbek = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##GLASS
+			title:c_homs = {
+				add_county_modifier = {
+				modifier = glass_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##WOOL
+			title:c_biskra = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_tudgha = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_west_qamuda = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_wajda = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_harrat_rahat = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##SALT
+			title:c_qashtiliya = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_souf = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_ashir = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_fayyum = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_farama = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_khaybar = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##COPPER
+			title:c_tadla = {
+				add_county_modifier = {
+				modifier = copper_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_intarta = {
+				add_county_modifier = {
+				modifier = copper_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_abivard = {
+				add_county_modifier = {
+				modifier = copper_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_tus = {
+				add_county_modifier = {
+				modifier = copper_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##STONE
+			title:c_muluya = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_satif = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_tabassa = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_qusayr = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kerak = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_firaun = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_shayzar = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##DYES
+			title:c_djerba = {
+				add_county_modifier = {
+				modifier = dyes_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_tamasna = {
+				add_county_modifier = {
+				modifier = dyes_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_sharkiya = {
+				add_county_modifier = {
+				modifier = dyes_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##MARBLE
+			title:c_jiruft = {
+				add_county_modifier = {
+				modifier = marble_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_tanas = {
+				add_county_modifier = {
+				modifier = marble_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_satfura = {
+				add_county_modifier = {
+				modifier = marble_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_sinai = {
+				add_county_modifier = {
+				modifier = marble_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_jabal_quzlum = {
+				add_county_modifier = {
+				modifier = marble_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_farafra = {
+				add_county_modifier = {
+				modifier = marble_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##COTTON
+			title:c_meroe = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_dongola = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_faras = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_atbara = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_qus = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_mansura = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_merv = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_zamm = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kishsh = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_west-tokharestan = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_al-buhaira = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_asyut = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_qaryatan = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_juwair = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_riqan = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##LEATHER
+			title:c_marrakesh = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_dakhla = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_annaba = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_bilizma = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_tahert = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_barqa = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_derna = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_tabuk = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_damascus = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			
+			########################################
+			
+			#EAST EUROPA
+			##MARBLE
+			title:c_hunyad = {
+				add_county_modifier = {
+				modifier = marble_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##AMBER
+			title:c_malbork = {
+				add_county_modifier = {
+				modifier = amber_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_slupsk = {
+				add_county_modifier = {
+				modifier = amber_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_konigsberg = {
+				add_county_modifier = {
+				modifier = amber_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_memel = {
+				add_county_modifier = {
+				modifier = amber_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_grobin = {
+				add_county_modifier = {
+				modifier = amber_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_danzig = {
+				add_county_modifier = {
+				modifier = amber_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##CLOTH
+			title:c_prenzlau = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_berlin = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_lubusz = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_gnieznienska = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_wschowska = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_wielunska = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_sandomierska = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_sieradzka = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_stezycka = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_lubelska = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_cherven = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_cottbus = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##WINE
+			title:c_tigheci = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_tmutarakan = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_lapusna = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_barlad = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kherson = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_dnipro = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_amstetten = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kerch = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_sankt_polten = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_freistadt = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_vienna = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_bihar = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kalos_limen = {
+				add_county_modifier = {
+				modifier = wine_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##IRON
+			title:c_schweibus = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_cabardinia = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_sacz = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_cieszyn = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_trenscen = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_fogaras = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##WOOL
+			title:c_samiran = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_beksima = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_maghas = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_minsk = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_constanta = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_chilia = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_barcasag = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_zarand = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##DYES
+			title:c_dresden = {
+				add_county_modifier = {
+				modifier = dyes_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kaliska = {
+				add_county_modifier = {
+				modifier = dyes_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_lviv = {
+				add_county_modifier = {
+				modifier = dyes_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##SALT
+			title:c_atyrau = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_qoshagyl = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_perekop = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_oleshye = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_khortytsia = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_wolgast = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_poznanska = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_krakowska = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_szekelyfold = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##STONE
+			title:c_peremyshl = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_marmaros = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##LEATHER
+			title:c_moskva = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_siauliai = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_leczycka = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_ruppin = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_gorlitz = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_tarnowska = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_havelberg = {
+				add_county_modifier = {
+				modifier = leather_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##WOOD
+			title:c_hradyzk = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_vologda = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_samar = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kletsk = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_volkovysk = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_allenstein = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_braslau = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_chornobyl = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_zvyahel = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_putyvl = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_hradec = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_landsberg = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_krajna = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_berent = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_cammin = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_radomska = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			###SAHARA
+			##CLOTH
+			title:c_kurmina = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_katsina = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##SALT
+			title:c_takrur = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_taghaza = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_arawan = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_bilma = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_takkeda = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##IRON
+			title:c_nyene = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_zaria = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_air = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_bandiagara = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##WOOL
+			title:c_mema = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_upper_gurma = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_awkar = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_oudalan = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##DYES
+			title:c_daura = {
+				add_county_modifier = {
+				modifier = dyes_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kano = {
+				add_county_modifier = {
+				modifier = dyes_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_rano = {
+				add_county_modifier = {
+				modifier = dyes_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_katagum = {
+				add_county_modifier = {
+				modifier = dyes_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_bono = {
+				add_county_modifier = {
+				modifier = dyes_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_worodugu = {
+				add_county_modifier = {
+				modifier = dyes_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##WOOD
+			title:c_gangaran = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_begho = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			
+			
+			
+			###INDIA
+			##WOOL
+			title:c_lumbini = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kathmandu = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_bhaktapur = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_yangwarok = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_naddula = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_vikramapura = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_nagauda = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_dadhipadra = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_godwad = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_aror = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_vijnot = {
+				add_county_modifier = {
+				modifier = wool_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##SILK
+			title:c_trigarta = {
+				add_county_modifier = {
+				modifier = silk_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_mudgagiri = {
+				add_county_modifier = {
+				modifier = silk_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_damin_i_koh = {
+				add_county_modifier = {
+				modifier = silk_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_saptagrama = {
+				add_county_modifier = {
+				modifier = silk_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_nabadwipa = {
+				add_county_modifier = {
+				modifier = silk_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_mansura = {
+				add_county_modifier = {
+				modifier = silk_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_madurai = {
+				add_county_modifier = {
+				modifier = silk_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_balkonda = {
+				add_county_modifier = {
+				modifier = silk_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_navasarika = {
+				add_county_modifier = {
+				modifier = silk_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_asni = {
+				add_county_modifier = {
+				modifier = silk_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kanyakubja = {
+				add_county_modifier = {
+				modifier = silk_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_hisar = {
+				add_county_modifier = {
+				modifier = silk_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##COPPER
+			title:c_sripatha = {
+				add_county_modifier = {
+				modifier = copper_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_ranthambore = {
+				add_county_modifier = {
+				modifier = copper_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_mohadavasaka = {
+				add_county_modifier = {
+				modifier = copper_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_canda = {
+				add_county_modifier = {
+				modifier = copper_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##CLOTH
+			title:c_shorkot = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_dipalpur = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_delhi = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_ayodhya = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_jaunpur = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_viraja = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kataka = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_samatata = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_gauda = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_bikrampur = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_vatsagulma = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_mulaka = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_medapata = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_sonda = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_surparaka = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_daman = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_khetaka = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_racakonda = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kalyani = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_korkai = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_cholamandalam = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_tiruvannamalai = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kanchipuram = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_vengipura = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_mandapika = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_suvarnapura = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_rothas = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_vodamayutja = {
+				add_county_modifier = {
+				modifier = cloth_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##MARBLE
+			title:c_kota = {
+				add_county_modifier = {
+				modifier = marble_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_chitrakut = {
+				add_county_modifier = {
+				modifier = marble_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##SALT
+			title:c_karor = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_dasapura = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_jharkand = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_valabhi = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kutch = {
+				add_county_modifier = {
+				modifier = salt_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##GLASS
+			title:c_gwalior = {
+				add_county_modifier = {
+				modifier = glass_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_varanasi = {
+				add_county_modifier = {
+				modifier = glass_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_magadha = {
+				add_county_modifier = {
+				modifier = glass_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##DYES
+			title:c_mahoba = {
+				add_county_modifier = {
+				modifier = dyes_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kalpi = {
+				add_county_modifier = {
+				modifier = dyes_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_prayaga = {
+				add_county_modifier = {
+				modifier = dyes_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_gaya = {
+				add_county_modifier = {
+				modifier = dyes_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_siwistan = {
+				add_county_modifier = {
+				modifier = dyes_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_sarangpur = {
+				add_county_modifier = {
+				modifier = dyes_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_vadodara = {
+				add_county_modifier = {
+				modifier = dyes_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_vardhamana = {
+				add_county_modifier = {
+				modifier = dyes_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_orangallu = {
+				add_county_modifier = {
+				modifier = dyes_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_chanderi = {
+				add_county_modifier = {
+				modifier = dyes_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_sthanisvara = {
+				add_county_modifier = {
+				modifier = dyes_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##COTTON
+			title:c_kondana = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_ashmaka = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_naldurg = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_sagar = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_idatarainadu = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_katehar = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_hastinapura = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kol = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_sambhal = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kali_kumaon = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_lakhnau = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_tummana = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_cakrakuta = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kusinagara = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_mahishaka = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_uchangidurga = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_renandu = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_gutti = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_asirgarh = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_ludrava = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_satyapura = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_tagadur = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_bhumilka = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_sarasvata_mandala = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_palakka = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_nellore = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_karmanta = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_suvarnagram = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_goalpara = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_acalapura = {
+				add_county_modifier = {
+				modifier = cotton_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##IRON
+			title:c_kalat = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_bannu = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_chauragarh = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_barasuru = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_khijjingakota = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kodalaka_mandala = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kambampet = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_talakad = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_penugonda = {
+				add_county_modifier = {
+				modifier = iron_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##STONE
+			title:c_garwhal = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_dang = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_kongu = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_taradavadi = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_ramagiri = {
+				add_county_modifier = {
+				modifier = stone_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			##WOOD
+			title:c_vaijayanti = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_burhanpur = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_sambalpur = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_tribandapura = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_naimisa = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_nallamala = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_swetaka_mandala = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_cumbum = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+			title:c_mosala = {
+				add_county_modifier = {
+				modifier = wood_resources_modifier
+				}
+				title_province = {
+				
+				}
+			}
+	}
+}
+
+random_yearly_everyone_pulse = {
+	events = {
+		resources.0001
+		#trade.0001
+		#trade.0015
+	}
+	
+}

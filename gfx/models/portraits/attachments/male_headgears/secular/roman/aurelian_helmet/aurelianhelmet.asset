@@ -1,0 +1,40 @@
+
+
+
+
+#################
+#	Meshes	#
+#################
+
+##### Unique -----------------------------------------
+
+
+pdxmesh = {
+	name = "aurelian_helmet_mesh"
+	file = "aurelian_helmet.mesh"
+
+	meshsettings = {
+		name = "aurelian_helmetShape"
+		index = 0
+		texture_diffuse = "aurelian_helmet_diffuse.dds"
+		texture_normal = "aurelian_helmet_normal.dds"
+		texture_specular = "aurelian_helmet_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+
+
+
+#################
+#	Entities	#
+#################
+
+
+
+##### Unique -----------------------------------------
+entity = {
+	name = "aurelian_helmet_entity"
+	pdxmesh = "aurelian_helmet_mesh"
+}

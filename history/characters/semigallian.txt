@@ -1,0 +1,81 @@
+﻿# Semigallians
+zemgale_01 = {  # Ruler
+	name = "Sabe"
+	dynasty = dynasty_zemgale
+	culture = aestian
+	religion = baltic_pagan
+	335.5.28 = {
+		birth = yes
+	}
+	377.10.19 = {
+		death = yes
+	}
+}
+
+zemgale_11 = {  # Ruler
+	name = "Milzas"
+	dynasty = dynasty_zemgale
+	culture = aestian
+	religion = baltic_pagan
+	father = zemgale_01
+	368.12.17 = {
+		birth = yes
+	}
+	436.8.11 = {
+		death = yes
+	}
+}
+
+zemgale_21 = {  # Ruler
+	name = "Rusins"
+	dynasty = dynasty_zemgale
+	culture = aestian
+	religion = baltic_pagan
+	father = zemgale_11
+	408.9.18 = {
+		birth = yes
+	}
+	474.1.26 = {
+		death = yes
+	}
+}
+
+zemgale_31 = {  # Ruler
+	name = "Imanta"
+	dynasty = dynasty_zemgale
+	culture = aestian
+	religion = baltic_pagan
+	father = zemgale_21
+	450.8.15 = {
+		birth = yes
+	}
+	485.9.28 = {
+		death = yes
+	}
+}
+zemgale_32 = {  # Ruler
+	name = "Imanta"
+	dynasty = dynasty_zemgale
+	culture = aestian
+	religion = baltic_pagan
+	father = zemgale_31
+	477.1.1 = {
+		birth = yes
+	}
+	525.1.1 = {
+		death = yes
+	}
+}
+zemgale_33 = {  # Ruler
+	name = "Sabe"
+	dynasty = dynasty_zemgale
+	culture = aestian
+	religion = baltic_pagan
+	father = zemgale_32
+	507.1.1 = {
+		birth = yes
+	}
+	555.1.1 = {
+		death = yes
+	}
+}

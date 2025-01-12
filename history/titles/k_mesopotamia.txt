@@ -1,0 +1,1159 @@
+﻿k_mesopotamia = {
+	361.1.1 = {	change_development_level = 5 }
+	532.1.1 = {	change_development_level = 6 }
+	768.1.1 = {	change_development_level = 7 }
+}
+
+d_samarra = {
+	361.1.1 = {	change_development_level = 6 }
+	532.1.1 = {	change_development_level = 7 }
+	768.1.1 = {	change_development_level = 8 }
+}
+
+c_samarra = {
+	#Bagdad
+	361.1.1 = {
+		holder = mesopotamia_20
+		de_jure_liege = d_baghdad
+		liege = e_persia
+		government = eranshar_government
+	}
+	467.1.1 = {
+		holder = mesopotamia_21
+	}
+	530.1.1={
+		holder=nachoragan_01
+	}
+	750.1.1 = {
+		liege = "d_baghdad"
+		holder = 34001
+	}
+	754.6.10 = {
+		holder = 34002
+	}
+
+}
+
+
+c_hulwan = {
+	#Bagdad
+	361.1.1 = {
+		holder = mesopotamia_20
+		de_jure_liege = d_baghdad
+		liege = e_persia
+		government = eranshar_government
+	}
+	467.1.1 = {
+		holder = mesopotamia_21
+	}
+		530.1.1={
+		holder=nachoragan_01
+	}
+	765.1.1 = {
+		liege = d_azerbaijan
+		holder = 188659
+	}
+}
+
+
+c_kirkuk = {
+	#Bagdad
+	361.1.1 = {
+		holder = mesopotamia_20
+		de_jure_liege = d_baghdad
+		liege = e_persia
+		government = eranshar_government
+	}
+	467.1.1 = {
+		
+		holder = mesopotamia_21
+	}
+		530.1.1={
+		holder=nachoragan_01
+	}
+	765.1.1 = {
+		liege = d_azerbaijan
+		holder = 188659
+	}
+	
+}
+
+
+c_takrit = {
+	#Bagdad
+	361.1.1 = {
+		holder = mesopotamia_20
+		de_jure_liege = d_baghdad
+		liege = e_persia
+		government = eranshar_government
+	}
+	467.1.1 = {
+		holder = mesopotamia_21
+	}
+	532.1.1={
+		holder=kardargan_01
+	}
+	765.1.1 = {
+		liege = d_diyarrabia
+		holder = 188643 # Khalid Barmakid
+	}
+
+}
+
+
+d_wasit = {
+	361.1.1 = {	change_development_level = 6 }
+	532.1.1 = {	change_development_level = 7 }
+	768.1.1 = {	change_development_level = 8 }
+	
+	661.2.28 = {
+		liege = e_arabia
+	}
+	
+	769.1.1 = {
+		holder = 188649
+	}
+	
+}
+
+
+c_wasit = {
+	#Bagdad
+	361.1.1 = {
+		holder = mesopotamia_22
+		de_jure_liege = d_baghdad
+		liege = e_persia
+		government = eranshar_government
+	}
+	467.1.1 = {
+		holder = mesopotamia_23
+	}
+	765.1.1 = {
+		liege = e_arabia
+		holder = 188609 # Muhammad b Sulayman b Ali
+	}
+}
+
+
+c_tib = {
+	#Bagdad
+	361.1.1 = {
+		holder = mesopotamia_22
+		de_jure_liege = d_baghdad
+		liege = e_persia
+		government = eranshar_government
+	}
+	467.1.1 = {
+		holder = mesopotamia_23
+	}
+	530.1.1={
+		holder=varaz_84
+	}
+	661.2.28 = {
+		liege = e_arabia
+	}
+	
+	768.1.1 = {
+		holder = 188631 # Khuzaymah b Khazmi (fictitious assignment)
+	}
+	
+	
+}
+
+k_lakhmid = {
+	328.1.1 = {
+		holder = lakhmid_03 #'Amr II
+		government = tribal_government
+	}
+	363.1.1 = {
+		holder = lakhmid_04 # Aws
+	}
+	368.1.1 = {
+		holder = lakhmid_05 # Imru' II
+	}
+	390.1.1 = {
+		holder = lakhmid_06 # Nu'man I
+	}
+	418.1.1 = {
+		holder = lakhmid_07 # Mundhir I
+	}
+	462.1.1 = {
+		holder = lakhmid_08 # Aswad
+	}
+	490.1.1 = {
+		holder = lakhmid_09 # Mundhir II
+	}
+	497.1.1 = {
+		holder = lakhmid_11 # Nu'man II
+	}
+	503.1.1 = {
+		holder = lakhmid_13 # Abu Yafur
+	}
+	505.1.1 = {
+		holder = lakhmid_14 # Mundhir III
+	}
+	554.1.1 = {
+		holder = lakhmid_15 # 'Amr III
+	}
+	569.1.1 = {
+		holder = lakhmid_16 # Qabus
+	}
+	573.1.1 = {
+		holder = lakhmid_17 # Mundhir IV
+	}
+	580.1.1 = {
+		holder = lakhmid_18 # Nu'man III
+	}
+	602.1.1 = {
+		holder = lakhmid_21 # Iyas
+	}
+	617.1.1 = {
+		holder = azadbehid_01 # Azadbeh
+	}
+	633.1.1 = {
+		holder = 0
+	}
+}
+d_kufa = {
+	328.1.1 = {
+		holder = lakhmid_03 #'Amr II
+		government = tribal_government
+	}
+	363.1.1 = {
+		holder = lakhmid_04 # Aws
+	}
+	368.1.1 = {
+		holder = lakhmid_05 # Imru' II
+	}
+	390.1.1 = {
+		holder = lakhmid_06 # Nu'man I
+	}
+	418.1.1 = {
+		holder = lakhmid_07 # Mundhir I
+	}
+	462.1.1 = {
+		holder = lakhmid_08 # Aswad
+	}
+	490.1.1 = {
+		holder = lakhmid_09 # Mundhir II
+	}
+	497.1.1 = {
+		holder = lakhmid_11 # Nu'man II
+	}
+	503.1.1 = {
+		holder = lakhmid_13 # Abu Yafur
+	}
+	505.1.1 = {
+		holder = lakhmid_14 # Mundhir III
+	}
+	554.1.1 = {
+		holder = lakhmid_15 # 'Amr III
+	}
+	569.1.1 = {
+		holder = lakhmid_16 # Qabus
+	}
+	573.1.1 = {
+		holder = lakhmid_17 # Mundhir IV
+	}
+	580.1.1 = {
+		holder = lakhmid_18 # Nu'man III
+	}
+	602.1.1 = {
+		holder = lakhmid_21 # Iyas
+	}
+	617.1.1 = {
+		holder = azadbehid_01 # Azadbeh
+	}
+	633.1.1 = {
+		holder = 0
+	}
+}
+
+c_kufa = {
+	361.1.1 = {	change_development_level = 10 }
+	532.1.1 = {	change_development_level = 11 }
+	768.1.1 = {	change_development_level = 12 }
+	328.1.1 = {
+		holder = lakhmid_03 #'Amr II
+		government = tribal_government
+	}
+	363.1.1 = {
+		holder = lakhmid_04 # Aws
+	}
+	368.1.1 = {
+		holder = lakhmid_05 # Imru' II
+	}
+	390.1.1 = {
+		holder = lakhmid_06 # Nu'man I
+	}
+	418.1.1 = {
+		holder = lakhmid_07 # Mundhir I
+	}
+	462.1.1 = {
+		holder = lakhmid_08 # Aswad
+	}
+	490.1.1 = {
+		holder = lakhmid_09 # Mundhir II
+	}
+	497.1.1 = {
+		holder = lakhmid_11 # Nu'man II
+	}
+	503.1.1 = {
+		holder = lakhmid_13 # Abu Yafur
+	}
+	505.1.1 = {
+		holder = lakhmid_14 # Mundhir III
+	}
+	554.1.1 = {
+		holder = lakhmid_15 # 'Amr III
+	}
+	569.1.1 = {
+		holder = lakhmid_16 # Qabus
+	}
+	573.1.1 = {
+		holder = lakhmid_17 # Mundhir IV
+	}
+	580.1.1 = {
+		holder = lakhmid_18 # Nu'man III
+	}
+	602.1.1 = {
+		holder = lakhmid_21 # Iyas
+	}
+	617.1.1 = {
+		holder = azadbehid_01 # Azadbeh
+	}
+	765.1.1 = {
+		liege = e_arabia
+		holder = 188609 # Muhammad b Sulayman b Ali
+	}
+	
+	
+}
+
+
+c_safata = {
+	328.1.1 = {
+		holder = lakhmid_03 #'Amr II
+		government = tribal_government
+	}
+	363.1.1 = {
+		holder = lakhmid_04 # Aws
+	}
+	368.1.1 = {
+		holder = lakhmid_05 # Imru' II
+	}
+	390.1.1 = {
+		holder = lakhmid_06 # Nu'man I
+	}
+	418.1.1 = {
+		holder = lakhmid_07 # Mundhir I
+	}
+	462.1.1 = {
+		holder = lakhmid_08 # Aswad
+	}
+	490.1.1 = {
+		holder = lakhmid_09 # Mundhir II
+	}
+	497.1.1 = {
+		holder = lakhmid_11 # Nu'man II
+	}
+	503.1.1 = {
+		holder = lakhmid_13 # Abu Yafur
+	}
+	505.1.1 = {
+		holder = lakhmid_14 # Mundhir III
+	}
+	554.1.1 = {
+		holder = lakhmid_15 # 'Amr III
+	}
+	569.1.1 = {
+		holder = lakhmid_16 # Qabus
+	}
+	573.1.1 = {
+		holder = lakhmid_17 # Mundhir IV
+	}
+	580.1.1 = {
+		holder = lakhmid_18 # Nu'man III
+	}
+	602.1.1 = {
+		holder = lakhmid_21 # Iyas
+	}
+	617.1.1 = {
+		holder = azadbehid_01 # Azadbeh
+	}
+	765.1.1 = {
+		liege = e_arabia
+		holder = 188609 # Muhammad b Sulayman b Ali
+	}
+	
+	
+}
+
+
+c_qadisiya = {
+	328.1.1 = {
+		holder = lakhmid_03 #'Amr II
+		government = tribal_government
+		
+	}
+	363.1.1 = {
+		holder = lakhmid_04 # Aws
+	}
+	368.1.1 = {
+		holder = lakhmid_05 # Imru' II
+	}
+	390.1.1 = {
+		holder = lakhmid_06 # Nu'man I
+	}
+	418.1.1 = {
+		holder = lakhmid_07 # Mundhir I
+	}
+	462.1.1 = {
+		holder = lakhmid_08 # Aswad
+	}
+	490.1.1 = {
+		holder = lakhmid_09 # Mundhir II
+	}
+	497.1.1 = {
+		holder = lakhmid_11 # Nu'man II
+	}
+	503.1.1 = {
+		holder = lakhmid_13 # Abu Yafur
+	}
+	505.1.1 = {
+		holder = lakhmid_14 # Mundhir III
+	}
+	554.1.1 = {
+		holder = lakhmid_15 # 'Amr III
+	}
+	569.1.1 = {
+		holder = lakhmid_16 # Qabus
+	}
+	573.1.1 = {
+		holder = lakhmid_17 # Mundhir IV
+	}
+	580.1.1 = {
+		holder = lakhmid_18 # Nu'man III
+	}
+	602.1.1 = {
+		holder = lakhmid_21 # Iyas
+	}
+	617.1.1 = {
+		holder = azadbehid_01 # Azadbeh
+	}
+	765.1.1 = {
+		liege = e_arabia
+		holder = 188609 # Muhammad b Sulayman b Ali
+	}
+}
+
+
+c_batiha = {
+	#Bagdad
+	361.1.1 = {
+		holder = mesopotamia_22
+		de_jure_liege = d_baghdad
+		liege = e_persia
+		government = eranshar_government
+	}
+	467.1.1 = {
+		holder = mesopotamia_23
+	}
+	750.1.1 = {
+		liege = d_wasit
+	}
+	
+	768.1.1 = {
+		holder = 188665
+	}
+	
+
+}
+
+
+c_akhadid = {
+	328.1.1 = {
+		holder = lakhmid_03 #'Amr II
+		government = tribal_government
+	}
+	363.1.1 = {
+		holder = lakhmid_04 # Aws
+	}
+	368.1.1 = {
+		holder = lakhmid_05 # Imru' II
+	}
+	390.1.1 = {
+		holder = lakhmid_06 # Nu'man I
+	}
+	418.1.1 = {
+		holder = lakhmid_07 # Mundhir I
+	}
+	462.1.1 = {
+		holder = lakhmid_08 # Aswad
+	}
+	490.1.1 = {
+		holder = lakhmid_09 # Mundhir II
+	}
+	497.1.1 = {
+		holder = lakhmid_11 # Nu'man II
+	}
+	503.1.1 = {
+		holder = lakhmid_13 # Abu Yafur
+	}
+	505.1.1 = {
+		holder = lakhmid_14 # Mundhir III
+	}
+	554.1.1 = {
+		holder = lakhmid_15 # 'Amr III
+	}
+	569.1.1 = {
+		holder = lakhmid_16 # Qabus
+	}
+	573.1.1 = {
+		holder = lakhmid_17 # Mundhir IV
+	}
+	580.1.1 = {
+		holder = lakhmid_18 # Nu'man III
+	}
+	602.1.1 = {
+		holder = lakhmid_21 # Iyas
+	}
+	617.1.1 = {
+		holder = azadbehid_01 # Azadbeh
+	}
+	765.1.1 = {
+		liege = e_arabia
+		holder = 188609 # Muhammad b Sulayman b Ali
+	}
+	
+	
+}
+
+
+c_waqisa = {
+	328.1.1 = {
+		holder = lakhmid_03 #'Amr II
+		government = tribal_government
+	}
+	363.1.1 = {
+		holder = lakhmid_04 # Aws
+	}
+	368.1.1 = {
+		holder = lakhmid_05 # Imru' II
+	}
+	390.1.1 = {
+		holder = lakhmid_06 # Nu'man I
+	}
+	418.1.1 = {
+		holder = lakhmid_07 # Mundhir I
+	}
+	462.1.1 = {
+		holder = lakhmid_08 # Aswad
+	}
+	490.1.1 = {
+		holder = lakhmid_09 # Mundhir II
+	}
+	497.1.1 = {
+		holder = lakhmid_11 # Nu'man II
+	}
+	503.1.1 = {
+		holder = lakhmid_13 # Abu Yafur
+	}
+	505.1.1 = {
+		holder = lakhmid_14 # Mundhir III
+	}
+	554.1.1 = {
+		holder = lakhmid_15 # 'Amr III
+	}
+	569.1.1 = {
+		holder = lakhmid_16 # Qabus
+	}
+	573.1.1 = {
+		holder = lakhmid_17 # Mundhir IV
+	}
+	580.1.1 = {
+		holder = lakhmid_18 # Nu'man III
+	}
+	602.1.1 = {
+		holder = lakhmid_21 # Iyas
+	}
+	617.1.1 = {
+		holder = azadbehid_01 # Azadbeh
+	}
+	765.1.1 = {
+		liege = e_arabia
+		holder = 188609 # Muhammad b Sulayman b Ali
+	}
+	
+	
+}
+
+
+d_basra = {
+	361.1.1 = {	change_development_level = 6 }
+	532.1.1 = {	change_development_level = 7 }
+	768.1.1 = {	change_development_level = 8 }
+	# Sassanian Shenanigans
+	240.1.1 = {
+		holder = sassanid_16 #Mihrshah Meshanshah, son of Adreshir I
+		liege = e_persia
+		government = eranshar_government
+	}
+	250.1.1 = {
+		holder = sassanid_002 #Shapur Meshanshah, son of Shapur I
+	}
+	#Bagdad
+	361.1.1 = {
+		holder = mesopotamia_24
+	}
+	467.1.1 = {
+		holder = mesopotamia_25
+	}
+	530.1.1={
+		holder=varaz_79
+	}
+}
+
+
+c_basra = {
+	361.1.1 = {	change_development_level = 10 }
+	532.1.1 = {	change_development_level = 11 }
+	768.1.1 = {	change_development_level = 12 }
+	#Bagdad
+	361.1.1 = {
+		holder = mesopotamia_24
+		liege = e_persia
+		government = eranshar_government
+	}
+	467.1.1 = {
+		holder = mesopotamia_25
+	}
+	764.1.1 = {
+		liege = e_arabia
+		holder = 188608 # Jabir b Tubah al-Kibani
+	}
+	
+	
+}
+
+
+c_ubulla = {
+	#Bagdad
+	361.1.1 = {
+		holder = mesopotamia_24
+		liege = e_persia
+		government = eranshar_government
+	}
+	467.1.1 = {
+		holder = mesopotamia_25
+	}
+	765.1.1 = {
+		liege = e_arabia
+		holder = 188609 # Muhammad b Sulayman b Ali
+	}
+	
+	
+}
+
+
+c_rusafa = {
+	#Bagdad
+	361.1.1 = {
+		holder = mesopotamia_24
+		liege = e_persia
+		government = eranshar_government
+	}
+	467.1.1 = {
+		holder = mesopotamia_25
+	}
+	661.2.28 = {
+		liege = e_arabia
+	}
+	
+	768.1.1 = {
+		holder = 188630 # Khazim b Khuzaymah (fictitious assignment)
+	}
+	
+	
+}
+
+
+d_baghdad = {
+	361.1.1 = {	change_development_level = 8 }
+	532.1.1 = {	change_development_level = 9 }
+	768.1.1 = {	change_development_level = 10 }
+	
+	224.1.1 = {
+		holder = 159601 # Adrashir I
+		government = eranshar_government
+	}
+	242.1.1 = {
+		holder = 180605 # Shapur I
+	}
+	270.1.1 = {
+		holder = 180606 # Hormazd I
+	}
+	271.6.1 = {
+		holder = 180607 # Bahram I
+	}
+	274.1.1 = {
+		holder = 180608 # Bahram II
+	}
+	293.1.1 = {
+		holder = 180609 # Bahram III
+	}
+	293.4.1 = {
+		holder = 180610 # Naresh I
+	}
+	302.1.1 = {
+		holder = 180611 # Hormazd II
+	}
+	309.1.1 = {
+		holder = 180617 # Shapur II
+	}
+	379.1.1 = {
+		holder = 180614 # Adreshir II
+	}
+	383.1.1 = {
+		holder = 180616 # Shapur III
+	}
+	388.1.1 = {
+		holder = 180618 # Bahram IV
+	}
+	399.1.1 = {
+		holder = 180619 # Yazdegerd I
+	}
+	421.1.1 = {
+		holder = 180620 # Bahram V
+	}
+	438.1.1 = {
+		holder = 180621 # Yazdegerd II
+	}
+	457.1.1 = {
+		holder = 180622 # Hormazd III
+	}
+	459.1.1 = {
+		holder = 180624 # Peroz I
+	}
+	#Bagdad
+	750.1.1 = {
+		holder = 34001
+	}
+	754.6.10 = {
+		holder = 34002
+	}
+}
+
+c_ctesiphon = {
+	224.1.1 = {
+		holder = 159601 # Adrashir I
+		government = eranshar_government
+	}
+	242.1.1 = {
+		holder = 180605 # Shapur I
+	}
+	270.1.1 = {
+		holder = 180606 # Hormazd I
+	}
+	271.6.1 = {
+		holder = 180607 # Bahram I
+	}
+	274.1.1 = {
+		holder = 180608 # Bahram II
+	}
+	293.1.1 = {
+		holder = 180609 # Bahram III
+	}
+	293.4.1 = {
+		holder = 180610 # Naresh I
+	}
+	302.1.1 = {
+		holder = 180611 # Hormazd II
+	}
+	309.1.1 = {
+		holder = 180617 # Shapur II
+	}
+	379.1.1 = {
+		holder = 180614 # Adreshir II
+	}
+	383.1.1 = {
+		holder = 180616 # Shapur III
+	}
+	388.1.1 = {
+		holder = 180618 # Bahram IV
+	}
+	399.1.1 = {
+		holder = 180619 # Yazdegerd I
+	}
+	421.1.1 = {
+		holder = 180620 # Bahram V
+	}
+	438.1.1 = {
+		holder = 180621 # Yazdegerd II
+	}
+	457.1.1 = {
+		holder = 180622 # Hormazd III
+	}
+	459.1.1 = {
+		holder = 180624 # Peroz I
+	}
+	#Bagdad
+	361.1.1 = {	change_development_level = 18 }
+	532.1.1 = {	change_development_level = 19 }
+	768.1.1 = {	change_development_level = 20 }
+	750.1.1 = {
+		liege = "d_baghdad"
+		holder = 34001
+	}
+	754.6.10 = {
+		holder = 34002
+	}
+
+}
+
+c_baghdad = {
+	224.1.1 = {
+		holder = 159601 # Adrashir I
+		effect = { set_title_name = b_humaniya }
+	}
+	242.1.1 = {
+		holder = 180605 # Shapur I
+	}
+	270.1.1 = {
+		holder = 180606 # Hormazd I
+	}
+	271.6.1 = {
+		holder = 180607 # Bahram I
+	}
+	274.1.1 = {
+		holder = 180608 # Bahram II
+	}
+	293.1.1 = {
+		holder = 180609 # Bahram III
+	}
+	293.4.1 = {
+		holder = 180610 # Naresh I
+	}
+	302.1.1 = {
+		holder = 180611 # Hormazd II
+	}
+	309.1.1 = {
+		holder = 180617 # Shapur II
+	}
+	379.1.1 = {
+		holder = 180614 # Adreshir II
+	}
+	383.1.1 = {
+		holder = 180616 # Shapur III
+	}
+	388.1.1 = {
+		holder = 180618 # Bahram IV
+	}
+	399.1.1 = {
+		holder = 180619 # Yazdegerd I
+	}
+	421.1.1 = {
+		holder = 180620 # Bahram V
+	}
+	438.1.1 = {
+		holder = 180621 # Yazdegerd II
+	}
+	457.1.1 = {
+		holder = 180622 # Hormazd III
+	}
+	459.1.1 = {
+		holder = 180624 # Peroz I
+	}
+	#Bagdad
+	361.1.1 = {	change_development_level = 18 }
+	532.1.1 = {	change_development_level = 19 }
+	768.1.1 = {	change_development_level = 20 }
+	750.1.1 = {
+		liege = "d_baghdad"
+		holder = 34001
+	}
+	754.6.10 = {
+		holder = 34002
+	}
+
+}
+
+
+c_iskaf = { # Let's pretend that this is Mahoza :')
+	20.1.1 = {
+		liege = e_persia
+		holder = exilarch_01
+	}
+	100.1.1 = {
+		holder = exilarch_02
+	}
+	120.1.1 = {
+		holder = exilarch_03
+	}
+	140.1.1 = {
+		holder = exilarch_04
+	}
+	160.1.1 = {
+		holder = exilarch_05
+	}
+	180.1.1 = {
+		holder = exilarch_06
+	}
+	200.1.1 = {
+		holder = exilarch_07
+	}
+	220.1.1 = {
+		holder = exilarch_08
+	}
+	240.1.1 = {
+		holder = exilarch_09
+	}
+	260.1.1 = {
+		holder = exilarch_10
+	}
+	280.1.1 = {
+		holder = exilarch_11
+	}
+	300.1.1 = {
+		holder = exilarch_12
+	}
+	320.1.1 = {
+		holder = exilarch_13
+	}
+	340.1.1 = {
+		holder = exilarch_kahana_i
+	}
+	360.1.1 = {
+		holder = exilarch_huna_iv
+	}
+	380.1.1 = {
+		holder = exilarch_pahda
+	}
+	391.1.1 = {
+		holder = exilarch_mar_zutra_i
+	}
+	420.1.1 = {
+		holder = exilarch_merimar
+	}
+	440.1.1 = {
+		holder = exilarch_kahana_ii
+	}
+	479.1.1 = {
+		holder = exilarch_huna_v
+	}
+	490.1.1 = {
+		holder = exilarch_mar_zutra_ii
+	}
+	502.1.1 = {
+		holder = exilarch_huna_vi
+	}
+	508.1.1 = {
+		holder = exilarch_mar_ahunai
+	}
+	#Bagdad
+	750.1.1 = {
+		liege = "d_baghdad"
+		holder = 34001
+	}
+	754.6.10 = {
+		holder = 34002
+	}
+}
+
+
+c_anbar = {
+	224.1.1 = {
+		holder = 159601 # Adrashir I
+		government = eranshar_government
+	}
+	242.1.1 = {
+		holder = 180605 # Shapur I
+	}
+	270.1.1 = {
+		holder = 180606 # Hormazd I
+	}
+	271.6.1 = {
+		holder = 180607 # Bahram I
+	}
+	274.1.1 = {
+		holder = 180608 # Bahram II
+	}
+	293.1.1 = {
+		holder = 180609 # Bahram III
+	}
+	293.4.1 = {
+		holder = 180610 # Naresh I
+	}
+	302.1.1 = {
+		holder = 180611 # Hormazd II
+	}
+	309.1.1 = {
+		holder = 180617 # Shapur II
+	}
+	379.1.1 = {
+		holder = 180614 # Adreshir II
+	}
+	383.1.1 = {
+		holder = 180616 # Shapur III
+	}
+	388.1.1 = {
+		holder = 180618 # Bahram IV
+	}
+	399.1.1 = {
+		holder = 180619 # Yazdegerd I
+	}
+	421.1.1 = {
+		holder = 180620 # Bahram V
+	}
+	438.1.1 = {
+		holder = 180621 # Yazdegerd II
+	}
+	457.1.1 = {
+		holder = 180622 # Hormazd III
+	}
+	459.1.1 = {
+		holder = 180624 # Peroz I
+	}
+	#Bagdad
+	750.1.1 = {
+		liege = "d_baghdad"
+		holder = 34001
+	}
+	754.6.10 = {
+		holder = 34002
+	}
+}
+
+
+c_karbala = {
+	224.1.1 = {
+		holder = 159601 # Adrashir I
+		government = eranshar_government
+	}
+	242.1.1 = {
+		holder = 180605 # Shapur I
+	}
+	270.1.1 = {
+		holder = 180606 # Hormazd I
+	}
+	271.6.1 = {
+		holder = 180607 # Bahram I
+	}
+	274.1.1 = {
+		holder = 180608 # Bahram II
+	}
+	293.1.1 = {
+		holder = 180609 # Bahram III
+	}
+	293.4.1 = {
+		holder = 180610 # Naresh I
+	}
+	302.1.1 = {
+		holder = 180611 # Hormazd II
+	}
+	309.1.1 = {
+		holder = 180617 # Shapur II
+	}
+	379.1.1 = {
+		holder = 180614 # Adreshir II
+	}
+	383.1.1 = {
+		holder = 180616 # Shapur III
+	}
+	388.1.1 = {
+		holder = 180618 # Bahram IV
+	}
+	399.1.1 = {
+		holder = 180619 # Yazdegerd I
+	}
+	421.1.1 = {
+		holder = 180620 # Bahram V
+	}
+	438.1.1 = {
+		holder = 180621 # Yazdegerd II
+	}
+	457.1.1 = {
+		holder = 180622 # Hormazd III
+	}
+	459.1.1 = {
+		holder = 180624 # Peroz I
+	}
+	#Bagdad
+	750.1.1 = {
+		liege = "d_baghdad"
+		holder = 34001
+	}
+	754.6.10 = {
+		holder = 34002
+	}
+
+}
+
+
+c_badaraya = {
+	224.1.1 = {
+		holder = 159601 # Adrashir I
+		government = eranshar_government
+	}
+	242.1.1 = {
+		holder = 180605 # Shapur I
+	}
+	270.1.1 = {
+		holder = 180606 # Hormazd I
+	}
+	271.6.1 = {
+		holder = 180607 # Bahram I
+	}
+	274.1.1 = {
+		holder = 180608 # Bahram II
+	}
+	293.1.1 = {
+		holder = 180609 # Bahram III
+	}
+	293.4.1 = {
+		holder = 180610 # Naresh I
+	}
+	302.1.1 = {
+		holder = 180611 # Hormazd II
+	}
+	309.1.1 = {
+		holder = 180617 # Shapur II
+	}
+	379.1.1 = {
+		holder = 180614 # Adreshir II
+	}
+	383.1.1 = {
+		holder = 180616 # Shapur III
+	}
+	388.1.1 = {
+		holder = 180618 # Bahram IV
+	}
+	399.1.1 = {
+		holder = 180619 # Yazdegerd I
+	}
+	421.1.1 = {
+		holder = 180620 # Bahram V
+	}
+	438.1.1 = {
+		holder = 180621 # Yazdegerd II
+	}
+	457.1.1 = {
+		holder = 180622 # Hormazd III
+	}
+	459.1.1 = {
+		holder = 180624 # Peroz I
+	}
+	530.1.1={
+		holder=babak_01
+	}
+	
+	#Bagdad
+	750.1.1 = {
+		liege = "d_baghdad"
+		holder = 34001
+	}
+	754.6.10 = {
+		holder = 34002
+	}
+}
+

@@ -1,0 +1,2481 @@
+﻿k_hungary = {
+	361.1.1 = { change_development_level = 1 }
+	768.1.1 = { change_development_level = 2 }
+	434.1.1 = {
+		holder = 990006
+	}
+	570.1.1 = {
+		holder = avar_008
+	}
+	602.1.1 = {
+		holder = avar_009
+	}
+	617.1.1 = {
+		holder = 146154
+	}
+	675.1.1 = {
+		holder = 146155
+	}
+	707.1.1 = {
+		holder = 146156
+	}
+	714.1.1 = {
+		holder = 146157
+	}
+	718.1.1 = {
+		holder = 146158
+	}
+	721.1.1 = {
+		holder = 146159
+	}
+	731.1.1 = {
+		holder = 146160
+	}
+	733.1.1 = {
+		holder = 146161
+	}
+	743.1.1 = {
+		holder = 146162
+	}
+	748.1.1 = {
+		holder = 146163
+	}
+	756.1.1 = {
+		holder = 146165
+	}
+	767.1.1 = {
+		holder = 194006
+	}
+}
+
+d_visegrad = {
+	## Ostrogothic Empire
+	#476.1.1 = {
+		#holder = 992016
+	#}
+}
+
+c_visegrad = {
+	## Roman Imperial Province
+	361.1.1 = {
+		liege = k_pannonia
+		holder = hungary_01
+		de_jure_liege = d_pannonia_valeria
+	}
+	395.1.1 = {
+		holder = hungary_04
+	}
+	## Ostrogothic Empire
+	476.1.1 = {
+		#holder = hungary_07
+		holder = heruli_02
+		liege = k_heruli
+		government = feudal_government
+		de_jure_liege = d_visegrad
+	}
+	#Lombards
+	500.1.1 = {
+		holder = langobard_misc_003 #Gacco
+		liege = d_lombards
+	}
+	685.1.1 = {
+		liege = "k_hungary"
+		holder = 146154
+		government = tribal_government
+	}
+	701.1.1 = {
+		holder = 146155
+	}
+	707.1.1 = {
+		holder = 146156
+	}
+	714.1.1 = {
+		holder = 146157
+	}
+	718.1.1 = {
+		holder = 146158
+	}
+	721.1.1 = {
+		holder = 146159
+	}
+	731.1.1 = {
+		holder = 146160
+	}
+	733.1.1 = {
+		holder = 146161
+	}
+	743.1.1 = {
+		holder = 146162
+	}
+	748.1.1 = {
+		holder = 146163
+	}
+	756.1.1 = {
+		holder = 146165
+	}
+	757.1.1 = {
+		holder = 146171
+	}
+}
+
+c_komarom = {
+	## Vandal Tribes
+	350.1.1 = {
+		holder = vandals_001
+		government = tribal_government
+		de_jure_liege = d_bacs
+	}
+	434.1.1 = {
+		holder = 990006
+	}
+	476.1.1 = {
+		holder = heruli_01
+		liege = k_heruli
+	}
+	510.1.1 = {
+		holder = yazige_misc_001
+		liege = k_gepids
+	}
+	685.1.1 = {
+		liege = "k_hungary"
+		holder = 146156
+		government = tribal_government
+	}
+	707.1.1 = {
+		holder = 146160
+	}
+	731.1.1 = {
+		holder = 146165
+	}
+	756.1.1 = {
+		holder = 146170
+	}
+}
+
+c_esztergom = {
+	## Quadi Tribes
+	350.1.1 = {
+		holder = quadi_031
+		liege = k_quadi
+		government = tribal_government
+	}
+	361.1.1 = {
+		liege = k_quadi
+	}
+	## Heruli tribes
+	434.1.1 = {
+		holder = 995001
+		liege = k_hungary
+	}
+	450.1.1 = {
+		holder = 995002 # Scirians
+		government = tribal_government
+	}
+	## Langobardi
+	520.1.1 = {
+		holder = 190122 # Audoin
+	}
+	741.1.1 = {
+		liege = "d_moravia"
+		holder = 187000
+	}
+	764.1.1 = {
+		holder = 146176
+	}
+}
+
+c_szekesfehervar = {
+	361.1.1 = {	change_development_level = 2 }
+	532.1.1 = {	change_development_level = 3 }
+	768.1.1 = {	change_development_level = 4 }
+	## Roman Imperial Province
+	361.1.1 = {
+		liege = k_pannonia
+		holder = hungary_01
+		de_jure_liege = d_pannonia_valeria
+	}
+	395.1.1 = {
+		holder = hungary_04
+	}
+	## Ostrogothic Empire
+	476.1.1 = {
+		#holder = hungary_07
+		holder = heruli_02
+		liege = k_heruli
+		liege = k_ostrogoths
+		government = feudal_government
+		de_jure_liege = d_visegrad
+	}
+	493.1.1 = {
+		liege = k_ostrogoths
+	}
+	# 500.1.1 = {
+	# 	holder = hungary_09
+	# }
+	#Lombards
+	500.1.1 = {
+		holder = langobard_misc_003 #Gacco
+		liege = d_lombards
+	}
+	685.1.1 = {
+		liege = "k_hungary"
+		holder = 146154
+	}
+	701.1.1 = {
+		holder = 146155
+	}
+	707.1.1 = {
+		holder = 146156
+	}
+	714.1.1 = {
+		holder = 146157
+	}
+	718.1.1 = {
+		holder = 146158
+	}
+	721.1.1 = {
+		holder = 146159
+	}
+	731.1.1 = {
+		holder = 146160
+	}
+	733.1.1 = {
+		holder = 146161
+	}
+	743.1.1 = {
+		holder = 146162
+	}
+	748.1.1 = {
+		holder = 146163
+	}
+	756.1.1 = {
+		holder = 146165
+	}
+	757.1.1 = {
+		holder = 146171
+	}
+}
+
+c_hewes = {
+	## Vandal Tribes
+	350.1.1 = {
+		holder = vandals_001
+		government = tribal_government
+		de_jure_liege = d_bacs
+	}
+	# Sarmatian tribes
+	434.1.1 = {
+		holder = yazige_01
+		liege = k_hungary
+	}
+	470.1.1 = {
+		holder = heruli_01
+		liege = k_heruli
+	}
+	510.1.1 = {
+		holder = yazige_03
+		liege = k_gepids
+	}
+	685.1.1 = {
+		liege = "k_hungary"
+		holder = 146156
+		government = tribal_government
+	}
+	707.1.1 = {
+		holder = 146160
+	}
+	731.1.1 = {
+		holder = 146165
+	}
+	756.1.1 = {
+		holder = 146170
+	}
+}
+
+d_somogy = {
+	## Roman Imperial Province
+	361.1.1 = { change_development_level = 3 }
+	361.1.1 = {
+		liege = k_pannonia
+		holder = hungary_02
+		de_jure_liege = k_pannonia
+		name = PANNONIA_PRIMA
+	}
+	476.1.1 = {
+		de_jure_liege = k_hungary
+		reset_name = yes
+	}
+}
+
+c_somogy = {
+	## Roman Imperial Province
+	361.1.1 = {
+		liege = k_pannonia
+		holder = hungary_02
+	}
+	## Ostrogothic Empire
+	476.1.1 = {
+		#holder = 992016
+		government = feudal_government
+		holder = heruli_05
+		liege = k_heruli
+	}
+	## Langobardi
+	500.1.1 = {
+		holder = 993008 #Wacho
+	}
+	685.1.1 = {
+		liege = "k_hungary"
+		holder = 146154
+	}
+	701.1.1 = {
+		holder = 146155
+	}
+	707.1.1 = {
+		holder = 146156
+	}
+	714.1.1 = {
+		holder = 146157
+	}
+	718.1.1 = {
+		holder = 146158
+	}
+	721.1.1 = {
+		holder = 146159
+	}
+	731.1.1 = {
+		holder = 146160
+	}
+	733.1.1 = {
+		holder = 146161
+	}
+	743.1.1 = {
+		holder = 146162
+	}
+	748.1.1 = {
+		holder = 146163
+	}
+	756.1.1 = {
+		holder = 146165
+	}
+	757.1.1 = {
+		holder = 146171
+	}
+}
+
+c_kolon = {
+	## Roman Imperial Province
+	361.1.1 = {
+		liege = k_pannonia
+		holder = hungary_02
+	}
+	## Ostrogothic Empire
+	476.1.1 = {
+		#holder = 992016
+		#government = feudal_government
+		holder = heruli_05
+		liege = k_heruli
+	}
+	## Langobardi
+	500.1.1 = {
+		holder = 993008 #Wacho
+	}
+	685.1.1 = {
+		liege = "k_hungary"
+		holder = 146154
+	}
+	701.1.1 = {
+		holder = 146155
+	}
+	707.1.1 = {
+		holder = 146156
+	}
+	714.1.1 = {
+		holder = 146157
+	}
+	718.1.1 = {
+		holder = 146158
+	}
+	721.1.1 = {
+		holder = 146159
+	}
+	731.1.1 = {
+		holder = 146160
+	}
+	733.1.1 = {
+		holder = 146161
+	}
+	743.1.1 = {
+		holder = 146162
+	}
+	748.1.1 = {
+		holder = 146163
+	}
+	756.1.1 = {
+		holder = 146165
+	}
+	757.1.1 = {
+		holder = 146171
+	}
+}
+
+c_tolna = {
+	## Roman Imperial Province
+	361.1.1 = {
+		liege = k_pannonia
+		holder = hungary_01
+		de_jure_liege = d_pannonia_valeria
+	}
+	## Ostrogothic Empire
+	#476.1.1 = {
+		#holder = 992016
+		#government = feudal_government
+		#de_jure_liege = d_visegrad
+	#}
+	476.1.1 = {
+		government = feudal_government
+		de_jure_liege = d_visegrad
+		holder = heruli_04
+		liege = k_heruli
+	}
+	## Langobardi
+	500.1.1 = {
+		holder = 993008 #Wacho
+	}
+	395.1.1 = {
+		holder = hungary_04
+	}
+	685.1.1 = {
+		liege = "k_hungary"
+		holder = 146154
+	}
+	701.1.1 = {
+		holder = 146155
+	}
+	707.1.1 = {
+		holder = 146156
+	}
+	714.1.1 = {
+		holder = 146157
+	}
+	718.1.1 = {
+		holder = 146158
+	}
+	721.1.1 = {
+		holder = 146159
+	}
+	731.1.1 = {
+		holder = 146160
+	}
+	733.1.1 = {
+		holder = 146161
+	}
+	743.1.1 = {
+		holder = 146162
+	}
+	748.1.1 = {
+		holder = 146163
+	}
+	756.1.1 = {
+		holder = 146165
+	}
+	757.1.1 = {
+		holder = 146171
+	}
+}
+
+c_baranya = {
+	## Roman Imperial Province
+	361.1.1 = {
+		liege = k_pannonia
+		holder = hungary_01
+		de_jure_liege = d_pannonia_valeria
+	}
+	395.1.1 = {
+		holder = hungary_04
+	}
+	## Ostrogothic Empire
+	#476.1.1 = {
+	#	holder = 992016
+	#	government = feudal_government
+	#	de_jure_liege = d_visegrad
+	#}
+	476.1.1 = {
+		#government = feudal_government
+		de_jure_liege = d_visegrad
+		holder = heruli_04
+		liege = k_heruli
+	}
+	## Langobardi
+	500.1.1 = {
+		holder = 993008 #Wacho
+	}
+	685.1.1 = {
+		liege = "k_hungary"
+		holder = 146154
+	}
+	701.1.1 = {
+		holder = 146155
+	}
+	707.1.1 = {
+		holder = 146156
+	}
+	714.1.1 = {
+		holder = 146157
+	}
+	718.1.1 = {
+		holder = 146158
+	}
+	721.1.1 = {
+		holder = 146159
+	}
+	731.1.1 = {
+		holder = 146160
+	}
+	733.1.1 = {
+		holder = 146161
+	}
+	743.1.1 = {
+		holder = 146162
+	}
+	748.1.1 = {
+		holder = 146163
+	}
+	756.1.1 = {
+		holder = 146165
+	}
+	757.1.1 = {
+		holder = 146171
+	}
+}
+
+d_nyitra = {
+	361.1.1 = { change_development_level = 2 }
+	532.1.1 = { change_development_level = 3 }
+	623.1.1 = {
+		holder = samo_01
+	}
+	768.1.1 = { change_development_level = 4 }
+}
+
+c_nyitra = {
+	361.1.1 = { change_development_level = 2 }
+	476.1.1 = { change_development_level = 3 }
+	532.1.1 = { change_development_level = 4 }
+	632.1.1 = { change_development_level = 5 }
+	768.1.1 = { change_development_level = 6 }
+	
+	## Quadi Tribes
+	340.1.1 = {
+		holder = quadi_02
+	}
+	340.1.1 = {
+		holder = quadi_03
+		liege = k_quadi
+	}
+	374.1.1 = {
+		holder = quadi_04
+		liege = k_quadi
+	}
+	434.1.1 = {
+		holder = rugian_02
+		liege = k_hungary
+	}
+	## Heruli tribes
+	476.1.1 = {
+		holder = 995002 # Scirians
+		government = tribal_government
+	}
+	532.1.1 = {
+		holder = langobard_misc_001
+	}
+	741.1.1 = {
+		liege = "d_moravia"
+		holder = 187000
+	}
+	764.1.1 = {
+		holder = 146176
+	}
+}
+
+c_gemer = {
+	## Vandal Tribes
+	350.1.1 = {
+		holder = vandals_001
+		government = tribal_government
+	}
+	## Heruli tribes
+	434.1.1 = {
+		holder = 995001
+		liege = k_hungary
+	}
+	450.1.1 = {
+		#holder = 990012 # Scirians
+		#government = tribal_government
+		holder = heruli_03
+		liege = k_heruli
+	}
+	532.1.1 = {
+		holder = scirian_misc_003
+		liege = scirian_misc_003
+	}
+	741.1.1 = {
+		liege = "d_moravia"
+		holder = 187000
+	}
+	764.1.1 = {
+		holder = 146176
+	}
+}
+
+c_orava = {
+	## Rugian Tribes
+	350.1.1 = {
+		holder = rugian_01
+		government = tribal_government
+	}
+	## White Croats
+	476.1.1 = {
+		#holder = anteans_08
+		#liege = d_volhynia
+		holder = 995002
+	}
+	530.1.1 = {
+		holder = dslavs_16
+	}
+	741.1.1 = {
+		liege = "d_moravia"
+		holder = 187000
+	}
+	768.1.1 = {
+		holder = 146178
+	}
+}
+
+c_trenscen = {
+	## Quadi Tribes
+	340.1.1 = {
+		holder = quadi_02
+	}
+	340.1.1 = {
+		holder = quadi_03
+		liege = k_quadi
+	}
+	374.1.1 = {
+		holder = quadi_04
+		liege = k_quadi
+	}
+	434.1.1 = {
+		holder = rugian_02
+		liege = k_hungary
+	}
+	## Heruli tribes
+	476.1.1 = {
+		holder = 995002 # Scirians
+		government = tribal_government
+	}
+	532.1.1 = {
+		holder = langobard_misc_002
+	}
+	741.1.1 = {
+		liege = "d_moravia"
+		holder = 187000
+		government = tribal_government
+	}
+	764.1.1 = {
+		holder = 146176
+	}
+}
+
+c_lipto = {
+	## Rugian Tribes
+	350.1.1 = {
+		holder = rugian_01
+		government = tribal_government
+	}
+	## White Croats
+	476.1.1 = {
+		#holder = anteans_08
+		#liege = d_volhynia
+		holder = 995002
+	}
+	532.1.1 = {
+		holder = langobard_misc_002
+	}
+	741.1.1 = {
+		liege = "d_moravia"
+		holder = 187000
+		government = tribal_government
+	}
+	764.1.1 = {
+		holder = 146176
+	}
+}
+
+c_zolyom = {
+	## Quadi Tribes
+	350.1.1 = {
+		holder = quadi_031
+		liege = k_quadi
+		government = tribal_government
+	}
+	361.1.1 = {
+		liege = k_quadi
+	}
+	434.1.1 = {
+		holder = 995001
+		liege = k_hungary
+	}
+	## Scirian tribes
+	450.1.1 = {
+		#holder = 990012 # Scirians
+		#government = tribal_government
+		holder = heruli_03
+		liege = k_heruli
+	}
+	## Langobardi
+	# 520.1.1 = {
+	# 	holder = 190122 # Audoin
+	# 	liege = d_lombards
+	# }
+	532.1.1 = {
+		holder = scirian_misc_003
+		liege = scirian_misc_003
+	}
+	741.1.1 = {
+		liege = "d_moravia"
+		holder = 187000
+	}
+	764.1.1 = {
+		holder = 146176
+	}
+}
+
+c_bars = {
+	## Quadi Tribes
+	350.1.1 = {
+		holder = quadi_031
+		liege = k_quadi
+		government = tribal_government
+	}
+	361.1.1 = {
+		liege = k_quadi
+	}
+	## Heruli tribes
+	434.1.1 = {
+		holder = 995001
+		liege = k_hungary
+	}
+	450.1.1 = {
+		holder = 995002 # Scirians
+		government = tribal_government
+	}
+	## Langobardi
+	520.1.1 = {
+		holder = 190122 # Audoin
+	}
+	741.1.1 = {
+		liege = "d_moravia"
+		holder = 187000
+	}
+	764.1.1 = {
+		holder = 146176
+	}
+}
+
+c_hont = {
+	## Quadi Tribes
+	350.1.1 = {
+		holder = quadi_031
+		liege = k_quadi
+		government = tribal_government
+	}
+	361.1.1 = {
+		liege = k_quadi
+	}
+	434.1.1 = {
+		holder = 995001
+		liege = k_hungary
+	}
+	## Scirian tribes
+	450.1.1 = {
+		#holder = 990012 # Scirians
+		#government = tribal_government
+		holder = heruli_03
+		liege = k_heruli
+	}
+	## Langobardi
+	520.1.1 = {
+		holder = 190122 # Audoin
+	}
+	685.1.1 = {
+		liege = "k_hungary"
+		holder = 146154
+	}
+	701.1.1 = {
+		holder = 146155
+	}
+	707.1.1 = {
+		holder = 146156
+	}
+	714.1.1 = {
+		holder = 146157
+	}
+	718.1.1 = {
+		holder = 146158
+	}
+	721.1.1 = {
+		holder = 146159
+	}
+	731.1.1 = {
+		holder = 146160
+	}
+	733.1.1 = {
+		holder = 146161
+	}
+	743.1.1 = {
+		holder = 146162
+	}
+	748.1.1 = {
+		holder = 146163
+	}
+	756.1.1 = {
+		holder = 146165
+	}
+	757.1.1 = {
+		holder = 146171
+	}
+}
+
+c_poszony = {
+	361.1.1 = { change_development_level = 2 }
+	476.1.1 = { change_development_level = 3 }
+	532.1.1 = { change_development_level = 4 }
+	632.1.1 = { change_development_level = 5 }
+	768.1.1 = { change_development_level = 6 }
+	
+	## Quadi Tribes
+	340.1.1 = {
+		holder = quadi_02
+	}
+	340.1.1 = {
+		holder = quadi_03
+		liege = k_quadi
+	}
+	374.1.1 = {
+		holder = quadi_04
+		liege = k_quadi
+	}
+	434.1.1 = {
+		holder = rugian_02
+		liege = k_hungary
+	}
+	## Heruli tribes
+	476.1.1 = {
+		holder = 995002 # Scirians
+		government = tribal_government
+	}
+	
+	532.1.1 = {
+		holder = langobard_misc_001
+	}
+	685.1.1 = {
+		liege = "k_hungary"
+		holder = 146154
+	}
+	701.1.1 = {
+		holder = 146155
+	}
+	707.1.1 = {
+		holder = 146156
+	}
+	714.1.1 = {
+		holder = 146157
+	}
+	718.1.1 = {
+		holder = 146158
+	}
+	721.1.1 = {
+		holder = 146159
+	}
+	731.1.1 = {
+		holder = 146160
+	}
+	733.1.1 = {
+		holder = 146161
+	}
+	743.1.1 = {
+		holder = 146162
+	}
+	748.1.1 = {
+		holder = 146163
+	}
+	756.1.1 = {
+		holder = 146165
+	}
+	757.1.1 = {
+		holder = 146171
+	}
+}
+
+d_ungvar = {
+	## Rugian Tribes
+	350.1.1 = {
+		holder = rugian_01
+		government = tribal_government
+	}
+	530.1.1 = {
+		holder = dslavs_15
+		government = tribal_government
+	}
+	739.1.1 = {
+		liege = 0
+		holder = 146184
+		government = tribal_government
+	}	
+}
+
+c_ungvar = {
+	## Gepid Tribes
+	350.1.1 = {
+		holder = gepids_01
+		government = tribal_government
+	}
+	400.4.28 = {
+		holder = 991000
+	}
+	## Heruli tribes
+	450.1.1 = {
+		holder = scirian_misc_002
+		government = tribal_government
+		liege = 0
+	}
+	## Sclavenian
+	530.1.1 = {
+		holder = dslavs_15
+	}
+	739.1.1 = {
+		liege = d_ungvar
+		holder = 146184
+		government = tribal_government
+	}
+	759.1.1 = {
+		holder = 146183
+	}
+}
+
+c_zemplen = {
+	## Rugian Tribes
+	350.1.1 = {
+		holder = rugian_01
+		government = tribal_government
+	}
+	425.1.1 = {
+		holder = 991000
+	}
+	## Heruli tribes
+	450.1.1 = {
+		holder = scirian_misc_001
+		government = tribal_government
+		liege = 0
+	}
+	## Sclavenian
+	530.1.1 = {
+		holder = dslavs_15
+	}
+	739.1.1 = {
+		liege = d_ungvar
+		holder = 146184
+		government = tribal_government
+	}
+}
+
+c_borsod = {
+	## Vandal Tribes
+	350.1.1 = {
+		holder = vandals_001
+		government = tribal_government
+	}
+	434.1.1 = {
+		holder = 995001
+		liege = k_hungary
+	}
+	## Scirian tribes
+	450.1.1 = {
+		#holder = 990012 # Scirians
+		#government = tribal_government
+		holder = heruli_03
+		liege = k_heruli
+	}
+	## Sclavenian
+	530.1.1 = {
+		holder = dslavs_15
+	}
+	741.1.1 = {
+		liege = "d_moravia"
+		holder = 187000
+	}
+	764.1.1 = {
+		holder = 146176
+	}
+}
+
+c_saris = {
+	## Rugian Tribes
+	350.1.1 = {
+		holder = rugian_01
+		government = tribal_government
+	}
+	## White Croats
+	476.1.1 = {
+		holder = anteans_08
+		liege = d_volhynia
+	}
+	530.1.1 = {
+		holder = dslavs_15
+	}
+	739.1.1 = {
+		liege = d_ungvar
+		holder = 146184
+	}
+	757.1.1 = {
+		holder = 146182
+	}
+}
+
+c_spis = {
+	361.1.1 = { change_development_level = 2 }
+	532.1.1 = { change_development_level = 3 }
+	768.1.1 = { change_development_level = 4 }
+	## Rugian Tribes
+	350.1.1 = {
+		holder = rugian_01
+		government = tribal_government
+	}
+	## White Croats
+	476.1.1 = {
+		holder = anteans_08
+		liege = d_volhynia
+	}
+	530.1.1 = {
+		holder = dslavs_15
+	}
+	739.1.1 = {
+		liege = d_ungvar
+		holder = 146184
+		government = tribal_government
+	}
+	757.1.1 = {
+		holder = 146182
+	}
+}
+
+c_abauj = {
+	## Rugian Tribes
+	350.1.1 = {
+		holder = rugian_01
+		government = tribal_government
+	}
+	## Heruli tribes
+	434.1.1 = {
+		holder = 995001
+		government = tribal_government
+		liege = k_hungary
+	}
+	476.1.1 = {
+		holder = scirian_misc_001
+		government = tribal_government
+		liege = 0
+	}
+	## White Croats
+	530.1.1 = {
+		holder = dslavs_15
+	}
+	739.1.1 = {
+		liege = d_ungvar
+		holder = 146184
+		government = tribal_government
+	}
+}
+
+d_transcarpathia = {
+	## Gepid Tribes
+	350.1.1 = {
+		holder = gepids_01
+		government = tribal_government
+	}
+	## Free Dacians
+	476.1.1 = {
+		holder = dacio_roman_misc_004
+	}
+	739.1.1 = {
+		liege = 0
+		holder = 146184
+		government = tribal_government
+	}	
+}
+
+c_marmaros = {
+	## Gepid Tribes
+	350.1.1 = {
+		holder = gepids_01
+		government = tribal_government
+	}
+	400.4.28 = {
+		holder = 991000
+	}
+	## Free Dacians
+	450.1.1 = {
+		holder = dacio_roman_misc_004
+	}
+	532.1.1 = {
+		holder = dacio_roman_misc_003
+	}
+	685.1.1 = {
+		liege = "d_transylvania"
+		holder = 146143
+		government = tribal_government
+	}
+	708.1.1 = {
+		holder = 146144
+	}
+	725.1.1 = {
+		holder = 146145
+	}
+	750.1.1 = {
+		holder = 146149
+	}
+}
+
+c_bereg = {
+	## Gepid Tribes
+	350.1.1 = {
+		holder = gepids_01
+		government = tribal_government
+	}
+	400.4.28 = {
+		holder = 991000
+	}
+	## Heruli tribes
+	450.1.1 = {
+		holder = scirian_misc_002
+		government = tribal_government
+		liege = 0
+	}
+	532.1.1 = {
+		holder = dacio_roman_misc_002
+	}
+	739.1.1 = {
+		liege = d_ungvar
+		holder = 146184
+		government = tribal_government
+	}
+	759.1.1 = {
+		holder = 146183
+	}
+}
+
+d_transylvania = {
+	685.1.1 = {
+		liege = "k_hungary"
+		holder = 146143
+		government = tribal_government
+	}
+	725.1.1 = {
+		holder = 146144
+	}
+	736.1.1 = {
+		holder = 146145
+	}
+	750.1.1 = {
+		holder = 146146
+	}
+	762.1.1 = {
+		holder = 146147
+	}
+}
+
+c_feher = {
+	## Dacian Tribes
+	350.1.1 = {
+		holder = carpi_01
+		government = tribal_government
+	}
+	# Gepid Kingdom
+	434.1.1 = {
+		holder = 991001
+		liege = k_hungary
+	}
+	460.1.1 = {
+		holder = gepid_03
+		liege = k_gepids
+	}
+	480.1.1 = {
+		holder = 991003 #Thrapstila
+	}
+	488.1.1 = {
+		holder = 991005 #Thrasaric
+	}
+	504.1.1 = {
+		holder = 991007 #Gelemund
+	}
+	549.1.1 = {
+		holder = 991008 #Thorisind
+	}
+	685.1.1 = {
+		liege = "d_transylvania"
+		holder = 146143
+		government = tribal_government
+	}
+	725.1.1 = {
+		holder = 146144
+	}
+	736.1.1 = {
+		holder = 146145
+	}
+	750.1.1 = {
+		holder = 146146
+	}
+	762.1.1 = {
+		holder = 146147
+	}
+}
+
+c_szekelyfold = {
+	## Dacian Tribes
+	350.1.1 = {
+		holder = carpi_01
+		government = tribal_government
+	}
+	440.1.1 = {
+		holder = carpi_02
+		liege = k_hugnary
+	}
+	# Gepid Kingdom
+	453.1.1 = {
+		holder = gepid_03
+		liege = k_gepids
+	}
+	480.1.1 = {
+		holder = 991003 #Thrapstila
+	}
+	488.1.1 = {
+		holder = 991005 #Thrasaric
+	}
+	504.1.1 = {
+		holder = 991007 #Gelemund
+	}
+	
+	532.1.1 = {
+		holder = antean_misc_001
+	}
+	549.1.1 = {
+		holder = 991008 #Thorisind
+	}
+	685.1.1 = {
+		liege = "d_transylvania"
+		holder = 146143
+		government = tribal_government
+	}
+	708.1.1 = {
+		holder = 146144
+	}
+	725.1.1 = {
+		holder = 146146
+	}
+	750.1.1 = {
+		holder = 146148
+	}
+}
+
+c_barcasag = {
+	## Dacian Tribes
+	350.1.1 = {
+		holder = carpi_01
+		government = tribal_government
+	}
+	440.1.1 = {
+		holder = carpi_02
+		liege = k_hugnary
+	}
+	# Gepid Kingdom
+	453.1.1 = {
+		holder = gepid_03
+		liege = k_gepids
+	}
+	480.1.1 = {
+		holder = 991003 #Thrapstila
+	}
+	488.1.1 = {
+		holder = 991005 #Thrasaric
+	}
+	504.1.1 = {
+		holder = 991007 #Gelemund
+	}
+	
+	532.1.1 = {
+		holder = antean_misc_001
+	}
+	549.1.1 = {
+		holder = 991008 #Thorisind
+	}
+	685.1.1 = {
+		liege = "d_transylvania"
+		holder = 146143
+		government = tribal_government
+	}
+	708.1.1 = {
+		holder = 146144
+	}
+	725.1.1 = {
+		holder = 146146
+	}
+	750.1.1 = {
+		holder = 146148
+	}
+}
+
+c_fogaras = {
+	## Dacian Tribes
+	350.1.1 = {
+		holder = carpi_01
+		government = tribal_government
+	}
+	# Gepid Kingdom
+	434.1.1 = {
+		holder = 991001
+		liege = k_hungary
+	}
+	453.1.1 = {
+		holder = gepid_03
+		liege = k_gepids
+	}
+	480.1.1 = {
+		holder = 991003 #Thrapstila
+	}
+	488.1.1 = {
+		holder = 991005 #Thrasaric
+	}
+	504.1.1 = {
+		holder = 991007 #Gelemund
+	}
+	549.1.1 = {
+		holder = 991008 #Thorisind
+	}
+	685.1.1 = {
+		liege = "d_transylvania"
+		holder = 146143
+		government = tribal_government
+	}
+	725.1.1 = {
+		holder = 146144
+	}
+	736.1.1 = {
+		holder = 146145
+	}
+	750.1.1 = {
+		holder = 146146
+	}
+	762.1.1 = {
+		holder = 146147
+	}
+}
+
+c_torda = {
+	## Dacian Tribes
+	350.1.1 = {
+		holder = carpi_01
+		government = tribal_government
+	}
+	# Gepid Kingdom
+	434.1.1 = {
+		holder = 991001
+		liege = k_hungary
+	}
+	453.1.1 = {
+		holder = gepid_03
+		liege = k_gepids
+	}
+	480.1.1 = {
+		holder = 991003 #Thrapstila
+	}
+	488.1.1 = {
+		holder = 991005 #Thrasaric
+	}
+	504.1.1 = {
+		holder = 991007 #Gelemund
+	}
+	532.1.1 = {
+		holder = antean_misc_001
+	}
+	549.1.1 = {
+		holder = 991008 #Thorisind
+	}
+	685.1.1 = {
+		liege = "d_transylvania"
+		holder = 146143
+		government = tribal_government
+	}
+	725.1.1 = {
+		holder = 146144
+	}
+	736.1.1 = {
+		holder = 146145
+	}
+	750.1.1 = {
+		holder = 146146
+	}
+	762.1.1 = {
+		holder = 146147
+	}
+}
+
+c_beszterce = {
+	## Gepid Tribes
+	350.1.1 = {
+		holder = gepids_01
+		government = tribal_government
+	}
+	434.1.1 = {
+		holder = 991001
+		liege = k_hungary
+	}
+	## Free Dacians
+	476.1.1 = {
+		holder = dacio_roman_misc_004
+	}
+	532.1.1 = {
+		holder = dacio_roman_misc_003
+	}
+	685.1.1 = {
+		liege = "d_transylvania"
+		holder = 146143
+		government = tribal_government
+	}
+	708.1.1 = {
+		holder = 146144
+	}
+	725.1.1 = {
+		holder = 146146
+	}
+	750.1.1 = {
+		holder = 146148
+	}
+}
+
+c_hunyad = {
+	###Taifal tribes
+	360.1.1 = {
+		holder = taifal_01
+		government = tribal_government
+		liege = d_oltenia
+	}
+	376.1.1 = {
+		holder = taifal_02 
+	}
+	434.1.1 = {
+		holder = 990014
+		liege = k_hungary
+	}
+	# Gepid Kingdom
+	453.1.1 = {
+		holder = gepid_01
+		liege = k_gepids
+	}
+	480.1.1 = {
+		holder = 991003 #Thrapstila
+	}
+	488.1.1 = {
+		holder = 991005 #Thrasaric
+	}
+	504.1.1 = {
+		holder = 991007 #Gelemund
+	}
+	549.1.1 = {
+		holder = 991008 #Thorisind
+	}
+	685.1.1 = {
+		liege = "d_transylvania"
+		holder = 146143
+		government = tribal_government
+	}
+	725.1.1 = {
+		holder = 146144
+	}
+	736.1.1 = {
+		holder = 146145
+	}
+	750.1.1 = {
+		holder = 146146
+	}
+	762.1.1 = {
+		holder = 146147
+	}
+}
+
+d_bihar = {
+	
+}
+
+c_bihar = {
+	## Dacian Tribes
+	350.1.1 = {
+		holder = hungary_10
+		government = tribal_government
+	}
+	434.1.1 = {
+		holder = yazige_01
+		liege = k_hungary
+	}
+	# Gepid Kingdom
+	470.1.1 = {
+		holder = gepid_02
+		liege = k_gepids
+		
+	}
+	480.1.1 = {
+		holder = 991003 #Thrapstila
+	}
+	488.1.1 = {
+		holder = 991005 #Thrasaric
+	}
+	504.1.1 = {
+		holder = 991007 #Gelemund
+	}
+	532.1.1 = {
+		holder = dacio_roman_misc_001
+	}
+	549.1.1 = {
+		holder = 991008 #Thorisind
+	}
+	685.1.1 = {
+		liege = "d_transylvania"
+		holder = 146143
+		government = tribal_government
+	}
+	725.1.1 = {
+		holder = 146144
+	}
+	736.1.1 = {
+		holder = 146145
+	}
+	750.1.1 = {
+		holder = 146146
+	}
+	762.1.1 = {
+		holder = 146147
+	}
+}
+
+c_zarand = {
+	## Dacian Tribes
+	350.1.1 = {
+		holder = hungary_10
+		government = tribal_government
+	}
+	434.1.1 = {
+		holder = 990007
+		liege = k_hungary
+	}
+	# Gepid Kingdom
+	454.1.1 = {
+		holder = gepid_02
+		liege = k_gepids
+	}
+	480.1.1 = {
+		holder = 991003 #Thrapstila
+	}
+	488.1.1 = {
+		holder = 991005 #Thrasaric
+	}
+	504.1.1 = {
+		holder = 991007 #Gelemund
+	}	
+	532.1.1 = {
+		holder = dacio_roman_misc_001
+	}
+	549.1.1 = {
+		holder = 991008 #Thorisind
+	}
+	685.1.1 = {
+		liege = "d_transylvania"
+		holder = 146143
+		government = tribal_government
+	}
+	725.1.1 = {
+		holder = 146144
+	}
+	736.1.1 = {
+		holder = 146145
+	}
+	750.1.1 = {
+		holder = 146146
+	}
+	762.1.1 = {
+		holder = 146147
+	}
+}
+
+c_bekes = {
+	## Dacian Tribes
+	350.1.1 = {
+		holder = hungary_10
+		government = tribal_government
+	}
+	434.1.1 = {
+		holder = yazige_01
+		liege = k_hungary
+	}
+	# Gepid Kingdom
+	470.1.1 = {
+		holder = gepid_02
+		liege = k_gepids
+	}
+	480.1.1 = {
+		holder = 991003 #Thrapstila
+	}
+	488.1.1 = {
+		holder = 991005 #Thrasaric
+	}
+	504.1.1 = {
+		holder = 991007 #Gelemund
+	}
+	532.1.1 = {
+		holder = dacio_roman_misc_001
+	}
+	549.1.1 = {
+		holder = 991008 #Thorisind
+	}
+	685.1.1 = {
+		liege = "d_transylvania"
+		holder = 146143
+		government = tribal_government
+	}
+	725.1.1 = {
+		holder = 146144
+	}
+	736.1.1 = {
+		holder = 146145
+	}
+	750.1.1 = {
+		holder = 146146
+	}
+	762.1.1 = {
+		holder = 146147
+	}
+}
+
+c_szabolcs = {
+	## Vandal Tribes
+	350.1.1 = {
+		holder = vandals_001
+		government = tribal_government
+	}
+	## Yazige
+	434.1.1 = {
+		holder = yazige_01
+		liege = k_hungary
+	}
+	470.1.1 = {
+		holder = yazige_02
+	}
+	510.1.1 = {
+		holder = yazige_03
+		liege = k_gepids
+	}
+	685.1.1 = {
+		liege = "k_hungary"
+		holder = 146156
+		government = tribal_government
+	}
+	707.1.1 = {
+		holder = 146160
+	}
+	731.1.1 = {
+		holder = 146165
+	}
+	756.1.1 = {
+		holder = 146170
+	}
+}
+
+c_szatmar = {
+	## Gepid Tribes
+	350.1.1 = {
+		holder = gepids_01
+		government = tribal_government
+	}
+	434.1.1 = {
+		holder = 991001
+		liege = k_hungary
+	}
+	## Free Dacians
+	476.1.1 = {
+		holder = dacio_roman_misc_004
+	}
+	532.1.1 = {
+		holder = dacio_roman_misc_002
+	}
+	685.1.1 = {
+		liege = "d_transylvania"
+		holder = 146143
+		government = tribal_government
+	}
+	725.1.1 = {
+		holder = 146144
+	}
+	736.1.1 = {
+		holder = 146145
+	}
+	750.1.1 = {
+		holder = 146146
+	}
+	762.1.1 = {
+		holder = 146147
+	}
+}
+
+d_temes = {
+	## Sarmatian Tribes
+	350.1.1 = {
+		holder = agaragantes_01
+		government = tribal_government
+	}
+	480.1.1 = {
+		holder = 991003 #Thrapstila
+	}
+	488.1.1 = {
+		holder = 991005 #Thrasaric
+	}
+	504.1.1 = {
+		holder = 991007 #Gelemund
+	}
+	549.1.1 = {
+		holder = 991008 #Thorisind
+	}
+}
+
+c_temes = {
+	## Sarmatian Tribes
+	350.1.1 = {
+		holder = agaragantes_01
+		government = tribal_government
+	}
+	434.1.1 = {
+		holder = 990014
+		liege = k_hungary
+	}
+	# Gepid Kingdom
+	453.1.1 = {
+		holder = gepid_01
+		liege = k_gepids
+	}
+	685.1.1 = {
+		liege = "d_transylvania"
+		holder = 146143
+		government = tribal_government
+	}
+	725.1.1 = {
+		holder = 146144
+	}
+	736.1.1 = {
+		holder = 146145
+	}
+	750.1.1 = {
+		holder = 146146
+	}
+	762.1.1 = {
+		holder = 146147
+	}
+	763.1.1 = {
+		holder = 146150
+	}
+}
+
+c_arad = {
+	## Sarmatian Tribes
+	350.1.1 = {
+		holder = agaragantes_01
+		government = tribal_government
+	}
+	434.1.1 = {
+		holder = 990007
+		liege = k_hungary
+	}
+	# Gepid Kingdom
+	454.1.1 = {
+		holder = gepid_01
+		liege = k_gepids
+	}
+	685.1.1 = {
+		liege = "d_transylvania"
+		holder = 146143
+		government = tribal_government
+	}
+	725.1.1 = {
+		holder = 146144
+	}
+	736.1.1 = {
+		holder = 146145
+	}
+	750.1.1 = {
+		holder = 146146
+	}
+	762.1.1 = {
+		holder = 146147
+	}
+}
+
+c_krasso = {
+	## Sarmatian Tribes
+	350.1.1 = {
+		holder = agaragantes_01
+		government = tribal_government
+	}
+	434.1.1 = {
+		holder = 990014
+		liege = k_hungary
+	}
+	# Gepid Kingdom
+	453.1.1 = {
+		holder = 991001
+		liege = k_hungary
+	}
+	460.1.1 = {
+		holder = 991002
+	}
+	480.1.1 = {
+		holder = 991003 #Thrapstila
+	}
+	488.1.1 = {
+		holder = 991005 #Thrasaric
+	}
+	504.1.1 = {
+		holder = 991007 #Gelemund
+	}
+	549.1.1 = {
+		holder = 991008 #Thorisind
+	}
+	685.1.1 = {
+		liege = "d_transylvania"
+		holder = 146143
+		government = tribal_government
+	}
+	725.1.1 = {
+		holder = 146144
+	}
+	736.1.1 = {
+		holder = 146145
+	}
+	750.1.1 = {
+		holder = 146146
+	}
+	762.1.1 = {
+		holder = 146147
+	}
+	763.1.1 = {
+		holder = 146150
+	}
+}
+
+c_keve = {
+	## Sarmatian Tribes
+	350.1.1 = {
+		holder = agaragantes_01
+		government = tribal_government
+	}
+	434.1.1 = {
+		holder = 990014
+		liege = k_hungary
+	}
+	# Gepid Kingdom
+	453.1.1 = {
+		holder = 991001
+		liege = k_hungary
+	}
+	460.1.1 = {
+		holder = 991002
+	}
+	480.1.1 = {
+		holder = 991003 #Thrapstila
+	}
+	488.1.1 = {
+		holder = 991005 #Thrasaric
+	}
+	504.1.1 = {
+		holder = 991007 #Gelemund
+	}
+	532.2.1 = {
+		holder = 991008 #Thorisind
+		liege = k_gepids
+	}
+	685.1.1 = {
+		liege = "d_transylvania"
+		holder = 146143
+		government = tribal_government
+	}
+	725.1.1 = {
+		holder = 146144
+	}
+	736.1.1 = {
+		holder = 146145
+	}
+	750.1.1 = {
+		holder = 146146
+	}
+	762.1.1 = {
+		holder = 146147
+	}
+	763.1.1 = {
+		holder = 146150
+	}
+}
+
+c_csanad = {
+	## Sarmatian Tribes
+	350.1.1 = {
+		holder = agaragantes_01
+		government = tribal_government
+	}
+	434.1.1 = {
+		holder = 990007
+		liege = k_hungary
+	}
+	# Gepid Kingdom
+	453.1.1 = {
+		holder = gepid_01
+		liege = k_gepids
+	}
+	480.1.1 = {
+		holder = 991003 #Thrapstila
+	}
+	488.1.1 = {
+		holder = 991005 #Thrasaric
+	}
+	504.1.1 = {
+		holder = 991007 #Gelemund
+	}
+	549.1.1 = {
+		holder = 991008 #Thorisind
+	}
+	685.1.1 = {
+		liege = "k_hungary"
+		holder = 146155
+		government = tribal_government
+	}
+	701.1.1 = {
+		holder = 146159
+	}
+	721.1.1 = {
+		holder = 146163
+	}
+	748.1.1 = {
+		holder = 146168
+	}
+}
+
+d_bacs = {
+	## Sarmatian Tribes
+	350.1.1 = {
+		holder = limigantes_01
+		government = tribal_government
+	}
+	476.1.1 = {
+		#holder = yazige_01
+		holder = heruli_01
+		liege = k_heruli
+	}
+}
+
+c_bacs = {
+	## Sarmatian Tribes
+	350.1.1 = {
+		holder = limigantes_01
+		government = tribal_government
+	}
+	434.1.1 = {
+		holder = 990006
+	}
+	# Gepid Kingdom
+	453.1.1 = {
+		holder = 991001
+		liege = k_hungary
+	}
+	460.1.1 = {
+		holder = 991002
+	}
+	480.1.1 = {
+		holder = 991003 #Thrapstila
+	}
+	488.1.1 = {
+		holder = 991005 #Thrasaric
+	}
+	504.1.1 = {
+		holder = 991007 #Gelemund
+	}
+	532.2.1 = {
+		holder = 991008 #Thorisind
+		liege = k_gepids
+	}
+	685.1.1 = {
+		liege = "d_transylvania"
+		holder = 146143
+		government = tribal_government
+	}
+	708.1.1 = {
+		holder = 146144
+	}
+	725.1.1 = {
+		holder = 146146
+	}
+	750.1.1 = {
+		holder = 146148
+	}
+	765.1.1 = {
+		holder = 146151
+	}
+}
+
+c_bodrog = {
+	## Sarmatian Tribes
+	350.1.1 = {
+		holder = limigantes_01
+		government = tribal_government
+	}
+	434.1.1 = {
+		holder = 990006
+	}
+	# Gepid Kingdom
+	453.1.1 = {
+		holder = 991001
+		liege = k_hungary
+	}
+	460.1.1 = {
+		holder = 991002
+	}
+	480.1.1 = {
+		holder = 991003 #Thrapstila
+	}
+	488.1.1 = {
+		holder = 991005 #Thrasaric
+	}
+	504.1.1 = {
+		holder = 991007 #Gelemund
+	}
+	532.2.1 = {
+		holder = 991008 #Thorisind
+		liege = k_gepids
+	}
+	685.1.1 = {
+		liege = "d_transylvania"
+		holder = 146143
+		government = tribal_government
+	}
+	708.1.1 = {
+		holder = 146144
+	}
+	725.1.1 = {
+		holder = 146146
+	}
+	750.1.1 = {
+		holder = 146148
+	}
+	765.1.1 = {
+		holder = 146151
+	}
+}
+
+c_csongrad = {
+	## Sarmatian Tribes
+	350.1.1 = {
+		holder = limigantes_01
+		government = tribal_government
+	}
+	434.1.1 = {
+		holder = 990006
+	}
+	476.1.1 = {
+		holder = 991002
+	}
+	480.1.1 = {
+		holder = 991003 #Thrapstila
+	}
+	488.1.1 = {
+		holder = 991005 #Thrasaric
+	}
+	504.1.1 = {
+		holder = 991007 #Gelemund
+	}
+	532.2.1 = {
+		holder = yazige_misc_001
+		liege = k_gepids
+	}
+	685.1.1 = {
+		liege = "k_hungary"
+		holder = 146155
+		government = tribal_government
+	}
+	701.1.1 = {
+		holder = 146159
+	}
+	721.1.1 = {
+		holder = 146163
+	}
+	748.1.1 = {
+		holder = 146168
+	}
+}
+
+d_gyor = {
+	361.1.1 = { change_development_level = 2 }
+	532.1.1 = { change_development_level = 3 }
+	768.1.1 = {	change_development_level = 4 }
+	493.1.1 = {
+		holder = hungary_08
+	}
+}
+
+c_gyor = {
+	## Roman Imperial Province
+	361.1.1 = {
+		liege = d_somogy
+		holder = hungary_03
+		de_jure_liege = d_somogy
+	}
+	## Rugiland
+	476.1.1 = {
+		holder = rugian_12
+		liege = k_rugiland
+		government = feudal_government
+		de_jure_liege = d_gyor
+	}
+	493.1.1 = {
+		holder = hungary_08
+		liege = k_ostrogoths
+	}
+	#Langobards
+	500.1.1 = {
+		holder = 190167 #Beleo
+		liege= d_lombards
+	}
+	685.1.1 = {
+		liege = "k_hungary"
+		holder = 146154
+	}
+	701.1.1 = {
+		holder = 146155
+	}
+	707.1.1 = {
+		holder = 146156
+	}
+	714.1.1 = {
+		holder = 146157
+	}
+	718.1.1 = {
+		holder = 146158
+	}
+	721.1.1 = {
+		holder = 146159
+	}
+	731.1.1 = {
+		holder = 146160
+	}
+	733.1.1 = {
+		holder = 146161
+	}
+	743.1.1 = {
+		holder = 146162
+	}
+	748.1.1 = {
+		holder = 146163
+	}
+	756.1.1 = {
+		holder = 146165
+	}
+	757.1.1 = {
+		holder = 146171
+	}
+}
+
+c_sopron = {
+	## Roman Imperial Province
+	361.1.1 = {
+		liege = d_somogy
+		holder = hungary_03
+		de_jure_liege = d_somogy
+	}
+	## Rugiland
+	476.1.1 = {
+		holder = rugian_12
+		liege = k_rugiland
+		government = feudal_government
+		de_jure_liege = d_gyor
+	}
+	493.1.1 = {
+		liege = k_ostrogoths
+	}
+	#Langobards
+	500.1.1 = {
+		holder = 190167 #Beleo
+		liege= d_lombards
+	}
+	685.1.1 = {
+		liege = "k_hungary"
+		holder = 146154
+	}
+	701.1.1 = {
+		holder = 146155
+	}
+	707.1.1 = {
+		holder = 146156
+	}
+	714.1.1 = {
+		holder = 146157
+	}
+	718.1.1 = {
+		holder = 146158
+	}
+	721.1.1 = {
+		holder = 146159
+	}
+	731.1.1 = {
+		holder = 146160
+	}
+	733.1.1 = {
+		holder = 146161
+	}
+	743.1.1 = {
+		holder = 146162
+	}
+	748.1.1 = {
+		holder = 146163
+	}
+	756.1.1 = {
+		holder = 146165
+	}
+	757.1.1 = {
+		holder = 146171
+	}
+}
+
+c_vas = {
+	## Roman Imperial Province
+	361.1.1 = {
+		liege = k_pannonia
+		holder = hungary_02
+		de_jure_liege = d_somogy
+	}
+	## Rugiland
+	476.1.1 = {
+		holder = rugian_12
+		liege = k_rugiland
+		government = feudal_government
+		de_jure_liege = d_gyor
+	}
+	493.1.1 = {
+		liege = k_ostrogoths
+	}
+	#Langobards
+	500.1.1 = {
+		holder = 190167 #Beleo
+		liege= d_lombards
+	}
+	685.1.1 = {
+		liege = "k_hungary"
+		holder = 146154
+	}
+	701.1.1 = {
+		holder = 146155
+	}
+	707.1.1 = {
+		holder = 146156
+	}
+	714.1.1 = {
+		holder = 146157
+	}
+	718.1.1 = {
+		holder = 146158
+	}
+	721.1.1 = {
+		holder = 146159
+	}
+	731.1.1 = {
+		holder = 146160
+	}
+	733.1.1 = {
+		holder = 146161
+	}
+	743.1.1 = {
+		holder = 146162
+	}
+	748.1.1 = {
+		holder = 146163
+	}
+	756.1.1 = {
+		holder = 146165
+	}
+	757.1.1 = {
+		holder = 146171
+	}
+}
+
+c_veszprem = {
+	## Roman Imperial Province
+	361.1.1 = {
+		liege = k_pannonia
+		holder = hungary_02
+		de_jure_liege = d_somogy
+	}
+	## Ostrogothic Empire
+	476.1.1 = {
+		#holder = hungary_07
+		holder = heruli_02
+		liege = k_heruli
+		liege = k_ostrogoths
+		government = feudal_government
+		de_jure_liege = d_gyor
+	}
+	493.1.1 = {
+		liege = k_ostrogoths
+	}
+	#Lombards
+	500.1.1 = {
+		holder = langobard_misc_003 #Gacco
+		liege = d_lombards
+	}
+	685.1.1 = {
+		liege = "k_hungary"
+		holder = 146154
+	}
+	701.1.1 = {
+		holder = 146155
+	}
+	707.1.1 = {
+		holder = 146156
+	}
+	714.1.1 = {
+		holder = 146157
+	}
+	718.1.1 = {
+		holder = 146158
+	}
+	721.1.1 = {
+		holder = 146159
+	}
+	731.1.1 = {
+		holder = 146160
+	}
+	733.1.1 = {
+		holder = 146161
+	}
+	743.1.1 = {
+		holder = 146162
+	}
+	748.1.1 = {
+		holder = 146163
+	}
+	756.1.1 = {
+		holder = 146165
+	}
+	757.1.1 = {
+		holder = 146171
+	}
+}
+
+d_syrmia = {
+	# Roman Province
+	361.1.1 = {
+		change_development_level = 7
+	}
+	360.1.1 = {
+		holder = hungary_05 #Valentian I
+		de_jure_liege = k_pannonia
+		liege = k_pannonia
+		name = PANNONIA_SECUNDA
+	}
+	394.1.1 = {
+		holder = hungary_06
+	}
+	476.1.1 = {
+		de_jure_liege = k_croatia
+	}
+	532.1.1 = {
+		holder = 992023
+		#liege = k_ostrogoths
+		#holder = dalmatia_21
+	}
+	1000.1.1 = {
+		de_jure_liege = k_hungary
+	}
+}
+
+c_szerem = {
+	# Roman Province
+	360.1.1 = {
+		holder = hungary_05 #Valentian I
+		de_jure_liege = k_croatia
+	}
+	394.1.1 = {
+		holder = hungary_06
+	}
+	# Gepid Kingdom
+	453.1.1 = {
+		holder = 991001
+		liege = k_hungary
+	}
+	460.1.1 = {
+		holder = 991002
+	}
+	488.1.1 = {
+		holder = 991005 #Thrasaric
+	}
+	# Ostrogothic Kingdom
+	504.1.1 = {
+		holder = 992016 #Theodoric the great
+	}
+	526.1.1 = {
+		holder = 992023 # Athalaric
+	}
+	536.1.1 = {
+		holder = 991007 #Gelemund
+	}
+	567.1.1 = {
+		holder = 70511 # Justin II
+	}
+	681.1.1 = {
+		holder = 159118
+	}
+	700.1.1 = {
+		holder = 145944
+	}
+	740.1.1 = {
+		holder = 145945
+	}
+	766.1.1 = {
+		holder = 145947
+	}
+}
+
+c_vukovar = {
+	# Roman Province
+	360.1.1 = {
+		holder = hungary_05 #Valentian I
+	}
+	394.1.1 = {
+		holder = hungary_06
+	}
+	465.8.1 = {
+		holder = dalmatia_15
+		de_jure_liege = d_slavonia
+		government = feudal_government
+		liege = k_ostrogoths
+	}
+	760.1.1 = {
+		liege = "d_slavonia"
+		holder = 168292
+	}
+	
+	766.1.1 = {
+		holder = 168293
+	}
+}

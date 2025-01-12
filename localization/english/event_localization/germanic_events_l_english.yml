@@ -1,0 +1,181 @@
+﻿l_english:
+ # Modernize the Frankish Kingdom
+ germanic_events.0001.t:0 "The Modernization"
+ germanic_events.0001.desc:0 "We embraced our traditions for years, but we are at a point where we need a change. The states at our western borders are far ahead of us in terms of technology, government and military. We will modernize our kingdom to keep expanding. Our people need a safe future!"
+ germanic_events.0001.option:0 "This will make our future safe!"
+ germanic_events.0001.option.tooltip:0 "Let us celebrate our reforms!"
+
+ # Unite the Frankish Tribes
+ germanic_events.0002.t:0 "The Kingdom of the Franks"
+ germanic_events.0002.desc:0 "As the Visigoths and the Burgundians coalesced into formidable kingdoms in the former Western Roman Empire, so too have we been able to establish a kingdom of our own; one that unites the Salian and Ripuarian Franks spread out across both banks of the River Rhine. \n\nFrom our seat of power along the Rhine, the new Kingdom of the Franks shall see itself grow and prosper, but only if our ruler and their successors can truly allow for that to happen. \n\n#bold Regnum Francorum Invicta!"
+ germanic_events.0002.option:0 "United at last!"
+ germanic_events.0002.option.tooltip:0 "The Kingdom of the Franks is formed."
+
+ germanic_events.0003.t:0 "The Frankish Invasion"
+ germanic_events.0003.desc:0 "Roman power west of the River Rhine had greatly diminished in the decades prior, and now that the heart of the Roman world rests in the hands of Germanic usurpers, the Domain of Soissons had been left alone to fend for itself. From the time we first crossed the Rhine and became the empire's foederati, our reach grew at the expense of our former liege. \n\n The Domain of Soissons itself is in a fragile position, beset on all sides by forces hostile to a Roman-governed polity. As we were the first of the Germanic tribes to settle in Gaul, our claim over the region is strongest and it is time to lay Roman rule there to rest."
+ germanic_events.0003.option.a:0 "Send the call!"
+ germanic_events.0003.b:0 "The lands we govern will suffice."
+
+
+ germanic_events.0004.t:0 "The Frankish Invasion"
+ germanic_events.0004.desc:0 "Roman power west of the River Rhine had greatly diminished in the decades prior, and now that the heart of the Roman world rests in the hands of Germanic usurpers, the Domain of Soissons had been left alone to fend for itself. From the time we first crossed the Rhine and became the empire's foederati, our reach grew at the expense of our former liege. \n\n The Domain of Soissons itself is in a fragile position, beset on all sides by forces hostile to a Roman-governed polity. It is against this precariously-situated realm that the Franks have decided to wage war upon, hoping to bring an end to Roman rule in Gaul. They now call for us to join in this conquest with the prospect of additional territories for our descendants to settle and thrive upon."
+ germanic_events.0004.a:0 "To arms!"
+ germanic_events.0004.b:0 "It is best if we remain neutral, the lands we govern will suffice."
+
+
+ #should be replaced but readded incase we forgor
+ germanic_events.0005.t:0 "Securing Gaul"
+ germanic_events.0005.desc:0 "As we settle in our new and fertile lands, we must secure our borders from all sides. That especially includes the northern border and our newly conquered lands. The new Frankish kingdom in the north will probably not be satisfied with their part of Gaul and them pushing southwards is a real possibility. That's why I have gathered the best generals in the realm to decide what to do regarding the changes in the north."
+ germanic_events.0005.option.a:0 "Secure the forts!"
+
+ germanic_events.0006.t:0 "The Gothic Threat"
+ germanic_events.0006.desc:0 "As we settle in our new and fertile lands, we must secure our borders from all sides. That especially includes the southern border. The vicious Goths have had their eyes on Upper Gaul ever since they cursed us with their presence and now, I recieve reports of fortifications all along the border. As a clear message of war, we the Franks should not stand idle against this act of aggression! The sooner we strike, the better our chances."
+ germanic_events.0006.option.a:0 "We strike now!"
+
+ germanic_events.0007.t:0 "A Call from the Romans"
+ germanic_events.0007.desc:0 "The day was interrupted when a Roman messanger entered the main chamber and presented us with a personal decree from [ere_emperor_0007.GetFirstName], requesting that we muster our forces and march into the Italian peninsula to seize it from Odoacer. The self-proclaimed King of Italia had violated his duty as a client ruler when he marched against the Emperor, and now we are summoned to take away the Italian crown for ourselves. \n\nDominion over the former Roman heartland will grant us more prestige and power than the other Germanic successor states, but undertaking such an invasion on behalf of Constantinople will be looked down upon by the Gothic Kingdom's subjects."
+ germanic_events.0007.option.a:0 "The peninsula shall fall under the Gothic banner!"
+ germanic_events.0007.option.b:0 "We will not act on behalf of the Romans."
+ germanic_events.0011.option.b:0 "We will bide our time pillaging the countryside until a better opportunity arises."
+
+ germanic_events.0008.t:0 "The Gothic Threat"
+ germanic_events.0008.desc:0 "Having lost the trust of the Eastern Roman government, we have now recieved reports that Constantinople has commanded [ere_italy_invader.GetCulture.GetName] to march into our Italian holdings and rule the land for themselves! Alas, the die is cast, and we must face this new threat in the north to ensure that our victory against Orestes and his weak-willed son will not be short-lived!"
+ germanic_events.0008.option.a:0 "Prepare our forces! We march for war!"
+
+ germanic_events.0009.t:0 "Our Call Declined!"
+ germanic_events.0009.desc:0 "As expected from barbarians, the Ostrogoths refuse to march into the Italian peninsula and eliminate Odoacer as a threat to our interests. Although we hoped to avoid bloodshed among our own ranks, we are left with no other choice than to reclaim Italia and punish the Ostrogoths for taking our demands lightly!"
+ germanic_events.0009.option.a:0 "The Eternal City shall not remain under foreign occupation any longer!"
+
+ ignored_emperor_call:0 "Ignored the Emperor's Decree"
+
+
+ germanic_events.0010.t:0 "Interference from Italia"
+ germanic_events.0010.desc:0 "After our defeat in Ravenna, the barbarians who stood in the heart of our once great empire have pledged themselves to our government as a client state. It is clear, however, that [italy_holder_dissent.GetName] has other ideas and has been trying to slowly chip away at our influence in Italia. This time, however, [italy_holder_dissent.GetSheHe] has gone beyond his limits! My loyal vicars have come to me with news that [italy_holder_dissent.GetName] has sent his followers to sow dissent in our empire!\n\n This is a clear example of treason and should be handled as such! If we don't react now, we don't know what else [italy_holder_dissent.GetSheHe] will try."
+ germanic_events.0010.option.a:0 "I will not let the Roman crown roll in the dirt!"
+
+ # Old North
+ germanic_events.0101.t: "Century Storms"
+ germanic_events.0101.desc: "Gah! The days cannot decide whether they should be hot or cold, and so the world shakes around us.\n\nA prominent local merchant of the Romanish variety has come forward in dripping wet rags, complaining that his small fleet of cargo ships capsized in the channel of the island Tanet during a chaotic storm.\n\nWe know the storms of our old home, but lately the sea has been a terrible mistress, violently assaulting us in bitter rages even in the safety of the smallest of crossways."
+ germanic_events.0101.option.a: "I pity the poor [sunken_merchant.GetWomanMan]."
+ germanic_events.0101.option.b: "We can put [sunken_merchant.GetHerHim] in our service instead."
+ germanic_events.0101.option.c: "Oh no, the ship sank... so sad."
+
+ # This is other struggle stuff that isn't Germanic but I don't want to create another file
+ britannia_struggle.7000.t: "Yr Hen Ogledd"
+ britannia_struggle.7000.desc: "The Britons of the Old North have been without a kingdom to call their own for centuries. Long have they been divided into petty, scheming warlords. Today, however, the Britons of the Old North can welcome a new beginning, as they are all now united under one banner - mine.\n\nI now hold the fate of this region in my hands. With the foundation of this kingdom, I hope to usher in a new golden age of faith and glory under [founder.GetFaith.HighGodName]."
+ britannia_struggle.7000.a: "Long may our lands prosper!"
+
+ # Case of the Suebians (For Visigoths)
+ TFE_major_decisions.0023.t:0 "The Case of the Suebians"
+ TFE_major_decisions.0023.desc:0 "We have now united most of the Hispanic territory. Only the question of the Suevi kings remains. What should we do with them?"
+ TFE_major_decisions.0023.a:0 "They are part of Hispania and therefore must be subject to our power!"
+ TFE_major_decisions.0023.b:0 "Galicia is a territory apart from Hispania now. We must focus on our own lands."
+
+ #Concession of Italia || Selling Sicilia
+ germanic_events.0012.t:0 "The Concession of Sicilia"
+ germanic_events.0012.desc:0 "The island of Sicilia, once contested over by the Hellenes, Carthaginians, and Romans, has been a province of the Vandalic Kingdom for decades following our conquest of Africa in 439 AD. \n\nWhile the land is rich and fertile, it nonetheless remains a poorly-defended outpost in my realm. Rather than attempting to prolong our hold over the region and expend more resources than we can extract, however, I can try to sell most of Sicilia (but still retain Trapani and Malta to ensure our control of the Sicilian Narrows) to [buyer.GetName], who would surely welcome a trade for such a valuable region – so valuable, that one might even call the price extortionate..."
+ germanic_events.0012.option.a:0 "Send the missive to [buyer.GetName]"
+ germanic_events.0012.option.b:0 "On second thought..."
+ 
+ # Buying Sicilia
+ germanic_events.0013.t:0 "The Concession of Sicilia"
+ germanic_events.0013.desc:0 "A diplomatic overture has come from [seller.GetName], asking whether we would be interested in purchasing most of the island of Sicilia from them. While the price is frankly extortionate, Sicilia is a region rich in history and resources that would, in the long run, serve my realm well. What should be done?"
+ germanic_events.0013.option.a:0 "This works in our favor"
+ germanic_events.0013.option.b:0 "No sale"
+
+ # The Betrothal of Athalaric's Sister
+ germanic_events.0014.t:0 "Matasuntha's Marriage"
+ germanic_events.0014.desc:0 "As King of the Ostrogoths, Theodoric deftly managed relations between his loyal followers and the Roman bureaucrats that continue to administer much of Italia. Externally, strategic marriages to the Visigoths and Burgundians were central to his foreign policy in the West. \n\nIt now falls to you to tame your unruly vassals, who grow more restive by the day. To that end, a well-placed betrothal of your sister, Matasuntha, could defuse a potential threat to the throne and grant you a valuable internal ally. \n\n#bold Who should be selected for this honor?"
+ germanic_events.0014.option.a:0 "[suitor_1.GetName]"
+ germanic_events.0014.option.b:0 "[suitor_2.GetName]"
+ germanic_events.0014.option.c:0 "[suitor_3.GetName]"
+ germanic_events.0014.option.d:0 "Nobody"
+
+ # Amalasuntha's Rebellion
+ germanic_events.0016.t:0 "Amalasuntha's Contingency"
+ germanic_events.0016.desc:0 "Reports have reached the court in Constantinople from the Italian peninsula - the Queen Regent of the Ostrogothic Kingdom, Amalasuntha, has finally enacted her plans to bring Italia back under our fold, having always served as our ally and desiring to educate her son in the Roman way. \n\nWith Amalasuntha now under our protection, war between Ostrogothic loyalists and Roman forces attempting to secure control over the empire's former heartland has erupted. Most Roman officials living under Ostrogothic control have defected and the region of Illyria has quickly fallen beneath the Roman banner. \n\n#bold The Gothic War has begun."
+ germanic_events.0016.a:0 "Send aid immediately to our Vicar!"
+
+ germanic_events.0017.t:0 "Amalasuntha's Rebellion"
+ germanic_events.0017.desc:0 "Troubling reports have confirmed the worst - Amalasuntha has fled to the protection of the Eastern Roman Empire, formally returning the Italian peninsula to the Romans. War is now inevitable, and the integrity of the Ostrogothic Kingdom is under peril."
+ germanic_events.0017.a:0 "Treachery!"
+
+ germanic_events.0018.t:0 "Amalasuntha's Rebellion"
+ germanic_events.0018.desc:0 "Reports in the preceding days have been clouded under speculation and rumor, but the situation has now become clear - Amalasuntha, the Queen Regent of the Ostrogothic Kingdom, has formally returned Italia to direct Roman rule. \n\nWar is now inevitable between loyalists who cling to the idea of an independent Ostrogothic realm and rebels that seek to restore Italia under the standard of the Eastern Roman Empire. \n\n#bold The only question remaining is which side I will support in this new conflict - a conflict that will decide the fate of the Italian peninsula..."
+ germanic_events.0018.a:0 "My current side"
+ germanic_events.0018.b:0 "The opposing side"
+ germanic_events.0018.c:0 "Neither; I declare independence"
+
+ germanic_events.0019.t:0 "Amalasuntha's Regency"
+ germanic_events.0019.desc:0 "I have assumed leadership of the Ostrogoths only to find that my regent, Amalasuntha, insists on continuing to direct our policy towards the Romans, as if I, too, am her child. No longer! With the support of my vassals who are similarly disturbed by her pro-Roman tendencies, I can end this threat to my throne once and for all."
+ germanic_events.0019.a:0 "Get rid of this Roman lover"
+ germanic_events.0019.b:0 "I'll leave her for now"
+
+ germanic_events.0020.t:0 "Amalasuntha's Regency"
+ germanic_events.0020.desc:0 "My former regent, Amalasuntha, insists on continuing to direct our policy towards the Romans despite her dismissal as regent. No longer! With the support of my vassals who are similarly disturbed by her pro-Roman tendencies, I can end this threat to my throne once and for all."
+ germanic_events.0020.a:0 "Get rid of this Roman lover"
+ germanic_events.0020.b:0 "I'll leave her for now"
+
+ germanic_events.0021.t:0 "Amalasuntha's Regency"
+ germanic_events.0021.desc:0 "My mother, Amalasuntha, insists on continuing to direct our policy towards the Romans despite her dismissal as regent. It is past time she recognizes that I am capable of ruling in my own right -- and that I have my own concerns to deal with."
+ germanic_events.0021.a:0 "Send her to a monastery"
+ germanic_events.0021.b:0 "Surely she wouldn't plot against her own child"
+
+ germanic_events.0022.t:0 "The Dismissal of Amalasuntha"
+ germanic_events.0022.desc:0 "News comes from the Ostrogothic Kingdom that Amalasuntha has been dismissed from her position of regent. While her dismissal is a severe blow to our hopes of a peaceful handover of Italia to us, we can nevertheless use her deposition as a casus belli to intervene, potentially bringing Italia back under Roman control."
+ germanic_events.0022.a:0 "Strike while it's hot"
+ germanic_events.0022.b:0 "Wait and prepare"
+
+ germanic_events.0023.t:0 "The Death of Amalasuntha"
+ germanic_events.0023.desc:0 "News comes from the Ostrogothic Kingdom that Amalasuntha has died. While her death is a severe blow to our hopes of a peaceful handover of Italia to us, we can nevertheless use the Goth's new Roman policy as a casus belli to intervene, potentially bringing Italia back under Roman control."
+ germanic_events.0023.a:0 "Strike while it's hot"
+ germanic_events.0023.b:0 "Wait and prepare"
+
+ germanic_events.0024.t:0 "The Kingdom of the Franks"
+ germanic_events.0024.desc:0 "As the Frankish kingdoms are reunited back under one banner, we should make sure our people are no longer at a risk of division by establishing a Kingdom; one that unites all Franks spread out across both banks of the River Rhine. \n\nThe new Kingdom of the Franks shall see itself grow and prosper, but only if our ruler and their successors can truly allow for that to happen. \n\n#bold Regnum Francorum Invicta!"
+ germanic_events.0024.option:0 "United at last!"
+ germanic_events.0024.option.tooltip:0 "The Kingdom of the Franks is formed."
+ united_our_people:0 "United Our People"
+
+ germanic_events.0025.t:0 "Choosing a Commander"
+ germanic_events.0025.desc:0 "Now that I have decided to invade Italia, I must appoint a suitable commander to launch an assault from Sicily. \n\nTwo candidates have been proposed to lead the invasion. \n\n#bold Who shall I choose to attack at once?"
+ germanic_events.0025.a:0 "[commander_1.GetName] is my pick."
+ germanic_events.0025.b:0 "[commander_2.GetName] is capable."
+
+ germanic_events.0026.t:0 "Duty Calls"
+ germanic_events.0026.desc:0 "I have just received notice from the Emperor commanding me to lead an expedition to retake Italia from the duplicitous Goths. While a great honor, it also comes with heavy responsibilities. The war will commence immediately."
+ germanic_events.0026.a:0 "The Goths will fall!"
+
+ germanic_events.0027.t:0 "Duty Calls"
+ germanic_events.0027.desc:0 "I have just received notice from the Emperor commanding me to assist in retaking Italia from the duplicitous Goths. The war will commence immediately."
+ germanic_events.0027.a:0 "The Goths will fall!"
+
+ germanic_events.0029.t:0 "The Gothic Revival"
+ germanic_events.0029.desc:0 "Reports have reached the court in Constantinople from the Italian peninsula - the last remaining Goths left over from our recent conquest have risen up in rebellion! \n\nWar between Ostrogothic loyalists and Roman forces have broken out and Italia has descended into chaos. \n\n#bold The Gothic War has been reignited."
+ germanic_events.0029.a:0 "Treachery!"
+
+ germanic_events.0030.t:0 "The Gothic Revival"
+ germanic_events.0030.desc:0 "I have been anointed as the leader of the Gothic Revivalists, charged with regaining independence. Now is the time to free ourselves from the yoke of the Romans! Now is the time for war!"
+ germanic_events.0030.a:0 "For freedom!"
+ germanic_events.0030.b:0 "Actually, Roman rule sounds better."
+
+ germanic_events.0031.t:0 "The Gothic Revival"
+ germanic_events.0031.desc:0 "Reports in the preceding days have been clouded under speculation and rumor, but the situation has now become clear - the Goths have risen up against Roman rule once more. \n\nWar is now inevitable between loyalists who cling to the idea of an independent Ostrogothic realm and the Romans who had so recently thought to have pacified the Goths. \n\n#bold The only question remaining is which side I will support in this new conflict - a conflict that will decide the fate of the Italian peninsula..."
+ germanic_events.0031.a:0 "My current side"
+ germanic_events.0031.b:0 "The opposing side"
+ germanic_events.0031.c:0 "Neither; I declare independence"
+
+ germanic_events.0032.t:0 "Amalasuntha's Plot"
+ germanic_events.0032.desc:0 "News comes from the Ostrogothic Kingdom that Amalasuntha is ready to move forward with her plans to hand over Italia to us; she only awaits word of our approval. While we can potentially delay enactment of her plans, we should bear in mind that the political situation in the Ostrogothic Kingdom remains fluid..."
+ germanic_events.0032.a:0 "Strike while it's hot"
+ germanic_events.0032.b:0 "Wait and prepare"
+
+ germanic_events.0033.t:0 "Choosing a Commander"
+ germanic_events.0033.desc:0 "Now that I have decided to invade Italia, I must appoint a suitable commander to launch an assault. \n\nTwo candidates have been proposed to lead the invasion. \n\n#bold Who shall I choose to attack at once?"
+ germanic_events.0033.a:0 "[commander_1.GetName] is my pick."
+ germanic_events.0033.b:0 "[commander_2.GetName] is capable."
+
+ germanic_events.0034.t:0 "The Gothic Revival"
+ germanic_events.0034.desc:0 "The Goths have risen once more against the Romans. While not their leader, I remain invested in the fortunes of those now battling in Italia. Opportunity awaits those bold enough to seize it..."
+ germanic_events.0034.a:0 "If only I was in charge..."
+ germanic_events.0034.b:0 "I wonder how they will fare..."

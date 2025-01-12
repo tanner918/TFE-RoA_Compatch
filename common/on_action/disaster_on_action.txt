@@ -1,0 +1,80 @@
+﻿
+
+# Rice pulse!
+yearly_playable_pulse = {
+	on_actions = {
+		delay = { days = 15 }
+		disaster_pulse_yearly
+	}
+}
+
+yearly_global_pulse = {
+	on_actions = {
+		delay = { days = 15 }
+		disaster_global_pulse_yearly
+	}
+}
+
+
+disaster_global_pulse_yearly = {
+
+	random_events = {
+		chance_of_no_event = {
+			value = 30 # should be 30 for a RICElike effect
+		}
+			
+		10000 = 0
+		
+		# Disaster random events
+		# Non Char Events
+
+		100 = disaster.0013 # Random Earthquake 
+		100 = disaster.0014 # Random Fires
+		100 = disaster.0015 # Random Floods
+		100 = disaster.0016 # Random Tornadoes
+		100 = disaster.0017 # Random Landslide
+		100 = disaster.0018 # Random Avalanche
+
+	}
+
+	#events = {
+	#	
+	#	# Disaster forced events
+	#	# These will require specific triggers
+	#	# Nonchar events
+	#	
+	#	100 = disaster.0100 # Garama bye bye
+	#	100 = disaster.0102 # k_garamantes is destroyed # IA
+	#	100 = disaster.0104 # Garama reverts back to tribal ways # IA 
+	#	100 = disaster.0110 # Garama declines # IA
+	#	
+	#}
+
+}
+
+disaster_pulse_yearly = {
+
+	trigger = {
+		disaster_available = yes
+	}
+
+	random_events = {
+			
+		# 10000 = 0
+		
+		# Disaster forced events
+		# These will require specific triggers
+		# Char events
+
+		100 = disaster.0009 # Edessa Anger Chain
+		100 = disaster.0010 # The Dust Veil
+		100 = disaster.0011 # Earthquake in Latium
+		100 = disaster.0012 # Wrecked Field
+		#100 = disaster.0101 # k_garamantes is destroyed # player
+		#100 = disaster.0103 # Garama reverts back to tribal ways # player 
+		#100 = disaster.0109 # Garama declines # player
+		
+	}
+
+}
+

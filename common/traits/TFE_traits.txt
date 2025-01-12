@@ -1,0 +1,525 @@
+﻿blue_support = {
+	same_opinion = 10
+	opposite_opinion = -10
+	icon = blue_supporter.dds
+	opposites = {
+		green_support
+	}
+	
+	ruler_designer_cost = 0
+	
+	desc = {
+		first_valid = {
+			desc = trait_blue_support_desc
+		}
+	}
+}
+
+blue_charioteer = {
+	same_opinion = 10
+	opposite_opinion = -10
+	prowess = 2
+	intrigue = 2
+	icon = blue_supporter.dds
+	opposites = {
+		green_support
+	}
+	
+	shown_in_ruler_designer = no
+	
+	desc = {
+		first_valid = {
+			desc = trait_blue_support_desc
+		}
+	}
+}
+
+green_support = {
+	same_opinion = 10
+	opposite_opinion = -10
+	icon = green_supporter.dds
+
+	opposites = {
+		blue_support
+	}
+	
+	ruler_designer_cost = 0
+	
+	desc = {
+		first_valid = {
+			desc = trait_green_support_desc
+		}
+	}
+}
+
+green_charioteer = {
+	same_opinion = 10
+	opposite_opinion = -10
+	prowess = 2
+	intrigue = 2
+	icon = green_supporter.dds
+
+	opposites = {
+		blue_support
+	}
+
+	shown_in_ruler_designer = no
+
+	desc = {
+		first_valid = {
+			desc = trait_green_support_desc
+		}
+	}
+}
+
+restitutor_orbis = {
+	vassal_opinion = 20
+	fame = yes
+	monthly_prestige = 2
+	martial = 2
+	stewardship = 2
+	diplomacy = 2
+	monthly_influence = 5
+	icon = restitutor_orbis.dds
+	
+	shown_in_ruler_designer = no
+
+	desc = {
+		first_valid = {
+			desc = trait_restitutor_orbis_desc
+		}
+	}
+}
+
+sahabi_trait = {
+	vassal_opinion = 50
+	monthly_prestige = 1.5
+	same_faith_opinion = 20
+	icon = sahabi.dds
+
+	shown_in_ruler_designer = no
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_sahabi_desc
+			}
+			desc = trait_sahabi_desc
+		}
+	}
+}
+
+adopted_trait = {
+	diplomacy = -1
+	same_opinion = 10
+	dynasty_opinion = -20
+	inbreeding_chance = -1
+	icon = adopted.dds
+
+	shown_in_ruler_designer = no
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { 
+					exists = culture
+					culture = { has_cultural_pillar = heritage_latin } 
+				}
+				desc = trait_adopted_roman_desc
+			}
+			desc = trait_adopted_desc
+		}
+	}
+}
+
+gladiator_trait = {
+	diplomacy = -3
+	martial = 2
+	stewardship = -3
+	intrigue = -3
+	learning = -3
+	prowess = 4
+	health = 0.5
+	
+	general_opinion = -25
+	same_opinion = 5
+	
+	ai_boldness = 20
+	
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					exists = this
+					is_female = yes
+				}
+				desc = trait_gladiator_trait_female
+			}
+			desc = trait_gladiator_trait
+		}
+	}
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_gladiator_desc
+			}
+			desc = trait_gladiator_character_desc
+		}
+	}
+	group = gladiator_group
+	level = 1
+}
+
+former_gladiator_trait = {
+	diplomacy = -1
+	martial = 2
+	stewardship = -1
+	intrigue = -1
+	learning = -1
+	prowess = 4
+	health = 0.5
+	
+	general_opinion = -15
+	same_opinion = 5
+	
+	ai_boldness = 20
+	
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					exists = this
+					is_female = yes
+				}
+				desc = trait_former_gladiator_trait_female
+			}
+			desc = trait_former_gladiator_trait
+		}
+	}
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_former_gladiator_desc
+			}
+			desc = trait_former_gladiator_character_desc
+		}
+	}
+	group = gladiator_group
+	level = 2
+}
+
+the_hun = {
+	category = fame
+	martial = 3
+	prowess = 3
+	monthly_prestige = 2
+	icon = greatest_of_khans.dds
+
+	same_culture_opinion = 10
+	dread_baseline_add = 50
+	dread_decay_mult = -0.5
+	enemy_hostile_scheme_phase_duration_add = monumental_scheme_phase_duration_malus_value
+	enemy_hostile_scheme_success_chance_add = -25
+	vassal_limit = 50
+	minority_opinion = 40
+	army_maintenance_mult = -0.5
+	siege_phase_time = -0.5
+	archer_cavalry_siege_value_add = 0.5
+	light_cavalry_siege_value_add = 0.5
+	supply_duration = 1
+	hostile_county_attrition = -0.5
+
+	archer_cavalry_toughness_mult = 1
+	light_cavalry_toughness_mult = 1
+	heavy_cavalry_toughness_mult = 1
+	
+	archer_cavalry_damage_mult = 1
+	light_cavalry_damage_mult = 1
+	heavy_cavalry_damage_mult = 1
+
+	ai_boldness = 50
+	ai_energy = 50
+
+	shown_in_ruler_designer = no
+
+	desc = {
+		first_valid = {
+			desc = trait_the_hun_desc
+		}
+	}
+
+}
+
+heir_of_attila = {
+	category = fame
+	martial = 3
+	prowess = 3
+	monthly_prestige = 2
+	icon = greatest_of_khans.dds
+
+	same_culture_opinion = 10
+	dread_baseline_add = 25
+	dread_decay_mult = -0.25
+	enemy_hostile_scheme_phase_duration_add = medium_scheme_phase_duration_malus_value
+	enemy_hostile_scheme_success_chance_add = -10
+	vassal_limit = 20
+	army_maintenance_mult = -0.25
+	siege_phase_time = -0.25
+	archer_cavalry_siege_value_add = 0.2
+	light_cavalry_siege_value_add = 0.2
+	supply_duration = 0.5
+	hostile_county_attrition = -0.25
+
+	archer_cavalry_toughness_mult = 0.5
+	light_cavalry_toughness_mult = 0.5
+	heavy_cavalry_toughness_mult = 0.5
+	
+	archer_cavalry_damage_mult = 0.5
+	light_cavalry_damage_mult = 0.5
+	heavy_cavalry_damage_mult = 0.5
+
+	ai_boldness = 50
+	ai_energy = 50
+
+	shown_in_ruler_designer = no
+
+	desc = {
+		first_valid = {
+			desc = trait_heir_of_attila_desc
+		}
+	}
+
+}
+
+low_senator = {
+	category = fame
+	icon = low_senator.dds
+
+	same_culture_opinion = 5
+	diplomacy = 1
+	intrigue = 1
+	monthly_influence = 1
+	#monthly_income = 1
+
+	#can_inherit = no
+	#blocks_from_claim_inheritance = yes
+
+	shown_in_ruler_designer = no
+
+	desc = {
+		first_valid = {
+			desc = low_senator_desc
+		}
+	}
+}
+
+senator = {
+	category = fame
+	icon = senator.dds
+
+	same_culture_opinion = 10
+	diplomacy = 2
+	intrigue = 2
+	monthly_influence = 2
+	#monthly_income = 2
+
+	#can_inherit = no
+	#blocks_from_claim_inheritance = yes
+
+	shown_in_ruler_designer = no
+
+	desc = {
+		first_valid = {
+			desc = senator_desc
+		}
+	}
+}
+
+high_senator = {
+	category = fame
+	icon = high_senator.dds
+
+	same_culture_opinion = 15
+	diplomacy = 4
+	intrigue = 4
+	monthly_influence = 3
+	#monthly_income = 4
+
+	#can_inherit = no
+	#blocks_from_claim_inheritance = yes
+
+	shown_in_ruler_designer = no
+
+	desc = {
+		first_valid = {
+			desc = high_senator_desc
+		}
+	}
+}
+
+former_senator = {
+	category = fame
+	icon = former_senator.dds
+
+	same_culture_opinion = 2
+	diplomacy = 2
+	intrigue = 2
+	monthly_influence = 1
+	monthly_income = 1
+
+	desc = {
+		first_valid = {
+			desc = former_senator_desc
+		}
+	}
+}
+
+training_senator = {
+	category = fame
+	icon = training_senator.dds
+	diplomacy = 2
+	intrigue = 2
+	monthly_influence = 0.5
+
+	can_inherit = no
+	blocks_from_claim_inheritance = yes
+	shown_in_ruler_designer = no
+
+	desc = {
+		first_valid = {
+			desc = training_senator_desc
+		}
+	}
+}
+
+apotheosised_trait = {
+	same_faith_opinion = 20
+	icon = blood_of_prophet.dds
+
+	shown_in_ruler_designer = no
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = apotheosised_trait_desc
+			}
+			desc = apotheosised_trait_desc
+		}
+	}
+}
+
+brahmin = {
+	category = fame
+	same_opinion = 10
+	monthly_piety_gain_mult = 0.2
+	opposites = {
+		kshatriya
+		vaishya
+		shudra
+	}
+	name = {
+		first_valid = {
+			desc = trait_brahmin
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_brahmin_desc
+			}
+			desc = trait_brahmin_character_desc
+		}
+	}
+}
+
+kshatriya = {
+	category = fame
+	same_opinion = 10
+	monthly_prestige_gain_mult = 0.2
+	popular_opinion = 10
+	opposites = {
+		brahmin
+		vaishya
+		shudra
+	}
+	name = {
+		first_valid = {
+			desc = trait_kshatriya
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_kshatriya_desc
+			}
+			desc = trait_kshatriya_character_desc
+		}
+	}
+}
+
+vaishya = {
+	category = fame
+	same_opinion = 10
+	tax_mult = 0.15
+	opposites = {
+		brahmin
+		kshatriya
+		shudra
+	}
+	name = {
+		first_valid = {
+			desc = trait_vaishya
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_vaishya_desc
+			}
+			desc = trait_vaishya_character_desc
+		}
+	}
+}
+
+shudra = {
+	category = fame
+	same_opinion = 10
+	monthly_prestige_gain_mult = -0.25
+	monthly_piety_gain_mult = -0.25
+	opposites = {
+		brahmin
+		kshatriya
+		vaishya
+	}
+	name = {
+		first_valid = {
+			desc = trait_shudra
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = trait_shudra_desc
+			}
+			desc = trait_shudra_character_desc
+		}
+	}
+}

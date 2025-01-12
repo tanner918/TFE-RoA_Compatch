@@ -1,0 +1,295 @@
+﻿mass_migration_attacker_counties = {
+	value = 0
+	every_in_list = {
+		list = titles_taken_total
+		add = 1
+	}
+	divide = 3
+}
+mass_migration_sub_attacker_counties = {
+	value = 0
+	every_in_list = {
+		list = titles_taken_total
+		add = 1
+	}
+	subtract = mass_migration_attacker_counties
+	subtract = 1
+	divide = mass_migration_sub_attacker_number
+}
+mass_migration_sub_attacker_number = {
+	value = 0
+	scope:war = {
+		every_war_attacker = {
+			limit = {
+				has_character_flag = mass_migrant_participant
+			}
+			add = 1
+		}
+	}
+}
+migration_levies_value = {
+	value = 0
+	every_realm_county = {
+		limit = {
+			culture = scope:attacker.culture
+		}
+		add = 1
+	}
+}
+
+# Migration strength game rule
+migration_army_levies_small = {
+	value = 500
+	if = {
+		limit = {
+			has_game_rule = migration_strength_weaker
+		}
+		subtract = 250
+	}
+	if = {
+		limit = {
+			has_game_rule = migration_strength_stronger
+		}
+		add = 250
+	}
+	if = {
+		limit = {
+			has_game_rule = migration_strength_much_stronger
+		}
+		add = 500
+	}
+	if = {
+		limit = {
+			has_game_rule = migration_strength_apocalyptic
+		}
+		add = 1000
+	}
+}
+migration_army_levies_medium = {
+	value = 1000
+	if = {
+		limit = {
+			has_game_rule = migration_strength_weaker
+		}
+		subtract = 500
+	}
+	if = {
+		limit = {
+			has_game_rule = migration_strength_stronger
+		}
+		add = 500
+	}
+	if = {
+		limit = {
+			has_game_rule = migration_strength_much_stronger
+		}
+		add = 1000
+	}
+	if = {
+		limit = {
+			has_game_rule = migration_strength_apocalyptic
+		}
+		add = 2000
+	}
+}
+migration_army_levies_large = {
+	value = 2500
+	if = {
+		limit = {
+			has_game_rule = migration_strength_weaker
+		}
+		subtract = 1250
+	}
+	if = {
+		limit = {
+			has_game_rule = migration_strength_stronger
+		}
+		add = 1250
+	}
+	if = {
+		limit = {
+			has_game_rule = migration_strength_much_stronger
+		}
+		add = 2500
+	}
+	if = {
+		limit = {
+			has_game_rule = migration_strength_apocalyptic
+		}
+		add = 5000
+	}
+}
+migration_army_levies_very_large = {
+	value = 5000
+	if = {
+		limit = {
+			has_game_rule = migration_strength_weaker
+		}
+		subtract = 2500
+	}
+	if = {
+		limit = {
+			has_game_rule = migration_strength_stronger
+		}
+		add = 2500
+	}
+	if = {
+		limit = {
+			has_game_rule = migration_strength_much_stronger
+		}
+		add = 5000
+	}
+	if = {
+		limit = {
+			has_game_rule = migration_strength_apocalyptic
+		}
+		add = 10000
+	}
+}
+
+migration_army_maa_small = {
+	value = 2
+	if = {
+		limit = {
+			has_game_rule = migration_strength_weaker
+		}
+		subtract = 1
+	}
+	if = {
+		limit = {
+			has_game_rule = migration_strength_stronger
+		}
+		add = 1
+	}
+	if = {
+		limit = {
+			has_game_rule = migration_strength_much_stronger
+		}
+		add = 2
+	}
+	if = {
+		limit = {
+			has_game_rule = migration_strength_apocalyptic
+		}
+		add = 4
+	}
+}
+migration_army_maa_medium = {
+	value = 5
+	if = {
+		limit = {
+			has_game_rule = migration_strength_weaker
+		}
+		subtract = 3
+	}
+	if = {
+		limit = {
+			has_game_rule = migration_strength_stronger
+		}
+		add = 3
+	}
+	if = {
+		limit = {
+			has_game_rule = migration_strength_much_stronger
+		}
+		add = 5
+	}
+	if = {
+		limit = {
+			has_game_rule = migration_strength_apocalyptic
+		}
+		add = 10
+	}
+}
+migration_army_maa_large = {
+	value = 10
+	if = {
+		limit = {
+			has_game_rule = migration_strength_weaker
+		}
+		subtract = 5
+	}
+	if = {
+		limit = {
+			has_game_rule = migration_strength_stronger
+		}
+		add = 5
+	}
+	if = {
+		limit = {
+			has_game_rule = migration_strength_much_stronger
+		}
+		add = 10
+	}
+	if = {
+		limit = {
+			has_game_rule = migration_strength_apocalyptic
+		}
+		add = 20
+	}
+}
+migration_army_maa_very_large = {
+	value = 15
+	if = {
+		limit = {
+			has_game_rule = migration_strength_weaker
+		}
+		subtract = 7
+	}
+	if = {
+		limit = {
+			has_game_rule = migration_strength_stronger
+		}
+		add = 7
+	}
+	if = {
+		limit = {
+			has_game_rule = migration_strength_much_stronger
+		}
+		add = 15
+	}
+	if = {
+		limit = {
+			has_game_rule = migration_strength_apocalyptic
+		}
+		add = 30
+	}
+}
+
+slavic_migration_frequency = {
+	value = 0
+
+	if = {
+		limit = {
+			has_game_rule = tfe_migrations_very_rare
+		}
+		add = 25
+	}
+	else_if = {
+		limit = {
+			has_game_rule = tfe_migrations_rare
+		}
+		add = 15
+	}
+	else_if = {
+		limit = {
+			has_game_rule = tfe_migrations_occasional
+		}
+		add = 10
+	}
+	else_if = {
+		limit = {
+			has_game_rule = tfe_migrations_frequent
+		}
+		add = 5
+	}
+	else_if = {
+		limit = {
+			has_game_rule = tfe_migrations_very_frequent
+		}
+		add = 3
+	}
+	else = {
+		add = 1
+	}
+}

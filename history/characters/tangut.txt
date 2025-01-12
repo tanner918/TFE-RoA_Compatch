@@ -1,0 +1,902 @@
+﻿12200 = {
+	name="Shihuo" # Fictional
+	dynasty=19107 # Fuqi
+	
+	culture = tangut
+	religion = vajrayana
+	
+	742.1.1={
+		birth=yes
+	}
+	795.1.1={
+		death=yes
+	}
+}
+
+12201 = {
+	name="Hongzhen" # Fictional
+	dynasty=19108 # Gar
+	
+	culture = bodpa
+	religion = vajrayana
+	
+	745.1.1={
+		birth=yes
+	}
+	785.1.1={
+		death=yes
+	}
+}
+
+12202 = {
+	name="Qianshun" # Fictional
+	dynasty=19109 # Samtho
+	
+	culture = tangut
+	religion = vajrayana
+	
+	744.1.1={
+		birth=yes
+	}
+	798.1.1={
+		death=yes
+	}
+}
+
+#khitan
+206600 =  {
+	name="Liwei"
+	dynasty=1029300 #Tuoba
+	religion="tengri_pagan"
+	culture="khitan"
+	200.1.1={
+		birth=yes
+	}
+	277.1.1={
+		death=yes
+	}
+}
+206601 =  {
+	name="Shamohan"
+	dynasty=1029300 #Tuoba
+	religion="tengri_pagan"
+	culture="khitan"
+	father=206600
+	220.1.1={
+		birth=yes
+	}
+	277.1.1={
+		death=yes
+	}
+}
+206602 =  {
+	name="Fu"
+	dynasty=1029300 #Tuoba
+	religion="tengri_pagan"
+	culture="khitan"
+	father=206601
+	245.1.1={
+		birth=yes
+	}
+	294.1.1={
+		death=yes
+	}
+}
+206603 =  {
+	name="YulU_"
+	dynasty=1029300 #Tuoba
+	religion="tengri_pagan"
+	culture="khitan"
+	father=206602
+	275.1.1={
+		birth=yes
+	}
+	321.1.1={
+		death=yes
+	}
+}
+206604 =  {
+	name="Shijiyan"
+	dynasty=1029300 #Tuoba
+	religion="tengri_pagan"
+	culture="khitan"
+	father=206603
+	305.1.1={
+		birth=yes
+	}
+	376.1.1={
+		death=yes
+	}
+}
+206605 = {
+	name="Ping" #fictional name
+	dynasty=105818 #Murong
+	religion="tengri_pagan"
+	culture="khitan"
+	female=yes
+	father=247347
+	305.1.1={
+		birth=yes
+	}
+	351.1.1={
+		death=yes
+	}
+}
+206606 =  {
+	name="Shi"
+	dynasty=1029300 #Tuoba
+	religion="tengri_pagan"
+	culture="khitan"
+	father=206604
+	mother=206605
+	335.1.1={
+		birth=yes
+	}
+	371.1.1={
+		death=yes
+	}
+}
+206607 =  {
+	name="Shegui"
+	dynasty=1029300 #Tuoba
+	religion="tengri_pagan"
+	culture="khitan"
+	father=206606
+	mother=206609
+	371.1.1={
+		birth=yes
+	}
+	409.1.1={
+		death=yes
+	}
+}
+206608 =  {
+	name="Yegan" #fictitious
+	dynasty=1029301 #Helan
+	religion="tengri_pagan"
+	culture="khitan"
+	300.1.1={
+		birth=yes
+	}
+	377.1.1={
+		death=yes
+	}
+}
+206609 =  {
+	name="Xianming" #fictitious
+	dynasty=1029301 #Helan
+	religion="tengri_pagan"
+	culture="khitan"
+	female=yes
+	father=206608
+	340.1.1={
+		birth=yes
+	}
+	396.1.1={
+		death=yes
+	}
+}
+206610 =  {
+	name="Si" #fictitious
+	dynasty=1029300 #Tuoba
+	religion="tengri_pagan"
+	culture="khitan"
+	father=206607
+	400.1.1={
+		birth=yes
+	}
+	473.1.1={
+		death=yes
+	}
+}
+206611 =  {
+	name="Tao" #fictitious
+	dynasty=1029300 #Tuoba
+	religion="tengri_pagan"
+	culture="khitan"
+	father=206610
+	428.1.1={
+		birth=yes
+	}
+	502.1.1={
+		death=yes
+	}
+}
+206612 =  {
+	name="Huang" #fictitious
+	dynasty=1029300 #Tuoba
+	religion="tengri_pagan"
+	culture="khitan"
+	father=206611
+	451.1.1={
+		birth=yes
+	}
+	531.1.1={
+		death=yes
+	}
+}
+206613 =  {
+	name="Jun" #fictitious
+	dynasty=1029300 #Tuoba
+	religion="tengri_pagan"
+	culture="khitan"
+	father=206612
+	490.1.1={
+		birth=yes
+	}
+	565.1.1={
+		death=yes
+	}
+}
+206614 =  {
+	name="Hong" #fictitious
+	dynasty=1029300 #Tuoba
+	religion="tengri_pagan"
+	culture="khitan"
+	father=206613
+	524.1.1={
+		birth=yes
+	}
+	576.1.1={
+		death=yes
+	}
+}
+206615 = {
+	name="Pusuwan"
+	female=yes
+	dynasty=105818 #Murong
+	religion="tengri_pagan"
+	culture="khitan"
+	father=247378
+	536.1.1={
+		birth=yes
+	}
+	595.1.1={
+		death=yes
+	}
+}
+
+#tangut
+206616 =  {
+	name="Ningcong"
+	dynasty=1029317 #Tuoba
+	religion="melieism"
+	culture="tangut"
+	
+	father=206614
+	mother=206615
+	550.1.1={
+		birth=yes
+	}
+	588.1.1={
+		death=yes
+	}
+}
+206617 =  {
+	name="Mumi" #
+	dynasty=1029317 #Tuoba
+	religion="melieism"
+	culture="tangut"
+	
+	father=206616
+	568.1.1={
+		birth=yes
+	}
+	631.1.1={
+		death=yes
+	}
+}
+206618 =  {
+	name="Chici" #
+	dynasty=1029317 #Tuoba
+	religion="melieism"
+	culture="tangut"
+	
+	father=206617
+	588.1.1={
+		birth=yes
+	}
+	649.1.1={
+		death=yes
+	}
+}
+206619 =  {
+	name="Lijia" #
+	dynasty=1029317 #Tuoba
+	religion="melieism"
+	culture="tangut"
+	
+	father=206618
+	605.1.1={
+		birth=yes
+	}
+	662.1.1={
+		death=yes
+	}
+}
+206620 =  {
+	name="Luozhou" #
+	dynasty=1029317 #Tuoba
+	religion="melieism"
+	culture="tangut"
+	
+	father=206619
+	625.1.1={
+		birth=yes
+	}
+	676.1.1={
+		death=yes
+	}
+}
+
+206621 =  {
+	name="Houna"
+	dynasty=1029317 #Tuoba
+	religion="melieism"
+	culture="tangut"
+	
+	father=206620
+	645.1.1={
+		birth=yes
+	}
+	692.1.1={
+		death=yes
+	}
+}
+206622 = {
+	name="Sitai" #
+	dynasty=1029317 #Tuoba
+	religion="melieism"
+	culture="tangut"
+	
+	father=206621
+	662.1.1={
+		birth=yes
+	}
+	721.11.1={
+		death=yes
+	}
+}
+206623 =  {
+	name="Shouji" #
+	dynasty=1029317 #Tuoba
+	religion="melieism"
+	culture="tangut"
+	
+	father=206622
+	682.1.1={
+		birth=yes
+	}
+	736.1.1={
+		death=yes
+	}
+}
+206624 =  {
+	name="Chenglan" #
+	dynasty=1029317 #Tuoba
+	religion="zhengyi"
+	culture="tangut"
+	
+	father=206623
+	700.1.1={
+		birth=yes
+	}
+	765.1.1={
+		death=yes
+	}
+}
+206625 =  {
+	name="Chaoguang"
+	dynasty=1029317 #Tuoba
+	religion="zhengyi"
+	culture="tangut"
+	trait=zealous
+	father=206624
+	741.1.1={
+		birth=yes
+	}
+	786.1.1={
+		death=yes
+	}
+}
+206626 =  {
+	name="Qianhui"
+	dynasty=1029317 #Tuoba
+	religion="zhengyi"
+	culture="tangut"
+	trait=zealous
+	father=206625
+	768.1.1={
+		birth=yes
+	}
+	806.1.1={
+		death=yes
+	}
+}
+206627 =  {
+	name="Chengxian"
+	dynasty=1029317 #Tuoba
+	religion="zhengyi"
+	culture="tangut"
+	trait=zealous
+	father=206624
+	746.1.1={
+		birth=yes
+	}
+	822.1.1={
+		death=yes
+	}
+}
+206691 = {
+	name="Duoluo" #fictional name
+	dynasty=1029318 #Xifeng
+	religion="melieism"
+	culture="tangut"
+	
+	700.1.1={
+		birth=yes
+	}
+	773.1.1={
+		death=yes
+	}
+}
+206692 = {
+	name="Abugu" #fictional name
+	dynasty=1029319 #Feiting
+	religion="melieism"
+	culture="tangut"
+	
+	710.1.1={
+		birth=yes
+	}
+	770.1.1={
+		death=yes
+	}
+}
+206693 = {
+	name="Shaogu" #fictional name
+	dynasty=1029320 #Wangli
+	religion="melieism"
+	culture="tangut"
+	
+	707.1.1={
+		birth=yes
+	}
+	779.1.1={
+		death=yes
+	}
+}
+206694 = {
+	name="Hechen" #fictional name
+	dynasty=1029321 #Pochao
+	religion="melieism"
+	culture="tangut"
+	
+	703.1.1={
+		birth=yes
+	}
+	772.1.1={
+		death=yes
+	}
+}
+206695 = {
+	name="Mohui" #fictional name
+	dynasty=1029318 #Xifeng
+	religion="melieism"
+	culture="tangut"
+	
+	father=206691
+	730.1.1={
+		birth=yes
+	}
+	799.1.1={
+		death=yes
+	}
+}
+206696 = {
+	name="Kuge" #fictional name
+	dynasty=1029319 #Feiting
+	religion="melieism"
+	culture="tangut"
+	
+	father=206692
+	735.1.1={
+		birth=yes
+	}
+	772.1.1={
+		death=yes
+	}
+}
+206697 = {
+	name="Shihuo" #fictional name
+	dynasty=1029320 #Wangli
+	religion="melieism"
+	culture="tangut"
+	
+	father=206693
+	737.1.1={
+		birth=yes
+	}
+	775.1.1={
+		death=yes
+	}
+}
+206698 = {
+	name="Mergan" #fictional name
+	dynasty=1029321 #Pochao
+	religion="melieism"
+	culture="tangut"
+	
+	father=206694
+	734.1.1={
+		birth=yes
+	}
+	770.1.1={
+		death=yes
+	}
+}
+206699 = {
+	name="Pugen" #fictional name
+	dynasty=1029322 #Yeci
+	religion="melieism"
+	culture="tangut"
+	
+	703.1.1={
+		birth=yes
+	}
+	772.1.1={
+		death=yes
+	}
+}
+206700 = {
+	name="Luguan" #fictional name
+	dynasty=1029322 #Yeci
+	religion="melieism"
+	culture="tangut"
+	
+	father=206699
+	735.1.1={
+		birth=yes
+	}
+	777.1.1={
+		death=yes
+	}
+}
+206701 = {
+	name="Yituo" #fictional name
+	dynasty=1029323 #Fangdang
+	religion="melieism"
+	culture="tangut"
+	
+	713.1.1={
+		birth=yes
+	}
+	778.1.1={
+		death=yes
+	}
+}
+206702 = {
+	name="Liwei" #fictional name
+	dynasty=1029323 #Fangdang
+	religion="melieism"
+	culture="tangut"
+	
+	father=206701
+	733.1.1={
+		birth=yes
+	}
+	773.1.1={
+		death=yes
+	}
+}
+206703 = {
+	name="Biyan" #fictional name
+	dynasty=1029324 #Miqin
+	religion="melieism"
+	culture="tangut"
+	
+	711.1.1={
+		birth=yes
+	}
+	770.1.1={
+		death=yes
+	}
+}
+206704 = {
+	name="Mopei" #fictional name
+	dynasty=1029324 #Miqin
+	religion="melieism"
+	culture="tangut"
+	
+	father=206703
+	736.1.1={
+		birth=yes
+	}
+	771.1.1={
+		death=yes
+	}
+}
+206750 = {
+	name="Bishe" #fictional name
+	dynasty=1029318 #Xifeng
+	religion="melieism"
+	culture="tangut"
+	
+	father=206695
+	751.1.1={
+		birth=yes
+	}
+	799.1.1={
+		death=yes
+	}
+}
+206751 = {
+	name="Dashi" #fictional name
+	dynasty=1029319 #Feiting
+	religion="melieism"
+	culture="tangut"
+	
+	father=206696
+	755.1.1={
+		birth=yes
+	}
+	797.1.1={
+		death=yes
+	}
+}
+206752 = {
+	name="Deguang" #fictional name
+	dynasty=1029320 #Wangli
+	religion="melieism"
+	culture="tangut"
+	
+	father=206697
+	752.1.1={
+		birth=yes
+	}
+	798.1.1={
+		death=yes
+	}
+}
+206753 = {
+	name="Ruan" #fictional name
+	dynasty=1029321 #Pochao
+	religion="melieism"
+	culture="tangut"
+	
+	father=206698
+	754.1.1={
+		birth=yes
+	}
+	803.1.1={
+		death=yes
+	}
+}
+206754 = {
+	name="Ketuyu" #fictional name
+	dynasty=1029322 #Yeci
+	religion="melieism"
+	culture="tangut"
+	
+	father=206700
+	754.1.1={
+		birth=yes
+	}
+	803.1.1={
+		death=yes
+	}
+}
+206755 = {
+	name="Xiuge" #fictional name
+	dynasty=1029323 #Fangdang
+	religion="melieism"
+	culture="tangut"
+	
+	father=206702
+	753.1.1={
+		birth=yes
+	}
+	800.1.1={
+		death=yes
+	}
+}
+206756 = {
+	name="Yanchege" #fictional name
+	dynasty=1029324 #Miqin
+	religion="melieism"
+	culture="tangut"
+	
+	father=206704
+	755.1.1={
+		birth=yes
+	}
+	802.1.1={
+		death=yes
+	}
+}
+206757 = {
+	name="Saige" #fictional name
+	dynasty=1029318 #Xifeng
+	female=yes
+	religion="melieism"
+	culture="tangut"
+	
+	father=206695
+	752.1.1={
+		birth=yes
+	}
+	798.1.1={
+		death=yes
+	}
+}
+206758 = {
+	name="Shige" #fictional name
+	dynasty=1029319 #Feiting
+	female=yes
+	religion="melieism"
+	culture="tangut"
+	
+	father=206696
+	756.1.1={
+		birth=yes
+	}
+	801.1.1={
+		death=yes
+	}
+}
+206759 = {
+	name="Tabuyan" #fictional name
+	dynasty=1029320 #Wangli
+	female=yes
+	religion="melieism"
+	culture="tangut"
+	
+	father=206697
+	753.1.1={
+		birth=yes
+	}
+	805.1.1={
+		death=yes
+	}
+}
+206760 = {
+	name="Bage" #fictional name
+	dynasty=1029321 #Pochao
+	female=yes
+	religion="melieism"
+	culture="tangut"
+	
+	father=206698
+	754.1.1={
+		birth=yes
+	}
+	810.1.1={
+		death=yes
+	}
+}
+206761 = {
+	name="Ping" #fictional name
+	dynasty=1029322 #Yeci
+	female=yes
+	religion="melieism"
+	culture="tangut"
+	
+	father=206700
+	755.1.1={
+		birth=yes
+	}
+	803.1.1={
+		death=yes
+	}
+}
+206762 = {
+	name="Shuogu" #fictional name
+	dynasty=1029323 #Fangdang
+	female=yes
+	religion="melieism"
+	culture="tangut"
+	
+	father=206702
+	752.1.1={
+		birth=yes
+	}
+	820.1.1={
+		death=yes
+	}
+}
+206763 = {
+	name="Yingtian" #fictional name
+	dynasty=1029324 #Miqin
+	female=yes
+	religion="melieism"
+	culture="tangut"
+	
+	father=206704
+	756.1.1={
+		birth=yes
+	}
+	823.1.1={
+		death=yes
+	}
+}
+## keky
+qiang_22  = {
+	name="Houna"
+	religion="melieism"
+	culture="tangut"
+	331.1.1={
+		birth=yes
+	}
+	400.1.1={
+		death=yes
+	}
+}
+qiang_30 = {
+	name="Sitai"
+	religion="melieism"
+	culture="tangut"
+	444.1.1={
+		birth=yes
+	}
+	500.1.1={
+		death=yes
+	}
+}
+
+qiang_21  = {
+	name="Yingtian"
+	religion="melieism"
+	culture="tangut"
+	female = yes
+	327.1.1={
+		birth=yes
+	}
+	400.1.1={
+		death=yes
+	}
+}
+qiang_29 = {
+	name="Mergan"
+	religion="melieism"
+	culture="tangut"
+	443.1.1={
+		birth=yes
+	}
+	500.1.1={
+		death=yes
+	}
+}
+qiang_23  = {
+	name="Kungtriak"
+	religion="melieism"
+	culture="tangut"
+	334.1.1={
+		birth=yes
+	}
+	400.1.1={
+		death=yes
+	}
+}
+qiang_24  = {
+	name="Dianni"
+	religion="melieism"
+	culture="tangut"
+	female = yes
+	339.1.1={
+		birth=yes
+	}
+	400.1.1={
+		death=yes
+	}
+}
+qiang_32 = {
+	name="Kai"
+	religion="melieism"
+	culture="tangut"
+	429.1.1={
+		birth=yes
+	}
+	500.1.1={
+		death=yes
+	}
+}

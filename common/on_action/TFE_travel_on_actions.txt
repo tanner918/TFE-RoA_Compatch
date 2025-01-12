@@ -1,0 +1,68 @@
+﻿
+
+on_travel_plan_complete = {
+	on_actions = {
+		on_travel_plan_complete_TFE
+	}
+}
+
+
+on_travel_plan_complete_TFE = {
+	effect = {
+		# current_travel_plan = {
+		# 	every_entourage_character = {
+		# 		limit = {
+		# 			is_landed = yes
+		# 			highest_held_title_tier >= tier_county
+		# 			any_character_struggle = {
+		# 				involvement = involved
+		# 				phase_has_catalyst = catalyst_tfe_completed_travel
+		# 			} 
+		# 		}
+		# 		trigger_event = italian_struggle.0002
+		# 	}
+		# }
+		# if = {
+		# 	limit = {
+		# 		any_character_struggle = {
+		# 			involvement = involved
+		# 			phase_has_catalyst = catalyst_tfe_completed_travel
+		# 		} 
+		# 	}
+		# 	every_character_struggle = {
+		# 		involvement = involved
+		# 		limit = {
+		# 			phase_has_catalyst = catalyst_tfe_completed_travel
+		# 		}
+		# 		activate_struggle_catalyst = {
+		# 			catalyst = catalyst_tfe_completed_travel
+		# 			character = root
+		# 		}
+		# 	}
+		# }
+	}
+}
+
+
+on_travel_plan_start = {
+	on_actions = {
+		on_travel_plan_start_RICE
+	}
+}
+
+
+on_travel_plan_start_RICE = {
+
+	events = {
+
+		#########################################
+		# 
+		# ACTIVITY START
+		# 
+		#########################################
+
+		TFE_aswan_temple_events.0010 				# Aswan temple visit/pilgrimage
+
+	}
+
+}

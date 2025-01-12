@@ -1,0 +1,16 @@
+﻿namespace = tfe_debug
+
+tfe_debug.0001 = {
+	type = character_event
+	desc = [selected_script.GetName]
+	left_portrait = {
+		character = root
+		animation = happiness
+	}
+	immediate = {
+		add_gold = culture.culture_script_grandeur_bonus
+	}
+	option = {
+		name = name_i_see
+	}
+}

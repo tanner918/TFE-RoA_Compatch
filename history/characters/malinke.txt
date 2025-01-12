@@ -1,0 +1,303 @@
+﻿
+# characters for CM
+188750 = {
+	name = "Missi-IzE_" # fictitious holder of Zarma
+	dynasty = 1042171
+	religion = west_african_pagan
+	culture = malinke
+	740.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+
+188751 = {
+	name = "Malla" # fictitious holder of Gurma
+	dynasty = 1042172
+	religion = west_african_pagan
+	culture = malinke
+	735.1.1 = {
+		birth = yes
+	}
+	795.1.1 = {
+		death = yes
+	}
+}
+
+188753 = {
+	name = "Kodama" # fictitious holder of Bambuk
+	dynasty = 1042174
+	religion = west_african_bidu_pagan
+	culture = malinke
+	750.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+#####TOG
+
+
+#ancestors of the Keita dynasty
+251110 = {
+	name = "Lahilatoul"
+	#half-mythical placeholder
+	dynasty = 1030002
+	religion = west_african_pagan
+	culture = malinke
+	748.1.1 = {
+		birth = yes
+	}
+	767.1.1 = {
+		add_spouse = 251111
+	}
+	806.1.1 = {
+		death = yes
+	}
+}
+251111 = {
+	name = "Fatoumata"
+	#placeholder
+	female = yes
+	religion = west_african_pagan
+	culture = malinke
+	749.1.1 = {
+		birth = yes
+	}
+	767.1.1 = {
+		add_spouse = 251110
+	}
+	812.1.1 = {
+		death = yes
+	}
+}
+251112 = {
+	name = "Tekhaye"
+	#placeholder
+	female = yes
+	dynasty = 1030002
+	religion = west_african_pagan
+	culture = malinke
+	father = 251110
+	mother = 251111
+	768.1.1 = {
+		birth = yes
+	}
+	830.1.1 = {
+		death = yes
+	}
+}
+#Guinea
+malinke_01 = {
+	name = "Malla" # fictitious holder of Gurma
+	religion = west_african_pagan
+	culture = malinke
+	331.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+malinke_02 = {
+	name = "Toimu" # fictitious holder of Gurma
+	religion = west_african_pagan
+	culture = malinke
+	341.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+malinke_03 = {
+	name = "Nenwon" # fictitious holder of Gurma
+	religion = west_african_pagan
+	culture = malinke
+	437.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+malinke_04 = {
+	name = "Kodama" # fictitious holder of Gurma
+	religion = west_african_pagan
+	culture = malinke
+	441.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+#### UNUSED MALINKES 5-9
+malinke_10 = {
+	name = "Diara" # fictitious holder of Gurma
+	religion = west_african_pagan
+	culture = malinke
+	324.1.1 = {
+		birth = yes
+	}
+	367.1.1 = {
+		death = yes
+	}
+}
+malinke_11 = {
+	name = "Hargani" # fictitious holder of Gurma
+	religion = west_african_pagan
+	culture = malinke
+	367.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+malinke_12 = {
+	name = "Kambani" # fictitious holder of Gurma
+	religion = west_african_pagan
+	culture = malinke
+	436.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+malinke_13 = {
+	name = "Morobani" # fictitious holder of Gurma
+	religion = west_african_pagan
+	culture = malinke
+	328.1.1 = {
+		birth = yes
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+malinke_14 = {
+	name = "Kisha" # fictitious holder of Gurma
+	religion = west_african_pagan
+	culture = malinke
+	370.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+malinke_15 = {
+	name = "Akoi" # fictitious holder of Gurma
+	religion = west_african_pagan
+	culture = malinke
+	441.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+malinke_16 = {
+	name = "Gao" # fictitious holder of Gurma
+	religion = west_african_bidu_pagan
+	culture = malinke
+	330.1.1 = {
+		birth = yes
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+malinke_17 = {
+	name = "Bassarou" # fictitious holder of Gurma
+	religion = west_african_bidu_pagan
+	culture = malinke
+	366.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+malinke_18 = {
+	name = "Djeneba" # fictitious holder of Gurma
+	religion = west_african_bidu_pagan
+	culture = malinke
+	450.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+malinke_19 = {
+	name = "Kinkin" # fictitious holder of Gurma
+	religion = west_african_bidu_pagan
+	culture = malinke
+	330.1.1 = {
+		birth = yes
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+malinke_20 = {
+	name = "Sandaki" # fictitious holder of Gurma
+	religion = west_african_bidu_pagan
+	culture = malinke
+	366.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+malinke_21 = {
+	name = "Maghan" # fictitious holder of Gurma
+	religion = west_african_bidu_pagan
+	culture = malinke
+	450.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+malinke_22 = {
+	name = "Morobani" # fictitious holder of Gurma
+	religion = west_african_pagan
+	culture = malinke
+	332.1.1 = {
+		birth = yes
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+malinke_23 = {
+	name = "Kassa" # fictitious holder of Gurma
+	religion = west_african_pagan
+	culture = malinke
+	365.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+malinke_24 = {
+	name = "Bamari" # fictitious holder of Gurma
+	religion = west_african_pagan
+	culture = malinke
+	448.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}

@@ -1,0 +1,52 @@
+﻿namespace = cantabria
+
+#event for the cantabria decision
+#Localization could be helped
+
+cantabria.0001 = {
+	title = cantabria.0001.title 
+	desc = cantabria.0001.desc
+	scope = character
+	theme = diplomacy
+	override_background = {
+		reference = docks
+	}
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+
+	option = {
+		name = cantabria.0001.a
+		custom_tooltip = cantabria.0001.a.tt
+		every_player = {
+			limit = {
+				NOT = { this = root }
+			}
+			trigger_event = cantabria.0002
+		}
+	}
+}
+
+cantabria.0002 = {
+	title = cantabria.0002.title 
+	desc = cantabria.0002.desc
+	scope = character
+	theme = diplomacy
+
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	right_portrait = {
+		character = title:k_cantabria.holder
+		animation = personality_honorable
+	}
+
+	option = {
+		name = cantabria.0002.a
+	}
+}

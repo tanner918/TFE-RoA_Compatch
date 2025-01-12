@@ -1,0 +1,61 @@
+﻿#############################################################
+# 
+# BHARATIYA CHARACTERS
+# 
+# Done by Cybrxkhan
+# 
+#############################################################
+
+# Matricheta
+# Sponsor of the Gwalior inscription of Mihirakula
+# Despite it being named after Mihirakula, it was actually sponsored by a certain Matricheta, son of Matridasa
+# Doesn't mention the year or era it was made it, but does mentions the 15th year of Mihirakula in the inscription, so would date to the 520s
+bharatiya_01 = {
+	name="Matricheta"
+	religion="saura"
+	culture = bharatiya
+	father=bharatiya_02
+	494.4.25={
+		birth=yes
+	}
+	569.6.9={
+		death=yes
+	}
+}
+
+# Matridasa
+# Father of the above mentioned in the inscription
+bharatiya_02 = {
+	name="Matridasa"
+	religion="saura"
+	culture = bharatiya
+	457.4.12={
+		birth=yes
+	}
+	511.7.2={
+		death=yes
+	}
+}
+
+#############################################################
+# 
+# MISC PLACEHOLDERS
+# 
+# Done by Cybrxkhan
+# 
+#############################################################
+
+bharatiya_misc_001 = {
+	name="Madanavarman"
+	religion="shaivism"
+	culture = bharatiya
+	506.12.3={
+		birth=yes
+	}
+	559.4.10={
+		death=yes
+	}
+}
+
+
+

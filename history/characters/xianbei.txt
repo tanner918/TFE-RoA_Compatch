@@ -1,0 +1,899 @@
+﻿#############################################################
+# 
+# XIANBEI, TUOBA, AND RELATED PEOPLE
+# Go to the Tuoba section for Tuoba Wei Dynasty members
+# 
+# Done by Cybrxkhan
+# 
+#############################################################
+
+# Tufa Wugu's father, tribal chief of Tufa clan of Xianbei in Hexi Corridor/Gansu
+xianbei_001 = {
+	name = "Sifujian"
+	dynasty = dynasty_tufa_liang
+	religion = "zhengyi"
+	culture = "xianbei"
+	320.10.12 = { # Unknown, but became a tribal chief in 356 so he must have been an adult by then
+		birth = yes
+	}
+	350.1.1 = {
+		add_spouse = xianbei_006
+	}
+	370.9.17 = { # Unknown
+		death = yes
+	}
+}
+
+# Founder of Southern Liang
+xianbei_002 = {
+	name = "Wugu"
+	dynasty = dynasty_tufa_liang
+	religion = "zhengyi"
+	culture = "xianbei"
+	trait=brave # Described as such
+	trait=ambitious # Described as such
+	trait=patient # Decided to be patient about throwing off the Later Liang yoke
+	trait=humble # Listened to advice from his advisors
+	trait=just # Effective at judging talent and putting the right people in the right place
+	father=xianbei_001
+	mother=xianbei_006
+	351.2.9 = { # Unknown
+		birth = yes
+	}
+	370.1.1 = {
+		add_spouse = xianbei_003
+		effect = {
+			add_pressed_claim = title:d_shanzhou
+		}
+	}
+	400.2.1 = { # Died falling off a horse while drunk
+		death = {
+			death_reason = death_accident
+		}
+	}
+}
+
+# Wugu's fictitious wife
+xianbei_003 = {
+	name = "Yuanzhen"
+	female=yes
+	#dynasty = dynasty_tufa_liang
+	religion = "zhengyi"
+	culture = "xianbei"
+	351.7.2 = { # Unknown
+		birth = yes
+	}
+	419.9.18 = { # Unknown
+		death = yes
+	}
+}
+
+# Wugu's son
+xianbei_004 = {
+	name = "Fudan"
+	dynasty = dynasty_tufa_liang
+	religion = "zhengyi"
+	culture = "xianbei"
+	father=xianbei_002
+	mother=xianbei_003
+	379.2.16 = { # Unknown
+		birth = yes
+	}
+	426.12.20 = { # Unknown
+		death = yes
+	}
+}
+
+# Wugu's son
+xianbei_005 = {
+	name = "Fani"
+	dynasty = dynasty_tufa_liang
+	religion = "zhengyi"
+	culture = "xianbei"
+	father=xianbei_002
+	mother=xianbei_003
+	382.5.15 = { # Unknown
+		birth = yes
+	}
+	435.7.12 = { # Unknown
+		death = yes
+	}
+}
+
+
+# Wugu's fictitious mother
+xianbei_006 = {
+	name = "Guangping"
+	female=yes
+	religion = "zhengyi"
+	culture = "xianbei"
+	333.3.3 = { # Unknown
+		birth = yes
+	}
+	388.8.8 = { # Unknown
+		death = yes
+	}
+}
+
+# Another brother of Wugu
+xianbei_007 = {
+	name = "Xiyu"
+	dynasty = dynasty_tufa_liang
+	religion = "zhengyi"
+	culture = "xianbei"
+	353.4.22 = { # Unknown
+		birth = yes
+	}
+	386.7.12 = { # Killed in battle???
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+# Second ruler of Southern Liang
+xianbei_008 = {
+	name = "Lilugu"
+	dynasty = dynasty_tufa_liang
+	religion = "zhengyi"
+	culture = "xianbei"
+	trait=humble # Listened to different opinions
+	trait=just # Said to be a capable ruler
+	trait=forgiving # Accepted frank criticism from his officials
+	father=xianbei_001
+	mother=xianbei_006
+	357.3.15 = { # Unknown
+		birth = yes
+	}
+	384.1.1 = {
+		add_spouse = xianbei_014
+	}
+	402.9.4 = { # Died from illness
+		death = {
+			death_reason = death_ill
+		}
+	}
+}
+
+# Lilugu's fictitious son (his grandson is attested as having fled to the Northern Wei, but can't find the name of his son)
+xianbei_009 = {
+	name = "Talumomo"
+	dynasty = dynasty_tufa_liang
+	religion = "zhengyi"
+	culture = "xianbei"
+	father=xianbei_008
+	mother=xianbei_014
+	386.11.7 = { # Unknown
+		birth = yes
+	}
+	427.7.6 = { # Unknown
+		death = yes
+	}
+}
+
+# Lilugu's grandson, fled to the Northern Wei
+xianbei_010 = {
+	name = "Fuzhou"
+	dynasty = dynasty_tufa_liang
+	religion = "zhengyi"
+	culture = "xianbei"
+	father=xianbei_009
+	409.7.12 = { # Unknown
+		birth = yes
+	}
+	469.4.28 = { # Unknown
+		death = yes
+	}
+}
+
+# Wugu's brother, third and last ruler of Southern Liang
+xianbei_011 = {
+	name = "Rutan"
+	dynasty = dynasty_tufa_liang
+	religion = "zhengyi"
+	culture = "xianbei"
+	stewardship = 7
+	trait=education_martial_3
+	trait=intellect_good_2 # Considered the most talented son of Tufa Sifujan
+	# Impression I get is someone who is intelligent, but was unable to control his flaws - also have this to explain some of his children's intelligence traits
+	trait=wrathful # Overly aggressive and constantly attacking
+	trait=impatient # Aggressive
+	trait=diligent # Managed things for his bro
+	trait=stubborn # Pretty stubborn military guy
+	trait=humble # Accepted death so that Qifu Chipan wouldn't have an excuse to harm his children (?), also served his brothers loyally it seems
+	father=xianbei_001
+	mother=xianbei_006
+	365.4.15 = { # Known
+		birth = yes
+	}
+	385.1.1 = {
+		add_spouse = xianbei_017
+	}
+	415.5.5 = { # Poisoned by Qifu Chipan of the Western Qin
+		death = {
+			death_reason = death_poison
+		}
+	}
+}
+
+# Wugu's brother, unsure about age
+xianbei_012 = {
+	name = "Juyan"
+	dynasty = dynasty_tufa_liang
+	religion = "zhengyi"
+	culture = "xianbei"
+	father=xianbei_001
+	mother=xianbei_006
+	367.6.9 = { # Unknown
+		birth = yes
+	}
+	420.9.5 = { # Unknown
+		death = yes
+	}
+}
+
+# Wugu's brother, unsure about age
+xianbei_013 = {
+	name = "Wenzhi"
+	dynasty = dynasty_tufa_liang
+	religion = "zhengyi"
+	culture = "xianbei"
+	father=xianbei_001
+	mother=xianbei_006
+	370.8.18 = { # Unknown
+		birth = yes
+	}
+	418.4.19 = { # Unknown
+		death = yes
+	}
+}
+
+# Lilugu's fictitious wife
+xianbei_014 = {
+	name = "Awu"
+	female=yes
+	religion = "zhengyi"
+	culture = "xianbei"
+	361.6.19 = { # Unknown
+		birth = yes
+	}
+	446.3.30 = { # Unknown
+		death = yes
+	}
+}
+
+# Zhejue tribal leader, father-in-law of Rutan, name unknown
+xianbei_015 = {
+	name = "Tandouba"
+	dynasty = dynasty_zhejue_liang
+	religion = "tengri_pagan"
+	culture = "xianbei"
+	330.5.7 = { # Unknown
+		birth = yes
+	}
+	378.4.5 = { # Unknown
+		death = yes
+	}
+}
+
+# Fictitious Brother-in-law of Rutan and Zhejue tribal chief
+xianbei_016 = {
+	name = "Dayan"
+	dynasty = dynasty_zhejue_liang
+	religion = "tengri_pagan"
+	culture = "xianbei"
+	father=xianbei_015
+	365.4.2 = { # Unknown
+		birth = yes
+	}
+	410.8.6 = { # Unknown
+		death = yes
+	}
+}
+
+# Tufa Rutan's wife, name unknown
+xianbei_017 = {
+	name = "Kezuhun"
+	female=yes
+	dynasty = dynasty_zhejue_liang
+	religion = "tengri_pagan"
+	culture = "xianbei"
+	trait=beauty_good_1 # Although no comment on her looks, put it here to explain some of her children's good looks
+	father=xianbei_015
+	367.7.19 = { # Unknown
+		birth = yes
+	}
+	430.6.8 = { # Unknown
+		death = yes
+	}
+}
+
+# Fictitious chief of the Yifu
+xianbei_018 = {
+	name = "Mo"
+	dynasty = dynasty_yifu_liang
+	religion = "tengri_pagan"
+	culture = "xianbei"
+	334.7.12 = { # Unknown
+		birth = yes
+	}
+	389.1.27 = { # Unknown
+		death = yes
+	}
+}
+
+# Fictitious chief of the Yifu
+xianbei_019 = {
+	name = "Zan"
+	dynasty = dynasty_yifu_liang
+	religion = "tengri_pagan"
+	culture = "xianbei"
+	father=xianbei_018
+	369.5.9 = { # Unknown
+		birth = yes
+	}
+	427.10.31 = { # Unknown
+		death = yes
+	}
+}
+
+# Rutan's son
+xianbei_020 = {
+	name = "Hutai"
+	dynasty = dynasty_tufa_liang
+	religion = "zhengyi"
+	culture = "xianbei"
+	father=xianbei_011
+	mother=xianbei_017
+	388.7.12 = { # Unknown
+		birth = yes
+	}
+	423.1.1 = { # Executed by Qifu Chipan in 423 after plotting to avenge his father
+		death = {
+			death_reason = death_execution
+		}
+	}
+}
+
+# Rutan's daughter and Qifu Chipan's consort, name unknown
+xianbei_021 = {
+	name = "Yongfu"
+	female=yes
+	dynasty = dynasty_tufa_liang
+	religion = "zhengyi"
+	culture = "xianbei"
+	father=xianbei_011
+	mother=xianbei_017
+	390.9.15 = { # Unknown
+		birth = yes
+	}
+	423.1.1 = { # Executed by Qifu Chipan in 423 after plotting to avenge his father
+		death = {
+			death_reason = death_execution
+		}
+	}
+}
+
+# Rutan's son
+xianbei_022 = {
+	name = "Mingdegui"
+	dynasty = dynasty_tufa_liang
+	religion = "zhengyi"
+	culture = "xianbei"
+	father=xianbei_011
+	mother=xianbei_017
+	trait=intellect_good_2 # Said to be wise and intelligent even in childhood
+	trait=beauty_good_2 # Said to be good looking
+	trait=just # Virtuous
+	trait=compassionate # Virtuous
+	trait=humble # Virtuous
+	trait=poet # Compared to Cao Zhi, poet
+	397.5.2 = { # Unknown
+		birth = yes
+	}
+	459.6.15 = { # Unknown
+		death = yes
+	}
+}
+
+# Rutan's son
+xianbei_023 = {
+	name = "Anzhou"
+	dynasty = dynasty_tufa_liang
+	religion = "zhengyi"
+	culture = "xianbei"
+	father=xianbei_011
+	mother=xianbei_017
+	398.10.13 = { # Unknown
+		birth = yes
+	}
+	467.8.22 = { # Unknown
+		death = yes
+	}
+}
+
+# Rutan's son
+xianbei_024 = {
+	name = "Rangan"
+	dynasty = dynasty_tufa_liang
+	religion = "zhengyi"
+	culture = "xianbei"
+	father=xianbei_011
+	mother=xianbei_017
+	400.10.2 = { # Unknown
+		birth = yes
+	}
+	450.7.25 = { # Unknown
+		death = yes
+	}
+}
+
+# Rutan's son
+xianbei_025 = {
+	name = "Baozhou"
+	dynasty = dynasty_tufa_liang
+	religion = "zhengyi"
+	culture = "xianbei"
+	father=xianbei_011
+	mother=xianbei_017
+	404.1.5 = { # Unknown
+		birth = yes
+	}
+	462.3.5 = { # Unknown
+		death = yes
+	}
+}
+
+# Rutan's son, later changed name to Yuan He
+# Had many descendants, including Tang chancellor Yuan Qianyao, but they are too many to be listed practically (and they were all in China proper)
+xianbei_026 = {
+	name = "He"
+	dynasty = dynasty_tufa_liang
+	religion = "zhengyi"
+	culture = "xianbei"
+	father=xianbei_011
+	mother=xianbei_017
+	trait=intellect_good_1 # Capable official
+	trait=beauty_good_1 # Said to be good looking
+	trait=just # Good official
+	trait=humble # Good manners
+	trait=temperate # Told his sons to not be extravagant
+	trait=compassionate # Considered a virtuous person
+	407.2.8 = { # Unknown
+		birth = yes
+	}
+	479.10.22 = { # This is apparently the actual date
+		death = yes
+	}
+}
+
+# Rutan's daughter and Qifu Chipan's other consort, name unknown
+xianbei_027 = {
+	name = "Fengyi"
+	female=yes
+	dynasty = dynasty_tufa_liang
+	religion = "zhengyi"
+	culture = "xianbei"
+	father=xianbei_011
+	mother=xianbei_017
+	trait=beauty_good_2 # Favored by Qifu Chipan
+	#trait=arbitrary # Betrayed her sister and brother
+	394.6.9 = { # Unknown
+		birth = yes
+	}
+	450.3.3 = { # Unknown
+		death = yes
+	}
+}
+
+
+# Liang Ji's fictitious father (for 361 start)
+xianbei_028 = {
+	name = "Yoix"
+	dynasty = dynasty_liang_qiang
+	religion = "rrmeaism"
+	culture = "qiang"
+	340.2.9 = { # Unknown
+		birth = yes
+	}
+	390.2.8 = { # Unknown
+		death = yes
+	}
+}
+
+# Liang Ji, Qiang chief who Tufa Wugu pacified in 398
+xianbei_029 = {
+	name = "Ji"
+	dynasty = dynasty_liang_qiang
+	religion = "rrmeaism"
+	culture = "qiang"
+	father=xianbei_028
+	360.7.9 = { # Unknown
+		birth = yes
+	}
+	422.2.2 = { # Unknown
+		death = yes
+	}
+}
+
+# Fictitious Xiongnu vassal of Liang Ji to represent Xiongnu tribes in the region
+xianbei_030 = {
+	name = "Puhuluzi"
+	religion = "tengri_pagan"
+	culture = "xiongnu"
+	337.1.25 = { # Unknown
+		birth = yes
+	}
+	387.4.5 = { # Unknown
+		death = yes
+	}
+}
+
+# Fictitious Xiongnu vassal of Liang Ji to represent Xiongnu tribes in the region
+xianbei_031 = {
+	name = "Juche_er"
+	religion = "tengri_pagan"
+	culture = "xiongnu"
+	father=xianbei_030
+	363.7.8 = { # Unknown
+		birth = yes
+	}
+	425.6.1 = { # Unknown
+		death = yes
+	}
+}
+
+# Father of Yegan
+xianbei_032 = {
+	name = "Ge"
+	dynasty = dynasty_helan_liang
+	religion = "zhengyi"
+	culture = "xianbei"
+	298.1.14 = { # Unknown
+		birth = yes
+	}
+	349.3.22 = { # Unknown
+		death = yes
+	}
+}
+
+# Leader of the Helan branch of Xianbei (eventually became Khitan in the long run apparently)
+xianbei_033 = {
+	name = "Yegan"
+	dynasty = dynasty_helan_liang
+	religion = "zhengyi"
+	culture = "xianbei"
+	father=xianbei_032
+	330.9.1 = { # Unknown, but had a daughter in 351 and his father-in-law was 318-376
+		birth = yes
+	}
+	351.1.1 = {
+		add_spouse = xianbei_034
+	}
+	387.4.8 = { # This is apparently the actual year, actual date unknown
+		death = yes
+	}
+}
+
+# Helan Yegan's wife, daughter of Tuoba Shiyijian
+# Because Tuoba are too major and offmap in China to represent, she has no family for now
+xianbei_034 = {
+	name = "Qiang"
+	female=yes
+	#dynasty = dynasty_tuoba_wei
+	religion = "zhengyi"
+	culture = "xianbei"
+	334.3.1 = { # Unknown, but father lived from 318-376 and had a daughter (?) in 351
+		birth = yes
+	}
+	392.10.17 = { # Unknown
+		death = yes
+	}
+}
+
+# Helan Yegan's daughter, married into Tuoba Wei
+# Because Tuoba are too major and offmap in China to represent, she has no family for now
+xianbei_035 = {
+	name = "Xianming"
+	female=yes
+	dynasty = dynasty_helan_liang
+	religion = "zhengyi"
+	culture = "xianbei"
+	father=xianbei_033
+	mother=xianbei_034
+	351.12.5 = { # Known
+		birth = yes
+	}
+	395.1.1 = { # In 396, but have her die early so she isn't hanging around weirdly
+		death = yes
+	}
+}
+
+# Helan Yegan's elder son, He Ne/Na
+xianbei_036 = {
+	name = "Na"
+	dynasty = dynasty_helan_liang
+	religion = "zhengyi"
+	culture = "xianbei"
+	father=xianbei_033
+	mother=xianbei_034
+	358.7.19 = { # Unknown, but appears to have been adult by the time of Tuoba Shiyijian's death in 376
+		birth = yes
+	}
+	404.6.18 = { # Unknown, but later became a general of Tuoba Gui who ruled 371-409
+		death = yes
+	}
+}
+
+# Helan Yegan's son
+xianbei_037 = {
+	name = "Rangan"
+	dynasty = dynasty_helan_liang
+	religion = "zhengyi"
+	culture = "xianbei"
+	father=xianbei_033
+	mother=xianbei_034
+	359.8.16 = { # Unknown
+		birth = yes
+	}
+	415.12.4 = { # Unknown, but later became a general of Tuoba Gui who ruled 371-409
+		death = yes
+	}
+}
+
+# Helan Yegan's son
+xianbei_038 = {
+	name = "Lu"
+	dynasty = dynasty_helan_liang
+	religion = "zhengyi"
+	culture = "xianbei"
+	father=xianbei_033
+	mother=xianbei_034
+	360.11.5 = { # Unknown
+		birth = yes
+	}
+	410.8.9 = { # Year known
+		death = yes
+	}
+}
+
+# Helan Yegan's fictitious brother, so his nephew He Yue has a father
+xianbei_039 = {
+	name = "Shiyin"
+	dynasty = dynasty_helan_liang
+	religion = "zhengyi"
+	culture = "xianbei"
+	father=xianbei_032
+	332.9.7 = { # Unknown
+		birth = yes
+	}
+	360.12.14 = { # Unknown
+		death = yes
+	}
+}
+
+# Helan Yegan's nephew He Yue
+xianbei_040 = {
+	name = "Yue"
+	dynasty = dynasty_helan_liang
+	religion = "zhengyi"
+	culture = "xianbei"
+	father=xianbei_039
+	trait=zealous # Prayed to the gods out of sincerity to help Tuoba Gui
+	354.2.14 = { # Unknown
+		birth = yes
+	}
+	377.4.1 = {
+		add_spouse = xianbei_041
+	}
+	409.5.17 = { # Unknown
+		death = yes
+	}
+}
+
+# Helan Yue's fictitious wife
+xianbei_041 = {
+	name = "Leshang"
+	female=yes
+	religion = "zhengyi"
+	culture = "xianbei"
+	361.1.1 = { # Unknown
+		birth = yes
+	}
+	415.8.1 = { # Unknown
+		death = yes
+	}
+}
+
+# Helan Yue's son
+xianbei_042 = {
+	name = "Ni"
+	dynasty = dynasty_helan_liang
+	religion = "zhengyi"
+	culture = "xianbei"
+	father=xianbei_040
+	mother=xianbei_041
+	trait=education_martial_2
+	trait=deceitful # Lied about how many troops he killed one time as a general
+	378.3.5 = { # Unknown, but made him roughly same age as Tuoba Gui
+		birth = yes
+	}
+	424.2.3 = { # Unknown
+		death = yes
+	}
+}
+
+# Helan Yue's grandson
+xianbei_043 = {
+	name = "Choujian"
+	dynasty = dynasty_helan_liang
+	religion = "zhengyi"
+	culture = "xianbei"
+	father=xianbei_042
+	401.4.3 = { # Unknown
+		birth = yes
+	}
+	460.6.18 = { # Unknown
+		death = yes
+	}
+}
+
+
+# Helan Yue's second son
+xianbei_044 = {
+	name = "Hu"
+	dynasty = dynasty_helan_liang
+	religion = "zhengyi"
+	culture = "xianbei"
+	father=xianbei_040
+	mother=xianbei_041
+	386.9.12 = { # Unknown
+		birth = yes
+	}
+	450.11.1 = { # Unknown
+		death = yes
+	}
+}
+
+### Xianbeis at Buryatia
+xianbei_10 = { # Fake
+	name = "Chun"
+	religion = "tengri_pagan"
+	culture = "xianbei"
+	336.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+xianbei_11 = { # Fake
+	name = "Yicheng"
+	religion = "tengri_pagan"
+	culture = "xianbei"
+	340.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+
+
+#############################################################
+# 
+# TUOBA WEI
+# Most Tuoba Wei dynasty members not here (yet) since most of the Tuoba Wei territories are not on the map
+# Only people who are relevant to the Liang/Tarim Basin/Tibet/Mongolia parts of the map placed here
+# 
+# Done by Cybrxkhan
+# 
+#############################################################
+
+# Yuan Rong, Northern Wei general and minister made governor/king of Dongyang/Dunhuang region
+# Great-great-grandson of Emperor Mingyuan, the second Tuoba Wei Emperor
+tuoba_wei_001 = {
+	name = "Rong"
+	dynasty_house = dynasty_tuoba_yuan
+	religion = "mahayana"
+	culture = "xianbei"
+	trait=zealous # Promoted Buddhism and the construction of the Mogao Caves
+	trait=diligent # Due to above and working with ministers to maintain stability in the region
+	trait=generous # Sponsored Mogao Caves and Buddhist translations
+	486.2.10 = { # Unknown, but in 525 he was active and he had married daughter, so I'll guess he was at least ~40 years old in 525
+		birth = yes
+	}
+	500.1.1 = {
+		add_spouse = tuoba_wei_002
+	}
+	542.12.7 = { # Chinese Wikipedia lists Dec. 7, but other places don't have specific date (?)
+		death = yes
+	}
+}
+
+# Yuan Rong's fictitious wife
+tuoba_wei_002 = {
+	name = "Wuxiao"
+	female=yes
+	#dynasty_house = dynasty_tuoba_yuan
+	religion = "mahayana"
+	culture = "xianbei"
+	486.10.2 = { # Unknown
+		birth = yes
+	}
+	542.1.30 = { # Unknown
+		death = yes
+	}
+}
+
+# Yuan Rong's daughter
+tuoba_wei_003 = {
+	name = "Faying" # Not sure if this is her name or a title
+	female=yes
+	dynasty_house = dynasty_tuoba_yuan
+	religion = "mahayana"
+	culture = "xianbei"
+	father=tuoba_wei_001
+	mother=tuoba_wei_002
+	505.5.15 = { # Unknown, but married in 525
+		birth = yes
+	}
+	522.8.28 = {
+		add_spouse = han_misc_11
+	}
+	555.5.25 = { # Unknown
+		death = yes
+	}
+}
+
+# Yuan Rong's son, Yuan Kang, who succeeded him as King of Donyang/governor of Dunhuang, but was killed by Deng Yan, his brother-in-law (?)
+tuoba_wei_004 = {
+	name = "Kang"
+	dynasty_house = dynasty_tuoba_yuan
+	religion = "mahayana"
+	culture = "xianbei"
+	father=tuoba_wei_001
+	mother=tuoba_wei_002
+	504.3.21 = { # Unknown, but was probably an adult when he succeeded his father in 542
+		birth = yes
+	}
+	544.1.1 = { # Unknown
+		death = {
+			death_reason = death_murder_known
+			killer = han_misc_11
+		}
+	}
+}
+
+# Yuan Rong's son, Yuan Shen, who became an official under the Northern Zhou Dynasty
+tuoba_wei_005 = {
+	name = "Shen"
+	dynasty_house = dynasty_tuoba_yuan
+	religion = "mahayana"
+	culture = "xianbei"
+	father=tuoba_wei_001
+	mother=tuoba_wei_002
+	513.9.7 = { # Official of the Northern Zhou Dynasty (557-581), so he had to be an adult by 557
+		birth = yes
+	}
+	575.7.5 = { # Unknown
+		death = yes
+	}
+}
+
+# Yuan Kang, Yuan Shen, Deng Yan, Linghu Qiu, Linghu Zheng, Linghu Xiu, Hu Qian, Hu Changcan
+
+# Guazhou 		Yuan Rong
+# Ganzhou 		Linghu Zheng, Linghu Xiu (Jinta, Heihe)
+# Liangzhou		Yuan Kang
+# Aksay			Yuan Shen
+# Qilin			Yuan Shen
+# Zhenfan		Deng Yan
+# Shunzhou		Deng Yan
+# Wuluhai		Hu Qian
+# Yijinai		Hu Changcan
+# Shanshan		Linghu Qiu
+# Shanzhou		???
+
+
+

@@ -1,0 +1,219 @@
+﻿
+
+
+
+##################################################################################
+# 
+# RAI DYNASTY OF SINDH (c. 480 - 632 CE)
+# Cybrx: Kinda placeholdery for now based on very cursory research, Soraya plz don't kill me, and do fix as needed
+# No idea what dates would work so I just fudged it so it works in the timeframe of c. 480 - 632 mentioned on Wikipedia
+# 
+##################################################################################
+
+# Ranaditya Satya, tentatively identifying him with Rai Diwaji who is said to be first ruler of Rai Dynasty the Chachnama
+# Attested in coinage c. 480 CE to (?) 524 CE
+rai_001 = {
+	name = "Ranaditya_Satya"
+	dynasty = dynasty_sindh_rai
+	religion = "saura"
+	culture = "sindhi"
+	453.6.12 = {
+		birth = yes
+	}
+	524.8.8 = {
+		death = yes
+	}
+}
+
+# Rai Sahiras I, successor of Rai Diwaji
+rai_002 = {
+	name = "Sahiras"
+	dynasty = dynasty_sindh_rai
+	religion = "saura"
+	culture = "sindhi"
+	father=rai_001
+	477.3.29 = {
+		birth = yes
+	}
+	531.1.11 = {
+		death = yes
+	}
+}
+
+
+# Rai Sahasi I, successor of Rai Sahiras I
+rai_003 = {
+	name = "Sahasi"
+	dynasty = dynasty_sindh_rai
+	religion = "saura"
+	culture = "sindhi"
+	father=rai_002
+	509.4.13 = {
+		birth = yes
+	}
+	561.9.14 = {
+		death = yes
+	}
+}
+
+# Rai Sahiras II, successor of Rai Sahasi I
+rai_004 = {
+	name = "Sahiras"
+	dynasty = dynasty_sindh_rai
+	religion = "saura"
+	culture = "sindhi"
+	father=rai_003
+	# Traits based on Wikipedia supposedly quoting the Chachnama, dunno how accurate this is
+	trait=brave
+	trait=just
+	trait=generous
+	543.2.16 = {
+		birth = yes
+	}
+	609.4.22 = {
+		death = yes
+	}
+}
+
+# Rai Sahasi II, successor of Rai Sahiras II
+rai_005 = {
+	name = "Sahasi"
+	dynasty = dynasty_sindh_rai
+	religion = "saura"
+	culture = "sindhi"
+	father=rai_004
+	# Traits based on Wikipedia supposedly quoting the Chachnama, dunno how accurate this is
+	trait=compassionate
+	trait=trusting
+	trait=just
+	trait=content
+	577.7.19 = {
+		birth = yes
+	}
+	620.1.1 = {
+		add_spouse = rai_007
+	}
+	632.1.9 = {
+		death = yes
+	}
+}
+
+# Rai Sahasi II's brother who tried to claim the throne after his death from Sahasi's official and successor Chach who founded the Brahman Dynasty
+rai_006 = {
+	name = "Mahrit"
+	dynasty = dynasty_sindh_rai
+	religion = "saura"
+	culture = "sindhi"
+	father=rai_004
+	586.2.27 = {
+		birth = yes
+	}
+	# This is based solely on Wikipedia quoting the Chachnama, so I'm uncertain how reliable it is
+	# King Sahasi II's death was not leaked for at least 6 months while Chach became de facto king
+	# When news finally broke out, Sahasi II's brother Mahrit, ruler of Chittor, tried to reclaim the throne but failed
+	# Thus, I am putting his death more than 6 months after Sahasi II's death
+	632.9.9 = {
+		death = { death_reason = death_battle }
+	}
+}
+
+# Rani Suhanadi/Sohman Devi, wife of Sahasi II who conspired to bring Chach to power, and married him when he came king
+# Even ignoring this is based on Wikipedia quoting the Chachnama, due to the common trope of the cunning femme fatale in political history, hard to say what's going on
+# I've elected to thus not give her any predetermined traits, but to make her the lover of Chach
+rai_007 = {
+	name = "Rani_Suhanadi"
+	female=yes
+	religion = "saura"
+	culture = "sindhi"
+	603.9.6 = {
+		birth = yes
+	}
+	669.6.9 = {
+		death = yes
+	}
+}
+
+
+
+##################################################################################
+# 
+# BRAHMAN/CHACHA DYNASTY OF SINDH (c. 632 - 712 CE)
+# Cybrx: Kinda placeholdery for now based on very cursory research, Soraya plz don't kill me, and do fix as needed
+# I just fudged it based on Wikipedia quoting the Chachnama
+# 
+##################################################################################
+
+# Fictitious father of Chach and Chandar
+sindh_brahman_001 = {
+	name = "Kelhana"
+	dynasty = dynasty_chacha_rai
+	religion = "saura"
+	culture = "sindhi"
+	trait = brahmin
+	599.4.2 = {
+		birth = yes
+	}
+	632.1.10 = {
+		add_spouse = rai_007
+	}
+	671.3.5 = {
+		death = yes
+	}
+}
+
+# Chach, Brahmin official of Sahasi II who became king following his death
+sindh_brahman_002 = {
+	name = "Chach"
+	dynasty = dynasty_chacha_rai
+	religion = "saura"
+	culture = "sindhi"
+	trait = brahmin
+	trait=intellect_good_1
+	father=sindh_brahman_001
+	599.4.2 = {
+		birth = yes
+	}
+	632.1.10 = {
+		add_spouse = rai_007
+	}
+	671.3.5 = {
+		death = yes
+	}
+}
+
+# Chandar, Chach's brother and successor
+sindh_brahman_003 = {
+	name = "Chandar"
+	dynasty = dynasty_chacha_rai
+	religion = "saura"
+	culture = "sindhi"
+	trait = brahmin
+	father=sindh_brahman_001
+	610.2.3 = {
+		birth = yes
+	}
+	679.2.24 = {
+		death = yes
+	}
+}
+
+# Dahir, Chach's son and successor to his uncle Chandar
+sindh_brahman_004 = {
+	name = "Dahir"
+	dynasty = dynasty_chacha_rai
+	religion = "saura"
+	culture = "sindhi"
+	trait = brahmin
+	father=sindh_brahman_002
+	mother=rai_007
+	# His birth date is earlier than on Wikipedia in order to make his age difference with his mom make sense
+	645.2.10 = {
+		birth = yes
+	}
+	711.1.1 = {
+		death = { death_reason = death_battle }
+	}
+}
+
+
+# There are several local chieftains in Sindh that would work for 632 CE, just leaving a note here for the future

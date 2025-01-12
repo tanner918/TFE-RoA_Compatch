@@ -1,0 +1,56 @@
+﻿
+TFE_does_this_player_care_about_the_italian_struggle = {
+	save_temporary_scope_as = char_temp
+	OR = {
+		capital_province ?= {
+			OR = { # Is in relevant region
+				geographical_region = world_europe
+				geographical_region = world_steppe_west
+				geographical_region = world_middle_east
+				geographical_region = world_africa_north
+				geographical_region = world_africa_sahara
+				geographical_region = world_africa_east
+				geographical_region = world_asia_minor
+			}
+		}
+		struggle:italian_struggle = { is_culture_involved_in_struggle = scope:char_temp.culture }
+		struggle:italian_struggle = { is_faith_involved_in_struggle = scope:char_temp.faith }
+		any_character_struggle = {
+			involvement = involved
+			is_struggle_type = italian_struggle
+		}
+		any_character_struggle = {
+			involvement = interloper
+			is_struggle_type = italian_struggle
+		}
+	}
+}
+
+
+struggle_italian_ending_synthesis_percent_region_trigger = {
+	any_county_in_region = {
+		region = TFE_italian_struggle_region
+		percent > struggle_italian_ending_synthesis_owned_percent_decimal_value
+		holder.top_liege = root
+	}
+}
+
+struggle_italian_ending_restoration_percent_region_trigger = {
+	any_county_in_region = {
+		region = TFE_italian_struggle_region
+		percent > struggle_italian_ending_restoration_owned_percent_decimal_value
+		holder.top_liege = root
+	}
+}
+
+struggle_italian_ending_incorporation_percent_region_trigger = {
+	any_county_in_region = {
+		region = TFE_italian_struggle_region
+		percent > struggle_italian_ending_incorporation_owned_percent_decimal_value
+		holder.top_liege = root
+	}
+}
+
+
+
+

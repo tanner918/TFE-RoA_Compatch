@@ -1,0 +1,574 @@
+﻿city_state_government = {
+	primary_holding = city_holding
+	government_rules = {
+		rulers_should_have_dynasty = yes
+		royal_court = yes
+		legitimacy = yes
+	}
+	valid_holdings = { castle_holding tribal_holding city_holding trade_center_holding }
+	required_county_holdings = { city_holding castle_holding }
+
+	ai = {
+		use_legends = yes
+	}
+	flag = government_is_feudal
+	flag = government_is_city_state
+	vassal_contract = { 
+		feudal_government_taxes
+		feudal_government_levies
+		religious_rights
+		fortification_rights
+		coinage_rights
+		
+		succession_rights
+		war_declaration_rights
+		council_rights
+		title_revocation_rights 
+	}
+
+	character_modifier = {
+		domain_limit = -200
+		domain_tax_mult = 1
+		building_slot_add = 3
+	}
+	color = { 0 30 60 }
+
+	opinion_of_liege = {
+		if = {
+			limit = {
+				scope:liege = {
+					has_variable = ecostability
+				}
+			}
+			scope:vassal = {
+				if = {
+					limit = {
+						scope:liege = {
+							government_has_flag = government_is_city_state
+						}
+					}
+	
+					if = {
+						limit = {
+							scope:liege = {
+								var:ecostability > 50
+							}
+						}
+							if = {
+								limit = {
+									scope:liege = {
+										var:ecostability > 100
+									}
+								}
+								value = 20
+							}
+							else_if = {
+								limit = {
+									scope:liege = {
+										var:ecostability < 100
+									}
+								}
+								value = 10
+							}
+					}
+					else_if = {
+						limit = {
+							scope:liege = {
+								var:ecostability < -50
+							}
+						}
+							if = {
+								limit = {
+									scope:liege = {
+										var:ecostability > -100
+									}
+								}
+								value = -10
+							}
+							else_if = {
+								limit = {
+									scope:liege = {
+										var:ecostability < -100
+									}
+								}
+								value = -20
+							}
+					}
+					
+				}
+			}
+		}
+	}
+
+	opinion_of_liege_desc = {
+		first_valid = {
+			desc = "ecostability_name"
+		}
+	}
+		
+}
+
+trade_city_state_government = {
+	primary_holding = city_holding
+	government_rules = {
+		rulers_should_have_dynasty = yes
+		royal_court = yes
+		legitimacy = yes
+	}
+	valid_holdings = { castle_holding tribal_holding city_holding trade_center_holding }
+	required_county_holdings = { city_holding castle_holding }
+
+	ai = {
+		use_legends = yes
+	}
+	flag = government_is_feudal
+	flag = government_is_city_state
+	flag = government_is_trade_city_state
+	vassal_contract = { 
+		feudal_government_taxes
+		feudal_government_levies
+		religious_rights
+		fortification_rights
+		coinage_rights
+
+		succession_rights
+		war_declaration_rights
+		council_rights
+		title_revocation_rights 
+	}
+
+	character_modifier = {
+		domain_limit = -2
+		oasis_tax_mult = 0.5
+		oasis_development_growth_factor = 0.1
+	}
+	color = { 25 180 120 }
+
+	opinion_of_liege = {
+		if = {
+			limit = {
+				scope:liege = {
+					has_variable = ecostability
+				}
+			}
+			scope:vassal = {
+				if = {
+					limit = {
+						scope:liege = {
+							government_has_flag = government_is_city_state
+						}
+					}
+	
+					if = {
+						limit = {
+							scope:liege = {
+								var:ecostability > 50
+							}
+						}
+							if = {
+								limit = {
+									scope:liege = {
+										var:ecostability > 100
+									}
+								}
+								value = 20
+							}
+							else_if = {
+								limit = {
+									scope:liege = {
+										var:ecostability < 100
+									}
+								}
+								value = 10
+							}
+					}
+					else_if = {
+						limit = {
+							scope:liege = {
+								var:ecostability < -50
+							}
+						}
+							if = {
+								limit = {
+									scope:liege = {
+										var:ecostability > -100
+									}
+								}
+								value = -10
+							}
+							else_if = {
+								limit = {
+									scope:liege = {
+										var:ecostability < -100
+									}
+								}
+								value = -20
+							}
+					}
+					
+				}
+			}
+		}
+	}
+
+	opinion_of_liege_desc = {
+		first_valid = {
+			desc = "ecostability_name"
+		}
+	}
+		
+}
+
+nomadic_government = {
+	primary_holding = tribal_holding
+	affected_by_development = no
+	government_rules = {
+		rulers_should_have_dynasty = yes
+		royal_court = yes
+		legitimacy = yes
+		#landless_playable = yes
+		#mercenary = yes
+	}
+
+	supply_limit_mult_for_others = -0.8
+	valid_holdings = { castle_holding trade_center_holding }
+	regiments_prestige_as_gold = yes
+	required_county_holdings = { tribal_holding city_holding church_holding }
+	flag = government_can_raid_rule
+
+	ai = {
+		use_legends = yes
+	}
+	flag = government_is_tribal
+	flag = government_is_nomadic
+	vassal_contract = { 
+		tribal_government_obligations
+		
+	}
+
+	character_modifier = {
+		development_growth_factor = -0.5
+		army_maintenance_mult = -0.8
+		title_creation_cost_mult = -0.5
+		ai_war_chance = 1.5
+
+		domain_tax_mult = -0.5
+        vassal_tax_mult = -0.25
+        men_at_arms_maintenance_per_dread_mult = -0.005
+        
+        additional_fort_level = -10
+        castle_holding_build_speed = 5
+        city_holding_build_speed = 5
+        trade_center_holding_build_speed = 5
+	}
+	color = { 255 204 51 }
+}
+
+eranshar_government = {
+	primary_holding = castle_holding
+	government_rules = {
+		rulers_should_have_dynasty = yes
+		create_cadet_branches = yes
+		dynasty_named_realms = yes
+		royal_court = yes
+		legitimacy = yes
+	}
+	valid_holdings = { castle_holding city_holding trade_center_holding }
+	primary_heritages = { heritage_iranian }
+	required_county_holdings = { castle_holding city_holding church_holding }
+
+	ai = {
+		use_legends = yes
+	}
+	flag = government_is_feudal
+	flag = government_is_eranshar
+	vassal_contract = { 
+		eranshar_centralization
+		eranshar_special_contracts
+		eranshar_scutage
+		
+		religious_rights
+		fortification_rights
+		coinage_rights
+		succession_rights
+		war_declaration_rights
+		council_rights
+		title_revocation_rights 
+	}
+	color = { 53 183 219 }
+}
+
+caliphate_government = {
+	primary_holding = castle_holding
+
+	valid_holdings = { castle_holding trade_center_holding }
+	required_county_holdings = { castle_holding city_holding church_holding }
+	government_rules = {
+		always_use_patronym = yes
+		dynasty_named_realms = yes
+		create_cadet_branches = yes
+		rulers_should_have_dynasty = yes
+		royal_court = yes
+		legitimacy = yes
+	}
+	ai = {
+		use_legends = yes
+	}
+	flag = government_is_clan
+	flag = government_is_caliphate
+	fallback = 2
+	house_unity = clan_house_unity
+
+	character_modifier = {
+		levy_reinforcement_rate_same_faith = 0.3
+		levy_reinforcement_rate_different_faith = -0.1
+		same_faith_opinion = 10
+	}
+
+	vassal_contract = { 
+		caliphate_centralization
+		fortification_rights
+		coinage_rights
+		religious_rights
+		succession_rights
+		war_declaration_rights
+		
+		council_rights
+		title_revocation_rights 
+	}
+
+	color = { 37 148 14 }
+}
+
+muslim_government = {
+	primary_holding = castle_holding
+	preferred_religions = { islam_religion }
+
+	valid_holdings = { castle_holding trade_center_holding }
+	required_county_holdings = { castle_holding city_holding church_holding }
+	government_rules = {
+		always_use_patronym = yes
+		dynasty_named_realms = yes
+		create_cadet_branches = yes
+		rulers_should_have_dynasty = yes
+		royal_court = yes
+		legitimacy = yes
+	}
+	ai = {
+		use_legends = yes
+	}
+	flag = government_is_clan
+	flag = government_is_muslim
+	fallback = 2
+	house_unity = clan_house_unity
+	vassal_contract = { 
+		islamic_taxes
+		islamic_levies
+		dynastic_autonomy 
+		caliphate_zakah_rights
+		fortification_rights
+		religious_rights
+		coinage_rights
+		succession_rights
+		war_declaration_rights
+		council_rights
+		title_revocation_rights 
+	}
+
+	color = { 111 231 27 }
+}
+
+gupta_government = {
+	primary_holding = castle_holding
+	government_rules = {
+		rulers_should_have_dynasty = yes
+		create_cadet_branches = yes
+		dynasty_named_realms = yes
+		royal_court = yes
+		legitimacy = yes
+	}
+	valid_holdings = { castle_holding trade_center_holding }
+	primary_heritages = { heritage_indo_aryan heritage_dravidian }
+	required_county_holdings = { castle_holding church_holding }
+
+	ai = {
+		use_legends = yes
+	}
+	flag = government_is_feudal
+	flag = government_is_gupta
+	vassal_contract = { 
+		gupta_organization
+		eranshar_special_contracts
+		gupta_governance
+		gupta_nobility_scutage
+		
+		religious_rights
+		fortification_rights
+		coinage_rights
+		succession_rights
+		war_declaration_rights
+		council_rights
+		title_revocation_rights 
+	}
+	color = { 300 155 0 }
+
+	opinion_of_liege = {
+		scope:vassal = {
+			if = {
+				limit = {
+					OR = {
+						has_trait = brahmin
+						has_trait = kshatriya
+						has_trait = vaishya
+						has_trait = shudra
+					}
+				}
+				if = {
+					limit = {
+						scope:liege = {
+							OR = {
+								has_trait = brahmin
+								has_trait = kshatriya
+								has_trait = vaishya
+								has_trait = shudra
+							}
+						}
+					}
+					if = {
+						limit = {
+							liege = {
+								caste_purity > 0.85
+							}
+						}
+						value = 30
+					}
+					else_if = {
+						limit = {
+							liege = {
+								caste_purity > 0.7
+							}
+						}
+						value = 10
+					}
+					else_if = {
+						limit = {
+							liege = {
+								caste_purity >= 0.5
+							}
+						}
+						value = 5
+					}
+					else_if = {
+						limit = {
+							liege = {
+								caste_purity > 0.4
+							}
+						}
+						value = -5
+					}
+					else_if = {
+						limit = {
+							liege = {
+								caste_purity > 0.3
+							}
+						}
+						value = -10
+					}
+					else = {
+						value = -20
+					}
+				}
+				else = {
+					value = -30
+				}
+			}
+		}
+	}
+
+	opinion_of_liege_desc = {
+		first_valid = {
+			desc = caste_opinion
+		}
+	}
+}
+
+gana_sangha_government = {
+	primary_holding = tribal_holding
+	fallback = 2
+	government_rules = {
+		create_cadet_branches = yes
+		rulers_should_have_dynasty = yes
+		royal_court = yes
+		legitimacy = yes
+	}
+	ai = {
+		use_legends = yes
+	}
+	valid_holdings = { tribal_holding castle_holding trade_center_holding }
+	required_county_holdings = { tribal_holding }
+	always_use_patronym = yes
+	dynasty_named_realms = yes
+	flag = government_is_tribal
+	flag = government_is_gana_sangha
+	flag = government_can_raid_rule
+
+	vassal_contract = {
+		clan_government_obligations
+		special_contract
+		gupta_nobility_scutage
+		religious_rights
+		war_declaration_rights
+		council_rights
+		title_revocation_rights
+	}
+	
+	opinion_of_liege = {
+		scope:liege = {
+			if = {
+				limit = {
+					exists = var:years_since_last_war
+				}
+				if = {
+					limit = {
+						var:years_since_last_war < 3
+					}
+					value = 20
+				}
+				else_if = {
+					limit = {
+						var:years_since_last_war < 6
+					}
+					value = 10
+				}
+				else_if = {
+					limit = {
+						var:years_since_last_war < 9
+					}
+					value = 5
+				}
+				else_if = {
+					limit = {
+						var:years_since_last_war < 12
+					}
+					value = -5
+				}
+				else_if = {
+					limit = {
+						var:years_since_last_war < 15
+					}
+					value = -10
+				}
+				else = {
+					value = -30
+				}
+			}
+			else = {
+				value = -30
+			}
+		}
+	}
+	opinion_of_liege_desc = {
+		desc = "GANA_SANGHA_OPINION_WARS"
+	}
+	color = { 300 300 50 }
+}

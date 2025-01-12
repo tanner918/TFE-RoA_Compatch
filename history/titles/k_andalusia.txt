@@ -1,0 +1,1715 @@
+﻿k_andalusia = {
+	#532.1.1 = {
+	#	holder = 200280
+	#}
+	768.1.1 = { change_development_level = 7 }
+
+	756.3.16 = {
+		holder = 73679 # Abd al-Rahman I Umayyad
+	}
+}
+
+
+
+d_sevilla = {
+	632.1.1 = { change_development_level = 9 }
+	768.1.1 = { change_development_level = 11 }
+	476.1.1 = {
+		de_jure_liege = k_andalusia
+	}
+	541.1.1 = {
+		holder = 200280 # King Theudis of the Visigoths, Reconquest of the South
+	}
+	552.1.1 = {
+		holder = spania_01 # Byzantine Ocupation
+		liege = k_africae
+	}
+	569.1.1 = {
+		holder = 200272 # Luvigild's Reconquest
+		liege = k_visigoths
+	}
+	580.1.1 = {
+		holder = 168716 # Hermenegildo
+	}
+	621.1.1 = {
+		holder = iudila #Iudila
+	}
+	710.1.1 = {
+		holder = 200251 # Roderic
+	}
+	711.1.1 = {
+		holder = 0
+	}
+	###Arabian Conquest
+	768.1.1 = {
+		holder = 73680 # Hisham I Umayyad
+		liege = k_andalusia
+		name = SEVILLA
+	}
+}
+
+
+d_toledo = {
+	632.1.1 = { change_development_level = 8 }
+	768.1.1 = { change_development_level = 10 }
+
+	476.1.1 = {
+		de_jure_liege = k_carthaginensis
+	}
+	
+	768.1.1 = {
+		holder = 200020 # Suleyman Umayyad
+		liege = k_andalusia
+		government = clan_government
+		name = TOLEDO
+	}
+	631.3.26 = {
+		holder = 200278 # Sisenand
+	}
+	636.3.12 = {
+		holder = 200254 # Khintila
+	}
+	639.12.20 = {
+		holder = 200255 # Tulga
+	}
+	642.4.16 = {
+		holder = 200240 # Khindasvint
+	}
+	653.9.30 = {
+		holder = 200249 # Rekkeswinth
+	}
+	672.9.1 = {
+		holder = 200248 # Wamba
+	}
+	680.1.1 = {
+		holder = 200237 # Erwig
+	}
+	687.11.15 = {
+		holder = 200243 # Egica
+	}
+	702.1.1 = {
+		holder = 168727 # Wittiza
+	}
+	710.1.1 = {
+		holder = 200251 # Roderic
+	}
+}
+
+d_cordoba = {
+	532.1.1 = { change_development_level = 7 }
+	768.1.1 = { change_development_level = 10 }
+	200.1.1 = {
+		de_jure_liege = k_hispania ### Roman Province of Baetica
+		liege = k_hispania
+		name = BAETICA
+	}
+	476.1.1 = {
+		de_jure_liege = k_andalusia
+	}
+	543.1.1 = {
+		liege = k_visigoths
+		government = feudal_government
+		reset_name = yes
+	}
+	711.1.1 = {
+		de_jure_liege = k_andalusia ### Corduban Emirate, Curduba
+		liege = k_andalusia
+		government = clan_government
+		name = CORDOBA
+	}
+	360.1.1 = {
+		holder = baetica_01 ## Caelestinus, semi-historical Proconsul
+	}
+	395.1.1 = {
+		holder = baetica_02 ## Castinus, semi-historical Proconsuls
+	}
+	411.1.1 = {
+		holder = silingi_01 #Fake King of the Silingi Vandals
+	}
+	420.1.1 = {
+		holder = vandals_002 #King Gunderic of the Hasdingi Vandals
+	}
+	428.1.1 = {
+		holder = vandals_003 #King Genseric of the Hasdingi Vandals
+	}
+	430.1.1 = {
+		holder = 0
+	}
+}
+
+d_granada = {
+	768.1.1 = { change_development_level = 10 }
+	476.1.1 = {
+		de_jure_liege = k_andalusia
+	}
+}
+c_toledo = {	
+	361.1.1 = { change_development_level = 5 }
+	476.1.1 = { change_development_level = 6 }
+	532.1.1 = { change_development_level = 7 }
+	632.1.1 = { change_development_level = 13 }
+	768.1.1 = { change_development_level = 14 }
+	
+	200.1.1 = {
+		##Province of Baetica
+		de_jure_liege = d_murcia
+		liege = d_murcia
+	}
+	476.1.1 = {
+		de_jure_liege = d_toledo
+	}
+	632.1.1 = {
+		##Integration into Visigoths
+		government = feudal_government
+		liege = d_toledo
+	}
+	711.1.1 = {
+		##Al Andalus
+		government = clan_government
+	}
+
+	361.1.1 = {
+		holder = nebridian_01 
+		liege = d_murcia
+	}
+	361.1.1 = {
+		liege = d_murcia
+	}
+	368.1.1 = {
+		holder = carthaginensis_01 ##Oretum Roman Family
+	}
+	408.1.1 = {
+		holder = alan_01 #Resapendial
+	}
+	415.1.1 = {
+		holder = alan_02 #Attaces
+	}
+	461.1.1 = {
+		holder = carthaginensis_08 # Independent city of Toletum
+		liege = k_visigoths
+	}
+	476.1.1 = {
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	529.1.1 = {
+		holder = carthaginensis_10 # Independent city of Toletum
+	}
+	554.3.1 = {
+		holder = 200276 # Athanagild
+	}
+	568.1.1 = {
+		holder = 200275 # Liuva
+	}
+	572.1.1 = {
+		holder = 200273 # Leovigild
+	}
+	586.4.1 = {
+		holder = 200272 # Rekkared
+	}
+	601.12.21 = {
+		holder = 200271 # Liuva II
+	}
+	603.7.1 = {
+		holder = 200270 # Witteric
+	}
+	610.4.1 = {
+		holder = 200269 # Gundemar
+	}
+	612.2.1 = {
+		holder = 200259 # Sisebut
+	}
+	621.2.1 = {
+		holder = 200258 # Rekkared II
+	}
+	621.3.1 = {
+		holder = 200256 # Suinthila
+	}
+	631.3.26 = {
+		holder = 200278 # Sisenand
+	}
+	636.3.12 = {
+		holder = 200254 # Khintila
+	}
+	639.12.20 = {
+		holder = 200255 # Tulga
+	}
+	642.4.16 = {
+		holder = 200240 # Khindasvint
+	}
+	653.9.30 = {
+		holder = 200249 # Rekkeswinth
+	}
+	672.9.1 = {
+		holder = 200248 # Wamba
+	}
+	680.1.1 = {
+		holder = 200237 # Erwig
+	}
+	687.11.15 = {
+		holder = 200243 # Egica
+	}
+	702.1.1 = {
+		holder = 168727 # Wittiza
+	}
+	710.1.1 = {
+		holder = 200251 # Roderic
+	}
+	768.1.1 = {
+		holder = 200020 # Suleyman Umayyad
+		government = clan_government
+	}
+}
+
+c_cuenca = {
+
+	200.1.1 = {
+		##Province of Baetica
+		de_jure_liege = d_murcia
+		liege = d_murcia
+	}
+	476.1.1 = {
+		de_jure_liege = d_toledo
+	}
+	632.1.1 = {
+		##Integration into Visigoths
+		government = feudal_government
+		liege = d_toledo
+	}
+	711.1.1 = {
+		##Al Andalus
+		government = clan_government
+	}
+
+	361.1.1 = {
+		holder = carthaginensis_02 ## Martinus
+		liege = d_murcia
+	}
+	389.1.1 = {
+		holder = carthaginensis_03 ## Marcus
+	}
+	408.1.1 = {
+		holder = alan_01 #Resapendial
+	}
+	415.1.1 = {
+		holder = alan_02 #Attaces
+	}
+	476.1.1 = {
+		holder = baetica_29 #Fake Administrator of the Autonomus City of Segontia
+		liege = k_visigoths
+	}
+	476.1.1 = {
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	532.1.1 = {
+		holder = baetica_28 #Fake Administrator of the Autonomus City of Segontia
+	}
+	554.3.1 = {
+		holder = 200276 # Athanagild
+	}
+	568.1.1 = {
+		holder = 200275 # Liuva
+	}
+	572.1.1 = {
+		holder = 200273 # Leovigild
+	}
+	586.4.1 = {
+		holder = 200272 # Rekkared
+	}
+	601.12.21 = {
+		holder = 200271 # Liuva II
+	}
+	603.7.1 = {
+		holder = 200270 # Witteric
+	}
+	610.4.1 = {
+		holder = 200269 # Gundemar
+	}
+	612.2.1 = {
+		holder = 200259 # Sisebut
+	}
+	621.2.1 = {
+		holder = 200258 # Rekkared II
+	}
+	621.3.1 = {
+		holder = 200256 # Suinthila
+	}
+	631.3.26 = {
+		holder = 200278 # Sisenand
+	}
+	636.3.12 = {
+		holder = 200254 # Khintila
+	}
+	639.12.20 = {
+		holder = 200255 # Tulga
+	}
+	642.4.16 = {
+		holder = 200240 # Khindasvint
+	}
+	653.9.30 = {
+		holder = 200249 # Rekkeswinth
+	}
+	672.9.1 = {
+		holder = 200248 # Wamba
+	}
+	680.1.1 = {
+		holder = 200237 # Erwig
+	}
+	687.11.15 = {
+		holder = 200243 # Egica
+	}
+	702.1.1 = {
+		holder = 168727 # Wittiza
+	}
+	710.1.1 = {
+		holder = 200251 # Roderic
+	}
+	768.1.1 = {
+		holder = 200020 # Suleyman Umayyad
+		government = clan_government
+	}
+}
+c_sevilla = {
+	361.1.1 = { change_development_level = 8 }
+	532.1.1 = { change_development_level = 9 }
+	632.1.1 = { change_development_level = 11 }
+	768.1.1 = { change_development_level = 14 }
+	
+	200.1.1 = {
+		##Province of Baetica
+		liege = d_cordoba
+		de_jure_liege = d_cordoba
+	}
+	476.1.1 = {
+		de_jure_liege = d_sevilla
+	}
+	532.1.1 = {
+		liege = k_visigoths
+	}
+	632.1.1 = {
+		##Integration into Visigoths
+		government = feudal_government
+		liege = d_sevilla
+	}
+	711.1.1 = {
+		##Al Andalus
+		government = clan_government
+	}
+	360.1.1 = {
+		holder = baetica_07 ## Proculus, Made-up Holder
+		liege = d_cordoba
+	}
+	395.1.1 = {
+		holder = baetica_04 ## Biggus Dickus, Easter egg from Monty Python
+	}
+	411.1.1 = {
+		holder = silingi_01 #Fake King of the Silingi Vandals
+	}
+	420.1.1 = {
+		holder = vandals_002 #King Gunderic of the Hasdingi Vandals
+	}
+	428.1.1 = {
+		holder = vandals_003 #King Genseric of the Hasdingi Vandals
+	}
+	461.1.1 = {
+		holder = baetica_13 #Fake Administrator of the Autonomus City of Hispalis
+	}
+	476.1.1 = {
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	528.1.1 = {
+		holder = baetica_12 #Fake Administrator of the Autonomus City of Hispalis
+	}
+	621.1.1 = {
+		holder = iudila #Iudila
+	}
+	768.1.1 = {
+		holder = 73680 # Hisham I Umayyad
+		liege = d_sevilla
+		government = clan_government
+	}
+}
+
+
+c_cadiz = {
+	361.1.1 = { change_development_level = 7 }
+	200.1.1 = {
+		##Province of Baetica
+		liege = d_cordoba
+		de_jure_liege = d_cordoba
+	}
+	476.1.1 = {
+		de_jure_liege = d_sevilla
+	}
+	632.1.1 = {
+		##Integration into Visigoths
+		government = feudal_government
+		liege = d_sevilla
+	}
+	711.1.1 = {
+		##Al Andalus
+		government = clan_government
+	}
+	361.1.1 = {
+		holder = baetica_08 ## Liberius, Made-up Holder
+	}
+	395.1.1 = {
+		holder = baetica_06 ## Sextus, Made-Up Holders
+	}
+	411.1.1 = {
+		holder = silingi_01 #Fake King of the Silingi Vandals
+	}
+	420.1.1 = {
+		holder = vandals_002 #King Gunderic of the Hasdingi Vandals
+	}
+	428.1.1 = {
+		holder = vandals_003 #King Genseric of the Hasdingi Vandals
+	}
+	461.1.1 = {
+		holder = baetica_13 #Fake Administrator of the Autonomus City of Hispalis
+	}
+	476.1.1 = {
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	528.1.1 = {
+		holder = baetica_12 #Fake Administrator of the Autonomus City of Hispalis
+	}
+	621.1.1 = {
+		holder = iudila #Iudila
+	}
+	768.1.1 = {
+		holder = 73680 # Hisham I Umayyad
+		liege = d_sevilla
+		government = clan_government
+	}
+}
+
+c_malaga = {
+	200.1.1 = {
+		##Province of Baetica
+		liege = d_cordoba
+		de_jure_liege = d_cordoba
+	}
+	476.1.1 = {
+		de_jure_liege = d_granada
+	}
+	532.1.1 = {
+		liege = k_visigoths
+	}
+	632.1.1 = {
+		##Integration into Visigoths
+		government = feudal_government
+		liege = d_sevilla
+	}
+	711.1.1 = {
+		##Al Andalus
+		government = clan_government
+		de_jure_liege = d_granada
+	}
+	361.1.1 = {
+		holder = baetica_08 ## Liberius, Made-up Holder
+	}
+	395.1.1 = {
+		holder = baetica_06 ## Sextus, Made-Up Holders
+	}
+	411.1.1 = {
+		holder = silingi_01 #Fake King of the Silingi Vandals
+	}
+	420.1.1 = {
+		holder = vandals_002 #King Gunderic of the Hasdingi Vandals
+	}
+	428.1.1 = {
+		holder = vandals_003 #King Genseric of the Hasdingi Vandals
+	}
+	461.1.1 = {
+		holder = baetica_15 #Fake Administrator of the Autonomus City of Gades
+	}
+	476.1.1 = {
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	528.1.1 = {
+		holder = baetica_14 #Fake Administrator of the Autonomus City of Gades
+	}
+	621.1.1 = {
+		holder = baetica_09 # Athanaric, Made up Gothic Aristocrat
+	}
+	760.1.1 = {
+		holder = 200230 # Abd al-Malik Djazairid
+		liege = k_andalusia
+		government = clan_government
+	}
+}
+
+c_algeciras = {
+	200.1.1 = {
+		##Province of Baetica
+		liege = d_cordoba
+		de_jure_liege = d_cordoba
+	}
+	476.1.1 = {
+		de_jure_liege = d_sevilla
+	}
+	632.1.1 = {
+		##Integration into Visigoths
+		government = feudal_government
+		liege = d_sevilla
+	}
+	711.1.1 = {
+		##Al Andalus
+		government = clan_government
+	}
+	361.1.1 = {
+		holder = baetica_08 ## Liberius, Made-up Holder
+	}
+	395.1.1 = {
+		holder = baetica_06 ## Sextus, Made-Up Holders
+	}
+	411.1.1 = {
+		holder = silingi_01 #Fake King of the Silingi Vandals
+	}
+	420.1.1 = {
+		holder = vandals_002 #King Gunderic of the Hasdingi Vandals
+	}
+	428.1.1 = {
+		holder = vandals_003 #King Genseric of the Hasdingi Vandals
+	}
+	461.1.1 = {
+		holder = baetica_15 #Fake Administrator of the Autonomus City of Gades
+	}
+	476.1.1 = {
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	528.1.1 = {
+		holder = baetica_14 #Fake Administrator of the Autonomus City of Gades
+	}
+	621.1.1 = {
+		holder = iudila #Iudila
+	}
+	768.1.1 = {
+		holder = 73680 # Hisham I Umayyad
+		liege = d_sevilla
+		government = clan_government
+	}
+}
+
+
+c_niebla = {
+	200.1.1 = {
+		##Province of Baetica
+		liege = d_cordoba
+		de_jure_liege = d_cordoba
+	}
+	476.1.1 = {
+		de_jure_liege = d_sevilla
+	}
+	632.1.1 = {
+		##Integration into Visigoths
+		government = feudal_government
+		liege = d_sevilla
+	}
+	711.1.1 = {
+		##Al Andalus
+		government = clan_government
+	}
+	360.1.1 = {
+		holder = baetica_07 ## Proculus, Made-up Holder
+		liege = d_cordoba
+	}
+	395.1.1 = {
+		holder = baetica_04 ## Biggus Dickus, Easter egg from Monty Python
+	}
+	411.1.1 = {
+		holder = silingi_01 #Fake King of the Silingi Vandals
+	}
+	420.1.1 = {
+		holder = vandals_002 #King Gunderic of the Hasdingi Vandals
+	}
+	428.1.1 = {
+		holder = vandals_003 #King Genseric of the Hasdingi Vandals
+	}
+	461.1.1 = {
+		holder = baetica_13 #Fake Administrator of the Autonomus City of Hispalis
+	}
+	476.1.1 = {
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	528.1.1 = {
+		holder = baetica_12 #Fake Administrator of the Autonomus City of Hispalis
+	}
+	621.1.1 = {
+		holder = baetica_17 #Fake Visigothic Noble
+	}
+	756.3.16 = {
+		holder = baranis_01 # Fictional Umar
+		liege = k_andalusia
+		government = clan_government
+	}
+}
+
+
+c_moura = {
+	200.1.1 = {
+		##Province of Baetica
+		liege = d_cordoba
+		de_jure_liege = d_cordoba
+	}
+	476.1.1 = {
+		de_jure_liege = d_sevilla
+	}
+	532.1.1 = {
+		liege = k_visigoths
+	}
+	632.1.1 = {
+		##Integration into Visigoths
+		government = feudal_government
+		liege = d_sevilla
+	}
+	711.1.1 = {
+		##Al Andalus
+		government = clan_government
+	}
+	359.1.1 = {
+		holder = baetica_18 ## Julian, Made-up Holder
+	}
+	393.1.1 = {
+		holder = baetica_16 ## Crassus, Made-Up Holders
+	}
+	460.1.1 = {
+		holder = lusitania_07 # Oussonoba
+	}
+	
+	476.1.1 = {
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	523.1.1 = {
+		holder = lusitania_13 # Oussonoba
+	}
+	621.1.1 = {
+		holder = baetica_17 #Fake Visigothic Noble
+	}
+	756.3.16 = {
+		holder = baranis_01 # Fictional Umar
+		liege = k_andalusia
+		government = clan_government
+	}
+}
+
+c_cordoba = {
+	361.1.1 = { change_development_level = 9 }
+	395.1.1 = { change_development_level = 10 }
+	476.1.1 = { change_development_level = 11 }
+	532.1.1 = { change_development_level = 12 }
+	632.1.1 = { change_development_level = 13 }
+	768.1.1 = { change_development_level = 16 }
+	
+	200.1.1 = {
+		##Province of Baetica
+		liege = d_cordoba
+	}
+	476.1.1 = {
+		de_jure_liege = d_cordoba
+	}
+	532.1.1 = {
+		liege = k_visigoths
+	}
+	632.1.1 = {
+		##Integration into Visigoths
+		government = feudal_government
+		liege = d_sevilla
+	}
+	711.1.1 = {
+		##Al Andalus
+		government = clan_government
+		liege = d_cordoba
+		de_jure_liege = d_cordoba
+	}
+	361.1.1 = {
+		holder = baetica_01 ## Caelestinus, semi-historical Proconsul
+	}
+	395.1.1 = {
+		holder = baetica_02 ## Castinus, semi-historical Proconsuls
+	}
+	411.1.1 = {
+		holder = silingi_01 #Fake King of the Silingi Vandals
+	}
+	420.1.1 = {
+		holder = vandals_002 #King Gunderic of the Hasdingi Vandals
+	}
+	428.1.1 = {
+		holder = vandals_003 #King Genseric of the Hasdingi Vandals
+	}
+	476.1.1 = {
+		holder = corduba_01 #Fake Administrator of the Autonomus City of Corduba
+	}
+	476.1.1 = {
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	532.1.1 = {
+		holder = corduba_02 #Fake Administrator of the Autonomus City of Corduba
+	}
+	621.1.1 = {
+		holder = iudila #Iudila
+	}
+	756.3.16 = {
+		holder = 73679 # Abd al-Rahman I Umayyad
+		liege = k_andalusia
+		government = clan_government
+	}
+}
+
+
+c_calatrava = {
+	200.1.1 = {
+		##Province of Baetica
+		de_jure_liege = d_murcia
+		liege = "d_murcia"
+	}
+	476.1.1 = {
+		de_jure_liege = d_cordoba
+	}
+	532.1.1 = {
+		liege = k_visigoths
+	}
+	632.1.1 = {
+		##Integration into Visigoths
+		government = feudal_government
+		liege = d_toledo
+		de_jure_liege = d_toledo
+	}
+	711.1.1 = {
+		##Al Andalus
+		de_jure_liege = d_cordoba
+		government = clan_government
+	}
+	361.1.1 = {
+		holder = nebridian_01 
+		liege = d_murcia
+	}
+	361.1.1 = {
+		liege = d_murcia
+	}
+	368.1.1 = {
+		holder = carthaginensis_01 ##Oretum Roman Family
+	}
+	461.1.1 = {
+		holder = orospeda_01 ##Independent Orospeda
+		liege = 0
+	}
+	476.1.1 = {
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	528.1.1 = {
+		holder = orospeda_02 ##Independent Orospeda
+	}
+	630.1.1 = {
+		holder = carthaginensis_07 ##Visigothic fake count
+	}
+	756.3.16 = {
+		holder = 73679 # Abd al-Rahman I Umayyad
+		liege = k_andalusia
+		government = clan_government
+	}
+}
+
+
+c_almader = {
+	200.1.1 = {
+		##Province of Baetica
+		liege = d_cordoba
+	}
+	476.1.1 = {
+		de_jure_liege = d_cordoba
+	}
+	632.1.1 = {
+		##Integration into Visigoths
+		government = feudal_government
+		liege = d_sevilla
+		de_jure_liege = d_sevilla
+	}
+	711.1.1 = {
+		##Al Andalus
+		government = clan_government
+		liege = d_cordoba
+		de_jure_liege = d_cordoba
+	}
+	361.1.1 = {
+		holder = baetica_01 ## Caelestinus, semi-historical Proconsul
+	}
+	395.1.1 = {
+		holder = baetica_02 ## Castinus, semi-historical Proconsuls
+	}
+	411.1.1 = {
+		holder = silingi_01 #Fake King of the Silingi Vandals
+	}
+	420.1.1 = {
+		holder = vandals_002 #King Gunderic of the Hasdingi Vandals
+	}
+	428.1.1 = {
+		holder = vandals_003 #King Genseric of the Hasdingi Vandals
+	}
+	476.1.1 = {
+		holder = corduba_01 #Fake Administrator of the Autonomus City of Corduba
+	}
+	476.1.1 = {
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	532.1.1 = {
+		holder = corduba_02 #Fake Administrator of the Autonomus City of Corduba
+	}
+	630.1.1 = {
+		holder = baetica_21 ##Visigothic fake count
+	}
+	756.3.16 = {
+		holder = 73679 # Abd al-Rahman I Umayyad
+		liege = k_andalusia
+		government = clan_government
+	}
+}
+
+
+c_cabra = {
+	361.1.1 = { change_development_level = 7 }
+	200.1.1 = {
+		##Province of Baetica
+		liege = d_cordoba
+		de_jure_liege = d_cordoba
+	}
+	476.1.1 = {
+		de_jure_liege = d_granada
+	}
+	532.1.1 = {
+		liege = k_visigoths
+	}
+	632.1.1 = {
+		##Integration into Visigoths
+		government = feudal_government
+		liege = d_sevilla
+		de_jure_liege = d_sevilla
+	}
+	711.1.1 = {
+		##Al Andalus
+		government = clan_government
+		de_jure_liege = d_granada
+	}
+	361.1.1 = {
+		holder = baetica_19 ## Aemilianus, Made-up Holder
+	}
+	395.1.1 = {
+		holder = baetica_20 ## Lucius, Easter egg from Monty Python
+	}
+	411.1.1 = {
+		holder = silingi_01 #Fake King of the Silingi Vandals
+	}
+	420.1.1 = {
+		holder = vandals_002 #King Gunderic of the Hasdingi Vandals
+	}
+	428.1.1 = {
+		holder = vandals_003 #King Genseric of the Hasdingi Vandals
+	}
+	476.1.1 = {
+		holder = baetica_22 #Fake Administrator of the Autonomus City of Corduba
+	}
+	476.1.1 = {
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	532.1.1 = {
+		holder = baetica_25 #Fake Administrator of the Autonomus City of Corduba
+	}
+	621.1.1 = {
+		holder = baetica_09 # Athanaric, Made up Gothic Aristocrat
+	}
+	756.3.16 = {
+		holder = 73679 # Abd al-Rahman I Umayyad
+		liege = k_andalusia
+		government = clan_government
+	}
+}
+
+
+c_andujar = {
+	200.1.1 = {
+		##Province of Baetica
+		liege = d_cordoba
+	}
+	476.1.1 = {
+		de_jure_liege = d_cordoba
+	}
+	632.1.1 = {
+		##Integration into Visigoths
+		government = feudal_government
+		liege = d_sevilla
+		de_jure_liege = d_sevilla
+	}
+	711.1.1 = {
+		##Al Andalus
+		government = clan_government
+		liege = d_cordoba
+		de_jure_liege = d_cordoba
+	}
+	361.1.1 = {
+		holder = baetica_19 ## Aemilianus, Made-up Holder
+	}
+	395.1.1 = {
+		holder = baetica_20 ## Lucius, Easter egg from Monty Python
+	}
+	411.1.1 = {
+		holder = silingi_01 #Fake King of the Silingi Vandals
+	}
+	420.1.1 = {
+		holder = vandals_002 #King Gunderic of the Hasdingi Vandals
+	}
+	428.1.1 = {
+		holder = vandals_003 #King Genseric of the Hasdingi Vandals
+	}
+	476.1.1 = {
+		holder = baetica_23 #Fake Administrator of the Autonomus City of Corduba
+	}
+	476.1.1 = {
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	532.1.1 = {
+		holder = baetica_26 #Fake Administrator of the Autonomus City of Corduba
+		liege = k_visigoths
+	}
+	630.1.1 = {
+		holder = baetica_21 ##Visigothic fake count
+	}
+	756.3.16 = {
+		holder = 73679 # Abd al-Rahman I Umayyad
+		liege = k_andalusia
+		government = clan_government
+	}
+}
+
+c_granada = {
+	476.1.1 = { change_development_level = 8 }
+	632.1.1 = { change_development_level = 5 }
+	768.1.1 = { change_development_level = 9 }
+	200.1.1 = {
+		##Province of Baetica
+		liege = d_cordoba
+		de_jure_liege = d_cordoba
+	}
+	476.1.1 = {
+		de_jure_liege = d_granada
+	}
+	532.1.1 = {
+		liege = k_visigoths
+	}
+	632.1.1 = {
+		##Integration into Visigoths
+		government = feudal_government
+		liege = d_sevilla
+		de_jure_liege = d_sevilla
+	}
+	711.1.1 = {
+		##Al Andalus
+		government = clan_government
+		de_jure_liege = d_granada
+	}
+	361.1.1 = {
+		holder = baetica_19 ## Aemilianus, Made-up Holder
+	}
+	395.1.1 = {
+		holder = baetica_20 ## Lucius, Easter egg from Monty Python
+	}
+	411.1.1 = {
+		holder = silingi_01 #Fake King of the Silingi Vandals
+	}
+	420.1.1 = {
+		holder = vandals_002 #King Gunderic of the Hasdingi Vandals
+	}
+	428.1.1 = {
+		holder = vandals_003 #King Genseric of the Hasdingi Vandals
+	}
+	476.1.1 = {
+		holder = baetica_24 #Fake Administrator of the Autonomus City of Corduba
+	}
+	476.1.1 = {
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	532.1.1 = {
+		holder = baetica_27 #Fake Administrator of the Autonomus City of Corduba
+	}
+	621.1.1 = {
+		holder = baetica_09 # Athanaric, Made up Gothic Aristocrat
+	}
+	760.1.1 = {
+		holder = 200230 # Abd al-Malik Djazairid
+		liege = k_andalusia
+		government = clan_government
+	}
+}
+
+c_almeria = {
+	200.1.1 = {
+		##Province of Baetica
+		liege = d_murcia
+		de_jure_liege = d_murcia
+	}
+	476.1.1 = {
+		de_jure_liege = d_granada
+	}
+	632.1.1 = {
+		##Integration into Visigoths
+		government = feudal_government
+		liege = d_sevilla
+		de_jure_liege = d_sevilla
+	}
+	711.1.1 = {
+		##Al Andalus
+		government = clan_government
+		de_jure_liege = d_granada
+	}
+	361.1.1 = {
+		holder = carthaginensis_05 ## Paulus, Made-up Holder
+	}
+	395.1.1 = {
+		holder = carthaginensis_06 ## Olybrus, Made-Up Holders
+	}
+	411.1.1 = {
+		holder = silingi_01 #Fake King of the Silingi Vandals
+	}
+	420.1.1 = {
+		holder = vandals_002 #King Gunderic of the Hasdingi Vandals
+	}
+	428.1.1 = {
+		holder = vandals_003 #King Genseric of the Hasdingi Vandals
+	}
+	476.1.1 = {
+		holder = baetica_10 #Fake Administrator of the Autonomus City of Carthago Nova
+	}
+	476.1.1 = {
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	532.1.1 = {
+		holder = baetica_11 #Fake Administrator of the Autonomus City of Carthago Nova
+	}
+	621.1.1 = {
+		holder = baetica_09 # Athanaric, Made up Gothic Aristocrat
+	}
+	766.1.1 = {
+		holder = 200229 # Yusuf Nefudid
+		liege = k_andalusia
+		government = clan_government
+	}
+}
+
+c_madrid = {
+
+	361.1.1 = { change_development_level = 4 }
+	632.1.1 = { change_development_level = 7 }
+	200.1.1 = {
+		##Province of Baetica
+		de_jure_liege = d_murcia
+		liege = d_murcia
+	}
+	476.1.1 = {
+		de_jure_liege = d_toledo
+	}
+	632.1.1 = {
+		##Integration into Visigoths
+		government = feudal_government
+		liege = d_toledo
+		de_jure_liege = d_toledo
+	}
+	711.1.1 = {
+		##Al Andalus
+		government = clan_government
+	}
+	
+	361.1.1 = {
+		holder = carthaginensis_02 ## Martinus
+		liege = d_murcia
+	}
+	389.1.1 = {
+		holder = carthaginensis_03 ## Marcus
+	}
+	408.1.1 = {
+		holder = alan_01 #Resapendial
+	}
+	415.1.1 = {
+		holder = alan_02 #Attaces
+	}
+	476.1.1 = {
+		holder = baetica_29 #Fake Administrator of the Autonomus City of Segontia
+		liege = k_visigoths
+	}
+	476.1.1 = {
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	532.1.1 = {
+		holder = baetica_28 #Fake Administrator of the Autonomus City of Segontia
+	}
+	554.3.1 = {
+		holder = 200276 # Athanagild
+	}
+	568.1.1 = {
+		holder = 200275 # Liuva
+	}
+	572.1.1 = {
+		holder = 200273 # Leovigild
+	}
+	586.4.1 = {
+		holder = 200272 # Rekkared
+	}
+	601.12.21 = {
+		holder = 200271 # Liuva II
+	}
+	603.7.1 = {
+		holder = 200270 # Witteric
+	}
+	610.4.1 = {
+		holder = 200269 # Gundemar
+	}
+	612.2.1 = {
+		holder = 200259 # Sisebut
+	}
+	621.2.1 = {
+		holder = 200258 # Rekkared II
+	}
+	621.3.1 = {
+		holder = 200256 # Suinthila
+	}
+	631.3.26 = {
+		holder = 200278 # Sisenand
+	}
+	636.3.12 = {
+		holder = 200254 # Khintila
+	}
+	639.12.20 = {
+		holder = 200255 # Tulga
+	}
+	642.4.16 = {
+		holder = 200240 # Khindasvint
+	}
+	653.9.30 = {
+		holder = 200249 # Rekkeswinth
+	}
+	672.9.1 = {
+		holder = 200248 # Wamba
+	}
+	680.1.1 = {
+		holder = 200237 # Erwig
+	}
+	687.11.15 = {
+		holder = 200243 # Egica
+	}
+	702.1.1 = {
+		holder = 168727 # Wittiza
+	}
+	710.1.1 = {
+		holder = 200251 # Roderic
+	}
+	768.1.1 = {
+		holder = 200020 # Suleyman Umayyad
+		government = clan_government
+	}
+}
+
+
+c_molina = {
+	361.1.1 = { change_development_level = 3 }
+	632.1.1 = { change_development_level = 5 }
+	300.1.1 = { #Diocletian reform
+		de_jure_liege = d_murcia
+		liege = d_murcia
+	}
+	476.1.1 = {
+		de_jure_liege = d_toledo
+	}
+	632.1.1 = {
+		##Integration into Visigoths
+		government = feudal_government
+		liege = d_toledo
+		de_jure_liege = d_toledo
+	}
+	711.1.1 = {
+		##Al Andalus
+		government = clan_government
+	}
+
+	361.1.1 = {
+		holder = carthaginensis_02 ## Martinus
+		liege = d_murcia
+	}
+	361.1.1 = {
+		liege = d_murcia
+	}
+	476.1.1 = {
+		holder = baetica_29 #Fake Administrator of the Autonomus City of Segontia
+		liege = k_visigoths
+	}
+	476.1.1 = {
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	532.1.1 = {
+		holder = baetica_28 #Fake Administrator of the Autonomus City of Segontia
+	}
+	389.1.1 = {
+		holder = carthaginensis_03 ## Marcus
+	}
+	756.3.16 = {
+		holder = 73903 # Ali Adirid
+		liege = k_andalusia
+		government = clan_government
+	}
+}
+
+
+c_malagon = {
+	361.1.1 = { change_development_level = 4 }
+	632.1.1 = { change_development_level = 7 }
+	200.1.1 = {
+		##Province of Baetica
+		de_jure_liege = d_murcia
+		liege = d_murcia
+	}
+	476.1.1 = {
+		de_jure_liege = d_toledo
+	}
+	632.1.1 = {
+		##Integration into Visigoths
+		government = feudal_government
+		liege = d_toledo
+		de_jure_liege = d_toledo
+	}
+	711.1.1 = {
+		##Al Andalus
+		government = clan_government
+	}
+
+
+	361.1.1 = {
+		holder = nebridian_01 
+		liege = d_murcia
+	}
+	361.1.1 = {
+		liege = d_murcia
+	}
+	368.1.1 = {
+		holder = carthaginensis_01 ##Oretum Roman Family
+	}
+	408.1.1 = {
+		holder = alan_01 #Resapendial
+	}
+	415.1.1 = {
+		holder = alan_02 #Attaces
+	}
+	461.1.1 = {
+		holder = carthaginensis_08 # Independent city of Toletum
+		liege = k_visigoths
+	}
+	476.1.1 = {
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	529.1.1 = {
+		holder = carthaginensis_10 # Independent city of Toletum
+	}
+	554.3.1 = {
+		holder = 200276 # Athanagild
+	}
+	568.1.1 = {
+		holder = 200275 # Liuva
+	}
+	572.1.1 = {
+		holder = 200273 # Leovigild
+	}
+	586.4.1 = {
+		holder = 200272 # Rekkared
+	}
+	601.12.21 = {
+		holder = 200271 # Liuva II
+	}
+	603.7.1 = {
+		holder = 200270 # Witteric
+	}
+	610.4.1 = {
+		holder = 200269 # Gundemar
+	}
+	612.2.1 = {
+		holder = 200259 # Sisebut
+	}
+	621.2.1 = {
+		holder = 200258 # Rekkared II
+	}
+	621.3.1 = {
+		holder = 200256 # Suinthila
+	}
+	631.3.26 = {
+		holder = 200278 # Sisenand
+	}
+	636.3.12 = {
+		holder = 200254 # Khintila
+	}
+	639.12.20 = {
+		holder = 200255 # Tulga
+	}
+	642.4.16 = {
+		holder = 200240 # Khindasvint
+	}
+	653.9.30 = {
+		holder = 200249 # Rekkeswinth
+	}
+	672.9.1 = {
+		holder = 200248 # Wamba
+	}
+	680.1.1 = {
+		holder = 200237 # Erwig
+	}
+	687.11.15 = {
+		holder = 200243 # Egica
+	}
+	702.1.1 = {
+		holder = 168727 # Wittiza
+	}
+	710.1.1 = {
+		holder = 200251 # Roderic
+	}
+	768.1.1 = {
+		holder = 200020 # Suleyman Umayyad
+		government = clan_government
+	}
+}
+
+
+c_mora = {
+	361.1.1 = { change_development_level = 4 }
+	632.1.1 = { change_development_level = 7 }
+	200.1.1 = {
+		##Province of Baetica
+		de_jure_liege = d_murcia
+		liege = d_murcia
+	}
+	476.1.1 = {
+		de_jure_liege = d_toledo
+	}
+	632.1.1 = {
+		##Integration into Visigoths
+		government = feudal_government
+		liege = d_toledo
+		de_jure_liege = d_toledo
+	}
+	711.1.1 = {
+		##Al Andalus
+		government = clan_government
+	}
+
+	361.1.1 = {
+		holder = nebridian_01 
+		liege = d_murcia
+	}
+	361.1.1 = {
+		liege = d_murcia
+	}
+	368.1.1 = {
+		holder = carthaginensis_01 ##Oretum Roman Family
+	}
+	408.1.1 = {
+		holder = alan_01 #Resapendial
+	}
+	415.1.1 = {
+		holder = alan_02 #Attaces
+	}
+	461.1.1 = {
+		holder = carthaginensis_08 # Independent city of Toletum
+		liege = k_visigoths
+	}
+	476.1.1 = {
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	529.1.1 = {
+		holder = carthaginensis_10 # Independent city of Toletum
+	}
+	554.3.1 = {
+		holder = 200276 # Athanagild
+	}
+	568.1.1 = {
+		holder = 200275 # Liuva
+	}
+	572.1.1 = {
+		holder = 200273 # Leovigild
+	}
+	586.4.1 = {
+		holder = 200272 # Rekkared
+	}
+	601.12.21 = {
+		holder = 200271 # Liuva II
+	}
+	603.7.1 = {
+		holder = 200270 # Witteric
+	}
+	610.4.1 = {
+		holder = 200269 # Gundemar
+	}
+	612.2.1 = {
+		holder = 200259 # Sisebut
+	}
+	621.2.1 = {
+		holder = 200258 # Rekkared II
+	}
+	621.3.1 = {
+		holder = 200256 # Suinthila
+	}
+	631.3.26 = {
+		holder = 200278 # Sisenand
+	}
+	636.3.12 = {
+		holder = 200254 # Khintila
+	}
+	639.12.20 = {
+		holder = 200255 # Tulga
+	}
+	642.4.16 = {
+		holder = 200240 # Khindasvint
+	}
+	653.9.30 = {
+		holder = 200249 # Rekkeswinth
+	}
+	672.9.1 = {
+		holder = 200248 # Wamba
+	}
+	680.1.1 = {
+		holder = 200237 # Erwig
+	}
+	687.11.15 = {
+		holder = 200243 # Egica
+	}
+	702.1.1 = {
+		holder = 168727 # Wittiza
+	}
+	710.1.1 = {
+		holder = 200251 # Roderic
+	}
+	768.1.1 = {
+		holder = 200020 # Suleyman Umayyad
+		government = clan_government
+	}
+}

@@ -1,0 +1,205 @@
+﻿### TFE Celtic Bhakti
+bhakti_celtic_briton_brigantia = {		# A godess of Knowledge, Wisdom and Victory
+	icon = prowess_positive
+	learning = 2
+	martial = 2
+}
+bhakti_celtic_briton_sulis = {		# A godess of Sun and Healing Waters
+	icon = health_positive
+	health = 0.5
+	diplomacy = 2
+}
+bhakti_celtic_briton_cunomaglus = {		# God of the Hunt
+	icon = hunt_positive
+	martial = major_skill_bonus
+	forest_movement_speed = 0.5
+	forest_advantage = 2
+}
+bhakti_celtic_generic_epona = {		# Goddes of Horses and Fertility
+		icon = fertility_positive
+	fertility = 0.25
+	attraction_opinion = 10
+	close_relative_opinion = 10
+}
+pilgrimage_ethiopia_jerusalem_modifier = {
+	icon = social_positive
+	same_faith_opinion = 5
+	monthly_piety_gain_mult = 0.1
+}
+
+# Illyrian Sacrifice
+
+TFE_illyrian_sacrifice_sun_modifier_1 = {
+	icon = compass_positive
+	diplomacy = 2
+	monthly_prestige = 0.2
+}
+
+TFE_illyrian_sacrifice_sun_modifier_2 = {
+	icon = compass_positive
+	martial = 2
+	monthly_prestige = 0.2
+}
+
+TFE_illyrian_sacrifice_sun_modifier_3 = {
+	icon = compass_positive
+	prowess = 2
+	monthly_prestige = 0.2
+}
+
+TFE_illyrian_sacrifice_sun_modifier_4 = {
+	icon = compass_positive
+	monthly_dynasty_prestige = 0.2
+	monthly_prestige = 0.2
+}
+
+TFE_illyrian_sacrifice_sun_modifier_5 = {
+	icon = compass_positive
+	negate_health_penalty_add = 0.15
+	monthly_prestige = 0.2
+}
+
+TFE_illyrian_sacrifice_sun_modifier_6 = {
+	icon = compass_positive
+	vassal_opinion = 10
+	monthly_prestige = 0.2
+}
+
+TFE_illyrian_sacrifice_sun_modifier_7 = {
+	icon = compass_positive
+	county_opinion_add = 5
+	monthly_prestige = 0.2
+}
+
+TFE_illyrian_sacrifice_sun_modifier_8 = {
+	icon = compass_positive
+	knight_effectiveness_mult = 0.15
+	monthly_prestige = 0.2
+}
+
+TFE_illyrian_sacrifice_sun_modifier_9 = {
+	icon = compass_positive
+	men_at_arms_maintenance = -0.2
+	monthly_prestige = 0.2
+}
+
+TFE_illyrian_sacrifice_sun_modifier_10 = {
+	icon = compass_positive
+	title_creation_cost_mult = -0.25
+	monthly_prestige = 0.2
+}
+
+TFE_illyrian_sacrifice_sun_modifier_11 = {
+	icon = compass_positive
+	courtier_and_guest_opinion = 10
+	monthly_prestige = 0.2
+}
+
+TFE_illyrian_sacrifice_sun_modifier_12 = {
+	icon = compass_positive
+	levy_reinforcement_rate = 0.2
+	monthly_prestige = 0.2
+}
+
+
+TFE_illyrian_sacrifice_serpent_modifier_1 = {
+	icon = beast_positive
+	stewardship = 2
+	monthly_piety = 0.2
+}
+
+TFE_illyrian_sacrifice_serpent_modifier_2 = {
+	icon = beast_positive
+	intrigue = 2
+	monthly_piety = 0.2
+}
+
+TFE_illyrian_sacrifice_serpent_modifier_3 = {
+	icon = beast_positive
+	learning = 2
+	monthly_piety = 0.2
+}
+
+TFE_illyrian_sacrifice_serpent_modifier_4 = {
+	icon = beast_positive
+	monthly_lifestyle_xp_gain_mult = 0.05
+	monthly_piety = 0.2
+}
+
+TFE_illyrian_sacrifice_serpent_modifier_5 = {
+	icon = beast_positive
+	development_growth_factor = 0.1
+	monthly_piety = 0.2
+}
+
+TFE_illyrian_sacrifice_serpent_modifier_6 = {
+	icon = beast_positive
+	monthly_county_control_growth_factor = 0.1
+	monthly_piety = 0.2
+}
+
+TFE_illyrian_sacrifice_serpent_modifier_7 = {
+	icon = beast_positive
+	owned_hostile_scheme_success_chance_add = 8
+	monthly_piety = 0.2
+}
+
+TFE_illyrian_sacrifice_serpent_modifier_8 = {
+	icon = beast_positive
+	owned_hostile_scheme_success_chance_add = 8
+	monthly_piety = 0.2
+}
+
+TFE_illyrian_sacrifice_serpent_modifier_9 = {
+	icon = beast_positive
+	enemy_hostile_scheme_success_chance_add = -8
+	monthly_piety = 0.2
+}
+
+TFE_illyrian_sacrifice_serpent_modifier_10 = {
+	icon = beast_positive
+	build_gold_cost = -0.1
+	monthly_piety = 0.2
+}
+
+TFE_illyrian_sacrifice_serpent_modifier_11 = {
+	icon = beast_positive
+	character_travel_safety_mult = 0.15
+	monthly_piety = 0.2
+}
+
+TFE_illyrian_sacrifice_serpent_modifier_12 = {
+	icon = beast_positive
+	fertility = 0.1
+	monthly_piety = 0.2
+}
+
+# Misc
+
+TFE_cult_of_mary_virgin_modifier = {
+	icon = piety_positive
+	diplomacy_per_piety_level = 1
+	monthly_piety_gain_mult = 0.1
+	fertility = -0.1
+}
+
+TFE_cult_of_mary_mother_modifier = {
+	icon = piety_positive
+	development_growth_factor = 0.1
+	fertility = 0.15
+	martial = -1
+}
+
+TFE_cult_of_mary_saint_modifier = {
+	icon = piety_positive
+	learning_per_piety_level = 1
+	owned_personal_scheme_success_chance_add = 0.2
+	intrigue = -1
+}
+
+TFE_east_african_religious_tattoo = {
+	icon = piety_positive
+	health = 0.2
+	monthly_piety = 0.2
+	enemy_hostile_scheme_phase_duration_add = minor_scheme_phase_duration_malus_value
+}

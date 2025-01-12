@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "female_headgear_secular_celtic_waterloo_mesh"
+	file = "female_headgear_secular_celtic_waterloo.mesh"
+
+	meshsettings = {
+		name = "female_headgear_secular_celtic_waterlooShape"
+		index = 0
+		texture_diffuse = "waterloo_diffuse.dds"
+		texture_normal = "waterloo_normal.dds"
+		texture_specular = "waterloo_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "female_headgear_secular_celtic_waterloo_entity"
+	pdxmesh = "female_headgear_secular_celtic_waterloo_mesh"
+}

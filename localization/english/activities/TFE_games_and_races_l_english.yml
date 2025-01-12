@@ -1,0 +1,412 @@
+﻿l_english:
+ activity_TFE_games_host_an_a: "$host_activity_a$"
+ activity_TFE_races_host_an_a: "$host_activity_a$"
+
+activity_TFE_games:0 "Gladiatorial Contest"
+activity_TFE_games_desc:0 "Holding ludi (public games) will simultaneously demonstrate my power and prestige, and provide entertainment for the locals."
+activity_TFE_games_selection_tooltip:0 "Host exciting gladiatorial games! \nAnticipated Rewards:\n$BULLET_WITH_TAB$Gain random amounts of [piety_i|E][piety|E], [prestige_i|E][prestige|E], and [dynasty_prestige_i|E][dynasty_prestige|E]\n$BULLET_WITH_TAB$ Gain [county_opinion|E] in the hosting county"
+activity_TFE_games_host_desc:0 "$BULLET_WITH_TAB$Gain random amounts of [piety_i|E][piety|E], [prestige_i|E][prestige|E], and [dynasty_prestige_i|E][dynasty_prestige|E]\n$BULLET_WITH_TAB$ Gain [county_opinion|E] in the hosting county"
+activity_TFE_games_guest_desc:0 "$BULLET_WITH_TAB$Gain random amounts of [piety_i|E][piety|E], [prestige_i|E][prestige|E], and [dynasty_prestige_i|E][dynasty_prestige|E]"
+activity_TFE_games_province_desc:0 "" # Fallback option
+activity_colosseum_games_desc:0 "\n#P ++ The Colosseum#!\n#weak This will reduce the [gold|E] cost of this [activity|E] and increase rewards gained.#!"
+activity_colosseum_games_discount_desc:0 "The Colosseum"
+activity_military_buildings_games_discount_desc:0 "Military buildings"
+activity_TFE_games_destination_selection:0 ""
+TFE_games_type_gladiator:0 "Gladiatorial Games"
+TFE_games_type_gladiator_desc:0 "Holding gladiator fights in arenas has been a storied tradition stretching back to the days of the Roman Republic. It is a spectacle for observers, and a chance for the condemned to win freedom through strength and willpower. May the odds be ever in your favor!"
+TFE_games_base_cost:0 "Games [activity|E] Base Cost"
+activity_TFE_games_province_desc_terrain_bad_cost:0 "Bad Terrain"
+activity_TFE_games_province_desc_terrain_bad:0 "#N - Unsuitable Terrain#!"
+activity_TFE_games_province_desc_development_great:0 "#P +++ County Development#!"
+activity_TFE_games_province_desc_development_good:0 "#P ++ County Development#!"
+activity_TFE_games_province_desc_development_ok:0 "#P + County Development#!"
+activity_TFE_games_province_desc_development_bad:0 "#N - County Development#!"
+activity_TFE_games_province_desc_military_buildings:0 "#P + Military Buildings Present#!"
+
+TRAVEL_NAME_FOR_activity_TFE_games:0 "[Character.GetFirstNamePossessiveNoTooltip] journey to the Ludi"
+
+ # ACCOMMODATIONS
+ TFE_activities_option_accommodations:0 "Spectator Amenities"
+ TFE_activities_option_accommodations_bad:0 "No Accommodations"
+ TFE_activities_option_accommodations_bad_desc:0 "$EFFECT_LIST_BULLET$ Lose [prestige|E]\n$EFFECT_LIST_BULLET$ Certain spectator-related negative events are more likely to fire\n\n#weak The people grumble at the lack of munificence displayed by the local rulers#!"
+ TFE_activities_option_accommodations_normal:0 "Spartan Lodgings"
+ TFE_activities_option_accommodations_normal_desc:0 "$EFFECT_LIST_BULLET$ Event weightings are unaffected\n\n#weak You have put in a minimal amount of effort to provide for the participants, and should expect similar amounts of approbation#!"
+ TFE_activities_option_accommodations_good:0 "Bread #Sand#! Circuses"
+ TFE_activities_option_accommodations_good_desc:0 "$EFFECT_LIST_BULLET$ Increased [prestige|E] gain\n$EFFECT_LIST_BULLET$ Certain spectator-related negative events are #EMP less#! likely to fire\n\n#weak Attendees can expect free food as well as free entertainment#!"
+ TFE_activities_option_accommodations_very_good:0 "Cornucopia of Pleasures"
+ TFE_activities_option_accommodations_very_good_desc:0 "$EFFECT_LIST_BULLET$ Greatly increased [prestige|E] gain\n$EFFECT_LIST_BULLET$ Certain spectator-related negative events are #EMP less#! likely to fire\n\n#weak These games will be remembered years from now as some of the most extravagant to be thrown in people's lifetimes#!"
+ 
+ # FIGHTERS
+ TFE_games_option_fights:0 "Spectacle Quality"
+ TFE_games_option_fights_bad:0 "Damnati"
+ TFE_games_option_fights_bad_desc:0 "$EFFECT_LIST_BULLET$ Lose [prestige|E]\n$EFFECT_LIST_BULLET$ Certain fight-related negative events are more likely to fire\n\n#weak Not paying for trained fighters will reduce costs, but will also naturally produce less engaging bouts in the arena#!"
+ #TFE_games_option_fights_normal:0 "Soldier Prisoners"
+ #TFE_games_option_fights_normal_desc:0 "$EFFECT_LIST_BULLET$ Event weightings are unaffected\n\n#weak Prisoners of war can attempt to redeem their honour in the arena. They also happen to put up more of a fight than slaves#!"
+ #TFE_games_option_fights_good:0 "Local Gladiator Schools"
+ #TFE_games_option_fights_good_desc:0 "$EFFECT_LIST_BULLET$ Increased [prestige|E] gain\n$EFFECT_LIST_BULLET$ Certain fight-related negative events are #EMP less#! likely to fire\n\n#weak Aside from slaves and prisoners, the poor and non-citizens could often be found trying their luck for a better life in the arena#!"
+ #TFE_games_option_fights_very_good:0 "Auctorati"
+ #TFE_games_option_fights_very_good_desc:0 "$EFFECT_LIST_BULLET$ Greatly increased [prestige|E] gain\n$EFFECT_LIST_BULLET$ Certain fight-related negative events are #EMP less#! likely to fire\n\n#weak Paid volunteers (auctorati) were often the most skilled gladiators one could find, and consequently, the most costly#!"
+ TFE_games_option_fights_normal:0 "Local Gladiator Schools"
+ TFE_games_option_fights_normal_desc:0 "$EFFECT_LIST_BULLET$ Event weightings are unaffected\n\n#weak Aside from slaves and prisoners, the poor and non-citizens could often be found trying their luck for a better life in the arena#!"
+ TFE_games_option_fights_good:0 "Auctorati"
+ TFE_games_option_fights_good_desc:0 "$EFFECT_LIST_BULLET$ Increased [prestige|E] gain\n$EFFECT_LIST_BULLET$ Certain fight-related negative events are #EMP less#! likely to fire\n\n#weak Paid volunteers (auctorati) were often the most skilled gladiators one could find, and consequently, the most costly#!"
+ TFE_games_option_fights_very_good:0 "Exotic Animals"
+ TFE_games_option_fights_very_good_desc:0 "$EFFECT_LIST_BULLET$ Greatly increased [prestige|E] gain\n$EFFECT_LIST_BULLET$ Certain fight-related negative events are #EMP less#! likely to fire\n$EFFECT_LIST_BULLET$ Unique fight-related events may occur\n\n#weak Why restrict fights to mere human combatants when one can import fauna from all over the world?#!"
+ TFE_games_option_fights_excellent:0 "Naumachia"
+ TFE_games_option_fights_excellent_desc:0 "$EFFECT_LIST_BULLET$ Greatly increased [prestige|E] gain\n$EFFECT_LIST_BULLET$ Certain negative events are #EMP less#! likely to fire\n$EFFECT_LIST_BULLET$ Even more unique fight-related events may occur\n\n#weak Only the most wealthy (and some would argue, spendthrift) of rulers would be able to afford the staging of large scale naval battles purely for entertainment#!"
+ #TFE_games_option_races_normal:0 "Local Charioteers"
+ #TFE_games_option_races_normal_desc:0 "$EFFECT_LIST_BULLET$ Event weightings are unaffected\n\n#weak Most charioteers were slaves or low-status freedmen, as their job disqualified them from many of the privileges of full citizenship#!"
+
+ # EVENTS
+
+ # START
+ TFE_gladiator_events.0001.t:0 "The Start of the Ludi -- Gladiator Fights"
+ TFE_gladiator_events.0001.desc:0 "Let the games begin!\n\n"
+ TFE_gladiator_events.0001.host:0 "Many have flocked to my arena in [activity.GetCurrentPhase.GetLocation.GetName], eager to enjoy the bloody spectacle ahead."
+ TFE_gladiator_events.0001.contestant:0 "Like many others who have flocked to [activity.GetCurrentPhase.GetLocation.GetName], eagerly awaiting the fights to come, I busy myself socializing."
+ TFE_gladiator_events.0001.spectator:0 ""Many have flocked to [host.GetTitledFirstNamePossessive] grounds in [activity.GetCurrentPhase.GetLocation.GetName], to be entertained."
+ TFE_gladiator_events.0001.closing:0 "\n\nThe sun rises higher in the sky, and the shadows shorten. It will soon begin."
+ TFE_gladiator_events.0001.a:0 "Let the games begin!"
+
+ TFE_gladiator_events.0002.t:0 "Nobody Showed"
+ TFE_gladiator_events.0002.desc:0 "I cannot believe it. Despite my invitations and preparations, not a single guest showed up to my ludi."
+ TFE_gladiator_events.0002.a:0 "Am I truly so alone?"
+ TFE_gladiator_events.0002.b:0 "I feel a little relieved."
+
+ #FIGHT (check gladiator story cycle for others)
+ TFE_gladiator_events.0003.t:0 "The Circus"
+ TFE_gladiator_events.0003.desc:0 "As part of my efforts to host the best ludi possible, I have imported a veritable menagerie of animals from all over the world. Ostriches, elephants, giraffes... I pause before continuing to my seat in the stands."
+ TFE_gladiator_events.0003.a:0 "I'll requisition one as my personal beast."
+ TFE_gladiator_events.0003.b:0 "What if I imported... more?"
+ TFE_gladiator_events.0003.c:0 "A free for all melee with gladiators would provide high-quality recruits."
+
+ TFE_gladiator_events.0004.t:0 "The Naumachia"
+ TFE_gladiator_events.0004.desc:0 "Caesar had a naval battle staged as part of his quadruple triumph while dictator, followed by Augustus and other emperors who wished to emphasize the grandiosity of their reign. As in the past, a basin has been dug near a river and filled with water, with an island in the center for spectators like myself to sit. I have prepared dozens of boats and thousands of rowers and slaves. The fighters only await my signal."
+ TFE_gladiator_events.0004.a:0 "Extravagance personified."
+
+ #SPECTATE
+ TFE_gladiator_events.0005.t:0 "The Local Gladiator School"
+ TFE_gladiator_events.0005.desc:0 "As I'm hurrying down an alleyway from my lodgings to the arena one day, I'm distracted by the sound of a series of quick sword strikes. I round the corner and see a local ludus (gladiator school). In the courtyard, a furious fight is occurring between a secutor (shortsword and shield) and a retiarus (trident and net). The trainer sees me and pauses the training, ambling over while jerking his thumb at the two fighters taking a breather.\n Like what you see? For a small sum, you can buy yourself a well-trained fighter."
+ TFE_gladiator_events.0005.a:0 "I'll take [new_gladiator_1.GetFirstNameNoTooltip]"
+ TFE_gladiator_events.0005.b:0 "[new_gladiator_2.GetFirstNameNoTooltip] is clearly the better fighter"
+ TFE_gladiator_events.0005.c:0 "Why not both?"
+ TFE_gladiator_events.0005.d:0 "I'm just here to enjoy the show"
+
+ TFE_gladiator_events.0006.t:0 "The Fugitive Gladiator"
+ TFE_gladiator_events.0006.desc:0 "After a fruitless period spent tossing and turning in bed, you step outside for a quick walk in the crisp night air, hoping it will clear your head. Suddenly, a bell starts ringing, followed by the sound of baying dogs and guards on the hunt. As you turn a corner, you collide with a shadowy, cloaked figure, sending both of you sprawling on the ground. You reach out to help the other to their feet, but as you do so, a posse of watchmen and their guard dogs come hurtling down the street, pausing and regarding the pair of you with suspicion. Their leader steps forward and asks if I have seen an escaped slave from the gladiator ranks anywhere, his eyes lingering on my companion. I spot a glint of armor underneath the cloak. Could this figure be their quarry?"
+ TFE_gladiator_events.0006.a:0 "This is... err... my personal valet."
+ TFE_gladiator_events.0006.b:0 "I was looking for someone of authority to turn in this vagabond!"
+
+ TFE_gladiator_events.0007.t:0 "The Tavern"
+ TFE_gladiator_events.0007.desc:0 "After an exciting day filled with gladiator fights, I decide to find a local tavern to relax for the rest of the night. As I enter, I survey my options. I should..."
+ TFE_gladiator_events.0007.a:0 "Just get a drink."
+ TFE_gladiator_events.0007.b:0 "Play some cards and dice."
+ TFE_gladiator_events.0007.c:0 "Converse with the other patrons."
+ TFE_gladiator_events.0007.d:0 "Actually, I'm here to find some mercenaries."
+ TFE_you_learn_a_little:0 "You learn a little something"
+ TFE_you_learn_a_lot:0 "You learn a lot"
+ TFE_you_get_into_a_fight:0 "You get into a fight"
+
+ TFE_gladiator_events.0008.t:0 "The Marketsquare"
+ TFE_gladiator_events.0008.desc:0 "You're feeling extra adventurous around mealtime today, and so you wander around until you happen upon the local marketplace -- stands in a plaza surrounded by shops. Vendors are here hawking all sorts of produce, items, and other products of note. Out of the corner of your eye, you spot --"
+ TFE_gladiator_events.0008.a:0 "a food stand with some local delicacies!"
+ TFE_gladiator_events.0008.b:0 "a bookstore?"
+ TFE_gladiator_events.0008.c:0 "a street performance."
+ TFE_gladiator_events.0008.d:0 "#X some Wu Hou Mackerel?! #!"
+ TFE_gladiator_events.0008.b.success:0 "You find a rare book"
+ TFE_gladiator_events.0008.b.success.good:0 "You gain a very good book [artifact|E]"
+ TFE_gladiator_events.0008.b.failure:0 "The bookseller doesn't have anything interesting"
+ TFE_gladiator_events.0008.b.success.bad:0 "You gain an uninteresting old book [artifact|E]"
+ TFE_you_get_pickpocketed:0 "A thief steals your coins"
+
+ TFE_gladiator_events.0009.t:0 "The Collapsed Stands"
+ TFE_gladiator_events.0009.desc:0 "Whether through bad luck or poor design, some spectator stands collapsed. Fortunately, you were in an adjacent stand, but some others were not so lucky. As you survey the wreckage, you spot a gladiator with a broken leg trapped underneath a pile of precariously balanced beams. With a groan, the residual structure shudders. It is clear that before help arrives the house of cards will collapse on the fighter, killing them."
+ TFE_gladiator_events.0009.a:0 "I try to save the gladiator!"
+ TFE_gladiator_events.0009.b:0 "It's too risky"
+ TFE_succeed_stands:0 "You save the gladiator"
+ TFE_fail_stands:0 "You injure yourself trying to rescue the trapped fighter"
+
+ TFE_gladiator_events.0010.t:0 "The Riots"
+ TFE_gladiator_events.0010.desc:0 "A tremendous commotion can be heard coming from the fighters' housing. Before too long, the doors burst open and out tumble a ragged group of escaped gladiator slaves. You recognize them as some of the fighters your host had been bragging about earlier in the day. They rush down the street... right to where you are. Their leader steps forward menacingly, and orders you to let them through."
+ TFE_gladiator_events.0010.a:0 "You're going back to your master, willingly or not"
+ TFE_gladiator_events.0010.b:0 "This isn't worth it"
+ TFE_gladiator_events.0010.c:0 "Perhaps I can help you?"
+ TFE_succeed_riots:0 "You beat up the gladiator"
+ TFE_fail_riots:0 "The gladiator beats #Xyou up#!"
+
+ # PHASES
+ games_phase_fights:0 "Fights"
+ games_phase_fights_desc:0 "Let the games begin!"
+
+ #END
+ TFE_gladiator_completed_log_title:0 "Finished Gladiatorial Games"
+ TFE_gladiator_completed_log:0 "[CHARACTER.GetShortUIName|U] successfully hosted [CHARACTER.GetHerHis] some Gladiatorial Games"
+ TFE_finished_gladiator:0 "Finished Gladiatorial Games"
+ activity_TFE_games_conclusion_desc:0 "The Ludi have concluded. [ROOT.Char.GetCurrentLocation.GetCounty.GetTitle.Custom('gladiator_games_result')]"
+ gladiatorial_games_very_good_loc:0 "The [ROOT.Title.GetName] gains [GetStaticModifier('gladiatorial_games_very_good_modifier').GetNameWithTooltip] for 10 years."
+ gladiatorial_games_good_loc:0 "The [ROOT.Title.GetName] gains [GetStaticModifier('gladiatorial_games_good_modifier').GetNameWithTooltip] for 10 years."
+ gladiatorial_games_bad_loc:0 "The [ROOT.Title.GetName] gains [GetStaticModifier('gladiatorial_games_bad_modifier').GetNameWithTooltip] for 10 years."
+ gladiatorial_games_very_bad_loc:0 "The [ROOT.Title.GetName] gains [GetStaticModifier('gladiatorial_games_very_bad_modifier').GetNameWithTooltip] for 10 years."
+ gladiatorial_games_mid_af:0 "You gained 75 [prestige|E]"
+
+ # Memories
+ TFE_gladiator_host_memory:0 "Hosted Gladiatorial Games"
+ TFE_gladiator_host_memory_first_perspective:0 "I hosted Gladiatorial Games"
+ TFE_gladiator_host_memory_second_perspective:0 "You hosted Gladiatorial Games"
+ TFE_gladiator_host_memory_third_perspective:0 "[owner.GetName] hosted Gladiatorial Games"
+ TFE_gladiator_guest_memory:0 "Attended Gladiatorial Games"
+ TFE_gladiator_guest_memory_first_perspective:0 "I joined [host.GetTitledFirstName] at some Gladiatorial Games"
+ TFE_gladiator_guest_memory_second_perspective:0 "You joined [host.GetTitledFirstName] in spectating some Gladiatorial Games"
+ TFE_gladiator_guest_memory_third_perspective:0 "[owner.GetName] joined [host.GetTitledFirstName] in spectating some Gladiatorial Games"
+ friend_bonded_at_gladiator:0 "[CHARACTER.GetShortUIName|U] and [TARGET_CHARACTER.GetShortUIName] bonded after spending time at ludi."
+
+ #DEBUG
+ TFE_gladiator_events.9999.t:0 "Test"
+ TFE_gladiator_events.9999.desc:0 "Test"
+ TFE_gladiator_events.9999.a:0 "Excellent"
+ TFE_gladiator_events.9999.b:0 "Very Good"
+ TFE_gladiator_events.9999.c:0 "Good"
+ #TFE_gladiator_events.9999.b:0 "Normal"
+ #TFE_gladiator_events.9999.c:0 "Bad"
+
+ senate_funds_games_tt:0 "The Senate provides basic funds"
+ senate_funds_games_half_tt:0 "Your next basic Gladiator Games will be half off!"
+ senate_funds_games_full_tt:0 "Your next basic Gladiator Games will be free!"
+
+ #Chariot Stuff
+ activity_TFE_races:0 "Chariot Race"
+ activity_TFE_races_desc:0 "Sponsoring some chariot races with the local teams will simultaneously demonstrate my power and prestige, and provide entertainment for the locals."
+ activity_TFE_races_selection_tooltip:0 "Host riveting chariot races! \nAnticipated Rewards:\n$BULLET_WITH_TAB$Gain random amounts of [piety_i|E][piety|E], [prestige_i|E][prestige|E], and [dynasty_prestige_i|E][dynasty_prestige|E]\n$BULLET_WITH_TAB$ Gain [county_opinion|E] in the hosting county"
+ activity_TFE_races_host_desc:0 "$BULLET_WITH_TAB$Gain random amounts of [piety_i|E][piety|E], [prestige_i|E][prestige|E], and [dynasty_prestige_i|E][dynasty_prestige|E]\n$BULLET_WITH_TAB$ Gain [county_opinion|E] in the hosting county"
+ activity_TFE_races_guest_desc:0 "$BULLET_WITH_TAB$Gain random amounts of [piety_i|E][piety|E], [prestige_i|E][prestige|E], and [dynasty_prestige_i|E][dynasty_prestige|E]"
+ activity_TFE_races_province_desc:0 "" # Fallback option
+ activity_TFE_races_destination_selection:0 ""
+
+ TRAVEL_NAME_FOR_activity_TFE_races:0 "[Character.GetFirstNamePossessiveNoTooltip] journey to the Ludi"
+
+ TFE_races_type_chariot:0 "Chariot Games"
+ TFE_races_type_chariot_desc:0 "Originally an integral part of Greek funeral games, chariot racing has expanded and become a festival in and of itself. Chariot racing has become popular enough that many cities boast at least one circuit; one of the most famous is the Circus Maximus in Rome."
+
+ races_phase_chariots:0 "Chariot Races"
+ races_phase_chariots_desc:0 "Let the races begin!"
+ races_phase_feast:0 "Feast"
+ races_phase_feast_desc:0 "Celebrate while partaking in the festivities!"
+
+ TFE_races_option_chariots:0 "Chariot Team Sponsor Costs"
+ TFE_races_option_chariots_bad:0 "No Funds"
+ TFE_races_option_chariots_bad_desc:0 "$EFFECT_LIST_BULLET$ Lose [prestige|E]\n$EFFECT_LIST_BULLET$ Certain chariot race-related negative events are more harmful\n\n#weak Not paying for equipment will reduce costs, but will also raise the risks of disaster during the races#!"
+ TFE_races_option_chariots_normal:0 "Basic Equipment"
+ TFE_races_option_chariots_normal_desc:0 "$EFFECT_LIST_BULLET$ Event options are unaffected\n\n#weak Much like gladiator fighting, charioteers were considered lower class and shunned by regular citizens. The wealth gained from winning, however, could far outstrip anything made in most other fields#!"
+ TFE_races_option_chariots_good:0 "Sturdy Chariots"
+ TFE_races_option_chariots_good_desc:0 "$EFFECT_LIST_BULLET$ Increased [prestige|E] gain\n$EFFECT_LIST_BULLET$ Certain chariot race-related negative events are #EMP less#! harmful\n\n#weak Higher quality chariots mean higher quality racing!#!"
+ TFE_races_option_chariots_very_good:0 "Thoroughbred Horses"
+ TFE_races_option_chariots_very_good_desc:0 "$EFFECT_LIST_BULLET$ Greatly increased [prestige|E] gain\n$EFFECT_LIST_BULLET$ Certain chariot race-related negative events are #EMP less#! harmful\n$EFFECT_LIST_BULLET$ Unique chariot race-related event options may be available\n\n#weak Horses were often bred for the express purpose of chariot racing; some even went on to win fame and glory independent of individual charioteers#!"
+
+ TFE_chariot_host_memory:0 "Hosted Chariot Races"
+ TFE_chariot_host_memory_first_perspective:0 "I hosted Chariot Races"
+ TFE_chariot_host_memory_second_perspective:0 "You hosted Chariot Races"
+ TFE_chariot_host_memory_third_perspective:0 "[owner.GetName] hosted Chariot Races"
+ TFE_chariot_guest_memory:0 "Attended Chariot Races"
+ TFE_chariot_guest_memory_first_perspective:0 "I joined [host.GetTitledFirstName] at some Chariot Races"
+ TFE_chariot_guest_memory_second_perspective:0 "You joined [host.GetTitledFirstName] in spectating some Chariot Races"
+ TFE_chariot_guest_memory_third_perspective:0 "[owner.GetName] joined [host.GetTitledFirstName] in spectating some Chariot Races"
+
+ TFE_chariot_completed_log_title:0 "Finished Chariot Races"
+ TFE_chariot_completed_log:0 "[CHARACTER.GetShortUIName|U] successfully hosted [CHARACTER.GetHerHis] some Chariot Races"
+ TFE_finished_chariot:0 "Finished Chariot Races"
+ activity_TFE_races_conclusion_desc:0 "The Chariot Races have concluded. [ROOT.Char.GetCurrentLocation.GetCounty.GetTitle.GetNameNoTier] gains a positive county modifier for 10 years."
+
+ TFE_chariot_events.0001.t:0 "The Chariot Races Begin"
+ TFE_chariot_events.0001.desc:0 "Today marks the beginning of a series of various chariot races! The crowd chants the names of the blues and greens, and I am expected to oversee them. I can also choose to either support one team or switch which team I support. What shall I do?\n\n#X Over the few next weeks, you will host your own chariot races and then feast. You will have the opportunity to receive [prestige_i|E][prestige|E], [county_opinion|E], and various other modifiers depending on how the races went. You will also potentially have the opportunity to influence race outcomes and incur the gratitude (or ire) of the chariot teams.#!"
+ TFE_chariot_events.0001.a:0 "Support the Blues"
+ TFE_chariot_events.0001.b:0 "Support the Greens"
+ TFE_chariot_events.0001.c:0 "Remain neutral"
+
+ anger_the_greens_tt:0 "#Warning This will anger the Greens!#!"
+ anger_the_blues_tt:0 "#Warning This will anger the Blues!#!"
+ chariot_investigation_success_tt:0 "You find evidence of the winners cheating"
+ chariot_investigation_failure_tt:0 "You find no evidence of the winners cheating"
+
+ TFE_chariot_events.0002.t:0 "Chariot Race -- Winners and Losers"
+ TFE_chariot_events.0002.desc:0 "The most recent race was a thrilling suspense to the end! [winner.GetFirstName] outmaneuvered his many opponents, [loser.GetFirstName] chief among them, to claim victory for his team after a series of laps where [winner.GetFirstName] slowly worked [winner.GetHerHis] up from the back of the pack through nimble passes and shrewd lane management."
+ TFE_chariot_events.0002.a:0 "I was right to support the Blues!"
+ TFE_chariot_events.0002.b:0 "A sad day for the Blues"
+ TFE_chariot_events.0002.c:0 "I was right to support the Greens!"
+ TFE_chariot_events.0002.d:0 "A sad day for the Greens"
+ TFE_chariot_events.0002.e:0 "A riveting spectacle"
+ TFE_chariot_events.0002.f:0 "As the host, I declare... the #X Blues #!the winners!"
+ TFE_chariot_events.0002.g:0 "As the host, I declare... the #X Greens #!the winners!"
+
+ TFE_chariot_events.0003.t:0 "Chariot Race -- Sabotage?"
+ TFE_chariot_events.0003.desc:0 "The most recent race pitted the favorite, [loser.GetFirstName], against an underdog, [winner.GetFirstName]. To the surprise of many spectators, [loser.GetFirstName]'s chariot imploded in spectacular fashion on the last lap, with its wheels coming off completely. Now, [loser.GetFirstName] has alleged that [winner.GetFirstName] cheated by using black magic to sabotage [loser.GetFirstName]! What should be done about this serious accusation?"
+ TFE_chariot_events.0003.a:0 "A Blue won -- what do I care?"
+ TFE_chariot_events.0003.b:0 "A Green won -- what do I care?"
+ TFE_chariot_events.0003.c:0 "I must investigate and report back to the judges!"
+ TFE_chariot_events.0003.d:0 "As the host, I can bypass the investigation entirely..."
+ TFE_chariot_events.0003.e:0 "Meh, it was interesting either way"
+ 
+ TFE_chariot_events.0004.t:0 "Chariot Race -- A Suspicious Illness"
+ TFE_chariot_events.0004.desc:0 "The spectator stands were abuzz as they eagerly awaited the next race. [winner.GetFirstName] has already arrived, but [loser.GetFirstName] has yet to show. Suddenly, a messenger approaches the judges' dais. An urgent discussion is held. Disappointingly, it appears that [loser.GetFirstName] has taken ill, allowing [winner.GetFirstName] to win by default. Such things happen, of course, but something about the smirk on [winner.GetFirstName]'s face doesn't sit right..." 
+ TFE_chariot_events.0004.a:0 "A Blue won -- what do I care?"
+ TFE_chariot_events.0004.b:0 "A Green won -- what do I care?"
+ TFE_chariot_events.0004.c:0 "I should try to visit [loser.GetFirstName]"
+ TFE_chariot_events.0004.d:0 "Bah, this stinks. Declare [winner.GetFirstName] disqualified!"
+ TFE_chariot_events.0004.e:0 "I guess we will never know..."
+
+ TFE_chariot_events.0005.t:0 "Chariot Race -- A Splendid Team Of Horses"
+ TFE_chariot_events.0005.desc:0 "In the last race, [winner.GetFirstName] crushed his competition easily. To what extent that was due to [winner.GetHerHis] inherent skill is debatable, although it is clear from the race that [winner.getHerHis] team of horses played a key role in securing the win. You happen upon the winner in the stables after the race in the midst of some commotion; it appears that a stablehand was tending to the fiercest horse and got kicked in the head for his trouble. As you approach [winner.GetHerHis] to offer congratulations, they ask whether you would like to try to ride the most tempestuous one with a mischievous grin. If you stay on for more than a minute, they add, you get to keep the horse. The horse in question eyes you suspiciously and neighs with palpable hostility."
+ TFE_chariot_events.0005.a:0 "Accept the challenge"
+ TFE_chariot_events.0005.b:0 "How about I just buy the horse instead?"
+ TFE_chariot_events.0005.c:0 "No thanks"
+ TFE_chariot_events.0005.d:0 "Pah -- my horses for these races are far superior!"
+
+ TFE_chariot_events.0006.t:0 "Chariot Race -- The Last Race"
+ TFE_chariot_events.0006.desc:0 "The circuits are abuzz with chatter -- [winner.GetFirstName], a famous charioteer unaffiliated with either the Blues or Greens, has just announced that after a long and storied career, they are retiring after one last race. This represents an  opportunity to perhaps recruit a talented courtier to your side -- provided, of course, you pay enough to catch [winner.GetHerHis] attention."
+ TFE_chariot_events.0006.a:0 "Just enjoy the race"
+ TFE_chariot_events.0006.b:0 "Spare no expense!"
+
+ TFE_chariot_events.0007.t:0 "Chariot Race -- An Unexpected Crash"
+ TFE_chariot_events.0007.desc:0 "Disaster struck in the previous race -- two chariots collided, sending one careening into the stands! Luckily, the sturdy chariot withstood the impact, but the unlucky charioteer has sustained an injury and demands compensation, as well as a redo of the race. What should be done?"
+ TFE_chariot_events.0007.desc.bad:0 "Disaster struck in the previous race -- two chariots collided, sending one careening into the stands! Even worse, the chariot shattered on impact and the horses ran amok, maiming or outright killing scores of spectators! This will surely cast a pall over the races..."
+ TFE_chariot_events.0007.a:0 "A Blue won -- what do I care?"
+ TFE_chariot_events.0007.b:0 "A Green won -- what do I care?"
+ TFE_chariot_events.0007.c:0 "Order a redo"
+ TFE_chariot_events.0007.d:0 "Offer compensation"
+ TFE_chariot_events.0007.e:0 "Such is life..."
+ TFE_chariot_events.0007.f:0 "A tragedy -- help the wounded"
+ death_trampled_by_horse:0 "was trampled by a horse"
+
+ TFE_chariot_events.0008.t:0 "Chariot Races End -- A Status Report"
+ TFE_chariot_events.0008_blue.desc:0 "As the races wind down and everyone prepares for the upcoming feast, I take stock of the results.\nThe Blues won [activity.MakeScope.Var('result_counter').GetValue|0] more races than the Greens.\nThe Blues have been angered [activity.MakeScope.Var('blue_anger').GetValue|0] times.\n The Greens have been angered [activity.MakeScope.Var('green_anger').GetValue|0] times.\nIf you are a supporter of the winning team, you will gain 100 prestige per extra race won over the opposing team."
+ TFE_chariot_events.0008_green.desc:0 "As the races wind down and everyone prepares for the upcoming feast, I take stock of the results.\nThe Greens won [activity.MakeScope.Var('result_counter').GetValue|0] more races than the Blues.\nThe Blues have been angered [activity.MakeScope.Var('blue_anger').GetValue|0] times.\n The Greens have been angered [activity.MakeScope.Var('green_anger').GetValue|0] times.\nIf you are a supporter of the winning team, you will gain 100 prestige per extra race won over the opposing team."
+ TFE_chariot_events.0008_tie.desc:0 "As the races wind down and everyone prepares for the upcoming feast, I take stock of the results.\nThe Blues and the Greens were tied.\nThe Blues have been angered [activity.MakeScope.Var('blue_anger').GetValue|0] times.\n The Greens have been angered [activity.MakeScope.Var('green_anger').GetValue|0] times.\nIf you are a supporter of the winning team, you will gain 100 prestige per extra race won over the opposing team."
+ TFE_chariot_events.0008_error.desc:0 "Something went wrong -- this should never happen"
+ the_teams_deliberate_tt:0 "The Blues and Greens assess the results..."
+ TFE_chariot_events.0008.a:0 "Interesting..."
+ TFE_chariot_events.0008.b:0 "Interesting..."
+ TFE_chariot_events.0008.c:0 "Interesting..."
+ TFE_chariot_events.0008.d:0 "Interesting..."
+ TFE_chariot_events.0008.e:0 "Interesting..."
+ TFE_chariot_events.0008.f:0 "Interesting..."
+ TFE_chariot_events.0008.g:0 "ERROR"
+
+ #9 is copy paste of feast event
+
+ TFE_chariot_events.0010.t:0 "The Greens' Anger"
+ TFE_chariot_events.0010_blue.desc:0 "The feast is about to start with the traditional toast honoring and celebrating the winners of the recent chariot races, the Blues, when a representative of the Greens approaches you with barely contained anger. They demand that in light of your capriciousness and bias against the Greens in the recent races, you toast #Sthem #!instead of the Blues or pay them a large sum of money as compensation for the indignities they suffered throughout the games. Otherwise, the Greens will make trouble in your capital. As the chariot teams hold much sway amongst the populace, this is no idle threat. What should be done?"
+ TFE_chariot_events.0010_green.desc:0 "The feast is about to start with the traditional toast honoring and celebrating the winners of the recent chariot races, the Greens, when their representative approaches you with barely contained anger. They demand that in light of your capriciousness and bias against the Greens in the recent races, you pay them a large sum of money as compensation for the indignities they suffered throughout the games. Otherwise, the Greens will make trouble in your capital. As the chariot teams hold much sway amongst the populace, this is no idle threat. What should be done?"
+ TFE_chariot_events.0010_tie.desc:0 "The feast is about to start with the traditional toasts honoring and celebrating the winners of the recent chariot races when a representative of the Greens approaches you with barely contained anger. They demand that in light of your capriciousness and bias against the Greens in the recent races, you make a special toast to them or pay them a large sum of money as compensation for the indignities they suffered throughout the games. Otherwise, the Greens will make trouble in your capital. As the chariot teams hold much sway amongst the populace, this is no idle threat. What should be done?"
+ TFE_chariot_events.0010.a:0 "Agree to toast the Greens instead"
+ TFE_chariot_events.0010.b:0 "Agree to a hefty bribe"
+ TFE_chariot_events.0010.c:0 "Tell them to buzz off"
+ TFE_chariot_events.0010.d:0 "Agree to toast the Greens"
+
+ TFE_chariot_events.0011.t:0 "The Blues' Anger"
+ TFE_chariot_events.0011_blue.desc:0 "The feast is about to start with the traditional toast honoring and celebrating the winners of the recent chariot races, the Blues, when their representative approaches you with barely contained anger. They demand that in light of your capriciousness and bias against the Blues in the recent races, pay them a large sum of money as compensation for the indignities they suffered throughout the games. Otherwise, the Blues will make trouble in your capital. As the chariot teams hold much sway amongst the populace, this is no idle threat. What should be done?"
+ TFE_chariot_events.0011_green.desc:0 "The feast is about to start with the traditional toast honoring and celebrating the winners of the recent chariot races, the Greens, when a representative of the Blues approaches you with barely contained anger. They demand that in light of your capriciousness and bias against the Blues in the recent races, you toast #Sthem #!instead of the Greens or you pay them a large sum of money as compensation for the indignities they suffered throughout the games. Otherwise, the Blues will make trouble in your capital. As the chariot teams hold much sway amongst the populace, this is no idle threat. What should be done?"
+ TFE_chariot_events.0011_tie.desc:0 "The feast is about to start with the traditional toasts honoring and celebrating the winners of the recent chariot races when a representative of the Blues approaches you with barely contained anger. They demand that in light of your capriciousness and bias against the Blues in the recent races, you make a special toast to them or pay them a large sum of money as compensation for the indignities they suffered throughout the games. Otherwise, the Blues will make trouble in your capital. As the chariot teams hold much sway amongst the populace, this is no idle threat. What should be done?"
+ TFE_chariot_events.0011.a:0 "Agree to toast the Blues instead"
+ TFE_chariot_events.0011.b:0 "Agree to a hefty bribe"
+ TFE_chariot_events.0011.c:0 "Tell them to buzz off"
+ TFE_chariot_events.0011.d:0 "Agree to toast the Blues"
+
+ TFE_chariot_events.0012.t:0 "The Outraged Greens"
+ TFE_chariot_events.0012_blue.desc:0 "The feast is about to start with the traditional toast honoring and celebrating the winners of the recent chariot races, the Blues. Spoiling the mood, however, are the Greens. They haven't bothered approaching you, but their anger is clear even though they are on the opposite end of the dining hall, and the tension is palpable. Some simple flattery or small amounts of money will not be sufficient to placate them today. As the chariot teams hold much sway amongst the populace, this is no idle concern. What should be done?"
+ TFE_chariot_events.0012_green.desc:0 "The feast is about to start with the traditional toast honoring and celebrating the winners of the recent chariot races, the Greens. Spoiling the mood, however, are the winners themselves. They haven't bothered approaching you, but their anger is clear even though they are on the opposite end of the dining hall, and the tension is palpable. Some simple flattery or small amounts of money will not be sufficient to placate them today. As the chariot teams hold much sway amongst the populace, this is no idle concern. What should be done?"
+ TFE_chariot_events.0012_tie.desc:0 "The feast is about to start with the traditional toasts honoring and celebrating the winners of the recent chariot races. Spoiling the mood, however, are the Greens. They haven't bothered approaching you, but their anger is clear even though they are on the opposite end of the dining hall, and the tension is palpable. Some simple flattery or small amounts of money will not be sufficient to placate them today. As the chariot teams hold much sway amongst the populace, this is no idle concern. What should be done?"
+ TFE_chariot_events.0012.a:0 "Lavish praise on them to the point of servility"
+ TFE_chariot_events.0012.b:0 "Bestow a massive bribe on them"
+ TFE_chariot_events.0012.c:0 "Ignore them -- what's the worst that could happen?"
+ riots_everywhere_tt:0 "They will incite riots throughout your domain"
+ vassals_incited_tt:0 "They will spread salacious rumors amongst your vassals"
+
+ TFE_chariot_events.0013.t:0 "The Outraged Blues"
+ TFE_chariot_events.0013_blue.desc:0 "The feast is about to start with the traditional toast honoring and celebrating the winners of the recent chariot races, the Blues. Spoiling the mood, however, are the winners themselves. They haven't bothered approaching you, but their anger is clear even though they are on the opposite end of the dining hall, and the tension is palpable. Some simple flattery or small amounts of money will not be sufficient to placate them today. As the chariot teams hold much sway amongst the populace, this is no idle concern. What should be done?"
+ TFE_chariot_events.0013_green.desc:0 "The feast is about to start with the traditional toast honoring and celebrating the winners of the recent chariot races, the Greens. Spoiling the mood, however, are the Blues. They haven't bothered approaching you, but their anger is clear even though they are on the opposite end of the dining hall, and the tension is palpable. Some simple flattery or small amounts of money will not be sufficient to placate them today. As the chariot teams hold much sway amongst the populace, this is no idle concern. What should be done?"
+ TFE_chariot_events.0013_tie.desc:0 "The feast is about to start with the traditional toasts honoring and celebrating the winners of the recent chariot races. Spoiling the mood, however, are the Greens. They haven't bothered approaching you, but their anger is clear even though they are on the opposite end of the dining hall, and the tension is palpable. Some simple flattery or small amounts of money will not be sufficient to placate them today. As the chariot teams hold much sway amongst the populace, this is no idle concern. What should be done?"
+ TFE_chariot_events.0013.a:0 "Lavish praise on them to the point of servility"
+ TFE_chariot_events.0013.b:0 "Bestow a massive bribe on them"
+ TFE_chariot_events.0013.c:0 "Ignore them -- what's the worst that could happen?"
+
+ TFE_chariot_events.0014.t:0 "The Outraged Charioteers"
+ TFE_chariot_events.0014_blue.desc:0 "The feast is about to start with the traditional toast honoring and celebrating the winners of the recent chariot races, the Blues. Spoiling the mood, however, are the charioteers. Incredibly, you have managed to anger #Sboth #!teams! If the normally fractious factions unite together in opposition to you, that could lead to disaster! What should be done?"
+ TFE_chariot_events.0014_green.desc:0 "The feast is about to start with the traditional toast honoring and celebrating the winners of the recent chariot races, the Greens. Spoiling the mood, however, are the charioteers. Incredibly, you have managed to anger #Sboth #!teams! If the normally fractious factions unite together in opposition to you, that could lead to disaster! What should be done?"
+ TFE_chariot_events.0014_tie.desc:0 "The feast is about to start with the traditional toasts honoring and celebrating the winners of the recent chariot races. Spoiling the mood, however, are the charioteers. Incredibly, you have managed to anger #Sboth #!teams! If the normally fractious factions unite together in opposition to you, that could lead to disaster! What should be done?"
+ TFE_chariot_events.0014.a:0 "They are too angry to placate now"
+ TFE_chariot_events.0014.b:0 "Bah, what do I care?"
+ TFE_chariot_events.0014.c:0 "Distribute liberal amounts of gold to all"
+ TFE_chariot_events.0014.d:0 "Bestow new titles of honor upon them"
+
+ TFE_chariot_events.0015.t:0 "The Feast -- A Spectacular End"
+ TFE_chariot_events.0015_blue.desc:0 "The feast is about to start with the traditional toast honoring and celebrating the winners of the recent chariot races, the Blues. Even the Greens, dismayed as they are at losing to their rivals, are having fun at your impeccably managed feast. Now is the time for your toast to the victors...\n'An exciting time of racing, with old veterans winning once again, new runnerups making their debut and many a intriguing storyline has come to an end, at least for now. With the recent races behind us and more festivities in front of us to enjoy, I say...'"
+ TFE_chariot_events.0015_green.desc:0 "The feast is about to start with the traditional toast honoring and celebrating the winners of the recent chariot races, the Greens. Even the Blues, dismayed as they are at losing to their rivals, are having fun at your impeccably managed feast. Now is the time for your toast to the victors...\n'An exciting time of racing, with old veterans winning once again, new runnerups making their debut and many a intriguing storyline has come to an end, at least for now. With the recent races behind us and more festivities in front of us to enjoy, I say...'"
+ TFE_chariot_events.0015_tie.desc:0 "The feast is about to start with the traditional toasts honoring and celebrating the winners of the recent chariot races. Both the Greens and the Blues are having fun at your impeccably managed feast. Now is the time for your toast to the victors...\n'An exciting time of racing, with old veterans winning once again, new runnerups making their debut and many a intriguing storyline has come to an end, at least for now. With the recent races behind us and more festivities in front of us to enjoy, I say...'"
+ TFE_chariot_events.0015.a:0 "Honor to the Blues! May their future hold more glory!"
+ TFE_chariot_events.0015.b:0 "While they might have lost, they raced well. To the Blues!"
+ TFE_chariot_events.0015.c:0 "Honor to the Greens! May their future hold more glory!"
+ TFE_chariot_events.0015.d:0 "While they might have lost, they raced well. To the Greens!"
+ TFE_chariot_events.0015.e:0 "Both teams deserve recognition for such entertaining games!"
+
+ #New Pulse actions
+ TFE_activities_leftover_food_giveaway_title:0 "[province.GetName|U] Received Leftover Food"
+
+ TFE_activities_lauded_food_title:0 "$activity_pulse_action_lauded_food$"
+ activity_pulse_action_TFE_activities_lauded_food:0 "[first.GetShortUINameNoTooltip] Praise[_s(first)] the [root_scope.Custom('GetExpensiveMeal')|U]"
+ 
+ TFE_activities_excellent_food_title:0 "[first.GetShortUINameNoTooltip|U] Overjoyed with the Amount of [root_scope.Custom('GetExpensiveDessert')|U]"
+
+ TFE_activities_noble_privileges_title:0 "[first.GetShortUINameNoTooltip|U] Was Awarded Some Noble Privileges"
+
+ TFE_activities_guest_chokes_on_bone_title:0 "$activity_pulse_action_guest_chokes_on_bone$"
+ activity_pulse_action_TFE_activities_guest_chokes_on_bone:0 "[first.GetShortUINameNoTooltip] Choke[_s(first)] on a [first.Custom('GetFoodBird')|U] Bone"
+ 
+ TFE_activities_courtly_vassals_appeased_title:0 "$activity_pulse_action_courtly_vassals_appeased$"
+ activity_pulse_action_TFE_activities_courtly_vassals_appeased:0 "Courtly Vassals Admire [root_scope.GetShortUINamePossessiveNoTooltip|U] Preparations"
+
+ TFE_feast_phase_virtuous_feast_title:0 "[first.GetShortUINameNoTooltip|U] Attended a Virtuous Feast"
+
+ TFE_feast_phase_children_bonding_title:0 "$activity_pulse_action_relation_gains_friend$"
+ activity_pulse_action_TFE_feast_phase_children_bonding:0 "[root_scope.GetShortUINamePossessiveNoTooltip|U] [root_scope.Custom2('RelationToMeShort', SCOPE.sC('first'))|U] Bonded after Playing with [second.GetShortUINamePossessiveNoTooltip] [first.Custom('child_favorite_toy')]"
+
+ TFE_feast_phase_antiquarian_admires_artifact_title:0 "[first.GetShortUINameNoTooltip|U] Regaled [host.GetShortUINameNoTooltip|U] With [artifact.GetName|U]'s History"
+
+ TFE_feast_phase_jester_entertained_guests_title:0 "[first.GetShortUINameNoTooltip|U] Made [second.GetShortUINameNoTooltip|U] Laugh Vigorously"
+
+ TFE_feast_phase_spouse_manages_feast_splendidly_title:0 "$activity_pulse_action_spouse_manages_feast_splendidly$"
+ activity_pulse_action_TFE_feast_phase_spouse_manages_feast_splendidly:0 "[first.GetPrimarySpouse.GetShortUINamePossessiveNoTooltip|U] [first.GetWifeHusband|U]'s Stewardship Astonishes Guests"
+ 
+ TFE_feast_phase_impressed_courtly_vassal_title:0 "Courtly Vassals Impressed by Lavish Feast"
+
+ TFE_feast_phase_relation_gains_friend_title:0 "$activity_pulse_action_relation_gains_friend$"
+ activity_pulse_action_TFE_feast_phase_relation_gains_friend:0 "[root_scope.GetShortUINamePossessiveNoTooltip|U] [root_scope.Custom2('RelationToMeShort', SCOPE.sC('first'))|U] Befriends [second.GetShortUINameNoTooltip]"
+ 
+ TFE_feast_phase_guest_impressed_by_court_artifact_title:0 "$activity_pulse_action_guest_impressed_by_court_artifact$"
+ activity_pulse_action_TFE_feast_phase_guest_impressed_by_court_artifact:0 "[first.GetShortUINameNoTooltip] Impressed by the [second.GetName]"
+ 
+ TFE_activities_ridiculed_food_title:0 "$activity_pulse_action_ridiculed_food$"
+ activity_pulse_action_TFE_activities_ridiculed_food:0 "[first.GetShortUINameNoTooltip|U] Lambast[_s(first)] the Quality of the [root_scope.Custom('GetExpensiveMeal')|U]"
+ 
+ TFE_gladiator_relation_gains_friend_title:0 "$activity_pulse_action_relation_gains_friend$"
+ activity_pulse_action_TFE_gladiator_relation_gains_friend:0 "[root_scope.GetShortUINamePossessiveNoTooltip|U] [root_scope.Custom2('RelationToMeShort', SCOPE.sC('first'))|U] Befriends [second.GetShortUINameNoTooltip]"
+
+ TFE_gladiator_children_bonding_title:0 "$activity_pulse_action_relation_gains_friend$"
+ activity_pulse_action_TFE_gladiator_children_bonding:0 "[root_scope.GetShortUINamePossessiveNoTooltip|U] [root_scope.Custom2('RelationToMeShort', SCOPE.sC('first'))|U] Bonded after Playing with [second.GetShortUINamePossessiveNoTooltip] [first.Custom('child_favorite_toy')]"
+
+ #Modifiers
+ upset_blues_modifier:0 "Upset Blues"
+ upset_blues_modifier_desc:0 "The Blues are making trouble after some recent unsatisfactory races."
+
+ upset_greens_modifier:0 "Upset Greens"
+ upset_greens_modifier_desc:0 "The Greens are making trouble after some recent unsatisfactory races."
+
+ chariot_games_modifier:0 "Hosted Chariot Games"
+ chariot_games_modifier_desc:0 ""
+
+ honored_chariot_winners:0 "Honored Chariot Winners"
+ honored_chariot_winners_desc:0 ""
+
+ honored_chariot_losers:0 "Honored Chariot Losers"
+ honored_chariot_losers_desc:0 ""
+
+ honored_charioteers:0 "Honored Charioteers"
+ honored_charioteers_desc:0 ""

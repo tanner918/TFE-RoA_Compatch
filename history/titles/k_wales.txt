@@ -1,0 +1,610 @@
+﻿k_wales = {
+	361.1.1 = { change_development_level = 2 }
+	532.1.1 = { change_development_level = 3 }
+	768.1.1 = { change_development_level = 4 }
+}
+
+d_gwynedd = {
+	# Sub-Roman Wales
+	410.1.1 = {
+		liege = 0
+		holder = 159010 #Cunedda
+		government = tribal_government
+	}
+	445.1.1 = {
+		holder = 159011 #Einion
+	}
+	470.1.1 = {
+		holder = 159012 #Cadwallon
+	}
+	517.1.1 = {
+		holder = 159013 #Maelgwn
+	}
+	549.1.1 = {
+		holder = 159014 #Rhun
+	}
+	586.1.2 = {
+		holder = 159015 #Beli
+	}
+	599.1.1 = {
+		holder = 159016 #Iago
+	}
+	613.1.1 = {
+		holder = 159017 #Cadfan
+	}
+	625.1.1 = {
+		holder = 159018 #Cadwallon
+	}
+	634.1.1 = {
+		holder = 159019 #Cadwaladr
+	}
+	664.1.1 = {
+		holder = 159040 #Ifwr
+	}
+	682.1.1 = {
+		holder = 159020 #Idwal
+	}
+	712.1.1 = {
+		holder = 159021 #Rhodri ap Idwal
+	}
+	754.1.1 = {
+		holder = 159022 #Caradog ap Meirchion
+	}
+}
+
+
+c_cardiganshire = {
+	### Roman Wales
+	200.1.1 = {
+		government = tribal_government
+		de_jure_liege = d_gloucester
+		liege = d_gloucester
+	}
+	361.1.1 = {
+		holder = welsh_01 # Ancestor Based on Cantiorix Inscription
+	}
+	# Sub-Roman Wales
+	410.1.1 = {
+		liege = 0
+		holder = 159010 #Cunedda
+		de_jure_liege = d_gwynedd
+	}
+	445.1.1 = {
+		holder = 159791 #Ceredig I
+	}
+	453.1.1 = {
+		holder = ceredigion_01 #Meirion
+	}
+	456.1.1 = {
+		holder = ceredigion_02 #Cynwelyn
+	}
+	468.1.1 = {
+		holder = ceredigion_03 #Ceredig II
+	}
+}
+
+
+c_merioneth = {
+	### Roman Wales
+	200.1.1 = {
+		government = tribal_government
+		de_jure_liege = d_gloucester
+		liege = d_gloucester
+	}
+	361.1.1 = {
+		holder = wales_01 # Ancestor Based on Cantiorix Inscription
+	}
+	368.1.1 = {
+		holder = wales_02 # Ancestor Based on Cantiorix Inscription
+	}
+	378.1.1 = {
+		holder = wales_04 # Maglos, Magistrate Based on Cantiorix Inscription
+	}
+	# Sub-Roman Wales
+	410.1.1 = {
+		liege = 0
+		holder = 159010 #Cunedda
+		government = tribal_government
+		de_jure_liege = d_gwynedd
+	}
+	445.1.1 = {
+		holder = meirion_02 #Meirion
+		liege = d_gwynedd
+	}
+}
+
+
+c_caernarfonshire = {
+	### Roman Wales
+	200.1.1 = {
+		government = tribal_government
+		de_jure_liege = d_gloucester
+		liege = d_gloucester
+	}
+	361.1.1 = {
+		holder = wales_01 # Ancestor Based on Cantiorix Inscription
+	}
+	368.1.1 = {
+		holder = wales_02 # Ancestor Based on Cantiorix Inscription
+	}
+	378.1.1 = {
+		holder = wales_04 # Maglos, Magistrate Based on Cantiorix Inscription
+	}
+	# Sub-Roman Wales
+	410.1.1 = {
+		liege = 0
+		holder = 159010 #Cunedda
+		government = tribal_government
+		de_jure_liege = d_gwynedd
+	}
+	445.1.1 = {
+		holder = dunnoding_01 #Dunod
+	}
+	470.1.1 = {
+		holder = dunnoding_02 #Eifion
+		liege = d_gwynedd
+	}
+}
+
+
+c_anglesey = {
+	### Roman Wales
+	200.1.1 = {
+		government = tribal_government
+		de_jure_liege = d_gloucester
+		liege = d_gloucester
+	}
+	361.1.1 = {
+		holder = wales_01 # Ancestor Based on Cantiorix Inscription
+	}
+	368.1.1 = {
+		holder = wales_02 # Ancestor Based on Cantiorix Inscription
+	}
+	378.1.1 = {
+		holder = wales_04 # Maglos, Magistrate Based on Cantiorix Inscription
+	}
+	# Sub-Roman Wales
+	470.1.1 = {
+		holder = ynis_mon_01 #Cadwallon
+		government = tribal_government
+		de_jure_liege = d_gwynedd
+		liege = 0
+	}
+}
+
+
+c_denbighshire = {
+	### Roman Wales
+	200.1.1 = {
+		government = tribal_government
+		de_jure_liege = d_gloucester
+		liege = d_gloucester
+	}
+	361.1.1 = {
+		holder = wales_01 # Ancestor Based on Cantiorix Inscription
+	}
+	368.1.1 = {
+		holder = wales_02 # Ancestor Based on Cantiorix Inscription
+	}
+	378.1.1 = {
+		holder = wales_04 # Maglos, Magistrate Based on Cantiorix Inscription
+	}
+	# Sub-Roman Wales
+	410.1.1 = {
+		liege = 0
+		holder = 159010 #Cunedda
+		government = tribal_government
+	}
+	445.1.1 = {
+		holder = 159011 #Einion
+		de_jure_liege = d_gwynedd
+	}
+	470.1.1 = {
+		holder = 159012 #Cadwallon
+	}
+}
+
+
+d_powys = {
+	# Sub-Roman Wales
+	
+	480.1.1 = {
+		holder = 159077 # Cyngen Glodrydd
+	}
+	480.1.1 = {
+		holder = 159077 # Cyngen Glodrydd
+	}
+	500.1.1 = {
+		holder = 159089 # Pasgen ap Cyngen
+	}
+	530.1.1 = {
+		holder = 159090 # Morgan ap Pasgen
+	}
+	540.1.1 = {
+		holder = 159078 # Brochfael Ysgrithog
+	}
+	571.1.1 = {
+		holder = 159079 # Cynan Garwyn
+	}
+	610.1.1 = {
+		holder = 159080 # Selyf ap Cynan
+	}
+	613.1.1 = {
+		holder = 159081 # Manwgan ap Selyf
+	}
+	613.6.1 = {
+		holder = 0 # Eliudd of Dogfeiling
+	}
+	655.1.1 = {
+		holder = 159082 # Beli ap Manwgan
+	}
+	695.1.1 = {
+		holder = 159083 # Gwylog ap Beli
+	}
+	725.1.1 = {
+		holder = 159084 # Elisedd ap Gwylog
+	}
+	755.1.1 = {
+		holder = 159085 # Brochfael ap Elisedd
+	}
+}
+
+
+c_maldwyn = {
+	# Roman Wales
+	340.1.1 = {
+		holder = 159945
+		government = tribal_government
+	}
+	361.1.1 = {
+		liege = d_gloucester
+		de_jure_liege = d_gloucester
+	}
+	362.1.1 = {
+		holder = 159056 # Gwrtheyrn of Powys
+	}
+	# Sub-Roman Wales
+	410.1.1 = {
+		liege = 0
+		de_jure_liege = d_powys
+	}
+	441.1.1 = {
+		holder = 159057 # Cadeyrn Fendigaid
+	}
+	447.1.1 = {
+		holder = 159058 # Cadell Ddyrnllwg
+	}
+	470.1.1 = {
+		holder = 159060 # Rhyddfedd Frych
+	}
+	480.1.1 = {
+		holder = 159077 # Cyngen Glodrydd
+	}
+}
+
+
+c_sir_faesyfed = {
+	# Roman Wales
+	340.1.1 = {
+		holder = 159945
+		government = tribal_government
+	}
+	361.1.1 = {
+		liege = d_gloucester
+		de_jure_liege = d_gloucester
+	}
+	362.1.1 = {
+		holder = 159056 # Gwrtheyrn of Powys
+	}
+	# Sub-Roman Wales
+	410.1.1 = {
+		liege = 0
+		de_jure_liege = d_powys
+	}
+	441.1.1 = {
+		holder = buellt_01 # Pasgen I
+	}
+	480.1.1 = {
+		holder = buellt_02 # Briachat
+	}
+}
+
+d_deheubarth = {
+	
+}
+
+
+c_carmarthenshire = {
+	### Roman Wales
+	200.1.1 = {
+		government = tribal_government
+		de_jure_liege = d_gloucester
+		liege = d_gloucester
+	}
+	361.1.1 = {
+		holder = welsh_01 # Ancestor Based on Cantiorix Inscription
+	}
+	# Sub-Roman Wales, Kingdom of Dyfed
+	410.1.1 = {
+		holder = 159321 # Tryffin
+		government = tribal_government
+		liege = 0
+		de_jure_liege = d_deheubarth
+	}
+	475.1.1 = {
+		holder = 159322 #Aircol Lawhir
+	}
+}
+
+
+c_pembrokeshire = {
+	### Roman Wales
+	200.1.1 = {
+		government = tribal_government
+		de_jure_liege = d_gloucester
+		liege = d_gloucester
+	}
+	361.1.1 = {
+		holder = welsh_01 # Ancestor Based on Cantiorix Inscription
+	}
+	# Sub-Roman Wales, Kingdom of Dyfed
+	410.1.1 = {
+		holder = 159321 # Tryffin
+		government = tribal_government
+		liege = 0
+		de_jure_liege = d_deheubarth
+	}
+	475.1.1 = {
+		holder = 159322 #Aircol Lawhir
+	}
+	495.1.1 = {
+		holder = 159324 #Gwerthefyr
+	}
+	540.1.1 = {
+		holder = 159340 #Cyngar
+	}
+	570.1.1 = {
+		holder = 159341 #Pedr
+	}
+	595.1.1 = {
+		holder = 159342 #Arthwyr
+	}
+	620.1.1 = {
+		holder = 159343 #Nowy Hen
+	}
+	650.1.1 = {
+		holder = 159344 #Cloten
+	}
+	670.1.1 = {
+		holder = 159345 #Cathen
+	}
+	680.1.1 = {	#Ystrad Tywi region of Dyfed is conquered by Seisyll ap Clydog, Dyfed enters a decline
+		liege = 0
+	}
+	690.1.1 = {
+		holder = 159346 #Cadwgan Tredylig
+	}
+	710.1.1 = {
+		holder = 159347 #Rhain
+	}
+	730.1.1 = {
+		holder = 159349 #Maredudd ap Tewdos
+	}
+}
+
+
+c_glamorgan = {
+	### Roman Wales
+	200.1.1 = {
+		government = tribal_government
+		de_jure_liege = d_gloucester
+		liege = d_gloucester
+	}
+	361.1.1 = {
+		holder = welsh_01 # Ancestor Based on Cantiorix Inscription
+	}
+	380.1.1 = {
+		holder = 159809 #Owain Finddu
+	}
+	### Sub-Roman Wales
+	428.1.1 = {
+		holder = 159826 #Mor ap Owain
+		liege = 0
+		de_jure_liege = d_deheubarth
+	}
+	448.1.1 = {
+		holder = 159827 #Solor ap Mor
+	}
+	470.1.1 = {
+		holder = 159828 #Glywys ap Solor
+	}
+	498.1.1 = {
+		holder = 159823 #Caradog Freichfras
+	}
+	530.1.1 = {
+		holder = 159824 #Meurig
+	}
+	550.1.1 = {
+		holder = 159825
+	}
+	560.1.1 = {
+		holder = 159830
+	}
+	590.1.1 = {
+		holder = 159831
+	}
+	600.1.1 = {
+		holder = 159834
+	}
+	605.1.1 = {
+		holder = 159832
+	}
+	625.1.1 = {
+		holder = 159833
+	}
+	665.1.1 = {
+		holder = 159835
+	}
+	680.1.1 = {
+		holder = 159116
+	}
+	710.1.1 = {
+		holder = 159115
+	}
+	740.1.1 = {
+		holder = 159114
+	}
+
+}
+
+
+c_monmouthshire = {
+	##### Roman Wales
+	200.1.1 = { #Diocletian's divison
+		change_development_level = 5
+		de_jure_liege= d_gloucester
+	}
+	360.1.1 = {
+		holder = Abrivantes_02 #Abrevantes
+	}
+	380.1.1 = {
+		holder = Abrivantes_01 #Abrevantes
+	}
+	## Sub-Roman Wales, Kingdom of Gwent
+	428.1.1 = {
+		holder = 159813 #Tudwal ap Annwn
+	}
+	431.1.1 = {
+		holder = 159821 # Dyfnwal ap Edynfed
+	}
+	450.1.1 = {
+		holder = 159822 # Ynyr ap Dyfnwal
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+			}
+		holder = {
+			change_government = tribal_government
+				}
+			}
+		}
+	}
+
+	500.1.1 = {
+		holder = 159823 #Caradog Freichfras
+	}
+	530.1.1 = {
+		holder = 159824 #Meurig
+	}
+	550.1.1 = {
+		holder = 159825
+	}
+	560.1.1 = {
+		holder = 159830
+	}
+	590.1.1 = {
+		holder = 159831
+	}
+	600.1.1 = {
+		holder = 159834
+	}
+	605.1.1 = {
+		holder = 159832
+	}
+	645.1.1 = {
+		holder = 159833
+	}
+	665.1.1 = {
+		holder = 159835
+	}
+	680.1.1 = {
+		holder = 159116
+	}
+	710.1.1 = {
+		holder = 159115
+	}
+	740.1.1 = {
+		holder = 159114
+	}
+}
+
+
+c_brecknockshire = {
+	# Roman Wales
+	340.1.1 = {
+		holder = 159945
+		government = tribal_government
+	}
+	361.1.1 = {
+		liege = d_gloucester
+		de_jure_liege = d_gloucester
+	}
+	362.1.1 = {
+		holder = 159056 # Gwrtheyrn of Powys
+	}
+	# Sub-Roman Wales
+	410.1.1 = {
+		liege = 0
+		de_jure_liege = d_powys
+	}
+	#Brycheiniog
+	420.1.1 = {
+		holder = 159320 # Anlach mac Cormac
+	}
+	450.1.1 = {
+		holder = 159323 # Brychen Brycheiniog
+	}
+	490.1.1 = {
+		holder = 159325 # Rhain Dremrudd
+	}
+	510.1.1 = {
+		holder = 159326 # Rhigeneu ap Rhain
+	}
+	540.1.1 = {
+		holder = 159327 # Llywarch ap Rhigeneu
+	}
+	580.1.1 = {
+		holder = 159328 # Idwallon ap Llywarch
+	}
+	620.1.1 = {
+		holder = 159329 # Rhiwallon ap Idwallon
+	}
+	640.1.1 = {
+		holder = 159330 # Ceindrych ferch Rhiwallon
+	}
+	650.1.1 = {
+		holder = 159344 #Cloten
+	}
+	670.1.1 = {
+		holder = 159345 #Cathen
+	}
+	690.1.1 = {
+		holder = 159346 #Cadwgan Tredylig
+	}
+	710.1.1 = {
+		holder = 159347 #Rhain
+	}
+	715.1.1 = {
+		holder = 159358 #Awst ap Cadwgan
+	}
+	730.1.1 = {
+		holder = 159360 #Tewdwr ap Rhain
+	}
+	734.1.1 = {
+		holder = 252370 #Naufedd Hen ap Rhain
+	}
+	735.1.1 = {
+		holder = 252371 #Elisedd ap Rhain
+	}
+	736.1.1 = {
+		holder = 159359 #Elwystyl ap Awst
+	}
+	737.1.1 = {
+		holder = 159360 #Tewdwr ap Rhain
+	}
+	750.1.1 = {
+		holder = 159363 #Nowy Hen ap Tewdwr
+	}
+}
+

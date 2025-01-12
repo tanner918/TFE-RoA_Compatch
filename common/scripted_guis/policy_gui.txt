@@ -1,0 +1,108 @@
+﻿policy_sgui = {
+	scope = character
+	is_valid = {
+		has_imperial_laws = yes
+	}
+}
+
+can_enact_edicts = {
+	scope = character
+
+	is_valid = {
+		NOT = {
+			OR = {
+				AND = {
+					has_realm_law = totalitarian_edict_enacted
+					has_realm_law = frugality_edict_enacted
+				}
+				AND = {
+					has_realm_law = totalitarian_edict_enacted
+					has_realm_law = populating_edict_enacted 
+				}
+				AND = {
+					has_realm_law = totalitarian_edict_enacted
+					has_realm_law = logistics_edict_enacted 
+				}
+				AND = {
+					has_realm_law = totalitarian_edict_enacted
+					has_realm_law = envoy_edict_enacted 
+				}
+				AND = {
+					has_realm_law = frugality_edict_enacted
+					has_realm_law = populating_edict_enacted
+				}
+				AND = {
+					has_realm_law = frugality_edict_enacted
+					has_realm_law = logistics_edict_enacted
+				}
+				AND = {
+					has_realm_law = frugality_edict_enacted
+					has_realm_law = envoy_edict_enacted
+				}
+				AND = {
+					has_realm_law = logistics_edict_enacted
+					has_realm_law = envoy_edict_enacted
+				}
+				AND = {
+					has_realm_law = populating_edict_enacted
+					has_realm_law = envoy_edict_enacted
+				}
+				AND = {
+					has_realm_law = populating_edict_enacted
+					has_realm_law = logistics_edict_enacted
+				}
+			}
+		}
+	}
+}
+
+enacts_no_edict = {
+	scope = character
+	
+	is_valid = {
+		NOT = {
+			OR = {
+				has_realm_law = totalitarian_edict_enacted
+				has_realm_law = frugality_edict_enacted
+				has_realm_law = populating_edict_enacted 
+				has_realm_law = logistics_edict_enacted 
+				has_realm_law = envoy_edict_enacted 
+			}
+		}
+	}
+}
+enacts_totalitarian_edict = {
+	scope = character
+	
+	is_valid = {
+		has_realm_law = totalitarian_edict_enacted
+	}
+}
+enacts_frugality_edict = {
+	scope = character
+	
+	is_valid = {
+		has_realm_law = frugality_edict_enacted
+	}
+}
+enacts_populating_edict = {
+	scope = character
+	
+	is_valid = {
+		has_realm_law = populating_edict_enacted
+	}
+}
+enacts_logistics_edict = {
+	scope = character
+	
+	is_valid = {
+		has_realm_law = logistics_edict_enacted
+	}
+}
+enacts_envoy_edict = {
+	scope = character
+	
+	is_valid = {
+		has_realm_law = envoy_edict_enacted
+	}
+}

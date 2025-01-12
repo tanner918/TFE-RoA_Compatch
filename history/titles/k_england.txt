@@ -1,0 +1,1746 @@
+﻿k_england = {
+	410.1.1 = {
+		reset_name = yes
+		name = cn_prydain
+	}
+	#425.1.1 = {
+	#	holder = Gwyrtherion_03
+	#}
+	#455.1.1 = {
+	#	holder = Gwyrtherion_05
+	#}
+	#456.1.1 = {
+	#	holder = Gwyrtherion_03
+	#}
+	#462.1.1 = {
+	#	holder = constantinus_05
+	#	government = feudal_government
+	#	liege = 0
+	#}
+}
+d_bedford = {
+	200.1.1 = {
+		de_jure_liege = "k_britannia"
+		name = MAXIMACAESARIENSIS
+	}
+	319.1.1 = {
+		holder = britannia_01 #Pacatianus
+		liege = e_western_roman_empire
+	}
+	350.1.1 = {
+		holder = magnetius_03 # Magnetius
+	}
+	353.8.11 = {
+		holder = britannia_02 #Martinus
+	}
+	361.1.1 = {
+		holder = britannia_03 #ALypius
+	}
+	369.1.1 = {
+		holder = britannia_04 #Civilis
+	}
+	383.1.1 = {
+		holder = 159807 #Magnus Maximus
+	}
+	394.1.1 = {
+		holder = britannia_06 #Chrysanthus Vicarius Britannica
+	}
+	395.1.1 = {
+		holder = britannia_05 #Victorinus
+	}
+	406.6.1 = {
+		holder = BUsuprer_01 #Marcus the Usurper
+	}
+	406.10.1 = {
+		holder = BUsuprer_02 #Gratianus the Usurper
+	}
+	407.2.4 = {
+		holder = constantinus_01 #Constantinus the Usurper
+	}
+	410.1.1 = { #Britannia abandoned
+		name = cn_londein
+		reset_name = yes
+		de_jure_liege = k_england
+	}
+	476.1.1 = {
+		holder = londinium_01
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+	527.1.1={
+		name=d_essex
+		reset_name = yes
+		holder=saxon_07
+	}
+}
+
+c_middlesex = {	
+	200.1.1 = { #Diocletian's divison
+		change_development_level = 8
+	}
+	319.1.1 = {
+		holder = britannia_01 #Pacatianus
+		liege = e_western_roman_empire
+	}
+	350.1.1 = {
+		holder = magnetius_03 # Magnetius
+	}
+	353.8.11 = {
+		holder = britannia_02 #Martinus
+	}
+	361.1.1 = {
+		holder = britannia_03 #ALypius
+	}
+	369.1.1 = {
+		holder = britannia_04 #Civilis
+	}
+	394.1.1 = {
+		holder = britannia_06 #Chrysanthus Vicarius Britannica
+	}
+	395.1.1 = {
+		holder = britannia_05 #Victorinus
+	}
+	406.6.1 = {
+		holder = BUsuprer_01 #Marcus the Usurper
+	}
+	406.10.1 = {
+		holder = BUsuprer_02 #Gratianus the Usurper
+	}
+	407.2.4 = {
+		holder = constantinus_01 #Constantinus the Usurper
+	}
+	476.1.1 = {
+		holder = londinium_01
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+	530.1.1={
+		holder=middelseaxe_01
+		liege=d_bedford
+		change_development_level = 2
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = tribal_government
+				}
+			}
+		}
+	}
+}
+
+c_essex = {
+	200.1.1 = { #Diocletian's divison
+		change_development_level = 4
+	}
+	361.1.1 = {
+		holder = Trinovantes_02
+		liege = d_bedford
+	}
+	378.1.1 = {
+		holder = Trinovantes_01 #Trinovantes
+	}
+	476.1.1 = {
+		holder = londinium_01
+	}
+	527.1.1={
+		holder=saxon_07
+	}
+}
+
+
+c_bedford = {
+	200.1.1 = { #Diocletian's divison
+		change_development_level = 5
+	}
+	361.1.1 = {
+		holder = Catuvellauni_02 # Catuvelluni
+		liege = d_bedford
+	}
+	388.1.1 = {
+		holder = Catuvellauni_01 # Catuvelluni
+	}
+	430.1.1 = {
+		holder = Catuvellauni_03 # Catuvelluni
+		liege = 0
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	460.1.1 = {
+		holder = Catuvellauni_04 # Catuvelluni
+	}
+}
+
+
+c_hertfordshire = {
+	200.1.1 = { #Diocletian's divison
+		change_development_level = 4
+	}
+	319.1.1 = {
+		holder = britannia_01 #Pacatianus
+		liege = e_western_roman_empire
+	}
+	350.1.1 = {
+		holder = magnetius_03 # Magnetius
+	}
+	353.8.11 = {
+		holder = britannia_02 #Martinus
+	}
+	361.1.1 = {
+		holder = britannia_03 #ALypius
+	}
+	369.1.1 = {
+		holder = britannia_04 #Civilis
+	}
+	394.1.1 = {
+		holder = britannia_06 #Chrysanthus Vicarius Britannica
+	}
+	395.1.1 = {
+		holder = britannia_05 #Victorinus
+	}
+	406.6.1 = {
+		holder = BUsuprer_01 #Marcus the Usurper
+	}
+	406.10.1 = {
+		holder = BUsuprer_02 #Gratianus the Usurper
+	}
+	407.2.4 = {
+		holder = constantinus_01 #Constantinus the Usurper
+	}
+	476.1.1 = {
+		holder = londinium_01
+	}
+	530.1.1={
+		holder=middelseaxe_01
+		liege=d_bedford
+		government=tribal_government
+		change_development_level = 2
+	}
+}
+
+
+c_buckinghamshire = {
+	200.1.1 = { #Diocletian's divison
+		change_development_level = 3
+	}
+	361.1.1 = {
+		holder = Catuvellauni_02 # Catuvelluni
+		liege = d_bedford
+	}
+	388.1.1 = {
+		holder = Catuvellauni_01 # Catuvelluni
+	}
+	430.1.1 = {
+		holder = Catuvellauni_03 # Catuvelluni
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	460.1.1 = {
+		holder = Catuvellauni_04 # Catuvelluni
+	}
+}
+
+
+d_northumberland = {
+	361.1.1 = {
+		de_jure_liege = "k_scotland"
+	}
+	369.1.1 = {
+		holder = valentia_01 #Administrator
+		liege = "k_britannia"
+		name = cn_valentia
+		de_jure_liege = "k_britannia"
+	}
+	395.1.1 = {
+		holder = BDux_01 #Administrator
+	}
+	410.1.1 = {#Britannia abandoned
+		holder = 159038 # Coel
+		government = feudal_government
+		de_jure_liege = k_scotland
+		reset_name = yes
+	}
+	440.1.1 = {
+		holder = guotepauc_04 #Garbanion
+	}
+	472.1.1 = {
+		holder = guotepauc_05 #Dyfnawl
+	}
+	502.1.1 = {
+		holder = guotepauc_06 #BrÃ¢n
+	}
+	538.1.1 = {
+		holder = guotepauc_08 #Morgan I
+	}
+	562.1.1 = {
+		holder = guotepauc_09 #Koleddog
+	}
+	590.1.1 = {
+		holder = guotepauc_10 #Morgan II
+	}
+}
+
+c_northumberland = {
+	290.1.1 = {
+		holder = 159007 #Tegid
+		government = tribal_government
+	}
+	360.1.1 = {
+		holder = 159008 #Padarn Beisrudd
+	}
+	#340.1.1 = {
+	#	holder = 159009 #Edern
+	#}
+
+	### Transfer to Roman Control ###
+
+	369.1.1 = {
+		holder = valentia_01 #Administrator
+	}
+	395.1.1 = {
+		holder = BDux_01 #Administration
+	}
+	440.1.1 = {
+		holder = guotepauc_04 #Garbanion
+		government = feudal_government
+	}
+	472.1.1 = {
+		holder = guotepauc_05 #Dyfnawl
+	}
+	502.1.1 = {
+		holder = guotepauc_06 #BrÃ¢n
+	}
+	538.1.1 = {
+		holder = guotepauc_08 #Morgan I
+	}
+	562.1.1 = {
+		holder = guotepauc_09 #Koleddog
+	}
+	590.1.1 = {
+		holder = guotepauc_10 #Morgan II
+	}
+}
+
+c_durham = {
+	200.1.1 = { #Diocletian's divison
+		de_jure_liege = d_york
+		change_development_level = 4
+	}
+	361.1.1 = {
+		holder = britannia_secunda_01
+	}
+	390.1.1 = {
+		holder = 159038 # Coel Henn
+	}
+	440.1.1 = {
+		name = cn_eboracum
+		holder = 159037
+		liege = 0
+		government = feudal_government
+		de_jure_liege = d_northumberland
+	}
+	470.1.1 = {
+		holder = guotepauc_14
+	}
+	487.1.1 = {
+		holder = guotepauc_26
+	}
+	518.1.1 = {
+		holder = guotepauc_27
+	}
+	549.1.1 = {
+		holder = guotepauc_28
+	}
+	578.1.1 = {
+		holder = guotepauc_29
+	}
+	580.1.1 = {
+		holder = guotepauc_30
+	}
+}
+
+
+c_cumberland = {
+	200.1.1 = { #Diocletian's divison
+		de_jure_liege = d_york
+		government = tribal_government
+		change_development_level = 3
+	}
+	361.1.1 = {
+		holder = Coratini_02
+		liege = d_york
+	}
+	389.1.1 = {
+		holder = Coratini_01 # Mauric
+	}
+	470.1.1 = {
+		holder = 159036
+		government = feudal_government
+		de_jure_liege = d_northumberland
+		liege = 0
+	}
+	489.1.1 = {
+		holder = 159035
+	}
+	527.1.1 = {
+		holder = 159952
+	}
+	552.1.1 = {
+		holder = 159953
+	}
+	590.1.1 = {
+		holder = 159954
+	}
+	627.1.1 = {
+		holder = 159955
+	}
+}
+
+
+d_lancaster = {	
+	200.1.1 = { #Diocletian's divison
+		name = cn_rheged
+	}
+	410.1.1 = { #Britannia abandoned
+		reset_name = yes
+	}
+	470.1.1 = {
+		holder = 159036
+		government = feudal_government
+	}
+	489.1.1 = {
+		holder = 159035
+	}
+	527.1.1 = {
+		holder = 159952
+	}
+	552.1.1 = {
+		holder = 159953
+	}
+	590.1.1 = {
+		holder = 159954
+	}
+	627.1.1 = {
+		holder = 159955
+	}
+}
+
+c_lancashire = {
+	200.1.1 = { #Diocletian's divison
+		government = tribal_government
+		change_development_level = 3
+		de_jure_liege = d_york
+	}
+	361.1.1 = {
+		holder = Brigantes_02 
+		liege = d_york
+	}
+	380.1.1 = {
+		holder = Brigantes_01 # Brigantes
+	}
+	470.1.1 = {
+		holder = 159036
+		government = feudal_government
+		de_jure_liege = d_lancaster
+		liege = 0
+	}
+	489.1.1 = {
+		holder = 159035
+	}
+	527.1.1 = {
+		holder = 159952
+	}
+	552.1.1 = {
+		holder = 159953
+	}
+	590.1.1 = {
+		holder = 159954
+	}
+	627.1.1 = {
+		holder = 159955
+	}
+}
+
+
+c_westmorland = {
+	200.1.1 = { #Diocletian's divison
+		de_jure_liege = d_york
+		government = tribal_government
+		change_development_level = 3
+	}
+	361.1.1 = {
+		holder = Coratini_02
+		liege = d_york
+	}
+	389.1.1 = {
+		holder = Coratini_01 # Mauric
+	}
+	470.1.1 = {
+		holder = 159036
+		government = feudal_government
+		de_jure_liege = d_lancaster
+		liege = 0
+	}
+	489.1.1 = {
+		holder = 159035
+	}
+	527.1.1 = {
+		holder = 159952
+	}
+	552.1.1 = {
+		holder = 159953
+	}
+	590.1.1 = {
+		holder = 159954
+	}
+	627.1.1 = {
+		holder = 159955
+	}
+}
+
+
+c_cheshire = {
+	200.1.1 = { #Diocletian's divison
+		change_development_level = 5
+		de_jure_liege = d_hereford
+	}
+	361.1.1 = {
+		holder = BComes_02 #LEo
+		liege = d_hereford
+	}
+	470.1.1 = {
+		holder = 159036
+		government = feudal_government
+		de_jure_liege = d_lancaster
+		liege = 0
+	}
+	489.1.1 = {
+		holder = 159035
+	}
+	527.1.1 = {
+		holder = 159952
+	}
+	552.1.1 = {
+		holder = 159953
+	}
+	590.1.1 = {
+		holder = 159954
+	}
+	627.1.1 = {
+		holder = 159955
+	}
+}
+
+c_derby = {
+	200.1.1 = { #Diocletian's divison
+		change_development_level = 4
+		de_jure_liege = d_hereford
+	}
+	361.1.1 = {
+		holder = Coretani_01 #Caius
+		liege = d_hereford
+	}
+	388.1.1 = {
+		holder = Coretani_01 #Caius
+	}
+	470.1.1 = {
+		name = DUNNOTIG
+		holder = guotepauc_15 # Pabo I
+		de_jure_liege = d_lancaster
+		liege = 0
+		government = feudal_government
+	}
+	501.1.1 = {
+		holder = guotepauc_16 # Sawyl
+	}
+	533.1.1 = {
+		holder = guotepauc_31 # Pabo II
+	}
+	559.1.1 = {
+		holder = guotepauc_32 # Dunod
+	}
+}
+
+
+d_york = {
+	360.1.1 = {
+		holder = britannia_secunda_01
+		liege = "k_britannia"
+		name = BRITANNIASECUNDA
+		de_jure_liege = "k_britannia"
+	}
+	390.1.1 = {
+		holder = 159038 # Coel Henn
+	}
+	410.1.1 = { #Britannia abandoned
+		reset_name = yes
+	}
+	440.1.1 = {
+		name = cn_eboracum
+		holder = 159037
+		liege = 0
+		government = feudal_government
+		de_jure_liege = k_england
+	}
+	470.1.1 = {
+		holder = guotepauc_14
+	}
+	487.1.1 = {
+		holder = guotepauc_26
+	}
+	518.1.1 = {
+		holder = guotepauc_27
+	}
+	549.1.1 = {
+		holder = guotepauc_28
+	}
+	578.1.1 = {
+		holder = guotepauc_29
+	}
+	580.1.1 = {
+		holder = guotepauc_30
+	}
+}
+
+c_north_riding = {
+	200.1.1 = { #Diocletian's divison
+		change_development_level = 4
+	}
+	361.1.1 = {
+		holder = britannia_secunda_01
+	}
+	395.1.1 = {
+		holder = 159038 #Coel Henn
+	}
+	440.1.1 = {
+		holder = 159037
+		liege = 0
+		government = feudal_government
+	}
+	470.1.1 = {
+		holder = guotepauc_14
+	}
+	487.1.1 = {
+		holder = guotepauc_26
+	}
+	518.1.1 = {
+		holder = guotepauc_27
+	}
+	549.1.1 = {
+		holder = guotepauc_28
+	}
+	578.1.1 = {
+		holder = guotepauc_29
+	}
+	580.1.1 = {
+		holder = guotepauc_30
+	}
+}
+
+
+c_east_riding = {
+	200.1.1 = { #Diocletian's divison
+		change_development_level = 4
+	}
+	361.1.1 = {
+		holder = Parisi_02 #Parisi
+		liege = d_york
+	}
+	389.1.1 = {
+		holder = Parisi_01 #Parisi
+	}
+	440.1.1 = {
+		holder = 159037
+		liege = 0
+		government = feudal_government
+	}
+	450.1.1 = {
+		holder = deira_01
+	}
+	458.1.1 = {
+		holder = deira_02
+	}
+	489.1.1= {
+		holder = deira_03
+	}
+	500.1.1 = {
+		holder = deira_04
+	}
+	523.1.1={
+		holder=deira_05
+	}
+	530.1.1={
+		holder=205192
+	}
+}
+
+
+c_west_riding = {
+	200.1.1 = { #Diocletian's divison
+		change_development_level = 4
+		de_jure_liege = d_york
+	}
+	361.1.1 = {
+		holder = Brigantes_02 
+		liege = d_york
+	}
+	380.1.1 = {
+		holder = Brigantes_01 # Brigantes
+	}
+	440.1.1 = {
+		holder = 159037
+		liege = 0
+		government = feudal_government
+	}
+	470.1.1 = {
+		holder = guotepauc_14
+	}
+	487.1.1 = {
+		holder = guotepauc_26
+	}
+	518.1.1 = {
+		holder = guotepauc_27
+	}
+	549.1.1 = {
+		holder = guotepauc_28
+	}
+	578.1.1 = {
+		holder = guotepauc_29
+	}
+	580.1.1 = {
+		holder = guotepauc_30
+	}
+}
+
+
+c_lincolnshire = {
+	200.1.1 = { #Diocletian's divison
+		change_development_level = 6
+		de_jure_liege = d_hereford
+	}
+	361.1.1 = {
+		holder = BComes_01 #Caius
+		liege = d_hereford
+	}
+	410.1.1 = {
+		de_jure_liege = d_york
+		liege = 0
+		government = feudal_government
+		holder = lindisware_01
+	}
+	500.1.1={
+		holder=lindisware_02
+	}
+	512.1.1={
+		holder=lindisware_03
+	}
+}
+
+
+d_norfolk = {
+	200.1.1 = { #Diocletian's divison
+		name = cn_literis_saxonica
+	}
+	410.1.1 = { #Britannia abandoned
+		reset_name = yes
+	}
+}
+
+
+c_norfolk = {
+	60.1.1 = {
+		holder = iceni_99
+	}
+	61.1.1 = {
+		holder = 0
+	}
+	200.1.1 = { #Diocletian's divison
+		change_development_level = 4
+		de_jure_liege = d_bedford
+	}
+	361.1.1 = {
+		holder = Iceni_02 #Iceni
+		liege = d_bedford
+	}
+	387.1.1 = {
+		holder = Iceni_01 #Iceni
+	}
+	410.1.1 = {
+		holder = Iceni_03 #Iceni
+		liege = 0
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	461.1.1 = {
+		holder = Iceni_04 #Iceni
+	}
+	470.1.1 = {
+		holder = east_anglia_02
+		liege = 0
+		de_jure_liege = d_norfolk
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+	523.1.1={
+		holder=205000
+	}
+
+}
+
+c_suffolk = {
+	200.1.1 = { #Diocletian's divison
+		change_development_level = 4
+		de_jure_liege = d_bedford
+	}
+	351.1.1 = {
+		holder = BComes_03 #Fictional Comes
+		liege = d_bedford
+	}
+	476.1.1 = {
+		holder = londinium_01
+		de_jure_liege = d_norfolk
+	}
+	530.1.1={
+		holder=205000
+		government=tribal_government
+	}
+}
+
+c_cambridgeshire = {
+	200.1.1 = { #Diocletian's divison
+		change_development_level = 3
+		de_jure_liege = d_bedford
+	}
+	361.1.1 = {
+		holder = Iceni_02 #Iceni
+		liege = d_bedford
+	}
+	387.1.1 = {
+		holder = Iceni_01 #Iceni
+	}
+	410.1.1 = {
+		holder = Iceni_03 #Iceni
+		liege = 0
+		de_jure_liege = d_norfolk
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	461.1.1 = {
+		holder = Iceni_04 #Iceni
+	}
+	522.1.1={
+		holder=gyrwas_01
+	}
+}
+
+d_hereford = {
+	360.1.1 = {
+		holder = BComes_01 #Caius
+		liege = "k_britannia"
+		de_jure_liege = "k_britannia"
+		name = FLAVIACAESARIENSIS
+	}
+	410.1.1 = { #Britannia abandoned
+		name = cn_linnuis
+		de_jure_liege = k_england
+		reset_name = yes
+	}
+}
+c_warwickshire = {
+	200.1.1 = { #Diocletian's divison
+		government = tribal_government
+		change_development_level = 5
+		de_jure_liege = d_hereford
+	}
+	361.1.1 = {
+		holder = Dobunni_02 #Dobunni 
+		liege = d_hereford
+	}
+	376.1.1 = {
+		holder = Dobunni_01 #Dobunni 
+	}
+	410.1.1 = {
+		holder = Dobunni_03 #Dobunni 
+	}
+	437.1.1 = {
+		holder = Dobunni_04 #Dobunni 
+	}
+	500.1.1={
+		holder=luitcoit_01
+	}
+
+}
+
+c_leicestershire = {
+	200.1.1 = { #Diocletian's divison
+		change_development_level = 5
+		de_jure_liege = d_hereford
+	}
+	361.1.1 = {
+		holder = Coretani_01 #Caius
+		liege = d_hereford
+	}
+	388.1.1 = {
+		holder = Coretani_01 #Caius
+	}
+	470.1.1 = {
+		holder = guotepauc_15 # Pabo I
+		liege = 0
+		government = feudal_government
+	}
+	501.1.1 = {
+		holder = guotepauc_16 # Sawyl
+	}
+	533.1.1 = {
+		holder = guotepauc_31 # Pabo II
+	}
+	559.1.1 = {
+		holder = guotepauc_32 # Dunod
+	}
+}
+
+c_nottinghamshire = {
+	200.1.1 = { #Diocletian's divison
+		change_development_level = 4
+		de_jure_liege = d_hereford
+	}
+	361.1.1 = {
+		holder = Coretani_01 #Caius
+		liege = d_hereford
+	}
+	388.1.1 = {
+		holder = Coretani_01 #Caius
+	}
+	470.1.1 = {
+		holder = guotepauc_15 # Pabo I
+		liege = 0
+		government = feudal_government
+	}
+	501.1.1 = {
+		holder = guotepauc_16 # Sawyl
+	}
+	533.1.1 = {
+		holder = guotepauc_31 # Pabo II
+	}
+	559.1.1 = {
+		holder = guotepauc_32 # Dunod
+	}
+}
+
+c_staffordshire = {
+	200.1.1 = { #Diocletian's divison
+		government = tribal_government
+		change_development_level = 5
+		de_jure_liege = d_hereford
+	}
+	361.1.1 = {
+		holder = Cornovii_02 #Bresselconan
+		liege = d_hereford
+	}
+	388.1.1 = {
+		holder = Cornovii_01 #Bresselcona
+	}
+	410.1.1 = {
+		holder = Cornovii_03 #Bresselcona
+	}
+	468.1.1 = {
+		holder = cunorix #Bresselcona
+	}
+		500.1.1 = {
+		holder = 159089 # Pasgen ap Cyngen
+	}
+	530.1.1 = {
+		holder = 159090 # Morgan ap Pasgen
+	}
+	540.1.1 = {
+		holder = 159078 # Brochfael Ysgrithog
+	}
+	571.1.1 = {
+		holder = 159079 # Cynan Garwyn
+	}
+}
+
+c_worcestershire = {
+	200.1.1 = { #Diocletian's divison
+		government = tribal_government
+		change_development_level = 3
+		de_jure_liege = d_hereford
+	}
+	361.1.1 = {
+		holder = Dobunni_02 #Dobunni 
+		liege = d_hereford
+	}
+	376.1.1 = {
+		holder = Dobunni_01 #Dobunni 
+	}
+	410.1.1 = {
+		holder = Dobunni_03 #Dobunni 
+	}
+	437.1.1 = {
+		holder = Dobunni_04 #Dobunni 
+	}
+		500.1.1 = {
+		holder = 159823 #Caradog Freichfras
+	}
+	530.1.1 = {
+		holder = 159824 #Meurig
+	}
+	550.1.1 = {
+		holder = 159825
+	}
+}
+
+
+c_huntingdonshire = {
+	200.1.1 = { #Diocletian's divison
+		change_development_level = 4
+		de_jure_liege = d_bedford
+	}
+	361.1.1 = {
+		holder = Catuvellauni_02 # Catuvelluni
+		liege = d_bedford
+	}
+	388.1.1 = {
+		holder = Catuvellauni_01 # Catuvelluni
+	}
+	410.1.1 = {
+		holder = Iceni_03 #Iceni
+		liege = 0
+		de_jure_liege = d_hereford
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	461.1.1 = {
+		holder = Iceni_04 #Iceni
+	}
+	519.1.1={
+		holder=gyrwas_01
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+}
+
+c_northamptonshire = {
+	200.1.1 = { #Diocletian's divison
+		change_development_level = 4
+		de_jure_liege = d_bedford
+	}
+	361.1.1 = {
+		holder = Catuvellauni_02 # Catuvelluni
+		liege = d_bedford
+	}
+	388.1.1 = {
+		holder = Catuvellauni_01 # Catuvelluni
+	}
+	430.1.1 = {
+		holder = Catuvellauni_03 # Catuvelluni
+		liege = 0
+		de_jure_liege = d_hereford
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	460.1.1 = {
+		holder = Catuvellauni_04 # Catuvelluni
+	}
+	520.1.1={
+		holder=doomed
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+}
+
+c_shropshire = {
+	200.1.1 = { #Diocletian's divison
+		change_development_level = 4
+		government = tribal_government
+		de_jure_liege = d_hereford
+	}
+	361.1.1 = {
+		holder = Cornovii_02 #Bresselconan
+		liege = d_hereford
+	}
+	388.1.1 = {
+		holder = Cornovii_01 #Bresselcona
+	}
+	410.1.1 = {
+		holder = Cornovii_03 #Bresselcona
+	}
+	468.1.1 = {
+		holder = cunorix #Bresselcona
+	}
+	494.1.1={
+		
+		holder = 159077 # Cyngen Glodrydd
+	}
+	500.1.1 = {
+		holder = 159089 # Pasgen ap Cyngen
+	}
+	530.1.1 = {
+		holder = 159090 # Morgan ap Pasgen
+	}
+	540.1.1 = {
+		holder = 159078 # Brochfael Ysgrithog
+	}
+	571.1.1 = {
+		holder = 159079 # Cynan Garwyn
+	}
+}
+
+
+c_hereford = {
+	200.1.1 = { #Diocletian's divison
+		government = tribal_government
+		change_development_level = 4
+		de_jure_liege = d_gloucester
+	}
+	#####
+	## Sub-Roman Wales, Kingdom of Gwent
+	428.1.1 = {
+		holder = 159813 #Tudwal ap Annwn
+	}
+	431.1.1 = {
+		holder = 159821 # Dyfnwal ap Edynfed
+	}
+	450.1.1 = {
+		holder = 159822 # Ynyr ap Dyfnwal
+		government = tribal_government
+	}
+	500.1.1 = {
+		holder = 159823 #Caradog Freichfras
+	}
+	530.1.1 = {
+		holder = 159824 #Meurig
+	}
+	550.1.1 = {
+		holder = 159825
+	}
+	
+}
+
+d_gloucester = {
+	360.1.1 = {
+		holder = Abrivantes_02 #Abrevantes
+		name = BRITANNIAPRIMA
+		de_jure_liege = "k_britannia"
+		liege = "k_britannia"
+	}
+	380.1.1 = {
+		holder = Abrivantes_01 #Abrevantes
+	}
+	410.1.1 = { #Britannia abandoned
+		reset_name = yes
+		de_jure_liege = k_england
+	}
+	462.1.1 = {
+		holder = constantinus_05
+		government = feudal_government
+	}
+	492.1.1={
+		holder=constantinus_06
+	}
+	523.1.1={
+		holder=constantinus_07
+	}
+}
+
+c_gloucestershire = {
+	200.1.1 = { #Diocletian's divison
+		change_development_level = 5
+	}
+	360.1.1 = {
+		holder = Abrivantes_02 #Abrevantes
+	}
+	380.1.1 = {
+		holder = Abrivantes_01 #Abrevantes
+	}
+	462.1.1 = {
+		holder = constantinus_05 #Ambrosius
+		government = feudal_government
+	}
+	492.1.1={
+		holder=constantinus_06
+	}
+	523.1.1={
+		holder=constantinus_07
+	}
+}
+
+
+c_wiltshire = {
+	200.1.1 = { #Diocletian's divison
+		change_development_level = 3
+		de_jure_liege = d_gloucester
+	}
+	361.1.1 = {
+		holder = Belgae_02 #Belgae 
+		liege = d_gloucester
+	}
+	389.1.1 = {
+		holder = Belgae_01 #Belgae 
+	}
+	410.1.1 = {
+		holder = Belgae_03 #Belgae 
+		government = feudal_government
+	}
+	443.1.1 = {
+		holder = Belgae_04 #Belgae 
+	}
+	492.1.1={
+		holder=constantinus_06
+	}
+	523.1.1={
+		holder=constantinus_07
+	}
+}
+
+
+c_oxfordshire = {
+	200.1.1 = { #Diocletian's divison
+		change_development_level = 4
+		de_jure_liege = d_gloucester
+	}
+	361.1.1 = {
+		holder = Atrebates_02 #Atrebates 
+		liege = d_gloucester
+	}
+	367.1.1 = {
+		holder = Atrebates_01 #Atrebates 
+	}
+	440.1.1 = {
+		holder = Atrebates_03 #Atrebates 
+		government = feudal_government
+	}
+	492.1.1={
+		holder=constantinus_06
+	}
+	523.1.1={
+		holder=constantinus_07
+	}
+}
+
+c_berkshire = {
+	200.1.1 = { #Diocletian's divison
+		change_development_level = 4
+		de_jure_liege = d_gloucester
+	}
+	361.1.1 = {
+		holder = Atrebates_02 #Atrebates 
+		liege = d_gloucester
+	}
+	367.1.1 = {
+		holder = Atrebates_01 #Atrebates 
+	}
+	440.1.1 = {
+		holder = Atrebates_03 #Atrebates 
+		government = feudal_government
+	}
+	492.1.1={
+		holder=constantinus_06
+	}
+	523.1.1={
+		holder= 205141
+	}
+}
+
+
+d_canterbury = {
+	200.1.1 = {
+		name = d_cantia
+	}
+	410.1.1 = {
+		reset_name = yes
+	}
+	453.1.1 = {
+		holder = vigg_04 # Hengest
+		government = feudal_government
+	}
+	477.1.1={
+		holder=205028
+	}
+	516.1.1={
+		holder=205029
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+}
+
+c_kent = {
+	200.1.1 = { #Diocletian's divison
+		change_development_level = 5
+		de_jure_liege = d_bedford
+	}
+	361.1.1 = {
+		holder = sanctus_03 
+		liege = d_bedford
+	}
+	453.1.1 = {
+		holder = vigg_04 # Hengest
+		government = feudal_government
+		liege = 0
+		de_jure_liege = d_canterbury
+	}
+	477.1.1={
+		holder=205028
+	}
+	516.1.1={
+		holder=205029
+	}
+}
+
+
+c_sussex = {
+	200.1.1 = { #Diocletian's divison
+		change_development_level = 4
+		de_jure_liege = d_bedford
+	}
+	361.1.1 = {
+		holder = Regnenses_02 #Regnantes 
+		liege = d_bedford
+	}
+	389.1.1 = {
+		holder = Regnenses_01 #Regnantes 
+	}
+	410.1.1 = {
+		holder = Regnenses_03 #Regnantes 
+	}
+	455.1.1 = {
+		holder = Regnenses_04 #Regnantes 
+	}
+	476.1.1 = {
+		holder = aelling_01 
+		liege = 0
+		de_jure_liege = d_canterbury
+		government = feudal_government
+	}
+	514.1.1={
+		holder = aelling_02
+	}
+}
+
+c_surrey = {
+	200.1.1 = { #Diocletian's divison
+		change_development_level = 4
+		de_jure_liege = d_bedford
+	}
+	361.1.1 = {
+		holder = Regnenses_02 #Regnantes 
+		liege = d_bedford
+	}
+	389.1.1 = {
+		holder = Regnenses_01 #Regnantes 
+	}
+	410.1.1 = {
+		holder = Regnenses_03 #Regnantes 
+		de_jure_liege = d_canterbury
+		liege = 0
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	455.1.1 = {
+		holder = Regnenses_04 #Regnantes 
+	}
+}
+
+d_somerset = {
+	200.1.1 = {
+		name = d_belgia
+	}
+	410.1.1 = { #Britannia abandoned
+		reset_name = yes
+	}
+}
+
+c_hampton = {
+	200.1.1 = { #Diocletian's divison
+		change_development_level = 3
+		de_jure_liege = d_gloucester
+	}
+	361.1.1 = {
+		holder = Belgae_02 #Belgae 
+		liege = d_gloucester
+	}
+	389.1.1 = {
+		holder = Belgae_01 #Belgae 
+	}
+	410.1.1 = {
+		holder = Belgae_03 #Belgae 
+		government = feudal_government
+		de_jure_liege = d_somerset
+	}
+	443.1.1 = {
+		holder = Belgae_04 #Belgae 
+	}
+	460.1.1 = {
+		holder = wight_02 # Fake Ruler
+		government = feudal_government
+		liege = 0
+	}
+	507.1.1={
+		holder = 205141
+		liege=0
+	}
+}
+c_isle_of_wight = {
+	200.1.1 = { #Diocletian's divison
+		change_development_level = 3
+		de_jure_liege = d_gloucester
+	}
+	361.1.1 = {
+		holder = Belgae_02 #Belgae 
+		liege = d_gloucester
+	}
+	389.1.1 = {
+		holder = Belgae_01 #Belgae 
+	}
+	410.1.1 = {
+		holder = Belgae_03 #Belgae 
+	}
+	443.1.1 = {
+		holder = Belgae_04 #Belgae 
+	}
+	460.1.1 = {
+		holder = wight_01 # Stuf
+		government = feudal_government
+		liege = 0
+		de_jure_liege = d_somerset
+	}
+	500.1.1={
+		holder=wight_02
+	}
+}
+
+c_dorset = {
+	200.1.1 = { #Diocletian's divison
+		change_development_level = 2
+		de_jure_liege = d_gloucester
+	}
+	361.1.1 = {
+		holder = Durotriges_02 #Durotriges 
+		liege = d_gloucester
+	}
+	381.1.1 = {
+		holder = Durotriges_01 #Durotriges 
+	}
+	410.1.1 = {
+		holder = Durotriges_03 #Durotriges 
+		de_jure_liege = d_somerset
+		government = feudal_government
+	}
+	455.1.1 = {
+		holder = Durotriges_04 #Durotriges
+		liege = d_cornwall
+	}
+	507.1.1={
+		holder = 205141
+		liege=0
+	}
+	508.1.1={
+		holder=159441
+	}
+	520.1.1={
+		holder=159442
+	}
+}
+
+c_somerset = {
+	200.1.1 = { #Diocletian's divison
+		change_development_level = 4
+		de_jure_liege = d_gloucester
+	}
+	361.1.1 = {
+		holder = Durotriges_02 #Durotriges 
+		liege = d_gloucester
+	}
+	381.1.1 = {
+		holder = Durotriges_01 #Durotriges 
+	}
+	455.1.1 = {
+		holder = 205141 #Ceredig
+		de_jure_liege = d_somerset
+		government = feudal_government
+		liege = d_gloucester
+	}
+	499.1.1={
+		holder=constantinus_12
+	}
+	507.1.1={
+		holder=conmail
+	}
+	
+}
+
+k_cornwall = {
+	200.1.1 = {
+		name = cn_dumnonia
+	}
+	440.1.1 = {
+		holder = 159435 #Guermor Dyfnait, son of Gadion
+		liege = 0
+		government = feudal_government
+	}
+	465.1.1 = {
+		holder = 159436 #Tudwal Dyfnait, son of Gwrgr
+	}
+	477.1.1={
+		holder=159439
+	}
+	480.1.1={
+		holder=159440
+	}
+	508.1.1={
+		holder=159441
+	}
+	520.1.1={
+		holder=159442
+	}
+	
+}
+
+d_cornwall = {
+	200.1.1 = {
+		name = cn_dumnonia
+	}
+	440.1.1 = {
+		holder = 159435 #Guermor Dyfnait, son of Gadion
+		liege = 0
+		government = feudal_government
+		de_jure_liege = k_cornwall
+	}
+	465.1.1 = {
+		holder = 159436 #Tudwal Dyfnait, son of Gwrgr
+	}
+	477.1.1={
+		holder=159439
+	}
+	480.1.1={
+		holder=159440
+	}
+	508.1.1={
+		holder=159441
+	}
+	520.1.1={
+		holder=159442
+	}
+}
+
+c_devon = {
+	0.1.1 = {
+		government = tribal_government
+		change_development_level = 1
+	}
+	200.1.1 = { #Diocletian's divison
+		name = cn_dumnonia
+		de_jure_liege = d_gloucester
+	}
+	340.1.1 = {
+		holder = 159429 #Eudaf
+	}
+	361.1.1 = {
+		liege = d_gloucester
+	}
+	362.1.1 = {
+		holder = 159431 #Conan Meriadoc, son of Eudaf
+		liege = d_gloucester
+	}
+	385.1.1 = {
+		holder = 159432 #Gadion Dyfnait, son of Eudaf
+		liege = d_gloucester
+	}
+	440.1.1 = {
+		holder = 159435 #Guermor Dyfnait, son of Gadion
+		liege = 0
+		de_jure_liege = d_cornwall
+		government = feudal_government
+	}
+	465.1.1 = {
+		holder = 159436 #Tudwal Dyfnait, son of Gwrgr
+	}
+	477.1.1={
+		holder=159439
+	}
+	480.1.1={
+		holder=159440
+	}
+	508.1.1={
+		holder=159441
+	}
+	520.1.1={
+		holder=159442
+	}
+}
+
+
+c_cornwall = {
+	0.1.1 = {
+		government = tribal_government
+		change_development_level = 1
+	}
+	200.1.1 = { #Diocletian's divison
+		name = cn_dunheved
+		de_jure_liege = d_gloucester
+	}
+	340.1.1 = {
+		holder = 159429 #Eudaf
+		liege = d_gloucester
+	}
+	361.1.1 = {
+		liege = d_gloucester
+	}
+	362.1.1 = {
+		holder = 159431 #Conan Meriadoc, son of Eudaf
+		liege = d_gloucester
+	}
+	385.1.1 = {
+		holder = 159432 #Gadion Dyfnait, son of Eudaf
+		liege = d_gloucester
+	}
+	440.1.1 = {
+		holder = 159435 #Guermor Dyfnait, son of Gadion
+		liege = 0
+		de_jure_liege = d_cornwall
+	}
+	465.1.1 = {
+		holder = 159436 #Tudwal Dyfnait, son of Gwrgr
+		government = feudal_government
+	}
+	477.1.1={
+		holder=159439
+	}
+	480.1.1={
+		holder=159440
+	}
+	508.1.1={
+		holder=159441
+	}
+	520.1.1={
+		holder=159442
+	}
+}
+

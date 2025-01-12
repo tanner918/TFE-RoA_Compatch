@@ -1,0 +1,55 @@
+﻿##################################################################
+# 
+# KUSHAN EVENTS (by cybrxkhan)
+# 
+# kushan.0001-kushan.0009			Forming the Kushan Empire
+# 
+##################################################################
+
+
+
+namespace = kushan
+
+
+##################################################################
+# 
+# REFORM KUSHAN EMPIRE DECISION EVENTS
+# kushan.0001-kushan.0009
+# 
+##################################################################
+
+
+# Kushans are back in the house baby
+kushan.0001 = {
+	type = character_event
+	title = kushan.0001.t
+	desc = kushan.0001.desc
+	theme = realm
+	
+	left_portrait = {
+		character = scope:kushan_restorer
+		animation = personality_bold
+	}
+	
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		scope:kushan_restorer = {
+			show_as_tooltip = {
+				restore_kushan_empire_effect = yes
+			}
+		}
+	}
+
+	option = {
+		name = kushan.0001.a
+		trigger = {
+			NOT = { has_title = title:e_kushan } 
+		}
+	}
+	option = {
+		name = kushan.0001.b
+		trigger = {
+			has_title = title:e_kushan	
+		}
+	}
+}

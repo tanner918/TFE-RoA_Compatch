@@ -1,0 +1,491 @@
+﻿#k_thessalonika
+##d_thrace ###################################
+###c_byzantion
+496 = {		#Constantinople / Former Byzantion
+	culture = roman
+	religion = nicene
+	holding = castle_holding
+	special_building_slot = hagia_sophia_01
+	# History	
+	361.1.1 = {
+		buildings = {
+			castle_04
+			farm_estates_03
+			regimental_grounds_03
+		}
+	}
+	410.1.1 = {
+		duchy_capital_building = theodosian_walls_01
+	}
+	537.1.1 = {
+		special_building = hagia_sophia_01
+	}
+	476.1.1 = {
+		culture = greek
+		religion = chalcedonian
+	}
+}
+
+###c_kalliopolis
+495 = {		#Kaliopolis
+	culture = greek
+	religion = macedonianism
+	holding = castle_holding
+	#1374 - Ottomans
+
+	250.1.1 = {
+		buildings = {
+			farm_estates_02
+			curtain_walls_01
+		}
+	}
+	476.1.1 = {
+		religion = chalcedonian
+	}
+}
+3766 = {	#Ainos AKA Enez
+	holding = castle_holding
+
+	250.1.1 = {
+		buildings = {
+			farm_estates_02
+		}
+	}
+}
+3765 = {	#Kypsela
+	holding = none
+}
+3764 = {	#Raidestos
+	holding = city_holding
+	250.1.1 = {
+		buildings = {
+			cereal_fields_02
+		}
+	}
+}
+3763 = {	#Chariopolis AKA Hayrabolu
+	holding = church_holding
+}
+
+###c_brysis
+497 = {		#Thrake	
+	culture = thracio_roman
+	religion = nicene
+	holding = castle_holding
+	#1374 - Ottomans
+
+	250.1.1 = {
+		buildings = {
+			farm_estates_02
+			curtain_walls_01
+		}
+	}
+	476.1.1 = {
+		religion = chalcedonian
+	}
+}
+3760 = {	#Arkadiopolis AKA Lüleburgaz
+	holding = city_holding
+	250.1.1 = {
+		buildings = {
+			farm_estates_02
+		}
+	}
+}
+3761 = {	#Selymbria
+	holding = church_holding
+	special_building_slot = anastasian_walls_01
+}
+3762 = {	#Herakleia Perinthos AKA Marmara Ereğlisi
+	holding = church_holding
+}
+3759 = {	#Bizye AKA Vize
+	holding = city_holding
+
+	250.1.1 = {
+		buildings = {
+			farm_estates_02
+		}
+	}
+}
+3758 = {	#Salmydessus
+	holding = none
+}
+
+##d_strymon ###################################
+###c_mosynopolis
+492 = {		#Strymon	
+	culture = thracio_roman
+	religion = macedonianism
+	holding = castle_holding
+
+	250.1.1 = {
+		buildings = {
+			farm_estates_02
+			cereal_fields_02
+		}
+	}
+}
+3767 = {	#Xanthia AKA Xanthi
+	holding = castle_holding
+}
+3768 = {	#Traianopolis aka Traianoupoli
+	holding = church_holding
+}
+3769 = {	#Thasos
+	holding = city_holding
+}
+3554 = {	#Rodopi
+	holding = none
+}
+
+###c_serres
+3771 = {	#Serres
+	culture = greek
+	religion = nicene
+	holding = castle_holding
+
+	250.1.1 = {
+		buildings = {
+			farm_estates_02
+			curtain_walls_01
+		}
+	}
+	476.1.1 = {
+		religion = chalcedonian
+	}
+}
+3770 = {	#Siderokastron
+	holding = none
+	#1st mention in XIIIth century
+}
+3772 = {	#Drama aka Ydrama aka Dyrama
+	holding = city_holding
+}
+3773 = {	#Kavala
+	holding = castle_holding
+}
+3774 = {	#Chrysopolis aka Eion
+	holding = none
+}
+
+##d_aegean_islands ###################################
+###c_naxos
+484 = {		#Naxos
+	culture = greek
+	religion = hellenic_pagan
+	holding = castle_holding
+
+	250.1.1 = {
+		buildings = {
+			farm_estates_02
+			curtain_walls_01
+		}
+	}
+	476.1.1 = {
+		religion = chalcedonian
+	}
+}
+3757 = {	#Thera AKA Santorini
+	holding = none
+	#1st mention in XIIth
+}
+3755 = {	#Andros
+	holding = city_holding
+}
+3756 = {	#Tinos
+	holding = church_holding
+	#Set as church_holding to have all 3 holding types
+}
+
+###c_abydos
+744 = {		#Abydos
+	culture = greek
+	religion = hellenic_pagan
+	holding = castle_holding	
+	#1374 - Ottomans
+
+	250.1.1 = {
+		buildings = {
+			farm_estates_02
+			curtain_walls_01
+		}
+	}
+}
+3749 = {	#Lampsakos
+	holding = church_holding
+}
+3750 = {	#Ilion
+	holding = none
+}
+3751 = {	#Alexandria Troas
+	holding = church_holding
+}
+3748 = {	#Pagaea
+	holding = none
+}
+
+###c_lesbos
+487 = {		#Lesbos
+	culture = greek
+	religion = hellenic_pagan
+	holding = castle_holding
+
+	250.1.1 = {
+		buildings = {
+			farm_estates_02
+			curtain_walls_01
+		}
+	}
+	476.1.1 = {
+		religion = chalcedonian
+	}
+}
+3752 = {	#Lemnos
+	holding = city_holding
+}
+3753 = {	#Skyros
+	holding = church_holding
+	#Set as church_holding to have all 3 holding types
+}
+
+###c_chios
+486 = {		#Chios
+	culture = greek
+	religion = hellenic_pagan
+	holding = castle_holding
+
+	250.1.1 = {
+		buildings = {
+			farm_estates_02
+			curtain_walls_01
+		}
+	}
+}
+
+3754 = {	#Samos
+	holding = city_holding
+}
+
+###c_rhodos
+483 = {		#Rhodos
+	culture = greek
+	religion = hellenic_pagan
+	holding = castle_holding
+	476.1.1 = {
+		religion = chalcedonian
+	}
+}
+3740 = {	#Kos
+	holding = church_holding
+}
+3741 = {	#Lindos
+	holding = city_holding
+}
+3742 = {	#Karpathos
+	holding = none
+}
+
+##d_thessalonika ###################################
+###c_thessalonika
+490 = {		#Thessalonike / b_thessaloniki
+	culture = greek
+	religion = hellenic_pagan
+	holding = castle_holding
+	
+	#1205 - 4th crusade, kingdom of Thessaloniki	
+	#1225 - To the despotate of Epirus, Serbian Empire, Byzantine Empire
+	#1349 - Byzantine rule, restored
+	#1387 - Conquest by the Ottomans
+	#1402 - Byzantine rule, restored
+	#1423 - Sold to Venice
+	#1430 - Conquest by the Ottomans
+
+	250.1.1 = {
+		buildings = {
+			farm_estates_03
+			curtain_walls_01
+		}
+	}
+	303.1.1 = {
+		special_building_slot = hagios_demetrios
+	}
+	634.1.1 = {
+		special_building = hagios_demetrios
+	}
+}
+3778 = {	#Gynaikokastron
+	holding = church_holding
+	#Unclear if it's old/important enough, but needed to build some slots
+}
+3779 = {	#Langades AKA Langadas
+	holding = city_holding
+	#Unclear if it's old/important enough, but needed to build some slots
+}
+3780 = {	#Mavrouda
+	holding = none
+}
+
+###c_chalkidike
+491 = {		#Chalkidike
+	culture = greek
+	religion = hellenic_pagan
+	holding = castle_holding
+
+	250.1.1 = {
+		buildings = {
+			farm_estates_03
+			curtain_walls_01
+		}
+	}
+	476.1.1 = {
+		religion = chalcedonian
+	}
+	867.1.1 = {
+		special_building_slot = siderokausia_mines_01
+		special_building = siderokausia_mines_01
+	}
+}
+3775 = {	#Rendina AKA Eion
+	holding = city_holding
+}
+3777 = {	#Kassandreia
+	holding = church_holding
+	#Ancient diocese built on the ruins of an important macedonian city which got destroyed before CK timeframe
+}
+3776 = {	#Ierrisos / Ierissos
+	holding = church_holding
+	303.1.1 = {
+		special_building_slot = mount_athos_01
+	}
+	787.1.1 = {
+		special_building = mount_athos_01
+	}
+	963.1.1 = {
+		special_building = mount_athos_02
+	}
+}
+
+###c_veria
+3784 = {	#Veria
+	culture = greek
+	religion = nicene
+	holding = castle_holding
+	476.1.1 = {
+		religion = chalcedonian
+	}
+
+	250.1.1 = {
+		buildings = {
+			farm_estates_03
+			curtain_walls_01
+		}
+	}
+}
+3781 = {	#Maglen
+	holding = none
+}
+3782 = {	#Sthlanitza
+	holding = none
+}
+3783 = {	#Voden aka Edessa
+	holding = city_holding
+}
+3785 = {	#Kalyvia, Larissa
+	holding = none
+	#Founded during Ottoman rule
+}
+
+##d_thessaly ###################################
+###c_thessalia
+489 = {		#Thessalia
+	culture = greek
+	religion = nicene
+	holding = castle_holding
+	#1205 - 4th crusade, kingdom of Thessaloniki
+	#1225 - To the despotate of Epirus and Serbian empire
+	#1393 - Conquest by the Ottomans
+	#1402 - Byzantine rule, restored
+	#1430 - Conquest by the Ottomans
+
+	476.1.1 = {
+		religion = chalcedonian
+	}
+	250.1.1 = {
+		buildings = {
+			farm_estates_02
+			curtain_walls_01
+		}
+	}
+}
+3786 = {	#Platamon
+	holding = castle_holding
+}
+3787 = {	#Servia
+	holding = city_holding
+}
+3788 = {	#Elasson aka Elassona
+	holding = church_holding
+}
+
+###c_demetrias
+488 = {		#Demetrias
+	culture = greek
+	religion = hellenic_pagan
+	holding = castle_holding
+	476.1.1 = {
+		religion = chalcedonian
+	}
+}
+3789 = {	#Velestino
+	holding = none
+	#Abandonned in VIIth, 1st mention after that in XIIIth
+}
+3790 = {	#Halmyros tied to the ancient city of Alos
+	holding = city_holding
+}
+
+###c_neopatras
+3793 = {	#Neopatras
+	culture = greek
+	religion = hellenic_pagan
+	holding = castle_holding
+}
+3791 = {	#Domokos
+	holding = church_holding
+}
+3792 = {	#Gardikia
+	holding = none
+}
+3794 = {	#Zetouni aka Lamia
+	holding = city_holding
+}
+
+###c_thessaliotis
+3797 = {	#Trikala
+	culture = greek
+	religion = hellenic_pagan
+	holding = castle_holding
+	476.1.1 = {
+		religion = chalcedonian
+	}
+}
+3795 = {	#Grevena
+	holding = none
+}
+3796 = {	#Stagoi
+	holding = church_holding
+	#900.1.1 = {
+	#	holding = church_holding
+		#First mention in Xth
+	#}
+	303.1.1 = {
+		special_building_slot = meteora_01
+	}
+	800.1.1 = {
+		special_building = meteora_01
+	}
+}
+3570 = {	#Pharsalos aka Farsala
+	holding = city_holding
+}

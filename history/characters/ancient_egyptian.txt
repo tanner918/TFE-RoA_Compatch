@@ -1,0 +1,217 @@
+﻿# NOTE FOR BC DATES:
+# NEGATIVE DATES ARE **ONE YEAR** AFTER BC DATES
+# i.e., a date of "-100.1.1" will be 101 BC in the game!!!
+
+#############################################################
+# 
+# 30TH DYNASTY OF EGYPT
+# 
+# Done by Cybrxkhan
+# 
+#############################################################
+
+# Nectanebo I's father, Djedhor
+30th_dynasty_001 = { 
+	name = "Djedhor"
+	dynasty = egypt_30th_dynasty
+	religion = "egyptian_pagan"
+	culture = "ancient_egyptian"
+	trait = education_martial_2
+	-448.1.1 = { # Unknown
+		birth = yes
+	}
+	-385.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+# Nectanebo I, founder of the last native Egyptian dynasty
+30th_dynasty_002 = { 
+	name = "Nectanebo"
+	dynasty = egypt_30th_dynasty
+	stewardship = 6
+	religion = "egyptian_pagan"
+	culture = "ancient_egyptian"
+	trait = education_martial_3
+	# Great builder and sponsor of temples
+	# Maintained a delicate balance to rebuild the country
+	trait = ambitious
+	trait = diligent
+	trait = generous
+	trait = just
+	father = 30th_dynasty_001
+	-427.1.1 = { # Unknown
+		birth = yes
+	}
+	-359.1.1 = { # Known year
+		death = yes
+	}
+}
+
+# Djedhor, better known as Teos, Nectanebo I's son and designated heir
+# Attempted invasion of Persia but was usurped by his nephew Nectanebo II
+30th_dynasty_003 = { 
+	name = "Djedhor"
+	dynasty = egypt_30th_dynasty
+	religion = "egyptian_pagan"
+	culture = "ancient_egyptian"
+	# Wanted to attack Persia
+	# Levied unpopular huge taxes on people to do so
+	trait = education_stewardship_1
+	trait = greedy
+	trait = ambitious
+	trait = arbitrary
+	father = 30th_dynasty_002
+	-405.1.1 = { # Unknown
+		birth = yes
+	}
+	-348.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+# Tjahapimu, another son of Nectanebo I
+# Convinced his son Nectanebo II to rebel against Djedhor/Teos
+30th_dynasty_004 = { 
+	name = "Tjahapimu"
+	dynasty = egypt_30th_dynasty
+	religion = "egyptian_pagan"
+	culture = "ancient_egyptian"
+	trait = education_martial_3
+	father = 30th_dynasty_002
+	-404.1.1 = { # Unknown
+		birth = yes
+	}
+	382.1.1 = {
+		add_spouse = 30th_dynasty_006
+	}
+	-345.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+# Nectanebo II, son of Tjahapimu, last native Pharaoh of Egypt
+30th_dynasty_005 = { 
+	name = "Nectanebo"
+	dynasty = egypt_30th_dynasty
+	religion = "egyptian_pagan"
+	culture = "ancient_egyptian"
+	trait = education_martial_3
+	trait = diligent 	# Extensive builder
+	trait = generous 	# Built and improved temples, donated extensively to priesthoods
+	trait = zealous 	# Per above
+	trait = brave 		# To represent he wasn't just a military pushover vs. the Persians, and put up a serious fight against them for years
+	father = 30th_dynasty_004
+	mother = 30th_dynasty_006
+	-379.1.1 = { # Estimated
+		birth = yes
+	}
+	-332.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+# Udjashu, wife of Tjahapimu and mother of Nectanebo II
+30th_dynasty_006 = { 
+	name = "Udjashu"
+	female = yes
+	#dynasty = egypt_30th_dynasty
+	religion = "egyptian_pagan"
+	culture = "ancient_egyptian"
+	-401.1.1 = { # Unknown
+		birth = yes
+	}
+	-343.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+# Nectanebo II's son, name unknown but he's attested
+# See here for more info: https://www.researchgate.net/profile/Krzysztof-Nawotka/publication/331308765_Nectanebo_II_and_Alexander_the_Great_History_Art_Tradition/links/5f31921b458515b729153d53/Nectanebo-II-and-Alexander-the-Great-History-Art-Tradition.pdf
+30th_dynasty_007 = { 
+	name = "Djedhor"
+	dynasty = egypt_30th_dynasty
+	religion = "egyptian_pagan"
+	culture = "ancient_egyptian"
+	father = 30th_dynasty_005
+	-354.1.1 = { # Unknown
+		birth = yes
+	}
+	-298.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+
+
+
+
+
+
+
+#############################################################
+# 
+# MISC ANCIENT EGYPTIANS
+# 
+# Done by Cybrxkhan
+# 
+#############################################################
+
+# NOTE FOR BC DATES:
+# NEGATIVE DATES ARE **ONE YEAR** AFTER BC DATES
+# i.e., a date of "-100.1.1" will be 101 BC in the game!!!
+
+# Khababash, rebel Pharaoh
+ancient_egyptian_001 = { 
+	name = "Khababash"
+	religion = "egyptian_pagan"
+	culture = "ancient_egyptian"
+	-380.1.1 = {
+		birth = yes
+	}
+	-334.1.1 = {
+		death = yes
+	}
+}
+
+# Horwennefer, rebel Pharaoh
+ancient_egyptian_002 = { 
+	name = "Horwennefer"
+	religion = "egyptian_pagan"
+	culture = "ancient_egyptian"
+	-258.1.1 = {
+		birth = yes
+	}
+	-196.1.1 = {
+		death = yes
+	}
+}
+
+# Ankhwennefer, rebel Pharaoh
+ancient_egyptian_003 = { 
+	name = "Ankhwennefer"
+	religion = "egyptian_pagan"
+	culture = "ancient_egyptian"
+	father = ancient_egyptian_002
+	-222.1.1 = {
+		birth = yes
+	}
+	-185.1.1 = {
+		death = yes
+	}
+}
+
+# Harsiesi, rebel Pharaoh
+ancient_egyptian_004 = { 
+	name = "Harsiesi"
+	religion = "egyptian_pagan"
+	culture = "ancient_egyptian"
+	-160.1.1 = {
+		birth = yes
+	}
+	-129.1.1 = {
+		death = yes
+	}
+}
+
+

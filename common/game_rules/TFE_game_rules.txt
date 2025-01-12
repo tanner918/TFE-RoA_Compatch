@@ -1,0 +1,224 @@
+﻿hybrid_culture_ai_frequency = {
+	categories = {
+		TFE
+	}
+	default = none_hybrid_culture_ai_frequency
+	#dlc = "The Royal Court"
+
+	default_hybrid_culture_ai_frequency = {
+
+	}
+
+	less_common_hybrid_culture_ai_frequency = {
+
+	}
+
+	none_hybrid_culture_ai_frequency = {
+
+	}
+}
+
+divergent_culture_ai_frequency = {
+	categories = {
+		TFE
+	}
+	default = none_divergent_culture_ai_frequency
+	#dlc = "The Royal Court"
+
+	default_divergent_culture_ai_frequency = {
+
+	}
+
+	less_common_divergent_culture_ai_frequency = {
+
+	}
+
+	none_divergent_culture_ai_frequency = {
+
+	}
+
+	relaxed_divergent_culture_ai_frequency = {
+
+	}
+}
+
+imperial_competence = {
+	categories = {
+		TFE
+	}
+	default = imperial_competence_enabled
+
+	imperial_competence_enabled = {
+
+	}
+
+	imperial_competence_enabled_in_430 = {
+
+	}
+
+	imperial_competence_disabled = {
+
+	}
+}
+
+imperial_competence_partial_collapse = {
+	categories = {
+		TFE
+	}
+	default = imperial_competence_partial_collapse_enabled
+
+	imperial_competence_partial_collapse_enabled = {
+
+	}
+
+	imperial_competence_partial_collapse_disabled = {
+
+	}
+}
+
+imperial_competence_collapse = {
+	categories = {
+		TFE
+	}
+	default = imperial_competence_collapse_enabled
+
+	imperial_competence_collapse_enabled = {
+
+	}
+
+	imperial_competence_collapse_disabled = {
+
+	}
+}
+
+tfe_migrations = {
+	categories = {
+		TFE
+	}
+	default = tfe_migrations_frequent
+	tfe_migrations_very_rare = {}
+	tfe_migrations_rare = {}
+	tfe_migrations_occasional = {}
+	tfe_migrations_frequent = {}
+	tfe_migrations_very_frequent = {}
+	tfe_migrations_apocalyptic = {}
+	tfe_migrations_off = {}
+}
+tfe_historical_migrations = {
+	categories = {
+		TFE
+	}
+	default = tfe_historical_migrations_strict
+	tfe_historical_migrations_relaxed = {}
+	tfe_historical_migrations_default = {}
+	tfe_historical_migrations_strict = {}
+}
+migration_strength = {
+	categories = {
+		TFE
+	}
+	default = migration_strength_default
+	migration_strength_weaker = {}
+	migration_strength_default = {}
+	migration_strength_stronger = {}
+	migration_strength_much_stronger = {}
+	migration_strength_apocalyptic = {}
+}
+#tfe_nomadic_migrations = {
+#	default = tfe_nomadic_migrations_frequent
+#	tfe_nomadic_migrations_very_rare = {}
+#	tfe_nomadic_migrations_rare = {}
+#	tfe_nomadic_migrations_occasional = {}
+#	tfe_nomadic_migrations_frequent = {}
+#	tfe_nomadic_migrations_very_frequent = {}
+#	tfe_nomadic_migrations_apocalyptic = {}
+#	tfe_nomadic_migrations_off = {}
+#}
+
+imperial_internal_wars = {
+	categories = {
+		TFE
+	}
+	default = imperial_war_disabled
+
+	imperial_war_enabled = {
+
+	}
+
+	imperial_war_disabled = {
+
+	}
+}
+
+larp = {
+	categories = {
+		TFE
+	}
+	default = larp_enabled 
+	larp_disabled = {}
+	larp_enabled = {}
+}
+
+fictional_larp = {
+	categories = {
+		TFE
+	}
+	default = fictional_larp_enabled 
+	fictional_larp_disabled = {}
+	fictional_larp_enabled = {}
+}
+
+dead_cultures = {
+	categories = {
+		TFE
+	}
+	default = dead_cultures_disabled 
+	dead_cultures_disabled = {}
+	dead_cultures_enabled = {}
+}
+
+extra_difficultys = {
+	default = plus_0_percent_difficulty
+	plus_0_percent_difficulty = {
+		apply_modifier = ai:plus_0_percent_difficulty
+	}
+	plus_10_percent_difficulty = {
+		apply_modifier = ai:plus_10_percent_difficulty
+	}
+	plus_20_percent_difficulty = {
+		apply_modifier = ai:plus_20_percent_difficulty
+	}
+	plus_30_percent_difficulty = {
+		apply_modifier = ai:plus_30_percent_difficulty
+	}
+	plus_40_percent_difficulty = {
+		apply_modifier = ai:plus_40_percent_difficulty
+	}
+	plus_50_percent_difficulty = {
+		apply_modifier = ai:plus_50_percent_difficulty
+	}
+	plus_60_percent_difficulty = {
+		apply_modifier = ai:plus_60_percent_difficulty
+	}
+	plus_70_percent_difficulty = {
+		apply_modifier = ai:plus_70_percent_difficulty
+	}
+	plus_80_percent_difficulty = {
+		apply_modifier = ai:plus_80_percent_difficulty
+	}
+	plus_90_percent_difficulty = {
+		apply_modifier = ai:plus_90_percent_difficulty
+	}
+	plus_100_percent_difficulty = {
+		apply_modifier = ai:plus_100_percent_difficulty
+	}
+}
+
+historicity_extra_admin_player_wherever = {
+	
+	categories = { historicity game_modes }
+	
+	default = historicity_extra_admin_player_wherever_gameplay_not_administrative
+
+	historicity_extra_admin_player_wherever_gameplay_not_administrative = {}
+}

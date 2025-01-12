@@ -1,0 +1,107 @@
+﻿##################################################
+#General Dynasty Modifiers
+
+red_monarchs_modifier = { # - Hróðvitnir
+	icon = county_modifier_development_positive
+	development_growth_factor = 0.05
+	tax_mult = 0.05
+}
+
+TFE_descendants_of_li_ling = { # Yenisei Kyrgyz IRL claimed descent, as did the Tuoba
+	icon = diplomacy_positive
+	diplomacy = 2
+	martial = 1
+	prowess = 1
+	monthly_prestige = 0.25
+	han_opinion = 5
+	diplomatic_range_mult = 0.05
+	knight_effectiveness_mult = 0.05
+}
+
+TFE_kushan_dynasty_modifier = { # Kushans
+	icon = prestige_positive
+	martial = 1
+	monthly_prestige = 0.1
+}
+
+apotheosised_dynasty = {
+	icon = piety_positive
+
+	monthly_dynasty_prestige = 0.01
+	same_faith_opinion = 2
+	stacking = yes
+}
+
+TFE_heptarch_modifier = { # Heptarchs
+	icon = prestige_positive
+	diplomacy = 2
+	monthly_prestige = 0.2
+	opinion_of_same_faith = 5
+	opinion_of_same_culture = 5
+}
+
+romano_barb_law = {
+	icon = diplomacy_positive
+	opinion_of_same_culture = 10
+	monthly_prestige_gain_mult = 0.05
+}
+
+seven_houses_assimilated = {
+	icon = prestige_positive
+	vassal_tax_mult = 0.5
+	monthly_dynasty_prestige_mult = 0.2
+	diplomacy_per_prestige_level = 1
+	army_maintenance_mult = -0.2
+	same_culture_opinion = 10
+	eranshar_government_opinion = 5
+	domain_limit = 4
+	vassal_limit = 10
+}
+
+seven_houses_abolished = {
+	icon = prestige_positive
+	intimidated_vassal_tax_contribution_mult = 0.4
+	cowed_vassal_tax_contribution_mult = 0.4
+	intrigue_per_prestige_level = 1
+	dread_gain_mult = 0.3
+	dread_per_tyranny_mult = 0.5
+	domain_limit = 2
+	army_maintenance_mult = -0.3
+}
+
+restorers_of_assyria = {
+	icon = prowess_positive
+	dread_gain_mult = 0.3
+	dread_per_tyranny_mult = 0.5
+	army_maintenance_mult = -0.1
+	opinion_of_same_culture = 10
+	monthly_prestige_gain_mult = 0.05
+}
+
+pirates_of_illyria = {
+	icon = prowess_positive
+	dread_gain_mult = 0.3
+	army_maintenance_mult = -0.1
+	opinion_of_same_culture = 10
+	monthly_prestige_gain_mult = 0.05
+}
+
+tfe_segregated_barbarians_and_romans = {
+	icon = letter_positive
+	roman_opinion = 15
+	vassal_opinion = 10
+
+	archers_toughness_add = 5
+	pikemen_damage_add = 10
+	heavy_infantry_screen_add = 10
+	skirmishers_pursuit_add = 5
+}
+
+rouran_khagans = {
+	icon = prowess_positive
+	dread_gain_mult = 0.1
+	dread_per_tyranny_mult = 0.1
+	army_maintenance_mult = -0.1
+	opinion_of_same_culture = 10
+	monthly_prestige_gain_mult = 0.05
+}

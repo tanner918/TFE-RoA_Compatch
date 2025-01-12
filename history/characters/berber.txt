@@ -1,0 +1,410 @@
+﻿# Called baranis in-game
+
+168253 = {
+	name = "Mansur"
+	dynasty = 9575
+	religion = "muwalladi"
+	culture = baranis
+	660.1.1 = {
+		birth = "660.1.1"
+	}
+	710.1.1 = {
+		death = "710.1.1"
+	}
+}
+
+168254 = {
+	name = "Salih"
+	dynasty = 9575
+	religion = "muwalladi"
+	culture = baranis
+	father = 168253
+	690.1.1 = {
+		birth = "690.1.1"
+	}
+	749.1.1 = {
+		death = "749.1.1"
+	}
+}
+
+168255 = {
+	name = "al-Mu_tasim"
+	dynasty = 9575
+	religion = "muwalladi"
+	culture = baranis
+	father = 168254
+	710.1.1 = {
+		birth = "710.1.1"
+	}
+	755.1.1 = {
+		death = "755.1.1"
+	}
+}
+
+168256 = {
+	name = "Idris"
+	dynasty = 9575
+	religion = "muwalladi"
+	culture = baranis
+	father = 168255
+	728.1.1 = {
+		birth = "728.1.1"
+	}
+	760.1.1 = {
+		death = "760.1.1"
+	}
+}
+
+168257 = {
+	name = "Sa_id"
+	dynasty = 9575
+	religion = "muwalladi"
+	culture = baranis
+	father = 168256
+	745.1.1 = {
+		birth = "745.1.1"
+	}
+	803.1.1 = {
+		death = "803.1.1"
+	}
+}
+
+#Barghawata
+168275 = {
+	name = "Tarif"
+	dynasty = 9576
+	religion = "najdat"
+	culture = baranis
+	690.1.1 = {
+		birth = yes
+	}
+	744.1.1 = {
+		death = yes
+	}
+}
+
+168276 = {
+	name = "Salih"
+	dynasty = 9576
+	religion = "ismaili" #changed religion
+	culture = baranis
+	father = 168275
+	720.1.1 = {
+		birth = yes
+	}
+	792.1.1 = {
+		death = yes
+	}
+}
+200230 = {
+	name = "Abd-al-Malik"
+	dynasty = 1046028
+
+	religion = ashari
+	culture = baranis
+
+	729.1.1 = {
+		birth = yes
+	}
+	760.1.1 = {
+		add_spouse = 200231
+	}
+	781.1.1 = {
+		death = yes
+	}
+}
+
+200232 = {
+	name = "Ya_qub"
+	dynasty = 1046028
+
+	father = 200230
+	mother = 200231
+
+	religion = ashari
+	culture = baranis
+
+	762.1.1 = {
+		birth = yes
+	}
+	816.1.1 = {
+		death = yes
+	}
+}
+
+200214 = {
+	name = "Abd-al-Karim"
+	dynasty = 1046020
+
+	religion = ashari
+	culture = baranis
+
+	730.1.1 = {
+		birth = yes
+	}
+	763.1.1 = {
+		add_spouse = 200215
+	}
+	784.1.1 = {
+		death = yes
+	}
+}
+
+200216 = {
+	name = "Yahya"
+	dynasty = 1046021
+
+	religion = ashari
+	culture = baranis
+
+	748.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+
+200217 = {
+	name = "Muhammad"
+	dynasty = 1046022
+
+	religion = ashari
+	culture = baranis
+
+	730.1.1 = {
+		birth = yes
+	}
+	760.1.1 = {
+		add_spouse = 200218
+	}
+	783.1.1 = {
+		death = yes
+	}
+}
+210031 = {
+	name = "Hatim" #ibadi rebel
+	dynasty = 1048003
+	religion = ibadi
+	culture = baranis
+	720.1.1 = {
+		birth = "720.1.1"
+	}
+	772.1.1 = {
+		death = "772.1.1"
+	}
+}
+210032 = {
+	name = "Abu_Qurra" #first Ifrinid leader
+	dynasty = 1048004
+	religion = ibadi
+	culture = baranis
+	720.1.1 = {
+		birth = "720.1.1"
+	}
+	790.1.1 = {
+		death = "790.1.1"
+	}
+}
+210033 = {
+	name = "Al-Qasim" # Midrarid leader
+	dynasty = 1048005
+	religion = ibadi
+	culture = baranis
+	725.1.1 = {
+		birth = "725.1.1"
+	}
+	798.1.1 = {
+		death = "798.1.1"
+	}
+}
+210034 = {
+	name = "Azim" # fictitious ruler of Cyrenaica
+	dynasty = 1048006
+	religion = ashari
+	culture = baranis
+	730.1.1 = {
+		birth = "730.1.1"
+	}
+	788.1.1 = {
+		death = "788.1.1"
+	}
+}
+210035 = {
+	name = "Hashim" # fictitious ruler of Kabylia
+	dynasty = 1048007
+	religion = ashari
+	culture = baranis
+	735.1.1 = {
+		birth = "735.1.1"
+	}
+	793.1.1 = {
+		death = "793.1.1"
+	}
+}
+210036 = {
+	name = "Kamal" # fictitious
+	dynasty = 1048008
+	religion = ibadi
+	culture = baranis
+	728.1.1 = {
+		birth = "728.1.1"
+	}
+	795.1.1 = {
+		death = "795.1.1"
+	}
+}
+210037 = {
+	name = "Abdul-Rahman" # fictitious
+	dynasty = 1048009
+	religion = ibadi
+	culture = baranis
+	732.1.1 = {
+		birth = "732.1.1"
+	}
+	788.1.1 = {
+		death = "788.1.1"
+	}
+}
+210038 = {
+	name = "Hamad" # fictitious
+	dynasty = 1048010
+	religion = ibadi
+	culture = baranis
+	735.1.1 = {
+		birth = "735.1.1"
+	}
+	798.1.1 = {
+		death = "798.1.1"
+	}
+}
+210039 = {
+	name = "Masmud" # fictitious
+	dynasty = 1048011
+	religion = ismaili
+	culture = baranis
+	733.1.1 = {
+		birth = "733.1.1"
+	}
+	793.1.1 = {
+		death = "793.1.1"
+	}
+}
+210040 = {
+	name = "Mahtar" # fictitious
+	dynasty = 1048012
+	religion = "west_african_pagan"
+	culture = baranis
+	740.1.1 = {
+		birth = "740.1.1"
+	}
+	802.1.1 = {
+		death = "802.1.1"
+	}
+}
+188756 = {
+	name = "Ugdada" # fictitious holder of Ouadane
+	dynasty = 1042177
+	religion = "west_african_pagan"
+	culture = baranis
+	742.1.1 = {
+		birth = yes
+	}
+	795.1.1 = {
+		death = yes
+	}
+}
+
+188757 = {
+	name = "Awzal" # fictitious holder of Idjil
+	dynasty = 1042178
+	religion = "west_african_pagan"
+	culture = baranis
+	733.1.1 = {
+		birth = yes
+	}
+	795.1.1 = {
+		death = yes
+	}
+}
+
+188758 = {
+	name = "Akateiaji" # fictitious holder of Taghaza
+	dynasty = 1042179
+	religion = "west_african_pagan"
+	culture = baranis
+	718.1.1 = {
+		birth = yes
+	}
+	775.1.1 = {
+		death = yes
+	}
+}
+
+188759 = {
+	name = "Gulusa" # fictitious holder of Araouane
+	dynasty = 1042180
+	religion = "west_african_pagan"
+	culture = baranis
+	750.1.1 = {
+		birth = yes
+	}
+	795.1.1 = {
+		death = yes
+	}
+}
+
+188760 = {
+	name = "Lacumaces" # fictitious
+	dynasty = 1042179
+	religion = "west_african_pagan"
+	culture = baranis
+	father = 188758
+	748.1.1 = {
+		birth = yes
+	}
+	795.1.1 = {
+		death = yes
+	}
+}
+
+baranis0006 = {
+	name = "Sawada" # Sawada ibn Salim
+	dynasty = salimid
+	religion = "ashari"
+	culture = "baranis"
+
+	748.1.1 = {
+		birth = yes
+	}
+	798.1.1 = {
+		death = yes
+	}
+}
+200229 = {
+	name = "Yusuf"
+	dynasty = 1046027
+
+	religion = ashari
+	culture = baranis
+
+	741.1.1 = {
+		birth = yes
+	}
+	799.1.1 = {
+		death = yes
+	}
+}
+baranis_01 = {
+	name = "Umar"
+
+	religion = ashari
+	culture = baranis
+
+	732.1.1 = {
+		birth = yes
+	}
+	799.1.1 = {
+		death = yes
+	}
+}

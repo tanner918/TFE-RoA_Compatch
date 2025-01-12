@@ -1,0 +1,346 @@
+﻿
+####################################################################################
+# 
+# MAJOR DISASTER EVENTS
+# 
+# major_disasters.0010 - major_disasters.0029 	# 365 Crete Earthquake / Alexandria Tsunami, by Cybrxkhan
+# 
+# 
+####################################################################################
+
+namespace = major_disasters
+
+# Master event/ping event
+major_disasters.0010 = {
+	scope = none
+	hidden = yes
+
+	immediate = {
+
+		debug_log = "365 Crete Earthquake / Alexandria Tsunami happened"
+		debug_log_date = yes
+
+		# Alexandria, Chandax, and Chania are guaranteed to get hit badly
+		title:c_alexandria = {
+			# set_variable = {
+			# 	name = TFE_365_earthquake_tsunami_target
+			# 	value = yes
+			# }
+			add_county_modifier = {
+				modifier = TFE_365_earthquake_earthquake_damage
+				years = 10
+			}
+			change_county_control = TFE_365_earthquake_control_change_value
+			change_development_level = TFE_365_earthquake_development_change_value
+			change_county_control = TFE_365_earthquake_tsunami_control_change_value
+			change_development_level = TFE_365_earthquake_tsunami_development_change_value
+			add_county_modifier = {
+				modifier = TFE_365_earthquake_tsunami_damage_alexandria
+				years = 10
+			}
+			destroy_random_building_effect = yes
+		}
+
+		
+		title:c_chandax = {
+			# set_variable = {
+			# 	name = TFE_365_earthquake_normal_damage_target
+			# 	value = yes
+			# }
+			add_county_modifier = {
+				modifier = TFE_365_earthquake_earthquake_damage
+				years = 10
+			}
+			change_county_control = TFE_365_earthquake_control_change_value
+			change_development_level = TFE_365_earthquake_development_change_value
+			destroy_random_building_effect = yes
+		}
+		
+		title:c_chania = {
+			# set_variable = {
+			# 	name = TFE_365_earthquake_normal_damage_target
+			# 	value = yes
+			# }
+			add_county_modifier = {
+				modifier = TFE_365_earthquake_earthquake_damage
+				years = 10
+			}
+			change_county_control = TFE_365_earthquake_control_change_value
+			change_development_level = TFE_365_earthquake_development_change_value
+			destroy_random_building_effect = yes
+		}
+
+		# Mark places where a tsunami will hit
+		every_county_in_region = {
+			region = TFE_365_earthquake_impact_region_tsunami
+			limit = {
+				is_coastal_county = yes
+				NOT = { this = title:c_alexandria } # Alexandria gets a special one
+			}
+			random = {
+				chance = 33
+				# set_variable = {
+				# 	name = TFE_365_earthquake_tsunami_target
+				# 	value = yes
+				# }
+				add_county_modifier = {
+					modifier = TFE_365_earthquake_tsunami_damage
+					years = 10
+				}
+				change_county_control = TFE_365_earthquake_tsunami_control_change_value
+				change_development_level = TFE_365_earthquake_tsunami_development_change_value
+				random = {
+					chance = 50
+					destroy_random_building_effect = yes
+				}
+			}
+		}
+
+		every_county_in_region = {
+			region = TFE_365_earthquake_impact_region_greater				
+			change_county_control = TFE_365_earthquake_control_change_value
+			change_development_level = TFE_365_earthquake_development_change_value
+		}
+
+		# Mark places where the earthquake will cause damage
+		every_county_in_region = {
+			region = TFE_365_earthquake_impact_region_greater	
+			limit = {
+				# Crete is guaranteed to get hit
+				NOT = { this = title:c_chandax }
+				NOT = { this = title:c_chania }
+			}		
+			random = {
+				chance = 66
+				# set_variable = {
+				# 	name = TFE_365_earthquake_normal_damage_target
+				# 	value = yes
+				# }
+				add_county_modifier = {
+					modifier = TFE_365_earthquake_earthquake_damage
+					years = 10
+				}
+				change_county_control = TFE_365_earthquake_control_change_value
+				change_development_level = TFE_365_earthquake_development_change_value
+				random = {
+					chance = 50
+					destroy_random_building_effect = yes
+				}
+			}
+		}
+
+		every_ruler = {
+			limit = {
+				OR = {
+					any_held_title = {
+						tier = tier_county
+						any_county_province = {
+							geographical_region = TFE_365_earthquake_impact_region_tsunami	
+						}
+						OR = {
+							has_county_modifier = TFE_365_earthquake_tsunami_damage
+							has_county_modifier = TFE_365_earthquake_tsunami_damage_alexandria
+						}
+					}	
+					AND = {
+						exists = domicile
+						domicile.domicile_location = { geographical_region = TFE_365_earthquake_impact_region_tsunami }
+						domicile.domicile_location.county = {
+							OR = {
+								has_county_modifier = TFE_365_earthquake_tsunami_damage
+								has_county_modifier = TFE_365_earthquake_tsunami_damage_alexandria
+							}
+						}
+					}
+				}
+			}
+			every_courtier_or_guest = {
+				limit = {
+					is_ai = yes
+				}
+				random = {
+					chance = 20
+					death = {
+						death_reason = death_tsunami
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				random = {
+					chance = 10
+					death = {
+						death_reason = death_tsunami
+					}
+				}
+			}
+		}
+
+		every_ruler = {
+			limit = {
+				OR = {
+					any_held_title = {
+						tier = tier_county
+						any_county_province = {
+							geographical_region = TFE_365_earthquake_impact_region_greater	
+						}
+					}	
+					AND = {
+						exists = domicile
+						domicile.domicile_location = { geographical_region = TFE_365_earthquake_impact_region_greater }
+					}
+				}
+			}
+			every_courtier_or_guest = {
+				limit = {
+					is_ai = yes
+				}
+				random = {
+					chance = 20
+					death = {
+						death_reason = death_earthquake
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				random = {
+					chance = 10
+					death = {
+						death_reason = death_earthquake
+					}
+				}
+			}
+		}
+
+		# Notify rulers
+		every_ruler = {
+			limit = {
+				OR = {
+					any_held_title = {
+						tier = tier_county
+						any_county_province = {
+							geographical_region = TFE_365_earthquake_news_report_region	
+						}
+					}	
+					location ?= {
+						geographical_region = TFE_365_earthquake_impact_region_greater
+					}
+				}
+			}
+			trigger_event = major_disasters.0011
+		}
+
+	}
+
+
+}
+
+
+
+# Notification event for rulers
+major_disasters.0011 = { 
+	type = character_event
+	window = fullscreen_event
+	title = major_disasters.0011.t
+	desc = {
+		desc = major_disasters.0011.desc
+		triggered_desc = {
+			trigger = {
+				any_held_county = {
+					has_county_modifier = TFE_365_earthquake_earthquake_damage
+				}
+			}
+			desc = major_disasters.0011.desc.earthquake
+		}
+		triggered_desc = {
+			trigger = {
+				any_held_county = {
+					OR = {
+						has_county_modifier = TFE_365_earthquake_tsunami_damage
+						has_county_modifier = TFE_365_earthquake_tsunami_damage_alexandria
+					}
+				}
+			}
+			desc = major_disasters.0011.desc.tsunami
+		}
+		desc = major_disasters.0011.desc.conclusion
+	}
+	theme = death
+	override_background = { reference = TFE_struggle_bg_mediterranean_city }
+	#override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_end_animate" }
+
+	immediate = {
+
+		play_music_cue = "mood_Imperium"
+
+		custom_tooltip = major_disasters.0011.tooltip.general_damage
+
+		# Notify ruler of potential affected areas
+		if = {
+			limit = {
+				any_held_county = {
+					has_county_modifier = TFE_365_earthquake_earthquake_damage
+				}
+			}
+			custom_tooltip = major_disasters.0011.tooltip.earthquake_damage
+		}
+		if = {
+			limit = {
+				any_held_county = {
+					OR = {
+						has_county_modifier = TFE_365_earthquake_tsunami_damage
+						has_county_modifier = TFE_365_earthquake_tsunami_damage_alexandria
+					}
+				}
+			}
+			custom_tooltip = major_disasters.0011.tooltip.tsunami_damage
+		}
+		# People may have died
+		custom_tooltip = major_disasters.0011.tooltip.deaths
+	}
+
+	# Ok
+	option = {
+		name = major_disasters.0011.a
+	}
+
+	after = {
+		if = {
+			limit = {
+				location.county = {
+					has_county_modifier = TFE_365_earthquake_earthquake_damage
+				}
+			}		
+			random = {
+				chance = 10
+				death = {
+					death_reason = death_tsunami
+				}
+			}
+		}
+		if = {
+			limit = {
+				location.county = {
+					OR = {
+						has_county_modifier = TFE_365_earthquake_tsunami_damage
+						has_county_modifier = TFE_365_earthquake_tsunami_damage_alexandria
+					}
+				}
+			}	
+			random = {
+				chance = 10
+				death = {
+					death_reason = death_earthquake
+				}
+			}
+		}
+
+	}
+
+
+}

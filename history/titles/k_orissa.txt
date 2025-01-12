@@ -1,0 +1,779 @@
+﻿
+k_orissa = {
+	361.1.1 = { change_development_level = 6 }
+	476.1.1 = { change_development_level = 7 }
+	532.1.1 = { change_development_level = 8 }
+	632.1.1 = { change_development_level = 9 }
+	768.1.1 = { change_development_level = 10 }
+}
+
+
+d_tosali = {
+	361.1.1 = { change_development_level = 8 }
+	476.1.1 = { change_development_level = 9 }
+	532.1.1 = { change_development_level = 10 }
+	632.1.1 = { change_development_level = 11 }
+	768.1.1 = { change_development_level = 12 }
+	
+	736.1.1 = {
+		holder = 191169	#Ksemankaradeva
+	}
+	756.1.1 = {
+		holder = 191170	#Sivakaradeva
+	}
+}
+
+
+c_kataka = {
+	361.1.1 = {
+		holder = guptasad_70
+		government = gupta_government
+		liege = e_bengal
+	}
+	476.1.1 = {
+		holder = guptasad_71
+		government = gupta_government
+		liege = e_bengal
+	}
+	525.1.1 = {
+		holder = shailodbhava_01
+		liege = 0
+	}
+	557.8.12 = {
+		holder = shailodbhava_02
+	}
+	590.12.16 = {
+		holder = shailodbhava_03
+	}
+	620.1.11 = {
+		holder = shailodbhava_04
+	}
+	671.5.6 = {
+		holder = shailodbhava_05
+	}
+	698.12.16 = {
+		holder = shailodbhava_06
+	}
+	703.4.24 = {
+		holder = shailodbhava_07
+	}
+	727.2.7 = {
+		holder = shailodbhava_08
+	}
+	742.4.1 = {
+		holder = shailodbhava_09
+	}
+	759.4.22 = {
+		holder = shailodbhava_10
+	}
+	779.4.9 = {
+		holder = shailodbhava_11
+	}
+	736.1.1 = {
+		holder = 191169	#Ksemankaradeva
+		liege = d_tosali
+	}
+	756.1.1 = {
+		holder = 191170	#Sivakaradeva
+	}
+}
+
+
+c_viraja = {
+	361.1.1 = {
+		holder = guptasad_68
+		government = gupta_government
+		liege = e_bengal
+	}
+	476.1.1 = {
+		holder = guptasad_69
+		government = gupta_government
+		liege = e_bengal
+	}
+	530.1.1 = {
+		holder = 191090 #Jivatagupta
+		liege = k_bihar
+	}
+	532.1.1 = {
+		holder = oriya_misc_01
+	}
+	546.1.1 = {
+		holder = 191091 #Kumaragupta
+	}
+	580.1.1 = {
+		holder = 191092 #Damodaragupta
+	}
+	605.1.1 = {
+		holder = 191093 #Mahasenagupta
+	}
+	630.1.1 = {
+		holder = 191094 #Kumaragupta
+	}
+	736.1.1 = {
+		holder = 191169	#Ksemankaradeva
+		liege = d_tosali
+	}
+	756.1.1 = {
+		holder = 191170	#Sivakaradeva
+	}
+
+}
+
+
+c_khinjali_mandala = {
+	361.1.1 = {
+		holder = orissa_07
+		government = gupta_government
+		liege = e_bengal
+	}
+	476.1.1 = {
+		holder = pitrbhakta_01
+		liege = 0
+	}
+	480.1.1 = {
+		holder = pitrbhakta_02
+	}
+	513.2.3 = {
+		holder = pitrbhakta_03
+	}
+	529.6.3 = {
+		holder = pitrbhakta_04
+	}
+	740.1.1 = {
+		liege = "d_tosali"
+		holder = 191182	#Silabhanja
+	}
+	760.1.1 = {
+		holder = 191183 #Satrubhanja
+	}
+
+}
+
+
+c_kodalaka_mandala = {
+	361.1.1 = {
+		holder = guptasad_40
+		government = gupta_government
+		liege = e_bengal
+	}
+	476.1.1 = {
+		holder = guptasad_41
+		government = gupta_government
+		liege = e_bengal
+	}
+	525.1.1 = {
+		holder = shailodbhava_01
+		liege = 0
+	}
+	557.8.12 = {
+		holder = shailodbhava_02
+	}
+	590.12.16 = {
+		holder = shailodbhava_03
+	}
+	620.1.11 = {
+		holder = shailodbhava_04
+	}
+	671.5.6 = {
+		holder = shailodbhava_05
+	}
+	698.12.16 = {
+		holder = shailodbhava_06
+	}
+	703.4.24 = {
+		holder = shailodbhava_07
+	}
+	727.2.7 = {
+		holder = shailodbhava_08
+	}
+	742.4.1 = {
+		holder = shailodbhava_09
+	}
+	759.4.22 = {
+		holder = shailodbhava_10
+	}
+	779.4.9 = {
+		holder = shailodbhava_11
+	}
+	740.1.1 = {
+		holder = 191240 #Kanchanastambha Sulki
+		liege = d_tosali
+	}
+
+}
+
+
+c_khijjingakota = {
+	361.1.1 = {
+		holder = guptasad_68
+		government = gupta_government
+		liege = e_bengal
+	}
+	476.1.1 = {
+		holder = guptasad_69
+		government = gupta_government
+		liege = e_bengal
+	}
+	530.1.1 = {
+		holder = 191090 #Jivatagupta
+		liege = k_bihar
+	}
+	532.1.1 = {
+		holder = oriya_misc_01
+	}
+	546.1.1 = {
+		holder = 191091 #Kumaragupta
+	}
+	580.1.1 = {
+		holder = 191092 #Damodaragupta
+	}
+	605.1.1 = {
+		holder = 191093 #Mahasenagupta
+	}
+	630.1.1 = {
+		holder = 191094 #Kumaragupta
+	}
+	740.1.1 = {
+		liege = "d_tosali"
+		holder = 191182	#Silabhanja
+	}
+	760.1.1 = {
+		holder = 191183 #Satrubhanja
+	}
+
+}
+
+
+d_daksina_kosala = {
+	361.1.1 = { change_development_level = 1 }
+	476.1.1 = { change_development_level = 2 }
+	532.1.1 = { change_development_level = 3 }
+	632.1.1 = { change_development_level = 4 }
+	768.1.1 = { change_development_level = 5 }
+	361.1.1 = {
+		holder = orissa_01
+		government = tribal_government
+	}
+	670.1.1 = {
+		holder = 191223	#Udayana
+	}
+	720.1.1 = {
+		holder = 191224	#Judrabala
+	}
+	750.1.1 = {
+		holder = 191225	#Nannadeva
+	}
+}
+
+
+c_rayapura = {
+	361.1.1 = {
+		holder = orissa_01
+		government = tribal_government
+		liege = e_bengal
+	}
+	476.1.1 = {
+		holder = sharabhapuriya_01
+		liege = 0
+	}
+	500.1.1 = {
+		holder = sharabhapuriya_02
+	}
+	525.8.8 = {
+		holder = sharabhapuriya_03
+	}
+	550.3.25 = {
+		holder = sharabhapuriya_04
+	}
+	561.4.7 = {
+		holder = sharabhapuriya_05
+	}
+	580.2.20 = {
+		holder = sharabhapuriya_06
+	}
+	582.5.28 = {
+		holder = sharabhapuriya_07
+	}
+	760.1.1 = {
+		holder = 191295 #Nandivarman
+		liege = d_ratanpur
+	}
+}
+
+
+c_sripuri = {
+	361.1.1 = {
+		holder = orissa_01
+		government = gupta_government
+		liege = e_bengal
+	}
+	476.1.1 = {
+		holder = sharabhapuriya_01
+		liege = 0
+	}
+	500.1.1 = {
+		holder = sharabhapuriya_02
+	}
+	525.8.8 = {
+		holder = sharabhapuriya_03
+	}
+	550.3.25 = {
+		holder = sharabhapuriya_04
+	}
+	561.4.7 = {
+		holder = sharabhapuriya_05
+	}
+	580.2.20 = {
+		holder = sharabhapuriya_06
+	}
+	582.5.28 = {
+		holder = sharabhapuriya_07
+	}
+	670.1.1 = {
+		holder = 191223	#Udayana
+		liege = d_daksina_kosala
+	}
+	720.1.1 = {
+		holder = 191224	#Judrabala
+	}
+	750.1.1 = {
+		holder = 191225	#Nannadeva
+	}
+}
+
+
+c_suvarnapura = {
+	361.1.1 = {
+		holder = orissa_01
+		government = gupta_government
+		liege = e_bengal
+	}
+	476.1.1 = {
+		holder = sharabhapuriya_01
+		liege = d_daksina_kosala
+	}
+	500.1.1 = {
+		holder = sharabhapuriya_02
+	}
+	525.8.8 = {
+		holder = sharabhapuriya_03
+	}
+	532.1.1 = {
+		holder = khond_misc_01
+	}
+	550.3.25 = {
+		holder = sharabhapuriya_04
+	}
+	561.4.7 = {
+		holder = sharabhapuriya_05
+	}
+	580.2.20 = {
+		holder = sharabhapuriya_06
+	}
+	582.5.28 = {
+		holder = sharabhapuriya_07
+	}
+	670.1.1 = {
+		holder = 191223	#Udayana
+		liege = d_daksina_kosala
+	}
+	720.1.1 = {
+		holder = 191224	#Judrabala
+	}
+	750.1.1 = {
+		holder = 191225	#Nannadeva
+	}
+}
+
+
+c_sambalpur = {
+	361.1.1 = { change_development_level = 5 }
+	532.1.1 = { change_development_level = 6 }
+	768.1.1 = { change_development_level = 7 }
+	361.1.1 = {
+		holder = guptasad_40
+		government = gupta_government
+		liege = e_bengal
+	}
+	476.1.1 = {
+		holder = guptasad_41
+		government = gupta_government
+		liege = e_bengal
+	}
+	500.1.1 = {
+		holder = panduvamshi_01
+		government = tribal_government
+		liege = d_ratanpur
+	}
+	525.6.7 = {
+		holder = panduvamshi_02
+	}
+	559.4.3 = {
+		holder = panduvamshi_03
+	}
+	583.7.17 = {
+		holder = panduvamshi_04
+	}
+	599.3.10 = {
+		holder = panduvamshi_05
+	}
+	670.1.1 = {
+		holder = 191223	#Udayana
+		liege = d_daksina_kosala
+	}
+	720.1.1 = {
+		holder = 191224	#Judrabala
+	}
+	750.1.1 = {
+		holder = 191225	#Nannadeva
+	}
+}
+
+
+c_kiranapura = {
+	361.1.1 = {
+		holder = orissa_01
+		government = gupta_government
+		liege = e_bengal
+	}
+	476.1.1 = {
+		holder = sharabhapuriya_01
+		liege = 0
+	}
+	500.1.1 = {
+		holder = sharabhapuriya_02
+	}
+	525.8.8 = {
+		holder = sharabhapuriya_03
+	}
+	550.3.25 = {
+		holder = sharabhapuriya_04
+	}
+	561.4.7 = {
+		holder = sharabhapuriya_05
+	}
+	580.2.20 = {
+		holder = sharabhapuriya_06
+	}
+	582.5.28 = {
+		holder = sharabhapuriya_07
+	}
+	#Nagas of Kawardha
+	740.1.1 = {
+		holder = 191294 #Ramachandra
+		liege = d_dahala
+	}
+}
+
+
+d_kalinga = {
+	423.1.1 = {
+		holder = mathara_03
+		liege = 0
+	}
+	454.1.1 = {
+		holder = mathara_04
+	}
+	496.1.1 = {
+		holder = 191188 #Indravarma
+	}	
+	534.1.1 = {
+		holder = 191189	#Maharajendravarma
+	}
+	560.1.1 = {
+		holder = 191190 #Mahasmantavarma
+	}
+	575.1.1 = {
+		holder = 191191 #Hastivarma
+	}
+	583.1.1 = {
+		holder = 191192 #Indravarma
+	}
+	587.1.1 = {
+		holder = 191193 #Mitravarma
+	}
+	624.1.1 = {
+		holder = 191194 #Indravarma
+	}
+	633.1.1 = {
+		holder = 191196 #Indravarma
+	}
+	650.1.1 = {
+		holder = 191197 #Gunavarma
+	}
+	679.1.1 = {
+		holder = 191198 #Devendravarma
+	}
+	700.1.1 = {
+		holder = 191199 #Anantavarma
+	}
+	717.1.1 = {
+		holder = 191200 #Nandavarma
+	}
+	747.1.1 = {
+		holder = 191201 #Devendravarma
+	}
+	752.1.1 = {
+		holder = 191202 #Rajendravarma
+	}
+}
+
+
+c_kalinganagar = {
+	361.1.1 = {
+		holder = orissa_04
+		government = gupta_government
+		liege = e_bengal
+	}
+	423.1.1 = {
+		holder = mathara_03
+		liege = 0
+	}
+	454.1.1 = {
+		holder = mathara_04
+	}
+	496.1.1 = {
+		holder = 191188 #Indravarma
+		liege = d_kalinga
+	}	
+	534.1.1 = {
+		holder = 191189	#Maharajendravarma
+	}
+	560.1.1 = {
+		holder = 191190 #Mahasmantavarma
+	}
+	575.1.1 = {
+		holder = 191191 #Hastivarma
+	}
+	583.1.1 = {
+		holder = 191192 #Indravarma
+	}
+	587.1.1 = {
+		holder = 191193 #Mitravarma
+	}
+	624.1.1 = {
+		holder = 191194 #Indravarma
+	}
+	633.1.1 = {
+		holder = 191196 #Indravarma
+	}
+	650.1.1 = {
+		holder = 191197 #Gunavarma
+	}
+	679.1.1 = {
+		holder = 191198 #Devendravarma
+	}
+	700.1.1 = {
+		holder = 191199 #Anantavarma
+	}
+	717.1.1 = {
+		holder = 191200 #Nandavarma
+	}
+	747.1.1 = {
+		holder = 191201 #Devendravarma
+	}
+	752.1.1 = {
+		holder = 191202 #Rajendravarma
+	}
+}
+
+
+c_puri = {
+	361.1.1 = {
+		holder = guptasad_70
+		government = gupta_government
+		liege = e_bengal
+	}
+	476.1.1 = {
+		holder = pitrbhakta_01
+		liege = 0
+	}
+	480.1.1 = {
+		holder = pitrbhakta_02
+	}
+	513.2.3 = {
+		holder = pitrbhakta_03
+	}
+	529.6.3 = {
+		holder = pitrbhakta_04
+	}
+	660.1.1 = {
+		holder = 191304 #Sailodbhava
+		liege = d_tosali
+	}
+	700.1.1 = {
+		holder = 191305 #Ranabhita
+	}
+	750.1.1 = {
+		holder = 191306 #Sainyabhita
+	}
+}
+
+
+c_swetaka_mandala = {
+	361.1.1 = {
+		holder = mathara_01
+		government = gupta_government
+		liege = e_bengal
+	}
+	378.1.1 = {
+		holder = mathara_02
+	}
+	423.1.1 = {
+		holder = mathara_03
+		liege = 0
+	}
+	454.1.1 = {
+		holder = mathara_04
+	}
+	720.1.1 = {
+		holder = 191233  #Jayavarmadeva
+		liege = d_tosali
+	}
+	760.1.1 = {
+		holder = 191234  #Anantavarman
+	}
+	770.1.1 = {
+		holder = 191235  #Gangakavilasa
+	}
+}
+
+
+c_vizagipatam = {
+	361.1.1 = {
+		holder = orissa_05
+		government = gupta_government
+		liege = e_bengal
+	}
+	450.1.1 = {
+		holder = vasishtha_01
+		liege = 0
+	}
+	472.1.1 = {
+		holder = vasishtha_02
+	}
+	496.1.1 = {
+		holder = 191188 #Indravarma
+	}	
+	534.1.1 = {
+		holder = 191189	#Maharajendravarma
+	}
+	560.1.1 = {
+		holder = 191190 #Mahasmantavarma
+	}
+	575.1.1 = {
+		holder = 191191 #Hastivarma
+	}
+	583.1.1 = {
+		holder = 191192 #Indravarma
+	}
+	587.1.1 = {
+		holder = 191193 #Mitravarma
+	}
+	624.1.1 = {
+		holder = 191194 #Indravarma
+	}
+	633.1.1 = {
+		holder = 191196 #Indravarma
+	}
+	650.1.1 = {
+		holder = 191197 #Gunavarma
+	}
+	679.1.1 = {
+		holder = 191198 #Devendravarma
+	}
+	700.1.1 = {
+		holder = 191199 #Anantavarma
+	}
+	717.1.1 = {
+		holder = 191200 #Nandavarma
+	}
+	747.1.1 = {
+		holder = 191201 #Devendravarma
+	}
+	752.1.1 = {
+		holder = 191202 #Rajendravarma
+	}
+}
+
+
+d_dandakaranya = {
+	361.1.1 = { change_development_level = 1 }
+	476.1.1 = { change_development_level = 2 }
+	532.1.1 = { change_development_level = 3 }
+	632.1.1 = { change_development_level = 4 }
+	768.1.1 = { change_development_level = 5 }
+	500.1.1 = {
+		holder = nala_01
+		government = tribal_government
+		liege = 0
+	}
+	527.4.9 = {
+		holder = nala_02
+	}
+	559.6.17 = {
+		holder = nala_03
+	}
+	579.9.18 = {
+		holder = nala_04
+	}
+}
+
+
+c_cakrakuta = {
+	361.1.1 = {
+		holder = orissa_02
+		government = tribal_government
+	}
+	476.1.1 = {
+		holder = orissa_10
+		liege = 0
+	}
+	500.1.1 = {
+		holder = nala_01
+		government = tribal_government
+	}
+	527.4.9 = {
+		holder = nala_02
+	}
+	559.6.17 = {
+		holder = nala_03
+	}
+	579.9.18 = {
+		holder = nala_04
+	}
+	760.1.1 = {
+		holder = 191243 #Vallabharaja
+	}
+}
+
+
+c_barasuru = {
+	361.1.1 = {
+		holder = orissa_02
+		government = tribal_government
+		liege = e_bengal
+	}
+	476.1.1 = {
+		holder = orissa_10
+		liege = 0
+	}
+	500.1.1 = {
+		holder = nala_01
+		government = tribal_government
+	}
+	527.4.9 = {
+		holder = nala_02
+	}
+	559.6.17 = {
+		holder = nala_03
+	}
+	579.9.18 = {
+		holder = nala_04
+	}
+	760.1.1 = {
+		holder = 191243#Vallabharaja
+	}
+
+}
+

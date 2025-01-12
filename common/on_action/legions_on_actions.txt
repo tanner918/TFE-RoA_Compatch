@@ -1,0 +1,103 @@
+﻿on_game_start = {
+	on_actions = {
+		on_legion_counties
+	}
+}
+
+on_legion_counties = {
+	effect = {
+		every_ruler = {
+			limit = { ruler_can_use_legions = yes }
+			every_held_county = {
+				limit = {
+					NOT = {
+						THIS = PREV.capital_county
+					}
+				}
+				save_temporary_scope_as = legion_tmp
+				PREV = {
+					add_to_variable_list = {
+						name = legion_county_available
+						target = scope:legion_tmp
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_variable_list = legion_county_available
+				}
+			}
+		}
+	}
+	on_actions = {
+		delay = { months = 6 }
+		on_legion_counties
+	}
+}
+
+on_legion_raise = {
+	effect = {
+		random_character_war = {
+			save_temporary_scope_as = temp_war
+		}
+		if = {
+			# The Praetorian Guard is stronger, but unique and only for fighting
+			limit = {
+				scope:county = {
+					has_variable = prae_guard
+				}
+			}
+			spawn_army = {
+				name = prae_guard
+				# 1200 Legionaries
+				men_at_arms = {
+					type = legions
+					stacks = 12
+				}
+				# 300 Cataphracts
+				men_at_arms = {
+					type = cataphract
+					stacks = 6
+				}
+				
+				inheritable = no
+				war = scope:temp_war
+				location = scope:county.holder.capital_province
+			}
+		}
+		if = {
+			# Regular Legions are smaller but also have siege weapons, which is nice
+			limit = {
+				scope:county = {
+					NOT = {
+						has_variable = prae_guard
+					}
+				}
+			}
+			spawn_army = {
+				name = legion_army_name
+				# 800 Legionaries
+				men_at_arms = {
+					type = legions
+					stacks = 8
+				}
+				# 200 Cataphracts
+				men_at_arms = {
+					type = cataphract
+					stacks = 4
+				}
+				# Some siege weapons! 10 onagers
+				men_at_arms = {
+					type = onager
+					stacks = 1
+				}
+				
+				### Note: Can even make it depend on your innovations ig
+				
+				war = scope:temp_war
+				inheritable = no
+				location = scope:county.holder.capital_province
+			}
+		}
+	}
+}

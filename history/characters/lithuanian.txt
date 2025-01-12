@@ -1,0 +1,506 @@
+﻿# Aukstatians (no recorded history, all characters are fictional)
+lithuania_01 = {  # Ruler
+	name = "Butigeidis"
+	dynasty = dynasty_aukstaitija
+	culture = aestian
+	religion = baltic_pagan
+	father = lithuania_04
+	349.7.22 = {
+		birth = yes
+	}
+	359.7.19 = {
+		effect = {
+			create_betrothal = character:lithuania_02
+		}
+	}
+	365.7.22 = {
+		add_spouse = lithuania_02
+	}
+	392.10.12 = {
+		death = yes
+	}
+}
+
+lithuania_02 = {
+	name = "Svajone"
+	culture = aestian
+	religion = baltic_pagan
+	female = yes
+	347.6.3 = {
+		birth = yes
+	}
+	360.6.2 = {
+		effect = {
+			set_relation_crush = character:lithuania_03
+		}
+	}
+	373.2.20 = {
+		effect = {
+			add_secret = {
+				type = secret_lover
+				target = character:lithuania_03
+			}
+		}
+	}
+	375.3.31 = {
+		effect = {
+			add_secret = {
+				type = secret_disputed_heritage
+				target = character:lithuania_12
+			}
+		}
+	}
+	408.6.9 = {
+		death = yes
+	}
+}
+
+lithuania_03 = {
+	name = "Kesgaila"
+	culture = aestian
+	religion = baltic_pagan
+	356.11.8 = {
+		birth = yes
+	}
+	360.11.30 = {
+		effect = {
+			set_relation_crush = character:lithuania_02
+		}
+	}
+	373.2.20 = {
+		effect = {
+			add_secret = {
+				type = secret_lover
+				target = character:lithuania_03
+			}
+		}
+	}
+	375.3.31 = {
+		effect = {
+			add_secret = {
+				type = secret_disputed_heritage
+				target = character:lithuania_12
+			}
+		}
+	}
+	435.10.17 = {
+		death = yes
+	}
+}
+
+lithuania_04 = {  # Ruler
+	name = "Butigeidis"
+	dynasty = dynasty_aukstaitija
+	culture = aestian
+	religion = baltic_pagan
+	324.2.12 = {
+		birth = yes
+	}
+	346.4.15 = {
+		add_spouse = lithuania_06
+	}
+	367.8.18 = {
+		death = yes
+	}
+}
+
+lithuania_05 = {
+	name = "Laima"
+	dynasty = dynasty_aukstaitija
+	culture = aestian
+	religion = baltic_pagan
+	female = yes
+	father = lithuania_04
+	353.8.14 = {
+		birth = yes
+	}
+	399.6.16 = {
+		death = yes
+	}
+}
+
+lithuania_06 = {
+	name = "Giedre"
+	culture = aestian
+	religion = baltic_pagan
+	female = yes
+	316.12.3 = {
+		birth = yes
+	}
+	372.12.8 = {
+		death = yes
+	}
+}
+
+lithuania_11 = {
+	name = "Saule"
+	dynasty = dynasty_aukstaitija
+	culture = aestian
+	religion = baltic_pagan
+	female = yes
+	father = lithuania_01
+	mother = lithuania_02
+	372.10.30 = {
+		birth = yes
+	}
+	393.12.7 = {
+		add_spouse = lithuania_15
+	}
+	431.12.8 = {
+		death = yes
+	}
+}
+
+lithuania_12 = {  # Ruler
+	name = "Gediminas"
+	dynasty = dynasty_aukstaitija
+	culture = aestian
+	religion = baltic_pagan
+	father = lithuania_01
+	mother = lithuania_02
+	375.3.31 = {
+		birth = yes
+		effect = {
+			set_real_father = character:lithuania_03
+		}
+	}
+	399.10.30 = {
+		death = {
+			death_reason = death_murder
+		}
+	}
+}
+
+lithuania_13 = {  # Ruler
+	name = "Daugvilas"
+	dynasty = dynasty_aukstaitija
+	culture = aestian
+	religion = baltic_pagan
+	father = lithuania_01
+	mother = lithuania_02
+	379.8.25 = {
+		birth = yes
+	}
+	397.1.12 = {
+		add_spouse = lithuania_14
+	}
+	445.7.10 = {
+		death = yes
+	}
+}
+
+lithuania_14 = {
+	name = "Anele"
+	culture = aestian
+	religion = baltic_pagan
+	female = yes
+	377.9.27 = {
+		birth = yes
+	}
+	436.1.28 = {
+		death = yes
+	}
+}
+
+lithuania_15 = {
+	name = "Butavas"
+	culture = aestian
+	religion = baltic_pagan
+	373.6.8 = {
+		birth = yes
+	}
+	443.11.16 = {
+		death = yes
+	}
+}
+
+lithuania_21 = {  # Ruler
+	name = "Sarunas"
+	dynasty = dynasty_aukstaitija
+	culture = aestian
+	religion = baltic_pagan
+	father = lithuania_13
+	mother = lithuania_14
+	403.7.21 = {
+		birth = yes
+	}
+	426.9.1 = {
+		add_spouse = lithuania_25
+	}
+	463.10.7 = {
+		death = yes
+	}
+}
+
+lithuania_22 = {
+	name = "Aldona"
+	dynasty = dynasty_aukstaitija
+	culture = aestian
+	religion = baltic_pagan
+	female = yes
+	father = lithuania_13
+	mother = lithuania_14
+	406.3.16 = {
+		birth = yes
+	}
+	431.6.19 = {
+		death = yes
+	}
+}
+
+lithuania_23 = {
+	name = "Danute"
+	dynasty = dynasty_aukstaitija
+	culture = aestian
+	religion = baltic_pagan
+	female = yes
+	father = lithuania_13
+	mother = lithuania_14
+	414.10.18 = {
+		birth = yes
+	}
+	487.9.5 = {
+		death = yes
+	}
+}
+
+lithuania_24 = {
+	name = "Dravenis"
+	dynasty = dynasty_aukstaitija
+	culture = aestian
+	religion = baltic_pagan
+	father = lithuania_13
+	mother = lithuania_14
+	417.2.3 = {
+		birth = yes
+	}
+	486.2.12 = {
+		death = yes
+	}
+}
+
+lithuania_25 = {
+	name = "Gaudimante"
+	culture = aestian
+	religion = baltic_pagan
+	408.12.30 = {
+		birth = yes
+	}
+	439.7.20 = {
+		death = {
+			death_reason = death_childbirth
+		}
+	}
+}
+
+lithuania_31 = {
+	name = "Giedre"
+	dynasty = dynasty_aukstaitija
+	culture = aestian
+	religion = baltic_pagan
+	female = yes
+	father = lithuania_21
+	mother = lithuania_25
+	trait = intellect_good_1
+	431.5.6 = {
+		birth = yes
+	}
+	479.9.26 = {
+		death = yes
+	}
+}
+
+lithuania_32 = {
+	name = "Gaudimante"
+	dynasty = dynasty_aukstaitija
+	culture = aestian
+	religion = baltic_pagan
+	female = yes
+	father = lithuania_21
+	mother = lithuania_25
+	434.10.21 = {
+		birth = yes
+	}
+	474.7.10 = {
+		death = yes
+	}
+}
+
+lithuania_33 = {  # Ruler
+	name = "Svarnas"
+	dynasty = dynasty_aukstaitija
+	culture = aestian
+	religion = baltic_pagan
+	father = lithuania_21
+	mother = lithuania_25
+	sexuality = homosexual
+	439.7.20 = {
+		birth = yes
+	}
+	463.7.26 = {
+		effect = {
+			add_secret = {
+				type = secret_lover
+				target = character:lithuania_36
+			}
+			add_secret = { type = secret_homosexual }
+		}
+	}
+	495.10.2 = {
+		death = yes
+	}
+}
+
+lithuania_34 = {
+	name = "Laima"
+	dynasty = dynasty_aukstaitija
+	culture = aestian
+	religion = baltic_pagan
+	female = yes
+	father = lithuania_24
+	449.5.2 = {
+		birth = yes
+	}
+	480.1.19 = {
+		death = yes
+	}
+}
+
+lithuania_35 = {
+	name = "Ausra"
+	dynasty = dynasty_aukstaitija
+	culture = aestian
+	religion = baltic_pagan
+	female = yes
+	father = lithuania_24
+	453.8.31 = {
+		birth = yes
+	}
+	502.10.28 = {
+		death = yes
+	}
+}
+
+lithuania_36 = {
+	name = "Vidmantas"
+	culture = aestian
+	religion = baltic_pagan
+	sexuality = homosexual
+	trait = beauty_good_1
+	435.12.13 = {
+		birth = yes
+	}
+	463.7.26 = {
+		effect = {
+			add_secret = {
+				type = secret_lover
+				target = character:lithuania_33
+			}
+			add_secret = { type = secret_homosexual }
+		}
+	}
+	499.9.21 = {
+		death = yes
+	}
+}
+
+lithuania_37 = {
+	name = "Narimantas"
+	dynasty = dynasty_aukstaitija
+	culture = aestian
+	religion = baltic_pagan
+	mother = lithuania_35
+	481.1.1 = {
+		birth = yes
+	}
+	555.1.1 = {
+		death = yes
+	}
+}
+
+# Samogitians
+samogitia_01 = {  # Ruler
+	name = "Gedivilas"
+	dynasty = dynasty_samogitia
+	culture = aestian
+	religion = baltic_pagan
+	334.5.5 = {
+		birth = yes
+	}
+	389.1.8 = {
+		death = yes
+	}
+}
+
+samogitia_11 = {  # Ruler
+	name = "Jaunutis"
+	dynasty = dynasty_samogitia
+	culture = aestian
+	religion = baltic_pagan
+	father = samogitia_01
+	365.1.3 = {
+		birth = yes
+	}
+	427.10.25 = {
+		death = yes
+	}
+}
+
+samogitia_21 = {  # Ruler
+	name = "Karijotas"
+	dynasty = dynasty_samogitia
+	culture = aestian
+	religion = baltic_pagan
+	father = samogitia_11
+	394.7.22 = {
+		birth = yes
+	}
+	447.3.19 = {
+		death = yes
+	}
+}
+
+samogitia_31 = {  # Ruler
+	name = "Traidenis"
+	dynasty = dynasty_samogitia
+	culture = aestian
+	religion = baltic_pagan
+	father = samogitia_21
+	433.1.3 = {
+		birth = yes
+	}
+	450.1.3 = {
+		add_spouse = lithuania_23
+	}
+	472.1.19 = {
+		death = yes
+	}
+}
+
+samogitia_41 = {  # Ruler
+	name = "Lutuveras"
+	dynasty = dynasty_samogitia
+	culture = aestian
+	religion = baltic_pagan
+	father = samogitia_31
+	mother = lithuania_23
+	457.2.2 = {
+		birth = yes
+	}
+	516.6.28 = {
+		death = yes
+	}
+}
+samogitia_42 = {  # Ruler
+	name = "Lutuveras"
+	dynasty = dynasty_samogitia
+	culture = aestian
+	religion = baltic_pagan
+	father = samogitia_41
+	490.1.1 = {
+		birth = yes
+	}
+	555.1.1 = {
+		death = yes
+	}
+}

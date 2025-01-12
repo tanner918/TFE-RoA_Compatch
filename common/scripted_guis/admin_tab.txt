@@ -1,0 +1,10 @@
+﻿hide_me = {
+  is_shown = {
+    NOT = {
+      AND = {
+      is_independent_ruler = yes
+      highest_held_title_tier <= tier_duchy
+      }
+    }
+  }
+}

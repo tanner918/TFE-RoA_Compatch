@@ -1,0 +1,167 @@
+﻿
+# Cybr: Names in the code are to maintain consistency with ROA in case of future direct cross-collaboration
+doctrine_sampradaya = {
+	group = "main_group"
+	is_available_on_create = {
+		religion_tag = hinduism_religion
+	}
+	
+	sampradaya_vaishnavism_doctrine = {		# Vaishnavism
+		piety_cost = {
+			value = faith_doctrine_cost_mid
+			if = {
+				limit = { has_doctrine = sampradaya_vaishnavism_doctrine }
+				value = 0
+			}
+			else_if = {
+				limit = { has_doctrine = sampradaya_smartism_doctrine }
+				value = faith_tenet_cost_mid
+			}
+			else_if = {
+				limit = { has_doctrine = sampradaya_shaktism_doctrine }
+				value = faith_tenet_cost_mid
+			}
+			else = {
+				value = faith_tenet_cost_low
+			}
+		}
+		parameters = {
+			hostility_override_sampradaya_vaishnavism_doctrine = 0
+			hostility_override_sampradaya_smartism_doctrine = 0
+			hostility_override_sampradaya_shaktism_doctrine = 2
+		}
+		character_modifier = {
+			stress_loss_mult = 0.15
+		}
+	}
+	
+	sampradaya_shaivism_doctrine = {		# Shaivism
+		piety_cost = {
+			value = faith_doctrine_cost_mid
+			if = {
+				limit = { has_doctrine = sampradaya_shaivism_doctrine }
+				value = 0
+			}
+			else_if = {
+				limit = { has_doctrine = sampradaya_smartism_doctrine }
+				value = faith_tenet_cost_mid
+			}
+			else_if = {
+				limit = { has_doctrine = sampradaya_shaktism_doctrine }
+				value = faith_tenet_cost_mid
+			}
+			else = {
+				value = faith_tenet_cost_low
+			}
+		}
+		parameters = {
+			hostility_override_sampradaya_shaivism_doctrine = 0
+			hostility_override_sampradaya_smartism_doctrine = 0
+			hostility_override_sampradaya_shaktism_doctrine = 2
+		}
+		character_modifier = {
+			negate_health_penalty_add = 0.1
+		}
+	}
+
+	sampradaya_smartism_doctrine = {		# Smarta
+		piety_cost = {
+			value = faith_doctrine_cost_mid
+			if = {
+				limit = { has_doctrine = sampradaya_smartism_doctrine }
+				value = 0
+			}
+			else = {
+				value = faith_tenet_cost_mid
+			}
+		}
+		parameters = {
+			hostility_override_sampradaya_smartism_doctrine = 0
+			hostility_override_sampradaya_shaktism_doctrine = 2
+			tfe_hostility_override_smartist_other_brahmanic_faiths = yes
+		}
+		character_modifier = {
+			monthly_piety_from_buildings_mult = 0.15
+		}
+	}
+	
+	sampradaya_shaktism_doctrine = {		# Shakti
+		piety_cost = {
+			value = faith_doctrine_cost_mid
+			if = {
+				limit = { has_doctrine = sampradaya_shaktism_doctrine }
+				value = 0
+			}
+			else = {
+				value = faith_tenet_cost_mid
+			}
+		}
+		parameters = {
+			hostility_override_sampradaya_shaktism_doctrine = 0
+			hostility_override_sampradaya_smartism_doctrine = 0
+			tfe_hostility_override_shaktist_other_brahmanic_faiths = yes
+		}
+		character_modifier = {
+			opinion_of_female_rulers = 10
+		}
+	}
+	
+	sampradaya_saurism_doctrine = {		# Saura/Surya
+		piety_cost = {
+			value = faith_doctrine_cost_mid
+			if = {
+				limit = { has_doctrine = sampradaya_saurism_doctrine }
+				value = 0
+			}
+			else_if = {
+				limit = { has_doctrine = sampradaya_smartism_doctrine }
+				value = faith_tenet_cost_mid
+			}
+			else_if = {
+				limit = { has_doctrine = sampradaya_shaktism_doctrine }
+				value = faith_tenet_cost_mid
+			}
+			else = {
+				value = faith_tenet_cost_low
+			}
+		}
+		parameters = {
+			hostility_override_sampradaya_saurism_doctrine = 0
+			hostility_override_sampradaya_smartism_doctrine = 0
+			hostility_override_sampradaya_shaktism_doctrine = 2
+		}
+		character_modifier = {
+			monthly_prestige_from_buildings_mult = 0.15
+		}
+	}
+	
+	sampradaya_yaksha_naga_doctrine = {		# Yaksha/Naga local worship
+		piety_cost = {
+			value = faith_doctrine_cost_mid
+			if = {
+				limit = { has_doctrine = sampradaya_yaksha_naga_doctrine }
+				value = 0
+			}
+			else_if = {
+				limit = { has_doctrine = sampradaya_smartism_doctrine }
+				value = faith_tenet_cost_mid
+			}
+			else_if = {
+				limit = { has_doctrine = sampradaya_shaktism_doctrine }
+				value = faith_tenet_cost_mid
+			}
+			else = {
+				value = faith_tenet_cost_low
+			}
+		}
+		parameters = {
+			hostility_override_sampradaya_yaksha_naga_doctrine = 0
+			hostility_override_sampradaya_smartism_doctrine = 0
+			hostility_override_sampradaya_shaktism_doctrine = 2
+		}
+		character_modifier = {
+			county_opinion_add = 5
+		}
+	}
+	
+}

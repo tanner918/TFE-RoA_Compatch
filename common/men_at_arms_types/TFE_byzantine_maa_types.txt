@@ -1,0 +1,122 @@
+﻿# standard costs
+@maa_buy_cost = 150
+@maa_low_maintenance_cost = 1.0
+@maa_high_maintenance_cost = 5.0
+@cultural_maa_extra_ai_score = 60 # Equivalent to having 6 extra regiments beyond what the code scoring would indicate (see NEGATIVE_SCORE_PER_EXISTING_REGIMENT)
+
+# Must be synced between files with the values located at "# Provisions Costs #".
+@provisions_cost_infantry_cheap = 3
+@provisions_cost_infantry_moderate = 7
+@provisions_cost_infantry_expensive = 12
+@provisions_cost_infantry_bankrupting = 15
+
+@provisions_cost_cavalry_cheap = 7
+@provisions_cost_cavalry_moderate = 15
+@provisions_cost_cavalry_expensive = 21
+@provisions_cost_cavalry_bankrupting = 30
+
+@provisions_cost_special_cheap = 6
+@provisions_cost_special_moderate = 12
+@provisions_cost_special_expensive = 18
+@provisions_cost_special_bankrupting = 24
+
+tfe_maa_protostates = {
+	type = pikemen
+	
+	damage = 25
+	toughness = 30
+	pursuit = 0
+	screen = 20
+
+	counters = {
+		pikemen = 0.5
+		light_cavalry = 1
+		heavy_cavalry = 1
+	}
+
+	terrain_bonus = {
+		plains = { damage = 5 toughness = 5 }
+		hills = { toughness = 10 }
+	}
+	
+	can_recruit = {
+		valid_for_maa_trigger = { PARAMETER = unlock_tfe_maa_protostates }
+	}
+	
+	buy_cost = { gold = 100 }
+	low_maintenance_cost = { gold = 1 }
+	high_maintenance_cost = { gold = 3 }
+	provision_cost = @provisions_cost_infantry_moderate
+	
+	stack = 120
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = pikemen
+}
+
+tfe_maa_byz_archers = {
+	type = archers
+	
+	damage = 30
+	toughness = 20
+	pursuit = 0
+	screen = 15
+
+	counters = {
+		skirmishers = 1
+		archers = 0.5
+	}
+
+	terrain_bonus = {
+		plains = { damage = 5 pursuit = 5 }
+		hills = { damage = 10 }
+	}
+	
+	can_recruit = {
+		valid_for_maa_trigger = { PARAMETER = unlock_tfa_maa_byz_archers }
+	}
+	
+	buy_cost = { gold = 110 }
+	low_maintenance_cost = { gold = 1 }
+	high_maintenance_cost = { gold = 3 }
+	provision_cost = @provisions_cost_infantry_moderate
+	
+	stack = 120
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = bowmen
+}
+
+tfe_maa_hippo_toxotai = {
+	type = archer_cavalry
+	
+	damage = 35
+	toughness = 25
+	pursuit = 25
+	screen = 20
+	
+	terrain_bonus = {
+		plains = { damage = 15 pursuit = 10 }
+		jungle = { damage = -20 pursuit = -20 }
+		wetlands = { damage = -30 pursuit = -25 }
+		mountains = { damage = -30 pursuit = -25 }
+		desert_mountains = { damage = -30 pursuit = -25 }
+	}
+
+	counters = {
+		pikemen = 1
+		heavy_infantry = 1
+		archers = 0.5
+	}
+	
+	can_recruit = {
+		valid_for_maa_trigger = { PARAMETER = unlock_tfe_maa_hippo_toxotai }
+	}
+	
+	buy_cost = { gold = 175 }
+	low_maintenance_cost = { gold = 1 }
+	high_maintenance_cost = { gold = 4 }
+	provision_cost =  @provisions_cost_cavalry_bankrupting
+	
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = horse_archers
+}

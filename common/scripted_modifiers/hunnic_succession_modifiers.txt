@@ -1,0 +1,83 @@
+﻿elector_voting_pattern_circumstances_hunnic_elective_modifier = {
+	##########################	Additional patterns for Hunnic Elective	##########################
+
+	
+	modifier = {	# Gothic will challenge the ruler's pick if they can't enforce it.
+		add = -30
+		desc = tooltip_saxon_elector_vote_military_strength
+		scope:candidate = { this = scope:holder_candidate }
+		NOT = { this = scope:holder }	#But not if it's me.
+		this.max_military_strength > scope:holder.max_military_strength
+	}
+
+	modifier = {	# Gothic prefers magnates of the land, unless of the ruling house
+		add = -60
+		desc = tooltip_saxon_elector_vote_candidate_unlanded
+		#But not if it's me.
+		NOT = { this = scope:candidate }
+		scope:candidate = { 
+			is_landed = no 
+			NOT = { dynasty = scope:holder.dynasty }
+		}
+	}
+
+	modifier = {	# Gothic prefers actual magnates, not low-tier counts.
+		add = -30
+		desc = tooltip_saxon_elector_vote_candidate_count_magnate
+		#But not if it's me.
+		NOT = { this = scope:candidate }
+		scope:candidate = {
+			is_landed = yes
+			highest_held_title_tier = tier_county
+		}
+	}
+
+	modifier = {	# Gothic prefers ruling house
+		add = 40
+		desc = tooltip_gothic_elector_vote_candidate_ruling_house
+		#But not if it's me.
+		NOT = { this = scope:candidate }
+		scope:candidate = { 
+			dynasty = scope:holder.dynasty
+		}
+	}
+
+	modifier = {	# Destiny Calls
+		add = 1000
+		desc = tooltip_hun_elector_vote_candidate_hun
+		scope:candidate = { 
+			has_trait = the_hun
+		}
+	}
+
+	modifier = {	# Martial
+		add = scope:candidate.martial
+		desc = tooltip_hunnic_vote_strength_candidate_martial
+		scope:candidate = { 
+			is_adult = yes
+		}
+	}
+
+	modifier = {	# Prowess
+		add = scope:candidate.prowess
+		desc = tooltip_hunnic_vote_strength_candidate_prowess
+		scope:candidate = { 
+			is_adult = yes
+		}
+	}
+
+	modifier = {	# Brave
+		add = 10
+		scope:candidate = { 
+			has_trait = brave
+		}
+	}
+
+	modifier = {	# Craven
+		add = -20
+		scope:candidate = { 
+			has_trait = craven
+		}
+	}
+
+}

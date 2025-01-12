@@ -1,0 +1,268 @@
+﻿999000 = {
+	name = "Ingomar"
+	dynasty = 99990001
+	religion = "central_pagan"
+	culture = "thuringian"
+	340.1.1 = {
+		birth = yes
+	}
+	430.1.1 = {
+		death = yes
+	}
+}
+999001 = {
+	name = "Ballomar"
+	dynasty = 99990001
+	religion = "central_pagan"
+	culture = "thuringian"
+	father = 999000
+	395.1.1 = {
+		birth = yes
+	}
+	454.1.1 = {
+		death = yes
+	}
+}
+999002 = {
+	name = "Bassin"
+	dna = dna_bassin
+	dynasty = 99990000
+	religion = "central_pagan"
+	culture = "thuringian"
+	430.1.1 = {
+		birth = yes
+	}
+	460.1.1 = {
+		add_spouse = 993012
+	}
+	489.1.1 = {
+		death = yes
+	}
+}
+999003 = {
+	name = "Bassina"
+	female = yes
+	dynasty = 99990001
+	religion = "central_pagan"
+	culture = "thuringian"
+	father = 999001
+	435.1.1 = {
+		birth = yes
+	}
+	477.1.1 = {
+		death = yes
+	}
+}
+999004 = {
+	name = "Hermanfrid"
+	dynasty = 99990000
+	religion = "central_pagan"
+	culture = "thuringian"
+	father = 999002
+	mother = 993012
+	475.1.1 = {
+		birth = yes
+	}
+	507.1.1 = {
+		add_spouse = 992021
+	}
+	532.1.1 = {
+		death = yes
+	}
+}
+999005 = {
+	name = "Berthahar"
+	dynasty = 99990000
+	religion = "central_pagan"
+	culture = "thuringian"
+	father = 999002
+	mother = 993012
+	480.1.1 = {
+		birth = yes
+	}
+	525.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = 999004
+		}
+	}
+}
+999006 = {
+	name = "Baderic"
+	dynasty = 99990000
+	religion = "central_pagan"
+	culture = "thuringian"
+	father = 999002
+	mother = 993012
+	485.1.1 = {
+		birth = yes
+	}
+	529.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = 997009
+		}
+	}
+}
+999007 = {
+	name = "Ranicunda"
+	female = yes
+	dynasty = 99990000
+	religion = "central_pagan"
+	culture = "thuringian"
+	father = 999002
+	mother = 993012
+	486.1.1 = {
+		birth = yes
+	}
+	512.1.1 = {
+		death = yes
+	}
+}
+# Amalafrid, Theodahad's nephew who fled to him in 532 after his father the Thuringian king Hermanfrid was killed
+thurings_01 = {
+	name = "Amalafrid"
+	dynasty = 99990000
+	religion = "arianism"
+	culture = "thuringian"
+	father = 999004
+	mother = 992021
+	510.1.1 = {
+		birth = yes
+	}
+
+	577.1.1 = {
+		death = yes
+	}
+}
+190123 = {
+	name = "Rodelinda"
+	female = yes
+	dynasty = 99990000
+	religion = "arianism"
+	culture = "thuringian"
+	father = 999004
+	mother = 992021
+	512.1.1 = {
+		birth = yes
+	}
+	574.1.1 = {
+		death = yes
+	}
+}
+999010 = {
+	name = "Radegunda"
+	female = yes
+	dynasty = 99990000
+	religion = "arianism"
+	culture = "thuringian"
+	father = 999005
+	520.1.1 = {
+		birth = yes
+	}
+	545.1.1 = {
+		trait = devoted
+	}
+	587.1.1 = {
+		death = yes
+	}
+}
+999011 = {
+	name = "Ingunda"
+	female = yes
+	dynasty = 99990000
+	religion = "arianism"
+	culture = "thuringian"
+	father = 999006
+	504.1.1 = {
+		birth = yes
+	}
+	520.1.1 = {
+		religion = "chalcedonian"
+	}
+	546.1.1 = {
+		death = yes
+	}
+}
+999012 = {
+	name = "Aregunda"
+	female = yes
+	dynasty = 99990000
+	religion = "arianism"
+	culture = "thuringian"
+	father = 999006
+	515.1.1 = {
+		birth = yes
+	}
+	575.1.1 = {
+		death = yes
+	}
+}
+999013 = {
+	name = "Artachis"
+	dynasty = 99990000
+	religion = "chalcedonian"
+	culture = "thuringian"
+	father = thurings_01
+	535.1.1 = {
+		birth = yes
+	}
+	590.1.1 = {
+		death = yes
+	}
+}
+thuringian_01 = {
+	name = "Werner"
+	religion = "central_pagan"
+	culture = "thuringian"
+	443.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+thuringian_02 = {
+	name = "Rutger"
+	religion = "central_pagan"
+	culture = "thuringian"
+	432.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+thuringian_03 = {
+	name = "Rutger"
+	religion = "central_pagan"
+	culture = "thuringian"
+	502.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+thuringian_04 = {
+	name = "Wilheard"
+	religion = "central_pagan"
+	culture = "thuringian"
+	500.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+thuringian_05 = {
+	name = "Colobert"
+	religion = "central_pagan"
+	culture = "thuringian"
+	498.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}

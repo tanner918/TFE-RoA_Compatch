@@ -1,0 +1,1565 @@
+﻿namespace = migration
+
+scripted_trigger valid_migrator = {
+	is_available_ai_adult = yes
+	is_alive = yes
+	is_independent_ruler = yes
+	is_landed = yes
+	highest_held_title_tier >= tier_county
+	is_in_an_activity = no
+	culture = {
+		has_cultural_tradition = tradition_migrations
+		NOT = { has_cultural_era_or_later = culture_era_early_medieval }
+	}
+	NOT = {
+		has_character_flag = used_lifetime_migration
+	}
+	NOT = { any_character_war = { using_cb = germanic_migration_cb } }
+	NOT = {
+		realm_size >= 40
+	}
+	# Visigoths
+	trigger_if = {
+		limit = {
+			culture = {
+				OR = {
+					this = culture:gothic
+					this = culture:visigothic
+				}
+			}
+		}
+		NOT = {
+			capital_county.kingdom = title:k_aquitaine
+		}
+		NOT = {
+			capital_county.empire = title:e_spain
+		}
+		NOT = {
+			capital_county.kingdom = title:k_croatia
+		}
+		NOT = {
+			capital_county.kingdom = title:k_hungary
+		}
+		NOT = {
+			capital_county.empire = title:e_italy
+		}
+	}
+	# Ostrogoths
+	trigger_else_if = {
+		limit = {
+			culture = culture:ostrogothic
+		}
+		NOT = {
+			capital_county.kingdom = title:k_pannonia
+		}
+		NOT = {
+			capital_county.kingdom = title:k_aquitaine
+		}
+		NOT = {
+			capital_county.empire = title:e_spain
+		}
+		NOT = {
+			capital_county.kingdom = title:k_croatia
+		}
+		NOT = {
+			capital_county.kingdom = title:k_hungary
+		}
+		NOT = {
+			capital_county.empire = title:e_italy
+		}
+	}
+	# Vandals
+	trigger_else_if = {
+		limit = {
+			culture = culture:vandal
+		}
+		NOT = {
+			capital_county.empire = title:e_maghreb
+		}
+	}
+	# Lombards
+	trigger_else_if = {
+		limit = {
+			culture = culture:langobard
+		}
+		NOT = {
+			capital_county.kingdom = title:k_italia_annonariae
+		}
+		NOT = {
+			capital_county.kingdom = title:e_italy
+		}
+	}
+	# Suebi
+	trigger_else_if = {
+		limit = {
+			culture = culture:old_suebi
+		}
+		NOT = {
+			capital_county.kingdom = title:k_spanish_galicia
+		}
+		NOT = {
+			capital_county.empire = title:e_spain
+		}
+	}
+	# Anglo-Saxons
+	trigger_else_if = {
+		limit = {
+			culture = {
+				OR = {
+					this = culture:old_saxon
+					this = culture:jute
+					this = culture:angle
+				}
+			}
+		}
+		NOT = {
+			capital_county.empire = title:e_britannia
+		}
+		NOT = {
+			capital_county.kingdom = title:k_britannia
+		}
+	}
+	# Alans
+	trigger_else_if = {
+		limit = {
+			culture = culture:alan
+		}
+		NOT = {
+			capital_county.kingdom = title:k_spanish_galicia
+		}
+		NOT = {
+			capital_county.empire = title:e_spain
+		}
+	}
+	# Sclaveni
+	trigger_else_if = {
+		limit = {
+			culture = culture:sclavenian
+		}
+		NOT = {
+			capital_county.kingdom = title:k_daciae
+		}
+	}
+	# Croats
+	trigger_else_if = {
+		limit = {
+			culture = culture:belocroat
+		}
+		NOT = {
+			capital_county.kingdom = title:k_pannonia
+		}
+		NOT = {
+			capital_county.kingdom = title:k_hungary
+		}
+	}
+	# Serbs
+	trigger_else_if = {
+		limit = {
+			culture = culture:beloserb
+		}
+		NOT = {
+			capital_county.kingdom = title:k_daciae
+		}
+	}
+}
+
+scripted_trigger valid_nomadic_migrator = {
+	is_available_ai_adult = yes
+	is_alive = yes
+	is_independent_ruler = yes
+	is_landed = yes
+	is_in_an_activity = no
+	AND = {
+		culture = {
+			has_cultural_tradition = tradition_nomadic_migrations
+		}
+		government_has_flag = government_is_nomadic
+	}
+	NOT = {
+		has_character_flag = used_lifetime_migration
+	}
+	any_character_war = { using_cb = nomadic_migration_cb }
+}
+
+migration.0001 = {
+	title = migration.0001.t
+	desc = migration.0001.desc
+	scope = character
+	theme = martial
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	right_portrait = {
+		character = scope:attacker
+		animation = anger
+	}
+
+	option = {
+		name = migration.0001.option.a
+		scope:attacker = {
+			trigger_event = {
+				id = migration.0002
+				days = 1
+			}
+		}
+		custom_tooltip = migration.0001.option.a.tooltip
+	}
+	option = {
+		name = migration.0001.option.b
+		custom_tooltip = migration.0001.option.b.tooltip
+		scope:attacker = {
+			trigger_event = {
+				id = migration.0003
+				days = 1
+			}
+		}
+		pay_short_term_gold = {
+			target = scope:attacker
+			gold = 500
+		}
+	}
+	option = {
+		name = migration.0001.option.c
+		custom_tooltip = migration.0001.option.c.tooltip
+	}
+}
+
+migration.0002 = {
+	title = migration.0002.t
+	desc = migration.0002.desc
+	scope = character
+	theme = martial
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = anger
+	}
+	right_portrait = {
+		character = scope:defender
+		animation = worry
+	}
+
+	option = {
+		name = migration.0002.option.a
+		scope:war = {
+			end_war = attacker
+		}
+		create_title_and_vassal_change = {
+            type = conquest
+            save_scope_as = change
+        }
+		change_liege = {
+			liege = scope:defender
+			change = scope:change
+		}
+		resolve_title_and_vassal_change = scope:change
+		add_prestige = -150
+		custom_tooltip = migration.0002.option.a.tooltip
+	}
+	option = {
+		name = migration.0002.option.b
+		custom_tooltip = migration.0002.option.b.tooltip
+		scope:defender = {
+			trigger_event = {
+				id = migration.0004
+				days = 1
+			}
+		}
+	}
+}
+
+migration.0003 = {
+	title = migration.0003.t
+	desc = migration.0003.desc
+	scope = character
+	theme = martial
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = anger
+	}
+	right_portrait = {
+		character = scope:defender
+		animation = worry
+	}
+
+	option = {
+		name = migration.0003.option.a
+		scope:war = {
+			end_war = white_peace
+		}
+		custom_tooltip = migration.0003.option.a.tooltip
+		ai_chance = { base = 0.5 }
+	}
+	option = {
+		name = migration.0003.option.b
+		add_prestige = -500
+		custom_tooltip = migration.0003.option.b.tooltip
+		scope:defender = {
+			trigger_event = {
+				id = migration.0004
+				days = 1
+			}
+		}
+		ai_chance = { base = 10 }
+	}
+}
+
+migration.0004 = {
+	title = migration.0004.t
+	desc = migration.0004.desc
+	scope = character
+	theme = martial
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = anger
+	}
+	right_portrait = {
+		character = scope:attacker
+		animation = anger
+	}
+
+	option = {
+		name = migration.0004.option.a
+	}
+}
+
+migration.0005 = {
+	title = migration.0005.t
+	desc = migration.0005.desc
+	scope = character
+	theme = diplomacy
+	immediate = {
+		random_realm_county = {
+			limit = {
+				NOT = {
+					culture = root.culture
+				}
+			}
+			culture = {
+				save_scope_as = target_culture
+			}
+		}
+	}
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+
+	option = {
+		name = migration.0005.option.a
+		culture = {
+			change_cultural_acceptance = {
+				target = scope:target_culture
+				value = 15
+				desc = migration_acceptance
+			}
+		}
+		
+	}
+	option = {
+		name = migration.0005.option.b
+		add_prestige = 150
+	}
+}
+
+migration.0006 = {
+	title = migration.0006.t
+	desc = migration.0006.desc
+	scope = character
+	theme = diplomacy
+	immediate = {
+		random_realm_county = {
+			limit = {
+				NOT = {
+					culture = root.culture
+				}
+			}
+			culture = {
+				save_scope_as = target_culture
+			}
+		}
+	}
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+
+	option = {
+		name = migration.0006.option.a
+		culture = {
+			change_cultural_acceptance = {
+				target = scope:target_culture
+				value = 5
+				desc = migration_acceptance
+			}
+		}
+		
+	}
+	option = {
+		name = migration.0006.option.b
+		add_prestige = 75
+	}
+}
+
+migration.0007 = {
+	title = migration.0007.t
+	desc = migration.0007.desc
+	scope = character
+	theme = diplomacy
+	immediate = {
+		random_realm_county = {
+			limit = {
+				NOT = {
+					culture = root.culture
+				}
+			}
+			culture = {
+				save_scope_as = target_culture
+			}
+		}
+	}
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = anger
+	}
+
+	option = {
+		name = migration.0007.option.a
+		culture = {
+			change_cultural_acceptance = {
+				target = scope:target_culture
+				value = -5
+				desc = migration_acceptance
+			}
+		}
+		
+	}
+	option = {
+		name = migration.0007.option.b
+		add_prestige = -75
+	}
+}
+
+migration.0008 = {
+	title = migration.0008.t
+	desc = migration.0008.desc
+	scope = character
+	theme = diplomacy
+	immediate = {
+		random_realm_county = {
+			limit = {
+				NOT = {
+					culture = root.culture
+				}
+			}
+			culture = {
+				save_scope_as = target_culture
+			}
+		}
+	}
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = anger
+	}
+
+	option = {
+		name = migration.0008.option.a
+		culture = {
+			change_cultural_acceptance = {
+				target = scope:target_culture
+				value = -15
+				desc = migration_acceptance
+			}
+		}
+		
+	}
+	option = {
+		name = migration.0008.option.b
+		add_prestige = -150
+	}
+}
+
+# Random migrations
+scripted_trigger valid_adventurer_target_trigger = {
+	holder = {
+		NOR = {
+			#Filter out North Germanics & Normans.
+			culture = { has_cultural_pillar = heritage_north_germanic }
+			culture = { has_cultural_pillar = heritage_west_germanic }
+			culture = { has_cultural_pillar = heritage_east_germanic }
+			culture = { has_cultural_pillar = heritage_central_germanic }
+			has_culture = culture:norman
+			has_character_modifier = embraced_local_traditions_modifier
+			AND = {
+				exists = dynasty
+				dynasty = {
+					has_dynasty_modifier = settled_norse_dynasty_modifier
+				}
+			}
+			#Plus any places already being attacked.
+			top_liege = {
+				any_character_war = {
+					using_cb = germanic_migration_cb
+					using_cb = nomadic_migration_cb
+				}
+			}
+			#Or which have already earnt a ceasefire with this particular adventurer. Or any of their liege
+			OR = {
+				any_truce_holder = { this = scope:scandi_adventurer }
+				any_liege_or_above = { 
+					any_truce_holder = { this = scope:scandi_adventurer }
+				}
+			}
+			#And finally anywhere that has earnt a little peace.
+			OR = {
+				has_character_modifier = fp1_reprieve_from_sa_modifier
+				any_liege_or_above = { has_character_modifier = fp1_reprieve_from_sa_modifier }
+			}
+		}
+		OR = {
+			is_ai = yes
+			#Filter out players, unless they're large enough to take the hit.
+			AND = {
+				is_ai = no
+				sub_realm_size >= 10
+				highest_held_title_tier >= tier_duchy
+			}
+		}
+	}
+}
+
+scripted_trigger valid_migrator_county_trigger = {
+	#Should be simple enough, but might want to make it more complex in future.
+	culture = { has_cultural_tradition = tradition_migrations }
+}
+
+scripted_effect scandinavian_adventurer_start_war_effect = {
+	#Give the adventurer a dynamic title to tide them over.
+	create_dynamic_title = {
+		tier = duchy
+		name = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						faith = { has_doctrine = doctrine_gender_male_dominated }
+					}
+					desc = VIKING_ARMY_MEN_NAME
+				}
+				triggered_desc = {
+					trigger = {
+						faith = { has_doctrine = doctrine_gender_female_dominated }
+					}
+					desc = VIKING_ARMY_WOMEN_NAME
+				}
+				triggered_desc = {
+					trigger = {
+						faith = { has_doctrine = doctrine_gender_equal }
+					}
+					desc = VIKING_ARMY_NEUTRAL_NAME
+				}
+				#Fallback, just in case.
+				desc = VIKING_ARMY_NEUTRAL_NAME
+			}
+		}
+	}
+	create_title_and_vassal_change = {
+		type = created
+		save_scope_as = change
+		add_claim_on_loss = no
+	}
+	scope:new_title = {
+		set_capital_county = scope:adventurer_target
+		set_landless_title = yes
+		set_destroy_on_gain_same_tier = yes
+		set_no_automatic_claims = yes
+		set_can_be_named_after_dynasty = no
+		change_title_holder = {
+			holder = scope:scandi_adventurer
+			change = scope:change
+		}
+	}
+	resolve_title_and_vassal_change = scope:change
+	scope:new_title = {
+		generate_coa = yes
+		set_variable = {
+			name = temporary_title
+			value = yes
+		}
+	}
+	#Declare the war.
+	scope:scandi_adventurer = {
+		start_war = {
+			casus_belli = fp1_scandi_adventurer_conquest
+			target = scope:adventurer_target.holder.top_liege
+			target_title = scope:adventurer_target.duchy
+		}
+	}
+	# Setup event troops.
+	scope:scandi_adventurer = {
+		# Set a random spawn location.
+		## Try to pick a good spot in Scandinavia.
+		if = {
+			limit = {
+				any_county_in_region = {
+					region = world_europe_north
+					valid_scandinavian_county_for_embark_trigger = yes
+				}
+			}
+			random_county_in_region = {
+				region = world_europe_north
+				limit = { valid_scandinavian_county_for_embark_trigger = yes }
+				# Weight up according to development, so armies tend to spawn in places where more randos would congregate.
+				weight = {
+					modifier = {
+						add = {
+							value = development_level
+							multiply = 10
+						}
+					}
+				}
+				save_temporary_scope_as = selected_county
+				scope:scandi_adventurer = {
+					set_variable = {
+						name = random_location
+						value = scope:selected_county.title_province
+						days = 365
+					}
+				}
+			}
+		}
+		## Otherwise, we used our backup of Lister, the last Scandinavian province left alive, three million miles into deep space.
+		else = {
+			set_variable = {
+				name = random_location
+				value = title:b_lister.title_province
+				days = 365
+			}
+		}
+		# Work out how many event troops we should give the adventurer for a 60:40 fight.
+		spawn_army = {
+			levies = {
+				add = {
+					#Base of 400.
+					add = scope:adventurer_target.holder.top_liege.max_military_strength
+					#Multiply that by the realm size of the target's top_liege.
+					multiply = 1.5
+					#Account for allies, adding more without just nullifying them.
+					scope:adventurer_target.holder.top_liege = {
+						every_ally = { add = this.max_military_strength }
+					}
+					#Cut it off so things don't get too ridiculous.
+					max = 8000
+					#Make sure all adventurers have a moderately respectable force.
+					min = 1000
+				}
+			}
+			inheritable = no
+			location = scope:scandi_adventurer.var:random_location
+			name = scandi_adventurer_event_troops
+		}
+		spawn_army = {
+			men_at_arms = {
+				type = huscarl
+				stacks = {
+					value = 1
+					multiply = scope:adventurer_target.holder.top_liege.primary_title.tier
+				}
+			}
+			inheritable = yes
+			location = scope:scandi_adventurer.var:random_location
+			name = scandi_adventurer_event_troops
+		}
+		spawn_army = {
+			men_at_arms = {
+				type = light_footmen
+				stacks = {
+					value = 1
+					multiply = scope:adventurer_target.holder.top_liege.primary_title.tier
+				}
+			}
+			inheritable = yes
+			location = scope:scandi_adventurer.var:random_location
+			name = scandi_adventurer_event_troops
+		}
+		# Suppress startup error false-positive
+		if = {
+			limit = { has_variable = random_location }
+			# Do nothing.
+		}
+	}
+	# Loan a little gold in case they're in debt/to keep them going.
+	scope:scandi_adventurer = { add_gold = scandinavian_adventurer_efficacy_loan_value }
+}
+
+#	Pre-filter event, check to see if we should keep sending out adventurers.
+migration.0011 = {
+	scope = none
+	hidden = yes
+
+	trigger = {
+		NOT = { has_game_rule = tfe_migrations_off }
+		any_culture_global = {
+			has_cultural_tradition = tradition_migrations
+			NOT = { has_cultural_era_or_later = culture_era_early_medieval }
+		}
+		any_ruler = {
+			valid_migrator = yes
+		}
+	}
+
+	immediate = {
+		trigger_event = {
+			id = migration.0012
+			days = { 0 365 }
+		}
+		#Trigger the next wave of events.
+		if = {
+			limit = { has_game_rule = tfe_migrations_apocalyptic }
+			trigger_event = {
+				id = migration.0011
+				days = { 300 420 }
+			}
+		}
+		if = {
+			limit = { has_game_rule = tfe_migrations_very_frequent }
+			trigger_event = {
+				id = migration.0011
+				days = { 985 1170 }
+			}
+		}
+		if = {
+			limit = { has_game_rule = tfe_migrations_frequent }
+			trigger_event = {
+				id = migration.0011
+				days = { 1725 1910 }
+			}
+		}
+		if = {
+			limit = { has_game_rule = tfe_migrations_occasional }
+			trigger_event = {
+				id = migration.0011
+				days = { 3540 3725 }
+			}
+		}
+		if = {
+			limit = { has_game_rule = tfe_migrations_rare }
+			trigger_event = {
+				id = migration.0011
+				days = { 5350 5600 }
+			}
+		}
+		if = {
+			limit = { has_game_rule = tfe_migrations_very_rare }
+			trigger_event = {
+				id = migration.0011
+				days = { 9025 9210 }
+			}
+		}
+	}
+}
+
+#	General processing event
+migration.0012 = {
+	scope = none
+	hidden = yes
+
+	immediate = {
+		random_independent_ruler = {
+			save_scope_as = fake_root
+			every_ruler = {
+				limit = {
+					valid_migrator = yes
+				}
+				add_to_list = valid_migrators_list
+			}
+	
+			##Grab the most eligible candidate from the list.
+			ordered_in_list = {
+				list = valid_migrators_list
+				order_by = { value = migrator_priority_value }
+				save_scope_as = migrator
+			}
+			scope:migrator.capital_county = {
+				save_scope_as = migration_origin
+			}
+	
+			random_list = {
+				0 = {
+					modifier = {
+						add = 200
+						has_game_rule = tfe_historical_migrations_strict
+					}
+					modifier = {
+						add = 10
+						has_game_rule = tfe_historical_migrations_default
+					}
+					if = {
+						limit = {
+							scope:migrator.culture = {
+								OR = {
+									this = culture:gothic
+									this = culture:visigothic
+									this = culture:ostrogothic
+									this = culture:vandal
+									this = culture:langobard
+									this = culture:old_suebi
+									this = culture:old_saxon
+									this = culture:jute
+									this = culture:angle
+									this = culture:alan
+									this = culture:sclavenian
+									this = culture:belocroat
+									this = culture:beloserb
+								}
+							}
+						}
+						# Visigoths
+						if = {
+							limit = {
+								scope:migrator.culture = {
+									OR = {
+										this = culture:gothic
+										this = culture:visigothic
+									}
+								}
+							}
+							title:k_pannonia = {
+								add_to_list = path
+							}
+							title:k_italia_annonariae = {
+								add_to_list = path
+							}
+							title:k_aquitaine = {
+								add_to_list = path
+							}
+						}
+						# Ostrogoths
+						else_if = {
+							limit = {
+								scope:migrator.culture = culture:ostrogothic
+							}
+							title:k_pontic_steppe = {
+								add_to_list = path
+							}
+							title:k_moldavia = {
+								add_to_list = path
+							}
+							title:k_daciae = {
+								add_to_list = path
+							}
+							title:k_pannonia = {
+								add_to_list = path
+							}
+						}
+						# Vandals
+						else_if = {
+							limit = {
+								scope:migrator.culture = culture:vandal
+							}
+							title:k_pannonia = {
+								add_to_list = path
+							}
+							title:k_italia_annonariae = {
+								add_to_list = path
+							}
+							title:k_aquitaine = {
+								add_to_list = path
+							}
+							title:k_maghreb = {
+								add_to_list = path
+							}
+							title:k_africae = {
+								add_to_list = path
+							}
+						}
+						# Lombards
+						else_if = {
+							limit = {
+								scope:migrator.culture = culture:langobard
+							}
+							title:k_bohemia = {
+								add_to_list = path
+							}
+							title:k_pannonia = {
+								add_to_list = path
+							}
+							title:k_italia_annonariae = {
+								add_to_list = path
+							}
+						}
+						# Suebi
+						else_if = {
+							limit = {
+								scope:migrator.culture = culture:old_suebi
+							}
+							title:k_italia_annonariae = {
+								add_to_list = path
+							}
+							title:k_east_francia = {
+								add_to_list = path
+							}
+							title:k_gallia = {
+								add_to_list = path
+							}
+							title:k_france = {
+								add_to_list = path
+							}
+							title:k_septem_provinciae = {
+								add_to_list = path
+							}
+							title:k_aquitaine = {
+								add_to_list = path
+							}
+							title:k_hispania = {
+								add_to_list = path
+							}
+							title:k_aragon = {
+								add_to_list = path
+							}
+							title:k_navarra = {
+								add_to_list = path
+							}
+							title:k_spanish_galicia = {
+								add_to_list = path
+							}
+						}
+						# Anglo-Saxons
+						else_if = {
+							limit = {
+								scope:migrator.culture = {
+									OR = {
+										this = culture:old_saxon
+										this = culture:jute
+										this = culture:angle
+									}
+								}
+							}
+							title:k_britannia = {
+								add_to_list = path
+							}
+						}
+						# Alans
+						else_if = {
+							limit = {
+								scope:migrator.culture = culture:alan
+							}
+							title:k_daciae = {
+								add_to_list = path
+							}
+							title:k_italia_annonariae = {
+								add_to_list = path
+							}
+							title:k_aquitaine = {
+								add_to_list = path
+							}
+							title:k_aquitaine = {
+								add_to_list = path
+							}
+							title:k_spanish_galicia = {
+								add_to_list = path
+							}
+						}
+						# Sclaveni
+						else_if = {
+							limit = {
+								scope:migrator.culture = culture:sclavenian
+							}
+							title:k_galicia-volhynia = {
+								add_to_list = path
+							}
+							title:k_quadia = {
+								add_to_list = path
+							}
+							title:k_pannonia = {
+								add_to_list = path
+							}
+							title:k_daciae = {
+								add_to_list = path
+							}
+						}
+						# Croats
+						else_if = {
+							limit = {
+								scope:migrator.culture = culture:belocroat
+							}
+							title:k_galicia-volhynia = {
+								add_to_list = path
+							}
+							title:k_quadia = {
+								add_to_list = path
+							}
+							title:k_pannonia = {
+								add_to_list = path
+							}
+						}
+						# Serbs
+						else_if = {
+							limit = {
+								scope:migrator.culture = culture:beloserb
+							}
+							title:k_galicia-volhynia = {
+								add_to_list = path
+							}
+							title:k_quadia = {
+								add_to_list = path
+							}
+							title:k_daciae = {
+								add_to_list = path
+							}
+						}
+						if = {
+							limit = {
+								any_in_list = {
+									list = path
+									this = title:k_britannia
+								}
+								
+							}
+							title:k_britannia = {
+								random_in_de_jure_hierarchy = {
+									limit = {
+										tier = tier_duchy
+										is_titular = no
+										NOT = {
+											any_in_de_jure_hierarchy = {
+												AND = {
+													tier = tier_county
+													OR = {
+														culture ?= scope:migrator.culture
+														culture = culture:anglo_saxon
+														culture = culture:angle
+														culture = culture:old_saxon
+														culture = culture:jute
+													}
+												}
+											}
+										}
+										save_temporary_scope_as = migration_destination_temp
+										any_in_de_jure_hierarchy = {
+											AND = {
+												tier = tier_county
+												holder.top_liege = {
+													NOT = {
+														any_character_war = {
+															AND = {
+																using_cb = germanic_migration_cb
+																any_target_title = {
+																	this = scope:migration_destination_temp
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+									clear_saved_scope = migration_destination
+									save_scope_as = migration_destination
+								}
+							}
+						}
+						else_if = {
+							limit = {
+								any_in_list = {
+									list = path
+									any_title_to_title_neighboring_and_across_water_kingdom = {
+										this = scope:migration_origin.kingdom
+									}
+									any_in_de_jure_hierarchy = {
+										tier = tier_duchy
+										is_titular = no
+										NOT = {
+											any_in_de_jure_hierarchy = {
+												AND = {
+													tier = tier_county
+													OR = {
+														culture ?= scope:migrator.culture
+														culture = culture:anglo_saxon
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+							every_in_list = {
+								list = path
+								if = {
+									limit = {
+										any_title_to_title_neighboring_and_across_water_kingdom = {
+											this = scope:migration_origin.kingdom
+										}
+										any_in_de_jure_hierarchy = {
+											tier = tier_duchy
+											is_titular = no
+											NOT = {
+												any_in_de_jure_hierarchy = {
+													AND = {
+														tier = tier_county
+														OR = {
+															culture ?= scope:migrator.culture
+															culture = culture:anglo_saxon
+														}
+													}
+												}
+											}
+										}
+									}
+									random_in_de_jure_hierarchy = {
+										limit = {
+											tier = tier_duchy
+											is_titular = no
+											NOT = {
+												any_in_de_jure_hierarchy = {
+													AND = {
+														tier = tier_county
+														OR = {
+															culture ?= scope:migrator.culture
+															culture = culture:anglo_saxon
+														}
+													}
+												}
+											}
+											save_temporary_scope_as = migration_destination_temp
+											any_in_de_jure_hierarchy = {
+												AND = {
+													tier = tier_county
+													holder.top_liege = {
+														NOT = {
+															any_character_war = {
+																AND = {
+																	using_cb = germanic_migration_cb
+																	any_target_title = {
+																		this = scope:migration_destination_temp
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+											
+											
+										}
+										clear_saved_scope = migration_destination
+										save_scope_as = migration_destination
+									}
+								}
+							}
+						}
+						else = {
+							# Just pick randomly
+							scope:migration_origin.kingdom = {
+								random_title_to_title_neighboring_and_across_water_kingdom = {
+									limit = {
+										any_in_de_jure_hierarchy = {
+											AND = {
+												tier = tier_duchy
+												is_titular = no
+												NOT = {
+													any_in_de_jure_hierarchy = {
+														AND = {
+															tier = tier_county
+															OR = {
+																culture ?= scope:migrator.culture
+																culture = culture:anglo_saxon
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+									random_in_de_jure_hierarchy = {
+										limit = {
+											tier = tier_duchy
+											is_titular = no
+											NOT = {
+												any_in_de_jure_hierarchy = {
+													AND = {
+														tier = tier_county
+														OR = {
+															culture ?= scope:migrator.culture
+															culture = culture:anglo_saxon
+														}
+													}
+												}
+											}
+											save_temporary_scope_as = migration_destination_temp
+											any_in_de_jure_hierarchy = {
+												AND = {
+													tier = tier_county
+													holder.top_liege = {
+														NOT = {
+															any_character_war = {
+																AND = {
+																	using_cb = germanic_migration_cb
+																	any_target_title = {
+																		this = scope:migration_destination_temp
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+											
+										}
+										save_scope_as = migration_destination
+									}
+								}
+							}
+						}
+					}
+					else = {
+						# Just pick randomly
+						scope:migration_origin.kingdom = {
+							random_title_to_title_neighboring_and_across_water_kingdom = {
+								limit = {
+									any_in_de_jure_hierarchy = {
+										AND = {
+											tier = tier_duchy
+											is_titular = no
+											NOT = {
+												any_in_de_jure_hierarchy = {
+													AND = {
+														tier = tier_county
+														OR = {
+															culture ?= scope:migrator.culture
+															culture = culture:anglo_saxon
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+								random_in_de_jure_hierarchy = {
+									limit = {
+										tier = tier_duchy
+										is_titular = no
+										NOT = {
+											any_in_de_jure_hierarchy = {
+												AND = {
+													tier = tier_county
+													OR = {
+														culture ?= scope:migrator.culture
+														culture = culture:anglo_saxon
+													}
+												}
+											}
+										}
+										save_temporary_scope_as = migration_destination_temp
+										any_in_de_jure_hierarchy = {
+											AND = {
+												tier = tier_county
+												holder.top_liege = {
+													NOT = {
+														any_character_war = {
+															AND = {
+																using_cb = germanic_migration_cb
+																any_target_title = {
+																	this = scope:migration_destination_temp
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+										
+									}
+									save_scope_as = migration_destination
+								}
+							}
+						}
+					}
+				}
+				1 = {
+					# Just pick randomly
+					scope:migration_origin.kingdom = {
+						random_title_to_title_neighboring_and_across_water_kingdom = {
+							limit = {
+								any_in_de_jure_hierarchy = {
+									AND = {
+										tier = tier_duchy
+										is_titular = no
+										NOT = {
+											any_in_de_jure_hierarchy = {
+												AND = {
+													tier = tier_county
+													OR = {
+														culture ?= scope:migrator.culture
+														culture = culture:anglo_saxon
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+							random_in_de_jure_hierarchy = {
+								limit = {
+									tier = tier_duchy
+									is_titular = no
+									NOT = {
+										any_in_de_jure_hierarchy = {
+											AND = {
+												tier = tier_county
+												OR = {
+													culture ?= scope:migrator.culture
+													culture = culture:anglo_saxon
+												}
+											}
+										}
+									}
+									save_temporary_scope_as = migration_destination_temp
+									any_in_de_jure_hierarchy = {
+										AND = {
+											tier = tier_county
+											holder.top_liege = {
+												NOT = {
+													any_character_war = {
+														AND = {
+															using_cb = germanic_migration_cb
+															any_target_title = {
+																this = scope:migration_destination_temp
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+									
+								}
+								save_scope_as = migration_destination
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					exists = scope:migration_destination
+				}
+				if = {
+					limit = {
+						NOT = {
+							exists = scope:migration_destination.holder.top_liege
+						}
+					}
+					scope:migration_destination = {
+						random_in_de_jure_hierarchy = {
+							limit = {
+								tier = tier_county
+							}
+							clear_saved_scope = migration_destination
+							save_scope_as = migration_destination
+						}
+					}
+				}
+				scope:migrator = {
+					start_war = {
+						casus_belli = germanic_migration_cb
+						target = scope:migration_destination.holder.top_liege
+						target_title = scope:migration_destination.duchy
+					}
+				}
+			}
+			else = {
+				scope:migration_origin.kingdom = {
+					random_title_to_title_neighboring_and_across_water_kingdom = {
+						limit = {
+							any_in_de_jure_hierarchy = {
+								AND = {
+									tier = tier_duchy
+									is_titular = no
+									NOT = {
+										any_in_de_jure_hierarchy = {
+											AND = {
+												tier = tier_county
+												OR = {
+													culture ?= scope:migrator.culture
+													culture = culture:anglo_saxon
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						random_in_de_jure_hierarchy = {
+							limit = {
+								tier = tier_duchy
+								is_titular = no
+								NOT = {
+									any_in_de_jure_hierarchy = {
+										AND = {
+											tier = tier_county
+											OR = {
+												culture ?= scope:migrator.culture
+												culture = culture:anglo_saxon
+											}
+										}
+									}
+								}
+								
+							}
+							save_scope_as = migration_destination
+						}
+					}
+				}
+				if = {
+					limit = {
+						exists = scope:migration_destination
+					}
+					if = {
+						limit = {
+							NOT = {
+								exists = scope:migration_destination.holder.top_liege
+							}
+						}
+						scope:migration_destination = {
+							random_in_de_jure_hierarchy = {
+								limit = {
+									tier = tier_county
+								}
+								clear_saved_scope = migration_destination
+								save_scope_as = migration_destination
+							}
+						}
+					}
+					scope:migrator = {
+	
+						start_war = {
+							casus_belli = germanic_migration_cb
+							target = scope:migration_destination.holder.top_liege
+							target_title = scope:migration_destination.duchy
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# Startup event, starting the initial cycle.
+migration.0014 = {
+	scope = none
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					has_game_rule = tfe_migrations_off
+				}
+			}
+			trigger_event = {
+				id = migration.0011
+				years = 1
+			}
+		}
+	}
+}
+
+migration.0015 = {
+	title = migration.0015.t
+	desc = migration.0015.desc
+	scope = character
+	theme = martial
+	trigger = {
+		is_available = yes
+		is_in_an_activity = no
+	}
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	right_portrait = {
+		character = liege
+		animation = anger
+	}
+	option = {
+		name = migration.0015.option.a
+		scope:war = {
+			add_attacker = root
+		}
+		add_character_flag = mass_migrant_participant
+		spawn_army = {
+			name = event_troop_default_name
+			levies = 300
+			men_at_arms = {
+				type = light_footmen
+				stacks = 3
+			}
+			location = scope:attacker.capital_province
+			uses_supply = no
+			inheritable = no
+		}
+		spawn_army = {
+			name = event_troop_default_name
+			levies = 600
+			men_at_arms = {
+				type = light_horsemen
+				stacks = 4
+			}
+			location = scope:attacker.capital_province
+			uses_supply = no
+		}
+		ai_chance = { base = 5 }
+	}
+	option = {
+		name = migration.0015.option.b
+		add_prestige = -150
+		ai_chance = { base = 1 }
+	}
+}
+
+migration.0016 = {
+	hidden = yes
+	immediate = {
+		every_vassal = {
+			limit = {
+				NOT = {
+					capital_county.kingdom = root.capital_county.kingdom
+				}
+			}
+			create_title_and_vassal_change = {
+				type = independency
+				save_scope_as = change
+				add_claim_on_loss = no
+			}
+			becomes_independent = { change = scope:change }
+			resolve_title_and_vassal_change = scope:change
+		}
+	}
+}

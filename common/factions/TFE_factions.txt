@@ -1,0 +1,1369 @@
+﻿ridda_faction = {
+	casus_belli = ridda_faction_war
+	
+	short_effect_desc = ridda_faction_short_effect_desc
+
+	sort_order = 1
+
+	is_valid = {
+		NOT = { exists = global_var:ridda_war }
+	}
+
+	discontent_progress = {
+		base = 0
+
+		# We use a modifier as our base progress in order to take advantage of script values.
+		modifier = {
+			add = base_discontent_progress
+			desc = "BASE_COLON"
+		}
+
+		# The higher above the power threshold the faction is, the faster discontent increases.
+		modifier = {
+			faction_power > faction_power_threshold
+			add = faction_discontent_for_extra_power
+			desc = "FACTION_DISCONTENT_POWER_ABOVE_THRESHOLD"
+		}
+
+		# Discontent slowly decays if power is under the threshold.
+		modifier = {
+			faction_power < faction_power_threshold
+			add = {
+				add = base_discontent_progress
+				multiply = -1
+			}
+			desc = "FACTION_DISCONTENT_POWER_BELOW_THRESHOLD"
+		}
+	}
+
+	power_threshold = {
+		base = 30
+
+		modifier = {
+			add = 20
+			faction_target = {
+				has_perk = hard_rule_perk
+			}
+			desc = "FACTION_POWER_HARD_RULE"
+		}
+
+		dynamic_power_threshold_scripted_modifier = {
+			FACTION_TYPE1 = claimant_faction
+			FACTION_TYPE2 = liberty_faction
+			FACTION_TYPE3 = populist_faction
+		}
+	}
+
+	is_character_valid = {
+		NOR = { #No prince-bishop can ever join
+			has_government = theocracy_government
+			AND = {
+				exists = cp:councillor_court_chaplain
+				this = cp:councillor_court_chaplain
+			}
+		}
+
+		scope:faction.faction_target = liege
+		highest_held_title_tier > tier_barony
+
+		#Not blocked through events
+		custom_description = {
+			text = character_blocked_from_joining
+			NOT = {
+				has_character_flag = joining_faction_block
+			}
+		}
+		custom_description = {
+			text = ridda_prophet
+			subject = root
+			liege = {
+				AND = {
+					has_title = title:e_rashidun
+					NOT = {
+						has_character_flag = islam_prophet
+					}
+				}
+			}
+		}
+
+		OR = {
+			has_trait = ambitious
+			has_trait = cynical
+		}
+		NOT = {
+			has_trait = sahabi_trait
+		}
+	}
+	
+	demand = {
+		save_scope_as = faction
+
+		faction_leader = {
+			save_scope_as = faction_leader
+		}
+
+		faction_target = {
+			save_scope_as = faction_target
+		}
+
+		scope:faction = {
+			faction_start_war = {}
+		}
+	}
+
+	ai_create_score = {
+		base = -50 # Base reluctance value we must overcome to start an Independence Faction.
+
+		############
+		# BLOCKERS #
+
+		# Refuses to make if there was a recent independence faction revolt.
+		modifier = {
+			add = -1000
+			scope:target = {
+				has_character_flag = recent_independence_faction_war
+			}
+		}
+
+		# Do not join a new faction if I am already at war.
+		modifier = {
+			add = -1000
+			is_at_war = yes
+		}
+
+		# Block characters from joining if they have a high opinion of the target
+		modifier = {
+			add = -1000
+			save_temporary_opinion_value_as = { name = target_opinion target = scope:target }		
+			scope:target_opinion >= 80
+		}
+
+		modifier = {
+			add = 1500
+			OR = {
+				has_trait = ambitious
+				has_trait = cynical
+			}
+			NOT = {
+				has_trait = sahabi_trait
+			}
+		}
+
+		opinion_modifier = {
+			who = root
+			opinion_target = scope:target
+			multiplier = -0.4
+		}
+
+		# Liege is not my Rightful Liege or a consequent par of my Realm is outside of their De Jure
+		modifier = {
+			add =	{
+				value = 125
+				# Larger realms are inherently more rebellious.
+				add = {
+					value = sub_realm_size
+					multiply = 2
+				}
+			}
+			OR = {
+		 		NOT = {
+					is_rightful_liege_of_trigger = {
+						VASSAL = root
+						LIEGE = scope:target
+					}
+				}
+				any_sub_realm_county = {
+					percent <= 0.5
+					save_temporary_scope_as = current_county
+					scope:target.primary_title = {
+						any_in_de_jure_hierarchy = {
+							this = scope:current_county
+						}
+					}
+				}
+			}
+		}
+
+		# Kingdoms gain an additional boost to independence, as they don't like being under the thumb of others.
+		modifier = {
+			add = 50
+			highest_held_title_tier = tier_kingdom
+		}
+
+		# Lowers independence wishes from Counts.
+		modifier = {
+			add = -25
+			highest_held_title_tier = tier_county
+		}
+
+		# Toe the Line Perk
+		modifier = {
+			add = -50
+			scope:target = {
+				has_perk = toe_the_line_perk
+			}
+		}
+
+		# Stem Duchies innovation
+		modifier = {
+			add = -25
+			scope:target = {
+				culture = {
+					has_innovation = innovation_stem_duchies
+				}
+			}
+			culture = { has_same_culture_heritage = scope:target.culture }
+		}
+
+		# +25 join chance per sin, -25 join chance per virtue
+		legalism_virtue_and_sin_modifier = {
+			TARGET = scope:target
+			SCORE_PER_TRAIT = 25
+		}
+
+		# -100 join chance from intimidation, -1000 join chance from terrified. This modifier doesn't apply if a faction is above the power threshold
+		intimidated_from_faction_modifier = {
+			TARGET = scope:target
+			POWER =  0
+			THRESHOLD = 80
+		}
+
+		# Debt: +10 to +60 join chance depending on how far in debt the top liege is
+		liege_debt_modifier = {
+			TARGET = scope:target
+			SCORE_PER_DEBT_LEVEL = 10
+		}
+
+		# Difficulty Settings
+		modifier = { # Easy
+			add = -50
+			has_game_rule = easy_difficulty
+			scope:target = {
+				is_ai = no
+			}
+		}
+		modifier = { # Very Easy
+			add = -150
+			has_game_rule = very_easy_difficulty
+			scope:target = {
+				is_ai = no
+			}
+		}
+	}
+
+	ai_join_score = {
+		base = -50 # Base reluctance value we must overcome to join an Independence Faction.
+
+		############
+		# BLOCKERS #
+
+		# Do not join a new faction if I am already at war.
+		modifier = {
+			add = -1000
+			AND = {
+				is_at_war = yes
+				trigger_if = {
+					limit = {
+						exists = joined_faction
+					}
+					NOT = { joined_faction = scope:faction }
+				}	
+			}
+		}
+
+		modifier = {
+			add = -1000
+			save_temporary_opinion_value_as = { name = target_opinion target = scope:faction.faction_target }
+			scope:target_opinion >= 80
+		}
+
+		modifier = {
+			add = 2000
+			OR = {
+				has_trait = ambitious
+				has_trait = cynical
+			}
+			NOT = {
+				has_trait = sahabi_trait
+			}
+		}
+
+
+		#######################
+		# Standard AI Weights #
+
+		# +40 join weight at -100 opinion
+		opinion_modifier = {
+			who = root
+			opinion_target = scope:faction.faction_target
+			multiplier = -0.4
+		}
+
+		# for each character.religion != factionTarget.religion add X join-score
+		pluralism_fundamentalism_modifier = {
+			ASTRAY_BASE_VALUE = 25
+			HOSTILE_BASE_VALUE = 50
+			EVIL_BASE_VALUE = 100
+			BASE_FAITH = faith
+			TARGET = scope:faction.faction_target
+		}
+
+		# Liege is not my Rightful Liege or a consequent par of my Realm is outside of their De Jure
+		modifier = {
+			add =	{
+				value = 125
+				# Larger realms are inherently more rebellious.
+				add = {
+					value = sub_realm_size
+					multiply = 2
+				}
+			}
+			OR = {
+		 		NOT = {
+					is_rightful_liege_of_trigger = {
+						VASSAL = root
+						LIEGE = scope:faction.faction_target
+					}
+				}
+				any_sub_realm_county = {
+					percent <= 0.5
+					save_temporary_scope_as = current_county
+					scope:faction.faction_target.primary_title = {
+						any_in_de_jure_hierarchy = {
+							this = scope:current_county
+						}
+					}
+				}
+			}
+		}
+
+
+		# Kingdoms gain an additional boost to independence, as they don't like being under the thumb of others.
+		modifier = {
+			add = 50
+			highest_held_title_tier = tier_kingdom
+		}
+
+		# Lowers independence wishes from Counts.
+		modifier = {
+			add = -25
+			highest_held_title_tier = tier_county
+		}
+
+		# Toe the Line Perk
+		modifier = {
+			add = -50
+			scope:faction.faction_target = {
+				has_perk = toe_the_line_perk
+			}
+		}
+
+		# Stem Duchies innovation
+		modifier = {
+			add = -25
+			scope:faction.faction_target = {
+				culture = {
+					has_innovation = innovation_stem_duchies
+				}
+			}
+			culture = { has_same_culture_heritage = scope:faction.faction_target.culture }
+		}
+
+		# +25 join chance per sin, -25 join chance per virtue
+		legalism_virtue_and_sin_modifier = {
+			TARGET = scope:faction.faction_target
+			SCORE_PER_TRAIT = 25
+		}
+
+		# -100 join chance from intimidation, -1000 join chance from terrified. This modifier doesn't apply if a faction is above the power threshold
+		intimidated_from_faction_modifier = {
+			TARGET = scope:faction.faction_target
+			POWER =  scope:faction.faction_power
+			THRESHOLD = scope:faction.faction_power_threshold
+		}
+
+		# Debt: +10 to +60 join chance depending on how far in debt the top liege is
+		liege_debt_modifier = {
+			TARGET = scope:faction.faction_target
+			SCORE_PER_DEBT_LEVEL = 10
+		}
+
+		# Difficulty Settings
+		modifier = { # Easy
+			add = -50
+			has_game_rule = easy_difficulty
+			scope:faction.faction_target = {
+				is_ai = no
+			}
+		}
+		modifier = { # Very Easy
+			add = -150
+			has_game_rule = very_easy_difficulty
+			scope:faction.faction_target = {
+				is_ai = no
+			}
+		}
+
+		# Small multiplier for my neighbors already in the Faction
+		modifier = {
+			factor = {
+				value = 1
+		    	every_faction_member = {
+		    		if = {
+		    			limit = {
+			    			any_neighboring_realm_same_rank_owner = {
+			    				this = root
+			    			}
+						}
+		    			add = 0.25
+		    		}		
+		    	}
+	    	}
+	    }
+
+	    modifier = {
+	    	factor = 2
+			is_powerful_vassal_of = scope:faction.faction_target
+	    }
+	}
+
+	ai_demand_chance = {
+		base = 0
+
+		# 40% base chance at minimum power (80%), increasing linearly
+		compare_modifier = {
+			value = faction_power
+			multiplier = 0.5
+		}
+
+		# Once the faction has a good chance to win (10% stronger than liege) demand chance increases much more rapidly.
+		compare_modifier = {
+			trigger = {	faction_power > 110 }
+			value = faction_power
+			multiplier = 1
+		}
+
+		modifier = {
+			add = 100
+			faction_target = {
+				is_at_war = yes # Independence Factions are opportunistic bastards!
+			}
+		}
+	}
+
+	can_character_join = {
+		NOT = { is_allied_to = scope:faction.faction_target }
+		scope:faction.faction_target = {
+			NOT = { has_strong_hook = root }
+		}
+
+		OR = {
+			is_ai = no
+			NOR = {
+				has_relation_lover = scope:faction.faction_target
+				has_relation_friend = scope:faction.faction_target
+			}
+		}
+		scope:faction.faction_target.highest_held_title_tier > tier_county
+
+		custom_description = {
+			text = character_has_faction_disabling_modifier
+			character_has_faction_disabling_modifier_trigger = yes
+		}
+
+		custom_description = {
+			text = ridda_prophet
+			subject = root
+			liege = {
+				AND = {
+					has_title = title:e_rashidun
+					NOT = {
+						has_character_flag = islam_prophet
+					}
+				}
+			}
+		}
+
+		OR = {
+			has_trait = ambitious
+			has_trait = cynical
+		}
+		NOT = {
+			has_trait = sahabi_trait
+		}
+	}
+
+	can_character_create = {
+		NOR = { #No prince-bishop can ever join
+			has_government = theocracy_government
+			AND = {
+				exists = liege.cp:councillor_court_chaplain
+				this = liege.cp:councillor_court_chaplain
+			}
+		}
+		liege = {
+			is_independent_ruler = yes
+		}
+
+		NOT = { is_allied_to = scope:target }
+		NOT = { has_truce = scope:target }
+		scope:target = {
+			NOT = { has_strong_hook = root }
+		}
+
+		OR = {
+			is_ai = no
+			NOR = {
+				has_relation_lover = scope:target
+				has_relation_friend = scope:target
+			}
+		}
+		OR = {
+			is_ai = no
+			NOT = { culture = scope:target.culture }
+			NOT = { faith = scope:target.faith }
+			NOT = {
+				is_rightful_liege_of_trigger = {
+					VASSAL = root
+					LIEGE = scope:target
+				}
+			}
+		}
+		scope:target.highest_held_title_tier > tier_county
+		highest_held_title_tier > tier_barony
+
+		####
+		# BLOCKERS
+		####
+		# General Faction immunity
+		custom_description = {
+			text = character_is_immune_to_factions
+			subject = scope:target
+			NOT = { scope:target = { immune_to_factions_trigger = yes } }
+		}
+
+		custom_description = {
+			text = character_has_faction_disabling_modifier
+			character_has_faction_disabling_modifier_trigger = yes
+		}
+
+		custom_description = {
+			text = ridda_prophet
+			subject = root
+			liege = {
+				AND = {
+					has_title = title:e_rashidun
+					NOT = {
+						has_character_flag = islam_prophet
+					}
+				}
+			}
+		}
+
+		OR = {
+			has_trait = ambitious
+			has_trait = cynical
+		}
+		NOT = {
+			has_trait = sahabi_trait
+		}
+		NOT = { exists = global_var:ridda_war }
+	}
+
+	county_allow_join = no
+	county_allow_create = no
+}
+
+first_fitna_faction = {
+	casus_belli = first_fitna_faction_war
+	
+	short_effect_desc = first_fitna_faction_short_effect_desc
+
+	sort_order = 1
+
+	is_valid = {
+		NOT = { exists = global_var:first_fitna }
+	}
+
+	discontent_progress = {
+		base = 0
+
+		# We use a modifier as our base progress in order to take advantage of script values.
+		modifier = {
+			add = base_discontent_progress
+			desc = "BASE_COLON"
+		}
+
+		# The higher above the power threshold the faction is, the faster discontent increases.
+		modifier = {
+			faction_power > faction_power_threshold
+			add = faction_discontent_for_extra_power
+			desc = "FACTION_DISCONTENT_POWER_ABOVE_THRESHOLD"
+		}
+
+		# Discontent slowly decays if power is under the threshold.
+		modifier = {
+			faction_power < faction_power_threshold
+			add = {
+				add = base_discontent_progress
+				multiply = -1
+			}
+			desc = "FACTION_DISCONTENT_POWER_BELOW_THRESHOLD"
+		}
+	}
+
+	power_threshold = {
+		base = 30
+
+		modifier = {
+			add = 20
+			faction_target = {
+				has_perk = hard_rule_perk
+			}
+			desc = "FACTION_POWER_HARD_RULE"
+		}
+
+		dynamic_power_threshold_scripted_modifier = {
+			FACTION_TYPE1 = claimant_faction
+			FACTION_TYPE2 = liberty_faction
+			FACTION_TYPE3 = populist_faction
+		}
+	}
+
+	is_character_valid = {
+		NOR = { #No prince-bishop can ever join
+			has_government = theocracy_government
+			AND = {
+				exists = cp:councillor_court_chaplain
+				this = cp:councillor_court_chaplain
+			}
+		}
+
+		scope:faction.faction_target = liege
+		highest_held_title_tier > tier_barony
+
+		#Not blocked through events
+		custom_description = {
+			text = character_blocked_from_joining
+			NOT = {
+				has_character_flag = joining_faction_block
+			}
+		}
+
+		custom_description = {
+			text = fitna_ali
+			subject = root
+			liege = {
+				AND = {
+					has_title = title:e_rashidun
+					has_character_flag = ali_flag
+				}
+			}
+		}
+
+		has_religion = religion:islam_religion
+		OR = {
+			OR = {
+				learning >= 12
+				martial >= 12
+				diplomacy >= 12
+				stewardship >= 12
+			}
+			
+			has_trait = sahabi_trait
+		}
+	}
+	
+	demand = {
+		save_scope_as = faction
+
+		faction_leader = {
+			save_scope_as = faction_leader
+		}
+
+		faction_target = {
+			save_scope_as = faction_target
+		}
+
+		scope:faction = {
+			faction_start_war = {}
+		}
+	}
+
+	ai_create_score = {
+		base = -50 # Base reluctance value we must overcome to start an Independence Faction.
+
+		############
+		# BLOCKERS #
+
+		# Refuses to make if there was a recent independence faction revolt.
+		modifier = {
+			add = -1000
+			scope:target = {
+				has_character_flag = recent_independence_faction_war
+			}
+		}
+
+		# Do not join a new faction if I am already at war.
+		modifier = {
+			add = -1000
+			is_at_war = yes
+		}
+
+		modifier = {
+			add = 1000
+			OR = {
+				OR = {
+					learning >= 12
+					martial >= 12
+					diplomacy >= 12
+					stewardship >= 12
+				}
+				
+				has_trait = sahabi_trait
+			}
+		}
+
+		# Block characters from joining if they have a high opinion of the target
+		modifier = {
+			add = -1000
+			save_temporary_opinion_value_as = { name = target_opinion target = scope:target }		
+			scope:target_opinion >= 80
+		}
+
+		opinion_modifier = {
+			who = root
+			opinion_target = scope:target
+			multiplier = -0.4
+		}
+
+		# Liege is not my Rightful Liege or a consequent par of my Realm is outside of their De Jure
+		modifier = {
+			add =	{
+				value = 125
+				# Larger realms are inherently more rebellious.
+				add = {
+					value = sub_realm_size
+					multiply = 2
+				}
+			}
+			OR = {
+		 		NOT = {
+					is_rightful_liege_of_trigger = {
+						VASSAL = root
+						LIEGE = scope:target
+					}
+				}
+				any_sub_realm_county = {
+					percent <= 0.5
+					save_temporary_scope_as = current_county
+					scope:target.primary_title = {
+						any_in_de_jure_hierarchy = {
+							this = scope:current_county
+						}
+					}
+				}
+			}
+		}
+
+		# Kingdoms gain an additional boost to independence, as they don't like being under the thumb of others.
+		modifier = {
+			add = 50
+			highest_held_title_tier = tier_kingdom
+		}
+
+		# Lowers independence wishes from Counts.
+		modifier = {
+			add = -25
+			highest_held_title_tier = tier_county
+		}
+
+		# Toe the Line Perk
+		modifier = {
+			add = -50
+			scope:target = {
+				has_perk = toe_the_line_perk
+			}
+		}
+
+		# Stem Duchies innovation
+		modifier = {
+			add = -25
+			scope:target = {
+				culture = {
+					has_innovation = innovation_stem_duchies
+				}
+			}
+			culture = { has_same_culture_heritage = scope:target.culture }
+		}
+
+		# +25 join chance per sin, -25 join chance per virtue
+		legalism_virtue_and_sin_modifier = {
+			TARGET = scope:target
+			SCORE_PER_TRAIT = 25
+		}
+
+		# -100 join chance from intimidation, -1000 join chance from terrified. This modifier doesn't apply if a faction is above the power threshold
+		intimidated_from_faction_modifier = {
+			TARGET = scope:target
+			POWER =  0
+			THRESHOLD = 80
+		}
+
+		# Debt: +10 to +60 join chance depending on how far in debt the top liege is
+		liege_debt_modifier = {
+			TARGET = scope:target
+			SCORE_PER_DEBT_LEVEL = 10
+		}
+
+		# Difficulty Settings
+		modifier = { # Easy
+			add = -50
+			has_game_rule = easy_difficulty
+			scope:target = {
+				is_ai = no
+			}
+		}
+		modifier = { # Very Easy
+			add = -150
+			has_game_rule = very_easy_difficulty
+			scope:target = {
+				is_ai = no
+			}
+		}
+	}
+
+	ai_join_score = {
+		base = -50 # Base reluctance value we must overcome to join an Independence Faction.
+
+		############
+		# BLOCKERS #
+
+		# Do not join a new faction if I am already at war.
+		modifier = {
+			add = -1000
+			AND = {
+				is_at_war = yes
+				trigger_if = {
+					limit = {
+						exists = joined_faction
+					}
+					NOT = { joined_faction = scope:faction }
+				}	
+			}
+		}
+
+		modifier = {
+			add = -1000
+			save_temporary_opinion_value_as = { name = target_opinion target = scope:faction.faction_target }
+			scope:target_opinion >= 80
+		}
+
+		modifier = {
+			add = 1500
+			OR = {
+				OR = {
+					learning >= 12
+					martial >= 12
+					diplomacy >= 12
+					stewardship >= 12
+				}
+				
+				has_trait = sahabi_trait
+			}
+		}
+
+
+		#######################
+		# Standard AI Weights #
+
+		# +40 join weight at -100 opinion
+		opinion_modifier = {
+			who = root
+			opinion_target = scope:faction.faction_target
+			multiplier = -0.4
+		}
+
+		# for each character.religion != factionTarget.religion add X join-score
+		pluralism_fundamentalism_modifier = {
+			ASTRAY_BASE_VALUE = 25
+			HOSTILE_BASE_VALUE = 50
+			EVIL_BASE_VALUE = 100
+			BASE_FAITH = faith
+			TARGET = scope:faction.faction_target
+		}
+
+		# Liege is not my Rightful Liege or a consequent par of my Realm is outside of their De Jure
+		modifier = {
+			add =	{
+				value = 125
+				# Larger realms are inherently more rebellious.
+				add = {
+					value = sub_realm_size
+					multiply = 2
+				}
+			}
+			OR = {
+		 		NOT = {
+					is_rightful_liege_of_trigger = {
+						VASSAL = root
+						LIEGE = scope:faction.faction_target
+					}
+				}
+				any_sub_realm_county = {
+					percent <= 0.5
+					save_temporary_scope_as = current_county
+					scope:faction.faction_target.primary_title = {
+						any_in_de_jure_hierarchy = {
+							this = scope:current_county
+						}
+					}
+				}
+			}
+		}
+
+
+		# Kingdoms gain an additional boost to independence, as they don't like being under the thumb of others.
+		modifier = {
+			add = 50
+			highest_held_title_tier = tier_kingdom
+		}
+
+		# Lowers independence wishes from Counts.
+		modifier = {
+			add = -25
+			highest_held_title_tier = tier_county
+		}
+
+		# Toe the Line Perk
+		modifier = {
+			add = -50
+			scope:faction.faction_target = {
+				has_perk = toe_the_line_perk
+			}
+		}
+
+		# Stem Duchies innovation
+		modifier = {
+			add = -25
+			scope:faction.faction_target = {
+				culture = {
+					has_innovation = innovation_stem_duchies
+				}
+			}
+			culture = { has_same_culture_heritage = scope:faction.faction_target.culture }
+		}
+
+		# +25 join chance per sin, -25 join chance per virtue
+		legalism_virtue_and_sin_modifier = {
+			TARGET = scope:faction.faction_target
+			SCORE_PER_TRAIT = 25
+		}
+
+		# -100 join chance from intimidation, -1000 join chance from terrified. This modifier doesn't apply if a faction is above the power threshold
+		intimidated_from_faction_modifier = {
+			TARGET = scope:faction.faction_target
+			POWER =  scope:faction.faction_power
+			THRESHOLD = scope:faction.faction_power_threshold
+		}
+
+		# Debt: +10 to +60 join chance depending on how far in debt the top liege is
+		liege_debt_modifier = {
+			TARGET = scope:faction.faction_target
+			SCORE_PER_DEBT_LEVEL = 10
+		}
+
+		# Difficulty Settings
+		modifier = { # Easy
+			add = -50
+			has_game_rule = easy_difficulty
+			scope:faction.faction_target = {
+				is_ai = no
+			}
+		}
+		modifier = { # Very Easy
+			add = -150
+			has_game_rule = very_easy_difficulty
+			scope:faction.faction_target = {
+				is_ai = no
+			}
+		}
+
+		# Small multiplier for my neighbors already in the Faction
+		modifier = {
+			factor = {
+				value = 1
+		    	every_faction_member = {
+		    		if = {
+		    			limit = {
+			    			any_neighboring_realm_same_rank_owner = {
+			    				this = root
+			    			}
+						}
+		    			add = 0.25
+		    		}		
+		    	}
+	    	}
+	    }
+
+	    modifier = {
+	    	factor = 2
+			is_powerful_vassal_of = scope:faction.faction_target
+	    }
+	}
+
+	ai_demand_chance = {
+		base = 0
+
+		# 40% base chance at minimum power (80%), increasing linearly
+		compare_modifier = {
+			value = faction_power
+			multiplier = 0.5
+		}
+
+		# Once the faction has a good chance to win (10% stronger than liege) demand chance increases much more rapidly.
+		compare_modifier = {
+			trigger = {	faction_power > 110 }
+			value = faction_power
+			multiplier = 1
+		}
+
+		modifier = {
+			add = 100
+			faction_target = {
+				is_at_war = yes # Independence Factions are opportunistic bastards!
+			}
+		}
+	}
+
+	can_character_join = {
+		NOT = { is_allied_to = scope:faction.faction_target }
+		scope:faction.faction_target = {
+			NOT = { has_strong_hook = root }
+		}
+
+		OR = {
+			is_ai = no
+			NOR = {
+				has_relation_lover = scope:faction.faction_target
+				has_relation_friend = scope:faction.faction_target
+			}
+		}
+		scope:faction.faction_target.highest_held_title_tier > tier_county
+
+		custom_description = {
+			text = character_has_faction_disabling_modifier
+			character_has_faction_disabling_modifier_trigger = yes
+		}
+
+		custom_description = {
+			text = fitna_ali
+			subject = root
+			liege = {
+				AND = {
+					has_title = title:e_rashidun
+					has_character_flag = ali_flag
+				}
+			}
+		}
+
+		has_religion = religion:islam_religion
+		OR = {
+			OR = {
+				learning >= 12
+				martial >= 12
+				diplomacy >= 12
+				stewardship >= 12
+			}
+			
+			has_trait = sahabi_trait
+		}
+	}
+
+	can_character_create = {
+		NOR = { #No prince-bishop can ever join
+			has_government = theocracy_government
+			AND = {
+				exists = liege.cp:councillor_court_chaplain
+				this = liege.cp:councillor_court_chaplain
+			}
+		}
+		liege = {
+			is_independent_ruler = yes
+		}
+
+		NOT = { is_allied_to = scope:target }
+		NOT = { has_truce = scope:target }
+		scope:target = {
+			NOT = { has_strong_hook = root }
+		}
+
+		OR = {
+			is_ai = no
+			NOR = {
+				has_relation_lover = scope:target
+				has_relation_friend = scope:target
+			}
+		}
+		OR = {
+			is_ai = no
+			NOT = { culture = scope:target.culture }
+			NOT = { faith = scope:target.faith }
+			NOT = {
+				is_rightful_liege_of_trigger = {
+					VASSAL = root
+					LIEGE = scope:target
+				}
+			}
+		}
+		scope:target.highest_held_title_tier > tier_county
+		highest_held_title_tier > tier_barony
+
+		####
+		# BLOCKERS
+		####
+		# General Faction immunity
+		custom_description = {
+			text = character_is_immune_to_factions
+			subject = scope:target
+			NOT = { scope:target = { immune_to_factions_trigger = yes } }
+		}
+
+		custom_description = {
+			text = character_has_faction_disabling_modifier
+			character_has_faction_disabling_modifier_trigger = yes
+		}
+
+		custom_description = {
+			text = fitna_ali
+			subject = root
+			liege = {
+				AND = {
+					has_title = title:e_rashidun
+					has_character_flag = ali_flag
+				}
+			}
+		}
+
+		has_religion = religion:islam_religion
+		OR = {
+			OR = {
+				martial >= 12
+				diplomacy >= 12
+				stewardship >= 12
+				learning >= 12
+			}
+			
+			has_trait = sahabi_trait
+		}
+		NOT = { exists = global_var:first_fitna }
+	}
+
+	county_allow_join = no
+	county_allow_create = no
+}
+
+nation_fracturing_faction = {
+	casus_belli = nation_fracturing_faction_war
+	
+	short_effect_desc = nation_fracturing_faction_short_effect_desc
+
+	sort_order = 0
+
+	discontent_progress = {
+		base = 0
+
+		common_discontent_progress_modifier = yes
+	}
+
+	power_threshold = {
+		base = 80
+
+		modifier = {
+			add = 20
+			faction_target = {
+				has_perk = hard_rule_perk
+			}
+			desc = "FACTION_POWER_HARD_RULE"
+		}
+
+		dynamic_power_threshold_scripted_modifier = {
+			FACTION_TYPE1 = claimant_faction
+			FACTION_TYPE2 = liberty_faction
+			FACTION_TYPE3 = populist_faction
+		}
+	}
+
+	is_character_valid = {
+		common_character_validity_trigger = {
+			FACTION_TARGET = scope:faction.faction_target
+		}
+	}
+	
+	demand = {
+		save_scope_as = faction
+
+		faction_leader = {
+			save_scope_as = faction_leader
+		}
+
+		faction_target = {
+			save_scope_as = faction_target
+		}
+
+		# Let the human players in the faction know that the demand will be sent
+		every_faction_member = {
+			limit = {
+				is_ai = no
+				NOT = { this = scope:faction.faction_leader }
+			}
+			trigger_event = faction_demand.1005
+		}
+
+		# Send the actual demand in 5 days
+		faction_target = {
+			trigger_event = {
+				id = faction_demand.1000
+				days = 5
+			}
+		}
+	}
+
+	can_character_create = {
+		common_character_validity_trigger = {
+			FACTION_TARGET = scope:target
+		}
+
+		common_can_character_create_trigger = {
+			FACTION_TARGET = scope:target
+		}
+		
+		liege = {
+			is_independent_ruler = yes
+			NOR = {
+				has_government = theocracy_government
+				OR = {
+				government_has_flag = government_is_imperial
+				government_has_flag = government_is_administrative
+				}
+			}
+		}
+		
+		# Only powerfull vassals can create such factions and they need to have either another culture or faith
+		OR = {
+			is_powerful_vassal = yes
+			is_ai = no
+		}
+	}
+
+	ai_create_score = {
+		base = -200 # Base reluctance value we must overcome to start an Independence Faction.
+
+		############
+		# BLOCKERS #
+		common_create_faction_blockers = {
+			FACTION_TARGET = scope:target
+			FLAG = recent_nation_fracturing_faction_war
+		}
+
+		nation_fracturing_faction_blockers = {
+			FACTION_TARGET = scope:target
+		}
+
+		#######################
+		# Standard AI Weights #
+
+		common_faction_modifiers = {
+			FACTION_TARGET = scope:target
+			OPINION_MULTIPLIER = -0.5
+			MAX_OPINION = 200
+			POWER = 0
+			THRESHOLD = 80
+		}
+
+		nation_fracturing_faction_modifiers = {
+			FACTION_TARGET = scope:target
+		}
+	}
+
+	can_character_join = {
+		common_can_character_join_trigger = {
+			FACTION_TARGET = scope:faction.faction_target
+		}
+	}
+
+	ai_join_score = {
+		base = -150 # Base reluctance value we must overcome to join an Independence Faction.
+
+		############
+		# BLOCKERS #
+
+		common_join_faction_blockers = {
+			FACTION_TARGET = scope:faction.faction_target
+		}
+
+		nation_fracturing_faction_blockers = {
+			FACTION_TARGET = scope:faction.faction_target
+		}
+
+		#######################
+		# Standard AI Weights #
+
+		common_faction_modifiers = {
+			FACTION_TARGET = scope:faction.faction_target
+			OPINION_MULTIPLIER = -0.5
+			MAX_OPINION = 100
+			POWER = scope:faction.faction_power
+			THRESHOLD = scope:faction.faction_power_threshold
+		}
+
+		nation_fracturing_faction_modifiers = {
+			FACTION_TARGET = scope:faction.faction_target
+		}
+	}
+
+	ai_demand_chance = {
+		base = 0
+
+		# 40% base chance at minimum power (80%), increasing linearly
+		compare_modifier = {
+			value = faction_power
+			multiplier = 0.5
+		}
+
+		# Once the faction has a good chance to win (10% stronger than liege) demand chance increases much more rapidly.
+		compare_modifier = {
+			trigger = {	faction_power > 110 }
+			value = faction_power
+			multiplier = 1
+		}
+
+		modifier = {
+			add = 100
+			faction_target = {
+				is_at_war = yes # Independence Factions are opportunistic bastards!
+			}
+		}
+	}
+
+
+	county_join_score =  {
+		base = 0
+		compare_modifier = {
+			value = county_opinion
+			multiplier = -1.0
+		}
+
+	}
+
+	is_county_valid = {
+		holder = scope:faction.faction_target
+		OR = {
+			NOT = { culture = scope:faction.faction_target.culture } 
+			NOT = { faith = scope:faction.faction_target.faith } 
+		}
+	}
+
+	county_allow_join = yes
+	county_allow_create = no
+}

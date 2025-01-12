@@ -1,0 +1,93 @@
+﻿
+##################################################
+# 
+# EARLY KALACHURIS OF MAHISHMATA
+# (not to be confused with the later Kalachuris of Tripuri who they may be connected to (???))
+# 
+# By Cybrxkhan
+# Please forgive me Soraya for any issues, I did this best I can with limited time/knowledge T_T
+# 
+##################################################
+
+# d_nasikya, c_devagiri, c_mulaka, c_vatsagulma, c_mahur
+
+early_kalachuri_01 = {
+	name = "Krishnaraja"
+	dynasty = dynasty_early_kalachuri
+	religion = "shaivism"
+	culture = "abhira"
+
+	511.1.11 = {
+		birth = yes
+	}
+	575.5.7 = {
+		death = yes
+	}
+}
+
+early_kalachuri_02 = {
+	name = "Shankaragana"
+	dynasty = dynasty_early_kalachuri
+	religion = "shaivism"
+	culture = "abhira"
+	father=early_kalachuri_02
+	539.6.17 = {
+		birth = yes
+	}
+	600.9.22 = {
+		death = yes
+	}
+}
+
+early_kalachuri_03 = {
+	name = "Buddharaja"
+	dynasty = dynasty_early_kalachuri
+	religion = "shaivism"
+	culture = "abhira"
+	father=early_kalachuri_03
+	568.4.12 = {
+		birth = yes
+	}
+	625.5.29 = {
+		death = yes
+	}
+}
+
+
+
+#############################################################
+# 
+# MISC PLACEHOLDERS
+# 
+# Done by Cybrxkhan 
+# 
+#############################################################
+
+abhira_misc_001 = {
+	name = "Jagadeva"
+	religion = "pudgalavada"
+	culture = "abhira"
+	504.9.2 = {
+		birth = yes
+	}
+	547.3.9 = {
+		death = yes
+	}
+}
+
+abhira_misc_002 = {
+	name = "Hari"
+	religion = "svetambara"
+	culture = "abhira"
+	511.10.3 = {
+		birth = yes
+	}
+	593.4.22 = {
+		death = yes
+	}
+}
+
+
+
+
+

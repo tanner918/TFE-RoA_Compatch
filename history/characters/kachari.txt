@@ -1,0 +1,59 @@
+﻿
+
+##################################################
+# 
+# JAINTIA KINGDOM
+# Should be Khasi culture I guess but Kachari is supposed to represent all of this
+# 
+# By Cybrxkhan
+# Please forgive me Soraya for any issues, I did this best I can with limited time/knowledge T_T
+# 
+##################################################
+
+
+
+jaintia_01 = {
+	name = "Urmi_Rani"
+	female=yes
+	dynasty = dynasty_jaintia
+	religion = "donyipoloism"
+	culture = "kachari"
+	505.5.5 = {
+		birth = yes
+	}
+	525.1.1 = {
+		add_matrilineal_spouse = jaintia_02
+	}
+	550.5.5 = {
+		death = yes
+	}
+}
+
+jaintia_02 = {
+	name = "Sindhu_Rai"
+	religion = "donyipoloism"
+	culture = "kachari"
+	500.1.1 = {
+		birth = yes
+	}
+	545.4.5 = {
+		death = yes
+	}
+}
+
+jaintia_03 = {
+	name = "Ka_Urvara"
+	female=yes
+	dynasty = dynasty_jaintia
+	religion = "donyipoloism"
+	culture = "kachari"
+	father=jaintia_02
+	mother=jaintia_01
+	528.5.28 = {
+		birth = yes
+	}
+	579.3.1 = {
+		death = yes
+	}
+}
+

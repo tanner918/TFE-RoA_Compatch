@@ -1,0 +1,24 @@
+﻿#On actions relating to relationships between characters
+
+######################
+# Friendship on actions
+######################
+
+# Gaining Friend relations
+on_set_relation_friend = {
+	on_actions = { TFE_on_set_relation_friend }
+}
+
+TFE_on_set_relation_friend = {
+	effect = {
+		if = {
+			limit = {
+				has_character_flag = islam_prophet
+				scope:target = { faith.religion = religion:islam_religion }
+			}
+			scope:target = {
+				add_trait = sahabi_trait
+			}
+		}
+	}
+}

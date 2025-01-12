@@ -1,0 +1,150 @@
+﻿l_english:
+ #Lazy loc, will change
+ senate.0001.t:0 "Senate Task Completed"
+ senate.0001.desc:0 "With the people of [GetGlobalVariable('italy_senate_convert_culture_county').Title.GetName] embracing [GetGlobalVariable('italy_senate_convert_culture_county').Title.GetHolder.GetTopLiege.GetCulture.GetName] as their culture, we have gained the favour of the Senate in the short term. Thus, they will support our endeavors as much as possible."
+ senate.0001.a:0 "It was a worthy investment"
+
+ senate.0002.t:0 "Senate Task Completed"
+ senate.0002.desc:0 "With the conversion of the [GetGlobalVariable('italy_senate_convert_culture_county').Title.GetName] to [GetGlobalVariable('italy_senate_convert_faith_county').Title.GetHolder.GetTopLiege.GetFaith.GetName], we have gained the favour of the Senate in the short term. Thus, they will support our endeavors as much as possible."
+ senate.0002.a:0 "It was a worthy investment"
+
+ senate.0003.t:0 "Senate Task Completed"
+ senate.0003.desc:0 "With the defeat of [GetGlobalVariable('italy_senate_conquer').GetCharacter.GetName] in our recent conflict, we have gained the favour of the Senate in the short term. Thus, they will support our endeavors as much as possible."
+ senate.0003.a:0 "It was a worthy investment"
+
+ senate.0004.t:0 "Senate Task Completed"
+ senate.0004.desc:0 "With the completion of the construction in the [GetGlobalVariable('italy_senate_building_county').Title.GetName], we have gained the Senate's favour in the short term. Thus, they will support our endeavors as much as possible."
+ senate.0004.a:0 "It was a worthy investment"
+
+ senate.0008.t:0 "Apotheosising an Emperor"
+ senate.0008.desc:0 "Our empire has seen many Emperors come and go - some mediocre, some terrible, some great. Yet there is one Emperor whose achievements are so magnificent, so glorious, so #italic divine#!, they must be given honors beyond mere mortals.\n\nI have gathered the Senators and, after days of discussion, we have decided to deify this great Emperor..."
+ #senate.0008.desc:0 "Our Empire has seen many Emperors come and go. Some are unremarkable and mediocre and are not worth remembering due to their lack of notable achievements. Others were terrible or lacking in any good qualities, the kind of rulers we wish to forget. Then there are those great Emperors; the ones whose names still inspire us today, whose memory evokes a past golden age, whose achievements stand above ordinary humans.\n\nIndeed, there is one Emperor in particular whose achievements are so magnificent, so glorious, so #italic divine#! that they must be given honors beyond mere mortals, even in death. In other words, there is one Emperor I wish to apotheosise.\n\nI have gathered the high Senators and after days of discussion, we decided that the great Emperor we will deify is..."
+ senate.0008.a:0 "A great Emperor worthy of this honor!"
+ senate.0008.b:0 "I have changed my mind, never mind."
+
+
+ senate.0010.t:0 "Senate Revolt!"
+ senate.0010.desc:0 "One of my closest military advisors comes dashing into the throne room with a startled look on his face. 'My Emperor! We have recieved news of [revolt_leader.GetName] amassing an army of thousands! [revolt_leader.GetSheHe] has the full support of the Senate!\n\nYou might be able to quell the revolt with money, but it will take a lot of gold."
+ senate.0010.a:0 "Yes, pay them! Anything for peace!"
+ senate.0010.b:0 "Treason is treason, and the only payment I can grant is iron and blood."
+
+
+ senate.0011.t:0 "Rural Difficulties"
+ senate.0011.desc_italy:0 "While on my way to the triclinium for a sumptuous feast, one of my close advisors informs me about some landowners who do everything in their power to stop my men from collecting their legally owed taxes. It seems these nobles disagree with my politics and instead support the disloyal [ROOT.Char.Custom('senate_italy_disloyal_party_loc')]."
+ senate.0011.desc_eastern:0 "While on my way to the triclinium for a sumptuous feast, one of my close advisors informs me about some landowners who do everything in their power to stop my men from collecting their legally owed taxes. It seems these nobles disagree with my politics and instead support the disloyal [ROOT.Char.Custom('senate_eastern_disloyal_party_loc')]."
+ senate.0011.a:0 "Shame"
+
+ senate.0012.t:0 "Bought Soldiers"
+ senate.0012.desc_italy:0 "As I was watching my professional retinue practice in their formations, I noticed some men were missing. After some inquiries, I discovered that these men were paid off by opposing political forces, having entered their service instead of mine. It was most likely the [ROOT.Char.Custom('senate_italy_disloyal_party_loc')] party, as they do not favor me currently."
+ senate.0012.desc_eastern:0 "As I was watching my professional retinue practice in their formations, I noticed some men were missing. After some inquiries, I discovered that these men were paid off by opposing political forces, having entered their service instead of mine. It was most likely the [ROOT.Char.Custom('senate_eastern_disloyal_party_loc')] party, as they do not favor me currently."
+ senate.0012.a:0 "They will pay for this treachery!"
+
+ senate.0013.t:0 "A Soldier's Reward"
+ senate.0013.desc_italy:0 "The men who risk their lives for the empire feel that her gratitude could be greater. There is growing discontent from the lowliest infantry soldier to even some officers, all demanding better salaries and rewards for their services.\n\nThis is dangerous, for those who feel unrewarded for their service may refuse to follow orders or worse, lend their strength to the highest bidder. Only [ROOT.Char.Custom('senate_italy_disloyal_party_loc')] could fan the flames of greed like this.."
+ senate.0013.desc_eastern:0 "The men who risk their lives for the empire feel that her gratitude could be greater. There is growing discontent from the lowliest infantry soldier to even some officers, all demanding better salaries and rewards for their services.\n\nThis is dangerous, for those who feel unrewarded for their service may refuse to follow orders or worse, lend their strength to the highest bidder. Only [ROOT.Char.Custom('senate_eastern_disloyal_party_loc')] could fan the flames of greed like this.."
+ senate.0013.a:0 "Pay them off! Bribe them! Now!"
+ senate.0013.b:0 "Very well, they deserve better salaries."
+
+ senate.0014.t:0 "A Learned Person"
+ senate.0014.desc_italy:0 "As a ruler of any sort of realm, especially an empire, you always want scholars and other intellectuals on hand, be it for matters of science, philosophy, educating your heirs, or just for personal matters. If these men were to leave my court, it would be an alarming problem for the development of my capital and the surrounding lands. \n\nBut this exact problem is already transpiring: many of those I employed are leaving my service and are instead serving the senators for the [ROOT.Char.Custom('senate_italy_disloyal_party_loc')] party."
+ senate.0014.desc_eastern:0 "As a ruler of any sort of realm, especially an empire, you always want scholars and other intellectuals on hand, be it for matters of science, philosophy, educating your heirs, or just for personal matters. If these men were to leave my court, it would be an alarming problem for the development of my capital and the surrounding lands. \n\nBut this exact problem is already transpiring: many of those I employed are leaving my service and are instead serving the senators for the [ROOT.Char.Custom('senate_eastern_disloyal_party_loc')] party."
+ senate.0014.a:0 "Pay them a bonus, so they come back"
+ senate.0014.b:0 "Whatever, they don't deserve to serve me anyways."
+
+ senate.0015.t:0 "Discord Sown Among Peasants"
+ senate.0015.desc_italy:0 "Disgruntled peasants are refusing to work, and some are even rioting! The struggle our empire faces affects everyone, from the lowliest beggar to the highest patrician, but until now most have gritted their teeth and pressed on. Defiance is not uncommon in scattered pockets, but this has sprung up suddenly on a larger scale within the empire, in what is clearly not a coincidence. \n\nThis is not the will of the people, but the machinations of [ROOT.Char.Custom('senate_italy_disloyal_party_loc')] party! How should we proceed?"
+ senate.0015.desc_eastern:0 "Disgruntled peasants are refusing to work, and some are even rioting! The struggle our empire faces affects everyone, from the lowliest beggar to the highest patrician, but until now most have gritted their teeth and pressed on. Defiance is not uncommon in scattered pockets, but this has sprung up suddenly on a larger scale within the empire, in what is clearly not a coincidence. \n\nThis is not the will of the people, but the machinations of [ROOT.Char.Custom('senate_eastern_disloyal_party_loc')] party! How should we proceed?"
+ senate.0015.a:0 "Execute those who are defiant"
+ senate.0015.b:0 "Ignore the peasants' grievances"
+ senate.0015.c:0 "Make concessions to the peasants"
+
+
+ senate.0016.t:0 "Local Economy"
+ senate.0016.desc_italy:0 "While walking the streets of my capital, I notice new market stands. After questioning one of my advisors, he tells me that these new traders were encouraged by the [ROOT.Char.Custom('senate_italy_indifferent_party_loc')]'s. While these vendors won't drastically impact commerce in the long term, it is still good to see that the Senate interacts with the people."
+ senate.0016.desc_eastern:0 "While walking the streets of my capital, I notice new market stands. After questioning one of my advisors, he tells me that these new traders were encouraged by the [ROOT.Char.Custom('senate_eastern_indifferent_party_loc')]'s. While these vendors won't drastically impact commerce in the long term, it is still good to see that the Senate interacts with the people."
+ senate.0016.a:0 "Good to see"
+
+ senate.0017.t:0 "New Forests"
+ senate.0017.desc_italy:0 "During a hunt with some local politicians, I noticed new trees planted in the countryside. They are not grown yet, but they will be a source of lumber in the coming years and will provide plenty of living space for the animal kingdom. One local chief remarks on the new greenery 'These beautiful saplings were planted by the [ROOT.Char.Custom('senate_italy_indifferent_party_loc')] party just a few weeks ago. I hope they will grow into strong trees.'"
+ senate.0017.desc_eastern:0 "During a hunt with some local politicians, I noticed new trees planted in the countryside. They are not grown yet, but they will be a source of lumber in the coming years and will provide plenty of living space for the animal kingdom. One local chief remarks on the new greenery 'These beautiful saplings were planted by the [ROOT.Char.Custom('senate_eastern_indifferent_party_loc')] party just a few weeks ago. I hope they will grow into strong trees.'"
+ senate.0017.a:0 "Good to see"
+
+
+ senate.0018.t:0 "Farmers or Fighters"
+ senate.0018.desc_italy:0 "Men are always needed to work an empire; fields need to be labored and walls need to be manned. This includes my capital. As of lately, I noticed more workers in the fields of those owned by Senators of the [ROOT.Char.Custom('senate_italy_indifferent_party_loc')] party. While this increases the output of the local economy, it also leaves me with less men for my personal levy."
+ senate.0018.desc_eastern:0 "Men are always needed to work an empire; fields need to be labored and walls need to be manned. This includes my capital. As of lately, I noticed more workers in the fields of those owned by Senators of the [ROOT.Char.Custom('senate_eastern_indifferent_party_loc')] party. While this increases the output of the local economy, it also leaves me with less men for my personal levy."
+ senate.0018.a:0 "Interesting"
+
+ senate.0019.t:0 "Swords into Plowshares"
+ senate.0019.desc_italy:0 "Military reports show fewer recruits this year. This was highly concerning until other reports showed increased revenue and approval. People are tired of war and are exchanging battlefields for crop fields, spurred on by [ROOT.Char.Custom('senate_italy_indifferent_party_loc')] party. Thinking of the friends and family you've lost on the way, it's not hard to see why people wouldn't want to live peacefully. But this may only leave them more vulnerable.."
+ senate.0019.desc_eastern:0 "Military reports show fewer recruits this year. This was highly concerning until other reports showed increased revenue and approval. People are tired of war and are exchanging battlefields for crop fields, spurred on by [ROOT.Char.Custom('senate_eastern_indifferent_party_loc')] party. Thinking of the friends and family you've lost on the way, it's not hard to see why people wouldn't want to live peacefully. But this may only leave them more vulnerable.."
+ senate.0019.a:0 "But farming, really? Men of your talents?"
+ senate.0019.b:0 "Certainly preferable to dying far from home..."
+
+
+ senate.0020.t:0 "Disputes Resolved"
+ senate.0020.desc_italy:0 "With every dispute and disagreement comes a reason for trouble. It is the seed that sprouts feuds and even civil war. Very few are important enough to be taken all the way to the Emperor's office, but every petty argument over farmlands, salaries, insults and policy gradually chip away at the empire. Fortunately [ROOT.Char.Custom('senate_italy_indifferent_party_loc')] has used their influence to patch up a few rifts, promoting cooperation over animosity and reminding all that we share in both the struggles and success of [ROOT.Char.GetPrimaryTitle.GetName]."
+ senate.0020.desc_eastern:0 "With every dispute and disagreement comes a reason for trouble. It is the seed that sprouts feuds and even civil war. Very few are important enough to be taken all the way to the Emperor's office, but every petty argument over farmlands, salaries, insults and policy gradually chip away at the empire. Fortunately [ROOT.Char.Custom('senate_eastern_indifferent_party_loc')] has used their influence to patch up a few rifts, promoting cooperation over animosity and reminding all that we share in both the struggles and success of [ROOT.Char.GetPrimaryTitle.GetName]."
+ senate.0020.a:0 "Harmony, the precursor to victory"
+
+ senate.0021.t:0 "Half Off"
+ senate.0021.desc_italy:0 "While listening to some minor landowner go off about a minor issue a senator from the [ROOT.Char.Custom('senate_italy_loyal_party_loc')] approaches me with an offer. 'My liege, as a symbol of our support to you and your rule, we would be delighted to pay for games, at least partly. You would need to come up with the missing funds but I am sure this is no problem.'"
+ senate.0021.desc_eastern:0 "While listening to some minor landowner go off about a minor issue a senator from the [ROOT.Char.Custom('senate_eastern_loyal_party_loc')] approaches me with an offer. 'My liege, as a symbol of our support to you and your rule, we would be delighted to pay for games, at least partly. You would need to come up with the missing funds but I am sure this is no problem.'"
+ senate.0021.a:0 "Thank you! I’ll start promoting the games right away."
+ senate.0021.b:0 "The treasury can’t afford games right now. I would gladly take the money, though."
+
+ senate.0022.t:0 "Bread for the Poor"
+ senate.0022.desc_italy:0 "On my way back to my private chambers, a senator approaches me: 'Sir, we want to give out bread in your name as a sign of our support from the [ROOT.Char.Custom('senate_italy_loyal_party_loc')] party. I ask your permission to feed every local in need.'"
+ senate.0022.desc_eastern:0 "On my way back to my private chambers, a senator approaches me: 'Sir, we want to give out bread in your name as a sign of our support from the [ROOT.Char.Custom('senate_eastern_loyal_party_loc')] party. I ask your permission to feed every local in need.'"
+ senate.0022.a:0 "Of course, I thank you for your service to the people"
+ senate.0022.b:0 "The realm needs the gold instead.."
+
+ senate.0023.t:0 "Donations to the Empire"
+ senate.0023.desc_italy:0 "Gold is the lifeblood of all kingdoms great and small, and [ROOT.Char.Custom('senate_italy_loyal_party_loc')] knows this well. They have gathered funds from wealthy patricians, devoted loyalists and even enemies of the Empire, though the latter weren't exactly willing...\n\n\nCartloads of treasure have arrived in the throne room, all to buy the Empire more time."
+ senate.0023.desc_eastern:0 "Gold is the lifeblood of all kingdoms great and small, and [ROOT.Char.Custom('senate_eastern_loyal_party_loc')] knows this well. They have gathered funds from wealthy patricians, devoted loyalists and even enemies of the Empire, though the latter weren't exactly willing...\n\n\nCartloads of treasure have arrived in the throne room, all to buy the Empire more time."
+ senate.0023.a:0 "A most generous gift."
+ senate.0023.b:0 "Reinvest these riches."
+
+ senate.0024.t:0 "A Favor"
+ senate.0024.desc_italy:0 "After a day of meeting local rulers and governors, A Senator from the [ROOT.Char.Custom('senate_italy_loyal_party_loc')] approaches me. 'My lord, as a sign of our support, we would like to fund new weapons for your personal guard. Or would the gold be more suitable?'"
+ senate.0024.desc_eastern:0 "After a day of meeting local rulers and governors, A Senator from the [ROOT.Char.Custom('senate_eastern_loyal_party_loc')] approaches me. 'My lord, as a sign of our support, we would like to fund new weapons for your personal guard. Or would the gold be more suitable?'"
+ senate.0024.a:0 "I'll gladly have my men rearmed."
+ senate.0024.b:0 "The money will work."
+
+ influenced_by_senate:0 "Influenced By Senate"
+ senate.0025.t:0 "A Vassal to an Emperor"
+ senate.0025.desc_italy:0 "Even as one of the supposedly most powerful men alive, an Emperor needs to maintain decent relationships to those beneath them. But the imperial agents can not be everywhere at once, making sure Rome has the support it deserves. This is where my allies in the senate can come in handy; A senator from the [ROOT.Char.Custom('senate_italy_loyal_party_loc')] approaches me: 'My liege, I took the liberty to explain the greatness of your rule to [senate25vassal.GetName]. He seemed to understand..'"
+ senate.0025.desc_eastern:0 "Even as one of the supposedly most powerful men alive, an Emperor needs to maintain decent relationships to those beneath them. But the imperial agents can not be everywhere at once, making sure Rome has the support it deserves. This is where my allies in the senate can come in handy; A senator from the [ROOT.Char.Custom('senate_eastern_loyal_party_loc')] approaches me: 'My liege, I took the liberty to explain the greatness of your rule to [senate25vassal.GetName]. He seemed to understand..'"
+ senate.0025.a:0 "I thank you for making them understand."
+
+ maa_expenses_paid:0 "Army Expenses Paid"
+ senate.0026.t:0 "An Offer of Charity"
+ senate.0026.desc_italy:0 "A Roman army is a testament of martial prowess meant to strike down any and all who obstructs its path. At their core, these soldiers are just men, longing for payment and recognition, but their pay places great pressure on the treasury.\n\nA senator approaches me, with a friendly look etched upon his face. \n\n"My liege, as an envoy from the [ROOT.Char.Custom('senate_italy_supportive_party_loc')] party, it is my pleasure to announce that you have our backing. We have collected funds to help pay for your men-at-arms, if you would let us.""
+ senate.0026.desc_eastern:0 "A roman army is a show of prowess, a professional force of soldiers, meant to strike down any and all of her enemies. These soldiers, at their core, are just men, longing for coins as much as anyone else. Their pay puts a huge amount of pressure on the Imperial treasury..\n\nA senator approaches me, a friendly look on his face. 'My liege, as an envoy from the [ROOT.Char.Custom('senate_eastern_supportive_party_loc')] party, it is my pleasure to announce our support for you. We have collected funds to help pay for your men-at-arms, if you would let us.'"
+ senate.0026.a:0 "I appreciate the charity, thank you"
+ senate.0026.b:0 "The empire needs the funds to be used elsewhere"
+
+ senate.0027.t:0 "Internal Politics"
+ senate.0027.desc_italy:0 "In theory, the emperor rules and his loyal vassals enact his will. In practice, the emperor is nothing without his vassals, and if they turn against him then all is lost. As each vassal has competing interests and personal agendas, keeping them all happy with your glorious rule is a herculean task. Fortunately, the loyalist faction of the [ROOT.Char.Custom('senate_italy_supportive_party_loc')] have relieved some of this burden, convincing some vassals the benefits of following you, though you can't help but wonder if they used truth or exaggeration.."
+ senate.0027.desc_eastern:0 "In theory, the emperor rules and his loyal vassals enact his will. In practice, the emperor is nothing without his vassals, and if they turn against him then all is lost. As each vassal has competing interests and personal agendas, keeping them all happy with your glorious rule is a herculean task. Fortunately, the loyalist faction of the [ROOT.Char.Custom('senate_eastern_supportive_party_loc')] have relieved some of this burden, convincing some vassals the benefits of following you, though you can't help but wonder if they used truth or exaggeration.."
+ senate.0027.a:0 "[vassal1senate27.GetName] ambition does not eclipse their wisdom"
+ senate.0027.b:0 "[vassal2senate27.GetName] understands that true strength is in unity"
+ senate.0027.c:0 "[vassal3senate27.GetName] would rather fight together than die alone"
+
+ senate.0028.t:0 "More Games Than Thrones"
+ senate.0028.desc_italy:0 "Games, a show of battle prowess, have always been a part of Roman culture. Nowadays they are rarer and rarer though, as many Christians condemn the practice. Still, there are many people who find enjoyment in watching someone display their skill in combat. Amongst these men is a Senator from the [ROOT.Char.Custom('senate_italy_supportive_party_loc')]. He approaches me:\nMy Lord, the realm has not seen games in quite a while. My party and I fully endorse your rule and as a token of gratitude we would host games in your name, paying for all that is needed. If you so wished, of course."
+ senate.0028.desc_eastern:0 "Games, a show of battle prowess, have always been a part of Roman culture. Nowadays they are rarer and rarer though, as many Christians condemn the practice. Still, there are many people who find enjoyment in watching someone display their skill in combat. Amongst these men is a Senator from the [ROOT.Char.Custom('senate_eastern_supportive_party_loc')]. He approaches me:\nMy Lord, the realm has not seen games in quite a while. My party and I fully endorse your rule and as a token of gratitude we would host games in your name, paying for all that is needed. If you so wished, of course."
+ senate.0028.a:0 "Gladly, I have missed them too"
+ senate.0028.b:0 "No, I won't let [ROOT.Char.GetFaith.GetAdherentName] Men die for our entertainment"
+
+ senate.0029.t:0 "Like In The Old Times"
+ senate.0029.desc_italy:0 "For centuries, free grain allotments for the poor and the needy were one of the special privileges Italia enjoyed. Nowadays the Imperial treasury can often not afford this kind of relief for its citizens, be it by missing funds or sheer greed.\nDiscussing some boring tax collection laws, a senator from the [ROOT.Char.Custom('senate_italy_supportive_party_loc')] approaches me with a small retinue.\n\n“My lord, the poor have never had enough. With your blessing, we would give out bread to everyone in need in [kingdombreadsenate.GetName]. Unless you have other needs for the fund?”"
+ senate.0029.desc_eastern:0 "For centuries, free grain allotments for the poor and the needy were one of the special privileges Italia enjoyed. Nowadays the Imperial treasury can often not afford this kind of relief for its citizens, be it by missing funds or sheer greed.\nDiscussing some boring tax collection laws, a senator from the [ROOT.Char.Custom('senate_eastern_supportive_party_loc')] approaches me with a small retinue.\n\n“My lord, the poor have never had enough. With your blessing, we would give out bread to everyone in need in [kingdombreadsenate.GetName]. Unless you have other needs for the fund?”"
+ senate.0029.a:0 "Yes, of course, thank you for thinking of the people."
+ senate.0029.b:0 "I am thankful but the Empire faces more pressing matters."
+
+ trade_deal_established:0 "Trade Deal Established"
+ senate.0030.t:0 "Diplomatic Relations"
+ senate.0030.desc_italy:0 "Even an Empire as great as Rome herself needs to have diplomatic relations to those neighboring her. Such envoys are always to be treated with respect and honors, otherwise you could face the breakdown of communication or worse, war.\n\nToday an envoy from neighbouring ruler arrived. Luckily, Senators from the [ROOT.Char.Custom('senate_italy_supportive_party_loc')] welcomed them and were able to establish a friendly mood with the diplomats which resulted in better trade deals."
+ senate.0030.desc_eastern:0 "Even an Empire as great as Byzantion herself needs to have diplomatic relations to those neighboring her. Such envoys are always to be treated with respect and honors, otherwise you could face the breakdown of communication or worse, war.\n\nToday an envoy from neighbouring ruler arrived. Luckily, Senators from the [ROOT.Char.Custom('senate_eastern_supportive_party_loc')] welcomed them and were able to establish a friendly mood with the diplomats which resulted in better trade deals."
+ senate.0030.a:0 "I am grateful to have such skilled speakers on my side"

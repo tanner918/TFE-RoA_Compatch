@@ -1,0 +1,335 @@
+﻿#Edo characters
+edo_01 = {
+	name = "Eweka"
+	religion = west_african_orisha_pagan
+	culture = edo
+	340.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+edo_02 = {
+	name = "Esomo"
+	religion = west_african_orisha_pagan
+	culture = edo
+	female = yes
+	434.6.21 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+edo_03 = {
+	name = "Orire"
+	dynasty = dynn_Ogiso
+	religion = west_african_orisha_pagan
+	culture = edo
+	#father = 190027
+	55.1.1 = {
+		birth = yes
+	}
+	66.1.1 = {
+		give_nickname = nick_the_young
+	}
+	100.1.1 = {
+		death = yes
+	}
+}
+edo_04 = {
+	name = "Odia"
+	dynasty = dynn_Ogiso
+	religion = west_african_orisha_pagan
+	culture = edo
+	#father = edo_03
+	trait = lifestyle_mystic # Had divination skills
+	340.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+edo_05 = {
+	name = "Ighido"
+	dynasty = dynn_Ogiso
+	religion = west_african_orisha_pagan
+	culture = edo
+	father = edo_04
+	365.1.1 = {
+		birth = yes
+	}
+	414.1.1 = {
+		death = yes
+	}
+}
+edo_06 = {
+	name = "Evbobo"
+	dynasty = dynn_Ogiso
+	religion = west_african_orisha_pagan
+	culture = edo
+	father = edo_05
+	385.1.1 = {
+		birth = yes
+	}
+	432.1.1 = {
+		death = yes
+	}
+}
+edo_07 = {
+	name = "Ogbeide"
+	dynasty = dynn_Ogiso
+	religion = west_african_orisha_pagan
+	culture = edo
+	father = edo_06
+	405.1.1 = {
+		birth = yes
+	}
+	430.1.1 = {
+		give_nickname = nick_the_hawk
+	}
+	447.1.1 = {
+		death = yes
+	}
+}
+edo_08 = {
+	name = "Emehen"
+	dynasty = dynn_Ogiso
+	religion = west_african_orisha_pagan
+	culture = edo
+	father = edo_07
+	425.1.1 = {
+		birth = yes
+	}
+	430.1.1 = {
+		give_nickname = nick_the_historian
+	}
+	466.1.1 = {
+		death = yes
+	}
+}
+edo_09 = {
+	name = "Ekpigho"
+	dynasty = dynn_Ogiso
+	religion = west_african_orisha_pagan
+	culture = edo
+	father = edo_08
+	445.1.1 = {
+		birth = yes
+	}
+	482.1.1 = {
+		death = yes
+	}
+}
+edo_10 = {
+	name = "Akhuankhuan"
+	dynasty = dynn_Ogiso
+	religion = west_african_orisha_pagan
+	culture = edo
+	father = edo_09
+	465.1.1 = {
+		birth = yes
+	}
+	494.1.1 = {
+		death = yes
+	}
+}
+edo_11 = {
+	name = "Efeseke"
+	dynasty = dynn_Ogiso
+	religion = west_african_orisha_pagan
+	culture = edo
+	father = edo_10
+	485.1.1 = {
+		birth = yes
+	}
+	508.1.1 = {
+		death = yes
+	}
+}
+edo_12 = {
+	name = "Irudia"
+	dynasty = dynn_Ogiso
+	religion = west_african_orisha_pagan
+	culture = edo
+	father = edo_10
+	490.1.1 = {
+		birth = yes
+	}
+	522.1.1 = {
+		death = yes
+	}
+}
+edo_13 = {
+	name = "Orria"
+	dynasty = dynn_Ogiso
+	religion = west_african_orisha_pagan
+	culture = edo
+	father = edo_10
+	495.1.1 = {
+		birth = yes
+	}
+	537.1.1 = {
+		death = yes
+	}
+}
+edo_14 = {
+	name = "Imarhan"
+	dynasty = dynn_Ogiso
+	religion = west_african_orisha_pagan
+	culture = edo
+	father = edo_10
+	500.1.1 = {
+		birth = yes
+	}
+	548.1.1 = {
+		death = yes
+	}
+}
+edo_15 = {
+	name = "Etebowe"
+	dynasty = dynn_Ogiso
+	religion = west_african_orisha_pagan
+	culture = edo
+	father = edo_14
+	520.1.1 = {
+		birth = yes
+	}
+	567.1.1 = {
+		death = yes
+	}
+}
+edo_16 = {
+	name = "Odion"
+	dynasty = dynn_Ogiso
+	religion = west_african_orisha_pagan
+	culture = edo
+	father = edo_15
+	540.1.1 = {
+		birth = yes
+	}
+	584.1.1 = {
+		death = yes
+	}
+}
+edo_17 = {
+	name = "Emose"
+	dynasty = dynn_Ogiso
+	religion = west_african_orisha_pagan
+	culture = edo
+	female = yes
+	father = edo_16
+	540.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+edo_18 = {
+	name = "Ororo"
+	dynasty = dynn_Ogiso
+	religion = west_african_orisha_pagan
+	culture = edo
+	female = yes
+	mother = edo_17
+	560.1.1 = {
+		birth = yes
+	}
+	618.1.1 = {
+		death = yes
+	}
+}
+edo_19 = {
+	name = "Erebo"
+	dynasty = dynn_Ogiso
+	religion = west_african_orisha_pagan
+	culture = edo
+	father = edo_18
+	580.1.1 = {
+		birth = yes
+	}
+	631.12.1 = {
+		death = yes
+	}
+}
+edo_20 = {
+	name = "Ogborno"
+	dynasty = dynn_Ogiso
+	religion = west_african_orisha_pagan
+	culture = edo
+	father = edo_19
+	600.1.1 = {
+		birth = yes
+	}
+	647.1.1 = {
+		death = yes
+	}
+}
+edo_21 = {
+	name = "Agbonzeke"
+	dynasty = dynn_Ogiso
+	religion = west_african_orisha_pagan
+	culture = edo
+	father = edo_20
+	620.1.1 = {
+		birth = yes
+	}
+	665.1.1 = {
+		death = yes
+	}
+}
+edo_22 = {
+	name = "Ediae"
+	dynasty = dynn_Ogiso
+	religion = west_african_orisha_pagan
+	culture = edo
+	father = edo_21
+	640.1.1 = {
+		birth = yes
+	}
+	685.1.1 = {
+		death = yes
+	}
+}
+edo_23 = {
+	name = "Orriagba"
+	dynasty = dynn_Ogiso
+	religion = west_african_orisha_pagan
+	culture = edo
+	father = edo_22
+	670.1.1 = {
+		birth = yes
+	}
+	712.1.1 = {
+		death = yes
+	}
+}
+edo_24 = {
+	name = "Odoligie"
+	dynasty = dynn_Ogiso
+	religion = west_african_orisha_pagan
+	culture = edo
+	father = edo_23
+	700.1.1 = {
+		birth = yes
+	}
+	767.1.1 = {
+		death = yes
+	}
+}
+edo_24 = {
+	name = "Uwa"
+	dynasty = dynn_Ogiso
+	religion = west_african_orisha_pagan
+	culture = edo
+	father = edo_23
+	740.1.1 = {
+		birth = yes
+	}
+	821.1.1 = {
+		death = yes
+	}
+}

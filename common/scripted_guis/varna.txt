@@ -1,0 +1,186 @@
+﻿varna_visible = { #used for marriage
+	scope = character 
+	saved_scopes = {
+		recipient
+	}
+
+	is_valid = {
+		OR = {
+			culture ?= {
+				has_cultural_parameter = varna_system_unlocked
+			}
+			scope:recipient = {
+				culture ?= {
+					has_cultural_parameter = varna_system_unlocked
+				}
+			}
+		}
+	}
+
+	effect = {
+	
+	}	 			
+}
+
+varna_brahmin = { #used for marriage
+	scope = character 
+	saved_scopes = {
+		recipient
+	}
+
+	is_valid = {
+		trigger_if = {
+			limit = {
+				is_male = yes
+			}
+			has_trait = brahmin
+		}
+		trigger_else = {
+			scope:recipient = {
+				has_trait = brahmin
+			}
+		}
+	}
+
+	effect = {
+	
+	}	 			
+}
+varna_kshatriya = { #used for marriage
+	scope = character 
+	saved_scopes = {
+		recipient
+	}
+
+	is_valid = {
+		trigger_if = {
+			limit = {
+				is_male = yes
+			}
+			save_temporary_scope_as = male_varna
+			scope:recipient = {
+				save_temporary_scope_as = female_varna
+			}
+		}
+		trigger_else = {
+			save_temporary_scope_as = female_varna
+			scope:recipient = {
+				save_temporary_scope_as = male_varna
+			}
+		}
+
+		AND = {
+			scope:male_varna = {
+				has_trait = kshatriya
+			}
+			NOT = {
+				scope:female_varna = {
+					has_trait = brahmin
+				}
+			}
+		}
+	}
+
+	effect = {
+	
+	}	 			
+}
+varna_vaishya = { #used for marriage
+	scope = character 
+	saved_scopes = {
+		recipient
+	}
+
+	is_valid = {
+		trigger_if = {
+			limit = {
+				is_male = yes
+			}
+			save_temporary_scope_as = male_varna
+			scope:recipient = {
+				save_temporary_scope_as = female_varna
+			}
+		}
+		trigger_else = {
+			save_temporary_scope_as = female_varna
+			scope:recipient = {
+				save_temporary_scope_as = male_varna
+			}
+		}
+
+		AND = {
+			scope:male_varna = {
+				has_trait = vaishya
+			}
+			NOT = {
+				OR = {
+					scope:female_varna = {
+						has_trait = brahmin
+					}
+					scope:female_varna = {
+						has_trait = kshatriya
+					}
+				}
+			}
+		}
+	}
+
+	effect = {
+	
+	}	 			
+}
+varna_shudra = { #used for marriage
+	scope = character 
+	saved_scopes = {
+		recipient
+	}
+
+	is_valid = {
+		trigger_if = {
+			limit = {
+				is_male = yes
+			}
+			save_temporary_scope_as = male_varna
+			scope:recipient = {
+				save_temporary_scope_as = female_varna
+			}
+		}
+		trigger_else = {
+			save_temporary_scope_as = female_varna
+			scope:recipient = {
+				save_temporary_scope_as = male_varna
+			}
+		}
+
+		OR = {
+			scope:male_varna = {
+				is_lowborn = yes
+			}
+			AND = {
+				scope:male_varna = {
+					has_trait = vaishya
+				}
+				OR = {
+					scope:female_varna = {
+						has_trait = brahmin
+					}
+					scope:female_varna = {
+						has_trait = kshatriya
+					}
+				}
+			}
+			AND = {
+				scope:male_varna = {
+					has_trait = kshatriya
+				}
+				scope:female_varna = {
+					has_trait = brahmin
+				}
+			}
+		}
+	}
+
+	effect = {
+	
+	}	 			
+}

@@ -1,0 +1,814 @@
+﻿k_saxony = {
+	330.1.1 = {
+		holder = saxon_08
+		government = tribal_government
+		succession_laws = {
+			saxon_elective_succession_law
+			male_only_law
+		}
+	}
+	360.1.1 = {
+		holder = saxon_01
+	}
+	400.1.1 = {
+		holder = saxon_02
+	}
+	423.1.1 = {
+		holder = saxon_03
+	}
+	450.1.1 = {
+		holder = saxon_04
+	}
+	476.1.1 = {
+		holder = saxon_05
+	}
+	522.1.1 = {
+		holder = liudolfing_01
+	}
+}
+
+
+
+d_westfalen = {
+	360.1.1 = {
+		holder = 0
+		government = tribal_government
+	}
+	400.1.1 = {
+		holder = saxon_02
+	}
+	423.1.1 = {
+		holder = saxon_03
+	}
+	450.1.1 = {
+		holder = saxon_04
+	}
+	476.1.1 = {
+		holder = saxon_05
+	}
+	700.1.1 = {
+		liege = k_saxony
+	}
+	740.1.1 = {
+		holder = 190455 #Theoderic
+	}
+}
+
+
+c_osnabruck = {
+	330.1.1 = {
+		holder = saxon_08
+		government = tribal_government
+	}
+	360.1.1 = {
+		holder = saxon_01
+	}
+	400.1.1 = {
+		holder = saxon_02
+	}
+	423.1.1 = {
+		holder = saxon_03
+	}
+	450.1.1 = {
+		holder = saxon_04
+	}
+	476.1.1 = {
+		holder = saxon_05
+	}
+	532.1.1 = {
+		liege = k_saxony
+		holder = old_saxon_02
+	}
+	741.1.1 = {
+		liege = d_westfalen
+	}
+	741.1.1 = {
+		holder = 190462 #Billung
+	}
+}
+
+
+c_tecklenburg = {
+	330.1.1 = {
+		holder = saxon_08
+		government = tribal_government
+	}
+	360.1.1 = {
+		holder = saxon_01
+	}
+	400.1.1 = {
+		holder = saxon_02
+	}
+	423.1.1 = {
+		holder = saxon_03
+	}
+	450.1.1 = {
+		holder = saxon_04
+	}
+	476.1.1 = {
+		holder = saxon_05
+	}
+	532.1.1 = {
+		liege = k_saxony
+		holder = old_saxon_02
+	}
+	741.1.1 = {
+		liege = d_westfalen
+	}
+	741.1.1 = {
+		holder = 190462 #Billung
+	}
+}
+
+c_munster = {
+	361.1.1 = {
+		holder = chattauri_01
+		liege = d_westfalen
+		government = tribal_government
+	}
+	400.1.1 = {
+		holder = saxon_02
+	}
+	423.1.1 = {
+		holder = saxon_03
+	}
+	450.1.1 = {
+		holder = saxon_04
+	}
+	476.1.1 = {
+		holder = saxon_05
+	}
+	532.1.1 = {
+		holder = frankish_06
+		liege = k_frankish_rheims
+	}
+	761.1.1 = {
+		liege = d_westfalen
+	}
+	761.1.1 = {
+		holder = 190472 #Unwan
+	}
+
+}
+
+
+c_waldeck = {
+	361.1.1 = {
+		holder = chattauri_01
+		liege = d_westfalen
+		government = tribal_government
+	}
+	476.1.1 = {
+		holder = frankish_03
+		liege = d_utrecht
+		de_jure_liege = d_hesse
+	}
+	532.1.1 = {
+		holder = frankish_06
+		liege = k_frankish_rheims
+	}
+	761.1.1 = {
+		liege = d_westfalen
+	}
+	761.1.1 = {
+		holder = 190463 #Amelung
+	}
+}
+
+
+c_paderborn = {
+	361.1.1 = {
+		holder = chattauri_01
+		government = tribal_government
+	}
+	476.1.1 = {
+		holder = frankish_01
+		liege = d_utrecht
+	}
+	532.1.1 = {
+		liege = k_saxony
+		holder = old_saxon_02
+	}
+	761.1.1 = {
+		liege = d_westfalen
+	}
+	761.1.1 = {
+		holder = 190463 #Amelung
+	}
+}
+
+
+
+d_angria = {
+	361.1.1 = {
+		holder = agradingun_01
+		liege = k_saxony
+		de_jure_liege = k_saxony
+		government = tribal_government
+	}
+	400.1.1 = {
+		holder = agradingun_02
+	}
+	426.1.1 = {
+		holder = agradingun_03
+	}
+	458.1.1 = {
+		holder = agradingun_04
+	}
+	489.1.1 = {
+		holder = agradingun_05
+	}
+	503.1.1 = {
+		holder = agradingun_06
+		liege = k_saxony
+	}
+	543.1.1 = {
+		holder = agradingun_07
+	}
+	740.1.1 = {
+		holder = 190455 #Theoderic
+	}
+}
+
+
+c_minden = {
+	361.1.1 = {
+		holder = agradingun_01
+		liege = k_saxony
+		government = tribal_government
+	}
+	400.1.1 = {
+		holder = agradingun_02
+		liege = k_saxony
+	}
+	426.1.1 = {
+		holder = agradingun_03
+		liege = k_saxony
+	}
+	458.1.1 = {
+		holder = agradingun_04
+		liege = k_saxony
+	}
+	489.1.1 = {
+		holder = agradingun_05
+		liege = k_saxony
+	}
+	503.1.1 = {
+		holder = agradingun_06
+	}
+	532.1.1 = {
+		liege = k_saxony
+	}
+	543.1.1 = {
+		holder = agradingun_07
+		liege = k_saxony
+	}
+	761.1.1 = {
+		holder =  #Bruno
+	}
+	766.1.1 = {
+		liege = d_angria
+	}
+}
+
+
+c_lippe = {
+	361.1.1 = {
+		holder = chattauri_01
+		government = tribal_government
+	}
+	400.1.1 = {
+		holder = agradingun_02
+		liege = k_saxony
+	}
+	426.1.1 = {
+		holder = agradingun_03
+		liege = k_saxony
+	}
+	458.1.1 = {
+		holder = agradingun_04
+		liege = k_saxony
+	}
+	489.1.1 = {
+		holder = agradingun_05
+		liege = k_saxony
+	}
+	503.1.1 = {
+		holder = agradingun_06
+	}
+	532.1.1 = {
+		liege = k_saxony
+	}
+	543.1.1 = {
+		holder = agradingun_07
+		liege = k_saxony
+	}
+	761.1.1 = {
+		liege = d_ostfalen
+	}
+	761.1.1 = {
+		holder = 190463 #Amelung
+	}
+}
+
+
+c_bremen = {
+	361.1.1 = { change_development_level = 1 }
+	476.1.1 = { change_development_level = 2 }
+	532.1.1 = { change_development_level = 3 }
+	632.1.1 = { change_development_level = 4 }
+	768.1.1 = { change_development_level = 6 }
+	361.1.1 = {
+		holder = chauci_01
+		liege = k_saxony
+		government = tribal_government
+	}
+	400.1.1 = {
+		holder = chauci_02
+		liege = k_saxony
+	}
+	430.1.1 = {
+		holder = chauci_03
+		liege = k_saxony
+	}
+	469.1.1 = {
+		holder = chauci_04
+		liege = k_saxony
+	}
+	761.1.1 = {
+		liege = d_holstein
+	}
+	761.1.1 = {
+		holder = 190468 #Richfrid
+	}
+}
+
+
+c_wolpe = {
+	361.1.1 = {
+		holder = agradingun_01
+		liege = k_saxony
+		government = tribal_government
+	}
+	400.1.1 = {
+		holder = agradingun_02
+		liege = k_saxony
+	}
+	426.1.1 = {
+		holder = agradingun_03
+		liege = k_saxony
+	}
+	458.1.1 = {
+		holder = agradingun_04
+		liege = k_saxony
+	}
+	489.1.1 = {
+		holder = agradingun_05
+		liege = k_saxony
+	}
+	503.1.1 = {
+		holder = agradingun_06
+	}
+	532.1.1 = {
+		liege = k_saxony
+	}
+	543.1.1 = {
+		holder = agradingun_07
+		liege = k_saxony
+	}
+	761.1.1 = {
+		liege = d_angria
+	}
+	761.1.1 = {
+		holder = 190471 #Smeldigoz
+	}
+}
+
+
+c_hannover = {
+	361.1.1 = {
+		holder = agradingun_01
+		liege = k_saxony
+		government = tribal_government
+	}
+	400.1.1 = {
+		holder = agradingun_02
+		liege = k_saxony
+	}
+	426.1.1 = {
+		holder = agradingun_03
+		liege = k_saxony
+	}
+	458.1.1 = {
+		holder = agradingun_04
+		liege = k_saxony
+	}
+	489.1.1 = {
+		holder = agradingun_05
+		liege = k_saxony
+	}
+	503.1.1 = {
+		holder = agradingun_06
+	}
+	532.1.1 = {
+		liege = k_saxony
+	}
+	543.1.1 = {
+		holder = agradingun_07
+		liege = k_saxony
+	}
+	761.1.1 = {
+		liege = d_angria
+	}
+	761.1.1 = {
+		holder = 190463 #Amelung
+	}
+}
+
+
+c_hildesheim = {
+	361.1.1 = {
+		holder = agradingun_01
+		liege = k_saxony
+		government = tribal_government
+	}
+	400.1.1 = {
+		holder = agradingun_02
+		liege = k_saxony
+	}
+	426.1.1 = {
+		holder = agradingun_03
+		liege = k_saxony
+	}
+	458.1.1 = {
+		holder = agradingun_04
+		liege = k_saxony
+	}
+	489.1.1 = {
+		holder = agradingun_05
+		liege = k_saxony
+	}
+	503.1.1 = {
+		holder = agradingun_06
+	}
+	532.1.1 = {
+		liege = k_saxony
+	}
+	543.1.1 = {
+		holder = agradingun_07
+		liege = k_saxony
+	}
+	761.1.1 = {
+		liege = d_angria
+	}
+	761.1.1 = {
+		holder = 190463 #Amelung
+	}
+}
+
+
+c_oldenburg = {
+	330.1.1 = {
+		holder = saxon_08
+		government = tribal_government
+	}
+	360.1.1 = {
+		holder = saxon_01
+	}
+	400.1.1 = {
+		holder = saxon_02
+	}
+	423.1.1 = {
+		holder = saxon_03
+	}
+	450.1.1 = {
+		holder = saxon_04
+	}
+	476.1.1 = {
+		holder = saxon_05
+	}
+	762.1.1 = {
+		liege = d_angria
+	}
+	762.1.1 = {
+		holder = 190466 #Lothar
+	}
+}
+
+d_ostfalen = {
+	522.1.1 = {
+		holder = liudolfing_01
+	}
+	700.1.1 = {
+		liege = k_saxony
+		de_jure_liege = k_saxony
+	}
+	740.1.1 = {
+		holder = 190455 #Theoderic
+	}
+}
+
+
+c_luneburg = {
+	361.1.1 = { change_development_level = 2 }
+	476.1.1 = { change_development_level = 3 }
+	532.1.1 = { change_development_level = 4 }
+	632.1.1 = { change_development_level = 5 }
+	768.1.1 = { change_development_level = 6 }
+	
+	361.1.1 = {
+		holder = chauci_01
+		liege = k_saxony
+		government = tribal_government
+	}
+	400.1.1 = {
+		holder = chauci_02
+		liege = k_saxony
+	}
+	430.1.1 = {
+		holder = chauci_03
+		liege = k_saxony
+	}
+	469.1.1 = {
+		holder = chauci_04
+		liege = k_saxony
+	}
+	522.1.1 = {
+		holder = liudolfing_01
+	}
+	740.1.1 = {
+		holder = 190455 #Theoderic
+		liege = d_angria
+	}
+}
+
+
+c_brunswick = {
+	361.1.1 = {
+		holder = agradingun_01
+		liege = k_saxony
+		government = tribal_government
+	}
+	400.1.1 = {
+		holder = agradingun_02
+		liege = k_saxony
+	}
+	426.1.1 = {
+		holder = agradingun_03
+		liege = k_saxony
+	}
+	458.1.1 = {
+		holder = agradingun_04
+		liege = k_saxony
+	}
+	531.1.1 = {
+		holder = liudolfing_01
+	}
+	761.1.1 = {
+		holder = 190457 #Bruno
+	}
+	766.1.1 = {
+		liege = d_ostfalen
+	}
+}
+
+
+c_hamburg = {
+	361.1.1 = { change_development_level = 3 }
+	476.1.1 = { change_development_level = 4 }
+	532.1.1 = { change_development_level = 5 }
+	632.1.1 = { change_development_level = 6 }
+	768.1.1 = { change_development_level = 8 }
+	
+	361.1.1 = {
+		holder = saxon_10
+		liege = k_saxony
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = saxon_12
+		liege = k_saxony
+	}
+	430.1.1 = {
+		holder = chauci_03
+		liege = k_saxony
+	}
+	469.1.1 = {
+		holder = chauci_04
+		liege = k_saxony
+	}
+	522.1.1 = {
+		holder = liudolfing_01
+	}
+	740.1.1 = {
+		holder = 190455 #Theoderic
+		liege = d_angria
+	}
+}
+
+
+c_dannenberg = {
+	361.1.1 = { change_development_level = 2 }
+	476.1.1 = { change_development_level = 3 }
+	532.1.1 = { change_development_level = 4 }
+	632.1.1 = { change_development_level = 5 }
+	768.1.1 = { change_development_level = 6 }
+	
+	361.1.1 = {
+		holder = chauci_01
+		liege = k_saxony
+		government = tribal_government
+	}
+	400.1.1 = {
+		holder = chauci_02
+		liege = k_saxony
+	}
+	430.1.1 = {
+		holder = chauci_03
+		liege = k_saxony
+	}
+	469.1.1 = {
+		holder = chauci_04
+		liege = k_saxony
+	}
+	522.1.1 = {
+		holder = liudolfing_01
+	}
+	740.1.1 = {
+		holder = 190455 #Theoderic
+		liege = d_ostfalen
+	}
+}
+
+
+c_stendal = {
+	361.1.1 = { change_development_level = 2 }
+	476.1.1 = { change_development_level = 3 }
+	532.1.1 = { change_development_level = 4 }
+	632.1.1 = { change_development_level = 5 }
+	768.1.1 = { change_development_level = 6 }
+
+	361.1.1 = {
+		holder = agradingun_01
+		liege = k_saxony
+		government = tribal_government
+	}
+	400.1.1 = {
+		holder = agradingun_02
+		liege = k_saxony
+	}
+	426.1.1 = {
+		holder = agradingun_03
+		liege = k_saxony
+	}
+	458.1.1 = {
+		holder = agradingun_04
+		liege = k_saxony
+	}
+	476.1.1 ={
+		holder = thuringian_02
+		liege = d_thuringia
+	}
+	531.1.1 = {
+		holder = liudolfing_01
+	}
+	740.1.1 = {
+		holder = 190455 #Theoderic
+		liege = d_angria
+	}
+}
+
+d_holstein = {
+	361.1.1 = {
+		holder = myrgings_01
+		government = tribal_government
+	}
+	389.1.1 = {
+		holder = myrgings_02
+		liege = k_saxony
+	}
+	423.1.1 = {
+		holder = iceling_03
+	}
+	456.1.1 = {
+		holder = iceling_04
+	}
+	478.1.1 = {
+		holder = iceling_05
+	}
+	489.1.1 = {
+		holder = iceling_06
+	}
+	515.1.1 = {
+		holder = 0
+	}
+	632.1.1 = {
+		holder = jutland_03
+	}
+	700.1.1 = {
+		de_jure_liege = k_saxony
+		liege = k_saxony
+	}
+	761.1.1 = {
+		holder = 190474 #Hesso
+	}
+}
+
+
+c_lubeck = {
+	361.1.1 = {
+		holder = myrgings_01
+		government = tribal_government
+	}
+	389.1.1 = {
+		holder = myrgings_02
+	}
+	423.1.1 = {
+		holder = iceling_03
+	}
+	456.1.1 = {
+		holder = iceling_04
+	}
+	478.1.1 = {
+		holder = iceling_05
+	}
+	489.1.1 = {
+		holder = iceling_06
+	}
+	502.1.1 = {
+		holder = jutland_04
+		liege = k_saxony
+	}
+	632.1.1 = {
+		holder = jutland_03
+	}
+}
+c_ditmarschen = {
+	361.1.1 = {
+		holder = myrgings_01
+		government = tribal_government
+	}
+	389.1.1 = {
+		holder = myrgings_02
+	}
+	423.1.1 = {
+		holder = iceling_03
+	}
+	456.1.1 = {
+		holder = iceling_04
+	}
+	478.1.1 = {
+		holder = iceling_05
+	}
+	489.1.1 = {
+		holder = iceling_06
+	}
+	502.1.1 = {
+		holder = jutland_04
+		liege = k_saxony
+	}
+	632.1.1 = {
+		holder = jutland_03
+	}
+}
+
+c_stade = {
+	361.1.1 = {
+		holder = chauci_01
+		liege = k_saxony
+		government = tribal_government
+	}
+	400.1.1 = {
+		holder = chauci_02
+		liege = k_saxony
+	}
+	430.1.1 = {
+		holder = chauci_03
+		liege = k_saxony
+	}
+	469.1.1 = {
+		holder = chauci_04
+		liege = k_saxony
+	}
+	489.1.1 = {
+		holder = iceling_06
+	}
+	502.1.1 = {
+		holder = jutland_04
+		liege = k_saxony
+	}
+	632.1.1 = {
+		holder = jutland_03
+	}
+	761.1.1 = {
+		liege = d_holstein
+	}
+	761.1.1 = {
+		holder = 190468 #Richfrid
+	}
+	
+}
+
+
+
+

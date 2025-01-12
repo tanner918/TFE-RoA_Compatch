@@ -1,0 +1,44 @@
+﻿
+#### bayirku
+kurykan_1 = {
+	name = Bilge # Fictional
+	dynasty = dynasty_kurikan
+	religion = tengri_pagan
+	culture = kurykan
+	father=bayirku_4
+	
+	477.1.1 = { birth = yes }
+	520.1.1 = { death = yes }
+}
+kurykan_2 = {
+	name = Tumidu # Fictional
+	dynasty = dynasty_kurikan
+	religion = tengri_pagan
+	culture = kurykan
+	father = kurykan_1
+	
+	497.1.1 = { birth = yes }
+	550.1.1 = { death = yes }
+}
+kurykan_3 = {
+	name = Xiezhilue # Fictional
+	dynasty = dynasty_kurikan
+	religion = tengri_pagan
+	culture = kurykan
+	father = kurykan_1
+	trait = twin
+	
+	498.1.1 = { birth = yes }
+	535.1.1 = { death = yes }
+}
+kurykan_4 = {
+	name = Kotrag # Fictional
+	dynasty = dynasty_kurikan
+	religion = tengri_pagan
+	culture = kurykan
+	father = kurykan_1
+	trait = twin
+	
+	498.1.1 = { birth = yes }
+	535.1.1 = { death = yes }
+}

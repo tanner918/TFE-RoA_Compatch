@@ -1,0 +1,235 @@
+﻿
+
+
+#############################################################
+# 
+# DAYUAN REMNANTS
+# 
+# Done by Cybrxkhan
+# 
+#############################################################
+
+# Fictitious Dayuan remnant
+# Dayuan might have survived up to the early 4th century but probably gone by 5th century
+# This character and his son are meant to represent the survival of a Dayuan rump state following the Hunnic conquest
+dayuan_001 = {
+	name= "Nipandaka"
+	dynasty = dynasty_dayuan
+	religion="khurmazta"
+	culture="ferghanan"
+	331.7.8 = {
+		birth = yes
+	}
+	349.1.1 = {
+		add_spouse = dayuan_004
+	}
+	382.11.17 = {
+		death = yes
+	}
+}
+dayuan_002 = {
+	name= "Tayasham"
+	dynasty = dynasty_dayuan
+	religion="khurmazta"
+	culture="ferghanan"
+	father=dayuan_001
+	mother=dayuan_004
+	350.3.4 = {
+		birth = yes
+	}
+	406.9.2 = {
+		death = yes
+	}
+}
+dayuan_003 = {
+	name= "Armaiti"
+	female=yes
+	dynasty = dynasty_dayuan
+	religion="khurmazta"
+	culture="ferghanan"
+	father=dayuan_001
+	mother=dayuan_004
+	357.6.11 = {
+		birth = yes
+	}
+	401.6.23 = {
+		death = yes
+	}
+}
+dayuan_004 = {
+	name= "Tisyarakshita"
+	female=yes
+	religion="khurmazta"
+	culture="ferghanan"
+	332.4.17 = {
+		birth = yes
+	}
+	391.9.29 = {
+		death = yes
+	}
+}
+
+
+
+
+#############################################################
+# 
+# MISCELLANEOUS
+# 
+# Done by Cybrxkhan
+# Fictitious rulres of Ferghanan petty principalities under Hephthalites
+#
+#############################################################
+
+# Fictitious ruler of Khujand under Hephthalites
+# They own both two instead of one county to represent their relative economic power to the other Ferghanan principalities at this time
+ferghanan_misc_001 = {
+	name = "Sudarrjam"
+	religion = "khurmazta"
+	culture = "ferghanan"	
+	455.6.12 = {
+		birth = yes
+	}
+	529.7.24 = {
+		death = yes
+	}	
+}
+ferghanan_misc_002 = {
+	name = "Nipandaka"
+	religion = "khurmazta"
+	culture = "ferghanan"
+	father = ferghanan_misc_001
+	490.9.7 = {
+		birth = yes
+	}
+	546.8.17 = {
+		death = yes
+	}	
+}
+
+# Fictitious ruler of Andijan under Hephthalites
+# Kuba (in Andijan) was a major Buddhist center in this period
+# So I made them Buddhist for variety
+ferghanan_misc_003 = {
+	name = "Bahudhiva"
+	religion = "vajrayana"
+	culture = "ferghanan"	
+	449.2.1 = {
+		birth = yes
+	}
+	509.3.17 = {
+		death = yes
+	}	
+}
+ferghanan_misc_004 = {
+	name = "Ysambasta"
+	religion = "vajrayana"
+	culture = "ferghanan"	
+	father = ferghanan_misc_003
+	489.1.14 = {
+		birth = yes
+	}
+	548.9.2 = {
+		death = yes
+	}	
+}
+
+# Fictitious ruler of Fergana under Hephthalites
+ferghanan_misc_005 = {
+	name = "Kayam"
+	religion = "khurmazta"
+	culture = "ferghanan"	
+	443.4.11 = {
+		birth = yes
+	}
+	492.10.19 = {
+		death = yes
+	}	
+}
+ferghanan_misc_006 = {
+	name = "Jabgu"
+	religion = "khurmazta"
+	culture = "ferghanan"	
+	father = ferghanan_misc_005
+	477.3.5 = {
+		birth = yes
+	}
+	540.10.20 = {
+		death = yes
+	}	
+}
+
+# Fictitious ruler of Nasrabad under Hephthalites
+ferghanan_misc_007 = {
+	name = "Purgula"
+	religion = "khurmazta"
+	culture = "ferghanan"	
+	450.12.9 = {
+		birth = yes
+	}
+	531.8.7 = {
+		death = yes
+	}	
+}
+ferghanan_misc_008 = {
+	name = "Shura"
+	religion = "khurmazta"
+	culture = "ferghanan"
+	father = ferghanan_misc_007	
+	488.4.2 = {
+		birth = yes
+	}
+	556.9.12 = {
+		death = yes
+	}	
+}
+
+
+# Fictitious early rulers of Khujand under Kidarites
+ferghanan_misc_009 = {
+	name = "Farnkhund"
+	religion = "khurmazta"
+	culture = "ferghanan"
+	339.6.30 = {
+		birth = yes
+	}
+	394.2.9 = {
+		death = yes
+	}	
+}
+
+ferghanan_misc_010 = {
+	name = "Dishebo"
+	religion = "khurmazta"
+	culture = "ferghanan"
+	374.1.31 = {
+		birth = yes
+	}
+	427.5.13 = {
+		death = yes
+	}	
+}
+
+ferghanan_misc_011 = {
+	name = "Vijita"
+	religion = "vajrayana"
+	culture = "ferghanan"
+	330.4.2 = {
+		birth = yes
+	}
+	390.1.1 = {
+		death = yes
+	}	
+}
+
+ferghanan_misc_012 = {
+	name = "Irasamga"
+	religion = "khurmazta"
+	culture = "ferghanan"
+	330.4.2 = {
+		birth = yes
+	}
+	390.1.1 = {
+		death = yes
+	}	
+}

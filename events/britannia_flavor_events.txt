@@ -1,0 +1,228 @@
+﻿
+
+namespace = britannia_flavor
+
+# Discover a Kentish Ragstone = Dragons!
+# Original loc by Omega Corps
+# Adapted/coded by Cybrxkhan
+britannia_flavor.0001 = {
+	title = britannia_flavor.0001.t
+	desc = britannia_flavor.0001.desc
+	theme = stewardship_domain_focus
+	override_background = { reference = wilderness }
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	trigger = {
+		OR = {
+			culture = { has_cultural_pillar = heritage_west_germanic }
+			culture = { has_cultural_pillar = heritage_central_germanic }
+		}
+		has_title = title:c_kent
+		title:c_kent = {
+			NOT = { has_county_modifier = TFE_kentish_ragstone_construction }
+		}
+		NOT = { has_global_variable = TFE_kentish_ragstone_happened }
+	}
+
+	immediate = {
+		set_global_variable = {
+			name = TFE_kentish_ragstone_happened
+			value = yes
+		}
+		title:c_kent = {
+			save_scope_as = kent
+		}		
+		create_character = {
+			template = kentish_ragstone_roman_template	
+			gender_female_chance = 0			
+			save_scope_as = roman
+		}
+	}
+
+	option = {
+		name = britannia_flavor.0001.a
+		add_dread = 10
+		title:c_kent = {
+			add_county_modifier = {
+				modifier = TFE_kentish_ragstone_construction
+			}
+		}
+		stress_impact = {
+			compassionate = minor_stress_impact_gain
+			generous = minor_stress_impact_gain
+			just = minor_stress_impact_gain
+		}
+		trigger_event = {
+			id = britannia_flavor.0002
+			days = { 365 730 }				
+		}
+		hidden_effect = {
+			scope:roman = {
+				death = {
+					death_reason = death_disappearance
+				}			
+			}
+		}
+	}
+
+	option = {
+		name = britannia_flavor.0001.b
+		add_gold = 25
+		add_prestige = -100
+		custom_tooltip = britannia_flavor.0001.b.tooltip
+		add_visiting_courtier = scope:roman
+		hidden_effect = {
+			every_culture_global = {
+				limit = { has_cultural_pillar = heritage_latin }
+				change_cultural_acceptance = {
+					target = root.culture
+					value = 1
+					desc = TFE_kentish_ragstone_cultural_acceptnce_good
+				}
+			}
+		}
+		stress_impact = {
+			paranoid = minor_stress_impact_gain
+			stubborn = minor_stress_impact_gain
+		}
+		trigger_event = {
+			id = britannia_flavor.0002
+			days = { 365 730 }				
+		}
+	}
+
+	option = {
+		name = britannia_flavor.0001.c
+		add_prestige = 50
+		title:c_kent = {
+			add_county_modifier = {
+				modifier = TFE_kentish_ragstone_class_tensions
+			}
+		}	
+		if = {
+			limit = {
+				has_trait = generous
+			}
+			stress_impact = {
+				generous = medium_stress_impact_gain
+			}	
+		}
+		else = {			
+			stress_impact = {
+				arrogant = minor_stress_impact_loss
+				ambitious = minor_stress_impact_loss
+			}	
+		}
+		hidden_effect = {
+			every_culture_global = {
+				limit = { has_cultural_pillar = heritage_latin }
+				change_cultural_acceptance = {
+					target = root.culture
+					value = 1
+					desc = TFE_kentish_ragstone_cultural_acceptnce_bad
+				}
+			}
+			scope:roman = {
+				death = {
+					death_reason = death_disappearance
+				}			
+			}
+		}
+	}
+
+}
+
+# Part 2
+britannia_flavor.0002 = {
+	title = britannia_flavor.0002.t
+	desc = britannia_flavor.0002.desc
+	theme = stewardship_domain_focus
+	override_background = { reference = wilderness }
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+
+	option = {
+		name = britannia_flavor.0002.a
+		hidden_effect = {
+			every_culture_global = {
+				limit = { has_cultural_pillar = heritage_latin }
+				change_cultural_acceptance = {
+					target = root.culture
+					value = 3
+					desc = TFE_kentish_ragstone_cultural_acceptnce_good
+				}
+			}
+		}
+		add_piety = -25
+		add_character_modifier = {
+			modifier = TFE_kentish_ragstone_giant_fantasies
+			years = 30
+		}
+	}
+
+	option = {
+		name = britannia_flavor.0002.b
+		add_prestige = 50
+		add_piety = 50
+		if = {
+			limit = {
+				exists = house
+			}
+			house = {
+				add_house_modifier = {
+					modifier = TFE_kentish_ragstone_here_be_dragons
+					years = 30
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_trait = paranoid
+			}
+			stress_impact = {
+				paranoid = minor_stress_impact_gain
+			}
+		}
+		else = {
+			stress_impact = {
+				zealous = miniscule_stress_impact_loss
+				ambitious = minor_stress_impact_loss
+				arrogant = minor_stress_impact_loss
+			}
+		}
+	}
+
+	option = {
+		name = britannia_flavor.0002.c
+		add_prestige = -50
+		add_gold = 30
+		add_character_modifier = {
+			modifier = TFE_kentish_ragstone_ignoring_annoyances
+			years = 30
+		}
+		if = {
+			limit = {
+				has_trait = calm
+			}
+			stress_impact = {
+				calm = miniscule_stress_impact_loss
+			}
+		}
+		else = {
+			stress_impact = {
+				impatient = minor_stress_impact_loss
+				stubborn = minor_stress_impact_loss
+			}
+		}
+	}
+
+}
+

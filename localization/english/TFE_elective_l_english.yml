@@ -1,0 +1,60 @@
+﻿l_english:
+ rashidun_elective_succession_law:0 "Rashidun Elective"
+ rashidun_elective_succession_law_subname:0 "Rashidun"
+
+ rashidun_elective_candidates:0 "Wise Close Family, Vassals and Sahabis"
+ rashidun_elective_candidates_tooltip:0 "To be considered a legitimate heir to the Caliphate, one must have 15 or more in martial, learning, diplomacy, and stewardship or be a sahabi."
+
+ rashidun_elective_electors:0 "Rashidun Electors"
+ rashidun_elective_electors_tooltip:0 "The Rashidun Candidates vote amongst themselves."
+
+ polish_elective_succession_law:0 "Polish Elective"
+ polish_elective_succession_law_subname:0 "Sejm"
+ polish_elective_electors:0 "All direct and indirect De Jure vassals"
+ polish_elective_electors_tooltip:1 "In order to be a valid elector of the Sejm, a character must be a De Jure vassal, either direct or indirect."
+ polish_elective_candidates:0 "Extended Family and Claimants"
+ polish_elective_candidates_tooltip:1 "In order to be a valid candidate, a character must either be part of the current ruler's [close_family|E] or [extended_family|E], or be a title claimant."
+
+
+ gana_sangha_elective_succession_law:0 "Gana Sangha Elective"
+ gana_sangha_elective_succession_law_subname:0 "Gana Sangha"
+
+ gana_sangha_elective_candidates:0 "Direct Vassals, Claimants, and Children"
+ gana_sangha_elective_candidates_tooltip:0 "In order to be a valid candidate of the Gana Sangha, a character must be a direct [de_jure|E] vassal, a claimant, or one of the ruler's current children."
+
+ gana_sangha_elective_electors:0 "Direct Vassals, Claimants, and Related Knights"
+ gana_sangha_elective_electors_tooltip:0 "In order to be a valid elector of the Gana Sangha, a character must be a direct [de_jure|E] vassal, a claimant, or one of the army commanders related to the ruler."
+ 
+ culture_parameter_gothic_elective_enabled:0 "Can enact the #high $gothic_elective_succession_law$#! [succession_law|E]"
+
+ gothic_elective_succession_law:1 "Gothic Elective"
+ gothic_elective_succession_law_subname:0 "Gothic"
+ gothic_elective_succession_law_effects:2 "The [ruler|E] and all same heritage [vassals|E] (except Barons) can nominate a [title_heir|E] amongst the ruler's [extended_family|E], any available [claimants|E], and themselves. [voting_power|E] in this [succession_law|E] is influenced by the [elector|E]'s rank."
+
+ gothic_elective_candidates:0 "Same Heritage Vassals, Claimants, and Extended Family"
+ gothic_elective_candidates_tooltip:0 "In order to be a valid candidate, a character must be a same heritage direct vassal, a claimant, or part of the ruler's extended family."
+
+ gothic_elective_electors:0 "Same Heritage Vassals"
+ gothic_elective_electors_tooltip:0 "In order to be a valid elector, a character must be a same heritage direct vassal."
+
+ tooltip_gothic_elector_vote_candidate_ruling_house:0 "[candidate.GetShortUIName|U] is of the ruling dynasty: $VALUE|=+0$"
+
+ hunnic_elective_succession_law:1 "Nomadic Elective"
+ hunnic_elective_succession_law_subname:0 "Nomadic"
+ hunnic_elective_succession_law_effects:2 "The [ruler|E] and all same heritage or nomadic [vassals|E] (except Barons) can nominate a [title_heir|E] amongst the ruler's [extended_family|E], any available [claimants|E], and themselves. [voting_power|E] in this [succession_law|E] is influenced primarily by the [elector|E]'s martial and prowess."
+
+ hunnic_elective_candidates:0 "Same Heritage or Nomadic Vassals, Claimants, and Family"
+ hunnic_elective_candidates_tooltip:0 "In order to be a valid candidate, a character must be a same heritage or nomadic direct vassal, a claimant, or part of the ruler's extended family."
+
+ hunnic_elective_electors:0 "Same Heritage or Nomadic Vassals"
+ hunnic_elective_electors_tooltip:0 "In order to be a valid elector, a character must be a same heritage direct vassal."
+
+ tooltip_hunnic_vote_strength_elector_martial:0 "Elector's Martial: $VALUE|=+0$"
+ tooltip_hunnic_vote_strength_elector_prowess:0 "Elector's Prowess: $VALUE|=+0$"
+ tooltip_hunnic_vote_strength_elector_marshal:0 "Competence as Counselor: $VALUE|=+0$"
+
+ culture_parameter_hunnic_elective_enabled:0 "Can enact the #high $hunnic_elective_succession_law$#! [succession_law|E]"
+ tooltip_hun_elector_vote_candidate_hun:0 "[candidate.GetShortUIName|U] is the Hun: $VALUE|=+0$"
+ tooltip_hunnic_vote_strength_candidate_martial:0 "Candidate's Martial: $VALUE|=+0$"
+ tooltip_hunnic_vote_strength_candidate_prowess:0 "Candidate's Prowess: $VALUE|=+0$"
+ 

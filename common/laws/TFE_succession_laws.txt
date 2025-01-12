@@ -1,0 +1,199 @@
+﻿title_succession_laws = {
+	rashidun_elective_succession_law = {
+		can_have = {
+			has_title = title:e_rashidun
+			government_has_flag = government_is_caliphate
+		}
+		can_pass = {
+			always = yes
+		}
+		can_title_have = {
+            this = title:e_rashidun
+        }
+		succession = {
+			order_of_succession = election
+			election_type = rashidun_elective
+		}
+		flag = elective_succession_law
+		revoke_cost = {
+			prestige = 10000
+		}
+		pass_cost = {
+			prestige = change_title_succession_law_prestige_cost
+		}
+	}
+	imperial_elective_succession_law = {
+		can_have = {
+			OR = {
+				has_title = title:e_western_roman_empire
+				has_title = title:e_roman_empire
+				has_title = title:e_byzantium
+			}
+			government_has_flag = government_is_imperial
+			government_has_flag = government_is_administrative
+		}
+		can_pass = {
+			always = yes
+		}
+		can_title_have = {
+            OR = {
+                this = title:e_western_roman_empire
+				this = title:e_roman_empire
+				this = title:e_byzantium
+            }
+        }
+		succession = {
+			order_of_succession = election
+			election_type = imperial_elective
+		}
+		flag = elective_succession_law
+		title_allegiance_opinion = 10
+		modifier = {
+			vassal_limit = 20
+		}
+		revoke_cost = {
+			prestige = change_title_succession_law_prestige_cost
+		}
+		pass_cost = {
+			prestige = change_title_succession_law_prestige_cost
+		}
+	}
+	polish_elective_succession_law = {
+		can_have = {
+			has_government = feudal_government
+			has_title = title:e_plc
+			highest_held_title_tier = tier_empire
+		}
+		can_pass = {
+			can_change_title_law_trigger = yes
+		}
+		can_title_have = {
+			can_title_have_law_general_trigger = yes
+		}
+		succession = {
+			order_of_succession = election
+			election_type = polish_elective
+		}
+		flag = elective_succession_law
+		title_allegiance_opinion = 10
+		revoke_cost = {
+			prestige = change_title_succession_law_prestige_cost
+		}
+		pass_cost = {
+			prestige = change_title_succession_law_prestige_cost
+		}
+	}
+	#Ancient Persian/Zoroastrian Elective
+	mahestan_elective_succession_law = {
+		can_have = {
+			government_has_flag = government_is_eranshar
+			highest_held_title_tier >= tier_kingdom
+			is_independent_ruler = yes
+		}
+		can_pass = {
+			can_change_title_law_trigger = yes
+			has_religion = religion:zoroastrianism_religion
+		}
+		can_title_have = {
+			can_title_have_law_general_trigger = yes
+		}
+		#modifier = {
+		#	vassal_limit = 10
+		#}
+		succession = {
+			order_of_succession = election
+			election_type = mahestan_elective
+		}
+		flag = elective_succession_law
+		title_allegiance_opinion = 5
+		revoke_cost = {
+			prestige = change_hre_title_succession_law_prestige_cost
+		}
+		pass_cost = {
+			prestige = change_title_succession_law_prestige_cost
+		}
+	}
+
+	gana_sangha_elective_succession_law = {
+		can_have = {
+			government_has_flag = government_is_gana_sangha
+			culture ?= {
+				has_cultural_tradition = tradition_gana_sangha
+			}
+		}
+		can_pass = {
+			always = yes
+		}
+		can_title_have = {
+            always = yes
+        }
+		succession = {
+			order_of_succession = election
+			election_type = gana_sangha_elective
+		}
+		flag = elective_succession_law
+		revoke_cost = {
+			prestige = 10000
+		}
+		pass_cost = {
+			prestige = change_title_succession_law_prestige_cost
+		}
+	}
+
+	gothic_elective_succession_law = {
+		can_have = {
+			OR = {
+				government_has_flag = government_is_feudal
+				government_has_flag = government_is_clan
+				government_has_flag = government_is_tribal
+			}
+			highest_held_title_tier >= tier_duchy
+		}
+		can_pass = {
+			can_change_title_law_trigger = yes
+			culture = { has_cultural_parameter = gothic_elective_enabled }
+		}
+		can_title_have = {
+			can_title_have_law_general_trigger = yes
+		}
+		succession = {
+			order_of_succession = election
+			election_type = gothic_elective
+		}
+		flag = elective_succession_law
+		title_allegiance_opinion = 5
+		revoke_cost = {
+			prestige = change_title_succession_law_prestige_cost
+		}
+		pass_cost = {
+			prestige = change_title_succession_law_prestige_cost
+		}
+	}
+
+	hunnic_elective_succession_law = {
+		can_have = {
+			government_has_flag = government_is_nomadic
+			highest_held_title_tier >= tier_duchy
+		}
+		can_pass = {
+			can_change_title_law_trigger = yes
+			culture = { has_cultural_parameter = hunnic_elective_enabled }
+		}
+		can_title_have = {
+			can_title_have_law_general_trigger = yes
+		}
+		succession = {
+			order_of_succession = election
+			election_type = hunnic_elective
+		}
+		flag = elective_succession_law
+		title_allegiance_opinion = 5
+		revoke_cost = {
+			prestige = change_title_succession_law_prestige_cost
+		}
+		pass_cost = {
+			prestige = change_title_succession_law_prestige_cost
+		}
+	}
+	
+}

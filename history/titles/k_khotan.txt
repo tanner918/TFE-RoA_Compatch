@@ -1,0 +1,1689 @@
+﻿
+k_khotan = {	
+	20.1.1 = {
+		change_development_level = 4
+	}
+	300.1.1 = {
+		change_development_level = 5
+	}
+	467.1.1 = {
+		change_development_level = 6
+	}
+	532.1.1 = {
+		change_development_level = 7
+	}
+	632.1.1 = {
+		change_development_level = 8
+	}
+	768.1.1 = {
+		change_development_level = 9
+	}
+	1100.1.1 = {
+		change_development_level = 12
+	}
+
+	#Khotan Kings
+	100.1.1 = {
+		holder = 166632
+		government = trade_city_state_government
+	}
+	130.1.1 = {
+		holder = 166633
+	}
+	132.1.1 = {
+		holder = 166634
+	}
+	151.1.1 = {
+		holder = 166635
+	}
+	182.1.1 = {
+		holder = 166636
+	}
+	188.1.1 = {
+		holder = 166637
+	}
+	208.1.1 = {
+		holder = 166638
+	}
+	243.1.1 = {
+		holder = 166639
+	}
+	251.1.1 = {
+		holder = 166640
+	}
+	279.1.1 = {
+		holder = 166641
+	}
+	306.1.1 = {
+		holder = 166642
+	}
+	336.1.1 = {
+		holder = 166643
+	}
+	373.1.1 = {
+		holder = 166644
+	}
+	397.1.1 = {
+		holder = 166645
+	}
+	436.1.1 = {
+		holder = 166646
+	}
+	451.1.1 = {
+		holder = 166647
+	}
+	476.1.1 = {
+		liege = e_hephthalite
+	}
+	496.1.1 = {
+		holder = 166648
+	}
+	512.1.1 = {
+		holder = 166649
+	}
+	531.1.1 = {
+		holder = 166650
+	}
+	560.1.1 = {
+		liege = 0
+	}
+	578.1.1 = {
+		holder = 166651
+	}
+	596.1.1 = {
+		holder = 166652
+	}
+	612.1.1 = {
+		holder = 166653
+	}
+	628.1.1 = {
+		holder = 166654
+	}
+	#640 - Tang Dynasty establishes control over Khotan
+	649.1.1 = {
+		holder = 166655
+	}
+	662.1.1 = {
+		holder = 166656
+	}#
+	#Conquered by Tibet
+	665.1.1 = {
+		liege = e_tibet
+	}
+	673.1.1 = {
+		holder = 166657
+	}
+	680.1.1 = {
+		holder = 166658
+	}#Regent of Khotan
+	#Tang Dynasty regains influence over Khotan
+	692.1.1 = {
+		liege = 0
+		holder = 166659
+	}
+	719.1.1 = {
+		holder = 166660
+	}
+	725.1.1 = {
+		holder = 166661
+	}
+	736.1.1 = {
+		holder = 166662
+	}
+	740.1.1 = {
+		holder = 166663
+	}
+	747.1.1 = {
+		holder = 166664
+	}
+	756.1.1 = {
+		holder = 166665
+	}
+}
+
+
+d_khotan = {
+	#Khotan Kings
+	100.1.1 = {
+		holder = 166632
+		liege = k_khotan
+		government = trade_city_state_government
+	}
+	130.1.1 = {
+		holder = 166633
+	}
+	132.1.1 = {
+		holder = 166634
+	}
+	151.1.1 = {
+		holder = 166635
+	}
+	182.1.1 = {
+		holder = 166636
+	}
+	188.1.1 = {
+		holder = 166637
+	}
+	208.1.1 = {
+		holder = 166638
+	}
+	243.1.1 = {
+		holder = 166639
+	}
+	251.1.1 = {
+		holder = 166640
+	}
+	279.1.1 = {
+		holder = 166641
+	}
+	306.1.1 = {
+		holder = 166642
+	}
+	336.1.1 = {
+		holder = 166643
+	}
+	373.1.1 = {
+		holder = 166644
+	}
+	397.1.1 = {
+		holder = 166645
+	}
+	436.1.1 = {
+		holder = 166646
+	}
+	451.1.1 = {
+		holder = 166647
+	}
+	496.1.1 = {
+		holder = 166648
+	}
+	512.1.1 = {
+		holder = 166649
+	}
+	531.1.1 = {
+		holder = 166650
+	}
+	578.1.1 = {
+		holder = 166651
+	}
+	596.1.1 = {
+		holder = 166652
+	}
+	612.1.1 = {
+		holder = 166653
+	}
+	628.1.1 = {
+		holder = 166654
+	}
+	649.1.1 = {
+		holder = 166655
+	}
+	662.1.1 = {
+		holder = 166656
+	}#
+	673.1.1 = {
+		holder = 166657
+	}
+	680.1.1 = {
+		holder = 166658
+	}#Regent of Khotan
+	692.1.1 = {
+		holder = 166659
+	}
+	719.1.1 = {
+		holder = 166660
+	}
+	725.1.1 = {
+		holder = 166661
+	}
+	736.1.1 = {
+		holder = 166662
+	}
+	740.1.1 = {
+		holder = 166663
+	}
+	747.1.1 = {
+		holder = 166664
+	}
+	756.1.1 = {
+		holder = 166665
+	}
+}
+
+
+c_khotan = {
+	361.1.1 = {	change_development_level = 8 }
+	476.1.1 = {	change_development_level = 10 }
+	532.1.1 = {	change_development_level = 12 }
+	632.1.1 = {	change_development_level = 14 }
+	768.1.1 = {	change_development_level = 16 }
+	
+	#Khotan Kings
+	100.1.1 = {
+		liege = d_khotan
+		holder = 166632
+		government = trade_city_state_government
+	}
+	130.1.1 = {
+		holder = 166633
+	}
+	132.1.1 = {
+		holder = 166634
+	}
+	151.1.1 = {
+		holder = 166635
+	}
+	182.1.1 = {
+		holder = 166636
+	}
+	188.1.1 = {
+		holder = 166637
+	}
+	208.1.1 = {
+		holder = 166638
+	}
+	243.1.1 = {
+		holder = 166639
+	}
+	251.1.1 = {
+		holder = 166640
+	}
+	279.1.1 = {
+		holder = 166641
+	}
+	306.1.1 = {
+		holder = 166642
+	}
+	336.1.1 = {
+		holder = 166643
+	}
+	373.1.1 = {
+		holder = 166644
+	}
+	397.1.1 = {
+		holder = 166645
+	}
+	436.1.1 = {
+		holder = 166646
+	}
+	451.1.1 = {
+		holder = 166647
+	}
+	496.1.1 = {
+		holder = 166648
+	}
+	512.1.1 = {
+		holder = 166649
+	}
+	531.1.1 = {
+		holder = 166650
+	}
+	578.1.1 = {
+		holder = 166651
+	}
+	596.1.1 = {
+		holder = 166652
+	}
+	612.1.1 = {
+		holder = 166653
+	}
+	628.1.1 = {
+		holder = 166654
+	}
+	649.1.1 = {
+		holder = 166655
+	}
+	662.1.1 = {
+		holder = 166656
+	}#
+	673.1.1 = {
+		holder = 166657
+	}
+	680.1.1 = {
+		holder = 166658
+	}#Regent of Khotan
+	692.1.1 = {
+		holder = 166659
+	}
+	719.1.1 = {
+		holder = 166660
+	}
+	725.1.1 = {
+		holder = 166661
+	}
+	736.1.1 = {
+		holder = 166662
+	}
+	740.1.1 = {
+		holder = 166663
+	}
+	747.1.1 = {
+		holder = 166664
+	}
+	756.1.1 = {
+		holder = 166665
+	}
+}
+d_charkliq = {
+	33.1.1 = {
+		holder = shanshan_001
+		government = trade_city_state_government
+	}
+	74.5.9 = {
+		holder = shanshan_002
+	}
+	112.4.8 = {
+		holder = shanshan_003
+	}
+	124.7.13 = {
+		holder = shanshan_004
+	}
+	200.5.8 = {
+		holder = shanshan_005
+	}
+	236.3.6 = {
+		holder = shanshan_006
+	}
+	244.4.4 = {
+		holder = shanshan_007
+	}
+	252.8.18 = {
+		holder = shanshan_008
+	}
+	290.9.9 = {
+		holder = shanshan_009
+	}
+	319.3.4 = {
+		holder = shanshan_010
+	}
+	331.4.2 = {
+		holder = shanshan_011
+	}
+	336.12.14 = {
+		holder = shanshan_012
+	}
+	359.11.14 = {
+		holder = shanshan_013
+	}
+	386.4.16 = {
+		holder = shanshan_014
+	}
+	422.2.24 = {
+		holder = shanshan_015
+	}
+	442.4.1 = {
+		holder = shanshan_016
+	}
+	445.1.1 = {
+		holder = 0
+	}
+	# Appointed by Northern Wei
+	448.1.1 = {
+		holder = han_misc_1
+		liege = k_xia
+		government = feudal_government
+	}
+	# Conquered by Rouran???
+	532.1.1 = {
+		holder = tocharian_misc_001
+		liege = e_hephthalite
+	}
+}
+
+
+c_charkliq = {
+	361.1.1 = {	change_development_level = 2 }
+	476.1.1 = {	change_development_level = 3 }
+	532.1.1 = {	change_development_level = 4 }
+	632.1.1 = {	change_development_level = 5 }
+	768.1.1 = {	change_development_level = 6 }
+	33.1.1 = {
+		liege = d_charkliq
+		holder = shanshan_001
+		government = trade_city_state_government
+	}
+	74.5.9 = {
+		holder = shanshan_002
+	}
+	112.4.8 = {
+		holder = shanshan_003
+	}
+	124.7.13 = {
+		holder = shanshan_004
+	}
+	200.5.8 = {
+		holder = shanshan_005
+	}
+	236.3.6 = {
+		holder = shanshan_006
+	}
+	244.4.4 = {
+		holder = shanshan_007
+	}
+	252.8.18 = {
+		holder = shanshan_008
+	}
+	290.9.9 = {
+		holder = shanshan_009
+	}
+	319.3.4 = {
+		holder = shanshan_010
+	}
+	331.4.2 = {
+		holder = shanshan_011
+	}
+	336.12.14 = {
+		holder = shanshan_012
+	}
+	359.11.14 = {
+		holder = shanshan_013
+	}
+	386.4.16 = {
+		holder = shanshan_014
+	}
+	422.2.24 = {
+		holder = shanshan_015
+	}
+	442.4.1 = {
+		holder = shanshan_016
+	}
+	445.1.1 = {
+		liege = 0
+	}
+	448.1.1 = {
+		holder = han_misc_1
+		liege = k_xia
+		government = feudal_government
+	}
+	720.1.1 = {
+		holder = 166742
+	}
+	764.1.1 = {
+		holder = 166743
+	}
+}
+
+c_karghalik = {
+	# Kingdom of Zihe
+	351.1.1 = {
+		liege = d_khotan
+		holder = saka_misc_001
+		government = trade_city_state_government
+	}
+	394.7.2 = {
+		holder = saka_misc_002
+	}
+	451.9.12 = {
+		holder = saka_misc_003
+	}
+	463.3.22 = {
+		holder = saka_misc_004
+	}
+	512.1.1 = {
+		holder = 166649
+	}
+	531.1.1 = {
+		holder = 166650
+	}
+	578.1.1 = {
+		holder = 166651
+	}
+	596.1.1 = {
+		holder = 166652
+	}
+	612.1.1 = {
+		holder = 166653
+	}
+	628.1.1 = {
+		holder = 166654
+	}
+	649.1.1 = {
+		holder = 166655
+	}
+	662.1.1 = {
+		holder = 166656
+	}#
+	673.1.1 = {
+		holder = 166657
+	}
+	680.1.1 = {
+		holder = 166658
+	}#Regent of Khotan
+	692.1.1 = {
+		holder = 166659
+	}
+	719.1.1 = {
+		holder = 166660
+	}
+	725.1.1 = {
+		holder = 166661
+	}
+	736.1.1 = {
+		holder = 166662
+	}
+	740.1.1 = {
+		holder = 166663
+	}
+	747.1.1 = {
+		holder = 166664
+	}
+	756.1.1 = {
+		holder = 166665
+	}
+}
+
+
+c_keriya = {
+	#Khotan Kings
+	100.1.1 = {
+		liege = d_khotan
+		holder = 166632
+		government = trade_city_state_government
+	}
+	130.1.1 = {
+		holder = 166633
+	}
+	132.1.1 = {
+		holder = 166634
+	}
+	151.1.1 = {
+		holder = 166635
+	}
+	182.1.1 = {
+		holder = 166636
+	}
+	188.1.1 = {
+		holder = 166637
+	}
+	208.1.1 = {
+		holder = 166638
+	}
+	243.1.1 = {
+		holder = 166639
+	}
+	251.1.1 = {
+		holder = 166640
+	}
+	# Under the Loulan/Shanshan Kingdom
+	279.1.1 = {
+		holder=shanshan_020
+		liege = "d_charkliq"
+	}
+	303.4.2 = {
+		holder=shanshan_021
+	}
+	311.6.9 = {
+		holder=shanshan_022
+	}
+	313.2.12 = {
+		holder=shanshan_023
+	}
+	316.9.2 = {
+		holder=shanshan_024
+	}
+	327.1.14 = {
+		holder=shanshan_025
+	}
+	332.4.9 = {
+		holder=shanshan_026
+	}
+	341.6.7 = {
+		holder=shanshan_027
+	}
+	349.5.1 = {
+		holder=shanshan_028
+	}
+	390.6.1 = {
+		holder=shanshan_029
+	}
+	465.1.1 = {
+		holder=shanshan_030
+	}
+	486.9.2 = {
+		holder = 166647
+		liege = d_khotan
+	}
+	496.1.1 = {
+		holder = 166648
+	}
+	512.1.1 = {
+		holder = 166649
+	}
+	531.1.1 = {
+		holder = 166650
+	}
+	578.1.1 = {
+		holder = 166651
+	}
+	596.1.1 = {
+		holder = 166652
+	}
+	612.1.1 = {
+		holder = 166653
+	}
+	628.1.1 = {
+		holder = 166654
+	}
+	649.1.1 = {
+		holder = 166655
+	}
+	662.1.1 = {
+		holder = 166656
+	}#
+	673.1.1 = {
+		holder = 166657
+	}
+	680.1.1 = {
+		holder = 166658
+	}#Regent of Khotan
+	692.1.1 = {
+		holder = 166659
+	}
+	719.1.1 = {
+		holder = 166660
+	}
+	725.1.1 = {
+		holder = 166661
+	}
+	736.1.1 = {
+		holder = 166662
+	}
+	740.1.1 = {
+		holder = 166663
+	}
+	747.1.1 = {
+		holder = 166664
+	}
+	756.1.1 = {
+		holder = 166665
+	}
+}
+
+
+c_cherchen = {
+	# Was part of Shanshan during this time
+	33.1.1 = {
+		liege = d_charkliq
+		holder = shanshan_001
+		government = trade_city_state_government
+	}
+	74.5.9 = {
+		holder = shanshan_002
+	}
+	112.4.8 = {
+		holder = shanshan_003
+	}
+	124.7.13 = {
+		holder = shanshan_004
+	}
+	200.5.8 = {
+		holder = shanshan_005
+	}
+	236.3.6 = {
+		holder = shanshan_006
+	}
+	244.4.4 = {
+		holder = shanshan_007
+	}
+	252.8.18 = {
+		holder = shanshan_008
+	}
+	290.9.9 = {
+		holder = shanshan_009
+	}
+	319.3.4 = {
+		holder = shanshan_010
+	}
+	331.4.2 = {
+		holder = shanshan_011
+	}
+	336.12.14 = {
+		holder = shanshan_012
+	}
+	359.11.14 = {
+		holder = shanshan_013
+	}
+	386.4.16 = {
+		holder = shanshan_014
+	}
+	422.2.24 = {
+		holder = shanshan_015
+	}
+	442.4.1 = {
+		holder = shanshan_016
+	}
+	445.1.1 = {
+		liege = 0
+	}
+	532.1.1 = {
+		holder = tocharian_misc_001
+		liege = e_hephthalite
+	}
+	720.1.1 = {
+		liege = d_khotan
+		holder = 166736
+		government = feudal_government
+	}
+	758.1.1 = {
+		holder = 166737
+	}
+}
+
+d_kashgar = {
+	350.1.1 = {
+		holder = kashgar_001
+		government = trade_city_state_government
+	}	
+	387.7.16 = {
+		holder = kashgar_002
+	}	
+	418.12.7 = {
+		holder = kashgar_003
+	}	
+	442.1.2 = {
+		liege = "e_hephthalite"
+	}	
+	447.9.20 = {
+		holder = kashgar_004
+	}
+	475.11.3 = {
+		holder = kashgar_005
+	}
+	509.3.2 = {
+		holder = kashgar_006
+	}
+	527.4.17 = {
+		holder = kashgar_007
+	}
+	560.1.1 = {
+		liege = 0
+	}
+	578.9.2 = {
+		holder = kashgar_007
+	}
+	582.4.16 = {
+		holder = kashgar_007
+	}
+	728.1.1 = {
+		holder = 166690 # Chinese recognition
+		government = feudal_government
+	}
+	760.1.1 = {
+		holder = 166691
+	}
+}
+
+c_kashgar = {
+	361.1.1 = {	change_development_level = 8 }
+	476.1.1 = {	change_development_level = 10 }
+	532.1.1 = {	change_development_level = 12 }
+	632.1.1 = {	change_development_level = 14 }
+	768.1.1 = {	change_development_level = 16 }
+
+	350.1.1 = {
+		holder = kashgar_001
+		government = trade_city_state_government
+	}	
+	387.7.16 = {
+		holder = kashgar_002
+	}	
+	418.12.7 = {
+		holder = kashgar_003
+	}		
+	447.9.20 = {
+		holder = kashgar_004
+	}
+	475.11.3 = {
+		holder = kashgar_005
+	}
+	509.3.2 = {
+		holder = kashgar_006
+	}
+	527.4.17 = {
+		holder = kashgar_007
+	}
+	578.9.2 = {
+		holder = kashgar_007
+	}
+	582.4.16 = {
+		holder = kashgar_007
+	}
+	
+	720.1.1 = {
+		holder = 166690
+		liege = d_kashgar
+		government = feudal_government
+	}
+	760.1.1 = {
+		holder = 166691
+	}
+}
+
+
+c_terek_pass = {
+	360.1.1 = {
+		holder = saka_misc_005
+		liege = d_kashgar
+		government = feudal_government
+	}	
+	393.6.9 = {
+		holder = saka_misc_006
+	}	
+	429.2.9 = {
+		holder = saka_misc_007
+	}		
+	468.3.30 = {
+		holder = saka_misc_008
+	}
+	506.4.1 = {
+		holder = kashgar_005		
+	}
+	509.3.2 = {
+		holder = kashgar_006
+	}
+	527.4.17 = {
+		holder = kashgar_007
+	}
+	578.9.2 = {
+		holder = kashgar_007
+	}
+	582.4.16 = {
+		holder = kashgar_007
+	}
+	720.1.1 = {
+		holder = 166690
+		government = feudal_government
+	}
+	760.1.1 = {
+		holder = 166691
+	}
+}
+
+
+c_aksu = {
+	91.1.1 = {
+		holder = kucha_001
+		liege=d_kucha
+		government = trade_city_state_government
+	}
+	106.4.4 = {
+		holder = kucha_002
+	}
+	127.4.6 = {
+		holder = kucha_003
+	}
+	187.6.13 = {
+		holder = kucha_004
+	}
+	222.2.2 = {
+		holder = kucha_005
+	}
+	280.8.25 = {
+		holder = kucha_006
+	}
+	326.7.11 = {
+		holder = agni_003
+	}
+	349.5.1 = {
+		holder = kucha_008
+	}
+	383.1.1 = {
+		holder = kucha_009
+	}
+	437.10.17 = {
+		holder = kucha_010
+	}
+	475.4.2 = {
+		holder = kucha_011
+	}
+	# Niruimo Zhunashen
+	521.10.8 = {
+		holder = kucha_014
+	}
+	562.3.13 = {
+		holder = kucha_013
+	}
+	581.2.20 = {
+		holder = 166708
+	}
+	624.1.1 = {
+		holder = 166709
+	}
+	646.1.1 = {
+		holder = 166710
+	}
+	689.1.1 = {
+		holder = 166711
+	}
+	719.1.1 = {
+		holder = 166712
+	}
+	720.1.1 = {
+		holder = 166702
+		government = feudal_government
+	}
+	762.1.1 = {
+		holder = 166703
+	}
+}
+
+
+c_yarkand = {
+	867.1.1 = { change_development_level = 7 }
+	
+	# Yarkand/Shache
+	# Being absorbed into Kashgar by this date
+	350.1.2 = {
+		holder = yarkand_001
+		liege = d_kashgar
+		government = trade_city_state_government
+	}
+	359.9.13 = {
+		holder = yarkand_002
+	}
+	400.12.30 = {
+		holder = yarkand_003
+	}
+	416.11.17 = {
+		holder = yarkand_004
+	}
+	468.9.2 = {
+		holder = yarkand_005
+	}
+	475.3.9 = {
+		holder = yarkand_006
+	}
+	510.3.16 = {
+		holder = yarkand_007
+	}
+	530.10.22 = {
+		holder = yarkand_008
+	}
+
+	#Yarkand Khotan vassals - fictional placeholders
+	760.1.1 = {
+		holder = saka0009
+	}
+}
+
+
+d_karashar = {
+	280.1.1 = {
+		holder = agni_001
+		government = trade_city_state_government
+	}
+	289.7.11 = {
+		holder = agni_003
+	}
+	326.7.11 = { # Appointed king of Yanqi by his father
+		holder = agni_004
+	}
+	385.7.28 = {
+		holder = agni_007
+	}
+	448.3.5 = {
+		holder = agni_008
+	}
+	# Becomes part of Gaochang for a short while under Qu Jia's second son
+	# No idea how long this arrangement lasts, so I'll just have it until Qu Jia's second son becomes kIng of Gaochang
+	500.5.5 = {
+		holder = agni_009
+		#liege = d_kara_khoja
+	}
+	530.2.1 = {
+		holder = agni_010
+		liege = 0
+	}
+	557.9.23 = {
+		holder = agni_011
+	}
+	601.4.9 = {
+		holder = agni_012
+	}
+	630.3.6 = {
+		holder = agni_013
+	}
+	644.5.1 = {
+		holder = agni_016
+	}
+	644.6.1 = {
+		holder = agni_017
+	}
+	648.9.2 = {
+		holder = agni_018
+	}
+	649.3.3 = {
+		holder = agni_013
+	}
+	652.9.18 = {
+		holder = agni_019
+	}
+	719.4.3 = {
+		holder = agni_020
+	}
+	735.1.11 = {
+		holder = agni_021
+	}
+	743.7.28 = {
+		holder = agni_022
+	}
+	766.9.12 = {
+		holder = agni_023
+	}
+}
+
+
+c_karashar = {
+	361.1.1 = {	change_development_level = 8 }
+	476.1.1 = {	change_development_level = 10 }
+	532.1.1 = {	change_development_level = 12 }
+	632.1.1 = {	change_development_level = 14 }
+	768.1.1 = {	change_development_level = 16 }
+	280.1.1 = {
+		holder = agni_001
+		government = trade_city_state_government
+		liege = d_karashar
+	}
+	289.7.11 = {
+		holder = agni_003
+	}
+	326.7.11 = { # Appointed king of Yanqi by his father
+		holder = agni_004
+	}
+	385.7.28 = {
+		holder = agni_007
+	}
+	448.3.5 = {
+		holder = agni_008
+	}
+	# Becomes part of Gaochang for a short while under Qu Jia's second son
+	# No idea how long this arrangement lasts, so I'll just have it until Qu Jia's second son becomes kIng of Gaochang
+	500.5.5 = {
+		holder = agni_009
+		#liege = d_kara_khoja
+	}
+	530.2.1 = {
+		holder = agni_010
+		liege = 0
+	}
+	557.9.23 = {
+		holder = agni_011
+	}
+	601.4.9 = {
+		holder = agni_012
+	}
+	630.3.6 = {
+		holder = agni_013
+	}
+	644.5.1 = {
+		holder = agni_016
+	}
+	644.6.1 = {
+		holder = agni_017
+	}
+	648.9.2 = {
+		holder = agni_018
+	}
+	649.3.3 = {
+		holder = agni_013
+	}
+	652.9.18 = {
+		holder = agni_019
+	}
+	719.4.3 = {
+		holder = agni_020
+	}
+	735.1.11 = {
+		holder = agni_021
+	}
+	743.7.28 = {
+		holder = agni_022
+	}
+	766.9.12 = {
+		holder = agni_023
+	}
+	# Becomes part of Gaochang (???)	
+	720.1.1 = {
+		holder = 166718
+	}
+	763.1.1 = {
+		holder = 166719
+	}
+}
+
+k_kucha = {	
+	20.1.1 = {
+		change_development_level = 4
+	}
+	300.1.1 = {
+		change_development_level = 5
+	}
+	467.1.1 = {
+		change_development_level = 6
+	}
+	532.1.1 = {
+		change_development_level = 7
+	}
+	632.1.1 = {
+		change_development_level = 8
+	}
+	768.1.1 = {
+		change_development_level = 9
+	}
+	1100.1.1 = {
+		change_development_level = 12
+	}
+	91.1.1 = {
+		holder = kucha_001
+		government = trade_city_state_government
+	}
+	106.4.4 = {
+		holder = kucha_002
+	}
+	127.4.6 = {
+		holder = kucha_003
+	}
+	187.6.13 = {
+		holder = kucha_004
+	}
+	222.2.2 = {
+		holder = kucha_005
+	}
+	280.8.25 = {
+		holder = kucha_006
+	}
+	326.7.11 = {
+		holder = agni_003
+	}
+	349.5.1 = {
+		holder = kucha_008
+	}
+	383.1.1 = {
+		holder = kucha_009
+	}
+	437.10.17 = {
+		holder = kucha_010
+	}
+	475.4.2 = {
+		holder = kucha_011
+	}
+	480.1.1 = {
+		liege = e_hephthalite
+	}
+	# Niruimo Zhunashen
+	521.10.8 = {
+		holder = kucha_014
+	}
+	560.1.1 = {
+		liege = 0
+	}
+	562.3.13 = {
+		holder = kucha_013
+	}
+	581.2.20 = {
+		holder = 166708
+	}
+	624.1.1 = {
+		holder = 166709
+	}
+	646.1.1 = {
+		holder = 166710
+	}
+	689.1.1 = {
+		holder = 166711
+	}
+	719.1.1 = {
+		holder = 166712
+	}
+	760.1.1 = {
+		holder = 166713
+	}
+}
+
+d_kucha = {
+	91.1.1 = {
+		holder = kucha_001
+		government = trade_city_state_government
+		liege = k_kucha
+	}
+	106.4.4 = {
+		holder = kucha_002
+	}
+	127.4.6 = {
+		holder = kucha_003
+	}
+	187.6.13 = {
+		holder = kucha_004
+	}
+	222.2.2 = {
+		holder = kucha_005
+	}
+	280.8.25 = {
+		holder = kucha_006
+	}
+	326.7.11 = {
+		holder = agni_003
+	}
+	349.5.1 = {
+		holder = kucha_008
+	}
+	383.1.1 = {
+		holder = kucha_009
+	}
+	437.10.17 = {
+		holder = kucha_010
+	}
+	475.4.2 = {
+		holder = kucha_011
+	}
+	480.1.1 = {
+		liege = e_hephthalite
+	}
+	# Niruimo Zhunashen
+	521.10.8 = {
+		holder = kucha_014
+	}
+	560.1.1 = {
+		liege = 0
+	}
+	562.3.13 = {
+		holder = kucha_013
+	}
+	581.2.20 = {
+		holder = 166708
+	}
+	624.1.1 = {
+		holder = 166709
+	}
+	646.1.1 = {
+		holder = 166710
+	}
+	689.1.1 = {
+		holder = 166711
+	}
+	719.1.1 = {
+		holder = 166712
+	}
+	760.1.1 = {
+		holder = 166713
+	}
+}
+
+c_kucha = {
+	361.1.1 = {	change_development_level = 8 }
+	476.1.1 = {	change_development_level = 10 }
+	532.1.1 = {	change_development_level = 12 }
+	632.1.1 = {	change_development_level = 14 }
+	768.1.1 = {	change_development_level = 16 }
+	91.1.1 = {
+		holder = kucha_001
+		liege=d_kucha
+		government = trade_city_state_government
+	}
+	106.4.4 = {
+		holder = kucha_002
+	}
+	127.4.6 = {
+		holder = kucha_003
+	}
+	187.6.13 = {
+		holder = kucha_004
+	}
+	222.2.2 = {
+		holder = kucha_005
+	}
+	280.8.25 = {
+		holder = kucha_006
+	}
+	326.7.11 = {
+		holder = agni_003
+	}
+	349.5.1 = {
+		holder = kucha_008
+	}
+	383.1.1 = {
+		holder = kucha_009
+	}
+	437.10.17 = {
+		holder = kucha_010
+	}
+	475.4.2 = {
+		holder = kucha_011
+	}
+	# Niruimo Zhunashen
+	521.10.8 = {
+		holder = kucha_014
+	}	
+	562.3.13 = {
+		holder = kucha_013
+	}
+	581.2.20 = {
+		holder = 166708
+	}
+	624.1.1 = {
+		holder = 166709
+	}
+	646.1.1 = {
+		holder = 166710
+	}
+	689.1.1 = {
+		holder = 166711
+	}
+	719.1.1 = {
+		holder = 166712
+	}
+	760.1.1 = {
+		holder = 166713
+	}
+}
+
+
+c_luntai = {
+	867.1.1 = { change_development_level = 8 }
+	91.1.1 = {
+		holder = kucha_001
+		liege=d_kucha
+		government = trade_city_state_government
+	}
+	106.4.4 = {
+		holder = kucha_002
+	}
+	127.4.6 = {
+		holder = kucha_003
+	}
+	187.6.13 = {
+		holder = kucha_004
+	}
+	222.2.2 = {
+		holder = kucha_005
+	}
+	280.8.25 = {
+		holder = kucha_006
+	}
+	326.7.11 = {
+		holder = agni_003
+	}
+	349.5.1 = {
+		holder = kucha_016
+	}
+	400.4.4 = {
+		holder = kucha_009
+	}
+	437.10.17 = {
+		holder = kucha_010
+	}
+	475.4.2 = {
+		holder = kucha_015
+	}
+	# Niruimo Zhunashen
+	521.10.8 = {
+		holder = kucha_012
+	}	
+	535.3.5 = {
+		holder = kucha_013
+	}
+	581.2.20 = {
+		holder = 166708
+	}
+	624.1.1 = {
+		holder = 166709
+	}
+	646.1.1 = {
+		holder = 166710
+	}
+	689.1.1 = {
+		holder = 166711
+	}
+	719.1.1 = {
+		holder = 166712
+	}
+	760.1.1 = {
+		holder = 166713
+	}	
+	720.1.1 = {
+		holder = 166724
+		government = feudal_government
+	}
+	759.1.1 = {
+		holder = 166725
+	}
+}
+
+
+c_loulan = {
+	361.1.1 = {	change_development_level = 2 }
+	476.1.1 = {	change_development_level = 3 }
+	532.1.1 = {	change_development_level = 4 }
+	632.1.1 = {	change_development_level = 5 }
+	768.1.1 = {	change_development_level = 6 }
+	33.1.1 = {
+		liege = d_charkliq
+		holder = shanshan_001
+		government = trade_city_state_government
+	}
+	74.5.9 = {
+		holder = shanshan_002
+	}
+	112.4.8 = {
+		holder = shanshan_003
+	}
+	124.7.13 = {
+		holder = shanshan_004
+	}
+	200.5.8 = {
+		holder = shanshan_005
+	}
+	236.3.6 = {
+		holder = shanshan_006
+	}
+	244.4.4 = {
+		holder = shanshan_007
+	}
+	252.8.18 = {
+		holder = shanshan_008
+	}
+	290.9.9 = {
+		holder = shanshan_009
+	}
+	319.3.4 = {
+		holder = shanshan_010
+	}
+	331.4.2 = {
+		holder = shanshan_011
+	}
+	336.12.14 = {
+		holder = shanshan_012
+	}
+	359.11.14 = {
+		holder = shanshan_013
+	}
+	361.1.1 = {
+		holder = tocharian_misc_005
+	}
+	386.4.16 = {
+		holder = shanshan_014
+	}
+	395.1.1 = {
+		holder = tocharian_misc_004
+	}
+	422.2.24 = {
+		holder = shanshan_015
+	}
+	442.4.1 = {
+		holder = shanshan_016
+	}
+	445.1.1 = {
+		liege = 0
+	}
+	532.1.1 = {
+		holder = tocharian_misc_002
+		liege = e_hephthalite
+	}
+	630.1.1 = {
+		holder = 166748
+	}
+	673.1.1 = {
+		holder = 166749
+	}
+	698.1.1 = {
+		holder = 166750
+	}
+	728.1.1 = {
+		holder = 166751
+	}
+	765.1.1 = {
+		holder = 166752
+	}
+}
+
+
+c_dunhuang = {
+	33.1.1 = {
+		liege = d_charkliq
+		holder = shanshan_001
+		government = trade_city_state_government
+	}
+	74.5.9 = {
+		holder = shanshan_002
+	}
+	112.4.8 = {
+		holder = shanshan_003
+	}
+	124.7.13 = {
+		holder = shanshan_004
+	}
+	200.5.8 = {
+		holder = shanshan_005
+	}
+	236.3.6 = {
+		holder = shanshan_006
+	}
+	244.4.4 = {
+		holder = shanshan_007
+	}
+	252.8.18 = {
+		holder = shanshan_008
+	}
+	290.9.9 = {
+		holder = shanshan_009
+	}
+	319.3.4 = {
+		holder = shanshan_010
+	}
+	331.4.2 = {
+		holder = shanshan_011
+	}
+	336.12.14 = {
+		holder = shanshan_012
+	}
+	359.11.14 = {
+		holder = shanshan_013
+	}
+	386.4.16 = {
+		holder = shanshan_014
+	}
+	422.2.24 = {
+		holder = shanshan_015
+	}
+	442.4.1 = {
+		holder = shanshan_016
+	}
+	445.1.1 = {
+		liege = 0
+	}
+	532.1.1 = {
+		holder = tocharian_misc_003
+		liege = e_hephthalite
+	}
+	765.1.1 = {
+		liege = d_charkliq # conquered by Tibet
+		holder = bodpa0253
+	}
+}
+
+
+c_kumtag = {
+	361.1.1 = {	change_development_level = 2 }
+	476.1.1 = {	change_development_level = 3 }
+	532.1.1 = {	change_development_level = 4 }
+	632.1.1 = {	change_development_level = 5 }
+	768.1.1 = {	change_development_level = 6 }
+	33.1.1 = {
+		liege = d_charkliq
+		holder = shanshan_001
+		government = trade_city_state_government
+	}
+	74.5.9 = {
+		holder = shanshan_002
+	}
+	112.4.8 = {
+		holder = shanshan_003
+	}
+	124.7.13 = {
+		holder = shanshan_004
+	}
+	200.5.8 = {
+		holder = shanshan_005
+	}
+	236.3.6 = {
+		holder = shanshan_006
+	}
+	244.4.4 = {
+		holder = shanshan_007
+	}
+	252.8.18 = {
+		holder = shanshan_008
+	}
+	290.9.9 = {
+		holder = shanshan_009
+	}
+	319.3.4 = {
+		holder = shanshan_010
+	}
+	331.4.2 = {
+		holder = shanshan_011
+	}
+	336.12.14 = {
+		holder = shanshan_012
+	}
+	359.11.14 = {
+		holder = shanshan_013
+	}
+	361.1.1 = {
+		holder = tocharian_misc_005
+	}
+	386.4.16 = {
+		holder = shanshan_014
+	}
+	395.1.1 = {
+		holder = tocharian_misc_004
+	}
+	422.2.24 = {
+		holder = shanshan_015
+	}
+	442.4.1 = {
+		holder = shanshan_016
+	}
+	445.1.1 = {
+		liege = 0
+	}
+	532.1.1 = {
+		holder = tocharian_misc_002
+		liege = e_hephthalite
+	}
+	630.1.1 = {
+		holder = 166748
+	}
+	673.1.1 = {
+		holder = 166749
+	}
+	698.1.1 = {
+		holder = 166750
+	}
+	728.1.1 = {
+		holder = 166751
+	}
+	765.1.1 = {
+		holder = 166752
+	}
+}

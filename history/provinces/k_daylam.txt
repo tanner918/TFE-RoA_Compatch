@@ -1,0 +1,352 @@
+﻿#k_daylam
+##d_daylam ###################################
+###c_gilan
+4001 = {	#Daylam
+	culture = daylamite
+	religion = afridunism
+	holding = castle_holding
+}
+4000 = {	#Gilan
+	culture = daylamite
+	religion = afridunism
+	holding = castle_holding
+}
+4004 = {	#Lahij	#AKA Lahijan
+	holding = church_holding
+}
+
+###c_zanjan
+4325 = {	#Zanjan
+	culture = parthian
+	religion = afridunism
+	holding = castle_holding
+	special_building_slot = soltaniyeh_01
+	490.1.1 = {
+		religion = mazdakism
+	}
+	768.1.1 = {
+		religion = sunni
+	}
+}
+4326 = {	#Afshar
+	holding = none
+}
+4327 = {	#Suhravard	#AKA Sohrevard
+	holding = church_holding	#placeholder
+}
+
+###c_qazwin
+4323 = {	#Qazwin / Qazvin
+	culture = parthian
+	religion = afridunism
+	holding = castle_holding
+	490.1.1 = {
+		religion = mazdakism
+	}
+	768.1.1 = {
+		religion = sunni
+	}
+}
+4006 = {	#Alamut
+	holding = castle_holding
+	#Fortress built in 840
+}
+4324 = {	#Abhar
+	holding = city_holding
+}
+
+##d_tabaristan ###################################
+###c_mazandaran
+4312 = {	#Amul
+	culture = parthian
+	religion = afridunism
+	holding = castle_holding
+}
+4310 = {	#Tamisha
+	holding = church_holding
+	#Medieval city
+}
+4311 = {	#Sariya	#AKA Sari
+	holding = city_holding
+	#Very old city
+}
+
+###c_ruyan
+4005 = {	#Ruyan
+	culture = daylamite
+	religion = afridunism
+	holding = castle_holding
+
+	# 395.1.1 = {
+	# 	religion = mazdayasna
+	# }
+}
+4313 = {	#Natil
+	holding = none
+}
+4314 = {	#Shalush
+	holding = city_holding	#placeholder
+}
+
+###c_baduspan
+4317 = {	#Uram
+	culture = parthian
+	religion = afridunism
+	holding = castle_holding
+}
+4315 = {	#Larijan
+	holding = city_holding	#placeholder
+}
+4316 = {	#Firrim
+	holding = castle_holding
+	special_building = mount_damavand_01
+}
+
+##d_gurgan ###################################
+###c_gurgan
+4029 = {	#Gurgan
+	culture = parthian
+	religion = mazdayasna
+	holding = castle_holding
+}
+4028 = {	#Astarabad
+	holding = church_holding
+	#Used as a "district" of Gurgan
+	#Set as church_holding to have all 3 types of holdings
+}
+4030 = {	#Bakrabad
+	holding = none
+}
+4031 = {	#Abaskun
+	holding = city_holding
+	#Prosperous coastal city in the middle ages
+}
+
+###c_dihistan
+4032 = {	#Kerend
+	culture = parthian
+	religion = mazdayasna
+	holding = castle_holding
+}
+4033 = {	#Dihistan
+	holding = none
+}
+4034 = {	#Khodzhakala
+	holding = none
+}
+4035 = {	#Oboy
+	holding = none
+}
+
+##d_azerbaijan ###################################
+###c_tabriz
+4537 = {	#Tabriz
+	culture = parthian
+	religion = kitebacilweism # Representing West Iranic/Kurdish "paganism"
+	holding = castle_holding
+	768.1.1 = {
+		religion = sunni
+	}
+}
+4536 = {	#Marand
+	holding = city_holding
+}
+4538 = {	#Dihnakhirjan
+	holding = none
+}
+4539 = {	#Ujan
+	holding = none
+}
+4540 = {	#Ahar
+	holding = castle_holding
+	special_building = rainbow_mountains_01
+	#Ancient city
+}
+4541 = {	#Dizmar
+	holding = none
+}
+
+###c_talish
+4534 = {	#Talish
+	culture = caspian
+	religion = armaz
+	holding = castle_holding
+
+	476.1.1 = {
+		religion = mazdayasna
+	}
+}
+4535 = {	#Aparshahr
+	holding = none
+}
+
+###c_ardabil
+4543 = {	#Ardabil
+	culture = parthian
+	religion = kitebacilweism # Representing West Iranic/Kurdish "paganism"
+	holding = castle_holding
+
+	#476.1.1 = {
+	#	religion = mazdayasna
+	#}
+}
+4002 = {	#Khalkhal
+	holding = city_holding
+}
+4542 = {	#Unar	#AKA Ounar / Unar
+	holding = church_holding
+}
+4544 = {	#Sarat
+	holding = none
+}
+
+###c_maragha
+4545 = {	#Maragha
+	culture = parthian
+	religion = kitebacilweism # Representing West Iranic/Kurdish "paganism"
+	holding = castle_holding
+	768.1.1 = {
+		religion = sunni
+	}
+}
+4003 = {	#Kursara
+	holding = none
+}
+4546 = {	#Maragha	#AKA Maragheh
+	holding = city_holding
+}
+4547 = {	#Khunaj
+	holding = none
+}
+4548 = {	#Ar-Ran
+	holding = none
+}
+4549 = {	#Shiz	#AKA modern day Takab
+	holding = church_holding
+}
+
+###c_bailaqan
+4767 = {	#Bailaqan
+	culture = parthian
+	religion = kitebacilweism # Representing West Iranic/Kurdish "paganism"
+	holding = castle_holding
+	768.1.1 = {
+		religion = sunni
+	}
+}
+4766 = {	#Barza
+	holding = city_holding	#placeholder
+}
+4768 = {	#Darband-Qarabuli
+	holding = none
+}
+4769 = {	#Basawa
+	holding = none
+}
+
+###c_urmiya
+4771 = {	#Urmiya
+	culture = parthian
+	religion = kitebacilweism # Representing West Iranic/Kurdish "paganism"
+	holding = castle_holding
+	100.1.1 = {
+		special_building_slot = adur_gushnasp
+	}
+	420.1.1 = {
+		special_building = adur_gushnasp
+	}
+}
+4770 = {	#Ushnuya
+	holding = none
+}
+4772 = {	#Salmas
+	holding = church_holding
+	#Ancient city of renown
+}
+5794 = {	#Gher
+	holding = none
+}
+
+##d_shirvan ###################################
+###c_shirvan
+668 = {		#Shirvan
+	culture = caspian
+	religion = armaz
+	holding = castle_holding
+
+	476.1.1 = {
+		religion = mazdayasna
+	}
+	
+}
+5771 = {	#Baku
+	holding = city_holding
+}
+5772 = {	#Maras
+	holding = none
+}
+5773 = {	#Salyan
+	holding = none
+}
+
+###c_shaki
+669 = {		#Shemakha
+	culture = arran
+	religion = armaz
+	holding = castle_holding
+
+	532.1.1 = {
+		religion = mazdayasna
+	}
+}
+5774 = {	#Kabala
+	holding = city_holding
+}
+5775 = {	#Kudevan
+	holding = none
+}
+5776 = {	#Paidangaran
+	holding = none
+}
+
+###c_aran
+5777 = {	#Ganja
+	culture = arran
+	religion = armaz
+	holding = castle_holding
+	476.1.1 = {
+		religion = mazdayasna
+	}
+}
+5778 = {	#Mingachevir
+	holding = church_holding
+}
+5779 = {	#Barda
+	holding = city_holding
+}
+
+###c_mugan
+5790 = {	#Paytakaran
+	culture = caspian
+	religion = armaz
+	holding = castle_holding
+
+	476.1.1 = {
+		religion = mazdayasna
+	}
+}
+5788 = {	#Gabarawan
+	holding = none
+}
+5789 = {	#Varsan
+	holding = none
+}
+5791 = {	#Langarkanan
+	holding = none
+}
+5792 = {	#Nakorzan
+	holding = none
+}
+5793 = {	#Barzand
+	holding = city_holding
+}

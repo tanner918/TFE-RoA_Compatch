@@ -1,0 +1,238 @@
+﻿### Code from Silk Road mod: https://steamcommunity.com/workshop/filedetails/?id=2493459927
+
+mapping_map_barony = {
+	every_barony = {
+		county = {
+			prev = { set_color_from_title = prev }
+		}
+	}
+}
+
+
+
+mapping_resources_map = {
+
+	every_barony = {
+			if = {
+				limit = { 
+				title_province = {
+					county = {
+						has_county_modifier = market_resources_modifier
+					}
+				}
+			}
+			set_color_from_title = title:d_market
+			}
+			
+			else_if = {
+				limit = { 
+				title_province = {
+					county = {
+						has_county_modifier = port_resources_modifier
+					}
+				}
+			}
+			set_color_from_title = title:d_market
+			}
+			
+			else_if = {
+			    limit = { 
+				title_province = {
+					county = {
+						has_county_modifier = post_resources_modifier
+					}
+				}
+			}
+			set_color_from_title = title:d_post
+			}
+			
+			else_if = {
+			    limit = { 
+				title_province = {
+					county = {
+						has_county_modifier = cloth_resources_modifier
+					}
+				}
+			}
+			set_color_from_title = title:d_cloth
+			}
+			
+			else_if = {
+			    limit = { 
+				title_province = {
+					county = {
+						has_county_modifier = fur_resources_modifier
+					}
+				}
+			}
+			set_color_from_title = title:d_fur
+			}
+			
+			else_if = {
+			    limit = { 
+				title_province = {
+					county = {
+						has_county_modifier = copper_resources_modifier
+					}
+				}
+			}
+			set_color_from_title = title:d_copper
+			}
+			
+			else_if = {
+			    limit = { 
+				title_province = {
+					county = {
+						has_county_modifier = iron_resources_modifier
+					}
+				}
+			}
+			set_color_from_title = title:d_iron
+			}
+			
+			else_if = {
+			    limit = { 
+				title_province = {
+					county = {
+						has_county_modifier = salt_resources_modifier
+					}
+				}
+			}
+			set_color_from_title = title:d_salt
+			}
+			
+			else_if = {
+			    limit = { 
+				title_province = {
+					county = {
+						has_county_modifier = wine_resources_modifier
+					}
+				}
+			}
+			set_color_from_title = title:d_wine
+			}
+			
+			else_if = {
+			    limit = { 
+				title_province = {
+					county = {
+						has_county_modifier = wool_resources_modifier
+					}
+				}
+			}
+			set_color_from_title = title:d_wool
+			}
+			
+			else_if = {
+			    limit = { 
+				title_province = {
+					county = {
+						has_county_modifier = leather_resources_modifier
+					}
+				}
+			}
+			set_color_from_title = title:d_leather
+			}
+			
+			else_if = {
+			    limit = { 
+				title_province = {
+					county = {
+						has_county_modifier = stone_resources_modifier
+					}
+				}
+			}
+			set_color_from_title = title:d_stone
+			}
+			
+			else_if = {
+			    limit = { 
+				title_province = {
+					county = {
+						has_county_modifier = wood_resources_modifier
+					}
+				}
+			}
+			set_color_from_title = title:d_wood
+			}
+			
+			else_if = {
+			    limit = { 
+				title_province = {
+					county = {
+						has_county_modifier = marble_resources_modifier
+					}
+				}
+			}
+			set_color_from_title = title:d_marble
+			}
+			
+			else_if = {
+			    limit = { 
+				title_province = {
+					county = {
+						has_county_modifier = glass_resources_modifier
+					}
+				}
+			}
+			set_color_from_title = title:d_glass
+			}
+			
+			else_if = {
+			    limit = { 
+				title_province = {
+					county = {
+						has_county_modifier = dyes_resources_modifier
+					}
+				}
+			}
+			set_color_from_title = title:d_dyes
+			}
+			
+			else_if = {
+			    limit = { 
+				title_province = {
+					county = {
+						has_county_modifier = silk_resources_modifier
+					}
+				}
+			}
+			set_color_from_title = title:d_silk
+			}
+			
+			else_if = {
+			    limit = { 
+				title_province = {
+					county = {
+						has_county_modifier = cotton_resources_modifier
+					}
+				}
+			}
+			set_color_from_title = title:d_cotton
+			}
+			
+			else_if = {
+			    limit = { 
+				title_province = {
+					county = {
+						has_county_modifier = amber_resources_modifier
+					}
+				}
+			}
+			set_color_from_title = title:d_amber
+			}
+			
+			else_if = {
+			    limit = { 
+				title_province = {
+					has_holding_type = trade_center_holding
+				}
+			}
+			set_color_from_title = title:d_trade
+			}
+			
+		else = {
+		set_color_from_title = title:d_map_base
+		}
+	}
+}

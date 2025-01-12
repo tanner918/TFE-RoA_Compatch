@@ -1,0 +1,122 @@
+﻿namespace = langobard
+langobard.0001 = { 	
+	type = character_event
+	title = langobard.0001.t
+	desc =  langobard.0001.desc
+
+	theme = war
+	override_background = {
+		reference = army_camp
+	}
+	
+	left_portrait = {
+		character = root
+		animation = celebrate_sword
+	}
+	
+
+	option = {
+		name = langobard.0001.option.a
+        add_gold=50
+        spawn_army = {
+        uses_supply = no
+        inheritable = yes
+        name = "Lombard Settlers"
+        levies = {
+            value = 540
+        }
+        men_at_arms = {
+            type = light_horsemen
+            men = 400
+        }
+        men_at_arms = {
+            type = siege_towers
+            men = 10
+        }
+        men_at_arms = {
+            type = light_horsemen
+            men = 250
+        }
+         men_at_arms = {
+            type = pikemen_unit
+            men = 300
+        }
+        location = capital_province
+        }
+        title:d_verona={
+			every_de_jure_top_liege={
+				limit={
+					NOT = {
+						root={has_truce = prev}
+					}
+					NOT = {
+						is_allied_to = root
+					}
+                    NOT = {
+						this = root
+					}
+				}
+				add_to_list = lombard_targets
+			}
+			every_in_list={
+				list = lombard_targets
+				root={
+					start_war={
+						cb=germanic_migration_cb
+						target_title=title:d_verona
+						target=prev
+                    }
+				}
+			}
+		}
+    }
+    option = {
+		name = langobard.0001.option.b
+        add_gold=50
+        spawn_army = {
+            uses_supply = no
+            inheritable = yes
+            name = "Lombard Settlers"
+            levies = {
+                value = 540
+            }
+            men_at_arms = {
+                type = light_horsemen
+                men = 400
+            }
+            men_at_arms = {
+                type = siege_towers
+                men = 10
+            }
+            men_at_arms = {
+                type = light_horsemen
+                men = 250
+            }
+            men_at_arms = {
+                type = pikemen_unit
+                men = 300
+            }
+            location = capital_province
+        }
+    }
+	option = {
+		name = langobard.0001.option.c
+        #name = germanic_events.0101.option.a
+        #name = germanic_events.0101.option.b
+        stress_impact = {
+            forgiving = minor_stress_impact_loss
+            patient = minor_stress_impact_loss
+            humble = medium_stress_impact_loss
+            craven = medium_stress_impact_loss
+            compassionate = medium_stress_impact_loss
+            lazy = major_stress_impact_loss
+             content = major_stress_impact_loss
+
+            arrogant = minor_stress_impact_gain
+            diligent = minor_stress_impact_gain
+            greedy = minor_stress_impact_gain
+            ambitious = medium_stress_impact_gain
+            callous = medium_stress_impact_gain
+		}
+	}
+}

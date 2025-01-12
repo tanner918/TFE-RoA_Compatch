@@ -1,0 +1,1537 @@
+﻿e_france = {
+	486.1.1 = {
+		name = e_france_frankish
+	}
+}
+
+e_bengal = {
+	#Gupta Empire
+	319.1.1 = {
+		holder = 900962 #Chandragupta, son of Ghatatkacha
+	}
+	335.1.1 = {
+		holder = gupta_01 #Khacha, son of Ghatatkacha
+	}
+	335.5.1 = {
+		holder = 900963 #Samudragupta, son of Ghatatkacha
+	}
+	375.1.1 = {
+		holder = 2020123 #Chandragupta, son of Samudragupta
+	}
+	415.1.1 = {
+		holder = gupta_05 #Kumaragupta, son of Chandragupta
+	}
+	455.1.1 = {
+		holder = gupta_08 #Skandragupta, son of Kumaragupta
+	}
+	466.1.1 = {
+		holder = gupta_09 #Purugupta, son of Kumaragupta
+	}
+	473.1.1 = {
+		holder = gupta_10 #Kumaragupta II, son of Purugupta
+	}
+	476.1.1 = {
+		holder = gupta_12 #Bughagupta, son of Purugupta
+	}
+	495.1.1 = {
+		holder = gupta_13 #Narasimhagupta, son of Purugupta
+	}
+	530.1.1 = {
+		holder = gupta_14 #Kumaragupta III, son of Narasimhagupta
+	}
+	540.1.1 = {
+		holder = gupta_15 #Vishnugupta, son of Kumaragupta III
+	}
+}	
+
+e_deccan = {
+	#Vakataka Empire before split
+	270.1.1 = {
+		holder = 900901 #Pravarasena
+	}
+}
+
+e_mongolia = {
+	278.1.1 = {
+		holder = yujiulu_01
+		government = nomadic_government
+	}
+	300.1.1 = {
+		holder = yujiulu_02
+	}
+	310.1.1 = {
+		holder = yujiulu_03
+	}
+	320.1.1 = {
+		holder = yujiulu_04
+	}
+	340.1.1 = {
+		holder = yujiulu_05
+	}
+	351.1.1 = {
+		holder = 0
+	}
+	# 399.1.1 = {
+	# 	holder = yujiulu_07
+	# }
+	402.1.1 = {
+		holder = yujiulu_072
+	}
+	405.1.1 = {
+		holder = yujiulu_072
+		government = nomadic_government
+	}
+	410.1.1 = {
+		holder = yujiulu_073
+	}
+	414.1.1 = {
+		holder = yujiulu_08
+	}
+	414.5.1 = {
+		holder = yujiulu_077
+	}
+	429.1.1 = {
+		holder = yujiulu_084
+	}
+	444.1.1 = {
+		holder = yujiulu_09
+	}
+	464.1.1 = {
+		holder = yujiulu_10
+	}
+	485.1.1={
+		holder=yujiulu_11
+	}
+	492.1.1={
+		holder=yujiulu_101
+	}
+	506.1.1={
+		holder=yujiulu_111
+	}
+	508.1.1={
+		holder=yujiulu_113
+	}
+	520.1.1={
+		holder=yujiulu_115
+	}
+	522.1.1={
+		holder=yujiulu_122
+	}
+	523.1.1={
+		holder=yujiulu_115
+	}
+}
+e_persia = {
+	224.1.1 = {
+		holder = 159601 # Adrashir I
+		government = eranshar_government
+		succession_laws = { mahestan_elective_succession_law }
+	}
+	242.1.1 = {
+		holder = 180605 # Shapur I
+	}
+	270.5.1 = {
+		holder = 180606 # Hormazd I
+	}
+	271.6.1 = {
+		holder = 180607 # Bahram I
+	}
+	274.9.1 = {
+		holder = 180608 # Bahram II
+	}
+	293.1.1 = {
+		holder = 180609 # Bahram III
+	}
+	293.4.1 = {
+		holder = 180610 # Naresh I
+	}
+	303.1.1 = {
+		holder = 180611 # Hormazd II
+	}
+	309.1.1 = {
+		holder = 180617 # Shapur II
+	}
+	379.1.1 = {
+		holder = 180614 # Adreshir II
+	}
+	383.1.1 = {
+		holder = 180616 # Shapur III
+	}
+	388.1.1 = {
+		holder = 180618 # Bahram IV
+	}
+	399.1.1 = {
+		holder = 180619 # Yazdegerd I
+	}
+	420.1.21 = {
+		holder = sassanid_24 # Shapur IV
+	}
+	420.3.1 = {
+		holder = sassanid_21 # Khosrow 'The Usurper'
+	}
+	420.5.1 = {
+		holder = 180620 # Bahram V
+	}
+	438.1.1 = {
+		holder = 180621 # Yazdegerd II
+	}
+	457.1.1 = {
+		holder = 180622 # Hormazd III
+	}
+	459.1.1 = {
+		holder = 180624 # Peroz I
+	}
+	484.1.1 = {
+		holder = 180623 # Balash
+	}
+	488.1.1 = {
+		holder = 180627 #Kavadh I
+	}
+	496.1.1 = {
+		holder = 180625 #Djamasp I
+	}
+	499.1.1 = {
+		holder = 180627 #Kavadh I, again
+	}
+	531.9.13 = {
+		holder = 180628 #Khosrow I
+	}
+	579.1.1 = {
+		holder = 180630 #Hormazd IV
+	}
+	#BAHRAM CHOBIN
+	590.1.1 = {
+		holder = 180631 #Khosrow II
+	}
+	#Vistahm
+	628.2.28 = {
+		holder = 180632 #Kavadh II
+	}
+	628.9.6 = {
+		holder = 180633 #Ardashir III
+	}
+	#Shahrbaraz
+	629.1.1 = {
+		holder = sassanid_48 # Khosrow III
+	}
+	630.2.1 = {
+		holder = 180634 #Purandokht
+	}
+	# Shapur-i Shahrvaraz V
+	# Peruz II
+	631.1.1 = {
+		holder = 180635 #Azarmidokht
+	}
+	# Hormizd V
+	# Khosrow IV
+	631.4.1 = {
+		holder = sassanid_47 #Khosrow V
+	}
+	631.5.1 = {
+		holder = sassanid_50 #Hormazd VI
+	}
+	631.6.1 = {
+		holder = 180634 #Purandokht
+	}
+	632.6.1 = {
+		holder = 180637 #Yazdegerd III
+	}
+	651.1.1 = {
+		holder = 0 #Destroyed
+	}
+}
+
+e_tartaria = {
+	552.1.1 = {
+		holder = ashina_04
+	}
+	553.1.1 = {
+		holder = ashina_05
+	}
+	576.1.1 = {
+		holder = ashina_20
+	}
+	581.1.1 = {
+		holder = ashina_21
+	}
+	587.1.1 = {
+		holder = ashina_22
+	}
+	588.1.1 = {
+		holder = ashina_23
+	}
+	600.1.1 = {
+		holder = ashina_24
+	}
+	603.1.1 = {
+		holder = ashina_25
+	}
+	611.1.1 = {
+		holder = ashina_27
+	}
+	618.1.1 = {
+		holder = ashina_28
+	}
+	628.1.1 = {
+		holder = ashina_29
+	}
+	630.1.1 = {
+		holder = ashina_30
+	}
+	632.1.1 = {
+		holder = ashina_31
+	}
+	634.1.1 = {
+		holder = ashina_32
+	}
+	639.1.1 = {
+		holder = ashina_34
+	}
+	650.1.1 = {
+		holder = ashina_36
+	}
+	658.1.1 = {
+		holder = 0
+	}
+	682.1.1 = {
+		holder = ashina_38
+	}
+	692.1.1 = {
+		holder = ashina_39
+	}
+	716.1.1 = {
+		holder = ashina_40
+	}
+	717.1.1 = {
+		holder = ashina_41
+	}
+	734.1.1 = {
+		holder = ashina_42
+	}
+	739.1.1 = {
+		holder = ashina_43
+	}
+	741.1.1 = {
+		holder = ashina_44
+	}
+	744.1.1 = {
+		holder = 0
+	}
+}
+
+e_turan = {
+	553.1.1 = {
+		holder = ashina_05 #Istami
+	}
+	576.1.1 = {
+		holder = ashina_06 #Tardu
+	}
+	603.1.1 = {
+		holder = ashina_09 #Niri
+	}
+	604.1.1 = {
+		holder = ashina_11 #Heshana
+	}
+	611.1.1 = {
+		holder = ashina_10 #Sheguy
+	}
+	618.1.1 = {
+		holder = 74001 #Tun
+	}
+	628.1.1 = {
+		holder = ashina_08 #Sibir
+	}
+	630.1.1 = {
+		holder = ashina_12 #Sy
+	}
+	632.1.1 = {
+		holder = ashina_13 #Duolu
+	}
+	634.1.1 = {
+		holder = ashina_14 #Ishbara
+	}
+	639.1.1 = {
+		holder = ashina_19 #Yukuk
+	}
+	642.1.1 = {
+		holder = ashina_21 #Irbis
+	}
+	650.1.1 = {
+		holder = ashina_22 #Ishbara
+	}
+	658.1.1 = {
+		holder = 0 #
+	}
+}	
+k_papal_state = {
+	30.1.1 = {
+		holder = 145292
+		government = theocracy_government
+		liege = e_western_roman_empire
+	} # Peter's first visit to Rome
+	
+	64.10.13 = {
+		holder = 145291
+	}
+	79.1.1 = {
+		holder = 7615
+	}
+	92.1.1 = {
+		holder = 7614
+	}
+	99.1.1 = {
+		holder = 7613
+	}
+	107.1.1 = {
+		holder = 7612
+	}
+	115.1.1 = {
+		holder = 7611
+	}
+	125.1.1 = {
+		holder = 7610
+	}
+	137.1.1 = {
+		holder = 7609
+	}
+	140.1.1 = {
+		holder = 7608
+	}
+	154.1.1 = {
+		holder = 7607
+	}
+	167.4.20 = {
+		holder = 7606
+	}
+	174.1.1 = {
+		holder = 7605
+	}
+	189.1.1 = {
+		holder = 7604
+	}
+	199.1.1 = {
+		holder = 7603
+	}
+	217.12.20 = {
+		holder = 7602
+	}
+	222.10.14 = {
+		holder = 7601
+	}
+	230.1.1 = {
+		holder = 7600
+	}
+	235.9.29 = {
+		holder = 7799
+	}
+	236.1.3 = {
+		holder = 7798
+	}
+	250.1.20 = {
+		holder = 7797
+	}
+	253.6.1 = {
+		holder = 7796
+	}
+	254.3.5 = {
+		holder = 7795
+	}
+	257.8.2 = {
+		holder = 7794
+	}
+	258.8.6 = {
+		holder = 7793
+	}
+	268.12.26 = {
+		holder = 7792
+	}
+	274.12.30 = {
+		holder = 7791
+	}
+	283.7.12 = {
+		holder = 7790
+	}
+	296.4.22 = {
+		holder = 7789
+	}
+	304.4.1 = {
+		holder = 7787
+	}
+	309.1.16 = {
+		holder = 7786
+	}
+	310.8.17 = {
+		holder = 7785
+	}
+	314.1.10 = {
+		holder = 7784
+	}
+	335.12.31 = {
+		holder = 7783
+	}
+	336.10.7 = {
+		holder = 7782
+	}
+	352.4.12 = {
+		holder = 7781
+	}
+	366.9.24 = {
+		holder = 7780
+	}
+	384.12.11 = {
+		holder = 7779
+	}
+	399.11.26 = {
+		holder = 7778
+	}
+	401.11.27 = {
+		holder = 7777
+	}
+	417.3.12 = {
+		holder = 7776
+	}
+	418.12.26 = {
+		holder = 7775
+	}
+	422.9.4 = {
+		holder = 7774
+	}
+	432.4.6 = {
+		holder_ignore_head_of_faith_requirement = 7773 # Prevents character becoming invalid in converted Imperator games due to Nicene -> Chalcedonian switch.
+	}
+	440.8.18 = {
+		holder_ignore_head_of_faith_requirement = 7772 # Prevents character becoming invalid in converted Imperator games due to Nicene -> Chalcedonian switch.
+	}
+	461.11.10 = {
+		holder = 7771
+	}
+	468.2.28 = {
+		holder = 7770
+	}
+	483.3.10 = {
+		holder = 7769
+	}
+	492.1.1 = {
+		holder = 7768
+	}
+	496.11.21 = {
+		holder = 7767
+	}
+	498.11.19 = {
+		holder = 7766
+	}
+	514.7.19 = {
+		holder = 7765
+	}
+	523.8.6 = {
+		holder = 7763
+	}
+	526.5.18 = {
+		holder = 7762
+	}
+	530.1.1 = {
+		holder = 7761
+	}
+	532.1.1 = {
+		holder = 7760
+	}
+	535.5.8 = {
+		holder = 7759
+	}
+	536.4.22 = {
+		holder = 7764
+	}
+	536.6.8 = {
+		holder = 7900
+	}
+	555.6.7 = {
+		holder = 7899
+	}
+	561.3.4 = {
+		holder = 7898
+	}
+	574.7.13 = {
+		holder = 7897
+	}
+	579.7.20 = {
+		holder = 7896
+	}
+	590.1.1 = {
+		holder = 7893
+	}
+	604.3.15 = {
+		holder = 7892
+	}
+	606.2.22 = {
+		holder = 7891
+	}
+	607.11.12 = {
+		holder = 7890
+	}
+	615.5.25 = {
+		holder = 7889
+	}
+	618.11.8 = {
+		holder = 7888
+	}
+	625.10.25 = {
+		holder = 7887
+	}
+	638.10.12 = {
+		holder = 7886
+	}
+	640.8.2 = {
+		holder = 7885
+	}
+	642.10.12 = {
+		holder = 7884
+	}
+	649.5.14 = {
+		holder = 7883
+	}
+	653.7.17 = {
+		holder = 7882
+	}
+	657.6.1 = {
+		holder = 7881
+	}
+	672.1.27 = {
+		holder = 7880
+	}
+	676.6.17 = {
+		holder = 7879
+	}
+	678.4.11 = {
+		holder = 7878
+	}
+	681.1.10 = {
+		holder = 7877
+	}
+	683.7.3 = {
+		holder = 7876
+	}
+	685.5.8 = {
+		holder = 7875
+	}
+	686.8.2 = {
+		holder = 7874
+	}
+	687.9.21 = {
+		holder = 7873
+	}
+	701.9.8 = {
+		holder = 7872
+	}
+	705.1.11 = {
+		holder = 7871
+	}
+	707.10.18 = {
+		holder = 7870
+	}
+	708.2.4 = {
+		holder = 7869
+	}
+	715.4.9 = {
+		holder = 7868
+	}
+	731.2.11 = {
+		holder = 7867
+	}
+	741.11.28 = {
+		holder = 7866
+	}
+	752.3.22 = {
+		holder = 7895
+	}
+	757.4.29 = {
+		holder = 7865
+	}
+	767.6.28 = {
+		holder = 7864
+	}
+}
+
+
+k_magyar = {
+	350.1.1 = {
+		holder = magyar_01
+		government = nomadic_government
+	}
+	460.1.1 = {
+		holder = magyar_03
+	}
+	520.1.1 = {
+		holder = magyar_04
+	}
+}
+d_apostolic_church = {
+	1.1.1 = {
+		#St. Thaddeus the Apostle (1â€“50); omitted for regnal numbering purposes.
+	}
+	50.1.1 = {
+		#St. Bartholomew the Apostle (50â€“68); omitted for regnal numbering purposes.
+	}
+	68.1.1 = {
+		#St. Zacharias (68â€“76); omitted for regnal numbering purposes.
+	}
+	76.1.1 = {
+		#St. Zementus (76â€“81); omitted for regnal numbering purposes.
+	}
+	81.1.1 = {
+		#St. Atrnerseh (81â€“97); omitted for regnal numbering purposes.
+	}
+	97.1.1 = {
+		#St. Mushe (97â€“128); omitted for regnal numbering purposes.
+	}
+	128.1.1 = {
+		#St. Shahen (128â€“154); omitted for regnal numbering purposes.
+	}
+	154.1.1 = {
+		#St. Shavarsh (151â€“175); omitted for regnal numbering purposes.
+	}
+	175.1.1 = {
+		#St. Leontius (175â€“193); omitted for regnal numbering purposes.
+	}
+	193.1.1 = {
+		#St. Lacuna (175-230); omitted for regnal numbering purposes.
+	}
+	240.1.1 = {
+		#St. Merozanes (240â€“270); omitted for regnal numbering purposes.
+	}
+	288.1.1 = {
+		holder_ignore_head_of_faith_requirement = armenian_000011 #St. Gregory I the Illuminator (288â€“325)
+		liege = k_armenia
+		government = theocracy_government
+	}
+	325.1.1 = {
+		holder_ignore_head_of_faith_requirement = armenian_000013 #St. Aristaces I (325â€“333)
+	}
+	333.1.1 = {
+		holder_ignore_head_of_faith_requirement = armenian_000014 #St. Vrtanes I (333â€“341)
+	}
+	341.1.1 = {
+		holder_ignore_head_of_faith_requirement = armenian_000015 #St. Husik I (341â€“347)
+	}
+	347.1.1 = {
+		holder_ignore_head_of_faith_requirement = armenian_000016 #Daniel I of Armenia (347)
+	}
+	348.1.1 = {
+		holder_ignore_head_of_faith_requirement = armenian_000017 #Pharen I of Armenia (348â€“352)
+	}
+	352.1.1 = {
+		holder_ignore_head_of_faith_requirement = gregorid_04 #St. Nerses I the Great (353â€“373)
+	}
+	373.1.1 = {
+		holder_ignore_head_of_faith_requirement = armenian_000019 #Sahak I (373â€“377)
+	}
+	377.1.1 = {
+		holder_ignore_head_of_faith_requirement = armenian_000020 #Zaven I (377â€“381)
+	}
+	381.1.1 = {
+		holder_ignore_head_of_faith_requirement = armenian_000021 #Aspuraces I (381â€“386)
+	}
+	386.1.1 = {
+		holder_ignore_head_of_faith_requirement = gregorid_05 #St. Sahak II (387â€“428)
+	}
+	428.1.1 = {
+		holder_ignore_head_of_faith_requirement = armenian_000023 #Brkisho of Armenia (428â€“432)
+	}
+	432.1.1 = {
+		holder_ignore_head_of_faith_requirement = armenian_000024 #Samuel of Armenia (432â€“437)
+	}
+	437.1.1 = {
+		holder_ignore_head_of_faith_requirement = armenian_000025 #St. Hovsep I (437â€“452)
+	}
+	452.1.1 = {
+		holder = armenian_000027 #Melitus I (452â€“456)
+	}
+	456.1.1 = {
+		holder = armenian_000028 #Moses I (456â€“461)
+	}
+	461.1.1 = {
+		holder = armenian_000029 #St. Kyud I (461â€“478)
+	}
+	478.1.1 = {
+		holder = armenian_000030 #St. John I (478–490)
+	}
+	490.1.1 = {
+		holder = armenian_000031 #Babken I (490–516)
+	}
+	516.1.1 = {
+		holder = armenian_000032 #Samuel I (516–526)
+	}
+	526.1.1 = {
+		holder = armenian_000033 #Mushe I (526–534)
+	}
+	534.1.1 = {
+		holder = armenian_000034 #Sahak II (534–539)
+	}
+	539.1.1 = {
+		holder = armenian_000035 #Christopher I (539–545)
+	}
+	545.1.1 = {
+		holder = armenian_000036 #Ghevond I (545–548)
+	}
+	548.1.1 = {
+		holder = armenian_000037 #Nerses II (548–557)
+	}
+	557.1.1 = {
+		holder = armenian_000038 #John II (557–574)
+	}
+	574.1.1 = {
+		holder = armenian_000039 #Moses II (574–604)
+	}
+	604.1.1 = {
+		holder = 0
+	}
+	607.1.1 = {
+		holder = armenian_000041 #Abraham I (607–615)
+	}
+	615.1.1 = {
+		holder = armenian_000042 #Komitas I (615–628)
+	}
+	628.1.1 = {
+		holder = armenian_000043 #Christopher II (628–630)
+	}
+	630.1.1 = {
+		holder = armenian_000044 #Ezra I (630–641)
+	}
+	641.1.1 = {
+		holder = armenian_000045 #Nerses III the Builder (641–661)
+	}
+	661.1.1 = {
+		holder = armenian_000046 #Anastasius I (661–667)
+	}
+	667.1.1 = {
+		holder = armenian_000047 #Israel I (667–677)
+	}
+	677.1.1 = {
+		holder = armenian_000048 #Sahak III (677–703)
+	}
+	703.1.1 = {
+		holder = armenian_000049 #Elias I (703–717)
+	}
+	717.1.1 = {
+		holder = armenian_000050 #St. John III the Philosopher (717–728)
+	}
+	728.1.1 = {
+		holder = armenian_000051 #David I (728–741)
+	}
+	741.1.1 = {
+		holder = armenian_000052 #Dertad I (741–764)
+	}
+	764.1.1 = {
+		holder = armenian_000053 #Dertad II (764–767)
+	}
+	767.1.1 = {
+		holder = armenian_000054 #Sion I (767–775)
+	}
+	775.1.1 = {
+		holder = armenian_000055 #Isaiah I (775–788)
+	}
+	788.1.1 = {
+		holder = armenian_000056 #Stephen I (788–790)
+	}
+	790.1.1 = {
+		holder = armenian_000057 #Joab I (790–791)
+	}
+	791.1.1 = {
+		holder = armenian_000058 #Solomon I (791–792)
+	}
+	792.1.1 = {
+		holder = armenian_000059 #George I (792–795)
+	}
+	795.1.1 = {
+		holder = armenian_000060 #Joseph I (795–806)
+	}
+}
+
+#Axum
+e_abyssinia = {
+	521.1.1 = {
+		holder = aksum_21 #Kaleb, Conquest of Yemen
+		name = d_aksum
+	}
+	561.1.1 = {
+		holder = 0
+	}
+}
+# Rashidun caliphate
+
+e_arabia = {
+	
+	627.1.1 = {
+		holder = 33922 #Muhammad
+		government = clan_government
+	}
+	632.6.8 = {
+		holder = 163014 #Abu Bakr
+	}
+	661.2.28 = {
+		holder = 163029
+	}
+	680.5.6 = {
+		holder = 163030
+	}
+	683.1.1 = {
+		holder = 163031
+	}
+	684.6.1 = {
+		holder = 163003
+	}
+	685.5.7 = {
+		holder = 163002
+	}
+	705.1.1 = {
+		holder = 163032
+	}
+	715.1.1 = {
+		holder = 163033
+	}
+	717.10.1 = {
+		holder = 163035
+	}
+	720.2.10 = {
+		holder = 163036
+	}
+	724.1.1 = {
+		holder = 163001
+	}
+	743.2.6 = {
+		holder = 163037
+	}
+	744.4.15 = {
+		holder = 163038
+	}
+	744.10.3 = {
+		holder = 163039
+	}
+	744.11.3 = {
+		holder = 163041
+	}
+	750.1.1 = {
+		holder = 34001
+	}
+	754.1.1 = {
+		holder = 34002
+	}
+}
+
+
+
+k_asturias = {
+	718.1.1 = {
+		holder = 70000 # Pelayo FafÃ­laz de Asturias
+		succession_laws = { feudal_elective_succession_law }
+	}
+	737.1.1 = {
+		holder = 70115 # Favila PÃ¡ez de Asturias
+	}
+	739.6.15 = {
+		holder = 70003 # Alfonso I de Cantabria
+	}
+	757.1.1 = {
+		holder = 70004 # Fruela I de Asturias
+	}
+	768.1.1 = {
+		holder = 70012 # Aurelio Froilaz de Cantabria
+	}
+}
+
+e_caspian-pontic_steppe = {
+	691.1.1 = {
+		holder = 74007
+		government = tribal_government
+	}
+	715.1.1 = {
+		holder = 74008
+	}
+	731.1.1 = {
+		holder = 74009
+	}
+	749.1.1 = {
+		holder = 74012
+	}
+	763.1.1 = {
+		holder = 146203
+	}
+}
+#africa
+d_hauran = {
+	395.1.1 = {
+		holder = 983030
+	}
+}
+d_sennar = {
+	395.1.1 = {
+		holder = 900051
+	}
+}
+d_alwa = {
+	395.1.1 = {
+		holder = 900051
+	}
+}
+c_tadmekka = {
+	#395.1.1 = {
+	#	holder = 1230027
+	#}
+	360.1.1 = {
+		holder = tuareg_23
+	}
+	409.1.1 = {
+		holder = tuareg_24
+	}
+	459.1.1 = {
+		holder = tuareg_25
+	}
+	519.1.1 = {
+		holder = tuareg_26
+	}
+}
+c_tessalit = {
+	#395.1.1 = {
+	#	holder = 1230027
+	#}
+	360.1.1 = {
+		holder = tuareg_23
+	}
+	409.1.1 = {
+		holder = tuareg_24
+	}
+	459.1.1 = {
+		holder = tuareg_25
+	}
+	519.1.1 = {
+		holder = tuareg_26
+	}
+}
+c_djanet = {
+	#395.1.1 = {
+	#	holder = 1230027
+	#}
+	360.1.1 = {
+		holder = tuareg_19
+	}
+	411.1.1 = {
+		holder = tuareg_20
+	}
+	461.1.1 = {
+		holder = tuareg_21
+	}
+	521.1.1 = {
+		holder = tuareg_22
+	}
+}
+b_eferi = {
+	360.1.1 = {
+		holder = tuareg_19
+	}
+	411.1.1 = {
+		holder = tuareg_20
+	}
+	461.1.1 = {
+		holder = tuareg_21
+	}
+	521.1.1 = {
+		holder = tuareg_22
+	}
+}
+d_perosi = {
+	385.1.1 = {
+		holder = 1230026
+		government = tribal_government
+	}
+}
+e_britannia = {
+	200.1.1 = {
+		name = ALBION
+	}
+	476.9.4 = {
+		reset_name = yes
+	}
+}
+### Roman Empire
+e_roman_empire = {
+	
+	-26.1.16 = {
+		holder = 145290
+		
+	}
+	14.8.19 = {
+		holder = 145075		
+	}
+	37.3.16 = {
+		holder = 145289
+	}
+	41.1.24 = {
+		holder = 145288
+	}
+	54.10.13 = {
+		holder = 145287
+	}
+	68.6.9 = {
+		holder = 145286
+	}
+	69.1.15 = {
+		holder = 145285
+	}
+	69.4.16 = {
+		holder = 145284
+	}
+	69.12.20 = {
+		holder = 145281
+	}
+	79.6.23 = {
+		holder = 145282
+	}
+	81.9.13 = {
+		holder = 145283
+	}
+	96.9.18 = {
+		holder = 145280
+	}
+	98.1.27 = {
+		holder = 145279
+	}
+	117.8.9 = {
+		holder = 145278
+	}
+	138.7.10 = {
+		holder = 145277
+	}
+	161.3.7 = {
+		holder = 145276
+	}
+	169.2.1 = {
+		holder = 145274
+	}
+	180.3.17 = {
+		holder = 145275
+	}
+	193.1.1 = {
+		holder = 145273
+	}
+	193.3.29 = {
+		holder = 145272
+	}
+	193.6.1 = {
+		holder = 145269
+	}
+	211.2.4 = {
+		holder = 145271
+	}
+	211.12.19 = {
+		holder = 145270
+	}
+	217.4.8 = {
+		holder = 145268
+	}
+	218.6.8 = {
+		holder = 145267
+	}
+	222.3.11 = {
+		holder = 145266
+	}
+	235.3.19 = {
+		holder = 145265
+	}
+	238.3.22 = {
+		holder = 145259
+	}
+	238.4.1 = {
+		holder = 145260
+	}
+	238.4.12 = {
+		holder = 145264
+	}
+	238.6.1 = {
+		holder = 145263
+	}
+	238.7.29 = {
+		holder = 145262
+	}
+	244.2.11 = {
+		holder = 70526
+	}
+	249.9.1 = {
+		holder = 145258
+	}
+	251.6.1 = {
+		holder = 145257
+	}
+	253.7.1 = {
+		holder = 145256
+	}
+	253.8.1 = {
+		holder = 145254
+	}
+	260.6.1 = {
+		holder = 145255
+	}
+	268.8.1 = {
+		holder = 145252
+	}
+	270.1.15 = {
+		holder = 145253
+	}
+	270.5.1 = {
+		holder = 145250
+	}
+	275.7.1 = {
+		holder = 145249
+	}
+	275.9.25 = {
+		holder = 145247
+	}
+	276.6.1 = {
+		holder = 145248
+	}
+	276.9.1 = {
+		holder = 145245
+	}
+	282.10.1 = {
+		holder = 145242
+	}
+	283.8.1 = {
+		holder = 145243
+	}
+	284.11.1 = {
+		holder = 145244
+	}
+	285.7.1 = {
+		holder = 145241 ## Diocletian
+	}
+	286.4.1 = {
+		holder = 0 ## Diocletians Reforms
+	}
+	325.4.1 = {
+		holder = 70523 # Constantine the I Reunites the Empire
+	}
+	350.2.1 = {
+		holder = 70521 # Constantius the II Reunites the Empire
+	}
+	361.11.3 = {
+		holder = 145237 # Iulianus
+		government = administrative_government	
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = imperial_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+			if = {
+				limit = {
+					exists = holder
+					holder = { has_government = administrative_government }
+				}
+				set_state_faith = faith:nicene
+			}
+			if = {
+				limit = {
+					exists = holder
+					has_dlc_feature = royal_court
+				}
+				holder = {
+					set_court_type = court_warlike
+				}
+			}
+		}
+	}
+	363.6.26 = {
+		holder = 145235 # Iovianus
+	}
+	364.2.17 = {
+		holder = 0 #Allmost last
+	}
+	379.1.19 = {
+		holder = 70534 # Theodosius
+	}
+	395.1.17 = {
+		holder = 0 # Destroyed Forever
+	}
+}
+e_byzantium = {
+	
+	20.1.1 = {
+		change_development_level = 6
+	}
+	286.4.1 = {
+		insert_title_history = e_roman_empire ## Diocletians Reforms
+		holder = 145241 ## Diocletian
+		succession_laws = { imperial_elective_succession_law }
+		government = administrative_government
+	}
+	305.5.1 = {
+		holder = 145240 # Galerius
+	}
+	311.6.5 = {
+		holder = 145239
+	} # Maximinus II
+	313.8.1 = {
+		holder = 145238 # Licinus
+	}
+	325.4.1 = {
+		holder = 0 # Constantine the I Reunites the Empire
+	}
+	337.5.22 = {
+		holder = 70521 # Constantius the II
+	}
+	350.2.1 = {
+		holder = 0 # Constantius the II Reunites the Empire
+	}
+	364.2.17 = {
+		holder = 145232 #Valens
+	}
+	365.9.26 = {
+		holder = prokopios_02 # Usurper prokopios
+	}
+	366.5.27 = {
+		holder = 145232 #Valens
+	}
+	379.1.19 = {
+		holder = 70534 
+	}
+	395.1.17 = {
+		holder = 70519 
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = imperial_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+			if = {
+				limit = {
+					exists = holder
+					holder = { has_government = administrative_government }
+				}
+				set_state_faith = faith:nicene
+			}
+			if = {
+				limit = {
+					exists = holder
+					has_dlc_feature = royal_court
+				}
+				holder = {
+					set_court_type = court_warlike
+				}
+			}
+		}
+	}
+	408.5.1 = {
+		holder = 145227
+	}
+	421.2.8 = {
+		holder = 145228
+	}
+	421.9.2 = {
+		holder = 70533
+	}
+	450.7.28 = {
+		holder = 70531
+	}
+	450.8.25 = {
+		holder = 70518
+	}
+	457.2.7 = {
+		holder = 70517
+	}
+	474.1.18 = {
+		holder = 70516
+	}
+	474.11.17 = {
+		holder = 70515
+	}
+	475.1.9 = {
+		holder = basiliscus 
+	}
+	476.8.24 = {
+		holder = 70515 
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					holder = { has_government = administrative_government }
+				}
+				set_state_faith = faith:chalcedonian
+			}
+			if = {
+				limit = {
+					exists = holder
+					has_dlc_feature = royal_court
+				}
+				holder = {
+					set_court_type = court_warlike
+				}
+			}
+		}
+	}
+	491.4.9 = {
+		holder = 70514
+	}
+	518.7.9 = {
+		holder = 70513
+	}
+	527.8.1 = {
+		holder = 70512
+	}
+	565.11.14 = {
+		holder = 70511
+	}
+	578.10.5 = {
+		holder = 145073
+	}
+	582.8.14 = {
+		holder = 70510
+	}
+	602.11.27 = {
+		holder = 145072
+	}
+	610.10.5 = {
+		holder = 145071
+	}
+	641.2.11 = {
+		holder = 70509
+	}
+	641.4.20 = {
+		holder = 145070
+	}
+	641.11.1 = {
+		holder = 70508
+	}
+	668.7.15 = {
+		holder = 70507
+	}
+	685.9.14 = {
+		holder = 70506
+	}
+	720.3.31 = {
+		holder = constantine_v
+	}
+}
+d_mazdayasna = {
+	361.1.1 = {
+		holder = mazdayasna_priest_01
+		liege = e_persia
+		government = theocracy_government
+	}
+	476.1.1 = {
+		holder = mazdayasna_priest_02
+	}
+	532.1.1 = {
+		holder = mazdayasna_priest_03
+	}
+}
+
+b_baquba = {
+	361.1.1 = {
+		holder = mazdayasna_priest_01
+	}
+	476.1.1 = {
+		holder = mazdayasna_priest_02
+	}
+	532.1.1 = {
+		holder = mazdayasna_priest_03
+	}
+}
+
+d_exilarchate = {
+	20.1.1 = {
+		liege = e_persia
+		holder = exilarch_01
+	}
+	100.1.1 = {
+		holder = exilarch_02
+	}
+	120.1.1 = {
+		holder = exilarch_03
+	}
+	140.1.1 = {
+		holder = exilarch_04
+	}
+	160.1.1 = {
+		holder = exilarch_05
+	}
+	180.1.1 = {
+		holder = exilarch_06
+	}
+	200.1.1 = {
+		holder = exilarch_07
+	}
+	220.1.1 = {
+		holder = exilarch_08
+	}
+	240.1.1 = {
+		holder = exilarch_09
+	}
+	260.1.1 = {
+		holder = exilarch_10
+	}
+	280.1.1 = {
+		holder = exilarch_11
+	}
+	300.1.1 = {
+		holder = exilarch_12
+	}
+	320.1.1 = {
+		holder = exilarch_13
+	}
+	340.1.1 = {
+		holder = exilarch_kahana_i
+	}
+	360.1.1 = {
+		holder = exilarch_huna_iv
+	}
+	380.1.1 = {
+		holder = exilarch_pahda
+	}
+	391.1.1 = {
+		holder = exilarch_mar_zutra_i
+	}
+	420.1.1 = {
+		holder = exilarch_merimar
+	}
+	440.1.1 = {
+		holder = exilarch_kahana_ii
+	}
+	479.1.1 = {
+		holder = exilarch_huna_v
+	}
+	490.1.1 = {
+		holder = exilarch_mar_zutra_ii
+	}
+	502.1.1 = {
+		holder = exilarch_huna_vi
+	}
+	508.1.1 = {
+		holder = exilarch_mar_ahunai
+	}
+}
+
+d_sanhedrin = {
+	350.1.1 = {
+		holder = sanhedrin_01
+	}
+	365.1.1 = {
+		holder = sanhedrin_02
+	}
+	380.1.1 = {
+		holder = sanhedrin_03
+	}
+	400.1.1 = {
+		holder = sanhedrin_04
+	}
+	425.1.1 = {
+		holder = 0
+	}
+}

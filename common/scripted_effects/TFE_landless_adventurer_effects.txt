@@ -1,0 +1,138 @@
+﻿
+
+
+
+TFE_on_game_start_landless_adventurers_effect = {
+	if = {
+		limit = {
+			has_ep3_dlc_trigger = yes
+		}
+		
+
+
+		############################################################
+		# 
+		# 361 LAAMP
+		# 
+		############################################################
+
+		# Charietto
+		character:ripurian_misc_001 ?= {
+			if = {
+				limit = {
+					is_alive = yes
+					is_landless_adventurer = yes
+				}
+				add_realm_law_skip_effects = camp_purpose_brigands
+			}
+		}
+
+		# Moses the Black
+		character:nobatia_12 ?= {
+			if = {
+				limit = {
+					is_alive = yes
+					is_landless_adventurer = yes
+				}
+				add_realm_law_skip_effects = camp_purpose_brigands
+			}
+		}
+
+		############################################################
+		# 
+		# 395 LAAMP
+		# 
+		############################################################
+
+		# Olympiodorus
+		character:aegyptian_misc_009 ?= {
+			if = {
+				limit = {
+					is_alive = yes
+					is_landless_adventurer = yes
+				}
+				add_realm_law_skip_effects = camp_purpose_scholars
+			}
+		}
+
+		# Claudius Marius Victorius/Victorinus
+		character:gallo_roman_misc_010 ?= {
+			if = {
+				limit = {
+					is_alive = yes
+					is_landless_adventurer = yes
+				}
+				add_realm_law_skip_effects = camp_purpose_scholars
+			}
+		}
+
+		# Fravitta
+		character:992079 ?= {
+			if = {
+				limit = {
+					is_alive = yes
+					is_landless_adventurer = yes
+				}
+				add_realm_law_skip_effects = camp_purpose_mercenaries
+			}
+		}
+
+		############################################################
+		# 
+		# 476 LAAMP
+		# 
+		############################################################
+
+
+		# Damascius
+		character:syrian_misc_06 ?= {
+			if = {
+				limit = {
+					is_alive = yes
+					is_landless_adventurer = yes
+				}
+				add_realm_law_skip_effects = camp_purpose_scholars
+			}
+		}
+
+		# Pamprepius
+		character:aegyptus_84 ?= {
+			if = {
+				limit = {
+					is_alive = yes
+					is_landless_adventurer = yes
+				}
+				add_realm_law_skip_effects = camp_purpose_scholars
+			}
+		}
+
+		############################################################
+		# 
+		# 532 LAAMP
+		# 
+		############################################################
+
+		# Cosmas Indicopleustes
+		character:aegyptian_misc_008 ?= {
+			if = {
+				limit = {
+					is_alive = yes
+					is_landless_adventurer = yes
+				}
+				add_realm_law_skip_effects = camp_purpose_explorers
+			}
+		}
+
+		############################################################
+		# 
+		# 632 LAAMP
+		# 
+		############################################################
+
+
+
+
+
+	}
+}
+

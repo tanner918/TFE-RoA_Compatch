@@ -1,0 +1,609 @@
+﻿quadi_01 = {
+	name = "Gumarius"
+	culture = "old_suebi"
+	religion = central_pagan
+	340.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+quadi_02 = {
+	name = "Wangius"
+	culture = "old_suebi"
+	religion = central_pagan
+	dynasty = quadi_dynasty
+	308.1.1 = {
+		birth = yes
+	}
+	374.1.1 = {
+		death = yes
+	}
+}
+quadi_03 = {
+	name = "Gabinus"
+	culture = "old_suebi"
+	religion = central_pagan
+	father = quadi_02 #Wangius
+	dynasty = quadi_dynasty
+	339.1.1 = {
+		birth = yes
+	}
+	394.1.1 = {
+		death = yes
+	}
+}
+quadi_04 = { #Hermeric
+	name= "Hermerich"
+	dna = hermerich_395
+	dynasty = quadi_dynasty
+	father = quadi_03 #Gabinus
+	religion="central_pagan"
+	culture="old_suebi"
+	martial = 12
+	stewardship = 12
+	diplomacy = 12
+	learning = 7
+	intrigue = 5
+	trait = ambitious
+	trait = fickle
+	trait = humble	
+	trait = education_martial_3
+	trait = logistician
+	362.1.1 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+	441.1.1 = {
+		death = yes
+	}
+}
+quadi_031 = {
+	name = "Leodegast"
+	culture = "old_suebi"
+	religion = central_pagan
+	father = quadi_02 #Wangius
+	dynasty = quadi_dynasty
+	340.3.15 = {
+		birth = yes
+	}
+	400.9.4 = {
+		death = yes
+	}
+}
+quadi_032 = {
+	name = "Otuald"
+	culture = "old_suebi"
+	religion = central_pagan
+	father = quadi_02 #Wangius
+	dynasty = quadi_dynasty
+	348.3.12 = {
+		birth = yes
+	}
+	400.9.4 = {
+		death = yes
+	}
+}
+quadi_07 = {
+	name = "Sagatus"
+	culture = "old_suebi"
+	religion = central_pagan
+	father = quadi_03 #Gabinus
+	dynasty = quadi_dynasty
+	389.1.1 = {
+		birth = yes
+	}
+	443.1.1 = {
+		death = yes
+	}
+}
+quadi_05 = {
+	name = "Leoderigus"
+	culture = "old_suebi"
+	religion = central_pagan
+	father = quadi_07 #Sagatus
+	dynasty = quadi_dynasty
+	415.1.1 = {
+		birth = yes
+	}
+	459.1.1 = {
+		death = yes
+	}
+}
+quadi_06 = {
+	name = "Hildemir"
+	culture = "old_suebi"
+	religion = central_pagan
+	father = quadi_05 #Leoderigus
+	dynasty = quadi_dynasty
+	439.1.1 = {
+		birth = yes
+	}
+	490.1.1 = {
+		death = yes
+	}
+}
+999601 = {
+	name = "Rechila"
+	dynasty = quadi_dynasty
+	religion = "central_pagan"
+	culture = "old_suebi"
+	father = quadi_04
+	395.1.1 = {
+		birth = yes
+	}
+	415.1.1 = {
+		add_spouse = 992050 # Wallia's daughter
+	}
+	448.1.1 = {
+		death = yes
+	}
+}
+999602 = {
+	name = "Hunimund"
+	dynasty = quadi_dynasty
+	religion = "central_pagan"
+	culture = "old_suebi"
+	trait = forder
+	trait = brave
+	trait = gregarious
+	trait = humble
+	father = quadi_07
+	396.1.1 = {
+		birth = yes
+	}
+	469.1.1 = {
+		death = yes
+	}
+}
+999603 = {
+	name = "Rechiar"
+	dynasty = quadi_dynasty
+	religion = "central_pagan"
+	culture = "old_suebi"
+	father = 999601
+	mother = 992050
+	416.1.1 = {
+		birth = yes
+	}
+	429.1.1 = {
+		add_spouse = 992051 # Theodoric's daughter
+	}
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	456.1.1 = {
+		death = {
+			death_reason = death_execution
+			killer = 200285
+		}
+	}
+}
+999604 = {
+	name = "Ricimar"
+	dynasty = quadi_dynasty
+	religion = "central_pagan"
+	culture = "old_suebi"
+	father = 999601
+	mother = 992050
+	418.1.1 = {
+		birth = yes
+	}
+	450.1.1 = {
+		religion = "arianism"
+	}
+	470.1.1 = {
+		add_spouse = prokopios_05
+	}
+	472.1.1 = {
+		death = yes
+	}
+}
+999608 = {
+	name = "Riciberga" # fictional name
+	female = yes
+	dynasty = quadi_dynasty
+	religion = "central_pagan"
+	culture = "old_suebi"
+	father = 999601
+	mother = 992050
+	417.1.1 = {
+		birth = yes
+	}
+	440.1.1 = {
+		religion = "arianism"
+	}
+	470.1.1 = {
+		death = yes
+	}
+}
+999605 = {
+	name = "Agilulf"
+	dynasty = quadi_dynasty
+	religion = "central_pagan"
+	culture = "old_suebi"
+	father = 999602
+	420.1.1 = {
+		birth = yes
+	}
+	460.1.1 = {
+		religion = "arianism"
+	}
+	482.1.1 = {
+		death = yes
+	}
+}
+999606 = {
+	name = "Theobald"
+	dynasty = quadi_dynasty
+	religion = "chalcedonian"
+	culture = "old_suebi"
+	father = 999605
+	465.1.1 = {
+		birth = yes
+	}
+	530.1.1 = {
+		death = yes
+	}
+}
+999607 = {
+	name = "Arnulf"
+	dynasty = quadi_dynasty
+	religion = "chalcedonian"
+	culture = "old_suebi"
+	father = 999606
+	500.1.1 = {
+		birth = yes
+	}
+	560.1.1 = {
+		death = yes
+	}
+}
+old_marcomanni_02 = {
+	name = "Quedulfus"
+	culture = "old_suebi"
+	religion = central_pagan
+	338.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+old_marcomanni_01 = {
+	name = "Reirigus"
+	dynasty = marcomanni_dynasty
+	culture = "old_suebi"
+	religion = central_pagan
+	332.1.1 = {
+		birth = yes
+	}
+	361.1.1 = {
+		add_spouse = bauvari_04 #Fritigil
+	}
+	390.1.1 = {
+		religion = arianism
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+bauvari_04 = {
+	name = "Fritigil"
+	dynasty = bavari_dynasty
+	culture = "old_suebi"
+	religion = arianism
+	female = yes
+	346.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+bauvari_03 = {
+	name = "Reinhold"
+	dynasty = bavari_dynasty
+	culture = "old_suebi"
+	religion = central_pagan
+	342.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+bauvari_02 = {
+	name = "Priarius"
+	dynasty = bavari_dynasty
+	culture = "old_suebi"
+	religion = central_pagan
+	father = bauvari_03 #Reinhold
+	380.1.1 = {
+		birth = yes
+	}
+	440.1.1 = {
+		death = yes
+	}
+}
+bauvari_01 = {
+	name = "Vithergius"
+	dynasty = bavari_dynasty
+	culture = "old_suebi"
+	religion = central_pagan
+	father = bauvari_02 #Ermaric
+	409.1.1 = {
+		birth = yes
+	}
+	460.1.1 = {
+		death = yes
+	}
+}
+bavari_01 = {
+	name = "Ermaric"
+	dynasty = bavari_dynasty
+	culture = "old_suebi"
+	religion = central_pagan
+	father = bauvari_01 #Vithergius
+	trait = adventurer
+	441.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+bavari_07 = {
+	name = "Espallo"
+	dynasty = bavari_dynasty
+	culture = "old_suebi"
+	religion = central_pagan
+	485.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		culture = "bavarian"
+	}
+	564.1.1 = {
+		death = yes
+	}
+}
+####
+lemovi_01 = {
+	name = "Espallo"
+	dynasty = 900060
+	culture = "old_suebi"
+	religion = central_pagan
+	332.1.1 = {
+		birth = yes
+	}
+	382.1.1 = {
+		death = yes
+	}
+}
+lemovi_02 = {
+	name = "Hunisc"
+	dynasty = 900060
+	culture = "old_suebi"
+	religion = central_pagan
+	father = lemovi_01
+	378.1.1 = {
+		birth = yes
+	}
+	423.1.1 = {
+		death = yes
+	}
+}
+lemovi_03 = {
+	name = "Heremigar"
+	dynasty = 900060
+	culture = "old_suebi"
+	religion = central_pagan
+	father = lemovi_02
+	412.1.1 = {
+		birth = yes
+	}
+	456.1.1 = {
+		death = yes
+	}
+}
+lemovi_04 = {
+	name = "Frumeir"
+	dynasty = 900060
+	culture = "old_suebi"
+	religion = central_pagan
+	father = lemovi_03
+	439.1.1 = {
+		birth = yes
+	}
+	479.1.1 = {
+		death = yes
+	}
+}
+maldras_01 = {
+	name = "Massila"
+	dynasty = massilid_dynasty
+	culture = "old_suebi"
+	religion = "nicene"
+	402.1.1 = {
+		birth = yes
+	}
+	450.1.1 = {
+		death = yes
+	}
+}
+maldras_02 = {
+	name = "Maldras"
+	dynasty = massilid_dynasty
+	culture = "old_suebi"
+	religion = "nicene"
+	father = maldras_01
+	422.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	460.1.1 = {
+		death = yes
+	}
+}
+maldras_03 = {
+	name = "Rechimund"
+	dynasty = massilid_dynasty
+	culture = "old_suebi"
+	religion = "nicene"
+	father = maldras_02
+	440.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	463.1.1 = {
+		death = yes
+	}
+}
+maldras_04 = {
+	name = "Frumar"
+	dynasty = massilid_dynasty
+	culture = "old_suebi"
+	religion = "nicene"
+	father = maldras_02
+	443.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	464.1.1 = {
+		death = yes
+	}
+}
+maldras_05 = {
+	name = "Remismund"
+	dynasty = massilid_dynasty
+	culture = "old_suebi"
+	religion = "nicene"
+	father = maldras_02
+	445.1.1 = {
+		birth = yes
+	}
+	450.1.1 = {
+		add_spouse = 992052 # Theodoric's daughter
+	}
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	465.1.1 = {
+		religion = "arianism"
+	}
+	469.1.1 = {
+		death = yes
+	}
+}
+maldras_06 = {
+	name = "Hermenerich"
+	dna = hermenerich_476
+	dynasty = massilid_dynasty
+	culture = "old_suebi"
+	religion = "nicene"
+	father = maldras_02
+	stewardship = 4
+	trait = cynical
+	trait = fickle
+	trait = paranoid
+	trait = education_diplomacy_3
+	449.1.1 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+	465.1.1 = {
+		religion = "arianism"
+	}
+	486.1.1 = {
+		death = yes
+	}
+}
+maldras_07 = {
+	name = "Theodemund"
+	dynasty = massilid_dynasty
+	culture = "old_suebi"
+	religion = "arianism"
+	father = maldras_05
+	473.1.1 = {
+		birth = yes
+	}
+	532.1.1 = {
+		death = yes
+	}
+}
+galicia_09 = {
+	name = "Segomirus"
+	culture = "old_suebi"
+	religion = "central_pagan"
+	452.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+galicia_10 = {
+	name = "Reinhold"
+	culture = "old_suebi"
+	religion = "chalcedonian"
+	451.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+
+theodemund_the_unknown = {
+	name = "Theodemund"
+	culture = "old_suebi"
+	religion = "arianism"
+	496.1.1 = {
+		birth = yes
+	}
+	547.1.1 = {
+		death = yes
+	}
+}
+
+
+
+##################################################################################
+# 
+# FICTITIOUS PLACEHOLDERS
+# By Cybrxkhan
+# 
+##################################################################################
+
+
+old_suebi_misc_001 = {
+	name = "Sagatus"
+	religion = "central_pagan"
+	culture = "old_suebi"
+	500.3.10 = {
+		birth = yes
+	}
+	562.11.5 = {
+		death = yes
+	}
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,273 @@
+﻿k_leon = {
+	361.1.1 = { change_development_level = 3 }
+	532.1.1 = { change_development_level = 4 }
+	768.1.1 = { change_development_level = 5 }
+	de_jure_liege = e_spain
+}
+
+
+d_leon = {
+	476.1.1 = {
+		de_jure_liege = k_spanish_galicia
+	}
+	532.1.1 = {
+		holder = sabaria_01
+		liege = 0
+	}
+	711.1.1 = {
+		de_jure_liege = k_asturias
+	}
+}
+
+
+c_leon = {
+	361.1.1 = { change_development_level = 6 }
+	532.1.1 = { change_development_level = 7 }
+	768.1.1 = { change_development_level = 8 }
+
+	300.1.1 = {
+		de_jure_liege = d_galicia
+		liege = d_galicia
+	}
+	361.1.1 = {
+		holder = leon_01
+	}
+	395.1.1 = {
+		holder = leon_04
+	}
+	476.1.1 = {
+		holder = leon_07
+		de_jure_liege = d_leon
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+	532.1.1 = {
+		holder = cantabrian_marcher_01
+	}
+	754.1.1 = {
+		holder = 70003 # Alfonso I de Cantabria
+		liege = k_asturias
+	}
+	757.1.1 = {
+		holder = 70004 # Fruela I de Asturias
+	}
+	768.1.1 = {
+		holder = 70012 # Aurelio Froilaz de Cantabria
+	}
+}
+
+
+c_benavente = {
+	361.1.1 = {
+		de_jure_liege = d_galicia
+	}
+	361.1.1 = {
+		holder = leon_01
+		liege = d_galicia
+	}
+	395.1.1 = {
+		holder = leon_04
+	}
+	476.1.1 = {
+		holder = leon_07
+		government = feudal_government
+		de_jure_liege = d_leon
+	}
+	532.1.1 = {
+		holder = sabaria_02
+		liege = d_leon
+	}
+	754.1.1 = {
+		holder = 70003 # Alfonso I de Cantabria
+		liege = k_asturias
+	}
+	757.1.1 = {
+		holder = 70004 # Fruela I de Asturias
+	}
+	768.1.1 = {
+		holder = 70012 # Aurelio Froilaz de Cantabria
+	}
+}
+
+
+c_zamora = {
+	300.1.1 = { #Diocletian reform
+		de_jure_liege = d_murcia
+	}
+	361.1.1 = {
+		holder = theodosian_011
+		liege = d_murcia
+	}
+	389.1.1 = {
+		holder = theodosian_012
+	}
+	476.1.1 = {
+		holder = leon_07
+		government = feudal_government
+		de_jure_liege = d_leon
+	}
+	532.1.1 = {
+		holder = galeica_07
+	}
+	760.1.1 = {
+		holder = 200031 # Musa Musavid
+		liege = k_andalusia
+	}
+}
+
+c_salamanca = {
+	300.1.1 = { #Diocletian reform
+		de_jure_liege = d_badajoz
+		liege = d_badajoz
+	}
+	361.1.1 = {
+		holder = leon_02
+	}
+	395.1.1 = {
+		holder = leon_05
+	}
+	476.1.1 = {
+		holder = leon_08
+		de_jure_liege = d_leon
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = roman_government
+				}
+			}
+		}
+	}
+	476.1.1 = {
+		liege = 0
+	}
+	532.1.1 = {
+		holder = sabaria_01
+	}
+	758.1.1 = {
+		holder = 200032 # Suleyman Suleymanid
+		liege = k_andalusia
+		government = clan_government
+	}
+}
+
+
+c_avila = {
+	300.1.1 = { #Diocletian reform
+		de_jure_liege = d_badajoz
+		liege = d_badajoz
+	}
+	361.1.1 = {
+		holder = leon_02
+	}
+	395.1.1 = {
+		holder = leon_05
+	}
+	476.1.1 = {
+		holder = leon_08
+		de_jure_liege = d_leon
+		
+	}
+	476.1.1 = {
+		liege = 0
+	}
+	532.1.1 = {
+		holder = galeica_05
+	}
+	758.1.1 = {
+		holder = 200032 # Suleyman Suleymanid
+		liege = k_andalusia
+		government = clan_government
+	}
+}
+
+
+d_asturias = {
+	476.1.1 = {
+		de_jure_liege = k_spanish_galicia
+	}
+	532.1.1 = {
+		holder = theodemund_the_unknown
+	}
+	711.1.1 = {
+		de_jure_liege = k_asturias
+	}
+}
+
+
+c_asturias_de_oviedo = {
+	300.1.1 = { #Diocletian reform
+		government = tribal_government
+		de_jure_liege = d_galicia
+		liege = d_galicia
+	}
+	361.1.1 = {
+		holder = leon_01
+	}
+	460.1.1 = {
+		holder = leon_04 #Cantabrian
+	}
+	476.1.1 = {
+		liege = 0
+		de_jure_liege = d_asturias
+	}
+	532.1.1 = {
+		holder = asturian_001
+		liege = d_asturias
+	}
+	718.1.1 = {
+		holder = 70000 # Pelayo Fafilaz de Asturias
+		liege = k_asturias
+	}
+	737.1.1 = {
+		holder = 70115 # Favila Páez de Asturias
+	}
+	739.6.15 = {
+		holder = 70003 # Alfonso I de Cantabria
+	}
+	757.1.1 = {
+		holder = 70004 # Fruela I de Asturias
+	}
+	768.1.1 = {
+		holder = 70012 # Aurelio Froilaz de Cantabria
+	}
+}
+
+
+c_pravia = {
+	361.1.1 = {
+		de_jure_liege = d_galicia
+	}
+	361.1.1 = {
+		holder = leon_03
+		government = tribal_government
+		liege = d_galicia
+	}
+	395.1.1 = {
+		holder = leon_06
+	}
+	476.1.1 = {
+		holder = leon_09
+		government = feudal_government
+		de_jure_liege = d_asturias
+	}
+	532.1.1 = {
+		holder = asturian_001
+		liege = d_asturias
+	}
+	754.1.1 = {
+		holder = 70116 # Mauregato Alfónsez de Cantabria
+		liege = k_asturias
+	}
+}
+

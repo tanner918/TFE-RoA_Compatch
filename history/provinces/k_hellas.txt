@@ -1,0 +1,206 @@
+﻿#k_hellas
+##d_athens ###################################
+###c_attica
+482 = {		#Atheniai
+	culture = greek
+	religion = hellenic_pagan
+	holding = castle_holding
+
+#	special_building = athenian_acropolis_01
+
+	250.1.1 = {
+		buildings = {
+			farm_estates_01
+			curtain_walls_01
+		}
+	}
+	300.1.1 = {
+		special_building = generic_university
+	}
+	476.1.1 = {
+		religion = chalcedonian
+	}
+}
+3730 = {	#Thebes
+	holding = city_holding
+
+	250.1.1 = {
+		buildings = {
+			farm_estates_01
+		}
+	}
+}
+3731 = {	#Megara
+	holding = church_holding
+	#Set as church_holding to have all 3 holding types
+}
+
+###c_boeotia
+3728 = {	#Levadia
+	culture = greek
+	religion = hellenic_pagan
+	holding = castle_holding
+	476.1.1 = {
+		religion = chalcedonian
+	}
+	250.1.1 = {
+		buildings = {
+			farm_estates_01
+			curtain_walls_01
+		}
+	}
+}
+3727 = {	#Boudounitsa AKA Mendenitsa
+	holding = none
+}
+3729 = {	#Amfissa
+	holding = church_holding
+	303.1.1 = {
+		special_building_slot = hosios_loukas
+	}
+	910.1.1 = {
+		special_building = hosios_loukas
+	}
+}
+
+###c_euboea
+485 = {		#Euboia
+	culture = greek
+	religion = hellenic_pagan
+	holding = castle_holding
+	476.1.1 = {
+		religion = chalcedonian
+	}
+	250.1.1 = {
+		buildings = {
+			farm_estates_01
+			curtain_walls_01
+		}
+	}
+}
+3725 = {	#Skopelos
+	holding = none
+	1050.1.1 = {
+		holding = city_holding
+		#Depopulated from the VIIth onwar
+		#Then, started repopulating in the XIth
+	}
+}
+3726 = {	#Oreoi
+	holding = none
+}
+
+##d_achaia ###################################
+###c_achaia
+476 = {		#Achaia
+	culture = greek
+	religion = nicene
+	holding = castle_holding
+	250.1.1 = {
+		special_building_slot = patras_castle
+		buildings = {
+			farm_estates_01
+			curtain_walls_01
+		}
+	}
+	476.1.1 = {
+		religion = chalcedonian
+	}
+	552.1.1 = {
+		special_building = patras_castle
+	}
+}
+
+3801 = {	#Vostitsa AKA Aigio
+	holding = city_holding
+}
+3737 = {	#Andravida
+	holding = none
+	#Unmentionned before 1205
+}
+3738 = {	#Kalavryta
+	holding = none
+	1066.1.1 = {
+		holding = church_holding
+		#Existed some time in the Middle Age (unsure when exactly)
+		#Set as church_holding to have all 3 holding types
+	}
+}
+
+###c_korinthos
+481 = {		#Korinthos
+	culture = greek
+	religion = nicene
+	holding = castle_holding
+	476.1.1 = {
+		religion = chalcedonian
+	}
+	250.1.1 = {
+		buildings = {
+			farm_estates_01
+			curtain_walls_01
+		}
+	}
+}
+3732 = {	#Nikli AKA Tegea
+	holding = city_holding
+}
+3798 = {	#Argos
+	holding = castle_holding
+
+	250.1.1 = {
+		buildings = {
+			farm_estates_01
+		}
+	}
+}
+3799 = {	#Damala AKA Troezen
+	holding = church_holding
+	#Set as church_holding to have all 3 holding types
+}
+
+###c_messenia
+3733 = {	#Karytaina
+	culture = greek
+	religion = nicene
+	holding = castle_holding
+	476.1.1 = {
+		religion = chalcedonian
+	}
+	250.1.1 = {
+		buildings = {
+			farm_estates_01
+			curtain_walls_01
+		}
+	}
+}
+3734 = {	#Arcadia
+	holding = city_holding
+}
+3800 = {	#Kalamata
+	holding = none
+	950.1.1 = {
+		holding = church_holding
+		#Became important enough to be mentionned in Xth
+	}
+}
+477 = {		#Methone
+	holding = city_holding
+}
+
+###c_laconia
+3736 = {	#Mistra
+	culture = greek
+	religion = hellenic_pagan
+	holding = castle_holding
+	550.1.1 = {
+		religion = chalcedonian
+		special_building_slot = despot_palace
+	}
+}
+478 = {		#Monemvasia
+	holding = city_holding
+}
+3735 = {	#Lacedaemonia
+	holding = none
+}

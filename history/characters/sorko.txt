@@ -1,0 +1,178 @@
+﻿#sorko characters
+
+#placeholders for c_sorko
+
+sorko_01 = {
+	name = "Tib" #fictional
+	religion = west_african_orisha_pagan
+	culture = sorko
+	332.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+sorko_02 = {
+	name = "Medina" #fictional
+	religion = west_african_orisha_pagan
+	culture = sorko
+	female = yes
+	431.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+sorko_03 = {
+	name = "Layla" #fictional
+	religion = west_african_orisha_pagan
+	culture = sorko
+	female = yes
+	507.1.1 = {
+		birth = yes
+	}
+	560.1.1 = {
+		death = yes
+	}
+}
+sorko_04 = {
+	name = "Kiray" #fictional
+	religion = west_african_orisha_pagan
+	culture = sorko
+	600.1.1 = {
+		birth = yes
+	}
+	670.1.1 = {
+		death = yes
+	}
+}
+sorko_05 = {
+	name = "Ikoi" #fictional
+	religion = west_african_orisha_pagan
+	culture = sorko
+	739.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+sorko_06 = {
+	name = "Faran Maka Bote" #Hero
+	religion = west_african_bidu_pagan
+	dynasty = diasorko
+	culture = sorko
+	trait = brave
+	trait = just
+	trait = humble
+	trait = strong
+	trait = education_martial_3
+	martial = 7
+	prowess = 10
+	340.1.1 = {
+		birth = yes
+	}
+	360.1.1 = {
+		add_spouse = gaw_01
+		effect = {
+			set_relation_soulmate = character:gaw_01
+			create_artifact_mythicharpoon_effect = { OWNER = THIS }
+		}
+		spawn_army = {
+			name = event_troop_default_name
+			levies = 300
+			men_at_arms = {
+				type = light_footmen
+				stacks = 1
+			}
+			men_at_arms = {
+				type = bowmen
+				stacks = 1
+			}
+			location = province:6577
+			origin = province:6577
+			inheritable = no
+		}
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+gaw_01 = {
+	female = yes
+	name = "Zaynab" #Fictional wife
+	religion = west_african_bidu_pagan
+	culture = gaw
+	trait = generous
+	trait = calm
+	trait = just
+	trait = education_stewardship_3
+	trait = shrewd
+	diplomacy = 8
+	stewardship = 7
+	341.1.1 = {
+		birth = yes
+	}
+	360.1.1 = {
+		add_spouse = sorko_06
+		effect = {
+			set_relation_soulmate = character:sorko_06
+		}
+	}
+	405.1.1 = {
+		death = yes
+	}
+}
+# Gur
+gur_14 = {
+	name = "Tib" #fictional
+	religion = west_african_bidu_pagan
+	culture = sorko
+	336.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+gur_15 = {
+	name = "Ize" #fictional
+	religion = west_african_bidu_pagan
+	culture = sorko
+	trait = craven
+	trait = content
+	trait = lazy
+	trait = education_stewardship_1
+	stewardship = 0
+	martial = 0
+	331.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+gur_16 = {
+	name = "Dum" #fictional
+	religion = west_african_bidu_pagan
+	culture = sorko
+	441.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+gur_17 = {
+	name = "Kukura" #fictional
+	religion = west_african_bidu_pagan
+	culture = sorko
+	432.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}

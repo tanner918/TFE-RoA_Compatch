@@ -1,0 +1,3092 @@
+﻿namespace = germanic_events
+
+# Modernize the Frankish Kingdom
+
+germanic_events.0001 = {
+	title = germanic_events.0001.t
+	desc =  germanic_events.0001.desc
+	scope = character
+	theme = diplomacy
+	override_background = {
+		reference = battlefield
+	}
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+
+	immediate = {
+		play_music_cue = "TFE_General_Cue"
+	}
+
+	option = {
+		name = germanic_events.0001.option
+		custom_tooltip = germanic_events.0001.option.tooltip
+	}
+}
+
+# Unite the Franks
+germanic_events.0002 = {
+	type = character_event
+	title = germanic_events.0002.t
+	desc = germanic_events.0002.desc
+	theme = diplomacy
+	left_portrait = {
+		character = root
+		animation = sword_coup_degrace
+	}
+
+	override_background = {
+		reference = throne_room
+	}
+
+	immediate = {
+		play_music_cue = "TFE_General_Cue"
+		hidden_effect = {
+			# Make a list of all duchies with franks in them
+			#culture:frankish = {
+			#	every_culture_county = {
+			#		duchy = {
+			#			add_to_list = frankish_duchies
+			#		}
+			#	}
+			#}
+
+			# Iterate through frankish duchies list and add the ones with 80% or more frankish counties to the de jure of the frankish kingdom
+			#every_in_list = {
+				#list = frankish_duchies
+				#limit = {
+				#	any_in_de_jure_hierarchy = {
+				#		condition = { tier = tier_county }
+				#		culture = culture:frankish 
+				#		percent >= 0.8
+				#	}
+				#}
+				#set_de_jure_liege_title = title:k_franks
+			#}
+
+			culture:ripurian = {
+				every_culture_county = {
+					limit = {
+						NOT = {
+							kingdom = title:k_lotharingia
+						}
+					}
+					duchy = {
+						set_de_jure_liege_title = title:k_lotharingia
+					}
+				}
+			}
+			culture:salian = {
+				every_culture_county = {
+					limit = {
+						NOT = {
+							kingdom = title:k_lotharingia
+						}
+					}
+					duchy = {
+						set_de_jure_liege_title = title:k_lotharingia
+					}
+				}
+			}
+
+			# Change Salia's title name to "Frankish Kingdom"
+			title:k_franks = {
+				set_title_name = k_franks_united
+				set_definitive_form = yes
+				set_de_jure_liege_title = title:e_france
+			}
+
+			# Create the title and/or change the owner
+			create_title_and_vassal_change = {
+				type = created
+				save_scope_as = title_change
+				add_claim_on_loss = no
+			}
+			title:k_franks = {
+				change_title_holder = {
+					holder = root
+					change = scope:title_change
+				}
+			}
+			resolve_title_and_vassal_change = scope:title_change		
+			set_primary_title_to = title:k_franks
+		}
+	}
+	option = {
+		name = germanic_events.0002.option
+		unite_franks_culture_effect = yes
+		custom_tooltip = germanic_events.0002.option.tooltip
+	}
+}
+
+germanic_events.0003 = {
+	title = germanic_events.0003.t
+	desc = germanic_events.0003.desc
+	scope = character
+	theme = martial
+
+	override_background = {
+		reference = battlefield
+	}
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+
+	option = {
+		name = germanic_events.0003.option.a
+		start_war = {
+			cb = invasion_of_soissons_cb
+			target = title:k_france.holder
+			target_title = title:k_france
+		}
+		spawn_army = {
+			name = FRANKISH_GLORYHOUNDS
+			inheritable = yes
+			levies = 7000
+			men_at_arms = {
+				type = bowmen
+				stacks = 15
+			}
+			men_at_arms = {
+				type = light_horsemen
+				stacks = 10
+			}
+			men_at_arms = {
+				type = light_footmen
+				stacks = 15
+			}
+			location = root.capital_province
+		}
+		ai_chance = { base = 10 }
+	}
+	option = {
+		name = germanic_events.0003.b
+		title:k_france.holder = {
+			add_opinion = {
+				target = root
+				opinion = 100
+				years = 5
+				modifier = stood_by_me_opinion
+			}
+		}
+		ai_chance = { base = 0 }
+	}
+}
+
+germanic_events.0004 = {
+	title = germanic_events.0004.t
+	desc = germanic_events.0004.desc
+	scope = character
+	theme = martial
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	right_portrait = {
+		character = scope:attacker
+		animation = personality_honorable
+	}
+
+	option = {
+		name = germanic_events.0004.a
+		scope:war = {
+			add_attacker = root
+		}
+		ai_chance = { base = 30 }
+	}
+	option = {
+		name = germanic_events.0004.b
+		add_prestige = 100
+		title:k_france.holder = {
+			add_opinion = {
+				target = root
+				opinion = 50
+				years = 5
+				modifier = stood_by_me_opinion
+			}
+		}
+		scope:attacker = {
+			add_unpressed_claim = root.primary_title
+		}
+		ai_chance = { base = 5 }
+	}
+}
+
+germanic_events.0005 = {
+	title = germanic_events.0005.t
+	desc = germanic_events.0005.desc
+	scope = character
+	theme = martial
+
+	override_background = {
+		reference = battlefield
+	}
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+
+	option = {
+		name = germanic_events.0005.option.a
+	}
+}
+
+germanic_events.0006 = {
+	title = germanic_events.0006.t
+	desc = germanic_events.0006.desc
+	scope = character
+	theme = martial
+
+	override_background = {
+		reference = battlefield
+	}
+	left_portrait = {
+		character = root
+		animation = anger
+	}
+	right_portrait = {
+		character = title:k_visigoths.holder
+		animation = personality_honorable
+	}
+
+	option = {
+		name = germanic_events.0006.option.a
+		start_war = {
+			cb = domination_over_gaul_cb
+			target = title:k_visigoths.holder
+		}
+	}
+}
+
+germanic_events.0007 = {
+	title = germanic_events.0007.t
+	desc = germanic_events.0007.desc
+	scope = character
+	theme = martial
+
+	override_background = {
+		reference = battlefield
+	}
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	right_portrait = {
+		character = title:e_byzantium.holder
+		animation = personality_honorable
+	}
+	immediate = {
+		title:e_byzantium.holder = {
+			save_scope_as = ere_emperor_0007
+		}
+	}
+	option = {
+		name = germanic_events.0007.option.a
+		title:k_italy.holder = {
+			trigger_event = germanic_events.0008
+		}
+		add_unpressed_claim	= title:k_italy
+		start_war = {
+			cb = italian_gothic_invasion_cb
+			target = title:k_italy.holder
+			target_title = title:k_italy
+			claimant = root
+		}
+		spawn_army = {
+			name = gothic_event_troops
+			inheritable = yes
+			levies = 4000
+			men_at_arms = {
+				type = bowmen
+				stacks = 10
+			}
+			men_at_arms = {
+				type = light_horsemen
+				stacks = 8
+			}
+			men_at_arms = {
+				type = light_footmen
+				stacks = 10
+			}
+			location = root.capital_province
+		}
+		add_prestige = -50
+		ai_chance = { 
+			base = 10 
+		}
+	}
+	option = {
+		name = germanic_events.0007.option.b
+		title:e_byzantium.holder = {
+			add_unpressed_claim	= title:k_italy
+			add_unpressed_claim	= scope:ere_italy_invader.primary_title
+			trigger_event = germanic_events.0009
+			add_opinion = {
+				target = root
+				opinion = -200
+				years = 30
+				modifier = ignored_emperor_call
+			}
+		}
+		ai_chance = { base = 1 }
+
+	}
+}
+
+germanic_events.0008 = {
+	title = germanic_events.0008.t
+	desc = germanic_events.0008.desc
+	scope = character
+	theme = martial
+
+	override_background = {
+		reference = battlefield
+	}
+	left_portrait = {
+		character = root
+		animation = anger
+	}
+	right_portrait = {
+		character = scope:ere_italy_invader
+		animation = anger
+	}
+
+	option = {
+		name = germanic_events.0008.option.a
+	}
+}
+
+germanic_events.0009 = {
+	title = germanic_events.0009.t
+	desc = germanic_events.0009.desc
+	scope = character
+	theme = martial
+
+	override_background = {
+		reference = battlefield
+	}
+	left_portrait = {
+		character = root
+		animation = anger
+	}
+	right_portrait = {
+		character = title:k_ostrogoths.holder
+		animation = worry
+	}
+
+	option = {
+		name = germanic_events.0009.option.a
+	}
+}
+
+germanic_events.0010 = {
+	title = germanic_events.0010.t
+	desc = germanic_events.0010.desc
+	scope = character
+	theme = martial
+
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = anger
+	}
+	right_portrait = {
+		character = scope:italy_holder_dissent
+		animation = anger
+	}
+
+	option = {
+		name = germanic_events.0010.option.a
+		add_character_modifier = {
+			modifier = sow_dissent_ere
+			years = 2
+		}
+		add_prestige = -200
+	}
+}
+
+#New Ostrogoth Italy Invasion Event
+germanic_events.0011 = {
+	title = germanic_events.0007.t
+	desc = germanic_events.0007.desc
+	scope = character
+	theme = martial
+
+	override_background = {
+		reference = battlefield
+	}
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	right_portrait = {
+		character = title:e_byzantium.holder
+		animation = personality_honorable
+	}
+	immediate = {
+		title:e_byzantium.holder = {
+			save_scope_as = ere_emperor_0007
+		}
+	}
+	option = {
+		name = germanic_events.0007.option.a
+		title:k_italy.holder = {
+			trigger_event = germanic_events.0008
+		}
+		add_unpressed_claim	= title:k_italy
+		start_war = {
+			cb = italian_gothic_invasion_cb_theodoric #Need one that accounts for Theodoric's ERE lands returning to Zenon
+			target = title:k_italy.holder
+			target_title = title:k_italy
+			claimant = root
+		}
+		spawn_army = {
+			name = gothic_event_troops
+			inheritable = yes
+			levies = 2000
+			men_at_arms = {
+				type = bowmen
+				stacks = 4
+			}
+			men_at_arms = {
+				type = light_horsemen
+				stacks = 4
+			}
+			men_at_arms = {
+				type = light_footmen
+				stacks = 6
+			}
+			location = root.capital_province
+		}
+		spawn_army = {
+			name = gothic_event_troops
+			inheritable = no
+			levies = 2000
+			men_at_arms = {
+				type = bowmen
+				stacks = 4
+			}
+			men_at_arms = {
+				type = light_horsemen
+				stacks = 4
+			}
+			men_at_arms = {
+				type = light_footmen
+				stacks = 6
+			}
+			location = root.capital_province
+		}
+		add_character_modifier = {
+			modifier = zenos_blessing
+			years = 10
+		}
+		add_prestige = -500
+		ai_chance = { 
+			base = 10 
+		}
+	}
+	
+	option = {
+		name = germanic_events.0011.option.b
+		title:e_byzantium.holder = {
+			add_unpressed_claim	= title:k_italy
+			add_unpressed_claim	= title:k_ostrogoths
+			trigger_event = germanic_events.0009
+			add_opinion = {
+				target = root
+				opinion = -200
+				years = 30
+				modifier = ignored_emperor_call
+			}
+		}
+		add_unpressed_claim = title:k_croatia
+		add_unpressed_claim = title:k_daciae
+		add_character_modifier = pillager_king
+		spawn_army = {
+			name = gothic_event_troops
+			inheritable = yes
+			levies = 3000
+			men_at_arms = {
+				type = bowmen
+				stacks = 6
+			}
+			men_at_arms = {
+				type = light_horsemen
+				stacks = 6
+			}
+			men_at_arms = {
+				type = light_footmen
+				stacks = 10
+			}
+			location = root.capital_province
+		}
+		spawn_army = {
+			name = gothic_event_troops
+			inheritable = no
+			levies = 3000
+			men_at_arms = {
+				type = bowmen
+				stacks = 6
+			}
+			men_at_arms = {
+				type = light_horsemen
+				stacks = 6
+			}
+			men_at_arms = {
+				type = light_footmen
+				stacks = 10
+			}
+			location = root.capital_province
+		}
+		add_gold = 500
+		add_prestige = 1000
+
+		ai_chance = { base = 1 }
+
+	}
+}
+
+# Century Storms
+germanic_events.0101 = {
+	title = germanic_events.0101.t
+	desc = germanic_events.0101.desc
+	theme = stewardship
+	scope = character
+
+	override_background = {
+		reference = fp1_ocean
+	}
+
+	left_portrait = {
+		character = root
+	}
+
+	right_portrait = {
+		character = scope:sunken_merchant
+		animation = worry
+	}
+
+	immediate = {
+		create_character = {
+			location = root.location
+			template = century_storms_character
+			save_scope_as = sunken_merchant
+		}
+	}
+
+	# I pity the poor man.
+	option = {
+		name = germanic_events.0101.option.a
+		add_piety = -5
+		remove_short_term_gold = minor_gold_value
+		add_character_modifier = {
+			modifier = patron_of_trade
+			years = 5
+		}
+		stress_impact = {
+			greedy = minor_stress_impact_gain
+			cynical = minor_stress_impact_gain
+			generous = minor_stress_impact_loss
+			forgiving = minor_stress_impact_loss
+			compassionate = medium_stress_impact_loss
+			callous = medium_stress_impact_gain
+			sadistic = major_stress_impact_gain
+		}
+		ai_chance = { base = 1.3 }
+	}
+
+	# We can put him in our service instead.
+	option = {
+		name = germanic_events.0101.option.b
+		remove_short_term_gold = medium_gold_value
+		add_prestige = 15
+		add_courtier = scope:sunken_merchant
+		stress_impact = {
+			lazy = minor_stress_impact_gain
+			content = minor_stress_impact_gain
+			trusting = minor_stress_impact_loss
+		}
+	}
+
+	# Oh no, the ship sank... so sad.
+	option = {
+		name = germanic_events.0101.option.c
+		add_prestige = -30
+		add_gold = 30
+		stress_impact = {
+			forgiving = minor_stress_impact_gain
+			arrogant = minor_stress_impact_loss
+			callous = medium_stress_impact_loss
+			sadistic = medium_stress_impact_loss
+			compassionate = major_stress_impact_gain
+		}
+	}
+}
+
+germanic_events.0012 = {
+	title = germanic_events.0012.t
+	desc = germanic_events.0012.desc
+	scope = character
+	theme = diplomacy
+
+	left_portrait = {
+		character = scope:seller
+		animation = personality_greedy
+	}
+
+	right_portrait = {
+		character = scope:buyer
+		animation = personality_honorable
+	}
+
+	immediate = {
+		root = {
+			save_scope_as = seller
+		}
+		if = {
+			limit = {
+				title:e_italy = {
+					is_title_created = yes
+				}
+			}
+			title:e_italy.holder = {
+				save_scope_as = buyer
+			}
+		}
+		else_if = {
+			limit = {
+				AND = {
+					title:k_sicily = {
+						is_title_created = yes
+					}
+					NOT = { has_title = title:k_sicily }
+					title:k_sicily.holder = {
+						is_independent_ruler = yes
+					}
+				}
+			}
+			title:k_sicily.holder = {
+				save_scope_as = buyer
+			}
+		}
+		else_if = {
+			limit = {
+				AND = {
+					title:k_italy = {
+						is_title_created = yes
+					}
+					NOT = { has_title = title:k_italy }
+					title:k_italy.holder = {
+						is_independent_ruler = yes
+					}
+				}
+			}
+			title:k_italy.holder = {
+				save_scope_as = buyer
+			}
+		}
+	}
+	option = {
+		name = germanic_events.0012.option.a
+		scope:buyer = {
+			trigger_event = {
+				id = germanic_events.0013
+				days = 1
+			}
+		}
+		ai_chance = { base = 100 }
+	}
+	option = {
+		name = germanic_events.0012.option.b
+		ai_chance = { base = 0 }
+	}
+}
+
+germanic_events.0013 = {
+	title = germanic_events.0013.t
+	desc = germanic_events.0013.desc
+	scope = character
+	theme = diplomacy
+
+	left_portrait = {
+		character = scope:seller
+		animation = personality_greedy
+	}
+
+	right_portrait = {
+		character = scope:buyer
+		animation = personality_honorable
+	}
+
+	immediate = {
+		scope:seller = {
+			set_variable = {
+				name = gold_cost
+				value = 0
+			}
+		}
+		scope:seller = {
+			every_sub_realm_county = {
+				limit = {
+					NOT = { this = title:c_trapani }
+					NOT = { this = title:c_malta }
+					duchy = title:d_sicily
+				}
+				scope:seller = {
+					change_variable = {
+						name = gold_cost
+						add = 75
+					}
+				}
+				add_to_list = transfer_list
+			}
+		}
+	}
+
+	option = {
+		name = germanic_events.0013.option.a
+		scope:buyer = {
+			pay_short_term_gold = {
+				target = scope:seller
+				gold = scope:seller.var:gold_cost
+			}
+		}
+		scope:seller = {
+			every_sub_realm_county = {
+				limit = {
+					NOT = { holder = scope:seller }
+					OR = {
+						this = title:c_trapani
+						this = title:c_malta
+					}
+				}
+				create_title_and_vassal_change = {
+					type = granted
+					save_scope_as = change
+					add_claim_on_loss = no
+				}
+				change_title_holder_include_vassals = {
+					holder = scope:seller
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+			every_held_title = {
+				limit = {
+					tier = tier_county
+					duchy = title:d_sicily
+					NOT = { this = title:c_trapani }
+					NOT = { this = title:c_malta }
+				}
+				create_title_and_vassal_change = {
+					type = granted
+					save_scope_as = change
+					add_claim_on_loss = no
+				}
+				change_title_holder_include_vassals = {
+					holder = scope:buyer
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+			every_vassal = {
+				limit = {
+					capital_county = {
+						duchy = title:d_sicily
+					}
+				}
+				create_title_and_vassal_change = {
+					type = granted
+					save_scope_as = change
+					add_claim_on_loss = no
+				}
+				change_liege = {
+					liege = scope:buyer
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+		}
+		scope:seller = {
+			add_opinion = {
+				target = scope:buyer
+				opinion = 20
+				modifier = friendliness_opinion
+			}
+		}
+		scope:buyer = {
+			add_opinion = {
+				target = scope:seller
+				opinion = 20
+				modifier = friendliness_opinion
+			}
+		}
+		scope:buyer = {
+			add_truce_both_ways = {
+				character = scope:seller
+				years = 10
+				name = SICILY_TRUCE
+				result = white_peace
+			}
+		}
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:concession_of_italy_decision
+		}
+		ai_chance = { base = 100 }
+	}
+	option = {
+		name = germanic_events.0013.option.b
+		scope:seller = {
+			add_opinion = {
+				target = scope:buyer
+				opinion = -20
+				modifier = disappointed_opinion
+			}
+		}
+		scope:buyer = {
+			add_opinion = {
+				target = scope:seller
+				opinion = -20
+				modifier = respect_opinion
+			}
+		}
+		ai_chance = { base = 0 }
+	}
+}
+
+germanic_events.0014 = {
+	title = germanic_events.0014.t
+	desc = germanic_events.0014.desc
+	scope = character
+	theme = realm
+
+	left_portrait = {
+		character = scope:suitor_1
+		animation = personality_greedy
+	}
+	right_portrait = {
+		character = scope:suitor_2
+		animation = personality_greedy
+	}
+	lower_center_portrait = {
+		character = scope:suitor_3
+		animation = personality_greedy
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				character:992100 = {
+					is_alive = yes
+					is_landed = yes
+					is_vassal_of = root
+					is_betrothed = no
+					is_married = no
+				}
+			}
+			character:992100 = {
+				save_scope_as = suitor_1
+			}
+		}
+		else = {
+			random_vassal = {
+				limit = {
+					is_male = yes
+					is_betrothed = no
+					is_married = no
+					exists = dynasty
+					NOT = { dynasty = root.dynasty }
+				}
+				save_scope_as = suitor_1
+			}
+		}
+		if = {
+			limit = {
+				character:992030 = {
+					is_alive = yes
+					is_landed = yes
+					is_betrothed = no
+					is_married = no
+					is_vassal_of = root
+				}
+			}
+			character:992030 = {
+				save_scope_as = suitor_2
+			}
+		}
+		else = {
+			random_vassal = {
+				limit = {
+					is_male = yes
+					is_betrothed = no
+					is_married = no
+					exists = dynasty
+					NOT = { dynasty = root.dynasty }
+					NOT = { scope:suitor_1 = THIS }
+				}
+				save_scope_as = suitor_2
+			}
+		}
+		if = {
+			limit = {
+				character:rugian_17 = {
+					is_alive = yes
+					is_landed = yes
+					is_betrothed = no
+					is_married = no
+					is_vassal_of = root
+				}
+			}
+			character:rugian_17 = {
+				save_scope_as = suitor_3
+			}
+		}
+		else = {
+			random_vassal = {
+				limit = {
+					is_male = yes
+					is_betrothed = no
+					is_married = no
+					exists = dynasty
+					NOT = { dynasty = root.dynasty }
+					NOT = { scope:suitor_1 = THIS }
+					NOT = { scope:suitor_2 = THIS }
+				}
+				save_scope_as = suitor_3
+			}
+		}
+	}
+
+	option = {
+		name = germanic_events.0014.option.a
+		trigger = {
+			exists = scope:suitor_1
+			scope:suitor_1 = {
+				is_alive = yes
+				is_landed = yes
+				is_betrothed = no
+				is_married = no
+				is_vassal_of = root
+			}
+		}
+		character:992024 = {
+			create_betrothal = scope:suitor_1
+		}
+		character:992023 = {
+			create_alliance = {
+				target = scope:suitor_1
+				allied_through_owner = character:992024
+				allied_through_target = scope:suitor_1
+			}
+		}
+		ai_chance = { 
+			base = 10
+			modifier = {
+				scope:suitor_1 = character:992100
+				add = 90
+			}
+		}
+	}
+	option = {
+		name = germanic_events.0014.option.b
+		trigger = {
+			exists = scope:suitor_2
+			scope:suitor_2 = {
+				is_alive = yes
+				is_landed = yes
+				is_betrothed = no
+				is_married = no
+				is_vassal_of = root
+			}
+		}
+		character:992024 = {
+			create_betrothal = scope:suitor_2
+		}
+		character:992023 = {
+			create_alliance = {
+				target = scope:suitor_2
+				allied_through_owner = character:992024
+				allied_through_target = scope:suitor_2
+			}
+		}
+		ai_chance = { 
+			base = 10
+			modifier = {
+				exists = scope:suitor_1
+				scope:suitor_1 = character:992100
+				add = -10
+			}
+		}
+	}
+	option = {
+		name = germanic_events.0014.option.c
+		trigger = {
+			exists = scope:suitor_3
+			scope:suitor_3 = {
+				is_alive = yes
+				is_landed = yes
+				is_betrothed = no
+				is_married = no
+				is_vassal_of = root
+			}
+		}
+		character:992024 = {
+			create_betrothal = scope:suitor_3
+		}
+		character:992023 = {
+			create_alliance = {
+				target = scope:suitor_3
+				allied_through_owner = character:992024
+				allied_through_target = scope:suitor_3
+			}
+		}
+		ai_chance = { 
+			base = 10
+			modifier = {
+				exists = scope:suitor_1
+				scope:suitor_1 = character:992100
+				add = -10
+			}
+		}
+	}
+	option = {
+		name = germanic_events.0014.option.d
+		ai_chance = { 
+			base = 1
+		}
+	}
+}
+
+germanic_events.0015 = {
+	scope = none
+	hidden = yes
+
+	immediate = {
+		#title:k_ostrogoths.holder = {
+		#	add_gold = 50000
+		#}
+		character:992020 = {
+			save_scope_as = regent
+		}
+		title:k_ostrogoths.holder = {
+			if = {
+				limit = {
+					dynasty = scope:regent.dynasty
+				}
+				title:k_ostrogoths.holder = {
+					add_character_flag = {
+						flag = deposed
+						years = 1
+					}
+				}
+				if = {
+					limit = {
+						any_vassal = {
+							THIS = character:992022
+						}
+					}
+					character:992022 = {
+						save_scope_as = ostrogoth_king
+					}
+				}
+				else_if = {
+					limit = {
+						any_vassal = {
+							THIS = character:992100
+						}
+					}
+					character:992100 = {
+						save_scope_as = ostrogoth_king
+					}
+				}
+				else_if = {
+					limit = {
+						any_vassal = {
+							is_greek_or_roman = no
+						}
+					}
+					random_vassal =  {
+						limit = {
+							is_greek_or_roman = no
+						}
+						save_scope_as = ostrogoth_king
+					}
+				}
+			}
+			else = {
+				title:k_ostrogoths.holder = {
+					save_scope_as = ostrogoth_king
+				}
+			}
+		}
+		title:e_byzantium.holder = {
+			save_scope_as = emperor
+		}
+		title:k_ostrogoths.holder = {
+			every_vassal = {
+				limit = {
+					highest_held_title_tier >= tier_county
+					is_ai = yes
+					NOT = { is_in_list = roman_vassals }
+					NOT = { is_in_list = ostrogoth_vassals }
+				}
+				save_scope_as = deciding_vassal
+				random_list = {
+					50 = { #Side with Romans
+						modifier = {
+							add = -500
+							OR = {
+								#Future Ostrogothic kings
+								THIS = character:992022
+								THIS = character:992100
+								THIS = character:992030
+								THIS = character:rugian_17
+								THIS = character:992029
+								THIS = character:992104
+								THIS = scope:ostrogoth_king
+							}
+						}
+						modifier = {
+							add = 20
+							scope:deciding_vassal = {
+								is_greek_or_roman = yes
+							}
+						}
+						modifier = {
+							add = -20
+							scope:deciding_vassal = {
+								culture = {
+									has_cultural_pillar = heritage_east_germanic
+								}
+							}
+						}
+						opinion_modifier = {
+							who = scope:deciding_vassal
+							opinion_target = scope:roman_king
+							multiplier = 0.25
+						}
+						opinion_modifier = {
+							who = scope:deciding_vassal
+							opinion_target = scope:emperor
+							multiplier = 0.25
+						}
+						opinion_modifier = {
+							who = scope:deciding_vassal
+							opinion_target = scope:ostrogoth_king
+							multiplier = -0.5
+						}
+						add_to_list = roman_vassals
+					}
+					50 = { #Side with Ostrogoths
+						modifier = {
+							add = 500
+							OR = {
+								#Future Ostrogothic kings
+								THIS = character:992022
+								THIS = character:992100
+								THIS = character:992030
+								THIS = character:rugian_17
+								THIS = character:992029
+								THIS = character:992104
+								THIS = scope:ostrogoth_king
+							}
+						}
+						modifier = {
+							add = 20
+							scope:deciding_vassal = {
+								culture = {
+									has_cultural_pillar = heritage_east_germanic
+								}
+							}
+						}
+						modifier = {
+							add = -20
+							scope:deciding_vassal = {
+								is_greek_or_roman = yes
+							}
+						}
+						opinion_modifier = {
+							who = scope:deciding_vassal
+							opinion_target = scope:roman_king
+							multiplier = -0.25
+						}
+						opinion_modifier = {
+							who = scope:deciding_vassal
+							opinion_target = scope:emperor
+							multiplier = -0.25
+						}
+						opinion_modifier = {
+							who = scope:deciding_vassal
+							opinion_target = scope:ostrogoth_king
+							multiplier = 0.5
+						}
+						add_to_list = ostrogoth_vassals
+					}
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				scope:roman_king = {
+					is_landed = yes
+				}
+			}
+			scope:roman_king = {
+				every_held_title = {
+					add_to_list = revert_to_emperor_titles
+				}
+				every_vassal = {
+					add_to_list = revert_to_emperor_vassals
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				character:992020 = {
+					is_landed = yes
+				}
+			}
+			character:992020 = {
+				every_held_title = {
+					add_to_list = titles_to_usurp
+				}
+				every_vassal = {
+					add_to_list = roman_vassals
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				title:k_ostrogoths.holder = {
+					has_character_flag = deposed
+				}
+			}
+
+			title:k_ostrogoths.holder = {
+				add_to_list = roman_vassals
+				every_held_title = {
+					limit = {
+						tier = tier_kingdom
+					}
+					add_to_list = revert_to_goths_titles
+				}
+				every_vassal = {
+					add_to_list = revert_to_goths_vassals
+				}
+			}
+
+			create_title_and_vassal_change = {
+				type = usurped
+				save_scope_as = title_change
+				add_claim_on_loss = yes
+			}
+			every_in_list = {
+				list = revert_to_goths_titles
+				change_title_holder = {
+					holder = scope:ostrogoth_king
+					change = scope:title_change
+					take_baronies = no
+				}
+			}
+			every_in_list = {
+				list = revert_to_goths_vassals
+				change_liege = {
+					liege = scope:ostrogoth_king
+					change = scope:title_change
+				}
+			}
+			resolve_title_and_vassal_change = scope:title_change
+		}
+
+		title:c_roma = {
+			save_temporary_scope_as = current_county
+		}
+		create_title_and_vassal_change = {
+			type = usurped
+			save_scope_as = change
+			add_claim_on_loss = no
+		}
+		scope:current_county = {
+			change_title_holder = {
+				holder = scope:roman_king
+				change = scope:change
+				take_baronies = yes
+			}
+		}
+		resolve_title_and_vassal_change = scope:change
+
+		if = {
+			limit = {
+				scope:roman_king = {
+					any_held_title = {
+						NOT = { THIS = title:c_roma }
+					}
+				}
+			}
+			create_title_and_vassal_change = {
+				type = usurped
+				save_scope_as = title_change
+				add_claim_on_loss = yes
+			}
+			every_in_list = {
+				list = revert_to_emperor_titles
+				change_title_holder = {
+					holder = scope:emperor
+					change = scope:title_change
+					take_baronies = no
+				}
+			}
+			every_in_list = {
+				list = revert_to_emperor_vassals
+				change_liege = {
+					liege = scope:emperor
+					change = scope:title_change
+				}
+			}
+			resolve_title_and_vassal_change = scope:title_change
+		}
+
+
+		scope:ostrogoth_king = {
+			every_held_title = {
+				limit = {
+					NOT = { this = title:k_ostrogoths }
+					tier = tier_kingdom
+				}
+				add_to_list = titles_to_usurp
+				clear_title_laws = yes
+			}
+		}
+
+		create_title_and_vassal_change = {
+			type = usurped
+			save_scope_as = title_change
+			add_claim_on_loss = yes
+		}
+		every_in_list = {
+			list = titles_to_usurp
+			change_title_holder = {
+				holder = scope:roman_king
+				change = scope:title_change
+				take_baronies = no
+			}
+		}
+		every_in_list = {
+			list = roman_vassals
+			change_liege = {
+				liege = scope:roman_king
+				change = scope:title_change
+			}
+		}
+		resolve_title_and_vassal_change = scope:title_change
+
+		scope:ostrogoth_king = {
+			set_relation_rival = {
+				target = scope:roman_king
+				reason = rival_usurper
+			}
+		}
+
+		if = {
+			limit = {
+				scope:roman_king = {
+					is_independent_ruler = no
+				}
+			}
+			scope:roman_king = {
+				create_title_and_vassal_change = {
+					type = independency
+					save_scope_as = going_independent
+					add_claim_on_loss = no
+				}
+				becomes_independent = {
+					change = scope:going_independent
+				}
+				resolve_title_and_vassal_change = scope:going_independent
+			}
+		}
+
+		scope:ostrogoth_king = {
+			start_war = {
+				cb = cb_gothic_wars_amalasuntha
+				target = scope:roman_king
+			}
+		}
+
+		scope:emperor = {
+			trigger_event = {
+				id = germanic_events.0016
+				days = 1
+			}
+		}
+		scope:ostrogoth_king = {
+			trigger_event = {
+				id = germanic_events.0017
+				days = 1
+			}
+		}
+		every_player = {
+			limit = {
+				OR = {
+					is_vassal_of = scope:ostrogoth_king
+					is_vassal_of = scope:roman_king
+				}
+			}
+			trigger_event = {
+				id = germanic_events.0018
+				days = 1
+			}
+		}
+	}
+}
+
+germanic_events.0016 = {
+	title = germanic_events.0016.t
+	desc = germanic_events.0016.desc
+	theme = martial
+	scope = character
+
+	override_icon = { reference = "gfx/interface/icons/event_types/special_rhomaion.dds" }
+
+	override_background = {
+		reference = battlefield
+	}
+
+	left_portrait = {
+		character = scope:ostrogoth_king
+		animation = anger
+	}
+
+	right_portrait = {
+		character = scope:roman_king
+		animation = personality_bold
+	}
+
+	option = {
+		name = germanic_events.0016.a
+		scope:roman_king = {
+			every_character_war = {
+				if = {
+					limit = {
+						PREV = { is_defender_in_war = PREV }
+					}
+					add_defender = root
+				}
+			}
+		}
+		if = {
+			limit = {
+				exists = title:k_daciae.holder
+				title:k_daciae.holder = {
+					is_vassal_of = scope:emperor
+				}
+			}
+			scope:roman_king = {
+				every_character_war = {
+					if = {
+						limit = {
+							PREV = { is_defender_in_war = PREV }
+						}
+						add_defender = title:k_daciae.holder
+					}
+				}
+		}
+		}
+		ai_chance = { base = 100 }
+	}
+}
+
+germanic_events.0017 = {
+	title = germanic_events.0017.t
+	desc = germanic_events.0017.desc
+	theme = martial
+	scope = character
+
+	override_background = {
+		reference = battlefield
+	}
+
+	left_portrait = {
+		character = scope:ostrogoth_king
+		animation = anger
+	}
+
+	right_portrait = {
+		character = scope:roman_king
+		animation = personality_bold
+	}
+
+	option = {
+		name = germanic_events.0017.a
+		ai_chance = { base = 100 }
+	}
+}
+
+germanic_events.0018 = {
+	title = germanic_events.0018.t
+	desc = germanic_events.0018.desc
+	theme = martial
+	scope = character
+
+	override_background = {
+		reference = battlefield
+	}
+
+	left_portrait = {
+		character = scope:ostrogoth_king
+		animation = anger
+	}
+
+	right_portrait = {
+		character = scope:roman_king
+		animation = personality_bold
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				liege = scope:roman_king
+			}
+			scope:roman_king = {
+				save_scope_as = current_liege
+			}
+			scope:ostrogoth_king = {
+				save_scope_as = new_liege
+			}
+		}
+		else = {
+			scope:roman_king = {
+				save_scope_as = new_liege
+			}
+			scope:ostrogoth_king = {
+				save_scope_as = current_liege
+			}
+		}
+	}
+
+	option = {
+		name = germanic_events.0018.a
+		reverse_add_opinion = {
+			modifier = disappointed_opinion
+			target = scope:new_liege
+			opinion = -20
+		}
+		reverse_add_opinion = {
+			modifier = respect_opinion
+			target = scope:current_liege
+			opinion = 20
+		}
+		ai_chance = { base = 100 }
+	}
+	option = {
+		name = germanic_events.0018.b
+		reverse_add_opinion = {
+			modifier = disappointed_opinion
+			target = scope:current_liege
+			opinion = -20
+		}
+		reverse_add_opinion = {
+			modifier = respect_opinion
+			target = scope:new_liege
+			opinion = 20
+		}
+
+		create_title_and_vassal_change = {
+			type = swear_fealty
+			save_scope_as = change
+			add_claim_on_loss = no
+		}
+		change_liege = {
+			liege = scope:new_liege
+			change = scope:change
+		}
+		resolve_title_and_vassal_change = scope:change
+
+		ai_chance = { base = 100 }
+	}
+	option = {
+		name = germanic_events.0018.c
+		reverse_add_opinion = {
+			modifier = anger_opinion
+			target = scope:new_liege
+			opinion = -20
+		}
+		reverse_add_opinion = {
+			modifier = anger_opinion
+			target = scope:current_liege
+			opinion = -20
+		}
+		create_title_and_vassal_change = {
+			type = independency 
+			save_scope_as = change
+		}
+		becomes_independent = {
+			change = scope:change
+		}
+		resolve_title_and_vassal_change = scope:change
+
+		ai_chance = { base = 100 }
+	}
+}
+
+germanic_events.0019 = {
+	title = germanic_events.0019.t
+	desc = germanic_events.0019.desc
+	scope = character
+	theme = realm
+	override_background = {
+		reference = corridor_night
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_greedy
+	}
+
+	right_portrait = {
+		character = character:992020
+		animation = fear
+	}
+
+	option = {
+		name = germanic_events.0019.a
+		root = {
+			end_diarchy = yes
+			imprison = {
+				target = character:992020
+				type = house_arrest
+			}
+		}
+		character:992020 = {
+			add_opinion = {
+				modifier = hate_opinion
+				target = root
+				opinion = -50
+			}
+		}
+		set_global_variable = {
+			name = gothic_war_cycle_active
+			value = yes
+		}
+		#if = {
+		#	limit = {
+		#		exists = title:e_byzantium.holder
+		#	}
+		#	title:e_byzantium.holder = {
+		#		trigger_event = {
+		#			id = germanic_events.0022
+		#			days = 1
+		#		}
+		#	}
+		#}
+		ai_chance = { 
+			base = 1
+			modifier = {
+				is_greek_or_roman = no
+				add = 100
+			}
+		}
+	}
+	option = {
+		name = germanic_events.0019.b
+		character:992020 = {
+			add_opinion = {
+				modifier = grateful_opinion
+				target = root
+				opinion = 20
+			}
+		}
+		root = {
+			add_hook = {
+		  		target = character:992020
+		  		type = favor_hook
+		 	}
+		}
+		ai_chance = { 
+			base = 1
+			modifier = {
+				is_greek_or_roman = yes
+				add = 100
+			}
+		}
+	}
+}
+
+germanic_events.0020 = {
+	title = germanic_events.0020.t
+	desc = germanic_events.0020.desc
+	scope = character
+	theme = realm
+	override_background = {
+		reference = corridor_night
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_greedy
+	}
+
+	right_portrait = {
+		character = character:992020
+		animation = fear
+	}
+
+	option = {
+		name = germanic_events.0020.a
+		root = {
+			imprison = {
+				target = character:992020
+				type = house_arrest
+			}
+		}
+		character:992020 = {
+			add_opinion = {
+				modifier = hate_opinion
+				target = root
+				opinion = -50
+			}
+		}
+		set_global_variable = {
+			name = gothic_war_cycle_active
+			value = yes
+		}
+		ai_chance = { 
+			base = 1
+			modifier = {
+				is_greek_or_roman = no
+				add = 100
+			}
+		}
+	}
+	option = {
+		name = germanic_events.0020.b
+		character:992020 = {
+			add_opinion = {
+				modifier = grateful_opinion
+				target = root
+				opinion = 20
+			}
+		}
+		root = {
+			add_hook = {
+		  		target = character:992020
+		  		type = favor_hook
+		 	}
+		}
+		ai_chance = { 
+			base = 1
+			modifier = {
+				is_greek_or_roman = yes
+				add = 100
+			}
+		}
+	}
+}
+
+germanic_events.0021 = {
+	title = germanic_events.0021.t
+	desc = germanic_events.0021.desc
+	scope = character
+	theme = realm
+	override_background = {
+		reference = corridor_night
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+
+	right_portrait = {
+		character = character:992020
+		animation = personality_greedy
+	}
+
+	immediate = {
+		root = {
+			save_scope_as = actor
+		}
+		character:992020 = {
+			save_scope_as = recipient
+		}
+	}
+
+	option = {
+		name = germanic_events.0021.a
+		scope:recipient = {
+			add_opinion = {
+				modifier = respect_opinion
+				target = scope:actor
+				opinion = -20
+			}
+		}
+		send_child_to_clergy_effect = yes
+		if = {
+			limit = {
+				exists = title:e_byzantium.holder
+			}
+			scope:recipient = {
+				visit_court_of = title:e_byzantium.holder
+			}
+		}
+		else = {
+			scope:recipient = {
+				kick_from_court_interaction_effect = yes
+			}
+		}
+		set_global_variable = {
+			name = gothic_war_cycle_active
+			value = yes
+		}
+		ai_chance = { 
+			base = 1
+			modifier = {
+				is_greek_or_roman = no
+				add = 100
+			}
+		}
+	}
+	option = {
+		name = germanic_events.0021.b
+		character:992020 = {
+			add_opinion = {
+				modifier = love_opinion
+				target = root
+				opinion = 20
+			}
+		}
+		root = {
+			add_hook = {
+		  		target = character:992020
+		  		type = favor_hook
+		 	}
+		}
+		ai_chance = { 
+			base = 1
+			modifier = {
+				is_greek_or_roman = yes
+				add = 100
+			}
+		}
+	}
+}
+
+germanic_events.0022 = {
+	title = germanic_events.0022.t
+	desc = germanic_events.0022.desc
+	scope = character
+	theme = realm
+	override_background = {
+		reference = corridor_night
+	}
+
+	left_portrait = {
+		character = root
+		animation = anger
+	}
+
+	right_portrait = {
+		character = character:992020
+		animation = fear
+	}
+
+	option = {
+		name = germanic_events.0022.a
+		set_global_variable = {
+			name = gothic_war_cycle_active
+			value = yes
+		}
+		trigger_event = {
+			id = germanic_events.0025
+			days = 1
+		}
+		ai_chance = { 
+			base = 0
+			modifier = {
+				AND = {
+					has_global_variable = vandalic_war_won
+					is_target_in_global_variable_list = {
+						name = unavailable_unique_decisions
+						target = flag:recall_belisarius
+					}
+				}
+				add = 50
+			}
+		}
+	}
+	option = {
+		name = germanic_events.0022.b
+		set_global_variable = {
+			name = gothic_war_cycle_prep
+			value = yes
+		}
+		ai_chance = { 
+			base = 50
+			modifier = {
+				AND = {
+					has_global_variable = vandalic_war_won
+					is_target_in_global_variable_list = {
+						name = unavailable_unique_decisions
+						target = flag:recall_belisarius
+					}
+				}
+				add = -50
+			}
+		}
+	}
+}
+
+germanic_events.0023 = {
+	title = germanic_events.0023.t
+	desc = germanic_events.0023.desc
+	scope = character
+	theme = realm
+	override_background = {
+		reference = corridor_night
+	}
+
+	left_portrait = {
+		character = root
+		animation = anger
+	}
+
+	right_portrait = {
+		character = character:992020
+		animation = fear
+	}
+
+	option = {
+		name = germanic_events.0023.a
+		set_global_variable = {
+			name = gothic_war_cycle_active
+			value = yes
+		}
+		trigger_event = {
+			id = germanic_events.0025
+			days = 1
+		}
+		ai_chance = { 
+			base = 0
+			modifier = {
+				AND = {
+					has_global_variable = vandalic_war_won
+					is_target_in_global_variable_list = {
+						name = unavailable_unique_decisions
+						target = flag:recall_belisarius
+					}
+				}
+				add = 50
+			}
+		}
+	}
+	option = {
+		name = germanic_events.0023.b
+		set_global_variable = {
+			name = gothic_war_cycle_prep
+			value = yes
+		}
+		ai_chance = { 
+			base = 50
+			modifier = {
+				AND = {
+					has_global_variable = vandalic_war_won
+					is_target_in_global_variable_list = {
+						name = unavailable_unique_decisions
+						target = flag:recall_belisarius
+					}
+				}
+				add = -50
+			}
+		}
+	}
+}
+
+germanic_events.0024 = {
+	title = germanic_events.0024.t
+	desc =  germanic_events.0024.desc
+	scope = character
+	theme = diplomacy
+	override_background = {
+		reference = battlefield
+	}
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+
+	immediate = {
+		play_music_cue = "TFE_General_Cue"
+	}
+
+	option = {
+		name = germanic_events.0024.option
+		custom_tooltip = germanic_events.0024.option.tooltip
+	}
+}
+
+germanic_events.0025 = {
+	type = character_event
+	title = germanic_events.0025.t
+	desc = germanic_events.0025.desc
+	theme = realm
+	override_icon = { reference = "gfx/interface/icons/event_types/special_rhomaion.dds" }
+
+	left_portrait = {
+		character = title:e_byzantium.holder
+		animation = personality_bold
+	}
+	lower_center_portrait = {
+		character = scope:commander_2
+		animation = personality_bold
+	}
+	right_portrait = {
+		character = scope:commander_1
+		animation = personality_bold
+	}
+
+	immediate = {
+		struggle:italian_struggle = {
+            activate_struggle_catalyst = {
+                catalyst = catalyst_TFE_major_historical_event_devastation
+                character = root
+            }
+        }
+		title:k_ostrogoths.holder = {
+			set_scope_as = target_ruler
+		}
+		if = {
+			limit = {
+				global_var:belisarius = {
+					is_alive = yes
+					OR = {
+						is_at_war = no
+						NOT = {
+							any_character_war = {
+								using_cb = vandalic_war_cb
+							}
+						}
+					}
+					OR = {
+						NOT = { exists = title:k_africae.holder }
+						NOT = { title:k_africae.holder = global_var:belisarius }
+					}
+				}
+				NOT = { exists = global_var:belisarius_betrayal }
+			}
+			global_var:belisarius = {
+				save_scope_as = commander_1
+			}
+		}
+		else_if = {
+			limit = {
+				character:armenian_01 = {
+					is_alive = yes
+				}
+				character:armenian_01 = {
+					is_courtier_of = root
+				}
+			}
+			character:armenian_01 = {
+				save_scope_as = commander_1
+			}
+		}
+		else_if = {
+			limit = {
+				character:armenian_02 = {
+					is_alive = yes
+				}
+				character:armenian_02 = {
+					is_courtier_of = root
+				}
+			}
+			character:armenian_02 = {
+				save_scope_as = commander_1
+			}
+		}
+		else = {
+			random_courtier = {
+				limit = {
+					is_adult = yes
+					is_male = yes
+				}
+				save_scope_as = commander_1
+			}
+		}
+		random_courtier = {
+			limit = {
+				NOT = { THIS = scope:commander_1 }
+				is_adult = yes
+				is_male = yes
+			}
+			save_scope_as = commander_2
+		}
+	}
+
+	option = {
+		name = germanic_events.0025.a
+		hidden_effect = {
+			set_global_variable = {
+				name = justinian_gothic_commander
+				value = scope:commander_1
+			}
+			start_gothic_war_effect = yes
+		}
+		ai_chance = {
+			base = 100
+		}		
+	}
+
+	option = {
+		name = germanic_events.0025.b
+		hidden_effect = {
+			set_global_variable = {
+				name = justinian_gothic_commander
+				value = scope:commander_2
+			}
+			start_gothic_war_effect = yes
+		}
+		ai_chance = {
+			base = 0
+		}		
+	}
+}
+
+germanic_events.0026 = {
+	type = character_event
+	title = germanic_events.0026.t
+	desc = germanic_events.0026.desc
+	override_icon = { reference = "gfx/interface/icons/event_types/special_rhomaion.dds" }
+	theme = realm
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+
+	option = {
+		name = germanic_events.0026.a
+		ai_chance = {
+			base = 100
+		}		
+	}
+}
+
+germanic_events.0027 = {
+	type = character_event
+	title = germanic_events.0027.t
+	desc = germanic_events.0027.desc
+	override_icon = { reference = "gfx/interface/icons/event_types/special_rhomaion.dds" }
+	theme = realm
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+
+	option = {
+		name = germanic_events.0027.a
+		scope:war = {
+			add_attacker = root
+		}
+		ai_chance = {
+			base = 100
+		}		
+	}
+}
+
+germanic_events.0028 = {
+	scope = none
+	hidden = yes
+
+	immediate = {
+		title:e_byzantium.holder = {
+			save_scope_as = ostrogoth_king
+		}
+		if = {
+			limit = {
+				character:992029 = {
+					is_alive = yes
+					is_landed = no
+					age > 15
+				}
+				title:e_byzantium.holder = {
+					any_vassal_or_below = {
+						exists = primary_heir
+						primary_heir = character:992029
+						any_held_title = {
+							OR = {
+								tier = tier_county
+								tier = tier_duchy
+							}
+							OR = {
+								kingdom = title:k_italy
+								kingdom = title:k_italia_annonariae
+								kingdom = title:k_italia_suburbicariae
+							}
+						}
+					}
+				}
+			}
+			title:e_byzantium.holder = {
+				random_vassal_or_below = {
+					limit = {
+						exists = primary_heir
+						primary_heir = character:992029
+					}
+					depose = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				character:992029 = {
+					is_alive = yes
+					is_landed = yes
+					top_liege = title:e_byzantium.holder
+				}
+			}
+			character:992029 = { save_scope_as = ostrogoth_king }
+			if = {
+				limit = {
+					character:992029 = {
+						OR = {
+							has_trait = education_martial_1
+							has_trait = education_martial_2
+							has_trait = education_martial_3
+						}
+					}
+				}
+				character:992029 = {
+					remove_trait = education_martial_1
+					remove_trait = education_martial_2
+					remove_trait = education_martial_3
+					add_trait = education_martial_4
+				}
+			}
+		}
+		if = {
+			limit = {
+				scope:ostrogoth_king = title:e_byzantium.holder
+			}
+			title:e_byzantium.holder = {
+				random_vassal_or_below = {
+					limit = {
+						culture = { has_cultural_pillar = heritage_east_germanic }
+						any_held_title = {
+							OR = {
+								tier = tier_county
+								tier = tier_duchy
+							}
+							OR = {
+								kingdom = title:k_italy
+								kingdom = title:k_italia_annonariae
+								kingdom = title:k_italia_suburbicariae
+							}
+						}
+					}
+					weight = {
+						base = 1
+						modifier = {
+							add = 5
+							primary_title.tier >= tier_duchy
+						}
+						modifier = {
+							add = martial
+						}
+						modifier = {
+							add = martial
+						}
+						modifier = {
+							add = martial
+						}
+						modifier = {
+							add = martial
+						}
+						modifier = {
+							add = martial
+						}
+					}
+					save_scope_as = ostrogoth_king
+				}
+			}
+		}
+
+		create_title_and_vassal_change = {
+			type = created
+			save_scope_as = change
+			add_claim_on_loss = no
+		}
+		title:k_ostrogoths = {
+			change_title_holder = {
+				holder = scope:ostrogoth_king
+				change = scope:change
+			}
+		}
+		resolve_title_and_vassal_change = scope:change
+		
+		title:e_byzantium.holder = {
+			save_scope_as = emperor
+		}
+
+		title:e_byzantium.holder = {
+			every_vassal_or_below = {
+				limit = {
+					highest_held_title_tier >= tier_county
+					is_ai = yes
+					culture = { has_cultural_pillar = heritage_east_germanic }
+					NOT = { has_title = title:k_ostrogoths }
+					any_held_title = {
+						OR = {
+							tier = tier_county
+							tier = tier_duchy
+						}
+						OR = {
+							kingdom = title:k_italy
+							kingdom = title:k_italia_annonariae
+							kingdom = title:k_italia_suburbicariae
+						}
+					}
+				}
+				add_to_list = ostrogoth_vassals_revival
+			}
+		}
+
+		every_in_list = {
+			list = ostrogoth_vassals_revival
+			save_scope_as = ostrogoth_vassal_king_test
+			every_held_title = {
+				limit = {
+					tier >= tier_kingdom
+					NOT = { this = title:k_ostrogoths }
+				}
+				scope:ostrogoth_vassal_king_test = { destroy_title = prev }
+			}
+		}
+
+		every_in_list = {
+			list = ostrogoth_vassals_revival
+			if = {
+				limit = {
+					NOT = {
+						liege = {
+							culture = {
+								has_cultural_pillar = heritage_east_germanic
+							}
+						}
+					}
+				}
+				add_to_list = ostrogoth_vassals_revival_final
+			}
+		}
+
+		create_title_and_vassal_change = {
+			type = usurped
+			save_scope_as = title_change
+			add_claim_on_loss = yes
+		}
+		every_in_list = {
+			list = ostrogoth_vassals_revival_final
+			change_liege = {
+				liege = scope:ostrogoth_king
+				change = scope:title_change
+			}
+		}
+		resolve_title_and_vassal_change = scope:title_change
+
+		scope:emperor = {
+			trigger_event = {
+				id = germanic_events.0029
+				days = 1
+			}
+		}
+		scope:ostrogoth_king = {
+			trigger_event = {
+				id = germanic_events.0030
+				days = 1
+			}
+		}
+		every_player = {
+			limit = {
+				OR = {
+					is_vassal_of = scope:ostrogoth_king
+					is_vassal_of = scope:emperor
+				}
+				culture = { has_cultural_pillar = heritage_east_germanic }
+				NOT = { THIS = scope:ostrogoth_king }
+			}
+			trigger_event = {
+				id = germanic_events.0031
+				days = 1
+			}
+		}
+		every_player = {
+			limit = {
+				OR = {
+					is_vassal_or_below_of = scope:ostrogoth_king
+					is_vassal_or_below_of = scope:emperor
+				}
+				culture = { has_cultural_pillar = heritage_east_germanic }
+			}
+			trigger_event = {
+				id = germanic_events.0034
+				days = 2
+			}
+		}
+	}
+}
+
+germanic_events.0029 = {
+	title = germanic_events.0029.t
+	desc = germanic_events.0029.desc
+	theme = martial
+	scope = character
+
+	override_background = {
+		reference = battlefield
+	}
+
+	left_portrait = {
+		character = scope:ostrogoth_king
+		animation = personality_bold
+	}
+
+	right_portrait = {
+		character = scope:emperor
+		animation = anger
+	}
+
+	option = {
+		name = germanic_events.0029.a
+		ai_chance = { base = 100 }
+	}
+}
+
+germanic_events.0030 = {
+	title = germanic_events.0030.t
+	desc = germanic_events.0030.desc
+	theme = martial
+	scope = character
+
+	override_background = {
+		reference = battlefield
+	}
+
+	left_portrait = {
+		character = scope:ostrogoth_king
+		animation = personality_bold
+	}
+
+	right_portrait = {
+		character = scope:emperor
+		animation = anger
+	}
+
+	immediate = {
+		scope:ostrogoth_king = {
+			every_vassal = {
+				add_to_list = switch_vassals
+			}
+			random_vassal_or_below = {
+				limit = {
+					culture = { has_cultural_pillar = heritage_east_germanic }
+					any_held_title = {
+						OR = {
+							tier = tier_county
+							tier = tier_duchy
+						}
+						OR = {
+							kingdom = title:k_italy
+							kingdom = title:k_italia_annonariae
+							kingdom = title:k_italia_suburbicariae
+						}
+					}
+				}
+				weight = {
+					base = 1
+					modifier = {
+						add = 5
+						primary_title.tier >= tier_duchy
+					}
+					modifier = {
+						add = martial
+					}
+					modifier = {
+						add = martial
+					}
+					modifier = {
+						add = martial
+					}
+					modifier = {
+						add = martial
+					}
+					modifier = {
+						add = martial
+					}
+				}
+				save_scope_as = ostrogoth_king_replacement
+			}
+		}
+	}
+
+	option = {
+		name = germanic_events.0030.a
+		spawn_army = {
+			name = "Ostrogoth Loyalists"
+			levies = 1000
+			men_at_arms = {
+				type = bowmen
+				stacks = 2
+			}
+			men_at_arms = {
+				type = light_horsemen
+				stacks = 2
+			}
+			men_at_arms = {
+				type = light_footmen
+				stacks = 2
+			}
+			location = scope:ostrogoth_king.capital_province
+		}
+		spawn_army = {
+			name = "Ostrogoth Loyalists"
+			levies = 1000
+			men_at_arms = {
+				type = bowmen
+				stacks = 2
+			}
+			men_at_arms = {
+				type = light_horsemen
+				stacks = 2
+			}
+			men_at_arms = {
+				type = light_footmen
+				stacks = 2
+			}
+			location = scope:ostrogoth_king.capital_province
+		}
+		spawn_army = {
+			name = "Ostrogoth Loyalists"
+			levies = 1000
+			men_at_arms = {
+				type = bowmen
+				stacks = 2
+			}
+			men_at_arms = {
+				type = light_horsemen
+				stacks = 2
+			}
+			men_at_arms = {
+				type = light_footmen
+				stacks = 2
+			}
+			location = scope:ostrogoth_king.capital_province
+		}
+		spawn_army = {
+			name = "Ostrogoth Loyalists"
+			levies = 1000
+			men_at_arms = {
+				type = bowmen
+				stacks = 2
+			}
+			men_at_arms = {
+				type = light_horsemen
+				stacks = 2
+			}
+			men_at_arms = {
+				type = light_footmen
+				stacks = 2
+			}
+			location = scope:ostrogoth_king.capital_province
+		}
+		scope:ostrogoth_king = {
+			set_relation_rival = {
+				target = scope:emperor
+				reason = rival_usurper
+			}
+			add_prestige = 500
+			start_war = {
+				cb = gothic_independence_war
+				target = scope:emperor
+			}
+		}
+		ai_chance = { base = 100 }
+	}
+	option = {
+		name = germanic_events.0030.b
+		create_title_and_vassal_change = {
+			type = created
+			save_scope_as = change
+			add_claim_on_loss = no
+		}
+		title:k_ostrogoths = {
+			change_title_holder_include_vassals = {
+				holder = scope:ostrogoth_king_replacement
+				change = scope:change
+			}
+		}
+		every_in_list = {
+			list = switch_vassals
+			change_liege = {
+				liege = scope:ostrogoth_king_replacement
+				change = scope:change
+			}
+		}
+		resolve_title_and_vassal_change = scope:change
+
+		create_title_and_vassal_change = {
+			type = swear_fealty
+			save_scope_as = change
+		}
+		scope:ostrogoth_king = {
+			change_liege = {
+				liege = scope:emperor
+				change = scope:change
+			}
+		}
+		resolve_title_and_vassal_change = scope:change
+
+		scope:ostrogoth_king_replacement = {
+			save_scope_as = ostrogoth_king
+		}
+
+		scope:ostrogoth_king = {
+			spawn_army = {
+				name = "Ostrogoth Loyalists"
+				levies = 1000
+				men_at_arms = {
+					type = bowmen
+					stacks = 2
+				}
+				men_at_arms = {
+					type = light_horsemen
+					stacks = 2
+				}
+				men_at_arms = {
+					type = light_footmen
+					stacks = 2
+				}
+				location = scope:ostrogoth_king.capital_province
+			}
+			spawn_army = {
+				name = "Ostrogoth Loyalists"
+				levies = 1000
+				men_at_arms = {
+					type = bowmen
+					stacks = 2
+				}
+				men_at_arms = {
+					type = light_horsemen
+					stacks = 2
+				}
+				men_at_arms = {
+					type = light_footmen
+					stacks = 2
+				}
+				location = scope:ostrogoth_king.capital_province
+			}
+			spawn_army = {
+				name = "Ostrogoth Loyalists"
+				levies = 1000
+				men_at_arms = {
+					type = bowmen
+					stacks = 2
+				}
+				men_at_arms = {
+					type = light_horsemen
+					stacks = 2
+				}
+				men_at_arms = {
+					type = light_footmen
+					stacks = 2
+				}
+				location = scope:ostrogoth_king.capital_province
+			}
+			spawn_army = {
+				name = "Ostrogoth Loyalists"
+				levies = 1000
+				men_at_arms = {
+					type = bowmen
+					stacks = 2
+				}
+				men_at_arms = {
+					type = light_horsemen
+					stacks = 2
+				}
+				men_at_arms = {
+					type = light_footmen
+					stacks = 2
+				}
+				location = scope:ostrogoth_king.capital_province
+			}
+			set_relation_rival = {
+				target = scope:emperor
+				reason = rival_usurper
+			}
+			add_prestige = 500
+			start_war = {
+				cb = gothic_independence_war
+				target = scope:emperor
+			}
+		}
+
+		ai_chance = { base = 0 }
+	}
+}
+
+germanic_events.0031 = {
+	title = germanic_events.0031.t
+	desc = germanic_events.0031.desc
+	theme = martial
+	scope = character
+
+	override_background = {
+		reference = battlefield
+	}
+
+	left_portrait = {
+		character = scope:ostrogoth_king
+		animation = personality_bold
+	}
+
+	right_portrait = {
+		character = scope:emperor
+		animation = anger
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				liege = scope:emperor
+			}
+			scope:emperor = {
+				save_scope_as = current_liege
+			}
+			scope:ostrogoth_king = {
+				save_scope_as = new_liege
+			}
+		}
+		else = {
+			scope:emperor = {
+				save_scope_as = new_liege
+			}
+			scope:ostrogoth_king = {
+				save_scope_as = current_liege
+			}
+		}
+	}
+
+	option = {
+		name = germanic_events.0031.a
+		reverse_add_opinion = {
+			modifier = disappointed_opinion
+			target = scope:new_liege
+			opinion = -20
+		}
+		reverse_add_opinion = {
+			modifier = respect_opinion
+			target = scope:current_liege
+			opinion = 20
+		}
+		ai_chance = { base = 100 }
+	}
+	option = {
+		name = germanic_events.0031.b
+		reverse_add_opinion = {
+			modifier = disappointed_opinion
+			target = scope:current_liege
+			opinion = -20
+		}
+		reverse_add_opinion = {
+			modifier = respect_opinion
+			target = scope:new_liege
+			opinion = 20
+		}
+
+		create_title_and_vassal_change = {
+			type = swear_fealty
+			save_scope_as = change
+			add_claim_on_loss = no
+		}
+		change_liege = {
+			liege = scope:new_liege
+			change = scope:change
+		}
+		resolve_title_and_vassal_change = scope:change
+
+		ai_chance = { base = 100 }
+	}
+	option = {
+		name = germanic_events.0031.c
+		reverse_add_opinion = {
+			modifier = anger_opinion
+			target = scope:new_liege
+			opinion = -20
+		}
+		reverse_add_opinion = {
+			modifier = anger_opinion
+			target = scope:current_liege
+			opinion = -20
+		}
+		create_title_and_vassal_change = {
+			type = independency 
+			save_scope_as = change
+		}
+		becomes_independent = {
+			change = scope:change
+		}
+		resolve_title_and_vassal_change = scope:change
+
+		ai_chance = { base = 100 }
+	}
+}
+
+germanic_events.0032 = {
+	title = germanic_events.0032.t
+	desc = germanic_events.0032.desc
+	scope = character
+	theme = realm
+	override_background = {
+		reference = corridor_night
+	}
+
+	left_portrait = {
+		character = title:k_ostrogoths.holder
+		animation = anger
+	}
+
+	right_portrait = {
+		character = character:992020
+		animation = personality_bold
+	}
+
+	option = {
+		name = germanic_events.0032.a
+		set_global_variable = {
+			name = gothic_war_cycle_active
+			value = yes
+		}
+		root = {
+			save_scope_as = emperor
+		}
+		trigger_event = {
+			id = germanic_events.0033
+			days = 1
+		}
+		ai_chance = { 
+			base = 0
+			modifier = {
+				AND = {
+					has_global_variable = vandalic_war_won
+					is_target_in_global_variable_list = {
+						name = unavailable_unique_decisions
+						target = flag:recall_belisarius
+					}
+				}
+				add = 50
+			}
+		}
+	}
+	option = {
+		name = germanic_events.0032.b
+		ai_chance = { 
+			base = 50
+			modifier = {
+				AND = {
+					has_global_variable = vandalic_war_won
+					is_target_in_global_variable_list = {
+						name = unavailable_unique_decisions
+						target = flag:recall_belisarius
+					}
+				}
+				add = -50
+			}
+		}
+	}
+}
+
+germanic_events.0033 = {
+	type = character_event
+	title = germanic_events.0033.t
+	desc = germanic_events.0033.desc
+	theme = realm
+	override_icon = { reference = "gfx/interface/icons/event_types/special_rhomaion.dds" }
+
+	left_portrait = {
+		character = title:e_byzantium.holder
+		animation = personality_bold
+	}
+	lower_center_portrait = {
+		character = scope:commander_2
+		animation = personality_bold
+	}
+	right_portrait = {
+		character = scope:commander_1
+		animation = personality_bold
+	}
+
+	immediate = {
+		title:k_ostrogoths.holder = {
+			set_scope_as = target_ruler
+		}
+		if = {
+			limit = {
+				character:armenian_01 = {
+					is_alive = yes
+				}
+				character:armenian_01 = {
+					top_liege = scope:emperor
+				}
+			}
+			character:armenian_01 = {
+				save_scope_as = commander_1
+			}
+		}
+		else_if = {
+			limit = {
+				character:belisarius_001 = {
+					is_alive = yes
+				}
+				character:belisarius_001 = {
+					top_liege = scope:emperor
+					OR = {
+						is_at_war = no
+						NOT = {
+							any_character_war = {
+								using_cb = vandalic_war_cb
+							}
+						}
+					}
+				}
+				NOT = { exists = global_var:belisarius_betrayal }
+			}
+			character:belisarius_001 = {
+				save_scope_as = commander_1
+			}
+		}
+		else_if = {
+			limit = {
+				character:armenian_02 = {
+					is_alive = yes
+				}
+				character:armenian_02 = {
+					top_liege = scope:emperor
+				}
+			}
+			character:armenian_02 = {
+				save_scope_as = commander_1
+			}
+		}
+		else = {
+			scope:emperor = {
+				random_courtier = {
+					limit = {
+						is_adult = yes
+						is_male = yes
+						is_landed = no
+					}
+					save_scope_as = commander_1
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = { scope:commander_1 = character:belisarius_001 }
+			}
+			character:belisarius_001 = {
+				save_scope_as = commander_2
+			}
+		}
+		else = {
+			random_courtier = {
+				limit = {
+					NOT = { THIS = scope:commander_1 }
+					is_adult = yes
+					is_male = yes
+				}
+				save_scope_as = commander_2
+			}
+		}
+	}
+
+	option = {
+		name = germanic_events.0033.a
+		hidden_effect = {
+			scope:commander_1 = {
+				save_scope_as = roman_king
+			}
+			trigger_event = {
+				id = germanic_events.0015
+				days = 1
+			}
+		}
+		ai_chance = {
+			base = 1
+			modifier = {
+				add = 100
+				scope:commander_1 = {
+					is_ai = no
+				}
+			}
+		}		
+	}
+
+	option = {
+		name = germanic_events.0033.b
+		hidden_effect = {
+			scope:commander_2 = {
+				save_scope_as = roman_king
+			}
+			trigger_event = {
+				id = germanic_events.0015
+				days = 1
+			}
+		}
+		ai_chance = {
+			base = 1
+			modifier = {
+				add = 100
+				scope:commander_2 = {
+					is_ai = no
+				}
+			}
+		}		
+	}
+}
+
+germanic_events.0034 = {
+	type = character_event
+	title = germanic_events.0034.t
+	desc = germanic_events.0034.desc
+	override_icon = { reference = "gfx/interface/icons/event_types/special_rhomaion.dds" }
+	theme = realm
+	trigger = {
+		NOT = { root = scope:ostrogoth_king }
+	}
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+
+	option = {
+		name = germanic_events.0034.a
+		set_player_character = scope:ostrogoth_king
+		ai_chance = {
+			base = 0
+		}		
+	}
+	option = {
+		name = germanic_events.0034.b
+		ai_chance = {
+			base = 100
+		}		
+	}
+}

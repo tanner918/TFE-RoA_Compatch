@@ -1,0 +1,947 @@
+﻿k_sicily = {
+	361.1.1 = { change_development_level = 3 }
+	532.1.1 = { change_development_level = 4 }
+	768.1.1 = { change_development_level = 5 }
+	#476.9.4 = {
+	#	holder = 996002 # Odoarcer
+	#	government = roman_government
+	#}
+	#493.3.15 = {
+	#	holder = 992016 # Theodoric
+	#}
+	#526.1.1 = {
+	#	holder = 992023 # Athalaric
+	#}
+}
+
+
+d_sicily = {
+	361.1.1 = { change_development_level = 6 }
+	532.1.1 = { change_development_level = 7 }
+	768.1.1 = { change_development_level = 8 }
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = k_italia_suburbicariae
+		liege = k_italia_suburbicariae
+	}
+	360.1.1 = {
+		holder = sicily_01
+	}
+	395.1.1 = {
+		holder = sicily_02
+	}
+	## Vandal Kingdom
+	473.1.1 = {
+		government = feudal_government
+		#de_jure_liege = k_sicily
+		de_jure_liege = k_italy
+	}
+	473.1.1 = {
+		holder = balearica_08
+		liege = k_vandals
+	}
+	532.1.1 = {
+		holder = roman_08
+		liege = k_italy
+	}
+	536.1.1 = {
+		liege = e_byzantium
+	}
+	625.1.1 = {
+		holder = isaac_the_armenian
+	}
+	756.1.1 = {
+		de_jure_liege = k_sicily
+		holder = 145854 # Elpidios, placeholder
+	}
+}
+
+
+c_palermo = {
+	361.1.1 = { change_development_level = 10 }
+	532.1.1 = { change_development_level = 11 }
+	768.1.1 = { change_development_level = 12 }
+	## Diocletian Division
+	200.1.1 = {
+		liege = k_italia_suburbicariae
+	}
+	361.1.1 = {
+		holder = sicily_01
+	}
+	395.1.1 = {
+		holder = sicily_02
+	}
+	## Vandal Kingdom
+	473.1.1 = {
+		government = feudal_government
+	}
+	473.1.1 = {
+		holder = sicily_03
+		liege = d_sicily
+	}
+	536.1.1 = {
+		liege = d_sicily
+	}
+	768.1.1 = {
+		holder = 145856 # Cherouvim, placeholder
+	}
+}
+
+c_messina = {
+	## Diocletian Division
+	200.1.1 = {
+		liege = k_italia_suburbicariae
+	}
+	361.1.1 = {
+		holder = sicily_01
+	}
+	395.1.1 = {
+		holder = sicily_02
+	}
+	## Vandal Kingdom
+	473.1.1 = {
+		government = feudal_government
+	}
+	473.1.1 = {
+		holder = sicily_03
+		liege = d_sicily
+	}
+	536.1.1 = {
+		liege = d_sicily
+	}
+	762.1.1 = {
+		holder = 145855 # Ambrosios, placeholder
+	}
+}
+
+c_siracusa = {
+	## Diocletian Division
+	200.1.1 = {
+		liege = k_italia_suburbicariae
+	}
+	361.1.1 = {
+		holder = sicily_01
+	}
+	395.1.1 = {
+		holder = sicily_02
+	}
+	## Vandal Kingdom
+	473.1.1 = {
+		government = feudal_government
+	}
+	473.1.1 = {
+		holder = balearica_08
+		liege = k_vandals
+	}
+	536.1.1 = {
+		liege = d_sicily
+	}
+	756.1.1 = {
+		holder = 145854 # Elpidios, placeholder
+	}
+}
+
+c_agrigento = {
+	## Diocletian Division
+	200.1.1 = {
+		liege = d_sicily
+	}
+	361.1.1 = { #Estate Owners
+		holder = nichomichi_01
+	}
+	369.1.1 = { #Estate Owners
+		holder = nichomichi_02
+	}
+	394.1.1 = { #Estate Owners
+		holder = nichomichi_03
+	}
+	## Vandal Kingdom
+	473.1.1 = {
+		government = feudal_government
+	}
+	473.1.1 = {
+		holder = balearica_08
+		liege = k_vandals
+	}
+	536.1.1 = {
+		liege = d_sicily
+	}
+	764.1.1 = {
+		holder = 145857 # Polychronios, placeholder
+	}
+}
+
+c_malta = {
+	## Diocletian Division
+	200.1.1 = {
+		liege = k_italia_suburbicariae
+	}
+	361.1.1 = {
+		holder = sicily_01
+	}
+	395.1.1 = {
+		holder = sicily_02
+	}
+	## Vandal Kingdom
+	473.1.1 = {
+		government = feudal_government
+	}
+	473.1.1 = {
+		holder = sicily_03
+		liege = d_sicily
+	}
+	536.1.1 = {
+		liege = d_sicily
+	}
+	751.1.1 = {
+		holder = 145859 # Drosos, placeholder
+	}
+}
+c_trapani = {
+	## Diocletian Division
+	200.1.1 = {
+		liege = k_italia_suburbicariae
+	}
+	361.1.1 = {
+		holder = sicily_01
+	}
+	395.1.1 = {
+		holder = sicily_02
+	}
+	## Vandal Kingdom
+	473.1.1 = {
+		government = feudal_government
+	}
+	473.1.1 = {
+		holder = sicily_03
+		liege = d_sicily
+	}
+	532.1.1 = {
+		holder = vandals_012
+	}
+}
+d_benevento = {
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = k_italia_suburbicariae
+		liege = k_italia_suburbicariae
+	}
+	361.1.1 = {
+		holder = sicily_04
+	}
+	395.1.1 = {
+		holder = sicily_05
+	}
+	## Odoarcer Kingdom
+	476.9.4 = {
+		government = feudal_government
+		#de_jure_liege = k_sicily
+		de_jure_liege = k_italy
+	}
+	476.9.4 = {
+		holder = sicily_06
+		liege = k_italy
+	}
+	532.1.1 = {
+		holder = 992106
+	}
+	571.1.1 = {
+		liege = k_italy
+	}
+	571.1.1 = {
+		holder = 190127 # Zotto Gausian
+	}
+	591.1.1 = {
+		holder = 190153 # Arechis I
+	}
+	641.1.1 = {
+		holder = 190154 # Aio I
+	}
+	642.1.1 = {
+		holder = 190130 # Radoald
+	}
+	651.1.1 = {
+		holder = 190133 # Grimoald I of Italy
+	}
+	671.1.1 = {
+		holder = 190135 # Romuald I
+	}
+	687.1.1 = {
+		holder = 190138 # Grimoald II
+	}
+	689.1.1 = {
+		holder = 190139 # Gisulf I
+	}
+	706.1.1 = {
+		holder = 190141 # Romuald II
+	}
+	731.1.1 = {
+		holder = 190144 # Gisulf II
+	}
+	732.1.1 = {
+		holder = lombard0091 # Audelais Audelaisidi
+	}
+	732.6.1 = {
+		holder = lombard0098 # Gregorius Ansprandidi
+	}
+	739.1.1 = {
+		holder = lombard0091 # Godescalco Godescalcidi
+	}
+	742.1.1 = {
+		holder = 190144 # Gisulf II
+	}
+	751.1.1 = {
+		holder = 190146 # Liutprand
+	}
+	756.1.1 = {
+		de_jure_liege = k_sicily
+	}
+	757.1.1 = {
+		liege = k_france
+	}
+	758.1.1 = {
+		holder = 190147 # Arechis II
+		liege = k_italy
+	}
+}
+
+c_benevento = {
+	## Diocletian Division
+	200.1.1 = {
+		liege = k_italia_suburbicariae
+	}
+	361.1.1 = {
+		holder = sicily_04
+	}
+	395.1.1 = {
+		holder = sicily_05
+	}
+	## Odoarcer Kingdom
+	476.9.4 = {
+		government = feudal_government
+	}
+	476.9.4 = {
+		holder = sicily_06
+		liege = k_italy
+	}
+	571.1.1 = {
+		liege = d_benevento
+		holder = 190127 # Zotto of Benevento
+	}
+	591.1.1 = {
+		holder = 190153 # Arechis of Benevento
+	}
+	641.1.1 = {
+		holder = 190154 # Aio I of Benevento
+	}
+	642.1.1 = {
+		holder = 190130 # Radoald of Benevento
+	}
+	651.1.1 = {
+		holder = 190133 # Grimoald I of Italy
+	}
+	662.1.1 = {
+		holder = 190135 # Romuald I of Benevento
+	}
+	687.1.1 = {
+		holder = 190138 # Grimoald II of Benevento
+	}
+	689.1.1 = {
+		holder = 190139 # Gisulf I of Benevento
+	}
+	706.1.1 = {
+		holder = 190141 # Romuald II of Benevento
+	}
+	731.1.1 = {
+		holder = 190144 # Gisulf II of Benevento
+	}
+	732.1.1 = {
+		holder = lombard0091 # Audelais Audelaisidi
+	}
+	732.6.1 = {
+		holder = lombard0098 # Gregorius Ansprandidi
+	}
+	739.1.1 = {
+		holder = lombard0091 # Godescalco Godescalcidi
+	}
+	742.1.1 = {
+		holder = 190144 # Gisulf II of Benevento
+	}
+	751.1.1 = {
+		holder = 190146 # Liutprand of Benevento
+	}
+	758.1.1 = {
+		holder = 190147 # Arechis II of Benevento
+	}
+}
+
+c_foggia = {
+	## Diocletian Division
+	200.1.1 = {
+		liege = k_italia_suburbicariae
+	}
+	361.1.1 = {
+		holder = sicily_04
+	}
+	395.1.1 = {
+		holder = sicily_05
+	}
+	## Odoarcer Kingdom
+	476.9.4 = {
+		government = feudal_government
+	}
+	476.9.4 = {
+		holder = sicily_06
+		liege = k_italy
+	}
+	571.1.1 = {
+		liege = d_benevento
+		holder = 190127 # Zotto of Benevento
+	}
+	591.1.1 = {
+		holder = 190153 # Arechis of Benevento
+	}
+	641.1.1 = {
+		holder = 190154 # Aio I of Benevento
+	}
+	642.1.1 = {
+		holder = 190130 # Radoald of Benevento
+	}
+	651.1.1 = {
+		holder = 190133 # Grimoald I of Italy
+	}
+	662.1.1 = {
+		holder = 190135 # Romuald I of Benevento
+	}
+	687.1.1 = {
+		holder = 190138 # Grimoald II of Benevento
+	}
+	689.1.1 = {
+		holder = 190139 # Gisulf I of Benevento
+	}
+	706.1.1 = {
+		holder = 190141 # Romuald II of Benevento
+	}
+	731.1.1 = {
+		holder = 190144 # Gisulf II of Benevento
+	}
+	732.1.1 = {
+		holder = lombard0091 # Audelais Audelaisidi
+	}
+	732.6.1 = {
+		holder = lombard0098 # Gregorius Ansprandidi
+	}
+	739.1.1 = {
+		holder = lombard0091 # Godescalco Godescalcidi
+	}
+	742.1.1 = {
+		holder = 190144 # Gisulf II of Benevento
+	}
+	751.1.1 = {
+		holder = 190146 # Liutprand of Benevento
+	}
+	758.1.1 = {
+		holder = 190147 # Arechis II of Benevento
+	}
+}
+
+d_capua = {
+	361.1.1 = { change_development_level = 6 }
+	532.1.1 = { change_development_level = 7 }
+	768.1.1 = { change_development_level = 8 }
+	### Odarcer's Invasion
+	476.9.4 = {
+		#de_jure_liege = k_sicily
+		de_jure_liege = k_italy
+	}
+	756.1.1 = {
+		de_jure_liege = k_sicily
+	}
+}
+
+
+c_capua = {
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = d_latium
+		liege = d_latium
+	}
+	361.1.1 = { # Estate Holders
+		holder = anicia_14
+	}
+	364.1.1 = { # Estate Holders
+		holder = anicia_15
+	}
+	392.1.1 = { # Estate Holders
+		holder = anicia_16
+	}
+	423.1.1 = { # Estate Holders
+		holder = anicia_17
+	}
+	### Odarcer's Invasion
+	476.9.4 = {
+		de_jure_liege = d_capua
+		government = feudal_government
+		liege = k_italy
+	}
+	476.9.4 = {
+		holder = roma_14 # 
+	}
+	532.1.1 = {
+		holder = roman_02
+	}
+	768.1.1 = {
+		liege = d_benevento
+		holder = 190332 # Pando di Capua
+	}
+}
+
+c_napoli = {
+	361.1.1 = { change_development_level = 11 }
+	532.1.1 = { change_development_level = 12 }
+	768.1.1 = { change_development_level = 13 }
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = d_latium
+		liege = d_latium
+	}
+	361.1.1 = { # Estate Holders
+		holder = anicia_14
+	}
+	364.1.1 = { # Estate Holders
+		holder = anicia_15
+	}
+	392.1.1 = { # Estate Holders
+		holder = anicia_16
+	}
+	423.1.1 = { # Estate Holders
+		holder = anicia_17
+	}
+	### Odarcer's Invasion
+	476.9.4 = {
+		de_jure_liege = d_capua
+		government = feudal_government
+		liege = k_italy
+	}
+	476.9.4 = {
+		holder = orestes_03 # 
+		liege = d_latium
+	}
+	532.1.1 = {
+		holder = roman_02
+	}
+
+	536.1.1 = {
+		liege = e_byzantium
+	}
+	625.1.1 = {
+		holder = isaac_the_armenian
+	}
+	661.1.1 = {
+		holder = 145865 # Basileios
+	}
+	666.1.1 = {
+		holder = 145866 # Theophylaktos I
+	}
+	670.1.1 = {
+		holder = 145768 # Kosmas
+	}
+	673.1.1 = {
+		holder = 145868 # Andreas I
+	}
+	677.1.1 = {
+		holder = 145869 # Kaisarios I
+	}
+	684.1.1 = {
+		holder = 145870 # Stephanos I
+	}
+	687.1.1 = {
+		holder = 145871 # Bonellos
+	}
+	696.1.1 = {
+		holder = 145872 # Theodosios
+	}
+	706.1.1 = {
+		holder = 145873 # Kaisarios II
+	}
+	711.9.1 = {
+		holder = 145874 # Ioannes I
+	}
+	719.1.1 = {
+		holder = 145875 # Theodoros I
+	}
+	729.1.1 = {
+		holder = 145876 # Georgios
+	}
+	739.1.1 = {
+		holder = 145877 # Gregorios I Neapolites
+	}
+	755.1.1 = {
+		holder = 145878 # Stephanos II Neapolites
+	}
+	767.1.1 = {
+		holder = 145879 # Gregorios II Neapolites
+	}
+}
+
+b_amalfi = {
+	751.1.1 = {
+		holder = 145889 # Leon Amalfinos
+	}
+	
+}
+
+d_apulia = {
+	361.1.1 = { change_development_level = 8 }
+	532.1.1 = { change_development_level = 9 }
+	768.1.1 = { change_development_level = 10 }
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = k_italia_suburbicariae
+		liege = k_italia_suburbicariae
+	}
+	361.1.1 = {
+		holder = sicily_07
+	}
+	395.1.1 = {
+		holder = sicily_08
+	}
+	## Odoarcer Kingdom
+	476.9.4 = {
+		government = feudal_government
+		#de_jure_liege = k_sicily
+		de_jure_liege = k_italy
+		liege = k_italy
+	}
+	476.9.4 = {
+		holder = sicily_09
+		liege = k_italy
+	}
+	532.1.1 = {
+		holder = roman_03
+	}
+	625.1.1 = {
+		holder = isaac_the_armenian
+	}
+	756.1.1 = {
+		de_jure_liege = k_sicily
+	}
+}
+
+c_apulia = {
+	361.1.1 = { change_development_level = 8 }
+	532.1.1 = { change_development_level = 9 }
+	768.1.1 = { change_development_level = 10 }
+	## Diocletian Division
+	200.1.1 = {
+		liege = k_italia_suburbicariae
+	}
+	361.1.1 = {
+		holder = sicily_07
+	}
+	395.1.1 = {
+		holder = sicily_08
+	}
+	## Odoarcer Kingdom
+	476.9.4 = {
+		government = feudal_government
+		liege = k_italy
+	}
+	476.9.4 = {
+		holder = sicily_09
+		liege = k_italy
+	}
+	625.1.1 = {
+		holder = isaac_the_armenian
+	}
+	762.1.1 = {
+		liege = d_benevento
+	}
+	762.1.1 = {
+		holder = 190310 # Paldo
+	}
+}
+
+c_bari = {
+	## Diocletian Division
+	200.1.1 = {
+		liege = k_italia_suburbicariae
+	}
+	361.1.1 = {
+		holder = sicily_07
+	}
+	395.1.1 = {
+		holder = sicily_08
+	}
+	## Odoarcer Kingdom
+	476.9.4 = {
+		government = feudal_government
+		liege = k_italy
+	}
+	476.9.4 = {
+		holder = sicily_09
+		liege = k_italy
+	}
+	742.1.1 = {
+		liege = d_benevento
+		holder = 190303 # Gandulf Gandulfingi
+	}
+	766.1.1 = {
+		holder = 190304 # Daufer
+	}
+}
+
+c_lecce = {
+	## Diocletian Division
+	200.1.1 = {
+		liege = k_italia_suburbicariae
+	}
+	361.1.1 = {
+		holder = sicily_07
+	}
+	395.1.1 = {
+		holder = sicily_08
+	}
+	## Odoarcer Kingdom
+	476.9.4 = {
+		government = feudal_government
+		liege = k_italy
+	}
+	476.9.4 = {
+		holder = sicily_09
+		liege = k_italy
+	}
+	536.1.1 = {
+		liege = e_byzantium
+	}
+	755.1.1 = {
+		holder = 145864 # Markellos
+	}
+}
+
+d_salerno = {
+	361.1.1 = { change_development_level = 6 }
+	532.1.1 = { change_development_level = 7 }
+	768.1.1 = { change_development_level = 8 }
+	### Odarcer's Invasion
+	476.9.4 = {
+		#de_jure_liege = k_sicily
+		de_jure_liege = k_italy
+	}
+	756.1.1 = {
+		de_jure_liege = k_sicily
+	}
+}
+
+c_salerno = {
+	361.1.1 = { change_development_level = 10 }
+	532.1.1 = { change_development_level = 11 }
+	768.1.1 = { change_development_level = 12 }
+	
+	## Diocletian Division
+	200.1.1 = {
+		liege = d_calabria
+		de_jure_liege = d_calabria
+	}
+	361.1.1 = {
+		holder = sicily_13
+	}
+	395.1.1 = {
+		holder = sicily_14
+	}
+	## Odoarcer Kingdom
+	476.9.4 = {
+		government = feudal_government
+		de_jure_liege = d_salerno
+	}
+	476.9.4 = {
+		holder = sicily_15
+	}
+	525.1.1 = {
+		holder = 992022_son_in_law
+		liege = k_sicily
+	}
+	625.1.1 = {
+		holder = isaac_the_armenian
+	}
+	763.1.1 = {
+		liege = d_benevento
+	}
+	763.1.1 = {
+		holder = 190289 # Daufer Daufingi
+	}
+}
+
+c_camarda = { # Principality of Taranto
+	## Diocletian Division
+	200.1.1 = {
+		liege = d_calabria
+		de_jure_liege = d_calabria
+	}
+	361.1.1 = {
+		holder = sicily_13
+	}
+	395.1.1 = {
+		holder = sicily_14
+	}
+	## Odoarcer Kingdom
+	476.9.4 = {
+		government = feudal_government
+		de_jure_liege = d_salerno
+	}
+	476.9.4 = {
+		holder = sicily_15
+	}
+	525.1.1 = {
+		holder = 992022_son_in_law
+		liege = k_sicily
+	}
+	763.1.1 = {
+		liege = d_benevento
+	}
+	763.1.1 = {
+		holder = 190299 # Roderissus I Roderissingi
+	}
+}
+
+
+d_calabria = {
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = k_italia_suburbicariae
+		liege = k_italia_suburbicariae
+	}
+	360.1.1 = {
+		holder = sicily_10
+	}
+	395.1.1 = {
+		holder = sicily_11
+	}
+	## Odoarcer Kingdom
+	476.9.4 = {
+		government = feudal_government
+		#de_jure_liege = k_sicily
+		de_jure_liege = k_italy
+		liege = k_italy
+	}
+	476.9.4 = {
+		holder = sicily_12
+		liege = k_italy
+	}
+	525.1.1 = {
+		holder = 992022_son_in_law
+	}
+	536.1.1 = {
+		liege = e_byzantium
+	}
+	756.1.1 = {
+		de_jure_liege = k_sicily
+	}
+	757.1.1 = {
+		holder = 145863
+	}
+}
+
+c_cosenza = {
+	## Diocletian Division
+	200.1.1 = {
+		liege = k_italia_suburbicariae
+	}
+	361.1.1 = {
+		holder = sicily_10
+	}
+	395.1.1 = {
+		holder = sicily_11
+	}
+	## Odoarcer Kingdom
+	476.9.4 = {
+		government = feudal_government
+		liege = k_italy
+	}
+	476.9.4 = {
+		holder = sicily_12
+		liege = k_italy
+	}
+	525.1.1 = {
+		holder = 992022_son_in_law
+		liege = k_sicily
+	}
+	536.1.1 = {
+		liege = d_calabria
+	}
+	757.1.1 = {
+		holder = 145863
+	}
+}
+
+
+c_rossano = { # County of Catanzaro
+	## Diocletian Division
+	200.1.1 = {
+		liege = k_italia_suburbicariae
+	}
+	361.1.1 = {
+		holder = sicily_10
+	}
+	395.1.1 = {
+		holder = sicily_11
+	}
+	## Odoarcer Kingdom
+	476.9.4 = {
+		government = feudal_government
+		liege = k_italy
+	}
+	476.9.4 = {
+		holder = sicily_12
+		liege = k_italy
+	}
+	525.1.1 = {
+		holder = 992022_son_in_law
+		liege = k_sicily
+	}
+	740.1.1 = {
+		liege = d_benevento
+	}
+	740.1.1 = {
+		holder = 190295 # Rodoald
+	}
+	766.1.1 = {
+		holder = 190296 # Radulhin
+	}
+}
+
+
+c_reggio_calabria = {
+	## Diocletian Division
+	200.1.1 = {
+		liege = k_italia_suburbicariae
+	}
+	361.1.1 = {
+		holder = sicily_10
+	}
+	395.1.1 = {
+		holder = sicily_11
+	}
+	## Odoarcer Kingdom
+	476.9.4 = {
+		government = feudal_government
+		liege = k_italy
+	}
+	476.9.4 = {
+		holder = sicily_12
+		liege = k_italy
+	}
+	525.1.1 = {
+		holder = 992022_son_in_law
+		liege = k_sicily
+	}
+	536.1.1 = {
+		liege = d_calabria
+	}
+	625.1.1 = {
+		holder = isaac_the_armenian
+	}
+	757.1.1 = {
+		holder = 145863
+	}
+}

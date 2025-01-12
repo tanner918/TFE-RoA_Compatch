@@ -1,0 +1,250 @@
+﻿vistulans_61 = {
+	name = "Stoigniew"
+	dynasty = 2001003  # z WiÅ›lan
+	culture = vistulian
+	religion = slavic_pagan
+	502.12.24 = {
+		birth = yes
+	}
+	554.6.12 = {
+		death = yes
+	}
+}
+
+vistulans_71 = {
+	name = "Budziwuj"
+	dynasty = 2001003  # z WiÅ›lan
+	culture = vistulian
+	religion = slavic_pagan
+	father = vistulans_61
+	538.2.10 = {
+		birth = yes
+	}
+	599.1.7 = {
+		death = yes
+	}
+}
+
+vistulans_81 = {
+	name = "Janusz"
+	dynasty = 2001003  # z WiÅ›lan
+	culture = vistulian
+	religion = slavic_pagan
+	father = vistulans_71
+	570.8.9 = {
+		birth = yes
+	}
+	630.6.10 = {
+		death = yes
+	}
+}
+
+vistulans_91 = {
+	name = "Gertruda"
+	female = yes
+	dynasty = 2001003  # z WiÅ›lan
+	culture = vistulian
+	religion = slavic_pagan
+	father = vistulans_81
+	607.8.20 = {
+		birth = yes
+	}
+	655.7.16 = {
+		death = yes
+	}
+}
+
+vistulans_101 = {
+	name = "Dalimir"
+	dynasty = 2001003  # z WiÅ›lan
+	culture = vistulian
+	religion = slavic_pagan
+	mother = vistulans_91
+	641.3.22 = {
+		birth = yes
+	}
+	694.8.10 = {
+		death = yes
+	}
+}
+
+vistulans_111 = {
+	name = "JarosL_aw"
+	dynasty = 2001003  # z WiÅ›lan
+	culture = vistulian
+	religion = slavic_pagan
+	father = vistulans_101
+	669.11.10 = {
+		birth = yes
+	}
+	710.3.29 = {
+		death = yes
+	}
+}
+vistulans_121 = {  # Krak I, founder of Krakow
+	name = "Krak"
+	dynasty = 2001003  # z WiÅ›lan
+	culture = vistulian
+	religion = slavic_pagan
+	father = vistulans_111
+	691.6.21 = {
+		birth = yes
+	}
+	732.3.27 = {
+		death = yes
+	}
+}
+
+vistulans_131 = {  # Wanda I
+	name = "Wanda"
+	female = yes
+	dynasty = 2001003  # z WiÅ›lan
+	culture = vistulian
+	religion = slavic_pagan
+	father = vistulans_121
+	714.2.7 = {
+		birth = yes
+	}
+	752.10.7 = {
+		death = {
+			death_reason = death_suicide
+		}
+	}
+}
+
+vistulans_132 = {  # Lech II
+	name = "Lech"
+	dynasty = 2001003  # z WiÅ›lan
+	culture = vistulian
+	religion = slavic_pagan
+	father = vistulans_121
+	718.6.2 = {
+		birth = yes
+	}
+	756.10.3 = {
+		death = {
+			death_reason = death_murder_known
+			killer = vistulans_133
+		}
+	}
+}
+
+vistulans_133 = {  # Krak II
+	name = "Krak"
+	dynasty = 2001003  # z WiÅ›lan
+	culture = vistulian
+	religion = slavic_pagan
+	father = vistulans_121
+	723.5.22 = {
+		birth = yes
+	}
+	756.10.3 = {
+		trait = kinslayer_3
+	}
+	763.12.21 = {
+		trait = disinherited
+	}
+	783.9.10 = {
+		death = yes
+	}
+}
+
+vistulans_141 = {  # Wanda II
+	name = "Wanda"
+	female = yes
+	dynasty = 2001003  # z WiÅ›lan
+	culture = vistulian
+	religion = slavic_pagan
+	father = vistulans_133
+	744.2.17 = {
+		birth = yes
+	}
+	800.1.25 = {
+		death = yes
+	}
+}
+
+vistulans_62 = {
+	name = "Samboja"
+	female = yes
+	dynasty = dynasty_vistulans
+	culture = vistulian
+	religion = slavic_pagan
+	father = vistulans_52
+	509.5.11 = {
+		birth = yes
+	}
+	553.9.15 = {
+		death = yes
+	}
+}
+
+vistulans_72 = {
+	name = "Borzywoj"
+	dynasty = dynasty_vistulans
+	culture = vistulian
+	religion = slavic_pagan
+	mother = vistulans_62
+	542.12.3 = {
+		birth = yes
+	}
+	608.4.8 = {
+		death = yes
+	}
+}
+
+vistulans_82 = {
+	name = "GoS_ciwuj"
+	dynasty = dynasty_vistulans
+	culture = vistulian
+	religion = slavic_pagan
+	father = vistulans_72
+	570.6.14 = {
+		birth = yes
+	}
+	611.11.4 = {
+		death = yes
+	}
+}
+
+vistulans_92 = {
+	name = "SE_dziej"
+	dynasty = dynasty_vistulans
+	culture = vistulian
+	religion = slavic_pagan
+	father = vistulans_82
+	609.9.25 = {
+		birth = yes
+	}
+	661.2.16 = {
+		death = yes
+	}
+}
+
+vistulans_102 = {
+	name = "PrzybO_r"
+	dynasty = dynasty_vistulans
+	culture = vistulian
+	religion = slavic_pagan
+	father = vistulans_92
+	641.5.22 = {
+		birth = yes
+	}
+	697.3.6 = {
+		death = yes
+	}
+}
+
+vistulans_112 = {
+	name = "Bartosz"
+	dynasty = dynasty_vistulans
+	culture = vistulian
+	religion = slavic_pagan
+	father = vistulans_102
+	661.7.17 = {
+		birth = yes
+	}
+	710.6.9 = {
+		death = yes
+	}
+}

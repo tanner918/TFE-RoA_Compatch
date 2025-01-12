@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "male_headgear_secular_celtic_berru_mesh"
+	file = "male_headgear_secular_celtic_berru.mesh"
+
+	meshsettings = {
+		name = "male_headgear_secular_celtic_berruShape"
+		index = 0
+		texture_diffuse = "berru_diffuse.dds"
+		texture_normal = "berru_normal.dds"
+		texture_specular = "berru_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "male_headgear_secular_celtic_berru_entity"
+	pdxmesh = "male_headgear_secular_celtic_berru_mesh"
+}

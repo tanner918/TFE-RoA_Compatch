@@ -1,0 +1,100 @@
+﻿# Miscellaneous modifiers shared by both RICE and TFE
+
+RICE_misc_engaged_with_local_religious_practices = {
+	icon = piety_positive
+	learning = 1
+	county_opinion_add = 5
+	monthly_county_control_growth_factor = 0.15
+	#zealot_opinion = 10
+}
+RICE_upper_egypt_worshipped_at_aswan = {
+	icon = piety_positive
+	monthly_piety = 0.2
+}
+RICE_upper_egypt_philae_honored_isis = {
+	icon = family_positive
+	monthly_piety = 0.3
+	monthly_lifestyle_xp_gain_mult = 0.15
+	county_opinion_add = 3
+	vassal_opinion = 5
+}
+RICE_upper_egypt_philae_honored_osiris = {
+	icon = stress_positive
+	monthly_piety = 0.3
+	monthly_lifestyle_xp_gain_mult = 0.02
+	county_opinion_add = 10
+	vassal_opinion = 5
+}
+RICE_upper_egypt_philae_honored_horus = {
+	icon = bird_positive
+	monthly_piety = 0.3
+	monthly_lifestyle_xp_gain_mult = 0.02
+	county_opinion_add = 2
+	vassal_opinion = 15
+}
+RICE_upper_egypt_elephantine_honored_khnum = {
+	icon = family_positive
+	monthly_piety = 0.3
+	monthly_income_mult = 0.15
+	men_at_arms_maintenance = -0.15
+	fertility = 0.05
+}
+RICE_upper_egypt_elephantine_honored_satet = {
+	icon = hunt_positive
+	monthly_piety = 0.3
+	monthly_income_mult = 0.05
+	men_at_arms_maintenance = -0.4
+	fertility = 0.05
+}
+RICE_upper_egypt_elephantine_honored_anuket = {
+	icon = love_positive
+	monthly_piety = 0.3
+	monthly_income_mult = 0.05
+	men_at_arms_maintenance = -0.15
+	fertility = 0.2
+}
+RICE_upper_egypt_kalabsha_honored_mandulis = {
+	icon = prestige_positive
+	monthly_piety = 0.3
+	monthly_dynasty_prestige = 0.4
+	build_gold_cost = -0.04
+	enemy_hostile_scheme_success_chance_add = -10
+}
+RICE_upper_egypt_kalabsha_honored_imhotep = {
+	icon = prestige_positive
+	monthly_piety = 0.3
+	monthly_dynasty_prestige = 0.1
+	build_gold_cost = -0.16
+	enemy_hostile_scheme_success_chance_add = -10
+}
+RICE_upper_egypt_kalabsha_honored_tutu = {
+	icon = prestige_positive
+	monthly_piety = 0.3
+	monthly_dynasty_prestige = 0.1
+	build_gold_cost = -0.04
+	enemy_hostile_scheme_success_chance_add = -30
+}
+RICE_upper_egypt_recently_closed_philae = {
+	icon = county_modifier_development_positive
+	build_gold_cost = -0.05
+}
+RICE_upper_egypt_recently_closed_elephantine = {
+	icon = county_modifier_development_positive
+	build_gold_cost = -0.05
+}
+RICE_upper_egypt_recently_closed_kalabsha = {
+	icon = county_modifier_development_positive
+	build_gold_cost = -0.05
+}
+RICE_upper_egypt_recently_reopened_philae = {
+	icon = piety_positive
+	tax_mult = 0.03
+}
+RICE_upper_egypt_recently_reopened_elephantine = {
+	icon = piety_positive
+	tax_mult = 0.03
+}
+RICE_upper_egypt_recently_reopened_kalabsha = {
+	icon = piety_positive
+	tax_mult = 0.03
+}

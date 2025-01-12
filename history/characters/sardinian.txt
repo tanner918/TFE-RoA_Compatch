@@ -1,0 +1,227 @@
+﻿75004 = {
+	name = "Ausone" # Ausone, supposed Giudice of Cagliari (778-807)
+	dynasty = 13037
+	religion="orthodox"
+	culture="sardinian"
+
+	father = 184009
+
+	754.1.1 = {
+		birth=yes
+	}
+	807.1.1 = {
+		death=yes
+	}
+}
+
+75005 = {
+	name = "Juanne" # Giovanni, supposed Giudice of Gallura (740-783)
+	dynasty = 13037
+	religion = "orthodox"
+	culture = "sardinian"
+
+	father = 145909
+
+	731.1.1 = {
+		birth = yes
+	}
+	783.1.1 = {
+		death = yes
+	}
+}
+
+75006 = {
+	name = "Torchitoriu" # Torchitorio, Archon of Sardinia (687-720)
+	dynasty = 13037
+	religion = "orthodox"
+	culture = "sardinian"
+
+	655.1.1 = {
+		birth = yes
+	}
+	720.1.1 = {
+		death = yes
+	}
+}
+
+145908 = {
+	name = "Gialetu" # Gialetto, supposed Giudice of Cagliari (720-722)
+	dynasty = 13037
+	religion = "orthodox"
+	culture = "sardinian"
+
+	father = 75006
+
+	677.1.1 = {
+		birth = yes
+	}
+	722.1.1 = {
+		death = "804.1.1"
+	}
+}
+
+145909 = {
+	name = "Tedu" # Teodo, supposed Giudice of Cagliari (722-740)
+	dynasty = 13037
+	religion = "orthodox"
+	culture = "sardinian"
+
+	father = 145908
+
+	701.1.1 = {
+		birth = yes
+	}
+	740.1.1 = {
+		death = yes
+	}
+}
+
+184009 = {
+	name = "Goffredu" # Goffredo, supposed Giudice of Cagliari (740-778)
+	dynasty = 13037
+	religion = "orthodox"
+	culture = "sardinian"
+
+	father = 145909
+
+	729.1.1 = {
+		birth = yes
+	}
+	778.1.1 = {
+		death = yes
+	}
+}
+
+#### TFE Sardinian
+sards_05 = {
+	name = "Marku"
+	religion = "roman_pagan"
+	culture = "sardinian"
+	340.1.1 = {
+		birth = yes
+	}
+	395.1.1 = {
+		death = yes
+	}
+}
+sards_06 = {
+	name = "Torchitoriu"
+	religion = "roman_pagan"
+	culture = "sardinian"
+	338.1.1 = {
+		birth = yes
+	}
+	395.1.1 = {
+		death = yes
+	}
+}
+sards_07 = {
+	name = "Serafinu"
+	religion = "sardinian_pagan"
+	culture = "sardinian"
+	336.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+sards_08 = {
+	name = "Guantine"
+	religion = "sardinian_pagan"
+	culture = "sardinian"
+	341.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+sards_09 = {
+	name = "Guantine"
+	religion = "chalcedonian"
+	culture = "sardinian"
+	458.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+sards_10 = {
+	name = "Serafinu"
+	religion = "roman_pagan"
+	culture = "sardinian"
+	370.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+sards_11 = {
+	name = "Guantine"
+	religion = "roman_pagan"
+	culture = "sardinian"
+	372.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+
+
+
+
+#############################################################
+# 
+# MISCELLANEOUS
+# 
+# Done by Cybrxkhan
+# 
+#############################################################
+
+# Hospito, pagan chief of the Barbaricini in Barbagia turned Christian in the 6th century
+# Barbaricini might've included both native Sardinians and the Mauri, but I have made Hospito Sardinian for now
+# He is attested in 594, so I've made him a young man for the 532 start date
+sardinian_misc_001 = {
+	name = "Hospito"
+	dynasty = dynasty_Barbaricini
+	religion = "sardinian_pagan"
+	culture = "sardinian"
+	516.1.15 = {
+		birth = yes
+	}
+	606.6.6 = {
+		death = yes
+	}
+}
+
+# Fictitious Barbaricini ruler
+sardinian_misc_002 = {
+	name = "Izocor"
+	religion = "sardinian_pagan"
+	culture = "sardinian"
+	343.6.17 = {
+		birth = yes
+	}
+	425.2.19 = {
+		death = yes
+	}
+}
+
+# Fictitious Barbaricini ruler
+sardinian_misc_003 = {
+	name = "Tedu"
+	religion = "sardinian_pagan"
+	culture = "sardinian"
+	444.4.4 = {
+		birth = yes
+	}
+	515.1.5 = {
+		death = yes
+	}
+}
+
+

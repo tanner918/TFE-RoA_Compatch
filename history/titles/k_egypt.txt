@@ -1,0 +1,1367 @@
+﻿k_egypt = {
+	361.1.1 = {	change_development_level = 7 }
+	476.1.1 = {	change_development_level = 8 }
+	532.1.1 = {	change_development_level = 9 }
+	632.1.1 = {	change_development_level = 10 }
+	768.1.1 = {	change_development_level = 12 }
+
+	
+	762.1.1 = {
+		liege = "e_arabia"
+	}
+	762.1.1 = {
+		holder = 210009
+	}
+}
+
+
+d_cyrenaica = {
+	361.1.1 = {	change_development_level = 4 }
+	476.1.1 = {	change_development_level = 5 }
+	532.1.1 = {	change_development_level = 4 }
+	632.1.1 = {	change_development_level = 3 }
+	768.1.1 = {	change_development_level = 2 }
+	
+	361.1.1 = {
+		holder = cyrenaica_01
+		liege = k_aegyptus
+		de_jure_liege = k_aegyptus
+		name = LIBYASUPERIOR
+	}
+	395.1.1 = {
+		holder = cyrenaica_02
+		liege = k_aegyptus
+	}
+	476.1.1 = {
+		holder = cyrenaica_03
+		liege = k_aegyptus
+	}
+	532.1.1 = {
+		holder = garamantian_19
+		government = feudal_government
+	}
+	767.1.1 = {
+		holder = 210034
+		liege = "k_africa"
+	}
+}
+
+
+c_barqa = {
+	
+	361.1.1 = {
+		holder = cyrenaica_01
+	}
+	395.1.1 = {
+		holder = cyrenaica_02
+	}
+	476.1.1 = {
+		holder = cyrenaica_03
+		liege = k_aegyptus
+	}
+	532.1.1 = {
+		holder = garamantian_19
+		government = feudal_government
+	}
+	767.1.1 = {
+		holder = 210034
+		liege = "d_cyrenaica"
+	}
+}
+
+c_derna = {
+	361.1.1 = {	change_development_level = 5 }
+	361.1.1 = {
+		holder = cyrenaica_01
+	}
+	395.1.1 = {
+		holder = synessios_of_cyrene
+		liege = d_cyrenaica
+	}
+	476.1.1 = {
+		holder = cyrenaica_03
+		liege = k_aegyptus
+	}
+	532.1.1 = {
+		holder = garamantian_19
+		government = feudal_government
+	}
+	767.1.1 = {
+		holder = 210034
+		liege = "d_cyrenaica"
+	}
+}
+
+d_tobruk = {
+	361.1.1 = {	change_development_level = 4 }
+	476.1.1 = {	change_development_level = 6 }
+	532.1.1 = {	change_development_level = 7 }
+	632.1.1 = {	change_development_level = 8 }
+	361.1.1 = {
+		holder = marmarica_01
+		liege = k_aegyptus
+		de_jure_liege = k_aegyptus
+		name = LIBYAINFERIOR
+	}
+	395.1.1 = {
+		holder = marmarica_02
+		liege = k_aegyptus
+	}
+	476.1.1 = {
+		holder = marmarica_03
+		liege = k_aegyptus
+	}
+	532.1.1 = {
+		holder = aegyptian_misc_001
+		liege = k_aegyptus
+	}
+}
+c_tobruk = {
+	361.1.1 = {	change_development_level = 5 }
+	476.1.1 = {	change_development_level = 6 }
+	532.1.1 = {	change_development_level = 7 }
+	632.1.1 = {	change_development_level = 8 }
+	361.1.1 = {
+		holder = marmarica_01
+		de_jure_liege = d_tobruk
+	}
+	395.1.1 = {
+		holder = marmarica_02
+	}
+	476.1.1 = {
+		holder = marmarica_03
+		liege = k_aegyptus
+	}
+	532.1.1 = {
+		holder = aegyptian_misc_001
+		liege = k_aegyptus
+	}
+	767.1.1 = {
+		government = tribal_government
+		holder = 210034
+		liege = "d_cyrenaica"
+	}
+
+}
+
+
+d_alexandria = {
+	361.1.1 = {	change_development_level = 7 }
+	476.1.1 = {	change_development_level = 8 }
+	532.1.1 = {	change_development_level = 9 }
+	632.1.1 = {	change_development_level = 10 }
+	768.1.1 = {	change_development_level = 12 }
+	
+	303.1.1 = {
+		holder = aegyptus_53
+		de_jure_liege = k_aegyptus
+		name = AEGYPTUS
+	}
+	304.1.1 = {
+		holder = aegyptus_52
+	}
+	305.1.1 = {
+		holder = aegyptus_51
+	}
+	307.1.1 = {
+		holder = aegyptus_50
+	}
+	308.1.1 = {
+		holder = aegyptus_49
+	}
+	309.1.1 = {
+		holder = aegyptus_48
+	}
+	310.1.1 = {
+		holder = aegyptus_47
+	}
+	312.1.1 = {
+		holder = aegyptus_46
+	}
+	314.1.1 = {
+		holder = aegyptus_54
+	}
+	328.1.1 = {
+		holder = aegyptus_55
+	}
+	329.1.1 = {
+		holder = aegyptus_45
+	}
+	330.1.1 = {
+		holder = aegyptus_56
+	}
+	331.1.1 = {
+		holder = aegyptus_12
+	}
+	332.1.1 = {
+		holder = aegyptus_44
+	}
+	333.1.1 = {
+		holder = aegyptus_43
+	}
+	335.1.1 = {
+		holder = aegyptus_41
+	}
+	337.1.1 = {
+		holder = aegyptus_42
+	}
+	338.1.1 = {
+		holder = aegyptus_40
+	}
+	340.1.1 = {
+		holder = aegyptus_39
+	}
+	341.1.1 = {
+		holder = aegyptus_39
+	}
+	344.1.1 = {
+		holder = aegyptus_38
+	}
+	345.1.1 = {
+		holder = aegyptus_37
+	}
+	353.1.1 = {
+		holder = aegyptus_36
+	}
+	355.1.1 = {
+		holder = aegyptus_35
+	}
+	# 356.1.1 = {
+	# 	holder = aegyptus_34
+	# }
+	# 357.1.1 = {
+	# 	holder = aegyptus_33
+	# }
+	# 358.1.1 = {
+	# 	holder = aegyptus_32
+	# }
+	# 359.1.1 = {
+	# 	holder = aegyptus_31
+	# }
+	# 360.1.1 = {
+	# 	holder = aegyptus_30
+	# }
+	356.1.1 = {
+		holder = sebastianos_01
+		liege = "e_roman_empire"
+	}
+	362.1.1 = {
+		holder = aegyptus_01
+		liege = e_byzantium
+	}
+	367.1.1 = {
+		holder = aegyptus_02
+	}
+	370.1.1 = {
+		holder = aegyptus_03
+	}
+	371.1.1 = {
+		holder = aegyptus_04
+	}
+	374.1.1 = {
+		holder = aegyptus_05
+	}
+	376.1.1 = {
+		holder = aegyptus_06
+	}
+	379.1.1 = {
+		holder = aegyptus_07
+	}
+	380.1.1 = {
+		holder = aegyptus_08
+	}
+	381.1.1 = {
+		holder = aegyptus_09
+	}
+	382.1.1 = {
+		holder = aegyptus_04
+	}
+	383.1.1 = {
+		holder = aegyptus_10
+	}
+	384.1.1 = {
+		holder = aegyptus_11
+	}
+	385.1.1 = {
+		holder = aegyptus_12
+	}
+	386.1.1 = {
+		holder = aegyptus_13
+	}
+	387.1.1 = {
+		holder = aegyptus_14
+	}
+	388.1.1 = {
+		holder = aegyptus_15
+	}
+	389.1.1 = {
+		holder = aegyptus_16
+	}
+	391.1.1 = {
+		holder = aegyptus_17
+	}
+	392.1.1 = {
+		holder = aegyptus_57
+	}
+	393.1.1 = {
+		holder = aegyptus_18
+	}
+	396.1.1 = {
+		holder = aegyptus_23
+	}
+	397.1.1 = {
+		holder = aegyptus_24
+	}
+	398.1.1 = {
+		holder = aegyptus_58
+	}
+	400.1.1 = {
+		holder = aegyptus_59
+	}
+	403.1.1 = {
+		holder = aegyptus_60
+	}
+	415.1.1 = {
+		holder = aegyptus_19
+	}
+	422.1.1 = {
+		holder = aegyptus_61
+	}
+	435.1.1 = {
+		holder = aegyptus_62
+	}
+	443.1.1 = {
+		holder = aegyptus_63
+	}
+	451.1.1 = {
+		holder = aegyptus_64
+	}
+	453.1.1 = {
+		holder = aegyptus_65
+	}
+	457.1.1 = {
+		holder = aegyptus_66
+	}
+	468.1.1 = {
+		holder = aegyptus_67
+	}
+	475.1.1 = {
+		holder = aegyptus_68
+	}
+	477.1.1 = {
+		holder = aegyptus_69
+	}
+	478.1.1 = {
+		holder = aegyptus_70
+	}
+	481.1.1 = {
+		holder = aegyptus_71
+	}
+	482.1.1 = {
+		holder = aegyptus_72
+	}
+	483.1.1 = {
+		holder = aegyptus_73
+	}
+	487.1.1 = {
+		holder = aegyptus_64
+	}
+	488.1.1 = {
+		holder = aegyptus_74
+	}
+	501.1.1 = {
+		holder = aegyptus_77
+	}
+	510.1.1 = {
+		holder = aegyptus_78
+	}
+	520.1.1 = {
+		holder = aegyptus_79
+	}
+	527.1.1 = {
+		holder = aegyptus_80
+	}
+	535.1.1 = {
+		holder = aegyptus_81
+	}
+	537.1.1 = {
+		holder = aegyptus_82
+	}
+	538.1.1 = {
+		holder = aegyptus_21 # Felix Liberios
+	}
+	762.1.1 = {
+		liege = "k_egypt"
+	}
+	762.1.1 = {
+		holder = 210023
+	}
+}
+
+c_alexandria = {
+	361.1.1 = { change_development_level = 13 }
+	395.1.1 = { change_development_level = 15 }
+	476.1.1 = { change_development_level = 17 }
+	532.1.1 = { change_development_level = 19 }
+	632.1.1 = { change_development_level = 21 }
+	768.1.1 = { change_development_level = 23 }
+	
+	303.1.1 = {
+		holder = aegyptus_53
+	}
+	304.1.1 = {
+		holder = aegyptus_52
+	}
+	305.1.1 = {
+		holder = aegyptus_51
+	}
+	307.1.1 = {
+		holder = aegyptus_50
+	}
+	308.1.1 = {
+		holder = aegyptus_49
+	}
+	309.1.1 = {
+		holder = aegyptus_48
+	}
+	310.1.1 = {
+		holder = aegyptus_47
+	}
+	312.1.1 = {
+		holder = aegyptus_46
+	}
+	314.1.1 = {
+		holder = aegyptus_54
+	}
+	328.1.1 = {
+		holder = aegyptus_55
+	}
+	329.1.1 = {
+		holder = aegyptus_45
+	}
+	330.1.1 = {
+		holder = aegyptus_56
+	}
+	331.1.1 = {
+		holder = aegyptus_12
+	}
+	332.1.1 = {
+		holder = aegyptus_44
+	}
+	333.1.1 = {
+		holder = aegyptus_43
+	}
+	335.1.1 = {
+		holder = aegyptus_41
+	}
+	337.1.1 = {
+		holder = aegyptus_42
+	}
+	338.1.1 = {
+		holder = aegyptus_40
+	}
+	340.1.1 = {
+		holder = aegyptus_39
+	}
+	341.1.1 = {
+		holder = aegyptus_39
+	}
+	344.1.1 = {
+		holder = aegyptus_38
+	}
+	345.1.1 = {
+		holder = aegyptus_37
+	}
+	353.1.1 = {
+		holder = aegyptus_36
+	}
+	355.1.1 = {
+		holder = aegyptus_35
+	}
+	# 356.1.1 = {
+	# 	holder = aegyptus_34
+	# }
+	# 357.1.1 = {
+	# 	holder = aegyptus_33
+	# }
+	# 358.1.1 = {
+	# 	holder = aegyptus_32
+	# }
+	# 359.1.1 = {
+	# 	holder = aegyptus_31
+	# }
+	# 360.1.1 = {
+	# 	holder = aegyptus_30
+	# }
+	356.1.1 = {
+		holder = sebastianos_01
+		liege = "e_roman_empire"
+	}
+	362.1.1 = {
+		holder = aegyptus_01
+		liege = e_byzantium
+	}
+	367.1.1 = {
+		holder = aegyptus_02
+	}
+	370.1.1 = {
+		holder = aegyptus_03
+	}
+	371.1.1 = {
+		holder = aegyptus_04
+	}
+	374.1.1 = {
+		holder = aegyptus_05
+	}
+	376.1.1 = {
+		holder = aegyptus_06
+	}
+	379.1.1 = {
+		holder = aegyptus_07
+	}
+	380.1.1 = {
+		holder = aegyptus_08
+	}
+	381.1.1 = {
+		holder = aegyptus_09
+	}
+	382.1.1 = {
+		holder = aegyptus_04
+	}
+	383.1.1 = {
+		holder = aegyptus_10
+	}
+	384.1.1 = {
+		holder = aegyptus_11
+	}
+	385.1.1 = {
+		holder = aegyptus_12
+	}
+	386.1.1 = {
+		holder = aegyptus_13
+	}
+	387.1.1 = {
+		holder = aegyptus_14
+	}
+	388.1.1 = {
+		holder = aegyptus_15
+	}
+	389.1.1 = {
+		holder = aegyptus_16
+	}
+	391.1.1 = {
+		holder = aegyptus_17
+	}
+	392.1.1 = {
+		holder = aegyptus_57
+	}
+	393.1.1 = {
+		holder = aegyptus_18
+	}
+	396.1.1 = {
+		holder = aegyptus_23
+	}
+	397.1.1 = {
+		holder = aegyptus_24
+	}
+	398.1.1 = {
+		holder = aegyptus_58
+	}
+	400.1.1 = {
+		holder = aegyptus_59
+	}
+	403.1.1 = {
+		holder = aegyptus_60
+	}
+	415.1.1 = {
+		holder = aegyptus_19
+	}
+	422.1.1 = {
+		holder = aegyptus_61
+	}
+	435.1.1 = {
+		holder = aegyptus_62
+	}
+	443.1.1 = {
+		holder = aegyptus_63
+	}
+	451.1.1 = {
+		holder = aegyptus_64
+	}
+	453.1.1 = {
+		holder = aegyptus_65
+	}
+	457.1.1 = {
+		holder = aegyptus_66
+	}
+	468.1.1 = {
+		holder = aegyptus_67
+	}
+	475.1.1 = {
+		holder = aegyptus_68
+	}
+	477.1.1 = {
+		holder = aegyptus_69
+	}
+	478.1.1 = {
+		holder = aegyptus_70
+	}
+	481.1.1 = {
+		holder = aegyptus_71
+	}
+	482.1.1 = {
+		holder = aegyptus_72
+	}
+	483.1.1 = {
+		holder = aegyptus_73
+	}
+	487.1.1 = {
+		holder = aegyptus_64
+	}
+	488.1.1 = {
+		holder = aegyptus_74
+	}
+	501.1.1 = {
+		holder = aegyptus_77
+	}
+	510.1.1 = {
+		holder = aegyptus_78
+	}
+	520.1.1 = {
+		holder = aegyptus_79
+	}
+	527.1.1 = {
+		holder = aegyptus_80
+	}
+	535.1.1 = {
+		holder = aegyptus_81
+	}
+	537.1.1 = {
+		holder = aegyptus_82
+	}
+	539.1.1 = {
+		holder = aegyptus_21
+	}
+	762.1.1 = {
+		liege = "d_alexandria"
+	}
+	762.1.1 = {
+		holder = 210023
+	}
+}
+
+
+c_sullum = {
+	361.1.1 = {
+		holder = marmarica_01
+		de_jure_liege = d_tobruk
+	}
+	395.1.1 = {
+		holder = marmarica_02
+	}
+	476.1.1 = {
+		holder = marmarica_03
+		liege = k_aegyptus
+	}
+	762.1.1 = {
+		liege = "d_alexandria"
+	}
+	762.1.1 = {
+		holder = 210023
+	}
+}
+
+
+c_siwa = {
+	361.1.1 = {	change_development_level = 4 }
+	361.1.1 = {
+		holder = marmarica_01
+		de_jure_liege = d_tobruk
+	}
+	395.1.1 = {
+		holder = marmarica_02
+	}
+	476.1.1 = {
+		holder = marmarica_03
+		liege = k_aegyptus
+	}
+	762.1.1 = {
+		liege = "d_alexandria"
+	}
+	762.1.1 = {
+		holder = 210023
+	}
+}
+
+
+d_delta = {
+	361.1.1 = {	change_development_level = 8 }
+	476.1.1 = {	change_development_level = 9 }
+	532.1.1 = {	change_development_level = 10 }
+	
+	361.1.1 = {
+		holder = augustamnike_01
+		de_jure_liege = k_aegyptus
+		liege = k_aegyptus
+		name = AUGUSTAMNICA
+	}
+	395.1.1 = {
+		holder = augustamnike_02
+	}
+	476.1.1 = {
+		holder = augustamnike_03
+		liege = k_aegyptus
+	}
+	532.1.1 = {
+		holder = aegyptian_misc_003
+		liege = k_aegyptus
+	}
+
+}
+
+
+c_damietta = {
+	361.1.1 = {	change_development_level = 8 }
+	
+	361.1.1 = {
+		holder = augustamnike_01
+		de_jure_liege = d_delta
+	}
+	395.1.1 = {
+		holder = augustamnike_02
+	}
+	476.1.1 = {
+		holder = augustamnike_03
+		liege = k_aegyptus
+	}
+	762.1.1 = {
+		liege = "k_egypt"
+	}
+	762.1.1 = {
+		holder = 210009
+	}
+}
+
+
+c_al-buhaira = {
+	356.1.1 = {
+		holder = sebastianos_01
+		liege = "e_roman_empire"
+		de_jure_liege = d_alexandria
+	}
+	362.1.1 = {
+		holder = aegyptus_01
+		liege = e_byzantium
+	}
+	393.1.1 = {
+		holder = aegyptus_18
+	}
+	475.1.1 = {
+		holder = aegyptus_68
+	}
+	762.1.1 = {
+		liege = "k_egypt"
+	}
+	762.1.1 = {
+		holder = 210009
+	}
+}
+
+
+c_al-gharbiya = {
+
+	356.1.1 = {
+		holder = sebastianos_01
+		liege = "e_roman_empire"
+		de_jure_liege = d_alexandria
+	}
+	362.1.1 = {
+		holder = aegyptus_01
+	}
+	395.1.1 = {
+		holder = aegyptus_18
+	}
+	476.1.1 = {
+		holder = aegyptus_68
+		liege = e_byzantium
+	}
+	762.1.1 = {
+		liege = "k_egypt"
+	}
+	762.1.1 = {
+		holder = 210009
+	}
+}
+
+
+c_sharkiya = {
+
+	361.1.1 = {
+		holder = augustamnike_01
+		de_jure_liege = d_delta
+	}
+	395.1.1 = {
+		holder = augustamnike_02
+	}
+	476.1.1 = {
+		holder = augustamnike_03
+		liege = k_aegyptus
+	}
+	762.1.1 = {
+		liege = "k_egypt"
+	}
+	762.1.1 = {
+		holder = 210009
+	}
+}
+
+d_cairo = {
+	361.1.1 = {	change_development_level = 7 }
+	476.1.1 = {	change_development_level = 8 }
+	532.1.1 = {	change_development_level = 9 }
+}
+
+c_cairo = {
+	361.1.1 = {	change_development_level = 7 }
+	476.1.1 = {	change_development_level = 8 }
+	532.1.1 = {	change_development_level = 9 }
+	632.1.1 = {	change_development_level = 12 }
+	768.1.1 = {	change_development_level = 13 }
+
+	361.1.1 = {
+		holder = augustamnike_01
+		de_jure_liege = d_delta
+		liege = d_delta
+	}
+	395.1.17 = {
+		holder = augustamnike_04
+		liege = d_delta
+	}
+	476.1.1 = {
+		holder = augustamnike_03
+		liege = k_aegyptus
+	}
+	762.1.1 = {
+		liege = "k_egypt"
+	}
+	762.1.1 = {
+		holder = 210009
+	}
+}
+
+
+c_giza = {
+
+	356.1.1 = {
+		holder = sebastianos_01
+		liege = "e_roman_empire"
+		de_jure_liege = d_alexandria
+	}
+	362.1.1 = {
+		holder = aegyptus_01
+		liege = e_byzantium
+	}
+	393.1.1 = {
+		holder = aegyptus_18
+	}
+	475.1.1 = {
+		holder = aegyptus_68
+	}
+	762.1.1 = {
+		liege = "d_alexandria"
+	}
+	762.1.1 = {
+		holder = 210023
+	}
+
+}
+
+
+c_fayyum = {
+
+	361.1.2 = {
+		holder = kemetic_misc_003
+		de_jure_liege = d_al-wahat
+		liege = d_al-wahat
+	}
+	395.1.1 = {
+		holder = arcadia_02
+	}
+	476.1.1 = {
+		holder = aegyptian_misc_011
+		#liege = k_aegyptus
+	}
+	532.1.1 = {
+		holder = kemetic_misc_001
+		liege = d_al-wahat
+	}
+	762.1.1 = {
+		liege = "d_alexandria"
+	}
+	762.1.1 = {
+		holder = 210023
+	}
+}
+
+d_al-wahat = {
+	361.1.1 = {	change_development_level = 6 }
+	361.1.1 = {
+		holder = arcadia_01
+		de_jure_liege = k_aegyptus
+		liege = k_aegyptus
+		name = ARCADIA
+	}
+	395.1.1 = {
+		holder = arcadia_02
+	}
+	476.1.1 = {
+		holder = arcadia_03
+		liege = k_aegyptus
+	}
+	532.1.1 = {
+		holder = aegyptian_misc_002
+		liege = k_aegyptus
+	}
+}
+
+c_bahnasa = {
+	361.1.1 = {
+		holder = arcadia_01
+		de_jure_liege = d_al-wahat
+		liege = d_al-wahat
+	}
+	395.1.1 = {
+		holder = arcadia_02
+	}
+	476.1.1 = {
+		holder = arcadia_03
+		liege = k_aegyptus
+	}
+	762.1.1 = {
+		liege = "d_al-said"
+	}
+	762.1.1 = {
+		holder = 210022
+	}
+}
+
+c_bahriya = {
+	361.1.1 = {	change_development_level = 3 }
+	476.1.1 = {	change_development_level = 4 }
+	532.1.1 = {	change_development_level = 5 }
+	632.1.1 = {	change_development_level = 6 }
+	768.1.1 = {	change_development_level = 7 }
+	361.1.1 = {
+		holder = arcadia_01
+		de_jure_liege = d_al-wahat
+		liege = d_al-wahat
+	}
+	395.1.1 = {
+		holder = arcadia_02
+	}
+	476.1.1 = {
+		holder = arcadia_03
+		liege = k_aegyptus
+	}
+	762.1.1 = {
+		liege = "d_al-said"
+	}
+	762.1.1 = {
+		holder = 210022
+	}
+}
+
+
+c_farafra = {
+	361.1.1 = {	change_development_level = 3 }
+	476.1.1 = {	change_development_level = 4 }
+	532.1.1 = {	change_development_level = 5 }
+	632.1.1 = {	change_development_level = 6 }
+	768.1.1 = {	change_development_level = 7 }
+	361.1.1 = {
+		holder = arcadia_01
+		de_jure_liege = d_al-wahat
+		liege = d_delta
+	}
+	395.1.1 = {
+		holder = arcadia_02
+		de_jure_liege = d_al-wahat
+		liege = d_al-wahat
+	}
+	476.1.1 = {
+		holder = kemetic_misc_004
+		#liege = k_aegyptus
+	}
+	532.1.1 = {
+		holder = kemetic_misc_002
+		liege = d_al-wahat
+	}
+	762.1.1 = {
+		liege = "d_al-said"
+	}
+	762.1.1 = {
+		holder = 210022
+	}
+
+}
+
+
+c_dakhla = {
+	361.1.1 = {	change_development_level = 3 }
+	476.1.1 = {	change_development_level = 4 }
+	532.1.1 = {	change_development_level = 5 }
+	632.1.1 = {	change_development_level = 6 }
+	768.1.1 = {	change_development_level = 7 }
+	361.1.1 = {
+		holder = thebais_01
+		liege = d_al-said
+		de_jure_liege = d_al-said
+	}
+	395.1.1 = {
+		holder = thebais_02
+	}
+	476.1.1 = {
+		holder = kemetic_misc_005
+		#liege = k_aegyptus
+	}
+	532.1.1 = {
+		holder = kemetic_misc_006
+	}
+	762.1.1 = {
+		liege = "d_al-said"
+	}
+	762.1.1 = {
+		holder = 210022
+	}
+
+}
+
+
+c_kharga = {
+	361.1.1 = {	change_development_level = 3 }
+	476.1.1 = {	change_development_level = 4 }
+	532.1.1 = {	change_development_level = 5 }
+	632.1.1 = {	change_development_level = 6 }
+	768.1.1 = {	change_development_level = 7 }
+	361.1.1 = {
+		holder = thebais_01
+		de_jure_liege = d_al-said
+	}
+	395.1.1 = {
+		holder = thebais_02
+	}
+	476.1.1 = {
+		holder = thebais_03
+		liege = k_aegyptus
+	}
+	762.1.1 = {
+		liege = "d_al-said"
+	}
+	762.1.1 = {
+		holder = 210022
+	}
+}
+
+
+d_al-said = {
+	361.1.1 = {	change_development_level = 3 }
+	476.1.1 = {	change_development_level = 4 }
+	532.1.1 = {	change_development_level = 5 }
+	632.1.1 = {	change_development_level = 6 }
+	768.1.1 = {	change_development_level = 7 }
+	361.1.1 = {
+		holder = thebais_01
+		de_jure_liege = k_aegyptus
+		liege = k_aegyptus
+		name = THEBAIDA
+	}
+	395.1.1 = {
+		holder = thebais_02
+	}
+	476.1.1 = {
+		holder = thebais_03
+		liege = k_aegyptus
+	}
+	532.1.1 = {
+		holder = aegyptian_misc_004
+		liege = k_aegyptus
+	}
+	762.1.1 = {
+		liege = "k_egypt"
+	}
+	762.1.1 = {
+		holder = 210022
+	}
+}
+
+
+c_qus = {
+	361.1.1 = {	change_development_level = 8 }
+	361.1.1 = {
+		holder = thebais_01
+	}
+	395.1.1 = {
+		holder = thebais_02
+	}
+	476.1.1 = {
+		holder = thebais_03
+		liege = k_aegyptus
+	}
+	762.1.1 = {
+		liege = "d_al-said"
+	}
+	762.1.1 = {
+		holder = 210022
+	}
+
+}
+
+c_ushmun = {
+	361.1.1 = {	change_development_level = 6 }
+	476.1.1 = {	change_development_level = 7 }
+	532.1.1 = {	change_development_level = 8 }
+	632.1.1 = {	change_development_level = 9 }
+	768.1.1 = {	change_development_level = 10 }
+	361.1.1 = {
+		holder = arcadia_01
+		de_jure_liege = d_al-wahat
+		liege = d_al-wahat
+	}
+	395.1.1 = {
+		holder = arcadia_02
+	}
+	395.1.1 = {
+		holder = arcadia_02
+	}
+	476.1.1 = {
+		holder = arcadia_03
+		liege = k_aegyptus
+	}
+	762.1.1 = {
+		liege = "d_al-said"
+	}
+	762.1.1 = {
+		holder = 210022
+	}
+}
+
+
+c_asyut = {
+	361.1.1 = {	change_development_level = 10 }
+	361.1.1 = {
+		holder = aegyptus_75
+		liege = d_al-said
+	}
+	395.1.1 = {
+		holder = aegyptus_76
+	}
+	476.1.1 = {
+		holder = thebais_03
+		liege = k_aegyptus
+	}
+	762.1.1 = {
+		liege = "d_al-said"
+	}
+	762.1.1 = {
+		holder = 210022
+	}
+}
+
+
+c_aswan = {
+	361.1.1 = {	change_development_level = 8 }
+	476.1.1 = {	change_development_level = 9 }
+	532.1.1 = {	change_development_level = 10 }
+	632.1.1 = {	change_development_level = 11 }
+	768.1.1 = {	change_development_level = 13 }
+	330.1.1 = {
+		holder = 990904
+	}
+	360.1.1 = {
+		holder = 990902
+	}
+	361.1.1 = {
+		liege = d_al-said
+	}
+	380.1.1 = {
+		holder = 990901
+	}
+	476.1.1 = {
+		holder = thebais_03
+		liege = k_aegyptus
+	}
+	762.1.1 = {
+		liege = "d_al-said"
+	}
+	762.1.1 = {
+		holder = 210022
+	}
+}
+
+
+c_qusayr = {
+	361.1.1 = {	change_development_level = 8 }
+	361.1.2 = {
+		holder = aegyptian_misc_006
+		de_jure_liege = d_al-said
+		liege = d_al-said
+	}
+	# 395.1.1 = {
+	# 	holder = thebais_02
+	# }
+	476.1.1 = {
+		holder = aegyptian_misc_010
+		#liege = k_aegyptus
+	}
+	532.1.1 = {
+		holder = aegyptian_misc_005
+		liege = d_al-said
+	}
+	762.1.1 = {
+		liege = "d_al-said"
+	}
+	762.1.1 = {
+		holder = bedouin0034
+	}
+}
+
+
+d_eastern_desert = {
+	361.1.1 = {
+		change_development_level = 2
+	}
+}
+
+
+c_jabal_quzlum = {
+	361.1.1 = {	change_development_level = 3 }
+	361.1.2 = {
+		holder = blemmyes_26
+		de_jure_liege = d_al-said
+		liege = d_al-said
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = roman_government
+				}
+			}
+		}
+	}
+	# 395.1.1 = {
+	# 	holder = thebais_02
+	# }
+	476.1.1 = {
+		holder = blemmyes_27
+		# government = administrative_government
+		# effect = {		
+		# 	if = {
+		# 		limit = {
+		# 			exists = holder
+		# 			NOT = { has_dlc_feature = roads_to_power }
+		# 		}
+		# 		holder = {
+		# 			change_government = imperial_government
+		# 			add_realm_law_skip_effects = single_heir_succession_law
+		# 		}
+		# 	}
+		# }
+		# liege = k_aegyptus
+	}
+	532.1.1 = {
+		holder = aegyptian_misc_005
+		liege = d_al-said
+	}
+	762.1.1 = {
+		liege = "d_al-said"
+	}
+
+}
+
+
+d_sinai = {
+	361.1.1 = {	change_development_level = 6 }
+	476.1.1 = {	change_development_level = 7 }
+	532.1.1 = {	change_development_level = 8 }
+	632.1.1 = {	change_development_level = 9 }
+	768.1.1 = {	change_development_level = 10 }
+}
+
+
+c_farama = {
+	361.1.1 = {
+		holder = augustamnike_01
+		de_jure_liege = d_delta
+	}
+	395.1.1 = {
+		holder = augustamnike_02
+	}
+	476.1.1 = {
+		holder = augustamnike_03
+	}
+}
+
+
+c_sinai = {
+	361.1.1 = {
+		holder = nabatean_001 # Obedianus, attested Nabatean chieftain
+		de_jure_liege = d_salutaris
+		liege = "d_salutaris"
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = imperial_government
+					add_realm_law_skip_effects = single_heir_succession_law
+			}
+		}
+	}
+	}
+	463.1.1 = {
+		holder = nabatean_002
+	}
+	522.1.1 = {
+		holder = nabatean_003
+		#liege = k_orientis
+	}
+	625.1.1 = {
+		holder = nabatean_004
+	}
+	762.1.1 = {
+		liege = "k_egypt"
+	}
+	762.1.1 = {
+		holder = 210024
+	}
+}
+
+
+c_firaun = {
+	361.1.1 = {
+		holder = nabatean_001 # Obedianus, attested Nabatean chieftain
+		de_jure_liege = d_salutaris
+		liege = "d_salutaris"
+	}
+	463.1.1 = {
+		holder = nabatean_002
+	}
+	522.1.1 = {
+		holder = nabatean_003
+	}
+	625.1.1 = {
+		holder = nabatean_004
+	}
+	762.1.1 = {
+		liege = "k_egypt"
+	}
+	762.1.1 = {
+		holder = 210024
+	}
+}
+

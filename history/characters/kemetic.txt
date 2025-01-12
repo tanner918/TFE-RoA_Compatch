@@ -1,0 +1,222 @@
+﻿# These people were the last Egyptian pagans and were holders of a temple in Philae near Aswan
+# They were a hereditary family of priests of Isis going back at least 3 generations
+# Nesmeterakhem made an inscription relating to Egyptian paganism in heiroglyphs in 394
+# Although Egyptian priets and demotic writing are attested in the 5th century CE, the 394 CE inscription is the last known one in hieroglyphics
+# Whether they are Egyptian or Nubian is also hard to know
+
+990901 = { # Nesmeterakhem, that Egyptian pagan dude
+	name = "Nesmeterakhem"
+	dynasty=dynasty_isis_priests
+	religion = "egyptian_pagan"
+	culture = "kemetic"
+	learning = 16
+	trait = education_learning_3
+	trait = zealous
+	father = 990902
+	mother = 990903
+	358.1.1 = {
+		birth = yes
+	}
+	420.1.1 = {
+		death = yes
+	}
+}
+
+990902 = { # Nesmeterpanakhet, Nesmeterakhem's father
+	name = "Nesmeterpanakhet"
+	dynasty=dynasty_isis_priests
+	religion = "egyptian_pagan"
+	culture = "kemetic"
+	trait = education_learning_3
+	father = 990904
+	336.1.1 = {
+		birth = yes
+	}
+	358.1.1 = {
+		add_spouse = 990903
+	}
+	380.1.1 = {
+		death = yes
+	}
+}
+
+990903 = { # Eseweret, Nesmeterakhem's mother
+	name = "Eseweret"
+	female = yes
+	religion = "egyptian_pagan"
+	culture = "kemetic"
+	339.1.1 = {
+		birth = yes
+	}
+	392.1.1 = {
+		death = yes
+	}
+}
+
+990904 = { # Pakhom, Nesmeterpanakhet's father
+	name = "Pakhom"
+	dynasty=dynasty_isis_priests
+	religion = "egyptian_pagan"
+	culture = "kemetic"
+	trait = education_learning_3
+	309.1.1 = {
+		birth = yes
+	}
+	360.1.1 = {
+		death = yes
+	}
+}
+
+
+#############################################################
+# 
+# OTHER KEMETIC CHARACTERS
+# 
+# Done by Cybrxkhan
+# 
+#############################################################
+
+# Isidorus, mysterious priest and rebel against the Romans c. 172-173 in the Nile Delta
+# Supposedly leader of the Boukoloi bandits/rebels
+# See here for more info: https://www.academia.edu/36906583/Boukoloi_Banditry_Greek_Perspectives_on_Native_Resistance
+kemetic_001 = { 
+	name = "Isidorus"
+	dynasty = dynasty_Boukoloi
+	religion = "egyptian_pagan"
+	culture = "kemetic"
+	trait = education_learning_2
+	trait = peasant_leader # Rebel
+	trait = brave 		# Said to be brave
+	trait = zealous 	# A priest
+	trait = vengeful
+	139.1.1 = { # This is what Wikipedia says but I dunno how true it is, but I guess it's a good a guess as any
+		birth = yes
+	}
+	173.1.1 = {
+		death = yes
+	}
+}
+
+# Pamprepius, pagan philosopher, poet, and rebel against Emperor Zeno
+# kemetic_002 = { 
+# 	name = "Pamprepius"
+# 	dynasty = TFE_dynasty_Pamprepius
+# 	religion = "hellenic_pagan" # Studied Neoplatonism
+# 	culture = "kemetic"
+# 	diplomacy = 6
+# 	intrigue = 7
+# 	learning = 6
+# 	trait = education_learning_3
+# 	trait = beauty_bad_2 		# Said to be ugly
+# 	trait = intellect_good_2 	# Said to be very smart
+# 	trait = poet 				# Poet
+# 	trait = deceitful 			# Called a charlatan by the astrologer Rhetorius, described as treacherous by Malchus
+# 	trait = lustful 			# Called a libertine by the astrologer Rhetorius
+# 	trait = zealous 			# Staunchly pagan
+# 	trait = arrogant 			# Described by Malchus as arrogant
+# 	440.9.29 = { # His birth and death dates are known with uncommon certainty for figures in this period, due to the horoscope by the astrologer Rhetorius
+# 		birth = yes
+#		effect = { add_character_flag = do_not_generate_starting_family }
+# 	}
+# 	474.1.1 = { # Married around or after 473
+# 		add_spouse = kemetic_003
+# 	}
+# 	484.11.1 = {
+# 		death = yes
+# 	}
+# }
+
+# Pamprepius' wealthy wife from Athens, name unknown
+kemetic_003 = { 
+	name = "Apollonia"
+	female = yes
+	religion = "hellenic_pagan"
+	culture = "greek"
+	trait = education_stewardship_4 # Wealthy wife of Pamprepius
+	448.12.26 = { # Unknown
+		birth = yes
+	}
+	509.3.17 = { # Unknown
+		death = yes
+	}
+}
+
+#############################################################
+# 
+# MISC PLACEHOLDERS
+# 
+# Done by Cybrxkhan
+# 
+#############################################################
+
+kemetic_misc_001 = { 
+	name = "Pigol"
+	culture = kemetic
+	religion = coptic
+	499.11.3 = {
+		birth = yes
+	}
+	549.2.24 = {
+		death = yes
+	}
+}
+
+kemetic_misc_002 = { 
+	name = "Usire"
+	culture = kemetic
+	religion = coptic
+	502.4.6 = {
+		birth = yes
+	}
+	571.12.19 = {
+		death = yes
+	}
+}
+
+kemetic_misc_003 = { 
+	name = "Apahour"
+	culture = kemetic
+	religion = carpocratian
+	329.11.4 = {
+		birth = yes
+	}
+	382.6.27 = {
+		death = yes
+	}
+}
+
+kemetic_misc_004 = { 
+	name = "Rami"
+	culture = kemetic
+	religion = coptic
+	454.5.4 = {
+		birth = yes
+	}
+	501.9.3 = {
+		death = yes
+	}
+}
+
+kemetic_misc_005 = { 
+	name = "Athanasios"
+	culture = kemetic
+	religion = coptic
+	456.7.8 = {
+		birth = yes
+	}
+	511.11.2 = {
+		death = yes
+	}
+}
+
+kemetic_misc_006 = { 
+	name = "Nakat"
+	culture = kemetic
+	religion = coptic
+	504.3.16 = {
+		birth = yes
+	}
+	569.8.17 = {
+		death = yes
+	}
+}

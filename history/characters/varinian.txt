@@ -1,0 +1,97 @@
+﻿varini_01 = {
+	name = "Sigibald"
+	dynasty = 99939002
+	culture = "varinian"
+	religion = "gothic_pagan"
+	340.1.1 = {
+		birth = yes
+	}
+	380.1.1 = {
+		death = yes
+	}
+}
+varini_02 = {
+	name = "Archembald"
+	dynasty = 99939002
+	culture = "varinian"
+	religion = "gothic_pagan"
+	father = varini_01
+	368.1.1 = {
+		birth = yes
+	}
+	409.1.1 = {
+		death = yes
+	}
+}
+varini_03 = {
+	name = "Berthachar"
+	dynasty = 99939002
+	culture = "varinian"
+	religion = "gothic_pagan"
+	father = varini_02
+	395.1.1 = {
+		birth = yes
+	}
+	460.1.1 = {
+		death = yes
+	}
+}
+varini_04 = {
+	name = "Chariobald"
+	dynasty = 99939002
+	culture = "varinian"
+	religion = "gothic_pagan"
+	father = varini_03
+	435.1.1 = {
+		birth = yes
+	}
+	510.1.1 = {
+		death = yes
+	}
+}
+varini_05 = {
+	name = "Hermangisel"
+	dynasty = 99939002
+	culture = "varinian"
+	religion = "gothic_pagan"
+	father = varini_04
+	485.1.1 = {
+		birth = yes
+	}
+	532.1.1 = {
+		add_spouse = 997016 # merovingian princess
+	}
+	540.1.1 = {
+		death = yes
+	}
+}
+varini_06 = {
+	name = "Radgis"
+	dynasty = 99939002
+	culture = "varinian"
+	religion = "gothic_pagan"
+	father = varini_05
+	520.1.1 = {
+		birth = yes
+	}
+	541.1.1 = {
+		add_spouse = 997016 # merovingian princess
+	}
+	590.1.1 = {
+		death = yes
+	}
+}
+suevi_01 = {
+	name = "Agiulf"
+	religion = "arianism"
+	culture = "varinian"
+	trait = impatient
+	trait = wrathful
+	trait = greedy
+	420.1.1 = {
+		birth = yes
+	}
+	457.1.1 = {
+		death = yes
+	}
+}

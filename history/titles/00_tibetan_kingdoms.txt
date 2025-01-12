@@ -1,0 +1,151 @@
+﻿k_u = {
+	# 381.1.1 = {
+	# 	holder = 1240001
+	# 	government = nomadic_government
+	# }
+}
+c_zetang = {
+	381.1.1 = {
+		holder = 1240001
+		government = nomadic_government
+	}
+}
+k_tsang = {
+	# 381.1.1 = {
+	# 	holder = 1240002
+	# 	government = nomadic_government
+	# }
+}
+c_xigaze = {
+	381.1.1 = {
+		holder = 1240002
+		government = nomadic_government
+	}
+}
+
+d_yarlung = {
+	361.1.1 = { change_development_level = 2 }
+	476.1.1 = { change_development_level = 3 }
+	532.1.1 = { change_development_level = 4 }
+}
+
+
+#c_nyingchi = {
+#	532.1.1 = {
+#		holder = bodpa_misc_001
+#		liege = d_nyingchi
+#	}
+#}
+
+d_lhasa = {
+	361.1.1 = { change_development_level = 2 }
+	476.1.1 = { change_development_level = 3 }
+	532.1.1 = { change_development_level = 4 }
+	# 498.1.1={
+	# 	holder = 247070
+	# }
+	# 534.1.1={
+	# 	holder = 247071
+	# }
+	# 579.1.1={
+	# 	liege = "k_u"
+	# 	holder = 247072
+	# }
+	606.1.1={
+		holder = 247073
+	}
+	619.1.1={
+		liege = "e_tibet"
+		holder = 247075
+	}
+}
+
+c_lhasa = {
+	532.1.1 = {
+		holder = bodpa_misc_002
+	}
+}
+
+c_gyama = {
+	532.1.1 = {
+		holder = sumpa_misc_001
+		#liege = d_lhasa
+	}
+}
+
+
+c_nyemo = {
+	532.1.1 = {
+		holder = sumpa_misc_002
+		#liege = d_lhasa
+	}
+}
+
+c_damxung = {
+	532.1.1 = {
+		holder = sumpa_misc_002
+		#liege = d_lhasa
+	}
+}
+
+c_lhunzhub = {
+	532.1.1 = {
+		holder = bodpa_misc_002
+		liege = d_lhasa
+	}
+}
+
+
+
+d_nyingchi = {
+	# 498.1.1={
+	# 	holder = 247070
+	# }
+	# 534.1.1={
+	# 	holder = 247071
+	# }
+	579.1.1={
+		liege = "k_u"
+		holder = 247072
+	}
+	606.1.1={
+		holder = 247073
+	}
+	619.1.1={
+		liege = "e_tibet"
+		holder = 247075
+	}
+}
+
+
+#c_nyingchi = {
+#	532.1.1 = {
+#		holder = bodpa_misc_001
+#		liege = d_nyingchi
+#	}
+#}
+
+c_gongbo = {
+	532.1.1 = {
+		holder = sumpa_misc_001
+		#liege = d_nyingchi
+	}
+}
+
+d_nyima = {
+	532.1.1 = {
+		holder = zhangzhung_misc_06
+	}
+}
+
+d_ngamring = {
+	532.1.1 = {
+		holder = tsangpa_misc_01
+	}
+}
+
+d_xigaze = {
+	532.1.1 = {
+		holder = tsangpa_misc_02
+	}
+}

@@ -1,0 +1,311 @@
+﻿#### Local Types ####
+@administration_1 = "gfx/interface/icons/culture_innovations/innovation_administration_01.dds"
+@administration_2 = "gfx/interface/icons/culture_innovations/innovation_administration_02.dds"
+@administration_3 = "gfx/interface/icons/culture_innovations/innovation_administration_03.dds"
+@civil_construction_1 = "gfx/interface/icons/culture_innovations/innovation_civil_construction_01.dds"
+@civil_construction_2 = "gfx/interface/icons/culture_innovations/innovation_civil_construction_02.dds"
+@leadership_1 = "gfx/interface/icons/culture_innovations/innovation_leadership_01.dds"
+@leadership_2 = "gfx/interface/icons/culture_innovations/innovation_leadership_02.dds"
+@raised_banner = "gfx/interface/icons/culture_innovations/innovation_raised_banner.dds"
+@fortifications = "gfx/interface/icons/culture_innovations/innovation_fortifications.dds"
+@siege_weapons = "gfx/interface/icons/culture_innovations/innovation_siege_weapons.dds"
+@levy_building = "gfx/interface/icons/culture_innovations/innovation_levy_building.dds"
+@maa_01 = "gfx/interface/icons/culture_innovations/innovation_maa_01.dds"
+@maa_02 = "gfx/interface/icons/culture_innovations/innovation_maa_02.dds"
+@weapons_and_armor_01 = "gfx/interface/icons/culture_innovations/innovation_weapons_and_armor_01.dds"
+@weapons_and_armor_02 = "gfx/interface/icons/culture_innovations/innovation_weapons_and_armor_02.dds"
+@knight = "gfx/interface/icons/culture_innovations/innovation_knight.dds"
+@hird = "gfx/interface/icons/culture_innovations/innovation_hird.dds"
+@longboats = "gfx/interface/icons/culture_innovations/innovation_longboats.dds"
+@majesty_01 = "gfx/interface/icons/culture_innovations/innovation_majesty_01.dds"
+@majesty_02 = "gfx/interface/icons/culture_innovations/innovation_majesty_02.dds"
+@majesty_03 = "gfx/interface/icons/culture_innovations/innovation_majesty_03.dds"
+@nobility_01 = "gfx/interface/icons/culture_innovations/innovation_nobility_01.dds"
+@nobility_02 = "gfx/interface/icons/culture_innovations/innovation_nobility_02.dds"
+@nobility_03 = "gfx/interface/icons/culture_innovations/innovation_nobility_03.dds"
+@nobility_04 = "gfx/interface/icons/culture_innovations/innovation_nobility_04.dds"
+@misc_inventions = "gfx/interface/icons/culture_innovations/innovation_misc_inventions.dds"
+
+@camel = "gfx/interface/icons/culture_innovations/innovation_camel.dds"
+@elephant = "gfx/interface/icons/culture_innovations/innovation_elephant.dds"
+@special_maa_01 = "gfx/interface/icons/culture_innovations/innovation_special_maa_01.dds"
+@special_maa_02 = "gfx/interface/icons/culture_innovations/innovation_special_maa_02.dds"
+
+@innovation_welfare_02 = "gfx/interface/icons/culture_innovations/innovation_welfare_02.dds"
+
+# MILITARY
+
+innovation_catapult = {
+	group = culture_group_military
+	culture_era = culture_era_late_antiquity
+	icon = @siege_weapons
+
+	unlock_maa = onager
+
+	flag = global_regular
+	flag = late_antiquity_era_regular
+}
+innovation_bannus = {
+	group = culture_group_military
+	culture_era = culture_era_late_antiquity
+	icon = @raised_banner
+
+	custom = unlock_march_contract
+	custom = unlock_castellan_contract
+
+    character_modifier = {
+		levy_reinforcement_rate = 0.15
+	}
+
+	flag = global_regular
+	flag = late_antiquity_era_regular
+}
+innovation_quilted_armor = {
+	group = culture_group_military
+	culture_era = culture_era_late_antiquity
+	icon = @weapons_and_armor_02
+
+	custom = unlock_maa_armored_footmen
+
+	custom = eligible_accolade_vanguard_attribute
+
+	flag = global_regular
+	flag = late_antiquity_era_regular
+}
+
+innovation_equestrian_husbandry = {
+	group = culture_group_military
+	culture_era = culture_era_late_antiquity
+	icon = @maa_02
+
+	maa_upgrade = {
+		type = light_cavalry
+		damage = 3
+		toughness = 3
+	}
+	maa_upgrade = {
+		type = heavy_cavalry
+		damage = 3
+		toughness = 3
+	}
+
+	flag = global_regular
+	flag = late_antiquity_era_regular
+}
+
+innovation_chess_theory = {
+	group = culture_group_military
+	culture_era = culture_era_late_antiquity
+	icon = @leadership_2
+
+	character_modifier = {
+		max_combat_roll = 2
+	}
+
+	flag = global_regular
+	flag = late_antiquity_era_regular
+}
+
+# Moved from early medieval
+innovation_mangonel = {
+	group = culture_group_military
+	culture_era = culture_era_late_antiquity
+	icon = @siege_weapons
+
+	unlock_maa = mangonel
+
+	custom = eligible_accolade_besieger_attribute
+
+	flag = global_regular
+	flag = late_antiquity_era_regular
+}
+
+innovation_fortified_urban_centers = {
+	group = culture_group_military
+	culture_era = culture_era_late_antiquity
+	icon = @fortifications
+
+	character_modifier = {
+		build_speed = -0.1
+	}
+
+	flag = global_regular
+	flag = late_antiquity_era_regular
+}
+
+innovation_military_manuals = {
+	group = culture_group_military
+	culture_era = culture_era_late_antiquity
+	icon = @levy_building
+
+	character_modifier = {
+		men_at_arms_maintenance = -0.05
+		levy_maintenance = -0.05
+		levy_reinforcement_rate = 0.1
+	}
+
+	flag = global_regular
+	flag = late_antiquity_era_regular
+}
+
+# CIVIC
+
+
+innovation_negative_numbers = {
+	group = culture_group_civic
+	culture_era = culture_era_late_antiquity
+	icon = @administration_1
+
+	character_modifier = {
+		domain_tax_mult = 0.05
+		development_growth_factor = 0.05
+	}
+
+	flag = global_regular
+	flag = late_antiquity_era_regular
+}
+
+innovation_compass = {
+	group = culture_group_civic
+	culture_era = culture_era_late_antiquity
+	icon = @misc_inventions
+
+	character_modifier = {
+		naval_movement_speed_mult = 0.05
+		character_travel_speed_mult = 0.1
+		character_travel_safety_mult = 0.05
+	}
+
+	flag = global_regular
+	flag = late_antiquity_era_regular
+}
+
+innovation_humoral_theory = {
+	group = culture_group_civic
+	culture_era = culture_era_late_antiquity
+	icon = @innovation_welfare_02
+
+	character_modifier = {
+		negate_health_penalty_add = 0.1
+		epidemic_resistance = 3
+	}
+
+	flag = global_regular
+	flag = late_antiquity_era_regular
+}
+
+innovation_legal_codes = {
+	group = culture_group_civic
+	culture_era = culture_era_late_antiquity
+	icon = @administration_3
+
+	character_modifier = {
+		development_growth = 0.1
+		legitimacy_gain_mult = 0.02
+	}
+
+	flag = global_regular
+	flag = late_antiquity_era_regular
+}
+
+
+
+
+### Regional and Cultural
+
+innovation_naval_carpentry = {
+	group = culture_group_civic
+	culture_era = culture_era_late_antiquity
+	icon = @longboats
+
+	character_modifier = {
+		embarkation_cost_mult = -0.1
+		naval_movement_speed_mult = 0.05
+	}
+
+	flag = global_regional
+	flag = late_antiquity_era_regular
+}
+
+innovation_table_of_princes = {
+	group = culture_group_regional
+	culture_era = culture_era_late_antiquity
+	icon = @nobility_01
+	
+	potential = {
+		OR = {
+			#West Slavic
+			this = culture:czech
+			this = culture:slovien
+		}
+	}
+	
+	unlock_law = single_heir_dynasty_house
+	custom = unlock_single_heir_dynasty_house_changing
+	
+	flag = global_regional
+	flag = late_antiquity_era_regional
+}
+
+innovation_officer_efficiency = {
+	group = culture_group_civic
+	culture_era = culture_era_late_antiquity
+	icon = @administration_2
+
+	character_modifier = {
+		domain_limit = 1
+		domain_tax_mult = 0.05
+	}
+	custom = unlocks_office_authority_unlock
+
+	flag = global_regular
+	flag = late_antiquity_era_regular
+}
+
+innovation_feudalism = {
+	group = culture_group_civic
+	culture_era = culture_era_late_antiquity
+	icon = @majesty_02
+
+	character_modifier = {
+		vassal_limit = 3
+		vassal_tax_mult = 0.05
+		feudal_government_tax_contribution_add = 0.05
+	}
+	custom = unlocks_feudalism_spread
+
+	flag = global_regular
+	flag = late_antiquity_era_regular
+}
+
+
+### Regional
+
+innovation_nsibidi_pictograms = {
+	group = culture_group_regional
+	culture_era = culture_era_late_antiquity
+	region = TFE_region_southerneastern_nigeria
+	icon = @administration_1
+
+	character_modifier = {
+		owned_scheme_secrecy_add = 5
+		vassal_opinion = 5
+	}
+
+	flag = global_regional
+	flag = late_antiquity_era_regional
+}
+
+innovation_sky_lanterns = {
+	group = culture_group_regional
+	culture_era = culture_era_late_antiquity
+	region = TFE_region_china
+	icon = @misc_inventions
+
+	character_modifier = {
+		siege_morale_loss = 0.1
+	}
+
+	flag = global_regional
+	flag = late_antiquity_era_regional
+}

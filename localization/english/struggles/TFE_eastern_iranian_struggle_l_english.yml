@@ -1,0 +1,132 @@
+﻿l_english:
+ TFE_eastern_iranian_struggle_region: "Greater Khorasan"
+ TFE_struggle_eastern_iranian_ends_tt:0 "The [eastern_iranian_struggle|E] ends"
+
+ # Phases
+ eastern_iranian_struggle: "$game_concept_eastern_iranian_struggle$"
+ struggle_TFE_eastern_iranian_phase_expansion: "Expansion"
+ struggle_TFE_eastern_iranian_phase_expansion_desc: "$game_concept_struggle_phase_eastern_iranian_expansion_desc$"
+ struggle_parameter_cheaper_nomadic_migrations_within_struggle_region: "Involved rulers have #P cheaper#! nomadic migrations"
+ struggle_parameter_more_nomadic_migration_armies: "Involved rulers have #P more#! special troops when migrating"
+ struggle_TFE_eastern_iranian_phase_hostility: "Hostility"
+ struggle_TFE_eastern_iranian_phase_hostility_desc: "$game_concept_struggle_phase_eastern_iranian_hostility_desc$"
+ struggle_TFE_eastern_iranian_phase_development: "Development"
+ struggle_TFE_eastern_iranian_phase_development_desc: "$game_concept_struggle_phase_eastern_iranian_development_desc$"
+ struggle_parameter_struggle_cheaper_urbanize_silk_road_decision: "Involved rulers gain cheaper access to the #V Urbanize The Silk Road Decision#!"
+ struggle_TFE_eastern_iranian_phase_compromise: "Negotiation"
+ struggle_TFE_eastern_iranian_phase_compromise_desc: "$game_concept_struggle_phase_eastern_iranian_compromise_desc$"
+
+ # Ending decisions
+
+ # Domination
+ struggle_eastern_iranian_ending_domination_decision: "[ROOT.Char.GetPrimaryTitle.GetAdjectiveNoTooltip] Dominance"
+ struggle_eastern_iranian_ending_domination_decision_desc: "It is time for a strong leader to stablize this region of the Silk Road through military and political might. [GetGeographicalRegion('TFE_eastern_iranian_struggle_region').GetName] will be united under a [ROOT.Char.GetCulture.GetNameNoTooltip] [ROOT.Char.Custom('GetQueenKing')|l] flying the [ROOT.Char.GetPrimaryTitle.GetAdjectiveNoTooltip] banner!"
+ struggle_eastern_iranian_ending_domination_decision_tooltip: "End the $eastern_iranian_struggle$"
+ struggle_eastern_iranian_ending_domination_decision_confirm: "$struggle_eastern_iranian_ending_domination_decision_tooltip$"
+
+ # Negotiation
+ struggle_eastern_iranian_ending_compromise_decision:1 "Decentralized Polities"
+ struggle_eastern_iranian_ending_compromise_decision_desc:0 "It is increasingly clear that in the wake of the Kushan Empire's collapse, no power has been able to fullly control [GetGeographicalRegion('TFE_eastern_iranian_struggle_region').GetName]. It is time to accept that this region was never meant to be united; we should instead be content with thriving off the portion of the Silk Road we rule over."
+ struggle_eastern_iranian_ending_compromise_decision_tooltip:0 "$struggle_eastern_iranian_ending_domination_decision_tooltip$"
+ struggle_eastern_iranian_ending_compromise_decision_confirm:0 "$struggle_eastern_iranian_ending_domination_decision_confirm$"
+ struggle_eastern_iranian_ending_compromise_decision_correct_phase_tt: "The current [struggle_phase|E] is the [struggle_phase_eastern_iranian_compromise|E]"
+ struggle_eastern_iranian_ending_compromise_decision_kingdom_tt:0 "You [hold|E] and [completely_control|E] any [de_jure|E] [kingdom|E] of [GetTitleByKey('e_persia').GetNameNoTier] ([SCOPE.ScriptValue('britannia_struggle_ending_kingdom_counter_value')|0]/[SCOPE.ScriptValue('britannia_struggle_conciliation_kingdom_total_value')|0])"
+ #struggle_eastern_iranian_ending_compromise_decision_region_tt:0 "You control less than [SCOPE.ScriptValue('persia_struggle_compromise_owned_percent_value')|0]% of the [GetGeographicalRegion('TFE_eastern_iranian_struggle_region').GetName] [region|E] (Current: [SCOPE.ScriptValue('struggle_persia_ending_compromise_decision_region_owned_percent_value')|0]%)"
+ struggle_eastern_iranian_ending_compromise_decision_other_region_tt:0 "No other [independent|E] [struggle_involved|E] [ruler|E] controls [SCOPE.ScriptValue('persia_struggle_compromise_owned_percent_value')|0]% or more of the [GetGeographicalRegion('TFE_eastern_iranian_struggle_region').GetName] [region|E]"
+ struggle_eastern_iranian_ending_compromise_decision_opinion_tt:0 "All other [independent|E] [struggle_involved|E] [rulers|E] have at least [SCOPE.ScriptValue('struggle_persia_ending_compromise_decision_opinion_value')|0] [opinion|E] of you or are the target of a [strong_hook|E] ([SCOPE.ScriptValue('struggle_persia_ending_compromise_decision_opinion_counter_value')|0]/[SCOPE.ScriptValue('struggle_eastern_iranian_ending_compromise_decision_independent_invloved_counter_value')|0])"
+ struggle_eastern_iranian_ending_compromise_decision_independent_tt:0 "No other [independent|E] [struggle_involved|E] [rulers|E] are [king|E] or [emperor|E] [rank|E] (Current: [SCOPE.ScriptValue('struggle_eastern_iranian_ending_compromise_decision_independent_counter_value')|0])"
+  struggle_eastern_iranian_ending_compromise_decision_interloper_tt:0 "More than [SCOPE.ScriptValue('persia_struggle_compromise_uninvolved_percent_value')]% of the [GetGeographicalRegion('TFE_eastern_iranian_struggle_region').GetName] [region|E] is held by [struggle_interloper|E] or [struggle_uninvolved|E] [rulers|E] (Current: [SCOPE.ScriptValue('struggle_eastern_iranian_ending_compromise_decision_region_interloper_percent_value')|1]%)"
+ tfe_iranian_struggle_compromise_create_new_kingdoms_tt:0 "Every [independent|E] or separated [duchy|E] in the [GetGeographicalRegion('TFE_eastern_iranian_struggle_region').GetName] [region|E] becomes a [de_jure|E] [kingdom|E]"
+ tfe_iranian_struggle_compromise_create_new_empires_tt:1 "Every [de_jure|E] [kingdom|E] in the [GetGeographicalRegion('TFE_eastern_iranian_struggle_region').GetName] [region|E] with more than [EmptyScope.ScriptValue('fp2_struggle_compromise_ending_minimal_empire_size')|0] [counties|E] becomes a [de_jure|E] [empire|E]. The remaining [kingdoms|E] will fall under the [de_jure|E] of a neighboring [empire|E]."
+ tfe_iranian_struggle_compromise_new_de_jure_kingdoms_tt:1 "Most [de_jure|E] [duchies|E] in the [GetGeographicalRegion('TFE_eastern_iranian_struggle_region').GetName] [region|E] will become [de_jure|E] [kingdoms|E] under [GetTitleByKey('e_turan').GetNameNoTier]. [holders|E] of the [duchy|E] [titles|E] who do not have [kingdoms|E] or [empires|E] of their own will gain the newly created [kingdoms|E]."
+
+ # Silk Road/Prosperity
+ struggle_eastern_iranian_ending_silk_road_decision: "Silk Road Prosperity"
+ struggle_eastern_iranian_ending_silk_road_decision_desc: "The true path to power in [GetGeographicalRegion('TFE_eastern_iranian_struggle_region').GetName] lies not through senseless war, but economic growth and the sophistication of our society. We will spread [ROOT.Char.GetPrimaryTitle.GetAdjectiveNoTooltip] influence through trade, culture, and political savvy."
+ struggle_eastern_iranian_ending_silk_road_decision_tooltip: "$struggle_eastern_iranian_ending_domination_decision_tooltip$"
+ struggle_eastern_iranian_ending_silk_road_decision_confirm: "$struggle_eastern_iranian_ending_domination_decision_confirm$"
+
+ # Ending Bonuses 
+ struggle_eastern_iranian_ending_bonus_conversion_tt:1 "$task_conversion$ and/or $task_promote_culture$ [councillor_tasks|E] speed in the [GetGeographicalRegion('TFE_eastern_iranian_struggle_region').GetName] [region|E]: #P +50%#!"
+ struggle_eastern_iranian_dominance_modifier_list_tt:1 "Select one of the following modifiers for your [house|E]:\n$EFFECT_LIST_BULLET$[GetStaticModifier('struggle_eastern_iranian_house_offense_modifier').GetNameWithTooltip|L]\n$EFFECT_LIST_BULLET$[GetStaticModifier('struggle_eastern_iranian_house_defense_modifier').GetNameWithTooltip|L]\n$EFFECT_LIST_BULLET$[GetStaticModifier('struggle_eastern_iranian_house_political_modifier').GetNameWithTooltip|L]"
+ struggle_eastern_iranian_silk_road_prosperity_modifier_list_tt:1 "Select one of the following modifiers for your [house|E]:\n$EFFECT_LIST_BULLET$[GetStaticModifier('struggle_eastern_iranian_house_urban_modifier').GetNameWithTooltip|L]\n$EFFECT_LIST_BULLET$[GetStaticModifier('struggle_eastern_iranian_house_trade_modifier').GetNameWithTooltip|L]\n$EFFECT_LIST_BULLET$[GetStaticModifier('struggle_eastern_iranian_house_culture_modifier').GetNameWithTooltip|L]"
+
+ # Ending Requirements
+ struggle_eastern_iranian_ending_silk_road_county_req_tt:1 "Own at least [EmptyScope.ScriptValue('struggle_eastern_iranian_development_county_value')|0] [counties|E] in the [GetGeographicalRegion('TFE_eastern_iranian_struggle_region').GetName] [region|E], including your [capital|E], that has at least [EmptyScope.ScriptValue('struggle_eastern_iranian_development_req_value')|0] [development|E]"
+ struggle_eastern_iranian_ending_silk_road_region_tt:1 "You control more than [SCOPE.ScriptValue('struggle_eastern_iranian_ending_silk_road_owned_percent_value')|0]% of the [GetGeographicalRegion('TFE_eastern_iranian_struggle_region').GetName] [region|E] (Current: [SCOPE.ScriptValue('TFE_eastern_iranian_struggle_region_owned_percent_value')|0]%)"
+ struggle_eastern_iranian_ending_domination_region_tt:1 "You control more than [SCOPE.ScriptValue('struggle_eastern_iranian_ending_domination_owned_percent_value')|0]% of the [GetGeographicalRegion('TFE_eastern_iranian_struggle_region').GetName] [region|E] (Current: [SCOPE.ScriptValue('TFE_eastern_iranian_struggle_region_owned_percent_value')|0]%)"
+ struggle_eastern_iranian_ending_domination_decision_region_tt:2 "No other [independent|E] [struggle_involved|E] [ruler|E] controls more than [SCOPE.ScriptValue('fp2_struggle_hostility_region_percent_value')|0]% of [GetGeographicalRegion('TFE_eastern_iranian_struggle_region').GetName]"
+ struggle_eastern_iranian_ending_compromise_decision_region_tt: "You control less than 50% of the [GetGeographicalRegion('TFE_eastern_iranian_struggle_region').GetName] [region|E] (Current: [SCOPE.ScriptValue('TFE_eastern_iranian_struggle_region_owned_percent_value')|0]%)"
+ #struggle_eastern_iranian_ending_compromise_decision_other_region_tt:0 "No other [independent|E] [struggle_involved|E] [ruler|E] controls [SCOPE.ScriptValue('fp2_struggle_compromise_involved_percent_value')|0]% or more of the [GetGeographicalRegion('TFE_eastern_iranian_struggle_region').GetName] [region|E]"
+ #struggle_eastern_iranian_ending_compromise_decision_independent_tt:0 "No other [independent|E] [struggle_involved|E] [rulers|E] are [king|E] or [emperor|E] [rank|E] (Current: [SCOPE.ScriptValue('struggle_eastern_iranian_ending_compromise_decision_independent_counter_value')|0])"
+ #struggle_eastern_iranian_ending_compromise_decision_interloper_tt:0 "More than [SCOPE.ScriptValue('fp2_struggle_compromise_uninvolved_percent_value')]% of the [GetGeographicalRegion('TFE_eastern_iranian_struggle_region').GetName] [region|E] is held by [struggle_interloper|E] or [struggle_uninvolved|E] [rulers|E] (Current: [SCOPE.ScriptValue('struggle_eastern_iranian_ending_compromise_decision_region_interloper_percent_value')|1]%)"
+ struggle_eastern_iranian_ending_silk_road_correct_phase_tt:1 "The current [struggle_phase|E] is the [struggle_phase_eastern_iranian_expansion|E] or [struggle_phase_eastern_iranian_development|E]"
+ struggle_eastern_iranian_ending_domination_correct_phase_tt:1 "The current [struggle_phase|E] is the [struggle_phase_eastern_iranian_hostility|E] or [struggle_phase_eastern_iranian_development|E]"
+ #struggle_eastern_iranian_ending_compromise_decision_correct_phase_tt:1 "The current [struggle_phase|E] is the [struggle_phase_eastern_iranian_compromise|E]"
+
+ # Ending Events
+
+ # Dominance
+ eastern_iranian_struggle.1000.t:0 "$struggle_eastern_iranian_ending_domination_decision$"
+ eastern_iranian_struggle.1000.desc:1 "Through guile and deceit, as well as warfare and conquest, we have become the masters of [GetGeographicalRegion('TFE_eastern_iranian_struggle_region').GetName]. Thanks to [ROOT.Char.GetPrimaryTitle.GetAdjectiveNoTooltip] dominance, we have brought peace, freedom, justice, and security to a new Silk Road, one which will no longer be fought over by petty, squabbling kingdoms, tribes, and cities.\n\nAll that remains is to declare this victory and decide how to proceed with our rule."
+ eastern_iranian_struggle.1000.a:0 "All will tremble beneath our mighty armies!"
+ eastern_iranian_struggle.1000.b:0 "None will breach our impenetrable lands."
+ eastern_iranian_struggle.1000.c:0 "People will respect our intimidating authority."
+ eastern_iranian_struggle.1001.t:0 "$struggle_eastern_iranian_ending_domination_decision$"
+ eastern_iranian_struggle.1001.desc:1 "After years of chaos following the collapse of the Kushan Empire and the crises of the Roman, Persian, and Chinese Empires, the Silk Road in Central Asia is stabilizing once more thanks to [struggle_ender.GetPrimaryTitle.GetAdjectiveNoTooltip] power. [struggle_ender.GetTitledFirstName] now controls much of [GetGeographicalRegion('TFE_eastern_iranian_struggle_region').GetName], and has proclaimed [struggle_ender.GetHerselfHimself] the ultimate victor of the struggles set in motion long ago when the Silk Road fell into decline.\n\n"
+ eastern_iranian_struggle.1001.desc.closing.conquest:1 "The [struggle_ender.GetPrimaryTitle.GetAdjectiveNoTooltip] state, without a doubt, possesses one of the most fearsome militaries in the known world. As far as [struggle_ender.GetTitledFirstNameNoTooltip] is concerned, it is through such ruthless might that peace will reign in these lands."
+ eastern_iranian_struggle.1001.desc.closing.bulwark:1 "The [struggle_ender.GetPrimaryTitle.GetAdjectiveNoTooltip] state is wise in reinforcing its borders, to ensure that none of its enemies can attack and steal its hard-earned wealth. As far as [struggle_ender.GetTitledFirstNameNoTooltip] is concerned, a strong defense is the best offense."
+ eastern_iranian_struggle.1001.desc.closing.influence:1 "The [struggle_ender.GetPrimaryTitle.GetAdjectiveNoTooltip] state has essentially intimidated other polities into following its lead. [struggle_ender.GetTitledFirstNameNoTooltip] speaks softly but carries a big stick, as all answer to [struggle_ender.GetHerHim] now."
+ eastern_iranian_struggle.1001.desc.closing:1 "\n\nThough a new power rises along the Silk Road, only time will tell how long they will last."
+ eastern_iranian_struggle.1001.a:0 "And so, history continues along, as it always does."
+
+ # Silk Road Prosperity
+ eastern_iranian_struggle.1002.t:0 "$struggle_eastern_iranian_ending_silk_road_decision$"
+ eastern_iranian_struggle.1002.desc:1 "The people who live along the Silk Road know that the clearest path to power in these lands is through wealth and culture, not brute force. [GetGeographicalRegion('TFE_eastern_iranian_struggle_region').GetName] will no longer be fought over by petty, squabbling kingdoms, tribes, and cities. Instead, under [ROOT.Char.GetPrimaryTitle.GetAdjectiveNoTooltip] stewardship, we have encouraged growth and brought prosperity and abundance to many, and we will continue to do so.\n\nAll that remains is to declare this victory and decide how to spread our influence across the Silk Road."
+ eastern_iranian_struggle.1002.a:0 "The splendor and magnificence of our cities will be unmatched."
+ eastern_iranian_struggle.1002.b:0 "Our merchants and explorers will expand our Silk Road networks."
+ eastern_iranian_struggle.1002.c:0 "Others will admire the sophistication of our civilization."
+ eastern_iranian_struggle.1003.t:0 "$struggle_eastern_iranian_ending_silk_road_decision$"
+ eastern_iranian_struggle.1003.desc:1 "After years of chaos following the collapse of the Kushan Empire, and the crises of the Roman, Persian, and Chinese Empires, the Silk Road in Central Asia is stabilizing once more under [struggle_ender.GetPrimaryTitle.GetAdjectiveNoTooltip] influence. [struggle_ender.GetTitledFirstName] now leads a realm whose people, ideas, and goods are the envy of the world, and [struggle_ender.GetSheHe] has proclaimed [struggle_ender.GetHerselfHimself] the ultimate victor of the struggles set in motion long ago when the Silk Road fell into decline.\n\n"
+ eastern_iranian_struggle.1003.desc.closing.urban:1 "The [struggle_ender.GetPrimaryTitle.GetAdjectiveNoTooltip] state has built some of the grandest cities in the world. People near and far are awed by the splendor and magnificence of the urban centers that [struggle_ender.GetTitledFirstNameNoTooltip] rules over."
+ eastern_iranian_struggle.1003.desc.closing.trade:1 "The [struggle_ender.GetPrimaryTitle.GetAdjectiveNoTooltip] state is home to merchants and explorers who have traveled across the world. People near and far are awed by the massive network that [struggle_ender.GetTitledFirstNameNoTooltip] has established across the Silk Road."
+ eastern_iranian_struggle.1003.desc.closing.culture:1 "The [struggle_ender.GetPrimaryTitle.GetAdjectiveNoTooltip] state has attained a high degree of cultural and artistic achievement. People near and far are awed by the sophistication of the civilization that [struggle_ender.GetTitledFirstNameNoTooltip] calls home."
+ eastern_iranian_struggle.1003.desc.closing:1 "$eastern_iranian_struggle.1001.desc.closing$"
+ eastern_iranian_struggle.1003.a:0 "$eastern_iranian_struggle.1001.a$"
+
+ # Compromise
+ eastern_iranian_struggle.1004.t:0 "$struggle_eastern_iranian_ending_compromise_decision$"
+ eastern_iranian_struggle.1004.desc:1 "After years of chaos following the collapse of the Kushan Empire and the crises of the Roman, Persian, and Chinese Empires, the Silk Road in Central Asia has still not stabilized under a powerful regime. The constant conflicts between the petty, squabbling kingdoms, tribes, and cities of this region has taken its toll on the region. It is clear that [GetGeographicalRegion('TFE_eastern_iranian_struggle_region').GetName] was never meant to be unified.\n\nAlas, we must be content with [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip]. The rest of [GetGeographicalRegion('TFE_eastern_iranian_struggle_region').GetName] and this part of the Silk Road will have to remain a divided mess of different peoples and beliefs."
+ eastern_iranian_struggle.1004.a:0 "It is what it is."
+ eastern_iranian_struggle.1005.t:0 "$struggle_eastern_iranian_ending_compromise_decision$"
+ eastern_iranian_struggle.1005.opening:0 ""
+ eastern_iranian_struggle.1005.desc:0 "[struggle_ender.GetTitledFirstName], one of the most respected (or at least feared) rulers along the Silk Road, has officially renounced any intentions to unite [GetGeographicalRegion('TFE_eastern_iranian_struggle_region').GetName] under one banner. Even someone as great and influential as [struggle_ender.GetHerHim] knows that the Silk Road is too decentralized to be unified.\n\n[GetGeographicalRegion('TFE_eastern_iranian_struggle_region').GetName], as it were, will remain a divided mess of different peoples and beliefs for the foreseeable future. Perhaps the Silk Road will find a way to grow and prosper, but if it does, it will be through a patchwork of smaller states."
+ eastern_iranian_struggle.1005.a:0 "$eastern_iranian_struggle.1001.a$"
+
+
+
+ #Urbanize
+ struggle_eastern_iranian_urbanize_area:0 "Encourage Silk Road Urbanization"
+ struggle_eastern_iranian_urbanize_area_desc:0 "The various trade and cultural networks that make up the so-called Silk Road in [GetGeographicalRegion('TFE_eastern_iranian_struggle_region').GetName] pass through a number of territories I rule. In order to make the most of these networks, we should encourage [silk_road_urbanization_short|E] in the region."
+ struggle_eastern_iranian_urbanize_area_tooltip:0 "Spend [gold|E] to gain [prestige|E] and improve the [development|E] in the [capital|E]"
+ struggle_eastern_iranian_urbanize_area_extend_to_county:0 "Pay #V [gold_i|E][GetPlayer.GetCapitalLocation.GetCounty.GetTitle.MakeScope.ScriptValue('urbanize_silk_road_price')]#! for [GetPlayer.GetCapitalLocation.GetCounty.GetTitle.GetName] to gain the [GetStaticModifier('urbanize_silk_road_modifier').GetNameWithTooltip|L] [modifier|E]"
+ struggle_eastern_iranian_urbanize_area_extend_to_duchy:0 "Pay #V [gold_i|E][GetPlayer.GetCapitalLocation.GetCounty.GetTitle.MakeScope.ScriptValue('urbanize_silk_road_price_duchy')]#! for every [county|E] in [GetPlayer.GetCapitalLocation.GetCounty.GetTitle.GetDeJureLiege.GetName] in the [GetGeographicalRegion('TFE_eastern_iranian_struggle_region').GetName] [region|E] to gain the [GetStaticModifier('urbanize_silk_road_modifier').GetNameWithTooltip|L] [modifier|E]"
+ struggle_eastern_iranian_urbanize_area_extend_to_kingdom:0 "Pay #V [gold_i|E][GetPlayer.GetCapitalLocation.GetCounty.GetTitle.MakeScope.ScriptValue('urbanize_silk_road_price_kingdom')]#! for every [county|E] in [GetPlayer.GetCapitalLocation.GetCounty.GetTitle.GetDeJureLiege.GetDeJureLiege.GetName] in the [GetGeographicalRegion('TFE_eastern_iranian_struggle_region').GetName] [region|E] to gain the [GetStaticModifier('urbanize_silk_road_modifier').GetNameWithTooltip|L] [modifier|E]"
+ struggle_eastern_iranian_urbanize_area_extend_to_empire:0 "Pay #V [gold_i|E][GetPlayer.GetCapitalLocation.GetCounty.GetTitle.MakeScope.ScriptValue('urbanize_silk_road_price_empire')]#! for every [county|E] in [GetPlayer.GetCapitalLocation.GetCounty.GetTitle.GetDeJureLiege.GetDeJureLiege.GetDeJureLiege.GetName] in the [GetGeographicalRegion('TFE_eastern_iranian_struggle_region').GetName] [region|E] to gain the [GetStaticModifier('urbanize_silk_road_modifier').GetNameWithTooltip|L] [modifier|E]"
+ struggle_eastern_iranian_urbanize_area_confirm:0 "Call my stewards and officials!"
+
+ eastern_iranian_struggle.2001.t:0 "Urbanizing The Silk Road"
+ eastern_iranian_struggle.2001.desc:0 "I rule over a number of territories in [GetGeographicalRegion('TFE_eastern_iranian_struggle_region').GetName] that are deeply intertwined with the trade and cultural networks of the so-called Silk Road.\n\nIt would be advantageous if my officials and local elites found ways to encourage the development of the settlements in the region. For example, we could encourage settlers to make new homes, for merchants to expand their business networks, and for settlements to engage in great public works here. That way, this region can grow and prosper even more.\n\nNow, where should we focus our efforts on?"
+ eastern_iranian_struggle.2001.a:0 "The capital, [ROOT.Char.GetCapitalLocation.GetCounty.GetTitle.GetNameNoTierNoTooltip]."
+ eastern_iranian_struggle.2001.b:0 "The capital and its surrounding region, [ROOT.Char.GetCapitalLocation.GetCounty.GetTitle.GetDeJureLiege.GetNameNoTierNoTooltip]."
+ eastern_iranian_struggle.2001.c:0 "The capital and its kingdom, [ROOT.Char.GetCapitalLocation.GetCounty.GetTitle.GetDeJureLiege.GetDeJureLiege.GetNameNoTierNoTooltip]."
+ eastern_iranian_struggle.2001.d:0 "The whole entirety of [ROOT.Char.GetCapitalLocation.GetCounty.GetTitle.GetDeJureLiege.GetDeJureLiege.GetDeJureLiege.GetNameNoTierNoTooltip]."
+ eastern_iranian_struggle.2001.e:0 "On second thought, this all seems #emp very#! expensive."
+ eastern_iranian_struggle.2001.e_effect:0 "We will not [silk_road_urbanize|E] any [counties|E]"
+
+#  struggle_eastern_iranian_urbanize_area_extend_to_county:0 "By paying #V [gold_i|E][GetPlayer.GetCapitalLocation.GetCounty.GetTitle.MakeScope.ScriptValue('distribute_bread_price')]#! we would provide the [GetPlayer.GetCapitalLocation.GetCounty.GetTitle.GetName] with bread."
+#  struggle_eastern_iranian_urbanize_area_extend_to_duchy:0 "By paying #V [gold_i|E][GetPlayer.GetCapitalLocation.GetCounty.GetTitle.GetDeJureLiege.MakeScope.ScriptValue('distribute_bread_price')]#! we would provide the [GetPlayer.GetCapitalLocation.GetCounty.GetTitle.GetDeJureLiege.GetName] with bread, giving each county within it the modifier."
+#  struggle_eastern_iranian_urbanize_area_extend_to_kingdom:0 "By paying #V [gold_i|E][GetPlayer.GetCapitalLocation.GetCounty.GetTitle.GetDeJureLiege.GetDeJureLiege.MakeScope.ScriptValue('distribute_bread_price')]#! we would provide the [GetPlayer.GetCapitalLocation.GetCounty.GetTitle.GetDeJureLiege.GetDeJureLiege.GetName] with bread, giving each county within it the modifier."
+#  struggle_eastern_iranian_urbanize_area_extend_to_empire:0 "By paying #V [gold_i|E][GetPlayer.GetCapitalLocation.GetCounty.GetTitle.GetDeJureLiege.GetDeJureLiege.GetDeJureLiege.MakeScope.ScriptValue('distribute_bread_price')]#! we would provide the [GetPlayer.GetCapitalLocation.GetCounty.GetTitle.GetDeJureLiege.GetDeJureLiege.GetDeJureLiege.GetName] with bread, giving each county within it the modifier."
+
+ urbanize_modifier_added_tt:0 "Gains the [GetStaticModifier('urbanize_silk_road_modifier').GetNameWithTooltip|L] [modifier|E] for #V 10 years#!"

@@ -1,0 +1,3389 @@
+﻿993000 = {
+	name = "Letho"
+	dynasty = 99930000
+	religion = "central_pagan"
+	culture = "langobard"
+	365.1.1 = {
+		birth = yes
+	}
+	385.1.1 = {
+		trait = one_eyed
+	}
+	425.1.1 = {
+		death = yes
+	}
+}
+993001 = {
+	name = "Hildeoc"
+	dynasty = 99930000
+	religion = "central_pagan"
+	culture = "langobard"
+	father = 993000
+	390.1.1 = {
+		birth = yes
+	}
+	450.1.1 = {
+		death = yes
+	}
+}
+993002 = {
+	name = "Gundeoc"
+	dynasty = 99930000
+	religion = "central_pagan"
+	culture = "langobard"
+	father = 993001
+	410.1.1 = {
+		birth = yes
+	}
+	470.1.1 = {
+		death = yes
+	}
+}
+993003 = {
+	name = "Cleffo"
+	dynasty = 99930000
+	religion = "central_pagan"
+	culture = "langobard"
+	father = 993002
+	trait = adventurer
+	430.1.1 = {
+		birth = yes
+	}
+	490.1.1 = {
+		death = yes
+	}
+}
+993004 = {
+	name = "Tatto"
+	dynasty = 99930000
+	religion = "central_pagan"
+	culture = "langobard"
+	father = 993003
+	446.1.1 = {
+		birth = yes
+	}
+	510.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = 993008
+		}
+		trait = adventurer
+	}
+}
+993005 = {
+	name = "Hunichis"
+	dynasty = 99930000
+	religion = "central_pagan"
+	culture = "langobard"
+	father = 993003
+	455.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+993006 = {
+	name = "Rumetrada"
+	female = yes
+	dynasty = 99930000
+	religion = "central_pagan"
+	culture = "langobard"
+	father = 993004
+	464.1.1 = {
+		birth = yes
+	}
+	520.1.1 = {
+		death = yes
+	}
+}
+993007 = {
+	name = "Risulf"
+	dynasty = 99930000
+	religion = "central_pagan"
+	culture = "langobard"
+	father = 993004
+	475.1.1 = {
+		birth = yes
+	}
+	515.1.1 = {
+		death = yes
+	}
+}
+993008 = {
+	name = "Wacho"
+	dynasty = 99930000
+	religion = "central_pagan"
+	culture = "langobard"
+	father = 993005
+	480.1.1 = {
+		birth = yes
+	}
+	504.1.1 = {
+		add_spouse = 999007
+	}
+	515.1.1 = {
+		religion = "arianism"
+	}
+	520.1.1 = {
+		add_spouse = 991009
+	}
+	530.1.1 = {
+		add_spouse = 995004
+	}
+	539.1.1 = {
+		death = yes
+	}
+}
+993009 = {
+	name = "Wisigarda"
+	female = yes
+	dynasty = 99930000
+	religion = "arianism"
+	culture = "langobard"
+	father = 993008
+	mother = 991009
+	521.1.1 = {
+		birth = yes
+	}
+	580.1.1 = {
+		death = yes
+	}
+}
+993010 = {
+	name = "Waldrada"
+	female = yes
+	dynasty = 99930000
+	religion = "arianism"
+	culture = "langobard"
+	father = 993008
+	mother = 991009
+	523.1.1 = {
+		birth = yes
+	}
+	585.1.1 = {
+		death = yes
+	}
+}
+993011 = {
+	name = "Walthar"
+	dynasty = 99930000
+	religion = "arianism"
+	culture = "langobard"
+	father = 993008
+	mother = 995004
+	535.1.1 = {
+		birth = yes
+	}
+	546.1.1 = {
+		death = yes
+	}
+}
+993012 = {
+	name = "Menia"
+	female = yes
+	dynasty = 99930000
+	religion = "central_pagan"
+	culture = "langobard"
+	father = 993002
+	459.1.1 = {
+		birth = yes
+	}
+	510.1.1 = {
+		death = yes
+	}
+}
+993016 = {
+	name = "Hildegisel"
+	dynasty = 99930000
+	religion = "central_pagan"
+	culture = "langobard"
+	father = 993007
+	501.1.1 = {
+		birth = yes
+	}
+	515.1.1 = {
+		religion = "arianism"
+	}
+	541.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = 993008
+		}
+	}
+}
+993017 = {
+	name = "Helmichis"
+	dynasty = 99930000
+	religion = "arianism"
+	culture = "langobard"
+	father = 993016
+	530.1.1 = {
+		birth = yes
+	}
+	572.6.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = 991015 # Rosamunda
+		}
+	}
+}
+993020 = {
+	name = "Gauso"
+	dynasty = 99930001
+	religion = "central_pagan"
+	culture = "langobard"
+	450.1.1 = {
+		birth = yes
+	}
+	489.6.1 = {
+		add_spouse = 993012 # Menia
+	}
+	505.1.1 = {
+		death = yes
+	}
+}
+993021 = {
+	name = "Hildebrand"
+	dynasty = 99930003
+	religion = "arianism"
+	culture = "langobard"
+	438.1.1 = {
+		birth = yes
+	}
+	476.1.1 = {
+		employer = 992016
+	}
+	482.1.1 = {
+		death = yes
+	}
+}
+993022 = {
+	name = "Hadubrand"
+	dynasty = 99930003
+	religion = "arianism"
+	culture = "langobard"
+	father = 993021
+	458.1.1 = {
+		birth = yes
+	}
+	476.1.1 = {
+		employer = 996002
+		effect = {
+			set_relation_rival = { target = character:993021 reason = rival_historical }
+		}
+	}
+	480.1.1 = {
+		death = yes
+	}
+}
+190122 = {
+	name = "Audoin" # Audoin Gausi, King of the langobardis
+	dynasty = 99930001
+	religion = "arianism"
+	culture = "langobard"
+	father = 993020
+	mother = 993012
+	490.1.1 = {
+		birth = yes
+	}
+	527.1.1 = {
+		add_spouse = 190123
+	}
+	563.1.1 = {
+		death = yes
+	}
+}
+190124 = {
+	name = "Alboin" # Alboin Gausi, langobardi King of Italy (565-572)
+	dynasty = 99930001
+	religion = "arianism"
+	culture = "langobard"
+	father = 190122
+	mother = 190123
+	527.9.1 = {
+		birth = yes
+	}
+	547.1.1 = {
+		add_spouse = 997023
+	}
+	568.1.1 = {
+		add_spouse = 991015
+	}
+	572.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = 991015 # Rosamunda
+		}
+	}
+}
+190166 = {
+	name = "Albsuntha"
+	female = yes
+	dynasty = 99930001
+	religion = "chalcedonian"
+	culture = "langobard"
+	father = 190124
+	mother = 997023
+	548.1.1 = {
+		birth = yes
+	}
+	590.1.1 = {
+		death = yes
+	}
+}
+190125 = {
+	name = "Grasulf" # Grasulf (I) Gausi, Duke of Friuli (591-590)
+	dynasty = 99930001
+	religion = "arianism"
+	culture = "langobard"
+	father = 190122
+	mother = 190123
+	531.1.1 = {
+		birth = yes
+	}
+	590.1.1 = {
+		death = yes
+	}
+}
+
+190126 = {
+	name = "Gisulf" # Gisulf (I) Gausian, Duke of Friuli (569-591)
+	dynasty = 99930001
+	religion = "chalcedonian"
+	culture = "langobard"
+	father = 190125
+	559.1.1 = {
+		birth = yes
+	}
+	581.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+190127 = {
+	name = "Zotto" # Zotto Gausi, Duke of Benevento (571-591)
+	dynasty = 99930001
+	religion = "chalcedonian"
+	culture = "langobard"
+	father = 190125
+	560.1.1 = {
+		birth = yes
+	}
+	591.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+190128 = {
+	name = "Gisulf" # Gisulf (II) Gausi, Duke of Friuli (590-611)
+	dynasty = 99930001
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190126
+
+	578.1.1 = {
+		birth = yes
+	}
+	594.1.1 = {
+		add_spouse = 190129
+	}
+	611.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+190244 = {
+	name = "Taso" # Taso Gausi, Duke of Friuli (611-625)
+	dynasty = 99930001
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190128
+	mother = 190129
+
+	594.1.1 = {
+		birth = yes
+	}
+	625.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+190245 = {
+	name = "Caco" # Caco Gausi, Duke of Friuli (611)
+	dynasty = 99930001
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190128
+	mother = 190129
+
+	595.1.1 = {
+		birth = yes
+	}
+	625.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+190130 = {
+	name = "Radoald" # Radoald Gausi, Duke of Benevento (642-651)
+	dynasty = 99930001
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190128
+	mother = 190129
+
+	596.1.1 = {
+		birth = yes
+	}
+	651.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+190131 = {
+	name = "Appa" # Appa Gausi, wife of the King of the Alemanni
+	female = yes
+	dynasty = 99930001
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190128
+	mother = 190129
+
+	598.1.1 = {
+		birth = yes
+	}
+	652.1.1 = {
+		death = yes
+	}
+}
+
+190132 = {
+	name = "Geila" # Geila Gausi, wife of Garibald II of Bavaria
+	female = yes
+	dynasty = 99930001
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190128
+	mother = 190129
+
+	603.1.1 = {
+		birth = yes
+	}
+	657.1.1 = {
+		death = yes
+	}
+}
+
+190133 = {
+	name = "Grimoald" # Grimoald (I) Gausi, King of langobardi Italy (662-671) and Duke of Benevento (651-671)
+	dynasty = 99930001
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190128
+	mother = 190129
+
+	609.1.1 = {
+		birth = yes
+	}
+	662.1.1 = {
+		add_spouse = 190134
+	}
+	671.1.1 = {
+		death = {
+			death_reason = death_murder
+		}
+	}
+}
+
+190134 = {
+	name = "Teudota" # Theodota Baiuvari, wife of Grimoald of Italy
+	female = yes
+	dynasty_house = house_baiuvari
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190181
+
+	636.1.1 = {
+		birth = yes
+	}
+	675.1.1 = {
+		death = yes
+	}
+}
+
+190135 = {
+	name = "Romoald" # Romoald (I) Gausi, Duke of Benevento (671-687)
+	dynasty = 99930001
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190133
+	#son of an early marriage of his father
+
+	643.1.1 = {
+		birth = yes
+	}
+	669.1.1 = {
+		add_spouse = 190137
+	}
+	687.1.1 = {
+		death = yes
+	}
+}
+
+190136 = {
+	name = "Garipald" # Garibald Gausi, langobardi King of Italy (671), Duke of Piedmonte (663-671)
+	dynasty = 99930001
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190133
+	mother = 190134
+
+	663.1.1 = {
+		birth = yes
+	}
+	688.1.1 = {
+		death = yes
+	}
+}
+
+190137 = {
+	name = "Teuderada" # Theodrada Gausi, wife of Romoald I of Benvento
+	female = yes
+	dynasty = 99930001
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190248
+
+	653.1.1 = {
+		birth = yes
+	}
+	698.1.1 = {
+		death = yes
+	}
+}
+
+190138 = {
+	name = "Grimoald" # Grimoald (II) Gausi, Duke of Benevento (687-689)
+	dynasty = 99930001
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190135
+	mother = 190137
+
+	669.1.1 = {
+		birth = yes
+	}
+	684.1.1 = {
+		add_spouse = 190187
+	}
+	689.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+190139 = {
+	name = "Gisulf" # Gisulf (I) Gausi, Duke of Benevento (689-706)
+	dynasty = 99930001
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190135
+	mother = 190137
+
+	670.1.1 = {
+		birth = yes
+	}
+	686.1.1 = {
+		add_spouse = 190140
+	}
+	706.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+190140 = {
+	name = "Winiperga" # Winiperga, wife of Gisulf I of Benevento
+	female = yes
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	669.1.1 = {
+		birth = yes
+	}
+	712.1.1 = {
+		death = yes
+	}
+}
+
+190141 = {
+	name = "Romoald" # Romoald (II) Gausi, Duke of Benevento (706-731)
+	dynasty = 99930001
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190139
+	mother = 190140
+
+	686.1.1 = {
+		birth = yes
+	}
+	702.1.1 = {
+		add_spouse = 190142
+	}
+	729.1.1 = {
+		remove_spouse = 190142
+	}
+	730.1.1 = {
+		add_spouse = 190143
+	}
+	731.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+190142 = {
+	name = "Gumperga" # Gumperga, daughter of Aurona sister of King Liutprand
+	female = yes
+	dynasty = 1044037
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = langobardi0095
+	mother = 190195
+
+	684.1.1 = {
+		birth = yes
+	}
+	729.1.1 = {
+		death = yes
+	}
+}
+190143 = {
+	name = "Ranigunda" #daughter of Duke Gaiduld of Brescia
+	female = yes
+	dynasty = 1044038 #Gaiduldling
+	religion = "chalcedonian"
+	culture = "langobard"
+	709.1.1 = {
+		birth = yes
+	}
+	741.1.1 = {
+		death = yes
+	}
+}
+
+190144 = {
+	name = "Gisulf" # Gisulf (II) Gausi, Duke of Benevento (742-751)
+	dynasty = 99930001
+	religion = "chalcedonian"
+	culture = "langobard"
+	father = 190141
+	mother = 190142
+	702.1.1 = {
+		birth = yes
+	}
+	718.1.1 = {
+		add_spouse = 190145
+	}
+	751.1.1 = {
+		death = yes
+	}
+}
+
+190145 = {
+	name = "Scauniperga" # Scauniperga, wife of Gisulf II of Benevento
+	female = yes
+	religion = "chalcedonian"
+	culture = "langobard"
+	701.1.1 = {
+		birth = yes
+	}
+	752.1.1 = {
+		death = yes
+	}
+}
+
+190146 = {
+	name = "Liutprand" # Liutprand Gausi, Duke of Benevento (751-758)
+	dynasty = 99930001
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190144
+	mother = 190145
+
+	719.1.1 = {
+		birth = yes
+	}
+	759.1.1 = {
+		death = yes
+	}
+}
+
+190147 = {
+	name = "Arechis" # Arechis (II) Gausi, Duke of Benevento (758-787)
+	dynasty = 99930001
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = langobardi0093
+
+	735.1.1 = {
+		birth = yes
+	}
+	751.1.1 = {
+		add_spouse = 190148
+	}
+	774.1.1 = {
+		capital = c_salerno
+	}
+	787.8.26 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+190148 = {
+	name = "Adelperga" # Adelperga Desideridi, wife of Arechis II of Benevento
+	female = yes
+	dynasty = 1044053
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190347
+	mother = 190340
+
+	735.1.1 = {
+		birth = yes
+	}
+	772.1.1 = {
+		death = yes
+	}
+}
+
+190149 = {
+	name = "Romoald" # Romoald Gausi
+	dynasty = 99930001
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190147
+	mother = 190148
+
+	761.1.1 = {
+		birth = yes
+	}
+	787.7.1 = {
+		death = yes
+	}
+}
+
+190150 = {
+	name = "Grimoald" # Grimoald (III) Gausi, Duke of Benevento (787-806)
+	dynasty = 99930001
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190147
+	mother = 190148
+
+	752.1.1 = {
+		birth = yes
+	}
+	767.1.1 = {
+		add_spouse = 190151
+	}
+	787.8.26 = {
+		capital = c_salerno
+	}
+	806.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+190151 = {
+	name = "Scauniperga" # Scauniperga, fictional wife of Grimoald III of Benevento
+	female = yes
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	750.1.1 = {
+		birth = yes
+	}
+	809.1.1 = {
+		death = yes
+	}
+}
+
+190152 = {
+	name = "Adelchisa" # Adelchisa Gausi, mother of Grimoald IV
+	dynasty = 99930001
+	female = yes
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190147
+	mother = 190148
+
+	752.1.1 = {
+		birth = yes
+	}
+	774.1.1 = {
+		death = yes
+	}
+}
+
+190153 = {
+	name = "Arechis" # Arechis (I) Gausi, Duke of Benevento (591-641)
+	dynasty = 99930001
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190126
+
+	581.1.1 = {
+		birth = yes
+	}
+	641.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+190154 = {
+	name = "Aio" # Aio (I) Gausi, Duke of Benevento (641-642)
+	dynasty = 99930001
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190153
+
+	601.1.1 = {
+		birth = yes
+	}
+	642.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+190246 = {
+	name = "Grasulf" # Grasulf (II) Gausi, Duke of Friuli (625-653)
+	dynasty = 99930001
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190126
+
+	579.1.1 = {
+		birth = yes
+	}
+	653.1.1 = {
+		death = yes
+	}
+}
+
+190247 = {
+	name = "Ago" # Ago Gausi, Duke of Friuli (653-662)
+	dynasty = 99930001
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190246
+
+	599.1.1 = {
+		birth = yes
+	}
+	662.1.1 = {
+		death = yes
+	}
+}
+
+190248 = {
+	name = "Lupus" # Lupus Gausi, Duke of Friuli (662-663)
+	dynasty = 99930001
+	religion = "chalcedonian"
+	culture = "langobard"
+	father = 190247
+
+	620.1.1 = {
+		birth = yes
+	}
+	663.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+190249 = {
+	name = "Arnefrit" # Arnefrit Gausi, Duke of Friuli (663)
+	dynasty = 99930001
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190248
+
+	638.1.1 = {
+		birth = yes
+	}
+	666.6.1 = {
+		death = {
+			death_reason = death_battle
+			killer = 190250
+		}
+	}
+}
+
+190250 = {
+	name = "Wechtari" # Wechtar Wechtaridi, Duke of Friuli (663-671)
+	dynasty = 1044059
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	636.1.1 = {
+		birth = yes
+	}
+	671.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+190251 = {
+	name = "Landari" # Landar Wechtaridi, Duke of Friuli (671)
+	dynasty = 1044059
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190250
+
+	652.1.1 = {
+		birth = yes
+	}
+	690.6.1 = {
+		death = yes
+	}
+}
+
+190252 = {
+	name = "Rodoald" # Radoald Wechtaridi, Duke of Friuli (671-695)
+	dynasty = 1044059
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190250
+
+	654.1.1 = {
+		birth = yes
+	}
+	699.1.1 = {
+		death = yes
+	}
+}
+
+190253 = {
+	name = "Landeburga" # Landeburga Wechtaridi, wife of Ansfrid of Friuli
+	female = yes
+	dynasty = 1044059
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190250
+
+	660.1.1 = {
+		birth = yes
+	}
+	730.1.1 = {
+		death = yes
+	}
+}
+
+190254 = {
+	name = "Ado" # Ado Wechtaridi, Duke of Friuli (698-700)
+	dynasty = 1044059
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190250
+
+	656.1.1 = {
+		birth = yes
+	}
+	700.1.1 = {
+		death = yes
+	}
+}
+
+190255 = {
+	name = "Ansfrid" # Ansfrid Ansfrididi, Duke of Friuli (695-698)
+	dynasty = 1044060
+	religion = "chalcedonian"
+	culture = "langobard"
+	trait = blind
+
+	656.1.1 = {
+		birth = yes
+	}
+	685.1.1 = {
+		add_spouse = 190253
+	}
+	699.1.1 = {
+		death = {
+			death_reason = blind
+		}
+	}
+}
+
+190256 = {
+	name = "Ferdulf" # Ferdulf Ansfrididi, Duke of Friuli (700-705)
+	dynasty = 1044060
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190255
+	mother = 190253
+
+	685.1.1 = {
+		birth = yes
+	}
+	705.1.1 = {
+		death = yes
+	}
+}
+
+190257 = {
+	name = "Corvulus" # Corvulus Ansfrididi, Duke of Friuli (705)
+	dynasty = 1044060
+	religion = "chalcedonian"
+	culture = "langobard"
+	trait = blind
+
+	father = 190255
+	mother = 190253
+
+	687.1.1 = {
+		birth = yes
+	}
+	727.1.1 = {
+		death = yes
+	}
+}
+
+190259 = {
+	name = "Munichis" # Munichis Munichisidi
+	dynasty = 1044052
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	701.1.1 = {
+		birth = yes
+	}
+	740.1.1 = {
+		death = yes
+	}
+}
+
+190260 = {
+	name = "Anselm" # Anselm Munichisidi, Duke of Friuli (749-751)
+	dynasty = 1044052
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190259
+
+	718.1.1 = {
+		birth = yes
+	}
+	751.1.1 = {
+		trait = devoted
+		trait = lifestyle_mystic # mystic_3
+	}
+	803.1.1 = {
+		death = yes
+		trait = saint
+	}
+}
+
+190262 = {
+	name = "Petrus" # Petrus Munichisidi, Duke of Friuli (751-767)
+	dynasty = 1044052
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190259
+
+	720.1.1 = {
+		birth = yes
+	}
+	767.1.1 = {
+		death = yes
+	}
+}
+
+190263 = {
+	name = "Ursus" # Ursus Munichisidi, Count of Padua (751-774)
+	dynasty = 1044052
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190259
+
+	722.1.1 = {
+		birth = yes
+	}
+	774.1.1 = {
+		death = yes
+	}
+}
+
+190264 = {
+	name = "Rodgoald" # Rotgaudo Munichisidi, Duke of Friuli (767-776)
+	dynasty = 1044052
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190262
+
+	740.1.1 = {
+		birth = yes
+	}
+	790.1.1 = {
+		death = yes
+	}
+}
+
+190344 = {
+	name = "Gisaltruda" # Gisaltruda Munichisidi, wife of Aistulf of Italy
+	female = yes
+	dynasty = 1044052 #Munichingi
+	religion = "chalcedonian"
+	culture = "langobard"
+	father = 190259
+	730.1.1 = {
+		birth = yes
+	}
+	781.1.1 = {
+		death = yes
+	}
+}
+
+190155 = {
+	name = "Hermenric" # Ermenric Ermenricidi
+	dynasty = 1044042
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	753.1.1 = {
+		birth = yes
+	}
+	770.1.1 = {
+		add_spouse = 190152
+	}
+	799.1.1 = {
+		death = yes
+	}
+}
+
+190160 = {
+	name = "Sico" # Sico Siconidi, Duke of Benevento (817-832)
+	dynasty = 1044044
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	758.1.1 = {
+		birth = yes
+	}
+	832.9.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+190165 = {
+	name = "Massana"
+	female = yes
+	religion = "arianism"
+	culture = "langobard"
+	525.1.1 = {
+		birth = yes
+	}
+	574.1.1 = {
+		death = yes
+	}
+}
+190167 = {
+	name = "Beleo"
+	dynasty = 1044045
+	religion = "arianism"
+	culture = "langobard"
+	500.1.1 = {
+		birth = yes
+	}
+	557.1.1 = {
+		death = yes
+	}
+}
+
+190168 = {
+	name = "Cleffo" # Clef, langobardi King of Italy (572-574)
+	dynasty = 1044045
+	religion = "arianism"
+	culture = "langobard"
+	father = 190167
+	520.1.1 = {
+		birth = yes
+	}
+	556.1.1 = {
+		add_spouse = 190165
+	}
+	574.1.1 = {
+		death = {
+			death_reason = death_plotting
+		}
+	}
+}
+
+190169 = {
+	name = "Authari" # Authari Beleos, langobardi King of Italy (584-590)
+	dynasty = 1044045
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190168
+
+	556.1.1 = {
+		birth = yes
+	}
+	584.1.1 = {
+		add_spouse = 190171
+	}
+	590.9.5 = {
+		death = {
+			death_reason = death_poison
+		}
+	}
+}
+
+190170 = {
+	name = "Agilulf" # Agilulf Anawas, langobardi King of Italy (591-616) and Duke of Piedmonte (575-590)
+	dynasty = anawas
+	religion = "chalcedonian"
+	culture = "thuringian"
+
+	559.1.1 = {
+		birth = yes
+	}
+	575.1.1 = {
+		add_spouse = langobardi0094
+	}
+	590.9.5 = {
+		add_spouse = 190171
+	}
+	616.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+190172 = {
+	name = "Gundeberga" # Gundeberga Anawas, wife of Arioald of Italy and Rotari of Italy
+	female = yes
+	dynasty = anawas
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190170
+	mother = 190171
+
+	598.1.1 = {
+		birth = yes
+	}
+	652.1.1 = {
+		death = yes
+	}
+}
+
+190173 = {
+	name = "Adaloald" # Adaloald Anawas, langobardi King of Italy (616-626)
+	dynasty = anawas
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190170
+	mother = 190171
+
+	602.1.1 = {
+		birth = yes
+	}
+	626.1.1 = {
+		death = {
+			death_reason = death_poison
+		}
+	}
+}
+
+190174 = {
+	name = "Arioald" # Arioald Arioaldidi, langobardi King of Italy (626-636) and Duke of Piedmonte (590-626)
+	dynasty = 1044047
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	578.1.1 = {
+		birth = yes
+	}
+	616.1.1 = {
+		add_spouse = 190172
+	}
+	636.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+190175 = {
+   name = "Nandinig" # Nandinig Arodingi, Count of Brescia (603-626)
+   dynasty = 1044048
+   religion = "chalcedonian"
+   culture = "langobard"
+
+   578.1.1 = {
+       birth = yes
+   }
+   626.1.1 = {
+       death = yes
+   }
+}
+
+190176 = {
+	name = "Rothari" # Rothari Arodingi, langobardi King of Italy (636-652)
+	dynasty = 1044048
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190175
+
+	606.1.1 = {
+		birth = yes
+	}
+	636.1.1 = {
+		add_spouse = 190172
+	}
+	652.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+190177 = {
+	name = "Rodoald" # Radoald Arodingi, langobardi King of Italy (652)
+	dynasty = 1044048
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190176
+	mother = 190172
+
+	637.1.1 = {
+		birth = yes
+	}
+	652.6.1 = {
+		death = {
+			death_reason = death_murder
+		}
+	}
+}
+
+190181 = {
+	name = "Aripert" # Aripert (I) Baiuvari, langobardi King of Italy (652-661)
+	dynasty_house = house_baiuvari
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190180
+
+	609.1.1 = {
+		birth = yes
+	}
+	661.1.1 = {
+		death = yes
+	}
+}
+
+190182 = {
+	name = "Godepert" # Godepert Baiuvari, langobardi King of Italy (661-662)
+	dynasty_house = house_baiuvari
+	religion = "chalcedonian" #arian
+	culture = "langobard"
+
+	father = 190181
+
+	634.1.1 = {
+		birth = yes
+	}
+	662.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = 190133
+		}
+	}
+}
+
+190183 = {
+	name = "Raginpert" # Raginpert Baiuvari, langobardi King of Italy (701), Duke of Piedmonte (663-701)
+	dynasty_house = house_baiuvari
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190182
+
+	653.1.1 = {
+		birth = yes
+	}
+	701.6.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+190184 = {
+	name = "Aripert" # Aripert (II) Baiuvari, langobardi King of Italy (702-712) and Duke of Piedmonte (701-702)
+	dynasty_house = house_baiuvari
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190183
+
+	672.1.1 = {
+		birth = yes
+	}
+	712.1.1 = {
+		death = {
+			death_reason = death_accident # drowned
+		}
+	}
+}
+
+190185 = {
+	name = "Perctarit" # Perctarit Baiuvari, langobardi King of Italy (662 & 671-688)
+	dynasty_house = house_baiuvari
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190181
+
+	638.1.1 = {
+		birth = yes
+	}
+	655.1.1 = {
+		add_spouse = 190186
+	}
+	688.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+190186 = {
+	name = "Rodelinda" # Rodelinda, wife of Perctarit of Italy
+	female = yes
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	639.1.1 = {
+		birth = yes
+	}
+	691.1.1 = {
+		death = yes
+	}
+}
+
+190187 = {
+	name = "Wigilinda" # Wigilanda Baiuvari, wife of Grimoald II of Benevento
+	female = yes
+	dynasty_house = house_baiuvari
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190185
+	mother = 190186
+
+	656.1.1 = {
+		birth = yes
+	}
+	690.1.1 = {
+		death = yes
+	}
+}
+
+190188 = {
+	name = "Cunicpert" # Cunicpert Baiuvari, langobardi King of Italy (688-689 & 689-700)
+	dynasty_house = house_baiuvari
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190185
+	mother = 190186
+
+	660.1.1 = {
+		birth = yes
+	}
+	700.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+190189 = {
+	name = "Liutpert" # Liutpert Baiuvari, langobardi King of Italy (700-701 & 701-702)
+	dynasty_house = house_baiuvari
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190188
+
+	689.1.1 = {
+		birth = yes
+	}
+	702.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = 190184
+		}
+	}
+}
+
+190190 = {
+	name = "Regintruda" # Regintruda Baiuvari, wife of Theodo II of Bavaria
+	female = yes
+	dynasty_house = house_baiuvari
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190182
+
+	657.1.1 = {
+		birth = yes
+	}
+	709.1.1 = {
+		death = yes
+	}
+}
+
+190191 = {
+	name = "Ratperga" # Ratberga Baiuvari, wife of Pemmo of Friuli
+	female = yes
+	dynasty_house = house_baiuvari
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190184
+
+	700.1.1 = {
+		birth = yes
+	}
+	742.1.1 = {
+		death = yes
+	}
+}
+
+190193 = {
+	name = "Ansprand" # Ansprand Ansprandidi, langobardi King of Italy (712)
+	dynasty = 1044051
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	647.1.1 = {
+		birth = yes
+	}
+	668.1.1 = {
+		add_spouse = 190192
+	}
+	712.7.1 = {
+		death = yes
+	}
+}
+
+190194 = {
+	name = "Sigiprand" # Sigiprand Ansprandidi
+	dynasty = 1044051
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190193
+	mother = 190192
+
+	674.1.1 = {
+		birth = yes
+	}
+	702.1.1 = {
+		trait = blind
+	}
+	714.1.1 ={
+		death = {
+			death_reason = blind
+		}
+	}
+}
+
+190195 = {
+	name = "Aurona" # Aurona Ansprandidi, mother in law of Romoald II of Benevento
+	female = yes
+	dynasty = 1044051
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190193
+	mother = 190192
+
+	668.1.1 = {
+		birth = yes
+	}
+	702.1.1 = {
+		trait = maimed
+	}
+	712.1.1 = {
+		death = yes
+	}
+}
+
+190196 = {
+	name = "Liutprand" # Liutprand Ansprandidi, langobardi King of Italy (712-744)
+	dynasty = 1044051
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190193
+	mother = 190192
+
+	690.1.1 = {
+		birth = yes
+	}
+	714.1.1 = {
+		add_spouse = 190197
+	}
+	744.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+190198 = {
+	name = "Hildeprand" # Hildeprand Ansprandidi, langobardi King of Italy (744)
+	dynasty = 1044051
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190194
+
+	709.1.1 = {
+		birth = yes
+	}
+	744.8.1 = {
+		death = yes
+	}
+}
+
+190340 = {
+	name = "Ansa" # Ansa, wife of Desiderius of Italy
+	female = yes
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	712.1.1 = {
+		birth = yes
+	}
+	774.6.1 = {
+		trait = devoted
+	}
+	776.1.1 = {
+		death = yes
+	}
+}
+
+190341 = {
+	name = "Billo" # Billo Billonidi
+	dynasty = 1044050
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	658.1.1 = {
+		birth = yes
+	}
+	702.1.1 = {
+		death = yes
+	}
+}
+
+190342 = {
+	name = "Pemmo" # Pemmo Billonidi, Duke of Friuli (705-737)
+	dynasty = 1044050
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190341
+
+	687.1.1 = {
+		birth = yes
+	}
+	716.1.1 = {
+		add_spouse = 190191
+	}
+	739.1.1 = {
+		death = yes
+	}
+}
+
+190343 = {
+	name = "Ratchis" # Ratchis Billonidi, langobardi King of Italy (744-749 and 756-757), Duke of Friuli (737-744) and Duke of Spoleto (756-757)
+	dynasty = 1044050
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190342
+	mother = 190191
+
+	716.1.1 = {
+		birth = yes
+	}
+	732.1.1 = {
+		add_spouse = 190199
+	}
+	758.1.1 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+
+190331 = {
+	name = "Aistulf" # Aistulf Billonidi, langobardi King of Italy (749-756), Duke of Friuli (744-749) and Spoleto (752-756)
+	dynasty = 1044050
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190342
+	mother = 190191
+
+	717.1.1 = {
+		birth = yes
+	}
+	749.1.1 = {
+		add_spouse = 190344
+	}
+	756.12.1 = {
+		death = {
+			death_reason = death_horse_riding_accident
+		}
+	}
+}
+
+190347 = {
+	name = "Desiderius" # Desiderius/Daufer, langobardi King of Italy (757-774) and Duke of Spoleto (758-759)
+	dynasty = 1044053
+
+	religion = chalcedonian
+	culture = langobard
+
+	717.1.1 = {
+		birth = yes
+	}
+	734.1.1 = {
+		add_spouse = 190340
+	}
+	774.6.1 = {
+		trait = devoted
+	}
+	777.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+
+190348 = {
+	name = "Gerperga" # Gerberga Desideridi, wife of Carloman of France
+	female = yes
+	dynasty = 1044053
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190347
+	mother = 190340
+
+	745.1.1 = {
+		birth = yes
+	}
+	794.1.1 = {
+		death = yes
+	}
+}
+
+190349 = {
+	name = "Ermengarda" # Ermengarda Desideridi, wrongly called Desiderata, wife of Charlemagne
+	female = yes
+	dynasty = 1044053
+
+	father = 190347
+	mother = 190340
+
+	religion = chalcedonian
+	culture = langobard
+
+	747.1.1 = {
+		birth = yes
+	}
+	796.1.1 = {
+		death = yes
+	}
+}
+
+190351 = {
+	name = "Liutperga" # Liutberga Desideridi, wife of Tassilo IV of Bavaria
+	female = yes
+	dynasty = 1044053
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190347
+	mother = 190340
+
+	750.1.1 = {
+		birth = yes
+	}
+	794.1.1 = {
+		death = yes
+	}
+}
+
+190352 = {
+	name = "Anselperga" # Anselperga Desideridi, Abbess
+	female = yes
+	dynasty = 1044053
+	religion = "chalcedonian"
+	culture = "langobard"
+	trait = devoted
+
+	father = 190347
+	mother = 190340
+	744.1.1 = {
+		birth = yes
+	}
+	794.1.1 = {
+		death = yes
+	}
+}
+
+190353 = {
+	name = "Adelchis" # Adelchis Desideridi
+	dynasty = 1044053
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190347
+	mother = 190340
+
+	759.1.1 = {
+		birth = yes
+	}
+	788.1.1 = {
+		death = yes
+	}
+}
+
+190354 = {
+	name = "Alachis" # Alachis, langobardi King of Italy (689)
+	dynasty = 1044054
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	654.1.1 = {
+		birth = yes
+	}
+	689.6.1 = {
+		death = {
+			death_reason = death_battle
+			killer = 190188
+		}
+	}
+}
+
+190265 = {
+	name = "Theodicus" #duke of Spoleto
+	dynasty = 1044061 #Theodingi
+	religion = "chalcedonian"
+	culture = "langobard"
+	727.1.1 = {
+		birth = yes
+	}
+	747.1.1 = {
+		add_spouse = 190266
+	}
+	776.1.1 = {
+		death = yes
+	}
+}
+190266 = {
+	name = "Giselberga" #wife of Theodicus
+	female = yes
+	religion = "chalcedonian"
+	culture = "langobard"
+	731.1.1 = {
+		birth = yes
+	}
+	780.6.1 = {
+		death = yes
+	}
+}
+190267 = {
+	name = "Hildeprand" #duke of Spoleto
+	dynasty = 1044061 #Theodingi
+	religion = "chalcedonian"
+	culture = "langobard"
+	father = 190265
+	mother = 190266
+	750.1.1 = {
+		birth = yes
+	}
+	789.1.1 = {
+		death = yes
+	}
+}
+190268 = {
+	name = "Ursus" #count of Bologna (Persiceta)
+	dynasty = 1044063 #Ursingi
+	religion = "chalcedonian"
+	culture = "langobard"
+	721.1.1 = {
+		birth = yes
+	}
+	772.1.1 = {
+		death = yes
+	}
+}
+190269 = {
+	name = "Ioannes" #count of Bologna
+	dynasty = 1044063 #Ursingi
+	religion = "chalcedonian"
+	culture = "langobard"
+	father = 190268
+	740.1.1 = {
+		birth = yes
+	}
+	776.1.1 = {
+		death = yes
+	}
+}
+190270 = {
+	name = "Ursus" #count of Bologna
+	dynasty = 1044063 #Ursingi
+	religion = "chalcedonian"
+	culture = "langobard"
+	father = 190269
+	760.1.1 = {
+		birth = yes
+	}
+	795.1.1 = {
+		death = yes
+	}
+}
+190271 = {
+	name = "Ademar" #count of Verona
+	dynasty = 1044064 #Ademingi
+	religion = "chalcedonian"
+	culture = "langobard"
+	701.1.1 = {
+		birth = yes
+	}
+	768.1.1 = {
+		death = yes
+	}
+}
+190272 = {
+	name = "Ademar" #count of Verona
+	dynasty = 1044064 #Ademingi
+	religion = "chalcedonian"
+	culture = "langobard"
+	father = 190271
+	742.1.1 = {
+		birth = yes
+	}
+	809.1.1 = {
+		death = yes
+	}
+}
+190273 = {
+	name = "Brunhilda" #wife of Ursus of Bologna
+	female = yes
+	dynasty = 1044064 #Ademingi
+	religion = "chalcedonian"
+	culture = "langobard"
+	father = 190269
+	756.1.1 = { #postponed from 743
+		birth = yes
+	}
+	802.1.1 = {
+		death = yes
+	}
+}
+190274 = {
+	name = "Adalpert" # Adalpert Adalpertidi, Count of Genoa and Luni (741-772)
+	dynasty = 1044065
+	religion = "chalcedonian"
+	culture = "langobard"
+	
+	725.1.1 = {
+		birth = yes
+	}
+	762.1.1 = {
+		death = yes
+	}
+}
+190275 = {
+	name = "Ademar" # Ademar Adalpertidi, Count of Genoa and Luni (772-774)
+	dynasty = 1044065
+	religion = "chalcedonian"
+	culture = "langobard"
+	father = 190274
+	
+	742.1.1 = {
+		birth = yes
+	}
+	806.1.1 = {
+		death = yes
+	}
+}
+190276 = {
+	name = "Adelperga" # Adalperga Adalpertidi, spouse of Alperto of Tuscany
+	female = yes
+	dynasty = 1044065
+	religion = "chalcedonian"
+	culture = "langobard"
+	father = 190274
+	
+	744.1.1 = {
+		birth = yes
+	}
+	816.1.1 = {
+		death = yes
+	}
+}
+190277 = {
+	name = "Petrus" # Petrus Adalpertidi, Count of Corsica (769-774)
+	dynasty = 1044065 #Adalbertingi
+	religion = "chalcedonian"
+	culture = "langobard"
+	father = 190274
+	
+	747.1.1 = {
+		birth = yes
+	}
+	806.1.1 = {
+		death = yes
+	}
+}
+190278 = {
+	name = "Walpert" #duke of Tuscany
+	dynasty = 1044066 #Walpertingi
+	religion = "chalcedonian"
+	culture = "langobard"
+	702.1.1 = {
+		birth = yes
+	}
+	754.1.1 = {
+		death = yes
+	}
+}
+190279 = {
+	name = "Alpert" #duke of Tuscany
+	dynasty = 1044066 #Walpertingi
+	religion = "chalcedonian"
+	culture = "langobard"
+	father = 190278
+	722.1.1 = {
+		birth = yes
+	}
+	760.1.1 = {
+		add_spouse = 190276
+	}
+	773.1.1 = {
+		death = yes
+	}
+}
+190280 = {
+	name = "Tachipert" #duke of Tuscany
+	dynasty = 1044066 #Walpertingi
+	religion = "chalcedonian"
+	culture = "langobard"
+	father = 190278
+	743.1.1 = {
+		birth = yes
+	}
+	774.1.1 = {
+		death = yes
+	}
+}
+190281 = {
+	name = "Tachiperga" #wife of Teuderic count of Ravenna
+	female = yes
+	dynasty = 1044066 #Walpertingi
+	religion = "chalcedonian"
+	culture = "langobard"
+	father = 190278
+	745.1.1 = {
+		birth = yes
+	}
+	790.1.1 = {
+		death = yes
+	}
+}
+190282 = {
+	name = "Lupus" #count of Ferrara
+	dynasty = 1044066 #Walpertingi
+	religion = "chalcedonian"
+	culture = "langobard"
+	father = 190278
+	727.1.1 = {
+		birth = yes
+	}
+	770.1.1 = {
+		death = yes
+	}
+}
+190283 = {
+	name = "Tachipert" #count of Ancona and Urbino
+	dynasty = 1044067 #Tachipertingi
+	religion = "chalcedonian"
+	culture = "langobard"
+	721.1.1 = {
+		birth = yes
+	}
+	760.1.1 = {
+		death = yes
+	}
+}
+190284 = {
+	name = "Lupus" #count of Ancona
+	dynasty = 1044067 #Tachipertingi
+	religion = "chalcedonian"
+	culture = "langobard"
+	father = 190283
+	741.1.1 = {
+		birth = yes
+	}
+	778.1.1 = {
+		death = yes
+	}
+}
+190285 = {
+	name = "Halo" #count of Urbino
+	dynasty = 1044067 #Tachipertingi
+	religion = "chalcedonian"
+	culture = "langobard"
+	father = 190283
+	747.1.1 = {
+		birth = yes
+	}
+	784.1.1 = {
+		death = yes
+	}
+}
+190286 = {
+	name = "Hilciperga" #wife of Hilderic of Ravenna
+	female = yes
+	dynasty = 1044067 #Tachipertingi
+	religion = "chalcedonian"
+	culture = "langobard"
+	father = 190283
+	753.1.1 = {
+		birth = yes
+	}
+	799.1.1 = {
+		death = yes
+	}
+}
+190287 = {
+	name = "Teuderic" #count of Ravenna
+	dynasty = 1044068 #Teudericingi
+	religion = "chalcedonian"
+	culture = "langobard"
+	743.1.1 = {
+		birth = yes
+	}
+	761.1.1 = {
+		add_spouse = 190281
+	}
+	776.1.1 = {
+		death = yes
+	}
+}
+190288 = {
+	name = "Hilderic" #count of Ravenna
+	dynasty = 1044068 #Teudericingi
+	religion = "chalcedonian"
+	culture = "langobard"
+	father = 190287
+	mother = 190281
+	761.1.1 = {
+		birth = yes
+	}
+	779.1.1 = {
+		add_spouse = 190286
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+190289 = {
+	name = "Daufer" # Daufer, Count of Salerno (763-818)
+	dynasty = 1044069
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	743.1.1 = {
+		birth = yes
+	}
+	818.1.1 = {
+		death = yes
+	}
+}
+190295 = {
+	name = "Rodoald" # Rodoald Rodoaldidi, Count of Rossano (740-766)
+	dynasty = 1044070
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	723.1.1 = {
+		birth = yes
+	}
+	766.1.1 = {
+		death = yes
+	}
+}
+
+190296 = {
+	name = "Radulhin" # Radulhin Rodoaldidi, Count of Rossano (766-788)
+	dynasty = 1044070
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190295
+
+	740.1.1 = {
+		birth = yes
+	}
+	788.1.1 = {
+		death = yes
+	}
+}
+
+190297 = {
+	name = "Ermepert" # Ermepert Rodoaldidi, Count of Rossano (788-790)
+	dynasty = 1044070
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190295
+
+	743.1.1 = {
+		birth = yes
+	}
+	790.1.1 = {
+		death = yes
+	}
+}
+
+190298 = {
+	name = "Eufemia" #Eufemia Rodoaldidi, wife of Roderissus of Camarda
+	female = yes
+	dynasty = 1044070
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190295
+
+	742.1.1 = {
+		birth = yes
+	}
+	790.1.1 = {
+		death = yes
+	}
+}
+
+190299 = {
+	name = "Roderissus" # Roderissus (I) Roderissidi, Count of Camarda (763-810)
+	dynasty = 1044086
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	745.1.1 = {
+		birth = yes
+	}
+	762.1.1 = {
+		add_spouse = 190298
+	}
+	810.1.1 = {
+		death = yes
+	}
+}
+
+190300 = {
+	name = "Rodegar" # Rodegar Roderissidi, Count of Camarda (810-811)
+	dynasty = 1044086
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190299
+	mother = 190298
+
+	763.1.1 = {
+		birth = yes
+	}
+	811.1.1 = {
+		death = yes
+	}
+}
+
+190302 = {
+	name = "Framicus" # Framicus Roderissidi
+	dynasty = 1044086
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190299
+	mother = 190298
+
+	765.1.1 = {
+		birth = yes
+	}
+	810.1.1 = {
+		death = yes
+	}
+}
+
+190303 = {
+	name = "Gandulf" # Gandulf Gandulfidi, Count of Bari (742-766)
+	dynasty = 1044071
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	721.1.1 = {
+		birth = yes
+	}
+	766.1.1 = {
+		death = yes
+	}
+}
+
+190304 = {
+	name = "Daufer" # Daufer Gandulfidi, Count of Bari (766-830)
+	dynasty = 1044071
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190303
+
+	763.1.1 = {
+		birth = yes
+	}
+	830.1.1 = {
+		death = yes
+	}
+}
+
+190306 = {
+	name = "Arnegisa" # Arnegisa Gandulfidi, wife of Maio of Aprutium
+	female = yes
+	dynasty = 1044071
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190303
+
+	741.1.1 = {
+		birth = yes
+	}
+	811.1.1 = {
+		death = yes
+	}
+}
+
+190307 = {
+	name = "Radegisa" # Radegisa Gandulfidi, wife of Paldo of Apulia
+	female = yes
+	dynasty = 1044071
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190303
+
+	743.1.1 = {
+		birth = yes
+	}
+	810.1.1 = {
+		death = yes
+	}
+}
+
+190308 = {
+	name = "Maio" #count of Aprutium
+	dynasty = 1044072 #Maioingi
+	religion = "chalcedonian"
+	culture = "langobard"
+	742.1.1 = {
+		birth = yes
+	}
+	762.1.1 = {
+		add_spouse = 190306
+	}
+	813.1.1 = {
+		death = yes
+	}
+}
+190309 = {
+	name = "Maio" #count of Aprutium
+	dynasty = 1044072 #Maioingi
+	religion = "chalcedonian"
+	culture = "langobard"
+	father = 190308
+	mother = 190306
+	766.1.1 = {
+		birth = yes
+	}
+	850.1.1 = {
+		death = yes
+	}
+}
+
+190310 = {
+	name = "Paldo" # Paldo Paldonidi, Count of Apulia (762-807)
+	dynasty = 1044073
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	746.1.1 = {
+		birth = yes
+	}
+	762.1.1 = {
+		add_spouse = 190307
+	}
+	807.1.1 = {
+		death = yes
+	}
+}
+
+190311 = {
+	name = "Stefanus" # Stefanus Paldonidi, Count of Apulia (807-817)
+	dynasty = 1044073
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190310
+	mother = 190307
+
+	766.1.1 = {
+		birth = yes
+	}
+	827.1.1 = {
+		death = yes
+	}
+}
+
+190312 = {
+	name = "Warpert" #count of Mantua
+	dynasty = 1044074 #Varbertingi
+	religion = "chalcedonian"
+	culture = "langobard"
+	736.1.1 = {
+		birth = yes
+	}
+	753.1.1 = {
+		add_spouse = 190313
+	}
+	797.1.1 = {
+		death = yes
+	}
+}
+190313 = {
+	name = "Richilda" #wife of Varbert of Mantua
+	female = yes
+	dynasty = 1044074 #Varbertingi
+	religion = "chalcedonian"
+	culture = "langobard"
+	735.1.1 = {
+		birth = yes
+	}
+	797.1.1 = {
+		death = yes
+	}
+}
+190314 = {
+	name = "Lantpert" #count of Parma
+	dynasty = 1044074 #Varbertingi
+	religion = "chalcedonian"
+	culture = "langobard"
+	father = 190312
+	mother = 190313
+	753.1.1 = {
+		birth = yes
+	}
+	817.1.1 = {
+		death = yes
+	}
+}
+190315 = {
+	name = "Grimoald"
+	dynasty = 1044074 #Varbertingi
+	religion = "chalcedonian"
+	culture = "langobard"
+	father = 190312
+	mother = 190313
+	755.1.1 = {
+		birth = yes
+	}
+	817.1.1 = {
+		death = yes
+	}
+}
+190316 = {
+	name = "Warperga"
+	female = yes
+	dynasty = 1044074 #Varbertingi
+	religion = "chalcedonian"
+	culture = "langobard"
+	father = 190312
+	mother = 190313
+	757.1.1 = {
+		birth = yes
+	}
+	820.1.1 = {
+		death = yes
+	}
+}
+190317 = {
+	name = "Billo"
+	dynasty = 1044074 #Varbertingi
+	religion = "chalcedonian"
+	culture = "langobard"
+	father = 190312
+	mother = 190313
+	758.1.1 = {
+		birth = yes
+	}
+	818.1.1 = {
+		death = yes
+	}
+}
+190318 = {
+	name = "Drogo"
+	dynasty = 1044074 #Varbertingi
+	religion = "chalcedonian"
+	culture = "langobard"
+	father = 190312
+	mother = 190313
+	759.1.1 = {
+		birth = yes
+	}
+	818.1.1 = {
+		death = yes
+	}
+}
+190319 = {
+	name = "Daufer"
+	dynasty = 1044074 #Varbertingi
+	religion = "chalcedonian"
+	culture = "langobard"
+	father = 190312
+	mother = 190313
+	763.1.1 = {
+		birth = yes
+	}
+	827.1.1 = {
+		death = yes
+	}
+}
+190320 = {
+	name = "Paldo" # Paldo, Count of langobardiia (766-774)
+	dynasty = 1044075
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	746.1.1 = {
+		birth = yes
+	}
+	807.1.1 = {
+		death = yes
+	}
+}
+190322 = {
+	name = "Lantpert" #count of Modena
+	dynasty = 1044077 #Lambertingi
+	religion = "chalcedonian"
+	culture = "langobard"
+	741.1.1 = {
+		birth = yes
+	}
+	809.1.1 = {
+		death = yes
+	}
+}
+190323 = {
+	name = "Engelpert" #count of Treviso
+	dynasty = 1044078 #Engelbertingi
+	religion = "chalcedonian"
+	culture = "langobard"
+	742.1.1 = {
+		birth = yes
+	}
+	807.1.1 = {
+		death = yes
+	}
+}
+190324 = {
+	name = "Liutfred" # Liutfred, Count of Montferrato (757-774)
+	dynasty = 1044079
+	religion = "chalcedonian"
+	culture = "langobard"
+	
+	737.1.1 = {
+		birth = yes
+	}
+	778.1.1 = {
+		death = yes
+	}
+}
+190325 = {
+	name = "Potho" # Potho Gaidoaldidi, Count of Brescia (756-774)
+	dynasty = 1044080
+	religion = "chalcedonian"
+	culture = "langobard"
+	
+	731.1.1 = {
+		birth = yes
+	}
+	783.1.1 = {
+		death = yes
+	}
+}
+190326 = {
+	name = "Taso" #count of Sienna
+	dynasty = 1044081 #Tasingi
+	religion = "chalcedonian"
+	culture = "langobard"
+	746.1.1 = {
+		birth = yes
+	}
+	804.1.1 = {
+		death = yes
+	}
+}
+190328 = {
+	name = "Petrus" #count of Orvieto/Orbetello
+	dynasty = 1044082 #Petringi
+	religion = "chalcedonian"
+	culture = "langobard"
+	737.1.1 = {
+		birth = yes
+	}
+	804.1.1 = {
+		death = yes
+	}
+}
+190329 = {
+	name = "Faroald" #count of Piombino
+	dynasty = 1044083 #Faroaldingi
+	religion = "chalcedonian"
+	culture = "langobard"
+	751.1.1 = {
+		birth = yes
+	}
+	799.1.1 = {
+		death = yes
+	}
+}
+190330 = {
+	name = "Liutprand" # Liutprand, Count of Turin, Cuneo and Novara (756-774)
+	dynasty = 1044084
+	religion = "chalcedonian"
+	culture = "langobard"
+	trait = education_stewardship_2
+	
+	740.1.1 = {
+		birth = yes
+	}
+	791.1.1 = {
+		death = yes
+	}
+}
+190332 = {
+	name = "Pando" # Pando Landolfidi, Placeholder Count of Capua (768-815)
+	dynasty = 7184
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	740.1.1 = {
+		birth = yes
+	}
+	815.1.1 = {
+		death = yes
+	}
+}
+
+
+218000 = {
+	name = "Leopold"
+
+	religion = chalcedonian
+	culture = langobard
+	740.1.1 = {
+		birth = yes
+	}
+	793.1.1 = {
+		death = yes
+	}
+}
+221100 = {
+	name = "Adaloald"
+	dynasty = 1062609
+	religion = chalcedonian
+	culture = langobard
+	745.1.1 = {
+		birth = yes
+	}
+	804.1.1 = {
+		death = yes
+	}
+}
+
+langobardi0089 = {
+	name = "Gisa" # Gisa Gausi, wife of Trasimond I of Spoleto
+	dynasty = 99930001
+	female = yes
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190133
+	#daughter of an early marriage of his father
+
+	645.1.1 = {
+		birth = yes
+	}
+	662.1.1 = {
+		death = yes
+	}
+}
+
+langobardi0090 = {
+	name = "Audelais" # Audelais Audelaisidi, Duke of Benevento (732)
+	dynasty = audelaisidi
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	700.1.1 = {
+		birth = yes
+	}
+	732.6.1 = {
+		death = yes
+	}
+}
+
+langobardi0091 = {
+	name = "Godescalc" # Godescalc Godescalcidi, Duke of Benevento (739-742)
+	dynasty = godescalcidi
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	702.1.1 = {
+		birth = yes
+	}
+	742.1.1 = {
+		death = {
+			death_reason = death_murder
+		}
+	}
+}
+
+langobardi0092 = {
+	name = "Arechis" # Arechis Gausi
+	dynasty = 99930001
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190135
+	mother = 190137
+
+	673.1.1 = {
+		birth = yes
+	}
+	723.1.1 = {
+		death = yes
+	}
+}
+
+langobardi0093 = {
+	name = "Romoald" # Romoald Gausi
+	dynasty = 99930001
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = langobardi0092
+
+	706.1.1 = {
+		birth = yes
+	}
+	756.1.1 = {
+		death = yes
+	}
+}
+
+langobardi0094 = {
+	name = "Winiperga" # Winiperga Beleos, wife of Agilolf of Italy
+	dynasty = 1044045
+	female = yes
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190168
+
+	556.1.1 = {
+		birth = yes
+	}
+	590.1.5 = {
+		death = yes
+	}
+}
+
+langobardi0095 = {
+	name = "Nordepert" # Nordepert, fictional husband of Aurona of Italy
+	dynasty = 1044037
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	660.1.1 = {
+		birth = yes
+	}
+	684.1.1 = {
+		add_spouse = 190195
+	}
+	710.1.1 = {
+		death = yes
+	}
+}
+
+langobardi0096 = {
+	name = "Imperga" # Imberga Ansprandidi, wife of Teodone of Asti
+	female = yes
+	dynasty = 1044051
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190193
+	mother = 190192
+
+	682.1.1 = {
+		birth = yes
+	}
+	744.1.1 = {
+		death = yes
+	}
+}
+
+langobardi0097 = {
+	name = "Agiprand" # Agiprand Ansprandidi, Duke of Spoleto (742-744)
+	dynasty = 1044051
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190194
+
+	710.1.1 = {
+		birth = yes
+	}
+	744.1.1 = {
+		death = yes
+	}
+}
+
+langobardi0098 = {
+	name = "Gregorius" # Gregorius Ansprandidi, Duke of Benevento (732-739)
+	dynasty = 1044051
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190194
+
+	711.1.1 = {
+		birth = yes
+	}
+	739.1.1 = {
+		death = yes
+	}
+}
+
+190180 = {
+	name = "Gundoald" # Gundoald Baiuvari, son of Garibald of Bavaria and father of Aripert of Italy
+	dynasty_house = house_baiuvari
+	religion = "chalcedonian"
+	culture = "langobard"
+
+	father = 190178
+
+	571.1.1 = {
+		birth = yes
+	}
+	612.1.1 = {
+		death = yes
+	}
+}
+
+
+### End of lords of c_venezia
+# Start of Antenoreo
+145922 = {
+	name = "Encagilio"
+	dynasty = 1022328
+	religion = "chalcedonian"
+	culture = langobard
+	727.1.1 = {
+		birth = "727.1.1"
+	}
+	792.1.1 = {
+		death = "792.1.1"
+	}
+}
+
+
+145923 = {
+	name = "Obelerio"
+	dynasty = 1022328
+	religion = "chalcedonian"
+	culture = langobard
+	father = 145922
+	764.1.1 = {
+		birth = "764.1.1"
+	}
+	832.1.1 = {
+		death = "832.1.1"
+	}
+}
+
+145924 = {
+	name = "Beato"
+	dynasty = 1022328
+	religion = "chalcedonian"
+	culture = langobard
+	father = 145922
+	766.1.1 = {
+		birth = "766.1.1"
+	}
+	833.1.1 = {
+		death = "833.1.1"
+	}
+}
+
+145925 = {
+	name = "Valentino"
+	dynasty = 1022328
+	religion = "chalcedonian"
+	culture = langobard
+	father = 145922
+	768.1.1 = {
+		birth = "768.1.1"
+	}
+	835.1.1 = {
+		death = "835.1.1"
+	}
+}
+# End of Antenoreo
+# Start of Galbaio
+145919 = {
+	name = "Maurizio"
+	dynasty = 1022327
+	religion = "chalcedonian"
+	culture = cisalpine
+	trait = gregarious
+	trait = diligent
+	trait = education_diplomacy_4
+
+	726.1.1 = {
+		birth = "726.1.1"
+	}
+	787.1.1 = {
+		death = "787.1.1"
+	}
+}
+
+145920 = {
+	name = "Giovanni"
+	dynasty = 1022327
+	religion = "chalcedonian"
+	culture = langobard
+	father = 145919
+	trait = ambitious
+	748.1.1 = {
+		birth = "748.1.1"
+	}
+	813.1.1 = {
+		death = "813.1.1"
+	}
+}
+
+145921 = {
+	name = "Maurizio"
+	dynasty = 1022327
+	religion = "chalcedonian"
+	culture = langobard
+	father = 145920
+	767.1.1 = {
+		birth = "767.1.1"
+	}
+	831.1.1 = {
+		death = "831.1.1"
+	}
+}
+
+145928 = {
+	name = "Leone"
+	dynasty = 1022327
+	religion = "chalcedonian"
+	culture = langobard
+	father = 145919
+	752.1.1 = {
+		birth = "752.1.1"
+	}
+	810.1.1 = {
+		death = "810.1.1"
+	}
+}
+
+# End of Galbaio
+# Start of Monegario
+145916 = {
+	name = "Domenico"
+	dynasty = 1022326
+	religion = "chalcedonian"
+	culture = langobard
+
+	720.1.1 = {
+		birth = "720.1.1"
+	}
+	764.1.1 = {
+		trait = blind
+	}
+	772.1.1 = {
+		death = "772.1.1"
+	}
+}
+
+145917 = {
+	name = "Caesario"
+	dynasty = 1022326
+	religion = "chalcedonian"
+	culture = langobard
+	father = 145916
+	739.1.1 = {
+		birth = "739.1.1"
+	}
+	801.1.1 = {
+		death = "801.1.1"
+	}
+}
+
+145918 = {
+	name = "Sergio"
+	dynasty = 1022326
+	religion = "chalcedonian"
+	culture = langobard
+	father = 145916
+	746.1.1 = {
+		birth = "746.1.1"
+	}
+	811.1.1 = {
+		death = "811.1.1"
+	}
+}
+# End of Monegario
+# Start of Gaulo
+145915 = {
+	name = "Galla"
+	dynasty = 1022325
+	religion = "chalcedonian"
+	culture = langobard
+
+	722.1.1 = {
+		birth = "722.1.1"
+	}
+	756.1.1 = {
+		trait = blind
+	}
+	763.1.1 = {
+		death = "763.1.1"
+	}
+}
+# End of Gaulo
+# Start of Orseolo
+145910 = {
+	name = "Orso"
+	dynasty = 101562
+	religion = "chalcedonian"
+	culture = langobard
+	690.1.1 = {
+		birth = "690.1.1"
+	}
+	737.1.1 = {
+		death = "737.1.1"
+	}
+}
+
+145911 = {
+	name = "Teodato"
+	dynasty = 101562
+	religion = "chalcedonian"
+	culture = langobard
+	father = 145910
+	715.1.1 = {
+		birth = "715.1.1"
+	}
+	755.1.1 = {
+		trait = blind
+	}
+	782.1.1 = {
+		death = "782.1.1"
+	}
+}
+
+145912 = {
+	name = "Pietro"
+	dynasty = 101562
+	religion = "chalcedonian"
+	culture = langobard
+	father = 145911
+	740.1.1 = {
+		birth = "740.1.1"
+	}
+	797.1.1 = {
+		death = "797.1.1"
+	}
+}
+
+145913 = {
+	name = "Jacopo"
+	dynasty = 101562
+	religion = "chalcedonian"
+	culture = langobard
+	father = 145912
+	762.1.1 = {
+		birth = "762.1.1"
+	}
+	821.1.1 = {
+		death = "821.1.1"
+	}
+}
+
+#
+
+langobardi_01 = {
+	name = "Gisulf"
+	religion = "arianism"
+	culture = "langobard"
+	503.1.1 = {
+		birth = yes
+	}
+	570.1.1 = {
+		death = yes
+	}
+}
+
+langobardi_02 = {
+	name = "Aldonius"
+	religion = "arianism"
+	culture = "langobard"
+	430.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+langobardi_03 = {
+	name = "Hildechis"
+	religion = "arianism"
+	culture = "langobard"
+	503.1.1 = {
+		birth = yes
+	}
+	578.1.1 = {
+		death = yes
+	}
+}
+langobardi_04 = {
+	name = "Beleo"
+	religion = "arianism"
+	culture = "langobard"
+	509.1.1 = {
+		birth = yes
+	}
+	578.1.1 = {
+		death = yes
+	}
+}
+gambaring_01 = {
+	name = "Gambara"
+	religion = "central_pagan"
+	culture = "langobard"
+	female = yes
+	dynasty = 99930002
+	250.1.1 = {
+		birth = yes
+	}
+	325.1.1 = {
+		death = yes
+	}
+}
+gambaring_02 = {
+	name = "Agio"
+	religion = "central_pagan"
+	culture = "langobard"
+	mother = gambaring_01
+	dynasty = 99930002
+	271.1.1 = {
+		birth = yes
+	}
+	320.1.1 = {
+		death = yes
+	}
+}
+gambaring_05 = {
+	name = "Ymbor"
+	religion = "central_pagan"
+	culture = "langobard"
+	mother = gambaring_01
+	dynasty = 99930002
+	270.1.1 = {
+		birth = yes
+	}
+	319.1.1 = {
+		death = yes
+	}
+}
+gambaring_03 = {
+	name = "Agilmund"
+	religion = "central_pagan"
+	culture = "langobard"
+	father = gambaring_02
+	dynasty = 99930002
+	290.1.1 = {
+		birth = yes
+	}
+	345.1.1 = {
+		death = yes
+	}
+}
+gambaring_04 = {
+	name = "Laiamicho"
+	religion = "central_pagan"
+	culture = "langobard"
+	trait = vengeful
+	father = gambaring_03
+	dynasty = 99930002
+	320.1.1 = {
+		birth = yes
+	}
+	385.1.1 = {
+		death = yes
+	}
+}
+
+
+
+##################################################################################
+# 
+# FICTITIOUS PLACEHOLDERS
+# By Cybrxkhan
+# 
+##################################################################################
+
+
+langobard_misc_001 = {
+	name = "Cleffo"
+	religion = "central_pagan"
+	culture = "langobard"
+	486.2.4 = {
+		birth = yes
+	}
+	579.3.9 = {
+		death = yes
+	}
+}
+
+
+langobard_misc_002 = {
+	name = "Rochus"
+	religion = "arianism"
+	culture = "langobard"
+	500.3.20 = {
+		birth = yes
+	}
+	564.12.16 = {
+		death = yes
+	}
+}
+
+langobard_misc_003 = {
+	name = "Gacco"
+	religion = "central_pagan"
+	culture = "langobard"
+	499.3.12 = {
+		birth = yes
+	}
+	570.8.14 = {
+		death = yes
+	}
+}
+
+
+

@@ -1,0 +1,372 @@
+﻿##Gushnasp
+gushnaspid_01 = {
+	name = "Gushnasp"
+	dynasty = 900017
+	religion = "afridunism"
+	culture = daylamite
+	200.1.1 = {
+		birth = yes
+	}
+	276.1.1 = {
+		death = yes
+	}
+}
+gushnaspid_02 = {
+	name = "Nastihan"
+	dynasty = 900017
+	religion = "afridunism"
+	culture = daylamite
+	father = gushnaspid_01
+	244.1.1 = {
+		birth = yes
+	}
+	305.1.1 = {
+		death = yes
+	}
+}
+gushnaspid_04 = {
+	name = "Siyavash"
+	dynasty = 900017
+	religion = "afridunism"
+	culture = daylamite
+	father = gushnaspid_02
+	278.1.1 = {
+		birth = yes
+	}
+	355.1.1 = {
+		death = yes
+	}
+}
+gushnaspid_05 = {
+	name = "Fath"
+	dynasty = 900017
+	religion = "afridunism"
+	culture = daylamite
+	father = gushnaspid_04
+	302.1.1 = {
+		birth = yes
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+gushnaspid_06 = {
+	name = "Nastihan"
+	dynasty = 900017
+	religion = "afridunism"
+	culture = daylamite
+	father = gushnaspid_04
+	310.1.1 = {
+		birth = yes
+	}
+	394.1.1 = {
+		death = yes
+	}
+}
+gushnaspid_11 = {
+	name = "Sivayash"
+	dynasty = 900017
+	religion = "afridunism"
+	culture = daylamite
+	father = gushnaspid_06
+	345.1.1 = {
+		birth = yes
+	}
+	408.1.1 = {
+		death = yes
+	}
+}
+gushnaspid_07 = {
+	name = "Marzuban"
+	dynasty = 900017
+	religion = "afridunism"
+	culture = daylamite
+	father = gushnaspid_05
+	337.1.1 = {
+		birth = yes
+	}
+	408.1.1 = {
+		death = yes
+	}
+}
+gushnaspid_08 = {
+	name = "Sasan"
+	dynasty = 900017
+	religion = "afridunism"
+	culture = daylamite
+	father = gushnaspid_07
+	382.1.1 = {
+		birth = yes
+	}
+	459.1.1 = {
+		death = yes
+	}
+}
+gushnaspid_09 = {
+	name = "Afrasiab"
+	dynasty = 900017
+	religion = "afridunism"
+	culture = daylamite
+	father = gushnaspid_08
+	410.1.1 = {
+		birth = yes
+	}
+	488.1.1 = {
+		death = yes
+	}
+}
+gushnaspid_10 = {
+	name = "Marzuban"
+	dynasty = 900017
+	religion = "afridunism"
+	culture = daylamite
+	father = gushnaspid_09
+	445.1.1 = {
+		birth = yes
+	}
+	520.1.1 = {
+		death = yes
+	}
+}
+gushnaspid_03 = {
+	name = "Haftvad"
+	dynasty = 900017
+	religion = "afridunism"
+	culture = daylamite
+	father = gushnaspid_01
+	248.1.1 = {
+		birth = yes
+	}
+	310.1.1 = {
+		death = yes
+	}
+}
+
+
+#Bavandid
+
+#Justanids
+180750 = {
+	name = "Justan"
+	# Justan I of Gilan
+	dynasty = 7513
+	religion = "afridunism"
+	culture = daylamite
+	745.1.1 = {
+		birth = "745.1.1"
+	}
+	805.1.1 = {
+		death = "805.1.1"
+	}
+}
+######################################
+#SWMH Daylamite Characters
+######################################
+#Daylamite characters
+#Dynasties: 1102200 - 1102249
+#Characters: 1231050 - 1231199
+
+######################################
+#Kakúyids
+
+216902 = {
+	name = "Khur-Zad"
+	dynasty = 7332
+	religion = "afridunism"
+	culture = daylamite
+	father = 216901
+	660.1.1 = {
+		birth = yes
+	}
+	723.1.1 = {
+		death = yes
+	}
+}
+216903 = {
+	name = "Paduspan"
+	dynasty = 7332
+	religion = "afridunism"
+	culture = daylamite
+	father = 216902
+	680.1.1 = {
+		birth = yes
+	}
+	762.1.1 = {
+		death = yes
+	}
+}
+216904 = {
+	name = "Shahriyar"
+	dynasty = 7332
+	religion = "afridunism"
+	culture = daylamite
+	father = 216903
+	#trait = sympathy_islam
+	722.1.1 = {
+		birth = yes
+	}
+	791.1.1 = {
+		death = yes
+	}
+}
+
+216905 = {
+	name = "Wandad_Umid"
+	dynasty = 7332
+	religion = "afridunism"
+	culture = daylamite
+	father = 216904
+	#trait = sympathy_islam
+	750.1.1 = {
+		birth = yes
+	}
+	822.1.1 = {
+		death = yes
+	}
+}
+
+### KAREN DYNSATIES
+160303 = {
+	name = "Sukhra"
+	dynasty = 7511
+	religion = "afridunism"
+	culture = daylamite
+	father = sukhra_04
+	563.1.1 = {
+		birth = yes
+	}
+	621.1.1 = {
+		death = yes
+	}
+}
+160302 = {
+	name = "Balash"
+	dynasty = 7511
+	religion = "afridunism"
+	culture = daylamite
+	father = 160303
+	600.1.1 = {
+		birth = yes
+	}
+	645.1.1 = {
+		death = yes
+	}
+}
+160301 = {
+	name = "Alanda"
+	dynasty = 7511
+	religion = "afridunism"
+	culture = daylamite
+	father = 160302
+	622.1.1 = {
+		birth = yes
+	}
+	665.1.1 = {
+		death = yes
+	}
+}
+160300 = {
+	name = "Balash"
+	dynasty = 7511
+	religion = "afridunism"
+	culture = daylamite
+	father = 160301
+	640.1.1 = {
+		birth = yes
+	}
+	673.1.1 = {
+		death = yes
+	}
+}
+160299 = {
+	name = "Vandad" #unhistorical
+	dynasty = 7511
+	religion = "afridunism"
+	culture = daylamite
+	father = 160300
+	635.1.1 = {
+		birth = yes
+	}
+	700.1.1 = {
+		death = yes
+	}
+}
+160298 = {
+	name = "Karen" #unhistorical
+	dynasty = 7511
+	religion = "afridunism"
+	culture = daylamite
+	father = 160299
+	680.1.1 = { #postponed from 660
+		birth = yes
+	}
+	742.1.1 = { #postponed from 737
+		death = yes
+	}
+}
+188731 = {
+	name = "Maziar" #unhistorical
+	dynasty = 7511
+	religion = "afridunism"
+	culture = daylamite
+	father = 160298
+	700.1.1 = {
+		birth = yes
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+160297 = {
+	name = "Vandad_Hormozd"
+	dynasty = 7511
+	religion = "afridunism"
+	culture = daylamite
+	father = 160298
+	740.1.1 = {
+		birth = yes
+	}
+	815.1.1 = {
+		death = yes
+	}
+}
+
+#############################################################
+# 
+# DAYLAMITES
+# 
+# Done by Cybrxkhan
+# 
+#############################################################
+
+# Boe, general and high official
+# Sent in 523 against King Gurgen of Iberia
+# May be the same as a general later active in northern Mesopotamia against the Romans
+# Wikipedia lists him as the same guy as the general Wahrez active in Yemen in the 570s, but this is uncertain
+# THerefore, I have interpreted them as two different people
+daylamite_01 = {
+	name = "Boe"
+	religion = "afridunism"
+	culture = daylamite
+	499.4.9 = {
+		birth = yes
+	}
+	557.3.14 = {
+		death = yes
+	}
+}
+
+# General involved in Sassanid conquest of Yemen in the 570s
+# Removed since he is already represented elsewhere in the Varaz family, per basileusoferis
+# daylamite_02 = {
+# 	name = "Wahrez"
+# 	religion = "afridunism"
+# 	culture = daylamite
+# 	510.6.27 = {
+# 		birth = yes
+# 	}
+# 	588.5.22 = {
+# 		death = yes
+# 	}
+# }
+

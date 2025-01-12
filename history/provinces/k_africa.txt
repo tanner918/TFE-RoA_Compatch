@@ -1,0 +1,460 @@
+﻿#k_africa
+##d_kairouan ###################################
+###c_kairwan
+4594 = {	#KAIROUAN
+	culture = afro_roman
+	religion = donatism
+	holding = castle_holding
+
+	632.1.1 = {
+		religion = chalcedonian
+		culture = afro_roman
+	}
+	768.1.1 = {
+		religion = ibadi
+		culture = maghrebi
+	}
+
+}
+4592 = {	#JALULA
+	holding = none
+}
+4593 = {	#SABIBA
+	holding = none
+}
+4595 = {	#RAQQADA
+	holding = none
+}
+4596 = {	#MANSURIYA
+	holding = none
+}
+4597 = {	#AL ABBASIYA
+	holding = none
+}
+###c_west_qamuda
+4598 = {	#AL-QASRAYN
+	culture = afro_roman
+	religion = montanist
+	holding = castle_holding
+
+	476.1.1 = {
+		religion = chalcedonian
+	}
+	632.1.1 = {
+		culture = afro_roman
+	}
+	768.1.1 = {
+		religion = ashari
+	}
+}
+4599 = {	#QAFSA
+	holding = castle_holding
+	
+	768.1.1 = { 
+		holding = city_holding
+	}
+}
+4624 = {	#TALA
+	holding = church_holding
+	
+	# History
+	1054.1.1 = { #Area conquered by tribals and turned into nomadic pastures
+		holding = none
+	}
+}
+
+###c_tabassa
+4623 = {	#TABASSA
+	culture = afro_roman
+	religion = nicene
+	holding = castle_holding
+	
+	476.9.4 = {
+		religion = arianism
+	}
+	632.1.1 = {
+		religion = chalcedonian
+		culture = afro_roman
+	}
+	768.1.1 = {
+		religion = ibadi
+		culture = butr
+	}
+}
+4607 = {	#MADILA
+	holding = none
+}
+4625 = {	#MAYDARA
+	holding = none
+}
+4626 = {	#MASKIYANA
+	holding = none
+}
+
+##d_tunis ###################################
+###c_tunis
+4582 = {	#TUNIS
+	culture = afro_roman
+	religion = donatism
+	
+	holding = castle_holding
+	
+	# History
+	1.1.1 = {
+		special_building_slot = cothon_01
+		special_building = cothon_01
+	}
+	476.9.4 = {
+		religion = arianism
+		culture = vandal
+	}
+	632.1.1 = {
+		religion = chalcedonian
+		culture = greek
+	}
+	768.1.1 = {
+		culture = baranis
+	}
+}
+4581 = {	#ZAGHWAN
+	holding = city_holding
+}
+4583 = {	#QARTAJANA
+	holding = castle_holding
+}
+4584 = {	#NABEUL
+	holding = church_holding
+}
+4753 = {	#SILYANA
+	holding = none
+}
+
+###c_satfura
+4585 = {	#BANZART
+	culture = afro_roman
+	religion = donatism 
+	holding = castle_holding
+
+	632.1.1 = {
+		religion = chalcedonian
+		culture = afro_roman
+	}
+	768.1.1 = {
+		religion = ashari
+		culture = baranis
+	}
+}
+4586 = {	#TABARQA
+	holding = church_holding
+}
+4587 = {	#MANSA'L-KHARAZ
+	holding = none
+}
+
+###c_medjerda
+4589 = {	#BAJA_MEDJERDA
+	culture = afro_roman
+	religion = donatism 
+	holding = castle_holding
+
+	632.1.1 = {
+		religion = chalcedonian
+		culture = afro_roman
+	}
+	768.1.1 = {
+		religion = ashari
+		culture = baranis
+	}
+}
+4590 = {	#SIQQABANARIYA
+	holding = none
+}
+4591 = {	#AL_ARIBUS
+	holding = none
+}
+
+###c_mahdiya
+4578 = {	#MAHDIYA
+	culture = afro_roman
+	religion = donatism 
+	holding = castle_holding
+
+	632.1.1 = {
+		religion = chalcedonian
+	}
+	768.1.1 = {
+		religion = ashari
+		culture = maghrebi
+	}
+}
+4579 = {	#MONASTIR
+	holding = church_holding
+}
+4580 = {	#SUSA
+	holding = city_holding
+}
+
+##d_kroumerie ###################################
+###c_constantine
+4631 = {	#CONSTANTINE
+	culture = afro_roman
+	religion = nicene
+	holding = castle_holding
+
+	476.9.4 = {
+		religion = arianism
+	}
+	632.1.1 = {
+		religion = chalcedonian
+	}
+	768.1.1 = {
+		religion = ibadi
+		culture = baranis
+	}
+}
+4620 = {	#QASR-AL-IFRIQI
+	#holding = none
+}
+4632 = {	#TIJIS
+	#holding = none
+}
+4628 = {	#TIFASH
+	#holding = none
+}
+4629 = {	#TABURSHIQ
+	#holding = none
+}
+
+###c_annaba
+4588 = {	#ANNABA
+	culture = afro_roman
+	religion = abelian # Home of a small sect of Judaeo-Christians
+	holding = castle_holding
+
+	476.9.4 = {
+		religion = arianism
+	}
+	632.1.1 = {
+		religion = chalcedonian
+	}
+	768.1.1 = {
+		religion = ibadi
+		culture = baranis
+	}
+}
+4630 = {	#QALAMA
+	#holding = none
+}
+4752 = {	#IZAN
+	#holding = none
+}
+
+##d_gabes ###################################
+###c_gabes
+4573 = {	#GABES
+	culture = afro_roman
+	religion = roman_pagan 
+	holding = castle_holding
+
+	395.1.1 = {
+		religion = donatism
+	}
+	476.9.4 = {
+		religion = arianism
+	}
+	632.1.1 = {
+		religion = chalcedonian
+	}
+	768.1.1 = {
+		religion = ibadi
+		culture = butr
+	}
+}
+4574 = {	#AL HAMMA
+	holding = city_holding
+}
+
+###c_sfax
+4575 = {	#SFAX
+	culture = afro_roman
+	religion = roman_pagan 
+	holding = castle_holding
+
+	395.1.1 = {
+		religion = donatism
+	}
+	476.9.4 = {
+		religion = arianism
+	}
+	632.1.1 = {
+		religion = chalcedonian
+	}
+	768.1.1 = {
+		religion = ashari
+		culture = baranis
+	}
+}
+4576 = {	#EL_JEM
+	holding = city_holding
+}
+4577 = {	#SLAKTA
+	holding = none
+}
+
+##d_jerid ###################################
+###c_qashtiliya
+4601 = {	#TOZEUR
+	culture = laguatan
+	religion = nicene
+	holding = castle_holding
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	632.1.1 = {
+		culture = afro_roman
+	}
+	768.1.1 = {
+		religion = ibadi
+		culture = butr
+	}
+}
+4600 = {	#TAQYUS
+	holding = city_holding
+	
+	# History
+	1054.1.1 = { #Area conquered by tribals and turned into nomadic pastures
+		holding = none
+	}
+}
+4602 = {	#HAMMA
+	holding = none
+}
+4603 = {	#NAFTA
+	holding = city_holding
+}
+4606 = {	#MADAS
+	holding = none
+}
+
+##d_tripolitania ###################################
+###c_tripolitana
+4557 = {	#LIBTRIPOLI
+	culture = afro_roman
+	religion = nicene
+	holding = castle_holding
+
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	632.1.1 = {
+		culture = afro_roman
+	}
+	768.1.1 = {
+		religion = ibadi
+		culture = butr
+	}
+}
+4568 = {	#SABRATHA
+	holding = city_holding
+}
+
+###c_djerba
+4562 = {	#JERBA
+	culture = afro_roman
+	religion = nicene 
+	holding = castle_holding
+	
+	395.1.1 = {
+		religion = donatism
+	}
+	476.1.1 = {
+		religion = arianism
+	}
+	632.1.1 = {
+		religion = chalcedonian
+	}
+	768.1.1 = {
+		religion = ibadi
+		culture = butr
+	}
+}
+4565 = {	#JARJIS
+	holding = church_holding
+	
+	# History
+	1066.1.1 = { #Area conquered by tribals and turned into nomadic pastures
+		holding = none
+	}
+}
+4566 = {	#BUGHRARA
+	holding = city_holding
+	
+	# History
+	1066.1.1 = { #Area conquered by tribals and turned into nomadic pastures
+		holding = none
+	}
+}
+
+##d_syrte ###################################
+###c_syrte
+4552 = {	# 4552 - SYRTE
+	culture = afro_roman
+	religion = nicene
+	holding = castle_holding
+	
+	476.1.1 = {
+		religion = arianism
+	}
+	632.1.1 = {
+		religion = chalcedonian
+	}
+	768.1.1 = {
+		religion = ibadi
+		culture = butr
+	}
+}
+4550 = {	#AL_ALGHAILA
+	holding = none
+}
+4551 = {	#AJADABIYA
+	holding = city_holding
+}
+
+###c_labda
+4556 = {	#LABDA
+	culture = afro_roman
+	religion = roman_pagan
+	holding = castle_holding
+	
+	395.1.1 = {
+		religion = nicene
+	}
+	476.1.1 = {
+		religion = arianism
+	}
+	632.1.1 = {
+		religion = chalcedonian
+	}
+	768.1.1 = {
+		religion = ibadi
+		culture = butr
+	}
+}
+4554 = {	#TAWURGHA
+	holding = church_holding
+}
+4555 = {	#MISURATA
+	holding = city_holding
+}
+
+# Duplicate in k_tahert
+# 4609 = {	#Arigh
+# 	culture = gaetulian
+# 	religion = amazigh_pagan
+# 	holding = tribal_holding
+
+# 	768.1.1 = {
+# 		religion = ibadi
+# 		culture = butr
+# 	}
+# }

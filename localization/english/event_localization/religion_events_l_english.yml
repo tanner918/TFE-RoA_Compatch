@@ -1,0 +1,131 @@
+﻿l_english:
+ religion.0001.t:0 "The Missionaries"
+ religion.0001.desc:0 "To prove that I am a devout [ROOT.Char.GetFaith.GetAdherentName], I intend to use the resources at my disposal to gather a number of faithful missionaries to spread the truth across the world. With my backing and the protection of [ROOT.Char.GetFaith.HighGodName], these brave souls will surely bring the light of [ROOT.Char.GetFaith.GetNameNoTooltip] to foreign lands!\n\nThese missons require significant resources to ensure their success, but I must be careful when investing in this endeavor. There is always a chance that our missionaries will be unsuccessful, whether due to a lack of true faith and conviction, or because the unbelievers are too stubborn."
+ religion.0001.option.a:0 "A small sum will do - we'll be happy if anyone converts."
+ religion.0001.option.b:0 "A large sum will help us find a receptive, high-ranking noble!"
+ religion.0001.option.c:0 "A significant sum is needed - whatever it'll take to convince a ruler!"
+ religion.0001.option.d:0 "On second thought, never mind."
+ religion.0001.king:0 "The missionaries will attempt to convert a [king|E]"
+ religion.0001.duke:0 "The missionaries will attempt to convert a [duke|E]"
+ religion.0001.count:0 "The missionaries will attempt to convert a [count|E]"
+ religion.0001.county:0 "The missionaries will only be able to attempt to convert a group of peasants"
+
+ religion.0002.t:0 "The Missionaries"
+ religion.0002.desc:0 "A small group of [mission_sender.GetFaith.GetAdjective] missionaries have arrived in my lands from [mission_sender.GetTitledFirstName]. Unsurprisingly, they have demanded an audience with me, undoubtedly to convert me to their faith.\n\nAfter I granted these [mission_sender.GetFaith.GetAdjective] missionaries an audience, they began speaking of the glory of [mission_sender.GetFaith.HighGodName] and the truth of our cosmos as told in the [mission_sender.GetFaith.ReligiousText]. They also argued that I must abandon my blasphemous beliefs in [ROOT.Char.GetFaith.GetName], and, they added, lest I want to suffer the horrors of the afterlife in [mission_sender.GetFaith.NegativeAfterLife], I should convert as soon as possible to the one true faith: [mission_sender.GetFaith.GetName]."
+ religion.0002.option.a:0 "[mission_sender.GetFaith.GetNameNoTooltip] doesn't sound bad - I'm convinced by your words!"
+ religion.0002.option.b:0 "Leave me be. Your foolish words are unconvincing - I remain a true [ROOT.Char.GetFaith.GetAdherentNameNoTooltip]."
+ religion.0002.option.c:0 "There are horrors to suffer in this world too, friend."
+
+ religion.0003.t:0 "The Missionaries"
+ religion.0003.desc:0 "Today, the small group of missionaries who recently traveled to the court of [mission_receiver.GetTitledFirstName] returned from their journey. Dejection and disappointment were written across their faces. They did not even need to say a word for me to know that their efforts were unsuccessful!\n\nDamnations! I cannot believe that our mission failed, and that this foolish [mission_receiver.GetFirstNameNoTooltip] dared to ignore the truth of [ROOT.Char.GetFaith.GetName]. Was it because [mission_receiver.GetFirstNamePossessiveNoTooltip] soul was deceived by [ROOT.Char.GetFaith.DevilName]? Or was it because our missionaries were not true of heart, and therefore did not receive any divine aid from [ROOT.Char.GetFaith.HighGodName]?"
+ religion.0003.option.a:0 "Alas! Ignorance has won today."
+
+ religion.0004.t:0 "The Missionaries"
+ religion.0004.desc:0 "Today, the small group of missionaries who recently traveled to the court of [mission_receiver.GetTitledFirstName] returned from their journey. Joy was written across their faces - their mission to the court of [mission_receiver.GetTitledFirstName] was a success!\n\n[mission_receiver.GetNameNoTooltip] has agreed to convert to the one true faith and become a [mission_receiver.GetFaith.GetAdherentNameNoTooltip]. Our investment in these missionary's work has proven to be a resounding success, and there is no doubt that they were aided by [ROOT.Char.GetFaith.HighGodName]."
+ religion.0004.option.a:0 "Soon everyone shall know about the truth!"
+
+ #better loc pls
+ religion.0005.t:0 "The Gregorian Mission"
+ religion.0005.desc:0 "Pagans and Heretics are rampant in our precious land. To ensure our faith and realm continue to prosper, we have to request aid from the clergy and Christian rulers to help us in our war against these heretics."
+ religion.0005.option.a:0 "Send the messengers"
+ religion.0005.option:0 "A message is sent to all Christian rulers in western Europe to help spread the faith in Britain"
+
+ religion.0006.t:0 "$religion.0005.t$"
+ religion.0006.desc:0 "Pagans and Heretics are rampant in Britannia. What was once a stronghold for Christianity now has Christians cowering in the outskirts or the few Christian strongholds left. We have recieved a message from a ruler requesting help by sending them our missionaries."
+
+ religion.0007.t:0 "The Missionaries"
+ religion.0007.desc:0 "It has been a few years since I sent our missionaries to the court of [mission_receiver.GetTitledFirstName] to convert [mission_receiver.GetherHim] and [mission_receiver.GetHerHis] court to [ROOT.Char.GetFaith.GetName]. I have not heard any news from them as of late, and I was worried that some misfortune may have befallen them. I even prayed to [ROOT.Char.GetFaith.HighGodName] to hope for their safety while they stayed in foreign lands.\n\nUnfortunately, I have finally received news today, and it is not good news. I was informed that the fiendish [mission_receiver.GetFirstNameNoTooltip] has executed all of my missionaies! What a sorrowful fate, that they would be murdered in cold blood merely for trying to spread the truth. Perhaps this was the doing of [ROOT.Char.GetFaith.DevilName], trying to prevent us from spreading the [ROOT.Char.GetFaith.GetAdjective] teachings"
+ religion.0007.option.a:0 "You will regret this, [mission_receiver.GetFirstNameNoTooltip]!"
+
+ ### Mazdak Events ###
+ 
+ TFE_zoroastrian.0001.t:0 "Fresh Ideas Outside of $c_ctesiphon$"
+ TFE_zoroastrian.0001.desc:0 "Rumours have made the rounds in my court that a man who goes by the name of #italic Mazdak #! has accumulated an impressive following over the last few days. Of Persian stock, he was blessed with the task of reciting the [ROOT.Char.GetFaith.ReligiousText]. While a bright man of [ROOT.Char.GetFaith.HighGodName], he has taken it upon himself to reinterpret the old teachings of the [ROOT.Char.GetFaith.ReligiousText] and is now preaching in $b_an-numaniya$ a fresh take on them. \n\nAcording to #italic Mazdak #!, we should express our faith in brotherly love and in making sure all men and women are treated equally and with respect!"
+ TFE_zoroastrian.0001.a:0 "Actually he might be right..."
+ TFE_zoroastrian.0001.b:0 "What an impressive man! Bring him into court!"
+ TFE_zoroastrian.0001.c:0 "What kind of buffoon would listen to him?"
+
+ TFE_zoroastrian.0004.t:0 "Zoroastrians in Daylam"
+ TFE_zoroastrian.0004.desc:0 "Rumors have made the rounds in my court that many villages and people have recently converted to Zoroastrianism in our region.\nAfter the fall of $k_mesopotamia$ to Islam, many people in the north, with no spiritual guides, held on to this new faith when it appeared in the region. Similar to Mazdakism, this faith believes in pacifism and reincarnation after death.\n\nThese new people seem to not want to be ruled under a non-Zoroastrian yoke and should be handled carefully."
+ TFE_zoroastrian.0004.a:0 "Actually they might be right..."
+ TFE_zoroastrian.0004.c:0 "What kind of buffoon would believe in this?"
+
+ TFE_zoroastrian.0006.t:0 "Zoroastrians in Daylam"
+ TFE_zoroastrian.0006.desc:0 "Rumors have made the rounds in my court that a man that goes by the name of #italic Behafarid #! has accumulated an impressive following in our region.\nAfter the fall of $k_mesopotamia$ to Islam, many people in the north, with no spiritual guides, held on to this new faith when it appeared in the region. Influenced by Islam, this faith believes in vows of poverty and sky burials after death.\n\nThese new people seem to not want to be ruled under a non-Zoroastrian yoke and should be handled carefully."
+ TFE_zoroastrian.0006.a:0 "Actually he might be right..."
+ TFE_zoroastrian.0006.c:0 "What kind of buffoon would believe in this?"
+ 
+ ### Celt Bhaktis ###
+ 
+ TFE_religious_decision.0001.t:0 "$religious_decision.0102.t$"
+ TFE_religious_decision.0001.desc:0 "$religious_decision.0102.desc$"
+ TFE_religious_decision.0001.brigantia:0 "Brigantia, Protector of Britannia"
+ TFE_religious_decision.0001.sulis:0 "Sulis Minerva, Lady of the Waters"
+ TFE_religious_decision.0001.epona:0 "Epona, Lady of the Horses"
+ TFE_religious_decision.0001.cunomaglus:0 "Cunomaglus, Lord of the Hunt"
+ TFE_religious_decision.0001.optout:0 "$religious_decision.0101.flavor$"
+ TFE_religious_decision.0001.flavor:0 "$religious_decision.0101.flavor$"
+ 
+ ### Ecumenical Council ###
+ 
+ tfe_ecumenical_council.0002.t:0 "The Council of Chalcedonia"
+ tfe_ecumenical_council.0002.desc:0 "The halls clamoured with the cacophany of conversation and debate between the bishops from across the Roman world and beyond, marking the beginning of the Fourth Ecumenical Council. \n\nThe bishops have convened in the Bithynian city of Chalcedon to discuss the controversies in Christendom and to adopt the Chalcedonian Creed to affirm Christ's nature. Hopefully, this will bring an end to decades of heated debate among the divided Christian sects."
+ council_chalcedonia_coptic_conversion:0 "Provinces and characters in the region of [GetGeographicalRegion('custom_council_chalcedonia_coptic').GetName] have converted to the [coptic_faith.GetName] faith"
+ council_chalcedonia_nestorian_conversion:0 "Provinces and characters in the region of [GetGeographicalRegion('custom_council_chalcedonia_nestorian').GetName] have converted to the [nestorian_faith.GetName] faith"
+ council_chalcedonia_apostolic_conversion:0 "Provinces and characters in the region of [GetGeographicalRegion('custom_council_chalcedonia_apostolic').GetName] have converted to the [armenian_apostolic_faith.GetName] faith"
+ council_chalcedonia_syriac_conversion:0 "Provinces and characters in the region of [GetGeographicalRegion('custom_council_chalcedonia_syriac').GetName] have converted to the [syriac_faith.GetName] faith"
+ council_chalcedonia_chalcedonian_conversion:0 "Other provinces and characters have converted to the [chalcedonian_faith.GetName] faith"
+ council_chalcedonia_faiths_receive_ecumenical_doctrine:0 "These four faiths have received the [GetFaithDoctrine('special_doctrine_ecumenical_christian').GetBaseName] [doctrine|E]"
+ council_chalcedonia_nicene_disabled:0 "Conversion to the four previously mentioned faiths has been #P enabled#!\nConversion to [nicene_faith.GetName] has been #N disabled#!"
+ tfe_ecumenical_council.0002.optA:0 "How will this impact Christendom?"
+ council_chalcedonia_conversion_player_character:0 "Due to where we live, we have converted to [new_faith.GetName]"
+
+ tfe_ecumenical_council.0003.t:0 "The Council of Chalcedonia"
+ tfe_ecumenical_council.0003.desc:0 "It has come to my attention that Nicene bishops from all over the world were called upon to attend the Fourth Ecumenical Council. \n\nThe council, which was convened in the Bithynian city of Chalcedon, was called to discuss the controversies within Christendom and to adopt the Chalcedonian Creed to resolve all debates on the nature of Christ. \n\nAs the holder of one of the council's seats, I must decide on how I should approach this major revelation."
+ tfe_ecumenical_council.0003.optA:0 "It is what had to be done"
+ council_chalcedonia_stay_nicene:0 "You send a bishop to remain within the council"
+ tfe_ecumenical_council.0003.optB:0 "This is a clear wrong!"
+ council_chalcedonia_no_nicene:0 "Your faith is no longer Nicene"
+
+ # Cult of the Virgin Mary
+
+ TFE_religious_decision.0002.t:0 "Offering Bread to Mary"
+ TFE_religious_decision.0002.desc:0 "Today, I took part in a ceremony honoring the Virgin Mary that we [ROOT.Char.GetFaith.GetAdherentNamePlural] must hold several times a year.\n\nLast night, my cooks kneaded and baked bread for today's ceremony. We then went to the nearby [ROOT.Char.GetFaith.HouseOfWorship] with this bread this morning. Before the altar, under the guidance of the [ROOT.Char.Custom('DefaultPriestTitlePlural')], we read the Old and New Testaments, before offering the bread to the Virgin Mary. Once the ceremony was done, and the bread is blessed with the Holy Spirit, we returned to our homes with a piece of the bread and partook in eating it.\n\nThe Virgin Mary is a truly great woman; through her, we renew our faith in [ROOT.Char.GetFaith.HighGodName]. During the ceremony today, I focused my worship by reflecting on an aspect of her and her life...."
+ TFE_religious_decision.0002.a:0 "Mary, the Blessed Virgin"
+ TFE_religious_decision.0002.b:0 "Mary, the Mother of God"
+ TFE_religious_decision.0002.c:0 "Mary, the Immaculate Saint"
+
+ # Jovinian Spawn
+ TFE_christian.0002.t:0 "The Teachings of Jovinian"
+ TFE_christian.0002.desc:0 "Recently, the [christian.GetAdjective] community in [GetGeographicalRegion('custom_italia').GetName] has been in an uproar thanks to the teachings of a charismatic, passionate ex-monk named [jovinian.GetName].\n\n[jovinian.GetNameNoTooltip] preaches against the excesses of ascetism, which he claims has led the Church astray. For example, to him, abstinence is no better than eating normally, and that all true believers will receive the same reward in heaven as long as they receive baptism in full faith.\n\nMany ecclesiastical authorities condemn these [jovinianism.GetAdjective] teachings; they demand for this heretic and his followers to be expelled from their base in [GetTitleByKey('b_roma').GetNameNoTier], even if he is supported by some aristocrats. Other clergy, however, argue he is a visionary who will steer the church in the right direction."
+ TFE_christian.0002.a:0 "I see merit in [jovinian.GetNamePossessiveNoTooltip] wise words!"
+ TFE_christian.0002.b:0 "Let's welcome this great thinker to my court!"
+ TFE_christian.0002.c:0 "This madman should simply be ignored."
+
+ # Illyrian Religious Decision
+
+ TFE_religious_decision.0003.t:0 "Preparations"
+ TFE_religious_decision.0003.desc.sun:0 "The Cult of the Sun is one of the important cults among us [ROOT.Char.GetFaith.GetAdherentNamePlural]. It is through the sun that we endure as a community and live healthy, prosperous lives. Thus, I have decidied to perform a great sacrifice in honor of the sun."
+ TFE_religious_decision.0003.desc.serpent:0 "The Cult of the Serpent is one of the important cults among us [ROOT.Char.GetFaith.GetAdherentNamePlural]. As one of our protector totems, the serpent brings us great fertility, protection, and wisdom. Thus, I have decidied to perform a great sacrifice in honor of the serpent."
+ TFE_religious_decision.0003.desc:0 "\n\nBefore we get started, however, I need to decide how much I am willing to spend on this ceremony. The more I sacrifice, the better my actions will be seen in the eyes of the [ROOT.Char.Custom('DefaultPriestTitlePlural')] and the [ROOT.Char.GetFaith.PantheonTerm]."
+ TFE_religious_decision.0003.a:0 "A modest sacrifice will do"
+ TFE_religious_decision.0003.b:0 "A decent sacrifice shall suffice"
+ TFE_religious_decision.0003.c:0 "A great sacrifice is ideal"
+ TFE_illyrian_sacrifice_result_something:0 "You receive a #P positive#! [character_modifier|E]"
+ TFE_illyrian_sacrifice_result_nothing:0 "You receive no bonus [character_modifier|E]"
+ TFE_illyrian_sacrifice_small_piety_bonus:0 "You will gain a random amount of [piety|E] betwee [piety_i|E]#V 25#! and [piety_i|E]#V 100#!"
+ TFE_illyrian_sacrifice_medium_piety_bonus:0 "You will gain a random amount of [piety|E] betwee [piety_i|E]#V 50#! and [piety_i|E]#V 150#!"
+ TFE_illyrian_sacrifice_large_piety_bonus:0 "You will gain a random amount of [piety|E] betwee [piety_i|E]#V 75#! and [piety_i|E]#V 200#!"
+ TFE_religious_decision.0004.t:0 "The Sacrifice"
+ TFE_religious_decision.0004.desc:0 "I have completed my sacrifice ritual. Together with the [ROOT.Char.Custom('DefaultPriestTitlePlural')], we worshipped the [ROOT.Char.GetFaith.PantheonTerm] in a great ceremony, in the traditional [ROOT.Char.GetFaith.GetAdjective] manner.\n\n"
+ TFE_religious_decision.0004.desc.sun:0 "Of course, the focus of this ceremony was the Sun. Thus, as is custom, we sacrificed deer and waterfowl, symbols of the sun, at a local altar sitting atop one of the higher points in [ROOT.Char.GetCapitalLocation.GetCounty.GetTitle.GetNameNoTier], because mountain peaks are said to be sacred to the sun."
+ TFE_religious_decision.0004.desc.serpent:0 "Of course, the focus of this ceremony was the Serpent. To us, the Serpent is a being of immense spiritual and magical powers, particularly in its watery and chthonic domain. The local altar in [ROOT.Char.GetCapitalLocation.GetCounty.GetTitle.GetNameNoTier] where we did the ceremony is said to be close to sacred water and sacred terrain."
+ TFE_religious_decision.0004.a:0 "I am glad we could do this."
+ TFE_religious_decision.0004.nothing:0 "$TFE_illyrian_sacrifice_result_nothing$"
+
+ fervor_gain_religious_war_islam:0 "Gained through war"
+ fervor_loss_religious_war_islam:0 "Lost through war"
+
+ TFE_religious_decision.0005.t:0 "[religion.GetAdjectiveNoTooltip] Land Grants"
+ TFE_religious_decision.0005.desc:0 "As a [ROOT.Char.GetTitleAsNameNoTooltip] in [GetGeographicalRegion('world_india').GetName], one way I can gain merit is by giving land grants to religious institutions like temples and monasteries, even those of a different sect than mine. They thusly aid rulers like myself by expanding agriculture and economically and politically integrate these frontier regions under our authority.\n\nI have decided to grant some land to a number of [religion.GetAdjective] temples and monasteries in my territories, much to the delight of the [religion.GetAdjectiveNoTooltip] faithful who live there.\n\nAlthough doing this transfers the revenue from these lands away from me, it is for a good cause. At the least, it will reflect well on me in the eyes of my realm's [religion.GetAdjectiveNoTooltip] community."
+ TFE_religious_decision.0005.a:0 "May this bring me great merit!"

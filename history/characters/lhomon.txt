@@ -1,0 +1,474 @@
+﻿# Bumthang (Bhutan)
+
+247004 = {
+	name="Sindhu"
+	dynasty=105804 #Chakhar
+	religion="shaivism"
+	culture="bengali"
+	705.1.1={
+		birth=yes
+	}
+	730.1.1={
+		name="Sendha_Gyalpo"
+	}
+	746.6.1={
+		religion="vajrayana"
+	}
+	775.1.1={
+		death=yes
+	}
+}
+
+247005 = {
+	name="Tala_Mebar"
+	dynasty=105804 #Chakhar
+	religion="old_bon"
+	culture="lhomon" #Monpa
+	father=247004
+	728.1.1={
+		birth=yes
+	}
+	746.1.1={
+		death=yes
+	}
+}
+
+247006 = {
+	name="Mangala_Jashi_Kyeden" #One of the five tantric consorts of Padmasambhava
+	female=yes
+	dynasty=105804 #Chakhar
+	religion="old_bon"
+	culture="lhomon" #Monpa
+	father=247004
+	730.1.1={
+		birth=yes
+	}
+	746.6.1={
+		religion="vajrayana"
+
+	}
+	810.1.1={
+		death=yes
+	}
+}
+
+247007 = {
+	name="Pemba_Goba"
+	dynasty=105804 #Chakhar
+	religion="old_bon"
+	culture="lhomon" #Monpa
+	father=247005
+	745.1.1={
+		birth=yes
+	}
+	746.6.1={
+		religion="vajrayana"
+
+	}
+	793.1.1={
+		death=yes
+	}
+}
+
+
+#Thekung Adek (Lepcha Kings of Eastern Sikkim)
+
+304080 = {
+	name="Thekung_Adek"
+	dynasty=2003006 #Panu
+	religion="old_bon"
+	culture="lhomon" #Lepcha
+	
+	640.1.1={
+		birth=yes
+	}
+	690.1.1={
+		death=yes
+	}
+}
+
+#Fictional descendants of Thekung Adek
+
+304081 = {
+	name="Dronyer"
+	dynasty=2003006 #Panu
+	religion="old_bon"
+	culture="lhomon" #Lepcha
+	father=304080 #Thekung Adek
+	
+	670.1.1={
+		birth=yes
+	}
+	736.1.1={
+		death=yes
+	}
+}
+304082 = {
+	name="Minjur"
+	dynasty=2003006 #Panu
+	religion="old_bon"
+	culture="lhomon" #Lepcha
+	father=304081 #Dronyer
+	
+	690.1.1={
+		birth=yes
+	}
+	747.1.1={
+		religion="vajrayana"
+	}
+	763.1.1={
+		death=yes
+	}
+}
+304083 = {
+	name="Zhelngo"
+	dynasty=2003006 #Panu
+	religion="old_bon"
+	culture="lhomon" #Lepcha
+	father=304082 #Minjur
+	
+	710.1.1={
+		birth=yes
+	}
+	747.1.1={
+		religion="vajrayana"
+	}
+	772.1.1={
+		death=yes
+	}
+}
+304084 = {
+	name="Pekar"
+	dynasty=2003006 #Panu
+	religion="old_bon"
+	culture="lhomon" #Lepcha
+	father=304083 #Zhelngo
+	
+	730.1.1={
+		birth=yes
+	}
+	747.1.1={
+		religion="vajrayana"
+	}
+	788.1.1={
+		death=yes
+	}
+}
+304085 = {
+	name="Ngodrup"
+	dynasty=2003006 #Panu
+	religion="vajrayana"
+	culture="lhomon" #Lepcha
+	father=304084 #Pekar
+	
+	750.1.1={
+		birth=yes
+	}
+	816.1.1={
+		death=yes
+	}
+}
+
+### Lhomon
+lhomon_01 = {
+	name="Dongdhen"
+	religion="old_bon"
+	culture="lhomon"
+	female = yes
+	331.1.1={
+		birth=yes
+	}
+	368.1.1={
+		death=yes
+	}
+}
+lhomon_02 = {
+	name="Polo"
+	religion="old_bon"
+	culture="lhomon"
+	372.1.1={
+		birth=yes
+	}
+	400.1.1={
+		death=yes
+	}
+}
+lhomon_03 = {
+	name="Dechog"
+	religion="old_bon"
+	culture="lhomon"
+	female = yes
+	436.1.1={
+		birth=yes
+	}
+	500.1.1={
+		death=yes
+	}
+}
+lhomon_04 = {
+	name="Ngodrup"
+	religion="old_bon"
+	culture="lhomon"
+	326.1.1={
+		birth=yes
+	}
+	368.1.1={
+		death=yes
+	}
+}
+lhomon_05 = {
+	name="Tshomo"
+	religion="old_bon"
+	culture="lhomon"
+	female = yes
+	367.1.1={
+		birth=yes
+	}
+	400.1.1={
+		death=yes
+	}
+}
+lhomon_06 = {
+	name="Padma"
+	religion="old_bon"
+	culture="lhomon"
+	440.1.1={
+		birth=yes
+	}
+	500.1.1={
+		death=yes
+	}
+}
+####
+lhomon_10 = {
+	name="Menmo"
+	religion="donyipoloism"
+	culture="lhomon"
+	female = yes
+	331.1.1={
+		birth=yes
+	}
+	368.1.1={
+		death=yes
+	}
+}
+lhomon_11 = {
+	name="Yeshey"
+	religion="donyipoloism"
+	culture="lhomon"
+	female = yes
+	369.1.1={
+		birth=yes
+	}
+	400.1.1={
+		death=yes
+	}
+}
+lhomon_12 = {
+	name="Chime"
+	religion="donyipoloism"
+	culture="lhomon"
+	440.1.1={
+		birth=yes
+	}
+	500.1.1={
+		death=yes
+	}
+}
+lhomon_13 = {
+	name="Sharpa"
+	religion="donyipoloism"
+	culture="lhomon"
+	322.1.1={
+		birth=yes
+	}
+	368.1.1={
+		death=yes
+	}
+}
+lhomon_14 = {
+	name="Sidi"
+	religion="donyipoloism"
+	culture="lhomon"
+	female = yes
+	353.1.1={
+		birth=yes
+	}
+	400.1.1={
+		death=yes
+	}
+}
+lhomon_15 = {
+	name="Adek"
+	religion="donyipoloism"
+	culture="lhomon"
+	441.1.1={
+		birth=yes
+	}
+	500.1.1={
+		death=yes
+	}
+}
+lhomon_19 = {
+	name="Yuden"
+	religion="donyipoloism"
+	culture="lhomon"
+	female = yes
+	328.1.1={
+		birth=yes
+	}
+	368.1.1={
+		death=yes
+	}
+}
+lhomon_20 = {
+	name="Sidi"
+	religion="donyipoloism"
+	culture="lhomon"
+	female = yes
+	353.1.1={
+		birth=yes
+	}
+	400.1.1={
+		death=yes
+	}
+}
+lhomon_21 = {
+	name="Kesang"
+	religion="donyipoloism"
+	culture="lhomon"
+	female = yes
+	452.1.1={
+		birth=yes
+	}
+	500.1.1={
+		death=yes
+	}
+}
+lhomon_22 = {
+	name="Polo"
+	religion="donyipoloism"
+	culture="lhomon"
+	326.1.1={
+		birth=yes
+	}
+	368.1.1={
+		death=yes
+	}
+}
+lhomon_23 = {
+	name="Tshoki"
+	religion="donyipoloism"
+	culture="lhomon"
+	362.1.1={
+		birth=yes
+	}
+	400.1.1={
+		death=yes
+	}
+}
+lhomon_24 = {
+	name="Karma"
+	religion="donyipoloism"
+	culture="lhomon"
+	female = yes
+	448.1.1={
+		birth=yes
+	}
+	500.1.1={
+		death=yes
+	}
+}
+lhomon_25 = {
+	name="Pelden"
+	religion="donyipoloism"
+	culture="lhomon"
+	female = yes
+	319.1.1={
+		birth=yes
+	}
+	368.1.1={
+		death=yes
+	}
+}
+lhomon_26 = {
+	name="Zam"
+	religion="donyipoloism"
+	culture="lhomon"
+	365.1.1={
+		birth=yes
+	}
+	400.1.1={
+		death=yes
+	}
+}
+lhomon_27 = {
+	name="Tshering"
+	religion="donyipoloism"
+	culture="lhomon"
+	450.1.1={
+		birth=yes
+	}
+	500.1.1={
+		death=yes
+	}
+}
+lhomon_28 = {
+	name="Drugyel"
+	religion="donyipoloism"
+	culture="lhomon"
+	502.6.17={
+		birth=yes
+	}
+	576.4.9={
+		death=yes
+	}
+}
+lhomon_29 = {
+	name="Gaytsun"
+	female=yes
+	religion="donyipoloism"
+	culture="lhomon"
+	511.3.14={
+		birth=yes
+	}
+	579.8.2={
+		death=yes
+	}
+}
+lhomon_30 = {
+	name="Dronyer"
+	religion="donyipoloism"
+	culture="lhomon"
+	497.8.16={
+		birth=yes
+	}
+	549.3.12={
+		death=yes
+	}
+}
+
+lhomon_31 = {
+	name = "Ipupu"
+	female=yes
+	religion="donyipoloism"
+	culture="lhomon"
+	510.2.4 = {
+		birth = yes
+	}
+	565.7.22 = {
+		death = yes
+	}
+}
+
+lhomon_32 = {
+	name = "Tsechup"
+	religion="donyipoloism"
+	culture="lhomon"
+	490.7.19 = {
+		birth = yes
+	}
+	540.2.8 = {
+		death = yes
+	}
+}

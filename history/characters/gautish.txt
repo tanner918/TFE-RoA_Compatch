@@ -1,0 +1,246 @@
+﻿geat_01 = {
+	name = "Gaut"
+	dynasty = gautid_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	322.1.1 = {
+		birth = yes
+	}
+	348.1.1 = {
+		add_spouse = geat_001
+	}
+	358.1.1 = {
+		death = yes
+	}
+}
+geat_001 = {
+	name = "Snotra"
+	female = yes
+	religion = "norse_pagan"
+	culture = "norse"
+	327.1.1 = {
+		birth = yes
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+geat_02 = {
+	name = "Gautrek"
+	dynasty = gautid_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = geat_01
+	mother = geat_001
+	344.1.1 = {
+		birth = yes
+	}
+	361.1.1 = {
+		add_spouse = saxon_11
+	}
+	394.1.1 = {
+		death = yes
+	}
+}
+geat_03 = {
+	name = "Hrolf"
+	dynasty = gautid_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = geat_02
+	mother = saxon_11
+	365.1.1 = {
+		birth = yes
+	}
+	390.1.1 = {
+		add_spouse = yngling_11
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+geat_08 = {
+	name = "Ketill"
+	dynasty = gautid_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = geat_03
+	mother = yngling_11
+	395.1.1 = {
+		birth = yes
+	}
+	458.1.1 = {
+		death = yes
+	}
+}
+geat_09 = {
+	name = "Haered"
+	dynasty = gautid_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = geat_08
+	425.1.1 = {
+		birth = yes
+	}
+	477.1.1 = {
+		death = yes
+	}
+}
+geat_04 = {
+	name = "Ketill"
+	dynasty = gautid_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = geat_02
+	mother = saxon_11
+	370.1.1 = {
+		birth = yes
+	}
+	405.1.1 = {
+		death = yes
+	}
+}
+geat_05 = {
+	name = "Helga"
+	dynasty = gautid_dynasty
+	female = yes
+	religion = "norse_pagan"
+	culture = "norse"
+	father = geat_02
+	mother = saxon_11
+	364.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+geat_06 = {
+	name = "Neri"
+	religion = "norse_pagan"
+	culture = "norse"
+	341.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+geat_07 = {
+	name = "Ref"
+	religion = "norse_pagan"
+	culture = "norse"
+	344.1.1 = {
+		birth = yes
+	}
+	380.1.1 = {
+		add_spouse = geat_05
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+geat_10 = {
+	name = "Hygda"
+	female = yes
+	dynasty = gautid_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = geat_09
+	466.1.1 = {
+		birth = yes
+	}
+	524.1.1 = {
+		death = yes
+	}
+}
+geat_11 = {
+	name = "Hererik"
+	dynasty = gautid_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = geat_09
+	470.1.1 = {
+		birth = yes
+	}
+	530.1.1 = {
+		death = yes
+	}
+}
+geat_12 = {
+	name = "Gaut"
+	dynasty = gautid_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = geat_11
+	500.1.1 = {
+		birth = yes
+	}
+	555.1.1 = {
+		death = yes
+	}
+}
+geat_13 = {
+	name = "Gautrek"
+	dynasty = gautid_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = geat_12
+	530.1.1 = {
+		birth = yes
+	}
+	560.1.1 = {
+		add_spouse = narke_02
+	}
+	585.1.1 = {
+		death = yes
+	}
+}
+geat_14 = {
+	name = "Algaut"
+	dynasty = gautid_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = geat_13
+	mother = narke_02
+	566.1.1 = {
+		birth = yes
+	}
+	633.1.1 = {
+		death = {
+			death_reason = death_execution
+			killer = yngling_31
+		}
+	}
+}
+geat_15 = {
+	name = "Gauthilda"
+	female = yes
+	dynasty = gautid_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = geat_14
+	598.1.1 = {
+		birth = yes
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+geat_16 = {
+	name = "Gizur"
+	dynasty = gautid_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = geat_02
+	mother = saxon_11
+	373.1.1 = {
+		birth = yes
+	}
+	447.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = arngrymr_27
+		}
+	}
+}

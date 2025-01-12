@@ -1,0 +1,351 @@
+﻿
+cappadocia_01 = {
+	name = "Perseus"
+	culture = cappadocian
+	religion = magousaian
+	324.1.1 = {
+		birth = yes
+	}
+	389.1.1 = {
+		death = yes
+	}
+}
+cappadocia_02 = {
+	name = "Macarius"
+	culture = cappadocian
+	religion = magousaian
+	372.1.1 = {
+		birth = yes
+	}
+	412.1.1 = {
+		death = yes
+	}
+}
+cappadocia_07 = {
+	name = "Ioannes" # AKA John the Cappadocian
+	dna = dna_cappadocia
+	dynasty = cappadocia_dynasty
+	culture = cappadocian
+	religion = chalcedonian
+	diplomacy = 6
+	martial = 5
+	stewardship = 15
+	intrigue = 7
+	learning = 10
+	trait = greedy
+	trait = gluttonous
+	trait = paranoid
+	trait = arrogant
+	trait = torturer
+	trait = education_stewardship_4
+	490.1.1 = {
+		birth = yes
+	}
+	530.1.1 = {
+		effect = {
+			set_relation_friend = character:70512 # Justinian
+			#set_relation_rival = character:belisarius_001 # the Belisarius
+			#set_relation_rival = character:syria_19 # Theodora
+			add_opinion = {
+				target = character:belisarius_001 
+				modifier = hate_opinion
+				opinion = -100
+			}
+			add_opinion = {
+				target = character:syria_19 
+				modifier = hate_opinion
+				opinion = -100
+			}
+		}
+	}
+	548.1.1 = {
+		death = yes
+	}
+}
+cappadocia_08 = {
+	name = "Euphemia"
+	female = yes
+	dynasty = cappadocia_dynasty
+	culture = cappadocian
+	religion = chalcedonian
+	father = cappadocia_07
+	520.1.1 = {
+		birth = yes
+	}
+	570.1.1 = {
+		death = yes
+	}
+}
+cappadocia_09 = {
+	name = "Beride" # fictional name, mother of Ulfila
+	female = yes
+	culture = cappadocian
+	religion = nicene
+	290.1.1 = {
+		birth = yes
+	}
+	355.1.1 = {
+		death = yes
+	}
+}
+cappadocia_10 = {
+	name = "Pavlos" # father of emperor Maurikios
+	dynasty = 1022184
+	religion = "chalcedonian"
+	culture = "cappadocian"
+	516.1.1 = {
+		birth = yes
+	}
+	532.1.1 = {
+		employer = pontus_28
+	}
+	593.1.1 = {
+		death = yes
+	}
+}
+cappadocia_11 = {
+	name = "Petros" # brother of emperor Maurikios
+	dynasty = 1022184
+	religion = "chalcedonian"
+	culture = "cappadocian"
+	father = cappadocia_10
+	542.1.1 = {
+		birth = yes
+	}
+	602.1.1 = {
+		death = {
+			death_reason = death_execution
+		}
+	}
+}
+cappadocia_12 = {
+	name = "Gordia" # sister of emperor Maurikios
+	female = yes
+	dynasty = 1022184
+	religion = "chalcedonian"
+	culture = "cappadocian"
+	father = cappadocia_10
+	545.1.1 = {
+		birth = yes
+	}
+	575.1.1 = {
+		culture = "greek"
+	}
+	616.1.1 = {
+		death = yes
+	}
+}
+cappadocia_13 = {
+	name = "Theoktista" # sister of emperor Maurikios
+	female = yes
+	dynasty = 1022184
+	religion = "chalcedonian"
+	culture = "cappadocian"
+	father = cappadocia_10
+	546.1.1 = {
+		birth = yes
+	}
+	575.1.1 = {
+		culture = "greek"
+	}
+	602.1.1 = {
+		death = yes
+	}
+}
+cappadocia_14 = {
+	name = "Domitianos"
+	dynasty = 1022184
+	religion = "chalcedonian"
+	culture = "cappadocian"
+	father = cappadocia_11
+	562.1.1 = {
+		birth = yes
+	}
+	575.1.1 = {
+		culture = "greek"
+	}
+	579.1.1 = {
+		trait = zealous
+		trait = devoted
+	}
+	602.1.12 = {
+		death = yes
+	}
+}
+cappadocia_15 = {
+	name = "Iouliana"
+	female = yes
+	dynasty = 1022184
+	religion = "chalcedonian"
+	culture = "greek"
+	father = cappadocia_11
+	570.1.1 = {
+		birth = yes
+	}
+	622.1.1 = {
+		death = yes
+	}
+}
+cappadocia_16 = {
+	name = "Gregorios"
+	dynasty = dynasty_nazianzos
+	religion = "hypsistarian_pagan"
+	culture = "cappadocian"
+	295.1.1 = {
+		birth = yes
+	}
+	326.1.1 = {
+		add_spouse = cappadocia_17
+		religion = "nicene"
+		trait = devoted
+	}
+	374.1.1 = {
+		death = yes
+	}
+}
+cappadocia_17 = {
+	name = "Nonna"
+	female = yes
+	religion = "nicene"
+	culture = "cappadocian"
+	trait = humble
+	trait = chaste
+	trait = content
+	310.1.1 = {
+		birth = yes
+	}
+	375.1.1 = {
+		death = yes
+	}
+}
+cappadocia_18 = {
+	name = "Gorgonia"
+	female = yes
+	dynasty = dynasty_nazianzos
+	religion = "nicene"
+	culture = "cappadocian"
+	father = cappadocia_16
+	mother = cappadocia_17
+	trait = content
+	trait = humble
+	trait = chaste
+	327.1.1 = {
+		birth = yes
+	}
+	372.1.1 = {
+		death = yes
+	}
+}
+cappadocia_19 = {
+	name = "Gregorios"
+	dynasty = dynasty_nazianzos
+	religion = "nicene"
+	culture = "cappadocian"
+	father = cappadocia_16
+	mother = cappadocia_17
+	trait = education_learning_4
+	trait = brave
+	trait = callous
+	trait = zealous
+	trait = scholar
+	trait = theologian
+	trait = devoted
+	329.1.1 = {
+		birth = yes
+	}
+	361.1.1 = {
+		set_relation_rival = character:145237
+	}
+	390.1.1 = {
+		death = yes
+	}
+}
+cappadocia_20 = {
+	name = "Kaisarios"
+	dynasty = dynasty_nazianzos
+	religion = "nicene"
+	culture = "cappadocian"
+	father = cappadocia_16
+	mother = cappadocia_17
+	trait = education_learning_3
+	trait = gregerious
+	trait = forgiving
+	trait = trusting
+	trait = lifestyle_herbalist
+	trait = devoted
+	331.1.1 = {
+		birth = yes
+	}
+	361.1.1 = {
+		employer = 145237
+	}
+	368.1.1 = {
+		death = yes
+	}
+}
+pontus_07 = {
+	name = "Leo"
+	religion = "hellenic_pagan"
+	culture = "cappadocian"
+	338.1.1 = {
+		birth = yes
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+pontus_08 = {
+	name = "Maurikios"
+	religion = "hellenic_pagan"
+	culture = "cappadocian"
+	374.1.1 = {
+		birth = yes
+	}
+	423.1.1 = {
+		death = yes
+	}
+}
+pontus_09 = {
+	name = "Pantoleon"
+	religion = "chalcedonian"
+	culture = "cappadocian"
+	451.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+pontus_16 = {
+	name = "Kaisarios"
+	religion = "hellenic_pagan"
+	culture = "cappadocian"
+	338.1.1 = {
+		birth = yes
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+pontus_17 = {
+	name = "Gennadios"
+	religion = "nicene"
+	culture = "cappadocian"
+	374.1.1 = {
+		birth = yes
+	}
+	423.1.1 = {
+		death = yes
+	}
+}
+pontus_18 = {
+	name = "Eleutherios"
+	religion = "chalcedonian"
+	culture = "cappadocian"
+	451.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}

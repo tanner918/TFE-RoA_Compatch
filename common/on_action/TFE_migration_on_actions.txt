@@ -1,0 +1,151 @@
+﻿on_game_start_after_lobby = {
+	on_actions = {
+		on_slavic_migration_start
+	}
+	on_actions = {
+		delay = { days = { 365 420 } }
+		on_slavic_migration_trigger
+	}
+	on_actions = {
+		delay = { years = 5 }
+		on_slavic_migration_region_change
+	}
+}
+
+on_slavic_migration_start = {
+	effect = {
+		title:k_poland = {
+			add_to_global_variable_list = {
+				name = slavic_migration_kingdoms
+				target = THIS
+			}
+			
+		}
+		every_county_in_region = {
+			region = custom_slavic_migration_region
+			limit = {
+				exists = kingdom
+				NOT = {
+					is_target_in_global_variable_list = {
+						name = slavic_migration_kingdoms
+						target = kingdom
+					}
+				}
+			}
+			kingdom = {
+				add_to_global_variable_list = {
+					name = slavic_migration_kingdoms
+					target = THIS
+				}
+			}
+		}
+	}
+}
+
+on_slavic_migration_region_change = {
+	effect = {
+		every_county_in_region = {
+			region = custom_slavic_migration_region
+			limit = {
+				exists = kingdom
+				NOT = {
+					is_target_in_global_variable_list = {
+						name = slavic_migration_kingdoms
+						target = kingdom
+					}
+				}
+			}
+			kingdom = {
+				add_to_global_variable_list = {
+					name = slavic_migration_kingdoms
+					target = THIS
+				}
+			}
+		}
+	}
+	on_actions = {
+		delay = { years = 5 }
+		on_slavic_migration_region_change
+	}
+}
+
+on_slavic_migration_trigger = {
+	effect = {
+		random_in_global_list = {
+			variable = slavic_migration_kingdoms
+			limit = {
+				is_titular = no
+				NOT = {
+					any_in_de_jure_hierarchy = {
+						tier = tier_county
+						culture = {
+							OR = {
+								has_cultural_pillar = heritage_slavic
+								has_cultural_pillar = heritage_west_slavic
+								has_cultural_pillar = heritage_south_slavic
+							}
+						}
+						
+					}
+				}
+				any_title_to_title_neighboring_kingdom = {
+					any_in_de_jure_hierarchy = {
+						tier = tier_county
+						culture = {
+							OR = {
+								has_cultural_pillar = heritage_slavic
+								has_cultural_pillar = heritage_west_slavic
+								has_cultural_pillar = heritage_south_slavic
+							}
+						}
+					}
+				}
+				any_in_de_jure_hierarchy = {
+					AND = {
+						is_title_created = yes
+						tier >= tier_duchy
+						holder ?= {
+							NOT = {
+								culture = {
+									OR = {
+										has_cultural_pillar = heritage_slavic
+										has_cultural_pillar = heritage_west_slavic
+										has_cultural_pillar = heritage_south_slavic
+									}
+								}
+							}
+							
+						}
+						holder ?= {
+							is_at_war = no
+						}
+					}
+				}
+			}
+			random_title_to_title_neighboring_kingdom = {
+				limit = {
+					any_in_de_jure_hierarchy = {
+						tier = tier_county
+						culture = {
+							OR = {
+								has_cultural_pillar = heritage_slavic
+								has_cultural_pillar = heritage_west_slavic
+								has_cultural_pillar = heritage_south_slavic
+							}
+						}
+					}
+				}
+				save_scope_as = slavic_migration_attacker
+			}
+			save_scope_as = slavic_migration_defender_title
+			slavic_migration_war_start = {
+				TARGET_KINGDOM = scope:slavic_migration_defender_title
+				ATTACKING_KINGDOM = scope:slavic_migration_attacker
+			}
+			trigger_event = {
+				on_action = on_slavic_migration_trigger
+				years = slavic_migration_frequency
+			}
+		}
+	}
+}

@@ -1,0 +1,18 @@
+pdxmesh = {
+	name = "male_headgear_secular_roman_war_05_mesh"
+	file = "male_headgear_secular_roman_war_05.mesh"
+	meshsettings = {
+		name = "male_headgear_secular_roman_war_05Shape"
+		index = 0
+		texture_diffuse = "roman_war_helmet_05_diffuse.dds"
+		texture_normal = "roman_war_helmet_05_normal.dds"
+		texture_specular = "roman_war_helmet_05_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "male_headgear_secular_roman_war_05_entity"
+	pdxmesh = "male_headgear_secular_roman_war_05_mesh"
+}

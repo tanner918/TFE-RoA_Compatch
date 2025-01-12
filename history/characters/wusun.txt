@@ -1,0 +1,86 @@
+﻿#############################################################
+# 
+# WUSUN - all fictitious since we don't know the names
+# 
+# Done by Cybrxkhan
+# 
+#############################################################
+
+# Tufa Wugu's father, tribal chief of Tufa clan of Xianbei in Hexi Corridor/Gansu
+wusun_001 = {
+	name = "Chimi"
+	dynasty = dynasty_kunmi
+	religion = "tengri_pagan"
+	culture = "wusun"
+	335.7.14 = {
+		birth = yes
+	}
+	387.12.10 = {
+		death = yes
+	}
+}
+wusun_002 = {
+	name = "Wujiutu"
+	dynasty = dynasty_kunmi
+	religion = "tengri_pagan"
+	culture = "wusun"
+	father=wusun_001
+	369.12.16 = {
+		birth = yes
+	}
+	427.2.23 = {
+		death = yes
+	}
+}
+wusun_003 = {
+	name = "Wengguimi"
+	dynasty = dynasty_kunmi
+	religion = "tengri_pagan"
+	culture = "wusun"
+	father=wusun_002
+	401.1.7 = {
+		birth = yes
+	}
+	463.9.30 = {
+		death = yes
+	}
+}
+wusun_004 = {
+	name = "Xingmi"
+	dynasty = dynasty_kunmi
+	religion = "tengri_pagan"
+	culture = "wusun"
+	father=wusun_003
+	445.3.13 = {
+		birth = yes
+	}
+	501.9.8 = {
+		death = yes
+	}
+}
+wusun_005 = {
+	name = "Mozhenjiang"
+	dynasty = dynasty_kunmi
+	religion = "tengri_pagan"
+	culture = "wusun"
+	father=wusun_004
+	478.9.2 = {
+		birth = yes
+	}
+	520.6.20 = {
+		death = yes
+	}
+}
+wusun_006 = {
+	name = "Nandoumi"
+	dynasty = dynasty_kunmi
+	religion = "tengri_pagan"
+	culture = "wusun"
+	father=wusun_005
+	503.7.26 = {
+		birth = yes
+	}
+	559.11.29 = {
+		death = yes
+	}
+}

@@ -1,0 +1,432 @@
+﻿@crown_authority_cooldown_years = 20
+
+city_state_authority = {
+	default = city_state_authority_1
+
+	### NOTE -- THE AUTHORITY LAWS ARE NOT CUMULATIVE!
+
+	cumulative = no
+	flag = realm_law
+	
+	city_state_authority_0 = {
+		modifier = { 
+			county_opinion_add = 25
+			domain_tax_mult = -0.25
+			development_growth_factor = -0.25
+			direct_vassal_opinion = 10
+			vassal_tax_contribution_mult = -0.25
+			vassal_levy_contribution_mult = -0.25
+		}
+
+		can_keep = { 
+			realm_law_use_city_state_authority = yes
+			realm_law_use_eranshar_authority = no
+			realm_law_use_gupta_authority = no
+			realm_law_use_imperial_authority = no
+		}
+	}
+	
+	city_state_authority_1 = {
+		modifier = { 
+			county_opinion_add = 10
+			#domain_tax_mult = 0.5
+			development_growth_factor = 0.1
+			#vassal_tax_contribution_mult = 0.1
+			#vassal_levy_contribution_mult = 0.1
+		}
+		flag = can_change_succession_laws
+		flag = title_revocation_allowed
+
+		can_keep = { 
+			realm_law_use_city_state_authority = yes
+			realm_law_use_eranshar_authority = no
+			realm_law_use_gupta_authority = no
+			realm_law_use_imperial_authority = no
+		}
+
+		can_pass = {
+			trigger_if = {
+				limit = { has_realm_law = city_state_authority_0 }
+				custom_description = {
+					subject = root
+					text = "has_crown_authority_cooldown"
+					NAND = {
+						has_variable = crown_authority_cooldown
+						NOT = {
+							culture = { has_innovation = innovation_all_things }
+						}
+					}
+				}
+			}
+		}
+		
+		pass_cost = {
+			prestige = {
+				if = {
+					limit = {
+						NOR = {
+							has_realm_law = city_state_authority_2
+							has_realm_law = city_state_authority_3
+						}
+					}
+					add = increase_crown_authority_prestige_cost
+				}
+			}
+		}
+		
+		on_pass = {
+			# Increment cooldown breaker tally, if appropriate.
+			calculate_authority_cooldown_break_effect = yes
+			# Set regular cooldown.
+			set_variable = {
+				name = crown_authority_cooldown
+				years = @crown_authority_cooldown_years
+			}
+		}
+
+		ai_will_do = {
+			if = {
+				limit = { has_realm_law = city_state_authority_0 }
+				value = 1
+			}
+		}
+	}
+	
+	city_state_authority_2 = {
+		modifier = { 
+			county_opinion_add = -10
+			domain_tax_mult = 0.5
+			development_growth_factor = 0.25
+			vassal_tax_contribution_mult = 0.1
+			vassal_levy_contribution_mult = 0.1
+			direct_vassal_opinion = -10
+		}
+		
+		flag = vassal_retraction_allowed
+		flag = can_change_succession_laws
+		flag = title_revocation_allowed
+		
+		can_keep = { 
+			realm_law_use_city_state_authority = yes 
+			realm_law_use_eranshar_authority = no
+			realm_law_use_gupta_authority = no
+			realm_law_use_imperial_authority = no
+		}
+		
+		can_pass = {
+			trigger_if = {
+				limit = {
+					NOT = { has_realm_law = city_state_authority_3 }
+				}
+				has_realm_law = city_state_authority_1
+				custom_description = {
+					subject = root
+					text = "has_crown_authority_cooldown"
+					NAND = {
+						has_variable = crown_authority_cooldown
+						NOT = {
+							culture = { has_innovation = innovation_all_things }
+						}
+					}
+				}
+			}
+		}
+
+		pass_cost = {
+			prestige = {
+				if = {
+					limit = {
+						NOT = { has_realm_law = city_state_authority_3 }
+					}
+					add = increase_crown_authority_prestige_cost
+				}
+			}
+		}
+		
+		on_pass = {
+			# Increment cooldown breaker tally, if appropriate.
+			calculate_authority_cooldown_break_effect = yes
+			# Set regular cooldown.
+			set_variable = {
+				name = crown_authority_cooldown
+				years = @crown_authority_cooldown_years
+			}
+		}
+
+		ai_will_do = {
+			if = {
+				limit = { has_realm_law = city_state_authority_1 }
+				value = 1
+			}
+		}
+	}
+	
+	city_state_authority_3 = {
+		modifier = { 
+			county_opinion_add = -25
+			domain_tax_mult = 1
+			development_growth_factor = 0.5
+			vassal_tax_contribution_mult = 0.25
+			vassal_levy_contribution_mult = 0.25
+			direct_vassal_opinion = -30
+		}
+		flag = titles_cannot_leave_realm_on_succession # Hardcoded flag
+		flag = can_change_succession_laws
+		flag = vassal_refusal_is_treason
+		flag = vassal_retraction_allowed
+		flag = title_revocation_allowed
+		flag = can_designate_heirs
+		can_keep = { 
+			realm_law_use_city_state_authority = yes 
+			realm_law_use_eranshar_authority = no
+			realm_law_use_gupta_authority = no
+			realm_law_use_imperial_authority = no
+		}
+		
+		can_pass = {
+			has_realm_law = city_state_authority_2
+			custom_description = {
+				subject = root
+				text = "has_crown_authority_cooldown"
+				NAND = {
+						has_variable = crown_authority_cooldown
+						NOT = {
+							culture = { has_innovation = innovation_all_things }
+						}
+					}
+			}
+		}
+		
+		pass_cost = { prestige = increase_crown_authority_prestige_cost }
+		
+		on_pass = {
+			# Increment cooldown breaker tally, if appropriate.
+			calculate_authority_cooldown_break_effect = yes
+			# Set regular cooldown.
+			set_variable = {
+				name = crown_authority_cooldown
+				years = @crown_authority_cooldown_years
+			}
+		}
+
+		ai_will_do = {
+			if = {
+				limit = { has_realm_law = city_state_authority_2 }
+				value = 1
+			}
+		}
+	}
+}
+
+trade_network_authority = {
+	default = trade_network_authority_1
+
+	### NOTE -- THE AUTHORITY LAWS ARE NOT CUMULATIVE!
+
+	cumulative = no
+	flag = realm_law
+	
+	trade_network_authority_0 = {
+		modifier = { 
+			domain_tax_mult = -0.25
+			direct_vassal_opinion = 10
+			vassal_tax_contribution_mult = -0.25
+		}
+
+		can_keep = { 
+			realm_law_use_trade_network_authority = yes
+			realm_law_use_eranshar_authority = no
+			realm_law_use_gupta_authority = no
+			realm_law_use_imperial_authority = no
+		}
+	}
+	
+	trade_network_authority_1 = {
+		modifier = { 
+			domain_tax_mult = 0.5
+			vassal_tax_contribution_mult = 0.1
+			vassal_levy_contribution_mult = 0.1
+			oasis_tax_mult = 0.05
+			oasis_development_growth_factor = 0.01
+		}
+		flag = can_change_succession_laws
+		flag = title_revocation_allowed
+
+		can_keep = { 
+			realm_law_use_trade_network_authority = yes
+			realm_law_use_eranshar_authority = no
+			realm_law_use_gupta_authority = no
+			realm_law_use_imperial_authority = no
+		}
+
+		can_pass = {
+			trigger_if = {
+				limit = { has_realm_law = trade_network_authority_0 }
+				custom_description = {
+					subject = root
+					text = "has_crown_authority_cooldown"
+					NAND = {
+						has_variable = crown_authority_cooldown
+						NOT = {
+							culture = { has_innovation = innovation_all_things }
+						}
+					}
+				}
+			}
+		}
+		
+		pass_cost = {
+			prestige = {
+				if = {
+					limit = {
+						NOR = {
+							has_realm_law = trade_network_authority_2
+							has_realm_law = trade_network_authority_3
+						}
+					}
+					add = increase_crown_authority_prestige_cost
+				}
+			}
+		}
+		
+		on_pass = {
+			# Increment cooldown breaker tally, if appropriate.
+			calculate_authority_cooldown_break_effect = yes
+			# Set regular cooldown.
+			set_variable = {
+				name = crown_authority_cooldown
+				years = @crown_authority_cooldown_years
+			}
+		}
+
+		ai_will_do = {
+			if = {
+				limit = { has_realm_law = trade_network_authority_0 }
+				value = 1
+			}
+		}
+	}
+	
+	trade_network_authority_2 = {
+		modifier = { 
+			domain_tax_mult = 0.5
+			vassal_tax_contribution_mult = 0.1
+			direct_vassal_opinion = -10
+			oasis_tax_mult = 0.1
+			oasis_development_growth_factor = 0.05
+		}
+		
+		flag = vassal_retraction_allowed
+		flag = can_change_succession_laws
+		flag = title_revocation_allowed
+		
+		can_keep = { 
+			realm_law_use_trade_network_authority = yes 
+			realm_law_use_eranshar_authority = no
+			realm_law_use_gupta_authority = no
+			realm_law_use_imperial_authority = no
+		}
+		
+		can_pass = {
+			trigger_if = {
+				limit = {
+					NOT = { has_realm_law = trade_network_authority_3 }
+				}
+				has_realm_law = trade_network_authority_1
+				custom_description = {
+					subject = root
+					text = "has_crown_authority_cooldown"
+					NAND = {
+						has_variable = crown_authority_cooldown
+						NOT = {
+							culture = { has_innovation = innovation_all_things }
+						}
+					}
+				}
+			}
+		}
+
+		pass_cost = {
+			prestige = {
+				if = {
+					limit = {
+						NOT = { has_realm_law = trade_network_authority_3 }
+					}
+					add = increase_crown_authority_prestige_cost
+				}
+			}
+		}
+		
+		on_pass = {
+			# Increment cooldown breaker tally, if appropriate.
+			calculate_authority_cooldown_break_effect = yes
+			# Set regular cooldown.
+			set_variable = {
+				name = crown_authority_cooldown
+				years = @crown_authority_cooldown_years
+			}
+		}
+
+		ai_will_do = {
+			if = {
+				limit = { has_realm_law = trade_network_authority_1 }
+				value = 1
+			}
+		}
+	}
+	
+	trade_network_authority_3 = {
+		modifier = { 
+			domain_tax_mult = 1
+			vassal_tax_contribution_mult = 0.25
+			direct_vassal_opinion = -30
+			oasis_tax_mult = 0.2
+			oasis_development_growth_factor = 0.1
+		}
+		flag = titles_cannot_leave_realm_on_succession # Hardcoded flag
+		flag = can_change_succession_laws
+		flag = vassal_refusal_is_treason
+		flag = vassal_retraction_allowed
+		flag = title_revocation_allowed
+		flag = can_designate_heirs
+		can_keep = { 
+			realm_law_use_trade_network_authority = yes 
+			realm_law_use_eranshar_authority = no
+			realm_law_use_gupta_authority = no
+			realm_law_use_imperial_authority = no
+		}
+		
+		can_pass = {
+			has_realm_law = trade_network_authority_2
+			custom_description = {
+				subject = root
+				text = "has_crown_authority_cooldown"
+				NAND = {
+						has_variable = crown_authority_cooldown
+						NOT = {
+							culture = { has_innovation = innovation_all_things }
+						}
+					}
+			}
+		}
+		
+		pass_cost = { prestige = increase_crown_authority_prestige_cost }
+		
+		on_pass = {
+			# Increment cooldown breaker tally, if appropriate.
+			calculate_authority_cooldown_break_effect = yes
+			# Set regular cooldown.
+			set_variable = {
+				name = crown_authority_cooldown
+				years = @crown_authority_cooldown_years
+			}
+		}
+
+		ai_will_do = {
+			if = {
+				limit = { has_realm_law = trade_network_authority_2 }
+				value = 1
+			}
+		}
+	}
+}

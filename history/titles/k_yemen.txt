@@ -1,0 +1,1036 @@
+﻿k_yemen = {
+	361.1.1 = {	change_development_level = 1 }
+	532.1.1 = {	change_development_level = 2 }
+	768.1.1 = {	change_development_level = 3 }
+	### Early Kings of Himyar
+	275.1.1 = {
+		holder = himyar_01
+		government = feudal_government
+	}
+	299.1.1 = {
+		holder = himyar_02
+	}
+	312.1.1 = {
+		holder = himyar_03
+	}
+	322.1.1 = {
+		holder = himyar_04
+	}
+	325.1.1 = {
+		holder = himyar_05
+	}
+	327.1.1 = {
+		holder = himyar_06
+	}
+	342.1.1 = {
+		holder = himyar_07
+	}
+	350.1.1 = {
+		holder = himyar_071
+	}
+	356.1.1 = {
+		holder = himyar_08
+	}
+	364.1.1 = {
+		holder = himyar_09
+	}
+	372.1.1 = {
+		holder = himyar_10
+	}
+	### Proper Kingdom
+	378.1.1 = {
+		holder = 982001
+		government = feudal_government
+	}
+	420.1.1 = {
+		holder = 982003
+	}
+	445.1.1 = {
+		holder = 982004
+	}
+	457.1.1 = {
+		holder = himyar_11
+	}
+	480.1.1 = {
+		holder = himyarite_20
+	}
+	495.1.1 = {
+		holder = himyarite_22
+		liege = e_abyssinia
+	}
+	522.1.1 = {
+		holder = himyarite_26
+		liege = 0
+	}
+	527.1.1 = {
+		holder = himyarite_27
+		liege = e_abyssinia
+	}
+	532.1.1 = {
+		holder = himyarite_30
+		liege = 0
+	}
+	555.1.1 = {
+		holder = himyarite_31
+	}
+	575.1.1 = {
+		holder = 0
+		#Invaded by Sassanids
+	}
+	#531.1 = {
+	#	holder = aksum_24
+	#	liege = e_abyssinia
+	#}
+}
+
+d_mahra = {
+	361.1.1 = {	change_development_level = 6 }
+	532.1.1 = {	change_development_level = 7 }
+	768.1.1 = {	change_development_level = 8 }
+	
+	### Proper Kingdom
+	378.1.1 = {
+		holder = 982001
+	}
+	420.1.1 = {
+		holder = 982003
+	}
+	445.1.1 = {
+		holder = 982004
+	}
+	457.1.1 = {
+		holder = himyar_11
+	}
+	480.1.1 = {
+		holder = himyarite_20
+	}
+	495.1.1 = {
+		holder = himyarite_22
+	}
+	522.1.1 = {
+		holder = himyarite_26
+		liege = 0
+	}
+	527.1.1 = {
+		holder = himyarite_27
+	}
+	532.1.1 = {
+		holder = himyarite_33
+		government = city_state_government
+		liege = k_yemen
+		#holder = himyarite_30 #New king
+	}
+	540.1.1 = {
+		holder = himyarite_30
+	}
+	555.1.1 = {
+		holder = himyarite_31
+	}
+	575.1.1 = {
+		holder = 0
+		#Invaded by Sassanids
+	}
+}
+
+d_sanaa = {
+	361.1.1 = {	change_development_level = 6 }
+	532.1.1 = {	change_development_level = 7 }
+	768.1.1 = {	change_development_level = 8 }
+	
+	### Proper Kingdom
+	378.1.1 = {
+		holder = 982001
+	}
+	420.1.1 = {
+		holder = 982003
+	}
+	445.1.1 = {
+		holder = 982004
+	}
+	457.1.1 = {
+		holder = himyar_11
+	}
+	480.1.1 = {
+		holder = himyarite_20
+	}
+	495.1.1 = {
+		holder = himyarite_22
+	}
+	522.1.1 = {
+		holder = himyarite_26
+		liege = 0
+	}
+	527.1.1 = {
+		holder = himyarite_27
+	}
+	532.1.1 = {
+		holder = 0
+		#holder = himyarite_30 #New king
+	}
+	540.1.1 = {
+		holder = himyarite_30
+	}
+	555.1.1 = {
+		holder = himyarite_31
+	}
+	575.1.1 = {
+		holder = 0
+		#Invaded by Sassanids
+	}
+	#525.1.1 = {
+	#	holder = aksum_21
+	#}
+	#531.1 = {
+	#	holder = aksum_24
+	#}
+	#630.1.1 = {
+	#	liege = e_arabia
+	#}
+	768.1.1 = {
+		holder = 188748 # Yazid, brother-in-law of al-Mansur Abbasid (actually ruled in the 770s)
+		liege = 0 # De facto
+	}
+}
+
+
+c_sanaa = {
+	361.1.1 = {	change_development_level = 10 }
+	532.1.1 = {	change_development_level = 11 }
+	768.1.1 = {	change_development_level = 12 }
+	
+	# c_sanaa
+	### Early Kings of Himyar
+	275.1.1 = {
+		holder = himyar_01
+		government = feudal_government
+	}
+	# Aksum Enclave
+	340.1.1 = {
+		holder = aksum_12
+		government = feudal_government
+	}
+	### Himyarite Admins
+	380.1.1 = {
+		holder = himyarite_11
+		liege = k_yemen
+	}
+	476.1.1 = {
+		holder = himyarite_12
+	}
+	500.1.1 = {
+		holder = himyarite_27
+	}
+	532.1.1 = {
+		holder = himyarite_28
+	}
+	540.1.1 = {
+		holder = himyarite_30
+	}
+	630.1.1 = {
+		liege = "d_sanaa"
+	}
+	
+	768.1.1 = {
+		holder = 188748 # Yazid, brother-in-law of al-Mansur Abbasid (actually ruled in the 770s)
+	}
+}
+
+
+c_tihamat-al-yamani = {
+	# Aksum Enclave
+	340.1.1 = {
+		holder = aksum_12
+		government = feudal_government
+	}
+	### Himyarite Admins
+	380.1.1 = {
+		holder = himyarite_11
+		liege = k_yemen
+	}
+	476.1.1 = {
+		holder = himyarite_12
+	}
+	500.1.1 = {
+		holder = himyarite_27
+	}
+	532.1.1 = {
+		holder = himyarite_29
+	}
+	540.1.1 = {
+		holder = himyarite_30
+	}
+}
+
+
+c_najran = {
+	
+	# c_sanaa
+	### Early Kings of Himyar
+	275.1.1 = {
+		holder = himyar_01
+		government = feudal_government
+	}
+	# Aksum Enclave
+	340.1.1 = {
+		holder = aksum_12
+		government = feudal_government
+	}
+	### Himyarite Admins
+	380.1.1 = {
+		holder = himyarite_11
+		liege = k_yemen
+	}
+	476.1.1 = {
+		holder = himyarite_12
+	}
+	480.1.1 = {
+		holder = himyarite_27
+	}
+	532.1.1 = {
+		holder = himyarite_28
+	}
+	540.1.1 = {
+		holder = himyarite_30
+	}
+	630.1.1 = {
+		liege = "d_sanaa"
+		government = tribal_government
+	}
+	
+	768.1.1 = {
+		holder = 188748 # Yazid, brother-in-law of al-Mansur Abbasid (actually ruled in the 770s)
+	}
+	
+	
+}
+
+
+c_zabid = {
+	### Early Kings of Himyar
+	275.1.1 = {
+		holder = himyar_01
+		government = feudal_government
+	}
+	299.1.1 = {
+		holder = himyar_02
+	}
+	312.1.1 = {
+		holder = himyar_03
+	}
+	322.1.1 = {
+		holder = himyar_04
+	}
+	325.1.1 = {
+		holder = himyar_05
+	}
+	327.1.1 = {
+		holder = himyar_06
+	}
+	342.1.1 = {
+		holder = himyar_07
+	}
+	350.1.1 = {
+		holder = himyar_071
+	}
+	356.1.1 = {
+		holder = himyar_08
+	}
+	364.1.1 = {
+		holder = himyar_09
+	}
+	372.1.1 = {
+		holder = himyar_10
+	}
+	### Proper Kingdom
+	378.1.1 = {
+		holder = 982001
+	}
+	420.1.1 = {
+		holder = 982003
+	}
+	445.1.1 = {
+		holder = 982004
+	}
+	457.1.1 = {
+		holder = himyar_11
+	}
+	480.1.1 = {
+		holder = himyarite_27
+	}
+	532.1.1 = {
+		holder = himyarite_29
+		liege = k_yemen
+	}
+	540.1.1 = {
+		holder = himyarite_30
+	}
+	630.1.1 = {
+		liege = "d_sanaa"
+	}
+	
+	768.1.1 = {
+		holder = 188742
+	}
+	
+	
+}
+
+
+d_jawf-al-yamani = {
+	#525.1.1 = {
+	#	holder = aksum_21
+	#}
+	#531.1 = {
+	#	holder = aksum_24
+	#}
+}
+
+
+c_jawf-al-yamani = {
+	
+	### Himyarite Admins
+	360.1.1 = {
+		holder = himyarite_01
+		liege = k_yemen
+	}
+	380.1.1 = {
+		holder = himyarite_02
+	}
+	476.1.1 = {
+		holder = himyarite_03
+	}
+	630.1.1 = {
+		liege = "d_sanaa"
+		government = tribal_government
+	}
+	
+	
+}
+
+
+c_wabar = {
+	# c_sanaa
+	### Himyarite Admins
+	360.1.1 = {
+		holder = himyarite_01
+		liege = k_yemen
+	}
+	380.1.1 = {
+		holder = himyarite_02
+	}
+	476.1.1 = {
+		holder = himyarite_03
+	}
+	630.1.1 = {
+		liege = "d_sanaa"
+		government = tribal_government
+	}
+	
+	
+}
+
+
+d_taizz = {
+	361.1.1 = {	change_development_level = 6 }
+	532.1.1 = {	change_development_level = 7 }
+	768.1.1 = {	change_development_level = 8 }
+	
+	### Early Kings of Himyar
+	275.1.1 = {
+		holder = himyar_01
+		government = feudal_government
+	}
+	299.1.1 = {
+		holder = himyar_02
+	}
+	312.1.1 = {
+		holder = himyar_03
+	}
+	322.1.1 = {
+		holder = himyar_04
+	}
+	325.1.1 = {
+		holder = himyar_05
+	}
+	327.1.1 = {
+		holder = himyar_06
+	}
+	342.1.1 = {
+		holder = himyar_07
+	}
+	350.1.1 = {
+		holder = himyar_071
+	}
+	356.1.1 = {
+		holder = himyar_08
+	}
+	364.1.1 = {
+		holder = himyar_09
+	}
+	372.1.1 = {
+		holder = himyar_10
+	}
+	### Proper Kingdom
+	378.1.1 = {
+		holder = 982001
+	}
+	420.1.1 = {
+		holder = 982003
+	}
+	445.1.1 = {
+		holder = 982004
+	}
+	457.1.1 = {
+		holder = himyar_11
+	}
+	480.1.1 = {
+		holder = himyarite_20
+	}
+	495.1.1 = {
+		holder = himyarite_22
+	}
+	522.1.1 = {
+		holder = himyarite_26
+	}
+	527.1.1 = {
+		holder = himyarite_27
+	}
+	532.1.1 = {
+		holder = himyarite_30
+	}
+	555.1.1 = {
+		holder = himyarite_31
+	}
+	575.1.1 = {
+		holder = 0
+		#Invaded by Sassanids
+	}
+	#480.1.1 = {
+	#	holder = 0
+	#}
+	#525.1.1 = {
+	#	holder = aksum_21
+	#}
+	#531.1 = {
+	#	holder = aksum_24
+	#}
+}
+
+
+c_taizz = {
+	361.1.1 = {	change_development_level = 10 }
+	532.1.1 = {	change_development_level = 11 }
+	768.1.1 = {	change_development_level = 12 }
+	### Early Kings of Himyar
+	275.1.1 = {
+		holder = himyar_01
+		government = feudal_government
+	}
+	299.1.1 = {
+		holder = himyar_02
+	}
+	312.1.1 = {
+		holder = himyar_03
+	}
+	322.1.1 = {
+		holder = himyar_04
+	}
+	325.1.1 = {
+		holder = himyar_05
+	}
+	327.1.1 = {
+		holder = himyar_06
+	}
+	342.1.1 = {
+		holder = himyar_07
+	}
+	350.1.1 = {
+		holder = himyar_071
+	}
+	356.1.1 = {
+		holder = himyar_08
+	}
+	364.1.1 = {
+		holder = himyar_09
+	}
+	372.1.1 = {
+		holder = himyar_10
+	}
+	### Proper Kingdom
+	378.1.1 = {
+		holder = 982001
+	}
+	420.1.1 = {
+		holder = 982003
+	}
+	445.1.1 = {
+		holder = 982004
+	}
+	457.1.1 = {
+		holder = himyar_11
+	}
+	480.1.1 = {
+		holder = himyarite_20
+	}
+	495.1.1 = {
+		holder = himyarite_22
+	}
+	522.1.1 = {
+		holder = himyarite_26
+	}
+	527.1.1 = {
+		holder = himyarite_27
+	}
+	532.1.1 = {
+		holder = himyarite_30
+	}
+	555.1.1 = {
+		holder = himyarite_31
+	}
+}
+
+
+c_mandab = {
+	### Early Kings of Himyar
+	275.1.1 = {
+		holder = himyar_01
+		government = feudal_government
+	}
+	299.1.1 = {
+		holder = himyar_02
+	}
+	312.1.1 = {
+		holder = himyar_03
+	}
+	322.1.1 = {
+		holder = himyar_04
+	}
+	325.1.1 = {
+		holder = himyar_05
+	}
+	327.1.1 = {
+		holder = himyar_06
+	}
+	342.1.1 = {
+		holder = himyar_07
+	}
+	350.1.1 = {
+		holder = himyar_071
+	}
+	356.1.1 = {
+		holder = himyar_08
+	}
+	364.1.1 = {
+		holder = himyar_09
+	}
+	372.1.1 = {
+		holder = himyar_10
+	}
+	### Proper Kingdom
+	378.1.1 = {
+		holder = 982001
+	}
+	420.1.1 = {
+		holder = 982003
+	}
+	445.1.1 = {
+		holder = 982004
+	}
+	457.1.1 = {
+		holder = himyar_11
+	}
+	630.1.1 = {
+		liege = "d_sanaa"
+	}
+	
+	760.1.1 = {
+		holder = 188744
+	}
+	
+	
+}
+
+
+c_dathina = {
+	### Early Kings of Himyar
+	275.1.1 = {
+		holder = himyar_01
+		government = feudal_government
+	}
+	299.1.1 = {
+		holder = himyar_02
+	}
+	312.1.1 = {
+		holder = himyar_03
+	}
+	322.1.1 = {
+		holder = himyar_04
+	}
+	325.1.1 = {
+		holder = himyar_05
+	}
+	327.1.1 = {
+		holder = himyar_06
+	}
+	342.1.1 = {
+		holder = himyar_07
+	}
+	350.1.1 = {
+		holder = himyar_071
+	}
+	356.1.1 = {
+		holder = himyar_08
+	}
+	364.1.1 = {
+		holder = himyar_09
+	}
+	372.1.1 = {
+		holder = himyar_10
+	}
+	### Proper Kingdom
+	378.1.1 = {
+		holder = 982001
+	}
+	420.1.1 = {
+		holder = 982003
+	}
+	445.1.1 = {
+		holder = 982004
+	}
+	457.1.1 = {
+		holder = himyar_11
+	}
+	630.1.1 = {
+		liege = "d_sanaa"
+	}
+	
+	768.1.1 = {
+		holder = 188743
+	}
+	
+}
+
+d_hadramawt = {
+	### Early Kings of Himyar
+	275.1.1 = {
+		holder = himyar_01
+		government = feudal_government
+	}
+	299.1.1 = {
+		holder = himyar_02
+	}
+	312.1.1 = {
+		holder = himyar_03
+	}
+	322.1.1 = {
+		holder = himyar_04
+	}
+	325.1.1 = {
+		holder = himyar_05
+	}
+	327.1.1 = {
+		holder = himyar_06
+	}
+	342.1.1 = {
+		holder = himyar_07
+	}
+	350.1.1 = {
+		holder = himyar_071
+	}
+	356.1.1 = {
+		holder = himyar_08
+	}
+	364.1.1 = {
+		holder = himyar_09
+	}
+	372.1.1 = {
+		holder = himyar_10
+	}
+	### Proper Kingdom
+	378.1.1 = {
+		holder = 982001
+	}
+	420.1.1 = {
+		holder = 982003
+	}
+	445.1.1 = {
+		holder = 982004
+	}
+	457.1.1 = {
+		holder = himyar_11
+	}
+	480.1.1 = {
+		holder = himyarite_20
+	}
+	495.1.1 = {
+		holder = himyarite_22
+	}
+	522.1.1 = {
+		holder = himyarite_26
+	}
+	527.1.1 = {
+		holder = himyarite_32
+		#government = tribal_government
+		liege = k_yemen
+	}
+	#527.1.1 = {
+	#	holder = himyarite_27 #Ruler of Himyar
+	#}
+	540.1.1 = {
+		holder = himyarite_30
+	}
+	555.1.1 = {
+		holder = himyarite_31
+	}
+	#480.1.1 = {
+	#	holder = 0
+	#}
+	#525.1.1 = {
+	#	holder = aksum_21
+	#}
+	#531.1 = {
+	#	holder = aksum_24
+	#}
+}
+c_hadramawt = {
+	### Himyarite Admins
+	360.1.1 = {
+		holder = himyarite_04
+		liege = k_yemen
+		government = tribal_government
+	}
+	380.1.1 = {
+		holder = himyarite_05
+	}
+	476.1.1 = {
+		holder = himyarite_06
+	}
+	630.1.1 = {
+		liege = "d_sanaa"
+		government = tribal_government
+	}
+	
+	765.1.1 = {
+		holder = 188732 # Yufirids
+	}	
+}
+
+
+c_ahqaf = {
+	
+	### Himyarite Admins
+	360.1.1 = {
+		holder = himyarite_04
+		liege = k_yemen
+		government = tribal_government
+	}
+	380.1.1 = {
+		holder = himyarite_05
+	}
+	476.1.1 = {
+		holder = himyarite_06
+	}
+	530.1.1 = {
+		holder = himyarite_39
+		liege = d_hadramawt
+	}
+	630.1.1 = {
+		liege = "d_sanaa"
+		government = tribal_government
+	}
+	
+	765.1.1 = {
+		holder = 188732 # Yufirids
+	}
+}
+
+
+c_kinda_sakun = {
+	# c_kathiri
+	
+	### Himyarite Admins
+	360.1.1 = {
+		holder = himyarite_13
+		liege = k_yemen
+		government = tribal_government
+	}
+	380.1.1 = {
+		holder = himyarite_14
+	}
+	476.1.1 = {
+		holder = himyarite_15
+	}
+	530.1.1 = {
+		holder = himyarite_38
+		liege = d_hadramawt
+	}
+	630.1.1 = {
+		liege = "d_sanaa"
+		government = tribal_government
+	}
+	
+	765.1.1 = {
+		holder = 188732 # Yufirids
+	}
+}
+
+
+c_mahra = {
+	### Himyarite Admins
+	360.1.1 = {
+		holder = himyarite_13
+		liege = k_yemen
+		government = tribal_government
+	}
+	380.1.1 = {
+		holder = himyarite_14
+	}
+	#476.1.1 = {
+	#	holder = himyarite_15
+	#}
+	#525.1.1 = {
+	#	holder = aksum_21
+	#}
+	#531.1 = {
+	#	holder = aksum_24
+	#}
+	#630.1.1 = {
+	#	liege = d_sanaa
+	#}
+	400.1.1 = {
+		holder = 982001
+	}
+	420.1.1 = {
+		holder = 982003
+	}
+	445.1.1 = {
+		holder = 982004
+	}
+	457.1.1 = {
+		holder = himyar_11
+	}
+	480.1.1 = {
+		holder = himyarite_20
+	}
+	495.1.1 = {
+		holder = himyarite_22
+	}
+	522.1.1 = {
+		holder = himyarite_26
+		liege = 0
+	}
+	527.1.1 = {
+		holder = himyarite_27
+	}
+	532.1.1 = {
+		holder = himyarite_33
+		liege = k_yemen
+		#holder = himyarite_30 #New king
+	}
+	540.1.1 = {
+		holder = himyarite_30
+	}
+	555.1.1 = {
+		holder = himyarite_31
+	}
+	
+	768.1.1 = {
+		government = tribal_government
+		holder = 188745
+	}
+}
+
+
+c_al-asa = {
+	### Himyarite Admins
+	360.1.1 = {
+		holder = himyarite_16
+		liege = k_yemen
+		government = tribal_government
+	}
+	380.1.1 = {
+		holder = himyarite_17
+	}
+	476.1.1 = {
+		holder = himyarite_18
+	}
+	#525.1 = {
+		#liege = 0
+	#}
+	532.1.1 = {
+		liege = d_mahra
+		holder = himyarite_36
+		government = republic_government
+	}
+	630.1.1 = {
+		liege = d_sanaa
+	}
+	
+	768.1.1 = {
+		government = tribal_government
+		holder = 188745
+	}
+}
+
+
+c_dhofar = {
+	### Himyarite Admins
+	360.1.1 = {
+		holder = himyarite_16
+		liege = k_yemen
+		government = tribal_government
+	}
+	380.1.1 = {
+		holder = himyarite_17
+	}
+	476.1.1 = {
+		holder = himyarite_18
+	}
+	#525.1 = {
+	#	liege = 0
+	#}
+	532.1.1 = {
+		liege = d_mahra
+		holder = himyarite_37
+		government = republic_government
+	}
+	# c_dhofar
+	665.1.1 = {
+		liege = d_oman
+		government = tribal_government
+	}
+	
+	767.1.1 = {
+		holder = 188765
+	}
+	
+}
+
+
+
+c_socotra = {
+	361.1.1 = {	change_development_level = 5 }
+	532.1.1 = {	change_development_level = 6 }
+	768.1.1 = {	change_development_level = 7 }
+	
+	### Himyarite Admins
+	360.1.1 = {
+		holder = himyarite_07
+		liege = k_yemen
+		government = feudal_government
+	}
+	380.1.1 = {
+		holder = himyarite_08
+	}
+	476.1.1 = {
+		holder = himyarite_09
+	}
+	532.1.1 = {
+		holder = south_arabian_01
+	}
+	757.1.1 = {
+		liege = "d_socotra"
+		holder = 145965
+		government = feudal_government
+	}
+}

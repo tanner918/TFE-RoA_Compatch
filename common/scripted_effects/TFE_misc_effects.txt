@@ -1,0 +1,670 @@
+﻿garamantes_flavour_effect = {
+	if = {
+		limit = {
+			title:b_al-barkat = {
+				title_province = { has_special_building = no }
+			}
+		}
+		title:b_al-barkat.title_province = {
+			add_special_building = carnelian_amazonite_mines_01
+		}
+	}
+	if = {
+		limit = {
+			title:b_eferi = {
+				title_province = { has_special_building = no }
+			}
+		}
+		title:b_eferi.title_province = {
+			add_special_building = carnelian_amazonite_mines_01
+		}
+	}
+	title:c_djanet = {
+		add_county_modifier = monumental_tomb_of_abalessa_modifier
+	}
+	#Lazy
+	title:c_dakhina_desa = {
+		add_county_modifier = sigiriya_modifier
+	}
+}
+
+TFE_bathhouse_decision_effect = {
+	# Both Roman bathhouse built AND Roman architecture tradition
+	if = {
+		limit = {
+			capital_county = {
+				roman_bathhouse_recently_built_trigger = yes
+			}
+			culture = {
+				has_cultural_tradition = tradition_roman_architecture
+			}
+		}
+		stress_impact = {
+			base = major_stress_impact_loss
+			lazy = miniscule_stress_impact_loss
+			lustful = miniscule_stress_impact_loss
+			gregarious = miniscule_stress_impact_loss
+		}
+	}
+	# Only Roman bathhouse recently built OR Roman Architecture tradition
+	else_if = {
+		limit = {
+			OR = {
+				capital_county = {
+					roman_bathhouse_recently_built_trigger = yes
+				}
+				culture = {
+					has_cultural_tradition = tradition_roman_architecture
+				}
+			}
+		}
+		stress_impact = {
+			base = medium_stress_impact_loss
+			lazy = miniscule_stress_impact_loss
+			lustful = miniscule_stress_impact_loss
+			gregarious = miniscule_stress_impact_loss
+		}
+	}
+	# Neither Roman bathhouse recently built nor Roman architecture tradition
+	else = {
+		stress_impact = {
+			base = minor_stress_impact_loss
+			lazy = miniscule_stress_impact_loss
+			lustful = miniscule_stress_impact_loss
+			gregarious = miniscule_stress_impact_loss
+		}
+	}
+	if = {
+		limit = {
+			is_greek_or_roman = no
+		}
+		if = {
+			limit = {				
+				liege = {
+					is_greek_or_roman = yes
+				}
+			}
+			liege = {
+				add_opinion = {
+					target = root
+					modifier = opinion_took_roman_bath
+				}
+			}
+		}
+		every_courtier_or_guest = {
+			limit = {
+				is_greek_or_roman = yes
+			}
+			custom = TFE_every_greco_roman_courtier_or_guest
+			add_opinion = {
+				target = root
+				modifier = opinion_took_roman_bath
+			}
+		}
+	}
+}
+
+TFE_build_roman_bathhouse_small_effect = {
+	if = {
+		limit = {
+			capital_province = {
+				is_greek_or_roman = yes				
+			}
+		}
+		capital_county = {
+			add_county_modifier = {
+				modifier = TFE_recently_built_baths_roman_province_small
+				years = 10
+			}
+		}
+		if = {
+			limit = {
+				culture = {
+					has_cultural_tradition = tradition_roman_architecture
+				}				
+			}
+			add_prestige = 150
+		}
+		else = {
+			add_prestige = 100
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				culture = {
+					has_cultural_tradition = tradition_roman_architecture
+				}				
+			}
+			add_prestige = 100
+		}
+		else = {
+			add_prestige = 50
+		}
+		capital_county = {
+			add_county_modifier = {
+				modifier = TFE_recently_built_baths_non_roman_province_small
+				years = 10
+			}
+		}
+	}
+}
+
+TFE_build_roman_bathhouse_medium_effect = {
+	if = {
+		limit = {
+			capital_province = {
+				is_greek_or_roman = yes				
+			}
+		}
+		if = {
+			limit = {
+				culture = {
+					has_cultural_tradition = tradition_roman_architecture
+				}				
+			}
+			add_prestige = 250
+		}
+		else = {
+			add_prestige = 200
+		}
+		capital_county = {
+			add_county_modifier = {
+				modifier = TFE_recently_built_baths_roman_province_medium
+				years = 10
+			}
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				culture = {
+					has_cultural_tradition = tradition_roman_architecture
+				}				
+			}
+			add_prestige = 150
+		}
+		else = {
+			add_prestige = 100
+		}
+		capital_county = {
+			add_county_modifier = {
+				modifier = TFE_recently_built_baths_non_roman_province_medium
+				years = 10
+			}
+		}
+	}
+}
+
+TFE_build_roman_bathhouse_large_effect = {
+	if = {
+		limit = {
+			capital_province = {
+				is_greek_or_roman = yes				
+			}
+		}
+		if = {
+			limit = {
+				culture = {
+					has_cultural_tradition = tradition_roman_architecture
+				}				
+			}
+			add_prestige = 350
+		}
+		else = {
+			add_prestige = 300
+		}
+		capital_county = {
+			add_county_modifier = {
+				modifier = TFE_recently_built_baths_roman_province_large
+				years = 10
+			}
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				culture = {
+					has_cultural_tradition = tradition_roman_architecture
+				}				
+			}
+			add_prestige = 200
+		}
+		else = {
+			add_prestige = 150
+		}
+		capital_county = {
+			add_county_modifier = {
+				modifier = TFE_recently_built_baths_non_roman_province_large
+				years = 10
+			}
+		}
+	}
+}
+
+
+fix_variable_error = {# ERROR = KEY
+    if = {
+        limit = {
+            exists = var:$ERROR$
+            var:$ERROR$ = flag:$ERROR$
+        }
+        set_variable = {
+            name = $ERROR$
+            value = flag:$ERROR$
+        }
+    }
+}
+fix_scope_error = {
+    if = {
+        limit = {
+            exists = scope:$ERROR$
+        }
+        save_scope_as = $ERROR$
+    }
+}
+
+restore_italia_suburbicariae_effect = {
+	title:d_capua = {
+		holder = {
+			destroy_title = title:d_capua 
+		}
+	}
+	title:d_salerno = {
+		holder = {
+			destroy_title = title:d_salerno
+		}
+	}
+	title:d_pisa = {
+		holder = {
+			destroy_title = title:d_pisa
+		}
+	}
+	title:d_sicily = {
+		set_de_jure_liege_title = title:k_italia_suburbicariae
+	}
+	title:d_benevento = {
+		set_de_jure_liege_title = title:k_italia_suburbicariae
+	}
+	title:d_apulia = {
+		set_de_jure_liege_title = title:k_italia_suburbicariae
+	}
+	title:d_calabria = {
+		set_de_jure_liege_title = title:k_italia_suburbicariae
+	}
+	title:d_corsica = {
+		set_de_jure_liege_title = title:k_italia_suburbicariae
+	}
+	title:d_sardinia = {
+		set_de_jure_liege_title = title:k_italia_suburbicariae
+	}
+	title:d_corsica = {
+		set_de_jure_liege_title = title:k_italia_suburbicariae
+	}
+	title:d_spoleto = {
+		set_de_jure_liege_title = title:k_italia_suburbicariae
+	}
+	title:d_ancona = {
+		set_de_jure_liege_title = title:k_italia_suburbicariae
+	}
+	title:d_latium = {
+		set_de_jure_liege_title = title:k_italia_suburbicariae
+	}
+	title:d_toscana = {
+		set_de_jure_liege_title = title:k_italia_suburbicariae
+	}
+	title:c_capua = {
+		set_de_jure_liege_title = title:d_latium
+	}
+	title:c_napoli = {
+		set_de_jure_liege_title = title:d_latium
+	}
+	title:c_salerno = {
+		set_de_jure_liege_title = title:d_calabria
+	}
+	title:c_camarda = {
+		set_de_jure_liege_title = title:d_calabria
+	}
+	title:c_pisa = {
+		set_de_jure_liege_title = title:d_toscana
+	}
+	title:c_orvieto = {
+		set_de_jure_liege_title = title:d_toscana
+	}
+	title:c_lanciano = {
+		set_de_jure_liege_title = title:d_benevento
+	}
+	title:k_italia_suburbicariae = {
+		every_in_de_jure_hierarchy = {
+			limit = {
+				tier = tier_duchy
+			}
+			reset_title_name = yes
+		}
+	}
+}
+restore_africae_effect = {
+	title:d_tlemcen = {
+		set_de_jure_liege_title = title:k_africae
+	}
+	title:d_bejaia = {
+		set_de_jure_liege_title = title:k_africae
+	}
+	title:d_kroumerie = {
+		set_de_jure_liege_title = title:k_africae
+	}
+	title:d_tahert = {
+		set_de_jure_liege_title = title:k_africae
+	}
+	title:d_alger = {
+		set_de_jure_liege_title = title:k_africae
+	}
+	title:d_kairouan = {
+		set_de_jure_liege_title = title:k_africae
+	}
+	title:d_tunis = {
+		set_de_jure_liege_title = title:k_africae
+	}
+	title:d_kroumerie = {
+		set_de_jure_liege_title = title:k_africae
+	}
+	title:d_jerid = {
+		set_de_jure_liege_title = title:k_africae
+	}
+	title:d_gabes = {
+		set_de_jure_liege_title = title:k_africae
+	}
+	title:d_tripolitania = {
+		set_de_jure_liege_title = title:k_africae
+	}
+	title:d_syrte = {
+		set_de_jure_liege_title = title:k_africae
+	}
+	title:k_africae = {
+		every_in_de_jure_hierarchy = {
+			limit = {
+				tier = tier_duchy
+			}
+			reset_title_name = yes
+		}
+	}
+}
+restore_pannonia_effect = {
+	title:d_croatia = {
+		holder = {
+			destroy_title = title:d_croatia 
+		}
+	}
+	title:d_usora = {
+		holder = {
+			destroy_title = title:d_usora 
+		}
+	}
+	title:d_bosna = {
+		holder = {
+			destroy_title = title:d_bosna 
+		}
+	}
+	title:d_gyor = {
+		holder = {
+			destroy_title = title:d_gyor 
+		}
+	}
+	title:d_steyermark = {
+		holder = {
+			destroy_title = title:d_steyermark 
+		}
+	}
+
+	title:d_visegrad = {
+		holder = {
+			destroy_title = title:d_visegrad 
+		}
+	}
+	title:d_osterreich = {
+		holder = {
+			destroy_title = title:d_osterreich 
+		}
+	}
+	title:d_dalmatia = {
+		set_de_jure_liege_title = title:k_pannonia
+	}
+	title:d_slavonia = {
+		set_de_jure_liege_title = title:k_pannonia
+	}
+	title:d_syrmia = {
+		set_de_jure_liege_title = title:k_pannonia
+	}
+	title:d_salzburg = {
+		set_de_jure_liege_title = title:k_pannonia
+	}
+	title:d_carinthia = {
+		set_de_jure_liege_title = title:k_pannonia
+	}
+	title:d_somogy = {
+		set_de_jure_liege_title = title:k_pannonia
+	}
+	title:d_pannonia_valeria = {
+		set_de_jure_liege_title = title:k_pannonia
+	}
+	title:c_veszprem = {
+		set_de_jure_liege_title = title:d_somogy
+	}
+	title:c_sopron = {
+		set_de_jure_liege_title = title:d_somogy
+	}
+	title:c_gyor = {
+		set_de_jure_liege_title = title:d_somogy
+	}
+	title:c_vas = {
+		set_de_jure_liege_title = title:d_somogy
+	}
+	title:c_liebnitz = {
+		set_de_jure_liege_title = title:d_carinthia
+	}
+	title:c_graz = {
+		set_de_jure_liege_title = title:d_carinthia
+	}
+	title:c_murzzuschlag = {
+		set_de_jure_liege_title = title:d_carinthia
+	}
+	title:c_pitten = {
+		set_de_jure_liege_title = title:d_carinthia
+	}
+	title:c_amstetten = {
+		set_de_jure_liege_title = title:d_salzburg
+	}
+	title:c_sankt_polten = {
+		set_de_jure_liege_title = title:d_salzburg
+	}
+	title:c_vienna = {
+		set_de_jure_liege_title = title:d_salzburg
+	}
+	title:d_visegrad = {
+		every_de_jure_county = {
+			set_de_jure_liege_title = title:d_pannonia_valeria
+		}
+	}
+	title:d_bosna = {
+		every_de_jure_county = {
+			set_de_jure_liege_title = title:d_dalmatia
+		}
+	}
+	title:d_usora = {
+		every_de_jure_county = {
+			set_de_jure_liege_title = title:d_dalmatia
+		}
+	}
+	title:d_croatia = {
+		every_de_jure_county = {
+			set_de_jure_liege_title = title:d_dalmatia
+		}
+	}
+	title:k_pannonia = {
+		every_in_de_jure_hierarchy = {
+			limit = {
+				tier = tier_duchy
+			}
+			reset_title_name = yes
+		}
+	}
+}
+restore_italia_annonariae_effect = {
+	title:d_piedmonte = {
+		holder = {
+			destroy_title = title:d_piedmonte
+		}
+	}
+	title:d_verona = {
+		holder = {
+			destroy_title = title:d_verona 
+		}
+	}
+	title:d_tyrol = {
+		holder = {
+			destroy_title = title:d_tyrol 
+		}
+	}
+	title:d_bavaria = {
+		holder = {
+			destroy_title = title:d_bavaria 
+		}
+	}
+	title:d_romagna = {
+		set_de_jure_liege_title = title:k_italia_annonariae
+	}
+	title:d_genoa = {
+		set_de_jure_liege_title = title:k_italia_annonariae
+	}
+	title:d_friuli = {
+		set_de_jure_liege_title = title:k_italia_annonariae
+	}
+	title:d_emilia = {
+		set_de_jure_liege_title = title:k_italia_annonariae
+	}
+	title:d_lombardia = {
+		set_de_jure_liege_title = title:k_italia_annonariae
+	}
+	title:d_currezia = {
+		set_de_jure_liege_title = title:k_italia_annonariae
+	}
+	title:d_augsburg = {
+		set_de_jure_liege_title = title:k_italia_annonariae
+	}
+	title:c_padua = {
+		set_de_jure_liege_title = title:d_friuli
+	}
+	title:c_polesine = {
+		set_de_jure_liege_title = title:d_friuli
+	}
+	title:c_verona = {
+		set_de_jure_liege_title = title:d_friuli
+	}
+	title:c_treviso = {
+		set_de_jure_liege_title = title:d_friuli
+	}
+	title:c_mantua = {
+		set_de_jure_liege_title = title:d_friuli
+	}
+	title:c_trent = {
+		set_de_jure_liege_title = title:d_friuli
+	}
+	title:c_novara = {
+		set_de_jure_liege_title = title:d_lombardia
+	}
+	title:c_cuneo = {
+		set_de_jure_liege_title = title:d_genoa
+	}
+	title:c_monferrato= {
+		set_de_jure_liege_title = title:d_genoa
+	}
+	title:c_turin = {
+		set_de_jure_liege_title = title:d_genoa
+	}
+	title:c_ravensburg = {
+		set_de_jure_liege_title = title:d_currezia
+	}
+	title:c_ravensburg = {
+		set_de_jure_liege_title = title:d_currezia
+	}
+	title:c_alpsee = {
+		set_de_jure_liege_title = title:d_currezia
+	}
+	title:c_innsbruck = {
+		set_de_jure_liege_title = title:d_currezia
+	}
+	title:c_lienz = {
+		set_de_jure_liege_title = title:d_currezia
+	}
+	title:c_brixen = {
+		set_de_jure_liege_title = title:d_currezia
+	}
+	title:c_eschenlohe = {
+		set_de_jure_liege_title = title:d_augsburg
+	}
+	title:c_munchen = {
+		set_de_jure_liege_title = title:d_augsburg
+	}
+	title:c_geisenhausen = {
+		set_de_jure_liege_title = title:d_augsburg
+	}
+	title:c_rothenburg = {
+		set_de_jure_liege_title = title:d_augsburg
+	}
+	title:c_regensburg = {
+		set_de_jure_liege_title = title:d_augsburg
+	}
+	title:c_frontenhausen = {
+		set_de_jure_liege_title = title:d_augsburg
+	}
+	title:c_passau = {
+		set_de_jure_liege_title = title:d_augsburg
+	}
+	title:c_falkenstein = {
+		set_de_jure_liege_title = title:d_augsburg
+	}
+	title:k_italia_annonariae = {
+		every_in_de_jure_hierarchy = {
+			limit = {
+				tier = tier_duchy
+			}
+			reset_title_name = yes
+		}
+	}
+}
+create_custom_unlanded_kingdom_effect = {
+	custom_tooltip = create_new_unlanded_kingdom
+	hidden_effect = {
+		save_scope_as = founder
+		primary_title = {
+			save_scope_as = old_title
+		}
+		
+		create_dynamic_title = {
+			tier = kingdom
+			name = NEW_CREATED_TITLE_NAME
+		}
+		
+		create_title_and_vassal_change = {
+			type = created
+			save_scope_as = change
+			add_claim_on_loss = no
+		}
+		
+		scope:new_title = {
+			change_title_holder = {
+				holder = root
+				change = scope:change
+			}
+		}
+		resolve_title_and_vassal_change = scope:change
+		scope:new_title = {
+			set_coa = scope:old_title
+			set_color_from_title = scope:old_title
+			set_capital_county = scope:old_title.title_capital_county
+		}
+		set_primary_title_to = scope:new_title
+		
+		trigger_event = TFE_misc_decisions.0001
+	}
+}

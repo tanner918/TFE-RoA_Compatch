@@ -1,0 +1,165 @@
+﻿2000003 = {
+	name = "Abigail"
+	dna = 2000003
+	female = yes
+	religion = "norse_pagan"
+	culture = "sitonian"
+
+	trait = education_learning_1
+	trait = lazy
+	trait = fickle
+	trait = ambitious
+	trait = intellect_good_3  # Recessive
+	trait = physique_bad_3
+	diplomacy = 9
+	martial = 0
+	stewardship = 11
+	intrigue = 16
+	learning = 14
+	prowess = 0
+	health = 7.25
+	disallow_random_traits = yes
+
+	378.10.29 = {
+		birth = yes
+	}
+	395.1.17 = {
+		move_to_pool = yes
+	}
+	432.1.1 = {
+		death = yes
+	}
+}
+
+# Dong Zhuo (and his killer) in Syagrius's court
+2000100 = {
+	name = "Zhuo"
+	dynasty = dynasty_dongzhuo
+	religion = "zhengyi"
+	culture = "han"
+
+	trait = education_martial_1
+	trait = arbitrary
+	trait = ambitious
+	trait = gluttonous
+	#trait = incapable
+	disallow_random_traits = yes
+
+	345.5.22 = {
+		birth = yes
+	}
+	395.1.1 = {
+		employer = senonia_05
+		#effect = {
+		#	set_relation_nemesis = character:2000101
+		#}
+	}
+	402.5.22 = {  # Moved 200 years forward
+		death = {
+			death_reason = death_murder_known
+			killer = 2000101
+		}
+	}
+}
+2000101 = {
+	name = "Bu"
+	dynasty = dynasty_lubu
+	religion = "zhengyi"
+	culture = "han"
+	father = 2000100
+
+	trait = adopted_trait
+	trait = vengeful
+	trait = incapable
+
+	459.2.7 = {
+		birth = yes
+	}
+	476.1.1 = {
+		employer = syagri_06
+		effect = {
+			set_relation_nemesis = character:2000101
+		}
+	}
+	499.2.7 = {
+		death = yes
+	}
+}
+
+marshalnsc = {
+	name = "Shuei"
+	dna = dna_marshalnsc
+	dynasty = dynn_marshalnsc
+	religion = zun_pagan
+	culture = han
+	sexuality = bisexual
+	disallow_random_traits = yes
+
+	trait = stubborn
+	trait = just
+	trait = vengeful
+	trait = education_stewardship_3
+	trait = intellect_good_1
+	trait = depressed_genetic
+	trait = beardless_eunuch #no stat boosting marriages for you
+	diplomacy = 99
+	martial = 99
+	stewardship = 99
+	intrigue = 99
+	learning = 99
+	prowess = 99
+	health = 15
+
+	portrait_override = {
+		portrait_modifier_overrides = {
+			custom_hair = male_hair_fp1_07
+			custom_beards = male_empty
+		}
+	}
+
+	345.1.1 = {
+		birth = yes
+	}
+	361.1.1 = {
+		give_nickname = nick_marshalnsc
+		add_character_modifier = marshalnsc_modifier
+		add_character_flag = marshalnsc_portrait_modifier
+		add_character_flag = no_headgear
+		employer = former_liang_013
+	}
+	395.1.10 = {
+		employer = western_liang_005
+	}
+	460.1.1 = {
+		employer = western_liang_033
+	}
+	526.1.1 = {
+		employer = linghu_liang_005
+	}
+	533.1.1 = {
+		death = yes
+	}
+}
+
+tazonusuari = {
+	name = "Lucas"
+	dna = dna_tazon
+	culture = roman
+	religion = hellenic_pagan
+	sexuality = heterosexual
+	trait = shy
+	trait = honest
+	trait = calm
+	trait = scholar
+	447.11.24 = {
+		birth = yes
+	}
+	476.1.1 = {
+		give_nickname = nick_tazon
+		add_character_flag = no_headgear
+		employer = nepos_02
+	}
+	533.1.1 = {
+		death = yes
+	}
+}

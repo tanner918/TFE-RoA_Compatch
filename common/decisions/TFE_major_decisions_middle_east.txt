@@ -1,0 +1,838 @@
+﻿### HOUSE OF SASSAN DECISIONS
+
+TFE_sponsor_foundation_yazd_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	}
+	decision_group_type = religious
+
+	desc = TFE_sponsor_foundation_yazd_decision_desc
+	selection_tooltip = TFE_sponsor_foundation_yazd_decision_tooltip
+
+	ai_check_interval = 120
+
+	is_shown = {
+		is_landed_or_landless_administrative = yes # Normally this will always be true, but if in DEBUG mode and playing as an unlanded ruler this will cause error spam without it.
+		religion = religion:zoroastrianism_religion
+		NOT = {
+			OR = {
+				government_has_flag = government_is_tribal
+			}
+		}
+		NOT = {  #Can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_created_yazd
+			}
+		}
+		any_sub_realm_county = {
+			title_province = {
+				geographical_region = world_persia
+			}
+		}
+	}
+
+	is_valid = {
+		is_independent_ruler = yes
+		piety_level >= high_piety_level
+		completely_controls_region = world_persia
+		exists = faith.religious_head
+	}
+
+	is_valid_showing_failures_only = {
+		is_available_adult = yes
+	}
+
+	cost = {
+		prestige = 500
+		gold = 1000
+	}
+
+	effect = {
+		title:c_yazd = {
+			if = {
+				limit = {
+					development_level <= 10
+				}
+				change_development_level = 10
+			}
+		}
+		custom_tooltip = TFE_sponsor_foundation_yazd_effect_tooltip
+		faith:mazdayasna = {
+			activate_holy_site = yazd  # Yazd hasn't been consacrated yet
+		}
+		faith:zurvanism = {
+			activate_holy_site = yazd  # Yazd hasn't been consacrated yet
+		}
+		faith:gayomarthianism = {
+			activate_holy_site = yazd  # Yazd hasn't been consacrated yet
+		}
+		faith:khurmazta = {
+			activate_holy_site = yazd  # Yazd hasn't been consacrated yet
+		}
+		faith:mazdakism = {
+			activate_holy_site = yazd  # Yazd hasn't been consacrated yet
+		}
+		faith:khurramism = {
+			activate_holy_site = yazd  # Yazd hasn't been consacrated yet
+		}
+		faith:urartuism = {
+			activate_holy_site = yazd  # Yazd hasn't been consacrated yet
+		}
+		faith:armaz = {
+			activate_holy_site = yazd  # Yazd hasn't been consacrated yet
+		}
+		faith:magousaian = {
+			activate_holy_site = yazd  # Yazd hasn't been consacrated yet
+		}
+		add_piety = 3000
+		#### Set the High Priesthood capitals
+		title:d_mazdayasna = {
+			set_capital_county = title:c_yazd
+		}
+		title:d_gayomarthianism = {
+			set_capital_county = title:c_yazd
+		}
+		title:d_khurmazta = {
+			set_capital_county = title:c_yazd
+		}
+		title:d_mazdakism = {
+			set_capital_county = title:c_yazd
+		}
+		title:d_khurramism = {
+			set_capital_county = title:c_yazd
+		}
+		title:d_urartuism = {
+			set_capital_county = title:c_yazd
+		}
+		hidden_effect = {
+			title:b_yazd = {
+				reset_title_name = yes
+			}
+			title:c_yazd = {
+				reset_title_name = yes
+			}
+			title:d_yazd = {
+				reset_title_name = yes
+			}
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_created_yazd
+			}
+			set_global_variable = {
+				name = flag_created_yazd
+				value = root
+			}
+		}
+		trigger_event = {
+			id = TFE_middle_east.0002
+		}
+		every_player = {
+			limit = {
+				religion = religion:zoroastrianism_religion
+				NOT = {
+					this = root
+				}
+			}
+			trigger_event = {
+				id = TFE_middle_east.0003
+			}
+		}
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+TFE_restore_parthia_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	}
+	decision_group_type = major
+
+	desc = TFE_restore_parthia_decision_desc
+	selection_tooltip = TFE_restore_parthia_decision_tooltip
+
+	ai_check_interval = 360
+
+	is_shown = {
+		is_landed_or_landless_administrative = yes # Normally this will always be true, but if in DEBUG mode and playing as an unlanded ruler this will cause error spam without it.
+		# highest_held_title_tier = tier_empire
+		# government_has_flag = government_is_eranshar	
+		NOT = {  #Can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_parthia_restored
+			}
+		}
+		#OR = {
+			culture = {
+				OR = {
+					this = culture:parthian
+					any_parent_culture_or_above = {
+						this = culture:parthian
+					}
+				}
+			}
+			#capital_province = {
+			#	OR = {
+			#		geographical_region = world_persia
+			#	}
+			#}			
+		#}
+	}
+
+	is_valid = {
+		is_independent_ruler = yes
+		prestige_level >= high_prestige_level
+		completely_controls = title:e_persia
+		#NOT = { 
+		#	any_county_in_region = {
+		#		region = world_persia
+		#		culture = persian
+		#	}
+		#}
+	}
+
+	is_valid_showing_failures_only = {
+		is_available_adult = yes
+	}
+
+	cost = {
+		# prestige = 500
+		gold = 500
+	}
+
+	effect = {
+		if = {
+			limit = {
+				has_game_rule = larp_enabled 
+			}
+
+			title:e_persia = {
+				set_title_name = e_persia_parthia
+			}
+		}
+
+		add_prestige = 500
+		add_prestige_level = 2
+		custom_tooltip = TFE_restore_parthia_decision_effect_tooltip
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:flag_parthia_restored
+		}
+		set_global_variable = {
+			name = flag_parthia_restored
+			value = root
+		}
+		trigger_event = TFE_middle_east.0004 # Restore Parthia
+	}
+	
+}
+
+TFE_construct_baghdad = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/fp2_decision_struggle_conciliation.dds"
+	}
+	decision_group_type = major
+
+	desc = TFE_construct_baghdad_desc
+	selection_tooltip = TFE_construct_baghdad_tooltip
+
+	ai_check_interval = 120
+
+	is_shown = {
+		is_landed_or_landless_administrative = yes
+		NOT = {  #Can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:TFE_construct_baghdad
+			}
+		}
+		title:b_baghdad.title_province = {
+			has_holding = no
+		}
+		religion = religion:islam_religion
+		highest_held_title_tier > tier_duchy
+	}
+
+	is_valid = {
+		is_independent_ruler = yes
+		completely_controls = title:k_mesopotamia
+		prestige_level >= 3
+		stewardship >= 7
+		religion = religion:islam_religion
+		highest_held_title_tier > tier_duchy
+	}
+
+	cost = {
+		prestige = 500
+		gold = 500
+	}
+
+	effect = {
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:TFE_construct_baghdad
+		}
+		title:b_baghdad.title_province = {
+			set_holding_type = castle_holding
+			add_special_building_slot = house_of_wisdom_01
+			
+		}
+		title:d_baghdad = {
+			set_title_name = BAGHDAD
+		}
+		title:c_baghdad = {
+			set_title_name = BAGHDAD
+			add_county_modifier = {
+				modifier = baghdad_recently_built
+				years = 50
+			}
+		}
+		title:c_baghdad = {
+			set_capital_barony = title:b_baghdad
+		}
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+TFE_assimilate_houses = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_realm_persia.dds"
+	}
+	decision_group_type = major
+
+	desc = TFE_assimilate_houses_desc
+	selection_tooltip = TFE_assimilate_houses_tooltip
+	ai_check_interval = 120
+	is_invisible = yes
+
+	is_shown = {
+		is_landed_or_landless_administrative = yes
+		OR = {
+			sevenhouses_enabled = yes
+			liege = {
+				sevenhouses_enabled = yes
+			}
+		}
+	}
+
+	is_valid = {
+		has_title = title:e_persia
+		prestige_level >= 3
+		has_realm_law = eranshar_authority_3 
+		custom_description = {
+			text = low_seven_houses_strength
+			subject = root
+			root = {
+				sevenhouses_strength_value <= 20
+			}
+		}
+		custom_description = {
+			text = high_seven_houses_favour
+			subject = root
+			root = {
+				sevenhouses_favor_value >= 80
+			}
+		}
+	}
+
+	effect = {
+		set_global_variable = {
+			name = sevenhouses_dead
+			value = yes
+		}
+		add_prestige_level = 1
+		dynasty = {
+			add_dynasty_modifier = {
+				modifier = seven_houses_assimilated
+				years = 100
+			}
+		}
+		if = {
+			limit = {
+				has_character_modifier = sevenhouses_bad_modifier_strong
+			}
+			remove_all_character_modifier_instances = sevenhouses_bad_modifier_strong
+		}
+		else_if = {
+			limit = {
+				has_character_modifier = sevenhouses_good_modifier_strong
+			}
+			remove_all_character_modifier_instances = sevenhouses_good_modifier_strong
+		}
+		else_if = {
+			limit = {
+				has_character_modifier = sevenhouses_bad_modifier
+			}
+			remove_all_character_modifier_instances = sevenhouses_bad_modifier
+		}
+		else_if = {
+			limit = {
+				has_character_modifier = sevenhouses_good_modifier
+			}
+			remove_all_character_modifier_instances = sevenhouses_good_modifier
+		}
+		else_if = {
+			limit = {
+				has_character_modifier = sevenhouses_bad_modifier_strong_dehqan
+			}
+			remove_all_character_modifier_instances = sevenhouses_bad_modifier_strong_dehqan
+		}
+		else_if = {
+			limit = {
+				has_character_modifier = sevenhouses_good_modifier_strong_dehqan
+			}
+			remove_all_character_modifier_instances = sevenhouses_good_modifier_strong_dehqan
+		}
+		else_if = {
+			limit = {
+				has_character_modifier = sevenhouses_bad_modifier_dehqan
+			}
+			remove_all_character_modifier_instances = sevenhouses_bad_modifier_dehqan
+		}
+		else_if = {
+			limit = {
+				has_character_modifier = sevenhouses_good_modifier_dehqan
+			}
+			remove_all_character_modifier_instances = sevenhouses_good_modifier_dehqan
+		}
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 20
+	}
+	cost = {
+		prestige = 600
+		gold = 600
+	}
+}
+
+TFE_abolish_houses = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_knight_kneeling.dds"
+	}
+	decision_group_type = major
+
+	desc = TFE_abolish_houses_desc
+	selection_tooltip = TFE_abolish_houses_tooltip
+	ai_check_interval = 120
+	is_invisible = yes
+
+	is_shown = {
+		is_landed_or_landless_administrative = yes
+		OR = {
+			sevenhouses_enabled = yes
+			liege = {
+				sevenhouses_enabled = yes
+			}
+		}
+	}
+
+	is_valid = {
+		has_title = title:e_persia
+		prestige_level >= 3
+		has_realm_law = eranshar_authority_3 
+		custom_description = {
+			text = all_great_houses_dead
+			subject = root
+			any_in_global_list = {
+				count = all
+				variable = seven_houses
+				NOT = {
+					any_dynasty_member = {
+						is_alive = yes
+					}
+				}
+			}
+		}
+	}
+
+	effect = {
+		set_global_variable = {
+			name = sevenhouses_dead
+			value = yes
+		}
+		dynasty = {
+			add_dynasty_modifier = {
+				modifier = seven_houses_abolished
+				years = 30
+			}
+		}
+		if = {
+			limit = {
+				has_character_modifier = sevenhouses_bad_modifier_strong
+			}
+			remove_all_character_modifier_instances = sevenhouses_bad_modifier_strong
+		}
+		else_if = {
+			limit = {
+				has_character_modifier = sevenhouses_good_modifier_strong
+			}
+			remove_all_character_modifier_instances = sevenhouses_good_modifier_strong
+		}
+		else_if = {
+			limit = {
+				has_character_modifier = sevenhouses_bad_modifier
+			}
+			remove_all_character_modifier_instances = sevenhouses_bad_modifier
+		}
+		else_if = {
+			limit = {
+				has_character_modifier = sevenhouses_good_modifier
+			}
+			remove_all_character_modifier_instances = sevenhouses_good_modifier
+		}
+		else_if = {
+			limit = {
+				has_character_modifier = sevenhouses_bad_modifier_strong_dehqan
+			}
+			remove_all_character_modifier_instances = sevenhouses_bad_modifier_strong_dehqan
+		}
+		else_if = {
+			limit = {
+				has_character_modifier = sevenhouses_good_modifier_strong_dehqan
+			}
+			remove_all_character_modifier_instances = sevenhouses_good_modifier_strong_dehqan
+		}
+		else_if = {
+			limit = {
+				has_character_modifier = sevenhouses_bad_modifier_dehqan
+			}
+			remove_all_character_modifier_instances = sevenhouses_bad_modifier_dehqan
+		}
+		else_if = {
+			limit = {
+				has_character_modifier = sevenhouses_good_modifier_dehqan
+			}
+			remove_all_character_modifier_instances = sevenhouses_good_modifier_dehqan
+		}
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 20
+	}
+	cost = {
+		prestige = 300
+		gold = 500
+	}
+}
+
+TFE_instate_dehqans = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_dehqan.dds"
+	}
+	decision_group_type = major
+
+	desc = TFE_instate_dehqans_desc
+	selection_tooltip = TFE_instate_dehqans_tooltip
+	ai_check_interval = 120
+	is_invisible = yes
+
+	is_shown = {
+		is_landed_or_landless_administrative = yes
+		OR = {
+			sevenhouses_enabled = yes
+			liege = {
+				sevenhouses_enabled = yes
+			}
+		}
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:TFE_instate_dehqans
+			}
+		}
+	}
+
+	is_valid = {
+		has_title = title:e_persia
+		prestige_level >= 3
+		OR = {
+			has_realm_law = eranshar_authority_2
+			has_realm_law = eranshar_authority_3
+		}
+		
+	}
+
+	effect = {
+		custom_tooltip = TFE_instate_dehqans_tooltip_1
+		custom_tooltip = TFE_instate_dehqans_tooltip_2
+		custom_tooltip = TFE_instate_dehqans_tooltip_3
+		every_in_global_list = {
+			variable  = seven_houses
+			limit = {
+				AND = {
+					exists = dynast
+					dynast = {
+						is_landed_or_landless_administrative = yes
+						is_independent_ruler = no
+					}
+					dynast.top_liege = title:e_persia.holder
+					
+				}
+			}
+			dynast = {
+				add_opinion = {
+					target = root
+					opinion = -75
+					years = 10
+					modifier = lowered_influence
+				}
+			}
+		}
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:TFE_instate_dehqans
+			}
+		}
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 20
+	}
+	cost = {
+		prestige = 500
+	}
+}
+
+TFE_construct_khawarnaq = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_mena_palace.dds"
+	}
+	decision_group_type = major
+
+	desc = TFE_construct_khawarnaq_desc
+	selection_tooltip = TFE_construct_khawarnaq_tooltip
+
+	ai_check_interval = 120
+
+	is_shown = {
+		is_landed_or_landless_administrative = yes
+		NOT = {  #Can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:TFE_construct_khawarnaq
+			}
+		}
+		dynasty = dynasty:lakhmid_dynasty
+		OR = {
+			game_start_date = 395.1.17
+			game_start_date = 361.11.17
+		}
+		has_title = title:k_lakhmid
+	}
+
+	is_valid = {
+		has_title = title:k_lakhmid
+		prestige_level >= 3
+		completely_controls = title:c_kufa
+	}
+
+	cost = {
+		prestige = 500
+		gold = 500
+	}
+
+	effect = {
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:TFE_construct_khawarnaq
+		}
+		title:b_an-najaf.title_province = {
+			add_special_building = palace_khawarnaq
+			
+		}
+		trigger_event = TFE_flavour_events.0007
+		add_prestige = 500
+		dynasty = {
+			add_dynasty_prestige = 500
+		}
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+TFE_restore_assyria_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_dehqan.dds"
+	}
+	decision_group_type = major
+
+	desc = TFE_restore_assyria_decision_desc
+	selection_tooltip = TFE_restore_assyria_decision_tooltip
+
+	ai_check_interval = 360
+
+	is_shown = {
+		is_landed_or_landless_administrative = yes
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:TFE_restore_assyria_decision
+			}
+		}
+		highest_held_title_tier < tier_empire
+		capital_county = {
+			kingdom = title:k_jazira
+		}
+		culture = {
+			OR = {
+				THIS = culture:assyrian
+				any_parent_culture_or_above = {
+					this = culture:assyrian
+				}
+			}
+		}
+	}
+
+	is_valid = {
+		is_independent_ruler = yes
+		prestige_level >= high_prestige_level
+		completely_controls_region = region_assyria
+		highest_held_title_tier < tier_empire
+		dread >= 40
+		
+	}
+
+	is_valid_showing_failures_only = {
+		is_available_adult = yes
+	}
+
+	cost = {
+		gold = 500
+		prestige = 500
+	}
+
+	effect = {
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:TFE_restore_assyria_decision
+		}
+		give_nickname = nick_lion_of_asshur
+		get_title = title:e_assyria
+		custom_tooltip = TFE_restore_assyria_decision_tooltip.a
+		add_dread = 100
+		dynasty = {
+			add_dynasty_modifier = restorers_of_assyria
+		}
+		hidden_effect = {
+			every_county_in_region = {
+				region = region_assyria_greater
+				limit = {
+					AND = {
+						holder.top_liege = root
+						NOT = {
+							empire = title:e_assyria
+						}
+						root = {
+							completely_controls = PREV.kingdom
+						}
+					}
+				}
+				kingdom = {
+					set_de_jure_liege_title = title:e_assyria
+				}
+			}
+		}
+	}
+	
+}
+
+
+set_capital_ctesiphon_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+	}
+	decision_group_type = major
+	
+	desc = set_capital_ctesiphon_decision_desc
+	selection_tooltip = set_capital_ctesiphon_decision_tooltip
+
+	ai_check_interval = 12
+
+	is_shown = {
+		is_ruler = yes
+		is_landed_or_landless_administrative = yes
+		has_title = title:e_persia
+		NOT = { capital_county = { this = title:c_ctesiphon } }
+		OR = {
+			title:c_ctesiphon.holder = { 	
+				any_liege_or_above = { this = root }
+			}
+			title:c_ctesiphon.holder = { this = root }
+		}
+		NOT = {
+			religion = religion:islam_religion
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+	}
+
+	effect = {
+		if = { #Usurp if not held personally.
+			limit = {
+				NOT = { title:c_ctesiphon.holder = { this = root } }
+			}
+			create_title_and_vassal_change = {
+				type = returned
+				save_scope_as = change
+				add_claim_on_loss = no
+			}
+			title:c_ctesiphon = {
+				change_title_holder = {
+					holder = root
+					change = scope:change
+				}
+			}
+			resolve_title_and_vassal_change = scope:change
+
+		}
+		set_realm_capital = title:c_ctesiphon
+		change_government = eranshar_government
+	}
+	
+	ai_potential = {
+		has_title = title:e_persia
+	}
+
+	ai_will_do = { #Do it always, for coherence.
+		base = 100
+	}
+}

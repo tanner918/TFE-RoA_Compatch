@@ -1,0 +1,48 @@
+﻿#On actions for East Asian flavor
+
+on_game_start = {
+	on_actions = {
+		on_TFE_east_asia_start
+	}
+}
+
+on_TFE_east_asia_start = {
+	effect = {
+		character:western_liang_043 ?= {
+			if = {
+				limit = {
+					is_alive = yes
+					is_landed = yes
+				}
+				trigger_event = {
+					id = liang.0012
+					days = { 365 2190 }
+				}
+			}
+		}
+	}
+}
+
+# A title is transferred to a new character
+# root = the new holder
+# scope:title = the title that changes hands
+# scope:previous_holder = previous holder. Might be dead
+on_title_gain = {	
+	events = {
+		delay = { days = 1 }
+		liang.0010		# Meng Min passes away and Li Gao becomes governor of Dunhuang
+	}
+}
+
+# A title is inherited by a character
+# root = the new holder
+# scope:title = the title that changes hands
+# scope:previous_holder = previous holder. Should be dead
+on_title_gain_inheritance = {
+	events = {
+		delay = { days = 1 }
+		liang.0010		# Meng Min passes away and Li Gao becomes governor of Dunhuang
+	}
+}
+
+

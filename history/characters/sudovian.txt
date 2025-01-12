@@ -1,0 +1,108 @@
+﻿# Sudovians
+sudovian_01 = {  # Ruler
+	name = "Treniotas"
+	dynasty = dynasty_sudovian
+	culture = sudovian
+	religion = baltic_pagan
+	331.11.1 = {
+		birth = yes
+	}
+	381.3.31 = {
+		death = yes
+	}
+}
+
+sudovian_11 = {  # Ruler
+	name = "Skirgaila"
+	dynasty = dynasty_sudovian
+	culture = sudovian
+	religion = baltic_pagan
+	father = sudovian_01
+	357.5.6 = {
+		birth = yes
+	}
+	421.11.7 = {
+		death = yes
+	}
+}
+
+sudovian_21 = {  # Ruler
+	name = "Vytenis"
+	dynasty = dynasty_sudovian
+	culture = sudovian
+	religion = baltic_pagan
+	father = sudovian_11
+	379.11.2 = {
+		birth = yes
+	}
+	423.9.20 = {
+		death = yes
+	}
+}
+
+sudovian_31 = {  # Ruler
+	name = "Narimantas"
+	dynasty = dynasty_sudovian
+	culture = sudovian
+	religion = baltic_pagan
+	father = sudovian_21
+	423.4.26 = {
+		birth = yes
+	}
+	487.2.2 = {
+		death = yes
+	}
+}
+
+sudovian_41 = {  # Ruler
+	name = "Kestutis"
+	dynasty = dynasty_sudovian
+	culture = sudovian
+	religion = baltic_pagan
+	father = sudovian_31
+	460.7.3 = {
+		birth = yes
+	}
+	530.4.16 = {
+		death = yes
+	}
+}
+
+sudovian_42 = {  # Ruler
+	name = "Vytenis"
+	dynasty = dynasty_sudovian
+	culture = sudovian
+	religion = baltic_pagan
+	father = sudovian_31
+	495.1.1 = {
+		birth = yes
+	}
+	555.1.1 = {
+		death = yes
+	}
+}
+
+sudovian_43 = {  # Ruler
+	name = "Aldona"
+	female = yes
+	culture = sudovian
+	religion = baltic_pagan
+	492.1.1 = {
+		birth = yes
+	}
+	555.1.1 = {
+		death = yes
+	}
+}
+
+sudovian_02 = {  # Hunnic vassal
+	name = Vytenis
+	culture = sudovian
+	religion = baltic_pagan
+	367.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}

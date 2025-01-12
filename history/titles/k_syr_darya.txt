@@ -1,0 +1,284 @@
+﻿d_chah = {	
+	361.1.1 = {	change_development_level = 3 }
+	476.1.1 = {	change_development_level = 4 }
+	532.1.1 = {	change_development_level = 5 }
+	632.1.1 = {	change_development_level = 6 }
+	768.1.1 = {	change_development_level = 7 }
+	# Xionite rulers of Chach
+	361.1.1 = {
+		holder = chach_001
+		government = nomadic_government 
+	}
+	390.6.2 = {
+		holder = chach_002		
+		liege = "k_kidaria"
+	}	
+	442.7.12 = {
+		holder = chach_003
+		liege = 0
+	}
+	460.8.16 = {
+		holder = chach_004
+	}
+	501.3.29 = {
+		holder = chach_005
+		liege = "e_hephthalite"
+	}
+	523.6.14 = {
+		holder = chach_006
+	}
+	560.1.1 = {
+		liege = 0
+	}
+	577.6.25 = {
+		holder = chach_007
+	}
+	591.10.9 = {
+		holder = chach_008
+	}
+	605.3.13 = {
+		holder = 0
+	}
+}
+c_chah = {
+	# Xionite rulers of Chach
+	361.1.1 = {
+		holder = chach_001
+		government = nomadic_government 
+	}
+	390.6.2 = {
+		holder = chach_002		
+		liege = "k_kidaria"
+	}	
+	442.7.12 = {
+		holder = chach_003
+		liege = 0
+	}
+	460.8.16 = {
+		holder = chach_004
+	}
+	501.3.29 = {
+		holder = chach_005
+		liege = "e_hephthalite"
+	}
+	523.6.14 = {
+		holder = chach_006
+	}
+	577.6.25 = {
+		holder = chach_007
+	}
+	591.10.9 = {
+		holder = chach_008
+	}
+}
+d_muyunkum = {
+	361.1.1 = {	change_development_level = 2 }
+	476.1.1 = {	change_development_level = 3 }
+	532.1.1 = {	change_development_level = 4 }
+	632.1.1 = {	change_development_level = 5 }
+	768.1.1 = {	change_development_level = 6 }
+	361.1.1 = {
+		holder = 1250017
+	}
+	395.1.1 = {
+		holder = 1250006
+	}
+	476.1.1 = {
+		holder = 1250014
+	}
+}
+
+c_jend = {
+	361.1.1 = {
+		holder = avar_001 
+		government = nomadic_government
+	}
+	395.1.1 = {
+		liege = "k_kidaria"
+	}
+	408.1.1 = {
+		holder = avar_002
+		liege = 0
+	}
+	425.3.7 = {
+		holder = avar_003
+	}
+	468.8.30 = {
+		holder = avar_004
+	}
+	489.9.7 = {
+		holder = avar_005
+	}
+	530.1.1 = {
+		holder = kangar001
+		liege = d_syr_darya
+	}
+}
+
+d_syr_darya = {
+	361.1.1 = {
+		holder = avar_001 
+		government = nomadic_government
+	}
+	395.1.1 = {
+		liege = "k_kidaria"
+	}
+	408.1.1 = {
+		holder = avar_002
+		liege = 0
+	}
+	425.3.7 = {
+		holder = avar_003
+	}
+	468.8.30 = {
+		holder = avar_004
+	}
+	489.9.7 = {
+		holder = avar_005
+	}
+	530.1.1 = {
+		holder = kangar001
+	}
+}
+
+c_shavgar = {
+	361.1.1 = {
+		holder = chach_001
+		government = nomadic_government 		
+		liege = "k_kidaria"
+	}
+	# Junior branch of Chach rulers
+	390.6.2 = {
+		holder = chach_009
+		liege = "d_chah"
+	}	
+	439.6.18 = {
+		holder = chach_010
+	}	
+	469.12.3 = {
+		holder = chach_011
+	}	
+	524.7.9 = {
+		holder = chach_012
+	}	
+	531.6.12 = {
+		holder = chach_014
+	}	
+	560.1.17 = {
+		holder = chach_016
+	}	
+	576.1.17 = {
+		holder = chach_017
+	}	
+	597.12.24 = {
+		holder = chach_018
+	}	
+	613.7.18 = {
+		holder = chach_019
+	}	
+}
+c_otrar = {
+	361.1.1 = {
+		holder = yuezhi_001
+		government = feudal_government
+		liege = "d_chah"
+	}
+	393.1.1 = {
+		holder = yuezhi_002 
+	}
+	430.4.22 = {
+		holder = yuezhi_003 
+	}
+	457.2.21 = {
+		holder = yuezhi_004 
+	}
+	499.9.24 = {
+		holder = chach_011
+	}	
+	524.7.9 = {
+		holder = chach_012
+	}	
+	531.6.12 = {
+		holder = chach_014
+	}	
+	560.1.17 = {
+		holder = chach_016
+	}	
+	576.1.17 = {
+		holder = chach_017
+	}	
+	597.12.24 = {
+		holder = chach_018
+	}	
+	613.7.18 = {
+		holder = chach_019
+	}
+}
+
+#d_muyunkum = {
+#	361.1.1 = {	change_development_level = 2 }
+#	476.1.1 = {	change_development_level = 3 }
+#	532.1.1 = {	change_development_level = 4 }
+#	632.1.1 = {	change_development_level = 5 }
+#	768.1.1 = {	change_development_level = 6 }
+#}
+
+c_balashagun = {
+	# Hypothetical Wusun remnants
+	463.9.30 = {
+		holder = wusun_004
+		liege = "e_hephthalite"
+	}
+	501.9.8 = {
+		holder = wusun_005
+	}
+	520.6.20 = {
+		holder = wusun_006
+	}
+}
+
+c_taraz = {
+	# Hypothetical Wusun remnants
+	463.9.30 = {
+		holder = wusun_004
+		liege = "e_hephthalite"
+	}
+	501.9.8 = {
+		holder = wusun_005
+	}
+	520.6.20 = {
+		holder = wusun_006
+	}
+}
+
+c_cherik = {
+	# Hypothetical Wusun remnants
+	463.9.30 = {
+		holder = wusun_004
+		liege = "e_hephthalite"
+	}
+	501.9.8 = {
+		holder = wusun_005
+	}
+	520.6.20 = {
+		holder = wusun_006
+	}
+}
+
+c_suyab = {
+	532.1.1 = {
+		holder = yueban_misc_01
+	}
+}
+
+c_shelji = {
+	532.1.1 = {
+		holder = yueban_misc_01
+	}
+}
+
+c_quriltay = {
+	532.1.1 = {
+		holder = yueban_misc_01
+	}
+}

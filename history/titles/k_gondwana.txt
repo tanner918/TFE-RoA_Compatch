@@ -1,0 +1,273 @@
+﻿
+k_gondwana = {
+	361.1.1 = { change_development_level = 1 }
+	476.1.1 = { change_development_level = 2 }
+	532.1.1 = { change_development_level = 3 }
+	632.1.1 = { change_development_level = 4 }
+	768.1.1 = { change_development_level = 5 }
+
+	### Aulikaras
+	528.1.1 = {
+		holder = aulikara_09
+	}
+	540.1.1 = {
+		holder = 0
+	}
+
+}
+
+
+d_dahala = {
+	675.1.1 = {
+		holder = 191317 #Vamaraja Cedi
+	}
+	700.1.1 = {
+		holder = 191318 #? Cedi
+	}
+	730.1.1 = {
+		holder = 191319 #? Cedi
+	}
+	750.1.1 = {
+		holder = 191320 #Sankaragana Cedi
+	}
+}
+
+
+c_tripuri = {
+	287.1.1 = {
+		holder = naga_01
+		government = tribal_government
+	}
+	343.1.1 = {
+		holder = naga_021
+		liege = d_akara_dasarna
+	}
+	361.1.1 = {
+		government = tribal_government
+	}
+	476.1.1 = {
+		holder = guptasad_42
+		government = tribal_government
+		liege = e_bengal
+	}
+	
+	500.1.1 = {
+		holder = panduvamshi_01
+		liege = d_ratanpur
+	}
+	525.6.7 = {
+		holder = panduvamshi_02
+	}
+	559.4.3 = {
+		holder = panduvamshi_03
+	}
+	583.7.17 = {
+		holder = panduvamshi_04
+	}
+	599.3.10 = {
+		holder = panduvamshi_05
+	}
+	675.1.1 = {
+		holder = 191317 #Vamaraja Cedi
+		liege = d_dahala
+	}
+	700.1.1 = {
+		holder = 191318 #? Cedi
+	}
+	730.1.1 = {
+		holder = 191319 #? Cedi
+	}
+	750.1.1 = {
+		holder = 191320 #Sankaragana Cedi
+	}
+}
+
+
+c_chauragarh = {
+	287.1.1 = {
+		holder = naga_01
+		government = tribal_government
+	}
+	343.1.1 = {
+		holder = naga_021
+		liege = d_akara_dasarna
+	}
+	361.1.1 = {
+		government = tribal_government
+	}
+	476.1.1 = {
+		holder = guptasad_42
+		government = tribal_government
+		liege = e_bengal
+	}
+	
+	532.1.1 = {
+		holder = avantika_001
+		liege = k_malwa
+	}
+	675.1.1 = {
+		holder = 191317 #Vamaraja Cedi
+		liege = d_dahala
+	}
+	700.1.1 = {
+		holder = 191318 #? Cedi
+	}
+	730.1.1 = {
+		holder = 191319 #? Cedi
+	}
+	750.1.1 = {
+		holder = 191320 #Sankaragana Cedi
+	}
+}
+
+
+d_ratanpur = {
+	361.1.1 = { change_development_level = 5 }
+	476.1.1 = { change_development_level = 6 }
+	532.1.1 = { change_development_level = 7 }
+	632.1.1 = { change_development_level = 8 }
+	768.1.1 = { change_development_level = 9 }
+	500.1.1 = {
+		holder = panduvamshi_01
+		government = tribal_government
+		liege = 0
+	}
+	525.6.7 = {
+		holder = panduvamshi_02
+	}
+	559.4.3 = {
+		holder = panduvamshi_03
+	}
+	583.7.17 = {
+		holder = panduvamshi_04
+	}
+	599.3.10 = {
+		holder = panduvamshi_05
+	}
+	760.1.1 = {
+		holder = 191295 #Nandivarman
+	}
+}
+
+
+c_ratanpur = {
+	361.1.1 = {
+		holder = guptasad_40
+		government = tribal_government
+		liege = e_bengal
+	}
+	476.1.1 = {
+		holder = guptasad_41
+		government = tribal_government
+		liege = e_bengal
+	}
+	500.1.1 = {
+		holder = panduvamshi_01
+		liege = d_ratanpur
+	}
+	525.6.7 = {
+		holder = panduvamshi_02
+	}
+	559.4.3 = {
+		holder = panduvamshi_03
+	}
+	583.7.17 = {
+		holder = panduvamshi_04
+	}
+	599.3.10 = {
+		holder = panduvamshi_05
+	}
+	760.1.1 = {
+		holder = 191295 #Nandivarman
+		liege = d_ratanpur
+	}
+}
+
+
+c_tummana = {
+	361.1.1 = {
+		holder = guptasad_40
+		government = tribal_government
+		liege = e_bengal
+	}
+	476.1.1 = {
+		holder = guptasad_41
+		government = tribal_government
+		liege = e_bengal
+	}
+	500.1.1 = {
+		holder = panduvamshi_01
+		liege = d_ratanpur
+	}
+	525.6.7 = {
+		holder = panduvamshi_02
+	}
+	559.4.3 = {
+		holder = panduvamshi_03
+	}
+	583.7.17 = {
+		holder = panduvamshi_04
+	}
+	599.3.10 = {
+		holder = panduvamshi_05
+	}
+	690.1.1 = {
+		holder = 191385#Jayavardhana I Sailavamsa
+	}
+	720.1.1 = {
+		holder = 191386#Jayavardhana II Sailavamsa
+	}
+	740.1.1 = {
+		holder = 191387#Srivardhana II Sailavamsa
+		liege = d_dahala
+	}
+	750.1.1 = {
+		holder = 191482 # Patel
+		liege = d_dahala
+	}
+}
+
+
+c_bandhugadha = {
+	287.1.1 = {
+		holder = naga_01
+		government = tribal_government
+	}
+	343.1.1 = {
+		holder = naga_021
+		liege = d_akara_dasarna
+	}
+	361.1.1 = {
+		government = tribal_government
+	}
+	476.1.1 = {
+		holder = guptasad_42
+		government = tribal_government
+		liege = e_bengal
+	}
+	500.1.1 = {
+		holder = panduvamshi_01
+		liege = d_ratanpur
+	}
+	525.6.7 = {
+		holder = panduvamshi_02
+	}
+	559.4.3 = {
+		holder = panduvamshi_03
+	}
+	583.7.17 = {
+		holder = panduvamshi_04
+	}
+	599.3.10 = {
+		holder = panduvamshi_05
+	}
+	#Baland Tribe
+	750.1.1 = {
+		holder = 191482 # Patel
+		liege = d_dahala
+	}
+	780.1.1 = {
+		holder = 191483 #Mukhia
+	}
+}
+

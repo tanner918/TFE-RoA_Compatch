@@ -1,0 +1,73 @@
+pdxmesh = {
+	name = "male_epe_byz_pannonian_hat_03_mesh"
+	file = "male_epe_byz_pannonian_hat_03.mesh"
+
+	meshsettings = {
+		name = "male_byz_pannonian_hat_03"
+		index = 0
+		texture_diffuse = "male_byz_pannonian_hat_03_diffuse.dds"
+		texture_normal = "male_byz_pannonian_hat_03_normal.dds"
+		texture_specular = "male_byz_pannonian_hat_03_properties.dds"
+		shader = "portrait_attachment_pattern"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+
+###commoner
+
+
+entity = {
+	name = "male_epe_byz_pannonian_hat_03_common_entity"
+	pdxmesh = "male_epe_byz_pannonian_hat_03_mesh"
+
+
+	game_data = {
+        portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/male_headgears/secular/roman/roman_pannonian_hat_03/male_byz_pannonian_hat_03_mask.dds"	
+				variation = "byzantine_common_01"	#A "variation" object in gfx/portraits/accessory_variations/
+			}
+        }
+	}
+}
+
+####Low
+
+entity = {
+	name = "male_epe_byz_pannonian_hat_03_low_entity"
+	pdxmesh = "male_epe_byz_pannonian_hat_03_mesh"
+
+
+	game_data = {
+        portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/male_headgears/secular/roman/roman_pannonian_hat_03/male_byz_pannonian_hat_03_mask.dds"	
+				variation = "byzantine_low_01"	#A "variation" object in gfx/portraits/accessory_variations/
+			}
+        }
+	}
+}
+
+
+####High
+
+entity = {
+	name = "male_epe_byz_pannonian_hat_03_high_entity"
+	pdxmesh = "male_epe_byz_pannonian_hat_03_mesh"
+
+
+	game_data = {
+        portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/male_headgears/secular/roman/roman_pannonian_hat_03/male_byz_pannonian_hat_03_mask.dds"	
+				variation = "byzantine_high_01"	#A "variation" object in gfx/portraits/accessory_variations/
+			}
+        }
+	}
+}
+
+
+
+
+

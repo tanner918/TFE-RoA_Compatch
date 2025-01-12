@@ -1,0 +1,541 @@
+﻿#k_egypt
+##d_cyrenaica ###################################
+###c_barqa
+6104 = {	#BARQA-AL-MARJ
+	culture = afro_roman
+	religion = ammon_pagan
+	holding = castle_holding
+
+	600.1.1 = {
+		religion = coptic
+	}
+}
+6102 = {	#WADI MASUS
+	holding = none
+}
+6103 = {	#JABAL_AL-GHARBI
+	holding = none
+}
+6105 = {	#BENGHAZI
+	holding = city_holding
+}
+4550 = {
+	holding = castle_holding
+}
+4551 = {
+	holding = city_holding
+}
+
+# Duplicate in k_garamantes
+###c_awjila
+# 6106 = {	#AWJILA
+# 	religion = ammon_pagan
+# 	culture = garamantian
+# 	holding = tribal_holding
+# }
+# 6107 = {	#JALU
+# 	holding = none
+# }
+# 6108 = {	#JAKHARRAD
+# 	holding = none
+# }
+
+###c_derna
+6099 = {	#DERNA
+	culture = aegyptian
+	#culture = zanata
+	religion = nicene
+	holding = castle_holding
+	476.1.1 = {
+		religion = chalcedonian
+	}
+}
+6100 = {	#WADI_MAKHIL
+	holding = none
+}
+6101 = {	#MARAWA
+	holding = none
+}
+
+###c_tobruk
+6098 = {	#TOBRUK
+	culture = aegyptian
+	religion = greco_egyptian_pagan
+	holding = castle_holding
+	395.1.1 = {
+		religion = nicene
+	}
+	476.1.1 = {
+		religion = chalcedonian
+	}
+	
+	# History
+	1050.1.1 = { #Area conquered by tribals and turned into nomadic pastures
+		holding = tribal_holding
+	}
+}
+
+##d_alexandria ###################################
+###c_alexandria
+6053 = {	#ALEXANDRIA
+	culture = aegyptian
+	religion = nicene
+	holding = castle_holding
+	special_building_slot = library_of_alexandria
+
+	476.1.1 = {
+		religion = chalcedonian
+	}
+	effect = {
+		add_travel_point_of_interest = poi_lighthouse_of_alexandria
+	}
+}
+6094 = {	#AL-HAMAM
+	holding = none
+}
+6116 = {	#WADI_NATRUN
+	holding = church_holding
+}
+
+###c_sullum
+6097 = {	#SULLUM
+	culture = aegyptian
+	religion = basilidianism # Mainly present in the Nile delta, particularly the western side
+	holding = castle_holding
+	476.1.1 = {
+		religion = chalcedonian
+	}
+}
+6095 = {	#QASR_ASH_SHAMMAS
+	#holding = none
+}
+6096 = {	#KANAIS_AL-HADID
+	holding = church_holding
+}
+
+###c_siwa
+6093 = {	#SIWA	
+	culture = laguatan
+	religion = ammon_pagan
+	holding = castle_holding
+
+	568.1.1 = {
+		religion = coptic
+		culture = kemetic
+	}
+}
+6092 = {	#AIN_AL-GHANBI
+	holding = none
+}
+6117 = {	#QARA
+	holding = none
+}
+
+##d_delta ###################################
+###c_damietta
+6046 = {	#DUMIYAT
+	#culture = bedouin 
+	# Arabic presence in the Eastern Nile Delta
+	culture = aegyptian
+	religion = nicene
+	holding = castle_holding
+	
+	476.1.1 = {
+		religion = chalcedonian
+	}
+}
+6043 = {	#DAQAHLA
+	holding = church_holding
+}
+6045 = {	#TINNIS
+	holding = city_holding
+}
+
+###c_al-buhaira
+6052 = {	#RASHID
+	culture = aegyptian
+	religion = basilidianism # Mainly present in the Nile delta, particularly the western side
+	holding = castle_holding
+	500.1.1 = {
+		religion = chalcedonian
+	}
+}
+6054 = {	#DAMANHUR
+	holding = city_holding
+}
+6055 = {	#RAMSIS
+	#holding = none
+}
+
+###c_al-gharbiya
+6051 = {	#MINUF
+	#culture = aegyptian
+	culture = kemetic
+	religion = greco_egyptian_pagan
+	holding = castle_holding
+	
+	400.1.1 = {
+		religion = nicene
+	}
+	476.1.1 = {
+		religion = coptic
+	}
+}
+6047 = {	#SAMANNUD
+	holding = none
+}
+6048 = {	#BURULLUS
+	holding = city_holding
+}
+6049 = {	#NASTARAWA
+	holding = church_holding
+}
+6050 = {	#IBYAR
+	#holding = none
+}
+
+###c_sharkiya
+6040 = {	#BILBAYS
+	#culture = bedouin 
+	# Arabic presence in the Eastern Nile Delta
+	culture = kemetic
+	religion = sethianism # Sethian presence in Egypt and Palestine attested c.375 CE and into 5th century
+	holding = castle_holding
+	500.1.1 = {
+		religion = coptic
+	}
+}
+6041 = {	#QALYUB
+	holding = city_holding
+}
+6044 = {	#FAQUS
+	holding = church_holding
+}
+
+##d_cairo ###################################
+###c_cairo
+6042 = {	#CAIRO
+	culture = kemetic
+	religion = arianism
+	holding = castle_holding
+	476.1.1 = {
+		religion = coptic
+	}
+	970.1.1 = {
+		#special_building_slot = al_azhar_university
+		special_building = al_azhar_university
+	}
+	#969.1.1 = {
+	#	name = "Cairo"
+	#	b_cairo = castle
+	#	capital = b_cairo
+	#	b_fustat = city
+	#}
+}
+6039 = {	#QUZLUM
+	holding = none
+}
+6065 = {	#ATFIH
+	#holding = none
+}
+6066 = {	#HULWAN-CAIRO
+	holding = church_holding
+}
+
+###c_giza
+6057 = {	#GIZA
+	culture = kemetic
+	religion = greco_egyptian_pagan
+	holding = castle_holding
+	100.1.1 = {
+		special_building = the_pyramids_01
+	}
+	395.1.1 = {
+		religion = arianism
+	}
+	476.1.1 = {
+		religion = coptic
+	}
+}
+6056 = {	#ABU_GHALIB
+	#holding = none
+}
+6058 = {	#BUSIR
+	#holding = none
+}
+
+###c_fayyum
+6060 = {	#AL-FAYYUM
+	culture = kemetic
+	religion = carpocratian	# Cybr note: Wikipedia lists an academic source which says Carpocratians may've survived into the 4th century in Egypt; while the source is legit and does mention that, I can't find other useful mentions of their survival
+	holding = castle_holding
+	476.1.1 = {
+		religion = coptic
+	}
+}
+6059 = {	#TIRSA
+	#holding = none
+}
+6061 = {	#IQNA
+	#holding = none
+}
+
+##d_al-wahat ###################################
+###c_bahriya
+6089 = {	#AL-BAHRIYA
+	culture = kemetic
+	religion = hesychasm
+	holding = castle_holding
+}
+6090 = {	#BAWITI
+	holding = none
+}
+6091 = {	#AL-HARRA
+	holding = none
+}
+
+###c_farafra
+6088 = {	#FARAFRA
+	culture = kemetic
+	religion = hesychasm
+	holding = castle_holding
+}
+
+###c_dakhla
+6085 = {	#MUT
+	culture = kemetic
+	religion = hesychasm
+	holding = castle_holding
+}
+6086 = {	#TUNAYDA
+	holding = none
+}
+6087 = {	#AL-QASR-DAKHLA
+	holding = none
+}
+
+###c_kharga
+6083 = {	#KHARGA
+	culture = kemetic
+	religion = hesychasm
+	holding = castle_holding
+}
+6084 = {	#BARIS
+	holding = none
+}
+
+##d_al-said ###################################
+###c_qus
+6077 = {	#QUS
+	culture = kemetic #culture = nicene
+	religion = marcionite # Marcionite community around Thebaid in late 300s
+	holding = castle_holding
+
+	# 395.1.1 = {
+	# 	religion = nicene
+	# }
+	
+	476.1.1 = {
+		religion = coptic
+	}
+}
+6074 = {	#HUW
+	#holding = none
+}
+6075 = {	#FAW
+	#holding = none
+}
+6076 = {	#QINA
+	holding = church_holding
+}
+6078 = {	#ARMANT
+	#holding = none
+}
+
+###c_bahnasa
+6063 = {	#AL-BAHNASA
+	culture = kemetic
+	religion = arianism
+	holding = castle_holding
+	
+	476.1.1 = {
+		religion = coptic
+	}
+}
+6062 = {	#AHNAS
+	#holding = none
+}
+6064 = {	#IHRIT
+	#holding = none
+}
+
+###c_ushmun
+6067 = {	#AL-USHMUNAIN
+	culture = kemetic
+	religion = rabbinism
+	holding = castle_holding
+	
+	476.1.1 = {
+		religion = coptic
+	}
+}
+6068 = {	#ANSINA
+	#holding = none
+}
+6069 = {	#MANFALUT
+	#holding = none
+}
+
+###c_asyut
+6070 = {	#ASYUT
+	culture = kemetic
+	religion = egyptian_pagan # Evidence of common worship of Bes in the 5th century at Abydos
+	holding = castle_holding
+
+	400.1.1 = {
+		religion = nicene
+	}
+	
+	476.1.1 = {
+		religion = coptic
+	}
+}
+6071 = {	#BAWIT
+	holding = church_holding
+}
+6072 = {	#IKHMIN
+	holding = city_holding
+}
+6073 = {	#IBSHAYA
+	#holding = none
+}
+
+###c_aswan
+6081 = {	#ASWAN
+	culture = kemetic
+	religion = egyptian_pagan
+	holding = castle_holding
+	
+	250.1.1 = {
+		buildings = {
+			curtain_walls_01
+		}
+	}	
+
+	476.1.1 = {
+		religion = coptic
+	}
+	
+}
+6079 = {	#UDFU
+	holding = none
+}
+6080 = {	#ZARNIKH
+	holding = none
+}
+6082 = {	#ASWAN-WEST
+	holding = church_holding
+}
+
+
+##d_eastern_desert ###################################
+###c_qusayr
+6109 = {	#QUSAYR
+	# Cybr: Arabic presence in the Eastern Desert
+	culture = bedouin
+	religion = egyptian_pagan
+	holding = castle_holding
+	
+	476.1.1 = {
+		religion = coptic
+	}
+}
+6122 = {	#SAFAGA
+	holding = city_holding
+}
+
+###c_jabal_quzlum
+6118 = {	#NORTH_JBL _QUZLUM
+	#culture = bedouin
+	#Cybr: Arabic presence in the Eastern Desert
+	culture = beja
+	religion = beja_pagan
+	holding = castle_holding
+	#476.1.1 = {
+	#	religion = coptic
+	#}
+}
+6119 = {	#CENTRAL_JBL _QUZLUM
+	holding = none
+}
+6121 = {	#UM SHASHOBA
+	holding = none
+}
+
+##d_sinai ###################################
+###c_farama
+6038 = {	#FARAMA
+	#culture = nabatean
+	culture = bedouin
+	religion = nabataean_pagan # nicene
+	holding = castle_holding
+
+	380.1.1 = {
+		#culture = bedouin
+		religion = nicene
+	}
+	
+	476.1.1 = {
+		religion = coptic
+	}
+}
+6036 = {	#WARRADA
+	#holding = none
+}
+5970 = {	#AL-ARISH
+	#holding = none
+}
+
+###c_sinai
+6033 = {	#AT-TUR
+	culture = nabatean
+	religion = nabataean_pagan # nicene
+	holding = castle_holding
+	
+	400.1.1 = {
+		religion = nicene
+	}
+	
+	476.1.1 = {
+		religion = coptic
+	}
+}
+6032 = {	#SAINT CATHERINE
+	holding = church_holding
+	303.1.1 = {
+		special_building_slot = saint_catherine
+	}
+	565.1.1 = {
+		special_building = saint_catherine #Built by Justinian
+	}
+}
+6034 = {	#FARAN
+	#holding = none
+}
+6035 = {	#QALAT_JUNDI
+	#holding = none
+}
+6037 = {	#TIH
+	#holding = none
+}
+
+###c_firaun
+6030 = {	#FIRAUN
+	culture = nabatean
+	religion = nabataean_pagan
+	holding = castle_holding
+
+}
+6031 = {	#DAHAB
+	#holding = none
+}

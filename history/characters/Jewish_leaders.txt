@@ -1,0 +1,393 @@
+﻿# Exilarchs
+
+exilarch_01 = {
+	name = "Ahijah"
+	dynasty = house_of_david
+	religion = "malabarism"
+	culture = "assyrian"
+	1.1.1 = {
+		birth = yes
+	}
+	100.1.1 = {
+		death = yes
+	}
+}
+
+exilarch_02 = {
+	name = "Nahum"
+	dynasty = house_of_david
+	father = exilarch_01
+	religion = "malabarism"
+	culture = "assyrian"
+	60.1.1 = {
+		birth = yes
+	}
+	120.1.1 = {
+		death = yes
+	}
+}
+
+exilarch_03 = {
+	name = "Yohanan"
+	dynasty = house_of_david
+	father = exilarch_02
+	religion = "malabarism"
+	culture = "assyrian"
+	80.1.1 = {
+		birth = yes
+	}
+	140.1.1 = {
+		death = yes
+	}
+}
+
+exilarch_04 = {
+	name = "Shaphat"
+	dynasty = house_of_david
+	father = exilarch_03
+	religion = "malabarism"
+	culture = "assyrian"
+	100.1.1 = {
+		birth = yes
+	}
+	160.1.1 = {
+		death = yes
+	}
+}
+
+exilarch_05 = {
+	name = "Huna"
+	dynasty = house_of_david
+	father = exilarch_04
+	religion = "malabarism"
+	culture = "assyrian"
+	120.1.1 = {
+		birth = yes
+	}
+	180.1.1 = {
+		death = yes
+	}
+}
+
+exilarch_06 = {
+	name = "Nathan"
+	dynasty = house_of_david
+	father = exilarch_05
+	religion = "malabarism"
+	culture = "assyrian"
+	140.1.1 = {
+		birth = yes
+	}
+	200.1.1 = {
+		death = yes
+	}
+}
+
+exilarch_07 = {
+	name = "Huna"
+	dynasty = house_of_david
+	father = exilarch_06
+	religion = "malabarism"
+	culture = "assyrian"
+	160.1.1 = {
+		birth = yes
+	}
+	220.1.1 = {
+		death = yes
+	}
+}
+
+exilarch_08 = {
+	name = "Nathan"
+	dynasty = house_of_david
+	father = exilarch_07
+	religion = "malabarism"
+	culture = "assyrian"
+	180.1.1 = {
+		birth = yes
+	}
+	240.1.1 = {
+		death = yes
+	}
+}
+
+exilarch_09 = {
+	name = "Nehemiah"
+	dynasty = house_of_david
+	father = exilarch_08
+	religion = "malabarism"
+	culture = "assyrian"
+	200.1.1 = {
+		birth = yes
+	}
+	260.1.1 = {
+		death = yes
+	}
+}
+
+exilarch_10 = {
+	name = "Ukban"
+	dynasty = house_of_david
+	father = exilarch_09
+	religion = "malabarism"
+	culture = "assyrian"
+	220.1.1 = {
+		birth = yes
+	}
+	280.1.1 = {
+		death = yes
+	}
+}
+
+exilarch_11 = {
+	name = "Huna"
+	dynasty = house_of_david
+	father = exilarch_10
+	religion = "malabarism"
+	culture = "assyrian"
+	240.1.1 = {
+		birth = yes
+	}
+	300.1.1 = {
+		death = yes
+	}
+}
+
+exilarch_12 = {
+	name = "Abba"
+	dynasty = house_of_david
+	father = exilarch_11
+	religion = "malabarism"
+	culture = "assyrian"
+	260.1.1 = {
+		birth = yes
+	}
+	320.1.1 = {
+		death = yes
+	}
+}
+
+exilarch_13 = {
+	name = "Nathan"
+	dynasty = house_of_david
+	father = exilarch_12
+	religion = "malabarism"
+	culture = "assyrian"
+	280.1.1 = {
+		birth = yes
+	}
+	340.1.1 = {
+		death = yes
+	}
+}
+
+exilarch_kahana_i = {
+	name = "Kahana" # Kahana I
+	religion = "malabarism"
+	culture = "assyrian"
+	father = exilarch_13
+	300.1.1 = {
+		birth = yes
+	}
+	360.1.1 = {
+		death = yes
+	}
+}
+
+exilarch_huna_iv = {
+	name = "Huna" # Huna IV
+	religion = "malabarism"
+	culture = "assyrian"
+	father = exilarch_13
+	trait = education_learning_3
+	trait = compassionate
+	trait = gregarious
+	trait = humble
+	330.1.1 = {
+		birth = yes
+	}
+	380.1.1 = {
+		death = yes
+	}
+}
+
+exilarch_huna_iv_daughter_shushandukht = {
+	name = "Shushandukht"
+	religion = "malabarism"
+	culture = "assyrian"
+	female = yes
+	trait = zealous
+	trait = diligent
+	trait = compassionate
+	trait = education_stewardship_3
+	father = exilarch_huna_iv
+	373.1.1 = {
+		birth = "373.1.1"
+	}
+	390.1.1 = {
+		add_spouse = 180619 #Yazdegerd
+	}
+	445.1.1 = {
+		death = "445.1.1"
+	}
+}
+
+exilarch_pahda = {
+	name = "Pahda" # Pahda, non-Davidic usurper
+	religion = "malabarism"
+	culture = "assyrian"
+	350.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+
+exilarch_mar_zutra_i = {
+	name = "Mar_Zutra" # Mar Zutra I
+	dynasty = house_of_david
+	father = exilarch_huna_iv
+	religion = "malabarism"
+	culture = "assyrian"
+	350.1.1 = {
+		birth = yes
+	}
+	420.1.1 = {
+		death = yes
+	}
+}
+
+exilarch_merimar = {
+	name = "Merimar" # Merimar
+	dynasty = house_of_david
+	father = exilarch_zutra_i
+	religion = "malabarism"
+	culture = "assyrian"
+	390.1.1 = {
+		birth = yes
+	}
+	440.1.1 = {
+		death = yes
+	}
+}
+
+exilarch_kahana_ii = {
+	name = "Kahana" # Kahana II
+	dynasty = house_of_david
+	father = exilarch_merimar
+	religion = "malabarism"
+	culture = "assyrian"
+	410.1.1 = {
+		birth = yes
+	}
+	479.1.1 = {
+		death = yes
+	}
+}
+
+exilarch_huna_v = {
+	name = "Huna" # Huna V
+	dynasty = house_of_david
+	father = exilarch_zutra_i
+	religion = "malabarism"
+	culture = "assyrian"
+	400.1.1 = {
+		birth = yes
+	}
+	490.1.1 = {
+		death = yes
+	}
+}
+
+exilarch_mar_zutra_ii = {
+	name = "Mar_Zutra" # Mar Zutra II
+	dynasty = house_of_david
+	father = exilarch_huna_v
+	religion = "malabarism"
+	culture = "assyrian"
+	441.1.1 = {
+		birth = yes
+	}
+	502.1.1 = {
+		death = yes
+	}
+}
+
+exilarch_huna_vi = {
+	name = "Huna" # Huna VI
+	dynasty = house_of_david
+	father = exilarch_kahana_ii
+	religion = "malabarism"
+	culture = "assyrian"
+	470.1.1 = {
+		birth = yes
+	}
+	508.1.1 = {
+		death = yes
+	}
+}
+
+exilarch_mar_ahunai = {
+	name = "Mar_Ahunai" # Mar Ahunai
+	dynasty = house_of_david
+	father = exilarch_huna_vi
+	religion = "malabarism"
+	culture = "assyrian"
+	490.1.1 = {
+		birth = yes
+	}
+	550.1.1 = {
+		death = yes
+	}
+}
+
+# Nasis of the Great Sanhedrin
+
+sanhedrin_01 = {
+	name = "Hillel"
+	religion = "rabbinism"
+	culture = "hebrew"
+	300.1.1 = {
+		birth = yes
+	}
+	365.1.1 = {
+		death = yes
+	}
+}
+
+sanhedrin_02 = {
+	name = "Gamaliel"
+	religion = "rabbinism"
+	culture = "hebrew"
+	320.1.1 = {
+		birth = yes
+	}
+	385.1.1 = {
+		death = yes
+	}
+}
+
+sanhedrin_03 = {
+	name = "Judah"
+	religion = "rabbinism"
+	culture = "hebrew"
+	340.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+
+sanhedrin_04 = {
+	name = "Gamaliel"
+	religion = "rabbinism"
+	culture = "hebrew"
+	360.1.1 = {
+		birth = yes
+	}
+	425.1.1 = {
+		death = yes
+	}
+}

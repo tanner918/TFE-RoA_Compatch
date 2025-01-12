@@ -1,0 +1,297 @@
+﻿
+k_serbia = {
+	361.1.1 = { change_development_level = 3 }
+	532.1.1 = { change_development_level = 4 }
+	768.1.1 = { change_development_level = 5 }
+
+}
+
+
+d_rashka = {
+	539.1.1 = {
+		liege = "e_byzantium"
+	}
+	610.1.1 = {
+		liege = 0
+	}
+	768.1.1 = {
+		holder = 167858
+	}
+}
+
+
+c_rashka = {
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = d_bulgaria
+		liege = d_bulgaria
+	}
+	361.1.1 = {
+		holder = serbia_08
+		liege = d_bulgaria
+	}
+	395.1.1 = {
+		holder = serbia_09
+		liege = d_bulgaria
+	}
+	476.1.1 = {
+		holder = serbia_10
+		liege = d_bulgaria
+	}
+	539.1.1 = {
+		liege = "d_rashka"
+	}
+	768.1.1 = {
+		holder = 167858
+	}
+
+}
+
+c_sumadija = {
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = d_bulgaria
+		liege = k_daciae
+	}
+	361.1.1 = {
+		holder = daciae_06
+		liege = d_duklja
+	}
+	476.1.1 = {
+		holder = daciae_18
+		liege = d_duklja
+	}
+	640.1.1 = {
+		liege = "d_rashka"
+	}
+	748.1.1 = {
+		holder = 146011
+	}
+	
+
+}
+
+
+c_podrinje = {
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = d_duklja
+		liege = d_duklja
+	}
+	361.1.1 = {
+		holder = serbia_04
+		liege = d_duklja
+	}
+	395.1.1 = {
+		holder = serbia_05
+		liege = d_duklja
+	}
+	476.1.1 = {
+		holder = serbia_06
+		liege = d_duklja
+	}
+	539.1.1 = {
+		liege = "d_rashka"
+	}
+	768.1.1 = {
+		holder = 167858
+	}
+}
+
+
+c_hvosno = {
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = d_bulgaria
+		liege = k_daciae
+	}
+	361.1.1 = {
+		holder = daciae_06
+	}
+	476.1.1 = {
+		holder = daciae_18
+	}
+	640.1.1 = {
+		liege = "d_rashka"
+	}
+	748.1.1 = {
+		holder = 146011
+	}
+	
+
+}
+
+
+d_macva = {
+	## Diocletian Division
+	361.1.1 = { change_development_level = 3 }
+	532.1.1 = { change_development_level = 4 }
+	768.1.1 = { change_development_level = 5 }
+	200.1.1 = {
+		de_jure_liege = k_daciae
+		liege = k_daciae
+	}
+	361.1.1 = {
+		holder = daciae_01
+	}
+	395.1.1 = {
+		liege = serbia_07
+		liege = k_daciae
+	}
+	476.1.1 = {
+		holder = daciae_19
+		liege = k_daciae
+	}
+	512.1.1 = {
+		holder = 995006 # Gripa, foederati heruli
+		liege = "e_byzantium"
+	}
+	530.1.1 = {
+		holder = 995007 # Ocho, foederati heruli
+	}
+	610.1.1 = {
+		liege = 0
+	}
+	768.1.1 = {
+		holder = 167858
+	}
+}
+
+
+c_macva = {
+	## Diocletian Division
+	200.1.1 = {
+		liege = k_daciae
+	}
+	361.1.1 = {
+		holder = daciae_01
+	}
+	395.1.1 = {
+		liege = serbia_07
+	}
+	476.1.1 = {
+		holder = daciae_19
+	}
+	512.1.1 = {
+		holder = 995006 # Gripa, foederati heruli
+	}
+	530.1.1 = {
+		holder = 995007 # Ocho, foederati heruli
+	}
+	539.1.1 = {
+		liege = "d_rashka"
+	}
+	768.1.1 = {
+		holder = 167858
+	}
+	
+
+}
+
+
+c_beograd = {
+	361.1.1 = { change_development_level = 5 }
+	532.1.1 = { change_development_level = 6 }
+	768.1.1 = { change_development_level = 7 }
+	
+	## Diocletian Division
+	200.1.1 = {
+		liege = k_daciae
+	}
+	361.1.1 = {
+		holder = daciae_01
+	}
+	395.1.1 = {
+		liege = serbia_07
+	}
+	476.1.1 = {
+		holder = daciae_19
+	}
+	512.1.1 = {
+		holder = 995006 # Gripa, foederati heruli
+	}
+	530.1.1 = {
+		holder = 995007 # Ocho, foederati heruli
+	}
+	539.1.1 = {
+		liege = "d_rashka"
+	}
+	768.1.1 = {
+		holder = 167859
+	}
+	
+
+}
+
+
+d_duklja = {
+	## Diocletian Division
+	361.1.1 = { change_development_level = 3 }
+	532.1.1 = { change_development_level = 4 }
+	768.1.1 = { change_development_level = 5 }
+	200.1.1 = {
+		de_jure_liege = k_daciae
+		liege = k_daciae
+	}
+	360.1.1 = {
+		holder = serbia_01
+	}
+	395.1.1 = {
+		holder = serbia_02
+	}
+	476.1.1 = {
+		holder = serbia_03
+	}
+}
+
+
+c_duklja = {
+	## Diocletian Division
+	200.1.1 = {
+		liege = k_daciae
+	}
+	361.1.1 = {
+		holder = serbia_01
+	}
+	395.1.1 = {
+		holder = serbia_02
+	}
+	476.1.1 = {
+		holder = serbia_03
+	}
+}
+
+
+c_pomorje = {
+	## Diocletian Division
+	200.1.1 = {
+		liege = k_daciae
+	}
+	361.1.1 = {
+		holder = serbia_01
+	}
+	395.1.1 = {
+		holder = serbia_02
+	}
+	476.1.1 = {
+		holder = serbia_03
+	}
+}
+
+
+c_travunia = {
+	## Diocletian Division
+	200.1.1 = {
+		liege = k_daciae
+	}
+	361.1.1 = {
+		holder = serbia_01
+	}
+	395.1.1 = {
+		holder = serbia_02
+	}
+	476.1.1 = {
+		holder = serbia_03
+	}
+}
+

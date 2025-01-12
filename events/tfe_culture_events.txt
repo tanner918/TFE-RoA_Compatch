@@ -1,0 +1,4731 @@
+﻿namespace = tfe_culture
+
+# 000x: Aestian split
+# 001x: Antean split
+# 002x: Fenni split
+# 003x: Venedian split
+# 004x: Sclavenian split
+# 005x: Frankish split
+# 006x: Tiele split
+# 007x: Gothonic split
+# 008x: Bavarian split
+# 009x: Slavic split
+
+# 050x: Hispano-Roman split
+# 051x: Gallo-Roman split
+# 052x: Britano-Roman split
+
+# 300x: Roman -> Itlian
+# 301x: Suebic -> Suebi
+# 302x: Anglish + Saxonian -> Anglo-Saxon
+
+# 990x: Soissons
+
+# 2000x: Emerging of Anglo-Saxon
+
+# Split Aestian into Latgalian, Lithuanian, and Prussian
+# Copied from vanilla
+tfe_culture.0001 = {
+	scope = none
+	hidden = yes
+	
+	immediate = {
+		# Save scopes for player notification events.
+		culture:aestian = { save_scope_as = aestian }
+		culture:latgalian = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:aestian
+
+			# Save scope for player notification events.
+			save_scope_as = latgalian
+		}
+		culture:semigallian = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:aestian
+
+			# Save scope for player notification events.
+			save_scope_as = semigallian
+		}
+		culture:selonian = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:aestian
+
+			# Save scope for player notification events.
+			save_scope_as = sudovian
+		}
+		culture:lithuanian = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:aestian
+
+			# Save scope for player notification events.
+			save_scope_as = lithuanian
+		}
+
+
+		every_county = {
+			limit = {
+				OR = {
+					culture = culture:aestian
+					county_has_specific_large_minority_culture_trigger = {
+						CULTURE = culture:aestian
+					}
+					county_has_specific_small_minority_culture_trigger = {
+						CULTURE = culture:aestian
+					}
+				}
+				title_province = {	
+					OR = {					
+						geographical_region = custom_aestian
+					}		
+				}
+			}
+			add_to_list = aestian_counties
+		}
+
+		# Convert the aestian counties to the new culture.
+		every_in_list = {
+			list = aestian_counties
+			limit = {
+				# Same-culture players get an event informing them of their county's conversion *before* it happens (for their provinces only).
+				NOT = {
+					holder = {
+						OR = {
+							AND = {
+								is_ai = no
+								culture = culture:aestian
+							}
+							any_liege_or_above = {
+								is_ai = no
+								culture = culture:aestian
+							}
+						}
+					}
+				}
+			}
+
+			# Latgalian
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:aestian
+				NEW_CULTURE = culture:latgalian
+				REGION = custom_latgalian
+			}
+
+			# Semigallian
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:aestian
+				NEW_CULTURE = culture:semigallian
+				REGION = custom_semigallian
+			}
+
+			# Selonian
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:aestian
+				NEW_CULTURE = culture:selonian
+				REGION = custom_selonian
+			}
+
+			# All remaining Aestian counties become Lithuanian
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:aestian
+				NEW_CULTURE = culture:lithuanian
+				REGION = custom_aestian
+			}
+		}
+
+		# Send the appropraite notification event to each player.
+		every_player = {
+			if = {
+				limit = {
+					culture = culture:aestian
+					any_sub_realm_county = {
+						culture = culture:aestian
+						title_province = {
+							OR = {
+								geographical_region = custom_aestian
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							any_liege_or_above = {
+								is_ai = no
+							}
+						}
+					}
+					trigger_event = tfe_culture.0002
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						is_ai = no
+						save_temporary_scope_as = player
+						any_in_list = {
+							list = aestian_counties
+							holder = {
+								is_within_diplo_range = { CHARACTER = scope:player }
+							}
+						}
+					}
+					trigger_event = tfe_culture.0005
+				}
+			}
+		}
+	}
+}
+
+tfe_culture.0002 = {
+	type = character_event
+	title = tfe_culture.0002.t
+	desc = tfe_culture.0002.desc
+	theme = culture_change
+	left_portrait = root
+
+	immediate = {
+		if = {
+			limit = {
+				capital_province = {
+					geographical_region = custom_latgalian
+				}
+			}
+			culture:latgalian = { save_scope_as = my_new_culture }
+		}
+		else_if = {
+			limit = {
+				capital_province = {
+					geographical_region = custom_semigallian
+				}
+			}
+			culture:semigallian = { save_scope_as = my_new_culture }
+		}
+		else_if = {
+			limit = {
+				capital_province = {
+					geographical_region = custom_selonian
+				}
+			}
+			culture:selonian = { save_scope_as = my_new_culture }
+		}
+		else = {
+			culture:lithuanian = { save_scope_as = my_new_culture }
+		}
+
+		culture = { save_scope_as = old_culture }
+	}
+
+	# Option 1 (Almost always the only option): Accept the culture conversion.
+	option = {
+		name = tfe_culture.0002.a
+		convert_player_realm_from_old_culture_to_new_effect = {
+			OLD_CULTURE = scope:old_culture
+			NEW_CULTURE = scope:my_new_culture
+		}
+	}
+
+	# Option 2: I am strong enough to keep our old culture intact!
+	option = {
+		name = tfe_culture.0002.b
+
+		trigger = {
+			custom_description = {
+				text = controls_enough_culture_counties
+				any_in_list = {
+					list = aestian_counties
+					percent >= 0.8
+
+					OR = {
+						holder = root
+						holder = {
+							any_liege_or_above = {
+								this = root
+							}
+						}
+					}
+				}
+			}
+		}
+
+		show_as_unavailable = {
+			custom_description = {
+				text = controls_enough_culture_counties	
+				any_in_list = {
+					list = aestian_counties
+					percent < 0.8
+
+					OR = {
+						holder = root
+						holder = {
+							any_liege_or_above = {
+								this = root
+							}
+						}
+					}
+				}
+			}
+		}
+
+		custom_tooltip = tfe_culture.custom.keep_culture
+	}
+}
+
+tfe_culture.0005 = {
+	type = character_event
+	title = tfe_culture.0005.t
+	desc = tfe_culture.0005.desc
+	theme = culture_change
+
+	option = {
+		name = tfe_culture.0005.a
+	}
+}
+
+# Split Antean into Severian, Volhynian, and Ilmenian
+tfe_culture.0011 = {
+	scope = none
+	hidden = yes
+	
+	immediate = {
+		# Save scopes for player notification events.
+		culture:antean = { save_scope_as = antean }
+		culture:ilmenian = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:antean
+
+			# Save scope for player notification events.
+			save_scope_as = ilmenian
+		}
+		culture:severian = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:antean
+
+			# Save scope for player notification events.
+			save_scope_as = severian
+		}
+		culture:volhynian = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:antean
+
+			# Save scope for player notification events.
+			save_scope_as = volhynian
+		}
+
+
+		every_county = {
+			limit = {
+				OR = {
+					culture = culture:antean
+					county_has_specific_large_minority_culture_trigger = {
+						CULTURE = culture:antean
+					}
+					county_has_specific_small_minority_culture_trigger = {
+						CULTURE = culture:antean
+					}
+				}
+				title_province = {	
+					OR = {					
+						geographical_region = custom_antean
+					}		
+				}
+			}
+			add_to_list = antean_counties
+		}
+
+		# Convert the antean counties to the new culture.
+		every_in_list = {
+			list = antean_counties
+			limit = {
+				# Same-culture players get an event informing them of their county's conversion *before* it happens (for their provinces only).
+				NOT = {
+					holder = {
+						OR = {
+							AND = {
+								is_ai = no
+								culture = culture:antean
+							}
+							any_liege_or_above = {
+								is_ai = no
+								culture = culture:antean
+							}
+						}
+					}
+				}
+			}
+
+			# Ilmenian
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:antean
+				NEW_CULTURE = culture:ilmenian
+				REGION = custom_ilmenian
+			}
+
+			# Severian
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:antean
+				NEW_CULTURE = culture:severian
+				REGION = custom_severian
+			}
+
+			# All remaining Antean counties become Volhynian
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:antean
+				NEW_CULTURE = culture:volhynian
+				REGION = custom_volhynian
+			}
+		}
+
+		# Send the appropraite notification event to each player.
+		every_player = {
+			if = {
+				limit = {
+					culture = culture:antean
+					any_sub_realm_county = {
+						culture = culture:antean
+						title_province = {
+							OR = {
+								geographical_region = custom_antean
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							any_liege_or_above = {
+								is_ai = no
+							}
+						}
+					}
+					trigger_event = tfe_culture.0012
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						is_ai = no
+						save_temporary_scope_as = player
+						any_in_list = {
+							list = antean_counties
+							holder = {
+								is_within_diplo_range = { CHARACTER = scope:player }
+							}
+						}
+					}
+					trigger_event = tfe_culture.0015
+				}
+			}
+		}
+	}
+}
+
+tfe_culture.0012 = {
+	type = character_event
+	title = tfe_culture.0012.t
+	desc = tfe_culture.0012.desc
+	theme = culture_change
+	left_portrait = root
+
+	immediate = {
+		if = {
+			limit = {
+				capital_province = {
+					geographical_region = custom_ilmenian
+				}
+			}
+			culture:ilmenian = { save_scope_as = my_new_culture }
+		}
+		else_if = {
+			limit = {
+				capital_province = {
+					geographical_region = custom_severian
+				}
+			}
+			culture:severian = { save_scope_as = my_new_culture }
+		}
+		else = {
+			culture:volhynian = { save_scope_as = my_new_culture }
+		}
+
+		culture = { save_scope_as = old_culture }
+	}
+
+	# Option 1 (Almost always the only option): Accept the culture conversion.
+	option = {
+		name = tfe_culture.0012.a
+		convert_player_realm_from_old_culture_to_new_effect = {
+			OLD_CULTURE = culture:antean
+			NEW_CULTURE = scope:my_new_culture
+		}
+	}
+
+	# Option 2: I am strong enough to keep our old culture intact!
+	option = {
+		name = tfe_culture.0012.b
+
+		trigger = {
+			custom_description = {
+				text = controls_enough_culture_counties
+				any_in_list = {
+					list = antean_counties
+					percent >= 0.8
+
+					OR = {
+						holder = root
+						holder = {
+							any_liege_or_above = {
+								this = root
+							}
+						}
+					}
+				}
+			}
+		}
+
+		show_as_unavailable = {
+			custom_description = {
+				text = controls_enough_culture_counties	
+				any_in_list = {
+					list = antean_counties
+					percent < 0.8
+
+					OR = {
+						holder = root
+						holder = {
+							any_liege_or_above = {
+								this = root
+							}
+						}
+					}
+				}
+			}
+		}
+
+		custom_tooltip = tfe_culture.custom.keep_culture
+	}
+}
+
+tfe_culture.0015 = {
+	type = character_event
+	title = tfe_culture.0015.t
+	desc = tfe_culture.0015.desc
+	theme = culture_change
+
+	option = {
+		name = tfe_culture.0015.a
+	}
+}
+
+# Split Fenni into Finnish, Karelian, Estonian, Livonian, and Sami
+tfe_culture.0021 = {
+	scope = none
+	hidden = yes
+	
+	immediate = {
+		# Save scopes for player notification events.
+		culture:fenni = { save_scope_as = fenni }
+		culture:finnish = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:fenni
+
+			# Save scope for player notification events.
+			save_scope_as = finnish
+		}
+		culture:karelian = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:fenni
+
+			# Save scope for player notification events.
+			save_scope_as = karelian
+		}
+		culture:estonian = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:fenni
+
+			# Save scope for player notification events.
+			save_scope_as = estonian
+		}
+		culture:livonian = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:fenni
+
+			# Save scope for player notification events.
+			save_scope_as = livonian
+		}
+		# No Sami because it already exists
+
+
+		every_county = {
+			limit = {
+				OR = {
+					culture = culture:fenni
+					county_has_specific_large_minority_culture_trigger = {
+						CULTURE = culture:fenni
+					}
+					county_has_specific_small_minority_culture_trigger = {
+						CULTURE = culture:fenni
+					}
+				}
+				title_province = {	
+					OR = {					
+						geographical_region = custom_fenni
+					}		
+				}
+			}
+			add_to_list = fenni_counties
+		}
+
+		# Convert the fenni counties to the new culture.
+		every_in_list = {
+			list = fenni_counties
+			limit = {
+				# Same-culture players get an event informing them of their county's conversion *before* it happens (for their provinces only).
+				NOT = {
+					holder = {
+						OR = {
+							AND = {
+								is_ai = no
+								culture = culture:fenni
+							}
+							any_liege_or_above = {
+								is_ai = no
+								culture = culture:fenni
+							}
+						}
+					}
+				}
+			}
+
+			# Karelian
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:fenni
+				NEW_CULTURE = culture:karelian
+				REGION = custom_karelian
+			}
+
+			# Estonian
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:fenni
+				NEW_CULTURE = culture:estonian
+				REGION = custom_estonian
+			}
+
+			# Livonian
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:fenni
+				NEW_CULTURE = culture:livonian
+				REGION = custom_livonian
+			}
+
+			# Sami
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:fenni
+				NEW_CULTURE = culture:sami
+				REGION = custom_sami
+			}
+
+			# All remaining Fenni counties become Finnish
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:fenni
+				NEW_CULTURE = culture:finnish
+				REGION = custom_fenni
+			}
+		}
+
+		# Send the appropraite notification event to each player.
+		every_player = {
+			if = {
+				limit = {
+					culture = culture:fenni
+					any_sub_realm_county = {
+						culture = culture:fenni
+						title_province = {
+							OR = {
+								geographical_region = custom_fenni
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							any_liege_or_above = {
+								is_ai = no
+							}
+						}
+					}
+					trigger_event = tfe_culture.0022
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						is_ai = no
+						save_temporary_scope_as = player
+						any_in_list = {
+							list = fenni_counties
+							holder = {
+								is_within_diplo_range = { CHARACTER = scope:player }
+							}
+						}
+					}
+					trigger_event = tfe_culture.0025
+				}
+			}
+		}
+	}
+}
+
+tfe_culture.0022 = {
+	type = character_event
+	title = tfe_culture.0022.t
+	desc = tfe_culture.0022.desc
+	theme = culture_change
+	left_portrait = root
+
+	immediate = {
+		if = {
+			limit = {
+				capital_province = {
+					geographical_region = custom_karelian
+				}
+			}
+			culture:karelian = { save_scope_as = my_new_culture }
+		}
+		else_if = {
+			limit = {
+				capital_province = {
+					geographical_region = custom_estonian
+				}
+			}
+			culture:estonian = { save_scope_as = my_new_culture }
+		}
+		else_if = {
+			limit = {
+				capital_province = {
+					geographical_region = custom_livonian
+				}
+			}
+			culture:livonian = { save_scope_as = my_new_culture }
+		}
+		else_if = {
+			limit = {
+				capital_province = {
+					geographical_region = custom_sami
+				}
+			}
+			culture:sami = { save_scope_as = my_new_culture }
+		}
+		else = {
+			culture:finnish = { save_scope_as = my_new_culture }
+		}
+
+		culture = { save_scope_as = old_culture }
+	}
+
+	# Option 1 (Almost always the only option): Accept the culture conversion.
+	option = {
+		name = tfe_culture.0022.a
+		convert_player_realm_from_old_culture_to_new_effect = {
+			OLD_CULTURE = culture:fenni
+			NEW_CULTURE = scope:my_new_culture
+		}
+	}
+
+	# Option 2: I am strong enough to keep our old culture intact!
+	option = {
+		name = tfe_culture.0022.b
+
+		trigger = {
+			custom_description = {
+				text = controls_enough_culture_counties
+				any_in_list = {
+					list = fenni_counties
+					percent >= 0.8
+
+					OR = {
+						holder = root
+						holder = {
+							any_liege_or_above = {
+								this = root
+							}
+						}
+					}
+				}
+			}
+		}
+
+		show_as_unavailable = {
+			custom_description = {
+				text = controls_enough_culture_counties	
+				any_in_list = {
+					list = fenni_counties
+					percent < 0.8
+
+					OR = {
+						holder = root
+						holder = {
+							any_liege_or_above = {
+								this = root
+							}
+						}
+					}
+				}
+			}
+		}
+
+		custom_tooltip = tfe_culture.custom.keep_culture
+	}
+}
+
+tfe_culture.0025 = {
+	type = character_event
+	title = tfe_culture.0025.t
+	desc = tfe_culture.0025.desc
+	theme = culture_change
+
+	option = {
+		name = tfe_culture.0025.a
+	}
+}
+
+# Split Wendish into Polish, Mazovian, Vistulian, Lendian, Silesian, Pomeranian, Polabian, Lutici, Czech, Slovien, and Carantanian
+tfe_culture.0031 = {
+	scope = none
+	hidden = yes
+	
+	immediate = {
+		# Save scopes for player notification events.
+		culture:wendish = { save_scope_as = wendish }
+		culture:polish = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:wendish
+
+			# Save scope for player notification events.
+			save_scope_as = polish
+		}
+		culture:mazovian = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:wendish
+
+			# Save scope for player notification events.
+			save_scope_as = mazovian
+		}
+		culture:vistulian = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:wendish
+
+			# Save scope for player notification events.
+			save_scope_as = vistulian
+		}
+		culture:lendian = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:wendish
+
+			# Save scope for player notification events.
+			save_scope_as = lendian
+		}
+		culture:silesian = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:wendish
+
+			# Save scope for player notification events.
+			save_scope_as = silesian
+		}
+		culture:pommeranian = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:wendish
+
+			# Save scope for player notification events.
+			save_scope_as = pommeranian
+		}
+		culture:polabian = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:wendish
+
+			# Save scope for player notification events.
+			save_scope_as = polabian
+		}
+		culture:lutici = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:wendish
+
+			# Save scope for player notification events.
+			save_scope_as = lutici
+		}
+		culture:czech = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:wendish
+
+			# Save scope for player notification events.
+			save_scope_as = czech
+		}
+		culture:slovien = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:wendish
+
+			# Save scope for player notification events.
+			save_scope_as = slovien
+		}
+		culture:carantanian = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:wendish
+
+			# Save scope for player notification events.
+			save_scope_as = carantanian
+		}
+
+
+		every_county = {
+			limit = {
+				OR = {
+					culture = culture:wendish
+					county_has_specific_large_minority_culture_trigger = {
+						CULTURE = culture:wendish
+					}
+					county_has_specific_small_minority_culture_trigger = {
+						CULTURE = culture:wendish
+					}
+				}
+				title_province = {	
+					OR = {					
+						geographical_region = custom_venedian
+					}		
+				}
+			}
+			add_to_list = wendish_counties
+		}
+
+		# Convert the wendish counties to the new culture.
+		every_in_list = {
+			list = wendish_counties
+			limit = {
+				# Same-culture players get an event informing them of their county's conversion *before* it happens (for their provinces only).
+				NOT = {
+					holder = {
+						OR = {
+							AND = {
+								is_ai = no
+								culture = culture:wendish
+							}
+							any_liege_or_above = {
+								is_ai = no
+								culture = culture:wendish
+							}
+						}
+					}
+				}
+			}
+
+			# Mazovian
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:wendish
+				NEW_CULTURE = culture:mazovian
+				REGION = custom_mazovian
+			}
+
+			# Vistulian
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:wendish
+				NEW_CULTURE = culture:vistulian
+				REGION = custom_vistulian
+			}
+
+			# Lendian
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:wendish
+				NEW_CULTURE = culture:lendian
+				REGION = custom_lendian
+			}
+
+			# Silesian
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:wendish
+				NEW_CULTURE = culture:silesian
+				REGION = custom_silesian
+			}
+
+			# Pomeranian
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:wendish
+				NEW_CULTURE = culture:pommeranian
+				REGION = custom_pommeranian
+			}
+
+			# Polabian
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:wendish
+				NEW_CULTURE = culture:polabian
+				REGION = custom_polabian
+			}
+
+			# Lutici
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:wendish
+				NEW_CULTURE = culture:lutici
+				REGION = custom_lutici
+			}
+
+			# Czech
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:wendish
+				NEW_CULTURE = culture:czech
+				REGION = custom_czech
+			}
+
+			# Slovien
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:wendish
+				NEW_CULTURE = culture:slovien
+				REGION = custom_slovien
+			}
+
+			# Carantanian
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:wendish
+				NEW_CULTURE = culture:carantanian
+				REGION = custom_carantanian
+			}
+
+			# All remaining Wendish counties become Polish
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:wendish
+				NEW_CULTURE = culture:polish
+				REGION = custom_venedian
+			}
+		}
+
+		title:e_west_slavia = {
+			reset_title_name = yes
+		}
+
+		# Send the appropraite notification event to each player.
+		every_player = {
+			if = {
+				limit = {
+					culture = culture:wendish
+					any_sub_realm_county = {
+						culture = culture:wendish
+						title_province = {
+							OR = {
+								geographical_region = custom_venedian
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							any_liege_or_above = {
+								is_ai = no
+							}
+						}
+					}
+					trigger_event = tfe_culture.0032
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						is_ai = no
+						save_temporary_scope_as = player
+						any_in_list = {
+							list = wendish_counties
+							holder = {
+								is_within_diplo_range = { CHARACTER = scope:player }
+							}
+						}
+					}
+					trigger_event = tfe_culture.0035
+				}
+			}
+		}
+	}
+}
+
+tfe_culture.0032 = {
+	type = character_event
+	title = tfe_culture.0032.t
+	desc = tfe_culture.0032.desc
+	theme = culture_change
+	left_portrait = root
+
+	immediate = {
+		if = {
+			limit = {
+				capital_province = {
+					geographical_region = custom_mazovian
+				}
+			}
+			culture:mazovian = { save_scope_as = my_new_culture }
+		}
+		else_if = {
+			limit = {
+				capital_province = {
+					geographical_region = custom_vistulian
+				}
+			}
+			culture:vistulian = { save_scope_as = my_new_culture }
+		}
+		else_if = {
+			limit = {
+				capital_province = {
+					geographical_region = custom_lendian
+				}
+			}
+			culture:lendian = { save_scope_as = my_new_culture }
+		}
+		else_if = {
+			limit = {
+				capital_province = {
+					geographical_region = custom_silesian
+				}
+			}
+			culture:silesian = { save_scope_as = my_new_culture }
+		}
+		else_if = {
+			limit = {
+				capital_province = {
+					geographical_region = custom_pommeranian
+				}
+			}
+			culture:pommeranian = { save_scope_as = my_new_culture }
+		}
+		else_if = {
+			limit = {
+				capital_province = {
+					geographical_region = custom_polabian
+				}
+			}
+			culture:polabian = { save_scope_as = my_new_culture }
+		}
+		else_if = {
+			limit = {
+				capital_province = {
+					geographical_region = custom_lutici
+				}
+			}
+			culture:lutici = { save_scope_as = my_new_culture }
+		}
+		else_if = {
+			limit = {
+				capital_province = {
+					geographical_region = custom_czech
+				}
+			}
+			culture:czech = { save_scope_as = my_new_culture }
+		}
+		else_if = {
+			limit = {
+				capital_province = {
+					geographical_region = custom_slovien
+				}
+			}
+			culture:slovien = { save_scope_as = my_new_culture }
+		}
+		else_if = {
+			limit = {
+				capital_province = {
+					geographical_region = custom_carantanian
+				}
+			}
+			culture:carantanian = { save_scope_as = my_new_culture }
+		}
+		else = {
+			culture:polish = { save_scope_as = my_new_culture }
+		}
+
+		culture = { save_scope_as = old_culture }
+	}
+
+	# Option 1 (Almost always the only option): Accept the culture conversion.
+	option = {
+		name = tfe_culture.0032.a
+		convert_player_realm_from_old_culture_to_new_effect = {
+			OLD_CULTURE = culture:wendish
+			NEW_CULTURE = scope:my_new_culture
+		}
+	}
+
+	# Option 2: I am strong enough to keep our old culture intact!
+	option = {
+		name = tfe_culture.0032.b
+
+		trigger = {
+			custom_description = {
+				text = controls_enough_culture_counties
+				any_in_list = {
+					list = wendish_counties
+					percent >= 0.8
+
+					OR = {
+						holder = root
+						holder = {
+							any_liege_or_above = {
+								this = root
+							}
+						}
+					}
+				}
+			}
+		}
+
+		show_as_unavailable = {
+			custom_description = {
+				text = controls_enough_culture_counties	
+				any_in_list = {
+					list = wendish_counties
+					percent < 0.8
+
+					OR = {
+						holder = root
+						holder = {
+							any_liege_or_above = {
+								this = root
+							}
+						}
+					}
+				}
+			}
+		}
+
+		custom_tooltip = tfe_culture.custom.keep_culture
+	}
+}
+
+tfe_culture.0035 = {
+	type = character_event
+	title = tfe_culture.0035.t
+	desc = tfe_culture.0035.desc
+	theme = culture_change
+
+	option = {
+		name = tfe_culture.0035.a
+	}
+}
+
+# Split Sclavenian into Belocroat and Beloserb
+tfe_culture.0041 = {
+	scope = none
+	hidden = yes
+	
+	immediate = {
+		# Save scopes for player notification events.
+		culture:sclavenian = { save_scope_as = sclavenian }
+		culture:belocroat = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:sclavenian
+
+			# Save scope for player notification events.
+			save_scope_as = croatian
+		}
+		culture:beloserb = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:sclavenian
+
+			# Save scope for player notification events.
+			save_scope_as = serbian
+		}
+
+		every_county = {
+			limit = {
+				OR = {
+					culture = culture:sclavenian
+					county_has_specific_large_minority_culture_trigger = {
+						CULTURE = culture:sclavenian
+					}
+					county_has_specific_small_minority_culture_trigger = {
+						CULTURE = culture:sclavenian
+					}
+				}
+				title_province = {	
+					OR = {					
+						geographical_region = custom_sclavenian
+					}		
+				}
+			}
+			add_to_list = sclavenian_counties
+		}
+
+		# Convert the sclavenian counties to the new culture.
+		every_in_list = {
+			list = sclavenian_counties
+			limit = {
+				# Same-culture players get an event informing them of their county's conversion *before* it happens (for their provinces only).
+				NOT = {
+					holder = {
+						OR = {
+							AND = {
+								is_ai = no
+								culture = culture:sclavenian
+							}
+							any_liege_or_above = {
+								is_ai = no
+								culture = culture:sclavenian
+							}
+						}
+					}
+				}
+			}
+
+			# Croatian
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:sclavenian
+				NEW_CULTURE = culture:belocroat
+				REGION = custom_croatian
+			}
+
+			# All remaining Sclavenian counties become Serbian
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:sclavenian
+				NEW_CULTURE = culture:beloserb
+				REGION = custom_sclavenian
+			}
+		}
+
+		# Send the appropraite notification event to each player.
+		every_player = {
+			if = {
+				limit = {
+					culture = culture:sclavenian
+					any_sub_realm_county = {
+						culture = culture:sclavenian
+						title_province = {
+							OR = {
+								geographical_region = custom_sclavenian
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							any_liege_or_above = {
+								is_ai = no
+							}
+						}
+					}
+					trigger_event = tfe_culture.0042
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						is_ai = no
+						save_temporary_scope_as = player
+						any_in_list = {
+							list = sclavenian_counties
+							holder = {
+								is_within_diplo_range = { CHARACTER = scope:player }
+							}
+						}
+					}
+					trigger_event = tfe_culture.0045
+				}
+			}
+		}
+	}
+}
+
+tfe_culture.0042 = {
+	type = character_event
+	title = tfe_culture.0042.t
+	desc = tfe_culture.0042.desc
+	theme = culture_change
+	left_portrait = root
+
+	immediate = {
+		if = {
+			limit = {
+				capital_province = {
+					geographical_region = custom_croatian
+				}
+			}
+			culture:belocroat = { save_scope_as = my_new_culture }
+		}
+		else = {
+			culture:beloserb = { save_scope_as = my_new_culture }
+		}
+
+		culture = { save_scope_as = old_culture }
+	}
+
+	# Option 1 (Almost always the only option): Accept the culture conversion.
+	option = {
+		name = tfe_culture.0042.a
+		convert_player_realm_from_old_culture_to_new_effect = {
+			OLD_CULTURE = culture:sclavenian
+			NEW_CULTURE = scope:my_new_culture
+		}
+	}
+
+	# Option 2: I am strong enough to keep our old culture intact!
+	option = {
+		name = tfe_culture.0042.b
+
+		trigger = {
+			custom_description = {
+				text = controls_enough_culture_counties
+				any_in_list = {
+					list = sclavenian_counties
+					percent >= 0.8
+
+					OR = {
+						holder = root
+						holder = {
+							any_liege_or_above = {
+								this = root
+							}
+						}
+					}
+				}
+			}
+		}
+
+		show_as_unavailable = {
+			custom_description = {
+				text = controls_enough_culture_counties	
+				any_in_list = {
+					list = sclavenian_counties
+					percent < 0.8
+
+					OR = {
+						holder = root
+						holder = {
+							any_liege_or_above = {
+								this = root
+							}
+						}
+					}
+				}
+			}
+		}
+
+		custom_tooltip = tfe_culture.custom.keep_culture
+	}
+}
+
+tfe_culture.0045 = {
+	type = character_event
+	title = tfe_culture.0045.t
+	desc = tfe_culture.0045.desc
+	theme = culture_change
+
+	option = {
+		name = tfe_culture.0045.a
+	}
+}
+
+# Split Tiele into Kirghiz, Uyghur, Uriankhai, and Tujue
+tfe_culture.0061 = {
+	scope = none
+	hidden = yes
+	
+	immediate = {
+		# Save scopes for player notification events.
+		culture:tiele = { save_scope_as = tiele }
+		culture:kirghiz = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			# Kirghiz already exists before the split, do not reset culture creation date
+			get_all_innovations_from = culture:tiele
+
+			# Save scope for player notification events.
+			save_scope_as = kirghiz
+		}
+		culture:uyghur = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:tiele
+
+			# Save scope for player notification events.
+			save_scope_as = uyghur
+		}
+		culture:uriankhai = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			# Uriankhai already exists before the split, do not reset culture creation date
+			get_all_innovations_from = culture:tiele
+
+			# Save scope for player notification events.
+			save_scope_as = uriankhai
+		}
+		culture:tujue = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:tiele
+
+			# Save scope for player notification events.
+			save_scope_as = tujue
+		}
+
+
+		every_county = {
+			limit = {
+				OR = {
+					culture = culture:tiele
+					county_has_specific_large_minority_culture_trigger = {
+						CULTURE = culture:tiele
+					}
+					county_has_specific_small_minority_culture_trigger = {
+						CULTURE = culture:tiele
+					}
+				}
+				title_province = {	
+					OR = {					
+						geographical_region = custom_tiele
+					}		
+				}
+			}
+			add_to_list = tiele_counties
+		}
+
+		# Convert the tiele counties to the new culture.
+		every_in_list = {
+			list = tiele_counties
+			limit = {
+				# Same-culture players get an event informing them of their county's conversion *before* it happens (for their provinces only).
+				NOT = {
+					holder = {
+						OR = {
+							AND = {
+								is_ai = no
+								culture = culture:tiele
+							}
+							any_liege_or_above = {
+								is_ai = no
+								culture = culture:tiele
+							}
+						}
+					}
+				}
+			}
+
+			# Tujue
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:tiele
+				NEW_CULTURE = culture:tujue
+				REGION = custom_tujue
+			}
+
+			# Kirghiz
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:tiele
+				NEW_CULTURE = culture:kirghiz
+				REGION = custom_kirghiz
+			}
+
+			# Uriankhai
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:tiele
+				NEW_CULTURE = culture:uriankhai
+				REGION = custom_uriankhai
+			}
+
+			# All remaining tiele counties become Uyghur
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:tiele
+				NEW_CULTURE = culture:uyghur
+				REGION = custom_tiele
+			}
+		}
+
+		# Send the appropraite notification event to each player.
+		every_player = {
+			if = {
+				limit = {
+					culture = culture:tiele
+					any_sub_realm_county = {
+						culture = culture:tiele
+						title_province = {
+							OR = {
+								geographical_region = custom_tiele
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							any_liege_or_above = {
+								is_ai = no
+							}
+						}
+					}
+					trigger_event = tfe_culture.0062
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						is_ai = no
+						save_temporary_scope_as = player
+						any_in_list = {
+							list = tiele_counties
+							holder = {
+								is_within_diplo_range = { CHARACTER = scope:player }
+							}
+						}
+					}
+					trigger_event = tfe_culture.0065
+				}
+			}
+		}
+	}
+}
+
+tfe_culture.0062 = {
+	type = character_event
+	title = tfe_culture.0062.t
+	desc = tfe_culture.0062.desc
+	theme = culture_change
+	left_portrait = root
+
+	immediate = {
+		if = {
+			limit = {
+				capital_province = {
+					geographical_region = custom_tujue
+				}
+			}
+			culture:tujue = { save_scope_as = my_new_culture }
+		}
+		else_if = {
+			limit = {
+				capital_province = {
+					geographical_region = custom_kirghiz
+				}
+			}
+			culture:kirghiz = { save_scope_as = my_new_culture }
+		}
+		else_if = {
+			limit = {
+				capital_province = {
+					geographical_region = custom_uriankhai
+				}
+			}
+			culture:uriankhai = { save_scope_as = my_new_culture }
+		}
+		else = {
+			culture:uyghur = { save_scope_as = my_new_culture }
+		}
+
+		culture = { save_scope_as = old_culture }
+	}
+
+	# Option 1 (Almost always the only option): Accept the culture conversion.
+	option = {
+		name = tfe_culture.0062.a
+		convert_player_realm_from_old_culture_to_new_effect = {
+			OLD_CULTURE = culture:tiele
+			NEW_CULTURE = scope:my_new_culture
+		}
+	}
+
+	# Option 2: I am strong enough to keep our old culture intact!
+	option = {
+		name = tfe_culture.0062.b
+
+		trigger = {
+			custom_description = {
+				text = controls_enough_culture_counties
+				any_in_list = {
+					list = tiele_counties
+					percent >= 0.8
+
+					OR = {
+						holder = root
+						holder = {
+							any_liege_or_above = {
+								this = root
+							}
+						}
+					}
+				}
+			}
+		}
+
+		show_as_unavailable = {
+			custom_description = {
+				text = controls_enough_culture_counties	
+				any_in_list = {
+					list = tiele_counties
+					percent < 0.8
+
+					OR = {
+						holder = root
+						holder = {
+							any_liege_or_above = {
+								this = root
+							}
+						}
+					}
+				}
+			}
+		}
+
+		custom_tooltip = tfe_culture.custom.keep_culture
+	}
+}
+
+tfe_culture.0065 = {
+	type = character_event
+	title = tfe_culture.0065.t
+	desc = tfe_culture.0065.desc
+	theme = culture_change
+
+	option = {
+		name = tfe_culture.0065.a
+	}
+}
+
+# Diverge Gothonic from Gothic
+tfe_culture.0071 = {
+	scope = none
+	hidden = yes
+	
+	immediate = {
+		# Save scopes for player notification events.
+		culture:gothic = { save_scope_as = gothic }
+		culture:gothonic = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:gothic
+
+			# Save scope for player notification events.
+			save_scope_as = gothonic
+		}
+
+		every_county = {
+			limit = {
+				OR = {
+					culture = culture:gothic
+					county_has_specific_large_minority_culture_trigger = {
+						CULTURE = culture:gothic
+					}
+					county_has_specific_small_minority_culture_trigger = {
+						CULTURE = culture:gothic
+					}
+				}
+				title_province = {	
+					OR = {					
+						geographical_region = custom_gothonic
+					}		
+				}
+			}
+			add_to_list = gothic_counties
+		}
+
+		# Convert the gothic counties to the new culture.
+		every_in_list = {
+			list = gothic_counties
+			limit = {
+				# Same-culture players get an event informing them of their county's conversion *before* it happens (for their provinces only).
+				NOT = {
+					holder = {
+						OR = {
+							AND = {
+								is_ai = no
+								culture = culture:gothic
+							}
+							any_liege_or_above = {
+								is_ai = no
+								culture = culture:gothic
+							}
+						}
+					}
+				}
+			}
+
+			# All Gothic counties within region become Gothonic
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:gothic
+				NEW_CULTURE = culture:gothonic
+				REGION = custom_gothonic
+			}
+		}
+
+		# Send the appropraite notification event to each player.
+		every_player = {
+			if = {
+				limit = {
+					culture = culture:gothic
+					any_sub_realm_county = {
+						culture = culture:gothic
+						title_province = {
+							OR = {
+								geographical_region = custom_gothonic
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							any_liege_or_above = {
+								is_ai = no
+							}
+						}
+					}
+					trigger_event = tfe_culture.0072
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						is_ai = no
+						save_temporary_scope_as = player
+						any_in_list = {
+							list = gothic_counties
+							holder = {
+								is_within_diplo_range = { CHARACTER = scope:player }
+							}
+						}
+					}
+					trigger_event = tfe_culture.0075
+				}
+			}
+		}
+	}
+}
+
+tfe_culture.0072 = {
+	type = character_event
+	title = tfe_culture.0072.t
+	desc = tfe_culture.0072.desc
+	theme = culture_change
+	left_portrait = root
+
+	immediate = {
+		culture:gothonic = { save_scope_as = my_new_culture }
+
+		culture = { save_scope_as = old_culture }
+	}
+
+	# Option 1 (Almost always the only option): Accept the culture conversion.
+	option = {
+		name = tfe_culture.0072.a
+		convert_player_realm_from_old_culture_to_new_effect = {
+			OLD_CULTURE = culture:gothic
+			NEW_CULTURE = scope:my_new_culture
+		}
+	}
+
+	# Option 2: I am strong enough to keep our old culture intact!
+	option = {
+		name = tfe_culture.0072.b
+
+		trigger = {
+			custom_description = {
+				text = controls_enough_culture_counties
+				any_in_list = {
+					list = gothic_counties
+					percent >= 0.8
+
+					OR = {
+						holder = root
+						holder = {
+							any_liege_or_above = {
+								this = root
+							}
+						}
+					}
+				}
+			}
+		}
+
+		show_as_unavailable = {
+			custom_description = {
+				text = controls_enough_culture_counties	
+				any_in_list = {
+					list = gothic_counties
+					percent < 0.8
+
+					OR = {
+						holder = root
+						holder = {
+							any_liege_or_above = {
+								this = root
+							}
+						}
+					}
+				}
+			}
+		}
+
+		custom_tooltip = tfe_culture.custom.keep_culture
+	}
+}
+
+tfe_culture.0075 = {
+	type = character_event
+	title = tfe_culture.0075.t
+	desc = tfe_culture.0075.desc
+	theme = culture_change
+
+	option = {
+		name = tfe_culture.0075.a
+	}
+}
+
+
+tfe_culture.0081 = {
+	scope = none
+	hidden = yes
+	
+	immediate = {
+		# Save scopes for player notification events.
+		culture:old_suebi = { save_scope_as = old_suebi }
+		culture:bavarian = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:old_suebi
+
+			# Save scope for player notification events.
+			save_scope_as = bavarian
+		}
+
+		every_county = {
+			limit = {
+				OR = {
+					culture = culture:old_suebi
+					county_has_specific_large_minority_culture_trigger = {
+						CULTURE = culture:old_suebi
+					}
+					county_has_specific_small_minority_culture_trigger = {
+						CULTURE = culture:old_suebi
+					}
+				}
+				title_province = {	
+					OR = {					
+						geographical_region = custom_bavaria
+					}		
+				}
+			}
+			add_to_list = old_suebi_counties
+		}
+
+		# Convert the old_suebi counties to the new culture.
+		every_in_list = {
+			list = old_suebi_counties
+			limit = {
+				# Same-culture players get an event informing them of their county's conversion *before* it happens (for their provinces only).
+				NOT = {
+					holder = {
+						OR = {
+							AND = {
+								is_ai = no
+								culture = culture:old_suebi
+							}
+							any_liege_or_above = {
+								is_ai = no
+								culture = culture:old_suebi
+							}
+						}
+					}
+				}
+			}
+
+			# All old_suebi counties within region become bavarian
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:old_suebi
+				NEW_CULTURE = culture:bavarian
+				REGION = custom_bavaria
+			}
+		}
+
+		# Send the appropraite notification event to each player.
+		every_player = {
+			if = {
+				limit = {
+					culture = culture:old_suebi
+					any_sub_realm_county = {
+						culture = culture:old_suebi
+						title_province = {
+							OR = {
+								geographical_region = custom_bavaria
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							any_liege_or_above = {
+								is_ai = no
+							}
+						}
+					}
+					trigger_event = tfe_culture.0082
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						is_ai = no
+						save_temporary_scope_as = player
+						any_in_list = {
+							list = old_suebi_counties
+							holder = {
+								is_within_diplo_range = { CHARACTER = scope:player }
+							}
+						}
+					}
+					trigger_event = tfe_culture.0085
+				}
+			}
+		}
+	}
+}
+
+tfe_culture.0082 = {
+	type = character_event
+	title = tfe_culture.0082.t
+	desc = tfe_culture.0082.desc
+	theme = culture_change
+	left_portrait = root
+
+	immediate = {
+		culture:bavarian = { save_scope_as = my_new_culture }
+
+		culture = { save_scope_as = old_culture }
+	}
+
+	# Option 1 (Almost always the only option): Accept the culture conversion.
+	option = {
+		name = tfe_culture.0082.a
+		convert_player_realm_from_old_culture_to_new_effect = {
+			OLD_CULTURE = culture:old_suebi
+			NEW_CULTURE = scope:my_new_culture
+		}
+	}
+
+	# Option 2: I am strong enough to keep our old culture intact!
+	option = {
+		name = tfe_culture.0082.b
+
+		trigger = {
+			custom_description = {
+				text = controls_enough_culture_counties
+				any_in_list = {
+					list = old_suebi_counties
+					percent >= 0.8
+
+					OR = {
+						holder = root
+						holder = {
+							any_liege_or_above = {
+								this = root
+							}
+						}
+					}
+				}
+			}
+		}
+
+		show_as_unavailable = {
+			custom_description = {
+				text = controls_enough_culture_counties	
+				any_in_list = {
+					list = old_suebi_counties
+					percent < 0.8
+
+					OR = {
+						holder = root
+						holder = {
+							any_liege_or_above = {
+								this = root
+							}
+						}
+					}
+				}
+			}
+		}
+
+		custom_tooltip = tfe_culture.custom.keep_culture
+	}
+}
+
+tfe_culture.0085 = {
+	type = character_event
+	title = tfe_culture.0085.t
+	desc = tfe_culture.0085.desc
+	theme = culture_change
+
+	option = {
+		name = tfe_culture.0085.a
+	}
+}
+
+tfe_culture.0091 = {
+	scope = none
+	hidden = yes
+	
+	immediate = {
+		# Save scopes for player notification events.
+		culture:slavic = { save_scope_as = slavic }
+		culture:antean = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:slavic
+
+			# Save scope for player notification events.
+			save_scope_as = antean
+		}
+		culture:sclavenian = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:slavic
+
+			# Save scope for player notification events.
+			save_scope_as = sclavenian
+		}
+
+
+		every_county = {
+			limit = {
+				OR = {
+					culture = culture:slavic
+					county_has_specific_large_minority_culture_trigger = {
+						CULTURE = culture:slavic
+					}
+					county_has_specific_small_minority_culture_trigger = {
+						CULTURE = culture:slavic
+					}
+				}		
+			}
+
+			add_to_list = slavic_counties
+		}
+		if = {
+			limit = {
+				title:k_antes = {
+					is_title_created = yes
+				}
+				title:k_antes.holder ?= {
+					is_landed = yes
+				}
+			}
+			# Convert the slavic counties to the new culture.
+			every_in_list = {
+				list = slavic_counties
+				limit = {
+					# Same-culture players get an event informing them of their county's conversion *before* it happens (for their provinces only).
+					NOT = {
+						holder = {
+							OR = {
+								AND = {
+									is_ai = no
+									culture = culture:slavic
+								}
+								any_liege_or_above = {
+									is_ai = no
+									culture = culture:slavic
+								}
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						holder.top_liege = title:k_antes.holder
+					}
+					if = {
+						# If this county is of the old culture and is in the designated region, flip it to the new culture.
+						limit = {
+							OR = {
+								culture = culture:slavic
+								county_has_specific_large_minority_culture_trigger = {
+									CULTURE = culture:slavic
+								}
+								county_has_specific_small_minority_culture_trigger = {
+									CULTURE = culture:slavic
+								}
+							}	
+						}
+						if = {
+							limit = {
+								culture = culture:slavic
+							}
+							set_county_culture = culture:antean
+						}
+						if = {
+							limit = {
+								county_has_specific_large_minority_culture_trigger = {
+									CULTURE = culture:slavic
+								}
+							}
+					
+							remove_list_variable = {
+								name = culture_minorities_large
+								target = culture:slavic
+							}
+							add_culture_minority_effect = {
+								COUNTY = THIS
+								SIZE = large
+								CULTURE = culture:antean
+							}
+						}
+						if = {
+							limit = {
+								county_has_specific_small_minority_culture_trigger = {
+									CULTURE = culture:slavic
+								}
+							}
+							remove_list_variable = {
+								name = culture_minorities_small
+								target = culture:slavic
+							}
+							add_culture_minority_effect = {
+								COUNTY = THIS
+								SIZE = small
+								CULTURE = culture:antean
+							}
+						}
+						# If the holder is also of the old culture, and their capital is in the designated region, we flip them along with the county.
+						holder = {
+							if = {
+								limit = {
+									culture = culture:slavic
+								}
+								set_culture = culture:antean
+							}
+						}
+					}
+
+				}
+				else = {
+					if = {
+						# If this county is of the old culture and is in the designated region, flip it to the new culture.
+						limit = {
+							OR = {
+								culture = culture:slavic
+								county_has_specific_large_minority_culture_trigger = {
+									CULTURE = culture:slavic
+								}
+								county_has_specific_small_minority_culture_trigger = {
+									CULTURE = culture:slavic
+								}
+							}	
+						}
+						if = {
+							limit = {
+								culture = culture:slavic
+							}
+							set_county_culture = culture:sclavenian
+						}
+						if = {
+							limit = {
+								county_has_specific_large_minority_culture_trigger = {
+									CULTURE = culture:slavic
+								}
+							}
+					
+							remove_list_variable = {
+								name = culture_minorities_large
+								target = culture:slavic
+							}
+							add_culture_minority_effect = {
+								COUNTY = THIS
+								SIZE = large
+								CULTURE = culture:sclavenian
+							}
+						}
+						if = {
+							limit = {
+								county_has_specific_small_minority_culture_trigger = {
+									CULTURE = culture:slavic
+								}
+							}
+							remove_list_variable = {
+								name = culture_minorities_small
+								target = culture:slavic
+							}
+							add_culture_minority_effect = {
+								COUNTY = THIS
+								SIZE = small
+								CULTURE = culture:sclavenian
+							}
+						}
+						# If the holder is also of the old culture, and their capital is in the designated region, we flip them along with the county.
+						holder = {
+							if = {
+								limit = {
+									culture = culture:slavic
+								}
+								set_culture = culture:sclavenian
+							}
+						}
+					}
+				}
+				
+			}
+		}
+		else = {
+			# Convert the slavic counties to the new culture.
+			every_in_list = {
+				list = slavic_counties
+				limit = {
+					# Same-culture players get an event informing them of their county's conversion *before* it happens (for their provinces only).
+					NOT = {
+						holder = {
+							OR = {
+								AND = {
+									is_ai = no
+									culture = culture:slavic
+								}
+								any_liege_or_above = {
+									is_ai = no
+									culture = culture:slavic
+								}
+							}
+						}
+					}
+				}
+				if = {
+					# If this county is of the old culture and is in the designated region, flip it to the new culture.
+					limit = {
+						OR = {
+							culture = culture:slavic
+							county_has_specific_large_minority_culture_trigger = {
+								CULTURE = culture:slavic
+							}
+							county_has_specific_small_minority_culture_trigger = {
+								CULTURE = culture:slavic
+							}
+						}	
+						title_province = {
+							geographical_region = custom_antean
+						}
+					}
+					if = {
+						limit = {
+							culture = culture:slavic
+						}
+						set_county_culture = culture:antean
+					}
+					if = {
+						limit = {
+							county_has_specific_large_minority_culture_trigger = {
+								CULTURE = culture:slavic
+							}
+						}
+				
+						remove_list_variable = {
+							name = culture_minorities_large
+							target = culture:slavic
+						}
+						add_culture_minority_effect = {
+							COUNTY = THIS
+							SIZE = large
+							CULTURE = culture:antean
+						}
+					}
+					if = {
+						limit = {
+							county_has_specific_small_minority_culture_trigger = {
+								CULTURE = culture:slavic
+							}
+						}
+						remove_list_variable = {
+							name = culture_minorities_small
+							target = culture:slavic
+						}
+						add_culture_minority_effect = {
+							COUNTY = THIS
+							SIZE = small
+							CULTURE = culture:antean
+						}
+					}
+					# If the holder is also of the old culture, and their capital is in the designated region, we flip them along with the county.
+					holder = {
+						if = {
+							limit = {
+								culture = culture:slavic
+								capital_province = {
+									geographical_region = custom_antean
+								}
+							}
+							set_culture = culture:antean
+						}
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							culture = culture:slavic
+						}
+						set_county_culture = culture:sclavenian
+					}
+					if = {
+						limit = {
+							county_has_specific_large_minority_culture_trigger = {
+								CULTURE = culture:slavic
+							}
+						}
+				
+						remove_list_variable = {
+							name = culture_minorities_large
+							target = culture:slavic
+						}
+						add_culture_minority_effect = {
+							COUNTY = THIS
+							SIZE = large
+							CULTURE = culture:sclavenian
+						}
+					}
+					if = {
+						limit = {
+							county_has_specific_small_minority_culture_trigger = {
+								CULTURE = culture:slavic
+							}
+						}
+						remove_list_variable = {
+							name = culture_minorities_small
+							target = culture:slavic
+						}
+						add_culture_minority_effect = {
+							COUNTY = THIS
+							SIZE = small
+							CULTURE = culture:sclavenian
+						}
+					}
+					# If the holder is also of the old culture, and their capital is in the designated region, we flip them along with the county.
+					holder = {
+						if = {
+							limit = {
+								culture = culture:slavic
+							}
+							set_culture = culture:sclavenian
+						}
+					}
+				}
+				
+			}
+		}
+
+		# Send the appropraite notification event to each player.
+		every_player = {
+			if = {
+				limit = {
+					culture = culture:slavic
+					any_sub_realm_county = {
+						culture = culture:slavic
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							any_liege_or_above = {
+								is_ai = no
+							}
+						}
+					}
+					trigger_event = tfe_culture.0092
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						is_ai = no
+						save_temporary_scope_as = player
+						any_in_list = {
+							list = slavic_counties
+							holder = {
+								is_within_diplo_range = { CHARACTER = scope:player }
+							}
+						}
+					}
+					trigger_event = tfe_culture.0095
+				}
+			}
+		}
+	}
+}
+
+tfe_culture.0092 = {
+	type = character_event
+	title = tfe_culture.0092.t
+	desc = tfe_culture.0092.desc
+	theme = culture_change
+	left_portrait = root
+
+	immediate = {
+		if = {
+			limit = {
+				title:k_antes = {
+					is_title_created = yes
+				}
+				title:k_antes.holder ?= {
+					is_landed = yes
+				}
+				
+			}
+			if = {
+				limit = {
+					top_liege = title:k_antes.holder
+				}
+				culture:antean = { save_scope_as = my_new_culture }
+			}
+			else = {
+				culture:sclavenian = { save_scope_as = my_new_culture }
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					capital_province = {
+						geographical_region = custom_antean
+					}
+				}
+				culture:antean = { save_scope_as = my_new_culture }
+			}
+			else = {
+				culture:sclavenian = { save_scope_as = my_new_culture }
+			}
+		}
+
+		culture = { save_scope_as = old_culture }
+	}
+
+	# Option 1 (Almost always the only option): Accept the culture conversion.
+	option = {
+		name = tfe_culture.0092.a
+		convert_player_realm_from_old_culture_to_new_effect = {
+			OLD_CULTURE = scope:old_culture
+			NEW_CULTURE = scope:my_new_culture
+		}
+	}
+
+	# Option 2: I am strong enough to keep our old culture intact!
+	option = {
+		name = tfe_culture.0092.b
+
+		trigger = {
+			custom_description = {
+				text = controls_enough_culture_counties
+				any_in_list = {
+					list = slavic_counties
+					percent >= 0.8
+
+					OR = {
+						holder = root
+						holder = {
+							any_liege_or_above = {
+								this = root
+							}
+						}
+					}
+				}
+			}
+		}
+
+		show_as_unavailable = {
+			custom_description = {
+				text = controls_enough_culture_counties	
+				any_in_list = {
+					list = slavic_counties
+					percent < 0.8
+
+					OR = {
+						holder = root
+						holder = {
+							any_liege_or_above = {
+								this = root
+							}
+						}
+					}
+				}
+			}
+		}
+
+		custom_tooltip = tfe_culture.custom.keep_culture
+	}
+}
+
+tfe_culture.0095 = {
+	type = character_event
+	title = tfe_culture.0095.t
+	desc = tfe_culture.0095.desc
+	theme = culture_change
+
+	option = {
+		name = tfe_culture.0095.a
+	}
+}
+
+# Russians
+scripted_trigger valid_for_russian_culture_trigger = {
+	tier = tier_county
+	exists = holder
+	NOT = { exists = var:had_russian_county_conversion }
+	culture = {
+		has_cultural_pillar = heritage_east_slavic
+		NOT = {
+			this = culture:russian
+		}
+	}
+	holder = {
+		OR = {
+			faith = {
+				NOT = { has_doctrine_parameter = unreformed }
+			}
+			culture = {
+				NOT = { has_cultural_pillar = heritage_east_slavic }
+			}
+			culture = culture:russian
+		}
+	}
+}
+
+# Visigothic notification events
+tfe_culture.1001 = {
+	type = character_event
+	title = tfe_culture.1001.t
+	desc = tfe_culture.1001.desc
+	theme = culture_change
+	left_portrait = scope:visigothic_founder
+
+	immediate = {
+		show_as_tooltip = {
+			custom_tooltip = tfe_culture.custom.change_culture
+			culture:visigothic = {
+				get_all_innovations_from = culture:gothic
+			}
+		}
+	}
+
+	option = {
+		name = tfe_culture.1001.a
+	}
+}
+
+
+# Hispano-Roman Split 050x
+tfe_culture.0501 = {
+	scope = none
+	hidden = yes
+
+	immediate = {
+		# Save scopes for player notification events.
+		culture:hispano_roman = { save_scope_as = hispano_roman }
+
+		culture:balearic = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:hispano_roman
+
+			# Save scope for player notification events.
+			save_scope_as = balearic
+		}
+
+		culture:galecian = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:hispano_roman
+
+			# Save scope for player notification events.
+			save_scope_as = galecian
+		}
+		
+		culture:lusitanian = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:hispano_roman
+
+			# Save scope for player notification events.
+			save_scope_as = lusitanian
+		}
+
+		culture:baetican = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:hispano_roman
+
+			# Save scope for player notification events.
+			save_scope_as = baetican
+		}
+
+		culture:iberian = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:hispano_roman
+
+			# Save scope for player notification events.
+			save_scope_as = iberian
+		}
+
+		# Add all hispano counties to a list
+		every_county = {
+			limit = {
+				OR = {
+					culture = culture:hispano_roman
+					county_has_specific_large_minority_culture_trigger = {
+						CULTURE = culture:hispano_roman
+					}
+					county_has_specific_small_minority_culture_trigger = {
+						CULTURE = culture:hispano_roman
+					}
+				}		
+			}
+
+			add_to_list = hispano_roman_counties
+		}
+
+		# Convert the hispano roman counties to the new culture.
+		every_in_list = {
+			list = hispano_roman_counties
+			limit = {
+				# Same-culture players get an event informing them of their county's conversion *before* it happens (for their provinces only).
+				NOT = {
+					holder = {
+						OR = {
+							AND = {
+								is_ai = no
+								culture = culture:hispano_roman
+							}
+							any_liege_or_above = {
+								is_ai = no
+								culture = culture:hispano_roman
+							}
+						}
+					}
+				}
+			}
+
+			# Balearic
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:hispano_roman
+				NEW_CULTURE = culture:balearic
+				REGION = custom_balearic
+			}
+
+			# Galecian
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:hispano_roman
+				NEW_CULTURE = culture:galecian
+				REGION = custom_galecian
+			}
+
+			# Lusitanian
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:hispano_roman
+				NEW_CULTURE = culture:lusitanian
+				REGION = custom_lusitanian
+			}
+
+			# Baetican
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:hispano_roman
+				NEW_CULTURE = culture:baetican
+				REGION = custom_baetican
+			}
+
+			# All remaining Hispano-Roman counties in Iberia become Iberian
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:hispano_roman
+				NEW_CULTURE = culture:iberian
+				REGION = world_europe_west_iberia
+			}
+		}
+
+		# Send the appropraite notification event to each player.
+		every_player = {
+			# Player with capital in Iberia
+			if = {
+				limit = {
+					culture = culture:hispano_roman
+					any_sub_realm_county = {
+						culture = culture:hispano_roman
+						title_province = {
+							OR = {
+								geographical_region = world_europe_west_iberia
+							}
+						}
+					}
+				}
+				trigger_event = tfe_culture.0502
+			}
+			# Other players within diplo range
+			else = {
+				if = {
+					limit = {
+						is_ai = no
+						save_temporary_scope_as = player
+						any_in_list = {
+							list = hispano_roman_counties
+							holder = {
+								is_within_diplo_range = { CHARACTER = scope:player }
+							}
+						}
+					}
+					trigger_event = tfe_culture.0503
+				}
+			}
+		}
+	}
+}
+
+tfe_culture.0502 = {
+	type = character_event
+	title = tfe_culture.0502.t
+	desc = tfe_culture.0502.desc
+	theme = culture_change
+	left_portrait = root
+
+	immediate = {
+		# Determine what the player's target culture is (based off of religion and capital region)
+		if = {
+			limit = {
+				capital_province = {
+					geographical_region = custom_balearic
+				}
+			}
+			culture:balearic = { save_scope_as = my_new_culture }
+		}
+		else_if = {
+			limit = {
+				capital_province = {
+					geographical_region = custom_galecian
+				}
+			}
+			culture:galecian = { save_scope_as = my_new_culture }
+		}
+		else_if = {
+			limit = {
+				capital_province = {
+					geographical_region = custom_lusitanian
+				}
+			}
+			culture:lusitanian = { save_scope_as = my_new_culture }
+		}
+		else_if = {
+			limit = {
+				capital_province = {
+					geographical_region = custom_baetican
+				}
+			}
+			culture:baetican = { save_scope_as = my_new_culture }
+		}
+		else_if = {
+			limit = {
+				capital_province = {
+					geographical_region = world_europe_west_iberia
+				}
+			}
+			culture:iberian = { save_scope_as = my_new_culture }
+		}
+
+		culture = { save_scope_as = old_culture }
+	}
+
+	# Option 1 (Almost always the only option): Accept the culture conversion.
+	option = {
+		name = tfe_culture.0502.a
+		if = {
+			limit = {
+				capital_province = {
+					geographical_region = world_europe_west_iberia
+				}
+			}
+			convert_player_realm_from_old_culture_to_new_effect = {
+				OLD_CULTURE = culture:hispano_roman
+				NEW_CULTURE = scope:my_new_culture
+			}
+		}
+		else_if = { # Some of my realm is in Iberia but I am not
+			limit = {
+				any_sub_realm_county = {
+					OR = {
+						culture = culture:hispano_roman
+						county_has_specific_large_minority_culture_trigger = {
+							CULTURE = culture:hispano_roman
+						}
+						county_has_specific_small_minority_culture_trigger = {
+							CULTURE = culture:hispano_roman
+						}
+					}	
+					title_province = {
+						geographical_region = world_europe_west_iberia
+					}
+				}
+			}
+			every_county_in_region = {
+				region = world_europe_west_iberia
+				if = {
+					limit = {
+						title_province = { geographical_region = custom_balearic }
+						OR = {
+							culture = culture:hispano_roman
+							county_has_specific_large_minority_culture_trigger = {
+								CULTURE = culture:hispano_roman
+							}
+							county_has_specific_small_minority_culture_trigger = {
+								CULTURE = culture:hispano_roman
+							}
+						}	
+					}
+					if = {
+						limit = {
+							culture = culture:hispano_roman
+						}
+						set_county_culture = culture:balearic
+					}
+					if = {
+						limit = {
+							county_has_specific_large_minority_culture_trigger = {
+								CULTURE = culture:hispano_roman
+							}
+						}
+				
+						remove_list_variable = {
+							name = culture_minorities_large
+							target = culture:hispano_roman
+						}
+						add_culture_minority_effect = {
+							COUNTY = THIS
+							SIZE = large
+							CULTURE = culture:balearic
+						}
+					}
+					if = {
+						limit = {
+							county_has_specific_small_minority_culture_trigger = {
+								CULTURE = culture:hispano_roman
+							}
+						}
+						remove_list_variable = {
+							name = culture_minorities_small
+							target = culture:hispano_roman
+						}
+						add_culture_minority_effect = {
+							COUNTY = THIS
+							SIZE = small
+							CULTURE = culture:balearic
+						}
+					}
+					if = {
+						limit = {
+							holder = { capital_county = prev }
+						}
+						holder = { set_culture = culture:balearic }
+					}
+				}
+				else_if = {
+					limit = {
+						title_province = { geographical_region = custom_galecian }
+						OR = {
+							culture = culture:hispano_roman
+							county_has_specific_large_minority_culture_trigger = {
+								CULTURE = culture:hispano_roman
+							}
+							county_has_specific_small_minority_culture_trigger = {
+								CULTURE = culture:hispano_roman
+							}
+						}
+					}
+					if = {
+						limit = {
+							culture = culture:hispano_roman
+						}
+						set_county_culture = culture:galecian
+					}
+					if = {
+						limit = {
+							county_has_specific_large_minority_culture_trigger = {
+								CULTURE = culture:hispano_roman
+							}
+						}
+				
+						remove_list_variable = {
+							name = culture_minorities_large
+							target = culture:hispano_roman
+						}
+						add_culture_minority_effect = {
+							COUNTY = THIS
+							SIZE = large
+							CULTURE = culture:galecian
+						}
+					}
+					if = {
+						limit = {
+							county_has_specific_small_minority_culture_trigger = {
+								CULTURE = culture:hispano_roman
+							}
+						}
+						remove_list_variable = {
+							name = culture_minorities_small
+							target = culture:hispano_roman
+						}
+						add_culture_minority_effect = {
+							COUNTY = THIS
+							SIZE = small
+							CULTURE = culture:galecian
+						}
+					}
+					if = {
+						limit = {
+							holder = { capital_county = prev }
+						}
+						holder = { set_culture = culture:galecian }
+					}
+				}
+				else_if = {
+					limit = {
+						title_province = { geographical_region = custom_lusitanian }
+						OR = {
+							culture = culture:hispano_roman
+							county_has_specific_large_minority_culture_trigger = {
+								CULTURE = culture:hispano_roman
+							}
+							county_has_specific_small_minority_culture_trigger = {
+								CULTURE = culture:hispano_roman
+							}
+						}
+					}
+					if = {
+						limit = {
+							culture = culture:hispano_roman
+						}
+						set_county_culture = culture:lusitanian
+					}
+					if = {
+						limit = {
+							county_has_specific_large_minority_culture_trigger = {
+								CULTURE = culture:hispano_roman
+							}
+						}
+				
+						remove_list_variable = {
+							name = culture_minorities_large
+							target = culture:hispano_roman
+						}
+						add_culture_minority_effect = {
+							COUNTY = THIS
+							SIZE = large
+							CULTURE = culture:lusitanian
+						}
+					}
+					if = {
+						limit = {
+							county_has_specific_small_minority_culture_trigger = {
+								CULTURE = culture:hispano_roman
+							}
+						}
+						remove_list_variable = {
+							name = culture_minorities_small
+							target = culture:hispano_roman
+						}
+						add_culture_minority_effect = {
+							COUNTY = THIS
+							SIZE = small
+							CULTURE = culture:lusitanian
+						}
+					}
+					if = {
+						limit = {
+							holder = { capital_county = prev }
+						}
+						holder = { set_culture = culture:lusitanian }
+					}
+				}
+				else_if = {
+					limit = {
+						title_province = { geographical_region = custom_baetican }
+						OR = {
+							culture = culture:hispano_roman
+							county_has_specific_large_minority_culture_trigger = {
+								CULTURE = culture:hispano_roman
+							}
+							county_has_specific_small_minority_culture_trigger = {
+								CULTURE = culture:hispano_roman
+							}
+						}
+					}
+					if = {
+						limit = {
+							culture = culture:hispano_roman
+						}
+						set_county_culture = culture:baetican
+					}
+					if = {
+						limit = {
+							county_has_specific_large_minority_culture_trigger = {
+								CULTURE = culture:hispano_roman
+							}
+						}
+				
+						remove_list_variable = {
+							name = culture_minorities_large
+							target = culture:hispano_roman
+						}
+						add_culture_minority_effect = {
+							COUNTY = THIS
+							SIZE = large
+							CULTURE = culture:baetican
+						}
+					}
+					if = {
+						limit = {
+							county_has_specific_small_minority_culture_trigger = {
+								CULTURE = culture:hispano_roman
+							}
+						}
+						remove_list_variable = {
+							name = culture_minorities_small
+							target = culture:hispano_roman
+						}
+						add_culture_minority_effect = {
+							COUNTY = THIS
+							SIZE = small
+							CULTURE = culture:baetican
+						}
+					}
+					if = {
+						limit = {
+							holder = { capital_county = prev }
+						}
+						holder = { set_culture = culture:baetican }
+					}
+				}
+				else_if = {
+					limit = {
+						OR = {
+							culture = culture:hispano_roman
+							county_has_specific_large_minority_culture_trigger = {
+								CULTURE = culture:hispano_roman
+							}
+							county_has_specific_small_minority_culture_trigger = {
+								CULTURE = culture:hispano_roman
+							}
+						}
+					}
+					if = {
+						limit = {
+							culture = culture:hispano_roman
+						}
+						set_county_culture = culture:iberian
+					}
+					if = {
+						limit = {
+							county_has_specific_large_minority_culture_trigger = {
+								CULTURE = culture:hispano_roman
+							}
+						}
+				
+						remove_list_variable = {
+							name = culture_minorities_large
+							target = culture:hispano_roman
+						}
+						add_culture_minority_effect = {
+							COUNTY = THIS
+							SIZE = large
+							CULTURE = culture:iberian
+						}
+					}
+					if = {
+						limit = {
+							county_has_specific_small_minority_culture_trigger = {
+								CULTURE = culture:hispano_roman
+							}
+						}
+						remove_list_variable = {
+							name = culture_minorities_small
+							target = culture:hispano_roman
+						}
+						add_culture_minority_effect = {
+							COUNTY = THIS
+							SIZE = small
+							CULTURE = culture:iberian
+						}
+					}
+					if = {
+						limit = {
+							holder = { capital_county = prev }
+						}
+						holder = { set_culture = culture:iberian }
+					}
+				}
+			}
+		}
+	}
+
+	# Option 2: I am strong enough to keep our old culture intact!
+	option = {
+		name = tfe_culture.0502.b
+
+		trigger = {
+			custom_description = {
+				text = controls_enough_culture_counties
+				any_in_list = {
+					list = hispano_roman_counties
+					percent >= 0.8
+
+					OR = {
+						holder = root
+						holder = {
+							any_liege_or_above = {
+								this = root
+							}
+						}
+					}
+				}
+			}
+		}
+
+		show_as_unavailable = {
+			custom_description = {
+				text = controls_enough_culture_counties	
+				any_in_list = {
+					list = hispano_roman_counties
+					percent < 0.8
+
+					OR = {
+						holder = root
+						holder = {
+							any_liege_or_above = {
+								this = root
+							}
+						}
+					}
+				}
+			}
+		}
+
+		custom_tooltip = global_culture.custom.keep_culture
+	}
+}
+
+tfe_culture.0503 = {
+	type = character_event
+	title = tfe_culture.0503.t
+	desc = tfe_culture.0503.desc
+	theme = culture_change
+
+	option = {
+		name = tfe_culture.0503.a
+	}
+}
+
+# Gallo-Roman Split 051x
+tfe_culture.0511 = {
+	scope = none
+	hidden = yes
+
+	immediate = {
+		# Save scopes for player notification events.
+		culture:gallo_roman = { save_scope_as = gallo_roman }
+
+		culture:armorican = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:gallo_roman
+
+			# Save scope for player notification events.
+			save_scope_as = armorican
+		}
+
+		culture:helvetian = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:gallo_roman
+
+			# Save scope for player notification events.
+			save_scope_as = helvetian
+		}
+		
+		culture:aquitan = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:gallo_roman
+
+			# Save scope for player notification events.
+			save_scope_as = aquitan
+		}
+
+		culture:germanian = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:gallo_roman
+
+			# Save scope for player notification events.
+			save_scope_as = germanian
+		}
+
+		culture:gallian = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:gallo_roman
+
+			# Save scope for player notification events.
+			save_scope_as = gallian
+		}
+
+		# Add all gallo_roman counties to a list
+		every_county = {
+			limit = {
+				OR = {
+					culture = culture:gallo_roman
+					county_has_specific_large_minority_culture_trigger = {
+						CULTURE = culture:gallo_roman
+					}
+					county_has_specific_small_minority_culture_trigger = {
+						CULTURE = culture:gallo_roman
+					}
+				}		
+			}
+
+			add_to_list = gallo_roman_counties
+		}
+
+		# Convert the gallo_roman roman counties to the new culture.
+		every_in_list = {
+			list = gallo_roman_counties
+			limit = {
+				# Same-culture players get an event informing them of their county's conversion *before* it happens (for their provinces only).
+				NOT = {
+					holder = {
+						OR = {
+							AND = {
+								is_ai = no
+								culture = culture:gallo_roman
+							}
+							any_liege_or_above = {
+								is_ai = no
+								culture = culture:gallo_roman
+							}
+						}
+					}
+				}
+			}
+
+			# Armorican
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:gallo_roman
+				NEW_CULTURE = culture:armorican
+				REGION = custom_armorican
+			}
+
+			# Helvetian
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:gallo_roman
+				NEW_CULTURE = culture:helvetian
+				REGION = custom_helvetian
+			}
+
+			# Aquitan
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:gallo_roman
+				NEW_CULTURE = culture:aquitan
+				REGION = custom_aquitan
+			}
+
+			# Germanian
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:gallo_roman
+				NEW_CULTURE = culture:germanian
+				REGION = custom_germanian
+			}
+
+			# All remaining Gallo-Roman counties in Gaul become Gallian
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:gallo_roman
+				NEW_CULTURE = culture:gallian
+				REGION = custom_gallo_roman
+			}
+		}
+
+		# Send the appropraite notification event to each player.
+		every_player = {
+			# Player with capital in Gaul
+			if = {
+				limit = {
+					culture = culture:gallo_roman
+					any_sub_realm_county = {
+						culture = culture:gallo_roman
+						title_province = {
+							OR = {
+								geographical_region = custom_gallo_roman
+							}
+						}
+					}
+				}
+				trigger_event = tfe_culture.0512
+			}
+			# Other players within diplo range
+			else = {
+				if = {
+					limit = {
+						is_ai = no
+						save_temporary_scope_as = player
+						any_in_list = {
+							list = gallo_roman_counties
+							holder = {
+								is_within_diplo_range = { CHARACTER = scope:player }
+							}
+						}
+					}
+					trigger_event = tfe_culture.0513
+				}
+			}
+		}
+	}
+}
+
+tfe_culture.0512 = {
+	type = character_event
+	title = tfe_culture.0512.t
+	desc = tfe_culture.0512.desc
+	theme = culture_change
+	left_portrait = root
+
+	immediate = {
+		# Determine what the player's target culture is (based off of religion and capital region)
+		if = {
+			limit = {
+				capital_province = {
+					geographical_region = custom_armorican
+				}
+			}
+			culture:armorican = { save_scope_as = my_new_culture }
+		}
+		else_if = {
+			limit = {
+				capital_province = {
+					geographical_region = custom_helvetian
+				}
+			}
+			culture:helvetian = { save_scope_as = my_new_culture }
+		}
+		else_if = {
+			limit = {
+				capital_province = {
+					geographical_region = custom_aquitan
+				}
+			}
+			culture:aquitan = { save_scope_as = my_new_culture }
+		}
+		else_if = {
+			limit = {
+				capital_province = {
+					geographical_region = custom_germanian
+				}
+			}
+			culture:germanian = { save_scope_as = my_new_culture }
+		}
+		else_if = {
+			limit = {
+				capital_province = {
+					geographical_region = custom_gallo_roman
+				}
+			}
+			culture:gallian = { save_scope_as = my_new_culture }
+		}
+
+		culture = { save_scope_as = old_culture }
+	}
+
+	# Option 1 (Almost always the only option): Accept the culture conversion.
+	option = {
+		name = tfe_culture.0512.a
+		if = {
+			limit = {
+				capital_province = {
+					geographical_region = custom_gallo_roman
+				}
+			}
+			convert_player_realm_from_old_culture_to_new_effect = {
+				OLD_CULTURE = culture:gallo_roman
+				NEW_CULTURE = scope:my_new_culture
+			}
+		}
+		else_if = { # Some of my realm is in Gaul but I am not
+			limit = {
+				any_sub_realm_county = {
+					OR = {
+						culture = culture:gallo_roman
+						county_has_specific_large_minority_culture_trigger = {
+							CULTURE = culture:gallo_roman
+						}
+						county_has_specific_small_minority_culture_trigger = {
+							CULTURE = culture:gallo_roman
+						}
+					}		
+					title_province = {
+						geographical_region = custom_gallo_roman
+					}
+				}
+			}
+			every_county_in_region = {
+				region = custom_gallo_roman
+				if = {
+					limit = {
+						title_province = { geographical_region = custom_armorican }
+						OR = {
+							culture = culture:gallo_roman
+							county_has_specific_large_minority_culture_trigger = {
+								CULTURE = culture:gallo_roman
+							}
+							county_has_specific_small_minority_culture_trigger = {
+								CULTURE = culture:gallo_roman
+							}
+						}
+					}
+					if = {
+						limit = {
+							culture = culture:gallo_roman
+						}
+						set_county_culture = culture:armorican
+					}
+					if = {
+						limit = {
+							county_has_specific_large_minority_culture_trigger = {
+								CULTURE = culture:gallo_roman
+							}
+						}
+				
+						remove_list_variable = {
+							name = culture_minorities_large
+							target = culture:gallo_roman
+						}
+						add_culture_minority_effect = {
+							COUNTY = THIS
+							SIZE = large
+							CULTURE = culture:armorican
+						}
+					}
+					if = {
+						limit = {
+							county_has_specific_small_minority_culture_trigger = {
+								CULTURE = culture:gallo_roman
+							}
+						}
+						remove_list_variable = {
+							name = culture_minorities_small
+							target = culture:gallo_roman
+						}
+						add_culture_minority_effect = {
+							COUNTY = THIS
+							SIZE = small
+							CULTURE = culture:armorican
+						}
+					}
+					if = {
+						limit = {
+							holder = { capital_county = prev }
+						}
+						holder = { set_culture = culture:armorican }
+					}
+				}
+				else_if = {
+					limit = {
+						title_province = { geographical_region = custom_helvetian }
+						OR = {
+							culture = culture:gallo_roman
+							county_has_specific_large_minority_culture_trigger = {
+								CULTURE = culture:gallo_roman
+							}
+							county_has_specific_small_minority_culture_trigger = {
+								CULTURE = culture:gallo_roman
+							}
+						}
+					}
+					if = {
+						limit = {
+							culture = culture:gallo_roman
+						}
+						set_county_culture = culture:helvetian
+					}
+					if = {
+						limit = {
+							county_has_specific_large_minority_culture_trigger = {
+								CULTURE = culture:gallo_roman
+							}
+						}
+				
+						remove_list_variable = {
+							name = culture_minorities_large
+							target = culture:gallo_roman
+						}
+						add_culture_minority_effect = {
+							COUNTY = THIS
+							SIZE = large
+							CULTURE = culture:helvetian
+						}
+					}
+					if = {
+						limit = {
+							county_has_specific_small_minority_culture_trigger = {
+								CULTURE = culture:gallo_roman
+							}
+						}
+						remove_list_variable = {
+							name = culture_minorities_small
+							target = culture:gallo_roman
+						}
+						add_culture_minority_effect = {
+							COUNTY = THIS
+							SIZE = small
+							CULTURE = culture:helvetian
+						}
+					}
+					if = {
+						limit = {
+							holder = { capital_county = prev }
+						}
+						holder = { set_culture = culture:helvetian }
+					}
+				}
+				else_if = {
+					limit = {
+						title_province = { geographical_region = custom_aquitan }
+						OR = {
+							culture = culture:gallo_roman
+							county_has_specific_large_minority_culture_trigger = {
+								CULTURE = culture:gallo_roman
+							}
+							county_has_specific_small_minority_culture_trigger = {
+								CULTURE = culture:gallo_roman
+							}
+						}
+					}
+					if = {
+						limit = {
+							culture = culture:gallo_roman
+						}
+						set_county_culture = culture:aquitan
+					}
+					if = {
+						limit = {
+							county_has_specific_large_minority_culture_trigger = {
+								CULTURE = culture:gallo_roman
+							}
+						}
+				
+						remove_list_variable = {
+							name = culture_minorities_large
+							target = culture:gallo_roman
+						}
+						add_culture_minority_effect = {
+							COUNTY = THIS
+							SIZE = large
+							CULTURE = culture:aquitan
+						}
+					}
+					if = {
+						limit = {
+							county_has_specific_small_minority_culture_trigger = {
+								CULTURE = culture:gallo_roman
+							}
+						}
+						remove_list_variable = {
+							name = culture_minorities_small
+							target = culture:gallo_roman
+						}
+						add_culture_minority_effect = {
+							COUNTY = THIS
+							SIZE = small
+							CULTURE = culture:aquitan
+						}
+					}
+					if = {
+						limit = {
+							holder = { capital_county = prev }
+						}
+						holder = { set_culture = culture:aquitan }
+					}
+				}
+				else_if = {
+					limit = {
+						title_province = { geographical_region = custom_germanian }
+						OR = {
+							culture = culture:gallo_roman
+							county_has_specific_large_minority_culture_trigger = {
+								CULTURE = culture:gallo_roman
+							}
+							county_has_specific_small_minority_culture_trigger = {
+								CULTURE = culture:gallo_roman
+							}
+						}
+					}
+					if = {
+						limit = {
+							culture = culture:gallo_roman
+						}
+						set_county_culture = culture:germanian
+					}
+					if = {
+						limit = {
+							county_has_specific_large_minority_culture_trigger = {
+								CULTURE = culture:gallo_roman
+							}
+						}
+				
+						remove_list_variable = {
+							name = culture_minorities_large
+							target = culture:gallo_roman
+						}
+						add_culture_minority_effect = {
+							COUNTY = THIS
+							SIZE = large
+							CULTURE = culture:germanian
+						}
+					}
+					if = {
+						limit = {
+							county_has_specific_small_minority_culture_trigger = {
+								CULTURE = culture:gallo_roman
+							}
+						}
+						remove_list_variable = {
+							name = culture_minorities_small
+							target = culture:gallo_roman
+						}
+						add_culture_minority_effect = {
+							COUNTY = THIS
+							SIZE = small
+							CULTURE = culture:germanian
+						}
+					}
+					if = {
+						limit = {
+							holder = { capital_county = prev }
+						}
+						holder = { set_culture = culture:germanian }
+					}
+				}
+				else_if = {
+					limit = {
+						OR = {
+							culture = culture:gallo_roman
+							county_has_specific_large_minority_culture_trigger = {
+								CULTURE = culture:gallo_roman
+							}
+							county_has_specific_small_minority_culture_trigger = {
+								CULTURE = culture:gallo_roman
+							}
+						}
+					}
+					if = {
+						limit = {
+							culture = culture:gallo_roman
+						}
+						set_county_culture = culture:gallian
+					}
+					if = {
+						limit = {
+							county_has_specific_large_minority_culture_trigger = {
+								CULTURE = culture:gallo_roman
+							}
+						}
+				
+						remove_list_variable = {
+							name = culture_minorities_large
+							target = culture:gallo_roman
+						}
+						add_culture_minority_effect = {
+							COUNTY = THIS
+							SIZE = large
+							CULTURE = culture:gallian
+						}
+					}
+					if = {
+						limit = {
+							county_has_specific_small_minority_culture_trigger = {
+								CULTURE = culture:gallo_roman
+							}
+						}
+						remove_list_variable = {
+							name = culture_minorities_small
+							target = culture:gallo_roman
+						}
+						add_culture_minority_effect = {
+							COUNTY = THIS
+							SIZE = small
+							CULTURE = culture:gallian
+						}
+					}
+					if = {
+						limit = {
+							holder = { capital_county = prev }
+						}
+						holder = { set_culture = culture:gallian }
+					}
+				}
+			}
+		}
+	}
+
+	# Option 2: I am strong enough to keep our old culture intact!
+	option = {
+		name = tfe_culture.0512.b
+
+		trigger = {
+			custom_description = {
+				text = controls_enough_culture_counties
+				any_in_list = {
+					list = gallo_roman_counties
+					percent >= 0.8
+
+					OR = {
+						holder = root
+						holder = {
+							any_liege_or_above = {
+								this = root
+							}
+						}
+					}
+				}
+			}
+		}
+
+		show_as_unavailable = {
+			custom_description = {
+				text = controls_enough_culture_counties	
+				any_in_list = {
+					list = gallo_roman_counties
+					percent < 0.8
+
+					OR = {
+						holder = root
+						holder = {
+							any_liege_or_above = {
+								this = root
+							}
+						}
+					}
+				}
+			}
+		}
+
+		custom_tooltip = global_culture.custom.keep_culture
+	}
+}
+
+tfe_culture.0513 = {
+	type = character_event
+	title = tfe_culture.0513.t
+	desc = tfe_culture.0513.desc
+	theme = culture_change
+
+	option = {
+		name = tfe_culture.0513.a
+	}
+}
+
+# Britano-Roman Split 052x
+tfe_culture.0521 = {
+	scope = none
+	hidden = yes
+
+	immediate = {
+		# Save scopes for player notification events.
+		culture:britano_roman = { save_scope_as = britano_roman }
+
+		culture:britanian = {
+			# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:britano_roman
+
+			# Save scope for player notification events.
+			save_scope_as = britanian
+		}
+
+		# Add all gallo_roman counties to a list
+		every_county = {
+			limit = {
+				OR = {
+					culture = culture:britano_roman
+					county_has_specific_large_minority_culture_trigger = {
+						CULTURE = culture:britano_roman
+					}
+					county_has_specific_small_minority_culture_trigger = {
+						CULTURE = culture:britano_roman
+					}
+				}		
+			}
+
+			add_to_list = britano_roman_counties
+		}
+
+		# Convert the britano_roman roman counties to the new culture.
+		every_in_list = {
+			list = britano_roman_counties
+			limit = {
+				# Same-culture players get an event informing them of their county's conversion *before* it happens (for their provinces only).
+				NOT = {
+					holder = {
+						OR = {
+							AND = {
+								is_ai = no
+								culture = culture:britano_roman
+							}
+							any_liege_or_above = {
+								is_ai = no
+								culture = culture:britano_roman
+							}
+						}
+					}
+				}
+			}
+
+			# Britanian
+			convert_county_and_holder_if_in_region_effect = {
+				OLD_CULTURE = culture:britano_roman
+				NEW_CULTURE = culture:britanian
+				REGION = world_europe_west_britannia
+			}
+		}
+
+		# Send the appropraite notification event to each player.
+		every_player = {
+			# Player with capital in Gaul
+			if = {
+				limit = {
+					culture = culture:britano_roman
+					any_sub_realm_county = {
+						culture = culture:britano_roman
+						title_province = {
+							OR = {
+								geographical_region = world_europe_west_britannia
+							}
+						}
+					}
+				}
+				trigger_event = tfe_culture.0522
+			}
+			# Other players within diplo range
+			else = {
+				if = {
+					limit = {
+						is_ai = no
+						save_temporary_scope_as = player
+						any_in_list = {
+							list = britano_roman_counties
+							holder = {
+								is_within_diplo_range = { CHARACTER = scope:player }
+							}
+						}
+					}
+					trigger_event = tfe_culture.0523
+				}
+			}
+		}
+	}
+}
+
+tfe_culture.0522 = {
+	type = character_event
+	title = tfe_culture.0512.t
+	desc = tfe_culture.0512.desc
+	theme = culture_change
+	left_portrait = root
+
+	immediate = {
+		# Determine what the player's target culture is (based off of religion and capital region)
+		if = {
+			limit = {
+				capital_province = {
+					geographical_region = world_europe_west_britannia
+				}
+			}
+			culture:britanian = { save_scope_as = my_new_culture }
+		}
+
+		culture = { save_scope_as = old_culture }
+	}
+
+	# Option 1 (Almost always the only option): Accept the culture conversion.
+	option = {
+		name = tfe_culture.0522.a
+		if = {
+			limit = {
+				capital_province = {
+					geographical_region = world_europe_west_britannia
+				}
+			}
+			convert_player_realm_from_old_culture_to_new_effect = {
+				OLD_CULTURE = culture:britano_roman
+				NEW_CULTURE = scope:my_new_culture
+			}
+		}
+		else_if = { # Some of my realm is in Gaul but I am not
+			limit = {
+				any_sub_realm_county = {
+					OR = {
+						culture = culture:britano_roman
+						county_has_specific_large_minority_culture_trigger = {
+							CULTURE = culture:britano_roman
+						}
+						county_has_specific_small_minority_culture_trigger = {
+							CULTURE = culture:britano_roman
+						}
+					}
+					title_province = {
+						geographical_region = world_europe_west_britannia
+					}
+				}
+			}
+			every_county_in_region = {
+				region = world_europe_west_britannia
+				if = {
+					limit = {
+						title_province = { geographical_region = world_europe_west_britannia }
+						OR = {
+							culture = culture:britano_roman
+							county_has_specific_large_minority_culture_trigger = {
+								CULTURE = culture:britano_roman
+							}
+							county_has_specific_small_minority_culture_trigger = {
+								CULTURE = culture:britano_roman
+							}
+						}
+					}
+					if = {
+						limit = {
+							culture = culture:britano_roman
+						}
+						set_county_culture = culture:britanian
+					}
+					if = {
+						limit = {
+							county_has_specific_large_minority_culture_trigger = {
+								CULTURE = culture:britano_roman
+							}
+						}
+				
+						remove_list_variable = {
+							name = culture_minorities_large
+							target = culture:britano_roman
+						}
+						add_culture_minority_effect = {
+							COUNTY = THIS
+							SIZE = large
+							CULTURE = culture:britanian
+						}
+					}
+					if = {
+						limit = {
+							county_has_specific_small_minority_culture_trigger = {
+								CULTURE = culture:britano_roman
+							}
+						}
+						remove_list_variable = {
+							name = culture_minorities_small
+							target = culture:britano_roman
+						}
+						add_culture_minority_effect = {
+							COUNTY = THIS
+							SIZE = small
+							CULTURE = culture:britanian
+						}
+					}
+					if = {
+						limit = {
+							holder = { capital_county = prev }
+						}
+						holder = { set_culture = culture:britanian }
+					}
+				}
+			}
+		}
+	}
+
+	# Option 2: I am strong enough to keep our old culture intact!
+	option = {
+		name = tfe_culture.0522.b
+
+		trigger = {
+			custom_description = {
+				text = controls_enough_culture_counties
+				any_in_list = {
+					list = britano_roman_counties
+					percent >= 0.8
+
+					OR = {
+						holder = root
+						holder = {
+							any_liege_or_above = {
+								this = root
+							}
+						}
+					}
+				}
+			}
+		}
+
+		show_as_unavailable = {
+			custom_description = {
+				text = controls_enough_culture_counties	
+				any_in_list = {
+					list = britano_roman_counties
+					percent < 0.8
+
+					OR = {
+						holder = root
+						holder = {
+							any_liege_or_above = {
+								this = root
+							}
+						}
+					}
+				}
+			}
+		}
+
+		custom_tooltip = global_culture.custom.keep_culture
+	}
+}
+
+tfe_culture.0523 = {
+	type = character_event
+	title = tfe_culture.0513.t
+	desc = tfe_culture.0513.desc
+	theme = culture_change
+
+	option = {
+		name = tfe_culture.0513.a
+	}
+}
+
+tfe_culture.1002 = {
+	type = character_event
+	title = tfe_culture.1002.t
+	desc = tfe_culture.1002.desc
+	theme = culture_change
+	left_portrait = scope:visigothic_founder
+
+	immediate = {
+		show_as_tooltip = {
+			culture:visigothic = {
+				get_all_innovations_from = culture:gothic
+			}
+		}
+	}
+
+	option = {
+		name = tfe_culture.1002.a
+	}
+}
+
+# Roman -> Italian
+scripted_trigger valid_for_italian_culture_trigger = {
+	tier = tier_county
+	exists = holder
+	NOT = { exists = var:had_italian_county_conversion }
+	title_province = {
+		geographical_region = world_europe_south_italy
+	}
+	culture = culture:roman
+	holder.top_liege = {
+		is_greek_or_roman = no  # Top liege cannot be Roman
+	}
+}
+
+tfe_culture.3000 = {
+	type = character_event
+	title = tfe_culture.3000.t
+	desc = tfe_culture.3000.desc
+	theme = culture_change
+	left_portrait = root
+	trigger = {
+		current_date >= 555.1.1  # Cannot happen before the historical date of the Gothic Resurgence and the end of the Gothic Wars
+		top_liege = {
+			is_greek_or_roman = no  # Top liege must not be Roman
+		}
+		any_held_title = {
+			valid_for_italian_culture_trigger = yes
+		}
+	}
+
+	weight_multiplier = {
+		base = 1
+		modifier = {
+			add = 2
+			OR = {
+				this = character:996002  # Odoacer
+				this = character:992016  # Theodoric
+			}
+		}
+	}
+
+	immediate = {
+		random_held_title = {
+			limit = {
+				valid_for_italian_culture_trigger = yes
+			}
+			weight = {
+				base = 1
+				modifier = {
+					# Higher chance to convert next to already Italian counties
+					add = 4
+					any_neighboring_county = {
+						culture = culture:italian
+					}
+				}
+			}
+			save_scope_as = county_to_convert
+			culture = {
+				save_scope_as = old_culture
+			}
+			set_variable = {
+				name = had_italian_county_conversion
+			}
+		}
+		culture:italian = {
+			save_scope_as = italian
+		}
+	}
+
+	option = {
+		name = name_i_see
+		scope:county_to_convert = {
+			set_county_culture = culture:italian
+		}
+		if = {
+			limit = {
+				AND = {
+					capital_county = {
+						this = scope:county_to_convert
+					}
+					culture = {
+						has_cultural_pillar = heritage_latin
+					}
+				}
+			}
+			set_culture = culture:italian
+			every_close_or_extended_family_member = {
+				set_culture = culture:italian
+			}
+		}
+	}
+}
+
+# Suebic -> Suevi
+scripted_trigger valid_for_suevi_culture_trigger = {
+	tier = tier_county
+	exists = holder
+	NOT = { exists = var:suevi_county_conversion }
+	title_province = {
+		geographical_region = world_europe_west_iberia
+	}
+	AND = {
+		culture = culture:old_suebi
+		holder.culture = culture:old_suebi
+	}
+}
+
+tfe_culture.3010 = {
+	type = character_event
+	title = tfe_culture.3000.t
+	desc = tfe_culture.3000.desc
+	theme = culture_change
+	left_portrait = root
+	trigger = {
+		current_date >= 500.1.1
+		any_held_title = {
+			valid_for_suevi_culture_trigger = yes
+		}
+	}
+
+	weight_multiplier = {
+		base = 3
+	}
+
+	immediate = {
+		random_held_title = {
+			limit = {
+				valid_for_suevi_culture_trigger = yes
+			}
+			weight = {
+				base = 1
+				modifier = {
+					# Higher chance to convert next to already Italian counties
+					add = 4
+					any_neighboring_county = {
+						culture = culture:suebi
+					}
+				}
+			}
+			save_scope_as = county_to_convert
+			culture = {
+				save_scope_as = old_culture
+			}
+			set_variable = {
+				name = had_suevi_county_conversion
+			}
+		}
+		culture:suebi = {
+			save_scope_as = suevi
+		}
+	}
+
+	option = {
+		name = name_i_see
+		scope:county_to_convert = {
+			set_county_culture = culture:suebi
+		}
+		if = {
+			limit = {
+				capital_county = {
+					this = scope:county_to_convert
+				}
+			}
+			set_culture = culture:suebi
+			every_close_or_extended_family_member = {
+				set_culture = culture:suebi
+			}
+		}
+	}
+}
+
+tfe_culture.9900 = {
+	type = character_event
+	title = tfe_culture.9900.t
+	desc = tfe_culture.9900.desc
+	theme = culture_change
+	left_portrait = scope:soi
+
+	option = {
+		name = name_i_see
+	}
+}
+
+# Anglo-Saxons
+scripted_trigger valid_for_anglo_saxon_culture_trigger = {
+	tier = tier_county
+	exists = holder
+	NOT = { exists = var:anglo_saxon_county_conversion }
+	title_province = {
+		geographical_region = world_europe_west_britannia
+	}
+	NOT = { culture = holder.culture }
+	holder.culture = {
+		NOR = {
+			this = culture:anglo_saxon
+			any_parent_culture_or_above = {
+				this = culture:anglo_saxon
+			}
+		}
+		OR = {
+			this = culture:angle
+			this = culture:jute
+			this = culture:old_saxon
+			this = culture:frisa
+			any_parent_culture_or_above = {
+				OR = {
+					this = culture:angle
+					this = culture:jute
+					this = culture:old_saxon
+					this = culture:frisa
+				}
+			}
+		}
+	}
+}
+
+tfe_culture.3020 = {
+	type = character_event
+	title = tfe_culture.3020.t
+	desc = tfe_culture.3020.desc
+	theme = culture_change
+	left_portrait = root
+	trigger = {
+		AND = {
+			exists = struggle:britannia_struggle
+			any_held_title = {
+				valid_for_anglo_saxon_culture_trigger = yes
+			}
+		}
+		current_date >= 500.1.1
+	}
+
+	weight_multiplier = {
+		base = 1
+	}
+
+	immediate = {
+		# 'Diverge' this culture by copying innovations. Leave traditions as defined in the database.
+		if = {
+			limit = {
+				NOT = { has_global_variable = TFE_anglo_saxon_spawn }
+			}
+			culture:anglo_saxon = {
+				reset_culture_creation_date = yes
+				get_all_innovations_from = culture:angle
+				get_all_innovations_from = culture:old_saxon
+			}
+			set_global_variable = {
+				name = TFE_anglo_saxon_spawn
+				value = yes
+			}
+		}
+
+		random_held_title = {
+			limit = {
+				valid_for_anglo_saxon_culture_trigger = yes
+			}
+			weight = {
+				base = 1
+				modifier = {
+					add = 4
+					any_neighboring_county = {
+						culture = culture:anglo_saxon
+					}
+				}
+			}
+			save_scope_as = county_to_convert
+			culture = {
+				save_scope_as = old_culture
+			}
+			set_variable = {
+				name = had_anglo_saxon_county_conversion
+			}
+		}
+		culture:anglo_saxon = {
+			save_scope_as = anglo_saxon
+		}
+	}
+
+	option = {
+		name = name_i_see
+		scope:county_to_convert = {
+			set_county_culture = culture:anglo_saxon
+		}
+		if = {
+			limit = {
+				AND = {
+					capital_county = {
+						this = scope:county_to_convert
+					}
+					culture = {
+						OR = {
+							this = culture:angle
+							this = culture:jute
+							this = culture:old_saxon
+							this = culture:frisa
+							any_parent_culture_or_above = {
+								OR = {
+									this = culture:angle
+									this = culture:jute
+									this = culture:old_saxon
+									this = culture:frisa
+								}
+							}
+						}
+					}
+				}
+			}
+			set_culture = culture:anglo_saxon
+			every_close_or_extended_family_member = {
+				set_culture = culture:anglo_saxon
+			}
+		}
+	}
+}
+
+#########################################################################
+# Converting Jute, Saxon, Angle to Anglo-Saxon				 			#
+# by Petter Vilberg														#
+# tfe_culture_2000-1001												#
+#########################################################################
+################################
+# Anglo-Saxon Spreads in Eastern Britanny
+# by Juli
+################################
+scripted_trigger global_culture_1000_anglo_saxon_culture_can_form_trigger = {
+	
+	OR = {
+		any_county_in_region = { 
+			region = special_anglo_saxon_culture_region
+			culture = culture:anglo_saxon  
+			culture = holder.culture
+		}
+		AND = {
+			any_county_in_region = { 
+				region = special_anglo_saxon_culture_region
+				culture = culture:old_saxon
+				culture = holder.culture  
+			}
+			any_county_in_region = { 
+				region = special_anglo_saxon_culture_region
+				culture = culture:angle  
+				culture = holder.culture
+			}
+		}
+	}
+}
+
+scripted_trigger global_culture_1000_valid_for_anglo_saxon_culture_trigger = {
+	tier = tier_county
+	exists = holder
+	NOT = { exists = var:had_anglo_saxon_county_conversion }
+	title_province = {
+		geographical_region = special_anglo_saxon_culture_region
+	}
+	NOT = { culture = holder.culture }
+	culture = {
+		NOR = {
+			this = culture:anglo_saxon
+			any_parent_culture_or_above = {
+				this = culture:anglo_saxon
+			}
+		}
+		OR = {
+			culture = culture:angle
+			culture = culture:old_saxon
+			culture = culture:jute
+			culture = culture:frisa
+		}
+	}
+}
+
+tfe_culture.2000 = {
+	type = character_event
+	title = tfe_culture.2000.t
+	desc = tfe_culture.2000.desc
+	theme = culture_change
+	left_portrait = root
+	
+	trigger = {	
+		global_culture_1000_anglo_saxon_culture_can_form_trigger = yes
+		culture = {
+			NOT = { this = culture:anglo_saxon }
+			OR = {
+				this = culture:angle
+				this = culture:old_saxon
+				this = culture:jute
+				this = culture:frisa
+			}
+		}
+		any_held_title = {
+			global_culture_1000_valid_for_anglo_saxon_culture_trigger = yes
+		}	
+	}
+
+	weight_multiplier = {
+		base = 1
+		modifier = {
+			add = 2
+			OR = {
+				culture = culture:angle
+				culture = culture:old_saxon
+				culture = culture:jute
+				culture = culture:frisa
+			}
+		}
+	}
+
+	immediate = {
+		random_held_title = {
+			limit = {
+				global_culture_1000_valid_for_anglo_saxon_culture_trigger = yes
+			}
+			weight = { # Try to approximate organic spread
+				base = 1
+				modifier = {
+					add = 4
+					any_neighboring_county = {
+						culture = culture:anglo_saxon
+					}
+				}
+			}
+			save_scope_as = county_to_change
+			culture = {
+				save_scope_as = old_culture
+			}
+			set_variable = {
+				name = had_anglo_saxon_county_conversion
+				value = yes
+			}
+		}
+		culture:anglo_saxon = {
+			save_scope_as = anglo_saxon # For loc
+		}
+		debug_log = "Converted a province to anglo_saxon from tfe_culture.2000"
+	}
+
+	option = {
+		name = tfe_culture.2000.a
+		scope:county_to_change = {
+			set_county_culture = culture:anglo_saxon
+		}
+	}
+}
+
+
+################################
+# Organic Spread of Anglo-Saxon for Anglo-Saxon Rulers
+# by Juli
+################################
+scripted_trigger global_culture_1001_valid_for_anglo_saxon_culture_trigger = {
+	tier = tier_county
+	exists = holder
+	title_province = {
+		geographical_region = special_anglo_saxon_culture_region
+	}
+	NOT = { exists = var:had_anglo_saxon_county_conversion }
+	NOT = { culture = holder.culture } # No conversion for counties who match their holder's culture
+	holder.culture = {
+		NOR = {
+			this = culture:anglo_saxon
+			any_parent_culture_or_above = {
+				this = culture:anglo_saxon
+			}
+		}
+		OR = {
+			culture = culture:angle
+			culture = culture:old_saxon
+			culture = culture:jute
+			culture = culture:frisa
+			culture = culture:briton
+			culture = culture:britano_roman
+		}
+	}
+	any_neighboring_county = {
+		culture = culture:anglo_saxon
+	}
+}
+
+tfe_culture.2001 = {
+	type = character_event
+	title = tfe_culture.2000.t
+	desc = tfe_culture.2000.desc
+	theme = culture_change
+	left_portrait = root
+	
+	trigger = {
+		culture = culture:anglo_saxon
+		any_held_title = {
+			global_culture_1001_valid_for_anglo_saxon_culture_trigger = yes
+		}
+	}
+
+	immediate = {
+		random_held_title = {
+			limit = { global_culture_1001_valid_for_anglo_saxon_culture_trigger = yes }
+			save_scope_as = county_to_change
+			culture = {
+				save_scope_as = old_culture
+			}
+			set_variable = {
+				name = had_anglo_saxon_county_conversion
+				value = yes
+			}
+		}
+		culture:anglo_saxon = {
+			save_scope_as = anglo_saxon # For loc
+		}
+		debug_log = "Converted a province to anglo_saxon from tfe_culture.2001"
+	}
+
+	option = {
+		name = tfe_culture.2001.a
+		scope:county_to_change = {
+			set_county_culture = culture:anglo_saxon
+		}
+	}
+}
+
+tfe_culture.4000 = {
+	type = character_event
+	title = TFE_djeddar_decision.t
+	desc = TFE_djeddar_decision.desc
+	theme = faith
+	override_background = {
+		reference = temple
+	}
+
+	left_portrait = {
+		character = var:berber_ancestor_to_bury
+	}
+
+	immediate = {
+		add_piety = major_piety_value
+		if = {
+			limit = {
+				any_vassal = {
+					culture = {
+							has_cultural_pillar = heritage_berber
+					}
+						religion = religion:christianity_religion
+				}
+			}
+			every_vassal = {
+				limit = {
+					culture = {
+							has_cultural_pillar = heritage_berber
+					}
+						religion = religion:christianity_religion
+				}
+				custom = build_djeddar_vassals
+				add_opinion = {
+					modifier = pleased_opinion
+					target = root
+					opinion = 20
+				}
+			}
+		}
+	}
+
+	option = {
+		name = TFE_djeddar_decision.a
+	}
+
+	after = {
+		remove_variable = berber_ancestor_to_bury
+	}
+}
+
+## Add flag for djeddars
+tfe_culture.4001 = {
+	#hidden = yes
+	trigger = {
+		exists = player_heir
+		culture = {
+			has_cultural_pillar = heritage_berber
+		}
+	}
+
+	immediate = {
+		player_heir = {
+			if = {
+				limit = {
+					AND = {
+					religion = religion:christianity_religion
+					culture = {
+						has_cultural_pillar = heritage_berber
+					}
+					}
+				}
+				set_variable = {
+					name = berber_ancestor_to_bury
+					value = root
+					years = 5
+				}
+			}
+		}
+	}
+}

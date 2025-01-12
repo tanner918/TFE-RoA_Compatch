@@ -1,0 +1,1390 @@
+﻿spawn_radagaisus_character_effect = {
+	title:c_hewes.title_province = {
+		save_scope_as = radagaisus_birthplace
+	}
+
+	character:radagaisian_02 = {
+		# Make temporarily immune to disease
+		add_character_flag = {
+			flag = immune_to_disease
+			years = 15
+		}
+		save_scope_as = radagaisus
+
+		add_gold = 500
+		add_prestige = 2500
+		add_dread = high_dread
+		add_character_modifier = {
+			modifier = TFE_king_of_the_goths_modifier
+		}
+		create_the_gothic_kingdom_effect = yes
+	}
+
+	radagaisus_find_target_titles_effect = yes
+
+	every_player = {
+		if = {
+			limit = {
+				exists = title:e_western_roman_empire.holder
+				NOR = {
+					THIS = scope:radagaisus
+					THIS = title:e_western_roman_empire.holder
+				}
+			}
+			trigger_event = gothic_wars.0012
+		}
+		if = {
+			limit = {
+				exists = title:e_western_roman_empire.holder
+				THIS = title:e_western_roman_empire.holder
+			}
+			trigger_event = gothic_wars.0013
+		}
+	}
+}
+
+create_the_gothic_kingdom_effect = {
+	save_scope_as = gothic_king
+
+	#Create the title
+	create_title_and_vassal_change = {
+		type = created
+		save_scope_as = title_change
+		add_claim_on_loss = no
+	}
+	title:k_goths = {
+		change_title_holder = {
+			holder = scope:gothic_king
+			change = scope:title_change
+		}
+	}
+	resolve_title_and_vassal_change = scope:title_change
+
+	assert_if = {
+		limit = { NOT = { exists = title:k_goths } }
+		text = "Kingdom of the Goths title was not created!"
+	}
+
+	hidden_effect = { set_primary_title_to = title:k_goths }
+}
+
+spawn_gothic_troops_effect = {
+	if = {
+		limit = {
+			any_county_in_region = {
+				region = custom_carpathia
+			}
+		}
+		random_county_in_region = {
+			region = custom_carpathia
+			weight = {
+				modifier = {
+					add = {
+						value = development_level
+						multiply = 10
+					}
+				}
+			}
+			save_temporary_scope_as = selected_county
+			scope:radagaisus = {
+				set_variable = {
+					name = random_location
+					value = scope:selected_county.title_province
+				}
+			}
+		}
+	}
+	else = {
+		set_variable = {
+			name = random_location
+			value = title:c_hewes.title_province
+		}
+	}
+	spawn_army = {
+		uses_supply = no
+		inheritable = no
+		name = radagaisus_event_troops
+		levies = {
+			value = 2000
+		}
+		men_at_arms = {
+			type = light_footmen
+			stacks = 3
+		}
+		men_at_arms = {
+			type = light_horsemen
+			stacks = 2
+		}
+		location = scope:radagaisus.var:random_location
+	}
+	spawn_army = {
+		uses_supply = no
+		inheritable = no
+		name = radagaisus_event_troops
+		levies = {
+			value = 1500
+		}
+		men_at_arms = {
+			type = light_footmen
+			stacks = 3
+		}
+		men_at_arms = {
+			type = light_horsemen
+			stacks = 2
+		}
+		location = scope:radagaisus.var:random_location
+	}
+	spawn_army = {
+		uses_supply = no
+		inheritable = no
+		name = radagaisus_event_troops
+		levies = {
+			value = 2500
+		}
+		men_at_arms = {
+			type = light_footmen
+			stacks = 6
+		}
+		men_at_arms = {
+			type = light_horsemen
+			stacks = 4
+		}
+		location = scope:radagaisus.var:random_location
+	}
+	spawn_army = {
+		uses_supply = no
+		inheritable = no
+		name = radagaisus_event_troops
+		levies = {
+			value = 2500
+		}
+		men_at_arms = {
+			type = light_footmen
+			stacks = 6
+		}
+		men_at_arms = {
+			type = light_horsemen
+			stacks = 4
+		}
+		location = scope:radagaisus.var:random_location
+	}
+}
+
+spawn_smaller_gothic_troops_effect = {
+	spawn_army = {
+		uses_supply = no
+		inheritable = no
+		name = radagaisus_event_troops
+		levies = {
+			value = 1000
+		}
+		men_at_arms = {
+			type = light_footmen
+			stacks = 3
+		}
+		men_at_arms = {
+			type = light_horsemen
+			stacks = 2
+		}
+		location = capital_province
+	}
+	spawn_army = {
+		uses_supply = no
+		inheritable = no
+		name = radagaisus_event_troops
+		levies = {
+			value = 1000
+		}
+		men_at_arms = {
+			type = light_footmen
+			stacks = 3
+		}
+		men_at_arms = {
+			type = light_horsemen
+			stacks = 2
+		}
+		location = capital_province
+	}
+	spawn_army = {
+		uses_supply = no
+		inheritable = no
+		name = radagaisus_event_troops
+		levies = {
+			value = 1000
+		}
+		men_at_arms = {
+			type = light_footmen
+			stacks = 3
+		}
+		men_at_arms = {
+			type = light_horsemen
+			stacks = 2
+		}
+		location = capital_province
+	}
+	spawn_army = {
+		uses_supply = no
+		inheritable = no
+		name = radagaisus_event_troops
+		levies = {
+			value = 1000
+		}
+		men_at_arms = {
+			type = light_footmen
+			stacks = 3
+		}
+		men_at_arms = {
+			type = light_horsemen
+			stacks = 2
+		}
+		location = capital_province
+	}
+}
+
+radagaisus_find_target_titles_effect = {
+	if = {
+		limit = {
+			exists = title:k_italia_suburbicariae
+			exists = title:k_italia_annonariae
+			OR = {
+				title:k_italia_suburbicariae.holder.top_liege.primary_title = title:e_western_roman_empire
+				title:k_italia_suburbicariae.holder.top_liege.primary_title = title:e_roman_empire
+			}
+		}
+		title:k_italia_suburbicariae.holder.top_liege = {
+			save_scope_as = target_one
+		}
+	}
+	if = {
+		limit = {
+			exists = scope:target_one
+		}
+		radagaisus_declare_war_for_target_title_effect = yes
+	}
+}
+
+radagaisus_declare_war_for_target_title_effect = {
+	save_scope_as = war_leader
+	if = {
+		limit = { exists = scope:target_one }
+		scope:radagaisus = {
+			start_war = {
+				cb = radagaisus_invasion_cb
+				target = scope:target_one
+				target_title = title:k_italia_annonariae
+				target_title = title:k_italia_suburbicariae
+			}
+		}
+		scope:radagaisus = {
+			spawn_gothic_troops_effect = yes
+		}
+	}
+	else = {
+		debug_log = "Failed to find a valid war target for Radagaisus!"
+	}
+}
+
+goths_flee_effect = {
+	title:k_visigoths.holder = {
+		save_scope_as = visigothic_king
+	}
+
+	scope:visigothic_king = {
+		trigger_event = {
+			id = gothic_wars.0015
+			days = 1
+		}
+	}
+}
+
+lost_radagaisus_invasion_effect = {
+	if = {
+		limit = {
+			exists = title:k_goths.holder
+		}
+		title:k_goths.holder = {
+			if = { # Imprison them if they aren't imprisoned.
+				limit = {
+					is_imprisoned = no
+					character:900062 = {
+						is_alive = yes
+					}
+				}
+				
+				hard_imprison_character_effect = {
+					TARGET = this
+					IMPRISONER = character:900062
+				}
+				trigger_event = {
+					id = gothic_wars.0016
+					days = 7
+				}
+			}
+			else = {
+				limit = {
+					is_imprisoned = no
+				}
+				hard_imprison_character_effect = {
+					TARGET = this
+					IMPRISONER = scope:defender
+				}
+			}
+		}
+	}
+}
+
+hun_war_target_evaluation_and_declaration_effect = {
+	title:e_hunnic_empire.holder = {
+		save_scope_as = hun_emperor
+	}
+	# Select a new target
+	random_neighboring_top_liege_realm_owner = {
+		limit = {
+			NOT = { is_allied_to = scope:hun_emperor }
+			NOT = { this = scope:hun_emperor }
+			NOT = { top_liege = scope:hun_emperor }
+			NOT = { 
+				any_held_title = {
+					tier = tier_county
+					OR = {
+						kingdom = title:k_georgia
+						kingdom = title:k_adurbadagan
+					}
+				}
+			}
+			NOT = { is_at_war_with = scope:hun_emperor }
+			save_temporary_scope_as = truce_check
+			NOT = {
+				scope:hun_emperor = {
+					any_truce_target = {
+						this = scope:truce_check
+					}
+				}
+			}
+			OR = {
+				any_sub_realm_county = {
+					title_province = { geographical_region = ghw_region_crimea }
+				}
+				any_sub_realm_county = {
+					title_province = { geographical_region = custom_carpathia }
+				}
+				any_sub_realm_county = {
+					title_province = { geographical_region = custom_roman_illyricum }
+				}
+				any_sub_realm_county = {
+					title_province = { geographical_region = custom_hun_no_thrace }
+				}
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = hun_invasion_target_character_weight
+				always = yes
+			}
+			modifier = {
+				factor = {
+					value = 0
+					if = {
+						limit = {
+							OR = {
+								any_sub_realm_county = {
+									title_province = { geographical_region = ghw_region_crimea }
+								}
+								any_sub_realm_county = {
+									title_province = { geographical_region = custom_carpathia }
+								}
+								any_sub_realm_county = {
+									title_province = { geographical_region = custom_roman_illyricum }
+								}
+								any_sub_realm_county = {
+									title_province = { geographical_region = custom_hun_no_thrace }
+								}
+							}
+						}
+						add = {
+							value = 1
+						}
+					}
+				}
+			}
+		}
+		save_temporary_scope_as = next_invasion_target
+		if = {
+			limit = {
+				highest_held_title_tier = tier_empire
+			}
+			every_realm_county = {
+				limit = {
+					OR = {
+							title_province = { geographical_region = ghw_region_crimea }
+							title_province = { geographical_region = custom_carpathia }
+							title_province = { geographical_region = custom_roman_illyricum }
+							title_province = { geographical_region = custom_hun_no_thrace }
+					}
+				}
+				save_temporary_scope_as = county_target
+				scope:county_target.kingdom = {
+					save_temporary_scope_as = next_invasion_title_target
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				highest_held_title_tier = tier_kingdom
+				primary_title = {
+					is_titular = yes
+				}
+			}
+			capital_county.kingdom = {
+				save_temporary_scope_as = next_invasion_title_target
+			}
+		}
+		else_if = {
+			limit = {
+				highest_held_title_tier = tier_kingdom
+			}
+			primary_title = {
+				save_temporary_scope_as = next_invasion_title_target
+			}
+		}
+		else_if = {
+			limit = {
+				primary_title = {
+					is_titular = yes
+				}
+			}
+			capital_county.kingdom = {
+				save_temporary_scope_as = next_invasion_title_target
+			}
+		}
+		else = {
+			primary_title = {
+				save_temporary_scope_as = next_invasion_title_target
+			}
+		}
+	}
+	if = {
+		limit = {
+			exists = scope:next_invasion_target
+		}
+		if = {
+			limit = { # Declare war on every same-tier count or duke in same kingdom
+				scope:next_invasion_target = {
+					OR = {
+						highest_held_title_tier = tier_county
+						highest_held_title_tier = tier_duchy
+					}
+				}
+			}
+			scope:next_invasion_title_target = {
+				add_to_temporary_list = all_titles_to_declare_on
+				kingdom = {
+					every_in_de_jure_hierarchy = { # Find all other same-tier titles in same de jure empire
+						continue = {
+							tier > tier_county
+							# Stop searching if you hit the Mongol Emperor's territory at any point
+							trigger_if = {
+								limit = { exists = holder }
+								NOT = { holder = scope:hun_emperor }
+								NOT = { holder.top_liege = scope:hun_emperor }
+							}
+						}
+						limit = {
+							exists = this
+							OR = {
+								tier = tier_county
+								tier = tier_duchy
+							}
+							exists = holder
+							holder = {
+								is_independent_ruler = yes
+								NOT = { this = scope:hun_emperor }
+								NOT = { top_liege = scope:hun_emperor }
+								NOT = { is_at_war_with = scope:hun_emperor }
+								NOT = { is_allied_to = scope:hun_emperor }
+								save_temporary_scope_as = truce_check
+								NOT = {
+									scope:hun_emperor = {
+										any_truce_target = {
+											this = scope:truce_check
+										}
+									}
+								}
+							}
+						}
+						add_to_temporary_list = all_titles_to_declare_on
+					}
+				}
+			}
+			every_in_list = {
+				list = all_titles_to_declare_on
+				limit = {
+					holder = {
+						# An extra check to make sure we haven't snuck any Hun territory in
+						NOT = { this = scope:hun_emperor }
+						NOT = { top_liege = scope:hun_emperor }
+						NOT = { is_allied_to = scope:hun_emperor }
+
+						# Standard conditions
+						NOT = { is_at_war_with = scope:hun_emperor }
+						save_temporary_scope_as = truce_check
+					}
+					NOT = {
+						scope:hun_emperor = {
+							any_truce_target = {
+								this = scope:truce_check
+							}
+						}
+					}
+				}
+				save_temporary_scope_as = next_invasion_title_target
+				holder = {
+					save_scope_as = next_invasion_target
+					random_realm_county = {
+						limit = {
+							OR = {
+								title_province = { geographical_region = ghw_region_crimea }
+								title_province = { geographical_region = custom_carpathia }
+								title_province = { geographical_region = custom_roman_illyricum }
+								title_province = { geographical_region = custom_hun_no_thrace }
+							}
+						}
+						save_scope_as = next_invasion_target_raid
+					}
+				}
+				if = {
+					limit = {
+						scope:next_invasion_target = {
+							OR = {
+								has_title = title:e_roman_empire
+								has_title = title:e_western_roman_empire
+								has_title = title:e_byzantium
+							}
+						}
+					}
+					scope:hun_emperor = {
+						start_war = {
+							cb = grand_raid_cb
+							target = scope:next_invasion_target
+							target_title = scope:next_invasion_target_raid
+						}
+					}
+				}
+				else = {
+					scope:hun_emperor = {
+						start_war = {
+							cb = invasion_war_hun
+							target = scope:next_invasion_target
+							target_title = scope:next_invasion_title_target.kingdom
+						}
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				scope:next_invasion_target = {
+					NOT = { is_allied_to = scope:hun_emperor }
+				}
+			}
+			if = {
+				limit = {
+					scope:next_invasion_target = {
+						OR = {
+							has_title = title:e_roman_empire
+							has_title = title:e_western_roman_empire
+							has_title = title:e_byzantium
+						}
+					}
+				}
+				scope:next_invasion_target = {
+					random_realm_county = {
+						limit = {
+							OR = {
+								title_province = { geographical_region = ghw_region_crimea }
+								title_province = { geographical_region = custom_carpathia }
+								title_province = { geographical_region = custom_roman_illyricum }
+								title_province = { geographical_region = custom_hun_no_thrace }
+							}
+						}
+						save_scope_as = next_invasion_target_raid
+					}
+				}
+				scope:hun_emperor = {
+					start_war = {
+						cb = grand_raid_cb
+						target = scope:next_invasion_target
+						target_title = scope:next_invasion_target_raid
+					}
+				}
+			}
+			else = {
+				scope:hun_emperor = {
+					start_war = {
+						cb = invasion_war_hun
+						target = scope:next_invasion_target
+						target_title = scope:next_invasion_title_target.kingdom
+					}
+				}
+			}
+		}
+	}
+}
+
+slavic_migration_war_start = {
+	$TARGET_KINGDOM$ = {
+		random_in_de_jure_hierarchy = {
+			limit = {
+				AND = {
+					is_title_created = yes
+					tier >= tier_duchy
+					holder ?= {
+						NOT = {
+							culture = {
+								OR = {
+									has_cultural_pillar = heritage_slavic
+									has_cultural_pillar = heritage_west_slavic
+									has_cultural_pillar = heritage_south_slavic
+								}
+							}
+						}
+						
+					}
+					holder ?= {
+						is_at_war = no
+					}
+				}
+			}
+			holder = {
+				save_scope_as = slavic_defender
+			}
+		}
+		if = {
+			limit = {
+				scope:slavic_defender.primary_title.tier > tier_duchy
+			}
+			scope:slavic_defender.primary_title = {
+				random_in_de_facto_hierarchy = {
+					limit = {
+						tier = tier_duchy
+						is_titular = no
+					}
+					save_scope_as = slavic_defender_title
+				}
+			}
+		}
+		else = {
+			scope:slavic_defender.primary_title = {
+				save_scope_as = slavic_defender_title
+			}
+		}
+	}
+	$ATTACKING_KINGDOM$ = {
+		if = {
+			limit = {
+				any_in_de_jure_hierarchy = {
+					AND = {
+						is_title_created = yes
+						tier <= tier_duchy #so big kingdoms don't fight
+						holder ?= {
+							culture = {
+								OR = {
+									has_cultural_pillar = heritage_slavic
+									has_cultural_pillar = heritage_west_slavic
+									has_cultural_pillar = heritage_south_slavic
+								}
+							}
+							
+						}
+						holder ?= {
+							is_at_war = no
+						}
+						holder ?= {
+							is_ai = yes
+						}
+						holder ?= {
+							is_independent_ruler = yes #so you don't lose parts of your realm
+						}
+						holder ?= {
+							NOT = {
+								has_character_flag = migrated_already_slavic
+							}
+						}
+						holder ?= {
+							OR = {
+								highest_held_title_tier < tier_kingdom
+								primary_title = {
+									tier = tier_kingdom
+									is_titular = yes
+								}
+							}
+						}
+					}
+				}
+			}
+			random_in_de_jure_hierarchy = {
+				limit = {
+					AND = {
+						is_title_created = yes
+						tier <= tier_duchy #so big kingdoms don't fight
+						holder ?= {
+							culture = {
+								OR = {
+									has_cultural_pillar = heritage_slavic
+									has_cultural_pillar = heritage_west_slavic
+									has_cultural_pillar = heritage_south_slavic
+								}
+							}
+							
+						}
+						holder ?= {
+							is_at_war = no
+						}
+						holder ?= {
+							is_ai = yes
+						}
+						holder ?= {
+							is_independent_ruler = yes #so you don't lose parts of your realm
+						}
+						holder ?= {
+							NOT = {
+								has_character_flag = migrated_already_slavic
+							}
+						}
+						holder ?= {
+							OR = {
+								highest_held_title_tier < tier_kingdom
+								primary_title = {
+									tier = tier_kingdom
+									is_titular = yes
+								}
+							}
+						}
+					}
+				}
+				holder = {
+					save_scope_as = slavic_attacker
+					add_character_flag = migrated_already_slavic
+				}
+			}
+		}
+		else = {
+			random_in_de_jure_hierarchy = {
+				limit = {
+					AND = {
+						is_title_created = yes
+						tier = tier_county
+						culture ?= {
+							OR = {
+								has_cultural_pillar = heritage_slavic
+								has_cultural_pillar = heritage_west_slavic
+								has_cultural_pillar = heritage_south_slavic
+							}
+						}
+					}
+				}
+				create_character = {
+					location = $ATTACKING_KINGDOM$.title_capital_county.title_province
+					gender = male
+					age = {20 35}
+					faith = THIS.faith
+					culture = THIS.culture
+					random_traits_list = {
+						education_martial_2 = {
+							weight = { base = 30 }
+						}
+						education_martial_3 = {
+							weight = { base = 20 }
+						}
+						education_martial_4 = {
+							weight = { base = 10}
+						}
+					}
+					diplomacy = { min_template_low_skill max_template_decent_skill }
+					martial = { min_template_decent_skill max_template_high_skill }
+					stewardship = { min_template_low_skill max_template_decent_skill }
+					intrigue = { min_template_low_skill max_template_decent_skill }
+					learning = { min_template_low_skill max_template_decent_skill }
+					prowess = { min_template_decent_skill max_template_high_skill }
+					save_scope_as = slavic_attacker
+				}
+				create_dynamic_title = {
+					tier = duchy
+					name = {
+						first_valid = {
+							triggered_desc = {
+								trigger = {
+									scope:slavic_attacker.faith = { has_doctrine = doctrine_gender_male_dominated }
+								}
+								desc = VIKING_ARMY_MEN_NAME
+							}
+							triggered_desc = {
+								trigger = {
+									scope:slavic_attacker.faith = { has_doctrine = doctrine_gender_female_dominated }
+								}
+								desc = VIKING_ARMY_WOMEN_NAME
+							}
+							triggered_desc = {
+								trigger = {
+									scope:slavic_attacker.faith = { has_doctrine = doctrine_gender_equal }
+								}
+								desc = VIKING_ARMY_NEUTRAL_NAME
+							}
+							#Fallback, just in case.
+							desc = VIKING_ARMY_NEUTRAL_NAME
+						}
+					}
+				}
+				create_title_and_vassal_change = {
+					type = created
+					save_scope_as = change
+					add_claim_on_loss = no
+				}
+				scope:new_title = {
+					set_capital_county = scope:slavic_defender.capital_county
+					set_landless_title = yes
+					set_destroy_on_gain_same_tier = yes
+					set_no_automatic_claims = yes
+					set_can_be_named_after_dynasty = no
+					change_title_holder = {
+						holder = scope:slavic_attacker
+						change = scope:change
+					}
+				}
+				resolve_title_and_vassal_change = scope:change
+				scope:new_title = {
+					generate_coa = yes
+					set_variable = {
+						name = temporary_title
+						value = yes
+					}
+				}
+			}
+		}
+	}
+	scope:slavic_attacker = {
+		start_war = {
+			casus_belli = tfe_slavic_migration
+			target = scope:slavic_defender
+			target_title = scope:slavic_defender_title
+		}
+	}
+}
+
+launch_hunnic_migration_scripted_effect = {
+	$INVADER$ = {
+		if = {
+			limit = {
+				title:k_pontic_steppe = { is_title_created = no }
+			}
+			create_title_and_vassal_change = {
+				type = created
+				save_scope_as = change
+				add_claim_on_loss = no
+			}
+			title:k_pontic_steppe = {
+				change_title_holder = {
+					holder = $INVADER$
+					change = scope:change
+				}
+			}
+			resolve_title_and_vassal_change = scope:change
+		}
+		else = {
+			create_title_and_vassal_change = {
+				type = usurped
+				save_scope_as = change
+				add_claim_on_loss = yes
+			}
+			title:k_pontic_steppe = {
+				change_title_holder = {
+					holder = $INVADER$
+					change = scope:change
+				}
+			}
+			resolve_title_and_vassal_change = scope:change
+		}
+
+		title:k_pontic_steppe = {
+			set_title_name = k_pontic_steppe
+		}
+
+		if = {
+			limit = {
+				has_title = title:k_pontic_steppe
+				any_held_title = {
+					tier >= tier_kingdom
+					count >= 2
+				}
+			}
+			every_held_title = {
+				limit = {
+					tier >= tier_kingdom
+					NOR = {
+						this = title:k_pontic_steppe
+						this = title:e_hunnic_empire
+					}
+				}
+				save_temporary_scope_as = excess_kingdom
+				$INVADER$ = { destroy_title = scope:excess_kingdom }
+			}
+		}
+
+		every_sub_realm_county = {
+			limit = {
+				title_capital_county.title_province = { geographical_region = ghw_region_crimea }
+				NOT = { culture = culture:hun }
+				NOR = {
+					NOT = { duchy = title:d_levedia }
+					holder = {
+						AND = {
+							is_ai = no
+							has_culture = prev.culture
+						}
+					}
+				}
+			}
+			set_county_culture = culture:hun
+			set_county_faith = $INVADER$.faith
+		}
+
+
+		#All territory outside Crimea is given to new holders and/or made independent.
+		hidden_effect = {
+			#Replace all Hun territories outside of Crimea
+			every_sub_realm_county = {
+				limit = {
+					NOT = {
+						title_capital_county.title_province = { geographical_region = ghw_region_crimea }
+					}
+					culture = culture:hun
+				}
+				set_county_culture = culture:thyssagataen
+			}
+			every_sub_realm_county = {
+				limit = {
+					NOT = {
+						title_capital_county.title_province = { geographical_region = ghw_region_crimea }
+					}
+					culture = culture:thyssagataen
+					faith = faith:tengri_pagan
+				}
+				set_county_faith = faith:scythian_pagan
+			}
+			#All direct vassal non-Huns are given their independence, unless they hold land within Crimea.
+			every_vassal = {
+				limit = {
+					NOT = { culture = culture:hun }
+					highest_held_title_tier >= tier_county
+					any_held_title = {
+						count = all
+						NOT = {
+							title_capital_county.title_province = { geographical_region = ghw_region_crimea }
+						}
+					}
+				}
+				create_title_and_vassal_change = {
+					type = independency
+					save_scope_as = change
+					add_claim_on_loss = no
+				}
+				becomes_independent = { change = scope:change }
+				resolve_title_and_vassal_change = scope:change
+			}
+			#... And catch the stragglers. Has to be a separate effect block, or we'll ruin the de facto structure.
+			every_vassal_or_below = {
+				limit = {
+					NOT = { culture = culture:hun }
+					highest_held_title_tier >= tier_county
+					any_held_title = {
+						count = all
+						NOT = {
+							title_capital_county.title_province = { geographical_region = ghw_region_crimea }
+						}
+					}
+				}
+				create_title_and_vassal_change = {
+					type = independency
+					save_scope_as = change
+					add_claim_on_loss = no
+				}
+				becomes_independent = { change = scope:change }
+				resolve_title_and_vassal_change = scope:change
+			}
+			#Reserve a duchy, preferring the capital, for $INVADER$.
+			if = {
+				limit = { title:k_pontic_steppe.title_capital_county.duchy.holder = $INVADER$ }
+				title:k_pontic_steppe.title_capital_county.duchy = { save_scope_as = reserved_title }
+			}
+			#... Of course, if we can't have the capital for some reason, grab any random duchy in Crimea.
+			else = {
+				random_held_title = {
+					limit = {
+						title_capital_county.title_province = { geographical_region = ghw_region_crimea }
+						tier = tier_duchy
+						NOT = { this = title:d_crimea }
+					}
+					limit = {
+						title_capital_county.title_province = { geographical_region = ghw_region_crimea }
+						tier = tier_duchy
+					}
+					#If we have no possible duchy, make sure to reserve at least *one* county within Crimea.
+					alternative_limit = {
+						title_capital_county.title_province = { geographical_region = ghw_region_crimea }
+					}
+					save_scope_as = reserved_title
+				}
+			}
+			#Find all Hun vassals outside of Crimea.
+			every_vassal_or_below = {
+				limit = {
+					culture = culture:hun
+					highest_held_title_tier >= tier_county
+				}
+				add_to_list = hun_vassals_list
+			}
+			#Find all Crimean titles held by $INVADER$ that aren't reserved.
+			every_held_title = {
+				limit = {
+					title_capital_county.title_province = { geographical_region = ghw_region_crimea }
+					#Technically we could use any_this_title_or_de_jure_above for the following two checks, but it was being problematic and this does the same thing (just more cumbersomely).
+					OR = {
+						tier = tier_county
+						tier = tier_duchy
+					}
+					NOT = { this = scope:reserved_title }
+				}
+				add_to_list = spare_crimean_titles_list
+			}
+			#Attempt to give out Crimean holdings to the vassals who are about to lose land, prioritising players by tier, then NPCs by tier.
+			##Now, process duchy title assignment.
+			every_in_list = {
+				list = hun_vassals_list
+				#Players first.
+				limit = {
+					is_ai = no
+					launch_hun_migration_ducal_processing_trigger = yes
+				}
+				#NPCs after that.
+				alternative_limit = {
+					is_ai = yes
+					launch_hun_migration_ducal_processing_trigger = yes
+				}
+				#Grab the appropriate vassal.
+				save_temporary_scope_as = receiving_vassal
+				#If $INVADER$ has a suitable spare ducal title, hand it over.
+				if = {
+					limit = {
+						any_in_list = {
+							list = spare_crimean_titles_list
+							tier = tier_duchy
+							holder = $INVADER$
+						}
+					}
+					#Save the suitable title.
+					random_in_list = {
+						list = spare_crimean_titles_list
+						limit = {
+							tier = tier_duchy
+							holder = $INVADER$
+						}
+						every_in_de_jure_hierarchy = {
+							limit = {
+								holder = $INVADER$
+								tier >= tier_county
+							}
+							add_to_list = multiple_donated_titles
+						}
+					}
+					#Hand it to the receiving vassal.
+					create_title_and_vassal_change = {
+						type = granted
+						save_scope_as = change
+						add_claim_on_loss = no
+					}
+					every_in_list = {
+						list = multiple_donated_titles
+						save_temporary_scope_as = donated_title
+						scope:donated_title = {
+							change_title_holder = {
+								holder = scope:receiving_vassal
+								change = scope:change
+							}
+						}
+						remove_from_list = multiple_donated_titles
+					}
+					resolve_title_and_vassal_change = scope:change
+				}
+			}
+			##Finally, process county title assignment.
+			###First, attempt to pair de facto sub-vassals to their lieges.
+			every_in_list = {
+				list = hun_vassals_list
+				#Players first.
+				limit = {
+					is_ai = no
+					launch_hun_migration_count_processing_trigger = yes
+				}
+				#NPCs after that.
+				alternative_limit = {
+					is_ai = yes
+					launch_hun_migration_count_processing_trigger = yes
+				}
+				#Grab the appropriate vassal.
+				save_temporary_scope_as = receiving_vassal
+				#If $INVADER$ has a suitable spare county title, hand it over.
+				if = {
+					#Try to pair vassals with their lieges first.
+					limit = {
+						#Direct vassals shouldn't bother to try pairing.
+						NOT = { liege = $INVADER$ }
+						any_in_list = {
+							list = spare_hun_titles_list
+							launch_hun_migration_sub_vassal_liege_pairing_trigger = yes
+						}
+					}
+					#Save the suitable title.
+					random_in_list = {
+						list = spare_hun_titles_list
+						limit = {
+							#Direct vassals shouldn't bother to try pairing.
+							NOT = { scope:receiving_vassal.liege = $INVADER$ }
+							#Run the stock trigger.
+							launch_hun_migration_sub_vassal_liege_pairing_trigger = yes
+							#Don't give away the new liege's primary title's capital county.
+							NOT = {	this = holder.primary_title.title_capital_county }
+						}
+						save_temporary_scope_as = donated_title
+					}
+					#Hand it to the receiving vassal.
+					create_title_and_vassal_change = {
+						type = granted
+						save_scope_as = change
+						add_claim_on_loss = no
+					}
+					scope:donated_title = {
+						change_title_holder = {
+							holder = scope:receiving_vassal
+							change = scope:change
+						}
+					}
+					resolve_title_and_vassal_change = scope:change
+				}
+			}
+			###Then, filter through any remaining direct vassals.
+			every_in_list = {
+				list = hun_vassals_list
+				#Players first.
+				limit = {
+					is_ai = no
+					launch_hun_migration_count_processing_trigger = yes
+				}
+				#NPCs after that.
+				alternative_limit = {
+					is_ai = yes
+					launch_hun_migration_count_processing_trigger = yes
+				}
+				#Grab the appropriate vassal.
+				save_temporary_scope_as = receiving_vassal
+				#If $INVADER$ has a suitable spare county title, hand it over.
+				if = {
+					#Otherwise, grab any spare valid title that $INVADER$ has lying around.
+					limit = {
+						any_in_list = {
+							list = spare_crimean_titles_list
+							launch_hun_migration_direct_vassal_requirements_trigger = { INVADER = $INVADER$ }
+						}
+					}
+					#Save the suitable title.
+					random_in_list = {
+						list = spare_crimean_titles_list
+						limit = {
+							launch_hun_migration_direct_vassal_requirements_trigger = { INVADER = $INVADER$ }
+						}
+						save_temporary_scope_as = donated_title
+					}
+					#Hand it to the receiving vassal.
+					create_title_and_vassal_change = {
+						type = granted
+						save_scope_as = change
+						add_claim_on_loss = no
+					}
+					scope:donated_title = {
+						change_title_holder = {
+							holder = scope:receiving_vassal
+							change = scope:change
+						}
+					}
+					resolve_title_and_vassal_change = scope:change
+				}
+			}
+			##Clean-up: any landless characters should move to $INVADER$'s court.
+			every_in_list = {
+				list = hun_vassals_list
+				limit = { is_ruler = no}
+				save_temporary_scope_as = landless_hun_vassal
+				$INVADER$ = { add_courtier = scope:landless_hun_vassal }
+			}
+			#Sum all remaining territory outside of Crimea & give that territory to created local characters.
+			##Start by trying to group duchies.
+			every_sub_realm_title = {
+				#First we try to make duchy power blocks.
+				if = {
+					#Grab duchies outside of Crimea.
+					limit = {
+						NOT = {
+							title_capital_county.title_province = { geographical_region = ghw_region_crimea }
+						}
+						tier = tier_duchy
+					}
+					save_temporary_scope_as = seceding_duchy
+					#Now grab the duchy & any sub-realm counties beneath it outside of Pannonia, and filter them to a list for processing.
+					scope:seceding_duchy = {
+						every_in_de_jure_hierarchy = {
+							limit = {
+								tier >= tier_county
+								OR = {
+									holder = $INVADER$
+									holder = {
+										any_liege_or_above = { this = $INVADER$ }
+									}
+								}
+							}
+							add_to_temporary_list = seceding_duchy_list
+						}
+					}
+					#Create a local peasant warlord for the duchy & counties.
+					create_character = {
+						location = scope:seceding_duchy.title_capital_county.title_province
+						template = post_migration_local_warlord_template
+						save_scope_as = local_warlord
+					}
+					#Assign the seceding titles to the new peasant warlord.
+					create_title_and_vassal_change = {
+						type = usurped
+						save_scope_as = change
+						add_claim_on_loss = no
+					}
+					every_in_list = {
+						list = seceding_duchy_list
+						limit = {
+							NAND = {
+								tier = tier_county
+								title_province = { geographical_region = ghw_region_crimea }
+							}
+						}
+						change_title_holder = {
+							holder = scope:local_warlord
+							change = scope:change
+							take_baronies = yes
+						}
+						remove_from_list = seceding_duchy_list
+					}
+					resolve_title_and_vassal_change = scope:change
+					#And give the warlord their independence.
+					create_title_and_vassal_change = {
+						type = independency
+						save_scope_as = change
+						add_claim_on_loss = no
+					}
+					scope:local_warlord = {
+						becomes_independent = { change = scope:change }
+					}
+					resolve_title_and_vassal_change = scope:change
+					#If any vassals within Crimea have gotten mixed up, shunt them back to $INVADER$, and try to find a suitable duke.
+					##Start off by assembling a suitable list of affected vassals (should only ever be the one, but you never know).
+					scope:local_warlord = {
+						every_vassal = {
+							limit = {
+								#We're only interested in counts...
+								highest_held_title_tier = tier_county
+								#... Within Crimea.
+								any_held_title = { launch_hun_migration_county_is_within_custom_crimea_trigger = yes }
+							}
+							add_to_list = vassals_to_shunt
+						}
+					}
+					##Sort through the list, see who should be the new liege of the misplaced vassals.
+					every_in_list = {
+						list = vassals_to_shunt
+						#First off, check if there's a valid duke to hand 'em over to.
+						if = {
+							limit = {
+								any_held_title = {
+									launch_hun_migration_misplaced_count_suitable_liege_trigger = { INVADER = $INVADER$ }
+								}
+							}
+							#If there is, we make a note of them for liege determination.
+							random_held_title = {
+								limit = {
+									launch_hun_migration_misplaced_count_suitable_liege_trigger = { INVADER = $INVADER$ }
+								}
+								duchy.holder = { save_scope_as = appropriate_liege }
+							}
+						}
+						#Otherwise, we just grab $INVADER$ as a solid fallback.
+						else = {
+							$INVADER$ = { save_scope_as = appropriate_liege }
+						}
+						#Reassign the errant vassal back to their rightful Pannonian realm.
+						create_title_and_vassal_change = {
+							type = conquest
+							save_scope_as = change
+							add_claim_on_loss = no
+						}
+						change_liege = {
+							liege = scope:appropriate_liege
+							change = scope:change
+						}
+						resolve_title_and_vassal_change = scope:change
+					}
+				}
+			}
+			##... Then we catch the straggler counties.
+			every_sub_realm_title = {
+				#First we try to make duchy power blocks.
+				if = {
+					#Grab duchies outside of Crimea.
+					limit = {
+						NOT = {
+							title_capital_county.title_province = { geographical_region = ghw_region_crimea }
+						}
+						tier = tier_county
+					}
+					save_temporary_scope_as = seceding_county
+					#Create a local peasant warlord for the county.
+					create_character = {
+						location = scope:seceding_county.title_province
+						template = post_migration_minor_warlord_template
+						save_scope_as = minor_warlord
+					}
+					#Assign the seceding title to the new peasant warlord.
+					create_title_and_vassal_change = {
+						type = usurped
+						save_scope_as = change
+						add_claim_on_loss = no
+					}
+					scope:seceding_county = {
+						change_title_holder = {
+							holder = scope:minor_warlord
+							change = scope:change
+							take_baronies = yes
+						}
+					}
+					resolve_title_and_vassal_change = scope:change
+					#And give the warlord their independence.
+					create_title_and_vassal_change = {
+						type = independency
+						save_scope_as = change
+						add_claim_on_loss = no
+					}
+					scope:minor_warlord = {
+						becomes_independent = { change = scope:change }
+					}
+					resolve_title_and_vassal_change = scope:change
+				}
+			}
+		}
+	}
+}

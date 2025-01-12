@@ -1,0 +1,9 @@
+﻿l_english:
+ proxy_war_interaction:0 "Arrange Proxy War"
+ proxy_war_interaction_desc:0 "You will offer [secondary_actor.GetShortUINameNoTooltip] to declare a [proxy_war|E] on a ruler for a neighboring county in return for troops and [gold|E]"
+ PROXY_WAR_DEFENDER:0 "Defender"
+ PROXY_WAR_INFO:0 "You will offer [CharacterInteractionConfirmationWindow.GetSecondaryActor.GetName] to declare a [proxy_war|E] on [CharacterInteractionConfirmationWindow.GetRecipient.GetName] for a neighboring county in return for troops and [CharacterInteractionConfirmationWindow.GetRecipient.MakeScope.ScriptValue('proxy_war_price')|0] [gold|E]"
+ PROXY_WAR_PROMPT:0 "#P You will offer [CharacterInteractionConfirmationWindow.GetSecondaryActor.GetName] to declare a [proxy_war|E] on.....#!"
+ actor_secondary_proxy_war_interaction:0 "Attacker"
+ proxy_war_send:0 "Arrange Proxy War"
+ declined_proxy_war:0 "Declined proxy war call"

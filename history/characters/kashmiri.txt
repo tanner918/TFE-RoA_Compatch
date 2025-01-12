@@ -1,0 +1,199 @@
+﻿#Shagari Dynasty (Skardu) - historical dynasty/fictional characters
+304662 = {
+	name="Charanpal"
+	dynasty=2003034 # Shagari
+	religion="lamaism"
+	culture="kashmiri" #Dardic
+	740.1.1={
+		birth=yes
+	}
+	800.1.1={
+		death=yes
+	}
+}
+
+304663 = {
+	name="Narain"
+	dynasty=2003034 # Shagari
+	religion="lamaism"
+	culture="kashmiri" #Dardic
+	father=304662
+	760.1.1={
+		birth=yes
+	}
+	820.1.1={
+		death=yes
+	}
+}
+
+#Astore Dynasty - fictional placeholders
+304691 = {
+	name="Damodara"
+	dynasty=2003037 # Astore
+	religion="lamaism"
+	culture="kashmiri" #Dardic
+	740.1.1={
+		birth=yes
+	}
+	800.1.1={
+		death=yes
+	}
+}
+
+304692 = {
+	name="Ramadeva"
+	dynasty=2003037 # Astore
+	religion="lamaism"
+	culture="kashmiri" #Dardic
+	father=304691
+	760.1.1={
+		birth=yes
+	}
+	820.1.1={
+		death=yes
+	}
+}
+
+#Khapula Dynasty - fictional placeholders
+304721 = {
+	name="Laksmandadeva"
+	dynasty=2003038 # Khapula
+	religion="lamaism"
+	culture="kashmiri" #Dardic
+	740.1.1={
+		birth=yes
+	}
+	800.1.1={
+		death=yes
+	}
+}
+
+304722 = {
+	name="Purushottam"
+	dynasty=2003038 # Khapula
+	religion="lamaism"
+	culture="kashmiri" #Dardic
+	father=304721
+	760.1.1={
+		birth=yes
+	}
+	820.1.1={
+		death=yes
+	}
+}
+
+### Gonandas
+gonanda_01 = {
+	name = "Pravarasena"
+	dynasty = gonanda_dyansty
+	culture = "kashmiri"
+	religion = "shaivism"
+	trait = brahmin
+	298.1.1 = {
+		birth = yes
+	}
+	347.1.1 = {
+		death = yes
+	}
+}
+gonanda_02 = {
+	name = "Hiranya"
+	dynasty = gonanda_dyansty
+	culture = "kashmiri"
+	religion = "shaivism"
+	trait = brahmin
+	father = gonanda_01
+	325.1.1 = {
+		birth = yes
+	}
+	381.1.1 = {
+		death = yes
+	}
+}
+gonanda_03 = {
+	name = "Toramana"
+	dynasty = gonanda_dyansty
+	culture = "kashmiri"
+	religion = "shaivism"
+	trait = brahmin
+	father = gonanda_01
+	330.1.1 = {
+		birth = yes
+	}
+	381.1.1 = {
+		death = yes
+	}
+}
+gonanda_04 = {
+	name = "Pravarasena"
+	dynasty = gonanda_dyansty
+	culture = "kashmiri"
+	religion = "shaivism"
+	trait = brahmin
+	father = gonanda_03
+	373.1.1 = {
+		birth = yes
+	}
+	441.1.1 = {
+		death = yes
+	}
+}
+gonanda_05 = {
+	name = "Yudhisthira"
+	dynasty = gonanda_dyansty
+	culture = "kashmiri"
+	religion = "shaivism"
+	trait = brahmin
+	father = gonanda_04
+	423.1.1 = {
+		birth = yes
+	}
+	481.1.1 = {
+		death = yes
+	}
+}
+
+
+#############################################################
+# 
+# MISC
+# 
+# Done by Cybrxkhan
+# 
+#############################################################
+
+kashmiri_001 = {
+	name = "Kumarayana"
+	#dynasty = gonanda_dyansty
+	culture = "kashmiri"
+	religion = "sarvastivada"
+	trait = brahmin
+	trait = education_learning_4
+	trait = celibate
+	trait = intellect_good_2
+	#father = gonanda_04
+	trait = compassionate
+	trait = calm
+	trait = temperate
+	trait = devoted
+	sexuality = heterosexual
+	321.5.4 = { # Unknown
+		birth = yes
+	}
+	342.1.1 = {
+		add_matrilineal_spouse = kucha_019
+		effect = {
+			set_relation_soulmate = character:kucha_019
+		}
+	}
+	380.7.9 = { # Unknown
+		death = yes
+	}
+}
+
+
+
+
+
+
+

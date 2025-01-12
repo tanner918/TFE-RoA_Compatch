@@ -1,0 +1,1813 @@
+﻿#Yarkand
+166696 = {
+	name="Qishiq"
+	dynasty=1040058
+	religion="mahayana"
+	culture="saka"
+	711.1.1={
+		birth=yes
+	}
+	763.1.1={
+		death=yes
+	}
+}
+166697 = {
+	name="Shahrokh"
+	dynasty=1040058
+	religion="mahayana"
+	culture="saka"
+	father=166696
+	741.1.1={
+		birth=yes
+	}
+	800.1.1={
+		death=yes
+	}
+}
+166698 = {
+	name="Shayn"
+	female=yes
+	dynasty=1040058
+	religion="mahayana"
+	culture="saka"
+	father=166696
+	745.1.1={
+		birth=yes
+	}
+	805.1.1={
+		death=yes
+	}
+}
+#Kashgar
+166690 = {
+	name="Kartir"
+	dynasty=1040057
+	religion="mahayana"
+	culture="saka"
+	705.1.1={
+		birth=yes
+	}
+	760.1.1={
+		death=yes
+	}
+}
+166691 = {
+	name="Lengleng"
+	dynasty=1040057
+	religion="mahayana"
+	culture="saka"
+	father=166690
+	732.1.1={
+		birth=yes
+	}
+	798.1.1={
+		death=yes
+	}
+}
+166692 = {
+	name="Ranisa"
+	female=yes
+	dynasty=1040057
+	religion="mahayana"
+	culture="saka"
+	father=166690
+	740.1.1={
+		birth=yes
+	}
+	802.1.1={
+		death=yes
+	}
+}
+#Tashkurgan
+248029 = {
+	name="Sariqol" # mythological originator of local dynasty
+	dynasty=1059008
+	religion=mazdayasna
+	culture="saka"
+	trait = beauty_good_2
+	565.1.1={
+		birth=yes
+	}
+	592.1.1={
+		add_spouse=248010
+	}
+	640.1.1={
+		death=yes
+	}
+}
+248030 = {
+	name="Khosrow" # fictional local ruler
+	dynasty=1059008
+	religion=mazdayasna
+	culture="saka"
+	trait = legitimized_bastard
+	father=248029
+	mother=248010
+	595.1.1={
+		birth=yes
+	}
+	670.1.1={
+		death=yes
+	}
+}
+248031 = {
+	name="Kamnai" # fictional local ruler
+	dynasty=1059008
+	religion=mahayana
+	culture="saka"
+	father=248030
+	630.1.1={
+		birth=yes
+	}
+	700.1.1={
+		death=yes
+	}
+}
+248032 = {
+	name="Khina" # fictional local ruler
+	dynasty=1059008
+	religion=mahayana
+	culture="saka"
+	father=248031
+	660.1.1={
+		birth=yes
+	}
+	735.1.1={
+		death=yes
+	}
+}
+
+248033 = {
+	name="Padatcaina" # fictional local ruler
+	dynasty=1059008
+	religion=mahayana
+	culture="saka"
+	trait = education_martial_3
+	father=248032
+	705.1.1={
+		birth=yes
+	}
+	775.1.1={
+		death=yes
+	}
+}
+
+248034 = {
+	name="Naganpaka" # fictional local ruler
+	dynasty=1059008
+	religion=mahayana
+	culture="saka"
+	father=248033
+	735.1.1={
+		birth=yes
+	}
+	800.1.1={
+		death=yes
+	}
+}
+248035 = {
+	name="Visma" # fictional
+	dynasty=1059008
+	religion=nestorian
+	culture="saka"
+	father=248033
+	738.1.1={
+		birth=yes
+	}
+	805.1.1={
+		death=yes
+	}
+}
+248036 = {
+	name="Raghu" # fictional
+	dynasty=1059008
+	religion=manichean
+	culture="saka"
+	father=248033
+	741.1.1={
+		birth=yes
+	}
+	812.1.1={
+		death=yes
+	}
+}
+
+#Khotan
+
+166632 = {
+	name="Kirti" #Vijaya Kirti I
+	dynasty=1040024
+	religion="mahayana"
+	culture="saka"
+	85.1.1={
+		birth=yes
+	}
+	130.1.1={
+		death=yes
+	}
+}
+166633 = {
+	name="Sangrama" #Vijaya Sangrama I "the_Lion" (Fangqian)
+	dynasty=1040024
+	religion="mahayana"
+	culture="saka"
+	father=166632
+	102.1.1={
+		birth=yes
+	}
+	127.1.1 = {
+		give_nickname=nick_the_lion
+	}
+	132.1.1={
+		death=yes
+	}
+}
+166634 = {
+	name="Dharma" #Vijaya Dharma I (Jian)
+	dynasty=1040024
+	religion="mahayana"
+	culture="saka"
+	father=166633
+	122.1.1={
+		birth=yes
+	}
+	151.1.1={
+		death=yes
+	}
+}
+166635 = {
+	name="Jaya" #Vijaya Jaya I (Anguo)
+	dynasty=1040024
+	religion="mahayana"
+	culture="saka"
+	father=166634
+	146.1.1={
+		birth=yes
+	}
+	182.1.1={
+		death=yes
+	}
+}
+166636 = {
+	name="Shima" #Vijaya Shima I
+	dynasty=1040024
+	religion="mahayana"
+	culture="saka"
+	father=166635
+	161.1.1={
+		birth=yes
+	}
+	188.1.1={
+		death=yes
+	}
+}
+166637 = {
+	name="Saigrama" #Vijaya Saigrama I
+	dynasty=1040024
+	religion="mahayana"
+	culture="saka"
+	father=166636
+	178.1.1={
+		birth=yes
+	}
+	208.1.1={
+		death=yes
+	}
+}
+166638 = {
+	name="Andara" #Vijaya Andara I
+	dynasty=1040024
+	religion="mahayana"
+	culture="saka"
+	father=166637
+	195.1.1={
+		birth=yes
+	}
+	243.1.1={
+		death=yes
+	}
+}
+166639 = {
+	name="Vahana" #Vijaya Vahana I
+	dynasty=1040024
+	religion="mahayana"
+	culture="saka"
+	father=166638
+	213.1.1={
+		birth=yes
+	}
+	251.1.1={
+		death=yes
+	}
+}
+166640 = {
+	name="Simha" #Vijaya Simha I
+	dynasty=1040024
+	religion="mahayana"
+	culture="saka"
+	father=166639
+	240.1.1={
+		birth=yes
+	}
+	279.1.1={
+		death=yes
+	}
+}
+166641 = {
+	name="Sata" #Vijaya Sata I
+	dynasty=1040024
+	religion="mahayana"
+	culture="saka"
+	father=166640
+	262.1.1={
+		birth=yes
+	}
+	306.1.1={
+		death=yes
+	}
+}
+166642 = {
+	name="Ananta" #Vijaya Ananta I
+	dynasty=1040024
+	religion="mahayana"
+	culture="saka"
+	father=166641
+	287.1.1={
+		birth=yes
+	}
+	336.1.1={
+		death=yes
+	}
+}
+166643 = {
+	name="Saigrama" #Vijaya Saigrama II
+	dynasty=1040024
+	religion="mahayana"
+	culture="saka"
+	father=166642
+	310.1.1={
+		birth=yes
+	}
+	373.1.1={
+		death=yes
+	}
+}
+166644 = {
+	name="Dharma" #Vijaya Dharma II
+	dynasty=1040024
+	religion="mahayana"
+	culture="saka"
+	father=166643
+	333.1.1={
+		birth=yes
+	}
+	397.1.1={
+		death=yes
+	}
+}
+166645 = {
+	name="Sambhava" #Vijaya Sambhava I
+	dynasty=1040024
+	religion="mahayana"
+	culture="saka"
+	father=166644
+	360.1.1={
+		birth=yes
+	}
+	436.1.1={
+		death=yes
+	}
+}
+166646 = {
+	name="Pala" #Vijaya Pala I
+	dynasty=1040024
+	religion="mahayana"
+	culture="saka"
+	father=166645
+	386.1.1={
+		birth=yes
+	}
+	451.1.1={
+		death=yes
+	}
+}
+166647 = {
+	name="Amala" #Vijaya Amala I
+	dynasty=1040024
+	religion="mahayana"
+	culture="saka"
+	father=166646
+	432.1.1={
+		birth=yes
+	}
+	496.1.1={
+		death=yes
+	}
+}
+166648 = {
+	name="Jaya" #Vijaya Jaya II
+	dynasty=1040024
+	religion="mahayana"
+	culture="saka"
+	father=166647
+	471.1.1={
+		birth=yes
+	}
+	512.1.1={
+		death=yes
+	}
+}
+166649 = {
+	name="Kirti" #Vijaya Kirti II
+	dynasty=1040024
+	religion="mahayana"
+	culture="saka"
+	father=166648
+	499.1.1={
+		birth=yes
+	}
+	531.1.1={
+		death=yes
+	}
+}
+166650 = {
+	name="Sangrama" #Vijaya Sangrama II
+	dynasty=1040024
+	religion="mahayana"
+	culture="saka"
+	father=166649
+	524.1.1={
+		birth=yes
+	}
+	578.1.1={
+		death=yes
+	}
+}
+166651 = {
+	name="Shima" #Vijaya Shima II
+	dynasty=1040024
+	religion="mahayana"
+	culture="saka"
+	father=166650
+	540.1.1={
+		birth=yes
+	}
+	596.1.1={
+		death=yes
+	}
+}
+166652 = {
+	name="Jaya" #Vijaya Jaya III
+	dynasty=1040024
+	religion="mahayana"
+	culture="saka"
+	father=166651
+	557.1.1={
+		birth=yes
+	}
+	612.1.1={
+		death=yes
+	}
+}
+166653 = {
+	name="Pala" #Vijaya Pala II
+	dynasty=1040024
+	religion="mahayana"
+	culture="saka"
+	father=166652
+	575.1.1={
+		birth=yes
+	}
+	628.1.1={
+		death=yes
+	}
+}
+166654 = {
+	name="Sangrama" #Vijaya Sangrama III
+	dynasty=1040024
+	religion="mahayana"
+	culture="saka"
+	father=166653
+	604.1.1={
+		birth=yes
+	}
+	649.1.1={
+		death=yes
+	}
+}
+166655 = {
+	name="Satra" #Vijaya Satra I
+	dynasty=1040024
+	religion="mahayana"
+	culture="saka"
+	father=166654
+	620.1.1={
+		birth=yes
+	}
+	662.1.1={
+		death=yes
+	}
+}
+166656 = {
+	name="Kirti" #Vijaya Kirti III
+	dynasty=1040024
+	religion="mahayana"
+	culture="saka"
+	father=166655
+	636.1.1={
+		birth=yes
+	}
+	673.1.1={
+		death=yes
+	}
+}
+166657 = {
+	name="Sangrama" #Vijaya Sangrama IV (Fudu Xiong)
+	dynasty=1040024
+	religion="mahayana"
+	culture="saka"
+	father=166656
+	652.1.1={
+		birth=yes
+	}
+	690.1.1={
+		death=yes
+	}
+}
+166658 = {
+	name="Khemeg" #Amala Khemeg - Regent of Khotan 680-692
+	dynasty=1040025
+	religion="mahayana"
+	culture="saka"
+	642.1.1={
+		birth=yes
+	}
+	709.1.1={
+		death=yes
+	}
+}
+166659 = {
+	name="Vikarma" #Vijaya Vikarma I (Fudu Jing)
+	dynasty=1040024
+	religion="mahayana"
+	culture="saka"
+	father=166657
+	668.1.1={
+		birth=yes
+	}
+	719.1.1={
+		death=yes
+	}
+}
+166660 = {
+	name="Dharma" #Vijaya Dharma III (Yuchi Tiao)
+	dynasty=1040024
+	religion="mahayana"
+	culture="saka"
+	father=166659
+	684.1.1={
+		birth=yes
+	}
+	725.1.1={
+		death=yes
+	} #Beheaded by the Chinese
+}
+166661 = {
+	name="Sambhava" #Vijaya Sambhava II (Yuchi Fushizhan)
+	dynasty=1040024
+	religion="mahayana"
+	culture="saka"
+	father=166659
+	686.1.1={
+		birth=yes
+	}
+	736.1.1={
+		death=yes
+	}
+}
+166662 = {
+	name="Vahana" #Vijaya Vahana II "the_Great" (Fudu Da)
+	dynasty=1040024
+	religion="mahayana"
+	culture="saka"
+	father=166661
+	702.1.1={
+		birth=yes
+	}
+	736.1.1 = {
+		give_nickname=nick_the_great
+	}
+	740.1.1={
+		death=yes
+	}
+}
+166663 = {
+	name="Simha" #Vijaya Simha II (Yuchi Gui)
+	dynasty=1040024
+	religion="manichean"
+	culture="saka"
+	father=166662
+	717.1.1={
+		birth=yes
+	}
+	744.1.1={
+		religion="mahayana"
+	}
+	747.1.1={
+		death=yes
+	}
+}
+166664 = {
+	name="Dhondhros" #Vijaya Dhondhros I (Yuchi Sheng)
+	dynasty=1040024
+	religion="mahayana"
+	culture="saka"
+	father=166663
+	733.1.1={
+		birth=yes
+	}
+	736.1.1={
+		effect = { set_relation_friend = character:166665 }
+	}
+	785.1.1={
+		death=yes
+	}
+}
+166665 = {
+	name="Sata" #Vijaya Sata II (Yuchi Shihu (Jabgu) Yao)
+	dynasty=1040024
+	religion="mahayana"
+	culture="saka"
+	father=166663
+	736.1.1={
+		birth=yes
+	}
+	789.1.1={
+		death=yes
+	}
+}
+166666 = {
+	name="Ananta" #Vijaya Ananta II
+	dynasty=1040024
+	religion="mahayana"
+	culture="saka"
+	father=166665
+	750.1.1={
+		birth=yes
+	}
+	764.1.1={
+		add_spouse=166667
+	}
+	798.1.1={
+		death=yes
+	}
+}
+166667 = {
+	name="Dharma" #Vijaya Dharma
+	female=yes
+	dynasty=1040024
+	religion="mahayana"
+	culture="saka"
+	father=166664
+	749.1.1={
+		birth=yes
+	}
+	803.1.1={
+		death=yes
+	}
+}
+166668 = {
+	name="Sangrama" #Vijaya Sangrama V
+	dynasty=1040024
+	religion="mahayana"
+	culture="saka"
+	father=166666
+	mother=166667
+	765.1.1={
+		birth=yes
+	}
+	781.1.1={
+		add_spouse=166671
+	}
+	803.1.2={
+		add_spouse=166672
+	}
+	809.1.1={
+		death=yes
+	}
+}
+166669 = {
+	name="Bresaya" #Vijaya Bresaya
+	dynasty=1040024
+	religion="mahayana"
+	culture="saka"
+	father=166666
+	mother=166667
+	767.1.1={
+		birth=yes
+	}
+	782.1.1={
+		add_spouse=166670
+	}
+	805.1.1={
+		death=yes
+	}
+}
+166670 = {
+	name="Kasuma" #Asu Kasuma
+	female=yes
+	dynasty=1040026
+	religion="mahayana"
+	culture="saka"
+	766.1.1={
+		birth=yes
+		employer=166665
+	}
+	803.1.1={
+		death=yes
+	}
+}
+166671 = {
+	name="Silamata" #Silamata
+	female=yes
+	dynasty=1040027
+	religion="mahayana"
+	culture="saka"
+	764.1.1={
+		birth=yes
+		employer=166665
+	}
+	803.1.1={
+		death=yes
+	}
+}
+#Yarkand Khotan vassals - fictional placeholders
+saka0009 = {
+	name="Vijita"
+	dynasty= 2003125 #Shaka
+	religion="mahayana"
+	culture="saka"
+	740.1.1={
+		birth=yes
+	}
+	800.1.1={
+		death=yes
+	}
+}
+
+saka0010 = {
+	name="Dharma"
+	dynasty= 2003125 #Shaka
+	religion="mahayana"
+	culture="saka"
+	father=saka0009
+	760.1.1={
+		birth=yes
+	}
+	820.1.1={
+		death=yes
+	}
+}
+
+saka0011 = {
+	name="Sangrama"
+	dynasty= 2003125 #Shaka
+	religion="mahayana"
+	culture="saka"
+	father=saka0010
+	780.1.1={
+		birth=yes
+	}
+	840.1.1={
+		death=yes
+	}
+}
+
+
+#############################################################
+# 
+# KASHGAR/SHULE RULERS
+# Can't find info on kings after 2nd century but before 7th century
+# So kings here are fictitious (for now until further info can be found)
+# Pei was the surname used for kings from the 7th century onwards
+# So I've used that as their surname here
+# 
+# Done by Cybrxkhan
+# 
+#############################################################
+
+kashgar_001 = {
+	name="Samgaka"
+	dynasty=dynasty_pei_tarim
+	religion="sarvastivada"
+	culture="saka"
+	332.9.17={
+		birth=yes
+	}
+	360.1.1 = {
+		add_spouse = yarkand_009
+	}
+	387.7.16={
+		death=yes
+	}
+}
+
+kashgar_002 = {
+	name="Vidaram"
+	dynasty=dynasty_pei_tarim
+	religion="sarvastivada"
+	culture="saka"
+	father=kashgar_001
+	mother=yarkand_009
+	363.6.14={
+		birth=yes
+	}
+	388.1.1 = {
+		add_spouse = yarkand_010
+	}
+	418.12.7={
+		death=yes
+	}
+}
+
+kashgar_003 = {
+	name="Brika"
+	dynasty=dynasty_pei_tarim
+	religion="sarvastivada"
+	culture="saka"
+	father=kashgar_002
+	mother=yarkand_010
+	392.11.15={
+		birth=yes
+	}
+	447.9.20={
+		death=yes
+	}
+}
+
+kashgar_004 = {
+	name="Vardhana"
+	dynasty=dynasty_pei_tarim
+	religion="sarvastivada"
+	culture="saka"
+	father=kashgar_003
+	421.7.30={
+		birth=yes
+	}
+	475.11.3={
+		death=yes
+	}
+}
+
+kashgar_005 = {
+	name="Ysambasta"
+	dynasty=dynasty_pei_tarim
+	religion="sarvastivada"
+	culture="saka"
+	father=kashgar_004
+	457.11.10={
+		birth=yes
+	}
+	509.3.2={
+		death=yes
+	}
+}
+
+kashgar_006 = {
+	name="Dum"
+	dynasty=dynasty_pei_tarim
+	religion="sarvastivada"
+	culture="saka"
+	father=kashgar_005
+	478.2.9={
+		birth=yes
+	}
+	527.4.17={
+		death=yes
+	}
+}
+
+kashgar_007 = {
+	name="Shinganca"
+	dynasty=dynasty_pei_tarim
+	religion="sarvastivada"
+	culture="saka"
+	father=kashgar_006
+	511.4.12={
+		birth=yes
+	}
+	578.9.2={
+		death=yes
+	}
+}
+
+kashgar_008 = {
+	name="Dzatsi"
+	dynasty=dynasty_pei_tarim
+	religion="sarvastivada"
+	culture="saka"
+	father=kashgar_007
+	535.6.9={
+		birth=yes
+	}
+	582.4.16={
+		death=yes
+	}
+}
+
+kashgar_009 = {
+	name="Gulai"
+	dynasty=dynasty_pei_tarim
+	religion="sarvastivada"
+	culture="saka"
+	father=kashgar_008
+	557.12.14={
+		birth=yes
+	}
+	592.8.7={
+		death=yes
+	}
+}
+
+
+#############################################################
+# 
+# YARKAND RULERS
+# Said to be very weak in this period and being absorbed by Kashgar
+# Sent an embassy to China during the (Southern) Liang dynasty
+# 
+# Done by Cybrxkhan
+# 
+#############################################################
+
+
+# Fictitious kings of Yarkand/Shache
+# Shache was said to be very weak in this period and being absorbed into Shule/Kashgar
+yarkand_001 = {
+	name="Naganpaka"
+	dynasty=dynasty_qusha
+	religion="mahayana"
+	culture="saka"
+	309.7.14={
+		birth=yes
+	}
+	359.9.13={
+		death=yes
+	}
+}
+yarkand_002 = {
+	name="Sumtharaka"
+	dynasty=dynasty_qusha
+	religion="mahayana"
+	culture="saka"
+	father=yarkand_001
+	340.5.9={
+		birth=yes
+	}
+	361.1.1 = {
+		add_spouse = yarkand_011
+	}
+	400.12.30={
+		death=yes
+	}
+}
+yarkand_003 = {
+	name="Shirvamdai"
+	dynasty=dynasty_qusha
+	religion="mahayana"
+	culture="saka"
+	father=yarkand_002
+	mother=yarkand_011
+	372.9.10={
+		birth=yes
+	}
+	416.11.17={
+		death=yes
+	}
+}
+yarkand_004 = {
+	name="Manohara"
+	dynasty=dynasty_qusha
+	religion="mahayana"
+	culture="saka"
+	father=yarkand_003
+	399.4.25={
+		birth=yes
+	}
+	468.9.2={
+		death=yes
+	}
+}
+yarkand_005 = {
+	name="Arsa"
+	dynasty=dynasty_qusha
+	religion="mahayana"
+	culture="saka"
+	father=yarkand_004
+	427.12.13={
+		birth=yes
+	}
+	475.3.9={
+		death=yes
+	}
+}
+yarkand_006 = {
+	name="Aryamgula"
+	dynasty=dynasty_qusha
+	religion="mahayana"
+	culture="saka"
+	father=yarkand_005
+	459.10.6={
+		birth=yes
+	}
+	510.3.16={
+		death=yes
+	}
+}
+yarkand_007 = {
+	name="Padatcaina"
+	dynasty=dynasty_qusha
+	religion="mahayana"
+	culture="saka"
+	father=yarkand_006
+	483.4.17={
+		birth=yes
+	}
+	530.10.22={
+		death=yes
+	}
+}
+yarkand_008 = {
+	name="Shikshananda"
+	dynasty=dynasty_qusha
+	religion="mahayana"
+	culture="saka"
+	father=yarkand_007
+	509.3.30={
+		birth=yes
+	}
+	576.7.10={
+		death=yes
+	}
+}
+# Fictitious Yarkand princess
+yarkand_009 = {
+	name="Vimalaprabha"
+	female=yes
+	dynasty=dynasty_qusha
+	religion="mahayana"
+	culture="saka"
+	father=yarkand_001
+	337.8.14={
+		birth=yes
+	}
+	408.9.16={
+		death=yes
+	}
+}
+yarkand_010 = {
+	name="Praniyata"
+	female=yes
+	dynasty=dynasty_qusha
+	religion="mahayana"
+	culture="saka"
+	father=yarkand_002
+	mother=yarkand_011
+	368.11.19={
+		birth=yes
+	}
+	425.3.1={
+		death=yes
+	}
+}
+yarkand_011 = {
+	name="Shandramata"
+	female=yes
+	#dynasty=dynasty_qusha
+	religion="mahayana"
+	culture="saka"
+	345.1.2={
+		birth=yes
+	}
+	415.12.19={
+		death=yes
+	}
+}
+
+
+
+
+#############################################################
+# 
+# TASHKURGAN RULERS (in Gilgit)
+# Qiepantuo/Khabandha
+# Names are all fictitious
+# 
+# Done by Cybrxkhan
+# 
+#############################################################
+
+# According to legend, recorded by Xuanzang, the ruling dynasty were descended from a Chinese princess sent to marry a Persian King
+# However, partway through the journey, she was knocked up by some mysterious deity, believed to be a sun deity
+# So the envoys accompanying the princess decided to just allow her to stay there for fear of being killed by their king
+# The princess gave birth to a handsome, brilliant son, and then she established a government in the region
+# Her son also became a respected leader and had magic skills, and in Xuanzang's time this king's body was still venerated by locals
+# Locals call themselves descendants of the Han and the Sun god
+# Anyways, because this Chinese princess or noblewoman or whoever is supposedly from the Han era, I've put her c. 100 CE so the timeline works out
+tashkurgan_001 = {
+	name="Gongzhu"
+	female=yes
+	dynasty=dynasty_khabandha
+	religion="zhengyi"
+	culture="han"
+	trait=beauty_good_2
+	trait=intellect_good_2
+	trait=physique_good_2
+	trait=education_stewardship_4
+	trait=administrator
+	trait=diligent
+	trait=just
+	trait=compassionate
+	trait=humble
+	88.8.8={
+		birth=yes
+	}
+	158.8.28={
+		death=yes
+	}
+}
+
+tashkurgan_002 = {
+	name="Dagong"
+	dynasty=dynasty_khabandha
+	religion="zhengyi"
+	culture="han"
+	trait=beauty_good_3
+	trait=intellect_good_3
+	trait=physique_good_3
+	trait=education_diplomacy_4
+	trait=diplomat
+	trait=diligent
+	trait=just
+	trait=compassionate
+	trait=humble
+	mother=tashkurgan_001
+	108.8.8={
+		birth=yes
+	}
+	125.8.8 = {
+		add_spouse = tashkurgan_003
+	}
+	188.8.8={
+		death=yes
+	}
+}
+
+# Since the people of Tashkurgan were said to be culturally similar to that of Khotan, I have the prince marrying a Khotanese princess
+tashkurgan_003 = {
+	name="Shri"
+	female=yes
+	dynasty=1040024
+	religion="sarvastivada"
+	culture="saka"
+	father=166632
+	108.8.8={
+		birth=yes
+	}
+	188.8.8={
+		death=yes
+	}
+}
+
+tashkurgan_004 = {
+	name="Dharma"
+	dynasty=dynasty_khabandha
+	religion="sarvastivada"
+	culture="saka"
+	father=tashkurgan_002
+	mother=tashkurgan_003
+	128.8.8={
+		birth=yes
+	}
+	208.8.8={
+		death=yes
+	}
+}
+
+tashkurgan_005 = {
+	name="Bamdaka"
+	dynasty=dynasty_khabandha
+	religion="sarvastivada"
+	culture="saka"
+	father=tashkurgan_004
+	150.8.2={
+		birth=yes
+	}
+	224.2.4={
+		death=yes
+	}
+}
+
+tashkurgan_006 = {
+	name="Sidaka"
+	dynasty=dynasty_khabandha
+	religion="sarvastivada"
+	culture="saka"
+	father=tashkurgan_005
+	175.10.20={
+		birth=yes
+	}
+	240.12.3={
+		death=yes
+	}
+}
+
+tashkurgan_008 = {
+	name="Gostana"
+	dynasty=dynasty_khabandha
+	religion="sarvastivada"
+	culture="saka"
+	father=tashkurgan_006
+	212.1.12={
+		birth=yes
+	}
+	285.8.25={
+		death=yes
+	}
+}
+
+tashkurgan_009 = {
+	name="Arsa"
+	dynasty=dynasty_khabandha
+	religion="sarvastivada"
+	culture="saka"
+	father=tashkurgan_008
+	249.7.7={
+		birth=yes
+	}
+	303.3.3={
+		death=yes
+	}
+}
+
+tashkurgan_010 = {
+	name="Vahana"
+	dynasty=dynasty_khabandha
+	religion="sarvastivada"
+	culture="saka"
+	father=tashkurgan_009
+	280.5.1={
+		birth=yes
+	}
+	339.3.6={
+		death=yes
+	}
+}
+
+tashkurgan_011 = {
+	name="Mamatti"
+	dynasty=dynasty_khabandha
+	religion="sarvastivada"
+	culture="saka"
+	father=tashkurgan_010
+	303.1.3={
+		birth=yes
+	}
+	357.1.9={
+		death=yes
+	}
+}
+
+tashkurgan_012 = {
+	name="Raghu"
+	dynasty=dynasty_khabandha
+	religion="sarvastivada"
+	culture="saka"
+	father=tashkurgan_011
+	343.4.3={
+		birth=yes
+	}
+	409.7.14={
+		death=yes
+	}
+}
+
+tashkurgan_013 = {
+	name="Khuradatta"
+	dynasty=dynasty_khabandha
+	religion="sarvastivada"
+	culture="saka"
+	father=tashkurgan_012
+	378.9.22={
+		birth=yes
+	}
+	418.3.19={
+		death=yes
+	}
+}
+
+tashkurgan_014 = {
+	name="Sudarrjam"
+	dynasty=dynasty_khabandha
+	religion="sarvastivada"
+	culture="saka"
+	father=tashkurgan_013
+	401.4.29={
+		birth=yes
+	}
+	472.3.17={
+		death=yes
+	}
+}
+
+tashkurgan_015 = {
+	name="Purgula"
+	dynasty=dynasty_khabandha
+	religion="sarvastivada"
+	culture="saka"
+	father=tashkurgan_014
+	441.12.17={
+		birth=yes
+	}
+	516.5.30={
+		death=yes
+	}
+}
+
+tashkurgan_016 = {
+	name="Haskadatta"
+	dynasty=dynasty_khabandha
+	religion="sarvastivada"
+	culture="saka"
+	father=tashkurgan_015
+	479.1.13={
+		birth=yes
+	}
+	531.2.9={
+		death=yes
+	}
+}
+
+tashkurgan_017 = {
+	name="Zambasta"
+	dynasty=dynasty_khabandha
+	religion="sarvastivada"
+	culture="saka"
+	father=tashkurgan_016
+	510.4.8={
+		birth=yes
+	}
+	568.9.27={
+		death=yes
+	}
+}
+
+tashkurgan_018 = {
+	name="Bhadra"
+	dynasty=dynasty_khabandha
+	religion="sarvastivada"
+	culture="saka"
+	father=tashkurgan_017
+	541.8.17={
+		birth=yes
+	}
+	602.9.24={
+		death=yes
+	}
+}
+
+tashkurgan_019 = {
+	name="Sthavira"
+	dynasty=dynasty_khabandha
+	religion="sarvastivada"
+	culture="saka"
+	father=tashkurgan_018
+	569.3.27={
+		birth=yes
+	}
+	619.10.14={
+		death=yes
+	}
+}
+
+tashkurgan_020 = {
+	name="Skunkha"
+	dynasty=dynasty_khabandha
+	religion="sarvastivada"
+	culture="saka"
+	father=tashkurgan_019
+	601.2.14={
+		birth=yes
+	}
+	663.9.9={
+		death=yes
+	}
+}
+
+
+#############################################################
+# 
+# KINGDOM OF WUCHA
+# Ethnic affiliation of Wucha not specified, but could be Iranian/Saka, even Qiang, Kashmiri/Dardic
+# Also known as Wutuo
+#  
+# Done by Cybrxkhan
+# 
+#############################################################
+
+# Kings of Wucha
+# Went with Saka for geographical consistency with the religion/culture setup
+wucha_001 = {
+	name="Sangrama"
+	dynasty=dynasty_wucha
+	religion="mahayana"
+	culture="saka"
+	328.12.14={
+		birth=yes
+	}
+	387.3.19={
+		death=yes
+	}
+}
+
+wucha_002 = {
+	name="Huyi"
+	dynasty=dynasty_wucha
+	religion="mahayana"
+	culture="saka"
+	father=wucha_001
+	351.7.2={
+		birth=yes
+	}
+	409.11.10={
+		death=yes
+	}
+}
+
+wucha_003 = {
+	name="Purgula"
+	dynasty=dynasty_wucha
+	religion="mahayana"
+	culture="saka"
+	father=wucha_002
+	388.6.1={
+		birth=yes
+	}
+	457.2.26={
+		death=yes
+	}
+}
+
+wucha_004 = {
+	name="Manohara"
+	dynasty=dynasty_wucha
+	religion="mahayana"
+	culture="saka"
+	father=wucha_003
+	419.4.27={
+		birth=yes
+	}
+	471.11.20={
+		death=yes
+	}
+}
+
+wucha_005 = {
+	name="Manohara"
+	dynasty=dynasty_wucha
+	religion="mahayana"
+	culture="saka"
+	father=wucha_004
+	445.3.9={
+		birth=yes
+	}
+	504.7.11={
+		death=yes
+	}
+}
+
+wucha_006 = {
+	name="Ceguti"
+	dynasty=dynasty_wucha
+	religion="mahayana"
+	culture="saka"
+	father=wucha_005
+	490.1.4={
+		birth=yes
+	}
+	537.9.18={
+		death=yes
+	}
+}
+
+
+#############################################################
+# 
+# NANDOU RULERS (in Yasin/Golaghmuli/Chitral)
+# Should also be more in Gilgit, but Tashkurgan/Gilgit is one county
+# 
+# Done by Cybrxkhan
+# 
+#############################################################
+
+
+
+
+#############################################################
+# 
+# KINGDOM OF SUVARNAGOTRA (Indian POV) (aka the "Gold Race Country") (rulers are fictitious)
+# Per Bettina Zeisler, Suvarnagotra confusingly refers to three different areas depending on whether one uses Indian, Chinese, and Khotanese historical sources
+# The Chinese sources are very uncertain and may be mixing up things more than the other two (if I read her conclusions correctly)
+# Therefore, I've decided to just have the Indian and Khotanese understandings of Suvarnagotra as two separate kingdoms since they're quite far apart
+# And quite possibly refer to two distinct (but perhaps similar) polities.
+# Suvarnagotra from the Indian POV will be referred to as Suvarnabhu, which means Goldland and was a land mentioned in an Indian text, the Brihat-Samhita
+# And *might* be the same as or related to Suvarnagotra form the Indian POV.
+# All in all, this is extremely hypothetical and likely probably wrong in reality, but a rough approximation based on what we have.
+#  
+# Done by Cybrxkhan
+# 
+#############################################################
+
+gold_country_indian_001 = {
+	name="Baga"
+	dynasty=dynasty_suvarnabhu
+	religion="mahayana"
+	culture="saka"
+	333.3.3={
+		birth=yes
+	}
+	388.9.6={
+		death=yes
+	}
+}
+
+gold_country_indian_002 = {
+	name="Kharusa"
+	dynasty=dynasty_suvarnabhu
+	religion="mahayana"
+	culture="saka"
+	father=gold_country_indian_001
+	367.4.17={
+		birth=yes
+	}
+	421.10.27={
+		death=yes
+	}
+}
+
+gold_country_indian_003 = {
+	name="Vishirapumna"
+	dynasty=dynasty_suvarnabhu
+	religion="mahayana"
+	culture="saka"
+	father=gold_country_indian_002
+	408.11.19={
+		birth=yes
+	}
+	474.1.28={
+		death=yes
+	}
+}
+
+gold_country_indian_004 = {
+	name="Kimashana"
+	dynasty=dynasty_suvarnabhu
+	religion="mahayana"
+	culture="saka"
+	father=gold_country_indian_003
+	451.9.13={
+		birth=yes
+	}
+	519.10.19={
+		death=yes
+	}
+}
+
+gold_country_indian_005 = {
+	name="Sihya"
+	dynasty=dynasty_suvarnabhu
+	religion="mahayana"
+	culture="saka"
+	father=gold_country_indian_004
+	496.12.2={
+		birth=yes
+	}
+	546.12.30={
+		death=yes
+	}
+}
+
+#############################################################
+# 
+# KINGDOM OF SUVARNAGOTRA (Khotanese POV) (aka the "Gold Race Country") (rulers are fictitious)
+# (See comment paragraph above for more info)
+# This is the Khotanese understanding of Suvarnagotra, which is roughly in the Skardu/Baltistan area as opposed to the southern Ladakh of the Indian POV
+# Possibly the most historically attested Suvarnagotra (assuming they are different polities, which I am doing here)
+# Connected to Skardu and Khotan through political and possibly even marriage/kinship ties, and was possibly a vassal of Skardu (maybe in the 600s)
+#  
+# Done by Cybrxkhan
+# 
+#############################################################
+
+gold_country_khotanese_001 = {
+	name="Shtrugize"
+	dynasty=dynasty_suvarnagotra
+	religion="mahayana"
+	culture="saka"
+	344.6.19={
+		birth=yes
+	}
+	394.12.2={
+		death=yes
+	}
+}
+
+gold_country_khotanese_002 = {
+	name="Naganpaka"
+	dynasty=dynasty_suvarnagotra
+	religion="mahayana"
+	culture="saka"
+	father=gold_country_khotanese_001
+	378.11.3={
+		birth=yes
+	}
+	435.2.9={
+		death=yes
+	}
+}
+
+gold_country_khotanese_003 = {
+	name="Aryamgula"
+	dynasty=dynasty_suvarnagotra
+	religion="mahayana"
+	culture="saka"
+	father=gold_country_khotanese_002
+	416.2.4={
+		birth=yes
+	}
+	470.11.15={
+		death=yes
+	}
+}
+
+gold_country_khotanese_004 = {
+	name="Tayasham"
+	dynasty=dynasty_suvarnagotra
+	religion="mahayana"
+	culture="saka"
+	father=gold_country_khotanese_003
+	450.10.28={
+		birth=yes
+	}
+	524.6.1={
+		death=yes
+	}
+}
+
+gold_country_khotanese_005 = {
+	name="Ysambasta"
+	dynasty=dynasty_suvarnagotra
+	religion="mahayana"
+	culture="saka"
+	father=gold_country_khotanese_004
+	489.1.30={
+		birth=yes
+	}
+	537.3.7={
+		death=yes
+	}
+}
+
+
+#############################################################
+# 
+# MISCELLANEOUS RULERS
+# 
+# Done by Cybrxkhan
+# 
+#############################################################
+
+# Semi-fictitious kings of Karghalik - names and years are unknown, we just know they exist
+
+# Zihe was a real state mentioned by several Chinese sources, including the monk Faxian who passed through it c. 400
+# It appears to have been conflated with Xiye, and referred to separate but close nearby locations at different times
+# Including Karghalik, and modern-day Xaidulla in between the Karakoram and Kunlun mountains
+# Rachel Meakin believes that Faxian's "Zihe" is probably the same as Xiye and *not* in the mountains
+# Anyways, Faxian mentions that he is Mahayana
+
+saka_misc_001 = {
+	name="Capastaka"
+	dynasty=dynasty_zihe_1
+	religion="mahayana"
+	culture="saka"
+	334.9.4={
+		birth=yes
+	}
+	394.7.2={
+		death=yes
+	}
+}
+
+saka_misc_002 = {
+	name="Dharma"
+	dynasty=dynasty_zihe_1
+	religion="mahayana"
+	culture="saka"
+	father=saka_misc_001
+	# According to Faxian, the king of Zihe at this time was a staunch follower of Buddhism who always surrounded himself with monks
+	trait=zealous
+	368.5.17={
+		birth=yes
+	}
+	451.9.12={
+		death=yes
+	}
+}
+
+saka_misc_003 = {
+	name="Tcusyau"
+	dynasty=dynasty_zihe_1
+	religion="mahayana"
+	culture="saka"
+	father=saka_misc_002
+	396.10.11={
+		birth=yes
+	}
+	463.3.22={
+		death=yes
+	}
+}
+
+saka_misc_004 = {
+	name="Vidakai"
+	dynasty=dynasty_zihe_1
+	religion="mahayana"
+	culture="saka"
+	father=saka_misc_003
+	432.1.10={
+		birth=yes
+	}
+	512.1.1={
+		death=yes
+	}
+}
+
+
+# Semi-fictitious kings in Terek Pass
+# Weilue (3rd cent) mentions a couple kingdoms, including Xiuxiu and Juandu, under Kashgar in the vicinity of Terek Pass
+# Because only one county can be assigned, I went with Xiuxiu since it is closer to the actual barony
+
+saka_misc_005 = {
+	name="Presamdha"
+	dynasty=dynasty_xiuxiu
+	religion="sarvastivada"
+	culture="saka"
+	330.9.6={
+		birth=yes
+	}
+	393.6.9={
+		death=yes
+	}
+}
+
+saka_misc_006 = {
+	name="Hvarda"
+	dynasty=dynasty_xiuxiu
+	religion="sarvastivada"
+	culture="saka"
+	father=saka_misc_005
+	363.6.3={
+		birth=yes
+	}
+	429.2.9={
+		death=yes
+	}
+}
+
+saka_misc_007 = {
+	name="Varman"
+	dynasty=dynasty_xiuxiu
+	religion="sarvastivada"
+	culture="saka"
+	father=saka_misc_006
+	411.12.19={
+		birth=yes
+	}
+	468.3.30={
+		death=yes
+	}
+}
+
+saka_misc_008 = {
+	name="Shambhava"
+	dynasty=dynasty_xiuxiu
+	religion="sarvastivada"
+	culture="saka"
+	father=saka_misc_007
+	451.10.17={
+		birth=yes
+	}
+	506.4.1={
+		death=yes
+	}
+}

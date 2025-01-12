@@ -1,0 +1,26 @@
+﻿marshalnsc_portrait_modifier = {
+    usage = game
+    marshalnsc_portrait_modifier = {
+        dna_modifiers = {
+            morph = {
+				mode = replace
+				gene = gene_balding_hair_effect
+				template = no_baldness
+				value = 1
+			}
+            accessory = {
+                mode = add
+                gene = special_headgear_spectacles
+                template = spectacles
+                value = 1
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 100
+                has_character_flag = marshalnsc_portrait_modifier
+            }
+        }
+    }
+}

@@ -1,0 +1,980 @@
+﻿k_pontic_steppe = {
+	361.1.1 = { change_development_level = 0 }
+	200.1.1 = {
+		name = OIUM
+		de_jure_liege = e_caspian-pontic_steppe
+	}
+	240.1.1 = {
+		holder = 992068 # Cniva
+		government = tribal_government
+	}
+	337.1.1 = {
+		holder = 992067 # Geberic
+	}
+	# Greuthungi Kings
+	351.1.1 = {
+		holder = 992003 # Hermanaric
+	}
+	376.1.1 = {
+		holder = 992010 # Withimir
+	}
+	376.6.1 = {
+		holder = 992059 # Winithar
+	}
+	### Hunnic Domination
+	377.6.1 = {
+		holder = 990016 # Balamber
+		de_jure_liege = e_hunnic_empire
+		reset_name = yes
+	}
+	385.1.1 = {
+		holder = 990000 # Uldin
+		liege = e_hunnic_empire
+		government = nomadic_government
+	}
+	412.1.1 = {
+		holder = 990002 #Oktar
+	}
+	430.1.1 = {
+		holder = 990003 #Rugila
+	}
+	434.1.1 = {
+		holder = 990005 #Bleda
+	}
+	445.1.1 = {
+		holder = 990006 #Attila
+	}
+	454.3.1 = {
+		holder = 990008 #Dengizik
+	}
+	469.1.1 = {
+		holder = 990009 #Ernak
+	}
+	## Saragur Domination
+	473.1.1 = {
+		holder = 0
+		de_jure_liege = e_caspian-pontic_steppe
+	}
+}
+
+
+d_yedisan = {
+	361.1.1 = {
+		holder = 992003
+	}
+	### Hunnic Empire
+	377.6.1 = {
+		holder = 992005 # Hunimund
+		liege = k_pontic_steppe
+		government = tribal_government
+	}
+	380.1.1 = {
+		holder = 992006 # Thorismund
+	}
+	473.1.1 = {
+		holder = 990010 # Kutrigur
+		liege = 0
+	}
+	495.1.1 = {
+		holder = 990017 # Kutrigur
+	}
+	515.1.1 = {
+		holder = 990021 # Kinialon
+	}
+	552.1.1 = {
+		holder = 990026 # Sinnion
+	}
+	558.1.1 = {
+		holder = 990023 # Zabergan
+	}
+	764.1.1 = {
+		holder = 146214
+	}
+}
+
+
+c_ladyzyn = {
+	## Greuthungi Kingdom
+	351.1.1 = {
+		holder = 992059
+		government = tribal_government
+		liege = k_pontic_steppe
+	}
+	### Hunnic Empire
+	376.1.1 = {
+		holder = hun_06
+		liege = k_pontic_steppe
+		government = nomadic_government
+	}
+	433.1.1 = {
+		holder = 990024 
+	}
+	473.1.1 = {
+		holder = 990010 # Kutrigur
+	}
+	495.1.1 = {
+		holder = 990017 # Kutrigur
+	}
+	515.1.1 = {
+		holder = 990021 # Kinialon
+	}
+	532.1.1 = {
+		holder = antean_misc_002
+		liege = d_yedisan
+	}
+	552.1.1 = {
+		holder = 990026 # Sinnion
+	}
+	558.1.1 = {
+		holder = 990023 # Zabergan
+	}
+	764.1.1 = {
+		holder = 146214
+		government = tribal_government
+	}
+	
+}
+
+
+c_uman = {
+	## Greuthungi Kingdom
+	351.1.1 = {
+		holder = 992059
+		government = tribal_government
+		liege = k_pontic_steppe
+	}
+	### Hunnic Empire
+	376.1.1 = {
+		holder = hun_06
+		liege = k_pontic_steppe
+		government = nomadic_government
+	}
+	433.1.1 = {
+		holder = 990024 
+	}
+	473.1.1 = {
+		holder = 990010 # Kutrigur
+	}
+	495.1.1 = {
+		holder = 990017 # Kutrigur
+	}
+	515.1.1 = {
+		holder = 990021 # Kinialon
+	}
+	532.1.1 = {
+		holder = antean_misc_002
+		liege = d_yedisan
+	}
+	552.1.1 = {
+		holder = 990026 # Sinnion
+	}
+	558.1.1 = {
+		holder = 990023 # Zabergan
+	}
+	764.1.1 = {
+		holder = 146214
+		government = tribal_government
+	}
+}
+
+
+c_cherkassy = {
+	## Greuthungi Kingdom
+	351.1.1 = {
+		holder = 992010
+		government = tribal_government
+		liege = k_pontic_steppe
+	}
+	### Hunnic Empire
+	376.1.1 = {
+		holder = hun_06
+		liege = k_pontic_steppe
+		government = nomadic_government
+	}
+	433.1.1 = {
+		holder = 990024 
+	}
+	473.1.1 = {
+		holder = 990010 # Kutrigur
+	}
+	495.1.1 = {
+		holder = 990017 # Kutrigur
+	}
+	515.1.1 = {
+		holder = 990021 # Kinialon
+	}
+	532.1.1 = {
+		holder = antean_misc_002
+		liege = d_yedisan
+	}
+	552.1.1 = {
+		holder = 990026 # Sinnion
+	}
+	558.1.1 = {
+		holder = 990023 # Zabergan
+	}
+	764.1.1 = {
+		holder = 146214
+		government = tribal_government
+	}
+}
+
+
+c_odessa = {
+	## Greuthungi Kingdom
+	351.1.1 = {
+		holder = 992059
+		government = tribal_government
+		liege = k_pontic_steppe
+	}
+	380.1.1 = {
+		holder = 992006
+		liege = k_pontic_steppe
+	}
+	473.1.1 = {
+		holder = 990010 # Kutrigur
+	}
+	495.1.1 = {
+		holder = 990017 # Kutrigur
+	}
+	515.1.1 = {
+		holder = 990021 # Kinialon
+	}
+	552.1.1 = {
+		holder = 990026 # Sinnion
+	}
+	558.1.1 = {
+		holder = 990023 # Zabergan
+	}
+	764.1.1 = {
+		holder = 146214
+		government = tribal_government
+	}
+}
+
+
+c_kherson = {
+	## Greuthungi Kingdom
+	351.1.1 = {
+		holder = 992003 # Hermanaric
+		government = tribal_government
+	}
+	380.1.1 = {
+		holder = 992006
+		liege = k_pontic_steppe
+	}
+	473.1.1 = {
+		holder = 990010 # Kutrigur
+	}
+	495.1.1 = {
+		holder = 990017 # Kutrigur
+	}
+	515.1.1 = {
+		holder = 990021 # Kinialon
+	}
+	552.1.1 = {
+		holder = 990026 # Sinnion
+	}
+	558.1.1 = {
+		holder = 990023 # Zabergan
+	}
+	764.1.1 = {
+		holder = 146214
+		government = tribal_government
+	}
+}
+
+
+c_dnipro = {
+	## Greuthungi Kingdom
+	351.1.1 = {
+		holder = 992003 # Hermanaric
+		government = tribal_government
+	}
+	380.1.1 = {
+		holder = 992006
+		liege = k_pontic_steppe
+	}
+	473.1.1 = {
+		holder = 990010 # Kutrigur
+	}
+	495.1.1 = {
+		holder = 990017 # Kutrigur
+	}
+	515.1.1 = {
+		holder = 990021 # Kinialon
+	}
+	552.1.1 = {
+		holder = 990026 # Sinnion
+	}
+	558.1.1 = {
+		holder = 990023 # Zabergan
+	}
+	764.1.1 = {
+		holder = 146214
+		government = tribal_government
+	}
+	
+}
+
+
+d_levedia = {
+	361.1.1 = {
+		holder = 992003
+	}
+	## Hunnic Domination
+	385.1.1 = {
+		holder = 990000 # Uldin
+		liege = e_hunnic_empire
+		government = nomadic_government
+	}
+	## Saragur Domination
+	473.1.1 = {
+		holder = saragurs_06
+		liege = 0
+	}
+	500.1.1 = {
+		holder = saragurs_08
+	}
+	691.1.1 = {
+		liege = e_caspian-pontic_steppe
+		holder = 74007
+		government = tribal_government
+	}
+	715.1.1 = {
+		holder = 74008
+	}
+	731.1.1 = {
+		holder = 74009
+	}
+	749.1.1 = {
+		holder = 74012
+	}
+	763.1.1 = {
+		holder = 146203
+	}
+}
+
+
+c_oleshye = {
+	351.1.1 = {
+		holder = 995000 # heruli
+		government = tribal_government
+		liege = d_ostrogoths
+	}
+	380.1.1 = {
+		holder = 992006
+		liege = k_pontic_steppe
+	}
+	473.1.1 = {
+		holder = 990010 # Kutrigur
+	}
+	495.1.1 = {
+		holder = 990017 # Kutrigur
+	}
+	515.1.1 = {
+		holder = 990021 # Kinialon
+	}
+	532.1.1 = {
+		holder = hun_misc_001
+		liege = d_yedisan
+	}
+	552.1.1 = {
+		holder = 990026 # Sinnion
+	}
+	558.1.1 = {
+		holder = 990023 # Zabergan
+	}
+	632.1.1 = {
+		holder = 159117 #Kubrat
+	}
+	691.1.1 = {
+		liege = d_levedia
+		holder = 74007
+		government = tribal_government
+	}
+	715.1.1 = {
+		holder = 74008
+	}
+	731.1.1 = {
+		holder = 74009
+	}
+	749.1.1 = {
+		holder = 74012
+	}
+	763.1.1 = {
+		holder = 146203
+	}
+}
+
+c_khortytsia = {
+	351.1.1 = {
+		holder = 995000 # heruli
+		government = tribal_government
+		liege = d_ostrogoths
+	}
+	## Hunnic Domination
+	385.1.1 = {
+		holder = 990000 # Uldin
+		liege = e_hunnic_empire
+		government = nomadic_government
+	}
+	473.1.1 = {
+		holder = 990010 # Kutrigur
+	}
+	495.1.1 = {
+		holder = 990017 # Kutrigur
+	}
+	515.1.1 = {
+		holder = 990021 # Kinialon
+	}
+	532.1.1 = {
+		holder = hun_misc_001
+		liege = d_yedisan
+	}
+	552.1.1 = {
+		holder = 990026 # Sinnion
+	}
+	558.1.1 = {
+		holder = 990023 # Zabergan
+	}
+	632.1.1 = {
+		holder = 159117 #Kubrat
+	}
+	691.1.1 = {
+		liege = d_levedia
+		holder = 74007
+		government = tribal_government
+	}
+	715.1.1 = {
+		holder = 74008
+	}
+	731.1.1 = {
+		holder = 74009
+	}
+	749.1.1 = {
+		holder = 74012
+	}
+	763.1.1 = {
+		holder = 146203
+	}
+}
+
+
+c_bakhmut = {
+	# Greuthungi Kings
+	350.1.1 = {
+		holder = 992003
+		government = tribal_government
+	}
+	## Hunnic Domination
+	385.1.1 = {
+		holder = 990000 # Uldin
+		liege = e_hunnic_empire
+		government = nomadic_government
+	}
+	## Saragur Domination
+	473.1.1 = {
+		holder = saragurs_06
+	}
+	500.1.1 = {
+		holder = saragurs_08
+	}
+	632.1.1 = {
+		holder = 159117 #Kubrat
+	}
+	691.1.1 = {
+		liege = d_levedia
+		holder = 74007
+		government = tribal_government
+	}
+	715.1.1 = {
+		holder = 74008
+	}
+	731.1.1 = {
+		holder = 74009
+	}
+	749.1.1 = {
+		holder = 74012
+	}
+	763.1.1 = {
+		holder = 146203
+	}
+}
+
+
+c_samar = {
+	# Greuthungi Kings
+	350.1.1 = {
+		holder = 992003
+		government = tribal_government
+	}
+	## Hunnic Domination
+	385.1.1 = {
+		holder = 990000 # Uldin
+		liege = e_hunnic_empire
+		government = nomadic_government
+	}
+	## Saragur Domination
+	473.1.1 = {
+		holder = saragurs_06
+	}
+	500.1.1 = {
+		holder = saragurs_08
+	}
+	691.1.1 = {
+		liege = d_levedia
+		holder = 74007
+		government = tribal_government
+	}
+	715.1.1 = {
+		holder = 74008
+	}
+	731.1.1 = {
+		holder = 74009
+	}
+	749.1.1 = {
+		holder = 74012
+	}
+	763.1.1 = {
+		holder = 146203
+	}
+}
+
+
+d_don_valley = {
+	## Hunnic Domination
+	385.1.1 = {
+		holder = balamer_02 # Uldin
+		liege = e_hunnic_empire
+		government = nomadic_government
+	}
+	632.1.1 = {
+		holder = 159117 #Kubrat
+	}
+	654.1.1 = {
+		liege = "e_caspian-pontic_steppe"
+		holder = 74004
+		government = tribal_government
+	}
+	662.1.1 = {
+		holder = 74005
+	}
+	704.1.1 = {
+		holder = 146195
+	}
+	743.1.1 = {
+		holder = 146196
+	}
+	
+}
+
+
+c_tana = {
+	# Alan Kingdoms
+	361.1.1 = {
+		holder = alan_26
+		government = tribal_government
+		liege = d_alania
+	}
+	## Hunnic Domination
+	385.1.1 = {
+		holder = balamer_02 # Uldin
+		liege = e_hunnic_empire
+		government = nomadic_government
+	}
+	## Saragur Domination
+	473.1.1 = {
+		holder = saragurs_07
+		liege = d_levedia
+	}
+	500.1.1 = {
+		holder = saragurs_08
+	}
+	632.1.1 = {
+		holder = 159117 #Kubrat
+	}
+	654.1.1 = {
+		liege = "d_don_valley"
+		holder = 74004
+		government = tribal_government
+	}
+	662.1.1 = {
+		holder = 74005
+	}
+	704.1.1 = {
+		holder = 146195
+	}
+	743.1.1 = {
+		holder = 146196
+	}
+	
+}
+
+
+c_golden_hills = {
+	# Alan Kingdoms
+	361.1.1 = {
+		holder = alan_26
+		government = tribal_government
+		liege = d_alania
+	}
+	## Hunnic Domination
+	385.1.1 = {
+		holder = balamer_02 # Uldin
+		liege = e_hunnic_empire
+		government = nomadic_government
+	}
+	## Saragur Domination
+	473.1.1 = {
+		holder = saragurs_07
+		liege = d_levedia
+	}
+	500.1.1 = {
+		holder = saragurs_08
+	}
+	532.1.1 = {
+		holder = saragur_misc_001
+	}
+	654.1.1 = {
+		liege = "d_don_valley"
+		holder = 74004
+		government = tribal_government
+	}
+	662.1.1 = {
+		holder = 74005
+	}
+	704.1.1 = {
+		holder = 146195
+	}
+	743.1.1 = {
+		holder = 146196
+	}
+	
+}
+
+
+c_kazanskaya = {
+	# Alan Kingdoms
+	361.1.1 = {
+		holder = alan_26
+		government = tribal_government
+		liege = d_alania
+	}
+	## Hunnic Domination
+	385.1.1 = {
+		holder = balamer_02 # Uldin
+		liege = e_hunnic_empire
+		government = nomadic_government
+	}
+	## Saragur Domination
+	473.1.1 = {
+		holder = saragurs_07
+		liege = d_levedia
+	}
+	500.1.1 = {
+		holder = saragurs_08
+	}
+	532.1.1 = {
+		holder = saragur_misc_001
+	}
+	654.1.1 = {
+		liege = "d_don_valley"
+		holder = 74004
+		government = tribal_government
+	}
+	662.1.1 = {
+		holder = 74005
+	}
+	704.1.1 = {
+		holder = 146195
+	}
+	743.1.1 = {
+		holder = 146196
+	}
+	
+}
+
+
+c_sarysyn = {
+	# Alan Kingdoms
+	361.1.1 = {
+		holder = alan_26
+		government = tribal_government
+		liege = d_alania
+	}
+	## Hunnic Domination
+	385.1.1 = {
+		holder = balamer_02 # Uldin
+		liege = e_hunnic_empire
+		government = nomadic_government
+	}
+	## Sabir kingdom
+	460.1.1 = {
+		holder = sabir_01
+		government = nomadic_government
+	}
+	525.1.1 = {
+		holder = sabir_04
+	}
+	654.1.1 = {
+		liege = "d_don_valley"
+		holder = 74004
+		government = tribal_government
+	}
+	662.1.1 = {
+		holder = 74005
+	}
+	704.1.1 = {
+		holder = 146195
+	}
+	743.1.1 = {
+		holder = 146196
+	}
+	
+}
+
+d_crimea = {
+	20.1.1 = {
+		change_development_level = 2
+	}
+	### Gothic Crimea
+	391.1.1 = {
+		holder = 992031 # 
+		liege = k_pontic_steppe
+		government = tribal_government
+	}
+	430.1.1 = {
+		holder = 992032 # 
+	}
+	451.1.1 = {
+		holder = crimea_03
+		government = tribal_government
+		liege = 0
+	}
+	480.1.1 = {
+		holder = 992037
+	}
+	500.1.1 = {
+		holder = 992038
+	}
+	530.1.1 = {
+		holder = 992039
+	}
+}
+c_kerch = {
+	361.1.1 = { change_development_level = 5 }
+	532.1.1 = { change_development_level = 6 }
+	768.1.1 = { change_development_level = 7 }
+	# Bosporan Kingdom
+	1.1.1 = {
+		holder = 999200 # Aspourgos	
+	}
+	38.1.1 = {
+		holder = 999203 # Cotys I
+	}
+	70.1.1 = {
+		holder = 999205 # Rhescuporis I
+	}
+	90.1.1 = {
+		holder = 999206 # Sauromates I
+	}
+	123.1.1 = {
+		holder = 999207 # Cotys II
+	}
+	132.1.1 = {
+		holder = 999208 # Rhoimetalces
+	}
+	153.1.1 = {
+		holder = 999209 # Eupator
+	}
+	174.1.1 = {
+		holder = 999210 # Sauromates II
+	}
+	210.1.1 = {
+		holder = 999211 # Rhescuporis II
+	}
+	227.1.1 = {
+		holder = 999213 # Rhescuporis III
+	}
+	228.1.1 = {
+		holder = 999212 # Cotys III
+	}
+	235.1.1 = {
+		holder = 999215 # Rhescuporis IV
+	}
+	235.1.1 = {
+		holder = 999216 # Ininthimaios
+	}
+	240.1.1 = {
+		holder = 999217 # Rhescuporis V
+	}
+	276.1.1 = {
+		holder = 999220 # Teiranes
+	}
+	279.1.1 = {
+		holder = 999222 # Theothorses
+	}
+	309.1.1 = {
+		holder = 999224 # Radamsades
+	}
+	322.1.1 = {
+		holder = 999223 # Rhescuporis VI
+	}
+	342.1.1 = {
+		holder = 999226 # Sauromates
+	}
+	370.1.1 = {
+		holder = 999227 # Sauromates
+	}
+	### Gothic Crimea
+	391.1.1 = {
+		holder = 992031 # 
+	}
+	430.1.1 = {
+		holder = 992032 # 
+	}
+	### Last Bosporan
+	451.1.1 = {
+		holder = 999230 # Douptounos
+		government = roman_government
+	}
+	### Hunnic
+	490.1.1 = {
+		holder = 990020 #Grod
+	}
+	528.1.1 = {
+		holder = 990019 #Mugel
+	}
+	530.1.1 = {
+		holder = crimea_05
+		liege = e_byzantium
+	}
+	632.1.1 = {
+		holder = 159117 #Kubrat
+	}
+}
+
+
+c_kalos_limen = {
+	# Sarmatian
+	350.1.1 = {
+		holder = alan_27
+		government = nomadic_government
+	}
+	### Gothic Crimea
+	391.1.1 = {
+		holder = 992031 #
+	}
+	430.1.1 = {
+		holder = 992032 # 
+	}
+	451.1.1 = {
+		holder = crimea_03
+		government = tribal_government
+		liege = 0
+	}
+	480.1.1 = {
+		holder = 992037
+	}
+	500.1.1 = {
+		holder = 992038
+	}
+	530.1.1 = {
+		holder = 992039
+	}
+	632.1.1 = {
+		holder = 159117 #Kubrat
+	}
+	691.1.1 = {
+		liege = d_levedia
+		holder = 74007
+		government = tribal_government
+	}
+	715.1.1 = {
+		holder = 74008
+	}
+	731.1.1 = {
+		holder = 74009
+	}
+	749.1.1 = {
+		holder = 74012
+	}
+	763.1.1 = {
+		holder = 146203
+	}
+	
+}
+
+
+c_perekop = {
+	# Sarmatian
+	350.1.1 = {
+		holder = alan_27
+		government = nomadic_government
+	}
+	### Gothic Crimea
+	391.1.1 = {
+		holder = 992031 #
+	}
+	430.1.1 = {
+		holder = 992032 # 
+	}
+	451.1.1 = {
+		holder = crimea_03
+		government = tribal_government
+		liege = 0
+	}
+	480.1.1 = {
+		holder = 992037
+	}
+	500.1.1 = {
+		holder = 992038
+	}
+	530.1.1 = {
+		holder = 992039
+	}
+	632.1.1 = {
+		holder = 159117 #Kubrat
+	}
+	691.1.1 = {
+		liege = d_levedia
+		holder = 74007
+		government = tribal_government
+	}
+	715.1.1 = {
+		holder = 74008
+	}
+	731.1.1 = {
+		holder = 74009
+	}
+	749.1.1 = {
+		holder = 74012
+	}
+	763.1.1 = {
+		holder = 146203
+	}
+}
+
+c_chersonesus = {
+	# Roman Crimea
+	355.1.1 = {
+		holder = 999232 # Byscus son of Supolichus
+	}
+	375.1.1 = {
+		holder = 999234 # Pharnakes son of Pharnakes
+		liege = d_crimea
+	}
+	473.1.1 = {
+		holder = crimea_04
+		liege = e_byzantium
+	}
+	500.1.1 = {
+		holder = crimea_05
+		liege = e_byzantium
+	}
+	620.1.1 = {
+		holder = crimea_02
+		liege = e_byzantium
+	}
+}

@@ -1,0 +1,784 @@
+﻿k_kham = {
+	361.1.1 = { change_development_level = 1 }
+	476.1.1 = { change_development_level = 2 }
+	532.1.1 = { change_development_level = 3 }
+	632.1.1 = { change_development_level = 4 }
+	768.1.1 = { change_development_level = 5 }
+}
+
+d_qamdo = {
+	#Sumpa Kingdom (c.200 - 755)
+	200.1.1={
+		#liege = "k_sumpa"
+	}
+	361.1.1 = {
+		holder = qiang_103
+		government = tribal_government
+		liege = k_amdo
+	}
+	395.1.1 = {
+		holder = qiang_104
+	}
+	476.1.1 = {
+		holder = qiang_105
+	}
+	#Qamdo Dynasty - fictional placeholders
+	740.1.1={
+		holder = 305765
+	}
+	#Last Sumpa King Assassinated by the Tibetans, son fled to China
+	755.1.1={
+		liege = "e_tibet"
+	}
+}
+
+
+c_qamdo = {
+	361.1.1 = {
+		holder = qiang_103
+		government = tribal_government
+		liege = k_amdo
+	}
+	395.1.1 = {
+		holder = qiang_104
+	}
+	476.1.1 = {
+		holder = qiang_105
+	}
+	#Sumpa Kingdom (c.200 - 755)
+	200.1.1={
+		liege = "d_qamdo"
+	}
+	#Qamdo Dynasty - fictional placeholders
+	740.1.1={
+		holder = 305765
+	}
+}
+
+
+c_dengqen = {
+	#Sumpa Kingdom (c.200 - 755)
+	200.1.1={
+		liege = "d_qamdo"
+	}
+	361.1.1 = {
+		holder = qiang_103
+		government = tribal_government
+		liege = k_amdo
+	}
+	395.1.1 = {
+		holder = qiang_104
+	}
+	476.1.1 = {
+		holder = qiang_105
+	}
+	#Qamdo Dynasty - fictional placeholders
+	740.1.1={
+		holder = 305765
+	}
+}
+
+
+c_baqen = {
+	#Sumpa Kingdom (c.200 - 755)
+	200.1.1={
+		#liege = "d_baqen"
+	}
+	361.1.1 = {
+		holder = qiang_103
+		government = tribal_government
+		liege = k_amdo
+	}
+	395.1.1 = {
+		holder = qiang_104
+	}
+	476.1.1 = {
+		holder = qiang_105
+	}
+	#Sumpa dynasty (Baqen) - fictional placeholders
+	740.1.1={
+		holder = 305732
+	}
+}
+
+
+c_sog = {
+	#Sumpa Kingdom (c.200 - 755)
+	200.1.1={
+		#liege = "d_baqen"
+	}
+	361.1.1 = {
+		holder = qiang_103
+		government = tribal_government
+		liege = k_amdo
+	}
+	395.1.1 = {
+		holder = qiang_104
+	}
+	476.1.1 = {
+		holder = qiang_105
+	}
+	#Sumpa dynasty (Baqen) - fictional placeholders
+	740.1.1={
+		holder = 305732
+	}
+}
+
+c_banbar = {
+	#Sumpa Kingdom (c.200 - 755)
+	200.1.1={
+		liege = "d_qamdo"
+	}
+	361.1.1 = {
+		holder = qiang_103
+		government = tribal_government
+		liege = k_amdo
+	}
+	395.1.1 = {
+		holder = qiang_104
+	}
+	476.1.1 = {
+		holder = qiang_105
+	}
+	#Qamdo Dynasty - fictional placeholders
+	740.1.1={
+		holder = 305765
+	}
+}
+
+
+d_boyul = {
+	#Boyül Kingdom - offshoot of Purgyal Dynasty (fictional placeholders)
+	630.1.1={
+		liege="e_tibet"
+		holder=247077
+	}
+	640.1.1={
+		holder=12002
+	}
+	642.1.1={
+		holder=12003
+	}
+	676.1.1={
+		holder=12004
+	}
+	704.1.1={
+		holder=12005
+	}
+	755.1.1={
+		holder=12006
+	}
+}
+
+c_bome = {
+	361.1.1 = {
+		holder = lhomon_04
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = lhomon_05
+	}
+	476.1.1 = {
+		holder = lhomon_06
+	}
+	# 532.1.1 = {
+	# 	holder = bodpa_misc_001
+	# 	#liege = d_yarlung
+	# }
+	#Boyül Kingdom - offshoot of Purgyal Dynasty (fictional placeholders)
+	
+	630.1.1={
+		holder=247077
+		liege="d_boyul"
+	}
+	640.1.1={
+		holder=12002
+	}
+	642.1.1={
+		holder=12003
+	}
+	676.1.1={
+		holder=12004
+	}
+	704.1.1={
+		holder=12005
+	}
+	755.1.1={
+		holder=12006
+	}
+}
+
+c_baxoi = {
+	361.1.1 = {
+		holder = lhomon_01
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = lhomon_02
+	}
+	476.1.1 = {
+		holder = lhomon_03
+	}
+	630.1.1={
+		holder=247077
+		liege="d_boyul"
+	}
+	640.1.1={
+		holder=12002
+	}
+	642.1.1={
+		holder=12003
+	}
+	676.1.1={
+		holder=12004
+	}
+	704.1.1={
+		holder=12005
+	}
+	755.1.1={
+		holder=12006
+	}
+}
+
+
+c_zogang = {
+	361.1.1 = {
+		holder = lhomon_01
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = lhomon_02
+	}
+	476.1.1 = {
+		holder = lhomon_03
+	}
+	#Boyül Kingdom - offshoot of Purgyal Dynasty (fictional placeholders)
+	630.1.1={
+		holder=247077
+		liege="d_boyul"
+	}
+	640.1.1={
+		holder=12002
+	}
+	642.1.1={
+		holder=12003
+	}
+	676.1.1={
+		holder=12004
+	}
+	704.1.1={
+		holder=12005
+	}
+	755.1.1={
+		holder=12006
+	}
+}
+
+
+d_nyingchi = {
+	#Nyingchi Kingdom - fictional placeholders
+	740.1.1={
+		liege = "e_tibet"
+		holder = 304444
+	}
+}
+
+
+c_nyingchi = {
+	361.1.1 = {
+		holder = lhomon_04
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = lhomon_05
+	}
+	476.1.1 = {
+		holder = lhomon_06
+	}
+	# 532.1.1 = {
+	# 	holder = bodpa_misc_001
+	# 	liege = d_yarlung
+	# }
+	#Nyingchi Kingdom - fictional placeholders
+	740.1.1={
+		liege="d_nyingchi"
+		holder = 304444
+	}
+}
+
+
+c_gongbo = {
+	361.1.1 = {
+		holder = qiang_100
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = qiang_101
+	}
+	476.1.1 = {
+		holder = qiang_102
+	}
+	#Nyingchi Kingdom - fictional placeholders
+	740.1.1={
+		liege="d_nyingchi"
+		holder = 304444
+	}
+}
+
+
+d_nangqen = {
+	361.1.1 = {
+		holder = qiang_106
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = qiang_107
+	}
+	476.1.1 = {
+		holder = qiang_108
+	}
+	530.1.1 = {
+		holder = qiang_127
+	}
+	#Nangqên Kingdom
+	740.1.1={
+		liege = "e_tibet"
+		holder = 304264
+	}
+}
+
+
+c_nangqen = {
+	361.1.1 = {
+		holder = qiang_106
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = qiang_107
+	}
+	476.1.1 = {
+		holder = qiang_108
+	}
+	530.1.1 = {
+		holder = qiang_127
+	}
+	#Nangqên Kingdom
+	740.1.1={
+		liege="d_nangqen"
+		holder = 304264
+	}
+}
+
+
+c_gyegumdo = {
+	361.1.1 = {
+		holder = qiang_106
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = qiang_107
+	}
+	476.1.1 = {
+		holder = qiang_108
+	}
+	530.1.1 = {
+		holder = qiang_127
+	}
+	#Nangqên Kingdom
+	740.1.1={
+		liege="d_nangqen"
+		holder = 304264
+	}
+}
+
+
+d_lhatok = {
+	#Lhatok Kingdom
+	740.1.1={
+		liege = "e_tibet"
+		holder = 304294
+	}
+}
+
+
+c_lhatok = {
+	361.1.1 = {
+		holder = qiang_106
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = qiang_107
+	}
+	476.1.1 = {
+		holder = qiang_108
+	}
+	530.1.1 = {
+		holder = qiang_127
+	}
+	#Lhatok Kingdom
+	740.1.1={
+		liege="d_lhatok"
+		holder = 304294
+	}
+}
+
+
+c_zhagyab = {
+	361.1.1 = {
+		holder = qiang_109
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = qiang_110
+	}
+	476.1.1 = {
+		holder = qiang_111
+	}
+	530.1.1 = {
+		holder = qiang_128
+	}
+	#Lhatok Kingdom
+	740.1.1={
+		liege="d_lhatok"
+		holder = 304294
+	}
+}
+
+
+c_gonjo = {
+	361.1.1 = {
+		holder = qiang_109
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = qiang_110
+	}
+	476.1.1 = {
+		holder = qiang_111
+	}
+	530.1.1 = {
+		holder = qiang_128
+	}
+	#Lhatok Kingdom
+	740.1.1={
+		liege="d_lhatok"
+		holder = 304294
+	}
+}
+
+
+d_lingtsang = {
+	#Lingtsang Kingdom
+	740.1.1={
+		liege = "e_tibet"
+		holder = 304236
+	}
+}
+
+
+c_lingtsang = {
+	361.1.1 = {
+		holder = qiang_112
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = qiang_113
+	}
+	476.1.1 = {
+		holder = qiang_114
+	}
+	530.1.1 = {
+		holder = qiang_131
+	}
+	#Lingtsang Kingdom
+	740.1.1={
+		liege="d_lingtsang"
+		holder = 304236
+	}
+}
+
+
+c_ariksar = {
+	361.1.1 = {
+		holder = qiang_115
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = qiang_116
+	}
+	476.1.1 = {
+		holder = qiang_117
+	}
+	530.1.1 = {
+		holder = qiang_132
+	}
+	#Lingtsang Kingdom
+	740.1.1={
+		liege="d_lingtsang"
+		holder = 304236
+	}
+}
+
+
+d_dege = {
+	705.1.1={
+		liege = "e_tibet"
+		holder = 247272
+	}
+	738.1.1={
+		holder = 247273
+	}
+	764.1.1={
+		holder = 247274
+	}
+}
+
+
+c_dege = {
+	361.1.1 = {
+		holder = qiang_112
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = qiang_113
+	}
+	476.1.1 = {
+		holder = qiang_114
+	}
+	530.1.1 = {
+		holder = qiang_131
+	}
+	705.1.1={
+		liege="d_dege"
+		holder = 247272
+	}
+	738.1.1={
+		holder = 247273
+	}
+	764.1.1={
+		holder = 247274
+	}
+}
+
+
+c_pelyul = {
+	361.1.1 = {
+		holder = qiang_118
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = qiang_119
+	}
+	476.1.1 = {
+		holder = qiang_120
+	}
+	530.1.1 = {
+		holder = qiang_130
+	}
+	705.1.1={
+		liege="d_dege"
+		holder = 247272
+	}
+	738.1.1={
+		holder = 247273
+	}
+	764.1.1={
+		holder = 247274
+	}
+}
+
+
+c_garze = {
+	361.1.1 = {
+		holder = qiang_115
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = qiang_116
+	}
+	476.1.1 = {
+		holder = qiang_117
+	}
+	530.1.1 = {
+		holder = qiang_132
+	}
+	#Qiang Tribes
+	500.1.1={
+		liege = "d_chakla"
+	}
+	#Drakgo Dynasty - fictional Placeholders
+	740.1.1={
+		holder = bodpa0121
+	}
+}
+
+d_batang = {
+	#Batang Kingdom
+	740.1.1={
+		liege = "e_tibet"
+		holder = 304324
+	}
+}
+
+c_batang = {
+	361.1.1 = {
+		holder = qiang_121
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = qiang_122
+	}
+	476.1.1 = {
+		holder = qiang_123
+	}
+	530.1.1 = {
+		holder = qiang_129
+	}
+	#Batang Kingdom
+	740.1.1={
+		liege="d_batang"
+		holder = 304324
+	}
+}
+
+
+c_markam = {
+	361.1.1 = {
+		holder = qiang_109
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = qiang_110
+	}
+	476.1.1 = {
+		holder = qiang_111
+	}
+	530.1.1 = {
+		holder = qiang_128
+	}
+	#Batang Kingdom
+	740.1.1={
+		liege="d_batang"
+		holder = 304324
+	}
+}
+
+
+d_litang = {
+	#Litang Kingdom
+	740.1.1={
+		liege = "e_tibet"
+		holder = 304354
+	}
+}
+
+
+c_litang = {	
+	361.1.1 = {
+		holder = qiang_118
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = qiang_119
+	}
+	476.1.1 = {
+		holder = qiang_120
+	}
+	530.1.1 = {
+		holder = qiang_130
+	}
+	#Litang Kingdom
+	740.1.1={
+		liege="d_litang"
+		holder = 304354
+	}
+}
+
+
+c_lenggu = {
+	361.1.1 = {
+		holder = qiang_121
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = qiang_122
+	}
+	476.1.1 = {
+		holder = qiang_123
+	}
+	530.1.1 = {
+		holder = qiang_129
+	}
+	#Litang Kingdom
+	740.1.1={
+		liege="d_litang"
+		holder = 304354
+	}
+}
+
+
+c_nyagrong = {
+	361.1.1 = {
+		holder = qiang_118
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = qiang_119
+	}
+	476.1.1 = {
+		holder = qiang_120
+	}
+	530.1.1 = {
+		holder = qiang_130
+	}
+	#Litang Kingdom
+	740.1.1={
+		liege="d_litang"
+		holder = 304354
+	}
+}
+
+
+c_deqen = {
+	361.1.1 = {
+		holder = qiang_109
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = qiang_110
+	}
+	476.1.1 = {
+		holder = qiang_111
+	}
+	530.1.1 = {
+		holder = qiang_128
+	}
+	#Dêqên Kingdom
+	740.1.1={
+		#liege="d_deqen"
+		holder = 304384
+	}
+}
+
+
+c_gyaitang = {
+	361.1.1 = {
+		holder = qiang_121
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = qiang_122
+	}
+	476.1.1 = {
+		holder = qiang_123
+	}
+	530.1.1 = {
+		holder = qiang_129
+	}
+	#Dêqên Kingdom
+	740.1.1={
+		#liege="d_deqen"
+		holder = 304384
+	}
+}
+

@@ -1,0 +1,70 @@
+﻿namespace = TFE_slavic_decisions_event
+
+# Croatia Formation Event
+TFE_slavic_decisions_event.0001 = {
+	type = character_event
+	title = TFE_slavic_decisions_event.0001.t
+	desc = TFE_slavic_decisions_event.0001.desc
+	theme = realm
+
+	right_portrait = {
+		character = scope:founder
+		animation = personality_bold
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+	}
+
+	#Ok
+	option = {
+		name = TFE_slavic_decisions_event.0001.a
+	}
+
+}
+
+# Poland Formation Event
+TFE_slavic_decisions_event.0002 = {
+	type = character_event
+	title = TFE_slavic_decisions_event.0002.t
+	desc = TFE_slavic_decisions_event.0002.desc
+	theme = realm
+
+	right_portrait = {
+		character = scope:founder
+		animation = personality_bold
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+	}
+
+	#Ok
+	option = {
+		name = TFE_slavic_decisions_event.0002.a
+	}
+
+}
+
+# Bohemia Formation Event
+TFE_slavic_decisions_event.0003 = {
+	type = character_event
+	title = TFE_slavic_decisions_event.0003.t
+	desc = TFE_slavic_decisions_event.0003.desc
+	theme = realm
+
+	right_portrait = {
+		character = scope:founder
+		animation = personality_bold
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+	}
+
+	#Ok
+	option = {
+		name = TFE_slavic_decisions_event.0003.a
+	}
+
+}

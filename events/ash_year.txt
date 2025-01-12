@@ -1,0 +1,245 @@
+﻿namespace = ash
+ash.0001 = {
+	hidden = yes
+	scope = none
+	immediate = {
+        every_county={
+			limit={
+				title_province={
+
+
+				NOT={
+					geographical_region=world_africa
+
+				}
+				NOT={
+					geographical_region=world_middle_east
+					
+				}
+				NOT={
+					geographical_region=world_india
+					
+				}
+			}
+                add_county_modifier={
+                    modifier = lightwithoutheat_modifier
+                    years = 5
+				}
+			}
+        
+        }
+		every_county_in_region={
+		
+			region=ghw_region_scandinavia
+			
+			 add_county_modifier={
+                    modifier = fimbulwinter_modifier
+                    years = 5
+				}
+		}
+        every_ruler={
+            trigger_event = ash.0002
+        }
+		every_ruler={
+			limit={
+				capital_county={
+					geographical_region=ghw_region_scandinavia
+				}
+			}
+			trigger_event={
+				days=12
+				id=ash.0003
+			}
+		}
+    }
+}
+ash.0002 = {
+	title = ash.0002.t
+	desc = ash.0002.desc
+	type = character_event
+	window = fullscreen_event
+	theme = dread
+    background = alley_night
+	left_portrait = {
+		character = scope:root
+		animation = personality_honorable
+	}
+	right_portrait = {
+		character = scope:england
+		animation = rage
+	}
+	override_background = { reference = farmland }
+
+
+	# We shall find out together.
+	option = {
+		name = ash.0002.a
+
+		# Gain a hefty chunk of prestige.
+		add_stress = minor_stress_gain
+
+		# No stress for a simply notification event.
+		ai_chance = {
+			# No need for complex AI chance for single-option event.
+			base = 100
+		}
+	}
+    option = {
+        trigger={
+            learning > 18
+        }
+		name = ash.0002.b
+
+		# Gain a hefty chunk of prestige.
+		add_prestige = 200
+
+		# No stress for a simply notification event.
+		ai_chance = {
+			# No need for complex AI chance for single-option event.
+			base = 100
+		}
+	}
+    option = {
+        trigger={
+            religion = religion:hellenism_religion
+        }
+		name = ash.0002.c
+
+		# Gain a hefty chunk of prestige.
+		add_stress = major_stress_gain
+        add_piety = major_piety_gain
+
+		# No stress for a simply notification event.
+		ai_chance = {
+			# No need for complex AI chance for single-option event.
+			base = 100
+		}
+	}
+        option = {
+        trigger={
+            faith= faith:norse_pagan
+        }
+		name = ash.0002.d
+
+		# Gain a hefty chunk of prestige.
+		add_stress = major_stress_gain
+        add_piety = major_piety_gain
+
+		# No stress for a simply notification event.
+		ai_chance = {
+			# No need for complex AI chance for single-option event.
+			base = 100
+		}
+	}
+}
+#norse responses
+ash.0003 = {
+	title = ash.0003.t
+	desc = ash.0003.desc
+	type = character_event
+	theme = dread
+	background = alley_night
+	left_portrait = {
+		character = scope:root
+		animation = personality_honorable
+	}
+	if={
+		limit={
+			
+			has_available_funeral_target = yes
+		}
+				random_in_list = {
+					variable = funeral_activity_targets
+					save_scope_as = unburied_body
+				}
+	}
+	option = {
+		name = ash.0003.a
+		trigger_event = {
+			id = ash.0004
+			days = 20
+		}
+		
+		remove_long_term_gold = 180
+		#Create Mound. 120 gold. 
+	}
+		option = {
+		name = ash.0003.c
+		trigger_event = ash.0008
+		#immediate war by omen
+	}
+	option = {
+		trigger = {
+			has_any_artifact = yes
+		}
+		name = ash.0003.d
+		trigger_event = ash.0009
+		#Artifact cursed
+	}
+}
+ash.0004 = {
+	title = ash.0004.t
+	desc = ash.0004.desc
+	type = character_event
+	theme = dread
+	background = temple
+	left_portrait = {
+		character = scope:root
+		animation = personality_honorable
+	}
+	add_county_modifier = {
+		modifier = mound_of_the_dead
+	}
+	option={
+		name = ash.0004.a
+
+	}
+
+}
+ash.0006 = {
+		title = ash.0006.t
+	desc = ash.0006.desc
+	type = character_event
+	theme = dread
+	background = temple
+	left_portrait = {
+		character = scope:root
+		animation = personality_honorable
+	}
+	add_county_modifier = {
+		modifier = mound_of_the_dead
+	}
+	option={
+		name = ash.0004.a
+
+	}
+
+}
+ash.0008 = {
+
+}
+ash.0009 = {
+	title = ash.0009.t
+	desc = ash.0009.desc
+	type = character_event
+	theme = dread
+	left_portrait = {
+		character = scope:root
+		animation = personality_honorable
+	}
+	immediate={
+		random_character_artifact={
+			save_scope_as=cursed_artifact
+		}
+	}
+	option={
+		name=ash.0009.a
+		destroy_artifact = scope:cursed_artifact
+	}
+	option={
+		name=ash.0009.b
+		add_character_modifier = {
+			modifier = cursed_by_artifact_modifier
+		}
+	}
+}

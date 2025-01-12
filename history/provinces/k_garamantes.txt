@@ -1,0 +1,227 @@
+﻿#k_garamantes
+##d_ghat ###################################
+###c_ghat
+6460 = {	#GHAT
+	culture = garamantian
+	religion = amazigh_pagan
+	holding = castle_holding
+}
+6461 = {	#AL-FEWET
+	holding = none
+}
+6462 = {	#AL-BARKAT
+	holding = city_holding
+}
+6661 = {	# 6661 - GHAT_ROUTE
+	holding = none
+}
+6601 = {	#WADI_IRAWAN	#"Traversable Wasteland"
+	holding = none
+}
+6602 = {	#ERG_GHATI
+	holding = none
+}
+
+###c_djanet
+6463 = {	#DJANET
+	culture = tuareg
+	religion = tuareg_pagan
+	holding = tribal_holding
+	1050.1.1 = {
+		culture = butr
+		religion = ibadi
+	}
+}
+6464 = {	#EFERI
+	culture = tuareg
+	religion = tuareg_pagan
+	holding = tribal_holding
+	#100.1.1 = {
+	#	special_building_slot = monumental_tomb_of_abalessa
+	#	special_building = monumental_tomb_of_abalessa
+	#}
+	
+}
+6663 = {	#AHAGGAR
+	holding = none
+}
+6662 = {	# 6662 - EAST_AHAGGAR
+	holding = none
+}
+
+###c_souf
+4604 = {	#SOUF
+	culture = laguatan
+	religion = amazigh_pagan
+	holding = tribal_holding
+
+	532.1.1 = {
+		#culture = gaetulian
+		religion = chalcedonian
+	}
+	768.1.1 = {
+		religion = ibadi
+		culture = butr
+	}
+}
+4605 = {	#DOUZ
+	holding = none
+}
+
+###c_bir_amir
+4572 = {	#BIR AMIR
+	culture = laguatan
+	religion = ammon_pagan
+	holding = tribal_holding
+
+	632.1.1 = {
+		religion = chalcedonian
+	}
+	768.1.1 = {
+		religion = ibadi
+		culture = butr
+	}
+
+}
+6321 = {	#SINAWIN
+	holding = none
+}
+
+###c_ghadames
+4570 = {	#GHADAMES
+	culture = laguatan
+	religion = ammon_pagan
+	holding = castle_holding
+
+	632.1.1 = {
+		religion = chalcedonian
+	}
+	768.1.1 = {
+		religion = ibadi
+		culture = butr
+	}
+}
+4571 = {	#DARADJ
+	holding = none
+}
+
+
+##d_fezzan ###################################
+###c_murzuk
+6451 = {	#MURZUK
+	culture = garamantian
+	religion = ammon_pagan
+	holding = castle_holding
+	1176.1.1 = {
+		religion = sunni
+	}
+}
+6450 = {	#TASSAWA
+	holding = none
+}
+6669 = {	#TRAGHAN
+	holding = none
+}
+6667 = {	#FEZZAN_ROUTE
+	holding = none
+}
+
+###c_waddan
+4563 = {	#WADDAN
+	culture = laguatan
+	religion = ammon_pagan
+	holding = tribal_holding
+	
+	632.1.1 = {
+		religion = chalcedonian
+	}
+	768.1.1 = {
+		religion = ibadi
+	}
+}
+4553 = {	#TAJRIFT
+	holding = none
+}
+4564 = {	#TINNAI
+	holding = none
+}
+
+###c_zawila
+6447 = {	#ZAWILA
+	culture = garamantian
+	religion = ammon_pagan
+	holding = castle_holding
+	1176.1.1 = {
+		religion = sunni
+	}
+}
+6446 = {	#ZALHA
+	holding = none
+}
+
+###c_germa
+6449 = {	#GERMA
+	culture = garamantian
+	religion = ammon_pagan
+	holding = city_holding
+	300.1.1 = {
+		buildings = {
+			plantations_04
+			hospices_02
+			city_02
+		}
+		duchy_capital_building = march_01
+	}
+	1176.1.1 = {
+		religion = sunni
+	}
+}
+6448 = {	#SABHA
+	holding = none
+}
+6459 = {	#TAMZAWA
+	holding = none
+}
+
+###c_awjila
+6106 = {	#AWJILA
+	religion = ammon_pagan
+	culture = laguatan
+	holding = tribal_holding
+}
+6107 = {	#JALU
+	holding = none
+}
+6108 = {	#JAKHARRAD
+	holding = none
+}
+
+###c_jafara
+4569 = {	#TAMAZDA
+	holding = tribal_holding
+	culture = laguatan
+	religion = ammon_pagan # Worship of Guzil attested possibly as late as al-Bakri in the 11th century
+
+	#532.1.1 = {
+	#	religion = chalcedonian
+	#}
+	#768.1.1 = {
+	#	religion = ibadi
+	#	culture = butr
+	#}
+}
+4561 = {	#ZUWARA
+	holding = none
+}
+4558 = {	#TIRI
+	holding = none
+}
+4559 = {	#DJADO_JAFARA
+	holding = church_holding
+}
+4560 = {	#NALUT
+	holding = none
+}
+4567 = {	#FURSATA
+	holding = none
+}

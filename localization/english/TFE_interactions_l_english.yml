@@ -1,0 +1,43 @@
+﻿l_english:
+ select_preferred_caliph:0 "Select as Preferred Caliph"
+ select_preferred_caliph_desc:0 "Selecting a Preferred Caliph allows you to decide where your zakah will go. It also helps to legitimize the chosen Caliph"
+ select_preferred_caliph_notification:0 "Preferred Caliph Selected"
+ new_preferred_caliph_interactions:0 "[CHARACTER.GetShortUIName|U] chose [TARGET_CHARACTER.GetShortUIName|U] as their preferred Caliph."
+ 
+ #adopt_interaction:0 "Adopt as Child"
+ #adopt_interaction_desc:0 "Adopt the recepient as your child, making them a part of your house."
+ adopt_interaction_notification:0 "The recipient is now your child"
+ many_children_adopt_tt:0 "You already have many children"
+ prestige_cost_adopt_tt:0 "You don't have enough prestige"
+ renown_cost_adopt_tt:0 "You don't have enough renown"
+ 
+ sell_gladiator_interaction:0 "Sell as a Gladiator"
+ sell_gladiator_interaction_desc:0 "As [recipient.GetShortUINameNoTooltip] can fight, you can sell [recipient.GetHerHim] to a rich Lanista. [recipient.GetShortUINameNoTooltip] will fight and most likely die in the arena."
+ sell_gladiator_interaction_recipient_effect:0 "[recipient.GetShortUINameNoTooltip] will be sold into slavery as a Gladiator, forced to fight for [recipient.GetHerHis] new master known as a Lanista."
+
+ send_to_imperial_court:0 "Send to Imperial Court"
+ send_to_imperial_court_desc:0 "Send [recipient.GetShortUINameNoTooltip] to the Imperial court to train and eventually become a Senator of the Roman Empire."
+ send_to_imperial_court_notification:0 "[recipient.GetShortUINameNoTooltip] is now a [training_senator|E]"
+
+
+ any_great_house_is_dead:0 "Any of the [great_houses|E] are dead"
+ NOT_any_great_house_is_dead:0 "None of the [great_houses|E] are dead"
+ select_new_great_house:0 "Ascend the House"
+ select_new_great_house_desc:0 "After the death of one of our [great_houses|E], it is time to ascend [recipient.GetDynasty.GetName] to the status of [great_house|E] for the strength of Eran."
+ select_new_great_house_notification:0 "[recipient.GetDynasty.GetName] is now a [great_house|E]"
+
+ calling_nomadic_empire:0 "Call Aid from an Empire"
+ calling_nomadic_empire_desc:0 "Our enemies border a nomadic [empire|E] and thus we posses an oppurtunity to call the empire to aid us against our enemies."
+ at_war_with_bordering_non_nomadic_empire:0 "At war with a realm bordering the nomadic [empire|E]."
+ NOT_at_war_with_bordering_non_nomadic_empire:0 "Not at war with a realm bordering the nomadic [empire|E]."
+
+ TFE_negotiate_alliance_interaction:0 "Negotiate Alliance (Imperial)"
+ TFE_negotiate_alliance_interaction_extra_icon:0 "$hook_extra_icon$"
+ TFE_negotiate_alliance_interaction_desc:0 "Offer an alliance via Imperial Policy"
+
+ IMPERIAL_MARRIAGE:0 "You have an Imperial Policy encouraging marriages"
+
+ relocate_legion_domain_interaction:0 "Relocate Legion Within Domain"
+ recently_relocated_legion_tt:0 "This legion was relocated already within the past 5 years!"
+ capital_county_legion_relocate_tt:0 "You can't relocate a legion to your capital!"
+ 

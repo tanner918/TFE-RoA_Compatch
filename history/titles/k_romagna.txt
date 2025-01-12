@@ -1,0 +1,981 @@
+﻿k_romagna = {
+	361.1.1 = { change_development_level = 5 }
+	532.1.1 = { change_development_level = 6 }
+	768.1.1 = { change_development_level = 7 }
+	476.1.1 = {
+		de_jure_liege = e_italy
+	}
+	756.1.1 = {
+		holder = 7895
+	}
+	757.4.29 = {
+		holder = 7865
+	}
+	767.6.28 = {
+		holder = 7864
+	}
+}
+
+
+d_romagna = {
+	361.1.1 = { change_development_level = 5 }
+	532.1.1 = { change_development_level = 10 }
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = k_italia_annonariae
+		liege = k_italia_annonariae
+	}
+	361.1.1 = {
+		holder = roma_01
+	}
+	395.1.1 = {
+		holder = roma_02
+	}
+	### Ravenna Becomes Capital
+	### Odarcer's Invasion
+	476.9.4 = {
+		de_jure_liege = k_italy
+		liege = k_italy
+	}
+	476.9.4 = {
+		holder = 996002 # Odoacer
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = roman_government
+				}
+			}
+		}
+	}
+	625.1.1 = {
+		holder = isaac_the_armenian
+	}
+}
+
+
+c_ravenna = {
+	## Diocletian Division
+	200.1.1 = {
+		liege = k_italia_annonariae
+	}
+	361.1.1 = {
+		holder = roma_01
+	}
+	395.1.1 = {
+		holder = roma_02
+		change_development_level=11
+	}
+	### Ravenna Becomes Capital
+	### Odoacer's Invasion
+	476.9.4 = {
+		government = feudal_government
+		liege = k_italy
+	}
+	476.9.4 = {
+		holder = 996002 # Odoacer
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = roman_government
+				}
+			}
+		}
+	}
+	625.1.1 = {
+		holder = isaac_the_armenian
+	}
+	763.1.1 = {
+		holder = 190287 #Teuderic
+		liege = k_papal_state
+	}
+}
+
+
+c_bologna = {
+	## Diocletian Division
+	200.1.1 = {
+		liege = k_italia_annonariae
+	}
+	361.1.1 = {
+		holder = roma_01
+	}
+	395.1.1 = {
+		holder = roma_02
+	}
+	### Ravenna Becomes Capital
+	### Odarcer's Invasion
+	476.9.4 = {
+		government = feudal_government
+		liege = k_italy
+	}
+	476.9.4 = {
+		holder = 996002 # Odoacer
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = roman_government
+				}
+			}
+		}
+	}
+	750.1.1 = {
+		holder = 190268 #Ursus
+		liege = k_papal_state
+	}
+}
+
+c_ferrara = {
+	## Diocletian Division
+	200.1.1 = {
+		liege = k_italia_annonariae
+	}
+	361.1.1 = {
+		holder = roma_01
+	}
+	395.1.1 = {
+		holder = roma_02
+	}
+	### Ravenna Becomes Capital
+	### Odarcer's Invasion
+	476.9.4 = {
+		government = feudal_government
+		liege = k_italy
+	}
+	476.9.4 = {
+		holder = 996002 # Odoacer
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = roman_government
+				}
+			}
+		}
+	}
+	747.1.1 = {
+		holder = 190282 #Lupo
+		liege = k_papal_state
+	}
+}
+
+c_casentino = {
+	## Diocletian Division
+	200.1.1 = {
+		liege = d_romagna
+	}
+	361.1.1 = {
+		holder = roma_03
+	}
+	395.1.1 = {
+		holder = roma_04
+	}
+	763.1.1 = {
+		liege = k_italy
+	}
+	### Ravenna Becomes Capital
+	### Odarcer's Invasion
+	476.9.4 = {
+		government = feudal_government
+		liege = k_italy
+	}
+	476.9.4 = {
+		holder = 996002 # Odoacer
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = roman_government
+				}
+			}
+		}
+	}
+	763.1.1 = {
+		liege = k_italy
+	}
+	763.1.1 = {
+		holder = 190287 #Teuderic
+	}
+}
+
+c_san_marino = {
+	301.1.1 = {
+		government = republic_government
+		liege = d_romagna
+	}
+	372.1.1 = {
+		holder = san_marino_01
+		liege = d_romagna
+	}
+	532.1.1 = {
+		government = theocracy_government
+		holder = san_marino_02
+		liege = k_ostrogoths
+	}
+}
+
+d_ancona = {
+	## Diocletian Division
+	200.1.1 = {
+		liege = k_italia_suburbicariae
+		de_jure_liege = k_italia_suburbicariae
+	}
+	361.1.1 = {
+		holder = roma_05
+	}
+	395.1.1 = {
+		holder = roma_06
+	}
+	### Odarcer's Invasion
+	476.9.4 = {
+		government = feudal_government
+		liege = k_italy
+		de_jure_liege = k_italy
+	}
+	476.9.4 = {
+		holder = roma_12 # 
+	}
+	532.1.1 = {
+		holder = roman_09
+	}
+	625.1.1 = {
+		holder = isaac_the_armenian
+	}
+	
+}
+
+
+c_ancona = {
+	## Diocletian Division
+	200.1.1 = {
+		liege = k_italia_suburbicariae
+	}
+	361.1.1 = {
+		holder = roma_05
+	}
+	395.1.1 = {
+		holder = roma_06
+	}
+	### Odarcer's Invasion
+	476.9.4 = {
+		government = feudal_government
+		liege = k_italy
+	}
+	476.9.4 = {
+		holder = roma_12 # 
+	}
+	625.1.1 = {
+		holder = isaac_the_armenian
+	}
+	741.1.1 = {
+		liege = d_spoleto
+	}
+	741.1.1 = {
+		holder = 190283 #Tachiperto
+	}
+	760.1.1 = {
+		holder = 190284 #Lupo
+	}
+	
+
+}
+
+
+c_urbino = {
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = d_romagna
+		liege = d_romagna
+	}
+	361.1.1 = {
+		holder = roma_03
+	}
+	395.1.1 = {
+		holder = roma_04
+	}
+	### Odarcer's Invasion
+	476.9.4 = {
+		government = feudal_government
+		liege = k_italy
+	}
+	476.9.4 = {
+		holder = roma_12 # 
+	}
+	763.1.1 = {
+		liege = k_papal_state
+	}
+	### Ravenna Becomes Capital
+	### Odarcer's Invasion
+	741.1.1 = {
+		liege = d_spoleto
+	}
+	741.1.1 = {
+		holder = 190283 #Tachiperto
+	}
+	760.1.1 = {
+		holder = 190285 #Halo
+	}
+	
+
+}
+
+
+c_fermo = {
+	## Diocletian Division
+	200.1.1 = {
+		liege = k_italia_suburbicariae
+	}
+	361.1.1 = {
+		holder = roma_05
+	}
+	395.1.1 = {
+		holder = roma_06
+	}
+	### Odarcer's Invasion
+	476.9.4 = {
+		government = feudal_government
+		liege = k_italy
+	}
+	476.9.4 = {
+		holder = roma_12 # 
+	}
+	762.1.1 = {
+		liege = d_benevento
+	}
+	762.1.1 = {
+		holder = 190308 #Maio
+	}
+	
+}
+
+
+d_spoleto = {
+	## Diocletian Division
+	200.1.1 = {
+		liege = k_italia_suburbicariae
+		de_jure_liege = k_italia_suburbicariae
+	}
+	361.1.1 = {
+		holder = roma_09
+	}
+	395.1.1 = {
+		holder = roma_10
+	}
+	### Odarcer's Invasion
+	476.9.4 = {
+		government = feudal_government
+		liege = k_italy
+		de_jure_liege = k_italy
+	}
+	476.9.4 = {
+		holder = roma_13 # 
+	}
+	532.1.1 = {
+		holder = roman_05
+	}
+	763.1.1 = {
+		liege = k_papal_state
+	}
+	763.1.1 = {
+		holder = 190265 #Theodicus
+	}
+	764.1.1 = {
+		holder = 190267 #Hildeprand
+	}
+	
+	
+
+}
+
+
+c_spoleto = {
+	## Diocletian Division
+	200.1.1 = {
+		liege = k_italia_suburbicariae
+	}
+	361.1.1 = {
+		holder = roma_09
+	}
+	395.1.1 = {
+		holder = roma_10
+	}
+	### Odarcer's Invasion
+	476.9.4 = {
+		government = feudal_government
+		liege = k_italy
+	}
+	476.9.4 = {
+		holder = roma_13 # 
+	}
+	763.1.1 = {
+		liege = k_italy
+	}
+	763.1.1 = {
+		holder = 190265 #Theodicus
+	}
+	764.1.1 = {
+		holder = 190267 #Hildeprand
+	}
+	
+	
+
+}
+
+
+c_orvieto = {
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = d_toscana
+	}
+	361.1.1 = {
+		holder = italia_18
+	}
+	395.1.1 = {
+		holder = italia_misc_01
+		liege = d_toscana
+	}
+	### Odarcer's Invasion
+	476.9.4 = {
+		government = feudal_government
+		liege = k_italy
+		de_jure_liege = d_spoleto
+	}
+	476.9.4 = {
+		holder = roma_13 # 
+	}
+	758.1.1 = {
+		liege = k_italy
+	}
+	758.1.1 = {
+		holder = 190328 #Peter
+	}
+	
+}
+
+c_teramo = {
+	## Diocletian Division
+	200.1.1 = {
+		liege = k_italia_suburbicariae
+	}
+	361.1.1 = {
+		holder = roma_09
+	}
+	395.1.1 = {
+		holder = roma_10
+	}
+	### Odarcer's Invasion
+	476.9.4 = {
+		government = feudal_government
+		liege = k_italy
+	}
+	476.9.4 = {
+		holder = roma_13 # 
+	}
+	762.1.1 = {
+		liege = d_benevento
+	}
+	762.1.1 = {
+		holder = 190308 #Maio
+	}
+	
+}
+
+c_lanciano = {
+	## Diocletian Division
+	200.1.1 = {
+		liege = k_italia_suburbicariae
+		de_jure_liege = d_benevento
+	}
+	361.1.1 = {
+		holder = sicily_04
+	}
+	395.1.1 = {
+		holder = sicily_05
+	}
+	### Odarcer's Invasion
+	476.9.4 = {
+		government = feudal_government
+		liege = k_italy
+		de_jure_liege = d_spoleto
+	}
+	476.9.4 = {
+		holder = roma_13 # 
+	}
+	571.1.1 = {
+		liege = k_italy
+	}
+	571.1.1 = {
+		holder = 190127 #Zotto
+	}
+	591.1.1 = {
+		holder = 190153 #Arechis I
+	}
+	641.1.1 = {
+		holder = 190154 #Aiulf I
+	}
+	646.1.1 = {
+		holder = 190130 #Radoald
+	}
+	651.1.1 = {
+		holder = 190133 #Grimoald
+	}
+	662.1.1 = {
+		holder = 190135 #Romuald I
+	}
+	687.1.1 = {
+		holder = 190138 #Grimoald II
+	}
+	689.1.1 = {
+		holder = 190139 #Gisulf I
+	}
+	706.1.1 = {
+		holder = 190141 #Romuald II
+	}
+	743.1.1 = {
+		holder = 190144 #Gisulf II
+	}
+	751.1.1 = {
+		holder = 190146 #Liutprand
+	}
+	756.1.1 = {
+		holder = 190147 #Arechis II
+	}
+	
+}
+
+
+c_abruzzi = {
+	## Diocletian Division
+	200.1.1 = {
+		liege = k_italia_suburbicariae
+	}
+	361.1.1 = {
+		holder = roma_09
+	}
+	395.1.1 = {
+		holder = roma_10
+	}
+	### Odarcer's Invasion
+	476.9.4 = {
+		government = feudal_government
+		liege = k_italy
+	}
+	476.9.4 = {
+		holder = roma_13 # 
+	}
+	762.1.1 = {
+		liege = d_benevento
+	}
+	762.1.1 = {
+		holder = 190308 #Maio
+	}
+	
+}
+
+d_latium = {
+	361.1.1 = { change_development_level = 10 }
+	532.1.1 = { change_development_level = 8 }
+	768.1.1 = { change_development_level = 6 }
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = k_italia_suburbicariae
+		liege = k_italia_suburbicariae
+	}
+	361.1.1 = {
+		holder = roma_11
+	}
+	395.1.1 = {
+		holder = 900062 # Flavius Stilicho
+	}
+	### Odarcer's Invasion
+	476.9.4 = {
+		government = feudal_government
+		liege = k_italy
+		de_jure_liege = k_italy
+	}
+	476.9.4 = {
+		holder = roma_14 # 
+	}
+	532.1.1 = {
+		holder = roman_02
+	}
+	625.1.1 = {
+		holder = isaac_the_armenian
+	}
+}
+
+c_roma = {
+	361.1.1 = { change_development_level = 21 }
+	476.1.1 = { change_development_level = 14 }
+	532.1.1 = { change_development_level = 15 }
+	## Diocletian Division
+	200.1.1 = {
+		liege = k_italia_suburbicariae
+	}
+	361.1.1 = {
+		holder = roma_11
+	}
+	395.1.1 = {
+		holder = 900062 # Flavius Stilicho
+	}
+	### Odarcer's Invasion
+	476.9.4 = {
+		government = feudal_government
+		liege = k_italy
+	}
+	476.9.4 = {
+		holder = roma_14 # 
+	}
+	625.1.1 = {
+		holder = isaac_the_armenian
+	}
+	757.4.29 = {
+		liege = "k_papal_state"
+		holder = 7865
+	}
+	767.6.28 = {
+		holder = 7864
+	}
+}
+
+b_vaticano = {
+	42.1.1 = {
+		holder = 145292
+		government = theocracy_government
+	} # Peter's first visit to Rome
+	64.10.13 = {
+		holder = 145291
+	}
+	79.1.1 = {
+		holder = 7615
+	}
+	92.1.1 = {
+		holder = 7614
+	}
+	99.1.1 = {
+		holder = 7613
+	}
+	107.1.1 = {
+		holder = 7612
+	}
+	115.1.1 = {
+		holder = 7611
+	}
+	125.1.1 = {
+		holder = 7610
+	}
+	137.1.1 = {
+		holder = 7609
+	}
+	140.1.1 = {
+		holder = 7608
+	}
+	154.1.1 = {
+		holder = 7607
+	}
+	167.4.20 = {
+		holder = 7606
+	}
+	174.1.1 = {
+		holder = 7605
+	}
+	189.1.1 = {
+		holder = 7604
+	}
+	199.1.1 = {
+		holder = 7603
+	}
+	217.12.20 = {
+		holder = 7602
+	}
+	222.10.14 = {
+		holder = 7601
+	}
+	230.1.1 = {
+		holder = 7600
+	}
+	235.9.29 = {
+		holder = 7799
+	}
+	236.1.3 = {
+		holder = 7798
+	}
+	250.1.20 = {
+		holder = 7797
+	}
+	253.6.1 = {
+		holder = 7796
+	}
+	254.3.5 = {
+		holder = 7795
+	}
+	257.8.2 = {	
+		holder = 7794
+	}
+	258.8.6 = {
+		holder = 7793
+	}
+	268.12.26 = {
+		holder = 7792
+	}
+	274.12.30 = {
+		holder = 7791
+	}
+	283.7.12 = {
+		holder = 7790
+	}
+	296.4.22 = {
+		holder = 7789
+	}
+	304.4.1 = {
+		holder = 7787
+	}
+	309.1.16 = {
+		holder = 7786
+	}
+	310.8.17 = {
+		holder = 7785
+	}
+	314.1.10 = {
+		holder = 7784
+	}
+	335.12.31 = {
+		holder = 7783
+	}
+	336.10.7 = {
+		holder = 7782
+	}
+	352.4.12 = {
+		holder = 7781
+	}
+	366.9.24 = {
+		holder = 7780
+	}
+	384.12.11 = {
+		holder = 7779
+	}
+	399.11.26 = {
+		holder = 7778
+	}
+	401.11.27 = {
+		holder = 7777
+	}
+	417.3.12 = {
+		holder = 7776
+	}
+	418.12.26 = {
+		holder = 7775
+	}
+	422.9.4 = {
+		holder = 7774
+	}
+	432.4.6 = {
+		holder = 7773
+	}
+	440.8.18 = {
+		holder = 7772
+	}
+	461.11.10 = {
+		holder = 7771
+	}
+	468.2.28 = {
+		holder = 7770
+	}
+	483.3.10 = {
+		holder = 7769
+	}
+	492.1.1 = {
+		holder = 7768
+	}
+	496.11.21 = {
+		holder = 7767
+	}
+	498.11.19 = {
+		holder = 7766
+	}
+	514.7.19 = {
+		holder = 7765
+	}
+	523.8.6 = {
+		holder = 7763
+	}
+	526.5.18 = {
+		holder = 7762
+	}
+	530.1.1 = {
+		holder = 7761
+	}
+	532.1.1 = {
+		holder = 7760
+	}
+	535.5.8 = {
+		holder = 7759
+	}
+	536.4.22 = {
+		holder = 7764
+	}
+	536.6.8 = {
+		holder = 7900
+	}
+	555.6.7 = {
+		holder = 7899
+	}
+	561.3.4 = {
+		holder = 7898
+	}
+	574.7.13 = {
+		holder = 7897
+	}
+	579.7.20 = {
+		holder = 7896
+	}
+	590.1.1 = {
+		holder = 7893
+	}
+	604.3.15 = {
+		holder = 7892
+	}
+	606.2.22 = {
+		holder = 7891
+	}
+	607.11.12 = {
+		holder = 7890
+	}
+	615.5.25 = {
+		holder = 7889
+	}
+	618.11.8 = {
+		holder = 7888
+	}
+	625.10.25 = {
+		holder = 7887
+	}
+	638.10.12 = {
+		holder = 7886
+	}
+	640.8.2 = {
+		holder = 7885
+	}
+	642.10.12 = {
+		holder = 7884
+	}
+	649.5.14 = {
+		holder = 7883
+	}
+	653.7.17 = {
+		holder = 7882
+	}
+	657.6.1 = {
+		holder = 7881
+	}
+	672.1.27 = {
+		holder = 7880
+	}
+	676.6.17 = {
+		holder = 7879
+	}
+	678.4.11 = {
+		holder = 7878
+	}
+	681.1.10 = {
+		holder = 7877
+	}
+	683.6.28 = {
+		holder = 7876
+	}
+	685.5.8 = {
+		holder = 7875
+	}
+	686.8.2 = {
+		holder = 7874
+	}
+	687.9.21 = {
+		holder = 7873
+	}
+	701.9.8 = {
+		holder = 7872
+	}
+	705.1.11 = {
+		holder = 7871
+	}
+	707.10.18 = {
+		holder = 7870
+	}
+	708.2.4 = {
+		holder = 7869
+	}
+	715.4.9 = {
+		holder = 7868
+	}
+	731.2.11 = {
+		holder = 7768
+	}
+	741.11.28 = {
+		holder = 7866
+	}
+	752.3.22 = {
+		holder = 7895
+	}
+}
+
+c_viterbo = {
+	## Diocletian Division
+	200.1.1 = {
+		liege = k_italia_suburbicariae
+	}
+	361.1.1 = {
+		holder = roma_11
+	}
+	395.1.1 = {
+		holder = 900062 # Flavius Stilicho
+	}
+	### Odarcer's Invasion
+	476.9.4 = {
+		government = feudal_government
+		liege = k_italy
+	}
+	476.9.4 = {
+		holder = roma_14 # 
+	}
+	522.1.1={
+		holder=992022 
+	}
+	532.1.1 = {
+		holder = thurings_01 # Amalafrid, Theodahad's nephew who fled to him in 532 after his father the Thuringian king Hermanfrid was killed
+		liege = d_toscana
+	}
+}
+
+
+c_tivoli = {
+	## Diocletian Division
+	200.1.1 = {
+		liege = k_italia_suburbicariae
+	}
+	361.1.1 = {
+		holder = roma_11
+	}
+	395.1.1 = {
+		holder = 900062 # Flavius Stilicho
+	}
+	### Odarcer's Invasion
+	476.9.4 = {
+		government = feudal_government
+		liege = k_italy
+	}
+	476.9.4 = {
+		holder = roma_14 # 
+	}
+}

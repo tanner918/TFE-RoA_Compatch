@@ -1,0 +1,1747 @@
+﻿### Market
+
+resources_market_01 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+			has_county_modifier = cloth_resources_modifier
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_1_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	next_building = resources_market_plus_01
+	
+	county_modifier = {
+		tax_mult = 0.1
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+		ai_tier_1_building_modifier = yes
+	}
+
+}
+
+resources_market_02 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = copper_resources_modifier
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_1_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	next_building = resources_market_plus_02
+	
+	county_modifier = {
+		tax_mult = 0.2
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+		ai_tier_1_building_modifier = yes
+	}
+}
+
+resources_market_03 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = iron_resources_modifier
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_1_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	next_building = resources_market_plus_03
+	
+	county_modifier = {
+		tax_mult = 0.1
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+		ai_tier_1_building_modifier = yes
+	}
+}
+
+resources_market_04 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = salt_resources_modifier
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_1_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	next_building = resources_market_plus_04
+	
+	county_modifier = {
+		tax_mult = 0.1
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+		ai_tier_1_building_modifier = yes
+	}
+}
+
+resources_market_05 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = wine_resources_modifier
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_1_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	next_building = resources_market_plus_05
+	
+	county_modifier = {
+		tax_mult = 0.1
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+		ai_tier_1_building_modifier = yes
+	}
+}
+
+resources_market_06 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = wool_resources_modifier
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_1_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	next_building = resources_market_plus_06
+	
+	county_modifier = {
+		tax_mult = 0.05
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+		ai_tier_1_building_modifier = yes
+	}
+}
+
+resources_market_07 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = leather_resources_modifier
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_1_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	next_building = resources_market_plus_07
+	
+	county_modifier = {
+		tax_mult = 0.05
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+		ai_tier_1_building_modifier = yes
+	}
+}
+
+resources_market_08 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = stone_resources_modifier
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_1_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	next_building = resources_market_plus_08
+	
+	county_modifier = {
+		tax_mult = 0.05
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+		ai_tier_1_building_modifier = yes
+	}
+}
+
+resources_market_09 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = wood_resources_modifier
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_1_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	next_building = resources_market_plus_09
+	
+	county_modifier = {
+		tax_mult = 0.05
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+		ai_tier_1_building_modifier = yes
+	}
+}
+
+resources_market_10 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = marble_resources_modifier
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_1_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	next_building = resources_market_plus_10
+	
+	county_modifier = {
+		tax_mult = 0.2
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+		ai_tier_1_building_modifier = yes
+	}
+}
+
+resources_market_11 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = glass_resources_modifier
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_1_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	next_building = resources_market_plus_11
+	
+	county_modifier = {
+		tax_mult = 0.2
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+		ai_tier_1_building_modifier = yes
+	}
+}
+
+resources_market_12 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = dyes_resources_modifier
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_1_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	next_building = resources_market_plus_12
+	
+	county_modifier = {
+		tax_mult = 0.2
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+		ai_tier_1_building_modifier = yes
+	}
+}
+
+resources_market_13 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = silk_resources_modifier
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_1_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	next_building = resources_market_plus_13
+	
+	county_modifier = {
+		tax_mult = 0.2
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+		ai_tier_1_building_modifier = yes
+	}
+}
+
+resources_market_14 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = cotton_resources_modifier
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_1_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	next_building = resources_market_plus_14
+	
+	county_modifier = {
+		tax_mult = 0.1
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+		ai_tier_1_building_modifier = yes
+	}
+}
+
+resources_market_15 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = amber_resources_modifier
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_1_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	next_building = resources_market_plus_15
+	
+	county_modifier = {
+		tax_mult = 0.2
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+		ai_tier_1_building_modifier = yes
+	}
+}
+
+resources_market_16 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+			has_county_modifier = fur_resources_modifier
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_1_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	next_building = resources_market_plus_16
+	
+	county_modifier = {
+		tax_mult = 0.2
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+		ai_tier_1_building_modifier = yes
+	}
+
+}
+
+resources_market_plus_01 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = cloth_resources_modifier
+		}
+		culture = {
+			has_innovation = innovation_guilds
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_2_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	next_building = resources_market_plus2_01
+	
+	county_modifier = {
+		development_growth = 0.1
+		tax_mult = 0.1
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+	}
+}
+
+resources_market_plus_02 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = copper_resources_modifier
+		}
+		culture = {
+			has_innovation = innovation_guilds
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_2_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	next_building = resources_market_plus2_02
+	
+	county_modifier = {
+		development_growth = 0.1
+		tax_mult = 0.2
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+	}
+}
+
+resources_market_plus_03 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = iron_resources_modifier
+		}
+		culture = {
+			has_innovation = innovation_guilds
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_2_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	next_building = resources_market_plus2_03
+	
+	county_modifier = {
+		development_growth = 0.1
+		tax_mult = 0.1
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+	}
+}
+
+resources_market_plus_04 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = salt_resources_modifier
+		}
+		culture = {
+			has_innovation = innovation_guilds
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_2_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	next_building = resources_market_plus2_04
+	
+	county_modifier = {
+		development_growth = 0.1
+		tax_mult = 0.1
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+	}
+}
+
+resources_market_plus_05 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = wine_resources_modifier
+		}
+		culture = {
+			has_innovation = innovation_guilds
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_2_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	next_building = resources_market_plus2_05
+	
+	county_modifier = {
+		development_growth = 0.1
+		tax_mult = 0.1
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+	}
+}
+
+resources_market_plus_06 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = wool_resources_modifier
+		}
+		culture = {
+			has_innovation = innovation_guilds
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_2_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	next_building = resources_market_plus2_06
+	
+	county_modifier = {
+		development_growth = 0.1
+		tax_mult = 0.05
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+	}
+}
+
+resources_market_plus_07 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = leather_resources_modifier
+		}
+		culture = {
+			has_innovation = innovation_guilds
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_2_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	next_building = resources_market_plus2_07
+	
+	county_modifier = {
+		development_growth = 0.1
+		tax_mult = 0.05
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+	}
+}
+
+resources_market_plus_08 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = stone_resources_modifier
+		}
+		culture = {
+			has_innovation = innovation_guilds
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_2_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	next_building = resources_market_plus2_08
+	
+	county_modifier = {
+		development_growth = 0.1
+		tax_mult = 0.05
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+	}
+}
+
+resources_market_plus_09 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = wood_resources_modifier
+		}
+		culture = {
+			has_innovation = innovation_guilds
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_2_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	next_building = resources_market_plus2_09
+	
+	county_modifier = {
+		development_growth = 0.1
+		tax_mult = 0.05
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+	}
+}
+
+resources_market_plus_10 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = marble_resources_modifier
+		}
+		culture = {
+			has_innovation = innovation_guilds
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_2_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	next_building = resources_market_plus2_10
+	
+	county_modifier = {
+		development_growth = 0.1
+		tax_mult = 0.2
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+	}
+}
+
+resources_market_plus_11 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = glass_resources_modifier
+		}
+		culture = {
+			has_innovation = innovation_guilds
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_2_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	next_building = resources_market_plus2_11
+	
+	county_modifier = {
+		development_growth = 0.1
+		tax_mult = 0.2
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+	}
+}
+
+resources_market_plus_12 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = dyes_resources_modifier
+		}
+		culture = {
+			has_innovation = innovation_guilds
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_2_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	next_building = resources_market_plus2_12
+	
+	county_modifier = {
+		development_growth = 0.1
+		tax_mult = 0.2
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+	}
+}
+
+resources_market_plus_13 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = silk_resources_modifier
+		}
+		culture = {
+			has_innovation = innovation_guilds
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_2_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	next_building = resources_market_plus2_13
+	
+	county_modifier = {
+		development_growth = 0.1
+		tax_mult = 0.2
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+	}
+}
+
+resources_market_plus_14 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = cotton_resources_modifier
+		}
+		culture = {
+			has_innovation = innovation_guilds
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_2_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	next_building = resources_market_plus2_14
+	
+	county_modifier = {
+		development_growth = 0.1
+		tax_mult = 0.1
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+	}
+}
+
+resources_market_plus_15 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = amber_resources_modifier
+		}
+		culture = {
+			has_innovation = innovation_guilds
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_2_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	next_building = resources_market_plus2_15
+	
+	county_modifier = {
+		development_growth = 0.1
+		tax_mult = 0.2
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+	}
+}
+
+resources_market_plus_16 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = fur_resources_modifier
+		}
+		culture = {
+			has_innovation = innovation_guilds
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_2_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	next_building = resources_market_plus2_16
+	
+	county_modifier = {
+		development_growth = 0.1
+		tax_mult = 0.2
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+	}
+}
+
+resources_market_plus2_01 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = cloth_resources_modifier
+		}
+		culture = {
+			has_innovation = innovation_currency_04
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_4_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	county_modifier = {
+		development_growth = 0.2
+		tax_mult = 0.2
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+	}
+}
+
+resources_market_plus2_02 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = copper_resources_modifier
+		}
+		culture = {
+			has_innovation = innovation_currency_04
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_4_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	county_modifier = {
+		development_growth = 0.2
+		tax_mult = 0.25
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+	}
+}
+
+resources_market_plus2_03 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = iron_resources_modifier
+		}
+		culture = {
+			has_innovation = innovation_currency_04
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_4_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	county_modifier = {
+		development_growth = 0.2
+		tax_mult = 0.2
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+	}
+}
+
+resources_market_plus2_04 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = salt_resources_modifier
+		}
+		culture = {
+			has_innovation = innovation_currency_04
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_4_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	county_modifier = {
+		development_growth = 0.2
+		tax_mult = 0.2
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+	}
+}
+
+resources_market_plus2_05 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = wine_resources_modifier
+		}
+		culture = {
+			has_innovation = innovation_currency_04
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_4_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	county_modifier = {
+		development_growth = 0.2
+		tax_mult = 0.2
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+	}
+}
+
+resources_market_plus2_06 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = wool_resources_modifier
+		}
+		culture = {
+			has_innovation = innovation_currency_04
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_4_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	county_modifier = {
+		development_growth = 0.1
+		tax_mult = 0.1
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+	}
+}
+
+resources_market_plus2_07 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = leather_resources_modifier
+		}
+		culture = {
+			has_innovation = innovation_currency_04
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_4_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	county_modifier = {
+		development_growth = 0.1
+		tax_mult = 0.1
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+	}
+}
+
+resources_market_plus2_08 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = stone_resources_modifier
+		}
+		culture = {
+			has_innovation = innovation_currency_04
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_4_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	county_modifier = {
+		development_growth = 0.1
+		tax_mult = 0.1
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+	}
+}
+
+resources_market_plus2_09 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = wood_resources_modifier
+		}
+		culture = {
+			has_innovation = innovation_currency_04
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_4_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	county_modifier = {
+		development_growth = 0.1
+		tax_mult = 0.1
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+	}
+}
+
+resources_market_plus2_10 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = marble_resources_modifier
+		}
+		culture = {
+			has_innovation = innovation_currency_04
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_4_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	county_modifier = {
+		development_growth = 0.2
+		tax_mult = 0.25
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+	}
+}
+
+resources_market_plus2_11 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = glass_resources_modifier
+		}
+		culture = {
+			has_innovation = innovation_currency_04
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_4_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	county_modifier = {
+		development_growth = 0.2
+		tax_mult = 0.25
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+	}
+}
+
+resources_market_plus2_12 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = dyes_resources_modifier
+		}
+		culture = {
+			has_innovation = innovation_currency_04
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_4_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	county_modifier = {
+		development_growth = 0.2
+		tax_mult = 0.25
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+	}
+}
+
+resources_market_plus2_13 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = silk_resources_modifier
+		}
+		culture = {
+			has_innovation = innovation_currency_04
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_4_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	county_modifier = {
+		development_growth = 0.2
+		tax_mult = 0.25
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+	}
+}
+
+resources_market_plus2_14 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = cotton_resources_modifier
+		}
+		culture = {
+			has_innovation = innovation_currency_04
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_4_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	county_modifier = {
+		development_growth = 0.2
+		tax_mult = 0.2
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+	}
+}
+
+resources_market_plus2_15 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = amber_resources_modifier
+		}
+		culture = {
+			has_innovation = innovation_currency_04
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_4_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	county_modifier = {
+		development_growth = 0.1
+		tax_mult = 0.25
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+	}
+}
+
+resources_market_plus2_16 = {
+	construction_time = quick_construction_time
+
+	can_construct_potential = {
+		county = {
+		has_county_modifier = fur_resources_modifier
+		}
+		culture = {
+			has_innovation = innovation_currency_04
+		}
+	}
+	
+	is_enabled = {
+		is_county_capital = yes
+	}
+
+	cost_gold = normal_building_tier_4_cost
+	
+	county_culture_modifier = {
+		parameter = innovation_merchant_outposts_building_modifiers
+		tax_mult = 0.05
+	}
+
+	county_modifier = {
+		development_growth = 0.1
+		tax_mult = 0.25
+	}
+
+	type_icon = "icon_building_resources_market.dds"
+	
+	ai_value = {
+		base = 25
+		ai_general_building_modifier = yes
+	}
+}

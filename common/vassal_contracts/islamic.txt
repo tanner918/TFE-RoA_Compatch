@@ -1,0 +1,294 @@
+﻿@ai_standard_liege_desire = 2
+@ai_standard_vassal_desire = 1
+
+caliphate_centralization = {
+	display_mode = tree
+	icon = gold_icon
+	obligation_levels = {
+		no_caliphate_centralization = {
+			position = { 0 0 }
+
+			tax = 0
+			levies = 0
+			vassal_opinion = 10
+
+			ai_liege_desire = 1
+			ai_vassal_desire = 5
+			score = 2
+		}
+		low_caliphate_centralization = {
+			default = yes
+			parent = no_caliphate_centralization
+			position = { 1 0 }
+
+			tax = 0.1
+			levies = 0.2
+			vassal_opinion = 5
+
+			ai_liege_desire = 2
+			ai_vassal_desire = 4
+			score = 1
+		}
+		moderate_caliphate_centralization = {
+			parent = low_caliphate_centralization
+			position = { 2 0 }
+
+			tax = 0.2
+			levies = 0.3
+
+			ai_liege_desire = 3
+			ai_vassal_desire = 3
+			score = 0
+		}
+		high_caliphate_centralization = {
+			parent = moderate_caliphate_centralization
+			position = { 3 0 }
+			
+			tax = 0.3
+			levies = 0.4
+			vassal_opinion = -15
+
+			ai_liege_desire = 4
+			ai_vassal_desire = 2
+			score = -1
+		}
+		full_caliphate_centralization = {
+			parent = high_caliphate_centralization
+			position = { 4 0 }
+			
+			tax = 0.5
+			levies = 0.5
+			vassal_opinion = -25
+
+			ai_liege_desire = 5
+			ai_vassal_desire = 1
+			score = -2
+		}
+	}
+}
+
+jizya_obligations = {
+	display_mode = checkbox
+	is_shown = {
+		AND = {
+			NOT = {
+				scope:vassal.faith = scope:liege.faith
+			}
+			scope:liege = {
+				has_religion = religion:islam_religion
+			}
+		}
+	}
+	obligation_levels = {
+		jizya_obligations_none = {
+			position = { 0 0 }
+			vassal_opinion = 5
+			
+			ai_liege_desire = 0
+			ai_vassal_desire = 10
+		}
+		jizya_obligations_enforced = {
+			if = {
+				limit = {
+					AND = {
+						NOT = {
+							scope:vassal.faith = scope:liege.faith
+						}
+						scope:liege = {
+							has_religion = religion:islam_religion
+						}
+					}
+				}
+				tax = 0.2
+				vassal_opinion = -20
+			}
+			parent = jizya_obligations_none
+			position = { 1 0 }
+
+			default = yes
+			
+			ai_liege_desire = 10
+			ai_vassal_desire = 0
+		}
+	}
+}
+
+islamic_taxes = {
+	display_mode = tree
+	icon = gold_icon
+	obligation_levels = {
+		islamic_tax_exempt = {
+			position = { 0 0 }
+
+			tax = 0
+			vassal_opinion = 10
+
+			ai_liege_desire = 1
+			ai_vassal_desire = 5
+			score = 2
+		}
+		islamic_tax_low = {
+			parent = islamic_tax_exempt
+			position = { 1 0 }
+
+			tax = 0.1
+			vassal_opinion = 5
+
+			ai_liege_desire = 2
+			ai_vassal_desire = 4
+			score = 1
+		}
+		islamic_tax_normal = {
+			default = yes
+			parent = islamic_tax_low
+			position = { 2 0 }
+
+			tax = 0.2
+
+			ai_liege_desire = 3
+			ai_vassal_desire = 3
+			score = 0
+		}
+		islamic_tax_high = {
+			parent = islamic_tax_normal
+			position = { 3 0 }
+			
+			tax = 0.3
+			vassal_opinion = -15
+
+			ai_liege_desire = 4
+			ai_vassal_desire = 2
+			score = -1
+		}
+		islamic_tax_extortionate = {
+			parent = islamic_tax_high 
+			position = { 4 0 }
+			
+			tax = 0.4
+			vassal_opinion = -25
+
+			ai_liege_desire = 5
+			ai_vassal_desire = 1
+			score = -2
+		}
+	}
+}
+
+islamic_levies = {
+	display_mode = tree
+	icon = soldier_icon
+	obligation_levels = {
+		islamic_levies_exempt = {
+			position = { 0 0 }
+
+			levies = 0
+			vassal_opinion = 10
+
+			ai_liege_desire = 1
+			ai_vassal_desire = 5
+			score = 2
+		}
+		islamic_levies_low = {
+			parent = islamic_levies_exempt
+			position = { 1 0 }
+
+			levies = 0.1
+			vassal_opinion = 5
+
+			ai_liege_desire = 2
+			ai_vassal_desire = 4
+			score = 1
+		}
+		islamic_levies_normal = {
+			default = yes
+			parent = islamic_levies_low
+			position = { 2 0 }
+
+			levies = 0.2
+
+			ai_liege_desire = 3
+			ai_vassal_desire = 3
+			score = 0
+		}
+		islamic_levies_high = {
+			parent = islamic_levies_normal
+			position = { 3 0 }
+			
+			levies = 0.3
+			vassal_opinion = -15
+
+			ai_liege_desire = 4
+			ai_vassal_desire = 2
+			score = -1
+		}
+		islamic_levies_extortionate = {
+			parent = islamic_levies_high
+			position = { 4 0 }
+			
+			levies = 0.4
+			vassal_opinion = -25
+
+			ai_liege_desire = 5
+			ai_vassal_desire = 1
+			score = -2
+		}
+	}
+}
+
+dynastic_autonomy = {
+	display_mode = checkbox
+	obligation_levels = {
+		dynastic_autonomy_none = {
+			default = yes
+			position = { 0 0 }
+			
+			ai_liege_desire = 10
+			ai_vassal_desire = 0
+		}
+		dynastic_autonomy_granted = {
+			parent = dynastic_autonomy_none
+			position = { 1 0 }
+			vassal_opinion = 50
+			is_valid = {
+				scope:liege.dynasty = scope:vassal.dynasty
+			}
+			
+			tax_factor = -1
+			levies_factor = -1
+			
+			ai_liege_desire = 0
+			ai_vassal_desire = 10
+		}
+	}
+}
+
+caliphate_zakah_rights = {
+	display_mode = checkbox
+	is_shown = {
+		scope:liege = {
+			has_religion = religion:islam_religion
+		}
+		scope:vassal = {
+			has_religion = religion:islam_religion
+		}
+	}
+	obligation_levels = {
+		caliphate_zakah_rights_none = {
+			default = yes
+			position = { 0 0 }
+			
+			ai_liege_desire = 0
+			ai_vassal_desire = 10
+		}
+		caliphate_zakah_rights_enforced = {
+			parent = caliphate_zakah_rights_none
+			position = { 1 0 }
+			vassal_opinion = -10
+
+			flag = caliphate_zakah_enforced
+			
+			ai_liege_desire = 10
+			ai_vassal_desire = 0
+		}
+	}
+}

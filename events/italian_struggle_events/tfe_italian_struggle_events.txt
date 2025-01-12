@@ -1,0 +1,708 @@
+﻿namespace = italian_struggle
+
+### SYSTEM EVENTS #################################################################
+## # Parameter Events
+## # Other Events
+### EVENT LIST ####################################################################
+###################################################################################
+
+
+# Travel event catalyst
+# italian_struggle.0002 = {
+# 	hidden = yes
+# 	scope = character
+
+# 	immediate = {
+# 		every_character_struggle = {
+# 			involvement = involved
+# 			limit = {
+# 				phase_has_catalyst = catalyst_tfe_completed_travel
+# 			}
+# 			activate_struggle_catalyst = {
+# 				catalyst = catalyst_tfe_completed_travel
+# 				character = root
+# 			}
+# 		}
+# 	}
+# }
+
+# Setting AI Intent
+# italian_struggle.0003 = {
+# 	hidden = yes
+# 	scope = none
+# 	scope = struggle
+
+# 	trigger = { # Should not need this, but, redundancy check! -h
+# 		exists = struggle:italian_struggle
+# 		struggle:italian_struggle = { any_involved_ruler = { count > 0 } } # For when the conflict is ongoing but nobody is left to fight it
+# 	}
+
+# 	immediate = {
+# 		# prepare needed variables; they will be destroyed at the end of the immediate
+# 		set_variable = {
+# 			name = agents_for_escalation
+# 			value = 0
+# 		}
+# 		set_variable = {
+# 			name = agents_for_deescalation
+# 			value = 0
+# 		}
+
+# 		# Go through the characters to distribute them between the potential transitions
+# 		struggle:italian_struggle = {
+# 			every_involved_ruler = {
+# 				limit = { is_alive = yes }
+# 				#######################
+# 				# Play cue track
+# 				######################
+# 				if = {
+# 					limit = { is_ai = no }
+# 					play_music_cue = "mx_Struggle_Opening"
+# 				}
+
+# 				#######################
+# 				# Check existing flags
+# 				######################
+# 				if = {
+# 					limit = { has_character_flag = agenda_towards_escalation }
+# 					change_variable = {
+# 						name = agents_for_escalation
+# 						add = 1
+# 					}
+# 				}
+# 				else_if = {
+# 					limit = { has_character_flag = agenda_towards_deescalation }
+# 					change_variable = {
+# 						name = agents_for_deescalation
+# 						add = 1
+# 					}
+# 				}
+# 				else = { # Set a flag
+				
+# 					#############################
+# 					# Current Phase: EXPANSION
+# 					#############################
+# 					if = {
+# 						limit = { root = { is_struggle_phase = struggle_TFE_eastern_iranian_phase_expansion } }
+# 						random_list = {
+# 							# Working towards hostility
+# 							# It should be for characters looking for direct conflicts and domination, with the will and ability to expand their realms
+# 							100 = {
+# 								# Odds modifiers
+# 								italian_struggle_set_ai_agenda_common_modifiers = {
+# 									PHASE = hostility
+# 									INTENT = escalation
+# 								}
+
+# 								# Apply effects
+# 								italian_struggle_apply_ai_agenda_effect = {
+# 									INTENT = escalation
+# 								}
+# 							}
+# 							# Working towards development
+# 							100 = {
+# 								# Odds modifiers
+# 								italian_struggle_set_ai_agenda_common_modifiers = {
+# 									PHASE = development
+# 									INTENT = deescalation
+# 								}
+
+# 								# Apply effects
+# 								italian_struggle_apply_ai_agenda_effect = {
+# 									INTENT = deescalation
+# 								}
+# 							}
+# 						}
+# 					}
+
+# 					#############################
+# 					# Current Phase: DEVELOPMENT
+# 					#############################
+# 					if = {
+# 						limit = { root = { is_struggle_phase = struggle_TFE_eastern_iranian_phase_development } }
+# 						random_list = {
+# 							# Working towards compromise
+# 							# It should be for characters looking for direct conflicts and domination, with the will and ability to expand their realms
+# 							100 = {
+# 								# Odds modifiers
+# 								italian_struggle_set_ai_agenda_common_modifiers = {
+# 									PHASE = compromise
+# 									INTENT = escalation
+# 								}
+
+# 								# Apply effects
+# 								italian_struggle_apply_ai_agenda_effect = {
+# 									INTENT = escalation
+# 								}
+# 							}
+# 						}
+# 					}
+# 					#############################
+# 					# Current Phase: Hostility
+# 					#############################
+# 					if = {
+# 						limit = { root = { is_struggle_phase = struggle_TFE_eastern_iranian_phase_hostility } }
+# 						random_list = {
+# 							# Working towards Compromise
+# 							100 = {
+# 								# Odds modifiers
+# 								italian_struggle_set_ai_agenda_common_modifiers = {
+# 									PHASE = compromise
+# 									INTENT = deescalation
+# 								}
+
+# 								# Apply effects
+# 								italian_struggle_apply_ai_agenda_effect = {
+# 									INTENT = deescalation
+# 								}
+# 							}
+# 						}
+# 					}
+
+# 					#############################
+# 					# Current Phase: Compromise
+# 					#############################
+# 					if = {
+# 						limit = { root = { is_struggle_phase = struggle_TFE_eastern_iranian_phase_compromise } }
+# 						random_list = {
+# 							# Working towards expansion
+# 							100 = {
+# 								# Odds modifiers
+# 								italian_struggle_set_ai_agenda_common_modifiers = {
+# 									PHASE = expansion
+# 									INTENT = escalation
+# 								}
+
+# 								# Apply effects
+# 								italian_struggle_apply_ai_agenda_effect = {
+# 									INTENT = escalation
+# 								}
+# 							}
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
+
+# 		# Clean variables
+# 		remove_variable = agents_for_escalation
+# 		remove_variable = agents_for_deescalation
+# 	}
+# }
+
+# Set AI Intent on join
+# italian_struggle.0004 = {
+# 	hidden = yes
+# 	scope = none
+
+# 	immediate = {
+# 		set_variable = {
+# 			name = agents_for_escalation
+# 			value = 0
+# 		}
+# 		set_variable = {
+# 			name = agents_for_deescalation
+# 			value = 0
+# 		}
+
+# 		############################
+# 		# Update the variables
+# 		############################
+# 		every_character_struggle = {
+# 			every_involved_ruler = {
+# 				limit = { is_alive = yes }
+# 				if = {
+# 					limit = { has_character_flag = agenda_towards_escalation }
+# 					root = {
+# 						change_variable = {
+# 							name = agents_for_escalation
+# 							add = 1
+# 						}
+# 					}
+# 				}
+# 				else_if = {
+# 					limit = { has_character_flag = agenda_towards_deescalation }
+# 					root = {
+# 						change_variable = {
+# 							name = agents_for_deescalation
+# 							add = 1
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
+
+# 		if = {
+# 			limit = {
+# 				NOR = {
+# 					has_character_flag = agenda_towards_escalation
+# 					has_character_flag = agenda_towards_deescalation
+# 				}
+# 			}
+
+# 			#############################
+# 			# Current Phase: EXPANSION
+# 			#############################
+# 			if = {
+# 				limit = { any_character_struggle = { AND = { is_struggle_type = italian_struggle is_struggle_phase = struggle_TFE_eastern_iranian_phase_expansion } } }
+# 				random_list = {
+# 					# Working towards hostility
+# 					# It should be for characters looking for direct conflicts and domination, with the will and ability to expand their realms
+# 					100 = {
+# 						# Odds modifiers
+# 						italian_struggle_set_ai_agenda_common_modifiers = {
+# 							PHASE = hostility
+# 							INTENT = escalation
+# 						}
+
+# 						# Apply effects
+# 						italian_struggle_apply_ai_agenda_effect = {
+# 							INTENT = escalation
+# 						}
+# 					}
+# 					# Working towards development
+# 					100 = {
+# 						# Odds modifiers
+# 						italian_struggle_set_ai_agenda_common_modifiers = {
+# 							PHASE = development
+# 							INTENT = deescalation
+# 						}
+
+# 						# Apply effects
+# 						italian_struggle_apply_ai_agenda_effect = {
+# 							INTENT = deescalation
+# 						}
+# 					}
+# 				}
+# 			}
+
+# 			#############################
+# 			# Current Phase: DEVELOPMENT
+# 			#############################
+# 			if = {
+# 				limit = { any_character_struggle = { AND = { is_struggle_type = italian_struggle is_struggle_phase = struggle_TFE_eastern_iranian_phase_development } } }
+# 				random_list = {
+# 					# Working towards compromise
+# 					# It should be for characters looking for direct conflicts and domination, with the will and ability to expand their realms
+# 					100 = {
+# 						# Odds modifiers
+# 						italian_struggle_set_ai_agenda_common_modifiers = {
+# 							PHASE = compromise
+# 							INTENT = escalation
+# 						}
+
+# 						# Apply effects
+# 						italian_struggle_apply_ai_agenda_effect = {
+# 							INTENT = escalation
+# 						}
+# 					}
+# 				}
+# 			}
+# 			#############################
+# 			# Current Phase: Hostility
+# 			#############################
+# 			if = {
+# 				limit = { any_character_struggle = { AND = { is_struggle_type = italian_struggle is_struggle_phase = struggle_TFE_eastern_iranian_phase_hostility } } }
+# 				random_list = {
+# 					# Working towards Compromise
+# 					100 = {
+# 						# Odds modifiers
+# 						italian_struggle_set_ai_agenda_common_modifiers = {
+# 							PHASE = compromise
+# 							INTENT = deescalation
+# 						}
+
+# 						# Apply effects
+# 						italian_struggle_apply_ai_agenda_effect = {
+# 							INTENT = deescalation
+# 						}
+# 					}
+# 				}
+# 			}
+
+# 			#############################
+# 			# Current Phase: Compromise
+# 			#############################
+# 			if = {
+# 				limit = { any_character_struggle = { AND = { is_struggle_type = italian_struggle is_struggle_phase = struggle_TFE_eastern_iranian_phase_compromise } } }
+# 				random_list = {
+# 					# Working towards expansion
+# 					100 = {
+# 						# Odds modifiers
+# 						italian_struggle_set_ai_agenda_common_modifiers = {
+# 							PHASE = expansion
+# 							INTENT = escalation
+# 						}
+
+# 						# Apply effects
+# 						italian_struggle_apply_ai_agenda_effect = {
+# 							INTENT = escalation
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
+
+# 		# Clean variables
+# 		remove_variable = agents_for_escalation
+# 		remove_variable = agents_for_deescalation
+# 	}
+# }
+
+###################################
+# Italian Struggle Intro Events
+# 0501 - 599
+###################################
+italian_struggle.0501 = { # Fullscreen Intro Event
+	type = character_event
+	window = fullscreen_event
+	title = italian_struggle.0501.t
+	desc = {
+		desc = italian_struggle.0501.desc
+		triggered_desc = {
+			trigger = {
+				exists = title:e_byzantium.holder
+			}
+			desc = italian_struggle.0501.desc.byzantium
+		}
+		desc = italian_struggle.0501.desc.conclusion
+	}
+	theme = realm
+	trigger = { # we need to prevent this from firing for all players when a new player joins in MP
+		is_ai = no
+		NOT = { has_character_flag = TFE_italian_struggle_intro_event_flag }
+		tfe_character_any_involvement_italian_struggle_trigger = yes
+ 	}
+	override_background = { reference = TFE_struggle_bg_mediterranean_city }
+	override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_animate" }
+
+	widgets = {
+		widget = {
+ 			gui = "event_window_widget_struggle_info"
+ 			container = "dynamic_content_widget"
+ 			controller = struggle_info
+ 			setup_scope = { struggle:italian_struggle = { save_scope_as = struggle } }
+		}
+	}
+	immediate = {
+		play_music_cue = "mood_alexandria" # mood_ConstantinopleTwo
+		add_character_flag = TFE_italian_struggle_intro_event_flag
+		save_scope_value_as = {
+			name = start
+			value = yes
+		}
+	}
+	option = {
+		name = italian_struggle.0501.a
+		clicksound = "event:/DLC/FP2/SFX/UI/fp2_struggle_start_select"
+	}
+}
+
+
+
+
+###################################
+# Italian Struggle Ending Events
+# 1000 - 1099
+###################################
+
+
+
+# Synthesis Victory Ending
+italian_struggle.1000 = { 
+	type = character_event
+	window = fullscreen_event
+	title = italian_struggle.1000.t
+	desc = italian_struggle.1000.desc
+	theme = court
+	override_background = { reference = TFE_struggle_bg_mediterranean_city }
+	override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_end_animate" }
+
+	immediate = {
+
+		play_music_cue = "mx_Struggle_ending_conciliation"
+
+		if = {
+			limit = {
+				root = scope:italian_struggle_ender
+			}
+			dynasty = { add_dynasty_prestige = 10000 }
+			give_nickname = nick_the_great
+			add_legitimacy = major_legitimacy_gain
+			TFE_italian_struggle_synthesis_county_effect = yes
+			TFE_italian_struggle_synthesis_tooltip_effect = yes
+			TFE_italian_struggle_ending_culture_list_effect = yes
+			TFE_italian_struggle_synthesis_cultural_acceptance_effect = yes
+		}
+		else = {
+			show_as_tooltip = {
+				scope:italian_struggle_ender = {
+					dynasty = { add_dynasty_prestige = 10000 }
+					give_nickname = nick_the_great
+					add_legitimacy = major_legitimacy_gain
+					TFE_italian_struggle_synthesis_county_effect = yes
+					TFE_italian_struggle_synthesis_tooltip_effect = yes
+				}
+			}
+		}
+
+	}
+
+	# Ok
+	option = {
+		name = italian_struggle.1000.a
+	}
+
+
+}
+
+# Incorporation Victory Ending
+italian_struggle.1001 = { 
+	type = character_event
+	window = fullscreen_event
+	title = italian_struggle.1001.t
+	desc = italian_struggle.1001.desc
+	theme = court
+	override_background = { reference = TFE_struggle_bg_mediterranean_city }
+	override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_end_animate" }
+
+	immediate = {
+
+		play_music_cue = "mx_Struggle_ending_conciliation"
+
+		if = {
+			limit = {
+				exists = title:e_western_roman_empire.holder
+			}			
+			title:e_western_roman_empire = {
+				save_scope_as = empire
+			}	
+			title:e_western_roman_empire.holder = {
+				save_scope_as = emperor
+			}
+		}
+		else_if = {
+			limit = {
+				exists = title:e_byzantium.holder
+			}			
+			title:e_byzantium = {
+				save_scope_as = empire
+			}		
+			title:e_byzantium.holder = {
+				save_scope_as = emperor
+			}
+		}
+		else_if = {
+			limit = {
+				exists = title:e_roman_empire.holder
+			}			
+			title:e_roman_empire = {
+				save_scope_as = empire
+			}		
+			title:e_roman_empire.holder = {
+				save_scope_as = emperor
+			}
+		}
+		# Fallback
+		else = {		
+			title:c_roma = {
+				save_scope_as = empire
+			}	
+			title:c_roma.holder = {				
+				save_scope_as = emperor
+			}
+		}
+
+		if = {
+			limit = {
+				root = scope:italian_struggle_ender
+			}
+			dynasty = { add_dynasty_prestige = 5000 }
+			add_prestige = 5000
+			give_nickname = nick_the_peacekeeper
+			TFE_italian_struggle_incorporation_personal_effect = yes
+			TFE_italian_struggle_incorporation_vassal_effect = yes
+			TFE_italian_struggle_incorporation_county_effect = yes
+		}
+		else = {
+			show_as_tooltip = {
+				scope:italian_struggle_ender = {
+					dynasty = { add_dynasty_prestige = 5000 }
+					add_prestige = 5000
+					give_nickname = nick_the_peacekeeper
+					TFE_italian_struggle_incorporation_personal_effect = yes
+					TFE_italian_struggle_incorporation_vassal_effect = yes
+					TFE_italian_struggle_incorporation_county_effect = yes
+				}
+			}
+		}
+
+	}
+
+	# Ok
+	option = {
+		name = italian_struggle.1001.a
+	}
+
+
+}
+
+# Restoration Victory Ending
+italian_struggle.1002 = { 
+	type = character_event
+	window = fullscreen_event
+	title = italian_struggle.1002.t
+	desc = italian_struggle.1002.desc
+	theme = court
+	override_background = { reference = TFE_struggle_bg_mediterranean_city }
+	override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_end_animate" }
+
+	immediate = {
+
+		play_music_cue = "mx_Struggle_ending_hostility"
+
+		if = {
+			limit = {
+				has_title = title:e_western_roman_empire
+			}			
+			title:e_western_roman_empire = {
+				save_scope_as = empire
+			}	
+		}
+		else_if = {
+			limit = {
+				has_title = title:e_byzantium
+			}			
+			title:e_byzantium = {
+				save_scope_as = empire
+			}		
+		}
+		else_if = {
+			limit = {
+				has_title = title:e_roman_empire
+			}			
+			title:e_roman_empire = {
+				save_scope_as = empire
+			}		
+		}
+		# Fallback
+		else = {		
+			title:c_roma = {
+				save_scope_as = empire
+			}	
+		}
+
+		if = {
+			limit = {
+				root = scope:italian_struggle_ender
+			}
+			dynasty = { add_dynasty_prestige = 10000 }
+			add_legitimacy = major_legitimacy_gain
+			give_nickname = nick_the_great
+			TFE_italian_struggle_restoration_personal_effect = yes
+			TFE_italian_struggle_restoration_vassal_effect = yes
+			TFE_italian_struggle_restoration_county_effect = yes
+		}
+		else = {
+			show_as_tooltip = {
+				scope:italian_struggle_ender = {
+					dynasty = { add_dynasty_prestige = 10000 }
+					add_legitimacy = major_legitimacy_gain
+					give_nickname = nick_the_great
+					TFE_italian_struggle_restoration_personal_effect = yes
+					TFE_italian_struggle_restoration_vassal_effect = yes
+					TFE_italian_struggle_restoration_county_effect = yes
+				}
+			}
+		}
+
+	}
+
+	# Ok
+	option = {
+		name = italian_struggle.1002.a
+	}
+
+
+}
+
+# Subjugation Victory Ending
+italian_struggle.1003 = { 
+	type = character_event
+	window = fullscreen_event
+	title = italian_struggle.1003.t
+	desc = italian_struggle.1003.desc
+	theme = court
+	override_background = { reference = TFE_struggle_bg_mediterranean_city }
+	override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_end_animate" }
+
+	immediate = {
+
+		play_music_cue = "mx_Struggle_ending_hostility"
+
+		if = {
+			limit = {
+				root = scope:italian_struggle_ender
+			}
+			dynasty = { add_dynasty_prestige = 10000 }
+			give_nickname = nick_the_great
+			add_legitimacy = major_legitimacy_gain
+			TFE_italian_struggle_subjugation_personal_effect = yes
+			TFE_italian_struggle_subjugation_vassal_effect = yes
+			TFE_italian_struggle_subjugation_county_effect = yes
+		}
+		else = {
+			show_as_tooltip = {
+				scope:italian_struggle_ender = {
+					dynasty = { add_dynasty_prestige = 10000 }
+					give_nickname = nick_the_great
+					add_legitimacy = major_legitimacy_gain
+					TFE_italian_struggle_subjugation_personal_effect = yes
+					TFE_italian_struggle_subjugation_vassal_effect = yes
+					TFE_italian_struggle_subjugation_county_effect = yes
+				}
+			}
+		}
+
+	}
+
+	# Ok
+	option = {
+		name = italian_struggle.1003.a
+	}
+
+
+}
+
+
+# Devastation Failure Ending
+italian_struggle.1004 = { 
+	type = character_event
+	window = fullscreen_event
+	title = italian_struggle.1004.t
+	desc = italian_struggle.1004.desc
+	theme = court
+	override_background = { reference = TFE_struggle_bg_mediterranean_city }
+	override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_end_animate" }
+
+	immediate = {
+
+		play_music_cue = "mx_Struggle_ending_compromise"
+
+		show_as_tooltip = {
+			TFE_italian_struggle_devastation_county_effect = yes
+			TFE_italian_struggle_devastation_ruler_effect = yes
+		}
+
+	}
+
+	# Ok
+	option = {
+		name = italian_struggle.1004.a
+	}
+
+
+}
+
+
+

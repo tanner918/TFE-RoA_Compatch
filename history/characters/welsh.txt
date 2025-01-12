@@ -1,0 +1,1049 @@
+﻿159018 = {
+	name = "Cadwallon" # ap Cadfan
+	dynasty_house = house_british_isles_gwynedd #Gwynedd
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159017 # Cadfan
+	600.1.1 = {
+		birth = "600.1.1"
+	}
+	634.1.1 = {
+		death = "634.1.1"
+	}
+}
+159019 = {
+	name = "Cadwaladr" # ap Cadwallon
+	dynasty_house = house_british_isles_gwynedd #Gwynedd
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159018 # Cadwallon
+	630.1.1 = {
+		birth = "630.1.1"
+	}
+	664.1.1 = {
+		death = "664.1.1"
+	}
+}
+159020 = {
+	name = "Idwal" # ap Cadwaladr
+	dynasty_house = house_british_isles_gwynedd #Gwynedd
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159019 # Cadwaladr
+	670.1.1 = {
+		birth = "670.1.1"
+	}
+	700.1.1 = {
+		add_spouse = 160047
+	}
+	720.1.1 = {
+		death = "720.1.1"
+	}
+}
+159021 = {
+	name = "Rhodri" # ap Idwal
+	dynasty_house = house_british_isles_gwynedd #Gwynedd
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159020 # Idwal
+	mother = 160047 #Agatha of Brittany
+	700.1.1 = {
+		birth = "700.1.1"
+	}
+	754.1.1 = {
+		death = "754.1.1"
+	}
+}
+
+159022 = {
+	name = "Caradog" # ap Meirchion
+	dynasty_house = house_british_isles_rhos #Rhos
+	father = 160046
+	religion = "chalcedonian"
+	culture = "welsh"
+	730.1.1 = {
+		birth = "730.1.1"
+	}
+	798.1.1 = {
+		death = "798.1.1"
+	}
+}
+159023 = {
+	name = "Cynan" # ap Rhodri
+	dynasty_house = house_british_isles_gwynedd #Gwynedd
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159021 # Rhodri
+	trait = ambitious
+	740.1.1 = {
+		birth = "740.1.1"
+	}
+	816.1.1 = {
+		death = "816.1.1"
+	}
+}
+159024 = {
+	name = "Hywel" # ap Rhodri
+	dynasty_house = house_british_isles_gwynedd #Gwynedd
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159021 # Rhodri
+	750.1.1 = {
+		birth = "750.1.1"
+	}
+	825.1.1 = {
+		death = "825.1.1"
+	}
+}
+159025 = {
+	name = "Esyllt" # ferch Cynan
+	dynasty_house = house_british_isles_gwynedd #Gwynedd
+	female = yes
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159023 # Cynan
+	770.1.1 = {
+		birth = "770.1.1"
+	}
+	790.1.2 = {
+		add_spouse = 159026
+	}
+	834.1.1 = {
+		death = "834.1.1"
+	}
+}
+
+159026 = {
+	name = "Gwriad" #
+	dynasty_house = house_british_isles_manaw #Manaw
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159028 # Elidyr
+	760.1.1 = {
+		birth = "760.1.1"
+	}
+	790.1.2 = {
+		add_spouse = 159025
+	}
+	825.1.1 = {
+		death = "825.1.1"
+	}
+}
+159028 = {
+	name = "Elidyr" #
+	dynasty_house = house_british_isles_manaw #Manaw
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159029 # Sandde
+	mother = 159933 # Celeinion
+
+	730.1.1 = {
+		birth = "730.1.1"
+	}
+	820.1.1 = {
+		death = "820.1.1"
+	}
+}
+
+159040 = {
+	name = "Ifwr" # ap Cadwaladr
+	dynasty_house = house_british_isles_gwynedd #Gwynedd
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159019 # Cadwaladr
+	660.1.1 = {
+		birth = "660.1.1"
+	}
+	684.1.1 = {
+		death = "684.1.1"
+	}
+}
+159047 = {
+	name = "Helig" # ap Glannog
+	dynasty_house = house_british_isles_arllechwydd #Arllechwydd
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159046
+	600.1.1 = {
+		birth = "600.1.1"
+	}
+	670.1.1 = {
+		death = "670.1.1"
+	}
+}
+159048 = {
+	name = "Rhychwin" # ap Helig
+	dynasty_house = house_british_isles_arllechwydd #Arllechwydd
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159047
+	640.1.1 = {
+		birth = "640.1.1"
+	}
+	700.1.1 = {
+		death = "700.1.1"
+	}
+}
+159049 = {
+	name = "Cynwas" # ap Rhychwin
+	dynasty_house = house_british_isles_arllechwydd #Arllechwydd
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159048
+	680.1.1 = {
+		birth = "680.1.1"
+	}
+	760.1.1 = {
+		death = "760.1.1"
+	}
+}
+159050 = {
+	name = "Garannog" # ap Cynwas
+	dynasty_house = house_british_isles_arllechwydd #Arllechwydd
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159049
+	720.1.1 = {
+		birth = "720.1.1"
+	}
+	800.1.1 = {
+		death = "800.1.1"
+	}
+}
+159051 = {
+	name = "Geraint" # ap Garannog
+	dynasty_house = house_british_isles_arllechwydd #Arllechwydd
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159050
+	760.1.1 = {
+		birth = "760.1.1"
+	}
+	820.1.1 = {
+		death = "820.1.1"
+	}
+}
+159065 = {
+	name = "Bywyr_Lew" #
+	dynasty_house = house_british_isles_ternyllwg #Ternyllwg
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159064
+	600.1.1 = {
+		birth = "600.1.1"
+	}
+	690.1.1 = {
+		death = "690.1.1"
+	}
+}
+159066 = {
+	name = "Gwineu_Deufureuddwyd" #
+	dynasty_house = house_british_isles_ternyllwg #Ternyllwg
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159065
+	630.1.1 = {
+		birth = "630.1.1"
+	}
+	700.1.1 = {
+		death = "700.1.1"
+	}
+}
+159067 = {
+	name = "Teon" #
+	dynasty_house = house_british_isles_ternyllwg #Ternyllwg
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159066
+	670.1.1 = {
+		birth = "670.1.1"
+	}
+	746.1.1 = {
+		death = "746.1.1"
+	}
+}
+159068 = {
+	name = "Tegonwy" #
+	dynasty_house = house_british_isles_ternyllwg #Ternyllwg
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159067
+	700.1.1 = {
+		birth = "700.1.1"
+	}
+	769.1.1 = {
+		death = "769.1.1"
+	}
+}
+159069 = {
+	name = "Caenog" #
+	dynasty_house = house_british_isles_ternyllwg #Ternyllwg
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159068
+	740.1.1 = {
+		birth = "740.1.1"
+	}
+	803.1.1 = {
+		death = "803.1.1"
+	}
+}
+159070 = {
+	name = "Corf" #
+	dynasty_house = house_british_isles_ternyllwg #Ternyllwg
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159069
+	760.1.1 = {
+		birth = "760.1.1"
+	}
+	820.1.1 = {
+		death = "820.1.1"
+	}
+}
+159081 = {
+	name = "Manwgan" #
+	dynasty_house = house_british_isles_gwerthrynion #Gwerthrynion
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159080
+	610.1.1 = {
+		birth = "610.1.1"
+	}
+	655.1.1 = {
+		death = "655.1.1"
+	}
+}
+
+159082 = {
+	name = "Beli" # ap Eliudd
+	dynasty_house = house_british_isles_gwerthrynion #Gwerthrynion
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159081
+	635.1.1 = {
+		birth = "635.1.1"
+	}
+	680.1.1 = {
+		death = "680.1.1"
+	}
+}
+
+159083 = {
+	name = "Gwylog" #
+	dynasty_house = house_british_isles_gwerthrynion #Gwerthrynion
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159082
+	660.1.1 = {
+		birth = "660.1.1"
+	}
+	710.1.1 = {
+		death = "710.1.1"
+	}
+}
+159084 = {
+	name = "Elisedd" #
+	dynasty_house = house_british_isles_gwerthrynion #Gwerthrynion
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159083
+	695.1.1 = {
+		birth = "695.1.1"
+	}
+	755.1.1 = {
+		death = "755.1.1"
+	}
+}
+159085 = {
+	name = "Brochfael" #
+	dynasty_house = house_british_isles_gwerthrynion #Gwerthrynion
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159084
+	720.1.1 = {
+		birth = "720.1.1"
+	}
+	773.1.1 = {
+		death = "773.1.1"
+	}
+}
+159086 = {
+	name = "Cadell" #
+	dynasty_house = house_british_isles_gwerthrynion #Gwerthrynion
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159084
+	750.1.1 = {
+		birth = "750.1.1"
+	}
+	808.1.1 = {
+		death = "808.1.1"
+	}
+}
+159112 = {
+	name = "Gwriad" #
+	dynasty_house = house_british_isles_morgannwg #Morgan
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159113
+	750.1.1 = {
+		birth = "750.1.1"
+	}
+	810.1.1 = {
+		death = "810.1.1"
+	}
+}
+
+159113 = {
+	name = "Brochfael" #
+	dynasty_house = house_british_isles_morgannwg #Morgan
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159114
+	730.1.1 = {
+		birth = "730.1.1"
+	}
+	790.1.1 = {
+		death = "790.1.1"
+	}
+}
+
+159114 = {
+	name = "Rhys" #
+	dynasty_house = house_british_isles_morgannwg #Morgan
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159115
+	709.1.1 = {
+		birth = "709.1.1"
+	}
+	780.1.1 = {
+		death = "780.1.1"
+	}
+}
+
+159115 = {
+	name = "Ithel" #
+	dynasty_house = house_british_isles_morgannwg #Morgan
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159116
+	675.1.1 = {
+		birth = "675.1.1"
+	}
+	740.1.1 = {
+		death = "740.1.1"
+	}
+}
+
+159116 = {
+	name = "Morgan" #
+	dynasty_house = house_british_isles_morgannwg #Morgan
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159835
+	634.1.1 = {
+		birth = "634.1.1"
+	}
+	710.1.2 = {
+		death = "710.1.2"
+		give_nickname = nick_the_great
+	}
+}
+
+159301 = {
+	name = "Gloyw" #
+	dynasty = 1047020 #Manceinion
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159300
+	620.1.1 = {
+		birth = "620.1.1"
+	}
+	700.1.2 = {
+		death = "700.1.2"
+	}
+}
+
+159302 = {
+	name = "Hoyw" #
+	dynasty = 1047020 #Manceinion
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159301
+	650.1.1 = {
+		birth = "650.1.1"
+	}
+	730.1.2 = {
+		death = "730.1.2"
+	}
+}
+
+159303 = {
+	name = "Cynfarch" #
+	dynasty = 1047020 #Manceinion
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159302
+	680.1.1 = {
+		birth = "680.1.1"
+	}
+	760.1.2 = {
+		death = "760.1.2"
+	}
+}
+
+159304 = {
+	name = "Cyndegg" #
+	dynasty = 1047020 #Manceinion
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159303
+	710.1.1 = {
+		birth = "710.1.1"
+	}
+	790.1.2 = {
+		death = "790.1.2"
+	}
+}
+
+159305 = {
+	name = "Teithwalch" #
+	dynasty = 1047020 #Manceinion
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159304
+	750.1.1 = {
+		birth = "750.1.1"
+	}
+	820.1.2 = {
+		death = "820.1.2"
+	}
+}
+
+159330 = {
+	name = "Ceindrych"
+	female = yes
+	dynasty = 1029032 #1st Brycheiniog
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159329
+	600.1.1 = {
+		birth = "600.1.1"
+	}
+	625.1.1 = {
+		add_spouse = 159344 #Cloten of Dyfed
+	}
+	670.1.1 = {
+		death = "670.1.1"
+	}
+}
+159345 = {
+	name = "Cathen"
+	dynasty_house = house_british_isles_dyfed #Dyfed
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159344
+	mother = 159330
+	625.1.1 = {
+		birth = "625.1.1"
+	}
+	690.1.1 = {
+		death = "690.1.1"
+	}
+}
+159346 = {
+	name = "Cadwgan" # Tredylig
+	dynasty_house = house_british_isles_dyfed #Dyfed
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159345
+	650.1.1 = {
+		birth = "650.1.1"
+	}
+	710.1.1 = {
+		death = "710.1.1"
+	}
+}
+159347 = {
+	name = "Rhain"
+	dynasty_house = house_british_isles_dyfed #Dyfed
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159346
+	670.1.1 = {
+		birth = "670.1.1"
+	}
+	730.1.1 = {
+		death = "730.1.1"
+	}
+}
+159348 = {
+	name = "Tewdos"
+	dynasty_house = house_british_isles_dyfed #Dyfed
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159347
+	700.1.1 = {
+		birth = "700.1.1"
+	}
+	760.1.1 = {
+		death = "760.1.1"
+	}
+}
+159349 = {
+	name = "Maredudd"
+	dynasty_house = house_british_isles_dyfed #Dyfed
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159348
+	730.1.1 = {
+		birth = "730.1.1"
+	}
+	800.1.1 = {
+		death = "800.1.1"
+	}
+}
+159350 = {
+	name = "Owain"
+	dynasty_house = house_british_isles_dyfed #Dyfed
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159349
+	760.1.1 = {
+		birth = "760.1.1"
+	}
+	811.1.1 = {
+		death = "811.1.1"
+	}
+}
+159356 = {
+	name = "Rhain"
+	dynasty_house = house_british_isles_dyfed #Dyfed
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159349
+	755.1.1 = {
+		birth = "755.1.1"
+	}
+	808.1.1 = {
+		death = "808.1.1"
+	}
+}
+159358 = {
+	name = "Awst"
+	dynasty_house = house_british_isles_dyfed #Dyfed
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159346
+	680.1.1 = {
+		birth = "680.1.1"
+	}
+	730.1.1 = {
+		death = "730.1.1"
+	}
+}
+159359 = {
+	name = "Elwystyl"
+	dynasty_house = house_british_isles_dyfed #Dyfed
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159358
+	710.1.1 = {
+		birth = "710.1.1"
+	}
+	750.1.1 = {
+		death = "750.1.1"
+	}
+}
+159360 = {
+	name = "Tewdwr"
+	dynasty_house = house_british_isles_dyfed #Dyfed
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159347
+	701.1.1 = {
+		birth = "701.1.1"
+	}
+	750.1.1 = {
+		death = "750.1.1"
+	}
+}
+159363 = {
+	name = "Nowy"
+	dynasty_house = house_british_isles_brycheiniog
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159360
+	721.1.1 = {
+		birth = "721.1.1"
+	}
+	770.1.1 = {
+		death = "770.1.1"
+	}
+}
+159364 = {
+	name = "Gruffydd"
+	dynasty_house = house_british_isles_brycheiniog
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159363
+	750.1.1 = {
+		birth = "750.1.1"
+	}
+	800.1.1 = {
+		death = "800.1.1"
+	}
+}
+159697 = {
+	name = "Iudon"
+	religion = "chalcedonian"
+	culture = "welsh"
+	dynasty_house = house_british_isles_dyfed #Dyfed
+	father = 159349
+	760.1.1 = {
+		birth = "760.1.1"
+	}
+	827.1.1 = {
+		death = "827.1.1"
+	}
+}
+
+159835 = {
+	name = "Arthwys" #
+	dynasty = 1029129 #Gwent
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159833
+	mother = 159964
+	620.1.1 = {
+		birth = "620.1.1"
+	}
+	680.1.1 = {
+		death = "680.1.1"
+	}
+}
+
+159933 = {
+	name = "Celeinion" #
+	female = yes
+	dynasty = 1029131 #Manaw
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159934
+	685.1.1 = {
+		birth = "685.1.1"
+	}
+	720.1.1 = {
+		add_spouse = 159029
+	}
+	740.1.1 = {
+		death = "740.1.1"
+	}
+}
+159934 = {
+	name = "Tudwal" #
+	dynasty = 1029131 #Manaw
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159943
+	654.1.1 = {
+		birth = "654.1.1"
+	}
+	710.1.1 = {
+		death = "710.1.1"
+	}
+}
+159942 = {
+	name = "Merfyn" #
+	dynasty = 1029131 #Manaw
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159941
+	610.1.1 = {
+		birth = "610.1.1"
+	}
+	681.1.1 = {
+		death = "681.1.1"
+	}
+}
+159943 = {
+	name = "Anarawd" #
+	dynasty = 1029131 #Manaw
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159942
+	632.1.1 = {
+		birth = "632.1.1"
+	}
+	691.1.1 = {
+		death = "691.1.1"
+	}
+}
+159964 = {
+	name = "Onbrawst" #
+	female = yes
+	dynasty = 20037 #Ergyng
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159963
+	603.1.1 = {
+		birth = "603.1.1"
+	}
+	620.1.1 = {
+		add_spouse = 159833
+	}
+	690.1.1 = {
+		death = "690.1.1"
+	}
+}
+159798 = {
+	name = "Seisyll" # ap Clydog
+	dynasty = 14255 # Seisyllwg
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159797
+	660.1.1 = {
+		birth = "660.1.1"
+	}
+	740.1.1 = {
+		death = "740.1.1"
+	}
+}
+159799 = {
+	name = "Arthwyr" # ap Seisyll
+	dynasty = 14255 # Seisyllwg
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159798
+	690.1.1 = {
+		birth = "690.1.1"
+	}
+	770.1.1 = {
+		death = "770.1.1"
+	}
+}
+159806 = {
+	name = "Dyfnwal" # ab Arthwyr
+	dynasty = 14255 # Seisyllwg
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159799
+	740.1.1 = {
+		birth = "740.1.1"
+	}
+	818.1.1 = {
+		death = "818.1.1"
+	}
+}
+
+160043 = {
+	name = "Einion"
+	dynasty_house = house_british_isles_rhos #Rhos
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 160042
+	600.1.1 = {
+		birth = "600.1.1"
+	}
+	650.1.1 = {
+		death = "650.1.1"
+	}
+}
+160044 = {
+	name = "Rhufon"
+	dynasty_house = house_british_isles_rhos #Rhos
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 160043
+	630.1.1 = {
+		birth = "630.1.1"
+	}
+	695.1.1 = {
+		death = "695.1.1"
+	}
+}
+160045 = {
+	name = "Hywel"
+	dynasty_house = house_british_isles_rhos #Rhos
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 160044
+	660.1.1 = {
+		birth = "660.1.1"
+	}
+	700.1.1 = {
+		death = "700.1.1"
+	}
+}
+160046 = {
+	name = "Meirchion"
+	dynasty_house = house_british_isles_rhos #Rhos
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 160045
+	690.1.1 = {
+		birth = "690.1.1"
+	}
+	740.1.1 = {
+		death = "740.1.1"
+	}
+}
+184119 = {
+	name = "Iorwerth"
+	dynasty_house = house_british_isles_ternyllwg #Ternyllwg
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159068 #Tegonwy Gruffyd of Powys
+	740.1.1 = {
+		birth = "740.1.1"
+	}
+	759.1.1 = {
+		add_spouse = 184135
+	}
+	815.1.1 = {
+		dynasty_house = house_british_isles_maelienydd #Maelienydd
+		death = "815.1.1"
+	}
+}
+184120 = {
+	name = "Idnerth"
+	dynasty_house = house_british_isles_ternyllwg #Ternyllwg
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 184119
+	mother = 184135
+	760.1.1 = {
+		birth = "760.1.1"
+	}
+	815.1.1 = {
+		dynasty_house = house_british_isles_maelienydd #Maelienydd
+	}
+	820.1.1 = {
+		death = "820.1.1"
+	}
+}
+184131 = {
+	name = "Cynan"
+	dynasty = 1029032 #1st Brycheiniog
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 184130
+	610.1.1 = {
+		birth = "610.1.1"
+	}
+	680.1.1 = {
+		death = "680.1.1"
+	}
+}
+184132 = {
+	name = "Maelgwn"
+	dynasty = 1029032 #1st Brycheiniog
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 184131
+	640.1.1 = {
+		birth = "640.1.1"
+	}
+	710.1.1 = {
+		death = "710.1.1"
+	}
+}
+184133 = {
+	name = "Idwal"
+	dynasty = 1029032 #1st Brycheiniog
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 184132
+	670.1.1 = {
+		birth = "670.1.1"
+	}
+	740.1.1 = {
+		death = "740.1.1"
+	}
+}
+184134 = {
+	name = "Brychan"
+	dynasty = 1029032 #1st Brycheiniog
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 184133
+	710.1.1 = {
+		birth = "710.1.1"
+	}
+	770.1.1 = {
+		death = "770.1.1"
+	}
+}
+184135 = {
+	name = "Arianwen"
+	dynasty = 1029032 #1st Brycheiniog
+	female = yes
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 184134
+	740.1.1 = {
+		birth = "740.1.1"
+	}
+	820.1.1 = {
+		death = "820.1.1"
+	}
+}
+
+205140 = {
+	name = "Hywel" # ap Caradog
+	dynasty_house = house_british_isles_rhos #Rhos
+	father = 159022
+	religion = "chalcedonian"
+	culture = "welsh"
+	750.1.1 = {
+		birth = "750.1.1"
+	}
+	825.1.1 = {
+		death = "825.1.1"
+	}
+}
+205138 = {
+	name = "Ceindrych"
+	female = yes
+	dynasty = 1029032 #1st Brycheiniog
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 184130
+	611.1.1 = {
+		birth = "611.1.1"
+	}
+	680.1.1 = {
+		death = "680.1.1"
+	}
+}
+252370 = {
+	name = "Naufedd" #Naufedd Hen
+	dynasty_house = house_british_isles_dyfed #Dyfed
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159347
+	703.1.1 = {
+		birth = yes
+	}
+	785.1.1 = {
+		death = yes
+		give_nickname = nick_the_old
+	}
+}
+252371 = {
+	name = "Elisedd" #Elisedd
+	dynasty_house = house_british_isles_dyfed #Dyfed
+	religion = "chalcedonian"
+	culture = "welsh"
+	father = 159347
+	705.1.1 = {
+		birth = yes
+	}
+	770.1.1 = {
+		death = yes
+	}
+}
+
+###########

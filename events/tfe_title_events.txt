@@ -1,0 +1,1708 @@
+﻿namespace = tfe_title_event
+
+tfe_title_event.0001 = {
+	type = character_event
+	hidden = yes
+	
+	trigger = {
+		scope:title = {
+			this = title:k_france
+		}
+		game_start_date = 476.9.4
+		NOR = {
+			culture = {
+				OR = {
+					this = culture:roman
+					any_parent_culture_or_above = {
+						this = culture:roman
+					}
+				}
+			}
+			has_global_variable = soissons_renamed
+		}
+	}
+	
+	immediate = {
+		title:k_france = {
+			save_scope_as = francia_title
+		}
+		set_global_variable = {
+			name = soissons_renamed
+			value = yes
+		}
+		title:k_france = {
+			reset_title_name = yes
+			set_coa = title:k_france_2
+			set_color_from_title = title:k_france_2
+		}
+	}
+}
+
+tfe_title_event.0002 = {
+	title = tfe_title_event.0002.t
+	desc = tfe_title_event.0002.desc
+	scope = character
+	theme = diplomacy
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+
+	option = {
+		name = tfe_title_event.0002.option.a
+		if = {
+			limit = {
+				scope:title.tier = tier_kingdom
+			}
+			if = {
+				limit = {
+					AND =  {
+						OR = { access_to_italian_senate = yes access_to_eastern_senate = yes }
+						any_vassal_or_below = {
+							AND = {
+								is_landed = yes
+								capital_county.kingdom = scope:title
+							}
+							OR = {
+								highest_held_title_tier = tier_duchy
+								liege = top_liege
+							}
+							OR = {
+								AND = {
+									global_variable_list_size = {
+										name = aristocratic_senate_eastern
+										value > 9
+									}
+									has_character_flag = bribed_aristocrats_eastern
+									top_liege = { access_to_eastern_senate = yes }
+								}
+								AND = {
+									global_variable_list_size = {
+										name = populist_senate_eastern
+										value > 9
+									}
+									has_character_flag = bribed_populists_eastern
+									top_liege = { access_to_eastern_senate = yes }
+								}
+								AND = {
+									global_variable_list_size = {
+										name = traditionalist_senate_eastern
+										value > 9
+									}
+									has_character_flag = bribed_traditionalist_eastern
+									top_liege = { access_to_eastern_senate = yes }
+								}
+								AND = {
+									has_character_flag = bribed_populists_eastern
+									has_character_flag = bribed_aristocrats_eastern
+									top_liege = { access_to_eastern_senate = yes }
+								}
+								AND = {
+									has_character_flag = bribed_traditionalist_eastern
+									has_character_flag = bribed_aristocrats_eastern
+									top_liege = { access_to_eastern_senate = yes }
+								}
+								AND = {
+									has_character_flag = bribed_populists_eastern
+									has_character_flag = bribed_traditionalist_eastern
+									top_liege = { access_to_eastern_senate = yes }
+								}
+								AND = {
+									global_variable_list_size = {
+										name = aristocratic_senate_italy
+										value > 9
+									}
+									has_character_flag = bribed_aristocrats_italy
+									top_liege = { access_to_italian_senate = yes }
+								}
+								AND = {
+									global_variable_list_size = {
+										name = populist_senate_italy
+										value > 9
+									}
+									has_character_flag = bribed_populists_italy
+									top_liege = { access_to_italian_senate = yes }
+								}
+								AND = {
+									global_variable_list_size = {
+										name = traditionalist_senate_italy
+										value > 9
+									}
+									has_character_flag = bribed_traditionalist_italy
+									top_liege = { access_to_italian_senate = yes }
+								}
+								AND = {
+									has_character_flag = bribed_populists_italy
+									has_character_flag = bribed_aristocrats_italy
+									top_liege = { access_to_italian_senate = yes }
+								}
+								AND = {
+									has_character_flag = bribed_traditionalist_italy
+									has_character_flag = bribed_aristocrats_italy
+									top_liege = { access_to_italian_senate = yes }
+								}
+								AND = {
+									has_character_flag = bribed_populists_italy
+									has_character_flag = bribed_traditionalist_italy
+									top_liege = { access_to_italian_senate = yes }
+								}
+							}
+						}
+					}
+				}
+				random_vassal_or_below = {
+					limit = {
+						AND = {
+							is_landed = yes
+							capital_county.kingdom = scope:title
+						}
+						OR = {
+							highest_held_title_tier = tier_duchy
+							liege = top_liege
+						}
+						OR = {
+							AND = {
+								global_variable_list_size = {
+									name = aristocratic_senate_eastern
+									value > 9
+								}
+								has_character_flag = bribed_aristocrats_eastern
+								top_liege = { access_to_eastern_senate = yes }
+							}
+							AND = {
+								global_variable_list_size = {
+									name = populist_senate_eastern
+									value > 9
+								}
+								has_character_flag = bribed_populists_eastern
+								top_liege = { access_to_eastern_senate = yes }
+							}
+							AND = {
+								global_variable_list_size = {
+									name = traditionalist_senate_eastern
+									value > 9
+								}
+								has_character_flag = bribed_traditionalist_eastern
+								top_liege = { access_to_eastern_senate = yes }
+							}
+							AND = {
+								has_character_flag = bribed_populists_eastern
+								has_character_flag = bribed_aristocrats_eastern
+								top_liege = { access_to_eastern_senate = yes }
+							}
+							AND = {
+								has_character_flag = bribed_traditionalist_eastern
+								has_character_flag = bribed_aristocrats_eastern
+								top_liege = { access_to_eastern_senate = yes }
+							}
+							AND = {
+								has_character_flag = bribed_populists_eastern
+								has_character_flag = bribed_traditionalist_eastern
+								top_liege = { access_to_eastern_senate = yes }
+							}
+							AND = {
+								global_variable_list_size = {
+									name = aristocratic_senate_italy
+									value > 9
+								}
+								has_character_flag = bribed_aristocrats_italy
+								top_liege = { access_to_italian_senate = yes }
+							}
+							AND = {
+								global_variable_list_size = {
+									name = populist_senate_italy
+									value > 9
+								}
+								has_character_flag = bribed_populists_italy
+								top_liege = { access_to_italian_senate = yes }
+							}
+							AND = {
+								global_variable_list_size = {
+									name = traditionalist_senate_italy
+									value > 9
+								}
+								has_character_flag = bribed_traditionalist_italy
+								top_liege = { access_to_italian_senate = yes }
+							}
+							AND = {
+								has_character_flag = bribed_populists_italy
+								has_character_flag = bribed_aristocrats_italy
+								top_liege = { access_to_italian_senate = yes }
+							}
+							AND = {
+								has_character_flag = bribed_traditionalist_italy
+								has_character_flag = bribed_aristocrats_italy
+								top_liege = { access_to_italian_senate = yes }
+							}
+							AND = {
+								has_character_flag = bribed_populists_italy
+								has_character_flag = bribed_traditionalist_italy
+								top_liege = { access_to_italian_senate = yes }
+							}
+						}
+					}
+					scope:title = {
+						create_title_and_vassal_change = {
+							type = granted
+							save_scope_as = change
+							add_claim_on_loss = no
+						}
+						change_title_holder_include_vassals = {
+							holder = PREV
+							change = scope:change
+						}
+						resolve_title_and_vassal_change = scope:change
+					}
+				}
+			}
+			else = {
+				ordered_vassal = {
+					order_by = martial
+					position = 0
+					limit = {
+						AND = {
+							is_landed = yes
+							capital_county.kingdom = scope:title
+						}
+						#highest_held_title_tier = tier_duchy
+					}
+					scope:title = {
+						create_title_and_vassal_change = {
+							type = granted
+							save_scope_as = change
+							add_claim_on_loss = no
+						}
+						change_title_holder_include_vassals = {
+							holder = PREV
+							change = scope:change
+						}
+						resolve_title_and_vassal_change = scope:change
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				scope:title.tier = tier_duchy
+			}
+			if = {
+				limit = {
+					AND =  {
+						OR = { access_to_italian_senate = yes access_to_eastern_senate = yes }
+						any_vassal_or_below= {
+							AND = {
+								is_landed = yes
+								capital_county.duchy = scope:title
+							}
+							OR = {
+								highest_held_title_tier = tier_county
+								has_title = scope:title.kingdom
+							}
+							OR = {
+								AND = {
+									global_variable_list_size = {
+										name = aristocratic_senate_eastern
+										value > 9
+									}
+									has_character_flag = bribed_aristocrats_eastern
+									top_liege = { access_to_eastern_senate = yes }
+								}
+								AND = {
+									global_variable_list_size = {
+										name = populist_senate_eastern
+										value > 9
+									}
+									has_character_flag = bribed_populists_eastern
+									top_liege = { access_to_eastern_senate = yes }
+								}
+								AND = {
+									global_variable_list_size = {
+										name = traditionalist_senate_eastern
+										value > 9
+									}
+									has_character_flag = bribed_traditionalist_eastern
+									top_liege = { access_to_eastern_senate = yes }
+								}
+								AND = {
+									has_character_flag = bribed_populists_eastern
+									has_character_flag = bribed_aristocrats_eastern
+									top_liege = { access_to_eastern_senate = yes }
+								}
+								AND = {
+									has_character_flag = bribed_traditionalist_eastern
+									has_character_flag = bribed_aristocrats_eastern
+									top_liege = { access_to_eastern_senate = yes }
+								}
+								AND = {
+									has_character_flag = bribed_populists_eastern
+									has_character_flag = bribed_traditionalist_eastern
+									top_liege = { access_to_eastern_senate = yes }
+								}
+								AND = {
+									global_variable_list_size = {
+										name = aristocratic_senate_italy
+										value > 9
+									}
+									has_character_flag = bribed_aristocrats_italy
+									top_liege = { access_to_italian_senate = yes }
+								}
+								AND = {
+									global_variable_list_size = {
+										name = populist_senate_italy
+										value > 9
+									}
+									has_character_flag = bribed_populists_italy
+									top_liege = { access_to_italian_senate = yes }
+								}
+								AND = {
+									global_variable_list_size = {
+										name = traditionalist_senate_italy
+										value > 9
+									}
+									has_character_flag = bribed_traditionalist_italy
+									top_liege = { access_to_italian_senate = yes }
+								}
+								AND = {
+									has_character_flag = bribed_populists_italy
+									has_character_flag = bribed_aristocrats_italy
+									top_liege = { access_to_italian_senate = yes }
+								}
+								AND = {
+									has_character_flag = bribed_traditionalist_italy
+									has_character_flag = bribed_aristocrats_italy
+									top_liege = { access_to_italian_senate = yes }
+								}
+								AND = {
+									has_character_flag = bribed_populists_italy
+									has_character_flag = bribed_traditionalist_italy
+									top_liege = { access_to_italian_senate = yes }
+								}
+							}
+						}
+					}
+				}
+				random_vassal_or_below = {
+					limit = {
+						AND = {
+							is_landed = yes
+							capital_county.duchy = scope:title
+						}
+						OR = {
+							highest_held_title_tier = tier_county
+							has_title = scope:title.kingdom
+						}
+						OR = {
+							AND = {
+								global_variable_list_size = {
+									name = aristocratic_senate_eastern
+									value > 9
+								}
+								has_character_flag = bribed_aristocrats_eastern
+								top_liege = { access_to_eastern_senate = yes }
+							}
+							AND = {
+								global_variable_list_size = {
+									name = populist_senate_eastern
+									value > 9
+								}
+								has_character_flag = bribed_populists_eastern
+								top_liege = { access_to_eastern_senate = yes }
+							}
+							AND = {
+								global_variable_list_size = {
+									name = traditionalist_senate_eastern
+									value > 9
+								}
+								has_character_flag = bribed_traditionalist_eastern
+								top_liege = { access_to_eastern_senate = yes }
+							}
+							AND = {
+								has_character_flag = bribed_populists_eastern
+								has_character_flag = bribed_aristocrats_eastern
+								top_liege = { access_to_eastern_senate = yes }
+							}
+							AND = {
+								has_character_flag = bribed_traditionalist_eastern
+								has_character_flag = bribed_aristocrats_eastern
+								top_liege = { access_to_eastern_senate = yes }
+							}
+							AND = {
+								has_character_flag = bribed_populists_eastern
+								has_character_flag = bribed_traditionalist_eastern
+									top_liege = { access_to_eastern_senate = yes }
+							}
+							AND = {
+								global_variable_list_size = {
+									name = aristocratic_senate_italy
+									value > 9
+								}
+								has_character_flag = bribed_aristocrats_italy
+								top_liege = { access_to_italian_senate = yes }
+							}
+							AND = {
+								global_variable_list_size = {
+									name = populist_senate_italy
+									value > 9
+								}
+								has_character_flag = bribed_populists_italy
+								top_liege = { access_to_italian_senate = yes }
+							}
+							AND = {
+								global_variable_list_size = {
+									name = traditionalist_senate_italy
+									value > 9
+								}
+								has_character_flag = bribed_traditionalist_italy
+								top_liege = { access_to_italian_senate = yes }
+							}
+							AND = {
+								has_character_flag = bribed_populists_italy
+								has_character_flag = bribed_aristocrats_italy
+								top_liege = { access_to_italian_senate = yes }
+							}
+							AND = {
+								has_character_flag = bribed_traditionalist_italy
+								has_character_flag = bribed_aristocrats_italy
+								top_liege = { access_to_italian_senate = yes }
+							}
+							AND = {
+								has_character_flag = bribed_populists_italy
+								has_character_flag = bribed_traditionalist_italy
+								top_liege = { access_to_italian_senate = yes }
+							}
+						}
+					}
+					scope:title = {
+						create_title_and_vassal_change = {
+							type = granted
+							save_scope_as = change
+							add_claim_on_loss = no
+						}
+						change_title_holder_include_vassals = {
+							holder = PREV
+							change = scope:change
+						}
+						resolve_title_and_vassal_change = scope:change
+					}
+				}
+			}
+			else = {
+				ordered_vassal_or_below = {
+					order_by = martial
+					position = 0
+					limit = {
+						AND = {
+							is_landed = yes
+							capital_county.duchy = scope:title
+						}
+						OR = {
+							highest_held_title_tier = tier_county
+							has_title = scope:title.kingdom
+						}
+					}
+					scope:title = {
+						create_title_and_vassal_change = {
+							type = granted
+							save_scope_as = change
+							add_claim_on_loss = no
+						}
+						change_title_holder_include_vassals = {
+							holder = PREV
+							change = scope:change
+						}
+						resolve_title_and_vassal_change = scope:change
+					}
+				}
+			}
+		}
+		custom_tooltip = tfe_title_event.0002.option.a.tooltip
+		ai_chance = { base = 10 }
+	}
+	option = {
+		name = tfe_title_event.0002.option.b
+		ai_chance = { base = 0 }
+	}
+}
+
+
+tfe_title_event.0003 = {
+	title = tfe_title_event.0003.t
+	desc = tfe_title_event.0003.desc
+	scope = character
+	theme = diplomacy
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+
+	option = {
+		name = tfe_title_event.0002.option.a
+		if = {
+			limit = {
+				scope:title_old_office.tier = tier_kingdom
+			}
+			if = {
+				limit = {
+					AND =  {
+						OR = { access_to_italian_senate = yes access_to_eastern_senate = yes }
+						any_vassal = {
+							AND = {
+								is_landed = yes
+								capital_county.kingdom = scope:title_old_office
+							}
+							highest_held_title_tier = tier_duchy
+							trigger_if = {
+								limit = {
+									liege = { access_to_eastern_senate = yes }
+								}
+								AND = {
+									
+									global_variable_list_size = {
+										name = aristocratic_senate_eastern
+										value > 9
+									}
+									has_character_flag = bribed_aristocrats_eastern
+								}
+								AND = {
+									
+									global_variable_list_size = {
+										name = populist_senate_eastern
+										value > 9
+									}
+									has_character_flag = bribed_populists_eastern
+								}
+								AND = {
+									
+									global_variable_list_size = {
+										name = traditionalist_senate_eastern
+										value > 9
+									}
+									has_character_flag = bribed_traditionalist_eastern
+								}
+								AND = {
+									
+									has_character_flag = bribed_populists_eastern
+									has_character_flag = bribed_aristocrats_eastern
+								}
+								AND = {
+									
+									has_character_flag = bribed_traditionalist_eastern
+									has_character_flag = bribed_aristocrats_eastern
+								}
+								AND = {
+									
+									has_character_flag = bribed_populists_eastern
+									has_character_flag = bribed_traditionalist_eastern
+								}
+							}
+							trigger_if = {
+								limit = {
+									liege = { access_to_italian_senate = yes }
+								}
+								AND = {
+									
+									global_variable_list_size = {
+										name = aristocratic_senate_italy
+										value > 9
+									}
+									has_character_flag = bribed_aristocrats_italy
+								}
+								AND = {
+									
+									global_variable_list_size = {
+										name = populist_senate_italy
+										value > 9
+									}
+									has_character_flag = bribed_populists_italy
+								}
+								AND = {
+									
+									global_variable_list_size = {
+										name = traditionalist_senate_italy
+										value > 9
+									}
+									has_character_flag = bribed_traditionalist_italy
+								}
+								AND = {
+									
+									has_character_flag = bribed_populists_italy
+									has_character_flag = bribed_aristocrats_italy
+								}
+								AND = {
+									
+									has_character_flag = bribed_traditionalist_italy
+									has_character_flag = bribed_aristocrats_italy
+								}
+								AND = {
+									
+									has_character_flag = bribed_populists_italy
+									has_character_flag = bribed_traditionalist_italy
+								}
+							}
+						}
+					}
+				}
+				random_vassal = {
+					limit = {
+						AND = {
+							is_landed = yes
+							capital_county.kingdom = scope:title_old_office
+						}
+						highest_held_title_tier = tier_duchy
+						trigger_if = {
+							limit = {
+								liege = { access_to_eastern_senate = yes }
+							}
+							AND = {
+								
+								global_variable_list_size = {
+									name = aristocratic_senate_eastern
+									value > 9
+								}
+								has_character_flag = bribed_aristocrats_eastern
+							}
+							AND = {
+								
+								global_variable_list_size = {
+									name = populist_senate_eastern
+									value > 9
+								}
+								has_character_flag = bribed_populists_eastern
+							}
+							AND = {
+								
+								global_variable_list_size = {
+									name = traditionalist_senate_eastern
+									value > 9
+								}
+								has_character_flag = bribed_traditionalist_eastern
+							}
+							AND = {
+								
+								has_character_flag = bribed_populists_eastern
+								has_character_flag = bribed_aristocrats_eastern
+							}
+							AND = {
+								
+								has_character_flag = bribed_traditionalist_eastern
+								has_character_flag = bribed_aristocrats_eastern
+							}
+							AND = {
+								
+								has_character_flag = bribed_populists_eastern
+								has_character_flag = bribed_traditionalist_eastern
+							}
+						}
+						trigger_if = {
+							limit = {
+								liege = { access_to_italian_senate = yes }
+							}
+							AND = {
+								
+								global_variable_list_size = {
+									name = aristocratic_senate_italy
+									value > 9
+								}
+								has_character_flag = bribed_aristocrats_italy
+							}
+							AND = {
+								
+								global_variable_list_size = {
+									name = populist_senate_italy
+									value > 9
+								}
+								has_character_flag = bribed_populists_italy
+							}
+							AND = {
+								
+								global_variable_list_size = {
+									name = traditionalist_senate_italy
+									value > 9
+								}
+								has_character_flag = bribed_traditionalist_italy
+							}
+							AND = {
+								
+								has_character_flag = bribed_populists_italy
+								has_character_flag = bribed_aristocrats_italy
+							}
+							AND = {
+								
+								has_character_flag = bribed_traditionalist_italy
+								has_character_flag = bribed_aristocrats_italy
+							}
+							AND = {
+								
+								has_character_flag = bribed_populists_italy
+								has_character_flag = bribed_traditionalist_italy
+							}
+						}
+					}
+					scope:title_old_office = {
+						create_title_and_vassal_change = {
+							type = granted
+							save_scope_as = change
+							add_claim_on_loss = no
+						}
+						change_title_holder_include_vassals = {
+							holder = PREV
+							change = scope:change
+						}
+						resolve_title_and_vassal_change = scope:change
+					}
+				}
+			}
+			else = {
+				ordered_vassal = {
+					order_by = martial
+					position = 0
+					limit = {
+						AND = {
+							is_landed = yes
+							capital_county.kingdom = scope:title_old_office
+						}
+						highest_held_title_tier = tier_duchy
+					}
+					scope:title_old_office = {
+						create_title_and_vassal_change = {
+							type = granted
+							save_scope_as = change
+							add_claim_on_loss = no
+						}
+						change_title_holder_include_vassals = {
+							holder = PREV
+							change = scope:change
+						}
+						resolve_title_and_vassal_change = scope:change
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				scope:title_old_office.tier = tier_duchy
+			}
+			if = {
+				limit = {
+					AND =  {
+						OR = { access_to_italian_senate = yes access_to_eastern_senate = yes }
+						any_vassal_or_below =  {
+							AND = {
+								is_landed = yes
+								capital_county.duchy = scope:title_old_office
+							}
+							OR = {
+								highest_held_title_tier = tier_county
+								has_title = scope:title_old_office.kingdom
+							}
+							trigger_if = {
+								limit = {
+									liege = { access_to_eastern_senate = yes }
+								}
+								AND = {
+									
+									global_variable_list_size = {
+										name = aristocratic_senate_eastern
+										value > 9
+									}
+									has_character_flag = bribed_aristocrats_eastern
+								}
+								AND = {
+									
+									global_variable_list_size = {
+										name = populist_senate_eastern
+										value > 9
+									}
+									has_character_flag = bribed_populists_eastern
+								}
+								AND = {
+									
+									global_variable_list_size = {
+										name = traditionalist_senate_eastern
+										value > 9
+									}
+									has_character_flag = bribed_traditionalist_eastern
+								}
+								AND = {
+									
+									has_character_flag = bribed_populists_eastern
+									has_character_flag = bribed_aristocrats_eastern
+								}
+								AND = {
+									
+									has_character_flag = bribed_traditionalist_eastern
+									has_character_flag = bribed_aristocrats_eastern
+								}
+								AND = {
+									
+									has_character_flag = bribed_populists_eastern
+									has_character_flag = bribed_traditionalist_eastern
+								}
+							}
+							trigger_if = {
+								limit = {
+									liege = { access_to_italian_senate = yes }
+								}
+								AND = {
+									
+									global_variable_list_size = {
+										name = aristocratic_senate_italy
+										value > 9
+									}
+									has_character_flag = bribed_aristocrats_italy
+								}
+								AND = {
+									
+									global_variable_list_size = {
+										name = populist_senate_italy
+										value > 9
+									}
+									has_character_flag = bribed_populists_italy
+								}
+								AND = {
+									
+									global_variable_list_size = {
+										name = traditionalist_senate_italy
+										value > 9
+									}
+									has_character_flag = bribed_traditionalist_italy
+								}
+								AND = {
+									
+									has_character_flag = bribed_populists_italy
+									has_character_flag = bribed_aristocrats_italy
+								}
+								AND = {
+									
+									has_character_flag = bribed_traditionalist_italy
+									has_character_flag = bribed_aristocrats_italy
+								}
+								AND = {
+									
+									has_character_flag = bribed_populists_italy
+									has_character_flag = bribed_traditionalist_italy
+								}
+							}
+						}
+					}
+				}
+				random_vassal_or_below = {
+					limit = {
+						AND = {
+							is_landed = yes
+							capital_county.duchy = scope:title_old_office
+						}
+						OR = {
+							highest_held_title_tier = tier_county
+							has_title = scope:title_old_office.kingdom
+						}
+						trigger_if = {
+							limit = {
+								liege = { access_to_eastern_senate = yes }
+							}
+							AND = {
+								
+								global_variable_list_size = {
+									name = aristocratic_senate_eastern
+									value > 9
+								}
+								has_character_flag = bribed_aristocrats_eastern
+							}
+							AND = {
+								
+								global_variable_list_size = {
+									name = populist_senate_eastern
+									value > 9
+								}
+								has_character_flag = bribed_populists_eastern
+							}
+							AND = {
+								
+								global_variable_list_size = {
+									name = traditionalist_senate_eastern
+									value > 9
+								}
+								has_character_flag = bribed_traditionalist_eastern
+							}
+							AND = {
+								
+								has_character_flag = bribed_populists_eastern
+								has_character_flag = bribed_aristocrats_eastern
+							}
+							AND = {
+								
+								has_character_flag = bribed_traditionalist_eastern
+								has_character_flag = bribed_aristocrats_eastern
+							}
+							AND = {
+								
+								has_character_flag = bribed_populists_eastern
+								has_character_flag = bribed_traditionalist_eastern
+							}
+						}
+						trigger_if = {
+							limit = {
+								liege = { access_to_italian_senate = yes }
+							}
+							AND = {
+								
+								global_variable_list_size = {
+									name = aristocratic_senate_italy
+									value > 9
+								}
+								has_character_flag = bribed_aristocrats_italy
+							}
+							AND = {
+								
+								global_variable_list_size = {
+									name = populist_senate_italy
+									value > 9
+								}
+								has_character_flag = bribed_populists_italy
+							}
+							AND = {
+								
+								global_variable_list_size = {
+									name = traditionalist_senate_italy
+									value > 9
+								}
+								has_character_flag = bribed_traditionalist_italy
+							}
+							AND = {
+								
+								has_character_flag = bribed_populists_italy
+								has_character_flag = bribed_aristocrats_italy
+							}
+							AND = {
+								
+								has_character_flag = bribed_traditionalist_italy
+								has_character_flag = bribed_aristocrats_italy
+							}
+							AND = {
+								
+								has_character_flag = bribed_populists_italy
+								has_character_flag = bribed_traditionalist_italy
+							}
+						}
+					}
+					scope:title_old_office = {
+						create_title_and_vassal_change = {
+							type = granted
+							save_scope_as = change
+							add_claim_on_loss = no
+						}
+						change_title_holder_include_vassals = {
+							holder = PREV
+							change = scope:change
+						}
+						resolve_title_and_vassal_change = scope:change
+					}
+				}
+			}
+			else = {
+				ordered_vassal_or_below = {
+					order_by = martial
+					min = 1
+					position = 0
+					check_range_bounds = no
+					limit = {
+						AND = {
+							is_landed = yes
+							capital_county.duchy = scope:title_old_office
+						}
+						OR = {
+							highest_held_title_tier = tier_county
+							has_title = scope:title_old_office.kingdom
+						}
+					}
+					scope:title_old_office = {
+						create_title_and_vassal_change = {
+							type = granted
+							save_scope_as = change
+							add_claim_on_loss = no
+						}
+						change_title_holder_include_vassals = {
+							holder = PREV
+							change = scope:change
+						}
+						resolve_title_and_vassal_change = scope:change
+					}
+				}
+			}
+		}
+		custom_tooltip = tfe_title_event.0002.option.a.tooltip
+		ai_chance = { base = 10 }
+	}
+	option = {
+		name = tfe_title_event.0002.option.b
+		ai_chance = { base = 0 }
+	}
+}
+
+tfe_title_event.0004 = {
+	title = tfe_title_event.0004.t
+	desc = tfe_title_event.0004.desc
+	scope = character
+	theme = diplomacy
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+
+	immediate = {
+		character:145241 = {
+			save_scope_as = diocletian
+		}
+	}
+
+	option = {
+		name = tfe_title_event.0004.a
+		custom_tooltip = split_the_empire.custom.tooltip.1
+		custom_tooltip = split_the_empire.custom.tooltip.2
+		
+		hidden_effect = {
+			get_title = title:e_western_roman_empire
+			get_title = title:e_byzantium
+		}
+		
+		
+		hidden_effect = {
+			title:e_roman_empire = {
+				every_in_de_jure_hierarchy = {
+					limit = {
+						tier = tier_kingdom
+					}
+					if = {
+						limit = {
+							title_capital_county = {
+								title_province = {
+									geographical_region = custom_potential_wre
+								}
+							}
+						}
+						set_de_jure_liege_title = title:e_western_roman_empire
+					}
+					else = {
+						set_de_jure_liege_title = title:e_byzantium
+					}
+					
+				}
+			}
+		}
+		scope:roman_split_secondary_heir = {
+			get_title = title:c_byzantion
+			title:e_byzantium = {
+				create_title_and_vassal_change = {
+					type = granted
+					save_scope_as = change
+					add_claim_on_loss = no
+				}
+				change_title_holder_include_vassals = {
+					holder = PREV
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+			if = {
+				limit = {
+					AND = {
+						title:d_thrace = {
+							is_title_created = yes
+						}
+						title:e_western_roman_empire.holder = title:d_thrace.holder
+					}
+				}
+				title:d_thrace = {
+					create_title_and_vassal_change = {
+						type = granted
+						save_scope_as = change
+						add_claim_on_loss = no
+					}
+					change_title_holder_include_vassals = {
+						holder = PREV
+						change = scope:change
+					}
+					resolve_title_and_vassal_change = scope:change
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+						title:c_kalliopolis = {
+							is_title_created = yes
+						}
+						title:e_western_roman_empire.holder = title:c_kalliopolis.holder
+					}
+				}
+				title:c_kalliopolis = {
+					create_title_and_vassal_change = {
+						type = granted
+						save_scope_as = change
+						add_claim_on_loss = no
+					}
+					change_title_holder_include_vassals = {
+						holder = PREV
+						change = scope:change
+					}
+					resolve_title_and_vassal_change = scope:change
+				}
+				title:c_brysis = {
+					create_title_and_vassal_change = {
+						type = granted
+						save_scope_as = change
+						add_claim_on_loss = no
+					}
+					change_title_holder_include_vassals = {
+						holder = PREV
+						change = scope:change
+					}
+					resolve_title_and_vassal_change = scope:change
+				}
+			}
+		}
+		scope:roman_split_primary_heir = {
+			get_title = title:c_lombardia
+			get_title = title:c_roma
+			title:e_western_roman_empire = {
+				create_title_and_vassal_change = {
+					type = granted
+					save_scope_as = change
+					add_claim_on_loss = no
+				}
+				change_title_holder_include_vassals = {
+					holder = PREV
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+		}
+		set_designated_heir = scope:roman_split_primary_heir
+		
+		depose = yes
+
+		title:e_roman_empire = {
+			title:e_byzantium.holder = {
+				destroy_title = PREV
+			}
+		}
+
+		title:e_western_roman_empire.holder = {
+			every_held_title = {
+				limit = {
+					trigger_if = {
+						limit = {
+							exists = title_province
+						}
+						title_province = {
+							geographical_region = custom_potential_ere
+						}
+					}
+					trigger_else = {
+						title_capital_county = {
+							title_province = {
+								geographical_region = custom_potential_ere
+							}
+						}
+					}
+				}
+				create_title_and_vassal_change = {
+					type = granted
+					save_scope_as = change
+					add_claim_on_loss = no
+				}
+				change_title_holder_include_vassals = {
+					holder = title:e_byzantium.holder
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+			every_vassal = {
+				limit = {
+					capital_county = {
+						title_province = {
+							geographical_region = custom_potential_ere
+						}
+					}
+				}
+				create_title_and_vassal_change = {
+					type = granted
+					save_scope_as = change
+					add_claim_on_loss = no
+				}
+				change_liege = {
+					liege = title:e_byzantium.holder
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+			set_variable = {
+				name = mil_comp
+				value = 1500
+			}
+			set_variable = {
+				name = civic_comp
+				value = 1500
+			}
+			set_variable = {
+				name = diplo_comp
+				value = 1500
+			}
+			if = {
+				limit = {
+					has_dlc_feature = roads_to_power
+				}
+				change_government = administrative_government
+			}
+			else = {
+			change_government = imperial_government
+			}
+		}
+		title:e_byzantium.holder = {
+			set_variable = {
+				name = mil_comp
+				value = 1500
+			}
+			set_variable = {
+				name = civic_comp
+				value = 1500
+			}
+			set_variable = {
+				name = diplo_comp
+				value = 1500
+			}
+			if = {
+				limit = {
+					has_dlc_feature = roads_to_power
+				}
+				change_government = administrative_government
+			}
+			else = {
+			change_government = imperial_government
+			}
+		}
+		scope:split_emperor = {
+			every_child = {
+				if = {
+					limit = {
+						has_trait = augustus
+					}
+					remove_trait = augustus
+				}
+			}
+		}
+		ai_chance = { base = 10 }
+	}
+	option = {
+		name = tfe_title_event.0004.b
+		custom_tooltip = split_the_empire.custom.tooltip.3
+		add_character_flag = split_empire_upon_death
+		ai_chance = { base = 0 }
+	}
+	after = {		
+		every_player = {
+			limit = {
+				#is_ai = no
+				NOT = { this = scope:split_emperor }
+				OR = {					
+					is_within_diplo_range = { CHARACTER = scope:split_emperor }
+					any_held_title = {
+						tier = tier_county
+						any_county_province = {
+							OR = {
+								geographical_region = world_europe
+								geographical_region = world_africa_north
+								geographical_region = world_africa_sahara
+								geographical_region = world_middle_east
+								geographical_region = world_middle_east_persia
+								geographical_region = world_asia_minor
+								geographical_region = world_steppe_east
+							}		
+						}
+					}
+					any_liege_or_above = {
+						OR = {
+							has_title = title:e_roman_empire
+							has_title = title:e_byzantium
+							has_title = title:e_western_roman_empire
+						}
+					}
+				}
+			}
+			trigger_event = tfe_title_event.0005
+		}
+	}
+}
+
+
+
+tfe_title_event.0005 = {
+	title = tfe_title_event.0005.t
+	desc = {
+		desc = tfe_title_event.0005.desc
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					scope:split_emperor = {
+						has_character_flag = split_empire_upon_death
+					}
+				}
+				desc = tfe_title_event.0005.desc.later
+			}
+			desc = tfe_title_event.0005.desc.now
+		}
+	}
+	scope = character
+	theme = diplomacy
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	right_portrait = {
+		character = scope:split_emperor
+		animation = worry
+	}
+
+	option = {	
+		name = tfe_title_event.0005.a
+		custom_tooltip = split_the_empire.custom.tooltip.1
+		custom_tooltip = split_the_empire.custom.tooltip.2
+		ai_chance = { base = 10 }
+	}
+}
+
+tfe_title_event.0006 = {
+	hidden = yes
+	scope = none
+	immediate = {
+		title:e_western_roman_empire = {
+			create_title_and_vassal_change = {
+				type = granted
+				save_scope_as = change
+				add_claim_on_loss = no
+			}
+			change_title_holder_include_vassals = {
+				holder = root
+				change = scope:change
+			}
+			resolve_title_and_vassal_change = scope:change
+		}
+	}
+}
+tfe_title_event.0007 = {
+	hidden = yes
+	scope = none
+	immediate = {
+		title:e_byzantium = {
+			create_title_and_vassal_change = {
+				type = granted
+				save_scope_as = change
+				add_claim_on_loss = no
+			}
+			change_title_holder_include_vassals = {
+				holder = root
+				change = scope:change
+			}
+			resolve_title_and_vassal_change = scope:change
+		}
+		if = {
+			limit = {
+				AND = {
+					title:d_thrace = {
+						is_title_created = yes
+					}
+					title:e_western_roman_empire.holder = title:d_thrace.holder
+				}
+			}
+			title:d_thrace = {
+				create_title_and_vassal_change = {
+					type = granted
+					save_scope_as = change
+					add_claim_on_loss = no
+				}
+				change_title_holder_include_vassals = {
+					holder = root
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+		}
+	}
+}
+
+tfe_title_event.0008 = {
+	title = tfe_title_event.0008.t
+	desc = tfe_title_event.0008.desc
+	scope = character
+	theme = diplomacy
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+
+	option = {
+		name = tfe_title_event.0008.option.a
+		if = {
+			limit = {
+				scope:title.tier = tier_kingdom
+			}
+			ordered_vassal = {
+				order_by = martial
+				max = 1
+				check_range_bounds = no
+				limit = {
+					AND = {
+						is_landed = yes
+						capital_county.kingdom = scope:title
+					}
+					highest_held_title_tier = tier_duchy
+				}
+				scope:title = {
+					create_title_and_vassal_change = {
+						type = granted
+						save_scope_as = change
+						add_claim_on_loss = no
+					}
+					change_title_holder_include_vassals = {
+						holder = PREV
+						change = scope:change
+					}
+					resolve_title_and_vassal_change = scope:change
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				scope:title.tier = tier_duchy
+			}
+			ordered_vassal_or_below = {
+				order_by = martial
+				limit = {
+					AND = {
+						is_landed = yes
+						capital_county.duchy = scope:title
+					}
+					OR = {
+						highest_held_title_tier = tier_county
+						has_title = scope:title.kingdom
+					}
+				}
+				scope:title = {
+					create_title_and_vassal_change = {
+						type = granted
+						save_scope_as = change
+						add_claim_on_loss = no
+					}
+					change_title_holder_include_vassals = {
+						holder = PREV
+						change = scope:change
+					}
+					resolve_title_and_vassal_change = scope:change
+				}
+			}
+		}
+		custom_tooltip = tfe_title_event.0008.option.a.tooltip
+		ai_chance = { base = 10 }
+	}
+	option = {
+		name = tfe_title_event.0002.option.b
+		ai_chance = { base = 0 }
+	}
+}
+
+# De jure drift Dniester and Dnieper towards Hunnic Empire
+tfe_title_event.0009 = {
+	type = character
+	hidden = yes
+	immediate = {
+		# 15 years of drift progress for both titles
+		title:k_ruthenia = {
+			change_de_jure_drift_progress = {
+				target = title:e_hunnic_empire
+				value = 180
+			}
+		}
+		title:k_galicia-volhynia = {
+			change_de_jure_drift_progress = {
+				target = title:e_hunnic_empire
+				value = 180
+			}
+		}
+	}
+}
+
+#	Conduct the reformation
+tfe_title_event.0010 = {
+	type = character_event
+	title = tfe_title_event.0010.t
+	desc = tfe_title_event.0010.desc
+	theme = realm
+	left_portrait =	{
+		character = scope:founder
+		animation = personality_bold
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		restore_holy_roman_empire_decision_scripted_effect = yes
+		create_artifact_reichskrone_effect = { OWNER = this }
+	}
+
+	#Renovatio Imperii!
+	option = {
+		name = tfe_title_event.0010.a
+		give_nickname = nick_the_great
+		add_prestige_experience = monumental_fame_gain
+		every_vassal = {
+			add_opinion = {
+				modifier = reformed_holy_roman_empire_opinion
+				target = root
+			}
+			custom = restore_holy_roman_empire_decision_effects_vassal_opinion.tt
+		}
+		ai_chance = {	#When taken, the AI should always pick this.
+			base = 100
+		}
+	}
+	
+	##No Germany please, we're Byzantine.
+	#option = {
+	#	name = tfe_title_event.0010.b
+	#	ai_chance = {	#When taken, the AI should always go for the decision.
+	#		base = 0
+	#	}
+	#}
+}
+
+#	Inform any players
+tfe_title_event.0011 = {
+	type = character_event
+	title = tfe_title_event.0010.t
+	desc = tfe_title_event.0011.desc
+	theme = realm
+	left_portrait =	{
+		character = scope:founder
+		animation = personality_bold
+	}
+
+	immediate = {
+		#Other emperors are not happy about this.
+		if = {
+			limit = { highest_held_title_tier = tier_empire }
+			play_music_cue = "mx_cue_combat_2"
+		}
+	}
+
+	#Well, that happened.
+	option = {
+		name = {	#Other emperors are threatened.
+			trigger = {
+				highest_held_title_tier = tier_empire
+				NOT = { has_title = title:e_byzantium }
+			}
+			text = tfe_title_event.0011.a
+		}
+		name = {	#The true emperor is a tad pissed off.
+			trigger = { has_title = title:e_byzantium }
+			text = tfe_title_event.0011.b
+		}
+		name = {	#All other rulers fear Roman invasion.
+			trigger = {
+				NOR = {
+					highest_held_title_tier = tier_empire
+					any_liege_or_above = { this = scope:founder }
+				}
+			}
+			text = tfe_title_event.0011.c
+		}
+		name = {
+			trigger = {
+				any_liege_or_above = { this = scope:founder }
+			}
+			text = tfe_title_event.0011.d
+		}
+		ai_chance = {	#Solo option.
+			base = 100
+		}
+	}
+}
+
+tfe_title_event.0012 = {
+	type = character_event
+	title = tfe_title_event.0012.t
+	desc = tfe_title_event.0012.desc
+	theme = realm
+	left_portrait =	{
+		character = root
+		animation = personality_bold
+	}
+
+	#Well, that happened.
+	option = {
+		name = tfe_title_event.0012.a
+		root = {
+			create_title_and_vassal_change = {
+				type = independency
+				save_scope_as = change
+				add_claim_on_loss = no
+			}
+			becomes_independent = { change = scope:change }
+			resolve_title_and_vassal_change = scope:change
+		}
+		ai_chance = {	#Solo option.
+			base = 25
+			opinion_modifier = {
+				opinion_target = liege
+				who = root
+				multiplier = -0.5
+			}
+			modifier = {
+				NOT = { faith = liege.faith }
+				add = 20
+			}
+			modifier = {
+				NOT = { culture = liege.culture }
+				add = 20
+			}
+		}
+	}
+	option = {
+		name = tfe_title_event.0012.b
+		root = {
+			add_truce_both_ways = {
+				character = root.liege
+				days = 1825
+			}
+		}
+		ai_chance = {	#Solo option.
+			base = 75
+			opinion_modifier = {
+				opinion_target = liege
+				who = root
+				multiplier = 0.5
+			}
+			modifier = {
+				NOT = { faith = liege.faith }
+				add = -20
+			}
+			modifier = {
+				NOT = { culture = liege.culture }
+				add = -20
+			}
+		}
+	}
+}

@@ -1,0 +1,500 @@
+﻿
+k_oghuz_il = {
+	867.1.1 = { change_development_level = 0 }
+	# Afrighids (already in vanilla)
+	320.1.1 = {
+		holder = 188580 
+		government = feudal_government
+	}
+	350.1.1 = {
+		holder = 188581
+	}
+	380.1.1 = {
+		holder = 188582
+	}
+	410.1.1 = {
+		holder = 188583
+	}
+	440.1.1 = {
+		holder = 188584
+	}
+	470.1.1 = {
+		holder = 188585
+	}
+	500.1.1 = {
+		holder = 188586
+	}
+	530.1.1 = {
+		holder = 188587
+	}
+	560.1.1 = {
+		holder = 188588
+	}
+	600.1.1 = {
+		holder = 188589
+	}
+	625.1.1 = {
+		holder = 188590
+	}
+	665.1.1 = {
+		holder = 188591
+	}
+	690.1.1 = {
+		holder = 188592
+	}
+	712.1.1 = {
+		holder = 188593
+	}
+	740.1.1 = {
+		holder = 188594
+	}
+	765.1.1 = {
+		holder = 188595
+	}
+	790.1.1 = {
+		holder = 188596
+	}
+	815.1.1 = {
+		holder = 188597
+	}
+	850.1.1 = {
+		holder = 188598
+	}
+	
+	#750 start of Oghuz il / Oghuz Yabgu state
+	# 762.1.1 = {
+	# 	#holder = 188826
+	# 	holder = 188825
+	# 	government = tribal_government
+	# }
+}
+
+
+c_mangyshlak = {
+	361.1.1 = {
+		holder = khwarezmian_01
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = khwarezmian_02
+	}
+	476.1.1 = {
+		holder = khwarezmian_03
+	}	
+	532.1.1 = {
+		holder = khwarezmian_misc_010
+	}
+	762.1.1 = {
+		#holder = 188826
+		holder = 188825
+		liege = k_oghuz_il
+		government = tribal_government
+	}
+	
+}
+
+
+c_garabogazkol = {
+	361.1.1 = {
+		holder = khwarezmian_01
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = khwarezmian_02
+	}
+	476.1.1 = {
+		holder = khwarezmian_03
+	}	
+	532.1.1 = {
+		holder = khwarezmian_misc_010
+	}
+	762.1.1 = {
+		#holder = 188826
+		holder = 188825
+		liege = k_oghuz_il
+		government = tribal_government
+	}
+	
+	
+}
+
+
+c_ustyurt = {
+	361.1.1 = {
+		holder = khwarezmian_01
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = khwarezmian_02
+	}
+	476.1.1 = {
+		holder = khwarezmian_03
+	}
+	532.1.1 = {
+		holder = khwarezmian_misc_010
+	}
+	762.1.1 = {
+		#holder = 188826
+		holder = 188825
+		liege = k_oghuz_il
+		government = tribal_government
+	}
+	
+	
+
+}
+
+d_jemba = {
+	361.1.1 = {
+		holder = sabir_07
+		government = nomadic_government
+	}
+	395.1.1 = {
+		holder = sabir_08
+	}
+	400.1.1 = {
+		holder = 0
+	}
+	502.3.13 = {
+		holder = avar_006
+	}
+	531.6.24 = {
+		holder = avar_007
+	}
+}
+c_qoshagyl = {
+	361.1.1 = {
+		holder = sabir_07
+		government = nomadic_government
+	}
+	395.1.1 = {
+		holder = sabir_08
+	}
+	476.1.1 = {
+		holder = avar_misc_01 
+		liege = d_barsuki
+	}
+	532.1.1 = {
+		holder = avar_misc_03 
+	}
+	762.1.1 = {
+		#holder = 188826
+		holder = 188825
+		liege = k_oghuz_il
+		government = tribal_government
+	}
+	
+	
+
+}
+
+
+c_akkityk = {
+	361.1.1 = {
+		holder = sabir_07
+		government = nomadic_government
+	}
+	395.1.1 = {
+		holder = sabir_08
+	}
+	476.1.1 = {
+		holder = avar_misc_02 
+		liege = d_barsuki
+	}
+	532.1.1 = {
+		holder = avar_misc_03 
+	}
+	762.1.1 = {
+		#holder = 188826
+		holder = 188825
+		liege = k_oghuz_il
+		government = tribal_government
+	}
+	
+	
+
+}
+
+
+c_kos-buwak = {
+	361.1.1 = {
+		holder = sabir_07
+		government = nomadic_government
+	}
+	395.1.1 = {
+		holder = sabir_08
+	}
+	476.1.1 = {
+		holder = avar_misc_01 
+		liege = d_barsuki
+	}
+	532.1.1 = {
+		holder = avar_misc_03 
+	}
+	762.1.1 = {
+		#holder = 188826
+		holder = 188825
+		liege = k_oghuz_il
+		government = tribal_government
+	}
+	
+	
+
+}
+
+
+c_yangikent = {
+	350.1.1 = {
+		holder = kangju_01
+		government = nomadic_government
+	}
+	387.12.14 = {
+		holder = kangju_02
+	}
+	476.1.1 = {
+		holder = avar_004
+	}
+	530.1.1 = {
+		holder = kangar001
+		liege = d_syr_darya
+	}
+	762.1.1 = {
+		#holder = 188826
+		holder = 188825
+		liege = k_oghuz_il
+		government = tribal_government
+	}
+	
+	
+
+}
+
+
+c_raimskoe = {
+	350.1.1 = {
+		holder = kangju_01
+		government = nomadic_government
+	}
+	387.12.14 = {
+		holder = kangju_02
+	}
+	476.1.1 = {
+		holder = avar_004
+	}
+	530.1.1 = {
+		holder = kangar001
+		liege = d_syr_darya
+	}
+	762.1.1 = {
+		#holder = 188826
+		holder = 188825
+		liege = k_oghuz_il
+		government = tribal_government
+	}
+	
+	
+
+}
+
+
+c_ak-dzulpas = {
+	350.1.1 = {
+		holder = kangju_01
+		government = nomadic_government
+	}
+	387.12.14 = {
+		holder = kangju_02
+	}
+	476.1.1 = {
+		holder = avar_004
+	}
+	489.9.7 = {
+		holder = avar_005
+	}
+	502.3.13 = {
+		holder = avar_006
+	}
+	531.6.24 = {
+		holder = avar_007
+	}
+	532.1.1 = {
+		holder = avar_misc_04 
+		liege = d_barsuki
+	}
+	762.1.1 = {
+		#holder = 188826
+		holder = 188825
+		liege = k_oghuz_il
+		government = tribal_government
+	}
+	
+	
+
+}
+
+
+c_aralkizil = {
+	361.1.1 = {
+		holder = sabir_07
+		government = nomadic_government
+	}
+	395.1.1 = {
+		holder = sabir_08
+	}
+	476.1.1 = {
+		holder = avar_misc_02 
+		liege = d_barsuki
+	}
+	489.9.7 = {
+		holder = avar_005
+	}
+	502.3.13 = {
+		holder = avar_006
+	}
+	531.6.24 = {
+		holder = avar_007
+	}
+	532.1.1 = {
+		holder = avar_misc_04
+		liege = d_barsuki 
+	}
+	762.1.1 = {
+		#holder = 188826
+		holder = 188825
+		liege = k_oghuz_il
+		government = tribal_government
+	}
+}
+
+
+c_terekli = {
+	350.1.1 = {
+		holder = kangju_01
+		government = nomadic_government
+	}
+	387.12.14 = {
+		holder = kangju_02
+	}
+	476.1.1 = {
+		holder = avar_004
+	}
+	532.1.1 = {
+		holder = avar_misc_05
+		liege = d_barsuki
+	}
+	762.1.1 = {
+		#holder = 188826
+		holder = 188825
+		liege = k_oghuz_il
+		government = tribal_government
+	}
+	
+	
+
+}
+
+d_aral_il = {
+	350.1.1 = {
+		holder = kangju_01
+		government = nomadic_government
+	}
+	387.12.14 = {
+		holder = kangju_02
+	}
+	408.1.1 = {
+		holder = avar_002
+		government = nomadic_government 
+	}
+	425.3.7 = {
+		holder = avar_003
+	}
+	468.8.30 = {
+		holder = avar_004
+	}
+	489.9.7 = {
+		holder = avar_005
+	}
+}
+
+d_barsuki = {
+	# 350.1.1 = {
+	# 	holder = kangju_01
+	# 	government = nomadic_government
+	# }
+	# 387.12.14 = {
+	# 	holder = kangju_02
+	# }
+	408.1.1 = {
+		holder = avar_002
+		government = nomadic_government 
+	}
+	425.3.7 = {
+		holder = avar_003
+	}
+	468.8.30 = {
+		holder = avar_004
+	}
+	489.9.7 = {
+		holder = avar_005
+	}
+	502.3.13 = {
+		holder = avar_006
+	}
+	531.6.24 = {
+		holder = avar_007
+	}
+}
+
+c_barsuki = {
+	361.1.1 = {
+		holder = sabir_07
+		government = nomadic_government
+	}
+	395.1.1 = {
+		holder = sabir_08
+	}
+	476.1.1 = {
+		holder = avar_misc_02 
+		liege = d_barsuki
+	}
+	532.1.1 = {
+		holder = avar_misc_05
+	}
+	762.1.1 = {
+		#holder = 188826
+		holder = 188825
+		liege = k_oghuz_il
+		government = tribal_government
+	}
+	
+	
+
+}
+
+
+c_aral_karakum = {
+	350.1.1 = {
+		holder = kangju_01
+		government = nomadic_government
+	}
+	387.12.14 = {
+		holder = kangju_02
+	}
+	476.1.1 = {
+		holder = avar_004
+	}
+	532.1.1 = {
+		holder = avar_misc_04 
+		liege = d_barsuki
+	}
+	762.1.1 = {
+		#holder = 188826
+		holder = 188825
+		liege = k_oghuz_il
+		government = tribal_government
+	}
+	
+	
+
+}
+

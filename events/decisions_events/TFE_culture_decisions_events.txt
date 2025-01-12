@@ -1,0 +1,136 @@
+﻿namespace = TFE_culture_decisions
+
+### Bread and Circuses
+# Bread...
+TFE_culture_decisions.0001 = {
+	type = character_event
+	title = TFE_culture_decisions.0001.t
+	desc = TFE_culture_decisions.0001.desc
+	
+	theme = faith
+	
+	left_portrait = {
+		character = root
+		animation = personality_zealous
+	}
+	
+	# Distribute to the county!
+	option = {
+		name = TFE_culture_decisions.0001.a
+		
+		remove_short_term_gold = capital_county.distribute_bread_price
+		capital_county = {
+			add_county_modifier = {
+				modifier = distribute_bread_modifier
+				years = 10
+			}
+		}
+	}
+	
+	# Distribute to the duchy!
+	option = {
+		trigger = {
+			primary_title.tier >= tier_duchy
+			capital_county.duchy = {
+				is_title_created = yes
+			}
+		}
+		name = TFE_culture_decisions.0001.b
+		
+		remove_short_term_gold = capital_county.duchy.distribute_bread_price
+		capital_county.duchy = {
+			save_temporary_scope_as = current_title
+			every_in_de_jure_hierarchy = {
+				limit = {
+					tier = tier_county
+					
+					holder = {
+						OR = {
+							this = scope:current_title.holder
+							is_vassal_or_below_of = scope:current_title.holder
+						}
+					}
+				}
+				add_county_modifier = {
+					modifier = distribute_bread_modifier
+					years = 10
+				}
+			}
+		}
+	}
+	
+	# Distribute to the kingdom!
+	option = {
+		trigger = {
+			primary_title.tier >= tier_kingdom
+			capital_county.kingdom = {
+				is_title_created = yes
+			}
+		}
+		name = TFE_culture_decisions.0001.c
+		
+		remove_short_term_gold = capital_county.kingdom.distribute_bread_price
+		capital_county.kingdom = {
+			save_temporary_scope_as = current_title
+			every_in_de_jure_hierarchy = {
+				limit = {
+					tier = tier_county
+					
+					holder = {
+						OR = {
+							this = scope:current_title.holder
+							is_vassal_or_below_of = scope:current_title.holder
+						}
+					}
+				}
+				
+				custom = every_owned_county_within_de_jure_capital_kingdom_tt
+				add_county_modifier = {
+					modifier = distribute_bread_modifier
+					years = 10
+				}
+			}
+		}
+	}
+	
+	# Distribute to the empire!
+	option = {
+		trigger = {
+			primary_title.tier >= tier_empire
+			capital_county.empire = {
+				is_title_created = yes
+			}
+		}
+		name = TFE_culture_decisions.0001.d
+		
+		remove_short_term_gold = capital_county.empire.distribute_bread_price
+		capital_county.empire = {
+			save_temporary_scope_as = current_title
+			every_in_de_jure_hierarchy = {
+				limit = {
+					tier = tier_county
+					
+					holder = {
+						OR = {
+							this = scope:current_title.holder
+							is_vassal_or_below_of = scope:current_title.holder
+						}
+					}
+				}
+				
+				custom = every_owned_county_within_de_jure_capital_empire_tt
+				add_county_modifier = {
+					modifier = distribute_bread_modifier
+					years = 10
+				}
+			}
+		}
+	}
+	
+	# Actually, that's quite expensive lmao
+	option = {
+		name = TFE_culture_decisions.0001.e
+		
+		custom_tooltip = TFE_culture_decisions.0001.e_effect
+	}
+}

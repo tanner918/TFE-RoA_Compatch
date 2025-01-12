@@ -1,0 +1,363 @@
+﻿k_sardinia = {
+	361.1.1 = { change_development_level = 2 }
+	532.1.1 = { change_development_level = 3 }
+	768.1.1 = { change_development_level = 4 }
+	476.1.1 = {
+		de_jure_liege = e_italy
+	}
+}
+
+d_corsica = {
+	361.1.1 = { change_development_level = 2 }
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = k_italia_suburbicariae
+		liege = k_italia_suburbicariae
+	}
+	361.1.1 = {
+		holder = sards_01
+	}
+	395.1.1 = {
+		holder = sards_02
+	}
+	## Vandal Kingdom
+	456.1.1 = {
+		holder = 0
+		de_jure_liege = k_sardinia
+	}
+	530.1.1 = {
+		holder = vandals_012 #Gelimer
+	}
+	532.1.1 = {
+		holder = vandals_013
+		liege = k_vandals
+		government = feudal_government
+	}
+}
+
+c_ajaccio = {
+	## Diocletian Division
+	200.1.1 = {
+		liege = k_italia_suburbicariae
+	}
+	361.1.1 = {
+		holder = sards_01
+	}
+	395.1.1 = {
+		holder = sards_02
+	}
+	## Vandal Kingdom
+	456.1.1 = {
+		government = feudal_government
+		liege = d_sardinia
+	}
+	456.1.1 = {
+		holder = balearica_05 # Vandal Landowners
+	}
+	767.1.1 = {
+		liege = k_italy
+	}
+	767.1.1 = {
+		holder = 190277 #Peter
+	}
+
+}
+
+
+c_bastia = {
+	## Diocletian Division
+	200.1.1 = {
+		liege = d_corsica
+	}
+	361.1.1 = {
+		holder = sards_05
+	}
+	395.1.1 = {
+		liege = sards_10
+	}
+	## Vandal Kingdom
+	456.1.1 = {
+		government = feudal_government
+		liege = d_sardinia
+	}
+	456.1.1 = {
+		holder = balearica_06 # Vandal Landowners
+	}
+	767.1.1 = {
+		liege = k_italy
+	}
+	767.1.1 = {
+		holder = 190277 #Peter
+	}
+
+}
+
+
+c_vecchio = {
+	## Diocletian Division
+	200.1.1 = {
+		liege = d_corsica
+	}
+	361.1.1 = {
+		holder = sards_06
+	}
+	395.1.1 = {
+		liege = sards_11
+	}
+	## Vandal Kingdom
+	456.1.1 = {
+		government = feudal_government
+		liege = d_sardinia
+	}
+	456.1.1 = {
+		holder = balearica_07 # Vandal Landowners
+	}
+
+	767.1.1 = {
+		liege = k_italy
+	}
+	767.1.1 = {
+		holder = 190277 # Petrus Adalpertidi
+	}
+}
+
+d_sardinia = {
+	361.1.1 = { change_development_level = 2 }
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = k_italia_suburbicariae
+		liege = k_italia_suburbicariae
+	}
+	361.1.1 = {
+		holder = sards_03
+}
+	395.1.1 = {
+		holder = sards_04
+	}
+	## Vandal Kingdom
+	456.1.1 = {
+		liege = k_vandals
+		de_jure_liege = k_sardinia
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = feudal_government
+			}
+		}
+	}
+	}
+	456.1.1 = {
+		holder = balearica_02 # Governor
+	}
+	530.1.1 = {
+		holder = vandals_146 #Godas
+		liege = k_vandals
+	}
+
+	533.1.1 = {
+		liege = "e_byzantium"
+	}
+	687.1.1 = {
+		holder = 75006 # Torchitorio
+	}
+	720.1.1 = {
+		holder = 145908 # Gialetto
+	}
+	722.1.1 = {
+		holder = 145909 # Teodo
+	}
+	740.1.1 = {
+		holder = 184009 # Goffredo
+	}
+}
+
+c_cagliari = {
+	361.1.1 = { change_development_level = 4 }
+	532.1.1 = { change_development_level = 5 }
+	768.1.1 = { change_development_level = 6 }
+	## Diocletian Division
+	200.1.1 = {
+		liege = k_italia_suburbicariae
+	}
+	361.1.1 = {
+		holder = sards_03
+	}
+	395.1.1 = {
+		holder = sards_04
+	}
+	## Vandal Kingdom
+	456.1.1 = {
+		government = feudal_government
+		liege = k_vandals
+	}
+	456.1.1 = {
+		holder = balearica_02 # Governor
+	}
+
+	533.1.1 = {
+		holder = vandals_146 # Godas
+	}
+	687.1.1 = {
+		holder = 75006 # Torchitorio
+	}
+	720.1.1 = {
+		holder = 145908 # Gialetto
+	}
+	722.1.1 = {
+		holder = 145909 # Teodo
+	}
+	740.1.1 = {
+		holder = 184009 # Goffredo
+	}
+}
+
+c_arborea = {
+	## Diocletian Division
+	200.1.1 = {
+		liege = d_sardinia
+	}
+	361.1.1 = {
+		holder = sards_07
+	}
+	395.1.1 = {
+		liege = d_sardinia
+	}
+	## Vandal Kingdom
+	456.1.1 = {
+		government = feudal_government
+		liege = d_sardinia
+	}
+	456.1.1 = {
+		holder = balearica_03 # Vandal Landowners
+	}
+
+	533.1.1 = {
+		holder = vandals_146 # Godas
+	}
+	687.1.1 = {
+		holder = 75006 # Torchitorio
+	}
+	720.1.1 = {
+		holder = 145908 # Gialetto
+	}
+	722.1.1 = {
+		holder = 145909 # Teodo
+	}
+	740.1.1 = {
+		holder = 184009 # Goffredo
+	}
+}
+
+c_gallura = {
+	## Diocletian Division
+	200.1.1 = {
+		liege = d_sardinia
+	}
+	361.1.1 = {
+		holder = sards_08
+	}
+	395.1.1 = {
+		liege = d_sardinia
+	}
+	## Vandal Kingdom
+	456.1.1 = {
+		government = feudal_government
+		liege = d_sardinia
+	}
+	456.1.1 = {
+		holder = balearica_04 # Vandal Landowners
+	}
+
+	533.1.1 = {
+		holder = vandals_146 # Godas
+	}
+	687.1.1 = {
+		holder = 75006 # Torchitorio
+	}
+	720.1.1 = {
+		holder = 145908 # Gialetto
+	}
+	722.1.1 = {
+		holder = 145909 # Teodo
+	}
+	740.1.1 = {
+		holder = 75005 # Giovanni I
+	}
+}
+
+c_logudoro = {
+	## Diocletian Division
+	200.1.1 = {
+		liege = d_sardinia
+	}
+	361.1.1 = {
+		holder = sards_07
+	}
+	395.1.1 = {
+		liege = d_sardinia
+	}
+	## Vandal Kingdom
+	456.1.1 = {
+		government = feudal_government
+		liege = d_sardinia
+	}
+	456.1.1 = {
+		holder = sards_09 # Roman Landowners
+	}
+
+	533.1.1 = {
+		holder = vandals_146 # Godas
+	}
+	687.1.1 = {
+		holder = 75006 # Torchitorio
+	}
+	720.1.1 = {
+		holder = 145908 # Gialetto
+	}
+	722.1.1 = {
+		holder = 145909 # Teodo
+	}
+	740.1.1 = {
+		holder = 184009 # Goffredo
+	}
+}
+
+c_tortoli = {
+	## Diocletian Division
+	200.1.1 = {
+		liege = d_sardinia
+	}
+	361.1.1 = {
+		holder = sardinian_misc_002
+	}
+	395.1.1 = {
+		liege = d_sardinia
+	}
+	## Vandal Kingdom
+	456.1.1 = {
+		government = feudal_government
+		liege = d_sardinia
+	}
+	476.1.1 = {
+		holder = sardinian_misc_003 # Barbaricini
+	}
+
+	532.1.1 = {
+		holder = sardinian_misc_001 # Hospito, local Sardinian chief of the Barbaricini
+	}
+	687.1.1 = {
+		holder = 75006 # Torchitorio
+	}
+	720.1.1 = {
+		holder = 145908 # Gialetto
+	}
+	722.1.1 = {
+		holder = 145909 # Teodo
+	}
+	740.1.1 = {
+		holder = 184009 # Goffredo
+	}
+}

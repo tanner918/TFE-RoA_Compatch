@@ -1,0 +1,347 @@
+﻿k_jerusalem = {
+	361.1.1 = {	change_development_level = 4 }
+	476.1.1 = {	change_development_level = 5 }
+	532.1.1 = {	change_development_level = 6 }
+	768.1.1 = {	change_development_level = 8 }
+}
+
+
+d_oultrejourdain = {
+	361.1.1 = {	change_development_level = 4 }
+	768.1.1 = {
+		change_development_level = 5
+	}
+}
+
+
+c_kerak = {
+	361.1.1 = {	change_development_level = 4 }
+	476.1.1 = {	change_development_level = 5 }
+	532.1.1 = {	change_development_level = 6 }
+	632.1.1 = {	change_development_level = 8 }
+	768.1.1 = {	change_development_level = 9 }
+	
+	361.1.1 = {
+		holder = salutaris_01
+		de_jure_liege = d_salutaris
+	}
+	395.1.1 = {
+		holder = salutaris_02
+	}
+	476.1.1 = {
+		holder = salutaris_03
+		liege = k_orientis
+	}
+	530.1.1 = {
+		holder = ghassanid_29
+	}
+	650.1.1 = {
+		holder = amilah_09
+	}
+	690.1.1 = {
+		liege = "d_palestine"
+		holder = 146022
+	}
+	735.1.1 = {
+		holder = 188574
+	}
+	749.8.29 = {
+		holder = 188575
+	}
+	754.1.1 = {
+		holder = 188576
+	}
+}
+
+
+
+c_negev = {
+	361.1.1 = {
+		holder = salutaris_01
+		de_jure_liege = d_salutaris
+	}
+	395.1.1 = {
+		holder = salutaris_02
+	}
+	476.1.1 = {
+		holder = salutaris_03
+	}
+	750.1.1 = {
+		liege = "d_damascus"
+		holder = 146023
+	}
+	760.1.1 = {
+		holder = 146024
+	}
+}
+
+c_al_aqabah = {
+	361.1.1 = {
+		holder = salutaris_01
+		de_jure_liege = d_salutaris
+	}
+	395.1.1 = {
+		holder = salutaris_02
+	}
+	476.1.1 = {
+		holder = salutaris_03
+	}
+}
+d_palestine = {
+	768.1.1 = {
+		change_development_level = 5
+	}
+	690.1.1 = {
+		liege = "e_arabia"
+		holder = 146022
+	}
+	735.1.1 = {
+		holder = 188574
+	}
+	749.8.29 = {
+		holder = 188575
+	}
+}
+
+
+c_jerusalem = {
+	361.1.1 = {	change_development_level = 6 }
+	476.1.1 = {	change_development_level = 7 }
+	532.1.1 = {	change_development_level = 8 }
+	632.1.1 = {	change_development_level = 9 }
+	768.1.1 = {	change_development_level = 10 }
+	
+	361.1.1 = {
+		de_jure_liege = d_palestina_prima
+		holder = palestina_01
+	}
+	395.1.1 = {
+		holder = palestina_02
+		liege = k_orientis
+	}
+	476.1.1 = {
+		holder = palestina_07
+	}
+	
+	690.1.1 = {
+		liege = "d_palestine"
+		holder = 146022
+	}
+	735.1.1 = {
+		holder = 188574
+	}
+	749.8.29 = {
+		holder = 188575
+	}
+}
+
+
+c_ghazza = {
+	361.1.1 = {	change_development_level = 6 }
+	361.1.1 = {
+		de_jure_liege = d_palestina_prima
+		holder = palestina_01
+	}
+	395.1.1 = {
+		holder = palestina_02
+		liege = k_orientis
+	}
+	476.1.1 = {
+		holder = palestina_07
+	}
+	690.1.1 = {
+		liege = "d_palestine"
+		holder = 146022
+	}
+	707.1.1 = {
+		holder = 188574
+	}
+	735.1.1 = {
+		holder = 188575
+	}
+	757.1.1 = {
+		holder = 188577
+	}
+}
+
+
+c_jaffa = {
+	361.1.1 = {	change_development_level = 6 }
+	361.1.1 = {
+		de_jure_liege = d_palestina_prima
+		holder = palestina_01
+	}
+	395.1.1 = {
+		holder = palestina_02
+		liege = k_orientis
+	}
+	476.1.1 = {
+		holder = palestina_07
+	}
+	690.1.1 = {
+		liege = "d_palestine"
+		holder = 146022
+	}
+	707.1.1 = {
+		holder = 188574
+	}
+	735.1.1 = {
+		holder = 188575
+	}
+	757.1.1 = {
+		holder = 188578
+	}
+}
+
+
+d_urdunn = {
+	361.1.1 = {	change_development_level = 4 }
+	768.1.1 = {
+		change_development_level = 5
+	}
+	361.1.1 = {
+		liege = k_orientis
+		de_jure_liege = k_orientis
+		holder = palestina_03
+	}
+	395.1.1 = {
+		holder = palestina_04
+		liege = k_orientis
+	}
+	476.1.1 = {
+		holder = palestina_08
+	}
+	532.1.1 = {
+		holder = syrian_misc_02
+	}
+	
+	733.1.1 = {
+		liege = "e_arabia"
+		holder = 146027
+		government = clan_government
+	}
+	751.1.1 = {
+		holder = 146042
+	}
+}
+
+
+c_tiberias = {
+	361.1.1 = {
+		de_jure_liege = k_orientis
+		holder = palestina_03
+	}
+	395.1.1 = {
+		holder = palestina_04
+		liege = k_orientis
+	}
+	476.1.1 = {
+		holder = palestina_08
+	}
+	733.1.1 = {
+		liege = "d_urdunn"
+		holder = 146027
+	}
+	751.1.1 = {
+		holder = 146042
+	}
+}
+
+
+c_acre = {
+	361.1.1 = {	change_development_level = 9 }
+	476.1.1 = {	change_development_level = 8 }
+	532.1.1 = {	change_development_level = 10 }
+	632.1.1 = {	change_development_level = 11 }
+	768.1.1 = {	change_development_level = 12 }
+	
+	362.1.1 = {
+		holder = palestina_05
+		de_jure_liege = d_lebanon
+		liege = d_lebanon
+	}
+	395.1.1 = {
+		holder = palestina_06
+	}
+	476.1.1 = {
+		holder = palestina_09
+	}
+	733.1.1 = {
+		liege = "d_urdunn"
+		holder = 146027
+	}
+	751.1.1 = {
+		holder = 146042
+	}
+	767.1.1 = {
+		holder = 146043
+	}
+}
+
+c_irbid = {
+	361.1.1 = {
+		holder = palestina_03
+	}
+	395.1.1 = {
+		holder = palestina_04
+	}
+	476.1.1 = {
+		holder = palestina_08
+	}
+	661.2.28 = {
+		liege = "d_damascus"
+		holder = 163029
+	}
+	680.5.6 = {
+		holder = 163030
+	}
+	683.1.1 = {
+		holder = 163031
+	}
+	684.12.1 = {
+		holder = 163003
+	}
+	685.5.7 = {
+		holder = 163002
+	}
+	705.1.1 = {
+		holder = 163032
+	}
+	715.1.1 = {
+		holder = 163033
+	}
+	717.10.1 = {
+		holder = 163035
+	}
+	720.2.10 = {
+		holder = 163036
+	}
+	724.1.1 = {
+		holder = 163001
+	}
+	743.2.6 = {
+		holder = 163037
+	}
+	744.6.16 = {
+		holder = 163038
+	}
+	744.10.3 = {
+		holder = 163039
+	}
+	744.11.3 = {
+		holder = 163041
+	}
+	750.1.1 = {
+		holder = 146061
+	}
+	754.1.1 = {
+		holder = 146060
+	}
+	754.6.1 = {
+		holder = 146127
+	}
+	766.1.1 = {
+		holder = 146062
+	}
+
+}

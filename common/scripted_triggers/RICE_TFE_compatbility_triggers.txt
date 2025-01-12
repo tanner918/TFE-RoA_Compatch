@@ -1,0 +1,36 @@
+﻿# These triggers are for RICE and TFE compatibility, do NOT change them unless you know what you're doing
+
+RICE_horse_sacrifice_activity_allowed_trigger = {
+	OR = {
+		religion = religion:tengrism_religion
+		religion = religion:germanic_religion
+		religion = religion:magyar_religion
+		religion = religion:mordvin_religion		
+		religion = religion:mari_religion		
+		religion = religion:permic_religion		
+		religion = religion:iranian_religion		
+		religion = religion:balkan_religion		
+	}
+}
+
+RICE_is_greco_roman_religion_group_trigger = {
+	OR = {
+		religion = religion:semitic_religion
+		religion = religion:hellenism_religion
+		religion = religion:kushitism_religion
+		religion = religion:amazigh_religion
+		religion = religion:balkan_religion
+		religion = religion:sardinian_religion
+		religion = religion:basque_religion
+	}
+}
+
+RICE_is_greco_egyptian_religion_group_trigger = {	
+	OR = {
+		religion = religion:semitic_religion
+		religion = religion:hellenism_religion
+		religion = religion:kushitism_religion
+		religion = religion:amazigh_religion
+	}
+}
+

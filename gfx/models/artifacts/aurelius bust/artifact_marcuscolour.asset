@@ -1,0 +1,40 @@
+
+
+
+
+#################
+#	Meshes	#
+#################
+
+##### Unique -----------------------------------------
+
+
+pdxmesh = {
+	name = "marcuscolour_mesh"
+	file = "aurelius_bust.mesh"
+
+	meshsettings = {
+		name = "aurelius_bust"
+		index = 0
+		texture_diffuse = "painted_aurelius_diffuse.dds"
+		texture_normal = "painted_aurelius_normal.dds"
+		texture_specular = "painted_aurelius_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+}
+
+
+
+
+#################
+#	Entities	#
+#################
+
+
+
+##### Unique -----------------------------------------
+entity = {
+	name = "marcuscolour_entity"
+	pdxmesh = "marcuscolour_mesh"
+}

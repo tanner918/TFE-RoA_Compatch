@@ -1,0 +1,572 @@
+﻿ArRasool = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				this = character:33922
+				has_character_flag = islam_prophet	
+				trigger_if = {
+					limit = {
+						exists = global_var:prophet
+					}
+					THIS = global_var:prophet
+				}
+				trigger_else = {
+					always = no
+				}
+			}
+		}
+		localization_key = islam_arrasool
+	}
+	text = {
+		localization_key = islam_caliph
+		fallback = yes
+	}
+}
+
+GetStatueEnvironment = {
+	type = landed_title 
+	log_loc_errors = no
+	text = {
+		trigger = {
+			var:statue = flag:gold
+		}
+		localization_key = environment_statue_gold
+	}
+	text = {
+		trigger = {
+			var:statue = flag:marble
+		}
+		localization_key = environment_statue_marble
+	}
+	text = {
+		trigger = {
+			var:statue = flag:limestone
+		}
+		localization_key = environment_statue_limestone
+	}
+	text = {
+		trigger = {
+			var:statue = flag:stone
+		}
+		localization_key = environment_statue_stone
+	}
+	text = {
+		trigger = {
+			var:statue = flag:copper
+		}
+		localization_key = environment_statue_copper
+	}
+	text = {
+		fallback = yes
+		localization_key = environment_statue_stone
+	}
+}
+
+GetMonumentEnvironment = {
+	type = landed_title 
+	log_loc_errors = no
+	text = {
+		trigger = {
+			var:monument_material = flag:gold
+		}
+		localization_key = environment_statue_gold
+	}
+	text = {
+		trigger = {
+			var:monument_material = flag:marble
+		}
+		localization_key = environment_statue_marble
+	}
+	text = {
+		trigger = {
+			var:monument_material = flag:limestone
+		}
+		localization_key = environment_statue_limestone
+	}
+	text = {
+		trigger = {
+			var:monument_material = flag:stone
+		}
+		localization_key = environment_statue_stone
+	}
+	text = {
+		trigger = {
+			var:monument_material = flag:copper
+		}
+		localization_key = environment_statue_copper
+	}
+	text = {
+		trigger = {
+			var:monument_material = flag:copper_rust
+		}
+		localization_key = environment_statue_copper_rust
+	}
+	text = {
+		fallback = yes
+		localization_key = environment_statue_stone
+	}
+}
+
+GetStatuePose = {
+	type = landed_title 
+	log_loc_errors = no
+	text = {
+		trigger = {
+			var:statue_pose = flag:proud
+		}
+		localization_key = personality_honorable_statue
+	}
+	text = {
+		trigger = {
+			var:statue_pose = flag:diplo
+		}
+		localization_key = chancellor_statue
+	}
+	text = {
+		trigger = {
+			var:statue_pose = flag:marshal
+		}
+		localization_key = marshal_statue
+	}
+	text = {
+		trigger = {
+			var:statue_pose = flag:sword
+		}
+		localization_key = aggressive_sword_statue
+	}
+	text = {
+		trigger = {
+			var:statue_pose = flag:idle
+		}
+		localization_key = idle_statue
+	}
+	text = {
+		fallback = yes
+		localization_key = personality_honorable_statue
+	}
+}
+
+GetMonumentPose = {
+	type = landed_title 
+	log_loc_errors = no
+	text = {
+		trigger = {
+			var:monument_pose = flag:proud
+		}
+		localization_key = personality_honorable_statue
+	}
+	text = {
+		trigger = {
+			var:monument_pose = flag:diplo
+		}
+		localization_key = chancellor_statue
+	}
+	text = {
+		trigger = {
+			var:monument_pose = flag:marshal
+		}
+		localization_key = marshal_statue
+	}
+	text = {
+		trigger = {
+			var:monument_pose = flag:sword
+		}
+		localization_key = aggressive_sword_statue
+	}
+	text = {
+		trigger = {
+			var:monument_pose = flag:idle
+		}
+		localization_key = idle_statue
+	}
+	text = {
+		fallback = yes
+		localization_key = personality_honorable_statue
+	}
+}
+
+GetGladiatorGladiatrix = {
+	type = character 
+	text = {
+		trigger = { is_female = yes }
+		localization_key = gladiatrix_key
+	}
+	text = {
+		trigger = { is_female = no }
+		localization_key = gladiator_key
+	}
+}
+
+senator = {
+	type = character
+	text = {
+		trigger = {
+			OR = {
+				has_trait = low_senator
+				has_trait = senator
+				has_trait = high_senator
+			}
+		}
+		localization_key = senator_title
+	}
+	text = {
+		localization_key = not_senator
+		fallback = yes
+	}
+}
+
+feudal_government_or_dynastic = {
+	type = empty
+	text = {
+		trigger = {
+			dummy_male.current_date < 650.1.1
+		}
+		localization_key = feudal_government_dynastic
+	}
+	text = {
+		localization_key = feudal_government_feudal
+		fallback = yes
+	}
+}
+
+feudal_government_or_dynastic_adj = {
+	type = empty
+	text = {
+		trigger = {
+			dummy_male.current_date < 650.1.1
+		}
+		localization_key = feudal_government_dynastic_adj
+	}
+	text = {
+		localization_key = feudal_government_feudal_adj
+		fallback = yes
+	}
+}
+
+feudal_government_or_dynastic_realm = {
+	type = empty
+	text = {
+		trigger = {
+			dummy_male.current_date < 650.1.1
+		}
+		localization_key = feudal_government_dynastic_realm
+	}
+	text = {
+		localization_key = feudal_government_feudal_realm
+		fallback = yes
+	}
+}
+#Grow closer to forming a rivalry with arcane
+senate_italy_revolt_party_loc = {
+	type = character
+	text = {
+		trigger = {
+			senate_italy_aristocratic_revolt = yes
+		}
+		localization_key = SENATE_ARISTOCRAT_TITLE
+	}
+	text = {
+		trigger = {
+			senate_italy_populist_revolt = yes
+		}
+		localization_key = SENATE_POPULIST_TITLE
+	}
+	text = {
+		localization_key = SENATE_TRADITIONALIST_TITLE
+		fallback = yes
+	}
+}
+senate_italy_disloyal_party_loc = {
+	type = character
+	text = {
+		trigger = {
+			senate_italy_aristocratic_disloyal = yes
+		}
+		localization_key = SENATE_ARISTOCRAT_TITLE
+	}
+	text = {
+		trigger = {
+			senate_italy_populist_disloyal = yes
+		}
+		localization_key = SENATE_POPULIST_TITLE
+	}
+	text = {
+		localization_key = SENATE_TRADITIONALIST_TITLE
+		fallback = yes
+	}
+}
+senate_italy_indifferent_party_loc = {
+	type = character
+	text = {
+		trigger = {
+			senate_italy_aristocratic_indifferent = yes
+		}
+		localization_key = SENATE_ARISTOCRAT_TITLE
+	}
+	text = {
+		trigger = {
+			senate_italy_populist_indifferent = yes
+		}
+		localization_key = SENATE_POPULIST_TITLE
+	}
+	text = {
+		localization_key = SENATE_TRADITIONALIST_TITLE
+		fallback = yes
+	}
+}
+senate_italy_supportive_party_loc = {
+	type = character
+	text = {
+		trigger = {
+			senate_italy_aristocratic_supportive = yes
+		}
+		localization_key = SENATE_ARISTOCRAT_TITLE
+	}
+	text = {
+		trigger = {
+			senate_italy_populist_supportive = yes
+		}
+		localization_key = SENATE_POPULIST_TITLE
+	}
+	text = {
+		localization_key = SENATE_TRADITIONALIST_TITLE
+		fallback = yes
+	}
+}
+senate_italy_loyal_party_loc = {
+	type = character
+	text = {
+		trigger = {
+			senate_italy_aristocratic_loyal = yes
+		}
+		localization_key = SENATE_ARISTOCRAT_TITLE
+	}
+	text = {
+		trigger = {
+			senate_italy_populist_loyal = yes
+		}
+		localization_key = SENATE_POPULIST_TITLE
+	}
+	text = {
+		localization_key = SENATE_TRADITIONALIST_TITLE
+		fallback = yes
+	}
+}
+senate_eastern_revolt_party_loc = {
+	type = character
+	text = {
+		trigger = {
+			senate_eastern_aristocratic_revolt = yes
+		}
+		localization_key = SENATE_ARISTOCRAT_TITLE
+	}
+	text = {
+		trigger = {
+			senate_eastern_populist_revolt = yes
+		}
+		localization_key = SENATE_POPULIST_TITLE
+	}
+	text = {
+		localization_key = SENATE_TRADITIONALIST_TITLE
+		fallback = yes
+	}
+}
+senate_eastern_disloyal_party_loc = {
+	type = character
+	text = {
+		trigger = {
+			senate_eastern_aristocratic_disloyal = yes
+		}
+		localization_key = SENATE_ARISTOCRAT_TITLE
+	}
+	text = {
+		trigger = {
+			senate_eastern_populist_disloyal = yes
+		}
+		localization_key = SENATE_POPULIST_TITLE
+	}
+	text = {
+		localization_key = SENATE_TRADITIONALIST_TITLE
+		fallback = yes
+	}
+}
+senate_eastern_indifferent_party_loc = {
+	type = character
+	text = {
+		trigger = {
+			senate_eastern_aristocratic_indifferent = yes
+		}
+		localization_key = SENATE_ARISTOCRAT_TITLE
+	}
+	text = {
+		trigger = {
+			senate_eastern_populist_indifferent = yes
+		}
+		localization_key = SENATE_POPULIST_TITLE
+	}
+	text = {
+		localization_key = SENATE_TRADITIONALIST_TITLE
+		fallback = yes
+	}
+}
+senate_eastern_supportive_party_loc = {
+	type = character
+	text = {
+		trigger = {
+			senate_eastern_aristocratic_supportive = yes
+		}
+		localization_key = SENATE_ARISTOCRAT_TITLE
+	}
+	text = {
+		trigger = {
+			senate_eastern_populist_supportive = yes
+		}
+		localization_key = SENATE_POPULIST_TITLE
+	}
+	text = {
+		localization_key = SENATE_TRADITIONALIST_TITLE
+		fallback = yes
+	}
+}
+senate_eastern_loyal_party_loc = {
+	type = character
+	text = {
+		trigger = {
+			senate_eastern_aristocratic_loyal = yes
+		}
+		localization_key = SENATE_ARISTOCRAT_TITLE
+	}
+	text = {
+		trigger = {
+			senate_eastern_populist_loyal = yes
+		}
+		localization_key = SENATE_POPULIST_TITLE
+	}
+	text = {
+		localization_key = SENATE_TRADITIONALIST_TITLE
+		fallback = yes
+	}
+}
+
+gladiator_games_result = {
+	type = landed_title
+	text = {
+		trigger = {
+			has_county_modifier = gladiatorial_games_very_good_modifier
+		}
+		localization_key = gladiatorial_games_very_good_loc
+	}
+	text = {
+		trigger = {
+			has_county_modifier = gladiatorial_games_good_modifier
+		}
+		localization_key = gladiatorial_games_good_loc
+	}
+	text = {
+		trigger = {
+			has_county_modifier = gladiatorial_games_bad_modifier
+		}
+		localization_key = gladiatorial_games_bad_loc
+	}
+	text = {
+		trigger = {
+			has_county_modifier = gladiatorial_games_very_bad_modifier
+		}
+		localization_key = gladiatorial_games_very_bad_loc
+	}
+	text = {
+		localization_key = gladiatorial_games_mid_af
+		fallback = yes
+	}
+}
+
+county_feudal_dravidian_group_loc = {
+	type = character
+	text = {
+		trigger = {
+			is_independent_ruler = no
+				vassal_contract_has_flag = gupta_governance_samarajya
+		}
+		localization_key = county_feudal_dravidian_group_uparika
+	}
+	text = {
+		localization_key = county_feudal_dravidian_group_normal
+		fallback = yes
+	}
+}
+
+duchy_feudal_dravidian_group_loc = {
+	type = character
+	text = {
+		trigger = {
+			is_independent_ruler = no
+				vassal_contract_has_flag = gupta_governance_samarajya
+		}
+		localization_key = duchy_feudal_dravidian_group_uparika
+	}
+	text = {
+		localization_key = duchy_feudal_dravidian_group_normal
+		fallback = yes
+	}
+}
+
+samanta_loc = {
+	type = character
+	text = {
+		trigger = {
+			is_independent_ruler = no
+				vassal_contract_has_flag = gupta_governance_samarajya
+		}
+		localization_key = samanta_uparika
+	}
+	text = {
+		localization_key = samanta_normal
+		fallback = yes
+	}
+}
+
+mahasamanta_loc = {
+	type = character
+	text = {
+		trigger = {
+			is_independent_ruler = no
+				vassal_contract_has_flag = gupta_governance_samarajya
+		}
+		localization_key = mahasamanta_uparika
+	}
+	text = {
+		localization_key = mahasamanta_normal
+		fallback = yes
+	}
+}
+
+mahasamantadhipati_loc = {
+	type = character
+	text = {
+		trigger = {
+			is_independent_ruler = no
+				vassal_contract_has_flag = gupta_governance_samarajya
+		}
+		localization_key = mahasamantadhipati_uparika
+	}
+	text = {
+		localization_key = mahasamantadhipati_normal
+		fallback = yes
+	}
+}
+
+mahasamantadhipati_female_loc = {
+	type = character
+	text = {
+		trigger = {
+			is_independent_ruler = no
+				vassal_contract_has_flag = gupta_governance_samarajya
+		}
+		localization_key = mahasamantadhipati_female_uparika
+	}
+	text = {
+		localization_key = mahasamantadhipati_female_normal
+		fallback = yes
+	}
+}

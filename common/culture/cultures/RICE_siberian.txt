@@ -1,0 +1,28 @@
+﻿
+evenk = { # Covers several Tungustic groups, including the Evenks proper, Even, Oroqen, Solon, etc. - historical range was as far as Lake Baikal
+
+	color = { 0.72 0.91 0.99 }
+	
+	ethos = ethos_communal
+	heritage = heritage_siberian
+	language = language_tungusic
+	martial_custom = martial_custom_male_only
+	traditions = {
+		#tradition_RICE_siberian_survivalists
+		tradition_pastoralists
+		tradition_sacred_hunts
+	}
+	
+	name_list = name_list_evenk
+	
+	coa_gfx = { ugro_permian_group_coa_gfx steppe_coa_gfx }
+	building_gfx = { steppe_building_gfx }
+	clothing_gfx = { northern_clothing_gfx }
+	unit_gfx = { northern_unit_gfx }
+	
+	ethnicities = {
+		5 = asian
+		3 = circumpolar_dark_hair
+		2 = circumpolar_brown_hair
+	}
+}

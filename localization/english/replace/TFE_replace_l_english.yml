@@ -1,0 +1,336 @@
+﻿l_english:
+ #core_l_english.yml
+ LOADSCREEN_INITIALIZING_GAME:0 "Sacking the Eternal City . . ."
+ #holdings_l_english.yml
+ castle_holding:0 "City"
+ city_holding:0 "Town"
+ 
+ tradition_roman_legacy_name:0 "Roman Legions"
+ tradition_roman_legacy_desc:0 "The Roman Empire was built and kept secure by the strength of its legions. Even in these times of crisis, the idea and ideal of a strong and powerful standing army resonates in the hearts of this culture, and powerful rulers are known to delegate parts of their realm to commanders, feeding and housing thousands of soldiers ready to defend their Empire."
+ tradition_roman_legacy_desc:0 "Even in these times of crisis, the idea and ideal of a strong and powerful standing army resonates in the hearts of this culture, and powerful rulers are known to delegate parts of their realm to commanders, feeding and housing thousands of soldiers ready to defend their Empire."
+ language_iranian_name:0 "West Ērānian"
+ language_scythian_name:0 "East Ērānian"
+
+ #heritage_arabic_name:0 "Semitic"
+ #heritage_arabic_collective_noun:0 "Semites"
+ heritage_latin_name:0 "Italic"
+ heritage_latin_collective_noun:0 "Italics"
+ heritage_celtic_name:0 "Continental Celtic"
+ heritage_celtic_collective_noun:0 "Continental Celts"
+ language_celtic_name:0 "Continental Celtic"
+ heritage_albanian_name:0 "Illyrian"
+ heritage_albanian_collective_noun:0 "Illyrians"
+ heritage_syriac_name:0 "Semitic"
+ heritage_syriac_collective_noun:0 "Semitics"
+
+ # Endonyms
+ greek:1 "Hellenic"
+ greek_prefix:1 "Helleno"
+ greek_collective_noun:1 "Hellenes"
+ suebi:0 "Suevi"
+ suebi_prefix:0 "Suevo"
+ suebi_collective_noun:0 "Suevi"
+ polish:0 "Polanian"
+ polish_prefix:0 "Polano"
+ polish_collective_noun:0 "Polanes"
+ prussian:0 "Pruthenian"
+ prussian_prefix:0 "Prutheno"
+ prussian_collective_noun:0 "Pruthenians"
+ assyrian:0 "Assyrian"
+ assyrian_prefix:0 "Assyro"
+ assyrian_collective_noun:0 "Assyrians"
+ old_saxon:0 "Saxonian"
+ old_saxon_prefix:0 "Saxo"
+ old_saxon_collective_noun:1 "Old Saxons"
+ ethiopian:0 "Aksumite"
+ ethiopian_prefix:0 "Aksumo"
+ ethiopian_collective_noun:0 "Aksumites"
+ russian:0 "Rus"
+ russian_prefix:0 "Ruso"
+ russian_collective_noun:0 "Rus"
+ heritage_iranian_name:0 "Ērānian"
+ heritage_iranian_collective_noun:0 "Ērānians"
+ bedouin:0 "Arabic"
+ bedouin_prefix:0 "Arab"
+ bedouin_collective_noun:0 "Arabs"
+
+ language_qiangic_name:1 "Qiangic"
+ language_wallachian_name:0 "Vlach"
+ language_israelite_name:0 "Hebrew"
+ heritage_tocharian_name:0 "Serindian"
+ heritage_tocharian_collective_noun:0 "Serindians"
+ name_list_latgalian:0 "Lettish"
+ cn_gaochan:0 "Gaochang"
+ cn_gaochan_adj:0 "Gaochang"
+ heritage_burman_name:0 "Irrawaddy"
+ heritage_burman_collective_noun:0 "Irrawaddians"
+ language_sudanic_name:0 "East Sudanic"
+
+ dynn_Kuci:0 "Bai"
+ dynn_Marisid:0 "Ballana"
+
+ artifact_arms_of_alex_description:0 "This ancient set of laminated linen armor is said to have once belonged to Alexander the Great. The armor itself carries the legacy of the great conqueror, known from the Mediterranean to the edges of India."
+
+ greed_strong_neg_adj:1 "Ascetic"
+
+ #Germanic/Ásatrú
+ germanic_religion:1 "Tuisticism"
+ germanic_religion_adj:1 "Tuistic"
+ germanic_religion_adherent:1 "Tuistic"
+ germanic_religion_adherent_plural:1 "Tuistics"
+ germanic_religion_desc:1 "The native faith of Scandinavia and Germania, Germanic and Norse paganism revolves around reverence of gods known as the Æsir. Adherents are expected to live — and preferably die — in an honorable fashion."
+ # Basque Paganism
+ basque_pagan_desc:0 "The ancient native Basque faith has long incorporated other, more transient religions. Elements of Celtic paganism, Christianity, Hellenic paganism, and a heavy substrata of their own local myths and beliefs all swirl together into a syncretic blend."
+ # The vanilla name, "Era Zaharrak", literally means "Old Ways" in Basque. It doesn't feel appropriate for TFE given it's not really the "old ways" in TFE's timeframe since the faith still exists.
+ # basque_pagan:0 "Euskal Erlijioa"
+ # basque_pagan_adj:0 "Euskal"
+ # basque_pagan_adherent:0 "Euskal"
+ # basque_pagan_adherent_plural:0 "Euskals"
+ # Vanilla "Old Ways" name
+ # basque_pagan_old:0 "Era Zaharrak"
+ # basque_pagan_old_adj:0 "Era Zaharra"
+ # More broad
+ # basque_religion:0 "Iberism"
+ # basque_religion_adj:0 "Iberic"
+ # basque_religion_adherent:0 "Iberic"
+ # basque_religion_adherent_plural:0 "Iberics"
+
+ GAME_DATE_STRING:9 "$DAY$ $MONTH$, [Abs_int32(Subtract_int32('(int32)$YEAR$', Select_int32(GreaterThan_int32('(int32)$YEAR$', '(int32)0'), '(int32)0', Select_int32(And(EqualTo_string('$DAY$', '1'), EqualTo_string('$MONTH$', 'January')), '(int32)1', '(int32)2'))))][Select_CString(GreaterThan_int32('(int32)$YEAR$', '(int32)0'),Select_CString(GreaterThan_int32('(int32)$YEAR$', '(int32)200'),'',' AD'),' BC')]"
+ GAME_DATE_STRING_SHORT:9 "$DAY$ $MONTH_SHORT$ [Abs_int32(Subtract_int32('(int32)$YEAR$', Select_int32(GreaterThan_int32('(int32)$YEAR$', '(int32)0'), '(int32)0', Select_int32(And(EqualTo_string('$DAY$', '1'), EqualTo_string('$MONTH$', 'January')), '(int32)1', '(int32)2'))))][Select_CString(GreaterThan_int32('(int32)$YEAR$', '(int32)0'),Select_CString(GreaterThan_int32('(int32)$YEAR$', '(int32)200'),'',' AD'),' BC')]"
+ GAME_DATE_STRING_LONG:9 "$DAY|O$ of $MONTH$, [Abs_int32(Subtract_int32('(int32)$YEAR$', Select_int32(GreaterThan_int32('(int32)$YEAR$', '(int32)0'), '(int32)0', Select_int32(And(EqualTo_string('$DAY$', '1'), EqualTo_string('$MONTH$', 'January')), '(int32)1', '(int32)2'))))][Select_CString(GreaterThan_int32('(int32)$YEAR$', '(int32)0'), ' AD',' BC')]"
+ CULTURE_WINDOW_ERA_JOINED:0 "[Abs_int32(Subtract_int32('(int32)$JOINED$', Select_int32(GreaterThan_int32('(int32)$JOINED$', '(int32)0'), '(int32)0', '(int32)1')))][Select_CString(GreaterThan_int32('(int32)$JOINED$', '(int32)0'),Select_CString(GreaterThan_int32('(int32)$JOINED$', '(int32)200'),'',' AD'),' BC')]"
+ CULTURE_WINDOW_ERA_JOINED_LEFT:0 "[Abs_int32(Subtract_int32('(int32)$JOINED$', Select_int32(GreaterThan_int32('(int32)$JOINED$', '(int32)0'), '(int32)0', '(int32)1')))][Select_CString(GreaterThan_int32('(int32)$JOINED$', '(int32)0'),Select_CString(GreaterThan_int32('(int32)$JOINED$', '(int32)200'),'',' AD'),' BC')]"
+
+ # Guanche religion
+ north_african_religion:0 "Guanche"
+ north_african_religion_adj:0 "Guanche"
+ north_african_religion_adherent:0 "Guanche"
+ north_african_religion_plural:0 "Guanches"
+ north_african_religion_desc:0 "Traditional Guanche beliefs follow the Cult of the Dead, and believe that when one passes from this world, one becomes deified among one's own family. Stone worship and construction of Megaliths bring followers closer to the Gods, with chief deities second only to the Creator being the Sun and Moon Gods."
+
+ world_europe_west_francia:0 "Gallia"
+ # Game rules
+ setting_none_hybrid_culture_ai_frequency_desc:0 "No non-player created [hybrid_cultures|E] will appear.\n#P TFE note: We recommend turning off all AI divergent and hybrid cultures as TFE adds its own collection of historical melting-pot cultures.#!"
+ setting_none_divergent_culture_ai_frequency_desc:0 "No non-player created [divergent_cultures|E] will appear.\n#P TFE note: We recommend turning off all AI divergent and hybrid cultures as TFE adds its own collection of historical melting-pot cultures.#!"
+
+
+ feudalize_tribal_holding_interaction:0 "Feudalize Tribe/Estate"
+ feudalize_tribal_holding_interaction_desc:0 "Destroy all [buildings|E] in this [holding|E] and turn it [feudal|E]"
+ feudalize_tribal_holding_interaction_title_not_county_or_below:0 "Select a [county|E] or [barony|E]"
+ feudalize_tribal_holding_interaction_notification:0 "Feudalized Tribe/Estate"
+
+ scandinavian_elective_succession_law:1 "Germanic Elective"
+
+ # Struggle (to not reference Iberia)
+ catalyst_usurp_title:0 "Usurped a  [title] [struggle_catalyst_catalyst|E]"
+ catalyst_usurp_title_desc:0 "Usurp a new [title|E] in the [struggle_region|E]"
+ game_concept_border_raid_desc:3 "This is a special type of [war|E] available between [struggle_involved|E] [rulers|E] in various [struggle_struggles|E] where the attacker aims to [siege|E] a specific enemy [county|E] bordering their [realm|E].\n\nThe [war_leader|E] gains [gold|E] for capturing the [war_target|E], which will lose [development|E] and [control|E]. [buildings|E] may also be destroyed, yielding more [gold|E], the chance increasing with [development|E] and [siege|E] [army|E] size.\n\n[war_score|E] will be gained rapidly by the attacker upon [occupying|E] the [war_target|E]."
+ game_concept_contract_assistance_desc:2 "This is a special type of [interaction|E] available to [struggle_involved|E] [rulers|E] in various [struggle_struggles|E], allowing them to join other [struggle_involved|E] [rulerpossessive|E] [wars|E] in exchange for [gold|E].\n\nPayment is made on conclusion of the [war|E], whatever the outcome, as long as the contractor made a [war_contribution|E] of at least 100."
+ catalyst_gain_claim_on_title:1 "Acquired [claim|E] [struggle_catalyst_catalyst|E]"
+ catalyst_gain_claim_on_title_desc:1 "Acquire a [claim|E] on a [title|E] in the [struggle_region|E]"
+
+ mordvin:0 "Erzya"
+ mordvin_prefix:0 "Erzya"
+ mordvin_collective_noun:1 "Erzyas"
+ #komi:0 "Komi"
+ komi_prefix:0 "Komi"
+ komi_collective_noun:1 "Komis"
+ 
+ # Could've been suomenusko but the suomenusko rework mod uses väenusko so
+ finnish_pagan:1 "Väenusko"
+ finnish_pagan_adj:1 "Väenusko"
+ finnish_pagan_adherent:1 "Väenusko"
+ finnish_pagan_adherent_plural:1 "Väenuskos"
+ finnish_pagan:0 "Väenusko"
+ finnish_pagan_adj:0 "Väenusko"
+ finnish_pagan_adherent:0 "Väenusko"
+ finnish_pagan_adherent_plural:0 "Väenuskos"
+
+ heritage_indo_aryan_name:0 "Arya"
+ heritage_indo_aryan_collective_noun:0 "Aryas"
+
+ bengali:0 "Vangiya"
+ bengali_prefix:0 "Vangiya"
+ bengali_collective_noun:0 "Vangiyas"
+
+#  punjabi:0 "Madraka"
+#  punjabi_prefix:0 "Madraka"
+#  punjabis_collective_noun:0 "Madrakas"
+
+ malvi:0 "Malava"
+ malvi_prefix:0 "Malava"
+ malvi_collective_noun:0 "Malavas"
+
+ marathi:0 "Maharashtri"
+ marathi_prefix:0 "Maharashtri"
+ marathi_collective_noun:0 "Maharashtri"
+
+ oriya:0 "Kalingya"
+ oriya_prefix:0 "Kalingya"
+ oriya_collective_noun:0 "Kalingyas"
+
+ sindhi:0 "Saindhava"
+ sindhi_prefix:0 "Saindhava"
+ sindhi_collective_noun:0 "Saindhavas"
+
+ assamese:0 "Kamarupi"
+ assamese_prefix:0 "Kamarupi"
+ assamese_collective_noun:0 "Kamarupi"
+
+ burmese:0 "Mranma"
+ burmese_prefix:0 "Mranma"
+ burmese_collective_noun:0 "Mranmas"
+
+ language_rajasthani_name:0 "Avanti"
+ language_sinhalese_name:0 "Sinhala"
+ language_pahari_name:0 "Pahadi"
+
+ hinduism_religion:0 "Brahmanism"
+ hinduism_religion_adj:0 "Brahmanical"
+ hinduism_religion_adherent:0 "Brahmanist"
+ hinduism_religion_adherent_plural:0 "Brahmanists"
+ hinduism_religion_desc:0 "Brahmanism is a tradition that developed from the Vedic religion. It includes a multitude of gods and religious practices. Shared is the belief in samsara, the endless cycle of the soul's continuous rebirth into the world, and moksha, the freeing from that cycle."
+ 
+ # Moved from core_l_english.yml
+ LOADSCREEN_INITIALIZING_GAME:0 "Forecasting the Nile flood . . ."
+
+ # Hindu faiths
+ vaishnavism:0 "Pauranik Vaishnava"
+ vaishnavism_adj:0 "Vaishnava"
+ vaishnavism_adherent:0 "Vaishnava"
+ vaishnavism_adherent_plural:0 "Vaishnavas"
+ shaivism:0 "Pauranik Shaiva"
+ shaivism_adj:0 "Shaiva"
+ shaivism_adherent:0 "Shaiva"
+ shaivism_adherent_plural:0 "Shaivas"
+ smartism:1 "Smarta"
+ smartism_adj:0 "Smarta"
+ smartism_adherent:0 "Smarta"
+ smartism_adherent_plural:0 "Smartas"
+ srikula_shaktism:0 "Shakta"
+ srikula_shaktism_adj:0 "Shakta"
+ srikula_shaktism_adherent:0 "Shakta"
+ srikula_shaktism_adherent_plural:0 "Shaktas"
+ srikula_shaktism_desc:0 "Shakta believes in the Great Goddess as the Supreme Being from which springs all existence. They worship Tripura Sundari as the highest aspect of the Goddess, and the source of all Shakti, the energy of the universe."
+ krishnaism:0 "Bhagavata"
+ krishnaism_adj:0 "Bhagavata"
+ krishnaism_adherent:0 "Bhagavata"
+ krishnaism_adherent_plural:0 "Bhagavatas"
+
+ name_list_assamese:0 "Kachari"
+
+ mercenary_company_company_of_the_dead_men:0 "Indus Brotherhood"
+ mercenary_company_harappan_band:0 "Med Killers"
+
+ dynn_Candravamsa:0 "Chandravansha"
+ dynn_Mukerjee:0 "Mukhopadhyay"
+ dynn_Banerjee:0 "Banopadhyay"
+ dynn_Chatterjee:0 "Chattopadhyay"
+
+ #Become Chakravarti
+ become_chakravarti_decision_desc:0 "The noblest continent in the world lies at its centre, and is an island of Rosetrees known to outsiders as "India". With the necessary rituals and ceremonies, I will formalize my divine rule over this land and take stewardship as the rightful ruler of the entire world."
+ become_chakravarti_decision_tooltip:0 "Unite the island of Rosetrees in the centre of the world."
+ become_chakravarti_decision_indian_empires_unite_effect:0 "I consolidate the lands of Rosetrees."
+ become_chakravarti_decision_new_primary_title_effect:0 "The Empire of Jambudvipa becomes my new [primary_title|E]"
+ become_chakravarti_decision_confirm:0 "Attend the rituals"
+
+ south_asia.0004.relevant_religion:0 "Heralds have been arriving in droves to bring news from Jambudvipa. For the first time in an age, a Chakravarti has risen."
+ south_asia.0004.desc:0 "Heralds have arrived in great numbers from Jambudvipa, announcing the rise of their "Chakravarti", enthusing about [chakravarti.GetHerHis] benevolence."
+
+ e_india:0 "Jambudvipa"
+ e_india_adj:0 "Jambudvipan"
+
+ #Israel
+ create_israel_kingdom_decision:0 "Restore the Kingdom of Judea"
+ create_israel_kingdom_decision_confirm:0 "The Kingdom will be restored!"
+ create_israel_kingdom_decision_desc:0 "It is time for the Tribes of Israel to re-establish the Kingdom of David and the Maccabees, so that Jews may once more live together in peace and harmony."
+ create_israel_kingdom_decision_tooltip:0 "Judea is restored."
+ create_israel_kingdom_decision_effect_tooltip:0 "Judea is restored"
+
+ middle_east_decisions.0005.t:0 "The Promised Land"
+ middle_east_decisions.0005.desc:0 "With Jerusalem and the Promised Land under Jewish control, the time is ripe for the refounding of the lost Kingdom of Judea.\n\nThe Jewish people have suffered considerably since the Herodian Kingdom was dissolved by the Romans after the death of Agrippa the Great, may our new Kingdom of Judea stand the test of time!"
+ middle_east_decisions.0005.a:0 "May God protect our new Kingdom."
+ middle_east_decisions.0006.desc.others:0 "Having brought Jerusalem back under Jewish control, [scoped_ruler.GetTitledFirstName] has decided to declare [scoped_ruler.GetHerselfHimself] [scoped_ruler.GetTitleTierName] of a restored Judea.\n\nRoman rule was not beneficial for the Jewish people, and maybe this new Kingdom will allow them to return to their former glory."
+ middle_east_decisions.0006.a:0 "The time has come!"
+ middle_east_decisions.0006.b:0 "I see..."
+
+ count_feudal_male_dravidian_group:0 "Raja"
+ count_feudal_female_dravidian_group:0 "Rani"
+
+ duke_feudal_male_dravidian_group:0 "Maharaja"
+ duke_feudal_female_dravidian_group:0 "Maharani"
+
+ king_feudal_male_dravidian_group:0 "Maharajadhiraja"
+ king_feudal_female_dravidian_group:0 "Maharanidhiraja"
+
+ county_feudal_dravidian_group_normal:0 "Rajya"
+ duchy_feudal_dravidian_group_normal:0 "Rajya"
+ county_feudal_dravidian_group_uparika:0 "Vishaya"
+ duchy_feudal_dravidian_group_uparika:0 "Bhukti"
+ county_feudal_dravidian_group:0 "[CHARACTER.Custom('county_feudal_dravidian_group_loc')]"
+ duchy_feudal_dravidian_group:0 "[CHARACTER.Custom('duchy_feudal_dravidian_group_loc')]"
+
+
+ samanta_normal:0 "Samanta"
+ samanta_female_normal:0 "Samanta"
+ mahasamanta_normal:0 "Mahasamanta"
+ mahasamanta_female_normal:0 "Mahasamanta"
+ mahasamantadhipati_normal:0 "Mahasamantadhipati"
+ mahasamantadhipati_female_normal:0 "Mahasamantadhipati"
+
+ samanta_uparika:0 "Lokapala"
+ samanta_female_uparika:0 "Lokapala"
+ mahasamanta_uparika:0 "Uparika"
+ mahasamanta_female_uparika:0 "Uparika"
+ mahasamantadhipati_uparika:0 "Maharaja-Uparika"
+ mahasamantadhipati_female_uparika:0 "Maharani-Uparika"
+
+ samanta:0 "[CHARACTER.Custom('samanta_loc')]"
+ samanta_female:0 "[CHARACTER.Custom('samanta_loc')]"
+ mahasamanta:0 "[CHARACTER.Custom('mahasamanta_loc')]"
+ mahasamanta_female:0 "[CHARACTER.Custom('mahasamanta_loc')]"
+ mahasamantadhipati:0 "[CHARACTER.Custom('mahasamantadhipati_loc')]"
+ mahasamantadhipati_female:0 "[CHARACTER.Custom('mahasamantadhipati_female_loc')]"
+
+ zunism_religion:1 "Zunist"
+ zunism_religion_adj:1 "Zunist"
+ zunism_religion_adherent:1 "Zunist"
+ zunism_religion_adherent_plural:1 "Zunists"
+ zunism_religion_desc:0 "Zunists revere the sun deity Zun, who was originally a Hephthalite or Hunnic deity and whose worship is now syncretized with local Indo-Iranian traditions."
+
+
+ strict_taxation_tax_collector: "Charity"
+ strict_taxation_tax_collector_flavor_desc: "Charity is a luxury tax, usually enforced upon the wealthy as a means to provide additional income for the state and to help those in need."
+
+ building_type_alamut_castle_01_desc: "This eagle's nest, perched atop a lofty crag, was built to serve as a fortress redoubt. With its awe-inspiring setting and strong ramparts, it is near-impregnable by all accounts, and could prove an ideal stronghold for any warlike faction or sect that would thrive in such an isolated location." 
+ building_type_ark_of_bukhara_01_desc: "It is said that Prince Siyavusha built this massive fortress when the world was young. Three thousand years later, it has been restored by the rulers of this region, and it has been in use ever since. Travelers come from near and far to admire the construction, with seven great pillars mirroring the seven stars of the Big Dipper, but it is a fortification first and foremost, intimidating in its splendor."
+ building_type_tomb_of_cyrus_01: "Tomb of Cyrus the Great"
+ building_type_tomb_of_cyrus_01_desc: "This ancient tomb of white limestone is said to be the resting place of Cyrus the Great, the founder of one of the great Persian Empires."
+
+ language_sabaki_name: "Northeast Bantu"
+ welayta:0 "Omotic"
+ welayta_prefix:0 "Omoto"
+ welayta_collective_noun:0 "Omotics"
+
+ rabbinism:0 "Jews of the West"
+ rabbinism_adj:0 "Yerushalmi"
+ rabbinism_adherent:0 "Yerushalmi"
+ rabbinism_adherent_plural:0 "Yerushalmis"
+ rabbinism_desc:0 "Being led by the Rabbis of the Great Sanhedrin in Palestine, until its dissolution in 425, the Jews of the West have experienced frequent persecution since the Roman Empire's banning of all religious activity outside Christianity. However, the rule of the barbarians may bring new fortunes for the community, or even greater persecution. Communities of Jews have spread from the Rhineland to Alexandria, and the religion has even began to take converts from various tribes in Arabia."
+
+ malabarism:0 "Jews of the East"
+ malabarism_adj:0 "Bavli"
+ malabarism_adherent:0 "Bavli"
+ malabarism_adherent_plural:0 "Bavlis"
+ malabarism_desc:0 "Being officially recognised by the Persian Empire, the Jews of the East led by the Exilarch are a vital part of the Empire's population. The great academies of Sura and Pumbedita serve as centres of Jewish thought, and Jewish communities from Mesopotamia to Sakastan meld their practices with that of the nations they live among."
+
+ nestorian:0 "Church of the East" # adj and adherent name are still Nestorian
+ nestorian_desc:0 "The Official Church of the Persian Empire, the Church of the East or "Nestorianism" teaches that Jesus Christ has two natures, one divine and one human, a position which leads to disputes with the Churches of the West. Its missionaries have evangelized farther East than any other Church, finding adherents in lands as varied as Transoxiana, India, and China."
+
+ holy_site_baghdad_name:0 "Babylon"
+ dynn_Zhangzhung:0 "Lig"
+
+ building_type_dome_of_the_rock_01:0 "Temple in Jerusalem"
+ building_type_dome_of_the_rock_01_desc:0 "The Church of the Holy Sepulchre was built by Constantine the Great and is considered to be the holiest site in the world for Christians. During the Umayyad Caliphate, the Dome of the Rock would be built in the center of the Temple Mount nearby, where the Temple of Solomon and the Jewish Second Temple stood. The temple's foundation stone is said to be the place where God created the world and the first human, Adam. Abrahamic pilgrims from all around the world flock to this site all year round."
+ building_dome_of_the_rock_01:0 "Temple in Jerusalem"
+ building_dome_of_the_rock_01_desc:0 "$building_type_dome_of_the_rock_01_desc$"

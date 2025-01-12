@@ -1,0 +1,26 @@
+﻿capital_of_visigoths_opinion_modifier = {
+	icon = county_modifier_opinion_positive
+	county_opinion_add = 50
+}
+
+capital_of_visigoths_misc_benefits_modifier = {
+	icon = asatru_raven_positive
+	tax_mult = 0.5
+	levy_size = 0.5
+	development_growth = 1
+}
+
+shared_power_with_clergy = {
+	icon = piety_positive
+	monthly_piety_gain_mult = 0.05
+	monthly_prestige_gain_mult = -0.1
+	levy_reinforcement_rate_same_faith = 0.1
+	clergy_opinion = 5
+}
+
+disrespected_clergy = {
+	icon = piety_negative
+	clergy_opinion = -10
+	monthly_piety_gain_mult = -0.1
+	monthly_prestige_gain_mult = 0.05
+}

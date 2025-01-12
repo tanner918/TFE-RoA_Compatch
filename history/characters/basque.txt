@@ -1,0 +1,919 @@
+﻿900340 = { #Tarraconensis V3
+	name= "Manrike"
+	religion="roman_pagan"
+	culture="basque"
+	360.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+70005 = {
+	name = "Munia"
+	female = yes
+	dynasty = 8750
+
+	father = 200061
+	mother = 200060
+
+	religion = "chalcedonian"
+	culture = basque
+
+	746.1.1 = {
+		birth = yes
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+
+70290 = {
+	name = "Eneko"
+	dynasty_house = house_iniga
+	martial = 6
+	diplomacy = 5
+	intrigue = 7
+	stewardship = 4
+	religion = "chalcedonian"
+	culture = "basque"
+	trait = blademaster_1
+	trait = wrathful
+	trait = education_martial_2
+	father = 168105
+	765.1.1 = {
+		birth = "765.1.1"
+	}
+	787.1.1 = {
+		add_spouse = 73811
+	}
+	796.1.1 = {
+		death = "796.1.1"
+	}
+}
+
+168104 = {
+	name = "Lope"
+	dynasty = 388
+	religion = "chalcedonian"
+	culture = "basque"
+	trait = ambitious
+	720.1.1 = {
+		birth = "720.1.1"
+	}
+	769.1.1 = {
+		effect = {
+			add_opinion = {
+				target = liege
+				modifier = hate_opinion
+				opinion = -120
+			}
+			add_opinion = {
+				target = title:k_lotharingia.holder
+				modifier = hate_opinion
+				opinion = -120
+			}
+		}
+	}
+	778.1.1 = {
+		death = "778.1.1"
+	}
+}
+
+168105 = {
+	name = "Ximeno"
+	dynasty = 388
+	religion = "chalcedonian"
+	culture = "basque"
+	father = 168104
+	740.1.1 = {
+		birth = "740.1.1"
+	}
+	816.1.1 = {
+		death = "816.1.1"
+	}
+}
+
+168106 = {
+	name = "Antso"
+	dynasty = 388
+	religion = "chalcedonian"
+	culture = "basque"
+	father = 168104
+	755.1.1 = {
+		birth = "755.1.1"
+	}
+	812.1.1 = {
+		death = "812.1.1"
+	}
+}
+
+168107 = {
+	name = "Zentulo"
+	dynasty = 388
+	religion = "chalcedonian"
+	culture = "basque"
+	father = 168104
+	760.1.1 = {
+		birth = "760.1.1"
+	}
+	812.1.1 = {
+		death = "812.1.1"
+	}
+}
+
+168108 = {
+	name = "Donato"
+	dynasty = 388
+	religion = "chalcedonian"
+	culture = "basque"
+	father = 168104
+	765.1.1 = {
+		birth = "765.1.1"
+	}
+	830.1.1 = {
+		death = "830.1.1"
+	}
+}
+
+168109 = {
+	name = "Gartzia"
+	dynasty = 388
+	religion = "chalcedonian"
+	culture = "basque"
+	father = 168105
+	760.1.1 = {
+		birth = "760.1.1"
+	}
+	818.1.1 = {
+		death = "818.1.1"
+	}
+}
+
+73808 = {
+	name = "Kasio"
+	dynasty = 12293
+
+	religion = "chalcedonian"
+	culture = basque
+
+	670.1.1 = {
+		birth = yes
+	}
+	714.1.1 = {
+		religion = muwalladi
+	}
+	723.1.1 = {
+		death = yes
+	}
+}
+
+73809 = {
+	name = "Fortun"
+	dynasty = 12293
+
+	father = 73808
+
+	religion = muwalladi
+	culture = basque
+
+	710.1.1 = {
+		birth = yes
+	}
+	731.1.1 = {
+		add_spouse = 200202
+	}
+	768.1.1 = {
+		death = yes
+	}
+}
+
+73810 = {
+	name = "Muza"
+	dynasty = 12293
+
+	father = 73809
+	mother = 200202
+
+	religion = muwalladi
+	culture = basque
+
+	745.1.1 = {
+		birth = yes
+	}
+	768.1.1 = {
+		add_spouse = 200204
+	}
+	797.1.2 = {
+		add_spouse = 73811
+	}
+	802.12.1 = {
+		death = yes
+	}
+}
+
+200061 = {
+	name = "Obeko"
+	dynasty = 8750
+
+	religion = "chalcedonian"
+	culture = basque
+
+	720.1.1 = {
+		birth = yes
+	}
+	745.1.1 = {
+		add_spouse = 200060
+	}
+	770.1.1 = {
+		death = yes
+	}
+}
+
+200158 = {
+	name = "Lope"
+	dynasty = 1046010
+
+	religion = "chalcedonian"
+	culture = basque
+
+	730.1.1 = {
+		birth = yes
+	}
+	771.1.1 = {
+		add_spouse = 200060
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+
+200159 = {
+	name = "Gartzia"
+	dynasty = 1046010
+
+	father = 200158
+	mother = 200060
+
+	religion = "chalcedonian"
+	culture = basque
+
+	765.1.1 = {
+		birth = yes
+	}
+	816.1.1 = {
+		death = yes
+	}
+}
+
+200190 = {
+	name = "Belasko"
+	dynasty = 12285
+
+	father = 200191
+	mother = 200192
+
+	religion = "chalcedonian"
+	culture = basque
+
+	753.1.1 = {
+		birth = yes
+	}
+	817.1.1 = {
+		death = yes
+	}
+}
+
+200191 = {
+	name = "Belasko"
+	dynasty = 12285
+
+	religion = "chalcedonian"
+	culture = basque
+
+	724.1.1 = {
+		birth = yes
+	}
+	750.1.1 = {
+		add_spouse = 200192
+	}
+	779.1.1 = {
+		death = yes
+	}
+}
+
+200192 = {
+	name = "Antsa"
+	female = yes
+
+	religion = "chalcedonian"
+	culture = basque
+
+	731.1.1 = {
+		birth = yes
+	}
+	790.1.1 = {
+		death = yes
+	}
+}
+
+200193 = {
+	name = "Galindo"
+	dynasty = 12285
+
+	father = 200191
+	mother = 200192
+
+	religion = "chalcedonian"
+	culture = basque
+
+	751.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+
+200194 = {
+	name = "Mohamed"
+	dynasty = 12293
+
+	father = 73808
+
+	religion = muwalladi
+	culture = basque
+
+	712.1.1 = {
+		birth = yes
+	}
+	740.1.1 = {
+		add_spouse = 200198
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+
+200195 = {
+	name = "Motarrif"
+	dynasty = 12293
+
+	father = 73808
+
+	religion = muwalladi
+	culture = basque
+
+	714.1.1 = {
+		birth = yes
+	}
+	741.1.1 = {
+		add_spouse = 200199
+	}
+	770.1.1 = {
+		death = yes
+	}
+}
+
+200196 = {
+	name = "Yunus"
+	dynasty = 12293
+
+	father = 73808
+
+	religion = muwalladi
+	culture = basque
+
+	716.1.1 = {
+		birth = yes
+	}
+	773.11.1 = {
+		death = yes
+	}
+}
+
+200197 = {
+	name = "Yahya"
+	dynasty = 12293
+
+	father = 73808
+
+	religion = muwalladi
+	culture = basque
+
+	718.1.1 = {
+		birth = yes
+	}
+	774.11.1 = {
+		death = yes
+	}
+}
+
+200200 = {
+	name = "Taur"
+	dynasty = 12293
+
+	father = 200194
+	mother = 200198
+
+	religion = muwalladi
+	culture = basque
+
+	741.1.1 = {
+		birth = yes
+	}
+	799.11.1 = {
+		death = yes
+	}
+}
+
+200201 = {
+	name = "Salama"
+	dynasty = 12293
+
+	father = 200195
+	mother = 200199
+
+	religion = muwalladi
+	culture = basque
+
+	744.1.1 = {
+		birth = yes
+	}
+	800.11.1 = {
+		death = yes
+	}
+}
+
+200203 = {
+	name = "Zahir"
+	dynasty = 12293
+
+	father = 73809
+	mother = 200202
+
+	religion = muwalladi
+	culture = basque
+
+	747.1.1 = {
+		birth = yes
+	}
+	805.11.1 = {
+		death = yes
+	}
+}
+
+
+###Aquitanian Tribes
+
+basque_01 = { #Novempopuliana Vassal 1
+	name= "Marianus"
+	dynasty=900011
+	religion="roman_pagan"
+	culture="basque"
+	300.1.1 = {
+		birth = yes
+	}
+	371.1.1 = {
+		death = yes
+	}
+}
+basque_02 = { #Novempopuliana Vassal 1
+	name= "Gordian"
+	dynasty=900011
+	religion="roman_pagan"
+	culture="basque"
+	father = basque_01
+	343.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+basque_11 = { #Novempopuliana Vassal 1
+	name= "Dexter"
+	dynasty=900011
+	religion="roman_pagan"
+	culture="basque"
+	father = basque_02
+	389.1.1 = {
+		birth = yes
+	}
+	460.1.1 = {
+		death = yes
+	}
+}
+basque_12 = { #Novempopuliana Vassal 1
+	name= "Paulinus"
+	dynasty=900011
+	religion="nicene"
+	culture="basque"
+	father = basque_11
+	422.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	499.1.1 = {
+		death = yes
+	}
+}
+
+basque_03 = { #Novempopuliana Vassal 1
+	name= "Egidio"
+	dynasty=900008
+	religion="roman_pagan"
+	culture="basque"
+	340.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+basque_13 = { #Novempopuliana Vassal 1
+	name= "Julian"
+	dynasty=900008
+	religion="roman_pagan"
+	culture="basque"
+	father = basque_03
+	389.1.1 = {
+		birth = yes
+	}
+	460.1.1 = {
+		death = yes
+	}
+}
+basque_14 = { #Novempopuliana Vassal 1
+	name= "Octavius"
+	dynasty=900008
+	religion="nicene"
+	culture="basque"
+	father = basque_13
+	441.1.1 = {
+		birth = yes
+	}
+
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	499.1.1 = {
+		death = yes
+	}
+}
+basque_04 = { #Novempopuliana Vassal 1
+	name= "Piarres"
+	dynasty=900009
+	religion="nicene"
+	culture="basque"
+	337.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+
+basque_10 = { #Novempopuliana Vassal 1
+	name= "Jakue"
+	dynasty=900004
+	religion="nicene"
+	culture="basque"
+	336.1.1 = {
+		birth = yes
+	}
+	408.1.1 = {
+		death = yes
+	}
+}
+basque_15 = { #Novempopuliana Vassal 1
+	name= "Egidio"
+	dynasty=900004
+	religion="roman_pagan"
+	culture="basque"
+	father = basque_10
+	399.1.1 = {
+		birth = yes
+	}
+	460.1.1 = {
+		death = yes
+	}
+}
+basque_16 = { #Novempopuliana Vassal 1
+	name= "Julius"
+	dynasty=900004
+	religion="nicene"
+	culture="basque"
+	father = basque_15
+	433.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	499.1.1 = {
+		death = yes
+	}
+}
+
+basque_06 = { #Novempopuliana Vassal 1
+	name= "Flavius"
+	dynasty=900005
+	religion="nicene"
+	culture="basque"
+	father = basque_05
+	365.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+
+basque_05 = { #Novempopuliana Vassal 1
+	name= "Valerian"
+	dynasty=900005
+	religion="nicene"
+	culture="basque"
+	321.1.1 = {
+		birth = yes
+	}
+	388.1.1 = {
+		death = yes
+	}
+}
+
+basque_07 = { #Novempopuliana Vassal 1
+	name= "Donato"
+	dynasty=900006
+	religion="basque_pagan"
+	culture="basque"
+	339.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+
+basque_17 = { #Novempopuliana Vassal 1
+	name= "Augustus"
+	dynasty=900006
+	religion="roman_pagan"
+	culture="basque"
+	father = basque_07
+	391.1.1 = {
+		birth = yes
+	}
+	460.1.1 = {
+		death = yes
+	}
+}
+basque_18 = { #Novempopuliana Vassal 1
+	name= "Liberius"
+	dynasty=900006
+	religion="nicene"
+	culture="basque"
+	father = basque_17
+	425.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	499.1.1 = {
+		death = yes
+	}
+}
+basque_08 = { #Novempopuliana Vassal 1
+	name= "Paulus"
+	dynasty=900010
+	religion="nicene"
+	culture="basque"
+	335.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+basque_19 = { #Novempopuliana Vassal 1
+	name= "Janus"
+	dynasty=900010
+	religion="roman_pagan"
+	culture="basque"
+	father = basque_08
+	389.1.1 = {
+		birth = yes
+	}
+	460.1.1 = {
+		death = yes
+	}
+}
+basque_20 = { #Novempopuliana Vassal 1
+	name= "Petrus"
+	dynasty=900010
+	religion="nicene"
+	culture="basque"
+	father = basque_19
+	421.1.1 = {
+		birth = yes
+	}
+
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	499.1.1 = {
+		death = yes
+	}
+}
+basque_09 = { #Novempopuliana Vassal 1
+	name= "Zentulo"
+	dynasty=900007
+	religion="roman_pagan"
+	culture="basque"
+	340.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+basque_21 = { #Novempopuliana Vassal 1
+	name= "Nicomachus"
+	dynasty=900007
+	religion="roman_pagan"
+	culture="basque"
+	father = basque_09
+	385.1.1 = {
+		birth = yes
+	}
+	460.1.1 = {
+		death = yes
+	}
+}
+basque_22 = { #Novempopuliana Vassal 1
+	name= "Porphyrus"
+	dynasty=900007
+	religion="nicene"
+	culture="basque"
+	father = basque_21
+	431.1.1 = {
+		birth = yes
+	}
+
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	499.1.1 = {
+		death = yes
+	}
+}
+basque_23 = {
+	name = "Gartzia"
+	religion = "chalcedonian"
+	culture = "basque"
+	503.1.1 = {
+		birth = yes
+	}
+	568.1.1 = {
+		death = yes
+	}
+}
+basque_24 = {
+	name = "Belasko"
+	religion = "chalcedonian"
+	culture = "basque"
+	509.1.1 = {
+		birth = yes
+	}
+	581.1.1 = {
+		death = yes
+	}
+}
+
+##Independent Aquitaine
+vasconia_03 = {
+	name = "Amando"
+	culture = basque
+	religion = "chalcedonian"
+	trait = peasant_leader
+	597.1.1 = {
+		birth = yes
+	}
+	660.1.1 = {
+		death = yes
+	}
+}
+vasconia_05 = {
+	name = "Etor"
+	culture = basque
+	religion = "chalcedonian"
+	602.1.1 = {
+		birth = yes
+	}
+	660.1.1 = {
+		death = yes
+	}
+}
+vasconia_10 = {
+	name = "Kasio"
+	culture = "basque"
+	religion = "roman_pagan"
+	320.1.1 = {
+		birth = yes
+	}
+	365.1.1 = {
+		death = yes
+	}
+}
+vasconia_11 = {
+	name = "Tibalt"
+	culture = "basque"
+	religion = "roman_pagan"
+	367.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+vasconia_12 = {
+	name = "Erramun"
+	culture = "basque"
+	religion = "roman_pagan"
+	327.1.1 = {
+		birth = yes
+	}
+	368.1.1 = {
+		death = yes
+	}
+}
+vasconia_13 = {
+	name = "Armengol"
+	culture = "basque"
+	religion = "roman_pagan"
+	362.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+vasconia_14 = {
+	name = "Octavius"
+	culture = "basque"
+	religion = "roman_pagan"
+	448.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+vasconia_15 = {
+	name = "Piarres"
+	culture = "basque"
+	religion = "chalcedonian"
+	452.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+vasconian_marcher_01 = {
+	name = "Erramun"
+	culture = "basque"
+	religion = "chalcedonian"
+	472.1.1 = {
+		birth = yes
+	}
+	537.1.1 = {
+		death = yes
+	}
+}
+vasconian_16 = {
+	name = "Gontzal"
+	culture = "basque"
+	religion = "chalcedonian"
+	492.1.1 = {
+		birth = yes
+	}
+	547.1.1 = {
+		death = yes
+	}
+}
+vasconian_17 = {
+	name = "Piarres"
+	culture = "basque"
+	religion = "chalcedonian"
+	512.1.1 = {
+		birth = yes
+	}
+	566.1.1 = {
+		death = yes
+	}
+}

@@ -1,0 +1,371 @@
+﻿
+
+TFE_historically_minor_struggle_catalyst_gain = 50
+TFE_historically_major_struggle_catalyst_gain = 75
+TFE_historically_significant_struggle_catalyst_gain = 100
+
+struggle_eastern_iranian_development_county_value = 5
+struggle_eastern_iranian_development_req_value = 60
+struggle_eastern_iranian_control_percent_value = 40
+
+# Paramameter for percentage of Eastern Iranian world that you cannot control
+struggle_eastern_iranian_ending_silk_road_owned_percent_value = 40
+struggle_eastern_iranian_ending_domination_owned_percent_value = 75
+
+# Uses above to plug in to script as a decimal
+struggle_eastern_iranian_ending_silk_road_owned_percent_decimal_value = { 
+	value = struggle_eastern_iranian_ending_silk_road_owned_percent_value
+	divide = 100
+	max = 1
+}
+
+# Uses above to plug in to script as a decimal
+struggle_eastern_iranian_ending_domination_owned_percent_decimal_value = { 
+	value = struggle_eastern_iranian_ending_domination_owned_percent_value
+	divide = 100
+	max = 1
+}
+
+
+# Counts every county in region, to check against
+struggle_eastern_iranian_ending_region_total_value = {
+	value = 0
+	every_county_in_region = {
+		region = TFE_eastern_iranian_struggle_region
+		add = 1
+	}
+}
+
+# Counter for controlled counties in North Atlantic
+struggle_eastern_iranian_ending_region_owned_value = {
+	value = 0
+	every_county_in_region = {
+		region = TFE_eastern_iranian_struggle_region
+		limit = { holder.top_liege = root }
+		add = 1
+	}
+}
+
+# Percentage of Eastern Iranian counties owned
+TFE_eastern_iranian_struggle_region_owned_percent_value = {
+	value = struggle_eastern_iranian_ending_region_owned_value
+	divide = struggle_eastern_iranian_ending_region_total_value
+	multiply = 100
+}
+
+
+# Counter for independent king or higher Involved rulers
+struggle_eastern_iranian_ending_compromise_decision_independent_counter_value = {
+	value = 0
+	struggle:eastern_iranian_struggle = {
+		every_involved_ruler = {
+			limit = {
+				NOT = { this = root }
+				is_independent_ruler = yes
+				primary_title = {
+					is_mercenary_company = no
+					is_holy_order = no
+					tier >= tier_kingdom
+				}
+			}
+			add = 1
+		}
+	}
+}
+
+# Counter for independent Involved rulers
+struggle_eastern_iranian_ending_compromise_decision_independent_invloved_counter_value = {
+	value = 0
+	struggle:eastern_iranian_struggle = {
+		every_involved_ruler = {
+			limit = {
+				NOT = { this = root }
+				is_independent_ruler = yes
+				primary_title = {
+					is_mercenary_company = no
+					is_holy_order = no
+				}
+			}
+			add = 1
+		}
+	}
+}
+
+# Counter for Eastern Iranian counties owned by non-Involved
+struggle_eastern_iranian_ending_compromise_decision_region_interloper_value = {
+	value = 0
+	every_county_in_region = {
+		region = TFE_eastern_iranian_struggle_region
+		limit = {
+			holder.top_liege = {
+				NOT = {
+					any_character_struggle = {
+						involvement = involved
+						is_struggle_type = eastern_iranian_struggle
+					}
+				}				
+			}
+		}
+		add = 1
+	}
+}
+
+# Percentage of Eastern Iranian counties owned by non-Involved
+struggle_eastern_iranian_ending_compromise_decision_region_interloper_percent_value = {
+	value = struggle_eastern_iranian_ending_compromise_decision_region_interloper_value
+	divide = struggle_eastern_iranian_ending_region_total_value
+	multiply = 100
+}
+
+persia_struggle_ending_kingdom_counter_value = {
+	every_held_title = {
+		limit = {
+			tier = tier_kingdom
+			de_jure_liege = title:e_persia
+			root = { completely_controls = prev }
+		}
+		add = 1
+	}
+}
+
+persia_struggle_conciliation_kingdom_total_value = 1
+
+persia_struggle_compromise_owned_percent_value = 50
+
+struggle_persia_ending_compromise_decision_region_owned_value = {
+	value = 0
+	every_county_in_region = {
+		region = TFE_eastern_iranian_struggle_region
+		limit = { holder.top_liege = root }
+		add = 1
+	}
+}
+
+struggle_persia_ending_ending_decision_region_total_value = {
+	value = 0
+	every_county_in_region = {
+		region = TFE_eastern_iranian_struggle_region
+		add = 1
+	}
+}
+
+struggle_persia_ending_compromise_decision_region_owned_percent_value = {
+	value = struggle_persia_ending_compromise_decision_region_owned_value
+	divide = struggle_persia_ending_ending_decision_region_total_value
+	multiply = 100
+}
+
+struggle_persia_ending_compromise_decision_opinion_value = {
+	value = 60
+}
+
+# Counter for hooked and friendly rulers
+struggle_persia_ending_compromise_decision_opinion_counter_value = {
+	value = 0
+	struggle:eastern_iranian_struggle = {
+		every_involved_ruler = {
+			limit = {
+				NOT = { this = root }
+				is_independent_ruler = yes
+				primary_title = { is_holy_order = no }
+				primary_title = { is_mercenary_company = no }
+				save_temporary_scope_as = this_character
+				OR = {
+					root = { has_strong_hook = scope:this_character }
+					opinion = {
+						target = root
+						value >= struggle_persia_ending_compromise_decision_opinion_value
+					}
+				}
+			}
+			add = 1
+		}
+	}
+}
+
+persia_struggle_compromise_uninvolved_percent_value = 25
+
+# Uses above to plug in to script as a decimal
+persia_struggle_compromise_uninvolved_percent_decimal_value = { 
+	value = persia_struggle_compromise_uninvolved_percent_value
+	divide = 100
+	max = 1
+}
+
+
+# Paramameter for percentage of Eastern Iranian world that you cannot control
+struggle_north_indian_ending_confluence_owned_percent_value = 40
+struggle_north_indian_ending_domination_owned_percent_value = 75
+
+# Uses above to plug in to script as a decimal
+struggle_north_indian_ending_confluence_owned_percent_decimal_value = { 
+	value = struggle_north_indian_ending_confluence_owned_percent_value
+	divide = 100
+	max = 1
+}
+
+# Uses above to plug in to script as a decimal
+struggle_north_indian_ending_domination_owned_percent_decimal_value = { 
+	value = struggle_north_indian_ending_domination_owned_percent_value
+	divide = 100
+	max = 1
+}
+
+# Counts every county in region, to check against
+struggle_north_indian_ending_region_total_value = {
+	value = 0
+	every_county_in_region = {
+		region = TFE_north_indian_struggle_region
+		add = 1
+	}
+}
+
+# Counter for controlled counties in North Atlantic
+struggle_north_indian_ending_region_owned_value = {
+	value = 0
+	every_county_in_region = {
+		region = TFE_north_indian_struggle_region
+		limit = { holder.top_liege = root }
+		add = 1
+	}
+}
+
+# Percentage of North Indian counties owned
+TFE_north_indian_struggle_region_owned_percent_value = {
+	value = struggle_north_indian_ending_region_owned_value
+	divide = struggle_north_indian_ending_region_total_value
+	multiply = 100
+}
+
+struggle_north_indian_development_county_value = 5
+struggle_north_indian_development_req_value = 40
+struggle_north_indian_religion_county_value = 3
+
+TFE_NOMADIC_AI_SCORE_MULT = {
+	value = 1
+	if = {
+		limit = {
+			AND = {
+				exists = struggle:north_indian_struggle
+				struggle:north_indian_struggle = {
+					AND = {
+						has_struggle_phase_parameter = cheaper_nomadic_migrations
+						is_culture_involved_in_struggle = scope:attacker.culture
+					}
+				}
+				any_in_list = {
+					list = target_titles
+					title_capital_county.title_province = {
+						geographical_region = TFE_north_indian_struggle_region
+					}
+				}
+			}
+		}
+		add = 100
+	}
+}
+
+TFE_MIGRATION_AI_SCORE_MULT = {
+	value = 1
+	if = {
+		limit = {
+			scope:defender = {
+				OR = {
+					government_has_flag = government_is_imperial
+					government_has_flag = government_is_administrative
+					government_has_flag = government_is_autocratic
+					government_has_flag = government_is_autocratic_ep3
+				}
+			}
+		}
+		add = 500
+	}
+	if = {
+		limit = {
+			scope:attacker = {
+				OR = {
+					AND = {
+						OR = {
+							has_government = feudal_government
+							government_has_flag = government_is_imperial
+							government_has_flag = government_is_administrative
+							government_has_flag = government_is_roman
+						}
+						realm_size > 30 #small sized feudal realms can't migrate
+					}
+					realm_size >= 100 #big realms can't migrate
+				}
+			}
+		}
+		add = -1000
+	}
+}
+
+
+TFE_italian_struggle_ending_development_level = 45
+
+# Parameter for cultural acceptance gain
+TFE_italian_struggle_synthesis_culture_acceptance_value = 25
+
+# Paramameter for percentage of Italian that you cannot control
+struggle_italian_ending_synthesis_owned_percent_value = 40
+
+# Uses above to plug in to script as a decimal
+struggle_italian_ending_synthesis_owned_percent_decimal_value = { 
+	value = struggle_italian_ending_synthesis_owned_percent_value
+	divide = 100
+	max = 1
+}
+
+# Counts every county in region, to check against
+struggle_italian_ending_region_total_value = {
+	value = 0
+	every_county_in_region = {
+		region = TFE_italian_struggle_region
+		add = 1
+	}
+}
+
+# Counter for controlled counties in North Atlantic
+struggle_italian_ending_region_owned_value = {
+	value = 0
+	every_county_in_region = {
+		region = TFE_italian_struggle_region
+		limit = { holder.top_liege = root }
+		add = 1
+	}
+}
+
+# Percentage of North Indian counties owned
+TFE_italian_struggle_region_owned_percent_value = {
+	value = struggle_italian_ending_region_owned_value
+	divide = struggle_italian_ending_region_total_value
+	multiply = 100
+}
+
+# Paramameter for percentage of Italian that you cannot control
+struggle_italian_ending_incorporation_owned_percent_value = 60
+
+# Uses above to plug in to script as a decimal
+struggle_italian_ending_incorporation_owned_percent_decimal_value = { 
+	value = struggle_italian_ending_incorporation_owned_percent_value
+	divide = 100
+	max = 1
+}
+
+# Paramameter for percentage of Italian that you cannot control
+struggle_italian_ending_restoration_owned_percent_value = 70
+
+# Uses above to plug in to script as a decimal
+struggle_italian_ending_restoration_owned_percent_decimal_value = { 
+	value = struggle_italian_ending_restoration_owned_percent_value
+	divide = 100
+	max = 1
+}
+
+
+
+
+
+
+

@@ -1,0 +1,1283 @@
+﻿namespace = roman_persian_struggle
+
+### SYSTEM EVENTS #################################################################
+## # Parameter Events
+## # Other Events
+### EVENT LIST ####################################################################
+###################################################################################
+
+# Setting AI Intent
+roman_persian_struggle.0003 = {
+	hidden = yes
+	scope = none
+	scope = struggle
+
+	trigger = { # Should not need this, but, redundancy check! -h
+		exists = struggle:roman_persian_struggle
+		struggle:roman_persian_struggle = { any_involved_ruler = { count > 0 } } # For when the conflict is ongoing but nobody is left to fight it
+	}
+
+	immediate = {
+		# prepare needed variables; they will be destroyed at the end of the immediate
+		set_variable = {
+			name = agents_for_escalation
+			value = 0
+		}
+		set_variable = {
+			name = agents_for_deescalation
+			value = 0
+		}
+
+		# Go through the characters to distribute them between the potential transitions
+		struggle:roman_persian_struggle = {
+			every_involved_ruler = {
+				limit = { is_alive = yes }
+				#######################
+				# Play cue track
+				######################
+				if = {
+					limit = { is_ai = no }
+					play_music_cue = "mx_Struggle_Opening"
+				}
+
+				#######################
+				# Check existing flags
+				######################
+				if = {
+					limit = { has_character_flag = agenda_towards_escalation }
+					change_variable = {
+						name = agents_for_escalation
+						add = 1
+					}
+				}
+				else_if = {
+					limit = { has_character_flag = agenda_towards_deescalation }
+					change_variable = {
+						name = agents_for_deescalation
+						add = 1
+					}
+				}
+				else = { # Set a flag
+				
+					#############################
+					# Current Phase: COLD WAR
+					#############################
+					if = {
+						limit = { root = { is_struggle_phase = struggle_TFE_roman_persian_phase_cold_war } }
+						random_list = {
+							# Working towards contention
+							# It should be for characters looking for direct conflicts and domination, with the will and ability to expand their realms
+							100 = {
+								# Odds modifiers
+								roman_persian_struggle_set_ai_agenda_common_modifiers = {
+									PHASE = contention
+									INTENT = escalation
+								}
+
+								# Apply effects
+								roman_persian_struggle_apply_ai_agenda_effect = {
+									INTENT = escalation
+								}
+							}
+						}
+					}
+
+					#############################
+					# Current Phase: TOTAL WAR
+					#############################
+					if = {
+						limit = { root = { is_struggle_phase = struggle_TFE_roman_persian_phase_total_war } }
+						random_list = {
+							# Working towards contention
+							# It should be for characters looking for direct conflicts and domination, with the will and ability to expand their realms
+							100 = {
+								# Odds modifiers
+								roman_persian_struggle_set_ai_agenda_common_modifiers = {
+									PHASE = compromise
+									INTENT = contention
+								}
+
+								# Apply effects
+								roman_persian_struggle_apply_ai_agenda_effect = {
+									INTENT = escalation
+								}
+							}
+						}
+					}
+					#############################
+					# Current Phase: Contention
+					#############################
+					if = {
+						limit = { root = { is_struggle_phase = struggle_TFE_roman_persian_phase_contention } }
+						random_list = {
+							# Working towards total war
+							# It should be for characters looking for direct conflicts and domination, with the will and ability to expand their realms
+							100 = {
+								# Odds modifiers
+								roman_persian_struggle_set_ai_agenda_common_modifiers = {
+									PHASE = total_war
+									INTENT = escalation
+								}
+
+								# Apply effects
+								roman_persian_struggle_apply_ai_agenda_effect = {
+									INTENT = escalation
+								}
+							}
+							# Working towards cold war
+							100 = {
+								# Odds modifiers
+								roman_persian_struggle_set_ai_agenda_common_modifiers = {
+									PHASE = cold_war
+									INTENT = deescalation
+								}
+
+								# Apply effects
+								roman_persian_struggle_apply_ai_agenda_effect = {
+									INTENT = deescalation
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		# Clean variables
+		remove_variable = agents_for_escalation
+		remove_variable = agents_for_deescalation
+	}
+}
+
+# Set AI Intent on join
+roman_persian_struggle.0004 = {
+	hidden = yes
+	scope = none
+
+	immediate = {
+		set_variable = {
+			name = agents_for_escalation
+			value = 0
+		}
+		set_variable = {
+			name = agents_for_deescalation
+			value = 0
+		}
+
+		############################
+		# Update the variables
+		############################
+		every_character_struggle = {
+			every_involved_ruler = {
+				limit = { is_alive = yes }
+				if = {
+					limit = { has_character_flag = agenda_towards_escalation }
+					root = {
+						change_variable = {
+							name = agents_for_escalation
+							add = 1
+						}
+					}
+				}
+				else_if = {
+					limit = { has_character_flag = agenda_towards_deescalation }
+					root = {
+						change_variable = {
+							name = agents_for_deescalation
+							add = 1
+						}
+					}
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				NOR = {
+					has_character_flag = agenda_towards_escalation
+					has_character_flag = agenda_towards_deescalation
+				}
+			}
+
+			#############################
+			# Current Phase: COLD WAR
+			#############################
+			if = {
+				limit = { any_character_struggle = { AND = { is_struggle_type = roman_persian_struggle is_struggle_phase = struggle_TFE_roman_persian_phase_cold_war } } }
+				random_list = {
+					# Working towards contention
+					# It should be for characters looking for direct conflicts and domination, with the will and ability to expand their realms
+					100 = {
+						# Odds modifiers
+						roman_persian_struggle_set_ai_agenda_common_modifiers = {
+							PHASE = contention
+							INTENT = escalation
+						}
+
+						# Apply effects
+						roman_persian_struggle_apply_ai_agenda_effect = {
+							INTENT = escalation
+						}
+					}
+				}
+			}
+
+			#############################
+			# Current Phase: TOTAL WAR
+			#############################
+			if = {
+				limit = { any_character_struggle = { AND = { is_struggle_type = roman_persian_struggle is_struggle_phase = struggle_TFE_roman_persian_phase_total_war } } }
+				random_list = {
+					# Working towards contention
+					# It should be for characters looking for direct conflicts and domination, with the will and ability to expand their realms
+					100 = {
+						# Odds modifiers
+						roman_persian_struggle_set_ai_agenda_common_modifiers = {
+							PHASE = compromise
+							INTENT = contention
+						}
+
+						# Apply effects
+						roman_persian_struggle_apply_ai_agenda_effect = {
+							INTENT = escalation
+						}
+					}
+				}
+			}
+			#############################
+			# Current Phase: Contention
+			#############################
+			if = {
+				limit = { any_character_struggle = { AND = { is_struggle_type = roman_persian_struggle is_struggle_phase = struggle_TFE_roman_persian_phase_contention } } }
+				random_list = {
+					# Working towards total war
+					# It should be for characters looking for direct conflicts and domination, with the will and ability to expand their realms
+					100 = {
+						# Odds modifiers
+						roman_persian_struggle_set_ai_agenda_common_modifiers = {
+							PHASE = total_war
+							INTENT = escalation
+						}
+
+						# Apply effects
+						roman_persian_struggle_apply_ai_agenda_effect = {
+							INTENT = escalation
+						}
+					}
+					# Working towards cold war
+					100 = {
+						# Odds modifiers
+						roman_persian_struggle_set_ai_agenda_common_modifiers = {
+							PHASE = cold_war
+							INTENT = deescalation
+						}
+
+						# Apply effects
+						roman_persian_struggle_apply_ai_agenda_effect = {
+							INTENT = deescalation
+						}
+					}
+				}
+			}
+		}
+
+		# Clean variables
+		remove_variable = agents_for_escalation
+		remove_variable = agents_for_deescalation
+	}
+}
+
+###################################
+# Romano-Eranian Struggle Intro Events
+# 0501 - 599
+###################################
+roman_persian_struggle.0501 = { # Fullscreen Intro Event
+	type = character_event
+	window = fullscreen_event
+	title = roman_persian_struggle.0501.t
+	desc = {
+		desc = roman_persian_struggle.0501.desc
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					any_character_struggle = {
+						involvement = involved
+						is_struggle_type = roman_persian_struggle
+					}
+				}
+				desc = fp2_struggle.0501.desc.involved
+			}
+			triggered_desc = {
+				trigger = {
+					any_character_struggle = {
+						involvement = interloper
+						is_struggle_type = roman_persian_struggle
+					}
+				}
+				desc = fp2_struggle.0501.desc.interloper
+			}
+		}
+	}
+	theme = realm
+	trigger = { # we need to prevent this from firing for all players when a new player joins in MP
+		is_ai = no
+		NOT = { has_character_flag = roman_persian_struggle_intro_event_flag }
+		tfe_character_any_involvement_roman_persian_struggle_trigger = yes
+ 	}
+	override_background = { reference = TFE_struggle_bg_med_palace }
+	override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_animate" }
+
+	widgets = {
+		widget = {
+ 			gui = "event_window_widget_struggle_info"
+ 			container = "dynamic_content_widget"
+ 			controller = struggle_info
+ 			setup_scope = { struggle:roman_persian_struggle = { save_scope_as = struggle } }
+		}
+	}
+	immediate = {
+		play_music_cue = "mood_BornInThePurple"
+		add_character_flag = roman_persian_struggle_intro_event_flag
+		save_scope_value_as = {
+			name = start
+			value = yes
+		}
+	}
+	option = {
+		name = roman_persian_struggle.0501.a
+		clicksound = "event:/DLC/FP2/SFX/UI/fp2_struggle_start_select"
+	}
+}
+
+
+
+
+
+
+###################################
+# Roman Persian Struggle Ending Events
+# 1000 - 1099
+###################################
+
+# Roman Victory Ending
+roman_persian_struggle.1000 = { 
+	type = character_event
+	window = fullscreen_event
+	title = roman_persian_struggle.1000.t
+	desc = roman_persian_struggle.1000.desc
+	theme = court
+	override_background = { reference = TFE_struggle_bg_med_palace }
+	override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_end_animate" }
+
+	immediate = {
+
+		save_scope_as = struggle_ender
+
+		# Add all involved cultures with counties to a list, for marriage and holy war checks
+		TFE_roman_persian_struggle_ending_culture_list_effect = yes
+
+		play_music_cue = "mx_Struggle_ending_hostility"
+
+		dynasty = { add_dynasty_prestige = 10000 }
+		give_nickname = nick_the_great
+		if = {
+			limit = {
+				has_title = title:e_roman_empire
+			}
+			custom_tooltip = struggle_roman_persian_total_victory_rome_de_jure_tt
+		}
+		else_if = {
+			limit = {
+				has_title = title:e_byzantium
+			}				
+			custom_tooltip = struggle_roman_persian_total_victory_ere_de_jure_tt
+		}
+		else_if = {
+			limit = {
+				has_title = title:e_western_roman_empire
+			}				
+			custom_tooltip = struggle_roman_persian_total_victory_wre_de_jure_tt
+		}
+		hidden_effect = {
+			TFE_roman_persian_struggle_de_jure_change_roman_effect = yes
+		}
+		
+	}
+
+	# War victory
+	option = {
+		name = roman_persian_struggle.1000.a
+		house = {
+			add_house_modifier = {
+				modifier = struggle_roman_persian_house_war_modifier
+			}
+		}		
+		stress_impact = {
+			compassionate = minor_stress_impact_gain
+			forgiving = minor_stress_impact_gain
+		}
+		set_global_variable = {
+			name = TFE_struggle_roman_persian_war_victory
+			value = yes
+			days = 15 # Clear out eventually, just in case
+		}
+	}
+
+	# Culture victory
+	option = {
+		name = roman_persian_struggle.1000.b
+		house = {
+			add_house_modifier = {
+				modifier = struggle_roman_persian_house_culture_modifier
+			}
+		}
+		stress_impact = {
+			brave = minor_stress_impact_gain
+			wrathful = minor_stress_impact_gain
+		}
+		set_global_variable = {
+			name = TFE_struggle_roman_persian_culture_victory
+			value = yes
+			days = 15 # Clear out eventually, just in case
+		}
+	}
+
+	# Political victory
+	option = {
+		name = roman_persian_struggle.1000.c
+		house = {
+			add_house_modifier = {
+				modifier = struggle_roman_persian_house_politics_modifier
+			}
+		}
+		stress_impact = {
+			arrogant = minor_stress_impact_gain
+			trusting = minor_stress_impact_gain
+		}
+		set_global_variable = {
+			name = TFE_struggle_roman_persian_politics_victory
+			value = yes
+			days = 15 # Clear out eventually, just in case
+		}
+	}
+
+	after = {	
+		if = {
+			limit = {
+				exists = title:e_persia
+			}
+			destroy_title = title:e_persia
+			set_global_variable = {
+				name = TFE_struggle_roman_persian_war_persia_destroyed
+				value = yes
+				days = 15 # Clear out eventually, just in case
+			}
+		}
+		# End Struggle
+		struggle:roman_persian_struggle = {
+			end_struggle = struggle_roman_persian_ending_roman_decision
+		}
+		# Notify
+		every_player = {
+			# limit = {
+			# 	NOT = { this = root }
+			# }
+			trigger_event = roman_persian_struggle.1001
+		}
+	}
+}
+
+
+
+
+# Roman Victory notification
+roman_persian_struggle.1001 = { # Fullscreen Intro Event
+	type = character_event
+	window = fullscreen_event
+	title = roman_persian_struggle.1001.t
+	desc = {
+		desc = roman_persian_struggle.1001.desc
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					has_global_variable = TFE_struggle_roman_persian_war_victory
+				}
+				desc = roman_persian_struggle.1001.desc.closing.war
+			}
+			triggered_desc = {
+				trigger = {
+					has_global_variable = TFE_struggle_roman_persian_culture_victory
+				}
+				desc = roman_persian_struggle.1001.desc.closing.culture
+			}
+			triggered_desc = {
+				trigger = {
+					has_global_variable = TFE_struggle_roman_persian_politics_victory
+				}
+				desc = roman_persian_struggle.1001.desc.closing.politics
+			}
+		}
+		desc = roman_persian_struggle.1001.desc.closing
+	}
+	theme = court
+	override_background = { reference = TFE_struggle_bg_med_palace }
+	override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_animate" }
+
+	immediate = {
+		play_music_cue = "mx_Struggle_ending_hostility"	
+		if = {
+			limit = {
+				has_global_variable = TFE_struggle_roman_persian_war_persia_destroyed
+			}
+			custom_tooltip = roman_persian_struggle_ending_persia_destroyed
+		}
+		scope:struggle_ender = {
+			show_as_tooltip = {
+				if = {
+					limit = {
+						has_global_variable = TFE_struggle_roman_persian_war_victory
+					}
+					house = {
+						add_house_modifier = {
+							modifier = struggle_roman_persian_house_war_modifier
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_global_variable = TFE_struggle_roman_persian_culture_victory
+					}
+					house = {
+						add_house_modifier = {
+							modifier = struggle_roman_persian_house_culture_modifier
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_global_variable = TFE_struggle_roman_persian_politics_victory
+					}
+					house = {
+						add_house_modifier = {
+							modifier = struggle_roman_persian_house_politics_modifier
+						}
+					}
+				}
+				if = {
+					limit = {
+						exists = title:e_roman_empire
+					}
+					custom_tooltip = struggle_roman_persian_total_victory_rome_de_jure_tt
+				}
+				else_if = {
+					limit = {
+						exists = title:e_byzantium
+					}				
+					custom_tooltip = struggle_roman_persian_total_victory_ere_de_jure_tt
+				}
+				else_if = {
+					limit = {
+						exists = title:e_western_roman_empire
+					}				
+					custom_tooltip = struggle_roman_persian_total_victory_wre_de_jure_tt
+				}
+			}			
+		}
+	}
+	option = {
+		name = roman_persian_struggle.1001.a
+	}
+}
+
+
+
+
+
+
+# Persian Victory Ending
+roman_persian_struggle.1002 = { 
+	type = character_event
+	window = fullscreen_event
+	title = roman_persian_struggle.1002.t
+	desc = roman_persian_struggle.1002.desc
+	theme = court
+	override_background = { reference = TFE_struggle_bg_med_palace }
+	override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_end_animate" }
+
+	immediate = {
+
+		save_scope_as = struggle_ender
+
+		# Add all involved cultures with counties to a list, for marriage and holy war checks
+		TFE_roman_persian_struggle_ending_culture_list_effect = yes
+
+		play_music_cue = "mx_Struggle_ending_hostility"
+
+		dynasty = { add_dynasty_prestige = 10020 }
+		give_nickname = nick_the_great
+
+		custom_tooltip = struggle_roman_persian_total_victory_persian_de_jure_tt
+
+		hidden_effect = {
+			TFE_roman_persian_struggle_de_jure_change_persian_effect = yes			
+		}
+	}
+
+	# War victory
+	option = {
+		name = roman_persian_struggle.1002.a
+		house = {
+			add_house_modifier = {
+				modifier = struggle_roman_persian_house_war_modifier
+			}
+		}		
+		stress_impact = {
+			compassionate = minor_stress_impact_gain
+			forgiving = minor_stress_impact_gain
+		}
+		set_global_variable = {
+			name = TFE_struggle_roman_persian_war_victory
+			value = yes
+			days = 15 # Clear out eventually, just in case
+		}
+	}
+
+	# Culture victory
+	option = {
+		name = roman_persian_struggle.1002.b
+		house = {
+			add_house_modifier = {
+				modifier = struggle_roman_persian_house_culture_modifier
+			}
+		}
+		stress_impact = {
+			brave = minor_stress_impact_gain
+			wrathful = minor_stress_impact_gain
+		}
+		set_global_variable = {
+			name = TFE_struggle_roman_persian_culture_victory
+			value = yes
+			days = 15 # Clear out eventually, just in case
+		}
+	}
+
+	# Political victory
+	option = {
+		name = roman_persian_struggle.1002.c
+		house = {
+			add_house_modifier = {
+				modifier = struggle_roman_persian_house_politics_modifier
+			}
+		}
+		stress_impact = {
+			arrogant = minor_stress_impact_gain
+			trusting = minor_stress_impact_gain
+		}
+		set_global_variable = {
+			name = TFE_struggle_roman_persian_politics_victory
+			value = yes
+			days = 15 # Clear out eventually, just in case
+		}
+	}
+
+	after = {	
+		if = {
+			limit = {
+				exists = title:e_roman_empire
+			}
+			destroy_title = title:e_roman_empire
+			set_global_variable = {
+				name = TFE_struggle_roman_persian_war_roman_empire_destroyed
+				value = yes
+				days = 15 # Clear out eventually, just in case
+			}
+		}
+		if = {
+			limit = {
+				exists = title:e_byzantium
+			}
+			destroy_title = title:e_byzantium
+			set_global_variable = {
+				name = TFE_struggle_roman_persian_war_byzantium_destroyed
+				value = yes
+				days = 15 # Clear out eventually, just in case
+			}
+		}
+		# End Struggle
+		struggle:roman_persian_struggle = {
+			end_struggle = struggle_roman_persian_ending_roman_decision
+		}
+		# Notify
+		every_player = {
+			# limit = {
+			# 	NOT = { this = root }
+			# }
+			trigger_event = roman_persian_struggle.1003
+		}
+	}
+}
+
+
+
+
+# Persian Victory notification
+roman_persian_struggle.1003 = { # Fullscreen Intro Event
+	type = character_event
+	window = fullscreen_event
+	title = roman_persian_struggle.1003.t
+	desc = {
+		desc = roman_persian_struggle.1003.desc
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					has_global_variable = TFE_struggle_roman_persian_war_victory
+				}
+				desc = roman_persian_struggle.1003.desc.closing.war
+			}
+			triggered_desc = {
+				trigger = {
+					has_global_variable = TFE_struggle_roman_persian_culture_victory
+				}
+				desc = roman_persian_struggle.1003.desc.closing.culture
+			}
+			triggered_desc = {
+				trigger = {
+					has_global_variable = TFE_struggle_roman_persian_politics_victory
+				}
+				desc = roman_persian_struggle.1003.desc.closing.politics
+			}
+		}
+		desc = roman_persian_struggle.1003.desc.closing
+	}
+	theme = court
+	override_background = { reference = TFE_struggle_bg_med_palace }
+	override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_animate" }
+
+	immediate = {
+		play_music_cue = "mx_Struggle_ending_hostility"	
+		if = {
+			limit = {
+				has_global_variable = TFE_struggle_roman_persian_war_roman_empire_destroyed
+			}
+			custom_tooltip = roman_persian_struggle_ending_roman_empire_destroyed
+		}
+		if = {
+			limit = {
+				has_global_variable = TFE_struggle_roman_persian_war_byzantium_destroyed
+			}
+			custom_tooltip = roman_persian_struggle_ending_byzantium_destroyed
+		}
+		scope:struggle_ender = {
+			show_as_tooltip = {
+				custom_tooltip = struggle_roman_persian_total_victory_persian_de_jure_tt
+				if = {
+					limit = {
+						has_global_variable = TFE_struggle_roman_persian_war_victory
+					}
+					house = {
+						add_house_modifier = {
+							modifier = struggle_roman_persian_house_war_modifier
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_global_variable = TFE_struggle_roman_persian_culture_victory
+					}
+					house = {
+						add_house_modifier = {
+							modifier = struggle_roman_persian_house_culture_modifier
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_global_variable = TFE_struggle_roman_persian_politics_victory
+					}
+					house = {
+						add_house_modifier = {
+							modifier = struggle_roman_persian_house_politics_modifier
+						}
+					}
+				}
+			}			
+		}
+	}
+	option = {
+		name = roman_persian_struggle.1003.a
+	}
+}
+
+
+
+
+# Regional Victory Ending
+roman_persian_struggle.1004 = { 
+	type = character_event
+	window = fullscreen_event
+	title = roman_persian_struggle.1004.t
+	desc = roman_persian_struggle.1004.desc
+	theme = court
+	override_background = { reference = TFE_struggle_bg_med_palace }
+	override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_end_animate" }
+
+	immediate = {
+
+		# Add all involved cultures with counties to a list, for marriage and holy war checks
+		TFE_roman_persian_struggle_ending_culture_list_effect = yes
+
+		play_music_cue = "mx_Struggle_ending_hostility"
+
+		dynasty = { add_dynasty_prestige = 10040 }
+		give_nickname = nick_the_great
+
+		save_scope_as = struggle_ender
+
+		if = {
+			limit = {
+				scope:struggle_ender = {
+					completely_controls = title:d_thrace
+					completely_controls = title:d_baghdad
+				}
+			}
+			custom_tooltip = struggle_roman_persian_regional_victory_all_de_jure_tt
+		}
+		else_if = {
+			limit = {
+				scope:struggle_ender = {
+					completely_controls = title:d_thrace
+				}
+			}
+			custom_tooltip = struggle_roman_persian_regional_victory_rome_only_de_jure_tt
+		}
+		else_if = {
+			limit = {
+				scope:struggle_ender = {
+					completely_controls = title:d_baghdad
+				}
+			}
+			custom_tooltip = struggle_roman_persian_regional_victory_persia_only_de_jure_tt
+		}
+		else = {
+			custom_tooltip = struggle_roman_persian_regional_victory_none_de_jure_tt
+		}
+
+		hidden_effect = {
+			TFE_roman_persian_struggle_de_jure_change_regional_effect = yes			
+		}
+	}
+
+	# War victory
+	option = {
+		name = roman_persian_struggle.1004.a
+		house = {
+			add_house_modifier = {
+				modifier = struggle_roman_persian_house_war_modifier
+			}
+		}		
+		stress_impact = {
+			compassionate = minor_stress_impact_gain
+			forgiving = minor_stress_impact_gain
+		}
+		set_global_variable = {
+			name = TFE_struggle_roman_persian_war_victory
+			value = yes
+			days = 15 # Clear out eventually, just in case
+		}
+	}
+
+	# Culture victory
+	option = {
+		name = roman_persian_struggle.1004.b
+		house = {
+			add_house_modifier = {
+				modifier = struggle_roman_persian_house_culture_modifier
+			}
+		}
+		stress_impact = {
+			brave = minor_stress_impact_gain
+			wrathful = minor_stress_impact_gain
+		}
+		set_global_variable = {
+			name = TFE_struggle_roman_persian_culture_victory
+			value = yes
+			days = 15 # Clear out eventually, just in case
+		}
+	}
+
+	# Political victory
+	option = {
+		name = roman_persian_struggle.1004.c
+		house = {
+			add_house_modifier = {
+				modifier = struggle_roman_persian_house_politics_modifier
+			}
+		}
+		stress_impact = {
+			arrogant = minor_stress_impact_gain
+			trusting = minor_stress_impact_gain
+		}
+		set_global_variable = {
+			name = TFE_struggle_roman_persian_politics_victory
+			value = yes
+			days = 15 # Clear out eventually, just in case
+		}
+	}
+
+	after = {
+		if = {
+			limit = {
+				exists = title:e_persia
+			}
+			destroy_title = title:e_persia
+			set_global_variable = {
+				name = TFE_struggle_roman_persian_war_persia_destroyed
+				value = yes
+				days = 15 # Clear out eventually, just in case
+			}
+		}
+		if = {
+			limit = {
+				completely_controls = title:d_thrace # Constantinople
+				exists = title:e_roman_empire
+			}
+			destroy_title = title:e_roman_empire
+			set_global_variable = {
+				name = TFE_struggle_roman_persian_war_roman_empire_destroyed
+				value = yes
+				days = 15 # Clear out eventually, just in case
+			}
+		}
+		if = {
+			limit = {
+				completely_controls = title:d_thrace # Constantinople
+				exists = title:e_byzantium
+			}
+			destroy_title = title:e_byzantium
+			set_global_variable = {
+				name = TFE_struggle_roman_persian_war_byzantium_destroyed
+				value = yes
+				days = 15 # Clear out eventually, just in case
+			}
+		}
+		# End Struggle
+		struggle:roman_persian_struggle = {
+			end_struggle = struggle_roman_persian_ending_roman_decision
+		}
+		# Notify
+		every_player = {
+			# limit = {
+			# 	NOT = { this = root }
+			# }
+			trigger_event = roman_persian_struggle.1005
+		}
+	}
+}
+
+
+
+
+# Regional Victory notification
+roman_persian_struggle.1005 = { # Fullscreen Intro Event
+	type = character_event
+	window = fullscreen_event
+	title = roman_persian_struggle.1005.t
+	desc = {
+		desc = roman_persian_struggle.1005.desc
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					has_global_variable = TFE_struggle_roman_persian_war_victory
+				}
+				desc = roman_persian_struggle.1005.desc.closing.war
+			}
+			triggered_desc = {
+				trigger = {
+					has_global_variable = TFE_struggle_roman_persian_culture_victory
+				}
+				desc = roman_persian_struggle.1005.desc.closing.culture
+			}
+			triggered_desc = {
+				trigger = {
+					has_global_variable = TFE_struggle_roman_persian_politics_victory
+				}
+				desc = roman_persian_struggle.1005.desc.closing.politics
+			}
+		}
+		desc = roman_persian_struggle.1005.desc.closing
+	}
+	theme = court
+	override_background = { reference = TFE_struggle_bg_med_palace }
+	override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_animate" }
+
+	immediate = {
+		play_music_cue = "mx_Struggle_ending_hostility"	
+		if = {
+			limit = {
+				has_global_variable = TFE_struggle_roman_persian_war_persia_destroyed
+			}
+			custom_tooltip = roman_persian_struggle_ending_persia_destroyed
+		}
+		if = {
+			limit = {
+				has_global_variable = TFE_struggle_roman_persian_war_roman_empire_destroyed
+			}
+			custom_tooltip = roman_persian_struggle_ending_roman_empire_destroyed
+		}
+		if = {
+			limit = {
+				has_global_variable = TFE_struggle_roman_persian_war_byzantium_destroyed
+			}
+			custom_tooltip = roman_persian_struggle_ending_byzantium_destroyed
+		}
+		scope:struggle_ender = {
+			show_as_tooltip = {
+				if = {
+					limit = {
+						scope:struggle_ender = {
+							completely_controls = title:d_thrace
+							completely_controls = title:d_baghdad
+						}
+					}
+					custom_tooltip = struggle_roman_persian_regional_victory_all_de_jure_tt
+				}
+				else_if = {
+					limit = {
+						scope:struggle_ender = {
+							completely_controls = title:d_thrace
+						}
+					}
+					custom_tooltip = struggle_roman_persian_regional_victory_rome_only_de_jure_tt
+				}
+				else_if = {
+					limit = {
+						scope:struggle_ender = {
+							completely_controls = title:d_baghdad
+						}
+					}
+					custom_tooltip = struggle_roman_persian_regional_victory_persia_only_de_jure_tt
+				}
+				else = {
+					custom_tooltip = struggle_roman_persian_regional_victory_none_de_jure_tt
+				}
+				if = {
+					limit = {
+						has_global_variable = TFE_struggle_roman_persian_war_victory
+					}
+					house = {
+						add_house_modifier = {
+							modifier = struggle_roman_persian_house_war_modifier
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_global_variable = TFE_struggle_roman_persian_culture_victory
+					}
+					house = {
+						add_house_modifier = {
+							modifier = struggle_roman_persian_house_culture_modifier
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_global_variable = TFE_struggle_roman_persian_politics_victory
+					}
+					house = {
+						add_house_modifier = {
+							modifier = struggle_roman_persian_house_politics_modifier
+						}
+					}
+				}
+			}			
+		}
+	}
+	option = {
+		name = roman_persian_struggle.1005.a
+	}
+}
+
+
+
+
+
+# Outsider Victory Ending
+roman_persian_struggle.1006 = { 
+	type = character_event
+	window = fullscreen_event
+	title = roman_persian_struggle.1006.t
+	desc = roman_persian_struggle.1006.desc
+	theme = court
+	override_background = { reference = TFE_struggle_bg_med_palace }
+	override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_end_animate" }
+
+	immediate = {
+
+		# Add all involved cultures with counties to a list, for marriage and holy war checks
+		TFE_roman_persian_struggle_ending_culture_list_effect = yes
+
+		play_music_cue = "mx_Struggle_ending_hostility"
+
+		dynasty = { add_dynasty_prestige = 5000 }
+
+		save_scope_as = struggle_ender
+
+		if = {
+			limit = {
+				scope:struggle_ender = {
+					completely_controls = title:d_thrace
+					completely_controls = title:d_baghdad
+				}
+			}
+			custom_tooltip = struggle_roman_persian_regional_victory_all_de_jure_tt
+		}
+		else_if = {
+			limit = {
+				scope:struggle_ender = {
+					completely_controls = title:d_thrace
+				}
+			}
+			custom_tooltip = struggle_roman_persian_regional_victory_rome_only_de_jure_tt
+		}
+		else_if = {
+			limit = {
+				scope:struggle_ender = {
+					completely_controls = title:d_baghdad
+				}
+			}
+			custom_tooltip = struggle_roman_persian_regional_victory_persia_only_de_jure_tt
+		}
+		else = {
+			custom_tooltip = struggle_roman_persian_regional_victory_none_de_jure_tt
+		}
+		hidden_effect = {
+			TFE_roman_persian_struggle_de_jure_change_regional_effect = yes			
+		}
+	}
+
+	# War victory
+	option = {
+		name = roman_persian_struggle.1006.a
+	}
+
+	after = {
+		if = {
+			limit = {
+				exists = title:e_persia
+			}
+			destroy_title = title:e_persia
+			set_global_variable = {
+				name = TFE_struggle_roman_persian_war_persia_destroyed
+				value = yes
+				days = 15 # Clear out eventually, just in case
+			}
+		}
+		if = {
+			limit = {
+				completely_controls = title:d_thrace # Constantinople
+				exists = title:e_roman_empire
+			}
+			destroy_title = title:e_roman_empire
+			set_global_variable = {
+				name = TFE_struggle_roman_persian_war_roman_empire_destroyed
+				value = yes
+				days = 15 # Clear out eventually, just in case
+			}
+		}
+		if = {
+			limit = {
+				completely_controls = title:d_thrace # Constantinople
+				exists = title:e_byzantium
+			}
+			destroy_title = title:e_byzantium
+			set_global_variable = {
+				name = TFE_struggle_roman_persian_war_byzantium_destroyed
+				value = yes
+				days = 15 # Clear out eventually, just in case
+			}
+		}
+		# End Struggle
+		struggle:roman_persian_struggle = {
+			end_struggle = struggle_roman_persian_ending_outsider_decision
+		}
+		# Notify
+		every_player = {
+			# limit = {
+			# 	NOT = { this = root }
+			# }
+			trigger_event = roman_persian_struggle.1007
+		}
+	}
+}
+
+
+
+
+# Outsider Victory notification
+roman_persian_struggle.1007 = { # Fullscreen Intro Event
+	type = character_event
+	window = fullscreen_event
+	title = roman_persian_struggle.1007.t
+	desc = roman_persian_struggle.1007.desc
+	theme = court
+	override_background = { reference = TFE_struggle_bg_med_palace }
+	override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_animate" }
+
+	immediate = {
+		play_music_cue = "mx_Struggle_ending_hostility"	
+		if = {
+			limit = {
+				has_global_variable = TFE_struggle_roman_persian_war_persia_destroyed
+			}
+			custom_tooltip = roman_persian_struggle_ending_persia_destroyed
+		}
+		if = {
+			limit = {
+				has_global_variable = TFE_struggle_roman_persian_war_roman_empire_destroyed
+			}
+			custom_tooltip = roman_persian_struggle_ending_roman_empire_destroyed
+		}
+		if = {
+			limit = {
+				has_global_variable = TFE_struggle_roman_persian_war_byzantium_destroyed
+			}
+			custom_tooltip = roman_persian_struggle_ending_byzantium_destroyed
+		}
+		if = {
+			limit = {
+				scope:struggle_ender = {
+					completely_controls = title:d_thrace
+					completely_controls = title:d_baghdad
+				}
+			}
+			custom_tooltip = struggle_roman_persian_regional_victory_all_de_jure_tt
+		}
+		else_if = {
+			limit = {
+				scope:struggle_ender = {
+					completely_controls = title:d_thrace
+				}
+			}
+			custom_tooltip = struggle_roman_persian_regional_victory_rome_only_de_jure_tt
+		}
+		else_if = {
+			limit = {
+				scope:struggle_ender = {
+					completely_controls = title:d_baghdad
+				}
+			}
+			custom_tooltip = struggle_roman_persian_regional_victory_persia_only_de_jure_tt
+		}
+		else = {
+			custom_tooltip = struggle_roman_persian_regional_victory_none_de_jure_tt
+		}
+	}
+	option = {
+		name = roman_persian_struggle.1007.a
+	}
+}
+
+
+
+

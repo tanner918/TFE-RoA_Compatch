@@ -1,0 +1,40 @@
+
+
+
+
+#################
+#	Meshes	#
+#################
+
+##### Unique -----------------------------------------
+
+
+pdxmesh = {
+	name = "golden_diadem_mesh"
+	file = "golden_diadem.mesh"
+
+	meshsettings = {
+		name = "Plane.001"
+		index = 0
+		texture_diffuse = "GoldenDiadem_diffuse.dds"
+		texture_normal = "GoldenDiadem_normal.dds"
+		texture_specular = "GoldenDiadem_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+}
+
+
+
+
+#################
+#	Entities	#
+#################
+
+
+
+##### Unique -----------------------------------------
+entity = {
+	name = "golden_diadem_entity"
+	pdxmesh = "golden_diadem_mesh"
+}

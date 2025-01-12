@@ -1,0 +1,844 @@
+﻿
+k_croatia = {
+	361.1.1 = { change_development_level = 4 }
+	476.1.1 = { change_development_level = 5 }
+	532.1.1 = { change_development_level = 6 }
+	632.1.1 = { change_development_level = 7 }
+	768.1.1 = { change_development_level = 5 }
+	300.1.1 = {
+		name = d_dalmatia
+	}
+	476.1.1 = {
+		holder = nepos_02
+		de_jure_liege = e_italy
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	480.5.9 = {
+		holder = 992036 # Ovida
+	}
+	532.1.1 = {
+		#holder = dalmatia_23
+		holder = 992023
+		#liege = e_italy
+		government = feudal_government
+		#succession_laws = { scandinavian_elective_succession_law male_only_law }
+		succession_laws = { gothic_elective_succession_law male_only_law }
+	}
+}
+
+
+d_dalmatia = {
+	361.1.1 = { change_development_level = 3 }
+	476.1.1 = { change_development_level = 4 }
+	532.1.1 = { change_development_level = 5 }
+	632.1.1 = { change_development_level = 6 }
+	768.1.1 = { change_development_level = 7 }
+	
+	#Roman
+	361.1.1 = {
+		holder = dalmatia_01
+		liege = k_pannonia
+		de_jure_liege = k_pannonia
+	}
+	465.8.1 = {
+		de_jure_liege = k_croatia
+	}
+	454.1.1 = {
+		holder = nepos_05
+	}
+	465.8.1 = {
+		holder = nepos_02
+	}
+	532.1.1 = {
+		#holder = dalmatia_23
+		holder = dalmatia_17
+		liege = k_croatia
+		government = feudal_government
+	}
+	
+	536.7.1 = {
+		liege = "e_byzantium"
+	}
+	632.1.1 = {
+		holder = pula_01
+		liege = e_byzantium
+		government = feudal_government
+	}
+	750.1.1 = {
+		holder = 145849
+	}
+}
+
+
+c_zadar = {
+	361.1.1 = { change_development_level = 5 }
+	#Roman
+	361.1.1 = {
+		holder = dalmatia_02
+		liege = d_dalmatia
+	}
+	465.8.1 = {
+		holder = nepos_02
+	}
+	532.1.1 = {
+		holder = dalmatia_17
+		liege = k_croatia
+		government = feudal_government
+	}
+	536.7.1 = {
+		liege = "d_dalmatia"
+	}
+	632.1.1 = {
+		holder = pula_01
+		liege = e_byzantium
+		government = feudal_government
+	}
+	750.1.1 = {
+		holder = 145849
+	}
+}
+
+
+c_knin = {
+	361.1.1 = { change_development_level = 6 }
+	#Roman
+	361.1.1 = {
+		holder = dalmatia_05
+		liege = d_dalmatia
+		de_jure_liege = d_dalmatia
+	}
+	465.8.1 = {
+		holder = nepos_02
+	}
+	532.1.1 = {
+		#holder = dalmatia_23
+		liege = k_croatia
+		government = feudal_government
+	}
+	630.1.1 = {
+		holder = croats_01
+		government = tribal_government
+	}
+	536.7.1 = {
+		liege = "d_dalmatia"
+	}
+	757.1.1 = {
+		liege = "d_croatia"
+		holder = 146008
+	}
+}
+
+
+c_cetina = {
+	361.1.1 = { change_development_level = 6 }
+	#Roman
+	361.1.1 = {
+		holder = dalmatia_01
+	}
+	465.8.1 = {
+		holder = nepos_02
+	}
+	532.1.1 = {
+		#holder = dalmatia_23
+		liege = k_croatia
+		government = feudal_government
+	}
+	630.1.1 = {
+		holder = croats_01
+		government = tribal_government
+	}
+
+	536.7.1 = {
+		liege = "d_dalmatia"
+	}
+	
+	
+	760.1.1 = {
+		holder = 145850
+	}
+}
+
+
+c_pagania = {
+	361.1.1 = { change_development_level = 5 }
+	532.1.1 = { change_development_level = 6 }
+	632.1.1 = { change_development_level = 7 }
+	768.1.1 = { change_development_level = 8 }
+	#Roman
+	361.1.1 = {
+		holder = dalmatia_01
+		de_jure_liege = d_dalmatia
+	}
+	395.1.1 = {
+		holder = illyro_roman_01
+		liege = d_dalmatia
+	}
+	465.8.1 = {
+		holder = nepos_02
+		de_jure_liege = d_usora
+	}
+	532.1.1 = {
+		#holder = dalmatia_23
+		liege = k_croatia
+		government = feudal_government
+		holder = dalmatia_30
+	}
+	630.1.1 = {
+		holder = dalmatia_24
+		government = city_state_government
+	}
+	760.1.1 = {
+		holder = dalmatia_29
+	}
+}
+
+
+d_croatia = {
+	630.1.1 = {
+		holder = croats_01
+		government = tribal_government
+		reset_name = yes
+	}
+	745.1.1 = {
+		holder = 146005
+	}
+}
+
+
+c_gacka = {
+	361.1.1 = { change_development_level = 4 }
+	#Roman
+	361.1.1 = {
+		holder = dalmatia_02
+		liege = d_dalmatia
+		de_jure_liege = d_dalmatia
+	}
+	465.8.1 = {
+		holder = dalmatia_09
+		liege = d_dalmatia
+		de_jure_liege = d_croatia
+	}
+	532.1.1 = {
+		holder = 992113
+		liege = k_croatia
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = roman_government
+				}
+			}
+		}
+	}
+	630.1.1 = {
+		holder = croats_01
+		government = tribal_government
+	}
+	536.7.1 = {
+		liege = "d_croatia"
+	}
+	745.1.1 = {
+		holder = 146005
+	}
+}
+
+
+c_lika = {
+	361.1.1 = { change_development_level = 4 }
+	#Roman
+	361.1.1 = {
+		holder = dalmatia_03
+		liege = d_dalmatia
+		de_jure_liege = d_dalmatia
+	}
+	465.8.1 = {
+		holder = dalmatia_10
+		liege = d_dalmatia
+		de_jure_liege = d_croatia
+	}
+	532.1.1 = {
+		holder = dalmatia_17
+		liege = k_croatia
+		government = feudal_government
+	}
+	630.1.1 = {
+		holder = croats_01
+		government = tribal_government
+	}
+	536.7.1 = {
+		liege = "d_dalmatia"
+	}
+	745.1.1 = {
+		holder = 146005
+	}
+}
+
+
+c_cherso = {
+	361.1.1 = { change_development_level = 4 }
+	476.1.1 = { change_development_level = 5 }
+	532.1.1 = { change_development_level = 6 }
+	632.1.1 = { change_development_level = 7 }
+	768.1.1 = { change_development_level = 8 }
+	#Roman
+	361.1.1 = {
+		holder = dalmatia_02
+		liege = d_dalmatia
+		de_jure_liege = d_dalmatia
+	}
+	465.8.1 = {
+		holder = dalmatia_09
+		liege = d_dalmatia
+		de_jure_liege = d_croatia
+	}
+	532.1.1 = {
+		holder = 992113
+		liege = k_croatia
+		government = feudal_government
+	}
+	536.7.1 = {
+		liege = "d_dalmatia"
+	}
+	632.1.1 = {
+		holder = pula_01
+		liege = e_byzantium
+		government = feudal_government
+	}
+	750.1.1 = {
+		holder = 145849
+	}
+}
+
+
+c_pset = {
+	#Roman
+	361.1.1 = {
+		holder = dalmatia_03
+		liege = d_dalmatia
+		de_jure_liege = d_dalmatia
+	}
+	465.8.1 = {
+		holder = dalmatia_10
+		liege = d_dalmatia
+		de_jure_liege = d_croatia
+	}
+	532.1.1 = {
+		holder = dalmatia_17
+		liege = k_croatia
+		government = feudal_government
+	}
+	630.1.1 = {
+		holder = croats_04
+		liege = d_croatia
+		government = tribal_government
+	}
+	757.1.1 = {
+		liege = "d_croatia"
+		holder = 146008
+	}
+}
+
+
+c_modrus = {
+	#Roman
+	361.1.1 = {
+		holder = dalmatia_03
+		liege = d_dalmatia
+		de_jure_liege = d_dalmatia
+	}
+	465.8.1 = {
+		holder = dalmatia_10
+		liege = d_dalmatia
+		de_jure_liege = d_croatia
+	}
+	532.1.1 = {
+		holder = 992113
+		liege = k_croatia
+		government = feudal_government
+	}
+	630.1.1 = {
+		holder = croats_02
+		liege = d_croatia
+		government = tribal_government
+	}
+	745.1.1 = {
+		holder = 146005
+	}
+}
+
+
+d_slavonia = {
+	361.1.1 = { change_development_level = 4 }
+	#Roman
+	361.1.1 = {
+		holder = dalmatia_08
+		liege = k_pannonia
+		de_jure_liege = k_pannonia
+	}
+	465.8.1 = {
+		de_jure_liege = k_croatia
+	}
+	532.1.1 = {
+		liege = k_croatia
+		holder = dalmatia_19
+	}
+	760.1.1 = {
+		holder = 168292
+	}
+}
+
+
+c_zagreb = {
+	#Roman
+	361.1.1 = {
+		holder = dalmatia_08
+	}
+	465.8.1 = {
+		holder = dalmatia_15
+		de_jure_liege = d_slavonia
+		government = feudal_government
+		liege = 0
+	}
+	532.1.1 = {
+		holder = dalmatia_19
+		liege = k_croatia
+		government = feudal_government
+	}
+	630.1.1 = {
+		holder = croats_02
+		liege = d_croatia
+		government = tribal_government
+	}
+	760.1.1 = {
+		liege = "d_slavonia"
+		holder = 168292
+	}
+
+}
+
+
+c_zagorje = {
+	361.1.1 = { change_development_level = 5 }
+	#Roman
+	361.1.1 = {
+		holder = dalmatia_08
+	}
+	465.8.1 = {
+		holder = dalmatia_15
+		de_jure_liege = d_slavonia
+		government = feudal_government
+		liege = k_ostrogoths
+	}
+	532.1.1 = {
+		holder = dalmatia_19
+		liege = k_croatia
+		government = feudal_government
+	}
+	630.1.1 = {
+		holder = croats_02
+		liege = d_croatia
+		government = tribal_government
+	}
+	760.1.1 = {
+		liege = "d_slavonia"
+		holder = 168292
+	}
+	
+	768.1.1 = {
+		holder = 168294
+	}
+	
+}
+
+
+c_pozega = {
+	#Roman
+	361.1.1 = {
+		holder = dalmatia_08
+	}
+	465.8.1 = {
+		holder = dalmatia_15
+		de_jure_liege = d_slavonia
+		government = feudal_government
+		liege = k_ostrogoths
+	}
+	532.1.1 = {
+		holder = dalmatia_19
+		liege = k_croatia
+		government = feudal_government
+	}
+	630.1.1 = {
+		holder = croats_03
+		liege = d_croatia
+		government = tribal_government
+	}
+	760.1.1 = {
+		liege = "d_slavonia"
+		holder = 168292
+	}
+	
+	766.1.1 = {
+		holder = 168293
+	}
+}
+
+
+c_vodica = {
+	361.1.1 = { change_development_level = 5 }
+	#Roman
+	361.1.1 = {
+		holder = dalmatia_07
+		liege = d_slavonia
+		de_jure_liege = d_slavonia
+	}
+	465.8.1 = {
+		holder = dalmatia_11
+		de_jure_liege = d_slavonia
+		government = feudal_government
+		liege = k_croatia
+	}
+	532.1.1 = {
+		holder = dalmatia_20
+		liege = k_croatia
+		government = feudal_government
+	}
+	630.1.1 = {
+		holder = croats_03
+		liege = d_croatia
+		government = tribal_government
+	}
+	760.1.1 = {
+		liege = "d_slavonia"
+		holder = 168292
+	}
+}
+
+
+c_vrbas = {
+	#Roman
+	361.1.1 = {
+		holder = dalmatia_07
+		liege = d_slavonia
+		de_jure_liege = d_slavonia
+	}
+	465.8.1 = {
+		holder = dalmatia_11
+		de_jure_liege = d_slavonia
+		government = feudal_government
+		liege = k_ostrogoths
+	}
+	532.1.1 = {
+		holder = dalmatia_20
+		liege = k_croatia
+		government = feudal_government
+	}
+	630.1.1 = {
+		holder = croats_03
+		liege = d_croatia
+		government = tribal_government
+	}
+	760.1.1 = {
+		liege = "d_slavonia"
+		holder = 168292
+	}
+	766.1.1 = {
+		holder = 168293
+	}
+}
+
+
+d_bosna = {
+	
+	
+}
+
+
+c_rama = {
+	#Roman
+	361.1.1 = {
+		holder = dalmatia_06
+		liege = d_dalmatia
+		de_jure_liege = d_dalmatia
+	}
+	465.8.1 = {
+		holder = dalmatia_12
+		liege = d_dalmatia
+		de_jure_liege = d_bosna
+	}
+	532.1.1 = {
+		holder = dalmatia_22
+		liege = k_croatia
+		government = feudal_government
+	}
+	539.1.1 = {
+		liege = "d_rashka"
+	}
+	630.1.1 = {
+		holder = serbs_02
+		government = tribal_government
+	}
+	757.1.1 = {
+		holder = 146010
+	}
+}
+
+
+c_zavrsje = {
+	#Roman
+	361.1.1 = {
+		holder = dalmatia_05
+		liege = d_dalmatia
+		de_jure_liege = d_dalmatia
+	}
+	465.8.1 = {
+		holder = dalmatia_12
+		liege = d_dalmatia
+		de_jure_liege = d_bosna
+	}
+	532.1.1 = {
+		#holder = dalmatia_23
+		liege = k_croatia
+		government = feudal_government
+		holder = dalmatia_30
+	}
+	630.1.1 = {
+		holder = croats_04
+		liege = d_croatia
+		government = tribal_government
+	}
+	536.7.1 = {
+		liege = "d_dalmatia"
+	}
+	757.1.1 = {
+		liege = "d_croatia"
+		holder = 146008
+	}
+}
+
+
+c_donjikraji = {
+	#Roman
+	361.1.1 = {
+		holder = dalmatia_05
+		liege = d_dalmatia
+		de_jure_liege = d_dalmatia
+	}
+	465.8.1 = {
+		holder = dalmatia_12
+		liege = d_dalmatia
+		de_jure_liege = d_bosna
+	}
+	532.1.1 = {
+		holder = dalmatia_22
+		liege = k_croatia
+		government = feudal_government
+	}
+	630.1.1 = {
+		holder = croats_04
+		liege = d_croatia
+		government = tribal_government
+	}
+	757.1.1 = {
+		liege = "d_croatia"
+		holder = 146008
+	}
+}
+
+
+c_vhrbosna = {
+	#Roman
+	361.1.1 = {
+		holder = dalmatia_04
+		liege = d_dalmatia
+		de_jure_liege = d_dalmatia
+	}
+	465.8.1 = {
+		holder = dalmatia_14
+		de_jure_liege = d_bosna
+		government = feudal_government
+		liege = k_croatia
+	}
+	532.1.1 = {
+		holder = dalmatia_22
+		liege = k_croatia
+		government = feudal_government
+	}
+	539.1.1 = {
+		liege = "d_rashka"
+	}
+	630.1.1 = {
+		holder = serbs_03
+		government = tribal_government
+	}
+	757.1.1 = {
+		holder = 146010
+	}
+}
+
+
+c_zachlumia = {
+	#Roman
+	361.1.1 = {
+		holder = dalmatia_04
+		liege = d_dalmatia
+		de_jure_liege = d_dalmatia
+	}
+	465.8.1 = {
+		holder = dalmatia_13
+		liege = d_dalmatia
+		de_jure_liege = d_usora
+	}
+	532.1.1 = {
+		holder = dalmatia_16
+		liege = k_croatia
+		government = feudal_government
+	}
+	630.1.1 = {
+		holder = dalmatia_26
+		liege = 0
+	}
+	760.1.1 = {
+		holder = dalmatia_28
+	}
+}
+
+c_zelengora = {
+	#Roman
+	361.1.1 = {
+		holder = dalmatia_04
+		liege = d_dalmatia
+		de_jure_liege = d_dalmatia
+	}
+	465.8.1 = {
+		holder = dalmatia_13
+		liege = d_dalmatia
+		de_jure_liege = d_usora
+	}
+	532.1.1 = {
+		holder = dalmatia_16
+		liege = k_croatia
+		government = feudal_government
+	}
+	630.1.1 = {
+		holder = serbs_02
+		government = tribal_government
+	}
+	757.1.1 = {
+		holder = 146010
+	}
+}
+
+
+d_usora = {
+}
+
+
+c_usora = {
+	#Roman
+	361.1.1 = {
+		holder = dalmatia_06
+		liege = d_dalmatia
+		de_jure_liege = d_dalmatia
+	}
+	465.8.1 = {
+		holder = dalmatia_14
+		de_jure_liege = d_bosna
+		government = feudal_government
+		liege = k_ostrogoths
+	}
+	532.1.1 = {
+		holder = dalmatia_21
+		liege = k_croatia
+		government = feudal_government
+	}
+	630.1.1 = {
+		holder = serbs_01
+		government = tribal_government
+		liege = 0
+	}
+	757.1.1 = {
+		holder = 146010
+	}
+	
+}
+
+
+c_soli = {
+	#Roman
+	361.1.1 = {
+		holder = dalmatia_06
+		liege = d_dalmatia
+		de_jure_liege = d_dalmatia
+	}
+	465.8.1 = {
+		holder = dalmatia_14
+		de_jure_liege = d_bosna
+		government = feudal_government
+		liege = k_ostrogoths
+	}
+	532.1.1 = {
+		holder = dalmatia_21
+		liege = k_croatia
+		government = feudal_government
+	}
+	630.1.1 = {
+		holder = serbs_01
+		government = tribal_government
+		liege = 0
+	}
+	757.1.1 = {
+		holder = 146010
+	}
+}
+
+
+d_ragusa = {
+	361.1.1 = { change_development_level = 4 }
+	476.1.1 = { change_development_level = 5 }
+	532.1.1 = { change_development_level = 6 }
+	632.1.1 = { change_development_level = 7 }
+	768.1.1 = { change_development_level = 8 }
+	
+}
+
+
+c_ragusa = {
+	361.1.1 = { change_development_level = 5 }
+	#Roman
+	361.1.1 = {
+		holder = dalmatia_01
+		de_jure_liege = d_dalmatia
+	}
+	465.8.1 = {
+		holder = dalmatia_13
+		liege = d_dalmatia
+		de_jure_liege = d_usora
+	}
+	532.1.1 = {
+		holder = dalmatia_16
+		liege = k_croatia
+		government = feudal_government
+	}
+	630.1.1 = {
+		holder = dalmatia_25
+		government = city_state_government
+		liege = 0
+	}
+	760.1.1 = {
+		holder = dalmatia_27
+	}
+}

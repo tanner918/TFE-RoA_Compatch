@@ -1,0 +1,1489 @@
+﻿#############################################################
+# 
+# KIDARITES AND VASSALS/NEIGHBORS
+# 
+# Done by Cybrxkhan
+# 
+#############################################################
+
+# Cybr: Wikipedia lists him as c. 350-390 CE, but I am basing this off the chronology proposed by Xiang Wan
+# which is based on integrating Chinese Buddhist pilgrim, Roman, Persian sources, and numismatics.
+# He suggests Kidara already held sway over Tocharistan in the 370s, which means Kidara needs to have been an adult by then
+# A couple other sources have suggested this as well
+# Confusingly, there may have been pre-Kidara kings, including Grumbates, mentioned in Roman sources
+# I have decided to make Grumbates Kidara's father for simplicity (see xionite_005)
+xionite_001 = { # Possible founder of the Kidarites
+	name= "Kidara"
+	dna = DNA_kidara
+	dynasty = dynasty_kidarite
+	religion="khurmazta" # Religious pluralism in reality
+	culture="xionite"
+	father=xionite_005
+	trait = ambitious
+	trait = education_martial_4
+	338.2.4 = {
+		birth = yes
+	}
+	361.1.1 = {
+		effect = {
+			spawn_army = {
+				name = "Hunnic Invaders"
+				levies = 2000
+				men_at_arms = {
+					type = bowmen
+					stacks = 5
+				}
+				men_at_arms = {
+					type = light_horsemen
+					stacks = 10
+				}
+				men_at_arms = {
+					type = light_footmen
+					stacks = 5
+				}
+				men_at_arms = {
+					type = horse_archers
+					stacks = 5
+				}
+				location = province:1186 # Chah
+			}
+		}
+	}
+	355.1.1 = {
+		add_spouse = xionite_004
+	}
+	422.6.17 = {
+		death = yes
+	}
+}
+# Kidara's son is mentioned as existing, but name is not given
+# Was ruling area around Peshawar (Puruṣapura) under his father's name in c. 410s
+# I decide to use the name Yosada, an attested name of another Kidarite chieftain (possibly under Kidara)
+xionite_002 = {
+	name= "Yosada"
+	dynasty = dynasty_kidarite
+	religion="khurmazta"
+	culture="xionite"
+	father = xionite_001
+	mother = xionite_004
+	372.4.7 = {
+		birth = yes
+	}
+	424.3.6 = {
+		death = yes
+	}
+}
+
+# Kunkhas is attested as a Kidarite king in 460s CE
+# Sassanid king tricked him into thinking he offered him his daughter for marriage
+# Suggesting Kunkhas probably wasn't *that* old
+# I could have made Kidara's son Kunkhas, but that would have made him too old by 460s
+# Therefore, I decided to make Kunkhas Kidara's great-great-grandson. This may not be accurate.
+# Kidarites were in decline in the 460s and 470s due to repeated Hephthalite and Sassanid attacks
+# Kunkhas retreated to India c. 468
+# Fate is unknown afterwards, but they probably got overran by the Alchonids and Nezak Huns
+xionite_003 = {
+	name= "Kunkhas"
+	dynasty = dynasty_kidarite
+	religion="khurmazta"
+	culture="xionite"
+	father = xionite_020
+	436.3.14 = {
+		birth = yes
+	}
+	488.1.1 = {
+		death = yes
+	}
+}
+
+# Fictional
+xionite_004 = {
+	name= "Nanda"
+	female = yes
+	religion="khurmazta"
+	culture="xionite"
+	335.7.12 = {
+		birth = yes
+	}
+	420.4.8 = {
+		death = yes
+	}
+}
+
+# Grumbates
+# Mentioned in Roman sources, particularly Ammianus Marcellinus
+# Supposedly fought against the Sassanids before becoming their ally for a while to fight the Romans
+# Was present at the siege of Roman Amida in 359
+xionite_005 = {
+	name= "Grumbates"
+	dynasty = dynasty_kidarite
+	religion="khurmazta"
+	culture="xionite"
+	trait = ambitious
+	trait = vengeful # Angry when his son was killed by the Romans
+	trait = brave
+	trait = intellect_good_1 # Ammianus Marcellinus said he possessed a certain "greatness of mind"
+	trait = education_martial_4
+	311.2.23 = {
+		birth = yes
+	}
+	360.3.9 = {
+		death = yes
+	}
+}
+
+# Grumbates' son present at the siege of Roman Amida in 359
+xionite_006 = {
+	name= "Khingila"
+	dynasty = dynasty_kidarite
+	religion="khurmazta"
+	culture="xionite"
+	father = xionite_005
+	trait = brave
+	trait = education_martial_2
+	333.3.3 = {
+		birth = yes
+	}
+	359.6.6 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+# Late Kidarite ruler attested in crude coinage, ruled c. late 400s
+# I have made him Kunkhas' son
+xionite_007 = {
+	name= "Vinayaditya"
+	dynasty = dynasty_kidarite
+	religion="khurmazta"
+	culture="xionite"
+	father = xionite_003
+	459.1.7 = {
+		birth = yes
+	}
+	503.9.29 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+
+
+# Xionite/Kidarite kings/chiefs attested in coinage found in Kashmir and Gandhara (NW India) in the late 4th century
+# These included Kirada (not to be confused with Kidara), Hanaka, Yasada, and Perosa (or Peroz)
+# I placed them as vassals of Kidarites in East Afghanistan/NW India and made them different religions to show Huns' religious plurality
+# Yosada was used above for Kidara's son, whose name is uncertain IRL
+
+# Gandhara
+xionite_011 = {
+	name= "Kirada"
+	religion="shaivism"
+	culture="xionite"
+	364.1.1 = {
+		birth = yes
+	}
+	435.1.1 = {
+		death = yes
+	}
+}
+
+#Theravada Buddhist in Pamir
+xionite_012 = {
+	name= "Hanaka"
+	religion="dharmaguptaka"
+	culture="xionite"
+	371.1.1 = {
+		birth = yes
+	}
+	429.1.1 = {
+		death = yes
+	}
+}
+
+# Vassal under Gandhara
+xionite_013 = {
+	name= "Peroz"
+	religion="pudgalavada"
+	culture="xionite"
+	362.1.1 = {
+		birth = yes
+	}
+	419.1.1 = {
+		death = yes
+	}
+}
+
+# ALCHON HUNS
+# Names of Alchon leaders before Khilinga (c. 430-490 CE) are not known
+# There is a theory proposed by Joe Cribb, which Xiang Wan seems to lean toward agreeing with # that the term "Alakha" found on some coins from around
+# Kidara's era points to an actual person who founded # a clan/faction within the Kidarites and gave the Alchonids their name. Although I am not 100% sure
+# of this, it makes sense to just make the Alchon founder Alakha for game purposes. 
+# xionite_014 = {
+# 	name= "Alakha" 
+# 	dynasty = dynasty_alchonid
+# 	religion="shaivism" # Possibly Surya worshippers who clashed with Zunists (!)
+# 	culture="xionite"
+# 	trait = education_martial_4
+# 	339.1.1 = {
+# 		birth = yes
+# 	}
+# 	419.1.1 = {
+# 		death = yes
+# 	}
+# }
+
+#Fictitious son to keep the dynasty going
+# xionite_015 = {
+# 	name= "Toramana"
+# 	dynasty = dynasty_alchonid
+# 	religion="shaivism"
+# 	culture="xionite"
+# 	trait = education_martial_4
+# 	father = xionite_014
+# 	366.1.1 = {
+# 		birth = yes
+# 	}
+# 	431.1.1 = {
+# 		death = yes
+# 	}
+# }
+
+# Local ruler of Bukhara attested in coinage
+xionite_016 = {
+	name= "Mawak"
+	religion="khurmazta"
+	culture="sogdian"
+	371.2.3 = {
+		birth = yes
+	}
+	422.6.19 = {
+		death = yes
+	}
+}
+
+# Fictitious local ruler of Samarkand
+xionite_017 = {
+	name= "Kanakk"
+	religion="khurmazta"
+	culture="sogdian"
+	368.1.1 = {
+		birth = yes
+	}
+	431.1.1 = {
+		death = yes
+	}
+}
+
+# Varhran II - c. 425 CE - made him Kidara's son
+# No idea where Varhran I would even go, but gave him territory in Ferghana for now
+xionite_018 = {
+	name= "Varhran"
+	dynasty = dynasty_kidarite
+	religion="khurmazta"
+	culture="xionite"
+	father = xionite_001
+	mother = xionite_004
+	369.11.12 = {
+		birth = yes
+	}
+	431.4.17 = {
+		death = yes
+	}
+}
+
+# Goboziko/Tobazini, c. 450 - king of remnant Kidarite state in Bactria/North Afghanistan/between Sogdia and Amu Darya
+# Because this predates Kunkhas above, I've made him Kunkhas' grandfather
+xionite_019 = {
+	name= "Goboziko"
+	dynasty = dynasty_kidarite
+	religion="khurmazta"
+	culture="xionite"
+	father = xionite_018
+	398.5.12 = {
+		birth = yes
+	}
+	452.7.4 = {
+		death = yes
+	}
+}
+
+# A king of the "Xiongnu" in Chinese sources who sent an embassy to China c. 457 CE, however the "Xiongnu" here may actually be referring to the Kidarites
+# I've made him Kunkhas' father
+xionite_020 = {
+	name= "Huni"
+	dynasty = dynasty_kidarite
+	religion="khurmazta"
+	culture="xionite"
+	father = xionite_019
+	415.11.29 = {
+		birth = yes
+	}
+	460.3.4 = {
+		death = yes
+	}
+}
+
+
+
+
+#############################################################
+# 
+# ALCHONIDS
+# 
+# Done by Cybrxkhan
+# 
+#############################################################
+
+# Note: Possibly Surya worshippers who clashed with Zunists later in the 5th/6th century (!)
+
+# Alchons are attested from the 4th century, however names of Alchon rulers before Khingila is unknown
+alchonid_001 = {
+	name= "Alakha" 
+	dynasty = dynasty_alchonid
+	religion="zun_pagan" # Religion before arriving in India is unknown
+	culture="xionite"
+	trait = education_martial_4
+	339.1.19 = {
+		birth = yes
+	}
+	419.8.2 = {
+		death = yes
+	}
+}
+
+#Fictitious son to keep the dynasty going
+alchonid_002 = {
+	name= "Harka"
+	dynasty = dynasty_alchonid
+	religion="zun_pagan"
+	culture="xionite"
+	trait = education_martial_4
+	father = alchonid_001
+	366.3.24 = {
+		birth = yes
+	}
+	431.5.7 = {
+		death = yes
+	}
+}
+
+
+# Fictitious father of Khingila
+alchonid_003 = {
+	name= "Skunkha"
+	dynasty = dynasty_alchonid
+	religion="zun_pagan"
+	culture="xionite"
+	father = alchonid_002
+	396.3.15 = {
+		birth = yes
+	}
+	417.1.1 = {
+		add_spouse = alchonid_007
+	}
+	440.1.1 = {
+		death = yes
+	}
+}
+
+# Father of Javukha; not listed on wikipedia for some reason
+alchonid_004 = {
+	name= "Sadavikha"
+	dynasty = dynasty_alchonid
+	religion="zun_pagan"
+	culture="xionite"
+	father = alchonid_002
+	398.2.12 = {
+		birth = yes
+	}
+	449.6.19 = {
+		death = yes
+	}
+}
+
+# First Alchonid ruler known by name and the one who established Alchon power in Kabul/Kashmir/North India
+# Dates for him and all rulers after are approximate, partly because relationship between different rulers is sometimes hard to discern
+# Khingila, Javukha, Torama, and Mehama appear to have been contemporary kings ruling at the same time c. 492 which complicates matters
+# I have decided to make Khingila, Torama, and Mehama brothers, and Javukha their cousin
+# Their actual relationship is uncertain, but there's nothing much I can do about that given the paucity of sources
+# Lastly, all these kings are attested from a donation to a Buddhist stupa c. 492/493
+# In reality Alchonids probably sponsored various religions, so I made them all different religions
+# Khingila is the first attested major king from c. 440
+alchonid_005 = {
+	name= "Khingila"
+	dna = dna_khingila
+	dynasty = dynasty_alchonid
+	religion="shaivism"
+	culture="xionite"
+	father = alchonid_003
+	mother = alchonid_007
+	trait=education_martial_4
+	trait=ambitious
+	418.3.9 = {
+		birth = yes
+	}
+	448.1.1 = {
+		add_spouse = alchonid_009
+		effect = {
+			spawn_army = {
+				name = "Hunnic Invaders"
+				levies = 1500
+				men_at_arms = {
+					type = bowmen
+					stacks = 4
+				}
+				men_at_arms = {
+					type = light_horsemen
+					stacks = 8
+				}
+				men_at_arms = {
+					type = light_footmen
+					stacks = 4
+				}
+				men_at_arms = {
+					type = horse_archers
+					stacks = 4
+				}
+				location = province:4335 # Balkh
+			}
+		}
+	}
+	449.1.1 = {
+		add_spouse = hephthalite_010
+	}
+	493.6.2 = {
+		death = yes
+	}
+}
+
+# Have him as a lesser "king" in India around Taxila
+alchonid_006 = {
+	name= "Javukha"
+	dynasty = dynasty_alchonid
+	religion="dharmaguptaka"
+	culture="xionite"
+	father = alchonid_004
+	422.3.9 = {
+		birth = yes
+	}
+	456.1.1 = {
+		add_spouse = alchonid_027
+	}
+	497.3.6 = {
+		death = yes
+	}
+}
+
+
+# Fictitious mommy of the Alchon Huns
+alchonid_007 = {
+	name= "Maya"
+	female=yes
+	dynasty = dynasty_hephthalite
+	religion="khurmazta" # Should be Zunist pagan?
+	culture="hephthalite"
+	father=hephthalite_002
+	399.11.30 = {
+		birth = yes
+	}
+	461.2.3 = {
+		death = yes
+	}
+}
+
+
+# Mehama - made him Mihirakula's brother
+# Was vassal to the Sassanids c. 460s, but probably nominal, also means he was supreme ruler???
+# Later helped the Sassanids roflstomp the remnants of the Kidarites in 466
+# May have been able to achieve Alchon independence later??
+# Attested in western Afghanistan
+alchonid_008 = {
+	name= "Mehama"
+	dynasty = dynasty_alchonid
+	religion="mahasanghika" 
+	culture="xionite"
+	father = alchonid_003
+	mother = alchonid_007
+	trait=education_martial_4
+	429.3.1 = {
+		birth = yes
+	}
+	448.1.1 = {
+		add_spouse = alchonid_026
+	}
+	497.4.11 = {
+		death = yes
+	}
+}
+
+# Torama's fictional mommy
+alchonid_009 = {
+	name= "Roxana"
+	female=yes
+	dynasty = dynasty_alchonid
+	religion="shaivism" 
+	culture="xionite"
+	father = alchonid_004
+	427.6.17 = {
+		birth = yes
+	}
+	491.3.14 = {
+		death = yes
+	}
+}
+
+# Have him as Khingila's son
+# This was an older theory and might not be accurate, but best I can do for now
+# Last attested mention is c. 515 when he was defeated in battle by the King of Malwa
+alchonid_010 = {
+	name= "Toramana"
+	dynasty = dynasty_alchonid
+	religion="zun_pagan" 
+	culture="xionite"
+	father = alchonid_005
+	mother = alchonid_009
+	trait=education_martial_3
+	451.4.17 = {
+		birth = yes
+	}
+	470.1.1 = {
+		add_spouse = alchonid_025
+	}
+	515.4.6 = {
+		death = yes
+	}
+}
+
+# Mihirakula, the infamous Hunnic king
+# Very famous for being anti-Buddhist in later legend
+# However, in reality, he probably did not initiate any large-scale persecution of Buddhism as there is little contemporary evidence
+# Most likely, he simply was a strong patron of Hinduism, and contemporary Buddhists felt neglected
+# His reputation then later got warped. As a compromise, I do have his traits to imply he is zealously non-Buddhist and a jerk
+alchonid_011 = {
+	name= "Mihirakula"
+	dynasty = dynasty_alchonid
+	religion="shaivism" 
+	culture="xionite"
+	father = alchonid_010
+	mother = alchonid_025
+	trait=education_martial_4
+	trait=intellect_good_1
+	disallow_random_traits = yes
+	474.3.9 = {
+		birth = yes
+	}
+	490.3.8 = {
+		add_trait = ambitious	#Add adult trait
+		add_trait = zealous		#Add adult trait
+		add_trait = sadistic	#Add adult trait
+		add_trait = vengeful	#Add adult trait
+	}
+	520.1.1 = {		
+		effect = {
+			spawn_army = {
+				name = "Hunnic Invaders"
+				levies = 1000
+				men_at_arms = {
+					type = bowmen
+					stacks = 2
+				}
+				men_at_arms = {
+					type = light_horsemen
+					stacks = 5
+				}
+				men_at_arms = {
+					type = light_footmen
+					stacks = 2
+				}
+				men_at_arms = {
+					type = horse_archers
+					stacks = 3
+				}
+				location = province:1180 # Udhabhanda
+			}
+		}
+	}
+	# Following his defeat
+	529.1.1 = {
+		# add_pressed_claim = title:d_lahore
+		# add_pressed_claim = title:d_hisar
+		# add_pressed_claim = title:d_kuru
+		# add_pressed_claim = title:d_lahore
+		add_pressed_claim = title:k_gandhara
+		add_pressed_claim = title:k_rajputana
+		add_pressed_claim = title:k_delhi
+		add_character_modifier = TFE_mihirakula_modifier
+	}
+	542.3.16 = { # Approx death year
+		death = yes
+	}
+}
+
+# Apparent heir of Mihirakula in some sources
+alchonid_012 = {
+	name= "Baka"
+	dynasty = dynasty_alchonid
+	religion="shaivism" 
+	culture="xionite"
+	father = alchonid_011
+	504.3.10 = { 
+		birth = yes
+	}
+	548.9.10 = { 
+		death = yes
+	}
+}
+
+# Alternatively read as Toramana II according to Wikipedia, but my sources read him as Narendra; I've stuck with Toramana for now
+# Another heir of Mihirakula
+alchonid_013 = {
+	name= "Toramana"
+	dynasty = dynasty_alchonid
+	religion="shaivism" 
+	culture="xionite"
+	father = alchonid_011
+	505.9.14 = { 
+		birth = yes
+	}
+	570.1.4 = { 
+		death = yes
+	}
+}
+
+# Pravarasena II in legendary king lists of Kashmir
+# Possibly son or grandson of Mihirakula through Narendra/Toramana, or son of the first Toramana
+# However, if his reign is c. 530-590 as suggested, him being a son of Toramana I seems ludricous 
+# Either way, I put him as the junior king in Kashmir until Narendra's death when he becomes the Hun king
+alchonid_014 = {
+	name= "Pravarasena"
+	dynasty = dynasty_alchonid
+	religion="shaivism" 
+	culture="xionite"
+	father = alchonid_011
+	511.4.17 = { 
+		birth = yes
+	}
+	590.6.4 = {
+		death = yes
+	}
+}
+
+# Next Hun king, son of Pravarasena?
+alchonid_015 = {
+	name= "Gokarna"
+	dynasty = dynasty_alchonid
+	religion="shaivism" 
+	culture="xionite"
+	father = alchonid_014
+	542.4.6 = { 
+		birth = yes
+	}
+	597.5.2 = { # Probable year
+		death = yes
+	}
+}
+
+# Next Hun king, son of Gokarna
+alchonid_016 = {
+	name= "Narendraditya_Khinkhila"
+	dynasty = dynasty_alchonid
+	religion="shaivism" 
+	culture="xionite"
+	father = alchonid_015
+	575.8.9 = { 
+		birth = yes
+	}
+	633.1.24 = { # Probable year
+		death = yes
+	}
+}
+
+# Yudhishthira, son of Narendraditya Khinkhila
+# Possibly last powerful Alkhonid, mainly based in Kashmir; supplanted by Karkota dynasty
+# However he may have had some descendants who were vassals of the rulers of Kashmir
+alchonid_017 = {
+	name= "Yudhishthira"
+	dynasty = dynasty_alchonid
+	religion="shaivism" 
+	culture="xionite"
+	father = alchonid_016
+	609.7.18 = { 
+		birth = yes
+	}
+	627.1.1 = {
+		add_spouse = alchonid_018
+	}
+	670.1.1 = { # Either 670 or 657
+		death = yes
+	}
+}
+
+# Wife of Yudhishthira in Kashmir legendary king list of Rajatarangini
+alchonid_018 = {
+	name= "Padmavati"
+	female=yes
+	religion="shaivism" 
+	culture="kashmiri"
+	610.8.2 = { 
+		birth = yes
+	}
+	668.4.1 = { 
+		death = yes
+	}
+}
+
+# Son of Yudhishthira II in Kashmir legendary king list of Rajatarangini
+alchonid_019 = {
+	name= "Narendraditya"
+	dynasty = dynasty_alchonid
+	religion="shaivism" 
+	culture="xionite"
+	father = alchonid_017
+	mother = alchonid_018
+	628.1.4 = { 
+		birth = yes
+	}
+	683.3.4 = { 
+		death = yes
+	}
+}
+
+# Son of Yudhishthira II in Kashmir legendary king list of Rajatarangini
+alchonid_020 = {
+	name= "Ranarambha"
+	female=yes
+	religion="shaivism" 
+	culture="kashmiri"
+	632.11.3 = { 
+		birth = yes
+	}
+	690.4.7 = { 
+		death = yes
+	}
+}
+
+# Son of Yudhishthira II in Kashmir legendary king list of Rajatarangini
+# Said to rule for 300 years (lol)
+alchonid_021 = {
+	name= "Ranaditya"
+	dynasty = dynasty_alchonid
+	religion="shaivism" 
+	culture="xionite"
+	father = alchonid_017
+	mother = alchonid_018
+	628.1.4 = { 
+		birth = yes
+	}
+	650.1.1 = {
+		add_spouse = alchonid_020
+	}
+	682.3.4 = { 
+		death = yes
+	}
+}
+
+# Son of Ranaditya in Kashmir legendary king list of Rajatarangini
+alchonid_022 = {
+	name= "Vikramaditya"
+	dynasty = dynasty_alchonid
+	religion="shaivism" 
+	culture="xionite"
+	father = alchonid_021
+	mother = alchonid_020
+	656.3.24 = { 
+		birth = yes
+	}
+	687.1.19 = { 
+		death = yes
+	}
+}
+
+# Son of Ranaditya in Kashmir legendary king list of Rajatarangini
+alchonid_023 = {
+	name= "Baladitya"
+	dynasty = dynasty_alchonid
+	religion="shaivism" 
+	culture="xionite"
+	father = alchonid_021
+	mother = alchonid_020
+	659.2.19 = { 
+		birth = yes
+	}
+	711.4.16 = { 
+		death = yes
+	}
+}
+
+# Daughter of Baladitya
+alchonid_024 = {
+	name= "Anangalekha"
+	female=yes
+	dynasty = dynasty_alchonid
+	religion="shaivism" 
+	culture="xionite"
+	father = alchonid_023
+	680.1.7 = { 
+		birth = yes
+	}
+	734.5.6 = { 
+		death = yes
+	}
+}
+
+# Mihirakula's fictional aunt
+alchonid_025 = {
+	name= "Kalika"
+	female=yes
+	dynasty = dynasty_alchonid
+	religion="shaivism" 
+	culture="xionite"
+	father = alchonid_008
+	mother = alchonid_026
+	452.8.9 = {
+		birth = yes
+	}
+	507.4.1 = {
+		death = yes
+	}
+}
+
+# Mihirakula's fictional grandma
+alchonid_026 = {
+	name= "Chandravati"
+	female=yes
+	religion="shaivism" 
+	culture="kashmiri"
+	430.1.4 = {
+		birth = yes
+	}
+	492.3.16 = {
+		death = yes
+	}
+}
+
+# Fictional wife of Javukha
+alchonid_027 = {
+	name= "Praniyata"
+	female=yes
+	religion="mahayana" 
+	culture="hephthalite"
+	436.1.22 = {
+		birth = yes
+	}
+	501.7.3 = {
+		death = yes
+	}
+}
+
+# Some Alchonid king, might be another ruler (?)
+alchonid_028 = {
+	name= "Lakhana_Udayaditya"
+	dynasty = dynasty_alchonid
+	religion="shaivism" 
+	culture="xionite"
+	father = alchonid_005
+	mother = alchonid_009
+	459.6.2 = {
+		birth = yes
+	}
+	520.10.2 = {
+		death = yes
+	}
+}
+
+# Fictional wife of Nezak Hun to give alliance
+alchonid_029 = {
+	name= "Dukhtanosh"
+	dynasty = dynasty_alchonid
+	female=yes
+	religion="mahayana" 
+	culture="xionite"
+	father = alchonid_005
+	mother = alchonid_009
+	456.1.9 = {
+		birth = yes
+	}
+	512.9.12 = {
+		death = yes
+	}
+}
+
+#############################################################
+# 
+# RULERS OF CHACH
+# 
+# Done by Cybrxkhan
+# 
+#############################################################
+
+# Real rulers of Chach, however exact dates are unknown as they are only attested from coins
+# So relationships are probably all incorrect, but necessary to connect the kings/dynasty together
+# Coinage found up to c. 605 when they were conquered by Turks, which is collaborated with Chinese sources
+# Historically, it appears the region of Chach at this time was a confederation of (possibly related) Xionite prinicipalities
+# I made them Hephthalite later on to represent Hephthalite dominion
+
+chach_001 = {
+	name= "Zirt"
+	dynasty = dynasty_yuni
+	religion="khurmazta"
+	culture="xionite"
+	335.3.5 = {
+		birth = yes
+	}
+	390.6.2 = {
+		death = yes
+	}
+}
+
+chach_002 = {
+	name= "Chirt"
+	dynasty = dynasty_yuni
+	religion="khurmazta"
+	culture="xionite"
+	father = chach_001
+	373.2.19 = {
+		birth = yes
+	}
+	442.7.12 = {
+		death = yes
+	}
+}
+
+chach_003 = {
+	name= "ChanurAk"
+	dynasty = dynasty_yuni
+	religion="khurmazta"
+	culture="xionite"
+	father = chach_002
+	403.6.17 = {
+		birth = yes
+	}
+	460.8.16 = {
+		death = yes
+	}
+}
+
+# Names until the last ruler are fictitious
+# Coins without readable names exist so their existence is plausible
+chach_004 = {
+	name= "Zirt"
+	dynasty = dynasty_yuni
+	religion="khurmazta"
+	culture="xionite"
+	father = chach_003
+	444.4.4 = {
+		birth = yes
+	}
+	501.3.29 = {
+		death = yes
+	}
+}
+
+chach_005 = {
+	name= "Chirt"
+	dynasty = dynasty_yuni
+	religion="khurmazta"
+	culture="xionite"
+	father = chach_004
+	481.9.12 = {
+		birth = yes
+	}
+	523.6.14 = {
+		death = yes
+	}
+}
+
+chach_006 = {
+	name= "ChanurAk"
+	dynasty = dynasty_yuni
+	religion="khurmazta"
+	culture="hephthalite"
+	father = chach_005
+	511.3.2 = {
+		birth = yes
+	}
+	577.6.25 = {
+		death = yes
+	}
+}
+
+chach_007 = {
+	name= "Sham"
+	dynasty = dynasty_yuni
+	religion="khurmazta"
+	culture="hephthalite"
+	father = chach_006
+	536.4.2 = {
+		birth = yes
+	}
+	591.10.9 = {
+		death = yes
+	}
+}
+
+# Attested in Chinese chronicles as "Shi Nie" who was killed by Turks in 605
+# Variously reconstructed as Shania, Schania, and Chania
+chach_008 = {
+	name= "Shania"
+	dynasty = dynasty_yuni
+	religion="khurmazta"
+	culture="hephthalite"
+	father = chach_007
+	569.12.6 = {
+		birth = yes
+	}
+	605.3.13 = {
+		death = {
+			death_reason = death_battle
+			killer = ashina_28 # Tong Yaghbu, ruler of the Turks
+		}
+	}
+}
+
+# A junior branch of the ruling dynasty in Chach ruled in Panäkät
+# Cannot determine when they split from the main senior branch (if they are a branch)
+# First named ruler I could find was Nart I from the late 5th century
+# Therefore, rulers up to him are fictitious
+chach_009 = {
+	name= "Ikam"
+	dynasty_house = house_panakat
+	religion="khurmazta"
+	culture="xionite"
+	father = chach_001
+	376.1.12 = {
+		birth = yes
+	}
+	439.6.18 = {
+		death = yes
+	}
+}
+
+chach_010 = {
+	name= "Brika"
+	dynasty_house = house_panakat
+	religion="khurmazta"
+	culture="xionite"
+	father = chach_009
+	412.6.17 = {
+		birth = yes
+	}
+	469.12.3 = {
+		death = yes
+	}
+}
+
+# Historically attested from coinage in the late 5th cent/early 6th cent
+chach_011 = {
+	name= "Nart"
+	dynasty_house = house_panakat
+	religion="khurmazta"
+	culture="xionite"
+	father = chach_010
+	451.7.9 = {
+		birth = yes
+	}
+	470.1.1 = {
+		add_spouse = chach_013
+	}
+	524.7.9 = {
+		death = yes
+	}
+}
+
+# Found from coinage, probably later than Nart
+chach_012 = {
+	name= "Nirt"
+	dynasty_house = house_panakat
+	religion="khurmazta"
+	culture="xionite"
+	father = chach_011
+	mother = chach_013
+	474.3.12 = {
+		birth = yes
+	}
+	531.6.12 = {
+		death = yes
+	}
+}
+
+# Fictitious but I presume there must have been some intermarriage between the branches
+chach_013 = {
+	name= "Nana"
+	female=yes
+	dynasty = dynasty_yuni
+	religion="khurmazta"
+	culture="xionite"
+	father = chach_003
+	447.2.1 = {
+		birth = yes
+	}
+	510.1.16 = {
+		death = yes
+	}
+}
+
+# Found from coinage, possibly named after the first Nart
+chach_014 = {
+	name= "Nart"
+	dynasty_house = house_panakat
+	religion="khurmazta"
+	culture="hephthalite"
+	father = chach_012
+	509.11.10 = {
+		birth = yes
+	}
+	528.5.28 = {
+		add_spouse = chach_015
+	}
+	560.1.17 = {
+		death = yes
+	}
+}
+
+# More intermarriage because why not
+chach_015 = {
+	name= "Makh"
+	female = yes
+	dynasty = dynasty_yuni
+	religion="khurmazta"
+	culture="hephthalite"
+	father = chach_005
+	509.4.9 = {
+		birth = yes
+	}
+	566.3.2 = {
+		death = yes
+	}
+}
+
+# After Nart II
+chach_016 = {
+	name= "Art"
+	dynasty_house = house_panakat
+	religion="khurmazta"
+	culture="hephthalite"
+	father = chach_014
+	mother = chach_015
+	529.11.10 = {
+		birth = yes
+	}
+	576.1.17 = {
+		death = yes
+	}
+}
+
+# After Art
+chach_017 = {
+	name= "Zirt"
+	dynasty_house = house_panakat
+	religion="khurmazta"
+	culture="hephthalite"
+	father = chach_016
+	557.12.11 = {
+		birth = yes
+	}
+	597.12.24 = {
+		death = yes
+	}
+}
+
+# Another junior chief in the Chach region based on coinage
+# Might not have even been in the same branch as the Panakat rulers, but have nowhere else to put him
+chach_018 = {
+	name= "BaghratunUchu"
+	dynasty_house = house_panakat
+	religion="khurmazta"
+	culture="hephthalite"
+	father = chach_017
+	579.3.9 = {
+		birth = yes
+	}
+	613.7.18 = {
+		death = yes
+	}
+}
+
+# Based on debased coinage, a junior branch of Chach might have survived
+# Under Turkic dominion for some time after the initial conquest in 605
+# This fictitious ruler is meant to represent that
+chach_019 = {
+	name= "Farn"
+	dynasty_house = house_panakat
+	religion="khurmazta"
+	culture="hephthalite"
+	father = chach_018
+	598.4.2 = {
+		birth = yes
+	}
+	659.1.27 = {
+		death = yes
+	}
+}
+
+# Fictitious wife for the Bukhar Khudat in 476
+chach_020 = {
+	name= "Puun"
+	female=yes
+	dynasty = dynasty_yuni
+	religion="khurmazta"
+	culture="xionite"
+	father = chach_003
+	440.1.9 = {
+		birth = yes
+	}
+	498.7.12 = {
+		death = yes
+	}
+}
+
+
+
+#############################################################
+# 
+# AFSHINS OF OSHRUSHANA/USHRUSANA
+# 
+# Done by Cybrxkhan
+# 
+#############################################################
+
+# Early ruler of a Kidarite rump state in Samarkand and Usrushanna/Osrushanna, probably under Hephthalite hegemony
+# Actual relation to Kidarite rulers unknown so I made him Huni's son
+afshin_001 = {
+	name= "Uglarg"
+	dynasty_house = house_Afshiyan
+	religion="khurmazta"
+	culture="xionite"
+	father = xionite_020
+	441.5.19 = {
+		birth = yes
+	}
+	513.4.7 = {
+		death = yes
+	}
+}
+
+
+
+#############################################################
+# 
+# MISC HUNS/XIONITES
+# 
+# Done by Cybrxkhan
+# 
+#############################################################
+
+# Hunnic nobleman found on a seal in Pakistan, dating to c. 5th-early 6th century CE
+# Artwork is reminiscent of Huna coin typography of NW India used by Alchonid and Nezak Huns
+# Therefore have him around as a petty vassal of the Alchonids in Pamir area in 476
+xionite_misc_001 = {
+	name= "Bhagundi"
+	religion="mahayana" # No idea on religion so made him a Buddhist
+	culture="xionite"
+	441.9.20 = {
+		birth = yes
+	}
+	512.10.9 = {
+		death = yes
+	}
+}
+
+# Hunnic nobleman found on a seal in Pakistan, dating to middle of 5th-first half of 6th century CE
+# Artwork is reminiscent of Huna coins of Khingila and Javukha
+# Therefore have him around as a petty vassal of the Alchonids in Pamir area in 476
+xionite_misc_002 = {
+	name= "Sudasa"
+	religion="shaivism" # No idea on religion so made him a Shaivite
+	culture="xionite"
+	453.10.22 = {
+		birth = yes
+	}
+	527.7.4 = {
+		death = yes
+	}
+}
+
+# Hunnic nobleman found on a seal in Pakistan, dating to end of 5th - 6th century CE
+# Artwork includes a sun wheel with eleven spokes
+# Therefore have him around as a petty vassal of the Alchonids in Pamir area in 532
+xionite_misc_003 = {
+	name= "Jina"
+	religion="shaivism" # Seal mentions Hindu (?) language so made him a Shaivite
+	culture="xionite"
+	496.1.13 = {
+		birth = yes
+	}
+	546.10.9 = {
+		death = yes
+	}
+}
+
+# Hunnic nobleman found on a Bactrian seal dating to either late 4th century CE or possibly a little later
+# Seal is possibly Hephthalite, but uses Chionite marks (?)
+# Aspurabah/Asparobido might be the name of a title indicating the chief of cavalry (general?)
+xionite_misc_004 = {
+	name= "Aspurabah"
+	religion="khurmazta"
+	culture="xionite"
+	trait=education_martial_3
+	344.12.7 = {
+		birth = yes
+	}
+	413.6.19 = {
+		death = yes
+	}
+}
+
+#### Juli Xionite Placeholders that i don't remeber where i got from
+xionite_01 = {
+	name = "Nezak"
+	culture = "xionite"
+	religion = "tengri_pagan"
+	#dynasty = chuyue_dynasty
+	430.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+xionite_03 = {
+	name = "Eskak"
+	culture = "xionite"
+	religion = "tengri_pagan"
+	#dynasty = chuyue_dynasty
+	father = xionite_01
+	470.1.1 = {
+		birth = yes
+	}
+	530.1.1 = {
+		death = yes
+	}
+}
+xionite_04 = {
+	name = "Ruga"
+	culture = "xionite"
+	religion = "tengri_pagan"
+	#dynasty = chuyue_dynasty
+	father = xionite_03
+	502.1.1 = {
+		birth = yes
+	}
+	560.1.1 = {
+		death = yes
+	}
+}
+xionite_02 = {
+	name = "Barsberk"
+	culture = "xionite"
+	religion = "tengri_pagan"
+	452.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+xionite_12 = {
+	name = "Alzek"
+	culture = "xionite"
+	religion = "tengri_pagan"
+	489.1.1 = {
+		birth = yes
+	}
+	560.1.1 = {
+		death = yes
+	}
+}
+xionite_09 = {
+	name = "Organ"
+	culture = "xionite"
+	religion = "tengri_pagan"
+	495.1.1 = {
+		birth = yes
+	}
+	560.1.1 = {
+		death = yes
+	}
+}
+xionite_10 = {
+	name = "Organ"
+	culture = "xionite"
+	religion = "tengri_pagan"
+	602.1.1 = {
+		birth = yes
+	}
+	670.1.1 = {
+		death = yes
+	}
+}
+xionite_11 = {
+	name = "Isperik"
+	culture = "xionite"
+	religion = "tengri_pagan"
+	589.1.1 = {
+		birth = yes
+	}
+	670.1.1 = {
+		death = yes
+	}
+}
+xionite_05 = {
+	name = "Karaton"
+	culture = "xionite"
+	religion = "tengri_pagan"
+	#dynasty = chumi_dynasty
+	452.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+xionite_06 = {
+	name = "Bayan"
+	culture = "xionite"
+	religion = "tengri_pagan"
+	#dynasty = chumuhun_dynasty
+	439.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+xionite_07 = {
+	name = "Irnek"
+	culture = "xionite"
+	religion = "tengri_pagan"
+	#dynasty = chuban_dynasty
+	432.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+xionite_08 = {
+	name = "Irnek"
+ 	culture = "xionite"
+	religion = "mahayana"
+ 	329.1.1 = {
+ 		birth = yes
+ 	}
+ 	367.1.1 = {
+ 		death = yes
+ 	}
+}
+# xionite_09 = {
+# 	name = "Bayan"
+# 	culture = "xionite"
+# 	religion = "tengri_pagan"
+# 	364.1.1 = {
+# 		birth = yes
+# 	}
+# 	400.1.1 = {
+# 		death = yes
+# 	}
+# }

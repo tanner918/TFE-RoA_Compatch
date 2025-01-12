@@ -1,0 +1,205 @@
+﻿rashidun_elective = {
+	candidates = {
+		add = {
+			type = holder_close_or_extended_family
+			limit = {
+				has_religion = religion:islam_religion
+				OR = {
+					OR = {
+						learning >= 15
+						martial >= 15
+						diplomacy >= 15
+						stewardship >= 15
+					}
+					
+					has_trait = sahabi_trait
+				}
+			}
+		}
+		add = {
+			type = title_claimants
+			limit = {
+				has_religion = religion:islam_religion
+				OR = {
+					OR = {
+						learning >= 15
+						martial >= 15
+						diplomacy >= 15
+						stewardship >= 15
+					}
+					
+					has_trait = sahabi_trait
+				}
+			}
+		}
+		add = {
+			type = holder_direct_vassals
+			limit = {
+				has_religion = religion:islam_religion
+				OR = {
+					OR = {
+						learning >= 15
+						martial >= 15
+						diplomacy >= 15
+						stewardship >= 15
+					}
+					
+					has_trait = sahabi_trait
+				}
+			}
+		}
+		add = {
+			type = title_dejure_vassals
+			limit = {
+				has_religion = religion:islam_religion
+				OR = {
+					OR = {
+						learning >= 15
+						martial >= 15
+						diplomacy >= 15
+						stewardship >= 15
+					}
+					
+					has_trait = sahabi_trait
+				}
+			}
+		}
+	}
+	electors = {
+		add = holder
+		add = {
+			type = title_claimants
+			limit = {
+				has_religion = religion:islam_religion
+				OR = {
+					OR = {
+						learning >= 15
+						martial >= 15
+						diplomacy >= 15
+						stewardship >= 15
+					}
+					
+					has_trait = sahabi_trait
+				}
+			}
+		}
+		add = {
+			type = holder_close_or_extended_family
+			limit = {
+				has_religion = religion:islam_religion
+				OR = {
+					OR = {
+						learning >= 15
+						martial >= 15
+						diplomacy >= 15
+						stewardship >= 15
+					}
+					
+					has_trait = sahabi_trait
+				}
+			}
+		}
+		add = {
+			type = holder_direct_vassals
+			limit = {
+				has_religion = religion:islam_religion
+				OR = {
+					OR = {
+						learning >= 15
+						martial >= 15
+						diplomacy >= 15
+						stewardship >= 15
+					}
+					
+					has_trait = sahabi_trait
+				}
+			}
+		}
+		add = {
+			type = title_dejure_vassals
+			limit = {
+				has_religion = religion:islam_religion
+				OR = {
+					OR = {
+						learning >= 15
+						martial >= 15
+						diplomacy >= 15
+						stewardship >= 15
+					}
+					
+					has_trait = sahabi_trait
+				}
+			}
+		}
+	}
+	elector_vote_strength = {
+		base = 10
+		modifier = {
+			add = 15
+			OR = {
+				learning >= 20
+				martial >= 20
+				diplomacy >= 20
+				stewardship >= 20
+			}
+		}
+		modifier = {
+			add = 20
+			OR = {
+				learning >= 25
+				martial >= 25
+				diplomacy >= 25
+				stewardship >= 25
+			}
+		}
+		modifier = {
+			add = 25
+			OR = {
+				learning >= 30
+				martial >= 30
+				diplomacy >= 30
+				stewardship >= 30
+			}
+		}
+		modifier = {
+			add = 20
+			has_trait = sahabi_trait
+		}
+	}
+	candidate_score = {
+		base = 10
+		modifier = {
+			add = 15
+			OR = {
+				learning >= 20
+				martial >= 20
+				diplomacy >= 20
+				stewardship >= 20
+			}
+		}
+		modifier = {
+			add = 20
+			OR = {
+				learning >= 25
+				martial >= 25
+				diplomacy >= 25
+				stewardship >= 25
+			}
+		}
+		modifier = {
+			add = 25
+			OR = {
+				learning >= 30
+				martial >= 30
+				diplomacy >= 30
+				stewardship >= 30
+			}
+		}
+		modifier = {
+			add = 50
+			scope:candidate = {
+				has_trait = sahabi_trait
+			}
+		}
+	}
+}

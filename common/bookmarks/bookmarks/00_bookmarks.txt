@@ -1,0 +1,2512 @@
+﻿##### 361 Bookmarks #####
+
+bm_361_apostate = {
+	start_date = 361.11.17
+	is_playable = yes
+	recommended = yes
+	group = bm_group_361
+
+	weight = {
+		value = 100
+	}
+
+	character = { # Emperor Julian (Rome)
+		name = "bookmark_apostate_julian"
+		dynasty = 1022195
+		dynasty_splendor_level = 5
+		type = male
+		birth = 331.1.1
+		title = e_roman_empire
+		government = imperial_government
+		religion = roman_pagan
+		culture = roman
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		position = { 1090 485 }
+		history_id = 145237
+
+		animation = marshal
+	}
+}
+
+bm_361_eastern_huns = {
+	start_date = 361.11.17
+	is_playable = yes
+	group = bm_group_361 
+
+	character = {# Kidara (Kidarites) ID: xionite_001
+		name = "bookmark_eastern_huns_kidara"
+		dynasty = dynasty_kidarite
+		dynasty_splendor_level = 1
+		type = male
+		birth = 338.2.4
+		title = k_kidaria
+		government = nomadic_government
+		religion = khurmazta
+		culture = xionite
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = xionite_001
+		position = { 933 488 }
+
+		animation = disapproval
+	}
+
+	character = {# Kipunada (Kushans) ID: kushan_014
+		name = "bookmark_eastern_huns_kipunada"
+		dynasty = dynasty_kushan
+		dynasty_splendor_level = 1
+		type = male
+		birth = 321.4.5
+		title = k_punjab
+		government = feudal_government
+		religion = sarvastivada
+		culture = yuezhi
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = kushan_014
+		position = { 852 725 }
+
+		animation = worry
+	}
+
+	character = {# Shapur the Great (Sassanids) ID: 180617
+		name = "bookmark_eastern_huns_shapur"
+		dynasty = 1029100
+		dynasty_splendor_level = 1
+		type = male
+		birth = 309.1.1
+		title = e_persia
+		government = eranshar_government
+		religion = mazdayasna
+		culture = persian
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = 180617
+		position = { 285 651 }
+
+		animation = war_over_tie
+
+		character = { # Shapur III (son)
+			name = "bookmark_eastern_huns_shapur_3"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = 1029100
+			type = male
+			birth = 333.1.1
+			religion = mazdayasna
+			culture = persian
+			history_id = 180616
+			animation = personality_greedy
+		}
+
+		character = { # Ardashir (Brother)
+			name = "bookmark_eastern_huns_ardashir"
+			relation = "BOOKMARK_RELATION_BROTHER"
+			dynasty = 1029100
+			type = male
+			birth = 307.1.1
+			religion = mazdayasna
+			culture = persian
+			history_id = 180614
+			animation = personality_compassionate
+		}
+
+	}
+
+	character = {# Samudragupta (Guptas) ID: 900963
+		name = "bookmark_eastern_huns_samudragupta"
+		dynasty = 1044321
+		dynasty_splendor_level = 1
+		type = male
+		birth = 311.1.1
+		title = e_bengal
+		government = gupta_government
+		religion = vaishnavism
+		culture = bengali
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = 900963
+		position = { 1135 808 }
+
+		animation = war_over_win
+
+		character = { # Ramagupta
+			name = "bookmark_eastern_huns_ramagupta"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = 1044321
+			type = male
+			birth = 349.1.1
+			religion = vaishnavism
+			culture = bengali
+			history_id = 900964
+			animation = personality_bold # personality_zealous
+		}
+
+		character = { # Chandragupta
+			name = "bookmark_eastern_huns_chandragupta"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = 1044321
+			type = male
+			birth = 352.1.1
+			religion = vaishnavism
+			culture = bengali
+			history_id = 2020123
+			animation = war_over_tie
+		}
+	}
+
+	character = {# Bagra (Afrighids) ID: 188581
+		name = "bookmark_eastern_huns_bagra"
+		dynasty = 1042112
+		dynasty_splendor_level = 1
+		type = male
+		birth = 312.1.28
+		title = k_oghuz_il
+		government = feudal_government
+		religion = khurmazta
+		culture = khwarezmian
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = 188581
+		position = { 425 246 }
+
+		animation = war_defender
+	}
+
+	character = {# Zirt (Yuni/Chach) ID: chach_001
+		name = "bookmark_eastern_huns_zirt"
+		dynasty = dynasty_yuni
+		dynasty_splendor_level = 1
+		type = male
+		birth = 335.3.5
+		title = d_chah
+		government = nomadic_government
+		religion = khurmazta
+		culture = xionite
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = chach_001
+		position = { 800 210 }
+
+		animation = personality_honorable
+	}
+
+
+}
+
+bm_361_storm_in_the_east = {
+	start_date = 361.11.17
+	is_playable = yes
+	group = bm_group_361
+
+	# Bož, King of Slavia/Antes
+	character = {
+		name = "bookmark_storm_in_the_east_boz"
+		dynasty = antes
+		dynasty_splendor_level = 1
+		type = male
+		birth = 335.1.1
+		title = k_antes
+		government = tribal_government
+		religion = slavic_pagan
+		culture = slavic
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = slavs_01
+		position = { 258 500 }
+
+		animation = personality_bold
+	}
+
+	# Hermanaric, King of the Goths
+	character = {
+		name = "bookmark_storm_in_the_east_hermanaric"
+		dynasty = 99920000
+		dynasty_splendor_level = 1
+		type = male
+		birth = 296.1.1
+		title = k_pontic_steppe
+		government = tribal_government
+		religion = gothic_pagan
+		culture = gothic
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = 992003
+		position = { 582 285 }
+
+		animation = wedding_objection_start
+	}
+
+	# Balamber, Khagan of the Huns
+	character = {
+		name = "bookmark_storm_in_the_east_balamber"
+		dynasty = 99900002
+		dynasty_splendor_level = 1
+		type = male
+		birth = 313.1.1
+		title = e_hunnic_empire
+		government = nomadic_government
+		religion = tengri_pagan
+		culture = hun
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = 990016
+		position = { 808 600 }
+
+		animation = chess_cocky
+	}
+
+	# Csaba, King of the Mogyërs
+	character = {
+		name = "bookmark_storm_in_the_east_csaba"
+		dynasty = magyar_placeholder
+		dynasty_splendor_level = 1
+		type = male
+		birth = 341.1.1
+		title = k_magyar
+		government = nomadic_government
+		religion = magyar_pagan
+		culture = mogyer
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = magyar_01
+		position = { 1188 528 }
+
+		animation = throne_room_conversation_3
+	}
+}
+
+bm_361_nile = {
+	start_date = 361.11.17
+	is_playable = yes
+	recommended = yes
+	group = bm_group_361
+
+	weight = {
+		value = 200
+	}
+
+	# Amanipilade, possibly the last known king/queen of Kush/Meroe
+	character = {
+		name = "bookmark_nile_amanipilade"
+		dynasty = dynasty_meroe_rulers_1
+		dynasty_splendor_level = 1
+		type = female
+		birth = 330.1.3
+		title = k_nubia
+		government = feudal_government
+		religion = meroitic_pagan
+		culture = meroitic
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		position = { 654 777 }
+		history_id = meroe_01
+
+		animation = beg # disbelief # disappointed
+	}
+
+	# Yisemeniye, one of the earliest attested Beja kings
+	character = {
+		name = "bookmark_nile_yisemeniye"
+		dynasty = dynasty_blemmyes_rulers
+		dynasty_splendor_level = 1
+		type = male
+		birth = 340.1.17
+		title = k_blemmyia
+		government = tribal_government
+		religion = beja_pagan
+		culture = beja
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		position = { 1155 505 }
+		history_id = blemmyes_ruler_01
+
+		animation = alto_flute_idle
+	}
+
+	# Mehadeyis/MHDYS, Axumite king who came after the famous Ezana (relation uncertain)
+	character = {
+		name = "bookmark_nile_mehadeyis"
+		dynasty = ousanid_dynasty
+		dynasty_splendor_level = 3
+		type = male
+		birth = 334.1.1
+		title = k_abyssinia
+		government = feudal_government
+		religion = nicene
+		culture = ethiopian
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		position = { 1166 808 }
+		history_id = aksum_15
+
+		animation = child_hobby_horse
+
+		# Mehadeyis' successor, Ouazeba
+		character = { 
+			name = "bookmark_nile_mehadeyis_alt_ouazeba"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = ousanid_dynasty
+			type = male
+			birth = 351.1.1
+			religion = nicene
+			culture = ethiopian
+			history_id = aksum_16
+			animation = personality_content
+		}
+
+	}
+
+	# Obedianus, Arab pagan chieftain who later became a stalwart defender of Christianity and Christian monks
+	character = {
+		name = "bookmark_nile_obedianus"
+		dynasty = dynasty_obedianus
+		dynasty_splendor_level = 1
+		type = male
+		birth = 339.6.3
+		title = c_sinai
+		government = roman_government
+		religion = nabataean_pagan
+		culture = nabatean
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		position = { 960 222 }
+		history_id = nabatean_001
+
+		animation = frontend_right_idle # reception_bride_right # war_attacker # war_defender
+	}
+
+	# Whoever's at Aswan, i.e. the head priests/prophets of Isis, currently Nesmeterpanakhet
+	character = {
+		name = "bookmark_nile_smet"
+		dynasty = dynasty_isis_priests
+		dynasty_splendor_level = 1
+		type = male
+		birth = 336.1.1
+		title = c_aswan
+		government = roman_government
+		religion = egyptian_pagan
+		culture = kemetic
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		position = { 600 369 }
+		history_id = 990902
+
+		animation = prayer # physician
+
+		# Nesmeterakhem, made the last hieroglyphic inscription
+		character = { 
+			name = "bookmark_nile_smet_alt_nesmeterakhem"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = dynasty_isis_priests
+			type = male
+			birth = 358.1.1
+			religion = egyptian_pagan
+			culture = kemetic
+			history_id = 990901
+			animation = personality_zealous
+		}
+	}
+
+
+	# Sebastianus, Manichean dux of Egypt
+	# Removed to make the bookmark less clustered
+	# character = {
+	# 	name = "bookmark_nile_sebastianos"
+	# 	dynasty = ousanid_dynasty
+	# 	dynasty_splendor_level = 1
+	# 	type = male
+	# 	birth = 321.4.5
+	# 	title = k_aegyptus
+	# 	government = imperial_government
+	# 	religion = manichean
+	# 	culture = aegyptian
+	# 	difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+	# 	position = { 666 188 }
+	# 	history_id = sebastianos_01
+
+	# 	animation = war_over_tie # qanun_idle
+	# }
+
+	# Garamantes Ruler
+	character = {
+		name = "bookmark_nile_garamantes"
+		dynasty = fezzanid
+		dynasty_splendor_level = 2
+		type = male
+		birth = 341.1.1
+		title = d_fezzan
+		government = trade_city_state_government
+		religion = ammon_pagan
+		culture = garamantian
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		position = { 285 690 }
+		history_id = garamantian_02
+
+		animation = personality_greedy
+	}
+
+}
+
+# bm_361_sahel = {
+# 	start_date = 361.11.17
+# 	is_playable = yes
+# 	#recommended = yes
+# 	group = bm_group_361
+
+# 	# Tin Hinan
+# 	character = {
+# 		name = "bookmark_sahel_tin_hinan"
+# 		dynasty = tamenoukalt
+# 		dynasty_splendor_level = 2
+# 		type = female
+# 		birth = 324.5.16
+# 		title = d_touat
+# 		government = tribal_government
+# 		religion = tuareg_pagan
+# 		culture = tuareg
+# 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+# 		position = { 777 188 }
+# 		history_id = tin_hinan_01
+
+# 		animation = hero_flex
+
+# 		character = {
+# 			name = "bookmark_sahel_tin_hinan_alt_kalla"
+# 			relation = "BOOKMARK_RELATION_DAUGHTER"
+# 			dynasty = tamenoukalt
+# 			type = female
+# 			birth = 352.6.14
+# 			culture = tuareg
+# 			religion = tuareg_pagan
+# 			history_id = tin_hinan_02
+# 			animation = personality_irrational # personality_greedy
+# 		}
+
+# 		character = {
+# 			name = "bookmark_sahel_tin_hinan_alt_takamat"
+# 			relation = "BOOKMARK_RELATION_FRIEND"
+# 			dynasty = dag_rali
+# 			type = female
+# 			birth = 330.3.3
+# 			culture = tuareg
+# 			religion = tuareg_pagan
+# 			history_id = tin_hinan_03
+# 			animation = hunting_knife_start
+# 		}
+
+# 	}
+
+# 	# Odia of Edo (Benin)
+# 	character = {
+# 		name = "bookmark_sahel_odia"
+# 		dynasty = dynn_Ogiso
+# 		dynasty_splendor_level = 1
+# 		type = male
+# 		birth = 340.1.1
+# 		title = c_benin
+# 		government = tribal_government
+# 		religion = west_african_orisha_pagan
+# 		culture = edo
+# 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+# 		position = { 808 765 }
+# 		history_id = edo_04
+
+# 		animation = manic
+# 	}
+
+# 	# Dinga Cisse, founder of Ghana/Wagadu
+# 	character = {
+# 		name = "bookmark_sahel_dinga_cisse"
+# 		dynasty = ghana
+# 		dynasty_splendor_level = 1
+# 		type = male
+# 		birth = 341.1.1
+# 		title = d_wagadu
+# 		government = tribal_government
+# 		religion = west_african_bidu_pagan
+# 		culture = soninke
+# 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+# 		position = { 476 639 }
+# 		history_id = awkar_17
+
+# 		animation = wrestling_victory # hunting_horn
+# 	}
+
+# 	# Takrur placeholder
+# 	character = {
+# 		name = "bookmark_sahel_takrur_placeholder"
+# 		dynasty = ghana
+# 		dynasty_splendor_level = 1
+# 		type = male
+# 		birth = 341.1.1
+# 		title = d_wagadu
+# 		government = tribal_government
+# 		religion = west_african_roog_pagan
+# 		culture = pulaar
+# 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+# 		position = { 285 210 }
+# 		history_id = awkar_17
+
+# 		animation = rage
+# 	}
+
+# 	# Gao placeholder
+# 	character = {
+# 		name = "bookmark_sahel_gao_placeholder"
+# 		dynasty = ghana
+# 		dynasty_splendor_level = 1
+# 		type = male
+# 		birth = 341.1.1
+# 		title = d_wagadu
+# 		government = tribal_government
+# 		religion = west_african_bidu_pagan
+# 		culture = songhai
+# 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+# 		position = { 1050 456 }
+# 		history_id = awkar_17
+
+# 		animation = dancing_plague
+# 	}
+
+# 	# character = {
+# 	# 	name = "bookmark_sahel_takrur_placeholder"
+# 	# 	dynasty = wolofdyn001
+# 	# 	dynasty_splendor_level = 1
+# 	# 	type = male
+# 	# 	birth = 330.1.1
+# 	# 	title = c_jara
+# 	# 	government = tribal_government
+# 	# 	religion = west_african_roog_pagan
+# 	# 	culture = pulaar
+# 	# 	difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+# 	# 	position = { 200 200 }
+# 	# 	history_id = wolof_01
+
+# 	# 	animation = personality_bold
+# 	# }
+
+
+# }
+
+
+
+##### 395 Bookmarks #####
+bm_395_empire = {
+	start_date = 395.1.17
+	is_playable = yes
+	recommended = yes
+	group = bm_group_395 
+
+	weight = {
+		value = 50
+	}
+
+	character = {# Emperor Honorius (Western Rome) ID: 145227
+		name = "bookmark_empire_honorius"
+		dynasty = 1022191
+		dynasty_splendor_level = 5
+		type = male
+		birth = 384.9.9
+		title = e_western_roman_empire
+		government = imperial_government
+		religion = nicene
+		culture = roman
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_VERY_HARD"
+		history_id = 145227
+		position = { 450 430 }
+
+		animation = personality_greedy
+
+		character = {
+			name = "bookmark_flavius_stilicho"
+			relation = "BOOKMARK_RELATION_REGENT"
+			dynasty = 410
+			type = male
+			birth = 359.1.1
+			culture = roman
+			religion = nicene
+			history_id = 900062
+			animation = personality_honorable
+		}
+	}
+	character = { # Emperor Arcadius (Eastern Rome) ID: 975497641
+		name = "bookmark_empire_arcadius"
+		dynasty = 1022191
+		dynasty_splendor_level = 5
+		type = male
+		birth = 377.12.1
+		title = e_byzantium
+		government = imperial_government
+		religion = nicene
+		culture = roman
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = 975497641
+		position = { 1060 600 }
+
+		animation = personality_content
+
+		character = {
+			name = "bookmark_empire_eudoxia"
+			relation = "BOOKMARK_RELATION_WIFE"
+			dynasty = 900063
+			type = female
+			birth = 378.1.1
+			culture = roman
+			religion = nicene
+			history_id = 930551279
+			animation = personality_forgiving
+		}
+	}
+}
+
+bm_395_promising_rulers = {
+	start_date = 395.1.17
+	is_playable = yes
+	group = bm_group_395 
+	weight = {
+		value = 45
+	}
+	character = { #Flavius Stilicho
+		name = "bookmark_promising_rulers_stilicho"
+		dynasty = 410
+		dynasty_splendor_level = 2
+		type = male
+		birth = 359.1.1
+		title = k_italia_suburbicariae
+		government = imperial_government
+		religion = nicene
+		culture = roman
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		position = { 520 460 }
+		history_id = 900062
+
+		animation = personality_honorable
+	}
+
+	character = { #Gildo
+		name = "bookmark_promising_rulers_gildo"
+		dynasty = nuvelan
+		dynasty_splendor_level = 2
+		type = male
+		birth = 347.1.1 
+		title = k_africae
+		government = imperial_government
+		religion = nicene
+		culture = afro_roman
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		position = { 380 680 }
+		history_id = nuvelan_11 
+
+		animation = schadenfreude
+	}
+
+	character = { #Alaric
+		name = "bookmark_promising_rulers_alaric"
+		dynasty = 99991000
+		dynasty_splendor_level = 2
+		type = male
+		birth = 375.1.1 
+		title = k_visigoths
+		government = tribal_government
+		religion = arianism
+		culture = gothic
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		position = { 1230 390 }
+		history_id = 999103 
+
+		animation = personality_bold
+	}
+
+	character = { #Faramund
+		name = "bookmark_promising_rulers_faramund"
+		dynasty = ripuri_dynasty 
+		dynasty_splendor_level = 3
+		type = male
+		birth = 365.1.1 
+		title = k_franks
+		government = tribal_government
+		religion = central_pagan
+		culture = salian
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		position = { 500 190 }
+		history_id = 900016 
+
+		animation = personality_bold
+	}
+}
+
+bm_395_middle_east = {
+	start_date = 395.1.17
+	is_playable = yes
+	group = bm_group_395 
+	weight = {
+		value = 50
+	}
+	# Sassanids
+
+	character = {# Bahram IV (Sassanid Persia) ID: 180618
+		name = "bookmark_middle_east_bahram"
+		dynasty = 1029100
+		dynasty_splendor_level = 4
+		type = male
+		birth = 350.1.1
+		title = e_persia
+		government = eranshar_government 
+		religion = mazdayasna
+		culture = persian
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = 180618
+		position = { 980 432 }
+
+		animation = personality_honorable
+
+		character = {
+			name = "bookmark_middle_east_395_yazdegerd"
+			relation = "BOOKMARK_RELATION_BROTHER"
+			dynasty = 410
+			type = male
+			birth = 369.1.1
+			religion = mazdayasna
+			culture = persian
+			history_id = 180619
+			animation = personality_forgiving
+		}
+	}
+
+	# Armenia
+
+	character = {# Vramshapuh (Armenia) ID: arsacid_58
+		name = "bookmark_middle_east_vramshapuh"
+		dynasty_house = arshakuni
+		dynasty_splendor_level = 3
+		type = male
+		birth = 370.1.1 
+		title = k_armenia
+		government = feudal_government 
+		religion = nicene
+		culture = armenian
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = arsacid_58
+		position = { 640 220 }
+
+		animation = personality_rational
+	}
+
+	# Axumites
+
+	character = {# Ouazeba (Axum) ID: aksum_16 
+		name = "bookmark_middle_east_ouazeba"
+		dynasty = ousanid_dynasty
+		dynasty_splendor_level = 2
+		type = male
+		birth = 351.1.1
+		title = k_abyssinia
+		government = feudal_government 
+		religion = nicene
+		culture = ethiopian
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = aksum_16 
+		position = { 510 820 }
+
+		animation = personality_forgiving
+	}
+
+	# Himyar - possibly first Jewish ruler of Himyar
+
+	character = {# Abu Karib (Himyarites) ID: 982001 
+		name = "bookmark_middle_east_aub_karib"
+		dynasty = himyar_dynasty
+		dynasty_splendor_level = 3
+		type = male
+		birth = 362.1.1 
+		title = k_yemen
+		government = feudal_government 
+		religion = rahmanani
+		culture = himyarite
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = 982001 
+		position = { 1110 810 }
+
+		animation = personality_bold
+	}
+
+	# Tanukhids
+
+	character = {# Mawwiya (Tanukhids) ID: tanukhid_011
+		name = "bookmark_middle_east_mawwiya"
+		dynasty = dynasty_Mawwiyid
+		dynasty_splendor_level = 2
+		type = female
+		birth = 342.1.1 
+		title = k_tanukhids
+		government = tribal_government 
+		religion = nicene
+		culture = bedouin
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = tanukhid_011 
+		position = { 410 450 }
+
+		animation = personality_bold
+
+		character = {
+			name = "bookmark_middle_east_395_khasidat"
+			relation = "BOOKMARK_RELATION_DAUGHTER"
+			dynasty = dynasty_Mawwiyid
+			type = female
+			birth = 372.1.1
+			religion = nicene
+			culture = bedouin
+			history_id = tanukhid_02
+			animation = personality_honorable
+		}
+	}
+
+	# Lakhmids
+
+	character = {# Al Nu'man (Lakhmids) ID: lakhmid_06 
+		name = "bookmark_middle_east_al-numan"
+		dynasty = lakhmid_dynasty
+		dynasty_splendor_level = 2
+		type = male
+		birth = 373.1.1 
+		title = k_lakhmid
+		government = tribal_government 
+		religion = nicene
+		culture = bedouin
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = lakhmid_06 
+		position = { 740 630 }
+
+		animation = personality_bold
+	}
+
+	# Kidarites
+
+	character = {# Kidara (Kidarites) ID: xionite_001
+		name = "bookmark_middle_east_kidara"
+		dynasty = dynasty_kidarite
+		dynasty_splendor_level = 3
+		type = male
+		birth = 338.2.4 
+		title = k_kidaria
+		government = nomadic_government 
+		religion = khurmazta
+		culture = xionite
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = xionite_001
+		position = { 1140 200 }
+
+		animation = personality_callous
+
+		character = {
+			name = "bookmark_middle_east_395_hephthalites"
+			relation = "BOOKMARK_RELATION_VASSAL"
+			dynasty = dynasty_hephthalite
+			type = male
+			birth = 343.2.21
+			religion = khurmazta
+			culture = hephthalite
+			history_id = hephthalite_001
+			animation = war_defender
+		}
+
+		character = {
+			name = "bookmark_middle_east_395_alchonids"
+			relation = "BOOKMARK_RELATION_VASSAL"
+			dynasty = dynasty_alchonid
+			type = male
+			birth = 339.1.19
+			religion = zun_pagan
+			culture = xionite
+			history_id = alchonid_001
+			animation = war_attacker
+		}
+	}
+}
+
+bm_395_eastern_steppes = {
+	start_date = 395.1.17
+	is_playable = yes
+	group = bm_group_395 
+	weight = {
+		value = 50
+	}
+
+	# Shelun, founder of the Rouran
+	character = {
+		name = "bookmark_eastern_steppes_shelun"
+		dynasty = dynasty_yujiulu
+		dynasty_splendor_level = 1 
+		type = male
+		birth = 358.1.1 
+		title = d_otuken 
+		government = nomadic_government
+		religion = tengri_pagan
+		culture = rouran
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = yujiulu_072 
+		position = { 1155 135 }
+
+		animation = hunting_falcon
+
+		character = { # Hulu, brother of Shelun and successor
+			name = "bookmark_eastern_steppes_shelun_hulu"
+			relation = "BOOKMARK_RELATION_BROTHER"
+			dynasty = dynasty_yujiulu
+			type = male
+			birth = 360.1.1
+			religion = tengri_pagan
+			culture = rouran
+			history_id = yujiulu_073
+			animation = war_attacker
+		}
+
+		character = { # Jiguizhi, brother of Shelun and father (?) of the third Rouran Khan, Buluzhen
+			name = "bookmark_eastern_steppes_shelun_buluzhen"
+			relation = "BOOKMARK_RELATION_BROTHER"
+			dynasty = dynasty_yujiulu
+			type = male
+			birth = 361.1.1
+			religion = tengri_pagan
+			culture = rouran
+			history_id = yujiulu_074
+			animation = war_defender
+		}
+
+	}
+
+	# Li Gao, founder of Western Liang, ancestor of the Tang Dynasty
+	character = {
+		name = "bookmark_eastern_steppes_li_gao"
+		dynasty = dynasty_li_liang
+		dynasty_splendor_level = 1 
+		type = male
+		birth = 351.7.16
+		title = c_shazhou 
+		government = feudal_government
+		religion = zhengyi
+		culture = han
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = western_liang_005 
+		position = { 852 765 }
+
+		animation = chess_certain_win
+
+		character = { # Song Yao, Li Gao's half-brother and trusted advisor/official
+			name = "bookmark_eastern_steppes_li_gao_song_yao"
+			relation = "BOOKMARK_RELATION_BROTHER"
+			dynasty = dynasty_song_liang
+			type = male
+			birth = 361.6.9
+			religion = zhengyi
+			culture = han
+			history_id = western_liang_004
+			animation = throne_room_writer
+		}
+
+		character = { # Guo Nen, Li Gao's associate and a mystic/official who led a failed rebellion against Lu Guang
+			name = "bookmark_eastern_steppes_li_gao_guo_nen"
+			relation = "BOOKMARK_RELATION_FRIEND"
+			dynasty = dynasty_guo_liang
+			type = male
+			birth = 340.5.28
+			religion = zhengyi
+			culture = han
+			history_id = liang_007
+			animation = wedding_priest
+		}
+
+	}
+
+	# Juqu Mengxun, second ruler of Northern Liang and its real founder
+	character = {
+		name = "bookmark_eastern_steppes_juqu_mengxun"
+		dynasty = dynasty_juqu_liang
+		dynasty_splendor_level = 1 
+		type = male
+		birth = 368.4.28
+		title = c_suzhou 
+		government = feudal_government
+		religion = mahayana
+		culture = xiongnu
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = xiongnu_008 
+		position = { 1111 825 }
+
+		animation = hunting_knife_start
+
+		character = { # Duan Ye, founder of Northern Liang who was persuaded/manipulated by Juqu Mengxun into beocming independent
+			name = "bookmark_eastern_steppes_juqu_mengxun_duan_ye"
+			relation = "BOOKMARK_RELATION_LIEGE"
+			dynasty = dynasty_duan
+			type = male
+			birth = 352.9.14
+			religion = mahayana
+			culture = han
+			history_id = liang_001
+			animation = personality_coward
+		}
+
+		character = { # Juqu Nancheng, Juqu Mengxun's younger brother who rebelled with him but was later betrayed by Juqu Mengxun who tricked Duan Ye into executing him
+			name = "bookmark_eastern_steppes_juqu_mengxun_juqu_nancheng"
+			relation = "BOOKMARK_RELATION_BROTHER"
+			dynasty = dynasty_juqu_liang
+			type = male
+			birth = 370.11.2
+			religion = mahayana
+			culture = xiongnu
+			history_id = xiongnu_007
+			animation = eavesdrop
+		}
+
+	}
+
+	# Lü Guang, founder of Later Liang
+	character = {
+		name = "bookmark_eastern_steppes_lu_guang"
+		dynasty = dynasty_lu_later_liang
+		dynasty_splendor_level = 1 
+		type = male
+		birth = 337.12.8
+		title = k_liang_later 
+		government = feudal_government
+		religion = mahayana
+		culture = di
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = di_001 
+		position = { 1035 476 }
+
+		animation = spymaster
+
+		character = { # Lu Zuan, Lu Guang's asshole son who usurped his brother
+			name = "bookmark_eastern_steppes_lu_guang_lu_zuan"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = dynasty_lu_later_liang
+			type = male
+			birth = 370.10.9
+			religion = mahayana
+			culture = di
+			history_id = di_002
+			animation = chess_cocky
+		}
+
+		character = { # Lu Shao, Lu Guang's son
+			name = "bookmark_eastern_steppes_lu_guang_lu_shao"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = dynasty_lu_later_liang
+			type = male
+			birth = 378.6.1
+			religion = mahayana
+			culture = di
+			history_id = di_004
+			animation = sadness
+		}
+
+	}
+
+	# Hulu Beihouli, Tiele chieftain of the Hulu tribe who fought against the Shelun/Rouran
+	character = {
+		name = "bookmark_eastern_steppes_hulu_beihouli"
+		dynasty = hulu
+		dynasty_splendor_level = 1 
+		type = male
+		birth = 362.3.7
+		title = d_arkhangai 
+		government = nomadic_government
+		religion = tengri_pagan
+		culture = tiele
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = tiele_02 
+		position = { 852 248 }
+
+		animation = chess_certain_win # personality_greedy
+	}
+
+	# Bai Zhen, king of Kucha
+	character = {
+		name = "bookmark_eastern_steppes_bai_zhen"
+		dynasty = 1040052
+		dynasty_splendor_level = 1 
+		type = male
+		birth = 345.6.15
+		title = k_kucha 
+		government = trade_city_state_government
+		religion = sarvastivada
+		culture = tocharian
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = kucha_009 
+		position = { 528 753 }
+
+		animation = fear
+	}
+
+	# Wujiutu, fictitious Wusun ruler
+	character = {
+		name = "bookmark_eastern_steppes_wusun_ruler"
+		dynasty = dynasty_kunmi
+		dynasty_splendor_level = 1 
+		type = male
+		birth = 369.12.16
+		title = k_wusun 
+		government = nomadic_government
+		religion = tengri_pagan
+		culture = wusun
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_VERY_HARD"
+		history_id = wusun_002 
+		position = { 515 404 }
+
+		animation = paranoia
+	}
+
+
+}
+
+
+##### 476 Bookmarks #####
+
+## The Fallen Eagle
+bm_476_ravenna = {
+	start_date = 476.9.4
+	is_playable = yes
+	group = bm_group_476
+	weight = {
+		value = 80
+	}
+	character = {# Zeno (Eastern Roman Empire)
+		name = "bookmark_ravenna_zeno"
+		dynasty = kodissa_dynasty
+		dynasty_splendor_level = 3 
+		type = male
+		birth = 425.1.1 
+		title = e_byzantium 
+		government = imperial_government
+		religion = chalcedonian
+		culture = greek
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = 70515 
+		position = { 1060 600 }
+
+		animation = dismissal
+	}
+	character = {# Odoacer (Italia)
+		name = "bookmark_ravenna_odoacer"
+		dynasty = 99960000
+		dynasty_splendor_level = 2
+		type = male
+		birth = 431.1.1 
+		title = k_italy
+		government = roman_government
+		religion = arianism
+		culture = scirian
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = 996002
+		position = { 425 430 }
+
+		animation = personality_bold
+	}
+	character = {# Nepos (Illyria)
+		name = "bookmark_ravenna_nepos"
+		dynasty = nepos_dynasty
+		dynasty_splendor_level = 2
+		type = male
+		birth = 439.1.1
+		title = k_croatia
+		government = autocratic_government
+		religion = chalcedonian
+		culture = illyro_roman
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = nepos_02 
+		position = { 750 250 }
+
+		animation = personality_bold
+	}
+	character = {# Genseric (Vandalia)
+		name = "bookmark_ravenna_genseric"
+		dynasty = hasding
+		dynasty_splendor_level = 3
+		type = male
+		birth = 389.1.1
+		title = k_vandals
+		government = feudal_government
+		religion = arianism
+		culture = vandal
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = vandals_003 
+		position = { 300 775 }
+
+		animation = personality_bold
+	}
+}
+## Heirs of Rome
+bm_476_heirs = {
+	start_date = 476.9.4
+	is_playable = yes
+	recommended = yes
+	group = bm_group_476
+
+	weight = {
+		value = 75
+	}
+
+	character = {# Syagrius (Soissons)
+		name = "bookmark_ravenna_syagrius"
+		dynasty = syagri
+		dynasty_splendor_level = 2
+		type = male
+		birth = 441.1.1 
+		title = k_france
+		government = autocratic_government
+		religion = chalcedonian
+		culture = gallo_roman
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_VERY_HARD"
+		history_id = syagri_06
+		position = { 400 350 }
+
+		animation = worry
+	}
+	character = {# Euric (Visigoths)
+		name = "bookmark_heirs_euric"
+		dynasty = 99991000
+		dynasty_splendor_level = 2
+		type = male
+		birth = 440.1.1 
+		title = k_visigoths
+		government = roman_government
+		religion = arianism
+		culture = gothic
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = 200284
+		position = { 700 600 }
+
+		animation = personality_bold
+	}
+	character = {# Clovis Franks
+		name = "bookmark_heirs_childerik"
+		dynasty = 99970001
+		dynasty_splendor_level = 1
+		type = male
+		birth = 437.1.1 
+		title = c_brugge
+		government = feudal_government
+		religion = central_pagan
+		culture = salian
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = 997004
+		position = { 675 200 }
+
+		animation = personality_honorable
+
+	}
+	character = {# Hermenerich Suevi
+		name = "bookmark_heirs_hermenerich"
+		dynasty = massilid_dynasty
+		dynasty_splendor_level = 1
+		type = male
+		birth = 449.1.1 
+		title = k_suebi
+		government = feudal_government
+		religion = arianism
+		culture = old_suebi
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = maldras_06
+		position = { 350 700 }
+
+		animation = schadenfreude
+	}
+	character = {# Feletheus Rugi
+		name = "bookmark_heirs_feletheus"
+		dynasty = 99993001
+		dynasty_splendor_level = 1
+		type = male
+		birth = 435.1.1 
+		title = k_rugiland
+		government = feudal_government
+		religion = arianism
+		culture = rugian
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = rugian_03
+		position = { 1000 325 }
+
+		animation = dismissal
+	}
+	character = {# Theodoric (Ostrogothica)
+		name = "bookmark_heirs_theodoric"
+		dynasty = 99920000
+		dynasty_splendor_level = 3
+		type = male
+		birth = 454.1.1
+		title = k_ostrogoths
+		government = feudal_government
+		religion = arianism
+		culture = ostrogothic
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = 992016 
+		position = { 1150 475 }
+
+		animation = personality_honorable
+	}
+}
+
+#Old North
+bm_476_old_north = {
+	start_date = 476.9.4
+	is_playable = yes
+	group = bm_group_476
+	weight = {
+		value = 70
+	}
+	character = {# Ambrosius (Aurelianus)
+		name = "bookmark_old_north_ambrosius"
+		dynasty = constantinus_dynasty
+		dynasty_house = house_Aurelianus
+		dynasty_splendor_level = 3
+		type = male
+		birth = 448.1.1
+		title = d_gloucester
+		government = feudal_government
+		religion = chalcedonian
+		culture = britano_roman
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = constantinus_05 # Ambrosius Aurelianus 
+		position = { 800 705 }
+
+		animation = personality_honorable
+		character = { #Uther
+			name = "bookmark_empire_uther"
+			relation = "BOOKMARK_RELATION_BROTHER"
+			dynasty = house_Aurelianus
+			type = male
+			birth = 452.1.1
+			religion = chalcedonian
+			culture = britano_roman
+			history_id = constantinus_08
+			animation = personality_forgiving
+		}
+	}
+	character = {# Ceredig (Ceredic of Wessex)
+		name = "bookmark_old_north_ceredig"
+		dynasty = 1047006
+		dynasty_splendor_level = 1
+		type = male
+		birth = 460.1.1
+		title = c_somerset
+		government = feudal_government
+		religion = briton_pagan
+		culture = britano_roman
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = 205141 # Ceredig
+		position = { 650 575 }
+
+		animation = personality_forgiving
+	}
+	character = {# Riothamus (Riothamus)
+		name = "bookmark_old_north_riothamus"
+		dynasty = riothamus_dynasty
+		dynasty_splendor_level = 1
+		type = male
+		birth = 439.1.1
+		title = d_bedford
+		government = autocratic_government
+		religion = pelagianism
+		culture = britano_roman
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = londinium_01 # Riothamus
+		position = { 1200 375 }
+
+		animation = personality_zealous
+	}
+	character = {# Hengest (Hengest and Horsa)
+		name = "bookmark_old_north_hengest"
+		dynasty = 1047001
+		dynasty_splendor_level = 1
+		type = male
+		birth = 421.1.1
+		title = d_canterbury
+		government = feudal_government
+		religion = saxon_pagan
+		culture = jute
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = vigg_04 # Hengest
+		position = { 1450 550 }
+
+		animation = personality_bold
+
+		#character = { #Oisc
+		#	name = "bookmark_empire_oisc"
+		#	relation = "BOOKMARK_RELATION_SON"
+		#	dynasty = 1047001
+		#	type = male
+		#	birth = 450.1.1
+		#	culture = jute
+		#	religion = saxon_pagan
+		#	history_id = 205028
+		#	animation = personality_forgiving
+		#}
+	}
+	character = {# Aelle (Aelle of Susex)
+		name = "bookmark_old_north_aelle"
+		dynasty = aelling_dynasty
+		dynasty_splendor_level = 1
+		type = male
+		birth = 422.1.1
+		title = c_sussex
+		government = feudal_government
+		religion = saxon_pagan
+		culture = old_saxon
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = aelling_01 # Hengest
+		position = { 1300 755 }
+
+		animation = personality_bold
+
+		#character = { #Cissa
+		#	name = "bookmark_empire_cissa"
+		#	relation = "BOOKMARK_RELATION_SON"
+		#	dynasty = aelling_dynasty
+		#	type = male
+		#	birth = 458.1.1
+		#	culture = old_saxon
+		#	religion = saxon_pagan
+		#	history_id = aelling_02
+		#	animation = personality_bold
+		#}
+	}
+	character = {# Cadwallon
+		name = "bookmark_old_north_cadwallon"
+		dynasty = 99850007 
+		dynasty_splendor_level = 2
+		type = male
+		birth = 440.1.1 
+		title = d_gwynedd
+		government = tribal_government
+		religion = chalcedonian
+		culture = britano_roman
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = 159012
+		position = { 850 435 }
+
+		animation = personality_rational
+	}
+}
+
+
+bm_476_hunas_invasion = {
+	start_date = 476.9.4
+	is_playable = yes
+	group = bm_group_476
+	weight = {
+		value = 100
+	}
+
+
+	character = {# Budhagupta - current Gupta ruler
+		name = "bookmark_hunas_invasion_budhagupta"
+		dynasty = 1044321 
+		dynasty_splendor_level = 1
+		type = male
+		birth = 456.1.1 
+		title = e_bengal
+		government = gupta_government
+		religion = vaishnavism
+		culture = magadhi
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = gupta_12
+		position = { 852 285 }
+
+		animation = shame
+	}
+
+
+	character = {# Khingila - Alchon Hun
+		name = "bookmark_hunas_invasion_khingila"
+		dynasty = dynasty_alchonid 
+		dynasty_splendor_level = 1
+		type = male
+		birth = 418.3.9 
+		title = k_alchon_hun
+		government = nomadic_government
+		religion = shaivism
+		culture = xionite
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = alchonid_005
+		position = { 438 150 }
+
+		animation = personality_vengeful
+
+		character = { # Toramana
+			name = "bookmark_hunas_invasion_khingila_toramana"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = dynasty_alchonid
+			type = male
+			birth = 451.4.17
+			religion = zun_pagan
+			culture = xionite
+			history_id = alchonid_010
+			animation = marshal
+		}
+
+		character = { # Mihirakula
+			name = "bookmark_hunas_invasion_khingila_mihirakula"
+			relation = "BOOKMARK_RELATION_GRANDSON"
+			dynasty = dynasty_alchonid
+			type = male
+			birth = 474.3.9
+			religion = shaivism
+			culture = xionite
+			history_id = alchonid_011
+			animation = rage
+		}
+
+	}
+
+
+	character = { # Nandivarman - Pallava
+		name = "bookmark_hunas_invasion_skandavarman"
+		dynasty = 1043007 
+		dynasty_splendor_level = 1
+		type = male
+		birth = 432.1.1 
+		title = d_tondai_nadu
+		government = feudal_government
+		religion = shaivism
+		culture = tamil
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = pallava_02
+		position = { 1006 676 }
+
+		animation = personality_honorable
+	}
+
+
+	character = { # Harishena/Harisena - Vakataka
+		name = "bookmark_hunas_invasion_harishena"
+		dynasty_house = house_Vatsagulma 
+		dynasty_splendor_level = 1
+		type = male
+		birth = 452.1.1 
+		title = d_devagiri
+		government = feudal_government
+		religion = sarvastivada
+		culture = marathi
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = vatsugulma_03
+		position = { 562 606 }
+
+		animation = personality_zealous
+	}
+
+	character = { # Kassapa - Lanka/Anuradhapura
+		name = "bookmark_hunas_invasion_kassapa"
+		dynasty = moriya_dynasty 
+		dynasty_splendor_level = 1
+		type = male
+		birth = 443.1.1 
+		title = k_lanka
+		government = feudal_government
+		religion = theravada
+		culture = sinhala
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = moriya_03
+		position = { 717 825 }
+
+		animation = anger
+
+		character = { # Moggallana
+			name = "bookmark_hunas_invasion_kassapa_moggallana"
+			relation = "BOOKMARK_RELATION_BROTHER"
+			dynasty = moriya_dynasty
+			type = male
+			birth = 446.1.1
+			religion = theravada
+			culture = sinhala
+			history_id = moriya_04
+			animation = dismissal
+		}
+
+	}
+
+	
+	character = {# Kunkhas - Last Kidarite
+		name = "bookmark_hunas_invasion_kunkhas"
+		dynasty = dynasty_kidarite 
+		dynasty_splendor_level = 2
+		type = male
+		birth = 436.3.14
+		title = k_kidaria
+		government = nomadic_government
+		religion = khurmazta
+		culture = xionite
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_VERY_HARD"
+		history_id = xionite_003
+		position = { 400 400 }
+
+		animation = sadness
+	}
+
+
+}
+
+bm_476_beyond_the_vistula_river = {
+	start_date = 476.9.4
+	is_playable = yes
+	group = bm_group_476 
+	test_default = yes
+	weight = {
+		value = 45
+	}
+	character = {# Cech
+		name = "bookmark_beyond_the_vistula_river_cech"
+		dynasty = dynasty_Pan 
+		dynasty_splendor_level = 1
+		type = male
+		birth = 449.1.1
+		title = d_san
+		government = tribal_government
+		religion = slavic_pagan
+		culture = sclavenian
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = slavs_22
+		position = { 400 650 }
+
+		animation = personality_compassionate
+	}
+	character = {# Lech
+		name = "bookmark_beyond_the_vistula_river_lech"
+		dynasty = dynasty_Pan 
+		dynasty_splendor_level = 1
+		type = male
+		birth = 458.1.1
+		title = d_bug
+		government = tribal_government
+		religion = slavic_pagan
+		culture = sclavenian
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = slavs_25
+		position = { 450 400 }
+
+		animation = happiness
+	}
+	character = {# Rus
+		name = "bookmark_beyond_the_vistula_river_rus"
+		dynasty = dynasty_Pan 
+		dynasty_splendor_level = 1
+		type = male
+		birth = 452.1.1
+		title = d_turov
+		government = tribal_government
+		religion = slavic_pagan
+		culture = sclavenian
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = slavs_23
+		position = { 800 450 }
+
+		animation = personality_forgiving
+	}
+	character = {# Kyi
+		name = "bookmark_beyond_the_vistula_river_kyi"
+		dynasty = kyi 
+		dynasty_splendor_level = 1
+		type = male
+		birth = 449.1.1
+		title = d_kiev
+		government = tribal_government
+		religion = slavic_pagan
+		culture = antean
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = anteans_13
+		position = { 950 700 }
+
+		animation = hunting_falcon
+	}
+}
+
+bm_532_reconquest = {
+	start_date = 532.2.1
+	is_playable = yes
+	recommended = yes
+	group = bm_group_532
+	weight = {
+		value = 150
+	}
+
+	character = {# Belisarius (Count of Adrianopolis)
+		name = "bookmark_reconquest_belisarius"
+		dynasty = belisarius_dynasty
+		dynasty_splendor_level = 1 
+		type = male
+		birth = 500.8.28 
+		title = c_adrianopolis 
+		government = imperial_government
+		religion = chalcedonian
+		culture = thracio_roman
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = belisarius_001 
+		position = { 690 188 }
+
+		animation = personality_honorable
+	}
+	character = {# Iustinianus (Emperor of the Roman Empire)
+		name = "bookmark_reconquest_justinian"
+		dynasty = justinianline
+		dynasty_splendor_level = 3 
+		type = male
+		birth = 482.5.11
+		title = e_byzantium
+		government = imperial_government
+		religion = chalcedonian
+		culture = illyro_roman
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = 70512
+		position = { 1030 320 }
+
+		animation = personality_rational
+
+		# Empress Theodora
+		character = {
+			name = "bookmark_reconquest_justinian_alt_theodora"
+			relation = "BOOKMARK_RELATION_WIFE"
+			#dynasty = 0
+			type = female
+			birth = 500.1.1
+			culture = coptic
+			religion = syrian
+			history_id = syria_19
+			animation = war_over_win
+		}
+
+	}
+
+
+	# Mundus, Gepid King
+	character = {
+		name = "bookmark_reconquest_mundus"
+		dynasty = 99910000
+		dynasty_splendor_level = 2
+		type = male
+		birth = 476.1.1
+		title = k_daciae
+		government = feudal_government
+		religion = "arianism"
+		culture = "gepid"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = 991004
+		position = { 528 420 }
+
+		animation = marshal
+	}
+
+	# John of Cappadocia
+	character = {
+		name = "bookmark_reconquest_john_cappadocian"
+		dynasty = cappadocia_dynasty
+		dynasty_splendor_level = 1
+		type = male
+		birth = 490.1.1
+		title = k_orientis
+		government = imperial_government
+		religion = "chalcedonian"
+		culture = "cappadocian"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = cappadocia_07
+		position = { 852 725 }
+
+		animation = disapproval
+	}
+
+
+}
+
+bm_532_merovingians = {
+	start_date = 532.2.1
+	is_playable = yes
+	group = bm_group_532
+	weight = {
+		value = 50
+	}
+
+	character={
+		name="bookmark_merovingian_clothar"
+		dynasty=99970001
+		dynasty_splendor_level = 4
+		type=male
+		birth=497.1.1
+		title=k_frankish_soissons
+		government=feudal_government
+		religion = "chalcedonian"
+		culture = frankish
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = 997013
+		position = { 357 169 }
+
+		animation = war_defender
+	}
+
+	character={
+		name="bookmark_merovingian_theodoric"
+		dynasty=99970001
+		dynasty_splendor_level = 4
+		type=male
+		birth=485.1.1
+		title=k_frankish_rheims
+		government=feudal_government
+		religion = "chalcedonian"
+		culture = frankish
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = 997009
+		position = { 699 420 }
+
+		animation = personality_callous
+	}
+
+	character={
+		name="bookmark_merovingian_childebert"
+		dynasty=99970001
+		dynasty_splendor_level = 4
+		type=male
+		birth=498.1.1
+		title=k_frankish_paris
+		government=feudal_government
+		religion = "chalcedonian"
+		culture = frankish
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = 997012
+		position = { 300 725 }
+
+		animation = chess_certain_win
+	}
+
+
+}
+
+bm_532_anushirvan = {
+	start_date = 532.2.1
+	is_playable = yes
+	group = bm_group_532
+	weight = {
+		value = 50
+	}
+
+	# Khosrau I "Anushirvan"
+	character = {
+		name = "bookmark_anushirvan_khosrau"
+		dynasty = 1029100
+		dynasty_splendor_level = 5
+		type = male
+		birth = 513.1.1
+		title = e_persia
+		government = eranshar_government
+		religion = "mazdayasna"
+		culture = "persian"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = 180628
+		position = { 654 480 } # 705 420
+
+		animation = personality_bold
+	}
+
+	# Mihirakula, the fearsome Alchon Hun, recently defeated
+	character = {
+		name = "bookmark_anushirvan_mihirakula"
+		dynasty = dynasty_alchonid
+		dynasty_splendor_level = 3
+		type = male
+		birth = 474.3.9
+		title = k_alchon_hun
+		government = nomadic_government
+		religion = "shaivism"
+		culture = "xionite"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = alchonid_011
+		position = { 1166 543 }
+
+		animation = war_over_loss
+	}
+
+
+	# Yashodharman, the guy who led the army that yeeted the Huns out of most of India
+	character = {
+		name = "bookmark_anushirvan_yashodharman"
+		dynasty = aulikara_dynasty
+		dynasty_splendor_level = 3
+		type = male
+		birth = 493.1.1
+		title = k_malwa
+		government = gupta_government
+		religion = "pashupata"
+		culture = "malvi"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = aulikara_09
+		position = { 969 842 }
+
+		animation = hunting_knife_start
+	}
+
+	# Katulf, Hephthalite turncoat
+	character = {
+		name = "bookmark_anushirvan_katulf"
+		dynasty = dynasty_katulf
+		dynasty_splendor_level = 1
+		type = male
+		birth = 500.2.8
+		title = d_merv
+		government = nomadic_government
+		religion = "khurmazta"
+		culture = "hephthalite"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = hephthalite_misc_017
+		position = { 725 185 }
+
+		animation = personality_vengeful
+
+		character = { # Gatfar
+			name = "bookmark_anushirvan_katulf_alt_gatfar"
+			relation = "BOOKMARK_RELATION_LIEGE"
+			dynasty = dynasty_hephthalite
+			type = male
+			birth = 515.9.2
+			religion = khurmazta
+			culture = hephthalite
+			history_id = hephthalite_007
+			animation = personality_coward # personality_dishonorable
+		}
+	}
+
+	# Gatfar, last Hephthalite king
+	# character = {
+	# 	name = "bookmark_anushirvan_gatfar"
+	# 	dynasty = dynasty_hephthalite
+	# 	dynasty_splendor_level = 1
+	# 	type = male
+	# 	birth = 515.9.2
+	# 	title = e_hephthalite
+	# 	government = nomadic_government
+	# 	religion = "khurmazta"
+	# 	culture = "hephthalite"
+	# 	difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+	# 	history_id = hephthalite_007
+	# 	position = { 936 150 }
+
+	# 	animation = personality_dishonorable
+	# }
+
+	# Ashina Tuwu, UWU father of the founder of the Gokturks
+	character = {
+		name = "bookmark_anushirvan_ashina_tuwu"
+		dynasty = 12269
+		dynasty_splendor_level = 1
+		type = male
+		birth = 449.1.1
+		title = d_altay
+		government = nomadic_government
+		religion = "tengri_pagan"
+		culture = "tujue"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = ashina_03
+		position = { 1122 208 }
+
+		animation = go_to_your_room
+
+		character = { # Bumin
+			name = "bookmark_anushirvan_ashina_tuwu_bumin"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = 12269
+			type = male
+			birth = 501.1.1
+			religion = tengri_pagan
+			culture = tujue
+			history_id = ashina_04
+			animation = personality_vengeful
+		}
+
+		character = { # Istemi
+			name = "bookmark_anushirvan_ashina_tuwu_istemi"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = 12269
+			type = male
+			birth = 504.1.1
+			religion = tengri_pagan
+			culture = tujue
+			history_id = ashina_05
+			animation = marshal # personality_honorable
+		}
+
+	}
+
+	# Al-Harith ibn Jabalah, Ghassanid king
+	character = {
+		name = "bookmark_anushirvan_al_harith"
+		dynasty = 99820002
+		dynasty_splendor_level = 2
+		type = male
+		birth = 502.1.1
+		title = k_ghassanid
+		government = feudal_government
+		religion = "syriac"
+		culture = "bedouin"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = ghassanid_27
+		position = { 258 528 }
+
+		animation = chess_cocky
+	}
+
+	# Al-Mundhir III ibn al-Nu'man
+	character = {
+		name = "bookmark_anushirvan_al_mundhir"
+		dynasty = lakhmid_dynasty
+		dynasty_splendor_level = 2
+		type = male
+		birth = 486.1.1
+		title = k_lakhmid
+		government = feudal_government
+		religion = "nestorian"
+		culture = "bedouin"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = lakhmid_14
+		position = { 532 767 }
+
+		animation = wrestling_victory # laugh
+	}
+
+}
+
+bm_532_legacy_of_theodoric = {
+	start_date = 532.2.1
+	is_playable = yes
+	group = bm_group_532
+	weight = {
+		value = 50
+	}
+
+	# Athalaric, Ostrogothic king
+	character = {
+		name = "bookmark_theodoric_athalaric"
+		dynasty = 99920000
+		dynasty_splendor_level = 3
+		type = male
+		birth = 516.1.1
+		title = k_ostrogoths
+		government = feudal_government
+		religion = "arianism"
+		culture = "ostrogothic"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = 992023
+		position = { 808 164 }
+
+		animation = eyeroll
+
+		character = { # Theodahad (cousin)
+			name = "bookmark_theodoric_alt_theodahad"
+			relation = "BOOKMARK_RELATION_COUSIN"
+			dynasty = 99920000
+			type = male
+			birth = 485.1.1
+			religion = arianism
+			culture = ostrogothic
+			history_id = 992022
+			animation = scheme
+		}
+
+
+		character = { # Amalasuntha (mom)
+			name = "bookmark_theodoric_alt_amalasuntha"
+			relation = "BOOKMARK_RELATION_MOTHER"
+			dynasty = 99920000
+			type = female
+			birth = 485.1.1
+			religion = arianism
+			culture = ostrogothic
+			history_id = 992020
+			animation = personality_callous
+		}
+
+	}
+
+	# Gelimer, last Vandal
+	character = {
+		name = "bookmark_theodoric_gelimer"
+		dynasty = hasding
+		dynasty_splendor_level = 2
+		type = male
+		birth = 480.1.1
+		title = k_vandals
+		government = feudal_government
+		religion = "arianism"
+		culture = "vandal"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_VERY_HARD"
+		history_id = vandals_012
+		position = { 864 616 }
+
+		animation = personality_irrational
+
+		character = { # Ammatas (brother)
+			name = "bookmark_theodoric_alt_ammatas"
+			relation = "BOOKMARK_RELATION_BROTHER"
+			dynasty = hasding
+			type = male
+			birth = 494.1.1
+			religion = arianism
+			culture = ostrogothic
+			history_id = vandals_013b
+			animation = personality_bold
+		}
+
+		character = { # Tzazo (brother)
+			name = "bookmark_theodoric_alt_tzazo"
+			relation = "BOOKMARK_RELATION_BROTHER"
+			dynasty = hasding
+			type = male
+			birth = 490.1.1
+			religion = arianism
+			culture = ostrogothic
+			history_id = vandals_013
+			animation = war_defender
+		}
+
+	}
+
+
+	# Iabdas, Berber chief who held back Romans for a while
+	character = {
+		name = "bookmark_theodoric_iabdas"
+		dynasty = dynasty_iabdas
+		dynasty_splendor_level = 1
+		type = male
+		birth = 495.1.1
+		title = d_avaritana
+		government = feudal_government
+		religion = "chalcedonian"
+		culture = "maurian"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = mauri_42
+		position = { 600 842 }
+
+		animation = war_attacker
+	}
+
+	# Masuna, Altava ally
+	character = {
+		name = "bookmark_theodoric_masuna"
+		dynasty = dynasty_masuna
+		dynasty_splendor_level = 1
+		type = male
+		birth = 485.1.1
+		title = k_mauro_roman_kingdom
+		government = autocratic_government
+		religion = "chalcedonian"
+		culture = "mauro_roman"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = mauro_roman_kings_02
+		position = { 300 800 }
+
+		animation = personality_greedy
+	}
+
+	# Theudis, King of the Visigoths
+	character = {
+		name = "bookmark_theodoric_theudis"
+		dynasty = 99920001
+		dynasty_splendor_level = 1
+		type = male
+		birth = 490.1.1
+		title = k_visigoths
+		government = feudal_government
+		religion = "arianism"
+		culture = "ostrogothic"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = 200280
+		position = { 325 202 }
+
+		animation = personality_forgiving
+	}
+
+}
+
+bm_532_height_of_axum = {
+	start_date = 532.2.1
+	is_playable = yes
+	group = bm_group_532
+	weight = {
+		value = 50
+	}
+
+	
+	# Kaleb, Aksumite Emperor
+	character = {
+		name = "bookmark_axum_kaleb"
+		dynasty = ousanid_dynasty_2
+		dynasty_splendor_level = 3
+		type = male
+		birth = 495.1.1
+		title = e_abyssinia
+		government = feudal_government
+		religion = "coptic"
+		culture = "ethiopian"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = aksum_21
+		position = { 428 800 }
+
+		animation = personality_callous
+
+
+		character = { # Wa'zeb
+			name = "bookmark_axum_kaleb_alt_wazeb"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = ousanid_dynasty_2
+			type = male
+			birth = 513.1.1
+			religion = coptic
+			culture = ethiopian
+			history_id = aksum_26
+			animation = personality_forgiving
+		}
+
+		character = { # Gabra
+			name = "bookmark_axum_kaleb_alt_gabra"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = ousanid_dynasty_2
+			type = male
+			birth = 516.1.1
+			religion = coptic
+			culture = ethiopian
+			history_id = aksum_22
+			animation = personality_content
+		}
+
+	}
+
+	# Eirpanome, King of Nobatia and an early supporter of Christianity
+	character = {
+		name = "bookmark_axum_eirpanome"
+		dynasty = 101778
+		dynasty_splendor_level = 1
+		type = male
+		birth = 490.1.8
+		title = d_nobatia
+		government = feudal_government
+		religion = "coptic"
+		culture = "nubian"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = 166185
+		position = { 243 532 }
+
+		animation = personality_zealous
+	}
+
+	# Kharakhen, King of the Blemmyes attested in the (early?) 6th century
+	character = {
+		name = "bookmark_axum_kharakhen"
+		dynasty = dynasty_blemmyes_rulers
+		dynasty_splendor_level = 1
+		type = male
+		birth = 491.11.3
+		title = k_blemmyia
+		government = tribal_government
+		religion = "beja_pagan"
+		culture = "beja"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = blemmyes_ruler_09
+		position = { 606 400 }
+
+		animation = hunting_falcon
+	}
+
+
+	# Abraha, Aksumite general and viceroy of South Arabia after the conquest of Himyar who proclaimed himself king and told Kaleb to piss off
+	character = {
+		name = "bookmark_axum_abraha"
+		dynasty = dynasty_abraha
+		dynasty_splendor_level = 1
+		type = male
+		birth = 493.1.1
+		title = k_yemen
+		government = feudal_government
+		religion = "coptic"
+		culture = "ethiopian"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = aksum_21
+		position = { 963 543 }
+
+		animation = chess_certain_win
+
+		character = {
+			name = "bookmark_axum_abraha_alt_rihana"
+			relation = "BOOKMARK_RELATION_WIFE"
+			#dynasty = 0
+			type = female
+			birth = 510.1.1
+			culture = himyarite
+			religion = rahmanani
+			history_id = himyarite_34
+			animation = personality_irrational
+		}
+
+	}
+
+	# Ma'dikarib, son of former Himyarite king Shuyafa, trying to overthrow Abraha with Yazid ibn Kabasha, Jewish merchant
+	# character = {
+	# 	name = "bookmark_axum_madikarib"
+	# 	dynasty = dynasty_abraha # ADD DYNASTY LATER
+	# 	dynasty_splendor_level = 1
+	# 	type = male
+	# 	birth = 512.1.1
+	# 	title = c_tihamat-al-yamani
+	# 	government = feudal_government
+	# 	religion = "coptic"
+	# 	culture = "himyarite"
+	# 	difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+	# 	history_id = himyarite_29
+	# 	position = { 888 825 }
+
+	# 	animation = rage
+	# }
+
+	# Yazid ibn Kabasha, led a revolt against Abraha
+	character = {
+		name = "bookmark_axum_yazid"
+		dynasty = dynasty_yazid_ibn_kabasha
+		dynasty_splendor_level = 1
+		type = male
+		birth = 484.1.1
+		title = d_mahra
+		government = feudal_government
+		religion = "rahmanani"
+		culture = "himyarite"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = himyarite_33
+		position = { 1125 808 }
+
+		animation = aggressive_dagger
+
+		character = {
+			name = "bookmark_axum_abraha_alt_madikarib"
+			relation = "BOOKMARK_RELATION_FELLOW_VASSAL"
+			dynasty = dynasty_sumyafa_ashwa
+			type = male
+			birth = 512.1.1
+			culture = himyarite
+			religion = coptic
+			history_id = himyarite_29
+			animation = scheme
+		}
+
+		character = {
+			name = "bookmark_axum_abraha_alt_murra"
+			relation = "BOOKMARK_RELATION_FELLOW_VASSAL"
+			dynasty = dynasty_murra_dhu_yazan
+			type = male
+			birth = 482.1.1
+			culture = himyarite
+			religion = rahmanani
+			history_id = himyarite_32
+			animation = rage
+		}
+
+	}
+
+	# Imru al-Qays
+	character = {
+		name = "bookmark_axum_imru_al_qays"
+		dynasty = kindahites_dynasty
+		dynasty_splendor_level = 2
+		type = male
+		birth = 501.1.1
+		title = d_laamp_TFE_imru_al_qays # c_qasim
+		government = landless_adventurer_government
+		fallback_government = tribal_government
+		religion = "rabbinism"
+		culture = "bedouin"
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = kindha_19
+		position = { 852 258 }
+
+		animation = personality_vengeful
+	}
+	
+	# Murra Dhu Yazan, Himyarite noble who Abraha cucked
+	# character = {
+	# 	name = "bookmark_axum_murra"
+	# 	dynasty = dynasty_abraha # ADD DYNASTY LATER
+	# 	dynasty_splendor_level = 1
+	# 	type = male
+	# 	birth = 482.1.1
+	# 	title = d_hadramawt
+	# 	government = feudal_government
+	# 	religion = "rahmanani"
+	# 	culture = "himyarite"
+	# 	difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+	# 	history_id = himyarite_32
+	# 	position = { 222 222 }
+
+	# 	animation = aggressive_dagger
+	# }
+
+	
+}
+
+#bm_632_islam = {
+#	start_date = 632.6.8
+#	is_playable = yes
+#	recommended = yes
+#	group = bm_group_632
+#
+#	# Abu Bakr
+#
+#	# Heraclius
+#
+#	# Yazdegerd III
+#
+#	# Musaylima, a rival prophet
+#
+#	# Qalidurut, Nubian king of Makuria who negotiated the Baqt
+#
+#}
+
+#bm_632_northern_europe = {
+#	start_date = 632.6.8
+#	is_playable = yes
+#	recommended = yes
+#	group = bm_group_632
+#
+#	# Samo of Samo's Empire (since it was founded 631?)
+#
+#	# Avars
+#
+#	# Ansegisel, ancestor of Charles Martel and Charlemagne
+#
+#
+#}
+
+#bm_632_silk_road = {
+#	start_date = 632.6.8
+#	is_playable = yes
+#	group = bm_group_632
+#
+#	# Protector General/Tang Chinese ruler to the western regions?
+#
+#	# Ishbara Yagbu, Tokhara Yagbhu who fell in love with his aunt/stepmom and killed his dad to marry her (no joke)
+#
+#	# Barhatakin, progenitor of the Zunbils and Turkshahis
+#
+#	# Ghar-ilchi or his father, the Nezak Huns in decline
+#
+#	# Khotan, the premier Silk Road city
+#
+#	# Bukhar Kudahs, rulers of Bukhara - maybe Bidun would be a young ruler at this time?
+#
+#	# One of the Turkic Khaganates or even both
+#
+#}
+
+#bm_632_harsha = {
+#	start_date = 632.6.8
+#	is_playable = yes
+#	group = bm_group_632
+#
+#	# Harsha himself
+#
+#	# Songtsen Gampo, the big chungus Tibetan Emperor
+#
+#	# Yudhishthira, the last (Alchon) Hun king
+#
+#	# Durlabhavardhana, founder of the Karkota Kashmir dynasty
+#
+#	# Pulakeshin II, Chalukya king who defeated Harsha
+#
+#	# Narasimhavarman I, defeated Chalukya king Pulakeshin II to avenge his father
+#
+#	# Patola Shahis
+#
+#}
+
+#bm_768_charlemagne = {
+#	start_date = 768.9.24
+#	is_playable = yes
+#	recommended = yes
+#	group = bm_group_768
+#}

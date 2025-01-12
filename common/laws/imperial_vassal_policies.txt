@@ -1,0 +1,553 @@
+﻿centeral_law_policy = {
+	cumulative = no
+	flag = policy_4
+	flag = policy
+	flag = policy_5_buttons
+	default = centeral_law_policy_0
+
+	centeral_law_policy_0 = {
+		modifier = {
+		}
+
+		can_keep = { has_imperial_vassal_laws = yes }
+
+		can_pass = { 
+			has_imperial_vassal_laws = yes
+			OR = {
+				has_realm_law = centeral_law_policy_1 
+				AND = {
+					NOT = {
+						has_realm_law = centeral_law_policy_2
+					}
+					NOT = {
+						has_realm_law = centeral_law_policy_3 
+					}
+					NOT = {
+						has_realm_law = centeral_law_policy_4 
+					}
+				}
+
+			}
+			NOT = {
+				has_realm_law = de_centeral_law_policy_1 
+			}
+			NOT = {
+				has_realm_law = de_centeral_law_policy_2
+			}
+			NOT = {
+				has_realm_law = de_centeral_law_policy_3 
+			}
+			NOT = {
+				has_realm_law = de_centeral_law_policy_4 
+			}
+		}
+		
+		on_pass = {
+			vassal_contract_set_obligation_level = {
+				type = imperial_special_contracts_central 
+				level = imperial_special_contracts_central_none
+			}
+		 }
+
+		
+	}
+	centeral_law_policy_1 = {
+		modifier = {
+			#liege_opinion = 10
+			#fellow_vassal_opinion = 10
+			#monthly_county_control_growth_add = 1
+
+			dread_gain_mult = -0.1
+			development_growth_factor = -0.05
+			monthly_county_control_growth_factor = 0.1
+			levy_reinforcement_rate = -0.1
+		}
+
+		can_keep = { has_imperial_vassal_laws = yes }
+
+		can_pass = { 
+			has_imperial_vassal_laws = yes
+			OR = {
+				has_realm_law = centeral_law_policy_0
+				has_realm_law = centeral_law_policy_2
+			}
+			
+			NOT = {
+				has_realm_law = de_centeral_law_policy_1 
+			}
+			NOT = {
+				has_realm_law = de_centeral_law_policy_2
+			}
+			NOT = {
+				has_realm_law = de_centeral_law_policy_3 
+			}
+			NOT = {
+				has_realm_law = de_centeral_law_policy_4 
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			vassal_contract_set_obligation_level = {
+				type = imperial_special_contracts_central 
+				level = imperial_special_contracts_central_1
+			}
+		}
+		ai_will_do = {
+			if = {
+				limit = { 
+					opinion = {
+						target = liege
+						value > 30
+					}
+				}
+				value = 1
+			}
+		}
+
+		
+	}
+	centeral_law_policy_2 = {
+		modifier = {
+			#liege_opinion = 15
+			#fellow_vassal_opinion = 20
+			#monthly_county_control_growth_add = 2
+
+			dread_gain_mult = -0.2
+			development_growth_factor = -0.1
+			monthly_county_control_growth_factor = 0.2
+			levy_reinforcement_rate = -0.2
+		}
+
+		can_keep = { has_imperial_vassal_laws = yes }
+
+		can_pass = { 
+			has_imperial_vassal_laws = yes
+			OR = {
+				has_realm_law = centeral_law_policy_3
+				has_realm_law = centeral_law_policy_1
+			}
+			NOT = {
+				has_realm_law = de_centeral_law_policy_1 
+			}
+			NOT = {
+				has_realm_law = de_centeral_law_policy_2
+			}
+			NOT = {
+				has_realm_law = de_centeral_law_policy_3 
+			}
+			NOT = {
+				has_realm_law = de_centeral_law_policy_4 
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			vassal_contract_set_obligation_level = {
+				type = imperial_special_contracts_central 
+				level = imperial_special_contracts_central_2
+			}
+		}
+		ai_will_do = {
+			if = {
+				limit = { 
+					opinion = {
+						target = liege
+						value > 30
+					}
+				}
+				value = 1
+			}
+		}
+
+		
+	}
+	centeral_law_policy_3 = {
+		modifier = {
+			#monthly_county_control_growth_add = 3
+			
+			liege_opinion = 5
+			fellow_vassal_opinion = 10
+			dread_gain_mult = -0.3
+			development_growth_factor = -0.2
+			monthly_county_control_growth_factor = 0.3
+			levy_reinforcement_rate = -0.3
+		}
+
+		can_keep = { has_imperial_vassal_laws = yes }
+
+		can_pass = { 
+			has_imperial_vassal_laws = yes
+			OR = {
+				has_realm_law = centeral_law_policy_4
+				has_realm_law = centeral_law_policy_2
+			}
+			NOT = {
+				has_realm_law = de_centeral_law_policy_1 
+			}
+			NOT = {
+				has_realm_law = de_centeral_law_policy_2
+			}
+			NOT = {
+				has_realm_law = de_centeral_law_policy_3 
+			}
+			NOT = {
+				has_realm_law = de_centeral_law_policy_4 
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			vassal_contract_set_obligation_level = {
+				type = imperial_special_contracts_central 
+				level = imperial_special_contracts_central_3
+			}
+		}
+		ai_will_do = {
+			if = {
+				limit = { 
+					opinion = {
+						target = liege
+						value > 30
+					}
+				}
+				value = 1
+			}
+		}
+
+		
+	}
+	centeral_law_policy_4 = {
+		modifier = {
+			#monthly_county_control_growth_add = 4
+			
+			liege_opinion = 10
+			fellow_vassal_opinion = 20
+			dread_gain_mult = -0.5
+			development_growth_factor = -0.4
+			monthly_county_control_growth_factor = 0.5
+			levy_reinforcement_rate = -0.5
+		}
+
+		can_keep = { has_imperial_vassal_laws = yes }
+
+		can_pass = { 
+			has_imperial_vassal_laws = yes
+			has_realm_law = centeral_law_policy_3
+			NOT = {
+				has_realm_law = de_centeral_law_policy_1 
+			}
+			NOT = {
+				has_realm_law = de_centeral_law_policy_2
+			}
+			NOT = {
+				has_realm_law = de_centeral_law_policy_3 
+			}
+			NOT = {
+				has_realm_law = de_centeral_law_policy_4 
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			vassal_contract_set_obligation_level = {
+				type = imperial_special_contracts_central 
+				level = imperial_special_contracts_central_4
+			}
+		}
+		ai_will_do = {
+			if = {
+				limit = { 
+					opinion = {
+						target = liege
+						value > 30
+					}
+				}
+				value = 1
+			}
+		}
+
+		
+	}
+}
+
+de_centeral_law_policy = {
+	cumulative = no
+	flag = policy_5
+	flag = policy
+	flag = policy_5_buttons
+	default = de_centeral_law_policy_0
+
+	de_centeral_law_policy_0 = {
+		modifier = {
+		}
+
+		can_keep = { has_imperial_vassal_laws = yes }
+
+		can_pass = { 
+			has_imperial_vassal_laws = yes
+			OR = {
+				has_realm_law = de_centeral_law_policy_1 
+				AND = {
+					NOT = {
+						has_realm_law = de_centeral_law_policy_2
+					}
+					NOT = {
+						has_realm_law = de_centeral_law_policy_3 
+					}
+					NOT = {
+						has_realm_law = de_centeral_law_policy_4 
+					}
+				}
+
+			}
+			NOT = {
+				has_realm_law = centeral_law_policy_1 
+			}
+			NOT = {
+				has_realm_law = centeral_law_policy_2
+			}
+			NOT = {
+				has_realm_law = centeral_law_policy_3 
+			}
+			NOT = {
+				has_realm_law = centeral_law_policy_4 
+			}
+		}
+		
+		on_pass = {
+			vassal_contract_set_obligation_level = {
+				type = imperial_special_contracts_de_central 
+				level = imperial_special_contracts_de_central_none
+			}
+		}
+
+		
+	}
+	de_centeral_law_policy_1 = {
+		modifier = {
+			development_growth_factor = 0.05
+			monthly_county_control_growth_factor = 0.1
+			levy_reinforcement_rate = -0.1
+		}
+
+		can_keep = { has_imperial_vassal_laws = yes }
+
+		can_pass = { 
+			has_imperial_vassal_laws = yes
+			OR = {
+				has_realm_law = de_centeral_law_policy_0
+				has_realm_law = de_centeral_law_policy_2
+			}
+			NOT = {
+				has_realm_law = centeral_law_policy_1 
+			}
+			NOT = {
+				has_realm_law = centeral_law_policy_2
+			}
+			NOT = {
+				has_realm_law = centeral_law_policy_3 
+			}
+			NOT = {
+				has_realm_law = centeral_law_policy_4 
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			vassal_contract_set_obligation_level = {
+				type = imperial_special_contracts_de_central 
+				level = imperial_special_contracts_de_central_1
+			}
+		}
+		ai_will_do = {
+			if = {
+				limit = { 
+					opinion = {
+						target = liege
+						value < -30
+					}
+				}
+				value = 1
+			}
+		}
+
+		
+	}
+	de_centeral_law_policy_2 = {
+		modifier = {
+			development_growth_factor = 0.1
+			monthly_county_control_growth_factor = -0.2
+			levy_reinforcement_rate = 0.2
+		}
+
+		can_keep = { has_imperial_vassal_laws = yes }
+
+		can_pass = { 
+			has_imperial_vassal_laws = yes
+			OR = {
+				has_realm_law = de_centeral_law_policy_1
+				has_realm_law = de_centeral_law_policy_3
+			}
+			NOT = {
+				has_realm_law = centeral_law_policy_1 
+			}
+			NOT = {
+				has_realm_law = centeral_law_policy_2
+			}
+			NOT = {
+				has_realm_law = centeral_law_policy_3 
+			}
+			NOT = {
+				has_realm_law = centeral_law_policy_4 
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			vassal_contract_set_obligation_level = {
+				type = imperial_special_contracts_de_central 
+				level = imperial_special_contracts_de_central_2
+			}
+		}
+		ai_will_do = {
+			if = {
+				limit = { 
+					opinion = {
+						target = liege
+						value < -30
+					}
+				}
+				value = 1
+			}
+		}
+
+		
+	}
+	de_centeral_law_policy_3 = {
+		modifier = {
+			liege_opinion = -5
+			fellow_vassal_opinion = -10
+			development_growth_factor = 0.2
+			monthly_county_control_growth_factor = -0.3
+			levy_reinforcement_rate = 0.3
+		}
+
+		can_keep = { has_imperial_vassal_laws = yes }
+
+		can_pass = { 
+			has_imperial_vassal_laws = yes
+			OR = {
+				has_realm_law = de_centeral_law_policy_2
+				has_realm_law = de_centeral_law_policy_4
+			}
+			NOT = {
+				has_realm_law = centeral_law_policy_1 
+			}
+			NOT = {
+				has_realm_law = centeral_law_policy_2
+			}
+			NOT = {
+				has_realm_law = centeral_law_policy_3 
+			}
+			NOT = {
+				has_realm_law = centeral_law_policy_4 
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			vassal_contract_set_obligation_level = {
+				type = imperial_special_contracts_de_central 
+				level = imperial_special_contracts_de_central_3
+			}
+		}
+		ai_will_do = {
+			if = {
+				limit = { 
+					opinion = {
+						target = liege
+						value < -30
+					}
+				}
+				value = 1
+			}
+		}
+
+		
+	}
+	de_centeral_law_policy_4 = {
+		modifier = {
+			liege_opinion = -10
+			fellow_vassal_opinion = -20
+			development_growth_factor = 0.4
+			monthly_county_control_growth_factor = -0.5
+			levy_reinforcement_rate = 0.5
+		}
+
+		can_keep = { has_imperial_vassal_laws = yes }
+
+		can_pass = { 
+			has_imperial_vassal_laws = yes
+			has_realm_law = de_centeral_law_policy_3
+			NOT = {
+				has_realm_law = centeral_law_policy_1 
+			}
+			NOT = {
+				has_realm_law = centeral_law_policy_2
+			}
+			NOT = {
+				has_realm_law = centeral_law_policy_3 
+			}
+			NOT = {
+				has_realm_law = centeral_law_policy_4 
+			}
+		}
+		
+		pass_cost = {
+			gold = 250
+		}
+		
+		on_pass = { 
+			vassal_contract_set_obligation_level = {
+				type = imperial_special_contracts_de_central 
+				level = imperial_special_contracts_de_central_4
+			}
+		}
+		ai_will_do = {
+			if = {
+				limit = { 
+					opinion = {
+						target = liege
+						value < -30
+					}
+				}
+				value = 1
+			}
+		}
+
+		
+	}
+}
+	

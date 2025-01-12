@@ -1,0 +1,1106 @@
+﻿#### ADD GANGA KONGU 476
+k_tamilakam = {
+	361.1.1 = { change_development_level = 5 }
+	532.1.1 = { change_development_level = 6 }
+	768.1.1 = { change_development_level = 7 }
+	# Kalabhra
+	361.1.1 = {
+		holder = 901022
+		government = gupta_government
+	}
+	412.1.1 = {
+		holder = 901023
+	}
+	423.1.1 = {
+		holder = kalabhra_01
+	}
+	432.1.1 = {
+		holder = kalabhra_02
+	}
+	455.1.1 = {
+		holder = kalabhra_03
+	}
+	480.1.1 = {
+		holder = kalabhra_04
+	}
+	519.1.1 = {
+		holder = kalabhra_05
+	}
+}
+
+c_kuvalala = {
+	# Pallava Kingdom
+	275.1.1 = {
+		holder = 901028
+		government = gupta_government
+	}
+	300.1.1 = {
+		holder = 901029
+	}
+	350.1.1 = {
+		holder = 901030
+	}
+	355.1.1 = {
+		holder = 901031
+	}
+	370.1.1 = {
+		holder = 901032
+	}
+	385.1.1 = {
+		holder = 901033
+	}
+	400.1.1 = {
+		holder = 901034
+	}
+	436.1.1 = {
+		holder = pallava_01
+	}
+	460.1.1 = {
+		holder = pallava_02
+	}
+	480.1.1 = {
+		holder = pallava_03
+	}
+	510.1.1 = {
+		holder = pallava_04
+	}
+	530.1.1 = {
+		holder = pallava_05
+	}
+	540.1.1 = {
+		holder = pallava_06
+	}
+	550.1.1 = {
+		holder = pallava_07
+	}
+	575.1.1 = {
+		holder = pallava_08
+	}
+	600.1.1 = {
+		holder = pallava_09
+	}
+	630.1.1 = {
+		holder = pallava_10
+	}
+	668.1.1 = {
+		holder = pallava_11
+	}
+}
+
+d_pandya_nadu = {
+	361.1.1 = { change_development_level = 10 }
+	532.1.1 = { change_development_level = 11 }
+	768.1.1 = { change_development_level = 12 }
+	# Pandya
+	339.1.1 = {
+		holder = pandya_01
+		liege = k_tamilakam
+	}
+	412.1.1 = {
+		holder = pandya_02
+	}
+	442.1.1 = {
+		holder = pandya_03
+	}
+	456.1.1 = {
+		holder = pandya_04
+	}
+	484.1.1 = {
+		holder = pandya_05
+	}
+	513.1.1 = {
+		holder = pandya_06
+	}
+	528.1.1 = {
+		holder = pandya_07
+	}
+	567.1.1 = {
+		holder = 189058
+		liege = 0
+	}
+	590.1.1 = {
+		holder = 189059
+	}
+	620.1.1 = {
+		holder = 189060
+	}
+	640.1.1 = {
+		holder = 189061
+	}
+	670.1.1 = {
+		holder = 189062
+	}
+	710.1.1 = {
+		holder = 189063
+	}
+	735.1.1 = {
+		holder = 189064
+	}
+	765.1.1 = {
+		holder = 189065
+	}
+}
+
+
+c_madurai = {
+	361.1.1 = { change_development_level = 11 }
+	476.1.1 = { change_development_level = 12 }
+	532.1.1 = { change_development_level = 13 }
+	632.1.1 = { change_development_level = 14 }
+	768.1.1 = { change_development_level = 15 }
+	
+	# Pandya
+	339.1.1 = {
+		holder = pandya_01
+		liege=d_pandya_nadu
+	}
+	361.1.1 = {
+		liege=d_pandya_nadu
+	}
+	412.1.1 = {
+		holder = pandya_02
+	}
+	442.1.1 = {
+		holder = pandya_03
+	}
+	456.1.1 = {
+		holder = pandya_04
+	}
+	484.1.1 = {
+		holder = pandya_05
+	}
+	513.1.1 = {
+		holder = pandya_06
+	}
+	528.1.1 = {
+		holder = pandya_07
+	}
+	567.1.1 = {
+		holder = 189058
+	}
+	590.1.1 = {
+		holder = 189059
+	}
+	620.1.1 = {
+		holder = 189060
+	}
+	640.1.1 = {
+		holder = 189061
+	}
+	670.1.1 = {
+		holder = 189062
+	}
+	710.1.1 = {
+		holder = 189063
+	}
+	735.1.1 = {
+		holder = 189064
+	}
+	765.1.1 = {
+		holder = 189065
+	}
+}
+
+
+c_kongu = {
+	361.1.1 = { change_development_level = 8 }
+	476.1.1 = { change_development_level = 9 }
+	532.1.1 = { change_development_level = 10 }
+	632.1.1 = { change_development_level = 11 }
+	768.1.1 = { change_development_level = 12 }
+	361.1.1 = {
+		holder = chera_01
+		liege = d_chera_nadu
+		government = gupta_government
+	}
+	412.1.1 = {
+		holder = chera_02
+	}
+	442.1.1 = {
+		holder = chera_03
+	}
+	456.1.1 = {
+		holder = chera_04
+	}
+	484.1.1 = {
+		holder = chera_05
+	}
+	511.1.1 = {
+		holder = chera_06
+	}
+	520.1.1 = {
+		holder = chera_07
+	}
+	559.1.1 = {
+		holder = chera_08
+	}
+	586.1.1 = {
+		holder = chera_09
+	}
+	616.1.1 = {
+		holder = chera_10
+	}
+	624.1.1 = {
+		holder = chera_11
+	}
+}
+
+
+d_chola_nadu = {
+	361.1.1 = { change_development_level = 8 }
+	476.1.1 = { change_development_level = 9 }
+	532.1.1 = { change_development_level = 10 }
+	632.1.1 = { change_development_level = 11 }
+	768.1.1 = { change_development_level = 12 }
+	# Kalabhra
+	355.1.1 = {
+		holder = 901030
+		government = gupta_government
+	}
+	355.1.1 = {
+		holder = 901031
+	}
+	361.1.1 = {
+		holder = chola_01
+		liege = k_tamilakam
+		government = gupta_government
+	}
+	412.1.1 = {
+		holder = chola_02
+	}
+	442.1.1 = {
+		holder = chola_03
+	}
+	456.1.1 = {
+		holder = chola_04
+	}
+	484.1.1 = {
+		holder = chola_05
+	}
+	519.1.1 = {
+		holder = chola_06
+	}
+	555.1.1 = {
+		holder = chola_07
+		liege = 0
+	}
+	598.1.1 = {
+		holder = chola_08
+	}
+	623.1.1 = {
+		holder = chola_09
+	}
+}
+
+
+c_cholamandalam = {
+	361.1.1 = { change_development_level = 12 }
+	476.1.1 = { change_development_level = 14 }
+	532.1.1 = { change_development_level = 16 }
+	632.1.1 = { change_development_level = 17 }
+	768.1.1 = { change_development_level = 18 }
+	# Kalabhra
+	361.1.1 = {
+		holder = 901022
+		government = gupta_government
+	}
+	412.1.1 = {
+		holder = 901023
+	}
+	423.1.1 = {
+		holder = kalabhra_01
+	}
+	432.1.1 = {
+		holder = kalabhra_02
+	}
+	455.1.1 = {
+		holder = kalabhra_03
+	}
+	480.1.1 = {
+		holder = kalabhra_04
+	}
+	519.1.1 = {
+		holder = kalabhra_05
+	}
+}
+
+
+c_tagadur = {
+	# Kalabhra
+	361.1.1 = {
+		holder = 901022
+		government = gupta_government
+	}
+	400.1.1 = {
+		holder = 901034
+	}
+	436.1.1 = {
+		holder = pallava_01
+	}
+	460.1.1 = {
+		holder = pallava_02
+	}
+	480.1.1 = {
+		holder = pallava_03
+	}
+	510.1.1 = {
+		holder = pallava_04
+	}
+	530.1.1 = {
+		holder = pallava_05
+	}
+	532.1.1 = { # 540
+		holder = pallava_06
+		liege = d_tondai_nadu
+	}
+	550.1.1 = {
+		holder = pallava_07
+	}
+	575.1.1 = {
+		holder = pallava_08
+	}
+	600.1.1 = {
+		holder = pallava_09
+	}
+	630.1.1 = {
+		holder = pallava_10
+	}
+	668.1.1 = {
+		holder = pallava_11
+	}
+	765.1.1 = {
+		liege = d_tondai_nadu
+		holder = 189421
+	}
+}
+
+
+c_tiruvannamalai = {
+	#Pallava Kingdom
+	355.1.1 = {
+		holder = 901030
+		government = gupta_government
+	}
+	355.1.1 = {
+		holder = 901031
+	}
+	361.1.1 = {
+		holder = chola_01
+		liege = d_chola_nadu
+		government = gupta_government
+	}
+	412.1.1 = {
+		holder = chola_02
+	}
+	442.1.1 = {
+		holder = chola_03
+	}
+	456.1.1 = {
+		holder = chola_04
+	}
+	484.1.1 = {
+		holder = chola_05
+	}
+	519.1.1 = {
+		holder = chola_06
+	}
+	555.1.1 = {
+		holder = chola_07
+	}
+	598.1.1 = {
+		holder = chola_08
+	}
+	623.1.1 = {
+		holder = chola_09
+	}
+}
+
+
+d_chera_nadu = {
+	361.1.1 = { change_development_level = 10 }
+	476.1.1 = { change_development_level = 11 }
+	532.1.1 = { change_development_level = 12 }
+	632.1.1 = { change_development_level = 13 }
+	768.1.1 = { change_development_level = 14 }
+	# Early Cheras
+	360.1.1 = {
+		holder = chera_01
+		liege = k_tamilakam
+		government = gupta_government
+	}
+	412.1.1 = {
+		holder = chera_02
+	}
+	442.1.1 = {
+		holder = chera_03
+	}
+	456.1.1 = {
+		holder = chera_04
+	}
+	484.1.1 = {
+		holder = chera_05
+	}
+	511.1.1 = {
+		holder = chera_06
+	}
+	520.1.1 = {
+		holder = chera_07
+	}
+	559.1.1 = {
+		holder = chera_08
+		liege = 0
+	}
+	586.1.1 = {
+		holder = chera_09
+	}
+	616.1.1 = {
+		holder = chera_10
+	}
+	624.1.1 = {
+		holder = chera_11
+	}
+}
+
+
+c_kerala = {
+	361.1.1 = { change_development_level = 11 }
+	476.1.1 = { change_development_level = 12 }
+	532.1.1 = { change_development_level = 13 }
+	632.1.1 = { change_development_level = 14 }
+	768.1.1 = { change_development_level = 15 }
+	# Early Cheras
+	361.1.1 = {
+		holder = chera_01
+		liege = d_chera_nadu
+		government = gupta_government
+	}
+	412.1.1 = {
+		holder = chera_02
+	}
+	442.1.1 = {
+		holder = chera_03
+	}
+	456.1.1 = {
+		holder = chera_04
+	}
+	484.1.1 = {
+		holder = chera_05
+	}
+	511.1.1 = {
+		holder = chera_06
+	}
+	520.1.1 = {
+		holder = chera_07
+	}
+	559.1.1 = {
+		holder = chera_08
+	}
+	586.1.1 = {
+		holder = chera_09
+	}
+	616.1.1 = {
+		holder = chera_10
+	}
+	624.1.1 = {
+		holder = chera_11
+	}
+}
+
+
+c_venadu = {
+	# Ay
+	318.1.1 = {
+		holder = ay_01
+		liege = k_tamilakam
+	}
+	354.1.1 = {
+		holder = ay_02
+	}
+	374.1.1 = {
+		holder = ay_03
+	}
+	401.1.1 = {
+		holder = ay_04
+	}
+	440.1.1 = {
+		holder = ay_05
+	}
+	498.1.1 = {
+		holder = ay_06
+	}
+	529.1.1 = {
+		holder = ay_07
+	}
+	582.1.1 = {
+		holder = ay_08
+	}
+	591.1.1 = {
+		holder = ay_09
+	}
+	629.1.1 = {
+		holder = ay_10
+	}
+}
+
+c_korkai = {
+	339.1.1 = {
+		holder = pandya_01
+	}
+	361.1.1 = {
+		liege=d_pandya_nadu
+	}
+	412.1.1 = {
+		holder = pandya_02
+	}
+	442.1.1 = {
+		holder = pandya_03
+	}
+	456.1.1 = {
+		holder = pandya_04
+	}
+	484.1.1 = {
+		holder = pandya_05
+	}
+	513.1.1 = {
+		holder = pandya_06
+	}
+	528.1.1 = {
+		holder = pandya_07
+	}
+	567.1.1 = {
+		holder = 189058
+	}
+	590.1.1 = {
+		holder = 189059
+	}
+	620.1.1 = {
+		holder = 189060
+	}
+	640.1.1 = {
+		holder = 189061
+	}
+	670.1.1 = {
+		holder = 189062
+	}
+	710.1.1 = {
+		holder = 189063
+	}
+	735.1.1 = {
+		holder = 189064
+	}
+	765.1.1 = {
+		holder = 189065
+	}
+}
+
+c_alupa = { #Kolathunad
+	## Western Gangas
+	318.1.1 = {
+		holder = ezhimala_01
+		liege = d_gangavadi
+	}
+	354.1.1 = {
+		holder = ezhimala_02
+	}
+	374.1.1 = {
+		holder = ezhimala_03
+	}
+	401.1.1 = {
+		holder = ezhimala_04
+	}
+	440.1.1 = {
+		holder = ezhimala_05
+	}
+	478.1.1 = {
+		holder = 74682
+	}
+	529.1.1 = {
+		holder = 74683
+	}
+	579.1.1 = {
+		holder = 74684
+	}
+	604.1.1 = {
+		holder = 74685
+	}
+	629.1.1 = {
+		holder = 74686
+	}
+	654.1.1 = {
+		holder = 74687
+	}
+	679.1.1 = {
+		holder = 74688
+	}
+	726.1.1 = {
+		holder = 74689
+	}
+}
+
+b_udayavara = {
+	610.1.1={
+		holder = 192001 #Aluvarasa I Alupa
+	}
+	630.1.1={
+		holder = 192002 #Gunasagara
+	}
+	663.1.1={
+		holder = 192003 #Chitravahana
+	}
+	730.1.1={
+		holder = 192004 #Aluvarasa II
+	}
+	750.1.1={
+		holder = 192005 #Chitravahana II
+	}
+}
+
+c_maldives = {
+	361.1.1 = { change_development_level = 1 }
+	361.1.1 = {
+		holder = maldives_01
+		government = gupta_government
+	}
+	395.1.1 = {
+		holder = maldives_02
+	}
+	476.1.1 = {
+		holder = maldives_03
+	}
+	525.1.1 = {
+		holder = maldives_04
+	}
+}
+
+
+d_tondai_nadu = {
+	361.1.1 = { change_development_level = 8 }
+	476.1.1 = { change_development_level = 9 }
+	532.1.1 = { change_development_level = 10 }
+	632.1.1 = { change_development_level = 11 }
+	768.1.1 = { change_development_level = 12 }
+	# Pallava Kingdom
+	275.1.1 = {
+		holder = 901028
+		government = gupta_government
+	}
+	300.1.1 = {
+		holder = 901029
+	}
+	350.1.1 = {
+		holder = 901030
+	}
+	355.1.1 = {
+		holder = 901031
+	}
+	370.1.1 = {
+		holder = 901032
+	}
+	385.1.1 = {
+		holder = 901033
+		liege = 0
+	}
+	400.1.1 = {
+		holder = 901034
+	}
+	436.1.1 = {
+		holder = pallava_01
+	}
+	460.1.1 = {
+		holder = pallava_02
+	}
+	480.1.1 = {
+		holder = pallava_03
+	}
+	510.1.1 = {
+		holder = pallava_04
+	}
+	530.1.1 = {
+		holder = pallava_05
+	}
+	540.1.1 = {
+		holder = pallava_06
+	}
+	550.1.1 = {
+		holder = pallava_07
+	}
+	575.1.1 = {
+		holder = pallava_08
+	}
+	600.1.1 = {
+		holder = pallava_09
+	}
+	630.1.1 = {
+		holder = pallava_10
+	}
+	668.1.1 = {
+		holder = pallava_11
+	}
+	732.1.1 = {
+		holder = 189073
+	}
+}
+
+
+c_kanchipuram = {
+	361.1.1 = { change_development_level = 12 }
+	476.1.1 = { change_development_level = 14 }
+	532.1.1 = { change_development_level = 16 }
+	632.1.1 = { change_development_level = 17 }
+	768.1.1 = { change_development_level = 18 }
+	#Pallava Kingdom
+	355.1.1 = {
+		holder = 901030
+		government = gupta_government
+	}
+	355.1.1 = {
+		holder = 901031
+	}
+	361.1.1 = {
+		holder = chola_01
+		liege = d_chola_nadu
+		government = gupta_government
+	}
+	412.1.1 = {
+		holder = chola_02
+	}
+	442.1.1 = {
+		holder = chola_03
+	}
+	456.1.1 = {
+		holder = chola_04
+	}
+	484.1.1 = {
+		holder = chola_05
+	}
+	519.1.1 = {
+		holder = chola_06
+	}
+	555.1.1 = {
+		holder = chola_07
+	}
+	598.1.1 = {
+		holder = chola_08
+	}
+	623.1.1 = {
+		holder = chola_09
+	}
+	765.1.1 = {
+		liege = d_tondai_nadu
+		holder = 189423
+	}
+}
+
+# Title doesn't exist
+# c_candragiri = {
+# 	# Pallava Kingdom
+# 	275.1.1 = {
+# 		holder = 901028
+# 		government = gupta_government
+# 	}
+# 	300.1.1 = {
+# 		holder = 901029
+# 	}
+# 	350.1.1 = {
+# 		holder = 901030
+# 	}
+# 	355.1.1 = {
+# 		holder = 901031
+# 	}
+# 	370.1.1 = {
+# 		holder = 901032
+# 	}
+# 	385.1.1 = {
+# 		holder = 901033
+# 	}
+# 	400.1.1 = {
+# 		holder = 901034
+# 	}
+# 	436.1.1 = {
+# 		holder = pallava_01
+# 	}
+# 	460.1.1 = {
+# 		holder = pallava_02
+# 	}
+# 	480.1.1 = {
+# 		holder = pallava_03
+# 	}
+# 	510.1.1 = {
+# 		holder = pallava_04
+# 	}
+# 	530.1.1 = {
+# 		holder = pallava_05
+# 	}
+# 	540.1.1 = {
+# 		holder = pallava_06
+# 	}
+# 	550.1.1 = {
+# 		holder = pallava_07
+# 	}
+# 	575.1.1 = {
+# 		holder = pallava_08
+# 	}
+# 	600.1.1 = {
+# 		holder = pallava_09
+# 	}
+# 	630.1.1 = {
+# 		holder = pallava_10
+# 	}
+# 	668.1.1 = {
+# 		holder = pallava_11
+# 	}
+# }
+
+
+c_penugonda = {
+	# Pallava Kingdom
+	275.1.1 = {
+		holder = 901028
+		government = gupta_government
+	}
+	300.1.1 = {
+		holder = 901029
+	}
+	350.1.1 = {
+		holder = 901030
+	}
+	355.1.1 = {
+		holder = 901031
+	}
+	370.1.1 = {
+		holder = 901032
+	}
+	385.1.1 = {
+		holder = 901033
+	}
+	400.1.1 = {
+		holder = 901034
+	}
+	436.1.1 = {
+		holder = pallava_01
+	}
+	460.1.1 = {
+		holder = pallava_02
+	}
+	480.1.1 = {
+		holder = pallava_03
+	}
+	510.1.1 = {
+		holder = pallava_04
+	}
+	530.1.1 = {
+		holder = pallava_05
+	}
+	540.1.1 = {
+		holder = pallava_06
+	}
+	550.1.1 = {
+		holder = pallava_07
+	}
+	575.1.1 = {
+		holder = pallava_08
+	}
+	600.1.1 = {
+		holder = pallava_09
+	}
+	630.1.1 = {
+		holder = pallava_10
+	}
+	668.1.1 = {
+		holder = pallava_11
+	}
+	768.1.1 = {
+		holder = 192010 #Jayandivarman Bana
+	}
+}
+
+c_muluvagil = {
+	# Pallava Kingdom
+	275.1.1 = {
+		holder = 901028
+		government = gupta_government
+	}
+	300.1.1 = {
+		holder = 901029
+	}
+	350.1.1 = {
+		holder = 901030
+	}
+	355.1.1 = {
+		holder = 901031
+	}
+	370.1.1 = {
+		holder = 901032
+	}
+	385.1.1 = {
+		holder = 901033
+	}
+	400.1.1 = {
+		holder = 901034
+	}
+	436.1.1 = {
+		holder = pallava_01
+	}
+	460.1.1 = {
+		holder = pallava_02
+	}
+	480.1.1 = {
+		holder = pallava_03
+	}
+	510.1.1 = {
+		holder = pallava_04
+	}
+	530.1.1 = {
+		holder = pallava_05
+	}
+	540.1.1 = {
+		holder = pallava_06
+	}
+	550.1.1 = {
+		holder = pallava_07
+	}
+	575.1.1 = {
+		holder = pallava_08
+	}
+	600.1.1 = {
+		holder = pallava_09
+	}
+	630.1.1 = {
+		holder = pallava_10
+	}
+	668.1.1 = {
+		holder = pallava_11
+	}
+	769.1.1 = {
+		liege = d_tondai_nadu
+		holder = 189072
+	}
+
+}
+
+
+c_nellore = {
+	# Pallava Kingdom
+	275.1.1 = {
+		holder = 901028
+		government = gupta_government
+	}
+	300.1.1 = {
+		holder = 901029
+	}
+	350.1.1 = {
+		holder = 901030
+	}
+	355.1.1 = {
+		holder = 901031
+	}
+	370.1.1 = {
+		holder = 901032
+	}
+	385.1.1 = {
+		holder = 901033
+	}
+	400.1.1 = {
+		holder = 901034
+	}
+	436.1.1 = {
+		holder = pallava_01
+	}
+	460.1.1 = {
+		holder = pallava_02
+	}
+	480.1.1 = {
+		holder = pallava_03
+	}
+	510.1.1 = {
+		holder = pallava_04
+	}
+	530.1.1 = {
+		holder = pallava_05
+	}
+	540.1.1 = {
+		holder = pallava_06
+	}
+	550.1.1 = {
+		holder = pallava_07
+	}
+	575.1.1 = {
+		holder = pallava_08
+	}
+	600.1.1 = {
+		holder = pallava_09
+	}
+	630.1.1 = {
+		holder = pallava_10
+	}
+	668.1.1 = {
+		holder = pallava_11
+	}
+	765.1.1 = {
+		liege = d_tondai_nadu
+		holder = 189423
+	}
+}
+
+c_renandu = {
+	# Pallava Kingdom
+	275.1.1 = {
+		holder = 901028
+		government = gupta_government
+	}
+	300.1.1 = {
+		holder = 901029
+	}
+	350.1.1 = {
+		holder = 901030
+	}
+	355.1.1 = {
+		holder = 901031
+	}
+	370.1.1 = {
+		holder = 901032
+	}
+	385.1.1 = {
+		holder = 901033
+	}
+	400.1.1 = {
+		holder = 901034
+	}
+	436.1.1 = {
+		holder = pallava_01
+	}
+	460.1.1 = {
+		holder = pallava_02
+	}
+	480.1.1 = {
+		holder = pallava_03
+	}
+	510.1.1 = {
+		holder = pallava_04
+	}
+	530.1.1 = {
+		holder = pallava_05
+	}
+	540.1.1 = {
+		holder = pallava_06
+	}
+	550.1.1 = {
+		holder = pallava_07
+	}
+	575.1.1 = {
+		holder = pallava_08
+	}
+	600.1.1 = {
+		holder = pallava_09
+	}
+	630.1.1 = {
+		holder = pallava_10
+	}
+	668.1.1 = {
+		holder = pallava_11
+	}
+	768.1.1 = {
+		holder = 192010 #Jayandivarman Bana
+		liege = d_tondai_nadu
+	}
+}

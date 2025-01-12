@@ -1,0 +1,220 @@
+﻿
+TFE_roman_persian_struggle_ending_involved_list_effect = {
+	save_scope_as = struggle_ender
+	struggle:roman_persian_struggle = {
+		every_involved_ruler = {
+			limit = {
+				is_independent_ruler = yes
+				primary_title = { is_mercenary_company = no }
+			}
+			add_to_list = struggle_involvees
+		}
+	}
+	# Add all involved cultures with counties to a list, for war checks
+	TFE_roman_persian_struggle_ending_culture_list_effect = yes
+	# Add all involved faiths with counties to a list, for marriage and holy war checks
+	TFE_roman_persian_struggle_ending_faith_list_effect = yes
+}
+
+# Add all Involved cultures with counties to a list
+TFE_roman_persian_struggle_ending_culture_list_effect = {
+	every_culture_global = {		
+		limit = {
+			save_temporary_scope_as = this_culture
+			struggle:roman_persian_struggle = { is_culture_involved_in_struggle = scope:this_culture }
+			culture_number_of_counties > 0
+		}
+		save_scope_as = culture_scope
+		add_to_global_variable_list = {
+			name = TFE_roman_persian_struggle_ending_culture_list
+			target = scope:culture_scope
+		}
+	}
+}
+
+# Add all Involved independent rulers to a list
+TFE_roman_persian_struggle_ending_involved_list_effect = {
+	save_scope_as = struggle_ender
+	struggle:roman_persian_struggle = {
+		every_involved_ruler = {
+			limit = {
+				is_independent_ruler = yes
+				primary_title = { is_mercenary_company = no }
+			}
+			add_to_list = struggle_involvees
+		}
+	}
+	# Add all involved cultures with counties to a list, for war checks
+	TFE_roman_persian_struggle_ending_culture_list_effect = yes
+	# Add all involved faiths with counties to a list, for marriage and holy war checks
+	TFE_roman_persian_struggle_ending_faith_list_effect = yes
+}
+
+# Add all Involved faiths with counties to a list
+TFE_roman_persian_struggle_ending_faith_list_effect = {
+	every_religion_global = {
+		limit = {
+			any_faith = {
+				save_temporary_scope_as = this_faith
+				struggle:roman_persian_struggle = { is_faith_involved_in_struggle = scope:this_faith }
+				num_county_followers > 0
+			}
+		}
+		every_faith = {
+			limit = {
+				struggle:roman_persian_struggle = { is_faith_involved_in_struggle = prev }
+				num_county_followers > 0
+			}
+			save_scope_as = faith_scope
+			add_to_global_variable_list = {
+				name = TFE_roman_persian_struggle_ending_faith_list
+				target = scope:faith_scope
+			}
+		}
+	}
+}
+
+# every_in_de_jure_hierarchy
+
+TFE_roman_persian_struggle_de_jure_change_roman_effect = {
+	if = {
+		limit = {
+			has_title = title:e_roman_empire
+		}		
+		every_kingdom = {
+			limit = {
+				is_titular = no
+				title_capital_county.title_province = { geographical_region = TFE_roman_persian_struggle_region }
+			}
+			set_de_jure_liege_title = title:e_roman_empire
+		}
+	}
+	else_if = {
+		limit = {
+			has_title = title:e_byzantium
+		}		
+		every_kingdom = {
+			limit = {
+				is_titular = no
+				title_capital_county.title_province = { geographical_region = TFE_roman_persian_struggle_region }
+			}
+			set_de_jure_liege_title = title:e_byzantium
+		}
+	}
+	else_if = {
+		limit = {
+			has_title = title:e_western_roman_empire
+		}		
+		every_kingdom = {
+			limit = {
+				is_titular = no
+				title_capital_county.title_province = { geographical_region = TFE_roman_persian_struggle_region }
+			}
+			set_de_jure_liege_title = title:e_western_roman_empire
+		}
+	}
+}
+
+TFE_roman_persian_struggle_de_jure_change_persian_effect = {
+	if = {
+		limit = {
+			has_title = title:e_persia
+		}		
+		every_kingdom = {
+			limit = {
+				is_titular = no
+				title_capital_county.title_province = { geographical_region = TFE_roman_persian_struggle_region }
+			}
+			set_de_jure_liege_title = title:e_persia
+		}
+	}
+}
+
+TFE_roman_persian_struggle_de_jure_change_regional_effect = {
+
+	every_kingdom = {
+		limit = {
+			is_titular = no
+			title_capital_county.title_province = {
+				geographical_region = TFE_roman_persian_struggle_not_core_region
+			}
+		}
+		set_de_jure_liege_title = root.primary_title
+	}
+	if = {
+		limit = {
+			completely_controls = title:d_thrace # Constantinople
+		}
+		every_kingdom = {
+			limit = {
+				is_titular = no
+				title_capital_county.title_province = {
+					geographical_region = TFE_roman_persian_struggle_roman_core_region
+				}
+			}
+			set_de_jure_liege_title = root.primary_title
+		}
+	}
+	if = {
+		limit = {
+			completely_controls = title:d_baghdad # Ctesiphon
+		}
+		every_kingdom = {
+			limit = {
+				is_titular = no
+				title_capital_county.title_province = {
+					geographical_region = TFE_roman_persian_struggle_persian_core_region
+				}
+			}
+			set_de_jure_liege_title = root.primary_title
+		}
+	}
+	# else = {
+	# 	create_dynamic_title = {
+	# 		tier = empire
+	# 		name = $TYPE$_CREATED_TITLE_NAME
+	# 	}
+	# 	scope:old_title = { set_de_jure_liege_title = scope:new_title }
+	# 	scope:new_title = {
+	# 		add_to_list = new_empire_list
+	# 		set_coa = scope:old_title
+	# 		set_color_from_title = scope:old_title
+	# 		set_capital_county = scope:old_title.title_capital_county
+	# 	}
+	# 	every_kingdom = {
+	# 		limit = {
+	# 			is_titular = no
+	# 			title_capital_county.title_province = { geographical_region = TFE_roman_persian_struggle_not_core_region }
+	# 		}
+	# 		set_de_jure_liege_title = scope:new_title
+	# 	}
+	# 	if = {
+	# 		limit = {
+	# 			completely_controls = title:d_thrace # Constantinople
+	# 		}
+	# 		every_kingdom = {
+	# 			limit = {
+	# 				is_titular = no
+	# 				title_capital_county.title_province = {
+	# 					geographical_region = TFE_roman_persian_struggle_roman_core_region
+	# 				}
+	# 			}
+	# 			set_de_jure_liege_title = scope:new_title
+	# 		}
+	# 	}
+	# 	if = {
+	# 		limit = {
+	# 			completely_controls = title:d_thrace # Constantinople
+	# 		}
+	# 		every_kingdom = {
+	# 			limit = {
+	# 				is_titular = no
+	# 				title_capital_county.title_province = {
+	# 					geographical_region = TFE_roman_persian_struggle_persian_core_region
+	# 				}
+	# 			}
+	# 			set_de_jure_liege_title = scope:new_title
+	# 		}
+	# 	}
+	# }
+}

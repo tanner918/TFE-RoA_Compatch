@@ -1,0 +1,83 @@
+﻿# Galindians
+galindia_01 = {  # Ruler
+	name = "Milzas"
+	dynasty = dynasty_galindia
+	culture = galindian
+	religion = baltic_pagan
+	322.9.28 = {
+		birth = yes
+	}
+	386.5.30 = {
+		death = yes
+	}
+}
+
+galindia_11 = {  # Ruler
+	name = "Klukis"
+	dynasty = dynasty_galindia
+	culture = galindian
+	religion = baltic_pagan
+	father = galindia_01
+	364.11.4 = {
+		birth = yes
+	}
+	400.2.4 = {
+		death = yes
+	}
+}
+
+galindia_21 = {  # Ruler
+	name = "Gauronas"
+	dynasty = dynasty_galindia
+	culture = galindian
+	religion = baltic_pagan
+	father = galindia_11
+	393.5.31 = {
+		birth = yes
+	}
+	442.11.9 = {
+		death = yes
+	}
+}
+
+galindia_31 = {  # Ruler
+	name = "Milyuns"
+	dynasty = dynasty_galindia
+	culture = galindian
+	religion = baltic_pagan
+	female = yes
+	father = galindia_21
+	424.8.30 = {
+		birth = yes
+	}
+	498.10.8 = {
+		death = yes
+	}
+}
+
+galindia_41 = {  # Ruler
+	name = "Sergonis"
+	dynasty = dynasty_galindia
+	culture = galindian
+	religion = baltic_pagan
+	mother = galindia_31
+	457.4.20 = {
+		birth = yes
+	}
+	511.9.25 = {
+		death = yes
+	}
+}
+galindia_42 = {  # Ruler
+	name = "Gerdautas"
+	dynasty = dynasty_galindia
+	culture = galindian
+	religion = baltic_pagan
+	mother = galindia_31
+	495.1.1 = {
+		birth = yes
+	}
+	555.1.1 = {
+		death = yes
+	}
+}

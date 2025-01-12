@@ -1,0 +1,789 @@
+﻿on_game_start = {
+	on_actions = {
+		delay = { days = { 3650 3750 } }
+		on_10_years_huns
+	}
+	on_actions = {
+		delay = { days = { 365 420 } }
+		on_yearly_goths
+	}
+	on_actions = {
+		delay = { days = 30 }
+		on_month_huns
+	}
+	on_actions = {
+		delay = { days = { 365 420 } }
+		on_yearly_rourans
+	}
+	on_actions = {
+		delay = { days = { 365 420 } }
+		on_yearly_franks
+	}
+	on_actions = {
+		delay = { days = { 3550 3750 } }
+		on_10_years_lombards
+	}
+}
+
+on_10_years_huns = {
+	effect = {
+		if = {
+			limit = {
+				AND = {
+					current_date < 430.1.1
+					current_date > 399.12.1
+					title:e_hunnic_empire = {
+						is_title_created = yes
+					}
+					title:e_hunnic_empire.holder ?= {
+						government_has_flag = government_is_nomadic
+						max_military_strength < 20000
+						is_ai = yes
+					}
+				}
+			}
+			title:e_hunnic_empire.holder ?= {
+				spawn_army = {
+					inheritable = no
+					name = "Hunnic Invaders"
+					levies = 1000
+					men_at_arms = {
+						type = light_horsemen
+						stacks = 10
+					}
+					men_at_arms = {
+						type = horse_archers
+						stacks = 10
+					}
+					location = capital_province
+				}
+				spawn_army = {
+					inheritable = no
+					name = "Hunnic Invaders"
+					levies = 1000
+					men_at_arms = {
+						type = light_horsemen
+						stacks = 20
+					}
+					men_at_arms = {
+						type = horse_archers
+						stacks = 10
+					}
+					location = capital_province
+				}
+			}
+		}
+		title:e_hunnic_empire = {
+			if = {
+				limit = {
+					is_title_created = yes
+				}
+				every_title_to_title_neighboring_kingdom = {
+					limit = {
+						is_title_created = yes
+						NOT = {
+							holder = {
+								any_liege_or_above = {
+									THIS = title:e_hunnic_empire.holder
+								}
+							}
+						}
+					}
+					holder = {
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					dummy_male.current_year < 500
+					dummy_male.current_year >= 400
+					title:e_hunnic_empire = {
+						is_title_created = yes
+						any_title_to_title_neighboring_kingdom = {
+							is_title_created = yes
+							NOT = {
+								holder = {
+									any_liege_or_above = {
+										THIS = title:e_hunnic_empire.holder
+									}
+								}
+							}
+						}
+					}
+					title:e_hunnic_empire.holder ?= {
+						is_at_war = no
+						government_has_flag = government_is_nomadic
+					}
+				}
+			}
+			title:e_hunnic_empire = {
+				random_title_to_title_neighboring_kingdom = {
+					limit = {
+						is_title_created = yes
+						NOT = {
+							holder = {
+								any_liege_or_above = {
+									THIS = title:e_hunnic_empire.holder
+								}
+							}
+						}
+					}
+					save_scope_as = target_kingdom_huns
+				}
+				random_title_to_title_neighboring_and_across_water_county = {
+					limit = {
+						holder = {
+							any_liege_or_above = {
+								THIS = scope:target_kingdom_huns.holder
+							}
+						}
+					}
+					title:e_hunnic_empire.holder = {
+						add_character_flag = {
+							flag = free_grand_raid_cb
+							days = 14
+						}
+						start_war = {
+							cb = grand_raid_cb 
+							target = scope:target_kingdom_huns.holder.top_liege
+							target_title = PREV
+						}
+					}
+				}
+			}
+		}
+	}
+	on_actions = {
+		delay = { days = { 3650 3750 } }
+		on_10_years_huns
+	}
+}
+
+on_yearly_goths = {
+	effect = {
+		if = {
+			limit = {
+				AND = {
+					game_start_date = 476.9.4
+					title:k_visigoths = {
+						is_title_created = yes
+					}
+					title:k_visigoths.holder ?= {
+						is_ai = yes
+						any_neighboring_and_across_water_top_liege_realm_owner = {
+							highest_held_title_tier = tier_county
+							government_has_flag = government_is_roman
+							capital_county = {
+								title_province = {
+									geographical_region = custom_visigothic
+								}
+							}
+						}
+						trigger_if = {
+							limit = {
+								dummy_male.current_year >= 490
+							}
+							gold > 200
+						}
+						trigger_else = {
+							gold > 250
+						}
+					}
+					title:k_visigoths.holder ?= {
+						is_at_war = no
+					}
+				}
+			}
+			title:k_visigoths.holder ?= {
+				random_neighboring_and_across_water_top_liege_realm_owner = {
+					limit = {
+						highest_held_title_tier = tier_county
+						government_has_flag = government_is_roman
+						capital_county = {
+							title_province = {
+								geographical_region = custom_visigothic
+							}
+						}
+					}
+					title:k_visigoths.holder = {
+						start_war = {
+							cb = gothic_spanish_conquest_cb 
+							target = PREV.top_liege
+							target_title = PREV.primary_title
+						}
+					}
+				}
+			}
+		}
+	}
+	on_actions = {
+		delay = { days = { 365 420 } }
+		on_yearly_goths
+	}
+}
+
+on_month_huns = {
+	effect = {
+		if = {
+			limit = {
+				title:e_hunnic_empire = {
+					is_title_created = yes
+				}
+				title:e_hunnic_empire.holder ?= {
+					government_has_flag = government_is_nomadic
+					is_ai = yes
+					is_at_war = no
+					gold >= 0
+					OR = {
+						current_military_strength >= 3000
+						AND = {
+							game_start_date >= 390.1.1
+							current_military_strength >= 5000
+						}
+					}
+				}
+				OR = {
+					current_date <= 453.1.1	
+					title:e_hunnic_empire.holder ?= {
+						has_trait = the_hun
+					}	
+				}
+			}
+			title:e_hunnic_empire.holder ?= {
+				hun_war_target_evaluation_and_declaration_effect = yes
+			}
+		}
+	}
+
+	on_actions = {
+		check_hun_timer_invasion_90
+		check_hun_timer_invasion_360
+	}
+
+}
+
+check_hun_timer_invasion_90 = {
+	trigger = {
+		OR = {
+			current_date <= 370.1.1
+			title:e_hunnic_empire.holder ?= {
+				has_trait = the_hun
+			}	
+		}
+	}
+	on_actions = {
+		delay = { days = 90 }
+		on_month_huns
+	}
+}
+
+check_hun_timer_invasion_360 = {
+	trigger = {
+		AND = {
+			current_date >= 370.1.2
+			NOT = {
+				title:e_hunnic_empire.holder ?= {
+					has_trait = the_hun
+				}	
+			}
+		}
+	}
+	on_actions = {
+		delay = { days = 360 }
+		on_month_huns
+	}
+}
+
+on_yearly_rourans = {
+	effect = {
+		if = {
+			limit = {
+				NOT = {
+					is_target_in_global_variable_list = {
+						name = unavailable_unique_decisions
+						target = flag:TFE_establish_the_rouran_khaganate
+					}
+				}
+				any_county_in_region = {
+					region = region_rouran_lands
+					holder ?= {
+						is_independent_ruler = yes
+						culture ?= {
+							OR = {
+								THIS = culture:rouran
+								any_parent_culture_or_above = {
+									this = culture:rouran
+								}
+							}
+						}
+					}
+				}
+			}
+			every_county_in_region = {
+				region = region_rouran_lands
+				limit = {
+					exists = holder
+					NOT = {
+						is_target_in_global_variable_list = {
+							name = rouran_possible_khagan
+							target = holder
+						}
+					}
+					holder = {
+						is_independent_ruler = yes
+						culture ?= {
+							OR = {
+								THIS = culture:rouran
+								any_parent_culture_or_above = {
+									this = culture:rouran
+								}
+							}
+						}
+					}
+				}
+				holder = {
+					add_to_global_variable_list = {
+						name = rouran_possible_khagan
+						target = THIS
+					}
+				}
+			}
+			ordered_in_global_list = {
+				variable = rouran_possible_khagan
+				order_by = { value = max_military_strength }
+				if = {
+					limit = {
+						AND = {
+							is_at_war = no
+							gold > 10
+							is_ai = yes
+							NOT = {
+								completely_controls_region = region_rouran_lands
+							}
+						}
+					}
+					every_character_to_title_neighboring_county = {
+						limit = {
+							title_province = {
+								geographical_region = region_rouran_lands
+							}
+						}
+						save_scope_as = defender_title
+					}
+					start_war = {
+						casus_belli = duchy_conquest_cb
+						target = scope:defender_title.holder
+						target_title = scope:defender_title.duchy
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				title:e_mongolia.holder ?= {
+					AND = {
+						is_at_war = no
+						gold > 50
+						is_ai = yes
+					}
+					culture ?= {
+						OR = {
+							THIS = culture:rouran
+							any_parent_culture_or_above = {
+								this = culture:rouran
+							}
+						}
+					}
+					dynasty ?= {
+						has_dynasty_modifier = rouran_khagans
+					}
+					current_date <= 550.1.1
+				}
+			}
+			title:e_mongolia.holder ?= {
+				if = {
+					limit = {
+						current_military_strength < 8000
+					}
+					spawn_army = {
+						inheritable = no
+						name = "ROURAN_INVADERS"
+						levies = 1000
+						men_at_arms = {
+							type = light_horsemen
+							stacks = 5
+						}
+						men_at_arms = {
+							type = horse_archers
+							stacks = 10
+						}
+						location = capital_province
+					}
+				}
+				every_character_to_title_neighboring_county = {
+					limit = {
+						title_province = {
+							geographical_region = custom_rouran_empire_invasion_lands
+						}
+						holder.top_liege = {
+							save_temporary_scope_as = defender_temp
+						}
+						NOT = {
+							PREV = {
+								is_allied_to = scope:defender_temp
+							}
+						}
+						NOT = {
+							scope:defender_temp = {
+								AND = {
+									exists = var:my_suzerain
+									var:my_suzerain = title:e_mongolia.holder
+								}
+							}
+						}
+					}
+					save_scope_as = defender_title
+				}
+				start_war = {
+					casus_belli = rouran_invasion_cb
+					target = scope:defender_title.holder
+					target_title = scope:defender_title.kingdom
+				}
+			}
+		}
+	}
+	on_actions = {
+		delay = { days = { 365 420 } }
+		on_yearly_rourans
+	}
+}
+
+on_yearly_franks = {
+	effect = {
+		if = {
+			limit = {
+				game_start_date = 532.2.1
+				current_date >= 540.1.1
+				NOT = {
+					is_target_in_global_variable_list = {
+						name = unavailable_unique_decisions
+						target = flag:reunite_franks_decision
+					}
+				}
+				any_county_in_region = {
+					region = world_europe_west
+					holder ?= {
+						is_independent_ruler = yes
+						culture ?= {
+							OR = {
+								THIS = culture:frankish
+								any_parent_culture_or_above = {
+									this = culture:frankish
+								}
+							}
+						}
+					}
+				}
+			}
+			every_county_in_region = {
+				region = world_europe_west
+				limit = {
+					exists = holder
+					NOT = {
+						is_target_in_global_variable_list = {
+							name = frankish_stronk
+							target = holder
+						}
+					}
+					holder = {
+						is_independent_ruler = yes
+						culture ?= {
+							OR = {
+								THIS = culture:frankish
+								any_parent_culture_or_above = {
+									this = culture:frankish
+								}
+							}
+						}
+					}
+				}
+				holder = {
+					add_to_global_variable_list = {
+						name = frankish_stronk
+						target = THIS
+					}
+				}
+			}
+			ordered_in_global_list = {
+				variable = frankish_stronk
+				order_by = { value = max_military_strength }
+				if = {
+					limit = {
+						AND = {
+							is_at_war = no
+							gold > 10
+							is_ai = yes
+							NOT = {
+								global_variable_list_size = { name = frankish_stronk value = 1 }
+							}
+						}
+					}
+					random_neighboring_top_liege_realm_owner = {
+						limit = {
+							is_independent_ruler = yes
+							culture ?= {
+								OR = {
+									THIS = culture:frankish
+									any_parent_culture_or_above = {
+										this = culture:frankish
+									}
+								}
+							}
+							NOT = {
+								is_allied_in_war = PREV
+							}
+							NOT = {
+								is_allied_to = PREV
+							}
+							trigger_if = {
+								limit = {
+									exists = title:e_byzantium.holder
+								}
+								NOT = {
+									is_allied_to = title:e_byzantium.holder
+								}
+							}
+							NOT = {
+								is_at_war_with = PREV
+							}
+							NOT = {
+								has_truce = PREV
+							}
+						}
+						save_scope_as = defender_frankish
+					}
+					if = {
+						limit = {
+							exists = scope:defender_frankish
+						}
+						start_war = {
+							casus_belli = frankish_vassalization_cb 
+							target = scope:defender_frankish
+						}
+					}
+				}
+			}
+		}
+	}
+	on_actions = {
+		delay = { days = { 365 420 } }
+		on_yearly_franks
+	}
+}
+on_10_years_lombards = {
+	effect = {
+		if={#player lombards
+			limit={
+				AND={
+					exists=title:d_lombards.holder
+					current_date < 774.1.1
+					current_date > 568.1.1
+					
+					title:d_lombards.holder={
+						is_ai=no
+					}
+					NOT={exists=global_var:langobard_invasion_started}
+				}
+			}
+			title:d_lombards.holder={
+				trigger_event = langobard.0001	
+				set_global_variable={
+					name = langobard_invasion_started
+  					value = yes
+				}
+			}
+		}
+		if={#Check if lombards still exist and the year is valid
+			limit={
+				AND={
+					exists=title:d_lombards.holder
+					current_date < 774.1.1
+					current_date > 568.1.1
+					
+					title:d_lombards.holder={
+						is_ai=yes
+					}
+				}
+			} 
+			title:d_lombards.holder={save_scope_as=lombard_king}
+			scope:lombard_king={
+				if={
+					limit={
+						any_sub_realm_county={#Do a migration into Italy if they aren't in there already
+								title_province = { geographical_region = ghw_region_italy }
+						}
+					}
+					random_neighboring_top_liege_realm_owner={
+						limit={
+							AND={
+								any_sub_realm_county ={
+									title_province = { geographical_region = ghw_region_italy }
+								}
+								NOT = {
+									scope:lombard_king={has_truce = prev}
+								}
+								NOT = {
+									is_allied_to = scope:lombard_king
+								}
+							}
+						}
+						weight = {
+							base = 1
+							modifier = {
+								factor = {
+									value = 0
+									if = {
+										limit = {
+											this.current_military_strength < scope:lombard_king.current_military_strength
+										}
+										add = {
+											value = 10
+										}
+									}
+								}
+				
+							}
+							#We want them to prioritize northern Italy
+							modifier = {
+								factor = {
+									value = 0
+									if = {
+										limit = {
+											any_sub_realm_county = {
+												title_province = { geographical_region = custom_northern_italy }
+											}
+										}
+										add = {
+											value = 15
+										}
+									}
+								}
+							}
+						}
+						random_sub_realm_county = {
+							limit = {title_province = { geographical_region = ghw_region_italy }}
+							weight={
+								modifier = {
+									factor = {
+										value = 0
+										if = {
+											limit = {
+												title_province = { geographical_region = custom_northern_italy }
+											}	
+											add = {
+												value = 10
+											}
+										}
+									}
+								}
+							}
+							duchy={
+								save_scope_as = lombard_target_title
+								every_de_jure_top_liege = {
+									limit = {AND={NOT = {scope:lombard_king={has_truce = prev}} NOT={this=scope:lombard_king} NOT = {is_allied_to = scope:lombard_king} }}
+									add_to_list = lombard_targets
+								}
+							}
+							every_in_list = {
+								list = lombard_targets
+								scope:lombard_king = {
+									start_war={	
+										cb=duchy_conquest_cb
+										target_title = scope:lombard_target_title
+										target = prev
+									}
+								}
+							}
+						}
+						#give the king some fellas so he won't be destroyed instantly
+						scope:lombard_king={
+							spawn_army = {
+								uses_supply = no
+								inheritable = yes
+								name = "Lombard Settlers"
+								levies = {
+									value = 500
+								}
+								men_at_arms = {
+									type = light_footmen
+									stacks = 5
+								}
+								men_at_arms = {
+									type = siege_towers
+									stacks = 2
+								}
+								location = capital_province
+							}
+							add_gold=100
+							add_martial_skill = 1
+						}
+					}
+				}
+				else={
+					title:d_verona={
+						every_de_jure_top_liege={
+							limit={
+								NOT = {
+									scope:lombard_king={has_truce = prev}
+								}
+								NOT = {
+									is_allied_to = scope:lombard_king
+								}
+								NOT = {
+									this = scope:lombard_king
+								}
+							}
+							add_to_list = lombard_targets
+						}
+						every_in_list={
+							list= lombard_targets
+							scope:lombard_king={
+								start_war={
+									cb=germanic_migration_cb
+									target_title=title:d_verona
+									target=prev
+								}
+							}
+						}
+						scope:lombard_king={
+							spawn_army = {
+								uses_supply = no
+								inheritable = yes
+								name = "Lombard Settlers"
+								levies = {
+									value = 800
+								}
+								men_at_arms = {
+									type = light_footmen
+									stacks = 10
+								}
+								men_at_arms = {
+									type = siege_towers
+									stacks = 5
+								}
+								location = capital_province
+							}
+							add_gold = 100
+						}
+					}
+				}
+			}
+		}
+	}
+	on_actions = {
+		delay = { days = { 3550 3750 } }
+		on_10_years_lombards
+	}
+}

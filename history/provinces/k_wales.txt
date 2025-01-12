@@ -1,0 +1,160 @@
+﻿#k_wales
+##d_gwynedd ###################################
+###c_cardiganshire / Ceredigion
+1657 = {	#Cardigan / Aberteifi
+	culture = briton
+	religion = briton_pagan
+	holding = tribal_holding
+}
+1658 = {	#Aberswyth
+	holding = none
+}
+
+###c_merioneth / Merionnydd
+1665 = {	#Dolgellau / Harlech
+	culture = briton
+	religion = briton_pagan
+	holding = tribal_holding
+}
+1666 = {	#Corwen
+	holding = none
+}
+
+###c_caernarfonshire / Eryri
+1667 = {	#Caernarfon
+	culture = briton
+	religion = briton_pagan
+	holding = tribal_holding
+	200.1.1 = {
+		buildings = {
+			war_camps_0
+		}
+	}
+}
+1668 = {	#Llyn
+	holding = none
+}
+1669 = {	#Llandudno
+	holding = none
+}
+
+###c_anglesey / Ynys Mon
+1673 = {	#Yns Mons
+	culture = briton
+	religion = briton_pagan
+	holding = tribal_holding
+}
+1674 = {	#Holyhead / Caer Gybi
+	holding = none
+}
+
+###c_denbighshire / Perfeddwlad
+1670 = {	#Denbigh / Dinbych
+	culture = briton
+	religion = briton_pagan
+	holding = tribal_holding
+}
+1671 = {	#Wrexham / Tegeingl
+	holding = none
+}
+1672 = {	#Ruthin / Rhuthun
+	holding = none
+}
+
+##d_powys ###################################
+###c_maldwyn Penllyn (Cantrefi, not the peninsula)
+1663 = {	#Welshpool / Mathrafal
+	culture = briton
+	religion = briton_pagan
+	holding = tribal_holding
+}
+1664 = {	#Newtown / Machynlleth
+	holding = none
+}
+###c_sir_faesyfed
+1661 = {	#Llandrindod
+	culture = briton
+	religion = briton_pagan
+	holding = tribal_holding
+}
+1662 = {	#Rhayader / Rhaeadr Gwy
+	holding = none
+}
+
+###c_hereford / Ergyng
+1632 = {	#Hereford
+	culture = briton
+	religion = briton_pagan
+	holding = tribal_holding
+}
+1633 = {	#Wigmore
+	holding = none
+}
+1634 = {	#Clifford
+	holding = none
+}
+
+##d_deheubarth ###################################
+###c_carmarthenshire / Sir Gaerfyrddin
+1652 = {	#Carmarthen / Caerfyrddin
+	culture = briton
+	religion = briton_pagan
+	holding = tribal_holding
+}
+1653 = {	#Llandovery / Llanymddyfri
+	holding = none
+}
+
+###c_pembrokeshire / Dyfed
+1654 = {	#Pembroke / Penfro
+	culture = briton
+	religion = briton_pagan
+	holding = tribal_holding
+	380.1.1 = {
+		culture = gaelic
+		religion = irish_druidism
+	}
+}
+1655 = {	#Saint Davids / Tyddewi
+	holding =  none
+}
+1656 = {	#Fishguard / Abergwaun
+	holding = none
+}
+
+###c_glamorgan / Morgannwg
+1649 = {	#Cardiff
+	culture = briton
+	religion = briton_pagan
+	holding = tribal_holding
+}
+1650 = {	#Swansea / Abertawe
+	holding = none
+}
+1651 = {	#Caerphilly / Caerffili
+	holding = none
+}
+
+###c_monmouthshire / Gwent
+1630 = {	#Newport / Caerllion / b_casnewydd
+	culture = briton
+	religion = briton_pagan
+	holding = tribal_holding
+}
+1631 = {	# Monmouth / Trefynwy
+	holding = none
+}
+###c_brecknockshire / Brycheiniog
+1659 = {	#Brecon / Aberhonddu
+	culture = briton
+	religion = briton_pagan
+	holding = tribal_holding
+	
+	74.1.1 = { # Following Sextus Julius Frontinus establishing a fort nearby
+		special_building_slot = dolaucothi_gold_mines_01
+		special_building = dolaucothi_gold_mines_01
+	}
+}
+1660 = {	#Talgerth
+	holding = none
+}

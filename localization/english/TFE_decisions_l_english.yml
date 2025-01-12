@@ -1,0 +1,547 @@
+﻿l_english:
+ new_official_imperial_faith_decision:0 "Proclaim the Official Imperial Faith"
+ # new_official_imperial_faith_decision_desc:0 "While my faith is strong and all the citizens of my Empire are eager to convert, some resist, arguing instead that their old convictions are protected under Imperial law.\n\nI, along my councillors, have drafted a new Imperial decree declaring my faith to be the sole and official Faith of the Empire. With this new act, thousands of people will become our new brethren, and the Empire will finally be united in spirit as well as in body."
+ new_official_imperial_faith_decision_desc:0 "While my faith is strong and all the citizens of my Empire are eager to convert, some continue to resist, arguing instead that their old convictions are protected under Imperial law.\n\nIt is time to pass a new Imperial decree, declaring my faith to be the sole and official faith of the empire!"
+ new_official_imperial_faith_decision_confirm:0 "For the faithful!"
+ new_official_imperial_faith_decision_tooltip:0 "Make [ROOT.Char.GetFaith.GetName] the only [official_faith|E] of the Empire!"
+ must_use_new_official_imperial_faith_decision:0 "You must use the #V $new_official_imperial_faith_decision$#! [decision|E]"
+ 
+ new_official_imperial_faith_decision_effect_old_faith_tt:0 "[old_faith.GetName] loses its status of [official_faith|E] within the [empire.GetName]"
+ new_official_imperial_faith_decision_effect_new_faith_tt:0 "[new_faith.GetName] becomes the new [official_faith|E] of the [empire.GetName]"
+ new_official_imperial_faith_decision_effect_conversion_tt:0 "Every County within the Empire #N not#! sharing the Emperor's [faith|E]"
+ new_official_imperial_faith_decision_effect_conversion_non_religion_tt:0 "Has a #V 10%#! chance of converting to [new_faith.GetName] if they #N do not share#! the Emperor's [religion|E]"
+ new_official_imperial_faith_decision_effect_conversion_religion_tt:0 "Has a #V 40%#! chance of converting to [new_faith.GetName] if they #P share#! the Emperor's [religion|E]"
+ new_official_imperial_faith_effect_primary_empire_becomes_hof_title_tt:0 "[empire.GetName] becomes the new [head_of_faith|E] [title|E] of [new_faith.GetName]"
+ new_official_imperial_faith_effect_can_challenge_hof_title_tt:0 "As the [head_of_faith|E] [title|E] of [new_faith.GetName] already exist, you will receive a [casus_belli|E] to #V Challenge it#!"
+ reject_official_faith:0 "Reject the Official Imperial Faith"
+ reject_official_faith_desc:0 "While my Empire drafted an Imperial decree declaring my faith to be the sole official Faith of the Empire, I no longer have the same zealousness I once did for [ROOT.Char.GetFaith.GetName]. It is time to turn a new page and revoke our Imperial decree"
+ reject_official_faith_confirm:0 "For The Empire"
+ reject_official_imperial_faith_effect_tt:0 "[empire.GetHolder.GetFaith.GetName] loses its status of [official_faith|E] within the [empire.GetName]"
+ 
+ TFE_major_decisions.0001.t:0 "$new_official_imperial_faith_decision$"
+ TFE_major_decisions.0001.desc_intro:0 "The Imperial decree declaring [new_faith.GetName] the new official faith within the [empire.GetName] is finally finished.\nHundreds of envoys and religious delegations have already been sent throughout the Empire, and news of spontaneous conversions have already reached my ears, and those of my religious councillors."
+ TFE_major_decisions.0001.desc_pluralistic:0 "\n\nEven though our faith was previously known for its relative religious tolerance and acceptance of others, our administration and governance over such a wide territory requires this new degree of centralization."
+ TFE_major_decisions.0001.desc_righteous:0 "\n\nNew temples are already being built in the place of old ones, to the joy and dismay of the local people."
+ TFE_major_decisions.0001.desc_fundamentalist:0 "\n\nSome of the more reluctant to convert already protest against what they see as undeserved religious persecution, but even they in time will see the light."
+ TFE_major_decisions.0001.desc_end:0 "\n\nThis strengthening of the [new_faith.GetAdjective] spirit is emboldening a new generation of priests and my religious councillors are assuring me that even those who haven't converted yet will do so in a few years' time."
+ TFE_major_decisions.0001.a:0 "For the faithful!"
+ 
+ COURT_CHAPLAIN_CONVERSION_OFFICIAL_IMPERIAL_FAITH_EMPIRE:0 "Converting to the [official_imperial_faith|E]"
+ 
+ ### Catechetical school of Alexendria
+ reopen_catechetical_school_alexandria:0 "Reopen the Catechetical School of Alexandria"
+ reopen_catechetical_school_alexandria_desc:0 "Some of our traditions had to be abandoned after the Council of Chalcedonia and the teachings of Alexandria were supplanted by those of Rome.\nPopular riots led to the destruction of our Catechetical School, but should our hold over Christendom allow it, we should be able to rebuild it and have the teachings of Alexandria be recognized by the rest of the Council."
+ reopen_catechetical_school_alexandria_confirm:0 "For our faith!"
+ reopen_catechetical_school_alexandria_tooltip:0 "Right the wrongs of the Council of Chalcedonia and strengthen our faith!"
+ fervor_gain_reopen_catechetical_school_alexandria:0 "Reopened the Catechetical School of Alexandria"
+ 
+ TFE_major_decisions.0010.t:0 "The New Catechetical School of Alexandria"
+ TFE_major_decisions.0010.desc:0 "The Catechetical School of Alexandria was destroyed during riots afer the Council of Chalcedonia enforced the supremacy of the Bishop of Rome and their teachings over ours.\n\nOur traditions of scolarship never truly faded away, however, and as our power over Christendom is much more established now than it was when the Council was called, we are able to call forth a new council to reverse some past decisions and establish the teachings of Alexandria as equals."
+ TFE_major_decisions.0010.a:0 "For the faithful!"
+ 
+ # new_official_imperial_faith_decision_effect_tt:0 ""
+
+ # culture stuff
+ embrace_visigothic_identity_decision:0 "Embrace Visigothic Identity"
+ embrace_visigothic_identity_decision_effect.tt:0 "All [old_culture.GetName] counties and characters in Hispania and Gallia become [new_culture.GetName]"
+ embrace_visigothic_identity_decision_confirm:0 "It is time"
+ embrace_visigothic_identity_decision_tooltip:0 "Gothic counties in Hispania and Gallia become Visigothic"
+ embrace_visigothic_identity_decision_desc:0 ""
+ visigothic_decision_requirement:0 "At least 8 realm counties in Hispania or Gallia have Gothic culture"
+ embrace_ostrogothic_identity_decision:0 "Embrace Ostrogothic Identity"
+ embrace_ostrogothic_identity_decision_effect.tt:0 "All [old_culture.GetName] counties and characters in Italia and Illyria become [new_culture.GetName]"
+ embrace_ostrogothic_identity_decision_desc:0 ""
+ embrace_ostrogothic_identity_decision_confirm:0 "It is time"
+ embrace_ostrogothic_identity_decision_tooltip:0 "Gothic counties in Italia and Illyria become Ostrogothic"
+ ostrogothic_decision_requirement:0 "At least 8 realm counties in Italia or Illyria have Gothic culture"
+
+ found_kingdom_of_prussia_decision:0 "Found Kingdom of Prussia"
+ found_kingdom_of_prussia_decision_desc:0 "The Balts have, for centuries, been without a Kingdom to call their own. This rugged, untamed land of tribes and disparate pagan beliefs has long been without an identity, but perhaps I will change all that…"
+ found_kingdom_of_prussia_decision_tooltip:0 "Prussia becomes a [de_jure|E] [kingdom|E]"
+ found_kingdom_of_prussia_decision_confirm:0 "[ROOT.Char.GetLadyLord|U] of all the Balts!"
+ found_plc_decision:0 "Found the Polish-Lithuanian Commonwealth"
+ found_plc_decision_desc:0 "Uniting the kingdoms of Poland and Lithuania under a common throne will create a powerful realm, capable of withstanding our enemies."
+ found_plc_decision_tooltip:0 "Found the Polish-Lithuanian Commonwealth"
+ found_plc_decision_confirm:0 "Found the Polish-Lithuanian Commonwealth"
+
+ TFE_establish_northern_liang:0 "Establish Northern Liang"
+ TFE_establish_northern_liang_tooltip:0 "It is time we create a new kingdom, Northern Liang!"
+ TFE_establish_northern_liang_desc:0 "The [GetGeographicalRegion('custom_liang').GetName] was once the stalwart gate of the Middle Kingdom. But now, just like China, it is ruled by petty warlords and ruthless barbarians, and it has fallen into chaos. It is time we bring order to this frontier of civilization by proclaiming a new kingdom, Northern Liang. We shall prove ourselves the rightful ruler of Liang!"
+ TFE_establish_northern_liang_confirm:0 "Our dynasty will last for generations!"
+
+ TFE_establish_eastern_liang:0 "Establish Eastern Liang"
+ TFE_establish_eastern_liang_tooltip:0 "It is time we create a new kingdom, Eastern Liang!"
+ TFE_establish_eastern_liang_desc:0 "The [GetGeographicalRegion('custom_liang').GetName] was once the stalwart gate of the Middle Kingdom. But now, just like China, it is ruled by petty warlords and ruthless barbarians, and it has fallen into chaos. It is time we bring order to this frontier of civilization by proclaiming a new kingdom, Eastern Liang. We shall prove ourselves the rightful ruler of Liang!"
+ TFE_establish_eastern_liang_confirm:0 "Our dynasty will last for generations!"
+
+ TFE_establish_southern_liang:0 "Establish Southern Liang"
+ TFE_establish_southern_liang_tooltip:0 "It is time we create a new kingdom, Southern Liang!"
+ TFE_establish_southern_liang_desc:0 "The [GetGeographicalRegion('custom_liang').GetName] was once the stalwart gate of the Middle Kingdom. But now, just like China, it is ruled by petty warlords and ruthless barbarians, and it has fallen into chaos. It is time we bring order to this frontier of civilization by proclaiming a new kingdom, Southern Liang. We shall prove ourselves the rightful ruler of Liang!"
+ TFE_establish_southern_liang_confirm:0 "Our dynasty will last for generations!"
+
+ TFE_establish_western_liang:0 "Establish Western Liang"
+ TFE_establish_western_liang_tooltip:0 "It is time we create a new kingdom, Western Liang!"
+ TFE_establish_western_liang_desc:0 "The [GetGeographicalRegion('custom_liang').GetName] was once the stalwart gate of the Middle Kingdom. But now, just like China, it is ruled by petty warlords and ruthless barbarians, and it has fallen into chaos. It is time we bring order to this frontier of civilization by proclaiming a new kingdom, Western Liang. We shall prove ourselves the rightful ruler of Liang!"
+ TFE_establish_western_liang_confirm:0 "Our dynasty will last for generations!"
+
+ TFE_restore_order_to_liang:0 "Restore Order to Liang Province"
+ TFE_restore_order_to_liang_tooltip:0 "The chaos must end now."
+ TFE_restore_order_to_liang_desc:0 "The [GetGeographicalRegion('custom_liang').GetName], like much of the Middle Kingdom, has been engulfed in seemingly endless strife and conflict for  years. However, if a local ruler with sufficient ambition, wisdom, and virtue can unify Liang under one banner, then it may be possible to end the chaos and restore order to Liang."
+ TFE_restore_order_to_liang_confirm:0 "The Province of Liang shall return to peace!"
+
+ TFE_restore_order_to_liang_effect_tooltip:0 "Other Liang [kingdom|E] [titles|E] held by other [rulers|E] will be destroyed"
+
+ TFE_claim_descent_from_li_ling:0 "Claim Descent from Li Ling"
+ TFE_claim_descent_from_li_ling_tooltip:0 "Li Ling, the tragic Han general, surely is our forefather...."
+ TFE_claim_descent_from_li_ling_desc:0 "Centuries ago, the great Han general Li Ling was defeated by the mighty Xiongnu, and made to serve them. Ashamed of having to betray his homeland, he refused to return home even when he was offered clemency. The Xiongnu ruler, the #italic Chanyu#!, gave Li Ling his daughter's hand in marriage. It is said that he has descendants who still roam the steppes, forever carrying their ancestor's sorrow in their hearts... but who #italic are#! his descendants?"
+ TFE_claim_descent_from_li_ling_confirm:0 "We are Li Ling's descendants!"
+ TFE_li_ling_steppe_requirement:0 "[capital|E] is in the [GetGeographicalRegion('world_steppe_east').GetName] or [GetGeographicalRegion('world_steppe_tarim').GetName]"
+ TFE_li_ling_already_done_requirement:0 "No other [dynasty|E] has tried to claim descent from Li Ling yet"
+ han_opinion:0 "Han Opinion"
+
+ become_emperor_of_gaul_decision:0 "Reforge the Gallic Empire"
+ become_emperor_of_gaul_decision_desc:0 "During the Crisis of the Third Century, the tenuous state of the Roman Empire led to the formation of two breakaway empires. One was the Gallic Empire, centered around Gaul and Britannia. Even as Aurelian restored Roman rule in Gaul and Britannia close to the conclusion of the crisis, the impending disaster that the Western Roman Empire currently faces calls for a necessary division of power; the government in Mediolanum has proven to be unable to govern a domain stretched to its limits, which is why a restoration of the Gallic Empire is necessary to preserve Roman rule as long as Western Rome continues to be at the mercy of domestic and foreign dangers."
+ become_emperor_of_gaul_decision_tooltip:0 "One step to greatness..."
+ become_emperor_of_gaul_decision_confirm:0 "The Empire Shall Once Again Exist!"
+
+ integrate_hispania_gallic_empire:0 "Integrate Hispania"
+ integrate_hispania_gallic_empire_desc:0 "Hispania was briefly a part of the Gallic Empire. We must retake it and integrate it as a province in our empire!"
+ integrate_hispania_gallic_empire_tooltip:0 "Hispania must be ours again."
+ integrate_hispania_gallic_empire_confirm:0 "One step closer to controlling Rome..."
+
+ restore_palmyrene_empire_decision:0 "Reforge the Palmyrene Empire"
+ restore_palmyrene_empire_desc:0 "During the Crisis of the Third Century, the tenuous state of the Roman Empire led to the formation of two breakaway empires. One was the Palmyrene Empire, centered around the Levant and Southern Anatolia. Even as Queen Zenobia was unable to replicate the successes of her husband, Odenatus, the precarious situation befalling the Eastern Roman Empire necessitates a division of power to secure Roman influence in the eastern provinces!" 
+ restore_palmyrene_empire_decision_tooltip:0 "One step to greatness..."
+ restore_palmyrene_empire_decision_confirm:0 "The Empire Shall Once Again Exist!"
+ 
+ distribute_bread_decision:0 "Distribute Bread to the Capital"
+ distribute_bread_decision_desc:0 "Our people love nothing more than free food and entertainment. While it is expensive, providing bread to our populace ensures that the people stay loyal and docile."
+ distribute_bread_decision_extend_to_county:0 "By paying #V [gold_i|E][GetPlayer.GetCapitalLocation.GetCounty.GetTitle.MakeScope.ScriptValue('distribute_bread_price')]#! we would provide the [GetPlayer.GetCapitalLocation.GetCounty.GetTitle.GetName] with bread."
+ distribute_bread_decision_extend_to_duchy:0 "By paying #V [gold_i|E][GetPlayer.GetCapitalLocation.GetCounty.GetTitle.GetDeJureLiege.MakeScope.ScriptValue('distribute_bread_price')]#! we would provide the [GetPlayer.GetCapitalLocation.GetCounty.GetTitle.GetDeJureLiege.GetName] with bread, giving each county within it the modifier."
+ distribute_bread_decision_extend_to_kingdom:0 "By paying #V [gold_i|E][GetPlayer.GetCapitalLocation.GetCounty.GetTitle.GetDeJureLiege.GetDeJureLiege.MakeScope.ScriptValue('distribute_bread_price')]#! we would provide the [GetPlayer.GetCapitalLocation.GetCounty.GetTitle.GetDeJureLiege.GetDeJureLiege.GetName] with bread, giving each county within it the modifier."
+ distribute_bread_decision_extend_to_empire:0 "By paying #V [gold_i|E][GetPlayer.GetCapitalLocation.GetCounty.GetTitle.GetDeJureLiege.GetDeJureLiege.GetDeJureLiege.MakeScope.ScriptValue('distribute_bread_price')]#! we would provide the [GetPlayer.GetCapitalLocation.GetCounty.GetTitle.GetDeJureLiege.GetDeJureLiege.GetDeJureLiege.GetName] with bread, giving each county within it the modifier."
+ distribute_bread_decision_confirm:0 "Let them eat bread!"
+ distribute_bread_decision_tooltip:0 "Buy Peace with Food"
+ 
+ sponsor_gladiator_games_decision:0 "Sponsor Gladiatorial Games"
+ sponsor_gladiator_games_decision_desc:0 "The hot air of the arena, the taste of sand, the sound of metal clashing, the cries of pain and victory...\nThe people love a good fight to the death. Let us give them what they want by sponsoring a great Gladiatorial combat!"
+ sponsor_gladiator_games_decision_effect:0 "Over the next few weeks, a series of various #V Gladiatorial combats#! will take place, with some requesting your input\nHow these fights proceed might lead to different results"
+ sponsor_gladiator_games_decision_effect_2:0 "If the #V Gladiatorial games#! are allowed to proceed and finish, you will gain [prestige_i|E] [prestige|E]"
+ sponsor_gladiator_games_decision_abrahamic_religions_reaction:0 "As your [faith|E] is part of the Abrahamic family, #N religious authorities might protest these games#!, eventually leading to a #N total religious ban on these practices#!"
+ sponsor_gladiator_games_decision_county_abrahamic_religions_reaction:0 "Counties within your [domain|E] whose Faith is part of the Abrahamic family might #N protest these games#!"
+ sponsor_gladiator_games_decision_confirm:0 "May the best warrior win!"
+ sponsor_gladiator_games_decision_tooltip:0 "Are you not entertained?!"
+
+ # Kushan Decision
+ TFE_restore_kushan_empire:0 "Restore the Kushana Empire"
+ TFE_restore_kushan_empire_tooltip:0 "After so long, the Kushanas must be a world power again..."
+ TFE_restore_kushan_empire_desc:0 "The Kushana Empire used to be feared and respected as one of the great powers of the ancient world, alongside Rome, China, and Ērān. Now is the time to reforge the Kushana Empire!"
+ TFE_restore_kushan_empire_confirm:0 "The Kushanas are back!"
+ 
+ # Bosporan Kingdom
+ restore_kingdom_of_bosporus:0 "Restore the Kingdom of Bosporus"
+ restore_kingdom_of_bosporus_decision_tooltip:0 "Like a phoenix, Bosporus shall emerge again!"
+ restore_kingdom_of_bosporus_decision_desc:0 "The centuries-old Bosporan Kingdom ruled the northern Black Sea until its fall at the hands of the Goths and Huns, but perhaps a new Hellenic endeavor into the region could bring forth the old kingdom's restoration."
+ restore_kingdom_of_bosporus_decision_tt:1 "All duchies in the[GetGeographicalRegion('custom_core_bosporus').GetName] region will shift to [GetTitleByKey('k_bosporus').GetName]"
+ restore_kingdom_of_bosporus_decision_culture_tt:0 "Both [GetTitleByKey('d_crimea').GetNameNoTier] and [GetTitleByKey('d_azov').GetNameNoTier] are of the [GetPlayer.GetCulture.GetName] culture"
+ restore_kingdom_of_bosporus_confirm:0 "Bosporan vessels shall sail the Maeotis Lake once more!"
+ # h
+ dong_zhuo_culture_decision:0 "Adopt Soissons Culture"
+ dong_zhuo_culture_decision_desc:0 "Where is the soi?"
+ dong_zhuo_culture_decision_confirm:0 "Praise the soi!"
+
+ # Visigothic Capital Decision
+ visigothic_capital_decision:0 "Establish a New Capital for the Visigoths"
+ visigothic_capital_decision_tooltip:0 "Establish your capital as the true seat of the Visigoths"
+ visigothic_capital_decision_confirm:0 "A grand capital forever more!"
+ visigothic_capital_decision_desc:0 "Ever since we left the Eastern Steppes we have wandered in foreign lands looking for a new home... \nNow that we have found one, we musn't let the proud Romans forget who their true lords are. \n\nBy tying our rule to a seat of power, our grip over the fertile lands of Hispania and Aquitania will be secured."
+ visigothic_capital_decision_your_capital_is_in_spain_or_gaul:0 "Your Capital is in Gaul or Hispania"
+ found_capital_of_the_visigoths_decision_before_last_date:0 "The date is 600.1.1 or earlier"
+
+ # Heptarchy Decision
+ consolidate_the_heptarchy_decision:0 "Consolidate the Heptarchy"
+ consolidate_the_heptarchy_decision_tooltip:0 "Claim England for the [ROOT.Char.GetCulture.GetName]"
+ consolidate_the_heptarchy_decision_desc:0 "Tribe after tribe has fallen under our banners. No Briton or Roman dares to face us. We are the true kings of this island. It is time everyone recognized this."
+ TFE_heptarchy_has_been_claimed_effects_desc:0 "All valid rulers involved in the Heptarchy will get [prestige|E], a [dynasty|E] [modifier|E], increased [opinion|E] of you and a [truce|E]. In addition they will also adopt [feudal_government|E]."
+ consolidate_the_heptarchy_decision_confirm:0 "Britannia is ours!"
+ any_ruler_count:0 "There are at least 7 valid rulers in [GetGeographicalRegion('custom_england').GetName]"
+ TFE_is_heptarch_trigger_desc:0 "Must be an independent Germanic realm of at least [duchy|E] tier and exist in [GetGeographicalRegion('custom_england').GetName]"
+
+ # Personal Deity Celts
+ select_personal_deity_celtic_decision:0 "Determine Personal Deity"
+ select_personal_deity_celtic_decision_tooltip:0 "Think about [ROOT.Char.GetFaith.PantheonTerm]"
+ select_personal_deity_celtic_decision_desc:1 "#F It is not uncommon for [ROOT.Char.GetFaith.GetAdherentNamePluralNoTooltip] to single out one amongst [ROOT.Char.GetFaith.PantheonTerm] who suits their particular tastes and aims in life for special attention.\n\nI should contemplate these divine beings and decide which one calls to me the most.#!"
+ select_personal_deity_celtic_decision_confirm:0 "Dedicate your worship to a particular God"
+ select_personal_deity_celtic_decision_tt:1 "You begin to live your life according to the values of"
+ select_personal_deity_celtic_decision.select_brigantia:0 "Brigantia, Protector of Britannia"
+ select_personal_deity_celtic_decision.select_sulis:0 "Sulis, Lady of the Waters"
+ select_personal_deity_celtic_decision.select_cunomaglus:0 "Cunomaglus, Lord of the Hunt"
+ select_personal_deity_celtic_decision.select_epona:0 "Epona, Lady of the Horse"
+
+ # Struggle
+ establish_the_old_north:0 "Establish the Kingdom of the Old North"
+ establish_the_old_north_tooltip:0 "Claim England for the [ROOT.Char.GetCulture.GetName]"
+ establish_the_old_north_desc:0 "After all this time, us Britons still do not have a proper kingdom to call our own. No wonder our lands have been pillaged over the centuries by Romans, Saxons, and more! In these unpredictable times, we Britons must take charge of our own destiny by carving out a kingdom for ourselves."
+ establish_the_old_north_confirm:0 "Glory to our new kingdom!"
+
+ # Iran & HOS flavour
+ # Recruit Regional units
+ TFE_regional_units_eran_decision:0 "Recruit Regional Experts from Ērānšahr"
+ TFE_regional_units_eran_decision_tooltip:0 "The Ērānšahr spans far and wide. We would be fools not to exploit the unique skills of each region in order to strengthen our armies."
+ TFE_regional_units_eran_decision_desc:0 "Hailing from isolated mountain valleys, deserts and jungles, men come to fight under our banner from every corner of the known world. By using their specific talents and knowledge, we can provide our army with a more complete and powerful roster of units."
+ 
+ TFE_regional_units_eran_decision_tooltip_1:0 "You will get [special_troops|E] consisting of the unit of your choice."
+ TFE_regional_units_eran_decision_tooltip_2:0 "You will choose between three sizes of units, with different costs each: small (#weak [gold_i|E]500#!), medium (#weak [gold_i|E]1000#!), and large (#weak [gold_i|E]2000#!)"
+ TFE_regional_units_eran_decision_choose_type:0 "Who can pledge men to us?"
+ TFE_regional_units_eran_decision_confirm:0 "Have them pledge their swords to me!"
+ TFE_region_units_iran_elephant_req:0 "You own at least one [county|E] with a [culture|E] that has unlocked the $innovation_elephantry$ [innovation|E]"
+ TFE_region_units_iran_daylami_req:0 "You own at least one [county|E] with a [culture|E] that has the $tradition_mard_o_mard_name$ [innovation|E]"
+ 
+ TFE_regional_units_eran_choose_type:0 "Unit Type"
+ TFE_regional_units_eran_war_elephants_decision_option:0 "War Elephants"
+ TFE_regional_units_eran_war_elephants_decision_option_desc:0 "Terrifying and powerful beasts, their sheer size will strike fear in our enemies, be it on the battlefield or in a siege. We can import them into our lands from [GetGeographicalRegion('world_india').GetName]."
+ TFE_regional_units_eran_war_elephants_decision_option_tooltip:0 "$TFE_regional_units_eran_war_elephants_decision_option_desc$"
+ 
+ TFE_regional_units_eran_daylami_decision_option:0 "Daylami"
+ TFE_regional_units_eran_daylami_decision_option_desc:0 "The men of [GetGeographicalRegion('world_daylam').GetName] are seen by foreigners as warmongering and barbaric. Thus, they are the perfect unit to fill in the ranks of our army, for they are cheap, loyal and incredible fighters."
+ TFE_regional_units_eran_daylami_decision_option_tooltip:0 "$TFE_regional_units_eran_daylami_decision_option_desc$"
+
+ # Sponsor the Foundation of a holy City
+ TFE_sponsor_foundation_yazd_decision:0 "Found a New Holy City"
+ TFE_sponsor_foundation_yazd_decision_desc:0 "The old city of [GetTitleByKey('c_yazd').GetNameNoTier] is placed in the center of [GetGeographicalRegion('world_persia').GetName], making it a perfect place for [ROOT.Char.GetFaith.GetAdherentNamePluralNoTooltip] to practice their faith. A holy city on top of it will surely make a great temple for the [ROOT.Char.GetFaith.GetReligiousHeadTitle.GetBaseName]."
+ TFE_sponsor_foundation_yazd_decision_tooltip:0 "[GetTitleByKey('c_yazd').GetNameNoTier] will become a new and central place of worship for all [ROOT.Char.GetFaith.GetAdherentNamePluralNoTooltip]."
+ TFE_sponsor_foundation_yazd_decision_confirm:0 "Light the fires!"
+ TFE_sponsor_foundation_yazd_effect_tooltip:0 "[GetTitleByKey('c_yazd').GetNameNoTier] will become the new seat of power for all Zoroastrian priesthoods."
+
+ # Revive Greater Armenia Reworked Loc
+ TFE_create_armenian_empire_decision:0 "Revive Greater Armenia"
+ TFE_create_armenian_empire_decision_desc:0 "Hellas and Ērān are not the only lands ever to maintain imperial dignity. Since the time of Tigranes 'the Great,' the lands surrounding the Taurus Mountains and the Armenian highlands have sheltered an empire of our own; before Rome had ever seen an emperor, our monarch was King of Kings. That time may yet come again if we usher in the revival of Greater Armenia. #italic Of Mets Hayk!#!"
+ TFE_create_armenian_empire_decision_tooltip:0 "Armenia becomes a [de_jure|E] [empire|E]"
+ TFE_create_armenian_empire_decision_effects_de_jure_tt_a:0 "If held, the following [kingdoms|E] will become [de_jure|E] part of [armenian_armenia_empire.GetNameNoTier]:\n[armenian_georgia.GetNameNoTier], [armenian_daylam.GetNameNoTier], [armenian_jazira.GetNameNoTier], [armenian_syria.GetNameNoTier], [armenian_anatolia.GetNameNoTier], [armenian_pontus.GetNameNoTier], [armenian_jerusalem.GetNameNoTier]"
+ TFE_create_armenian_empire_decision_effects_de_jure_tt_b:1 "All [duchies|E] in $custom_greater_armenia$ become [de_jure|E] part of [armenian_armenia.GetNameNoTier], or remain part of their current [kingdom|E] if you hold that title"
+ TFE_create_armenian_empire_decision_confirm:0 "From sea to sea, again."
+ 
+ # Restore Parthia
+ TFE_restore_parthia_decision:0 "Restore Greater Parthia"
+ TFE_restore_parthia_decision_desc:0 "The Parthians in [GetTitleByKey('e_persia').GetNameNoTier] bide their time. But one day, a new Mihrdāt will restore the Xwarra, the King's Glory!"
+ TFE_restore_parthia_decision_tooltip:0 "Restore Parthia to its former glory"
+ TFE_restore_parthia_decision_confirm:0 "For Parthia!"
+ TFE_restore_parthia_decision_effect_tooltip:0 "The name of the [GetTitleByKey('e_persia').GetNameNoTier] will change to reflect this change."
+  
+ # Hegemony Over Hispania
+ hegemony_over_hispania:0 "Hegemony Over Hispania"
+ hegemony_over_hispania_t:0 "Hegemony Over Hispania"
+ hegemony_over_hispania_desc:0 "Although our lands attributed by the Romans are in Gaul, our destiny seems to be linked to Hispania. The weakening of the Suebians in Galicia and our many supporters in the region is the perfect opportunity. It is time to put an end to this uncertainty and finally accomplish the mission assigned to us by the Emperors!"
+ hegemony_over_hispania_tooltip:0 "Declare your dominance over Hispania and decide what to do with the Suebi!"
+ hegemony_over_hispania_tooltip2:0 "Territories of the Kingdoms of Lusitania, Baetica, Carthaginensis, Tarraconensis are now in the [de_jure|E] of the Kingdom of The Visigoths"
+ hegemony_over_hispania_decision_confirm:0 "Across the Pyrenees we fly!"
+ respected_independece:0 "Respected Independence"
+
+ # Aksum Monument Decision
+ aksum_monument_decision:0 "Establish A Monument"
+ aksum_monument_decision_desc:1  "Build a testament to your glory"
+ aksum_monument_decision_tooltip:0 "This will give us prestige and popular opinion at the capital."
+ aksum_monument_decision_effect_tooltip:0 "We should celebrate our recent conquest as we have in the past -- with a monument that will allow future generations to marvel at our glory"
+ aksum_monument_decision_custom:0 "Won a war within the last 5 years"
+ aksum_monument_decision_confirm:1 "Raise the monument"
+
+ aksum_monument.0001.t:0 "A Victory To Remember"
+ aksum_monument.0001.desc:0 "Once again, our realm has dominated another. This monument will bear witness to the greatness of our army and of our ruler, [ROOT.Char.GetName]!"
+ aksum_monument.0001.a:0 "Glory to Aksum!"
+
+ # Build Djeddar Decision
+ build_djeddar_decision:0 "Build a Bazina for my Predecessor"
+ build_djeddar_decision_tooltip:0 "Put your predecessor to rest and gain [piety|E] and [vassal|E] [opinion|E]"
+ build_djeddar_decision_desc:0 "My predecessor has passed away. Tradition dictates that they should be laid to rest in a bazina."
+ build_djeddar_decision_confirm:0 "Build a Bazina"
+ build_djeddar_vassals:0 "Every Vassal who likes Bazinas"
+
+ # Reunite Huns - Become Heir of Attila
+ restore_black_huns_decision:0 "Restore the Hunnic Empire"
+ restore_black_huns_decision_desc:0 "#F I am ready to call every clan leader from across my vast realm to a gathering. They will proclaim me the heir to Attila, rightful ruler of all that is under the Sky. From there, we conquer.#!"
+ restore_black_huns_decision_tooltip:0 "Form the Hunnic Empire and become the heir of Attila - ruler of the world"
+ restore_black_huns_decision_confirm:0 "Call the Chieftains"
+ hun_head_tooltip:0 "I am the head of Hunnic culture"
+
+ TFE_major_decisions.6666.t:0 "The World Before Me"
+ TFE_major_decisions.6666.desc:0 "The clan leaders all know why they have been called. We spend a long night secluded in the palace yurt, and they summon shamans and generals alike to speak before them. There is no debate. I emerge from the tent as the first rays of the sun breach the horizon, and the entire gathered army is already awake, awaiting.\n\nThey greet me, knowing that I am not merely their ruler. I am the heir to Attila - ruler of the universe."
+ TFE_major_decisions.6666.a:0 "This is where my conquest truly begins."
+
+ TFE_major_decisions.6667.t:0 "An Heir to Attila"
+ TFE_major_decisions.6667.desc:0 "I was summoned by my liege to a Great Kurultai, a gathering of every clan leader and vassal in the realm. We all knew why, and there was never any doubt in the night-long deliberations that were held in the smoky yurt. [heir_of_attila.GetFirstName] [heir_of_attila.GetDynastyName] is the [heir_of_attila.GetLadyLord] of the universe — the true heir to Attila.\n\nThere was no coronation ceremony, for who could judge [heir_of_attila.GetHerHim]? Instead, [heir_of_attila.GetSheHe] delivered a declaration before [heir_of_attila.GetHerHis] gathered armies.\n\n"Today we go forth and conquer all that lies underneath the Great Sky!""
+ TFE_major_decisions.6667.a:0 "The world will tremble before us!"
+
+ TFE_major_decisions.6668.desc:0 "Heralds bring us word of a new ruler on the Pontic steppes, someone styling themselves the "Heir of Attila", self-proclaimed ruler of the universe. A united horde of riders and warriors is pouring forth, subjugating those who refuse to bend the knee.\n\nThese are ridiculous claims, of course, but the fall of great cities before a vicious conqueror is nothing the world has not seen before..."
+ TFE_major_decisions.6668.a.distant:0 "This will all blow over soon enough."
+ TFE_major_decisions.6668.a.neighbor:0 "We must prepare ourselves. There is hardship ahead."
+
+ # Submit to Black Huns
+ submit_to_the_black_huns_decision:0 "Submit to the Black Huns"
+ submit_to_the_black_huns_decision_confirm:0 "Swear Fealty"
+ submit_to_the_black_huns_decision_opening_desc:0 "It is time to acknowledge that the Huns truly are the rulers of the world. I will join their ranks, rather than fight them."
+ submit_to_the_black_huns_decision_tooltip:0 "You become a vassal of the Hun Khagan and join the Hunnic Empire"
+ submit_to_the_black_huns_effect_tooltip:0 "Become a vassal of the Black Huns"
+
+ #Scapulimancy
+ scapulimancy_decision:0 "Practice Scapulimancy"
+ scapulimancy_decision_tooltip:0 "Turn to a shaman well-versed in scapulimancy and determine the outcome of future significant events"
+ scapulimancy_decision_desc:0 "#F Our destinies can be divined through the art of scapulimancy, where one heats and burns bones and examines the results. By studying them I may gain some insight into what the future holds...#!"
+ scapulimancy_decision_confirm:0 "Consult the Bones"
+ scapulimancy_effect:0 "You will discover an insight in the near future"
+ scapulimancy_trigger:0 "You are already consulting a shaman"
+ scapulimancy_modifier:0 "You do not already have a modifier related to scapulimancy"
+
+ # Offer Bread to the Virgin Mary
+ TFE_offer_bread_to_the_virgin_mary:0 "Offer Bread to the Virgin Mary"
+ TFE_offer_bread_to_the_virgin_mary_tooltip:0 "Through Mary, we can worship God."
+ TFE_offer_bread_to_the_virgin_mary_desc:0 "For those of us who adhere to the [ROOT.Char.GetFaith.GetAdjective] sect of [ROOT.Char.GetFaith.GetReligion.GetName], the veneration of the Virgin Mary is one of the greatest ways to worship God. In accordance with our sacred texts, we honor her several times a year in a ceremony where we offer her bread. It is time to do so once more!"
+ TFE_offer_bread_to_the_virgin_mary_confirm:0 "Prepare to bake the bread!"
+ TFE_offer_bread_to_the_virgin_mary_effect_tooltip_1:0 "You will select between three different aspects of the Virgin Mary, earning you varying amounts of [piety_i|E] [piety|E], [prestige_i|E] [prestige|E], and a powerful [character_modifier|E] for #v 5#! years."
+
+ #Byzantine army
+ tfe_byzantine_army_decision:0 "Reform the Roman Army"
+ tfe_byzantine_army_decision_desc:0 "Now that we stand alone we have to question the failures of the Empire and re-evaluate our military doctrines. We should consider a force more flexible and with a heavier focus on cavalry, while also updating the heavy infantry at our army's core."
+ tfe_byzantine_army_decision_confirm:0 "Adapting is the way of the Romans"
+ tfe_byzantine_army_decision_tooltip:0 "Adopt Byzantine army tactics"
+ tfe_unlocks_byzantine_maa_effect:0 "Grants your culture, [GetPlayer.GetCulture.GetName], access to these [men_at_arms|E]: [GetMenAtArmsType('tfe_maa_protostates').GetName], [GetMenAtArmsType('tfe_maa_byz_archers').GetName], [GetMenAtArmsType('tfe_maa_hippo_toxotai').GetName], [GetMenAtArmsType('cataphract').GetName]"
+
+ # Theodoric & Rome
+ tfe_theodoric_rome_decision:0 "Decide the Fate of Roman and [GetPlayer.GetCulture.GetNameNoTooltip] Peoples"
+ tfe_theodoric_rome_decision_desc:0 "With the Italian peninsula under our control, I now stand before the task of managing both cultures present in the realm: my own [GetPlayer.GetCulture.GetNameNoTooltip] warrior class; and the established Roman elite, still administering the civil side of the realm.\n\nShould I keep it this way and fortify this seperation of cultures and duties, or should I strive to unite the two?"
+ tfe_theodoric_rome_decision_tooltip:0 "Unite or segregate the cultures!"
+ TFE_THEODORIC_ROME_SECOND_STEP_BTN:0 "Decide on a course"
+ tfe_theodoric_rome_decision_confirm:0 "Confirm"
+ 
+ tfe_theodoric_rome_unite_name:0 "Unite the two cultures"
+ tfe_theodoric_rome_unite_desc:0 "Spend your resources to tell of the many similarities between Romans and those they consider 'barbarians', paving the road for a hybrid identity to form."
+ tfe_theodoric_rome_segregate_name:0 "To each their own"
+ tfe_theodoric_rome_unite_tooltip:0 "Your culture and the Romans gain #P +40%#! [cultural_acceptance|E] with each other\nEvery $roman$ county in your [realm|E] gains [GetStaticModifier('tfe_hybridised_barbarians_and_romans').GetNameWithTooltip] for #V 50 years#!"
+ tfe_theodoric_rome_segregate_desc:0 "The synergy of [GetPlayer.GetCulture.GetNameNoTooltip] warriors and Roman administrators will be better for the realm. Formalise this arrangement."
+ tfe_theodoric_rome_segregate_tooltip:0 "Your [dynasty|E] gains [GetStaticModifier('tfe_segregated_barbarians_and_romans').GetNameWithTooltip] for #V 100 years#!"
+
+ tfe_theodoric_rome_decision_if_hybridise:0 "If you choose to hybridise"
+ tfe_theodoric_rome_decision_if_segregate:0 "If you choose to segregate"
+
+ tfe_segregated_barbarians_and_romans:0 "Segragated Barbarians and Romans"
+ tfe_segregated_barbarians_and_romans_desc:0 "Romans know their place in the realm of this dynasty. They can legislate, while the fighting is left to their new overlords."
+ tfe_hybridised_barbarians_and_romans:0 "Hybridised Barbarians and Romans"
+ tfe_hybridised_barbarians_and_romans_desc:0 "In these lands, a fertile pairing of civilised and uncivilised is burgeoning."
+ tfe_every_roman_realm_county_custom:0 "Every $roman$ [county|E] in your [realm|E]"
+ roman_opinion:0 "$roman$ Opinion"
+
+ # Recruit foreign specialist
+ recruit_foreign_specialist_decision:0 "Recruit Foreign Specialist"
+ recruit_foreign_specialist_decision_desc:0 "The peoples outside of our empire have many accomplished commanders we can draw from by leveraging our prestige as the Roman Emperor."
+ recruit_foreign_specialist_decision.tt:0 "You will recruit a commander of your choosing rependent on regions controlled, but displease your vassals and Senators (-10 opinion for all vassals and courtiers)."
+ recruit_foreign_specialist_decision_tooltip:0 "Recruit a Commander!"
+ recruit_foreign_specialist_decision_tt:0 "Recruit a Commander."
+ recruit_foreign_specialist_decision_confirm:0 "Confirm"
+
+ # Julius Nepos decision
+ nepos_ambition:0 "Prepare to Invade Italia"
+ nepos_ambition_desc:0 "If I am to successfully retake the Roman heartland, I will need to prepare a new army with which to drive out Odoacer and his barbarian followers. Perhaps Zeno can also be convinced to see the righteousness of my cause?"
+ nepos_ambition_tooltip:0 "Begin Preparations"
+ nepos_ambition_custom_tooltip:0 "You will spend 250 Gold and 1000 Prestige"
+ nepos_ambition_tooltip_2:0 "Unlocks a [decision|E] to Prepare to Invade Italia"
+ nepos_ambition_confirm:0 "Confirm"
+
+ # Third Temple decision
+ rebuild_third_temple:0 "Build the Third Temple of Jerusalem"
+ rebuild_third_temple_desc:0 "After the destruction of Herod's Temple in the wake of the failed Great Jewish Revolt, the Jews have long sought to rebuild what they call the Third Temple on the Temple Mount. This act will strike a decisive blow against the burgeoning rise of Christianity."
+ rebuild_third_temple_tooltip:0 "Rebuild the Temple"
+ rebuild_third_temple_custom_desc:0 "#warning Warning -- This will likely take time and significant resources and is a once in a generation opportunity. Do not start this unless you are prepared to see it through. You must complete this within one ruler's lifetime.#!"
+ rebuild_third_temple_confirm:0 "Confirm"
+ faith_third_temple:0 "Christian [faiths|E] will suffer massive [fervor|E] penalties, while Jewish [faiths|E] will be revitalized."
+
+ # Illyrian Sacrifice decision
+ TFE_illyrian_sacrifice_decision:0 "Perform Illyrian Sacrifices"
+ TFE_illyrian_sacrifice_decision_tooltip:0 "Worship the Sun or the Serpent"
+ TFE_illyrian_sacrifice_decision_desc:0 "The Cult of the Sun and the Cult of the Serpent are the two dominant cults among [ROOT.Char.GetFaith.GetAdherentNamePlural]. We should honor and worship the Sun or the Serpent through appropriate offerings and sacrifices."
+ TFE_illyrian_sacrifice_decision_confirm:0 "Prepare for the ceremony!"
+ TFE_illyrian_sacrifice_decision_effect_tooltip_1:0 "You will gain a random amount of [piety|E] depending on how much [gold|E] you are willing to spend"
+ TFE_illyrian_sacrifice_decision_effect_tooltip_2:0 "You have a chance of gaining a #P positive#! [character_modifier|E], the effects of which depend on whether you choose to worship the sun or the serpent"
+ TFE_illyrian_sacrifice_decision_effect_tooltip_3:0 "The chances of successfully gaining a [modifier|E] depend on your [piety_level|E], [virtues|E],  [sins|E], and how much [gold|E] you are willing to spend"
+ TFE_illyrian_sacrifice_decision_type:0 "Will we worship the Sun or the Serpent?"
+ TFE_illyrian_sacrifice_decision_type_gui:0 "$TFE_illyrian_sacrifice_decision_type$"
+ TFE_illyrian_sacrifice_sun_option:0 "#Bold #V The Sun#!#!"
+ TFE_illyrian_sacrifice_sun_option_desc:0 "$TFE_illyrian_sacrifice_sun_option$"
+ TFE_illyrian_sacrifice_sun_option_tooltip:0 "Potentially gain [modifiers|E] with bonuses related to [diplomacy|E], [martial|E], [prowess|E], and/or [prestige|E]\n\n#weak The Cult of the Sun was traditionally prominent among the northern Illyrian tribes. Waterfowl and deer were seen as symbols of the Sun, which was often worshipped on mountains.#!"
+ TFE_illyrian_sacrifice_serpent_option:0 "#Bold #V The Serpent#!#!"
+ TFE_illyrian_sacrifice_serpent_option_desc:0 "$TFE_illyrian_sacrifice_serpent_option$"
+ TFE_illyrian_sacrifice_serpent_option_tooltip:0 "Potentially gain [modifiers|E] with bonuses related to related to [stewardship|E], [intrigue|E], [learning|E], and/or [piety|E]\n\n#weak The Cult of the Serpent was traditionally prominent among the southern Illyrian tribes. The serpent was a totemic water and chthonic deity, seen as a symbol of fertility and magic.#!"
+
+ # Establish Chariot Team
+ establish_chariot_team:0 "Establish Chariot Teams"
+ establish_chariot_team_tooltip:0 "Found your own chariot teams for your realm"
+ establish_chariot_team_desc:0 ""
+ establish_chariot_team_confirm:0 "Establish The Teams"
+ establish_chariot_team_effect_tt:0 "You will recruit charioteers to establish Blue and Green chariot teams!"
+ 
+ # Lines Extracted from imperialdec_l_english.yml
+ start_hunt_decision_tt_header:0 "A successful Hunt will:"
+ start_hunt_decision_stress:0 "#P    Reduce your [stress|E]#!"
+ 
+ select_personal_deity_decision:0 "Determine Bhakti"
+ select_personal_deity_decision_tooltip:0 "Think about the [ROOT.Char.GetFaith.PantheonTerm]"
+ select_personal_deity_decision_desc:0 "#F Every devout [ROOT.Char.GetFaith.GetAdherentNameNoTooltip] should have bhakti, or a devotion to a specific god or goddess who most strongly resonates with their soul.\n\nI should contemplate the various divine beings and decide which one calls to me the most.#!"
+ select_personal_deity_decision_confirm:0 "Contemplate bhakti"
+ select_personal_deity_decision_tt:0 "You gain a modifier associated with your selected bhakti"
+ 
+ adopt_roman_culture:0 "Adopt Roman Culture"
+ adopt_roman_culture_confirm:0 "This starts a new age"
+ adopt_roman_culture_tooltip:0 "You adopt a Roman culture based on your original one"
+ adopt_roman_culture_desc:0 "We must abandon our old ways to survive."
+ 
+ unite_the_western_slavs_decision_titles_tt:1 "Every West Slavic [kingdom|E] [title|E] you own (except your [primary_title|E]) will be destroyed and their territories will become [de_jure|E] of your Primary Title ([THIS.Char.GetPrimaryTitle.GetNameNoTier])"
+ unite_the_western_slavs_decision_titles_empire_tt:0 "Every West Slavic [kingdom|E] [title|E] you own (except your [primary_title|E]) will be destroyed and their territories will become [de_jure|E] of a random owned West Slavic kingdom"
+
+ # Recreate Indo-Scythia
+
+ reform_indo_scythian_kingdom:0 "Restore the Indo-Scythian Kingdom"
+ reform_indo_scythian_kingdom_confirm:0 "Our old glory will be restored"
+ reform_indo_scythian_kingdom_tooltip:0 "Indo-Scythia will be restored to its territorial height"
+ reform_indo_scythian_kingdom_desc:0 "The Shakas were the dominant power throughout Northern India before we were crushed by invading Pahlavas and confined to Saurashtra and Avanti by the Kushanas.\n\nLet it be known to the world that our glory will be restored and no Kushana, Gupta, or any other King will ever bring us down ever again."
+ 
+ restore_indo_scythian_kingdom_decision_effects_de_jure_tt_a:0 "The [empire|E] of Shakadvipa is restored"
+
+ # Restore the main House of the Vakataka Dynasty
+
+ reclaim_vakataka_decision:0 "Restore the Vakataka Dynasty"
+ reclaim_vakataka_decision_confirm:0 "Our House is the legacy of Vindhyashakti"
+ reclaim_vakataka_decision_tooltip:0 "You will become part of the original Vakataka house"
+ reclaim_vakataka_decision_desc:0 "The death of Maharajadhiraja Pravarasena divided our lands and dynasty into 4 branches, with the Nandivardhana, Vatsagulma, Kondana, and Kalyani branches all claiming the legacy of our old united state.\n\nOur house must prevail in this struggle and prove to be the true successors of Vindhyashakti and Pravarasena!"
+
+ # Expand Aryavarta
+
+ expand_aryavarta_decision:0 "Expand Aryavarta"
+ expand_aryavarta_decision_confirm:0 "New lands will be incorporated into Aryavarta"
+ expand_aryavarta_decision_tooltip:0 "New lands will be incorporated into Aryavarta"
+ expand_aryavarta_decision_desc:0 "Aryavarta once did not include much of the lands in the Vindhyas or in Gauda and Kalinga, but the spread and conquests of Aryas moved its definition to include those lands and beyond. Arya lands in Dakshinapatha are however not included in its boundaries, but it may be possible to convince the peoples of Aryavarta and beyond that the lands to our south and to our West are part of the homeland of the Aryas for our own political gain."
+
+ # Restore the Three Crowned Kings
+
+ muvendhar_restoration_decision:0 "Restore the Three Crowned Kings"
+ muvendhar_restoration_decision_confirm:0 "Order will be restored in Tamilakam"
+ muvendhar_restoration_decision_tooltip:0 "The Three Crowned Kings will be restored"
+ muvendhar_restoration_decision_desc:0 "Vira Chola, Ula Chera, and Vajranga Pandya were created by Shiva as the three Muventar kings of Tamilakam to protect the land from persecutors of Arya folk. His efforts came to nought with the conquests of the barbarian Kalabhras, and now his three kings stand enslaved.\n\nIt is vital that the Muventar be restored to their rightful places as the rulers of Chola Nadu, Pandya Nadu, and Chera Nadu, with me as the ruler of all Tamilakam."
+
+ # Hero Stone
+   dharma_raise_hero_stone_decision_name:0 "Raise Hero Stone"
+  raise_hero_stone_decision_desc:0 "The Death of an ancestor might be cause to celebrate their life and important events, particularly military ones. Perhaps I could benefit from erecting a Hero Stone..."
+  dharma_hero_stone_decision_tt.effects_list:0 "One of your [counties|E] will receive one of the following [modifiers|E]:\n#indent_newline: $EFFECT_LIST_BULLET$ [GetStaticModifier('dharma_hero_stone_heros_strong').GetNameWithTooltip]"
+  raise_hero_stone_decision_tooltip:0 "Pay for the carving of a runestone in one of your counties"
+  dharma_raise_hero_stone_decision_confirm:0 "But what to carve?"
+  dharma_raised_hero_stone_vassals:0 "$EFFECT_LIST_BULLET$All [direct_vassals|E] that also use Hero Stone"
+
+ dharma_hero_stone_decision_knight:0 "You had a recently deceased hero in your service"
+ dharma_hero_stone_heros_strong_desc:0 "A stone commemorating a hero now fallen-whether to suicide, beasts, or foes."
+ dharma_hero_stone_heros_strong:0 "Hero Stone"
+ dharma_hero_stone_heros_weak:0 "Hero Stone"
+ dharma_hero_stone_ancestors_strong:0 "Stone of Legitimacy"
+ dharma_hero_stone_ancestors_strong_desc:0 "A stone commemorating a dead ancestor."
+ dharma_hero_stone_ancestors_weak:0 "Stone of Legitimacy"
+
+ # Slavic State Formation decisions
+
+ croatia_formation_decision:0 "Found the Kingdom of Croatia"
+ croatia_formation_decision_desc:0 "Ever since Slavs descended upon the land of the Illyrians, we Croats have made it our home and shall protect it as fiercely as the old Illyrians protected their kingdoms from the Romans. The change in this land's character due to our arrival necessitates a new name for this territory, one that contains the name of the its new inhabitants: #bold Croatia#!."
+ croatia_formation_decision_confirm:0 "Illyria will now forever be known as Croatia"
+ croatia_formation_decision_tooltip:0 "Create the Croatian [kingdom|E] title"
+
+ poland_formation_decision:0 "Found the Kingdom of Poland"
+ poland_formation_decision_desc:0 "There is great wealth to be gained if we solidfy our rule over the banks of the Vistula river by forming a new kingdom. Such promise was likely on the mind of our ancestor Lech when he conquered this land for his people. The united Lechitic tribes should come under a Polish banner, and this kingdom should now bear the name #bold Poland#!."
+ poland_formation_decision_confirm:0 "Poland shall rule the heart of Europe"
+ poland_formation_decision_tooltip:0 "Create the Polish [kingdom|E] title"
+
+ bohemia_formation_decision:0 "Found the Kingdom of Čechy"
+ bohemia_formation_decision_desc:0 "The Czech people have made the lands known as Bohemia their home ever since its conquest by our ancestor Čech. Our fate has become tied to it, and thus this land and our realm should be known by a new name: #bold Čechy#!."
+ bohemia_formation_decision_confirm:0 "Bohemia will be the homeland of the Czechs"
+ bohemia_formation_decision_tooltip:0 "Create the Czech [kingdom|E] title"
+
+ #Raid Northern China
+ TFE_raid_china_decision:0 "Raid Northern China"
+ TFE_raid_china_decision_confirm:0 "Assemble the troops!"
+ TFE_raid_china_decision_tooltip:0 "You send a raiding party for loot into Northern China"
+ TFE_raid_china_decision_desc:0 "Northern China is divided by emperors, generals, warlords, and chieftains of different peoples fighting each other for supremacy over the Central Plains. Thus, it is ripe for the plundering, for those who have the cunning and strength. [ROOT.Char.GetPrimaryTitle.GetAdjectiveNoTooltip] warriors are clamoring to form a raiding party under my name, to (hopefully) get bountiful plunder from China."
+ nomad_or_tribal_china_raid_tt:0 "You are either Tribal or Nomadic"
+ TFE_raid_china_decision_effect_tooltip_1:0 "You will pay between [gold_i|E] #V 100#! to [gold_i|E] #V 1000#! [gold|E] to form a raiding party"
+ TFE_raid_china_decision_effect_tooltip_2:0 "While in China, the raiding party may bring back various boons"
+ TFE_raid_china_decision_effect_tooltip_3:0 "If the raiding party doesn't get wiped out, it will return to you as [special_troops|E]"
+
+ TFE_establish_the_rouran_khaganate:0 "Establish The Rouran Khaganate"
+ TFE_establish_the_rouran_khaganate_tooltip:0 "It is time for a new empire in the steppes"
+ TFE_establish_the_rouran_khaganate_desc:0 "Our foes mock our progenitor, Mugulü, saying he was a mere slave who fled from his masters into the steppe. They even laugh at us Rouran, calling us "wriggling worms." Will those fools still laugh when we "worms" form a new empire to enslave them, and subjugate all in our path?"
+ TFE_establish_the_rouran_khaganate_confirm:0 "We are no worms, but a proud, mighty people!"
+ TFE_establish_the_rouran_khaganate_tooltip.a:0 "You gain a [casus_belli|E] to spread your Khaganate across the steppes\n#warning The [casus_belli|E] depends on your dynasty having the [GetStaticModifier('rouran_khagans').GetName] [modifier|E] and you being an [emperor|E]#!"
+
+ #Sicila Vandal Decision
+ concession_of_italy:0 "The Concession of Sicilia"
+ concession_of_italy_decision_desc:0 "While Sicilia is a land rich with resources, the rulers in Italia eye it hungrily. Rather than holding on to it, we can perhaps sell it for a substantial sum to fund other, more fruitful endeavors..."
+ concession_of_italy_decision_tooltip:0 "Sell Sicilia for a lot of [gold|E]"
+ concession_of_italy_confirm:0 "Sell Sicilia"
+
+ #Eternal Peace decision
+ break_eternal_peace:0 "Shatter the Eternal Peace"
+ break_eternal_peace_desc:0 "The Perpetual Peace was a treaty signed between Justinian I and Khosrau I that concluded the Iberian War. It stipulated, among other terms, that the two empires would never again go to war against each other. While this may have been beneficial in the past, the time for renewed conquest against our hated foe is now! We will shred this treaty and grind our enemies into the dust!"
+ break_eternal_peace_tooltip:0 "Send the Envoys"
+ break_eternal_peace_confirm:0 "Confirm"
+
+ # Vandalic War decision
+ vandalic_war:0 "Invade the Vandalic Kingdom"
+ vandalic_war_desc:0 "Hildirix had been on cordial terms with our Imperial regime, but his deposition at the hands of his cousin, Gelimer, has proven to be the final straw. \n\n#bold Soon, the Roman standard will fly over the West once more!"
+ vandalic_war_tooltip:0 "Choose a Commander"
+ vandalic_war_custom_tooltip:0 "You will spend 250 Gold and 1000 Prestige"
+ vandalic_war_confirm:0 "Prepare the expeditionary force!"
+
+ # Vandalic War Aftermath decision
+ vandalic_aftermath_vassals:0 "The Fate of the Vandals"
+ vandalic_aftermath_vassals_desc:0 "Historically, the Vandals practiced Arianism and other heterodox faiths. Having successfully pushed back previous Roman invasions, it is clear that they are a threat to the empire's stability, both religiously and militarily. While former vassals of the Vandal kingdom still possess significant land in the former granary of the Empire, we can not be sure of its loyalty. We must seize the opportunity afforded to us by our recent conquest of the Vandals to eradicate them from North Africa as long as they remain heathens and heretics!"
+ vandalic_aftermath_vassals_tooltip:0 "Persecution or Toleration?"
+ vandalic_aftermath_vassals_custom_tooltip:0 "You will spend 750 Prestige"
+ vandalic_aftermath_vassals_warning:0 "#warning Warning -- This will send a conversion event to all Vandal vassals and all direct vassals of the Vicar of Africae. If they refuse to convert, they will start an Independence War. #!"
+ vandalic_aftermath_vassals_confirm:0 "Confirm"
+
+ #Recall Belisarius decision
+ recall_belisarius:0 "Recall Belisarius from Africa"
+ recall_belisarius_desc:0 "Belisarius has exceeded all expectations and seized the Vandalic Kingdom in its entirety. He is a successful commander -- perhaps, some might say, too successful. Rumors amongst some of his disgruntled subordinates have reached your ears claiming that Belisarius, fresh off his successes at the Nika Riots and in Africa, is making preparations to rebel against you. To assauge your doubts, you can offer Belisarius a clear choice -- remain in Africa as a governor, or return to the capital for an Imperial Triumph and reassignment to another post. The time to test his loyalty is now."
+ recall_belisarius_tooltip:0 "Friend or Foe?"
+ recall_belisarius_custom_tooltip:0 "You will spend 500 Prestige and 250 Gold"
+ recall_belisarius_warning:0 "#warning Warning -- This will send an event to Belisarius. If he refuses to return, he will start an Independence War. #!"
+ recall_belisarius_confirm:0 "Confirm"
+
+ #Gothic War decision
+ start_gothic_war:0 "Retake Italia"
+ start_gothic_war_desc:0 "With the failure of Amalasuntha's plans to hand over Italia to its rightful masters -- me -- it falls to us to take by force what is ours by right! We will start with an invasion of Sicily, followed by an incursion into Italia..."
+ start_gothic_war_tooltip:0 "The Heartlands Secure Once More"
+ start_gothic_war_custom_tooltip:0 "You will spend 500 Prestige and 250 Gold"
+ gothic_war_belisarius_warning:0 "#warning Warning -- If Belisarius is still fighting the Vandalic War or ruling as Vicar of Africa, he will not be your commander. #!"
+ start_gothic_war_confirm:0 "Confirm"
+
+ #Amalasuntha Coup decision
+ start_amalasuntha_coup:0 "Enact Amalasuntha's Plans"
+ start_amalasuntha_coup_desc:0 "Amalasuntha awaits our approval to proceed with her coup -- we should hurry, before the tides turn against our efforts..."
+ start_amalasuntha_coup_tooltip:0 "The Heartlands Secure Once More"
+ start_amalasuntha_coup_custom_tooltip:0 "You will spend 250 Prestige"
+ start_amalasuntha_coup_confirm:0 "Confirm"
+
+ #Alexandria Building Switching
+ build_alexandria_temple:0 "Break Ground at Alexandria for a Temple"
+ build_alexandria_temple_desc:0 "The Library of Alexandria belongs in the dustbin of history. We shall build a temple to better guide our people instead!"
+ build_alexandria_temple_tooltip:0 "Clear ground for a holy building at Alexandria"
+ build_alexandria_temple_custom_tooltip:0 "You will spend 250 Piety"
+ build_alexandria_temple_confirm:0 "Confirm"
+
+ build_alexandria_library:0 "Break Ground at Alexandria for the Library"
+ build_alexandria_library_desc:0 "It is time to lay the groundwork to rebuild the Library of Alexandria"
+ build_alexandria_library_tooltip:0 "Clear ground for the Library of Alexandria"
+ build_alexandria_library_custom_tooltip:0 "You will spend 250 Piety"
+ build_alexandria_library_confirm:0 "Confirm"
+
+ #New Decision Group Types
+ decision_group_type_cultural: "Cultural Decisions"
+ decision_group_type_religious: "Religious Decisions"
+
+ found_unlanded_kingdom_decision: "Found an Unlanded Kingdom"
+ found_unlanded_kingdom_decision_confirm: "Gather our people"
+ found_unlanded_kingdom_decision_tooltip: "Found a new unlanded kingdom title"
+ create_new_unlanded_kingdom: "You create a new unlanded Kingdom"

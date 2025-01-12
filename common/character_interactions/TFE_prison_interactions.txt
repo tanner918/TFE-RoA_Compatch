@@ -1,0 +1,68 @@
+﻿sell_gladiator_interaction = {
+	interface_priority = 30
+
+	category = interaction_category_prison
+
+	desc = sell_gladiator_interaction_desc
+
+	is_shown = {
+		scope:recipient = {
+			is_imprisoned_by = scope:actor
+			is_adult = yes # We don't want to sell kids as Gladiators lol
+			is_lowborn = yes # Only low status characters can be sold as Gladiators
+		}
+		scope:actor = {
+			# is_adult = yes
+			culture = { has_cultural_parameter = can_sell_warriors_gladiators }
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		scope:recipient = { is_busy_in_events_localised = yes } #Prisoner
+		scope:recipient = {
+			custom_description = {
+				text = "currently_being_tortured"
+				NOT = { has_character_flag = is_being_tortured }
+			}
+		}
+		
+		scope:recipient = { # Enough prowess
+			prowess >= 8
+		}
+	}
+
+	is_highlighted = {
+		# Maybe if that's the only thing they're good for?
+	}
+
+	on_accept = {
+		scope:recipient = {
+			custom_tooltip = sell_gladiator_interaction_recipient_effect
+			# hidden_tooltip = {
+				death = { killer = scope:actor death_reason = death_sold_gladiator }
+			# }
+		}
+
+		scope:actor = {
+			add_gold = scope:recipient.sell_gladiator_price
+		}
+	}
+
+	auto_accept = yes
+
+	ai_targets = {
+		ai_recipients = prisoners
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = -20
+		
+		# Base it on greed, as it gives fat stacks of cash
+	}
+
+	ai_frequency = 36
+}

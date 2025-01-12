@@ -1,0 +1,31 @@
+﻿struggle_roman_persian_ending_regional_decision_percent_region_trigger = {
+	any_county_in_region = {
+		region = TFE_roman_persian_struggle_region
+		percent > struggle_eastern_iranian_ending_domination_owned_percent_decimal_value
+		holder.top_liege = root
+	}
+}
+
+
+
+tfe_character_any_involvement_roman_persian_struggle_trigger = {
+	OR = {
+		tfe_character_involved_in_roman_persian_struggle_trigger = yes
+		tfe_character_interloper_in_roman_persian_struggle_trigger = yes
+	}
+}
+
+tfe_character_involved_in_roman_persian_struggle_trigger = {
+	any_character_struggle = {
+		involvement = involved
+		is_struggle_type = roman_persian_struggle
+	}
+}
+
+tfe_character_interloper_in_roman_persian_struggle_trigger = {
+	any_character_struggle = {
+		involvement = interloper
+		is_struggle_type = roman_persian_struggle
+	}
+}
+

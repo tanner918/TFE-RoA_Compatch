@@ -1,0 +1,11 @@
+﻿
+# Does the player want to restore ancient wonders.
+building_requirement_ancient_wonders = {
+#	custom_description = {
+#		text = has_game_rule_dead_cultures_trigger
+#		has_game_rule = dead_cultures
+#	}
+	scope:holder = { has_trait = architect }
+}
+
+

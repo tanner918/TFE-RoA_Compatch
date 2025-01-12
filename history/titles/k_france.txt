@@ -1,0 +1,1981 @@
+﻿k_france = {
+	476.1.1 = { change_development_level = 3 }
+	
+	461.1.1 = {
+		holder = syagri_05
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	465.1.1 = {
+		holder = syagri_06
+		effect = { set_title_name = k_soissons }
+	}
+	#Merovingians
+	481.1.1 = {
+		holder = 168673 #Clovis Ier
+		effect = { set_title_name = NEUSTRIA }
+		succession_laws = { male_only_law }
+	}
+	561.11.29 = {
+		holder = 168689 #Chilpï¿½ric Ier
+	}
+	584.11.1 = {
+		holder = 168695 #Clotaire II
+	}
+	629.10.19 = {
+		holder = 168696 #Dagobert Ier
+	}
+	639.1.19 = {
+		holder = 168699 #Clovis II, le Fainï¿½ant
+	}
+	657.10.31 = {
+		holder = 168701 #Clotaire III
+	}
+	673.5.9 = {
+		holder = 168703 #Thierry III
+	}
+	673.12.1 = {
+		holder = 168702 #Childï¿½ric II
+	}
+	675.1.1 = {
+		holder = 168703 #Thierry III
+	}
+	691.4.12 = {
+		holder = 168709 #Clovis IV
+	}
+	695.1.1 = {
+		holder = 168711 #Childebert IV
+	}
+	711.4.14 = {
+		holder = 168712 #Dagobert III
+	}
+	715.12.31 = {
+		holder = 168706 #Chilpï¿½ric II
+	}
+	717.1.1 = {
+		holder = 168710 #Clotaire IV
+	}
+	719.1.1 = {
+		holder = 168706 #Chilpï¿½ric II
+	}
+	721.2.13 = {
+		holder = 168713 #Thierry IV
+	}
+	743.2.15 = {
+		holder = 168707 #Childï¿½ric III
+	}
+	
+	#Carolingians
+	751.11.1 = {
+		holder = 131722		#Pepin le bref
+	}
+	768.9.24 = {
+		holder = 144999 #Carloman I
+	}
+	768.9.24 = {
+		holder = 6392 #Charlemagne
+		name = WEST_FRANCIA
+	}
+}
+
+d_champagne = {
+	361.1.1 = { change_development_level = 3 }
+	476.1.1 = { change_development_level = 4 }
+	768.1.1 = { change_development_level = 8 }
+	### Roman Province
+	300.1.1 = {
+		name = BELGICA_SECUNDA
+		de_jure_liege = k_gallia
+	}
+	361.1.1 = {
+		holder = belgica_01
+		liege = k_gallia
+	}
+	395.1.1 = {
+		holder = belgica_02
+	}
+	476.1.1 = {
+		holder = 0
+		de_jure_liege = k_france
+	}
+	487.1.1={ 
+   holder = 997005
+    } 
+   511.11.27 = {
+		holder = 997009
+	}
+}
+
+d_valois = {
+	361.1.1 = { change_development_level = 4 }
+
+	487.1.1={ 
+   holder = 997005
+    } 
+   511.11.27 = {
+		holder = 997013
+	}
+}
+
+c_ile_de_france = {
+	361.1.1 = { change_development_level = 5 }
+	476.1.1 = { change_development_level = 6 }
+	768.1.1 = { change_development_level = 15 }	
+	#Roman Province
+	300.1.1 = {
+		de_jure_liege = d_lugdunensis_senonia
+	}
+	361.1.1 = {
+		holder = senonia_04
+		liege = d_lugdunensis_senonia
+	}
+	395.1.1 = {
+		holder = senonia_05
+	}
+	476.1.1 = {
+		holder = senonia_06
+		de_jure_liege = d_valois
+		liege = k_france
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	487.1.1={ 
+   holder = 997005
+    } 
+   511.11.27 = {
+		holder = 997012
+	}
+	#county of Paris
+	#Karling
+	687.1.1 = {
+		holder = 131720
+	}
+	714.1.17 = {
+		holder = 131721
+	}
+	741.1.23 = {
+		holder = 144989
+	}
+	751.11.1 = {
+		liege = "k_france"
+	}
+	#Chantenois
+	752.1.1 = {
+		holder = 31700
+	}
+}
+
+
+c_valois = {
+	476.1.1 = { change_development_level = 10 }
+	#Roman Province
+	300.1.1 = {
+		de_jure_liege = d_champagne
+	}
+	361.1.1 = {
+		holder = belgica_04
+		liege = d_champagne
+	}
+	395.1.1 = {
+		holder = belgica_05
+	}
+	461.1.1 = {
+		holder = syagri_05
+	}
+	465.1.1 = {
+		holder = syagri_06
+	}
+	476.1.1 = {
+		de_jure_liege = d_valois
+		liege = k_france
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+}
+
+c_brie_francaise = {
+	#Roman Province
+	300.1.1 = {
+		de_jure_liege = d_lugdunensis_senonia
+	}
+	361.1.1 = {
+		holder = senonia_01
+		liege = d_lugdunensis_senonia
+	}
+	395.1.1 = {
+		holder = senonia_02
+	}
+	461.1.1 = {
+		holder = syagri_05
+	}
+	465.1.1 = {
+		holder = syagri_06
+	}
+	476.1.1 = {
+		de_jure_liege = d_valois
+		liege = k_france
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	487.1.1={ 
+   holder = 997005
+    } 
+   511.11.27 = {
+		holder = 997012
+	}
+	#Karling
+	687.1.1 = {
+		holder = 131720
+	}
+	714.1.17 = {
+		holder = 131721
+	}
+	741.1.23 = {
+		holder = 144989
+	}
+	#Chantenois
+	752.1.1 = {
+		holder = 31700
+	}
+}
+
+c_clermont = {
+	361.1.1 = { change_development_level = 5 }
+	476.1.1 = { change_development_level = 7 }
+	300.1.1 = {
+		de_jure_liege = d_champagne
+	}
+	361.1.1 = {
+		holder = belgica_04
+		liege = d_champagne
+	}
+	395.1.1 = {
+		holder = belgica_05
+	}
+	476.1.1 = {
+		holder = belgica_06
+		de_jure_liege = d_valois
+		liege = k_france
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+}
+c_vermandois = {
+	768.1.1 = { change_development_level = 10 }
+	#Roman Province
+	300.1.1 = {
+		de_jure_liege = d_champagne
+	}
+	361.1.1 = {
+		holder = belgica_04
+		liege = d_champagne
+	}
+	395.1.1 = {
+		holder = belgica_05
+	}
+	476.1.1 = {
+		holder = belgica_06
+		de_jure_liege = d_valois
+		liege = k_france
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	
+	#Carolingian house of Vermandois
+	687.1.1 = {
+		holder = 131720
+	}
+	714.1.17 = {
+		holder = 131721
+	}
+}
+
+
+c_amiens = {
+	#Roman Province
+	300.1.1 = {
+		de_jure_liege = d_champagne
+	}
+	361.1.1 = {
+		holder = belgica_16
+		liege = d_champagne
+	}
+	395.1.1 = {
+		holder = belgica_17
+	}
+	476.1.1 = {
+		holder = ragnachar_02
+		government = feudal_government
+		de_jure_liege = d_flanders
+	}
+}
+
+c_beaumont = {
+	#Roman Province
+	361.1.1 = { change_development_level = 3 }
+	476.1.1 = { change_development_level = 4 }
+	300.1.1 = {
+		de_jure_liege = d_normandy
+	}
+	361.1.1 = {
+		holder = lug_secunda_01
+		liege = d_normandy
+	}
+	395.1.1 = {
+		holder = lug_secunda_02
+	}
+	476.1.1 = {
+		holder = lug_secunda_03
+		de_jure_liege = d_valois
+		liege = k_france
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	487.1.1={ 
+   holder = 997005
+    } 
+   511.11.27 = {
+		holder = 997012
+	}
+	#Karling
+	687.1.1 = {
+		holder = 131720
+	}
+	714.1.17 = {
+		holder = 131721
+	}
+	741.1.23 = {
+		holder = 144989
+	}
+	#Chantenois
+	752.1.1 = {
+		holder = 31700
+	}
+}
+
+
+d_berry = {
+	487.1.1={ 
+   holder = 997005
+    } 
+#    511.11.27 = {
+# 		holder = 997012
+# 	}
+}
+
+c_berry = {
+	361.1.1 = { change_development_level = 4 }
+	300.1.1 = {
+		de_jure_liege = d_bourbon
+	}
+	361.1.1 = {
+		holder = berry_01
+		liege = d_bourbon
+	}
+	395.1.1 = {
+		holder = berry_02
+		liege = d_bourbon
+	}
+	476.1.1 = {
+		holder = berry_03
+		de_jure_liege = d_berry
+		liege = d_toulouse
+		government = feudal_government
+	}
+	530.1.1={
+		holder = apollinarian_09
+		liege = k_frankish_paris
+	}
+}
+
+c_tourraine = {
+	361.1.1 = { change_development_level = 6 }
+	768.1.1 = { change_development_level = 9 }
+	300.1.1 = {
+		de_jure_liege = d_lugdunensis_tertia
+	}
+	361.1.1 = {
+		holder = lug_tertia_01
+		liege = d_lugdunensis_tertia
+	}
+	395.1.1 = {
+		holder = lug_tertia_02
+	}
+	476.1.1 = {
+		holder = lug_tertia_03
+		de_jure_liege = d_berry
+		liege = k_france
+	}
+	530.1.1={
+		holder = apollinarian_09
+        liege = k_frankish_paris
+	}
+}
+
+c_blois = {
+	361.1.1 = { change_development_level = 5 }
+	300.1.1 = {
+		de_jure_liege = d_lugdunensis_tertia
+	}
+	361.1.1 = {
+		holder = lug_tertia_01
+		liege = d_lugdunensis_tertia
+	}
+	395.1.1 = {
+		holder = lug_tertia_02
+	}
+	441.1.1 = {
+		holder = alan_12 #Goar
+	}
+	451.1.1 = {
+		holder = alan_13 #Sangiban
+		liege = k_france
+		de_jure_liege = d_berry
+	}
+	487.1.1={ 
+   holder = 997005
+    } 
+   511.11.27 = {
+		holder = 997011
+	}
+	524.1.1={
+		holder=997012
+	}
+	530.1.1={
+		holder = apollinarian_09
+		liege = k_frankish_paris
+		
+	}
+}
+
+c_issoudun = {
+	361.1.1 = { change_development_level = 4 }
+	300.1.1 = {
+		de_jure_liege = d_bourbon
+	}
+	361.1.1 = {
+		holder = berry_01
+		liege = d_aquitaine
+	}
+	395.1.1 = {
+		holder = berry_02
+		liege = d_bourbon
+	}
+	476.1.1 = {
+		holder = berry_03
+		de_jure_liege = d_berry
+		liege = d_toulouse
+		government = feudal_government
+	}
+	530.1.1={
+		holder = apollinarian_09
+		liege = k_frankish_paris
+	}
+}
+
+
+d_anjou = {
+	487.1.1={ 
+   holder = 997005
+    } 
+#    511.11.27 = {
+# 		holder = 997011
+# 	}
+# 	524.1.1={
+# 		holder=997012
+# 	}
+}
+
+
+c_anjou = {
+	361.1.1 = { change_development_level = 6 }
+	#Roman Province
+	300.1.1 = {
+		de_jure_liege = d_lugdunensis_tertia
+	}
+	361.1.1 = {
+		holder = lug_tertia_04
+		liege = d_lugdunensis_tertia
+	}
+	395.1.1 = {
+		holder = lug_tertia_05
+	}
+	476.1.1 = {
+		holder = lug_tertia_06
+		de_jure_liege = d_anjou
+		liege = k_france
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	532.1.1 = {
+		holder = frankish_misc_003
+		liege = k_frankish_paris
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+}
+
+c_saumur = {
+	361.1.1 = { change_development_level = 5 }
+	#Roman Province
+	300.1.1 = {
+		de_jure_liege = d_aquitaine
+	}
+	361.1.1 = {
+		holder = septem_07
+		liege = k_septem_provinciae
+	}
+	395.1.1 = {
+		holder = septem_07
+	}
+	476.1.1 = {
+		holder = taifal_03
+		de_jure_liege = d_poitou
+	}
+	532.1.1 = {
+		holder = frankish_misc_003
+		liege = k_frankish_paris
+	}
+}
+
+
+c_maine = {
+	#Roman Province
+	300.1.1 = {
+		de_jure_liege = d_lugdunensis_tertia
+	}
+	361.1.1 = {
+		holder = lug_tertia_04
+		liege = d_lugdunensis_tertia
+	}
+	395.1.1 = {
+		holder = lug_tertia_05
+	}
+	476.1.1 = {
+		holder = lug_tertia_06
+		de_jure_liege = d_anjou
+		liege = k_france
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	532.1.1 = {
+		holder = frankish_misc_003
+		liege = k_frankish_paris
+	}
+}
+
+
+c_sable = {
+#Roman Province
+	300.1.1 = {
+		de_jure_liege = d_lugdunensis_tertia
+	}
+	361.1.1 = {
+		holder = lug_tertia_04
+		liege = d_lugdunensis_tertia
+	}
+	395.1.1 = {
+		holder = lug_tertia_05
+	}
+	476.1.1 = {
+		holder = lug_tertia_06
+		de_jure_liege = d_anjou
+		liege = k_france
+	}
+	532.1.1 = {
+		holder = gallo_roman_misc_006
+		liege = k_frankish_paris
+	}
+}
+
+
+d_normandy = {
+	361.1.1 = { change_development_level = 2 }
+	1.1.1 = {
+		name = LUGDUNENSIS_SECUNDA
+		de_jure_liege = k_gallia
+	}
+	#Roman Province
+	361.1.1 = {
+		holder = lug_secunda_01
+		liege = k_gallia
+	}
+	395.1.1 = {
+		holder = lug_secunda_02
+	}
+	476.1.1 = {
+		holder = 0
+		de_jure_liege = k_france
+	}
+	487.1.1={ 
+   holder = 997005
+    } 
+   511.11.27 = {
+		holder = 997012
+	}
+
+}
+
+
+c_rouen = {
+	361.1.1 = { change_development_level = 5 }
+	867.1.1 = { change_development_level = 8 }
+	#Roman Province
+	300.1.1 = {
+	}
+	361.1.1 = {
+		holder = lug_secunda_01
+		liege = d_normandy
+	}
+	395.1.1 = {
+		holder = lug_secunda_02
+	}
+	476.1.1 = {
+		holder = lug_secunda_03
+		liege = k_france
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	532.1.1 = {
+		holder = frankish_misc_004
+		liege = k_frankish_paris
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+
+}
+
+c_evreux = {
+	361.1.1 = { change_development_level = 3 }
+	#Roman Province
+	300.1.1 = {
+	}
+	361.1.1 = {
+		holder = lug_secunda_01
+		liege = d_normandy
+	}
+	395.1.1 = {
+		holder = lug_secunda_02
+	}
+	476.1.1 = {
+		holder = lug_secunda_03
+		liege = k_france
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	532.1.1 = {
+		holder = frankish_misc_004
+		liege = k_frankish_paris
+	}
+	750.1.1 = {
+		liege = "k_france"
+		holder = 91476 #Australdis, historical placeholder
+	}
+}
+
+c_avranches = {
+	361.1.1 = { change_development_level = 1 }
+	#Roman Province
+	300.1.1 = {
+	}
+	361.1.1 = {
+		holder = lug_secunda_04
+		liege = d_normandy
+	}
+	395.1.1 = {
+		holder = lug_secunda_05
+	}
+	476.1.1 = { # Gaullish Saxons
+		holder = bayeux_02
+		liege = 0
+		government = feudal_government
+	}
+	487.1.1={ 
+   holder = 997005
+    } 
+   511.11.27 = {
+		holder = 997012
+		liege = k_frankish_paris
+	}
+	532.1.1 = {
+		holder = gallo_roman_misc_007
+	}
+	#county of Mortain
+	740.1.1 = {
+		liege = "k_france"
+		holder = 91474 #Wildo, historical placeholder
+	}
+}
+c_bayeux = {
+	361.1.1 = { change_development_level = 1 }
+	#Roman Province
+	300.1.1 = {
+	}
+	361.1.1 = {
+		holder = lug_secunda_04
+		liege = d_normandy
+	}
+	395.1.1 = {
+		holder = lug_secunda_05
+	}
+	476.1.1 = { # Gaullish Saxons
+		holder = bayeux_01
+		liege = 0
+		government = feudal_government
+	}
+	487.1.1={ 
+    holder = 997005
+    } 
+   511.11.27 = {
+		holder = 997012
+		liege = k_frankish_paris
+	}
+	532.1.1 = {
+		holder = gallo_roman_misc_007
+	}
+	#county of Mortain
+	740.1.1 = {
+		liege = "k_france"
+		holder = 91474 #Wildo, historical placeholder
+	}
+}
+
+
+c_alencon = {
+	#Roman Province
+	300.1.1 = {
+	}
+	361.1.1 = {
+		holder = lug_secunda_04
+		liege = d_normandy
+	}
+	395.1.1 = {
+		holder = lug_secunda_05
+	}
+	476.1.1 = {
+		holder = lug_secunda_06
+		liege = k_france
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	532.1.1 = {
+		holder = frankish_misc_004
+		liege = k_frankish_paris
+	}
+	750.1.1 = {
+		liege = "k_france"
+		holder = 91476 #Australdis, historical placeholder
+	}
+}
+
+c_lisieux = {
+	#Roman Province
+	300.1.1 = {
+	}
+	361.1.1 = {
+		holder = lug_secunda_04
+		liege = d_normandy
+	}
+	395.1.1 = {
+		holder = lug_secunda_05
+	}
+	476.1.1 = {
+		holder = lug_secunda_06
+		liege = k_france
+	}
+	532.1.1 = {
+		holder = gallo_roman_misc_006
+		liege = k_frankish_paris
+	}
+	750.1.1 = {
+		liege = "k_france"
+		holder = 91476 #Australdis, historical placeholder
+	}
+}
+
+c_eu = {
+	#Roman Province
+	300.1.1 = {
+	}
+	361.1.1 = {
+		holder = lug_secunda_01
+		liege = d_normandy
+	}
+	395.1.1 = {
+		holder = lug_secunda_02
+	}
+	476.1.1 = {
+		holder = lug_secunda_03
+		liege = k_france
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	532.1.1 = {
+		holder = frankish_misc_004
+		liege = k_frankish_paris
+	}
+	760.1.1 = {
+		liege = "k_france"
+		holder = 91477 #BAUGULF, historical count as placeholder
+	}
+}
+
+d_orleans = {
+	441.1.1 = {
+		holder = alan_12 #Goar
+	}
+	451.1.1 = {
+		holder = alan_13 #Sangiban
+		liege = k_france
+		government = feudal_government
+	}
+	487.1.1={ 
+    holder = 997005
+    } 
+    511.11.27 = {
+		holder = 997011
+	}
+	524.1.1={
+		holder=997012
+	}
+}
+
+c_orleans = {
+	361.1.1 = { change_development_level = 5 }
+	768.1.1 = { change_development_level = 8 }
+	
+	#Roman Province
+	300.1.1 = {
+		de_jure_liege = d_lugdunensis_senonia
+	}
+	361.1.1 = {
+		holder = senonia_07
+		liege = d_lugdunensis_senonia
+	}
+	395.1.1 = {
+		holder = senonia_08
+	}
+	441.1.1 = {
+		holder = alan_12 #Goar
+	}
+	451.1.1 = {
+		holder = alan_13 #Sangiban
+		liege = k_france
+		de_jure_liege = d_orleans
+	}
+	487.1.1={ 
+    		holder = 997005
+    	} 
+    	511.11.27 = {
+		holder = 997011
+	}
+	524.1.1={
+		holder=997017
+		liege = k_frankish_paris
+		government = feudal_government
+	}
+	#county of Orlï¿½ans
+	790.1.1 = {
+		holder = 303421	#Adrien of Orleans
+		liege = "k_france"
+	}
+
+}
+
+c_montargis = {
+	#Roman Province
+	300.1.1 = {
+		de_jure_liege = d_lugdunensis_senonia
+	}
+	361.1.1 = {
+		holder = senonia_01
+		liege = d_lugdunensis_senonia
+	}
+	395.1.1 = {
+		holder = senonia_02
+	}
+	461.1.1 = {
+		holder = syagri_05
+	}
+	465.1.1 = {
+		holder = syagri_06
+	}
+	476.1.1 = {
+		de_jure_liege = d_orleans
+		liege = k_france
+	}
+	532.1.1 = {
+		holder = gallo_roman_misc_009
+		liege = k_frankish_paris
+	}
+}
+
+c_vendome = {
+	#Roman Province
+	300.1.1 = {
+		de_jure_liege = d_lugdunensis_senonia
+	}
+	361.1.1 = {
+		holder = senonia_07
+		liege = d_lugdunensis_senonia
+	}
+	395.1.1 = {
+		holder = senonia_08
+	}
+	441.1.1 = {
+		holder = alan_12 #Goar
+	}
+	451.1.1 = {
+		holder = alan_13 #Sangiban
+		liege = k_france
+		de_jure_liege = d_orleans
+	}
+	487.1.1 = { 
+    	holder = 997005
+    } 
+   511.11.27 = {
+		holder = 997011
+	}
+	524.1.1={
+		holder = 997144
+		liege = k_frankish_paris
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+}
+
+c_chartres = {
+	867.1.1 = { change_development_level = 8 }
+	#Roman Province
+	300.1.1 = {
+		de_jure_liege = d_lugdunensis_senonia
+	}
+	361.1.1 = {
+		holder = senonia_04
+		liege = d_lugdunensis_senonia
+	}
+	395.1.1 = {
+		holder = senonia_05
+	}
+	476.1.1 = {
+		holder = senonia_06
+		de_jure_liege = d_orleans
+		liege = k_france
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	524.1.1={
+		holder = 997144
+		liege = k_frankish_paris
+	}
+}
+
+c_sancerre = {
+	#Roman Province
+	300.1.1 = {
+		de_jure_liege = d_lugdunensis_senonia
+	}
+	361.1.1 = {
+		holder = senonia_07
+		liege = d_lugdunensis_senonia
+	}
+	395.1.1 = {
+		holder = senonia_08
+	}
+	441.1.1 = {
+		holder = alan_12 #Goar
+	}
+	451.1.1 = {
+		holder = alan_13 #Sangiban
+		liege = k_france
+	}
+	476.1.1 = {
+		de_jure_liege = d_orleans
+		liege = k_france
+		government = feudal_government
+	}
+	532.1.1 = {
+		holder = gallo_roman_misc_009
+		liege = k_frankish_paris
+	}
+}
+
+d_bar = {
+	487.1.1={ 
+   holder = 997005
+    } 
+	532.4.5 = {
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+#    511.11.27 = {
+# 		holder = 997009
+# 	}
+}
+
+c_bar = {
+	## Roman Province
+	361.1.1 = { change_development_level = 4 }
+	300.1.1 = {
+		de_jure_liege = d_upper_lorraine
+	}
+	361.1.1 = {
+		holder = belgica_07
+		liege = d_upper_lorraine
+}
+	395.1.1 = {
+		holder = belgica_08
+		liege = d_upper_lorraine
+	}
+	476.1.1 = {
+		holder = belgica_09
+		de_jure_liege = d_bar
+		liege = k_france
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	520.1.1 = {
+		holder = 997132 # Munderic
+		liege = k_frankish_rheims
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = feudal_government
+			}
+		}
+	}
+	}
+	728.1.1 = {
+		holder = 91395 #Madelgaud Bivinid
+	}
+	728.1.1 = {
+		liege = k_lotharingia
+	}
+}
+
+
+c_briey = {
+	361.1.1 = { change_development_level = 4 }
+	## Roman Province
+	300.1.1 = {
+		de_jure_liege = d_upper_lorraine
+	}
+	361.1.1 = {
+		holder = belgica_07
+		liege = d_upper_lorraine
+	}
+	395.1.1 = {
+		holder = belgica_08
+		liege = d_upper_lorraine
+	}
+	476.1.1 = {
+		holder = belgica_09
+		de_jure_liege = d_upper_lorraine
+		liege = k_france
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	520.1.1={
+		holder=filler532 
+liege=k_frankish_rheims
+	}
+	728.1.1 = {
+		holder = 91395 #Madelgaud Bivinid
+	}
+	728.1.1 = {
+		liege = k_lotharingia
+	}
+}
+
+c_langres = {
+	361.1.1 = { change_development_level = 4 }
+	## Roman Province
+	300.1.1 = {
+		de_jure_liege = d_upper_lorraine
+	}
+	361.1.1 = {
+		holder = belgica_07
+		liege = d_upper_lorraine
+	}
+	395.1.1 = {
+		holder = belgica_08
+		liege = d_upper_lorraine
+	}
+	476.1.1 = {
+		holder = belgica_09
+		de_jure_liege = d_bar
+		liege = k_france
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	490.1.1={
+		holder=filler532 
+	}
+	520.1.1={
+		liege=k_frankish_rheims
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+}
+
+c_vaucouleurs = {
+	361.1.1 = { change_development_level = 3 }
+	## Roman Province
+	300.1.1 = {
+		de_jure_liege = d_upper_lorraine
+	}
+	361.1.1 = {
+		holder = belgica_07
+		liege = d_upper_lorraine
+	}
+	395.1.1 = {
+		holder = belgica_08
+		liege = d_upper_lorraine
+	}
+	476.1.1 = {
+		holder = belgica_09
+		de_jure_liege = d_bar
+		liege = k_france
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	490.1.1={
+		holder=filler532 
+	}
+	520.1.1={
+		liege=k_frankish_rheims
+	}
+	732.1.1 = {
+		liege = d_swabia
+	}
+	732.1.1 = {
+		holder = 190361 #Hadrad
+	}
+	760.1.1 = {
+		holder = 190362 #Rothard
+	}
+}
+
+d_flanders = {
+	470.1.1 = {
+		de_jure_liege = k_lotharingia
+	}
+	487.1.1={ 
+   holder = 997005
+    } 
+   511.11.27 = {
+		holder = 997013
+		liege = k_frankish_soissons
+	}
+	532.1.1 = {
+		holder = frankish_misc_002
+	}
+	#740.1.1 = {
+	#	liege = k_france
+	#	holder = 91487
+	#}
+}
+
+
+c_brugge = {
+	361.1.1 = { change_development_level = 1 }
+	768.1.1 = { change_development_level = 8 }
+	#Roman Province
+	300.1.1 = {
+		de_jure_liege = d_champagne
+	}
+	361.1.1 = {
+		holder = belgica_10
+		liege = d_champagne
+	}
+	395.1.1 = {
+		holder = belgica_11
+	}
+	476.1.1 = {
+		holder = 997004
+		government = feudal_government
+		de_jure_liege = d_flanders
+	}
+}
+
+
+c_yperen = {
+	361.1.1 = { change_development_level = 1 }
+	#Roman Province
+	300.1.1 = {
+		de_jure_liege = d_champagne
+	}
+	361.1.1 = {
+		holder = belgica_10
+		liege = d_champagne
+	}
+	395.1.1 = {
+		holder = belgica_11
+	}
+	476.1.1 = {
+		holder = chararic_01
+		de_jure_liege = d_flanders
+		government = feudal_government
+	}
+}
+
+c_guines = {
+	361.1.1 = { change_development_level = 1 }
+	#Roman Province
+	300.1.1 = {
+		de_jure_liege = d_champagne
+	}
+	361.1.1 = {
+		holder = belgica_13
+		liege = d_champagne
+	}
+	395.1.1 = {
+		holder = belgica_14
+	}
+	476.1.1 = {
+		holder = chararic_01
+		de_jure_liege = d_flanders
+		government = feudal_government
+	}
+}
+
+c_lille = {
+	361.1.1 = { change_development_level = 2 }
+	#Roman Province
+	300.1.1 = {
+		de_jure_liege = d_champagne
+	}
+	361.1.1 = {
+		holder = belgica_13
+		liege = d_champagne
+	}
+	395.1.1 = {
+		holder = belgica_14
+	}
+	476.1.1 = {
+		holder = ragnachar_02
+		government = feudal_government
+		de_jure_liege = d_flanders
+	}	
+}
+
+c_boulogne = {
+	361.1.1 = { change_development_level = 1 }
+	#Roman Province
+	300.1.1 = {
+		de_jure_liege = d_champagne
+	}
+	361.1.1 = {
+		holder = belgica_13
+		liege = d_champagne
+	}
+	395.1.1 = {
+		holder = belgica_14
+	}
+	476.1.1 = {
+		holder = chararic_01
+		de_jure_liege = d_flanders
+		government = feudal_government
+	}
+}
+
+d_burgundy = {
+	523.1.1 = {
+		holder = 994013 #Gundemar
+	}
+}
+
+c_dijon = {
+	361.1.1 = { change_development_level = 4 }
+	768.1.1 = { change_development_level = 6 }
+	## Roman Province
+	300.1.1 = {
+		de_jure_liege = d_upper_lorraine
+	}
+	361.1.1 = {
+		holder = belgica_07
+		liege = d_upper_lorraine
+	}
+	395.1.1 = {
+		holder = belgica_08
+		liege = d_upper_lorraine
+	}
+	476.1.1 = {
+		holder = belgica_09
+		de_jure_liege = d_burgundy
+		liege = k_france
+	}
+	532.1.1 = {
+		holder = gallo_roman_misc_001
+		liege = d_burgundy
+	}
+}
+
+c_chalon = {
+	361.1.1 = { change_development_level = 4 }
+	#Roman Province
+	360.1.1 = {
+		holder = septem_10
+		de_jure_liege = d_lugdunensis_prima
+	}
+	395.1.17 = {
+		holder = gallia_01
+	}
+	#Burgundian Kingdom
+	443.1.1 = {
+		holder = latinus_01 #Gundeoc
+		government = feudal_government
+		de_jure_liege = d_burgundy
+		liege = k_burgundy
+	}
+	532.1.1 = {
+		holder = burgundian_misc_001
+		liege = d_burgundy
+	}
+}
+
+c_auxerre = {
+	#Roman Province
+	361.1.1 = { change_development_level = 4 }
+	361.1.1 = {
+		holder = syagri_03
+		de_jure_liege = d_lugdunensis_senonia
+		liege = d_lugdunensis_senonia
+	}
+	382.1.1 = {
+		holder = syagri_01
+	}
+	396.1.1 = {
+		holder = syagri_04
+	}
+	442.1.1 = {
+		holder = syagri_05
+	}
+	#461.1.1 = {
+	#	holder = syagri_05
+	#}
+	465.1.1 = {
+		holder = syagri_06
+	}
+	465.1.1 = {
+		de_jure_liege = d_burgundy
+		liege = k_france
+	}	
+	532.1.1 = {
+		holder = gallo_roman_misc_001
+		liege = d_burgundy
+	}
+}
+
+
+c_tonnerrois = {
+	361.1.1 = { change_development_level = 4 }
+	#Roman Province
+	361.1.1 = {
+		holder = syagri_03
+		de_jure_liege = d_lugdunensis_senonia
+		liege = d_lugdunensis_senonia
+	}
+	382.1.1 = {
+		holder = syagri_01
+	}
+	396.1.1 = {
+		holder = syagri_04
+	}
+	476.1.1 = {
+		holder = syagri_07
+		liege = k_france
+		de_jure_liege = d_burgundy
+	}
+	532.1.1 = {
+		holder = gallo_roman_misc_001
+		liege = d_burgundy
+	}
+}
+
+c_avalois = {
+	361.1.1 = { change_development_level = 4 }
+	#Roman Province
+	361.1.1 = {
+		holder = syagri_03
+		de_jure_liege = d_lugdunensis_senonia
+		liege = d_lugdunensis_senonia
+	}
+	382.1.1 = {
+		holder = syagri_01
+	}
+	396.1.1 = {
+		holder = syagri_04
+	}
+	442.1.1 = {
+		holder = syagri_05
+	}
+	476.1.1 = {
+		holder = syagri_07
+		liege = k_france
+		de_jure_liege = d_burgundy
+	}		
+	532.1.1 = {
+		holder = gallo_roman_misc_003
+		liege = d_burgundy
+	}
+}
+
+c_macon = {
+	#Roman Province
+	360.1.1 = {
+		holder = septem_10
+		de_jure_liege = d_lugdunensis_prima
+	}
+	395.1.17 = {
+		holder = gallia_01
+	}
+	#Burgundian Kingdom
+	443.1.1 = {
+		holder = latinus_01 #Gundeoc
+		government = feudal_government
+		de_jure_liege = d_burgundy
+		liege = k_burgundy
+	}
+	532.1.1 = {
+		holder = burgundian_misc_001
+		liege = d_burgundy
+	}
+}
+
+c_nevers = {
+	#Roman Province
+	360.1.1 = {
+		holder = septem_10
+		de_jure_liege = d_lugdunensis_prima
+	}
+	395.1.17 = {
+		holder = gallia_01
+	}
+	476.1.1 = {
+		de_jure_liege = d_burgundy
+		holder = syagri_07
+		liege = k_france
+	}		
+	532.1.1 = {
+		holder = gallo_roman_misc_003
+		liege = d_burgundy
+	}
+}
+
+c_reims = {
+	361.1.1 = { change_development_level = 7 }
+	476.1.1 = { change_development_level = 8 }
+	768.1.1 = { change_development_level = 10 }
+	### Roman Province
+	300.1.1 = {
+		name = BELGICA_SECUNDA
+	}
+	361.1.1 = {
+		holder = belgica_01
+		liege = d_champagne
+	}
+	395.1.1 = {
+		holder = belgica_02
+	}
+	461.1.1 = {
+		holder = syagri_05
+	}
+	465.1.1 = {
+		holder = syagri_06
+		liege = k_france
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	753.1.1 = {
+		liege = "k_lotharingia"
+		holder = 91506 #Jean Turpin, archbishop of rheims
+		government = theocracy_government
+	}
+}
+
+
+c_troyes = {
+	361.1.1 = { change_development_level = 5 }
+	#Roman Province
+	300.1.1 = {
+		de_jure_liege = d_lugdunensis_senonia
+	}
+	361.1.1 = {
+		holder = senonia_10
+		liege = d_lugdunensis_senonia
+	}
+	395.1.1 = {
+		holder = senonia_11
+	}
+	476.1.1 = {
+		holder = senonia_12
+		de_jure_liege = d_champagne
+		liege = k_france
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	520.1.1 = {
+		holder = 997132 # Munderic
+		liege = k_frankish_rheims
+	}
+	#768.1.1 = {
+	#	holder = 144999
+	#}
+}
+
+c_coulommiers = {
+	768.1.1 = { change_development_level = 8 }
+	#Roman Province
+	300.1.1 = {
+		de_jure_liege = d_lugdunensis_senonia
+	}
+	361.1.1 = {
+		holder = senonia_10
+		liege = d_lugdunensis_senonia
+	}
+	395.1.1 = {
+		holder = senonia_11
+	}
+	461.1.1 = {
+		holder = syagri_05
+	}
+	465.1.1 = {
+		holder = syagri_06
+	}
+	476.1.1 = {
+		de_jure_liege = d_champagne
+		liege = k_france
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+#Copied from Troyes's history
+	#768.1.1 = {
+	#	holder = 144999
+	#}
+}
+
+
+c_meaux = {
+	#Roman Province
+	300.1.1 = {
+		de_jure_liege = d_lugdunensis_senonia
+	}
+	361.1.1 = {
+		holder = senonia_01
+		liege = d_lugdunensis_senonia
+	}
+	395.1.1 = {
+		holder = senonia_02
+	}
+	461.1.1 = {
+		holder = syagri_05
+	}
+	465.1.1 = {
+		holder = syagri_06
+	}
+	476.1.1 = {
+		de_jure_liege = d_champagne
+		liege = k_france
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+}
+
+
+c_chalons = {
+	### Roman Province
+	300.1.1 = {
+		name = BELGICA_SECUNDA
+	}
+	361.1.1 = {
+		holder = belgica_01
+		liege = d_champagne
+	}
+	395.1.1 = {
+		holder = belgica_02
+	}
+	476.1.1 = {
+		holder = belgica_03
+		liege = k_france
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	520.1.1 = {
+		holder = 997132 # Munderic
+		liege = k_frankish_rheims
+	}
+}
+
+
+c_rethel = {
+		
+	361.1.1 = { change_development_level = 4 }
+	### Roman Province
+	300.1.1 = {
+		name = BELGICA_SECUNDA
+	}
+	361.1.1 = {
+		holder = belgica_01
+		liege = d_champagne
+	}
+	395.1.1 = {
+		holder = belgica_02
+	}
+	476.1.1 = {
+		holder = belgica_03
+		liege = k_france
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+}
+
+
+c_sens = {
+	361.1.1 = { change_development_level = 7 }
+	#Roman Province
+	300.1.1 = {
+		de_jure_liege = d_lugdunensis_senonia
+	}
+	361.1.1 = {
+		holder = senonia_01
+		liege = d_lugdunensis_senonia
+	}
+	395.1.1 = {
+		holder = senonia_02
+	}
+	461.1.1 = {
+		holder = syagri_05
+	}
+	465.1.1 = {
+		holder = syagri_06
+	}
+	476.1.1 = {
+		de_jure_liege = d_champagne
+		liege = k_france
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	520.1.1 = {
+		holder = 997132 # Munderic
+		liege = k_frankish_rheims
+	}
+}

@@ -1,0 +1,3568 @@
+﻿#Prydain Dynasty
+159424 = {
+	name = "Caradog"
+	religion = "briton_pagan"
+	culture = "briton"
+	dynasty = 545 #Caradoc
+	252.1.1 = {
+		birth = "252.1.1"
+	}
+	315.1.1 = {
+		death = "315.1.1"
+	}
+}
+159425 = {
+	name = "Meurig"
+	religion = "briton_pagan"
+	culture = "briton"
+	dynasty = 545 #Caradoc
+	father = 159424
+	278.1.1 = {
+		birth = "278.1.1"
+	}
+	350.1.1 = {
+		death = "350.1.1"
+	}
+}
+159426 = {
+	name = "Dynod"
+	religion = "briton_pagan"
+	culture = "briton"
+	dynasty = 545 #Caradoc
+	father = 159424
+	300.1.1 = {
+		birth = "300.1.1"
+	}
+	376.1.1 = {
+		death = "376.1.1"
+	}
+}
+159427 = {
+	name = "Ursula"
+	female = yes
+	religion = "briton_pagan"
+	culture = "briton"
+	dynasty = 545 #Caradoc
+	father = 159426
+	332.1.1 = {
+		birth = "332.1.1"
+	}
+	412.1.1 = {
+		death = "412.1.1"
+	}
+}
+159428 = {
+	name = "Einudd" # Prydain
+	#dynasty = 99850008
+	dynasty = 1029001 #Prydain
+	religion = "briton_pagan"
+	culture = "briton"
+	221.1.1 = {
+		birth = yes
+	}
+	300.1.1 = {
+		death = yes
+	}
+}
+159429 = {
+	name = "Eudaf" # Prydain
+	#dynasty = 99850008
+	dynasty = 1029001 #Prydain
+	religion = "britano_roman_pagan"
+	culture = "briton"
+	father = 159428
+	298.1.1 = {
+		birth = yes
+		give_nickname = nick_the_old
+	}
+	362.1.1 = {
+		death = yes
+	}
+}
+159472 = {
+	name = "Geraint"
+	religion = "nicene"
+	culture = "briton"
+	#dynasty = 99850008 #Prydain
+	dynasty = 1029001 #Prydain
+	father = 159428
+	302.1.1 = {
+		birth = "302.1.1"
+	}
+	340.1.1 = {
+		death = "340.1.1"
+	}
+}
+159430 = {
+	name = "Elen"
+	female = yes
+	religion = "briton_pagan"
+	culture = "briton"
+	father = 159429
+	trait = honest
+	trait = forgiving
+	trait = compassionate
+	dynasty = 1029001 #Prydain
+	father = 159429
+	325.1.1 = {
+		birth = yes
+	}
+	368.1.1 = {
+		add_spouse = 159807
+		give_nickname = nick_of_the_hosts
+		religion = "nicene"
+		effect = {
+			add_piety = 1000
+		}
+	}
+	400.1.1 = {
+		death = "400.1.1"
+	}
+}
+#Meriadoc Dynasty, a branch of Pyrdain
+159431 = {
+	name = "Cynan_Meiriadog" # Meriadoc
+	dynasty_house = 99850000
+	religion = "briton_pagan"
+	dna = 159431
+	culture = "briton"
+	father = 159472
+	trait = arrogant
+	trait = callous
+	trait = wrathful
+	trait = education_martial_3
+	martial = 10
+	334.1.1 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+	385.1.1 = {
+		effect = {
+			add_gold = 100
+			add_prestige = 1000 
+			spawn_army = {
+				name = event_troop_default_name
+				levies = 1000
+				men_at_arms = {
+					type = light_horsemen
+					stacks = 3
+				}
+				location = province:2157
+				origin = province:2157
+				inheritable = no
+			}
+		}
+		set_relation_friend = character:159432
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+159433 = {
+	name = "Urbien"
+	religion = "nicene"
+	culture = "briton"
+	dynasty_house = house_british_isles_breizh #Breizh
+	father = 159431
+	354.1.1 = {
+		birth = "354.1.1"
+	}
+	400.1.1 = {
+		death = "400.1.1"
+	}
+}
+159434 = {
+	name = "Gradlon"
+	religion = "nicene"
+	culture = "briton"
+	dynasty_house = house_british_isles_breizh #Breizh
+	father = 159433
+	372.1.1 = {
+		birth = "372.1.1"
+	}
+	434.1.1 = {
+		death = "434.1.1"
+		give_nickname = nick_the_great
+	}
+}
+159633 = {
+	name = "Salomon"
+	religion = "nicene"
+	culture = "briton"
+	dynasty_house = house_british_isles_breizh #Breizh
+	father = 159434
+	390.1.1 = {
+		birth = "390.1.1"
+	}
+	446.1.1 = {
+		death = "446.1.1"
+	}
+}
+159652 = {
+	name = "Aldrien"
+	religion = "nicene"
+	culture = "briton"
+	dynasty_house = house_british_isles_breizh #Breizh
+	father = 159633
+	410.1.1 = {
+		birth = "410.1.1"
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	464.1.1 = {
+		death = "464.1.1"
+	}
+}
+159657 = {
+	name = "Iehan_Riotham"
+	religion = "nicene"
+	culture = "briton"
+	dynasty_house = house_british_isles_breizh #Breizh
+	father = 159652
+	430.1.1 = {
+		birth = "430.1.1"
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	470.1.1 = {
+		death = "470.1.1"
+	}
+}
+159658 = {
+	name = "Salomon"
+	religion = "nicene"
+	culture = "briton"
+	dynasty_house = house_british_isles_breizh #Breizh
+	father = 159652
+	428.1.1 = {
+		birth = "428.1.1"
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	464.1.1 = {
+		death = "464.1.1"
+	}
+}
+159756 = {
+	name = "GuE_rech"
+	religion = "nicene"
+	culture = "briton"
+	dynasty_house = house_british_isles_breizh #Breizh
+	father = 159652
+	435.1.1 = {
+		birth = "435.1.1"
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	494.1.1 = {
+		death = "494.1.1"
+	}
+}
+159659 = {
+	name = "Budic"
+	religion = "nicene"
+	culture = "briton"
+	dynasty_house = house_british_isles_breizh #Breizh
+	father = 159652
+	430.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	478.1.1 = {
+		death = "478.1.1"
+	}
+}
+159660 = {
+	name = "Budic"
+	religion = "chalcedonian"
+	culture = "briton"
+	dynasty_house = house_british_isles_breizh #Breizh
+	father = 159756
+	460.1.1 = {
+		birth = "460.1.1"
+	}
+	544.1.1 = {
+		death = "544.1.1"
+	}
+}
+159661 = {
+	name = "Emyric"
+	religion = "nicene"
+	culture = "briton"
+	dynasty_house = house_british_isles_breizh #Breizh
+	father = 159657
+	450.1.1 = {
+		birth = "450.1.1"
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	500.1.1 = {
+		death = "500.1.1"
+	}
+}
+159662 = {
+	name = "HoE_l"
+	religion = "chalcedonian"
+	culture = "briton"
+	dynasty_house = house_british_isles_breizh #Breizh
+	father = 159660
+	491.1.1 = {
+		birth = "491.1.1"
+	}
+	520.1.1 = {
+		add_spouse = 160048
+	}
+	545.1.1 = {
+		death = "545.1.1"
+	}
+}
+159757 = {
+	name = "Teudur"
+	religion = "chalcedonian"
+	culture = "briton"
+	dynasty_house = house_british_isles_breizh #Breizh
+	father = 159662
+	mother = 160048
+	520.1.1 = {
+		birth = "520.1.1"
+	}
+	546.1.1 = {
+		death = "546.1.1"
+		give_nickname = nick_the_great
+	}
+}
+159663 = {
+	name = "HoE_l"
+	religion = "chalcedonian"
+	culture = "briton"
+	dynasty_house = house_british_isles_breizh #Breizh
+	father = 159662
+	mother = 160048
+	522.1.1 = {
+		birth = "522.1.1"
+	}
+	547.1.1 = {
+		death = "547.1.1"
+	}
+}
+159664 = {
+	name = "Alan"
+	religion = "chalcedonian"
+	culture = "briton"
+	dynasty_house = house_british_isles_breizh #Breizh
+	father = 159663
+	540.1.1 = {
+		birth = "540.1.1"
+	}
+	594.1.1 = {
+		death = "594.1.1"
+	}
+}
+159634 = {
+	name = "Guitol" #
+	religion = "nicene"
+	culture = "briton"
+	dynasty_house = house_domnonea #Domnonea
+	father = 159434
+	391.1.1 = {
+		birth = "391.1.1"
+	}
+	450.1.1 = {
+		death = "450.1.1"
+	}
+}
+159635 = {
+	name = "Deroch" #
+	religion = "nicene"
+	culture = "briton"
+	dynasty_house = house_domnonea #Domnonea
+	father = 159634
+	410.1.1 = {
+		birth = "410.1.1"
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	470.1.1 = {
+		death = "470.1.1"
+	}
+}
+159636 = {
+	name = "Riotham" #
+	religion = "nicene"
+	culture = "briton"
+	dynasty_house = house_domnonea #Domnonea
+	father = 159635
+	435.1.1 = {
+		birth = "435.1.1"
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	470.1.1 = {
+		death = "470.1.1"
+	}
+}
+159637 = {
+	name = "Riwal" #
+	religion = "chalcedonian"
+	culture = "briton"
+	dynasty_house = house_domnonea #Domnonea
+	father = 159636
+	475.1.1 = {
+		birth = "475.1.1"
+	}
+	520.1.1 = {
+		death = "520.1.1"
+	}
+}
+159638 = {
+	name = "Deroch" #
+	religion = "chalcedonian"
+	culture = "briton"
+	dynasty_house = house_domnonea #Domnonea
+	father = 159637
+	495.1.1 = {
+		birth = "495.1.1"
+	}
+	530.1.1 = {
+		death = "530.1.1"
+	}
+}
+159639 = {
+	name = "Ionas" #
+	religion = "chalcedonian"
+	culture = "briton"
+	dynasty_house = house_domnonea #Domnonea
+	father = 159638
+	515.1.1 = {
+		birth = "515.1.1"
+	}
+	540.1.1 = {
+		death = "540.1.1"
+	}
+}
+159640 = {
+	name = "Iudual" #
+	religion = "chalcedonian"
+	culture = "briton"
+	dynasty_house = house_domnonea #Domnonea
+	father = 159639
+	535.1.1 = {
+		birth = "535.1.1"
+	}
+	590.1.1 = {
+		death = "590.1.1"
+	}
+}
+159653 = {
+	name = "GuE_rech"
+	religion = "nicene"
+	culture = "briton"
+	dynasty_house = house_british_isles_breizh #Breizh
+	father = 159652
+	425.1.1 = {
+		birth = "425.1.1"
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	478.1.1 = {
+		death = "478.1.1"
+	}
+}
+159654 = {
+	name = "Budic"
+	religion = "chalcedonian"
+	culture = "briton"
+	dynasty_house = house_british_isles_breizh #Breizh
+	father = 159653
+	460.1.1 = {
+		birth = "460.1.1"
+	}
+	501.1.1 = {
+		death = "501.1.1"
+	}
+}
+159655 = {
+	name = "Budic"
+	religion = "chalcedonian"
+	culture = "briton"
+	dynasty_house = house_british_isles_breizh #Breizh
+	father = 159654
+	490.1.1 = {
+		birth = "490.1.1"
+	}
+	541.1.1 = {
+		death = "541.1.1"
+	}
+}
+159656 = {
+	name = "Teudric" #Theodoric
+	religion = "chalcedonian"
+	culture = "briton"
+	dynasty_house = house_british_isles_breizh #Breizh
+	father = 159655
+	520.1.1 = {
+		birth = "520.1.1"
+	}
+	584.1.1 = {
+		death = "584.1.1"
+	}
+}
+#Dyfnaint Dynasty, a branch of Pyrdain
+159432 = {
+	name = "Cadfan"
+	religion = "briton_pagan"
+	culture = "briton"
+	dynasty_house = house_british_isles_dyfnaint #Dyfnaint
+	father = 159429
+	346.1.1 = {
+		birth = "346.1.1"
+	}
+	360.1.1 = {
+		add_spouse = 159427
+	}
+	440.1.1 = {
+		death = "440.1.1"
+	}
+}
+159435 = {
+	name = "Gwrwawr" # Dyfnaint
+	dynasty_house = house_british_isles_dyfnaint
+	religion = "briton_pagan"
+	culture = "briton"
+	father = 159432
+	mother = 159427
+	380.1.1 = {
+		birth = yes
+	}
+	460.1.1 = {
+		death = yes
+	}
+}
+159436 = {
+	name = "Tudwal" # Dyfnaint
+	dynasty_house = house_british_isles_dyfnaint
+	religion = "briton_pagan"
+	culture = "briton"
+	father = 159435
+	398.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		add_spouse = 159811
+	}
+	477.1.1 = {
+		death = yes
+	}
+}
+159437 = {
+	name = "Cynfawr"
+	religion = "nicene"
+	culture = "briton"
+	dynasty_house = house_british_isles_dyfnaint #Dyfnaint
+	father = 159436
+	mother = 159811
+	408.1.1 = {
+		birth = "408.1.1"
+	}
+	465.1.1 = {
+		death = "465.1.1"
+	}
+}
+
+159438 = {
+	name = "Custennin" #Constantine of Cornwall
+	religion = "nicene"
+	culture = "briton"
+	dynasty_house = house_british_isles_dyfnaint #Dyfnaint
+	father = 159437
+	424.1.1 = {
+		birth = "424.1.1"
+	}
+	443.1.1 = {
+		death = "443.1.1"
+	}
+}
+159439 = {
+	name = "Erbin"
+	religion = "nicene"
+	culture = "briton"
+	dynasty_house = house_british_isles_dyfnaint #Dyfnaint
+	father = 159438
+	440.1.1 = {
+		birth = "440.1.1"
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	480.1.1 = {
+		death = "480.1.1"
+	}
+}
+159754 = {
+	name = "Ermind"
+	religion = "chalcedonian"
+	culture = "briton"
+	dynasty_house = house_british_isles_dyfnaint #Dyfnaint
+	father = 159439
+	457.1.1 = {
+		birth = "457.1.1"
+	}
+	505.1.1 = {
+		death = "505.1.1"
+	}
+}
+159755 = {
+	name = "Dywel"
+	religion = "chalcedonian"
+	culture = "briton"
+	dynasty_house = house_british_isles_dyfnaint #Dyfnaint
+	father = 159439
+	458.1.1 = {
+		birth = "458.1.1"
+	}
+	505.1.1 = {
+		death = "505.1.1"
+	}
+}
+159440 = {
+	name = "Geraint" #Llyngesic
+	religion = "chalcedonain"
+	culture = "briton"
+	dynasty_house = house_british_isles_dyfnaint #Dyfnaint
+	father = 159439
+	456.1.1 = {
+		birth = "456.1.1"
+	}
+	#451.1.1 = {
+	#	religion = chalcedonian
+	#}
+	468.1.1 = {
+		add_spouse = 159753
+	}
+	508.1.1 = {
+		death = "508.1.1"
+	}
+}
+159753 = {
+	name = "Enid"
+	female = yes
+	religion = "chalcedonian"
+	culture = "briton"
+	#dynasty = 0 #
+	453.1.1 = {
+		birth = "453.1.1"
+	}
+	500.1.1 = {
+		death = "500.1.1"
+	}
+}
+159441 = {
+	name = "Cadwy"
+	religion = "chalcedonian"
+	culture = "briton"
+	dynasty_house = house_british_isles_dyfnaint #Dyfnaint
+	father = 159440
+	mother = 159753
+	475.1.1 = {
+		birth = "475.1.1"
+	}
+	530.1.1 = {
+		death = "530.1.1"
+	}
+}
+159442 = {
+	name = "Custennin"
+	religion = "chalcedonian"
+	culture = "briton"
+	dynasty_house = house_british_isles_dyfnaint #Dyfnaint
+	father = 159441
+	500.1.1 = {
+		birth = "500.1.1"
+	}
+	560.1.1 = {
+		death = "560.1.1"
+		give_nickname = nick_the_saint
+		dynasty_house = house_british_isles_dyfnaint #Devnent
+	}
+}
+159443 = {
+	name = "Geraint"
+	religion = "chalcedonian"
+	culture = "briton"
+	dynasty_house = house_british_isles_dyfnaint #Dyfnaint
+	father = 159442
+	530.1.1 = {
+		birth = "530.1.1"
+	}
+	577.1.1 = {
+		name = "Gereint"
+		culture = "briton"
+		dynasty_house = house_british_isles_dyfnaint #Devnent
+	}
+	598.1.1 = {
+		death = "598.1.1"
+	}
+}
+159444 = {
+	name = "Bledrig"
+	religion = "chalcedonian"
+	culture = "briton"
+	dynasty_house = house_british_isles_dyfnaint #Dyfnaint
+	father = 159442
+	535.1.1 = {
+		birth = "531.1.1"
+	}
+	577.1.1 = {
+		name = "Bledric"
+		culture = "briton"
+		dynasty_house = house_british_isles_dyfnaint #Devnent
+	}
+	613.1.1 = {
+		death = "613.1.1"
+	}
+}
+
+159751 = {
+	name = "Newlyna"
+	female = yes
+	religion = "chalcedonian"
+	culture = "briton"
+	dynasty_house = house_british_isles_dyfnaint #Dyfnaint
+	father = 159442
+	540.1.1 = {
+		birth = "540.1.1"
+	}
+	577.1.1 = {
+		name = "Neulenna"
+		culture = "briton"
+		dynasty_house = house_british_isles_dyfnaint #Devnent
+	}
+	590.1.1 = {
+		death = "590.1.1"
+	}
+}
+159752 = {
+	name = "Dywel"
+	religion = "chalcedonain"
+	culture = "briton"
+	dynasty_house = house_british_isles_dyfnaint #Dyfnaint
+	father = 159442
+	543.1.1 = {
+		birth = "543.1.1"
+	}
+	577.1.1 = {
+		name = "Domuel"
+		culture = "briton"
+		dynasty_house = house_british_isles_dyfnaint #Devnent
+	}
+	605.1.1 = {
+		death = "605.1.1"
+	}
+}
+159932 = {
+	name = "Prawst"
+	female = yes
+	religion = "nicene"
+	culture = "briton"
+	dynasty_house = house_british_isles_dyfnaint #Dyfnaint
+	father = 159436
+	mother = 159811
+	406.1.1 = {
+		birth = "406.1.1"
+	}
+	435.1.1 = {
+		add_spouse = 159323
+	}
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	500.1.1 = {
+		death = "500.1.1"
+	}
+}
+#Coel Family Dynasty
+guotepauc_01 = {
+	name = "Tegfan" # guotepauc
+	dynasty = 1029002
+	religion = "britano_roman_pagan"
+	culture = "briton"
+	340.1.1 = {
+		birth = yes
+	}
+	387.1.1 = {
+		death = yes
+	}
+}
+guotepauc_05 = {
+	name = "Dyfnawl" # guotepauc
+	dynasty = 1029002
+	religion = "britano_roman_pagan"
+	culture = "briton"
+	father = guotepauc_04
+	trait = administrator
+	trait = education_stewardship_3
+	436.1.1 = {
+		birth = yes
+	}
+	476.1.1 = {
+		give_nickname = nick_the_bald
+	}
+	502.1.1 = {
+		death = yes
+	}
+}
+guotepauc_06 = {
+	name = "Brân" # guotepauc
+	dynasty = 1029002
+	religion = "britano_roman_pagan"
+	culture = "briton"
+	father = guotepauc_05
+	458.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		give_nickname = nick_the_old
+	}
+	538.1.1 = {
+		death = yes
+	}
+}
+guotepauc_07 = {
+	name = "Cyngar" # guotepauc
+	dynasty = 1029002
+	religion = "britano_roman_pagan"
+	culture = "briton"
+	father = guotepauc_05
+	461.1.1 = {
+		birth = yes
+	}
+	532.1.1 = {
+		death = yes
+	}
+}
+guotepauc_08 = {
+	name = "Morgan" # guotepauc
+	dynasty = 1029002
+	religion = "britano_roman_pagan"
+	culture = "briton"
+	father = guotepauc_07
+	491.1.1 = {
+		birth = yes
+	}
+	562.1.1 = {
+		death = yes
+	}
+}
+guotepauc_09 = {
+	name = "Koleddog" # guotepauc
+	dynasty = 1029002
+	religion = "britano_roman_pagan"
+	culture = "briton"
+	father = guotepauc_08
+	523.1.1 = {
+		birth = yes
+	}
+	590.1.1 = {
+		death = yes
+	}
+}
+guotepauc_10 = {
+	name = "Morgan" # guotepauc
+	dynasty = 1029002
+	religion = "britano_roman_pagan"
+	culture = "briton"
+	father = guotepauc_09
+	543.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+159035 = {
+	name = "Meirchion" # Gul
+	dynasty_house = house_british_isles_rheged #Rheged
+	religion = "britano_roman_pagan"
+	culture = "briton"
+	father = 159036
+	443.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		give_nickname = nick_the_lean
+	}
+	527.1.1 = {
+		death = yes
+	}
+}
+159297 = {
+	name = "Ller_Merini" #
+	dynasty = 1047020 #Manceinion
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159035
+	505.1.1 = {
+		birth = "505.1.1"
+	}
+	575.1.2 = {
+		death = "575.1.2"
+	}
+}
+159298 = {
+	name = "Caradog" #
+	dynasty = 1047020 #Manceinion
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159297
+	530.1.1 = {
+		birth = "530.1.1"
+	}
+	600.1.2 = {
+		death = "600.1.2"
+	}
+}
+
+159299 = {
+	name = "Cawrdaf" #
+	dynasty = 1047020 #Manceinion
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159298
+	560.1.1 = {
+		birth = "560.1.1"
+	}
+	640.1.2 = {
+		death = "640.1.2"
+	}
+}
+
+159300 = {
+	name = "Caw" #
+	dynasty = 1047020 #Manceinion
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159299
+	590.1.1 = {
+		birth = "590.1.1"
+	}
+	670.1.2 = {
+		death = "670.1.2"
+	}
+}
+159034 = {
+	name = "Elidyr" # the Handsome
+	dynasty_house = house_british_isles_rheged #Rheged
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159035 # Meirchion Gul
+	500.1.1 = {
+		birth = "500.1.1"
+	}
+	525.1.1 = {
+		give_nickname = nick_the_handsome
+	}
+	560.1.1 = {
+		death = "560.1.1"
+	}
+}
+159032 = {
+	name = "Gwyar" #
+	dynasty_house = house_british_isles_rheged #Rheged
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159033 #
+	560.1.1 = {
+		birth = "560.1.1"
+	}
+	640.1.1 = {
+		death = "640.1.1"
+	}
+}
+159033 = {
+	name = "Llywarch" #
+	dynasty_house = house_british_isles_rheged #Rheged
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159034 # Elidyr Llydanwyn
+	525.1.1 = {
+		birth = "525.1.1"
+	}
+	612.1.1 = {
+		give_nickname = nick_the_old
+	}
+	613.1.1 = {
+		death = "613.1.1"
+	}
+}
+159952 = {
+	name = "Cynfarch" # guotepauc
+	dynasty_house = house_british_isles_rheged #Rheged
+	religion = "britano_roman_pagan"
+	culture = "briton"
+	father = 159035
+	460.1.1 = {
+		birth = yes
+	}
+	476.1.1 = {
+		add_spouse = 159957
+	}
+	530.1.1 = {
+		give_nickname = nick_the_dismal
+	}
+	552.1.1 = {
+		death = yes
+	}
+}
+159960 = {
+	name = "Nyfain"
+	female = yes
+	dynasty_house = house_british_isles_rheged #Rheged
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159952 # Cynfarch
+	mother = 159957
+	476.1.1 = {
+		birth = "476.1.1"
+	}
+	492.1.1 = {
+		add_spouse = 159823
+	}
+	530.1.1 = {
+		death = "530.1.1"
+	}
+}
+159953 = {
+	name = "Urien"
+	dynasty_house = house_british_isles_rheged #Rheged
+	religion = "britano_roman_pagan"
+	culture = "briton"
+	father = 159952
+	mother = 159957
+	530.1.1 = {
+		birth = yes
+	}
+	587.1.1 = {
+		death = yes
+	}
+}
+159954 = {
+	name = "Rhun" # guotepauc
+	dynasty_house = house_british_isles_rheged #Rheged
+	religion = "britano_roman_pagan"
+	culture = "briton"
+	father = 159953
+	563.1.1 = {
+		birth = yes
+	}
+	627.1.1 = {
+		death = yes
+	}
+}
+159955 = {
+	name = "Rhoedd"
+	dynasty_house = house_british_isles_rheged #Rheged
+	religion = "britano_roman_pagan"
+	culture = "briton"
+	father = 159954
+	591.1.1 = {
+		birth = yes
+	}
+	638.1.1 = {
+		death = yes
+	}
+}
+guotepauc_25 = {
+	name = "Rhieinfellt" # guotepauc
+	dynasty_house = house_british_isles_rheged #Rheged
+	female = yes
+	religion = "britano_roman_pagan"
+	culture = "briton"
+	father = 159955
+	612.1.1 = {
+		birth = yes
+	}
+	670.1.1 = {
+		death = yes
+	}
+}
+159958 = {
+	name = "Owain" # guotepauc
+	dynasty_house = house_british_isles_rheged #Rheged
+	dynasty = 1029002
+	religion = "britano_roman_pagan"
+	culture = "briton"
+	father = 159953
+	557.1.1 = {
+		birth = yes
+	}
+	597.1.1 = {
+		death = yes
+	}
+}
+guotepauc_22 = {
+	name = "Cynderyn" # guotepauc
+	dynasty_house = house_british_isles_rheged #Rheged
+	religion = "britano_roman_pagan"
+	culture = "briton"
+	father = 159958
+	589.1.1 = {
+		birth = yes
+	}
+	614.1.1 = {
+		death = yes
+	}
+}
+159959 = {
+	name = "Elffin"
+	dynasty_house = house_british_isles_rheged #Rheged
+	religion = "britano_roman_pagan"
+	culture = "briton"
+	father = 159958 # Owain
+	590.1.1 = {
+		birth = "590.1.1"
+	}
+	616.1.1 = {
+		death = "616.1.1"
+	}
+}
+
+guotepauc_21 = {
+	name = "Ennyny" # guotepauc
+	dynasty = 1029002
+	religion = "britano_roman_pagan"
+	culture = "briton"
+	father = 159952
+	female = yes
+	519.1.1 = {
+		birth = yes
+	}
+	560.1.1 = {
+		death = yes
+	}
+}
+guotepauc_26 = {
+	name = "Arthwys" # guotepauc
+	dynasty = 1029002
+	religion = "britano_roman_pagan"
+	culture = "briton"
+	father = guotepauc_14
+	trait = education_martial_4
+	trait = brave
+	trait = ambitious
+	trait = honest
+	451.1.1 = {
+		birth = yes
+	}
+	518.1.1 = {
+		death = yes
+	}
+}
+guotepauc_38 = {
+	name = "Llenog" # guotepauc
+	dynasty = 1029002
+	religion = "britano_roman_pagan"
+	culture = "briton"
+	father = guotepauc_14
+	468.1.1 = {
+		birth = yes
+	}
+	545.1.1 = {
+		death = yes
+	}
+}
+guotepauc_40 = {
+	name = "Gwallog" # guotepauc
+	dynasty = 1029002
+	religion = "britano_roman_pagan"
+	culture = "briton"
+	father = guotepauc_38
+	499.1.1 = {
+		birth = yes
+	}
+	576.1.1 = {
+		death = yes
+	}
+}
+guotepauc_41 = {
+	name = "Ceredig" # guotepauc
+	dynasty = 1029002
+	religion = "britano_roman_pagan"
+	culture = "briton"
+	father = guotepauc_40
+	529.1.1 = {
+		birth = yes
+	}
+	617.1.1 = {
+		death = yes
+	}
+}
+guotepauc_39 = {
+	name = "Einion" # guotepauc
+	dynasty = 1029002
+	religion = "britano_roman_pagan"
+	culture = "briton"
+	father = guotepauc_14
+	472.1.1 = {
+		birth = yes
+	}
+	545.1.1 = {
+		death = yes
+	}
+}
+guotepauc_27 = {
+	name = "Eliffer" # guotepauc
+	dynasty = 1029002
+	religion = "britano_roman_pagan"
+	culture = "briton"
+	father = guotepauc_26
+	489.1.1 = {
+		birth = yes
+	}
+	549.1.1 = {
+		death = yes
+	}
+}
+guotepauc_31 = {
+	name = "Pabo" # guotepauc
+	dynasty = 1029002
+	religion = "britano_roman_pagan"
+	culture = "briton"
+	father = guotepauc_26
+	499.1.1 = {
+		birth = yes
+	}
+	559.1.1 = {
+		death = yes
+	}
+}
+guotepauc_32 = {
+	name = "Dunod" # guotepauc
+	dynasty = 1029002
+	religion = "britano_roman_pagan"
+	culture = "briton"
+	father = guotepauc_31
+	523.1.1 = {
+		birth = yes
+	}
+	597.1.1 = {
+		death = yes
+	}
+}
+guotepauc_33 = {
+	name = "Deiniol" # guotepauc
+	dynasty = 1029002
+	religion = "britano_roman_pagan"
+	culture = "briton"
+	father = guotepauc_32
+	550.1.1 = {
+		birth = yes
+	}
+	587.1.1 = {
+		death = yes
+	}
+}
+guotepauc_34 = {
+	name = "Cynfelyn" # guotepauc
+	dynasty = 1029002
+	religion = "britano_roman_pagan"
+	culture = "briton"
+	father = guotepauc_26
+	502.1.1 = {
+		birth = yes
+	}
+	549.1.1 = {
+		death = yes
+	}
+}
+guotepauc_36 = {
+	name = "Cynwyd" # guotepauc
+	dynasty = 1029002
+	religion = "britano_roman_pagan"
+	culture = "briton"
+	father = guotepauc_34
+	523.1.1 = {
+		birth = yes
+	}
+	580.1.1 = {
+		death = yes
+	}
+}
+guotepauc_37 = {
+	name = "Cadrod" # guotepauc
+	dynasty = 1029002
+	religion = "britano_roman_pagan"
+	culture = "briton"
+	father = guotepauc_36
+	549.1.1 = {
+		birth = yes
+	}
+	610.1.1 = {
+		death = yes
+	}
+}
+guotepauc_35 = {
+	name = "Ceidio" # guotepauc
+	dynasty = 1029002
+	religion = "britano_roman_pagan"
+	culture = "briton"
+	father = guotepauc_26
+	503.1.1 = {
+		birth = yes
+	}
+	549.1.1 = {
+		death = yes
+	}
+}
+guotepauc_36 = {
+	name = "Gwenddolleu" # guotepauc
+	dynasty = 1029002
+	religion = "britano_roman_pagan"
+	culture = "briton"
+	father = guotepauc_35
+	523.1.1 = {
+		birth = yes
+	}
+	573.1.1 = {
+		death = yes
+	}
+}
+guotepauc_28 = {
+	name = "Peredur" # guotepauc
+	dynasty = 1029002
+	religion = "britano_roman_pagan"
+	culture = "briton"
+	father = guotepauc_27
+	503.1.1 = {
+		birth = yes
+	}
+	578.1.1 = {
+		death = yes
+	}
+}
+guotepauc_30 = {
+	name = "Gwrgon" # guotepauc
+	dynasty = 1029002
+	religion = "britano_roman_pagan"
+	culture = "briton"
+	father = guotepauc_28
+	531.1.1 = {
+		birth = yes
+	}
+	582.1.1 = {
+		death = yes
+	}
+}
+guotepauc_29 = {
+	name = "Gwrgi" # guotepauc
+	dynasty = 1029002
+	religion = "britano_roman_pagan"
+	culture = "briton"
+	father = guotepauc_27
+	512.1.1 = {
+		birth = yes
+	}
+	580.1.1 = {
+		death = yes
+	}
+}
+guotepauc_16 = {
+	name = "Sawyl" # guotepauc
+	dynasty = 1029002
+	religion = "britano_roman_pagan"
+	culture = "briton"
+	father = guotepauc_15
+	461.1.1 = {
+		birth = yes
+	}
+	533.1.1 = {
+		death = yes
+	}
+}
+#Welsh Monarchs
+159794 = {
+	name = "Boddw" # ap Serwyl
+	dynasty_house = house_british_isles_ceredigion #Ceredigion
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159793
+	480.1.1 = {
+		birth = "480.1.1"
+	}
+	560.1.1 = {
+		death = "560.1.1"
+	}
+}
+159795 = {
+	name = "Arthfoddw" # ap Bodw
+	dynasty_house = house_british_isles_ceredigion #Ceredigion
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159794
+	520.1.1 = {
+		birth = "520.1.1"
+	}
+	595.1.1 = {
+		death = "595.1.1"
+	}
+}
+159796 = {
+	name = "Arthlwys" # ab Arthfoddw
+	dynasty_house = house_british_isles_ceredigion #Ceredigion
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159795
+	550.1.1 = {
+		birth = "550.1.1"
+	}
+	630.1.1 = {
+		death = "630.1.1"
+	}
+}
+159797 = {
+	name = "Clydog" # ab Arthlwys
+	dynasty_house = house_british_isles_ceredigion #Ceredigion
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159796
+	590.1.1 = {
+		birth = "590.1.1"
+	}
+	670.1.1 = {
+		death = "670.1.1"
+	}
+}
+159013 = {
+	name = "Maelgwn" # ap Cadwallon
+	dynasty_house = house_british_isles_gwynedd #Gwynedd
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159012 # Cadwallon
+	481.1.1 = {
+		birth = "481.1.1"
+	}
+	547.1.1 = {
+		death = "547.1.1"
+	}
+}
+160048 = {
+	name = "Rimo" # ferch Maelgwn
+	dynasty_house = house_british_isles_gwynedd #Gwynedd
+	female = yes
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159013 #
+	502.1.1 = {
+		birth = "502.1.1"
+	}
+	520.1.1 = {
+		add_spouse = 159662
+	}
+	580.1.1 = {
+		death = "580.1.1"
+	}
+}
+159014 = {
+	name = "Rhun" # ap Maelgwn
+	dynasty_house = house_british_isles_gwynedd #Gwynedd
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159013 # Cadwallon
+	510.1.1 = {
+		birth = "510.1.1"
+	}
+	580.1.1 = {
+		death = "580.1.1"
+	}
+}
+159015 = {
+	name = "Beli" # ap Rhun
+	dynasty_house = house_british_isles_gwynedd #Gwynedd
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159014 # Rhun
+	527.1.1 = {
+		birth = "527.1.1"
+	}
+	599.1.1 = {
+		death = "599.1.1"
+	}
+}
+159016 = {
+	name = "Iago" # ap Beli
+	dynasty_house = house_british_isles_gwynedd #Gwynedd
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159015 # Beli
+	560.1.1 = {
+		birth = "560.1.1"
+	}
+	616.1.1 = {
+		death = "616.1.1"
+	}
+}
+159017 = {
+	name = "Cadfan" # ap Iago
+	dynasty_house = house_british_isles_gwynedd #Gwynedd
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159016 # Iago
+	580.1.1 = {
+		birth = "580.1.1"
+	}
+	625.1.1 = {
+		death = "625.1.1"
+	}
+}
+
+159043 = {
+	name = "Llyr" # ap Einion
+	dynasty_house = house_british_isles_arllechwydd #Arllechwydd
+	religion = "nicene"
+	culture = "briton"
+	father = 159011
+	450.1.1 = {
+		birth = "450.1.1"
+	}
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	520.1.1 = {
+		death = "520.1.1"
+	}
+}
+159044 = {
+	name = "Caradog" # ap Llyr
+	dynasty_house = house_british_isles_arllechwydd #Arllechwydd
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159043
+	480.1.1 = {
+		birth = "480.1.1"
+	}
+	550.1.1 = {
+		death = "550.1.1"
+	}
+}
+159045 = {
+	name = "Gwgon" # ap Caradog
+	dynasty_house = house_british_isles_arllechwydd #Arllechwydd
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159044
+	520.1.1 = {
+		birth = "520.1.1"
+	}
+	580.1.1 = {
+		death = "580.1.1"
+	}
+}
+159046 = {
+	name = "Glannog" # ap Gwgon
+	dynasty_house = house_british_isles_arllechwydd #Arllechwydd
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159045
+	560.1.1 = {
+		birth = "560.1.1"
+	}
+	615.1.1 = {
+		death = "615.1.1"
+	}
+}
+###### Rhos
+
+160038 = {
+	name = "Owain" # ap Einion
+	dynasty_house = house_british_isles_rhos #Rhos
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159011
+	455.1.1 = {
+		birth = "455.1.1"
+	}
+	525.1.1 = {
+		death = "525.1.1"
+	}
+}
+160039 = {
+	name = "Cynlas" # Goch
+	dynasty_house = house_british_isles_rhos #Rhos
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 160038
+	480.1.1 = {
+		birth = "480.1.1"
+	}
+	540.1.1 = {
+		death = "540.1.1"
+	}
+}
+160040 = {
+	name = "Einion" #ap Cynlas
+	dynasty_house = house_british_isles_rhos #Rhos
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 160039
+	500.1.1 = {
+		birth = "500.1.1"
+	}
+	550.1.1 = {
+		death = "550.1.1"
+		give_nickname = nick_the_saint
+	}
+}
+160041 = {
+	name = "Cadwal"
+	dynasty_house = house_british_isles_rhos #Rhos
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 160040
+	535.1.1 = {
+		birth = "535.1.1"
+	}
+	575.1.1 = {
+		death = "575.1.1"
+	}
+}
+160042 = {
+	name = "Idgwyn"
+	dynasty_house = house_british_isles_rhos #Rhos
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 160041
+	570.1.1 = {
+		birth = "570.1.1"
+	}
+	630.1.1 = {
+		death = "630.1.1"
+	}
+}
+
+
+159808 = {
+	name = "Annwn_Dynod" #
+	dynasty = 1029129 #Gwent
+	religion = "nicene"
+	culture = "briton"
+	father = 159807
+	mother = 159430
+	351.1.1 = {
+		birth = yes
+	}
+	428.1.1 = {
+		death = "428.1.1"
+	}
+}
+159813 = {
+	name = "Tudwal" #
+	dynasty = 1029129 #Gwent
+	religion = "nicene"
+	culture = "briton"
+	father = 159808
+	367.1.1 = {
+		birth = yes
+	}
+	431.1.1 = {
+		death = "431.1.1"
+	}
+}
+159935 = {
+	name = "Dingad" #
+	dynasty = 1029131 #Manaw
+	religion = "nicene"
+	culture = "briton"
+	father = 159813
+	406.1.1 = {
+		birth = "406.1.1"
+	}
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	481.1.1 = {
+		death = "481.1.1"
+	}
+}
+159936 = {
+	name = "Senyllt" #
+	dynasty = 1029131 #Manaw
+	religion = "nicene"
+	culture = "briton"
+	father = 159935
+	441.1.1 = {
+		birth = "441.1.1"
+	}
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	501.1.1 = {
+		death = "501.1.1"
+	}
+}
+159937 = {
+	name = "Neithon" #
+	dynasty = 1029131 #Manaw
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159936
+	480.1.1 = {
+		birth = "480.1.1"
+	}
+	549.1.1 = {
+		death = "549.1.1"
+	}
+}
+159938 = {
+	name = "Rhun" #
+	dynasty = 1029131 #Manaw
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159937
+	512.1.1 = {
+		birth = "512.1.1"
+	}
+	577.1.1 = {
+		death = "577.1.1"
+	}
+}
+159939 = {
+	name = "Tudwal" #
+	dynasty = 1029131 #Manaw
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159938
+	537.1.1 = {
+		birth = "537.1.1"
+	}
+	598.1.1 = {
+		death = "598.1.1"
+	}
+}
+159940 = {
+	name = "Anllech" #
+	dynasty = 1029131 #Manaw
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159939
+	562.1.1 = {
+		birth = "562.1.1"
+	}
+	634.1.1 = {
+		death = "634.1.1"
+	}
+}
+159941 = {
+	name = "Cynin" #
+	dynasty = 1029131 #Manaw
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159940
+	587.1.1 = {
+		birth = "587.1.1"
+	}
+	650.1.1 = {
+		death = "650.1.1"
+	}
+}
+159814 = {
+	name = "Tewdrig" #
+	dynasty = 1029129 #Gwent
+	religion = "nicene"
+	culture = "briton"
+	father = 159813
+	383.1.1 = {
+		birth = "383.1.1"
+	}
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	451.1.1 = {
+		death = "451.1.1"
+	}
+}
+159815 = {
+	name = "Marchell" #
+	female = yes
+	dynasty = 1029129 #Gwent
+	religion = "nicene"
+	culture = "briton"
+	father = 159814
+	399.1.1 = {
+		birth = "399.1.1"
+	}
+	415.1.1 = {
+		add_spouse = 159320
+	}
+	451.1.1 = {
+		death = "451.1.1"
+	}
+}
+159816 = {
+	name = "Ednyfed" #
+	dynasty = 1029129 #Gwent
+	religion = "nicene"
+	culture = "briton"
+	father = 159808
+	372.1.1 = {
+		birth = "372.1.1"
+	}
+	431.1.1 = {
+		death = "431.1.1"
+	}
+}
+159817 = {
+	name = "Gloitguin" #
+	dynasty = 1029134 #Dyfed
+	religion = "nicene"
+	culture = "briton"
+	father = 159816
+	389.1.1 = {
+		birth = "389.1.1"
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	451.1.1 = {
+		death = "451.1.1"
+	}
+}
+159818 = {
+	name = "Clotri" #
+	dynasty = 1029134 #Dyfed
+	religion = "nicene"
+	culture = "briton"
+	father = 159817
+	405.1.1 = {
+		birth = "405.1.1"
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	475.1.1 = {
+		death = "475.1.1"
+	}
+}
+159819 = {
+	name = "Maelgwn" #
+	dynasty = 1029134 #Dyfed
+	religion = "nicene"
+	culture = "briton"
+	father = 159818
+	422.1.1 = {
+		birth = "422.1.1"
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	475.1.1 = {
+		death = "475.1.1"
+	}
+}
+159820 = {
+	name = "Gwledyr" #
+	female = yes
+	dynasty = 1029134 #Dyfed
+	religion = "nicene"
+	culture = "briton"
+	father = 159818
+	421.1.1 = {
+		birth = "421.1.1"
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	475.1.1 = {
+		death = "475.1.1"
+	}
+}
+159324 = {
+	name = "Gwerthefyr"
+	dynasty_house = house_british_isles_dyfed #Dyfed
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159322
+	455.1.1 = {
+		birth = "455.1.1"
+	}
+	540.1.1 = {
+		death = "540.1.1"
+	}
+}
+159340 = {
+	name = "Cyngar"
+	dynasty_house = house_british_isles_dyfed #Dyfed
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159324
+	500.1.1 = {
+		birth = "500.1.1"
+	}
+	570.1.1 = {
+		death = "570.1.1"
+	}
+}
+159341 = {
+	name = "Pedr"
+	dynasty_house = house_british_isles_dyfed #Dyfed
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159340
+	530.1.1 = {
+		birth = "530.1.1"
+	}
+	595.1.1 = {
+		death = "595.1.1"
+	}
+}
+159342 = {
+	name = "Arthwr"
+	dynasty_house = house_british_isles_dyfed #Dyfed
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159341
+	550.1.1 = {
+		birth = "550.1.1"
+	}
+	620.1.1 = {
+		death = "620.1.1"
+	}
+}
+159343 = {
+	name = "Nowy" # I
+	dynasty_house = house_british_isles_dyfed #Dyfed
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159342
+	565.1.1 = {
+		birth = "565.1.1"
+	}
+	650.1.1 = {
+		give_nickname = nick_the_old
+	}
+	650.1.1 = {
+		death = "650.1.1"
+	}
+}
+159344 = {
+	name = "Gwlyddien" #Cloten
+	dynasty_house = house_british_isles_dyfed #Dyfed
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159343
+	590.1.1 = {
+		birth = "590.1.1"
+	}
+	625.1.1 = {
+		add_spouse = 159330 #Ceindrych of Brycheiniog
+	}
+	670.1.1 = {
+		death = "670.1.1"
+	}
+}
+159821 = {
+	name = "Dyfnwal" # Donald
+	dynasty = 1029129 #Gwent
+	religion = "nicene"
+	culture = "briton"
+	father = 159816
+	388.1.1 = {
+		birth = "388.1.1"
+	}
+	450.1.1 = {
+		death = "450.1.1"
+	}
+}
+159822 = {
+	name = "Ynyr" # Honorius
+	dynasty = 1029129 #Gwent
+	religion = "nicene"
+	culture = "briton"
+	father = 159821
+	430.1.1 = {
+		birth = "430.1.1"
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	470.1.1 = {
+		add_spouse = 159837
+	}
+	500.1.1 = {
+		death = "500.1.1"
+	}
+}
+
+159823 = {
+	name = "Caradog" # Freichfras
+	dynasty = 1029129 #Gwent
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159822
+	mother = 159837
+	470.1.1 = {
+		birth = "470.1.1"
+	}
+	492.1.1 = {
+		add_spouse = 159960
+	}
+	530.1.1 = {
+		death = "530.1.1"
+	}
+}
+159824 = {
+	name = "Meurig" #
+	dynasty = 1029129 #Gwent
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159823
+	mother = 159960
+	492.1.1 = {
+		birth = "492.1.1"
+	}
+	508.1.1 = {
+		add_spouse = 159829
+	}
+	550.1.1 = {
+		death = "550.1.1"
+	}
+}
+159825 = {
+	name = "Erbic" #
+	dynasty = 1029129 #Gwent
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159824
+	mother = 159829
+	508.1.1 = {
+		birth = "508.1.1"
+	}
+	570.1.1 = {
+		death = "570.1.1"
+	}
+}
+159830 = {
+	name = "Erb" #
+	dynasty = 1029129 #Gwent
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159825
+	524.1.1 = {
+		birth = "524.1.1"
+	}
+	590.1.1 = {
+		death = "590.1.1"
+	}
+}
+159961 = {
+	name = "Pebiau" # Clafrog
+	dynasty = 20037 #Ergyng
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159830
+	545.1.1 = {
+		birth = "545.1.1"
+	}
+	610.1.1 = {
+		death = "610.1.1"
+	}
+}
+159962 = {
+	name = "Cynfyn" #
+	dynasty = 20037 #Ergyng
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159961
+	566.1.1 = {
+		birth = "566.1.1"
+	}
+	630.1.1 = {
+		death = "630.1.1"
+	}
+}
+159963 = {
+	name = "Gwrgant" #
+	dynasty = 20037 #Ergyng
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159962
+	586.1.1 = {
+		birth = "586.1.1"
+	}
+	650.1.1 = {
+		death = "650.1.1"
+	}
+}
+159831 = {
+	name = "Nynniaw" #
+	dynasty = 1029129 #Gwent
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159830
+	540.1.1 = {
+		birth = "540.1.1"
+	}
+	600.1.1 = {
+		death = "600.1.1"
+	}
+}
+205137 = {
+	name = "Angharad" #
+	female = yes
+	dynasty = 1029129 #Gwent
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159831
+	561.1.1 = {
+		birth = "561.1.1"
+	}
+	605.1.1 = {
+		death = "605.1.1"
+	}
+}
+159832 = {
+	name = "Tewdrig" #
+	dynasty = 1029129 #Gwent
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159834
+	576.1.1 = {
+		birth = "576.1.1"
+	}
+	645.1.1 = {
+		death = "645.1.1"
+		give_nickname = nick_the_saint
+	}
+}
+159833 = {
+	name = "Meurig" #
+	dynasty = 1029129 #Gwent
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159832
+	596.1.1 = {
+		birth = "596.1.1"
+	}
+	620.1.1 = {
+		add_spouse = 159964
+	}
+	665.1.1 = {
+		death = "665.1.1"
+	}
+}
+159834 = {
+	name = "Llywarch" #
+	dynasty = 1029129 #Gwent
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159831
+	560.1.1 = {
+		birth = "560.1.1"
+	}
+	605.1.1 = {
+		death = "605.1.1"
+	}
+}
+159812 = {
+	name = "Custennin" #
+	dynasty = 1029129 #Gwent
+	religion = "nicene"
+	culture = "briton"
+	father = 159807
+	mother = 159430
+	369.1.1 = {
+		birth = "369.1.1"
+	}
+	411.1.1 = {
+		death = "411.1.1"
+	}
+}
+159809 = {
+	name = "Owain" #
+	dynasty = 1029130 #Cernyw
+	religion = "briton_pagan"
+	culture = "briton"
+	father = 159807
+	mother = 159430
+	362.1.1 = {
+		birth = "362.1.1"
+	}
+	409.1.1 = {
+		give_nickname = nick_finndu
+	}
+	428.1.1 = {
+		death = "428.1.1"
+	}
+}
+159826 = {
+	name = "Mor" #
+	dynasty = 1029130 #Cernyw
+	religion = "nicene"
+	culture = "briton"
+	father = 159809
+	378.1.1 = {
+		birth = "378.1.1"
+	}
+	448.1.1 = {
+		death = "448.1.1"
+	}
+}
+159827 = {
+	name = "Solor" #
+	dynasty = 1029130 #Cernyw
+	religion = "nicene"
+	culture = "briton"
+	father = 159826
+	398.1.1 = {
+		birth = "398.1.1"
+	}
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	470.1.1 = {
+		death = "470.1.1"
+	}
+}
+159828 = {
+	name = "Glywys" #
+	dynasty = 1029130 #Cernyw
+	religion = "nicene"
+	culture = "briton"
+	father = 159827
+	435.1.1 = {
+		birth = "435.1.1"
+	}
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	498.1.1 = {
+		death = "498.1.1"
+	}
+}
+159829 = {
+	name = "Dyfwn" #
+	female = yes
+	dynasty = 1029130 #Cernyw
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159828
+	486.1.1 = {
+		birth = "486.1.1"
+	}
+	508.1.1 = {
+		add_spouse = 159824
+	}
+	548.1.1 = {
+		death = "548.1.1"
+	}
+}
+159810 = { #Severa
+	name= "Severa"
+	dynasty= 1029129 #Gwent
+	female = yes
+	religion="nicene"
+	culture="britano_roman"
+	father = 159807
+	mother = 159430
+	359.1.1 = {
+		birth = "359.1.1"
+	}
+	375.1.1 = {
+		add_spouse = 159056
+	}
+	428.1.1 = {
+		death = "428.1.1"
+	}
+}
+159811 = {
+	name = "Gratianna" #
+	female = yes
+	dynasty = 1029129 #Gwent
+	religion = "nicene"
+	culture = "briton"
+	father = 159807
+	mother = 159430
+	388.1.1 = {
+		birth = "388.1.1"
+	}
+	410.1.1 = {
+		add_spouse = 159436
+	}
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	452.1.1 = {
+		death = "452.1.1"
+	}
+}
+#Gwyrtherion Dynasty
+159944 = {
+	name = "Gloyw" #
+	dynasty = 1029132 #Caerloyw
+	religion="briton_pagan"
+	culture="briton"
+	270.1.1 = {
+		birth = "270.1.1"
+	}
+	321.1.1 = {
+		death = "321.1.1"
+	}
+}
+159945 = {
+	name = "Gwydolin" #
+	dynasty = 1029132 #Caerloyw
+	religion="briton_pagan"
+	culture="briton"
+	father = 159944
+	305.1.1 = {
+		birth = "305.1.1"
+	}
+	362.1.1 = {
+		death = "362.1.1"
+	}
+}
+159056 = {
+	name = "Gwrtheyrn" # Vortigern
+	dynasty_house = house_british_isles_gwerthrynion #Gwerthrynion
+	religion = "briton_pagan"
+	culture = "briton"
+	father = 159945
+	trait = honest 
+	trait = brave 
+	trait = compassionate
+	trait = intellect_good_1
+	350.1.1 = {
+		birth = "350.1.1"
+	}
+	375.1.1 = {
+		add_spouse = 159810
+	}
+	395.1.1 = {
+		give_nickname = nick_the_thin
+	}
+	441.1.1 = {
+		death = "441.1.1"
+	}
+}
+buellt_01 = {
+	name = "Pasgen" # Vortimer
+	dynasty_house = house_british_isles_gwerthrynion #Gwerthrynion
+	religion = "briton_pagan"
+	culture = "briton"
+	father = 159056
+	#mother = 159810
+	423.1.1 = {
+		birth = "423.1.1"
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	480.1.1 = {
+		death = "480.1.1"
+	}
+}
+buellt_02 = {
+	name = "Briacat" # Vortimer
+	dynasty_house = house_british_isles_gwerthrynion #Gwerthrynion
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159056
+	#mother = 159810
+	440.1.1 = {
+		birth = "440.1.1"
+	}
+	520.1.1 = {
+		death = "520.1.1"
+	}
+}
+159836 = {
+	name = "Gwerthefyr" # Vortimer
+	dynasty_house = house_british_isles_gwerthrynion #Gwerthrynion
+	religion = "briton_pagan"
+	culture = "briton"
+	father = 159056
+	mother = 159810
+	376.1.1 = {
+		birth = "376.1.1"
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	453.1.1 = {
+		death = "453.1.1"
+		give_nickname = nick_the_blessed
+	}
+}
+159837 = {
+	name = "Madrun" #
+	female = yes
+	dynasty_house = house_british_isles_gwerthrynion #Gwerthrynion
+	religion = "nicene"
+	culture = "briton"
+	father = 159836
+	430.1.1 = {
+		birth = "430.1.1"
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	470.1.1 = {
+		add_spouse = 159822
+	}
+	490.1.1 = {
+		give_nickname = nick_the_saint
+	}
+	500.1.1 = {
+		death = "500.1.1"
+	}
+}
+
+159057 = {
+	name = "Cadeyrn" #
+	dynasty_house = house_british_isles_gwerthrynion #Gwerthrynion
+	religion = "briton_pagan"
+	culture = "briton"
+	father = 159056
+	mother = 159810
+	375.1.1 = {
+		birth = "375.1.1"
+	}
+	460.1.1 = {
+		give_nickname = nick_the_blessed
+	}
+	471.1.1 = {
+		death = "471.1.1"
+	}
+}
+159946 = {
+	name = "Gwydol" #
+	dynasty = 1029132 #Caerloyw
+	religion = "nicene"
+	culture = "briton"
+	father = 159945
+	321.1.1 = {
+		birth = "321.1.1"
+	}
+	395.1.1 = {
+		death = "395.1.1"
+	}
+}
+159947 = {
+	name = "Pasgen" #
+	dynasty = 1029132 #Caerloyw
+	religion = "nicene"
+	culture = "briton"
+	father = 159946
+	340.1.1 = {
+		birth = "340.1.1"
+	}
+	391.1.1 = {
+		death = "391.1.1"
+	}
+}
+159948 = {
+	name = "Cadeyrn" #
+	dynasty = 1029133 #Powys
+	religion = "nicene"
+	culture = "briton"
+	father = 159947
+	360.1.1 = {
+		birth = "360.1.1"
+	}
+	421.1.1 = {
+		death = "421.1.1"
+	}
+}
+159949 = {
+	name = "Brydw" #
+	dynasty_house = house_british_isles_gwerthrynion #Gwerthrynion
+	religion = "nicene"
+	culture = "briton"
+	father = 159056
+	mother = 159810
+	390.1.1 = {
+		birth = "390.1.1"
+	}
+	450.1.1 = {
+		death = "450.1.1"
+	}
+}
+159950 = {
+	name = "Annan" #
+	female = yes
+	dynasty_house = house_british_isles_gwerthrynion #Gwerthrynion
+	religion = "nicene"
+	culture = "briton"
+	father = 159949
+	430.1.1 = {
+		birth = "430.1.1"
+	}
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	490.1.1 = {
+		death = "490.1.1"
+	}
+}
+
+159058 = {
+	name = "Cadell" #
+	dynasty = 1029133 #Powys
+	religion = "nicene"
+	culture = "briton"
+	father = 159948
+	400.1.1 = {
+		birth = "400.1.1"
+	}
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	470.1.1 = {
+		death = "470.1.1"
+	}
+}
+159059 = {
+	name = "Pasgen" #
+	dynasty = 1029133 #Powys
+	religion = "nicene"
+	culture = "briton"
+	father = 159058
+	425.1.1 = {
+		birth = "425.1.1"
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	450.1.1 = {
+		add_spouse = 159950
+	}
+	501.1.1 = {
+		death = "501.1.1"
+	}
+}
+159060 = {
+	name = "Rhyddfedd" #aka Maun
+	dynasty_house = house_british_isles_gwerthrynion #Gwerthrynion
+	religion = "nicene"
+	culture = "briton"
+	father = 159059
+	mother = 159950
+	450.1.1 = {
+		birth = "450.1.1"
+	}
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	521.1.1 = {
+		death = "521.1.1"
+	}
+}
+
+159089 = {
+	name = "Pasgen" #
+	dynasty_house = house_british_isles_gwerthrynion #Gwerthrynion
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159077
+	490.1.1 = {
+		birth = yes
+	}
+	541.1.1 = {
+		death = "541.1.1"
+	}
+}
+159090 = {
+	name = "Morgan" #
+	dynasty_house = house_british_isles_gwerthrynion #Gwerthrynion
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159089
+	507.1.1 = {
+		birth = "500.1.1"
+	}
+	570.1.1 = {
+		death = "570.1.1"
+	}
+}
+159077 = {
+	name = "Cyngen" #
+	dynasty_house = house_british_isles_gwerthrynion #Gwerthrynion
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159060
+	470.1.1 = {
+		birth = "470.1.1"
+	}
+	520.1.1 = {
+		death = "520.1.1"
+	}
+}
+159078 = {
+	name = "Brochfael" #
+	dynasty_house = house_british_isles_gwerthrynion #Gwerthrynion
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159077
+	500.1.1 = {
+		birth = "500.1.1"
+	}
+	571.1.1 = {
+		death = "571.1.1"
+	}
+}
+159079 = {
+	name = "Cynan" #
+	dynasty_house = house_british_isles_gwerthrynion #Gwerthrynion
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159078
+	530.1.1 = {
+		birth = "530.1.1"
+	}
+	610.1.1 = {
+		death = "610.1.1"
+	}
+}
+159080 = {
+	name = "Selyf" #
+	dynasty_house = house_british_isles_gwerthrynion #Gwerthrynion
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159079
+	575.1.1 = {
+		birth = "575.1.1"
+	}
+	613.1.1 = {
+		death = "613.1.1"
+	}
+}
+159061 = {
+	name = "Casnar" # Wledig
+	dynasty_house = house_british_isles_ternyllwg #Ternyllwg
+	religion = "nicene"
+	culture = "briton"
+	father = 159057
+	421.1.1 = {
+		birth = "421.1.1"
+	}
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	500.1.1 = {
+		death = "500.1.1"
+	}
+}
+159062 = {
+	name = "Llary" #
+	dynasty_house = house_british_isles_ternyllwg #Ternyllwg
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159061
+	470.1.1 = {
+		birth = "470.1.1"
+	}
+	550.1.1 = {
+		death = "550.1.1"
+	}
+}
+159063 = {
+	name = "Rhun" #
+	dynasty_house = house_british_isles_ternyllwg #Ternyllwg
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159062
+	510.1.1 = {
+		birth = "510.1.1"
+	}
+	580.1.1 = {
+		death = "580.1.1"
+	}
+}
+159064 = {
+	name = "Bywdeg" #
+	dynasty_house = house_british_isles_ternyllwg #Ternyllwg
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159063
+	550.1.1 = {
+		birth = "550.1.1"
+	}
+	640.1.1 = {
+		death = "640.1.1"
+	}
+}
+#Alt Clut Dynasty
+
+166454 = {  	
+	name = "Beli"
+	# AKA: Beli I map Neithon of Alt Clut
+	dynasty = 816
+	martial = 6
+	diplomacy = 4
+	intrigue = 2
+	stewardship = 5
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 166455
+	593.1.1 = {
+		birth = "593.1.1"
+	}
+	627.1.1 = {
+		death = "627.1.1"
+	}
+}
+
+166455 = {  	
+	name = "Neithon"
+	# AKA: Neithon map Guipno map Dumnagual Hen of Alt Clut
+	dynasty = 816
+	martial = 8
+	diplomacy = 5
+	intrigue = 3
+	stewardship = 5
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 166460
+	555.1.1 = {
+		birth = "555.1.1"
+	}
+	620.1.1 = {
+		death = "620.1.1"
+	}
+}
+
+166456 = {  	
+	name = "Custennin"
+	# AKA: St. Constantine map Riderch I Hael of Alt Clut
+	dynasty = 816
+	martial = 4
+	diplomacy = 8
+	intrigue = 2
+	stewardship = 6
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 166457
+	568.1.1 = {
+		birth = "568.1.1"
+	}
+	640.1.1 = {
+		death = "640.1.1"
+		give_nickname = nick_the_saint
+	}
+}
+
+166457 = {  	
+	name = "Rhydderch"
+	# AKA: Riderch I Hael map Tutagual of Alt Clut
+	dynasty = 816
+	martial = 8
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 6
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 166458
+	529.1.1 = {
+		birth = "529.1.1"
+	}
+	614.1.1 = {
+		death = "614.1.1"
+		give_nickname = nick_the_old
+	}
+}
+
+166458 = {  	
+	name = "Tutagual"
+	# AKA: Tutagual map Clinoch of Alt Clut
+	dynasty = 816
+	martial = 5
+	diplomacy = 3
+	intrigue = 4
+	stewardship = 5
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 166459
+	492.1.1 = {
+		birth = "492.1.1"
+	}
+	562.1.1 = {
+		death = "562.1.1"
+	}
+}
+
+166459 = {  	
+	name = "Clinoch"
+	# AKA: Clinoch map Dumnagual Hen of Alt Clut
+	dynasty = 816
+	martial = 5
+	diplomacy = 4
+	intrigue = 6
+	stewardship = 4
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 166461
+	464.1.1 = {
+		birth = "464.1.1"
+	}
+	535.1.1 = {
+		death = "535.1.1"
+	}
+}
+
+166460 = {  	
+	name = "Guipno"
+	# AKA: Guipno map Dumnagual Hen of Alt Clut
+	dynasty = 816
+	martial = 8
+	diplomacy = 3
+	intrigue = 5
+	stewardship = 3
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 166461
+	506.1.1 = {
+		birth = "506.1.1"
+	}
+	565.1.1 = {
+		death = "565.1.1"
+	}
+}
+
+166461 = {  	
+	name = "Dumnagual"
+	# AKA: Dumnagual I Hen map Cinuit of Alt Clut
+	dynasty = 816
+	martial = 6
+	diplomacy = 7
+	intrigue = 4
+	stewardship = 8
+	religion = "nicene"
+	culture = "briton"
+	father = 166462
+	440.1.1 = {
+		birth = "440.1.1"
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	525.1.1 = {
+		death = "525.1.1"
+		give_nickname = nick_the_old
+	}
+}
+
+166462 = {  	
+	name = "Cinuit"
+	# AKA: Cinuit map Ceretic Guletic of Alt Clut
+	dynasty = 816
+	martial = 5
+	diplomacy = 3
+	intrigue = 6
+	stewardship = 4
+	religion = "nicene"
+	culture = "briton"
+	father = 166463
+	422.1.1 = {
+		birth = "422.1.1"
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	501.1.1 = {
+		death = "501.1.1"
+	}
+}
+
+166463 = {  	
+	name = "Ceretic_Guletic"
+	# AKA: "Coroticus" Ceretic Guletic map Cynloyp of Alt Clut
+	dynasty = 816
+	martial = 8
+	diplomacy = 3
+	intrigue = 6
+	stewardship = 4
+	religion = "briton_pagan"
+	culture = "briton"
+	trait = education_martial_2
+	father = 166464
+	400.1.1 = {
+		birth = "400.1.1"
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	488.1.1 = {
+		death = "488.1.1"
+	}
+}
+
+166464 = {  	
+	name = "Cynloyp"
+	# AKA: Cynloyp map Cinhil
+	dynasty = 816
+	religion = "briton_pagan"
+	culture = "briton"
+	father = 166465
+	383.1.1 = {
+		birth = "383.1.1"
+	}
+	436.1.1 = {
+		death = "436.1.1"
+	}
+}
+
+166465 = {  	
+	name = "Cinhil"
+	# AKA: Cinhil map Cluim
+	dynasty = 816
+	religion = "briton_pagan"
+	culture = "briton"
+	father = 166466
+	360.1.1 = {
+		birth = "360.1.1"
+	}
+	412.1.1 = {
+		death = "412.1.1"
+	}
+}
+
+166466 = {  	
+	name = "Cluim"
+	# AKA: Cluim
+	dynasty = 816
+	religion = "briton_pagan"
+	culture = "briton"
+	333.1.1 = {
+		birth = "333.1.1"
+	}
+	384.1.1 = {
+		death = "384.1.1"
+	}
+}
+
+#Allmuir Dyansty
+Allmuir_01 = { #Artchorp
+	name= "Artchorp"
+	religion="briton_pagan"
+	culture="briton"
+	dynasty = 900068 #Allmuir
+	331.1.1 = {
+		birth = yes
+	}
+	390.1.1 = {
+		death = yes
+	}
+}
+Allmuir_02 = { #Eochaid
+	name= "Eochaid"
+	religion="briton_pagan"
+	culture="briton"
+	dynasty = 900068 #Allmuir
+	father = Allmuir_01
+	354.1.1 = {
+		birth = yes
+	}
+	420.1.1 = {
+		death = yes
+	}
+}
+
+Allmuir_03 = { #Corath
+	name= "Corath"
+	religion="briton_pagan"
+	culture="briton"
+	dynasty = 900068 #Allmuir
+	father = Allmuir_02
+	389.1.1 = {
+		birth = yes
+	}
+	440.1.1 = {
+		death = yes
+	}
+}
+
+#Fake Tribal rulers and fillers
+Dobunni_02 = { #Dobunni
+	name= "Corath"
+	religion="briton_pagan"
+	culture="briton"
+	dynasty = 900072 #Dobunni
+	327.1.1 = {
+		birth = yes
+	}
+	376.1.1 = {
+		death = yes
+	}
+}
+Dobunni_01 = { #Dobunni
+	name= "Tibault"
+	religion="briton_pagan"
+	culture="briton"
+	dynasty = 900072 #Dobunni
+	father = Dobunni_02
+	367.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+Dobunni_03 = { #Dobunni
+	name= "Ogmios"
+	religion="briton_pagan"
+	culture="briton"
+	dynasty = 900072 #Dobunni
+	father = Dobunni_01
+	396.1.1 = {
+		birth = yes
+	}
+	437.1.1 = {
+		death = yes
+	}
+}
+Dobunni_04 = { #Dobunni
+	name= "Ogmios"
+	religion="briton_pagan"
+	culture="briton"
+	dynasty = 900072 #Dobunni
+	father = Dobunni_03
+	423.1.1 = {
+		birth = yes
+	}
+	478.1.1 = {
+		death = yes
+	}
+}
+Cornovii_02 = { # Tribes of the North
+	name= "Camulos"
+	religion="briton_pagan"
+	culture="briton"
+	dynasty = 900080 #Cornovii
+	332.1.1 = {
+		birth = yes
+	}
+	388.1.1 = {
+		death = yes
+	}
+}
+Cornovii_01 = { # Tribes of the North
+	name= "Breselconan"
+	religion="briton_pagan"
+	culture="briton"
+	dynasty = 900080 #Cornovii
+	father = Cornovii_02
+	373.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+Cornovii_03 = { # Tribes of the North
+	name= "Iocilin"
+	religion="briton_pagan"
+	culture="briton"
+	dynasty = 900080 #Cornovii
+	father = Cornovii_01
+	401.1.1 = {
+		birth = yes
+	}
+	468.1.1 = {
+		death = yes
+	}
+}
+Cornovii_04 = { # Tribes of the North
+	name= "Mauric"
+	religion="briton_pagan"
+	culture="briton"
+	dynasty = 900080 #Cornovii
+	father = Cornovii_03
+	431.1.1 = {
+		birth = yes
+	}
+	480.1.1 = {
+		death = yes
+	}
+}
+Novantae_01 = { #Caledonian Vassal 2
+	name= "Iocilin"
+	religion="briton_pagan"
+	culture="briton"
+	dynasty = 900087 #Novantae
+	371.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+
+Ordovices_01 = { #Ogmios
+	name= "Ogmios"
+	religion="briton_pagan"
+	culture="briton"
+	dynasty = 900073 #Ordovices
+	367.1.1 = {
+		birth = yes
+	}
+	430.1.1 = {
+		death = yes
+	}
+}
+Decangli_01 = { #Camulos
+	name= "Camulos"
+	religion="briton_pagan"
+	culture="briton"
+	dynasty = 900074 #Decangli
+	359.1.1 = {
+		birth = yes
+	}
+	430.1.1 = {
+		death = yes
+	}
+}
+Coratini_02 = { # Coratini
+	name= "Camulos"
+	religion="briton_pagan"
+	culture="briton"
+	dynasty = 900084 #Coratini
+	322.1.1 = {
+		birth = yes
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+Coratini_01 = { # Coratini
+	name= "Mauric"
+	religion="briton_pagan"
+	culture="briton"
+	dynasty = 900084 #Coratini
+	father = Coratini_02
+	342.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+Brigantes_02 = { #Cunobelinus
+	name= "Caurantin"
+	religion="britano_roman_pagan"
+	culture="briton"
+	dynasty = 900083 #Brigantes
+	337.1.1 = {
+		birth = yes
+	}
+	380.1.1 = {
+		death = yes
+	}
+}
+Brigantes_01 = { #Cunobelinus
+	name= "Cunobelinus"
+	religion="britano_roman_pagan"
+	culture="briton"
+	dynasty = 900083 #Brigantes
+	father = Brigantes_02
+	367.1.1 = {
+		birth = yes
+	}
+	430.1.1 = {
+		death = yes
+	}
+}
+Cantii_01 = { #Cantii
+	name= "Publius"
+	religion="pelagianism"
+	culture="britano_roman"
+	dynasty = 900075
+	344.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+Selgovae_01 = { #Dumnorix
+	name= "Dumnorix"
+	religion="briton_pagan"
+	culture="briton"
+	dynasty = 900086 #Selgovae
+	367.1.1 = {
+		birth = yes
+	}
+	430.1.1 = {
+		death = yes
+	}
+}
+
+# Historical Britannian Roman Characters
+BUsuprer_01 = {
+	name = "Marcus" # Marcus the Usurper
+	religion = "nicene"
+	culture = "britano_roman"
+	trait = strategist
+	trait = education_martial_4
+	trait = fickle
+	371.1.1 = {
+		birth = yes
+	}
+	406.10.1 = {
+		death = yes
+	}
+}
+BUsuprer_02 = {
+	name = "Gratianus" # Gratianus the Usuprer
+	religion = "nicene"
+	culture = "britano_roman"
+	trait = administrator
+	trait = education_stewardship_3
+	346.1.1 = {
+		birth = yes
+	}
+	406.10.1 = {
+		death = yes
+	}
+}
+magnetius_01 = {
+	name = "Magnus"
+	religion = "nicene"
+	culture = "britano_roman"
+	dynasty = dynasty_Magnus
+	270.1.1 = {
+		birth = yes
+	}
+	300.1.1 = {
+		add_spouse = magnetius_02
+	}
+	320.1.1 = {
+		death = yes
+	}
+}
+constantinus_10 = {
+	name = "Cynfael" # Constantinus the usurper
+	religion = "chalcedonian"
+	culture = "britano_roman"
+	dynasty_house = house_Aurelianus
+	father = constantinus_07
+	523.1.1 = {
+		birth = yes
+	}
+	577.1.1 = {
+		death = yes
+	}
+}
+constantinus_11 = {
+	name = "Cynheddion" # Constantinus the usurper
+	religion = "chalcedonian"
+	culture = "britano_roman"
+	dynasty_house = house_Aurelianus
+	father = constantinus_07
+	544.1.1 = {
+		birth = yes
+	}
+	577.1.1 = {
+		death = yes
+	}
+}
+
+
+159323 = {
+	name = "Brychan"
+	dynasty = 1029032 #1st Brycheiniog
+	religion = "nicene"
+	culture = "briton"
+	father = 159320
+	mother = 159815
+	415.1.1 = {
+		birth = "415.1.1"
+	}
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	435.1.1 = {
+		add_spouse = 159932
+	}
+	490.1.1 = {
+		death = "490.1.1"
+	}
+}
+159956 = {
+	name = "Brychan"
+	dynasty = 1029032 #1st Brycheiniog
+	religion = "nicene"
+	culture = "briton"
+	father = 159323
+	mother = 159932
+	430.1.1 = {
+		birth = "430.1.1"
+	}
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	510.1.1 = {
+		death = "510.1.1"
+	}
+}
+159957 = {
+	name = "Nyfain"
+	female = yes
+	dynasty = 1029032 #1st Brycheiniog
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159956
+	459.1.1 = {
+		birth = "459.1.1"
+	}
+	476.1.1 = {
+		add_spouse = 159952
+	}
+	530.1.1 = {
+		death = "530.1.1"
+	}
+}
+luitcoit_01 = {
+	name = "Cynbel"
+	female = yes
+	dynasty = luitcoit #1st Brycheiniog
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159956
+	499.1.1 = {
+		birth = "460.1.1"
+	}
+	
+	539.1.1 = {
+		death = "530.1.1"
+	}
+}
+doomed = {
+	name = "Teuhant"
+	female = yes
+	dynasty = catuvellauni2 #1st Brycheiniog
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159956
+	499.1.1 = {
+		birth = "460.1.1"
+	}
+	
+	539.1.1 = {
+		death = "530.1.1"
+	}
+}
+59957 = {
+	name = "Nyfain"
+	female = yes
+	dynasty = 1029032 #1st Brycheiniog
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159956
+	460.1.1 = {
+		birth = "460.1.1"
+	}
+	476.1.1 = {
+		add_spouse = 159952
+	}
+	530.1.1 = {
+		death = "530.1.1"
+	}
+}
+159325 = {
+	name = "Rhain_Dremrudd"
+	dynasty = 1029032 #1st Brycheiniog
+	religion = "nicene"
+	culture = "briton"
+	father = 159323
+	mother = 159932
+	435.1.1 = {
+		birth = "435.1.1"
+	}
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	510.1.1 = {
+		death = "510.1.1"
+	}
+}
+
+159326 = {
+	name = "Rhigeneu"
+	dynasty = 1029032 #1st Brycheiniog
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159325
+	460.1.1 = {
+		birth = "460.1.1"
+	}
+	540.1.1 = {
+		death = "540.1.1"
+	}
+}
+159327 = {
+	name = "Llywarch"
+	dynasty = 1029032 #1st Brycheiniog
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159326
+	500.1.1 = {
+		birth = "500.1.1"
+	}
+	580.1.1 = {
+		death = "580.1.1"
+	}
+}
+159328 = {
+	name = "Idwallon"
+	dynasty = 1029032 #1st Brycheiniog
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159327
+	540.1.1 = {
+		birth = "540.1.1"
+	}
+	620.1.1 = {
+		death = "620.1.1"
+	}
+}
+159329 = {
+	name = "Rhiwallon"
+	dynasty = 1029032 #1st Brycheiniog
+	religion = "chalcedonian"
+	culture = "briton"
+	father = 159328
+	570.1.1 = {
+		birth = "570.1.1"
+	}
+	640.1.1 = {
+		death = "640.1.1"
+	}
+}
+184130 = {
+	name = "Maredudd"
+	dynasty = 1029032 #1st Brycheiniog
+	religion = "chalcedonian"
+	culture = "briton"
+	trait = legitimized_bastard
+	father = 159328 #Idwallon
+	580.1.1 = {
+		birth = "580.1.1"
+	}
+	650.1.1 = {
+		death = "650.1.1"
+	}
+}
+### welsh
+welsh_01 = {
+	name = "Gwgon" #
+	religion = "briton_pagan"
+	culture = "briton"
+	342.1.1 = {
+		birth = "434.1.1"
+	}
+	400.1.1 = {
+		death = "400.1.1"
+	}
+}
+welsh_02 = {
+	name = "Taranis" #
+	religion = "briton_pagan"
+	culture = "briton"
+	339.1.1 = {
+		birth = "339.1.1"
+	}
+	380.1.1 = {
+		death = "380.1.1"
+	}
+}
+
+# Boudica
+# Just here for historical flavor
+iceni_99 = {
+	name = "Boudica"
+	female = yes
+	dynasty = 900079
+	religion = "briton_pagan"
+	culture = "briton"
+	trait = shieldmaiden
+	trait = brave
+	trait = ambitious
+	diplomacy = 5
+	martial = 10
+	stewardship = 7
+	intrigue = 0
+	learning = 7
+	prowess = 4
+	24.1.1 = {
+		birth = yes
+	}
+	61.1.1 = {
+		death = {
+			death_reason = death_suicide
+		}
+	}
+}
+gallaecian_briton_01 = {
+	name = "Mailoc" # britonnic bishop in Gallaecia
+	religion = chalcedonian
+	culture = briton
+	510.1.1 = {
+		birth = yes
+	}
+	532.1.1 = {
+		trait = devoted
+	}
+	580.1.1 = {
+		death = yes
+	}
+}
+
+
+###############################################
+# 
+# BRITON MISC
+# By Cybrxkhan
+# 
+###############################################
+
+
+# Taliesin
+# Famous Welsh poet from the mid to late 6th century
+# Later became a legendary figure
+briton_misc_001 = {
+	name = "Taliesin"
+	dynasty = TFE_dynasty_taliesin
+	religion = "chalcedonian"
+	culture = "briton"
+	diplomacy = 7
+	learning = 5
+	trait = education_diplomacy_4
+	trait = poet
+	trait = brave
+	trait = ambitious
+	trait = gregarious
+	trait = legitimized_bastard # Technically born of some weird magic stuff and found as a baby or something weird
+	512.1.2 = {
+		birth = yes
+		effect = { add_character_flag = do_not_generate_starting_family }
+	}
+	589.8.2 = {
+		death = yes
+	}
+}
+
+
+
+
+
+

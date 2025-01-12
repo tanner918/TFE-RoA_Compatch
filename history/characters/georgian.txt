@@ -1,0 +1,1596 @@
+﻿70472 = {
+	name = "Levan"
+	dynasty = 101737
+	martial = 6
+	diplomacy = 6
+	intrigue = 5
+	stewardship = 5
+	religion = "iconoclast"
+	culture = "kartvelian"
+	trait = lustful
+	trait = beauty_good_1
+	trait = education_martial_2
+	father = 160030
+	mother = 145999
+	750.1.1 = {
+		birth = "750.1.1"
+	}
+	786.1.1 = {
+		religion = "orthodox"
+	}
+	812.1.1 = {
+		death = "812.1.1"
+	}
+}
+
+70473 = {
+	name = "Teodos"
+	dynasty = 101737
+	martial = 5
+	diplomacy = 7
+	intrigue = 6
+	stewardship = 4
+	religion = "iconoclast"
+	culture = "kartvelian"
+	trait = ambitious
+	trait = arrogant
+	trait = education_intrigue_1
+	father = 70472
+	768.1.1 = {
+		birth = "768.1.1"
+	}
+	786.1.1 = {
+		religion = "orthodox"
+	}
+	838.1.1 = {
+		death = "838.1.1"
+	}
+}
+### kartvelian Royal houses
+parsman_02 = {
+	name = "Ghadana" #
+	dynasty = 23001
+	religion = "armaz"
+	culture = "kartvelian"
+	female = yes
+	1.1.1 = {
+		birth = "1.1.1"
+	}
+	58.1.1 = {
+		death = "58.1.1"
+	}
+}
+159909 = {
+	name = "Parsman" #
+	dynasty = 23001
+	religion = "armaz"
+	culture = "kartvelian"
+	mother = parsman_02
+	2.1.1 = {
+		birth = "2.1.1"
+	}
+	58.1.1 = {
+		death = "58.1.1"
+	}
+}
+
+parsman_03 = {
+	name = "Mihrdat" #
+	dynasty = 23001
+	religion = "armaz"
+	culture = "kartvelian"
+	mother = parsman_02
+	3.1.1 = {
+		birth = "3.1.1"
+	}
+	51.1.1 = {
+		death = "51.1.1"
+	}
+}
+parsman_04 = {
+	name = "Zenobia" #
+	dynasty = 23001
+	female = yes
+	religion = "armaz"
+	culture = "kartvelian"
+	father = parsman_03
+	23.1.1 = {
+		birth = "23.1.1"
+	}
+	40.1.1 = {
+		add_spouse = parsman_01
+	}
+	51.1.1 = {
+		death = "51.1.1"
+	}
+}
+159910 = {
+	name = "Mihrdat" #
+	dynasty = 23001
+	religion = "armaz"
+	culture = "kartvelian"
+	father = 159909
+	42.1.1 = {
+		birth = "42.1.1"
+	}
+	106.1.1 = {
+		death = "106.1.1"
+	}
+}
+parsman_01 = {
+	name = "Radamisti" #
+	dynasty = 23001
+	religion = "armaz"
+	culture = "kartvelian"
+	father = 159909
+	23.1.1 = {
+		birth = "48.1.1"
+	}
+	106.1.1 = {
+		death = "106.1.1"
+	}
+}
+
+159911 = {
+	name = "Amazasp" #
+	dynasty = 23001
+	religion = "armaz"
+	culture = "kartvelian"
+	father = 159910
+	62.1.1 = {
+		birth = "62.1.1"
+	}
+	116.1.1 = {
+		death = "116.1.1"
+	}
+}
+
+159912 = {
+	name = "Parsman" #
+	dynasty = 23001
+	religion = "armaz"
+	culture = "kartvelian"
+	father = 159911
+	82.1.1 = {
+		birth = "82.1.1"
+	}
+	100.1.1 = {
+		add_spouse = ghadana_01
+	}
+	135.1.1 = {
+		death = "135.1.1"
+		give_nickname = nick_the_good
+	}
+}
+
+159913 = {
+	name = "Hradam" #
+	dynasty = 23001
+	religion = "armaz"
+	culture = "kartvelian"
+	father = 159912
+	mother = ghadana_01
+	102.1.1 = {
+		birth = "102.1.1"
+	}
+	138.1.1 = {
+		death = "138.1.1"
+	}
+}
+159914 = {
+	name = "Parsman" #
+	dynasty = 23001
+	religion = "armaz"
+	culture = "kartvelian"
+	father = 159913
+	130.1.1 = {
+		birth = "130.1.1"
+	}
+	185.1.1 = {
+		death = "185.1.1"
+	}
+}
+159915 = {
+	name = "Amazasp" #
+	dynasty = 23001
+	religion = "armaz"
+	culture = "kartvelian"
+	father = 159914
+	154.1.1 = {
+		birth = "154.1.1"
+	}
+	189.1.1 = {
+		death = "189.1.1"
+	}
+}
+159916 = {
+	name = "Ghadana" #
+	female = yes
+	dynasty = 23001
+	religion = "armaz"
+	culture = "kartvelian"
+	father = 159914
+	155.1.1 = {
+		birth = "155.1.1"
+	}
+	220.1.1 = {
+		death = "220.1.1"
+	}
+}
+159606 = {
+	name = "Rev" # II
+	dynasty_house = house_khosroviani
+	religion = "nicene"
+	culture = "kartvelian"
+	father = 159604
+	mother = 999225
+	300.1.1 = {
+		birth = "300.1.1"
+	}
+	330.1.1 = {
+		add_spouse = salome_01
+	}
+	361.1.1 = {
+		death = "361.1.1"
+	}
+}
+abeshura_02 = {
+	name = "Abeshura" # II
+	female = yes
+	dynasty_house = house_khosroviani
+	religion = "nicene"
+	culture = "kartvelian"
+	father = 159604
+	mother = 999225
+	308.1.1 = {
+		birth = "308.1.1"
+	}
+	361.1.1 = {
+		death = "361.1.1"
+	}
+}
+159758 = {
+	name = "Saurmag" # II
+	dynasty_house = house_khosroviani
+	religion = "nicene"
+	culture = "kartvelian"
+	father = 159606
+	mother = salome_01
+	trait = fickle
+	trait = ambitious
+	trait = arrogant
+	trait = education_diplomacy_3
+	320.1.1 = {
+		birth = "320.1.1"
+	}
+	363.1.1 = {
+		death = "363.1.1"
+	}
+}
+159759 = {
+	name = "Varaz-Bakur" # II
+	dynasty_house = house_khosroviani
+	religion = "armaz"
+	culture = "kartvelian"
+	father = 159604
+	mother = 999225
+	305.1.1 = {
+		birth = "305.1.1"
+	}
+	365.1.1 = {
+		death = "365.1.1"
+	}
+}
+159760 = {
+	name = "Mihrdat" # III
+	dynasty_house = house_khosroviani
+	religion = "nicene"
+	culture = "kartvelian"
+	father = 159759
+	325.1.1 = {
+		birth = "325.1.1"
+	}
+	378.1.1 = {
+		death = "378.1.1"
+	}
+}
+159770 = {
+	name = "Varaz-Bakur" # III
+	dynasty_house = house_khosroviani
+	religion = "nicene"
+	culture = "kartvelian"
+	father = 159759
+	345.1.1 = {
+		birth = "345.1.1"
+	}
+	368.1.1 = {
+		add_spouse = salome_02
+	}
+	394.1.1 = {
+		death = "394.1.1"
+	}
+}
+159761 = {
+	name = "Trdati" # II
+	dynasty_house = house_khosroviani
+	religion = "nicene"
+	culture = "kartvelian"
+	father = 159606
+	mother = salome_01
+	trait = generous
+	trait = zealous
+	trait = humble
+	trait = education_stewardship_3
+	325.1.1 = {
+		birth = "325.1.1"
+	}
+	406.1.1 = {
+		death = "406.1.1"
+	}
+}
+salome_02 = {
+	name = "Salome"
+	religion = "nicene"
+	culture = "kartvelian"
+	father = 159761
+	female = yes
+	349.1.1 = {
+		birth = yes
+	}
+	406.1.1 = {
+		death = yes
+	}
+}
+159762 = { ### MAKE LOVER OF EMPRES EUDOXIA
+	name = "Parsman" # IV
+	dynasty_house = house_khosroviani
+	religion = "nicene"
+	culture = "kartvelian"
+	father = 159770
+	mother = salome_02
+	trait = brave
+	trait = ambitious
+	trait = humble
+	trait = education_martial_3
+	367.1.1 = {
+		birth = "367.1.1"
+	}
+	395.1.1 = {
+		set_relation_lover = character:930551279 #Empress Aelia
+	}
+	409.1.1 = {
+		death = "409.1.1"
+	}
+}
+159763 = {
+	name = "Mihrdat" # IV
+	dynasty_house = house_khosroviani
+	religion = "nicene"
+	culture = "kartvelian"
+	father = 159770
+	mother = salome_02
+	trait = arrogant
+	trait = fickle
+	trait = arbitrary
+	370.1.1 = {
+		birth = "370.1.1"
+	}
+	411.1.1 = {
+		death = "411.1.1"
+	}
+}
+159764 = {
+	name = "Archili" # I
+	dynasty_house = house_khosroviani
+	religion = "nicene"
+	culture = "kartvelian"
+	father = 159763
+	370.1.1 = {
+		birth = "370.1.1"
+	}
+	435.1.1 = {
+		death = "435.1.1"
+	}
+}
+159765 = {
+	name = "Mihrdat" # V
+	dynasty_house = house_khosroviani
+	religion = "nicene"
+	culture = "kartvelian"
+	father = 159764
+	390.1.1 = {
+		birth = "390.1.1"
+	}
+	430.1.1 = {
+		add_spouse = mihranid_05
+	}
+	447.1.1 = {
+		death = "447.1.1"
+	}
+}
+159766 = {
+	name = "Vakhtang" # I Gorgasali
+	dynasty_house = house_khosroviani
+	religion = "nicene"
+	culture = "kartvelian"
+	father = 159765
+	mother = mihranid_05
+	trait = ambitious
+	trait = zealous
+	trait = just
+	trait = education_diplomacy_4
+	439.1.1 = {
+		birth = "439.1.1"
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	460.1.1 = {
+		add_spouse = sassanid_26
+	}
+	469.1.1 = {
+		add_spouse = isaurian_07 # daughter of Zenon
+	}
+	522.1.1 = {
+		death = "522.1.1"
+	}
+}
+159767 = {
+	name = "Darchili" # I
+	dynasty_house = house_khosroviani
+	religion = "chalcedonian"
+	culture = "kartvelian"
+	father = 159766
+	mother = sassanid_26
+	460.1.1 = {
+		birth = "460.1.1"
+	}
+	534.1.1 = {
+		death = "534.1.1"
+	}
+}
+159768 = {
+	name = "Bakur" # II
+	dynasty_house = house_khosroviani
+	religion = "chalcedonian"
+	culture = "kartvelian"
+	father = 159767
+	500.1.1 = {
+		birth = "500.1.1"
+	}
+	547.1.1 = {
+		death = "547.1.1"
+	}
+}
+159769 = {
+	name = "Parsman" # V
+	dynasty_house = house_khosroviani
+	religion = "chalcedonian"
+	culture = "kartvelian"
+	father = 159768
+	530.1.1 = {
+		birth = "530.1.1"
+	}
+	561.1.1 = {
+		death = "561.1.1"
+	}
+}
+159771 = {
+	name = "Darchili" #name unknown
+	dynasty_house = house_khosroviani
+	religion = "chalcedonian"
+	culture = "kartvelian"
+	father = 159767
+	505.1.1 = {
+		birth = "505.1.1"
+	}
+	540.1.1 = {
+		death = "540.1.1"
+	}
+}
+159772 = {
+	name = "Parsman" # VI
+	dynasty_house = house_khosroviani
+	religion = "chalcedonian"
+	culture = "kartvelian"
+	father = 159771
+	525.1.1 = {
+		birth = "525.1.1"
+	}
+	570.1.1 = {
+		death = "570.1.1"
+	}
+}
+159773 = {
+	name = "Bakur" # III
+	dynasty_house = house_khosroviani
+	religion = "chalcedonian"
+	culture = "kartvelian"
+	father = 159772
+	555.1.1 = {
+		birth = "555.1.1"
+	}
+	590.1.1 = {
+		death = "590.1.1"
+	}
+}
+159774 = {
+	name = "Parsmandukht"
+	female = yes
+	dynasty_house = house_khosroviani
+	religion = "chalcedonian"
+	culture = "kartvelian"
+	father = 159772
+	565.1.1 = {
+		birth = "565.1.1"
+	}
+	580.1.1 = {
+		add_spouse = 159919
+	}
+	650.1.1 = {
+		death = "650.1.1"
+	}
+}
+
+159775 = {
+	name = "Levan" #
+	dynasty_house = house_khosroviani
+	religion = "chalcedonian"
+	culture = "kartvelian"
+	father = 159766
+	mother = isaurian_07
+	470.1.1 = {
+		birth = "470.1.1"
+	}
+	535.1.1 = {
+		death = "535.1.1"
+	}
+}
+elene_02 = {
+	name = "Mihrdat" #
+	dynasty_house = house_khosroviani
+	religion = "chalcedonian"
+	culture = "kartvelian"
+	father = 159766
+	mother = isaurian_07
+	474.1.1 = {
+		birth = "4741.1"
+	}
+	535.1.1 = {
+		death = "535.1.1"
+	}
+}
+159776 = {
+	name = "Guaram" #
+	dynasty = 1029127
+	religion = "orthodox"
+	culture = "kartvelian"
+	father = 159775
+	510.1.1 = {
+		birth = "510.1.1"
+	}
+	590.1.1 = {
+		death = "590.1.1"
+	}
+}
+159777 = {
+	name = "Stepanoz" #
+	dynasty = 1029127
+	religion = "orthodox"
+	culture = "kartvelian"
+	father = 159776
+	540.1.1 = {
+		birth = "540.1.1"
+	}
+	627.1.1 = {
+		death = "627.1.1"
+	}
+}
+
+159778 = {
+	name = "Adarnase" # I
+	dynasty_house = house_khosroviani
+	religion = "orthodox"
+	culture = "kartvelian"
+	father = 159773
+	580.1.1 = {
+		birth = "580.1.1"
+	}
+	642.1.1 = {
+		death = "642.1.1"
+	}
+}
+159779 = {
+	name = "Stepanoz" # II
+	dynasty_house = house_khosroviani
+	religion = "orthodox"
+	culture = "kartvelian"
+	father = 159778
+	600.1.1 = {
+		birth = "600.1.1"
+	}
+	650.1.1 = {
+		death = "650.1.1"
+	}
+}
+159780 = {
+	name = "Adarnase" # II
+	dynasty_house = house_khosroviani
+	religion = "orthodox"
+	culture = "kartvelian"
+	father = 159778
+	620.1.1 = {
+		birth = "620.1.1"
+	}
+	684.1.1 = {
+		death = "684.1.1"
+	}
+}
+
+159781 = {
+	name = "Demetre" #
+	dynasty = 1029127
+	religion = "orthodox"
+	culture = "kartvelian"
+	father = 159776
+	545.1.1 = {
+		birth = "545.1.1"
+	}
+	630.1.1 = {
+		death = "630.1.1"
+	}
+}
+159782 = {
+	name = "Levan" # name unknown
+	dynasty = 1029127
+	religion = "orthodox"
+	culture = "kartvelian"
+	father = 159777
+	570.1.1 = {
+		birth = "570.1.1"
+	}
+	650.1.1 = {
+		death = "650.1.1"
+	}
+}
+159783 = {
+	name = "Guaram" # II
+	dynasty = 1029127
+	religion = "orthodox"
+	culture = "kartvelian"
+	father = 159782
+	600.1.1 = {
+		birth = "600.1.1"
+	}
+	693.1.1 = {
+		death = "693.1.1"
+	}
+}
+159784 = {
+	name = "Stepanoz" # name unknown
+	dynasty = 1029127
+	religion = "orthodox"
+	culture = "kartvelian"
+	father = 159783
+	630.1.1 = {
+		birth = "630.1.1"
+	}
+	690.1.1 = {
+		death = "690.1.1"
+	}
+}
+159785 = {
+	name = "Guaram" # III
+	dynasty = 1029127
+	religion = "orthodox"
+	culture = "kartvelian"
+	father = 159784
+	680.1.1 = {
+		birth = "680.1.1"
+	}
+	700.1.1 = {
+		add_spouse = 159789
+	}
+	748.1.1 = {
+		death = "748.1.1"
+	}
+}
+159786 = {
+	name = "Stepanoz" # III
+	dynasty = 1029127
+	religion = "orthodox"
+	culture = "kartvelian"
+	father = 159785
+	mother = 159789
+	710.1.1 = {
+		birth = "710.1.1"
+	}
+	786.1.1 = {
+		death = "786.1.1"
+	}
+}
+159787 = {
+	name = "Adarnase" # III
+	dynasty = 1029128
+	religion = "orthodox"
+	culture = "kartvelian"
+	father = 159780
+	660.1.1 = {
+		birth = "660.1.1"
+	}
+	760.1.1 = {
+		death = "760.1.1"
+	}
+}
+159788 = {
+	name = "Nerse" # I
+	dynasty = 1029128
+	religion = "orthodox"
+	culture = "kartvelian"
+	father = 159787
+	700.1.1 = {
+		birth = "700.1.1"
+	}
+	780.1.1 = {
+		death = "780.1.1"
+	}
+}
+159789 = {
+	name = "Tamari" # unknown
+	female = yes
+	dynasty = 1029128
+	religion = "orthodox"
+	culture = "kartvelian"
+	father = 159787
+	680.1.1 = {
+		birth = "680.1.1"
+	}
+	760.1.1 = {
+		death = "760.1.1"
+	}
+}
+159790 = {
+	name = "Tamari" # unknown
+	female = yes
+	dynasty = 1029127
+	religion = "orthodox"
+	culture = "kartvelian"
+	father = 159785
+	mother = 159789
+	740.1.1 = {
+		birth = "740.1.1"
+	}
+	765.1.1 = {
+		add_spouse = 41539
+	}
+	786.1.1 = {
+		death = "786.1.1"
+	}
+}
+
+160021 = {
+	name = "Anos"
+	dynasty = 101737
+	martial = 6
+	diplomacy = 6
+	intrigue = 5
+	stewardship = 5
+	religion = "chalcedonian"
+	culture = "abkhazian"
+	460.1.1 = {
+		birth = "460.1.1"
+	}
+	530.1.1 = {
+		death = "530.1.1"
+	}
+}
+160022 = {
+	name = "Ghozar"
+	dynasty = 101737
+	martial = 6
+	diplomacy = 6
+	intrigue = 5
+	stewardship = 5
+	religion = "chalcedonian"
+	culture = "abkhazian"
+	father = 160021
+	490.1.1 = {
+		birth = "490.1.1"
+	}
+	550.1.1 = {
+		death = "550.1.1"
+	}
+}
+160023 = {
+	name = "Tiridat"
+	dynasty = 101737
+	martial = 10
+	diplomacy = 6
+	intrigue = 7
+	stewardship = 5
+	religion = "chalcedonian"
+	culture = "abkhazian"
+	father = 160022
+	510.1.1 = {
+		birth = "510.1.1"
+	}
+	580.1.1 = {
+		death = "580.1.1"
+	}
+}
+160024 = {
+	name = "Phiniktios"
+	dynasty = 101737
+	martial = 6
+	diplomacy = 6
+	intrigue = 5
+	stewardship = 5
+	religion = "chalcedonian"
+	culture = "abkhazian"
+	father = 160023
+	540.1.1 = {
+		birth = "540.1.1"
+	}
+	610.1.1 = {
+		death = "610.1.1"
+	}
+}
+160025 = {
+	name = "Barnuk"
+	dynasty = 101737
+	martial = 6
+	diplomacy = 6
+	intrigue = 5
+	stewardship = 5
+	religion = "chalcedonian"
+	culture = "kartvelian"
+	father = 160024
+	570.1.1 = {
+		birth = "570.1.1"
+	}
+	640.1.1 = {
+		death = "640.1.1"
+	}
+}
+160026 = {
+	name = "Demetre"
+	dynasty = 101737
+	martial = 6
+	diplomacy = 6
+	intrigue = 5
+	stewardship = 5
+	religion = "chalcedonian"
+	culture = "kartvelian"
+	father = 160025
+	600.1.1 = {
+		birth = "600.1.1"
+	}
+	660.1.1 = {
+		death = "660.1.1"
+	}
+}
+160027 = {
+	name = "Teodos"
+	dynasty = 101737
+	martial = 6
+	diplomacy = 6
+	intrigue = 5
+	stewardship = 5
+	religion = "chalcedonian"
+	culture = "kartvelian"
+	father = 160026
+	630.1.1 = {
+		birth = "630.1.1"
+	}
+	680.1.1 = {
+		death = "680.1.1"
+	}
+}
+160028 = {
+	name = "Konstanti"
+	dynasty = 101737
+	martial = 6
+	diplomacy = 6
+	intrigue = 5
+	stewardship = 5
+	religion = "chalcedonian"
+	culture = "kartvelian"
+	father = 160027
+	660.1.1 = {
+		birth = "660.1.1"
+	}
+	710.1.1 = {
+		death = "710.1.1"
+	}
+}
+160029 = {
+	name = "Teodor"
+	dynasty = 101737
+	martial = 6
+	diplomacy = 6
+	intrigue = 5
+	stewardship = 5
+	religion = "chalcedonian"
+	culture = "kartvelian"
+	father = 160028
+	680.1.1 = {
+		birth = "680.1.1"
+	}
+	730.1.1 = {
+		death = "730.1.1"
+	}
+}
+
+160030 = {
+	name = "Konstanti"
+	dynasty = 101737
+	martial = 6
+	diplomacy = 6
+	intrigue = 5
+	stewardship = 5
+	religion = "chalcedonian"
+	culture = "kartvelian"
+	father = 160029
+	697.1.1 = {
+		birth = "697.1.1"
+	}
+	730.1.1 = {
+		religion = "iconoclast"
+	}
+	745.1.1 = {
+		death = "745.1.1"
+	}
+}
+
+160031 = {
+	name = "Levan"
+	dynasty = 101737
+	martial = 6
+	diplomacy = 6
+	intrigue = 5
+	stewardship = 5
+	religion = "orthodox"
+	culture = "kartvelian"
+	father = 160030
+	715.1.1 = {
+		birth = "715.1.1"
+	}
+	730.1.1 = {
+		religion = "iconoclast"
+	}
+	749.1.1 = {
+		add_spouse = 145999
+	}
+	767.1.1 = {
+		death = "767.1.1"
+	}
+}
+kujite_01 = {
+	name = "Kartam" # unknown
+	dynasty = dynaty_kujite
+	religion = "armaz"
+	culture = "kartvelian"
+	30.1.1 = {
+		birth = yes
+	}
+	100.1.1 = {
+		death = yes
+	}
+}
+kujite_02 = {
+	name = "Kuji" # unknown
+	dynasty = dynaty_kujite
+	religion = "armaz"
+	culture = "kartvelian"
+	father = kujite_01
+	75.1.1 = {
+		birth = yes
+	}
+	129.1.1 = {
+		death = yes
+	}
+}
+kujite_03 = {
+	name = "Archili" # unknown
+	dynasty = dynaty_kujite
+	religion = "armaz"
+	culture = "kartvelian"
+	father = kujite_02
+	119.1.1 = {
+		birth = yes
+	}
+	187.1.1 = {
+		death = yes
+	}
+}
+kujite_04 = {
+	name = "Kartam" # unknown
+	dynasty = dynaty_kujite
+	religion = "armaz"
+	culture = "kartvelian"
+	father = kujite_03
+	148.1.1 = {
+		birth = yes
+	}
+	217.1.1 = {
+		death = yes
+	}
+}
+kujite_05 = {
+	name = "Barzabod" # unknown
+	dynasty = dynaty_kujite
+	religion = "armaz"
+	culture = "kartvelian"
+	father = kujite_04
+	180.1.1 = {
+		birth = yes
+	}
+	256.1.1 = {
+		death = yes
+	}
+}
+kujite_06 = {
+	name = "Khours" # unknown
+	dynasty = dynaty_kujite
+	religion = "armaz"
+	culture = "kartvelian"
+	father = kujite_05
+	215.1.1 = {
+		birth = yes
+	}
+	289.1.1 = {
+		death = yes
+	}
+}
+kujite_07 = {
+	name = "Kuji" # unknown
+	dynasty = dynaty_kujite
+	religion = "armaz"
+	culture = "kartvelian"
+	father = kujite_06
+	248.1.1 = {
+		birth = yes
+	}
+	312.1.1 = {
+		death = yes
+	}
+}
+kujite_08 = {
+	name = "Levan" # unknown
+	dynasty = dynaty_kujite
+	religion = "nicene"
+	culture = "kartvelian"
+	father = kujite_07
+	288.1.1 = {
+		birth = yes
+	}
+	367.1.1 = {
+		death = yes
+	}
+}
+kujite_09 = {
+	name = "Parsman" # unknown
+	dynasty = dynaty_kujite
+	religion = "nicene"
+	culture = "kartvelian"
+	father = kujite_08
+	319.1.1 = {
+		birth = yes
+	}
+	388.1.1 = {
+		death = yes
+	}
+}
+kujite_10 = {
+	name = "Barzabod" # unknown
+	dynasty = dynaty_kujite
+	religion = "nicene"
+	culture = "colchian"
+	father = kujite_09
+	348.1.1 = {
+		birth = yes
+	}
+	418.1.1 = {
+		death = yes
+	}
+}
+kujite_11 = {
+	name = "Kuji" # unknown
+	dynasty = dynaty_kujite
+	religion = "nicene"
+	culture = "colchian"
+	father = kujite_10
+	379.1.1 = {
+		birth = yes
+	}
+	438.1.1 = {
+		death = yes
+	}
+}
+kujite_12 = {
+	name = "Bakur" # unknown
+	dynasty = dynaty_kujite
+	religion = "nicene"
+	culture = "colchian"
+	father = kujite_11
+	402.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	469.1.1 = {
+		death = yes
+	}
+}
+kujite_13 = {
+	name = "Kartam" # unknown
+	dynasty = dynaty_kujite
+	religion = "nicene"
+	culture = "colchian"
+	father = kujite_11
+	425.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	491.1.1 = {
+		death = yes
+	}
+}
+## Mihranid
+mihranid_03 = {
+    name = "Khurs" #
+	dynasty_house = house_mihranid
+	religion = "mazdayasna"
+	culture = "kartvelian"
+    father = mihranid_01
+    mother = abeshura_02
+	350.1.1 = {
+		birth = yes
+	}
+	362.1.1 = {
+		religion = nicene
+	}
+	430.1.1 = {
+		death = yes
+	}
+}
+mihranid_04 = {
+    name = "Barzabod" #
+	dynasty_house = house_mihranid
+	religion = "nicene"
+	culture = "kartvelian"
+    father = mihranid_03
+	382.1.1 = {
+		birth = yes
+	}
+	399.1.1 = {
+		add_spouse = 159592
+	}
+	440.1.1 = {
+		death = yes
+	}
+}
+mihranid_06 = {
+    name = "Varaz-Bakur" #
+	dynasty_house = house_mihranid
+	religion = "nicene"
+	culture = "kartvelian"
+	father = mihranid_04
+	mother = 159592
+	400.1.1 = {
+		birth = yes
+	}
+	450.1.1 = {
+		death = yes
+	}
+}
+mihranid_07 = {
+    name = "Mihr" #
+	dynasty_house = house_mihranid
+	religion = "nicene"
+	culture = "kartvelian"
+    father = mihranid_06
+	430.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	480.1.1 = {
+		death = yes
+	}
+}
+mihranid_08 = {
+    name = "Armayel" #
+	dynasty_house = house_mihranid
+	religion = "chalcedonian"
+	culture = "kartvelian"
+    father = mihranid_07
+	451.1.1 = {
+		birth = yes
+	}
+	510.1.1 = {
+		death = yes
+	}
+}
+mihranid_09 = {
+    name = "Vard" #
+	dynasty_house = house_mihranid
+	religion = "chalcedonian"
+	culture = "kartvelian"
+    father = mihranid_08
+	478.1.1 = {
+		birth = yes
+	}
+	540.1.1 = {
+		death = yes
+	}
+}
+mihranid_10 = {
+    name = "Vardan" #
+	dynasty_house = house_mihranid
+	religion = "chalcedonian"
+	culture = "kartvelian"
+    father = mihranid_09
+	512.1.1 = {
+		birth = yes
+	}
+	570.1.1 = {
+		death = yes
+	}
+}
+mihranid_11 = {
+    name = "Vard" #
+	dynasty_house = house_mihranid
+	religion = "chalcedonian"
+	culture = "kartvelian"
+    father = mihranid_10
+	534.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+mihranid_05 = {
+    name = "Sagdukht" #
+	dynasty_house = house_mihranid
+	religion = "nicene"
+	culture = "kartvelian"
+	father = mihranid_04
+	mother = 159592
+	female = yes
+	410.1.1 = {
+		birth = yes
+	}
+	470.1.1 = {
+		death = yes
+	}
+}
+### More Mihranids
+mihranid_12 = {
+    name = "Vard" #
+	dynasty_house = house_mihranid
+	religion = "mazdayasna"
+	culture = "kartvelian"
+    father = mihranid_01
+    mother = abeshura_02
+	358.1.1 = {
+		birth = yes
+	}
+	362.1.1 = {
+		religion = nicene
+	}
+	394.1.1 = {
+		death = yes
+	}
+}
+mihranid_13 = {
+    name = "Bakur" #
+	dynasty_house = house_mihranid
+	religion = "chalcedonian"
+	culture = "kartvelian"
+    father = mihranid_12
+	378.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+mihranid_14 = {
+    name = "Arshusha" #
+	dynasty_house = house_mihranid
+	religion = "chalcedonian"
+	culture = "kartvelian"
+    father = mihranid_13
+	400.1.1 = {
+		birth = yes
+	}
+	430.1.1 = {
+		death = yes
+	}
+}
+mihranid_15 = {
+    name = "Bakur" #
+	dynasty_house = house_mihranid
+	religion = "chalcedonian"
+	culture = "kartvelian"
+    father = mihranid_14
+	416.1.1 = {
+		birth = yes
+	}
+	455.1.1 = {
+		death = yes
+	}
+}
+mihranid_16 = {
+    name = "Arshusha" #
+	dynasty_house = house_mihranid
+	religion = "chalcedonian"
+	culture = "kartvelian"
+    father = mihranid_15
+	436.1.1 = {
+		birth = yes
+	}
+	354.1.1 = {
+		add_spouse = anushvram_01
+	}
+	470.1.1 = {
+		death = yes
+	}
+}
+mihranid_17 = {
+    name = "Varsken" #
+	dynasty_house = house_mihranid
+	religion = "chalcedonian"
+	culture = "kartvelian"
+    father = mihranid_16
+	mother = anushvram_01
+	trait = deceitful
+	trait = callous
+	trait = wrathful
+	456.1.1 = {
+		birth = yes
+	}
+	474.1.1 = {
+		add_spouse = vardan_01
+	}
+	476.1.1 = {
+		religion = mazdayasna
+	}
+	482.1.1 = {
+		death = yes
+	}
+}
+mihranid_18 = {
+    name = "Arshusha" #
+	dynasty_house = house_mihranid
+	religion = "chalcedonian"
+	culture = "kartvelian"
+    father = mihranid_17
+	472.1.1 = {
+		birth = yes
+	}
+	476.1.1 = {
+		religion = mazdayasna
+	}
+	540.1.1 = {
+		death = yes
+	}
+}
+mihranid_19 = {
+    name = "Arshusha" #
+	dynasty_house = house_mihranid
+	religion = "mazdayasna"
+	culture = "kartvelian"
+    father = mihranid_18
+	523.1.1 = {
+		birth = yes
+	}
+	608.1.1 = {
+		death = yes
+	}
+}
+mihranid_20 = {
+    name = "Arshusha" #
+	dynasty_house = house_mihranid
+	religion = "mazdayasna"
+	culture = "kartvelian"
+    father = mihranid_19
+	548.1.1 = {
+		birth = yes
+	}
+	627.1.1 = {
+		death = yes
+	}
+}
+mihranid_21 = {
+    name = "Arshusha" #
+	dynasty_house = house_mihranid
+	religion = "mazdayasna"
+	culture = "kartvelian"
+	670.1.1 = {
+		birth = yes
+	}
+	748.1.1 = {
+		death = yes
+	}
+}
+### Lazika
+lazika_01 = {
+	name = "Malassas"
+	culture = laz
+	religion = "nicene"
+	100.1.1 = {
+		birth = yes
+	}
+	161.1.1 = {
+		death = yes
+	}
+}
+lazika_02 = {
+	name = "Bakur"
+	culture = laz
+	religion = "nicene"
+	130.1.1 = {
+		birth = yes
+	}
+	180.1.1 = {
+		death = yes
+	}
+}
+lazika_03 = {
+	name = "Levan"
+	dynasty = Lazi_dynasty
+	culture = laz
+	religion = "nicene"
+	340.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+lazika_04 = {
+	name = "Gubaz"
+	dynasty = Gubazian_dynasty
+	culture = laz
+	religion = "nicene"
+	trait = fickle
+	trait = honest
+	trait = humble
+	420.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	468.1.1 = {
+		death = yes
+	}
+}
+lazika_05 = {
+	name = "Damnaz"
+	dynasty = Gubazian_dynasty
+	culture = laz
+	religion = chalcedonian
+	father = lazika_04
+	trait = content
+	trait = humble
+	trait = brave
+	451.1.1 = {
+		birth = yes
+	}
+	522.1.1 = {
+		death = yes
+	}
+}
+lazika_06 = {
+	name = "Tzath"
+	dynasty = Gubazian_dynasty
+	culture = laz
+	religion = chalcedonian
+	father = lazika_05
+	trait = honest
+	trait = brave
+	trait = compassionate
+	480.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		add_spouse = lazika_10
+	}
+	545.1.1 = {
+		death = yes
+	}
+}
+lazika_07 = {
+	name = "Vano"
+	dynasty = Chkhenkleros_dynasty
+	culture = "abasgian"
+	religion = "nicene"
+	330.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+lazika_08 = {
+	name = "Parsman"
+	dynasty = Chkhenkleros_dynasty
+	culture = "laz"
+	religion = "nicene"
+	father = lazika_07
+	378.1.1 = {
+		birth = yes
+	}
+	434.1.1 = {
+		death = yes
+	}
+}
+lazika_09 = {
+	name = "Vano"
+	dynasty = Chkhenkleros_dynasty
+	culture = "laz"
+	religion = "nicene"
+	father = lazika_08
+	405.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	485.1.1 = {
+		death = yes
+	}
+}
+lazika_10 = {
+	name = "Valeriana"
+	female = yes
+	culture = "roman"
+	religion = "chalcedonian"
+	480.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	545.1.1 = {
+		death = yes
+	}
+}
+lazika_11 = {
+	name = "Gubaz"
+	dynasty = Gubazian_dynasty
+	culture = laz
+	religion = chalcedonian
+	father = lazika_06
+	mother = lazika_10
+	500.1.1 = {
+		birth = yes
+	}
+	555.10.1 = {
+		death = {
+			death_reason = death_murder
+		}
+	}
+}
+lazika_12 = {
+	name = "Tzath"
+	dynasty = Gubazian_dynasty
+	culture = laz
+	religion = chalcedonian
+	father = lazika_06
+	mother = lazika_10
+	506.1.1 = {
+		birth = yes
+	}
+	561.1.1 = {
+		death = yes
+	}
+}

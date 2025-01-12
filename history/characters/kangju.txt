@@ -1,0 +1,34 @@
+﻿#############################################################
+# 
+# KANGJU MISCELLANEOUS
+# 
+# Done by Cybrxkhan
+# 
+#############################################################
+
+# Placeholders
+kangju_01 = {
+	name = "Irkin"
+	dynasty = dynasty_kang_kangju
+	culture = "kangju"
+	religion = "khurmazta"
+	329.3.16 = {
+		birth = yes
+	}
+	387.12.14 = {
+		death = yes
+	}
+}
+kangju_02 = {
+	name = "Banda"
+	dynasty = dynasty_kang_kangju
+	culture = "kangju"
+	religion = "khurmazta"
+	father=kangju_01
+	364.9.18 = {
+		birth = yes
+	}
+	414.1.4 = {
+		death = yes
+	}
+}

@@ -1,0 +1,84 @@
+﻿
+k_cyprus = {
+}
+
+
+d_cyprus = {
+	361.1.1 = { change_development_level = 4 }
+	476.1.1 = { change_development_level = 5 }
+	532.1.1 = { change_development_level = 6 }
+	768.1.1 = { change_development_level = 7 }
+	361.1.1 = {
+		holder = cyprus_01
+		liege = k_orientis
+		de_jure_liege = k_orientis
+	}
+	# 395.1.1 = {
+	# 	holder = 9319200 
+	# }
+	476.1.1 = {
+		holder = cyprus_02 
+	}
+	532.1.1 = {
+		holder = cyprus_03
+		liege = "k_orientis"
+	}
+	632.1.1 = {
+		holder = cyprus_04
+	}
+	680.1.1 = {
+		holder = 0
+		de_jure_liege = k_cyprus
+	}
+}
+
+
+c_nicosia = {
+	361.1.1 = {
+		holder = cyprus_01
+		liege = k_orientis
+		de_jure_liege = k_orientis
+	}
+	# 395.1.1 = {
+	# 	holder = 9319200 
+	# }
+	476.1.1 = {
+		holder = cyprus_02 
+	}
+	532.1.1 = {
+		holder = cyprus_03
+	}
+	632.1.1 = {
+		holder = cyprus_04
+	}
+	768.1.1 = {
+		holder = cyprus_05
+	}
+}
+
+
+c_famagusta = {
+	361.1.1 = {
+		holder = cyprus_06
+		liege = d_cyprus
+		de_jure_liege = k_orientis
+	}
+	395.1.1 = {
+		holder = 9319200 
+	}
+	476.1.1 = {
+		holder = cyprus_02 
+	}
+	532.1.1 = {
+		holder = cyprus_03
+	}
+	632.1.1 = {
+		holder = cyprus_04
+	}
+	768.1.1 = {
+		holder = cyprus_06
+		liege = e_arabia
+		government = clan_government
+	}
+}
+

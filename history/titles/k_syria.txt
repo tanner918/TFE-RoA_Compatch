@@ -1,0 +1,1100 @@
+﻿k_syria = {
+	361.1.1 = {	change_development_level = 5 }
+	532.1.1 = {	change_development_level = 6 }
+	768.1.1 = {	change_development_level = 7 }
+}
+
+d_aleppo = {
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = k_orientis
+		liege = k_orientis
+	}
+	361.1.1 = {
+		holder = syria_01
+	}
+	395.1.1 = {
+		holder = syria_02 
+	}
+	476.1.1 = {
+		holder = syria_03
+	}
+	532.1.1 = {
+		holder = syrian_misc_04
+	}
+	782.1.1 = {
+		liege = "e_arabia"
+		holder = 146020
+	}
+}
+
+
+c_aleppo = {
+	361.1.1 = {	change_development_level = 8 }
+	532.1.1 = {	change_development_level = 9 }
+	768.1.1 = {	change_development_level = 10 }
+	
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = k_orientis
+		liege = k_orientis
+	}
+	361.1.1 = {
+		holder = syria_01
+	}
+	395.1.1 = {
+		holder = syria_02 
+	}
+	476.1.1 = {
+		holder = syria_03
+	}
+
+	733.1.1 = {
+		liege = "d_antioch"
+		holder = 146051
+	}
+	753.1.1 = {
+		holder = 146049
+	}
+	767.1.1 = {
+		holder = 146050
+	}
+}
+
+
+c_suriya = {
+	### Tanukhids
+	361.1.1 = {
+		holder = tanukhid_01
+		government = tribal_government
+		liege = e_byzantium
+	}
+	375.1.1 = {
+		holder = tanukhid_011
+	}
+	425.1.1 = {
+		holder = tanukhid_021
+	}
+	456.1.1 = {
+		holder = tanukhid_03
+	}
+	706.1.1 = {
+		liege = "d_lebanon"
+		holder = 146014
+	}
+	735.1.1 = {
+		holder = 146015
+	}
+	750.1.1 = {
+		holder = 146017
+	}
+
+}
+
+
+c_syrrusafa = {
+	### Tanukhids
+	361.1.1 = {
+		holder = tanukhid_01
+		government = tribal_government
+		liege = e_byzantium
+	}
+	375.1.1 = {
+		holder = tanukhid_011
+	}
+	425.1.1 = {
+		holder = tanukhid_021
+	}
+	456.1.1 = {
+		holder = tanukhid_03
+	}
+	706.1.1 = {
+		liege = "d_lebanon"
+		holder = 146014
+	}
+	735.1.1 = {
+		holder = 146015
+	}
+	754.1.1 = {
+		holder = 146020
+	}
+}
+
+
+c_qinnasrin = {
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = d_antioch
+		liege = k_orientis
+	}
+	361.1.1 = {
+		holder = syria_04
+	}
+	395.1.1 = {
+		holder = syria_05 
+	}
+	476.1.1 = {
+		holder = isaurian_10
+	}
+	532.1.1 = {
+		holder = cappadocia_07
+	}
+
+	706.1.1 = {
+		liege = "d_lebanon"
+		holder = 146014
+	}
+	720.1.1 = {
+		holder = 146015
+	}
+	735.1.1 = {
+		holder = 146016
+	}
+	758.1.1 = {
+		holder = 146018
+	}
+}
+
+c_samosata = {
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = d_aleppo
+		liege = k_orientis
+	}
+	361.1.1 = {
+		holder = syria_01
+	}
+	395.1.1 = {
+		holder = syria_02 
+	}
+	476.1.1 = {
+		holder = syria_03
+	}
+	637.1.1 = {
+		liege = "d_antioch"
+	}
+	733.1.1 = {
+		holder = 146051
+	}
+	759.1.1 = {
+		holder = 146052
+	}
+
+}
+
+
+c_marash = {
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = d_aleppo
+		liege = k_orientis
+	}
+	361.1.1 = {
+		holder = syria_01
+	}
+	395.1.1 = {
+		holder = syria_02 
+	}
+	476.1.1 = {
+		holder = syria_03
+	}
+	637.1.1 = {
+		liege = "d_antioch"
+	}
+	733.1.1 = {
+		holder = 146051
+	}
+	759.1.1 = {
+		holder = 146052
+	}
+
+}
+
+
+c_aintab = {
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = d_aleppo
+		liege = k_orientis
+	}
+	361.1.1 = {
+		holder = syria_01
+	}
+	395.1.1 = {
+		holder = syria_02 
+	}
+	476.1.1 = {
+		holder = syria_03
+	}
+	637.1.1 = {
+		liege = "d_antioch"
+	}
+	733.1.1 = {
+		holder = 146051
+	}
+	759.1.1 = {
+		holder = 146052
+	}
+	774.1.1 = {
+		holder = 146053
+	}
+
+}
+
+
+c_homs = {
+	361.1.1 = {	change_development_level = 8 }
+	532.1.1 = {	change_development_level = 9 }
+	768.1.1 = {	change_development_level = 10 }
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = d_palmyra
+		liege = k_orientis
+	}
+	361.1.1 = {
+		holder = syria_07
+	}
+	395.1.1 = {
+		holder = syria_08 
+	}
+	476.1.1 = {
+		holder = syria_09
+	}
+
+	706.1.1 = {
+		liege = "d_lebanon"
+		holder = 146014
+	}
+	735.1.1 = {
+		holder = 146015
+	}
+	754.1.1 = {
+		holder = 146020
+	}
+
+}
+
+d_homs = {
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = k_orientis
+		liege = k_orientis
+	}
+	361.1.1 = {
+		holder = syria_10
+	}
+	395.1.1 = {
+		holder = syria_11 
+	}
+	476.1.1 = {
+		holder = syria_12
+	}
+	532.1.1 = {
+		holder = greek_misc_002
+	}
+
+}
+c_shayzar = {
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = d_homs
+		liege = k_orientis
+	}
+	361.1.1 = {
+		holder = syria_10
+	}
+	395.1.1 = {
+		holder = syria_11 
+	}
+	476.1.1 = {
+		holder = syria_12
+	}
+	706.1.1 = {
+		liege = "d_lebanon"
+		holder = 146014
+	}
+	735.1.1 = {
+		holder = 146015
+	}
+	754.1.1 = {
+		holder = 146016
+	}
+	
+
+}
+
+
+c_hama = {
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = d_homs
+		liege = k_orientis
+	}
+	361.1.1 = {
+		holder = syria_10
+	}
+	395.1.1 = {
+		holder = syria_11 
+	}
+	476.1.1 = {
+		holder = syria_12
+	}
+	706.1.1 = {
+		liege = "d_lebanon"
+		holder = 146014
+	}
+	735.1.1 = {
+		holder = 146015
+	}
+	750.1.1 = {
+		holder = 146017
+	}
+
+}
+
+
+d_antioch = {
+	361.1.1 = {	change_development_level = 6 }
+	532.1.1 = {	change_development_level = 7 }
+	768.1.1 = {	change_development_level = 8 }
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = k_orientis
+		liege = k_orientis
+	}
+	361.1.1 = {
+		holder = syria_04
+	}
+	395.1.1 = {
+		holder = syria_05 
+	}
+	476.1.1 = {
+		holder = isaurian_10
+	}
+	532.1.1 = {
+		holder = cappadocia_07
+	}
+	637.1.1 = {
+		liege = "e_arabia"
+	}
+	733.1.1 = {
+		holder = 146051
+	}
+	758.1.1 = {
+		holder = 146049
+		liege = 0 # De facto
+	}
+	
+	
+
+}
+
+
+c_antiocheia = {
+	361.1.1 = {	change_development_level = 14 }
+	532.1.1 = {	change_development_level = 15 }
+	768.1.1 = {	change_development_level = 16 }
+	## Diocletian Division
+	200.1.1 = {
+		liege = k_orientis
+	}
+	361.1.1 = {
+		holder = syria_04
+	}
+	395.1.1 = {
+		holder = syria_05 
+	}
+	476.1.1 = {
+		holder = isaurian_10
+	}
+	532.1.1 = {
+		holder = cappadocia_07
+	}
+	733.1.1 = {
+		holder = 146051
+	}
+	758.1.1 = {
+		holder = 146049
+	}
+
+}
+
+
+c_alexandretta = {
+	## Diocletian Reforms
+	300.1.1 = {
+		liege = "k_orientis"
+		de_jure_liege = d_cilicia_secunda
+	}
+	361.1.1 = {
+		holder = cilica_11 #Theodosius
+	}
+	395.1.1 = {
+		holder = cilica_12 #Marcinus
+	}
+	467.1.1 = {
+		holder = cilica_13 #Isidorus
+	}
+	532.1.1 = {
+		holder = cilica_14
+	}
+	733.1.1 = {
+		holder = 146051
+	}
+	758.1.1 = {
+		holder = 146049
+	}
+
+}
+
+
+d_lebanon = {
+	361.1.1 = {	change_development_level = 6 }
+	532.1.1 = {	change_development_level = 7 }
+	768.1.1 = {	change_development_level = 8 }
+	
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = k_orientis
+		liege = k_orientis
+	}
+	361.1.1 = {
+		holder = syria_13
+	}
+	395.1.1 = {
+		holder = syria_14 
+	}
+	476.1.1 = {
+		holder = syria_15
+	}
+	532.1.1 = {
+		holder = syrian_misc_03
+	}
+	706.1.1 = {
+		liege = "e_arabia"
+		holder = 146014
+	}
+	735.1.1 = {
+		holder = 146015
+	}
+	754.1.1 = {
+		holder = 146016
+	}
+	
+}
+
+
+c_beirut = {
+	## Diocletian Division
+	200.1.1 = {
+		liege = k_orientis
+	}
+	361.1.1 = {
+		holder = syria_13
+	}
+	395.1.1 = {
+		holder = syria_14 
+	}
+	476.1.1 = {
+		holder = syria_15
+	}
+	750.1.1 = {
+		liege = "d_damascus"
+		holder = 146060
+	}
+	760.1.1 = {
+		holder = 146063
+	}
+
+}
+
+
+c_tripoli = {
+	361.1.1 = {	change_development_level = 10 }
+	532.1.1 = {	change_development_level = 11 }
+	768.1.1 = {	change_development_level = 12 }
+	
+	## Diocletian Division
+	200.1.1 = {
+		liege = k_orientis
+	}
+	361.1.1 = {
+		holder = syria_13
+	}
+	395.1.1 = {
+		holder = syria_14 
+	}
+	476.1.1 = {
+		holder = syria_15
+	}
+	706.1.1 = {
+		liege = "d_lebanon"
+		holder = 146014
+	}
+	735.1.1 = {
+		holder = 146015
+	}
+	754.1.1 = {
+		holder = 146016
+	}
+	
+
+}
+
+
+d_damascus = {
+	800.1.1 = {
+		change_development_level = 5
+	}
+	
+	661.2.28 = {
+		liege = "e_arabia"
+		holder = 163029
+	}
+	680.5.6 = {
+		holder = 163030
+	}
+	683.1.1 = {
+		holder = 163031
+	}
+	684.6.1 = {
+		holder = 163003
+	}
+	685.5.7 = {
+		holder = 163002
+	}
+	705.1.1 = {
+		holder = 163032
+	}
+	715.1.1 = {
+		holder = 163033
+	}
+	717.10.1 = {
+		holder = 163035
+	}
+	720.2.10 = {
+		holder = 163036
+	}
+	724.1.1 = {
+		holder = 163001
+	}
+	743.2.6 = {
+		holder = 163037
+	}
+	744.6.16 = {
+		holder = 163038
+	}
+	744.10.3 = {
+		holder = 163039
+	}
+	744.11.3 = {
+		holder = 163041
+	}
+	750.1.1 = {
+		holder = 146061
+	}
+	754.1.1 = {
+		holder = 146060
+	}
+	754.6.1 = {
+		holder = 146127
+	}
+	766.1.1 = {
+		holder = 146062
+	}
+}
+
+
+c_damascus = {
+	361.1.1 = {	change_development_level = 8 }
+	532.1.1 = {	change_development_level = 9 }
+	768.1.1 = {	change_development_level = 10 }
+
+	361.1.1 = {
+		holder = syria_07
+	}
+	395.1.1 = {
+		holder = syria_08 
+	}
+	476.1.1 = {
+		holder = syria_09
+	}
+	661.2.28 = {
+		liege = "d_damascus"
+		holder = 163029
+	}
+	680.5.6 = {
+		holder = 163030
+	}
+	683.1.1 = {
+		holder = 163031
+	}
+	684.12.1 = {
+		holder = 163003
+	}
+	685.5.7 = {
+		holder = 163002
+	}
+	705.1.1 = {
+		holder = 163032
+	}
+	715.1.1 = {
+		holder = 163033
+	}
+	717.10.1 = {
+		holder = 163035
+	}
+	720.2.10 = {
+		holder = 163036
+	}
+	724.1.1 = {
+		holder = 163001
+	}
+	743.2.6 = {
+		holder = 163037
+	}
+	744.6.16 = {
+		holder = 163038
+	}
+	744.10.3 = {
+		holder = 163039
+	}
+	744.11.3 = {
+		holder = 163041
+	}
+	750.1.1 = {
+		holder = 146061
+	}
+	754.1.1 = {
+		holder = 146060
+	}
+	754.6.1 = {
+		holder = 146127
+	}
+	766.1.1 = {
+		holder = 146062
+	}
+	775.1.1 = {
+		holder = 146063
+	}
+}
+
+
+c_juwair = {
+	361.1.1 = {	change_development_level = 3 }
+	532.1.1 = {	change_development_level = 4 }
+	768.1.1 = {	change_development_level = 5 }
+	220.1.1 = {
+		holder = ghassanid_02 ##Jafnah I
+	}
+	265.1.1 = {
+		holder = ghassanid_03 ##'Amr
+	}
+	270.1.1 = {
+		holder = ghassanid_04 ##Tha'labah
+	}
+	287.1.1 = {
+		holder = ghassanid_05 ##Al-Harith I
+	}
+	307.1.1 = {
+		holder = ghassanid_06 ##Jablah I
+	}
+	317.1.1 = {
+		holder = ghassanid_07 ##Al-Harith II
+	}
+	327.1.1 = {
+		holder = ghassanid_08 ##Al-Mundhir I
+	}
+	330.1.1 = {
+		holder = ghassanid_09 ##Al-Aiham
+	}
+	330.1.2 = {
+		holder = ghassanid_10 ##Al-Mundhir II
+	}
+	340.1.1 = {
+		holder = ghassanid_11 ##Al-Nu'man I
+	}
+	342.1.1 = {
+		holder = ghassanid_12 ##'Amr II
+	}
+	356.1.1 = {
+		holder = ghassanid_13 ##Jabalah II
+	}
+	361.1.1 = {
+		holder = ghassanid_15 ##Al-Nu'man II
+	}
+	362.1.1 = {
+		holder = ghassanid_14 ##Jafnah II
+	}
+	391.1.1 = {
+		holder = ghassanid_17 ##Al-Nu'man III
+	}
+	418.1.1 = {
+		holder = ghassanid_18 ##Jabalah III
+	}
+	434.1.1 = {
+		holder = ghassanid_20 ##Al-Nu'man IV
+	}
+	434.1.2 = {
+		holder = ghassanid_22 ##Al-Nu'man V
+	}
+	453.1.1 = {
+		holder = ghassanid_20 ##Al-Nu'man IV
+	}
+	455.1.1 = {
+		holder = ghassanid_21 ##Al-Harith III
+	}
+	456.1.1 = {
+		holder = ghassanid_24 ##Hijr
+	}
+	465.1.1 = {
+		holder = ghassanid_23 ##Al-Mundhir II
+	}
+	472.1.1 = {
+		holder = ghassanid_43 ##'Amr III
+	}
+	486.1.1 = {
+		holder = ghassanid_25 ##Al-Harith IV
+	}
+	532.1.1 = {
+		holder = syrian_misc_05
+	}
+	661.2.28 = {
+		liege = "d_damascus"
+		holder = 163029
+	}
+	680.5.6 = {
+		holder = 163030
+	}
+	683.1.1 = {
+		holder = 163031
+	}
+	684.12.1 = {
+		holder = 163003
+	}
+	685.5.7 = {
+		holder = 163002
+	}
+	705.1.1 = {
+		holder = 163032
+	}
+	715.1.1 = {
+		holder = 163033
+	}
+	717.10.1 = {
+		holder = 163035
+	}
+	720.2.10 = {
+		holder = 163036
+	}
+	724.1.1 = {
+		holder = 163001
+	}
+	743.2.6 = {
+		holder = 163037
+	}
+	744.6.16 = {
+		holder = 163038
+	}
+	744.10.3 = {
+		holder = 163039
+	}
+	744.11.3 = {
+		holder = 163041
+	}
+	750.1.1 = {
+		holder = 146061
+	}
+	754.1.1 = {
+		holder = 146060
+	}
+	754.6.1 = {
+		holder = 146127
+	}
+	766.1.1 = {
+		holder = 146062
+	}
+}
+
+
+c_baalbek = {
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = d_palmyra
+		liege = k_orientis
+	}
+	361.1.1 = {
+		holder = syria_07
+	}
+	395.1.1 = {
+		holder = syria_08 
+	}
+	476.1.1 = {
+		holder = syria_09
+	}
+	706.1.1 = {
+		liege = "d_lebanon"
+		holder = 146014
+	}
+	735.1.1 = {
+		holder = 146015
+	}
+	754.1.1 = {
+		holder = 146016
+	}
+	760.1.1 = {
+		holder = 146019
+	}
+}
+
+
+c_hauran = {
+	361.1.1 = {	change_development_level = 3 }
+	532.1.1 = {	change_development_level = 4 }
+	768.1.1 = {	change_development_level = 5 }
+	220.1.1 = {
+		holder = ghassanid_02 ##Jafnah I
+		liege = k_tanukhids
+	}
+	265.1.1 = {
+		holder = ghassanid_03 ##'Amr
+	}
+	270.1.1 = {
+		holder = ghassanid_04 ##Tha'labah
+	}
+	287.1.1 = {
+		holder = ghassanid_05 ##Al-Harith I
+	}
+	307.1.1 = {
+		holder = ghassanid_06 ##Jablah I
+	}
+	317.1.1 = {
+		holder = ghassanid_07 ##Al-Harith II
+	}
+	327.1.1 = {
+		holder = ghassanid_08 ##Al-Mundhir I
+	}
+	330.1.1 = {
+		holder = ghassanid_09 ##Al-Aiham
+	}
+	330.1.2 = {
+		holder = ghassanid_10 ##Al-Mundhir II
+	}
+	340.1.1 = {
+		holder = ghassanid_11 ##Al-Nu'man I
+	}
+	342.1.1 = {
+		holder = ghassanid_12 ##'Amr II
+	}
+	356.1.1 = {
+		holder = ghassanid_13 ##Jabalah II
+	}
+	361.1.1 = {
+		holder = ghassanid_15 ##Al-Nu'man II
+	}
+	362.1.1 = {
+		holder = ghassanid_14 ##Jafnah II
+	}
+	391.1.1 = {
+		holder = ghassanid_17 ##Al-Nu'man III
+	}
+	418.1.1 = {
+		holder = ghassanid_18 ##Jabalah III
+	}
+	434.1.1 = {
+		holder = ghassanid_20 ##Al-Nu'man IV
+	}
+	434.1.2 = {
+		holder = ghassanid_22 ##Al-Nu'man V
+	}
+	453.1.1 = {
+		holder = ghassanid_20 ##Al-Nu'man IV
+	}
+	455.1.1 = {
+		holder = ghassanid_21 ##Al-Harith III
+	}
+	456.1.1 = {
+		holder = ghassanid_24 ##Hijr
+	}
+	465.1.1 = {
+		holder = ghassanid_23 ##Al-Mundhir II
+	}
+	472.1.1 = {
+		holder = ghassanid_43 ##'Amr III
+	}
+	486.1.1 = {
+		holder = ghassanid_25 ##Al-Harith IV
+	}
+	512.1.1 = {
+		holder = ghassanid_26 ##Jabalah IV
+	}
+	528.1.1 = {
+		holder = ghassanid_27 ##Al-Harith V
+	}
+	569.1.1 = {
+		holder = ghassanid_30 ##Al-Mundhir III
+	}
+	581.1.1 = {
+		holder = ghassanid_31 ##Abu Kirab
+	}
+	582.1.1 = {
+		holder = ghassanid_32 ##Al-Nu'man VI
+	}
+	583.1.1 = {
+		holder = ghassanid_33 ##Al-Harith VI
+	}
+	583.1.1 = {
+		holder = ghassanid_34 ##Al-Nu'man VII
+	}
+	600.1.1 = {
+		holder = ghassanid_36 ##Al-Aiham
+	}
+	614.1.1 = {
+		holder = ghassanid_37 ##Al-Mundhir IV
+	}
+	616.1.1 = {
+		holder = ghassanid_38 ##Sarahil
+	}
+	618.1.1 = {
+		holder = ghassanid_39 ##'Amr IV
+	}
+	628.1.1 = {
+		holder = ghassanid_41 ##Jabalah V
+	}
+	632.1.1 = {
+		holder = ghassanid_42 ##Jabalah VI
+	}
+	733.1.1 = {
+		liege = "d_urdunn"
+		holder = 146027
+	}
+	767.1.1 = {
+		holder = 146026
+	}
+
+}
+
+
+d_palmyra = {
+	361.1.1 = {	change_development_level = 3 }
+	532.1.1 = {	change_development_level = 4 }
+	768.1.1 = { change_development_level = 5 }
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = k_orientis
+		liege = k_orientis
+	}
+	361.1.1 = {
+		holder = syria_07
+	}
+	395.1.1 = {
+		holder = syria_08 
+	}
+	476.1.1 = {
+		holder = syria_09
+	}
+	532.1.1 = {
+		holder = syrian_misc_05
+	}
+	710.1.1 = {
+		liege = "e_arabia"
+		holder = 146067
+	}
+	747.1.1 = {
+		holder = 146070
+	}
+	761.1.1 = {
+		holder = 146071
+	}
+}
+
+
+c_palmyra = {
+	361.1.1 = {
+		holder = tanukhid_01
+		government = tribal_government
+		liege = "e_byzantium"
+	}
+	375.1.1 = {
+		holder = tanukhid_011
+	}
+	425.1.1 = {
+		holder = tanukhid_021
+	}
+	456.1.1 = {
+		holder = tanukhid_03
+	}
+	706.1.1 = {
+		liege = "d_lebanon"
+		holder = 146014
+	}
+	735.1.1 = {
+		holder = 146015
+	}
+	754.1.1 = {
+		holder = 146020
+	}
+}
+
+
+c_sukhna = {
+	361.1.1 = {	change_development_level = 3 }
+	532.1.1 = {	change_development_level = 4 }
+	768.1.1 = {	change_development_level = 5 }
+	# Tanukhids
+	361.1.1 = {
+		holder = tanukhid_01
+		government = tribal_government
+		liege = "e_byzantium"
+	}
+	375.1.1 = {
+		holder = tanukhid_011
+	}
+	425.1.1 = {
+		holder = tanukhid_021
+	}
+	456.1.1 = {
+		holder = tanukhid_03
+	}
+	710.1.1 = {
+		liege = "d_palmyra"
+		holder = 146067
+	}
+	747.1.1 = {
+		holder = 188604
+	}
+	756.1.1 = {
+		holder = 146072
+	}
+}
+
+
+c_qaryatan = {
+	361.1.1 = {	change_development_level = 3 }
+	532.1.1 = {	change_development_level = 4 }
+	768.1.1 = {	change_development_level = 5 }
+	# Tanukhids
+	361.1.1 = {
+		holder = tanukhid_01
+		government = tribal_government
+		liege = "e_byzantium"
+	}
+	375.1.1 = {
+		holder = tanukhid_011
+	}
+	425.1.1 = {
+		holder = tanukhid_021
+	}
+	456.1.1 = {
+		holder = tanukhid_03
+	}
+	750.1.1 = {
+		liege = "d_damascus"
+		holder = 146060
+	}
+	760.1.1 = {
+		holder = 146063
+	}
+
+}
+

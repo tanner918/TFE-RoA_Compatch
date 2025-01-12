@@ -1,0 +1,84 @@
+# Required controller: decision_option_list_controller
+
+vbox = {
+	name = "decision_view_widget_theodoric_rome"
+	layoutpolicy_horizontal = expanding
+	layoutpolicy_vertical = expanding
+	ignoreinvisible = yes
+
+	margin_top = 10
+	spacing = 10
+
+	text_label_center = {
+		text = "TFE_THEODORIC_ROME_SECOND_STEP_BTN"
+	}
+
+	hbox = {
+		layoutpolicy_horizontal = expanding
+		layoutpolicy_vertical = expanding
+
+		scrollbox = {
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = expanding
+
+			blockoverride "scrollbox_content" {
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					datamodel = "[DecisionViewWidgetOptionList.GetEntries]"
+					spacing = 6
+
+					item = {
+						button_standard = {
+							size = { 250 380 }
+							margin = { 10 10 }
+					
+							onclick = "[DecisionViewWidgetOptionList.OnSelect(Entry.Self)]"
+							enabled = "[Entry.IsEnabled]"
+							tooltip = "[Entry.GetTooltip]"
+							down = "[Entry.IsSelected]"
+
+							icon = {
+								texture = "[Entry.GetIcon]"
+								parentanchor = center
+								alpha = 0.6
+								size = { 180 300 }
+								using = Mask_Rough_Edges
+								modify_texture = {
+									texture = "gfx/interface/window_lifestyles/lifestyles_illustration_mask.dds"
+									blend_mode = alphamultiply
+									spriteType = Corneredtiled
+									spriteborder = { 10 10 }
+								}
+							}
+
+							text_single = {
+								name = "option_type"
+								text = "[Entry.GetName]"
+								max_width = 220
+								parentanchor = top|hcenter
+								margin_top = 8
+								fontsize = 24
+								using = Font_Type_Flavor
+							}
+							
+							text_multi = {
+								name = "option_desc"
+								text = "[Entry.GetDescription]"
+								size = { 100% 100 }
+								parentanchor = bottom|hcenter
+								margin = { 10 10 }
+								default_format = "#emp"
+								background = {
+									using = Background_Area_Dark
+									alpha = 0.6
+								}
+							}
+						}
+					}
+				}
+			}
+
+			blockoverride "scrollbox_background_fade" {}
+		}
+	}
+}

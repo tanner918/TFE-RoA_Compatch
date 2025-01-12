@@ -1,0 +1,177 @@
+﻿# We can use these modifiers for adding specific headgear to historical and vanity characters
+
+headgear_scripted_characters = {
+
+    usage = game
+    selection_behavior = max
+    priority = 10
+
+    no_headgear = { # No headgear
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = fp2_scripted_headgear_01
+                value = 0.1 # For the randomness to work correctly
+            }
+        }   
+        weight = {
+            base = 0
+		modifier = {
+			add = 50
+			exists = this
+			exists = character:73857
+                	this = character:73857
+		}
+		modifier = {
+			add = 50
+			exists = this
+			exists = character:108501
+              	  	this = character:108501
+		}
+            	modifier = {
+               	 	add = 999
+                	exists = this
+                	exists = character:900062 #Stilicho
+                	this = character:900062 #Stilicho
+		}
+            	modifier = {
+               	 	add = 999
+                	exists = this
+                	exists = character:nuvelan_11 #Gildo
+                	this = character:nuvelan_11 #Gildo
+		}
+		modifier = {
+                	add = 999
+                	exists = this
+                	exists = character:belisarius_001 #Belisarius
+                	this = character:belisarius_001 #Belisarius
+		}
+          }
+    }
+
+    male_headgear_secular_fp2_iberian_muslim_common_01_low = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = fp2_scripted_headgear_01
+                value = 0.5  # For the randomness to work correctly
+            }
+        }   
+        weight = {
+			base = 0
+			modifier = {
+				add = 50
+				exists = this
+				exists = character:73813 # Musa
+                this = character:73813
+			}
+		}
+    	}
+
+    	male_headgear_secular_fp2_iberian_muslim_high_nobility_01 = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = headgear
+                template = fp2_scripted_headgear_01
+                value = 1 # For the randomness to work correctly
+            }
+        }   
+        weight = {
+			base = 0
+			modifier = {
+				add = 50
+				exists = this
+				exists = character:danis0005 # Adanis
+                this = character:danis0005
+			}
+		}
+	}
+	male_headgear_secular_roman_pannonian_hat_high_nobility = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = roman_pannonian_hat_high
+				value = 1
+			}
+		}
+		weight = {
+			base = 0
+            			modifier = {
+               	 		add = 999
+                		exists = this
+                		exists = character:nepos_02 #Nepos
+                		this = character:nepos_02 #Nepos
+			}
+		}
+		weight = {
+			base = 0
+            			modifier = {
+               	 		add = 999
+                		exists = this
+                		exists = character:syagri_06 #Syagrius
+                		this = character:syagri_06 #Syagrius
+			}
+		}
+	}
+	male_headgear_secular_western_high_nobility = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = western_high_nobility
+				value = 1
+			}
+		}
+		weight = {
+			base = 0
+				modifier = {
+                		add = 999
+                		exists = this
+                		exists = character:900016 #Faramund
+                		this = character:900016 #Faramund
+			}
+		}
+	}
+	male_headgear_secular_roman_diadem = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = roman_diadem 
+				value = 1
+			}
+		}
+		weight = {
+			base = 0
+				modifier = {
+                		add = 999
+                		exists = this
+                		exists = character:70515  #Zeno
+                		this = character:70515  #Zeno
+			}
+		}
+	}
+	male_headgear_secular_sassanid_crown = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = headgear
+				template = ep1_sassanid_crown
+				value = 1
+			}
+		}
+		weight = {
+			base = 0
+				modifier = {
+                		add = 999
+                		exists = this
+                		exists = character:180628 #Khosrau
+                		this = character:180628 #Khosrau
+			}
+		}
+	}
+}

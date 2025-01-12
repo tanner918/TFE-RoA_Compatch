@@ -1,0 +1,114 @@
+pdxmesh = {
+	name = "roman_tabletop_mesh"
+	file = "roman_tabletop.mesh"
+
+	cull_distance = 50000
+
+	meshsettings = {
+		name = "roman_table"
+		index = 0
+		texture_diffuse = "roman_table_diffuse.dds"
+		texture_normal = "roman_table_normal.dds"
+		texture_specular = "roman_table_properties.dds"
+		shader = "standard_map_decoration"
+		shader_file = "gfx/FX/pdxmesh.shader"
+		
+		texture = { file = "detail_marble_01.dds" index = 6 }
+		additional_shader_defines = {
+			"DETAIL_TILING float4( 4.0f, 4.0f, 0.0f, 0.0f )"
+			"DETAIL_ROUGHNESS_STRENGTH float(0.1f)"
+			"DETAIL_NORMAL_STRENGTH float(0.1f)"
+		}
+	}
+	meshsettings = {
+		name = "roman_table_linen"
+		index = 0
+		texture_diffuse = "roman_table_diffuse.dds"
+		texture_normal = "roman_table_normal.dds"
+		texture_specular = "roman_table_properties.dds"
+		shader = "standard_map_decoration"
+		shader_file = "gfx/FX/pdxmesh.shader"
+		
+		texture = { file = "detail_linen_01.dds" index = 6 }
+		additional_shader_defines = {
+			"DETAIL_TILING float4( 1.0f, 1.0f, 0.0f, 0.0f )"
+			"DETAIL_ROUGHNESS_STRENGTH float(0.15f)"
+			"DETAIL_NORMAL_STRENGTH float(0.15f)"
+		}
+	}
+	meshsettings = {
+		name = "floor_shadowplane"
+		index = 0
+		texture_diffuse = "ep1_materials_mediterranean_floor_tiles_01_a_g1_diffuse.dds"
+		texture_normal = "ep1_materials_mediterranean_floor_tiles_01_a_g1_normal.dds"
+		texture_specular = "ep1_materials_mediterranean_floor_tiles_01_a_g1_properties.dds"
+		shader = "map_floor"
+		shader_file = "gfx/FX/pdxmesh.shader"
+		
+		texture = { file = "roman_floor_lighting_diffuse.dds" index = 7 }
+		additional_shader_defines = {
+			"BAKED_LIGHTING"
+			"LIGHTING_DECAL"
+			"TILING float4 (4, 4, 0, 0)"
+		}
+	}
+	
+	meshsettings = {
+		name = "ep1_western_brazier_01_a_logs"
+		index = 0
+		texture_diffuse = "fireplace_logs_diffuse.dds"
+		texture_normal = "fireplace_logs_normal.dds"
+		texture_specular = "fireplace_logs_properties.dds"
+		shader = "standard_map_decoration"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "ep1_western_brazier_01_a"
+		index = 0
+		texture_diffuse = "ep1_western_candle_brazier_01_a_diffuse.dds"
+		texture_normal = "ep1_western_candle_brazier_01_a_normal.dds"
+		texture_specular = "ep1_western_candle_brazier_01_a_properties.dds"
+		shader = "standard_map_decoration"
+		shader_file = "gfx/FX/pdxmesh.shader"
+		texture = { file = "detail_metal_01.dds" index = 6 }
+		additional_shader_defines = {
+			"DETAIL_TILING float4( 2.0f, 2.0f, 0.0f, 0.0f )"            
+			"DETAIL_ROUGHNESS_STRENGTH float(1.0f)"
+			"DETAIL_NORMAL_STRENGTH float(1.0f)"
+		}
+	}
+}
+
+entity = {
+	name = "roman_tabletop_entity"
+	pdxmesh = "roman_tabletop_mesh"
+#	attach = { "Brazierflame_01" = "flame_01_entity" }
+#	attach = { "Brazierflame_01" = "candle_glow" }
+#	attach = { "Brazierflame_01" = "roco_fireplace" }
+}
+	
+	
+#	default_state = "idle"
+#	state = {
+#		name = "idle"
+#		state_time = 10
+#		start_event = { node = Brazierflame_01 particle = "roco_fireplace" trigger_once = yes }
+#		start_event = { trigger_once = yes sound = { soundeffect = "event:/DLC/EP1/SFX/Ambience/3D/Objects/courtroom/brazier" } }
+#	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

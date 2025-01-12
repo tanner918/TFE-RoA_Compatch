@@ -1,0 +1,40 @@
+﻿# Hunnic rule
+k_ruthenia = {
+	385.1.1 = {
+		holder = 990004 #Karaton
+		liege = e_hunnic_empire
+	}
+	453.1.1 = {
+		de_jure_liege = e_wendish_empire
+	}
+}
+k_galicia-volhynia = {
+	385.1.1 = {
+		holder = 999701
+		liege = "e_hunnic_empire"
+		government = nomadic_government
+	}
+}
+
+d_kiev = {
+	385.1.1 = {
+		holder = 990004 #Karaton
+	}
+}
+c_kiev = {
+	385.1.1 = {
+		holder = 990004 #Karaton
+	}
+}
+d_novosil = {
+	385.1.1 = {
+		holder = 1100015 #Fictional
+		liege = k_ruthenia
+	}
+}
+c_novosil = {
+	385.1.1 = {
+		holder = 1100015 #Fictional
+		liege = k_ruthenia
+	}
+}

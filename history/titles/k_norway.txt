@@ -1,0 +1,969 @@
+﻿
+k_norway = {
+	20.1.1 = {
+		change_development_level = 2
+	}
+}
+
+
+c_raniriki = {
+	21.1.1 = {
+		change_development_level = 2
+	}
+	359.1.1 = {
+		holder = dagling_01 #Dag The Great
+	}
+	370.1.1 = {
+		holder = dagling_03
+	}
+	395.1.1 = {
+		holder = dagling_07
+	}
+	453.1.1 = {
+		holder = dagling_08
+		liege = d_vastergotland
+	}
+	490.1.1 = {
+		holder = dagling_09
+		liege = d_vastergotland
+	}
+	520.1.1 = {
+		holder = bronding_2
+		liege = d_vastergotland
+	}
+	760.1.1 = {
+		holder = 194009
+		government = tribal_government
+	}
+}
+
+
+c_vingulmork = {
+	361.1.1 = {	change_development_level = 3 }
+
+	359.1.1 = {
+		holder = hoengs_05
+	}
+	381.1.1 = {
+		holder = dagling_03
+	}
+	395.1.1 = {
+		holder = dagling_07
+	}
+	453.1.1 = {
+		holder = nording_15
+	}
+	476.1.1 = {
+		holder = nording_22
+		liege = d_viken
+	}
+	490.1.1 = {
+		holder = nording_38
+	}
+	511.1.1 = {
+		holder = nording_54
+		liege = d_viken
+	}
+	730.1.1 = {
+		holder = 194009
+		government = tribal_government
+	}
+
+}
+
+c_telemark = {
+	21.1.1 = {
+		change_development_level = 2
+	}
+	
+	355.1.1 = {
+		holder = sigtyrg_01
+		government = tribal_government
+	}
+	380.1.1 = {
+		holder = sigtyrg_02
+	}
+	420.1.1 = {
+		holder = nording_01
+	}
+	443.1.1 = {
+		holder = nording_16
+	}
+	473.1.1 = {
+		holder = nording_23
+		liege = d_viken
+	}
+	493.1.1 = {
+		holder = nording_39
+	}
+	511.1.1 = {
+		holder = nording_43
+	}
+	520.1.1 = {
+		holder = nording_59
+	}
+	755.1.1 = {
+		holder = 194023
+		#liege = d_sjaelland
+		government = tribal_government
+	}
+}
+
+d_viken = {
+	476.1.1 = {
+		holder = nording_24
+		government = tribal_government
+	}
+	520.1.1 = {
+		holder = nording_59
+	}
+}
+
+c_vestfold = {
+	361.1.1 = {	change_development_level = 3 }
+	
+	355.1.1 = {
+		holder = sigtyrg_01
+		government = tribal_government
+	}
+	380.1.1 = {
+		holder = sigtyrg_02
+	}
+	420.1.1 = {
+		holder = nording_01
+	}
+	443.1.1 = {
+		holder = nording_17
+	}
+	476.1.1 = {
+		holder = nording_24
+	}
+	520.1.1 = {
+		holder = nording_59
+	}
+	750.1.1 = {
+		holder = 194016
+		liege = d_sjaelland
+		government = tribal_government
+	}
+}
+
+d_agder = {
+	## Chiefdom of Agder
+	457.1.1 = {
+		holder = nording_27
+		government = tribal_government
+	}
+	500.1.1 = {
+		holder = nording_47
+	}
+	533.1.1 = {
+		holder = nording_59
+	}
+}
+
+c_nedenes = {
+	21.1.1 = {
+		change_development_level = 2
+	}
+	
+	361.1.1 = {
+		holder = jutland_01
+		government = tribal_government
+	}
+	400.1.1 = {
+		holder = fornjot_04
+	}
+	415.1.1 = {
+		holder = nording_02
+	}
+	444.1.1 = {
+		holder = nording_06
+	}
+	457.1.1 = {
+		holder = nording_28
+		liege = d_agder
+	}
+	500.1.1 = {
+		holder = nording_47
+	}
+	760.1.1 = {
+		holder = 194023
+		#liege = d_sjaelland
+		government = tribal_government
+	}
+}
+
+
+c_agdeside = {
+	21.1.1 = {
+		change_development_level = 2
+	}
+	
+	361.1.1 = {
+		holder = jutland_01
+		government = tribal_government
+	}
+	400.1.1 = {
+		holder = fornjot_04
+	}
+	415.1.1 = {
+		holder = nording_02
+	}
+	444.1.1 = {
+		holder = nording_06
+	}
+	457.1.1 = {
+		holder = nording_27
+	}
+	494.1.1 = {
+		holder = nording_47
+	}
+	760.1.1 = {
+		holder = 194023
+		#liege = d_sjaelland
+		government = tribal_government
+	}
+}
+
+
+c_hordalandi = {
+	21.1.1 = {
+		change_development_level = 2
+	}
+	
+	361.1.1 = {
+		holder = jutland_02
+		government = tribal_government
+	}
+	400.1.1 = {
+		holder = fornjot_04
+	}
+	415.1.1 = {
+		holder = nording_01
+	}
+	443.1.1 = {
+		holder = nording_04
+	}
+	460.1.1 = {
+		holder = nording_25
+	}
+	489.1.1 = {
+		holder = nording_45
+	}
+	520.1.1 = {
+		holder = nording_60
+	}
+	764.1.1 = {
+		holder = 194012
+		government = tribal_government
+	}
+}
+
+c_rogalandi = {
+
+	361.1.1 = {
+		holder = jutland_07
+		government = tribal_government
+	}
+	400.1.1 = {
+		holder = fornjot_04
+	}
+	415.1.1 = {
+		holder = nording_02
+	}
+	444.1.1 = {
+		holder = nording_05
+	}
+	463.1.1 = {
+		holder = nording_26
+		liege = d_agder
+	}
+	487.1.1 = {
+		holder = nording_46
+	}
+	500.1.1 = {
+		holder = nording_44
+	}
+	519.1.1 = {
+		holder = nording_58
+		liege = d_vestlandi
+	}
+	760.1.1 = {
+		holder = 194008
+		government = tribal_government
+	}
+}
+
+
+d_vestlandi = {
+	460.1.1 = {
+		holder = nording_25
+		government = tribal_government
+	}
+	530.1.1 = {
+		holder = nording_60
+	}
+}
+
+c_sogn = {
+	21.1.1 = {
+		change_development_level = 2
+	}
+	361.1.1 = {
+		holder = jutland_02
+		government = tribal_government
+	}
+	400.1.1 = {
+		holder = fornjot_04
+	}
+	415.1.1 = {
+		holder = nording_01
+	}
+	443.1.1 = {
+		holder = nording_07
+	}
+	466.1.1 = {
+		holder = nording_29
+		liege = d_vestlandi
+	}
+	490.1.1 = {
+		holder = nording_48
+	}
+	507.1.1 = {
+		holder = nording_40
+	}
+	515.1.1 = {
+		holder = nording_55
+		liege = d_vestlandi
+	}
+	764.1.1 = {
+		holder = 194012
+		government = tribal_government
+	}
+
+}
+
+d_trandalog = {
+	473.1.1 = {
+		holder = nording_21
+		government = tribal_government
+	}
+	532.1.1 = {
+		holder = nording_09
+	}
+}
+c_trandheim = {
+	21.1.1 = {
+		change_development_level = 2
+	}
+	347.1.1 = {
+		holder = hoengs_01 #Ketill
+		government = tribal_government
+	}
+	378.1.1 = {
+		holder = hoengs_02 #Grimr
+	}
+	410.1.1 = {
+		holder = fornjot_04
+	}
+	415.1.1 = {
+		holder = nording_03
+	}
+	443.1.1 = {
+		holder = nording_14
+	}
+	473.1.1 = {
+		holder = nording_37
+		liege = d_trandalog
+	}
+	485.1.1 = {
+		holder = nording_33
+	}
+	491.1.1 = {
+		holder = nording_50
+	}
+	515.1.1 = {
+		holder = nording_09
+	}
+	760.1.1 = {
+		holder = 194013
+		government = tribal_government
+	}
+}
+
+c_norwegian_more = {
+	21.1.1 = {
+		change_development_level = 2
+	}
+	361.1.1 = {
+		holder = jutland_08
+		government = tribal_government
+	}
+	400.1.1 = {
+		holder = fornjot_04
+	}
+	415.1.1 = {
+		holder = nording_01
+	}
+	443.1.1 = {
+		holder = nording_10
+	}
+	474.1.1 = {
+		holder = nording_33
+		liege = d_trandalog
+	}
+	491.1.1 = {
+		holder = nording_50
+	}
+	515.1.1 = {
+		holder = nording_09
+	}
+	760.1.1 = {
+		holder = 194013
+		government = tribal_government
+	}
+
+}
+
+
+c_firdafylki = {
+	21.1.1 = {
+		change_development_level = 2
+	}
+	
+	361.1.1 = {
+		holder = jutland_02
+		government = tribal_government
+	}
+	400.1.1 = {
+		holder = fornjot_04
+	}
+	415.1.1 = {
+		holder = nording_01
+	}
+	443.1.1 = {
+		holder = nording_08
+	}
+	470.1.1 = {
+		holder = nording_30
+		liege = d_vestlandi
+	}
+	488.1.1 = {
+		holder = nording_31
+	}
+	492.1.1 = {
+		holder = nording_49
+	}
+	517.1.1 = {
+		holder = nording_61
+		liege = d_trandalog
+	}
+	764.1.1 = {
+		holder = 194012
+		government = tribal_government
+	}
+
+}
+
+
+d_dalir = {
+
+	467.1.1 = {
+		holder = nording_18
+		government = tribal_government
+	}
+	488.1.1 = {
+		holder = nording_34
+	}
+	501.1.1 = {
+		holder = nording_53
+	}
+	760.1.1 = {
+		holder = 194014
+		government = tribal_government
+	}
+
+}
+
+
+c_hedmork = {
+	21.1.1 = {
+		change_development_level = 2
+	}
+	
+	359.1.1 = {
+		holder = hoengs_05
+		government = tribal_government
+	}
+	385.1.1 = {
+		holder = jutland_12
+	}
+	405.1.1 = {
+		holder = fornjot_04
+	}
+	415.1.1 = {
+		holder = nording_01
+	}
+	443.1.1 = {
+		holder = nording_12
+	}
+	466.1.1 = {
+		holder = nording_19
+		liege = d_dalir
+	}
+	488.1.1 = {
+		holder = nording_42
+	}
+	512.1.1 = {
+		holder = nording_62
+	}
+	760.1.1 = {
+		holder = 194014
+		government = tribal_government
+	}
+}
+
+
+c_gudbrandsdalir = {
+
+	361.1.1 = {
+		holder = jutland_11
+		government = tribal_government
+	}
+	385.1.1 = {
+		holder = jutland_12
+	}
+	405.1.1 = {
+		holder = fornjot_04
+	}
+	415.1.1 = {
+		holder = nording_01
+	}
+	443.1.1 = {
+		holder = nording_11
+	}
+	467.1.1 = {
+		holder = nording_18
+	}
+	488.1.1 = {
+		holder = nording_34
+	}
+	501.1.1 = {
+		holder = nording_52
+		liege = d_dalir
+	}
+	760.1.1 = {
+		holder = 194014
+		government = tribal_government
+	}
+}
+
+
+c_eystridalir = {
+
+	361.1.1 = {
+		holder = jutland_11
+		government = tribal_government
+	}
+	385.1.1 = {
+		holder = jutland_12
+	}
+	405.1.1 = {
+		holder = fornjot_04
+	}
+	415.1.1 = {
+		holder = nording_01
+	}
+	443.1.1 = {
+		holder = nording_11
+	}
+	467.1.1 = {
+		holder = nording_18
+	}
+	488.1.1 = {
+		holder = nording_35
+	}
+	507.1.1 = {
+		holder = nording_53
+	}
+	760.1.1 = {
+		holder = 194014
+		government = tribal_government
+	}
+
+}
+
+
+c_gauldala = {
+	361.1.1 = {
+		holder = jutland_11
+		government = tribal_government
+	}
+	385.1.1 = {
+		holder = fornjot_04
+	}
+	415.1.1 = {
+		holder = nording_03
+	}
+	443.1.1 = {
+		holder = nording_14
+	}
+	473.1.1 = {
+		holder = nording_21
+	}
+	488.1.1 = {
+		holder = nording_52
+		liege = d_dalir
+	}
+	760.1.1 = {
+		holder = 194013
+		government = tribal_government
+	}
+}
+
+
+d_halogaland = {
+	160.1.1 = {
+		holder = halogaland_01 # Saemingr
+		government = tribal_government
+	}
+	202.1.1 = {
+		holder = halogaland_02 # Godhjalt
+	}
+	221.1.1 = {
+		holder = halogaland_05 # Sverdhjalt
+	}
+	239.1.1 = {
+		holder = halogaland_06 # Hoddbrodd
+	}
+	272.1.1 = {
+		holder = halogaland_07 # Himileig
+	}
+	303.1.1 = {
+		holder = halogaland_08 # Vedurhals
+	}
+	318.1.1 = {
+		holder = halogaland_09 # Haavard
+	}
+	342.1.1 = {
+		holder = halogaland_10 # Godgest
+	}
+	371.1.1 = {
+		holder = halogaland_11 # Hemgest
+	}
+	395.1.1 = {
+		holder = halogaland_03 # Gudlog
+	}
+	430.1.1 = {
+		holder = halogaland_04 # Gylaug
+	}
+	475.1.1 = {
+		holder = halogaland_12 # Mundil
+	}
+	515.1.1 = {
+		holder = halogaland_13 # Herse
+	}
+	532.1.1 = {
+		holder = halogaland_14 # Brand
+	}
+	582.1.1 = {
+		holder = halogaland_15 # Brynjulf
+	}
+	605.1.1 = {
+		holder = halogaland_16 # Baard
+	}
+	646.1.1 = {
+		holder = halogaland_17 # Hergils
+	}
+	692.1.1 = {
+		holder = halogaland_18 # Haavard
+	}
+	714.1.1 = {
+		holder = halogaland_19 # Harald
+	}
+}
+
+
+c_vastvag = {
+	160.1.1 = {
+		holder = halogaland_01 # Saemingr
+		government = tribal_government
+	}
+	202.1.1 = {
+		holder = halogaland_02 # Godhjalt
+	}
+	221.1.1 = {
+		holder = halogaland_05 # Sverdhjalt
+	}
+	239.1.1 = {
+		holder = halogaland_06 # Hoddbrodd
+	}
+	272.1.1 = {
+		holder = halogaland_07 # Himileig
+	}
+	303.1.1 = {
+		holder = halogaland_08 # Vedurhals
+	}
+	318.1.1 = {
+		holder = halogaland_09 # Haavard
+	}
+	342.1.1 = {
+		holder = halogaland_10 # Godgest
+	}
+	371.1.1 = {
+		holder = halogaland_11 # Hemgest
+	}
+	395.1.1 = {
+		holder = halogaland_03 # Gudlog
+	}
+	430.1.1 = {
+		holder = halogaland_04 # Gylaug
+	}
+	475.1.1 = {
+		holder = halogaland_12 # Mundil
+	}
+	515.1.1 = {
+		holder = halogaland_13 # Herse
+	}
+	532.1.1 = {
+		holder = halogaland_14 # Brand
+	}
+	582.1.1 = {
+		holder = halogaland_15 # Brynjulf
+	}
+	605.1.1 = {
+		holder = halogaland_16 # Baard
+	}
+	646.1.1 = {
+		holder = halogaland_17 # Hergils
+	}
+	692.1.1 = {
+		holder = halogaland_18 # Haavard
+	}
+	714.1.1 = {
+		holder = halogaland_19 # Harald
+	}
+	760.1.1 = {
+		holder = 194018
+		government = tribal_government
+	}
+
+}
+
+
+c_bothin = {
+	160.1.1 = {
+		holder = halogaland_01 # Saemingr
+		government = tribal_government
+	}
+	202.1.1 = {
+		holder = halogaland_02 # Godhjalt
+	}
+	221.1.1 = {
+		holder = halogaland_05 # Sverdhjalt
+	}
+	239.1.1 = {
+		holder = halogaland_06 # Hoddbrodd
+	}
+	272.1.1 = {
+		holder = halogaland_07 # Himileig
+	}
+	303.1.1 = {
+		holder = halogaland_08 # Vedurhals
+	}
+	318.1.1 = {
+		holder = halogaland_09 # Haavard
+	}
+	342.1.1 = {
+		holder = halogaland_10 # Godgest
+	}
+	371.1.1 = {
+		holder = halogaland_11 # Hemgest
+	}
+	395.1.1 = {
+		holder = halogaland_03 # Gudlog
+	}
+	430.1.1 = {
+		holder = halogaland_04 # Gylaug
+	}
+	475.1.1 = {
+		holder = halogaland_12 # Mundil
+	}
+	515.1.1 = {
+		holder = halogaland_13 # Herse
+	}
+	532.1.1 = {
+		holder = halogaland_14 # Brand
+	}
+	582.1.1 = {
+		holder = halogaland_15 # Brynjulf
+	}
+	605.1.1 = {
+		holder = halogaland_16 # Baard
+	}
+	646.1.1 = {
+		holder = halogaland_17 # Hergils
+	}
+	692.1.1 = {
+		holder = halogaland_18 # Haavard
+	}
+	714.1.1 = {
+		holder = halogaland_19 # Harald
+	}
+	760.1.1 = {
+		holder = 194018
+		government = tribal_government
+	}
+
+}
+
+
+c_namdalfylki = {
+	347.1.1 = {
+		holder = hoengs_01
+		government = tribal_government
+	}
+	378.1.1 = {
+		holder = hoengs_02
+	}
+	410.1.1 = {
+		holder = halogaland_03 # Gudlog
+	}
+	430.1.1 = {
+		holder = halogaland_04 # Gylaug
+	}
+	475.1.1 = {
+		holder = halogaland_12 # Mundil
+	}
+	515.1.1 = {
+		holder = halogaland_13 # Herse
+	}
+	532.1.1 = {
+		holder = halogaland_14 # Brand
+	}
+	582.1.1 = {
+		holder = halogaland_15 # Brynjulf
+	}
+	605.1.1 = {
+		holder = halogaland_16 # Baard
+	}
+	646.1.1 = {
+		holder = halogaland_17 # Hergils
+	}
+	692.1.1 = {
+		holder = halogaland_18 # Haavard
+	}
+	714.1.1 = {
+		holder = halogaland_19 # Harald
+	}
+	760.1.1 = {
+		holder = 194013
+		government = tribal_government
+	}
+}
+
+d_jamtland = {
+	361.1.1 = {
+		holder = finnmark_01
+		government = tribal_government
+	}
+	476.1.1 = {
+		holder = sapmi_20
+	}
+}
+
+
+c_jamtfir = {
+	361.1.1 = {
+		holder = finnmark_01
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = sapmi_22
+	}
+	476.1.1 = {
+		holder = sapmi_20
+	}
+	530.1.1 = {
+		holder = sapmi_23
+	}
+	760.1.1 = {
+		holder = 194021
+		government = tribal_government
+	}
+
+}
+
+
+c_morarna = {
+	361.1.1 = {
+		holder = finnmark_01
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = sapmi_22
+	}
+	476.1.1 = {
+		holder = sapmi_20
+	}
+	530.1.1 = {
+		holder = sapmi_23
+	}
+	760.1.1 = {
+		holder = 194021
+		government = tribal_government
+	}
+
+}
+
+
+c_helgum = {
+	361.1.1 = {
+		holder = finnmark_01
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = sapmi_22
+	}
+	476.1.1 = {
+		holder = sapmi_20
+	}
+	530.1.1 = {
+		holder = sapmi_23
+	}
+	760.1.1 = {
+		holder = 194021
+		government = tribal_government
+	}
+
+}
+
+
+c_harjadalen = {
+	280.1.1 = {
+		holder = frosti_01
+		government = tribal_government
+	}
+	315.1.1 = {
+		holder = frosti_03
+	}
+	343.1.1 = {
+		holder = fornjot_01
+	}
+	361.1.1 = {
+		holder = finnmark_01
+	}
+	385.1.1 = {
+		holder = fornjot_04
+	}
+	530.1.1 = {
+		holder = sapmi_23
+	}
+	760.1.1 = {
+		holder = 194021
+		government = tribal_government
+	}
+
+}
+

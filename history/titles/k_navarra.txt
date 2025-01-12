@@ -1,0 +1,173 @@
+﻿
+k_navarra = {
+	361.1.1 = { change_development_level = 3 }
+	476.1.1 = { change_development_level = 4 }
+	532.1.1 = { change_development_level = 5 }
+	632.1.1 = { change_development_level = 6 }
+	768.1.1 = { change_development_level = 7 }
+	de_jure_liege = e_spain
+}
+
+
+d_navarra = {
+	476.1.1 = {
+		de_jure_liege = k_tarraconensis
+	}
+}
+
+
+c_navarra = {
+	361.1.1 = { change_development_level = 3 }
+	476.1.1 = { change_development_level = 4 }
+	532.1.1 = { change_development_level = 5 }
+	632.1.1 = { change_development_level = 6 }
+	768.1.1 = { change_development_level = 7 }
+	
+	361.1.1 = {
+		holder = vasconia_10
+		liege = d_aragon
+		government = tribal_government
+		de_jure_liege = d_aragon
+	}
+	395.1.1 = {
+		holder = vasconia_11
+	}
+	476.1.1 = {
+		holder = vasconia_14
+		liege = 0
+		de_jure_liege = d_navarra
+	}
+	532.1.1 = {
+		holder = vasconian_16
+		liege = 0
+	}
+	766.1.1 = {
+		holder = 200042 # Hakam Hakamid
+		liege = k_andalusia
+	}
+}
+
+
+c_najera = {
+	361.1.1 = {
+		holder = vasconia_12
+		liege = d_aragon
+		government = tribal_government
+		de_jure_liege = d_aragon
+	}
+	395.1.1 = {
+		holder = vasconia_13
+	}
+	476.1.1 = {
+		holder = vasconia_15
+		liege = 0
+		de_jure_liege = d_navarra
+	}
+	532.1.1 = {
+		holder = vasconian_marcher_01
+		liege = k_visigoths
+	}
+	705.1.1 = {
+		holder = 73808 # Qasi banu Qasi
+		liege = k_andalusia
+		government = clan_government
+	}
+	723.1.1 = {
+		holder = 73809 # Fortun ibn Qasi banu Qasi
+	}
+	768.1.1 = {
+		holder = 73810 # Musa ibn Fortun banu Qasi
+	}
+}
+
+
+c_tudela = {
+	361.1.1 = {
+		holder = vasconia_12
+		liege = d_aragon
+		government = tribal_government
+		de_jure_liege = d_aragon
+	}
+	395.1.1 = {
+		holder = vasconia_13
+	}
+	476.1.1 = {
+		holder = vasconia_15
+		liege = 0
+		de_jure_liege = d_navarra
+	}
+	532.1.1 = {
+		holder = vasconian_marcher_01
+		liege = k_visigoths
+	}
+	766.1.1 = {
+		holder = 200042 # Hakam Hakamid
+		liege = k_andalusia
+	}
+}
+
+
+d_viscaya = {
+	361.1.1 = { change_development_level = 2 }
+	476.1.1 = { change_development_level = 3 }
+	532.1.1 = { change_development_level = 4 }
+	632.1.1 = { change_development_level = 5 }
+	768.1.1 = { change_development_level = 6 }
+	476.1.1 = {
+		de_jure_liege = k_tarraconensis
+	}
+}
+
+
+c_viscaya = {
+	361.1.1 = {
+		holder = vasconia_10
+		liege = d_aragon
+		government = tribal_government
+		de_jure_liege = d_aragon
+	}
+	395.1.1 = {
+		holder = vasconia_11
+	}
+	476.1.1 = {
+		holder = vasconia_14
+		liege = 0
+		de_jure_liege = d_viscaya
+	}
+	532.1.1 = {
+		holder = vasconian_17
+		liege = 0
+	}
+	745.1.1 = {
+		holder = 200061 # Obeko de Alava
+		liege = k_asturias
+	}
+}
+
+
+c_ipuskoa = {
+	361.1.1 = {
+		holder = vasconia_10
+		liege = d_aragon
+		government = tribal_government
+		de_jure_liege = d_aragon
+	}
+	395.1.1 = {
+		holder = vasconia_11
+	}
+	476.1.1 = {
+		holder = vasconia_14
+		liege = 0
+		de_jure_liege = d_viscaya
+	}
+	532.1.1 = {
+		holder = vasconian_17
+		liege = 0
+	}
+	766.1.1 = {
+		holder = 200042 # Hakam Hakamid
+		liege = k_andalusia
+	}
+}
+
+

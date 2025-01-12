@@ -1,0 +1,1758 @@
+﻿# Called every Jan 1st
+# Root does not exist
+yearly_global_pulse = {
+	on_actions = { TFE_yearly_global_pulse }
+}
+
+TFE_yearly_global_pulse = {
+	effect = {
+		if = {
+			limit = {
+				AND = {
+					exists = global_var:islam_spawned
+					OR = {
+						NOT = { exists = title:b_firuzkuh.holder }
+						title:b_firuzkuh.title_province = { has_special_building_slot = no }
+					}
+				}
+			}
+			title:c_ghur.holder = {
+				trigger_event = {
+					id = TFE_flavour_events.0037
+					days = { 1 10 }
+				}
+			}
+		}
+		#Moved to game start since this doesn't have to be islamic
+		#if = { 
+		#	limit = {
+		#		AND = {
+		#			exists = global_var:islam_spawned
+		#			OR = {
+		#				NOT = { exists = title:b_alamut.holder }
+		#				title:b_alamut.title_province = { has_special_building_slot = no }
+		#			}
+		#		}
+		#	}
+		#	title:c_daylam.holder = {
+		#		trigger_event = {
+		#			id = TFE_flavour_events.0039
+		#			days = { 1 10 }
+		#		}
+		#	}
+		#}
+		if = {
+			limit = {
+				AND = {
+					current_date > 800.1.1
+					OR = {
+						NOT = { exists = title:b_figuira.holder }
+						title:b_figuira.title_province = { has_special_building_slot = no }
+					}
+					title:c_niani.holder = {
+						NOT = { government_has_flag = government_is_tribal }
+					}
+				}
+			}
+			title:c_niani.holder = {
+				trigger_event = {
+					id = TFE_flavour_events.0018
+					days = { 1 18250 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					current_date > 800.1.1
+					OR = {
+						NOT = { exists = title:b_siguiri.holder }
+						title:b_siguiri.title_province = { has_special_building_slot = no }
+					}
+					title:c_bure.holder = {
+						NOT = { government_has_flag = government_is_tribal }
+					}
+				}
+			}
+			title:c_bure.holder = {
+				trigger_event = {
+					id = TFE_flavour_events.0020
+					days = { 1 18250 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					current_date > 800.1.1
+					OR = {
+						NOT = { exists = title:b_yaresna.holder }
+						title:b_yaresna.title_province = { has_special_building_slot = no }
+					}
+					title:c_bambuk.holder = {
+						NOT = { government_has_flag = government_is_tribal }
+					}
+				}
+			}
+			title:c_bambuk.holder = {
+				trigger_event = {
+					id = TFE_flavour_events.0022
+					days = { 1 18250 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					current_date > 800.1.1
+					OR = {
+						NOT = { exists = title:b_polygyros.holder }
+						title:b_polygyros.title_province = { has_special_building_slot = no }
+					}
+					title:c_chalkidike.holder = {
+						NOT = { government_has_flag = government_is_tribal }
+					}
+				}
+			}
+			title:c_chalkidike.holder = {
+				trigger_event = {
+					id = TFE_flavour_events.0024
+					days = { 1 18250 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					current_date > 800.1.1
+					OR = {
+						NOT = { exists = title:b_turoc.holder }
+						title:b_turoc.title_province = { has_special_building_slot = no }
+					}
+					title:c_trenscen.holder = {
+						NOT = { government_has_flag = government_is_tribal }
+					}
+				}
+			}
+			title:c_trenscen.holder = {
+				trigger_event = {
+					id = TFE_flavour_events.0026
+					days = { 1 18250 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					current_date > 900.1.1
+					OR = {
+						NOT = { exists = title:b_falene.holder }
+						title:b_falene.title_province = { has_special_building_slot = no }
+					}
+					title:c_dalabergslagen.holder = {
+						NOT = { government_has_flag = government_is_tribal }
+					}
+				}
+			}
+			title:c_dalabergslagen.holder = {
+				trigger_event = {
+					id = TFE_flavour_events.0028
+					days = { 1 18250 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					current_date > 1000.1.1
+					OR = {
+						NOT = { exists = title:b_caslav.holder }
+						title:b_caslav.title_province = { has_special_building_slot = no }
+					}
+					title:c_caslav.holder = {
+						NOT = { government_has_flag = government_is_tribal }
+					}
+				}
+			}
+			title:c_caslav.holder = {
+				trigger_event = {
+					id = TFE_flavour_events.0030
+					days = { 1 18250 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					current_date > 1000.1.1
+					OR = {
+						NOT = { exists = title:b_torda.holder }
+						title:b_torda.title_province = { has_special_building_slot = no }
+					}
+					title:c_torda.holder = {
+						NOT = { government_has_flag = government_is_tribal }
+					}
+				}
+			}
+			title:c_torda.holder = {
+				trigger_event = {
+					id = TFE_flavour_events.0052
+					days = { 1 18250 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					current_date > 1000.1.1
+					OR = {
+						NOT = { exists = title:b_falene.holder }
+						title:b_falene.title_province = { has_special_building_slot = no }
+					}
+					title:c_dalabergslagen.holder = {
+						NOT = { government_has_flag = government_is_tribal }
+					}
+				}
+			}
+			title:c_dalabergslagen.holder = {
+				trigger_event = {
+					id = TFE_flavour_events.0054
+					days = { 1 18250 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				current_date > 400.1.1
+				current_date < 450.1.1
+				NOT = { has_global_variable = attila_spawn }
+				title:e_hunnic_empire.holder = {
+					is_adult = yes
+				}
+			}
+			random = {
+				chance = 30
+				modifier = {
+					add = 20
+					current_date >= 405.1.1
+				}
+				modifier = {
+					add = 20
+					current_date >= 410.1.1
+				}
+				modifier = {
+					add = 10
+					current_date >= 415.1.1
+				}
+				set_global_variable = {
+					name = attila_spawn
+					value = yes
+				}
+				trigger_event = {
+					id = steppe.6666
+					days = { 1 2 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				current_date > 533.1.1
+				NOT = { has_global_variable = gothic_war_cycle_active }
+				exists = title:e_byzantium.holder
+				exists = title:k_ostrogoths.holder
+				exists = title:k_italy.holder
+				title:k_ostrogoths.holder = title:k_italy.holder
+				title:k_ostrogoths.holder = {
+					is_independent_ruler = yes
+				}
+				character:992020 = {
+					is_alive = yes
+					liege = title:k_ostrogoths.holder
+				}
+				title:k_ostrogoths.holder = {
+					has_active_diarchy = yes
+					diarch = character:992020
+				}
+			}
+			random = {
+				chance = 10
+				modifier = {
+					add = 10
+					current_date >= 534.1.1
+				}
+				modifier = {
+					add = 10
+					current_date >= 535.1.1
+				}
+				modifier = {
+					add = 15
+					current_date >= 536.1.1
+				}
+				modifier = {
+					add = 15
+					current_date >= 537.1.1
+				}
+				modifier = {
+					add = 15
+					current_date >= 538.1.1
+				}
+				title:e_byzantium.holder = {
+					trigger_event = {
+						id = germanic_events.0032
+						days = 1
+					}
+				}
+				set_global_variable = {
+					name = gothic_war_cycle_active
+					value = yes
+				}
+				set_global_variable = {
+					name = amalasuntha_coup_unlock
+					value = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				current_date > 533.1.1
+				NOT = { exists = title:k_ostrogoths.holder }
+				exists = title:e_byzantium.holder
+				has_global_variable = gothic_war_won
+				#NOT = { has_global_variable = has_eternal_peace }
+				NOT = { has_global_variable = gothic_war_stalemate }
+				title:e_byzantium.holder = {
+					any_vassal_or_below = {
+						culture = { has_cultural_pillar = heritage_east_germanic }
+						any_held_title = {
+							OR = {
+								tier = tier_county
+								tier = tier_duchy
+							}
+							OR = {
+								kingdom = title:k_italy
+								kingdom = title:k_italia_annonariae
+								kingdom = title:k_italia_suburbicariae
+							}
+						}
+					}
+				}
+			}
+			random = {
+				chance = 20
+				modifier = {
+					add = 10
+					current_date >= 540.1.1
+				}
+				modifier = {
+					add = 10
+					current_date >= 545.1.1
+				}
+				modifier = {
+					add = 10
+					current_date >= 550.1.1
+				}
+				modifier = {
+					add = 30
+					character:992029 = {
+						is_alive = yes
+						age > 15
+						OR = {
+							is_landed = yes
+							title:e_byzantium.holder = {
+								any_vassal_or_below = {
+									exists = primary_heir
+									primary_heir = character:992029
+								}
+							}
+						}
+						top_liege = title:e_byzantium.holder
+					}
+				}
+				trigger_event = {
+					id = germanic_events.0028
+					days = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				current_date >= 533.1.1
+				current_date <= 545.1.1
+				is_target_in_global_variable_list = {
+					name = unavailable_unique_decisions
+					target = flag:recall_belisarius
+				}
+				is_target_in_global_variable_list = {
+					name = unavailable_unique_decisions
+					target = flag:vandalic_aftermath_vassals
+				}
+				NOT = { has_global_variable = berber_revolt }
+				exists = title:e_byzantium.holder
+				title:e_byzantium.holder = {
+					any_vassal_or_below = {
+						highest_held_title_tier > tier_barony
+						capital_province = { geographical_region = custom_roman_africae }
+						OR = {
+							culture = { has_cultural_pillar = heritage_berber }
+							culture = culture:mauro_roman
+						}
+					}
+				}
+			}
+			set_global_variable = {
+				name = berber_revolt
+				value = yes
+			}
+			trigger_event = {
+				id = western_roman.0072
+				days = 90
+			}
+		}
+		# Donatist Revolts
+		if = {
+			limit = {
+				current_date > 339.1.1
+				current_date < 430.1.1
+				NOT = { has_global_variable = spawned_donatists }
+			}
+			random = {
+				chance = 15
+				modifier = {
+					add = 15
+					current_date >= 371.1.1
+				}
+				modifier = {
+					add = 15
+					current_date >= 406.1.1
+				}
+				modifier = {
+					add = 55
+					current_date >= 425.1.1
+				}
+				debug_log = "Attempting to spawn Donatist revolt within 1000 days"
+				trigger_event = {
+					id = donatist_revolt.0001
+					days = { 400 1000 }
+				}
+				set_global_variable = {
+					name = spawned_donatists
+					value = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				current_date >= 399.1.1
+				NOT = { exists = global_var:caelestis }
+				NOT = {
+					title:b_maydara.title_province.county_controller.top_liege.faith.religion = religion:hellenism_religion
+				}
+			}
+			title:b_maydara.title_province = {
+				county_controller = {
+					top_liege = {
+						trigger_event = {
+						id = province_events.0006
+							days = {30 50}
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					game_start_date <= 406.1.1
+					current_date >= 406.1.1
+					NOT = { exists = global_var:marcus_usurper }
+					title:e_western_roman_empire = {
+						is_title_created = yes
+					}
+					title:e_western_roman_empire = {
+						OR = {
+							any_in_de_facto_hierarchy = {
+								THIS = title:k_britannia
+							}
+							holder = {
+								has_title = title:k_britannia
+							}
+						}
+					}
+					character:BUsuprer_01 = {
+						is_alive = yes
+						NOT = {
+							has_title = title:k_britannia
+						}
+					}
+				}
+			}
+			
+			character:BUsuprer_01 = {
+				trigger_event = briton.0008
+				set_global_variable = {
+					name = marcus_usurper
+					value = yes
+				}
+			}
+		}
+		# if = {
+			# limit = {
+				# current_date >= 451.1.1
+				# NOT = { exists = global_var:germanic_britan }
+			# }
+			
+			# set_global_variable = {
+				# name = germanic_britan
+				# value = yes
+			# }
+			# random_list = {
+				# 30 = {
+					# title:k_saxony.holder = {
+						# trigger_event = {
+							# id = briton.0007
+							# days = {30 50}
+						# }
+					# }
+				# }
+				# 10 = {
+					# title:k_frisia.holder = {
+						# trigger_event = {
+							# id = briton.0007
+							# days = {30 50}
+						# }
+					# }
+				# }
+				# 10 = {
+					# title:k_jutland.holder = {
+						# trigger_event = {
+							# id = briton.0007
+							# days = {30 50}
+						# }
+					# }
+				# }
+			# }
+		# }
+		#Spawn Mazdak
+		if = {
+			limit = {
+				current_date >= 488.1.1
+				NOT = { exists = global_var:mazdakism_spawned }
+			}
+			title:c_ctesiphon.holder = {
+				trigger_event = {
+					id = TFE_zoroastrian.0001
+					days = {30 50}
+				}
+				set_global_variable = {
+					name = mazdakism_spawned
+					value = yes
+				}
+			}
+		}
+		#Spawn Khurramism
+		if = {
+			limit = {
+				game_start_date <= 622.1.1
+				OR = {
+					NOT = {
+						faith:united_islam = {
+							has_doctrine = unavailable_doctrine
+						}
+					}
+					NOT = {
+						faith:sunni = {
+							has_doctrine = unavailable_doctrine
+						}
+					}
+				}
+				title:k_mesopotamia = {
+					any_in_de_jure_hierarchy = {
+						count = 0.3
+						AND = {
+							tier = tier_county
+							religion = religion:islam_religion
+						}
+					}
+				}
+				NOT = { exists = global_var:khurramism_spawned }
+			}
+			title:c_ctesiphon.holder = {
+				trigger_event = TFE_zoroastrian.0003
+			}
+			
+		}
+
+		#Spawn Jovinian
+		if = {
+			limit = {
+				current_date >= 393.1.1
+				NOT = { exists = global_var:jovinianism_spawned }
+			}
+			title:c_roma.holder = {
+				trigger_event = {
+					id = TFE_christian.0001
+					days = { 30 50 }
+				}
+				set_global_variable = {
+					name = jovinianism_spawned
+					value = yes
+				}
+			}
+		}
+
+		#Spawn Behafiridism aka Zurvanism
+		if = {
+			limit = {
+				game_start_date <= 622.1.1
+				current_date >= 700.1.1
+				OR = {
+					NOT = {
+						faith:united_islam = {
+							has_doctrine = unavailable_doctrine
+						}
+					}
+					NOT = {
+						faith:sunni = {
+							has_doctrine = unavailable_doctrine
+						}
+					}
+				}
+				title:k_mesopotamia = {
+					any_in_de_jure_hierarchy = {
+						count = 0.4
+						AND = {
+							tier = tier_county
+							religion = religion:islam_religion
+						}
+					}
+				}
+				NOT = { exists = global_var:zurvanism_spawned }
+			}
+			title:c_ctesiphon.holder = {
+				trigger_event = TFE_zoroastrian.0005
+			}
+			
+		}
+		#Briton breaky time
+		if = {
+			limit = {
+				current_date >= 550.1.1
+				NOT = { exists = global_var:briton_split }
+			}
+			trigger_event = {
+				id = briton.0005
+				days = {30 50}
+			}
+		}
+		#Spawning islam
+		if = {
+			limit = {
+				current_date >= 622.1.1
+				NOT = {has_global_variable=islam_spawned }
+			}
+			trigger_event = {
+				id = islam.0001
+				days = {30 50}
+			}
+			set_global_variable = {
+				name = islam_spawned
+				value = yes
+			}
+		}
+		if = {
+			limit = {
+				current_date > 535.1.1
+				NOT = { exists = global_var:ash_year }
+			}
+			trigger_event = {
+				id = ash.0001
+				days = {180 190}
+			}
+			set_global_variable = {
+				name = ash_year
+				value = yes
+			}
+		}
+		if = {
+			limit = {
+				game_start_date <= 451.1.1
+				current_date >= 451.1.1
+				NOT = { exists = global_var:council_chalc }
+			}
+			trigger_event = {
+				id = tfe_ecumenical_council.0001
+				days = {0 365}
+			}
+		}
+		# Slavic culture split
+		if = {
+			limit = {
+				AND = {
+					current_date <= 450.1.1
+					NOT = { has_global_variable = slavs_split }
+					current_date >= 400.1.1
+					any_independent_ruler = { #performance heavy but should only be calculated for 50 years and not the whole game
+						count >= 2
+						culture = culture:slavic
+					}
+				}
+			}
+			random = {
+				chance = 5
+				modifier = {
+					add = 5
+					current_date >= 415.1.1
+				}
+				modifier = {
+					add = 5
+					current_date >= 430.1.1
+				}
+				modifier = {
+					add = 10
+					current_date >= 440.1.1
+				}
+				modifier = {
+					add = 75
+					current_date >= 445.1.1
+				}
+				set_global_variable = {
+					name = slavs_split
+					value = yes
+				}
+				trigger_event = {
+					id = tfe_culture.0091
+					days = { 60 300 }
+				}
+			}
+		}
+		# These dates are somewhat arbitrary, please change them if you know more about when these cultures actually diverged
+		# Aestian culture split
+		if = {
+			limit = {
+				current_date <= 650.1.1
+				NOT = { has_global_variable = aestian_culture_split }
+				current_date >= 600.1.1
+			}
+			random = {
+				chance = 5
+				modifier = {
+					add = 5
+					current_date >= 615.1.1
+				}
+				modifier = {
+					add = 5
+					current_date >= 630.1.1
+				}
+				modifier = {
+					add = 10
+					current_date >= 640.1.1
+				}
+				modifier = {
+					add = 75
+					current_date >= 649.1.1
+				}
+				set_global_variable = {
+					name = aestian_culture_split
+					value = yes
+				}
+				trigger_event = {
+					id = tfe_culture.0001
+					days = { 60 300 }
+				}
+			}
+		}
+		# Antean culture split
+		if = {
+			limit = {
+				current_date <= 700.1.1
+				NOT = { has_global_variable = fenni_culture_split }
+				current_date >= 650.1.1
+			}
+			random = {
+				chance = 5
+				modifier = {
+					add = 5
+					current_date >= 665.1.1
+				}
+				modifier = {
+					add = 5
+					current_date >= 680.1.1
+				}
+				modifier = {
+					add = 10
+					current_date >= 690.1.1
+				}
+				modifier = {
+					add = 75
+					current_date >= 699.1.1
+				}
+				set_global_variable = {
+					name = antean_culture_split
+					value = yes
+				}
+				trigger_event = {
+					id = tfe_culture.0011
+					days = { 60 300 }
+				}
+			}
+		}
+		# Fenni culture split
+		#if = {
+		#	limit = {
+		#		current_date <= 800.1.1
+		#		NOT = { has_global_variable = fenni_culture_split }
+		#		current_date >= 750.1.1
+		#	}
+		#	random = {
+		#		chance = 5
+		#		modifier = {
+		#			add = 5
+		#			current_date >= 765.1.1
+		#		}
+		#		modifier = {
+		#			add = 5
+		#			current_date >= 780.1.1
+		#		}
+		#		modifier = {
+		#			add = 10
+		#			current_date >= 790.1.1
+		#		}
+		#		modifier = {
+		#			add = 75
+		#			current_date >= 799.1.1
+		#		}
+		#		set_global_variable = {
+		#			name = fenni_culture_split
+		#			value = yes
+		#		}
+		#		trigger_event = {
+		#			id = tfe_culture.0021
+		#			days = { 60 300 }
+		#		}
+		#	}
+		#}
+		# Venedian culture split
+		if = {
+			limit = {
+				current_date <= 700.1.1
+				NOT = { has_global_variable = venedian_culture_split }
+				current_date >= 650.1.1
+			}
+			random = {
+				chance = 5
+				modifier = {
+					add = 5
+					current_date >= 665.1.1
+				}
+				modifier = {
+					add = 5
+					current_date >= 680.1.1
+				}
+				modifier = {
+					add = 10
+					current_date >= 690.1.1
+				}
+				modifier = {
+					add = 75
+					current_date >= 699.1.1
+				}
+				set_global_variable = {
+					name = venedian_culture_split
+					value = yes
+				}
+				trigger_event = {
+					id = tfe_culture.0031
+					days = { 60 300 }
+				}
+			}
+		}
+		# Sclavenian culture split
+		if = {
+			limit = {
+				current_date <= 750.1.1
+				NOT = { has_global_variable = sclavenian_culture_split }
+				current_date >= 700.1.1
+			}
+			random = {
+				chance = 5
+				modifier = {
+					add = 5
+					current_date >= 715.1.1
+				}
+				modifier = {
+					add = 5
+					current_date >= 730.1.1
+				}
+				modifier = {
+					add = 10
+					current_date >= 740.1.1
+				}
+				modifier = {
+					add = 75
+					current_date >= 749.1.1
+				}
+				set_global_variable = {
+					name = sclavenian_culture_split
+					value = yes
+				}
+				trigger_event = {
+					id = tfe_culture.0041
+					days = { 60 300 }
+				}
+			}
+		}
+		# Frankish not implemented yet
+		# Tiele culture split
+		if = {
+			limit = {
+				current_date <= 600.1.1
+				NOT = { has_global_variable = tiele_culture_split }
+				current_date >= 400.1.1
+			}
+			random = {
+				chance = 1
+				modifier = {
+					add = 1
+					current_date >= 430.1.1
+				}
+				modifier = {
+					add = 3
+					current_date >= 450.1.1
+				}
+				modifier = {
+					add = 5
+					current_date >= 470.1.1
+				}
+				modifier = {
+					add = 10
+					current_date >= 480.1.1
+				}
+				modifier = {
+					add = 80
+					current_date >= 499.1.1
+				}
+				set_global_variable = {
+					name = tiele_culture_split
+					value = yes
+				}
+				trigger_event = {
+					id = tfe_culture.0061
+					days = { 60 300 }
+				}
+			}
+		}
+		# Gothonic divergence
+		if = {
+			limit = {
+				current_date <= 410.1.1
+				NOT = { has_global_variable = gothonic_culture_split }
+				current_date >= 396.1.1
+			}
+			random = {
+				chance = 10
+				modifier = {
+					add = 15
+					current_date >= 400.1.1
+				}
+				modifier = {
+					add = 15
+					current_date >= 405.1.1
+				}
+				modifier = {
+					add = 60
+					current_date >= 409.1.1
+				}
+				set_global_variable = {
+					name = gothonic_culture_split
+					value = yes
+				}
+				trigger_event = {
+					id = tfe_culture.0071
+					days = { 60 300 }
+				}
+			}
+		}
+		# Hispano-Roman divergence
+		if = {
+			limit = {
+				current_date <= 780.1.1
+				NOT = { has_global_variable = hispano_roman_culture_split }
+				current_date >= 700.1.1
+				NOT = { exists = title:e_western_roman_empire.holder } # Maybe add a way for it to check how long ago the Empire collapsed?
+				NOT = { exists = title:e_roman_empire.holder }
+			}
+			random = {
+				chance = 5
+				modifier = {
+					add = 5
+					current_date >= 615.1.1
+				}
+				modifier = {
+					add = 5
+					current_date >= 630.1.1
+				}
+				modifier = {
+					add = 10
+					current_date >= 645.1.1
+				}
+				modifier = {
+					add = 75
+					current_date >= 660.1.1
+				}
+				set_global_variable = {
+					name = hispano_roman_culture_split
+					value = yes
+				}
+				trigger_event = {
+					id = tfe_culture.0501
+					days = { 60 300 }
+				}
+			}
+		}
+
+		# Gallo-Roman divergence
+		if = {
+			limit = {
+				current_date <= 780.1.1
+				NOT = { has_global_variable = gallo_roman_culture_split }
+				current_date >= 700.1.1
+				NOT = { exists = title:e_western_roman_empire.holder } # Maybe add a way for it to check how long ago the Empire collapsed?
+				NOT = { exists = title:e_roman_empire.holder }
+			}
+			random = {
+				chance = 5
+				modifier = {
+					add = 5
+					current_date >= 615.1.1
+				}
+				modifier = {
+					add = 5
+					current_date >= 630.1.1
+				}
+				modifier = {
+					add = 10
+					current_date >= 645.1.1
+				}
+				modifier = {
+					add = 75
+					current_date >= 660.1.1
+				}
+				set_global_variable = {
+					name = gallo_roman_culture_split
+					value = yes
+				}
+				trigger_event = {
+					id = tfe_culture.0511
+					days = { 60 300 }
+				}
+			}
+		}
+
+		# Britano-Roman divergence
+		if = {
+			limit = {
+				current_date <= 780.1.1
+				NOT = { has_global_variable = britano_roman_culture_split }
+				current_date >= 700.1.1
+				NOT = { exists = title:e_western_roman_empire.holder } # Maybe add a way for it to check how long ago the Empire collapsed?
+				NOT = { exists = title:e_roman_empire.holder }
+			}
+			random = {
+				chance = 5
+				modifier = {
+					add = 5
+					current_date >= 615.1.1
+				}
+				modifier = {
+					add = 5
+					current_date >= 630.1.1
+				}
+				modifier = {
+					add = 10
+					current_date >= 645.1.1
+				}
+				modifier = {
+					add = 75
+					current_date >= 660.1.1
+				}
+				set_global_variable = {
+					name = britano_roman_culture_split
+					value = yes
+				}
+				trigger_event = {
+					id = tfe_culture.0521
+					days = { 60 300 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				current_date <= 600.1.1
+				NOT = { has_global_variable = bavarian_culture_split }
+				current_date >= 500.1.1
+			}
+			random = {
+				chance = 5
+				modifier = {
+					add = 5
+					current_date >= 540.1.1
+				}
+				modifier = {
+					add = 5
+					current_date >= 560.1.1
+				}
+				modifier = {
+					add = 10
+					current_date >= 580.1.1
+				}
+				modifier = {
+					add = 75
+					current_date >= 590.1.1
+				}
+				set_global_variable = {
+					name = bavarian_culture_split
+					value = yes
+				}
+				trigger_event = {
+					id = tfe_culture.0081
+					days = { 60 300 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				title:e_hunnic_empire = {
+					OR = {
+						is_title_created = no
+						AND = {
+							is_title_created = yes
+							holder = {
+								realm_size <= 50
+							}
+						}
+					}
+				}
+				NOT = {
+					exists = global_var:hun_dejure_shift
+				}
+				AND = {
+					game_start_date > 394.1.1
+					game_start_date < 396.1.1
+				}
+			}
+			dejure_shift_huns_effect = yes
+		}
+		if = {
+			limit = {
+				title:k_suebi = {
+					OR = {
+						is_title_created = no
+						AND = {
+							is_title_created = yes
+							holder = {
+								realm_size <= 10
+							}
+						}
+					}
+				}
+				NOT = {
+					exists = global_var:suebi_dejure_shift
+				}
+				game_start_date = 476.9.4
+			}
+			dejure_shift_suebi_effect = yes
+		}
+		if = {
+			limit = {
+				title:k_vandals = {
+					OR = {
+						is_title_created = no
+						AND = {
+							is_title_created = yes
+							holder = {
+								realm_size <= 10
+							}
+						}
+					}
+				}
+				NOT = {
+					exists = global_var:vandals_dejure_shift
+				}
+				game_start_date = 476.9.4
+			}
+			dejure_shift_vandals_effect = yes
+		}
+
+		if = {
+			limit = {
+				current_date >= 400.1.1
+				NOT = { has_global_variable = radagaisus_has_invaded }
+				current_date <= 410.1.1
+				NOT = { exists = title:k_goths.holder }
+				character:radagaisian_02 = {
+					is_alive = yes
+				}
+			}
+			random = {
+				chance = 5
+				modifier = {
+					add = 15
+					current_date >= 401.1.1
+				}
+				modifier = {
+					add = 30
+					current_date >= 403.1.1
+				}
+				modifier = {
+					add = 40
+					current_date >= 405.1.1
+				}
+				modifier = {
+					add = 10
+					current_date >= 406.1.1
+				}
+				set_global_variable = {
+					name = radagaisus_has_invaded
+					value = yes
+				}
+				trigger_event = {
+					id = gothic_wars.0011
+					days = { 30 50 }
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				current_date >= 400.1.1
+				has_global_variable = radagaisus_has_invaded
+				NOT = { has_global_variable = goth_migrations }
+				current_date <= 420.1.1
+			}
+			random = {
+				chance = 20
+				modifier = {
+					add = 10
+					current_date >= 405.1.1
+				}
+				modifier = {
+					add = 20
+					current_date >= 407.1.1
+				}
+				modifier = {
+					add = 40
+					current_date >= 409.1.1
+				}
+				modifier = {
+					add = 10
+					current_date >= 411.1.1
+				}
+				set_global_variable = {
+					name = goth_migrations
+					value = yes
+				}
+				trigger_event = gothic_wars.0022
+				trigger_event = gothic_wars.0023
+				trigger_event = gothic_wars.0024
+				trigger_event = gothic_wars.0025
+			}
+		}
+
+		if = {
+			limit = {
+				game_start_date = 476.9.4
+				NOT = { has_global_variable = clovis_invasion }
+				OR = {
+					AND = {
+						character:997004 = {
+							is_alive = yes
+							is_landed = yes
+							is_independent_ruler = yes
+							NOT = {
+								has_title = title:k_france
+							}
+							trigger_if = {
+								limit = {
+									title:k_france = {
+										is_title_created = yes
+									}
+								}
+								NOT = {
+									OR = {
+										is_allied_to = title:k_france.holder
+										AND = {
+											exists = var:my_suzerain
+											var:my_suzerain = title:k_france.holder
+											var:my_suzerain = {
+												OR = {
+													is_target_in_variable_list = { name = non_permanent_tributaries target = prev }
+													is_target_in_variable_list = { name = permanent_tributaries target = prev }
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						character:997005 = {
+							NOT = {
+								has_title = title:k_france
+							}
+						}
+					}
+					AND = {
+						character:997005 = {
+							is_alive = yes
+							is_landed = yes
+							is_independent_ruler = yes
+							NOT = {
+								has_title = title:k_france
+							}
+						}
+						character:997004 = {
+							NOT = {
+								has_title = title:k_france
+							}
+						}
+					}
+				}
+				AND = {
+					title:k_france = {
+						is_title_created = yes
+					}
+					title:k_france.holder = {
+						culture = culture:gallo_roman
+					}
+				}
+				current_date <= 500.1.1
+			}
+			random = {
+				chance = 0
+				modifier = {
+					add = 5
+					current_date >= 478.1.1
+				}
+				modifier = {
+					add = 10
+					current_date >= 479.1.1
+				}
+				modifier = {
+					add = 35
+					current_date >= 480.1.1
+				}
+				modifier = {
+					add = 50
+					current_date >= 481.1.1
+				}
+				set_global_variable = {
+					name = clovis_invasion
+					value = yes
+				}
+				if = {
+					limit = {
+						character:997004 = {
+							is_alive = yes
+							is_landed = yes
+							is_independent_ruler = yes
+						}
+					}
+					character:997004 = {
+						trigger_event = germanic_events.0003
+					}
+				}
+				else_if = {
+					limit = {
+						character:997005 = {
+							is_alive = yes
+							is_landed = yes
+							is_independent_ruler = yes
+						}
+					}
+					character:997005 = {
+						trigger_event = germanic_events.0003
+					}
+				}
+			}
+		}
+
+
+		if = {
+			limit = {
+				current_date > 550.1.1
+				current_date < 600.1.1
+				NOT = { has_global_variable = gokturk_spawned }
+				AND = {
+					exists = title:e_mongolia.holder
+					title:e_mongolia.holder = {
+						culture = culture:rouran
+						any_realm_county = {
+							culture = culture:tujue
+						}
+					}
+				}
+			}
+			random = {
+				chance = 15
+				modifier = {
+					add = 15
+					current_date >= 552.1.1
+				}
+				modifier = {
+					add = 15
+					current_date >= 560.1.1
+				}
+				modifier = {
+					add = 55
+					current_date >= 570.1.1
+				}
+				title:e_mongolia.holder = {
+					trigger_event = {
+						id = TFE_flavour_events.0032
+						days = { 100 300 }
+					}
+				}
+				set_global_variable = {
+					name = gokturk_spawned
+					value = yes
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				current_date >= 541.1.1
+				current_date < 549.1.1
+				NOT = { has_global_variable = justinian_plague_spawned }
+				title:c_byzantion.holder.top_liege = {
+					any_courtier_or_guest = {
+						AND = {
+							is_foreign_court_or_pool_guest = yes
+							is_adult = yes
+							is_imprisoned = no
+							is_male = yes #not sexism I just don't want to do GetHeShe every time 
+						}
+					}
+				}
+			}
+			set_global_variable = {
+				name = justinian_plague_spawned
+				value = yes
+			}
+			title:c_byzantion.holder.top_liege = {
+				trigger_event = {
+					id = TFE_flavour_events.0039
+					days = { 1 300 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_global_variable = justinian_plague_spawned
+				NOT = {
+					has_global_variable = plague_ended
+				}
+			}
+			set_global_variable = {
+				name = justinian_plague_spawned
+				value = yes
+			}
+			title:c_byzantion.holder.top_liege = {
+				change_global_variable = {
+					name = plague_event_num_counter
+					add = 1
+				}
+				random_list = {
+					10 = {
+						trigger_event = {
+							id = TFE_flavour_events.0040
+							days = { 1 300 }
+						}
+					}
+					10 = {
+						trigger_event = {
+							id = TFE_flavour_events.0041
+							days = { 1 300 }
+						}
+					}
+					10 = {
+						trigger_event = {
+							id = TFE_flavour_events.0042
+							days = { 1 300 }
+						}
+					}
+					#10 = {
+					#	trigger_event = {
+					#		id = TFE_flavour_events.0043
+					#		days = { 1 300 }
+					#	}
+					#}
+					10 = {
+						trigger_event = {
+							id = TFE_flavour_events.0044
+							days = { 1 300 }
+						}
+					}
+					10 = {
+						trigger_event = {
+							id = TFE_flavour_events.0045
+							days = { 1 300 }
+						}
+					}
+					10 = {
+						trigger_event = {
+							id = TFE_flavour_events.0046
+							days = { 1 300 }
+						}
+					}
+					10 = {
+						trigger_event = {
+							id = TFE_flavour_events.0047
+							days = { 1 300 }
+						}
+					}
+					10 = {
+						trigger_event = {
+							id = TFE_flavour_events.0048
+							days = { 1 300 }
+						}
+					}
+					10 = {
+						trigger_event = {
+							id = TFE_flavour_events.0049
+							days = { 1 300 }
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_global_variable = plague_ended }
+				has_global_variable = justinian_plague_scope
+				NOT = {
+					title:c_byzantion.holder.capital_province = {
+						any_province_epidemic = {
+							THIS = global_var:justinian_plague_scope
+						}
+					}
+				}
+			}
+			set_global_variable = {
+				name = plague_ended
+				value = yes
+			}
+			title:c_byzantion.holder.top_liege = {
+				trigger_event = TFE_flavour_events.0050
+			}
+		}
+		if = {
+			limit = {
+				current_year >= 365
+				NOT = { has_global_variable = TFE_395_earthquake_global_flag }
+			}				
+			set_global_variable = {
+				name = TFE_395_earthquake_global_flag
+				value = yes
+			}
+			trigger_event = {
+				id = major_disasters.0010
+				days = { 0 365 }
+			}
+		}
+	}
+}
+
+yearly_playable_pulse = {
+	on_actions = { TFE_yearly_playable_pulse }
+}
+
+TFE_yearly_playable_pulse = {
+	effect = {
+		if = {
+			limit = {
+				exists = var:years_since_last_war
+			}
+			change_variable = {
+				name = years_since_last_war
+				add = 1
+			}
+		}
+	}
+}
+
+three_year_playable_pulse = {
+	on_actions = {
+		TFE_three_year_playable_pulse_melting_pot
+	}
+	on_actions = {
+		TFE_three_year_feudalization
+	}
+	on_actions = {
+		TFE_three_year_flavour
+	}
+}
+
+TFE_three_year_playable_pulse_melting_pot = {
+	random_events = {
+		250 = 0
+		150 = tfe_culture.3000  # Roman -> Italian
+		150 = tfe_culture.3010  # Suebic -> Suevi
+		200 = tfe_culture.3020  # Anglo-Saxon
+	}
+}
+
+TFE_three_year_feudalization = {
+	random_events = {
+		500 = 0
+		100 = feudalization.0001  # Start up event for feudal
+	}
+}
+
+TFE_three_year_flavour = {
+	random_events = { # Shatzi: i do not know if these belong here but oh well
+		chance_of_no_event = {
+			value = 30 # should be 30 for a RICElike effect
+		}
+
+		10000 = 0
+
+		100 = TFE_flavour_events.0001 # Monastery of Auxerre
+		100 = TFE_flavour_events.0002 # Barbarian PANTS!!
+
+	}
+}
+
+five_year_playable_pulse = {
+	on_actions = { TFE_five_year_playable_pulse_hadrians_wall }
+}
+
+TFE_five_year_playable_pulse_hadrians_wall = {
+	effect = {
+		# hadrian's walls are upgraded under roman rules
+		if = {
+			limit = {
+				OR = {
+					any_liege_or_above = {
+						OR = {
+							has_title = title:e_byzantium
+							has_title = title:e_western_roman_empire
+							has_title = title:e_roman_empire
+							has_title = title:e_gaul
+						}
+					}
+					OR = {
+						has_title = title:e_byzantium
+						has_title = title:e_western_roman_empire
+						has_title = title:e_roman_empire
+						has_title = title:e_gaul
+					}
+				}
+				has_title = title:c_northumberland
+			}
+			hidden_effect = {
+				title:c_northumberland = {
+					every_county_province = {
+						limit = { has_building = hadrians_wall_01 }
+						remove_building = hadrians_wall_01
+						add_special_building_slot = real_hadrians_wall_01
+						add_building = real_hadrians_wall_01
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					any_liege_or_above = {
+						OR = {
+							has_title = title:e_byzantium
+							has_title = title:e_western_roman_empire
+							has_title = title:e_roman_empire
+							has_title = title:e_gaul
+						}
+					}
+					OR = {
+						has_title = title:e_byzantium
+						has_title = title:e_western_roman_empire
+						has_title = title:e_roman_empire
+						has_title = title:e_gaul
+					}
+				}
+				has_title = title:c_durham
+			}
+			hidden_effect = {
+				title:c_durham = {
+					every_county_province = {
+						limit = { has_building = hadrians_wall_01 }
+						remove_building = hadrians_wall_01
+						add_special_building_slot = real_hadrians_wall_01
+						add_building = real_hadrians_wall_01
+					}
+				}
+			}
+		}
+		# hadrian's walls are downgraded without roman infrastructure
+		if = {
+			limit = {
+				NOR = {
+					any_liege_or_above = {
+						OR = {
+							has_title = title:e_byzantium
+							has_title = title:e_western_roman_empire
+							has_title = title:e_roman_empire
+							has_title = title:e_gaul
+						}
+					}
+					OR = {
+						has_title = title:e_byzantium
+						has_title = title:e_western_roman_empire
+						has_title = title:e_roman_empire
+						has_title = title:e_gaul
+					}
+				}
+				has_title = title:c_northumberland
+			}
+			hidden_effect = {
+				title:c_northumberland = {
+					every_county_province = {
+						limit = { has_building = real_hadrians_wall_01 }
+						remove_building = real_hadrians_wall_01
+						add_special_building_slot = hadrians_wall_01
+						add_building = hadrians_wall_01
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOR = {
+					any_liege_or_above = {
+						OR = {
+							has_title = title:e_byzantium
+							has_title = title:e_western_roman_empire
+							has_title = title:e_roman_empire
+							has_title = title:e_gaul
+						}
+					}
+					OR = {
+						has_title = title:e_byzantium
+						has_title = title:e_western_roman_empire
+						has_title = title:e_roman_empire
+						has_title = title:e_gaul
+					}
+				}
+				has_title = title:c_durham
+			}
+			hidden_effect = {
+				title:c_durham = {
+					every_county_province = {
+						limit = { has_building = real_hadrians_wall_01 }
+						remove_building = real_hadrians_wall_01
+						add_special_building_slot = hadrians_wall_01
+						add_building = hadrians_wall_01
+					}
+				}
+			}
+		}
+	}
+}

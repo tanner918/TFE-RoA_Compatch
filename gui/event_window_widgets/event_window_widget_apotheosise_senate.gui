@@ -1,0 +1,49 @@
+vbox = {
+	name = "event_window_widget_apotheosise_senate"
+	layoutpolicy_horizontal = expanding
+	ignoreinvisible = yes
+	margin = { 5 0 }
+	spacing = 3
+
+	datacontext = "[EventWindowWidget.GetScope.sC('decision_maker_senate')]"
+
+	flowcontainer = {
+		direction = vertical
+		ignoreinvisible = yes
+		parentanchor = center
+		
+		scrollbox = {
+			minimumsize = { 500 200 }
+			maximumsize = { 500 200 }
+
+			blockoverride "scrollbox_content" {
+				text_single = {
+					text = "PAST_EMPERORS"
+				}
+				vbox = {
+					datamodel = "[Character.MakeScope.GetList('available_emperors_to_apotheosise')]"
+					spacing = 2
+
+					item = {
+						button_group = {
+							onclick = "[GetScriptedGui('apotheosise_senate_select').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('emperor',Scope.GetCharacter.MakeScope).End))]"
+							hbox = {
+								ignoreinvisible = yes
+								datacontext = "[Scope.GetCharacter]"
+
+								portrait_head = {}
+								spacer = {
+									size = {10 0}
+								}
+								text_label_center = {
+									text = "[Character.GetShortUIName]"
+									align = center
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,173 @@
+﻿#############################################################
+#
+# CHRISTIAN EVENTS
+#
+#############################################################
+
+namespace = TFE_christian
+
+# Appearance of Jovinianism for 361 start date
+# By Cybrxkhan
+TFE_christian.0001 = {
+	hidden = yes
+	
+	immediate = {
+		title:c_roma.title_province = {
+			save_scope_as = jovinian_base
+		}
+		create_character = {
+			location = scope:jovinian_base
+			#General
+			name = "Jovinian"
+			gender = male
+			age = 35
+			faith = faith:jovinian
+			culture = culture:roman
+			dynasty = generate
+			#Education
+			trait = education_learning_4
+			trait = forgiving
+			trait = zealous
+			trait = chaste
+			trait = intellect_good_1
+			trait = theologian
+			learning = 10
+			diplomacy = 10
+			save_scope_as = jovinian
+		} 
+		# No title exists at start
+		# title:d_jovinianism = {
+		# 	create_title_and_vassal_change = {
+		# 		type = created
+		# 		save_scope_as = change
+		# 		add_claim_on_loss = no
+		# 	}
+		# 	change_title_holder = {
+		# 		holder = scope:jovinian
+		# 		change = scope:change
+		# 	}
+		# 	resolve_title_and_vassal_change = scope:change
+		# }
+		religion:christianity_religion = { save_scope_as = christian }
+		faith:jovinian = {
+			save_scope_as = jovinianism
+			change_fervor = {
+				value = 5
+			}
+		}
+		hidden_effect = {
+			faith:jovinian = {
+				remove_doctrine = unavailable_doctrine
+			}
+		}
+		every_county_in_region = {
+			region = custom_jovinian_region
+			random = {
+				chance = 5
+				set_county_faith = faith:jovinian
+				# if = {
+				# 	limit = {
+				# 		holder = {
+				# 			NOT = {
+				# 				religion = religion:christianity_religion
+				# 			}
+				# 		}
+
+				# 	}
+				# 	add_county_modifier = {
+				# 		modifier = rebellious_people
+				# 		years = 10
+				# 	}
+				# }
+			}
+		}
+		every_ruler = {
+			limit = {
+				capital_province = {
+					OR = {
+						#geographical_region = ghw_region_italy
+						#geographical_region = custom_roman_illyricum
+						geographical_region = custom_jovinian_region
+						#geographical_region = custom_gaul
+					}
+				}
+				# OR = {
+				# 	religion = religion:christianity_religion
+				# 	has_title = title:c_roma
+				# }
+			}
+			trigger_event = {
+				id = TFE_christian.0002
+				days = { 30 50 }
+			}
+		}
+	}
+}
+
+TFE_christian.0002 = {
+	type = character_event
+	title = TFE_christian.0002.t
+	desc = TFE_christian.0002.desc
+	theme = faith
+
+	right_portrait = {
+		character = scope:jovinian
+		animation = personality_zealous
+	}
+
+	# Embrace jovinianism
+	option = {
+		name = TFE_christian.0002.a
+		faith:jovinian = {
+			change_fervor = {
+				value = 5
+			}
+		}
+		set_character_faith_with_conversion = faith:jovinian
+		ai_chance = {
+			base = 10
+		}
+		
+	}
+	#Embrace jovinianism and Invite him to Court
+	option = {
+		name = TFE_christian.0002.b
+		add_courtier = scope:jovinian
+		trigger = {
+			has_title = title:c_roma
+		}
+		faith:jovinian = {
+			change_fervor = {
+				value = 5
+			}
+		}
+		set_character_faith_with_conversion = faith:jovinian
+		ai_chance = {
+			base = 10
+		}
+		
+	}
+	# What Mockery of our faith is this?
+	option = {
+		name = TFE_christian.0002.c
+		ai_chance = {
+			base = 90
+			modifier = {
+				add = 100
+				has_trait = zealous
+			}
+			# modifier = {
+			# 	add = 50
+			# 	NOT = { religion = religion:christianity_religion }
+			# }
+			modifier = {
+				add = 50
+				NOT = {
+					capital_county = {
+						religion = religion:christianity_religion
+					}
+				}
+			}
+		}
+	}
+}

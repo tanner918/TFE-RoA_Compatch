@@ -1,0 +1,267 @@
+﻿aulikara_01 = {
+	name = "Jayavarma"
+	dynasty = aulikara_dynasty
+	culture = "malvi"
+	religion = "pashupata"
+	trait = kshatriya
+	323.1.1 = {
+		birth = yes
+	}
+	388.1.1 = {
+		death = yes
+	}
+}
+aulikara_02 = {
+	name = "Simhavarma"
+	dynasty = aulikara_dynasty
+	culture = "malvi"
+	religion = "pashupata"
+	trait = kshatriya
+	father = aulikara_01
+	362.1.1 = {
+		birth = yes
+	}
+	423.1.1 = {
+		death = yes
+	}
+}
+aulikara_03 = {
+	name = "Naravarma"
+	dynasty = aulikara_dynasty
+	culture = "malvi"
+	religion = "pashupata"
+	trait = kshatriya
+	father = aulikara_02
+	396.1.1 = {
+		birth = yes
+	}
+	446.1.1 = {
+		death = yes
+	}
+}
+aulikara_04 = {
+	name = "Vishvavarma"
+	dynasty = aulikara_dynasty
+	culture = "malvi"
+	religion = "pashupata"
+	trait = kshatriya
+	father = aulikara_03
+	410.1.1 = {
+		birth = yes
+	}
+	458.1.1 = {
+		death = yes
+	}
+}
+aulikara_05 = {
+	name = "Bandhuvarma"
+	dynasty = aulikara_dynasty
+	culture = "malvi"
+	religion = "pashupata"
+	trait = kshatriya
+	father = aulikara_04	
+	438.1.1 = {
+		birth = yes
+	}
+	467.1.1 = {
+		death = yes
+	}
+}
+aulikara_06 = {
+	name = "Drumavardhana"
+	dynasty = aulikara_dynasty
+	culture = "malvi"
+	religion = "pashupata"
+	father = aulikara_03	
+	trait = kshatriya
+	426.1.1 = {
+		birth = yes
+	}
+	478.1.1 = {
+		death = yes
+	}
+}
+aulikara_07 = {
+	name = "Vibhishanavardhana"
+	dynasty = aulikara_dynasty
+	culture = "malvi"
+	religion = "pashupata"
+	trait = kshatriya
+	father = aulikara_06
+	441.1.1 = {
+		birth = yes
+	}
+	489.1.1 = {
+		death = yes
+	}
+}
+aulikara_08 = {
+	name = "Prakashavardhana"
+	dynasty = aulikara_dynasty
+	culture = "malvi"
+	religion = "pashupata"
+	trait = kshatriya
+	father = aulikara_06
+	trait = education_martial_4
+	trait = strategist
+	trait = open_terrain_expert
+	trait = intellect_good_3
+	471.1.1 = {
+		birth = yes
+	}
+	518.1.1 = {
+		death = yes
+	}
+}
+aulikara_09 = {
+	name = "Yashodharman"
+	dynasty = aulikara_dynasty
+	culture = "malvi"
+	religion = "pashupata"
+	trait = ambitious
+	trait = greedy
+	trait = zealous
+	trait = kshatriya
+	trait = education_martial_4
+	trait = strategist
+	trait = open_terrain_expert
+	trait = intellect_good_2
+	martial = 11
+	stewardship = 12
+	disallow_random_traits = yes
+	father = aulikara_07
+	493.1.1 = {
+		birth = yes
+	}
+	# Following his victory
+	529.1.1 = {		
+		add_character_modifier = TFE_yashodharman_modifier
+	}
+	532.1.1 = {
+		set_primary_title_to = title:k_malwa
+	}
+	540.1.1 = {
+		death = yes
+	}
+}
+### Malavas
+malava_01 = {
+	name = "Kamal"
+	dynasty = malava_dynasty
+	culture = "malvi"
+	religion = "pashupata"
+	trait = kshatriya
+	321.1.1 = {
+		birth = yes
+	}
+	388.1.1 = {
+		death = yes
+	}
+}
+malava_02 = {
+	name = "Sulakshanpala"
+	dynasty = malava_dynasty
+	culture = "malvi"
+	religion = "pashupata"
+	trait = kshatriya
+	father = malava_01
+	369.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+malava_03 = {
+	name = "Vishvavarman"
+	dynasty = malava_dynasty
+	culture = "malvi"
+	religion = "pashupata"
+	trait = kshatriya
+	father = malava_02
+	394.1.1 = {
+		birth = yes
+	}
+	443.1.1 = {
+		death = yes
+	}
+}
+malava_04 = {
+	name = "Bandhuvarman"
+	dynasty = malava_dynasty
+	culture = "malvi"
+	religion = "pashupata"
+	trait = kshatriya
+	father = malava_03
+	422.1.1 = {
+		birth = yes
+	}
+	488.1.1 = {
+		death = yes
+	}
+}
+
+abhira_08 = {
+	name = "Visvasena"
+	religion = "svetambara"
+	culture = "abhira"
+	trait = kshatriya
+	trait = education_martial_2
+	332.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+
+abhira_09 = {
+	name = "Dharmasena"
+	religion = "svetambara"
+	culture = "abhira"
+	trait = kshatriya
+	trait = education_martial_2
+	350.1.1 = {
+		birth = yes
+	}
+	443.1.1 = {
+		death = yes
+	}
+#}
+
+abhira_10 = {
+	name = "Sarvasena"
+	religion = "svetambara"
+	dynasty = kaliyugaraja
+	culture = "abhira"
+	trait = kshatriya
+	trait = education_martial_2
+	390.1.1 = {
+		birth = yes
+	}
+	472.1.1 = {
+		death = yes
+	}
+}
+
+abhira_11 = {
+	name = "Dharmapala"
+	religion = "svetambara"
+	culture = "abhira"
+	trait = kshatriya
+	trait = education_martial_2
+	463.1.1 = {
+		birth = yes
+	}
+	514.1.1 = {
+		death = yes
+	}
+}
+
+#naigama_01 = {
+
+#}
+
+#manavayini_01 = {
+
+#}

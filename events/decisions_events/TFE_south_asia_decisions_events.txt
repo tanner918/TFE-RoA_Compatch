@@ -1,0 +1,153 @@
+﻿namespace = tfe_south_asia_decision
+
+#Indo-Scythia restored.
+tfe_south_asia_decision.1001 = {
+	type = character_event
+	title = tfe_south_asia_decision.1001.t
+	desc = tfe_south_asia_decision.1001.desc
+	theme = realm
+	left_portrait = {
+		character = scope:founder
+		animation = personality_bold
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		restore_indo_scythian_kingdom_decision_scripted_effect = yes
+	}
+
+	#Take the nickname.
+	option = {
+		name = tfe_south_asia_decision.1001.a
+		give_nickname = nick_the_great
+		add_prestige_experience = massive_fame_gain
+	}
+}
+
+#Inform any players.
+tfe_south_asia_decision.1002 = {
+	type = character_event
+	title = tfe_south_asia_decision.1002.t
+	desc = tfe_south_asia_decision.1002.desc
+	theme = realm
+	left_portrait = {
+		character = scope:founder
+		animation = personality_bold
+	}
+
+	immediate = {
+		#Empires get rivalry music.
+		if = {
+			limit = { highest_held_title_tier = tier_empire }
+			play_music_cue = "mx_cue_combat_2"
+		}
+	}
+
+	option = {
+		name = { #Empires are less than impressed.
+			trigger = {
+				highest_held_title_tier = tier_empire
+			}
+			text = tfe_south_asia_decision.1002.a
+		}
+	}
+}
+
+#Restore the main branch of the Vakataka Dynasty
+tfe_south_asia_decision.2001 = {
+	type = character_event
+	title = tfe_south_asia_decision.2001.t
+	desc = tfe_south_asia_decision.2001.desc
+	theme = realm
+	left_portrait = {
+		character = scope:founder
+		animation = personality_bold
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+	}
+
+	#Take the nickname.
+	option = {
+		name = tfe_south_asia_decision.2001.a
+		give_nickname = nick_dharmamaharaj
+		add_prestige_experience = massive_fame_gain
+	}
+}
+
+#Inform other Vakatakas
+tfe_south_asia_decision.2002 = {
+	type = character_event
+	title = tfe_south_asia_decision.2002.t
+	desc = tfe_south_asia_decision.2002.desc
+	theme = realm
+	left_portrait = {
+		character = scope:founder
+		animation = personality_bold
+	}
+
+	immediate = { play_music_cue = "mx_cue_combat_2" } #Rivarly music
+
+	option = {
+		name = tfe_south_asia_decision.2002.a
+		}
+}
+
+#Expand Aryavarta
+tfe_south_asia_decision.3001 = {
+	type = character_event
+	title = tfe_south_asia_decision.3001.t
+	desc = tfe_south_asia_decision.3001.desc
+	theme = realm
+	left_portrait = {
+		character = scope:founder
+		animation = personality_bold
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+	}
+
+	#Take the nickname.
+	option = {
+		name = tfe_south_asia_decision.3001.a
+		give_nickname = nick_the_great
+		add_prestige_experience = massive_fame_gain
+	}
+}
+
+#Restore the Three Crowned Kings
+tfe_south_asia_decision.4001 = {
+	type = character_event
+	title = tfe_south_asia_decision.4001.t
+	desc = tfe_south_asia_decision.4001.desc
+	theme = realm
+	left_portrait = {
+		character = scope:founder
+		animation = personality_bold
+	}
+	lower_left_portrait = {
+		character = title:d_chola_nadu.holder
+		animation = personality_bold
+	}
+	lower_center_portrait = {
+		character = title:d_pandya_nadu.holder
+		animation = personality_bold
+	}
+	lower_right_portrait = {
+		character = title:d_chera_nadu.holder
+		animation = personality_bold
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+	}
+
+	#Take the nickname.
+	option = {
+		name = tfe_south_asia_decision.4001.a
+		give_nickname = nick_vanpukal
+		add_prestige_experience = massive_fame_gain
+	}
+}

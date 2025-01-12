@@ -1,0 +1,468 @@
+﻿namespace = tfe_ecumenical_council
+
+# 0000-0100: Council of Chalcedonia
+
+
+# The Nicene faith is split into several splinters, depending on the region
+tfe_ecumenical_council.0001 = {
+	scope = none
+	hidden = yes
+	
+	immediate = {
+		set_global_variable = {
+			name = council_chalc
+			value = yes
+		}
+		faith:armenian_apostolic = {
+			remove_doctrine = unavailable_doctrine
+		}
+		faith:nestorian = {
+			remove_doctrine = unavailable_doctrine
+		}
+		faith:coptic = {
+			remove_doctrine = unavailable_doctrine
+		}
+		faith:chalcedonian = {
+			remove_doctrine = unavailable_doctrine
+		}
+		faith:syriac = {
+			remove_doctrine = unavailable_doctrine
+		}
+		faith:nicene = {
+			add_doctrine = unavailable_doctrine
+		}
+		every_county = {
+			limit = {
+				OR = {
+					faith = faith:nicene
+					county_has_specific_minority_faith_trigger = { FAITH = faith:nicene }
+				}
+			}
+			
+			if = {
+				limit = { title_province = { geographical_region = custom_council_chalcedonia_coptic } }
+				if = {
+					limit = {
+						faith = faith:nicene
+					}
+					set_county_faith = faith:coptic
+				}
+				else_if = {
+					limit = {
+						county_has_specific_large_minority_faith_trigger = {
+							FAITH = faith:nicene
+						}
+					}
+					remove_list_variable = {
+						name = faith_minorities_large
+						target = faith:nicene
+					}
+					add_faith_minority_effect = {
+						FAITH = faith:coptic
+						SIZE = large
+						COUNTY = THIS
+					}
+				}
+				else_if = {
+					limit = {
+						county_has_specific_small_minority_faith_trigger = {
+							FAITH = faith:nicene
+						}
+					}
+					remove_list_variable = {
+						name = faith_minorities_small
+						target = faith:nicene
+					}
+					add_faith_minority_effect = {
+						FAITH = faith:coptic
+						SIZE = small
+						COUNTY = THIS
+					}
+				}
+			}
+			else_if = {
+				limit = { title_province = { geographical_region = custom_council_chalcedonia_nestorian } }
+				if = {
+					limit = {
+						faith = faith:nicene
+					}
+					set_county_faith = faith:nestorian
+				}
+				else_if = {
+					limit = {
+						county_has_specific_large_minority_faith_trigger = {
+							FAITH = faith:nicene
+						}
+					}
+					remove_list_variable = {
+						name = faith_minorities_large
+						target = faith:nicene
+					}
+					add_faith_minority_effect = {
+						FAITH = faith:nestorian
+						SIZE = large
+						COUNTY = THIS
+					}
+				}
+				else_if = {
+					limit = {
+						county_has_specific_small_minority_faith_trigger = {
+							FAITH = faith:nicene
+						}
+					}
+					remove_list_variable = {
+						name = faith_minorities_small
+						target = faith:nicene
+					}
+					add_faith_minority_effect = {
+						FAITH = faith:nestorian
+						SIZE = small
+						COUNTY = THIS
+					}
+				}
+			}
+			else_if = {
+				limit = { title_province = { geographical_region = custom_council_chalcedonia_apostolic } }
+				if = {
+					limit = {
+						faith = faith:nicene
+					}
+					set_county_faith = faith:armenian_apostolic
+				}
+				else_if = {
+					limit = {
+						county_has_specific_large_minority_faith_trigger = {
+							FAITH = faith:nicene
+						}
+					}
+					remove_list_variable = {
+						name = faith_minorities_large
+						target = faith:nicene
+					}
+					add_faith_minority_effect = {
+						FAITH = faith:armenian_apostolic
+						SIZE = large
+						COUNTY = THIS
+					}
+				}
+				else_if = {
+					limit = {
+						county_has_specific_small_minority_faith_trigger = {
+							FAITH = faith:nicene
+						}
+					}
+					remove_list_variable = {
+						name = faith_minorities_small
+						target = faith:nicene
+					}
+					add_faith_minority_effect = {
+						FAITH = faith:armenian_apostolic
+						SIZE = small
+						COUNTY = THIS
+					}
+				}
+			}
+			else_if = {
+				limit = { title_province = { geographical_region = custom_council_chalcedonia_syriac } }
+				if = {
+					limit = {
+						faith = faith:nicene
+					}
+					set_county_faith = faith:syriac
+				}
+				else_if = {
+					limit = {
+						county_has_specific_large_minority_faith_trigger = {
+							FAITH = faith:nicene
+						}
+					}
+					remove_list_variable = {
+						name = faith_minorities_large
+						target = faith:nicene
+					}
+					add_faith_minority_effect = {
+						FAITH = faith:syriac
+						SIZE = large
+						COUNTY = THIS
+					}
+				}
+				else_if = {
+					limit = {
+						county_has_specific_small_minority_faith_trigger = {
+							FAITH = faith:nicene
+						}
+					}
+					remove_list_variable = {
+						name = faith_minorities_small
+						target = faith:nicene
+					}
+					add_faith_minority_effect = {
+						FAITH = faith:syriac
+						SIZE = small
+						COUNTY = THIS
+					}
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						faith = faith:nicene
+					}
+					set_county_faith = faith:chalcedonian
+				}
+				else_if = {
+					limit = {
+						county_has_specific_large_minority_faith_trigger = {
+							FAITH = faith:nicene
+						}
+					}
+					remove_list_variable = {
+						name = faith_minorities_large
+						target = faith:nicene
+					}
+					add_faith_minority_effect = {
+						FAITH = faith:chalcedonian
+						SIZE = large
+						COUNTY = THIS
+					}
+				}
+				else_if = {
+					limit = {
+						county_has_specific_small_minority_faith_trigger = {
+							FAITH = faith:nicene
+						}
+					}
+					remove_list_variable = {
+						name = faith_minorities_small
+						target = faith:nicene
+					}
+					add_faith_minority_effect = {
+						FAITH = faith:chalcedonian
+						SIZE = small
+						COUNTY = THIS
+					}
+				}
+			}
+		}
+		
+		every_living_character = {
+			limit = { faith = faith:nicene }
+			
+			# If landed, we check the capital
+			# If unlanded but in a court, we check the liege's court
+			# If unlanded and not in court, we check the current location
+			if = {
+				limit = { is_landed = yes }
+				capital_province = { save_scope_as = province_to_check }
+			}
+			else_if = {
+				limit = { exists = liege liege = { is_landed = yes } }
+				liege.capital_province = { save_scope_as = province_to_check }
+			}
+			else = {
+				location = { save_scope_as = province_to_check }
+			}
+			
+			if = {
+				limit = { scope:province_to_check = { geographical_region = custom_council_chalcedonia_coptic } }
+				set_character_faith = faith:coptic
+			}
+			else_if = {
+				limit = { scope:province_to_check = { geographical_region = custom_council_chalcedonia_nestorian } }
+				set_character_faith = faith:nestorian
+			}
+			else_if = {
+				limit = { scope:province_to_check = { geographical_region = custom_council_chalcedonia_apostolic } }
+				set_character_faith = faith:armenian_apostolic
+			}
+			else_if = {
+				limit = { scope:province_to_check = { geographical_region = custom_council_chalcedonia_syriac } }
+				set_character_faith = faith:syriac
+			}
+			else = {
+				set_character_faith = faith:chalcedonian
+			}
+		}
+		title:c_antiocheia.holder = {
+			if = {
+				limit = {
+					has_faith = faith:nestorian
+				}
+				trigger_event = tfe_ecumenical_council.0003
+			}
+		}
+		title:c_alexandria.holder = {
+			if = {
+				limit = {
+					has_faith = faith:coptic
+				}
+				trigger_event = tfe_ecumenical_council.0003
+			}			
+		}
+		every_player = { 
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							AND = {
+								THIS = title:c_antiocheia.holder
+								has_faith = faith:nestorian
+							}
+							AND = {
+								THIS = title:c_alexandria.holder
+								has_faith = faith:coptic
+							}
+						}
+					}
+				}
+				trigger_event = tfe_ecumenical_council.0002
+			}
+		}
+	}
+}
+
+# Players get informed
+tfe_ecumenical_council.0002 = {
+	type = character_event
+	title = tfe_ecumenical_council.0002.t
+	desc = tfe_ecumenical_council.0002.desc
+	
+	theme = faith
+	
+	left_portrait = root
+
+	immediate = {
+		faith:nicene = { save_scope_as = nicene_faith }
+		faith:coptic = { save_scope_as = coptic_faith }
+		faith:nestorian = { save_scope_as = nestorian_faith }
+		faith:armenian_apostolic = { save_scope_as = armenian_apostolic_faith }
+		faith:chalcedonian = { save_scope_as = chalcedonian_faith }
+		faith:syriac = { save_scope_as = syriac_faith }
+		
+		if = {
+			limit = {
+				OR = {
+					faith = faith:coptic
+					faith = faith:nestorian
+					faith = faith:armenian_apostolic
+					faith = faith:chalcedonian
+					faith = faith:syriac
+				}
+			}
+			faith = { save_scope_as = new_faith }
+		}
+		
+		custom_tooltip = council_chalcedonia_coptic_conversion
+		custom_tooltip = council_chalcedonia_nestorian_conversion
+		custom_tooltip = council_chalcedonia_apostolic_conversion
+		custom_tooltip = council_chalcedonia_chalcedonian_conversion
+		custom_tooltip = council_chalcedonia_syriac_conversion
+		custom_tooltip = council_chalcedonia_faiths_receive_ecumenical_doctrine
+		custom_tooltip = council_chalcedonia_nicene_disabled
+	}
+
+	# Option 1 (Almost always the only option): Accept the culture conversion.
+	option = {
+		name = tfe_ecumenical_council.0002.optA
+		
+		if = {
+			limit = {
+				OR = {
+					faith = faith:coptic
+					faith = faith:nestorian
+					faith = faith:armenian_apostolic
+					faith = faith:chalcedonian
+					faith = faith:syriac
+				}
+			}
+			custom_tooltip = council_chalcedonia_conversion_player_character
+		}
+	}
+}
+
+
+#Pentarchy event
+tfe_ecumenical_council.0003 = {
+	type = character_event
+	title = tfe_ecumenical_council.0003.t
+	desc = tfe_ecumenical_council.0003.desc
+	
+	theme = faith
+	
+	left_portrait = root
+
+	immediate = {
+		faith:nicene = { save_scope_as = nicene_faith }
+		faith:coptic = { save_scope_as = coptic_faith }
+		faith:nestorian = { save_scope_as = nestorian_faith }
+		faith:armenian_apostolic = { save_scope_as = armenian_apostolic_faith }
+		faith:chalcedonian = { save_scope_as = chalcedonian_faith }
+		faith:syriac = { save_scope_as = syriac_faith }
+		
+		if = {
+			limit = {
+				OR = {
+					faith = faith:coptic
+					faith = faith:nestorian
+					faith = faith:armenian_apostolic
+					faith = faith:chalcedonian
+					faith = faith:syriac
+				}
+			}
+			faith = { save_scope_as = new_faith }
+		}
+		
+		custom_tooltip = council_chalcedonia_coptic_conversion
+		custom_tooltip = council_chalcedonia_nestorian_conversion
+		custom_tooltip = council_chalcedonia_apostolic_conversion
+		custom_tooltip = council_chalcedonia_syriac_conversion
+		custom_tooltip = council_chalcedonia_chalcedonian_conversion
+		custom_tooltip = council_chalcedonia_faiths_receive_ecumenical_doctrine
+		custom_tooltip = council_chalcedonia_nicene_disabled
+	}
+
+	# Option 1 (Almost always the only option): Accept the culture conversion.
+	option = {
+		name = tfe_ecumenical_council.0003.optA
+		remove_short_term_gold = 200
+		add_prestige = -50
+		add_piety = 100
+		custom_tooltip = council_chalcedonia_stay_nicene
+		if = {
+			limit = {
+				OR = {
+					faith = faith:coptic
+					faith = faith:nestorian
+					faith = faith:armenian_apostolic
+					faith = faith:syriac
+					faith = faith:chalcedonian
+				}
+			}
+			custom_tooltip = council_chalcedonia_conversion_player_character
+		}
+		ai_chance = { base = 10 }
+	}
+	option = {
+		name = tfe_ecumenical_council.0003.optB
+		faith = {
+			remove_doctrine = special_doctrine_ecumenical_christian
+		}
+		add_prestige = 100
+		add_piety = -300
+		add_trait = excommunicated
+		custom_tooltip = council_chalcedonia_no_nicene
+		if = {
+			limit = {
+				OR = {
+					faith = faith:coptic
+					faith = faith:nestorian
+					faith = faith:armenian_apostolic
+					faith = faith:syriac
+					faith = faith:chalcedonian
+				}
+			}
+			custom_tooltip = council_chalcedonia_conversion_player_character
+		}
+		ai_chance = { base = 0.5 }
+	}
+}

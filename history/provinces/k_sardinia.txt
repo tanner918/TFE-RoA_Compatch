@@ -1,0 +1,128 @@
+﻿#k_sardinia
+##d_corsica ###################################
+###c_ajaccio
+2650 = {	#AJACCIO
+	culture = sardinian
+	religion = roman_pagan
+	holding = castle_holding
+	451.1.1 = {
+		religion = chalcedonian
+	}
+}
+2649 = {	#CALVI
+	holding = city_holding
+}
+
+###c_bastia
+2647 = {	#BASTIA
+	culture = sardinian
+	religion = nicene
+	holding = castle_holding
+	451.1.1 = {
+		religion = chalcedonian
+	}
+}
+2648 = {	#CORTE
+	holding = none
+}
+
+###c_vecchio
+2652 = {	#BONIFACIO
+	culture = sardinian
+	religion = roman_pagan
+	holding = castle_holding
+}
+2651 = {	#VECCHIO
+	holding = city_holding
+}
+
+##d_sardinia ###################################
+###c_cagliari
+2653 = {	#CAGLIARI
+	culture = sardinian
+	religion = nicene
+	451.1.1 = {
+		religion = chalcedonian
+	}
+}
+2654 = {	#IGLESIAS
+	culture = sardinian
+	religion = nicene
+	holding = castle_holding
+	#
+	special_building_slot = argentiera_mines_01
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	1000.1.1 = {
+		special_building = argentiera_mines_01
+	}
+}
+2660 = {	#SAMASSI
+	holding = none
+}
+
+###c_arborea
+2659 = {	#ORISTANO
+	culture = sardinian
+	religion = roman_pagan
+	holding = castle_holding
+	500.1.1 = {
+		religion = chalcedonian
+	}
+}
+2661 = {	#ISILI
+	holding = none
+}
+
+###c_gallura
+2658 = {	#OLBIA
+	culture = sardinian
+	religion = sardinian_pagan
+	holding = castle_holding
+	500.1.1 = {
+		religion = chalcedonian
+	}
+}
+2657 = {	#GALTELLI
+	holding = none
+	1000.1.1 = {
+		holding = city_holding
+	}
+}
+
+###c_logudoro
+2662 = {	#SASSARI
+	culture = sardinian
+	religion = sardinian_pagan
+	holding = castle_holding
+	451.1.1 = {
+		religion = chalcedonian
+	}
+}
+2665 = {	#ALGHERO
+	holding = none
+	1102.1.1 = {
+		holding = city_holding
+	}
+}
+2664 = {	#PORTO TORRES
+	holding = city_holding
+}
+2663 = {	#ARDARA
+	holding = none
+}
+
+###c_tortoli
+2656 = {	#TORTOLI
+	culture = sardinian
+	religion = sardinian_pagan
+	holding = castle_holding
+	# Last pagan hold-outs in Sardinia in Barbagia
+	600.1.1 = {
+		religion = chalcedonian
+	}
+}
+2655 = {	#CARBONARA
+	holding = none
+}

@@ -1,0 +1,139 @@
+#################
+#	Meshes	#
+#################
+##Example##  Add these after exporting from Maya
+#pdxmesh = {  #PLACEHOLDER
+#	name = "test_cube_mesh"
+#	file = "test_cube.mesh"
+#
+#	meshsettings = {
+#		name = "pCubeShape1"
+#		index = 0
+#		texture_diffuse = "test_diffuse.dds"
+#		texture_normal = "nonormal.dds"
+#		texture_specular = "nospec.dds"
+#		shader = "portrait_attachment"
+#		shader_file = "gfx/FX/jomini/portrait.shader"
+#	}
+#}
+##### Swords -----------------------------------------
+pdxmesh = {
+	name = "tfe_roman_gladius_01_a_portrait_mesh"
+	file = "tfe_roman_gladius_01_a_portrait.mesh"
+	lod_percentages = {
+		lod = {
+			index = 1
+			percent = 20
+		}
+		lod = {
+			index = 2
+			percent = 12
+		}
+	}
+	meshsettings = {
+		name = "tfe_roman_gladius_01_a_portrait_LOD0Shape"
+		index = 0
+		texture_diffuse = "tfe_roman_gladius_01_a_diffuse.dds"
+		texture_normal = "tfe_roman_gladius_01_a_normal.dds"
+		texture_specular = "tfe_roman_gladius_01_a_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+	meshsettings = {
+		name = "tfe_roman_gladius_01_a_portrait_LOD1Shape"
+		index = 0
+		texture_diffuse = "tfe_roman_gladius_01_a_diffuse.dds"
+		texture_normal = "tfe_roman_gladius_01_a_normal.dds"
+		texture_specular = "tfe_roman_gladius_01_a_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+	meshsettings = {
+		name = "tfe_roman_gladius_01_a_portrait_LOD2Shape"
+		index = 0
+		texture_diffuse = "tfe_roman_gladius_01_a_diffuse.dds"
+		texture_normal = "tfe_roman_gladius_01_a_normal.dds"
+		texture_specular = "tfe_roman_gladius_01_a_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+pdxmesh = {
+	name = "tfe_roman_spatha_01_a_portrait_mesh"
+	file = "tfe_roman_spatha_01_a_portrait.mesh"
+	lod_percentages = {
+		lod = {
+			index = 1
+			percent = 3
+		}
+		lod = {
+			index = 2
+			percent = 1
+		}
+	}
+	meshsettings = {
+		name = "tfe_roman_spatha_01_a_portrait_LOD0Shape"
+		index = 0
+		texture_diffuse = "tfe_roman_spatha_01_a_diffuse.dds"
+		texture_normal = "tfe_roman_spatha_01_a_normal.dds"
+		texture_specular = "tfe_roman_spatha_01_a_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+	meshsettings = {
+		name = "tfe_roman_spatha_01_a_portrait_LOD1Shape"
+		index = 0
+		texture_diffuse = "tfe_roman_spatha_01_a_diffuse.dds"
+		texture_normal = "tfe_roman_spatha_01_a_normal.dds"
+		texture_specular = "tfe_roman_spatha_01_a_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+	meshsettings = {
+		name = "tfe_roman_spatha_01_a_portrait_LOD2Shape"
+		index = 0
+		texture_diffuse = "tfe_roman_spatha_01_a_diffuse.dds"
+		texture_normal = "tfe_roman_spatha_01_a_normal.dds"
+		texture_specular = "tfe_roman_spatha_01_a_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+pdxmesh = {
+	name = "tfe_roman_spatha_02_a_portrait_mesh"
+	file = "tfe_roman_spatha_02_a_portrait.mesh"
+	meshsettings = {
+		name = "tfe_roman_spatha_02_a_portraitShape"
+		index = 0
+		texture_diffuse = "tfe_roman_spatha_02_a_diffuse.dds"
+		texture_normal = "tfe_roman_spatha_02_a_normal.dds"
+		texture_specular = "tfe_roman_spatha_02_a_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+#################
+#	Entities	#
+#################
+#entity = {
+#	name 	= "test_cube_entity"
+#	pdxmesh	= "test_cube_mesh"
+#}
+##### Swords -----------------------------------------
+entity = {
+	name = "tfe_roman_gladius_01_a_portrait_entity"
+	pdxmesh = "tfe_roman_gladius_01_a_portrait_mesh"
+}
+
+entity = {
+	name = "tfe_roman_spatha_01_a_portrait_entity"
+	pdxmesh = "tfe_roman_spatha_01_a_portrait_mesh"
+}
+
+entity = {
+	name = "tfe_roman_spatha_02_a_portrait_entity"
+	pdxmesh = "tfe_roman_spatha_02_a_portrait_mesh"
+}

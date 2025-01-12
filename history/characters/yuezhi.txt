@@ -1,0 +1,323 @@
+﻿
+#############################################################
+# 
+# KUSHANS
+# There are three theories for Kushan chronology: Case A, Case B, and Case C
+# Chronology is based on Case B (which Wikipedia also appears to use)
+# Which has Kanishka Era Year 1 as c. 127 CE
+# Birth dates are unknown unless otherwise indidcated, while death dates are based on approximate reign ends
+# Religiously, most of them sponsored a variety of religions simultaneously
+# However, as they're most famously associated with Buddhism so I made them Buddhist unless otherwise noted
+# 
+# Done by Cybrxkhan
+# 
+#############################################################
+
+kushan_001 = {
+	name= "Heraios"
+	dynasty = dynasty_kushan
+	religion="khurmazta"
+	culture="yuezhi"
+	-22.1.1 = {
+		birth = yes
+	}
+	30.1.1 = {
+		death = yes
+	}
+}
+
+# First Kushan Emperor
+kushan_002 = {
+	name= "Kujula_Kadphises"
+	dynasty = dynasty_kushan
+	religion="khurmazta"
+	culture="yuezhi"
+	father=kushan_001
+	0.3.6 = { # Probably born c. 0 CE since he is said to have died around 80, but can't due to BCE not being a thing in game
+		birth = yes
+	}
+	80.5.2 = {
+		death = yes
+	}
+}
+
+kushan_003 = {
+	name= "Vima_Takto" # Also known as Sadashkana
+	dynasty = dynasty_kushan
+	religion="khurmazta"
+	culture="yuezhi"
+	father=kushan_002
+	37.2.9 = {
+		birth = yes
+	}
+	90.6.14 = {
+		death = yes
+	}
+}
+
+kushan_004 = {
+	name= "Vima_Kadphises"
+	dynasty = dynasty_kushan
+	religion="khurmazta"
+	culture="yuezhi"
+	father=kushan_003
+	55.8.2 = {
+		birth = yes
+	}
+	127.5.8 = { # Likely IF Kanishka Era Year 1, i.e. when Kanishka ascended the throne, is dated to 127 CE
+		death = yes
+	}
+}
+
+kushan_005 = {
+	name= "Kanishka"
+	dynasty = dynasty_kushan
+	religion="sarvastivada"
+	culture="yuezhi"
+	father=kushan_004
+	martial=8
+	stewardship=6
+	learning=8
+	trait=just
+	trait=humble
+	trait=ambitious
+	trait=diligent
+	trait=intellect_good_2
+	trait=education_stewardship_4
+	88.2.5 = {
+		birth = yes
+	}
+	150.8.2 = {
+		death = yes
+	}
+}
+
+kushan_006 = {
+	name= "Huvishka"
+	dynasty = dynasty_kushan
+	religion="sarvastivada"
+	culture="yuezhi"
+	father=kushan_005
+	trait=education_stewardship_3 # Peaceful era
+	121.12.21 = {
+		birth = yes
+	}
+	190.5.28 = {
+		death = yes
+	}
+}
+
+# Last great Kushan
+kushan_007 = {
+	name= "Vasudeva"
+	dynasty = dynasty_kushan
+	religion="sarvastivada"
+	culture="yuezhi"
+	father=kushan_006
+	159.6.10 = {
+		birth = yes
+	}
+	232.3.14 = {
+		death = yes
+	}
+}
+
+kushan_008 = {
+	name= "Kanishka"
+	dynasty = dynasty_kushan
+	religion="sarvastivada"
+	culture="yuezhi"
+	father=kushan_007
+	183.3.4 = {
+		birth = yes
+	}
+	247.7.29 = {
+		death = yes
+	}
+}
+
+kushan_009 = {
+	name= "Vasishka"
+	dynasty = dynasty_kushan
+	religion="sarvastivada"
+	culture="yuezhi"
+	father=kushan_008
+	201.7.19 = {
+		birth = yes
+	}
+	267.1.12 = {
+		death = yes
+	}
+}
+
+kushan_010 = {
+	name= "Kanishka"
+	dynasty = dynasty_kushan
+	religion="sarvastivada"
+	culture="yuezhi"
+	father=kushan_009
+	219.7.24 = {
+		birth = yes
+	}
+	270.5.3 = {
+		death = yes
+	}
+}
+
+kushan_011 = {
+	name= "Vasudeva"
+	dynasty = dynasty_kushan
+	religion="sarvastivada"
+	culture="yuezhi"
+	father=kushan_010
+	241.3.31 = {
+		birth = yes
+	}
+	300.1.19 = {
+		death = yes
+	}
+}
+
+kushan_012 = {
+	name= "Mahi"
+	dynasty = dynasty_kushan
+	religion="sarvastivada"
+	culture="yuezhi"
+	father=kushan_011
+	266.4.9 = {
+		birth = yes
+	}
+	305.7.14 = {
+		death = yes
+	}
+}
+
+kushan_013 = {
+	name= "Shaka"
+	dynasty = dynasty_kushan
+	religion="sarvastivada"
+	culture="yuezhi"
+	father=kushan_012
+	289.7.24 = {
+		birth = yes
+	}
+	345.2.1 = { # Dates listed as anywhere from 330s to 350s - I went for a later date so Kipunada can have a later reign to fit the TFE timeframe
+		death = yes
+	}
+}
+
+# Last known Kushan "Emperor"
+kushan_014 = {
+	name= "Kipunada"
+	dynasty = dynasty_kushan
+	religion="sarvastivada"
+	culture="yuezhi"
+	father=kushan_013
+	321.4.5 = {
+		birth = yes
+	}
+	350.1.1 = {
+		effect = {
+			dynasty = {
+				add_dynasty_modifier = {
+					modifier = TFE_kushan_dynasty_modifier
+				}
+			}
+		}
+	}
+	# According to Case C chronology he lasted to the late 300s; however, his dates are uncertain
+	# I don't think he actually lasted this long, but I have him lasting this far so he can represent the dying remnants of the Kushans c.395 CE
+	396.1.1 = {
+		death = yes
+	}
+}
+
+
+
+
+#############################################################
+# 
+# MISC YUEZHI
+# 
+# Done by Cybrxkhan
+# 
+#############################################################
+
+# People are fictional, dynasty is not
+# Wanwan is name given to petty Yuezhi kings around Argen valley who used "wanwan" meaning "victorious" a lot on their coins
+# They may have retreated further into the Chirchik Valley after the Chionite conquest
+# No idea how long the Wanwan dynasty lasted, so I'll keep them going until the 476 start date
+yuezhi_001 = {
+	name= "Sadashkana"
+	dynasty = dynasty_wanwan
+	religion="khurmazta"
+	culture="yuezhi"
+	336.3.2 = {
+		birth = yes
+	}
+	359.1.1 = {
+		add_spouse = yuezhi_005
+	}
+	393.9.16 = {
+		death = yes
+	}
+}
+yuezhi_002 = {
+	name= "Arsal"
+	dynasty = dynasty_wanwan
+	religion="khurmazta"
+	culture="yuezhi"
+	father = yuezhi_001
+	mother=yuezhi_005
+	360.2.2 = {
+		birth = yes
+	}
+	385.1.1 = {
+		add_spouse = dayuan_003
+	}
+	430.4.22 = {
+		death = yes
+	}
+}
+
+yuezhi_003 = {
+	name= "Virsha"
+	dynasty = dynasty_wanwan
+	religion="khurmazta"
+	culture="yuezhi"
+	father = yuezhi_002
+	mother=dayuan_003
+	398.6.14 = {
+		birth = yes
+	}
+	457.2.21 = {
+		death = yes
+	}
+}
+
+yuezhi_004 = {
+	name= "Khina"
+	dynasty = dynasty_wanwan
+	religion="khurmazta"
+	culture="yuezhi"
+	father = yuezhi_003
+	445.3.17 = {
+		birth = yes
+	}
+	499.9.24 = {
+		death = yes
+	}
+}
+
+yuezhi_005 = {
+	name= "Shandramata"
+	female=yes
+	religion="khurmazta"
+	culture="yuezhi"
+	337.8.2 = {
+		birth = yes
+	}
+	379.3.14 = {
+		death = yes
+	}
+}

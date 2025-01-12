@@ -1,0 +1,157 @@
+﻿open_imperial = {
+	scope = character 
+
+	effect = {
+		every_intrigue_councillor = {
+			root = {
+				add_to_variable_list = {
+					name = emperor_spymaster
+					target = PREV
+				}
+			}
+		}
+		every_martial_councillor = {
+			root = {
+				add_to_variable_list = {
+					name = emperor_martial
+					target = PREV
+				}
+			}
+		}
+		every_learning_councillor = {
+			root = {
+				add_to_variable_list = {
+					name = emperor_learning
+					target = PREV
+				}
+			}
+		}
+		every_diplomacy_councillor = {
+			root = {
+				add_to_variable_list = {
+					name = emperor_diplo
+					target = PREV
+				}
+			}
+		}
+		every_stewardship_councillor = {
+			root = {
+				add_to_variable_list = {
+					name = emperor_steward
+					target = PREV
+				}
+			}
+		}
+		every_neighboring_top_liege_realm_owner = {
+			limit = {
+				government_has_flag = government_is_tribal
+			}
+			root = {
+				add_to_variable_list = {
+					name = empire_tribal_threat
+					target = PREV
+				}
+			}
+		}
+		every_vassal = {
+			limit = {
+				is_powerful_vassal = yes
+			}
+			root = {
+				add_to_variable_list = {
+					name = empire_powerful_vassal_threat
+					target = PREV
+				}
+			}
+		}
+		every_vassal = {
+			limit = {
+				opinion = {
+					target = root
+					value <= -30
+				}
+			}
+			root = {
+				add_to_variable_list = {
+					name = empire_angry_vassal_threat
+					target = PREV
+				}
+			}
+		}
+		every_ally = {
+			root = {
+				add_to_variable_list = {
+					name = empire_allies
+					target = PREV
+				}
+			}
+		}
+		set_variable = {
+			name = kingdom_number
+			value = 0
+		}
+		primary_title = {
+			every_in_de_facto_hierarchy = {
+				limit = {
+					tier = tier_kingdom
+				}
+				save_scope_as = tmp_title
+				root = {
+					add_to_variable_list = {
+						name = empire_kingdoms
+						target = scope:tmp_title
+					}
+					change_variable = {
+						name = kingdom_number
+						add = 1
+					}
+				}
+			}
+		}
+		set_variable = {
+			name = realm_size
+			value = 0
+		}
+		every_realm_county = {
+			root = {
+				change_variable = {
+					name = realm_size
+					add = 1
+				}
+			}
+		}
+		every_vassal = {
+			limit = {
+				opinion = {
+					target = root
+					value >= 40
+				}
+			}
+			root = {
+				add_to_variable_list = {
+					name = empire_happy_vassal
+				}
+			}
+		}
+	}
+}
+
+close_imperial = {
+	scope = character 
+
+	effect = {
+		clear_variable_list = emperor_steward
+		clear_variable_list = emperor_diplo
+		clear_variable_list = emperor_learning
+		clear_variable_list = emperor_martial
+		clear_variable_list = emperor_spymaster
+		clear_variable_list = empire_tribal_threat
+		clear_variable_list = empire_powerful_vassal_threat
+		clear_variable_list = empire_angry_vassal_threat
+		clear_variable_list = empire_allies
+		clear_variable_list = empire_happy_vassal
+		clear_variable_list = empire_kingdoms
+		remove_variable = realm_size
+		remove_variable = kingdom_number
+	}
+}

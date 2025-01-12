@@ -1,0 +1,864 @@
+﻿k_ireland = {
+	361.1.1 = { change_development_level = 1 }
+	768.1.1 = { change_development_level = 2 }
+	430.1.1 = {
+		holder = 7255 #Niall
+		succession_laws = { gaelic_elective_succession_law }
+		government = tribal_government
+	}
+	450.1.1 = {
+		holder = 0
+	}
+}
+
+
+d_meath = {
+	862.11.22 = {
+		succession_laws = { gaelic_elective_succession_law }
+		government = tribal_government
+	}
+	430.1.1 = {
+		holder = 7255 #Niall of the Nine Hostages
+		government = tribal_government
+	}
+	450.1.1 = {
+		holder = 7254 #Conall Cremthainne son of Niall
+	}
+	480.1.1 = {
+		holder = 7256 #Fergus son of Conall Cremthainne Ua Neill
+	}
+	525.1.1 = {
+		holder = 7258 #Diarmet son of Fergus Ua Neill
+	}
+	565.1.1 = {
+		holder = 7260 #Colman Bec son of Diarmet Ua Neill
+	}
+	587.1.1 = {
+		holder = 7262 #Suibne son of Colman Bec Ua Neill
+	}
+	600.1.1 = {
+		holder = 7264 #Conall son of Suibne Ua Neill
+	}
+	635.1.1 = {
+		holder = 7266 #Airmetach son of Conall Ua Neill
+	}
+	637.1.1 = {
+		holder = 7268 #Diarmait son of Airmetach Ua Neill
+	}
+	689.1.1 = {
+		holder = 7270 #Murchard son of Diarmait Ua Neill
+	}
+	715.1.1 = {
+		holder = 7272 #Donmnall son of Murchard Ua Neill
+	}
+	763.11.20 = {
+		holder = 7274 #Donnachad son of Donmnall Ua Neill
+	}
+}
+
+
+c_dublin = {
+	361.1.1 = { change_development_level = 3 }
+	768.1.1 = { change_development_level = 4 }
+	
+	356.1.1 = {
+		holder = Erainn_01
+		government = tribal_government
+	}
+	389.1.1 = {
+		holder = Erainn_02
+	}
+	389.1.1 = {
+		holder = Erainn_04
+	}
+	430.1.1 = {
+		holder = 7255 #Niall of the Nine Hostages
+		government = tribal_government
+	}
+	450.1.1 = {
+		holder = 7254 #Conall Cremthainne son of Niall
+	}
+	480.1.1 = {
+		holder = 7256 #Fergus son of Conall Cremthainne Ua Neill
+	}
+	525.1.1 = {
+		holder = 7258 #Diarmet son of Fergus Ua Neill
+	}
+	565.1.1 = {
+		holder = 7260 #Colman Bec son of Diarmet Ua Neill
+	}
+	587.1.1 = {
+		holder = 7262 #Suibne son of Colman Bec Ua Neill
+	}
+	600.1.1 = {
+		holder = 7264 #Conall son of Suibne Ua Neill
+	}
+	635.1.1 = {
+		holder = 7266 #Airmetach son of Conall Ua Neill
+	}
+	637.1.1 = {
+		holder = 7268 #Diarmait son of Airmetach Ua Neill
+	}
+	689.1.1 = {
+		holder = 7270 #Murchard son of Diarmait Ua Neill
+	}
+	715.1.1 = {
+		holder = 7272 #Donmnall son of Murchard Ua Neill
+	}
+	763.11.20 = {
+		holder = 7274 #Donnachad son of Donmnall Ua Neill
+	}
+	763.1.1 = {
+		holder = 160247
+		government = tribal_government
+	}
+
+}
+
+
+c_athlone = {
+	#Replacing & copied from c_kildare
+	356.1.1 = {
+		holder = Erainn_01
+		government = tribal_government
+	}
+	389.1.1 = {
+		holder = Erainn_02
+	}
+	389.1.1 = {
+		holder = Erainn_04
+	}
+	430.1.1 = {
+		holder = 7255 #Niall of the Nine Hostages
+		government = tribal_government
+	}
+	450.1.1 = {
+		holder = 7254 #Conall Cremthainne son of Niall
+	}
+	480.1.1 = {
+		holder = 7256 #Fergus son of Conall Cremthainne Ua Neill
+	}
+	525.1.1 = {
+		holder = 7258 #Diarmet son of Fergus Ua Neill
+	}
+	565.1.1 = {
+		holder = 7260 #Colman Bec son of Diarmet Ua Neill
+	}
+	587.1.1 = {
+		holder = 7262 #Suibne son of Colman Bec Ua Neill
+	}
+	600.1.1 = {
+		holder = 7264 #Conall son of Suibne Ua Neill
+	}
+	635.1.1 = {
+		holder = 7266 #Airmetach son of Conall Ua Neill
+	}
+	637.1.1 = {
+		holder = 7268 #Diarmait son of Airmetach Ua Neill
+	}
+	689.1.1 = {
+		holder = 7270 #Murchard son of Diarmait Ua Neill
+	}
+	715.1.1 = {
+		holder = 7272 #Donmnall son of Murchard Ua Neill
+	}
+	763.11.20 = {
+		holder = 7274 #Donnachad son of Donmnall Ua Neill
+	}
+}
+
+
+d_ulster = {
+	290.1.1 = {
+		holder = 160184 # Dubtach
+		government = tribal_government
+	}
+	360.1.1 = {
+		holder = 160185 # Dallan
+	}
+	392.1.1 = {
+		holder = 160186 # Forg
+	}
+	420.1.1 = {
+		holder = 160282 # Muiredach
+	}
+	430.1.1 = {
+		holder = 7255 #Niall Noigiallach
+		government = tribal_government
+	}
+	450.1.1 = {
+		holder = 7257 #Eogan son of Conal Gulban
+	}
+	465.1.1 = {
+		holder = 7259 #Muiredach son of Eogan
+	}
+}
+
+
+c_ulster = {
+	290.1.1 = {
+		holder = 160184 # Dubtach
+		government = tribal_government
+	}
+	360.1.1 = {
+		holder = 160185 # Dallan
+	}
+	392.1.1 = {
+		holder = 160186 # Forg
+	}
+	420.1.1 = {
+		holder = 160282 # Muiredach
+	}
+}
+
+
+c_oriel = {
+	361.1.1 = { change_development_level = 1 }
+	532.1.1 = { change_development_level = 2 }
+	768.1.1 = { change_development_level = 3 }
+	430.1.1 = {
+		holder = 7255 #Niall Noigiallach
+		government = tribal_government
+	}
+	450.1.1 = {
+		holder = 7257 #Eogan son of Conal Gulban
+	}
+	465.1.1 = {
+		holder = 7259 #Muiredach son of Eogan
+	}
+	696.1.1 = {
+		holder = 7271 #Fergal son of Máel Duin
+		government = tribal_government
+	}
+	722.12.11 = {
+		holder = 7273 #Niall Frossach
+	}
+}
+
+
+c_ailech = {
+	#Replacing tyrone & tyrconell, copied from tyrone
+	
+	430.1.1 = {
+		holder = 7255 #Niall Noigiallach
+		government = tribal_government
+	}
+	450.1.1 = {
+		holder = 7257 #Eogan son of Conal Gulban
+	}
+	465.1.1 = {
+		holder = 7259 #Muiredach son of Eogan
+	}
+	489.1.1 = {
+		holder = 7261 #Muirchertach son of Muiredach
+	}
+	534.1.1 = {
+		holder = 7263 #Donall son of Muirchertach
+	}
+	566.1.1 = {
+		holder = 7265 #Aed Uaridnach son of Donall
+	}
+	612.1.1 = {
+		holder = 7267 #Máel Fithrich son of Aed
+	}
+	630.1.1 = {
+		holder = 7269 #Máel Duin son of Máel Fithrich
+	}
+	681.1.1 = {
+		holder = 7271 #Fergal son of Máel Duin
+	}
+	722.12.11 = {
+		holder = 7273 #Niall Frossach
+	}
+
+}
+
+d_connacht = {
+	325.7.1 = {
+		holder = 83430 # Fiachu
+		government = tribal_government
+	}
+	355.7.1 = {
+		holder = 83431 # Muiredach
+	}
+	390.7.1 = {
+		holder = 83432 # Eoganachta
+	}
+	420.7.1 = {
+		holder = 83434 #Fiachra Connachta
+		government = tribal_government
+	}
+	445.7.1 = {
+		holder = 83434 #fiachra_01
+	}
+	467.7.1 = {
+		holder = fiachra_03 #Alill
+	}
+}
+
+
+c_connacht = {
+	325.7.1 = {
+		holder = 83430 # Fiachu
+		government = tribal_government
+	}
+	355.7.1 = {
+		holder = 83431 # Muiredach
+	}
+	390.7.1 = {
+		holder = 83432 # Eoganachta
+	}
+	420.7.1 = {
+		holder = 83434 #Fiachra Connachta
+		government = tribal_government
+	}
+	445.7.1 = {
+		holder = 83434 #fiachra_01
+	}
+	467.7.1 = {
+		holder = fiachra_03 #Alill
+	}
+	622.7.1 = {
+		holder = 83397 #Rogallach mac Uatach
+		government = tribal_government
+	}
+	649.7.1 = {
+		holder = 83447 #Cenn-Fáelad Ua Briúin Sola
+	}
+	682.7.1 = {
+		holder = 83406 #Muiredach Muillethan mac Fergusa
+	}
+	702.7.1 = {
+		holder = 83400 #Cellach mac Rollalaig
+	}
+	705.7.1 = {
+		holder = 83405 #Domnall mac Cathail
+	}
+	714.7.1 = {
+		holder = 83407 #Indrechtach mac Muiredaig
+	}
+	723.7.1 = {
+		holder = 83401 #Domnall mac Cellaig
+	}
+	728.7.1 = {
+		holder = 83408 #Cathal mac Muiredaig
+	}
+	735.7.1 = {
+		holder = 83421 #Aed Balb mac Indrechtaig
+	}
+	742.7.1 = {
+		holder = 83402 #Fergus mac Cellaig
+	}
+	756.7.1 = {
+		holder = 83409 #Dub-Indrecht mac Cathail
+	}
+	768.7.1 = {
+		holder = 83403 #Flaithrí mac Domnaill
+	}
+}
+
+c_mayo = {
+	325.7.1 = {
+		holder = 83430 # Fiachu
+		government = tribal_government
+	}
+	355.7.1 = {
+		holder = 83431 # Muiredach
+	}
+	390.7.1 = {
+		holder = 83432 # Eoganachta
+	}
+	420.7.1 = {
+		holder = 83434 #Fiachra Connachta
+		government = tribal_government
+	}
+	445.7.1 = {
+		holder = 83434 #fiachra_01
+	}
+	467.7.1 = {
+		holder = fiachra_03 #Alill
+	}
+	622.7.1 = {
+		holder = 83397 #Rogallach mac Uatach
+		government = tribal_government
+	}
+	649.7.1 = {
+		holder = 83447 #Cenn-Fáelad Ua Briúin Sola
+	}
+	682.7.1 = {
+		holder = 83406 #Muiredach Muillethan mac Fergusa
+	}
+	702.7.1 = {
+		holder = 83400 #Cellach mac Rollalaig
+	}
+	705.7.1 = {
+		holder = 83405 #Domnall mac Cathail
+	}
+	714.7.1 = {
+		holder = 83407 #Indrechtach mac Muiredaig
+	}
+	723.7.1 = {
+		holder = 83401 #Domnall mac Cellaig
+	}
+	728.7.1 = {
+		holder = 83408 #Cathal mac Muiredaig
+	}
+	735.7.1 = {
+		holder = 83421 #Aed Balb mac Indrechtaig
+	}
+	742.7.1 = {
+		holder = 83402 #Fergus mac Cellaig
+	}
+	756.7.1 = {
+		holder = 83409 #Dub-Indrecht mac Cathail
+	}
+}
+
+c_breifne = {
+	325.7.1 = {
+		holder = 83430 # Fiachu
+		government = tribal_government
+	}
+	355.7.1 = {
+		holder = 83431 # Muiredach
+	}
+	390.7.1 = {
+		holder = 83432 # Eoganachta
+	}
+	420.7.1 = {
+		holder = 83434 #Fiachra Connachta
+		government = tribal_government
+	}
+	445.7.1 = {
+		holder = 83434 #fiachra_01
+	}
+	467.7.1 = {
+		holder = fiachra_03 #Alill
+	}
+	743.1.1 = {
+		holder = 83531
+		government = tribal_government
+	}
+}
+
+
+d_leinster = {
+	300.1.1 = {
+		holder = Laigin_001 #Cu Corb
+	}
+	315.1.1 = {
+		holder = Laigin_002 #Nia Corb
+	}
+	350.1.1 = {
+		holder = Laigin_003 #Fedelmid
+	}
+	372.1.1 = {
+		holder = Laigin_004 #Cathair
+	}
+	401.1.1 = {
+		holder = Laigin_005 #Fiachu
+	}
+	410.1.1 = {
+		holder = Laigin_006 #Bressal
+	}
+	438.1.1 = {
+		holder = 83160 #Énna Cennsalach
+	}
+	450.7.1 = {
+		holder = 83161 #Crimthann son of Énna Cennsalach
+	}
+}
+
+
+c_leinster = {
+	300.1.1 = {
+		holder = Laigin_001 #Cu Corb
+	}
+	315.1.1 = {
+		holder = Laigin_002 #Nia Corb
+	}
+	350.1.1 = {
+		holder = Laigin_003 #Fedelmid
+	}
+	372.1.1 = {
+		holder = Laigin_004 #Cathair
+	}
+	401.1.1 = {
+		holder = Laigin_005 #Fiachu
+	}
+	410.1.1 = {
+		holder = Laigin_006 #Bressal
+	}
+	438.1.1 = {
+		holder = 83160 #Énna Cennsalach
+	}
+	450.7.1 = {
+		holder = 83161 #Crimthann son of Énna Cennsalach
+	}
+	483.7.1 = {
+		holder = 83173 #Nath Í son of Crimthann
+	}
+	512.7.1 = {
+		holder = 83173 #Óengus son of Feidlimid FIX
+	}
+	522.7.1 = {
+		holder = 83164 #Eógan Cáech
+	}
+	540.7.1 = {
+		holder = 83174  #Muiredach son of Óengus
+	}
+	544.7.1 = {
+		holder = 83180  #Fáelán son of Sílán
+	}
+	589.7.1 = {
+		holder = 83175  #Echu son of Muiredach
+	}
+	599.7.1 = {
+		holder = 83176  #Brandub son of Echu
+	}
+	608.7.1 = {
+		holder = 83166  #Rónán son of Colmán
+	}
+	624.7.1 = {
+		holder = 83167  #Crundmáel son of Rónán
+	}
+	644.7.1 = {
+		holder = 83182  #Élothach son of Fáelchú
+	}
+	728.7.1 = {
+		holder = 83171  #Aed Ua Cheinnselaig son of Colcú
+	}
+	738.7.1 = {
+		holder = 217321 #Sechnusach au Cheinnselaig son of Colcú # assumed successor
+	}
+	747.4.1 = {
+		holder = 217322 #Forbasach au Cheinnselaig son of Sechnusach # assumed successor
+	}
+
+}
+
+
+c_ossory = {
+	300.1.1 = {
+		holder = Laigin_001 #Cu Corb
+	}
+	315.1.1 = {
+		holder = Laigin_002 #Nia Corb
+	}
+	350.1.1 = {
+		holder = Laigin_003 #Fedelmid
+	}
+	372.1.1 = {
+		holder = Laigin_004 #Cathair
+	}
+	401.1.1 = {
+		holder = Laigin_005 #Fiachu
+	}
+	410.1.1 = {
+		holder = Laigin_006 #Bressal
+	}
+	438.1.1 = {
+		holder = 83160 #Énna Cennsalach
+	}
+	450.7.1 = {
+		holder = 83161 #Crimthann son of Énna Cennsalach
+	}
+	556.1.1 = {
+		holder = 166001 #Feradach Finn mac Duach
+		government = tribal_government
+	}
+	581.1.1 = {
+		holder = 166002 #Colmán mac Feradaig
+	}
+	603.1.1 = {
+		holder = 166003 #Crundmaíl mac Colmán
+	}
+	635.1.1 = {
+		holder = 166004 #Scannlan Mór mac Colmán
+	}
+	644.1.1 = {
+		holder = 166005 #Fáelán mac Crundmaíl
+	}
+	660.1.1 = {
+		holder = 166006 #Tuaim Snámha mac Crundmaíl
+	}
+	678.1.1 = {
+		holder = 166010 #Fáelchar mac Forandla
+	}
+	693.1.1 = {
+		holder = 166011 #Cú Cherca mac Fáeláin
+	}
+	712.1.1 = {
+		holder = 166012 #Fland mac Congaile
+	}
+	717.1.1 = {
+		holder = 166013 #Ailill mac Fáeláin
+	}
+	724.1.1 = {
+		holder = 166014 #Cellach mac Fáelchair
+	}
+	735.1.1 = {
+		holder = 166015 #Forbasach mac Ailella
+	}
+	740.1.1 = {
+		holder = 166016 #Anmchad mac Con Cherca
+	}
+	761.1.1 = {
+		holder = 166017 #Tóim Snáma mac Flainn
+	}
+}
+
+
+d_munster = {
+
+}
+
+
+c_thomond = {
+	360.1.1 = {
+		holder = Erainn_02 # Crimthan
+		government = tribal_government
+	}
+	370.1.1 = {
+		holder = 83607 #Conall Corc
+	}
+	420.1.1 = {
+		holder = 83608 #Nad Froich
+	}
+	450.1.1 = {
+		holder = 83735 #Ailill son of Nad Froich
+	}
+	490.1.1 = {
+		holder = 83736 #Crimthann son of Ailill
+	}
+	492.1.1 = {
+		holder = 83610 #Eochaid son of Óengus son of Nad Froich
+	}
+	520.1.1 = {
+		holder = 83737 #Éndae son of Crimthann
+	}
+	551.1.1 = {
+		holder = 83616 #Crimthann grandson of Eochaid
+	}
+	562.1.1 = {
+		holder = 83765 #Coirpre Cromm son of Crimthann
+	}
+	580.1.1 = {
+		holder = 83738 #Amalgaid son of Éndae
+	}
+	
+	590.1.1 = {
+		holder = 83739 #Garbán son of Éndae
+	}
+	594.1.1 = {
+		holder = 83767 #Feidlimid son of Coirpre Cromm
+	}
+	617.1.1 = {
+		holder = 83768 #Cathal son of Aed Fland
+	}
+	628.1.1 = {
+		holder = 83740 #Cúán son of Amalgaid
+	}
+	641.1.1 = {
+		holder = 83769 #Cathal Cú-Cen-Máthair son of Cathal son of Aed Fland
+	}
+	679.1.1 = {
+		holder = 83770 #Finguine son of Cathal Cú-Cen-Máthair
+	}
+	696.1.1 = {
+		holder = 83771 #Ailill son of Cathal Cú-Cen-Máthair
+	}
+	701.1.1 = {
+		holder = 83743 #Eterscél son of Máel-Umai
+	}
+	721.1.1 = {
+		holder = 83744 #Cathussach son of Eterscél
+	}
+	733.1.1 = {
+		holder = 83772 #Cathal son of Finguine
+	}
+	742.1.1 = {
+		holder = 83789 #Máel-Dúin son of Aed of the Eóganactha Locha Léin
+	}
+}
+
+c_ennis = {
+	360.1.1 = {
+		holder = Erainn_02 # Crimthan
+		government = tribal_government
+	}
+	370.1.1 = {
+		holder = 83607 #Conall Corc
+		government = tribal_government
+	}
+	420.1.1 = {
+		holder = 83608 #Nad Froich
+	}
+	450.1.1 = {
+		holder = 83735 #Ailill son of Nad Froich
+	}
+	490.1.1 = {
+		holder = 83736 #Crimthann son of Ailill
+	}
+	492.1.1 = {
+		holder = 83610 #Eochaid son of Óengus son of Nad Froich
+	}
+	520.1.1 = {
+		holder = 83737 #Éndae son of Crimthann
+	}
+	551.1.1 = {
+		holder = 83616 #Crimthann grandson of Eochaid
+	}
+	562.1.1 = {
+		holder = 83765 #Coirpre Cromm son of Crimthann
+	}
+	580.1.1 = {
+		holder = 83738 #Amalgaid son of Éndae
+	}
+	
+	590.1.1 = {
+		holder = 83739 #Garbán son of Éndae
+	}
+	594.1.1 = {
+		holder = 83767 #Feidlimid son of Coirpre Cromm
+	}
+	617.1.1 = {
+		holder = 83768 #Cathal son of Aed Fland
+	}
+	628.1.1 = {
+		holder = 83740 #Cúán son of Amalgaid
+	}
+	641.1.1 = {
+		holder = 83769 #Cathal Cú-Cen-Máthair son of Cathal son of Aed Fland
+	}
+	679.1.1 = {
+		holder = 83770 #Finguine son of Cathal Cú-Cen-Máthair
+	}
+	696.1.1 = {
+		holder = 83771 #Ailill son of Cathal Cú-Cen-Máthair
+	}
+	701.1.1 = {
+		holder = 83743 #Eterscél son of Máel-Umai
+	}
+	721.1.1 = {
+		holder = 83744 #Cathussach son of Eterscél
+	}
+	733.1.1 = {
+		holder = 83772 #Cathal son of Finguine
+	}
+	742.1.1 = {
+		holder = 83789 #Máel-Dúin son of Aed of the Eóganactha Locha Léin
+	}
+}
+
+
+c_ormond = {
+	360.1.1 = {
+		holder = 83606 # Luigtecht
+		government = tribal_government
+	}
+	370.1.1 = {
+		holder = 83607 #Conall Corc
+	}
+	420.1.1 = {
+		holder = 83608 #Nad Froich son of Conall
+	}
+	450.1.1 = {
+		holder = 83609 #Óengus son of Nad Froich
+	}
+	492.1.1 = {
+		holder = 83611 #Feidelmid son of Óengus son of Nad Froich
+	}
+	533.1.1 = {
+		holder = 83612 #Bressal son of Óengus son of Nad Froich
+	}
+	544.1.1 = {
+		holder = 83617 #Crimthann son of Feidelmid
+	}
+	560.1.1 = {
+		holder = 83618 #Aed Dub son of Crimthann
+	}
+	600.1.1 = {
+		holder = 83619 #Fíngen son of Aed Dub
+	}
+	619.1.1 = {
+		holder = 83620 #Faílbe Fland son of Aed Dub
+	}
+	639.1.1 = {
+		holder = 83621 #Máenach son of Fíngen
+	}
+	662.1.1 = {
+		holder = 83628 #Colgú son of Faílbe Fland
+	}
+	678.1.1 = {
+		holder = 83626 #Tnúthgal son of Fogartach
+	}
+	701.1.1 = {
+		holder = 83624 #Cormac son of Ailill
+	}
+	713.1.1 = {
+		holder = 83631 #Dub-dá-Crích son of Colmán
+	}
+	752.1.1 = {
+		holder = 83640 #Indrechtach son of Flann
+	}
+
+}
+
+
+c_desmond = {
+	361.1.1 = { change_development_level = 2 }
+	532.1.1 = { change_development_level = 3 }
+	768.1.1 = { change_development_level = 4 }
+	
+	360.1.1 = {
+		holder = 83606 # Luigtecht
+		government = tribal_government
+	}
+	370.1.1 = {
+		holder = 83607 #Conall Corc
+	}
+	420.1.1 = {
+		holder = 83693 #Mac Cass son of Conall
+	}
+	460.1.1 = {
+		holder = 83694 #Echu son of Mac Cass
+	}
+	500.1.1 = {
+		holder = 83695 #Crimthann son of Echu
+	}
+	550.1.1 = {
+		holder = 83696 #Lóégaire son of Crimthann
+	}
+	557.1.1 = {
+		holder = 83697 #Aed Ualgarb son of Crimthann
+	}
+	560.1.1 = {
+		holder = 83698 #Tigernach son of Aed Ualgarb
+	}
+	580.1.1 = {
+		holder = 83699 #Feidlimid son of Tigernach
+	}
+	593.1.1 = {
+		holder = 83713 #Aed Osraige son of Lóegaire
+	}
+	597.1.1 = {
+		holder = 83700 #Cenn-Fáelad son of Feidlimid
+	}
+	624.1.1 = {
+		holder = 83701 #Fergus son of Cenn-Fáelad
+	}
+	654.1.1 = {
+		holder = 83702 #Bécc son of Fergus
+	}
+	661.1.1 = {
+		holder = 83717 #Dond Sláine Brecc son of Dúngal
+	}
+	676.1.1 = {
+		holder = 83718 #Éladach son of Dond Sláine
+	}
+	732.1.1 = {
+		holder = 83719 #Fergal son of Éladach
+	}
+}
+

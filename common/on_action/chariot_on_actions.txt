@@ -1,0 +1,188 @@
+﻿on_game_start = {
+	on_actions = {
+		#on_chariot_start
+		on_TFE_chariot_start
+	}
+}
+
+on_TFE_chariot_start = {
+	effect = {
+		#Populate the realms with chariot teams
+		every_ruler = {			
+			save_scope_as = TFE_chariot_ruler_current
+			if = {
+				limit = {
+					OR = {
+						government_has_flag = government_is_imperial
+						AND = {
+							government_has_flag = government_is_administrative
+							is_greek_or_roman = yes
+							highest_held_title_tier > tier_county
+						}
+						AND = {
+							OR = {
+								government_has_flag = government_is_autocratic
+								government_has_flag = government_is_autocratic_ep3
+								AND = {
+									government_has_flag = government_is_roman
+									highest_held_title_tier > tier_county
+								}
+							}
+							completely_controls = title:c_roma
+						}
+					}
+
+					OR = {
+						highest_held_title_tier = tier_empire
+						highest_held_title_tier = tier_kingdom
+					}
+					is_independent_ruler = yes
+				}
+				primary_title = {
+					add_to_global_variable_list = {
+						name = TFE_chariot_titles
+						target = THIS
+					}
+					save_scope_as = TFE_chariot_title_current
+				}
+				populate_TFE_charioteers_effect = yes
+			}
+		}
+	}
+	on_actions = {
+		delay = { months = 3 }
+		on_TFE_chariot_check
+	}
+}
+
+on_TFE_chariot_check = {
+	effect = {
+		#Add new realms
+		#every_ruler = {
+		#	save_scope_as = TFE_chariot_ruler_current
+		#	if = {
+		#		limit = {
+		#			government_has_flag = government_is_imperial
+		#			OR = {
+		#				highest_held_title_tier = tier_empire
+		#				highest_held_title_tier = tier_kingdom
+		#			}
+		#			is_independent_ruler = yes
+		#			NOT = {
+		#				any_in_global_list = {
+		#					variable = TFE_chariot_titles
+		#					this = scope:TFE_chariot_ruler_current.primary_title
+		#				}
+		#			}
+		#		}
+		#		primary_title = {
+		#			add_to_global_variable_list = {
+		#				name = TFE_chariot_titles
+		#				target = THIS
+		#			}
+		#			save_scope_as = TFE_chariot_title_current
+		#		}
+		#		populate_TFE_charioteers_effect = yes
+		#	}
+		#}
+		#Remove charioteers if title doesn't exist or if realm got eaten by another chariot realm
+		every_in_global_list = {
+			variable = TFE_chariot_titles
+			save_scope_as = TFE_chariot_title_check
+			scope:TFE_chariot_title_check = {
+				if = {
+					limit = {
+						OR = {
+							NOT = { exists = holder }
+							holder = { is_independent_ruler = no }
+							AND = {
+								NOT = {
+									holder = {
+										primary_title = scope:TFE_chariot_title_check
+									}
+								}
+								any_in_global_list = {
+									variable = TFE_chariot_titles
+									this = holder.primary_title
+								}
+							}
+						}
+					}
+				save_scope_as = TFE_chariot_title_remove
+				remove_TFE_charioteers_traits_effect = yes
+				remove_TFE_charioteers_list_effect = yes
+				remove_list_global_variable = {
+					name = TFE_chariot_titles
+					target = THIS
+				}
+			}
+			}
+		}
+		#Update charioteer list for deaths
+		every_in_global_list = {
+			variable = TFE_chariot_titles
+			save_scope_as = TFE_chariot_title_renew
+			scope:TFE_chariot_title_renew = {
+				every_in_list = {
+					variable = green_team
+					limit = {
+						is_alive = no
+					}
+					scope:TFE_chariot_title_renew = {
+						remove_list_variable = {
+							name = green_team
+							target = PREV
+						}
+					}
+					add_TFE_green_charioteer_effect = yes
+				}
+				every_in_list = {
+					variable = blue_team
+					limit = {
+						is_alive = no
+					}
+					scope:TFE_chariot_title_renew = {
+						remove_list_variable = {
+							name = blue_team
+							target = PREV
+						}
+					}
+					add_TFE_blue_charioteer_effect = yes
+				}
+			}
+		}
+		#Re-add charioteers to proper court
+		every_in_global_list = {
+			variable = TFE_chariot_titles
+			save_scope_as = TFE_chariot_title_readd
+			scope:TFE_chariot_title_readd = {
+				every_in_list = {
+					variable = green_team
+					limit = {
+						NOT = { is_landed = yes }
+						NOT = { is_courtier_of = scope:TFE_chariot_title_readd.holder }
+					}
+					save_scope_as = charioteer
+					scope:TFE_chariot_title_readd.holder = {
+						add_courtier = scope:charioteer
+					}
+				}
+				every_in_list = {
+					variable = blue_team
+					limit = {
+						NOT = { is_landed = yes }
+						NOT = { is_courtier_of = scope:TFE_chariot_title_readd.holder }
+					}
+					save_scope_as = charioteer
+					scope:TFE_chariot_title_readd.holder = {
+						add_courtier = scope:charioteer
+					}
+				}
+			}
+		}
+	}
+	on_actions = {
+		delay = { months = 3 }
+		on_TFE_chariot_check
+	}
+}

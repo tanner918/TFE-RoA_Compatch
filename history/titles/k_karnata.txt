@@ -1,0 +1,838 @@
+﻿
+k_karnata = {
+	351.1.1 = { change_development_level = 4 }
+	532.1.1 = { change_development_level = 5 }
+	632.1.1 = { change_development_level = 6 }
+	768.1.1 = { change_development_level = 7 }
+	
+	#Karnata Kings:
+	#Badami Chalukyas
+	543.1.1 = {
+		holder = 74721
+	}
+	566.1.1 = {
+		holder = 74720
+	}
+	596.1.1 = {
+		holder = 74719
+	}
+	609.1.1 = {
+		holder = 74718
+	}
+	655.1.1 = {
+		holder = 74717
+	}
+	680.1.1 = {
+		holder = 74716
+	}
+	696.1.1 = {
+		holder = 74713
+	}
+	733.1.1 = {
+		holder = 74714
+	}
+	744.1.1 = {
+		holder = 74715
+	}
+
+	#Rashtrakutas:
+	753.1.1 = {
+		holder = 74409	#Dantidurga Rashtrakuta
+	}
+	756.1.1 = {
+		holder = 74413	#Krishna I
+	}
+	774.1.1 = {
+		holder = 74414	#Govinda II
+	}
+}
+
+
+d_kalyani = {
+	361.1.1 = { change_development_level = 8 }
+	476.1.1 = { change_development_level = 9 }
+	532.1.1 = { change_development_level = 10 }
+	632.1.1 = { change_development_level = 11 }
+	768.1.1 = { change_development_level = 12 }
+	
+	330.1.1 = {
+		holder = kalyani_01
+		government = gupta_government
+	}
+	378.1.1 = {
+		holder = kalyani_02
+	}
+	750.1.1 = {
+		holder = 74712
+		liege = k_karnata
+	}
+}
+
+
+c_kalyani = {
+	330.1.1 = {
+		holder = kalyani_01
+		government = gupta_government
+	}
+	378.1.1 = {
+		holder = kalyani_02
+	}
+	476.1.1 = {
+		holder = hastibhoja_03
+		liege = d_devagiri
+	}
+	500.1.1 = {
+		holder = early_chalukya_01
+		liege = d_rattapadi
+	}
+	525.2.24 = {
+		holder = 74721 # early_chalukya_02
+	}		
+	543.1.1 = {
+		#holder = 74721
+		liege = k_karnata
+	}
+	566.1.1 = {
+		holder = 74720
+	}
+	596.1.1 = {
+		holder = 74719
+	}
+	609.1.1 = {
+		holder = 74718
+	}
+	655.1.1 = {
+		holder = 74717
+	}
+	680.1.1 = {
+		holder = 74716
+	}
+	696.1.1 = {
+		holder = 74713
+	}
+	733.1.1 = {
+		holder = 74714
+	}
+	744.1.1 = {
+		holder = 74715
+	}
+	753.1.1 = {
+		holder = 74409
+	}
+	756.1.1 = {
+		holder = 74413
+	}
+}
+
+
+c_sagar = {
+	330.1.1 = {
+		holder = kalyani_01
+		government = gupta_government
+	}
+	378.1.1 = {
+		holder = kalyani_02
+	}
+	476.1.1 = {
+		holder = hastibhoja_03
+		liege = d_devagiri
+	}
+	500.1.1 = {
+		holder = early_chalukya_01
+		liege = d_rattapadi
+	}
+	525.2.24 = {
+		holder = 74721 # early_chalukya_02
+	}	
+	543.1.1 = {
+		#holder = 74721
+		liege = k_karnata
+	}
+	566.1.1 = {
+		holder = 74720
+	}
+	596.1.1 = {
+		holder = 74719
+	}
+	609.1.1 = {
+		holder = 74718
+	}
+	655.1.1 = {
+		holder = 74717
+	}
+	680.1.1 = {
+		holder = 74716
+	}
+	696.1.1 = {
+		holder = 74713
+	}
+	733.1.1 = {
+		holder = 74714
+	}
+	744.1.1 = {
+		holder = 74715
+	}
+	753.1.1 = {
+		holder = 74409
+	}
+	756.1.1 = {
+		holder = 74413
+	}
+	757.1.1 = {
+		holder = 192035 #Bhimasakti Sendraka
+		liege = k_karnata
+	}
+}
+
+
+d_gangavadi = {
+	361.1.1 = { change_development_level = 8 }
+	476.1.1 = { change_development_level = 9 }
+	532.1.1 = { change_development_level = 10 }
+	632.1.1 = { change_development_level = 11 }
+	768.1.1 = { change_development_level = 12 }
+	
+	## Western Gangas
+	350.1.1 = {
+		holder = 74676
+	}
+	370.1.1 = {
+		holder = 74677
+	}
+	390.1.1 = {
+		holder = 74678
+	}
+	410.1.1 = {
+		holder = 74679
+	}
+	430.1.1 = {
+		holder = 74680
+	}
+	469.1.1 = {
+		holder = 74682
+	}
+	529.1.1 = {
+		holder = 74683
+	}
+	579.1.1 = {
+		holder = 74684
+	}
+	604.1.1 = {
+		holder = 74685
+	}
+	629.1.1 = {
+		holder = 74686
+	}
+	654.1.1 = {
+		holder = 74687
+	}
+	679.1.1 = {
+		holder = 74688
+	}
+	726.1.1 = {
+		holder = 74689
+	}
+}
+
+c_srirangapatna = {
+	# Western Gangas
+	350.1.1 = {
+		holder = 74676
+		liege = d_gangavadi
+	}
+	370.1.1 = {
+		holder = 74677
+	}
+	390.1.1 = {
+		holder = 74678
+	}
+	410.1.1 = {
+		holder = 74679
+	}
+	430.1.1 = {
+		holder = 74680
+	}
+	469.1.1 = {
+		holder = 74682
+	}
+	529.1.1 = {
+		holder = 74683
+	}
+	579.1.1 = {
+		holder = 74684
+	}
+	604.1.1 = {
+		holder = 74685
+	}
+	629.1.1 = {
+		holder = 74686
+	}
+	654.1.1 = {
+		holder = 74687
+	}
+	679.1.1 = {
+		holder = 74688
+	}
+	726.1.1 = {
+		holder = 74689
+	}
+}
+
+
+c_mahishaka = {
+	# Western Gangas
+	350.1.1 = {
+		holder = 74676
+		liege = d_gangavadi
+	}
+	370.1.1 = {
+		holder = 74677
+	}
+	390.1.1 = {
+		holder = 74678
+	}
+	410.1.1 = {
+		holder = 74679
+	}
+	430.1.1 = {
+		holder = 74680
+	}
+	469.1.1 = {
+		holder = 74682
+	}
+	529.1.1 = {
+		holder = 74683
+	}
+	579.1.1 = {
+		holder = 74684
+	}
+	604.1.1 = {
+		holder = 74685
+	}
+	629.1.1 = {
+		holder = 74686
+	}
+	654.1.1 = {
+		holder = 74687
+	}
+	679.1.1 = {
+		holder = 74688
+	}
+	726.1.1 = {
+		holder = 74689
+	}
+}
+
+
+c_talakad = {
+	# Western Gangas
+	350.1.1 = {
+		holder = 74676
+		liege = d_gangavadi
+	}
+	370.1.1 = {
+		holder = 74677
+	}
+	390.1.1 = {
+		holder = 74678
+	}
+	410.1.1 = {
+		holder = 74679
+	}
+	430.1.1 = {
+		holder = 74680
+	}
+	469.1.1 = {
+		holder = 74682
+	}
+	529.1.1 = {
+		holder = 74683
+	}
+	579.1.1 = {
+		holder = 74684
+	}
+	604.1.1 = {
+		holder = 74685
+	}
+	629.1.1 = {
+		holder = 74686
+	}
+	654.1.1 = {
+		holder = 74687
+	}
+	679.1.1 = {
+		holder = 74688
+	}
+	726.1.1 = {
+		holder = 74689
+	}
+}
+
+
+d_nulambavadi = {
+	#Kadambas
+	345.1.1 = { 
+		holder = 901024 #Mayurasharma Founder of the Kadamba 
+	}
+	365.1.1 = { 
+		holder = 901025 #Kangavarma son of Mayurasharma
+	}
+	390.1.1 = { 
+		holder = 901026 #Bhageerath son of Kangavarma
+	}
+	415.1.1 = {
+		holder = kadamaba_01 # Raghu
+	}
+	435.1.1 = {
+		holder = kadamaba_02 # Kakusthavarma
+	}
+	455.1.1 = {
+		holder = kadamaba_03 # Santivarma
+	}
+	456.1.1 = {
+		holder = kadamaba_04 # Kirshnavarma
+	}
+	475.1.1 = {
+		holder = kadamaba_041 # Vishnuvarma
+	}
+	485.1.1 = {
+		holder = kadamaba_0411 # Simhavarma
+	}
+	516.1.1 = {
+		holder = kadamaba_04111 # Krishnavarma II
+	}
+	750.1.1 = {
+		holder = 192016 #Mangala Nolambadhiraja
+		liege = k_karnata
+	}
+	768.1.1 = {
+		holder = 192017 #Singapota
+	}
+}
+
+
+c_uchangidurga = {
+	#Kadambas
+	345.1.1 = { 
+		holder = 901024 #Mayurasharma Founder of the Kadamba 
+	}
+	365.1.1 = { 
+		holder = 901025 #Kangavarma son of Mayurasharma
+	}
+	390.1.1 = { 
+		holder = 901026 #Bhageerath son of Kangavarma
+	}
+	415.1.1 = {
+		holder = kadamaba_01 # Raghu
+	}
+	435.1.1 = {
+		holder = kadamaba_02 # Kakusthavarma
+	}
+	455.1.1 = {
+		holder = kadamaba_03 # Santivarma
+	}
+	456.1.1 = {
+		holder = kadamaba_04 # Kirshnavarma
+	}
+	475.1.1 = {
+		holder = kadamaba_041 # Vishnuvarma
+	}
+	485.1.1 = {
+		holder = kadamaba_0411 # Simhavarma
+	}
+	490.1.1 = {
+		holder = kadamaba_033 # Ravivarma's bro
+		liege = 0
+	}
+	519.1.1 = {
+		holder = kadamaba_0321 # Harivarma
+	}
+	530.1.1 = {
+		holder = kadamaba_04111 # Harivarma
+	}
+	532.1.1 = {
+		holder = kannada_misc_02
+		liege = d_nulambavadi
+	}
+	750.1.1 = {
+		holder = 192016 #Mangala Nolambadhiraja
+		liege = d_nulambavadi
+	}
+	768.1.1 = {
+		holder = 192017 #Singapota
+	}
+}
+
+
+c_gutti = {
+	#Kadambas
+	345.1.1 = { 
+		holder = 901024 #Mayurasharma Founder of the Kadamba 
+	}
+	365.1.1 = { 
+		holder = 901025 #Kangavarma son of Mayurasharma
+	}
+	390.1.1 = { 
+		holder = 901026 #Bhageerath son of Kangavarma
+	}
+	415.1.1 = {
+		holder = kadamaba_01 # Raghu
+	}
+	435.1.1 = {
+		holder = kadamaba_02 # Kakusthavarma
+	}
+	455.1.1 = {
+		holder = kadamaba_03 # Santivarma
+	}
+	456.1.1 = {
+		holder = kadamaba_04 # Kirshnavarma
+	}
+	475.1.1 = {
+		holder = kadamaba_041 # Vishnuvarma
+	}
+	485.1.1 = {
+		holder = kadamaba_0411 # Simhavarma
+	}
+	516.1.1 = {
+		holder = kadamaba_04111 # Krishnavarma II
+	}
+	532.1.1 = {
+		holder = kannada_misc_01
+		liege = d_nulambavadi
+	}
+	760.1.1 = {
+		holder = 192019 #Ganda Sankili Vaidumba
+		liege = k_karnata
+	}
+}
+
+
+c_adoni = {
+	270.1.1 = {
+		holder = 900901 #Pravasena I Conquests for the Kingdom of Vakataka
+		liege = k_maharastra
+	}
+	330.1.1 = {
+		holder = 900910 #Sarvasena I, Second son of Pravasena I Founder of House Vatsagulma
+	}
+	#Kadambas
+	345.1.1 = { 
+		holder = 901024 #Mayurasharma Founder of the Kadamba 
+	}
+	365.1.1 = { 
+		holder = 901025 #Kangavarma son of Mayurasharma
+	}
+	390.1.1 = { 
+		holder = 901026 #Bhageerath son of Kangavarma
+	}
+	415.1.1 = {
+		holder = kadamaba_01 # Raghu
+	}
+	435.1.1 = {
+		holder = kadamaba_02 # Kakusthavarma
+	}
+	455.1.1 = {
+		holder = kadamaba_03 # Santivarma
+	}
+	456.1.1 = {
+		holder = kadamaba_04 # Kirshnavarma
+	}
+	475.1.1 = {
+		holder = kadamaba_041 # Vishnuvarma
+	}
+	485.1.1 = {
+		holder = kadamaba_0411 # Simhavarma
+	}
+	516.1.1 = {
+		holder = kadamaba_04111 # Krishnavarma II
+	}
+	750.1.1 = {
+		holder = 192016 #Mangala Nolambadhiraja
+		liege = d_nulambavadi
+	}
+	768.1.1 = {
+		holder = 192017 #Singapota
+	}
+}
+
+
+c_banavasi = {
+	351.1.1 = { change_development_level = 8 }
+	#Kadambas
+	345.1.1 = { 
+		holder = 901024 #Mayurasharma Founder of the Kadamba 
+	}
+	365.1.1 = { 
+		holder = 901025 #Kangavarma son of Mayurasharma
+	}
+	390.1.1 = { 
+		holder = 901026 #Bhageerath son of Kangavarma
+	}
+	415.1.1 = {
+		holder = kadamaba_01 # Raghu
+	}
+	435.1.1 = {
+		holder = kadamaba_02 # Kakusthavarma
+	}
+	455.1.1 = {
+		holder = kadamaba_03 # Santivarma
+	}
+	460.1.1 = {
+		holder = kadamaba_05 # Shiva Mandhatri
+	}
+	475.1.1 = {
+		holder = kadamaba_031 # Mrigeshavarma
+	}
+	485.1.1 = {
+		holder = kadamaba_032 # Ravivarma
+	}
+	519.1.1 = {
+		holder = kadamaba_0321 # Harivarma
+	}
+	530.1.1 = {
+		holder = kadamaba_04111 # Harivarma
+	}
+	610.1.1 = {
+		holder = 192001 #Aluvarasa I Alupa
+		liege = k_karnata
+	}
+	630.1.1 = {
+		holder = 192002 #Gunasagara
+	}
+	663.1.1 = {
+		holder = 192003 #Chitravahana
+	}
+	730.1.1 = {
+		holder = 192004 #Aluvarasa II
+	}
+	750.1.1 = {
+		holder = 192005 #Chitravahana II
+	}
+}
+
+
+d_raichur_doab = {
+	361.1.1 = { change_development_level = 8 }
+	476.1.1 = { change_development_level = 9 }
+	532.1.1 = { change_development_level = 10 }
+	632.1.1 = { change_development_level = 11 }
+	768.1.1 = { change_development_level = 12 }
+	#Kadambas
+	345.1.1 = { 
+		holder = 901024 #Mayurasharma Founder of the Kadamba 
+	}
+	365.1.1 = { 
+		holder = 901025 #Kangavarma son of Mayurasharma
+	}
+	390.1.1 = { 
+		holder = 901026 #Bhageerath son of Kangavarma
+	}
+	415.1.1 = {
+		holder = kadamaba_01 # Raghu
+	}
+	435.1.1 = {
+		holder = kadamaba_02 # Kakusthavarma
+	}
+	455.1.1 = {
+		holder = kadamaba_03 # Santivarma
+	}
+	460.1.1 = {
+		holder = kadamaba_05 # Shiva Mandhatri
+	}
+	475.1.1 = {
+		holder = kadamaba_031 # Mrigeshavarma
+	}
+	485.1.1 = {
+		holder = kadamaba_032 # Ravivarma
+	}
+	519.1.1 = {
+		holder = kadamaba_0321 # Harivarma
+	}
+	530.1.1 = {
+		holder = kadamaba_04111 # Harivarma
+	}	
+}
+
+
+c_idatarainadu = {
+	270.1.1 = {
+		holder = 900901 #Pravasena I Conquests for the Kingdom of Vakataka
+		liege = k_maharastra
+	}
+	330.1.1 = {
+		holder = 900910 #Sarvasena I, Second son of Pravasena I Founder of House Vatsagulma
+	}
+	#Kadambas
+	345.1.1 = { 
+		holder = 901024 #Mayurasharma Founder of the Kadamba 
+	}
+	365.1.1 = { 
+		holder = 901025 #Kangavarma son of Mayurasharma
+	}
+	390.1.1 = { 
+		holder = 901026 #Bhageerath son of Kangavarma
+	}
+	415.1.1 = {
+		holder = kadamaba_01 # Raghu
+	}
+	435.1.1 = {
+		holder = kadamaba_02 # Kakusthavarma
+	}
+	455.1.1 = {
+		holder = kadamaba_03 # Santivarma
+	}
+	460.1.1 = {
+		holder = kadamaba_05 # Shiva Mandhatri
+	}
+	475.1.1 = {
+		holder = kadamaba_031 # Mrigeshavarma
+	}
+	485.1.1 = {
+		holder = kadamaba_032 # Ravivarma
+	}
+	519.1.1 = {
+		holder = kadamaba_0321 # Harivarma
+	}
+	530.1.1 = {
+		holder = kadamaba_04111 # Harivarma
+	}
+	532.1.1 = {
+		holder = kannada_misc_01
+		liege = d_nulambavadi
+	}
+	750.1.1 = {
+		holder = 74712
+		liege = d_kalyani
+	}
+}
+
+
+c_vatapi = {
+	#Kadambas
+	345.1.1 = { 
+		holder = 901024 #Mayurasharma Founder of the Kadamba 
+	}
+	365.1.1 = { 
+		holder = 901025 #Kangavarma son of Mayurasharma
+	}
+	390.1.1 = { 
+		holder = 901026 #Bhageerath son of Kangavarma
+	}
+	415.1.1 = {
+		holder = kadamaba_01 # Raghu
+	}
+	435.1.1 = {
+		holder = kadamaba_02 # Kakusthavarma
+	}
+	455.1.1 = {
+		holder = kadamaba_03 # Santivarma
+	}
+	460.1.1 = {
+		holder = kadamaba_05 # Shiva Mandhatri
+	}
+	475.1.1 = {
+		holder = kadamaba_031 # Mrigeshavarma
+	}
+	485.1.1 = {
+		holder = kadamaba_032 # Ravivarma
+	}
+	519.1.1 = {
+		holder = kadamaba_0321 # Harivarma
+	}
+	530.1.1 = {
+		holder = kadamaba_04111 # Harivarma
+	}
+	757.1.1 = {
+		holder = 192035 #Bhimasakti Sendraka
+		liege = k_karnata
+	}
+}
+
+
+c_vaijayanti = {
+	#Kadambas
+	345.1.1 = { 
+		holder = 901024 #Mayurasharma Founder of the Kadamba 
+	}
+	365.1.1 = { 
+		holder = 901025 #Kangavarma son of Mayurasharma
+	}
+	390.1.1 = { 
+		holder = 901026 #Bhageerath son of Kangavarma
+	}
+	415.1.1 = {
+		holder = kadamaba_01 # Raghu
+	}
+	435.1.1 = {
+		holder = kadamaba_02 # Kakusthavarma
+	}
+	455.1.1 = {
+		holder = kadamaba_03 # Santivarma
+	}
+	460.1.1 = {
+		holder = kadamaba_05 # Shiva Mandhatri
+	}
+	475.1.1 = {
+		holder = kadamaba_031 # Mrigeshavarma
+	}
+	485.1.1 = {
+		holder = kadamaba_032 # Ravivarma
+	}
+	519.1.1 = {
+		holder = kadamaba_0321 # Harivarma
+	}
+	530.1.1 = {
+		holder = kadamaba_04111 # Harivarma
+	}
+	750.1.1 = {
+		holder = 74712
+		liege = d_kalyani
+	}
+}
+
+
+c_koppam = {
+	#Kadambas
+	345.1.1 = { 
+		holder = 901024 #Mayurasharma Founder of the Kadamba 
+	}
+	365.1.1 = { 
+		holder = 901025 #Kangavarma son of Mayurasharma
+	}
+	390.1.1 = { 
+		holder = 901026 #Bhageerath son of Kangavarma
+	}
+	415.1.1 = {
+		holder = kadamaba_01 # Raghu
+	}
+	435.1.1 = {
+		holder = kadamaba_02 # Kakusthavarma
+	}
+	455.1.1 = {
+		holder = kadamaba_03 # Santivarma
+	}
+	460.1.1 = {
+		holder = kadamaba_05 # Shiva Mandhatri
+	}
+	475.1.1 = {
+		holder = kadamaba_031 # Mrigeshavarma
+	}
+	485.1.1 = {
+		holder = kadamaba_032 # Ravivarma
+	}
+	519.1.1 = {
+		holder = kadamaba_0321 # Harivarma
+	}
+	530.1.1 = {
+		holder = kadamaba_04111 # Harivarma
+	}
+	532.1.1 = {
+		holder = kannada_misc_02
+		liege = d_nulambavadi
+	}
+	750.1.1 = {
+		holder = 74712
+		liege = d_kalyani
+	}
+}
+

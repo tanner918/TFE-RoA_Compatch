@@ -1,0 +1,979 @@
+﻿
+
+
+
+
+k_punjab = {
+
+	361.1.1 = {	change_development_level = 5 }
+	476.1.1 = {	change_development_level = 6 }
+	532.1.1 = {	change_development_level = 7 }
+	632.1.1 = {	change_development_level = 8 }
+	768.1.1 = {	change_development_level = 9 }
+
+	30.1.1 = {
+		holder = kushan_002
+		government = gupta_government
+		liege = "e_kushan"
+	}
+	80.5.2 = {
+		holder = kushan_003
+	}
+	90.6.14 = {
+		holder = kushan_004
+	}
+	127.5.8 = {
+		holder = kushan_005
+	}
+	150.8.2 = {
+		holder = kushan_006
+	}
+	190.5.28 = {
+		holder = kushan_007
+	}
+	232.3.14 = {
+		holder = kushan_008
+	}
+	247.7.29 = {
+		holder = kushan_009
+	}
+	267.1.12 = {
+		holder = kushan_010
+	}
+	# Collapse of Kushan imperial power
+	270.5.3 = {
+		holder = kushan_011
+	}
+	300.1.19 = {
+		holder = kushan_012
+	}
+	305.7.14 = {
+		holder = kushan_013
+	}
+	# To represent them becoming Gupta vassals c. 330
+	330.1.1 = {
+		liege = 0
+	}
+	# The last Kushan
+	345.2.1 = {
+		holder = kushan_014
+	}
+	375.1.1 = {
+		holder = 0
+	}
+
+	### Aulikaras
+	528.1.1 = {
+		holder = aulikara_09
+	}
+	
+	699.1.1 = {
+		holder = 188377 # Lalitaditya Muktapida
+	}
+	736.1.1 = {
+		holder = 188378 # Kuvalayapida
+	}
+	737.1.1 = {
+		holder = 188379 # Vajraditya
+	}
+	744.1.1 = {
+		holder = 188380 # Prithvyapida
+	}
+	# Samgramapida, son of Vajraditya ruled for 7 days or 7 years depending on source
+	748.1.1 = {
+		holder = 188381 # Jayapida
+	}
+}
+
+
+d_gandhara = {
+	361.1.1 = {	change_development_level = 7 }
+	476.1.1 = {	change_development_level = 8 }
+	532.1.1 = {	change_development_level = 9 }
+	632.1.1 = {	change_development_level = 10 }
+	768.1.1 = {	change_development_level = 11 }
+	30.1.1 = {
+		holder = kushan_002
+		government = gupta_government
+		liege = "e_kushan"
+	}
+	80.5.2 = {
+		holder = kushan_003
+	}
+	90.6.14 = {
+		holder = kushan_004
+	}
+	127.5.8 = {
+		holder = kushan_005
+	}
+	150.8.2 = {
+		holder = kushan_006
+	}
+	190.5.28 = {
+		holder = kushan_007
+	}
+	232.3.14 = {
+		holder = kushan_008
+	}
+	247.7.29 = {
+		holder = kushan_009
+	}
+	267.1.12 = {
+		holder = kushan_010
+	}
+	# Collapse of Kushan imperial power
+	270.5.3 = {
+		holder = kushan_011
+	}
+	300.1.19 = {
+		holder = kushan_012
+	}
+	305.7.14 = {
+		holder = kushan_013
+	}
+	# To represent them becoming Gupta vassals c. 330
+	345.2.1 = {
+		holder = kushan_014
+	}
+	395.1.1 = {
+		holder = xionite_011
+		government = nomadic_government 
+		liege = "k_kidaria"
+	}
+	422.6.17 = {
+		holder = xionite_018
+	}
+	431.4.17 = {
+		holder = xionite_019
+	}
+	452.7.4 = {
+		holder = xionite_020
+	}
+	460.3.4 = {
+		holder = xionite_003
+	}
+	488.1.1 = {
+		holder = alchonid_005
+		liege = "k_alchon_hun"
+	}
+	493.6.2 = {
+		holder = alchonid_008
+	}
+	497.4.11 = {
+		holder = alchonid_010
+	}
+	515.4.6 = {
+		holder = alchonid_011
+	}
+	531.1.3 = {
+		holder = nezak_008
+		liege = "k_nezak_hun"
+	}
+	582.5.28 = {
+		holder = nezak_009
+	}
+	586.3.24 = {
+		holder = nezak_010
+	}
+	592.9.18 = {
+		holder = nezak_011
+	}
+	613.1.24 = {
+		holder = nezak_012
+	}
+	618.4.7 = {
+		holder = nezak_013
+	}
+	625.4.2 = {
+		holder = nezak_014
+	}
+	631.12.30 = {
+		holder = nezak_015
+		liege = 0
+	}
+}
+c_nandana = {
+	361.1.1 = { change_development_level = 8 }
+	476.1.1 = { change_development_level = 9 }
+	532.1.1 = { change_development_level = 10 }
+	632.1.1 = { change_development_level = 11 }
+	768.1.1 = { change_development_level = 12 }
+	30.1.1 = {
+		holder = kushan_002
+		government = gupta_government
+		liege = "d_gandhara"
+	}
+	80.5.2 = {
+		holder = kushan_003
+	}
+	90.6.14 = {
+		holder = kushan_004
+	}
+	127.5.8 = {
+		holder = kushan_005
+	}
+	150.8.2 = {
+		holder = kushan_006
+	}
+	190.5.28 = {
+		holder = kushan_007
+	}
+	232.3.14 = {
+		holder = kushan_008
+	}
+	247.7.29 = {
+		holder = kushan_009
+	}
+	267.1.12 = {
+		holder = kushan_010
+	}
+	# Collapse of Kushan imperial power
+	270.5.3 = {
+		holder = kushan_011
+	}
+	300.1.19 = {
+		holder = kushan_012
+	}
+	305.7.14 = {
+		holder = kushan_013
+	}
+	# The last Kushan
+	345.2.1 = {
+		holder = kushan_014
+	}
+}
+c_urgun = {
+	395.1.1 = {
+		holder = xionite_013
+		government = nomadic_government  
+		liege = "d_gandhara"
+	}
+	476.1.1 = {
+		holder = nezak_017
+		government = gupta_government
+		liege = k_nezak_hun
+	}
+}
+c_bannu = {
+	395.1.1 = {
+		holder = xionite_013
+		government = nomadic_government 
+	}
+	
+	460.3.4 = {
+		holder = xionite_007
+		liege = "k_kidaria"
+	}
+}
+
+c_karor = {
+	### Maitrakas
+	# Placeholder vassal
+	361.1.2 = {
+		holder = matraka_10
+		liege = d_lahore
+		government = gana_sangha_government
+		succession_laws = { gana_sangha_elective_succession_law }
+	}
+	# 390.1.1 = {
+	# 	government = tribal_government
+	# 	holder = 901086 #Marunda
+	# 	liege = e_bengal
+	# 	government = gupta_government
+	# }
+	422.6.17 = {
+		holder = xionite_018
+		liege = "k_kidaria"
+	}
+	431.4.17 = {
+		holder = xionite_019
+	}
+	452.7.4 = {
+		holder = xionite_020
+	}
+	460.3.4 = {
+		holder = xionite_003
+	}
+	500.8.25 = {
+		holder = nezak_005
+		liege = k_nezak_hun
+	}
+	507.10.29 = {
+		holder = nezak_006
+	}
+	510.11.12 = {
+		holder = nezak_007
+	}
+	531.1.3 = {
+		holder = nezak_008
+	}
+	532.1.1 = {
+		holder = matraka_misc_001
+	}
+}
+# c_nandana = {
+# 	390.1.1 = {
+# 		government = tribal_government
+# 		holder = 901086 #Marunda
+# 		liege = e_bengal
+# 		government = gupta_government
+# 	}
+# }
+c_purushapura = {
+	361.1.1 = { change_development_level = 13 }
+	476.1.1 = { change_development_level = 14 }
+	532.1.1 = { change_development_level = 15 }
+	632.1.1 = { change_development_level = 16 }
+	768.1.1 = { change_development_level = 17 }
+	395.1.1 = {
+		holder = xionite_011
+		government = nomadic_government 
+		liege = "d_gandhara"
+	}
+	422.6.17 = {
+		holder = xionite_018
+	}
+	431.4.17 = {
+		holder = xionite_019
+	}
+	440.1.1 = {
+		holder = alchonid_005
+		liege = "k_alchon_hun"
+	}
+	493.6.2 = {
+		holder = alchonid_008
+	}
+	497.4.11 = {
+		holder = alchonid_010
+	}
+	515.4.6 = {
+		holder = alchonid_011
+	}
+}
+c_udabhanda = {
+	
+	361.1.1 = { change_development_level = 11 }
+	476.1.1 = { change_development_level = 12 }
+	532.1.1 = { change_development_level = 13 }
+	632.1.1 = { change_development_level = 14 }
+	768.1.1 = { change_development_level = 15 }
+	395.1.1 = {
+		holder = xionite_011
+		government = nomadic_government 
+		liege = "d_gandhara"
+	}
+	422.6.17 = {
+		holder = xionite_018
+	}
+	431.4.17 = {
+		holder = xionite_019
+	}
+	440.1.1 = {
+		holder = alchonid_005
+		liege = "k_alchon_hun"
+	}
+	493.6.2 = {
+		holder = alchonid_008
+	}
+	497.4.11 = {
+		holder = alchonid_010
+	}
+	515.4.6 = {
+		holder = alchonid_011
+	}
+}
+
+# c_nandana = {
+# 	756.1.1 = {
+# 		holder = 191961 #Sujji, fictional vassal in the Salt range
+# 		liege = k_punjab
+# 	}
+	
+
+# }
+
+
+# c_bannu = {
+# 	750.1.1 = {
+# 		liege = d_kabul
+# 		holder = 188569
+# 	}
+	
+	
+# }
+
+
+# c_urgun = {
+# 	680.1.1 = {
+# 		liege = d_sistan
+# 		holder = 188701 # Zunbil founder
+# 	}
+# 	687.1.1 = {
+# 		holder = 188702
+# 	}
+# 	725.1.1 = {
+# 		holder = 188703
+# 	}
+# 	738.1.1 = {
+# 		holder = 188628
+# 	}
+# }
+
+
+d_multan = {
+	867.1.1 = { change_development_level = 12 }
+	
+	712.1.1 = {
+		liege = e_arabia
+		# holder = # Muhammad bin Qasim
+	}
+	716.1.1 = {
+		liege = 0
+	}
+	
+	# ca 716-767: Independent Muslim overlords
+	
+	768.6.1 = {
+		liege = k_sindh # reconquest by Hisham ibn 'Amr al-Taghlibi
+		holder = 188551 # fictitious deputy of al-Multan
+	}
+	
+	# 769-863: Abbasid governors
+	
+}
+
+
+c_multan = {
+	### Maitrakas
+	# Placeholder vassal
+	361.1.2 = {
+		holder = matraka_13
+		liege = d_lahore
+		government = gana_sangha_government
+		succession_laws = { gana_sangha_elective_succession_law }
+	}
+	391.4.19 = {
+		holder = matraka_14
+	}
+	476.1.1 = {
+		holder = matraka_15
+	}
+	# 422.6.17 = {
+	# 	holder = xionite_018
+	# 	government = nomadic_government 
+	# 	liege = "k_kidaria"
+	# }
+	# 431.4.17 = {
+	# 	holder = xionite_019
+	# }
+	# 452.7.4 = {
+	# 	holder = xionite_020
+	# }
+	# 460.3.4 = {
+	# 	holder = xionite_003
+	# }
+
+	480.1.1 = {
+		holder = rai_001
+		liege = k_sindh
+	}
+	524.8.8 = {
+		holder = rai_002
+	}
+	531.1.11 = {
+		holder = rai_003
+	}
+	532.1.1 = {
+		holder = madraka_misc_001
+	}
+	# Left here for reference
+	# 561.9.14 = {
+	# 	holder = rai_004
+	# }
+	# 609.4.22 = {
+	# 	holder = rai_005
+	# }
+	# 632.1.9 = {
+	# 	holder = sindh_brahman_002
+	# }
+	# 671.3.5 = {
+	# 	holder = sindh_brahman_003
+	# }
+	# 679.2.24 = {
+	# 	holder = sindh_brahman_004
+	# }	
+	712.1.1 = {
+		liege = d_multan
+	}
+	
+	# 712-750: Umayyad governors
+	
+	762.1.1 = {
+		holder = 188551 # fictitious deputy of al-Multan
+	}
+	
+	# 750-863: Abbasid governors
+	
+	
+}
+
+
+c_kafirkot = {
+	### Maitrakas
+	# Placeholder vassal
+	361.1.2 = {
+		holder = matraka_11
+		liege = d_lahore
+		government = gana_sangha_government
+		succession_laws = { gana_sangha_elective_succession_law }
+	}
+	395.1.1 = {
+		holder = matraka_12
+	}
+	422.6.17 = {
+		holder = xionite_018
+		government = nomadic_government
+		liege = "k_kidaria"
+	}
+	431.4.17 = {
+		holder = xionite_019
+	}
+	452.7.4 = {
+		holder = xionite_020
+	}
+	460.3.4 = {
+		holder = xionite_007
+	}
+	500.8.25 = {
+		holder = nezak_005
+		liege = k_nezak_hun
+	}
+	507.10.29 = {
+		holder = nezak_006
+	}
+	510.11.12 = {
+		holder = nezak_007
+	}
+	531.1.3 = {
+		holder = nezak_008
+	}
+	532.1.1 = {
+		holder = matraka_misc_001
+	}
+	712.1.1 = {
+		liege = d_multan
+		holder = 188527 # Sama banu Sama
+	}
+	740.1.1 = {
+		holder = 188528 # Jahm
+	}
+	765.1.1 = {
+		holder = 188537 # ?
+	}
+	
+}
+
+
+c_uch = {
+	361.1.2 = {
+		holder = matraka_13
+		liege = d_lahore
+		government = gana_sangha_government
+		succession_laws = { gana_sangha_elective_succession_law }
+	}
+	391.4.19 = {
+		holder = matraka_14
+	}
+	476.1.1 = {
+		holder = matraka_15
+	}
+
+	480.1.1 = {
+		holder = rai_001
+		liege = k_sindh
+	}
+	524.8.8 = {
+		holder = rai_002
+	}
+	531.1.11 = {
+		holder = rai_003
+	}
+	532.1.1 = {
+		holder = madraka_misc_001
+	}
+	# Left here for reference
+	# 561.9.14 = {
+	# 	holder = rai_004
+	# }
+	# 609.4.22 = {
+	# 	holder = rai_005
+	# }
+	# 632.1.9 = {
+	# 	holder = sindh_brahman_002
+	# }
+	# 671.3.5 = {
+	# 	holder = sindh_brahman_003
+	# }
+	# 679.2.24 = {
+	# 	holder = sindh_brahman_004
+	# }	
+	712.1.1 = {
+		liege = d_multan
+	}
+	
+	# 712-750: Umayyad governors
+	
+	762.1.1 = {
+		holder = 188555
+	}
+	
+	# 750-860: Abbasid governors
+	
+	
+}
+
+
+c_karur = {
+	361.1.2 = {
+		holder = matraka_13
+		liege = d_lahore
+		government = gana_sangha_government
+		succession_laws = { gana_sangha_elective_succession_law }
+	}
+	391.4.19 = {
+		holder = matraka_14
+	}
+	476.1.1 = {
+		holder = matraka_15
+	}
+
+	480.1.1 = {
+		holder = rai_001
+		liege = k_sindh
+	}
+	# 524.8.8 = {
+	# 	holder = rai_002
+	# }
+	# 531.1.11 = {
+	# 	holder = rai_003
+	# }
+	
+	### Aulikaras
+	528.1.1 = {
+		holder = aulikara_09
+		liege = k_malwa
+	}
+	540.1.1 = {
+		holder = rai_003
+		liege = k_sindh
+	}
+	561.9.14 = {
+		holder = rai_004
+	}
+	609.4.22 = {
+		holder = rai_005
+	}
+	632.1.9 = {
+		holder = sindh_brahman_002
+	}
+	671.3.5 = {
+		holder = sindh_brahman_003
+	}
+	679.2.24 = {
+		holder = sindh_brahman_004
+	}	
+	712.1.1 = {
+		liege = d_multan
+	}
+	
+	# 712-750: Umayyad governors
+	
+	755.1.1 = {
+		holder = 188554
+	}
+	
+	# 750-863: Abbasid governors
+	
+	
+}
+
+
+# c_karor = {
+# 	712.1.1 = {
+# 		liege = d_multan
+# 	}
+	
+# 	# ca 716-767: Independent Muslim overlords
+	
+# 	768.6.1 = {
+# 		holder = 188551 # fictitious deputy of al-Multan
+# 	}
+	
+	
+# }
+
+
+c_kalat = {
+	360.1.1 = {
+		holder = pars_25
+		government = eranshar_government
+		liege = e_persia
+	}
+	395.1.1 = {
+		holder = pars_26
+	}
+	476.1.1 = {
+		holder = pars_27
+	}
+	500.8.25 = {
+		holder = nezak_005
+		liege = k_nezak_hun
+	}
+	507.10.29 = {
+		holder = nezak_006
+	}
+	510.11.12 = {
+		holder = nezak_007
+	}
+	531.1.3 = {
+		holder = nezak_008
+	}
+	532.1.1 = {
+		holder = matraka_misc_001
+	}
+	711.1.1 = {
+		liege = 0 # not fully conquered by Abbasids
+	}
+	
+	762.1.1 = {
+		holder = 188573 # Kaikanites
+	}
+	
+	
+}
+
+
+d_lahore = {
+	867.1.1 = { change_development_level = 18 }
+	1066.1.1 = { change_development_level = 25 }
+	
+	### Maitrakas
+	361.1.1 = {
+		holder = matraka_01
+		government = gana_sangha_government
+		succession_laws = { gana_sangha_elective_succession_law }
+	}
+	395.1.1 = {
+		holder = matraka_02
+		liege = e_bengal
+	}
+	421.1.1 = {
+		holder = matraka_03
+	}
+	460.1.1 = {
+		holder = matraka_04
+	}
+	532.1.1 = {
+		holder = takka_001
+		liege = k_malwa
+	}
+	540.1.1 = {
+		liege = 0
+	}
+	579.2.6 = {
+		holder = takka_002
+	}
+	610.12.16 = {
+		holder = takka_003
+	}
+	619.7.2 = {
+		holder = takka_004
+	}
+	630.2.9 = {
+		holder = takka_005
+	}
+	740.1.1 = {
+		holder = 191017 #Madras
+		liege = k_punjab
+	}
+	
+}
+
+
+c_lahur = {
+	532.1.1 = {
+		holder = madraka_misc_002
+		liege = d_lahore
+	}
+	740.1.1 = {
+		holder = 191017 #Madras
+		liege = d_lahore
+	}
+	
+}
+
+
+c_dipalpur = {
+	532.1.1 = {
+		holder = madraka_misc_003
+		liege = d_lahore
+	}
+	712.1.1 = {
+		liege = d_multan
+	}
+	762.1.1 = {
+		holder = 191969 #	Fictional vassal
+	}
+	
+}
+
+
+c_bhera = {
+	532.1.1 = {
+		holder = madraka_misc_004
+		liege = d_lahore
+	}
+	740.1.1 = {
+		holder = 191965 #Sangiya, fictional vassal in Takkadesa
+		liege = d_lahore
+	}
+	
+}
+
+
+c_shorkot = {
+	740.1.1 = {
+		holder = 191965 #Sangiya, fictional vassal in Takkadesa
+		liege = d_lahore
+	}
+
+}
+
+
+c_sakala = {
+	361.1.1 = {	change_development_level = 7 }
+	476.1.1 = {	change_development_level = 8 }
+	532.1.1 = {	change_development_level = 9 }
+	632.1.1 = {	change_development_level = 10 }
+	768.1.1 = {	change_development_level = 11 }
+	### Maitrakas
+	# Placeholder vassal
+	361.1.1 = {
+		holder = matraka_18
+		liege = d_lahore
+		government = gana_sangha_government
+		succession_laws = { gana_sangha_elective_succession_law }
+	}
+	476.1.1 = {
+		holder = matraka_19
+	}
+	# 361.1.1 = {
+	# 	holder = matraka_01
+	# 	government = gupta_government
+	# }
+	# 398.1.1 = {
+	# 	holder = matraka_02
+	# 	liege = e_bengal
+	# }
+	# 421.1.1 = {
+	# 	holder = matraka_03
+	# }
+	# 460.1.1 = {
+	# 	holder = matraka_04
+	# }
+	740.1.1 = {
+		holder = 191017 #Madras
+		liege = d_lahore
+	}
+	
+}
+
+
+c_trigarta = {
+	361.1.1 = {
+	 	holder = matraka_01
+	}
+	395.1.1 = {
+	 	holder = matraka_02
+	}
+	421.1.1 = {
+		holder = matraka_03
+	}
+	460.1.1 = {
+		holder = matraka_04
+	}
+
+	600.1.1={
+		liege="k_guge"
+	}
+	610.1.1={
+		holder=katoch_1
+	}
+	625.1.1={
+		liege="e_tibet"
+	}
+	648.1.1={
+		holder=katoch_2
+	}
+	656.1.1={
+		holder=katoch_3
+	}
+	668.1.1={
+		holder=katoch_4
+	}
+	681.1.1={
+		holder=katoch_5
+	}
+	688.1.1={
+		holder=katoch_6
+	}
+	699.1.1={
+		holder=katoch_7
+	}
+	718.1.1={
+		holder=katoch_8
+	}
+	739.1.1={
+		holder=katoch_9
+	}
+	745.1.1={
+		holder=katoch_10
+	}
+	757.1.1={
+		holder=katoch_11
+	}
+	
+}
+
+c_gurjaratra = {
+	### Maitrakas
+	317.1.1 = {
+		holder = gonanda_01
+		government = gana_sangha_government
+		succession_laws = { gana_sangha_elective_succession_law }
+	}
+	347.1.1 = {
+		holder = gonanda_02
+	}
+	381.1.1 = {
+		holder = gonanda_04
+	}
+	395.1.1 = {
+		holder = xionite_012
+		government = nomadic_government 
+		liege = "k_kidaria"
+	}
+	440.1.1 = {
+		holder = alchonid_006
+		liege = "k_alchon_hun"
+	}	
+	532.1.1 = {
+		holder = madraka_misc_004
+		liege = d_lahore
+	}
+	740.1.1 = {
+		holder = 191965 #Sangiya, fictional vassal in Takkadesa
+		liege = d_lahore
+	}
+	
+}

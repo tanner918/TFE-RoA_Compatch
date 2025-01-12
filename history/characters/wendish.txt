@@ -1,0 +1,957 @@
+## Polans
+# Gniezno
+polans_01 = {
+	name = "Sudislav"
+	dynasty = dynasty_polans
+	culture = przeworsk
+	religion = gothic_pagan
+	328.8.29 = {
+		birth = yes
+	}
+	360.12.20 = {
+		death = yes
+	}
+}
+
+polans_11 = {
+	name = "Iziaslav"
+	dynasty = dynasty_polans
+	culture = przeworsk
+	religion = gothic_pagan
+	father = polans_01
+	353.12.21 = {
+		birth = yes
+	}
+	396.5.26 = {
+		death = yes
+	}
+}
+
+polans_21 = {
+	name = "Predslav"
+	dynasty = dynasty_polans
+	culture = przeworsk
+	religion = gothic_pagan
+	father = polans_11
+	387.6.23 = {
+		birth = yes
+	}
+	451.5.5 = {
+		death = yes
+	}
+}
+
+polans_31 = {
+	name = "Vladislav"
+	dynasty = dynasty_polans
+	culture = przeworsk
+	religion = gothic_pagan
+	father = polans_21
+	424.4.10 = {
+		birth = yes
+	}
+	454.2.10 = {
+		death = yes
+	}
+}
+
+polans_41 = {
+	name = "Lev"
+	dynasty = dynasty_polans
+	culture = przeworsk
+	religion = gothic_pagan
+	father = polans_31
+	453.3.27 = {
+		birth = yes
+	}
+	528.10.6 = {
+		death = yes
+	}
+}
+
+polans_51 = {  # Pan, father of Lech, Czech, and Rus
+	name = "Pan"
+	dynasty = 9124
+	culture = wendish
+	religion = slavic_pagan
+	father = vistulans_41
+	475.11.7 = {
+		birth = yes
+	}
+	519.9.12 = {
+		death = yes
+	}
+}
+
+# Poznań
+polans_02 = {
+	name = "Vsevolod"
+	dynasty = dynasty_polans_2
+	culture = przeworsk
+	religion = gothic_pagan
+	331.5.10 = {
+		birth = yes
+	}
+	386.11.9 = {
+		death = yes
+	}
+}
+
+polans_12 = {
+	name = "Volodar"
+	dynasty = dynasty_polans_2
+	culture = przeworsk
+	religion = gothic_pagan
+	father = polans_02
+	362.3.12 = {
+		birth = yes
+	}
+	413.3.15 = {
+		death = yes
+	}
+}
+
+polans_22 = {
+	name = "Sviatoslav"
+	dynasty = dynasty_polans_2
+	culture = przeworsk
+	religion = gothic_pagan
+	father = polans_12
+	388.4.14 = {
+		birth = yes
+	}
+	428.8.28 = {
+		death = yes
+	}
+}
+
+polans_32 = {
+	name = "Predslav"
+	dynasty = dynasty_polans_2
+	culture = przeworsk
+	religion = gothic_pagan
+	father = polans_22
+	427.5.25 = {
+		birth = yes
+	}
+	474.9.13 = {
+		death = yes
+	}
+}
+
+polans_42 = {
+	name = "Ratimir"
+	dynasty = dynasty_polans_2
+	culture = przeworsk
+	religion = gothic_pagan
+	father = polans_32
+	452.8.14 = {
+		birth = yes
+	}
+	516.9.24 = {
+		death = yes
+	}
+}
+
+polans_52 = {
+	name = "Udo"
+	dynasty = dynasty_polans_2
+	culture = przeworsk
+	religion = gothic_pagan
+	father = polans_42
+	490.6.2 = {
+		birth = yes
+	}
+	531.9.12 = {
+		death = yes
+	}
+}
+
+## Vistulans
+# Kraków/Sącz
+vistulans_01 = {
+	name = "Viacheslav"
+	dynasty = 9124  # Lechowicz
+	culture = wendish
+	religion = slavic_pagan
+	343.8.9 = {
+		birth = yes
+	}
+	378.3.8 = {
+		death = yes
+	}
+}
+
+vistulans_11 = {
+	name = "Rostislav"
+	dynasty = 9124  # Lechowicz
+	culture = wendish
+	religion = slavic_pagan
+	father = vistulans_01
+	364.3.3 = {
+		birth = yes
+	}
+	402.11.8 = {
+		death = yes
+	}
+}
+
+vistulans_21 = {
+	name = "Vysheslav"
+	dynasty = 9124  # Lechowicz
+	culture = wendish
+	religion = slavic_pagan
+	father = vistulans_11
+	387.3.12 = {
+		birth = yes
+	}
+	428.9.9 = {
+		death = yes
+	}
+}
+
+vistulans_31 = {
+	name = "Breslav"
+	dynasty = 9124  # Lechowicz
+	culture = wendish
+	religion = slavic_pagan
+	father = vistulans_21
+	419.5.22 = {
+		birth = yes
+	}
+	489.7.27 = {
+		death = yes
+	}
+}
+
+vistulans_41 = {
+	name = "Nako"
+	dynasty = 9124  # Lechowicz
+	culture = wendish
+	religion = slavic_pagan
+	father = vistulans_31
+	441.11.6 = {
+		birth = yes
+	}
+	501.2.12 = {
+		death = yes
+	}
+}
+
+# Sandomierz
+vistulans_02 = {
+	name = "Gleb"
+	dynasty = dynasty_vistulans
+	culture = wendish
+	religion = slavic_pagan
+	337.7.18 = {
+		birth = yes
+	}
+	384.4.14 = {
+		death = yes
+	}
+}
+
+vistulans_12 = {
+	name = "Stanislav"
+	dynasty = dynasty_vistulans
+	culture = wendish
+	religion = slavic_pagan
+	father = vistulans_02
+	366.10.21 = {
+		birth = yes
+	}
+	424.11.28 = {
+		death = yes
+	}
+}
+
+vistulans_22 = {
+	name = "Vuk"
+	dynasty = dynasty_vistulans
+	culture = wendish
+	religion = slavic_pagan
+	father = vistulans_12
+	394.12.29 = {
+		birth = yes
+	}
+	454.6.16 = {
+		death = yes
+	}
+}
+
+vistulans_32 = {
+	name = "Porga"
+	dynasty = dynasty_vistulans
+	culture = wendish
+	religion = slavic_pagan
+	father = vistulans_22
+	422.10.11 = {
+		birth = yes
+	}
+	461.7.7 = {
+		death = yes
+	}
+}
+
+vistulans_42 = {
+	name = "Niklot"
+	dynasty = dynasty_vistulans
+	culture = wendish
+	religion = slavic_pagan
+	father = vistulans_32
+	449.10.25 = {
+		birth = yes
+	}
+	486.11.6 = {
+		death = yes
+	}
+}
+
+vistulans_52 = {
+	name = "Pribislav"
+	dynasty = dynasty_vistulans
+	culture = wendish
+	religion = slavic_pagan
+	father = vistulans_42
+	471.1.15 = {
+		birth = yes
+	}
+	518.2.9 = {
+		death = yes
+	}
+}
+
+## Mazovians
+# Płock
+mazovians_01 = {
+	name = "Boz"
+	dynasty = 2001005  # z Mazur
+	culture = wendish
+	religion = slavic_pagan
+	331.4.1 = {
+		birth = yes
+	}
+	400.5.28 = {
+		death = yes
+	}
+}
+
+mazovians_11 = {
+	name = "Ratimir"
+	dynasty = 2001005  # z Mazur
+	culture = wendish
+	religion = slavic_pagan
+	father = mazovians_01
+	369.10.26 = {
+		birth = yes
+	}
+	429.7.21 = {
+		death = yes
+	}
+}
+
+mazovians_21 = {
+	name = "Porga"
+	dynasty = 2001005  # z Mazur
+	culture = wendish
+	religion = slavic_pagan
+	father = mazovians_11
+	404.10.3 = {
+		birth = yes
+	}
+	439.5.30 = {
+		death = yes
+	}
+}
+
+mazovians_31 = {
+	name = "Vysheslav"
+	dynasty = 2001005  # z Mazur
+	culture = wendish
+	religion = slavic_pagan
+	father = mazovians_21
+	436.10.10 = {
+		birth = yes
+	}
+	478.1.26 = {
+		death = yes
+	}
+}
+
+mazovians_41 = {
+	name = "Gleb"
+	dynasty = 2001005  # z Mazur
+	culture = wendish
+	religion = slavic_pagan
+	father = mazovians_31
+	474.4.30 = {
+		birth = yes
+	}
+	522.11.11 = {
+		death = yes
+	}
+}
+
+# Czersk
+mazovians_02 = {
+	name = "Nako"
+	dynasty = 2001006  # z Mazowszan
+	culture = wendish
+	religion = slavic_pagan
+	330.5.26 = {
+		birth = yes
+	}
+	389.4.20 = {
+		death = yes
+	}
+}
+
+mazovians_12 = {
+	name = "Volodar"
+	dynasty = 2001006  # z Mazowszan
+	culture = wendish
+	religion = slavic_pagan
+	father = mazovians_02
+	354.10.8 = {
+		birth = yes
+	}
+	401.9.14 = {
+		death = yes
+	}
+}
+
+mazovians_22 = {
+	name = "Mstislav"
+	dynasty = 2001006  # z Mazowszan
+	culture = wendish
+	religion = slavic_pagan
+	father = mazovians_12
+	381.3.4 = {
+		birth = yes
+	}
+	440.8.17 = {
+		death = yes
+	}
+}
+
+mazovians_32 = {
+	name = "Ruslan"
+	dynasty = 2001006  # z Mazowszan
+	culture = wendish
+	religion = slavic_pagan
+	father = mazovians_22
+	420.12.27 = {
+		birth = yes
+	}
+	480.1.13 = {
+		death = yes
+	}
+}
+
+mazovians_42 = {
+	name = "Borna"
+	dynasty = 2001006  # z Mazowszan
+	culture = wendish
+	religion = slavic_pagan
+	father = mazovians_32
+	442.6.21 = {
+		birth = yes
+	}
+	509.10.11 = {
+		death = yes
+	}
+}
+
+mazovians_52 = {
+	name = "Vseslav"
+	dynasty = 2001006  # z Mazowszan
+	culture = wendish
+	religion = slavic_pagan
+	father = mazovians_42
+	479.12.21 = {
+		birth = yes
+	}
+	515.4.25 = {
+		death = yes
+	}
+}
+
+## Goplans
+# Kujawy
+goplans_01 = {
+	name = "Svetozar"
+	dynasty = 2001007  # z Goplan
+	culture = przeworsk
+	religion = gothic_pagan
+	335.5.25 = {
+		birth = yes
+	}
+	389.3.1 = {
+		death = yes
+	}
+}
+
+goplans_11 = {
+	name = "Lestko"
+	dynasty = 2001007  # z Goplan
+	culture = przeworsk
+	religion = gothic_pagan
+	father = goplans_01
+	370.12.8 = {
+		birth = yes
+	}
+	419.11.20 = {
+		death = yes
+	}
+}
+
+goplans_21 = {
+	name = "Zdravko"
+	dynasty = 2001007  # z Goplan
+	culture = przeworsk
+	religion = gothic_pagan
+	father = goplans_11
+	407.4.11 = {
+		birth = yes
+	}
+	475.8.25 = {
+		death = yes
+	}
+}
+
+goplans_31 = {
+	name = "Vyshata"
+	dynasty = 2001007  # z Goplan
+	culture = przeworsk
+	religion = gothic_pagan
+	father = goplans_21
+	442.5.10 = {
+		birth = yes
+	}
+	496.10.15 = {
+		death = yes
+	}
+}
+
+goplans_41 = {
+	name = "Ognjen"
+	dynasty = 2001007  # z Goplan
+	culture = przeworsk
+	religion = gothic_pagan
+	father = goplans_31
+	462.1.1 = {
+		birth = yes
+	}
+	507.10.17 = {
+		death = yes
+	}
+}
+
+# Łęczyca
+goplans_02 = {
+	name = "Vyshata"
+	dynasty = 2001008  # z Łęczycan
+	culture = przeworsk
+	religion = gothic_pagan
+	335.8.6 = {
+		birth = yes
+	}
+	395.2.11 = {
+		death = yes
+	}
+}
+
+goplans_12 = {
+	name = "Ognjen"
+	dynasty = 2001008  # z Łęczycan
+	culture = przeworsk
+	religion = gothic_pagan
+	father = goplans_02
+	357.8.4 = {
+		birth = yes
+	}
+	426.12.2 = {
+		death = yes
+	}
+}
+
+goplans_22 = {
+	name = "Igor"
+	dynasty = 2001008  # z Łęczycan
+	culture = przeworsk
+	religion = gothic_pagan
+	father = goplans_12
+	394.5.2 = {
+		birth = yes
+	}
+	440.6.19 = {
+		death = yes
+	}
+}
+
+goplans_32 = {
+	name = "Radoslav"
+	dynasty = 2001008  # z Łęczycan
+	culture = przeworsk
+	religion = gothic_pagan
+	father = goplans_22
+	430.9.6 = {
+		birth = yes
+	}
+	486.7.24 = {
+		death = yes
+	}
+}
+
+goplans_42 = {
+	name = "Vyshata"
+	dynasty = 2001008  # z Łęczycan
+	culture = przeworsk
+	religion = gothic_pagan
+	father = goplans_32
+	455.1.6 = {
+		birth = yes
+	}
+	517.9.3 = {
+		death = yes
+	}
+}
+
+# Others
+venedian_01 = {
+	name = "Valuk"
+	religion = "slavic_pagan"
+	culture = "wendish"
+	trait = adventurer
+	600.1.1 = {
+		birth = yes
+	}
+	678.1.1 = {
+		death = yes
+	}
+}
+venedian_02 = {
+	name = "Stanislav"
+	religion = "slavic_pagan"
+	culture = "wendish"
+	trait = adventurer
+	604.1.1 = {
+		birth = yes
+	}
+	678.1.1 = {
+		death = yes
+	}
+}
+venedian_03 = {
+	name = "Pribslav"
+	religion = "slavic_pagan"
+	culture = "wendish"
+	trait = adventurer
+	598.1.1 = {
+		birth = yes
+	}
+	678.1.1 = {
+		death = yes
+	}
+}
+venedian_04 = {
+	name = "Slavomir"
+	religion = "slavic_pagan"
+	culture = "wendish"
+	trait = adventurer
+	604.1.1 = {
+		birth = yes
+	}
+	672.1.1 = {
+		death = yes
+	}
+}
+venedian_05 = {
+	name = "Nicklot"
+	religion = "slavic_pagan"
+	culture = "wendish"
+	trait = adventurer
+	606.1.1 = {
+		birth = yes
+	}
+	678.1.1 = {
+		death = yes
+	}
+}
+czechs_01 = {
+	name = "Czech"
+	religion = "slavic_pagan"
+	culture = "wendish"
+	dynasty = czech_dynasty
+	trait = adventurer
+	606.1.1 = {
+		birth = yes
+	}
+	678.1.1 = {
+		death = yes
+	}
+}
+czechs_02 = {
+	name = "Slavomir"
+	religion = "slavic_pagan"
+	culture = "wendish"
+	trait = adventurer
+	602.1.1 = {
+		birth = yes
+	}
+	678.1.1 = {
+		death = yes
+	}
+}
+czechs_03 = {
+	name = "Rostislav"
+	religion = "slavic_pagan"
+	culture = "wendish"
+	trait = adventurer
+	601.1.1 = {
+		birth = yes
+	}
+	678.1.1 = {
+		death = yes
+	}
+}
+czechs_04 = {
+	name = "Vojnomir"
+	religion = "slavic_pagan"
+	culture = "wendish"
+	trait = adventurer
+	598.1.1 = {
+		birth = yes
+	}
+	678.1.1 = {
+		death = yes
+	}
+}
+moravian_01 = {
+	name = "Vyshata"
+	religion = "slavic_pagan"
+	culture = "wendish"
+	trait = adventurer
+	609.1.1 = {
+		birth = yes
+	}
+	678.1.1 = {
+		death = yes
+	}
+}
+sorbs_01 = {
+	name = "Vyshata"
+	religion = "slavic_pagan"
+	culture = "wendish"
+	trait = adventurer
+	dynasty = sorb_dynasty
+	509.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+
+polony_01 = {
+	name = "Vyshata"
+	religion = "slavic_pagan"
+	culture = "wendish"
+	340.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+polony_02 = {
+	name = "Vojnomir"
+	religion = "slavic_pagan"
+	culture = "wendish"
+	360.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+
+pomerania_01 = {
+	name = "Voislav"
+	religion = "gothic_pagan"
+	culture = przeworsk
+	341.2.6 = {
+		birth = yes
+	}
+	395.1.1 = {
+		death = yes
+	}
+}
+pomerania_02 = {
+	name = "Yaropolk"
+	religion = "gothic_pagan"
+	culture = przeworsk
+	370.12.2 = {
+		birth = yes
+	}
+	423.1.1 = {
+		death = yes
+	}
+}
+pomerania_03 = {
+	name = "Lev"
+	religion = "gothic_pagan"
+	culture = przeworsk
+	452.1.10 = {
+		birth = yes
+	}
+	489.1.1 = {
+		death = yes
+	}
+}
+pomerania_04 = {
+	name = "Voislav"
+	religion = "gothic_pagan"
+	culture = przeworsk
+	450.1.1 = {
+		birth = yes
+	}
+	480.1.1 = {
+		death = yes
+	}
+}
+
+
+wendish_01 = {
+	name = "Witzan"
+	religion = "slavic_pagan"
+	culture = wendish
+	500.1.1 = {
+		birth = yes
+	}
+	555.1.1 = {
+		death = yes
+	}
+}
+wendish_02 = {
+	name = "Prohor"
+	religion = "slavic_pagan"
+	culture = wendish
+	500.1.1 = {
+		birth = yes
+	}
+	555.1.1 = {
+		death = yes
+	}
+}
+wendish_03 = {
+	name = "Chwost"
+	religion = "slavic_pagan"
+	culture = wendish
+	501.1.1 = {
+		birth = yes
+	}
+	555.1.1 = {
+		death = yes
+	}
+}
+wendish_04 = {
+	name = "Lev"
+	religion = "slavic_pagan"
+	culture = wendish
+	500.1.1 = {
+		birth = yes
+	}
+	555.1.1 = {
+		death = yes
+	}
+}
+wendish_05 = {
+	name = "Borna"
+	religion = "slavic_pagan"
+	culture = wendish
+	497.1.1 = {
+		birth = yes
+	}
+	555.1.1 = {
+		death = yes
+	}
+}
+wendish_06 = {
+	name = "Vladislav"
+	religion = "slavic_pagan"
+	culture = wendish
+	500.1.1 = {
+		birth = yes
+	}
+	555.1.1 = {
+		death = yes
+	}
+}
+wendish_07 = {
+	name = "Muzok"
+	religion = "slavic_pagan"
+	culture = wendish
+	495.1.1 = {
+		birth = yes
+	}
+	555.1.1 = {
+		death = yes
+	}
+}
+wendish_08 = {
+	name = "Sudislav"
+	religion = "slavic_pagan"
+	culture = wendish
+	503.1.1 = {
+		birth = yes
+	}
+	555.1.1 = {
+		death = yes
+	}
+}
+wendish_09 = {
+	name = "Vsegord"
+	religion = "slavic_pagan"
+	culture = wendish
+	502.1.1 = {
+		birth = yes
+	}
+	555.1.1 = {
+		death = yes
+	}
+}
+wendish_10 = {
+	name = "Mezamir"
+	religion = "slavic_pagan"
+	culture = wendish
+	500.1.1 = {
+		birth = yes
+	}
+	555.1.1 = {
+		death = yes
+	}
+}
+wendish_11 = {
+	name = "Vuk"
+	religion = "slavic_pagan"
+	culture = wendish
+	500.1.1 = {
+		birth = yes
+	}
+	555.1.1 = {
+		death = yes
+	}
+}
+wendish_12 = {
+	name = "Zhrets"
+	religion = "slavic_pagan"
+	culture = wendish
+	500.1.1 = {
+		birth = yes
+	}
+	555.1.1 = {
+		death = yes
+	}
+}

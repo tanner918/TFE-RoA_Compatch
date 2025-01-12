@@ -1,0 +1,352 @@
+﻿995000 = {
+	name = "Alaric"
+	dynasty = 99950000
+	religion = "gothic_pagan"
+	culture = "herulian"
+	340.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+995001 = {
+	name = "Theodulf"
+	dynasty = 99950000
+	religion = "gothic_pagan"
+	culture = "herulian"
+	father = 995000
+	394.1.1 = {
+		birth = yes
+	}
+	450.1.1 = {
+		death = yes
+	}
+}
+995002 = {
+	name = "Eriulf"
+	dynasty = 99950000
+	religion = "arianism"
+	culture = "herulian"
+	father = 995001
+	430.1.1 = {
+		birth = yes
+	}
+	489.1.1 = {
+		death = yes
+	}
+}
+995003 = {
+	name = "Rodulf"
+	dynasty = 99950000
+	religion = "arianism"
+	culture = "herulian"
+	father = 995002
+	460.1.1 = {
+		birth = yes
+	}
+	508.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = 993004
+		}
+	}
+}
+995004 = {
+	name = "Salinga"
+	female = yes
+	dynasty = 99950000
+	religion = "arianism"
+	culture = "herulian"
+	father = 995003
+	500.1.1 = {
+		birth = yes
+	}
+	545.1.1 = {
+		death = yes
+	}
+}
+995005 = {
+	name = "Eriulf" # brother of Rodulf murdered by lombards
+	dynasty = 99950000
+	religion = "arianism"
+	culture = "herulian"
+	father = 995002
+	461.1.1 = {
+		birth = yes
+	}
+	481.1.1 = {
+		add_spouse = 993006
+	}
+	510.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = 993006
+		}
+	}
+}
+995006 = {
+	name = "Gripa" # heruli king around Singidunum
+	dynasty = 99950000
+	religion = "arianism"
+	culture = "herulian"
+	father = 995002
+	462.1.1 = {
+		birth = yes
+	}
+	528.1.6 = {
+		religion = "chalcedonian"
+	}
+	530.1.1 = {
+		death = yes
+	}
+}
+995007 = {
+	name = "Ocho" # heruli king
+	dynasty = 99950000
+	religion = "arianism"
+	culture = "herulian"
+	father = 995005
+	mother = 993006
+	483.1.1 = {
+		birth = yes
+	}
+	528.1.6 = {
+		religion = "chalcedonian"
+	}
+	545.1.1 = {
+		death = {
+			death_reason = death_murder
+		}
+	}
+}
+995008 = {
+	name = "Faras" # heruli leader in Justinian's army under Belisarius
+	religion = "chalcedonian"
+	culture = "herulian"
+	martial = 10
+	prowess = 10
+	501.1.1 = {
+		birth = yes
+	}
+	535.1.1 = {
+		death = {
+			death_reason = death_murder
+		}
+	}
+}
+995009 = {
+	name = "Suartuas" # heruli pretendient of Justinian
+	religion = "chalcedonian"
+	culture = "herulian"
+	505.1.1 = {
+		birth = yes
+	}
+	552.1.1 = {
+		death = {
+			death_reason = death_murder
+		}
+	}
+}
+995010 = {
+	name = "Aluith" # heruli leader in Justinian's army under Narses
+	religion = "arianism"
+	culture = "herulian"
+	498.1.1 = {
+		birth = yes
+	}
+	541.1.1 = {
+		death = {
+			death_reason = death_murder
+		}
+	}
+}
+995011 = {
+	name = "Visand" # heruli leader in Justinian's army under Narses
+	religion = "arianism"
+	culture = "herulian"
+	496.1.1 = {
+		birth = yes
+	}
+	540.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+995012 = {
+	name = "Fanithech" # heruli leader in Justinian's army under Narses
+	religion = "arianism"
+	culture = "herulian"
+	495.1.1 = {
+		birth = yes
+	}
+	538.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+995013 = {
+	name = "Filemund" # heruli leader in Justinian's army under Narses
+	religion = "arianism"
+	culture = "herulian"
+	517.1.1 = {
+		birth = yes
+	}
+	553.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+995014 = {
+	name = "Fulchar" # heruli leader in Justinian's army under Narses
+	religion = "arianism"
+	culture = "herulian"
+	513.1.1 = {
+		birth = yes
+	}
+	553.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+995015 = {
+	name = "Sindebald" # heruli leader in Justinian's army under Narses
+	religion = "arianism"
+	culture = "herulian"
+	515.1.1 = {
+		birth = yes
+	}
+	566.6.1 = {
+		death = {
+			death_reason = death_execution
+		}
+	}
+}
+995016 = {
+	name = "Jonacar"
+	dynasty = 99950001
+	religion = "gothic_pagan"
+	culture = "herulian"
+	310.1.1 = {
+		birth = yes
+	}
+	360.1.1 = {
+		death = yes
+	}
+}
+995017 = {
+	name = "Serila"
+	dynasty = 99950001
+	religion = "gothic_pagan"
+	culture = "herulian"
+	father = 995016
+	trait = vengeful
+	334.1.1 = {
+		birth = yes
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+995018 = {
+	name = "Hemdir"
+	dynasty = 99950001
+	religion = "gothic_pagan"
+	culture = "herulian"
+	father = 995016
+	trait = vengeful
+	336.1.1 = {
+		birth = yes
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+995019 = {
+	name = "Sunhilda"
+	female = yes
+	dynasty = 99950001
+	religion = "gothic_pagan"
+	culture = "herulian"
+	father = 995016
+	trait = lustful
+	338.1.1 = {
+		birth = yes
+	}
+	361.1.1 = {
+		effect = {
+			set_relation_lover = { reason = lover_history target = character:992010 }
+		}
+	}
+	363.1.1 = {
+		death = {
+			death_reason = death_execution
+			killer = 992003
+		}
+	}
+}
+heruli_01 = {
+	name = "Eriulf"
+	religion = "arianism"
+	culture = "herulian"
+	444.1.1 = {
+		birth = yes
+	}
+	515.1.1 = {
+		death = yes
+	}
+}
+
+heruli_02 = {
+	name = "Theodulf"
+	religion = "arianism"
+	culture = "herulian"
+	450.1.1 = {
+		birth = yes
+	}
+	532.1.1 = {
+		death = yes
+	}
+}
+
+heruli_03 = {
+	name = "Rodulf"
+	religion = "arianism"
+	culture = "herulian"
+	449.1.1 = {
+		birth = yes
+	}
+	502.1.1 = {
+		death = yes
+	}
+}
+
+heruli_04 = {
+	name = "Alaric"
+	religion = "arianism"
+	culture = "herulian"
+	453.1.1 = {
+		birth = yes
+	}
+	507.1.1 = {
+		death = yes
+	}
+}
+
+heruli_05 = {
+	name = "Filemund"
+	religion = "arianism"
+	culture = "herulian"
+	458.1.1 = {
+		birth = yes
+	}
+	513.1.1 = {
+		death = yes
+	}
+}
+
+

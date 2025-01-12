@@ -1,0 +1,498 @@
+﻿k_pontus = {
+	20.1.1 = {
+		change_development_level = 6
+	}
+}
+
+
+d_paphlagonia = {
+	330.1.1 = {
+		liege = "e_byzantium"
+	}
+	361.1.1 = {
+		holder = pontus_01
+		liege = k_nikaea
+		de_jure_liege = k_nikaea
+	}
+	395.1.1 = {
+		holder = pontus_02
+	}
+	476.1.1 = {
+		holder = pontus_03
+	}
+	500.1.1 = {
+		holder = pontus_24
+	}
+	759.1.1 = {
+		holder = 145838
+	}
+}
+
+
+c_paphlagonia = {
+	361.1.1 = {	change_development_level = 5 }
+	532.1.1 = {	change_development_level = 6 }
+	768.1.1 = {	change_development_level = 7 }
+	
+	330.1.1={
+		liege="d_paphlagonia"
+	}
+	361.1.1 = {
+		holder = pontus_01
+		liege = k_nikaea
+	}
+	395.1.1 = {
+		holder = pontus_02
+	}
+	476.1.1 = {
+		holder = pontus_03
+}
+	500.1.1 = {
+		holder = pontus_24
+	}
+	757.1.1={
+		holder=145840
+	}
+}
+
+
+c_pompeiopolis = {
+	330.1.1={
+		liege="d_paphlagonia"
+	}
+	361.1.1 = {
+		holder = pontus_01
+		liege = k_nikaea
+	}
+	395.1.1 = {
+		holder = pontus_02
+	}
+	476.1.1 = {
+		holder = pontus_03
+	}
+	500.1.1 = {
+		holder = pontus_24
+	}
+	757.1.1={
+		holder=145840
+	}
+}
+
+
+d_armeniac = {
+	330.1.1 = {
+		liege = "e_byzantium"
+	}
+	361.1.1 = {
+		holder = pontus_04
+		liege = k_nikaea
+		de_jure_liege = k_nikaea
+	}
+	395.1.1 = {
+		holder = pontus_05
+	}
+	476.1.1 = {
+		holder = pontus_06
+	}
+	500.1.1 = {
+		holder = pontus_25
+	}
+	763.1.1 = {
+		holder = 145847
+	}
+}
+
+
+c_helenopontus = {
+	330.1.1 = {
+		liege = "d_armeniac"
+	}
+	361.1.1 = {
+		holder = pontus_04
+		liege = k_nikaea
+	}
+	395.1.1 = {
+		holder = pontus_05
+	}
+	476.1.1 = {
+		holder = pontus_06
+	}
+	500.1.1 = {
+		holder = pontus_25
+	}
+	763.1.1 = {
+		holder = 145847
+	}
+
+}
+
+
+c_sinope = {
+	361.1.1 = {	change_development_level = 5 }
+	532.1.1 = {	change_development_level = 6 }
+	768.1.1 = {	change_development_level = 7 }
+	
+	330.1.1 = {
+		liege = "d_armeniac"
+	}
+	361.1.1 = {
+		holder = pontus_04
+		liege = k_nikaea
+	}
+	395.1.1 = {
+		holder = pontus_05
+	}
+	476.1.1 = {
+		holder = pontus_06
+	}
+	500.1.1 = {
+		holder = pontus_25
+	}
+	765.1.1 = {
+		holder = 145848
+	}
+}
+
+
+c_euchaita = {
+	330.1.1 = {
+		liege = "d_armeniac"
+	}
+	361.1.1 = {
+		holder = pontus_04
+		liege = k_nikaea
+	}
+	395.1.1 = {
+		holder = pontus_05
+	}
+	476.1.1 = {
+		holder = pontus_06
+	}
+	500.1.1 = {
+		holder = pontus_25
+	}
+	763.1.1 = {
+		holder = 145847
+	}
+
+}
+
+
+c_zela = {
+	330.1.1 = {
+		liege = "d_armeniac"
+	}
+	361.1.1 = {
+		holder = pontus_04
+		liege = k_nikaea
+	}
+	395.1.1 = {
+		holder = pontus_05
+	}
+	476.1.1 = {
+		holder = pontus_06
+	}
+	500.1.1 = {
+		holder = pontus_25
+	}
+	763.1.1 = {
+		holder = 145847
+	}
+
+}
+
+
+d_sebasteia = {
+	361.1.1 = {
+		holder = pontus_07
+		liege = k_nikaea
+		de_jure_liege = k_nikaea
+	}
+	395.1.1 = {
+		holder = pontus_08
+	}
+	476.1.1 = {
+		holder = pontus_09
+	}
+	500.1.1 = {
+		holder = pontus_26
+	}
+	750.1.1 = {
+		liege = e_byzantium
+	}
+	
+	
+}
+
+
+c_sebasteia = {
+	361.1.1 = {	change_development_level = 4 }
+	532.1.1 = {	change_development_level = 5 }
+	768.1.1 = {	change_development_level = 6 }
+	
+	361.1.1 = {
+		holder = pontus_07
+		liege = k_nikaea
+	}
+	395.1.1 = {
+		holder = pontus_08
+	}
+	476.1.1 = {
+		holder = pontus_09
+	}
+	500.1.1 = {
+		holder = pontus_26
+	}
+}
+
+
+c_azysia = {
+	361.1.1 = {
+		holder = pontus_13
+		liege = k_nikaea
+		de_jure_liege = d_melitene
+	}
+	395.1.1 = {
+		holder = pontus_14
+	}
+	476.1.1 = {
+		holder = pontus_15
+	}
+	500.1.1 = {
+		holder = pontus_27
+	}
+
+}
+
+
+c_ablastha = {
+	361.1.1 = {
+		holder = pontus_13
+		liege = k_nikaea
+		de_jure_liege = d_melitene
+	}
+	395.1.1 = {
+		holder = pontus_14
+	}
+	476.1.1 = {
+		holder = pontus_15
+	}
+	500.1.1 = {
+		holder = pontus_27
+	}
+
+}
+
+
+d_charsianon = {
+	330.1.1 = {
+		liege = "e_byzantium"
+	}
+	361.1.1 = {
+		holder = pontus_16
+		liege = k_nikaea
+		de_jure_liege = k_nikaea
+	}
+	395.1.1 = {
+		holder = pontus_17
+	}
+	476.1.1 = {
+		holder = pontus_18
+	}
+	500.1.1 = {
+		holder = pontus_28
+	}
+	767.1.1 = {
+		holder = 145823
+	}
+}
+
+
+c_charsianon = {
+	330.1.1 = {
+		liege = "d_charsianon"
+	}
+	361.1.1 = {
+		holder = pontus_16
+		liege = k_nikaea
+	}
+	395.1.1 = {
+		holder = pontus_17
+	}
+	476.1.1 = {
+		holder = pontus_18
+	}
+	500.1.1 = {
+		holder = pontus_28
+	}
+	767.1.1 = {
+		holder = 145823
+	}
+
+}
+
+
+c_kaisereia = {
+	330.1.1 = {
+		liege = "d_charsianon"
+	}
+	361.1.1 = {
+		holder = pontus_16
+		liege = k_nikaea
+	}
+	395.1.1 = {
+		holder = pontus_17
+	}
+	476.1.1 = {
+		holder = pontus_18
+	}
+	500.1.1 = {
+		holder = pontus_28
+	}
+	767.1.1 = {
+		holder = 145823
+	}
+
+}
+
+
+c_kyzistra = {
+	330.1.1 = {
+		liege = "d_charsianon"
+	}
+	361.1.1 = {
+		holder = cappadocia_01
+		liege = d_cappadocia
+		de_jure_liege = d_cappadocia
+	}
+	395.1.1 = {
+		holder = cappadocia_02
+	}
+	476.1.1 = {
+		holder = cappadocia_03
+	}
+	500.1.1 = {
+		holder = pontus_28
+	}
+	532.1.1 = {
+		holder = cappadocia_04
+	}
+	765.1.1 = {
+		holder = 145825
+	}
+
+}
+
+
+d_chaldia = {
+	#Byz
+	330.1.1 = {
+		liege = "e_byzantium"
+	}
+	361.1.1 = {
+		holder = pontus_19
+		liege = k_nikaea
+	}
+	395.1.1 = {
+		holder = pontus_20
+	}
+	476.1.1 = {
+		holder = pontus_21
+	}
+	500.1.1 = {
+		holder = pontus_29
+	}
+	758.1.1 = {
+		holder = 145852
+	}
+	
+	
+}
+
+
+c_cerasus = {
+	361.1.1 = {	change_development_level = 5 }
+	532.1.1 = {	change_development_level = 6 }
+	768.1.1 = {	change_development_level = 7 }
+	
+	361.1.1 = {
+		holder = pontus_22
+		liege = d_chaldia
+		de_jure_liege = k_nikaea
+	}
+	395.1.1 = {
+		holder = pontus_23
+		liege = d_chaldia
+	}
+	476.1.1 = {
+		holder = pontus_21
+		liege = k_nikaea
+	}
+	500.1.1 = {
+		holder = pontus_29
+	}
+	
+}
+
+
+c_trebizond = {
+	361.1.1 = {	change_development_level = 6 }
+	532.1.1 = {	change_development_level = 7 }
+	768.1.1 = {	change_development_level = 8 }
+	
+	361.1.1 = {
+		holder = pontus_19
+		liege = k_nikaea
+	}
+	395.1.1 = {
+		holder = pontus_20
+	}
+	476.1.1 = {
+		holder = pontus_21
+	}
+	500.1.1 = {
+		holder = pontus_29
+	}
+	
+}
+
+
+c_colonea = {
+	
+	361.1.1 = {
+		holder = pontus_19
+		liege = k_nikaea
+	}
+	395.1.1 = {
+		holder = pontus_20
+	}
+	476.1.1 = {
+		holder = pontus_21
+	}
+	500.1.1 = {
+		holder = pontus_29
+	}
+
+}
+
+
+c_satala = {
+	361.1.1 = {
+		holder = pontus_07
+		liege = k_nikaea
+		de_jure_liege = d_sebasteia
+	}
+	395.1.1 = {
+		holder = pontus_08
+	}
+	476.1.1 = {
+		holder = pontus_09
+	}
+	500.1.1 = {
+		holder = pontus_29
+	}
+	532.1.1 = {
+		holder = pontus_26
+	}
+}
+

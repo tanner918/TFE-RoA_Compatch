@@ -1,0 +1,200 @@
+﻿
+##################################################
+# 
+# PANDUVAMSHIS OF MEKALA
+# (not to be confused with the Panduvamshis of Dakshina Kosala, who they may be related to or not)
+# 
+# By Cybrxkhan
+# Please forgive me Soraya for any issues, I did this best I can with limited time/knowledge T_T
+# 
+##################################################
+
+# d_ratanpur, c_tripuri, c_jharkand
+
+#Panduvamshis
+panduvamshi_01  = {
+	name = "Jayabala"
+	dynasty = dynasty_panduvamshis_of_mekala
+	religion = "shaivism"
+	culture = "kaushali"
+	478.4.14 = {
+		birth = yes
+	}
+	525.6.7 = {
+		death = yes
+	}
+}
+
+panduvamshi_02  = {
+	name = "Vatsaraja"
+	dynasty = dynasty_panduvamshis_of_mekala
+	religion = "shaivism"
+	culture = "kaushali"
+	father=panduvamshi_01
+	501.3.12 = {
+		birth = yes
+	}
+	525.1.1 = {
+		add_spouse = panduvamshi_misc_01
+	}
+	559.4.3 = {
+		death = yes
+	}
+}
+
+panduvamshi_03  = {
+	name = "Nagabala"
+	dynasty = dynasty_panduvamshis_of_mekala
+	religion = "shaivism"
+	culture = "kaushali"
+	father=panduvamshi_02
+	mother=panduvamshi_misc_01
+	530.4.16 = {
+		birth = yes
+	}
+	555.1.1 = {
+		add_spouse = panduvamshi_misc_02
+	}
+	583.7.17 = {
+		death = yes
+	}
+}
+
+panduvamshi_04  = {
+	name = "Bharatabala"
+	dynasty = dynasty_panduvamshis_of_mekala
+	religion = "shaivism"
+	culture = "kaushali"
+	father=panduvamshi_03
+	mother=panduvamshi_misc_02
+	557.2.6 = {
+		birth = yes
+	}
+	576.1.1 = {
+		add_spouse = panduvamshi_misc_03
+	}
+	577.1.1 = {
+		add_spouse = panduvamshi_misc_04
+	}
+	599.3.10 = {
+		death = yes
+	}
+}
+
+panduvamshi_05  = {
+	name = "Shurabala"
+	dynasty = dynasty_panduvamshis_of_mekala
+	religion = "shaivism"
+	culture = "kaushali"
+	father=panduvamshi_04
+	mother=panduvamshi_misc_04
+	579.3.13 = {
+		birth = yes
+	}
+	629.4.11 = {
+		death = yes
+	}
+}
+
+panduvamshi_misc_01  = {
+	name = "Drona-bhattarika"
+	female=yes
+	religion = "shaivism"
+	culture = "kaushali"
+	507.4.28 = {
+		birth = yes
+	}
+	571.3.24 = {
+		death = yes
+	}
+}
+
+panduvamshi_misc_02  = {
+	name = "Indra-bhattarika"
+	female=yes
+	religion = "shaivism"
+	culture = "kaushali"
+	533.7.9 = {
+		birth = yes
+	}
+	598.2.14 = {
+		death = yes
+	}
+}
+
+panduvamshi_misc_03  = {
+	name = "Lokaprakasha"
+	female=yes
+	religion = "shaivism"
+	culture = "kaushali"
+	556.12.29 = {
+		birth = yes
+	}
+	601.9.17 = {
+		death = yes
+	}
+}
+
+panduvamshi_misc_04  = {
+	name = "Mahadevi"
+	female=yes
+	religion = "shaivism"
+	culture = "kaushali"
+	556.12.29 = {
+		birth = yes
+	}
+	601.9.17 = {
+		death = yes
+	}
+}
+
+
+
+#############################################################
+# 
+# MISC PLACEHOLDERS
+# 
+# Done by Cybrxkhan
+# 
+#############################################################
+
+kaushali_misc_01  = {
+	name = "Abhinava"
+	religion = "mahasanghika"
+	culture = "kaushali"
+	511.4.17 = {
+		birth = yes
+	}
+	579.7.2 = {
+		death = yes
+	}
+}
+
+kaushali_misc_02  = {
+	name = "Kunwar"
+	religion = "krishnaism"
+	culture = "kaushali"
+	489.1.12 = {
+		birth = yes
+	}
+	562.9.2 = {
+		death = yes
+	}
+}
+
+kaushali_misc_03  = {
+	name = "Viramdeva"
+	religion = "srikula_shaktism"
+	culture = "kaushali"
+	495.3.10 = {
+		birth = yes
+	}
+	546.11.18 = {
+		death = yes
+	}
+}
+
+
+
+
+

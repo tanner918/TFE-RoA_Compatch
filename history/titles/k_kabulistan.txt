@@ -1,0 +1,556 @@
+﻿
+k_kabulistan = {
+	361.1.1 = { change_development_level = 2 }
+	476.1.1 = { change_development_level = 3 }
+	532.1.1 = { change_development_level = 4 }
+	632.1.1 = { change_development_level = 5 }
+	768.1.1 = {	change_development_level = 6 }
+	### Kushano-Sassanians
+	233.1.1 = {
+		holder = sassanid_13 # Adreshir Kushanshah
+		government = eranshar_government
+		liege = e_persia
+	}
+	245.1.1 = {
+		holder = sassanid_14 # Peroz I Kushanshah
+	}
+	275.1.1 = {
+		holder = sassanid_10 # Hormazd I Kushanshah
+	}
+	293.1.1 = {
+		holder = 180611 # Hormazd II
+	}
+	303.1.1 = {
+		holder = kushano_sassanid_01 # Peroz II Kushanshah
+	}
+	330.1.1 = {
+		holder = kushano_sassanid_02 # Bahram Kushanshah
+	}
+	365.1.1 = {
+		holder = 0
+	}
+
+}
+
+
+d_kabul = {
+	361.1.1 = {
+		holder = alchonid_001
+		government = nomadic_government  
+		liege = "k_kidaria"
+	}
+	476.1.1 = {
+		holder = nezak_004
+		liege = k_nezak_hun
+	}
+	500.8.25 = {
+		holder = nezak_005
+	}
+	507.10.29 = {
+		holder = nezak_006
+	}
+	510.11.12 = {
+		holder = nezak_007
+	}
+	531.1.3 = {
+		holder = nezak_008
+	}
+	582.5.28 = {
+		holder = nezak_009
+	}
+	586.3.24 = {
+		holder = nezak_010
+	}
+	592.9.18 = {
+		holder = nezak_011
+	}
+	613.1.24 = {
+		holder = nezak_012
+	}
+	618.4.7 = {
+		holder = nezak_013
+	}
+	625.4.2 = {
+		holder = nezak_014
+	}
+	631.12.30 = {
+		holder = nezak_015
+		liege = 0
+	}
+	687.1.1 = {
+		liege = 0
+		holder = 188717 # Khorasan Tegin Shah
+	}
+	740.1.1 = {
+		holder = 188718 # Phrom Kesar Nandin of Kabul Shahi
+	}
+	745.1.1 = {
+		holder = 188565 # Bo-Fuzun Nandin of Kabul Shahi
+	}
+}
+
+
+c_kabul = {
+	361.1.1 = { change_development_level = 4 }
+	476.1.1 = { change_development_level = 6 }
+	532.1.1 = { change_development_level = 8 }
+	632.1.1 = { change_development_level = 10 }
+	768.1.1 = {	change_development_level = 12 }
+	
+	361.1.1 = {
+		holder = alchonid_001
+		government = nomadic_government  
+		liege = "d_kabul"
+	}
+	450.1.1 = {
+		holder = alchonid_008
+		liege = "d_pamir"
+	}
+	497.4.11 = {
+		holder = alchonid_010
+		liege = "k_alchon_hun"
+	}
+	# 625.1.1 # Kicked out by the Yaghbus of Tokharistan
+	750.1.1 = {
+		liege = d_kabul
+		holder = 188565 # Surendravirkramaditya Nandin of Kabul Shahi
+	}
+	
+	
+}
+
+
+c_bamian = {
+	361.1.1 = { change_development_level = 4 }
+	476.1.1 = { change_development_level = 6 }
+	532.1.1 = { change_development_level = 8 }
+	632.1.1 = { change_development_level = 10 }
+	768.1.1 = {	change_development_level = 12 }
+	361.1.1 = {
+		holder = alchonid_001
+		government = nomadic_government  
+		liege = "d_kabul"
+	}
+	440.1.1 = {
+		holder = alchonid_005
+		liege = "k_alchon_hun"
+	}
+	450.1.1 = {
+		holder = alchonid_008
+		liege = "d_pamir"
+	}
+	497.4.11 = {
+		holder = alchonid_010
+		liege = "k_alchon_hun"
+	}
+	505.5.5 = {
+		holder = hephthalite_006
+		liege = "e_hephthalite"
+	}
+	532.1.1 = {
+		holder = bamian_001
+		government = trade_city_state_government
+	}
+	560.1.1 = {
+		liege = 0
+	}
+	579.3.21 = {
+		holder = bamian_002
+	}
+	616.4.27 = {
+		holder = bamian_003
+	}
+	625.9.18 = {
+		holder = bamian_004
+	}
+
+	
+}
+
+
+c_chitral = {
+	361.1.1 = {
+		holder = shemi_01
+		government = tribal_government  
+		liege = "d_kabul"
+	}
+	362.4.9 = {
+		holder = shemi_02
+		liege = "d_pamir"
+	}
+	404.2.14 = {
+		holder = shemi_03
+	}
+	419.12.17 = {
+		holder = shemi_04
+	}
+	446.11.15 = {
+		holder = shemi_05
+	}
+	472.3.17 = {
+		holder = shemi_06
+	}
+	497.4.11 = {
+		liege = "k_alchon_hun"
+	}
+	506.3.17 = {
+		holder = shemi_07
+	}
+	531.3.1 = {
+		holder = shemi_08
+	}
+	598.7.8 = {
+		holder = shemi_09
+	}
+	619.3.11 = {
+		holder = shemi_10
+	}
+	627.4.2 = {
+		holder = shemi_11
+	}
+	# 625.1.1 # Kicked out by the Yaghbus of Tokharistan
+	750.1.1 = {
+		liege = d_kabul
+		holder = 188565 # Surendravirkramaditya Nandin of Kabul Shahi
+	}
+}
+
+
+d_zabulistan = {
+	361.1.1 = {
+		holder = alchonid_001
+		liege = "k_kidaria"
+	}
+	476.1.1 = {
+		holder = nezak_004
+		liege = k_nezak_hun
+	}
+	500.8.25 = {
+		holder = nezak_005
+	}
+	507.10.29 = {
+		holder = nezak_006
+	}
+	510.11.12 = {
+		holder = nezak_007
+	}
+	531.1.3 = {
+		holder = nezak_018
+	}
+	549.2.22 = {
+		holder = nezak_008
+	}
+	582.5.28 = {
+		holder = nezak_009
+	}
+	586.3.24 = {
+		holder = nezak_010
+	}
+	592.9.18 = {
+		holder = nezak_011
+	}
+	613.1.24 = {
+		holder = nezak_012
+	}
+	618.4.7 = {
+		holder = nezak_013
+	}
+	625.4.2 = {
+		holder = nezak_014
+	}
+	631.12.30 = {
+		holder = nezak_015
+		liege = 0
+	}
+	680.1.1 = {
+		liege = 0
+		holder = 188701 # Zunbil founder
+	}
+	687.1.1 = {
+		holder = 188702
+	}
+	725.1.1 = {
+		holder = 188703
+	}
+	738.1.1 = {
+		holder = 188628
+	}
+}
+
+c_ghazna = {
+	361.1.1 = { change_development_level = 3 }
+	476.1.1 = { change_development_level = 4 }
+	532.1.1 = { change_development_level = 5 }
+	632.1.1 = { change_development_level = 6 }
+	768.1.1 = {	change_development_level = 7 }
+	361.1.1 = {
+		holder = nezak_001  
+		government = feudal_government # To reflect their origins as locals
+		liege = "d_zabulistan"
+	}
+	394.6.12 = {
+		holder = nezak_002
+	}
+	437.1.1 = {
+		holder = nezak_003
+	}
+	476.1.1 = {
+		holder = nezak_004
+	}
+	500.8.25 = {
+		holder = nezak_005
+	}
+	507.10.29 = {
+		holder = nezak_006
+	}
+	510.11.12 = {
+		holder = nezak_007
+	}
+	531.1.3 = {
+		holder = nezak_008
+	}
+	531.1.3 = {
+		holder = nezak_018
+	}
+	582.5.28 = {
+		holder = nezak_009
+	}
+	586.3.24 = {
+		holder = nezak_010
+	}
+	592.9.18 = {
+		holder = nezak_011
+	}
+	613.1.24 = {
+		holder = nezak_012
+	}
+	618.4.7 = {
+		holder = nezak_013
+	}
+	625.4.2 = {
+		holder = nezak_014
+	}
+	631.12.30 = {
+		holder = nezak_015
+	}
+	680.1.1 = {
+		liege = d_sistan
+		holder = 188701 # Zunbil founder
+	}
+	687.1.1 = {
+		holder = 188702
+	}
+	725.1.1 = {
+		holder = 188703
+	}
+	738.1.1 = {
+		holder = 188628
+	}
+}
+
+
+c_zamindawar = {
+	361.1.1 = { change_development_level = 3 }
+	476.1.1 = { change_development_level = 4 }
+	532.1.1 = { change_development_level = 5 }
+	632.1.1 = { change_development_level = 6 }
+	768.1.1 = {	change_development_level = 7 }
+	361.1.1 = {
+		holder = nezak_001  
+		government = feudal_government # To reflect their origins as locals
+		liege = "d_zabulistan"
+	}
+	394.6.12 = {
+		holder = nezak_002
+	}
+	437.1.1 = {
+		holder = nezak_003
+	}
+	476.1.1 = {
+		holder = nezak_004
+	}
+	500.8.25 = {
+		holder = nezak_005
+	}
+	507.10.29 = {
+		holder = nezak_006
+	}
+	510.11.12 = {
+		holder = nezak_007
+	}
+	531.1.3 = {
+		holder = pactyan_004
+	}
+	582.5.28 = {
+		holder = nezak_009
+	}
+	586.3.24 = {
+		holder = nezak_010
+	}
+	592.9.18 = {
+		holder = nezak_011
+	}
+	613.1.24 = {
+		holder = nezak_012
+	}
+	618.4.7 = {
+		holder = nezak_013
+	}
+	625.4.2 = {
+		holder = nezak_014
+	}
+	631.12.30 = {
+		holder = nezak_015
+	}	
+	680.1.1 = {
+		liege = d_sistan
+		holder = 188701 # Zunbil founder
+	}
+	687.1.1 = {
+		holder = 188702
+	}
+	725.1.1 = {
+		holder = 188703
+	}
+	738.1.1 = {
+		holder = 188628
+	}
+}
+
+
+c_rukhaj = {
+	361.1.1 = {
+		holder = nezak_001  
+		government = feudal_government # To reflect their origins as locals
+		liege = "d_zabulistan"
+	}
+	394.6.12 = {
+		holder = nezak_002
+	}
+	437.1.1 = {
+		holder = nezak_003
+	}
+	476.1.1 = {
+		holder = nezak_004
+	}
+	500.8.25 = {
+		holder = nezak_005
+	}
+	507.10.29 = {
+		holder = nezak_006
+	}
+	510.11.12 = {
+		holder = nezak_007
+	}
+	531.1.3 = {
+		holder = nezak_008
+	}
+	531.1.3 = {
+		holder = nezak_018
+	}
+	582.5.28 = {
+		holder = nezak_009
+	}
+	586.3.24 = {
+		holder = nezak_010
+	}
+	592.9.18 = {
+		holder = nezak_011
+	}
+	613.1.24 = {
+		holder = nezak_012
+	}
+	618.4.7 = {
+		holder = nezak_013
+	}
+	625.4.2 = {
+		holder = nezak_014
+	}
+	631.12.30 = {
+		holder = nezak_015
+	}
+	680.1.1 = {
+		liege = d_sistan
+		holder = 188701 # Zunbil founder
+	}
+	687.1.1 = {
+		holder = 188702
+	}
+	725.1.1 = {
+		holder = 188703
+	}
+	738.1.1 = {
+		holder = 188628
+	}
+}
+
+
+c_zabulistan = {
+	361.1.1 = { change_development_level = 3 }
+	476.1.1 = { change_development_level = 4 }
+	532.1.1 = { change_development_level = 5 }
+	632.1.1 = { change_development_level = 6 }
+	768.1.1 = {	change_development_level = 7 }
+	361.1.1 = {
+		holder = nezak_001  
+		government = feudal_government # To reflect their origins as locals
+		liege = "d_zabulistan"
+	}
+	394.6.12 = {
+		holder = nezak_002
+	}
+	437.1.1 = {
+		holder = nezak_003
+	}
+	476.1.1 = {
+		holder = nezak_004
+	}
+	500.8.25 = {
+		holder = nezak_005
+	}
+	507.10.29 = {
+		holder = nezak_006
+	}
+	510.11.12 = {
+		holder = nezak_007
+	}
+	531.1.3 = {
+		holder = nezak_008
+	}
+	531.1.3 = {
+		holder = nezak_018
+	}
+	582.5.28 = {
+		holder = nezak_009
+	}
+	586.3.24 = {
+		holder = nezak_010
+	}
+	592.9.18 = {
+		holder = nezak_011
+	}
+	613.1.24 = {
+		holder = nezak_012
+	}
+	618.4.7 = {
+		holder = nezak_013
+	}
+	625.4.2 = {
+		holder = nezak_014
+	}
+	631.12.30 = {
+		holder = nezak_015
+	}
+	680.1.1 = {
+		holder = 188701 # Zunbil founder
+	}
+	687.1.1 = {
+		holder = 188702
+	}
+	725.1.1 = {
+		holder = 188703
+	}
+	738.1.1 = {
+		holder = 188628
+	}
+}

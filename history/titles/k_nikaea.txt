@@ -1,0 +1,638 @@
+﻿k_nikaea = {
+	360.1.1 = {
+		holder = nikaea_01
+		de_jure_liege = e_roman_empire
+		liege = e_roman_empire
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					has_dlc_feature = royal_court
+				}
+				holder = {
+					set_court_language = language_latin # Latin was the official court language of the Romans
+					if = {
+						limit = { NOT = { knows_court_language_of = this } }
+						learn_court_language_of = this
+					}
+				}
+			}
+		}
+	}
+	395.1.1 = {
+		holder = nikaea_02
+		liege = e_byzantium
+		de_jure_liege = e_byzantium
+	}
+	476.1.1 = {
+		holder = nikaea_03
+	}
+	500.1.1 = {
+		holder = nikaea_13
+	}
+}	
+
+d_opsikion = {
+	361.1.1 = {
+		holder = nikaea_01
+	}
+	395.1.1 = {
+		holder = nikaea_02
+		liege = e_byzantium
+	}
+	476.1.1 = {
+		holder = nikaea_03
+	}
+	500.1.1 = {
+		holder = nikaea_13
+	}
+	330.1.1 = {
+		liege = "k_nikaea"
+	}
+}
+
+d_hellespontus = {
+	#Roman province
+	361.1.1 = {
+		de_jure_liege = k_asiae
+		holder = asiae_20
+		liege = k_asiae
+	}
+	395.1.17 = {
+		holder = asiae_21
+	}
+	476.1.1 = {
+		holder = asiae_22
+		liege = k_asiae
+	}
+}
+
+c_nikaea = {
+	361.1.1 = { change_development_level = 8 }
+	532.1.1 = { change_development_level = 9 }
+	768.1.1 = { change_development_level = 10 }
+	
+	361.1.1 = {
+		holder = asiae_20
+		de_jure_liege = d_hellespontus
+	}
+	395.1.1 = {
+		holder = asiae_21
+		liege = e_byzantium
+	}
+	476.1.1 = {
+		holder = asiae_02
+	}
+	500.1.1 = {
+		holder = nikaea_13
+	}
+	532.1.1 = {
+		holder = asiae_13
+	}
+}
+
+
+c_mysia = {
+	361.1.1 = {
+		holder = asiae_20
+		de_jure_liege = d_hellespontus
+		liege = "k_asiae"
+	}
+	395.1.1 = {
+		holder = asiae_21
+	}
+	476.1.1 = {
+		holder = asiae_22
+	}
+}
+
+c_prusa = {
+	330.1.1 = {
+		liege = "d_opsikion"
+	}
+	361.1.1 = {
+		holder = pacatiana_01
+		de_jure_liege = d_phyrgia_salutaris
+		liege = "k_asiae"
+	}
+	395.1.1 = {
+		holder = nikaea_05
+	}
+	476.1.1 = {
+		holder = pacatiana_03
+	}
+	532.1.1 = {
+		holder = pacatiana_04
+	}
+	754.1.1 = {
+		holder = 145828
+	}
+
+}
+
+
+c_phrygia = {
+	330.1.1 = {
+		liege = "d_opsikion"
+	}
+	361.1.1 = {
+		holder = nikaea_04
+		liege = "k_nikaea"
+		de_jure_liege = d_galatia_salutaris
+	}
+	395.1.1 = {
+		holder = phrygian_gothic_01
+		liege = e_byzantium
+	}
+	476.1.1 = {
+		holder = nikaea_06
+	}
+	532.1.1 = {
+		holder = galatia_02
+	}
+	754.1.1 = {
+		holder = 145828
+	}
+
+}
+
+
+d_ephese = {
+	361.1.1 = { change_development_level = 5 }
+	532.1.1 = { change_development_level = 6 }
+	768.1.1 = {	change_development_level = 7 }
+	
+	
+	300.1.1 = {
+		liege = e_byzantium
+		de_jure_liege = k_asiae
+	}
+	324.1.1 = {
+		holder = ablabian_01 #Flacius Ablabius
+	}
+	330.1.1 = {
+		holder = asiae_01 #Tertulianus
+	}
+	334.1.1 = {
+		holder = asiae_02 #Veronicianus
+	}
+	343.1.1 = {
+		holder = asiae_03 #Scylacius
+	}
+	352.1.1 = {
+		holder = asiae_04 #Anatolius
+	}
+	353.1.1 = {
+		holder = asiae_05 #Araxius
+	}
+	360.1.1 = {
+		holder = asiae_06 # Germanus
+	}
+	361.1.1 = {
+		holder = asiae_07 # Italicianus
+	}
+	362.1.1 = {
+		holder = asiae_08 #Caesarius
+	}
+	363.1.1 = {
+		holder = asiae_09 #Clearchus
+	}
+	366.1.1 = {
+		holder = asiae_10 #Auxionus
+	}
+	366.1.1 = {
+		holder = asiae_11 #Musionus
+	}
+	395.1.1 = {
+		holder = asiae_04 #Anatolius
+	}
+	432.1.1 = {
+		holder = asiae_12 # Zosimius
+	}
+	530.1.1 = {
+		holder = asiae_13 # Theodosius
+	}
+	750.1.1 = {
+		holder = 145830
+	}
+	
+
+}
+
+
+c_ionia = {
+	
+	300.1.1 = {
+		liege = e_byzantium
+	}
+	324.1.1 = {
+		holder = ablabian_01 #Flacius Ablabius
+	}
+	330.1.1 = {
+		holder = asiae_01 #Tertulianus
+	}
+	334.1.1 = {
+		holder = asiae_02 #Veronicianus
+	}
+	343.1.1 = {
+		holder = asiae_03 #Scylacius
+	}
+	352.1.1 = {
+		holder = asiae_04 #Anatolius
+	}
+	353.1.1 = {
+		holder = asiae_05 #Araxius
+	}
+	360.1.1 = {
+		holder = asiae_06 # Germanus
+	}
+	361.1.1 = {
+		holder = asiae_07 # Italicianus
+	}
+	362.1.1 = {
+		holder = asiae_08 #Caesarius
+	}
+	363.1.1 = {
+		holder = asiae_09 #Clearchus
+	}
+	366.1.1 = {
+		holder = asiae_10 #Auxionus
+	}
+	366.1.1 = {
+		holder = asiae_11 #Musionus
+	}
+	395.1.1 = {
+		holder = asiae_04 #Anatolius
+	}
+	432.1.1 = {
+		holder = asiae_12 # Zosimius
+	}
+	530.1.1 = {
+		holder = asiae_13 # Theodosius
+	}
+	330.1.1={
+		liege="d_ephese"
+	}
+	750.1.1={
+		holder=145830
+	}
+
+}
+
+
+c_aeolis = {
+	300.1.1 = {
+		liege = e_byzantium
+	}
+	324.1.1 = {
+		holder = ablabian_01 #Flacius Ablabius
+	}
+	330.1.1 = {
+		holder = asiae_01 #Tertulianus
+	}
+	334.1.1 = {
+		holder = asiae_02 #Veronicianus
+	}
+	343.1.1 = {
+		holder = asiae_03 #Scylacius
+	}
+	352.1.1 = {
+		holder = asiae_04 #Anatolius
+	}
+	353.1.1 = {
+		holder = asiae_05 #Araxius
+	}
+	360.1.1 = {
+		holder = asiae_06 # Germanus
+	}
+	361.1.1 = {
+		holder = asiae_07 # Italicianus
+	}
+	362.1.1 = {
+		holder = asiae_08 #Caesarius
+	}
+	363.1.1 = {
+		holder = asiae_09 #Clearchus
+	}
+	366.1.1 = {
+		holder = asiae_10 #Auxionus
+	}
+	366.1.1 = {
+		holder = asiae_11 #Musionus
+	}
+	395.1.1 = {
+		holder = asiae_04 #Anatolius
+	}
+	432.1.1 = {
+		holder = asiae_12 # Zosimius
+	}
+	530.1.1 = {
+		holder = asiae_13 # Theodosius
+	}
+	330.1.1={
+		liege="d_ephese"
+	}
+	762.1.1={
+		holder=145832
+	}
+
+}
+
+
+d_thracesia = {
+	361.1.1 = {
+		de_jure_liege = "k_asiae"
+		holder = asiae_26
+		liege = k_asiae
+	}
+	395.1.17 = {
+		holder = asiae_27
+	}
+	476.1.1 = {
+		holder = asiae_28
+		liege = k_asiae
+	}
+	532.1.1 = {
+		holder = greek_misc_004
+		liege = k_asiae
+	}
+	755.1.1 = {
+		holder = 145841
+	}
+
+}
+
+
+c_lydia = {
+	361.1.1 = { change_development_level = 5 }
+	532.1.1 = { change_development_level = 6 }
+	768.1.1 = {	change_development_level = 7 }
+	
+	361.1.1 = {
+		holder = asiae_26
+		liege = "k_asiae"
+	}
+	395.1.1 = {
+		holder = asiae_27
+	}
+	476.1.1 = {
+		holder = asiae_28
+	}
+	755.1.1={
+		holder=145841
+	}
+	
+
+}
+
+
+c_thyatira = {
+	361.1.1 = {
+		holder = asiae_26
+		liege = "k_asiae"
+	}
+	395.1.1 = {
+		holder = asiae_27
+	}
+	476.1.1 = {
+		holder = asiae_28
+	}
+	755.1.1={
+		holder=145841
+	}
+}
+
+d_phyrgia_pacatiana = {
+	#Roman province
+	361.1.1 = {
+	de_jure_liege = k_asiae
+	liege = k_asiae
+	holder = asiae_29
+	}
+	395.1.17 = {
+		holder = asiae_30
+	}
+	476.1.1 = {
+		holder = asiae_31
+		liege = k_asiae
+	}
+}
+
+c_hadrianeia = {
+	361.1.1 = {
+		holder = asiae_29
+		liege = "k_asiae"
+		de_jure_liege = d_phyrgia_pacatiana
+	}
+	395.1.1 = {
+		holder = asiae_30
+	}
+	476.1.1 = {
+		holder = asiae_31
+	}
+	330.1.1={
+		liege="d_thracesia"
+	}
+	755.1.1={
+		holder=145841
+	}
+}
+
+
+c_chonae = {
+	361.1.1 = { change_development_level = 5 }
+	532.1.1 = { change_development_level = 6 }
+	768.1.1 = {	change_development_level = 7 }
+	
+	361.1.1 = {
+		holder = 180613
+		liege = "k_asiae"
+		de_jure_liege = d_caria
+	}
+	395.1.1 = {
+		holder = caria_02
+	}
+	476.1.1 = {
+		holder = caria_03
+	}
+	532.1.1 = {
+		holder = caria_04
+	}
+	755.1.1 = {
+		holder = 145841
+	}
+
+}
+
+
+d_optimatoi = {
+	361.1.1 = { change_development_level = 5 }
+	532.1.1 = { change_development_level = 6 }
+	768.1.1 = {	change_development_level = 7 }
+	
+	330.1.1={
+		liege="e_byzantium"
+	}
+	752.1.1={
+		holder=145827
+	}
+}
+
+
+c_bithynia = {
+	
+	361.1.1 = {
+		holder = nikaea_01
+		de_jure_liege = d_opsikion
+	}
+	395.1.1 = {
+		holder = nikaea_02
+		liege = e_byzantium
+	}
+	476.1.1 = {
+		holder = nikaea_03
+	}
+	500.1.1 = {
+		holder = nikaea_13
+	}
+	752.1.1 = {
+		holder = 145827
+	}
+	
+
+}
+
+
+c_tarsos = {
+	361.1.1 = {
+		holder = nikaea_01
+		de_jure_liege = d_opsikion
+	}
+	395.1.1 = {
+		holder = nikaea_02
+		liege = e_byzantium
+	}
+	476.1.1 = {
+		holder = nikaea_03
+	}
+	500.1.1 = {
+		holder = nikaea_13
+	}
+	752.1.1 = {
+		holder = 145827
+	}
+	
+
+}
+
+d_honorias = {
+	#Roman province
+	361.1.1 = {
+		de_jure_liege = k_nikaea
+		holder = nikaea_07
+		liege = k_nikaea
+	}
+	395.1.17 = {
+		holder = nikaea_08
+		liege = k_nikaea
+	}
+	476.1.1 = {
+		holder = nikaea_09
+		liege = k_nikaea
+	}
+}
+
+c_honorias = {
+	361.1.1 = { change_development_level = 5 }
+	532.1.1 = { change_development_level = 6 }
+	768.1.1 = {	change_development_level = 7 }
+	
+	330.1.1={
+		liege="d_bucellaria"
+		de_jure_liege = d_honorias
+	}
+	361.1.1 = {
+		holder = nikaea_07
+		liege = "k_nikaea"
+	}
+	395.1.1 = {
+		holder = nikaea_08
+	}
+	476.1.1 = {
+		holder = nikaea_09
+	}
+	753.1.1={
+		holder=145839
+	}
+
+}
+
+d_bucellaria = {
+	#Roman province
+	361.1.1 = {
+		de_jure_liege = k_nikaea
+		holder = nikaea_10
+		liege = k_nikaea
+	}
+	395.1.17 = {
+		holder = nikaea_11
+		liege = k_nikaea
+	}
+	476.1.1 = {
+		holder = nikaea_12
+		liege = k_nikaea
+	}
+	753.1.1={
+		liege = "e_byzantium"
+		holder=145839
+	}
+}
+
+c_galatia = {
+	361.1.1 = { change_development_level = 6 }
+	532.1.1 = { change_development_level = 7 }
+	768.1.1 = {	change_development_level = 8 }
+	
+	330.1.1 = {
+		liege = "d_paphlagonia"
+	}
+	361.1.1 = {
+		holder = nikaea_10
+		liege = "k_nikaea"
+	}
+	395.1.1 = {
+		holder = nikaea_11
+	}
+	476.1.1 = {
+		holder = nikaea_12
+	}
+	500.1.1 = {
+		holder = nikaea_13
+	}
+	753.1.1 = {
+		holder = 145839
+	}
+
+}
+
+
+c_hadrianopolis = {
+	330.1.1={
+		liege="d_bucellaria"
+	}
+	361.1.1 = {
+		holder = nikaea_10
+		liege = "k_nikaea"
+	}
+	395.1.1 = {
+		holder = nikaea_11
+	}
+	476.1.1 = {
+		holder = nikaea_12
+	}
+	753.1.1={
+		holder=145839
+	}
+
+}
+

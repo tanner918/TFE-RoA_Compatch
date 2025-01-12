@@ -1,0 +1,89 @@
+﻿on_monument_building = {
+	effect = {
+		if = {
+			limit = {
+				var:monument_cooldown > 0
+				exists = var:monument_existing
+			}
+			change_variable = {
+				name = monument_cooldown
+				subtract = 1
+			}
+			trigger_event = {
+				on_action = on_monument_building
+				months = 1
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					exists = var:monument_material
+				}
+				if = {
+					limit = {
+						var:monument_material = flag:gold
+					}
+					add_county_modifier = statue_gold
+					holder = {
+						add_character_modifier = statue_char_gold
+					}
+					
+				}
+				if = {
+					limit = {
+						var:monument_material = flag:marble
+					}
+					add_county_modifier = statue_marble
+					holder = {
+						add_character_modifier = statue_char_marble
+					}
+				}
+				if = {
+					limit = {
+						var:monument_material = flag:limestone
+					}
+					add_county_modifier = statue_limestone
+					holder = {
+						add_character_modifier = statue_char_limestone
+					}
+				}
+				if = {
+					limit = {
+						var:monument_material = flag:stone
+					}
+					add_county_modifier = statue_stone
+					holder = {
+						add_character_modifier = statue_char_stone
+					}
+				}
+				if = {
+					limit = {
+						var:monument_material = flag:copper
+					}
+					add_county_modifier = statue_copper
+					holder = {
+						add_character_modifier = statue_char_copper
+					}
+				}
+			}
+			remove_variable = monument_cooldown
+		}
+		
+	}
+}
+
+on_monument_rust = {
+	effect = {
+		if = {
+			limit = {
+				exists = var:monument_existing
+				var:monument_material = flag:copper
+			}
+			set_variable = {
+				name = monument_material
+				value = flag:copper_rust
+			}
+		}
+		
+	}
+}

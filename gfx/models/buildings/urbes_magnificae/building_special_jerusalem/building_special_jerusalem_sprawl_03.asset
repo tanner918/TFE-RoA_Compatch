@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "building_special_jerusalem_sprawl_03_mesh"
+	file = "building_special_jerusalem_sprawl_03.mesh"
+	scale = 1
+
+	meshsettings = {
+		name = "building_special_jerusalem_HSShape"
+		index = 0
+		texture_diffuse = "building_special_jerusalem_HS_diffuse.dds"
+		texture_normal = "building_special_jerusalem_HS_normal.dds"
+		texture_specular = "building_special_jerusalem_HS_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = {
+	name = "building_special_jerusalem_sprawl_03_entity"
+	pdxmesh = "building_special_jerusalem_sprawl_03_mesh"
+}

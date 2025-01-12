@@ -1,0 +1,139 @@
+﻿became_friends = {
+	categories = { positive relationships }
+	icon = "friend.dds"
+	description = {
+		first_valid = {
+			desc = became_friends_desc
+		}
+	}
+
+	second_perspective_description = {
+		first_valid = {
+			desc = became_friends_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		first_valid = {
+			desc = became_friends_desc_third_perspective
+		}
+	}
+
+	participants = { new_relation }
+
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+TFE_gladiator_host_memory = {
+	categories = { positive minor }
+	icon = "_default.dds"
+
+	description = {
+		random_valid = {
+			desc = TFE_gladiator_host_memory_first_perspective
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = TFE_gladiator_host_memory_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = TFE_gladiator_host_memory_third_perspective
+		}
+	}
+
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+TFE_gladiator_guest_memory = {
+	categories = { positive minor }
+	icon = "_default.dds"
+
+	description = {
+		random_valid = {
+			desc = TFE_gladiator_guest_memory_first_perspective
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = TFE_gladiator_guest_memory_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = TFE_gladiator_guest_memory_third_perspective
+		}
+	}
+
+	participants = { host }
+
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+TFE_chariot_host_memory = {
+	categories = { positive minor }
+	icon = "_default.dds"
+
+	description = {
+		random_valid = {
+			desc = TFE_chariot_host_memory_first_perspective
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = TFE_chariot_host_memory_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = TFE_chariot_host_memory_third_perspective
+		}
+	}
+
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+TFE_chariot_guest_memory = {
+	categories = { positive minor }
+	icon = "_default.dds"
+
+	description = {
+		random_valid = {
+			desc = TFE_chariot_guest_memory_first_perspective
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = TFE_chariot_guest_memory_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = TFE_chariot_guest_memory_third_perspective
+		}
+	}
+
+	participants = { host }
+
+	duration = {
+		years = memory_default_duration
+	}
+}

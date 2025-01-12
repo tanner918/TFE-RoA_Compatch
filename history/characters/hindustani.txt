@@ -1,0 +1,1477 @@
+﻿191000 = {
+	name = "Yashovarman"
+	dynasty = 1044300
+	religion = "vaishnavism"
+	culture = "bharatiya"
+	trait = kshatriya
+	700.1.1 = {
+		birth = yes
+	}
+	716.1.1 = {
+		trait = education_martial_4
+		trait = hunter_1
+		trait = strong
+		trait = arrogant
+	}
+	720.1.1 = {
+		add_spouse = 191001
+	}
+	752.1.1 = {
+		death = yes
+	}
+}
+
+191001 = {
+	name = "Yashodevi"
+	female = yes
+	religion = "vaishnavism"
+	culture = "bharatiya"
+	trait = kshatriya
+	704.1.1 = {
+		birth = yes
+	}
+	720.1.1 = {
+		trait = education_intrigue_3
+	}
+	760.1.1 = {
+		death = yes
+	}
+}
+
+191002 = {
+	name = "Ama"
+	dynasty = 1044300
+	religion = "digambara"
+	culture = "bharatiya"
+	trait = kshatriya
+	father = 191000
+	mother = 191001
+	720.11.1 = {
+		birth = yes
+	}
+	762.1.1 = {
+		death = yes
+	}
+}
+
+191003 = {
+	name = "Dundaka"
+	dynasty = 1044300
+	religion = "vaishnavism"
+	culture = "bharatiya"
+	trait = kshatriya
+	father = 191002
+	737.1.1 = {
+		birth = yes
+	}
+	769.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = 191004
+		}
+	}
+}
+
+191004 = {
+	name = "Bhoja"
+	dynasty = 1044300
+	religion = "vaishnavism"
+	culture = "bharatiya"
+	trait = kshatriya
+	father = 191003
+	753.1.1 = {
+		birth = yes
+	}
+	769.1.1 = {
+		trait = education_intrigue_1
+	}
+	769.1.1 = {
+		trait = kinslayer_3
+	}
+	820.1.1 = {
+		death = yes
+	}
+}
+
+191005 = {
+	name = "Vajrayudha"
+	dynasty = 1044301
+	religion = "vaishnavism"
+	culture = "bharatiya"
+	trait = kshatriya
+	740.1.1 = {
+		birth = yes
+	}
+	766.1.1 = {
+		add_spouse = 191006
+	}
+	783.1.1 = {
+		death = yes
+	}
+}
+
+191006 = {
+	name = "Anajaya"	#Made up
+	female = yes
+	religion = "vaishnavism"
+	culture = "bharatiya"
+	trait = shudra
+	742.1.1 = {
+		birth = yes
+	}
+	791.1.1 = {
+		death = yes
+	}
+}
+
+191007 = {
+	name = "Indrayudha"
+	dynasty = 1044301
+	religion = "vaishnavism"
+	culture = "bharatiya"
+	trait = kshatriya
+	father = 191005
+	mother = 191006
+	766.1.1 = {
+		birth = yes
+	}
+	790.1.1 = {
+		death = yes
+	}
+}
+
+191008 = {
+	name = "Chakrayudha"
+	dynasty = 1044301
+	religion = "vaishnavism"
+	culture = "bharatiya"
+	trait = kshatriya
+	father = 191005
+	mother = 191006
+	768.1.1 = {
+		birth = yes
+	}
+	815.1.1 = {
+		death = yes
+	}
+}
+
+191015 = {
+	name = "Kamal"	#Fictional
+	dynasty = 1044302 #smartismav
+	religion = "vaishnavism"
+	culture = "bharatiya"
+	trait = shudra
+	735.1.1 = {
+		birth = yes
+	}
+	815.1.1 = {
+		death = yes
+	}
+}
+
+191016 = {
+	name = "Krishnapa"	#Fictional
+	dynasty = 1044303 #Kuru
+	religion = "vaishnavism"
+	culture = "bharatiya"
+	trait = shudra
+	720.1.1 = {
+		birth = yes
+	}
+	810.1.1 = {
+		death = yes
+	}
+}
+
+191018 = {
+	name = "Karamchand"	#Semi-Legendary
+	dynasty = 1044308 #Gahirawar
+	religion = "vaishnavism"
+	culture = "kaushali"
+	trait = kshatriya
+	670.1.1 = {
+		birth = yes
+	}
+	686.1.1 = {
+		trait = education_stewardship_3
+	}
+	720.1.1 = {
+		death = yes
+	}
+}
+
+191019 = {
+	name = "Ranasimha"	#Semi-Legendary
+	dynasty = 1044308 #Gahirawar
+	religion = "vaishnavism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = 191018
+	trait = beauty_good_1
+	690.1.1 = {
+		birth = yes
+	}
+	730.1.1 = {
+		death = yes
+	}
+}
+
+191020 = {
+	name = "Naranath"	#Semi-Legendary
+	dynasty = 1044308 #Gahirawar
+	religion = "vaishnavism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = 191019
+	trait = education_martial_2
+	710.1.1 = {
+		birth = yes
+	}
+	#736.1.1 = {
+	#}
+	750.1.1 = {
+		death = yes
+	}
+}
+
+191021 = {
+	name = "Jayasimha"	#Semi-Legendary
+	dynasty = 1044308 #Gahirawar
+	religion = "vaishnavism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = 191020
+	735.1.1 = {
+		birth = yes
+	}
+	758.1.1 = {
+		add_spouse = 191043
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+
+191043 = {
+	name = "Sanyukta"	#Fictional
+	female = yes
+	religion = "vaishnavism"
+	culture = "kaushali"
+	trait = kshatriya
+	740.1.1 = {
+		birth = yes
+	}
+	788.1.1 = {
+		death = yes
+	}
+}
+
+191022 = {
+	name = "Jagannatharaya"	#Semi-Legendary
+	dynasty = 1044308 #Gahirawar
+	religion = "vaishnavism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = 191021
+	mother = 191043
+	760.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+
+191023 = {
+	name = "Narasimha"	#Semi-Legendary
+	dynasty = 1044308 #Gahirawar
+	religion = "vaishnavism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = 191022
+	780.1.1 = {
+		birth = yes
+	}
+	820.1.1 = {
+		death = yes
+	}
+}
+
+191024 = {
+	name = "Indrajit"	#Semi-Legendary
+	dynasty = 1044308 #Gahirawar
+	religion = "smartism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = 191023
+	800.1.1 = {
+		birth = yes
+	}
+	831.1.1 = {
+		death = yes
+	}
+}
+
+191025 = {
+	name = "Rajaputra"
+	dynasty = 1044309 #Kalachuri
+	religion = "smartism"
+	culture = "malvi"
+	trait = kshatriya
+	710.1.1 = {
+		birth = yes
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+
+191026 = {
+	name = "Shivaraja"
+	dynasty = 1044309 #Kalachuri
+	religion = "vaishnavism"
+	culture = "malvi"
+	trait = kshatriya
+	father = 191025
+	735.1.1 = {
+		birth = yes
+	}
+	755.1.1 = {
+		add_spouse = 191040
+	}
+	805.1.1 = {
+		death = yes
+	}
+}
+
+191040 = {
+	name = "Nattadevi"	#Fictional
+	female = yes
+	religion = "vaishnavism"
+	culture = "malvi"
+	trait = kshatriya
+	735.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+
+191027 = {
+	name = "Shankaragana"
+	dynasty = 1044309 #Kalachuri
+	religion = "vaishnavism"
+	culture = "malvi"
+	trait = kshatriya
+	father = 191026
+	mother = 191040
+	760.1.1 = {
+		birth = yes
+	}
+	835.1.1 = {
+		death = yes
+	}
+}
+
+191298 = {
+	name = "Jayaditya"
+	dynasty = 1044335	#Malayaketu
+	religion = "smartism"
+	culture = "punjabi"
+	trait = kshatriya
+	720.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+
+191299 = {
+	name = "Jayaditya"
+	dynasty = 1044335	#Malayaketu
+	religion = "smartism"
+	culture = "punjabi"
+	trait = kshatriya
+	father = 191298
+	760.1.1 = {
+		birth = yes
+	}
+	850.1.1 = {
+		death = yes
+	}
+}
+
+191262 = {
+	name = "Ambikadevi"
+	dynasty = 1044019	#Cedis
+	female = yes
+	religion = "vaishnavism"
+	culture = "malvi"
+	trait = kshatriya
+	father = 191319
+	710.1.1 = {
+		birth = yes
+	}
+	790.1.1 = {
+		death = yes
+	}
+}
+
+191317 = {
+	name = "Vamaraja"
+	dynasty = 1044019	#Cedi
+	religion = "vaishnavism"
+	culture = "malvi"
+	trait = kshatriya
+	620.1.1 = {
+		birth = yes
+	}
+	700.1.1 = {
+		death = yes
+	}
+}
+
+191318 = {
+	name = "Gunasagara"	#Fictional, the 2 generations between Vamaraja and Sankaragana are unkown
+	dynasty = 1044019	#Cedi
+	religion = "vaishnavism"
+	culture = "malvi"
+	trait = kshatriya
+	father = 191317
+	650.1.1 = {
+		birth = yes
+	}
+	730.1.1 = {
+		death = yes
+	}
+}
+
+191319 = {
+	name = "Mayuraja"	#Fictional
+	dynasty = 1044019	#Cedi
+	religion = "vaishnavism"
+	culture = "malvi"
+	trait = kshatriya
+	father = 191318
+	670.1.1 = {
+		birth = yes
+	}
+	750.1.1 = {
+		death = yes
+	}
+}
+
+191320 = {
+	name = "Sankaragana"
+	dynasty = 1044019	#Cedi
+	religion = "vaishnavism"
+	culture = "malvi"
+	trait = kshatriya
+	father = 191319
+	720.1.1 = {
+		birth = yes
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+
+191388 = {
+	name = "Krishnaraja" #Fictional, name unkown
+	dynasty = 1044019	#Cedi
+	religion = "vaishnavism"
+	culture = "malvi"
+	trait = kshatriya
+	father = 191320
+	750.1.1 = {
+		birth = yes
+	}
+	825.1.1 = {
+		death = yes
+	}
+}
+
+191381 = {
+	name = "Srivardhana"
+	dynasty = 1044342	#Sailavamsa
+	religion = "vaishnavism"
+	culture = "oriya"
+	trait = kshatriya
+	550.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+
+191382 = {
+	name = "Prithuvardhana"
+	dynasty = 1044342	#Sailavamsa
+	religion = "vaishnavism"
+	culture = "oriya"
+	trait = kshatriya
+	father = 191381
+	580.1.1 = {
+		birth = yes
+	}
+	620.1.1 = {
+		death = yes
+	}
+}
+
+191383 = {
+	name = "Sauvardhana"
+	dynasty = 1044342	#Sailavamsa
+	religion = "shaivism"
+	culture = "oriya"
+	trait = kshatriya
+	father = 191382
+	600.1.1 = {
+		birth = yes
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+
+191384 = {
+	name = "Prithuvardhana"	#Fictional name, the name of this son is not known
+	dynasty = 1044342	#Sailavamsa
+	religion = "shaivism"
+	culture = "oriya"
+	trait = kshatriya
+	father = 191383
+	620.1.1 = {
+		birth = yes
+	}
+	680.1.1 = {
+		death = yes
+	}
+}
+
+191385 = {
+	name = "Jayavardhana"	#I
+	dynasty = 1044342	#Sailavamsa
+	religion = "shaivism"
+	culture = "oriya"
+	trait = kshatriya
+	father = 191384
+	640.1.1 = {
+		birth = yes
+	}
+	720.1.1 = {
+		death = yes
+	}
+}
+
+191386 = {
+	name = "Srivardhana"	#II
+	dynasty = 1044342	#Sailavamsa
+	religion = "shaivism"
+	culture = "oriya"
+	trait = kshatriya
+	father = 191385
+	660.1.1 = {
+		birth = yes
+	}
+	740.1.1 = {
+		death = yes
+	}
+}
+
+191387 = {
+	name = "Jayavardhana"	#II
+	dynasty = 1044342	#Sailavamsa
+	religion = "shaivism"
+	culture = "oriya"
+	trait = kshatriya
+	father = 191386
+	700.1.1 = {
+		birth = yes
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+
+191482 = {
+	name = "Patel"	#Fictional
+	dynasty = 1044350 #Baland
+	religion = "shaivism"
+	culture = "oriya"
+	trait = kshatriya
+	700.1.1 = {
+		birth = yes
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+	
+191483 = {
+	name = "Mukhia"	#Fictional
+	dynasty = 1044350 #Baland
+	religion = "shaivism"
+	culture = "bharatiya"
+	trait = kshatriya
+	father = 191482
+	720.1.1 = {
+		birth = yes
+	}
+	810.1.1 = {
+		death = yes
+	}
+}
+
+191484 = {
+	name = "Mahji"	#Fictional
+	dynasty = 1044350 #Baland
+	religion = "shaivism"
+	culture = "bharatiya"
+	trait = kshatriya
+	father = 191483
+	750.1.1 = {
+		birth = yes
+	}
+	830.1.1 = {
+		death = yes
+	}
+}
+
+191518 = {
+	name = "Jhetpala"	#Fictional
+	dynasty = 1044353 #Bhar
+	religion = "shaivism"
+	culture = "bharatiya"
+	trait = kshatriya
+	720.1.1 = {
+		birth = yes
+	}
+	740.1.1 = {
+		add_spouse = 191520
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+
+191519 = {
+	name = "Narpal"	#Fictional
+	dynasty = 1044353 #Bhar
+	religion = "shaivism"
+	culture = "bharatiya"
+	trait = kshatriya
+	father = 191518
+	mother = 191520
+	741.1.1 = {
+		birth = yes
+	}
+	820.1.1 = {
+		death = yes
+	}
+}
+
+191520 = {
+	name = "Kanchuka"	#Fictional
+	female = yes
+	religion = "shaivism"
+	culture = "bharatiya"
+	trait = kshatriya
+	722.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+
+191521 = {
+	name = "Narpal"	#Fictional
+	dynasty = 1044353 #Bhar
+	female = yes
+	religion = "shaivism"
+	culture = "bharatiya"
+	trait = kshatriya
+	father = 191518
+	mother = 191520
+	742.1.1 = {
+		birth = yes
+	}
+	830.1.1 = {
+		death = yes
+	}
+}
+191685 = {
+	name = "Simhavarman"
+	dynasty = 1044374 #Chaulukyas of Mattamayura
+	religion = "shaivism"
+	culture = "bharatiya"
+	trait = kshatriya
+	740.1.1 = {
+		birth = yes
+	}
+	820.1.1 = {
+		death = yes
+	}
+}
+
+191874 = {
+	name = "Jejja"
+	dynasty = 1044387	#Rashtrakutas of Pathari
+	religion = "vaishnavism"
+	culture = "bharatiya"
+	trait = kshatriya
+	father = 191877
+	740.1.1 = {
+		birth = yes
+	}
+	768.1.1 = {
+		add_spouse = 191926
+	}
+	790.1.1 = {
+		death = yes
+	}
+}
+
+191877 = {
+	name = "Karkaraja"	#Fictional
+	dynasty = 1044387	#Rashtrakutas of Pathari
+	religion = "vaishnavism"
+	culture = "bharatiya"
+	trait = kshatriya
+	710.1.1 = {
+		birth = yes
+	}
+	760.1.1 = {
+		death = yes
+	}
+}
+
+191911 = {
+	name = "Parabala"	#Fictional name of real elder brother of Jejja
+	dynasty = 1044387	#Rashtrakutas of Pathari
+	religion = "vaishnavism"
+	culture = "bharatiya"
+	trait = kshatriya
+	father = 191877
+	735.1.1 = {
+		birth = yes
+	}
+	790.1.1 = {
+		death = yes
+	}
+}
+
+191926 = {
+	name = "Laihini"	#Fictional
+	female = yes
+	religion = "vaishnavism"
+	culture = "bharatiya"
+	trait = shudra
+	750.1.1 = {
+		birth = yes
+	}
+	810.1.1 = {
+		death = yes
+	}
+}
+
+191960 = {
+	name = "Virbhan"
+	dynasty = 1044392	#Khichar
+	religion = "vaishnavism"
+	culture = "bharatiya"
+	trait = kshatriya
+	740.1.1 = {
+		birth = yes
+	}
+	795.1.1 = {
+		death = yes
+	}
+}
+### Custom bharatiyas
+yaudheya_01 = {
+	name = "Kakhopal"
+	dynasty = 900044
+	religion = "krishnaism"
+	culture = "arjunayana"
+	trait = kshatriya
+	332.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+yaudheya_02 = {
+	name = "Jagatpal"
+	dynasty = 900044
+	religion = "krishnaism"
+	culture = "arjunayana"
+	trait = kshatriya
+	father = yaudheya_01
+	378.1.1 = {
+		birth = yes
+	}
+	433.1.1 = {
+		death = yes
+	}
+}
+yaudheya_03 = {
+	name = "Mahendrapala"
+	dynasty = 900044
+	religion = "krishnaism"
+	culture = "arjunayana"
+	trait = kshatriya
+	father = yaudheya_02
+	402.1.1 = {
+		birth = yes
+	}
+	456.1.1 = {
+		death = yes
+	}
+}
+yaudheya_04 = {
+	name = "Draupad"
+	dynasty = 900044 #Yaudheya
+	religion = "krishnaism"
+	culture = "arjunayana"
+	trait = kshatriya
+	father = yaudheya_03
+	438.1.1 = {
+		birth = yes
+	}
+	489.1.1 = {
+		death = yes
+	}
+}
+#### Pushyabhuti Dynasty
+pushyabhuti_01 = {
+	name = "Pushyabhuti" #Fictional Yaudheya ruler
+	dynasty = pushyabhuti_dynasty #Pushyabhuti
+	religion = "shaivism"
+	culture = "yaudheya"
+	trait = kshatriya
+	478.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+pushyabhuti_02 = {
+	name = "Naravardhana" #Fictional Yaudheya ruler
+	dynasty = pushyabhuti_dynasty #Pushyabhuti
+	religion = "shaivism"
+	culture = "yaudheya"
+	trait = kshatriya
+	father = pushyabhuti_01
+	499.1.1 = {
+		birth = yes
+	}
+	525.1.1 = {
+		death = yes
+	}
+}
+pushyabhuti_03 = {
+	name = "Rajyavardana" #Fictional Yaudheya ruler
+	dynasty = pushyabhuti_dynasty #Pushyabhuti
+	religion = "shaivism"
+	culture = "yaudheya"
+	trait = kshatriya
+	father = pushyabhuti_02
+	520.1.1 = {
+		birth = yes
+	}
+	555.1.1 = {
+		death = yes
+	}
+}
+pushyabhuti_04 = {
+	name = "Adityavardhana" #Fictional Yaudheya ruler
+	dynasty = pushyabhuti_dynasty #Pushyabhuti
+	religion = "shaivism"
+	culture = "yaudheya"
+	trait = kshatriya
+	father = pushyabhuti_03
+	540.1.1 = {
+		birth = yes
+	}
+	570.1.1 = {
+		add_spouse = guptasad_36
+	}
+	580.1.1 = {
+		death = yes
+	}
+}
+pushyabhuti_05 = {
+	name = "Prabhakaravardhana" #Fictional Yaudheya ruler
+	dynasty = pushyabhuti_dynasty #Pushyabhuti
+	religion = "shaivism"
+	culture = "yaudheya"
+	trait = kshatriya
+	father = pushyabhuti_04
+	mother = guptasad_36
+	568.1.1 = {
+		birth = yes
+	}
+	605.1.1 = {
+		death = yes
+	}
+}
+pushyabhuti_06 = {
+	name = "Rajyavardhana" #Fictional Yaudheya ruler
+	dynasty = pushyabhuti_dynasty #Pushyabhuti
+	religion = "shaivism"
+	culture = "yaudheya"
+	trait = kshatriya
+	father = pushyabhuti_05
+	584.1.1 = {
+		birth = yes
+	}
+	606.1.1 = {
+		death = yes
+	}
+}
+pushyabhuti_07 = {
+	name = "Harshavardhana" #Fictional Yaudheya ruler
+	dynasty = pushyabhuti_dynasty #Pushyabhuti
+	religion = "pudgalavada"
+	culture = "yaudheya"
+	trait = kshatriya
+	father = pushyabhuti_05
+	580.1.1 = {
+		birth = yes
+	}
+	647.1.1 = {
+		death = yes
+	}
+}
+pushyabhuti_08 = {
+	name = "Rajyashri" #Fictional Yaudheya ruler
+	female = yes
+	dynasty = pushyabhuti_dynasty #Pushyabhuti
+	religion = "pudgalavada"
+	culture = "yaudheya"
+	trait = kshatriya
+	father = pushyabhuti_06
+	582.1.1 = {
+		birth = yes
+	}
+	647.1.1 = {
+		death = yes
+	}
+}
+pushyabhuti_9 = {
+	name = "Dharmapala" #Fictional Yaudheya ruler
+	religion = "shaivism"
+	culture = "yaudheya"
+	trait = kshatriya
+	598.1.1 = {
+		birth = yes
+	}
+	647.1.1 = {
+		death = yes
+	}
+}
+pushyabhuti_10 = {
+	name = "Adhandev" #Fictional Yaudheya ruler
+	religion = "shaivism"
+	culture = "yaudheya"
+	trait = kshatriya
+	601.1.1 = {
+		birth = yes
+	}
+	647.1.1 = {
+		death = yes
+	}
+}
+### Maukhari
+maukhari_01 = {
+	name = "Harivarman" #Fictional Yaudheya ruler
+	dynasty = maukhari_dynasty #Pushyabhuti
+	religion = "vaishnavism"
+	culture = "kaushali"
+	trait = kshatriya
+	468.1.1 = {
+		birth = yes
+	}
+	512.1.1 = {
+		death = yes
+	}
+}
+maukhari_02 = {
+	name = "Adityavarman" #Fictional Yaudheya ruler
+	dynasty = maukhari_dynasty #Pushyabhuti
+	religion = "vaishnavism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = maukhari_01
+	489.1.1 = {
+		birth = yes
+	}
+	518.1.1 = {
+		death = yes
+	}
+}
+maukhari_03 = {
+	name = "Ishvaravarman" #Fictional Yaudheya ruler
+	dynasty = maukhari_dynasty #Pushyabhuti
+	religion = "vaishnavism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = maukhari_02
+	514.1.1 = {
+		birth = yes
+	}
+	550.1.1 = {
+		death = yes
+	}
+}
+maukhari_04 = {
+	name = "Ishanavarman" #Fictional Yaudheya ruler
+	dynasty = maukhari_dynasty #Pushyabhuti
+	religion = "vaishnavism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = maukhari_03
+	532.1.1 = {
+		birth = yes
+	}
+	560.1.1 = {
+		death = yes
+	}
+}
+maukhari_05 = {
+	name = "Sharvavarman" #Fictional Yaudheya ruler
+	dynasty = maukhari_dynasty #Pushyabhuti
+	religion = "vaishnavism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = maukhari_04
+	550.1.1 = {
+		birth = yes
+	}
+	575.1.1 = {
+		death = yes
+	}
+}
+maukhari_06 = {
+	name = "Avantivarman" #Fictional Yaudheya ruler
+	dynasty = maukhari_dynasty #Pushyabhuti
+	religion = "vaishnavism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = maukhari_05
+	566.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+maukhari_07 = {
+	name = "Grahavarman" #Fictional Yaudheya ruler
+	dynasty = maukhari_dynasty #Pushyabhuti
+	religion = "vaishnavism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = maukhari_06
+	582.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		add_spouse = pushyabhuti_08
+	}
+	605.1.1 = {
+		death = yes
+	}
+}
+#####
+maukhari_08 = {
+	name = "Sarat" #Fictional Yaudheya ruler
+	religion = "vaishnavism"
+	culture = "kaushali"
+	trait = kshatriya
+	502.1.1 = {
+		birth = yes
+	}
+	576.1.1 = {
+		death = yes
+	}
+}
+maukhari_09 = {
+	name = "Abhinava" #Fictional Yaudheya ruler
+	religion = "vaishnavism"
+	culture = "kaushali"
+	trait = kshatriya
+	501.1.1 = {
+		birth = yes
+	}
+	576.1.1 = {
+		death = yes
+	}
+}
+guptasad_32 = {
+	name = "Narayanpala" #Fictional
+	dynasty = 900043
+	religion = "pudgalavada"
+	culture = "kaushali"
+	trait = shudra
+	334.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+
+## Nagas
+
+901051 = {
+	name = "Bhimanaga"
+	# Naga founder
+	dynasty = 900036
+	religion = "yaksha_naga"
+	culture = "bharatiya"
+	trait = brahmin
+	father = 901050 #Vrisha
+	167.1.1 = {
+		birth = yes
+	}
+	230.1.1 = {
+		death = yes
+	}
+}
+901052 = {
+	name = "Skandanaga"
+	# Naga founder
+	dynasty = 900036
+	religion = "yaksha_naga"
+	culture = "bharatiya"
+	trait = brahmin
+	father = 901051 #Bhima
+	201.1.1 = {
+		birth = yes
+	}
+	252.1.1 = {
+		death = yes
+	}
+}
+naga_04 = {
+	name = "Narayanaga"
+	# Naga founder
+	dynasty = 900036
+	religion = "yaksha_naga"
+	culture = "bharatiya"
+	trait = brahmin
+	father = 901052 #Skandanaga
+	226.1.1 = {
+		birth = yes
+	}
+	289.1.1 = {
+		death = yes
+	}
+}
+naga_03 = {
+	name = "Grahanaga"
+	# Naga founder
+	dynasty = 900036
+	religion = "yaksha_naga"
+	culture = "bharatiya"
+	trait = brahmin
+	father = naga_04 #Narayanaga
+	256.1.1 = {
+		birth = yes
+	}
+	323.1.1 = {
+		death = yes
+	}
+}
+naga_01 = {
+	name = "Ravinaga"
+	# Naga founder
+	dynasty = 900036
+	religion = "yaksha_naga"
+	culture = "bharatiya"
+	trait = brahmin
+	father = naga_03 #Grahanaga
+	287.1.1 = {
+		birth = yes
+	}
+	343.1.1 = {
+		death = yes
+	}
+}
+naga_011 = {
+	name = "Vasunaga"
+	# Naga founder
+	dynasty = 900036
+	religion = "yaksha_naga"
+	culture = "bharatiya"
+	trait = brahmin
+	father = naga_03 #Grahanaga
+	296.1.1 = {
+		birth = yes
+	}
+	343.1.1 = {
+		death = yes
+	}
+}
+naga_0112 = {
+	name = "Devanaga"
+	# Naga founder
+	dynasty = 900036
+	religion = "yaksha_naga"
+	culture = "bharatiya"
+	trait = brahmin
+	father = naga_011 #Ravinaga
+	319.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+naga_02 = {
+	name = "Nagadatta"
+	# Naga founder
+	dynasty = 900036
+	religion = "yaksha_naga"
+	culture = "bharatiya"
+	trait = brahmin
+	father = naga_01 #Ravinaga
+	319.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+naga_021 = {
+	name = "Grahanaga"
+	# Naga founder
+	dynasty = 900036
+	religion = "yaksha_naga"
+	culture = "bharatiya"
+	trait = brahmin
+	father = naga_01 #Ravinaga
+	325.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+901053 = {
+	name = "Vasunaga"
+	# Naga founder
+	dynasty = 900036
+	religion = "yaksha_naga"
+	culture = "bharatiya"
+	trait = brahmin
+	father = 901051 #Bhima
+	205.1.1 = {
+		birth = yes
+	}
+	257.1.1 = {
+		death = yes
+	}
+}
+901054 = {
+	name = "Brihaspatinaga"
+	# Naga founder
+	dynasty = 900036
+	religion = "yaksha_naga"
+	culture = "bharatiya"
+	trait = brahmin
+	father = 901053 #Vasu
+	230.1.1 = {
+		birth = yes
+	}
+	269.1.1 = {
+		death = yes
+	}
+}
+901055 = {
+	name = "Vibhunaga"
+	# Naga founder
+	dynasty = 900036
+	religion = "yaksha_naga"
+	culture = "bharatiya"
+	trait = brahmin
+	father = 901054 #Brihaspati
+	250.1.1 = {
+		birth = yes
+	}
+	287.1.1 = {
+		death = yes
+	}
+}
+guptasad_30 = {
+	name = "Lompada" #Fictional
+	religion = "yaksha_naga"
+	culture = "magadhi"
+	trait = brahmin
+	333.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+901056 = {
+	name = "Ravinaga"
+	# Naga founder
+	dynasty = 900036
+	religion = "yaksha_naga"
+	culture = "bharatiya"
+	trait = brahmin
+	father = 901054 #Brihaspati
+	252.1.1 = {
+		birth = yes
+	}
+	288.1.1 = {
+		death = yes
+	}
+}
+901057 = {
+	name = "Bhavanaga"
+	# Naga founder
+	dynasty = 900036
+	religion = "yaksha_naga"
+	culture = "bharatiya"
+	trait = brahmin
+	father = 901054 #Brihaspati
+	253.1.1 = {
+		birth = yes
+	}
+	289.1.1 = {
+		death = yes
+	}
+}
+bhavanaga_01 = {
+	name = "Yasodevi"
+	# Naga founder
+	female = yes
+	dynasty = 900036
+	religion = "yaksha_naga"
+	culture = "bharatiya"
+	trait = brahmin
+	father = 901057 #Brihaspati
+	287.1.1 = {
+		birth = yes
+	}
+	345.1.1 = {
+		death = yes
+	}
+}
+901058 = {
+	name = "Prabhakaranaga"
+	# Naga founder
+	dynasty = 900036
+	religion = "yaksha_naga"
+	culture = "bharatiya"
+	trait = brahmin
+	father = 901054 #Brihaspati
+	255.1.1 = {
+		birth = yes
+	}
+	300.1.1 = {
+		death = yes
+	}
+}
+901059 = {
+	name = "Devanaga"
+	# Naga founder
+	dynasty = 900036
+	religion = "yaksha_naga"
+	culture = "bharatiya"
+	trait = brahmin
+	father = 901058 #Prabhakara
+	278.1.1 = {
+		birth = yes
+	}
+	310.1.1 = {
+		death = yes
+	}
+}
+naga_05 = {
+	name = "Prabhakaranaga"
+	# Naga founder
+	dynasty = 900036
+	religion = "yaksha_naga"
+	culture = "bharatiya"
+	trait = brahmin
+	father = 901059 #Skandanaga
+	300.1.1 = {
+		birth = yes
+	}
+	358.1.1 = {
+		death = yes
+	}
+}
+naga_06 = {
+	name = "Achyuta"
+	# Naga founder
+	dynasty = 900036
+	religion = "yaksha_naga"
+	culture = "bharatiya"
+	trait = brahmin
+	father = naga_05 #Skandanaga
+	334.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+naga_07 = {
+	name = "Vyaghranaga"
+	# Naga founder
+	dynasty = 900036
+	religion = "yaksha_naga"
+	culture = "bharatiya"
+	trait = brahmin
+	father = naga_05 #Skandanaga
+	340.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+901060 = {
+	name = "Vyaghranaga"
+	# Naga founder
+	dynasty = 900036
+	religion = "yaksha_naga"
+	culture = "bharatiya"
+	trait = brahmin
+	father = 901059 #Deva
+	301.1.1 = {
+		birth = yes
+	}
+	339.1.1 = {
+		death = yes
+	}
+}
+901061 = {
+	name = "Ganapatinaga"
+	# Naga founder
+	dynasty = 900036
+	religion = "yaksha_naga"
+	culture = "bharatiya"
+	trait = brahmin
+	father = 901060 #Vyaghra
+	327.1.1 = {
+		birth = yes
+	}
+	401.1.1 = {
+		death = yes
+	}
+}

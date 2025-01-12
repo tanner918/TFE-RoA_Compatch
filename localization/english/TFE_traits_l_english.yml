@@ -1,0 +1,84 @@
+﻿l_english:
+ trait_green_support:0 "Greens Supporter"
+ trait_green_support_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is an ardent supporter of the Greens chariot racing team."
+ trait_blue_support:0 "Blues Supporter"
+ trait_blue_support_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is an ardent supporter of the Blues chariot racing team."
+
+ trait_green_charioteer:0 "Greens Charioteer"
+ trait_green_charioteer_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a member of the Greens chariot racing team."
+ trait_blue_charioteer:0 "Blues Charioteer"
+ trait_blue_charioteer_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a member of the Blues chariot racing team."
+ 
+ trait_restitutor_orbis:0 "Restitutor Orbis"
+ trait_restitutor_orbis_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] has successfully reasserted the disparate holdings of Rome under one crown and one empire."
+ 
+ trait_sahabi_trait:0 "Sahabi"
+ trait_sahabi_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] has been at the Prophet's side and contributed to the rise and expansion of Islam."
+ 
+ trait_adopted_trait:0 "Adopted Child"
+ trait_adopted_desc:0 "This person was adopted and forced into the house of their now parents"
+ trait_adopted_roman_desc:0 "Following Roman custom, this person has been declared a child of their adopter, and is equally viable to inherit their titles."
+
+ gladiator_key:0 "Gladiator"
+ gladiatrix_key:0 "Gladiatrix"
+ trait_gladiator_group:0 "Gladiator"
+ trait_gladiator_trait:0 "Gladiator"
+ trait_gladiator_trait_female:0 "$gladiatrix_key$"
+ trait_gladiator_desc:0 "This character is a Gladiator, most often a slave or prisoner that has been sold to fight, and die, in the arena."
+ trait_gladiator_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a [ROOT.GetCharacter.Custom('GetGladiatorGladiatrix')], most often a slave or prisoner that has been sold to fight, and die, in the arena."
+ trait_former_gladiator_trait:0 "Former Gladiator"
+ trait_former_gladiator_trait_female:0 "Former $gladiatrix_key$"
+ trait_former_gladiator_desc:0 "This character has survived enough fights in the arena as a Gladiator to be granted their freedom."
+ trait_former_gladiator_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] has survived enough fights in the arena as a [ROOT.GetCharacter.Custom('GetGladiatorGladiatrix')] to be granted [ROOT.GetCharacter.GetHerHis] freedom."
+
+#Reasons
+ #Already in vanilla
+ #ALREADY_CONTAINTS_TRAIT:2 "@warning_icon!#X $CHARACTER_NAME$ already has the trait [TRAIT.GetName( CHARACTER.Self )]#!"
+ #CONTAINTS_OPPOSITE_TRAIT:2 "@warning_icon!#X [TRAIT.GetName( CHARACTER.Self )] can't be added because $CHARACTER_NAME$ already has the opposite trait [TRAIT_2.GetName( CHARACTER.Self )]#!"
+ #IS_POTENTIAL_TRAIT_FALSE:2 "@warning_icon!#X [TRAIT.GetName( CHARACTER.Self )] can't be added because $CHARACTER_NAME$ is blocked from possessing it#!"
+ #TRAIT_AGE_NOT_IN_RANGE_TOO_YOUNG:0 "@warning_icon!#X [TRAIT.GetName( CHARACTER.Self )] can't be added because $CHARACTER_NAME$ is younger than $TRAIT_AGE|V$ #weak (is $CHARACTER_AGE|V$)#!#!"
+ #TRAIT_AGE_NOT_IN_RANGE_TOO_OLD:0 "@warning_icon!#X [TRAIT.GetName( CHARACTER.Self )] can't be added because $CHARACTER_NAME$ is older than $TRAIT_AGE|V$ #weak (is $CHARACTER_AGE|V$)#!#!"
+ #TRAIT_SEX_NOT_MATCHING:0 "@warning_icon!#X [TRAIT.GetName( CHARACTER.Self )] can't be added because $CHARACTER_NAME$ is not $TRAIT_SEX$#!"
+ #ALREADY_HAS_TRAIT_IN_GROUP:0 "@warning_icon!#X [TRAIT.GetName( CHARACTER.Self )] can't be added because $CHARACTER_NAME$ already has the a trait in the [TRAIT_GROUP.GetName] group #weak ([TRAIT_2.GetName( CHARACTER.Self )])#!#!"
+ #SEX_MALE:0 "Male"
+ #SEX_FEMALE:0 "Female"
+
+ # Decision Traits
+ restitutor_orbis:0 "Restitutor Orbis"
+ restitutor_orbis_desc:0 "This character was able to reconquer all of the lands of the Roman Empire, making any recognition and praise they recieve for their efforts well deserved."
+
+ # Attila Trait
+ trait_the_hun:0 "The Hun"
+ trait_the_hun_desc:0 "The Hun was the nickname given to the nomadic warlord known as Attila, who was also called the Scourge due to his reputation of not sparing any Christian city from his destructive rampage in Europe."
+
+ # Heir of Attila Trait
+ trait_heir_of_attila:0 "Heir Of Attila"
+ trait_heir_of_attila_desc:0 "This character was able to reunite the Hunnic Empire and proclaim themselves rightful heir to Attila"
+
+ trait_low_senator:0 "Low Senator"
+ low_senator_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a member of the Imperial Senate, though his low rank doesn't merit any recognition of his efforts at the present moment."
+ trait_senator:0 "Senator"
+ senator_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a member of the Imperial Senate."
+ trait_high_senator:0 "High Senator"
+ high_senator_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a member of the Imperial Senate, having achieved the highest rank within the political body due to his experience and influence."
+ trait_former_senator:0 "Former Senator"
+ former_senator_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] used to be a member of the Imperial Senate, but has since been relieved of his duties."
+ trait_training_senator:0 "Training Senator"
+ training_senator_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is seeking to join the Imperial Senate, training to become qualified for a position within the political body."
+
+
+ trait_apotheosised_trait:0 "Apotheosised"
+ apotheosised_trait_desc:0 "This character, a Roman Emperor, was apotheosised by a successor and granted deified status."
+ 
+ trait_brahmin:0 "Brahmana"
+ trait_brahmin_desc:0 "Brahmanas were born out of Purusha's mouth and their [varna|E] is divinely ordained to serve as priests, teachers, and philosophers."
+ trait_brahmin_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is of the Brahmana [varna|E], who traditionally serve in as clergy and scholars across the Indian subcontinent.\n\nIt is considered sinful to kill a Brahmana or to revoke land from them."
+ trait_kshatriya:0 "Kshatriya"
+ trait_kshatriya_desc:0 "Kshatriyas were born out of Purusha's arms and are renowned as warriors. The Dharmashastras teach that a kingdom should ideally be ruled by one of the Kshatriya [varna|E]."
+ trait_kshatriya_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is of the Kshatriya [varna|E], who traditionally serve as Warriors and Kings across the Indian subcontinent.\n\nWhile a ruler of the other high Varnas is acceptable, people of the Dharmic faiths will always prefer a Kshatriya ruling over them."
+ trait_vaishya:0 "Vaishya"
+ trait_vaishya_desc:0 "Vaishyas were born out of Purusha's thighs and excel at mercantile activities. Merchants of this [varna|E] are found in all ports from Sumatra to Rome."
+ trait_vaishya_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is of the Vaishya [varna|E], who traditionally serve as Merchants and Farmers across the Indian subcontinent and beyond."
+ trait_shudra:0 "Shudra"
+ trait_shudra_desc:0 "Shudras were born out of Purusha's feet and their [varna|E] is bound to serve the higher Varnas."
+ trait_shudra_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is part of the Shudra [varna|E], the traditional servile class of the Indian subcontinent.\n\nIt is not unknown for Shudras to become rulers, but most Shudra kings adopt higher Varna identities to seek legitimacy for their rule.\n\nThe unacceptable union of a Higher Varna Woman and Lower Varna Man will result in Shudras regardless of the parents' Varna."

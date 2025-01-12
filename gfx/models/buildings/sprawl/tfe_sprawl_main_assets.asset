@@ -1,0 +1,1190 @@
+
+### WALLS 01
+pdxmesh = {
+	name = "walls_01_celtic_mesh"
+	file = "walls_01_celtic.mesh"
+	meshsettings = {
+		name = "walls_01_celtic"
+		index = 0
+		texture_diffuse = "building_celtic_01_diffuse.dds"
+		texture_normal = "building_celtic_01_normal.dds"
+		texture_specular = "building_celtic_01_properties.dds"
+		shader = "snap_to_terrain_alpha_to_coverage"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "decal"
+		index = 0
+		texture_diffuse = "building_celtic_decal_01_diffuse.dds"
+		texture_normal = "building_celtic_decal_01_normal.dds"
+		texture_specular = "building_celtic_decal_01_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+}
+entity = { name = walls_01_celtic pdxmesh = walls_01_celtic_mesh }
+pdxmesh = {
+	name = "walls_01_slavic_mesh"
+	file = "walls_01_slavic.mesh"
+	meshsettings = {
+		name = "walls_01_slavic"
+		index = 0
+		texture_diffuse = "slavic_buildings_03_diffuse.dds"
+		texture_normal = "slavic_buildings_03_normal.dds"
+		texture_specular = "slavic_buildings_03_properties.dds"
+		texture = { file = "slavic_wall_01_unique.dds" index = 5 }
+		shader = "snap_to_terrain_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "decal"
+		index = 0
+		texture_diffuse = "western_walls_01_decal_diffuse.dds"
+		texture_normal = "western_walls_01_decal_normal.dds"
+		texture_specular = "western_walls_01_decal_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+}
+entity = { name = walls_01_slavic pdxmesh = walls_01_slavic_mesh }
+pdxmesh = {
+	name = "walls_01_sea_mesh"
+	file = "walls_01_sea.mesh"
+	meshsettings = {
+		name = "walls_01_sea"
+		index = 0
+		texture_diffuse = "southeast_asian_atlas_diffuse.dds"
+		texture_normal = "southeast_asian_atlas_normal.dds"
+		texture_specular = "southeast_asian_atlas_properties.dds"
+		texture = { file = "walls_01_sea_unique.dds" index = 5 }
+		shader = "snap_to_terrain_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "decal"
+		index = 0
+		texture_diffuse = "western_walls_01_decal_diffuse.dds"
+		texture_normal = "western_walls_01_decal_normal.dds"
+		texture_specular = "western_walls_01_decal_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+}
+entity = { name = walls_01_sea pdxmesh = walls_01_sea_mesh }
+pdxmesh = {
+	name = "walls_01_roman_mesh"
+	file = "walls_01_roman.mesh"
+	meshsettings = {
+		name = "walls_01_roman"
+		index = 0
+		texture_diffuse = "western_walls_01_diffuse.dds"
+		texture_normal = "western_walls_01_normal.dds"
+		texture_specular = "western_walls_01_properties.dds"
+		shader = "snap_to_terrain_alpha_to_coverage"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "decal"
+		index = 0
+		texture_diffuse = "western_walls_01_decal_diffuse.dds"
+		texture_normal = "western_walls_01_decal_normal.dds"
+		texture_specular = "western_walls_01_decal_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+}
+entity = { name = walls_01_roman pdxmesh = walls_01_roman_mesh }
+pdxmesh = {
+	name = "walls_01_germanic_mesh"
+	file = "walls_01_germanic.mesh"
+	meshsettings = {
+		name = "walls_01_germanic"
+		index = 0
+		texture_diffuse = "western_walls_01_diffuse.dds"
+		texture_normal = "western_walls_01_normal.dds"
+		texture_specular = "western_walls_01_properties.dds"
+		shader = "snap_to_terrain_alpha_to_coverage"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "decal"
+		index = 0
+		texture_diffuse = "western_walls_01_decal_diffuse.dds"
+		texture_normal = "western_walls_01_decal_normal.dds"
+		texture_specular = "western_walls_01_decal_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+}
+entity = { name = walls_01_germanic pdxmesh = walls_01_germanic_mesh }
+pdxmesh = {
+	name = "walls_01_sahelian_mesh"
+	file = "walls_01_sahelian.mesh"
+	meshsettings = {
+		name = "walls_01_sahelian"
+		index = 0
+		texture_diffuse = "western_walls_01_diffuse_desert.dds"
+		texture_normal = "western_walls_01_normal.dds"
+		texture_specular = "western_walls_01_properties.dds"
+		shader = "snap_to_terrain_alpha_to_coverage"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "decal"
+		index = 0
+		texture_diffuse = "western_walls_01_decal_diffuse.dds"
+		texture_normal = "western_walls_01_decal_normal.dds"
+		texture_specular = "western_walls_01_decal_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+}
+entity = { name = walls_01_sahelian pdxmesh = walls_01_sahelian_mesh }
+pdxmesh = {
+	name = "walls_01_guinean_mesh"
+	file = "walls_01_guinean.mesh"
+	meshsettings = {
+		name = "walls_01_guinean"
+		index = 0
+		texture_diffuse = "guinean_atlas_diffuse.dds"
+		texture_normal = "guinean_atlas_normal.dds"
+		texture_specular = "guinean_atlas_properties.dds"
+		shader = "snap_to_terrain"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "decal"
+		index = 0
+		texture_diffuse = "guinean_walls_01_decal_diffuse.dds"
+		texture_normal = "guinean_walls_01_decal_normal.dds"
+		texture_specular = "guinean_walls_01_decal_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+}
+entity = { name = walls_01_guinean pdxmesh = walls_01_guinean_mesh }
+
+### WALLS 02
+pdxmesh = {
+	name = "walls_02_celtic_mesh"
+	file = "walls_02_celtic.mesh"
+	meshsettings = {
+		name = "walls_02_celtic"
+		index = 0
+		texture_diffuse = "building_celtic_01_diffuse.dds"
+		texture_normal = "building_celtic_01_normal.dds"
+		texture_specular = "building_celtic_01_properties.dds"
+		shader = "snap_to_terrain_alpha_to_coverage"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "decal"
+		index = 0
+		texture_diffuse = "building_celtic_decal_01_diffuse.dds"
+		texture_normal = "building_celtic_decal_01_normal.dds"
+		texture_specular = "building_celtic_decal_01_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+}
+entity = { name = walls_02_celtic pdxmesh = walls_02_celtic_mesh }
+pdxmesh = {
+	name = "walls_02_slavic_mesh"
+	file = "walls_02_slavic.mesh"
+	meshsettings = {
+		name = "walls_02_slavic"
+		index = 0
+		texture_diffuse = "slavic_buildings_02_diffuse.dds"
+		texture_normal = "slavic_buildings_02_normal.dds"
+		texture_specular = "slavic_buildings_02_properties.dds"
+		texture = { file = "slavic_wall_02_unique.dds" index = 5 }
+		shader = "snap_to_terrain_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "decal"
+		index = 0
+		texture_diffuse = "western_walls_01_decal_diffuse.dds"
+		texture_normal = "western_walls_01_decal_normal.dds"
+		texture_specular = "western_walls_01_decal_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+}
+entity = { name = walls_02_slavic pdxmesh = walls_02_slavic_mesh }
+pdxmesh = {
+	name = "walls_02_sea_mesh"
+	file = "walls_02_sea.mesh"
+	meshsettings = {
+		name = "walls_02_sea"
+		index = 0
+		texture_diffuse = "southeast_asian_atlas_diffuse.dds"
+		texture_normal = "southeast_asian_atlas_normal.dds"
+		texture_specular = "southeast_asian_atlas_properties.dds"
+		texture = { file = "walls_02_sea_unique.dds" index = 5 }
+		shader = "snap_to_terrain_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "decal"
+		index = 0
+		texture_diffuse = "western_walls_01_decal_diffuse.dds"
+		texture_normal = "western_walls_01_decal_normal.dds"
+		texture_specular = "western_walls_01_decal_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+}
+entity = { name = walls_02_sea pdxmesh = walls_02_sea_mesh }
+pdxmesh = {
+	name = "walls_02_roman_mesh"
+	file = "walls_02_roman.mesh"
+	meshsettings = {
+		name = "walls_02_roman"
+		index = 0
+		texture_diffuse = "western_walls_01_diffuse.dds"
+		texture_normal = "western_walls_01_normal.dds"
+		texture_specular = "western_walls_01_properties.dds"
+		shader = "snap_to_terrain_alpha_to_coverage"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "decal"
+		index = 0
+		texture_diffuse = "western_walls_01_decal_diffuse.dds"
+		texture_normal = "western_walls_01_decal_normal.dds"
+		texture_specular = "western_walls_01_decal_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+}
+entity = { name = walls_02_roman pdxmesh = walls_02_roman_mesh }
+pdxmesh = {
+	name = "walls_02_germanic_mesh"
+	file = "walls_02_germanic.mesh"
+	meshsettings = {
+		name = "walls_02_germanic"
+		index = 0
+		texture_diffuse = "western_walls_01_diffuse.dds"
+		texture_normal = "western_walls_01_normal.dds"
+		texture_specular = "western_walls_01_properties.dds"
+		shader = "snap_to_terrain_alpha_to_coverage"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "decal"
+		index = 0
+		texture_diffuse = "western_walls_01_decal_diffuse.dds"
+		texture_normal = "western_walls_01_decal_normal.dds"
+		texture_specular = "western_walls_01_decal_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+}
+entity = { name = walls_02_germanic pdxmesh = walls_02_germanic_mesh }
+pdxmesh = {
+	name = "walls_02_sahelian_mesh"
+	file = "walls_02_sahelian.mesh"
+	meshsettings = {
+		name = "walls_02_sahelian"
+		index = 0
+		texture_diffuse = "western_walls_01_diffuse.dds"
+		texture_normal = "western_walls_01_normal.dds"
+		texture_specular = "western_walls_01_properties.dds"
+		shader = "snap_to_terrain_alpha_to_coverage"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "decal"
+		index = 0
+		texture_diffuse = "western_walls_01_decal_diffuse.dds"
+		texture_normal = "western_walls_01_decal_normal.dds"
+		texture_specular = "western_walls_01_decal_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+}
+entity = { name = walls_02_sahelian pdxmesh = walls_02_sahelian_mesh }
+pdxmesh = {
+	name = "walls_02_guinean_mesh"
+	file = "walls_02_guinean.mesh"
+	meshsettings = {
+		name = "walls_02_guinean"
+		index = 0
+		texture_diffuse = "guinean_atlas_diffuse.dds"
+		texture_normal = "guinean_atlas_normal.dds"
+		texture_specular = "guinean_atlas_properties.dds"
+		shader = "snap_to_terrain"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "decal"
+		index = 0
+		texture_diffuse = "guinean_walls_02_decal_diffuse.dds"
+		texture_normal = "guinean_walls_02_decal_normal.dds"
+		texture_specular = "guinean_walls_02_decal_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+}
+entity = { name = walls_02_guinean pdxmesh = walls_02_guinean_mesh }
+
+### WALLS 03
+pdxmesh = {
+	name = "walls_03_celtic_mesh"
+	file = "walls_03_celtic.mesh"
+	meshsettings = {
+		name = "walls_03_celtic"
+		index = 0
+		texture_diffuse = "building_celtic_01_diffuse.dds"
+		texture_normal = "building_celtic_01_normal.dds"
+		texture_specular = "building_celtic_01_properties.dds"
+		texture = { file = "western_walls_03_unique.dds" index = 5 }
+		shader = "snap_to_terrain_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "decal"
+		index = 0
+		texture_diffuse = "western_walls_01_decal_diffuse.dds"
+		texture_normal = "western_walls_01_decal_normal.dds"
+		texture_specular = "western_walls_01_decal_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+}
+entity = { name = walls_03_celtic pdxmesh = walls_03_celtic_mesh }
+pdxmesh = {
+	name = "walls_03_slavic_mesh"
+	file = "walls_03_slavic.mesh"
+	meshsettings = {
+		name = "walls_03_slavic"
+		index = 0
+		texture_diffuse = "slavic_buildings_02_diffuse.dds"
+		texture_normal = "slavic_buildings_02_normal.dds"
+		texture_specular = "slavic_buildings_02_properties.dds"
+		texture = { file = "slavic_wall_03_unique.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "decal"
+		index = 0
+		texture_diffuse = "western_walls_01_decal_diffuse.dds"
+		texture_normal = "western_walls_01_decal_normal.dds"
+		texture_specular = "western_walls_01_decal_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+}
+entity = { name = walls_03_slavic pdxmesh = walls_03_slavic_mesh }
+pdxmesh = {
+	name = "walls_03_sea_mesh"
+	file = "walls_03_sea.mesh"
+	meshsettings = {
+		name = "walls_03_sea"
+		index = 0
+		texture_diffuse = "southeast_asian_atlas_diffuse.dds"
+		texture_normal = "southeast_asian_atlas_normal.dds"
+		texture_specular = "southeast_asian_atlas_properties.dds"
+		texture = { file = "walls_03_sea_unique.dds" index = 5 }
+		shader = "snap_to_terrain_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "decal"
+		index = 0
+		texture_diffuse = "western_walls_01_decal_diffuse.dds"
+		texture_normal = "western_walls_01_decal_normal.dds"
+		texture_specular = "western_walls_01_decal_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+}
+entity = { name = walls_03_sea pdxmesh = walls_03_sea_mesh }
+pdxmesh = {
+	name = "walls_03_roman_mesh"
+	file = "walls_03_roman.mesh"
+	meshsettings = {
+		name = "walls_03_roman"
+		index = 0
+		texture_diffuse = "building_mediterranean_atlas_diffuse.dds"
+		texture_normal = "building_mediterranean_atlas_normal.dds"
+		texture_specular = "building_mediterranean_atlas_properties.dds"
+		texture = { file = "western_walls_03_unique.dds" index = 5 }
+		shader = "snap_to_terrain_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "decal"
+		index = 0
+		texture_diffuse = "western_walls_01_decal_diffuse.dds"
+		texture_normal = "western_walls_01_decal_normal.dds"
+		texture_specular = "western_walls_01_decal_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+}
+entity = { name = walls_03_roman pdxmesh = walls_03_roman_mesh }
+pdxmesh = {
+	name = "walls_03_germanic_mesh"
+	file = "walls_03_germanic.mesh"
+	meshsettings = {
+		name = "walls_03_germanic"
+		index = 0
+		texture_diffuse = "building_western_atlas_diffuse.dds"
+		texture_normal = "building_western_atlas_normal.dds"
+		texture_specular = "building_western_atlas_properties.dds"
+		texture = { file = "western_walls_03_unique.dds" index = 5 }
+		shader = "snap_to_terrain_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "decal"
+		index = 0
+		texture_diffuse = "western_walls_01_decal_diffuse.dds"
+		texture_normal = "western_walls_01_decal_normal.dds"
+		texture_specular = "western_walls_01_decal_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+}
+entity = { name = walls_03_germanic pdxmesh = walls_03_germanic_mesh }
+pdxmesh = {
+	name = "walls_03_sahelian_mesh"
+	file = "walls_03_sahelian.mesh"
+	meshsettings = {
+		name = "walls_03_sahelian"
+		index = 0
+		texture_diffuse = "building_mena_atlas_diffuse.dds"
+		texture_normal = "building_mena_atlas_normal.dds"
+		texture_specular = "building_mena_atlas_properties.dds"
+		texture = { file = "sahelian_walls_03_unique.dds" index = 5 }
+		shader = "snap_to_terrain_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "decal"
+		index = 0
+		texture_diffuse = "western_walls_01_decal_diffuse.dds"
+		texture_normal = "western_walls_01_decal_normal.dds"
+		texture_specular = "western_walls_01_decal_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+}
+entity = { name = walls_03_sahelian pdxmesh = walls_03_sahelian_mesh }
+pdxmesh = {
+	name = "walls_03_guinean_mesh"
+	file = "walls_03_guinean.mesh"
+	meshsettings = {
+		name = "walls_03_guinean"
+		index = 0
+		texture_diffuse = "guinean_atlas_diffuse.dds"
+		texture_normal = "guinean_atlas_normal.dds"
+		texture_specular = "guinean_atlas_properties.dds"
+		shader = "snap_to_terrain"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "walls_03_guinean_spikes"
+		index = 0
+		texture_diffuse = "tribal_walls_01_guinean_diffuse.dds"
+		texture_normal = "tribal_walls_01_normal.dds"
+		texture_specular = "tribal_walls_01_properties.dds"
+		shader = "snap_to_terrain_alpha_to_coverage"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "decal"
+		index = 0
+		texture_diffuse = "guinean_walls_02_decal_diffuse.dds"
+		texture_normal = "guinean_walls_02_decal_normal.dds"
+		texture_specular = "guinean_walls_02_decal_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+}
+entity = { name = walls_03_guinean pdxmesh = walls_03_guinean_mesh }
+
+### WALLS 04
+pdxmesh = {
+	name = "walls_04_celtic_mesh"
+	file = "walls_04_celtic.mesh"
+	meshsettings = {
+		name = "walls_04_celtic"
+		index = 0
+		texture_diffuse = "building_celtic_01_diffuse.dds"
+		texture_normal = "building_celtic_01_normal.dds"
+		texture_specular = "building_celtic_01_properties.dds"
+		texture = { file = "western_walls_04_a_unique.dds" index = 5 }
+		shader = "snap_to_terrain_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "decal"
+		index = 0
+		texture_diffuse = "western_walls_01_decal_diffuse.dds"
+		texture_normal = "western_walls_01_decal_normal.dds"
+		texture_specular = "western_walls_01_decal_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+}
+entity = { name = walls_04_celtic pdxmesh = walls_04_celtic_mesh }
+pdxmesh = {
+	name = "walls_04_slavic_mesh"
+	file = "walls_04_slavic.mesh"
+	meshsettings = {
+		name = "walls_04_slavic"
+		index = 0
+		texture_diffuse = "slavic_buildings_02_diffuse.dds"
+		texture_normal = "slavic_buildings_02_normal.dds"
+		texture_specular = "slavic_buildings_02_properties.dds"
+		texture = { file = "slavic_wall_04_unique.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "decal"
+		index = 0
+		texture_diffuse = "western_walls_01_decal_diffuse.dds"
+		texture_normal = "western_walls_01_decal_normal.dds"
+		texture_specular = "western_walls_01_decal_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+}
+entity = { name = walls_04_slavic pdxmesh = walls_04_slavic_mesh }
+pdxmesh = {
+	name = "walls_04_sea_mesh"
+	file = "walls_04_sea.mesh"
+	meshsettings = {
+		name = "walls_04_sea"
+		index = 0
+		texture_diffuse = "southeast_asian_atlas_diffuse.dds"
+		texture_normal = "southeast_asian_atlas_normal.dds"
+		texture_specular = "southeast_asian_atlas_properties.dds"
+		texture = { file = "walls_04_sea_unique.dds" index = 5 }
+		shader = "snap_to_terrain_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "decal"
+		index = 0
+		texture_diffuse = "western_walls_01_decal_diffuse.dds"
+		texture_normal = "western_walls_01_decal_normal.dds"
+		texture_specular = "western_walls_01_decal_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+}
+entity = { name = walls_04_sea pdxmesh = walls_04_sea_mesh }
+pdxmesh = {
+	name = "walls_04_roman_mesh"
+	file = "walls_04_roman.mesh"
+	meshsettings = {
+		name = "walls_04_roman"
+		index = 0
+		texture_diffuse = "building_mediterranean_atlas_diffuse.dds"
+		texture_normal = "building_mediterranean_atlas_normal.dds"
+		texture_specular = "building_mediterranean_atlas_properties.dds"
+		texture = { file = "western_walls_04_a_unique.dds" index = 5 }
+		shader = "snap_to_terrain_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "decal"
+		index = 0
+		texture_diffuse = "western_walls_01_decal_diffuse.dds"
+		texture_normal = "western_walls_01_decal_normal.dds"
+		texture_specular = "western_walls_01_decal_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+}
+entity = { name = walls_04_roman pdxmesh = walls_04_roman_mesh }
+pdxmesh = {
+	name = "walls_04_germanic_mesh"
+	file = "walls_04_germanic.mesh"
+	meshsettings = {
+		name = "walls_04_germanic"
+		index = 0
+		texture_diffuse = "building_western_atlas_diffuse.dds"
+		texture_normal = "building_western_atlas_normal.dds"
+		texture_specular = "building_western_atlas_properties.dds"
+		texture = { file = "western_walls_04_a_unique.dds" index = 5 }
+		shader = "snap_to_terrain_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "decal"
+		index = 0
+		texture_diffuse = "western_walls_01_decal_diffuse.dds"
+		texture_normal = "western_walls_01_decal_normal.dds"
+		texture_specular = "western_walls_01_decal_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+}
+entity = { name = walls_04_germanic pdxmesh = walls_04_germanic_mesh }
+pdxmesh = {
+	name = "walls_04_sahelian_mesh"
+	file = "walls_04_sahelian.mesh"
+	meshsettings = {
+		name = "walls_04_sahelian"
+		index = 0
+		texture_diffuse = "building_mena_atlas_diffuse.dds"
+		texture_normal = "building_mena_atlas_normal.dds"
+		texture_specular = "building_mena_atlas_properties.dds"
+		texture = { file = "sahelian_walls_04_unique.dds" index = 5 }
+		shader = "snap_to_terrain_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "decal"
+		index = 0
+		texture_diffuse = "western_walls_01_decal_diffuse.dds"
+		texture_normal = "western_walls_01_decal_normal.dds"
+		texture_specular = "western_walls_01_decal_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+}
+entity = { name = walls_04_sahelian pdxmesh = walls_04_sahelian_mesh }
+pdxmesh = {
+	name = "walls_04_guinean_mesh"
+	file = "walls_04_guinean.mesh"
+	meshsettings = {
+		name = "walls_04_guinean"
+		index = 0
+		texture_diffuse = "guinean_atlas_diffuse.dds"
+		texture_normal = "guinean_atlas_normal.dds"
+		texture_specular = "guinean_atlas_properties.dds"
+		shader = "snap_to_terrain"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "walls_04_guinean_spikes"
+		index = 0
+		texture_diffuse = "tribal_walls_01_guinean_diffuse.dds"
+		texture_normal = "tribal_walls_01_normal.dds"
+		texture_specular = "tribal_walls_01_properties.dds"
+		shader = "snap_to_terrain_alpha_to_coverage"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "decal"
+		index = 0
+		texture_diffuse = "guinean_walls_02_decal_diffuse.dds"
+		texture_normal = "guinean_walls_02_decal_normal.dds"
+		texture_specular = "guinean_walls_02_decal_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+}
+entity = { name = walls_04_guinean pdxmesh = walls_04_guinean_mesh }
+
+### CUSTOM SPRAWL GRAPHICS
+pdxmesh = {
+	name = "great_walls_of_benin_barracks_guinean_mesh"
+	file = "great_walls_of_benin_barracks_guinean.mesh"
+	meshsettings = {
+		name = "great_walls_of_benin_barracks_guinean"
+		index = 0
+		texture_diffuse = "guinean_atlas_diffuse.dds"
+		texture_normal = "guinean_atlas_normal.dds"
+		texture_specular = "guinean_atlas_properties.dds"
+		shader = "snap_to_terrain"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = { name = great_walls_of_benin_barracks_guinean pdxmesh = great_walls_of_benin_barracks_guinean_mesh }
+pdxmesh = {
+	name = "great_walls_of_benin_monastery_guinean_mesh"
+	file = "great_walls_of_benin_monastery_guinean.mesh"
+	meshsettings = {
+		name = "great_walls_of_benin_monastery_guinean"
+		index = 0
+		texture_diffuse = "guinean_atlas_diffuse.dds"
+		texture_normal = "guinean_atlas_normal.dds"
+		texture_specular = "guinean_atlas_properties.dds"
+		shader = "snap_to_terrain"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = { name = great_walls_of_benin_monastery_guinean pdxmesh = great_walls_of_benin_monastery_guinean_mesh }
+pdxmesh = {
+	name = "great_walls_of_benin_stables_guinean_mesh"
+	file = "great_walls_of_benin_stables_guinean.mesh"
+	meshsettings = {
+		name = "great_walls_of_benin_stables_guinean"
+		index = 0
+		texture_diffuse = "guinean_atlas_diffuse.dds"
+		texture_normal = "guinean_atlas_normal.dds"
+		texture_specular = "guinean_atlas_properties.dds"
+		shader = "snap_to_terrain"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = { name = great_walls_of_benin_stables_guinean pdxmesh = great_walls_of_benin_stables_guinean_mesh }
+pdxmesh = {
+	name = "great_walls_of_benin_outpost_guinean_mesh"
+	file = "great_walls_of_benin_outpost_guinean.mesh"
+	meshsettings = {
+		name = "great_walls_of_benin_outpost_guinean"
+		index = 0
+		texture_diffuse = "guinean_atlas_diffuse.dds"
+		texture_normal = "guinean_atlas_normal.dds"
+		texture_specular = "guinean_atlas_properties.dds"
+		shader = "snap_to_terrain"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = { name = great_walls_of_benin_outpost_guinean pdxmesh = great_walls_of_benin_outpost_guinean_mesh }
+pdxmesh = {
+	name = "great_walls_of_benin_farm_guinean_mesh"
+	file = "great_walls_of_benin_farm_guinean.mesh"
+	meshsettings = {
+		name = "great_walls_of_benin_farm_guinean"
+		index = 0
+		texture_diffuse = "guinean_atlas_diffuse.dds"
+		texture_normal = "guinean_atlas_normal.dds"
+		texture_specular = "guinean_atlas_properties.dds"
+		shader = "snap_to_terrain"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "great_walls_of_benin_farm_guinean_decal"
+		index = 0
+		texture_diffuse = "farmland_01_drylands_decal_diffuse.dds"
+		texture_normal = "farmland_01_decal_normal.dds"
+		texture_specular = "farmland_01_decal_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+}
+entity = { name = great_walls_of_benin_farm_guinean pdxmesh = great_walls_of_benin_farm_guinean_mesh }
+pdxmesh = {
+	name = "carthage_city_walls_levantine_mesh"
+	file = "carthage_city_walls_levantine.mesh"
+	meshsettings = {
+		name = "carthage_city_walls_levantine"
+		index = 0
+		texture_diffuse = "building_mediterranean_atlas_diffuse.dds"
+		texture_normal = "building_mediterranean_atlas_normal.dds"
+		texture_specular = "building_mediterranean_atlas_properties.dds"
+		shader = "snap_to_terrain"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "carthage_city_walls_levantine_decal"
+		index = 0
+		texture_diffuse = "carthage_sprawl_diffuse.dds"
+		texture_normal = "carthage_sprawl_normal.dds"
+		texture_specular = "carthage_sprawl_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+}
+entity = { name = carthage_city_walls_levantine pdxmesh = carthage_city_walls_levantine_mesh }
+pdxmesh = {
+	name = "carthage_farm_levantine_mesh"
+	file = "carthage_farm_levantine.mesh"
+	meshsettings = {
+		name = "carthage_farm_levantine"
+		index = 0
+		texture_diffuse = "building_mediterranean_atlas_diffuse.dds"
+		texture_normal = "building_mediterranean_atlas_normal.dds"
+		texture_specular = "building_mediterranean_atlas_properties.dds"
+		shader = "snap_to_terrain"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "carthage_farm_levantine_decal"
+		index = 0
+		texture_diffuse = "farmland_01_medi_decal_diffuse.dds"
+		texture_normal = "farmland_01_decal_normal.dds"
+		texture_specular = "farmland_01_decal_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+}
+entity = { name = carthage_farm_levantine pdxmesh = carthage_farm_levantine_mesh }
+pdxmesh = {
+	name = "carthage_palace_01_mesh"
+	file = "carthage_palace_01.mesh"
+	meshsettings = {
+		name = "carthage_palace_01"
+		index = 0
+		texture_diffuse = "building_mediterranean_atlas_diffuse.dds"
+		texture_normal = "building_mediterranean_atlas_normal.dds"
+		texture_specular = "building_mediterranean_atlas_properties.dds"
+		shader = "snap_to_terrain"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = { name = carthage_palace_01 pdxmesh = carthage_palace_01_mesh }
+pdxmesh = {
+	name = "carthage_palace_02_mesh"
+	file = "carthage_palace_02.mesh"
+	meshsettings = {
+		name = "carthage_palace_02"
+		index = 0
+		texture_diffuse = "building_mediterranean_atlas_diffuse.dds"
+		texture_normal = "building_mediterranean_atlas_normal.dds"
+		texture_specular = "building_mediterranean_atlas_properties.dds"
+		shader = "snap_to_terrain"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = { name = carthage_palace_02 pdxmesh = carthage_palace_02_mesh }
+pdxmesh = {
+	name = "carthage_stables_levantine_mesh"
+	file = "carthage_stables_levantine.mesh"
+	meshsettings = {
+		name = "carthage_stables_levantine"
+		index = 0
+		texture_diffuse = "building_mediterranean_atlas_diffuse.dds"
+		texture_normal = "building_mediterranean_atlas_normal.dds"
+		texture_specular = "building_mediterranean_atlas_properties.dds"
+		shader = "snap_to_terrain"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = { name = carthage_stables_levantine pdxmesh = carthage_stables_levantine_mesh }
+pdxmesh = {
+	name = "carthage_tomb_levantine_mesh"
+	file = "carthage_tomb_levantine.mesh"
+	meshsettings = {
+		name = "carthage_tomb_levantine"
+		index = 0
+		texture_diffuse = "building_mediterranean_atlas_diffuse.dds"
+		texture_normal = "building_mediterranean_atlas_normal.dds"
+		texture_specular = "building_mediterranean_atlas_properties.dds"
+		shader = "snap_to_terrain"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = { name = carthage_tomb_levantine pdxmesh = carthage_tomb_levantine_mesh }
+pdxmesh = {
+	name = "carthage_eastern_forge_levantine_mesh"
+	file = "carthage_eastern_forge_levantine.mesh"
+	meshsettings = {
+		name = "carthage_eastern_forge_levantine"
+		index = 0
+		texture_diffuse = "building_mediterranean_atlas_diffuse.dds"
+		texture_normal = "building_mediterranean_atlas_normal.dds"
+		texture_specular = "building_mediterranean_atlas_properties.dds"
+		shader = "snap_to_terrain"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = { name = carthage_eastern_forge_levantine pdxmesh = carthage_eastern_forge_levantine_mesh }
+pdxmesh = {
+	name = "carthage_western_barracks_levantine_mesh"
+	file = "carthage_western_barracks_levantine.mesh"
+	meshsettings = {
+		name = "carthage_western_barracks_levantine"
+		index = 0
+		texture_diffuse = "building_mediterranean_atlas_diffuse.dds"
+		texture_normal = "building_mediterranean_atlas_normal.dds"
+		texture_specular = "building_mediterranean_atlas_properties.dds"
+		shader = "snap_to_terrain"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = { name = carthage_western_barracks_levantine pdxmesh = carthage_western_barracks_levantine_mesh }
+
+
+
+
+pdxmesh = {
+	name = "athens_theatre_hellenic_mesh"
+	file = "athens_theatre_hellenic.mesh"
+	meshsettings = {
+		name = "athens_theatre_hellenic"
+		index = 0
+		texture_diffuse = "building_mediterranean_atlas_diffuse.dds"
+		texture_normal = "building_mediterranean_atlas_normal.dds"
+		texture_specular = "building_mediterranean_atlas_properties.dds"
+		shader = "snap_to_terrain"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = { name = athens_theatre_hellenic pdxmesh = athens_theatre_hellenic_mesh }
+pdxmesh = {
+	name = "athens_long_walls_hellenic_mesh"
+	file = "athens_long_walls_hellenic.mesh"
+	meshsettings = {
+		name = "athens_long_walls_hellenic"
+		index = 0
+		texture_diffuse = "building_mediterranean_atlas_diffuse.dds"
+		texture_normal = "building_mediterranean_atlas_normal.dds"
+		texture_specular = "building_mediterranean_atlas_properties.dds"
+		shader = "snap_to_terrain"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = { name = athens_long_walls_hellenic pdxmesh = athens_long_walls_hellenic_mesh }
+pdxmesh = {
+	name = "athens_city_walls_hellenic_mesh"
+	file = "athens_city_walls_hellenic.mesh"
+	meshsettings = {
+		name = "athens_city_walls_hellenic"
+		index = 0
+		texture_diffuse = "building_mediterranean_atlas_diffuse.dds"
+		texture_normal = "building_mediterranean_atlas_normal.dds"
+		texture_specular = "building_mediterranean_atlas_properties.dds"
+		shader = "snap_to_terrain"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "athens_city_walls_hellenic_decal"
+		index = 0
+		texture_diffuse = "athens_sprawl_diffuse.dds"
+		texture_normal = "athens_sprawl_normal.dds"
+		texture_specular = "athens_sprawl_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+}
+entity = { name = athens_city_walls_hellenic pdxmesh = athens_city_walls_hellenic_mesh }
+pdxmesh = {
+	name = "athens_academy_hellenic_mesh"
+	file = "athens_academy_hellenic.mesh"
+	meshsettings = {
+		name = "wonder_greek_academy"
+		index = 0
+		texture_diffuse = "building_mediterranean_atlas_diffuse.dds"
+		texture_normal = "building_mediterranean_atlas_normal.dds"
+		texture_specular = "building_mediterranean_atlas_properties.dds"
+		texture = { file = "wonder_greek_academy_unique.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "sacred_grove"
+		index = 0
+		texture_diffuse = "tree_pine_01_diffuse.dds"
+		texture_normal = "tree_pine_01_normal.dds"
+		texture_specular = "tree_pine_01_properties.dds"
+		texture = { file = "tree_pine_01_tint.dds" index = 3 srgb = yes }
+		shader = "tree"
+		shader_file = "gfx/FX/tree.shader"
+	}
+}
+entity = { name = athens_academy_hellenic pdxmesh = athens_academy_hellenic_mesh }
+pdxmesh = {
+	name = "athens_panathenaic_hellenic_mesh"
+	file = "athens_panathenaic_hellenic.mesh"
+	meshsettings = {
+		name = "athens_panathenaic_hellenic"
+		index = 0
+		texture_diffuse = "building_mediterranean_atlas_diffuse.dds"
+		texture_normal = "building_mediterranean_atlas_normal.dds"
+		texture_specular = "building_mediterranean_atlas_properties.dds"
+		shader = "snap_to_terrain"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = { name = athens_panathenaic_hellenic pdxmesh = athens_panathenaic_hellenic_mesh }
+pdxmesh = {
+	name = "athens_farm_hellenic_mesh"
+	file = "athens_farm_hellenic.mesh"
+	meshsettings = {
+		name = "athens_farm_hellenic"
+		index = 0
+		texture_diffuse = "building_mediterranean_atlas_diffuse.dds"
+		texture_normal = "building_mediterranean_atlas_normal.dds"
+		texture_specular = "building_mediterranean_atlas_properties.dds"
+		shader = "snap_to_terrain"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "athens_farm_hellenic_vines"
+		index = 0
+		texture_diffuse = "vines_02_diffuse.dds"
+		texture_normal = "vines_01_normal.dds"
+		texture_specular = "vines_01_properties.dds"
+		shader = "snap_to_terrain_alpha_to_coverage"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "athens_farm_hellenic_decal"
+		index = 0
+		texture_diffuse = "farmland_01_medi_decal_diffuse.dds"
+		texture_normal = "farmland_01_decal_normal.dds"
+		texture_specular = "farmland_01_decal_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+}
+entity = { name = athens_farm_hellenic pdxmesh = athens_farm_hellenic_mesh }
+pdxmesh = {
+	name = "athens_piraeus_mesh"
+	file = "athens_piraeus.mesh"
+
+	meshsettings = {
+		name = "athens_port"
+		index = 0
+		texture_diffuse = "building_mediterranean_atlas_diffuse.dds"
+		texture_normal = "building_mediterranean_atlas_normal.dds"
+		texture_specular = "building_mediterranean_atlas_properties.dds"
+		texture = { file = "athens_port_unique.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	meshsettings = {
+		name = "athens_port_rock"
+		index = 0
+		texture_diffuse = "athens_buildings_rock_diffuse.dds"
+		texture_normal = "athens_buildings_rock_normal.dds"
+		texture_specular = "athens_buildings_rock_properties.dds"
+		texture = { file = "athens_port_unique.dds" index = 5 }
+		shader = "standard_atlas"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+entity = { name = athens_piraeus pdxmesh = athens_piraeus_mesh }
+
+
+
+### Special Building Sprawl ###
+# Walls of Benin
+entity = { # with Walls of Benin
+	name = great_walls_of_benin_sprawl
+	attach = { city_center = great_walls_of_benin_farm_guinean }
+}
+entity = { # with Walls of Benin tier 2 (Oba Palace)
+	name = great_walls_of_benin_palace_sprawl
+	attach = { city_center = great_walls_of_benin_barracks_guinean }
+	attach = { city_center = great_walls_of_benin_monastery_guinean }
+	attach = { city_center = great_walls_of_benin_stables_guinean }
+	attach = { city_center = great_walls_of_benin_outpost_guinean }
+	attach = { city_center = great_walls_of_benin_farm_guinean }
+#	attach = { city_center = great_walls_of_benin_palace }
+}
+# Carthage
+entity = { # basic, includes city walls
+	name = carthage_sprawl
+	attach = { city_center = carthage_stables_levantine }
+	attach = { city_center = carthage_city_walls_levantine }
+	attach = { city_center = carthage_farm_levantine }
+	attach = { city_center = carthage_palace_01 }
+	locator = { name = city_center position = { 0 0 0 } }
+}
+entity = { # with tier 4 Holding
+	name = carthage_trade_sprawl
+	attach = { city_center = carthage_tomb_levantine }
+	attach = { city_center = carthage_stables_levantine }
+	attach = { city_center = carthage_city_walls_levantine }
+	attach = { city_center = carthage_farm_levantine }
+	attach = { city_center = carthage_palace_02 }
+	locator = { name = city_center position = { 0 0 0 } }
+}
+entity = { # with tier 4 Holding & Carthage Cothon
+	name = carthage_trade_carthage_cothon_sprawl
+	attach = { city_center = carthage_western_barracks_levantine }
+	attach = { city_center = carthage_tomb_levantine }
+	attach = { city_center = carthage_stables_levantine }
+	attach = { city_center = carthage_eastern_forge_levantine }
+	attach = { city_center = carthage_city_walls_levantine }
+	attach = { city_center = carthage_farm_levantine }
+	attach = { city_center = carthage_palace_02 }
+	locator = { name = city_center position = { 0 0 0 } }
+}
+# Athens
+entity = { # basic, includes city walls
+	name = athens_sprawl
+	attach = { city_center = athens_theatre_hellenic }
+	attach = { city_center = athens_academy_hellenic }
+	attach = { city_center = athens_city_walls_hellenic }
+	locator = { name = city_center position = { 0 0 0 } }
+}
+entity = { # with Piraeus or Trade Port
+	name = athens_piraeus_sprawl
+	attach = { city_center = athens_theatre_hellenic }
+	attach = { city_center = athens_academy_hellenic }
+	attach = { city_center = athens_long_walls_hellenic }
+	attach = { city_center = athens_city_walls_hellenic }
+	attach = { city_center = athens_piraeus }
+	locator = { name = city_center position = { 0 0 0 } }
+}
+entity = { # with Piraeus & Acropolis
+	name = athens_piraeus_athens_acropolis_sprawl
+	attach = { city_center = athens_theatre_hellenic }
+	attach = { city_center = athens_academy_hellenic }
+	attach = { city_center = athens_panathenaic_hellenic }
+	attach = { city_center = athens_long_walls_hellenic }
+	attach = { city_center = athens_city_walls_hellenic }
+	attach = { city_center = athens_farm_hellenic }
+	attach = { city_center = athens_piraeus }
+	locator = { name = city_center position = { 0 0 0 } }
+}
+# Jerusalem
+entity = { # basic
+	name = jerusalem_sprawl_01
+	attach = { city_center = building_special_jerusalem_sprawl_01_entity }
+	locator = { name = city_center position = { 0 0 0 } }
+}
+entity = { # with walls & Temple Mount
+	name = jerusalem_sprawl_02
+	attach = { city_center = building_special_jerusalem_sprawl_01_entity }
+	attach = { city_center = building_special_jerusalem_sprawl_02_entity }
+	locator = { name = city_center position = { 0 0 0 } }
+}
+entity = { # with walls, Temple Mount & secondary temple
+	name = jerusalem_sprawl_03
+	attach = { city_center = building_special_jerusalem_sprawl_01_entity }
+	attach = { city_center = building_special_jerusalem_sprawl_02_entity }
+	attach = { city_center = building_special_jerusalem_sprawl_03_entity }
+	locator = { name = city_center position = { 0 0 0 } }
+}
+# Constantinople
+# basic, includes low city walls
+# with Theodosian Walls
+# with tier 4 Holding, Theodosian Walls and Hagia Sophia
+
+# Rome
+# basic, includes low city walls
+# with Aurelian Walls
+# with tier 4 Holding, Aurelian Walls & Colosseum
+
+# Alexandria
+# basic, includes city walls
+# with Library of Alexandria
+# with tier 4 Holding, Pharos Lighthouse & Library of Alexandria

@@ -1,0 +1,545 @@
+﻿k_aragon = {
+	768.1.1 = { change_development_level = 7 }
+}
+
+
+d_barcelona = {
+	476.1.1 = {
+		de_jure_liege = k_tarraconensis
+	}
+	532.1.1 = {
+		holder = 200280
+	}
+	711.1.1 = {
+		de_jure_liege = k_aquitaine
+	}
+}
+
+c_tarragona = {
+	361.1.1 = { change_development_level = 5 }
+	467.1.1 = { change_development_level = 6 }
+	## Roman Rule
+	200.1.1 = {
+		de_jure_liege = d_aragon
+	}
+	361.1.1 = {
+		holder = tarraconensis_01 # Flavius
+		liege = d_aragon
+	}
+	390.1.1 = {
+		holder = theodosian_016 # Didimus Theodosian
+	}
+	395.1.1 = {
+		liege = d_aragon
+	}
+	##Gothic Rule
+	474.1.1 = {
+		holder = euric_02 # Edelfred
+		liege = k_visigoths
+		government = feudal_government
+		de_jure_liege = d_barcelona
+	}
+	532.1.1 = {
+		holder = 200277 # Agila
+		liege = k_visigoths
+	}
+	632.1.1 = {
+		holder = sisenando_01 # Hildibald
+		liege = d_aragon
+	}
+	755.1.1 = {
+		holder = yusuf_01 #Yusuf
+	}
+}
+
+c_barcelona = {
+	361.1.1 = { change_development_level = 4 }
+	## Roman Rule
+	200.1.1 = {
+		de_jure_liege = d_aragon
+	}
+	361.1.1 = {
+		holder = tarraconensis_01 # Fabianus
+		liege = d_aragon
+	}
+	390.1.1 = {
+		holder = theodosian_017 # Verninianus Theodosian
+	}
+	395.1.1 = {
+		liege = d_aragon
+	}
+
+	##Gothic Rule
+	474.1.1 = {
+		holder = euric_02 # Edelfred
+		liege = k_visigoths
+		government = feudal_government
+		de_jure_liege = d_barcelona
+	}
+	531.1.1 = {
+		holder = 200280 #King Theudis
+	}
+	632.1.1 = {
+		holder = sisenando_01 # Hildibald
+		liege = d_aragon
+	}
+	768.1.1 = {
+		holder = omeya_01 #Adelfonso
+		liege = d_aragon
+	}
+}
+
+
+c_lleida = {
+	361.1.1 = { change_development_level = 4 }
+	## Roman Rule
+	200.1.1 = {
+		de_jure_liege = d_aragon
+	}
+	361.1.1 = {
+		holder = tarraconensis_02 # Urbanus
+		liege = d_aragon
+	}
+	395.1.1 = {
+		liege = d_aragon
+	}
+	##Gothic Rule
+	475.1.1 = {
+		holder = euric_03 # Airairc
+		liege = k_visigoths
+		government = feudal_government
+		de_jure_liege = d_barcelona
+	}
+	532.1.1 = {
+		holder = 200277 # Agila
+		liege = k_visigoths
+	}
+	632.1.1 = {
+		holder = sisenando_01 # Hildibald
+		liege = d_aragon
+	}
+	##Islamic Rule
+	755.1.1 = {
+		holder = yusuf_01 #Yusuf
+	}
+}
+
+c_urgell = {
+	361.1.1 = { change_development_level = 3 }
+	## Roman Rule
+	200.1.1 = {
+		de_jure_liege = d_aragon
+	}
+	361.1.1 = {
+		holder = tarraconensis_02 # Urbanus
+		liege = d_aragon
+		
+	}
+	395.1.1 = {
+		liege = d_aragon
+	}
+
+	##Gothic Rule
+	475.1.1 = {
+		holder = euric_03 # Airairc
+		liege = k_visigoths
+		government = feudal_government
+		de_jure_liege = d_barcelona
+	}
+	532.1.1 = {
+		holder = 200277 # Agila
+		liege = k_visigoths
+	}
+	632.1.1 = {
+		holder = sisenando_02 # Winithar
+		liege = d_aragon
+	}
+	761.1.1 = {
+		holder = 200055 # Suleyman Qutalanid
+		liege = d_aragon
+	}
+}
+
+
+c_puigcerda = {
+	361.1.1 = { change_development_level = 2 }
+	## Roman Rule
+	200.1.1 = {
+		de_jure_liege = d_aragon
+	}
+	361.1.1 = {
+		holder = tarraconensis_01 # Flavius
+		liege = d_aragon
+	}
+	390.1.1 = {
+		holder = theodosian_017 # Verninianus Theodosian
+	}
+	395.1.1 = {
+		liege = d_aragon
+	}
+	##Gothic Rule
+	475.1.1 = {
+		holder = euric_03 # Airairc
+		liege = k_visigoths
+		government = feudal_government
+		de_jure_liege = d_barcelona
+	}
+	531.1.1 = {
+		holder = 200280 #King Theudis
+	}
+	632.1.1 = {
+		holder = sisenando_02 # Winithar
+		liege = d_aragon
+	}
+	761.1.1 = {
+		holder = omeya_02 # Atawulfo
+		liege = d_aragon
+	}
+}
+
+c_pallas = {
+	## Roman Rule
+	200.1.1 = {
+		de_jure_liege = d_aragon
+	}
+	361.1.1 = {
+		holder = tarraconensis_02 # Urbanus
+		liege = d_aragon
+	}
+	395.1.1 = {
+		liege = d_aragon
+	}
+	##Gothic Rule
+	475.1.1 = {
+		holder = euric_03 # Airairc
+		liege = k_visigoths
+		government = feudal_government
+		de_jure_liege = d_barcelona
+	}
+	532.1.1 = {
+		holder = 200277 # Agila
+	}
+}
+
+c_girona = {
+	361.1.1 = { change_development_level = 3 }
+	## Roman Rule
+	200.1.1 = {
+		de_jure_liege = d_aragon
+	}
+	361.1.1 = {
+		holder = tarraconensis_01 # Flavius
+		liege = d_aragon
+	}
+	390.1.1 = {
+		holder = theodosian_017 # Verninianus Theodosian
+	}
+	395.1.1 = {
+		liege = d_aragon
+	}
+	##Gothic Rule
+	474.1.1 = {
+		holder = euric_02 # Edelfred
+		liege = k_visigoths
+		government = feudal_government
+		de_jure_liege = d_barcelona
+	}
+	531.1.1 = {
+		holder = 200280 #King Theudis
+	}
+	632.1.1 = {
+		holder = sisenando_02 # Winithar
+		liege = d_aragon
+	}
+	768.1.1 = {
+		holder = omeya_01 #Adelfonso
+		liege = d_aragon
+	}
+}
+
+c_rossello = {
+	## Roman Rule
+	200.1.1 = {
+		de_jure_liege = d_aragon
+	}
+	361.1.1 = {
+		holder = tarraconensis_01 # Flavius
+		liege = d_aragon
+	}
+	390.1.1 = {
+		holder = theodosian_017 # Verninianus Theodosian
+	}
+	##Gothic Rule
+	474.1.1 = {
+		holder = euric_02 # Edelfred
+		liege = k_visigoths
+		government = feudal_government
+		de_jure_liege = d_barcelona
+	}
+}
+d_aragon = {
+	## Roman Rule
+	200.1.1 = {
+		de_jure_liege = k_hispania
+	}
+	360.1.1 = {
+		holder = tarraconensis_03 # Junius
+	}
+	361.1.1 = {
+		liege = k_hispania
+	}
+	395.1.1 = {
+		holder = tarraconensis_05 #Claudius
+		liege = k_hispania
+	}
+
+	#Gothic Control
+	476.1.1 = {
+		government = feudal_government
+		de_jure_liege = k_tarraconensis
+	}
+	476.1.1 = {
+		holder = 0
+	}
+	532.1.1 = {
+		holder = theudis_02
+		liege = k_visigoths
+	}
+	632.1.1 = {
+		holder = sisenando_03 # Eutharic
+		liege = k_visigoths
+		
+	}
+	711.1.1 = {
+		de_jure_liege = k_valencia
+	}
+	##Islamic Rule
+	755.1.1 = {
+		holder = yusuf_01 #Yusuf
+		liege = k_andalusia
+	}
+	768.1.1 = {
+		de_jure_liege = k_aragon
+	}
+}
+
+
+c_zaragoza = {
+	361.1.1 = { change_development_level = 6 }
+	
+	## Roman Rule
+	361.1.1 = {
+		holder = tarraconensis_03 # Junius
+	}
+	395.1.1 = {
+		holder = tarraconensis_05 #Claudius
+	}
+	##Gothic Rule
+	472.1.1 = {
+		holder = euric_01 # Gauteric
+		liege = k_visigoths
+		government = feudal_government
+		de_jure_liege = d_aragon
+	}
+	532.1.1 = {
+		holder = theudis_02 # Theodemir
+	}
+	632.1.1 = {
+		holder = sisenando_03 # Eutharic
+	}
+
+	##Islamic Rule
+	755.1.1 = {
+		holder = yusuf_01 #Yusuf
+	}
+	
+}
+c_huesca = {
+	## Roman Rule
+	361.1.1 = {
+		holder = tarraconensis_03 # Junius
+	}
+	395.1.1 = {
+		holder = tarraconensis_05 #Claudius
+	}
+	##Gothic Rule
+	472.1.1 = {
+		holder = euric_01 # Gauteric
+		liege = k_visigoths
+		government = feudal_government
+		de_jure_liege = d_aragon
+	}
+	532.1.1 = {
+		holder = theudis_02
+	}
+}
+c_sobrarbe = {
+	## Roman Rule
+	361.1.1 = {
+		holder = tarraconensis_03 # Junius
+	}
+	395.1.1 = {
+		holder = tarraconensis_05 #Claudius
+	}
+	##Gothic Rule
+	472.1.1 = {
+		holder = euric_01 # Gauteric
+		liege = k_visigoths
+		government = feudal_government
+	}
+	532.1.1 = {
+		holder = hispano_roman_misc_003
+		liege = d_aragon
+	}
+}
+c_albarracin = {
+	361.1.1 = { change_development_level = 3 }
+	## Roman Rule
+	361.1.1 = {
+		holder = tarraconensis_04 # Cassius
+		liege = d_aragon
+	}
+	395.1.1 = {
+		liege = d_aragon
+	}
+	##Gothic Rule
+	476.1.1 = {
+		holder = euric_04 # Cassius
+		liege = k_visigoths
+		government = feudal_government
+		de_jure_liege = d_aragon
+	}
+	532.1.1 = {
+		holder = theudis_01 # Segga
+		liege = d_aragon
+	}
+	632.1.1 = {
+		holder = sisenando_04 # Nebigast
+		liege = d_aragon
+	}
+}
+
+
+c_alto_aragon = {
+	361.1.1 = { change_development_level = 3 }
+	## Roman Rule
+	361.1.1 = {
+		holder = tarraconensis_03 # Junius
+	}
+	395.1.1 = {
+		holder = tarraconensis_05 #Claudius
+	}
+	##Gothic Rule
+	472.1.1 = {
+		holder = euric_01 # Gauteric
+		liege = k_visigoths
+		government = feudal_government
+		de_jure_liege = d_aragon
+	}
+	532.1.1 = {
+		holder = hispano_roman_misc_003
+		liege = d_aragon
+	}
+	632.1.1 = {
+		holder = sisenando_03 # Eutharic
+	}
+
+	766.1.1 = {
+		holder = 200042 # Hakam Hakamid
+		liege = k_andalusia
+	}
+}
+
+
+c_calatayud = {
+	361.1.1 = { change_development_level = 3 }
+	## Roman Rule
+	361.1.1 = {
+		holder = tarraconensis_04 # Cassius
+		liege = d_aragon
+	}
+	395.1.1 = {
+		liege = d_aragon
+	}
+
+	##Gothic Rule
+	476.1.1 = {
+		holder = euric_04 # Cassius
+		liege = k_visigoths
+		government = feudal_government
+		de_jure_liege = d_aragon
+	}
+	532.1.1 = {
+		holder = theudis_01 # Segga
+		liege = k_visigoths
+	}
+	632.1.1 = {
+		holder = sisenando_04 # Nebigast
+		liege = d_aragon
+	}
+
+}
+
+
+c_fraga = {
+	361.1.1 = { change_development_level = 3 }
+	## Roman Rule
+	361.1.1 = {
+		holder = tarraconensis_03 # Junius
+	}
+	395.1.1 = {
+		holder = tarraconensis_05 #Claudius
+	}
+	##Gothic Rule
+	472.1.1 = {
+		holder = euric_01 # Gauteric
+		liege = k_visigoths
+		government = feudal_government
+		de_jure_liege = d_aragon
+	}
+	532.1.1 = {
+		holder = theudis_02 # Theodemir
+	}
+	632.1.1 = {
+		holder = sisenando_03 # Eutharic
+	}
+	##Islamic Rule
+	755.1.1 = {
+		holder = yusuf_01 #Yusuf
+	}
+}
+
+
+c_alcaniz = {
+	361.1.1 = { change_development_level = 3 }
+	## Roman Rule
+	361.1.1 = {
+		holder = tarraconensis_04 # Cassius
+		liege = d_aragon
+	}
+	395.1.1 = {
+		liege = d_aragon
+	}
+	##Gothic Rule
+	476.1.1 = {
+		holder = euric_04 # Cassius
+		liege = k_visigoths
+		government = feudal_government
+		de_jure_liege = d_aragon
+	}
+	532.1.1 = {
+		holder = theudis_01 # Segga
+		liege = k_visigoths
+	}
+	632.1.1 = {
+		holder = sisenando_04 # Nebigast
+		liege = d_aragon
+	}
+	758.1.1 = {
+		holder = 200226 # Hisham Petrid
+		liege = k_andalusia
+		government = clan_government
+	}
+}
+
+# Fate of Iberia counties, still needs history

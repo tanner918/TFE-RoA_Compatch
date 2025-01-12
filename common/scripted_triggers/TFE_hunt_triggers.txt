@@ -1,0 +1,22 @@
+﻿can_hunt_trigger = {
+	NOR = {
+		has_trait = wounded_2
+		has_trait = wounded_3
+		has_trait = infirm
+		has_trait = maimed
+		has_trait = blind
+	}
+	has_contagious_deadly_disease_trigger = no
+	custom_tooltip = {
+		text = hunt_cannot_hunt_parameter_tt
+		NOT = {
+			culture = { has_cultural_parameter = cannot_hunt }
+		}
+	}
+	custom_tooltip = {
+		text = faith_cannot_hunt_parameter_tt
+		NOT = {
+			faith = { has_doctrine_parameter = cannot_hunt }
+		}
+	}
+}

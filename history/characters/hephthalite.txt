@@ -1,0 +1,1138 @@
+﻿
+#############################################################
+# 
+# HEPHTHALITES PROPER
+# All dates assumed made up unless stated otherwise due to paucity of records
+# 
+# Done by Cybrxkhan
+# 
+#############################################################
+
+hephthalite_001 = { # Fictitious
+	name= "Akvan"
+	dynasty = dynasty_hephthalite
+	religion="zun_pagan" # Should be Zunist pagan?
+	culture="hephthalite"
+	343.2.21 = {
+		birth = yes
+	}
+	408.5.6 = {
+		death = yes
+	}
+}
+
+hephthalite_002 = { # Fictitious
+	name= "Axshondar" # Persian variation of Akhshunwar
+	dynasty = dynasty_hephthalite
+	religion="zun_pagan" # Should be Zunist pagan?
+	culture="hephthalite"
+	father=hephthalite_001
+	369.3.23 = {
+		birth = yes
+	}
+	442.1.1 = {
+		death = yes
+	}
+}
+
+hephthalite_003 = { # Fictitious
+	name= "Khushnawaz" # Transformation of Akhshunwar found in the Shahnameh
+	dynasty = dynasty_hephthalite
+	religion="zun_pagan" # Should be Zunist pagan?
+	culture="hephthalite"
+	father=hephthalite_002
+	405.2.16 = {
+		birth = yes
+	}
+	456.10.12 = {
+		death = yes
+	}
+}
+
+# Difficult to say if it was a title or an actual name
+# He is attested in the mid 450s to the 480s based on later sources
+hephthalite_004 = {
+	name= "Akhshunwar"
+	dynasty = dynasty_hephthalite
+	religion="khurmazta" # Should be Zunist pagan?
+	culture="hephthalite"
+	father=hephthalite_003
+	trait=education_martial_4
+	439.9.5 = {
+		birth = yes
+	}
+	460.1.1 = {
+		effect = {
+			spawn_army = {
+				name = "Hunnic Invaders"
+				levies = 2000
+				men_at_arms = {
+					type = bowmen
+					stacks = 5
+				}
+				men_at_arms = {
+					type = light_horsemen
+					stacks = 10
+				}
+				men_at_arms = {
+					type = light_footmen
+					stacks = 5
+				}
+				men_at_arms = {
+					type = horse_archers
+					stacks = 5
+				}
+				location = province:4335 # Balkh
+			}
+		}
+	}
+	484.1.1 = {
+		add_spouse = sassanid_30
+	}
+	505.5.5 = {
+		death = yes
+	}
+}
+
+#Kidarite princess who married Kavadh, i named her Umma because it was allready a name in the family
+hephthalite_005 = {
+	name= "Umma"
+	dynasty = dynasty_hephthalite
+	religion="khurmazta" # Should be Zunist pagan?
+	culture="hephthalite"
+	father=hephthalite_004
+	mother=sassanid_30
+	485.1.1 = {
+		birth = yes
+	}
+	530.1.1 = {
+		death = yes
+	}
+}
+
+# Note: Wikipedia lists a Kunkhi ruling in 484, but this is a misreading of the paper they cited
+# As Kunkhi appears to be a transliteration of Akhshunwar by the Byzantine historian Priscus
+
+# Hephthalite king according to Chinese sources in 516
+hephthalite_006 = {
+	name= "Yilituo"
+	dynasty = dynasty_hephthalite
+	religion="khurmazta" # Should be Zunist pagan?
+	culture="hephthalite"
+	father=hephthalite_004
+	mother=sassanid_30
+	488.3.1 = {
+		birth = yes
+	}
+	532.1.1 = {
+		death = yes
+	}
+}
+
+# King of Hephthalites c. 560s during their collapse following the battle of Gol-Zarriun c. 560 against a combined Perso-Turkish force
+# Following their collapse, Gatfar was replaced by Hephthalite nobles and he fled to (ironically) Sassanid territory
+# According to Firdausi in the Shahnameh, he is the grandson of Akhshunwar, but this is debateable
+hephthalite_007 = {
+	name= "Gatfar"
+	dna = gatfar_dna
+	dynasty = dynasty_hephthalite
+	religion="khurmazta" # Should be Zunist pagan?
+	culture="hephthalite"
+	father=hephthalite_006
+	trait=education_martial_2
+	515.9.2 = {
+		birth = yes
+	}
+	532.1.1 = {
+		effect = {
+			spawn_army = {
+				name = "Hunnic Invaders"
+				levies = 1000
+				men_at_arms = {
+					type = bowmen
+					stacks = 2
+				}
+				men_at_arms = {
+					type = light_horsemen
+					stacks = 5
+				}
+				men_at_arms = {
+					type = light_footmen
+					stacks = 2
+				}
+				men_at_arms = {
+					type = horse_archers
+					stacks = 3
+				}
+				location = province:4335 # Balkh
+			}
+		}
+	}
+	578.10.9 = {
+		death = yes
+	}
+}
+
+# Alternative name of Gatfar per Tabari
+# Here I use it for fictitious father of Faghanish to connect him to Akhshunwar
+hephthalite_008 = {
+	name= "Waraz"
+	dynasty = dynasty_hephthalite
+	religion="khurmazta" # Should be Zunist pagan?
+	culture="hephthalite"
+	father=hephthalite_004
+	mother=sassanid_30
+	494.11.27 = {
+		birth = yes
+	}
+	530.9.4 = {
+		death = yes
+	}
+}
+
+# Faganish/Faghanish King of Chaghaniyan
+# Proclaimed new Hephthalite leader by Hephthalite nobles following Gatfar's defeat in c. 560 in agreement with Turkic Khaganate
+# Appears his claim to the empire was pretty much pointless since Hephthalite central authority had collapsed
+# And he had to suck up to the Sassanids as a vassal
+# Possible ancestors of the later rulers of Chaghaniyan when the Muslims showed up in the 7th century
+hephthalite_009 = {
+	name= "Faganish"
+	dynasty = dynasty_hephthalite
+	religion="khurmazta" # Should be Zunist pagan?
+	culture="hephthalite"
+	father=hephthalite_008
+	515.4.3 = {
+		birth = yes
+	}
+	590.1.30 = {
+		death = yes
+	}
+}
+
+# Fictitious for alliance with Alchonids at start
+# hephthalite_010 = {
+# 	name= "Umma"
+# 	female=yes
+# 	dynasty = dynasty_hephthalite
+# 	religion="khurmazta" # Should be Zunist pagan?
+# 	culture="hephthalite"
+# 	father=hephthalite_003
+# 	445.3.27 = {
+# 		birth = yes
+# 	}
+# 	509.12.26 = {
+# 		death = yes
+# 	}
+# }
+
+# Fictitious for alliance with Alchonids at start
+hephthalite_010 = {
+	name= "Umma"
+	female=yes
+	dynasty = dynasty_hephthalite
+	religion="khurmazta" # Should be Zunist pagan?
+	culture="hephthalite"
+	father=hephthalite_003
+	429.3.27 = {
+		birth = yes
+	}
+	489.12.26 = {
+		death = yes
+	}
+}
+
+# Fictitious for alliance with Nezak Huns at start
+hephthalite_011 = {
+	name= "Khuhz"
+	female=yes
+	dynasty = dynasty_hephthalite
+	religion="khurmazta" # Should be Zunist pagan?
+	culture="hephthalite"
+	father=hephthalite_003
+	441.2.6 = {
+		birth = yes
+	}
+	499.7.22 = {
+		death = yes
+	}
+}
+
+# Fictitious brother of Akhshunwar to ensure there is at least one male heir so his sisters don't inherit awkwardly
+hephthalite_012 = {
+	name= "Zhunlad"
+	dynasty = dynasty_hephthalite
+	religion="zun_pagan" # Made him Zunist to represent Hunnic origins of Zun
+	culture="hephthalite"
+	father=hephthalite_003
+	444.8.25 = {
+		birth = yes
+	}
+	# 484.1.1 = {
+	# 	add_spouse = sassanid_30
+	# }
+	500.1.1 = {
+		death = yes
+	}
+}
+
+
+
+#############################################################
+# 
+# NEZAK HUNS
+# Not Hephthalites in origin per se, but later became subservient to the Hephthalites
+# And essentially, through the Zunbils and Kabul Shahis, became the last upholders of the Hephthalite and Eastern Hun legacy
+# 
+# Done by Cybrxkhan
+# 
+#############################################################
+
+# Fictitious Nezak ancestors
+nezak_001 = {
+	name= "Nezak"
+	dynasty = dynasty_nezakid
+	religion="zun_pagan"
+	culture="pactyan" # Possibly had origins as local rulers in Afghanistan and not steppe nomads per se
+	339.4.17 = {
+		birth = yes
+	}
+	370.1.1 = {
+		effect = {
+			set_culture = culture:xionite
+		}
+	}
+	394.6.12 = {
+		death = yes
+	}
+}
+nezak_002 = {
+	name= "PI_roz"
+	dynasty = dynasty_nezakid
+	religion="zun_pagan"
+	culture="xionite"
+	father=nezak_001
+	370.12.16 = {
+		birth = yes
+	}
+	437.1.1 = {
+		death = yes
+	}
+}
+nezak_003 = {
+	name= "Vaham"
+	dynasty = dynasty_nezakid
+	religion="zun_pagan"
+	culture="xionite"
+	father=nezak_002
+	402.6.9 = {
+		birth = yes
+	}
+	468.7.30 = {
+		death = yes
+	}
+}
+# Xuanzang was told in the 7th century by the Nezak king Ghar-ilchi was the 12th Nezak King, and that the first king of the Nezaks was Khingal
+# There is debate on when this Khingal would have lived and if he is identical with Khingala, the founder of the Alchon Huns
+# Confusingly, the Alchon and Nezak Huns probably fought each other in the late 5th and sixth century
+# By contrast, Shoshin Kuwayama instead suggests this Khingala ruled in the sixth century.
+# I have decided to take a compromise option as I wanted to keep the Nezak and Alchon Huns separate from the get-go
+# By putting this Khingal in the fifth century and as a contemporary of Khingala, but separate from the Alchons proper
+nezak_004 = {
+	name= "Khingal"
+	dynasty = dynasty_nezakid
+	religion="zun_pagan"
+	culture="hephthalite"
+	father=nezak_003
+	441.4.14 = {
+		birth = yes
+	}
+	459.1.1 = {
+		add_spouse = hephthalite_011
+	}
+	460.1.1 = {
+		effect = {
+			spawn_army = {
+				name = "Hunnic Invaders"
+				levies = 1000
+				men_at_arms = {
+					type = bowmen
+					stacks = 2
+				}
+				men_at_arms = {
+					type = light_horsemen
+					stacks = 5
+				}
+				men_at_arms = {
+					type = light_footmen
+					stacks = 2
+				}
+				men_at_arms = {
+					type = horse_archers
+					stacks = 3
+				}
+				location = province:4500 # Ghazna
+			}
+		}
+	}
+	500.8.25 = {
+		death = yes
+	}
+}
+# King #2
+nezak_005 = {
+	name= "Kunkhas" # Name unknown
+	dynasty = dynasty_nezakid
+	religion="zun_pagan"
+	culture="hephthalite"
+	father=nezak_004
+	mother=hephthalite_011
+	460.5.10 = {
+		birth = yes
+	}
+	476.6.6 = {
+		add_spouse = alchonid_029
+	}
+	507.10.29 = {
+		death = yes
+	}
+}
+# King #3
+nezak_006 = {
+	name= "Faghanish" # Name unknown
+	dynasty = dynasty_nezakid
+	religion="zun_pagan"
+	culture="hephthalite"
+	father=nezak_005
+	mother=alchonid_029
+	479.9.7 = {
+		birth = yes
+	}
+	510.11.12 = {
+		death = yes
+	}
+}
+# King #4
+nezak_007 = {
+	name= "Kirada" # Name unknown
+	dynasty = dynasty_nezakid
+	religion="zun_pagan"
+	culture="hephthalite"
+	father=nezak_006
+	498.5.12 = {
+		birth = yes
+	}
+	531.1.3 = {
+		death = yes
+	}
+}
+# King #5
+nezak_008 = {
+	name= "Toramana" # Name unknown
+	dynasty = dynasty_nezakid
+	religion="zun_pagan"
+	culture="hephthalite"
+	father=nezak_007
+	515.4.2 = {
+		birth = yes
+	}
+	530.1.1 = {
+		effect = {
+			spawn_army = {
+				name = "Hunnic Invaders"
+				levies = 1000
+				men_at_arms = {
+					type = bowmen
+					stacks = 2
+				}
+				men_at_arms = {
+					type = light_horsemen
+					stacks = 5
+				}
+				men_at_arms = {
+					type = light_footmen
+					stacks = 2
+				}
+				men_at_arms = {
+					type = horse_archers
+					stacks = 3
+				}
+				location = province:4500 # Ghazna
+			}
+		}
+	}
+	582.5.28 = {
+		death = yes
+	}
+}
+# King #6
+nezak_009 = {
+	name= "Mehama" # Name unknown
+	dynasty = dynasty_nezakid
+	religion="zun_pagan"
+	culture="hephthalite"
+	father=nezak_008
+	534.11.7 = {
+		birth = yes
+	}
+	586.3.24 = {
+		death = yes
+	}
+}
+# King #7
+nezak_010 = {
+	name= "Hanaka" # Name unknown
+	dynasty = dynasty_nezakid
+	religion="zun_pagan"
+	culture="hephthalite"
+	father=nezak_009
+	553.4.3 = {
+		birth = yes
+	}
+	592.9.18 = {
+		death = yes
+	}
+}
+# King #8
+nezak_011 = {
+	name= "Bamdaka" # Name unknown
+	dynasty = dynasty_nezakid
+	religion="zun_pagan"
+	culture="hephthalite"
+	father=nezak_009
+	570.11.18 = {
+		birth = yes
+	}
+	613.1.24 = {
+		death = yes
+	}
+}
+# King #9 - in order to make the timeframe work so that Ghar-ilchi is an adult, I had to make him the brother of the previous king
+nezak_012 = {
+	name= "Eskander" # Name unknown
+	dynasty = dynasty_nezakid
+	religion="zun_pagan"
+	culture="hephthalite"
+	father=nezak_009
+	571.12.9 = {
+		birth = yes
+	}
+	618.4.7 = {
+		death = yes
+	}
+}
+# King #10
+nezak_013 = {
+	name= "Nanda" # Name unknown
+	dynasty = dynasty_nezakid
+	religion="zun_pagan"
+	culture="hephthalite"
+	father=nezak_011
+	588.2.5 = {
+		birth = yes
+	}
+	625.4.2 = {
+		death = yes
+	}
+}
+# King #11 - Ghar-ilchi's father - made him Nanda's brother to make Ghar-ilchi a bit older and playable in 632
+nezak_014 = {
+	name= "Kunala" # Name unknown
+	dynasty = dynasty_nezakid
+	religion="zun_pagan"
+	culture="hephthalite"
+	father=nezak_011
+	590.4.17 = {
+		birth = yes
+	}
+	631.12.30 = {
+		death = yes
+	}
+}
+# King #12 - Ghar-ilchi himself
+# After sending envoys to China (as Kabul/Kapisa had been for generations), he was given titles by the Tang government in 653 and 661 CE
+# He was later attacked by the Arabs but converted to Islam
+# He (or his successor) was possibly killed by Barha Tegin c. 665-666 according to Korean pilgrim Hyecho, who restored Turco-Hun rule to Kabul
+nezak_015 = {
+	name= "Ghar-ilchi"
+	dynasty = dynasty_nezakid
+	religion="zun_pagan"
+	culture="hephthalite"
+	father=nezak_014
+	609.1.6 = {
+		birth = yes
+	}
+	665.5.1 = {
+		religion = united_islam
+	}
+	666.6.6 = { # I couldn't resist
+		death = { # Barha Tegin, who appears in vanilla CK3 as the progenitor of the Zunbils and Kabulshahis
+			death_reason = death_murder_known
+			killer = 188700
+		}
+	}
+}
+
+# Fictitious ruler of Ghur under Nezak Huns
+nezak_016 = {
+	name= "Godarz"
+	religion="dharmaguptaka"
+	culture="pactyan"
+	448.9.13 = {
+		birth = yes
+	}
+	497.8.2 = {
+		death = yes
+	}
+}
+
+# Fictitious ruler of eastern parts of Nezak realm
+nezak_017 = {
+	name= "Shura"
+	religion="shaivism"
+	culture="xionite"
+	448.9.13 = {
+		birth = yes
+	}
+	497.8.2 = {
+		death = yes
+	}
+}
+
+# Fictitious brother of King #4 so there's more Nezak Huns in 532
+nezak_018 = {
+	name= "Oeshki"
+	dynasty = dynasty_nezakid
+	religion="zun_pagan"
+	culture="hephthalite"
+	father=nezak_006
+	503.9.17 = {
+		birth = yes
+	}
+	549.2.22 = {
+		death = yes
+	}
+}
+
+
+#############################################################
+# 
+# BAMIYAN/BAMIAN KINGS
+# 
+# Done by Cybrxkhan
+# Fictitious members of the Shar Bamiyan/Sher Bamiyan dynasty that ruled Bamian into the mid-900s
+# No consensus on their ethnic affiliation, some scholars say Hephthalite, others Turkic, maybe even Iranian
+# I've made them Hephthalite to be consistent with RICE mod's Turco-Hephthalite Bamiyan dynasty
+# 
+#############################################################
+
+
+
+bamian_001 = {
+	name="Huspasina"
+	dynasty=RICE_bamian_dynasty
+	religion="mahasanghika"
+	culture="hephthalite"
+	510.2.9={
+		birth=yes
+	}
+	579.3.21={
+		death=yes
+	}
+}
+
+bamian_002 = {
+	name="Vohumanah"
+	dynasty=RICE_bamian_dynasty
+	religion="mahasanghika"
+	culture="hephthalite"
+	father=bamian_001
+	545.4.5={
+		birth=yes
+	}
+	616.4.27={
+		death=yes
+	}
+}
+
+bamian_003 = {
+	name="Khanchil"
+	dynasty=RICE_bamian_dynasty
+	religion="mahasanghika"
+	culture="hephthalite"
+	father=bamian_002
+	570.6.2={
+		birth=yes
+	}
+	625.9.18={
+		death=yes
+	}
+}
+
+bamian_004 = {
+	name="Sudasa"
+	dynasty=RICE_bamian_dynasty
+	religion="mahasanghika"
+	culture="hephthalite"
+	father=bamian_003
+	606.9.17={
+		birth=yes
+	}
+	678.11.19={
+		death=yes
+	}
+}
+
+#############################################################
+# 
+# MISCELLANEOUS RULERS
+# 
+# Done by Cybrxkhan
+# 
+#############################################################
+
+# Fictitious rulers of Yuhui
+# Yuhui was mentioned very briefly by Faxian as a kingdom in the Pamir mountains c. 400
+# I have decided to place it in Wakhan for now
+hephthalite_misc_001 = {
+	name="Sudhana"
+	dynasty=dynasty_yuhui_1
+	religion="mahayana"
+	culture="hephthalite"
+	342.9.4={
+		birth=yes
+	}
+	363.1.1 = {
+		add_spouse = hephthalite_misc_002
+	}
+	415.2.3={
+		death=yes
+	}
+}
+
+hephthalite_misc_002 = {
+	name="Nirmala"
+	female=yes
+	religion="mahayana"
+	culture="hephthalite"
+	343.11.12={
+		birth=yes
+	}
+	409.6.3={
+		death=yes
+	}
+}
+
+hephthalite_misc_003 = {
+	name="Bahudhiva"
+	dynasty=dynasty_yuhui_1
+	religion="mahayana"
+	culture="hephthalite"
+	father=hephthalite_misc_001
+	mother=hephthalite_misc_002
+	371.9.17={
+		birth=yes
+	}
+	393.1.1 = {
+		add_spouse = hephthalite_misc_012
+	}
+	439.4.7={
+		death=yes
+	}
+}
+
+hephthalite_misc_004 = {
+	name="Vadhaga"
+	dynasty=dynasty_yuhui_1
+	religion="mahayana"
+	culture="hephthalite"
+	father=hephthalite_misc_003
+	mother=hephthalite_misc_012
+	407.2.14={
+		birth=yes
+	}
+	470.9.30={
+		death=yes
+	}
+}
+
+hephthalite_misc_005 = {
+	name="Khuradatta"
+	dynasty=dynasty_yuhui_1
+	religion="mahayana"
+	culture="hephthalite"
+	father=hephthalite_misc_004
+	441.6.19={
+		birth=yes
+	}
+	509.12.7={
+		death=yes
+	}
+}
+
+hephthalite_misc_006 = {
+	name="Huyi"
+	dynasty=dynasty_yuhui_1
+	religion="mahayana"
+	culture="hephthalite"
+	father=hephthalite_misc_005
+	478.3.14={
+		birth=yes
+	}
+	527.6.1={
+		death=yes
+	}
+}
+
+hephthalite_misc_007 = {
+	name="Phimduka"
+	dynasty=dynasty_yuhui_1
+	religion="mahayana"
+	culture="hephthalite"
+	father=hephthalite_misc_006
+	501.3.17={
+		birth=yes
+	}
+	567.1.3={
+		death=yes
+	}
+}
+
+# Kingdom of Rob - minor state in Tokharistan east of Guzgan and around Samangan
+
+
+# Khwadewbandan is spelt as Hwade-gang on Wikipedia and attested in records from the Kingdom of Rob
+# He is attested in a letter that was addressed to his son Sart/Sartu from the Kingdom of Rob as a Hephthalite ruler over Rob
+# Wikipedia says this letter dates to c. 492 to 527
+# In the letter, he is said to be a ruler of the Hephthalites; however, Sims-Williams (cited in Aydogy Kurbanov) argues he was not an actual Hephthalite king
+# Instead, he was a local ruler of Rob who received various Hephthalite titles
+hephthalite_misc_008 = {
+	name="Khwadewbandan"
+	dynasty=dynasty_hephthalite_rob
+	religion="khurmazta"
+	culture="bactrian"
+	father=hephthalite_misc_015
+	439.4.20={ # Unknown
+		birth=yes
+	}
+	465.1.1 = {
+		add_spouse = hephthalite_misc_010
+	}
+	517.5.6={ # Unknown
+		death=yes
+	}
+}
+
+hephthalite_misc_009 = {
+	name="Sart"
+	dynasty=dynasty_hephthalite_rob
+	religion="khurmazta"
+	culture="bactrian"
+	father=hephthalite_misc_008
+	mother=hephthalite_misc_010
+	469.3.11={ # Unknown
+		birth=yes
+	}
+	540.11.2={ # Unknown
+		death=yes
+	}
+}
+
+# Khwadewbandan's fictitious wife
+hephthalite_misc_010 = {
+	name="Dharmadasi"
+	female=yes
+	dynasty=dynasty_yuhui_1
+	religion="khurmazta"
+	culture="hephthalite"
+	father=hephthalite_misc_004
+	443.10.17={
+		birth=yes
+	}
+	511.4.2={
+		death=yes
+	}
+}
+
+# Khwadewbandan's fictitious ancestors/rulers of Rob
+# Names are from random Bactrian names found online
+# Bab and Piduk IRL were two random brothers who jointly married a woman named Ralik in 332 CE
+# I'm just using their names here
+hephthalite_misc_011 = {
+	name="Bab"
+	dynasty=dynasty_hephthalite_rob
+	religion="khurmazta"
+	culture="bactrian"
+	340.1.6={
+		birth=yes
+	}
+	360.1.1 = {
+		add_spouse = hephthalite_misc_013
+		effect = {
+			set_relation_soulmate = character:hephthalite_misc_013
+		}
+	}
+	399.1.1={
+		death=yes
+	}
+}
+
+hephthalite_misc_012 = {
+	name="Ralik"
+	female=yes
+	dynasty=dynasty_hephthalite_rob
+	religion="khurmazta"
+	culture="bactrian"
+	father=hephthalite_misc_011
+	trait=beauty_good_1
+	373.4.10={
+		birth=yes
+	}
+	439.7.8={
+		death=yes
+	}
+}
+
+hephthalite_misc_013 = {
+	name="Farmanz"
+	female=yes
+	religion="khurmazta"
+	culture="xionite"
+	trait=beauty_good_1
+	342.6.17={
+		birth=yes
+	}
+	399.1.1 = {
+		add_trait = depressed_1
+	}
+	405.11.9={
+		death=yes
+	}
+}
+
+hephthalite_misc_014 = {
+	name="Piduk"
+	dynasty=dynasty_hephthalite_rob
+	religion="khurmazta"
+	culture="bactrian"
+	father=hephthalite_misc_011
+	trait=beauty_good_1
+	370.5.3={
+		birth=yes
+	}
+	442.12.19={
+		death=yes
+	}
+}
+
+hephthalite_misc_015 = {
+	name="Nokonzoko" # Name of some Bactrian high ranking official in the Kushan period (?) but I'm reusing here because I thought it sounded funny
+	dynasty=dynasty_hephthalite_rob
+	religion="khurmazta"
+	culture="bactrian"
+	father=hephthalite_misc_014
+	trait=beauty_good_1
+	404.6.29={
+		birth=yes
+	}
+	458.7.5={
+		death=yes
+	}
+}
+
+# Name found on Hephthalite gem seal in Bactrian dating to middle of 5th century
+# So might be some Hephthalite noble
+hephthalite_misc_016 = {
+	name="Yozino"
+	religion="zun_pagan"
+	culture="hephthalite"
+	436.12.16={
+		birth=yes
+	}
+	492.10.3={
+		death=yes
+	}
+}
+
+
+# Powerful minister/advisor of the Hephthalite kingdom in the 550s, eventually defected to Sassanids at some point
+hephthalite_misc_017 = {
+	name="Katulf"
+	dna = dna_katulf
+	dynasty = dynasty_katulf
+	religion="khurmazta"
+	culture="hephthalite"
+	trait=shrewd
+	trait=deceitful
+	trait=vengeful
+	trait=diligent
+	500.2.8={
+		birth=yes
+	}
+	575.7.5={
+		death=yes
+	}
+}
+
+# Fictitious rulers of Shuangmi (likely Shughnan) in Weilue
+hephthalite_misc_018 = {
+	name="Oeshki"
+	religion="zun_pagan"
+	culture="hephthalite"
+	dynasty=dynasty_shuangmi
+	331.4.16={
+		birth=yes
+	}
+	384.2.25={
+		death=yes
+	}
+}
+
+# Fictitious rulers of Shuangmi (likely Shughnan) in Weilue
+hephthalite_misc_019 = {
+	name="Yaskul"
+	religion="zun_pagan"
+	culture="hephthalite"
+	dynasty=dynasty_shuangmi
+	father=hephthalite_misc_018
+	368.1.17={
+		birth=yes
+	}
+	419.10.30={
+		death=yes
+	}
+}
+
+# Fictitious Hephthalite official for 532
+hephthalite_misc_020 = {
+	name="Sadavikha"
+	religion="khurmazta"
+	culture="hephthalite"
+	511.4.20={
+		birth=yes
+	}
+	568.3.16={
+		death=yes
+	}
+}
+
+# Fictitious Hephthalite official for 532
+hephthalite_misc_021 = {
+	name="Andez"
+	religion="dharmaguptaka"
+	culture="hephthalite"
+	489.1.9={
+		birth=yes
+	}
+	547.10.31={
+		death=yes
+	}
+}
+
+
+# Fictitious rulers of Shuangmi (likely Shughnan) in Weilue
+hephthalite_misc_022 = {
+	name="Fanz"
+	religion="zun_pagan"
+	culture="hephthalite"
+	dynasty=dynasty_shuangmi
+	father=hephthalite_misc_019
+	402.3.15={
+		birth=yes
+	}
+	470.6.7={
+		death=yes
+	}
+}
+
+hephthalite_misc_023 = {
+	name="Pusk"
+	religion="zun_pagan"
+	culture="hephthalite"
+	dynasty=dynasty_shuangmi
+	father=hephthalite_misc_022
+	444.4.4={
+		birth=yes
+	}
+	520.8.10={
+		death=yes
+	}
+}
+
+hephthalite_misc_024 = {
+	name="Devraz"
+	religion="zun_pagan"
+	culture="hephthalite"
+	dynasty=dynasty_shuangmi
+	father=hephthalite_misc_023
+	480.8.8={
+		birth=yes
+	}
+	525.8.28={
+		death=yes
+	}
+}
+
+hephthalite_misc_025 = {
+	name="Jouishka"
+	religion="zun_pagan"
+	culture="hephthalite"
+	dynasty=dynasty_shuangmi
+	father=hephthalite_misc_024
+	500.2.8={
+		birth=yes
+	}
+	555.5.5={
+		death=yes
+	}
+}
+
+# Fictitious local Pamir ruler
+hephthalite_misc_026 = {
+	name="Waraz"
+	religion="zun_pagan"
+	culture="hephthalite"
+	493.8.7={
+		birth=yes
+	}
+	551.10.22={
+		death=yes
+	}
+}
+
+# Fictitious local Pamir ruler
+hephthalite_misc_027 = {
+	name="Pusk"
+	religion="dharmaguptaka"
+	culture="hephthalite"
+	502.6.15={
+		birth=yes
+	}
+	546.7.1={
+		death=yes
+	}
+}
+
+# Fictitious local Pamir ruler
+hephthalite_misc_028 = {
+	name="Ormuzd"
+	religion="mahayana"
+	culture="hephthalite"
+	489.11.3={
+		birth=yes
+	}
+	554.7.2={
+		death=yes
+	}
+}
+
+hephthalite_misc_029 = {
+	name="Wagwir"
+	religion="khurmazta"
+	culture="hephthalite"
+	500.7.2={
+		birth=yes
+	}
+	568.9.1={
+		death=yes
+	}
+}

@@ -1,0 +1,901 @@
+﻿#Vandal Kingdom
+vandals_001 = {
+	name = "Godagis"
+	dna = 998000_godegisel
+	dynasty = hasding #Hasding
+	religion = "central_pagan"
+	culture = "vandal"
+	trait = education_martial_2
+	trait = fickle
+	trait = impatient
+	trait = brave
+	340.7.28 = {
+		birth = yes
+	}
+	406.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+		trait = adventurer
+	}
+}
+vandals_002 = {
+	name = "Guntharix"
+	dynasty = hasding #Hasding
+	religion = "arianism"
+	culture = "vandal"
+	father = vandals_001 #Godigisel
+	trait = ambitious
+	trait = wrathful
+	trait = brave
+	379.1.1 = {
+		birth = yes
+	}
+	428.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+vandals_003 = {
+	name = "Geiseric"
+	dynasty = hasding #Hasding
+	religion = "arianism"
+	culture = "vandal"
+	father = vandals_001 #Godigisel
+	dna = gaiseric_vandals
+	trait = intellect_good_1
+	trait = adventurer
+	sexuality = heterosexual
+	389.1.1 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+	476.1.1 = {
+		trait = education_martial_4
+		trait = raider
+		trait = strategist
+		trait = gallant
+		trait = ambitious
+		trait = arbitrary
+		trait = brave
+	}
+	477.1.25 = {
+		death = yes
+	}
+}
+vandals_004 = {
+	name = "Hunirix"
+	dynasty = hasding #Hasding
+	religion = "arianism"
+	culture = "vandal"
+	father = vandals_003 #Genseric
+	trait = zealous
+	trait = sadistic
+	trait = wrathful
+	trait = education_intrigue_4
+	426.1.1 = {
+		birth = yes
+	}
+	460.1.1 = {
+		add_spouse = 168799 #Eudoxia
+	}
+	484.12.23 = {
+		death = yes
+	}
+}
+
+vandals_009 = {
+	name = "Theudarix"
+	dynasty = hasding #Hasding
+	religion = "arianism"
+	culture = "vandal"
+	father = vandals_003 #Genseric
+	427.1.1 = {
+		birth = yes
+	}
+	481.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = vandals_004
+		}
+	}
+}
+vandals_006 = {
+	name = "Gento"
+	dynasty = hasding #Hasding
+	religion = "arianism"
+	culture = "vandal"
+	father = vandals_003 #Genseric
+	428.1.1 = {
+		birth = yes
+	}
+	477.1.1 = {
+		death = yes
+	}
+}
+vandals_007 = {
+	name = "Gunthamund"
+	dynasty = hasding #Hasding
+	religion = "arianism"
+	culture = "vandal"
+	father = vandals_006 #Gento
+	450.1.1 = {
+		birth = yes
+	}
+	496.1.1 = {
+		death = yes
+	}
+}
+vandals_008 = {
+	name = "Godagis"
+	dynasty = hasding #Hasding
+	religion = "arianism"
+	culture = "vandal"
+	father = vandals_006
+	454.1.1 = {
+		birth = yes
+	}
+	483.1.1 = {
+		death = yes
+	}
+}
+vandals_010 = {
+	name = "Thrasamund"
+	dynasty = hasding #Hasding
+	religion = "arianism"
+	culture = "vandal"
+	father = vandals_006 #Gento
+	460.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		add_spouse = 992017
+	}
+	523.1.1 = {
+		death = yes
+	}
+}
+vandals_011 = {
+	name = "Gellarith" #Gelaris
+	dynasty = hasding #Hasding
+	religion = "arianism"
+	culture = "vandal"
+	father = vandals_006 #Gento
+	451.1.1 = {
+		birth = yes
+	}
+	490.1.1 = {
+		death = yes
+	}
+}
+vandals_012 = {
+	name = "Gelimer"
+	dna = gelimer_vandals
+	dynasty = hasding #Hasding
+	religion = "arianism"
+	culture = "vandal"
+	father = vandals_011 #Gelaris
+	trait = wrathful
+	trait = deceitful
+	trait = greedy
+	trait = education_martial_3
+	trait = poet
+	sexuality = heterosexual
+	480.1.1 = {
+		birth = yes
+	}
+	530.1.1 = {
+		set_relation_rival = character:vandals_005
+		set_relation_rival = character:vandals_148
+		set_relation_rival = character:vandals_149
+		add_truce_both_ways = {
+			character = character:70512
+			years = 5
+			name = JUSTINIAN_TRUCE
+			result = white_peace
+		}
+	}
+	550.1.1 = {
+		death = yes
+	}
+}
+vandals_013b = {
+	name = "Ammatas"
+	dynasty = hasding #Hasding
+	religion = "arianism"
+	culture = "vandal"
+	father = vandals_011 #Gelaris
+	trait = education_martial_2
+	483.1.1 = {
+		birth = yes
+	}
+	533.9.13 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+vandals_013 = {
+	name = "Tzazo"
+	dynasty = hasding #Hasding
+	religion = "arianism"
+	culture = "vandal"
+	father = vandals_011 #Gelaris
+	trait = education_martial_3
+	485.1.1 = {
+		birth = yes
+	}
+	533.12.15 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+vandals_005 = {
+	name = "Hildirix" #Hilderic
+	dynasty = hasding #Hasding
+	religion = "chalcedonian"
+	culture = "vandal"
+	father = vandals_004 #Huneric
+	mother = 168799 #Eudoxia
+	health = 7
+	trait = greedy
+	trait = zealous
+	trait = calm
+	trait = education_diplomacy_3
+	sexuality = heterosexual
+	460.1.1 = {
+		birth = yes
+	}
+	523.1.1 = {
+		set_relation_friend = character:70512
+		set_relation_friend = character:vandals_148
+		set_relation_friend = character:vandals_149
+	}
+	530.6.15 = {
+		trait = denounced
+		trait = disinherited
+	}
+	533.9.1 = {
+		death = {
+			death_reason = death_execution
+			killer = vandals_012
+		}
+	}
+}
+
+vandals_014 = {
+	name = "Frederic"
+	religion = "arianism"
+	culture = "vandal"
+	421.1.1 = {
+		birth = yes
+	}
+	501.1.1 = {
+		death = yes
+	}
+}
+vandals_015 = {
+	name = "Eidgais"
+	religion = "arianism"
+	culture = "vandal"
+	424.1.1 = {
+		birth = yes
+	}
+	480.1.1 = {
+		death = yes
+	}
+}
+vandals_016 = {
+	name = "Arbogast"
+	religion = "arianism"
+	culture = "vandal"
+	503.1.1 = {
+		birth = yes
+	}
+	560.1.1 = {
+		death = yes
+	}
+}
+vandals_021 = {
+	name = "Guntharith" # dux of Numidia and rebel
+	religion = "arianism"
+	culture = "vandal"
+	trait = ambitious
+	trait = deceitful
+	trait = arbitrary
+	499.1.1 = {
+		birth = yes
+	}
+	546.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = arsacid_63  # Artabanes
+		}
+	}
+}
+
+vandals_022 = {
+	name = "Andvit"
+	dynasty = hasding #Hasding
+	religion = "arianism"
+	culture = "vandal"
+	father = vandals_002
+	410.1.1 = {
+		birth = yes
+	}
+	442.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+silingi_01 = {
+	name = "Balda"
+	religion = "central_pagan"
+	culture = "vandal"
+	stewardship = 12
+	dynasty = siling
+	345.1.1 = {
+		birth = yes
+	}
+	390.1.1 = {
+		death = yes
+	}
+}
+silingi_02 = {
+	name = "Tancred"
+	religion = "central_pagan"
+	culture = "vandal"
+	344.1.1 = {
+		birth = yes
+	}
+	415.1.1 = {
+		death = yes
+	}
+}
+silingi_03 = {
+	name = "Fredebal"
+	father = silingi_01
+	religion = "central_pagan"
+	culture = "vandal"
+	martial = 12
+	dynasty = siling
+	360.1.1 = {
+		birth = yes
+	}
+	417.1.1 = {
+		death = yes
+	}
+}
+balearica_01 = {
+	name = "Tancred"
+	religion = "arianism"
+	culture = "vandal"
+	449.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+balearica_02 = {
+	name = "Arbogast"
+	religion = "arianism"
+	culture = "vandal"
+	453.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+balearica_03 = {
+	name = "Gundogast"
+	religion = "arianism"
+	culture = "vandal"
+	449.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+balearica_04 = {
+	name = "Geberic"
+	religion = "arianism"
+	culture = "vandal"
+	439.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+balearica_05 = {
+	name = "Godigisel"
+	religion = "arianism"
+	culture = "vandal"
+	449.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+balearica_06 = {
+	name = "Rekkeraed"
+	religion = "arianism"
+	culture = "vandal"
+	439.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+balearica_07 = {
+	name = "Achiulf"
+	religion = "arianism"
+	culture = "vandal"
+	442.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+balearica_08 = {
+	name = "Gundo"
+	religion = "arianism"
+	culture = "vandal"
+	447.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+
+# Silesian Vandals
+vandals_101 = {
+	name = Manso
+	culture = vandal
+	religion = central_pagan
+	325.1.1 = {
+		birth = yes
+	}
+	375.1.1 = {
+		death = yes
+	}
+}
+vandals_102 = {
+	name = Odovacar
+	culture = vandal
+	religion = central_pagan
+	father = vandals_101
+	355.1.1 = {
+		birth = yes
+	}
+	405.1.1 = {
+		death = yes
+	}
+}
+vandals_103 = {
+	name = Liutward
+	culture = vandal
+	religion = central_pagan
+	father = vandals_102
+	385.1.1 = {
+		birth = yes
+	}
+	435.1.1 = {
+		death = yes
+	}
+}
+vandals_104 = {
+	name = Munichis
+	culture = vandal
+	religion = central_pagan
+	father = vandals_103
+	415.1.1 = {
+		birth = yes
+	}
+	465.1.1 = {
+		death = yes
+	}
+}
+vandals_105 = {
+	name = Berin
+	culture = vandal
+	religion = central_pagan
+	father = vandals_104
+	445.1.1 = {
+		birth = yes
+	}
+	495.1.1 = {
+		death = yes
+	}
+}
+vandals_106 = {
+	name = Birinus
+	culture = vandal
+	religion = central_pagan
+	father = vandals_105
+	475.1.1 = {
+		birth = yes
+	}
+	525.1.1 = {
+		death = yes
+	}
+}
+
+vandals_111 = {
+	name = Aripert
+	culture = vandal
+	religion = central_pagan
+	345.1.1 = {
+		birth = yes
+	}
+	395.1.1 = {
+		death = yes
+	}
+}
+vandals_112 = {
+	name = Ariald
+	culture = vandal
+	religion = central_pagan
+	father = vandals_111
+	375.1.1 = {
+		birth = yes
+	}
+	425.1.1 = {
+		death = yes
+	}
+}
+vandals_113 = {
+	name = Lupus
+	culture = vandal
+	religion = central_pagan
+	father = vandals_112
+	405.1.1 = {
+		birth = yes
+	}
+	455.1.1 = {
+		death = yes
+	}
+}
+vandals_114 = {
+	name = Unigild
+	culture = vandal
+	religion = central_pagan
+	father = vandals_113
+	435.1.1 = {
+		birth = yes
+	}
+	485.1.1 = {
+		death = yes
+	}
+}
+vandals_115 = {
+	name = Godehoc
+	culture = vandal
+	religion = central_pagan
+	father = vandals_114
+	465.1.1 = {
+		birth = yes
+	}
+	515.1.1 = {
+		death = yes
+	}
+}
+
+vandals_121 = {
+	name = Liutward
+	culture = vandal
+	religion = central_pagan
+	321.1.1 = {
+		birth = yes
+	}
+	375.1.1 = {
+		death = yes
+	}
+}
+vandals_122 = {
+	name = Grasulf
+	culture = vandal
+	religion = central_pagan
+	father = vandals_121
+	351.1.1 = {
+		birth = yes
+	}
+	401.1.1 = {
+		death = yes
+	}
+}
+vandals_123 = {
+	name = Reccared
+	culture = vandal
+	religion = central_pagan
+	father = vandals_122
+	381.1.1 = {
+		birth = yes
+	}
+	431.1.1 = {
+		death = yes
+	}
+}
+vandals_124 = {
+	name = Aimeric
+	culture = vandal
+	religion = central_pagan
+	father = vandals_123
+	411.1.1 = {
+		birth = yes
+	}
+	461.1.1 = {
+		death = yes
+	}
+}
+vandals_125 = {
+	name = Artavasdas
+	culture = vandal
+	religion = central_pagan
+	father = vandals_124
+	441.1.1 = {
+		birth = yes
+	}
+	491.1.1 = {
+		death = yes
+	}
+}
+vandals_126 = {
+	name = Wechthari
+	culture = vandal
+	religion = central_pagan
+	father = vandals_125
+	471.1.1 = {
+		birth = yes
+	}
+	521.1.1 = {
+		death = yes
+	}
+}
+
+vandals_131 = {
+	name = Sigisbrand
+	culture = vandal
+	religion = central_pagan
+	339.1.1 = {
+		birth = yes
+	}
+	389.1.1 = {
+		death = yes
+	}
+}
+vandals_132 = {
+	name = Sinibald
+	culture = vandal
+	religion = central_pagan
+	father = vandals_131
+	369.1.1 = {
+		birth = yes
+	}
+	419.1.1 = {
+		death = yes
+	}
+}
+vandals_133 = {
+	name = Kakko
+	culture = vandal
+	religion = central_pagan
+	father = vandals_132
+	399.1.1 = {
+		birth = yes
+	}
+	449.1.1 = {
+		death = yes
+	}
+}
+vandals_134 = {
+	name = Laidulf
+	culture = vandal
+	religion = central_pagan
+	father = vandals_133
+	429.1.1 = {
+		birth = yes
+	}
+	479.1.1 = {
+		death = yes
+	}
+}
+vandals_135 = {
+	name = Raginpert
+	culture = vandal
+	religion = central_pagan
+	father = vandals_134
+	459.1.1 = {
+		birth = yes
+	}
+	499.1.1 = {
+		death = yes
+	}
+}
+
+vandals_141 = {
+	name = Corvulus
+	culture = vandal
+	religion = central_pagan
+	344.1.1 = {
+		birth = yes
+	}
+	394.1.1 = {
+		death = yes
+	}
+}
+vandals_142 = {
+	name = Alboin
+	culture = vandal
+	religion = central_pagan
+	father = vandals_141
+	374.1.1 = {
+		birth = yes
+	}
+	424.1.1 = {
+		death = yes
+	}
+}
+vandals_143 = {
+	name = Ansfrid
+	culture = vandal
+	religion = central_pagan
+	father = vandals_142
+	404.1.1 = {
+		birth = yes
+	}
+	454.1.1 = {
+		death = yes
+	}
+}
+vandals_144 = {
+	name = Kunibert
+	culture = vandal
+	religion = central_pagan
+	father = vandals_143
+	434.1.1 = {
+		birth = yes
+	}
+	484.1.1 = {
+		death = yes
+	}
+}
+vandals_145 = {
+	name = Landenulf
+	culture = vandal
+	religion = central_pagan
+	father = vandals_144
+	464.1.1 = {
+		birth = yes
+	}
+	514.1.1 = {
+		death = yes
+	}
+}
+vandals_146 = { # Vandalic Governor of Sardinia and a crucial factor in Justinian's rapid reconquest of Africa
+	name = "Godas"
+	culture = visigothic 
+	religion = "arianism"
+	trait = ambitious
+	trait = stubborn
+	trait = deceitful
+	trait = education_martial_2
+	trait = schemer
+	martial = 5
+	intrigue = 5
+	502.2.6 = {
+		birth = yes
+	}
+	533.4.19 = {
+		death = yes
+	}
+}
+vandals_147 = {
+	name = Tattimuth # germanic general
+	culture = vandal
+	religion = chalcedonian
+	martial = 10
+	506.2.1 = {
+		birth = yes
+	}
+	560.2.1 = {
+		death = yes
+	}
+}
+vandals_148 = {
+	name = Hoamar # hasding vandal
+	dynasty = hasding
+	culture = vandal
+	religion = chalcedonian
+	father = vandals_007
+	martial = 10
+	482.1.1 = {
+		birth = yes
+	}
+	530.6.15 = {
+		trait = denounced
+		trait = disinherited
+		trait = blind
+	}
+	533.1.1 = {
+		death = yes
+	}
+}
+vandals_149 = {
+	name = Hoageis # hasding vandal
+	dynasty = hasding
+	culture = vandal
+	religion = chalcedonian
+	father = vandals_007
+	484.1.1 = {
+		birth = yes
+	}
+	530.6.15 = {
+		trait = denounced
+		trait = disinherited
+	}
+	533.9.1 = {
+		death = {
+			death_reason = death_execution
+			killer = vandals_012
+		}
+	}
+}
+vandals_150 = {
+	name = "Gibamund"
+	dynasty = hasding #Hasding
+	religion = "arianism"
+	culture = "vandal"
+	father = vandals_013b
+	505.1.1 = {
+		birth = yes
+	}
+	533.9.13 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+vandals_151 = {
+	name = Fuscias
+	culture = vandal
+	religion = "arianism"
+	trait=education_diplomacy_3
+	456.2.1 = {
+		birth = yes
+	}
+	532.1.1={
+		employer=vandals_012
+	}
+	540.2.1 = {
+		death = yes
+	}
+}
+vandals_152 = {
+	name = Gothaeus
+	culture = vandal
+	religion = "arianism"
+	trait=education_diplomacy_3
+	456.2.1 = {
+		birth = yes
+	}
+	532.1.1={
+		employer=vandals_012
+	}
+	540.2.1 = {
+		death = yes
+	}
+}

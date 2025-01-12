@@ -1,0 +1,199 @@
+﻿k_esthonia = {
+	361.1.1 = { change_development_level = 0 }
+	476.1.1 = { change_development_level = 1 }
+	768.1.1 = { change_development_level = 2 }
+}
+
+d_esthonia = {
+	361.1.1 = {
+		holder = esthonia_01
+		government = tribal_government
+	}
+	400.1.1 = {
+		holder = esthonia_02
+	}
+	450.1.1 = {
+		holder = esthonia_03
+	}
+	530.1.1 = {
+		holder = esthonia_11
+	}
+	766.1.1 = {
+		holder = 170347
+		government = tribal_government
+	}
+}
+
+
+c_reval = {
+	361.1.1 = { change_development_level = 1 }
+	476.1.1 = { change_development_level = 2 }
+	632.1.1 = { change_development_level = 3 }
+	361.1.1 = {
+		liege = "d_esthonia"
+		holder = esthonia_01
+		government = tribal_government
+	}
+	400.1.1 = {
+		holder = esthonia_02
+	}
+	450.1.1 = {
+		holder = esthonia_03
+	}
+	530.1.1 = {
+		holder = esthonia_11
+	}
+	766.1.1 = {
+		holder = 170347
+		government = tribal_government
+	}
+}
+
+
+c_narva = {
+	361.1.1 = {
+		liege = "d_esthonia"
+		holder = esthonia_01
+		government = tribal_government
+	}
+	400.1.1 = {
+		holder = esthonia_02
+	}
+	450.1.1 = {
+		holder = esthonia_03
+	}
+	530.1.1 = {
+		holder = esthonia_11
+	}
+	767.1.1 = {
+		holder = 170348
+		government = tribal_government
+	}
+}
+
+
+c_osel = {
+	316.1.1 = {
+		holder = arngrymr_19
+		government = tribal_government
+	}
+	361.1.1 = {
+		holder = esthonia_04
+	}
+	390.1.1 = {
+		holder = arngrymr_24
+	}
+	450.1.1 = {
+		holder = esthonia_06
+	}
+	530.1.1 = {
+		holder = esthonia_12
+	}
+	763.1.1 = {
+		holder = 170350
+	}
+}
+
+d_livonia = {
+	361.1.1 = {
+		holder = esthonia_07
+		government = tribal_government
+	}
+	400.1.1 = {
+		holder = esthonia_08
+	}
+	450.1.1 = {
+		holder = esthonia_09
+	}
+	530.1.1 = {
+		holder = esthonia_10
+	}
+	765.1.1 = {
+		holder = 170349
+		government = tribal_government
+	}
+}
+
+c_wiek = {
+	361.1.1 = {
+		holder = esthonia_04
+		government = tribal_government
+	}
+	400.1.1 = {
+		holder = esthonia_05
+	}
+	450.1.1 = {
+		holder = esthonia_06
+	}
+	530.1.1 = {
+		holder = esthonia_12
+	}
+	765.1.1 = {
+		holder = 170349
+	}
+}
+
+c_vidzeme = {
+	361.1.1 = {
+		liege = "d_livonia"
+		holder = esthonia_07
+		government = tribal_government
+	}
+	400.1.1 = {
+		holder = esthonia_08
+	}
+	450.1.1 = {
+		holder = esthonia_09
+	}
+	530.1.1 = {
+		holder = esthonia_10
+	}
+	765.1.1 = {
+		holder = 170349
+		government = tribal_government
+	}
+}
+
+
+c_livs = {
+	361.1.1 = {
+		liege = "d_livonia"
+		holder = esthonia_07
+		government = tribal_government
+	}
+	400.1.1 = {
+		holder = esthonia_08
+	}
+	450.1.1 = {
+		holder = esthonia_09
+	}
+	530.1.1 = {
+		holder = esthonia_10
+	}
+	765.1.1 = {
+		holder = 170349
+		government = tribal_government
+	}
+}
+
+
+c_dorpat = {
+	361.1.1 = {
+		liege = "d_livonia"
+		holder = esthonia_07
+		government = tribal_government
+	}
+	400.1.1 = {
+		holder = esthonia_08
+	}
+	450.1.1 = {
+		holder = esthonia_09
+	}
+	530.1.1 = {
+		holder = esthonia_10
+	}
+	761.1.1 = {
+		holder = 170352
+		government = tribal_government
+	}
+}

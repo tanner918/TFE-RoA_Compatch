@@ -1,0 +1,113 @@
+﻿
+
+
+
+############################################
+#
+# PTOLEMIES
+#
+############################################
+
+# NOTE FOR BC DATES:
+# NEGATIVE DATES ARE **ONE YEAR** AFTER BC DATES
+# i.e., a date of "-100.1.1" will be 101 BC in the game!!!
+
+# Ptolemy's father
+macedonian_01 = {
+	name = "Lagus"
+	dynasty = dynasty_ptolemy
+	culture = macedonian
+	religion = "hellenic_pagan"
+	-400.1.1 = { # Unknown
+		birth = yes
+	}
+	-370.1.1 = {
+		add_spouse = macedonian_02
+	}
+	-340.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+# Ptolemy's mother
+macedonian_02 = {
+	name = "Arsinoe"
+	female = yes
+	#dynasty = dynasty_ptolemy
+	culture = macedonian
+	religion = "hellenic_pagan"
+	-390.1.1 = { # Unknown
+		birth = yes
+	}
+	-335.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+# Eurydice, Ptolemy I's wife
+macedonian_03 = {
+	name = "Eurydice"
+	female = yes
+	culture = macedonian
+	religion = "hellenic_pagan"
+	-335.1.1 = { # Unknown
+		birth = yes
+	}
+	-319.1.1 = {
+		religion = "greco_egyptian_pagan"
+	}
+	-276.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+# Ptolemy I's later wife, Berenice
+macedonian_04 = {
+	name = "Berenice"
+	female = yes
+	culture = macedonian
+	religion = "hellenic_pagan"
+	-339.1.1 = { # Unknown
+		birth = yes
+	}
+	-319.1.1 = {
+		religion = "greco_egyptian_pagan"
+	}
+	-268.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+# Ptolemy II's first wife, Arsinoe
+macedonian_05 = {
+	name = "Arsinoe"
+	female = yes
+	culture = macedonian
+	religion = "hellenic_pagan"
+	-304.1.1 = { # Unknown
+		birth = yes
+	}
+	-288.1.1 = {
+		religion = "greco_egyptian_pagan"
+	}
+	-246.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+# Ptolemy III's wife, Berenice, queen of Cyrenaica
+macedonian_06 = {
+	name = "Berenice"
+	female = yes
+	culture = macedonian
+	religion = "hellenic_pagan"
+	-266.1.1 = { # Unknown
+		birth = yes
+	}
+	-245.1.1 = {
+		religion = "greco_egyptian_pagan"
+	}
+	-220.1.1 = { # Unknown
+		death = yes
+	}
+}

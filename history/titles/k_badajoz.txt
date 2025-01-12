@@ -1,0 +1,716 @@
+﻿k_badajoz = {
+	768.1.1 = { change_development_level = 8 }
+	de_jure_liege = e_spain
+}
+
+d_beja = {
+	476.1.1 = {
+		de_jure_liege = k_badajoz
+	}
+}
+
+
+c_lisboa = {
+	768.1.1 = {	change_development_level = 9 }
+	#Roman Province
+	200.1.1 = { de_jure_liege = d_badajoz }
+	200.1.1 = { }
+	465.1.1 = { government = feudal_government }
+	340.1.1 = {
+		holder = lusitania_01 # Fake holder
+	}
+	360.1.1 = {
+		liege = d_badajoz
+	}
+	370.1.1 = {
+		holder = lusitania_02 # Fake holder
+	}
+	460.1.1 = {
+		holder = lusitania_04 # Independent Olisipo
+		liege = d_porto
+		de_jure_liege = d_beja
+	}
+	523.1.1 = {
+		holder = lusitania_09 #Suebic Lusitania
+		liege = k_suebi
+	}
+	632.1.1 = {
+		holder = lusitania_14 # Lisbun
+		liege = d_badajoz
+	}
+	761.1.1 = {
+		holder = 200035 # Abdallah Aslamid
+		liege = d_badajoz
+		government = clan_government
+	}
+}
+
+c_beja = {
+	#Roman Province
+	200.1.1 = { de_jure_liege = d_badajoz }
+	200.1.1 = { 
+	}
+	465.1.1 = { 
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = roman_government
+				}
+			}
+		}
+	}
+	632.1.1 = { 
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+	
+	360.1.1 = {
+		holder = lusitania_03 # Fake holder
+		liege = d_badajoz
+	}
+	460.1.1 = {
+		holder = lusitania_05 # Pax
+		de_jure_liege = d_beja
+	}
+	523.1.1 = {
+		holder = lusitania_10 #Pax
+		liege = k_visigoths
+	}
+	632.1.1 = {
+		holder = lusitania_15 # Pax
+		liege = d_badajoz
+	}
+	761.1.1 = {
+		holder = 200035 # Abdallah Aslamid
+		liege = d_badajoz
+		government = clan_government
+	}
+}
+
+c_alcacer_do_sal = {
+	361.1.1 = { change_development_level = 5 }
+	#Roman Province
+	200.1.1 = { de_jure_liege = d_badajoz }
+	200.1.1 = { 
+	}
+	465.1.1 = { 
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = roman_government
+				}
+			}
+		}
+	}
+	632.1.1 = { 
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = roman_government
+					}
+				}
+			}
+		}
+	340.1.1 = {
+		holder = lusitania_01 # Fake holder
+	}
+	360.1.1 = {
+		liege = d_badajoz
+	}
+	370.1.1 = {
+		holder = lusitania_02 # Fake holder
+	}
+	460.1.1 = {
+		holder = lusitania_06 # Lacobriga
+		de_jure_liege = d_beja
+	}
+	523.1.1 = {
+		holder = lusitania_11 # Lacobriga
+		liege = k_visigoths
+	}
+	632.1.1 = {
+		holder = lusitania_14 # Lisbun
+		liege = d_badajoz
+	}
+	761.1.1 = {
+		holder = 200035 # Abdallah Aslamid
+		liege = d_badajoz
+		government = clan_government
+	}
+}
+
+
+c_elvas = {
+	#Roman Province
+	200.1.1 = { de_jure_liege = d_badajoz }
+	200.1.1 = { 
+	}
+	465.1.1 = { 
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = roman_government
+				}
+			}
+		}
+	}
+	632.1.1 = { 
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+
+	340.1.1 = {
+		holder = lusitania_01 # Fake holder
+	}
+	360.1.1 = {
+		liege = d_badajoz
+	}
+	370.1.1 = {
+		holder = lusitania_02 # Fake holder
+	}
+	460.1.1 = {
+		holder = lusitania_05 # Pax
+		de_jure_liege = d_beja
+	}
+	523.1.1 = {
+		holder = lusitania_10 #Pax
+	}
+	632.1.1 = {
+		holder = lusitania_14 # Lisbun
+		liege = d_badajoz
+	}
+	761.1.1 = {
+		holder = 200035 # Abdallah Aslamid
+		liege = d_badajoz
+		government = clan_government
+	}
+}
+
+
+d_badajoz = {
+	#Roman Province
+	200.1.1 = { 
+	}
+	465.1.1 = { 
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = roman_government
+				}
+			}
+		}
+	}
+	632.1.1 = {
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		} 
+	}
+	200.1.1 = {
+		de_jure_liege = k_hispania
+	}
+	476.1.1 = {
+		de_jure_liege = k_badajoz
+	}
+	359.1.1 = {
+		holder = hispania_03 #Fake Vicar
+	}
+	384.1.1 = {
+		holder = hispania_01 #Marinianus
+		liege = e_western_roman_empire
+	}
+	395.1.1 = {
+		holder = hispania_02 #Fake Vicar
+		liege = e_western_roman_empire
+	}
+	632.1.1 = {
+		holder = 200241 # Goths
+		liege = k_visigoths
+	}
+	410.1.1 = {
+		holder = 0
+	}
+}
+
+
+c_badajoz = {
+	200.1.1 = { 
+	}
+	465.1.1 = { 
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = roman_government
+				}
+			}
+		}
+	}
+	632.1.1 = { 
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+	200.1.1 = {
+		##Province of Baetica
+		liege = d_cordoba
+		de_jure_liege = d_cordoba
+	}
+	632.1.1 = {
+		##Integration into Visigoths
+		government = feudal_government
+		liege = d_sevilla
+		de_jure_liege = d_sevilla
+	}
+	711.1.1 = {
+		##Al Andalus
+		government = clan_government
+	}
+	359.1.1 = {
+		holder = baetica_18 ## Julian, Made-up Holder
+	}
+	360.1.1 = {
+		liege = d_badajoz
+	}
+	393.1.1 = {
+		holder = baetica_16 ## Crassus, Made-Up Holders
+	}
+	461.1.1 = {
+		holder = baetica_13 #Fake Administrator of the Autonomus City of Hispalis
+	}
+	476.1.1 = {
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = roman_government
+				}
+			}
+		}
+		de_jure_liege = d_badajoz
+	}
+	532.1.1 = {
+		holder = corduba_02 #Fake Administrator of the Autonomus City of Corduba
+	}
+	621.1.1 = {
+		holder = baetica_17 #Fake Visigothic Noble
+	}
+	756.3.16 = {
+		holder = baranis_01 # Fictional Umar
+		liege = k_andalusia
+		government = clan_government
+	}
+}
+
+
+c_merida = {
+	361.1.1 = { change_development_level = 10 }
+	200.1.1 = { }
+	465.1.1 = { 
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = roman_government
+				}
+			}
+		}
+	}
+	632.1.1 = { 
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+	#Roman Province
+	361.1.1 = {
+		holder = hispania_03 #Fake Vicar
+	}
+	384.1.1 = {
+		holder = hispania_01 #Marinianus
+	}
+	395.1.1 = {
+		holder = hispania_02 #Fake Vicar
+	}
+	460.1.1 = {
+		holder = lusitania_08 # Emerita
+		de_jure_liege = d_badajoz
+		liege = k_visigoths
+	}
+	532.1.1 = {
+		holder = lusitania_12 #Emerita
+	}
+	760.1.1 = {
+		holder = 200217 # Muhammad Atlasid
+		liege = k_andalusia
+		government = clan_government
+	}
+}
+
+
+c_plasencia = {
+	361.1.1 = { change_development_level = 5 }
+	200.1.1 = { }
+	465.1.1 = { 
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = roman_government
+				}
+			}
+		}
+	}
+	632.1.1 = { 
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+	#Roman Province
+	361.1.1 = {
+		holder = hispania_03 #Fake Vicar
+	}
+	384.1.1 = {
+		holder = hispania_01 #Marinianus
+	}
+	395.1.1 = {
+		holder = hispania_02 #Fake Vicar
+	}
+	460.1.1 = {
+		holder = lusitania_08 # Emerita
+		de_jure_liege = d_badajoz
+		liege = k_visigoths
+	}
+	532.1.1 = {
+		holder = lusitania_12 #Emerita
+	}
+	632.1.1 = {
+		holder = 200241 # Goths
+		liege = k_visigoths
+	}
+	760.1.1 = {
+		holder = 200217 # Muhammad Atlasid
+		liege = k_andalusia
+		government = clan_government
+	}
+}
+
+
+c_caceres = {
+	361.1.1 = { change_development_level = 5 }
+	200.1.1 = { 
+	}
+	465.1.1 = { 
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = roman_government
+				}
+			}
+		}
+	}
+	632.1.1 = { 
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+	#Roman Province
+	361.1.1 = {
+		holder = hispania_03 #Fake Vicar
+	}
+	384.1.1 = {
+		holder = hispania_01 #Marinianus
+	}
+	395.1.1 = {
+		holder = hispania_02 #Fake Vicar
+	}
+	460.1.1 = {
+		holder = lusitania_08 # Emerita
+		de_jure_liege = d_badajoz
+		liege = k_visigoths
+	}
+	532.1.1 = {
+		holder = lusitania_12 #Emerita
+	}
+	632.1.1 = {
+		holder = 200241 # Goths
+		liege = k_visigoths
+	}
+	760.1.1 = {
+		holder = 200217 # Muhammad Atlasid
+		liege = k_andalusia
+		government = clan_government
+	}
+}
+
+
+c_medellin = {
+	200.1.1 = { de_jure_liege = d_cordoba }
+	200.1.1 = { 
+	}
+	465.1.1 = { 
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = roman_government
+				}
+			}
+		}
+	}
+	632.1.1 = { 
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+	632.1.1 = {
+		##Integration into Visigoths
+		government = feudal_government
+		liege = d_sevilla
+		de_jure_liege = d_sevilla
+	}
+	711.1.1 = {
+		##Al Andalus
+		government = clan_government
+	}
+	359.1.1 = {
+		holder = baetica_18 ## Julian, Made-up Holder
+	}
+	360.1.1 = {
+		liege = d_badajoz
+	}
+	393.1.1 = {
+		holder = baetica_16 ## Crassus, Made-Up Holders
+		liege = d_cordoba
+	}
+	476.1.1 = {
+		holder = corduba_01 #Fake Administrator of the Autonomus City of Corduba
+		de_jure_liege = d_badajoz
+	}
+	476.1.1 = {
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = roman_government
+				}
+			}
+		}
+	}
+	532.1.1 = {
+		holder = corduba_02 #Fake Administrator of the Autonomus City of Corduba
+	}
+	621.1.1 = {
+		holder = baetica_17 #Fake Visigothic Noble
+	}
+	756.3.16 = {
+		holder = baranis_01 # Fictional Umar
+		liege = k_andalusia
+		government = clan_government
+	}
+}
+
+
+d_algarve = {
+	476.1.1 = {
+		de_jure_liege = k_badajoz
+	}
+}
+
+
+c_faro = {
+	200.1.1 = { de_jure_liege = d_badajoz }
+	200.1.1 = { 
+	}
+	465.1.1 = { 
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = roman_government
+				}
+			}
+		}
+	}
+	632.1.1 = { 
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+	768.1.1 = {
+		de_jure_liege = d_algarve
+	}
+	360.1.1 = {
+		liege = d_badajoz
+	}
+	361.1.1 = {
+		holder = lusitania_03 # Fake holder
+	}
+	458.1.1 = {
+		holder = lusitania_07 # Oussonoba
+		de_jure_liege = d_algarve
+	}
+	523.1.1 = {
+		holder = lusitania_13 # Oussonoba
+	}
+	632.1.1 = {
+		holder = lusitania_15 # Pax
+		liege = d_badajoz
+	}
+	766.1.1 = {
+		holder = 200222 # Marwan Qashid
+		liege = k_andalusia
+		government = clan_government
+	}
+}
+
+
+c_silves = {
+	361.1.1 = { change_development_level = 5 }
+	200.1.1 = { de_jure_liege = d_badajoz }
+	200.1.1 = { }
+	465.1.1 = { 
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = roman_government
+				}
+			}
+		}
+	}
+	632.1.1 = { 
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	 }
+	768.1.1 = {
+		de_jure_liege = d_algarve
+	}
+	360.1.1 = {
+		liege = d_badajoz
+	}
+	361.1.1 = {
+		holder = lusitania_03 # Fake holder
+	}
+	460.1.1 = {
+		holder = lusitania_06 # Lacobriga
+		de_jure_liege = d_algarve
+	}
+	523.1.1 = {
+		holder = lusitania_11 # Lacobriga
+	}
+	632.1.1 = {
+		holder = lusitania_15 # Pax
+		liege = d_badajoz
+	}
+	766.1.1 = {
+		holder = 200222 # Marwan Qashid
+		liege = k_andalusia
+		government = clan_government
+	}
+}

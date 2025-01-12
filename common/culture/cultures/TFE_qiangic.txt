@@ -1,0 +1,32 @@
+﻿
+
+di = { # Di peoples
+	color = { 0.79 0.68 0.56 }
+	
+	ethos = ethos_communal
+	heritage = heritage_qiangic
+	language = language_qiangic
+	martial_custom = martial_custom_male_only
+	traditions = {
+		tradition_himalayan_settlers	# Cybr: I guess Himalayas? Other Qiang cultures have it
+		tradition_artisans				# Cybr: According to the Weilue, they were skilled at weaving cloth
+		tradition_agrarian				# Cybr: According to the Weilue, they were good farmers
+	}
+
+	# Cybr: Mixed with Chinese
+	dlc_tradition = {
+		trait = tradition_culture_blending
+		requires_dlc_flag = hybridize_culture
+	}
+	
+	name_list = name_list_di
+	
+	coa_gfx = { tibetan_group_coa_gfx }
+	building_gfx = { indian_building_gfx }
+	clothing_gfx = { mongol_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+	
+	ethnicities = {
+		10 = asian
+	}
+}

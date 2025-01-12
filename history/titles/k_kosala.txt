@@ -1,0 +1,664 @@
+﻿
+k_kosala = {
+	361.1.1 = { change_development_level = 3 }
+	476.1.1 = { change_development_level = 4 }
+	532.1.1 = { change_development_level = 5 }
+	632.1.1 = { change_development_level = 6 }
+	768.1.1 = { change_development_level = 7 }
+
+	### Aulikaras
+	528.1.1 = {
+		holder = aulikara_09
+	}
+	540.1.1 = {
+		holder = 0
+	}
+
+	
+	725.1.1 = {
+		holder = 191000 #Yasovarman
+	}
+	744.1.1 = {
+		liege = 0
+	}
+	752.1.1 = {
+		holder = 191002 #Ama
+	}
+	762.1.1 = {
+		holder = 191003 #Dundaka
+	}
+}
+
+
+d_kanyakubja = {
+	361.1.1 = { change_development_level = 9 }
+	476.1.1 = { change_development_level = 10 }
+	532.1.1 = { change_development_level = 11 }
+	632.1.1 = { change_development_level = 12 }
+	768.1.1 = { change_development_level = 13 }
+	
+	170.1.1 = {
+		holder = 901050
+		government = gupta_government
+	}
+	210.1.1 = {
+		holder = 901051
+	}
+	230.1.1 = {
+		holder = 901052
+	}
+	252.1.1 = {
+		holder = naga_04
+	}
+	289.1.1 = {
+		holder = naga_03
+	}
+	323.1.1 = {
+		holder = naga_011
+		government = gupta_government
+	}
+	343.1.1 = {
+		holder = naga_0112
+	}
+	361.1.1 = {
+		liege = e_bengal
+	}
+	725.1.1 = {
+		holder = 191000 #Yasovarman
+		liege = k_kosala
+	}
+	752.1.1 = {
+		holder = 191002 #Ama
+	}
+	762.1.1 = {
+		holder = 191003 #Dundaka
+	}
+}
+
+
+c_kanyakubja = {
+	
+	170.1.1 = {
+		holder = 901050
+		government = gupta_government
+	}
+	210.1.1 = {
+		holder = 901051
+	}
+	230.1.1 = {
+		holder = 901052
+	}
+	#Gupta Empire
+	319.1.1 = {
+		holder = 900962 #Chandragupta, son of Ghatatkacha
+	}
+	335.1.1 = {
+		holder = gupta_01 #Khacha, son of Ghatatkacha
+	}
+	335.5.1 = {
+		holder = 900963 #Samudragupta, son of Ghatatkacha
+	}
+	375.1.1 = {
+		holder = 2020123 #Chandragupta, son of Samudragupta
+	}
+	415.1.1 = {
+		holder = gupta_05 #Kumaragupta, son of Chandragupta
+	}
+	455.1.1 = {
+		holder = gupta_08 #Skandragupta, son of Kumaragupta
+	}
+	466.1.1 = {
+		holder = gupta_09 #Purugupta, son of Kumaragupta
+	}
+	473.1.1 = {
+		holder = gupta_10 #Kumaragupta II, son of Purugupta
+	}
+	476.1.1 = {
+		holder = gupta_12 #Bughagupta, son of Purugupta
+	}
+	495.1.1 = {
+		holder = gupta_13 #Narasimhagupta, son of Purugupta
+	}
+	# 530.1.1 = {
+	# 	holder = gupta_14 #Kumaragupta III, son of Narasimhagupta
+	# }
+	# 540.1.1 = {
+	# 	holder = gupta_15 #Vishnugupta, son of Kumaragupta III
+	# }
+	343.1.1 = {
+		holder = naga_0112
+	}
+	476.1.1 = {
+		holder = guptasad_33
+		liege = e_bengal
+	}
+	### Aulikaras
+	528.1.1 = {
+		holder = aulikara_09
+		liege = k_malwa
+	}
+	532.1.1 = {
+		holder = kaushali_misc_02
+		liege = d_mathura
+	}
+	725.1.1 = {
+		holder = 191000 #Yasovarman
+	}
+	752.1.1 = {
+		holder = 191002 #Ama
+	}
+	762.1.1 = {
+		holder = 191003 #Dundaka
+	}
+}
+
+
+c_manikpur = {
+	361.1.1 = {
+		holder = guptasad_60
+		government = gupta_government
+		liege = e_bengal
+	}
+	476.1.1 = {
+		holder = guptasad_61
+	}
+	532.1.1 = {
+		holder = kaushali_misc_01
+		liege = k_malwa
+	}
+	725.1.1 = {
+		holder = 191000 #Yasovarman
+		liege = d_kanyakubja
+	}
+	752.1.1 = {
+		holder = 191002 #Ama
+	}
+	762.1.1 = {
+		holder = 191003 #Dundaka
+	}
+}
+c_lakhnau = {
+	361.1.1 = {
+		holder = guptasad_60
+		government = gupta_government
+		liege = e_bengal
+	}
+	476.1.1 = {
+		holder = guptasad_61
+	}
+	532.1.1 = {
+		holder = kaushali_misc_02
+		liege = d_mathura
+	}
+	725.1.1 = {
+		holder = 191000 #Yasovarman
+		liege = d_kanyakubja
+	}
+	752.1.1 = {
+		holder = 191002 #Ama
+	}
+	762.1.1 = {
+		holder = 191003 #Dundaka
+	}
+}
+
+
+c_kalpi = {
+	170.1.1 = {
+		holder = 901050
+		government = gupta_government
+	}
+	210.1.1 = {
+		holder = 901051
+	}
+	230.1.1 = {
+		holder = 901052
+	}
+	252.1.1 = {
+		holder = naga_04
+	}
+	289.1.1 = {
+		holder = naga_03
+	}
+	323.1.1 = {
+		holder = naga_011
+		government = gupta_government
+	}
+	343.1.1 = {
+		holder = naga_0112
+	}
+	361.1.1 = {
+		liege = e_bengal
+	}
+	476.1.1 = {
+		holder = bharatiya_02
+		liege = e_bengal
+	}
+	532.1.1 = {
+		holder = bharatiya_01
+		liege = d_mathura
+	}
+	725.1.1 = {
+		holder = 191000 #Yasovarman
+		liege = d_kanyakubja
+	}
+	752.1.1 = {
+		holder = 191002 #Ama
+	}
+	762.1.1 = {
+		holder = 191003 #Dundaka
+	}
+}
+
+
+
+
+c_asni = {
+	170.1.1 = {
+		holder = 901050
+		government = gupta_government
+	}
+	210.1.1 = {
+		holder = 901051
+	}
+	230.1.1 = {
+		holder = 901052
+	}
+	252.1.1 = {
+		holder = naga_04
+	}
+	289.1.1 = {
+		holder = naga_03
+	}
+	323.1.1 = {
+		holder = naga_011
+		government = gupta_government
+	}
+	343.1.1 = {
+		holder = naga_0112
+	}
+	361.1.1 = {
+		liege = e_bengal
+	}
+	476.1.1 = {
+		holder = guptasad_62
+		liege = e_bengal
+	}
+	532.1.1 = {
+		holder = kaushali_misc_02
+		liege = d_mathura
+	}
+	725.1.1 = {
+		holder = 191000 #Yasovarman
+		liege = d_kanyakubja
+	}
+	752.1.1 = {
+		holder = 191002 #Ama
+	}
+	762.1.1 = {
+		holder = 191003 #Dundaka
+	}
+}
+
+
+c_prayaga = {
+	361.1.1 = { change_development_level = 12 }
+	476.1.1 = { change_development_level = 13 }
+	532.1.1 = { change_development_level = 14 }
+	632.1.1 = { change_development_level = 15 }
+	768.1.1 = { change_development_level = 16 }
+	
+	#Gupta Empire
+	247.1.1 = {
+		holder = 900960 #Gupta Gupta Founder of Gupta House
+	}
+	280.1.1 = {
+		holder = 900961 #Ghatatkacha, son of Gupta Gupta
+	}
+	319.1.1 = {
+		holder = 900962 #Chandragupta, son of Ghatatkacha
+	}
+	335.1.1 = {
+		holder = gupta_01 #Khacha, son of Ghatatkacha
+	}
+	335.5.1 = {
+		holder = 900963 #Samudragupta, son of Ghatatkacha
+	}
+	375.1.1 = {
+		holder = 2020123 #Chandragupta, son of Samudragupta
+	}
+	415.1.1 = {
+		holder = gupta_05 #Kumaragupta, son of Chandragupta
+	}
+	455.1.1 = {
+		holder = gupta_08 #Skandragupta, son of Kumaragupta
+	}
+	466.1.1 = {
+		holder = gupta_09 #Purugupta, son of Kumaragupta
+	}
+	473.1.1 = {
+		holder = gupta_10 #Kumaragupta II, son of Purugupta
+	}
+	476.1.1 = {
+		holder = gupta_12 #Bughagupta, son of Purugupta
+	}
+	495.1.1 = {
+		holder = gupta_13 #Narasimhagupta, son of Purugupta
+	}
+	# 530.1.1 = {
+	# 	holder = gupta_14 #Kumaragupta III, son of Narasimhagupta
+	# }
+	# 540.1.1 = {
+	# 	holder = gupta_15 #Vishnugupta, son of Kumaragupta III
+	# }
+	530.1.1 = {
+		holder = 191090 #Jivatagupta
+		liege = k_bihar
+	}
+	546.1.1 = {
+		holder = 191091 #Kumaragupta
+	}
+	580.1.1 = {
+		holder = 191092 #Damodaragupta
+	}
+	605.1.1 = {
+		holder = 191093 #Mahasenagupta
+	}
+	630.1.1 = {
+		holder = 191094 #Kumaragupta
+	}
+}
+
+
+d_saryupara = {
+	361.1.1 = { change_development_level = 7 }
+	476.1.1 = { change_development_level = 8 }
+	532.1.1 = { change_development_level = 9 }
+	632.1.1 = { change_development_level = 10 }
+	768.1.1 = { change_development_level = 11 }
+	310.1.1 = {
+		holder = naga_05
+	}
+	358.1.1 = {
+		holder = naga_06
+	}
+	361.1.1 = {
+		liege = e_bengal
+	}
+	725.1.1 = {
+		holder = 191025	#Rajaputra
+		liege = k_kosala
+	}
+}
+
+
+c_ayodhya = {
+	310.1.1 = {
+		holder = naga_05
+	}
+	358.1.1 = {
+		holder = naga_06
+	}
+	361.1.1 = {
+		liege = e_bengal
+	}
+	476.1.1 = {
+		holder = guptasad_65
+	}
+	532.1.1 = {
+		holder = kaushali_misc_01
+		liege = k_malwa
+	}
+	725.1.1 = {
+		holder = 191025	#Rajaputra
+		liege = d_saryupara
+	}
+}
+
+
+c_naimisa = {
+	310.1.1 = {
+		holder = naga_05
+	}
+	358.1.1 = {
+		holder = naga_06
+	}
+	361.1.1 = {
+		liege = e_bengal
+	}
+	476.1.1 = {
+		holder = guptasad_65
+	}
+	532.1.1 = {
+		holder = bharatiya_misc_001
+		liege = d_kuru
+	}
+	725.1.1 = {
+		holder = 191025	#Rajaputra
+		liege = d_saryupara
+	}
+}
+
+
+c_sravasti = {
+	310.1.1 = {
+		holder = naga_05
+	}
+	358.1.1 = {
+		holder = naga_06
+	}
+	361.1.1 = {
+		liege = e_bengal
+	}
+	476.1.1 = {
+		holder = guptasad_65
+	}
+	532.1.1 = {
+		holder = kaushali_misc_01
+		liege = k_malwa
+	}
+	750.1.1 = {
+		holder = 191298 #Jayaditya I
+	}
+}
+
+
+d_jejakabhukti = {
+	361.1.1 = { change_development_level = 5 }
+	532.1.1 = { change_development_level = 6 }
+	768.1.1 = { change_development_level = 7 }
+
+	532.1.1 = {
+		holder = kaushali_misc_03
+		liege = k_malwa
+	}
+
+	700.1.1 = {
+		liege = 0
+		holder = 191018 #Karamchand
+	}
+	
+	720.1.1 = {
+		holder = 191019 #Ranasimha
+	}
+	
+	725.1.1 = {
+		liege = k_kosala #Yasovarman
+	}
+	
+	730.1.1 = {
+		holder = 191020 #Naranath
+	}
+	
+	750.1.1 = {
+		holder = 191021 #Jayasimha
+	}
+	
+	
+
+}
+
+
+c_mahoba = {
+	170.1.1 = {
+		holder = 901050
+		government = gupta_government
+	}
+	210.1.1 = {
+		holder = 901051
+	}
+	230.1.1 = {
+		holder = 901052
+	}
+	252.1.1 = {
+		holder = naga_04
+	}
+	289.1.1 = {
+		holder = naga_03
+	}
+	323.1.1 = {
+		holder = naga_011
+		government = gupta_government
+	}
+	343.1.1 = {
+		holder = naga_0112
+	}
+	361.1.1 = {
+		liege = e_bengal
+	}
+	476.1.1 = {
+		holder = guptasad_62
+		liege = e_bengal
+	}
+	700.1.1 = {
+		liege = d_jejakabhukti
+		holder = 191018 #Karamchand
+	}
+	
+	720.1.1 = {
+		holder = 191019 #Ranasimha
+	}
+	
+	730.1.1 = {
+		holder = 191020 #Naranath
+	}
+	
+	750.1.1 = {
+		holder = 191021 #Jayasimha
+	}
+	
+	
+}
+
+
+c_kalanjara = {
+	170.1.1 = {
+		holder = 901050
+		government = gupta_government
+	}
+	210.1.1 = {
+		holder = 901051
+	}
+	230.1.1 = {
+		holder = 901052
+	}
+	252.1.1 = {
+		holder = naga_04
+	}
+	289.1.1 = {
+		holder = naga_03
+	}
+	323.1.1 = {
+		holder = naga_011
+		government = gupta_government
+	}
+	343.1.1 = {
+		holder = naga_0112
+	}
+	361.1.1 = {
+		liege = e_bengal
+	}
+	476.1.1 = {
+		holder = guptasad_62
+		liege = e_bengal
+	}
+	700.1.1 = {
+		liege = d_jejakabhukti
+		holder = 191018 #Karamchand
+	}
+	
+	720.1.1 = {
+		holder = 191019 #Ranasimha
+	}
+	
+	730.1.1 = {
+		holder = 191020 #Naranath
+	}
+	
+	750.1.1 = {
+		holder = 191021 #Jayasimha
+	}
+	
+	
+}
+
+
+c_damoh = {
+	287.1.1 = {
+		holder = naga_01
+		government = gupta_government
+	}
+	343.1.1 = {
+		holder = naga_021
+		liege = d_akara_dasarna
+	}
+	476.1.1 = {
+		holder = guptasad_42
+		government = gupta_government
+		liege = e_bengal
+	}
+	675.1.1 = {
+		holder = 191317 #Vamaraja Cedi
+		liege = d_dahala
+	}
+	700.1.1 = {
+		holder = 191318 #? Cedi
+	}
+	730.1.1 = {
+		holder = 191319 #? Cedi
+	}
+	750.1.1 = {
+		holder = 191320 #Sankaragana Cedi
+	}
+}
+
+
+c_gurgi = {
+	#Gupta Empire
+	350.1.1 = {
+		holder = guptasad_17
+		government = gupta_government
+		liege = k_bihar
+	}
+	470.1.1 = {
+		holder = guptasad_21
+		liege = k_bihar
+	}
+	700.1.1 = {
+		liege = d_jejakabhukti
+		holder = 191018 #Karamchand
+	}
+	
+	720.1.1 = {
+		holder = 191019 #Ranasimha
+	}
+	
+	730.1.1 = {
+		holder = 191020 #Naranath
+	}
+	
+	750.1.1 = {
+		holder = 191021 #Jayasimha
+	}
+}
+

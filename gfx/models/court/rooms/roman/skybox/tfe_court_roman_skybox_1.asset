@@ -1,0 +1,20 @@
+pdxmesh = {
+	name = "tfe_court_roman_skybox_1_mesh"
+	file = "tfe_court_roman_skybox_1.mesh"
+
+	meshsettings = {
+		name = "tfe_court_roman_skybox_1Shape"
+		index = 0
+		texture_diffuse = "roman_court_1_diffuse.dds"
+		texture_normal = "roman_court_1_normal.dds"
+		texture_specular = "roman_court_1_properties.dds"
+		shader = "COOP_court_sky"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+
+}
+
+entity = {
+	name = "tfe_court_roman_skybox_1_entity"
+	pdxmesh = "tfe_court_roman_skybox_1_mesh"
+}

@@ -1,0 +1,112 @@
+﻿l_english:
+ TFE_north_indian_struggle_region: "North India and Tokharistan"
+ TFE_small_north_indian_struggle_region: "North India"
+ TFE_struggle_north_indian_ends_tt:0 "The [north_indian_struggle|E] ends"
+ TFE_north_indian_struggle_interchange_phase:0 "The [north_indian_struggle|E] is currently in the [struggle_phase_north_indian_interchange|E]"
+ struggle_parameter_cheaper_nomadic_migrations:0 "Cheaper #V Nomadic Migrations#! for [struggle_involved_cultures|E]"
+ struggle_parameter_kshatriya_varna_for_non_indian_rulers:0 "Rulers without the #V Caste#! [tradition|E] can gain the Kshatriya [varna|E]"
+ INDIAN_STRUGGLE:0 "[north_indian_struggle|E]"
+
+ # Phases
+ north_indian_struggle: "$game_concept_north_indian_struggle$"
+ struggle_TFE_north_indian_phase_invasion: "Invasion"
+ struggle_TFE_north_indian_phase_invasion_desc: "$game_concept_struggle_phase_north_indian_invasion_desc$"
+ struggle_TFE_north_indian_phase_glory: "Glory"
+ struggle_TFE_north_indian_phase_glory_desc: "$game_concept_struggle_phase_north_indian_glory_desc$"
+ struggle_TFE_north_indian_phase_interchange: "Interchange"
+ struggle_TFE_north_indian_phase_interchange_desc: "$game_concept_struggle_phase_north_indian_interchange_desc$"
+
+ # Catalysts
+ catalyst_TFE_irrigation_tank_small:0 "Built a small irrigation tank [struggle_catalyst_catalyst|E]"
+ catalyst_TFE_irrigation_tank_small_desc:0 "Build a small irrigation tank"
+ catalyst_TFE_irrigation_tank_medium:0 "Built a medium irrigation tank [struggle_catalyst_catalyst|E]"
+ catalyst_TFE_irrigation_tank_medium_desc:0 "Build a medium irrigation tank"
+ catalyst_TFE_irrigation_tank_large:0 "Built a large irrigation tank [struggle_catalyst_catalyst|E]"
+ catalyst_TFE_irrigation_tank_large_desc:0 "Build a large irrigation tank"
+ catalyst_TFE_irrigation_tank_huge:0 "Built a grand irrigation tank [struggle_catalyst_catalyst|E]"
+ catalyst_TFE_irrigation_tank_huge_desc:0 "Build a grand irrigation tank"
+ catalyst_TFE_adopt_higher_varna:0 "Adopted a higher [varna|E] as a member of the Shudra [varna|E] [struggle_catalyst_catalyst|E]"
+ catalyst_TFE_adopt_higher_varna_desc:0 "Adopt a higher [varna|E] as a member of the Shudra [varna|E]"
+ catalyst_TFE_adopt_kshatriya_varna:0 "Adopted the Kshatriya [varna|E] [struggle_catalyst_catalyst|E]"
+ catalyst_TFE_adopt_kshatriya_varna_desc:0 "Adopt the Kshatriya [varna|E]"
+ catalyst_TFE_indian_land_grant_different_religion:0 "Gave out [RICE_land_grants|E] to other [religions|E] [struggle_catalyst_catalyst|E]"
+ catalyst_TFE_indian_land_grant_different_religion_desc:0 "Gave out [RICE_land_grants|E] to other [religions|E]"
+ catalyst_TFE_indian_land_grant_same_religion:0 "Gave out [RICE_land_grants|E] to own [religion|E] [struggle_catalyst_catalyst|E]"
+ catalyst_TFE_indian_land_grant_same_religion_desc:0 "Gave out [RICE_land_grants|E] to own [religion|E]"
+ catalyst_gain_claim_on_title:0 "Acquired [claim|E] [struggle_catalyst_catalyst|E]"
+ catalyst_gain_claim_on_title_desc:0 "Acquire a [claim|E] on a [title|E] in the [struggle_region|E]"
+
+ # Ending decisions
+
+ # Foreign
+ struggle_north_indian_ending_foreign_domination_decision: "Foreign Subjugation"
+ struggle_north_indian_ending_foreign_domination_decision_desc: "Though we were not originally from [GetGeographicalRegion('TFE_small_north_indian_struggle_region').GetName], we can make for ourselves a new home here. We #italic will#! unite the region under a [ROOT.Char.GetCulture.GetName] [ROOT.Char.Custom('GetQueenKing')|l] flying the [ROOT.Char.GetPrimaryTitle.GetAdjectiveNoTooltip] banner!"
+ struggle_north_indian_ending_foreign_domination_decision_tooltip: "End the $north_indian_struggle$"
+ struggle_north_indian_ending_foreign_domination_decision_confirm: "$struggle_north_indian_ending_foreign_domination_decision_tooltip$"
+ struggle_north_indian_ending_foreign_domination_correct_phase_tt: "The current [struggle_phase|E] is the [struggle_phase_north_indian_invasion|E] or [struggle_phase_north_indian_glory|E]"
+ struggle_north_indian_ending_domination_region_tt: "You control more than [SCOPE.ScriptValue('struggle_north_indian_ending_domination_owned_percent_value')|0]% of the [GetGeographicalRegion('TFE_north_indian_struggle_region').GetName] [region|E] (Current: [SCOPE.ScriptValue('TFE_north_indian_struggle_region_owned_percent_value')|0]%)"
+ struggle_north_indian_ending_others_domination_decision_region_tt: "No other [independent|E] [struggle_involved|E] [ruler|E] controls more than [SCOPE.ScriptValue('fp2_struggle_hostility_region_percent_value')|0]% of [GetGeographicalRegion('TFE_north_indian_struggle_region').GetName]"
+ struggle_north_indian_foreigner_modifier_list_tt: "Select one of the following modifiers for your [house|E]:\n$EFFECT_LIST_BULLET$[GetStaticModifier('struggle_north_indian_house_terror_modifier').GetNameWithTooltip|L]\n$EFFECT_LIST_BULLET$[GetStaticModifier('struggle_north_indian_house_mastery_modifier').GetNameWithTooltip|L]\n$EFFECT_LIST_BULLET$[GetStaticModifier('struggle_north_indian_house_authority_modifier').GetNameWithTooltip|L]"
+
+ # Indian
+ struggle_north_indian_ending_indian_domination_decision: "Indian Supremacy"
+ struggle_north_indian_ending_indian_domination_decision_desc: "The continued incursions by the fearsome Hunas into [GetGeographicalRegion('TFE_small_north_indian_struggle_region').GetName] must be checked. Once we secure the region, the whole region can unite under a [ROOT.Char.GetCulture.GetName] [ROOT.Char.Custom('GetQueenKing')|l] flying the [ROOT.Char.GetPrimaryTitle.GetAdjectiveNoTooltip] banner!"
+ struggle_north_indian_ending_indian_domination_decision_tooltip: "End the $north_indian_struggle$"
+ struggle_north_indian_ending_indian_domination_decision_confirm: "$struggle_north_indian_ending_foreign_domination_decision_tooltip$"
+ struggle_north_indian_ending_indian_domination_correct_phase_tt: "$struggle_north_indian_ending_foreign_domination_correct_phase_tt$"
+ struggle_north_indian_indian_modifier_list_tt: "Select one of the following modifiers for your [house|E]:\n$EFFECT_LIST_BULLET$[GetStaticModifier('struggle_north_indian_house_majesty_modifier').GetNameWithTooltip|L]\n$EFFECT_LIST_BULLET$[GetStaticModifier('struggle_north_indian_house_might_modifier').GetNameWithTooltip|L]\n$EFFECT_LIST_BULLET$[GetStaticModifier('struggle_north_indian_house_opulence_modifier').GetNameWithTooltip|L]"
+
+ # Confluence
+ struggle_north_indian_ending_confluence_decision: "Confluence"
+ struggle_north_indian_ending_confluence_decision_desc: "[GetGeographicalRegion('TFE_small_north_indian_struggle_region').GetName] may be ravaged by instability and conflict, but it does not need to be that way. We can, and should, transform this land into one full of culture and spiritual enlightenment, and where different ideas, gods, and peoples can live peacefully together under [ROOT.Char.GetPrimaryTitle.GetAdjectiveNoTooltip] rule."
+ struggle_north_indian_ending_confluence_decision_tooltip: "End the $north_indian_struggle$"
+ struggle_north_indian_ending_confluence_decision_confirm: "$struggle_north_indian_ending_foreign_domination_decision_tooltip$"
+ struggle_north_indian_ending_confluence_correct_phase_tt: "The current [struggle_phase|E] is the [struggle_phase_north_indian_interchange|E] or [struggle_phase_north_indian_glory|E]"
+ struggle_north_indian_ending_confluence_county_req_tt:1 "Own at least [EmptyScope.ScriptValue('struggle_north_indian_development_county_value')|0] [counties|E] in the [GetGeographicalRegion('TFE_north_indian_struggle_region').GetName] [region|E], including your [capital|E], that has at least [EmptyScope.ScriptValue('struggle_north_indian_development_req_value')|0] [development|E]"
+ struggle_north_indian_ending_buddhism_county_req_tt:1 "At least [EmptyScope.ScriptValue('struggle_north_indian_development_county_value')|0] [counties|E] you own in [GetGeographicalRegion('TFE_north_indian_struggle_region').GetName] follow any [faith|E] of the #bold $buddhism_religion_adj$#! [religion|E]"
+ struggle_north_indian_ending_hinduism_county_req_tt:1 "At least [EmptyScope.ScriptValue('struggle_north_indian_development_county_value')|0] [counties|E] you own in [GetGeographicalRegion('TFE_north_indian_struggle_region').GetName] follow any [faith|E] of the #bold $hinduism_religion_adj$#! [religion|E]"
+ struggle_north_indian_ending_jainism_county_req_tt:1 "At least [EmptyScope.ScriptValue('struggle_north_indian_development_county_value')|0] [counties|E] you own in [GetGeographicalRegion('TFE_north_indian_struggle_region').GetName] follow any [faith|E] of the #bold $jainism_religion_adj$#! [religion|E]"
+ struggle_north_indian_confluence_modifier_list_tt: "Select one of the following modifiers for your [house|E]:\n$EFFECT_LIST_BULLET$[GetStaticModifier('struggle_north_indian_house_religious_modifier').GetNameWithTooltip|L]\n$EFFECT_LIST_BULLET$[GetStaticModifier('struggle_north_indian_house_cultural_modifier').GetNameWithTooltip|L]\n$EFFECT_LIST_BULLET$[GetStaticModifier('struggle_north_indian_house_economical_modifier').GetNameWithTooltip|L]"
+
+
+ # Ending Events
+
+ # Hunas Victory
+ north_indian_struggle.1000.t:0 "$struggle_north_indian_ending_foreign_domination_decision$"
+ north_indian_struggle.1000.desc:1 "The native peoples of [GetGeographicalRegion('TFE_small_north_indian_struggle_region').GetName] may fear us, labeling us as the #bold Hunas#!, whether we were descended from the original first waves of invaders or not. But we say it is a well-deserved title. We #italic are#! rightfully to be feared, for only a fool would be unable to see how we have become the most powerful peoples of [GetGeographicalRegion('TFE_north_indian_struggle_region').GetName], with an empire stretching across the Gangetic Plain.\n\nThere is little doubt that [ROOT.Char.GetPrimaryTitle.GetAdjectiveNoTooltip] dominion will last for many generations to come. As we have won this entire region through right of conquest, it is up to us to decide how exactly we wish to go about enforcing our new rule."
+ north_indian_struggle.1000.a:0 "We will live up to our terrifying reputation!"
+ north_indian_struggle.1000.b:0 "Subjugation cannot be done clumsily. We must be cunning."
+ north_indian_struggle.1000.c:0 "Others will acknowledge our political authority."
+ north_indian_struggle.1001.t:0 "$struggle_north_indian_ending_foreign_domination_decision$"
+ north_indian_struggle.1001.desc:1 "Everything changed in [GetGeographicalRegion('TFE_small_north_indian_struggle_region').GetName] when the first Hunas tribes and other foreign peoples invaded from the northern mountains, culminating with the rise of the [struggle_ender.GetPrimaryTitle.GetAdjectiveNoTooltip] state. Now, under their current ruler [struggle_ender.GetTitledFirstName], the last remnants of the old Indian principalities have been swept away forever. These foreigners now have direct control over their territories. Fear will keep the local Indian peoples in line, fear of these battle-hardened Hunas.\n\n"
+ north_indian_struggle.1001.desc.closing.terror:1 "[struggle_ender.GetTitledFirstNameNoTooltip] seeks to use the terrifying reputation of [struggle_ender.GetHerHis] people to enforce [struggle_ender.GetPrimaryTitle.GetAdjectiveNoTooltip] rule over these lands. Only time will tell whether this proves to be the correct approach, but for now, it will more than discourage others from rising up against them."
+ north_indian_struggle.1001.desc.closing.mastery:1 "Fear is not merely a matter of directly terrorizing a populace. [struggle_ender.GetTitledFirstNameNoTooltip] knows that domination over these lands has to be maintained through long-term planning. Through cunning intrigue, playing off local rulers against one another, and by maintaining the strength and vigor of [struggle_ender.GetPrimaryTitle.GetAdjectiveNoTooltip] armies, [struggle_ender.GetTitledFirstNameNoTooltip] hopes that [struggle_ender.GetHerHis] descendants will continue to rule here for a long time."
+ north_indian_struggle.1001.desc.closing.authority:1 "How would these Hunas maintain control without the old Indian bureaucracy or institutions? [struggle_ender.GetTitledFirstNameNoTooltip] is aware of this problem, however, and seeks to enforce fear in [struggle_ender.GetHerHis] subjects by building up [struggle_ender.GetPrimaryTitle.GetAdjectiveNoTooltip] political authority through various means. Fear, in other words, should be mixed with respect and awe as far as [struggle_ender.GetSheHe] is concerned."
+ north_indian_struggle.1001.a:0 "This is their moment of triumph."
+
+ # Indian Victory
+ north_indian_struggle.1002.t:0 "$struggle_north_indian_ending_indian_domination_decision$"
+ north_indian_struggle.1002.desc:1 "For many years, the native peoples of [GetGeographicalRegion('TFE_small_north_indian_struggle_region').GetName] have fought long and hard against the Hunas invaders. Ever since they spilled into this region from the north, they have been annoying pests at best and brutal, ruthless plunderers and conquerors at worst. However, that ends today. Under [ROOT.Char.GetPrimaryTitle.GetAdjectiveNoTooltip] leadership, the Hunas have either been driven out, or defeated to the point where they either are irrelevant or pathetically serve us.\n\n[ROOT.Char.GetPrimaryTitle.GetAdjectiveNoTooltip] dominion over [GetGeographicalRegion('TFE_north_indian_struggle_region').GetName] will now be remembered for generations to come. With the region now stabilizing, it is up to us to decide how exactly we wish to go about enforcing our new rule."
+ north_indian_struggle.1002.a:0 "The majesty of our monarchs shall be unmatched!"
+ north_indian_struggle.1002.b:0 "We can't grow complacent; our military is our backbone."
+ north_indian_struggle.1002.c:0 "Others will be in awe of our wealth and abundance."
+ north_indian_struggle.1003.t:0 "$struggle_north_indian_ending_indian_domination_decision$"
+ north_indian_struggle.1003.desc:1 "Everything changed in [GetGeographicalRegion('TFE_small_north_indian_struggle_region').GetName] when the first Hunas tribes and other foreign peoples invaded from the northern mountains. However, after years of fighting, the rulers of the [struggle_ender.GetPrimaryTitle.GetAdjectiveNoTooltip] state, who claim to be of native Indian origin, have effectively neutered the Hunas threat. Under their current ruler [struggle_ender.GetTitledFirstName], the Hunas tribes are now either vanquished, or have been rendered irrelevant.\n\n"
+ north_indian_struggle.1003.desc.closing.majesty:1 "[struggle_ender.GetTitledFirstNameNoTooltip] knows that [struggle_ender.GetHerHis] victory will be remembered throughout the ages not just because of [struggle_ender.GetPrimaryTitle.GetAdjectiveNoTooltip] strength of arms, but because of the splendor and grandeur of their kings and queens. Through their administrative skills, diplomatic negotiation, and successful attempts to earn respect from other rulers, they were able to build an effective bulwark against the Hunas."
+ north_indian_struggle.1003.desc.closing.might:1 "The Hunas invasions greatly shook the native peoples of the region. [struggle_ender.GetTitledFirstNameNoTooltip] understands that if they are to resist future incursions, the [struggle_ender.GetPrimaryTitle.GetAdjectiveNoTooltip] military must be ready. [struggle_ender.GetSheHe|U] will continue to focus on building strong defenses, frequently training troops, and studying the best tactics and strategems. Never again will would-be invaders dare invade!"
+ north_indian_struggle.1003.desc.closing.opulence:1 "Wealth is the ultimate source of power, some say. Whether true or not, [struggle_ender.GetTitledFirstNameNoTooltip] believes it. [struggle_ender.GetSheHe|U] believes, in particular, that it was the strength of the [struggle_ender.GetPrimaryTitle.GetAdjectiveNoTooltip] treasury and the [struggle_ender.GetPrimaryTitle.GetAdjectiveNoTooltip] economy which enabled them to win over the Hunas. As such, [struggle_ender.GetSheHe] aims to implement policies to encourage trade, keep a strong treasury, and ensure societal prosperity. Plus, the defeated Hunas might be better as trade partners than enemies, anyways."
+ north_indian_struggle.1003.a:0 "A great achievement, no doubt."
+
+ # Confluence
+ north_indian_struggle.1004.t:0 "$struggle_north_indian_ending_confluence_decision$"
+ north_indian_struggle.1004.desc:1 "Ever since the Hunas arrived in [GetGeographicalRegion('TFE_small_north_indian_struggle_region').GetName], they and the local Indian rulers have engaged in great wars against each other. Yet there is another way out of this chaos: a confluence of peoples, of ideas, of beliefs. Regardless of the might of our armies, or the splendor of our palaces, the [ROOT.Char.GetPrimaryTitle.GetAdjectiveNoTooltip] state has become greatly respected by many. By encouraging tolerance, we have combined the strength of many different peoples together, and brought an end to the bitter, delirious wars that have ruined [GetGeographicalRegion('TFE_north_indian_struggle_region').GetName].\n\nWith peace returning to the region, and the great wars of the Hunas and Indians becoming a thing of the past, it is up to us to decide how exactly we wish to rule these lands."
+ north_indian_struggle.1004.a:0 "Focus on bringing together religious institutions."
+ north_indian_struggle.1004.b:0 "Let the cultures of this land come together."
+ north_indian_struggle.1004.c:0 "Through economic prosperity, peace will reign."
+ north_indian_struggle.1005.t:0 "$struggle_north_indian_ending_confluence_decision$"
+ north_indian_struggle.1005.desc:1 "Everything changed in [GetGeographicalRegion('TFE_small_north_indian_struggle_region').GetName] when the first Hunas tribes and other foreign peoples invaded from the northern mountains. The land was torn apart by bloodshed, as people of all cultures and faiths squabbled over the riches of the subcontinent. Yet times are changing in this region. Regardless of whether they have origins in the Hunas, the native Indian peoples, or others, the rulers of the the [struggle_ender.GetPrimaryTitle.GetAdjectiveNoTooltip] state have successfully united much of this land. Their current leader, [struggle_ender.GetTitledFirstName], has ushered in a new era by bringing prosperity to the land, encouraging tolerance, and combining many different peoples and faiths together under [struggle_ender.GetHerHis] rule.\n\n"
+ north_indian_struggle.1005.desc.closing.religious:1 "The growth of religions institutions, whether $buddhism_religion_adj$, $hinduism_religion_adj$, or $jainism_religion_adj$, was instrumental in helping [struggle_ender.GetPrimaryTitle.GetAdjectiveNoTooltip] administrators develop their lands. Religious exchange these days, while not always harmonious, is generally respectful, as these three schools compete for [struggle_ender.GetPrimaryTitle.GetAdjectiveNoTooltip] patronage in relatively peaceful ways."
+ north_indian_struggle.1005.desc.closing.cultural:1 "Having come to rule over a multicultural empire, [struggle_ender.GetPrimaryTitle.GetAdjectiveNoTooltip] leaders knew that understanding #italic and#! respecting the cultures, customs, and traditions of the many people they ruled would not only contribution to their realm's prosperity, but be a cornerstone of it. By inspiring once dissapate peoples to unite under their rule, great things can be accomplished."
+ north_indian_struggle.1005.desc.closing.economical:1 "It is easy to conquer a land. It is harder to rule it. It is hardest, however, to make it prosper. The [struggle_ender.GetPrimaryTitle.GetAdjectiveNoTooltip] rulers understand this. By developing commercial networks across many kingdoms and cities, and encouraging trade with merchants near and far, they will build their power, and bring great abundance to their people."
+ north_indian_struggle.1005.desc.closing:0 "\n\nUltimately, these lands can now begin to heal, under [struggle_ender.GetPrimaryTitle.GetAdjectiveNoTooltip] guidance."
+ north_indian_struggle.1005.a:0 "It is the dawn of a new era."

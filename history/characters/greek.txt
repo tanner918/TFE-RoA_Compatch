@@ -1,0 +1,6167 @@
+﻿#BYzantine Pula
+pula_01 = {
+	name = "Liberios"
+	culture = "greek"
+	religion = "chalcedonian"
+	602.1.1 = {
+		birth = yes
+	}
+	671.1.1 = {
+		death = yes
+	}
+}
+pula_02 = {
+	name = "Kaisarios"
+	culture = "greek"
+	religion = "chalcedonian"
+	739.1.1 = {
+		birth = yes
+	}
+	821.1.1 = {
+		death = yes
+	}
+}
+##Spania
+spania_01 = {
+	name = "Liberios"
+	culture = "greek"
+	religion = "chalcedonian"
+	502.1.1 = {
+		birth = yes
+	}
+	578.1.1 = {
+		death = yes
+	}
+}
+spania_04 = {
+	name = "Kaisarios"
+	culture = "greek"
+	religion = "chalcedonian"
+	582.1.1 = {
+		birth = yes
+	}
+	631.1.1 = {
+		death = yes
+	}
+}
+#Exarcahte
+exarchate_01 = {
+	name = "Gennadios"
+	culture = "greek"
+	religion = "chalcedonian"
+	552.1.1 = {
+		birth = yes
+	}
+	612.1.1 = {
+		death = yes
+	}
+}
+exarchate_02 = {
+	name = "Gennadios"
+	culture = "greek"
+	religion = "chalcedonian"
+	609.1.1 = {
+		birth = yes
+	}
+	665.1.1 = {
+		death = yes
+	}
+}
+exarchate_03 = {
+	name = "Eleutherios"
+	culture = "greek"
+	religion = "chalcedonian"
+	trait = peasent_leader
+	609.1.1 = {
+		birth = yes
+	}
+	665.1.1 = {
+		death = yes
+	}
+}
+exarchate_04 = {
+	name = "Ioannes"
+	culture = "greek"
+	religion = "chalcedonian"
+	627.1.1 = {
+		birth = yes
+	}
+	698.1.1 = {
+		death = yes
+	}
+}
+exarchate_05 = {
+	name = "Ioulianos"
+	culture = "greek"
+	religion = "chalcedonian"
+	659.1.1 = {
+		birth = yes
+	}
+	723.1.1 = {
+		death = yes
+	}
+}
+exarchate_06 = {
+	name = "Leontios"
+	culture = "greek"
+	religion = "chalcedonian"
+	589.1.1 = {
+		birth = yes
+	}
+	652.1.1 = {
+		death = yes
+	}
+}
+exarchate_07 = {
+	name = "Sokrates"
+	culture = "greek"
+	religion = "chalcedonian"
+	599.1.1 = {
+		birth = yes
+	}
+	652.1.1 = {
+		death = yes
+	}
+}
+exarchate_08 = {
+	name = "Georgios"
+	culture = "greek"
+	religion = "chalcedonian"
+	574.1.1 = {
+		birth = yes
+	}
+	652.1.1 = {
+		death = yes
+	}
+}
+#Heraclians
+145071 = {
+	name = "Herakleios"
+	dna = 70509_herakleios
+	dynasty = dynasty_herakleios
+	religion = "chalcedonian"
+	culture = "greek"
+	father = heraclian_01
+	mother = heraclian_06
+	trait = education_martial_3
+	trait = brave
+	trait = stubborn
+	trait = zealous
+	trait = physique_good_2
+	trait = flexible_leader
+	disallow_random_traits = yes
+	575.1.1 = {
+		birth = yes
+	}
+	601.1.1 = {
+		add_spouse = afroroman_06 # Fabia Eudoxia
+	}
+	613.6.1 = {
+		add_spouse = heraclian_10 # Martina
+	}
+	641.2.11 = {
+		death = yes
+	}
+}
+70509 = {
+	name = "Herakleios_Konstantinos"
+	dynasty = dynasty_herakleios
+	martial = 5
+	diplomacy = 4
+	intrigue = 5
+	stewardship = 4
+	religion = "chalcedonian"
+	culture = "greek"
+	father = 145071
+	mother = afroroman_06
+	trait = education_diplomacy_1
+	trait = content
+	612.5.3 = {
+		birth = yes
+	}
+	629.1.1 = {
+		add_spouse = heraclian_11
+	}
+	641.4.20 = {
+		death = yes
+	}
+}
+145070 = {
+	name = "Konstantinos_Herakleios" # Herakleonas
+	dynasty = dynasty_herakleios
+	religion = "chalcedonian"
+	culture = "greek"
+	father = 145071
+	mother = heraclian_10
+	626.1.1 = {
+		birth = yes
+		give_nickname = nick_herakleonas
+	}
+	641.4.20 = {
+		trait = disfigured
+	}
+	641.12.1 = {
+		death = yes
+	}
+}
+70508 = {
+	name = "Konstas" # Pogonatos
+	dynasty = dynasty_herakleios
+	martial = 3
+	diplomacy = 4
+	intrigue = 5
+	stewardship = 4
+	religion = "chalcedonian"
+	culture = "greek"
+	trait = education_stewardship_2
+	trait = diligent
+	trait = trusting
+	father = 70509
+	mother = heraclian_11
+	630.11.7 = {
+		birth = yes
+	}
+	642.1.1 = {
+		add_spouse = arsacid_66
+	}
+	652.1.1 = {
+		give_nickname = nick_pogonatos
+	}
+	668.7.15 = {
+		death = {
+			death_reason = death_murder
+		}
+	}
+}
+70507 = {
+	name = "Konstantinos"
+	dynasty = dynasty_herakleios
+	martial = 4
+	diplomacy = 5
+	intrigue = 4
+	stewardship = 6
+	religion = "chalcedonian"
+	culture = "greek"
+	trait = education_stewardship_2
+	trait = content
+	trait = diligent
+	father = 70508
+	mother = arsacid_66
+	648.1.1 = {
+		birth = yes
+	}
+	668.1.1 = {
+		add_spouse = heraclian_18
+	}
+	685.9.14 = {
+		death = yes
+	}
+}
+70506 = {
+	name = "Ioustinianos" #Rhinotmetos
+	dynasty = dynasty_herakleios
+	martial = 3
+	diplomacy = 3
+	intrigue = 8
+	stewardship = 3
+	religion = "chalcedonian"
+	culture = "greek"
+	trait = arbitrary
+	trait = education_intrigue_2
+	father = 70507
+	mother = heraclian_18
+	669.1.1 = {
+		birth = yes
+	}
+	690.1.1 = {
+		add_spouse = heraclian_19
+	}
+	695.11.1 = {
+		trait = scarred
+	}
+	705.8.21 = {
+		trait = callous
+	}
+	711.11.24 = {
+		death = yes
+	}
+}
+heraclian_05 = {
+	name = "Niketas" # fictional name
+	dna = 70509_herakleios
+	dynasty = dynasty_herakleios
+	culture = "greek"
+	religion = "chalcedonian"
+	523.1.1 = {
+		birth = yes
+	}
+	575.1.1 = {
+		death = yes
+	}
+}
+heraclian_01 = {
+	name = "Herakleios" # the Elder
+	dynasty = dynasty_herakleios
+	culture = "greek"
+	religion = "chalcedonian"
+	father = heraclian_05 # Niketas
+	trait = education_martial_3
+	555.1.1 = {
+		birth = yes
+	}
+	574.1.1 = {
+		add_spouse = heraclian_06 # Epiphania
+	}
+	575.1.1 = {
+		give_nickname = nick_the_elder 
+	}
+	610.1.1 = {
+		death = yes
+	}
+}
+heraclian_02 = {
+	name = "Gregorios"
+	dynasty = dynasty_herakleios
+	culture = "greek"
+	religion = "chalcedonian"
+	father = heraclian_05 # Niketas
+	556.1.1 = {
+		birth = yes
+	}
+	610.1.1 = {
+		death = yes
+	}
+}
+heraclian_03 = {
+	name = "Niketas"
+	dynasty = dynasty_herakleios
+	culture = "greek"
+	religion = "chalcedonian"
+	father = heraclian_02 # Gregorios
+	571.1.1 = {
+		birth = yes
+	}
+	628.1.1 = {
+		death = yes
+	}
+}
+heraclian_04 = {
+	name = "Gregorios" # the Patrician
+	dynasty = dynasty_herakleios
+	culture = "greek"
+	religion = "chalcedonian"
+	father = heraclian_03 # Niketas
+	596.1.1 = {
+		birth = yes
+	}
+	632.1.1 = {
+		give_nickname = nick_the_patrician
+	}
+	647.1.1 = {
+		death = yes
+	}
+}
+heraclian_06 = {
+	name = "Epiphania"
+	female = yes
+	culture = "greek"
+	religion = "chalcedonian"
+	555.1.1 = {
+		birth = yes
+	}
+	615.1.1 = {
+		death = yes
+	}
+}
+heraclian_07 = {
+	name = "Maria"
+	female = yes
+	dynasty = dynasty_herakleios
+	religion = "chalcedonian"
+	culture = "greek"
+	father = heraclian_01
+	mother = heraclian_06
+	577.1.1 = {
+		birth = yes
+	}
+	632.1.1 = {
+		death = yes
+	}
+}
+heraclian_08 = {
+	name = "Theodoros"
+	dynasty = dynasty_herakleios
+	religion = "chalcedonian"
+	culture = "greek"
+	father = heraclian_01
+	mother = heraclian_06
+	580.1.1 = {
+		birth = yes
+	}
+	613.6.1 = {
+		set_relation_rival = character:heraclian_10 # Martina
+	}
+	636.1.1 = {
+		death = yes
+	}
+}
+heraclian_09 = {
+	name = "Martinos"
+	dynasty = dynasty_martinos
+	religion = "chalcedonian"
+	culture = "greek"
+	575.1.1 = {
+		birth = yes
+	}
+	594.1.1 = {
+		add_spouse = heraclian_07
+	}
+	625.1.1 = {
+		death = yes
+	}
+}
+heraclian_10 = {
+	name = "Martina"
+	female = yes
+	dna = dna_martina
+	dynasty = dynasty_martinos
+	religion = "chalcedonian"
+	culture = "greek"
+	father = heraclian_09
+	mother = heraclian_07
+	595.1.1 = {
+		birth = yes
+	}
+	641.4.20 = {
+		trait = disfigured
+	}
+	645.1.1 = {
+		death = yes
+	}
+}
+heraclian_11 = {
+	name = "Gregoria"
+	female = yes
+	dynasty = dynasty_herakleios
+	culture = "greek"
+	religion = "chalcedonian"
+	father = heraclian_03 # Niketas
+	602.1.1 = {
+		birth = yes
+	}
+	647.1.1 = {
+		death = yes
+	}
+}
+heraclian_12 = {
+	name = "Ioannes_Athalarichos"
+	dynasty = dynasty_herakleios
+	culture = "greek"
+	religion = "chalcedonian"
+	father = 145071
+	trait = deceitful
+	606.1.1 = {
+		birth = yes
+		trait = bastard
+	}
+	632.1.1 = {
+		set_relation_friend = character:heraclian_13
+	}
+	637.1.1 = {
+		trait = disfigured
+	}
+	645.1.1 = {
+		death = yes
+	}
+}
+heraclian_13 = {
+	name = "Theodoros"
+	dynasty = dynasty_herakleios
+	religion = "chalcedonian"
+	culture = "greek"
+	father = heraclian_08
+	604.1.1 = {
+		birth = yes
+	}
+	637.1.1 = {
+		trait = disfigured
+	}
+	643.1.1 = {
+		death = yes
+	}
+}
+heraclian_14 = {
+	name = "Gregorios"
+	dynasty = dynasty_herakleios
+	religion = "chalcedonian"
+	culture = "greek"
+	father = heraclian_08
+	604.1.1 = {
+		birth = yes
+	}
+	637.1.1 = {
+		trait = devoted
+	}
+	655.1.1 = {
+		death = yes
+	}
+}
+heraclian_15 = {
+	name = "Epiphania_Eudokia"
+	female = yes
+	dynasty = dynasty_herakleios
+	religion = "chalcedonian"
+	culture = "greek"
+	father = 145071
+	mother = afroroman_06
+	611.7.7 = {
+		birth = yes
+	}
+	638.1.1 = {
+		death = yes
+	}
+}
+heraclian_16 = {
+	name = "Tiberios"
+	dynasty = dynasty_herakleios
+	religion = "chalcedonian"
+	culture = "greek"
+	father = 70508
+	mother = arsacid_66
+	650.1.1 = {
+		birth = yes
+	}
+	681.11.1 = {
+		trait = disfigured
+		death = yes
+	}
+}
+heraclian_17 = {
+	name = "Herakleios"
+	dynasty = dynasty_herakleios
+	religion = "chalcedonian"
+	culture = "greek"
+	father = 70508
+	mother = arsacid_66
+	651.1.1 = {
+		birth = yes
+	}
+	681.11.1 = {
+		trait = disfigured
+		death = yes
+	}
+}
+heraclian_18 = {
+	name = "Anastasia"
+	female = yes
+	religion = "chalcedonian"
+	culture = "greek"
+	650.1.1 = {
+		birth = yes
+	}
+	717.1.1 = {
+		death = yes
+	}
+}
+heraclian_19 = {
+	name = "Eudokia"
+	female = yes
+	religion = "chalcedonian"
+	culture = "greek"
+	670.1.1 = {
+		birth = yes
+	}
+	700.1.1 = {
+		death = yes
+	}
+}
+heraclian_20 = {
+	name = "Anastasia" fictional name
+	female = yes
+	dynasty = dynasty_herakleios
+	religion = "chalcedonian"
+	culture = "greek"
+	father = 70506
+	mother = heraclian_19
+	691.1.1 = {
+		birth = yes
+	}
+	749.1.1 = {
+		death = yes
+	}
+}
+#Popes
+7605 = {
+	name = "Eleutherius"
+	religion = nicene
+	culture = "greek"
+	trait = diligent
+	trait = calm
+	trait = zealous
+	trait = education_diplomacy_3
+	130.1.1 = {
+		birth = "130.1.1"
+	}
+	174.1.1 = {
+		name = "Eleutherius"
+	# AKA: Hegesippus
+	}
+	189.1.1 = {
+		death = "189.1.1"
+	}
+}
+
+7606 = {
+	name = "Soterius"
+	religion = nicene
+	culture = "greek"
+	120.1.1 = {
+		birth = "120.1.1"
+	}
+	174.1.1 = {
+		death = "174.1.1"
+	}
+}
+
+7607 = {
+	name = "Anicetus"
+	martial = 6
+	diplomacy = 7
+	intrigue = 8
+	stewardship = 8
+	religion = nicene
+	culture = "greek"
+	trait = diligent
+	trait = calm
+	trait = zealous
+	trait = education_diplomacy_3
+	110.1.1 = {
+		birth = "110.1.1"
+	}
+	154.1.1 = {
+		name = "Anicetus"
+	# AKA: Polycarp
+	}
+	167.4.20 = {
+		death = "167.4.20"
+	}
+}
+
+7608 = {
+	name = "Pius"
+	martial = 6
+	diplomacy = 7
+	intrigue = 8
+	stewardship = 8
+	religion = nicene
+	culture = "greek"
+	trait = diligent
+	trait = calm
+	trait = zealous
+	trait = education_diplomacy_3
+	100.1.1 = {
+		birth = "100.1.1"
+	}
+	140.1.1 = {
+		name = "Pius"
+	# AKA: Hermas
+	}
+	154.1.1 = {
+		death = "154.1.1"
+	}
+}
+
+7609 = {
+	name = "Hyginus"
+	martial = 6
+	diplomacy = 7
+	intrigue = 8
+	stewardship = 8
+	religion = nicene
+	culture = "greek"
+	trait = diligent
+	trait = calm
+	trait = zealous
+	trait = education_diplomacy_3
+	90.1.1 = {
+		birth = "90.1.1"
+	}
+	137.1.1 = {
+		name = "Hyginus"
+	# AKA: Irenaeus
+	}
+	140.1.1 = {
+		death = "140.1.1"
+	}
+}
+
+7610 = {
+	name = "Telesphorus"
+	martial = 6
+	diplomacy = 7
+	intrigue = 8
+	stewardship = 8
+	religion = nicene
+	culture = "greek"
+	trait = diligent
+	trait = calm
+	trait = zealous
+	trait = education_diplomacy_3
+	trait = apotheosised_trait
+	90.1.1 = {
+		birth = "90.1.1"
+	}
+	125.1.1 = {
+		name = "Telesphorus"
+	# AKA: Antonius
+	}
+	137.1.1 = {
+		death = "137.1.1"
+	}
+}
+
+7611 = {
+	name = "Xystus"
+	martial = 6
+	diplomacy = 7
+	intrigue = 8
+	stewardship = 8
+	religion = nicene
+	culture = "greek"
+	trait = diligent
+	trait = calm
+	trait = zealous
+	trait = education_diplomacy_3
+	42.1.1 = {
+		birth = "42.1.1"
+	}
+	115.1.1 = {
+		name = "Sixtus"
+	# AKA: Xystus
+	}
+	125.1.1 = {
+		death = "125.1.1"
+	}
+}
+
+7612 = {
+	name = "Alexander"
+	martial = 6
+	diplomacy = 7
+	intrigue = 8
+	stewardship = 8
+	religion = nicene
+	culture = "greek"
+	trait = diligent
+	trait = calm
+	trait = zealous
+	trait = education_diplomacy_3
+	40.1.1 = {
+		birth = "40.1.1"
+	}
+	107.1.1 = {
+		name = "Alexander"
+	# AKA: Hadrian
+	}
+	115.1.1 = {
+		death = "115.1.1"
+	}
+}
+
+7613 = {
+	name = "Evaristus"
+	martial = 6
+	diplomacy = 7
+	intrigue = 8
+	stewardship = 8
+	religion = nicene
+	culture = "greek"
+	trait = diligent
+	trait = calm
+	trait = zealous
+	trait = education_diplomacy_3
+	5.1.1 = {
+		birth = "5.1.1"
+	}
+	99.1.1 = {
+		name = "Evaristus"
+	# AKA: Yeshua
+	}
+	107.1.1 = {
+		death = "107.1.1"
+	}
+}
+
+7614 = {
+	name = "Clemens"
+	martial = 6
+	diplomacy = 7
+	intrigue = 8
+	stewardship = 8
+	religion = nicene
+	culture = "greek"
+	trait = diligent
+	trait = calm
+	trait = zealous
+	trait = education_diplomacy_3
+	20.1.1 = {
+		birth = "20.1.1"
+	}
+	92.1.1 = {
+		name = "Clemens"
+	# AKA: Tertullian
+	}
+	99.1.1 = {
+		death = "99.1.1"
+	}
+}
+
+7615 = {
+	name = "Anacletus"
+	martial = 6
+	diplomacy = 7
+	intrigue = 8
+	stewardship = 8
+	religion = nicene
+	culture = "greek"
+	trait = diligent
+	trait = calm
+	trait = zealous
+	trait = education_diplomacy_3
+	20.1.1 = {
+		birth = "20.1.1"
+	}
+	79.1.1 = {
+		name = "Anacletus"
+	# AKA: Cletus
+	}
+	92.1.1 = {
+		death = "92.1.1"
+	}
+}
+7786 = {
+	name = "Marcus"
+	religion = nicene
+	culture = "greek"
+	trait = diligent
+	trait = calm
+	trait = zealous
+	trait = education_diplomacy_3
+	250.1.1 = {
+		birth = "250.1.1"
+	}
+	309.1.16 = {
+		name = "Eusebius"
+	# AKA: Marcus
+	}
+	310.8.17 = {
+		death = "310.8.17"
+	}
+}
+
+7793 = {
+	name = "Gaius"
+	religion = nicene
+	culture = "greek"
+	trait = diligent
+	trait = calm
+	trait = zealous
+	trait = education_diplomacy_3
+	210.1.1 = {
+		birth = "210.1.1"
+	}
+	258.8.6 = {
+		name = "Dionysius"
+	# AKA: Gaius
+	}
+	268.12.26 = {
+		death = "268.12.26"
+	}
+}
+
+7794 = {
+	name = "Gaius"
+	religion = nicene
+	culture = "greek"
+	trait = diligent
+	trait = calm
+	trait = zealous
+	trait = education_diplomacy_3
+	210.1.1 = {
+		birth = "210.1.1"
+	}
+	257.8.2 = {
+		name = "Sixtus"
+	# AKA: Gaius
+	}
+	258.8.6 = {
+		death = "258.8.6"
+	}
+}
+
+7799 = {
+	name = "Hippolytus"
+	religion = nicene
+	culture = "greek"
+	trait = diligent
+	trait = calm
+	trait = zealous
+	trait = education_diplomacy_3
+	170.1.1 = {
+		birth = "170.1.1"
+	}
+	235.9.29 = {
+		name = "Anterus"
+	# AKA: Hippolytus
+	}
+	236.1.3 = {
+		death = "236.1.3"
+	}
+}
+
+145291 = {
+	name = "Linus"
+	religion = nicene
+	culture = "greek"
+	trait = diligent
+	trait = calm
+	trait = zealous
+	trait = education_diplomacy_3
+	10.1.1 = {
+		birth = "10.1.1"
+	}
+	64.10.13 = {
+		name = "Linus"
+	# AKA: Linos
+	}
+	79.1.1 = {
+		death = "79.1.1"
+	}
+}
+
+145292 = {
+	name = "Petrus"
+	religion = nicene
+	culture = "greek"
+	trait = diligent
+	trait = calm
+	trait = zealous
+	trait = education_learning_4
+	3.1.1 = {
+		birth = yes
+	}
+	30.1.1 = {
+		name = "Petrus"
+	}
+	64.10.13 = {
+		trait = saint
+		death = yes
+	}
+}
+#Ecumenical Patriarchs
+
+70599 = {
+	name = "Andrew"
+	# AKA: Andreas 'the Apostle'
+	dynasty = 8661
+	martial = 3
+	diplomacy = 9
+	intrigue = 9
+	stewardship = 9
+	religion = nicene
+	culture = greek
+	trait = trusting
+	trait = brave
+	trait = education_learning_4
+	
+	8.1.1 = {
+		birth = yes
+		give_nickname = nick_the_apostle
+	}
+	65.1.1 = {
+		death = yes
+	}
+}
+
+145086 = {
+	name = "Probos"
+	dynasty = 8647
+	religion = nicene
+	culture = "greek"
+	trait = celibate
+	trait = education_learning_2
+	240.1.1 = {
+		birth = "240.1.1"
+	}
+	306.1.1 = {
+		death = "306.1.1"
+	}
+}
+
+145087 = {
+	name = "Rufinos"
+	dynasty = 8647
+	religion = nicene
+	culture = "greek"
+	trait = celibate
+	trait = education_learning_2
+	230.1.1 = {
+		birth = "230.1.1"
+	}
+	293.1.1 = {
+		death = "293.1.1"
+	}
+}
+
+145088 = {
+	name = "Dometios"
+	dynasty = 8647
+	religion = nicene
+	culture = "greek"
+	trait = celibate
+	trait = education_learning_2
+	220.1.1 = {
+		birth = "220.1.1"
+	}
+	284.1.1 = {
+		death = "284.1.1"
+	}
+}
+
+145089 = {
+	name = "Titos"
+	dynasty = 8647
+	religion = nicene
+	culture = "greek"
+	trait = celibate
+	trait = education_learning_2
+	210.1.1 = {
+		birth = "210.1.1"
+	}
+	272.1.1 = {
+		death = "272.1.1"
+	}
+}
+
+145090 = {
+	name = "Kastinos"
+	dynasty = 8647
+	religion = nicene
+	culture = "greek"
+	trait = celibate
+	trait = education_learning_2
+	180.1.1 = {
+		birth = "180.1.1"
+	}
+	237.1.1 = {
+		death = "237.1.1"
+	}
+}
+
+145091 = {
+	name = "Philadelphos"
+	dynasty = 8647
+	religion = nicene
+	culture = "greek"
+	trait = celibate
+	trait = education_learning_2
+	160.1.1 = {
+		birth = "160.1.1"
+	}
+	214.1.1 = {
+		death = "214.1.1"
+	}
+}
+
+145092 = {
+	name = "Olympianos"
+	dynasty = 8647
+	religion = nicene
+	culture = "greek"
+	trait = celibate
+	trait = education_learning_2
+	140.1.1 = {
+		birth = "140.1.1"
+	}
+	198.1.1 = {
+		death = "198.1.1"
+	}
+}
+
+145093 = {
+	name = "Pertinax"
+	dynasty = 8647
+	religion = nicene
+	culture = "greek"
+	trait = celibate
+	trait = education_learning_2
+	130.1.1 = {
+		birth = "130.1.1"
+	}
+	187.1.1 = {
+		death = "187.1.1"
+	}
+}
+
+145094 = {
+	name = "Alypios"
+	dynasty = 8647
+	religion = nicene
+	culture = "greek"
+	trait = celibate
+	trait = education_learning_2
+	110.1.1 = {
+		birth = "110.1.1"
+	}
+	169.1.1 = {
+		death = "169.1.1"
+	}
+}
+
+145095 = {
+	name = "Lavrentios"
+	dynasty = 8647
+	religion = nicene
+	culture = "greek"
+	trait = celibate
+	trait = education_learning_2
+	100.1.1 = {
+		birth = "100.1.1"
+	}
+	166.1.1 = {
+		death = "166.1.1"
+	}
+}
+
+145096 = {
+	name = "Euzoios"
+	dynasty = 8647
+	religion = nicene
+	culture = "greek"
+	trait = celibate
+	trait = education_learning_2
+	90.1.1 = {
+		birth = "90.1.1"
+	}
+	154.1.1 = {
+		death = "154.1.1"
+	}
+}
+
+145097 = {
+	name = "Polykarpos"
+	dynasty = 8647
+	religion = nicene
+	culture = "greek"
+	trait = celibate
+	trait = education_learning_2
+	80.1.1 = {
+		birth = "80.1.1"
+	}
+	144.1.1 = {
+		death = "144.1.1"
+	}
+}
+
+145098 = {
+	name = "Felix"
+	dynasty = 8647
+	religion = nicene
+	culture = "greek"
+	trait = celibate
+	trait = education_learning_2
+	80.1.1 = {
+		birth = "80.1.1"
+	}
+	141.1.1 = {
+		death = "141.1.1"
+	}
+}
+
+145099 = {
+	name = "Diogenis"
+	dynasty = 8647
+	religion = nicene
+	culture = "greek"
+	trait = celibate
+	trait = education_learning_2
+	70.1.1 = {
+		birth = "70.1.1"
+	}
+	129.1.1 = {
+		death = "129.1.1"
+	}
+}
+
+145100 = {
+	name = "Sedekion"
+	dynasty = 8647
+	religion = nicene
+	culture = "greek"
+	trait = celibate
+	trait = education_learning_2
+	60.1.1 = {
+		birth = "60.1.1"
+	}
+	114.1.1 = {
+		death = "114.1.1"
+	}
+}
+
+145101 = {
+	name = "Plutarchos"
+	dynasty = 8647
+	religion = nicene
+	culture = "greek"
+	trait = celibate
+	trait = education_learning_2
+	50.1.1 = {
+		birth = "50.1.1"
+	}
+	105.1.1 = {
+		death = "105.1.1"
+	}
+}
+
+145102 = {
+	name = "Polykarpos"
+	dynasty = 8647
+	religion = nicene
+	culture = "greek"
+	trait = celibate
+	trait = education_learning_2
+	30.1.1 = {
+		birth = "30.1.1"
+	}
+	89.1.1 = {
+		death = "89.1.1"
+	}
+}
+
+145103 = {
+	name = "Onesimos"
+	dynasty = 8647
+	religion = nicene
+	culture = "greek"
+	trait = celibate
+	trait = education_learning_2
+	10.1.1 = {
+		birth = "10.1.1"
+	}
+	68.1.1 = {
+		death = "68.1.1"
+	}
+}
+
+145104 = {
+	name = "Stachys"
+	dynasty = 8647
+	religion = nicene
+	culture = "greek"
+	trait = celibate
+	trait = education_learning_3
+	2.1.1 = {
+		birth = "2.1.1"
+	}
+	54.1.1 = {
+		death = "54.1.1"
+	}
+}
+
+
+70558 = {
+	name = "Nikephoros"
+	dynasty = 8649
+	martial = 3
+	diplomacy = 8
+	intrigue = 5
+	stewardship = 4
+	religion = chalcedonian
+	culture = "greek"
+	trait = celibate
+	trait = paranoid
+	trait = education_learning_3
+	
+	758.1.1 = {
+		birth = "758.1.1"
+	}
+	828.4.15 = {
+		death = "828.4.15"
+	}
+}
+
+70559 = {
+	name = "Pavlos"
+	# AKA: Paulos 'Neos'
+	dynasty = 8649
+	martial = 3
+	diplomacy = 8
+	intrigue = 4
+	stewardship = 4
+	religion = "iconoclast"
+	culture = "greek"
+	trait = just
+	trait = ill
+	trait = education_learning_1
+	
+	725.1.1 = {
+		birth = "725.1.1"
+	}
+	786.1.1 = {
+		death = "786.1.1"
+	}
+}
+
+70560 = {
+	name = "Niketas"
+	dynasty = 8649
+	martial = 3
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 5
+	religion = "iconoclast"
+	culture = "greek"
+	trait = education_learning_1
+	
+	720.1.1 = {
+		birth = "720.1.1"
+	}
+	780.2.7 = {
+		death = "780.2.7"
+	}
+}
+
+70561 = {
+	name = "Konstantinos"
+	dynasty = 8649
+	martial = 3
+	diplomacy = 4
+	intrigue = 4
+	stewardship = 4
+	religion = chalcedonian
+	culture = "greek"
+	trait = deceitful
+	trait = education_learning_1
+	
+	710.1.1 = {
+		birth = "710.1.1"
+	}
+	767.10.1 = {
+		death = "767.10.1"
+	}
+}
+
+70562 = {
+	name = "Anastasios"
+	dynasty = 8649
+	martial = 3
+	diplomacy = 5
+	intrigue = 7
+	stewardship = 6
+	religion = "iconoclast"
+	culture = "greek"
+	trait = disfigured
+	trait = deceitful
+	trait = education_learning_3
+	
+	695.1.1 = {
+		birth = "695.1.1"
+	}
+	754.1.1 = {
+		death = "754.1.1"
+	}
+}
+
+70563 = {
+	name = "Germanos"
+	dynasty = 8649
+	martial = 3
+	diplomacy = 5
+	intrigue = 4
+	stewardship = 4
+	religion = chalcedonian
+	culture = "greek"
+	trait = gregarious
+	trait = zealous
+	trait = education_learning_1
+	
+	678.1.1 = {
+		birth = "678.1.1"
+	}
+	740.1.1 = {
+		death = "740.1.1"
+	}
+}
+
+70564 = {
+	name = "Ioannes"
+	dynasty = 8649
+	martial = 4
+	diplomacy = 4
+	intrigue = 4
+	stewardship = 5
+	religion = chalcedonian
+	culture = "greek"
+	trait = content
+	trait = education_learning_1
+	
+	673.1.1 = {
+		birth = "673.1.1"
+	}
+	731.1.1 = {
+		death = "731.1.1"
+	}
+}
+
+70565 = {
+	name = "Kyros"
+	dynasty = 8649
+	martial = 4
+	diplomacy = 6
+	intrigue = 5
+	stewardship = 4
+	religion = chalcedonian
+	culture = "greek"
+	trait = celibate
+	trait = education_learning_1
+	
+	666.1.1 = {
+		birth = "666.1.1"
+	}
+	720.1.1 = {
+		death = "720.1.1"
+	}
+}
+
+70566 = {
+	name = "Kallinikos"
+	dynasty = 8649
+	martial = 4
+	diplomacy = 3
+	intrigue = 6
+	stewardship = 5
+	religion = chalcedonian
+	culture = "greek"
+	trait = ambitious
+	trait = disfigured
+	trait = education_learning_1
+	
+	655.1.1 = {
+		birth = "655.1.1"
+	}
+	712.1.1 = {
+		death = "712.1.1"
+	}
+}
+
+70567 = {
+	name = "Pavlos"
+	dynasty = 8649
+	martial = 4
+	diplomacy = 4
+	intrigue = 4
+	stewardship = 4
+	religion = chalcedonian
+	culture = "greek"
+	trait = diligent
+	trait = education_learning_1
+	
+	642.1.1 = {
+		birth = "642.1.1"
+	}
+	693.1.1 = {
+		death = "693.1.1"
+	}
+}
+
+70568 = {
+	name = "Georgios"
+	dynasty = 8649
+	martial = 3
+	diplomacy = 3
+	intrigue = 3
+	stewardship = 3
+	religion = chalcedonian
+	culture = "greek"
+	trait = just
+	trait = celibate
+	trait = education_learning_1
+	635.1.1 = {
+		birth = "635.1.1"
+	}
+	687.1.1 = {
+		death = "687.1.1"
+	}
+}
+
+70569 = {
+	name = "Theodoros"
+	dynasty = 8649
+	martial = 3
+	diplomacy = 4
+	intrigue = 5
+	stewardship = 4
+	religion = chalcedonian
+	culture = "greek"
+	trait = cynical
+	trait = celibate
+	trait = education_learning_1
+	634.1.1 = {
+		birth = "634.1.1"
+	}
+	687.12.28 = {
+		death = "687.12.28"
+	}
+}
+
+70570 = {
+	name = "Konstantinos"
+	dynasty = 8649
+	martial = 4
+	diplomacy = 5
+	intrigue = 4
+	stewardship = 5
+	religion = chalcedonian
+	culture = "greek"
+	trait = scholar
+	trait = just
+	trait = education_learning_1
+	
+	630.1.1 = {
+		birth = "630.1.1"
+	}
+	677.1.1 = {
+		death = "677.1.1"
+	}
+}
+
+70571 = {
+	name = "Ioannes"
+	dynasty = 8649
+	martial = 3
+	diplomacy = 4
+	intrigue = 5
+	stewardship = 6
+	religion = chalcedonian
+	culture = "greek"
+	trait = chaste
+	trait = diligent
+	trait = education_learning_1
+	
+	623.1.1 = {
+		birth = "623.1.1"
+	}
+	675.1.1 = {
+		death = "675.1.1"
+	}
+}
+
+70572 = {
+	name = "Thomas"
+	dynasty = 8649
+	martial = 4
+	diplomacy = 3
+	intrigue = 6
+	stewardship = 5
+	religion = chalcedonian
+	culture = "greek"
+	trait = arrogant
+	trait = just
+	trait = education_learning_1
+	
+	619.1.1 = {
+		birth = "619.1.1"
+	}
+	669.1.1 = {
+		death = "669.1.1"
+	}
+}
+
+70573 = {
+	name = "Petros"
+	dynasty = 8649
+	martial = 3
+	diplomacy = 4
+	intrigue = 5
+	stewardship = 6
+	religion = chalcedonian
+	culture = "greek"
+	trait = scholar
+	trait = ambitious
+	trait = education_learning_1
+	
+	610.1.1 = {
+		birth = "610.1.1"
+	}
+	666.1.1 = {
+		death = "666.1.1"
+	}
+}
+
+70574 = {
+	name = "Pavlos"
+	dynasty = 8649
+	martial = 4
+	diplomacy = 6
+	intrigue = 7
+	stewardship = 5
+	religion = chalcedonian
+	culture = "greek"
+	trait = trusting
+	trait = honest
+	trait = education_learning_3
+	
+	598.1.1 = {
+		birth = "598.1.1"
+	}
+	654.1.9 = {
+		death = "654.1.9"
+	}
+}
+
+70575 = {
+	name = "Sergios"
+	dynasty = 8649
+	martial = 6
+	diplomacy = 7
+	intrigue = 5
+	stewardship = 6
+	religion = chalcedonian
+	culture = "greek"
+	trait = diligent
+	trait = education_learning_2
+	
+	575.1.1 = {
+		birth = "575.1.1"
+	}
+	638.12.9 = {
+		death = "638.12.9"
+	}
+}
+
+70576 = {
+	name = "Thomas"
+	dynasty = 8649
+	martial = 3
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 5
+	religion = chalcedonian
+	culture = "greek"
+	trait = just
+	trait = education_learning_3
+	
+	551.1.1 = {
+		birth = "551.1.1"
+	}
+	610.1.1 = {
+		death = "610.1.1"
+	}
+}
+
+70577 = {
+	name = "Kyriakos"
+	dynasty = 8649
+	martial = 3
+	diplomacy = 5
+	intrigue = 8
+	stewardship = 6
+	religion = chalcedonian
+	culture = "greek"
+	trait = cynical
+	trait = ambitious
+	trait = education_learning_3
+	
+	552.1.1 = {
+		birth = "552.1.1"
+	}
+	606.1.1 = {
+		death = "606.1.1"
+	}
+}
+
+70578 = {
+	name = "Ioannes"
+	dynasty = 8656
+	martial = 3
+	diplomacy = 3
+	intrigue = 8
+	stewardship = 4
+	religion = chalcedonian
+	culture = "greek"
+	trait = lazy
+	trait = generous
+	trait = education_learning_1
+	
+	538.1.1 = {
+		birth = "538.1.1"
+	}
+	595.9.2 = {
+		death = "595.9.2"
+	}
+}
+
+70579 = {
+	name = "Ioannes"
+	dynasty = 8657
+	martial = 4
+	diplomacy = 8
+	intrigue = 6
+	stewardship = 4
+	religion = chalcedonian
+	culture = "greek"
+	trait = just
+	trait = trusting
+	trait = education_learning_1
+	
+	514.1.1 = {
+		birth = "514.1.1"
+	}
+	577.8.31 = {
+		death = "577.8.31"
+	}
+}
+
+70580 = {
+	name = "Eutychios"
+	dynasty = 8649
+	martial = 3
+	diplomacy = 5
+	intrigue = 8
+	stewardship = 7
+	religion = chalcedonian
+	culture = "greek"
+	trait = zealous
+	trait = diligent
+	trait = education_learning_3
+	
+	512.1.1 = {
+		birth = "512.1.1"
+	}
+	582.4.11 = {
+		death = "582.4.11"
+	}
+}
+
+70581 = {
+	name = "Anthimos"
+	dynasty = 8649
+	martial = 3
+	diplomacy = 4
+	intrigue = 4
+	stewardship = 4
+	religion = "coptic"
+	culture = "greek"
+	trait = scholar
+	trait = deceitful
+	trait = education_learning_1
+	
+	496.1.1 = {
+		birth = "496.1.1"
+	}
+	548.1.1 = {
+		death = "548.1.1"
+	}
+}
+
+70582 = {
+	name = "Ioannes"
+	dynasty = 101306
+	martial = 4
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 5
+	religion = chalcedonian
+	culture = "greek"
+	trait = trusting
+	trait = gregarious
+	trait = education_learning_1
+	
+	473.1.1 = {
+		birth = "473.1.1"
+	}
+	520.1.19 = {
+		death = "520.1.19"
+	}
+}
+
+70583 = {
+	name = "Timotheos"
+	dynasty = 8649
+	martial = 4
+	diplomacy = 6
+	intrigue = 5
+	stewardship = 6
+	religion = chalcedonian
+	culture = "greek"
+	trait = deceitful
+	trait = arbitrary
+	trait = education_learning_3
+	
+	470.1.1 = {
+		birth = "470.1.1"
+	}
+	518.4.5 = {
+		death = "518.4.5"
+	}
+}
+
+70584 = {
+	name = "Akakios"
+	dynasty = 8649
+	martial = 4
+	diplomacy = 3
+	intrigue = 6
+	stewardship = 5
+	religion = nicene
+	culture = "greek"
+	trait = arbitrary
+	trait = paranoid
+	trait = education_learning_3
+	
+	427.1.1 = {
+		birth = "427.1.1"
+	}	
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	489.1.1 = {
+		death = "489.1.1"
+	}
+}
+
+70585 = {
+	name = "Gennadios"
+	dynasty = 8649
+	martial = 4
+	diplomacy = 7
+	intrigue = 5
+	stewardship = 7
+	religion = nicene
+	culture = "greek"
+	trait = just
+	trait = education_learning_4
+	
+	411.1.1 = {
+		birth = "411.1.1"
+	}
+		
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	472.1.1 = {
+		death = "472.1.1"
+	}
+}
+
+70586 = {
+	name = "Anatolios"
+	dynasty = 8649
+	martial = 3
+	diplomacy = 8
+	intrigue = 4
+	stewardship = 6
+	religion = nicene
+	culture = "greek"
+	trait = scholar
+	trait = education_learning_1
+	
+	405.1.1 = {
+		birth = "405.1.1"
+	}	
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	458.7.3 = {
+		death = "458.7.3"
+	}
+}
+
+70588 = {
+	name = "Nektarios"
+	dynasty = 8649
+	martial = 3
+	diplomacy = 7
+	intrigue = 5
+	stewardship = 6
+	religion = nicene
+	culture = "greek"
+	trait = scholar
+	trait = just
+	trait = education_learning_1
+	
+	335.1.1 = {
+		birth = "335.1.1"
+	}
+	398.1.1 = {
+		death = "398.1.1"
+	}
+}
+
+70589 = {
+	name = "Gregorios"
+	# AKA: Gregorios 'Theologos'
+	dynasty = 8659
+	martial = 3
+	diplomacy = 8
+	intrigue = 6
+	stewardship = 7
+	religion = nicene
+	culture = "greek"
+	trait = education_learning_4
+	
+	329.1.1 = {
+		birth = "329.1.1"
+	}
+	389.1.25 = {
+		death = "389.1.25"
+	}
+}
+
+70590 = {
+	name = "Maximos"
+	# AKA: Maximos 'Kynikos'
+	dynasty = 8649
+	martial = 3
+	diplomacy = 4
+	intrigue = 6
+	stewardship = 3
+	religion = nicene
+	culture = "greek"
+	trait = ambitious
+	trait = cynical
+	trait = education_learning_1
+	
+	330.1.1 = {
+		birth = "330.1.1"
+	}
+	395.1.1 = {
+		death = "395.1.1"
+	}
+}
+
+70591 = {
+	name = "Eusebios"
+	dynasty = 8660
+	martial = 4
+	diplomacy = 3
+	intrigue = 6
+	stewardship = 5
+	religion = nicene
+	culture = "greek"
+	trait = ambitious
+	trait = education_learning_1
+	
+	285.1.1 = {
+		birth = "285.1.1"
+	}
+	341.1.1 = {
+		death = "341.1.1"
+	}
+}
+
+70592 = {
+	name = "Pavlos"
+	dynasty = 8649
+	martial = 3
+	diplomacy = 6
+	intrigue = 7
+	stewardship = 5
+	religion = nicene
+	culture = "greek"
+	trait = trusting
+	trait = ambitious
+	trait = education_learning_1
+	
+	290.1.1 = {
+		birth = "290.1.1"
+	}
+	351.1.1 = {
+		death = "351.1.1"
+	}
+}
+
+70593 = {
+	name = "Alexandros"
+	dynasty = 8647
+	martial = 3
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 4
+	religion = nicene
+	culture = "greek"
+	trait = gregarious
+	trait = content
+	trait = education_learning_1
+	
+	237.1.1 = {
+		birth = "237.1.1"
+	}
+	337.1.1 = {
+		death = "337.1.1"
+	}
+}
+
+70594 = {
+	name = "Eugenios"
+	dynasty = 8647
+	martial = 3
+	diplomacy = 4
+	intrigue = 4
+	stewardship = 5
+	religion = nicene
+	culture = "greek"
+	trait = honest
+	trait = education_learning_1
+	
+	187.1.1 = {
+		birth = "187.1.1"
+	}
+	242.1.1 = {
+		death = "242.1.1"
+	}
+}
+
+70595 = {
+	name = "Kyriakos"
+	dynasty = 8647
+	martial = 4
+	diplomacy = 3
+	intrigue = 6
+	stewardship = 5
+	religion = nicene
+	culture = "greek"
+	trait = honest
+	trait = education_learning_1
+	171.1.1 = {
+		birth = "171.1.1"
+	}
+	230.1.1 = {
+		death = "230.1.1"
+	}
+}
+
+70596 = {
+	name = "Markos"
+	dynasty = 8647
+	martial = 4
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 5
+	religion = nicene
+	culture = "greek"
+	trait = generous
+	trait = scholar
+	trait = education_learning_1
+	
+	145.1.1 = {
+		birth = "145.1.1"
+	}
+	211.1.1 = {
+		death = "211.1.1"
+	}
+}
+
+70597 = {
+	name = "Athenodoros"
+	# AKA: Athenodoros
+	dynasty = 8647
+	martial = 3
+	diplomacy = 6
+	intrigue = 4
+	stewardship = 9
+	religion = nicene
+	culture = "greek"
+	trait = scholar
+	trait = diligent
+	trait = education_learning_1
+	
+	89.1.1 = {
+		birth = "89.1.1"
+	}
+	148.1.1 = {
+		death = "148.1.1"
+	}
+}
+
+70598 = {
+	name = "Eleutherios"
+	dynasty = 8647
+	martial = 4
+	diplomacy = 3
+	intrigue = 6
+	stewardship = 5
+	religion = nicene
+	culture = "greek"
+	trait = temperate
+	trait = celibate
+	trait = education_learning_1
+	
+	75.1.1 = {
+		birth = "75.1.1"
+	}
+	136.1.1 = {
+		death = "136.1.1"
+	}
+}
+
+
+
+#greek Greek Governors
+#Vicars of Asiae
+asiae_01 = {
+	name = "Tertulianus"
+	culture = greek
+	religion = nicene
+	299.1.1 = {
+		birth = yes
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+asiae_02 = {
+	name = "Veronicianus"
+	culture = greek
+	religion = nicene
+	297.1.1 = {
+		birth = yes
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+asiae_03 = {
+	name = "Scylacius"
+	culture = greek
+	religion = nicene
+	302.1.1 = {
+		birth = yes
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+asiae_04 = {
+	name = "Anatolius"
+	culture = greek
+	religion = nicene
+	333.1.1 = {
+		birth = yes
+	}
+	408.1.1 = {
+		death = yes
+	}
+}
+asiae_05 = {
+	name = "Araxius"
+	culture = greek
+	religion = nicene
+	310.1.1 = {
+		birth = yes
+	}
+	386.1.1 = {
+		death = yes
+	}
+}
+asiae_06 = {
+	name = "Germanus"
+	culture = greek
+	religion = nicene
+	323.1.1 = {
+		birth = yes
+	}
+	386.1.1 = {
+		death = yes
+	}
+}
+asiae_07 = {
+	name = "Italicianus"
+	culture = greek
+	religion = nicene
+	323.1.1 = {
+		birth = yes
+	}
+	386.1.1 = {
+		death = yes
+	}
+}
+asiae_08 = {
+	name = "Caesarius"
+	culture = greek
+	religion = nicene
+	331.1.1 = {
+		birth = yes
+	}
+	386.1.1 = {
+		death = yes
+	}
+}
+asiae_09 = {
+	name = "Clearchus"
+	culture = greek
+	religion = hellenic_pagan
+	349.1.1 = {
+		birth = yes
+	}
+	402.1.1 = {
+		death = yes
+	}
+}
+asiae_10 = {
+	name = "Auxionus"
+	culture = greek
+	religion = nicene
+	345.1.1 = {
+		birth = yes
+	}
+	402.1.1 = {
+		death = yes
+	}
+}
+asiae_11 = {
+	name = "Musionus"
+	culture = greek
+	religion = nicene
+	341.1.1 = {
+		birth = yes
+	}
+	402.1.1 = {
+		death = yes
+	}
+}
+asiae_12 = {
+	name = "Zosimianus"
+	culture = greek
+	religion = "nicene"
+	400.1.1 = {
+		birth = yes
+	}	
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	478.1.1 = {
+		death = yes
+	}
+}
+asiae_13 = {
+	name = "Theodosius"
+	culture = greek
+	religion = "chalcedonian"
+	499.1.1 = {
+		birth = yes
+	}
+	561.1.1 = {
+		death = yes
+	}
+}
+asiae_14 = {
+	name = "Andreas"
+	culture = greek
+	religion = "chalcedonian"
+	581.1.1 = {
+		birth = yes
+	}
+	657.1.1 = {
+		death = yes
+	}
+}
+asiae_15 = {
+	name = "Nonnius"
+	culture = greek
+	religion = "iconoclast"
+	723.1.1 = {
+		birth = yes
+	}
+	776.1.1 = {
+		death = yes
+	}
+}
+
+#Cilicia
+cilica_01 = {
+	name = "Theodosius"
+	culture = greek
+	religion = hellenic_pagan
+	308.1.1 = {
+		birth = yes
+	}
+	389.1.1 = {
+		death = yes
+	}
+}
+cilica_02 = {
+	name = "Honorius"
+	culture = greek
+	religion = nicene
+	357.1.1 = {
+		birth = yes
+	}
+	412.1.1 = {
+		death = yes
+	}
+}
+cilica_03 = {
+	name = "Isidorius"
+	culture = greek
+	religion = "nicene"
+	423.1.1 = {
+		birth = yes
+	}	
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	498.1.1 = {
+		death = yes
+	}
+}
+cilica_04 = {
+	name = "Petros"
+	culture = greek
+	religion = "chalcedonian"
+	501.1.1 = {
+		birth = yes
+	}
+	567.1.1 = {
+		death = yes
+	}
+}
+cilica_05 = {
+	name = "Leontius"
+	culture = greek
+	religion = "chalcedonian"
+	608.1.1 = {
+		birth = yes
+	}
+	678.1.1 = {
+		death = yes
+	}
+}
+cilica_06 = {
+	name = "Heraclius"
+	culture = greek
+	religion = nicene
+	323.1.1 = {
+		birth = yes
+	}
+	389.1.1 = {
+		death = yes
+	}
+}
+cilica_07 = {
+	name = "Xenares"
+	culture = greek
+	religion = nicene
+	348.1.1 = {
+		birth = yes
+	}
+	412.1.1 = {
+		death = yes
+	}
+}
+cilica_08 = {
+	name = "Dion"
+	culture = greek
+	religion = "nicene"
+	414.1.1 = {
+		birth = yes
+	}	
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	498.1.1 = {
+		death = yes
+	}
+}
+cilica_09 = {
+	name = "Asterius"
+	culture = greek
+	religion = "chalcedonian"
+	499.1.1 = {
+		birth = yes
+	}
+	567.1.1 = {
+		death = yes
+	}
+}
+cilica_10 = {
+	name = "Dorotheos"
+	culture = greek
+	religion = "chalcedonian"
+	601.1.1 = {
+		birth = yes
+	}
+	678.1.1 = {
+		death = yes
+	}
+}
+cilica_11 = {
+	name = "Bardenes"
+	culture = greek
+	religion = hellenic_pagan
+	301.1.1 = {
+		birth = yes
+	}
+	389.1.1 = {
+		death = yes
+	}
+}
+cilica_12 = {
+	name = "Marcinus"
+	culture = greek
+	religion = nicene
+	354.1.1 = {
+		birth = yes
+	}
+	412.1.1 = {
+		death = yes
+	}
+}
+cilica_13 = {
+	name = "Anatolicus"
+	culture = greek
+	religion = "chalcedonian"
+	458.1.1 = {
+		birth = yes
+	}
+	498.1.1 = {
+		death = yes
+	}
+}
+cilica_14 = {
+	name = "Olympiodorus"
+	culture = greek
+	religion = "chalcedonian"
+	487.1.1 = {
+		birth = yes
+	}
+	567.1.1 = {
+		death = yes
+	}
+}
+cilica_15 = {
+	name = "Xanthippus"
+	culture = greek
+	religion = "chalcedonian"
+	609.1.1 = {
+		birth = yes
+	}
+	678.1.1 = {
+		death = yes
+	}
+}
+145860 = {
+	name = "Bardanes"
+	dynasty = 1022310
+	religion = "iconoclast"
+	culture = "greek"
+	trait = education_martial_3
+
+	740.1.1 = {
+		birth = "740.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	805.1.1 = {
+		death = "805.1.1"
+	}
+}
+
+##Cyburrhaeot
+145834 = {
+	name = "Theophylaktos"
+	dynasty = 8644
+	religion = "iconoclast"
+	culture = "greek"
+
+	731.1.1 = {
+		birth = "731.1.1"
+	}
+	784.1.1 = {
+		death = "784.1.1"
+	}
+}
+70494 = {
+	name = "Michael"
+	dynasty = 8644
+	martial = 5
+	diplomacy = 8
+	intrigue = 4
+	stewardship = 6
+	religion = "iconoclast"
+	culture = "greek"
+	trait = just
+	trait = education_diplomacy_1
+	father = 145834
+	
+	768.1.1 = {
+		birth = "768.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	793.1.1 = {
+		add_spouse = 70495
+	}
+	815.1.1 = {
+		religion = "iconoclast"
+	}
+	842.2.19 = {
+		religion = "orthodox"
+	}
+	844.1.11 = {
+		death = "844.1.11"
+	}
+}
+145835 = {
+	name = "Epiphanios"
+	dynasty = 1022288
+	religion = "iconoclast"
+	culture = "greek"
+
+	744.1.1 = {
+		birth = "744.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	799.1.1 = {
+		death = "799.1.1"
+	}
+}
+caria_01 = {
+	name = "Thomas"
+	culture = greek
+	religion = nicene
+	326.1.1 = {
+		birth = yes
+	}
+	389.1.1 = {
+		death = yes
+	}
+}
+caria_02 = {
+	name = "Phokas"
+	culture = greek
+	religion = nicene
+	351.1.1 = {
+		birth = yes
+	}
+	412.1.1 = {
+		death = yes
+	}
+}
+caria_03 = {
+	name = "Sabatius"
+	culture = greek
+	religion = "nicene"
+	443.1.1 = {
+		birth = yes
+	}	
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	498.1.1 = {
+		death = yes
+	}
+}
+caria_04 = {
+	name = "Michael"
+	culture = greek
+	religion = "chalcedonian"
+	499.1.1 = {
+		birth = yes
+	}
+	567.1.1 = {
+		death = yes
+	}
+}
+caria_05 = {
+	name = "Alexios"
+	culture = greek
+	religion = "chalcedonian"
+	602.1.1 = {
+		birth = yes
+	}
+	678.1.1 = {
+		death = yes
+	}
+}
+
+cappadocia_03 = {
+	name = "Leo"
+	culture = greek
+	religion = "magousaian"
+	422.1.1 = {
+		birth = yes
+	}	
+	# 451.1.1 = {
+	# 	religion = "chalcedonian"
+	# }
+	498.1.1 = {
+		death = yes
+	}
+}
+cappadocia_04 = {
+	name = "Leonidas"
+	culture = greek
+	religion = "magousaian"
+	501.1.1 = {
+		birth = yes
+	}
+	567.1.1 = {
+		death = yes
+	}
+}
+cappadocia_05 = {
+	name = "Dexippus"
+	culture = greek
+	religion = "chalcedonian"
+	599.1.1 = {
+		birth = yes
+	}
+	678.1.1 = {
+		death = yes
+	}
+}
+cappadocia_06 = {
+	name = "Arcadius"
+	culture = greek
+	religion = "nicene"
+	739.1.1 = {
+		birth = yes
+	}
+	790.1.1 = {
+		death = yes
+	}
+}
+lycia_01 = {
+	name = "Nonius"
+	culture = greek
+	religion = hypsistarian_pagan
+	326.1.1 = {
+		birth = yes
+	}
+	389.1.1 = {
+		death = yes
+	}
+}
+lycia_02 = {
+	name = "Timasius"
+	culture = greek
+	religion = hypsistarian_pagan
+	351.1.1 = {
+		birth = yes
+	}
+	412.1.1 = {
+		death = yes
+	}
+}
+lycia_03 = {
+	name = "Lucius"
+	culture = greek
+	religion = "nicene"
+	443.1.1 = {
+		birth = yes
+	}	
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	498.1.1 = {
+		death = yes
+	}
+}
+lycia_04 = {
+	name = "Sabatius"
+	culture = greek
+	religion = "chalcedonian"
+	499.1.1 = {
+		birth = yes
+	}
+	567.1.1 = {
+		death = yes
+	}
+}
+lycia_05 = {
+	name = "Pelagios"
+	culture = greek
+	religion = "chalcedonian"
+	610.1.1 = {
+		birth = yes
+	}
+	678.1.1 = {
+		death = yes
+	}
+}
+pamphilia_01 = {
+	name = "Ianus"
+	culture = greek
+	religion = hellenic_pagan
+	321.1.1 = {
+		birth = yes
+	}
+	389.1.1 = {
+		death = yes
+	}
+}
+pamphilia_02 = {
+	name = "Theodoros"
+	culture = greek
+	religion = nicene
+	363.1.1 = {
+		birth = yes
+	}
+	412.1.1 = {
+		death = yes
+	}
+}
+pamphilia_03 = {
+	name = "Georgios"
+	culture = greek
+	religion = "nicene"
+	429.1.1 = {
+		birth = yes
+	}	
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	498.1.1 = {
+		death = yes
+	}
+}
+pamphilia_04 = {
+	name = "Philippos"
+	culture = greek
+	religion = "chalcedonian"
+	505.1.1 = {
+		birth = yes
+	}
+	567.1.1 = {
+		death = yes
+	}
+}
+pamphilia_05 = {
+	name = "Arcadius"
+	culture = greek
+	religion = "chalcedonian"
+	601.1.1 = {
+		birth = yes
+	}
+	678.1.1 = {
+		death = yes
+	}
+}
+
+lycaonia_01 = {
+	name = "Archelaos"
+	culture = greek
+	religion = hellenic_pagan
+	321.1.1 = {
+		birth = yes
+	}
+	389.1.1 = {
+		death = yes
+	}
+}
+lycaonia_02 = {
+	name = "Eudoxos"
+	culture = greek
+	religion = nicene
+	363.1.1 = {
+		birth = yes
+	}
+	412.1.1 = {
+		death = yes
+	}
+}
+lycaonia_05 = {
+	name = "Basianus"
+	culture = greek
+	religion = "chalcedonian"
+	601.1.1 = {
+		birth = yes
+	}
+	678.1.1 = {
+		death = yes
+	}
+}
+
+
+pacatiana_01 = {
+	name = "Pausanias"
+	culture = greek
+	religion = montanist
+	341.1.1 = {
+		birth = yes
+	}
+	389.1.1 = {
+		death = yes
+	}
+}
+pacatiana_02 = {
+	name = "Petros"
+	culture = greek
+	religion = montanist
+	359.1.1 = {
+		birth = yes
+	}
+	412.1.1 = {
+		death = yes
+	}
+}
+pacatiana_03 = {
+	name = "Leontios"
+	culture = greek
+	religion = "nicene"
+	441.1.1 = {
+		birth = yes
+	}	
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	498.1.1 = {
+		death = yes
+	}
+}
+pacatiana_04 = {
+	name = "Hermogenes"
+	culture = greek
+	religion = "chalcedonian"
+	500.1.1 = {
+		birth = yes
+	}
+	567.1.1 = {
+		death = yes
+	}
+}
+pacatiana_05 = {
+	name = "Dionysos"
+	culture = greek
+	religion = "chalcedonian"
+	608.1.1 = {
+		birth = yes
+	}
+	678.1.1 = {
+		death = yes
+	}
+}
+
+pisidia_01 = {
+	name = "Chrysanthos"
+	culture = greek
+	religion = encratite
+	321.1.1 = {
+		birth = yes
+	}
+	389.1.1 = {
+		death = yes
+	}
+}
+pisidia_02 = {
+	name = "Symmachus"
+	culture = greek
+	religion = encratite
+	363.1.1 = {
+		birth = yes
+	}
+	412.1.1 = {
+		death = yes
+	}
+}
+pisidia_03 = {
+	name = "Polydamas"
+	culture = greek
+	religion = "nicene"
+	429.1.1 = {
+		birth = yes
+	}	
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	498.1.1 = {
+		death = yes
+	}
+}
+pisidia_04 = {
+	name = "Platon"
+	culture = greek
+	religion = "chalcedonian"
+	505.1.1 = {
+		birth = yes
+	}
+	567.1.1 = {
+		death = yes
+	}
+}
+pisidia_05 = {
+	name = "Philostrogius"
+	culture = greek
+	religion = "chalcedonian"
+	601.1.1 = {
+		birth = yes
+	}
+	678.1.1 = {
+		death = yes
+	}
+}
+
+galatia_02 = {
+	name = "Alexios"
+	religion = chalcedonian
+	culture = greek
+	509.1.1 = {
+		birth = yes
+	}
+	565.1.1 = {
+		death = yes
+	}
+}
+galatia_03 = {
+	name = "Theophylaktos"
+	religion = chalcedonian
+	culture = greek
+	601.1.1 = {
+		birth = yes
+	}
+	676.1.1 = {
+		death = yes
+	}
+}
+
+145837 = {
+	name = "Alexios"
+	dynasty = 1022290
+	religion = "iconoclast"
+	culture = "greek"
+
+	731.1.1 = {
+		birth = "731.1.1"
+	}
+	787.10.23 = {
+		religion = "nicene"
+	}
+	789.1.1 = {
+		death = "789.1.1"
+	}
+}
+
+145134 = {
+	name = "Michael"
+	dynasty = 101399
+	religion = "iconoclast"
+	culture = "greek"
+	trait = education_martial_3
+	730.1.1 = {
+		birth = "730.1.1"
+	}
+	790.1.1 = {
+		death = "790.1.1"
+	}
+}
+145042 = {
+	name = "Theodotos"
+	dynasty = 101399
+	religion = "iconoclast"
+	culture = "greek"
+	trait = education_learning_3
+	father = 145134
+	760.1.1 = {
+		birth = "760.1.1"
+	}
+	821.1.1 = {
+		death = "821.1.1"
+	}
+}
+
+145836 = {
+	name = "Iordanes"
+	dynasty = 1022289
+	religion = "iconoclast"
+	culture = "greek"
+
+	746.1.1 = {
+		birth = "746.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	796.1.1 = {
+		death = "796.1.1"
+	}
+}
+##Ablabians
+ablabian_01 = { #Flavius Ablabius
+	name = "Ablabius"
+	dynasty = ablabian
+	culture = greek
+	religion = nicene
+	297.1.1 = {
+		birth = yes
+	}
+	349.1.1 = {
+		death = yes
+	}
+}
+ablabian_11 = {
+	name = "Olympias" #Olympias the Elder
+	dynasty = ablabian
+	culture = greek
+	religion = nicene
+	father = ablabian_01 #Flavius Seleucus
+	female = yes
+	325.1.1 = {
+		birth = yes
+	}
+	361.1.1 = {
+		death = yes
+	}
+}
+
+ablabian_02 = {
+	name = "Seleucus" #Flavius Seleucus
+	dynasty = ablabian
+	culture = greek
+	religion = nicene
+	father = ablabian_01 #Flavius Ablabius
+	323.1.1 = {
+		birth = yes
+	}
+	352.1.1 = {
+		add_spouse = character:ablabian_08 #Alexia
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+ablabian_08 = {
+	name = "Alexia" #Alexia
+	culture = greek
+	religion = nicene
+	father = ablabian_09 #Calliopius the Elder
+	female = yes
+	328.1.1 = {
+		birth = yes
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+ablabian_09 = {
+	name = "Calliopius" #Calliopius the elder
+	culture = greek
+	religion = nicene
+	300.1.1 = {
+		birth = yes
+	}
+	356.1.1 = {
+		death = yes
+	}
+}
+ablabian_10 = {
+	name = "Calliopius"
+	culture = greek
+	religion = nicene
+	father = ablabian_09 #Callioupius the Elder
+	323.1.1 = {
+		birth = yes
+	}
+	367.1.1 = {
+		death = yes
+	}
+}
+ablabian_03 = {
+	name = "Ablabius" #Fictonal son
+	dynasty = ablabian
+	culture = greek
+	religion = nicene
+	father = ablabian_02 #Flavius Seleucus
+	mother = ablabian_08 #Alexia
+	357.1.1 = {
+		birth = yes
+	}
+	409.1.1 = {
+		death = yes
+	}
+}
+ablabian_05 = {
+	name = "Seleucus" #Seleucus, Prefect of Italy
+	dynasty = ablabian
+	culture = greek
+	religion = nicene
+	father = ablabian_03 #Fictonal son of Flavius Seleucus
+	377.1.1 = {
+		birth = yes
+	}
+	442.1.1 = {
+		death = yes
+	}
+}
+ablabian_07 = {
+	name = "Seleucus" #Seleucus, Fictional son of Seleucus
+	dynasty = ablabian
+	culture = greek
+	religion = nicene
+	father = ablabian_05 #Seleucus, Prefect of Italy
+	399.1.1 = {
+		birth = yes
+	}	
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	468.1.1 = {
+		death = yes
+	}
+}
+ablabian_06 = {
+	name = "Olympias" #Sister of Seleucus
+	dynasty = ablabian
+	culture = greek
+	religion = nicene
+	father = ablabian_03 #Fictonal son of Flavius Seleucus
+	female = yes
+	381.1.1 = {
+		birth = yes
+	}
+	447.1.1 = {
+		death = yes
+	}
+}
+ablabian_04 = {
+	name = "Olympias" #Olympias the Saint
+	dynasty = ablabian
+	culture = greek
+	religion = nicene
+	father = ablabian_02 #Flavius Seleucus
+	mother = ablabian_08 #Alexia
+	female = yes
+	361.1.1 = {
+		birth = yes
+	}
+	408.1.1 = {
+		death = yes
+	}
+}
+
+###Lakhmids
+cenmar_01 = {
+	name = "Cenmar" #The Architect
+	culture = greek
+	religion = nicene
+	trait = deceitful
+	trait = greedy
+	trait = arrogant
+	trait = architect
+	trait = intellect_good_2
+	trait = education_stewardship_4
+	361.1.1 = {
+		birth = yes
+	}
+	395.1.17 = {
+		employer = lakhmid_06 # Al-Nu'man I
+	}
+	415.1.1 = {
+		death = yes
+	}
+}
+
+#Dacia
+
+daciae_09 = {
+	name = "Pamphilius"
+	religion = hellenic_pagan
+	culture = greek
+	336.1.1 = {
+		birth = yes
+	}
+	398.1.1 = {
+		death = yes
+	}
+}
+daciae_12 = {
+	name = "Felix"
+	religion = hellenic_pagan
+	culture = greek
+	366.1.1 = {
+		birth = yes
+	}
+	398.1.1 = {
+		death = yes
+	}
+}
+daciae_23 = {
+	name = "Ioustinos"
+	religion = hellenic_pagan
+	culture = greek
+	429.1.1 = {
+		birth = yes
+	}
+	480.1.1 = {
+		death = yes
+	}
+}
+daciae_34 = {
+	name = "Taurus"
+	religion = chalcedonian
+	culture = greek
+	500.1.1 = {
+		birth = yes
+	}
+	545.1.1 = {
+		death = yes
+	}
+}
+daciae_36 = {
+	name = "Diophantus"
+	religion = chalcedonian
+	culture = greek
+	604.1.1 = {
+		birth = yes
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+daciae_37 = {
+	name = "Diophantus"
+	religion = chalcedonian
+	culture = greek
+	604.1.1 = {
+		birth = yes
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+
+145798 = {
+	name = "Kaisarios"
+	dynasty = 1022318
+	religion = "iconoclast"
+	culture = "greek"
+
+	735.1.1 = {
+		birth = "735.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	790.1.1 = {
+		death = "790.1.1"
+	}
+}
+
+145797 = {
+	name = "Ierax"
+	dynasty = 1022317
+	religion = "iconoclast"
+	culture = "greek"
+
+	730.1.1 = {
+		birth = "730.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	795.1.1 = {
+		death = "795.1.1"
+	}
+}
+145799 = {
+	name = "Romanos"
+	dynasty = 1022261
+	religion = "iconoclast"
+	culture = "greek"
+
+	740.1.1 = {
+		birth = "740.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	800.1.1 = {
+		death = "800.1.1"
+	}
+}
+
+145800 = {
+	name = "Stephanos"
+	dynasty = 1022262
+	religion = "iconoclast"
+	culture = "greek"
+
+	745.1.1 = {
+		birth = "745.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	805.1.1 = {
+		death = "805.1.1"
+	}
+}
+
+145801 = {
+	name = "Theognostos"
+	dynasty = 1022263
+	religion = "iconoclast"
+	culture = "greek"
+
+	750.1.1 = {
+		birth = "750.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	810.1.1 = {
+		death = "810.1.1"
+	}
+}
+
+145802 = {
+	name = "Theodoros"
+	dynasty = 101134
+	religion = "chalcedonian"
+	culture = "greek"
+
+	710.1.1 = {
+		birth = "710.1.1"
+	}
+	730.1.1 = {
+		religion = "iconoclast"
+	}
+	765.1.1 = {
+		death = "765.1.1"
+	}
+}
+
+145803 = {
+	name = "Theophylaktos"
+	dynasty = 101134
+	religion = "chalcedonian"
+	culture = "greek"
+	father = 145802
+
+	729.1.1 = {
+		birth = "729.1.1"
+	}
+	730.1.1 = {
+		religion = "iconoclast"
+	}
+	752.1.1 = {
+		death = "752.1.1"
+	}
+}
+
+145804 = {
+	name = "Konstantinos"
+	dynasty = 101134
+	religion = "iconoclast"
+	culture = "greek"
+	father = 145802
+
+	731.1.1 = {
+		birth = "731.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	788.1.1 = {
+		death = "788.1.1"
+	}
+}
+
+145805 = {
+	name = "Theophylaktos"
+	dynasty = 101134
+	religion = "iconoclast"
+	culture = "greek"
+	father = 145804
+
+	748.1.1 = {
+		birth = "748.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	812.1.1 = {
+		death = "812.1.1"
+	}
+}
+
+145806 = {
+	name = "Leon"
+	dynasty = 627
+	religion = "iconoclast"
+	culture = "greek"
+
+	732.1.1 = {
+		birth = "732.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	794.1.1 = {
+		death = "794.1.1"
+	}
+}
+
+145807 = {
+	name = "Christophoros"
+	dynasty = 1022264
+	religion = "chalcedonian"
+	culture = "greek"
+
+	715.1.1 = {
+		birth = "715.1.1"
+	}
+	730.1.1 = {
+		religion = "iconoclast"
+	}
+	775.1.1 = {
+		death = "775.1.1"
+	}
+}
+
+145808 = {
+	name = "Aniketos"
+	dynasty = 1022264
+	religion = "iconoclast"
+	culture = "greek"
+	father = 145807
+
+	748.1.1 = {
+		birth = "748.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	813.1.1 = {
+		death = "813.1.1"
+	}
+}
+
+145809 = {
+	name = "Gregorios"
+	dynasty = 1022265
+	religion = "iconoclast"
+	culture = "greek"
+
+	742.1.1 = {
+		birth = "742.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	804.1.1 = {
+		death = "804.1.1"
+	}
+}
+
+145810 = {
+	name = "Basileios"
+	dynasty = 1022266
+	religion = "iconoclast"
+	culture = "greek"
+
+	746.1.1 = {
+		birth = "746.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	802.1.1 = {
+		death = "802.1.1"
+	}
+}
+
+145811 = {
+	name = "Anastasios"
+	dynasty = 1022267
+	religion = "iconoclast"
+	culture = "greek"
+
+	744.1.1 = {
+		birth = "744.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	808.1.1 = {
+		death = "808.1.1"
+	}
+}
+
+145812 = {
+	name = "Ioannes"
+	dynasty = 1022268
+	religion = "iconoclast"
+	culture = "greek"
+
+	732.1.1 = {
+		birth = "732.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	790.1.1 = {
+		death = "790.1.1"
+	}
+}
+
+145813 = {
+	name = "Theophanes"
+	dynasty = 1022269
+	religion = "iconoclast"
+	culture = "greek"
+
+	738.1.1 = {
+		birth = "738.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	794.1.1 = {
+		death = "794.1.1"
+	}
+}
+
+145814 = {
+	name = "Theoktistos"
+	dynasty = 1022270
+	religion = "iconoclast"
+	culture = "greek"
+
+	734.1.1 = {
+		birth = "734.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	792.1.1 = {
+		death = "792.1.1"
+	}
+}
+
+145815 = {
+	name = "Photeinos"
+	dynasty = 1022271
+	religion = "iconoclast"
+	culture = "greek"
+
+	736.1.1 = {
+		birth = "736.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	797.1.1 = {
+		death = "797.1.1"
+	}
+}
+
+145816 = {
+	name = "Konstantinos"
+	dynasty = 1022272
+	religion = "iconoclast"
+	culture = "greek"
+
+	731.1.1 = {
+		birth = "731.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	789.1.1 = {
+		death = "789.1.1"
+	}
+}
+
+145817 = {
+	name = "Manthos"
+	dynasty = 1022273
+	religion = "iconoclast"
+	culture = "greek"
+
+	739.1.1 = {
+		birth = "739.1.1"
+	}
+	787.1.1 = {
+		death = "787.1.1"
+	}
+}
+
+145818 = {
+	name = "Basileios"
+	dynasty = 1022274
+	religion = "iconoclast"
+	culture = "greek"
+
+	733.1.1 = {
+		birth = "733.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	791.1.1 = {
+		death = "791.1.1"
+	}
+}
+
+145819 = {
+	name = "Maximos"
+	dynasty = 1022275
+	religion = "iconoclast"
+	culture = "greek"
+
+	737.1.1 = {
+		birth = "737.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	801.1.1 = {
+		death = "801.1.1"
+	}
+}
+
+145820 = {
+	name = "Polykarpos"
+	dynasty = 1022276
+	religion = "iconoclast"
+	culture = "greek"
+
+	735.1.1 = {
+		birth = "735.1.1"
+	}
+	784.1.1 = {
+		death = "784.1.1"
+	}
+}
+
+145821 = {
+	name = "Romanos"
+	dynasty = 1022277
+	religion = "iconoclast"
+	culture = "greek"
+
+	749.1.1 = {
+		birth = "749.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	815.1.1 = {
+		religion = "iconoclast"
+	}
+	817.1.1 = {
+		death = "817.1.1"
+	}
+}
+
+145822 = {
+	name = "Demetrios"
+	dynasty = 1022278
+	religion = "iconoclast"
+	culture = "greek"
+
+	741.1.1 = {
+		birth = "741.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	809.1.1 = {
+		death = "809.1.1"
+	}
+}
+
+145823 = {
+	name = "Theodosios"
+	dynasty = 1022279
+	religion = "iconoclast"
+	culture = "greek"
+
+	747.1.1 = {
+		birth = "747.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	798.1.1 = {
+		death = "798.1.1"
+	}
+}
+
+145824 = {
+	name = "Alexios"
+	dynasty = 1022280
+	religion = "iconoclast"
+	culture = "greek"
+
+	743.1.1 = {
+		birth = "743.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	790.1.1 = {
+		death = "790.1.1"
+	}
+}
+
+145825 = {
+	name = "Dositheos"
+	dynasty = 1022281
+	religion = "iconoclast"
+	culture = "greek"
+
+	745.1.1 = {
+		birth = "745.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	803.1.1 = {
+		death = "803.1.1"
+	}
+}
+
+145826 = {
+	name = "Taxiarches"
+	dynasty = 1022282
+	religion = "iconoclast"
+	culture = "greek"
+
+	738.1.1 = {
+		birth = "738.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	797.1.1 = {
+		death = "797.1.1"
+	}
+}
+
+145827 = {
+	name = "Andronikos"
+	dynasty = 1022283
+	religion = "iconoclast"
+	culture = "greek"
+
+	732.1.1 = {
+		birth = "732.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	793.1.1 = {
+		death = "793.1.1"
+	}
+}
+
+145828 = {
+	name = "Sisinnios"
+	dynasty = 1022284
+	religion = "iconoclast"
+	culture = "greek"
+
+	734.1.1 = {
+		birth = "734.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	796.1.1 = {
+		death = "796.1.1"
+	}
+}
+
+145829 = {
+	name = "Marinos"
+	dynasty = 1022285
+	religion = "iconoclast"
+	culture = "greek"
+
+	736.1.1 = {
+		birth = "736.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	800.1.1 = {
+		death = "800.1.1"
+	}
+}
+
+145830 = {
+	name = "Theodoros"
+	dynasty = 101348
+	religion = "iconoclast"
+	culture = "greek"
+
+	730.1.1 = {
+		birth = "730.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	793.1.1 = {
+		death = "793.1.1"
+	}
+}
+
+145831 = {
+	name = "Niketas"
+	dynasty = 101348
+	religion = "iconoclast"
+	culture = "greek"
+	father = 145830
+
+	780.1.1 = {
+		birth = "780.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	815.1.1 = {
+		religion = "iconoclast"
+	}
+	842.2.19 = {
+		religion = "orthodox"
+	}
+	847.1.1 = {
+		death = "847.1.1"
+	}
+}
+
+145832 = {
+	name = "Petronios"
+	dynasty = 1022286
+	religion = "iconoclast"
+	culture = "greek"
+
+	742.1.1 = {
+		birth = "742.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	801.1.1 = {
+		death = "801.1.1"
+	}
+}
+
+145833 = {
+	name = "Theodoros"
+	dynasty = 1022287
+	religion = "iconoclast"
+	culture = "greek"
+
+	748.1.1 = {
+		birth = "748.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	815.1.1 = {
+		religion = "iconoclast"
+	}
+	823.1.1 = {
+		death = "823.1.1"
+	}
+}
+
+145834 = {
+	name = "Theophylaktos"
+	dynasty = 8644
+	religion = "iconoclast"
+	culture = "greek"
+
+	731.1.1 = {
+		birth = "731.1.1"
+	}
+	784.1.1 = {
+		death = "784.1.1"
+	}
+}
+
+145835 = {
+	name = "Epiphanios"
+	dynasty = 1022288
+	religion = "iconoclast"
+	culture = "greek"
+
+	744.1.1 = {
+		birth = "744.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	799.1.1 = {
+		death = "799.1.1"
+	}
+}
+
+145836 = {
+	name = "Iordanes"
+	dynasty = 1022289
+	religion = "iconoclast"
+	culture = "greek"
+
+	746.1.1 = {
+		birth = "746.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	796.1.1 = {
+		death = "796.1.1"
+	}
+}
+
+145837 = {
+	name = "Alexios"
+	dynasty = 1022290
+	religion = "iconoclast"
+	culture = "greek"
+
+	731.1.1 = {
+		birth = "731.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	789.1.1 = {
+		death = "789.1.1"
+	}
+}
+
+145838 = {
+	name = "Aetios"
+	dynasty = 1022291
+	religion = "iconoclast"
+	culture = "greek"
+	trait = education_martial_3
+
+	739.1.1 = {
+		birth = "739.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	791.1.1 = {
+		death = "791.1.1"
+	}
+}
+
+145839 = {
+	name = "Misael"
+	dynasty = 1022292
+	religion = "iconoclast"
+	culture = "greek"
+
+	733.1.1 = {
+		birth = "733.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	795.1.1 = {
+		death = "795.1.1"
+	}
+}
+
+145840 = {
+	name = "Alexandros"
+	dynasty = 1022293
+	religion = "iconoclast"
+	culture = "greek"
+
+	737.1.1 = {
+		birth = "737.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	793.1.1 = {
+		death = "793.1.1"
+	}
+}
+
+145841 = {
+	name = "Michael"
+	dynasty = 1022148
+	religion = "iconoclast"
+	culture = "greek"
+	trait = zealous
+	trait = sadistic
+	trait = diligent
+	trait = education_martial_3
+
+	735.1.1 = {
+		birth = "735.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	792.7.20 = {
+		death = "792.7.20"
+	}
+}
+
+145844 = {
+	name = "Vassos"
+	dynasty = 1022294
+	religion = "iconoclast"
+	culture = "greek"
+
+	741.1.1 = {
+		birth = "741.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	802.1.1 = {
+		death = "802.1.1"
+	}
+}
+
+145845 = {
+	name = "Konstantios"
+	dynasty = 101349
+	religion = "iconoclast"
+	culture = "greek"
+
+	749.1.1 = {
+		birth = "749.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	812.1.1 = {
+		death = "812.1.1"
+	}
+}
+
+145846 = {
+	name = "Imerios"
+	dynasty = 1022296
+	religion = "iconoclast"
+	culture = "greek"
+
+	747.1.1 = {
+		birth = "747.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	806.1.1 = {
+		death = "806.1.1"
+	}
+}
+
+145847 = {
+	name = "Olvianos"
+	dynasty = 1022297
+	religion = "iconoclast"
+	culture = "greek"
+	trait = education_martial_3
+
+	743.1.1 = {
+		birth = "743.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	805.1.1 = {
+		death = "805.1.1"
+	}
+}
+
+145848 = {
+	name = "Symeon"
+	dynasty = 1022298
+	religion = "iconoclast"
+	culture = "greek"
+
+	745.1.1 = {
+		birth = "745.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	809.1.1 = {
+		death = "809.1.1"
+	}
+}
+
+145849 = {
+	name = "Sergios"
+	dynasty = 1022299
+	religion = "iconoclast"
+	culture = "greek"
+
+	730.1.1 = {
+		birth = "730.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	791.1.1 = {
+		death = "791.1.1"
+	}
+}
+
+145850 = {
+	name = "Philetos"
+	dynasty = 1022300
+	religion = "iconoclast"
+	culture = "greek"
+
+	740.1.1 = {
+		birth = "740.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	801.1.1 = {
+		death = "801.1.1"
+	}
+}
+
+145851 = {
+	name = "Sebastos"
+	dynasty = 1022301
+	religion = "iconoclast"
+	culture = "greek"
+
+	732.1.1 = {
+		birth = "732.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	793.1.1 = {
+		death = "793.1.1"
+	}
+}
+
+145852 = {
+	name = "Demetrios"
+	dynasty = 1022302
+	religion = "iconoclast"
+	culture = "greek"
+
+	738.1.1 = {
+		birth = "738.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	799.1.1 = {
+		death = "799.1.1"
+	}
+}
+
+145853 = {
+	name = "Bosporios"
+	dynasty = 1022303
+	religion = "iconoclast"
+	culture = "greek"
+
+	734.1.1 = {
+		birth = "734.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	795.1.1 = {
+		death = "795.1.1"
+	}
+}
+
+145854 = {
+	name = "Elpidios"
+	dynasty = 1022304
+	religion = "iconoclast"
+	culture = "greek"
+
+	736.1.1 = {
+		birth = "736.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	797.1.1 = {
+		death = "797.1.1"
+	}
+}
+
+145855 = {
+	name = "Ambrosios"
+	dynasty = 1022305
+	religion = "iconoclast"
+	culture = "greek"
+
+	742.1.1 = {
+		birth = "742.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	803.1.1 = {
+		death = "803.1.1"
+	}
+}
+
+145856 = {
+	name = "Cherouvim"
+	dynasty = 1022306
+	religion = "iconoclast"
+	culture = "greek"
+
+	748.1.1 = {
+		birth = "748.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	809.1.1 = {
+		death = "809.1.1"
+	}
+}
+
+145857 = {
+	name = "Polychronios"
+	dynasty = 1022307
+	religion = "iconoclast"
+	culture = "greek"
+
+	744.1.1 = {
+		birth = "744.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	805.1.1 = {
+		death = "805.1.1"
+	}
+}
+
+145858 = {
+	name = "Martinos"
+	dynasty = 1022308
+	religion = "iconoclast"
+	culture = "greek"
+
+	746.1.1 = {
+		birth = "746.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	807.1.1 = {
+		death = "807.1.1"
+	}
+}
+
+145859 = {
+	name = "Drosos"
+	dynasty = 1022309
+	religion = "iconoclast"
+	culture = "greek"
+
+	731.1.1 = {
+		birth = "731.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	792.1.1 = {
+		death = "792.1.1"
+	}
+}
+145795 = {
+	name = "Theophanes"
+	dynasty = 1022319
+	religion = "chalcedonian"
+	culture = "greek"
+
+	710.1.1 = {
+		birth = "710.1.1"
+	}
+	730.1.1 = {
+		religion = "iconoclast"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	790.1.1 = {
+		death = "790.1.1"
+	}
+}
+
+145796 = {
+	name = "Nikephoros"
+	dynasty = 1022319
+	religion = "iconoclast"
+	culture = "greek"
+	father = 145795
+
+	740.1.1 = {
+		birth = "740.1.1"
+	}
+	787.10.23 = {
+		religion = "orthodox"
+	}
+	810.1.1 = {
+		death = "810.1.1"
+	}
+}
+
+cyprus_01 = {
+	name = "Nikephoros"
+	religion = "nicene"
+	culture = "greek"
+	330.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+cyprus_02 = {
+	name = "Anastasios"
+	religion = "nicene"
+	culture = "greek"
+	430.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+cyprus_03 = {
+	name = "Agathokles"
+	religion = "chalcedonian"
+	culture = "greek"
+	501.1.1 = {
+		birth = yes
+	}
+	560.1.1 = {
+		death = yes
+	}
+}
+cyprus_04 = {
+	name = "Damausus"
+	religion = "chalcedonian"
+	culture = "greek"
+	601.1.1 = {
+		birth = yes
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+cyprus_05 = {
+	name = "Sygarius"
+	religion = "iconoclast"
+	culture = "greek"
+	723.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+cyprus_06 = {
+	name = "Tryphon"
+	religion = "marcionite"
+	culture = "greek"
+	345.1.1 = {
+		birth = yes
+	}
+	414.1.1 = {
+		death = yes
+	}
+}
+
+
+britannia_06 = {
+	name = "Chrysanthus" # Chrysanthus Vicarius Britannicae
+	religion = "nicene"
+	culture = "greek"
+	dna=ruler_britannia
+	dynasty=409
+	352.1.1 = {
+		birth = yes
+	}
+	411.9.18 = {
+		death = yes
+	}
+}
+BVicarius_02 = { #Cairin
+	name= "Carina"
+	female = yes
+	dynasty=409
+	religion="nicene"
+	culture="greek"
+	father = britannia_06
+	373.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+### Epirus
+epirus_01 = { #Remus
+	name= "Remus"
+	religion="hellenic_pagan"
+	culture="greek"
+	341.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+epirus_02 = { #Remus
+	name= "Gregorios"
+	religion="hellenic_pagan"
+	culture="greek"
+	353.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+epirus_03 = { #Remus
+	name= "Aelius"
+	religion="hellenic_pagan"
+	culture="greek"
+	400.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+epirus_04 = { #Remus
+	name= "Urbanus"
+	religion="nicene"
+	culture="greek"
+	443.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+epirus_09 = { #Remus
+	name= "Epiphanios"
+	religion="hellenic_pagan"
+	culture="greek"
+	337.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+epirus_10 = { #Remus
+	name= "Theodosius"
+	religion="hellenic_pagan"
+	culture="greek"
+	370.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+epirus_11 = { #Remus
+	name= "Theodorus"
+	religion="hellenic_pagan"
+	culture="greek"
+	399.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+epirus_12 = { #Remus
+	name= "Sergius"
+	religion="nicene"
+	culture="greek"
+	448.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+epirus_13 = { #Remus
+	name= "Christóphoros"
+	religion="chalcedonian"
+	culture="greek"
+	489.1.1 = {
+		birth = yes
+	}
+	562.1.1 = {
+		death = yes
+	}
+}
+### Achaia
+achaia_01 = { #Remus
+	name= "Pelagios"
+	religion="hellenic_pagan"
+	culture="greek"
+	330.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+achaia_02 = { #Remus
+	name= "Theodosios"
+	religion="hellenic_pagan"
+	culture="greek"
+	365.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+achaia_03 = { #Remus
+	name= "Philippos"
+	religion="hellenic_pagan"
+	culture="greek"
+	405.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+achaia_04 = { #Remus
+	name= "Eusebios"
+	religion="nicene"
+	culture="greek"
+	450.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+achaia_05 = { #Remus
+	name= "Stephanos"
+	religion="chalcedonian"
+	culture="greek"
+	470.1.1 = {
+		birth = yes
+	}
+	542.1.1 = {
+		death = yes
+	}
+}
+sephalia_01 = {
+	name= "Sephalia"
+	religion="hellenic_pagan"
+	culture="greek"
+	189.1.1 = {
+		birth = yes
+	}
+	230.1.1 = {
+		death = yes
+	}
+}
+oligotos_01 = {
+	name = "Alexandros"
+	religion="nicene"
+	culture="greek"
+	dynasty = dynasty_Oligatos
+	260.1.1 = {
+		birth = yes
+	}
+	340.1.1 = {
+		death = yes
+	}
+}
+oligotos_02 = {
+	name = "Nana"
+	religion="nicene"
+	culture="greek"
+	dynasty = dynasty_Oligatos
+	female = yes
+	trait = zealous
+	trait = ambitious
+	trait = generous
+	292.1.1 = {
+		birth = yes
+	}
+	361.1.1 = {
+		death = yes
+	}
+}
+#### Hellas
+hellas_01 = {
+	name = "Alexandros"
+	religion="hellenic_pagan"
+	culture="greek"
+	332.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+hellas_02 = {
+	name = "Gennadios"
+	religion="nicene"
+	culture="greek"
+	365.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+hellas_03 = {
+	name = "Timotheos"
+	religion="nicene"
+	culture="greek"
+	450.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+hellas_06 = {
+	name = "Nikagoras" # last athenian archon
+	religion = "hellenic_pagan"
+	culture = "greek"
+	445.1.1 = {
+		birth = yes
+		give_nickname = nick_iunior
+	}
+	476.1.1 = {
+		set_relation_friend = character:greek_20
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+hellas_07 = {
+	name = "Anastasios"
+	religion="chalcedonian"
+	culture="greek"
+	480.1.1 = {
+		birth = yes
+	}
+	550.1.1 = {
+		death = yes
+	}
+}
+hellas_08 = {
+	name = "Ioannes"
+	religion="chalcedonian"
+	culture="greek"
+	482.1.1 = {
+		birth = yes
+	}
+	549.1.1 = {
+		death = yes
+	}
+}
+### Roman Emperors
+145262 = {
+	name = "Gordian"
+	# Caesar Marcus Antonius Gordianus Augustus
+	dynasty = 1022211
+	religion = "hellenic_pagan"
+	culture = "greek"
+	trait = education_stewardship_2
+	trait = apotheosised_trait
+	mother = 145261
+	225.1.20 = {
+		birth = "225.1.20"
+	}
+	244.2.11 = {
+		death = "244.2.11"
+	}
+}
+
+### Afriana Gens
+afrianus_0 = {
+	name = "Hannibalianus"
+	dynasty = afriana_dynasty
+	religion = "hellenic_pagan"
+	culture = "greek"
+	235.1.1 = {
+		birth = yes
+	}
+	272.1.1 = {
+		add_spouse = maximian_02 # Eutropia
+	}
+	280.1.1 = {
+		death = yes
+	}
+}
+afrianus_01 = {
+	name = "Theodora"
+	female = yes
+	dynasty = afriana_dynasty
+	religion = "hellenic_pagan"
+	culture = "greek"
+	father = afrianus_0
+	mother = maximian_02
+	273.1.1 = {
+		birth = yes
+	}
+	335.1.1 = {
+		death = yes
+	}
+}
+###
+constantius_005 = {
+	name = "Helena"
+	female = yes
+	religion = "hellenic_pagan"
+	culture = "greek"
+	249.1.1 = {
+		birth = yes
+	}
+	325.1.1 = {
+		religion = "nicene"
+	}
+	330.1.1 = {
+		death = yes
+	}
+}
+maximian_02 = {
+	name = "Eutropia"
+	female = yes
+	religion = "hellenic_pagan"
+	culture = "greek"
+	250.1.1 = {
+		birth = yes
+	}
+	310.1.1 = {
+		death = yes
+	}
+}
+### Gens Iulia
+iulius_01 = {
+	name = "Iulianus"
+	dynasty = iulius_dynasty
+	religion = "arianism"
+	culture = "greek"
+	276.6.15 = {
+		birth = yes
+	}
+	328.1.1 = {
+		death = yes
+	}
+}
+iulius_02 = {
+	name = "Basilina"
+	dynasty = iulius_dynasty
+	religion = "arianism"
+	culture = "greek"
+	father = iulius_01
+	female = yes
+	290.3.2 = {
+		birth = yes
+	}
+	333.1.1 = {
+		death = yes
+	}
+}
+iulius_021 = {
+	name = "Iuliana"
+	dynasty = iulius_dynasty
+	religion = "arianism"
+	culture = "greek"
+	father = iulius_01
+	female = yes
+	297.12.2 = {
+		birth = yes
+	}
+	333.1.1 = {
+		death = yes
+	}
+}
+#Procopios
+prokopios_01 = {
+	name = "Prokopios"
+	dynasty = prokopios_dynasty
+	religion = "nicene"
+	culture = "greek"
+	300.1.1 = {
+		birth = yes
+	}
+	350.1.1 = {
+		death = yes
+	}
+}
+prokopios_02 = {
+	name = "Prokopios"
+	dynasty = prokopios_dynasty
+	religion = "nicene"
+	culture = "greek"
+	father = prokopios_01
+	mother = iulius_021
+	326.8.28 = {
+		birth = yes
+	}
+	366.5.16 = {
+		death = yes
+	}
+}
+prokopios_03 = {
+	name = "Prokopios"
+	dynasty = prokopios_dynasty
+	religion = "nicene"
+	culture = "greek"
+	father = prokopios_02
+	360.1.1 = {
+		birth = yes
+	}
+	395.1.1 = {
+		add_spouse = roman_24
+	}
+	424.1.1 = {
+		death = yes
+	}
+}
+prokopios_04 = {
+	name = "Anthemios"
+	dynasty = prokopios_dynasty
+	religion = "nicene"
+	culture = "greek"
+	father = prokopios_03
+	mother = roman_24
+	400.1.1 = {
+		birth = yes
+	}
+	453.1.1 = {
+		add_spouse = marcian_01
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	472.7.11 = {
+		death = yes
+	}
+}
+prokopios_05 = {
+	name = "Alipia"
+	female = yes
+	dynasty = prokopios_dynasty
+	religion = "chalcedonian"
+	culture = "greek"
+	father = prokopios_04
+	mother = marcian_01
+	454.6.12 = {
+		birth = yes
+	}
+	472.7.11 = {
+		death = yes
+	}
+}
+prokopios_051 = {
+	name = "Antemiolos"
+	dynasty = prokopios_dynasty
+	religion = "chalcedonian"
+	culture = "greek"
+	father = prokopios_04
+	mother = marcian_01
+	453.9.1 = {
+		birth = yes
+	}
+	471.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = 200284 # Euric
+		}
+	}
+}
+prokopios_052 = {
+	name = "Marcianos"
+	dynasty = prokopios_dynasty
+	religion = "chalcedonian"
+	culture = "greek"
+	father = prokopios_04
+	mother = marcian_01
+	trait = arrogant
+	trait = ambitious
+	455.2.1 = {
+		birth = yes
+	}
+	476.1.1 = {
+		add_spouse = leo_08
+	}
+	484.1.1 = {
+		death = yes
+	}
+}
+prokopios_053 = {
+	name = "Prokopios_Anthemios"
+	dynasty = prokopios_dynasty
+	religion = "chalcedonian"
+	culture = "greek"
+	father = prokopios_04
+	mother = marcian_01
+	456.8.21 = {
+		birth = yes
+	}
+	456.8.21 = {
+		add_spouse = prokopios_054
+	}
+	520.1.1 = {
+		death = yes
+	}
+}
+prokopios_054 = {
+	name = "Herais"
+	female = yes
+	religion = "chalcedonian"
+	culture = "greek"
+	457.1.1 = {
+		birth = yes
+	}
+	510.1.1 = {
+		death = yes
+	}
+}
+prokopios_055 = {
+	name = "Romulos"
+	dynasty = prokopios_dynasty
+	religion = "chalcedonian"
+	culture = "greek"
+	father = prokopios_04
+	mother = marcian_01
+	458.2.28 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+prokopios_056 = {
+	name = "Zenon"
+	dynasty = prokopios_dynasty
+	religion = "chalcedonian"
+	culture = "greek"
+	father = prokopios_053
+	mother = prokopios_054
+	478.1.1 = {
+		birth = yes
+	}
+	533.1.1 = {
+		death = yes
+	}
+}
+### Leontios Family
+leontios_01 = {
+	name = "Dionisios"
+	dynasty = Leontios_dynasty
+	religion = "hellenic_pagan"
+	culture = "greek"
+	341.3.1 = {
+		birth = yes
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+leontios_02 = {
+	name = "Leontios"
+	dynasty = Leontios_dynasty
+	religion = "hellenic_pagan"
+	culture = "greek"
+	father = leontios_01
+	trait = scholar
+	trait = education_learning_4
+	trait = intellect_good_1
+	trait = arbitrary
+	trait = compassionate
+	trait = calm
+	365.8.21 = {
+		birth = yes
+	}
+	420.1.1 = {
+		death = yes
+	}
+}
+leontios_03 = {
+	name = "Gessios"
+	dynasty = Leontios_dynasty
+	religion = "hellenic_pagan"
+	culture = "greek"
+	father = leontios_02
+	392.4.12 = {
+		birth = yes
+	}
+	456.1.1 = {
+		death = yes
+	}
+}
+leontios_031 = {
+	name = "Valerios"
+	dynasty = Leontios_dynasty
+	religion = "hellenic_pagan"
+	culture = "greek"
+	father = leontios_02
+	394.8.2 = {
+		birth = yes
+	}
+	470.1.1 = {
+		death = yes
+	}
+}
+leontios_032 = {
+	name = "Athenais"
+	dynasty = Leontios_dynasty
+	religion = "hellenic_pagan"
+	culture = "greek"
+	father = leontios_02
+	female = yes
+	trait = scholar
+	trait = education_learning_4
+	trait = intellect_good_2
+	trait = beauty_good_2
+	trait = just
+	trait = diligent
+	trait = calm
+	400.12.26 = {
+		birth = yes
+	}
+	421.7.7 = {
+		name = "Aelia Eudoxia"
+		religion = "nicene"
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	460.1.1 = {
+		death = yes
+	}
+}
+leontios_021 = {
+	name = "Athenais"
+	dynasty = Leontios_dynasty
+	religion = "hellenic_pagan"
+	culture = "greek"
+	father = leontios_01
+	female = yes
+	367.12.3 = {
+		birth = yes
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+### Krete
+krete_01 = { #Remus
+	name= "Konstantinos"
+	religion="hellenic_pagan"
+	culture="greek"
+	341.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+krete_02 = { #Remus
+	name= "Valerios"
+	religion="hellenic_pagan"
+	culture="greek"
+	353.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+krete_03 = { #Remus
+	name= "Sergios"
+	religion="chalcedonian"
+	culture="greek"
+	452.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+nikaea_01 = {
+	name = "Sergios"
+	religion="nicene"
+	culture="greek"
+	329.1.1 = {
+		birth = yes
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+nikaea_02 = {
+	name = "Anthemios"
+	religion="nicene"
+	culture="greek"
+	360.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+nikaea_03 = {
+	name = "Prokopios"
+	religion="chalcedonian"
+	culture="greek"
+	457.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+nikaea_04 = {
+	name = "Markos"
+	religion="novatianism"
+	culture="greek"
+	337.1.1 = {
+		birth = yes
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+nikaea_05 = {
+	name = "Petros"
+	religion="novatianism"
+	culture="greek"
+	370.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+nikaea_06 = {
+	name = "Tiberios"
+	religion="chalcedonian"
+	culture="greek"
+	451.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+nikaea_07 = {
+	name = "Thomas"
+	religion="nicene"
+	culture="greek"
+	332.1.1 = {
+		birth = yes
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+nikaea_08 = {
+	name = "Kaisarios"
+	religion="nicene"
+	culture="greek"
+	365.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+nikaea_09 = {
+	name = "Maximos"
+	religion="chalcedonian"
+	culture="greek"
+	452.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+nikaea_10 = {
+	name = "Gabriel"
+	religion="nicene"
+	culture="greek"
+	332.1.1 = {
+		birth = yes
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+nikaea_11 = {
+	name = "Cenmar"
+	religion="nicene"
+	culture="greek"
+	365.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+nikaea_12 = {
+	name = "Mithradates"
+	religion="chalcedonian"
+	culture="greek"
+	452.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+nikaea_13 = {
+	name = "Gregorios"
+	religion="chalcedonian"
+	culture="greek"
+	480.1.1 = {
+		birth = yes
+	}
+	543.1.1 = {
+		death = yes
+	}
+}
+#### Asia
+asiae_20 = {
+	name = "Ioannes"
+	religion="nicene"
+	culture="greek"
+	332.1.1 = {
+		birth = yes
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+asiae_21 = {
+	name = "Gregorios"
+	religion="nicene"
+	culture="greek"
+	365.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+asiae_22 = {
+	name = "Paulos"
+	religion="chalcedonian"
+	culture="greek"
+	452.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+###UNused
+asiae_26 = {
+	name = "Alexandros"
+	religion="nicene"
+	culture="greek"
+	332.1.1 = {
+		birth = yes
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+asiae_27 = {
+	name = "Arcadius"
+	religion="nicene"
+	culture="greek"
+	365.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+asiae_28 = {
+	name = "Gregorios"
+	religion="chalcedonian"
+	culture="greek"
+	452.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+asiae_29 = {
+	name = "Aneximandros"
+	religion="montanist"
+	culture="greek"
+	332.1.1 = {
+		birth = yes
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+asiae_30 = {
+	name = "Sergios"
+	religion="montanist"
+	culture="greek"
+	365.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+asiae_31 = {
+	name = "Adrianos"
+	religion="chalcedonian"
+	culture="greek"
+	452.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+eutropius_01 = {
+	name = "Eutropios"
+	dna = dna_eutropius
+	religion = "nicene"
+	culture = "greek"
+	trait = education_intrigue_3
+	trait = beardless_eunuch
+	trait = greedy
+	trait = ambitious
+	trait = sadistic
+	intrigue = 12
+	stewardship = 10
+	351.1.1 = {
+		birth = yes
+	}
+	395.1.17 = {
+		employer = 70519 #Flavius Arcadius Theodosian
+		learn_language = language_latin
+		set_relation_rival = character:rufinus_02
+		set_relation_rival = character:900062
+		set_relation_friend = character:70519
+		set_relation_friend = character:930551279
+	}
+	400.1.1 = {
+		death = {
+			death_reason = death_execution
+		}
+	}
+}
+### Isaurian ###
+constantine_v = {
+	name = "Constantine"
+	religion = "iconoclast"
+	culture = "greek"
+	trait = education_stewardship_3
+	trait = diligent
+	trait = zealous
+	trait = ambitious
+	718.6.1 = {
+		birth = yes
+	}
+	775.9.14 = {
+		death = yes
+	}
+}
+crimea_02 = {
+	name = "Hekataios"
+	religion = "chalcedonian"
+	culture = "greek"
+	598.1.1 = {
+		birth = yes
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+crimea_04 = {
+	name = "Papias"
+	religion = "chalcedonian"
+	culture = "greek"
+	441.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+crimea_05 = {
+	name = "Pelagios"
+	religion = "chalcedonian"
+	culture = "greek"
+	489.1.1 = {
+		birth = yes
+	}
+	546.1.1 = {
+		death = yes
+	}
+}
+###
+thessalonika_01 = {
+	name = "Eutropios"
+	religion = "nicene"
+	culture = "greek"
+	338.1.1 = {
+		birth = yes
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+thessalonika_02 = {
+	name = "Ioannes"
+	religion = "nicene"
+	culture = "greek"
+	365.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+thessalonika_03 = {
+	name = "Theodoros"
+	religion = "chalcedonian"
+	culture = "greek"
+	452.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+
+thessalonika_04 = {
+	name = "Petronios"
+	religion = "nicene"
+	culture = "greek"
+	332.1.1 = {
+		birth = yes
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+thessalonika_05 = {
+	name = "Iosephos"
+	religion = "nicene"
+	culture = "greek"
+	361.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+thessalonika_06 = {
+	name = "Philippos"
+	religion = "chalcedonian"
+	culture = "greek"
+	451.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+
+thessalonika_07 = {
+	name = "Nonnius"
+	religion = "nicene"
+	culture = "greek"
+	332.1.1 = {
+		birth = yes
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+thessalonika_08 = {
+	name = "Loukas"
+	religion = "nicene"
+	culture = "greek"
+	362.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+thessalonika_09 = {
+	name = "Leo"
+	religion = "chalcedonian"
+	culture = "greek"
+	451.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+
+thessalonika_10 = {
+	name = "Leontios"
+	religion = "nicene"
+	culture = "greek"
+	337.1.1 = {
+		birth = yes
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+thessalonika_11 = {
+	name = "Basileos"
+	religion = "nicene"
+	culture = "greek"
+	369.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+thessalonika_12 = {
+	name = "Felix"
+	religion = "nicene"
+	culture = "greek"
+	446.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+thessalonika_13 = {
+	name = "Philopater"
+	religion = "chalcedonian"
+	culture = "greek"
+	492.1.1 = {
+		birth = yes
+	}
+	567.1.1 = {
+		death = yes
+	}
+}
+
+70510 = {
+	name = "Maurikios"
+	dynasty = 1022184
+	martial = 8
+	diplomacy = 7
+	intrigue = 6
+	stewardship = 3
+	religion = "chalcedonian"
+	culture = "cappadocian"
+	father = cappadocia_10
+	trait = brave
+	trait = scholar
+	trait = greedy
+	trait = education_stewardship_3	
+	539.1.1 = {
+		birth = yes
+	}
+	575.1.1 = {
+		add_spouse = thracio_24 # Constantina
+		culture = "greek"
+	}
+	602.11.27 = {
+		death = {
+			death_reason = death_execution
+			killer = 145072 # Focas
+		}
+	}
+}
+greek_13 = {
+	name = "Theodosios"
+	dynasty = 1022184
+	religion = "chalcedonian"
+	culture = "greek"
+	father = 70510
+	mother = thracio_24
+	583.8.4 = {
+		birth = yes
+	}
+	602.1.1 = {
+		add_spouse = 168792_daughter
+	}
+	602.12.1 = {
+		death = {
+			death_reason = death_execution
+			killer = 145072 # Focas
+		}
+	}
+}
+180646 = {
+	name = "Maria"
+	# wife of Khorau II
+	female = yes
+	dynasty = 1022184
+	religion = "orthodox"
+	culture = "greek"
+	father = 70510
+	mother = thracio_24
+	570.1.1 = {
+		birth = yes
+	}
+	630.1.1 = {
+		death = yes
+	}
+}
+
+hypatia = {
+	name = "Hypatia"
+	dna = hypatia
+	female = yes
+	martial = 0
+	diplomacy = 9
+	intrigue = 3
+	stewardship = 5
+	learning = 20
+	religion = "hellenic_pagan"
+	culture = "greek"
+	trait = patient
+	trait = compassionate
+	trait = temperate
+	trait = education_learning_4
+	father = theon
+	
+	360.1.10 = {
+		birth = "360.1.10"
+	}
+	415.3.18 = {
+		death = "415.3.18"
+	}
+}
+
+theon = {
+	name = "Theon"
+	martial = 0
+	diplomacy = 11
+	intrigue = 1
+	stewardship = 4
+	learning = 20
+	religion = "hellenic_pagan"
+	culture = "greek"
+	trait = patient
+	trait = content
+	trait = temperate
+	trait = education_learning_4
+	
+	335.2.10 = {
+		birth = "335.2.10"
+	}
+	405.5.3 = {
+		death = "405.5.3"
+	}
+}
+
+greek_01 = {
+	name = "Tribonianus"
+	religion = "chalcedonian"
+	culture = "greek"
+	martial = 5
+	diplomacy = 9
+	intrigue = 5
+	stewardship = 10
+	learning = 15
+	prowess = 3
+	trait = greedy
+	trait = diligent
+	trait = just
+	trait = administrator
+	trait = scholar
+	trait = loyal
+	trait = shrewd
+	trait = education_learning_4
+
+	485.12.1 = {
+		birth = yes
+	}
+	542.1.1 = {
+		death = yes
+	}
+}
+
+greek_02 = {
+	name = "Ioannes"
+	religion = "chalcedonian"
+	culture = "greek"
+	dynasty = troglita
+	martial = 9
+	diplomacy = 8
+	intrigue = 6
+	stewardship = 5
+	learning = 3
+	prowess = 10
+	trait = brave
+	trait = diligent
+	trait = gregarious
+	trait = unyielding_defender
+	trait = reckless
+	trait = education_martial_3
+	father = greek_04
+	503.1.1 = {
+		birth = yes
+	}
+	532.1.1 = {
+		add_courtier = character:greek_08
+	}
+	552.1.1 = {
+		death = yes
+	}
+}
+
+greek_03 = {
+	name = "Procopius of Caesarea"
+	religion = "chalcedonian"
+	culture = "greek"
+	martial = 3
+	diplomacy = 7
+	intrigue = 7
+	stewardship = 5
+	learning = 10
+	prowess = 5
+	trait = cynical
+	trait = wrathful
+	trait = ambitious
+	trait = scholar
+	trait = journaller
+	trait = education_learning_4
+	
+	510.1.1 = {
+		birth = yes
+	}
+	570.1.1 = {
+		death = yes
+	}
+}
+greek_04 = {
+	name = "Evanthes"
+	religion = "chalcedonian"
+	culture = "greek"
+	dynasty = troglita
+	476.1.1 = {
+		birth = yes
+	}
+	529.1.1 = {
+		death = yes
+	}
+}
+greek_05 = {
+	name = "Pappos"
+	religion = "chalcedonian"
+	culture = "greek"
+	dynasty = troglita
+	father = greek_04
+	trait = education_martial_2
+	500.1.1 = {
+		birth = yes
+	}
+	532.1.1 = {
+		employer = belisarius_001
+	}
+	554.1.1 = {
+		death = yes
+	}
+}
+greek_06 = {
+	name = "Petros" # Barsymes
+	religion = "chalcedonian"
+	culture = "greek"
+	dynasty = barsymes_dynasty
+	stewardship = 10
+	learning = 10
+	trait = education_stewardship_3
+	trait = scholar
+	495.1.1 = {
+		birth = yes
+	}
+	562.1.1 = {
+		death = yes
+	}
+}
+greek_07 = {
+	name = "Hekebolos" # 
+	dynasty = hekebolos_dynasty
+	religion = "chalcedonian"
+	culture = "greek"
+	475.1.1 = {
+		birth = yes
+	}
+	555.1.1 = {
+		death = yes
+	}
+}
+greek_08 = {
+	name = "Ioannes" # 
+	dynasty = cottistis_dynasty
+	religion = "chalcedonian"
+	culture = "greek"
+	trait = ambitious
+	trait = deceitful
+	trait = trusting
+	497.1.1 = {
+		birth = yes
+	}
+	537.1.1 = {
+		death = {
+			death_reason = death_murder
+		}
+	}
+}
+greek_09 = {
+	name = "Oribasios" # Julian's medic
+	religion = "hellenic_pagan"
+	culture = "greek"
+	trait = education_learning_3
+	trait = lifestyle_herbalist
+	320.1.1 = {
+		birth = yes
+	}
+	361.1.1 = {
+		employer = 145237
+	}
+	403.1.1 = {
+		death = yes
+	}
+}
+greek_10 = {
+	name = "Ino"
+	female = yes
+	religion = "chalcedonian"
+	culture = "greek"
+	540.1.1 = {
+		birth = yes
+	}
+	578.1.1 = {
+		name = "Ino_Anastasia"
+	}
+	593.1.1 = {
+		death = yes
+	}
+}
+greek_11 = {
+	name = "Philippikos"
+	dynasty = philippikos_dynasty
+	religion = "chalcedonian"
+	culture = "greek"
+	trait = education_martial_4
+	trait = strategist
+	martial = 15
+	560.1.1 = {
+		birth = yes
+	}
+	579.1.1 = {
+		add_spouse = cappadocia_12 # Gordia
+	}
+	615.1.1 = {
+		death = yes
+	}
+}
+greek_12 = {
+	name = "Priskos"
+	dynasty = priskos_dynasty
+	religion = "chalcedonian"
+	culture = "greek"
+	trait = education_martial_2
+	trait = deceitful
+	563.1.1 = {
+		birth = yes
+	}
+	603.1.1 = {
+		add_spouse = thracio_23 # daughter of Focas
+	}
+	612.1.1 = {
+		trait = devoted # forced
+	}
+	613.1.1 = {
+		death = yes
+	}
+}
+greek_14 = {
+	name = "Theodoros" the Sakellarios
+	dynasty = trithyrios_dynasty
+	religion = "chalcedonian"
+	culture = "greek"
+	trait = education_stewardship_3
+	trait = loyal
+	594.1.1 = {
+		birth = yes
+	}
+	630.1.1 = {
+		give_nickname = nick_the_sakellarios
+	}
+	636.1.1 = {
+		death = yes
+	}
+}
+greek_15 = {
+	name = "Georgios" the Pisidian
+	religion = "chalcedonian"
+	culture = "greek"
+	trait = education_learning_3
+	trait = poet
+	575.1.1 = {
+		birth = yes
+		give_nickname = nick_the_pisidian
+	}
+	632.1.1 = {
+		employer = 145071
+	}
+	645.1.1 = {
+		death = yes
+	}
+}
+greek_16 = {
+	name = "Nestor" # father of Plutarch
+	dynasty = athenaios_dynasty
+	religion = "hellenic_pagan"
+	culture = "greek"
+	trait = education_learning_4
+	320.1.1 = {
+		birth = yes
+	}
+	385.1.1 = {
+		death = yes
+	}
+}
+greek_17 = {
+	name = "Ploutarchos"
+	dynasty = athenaios_dynasty
+	religion = "hellenic_pagan"
+	culture = "greek"
+	father = greek_16
+	355.1.1 = {
+		birth = yes
+	}
+	380.1.1 = {
+		add_trait = education_learning_4
+		add_trait = scholar
+		add_trait = lifestyle_mystic
+		add_trait = zealous
+	}
+	395.1.1 = {
+		set_relation_friend = character:hypatia
+	}
+	430.1.1 = {
+		death = yes
+	}
+}
+greek_18 = {
+	name = "Hierios"
+	dynasty = athenaios_dynasty
+	religion = "hellenic_pagan"
+	culture = "greek"
+	father = greek_17
+	trait = education_learning_4
+	trait = scholar
+	398.1.1 = {
+		birth = yes
+	}
+	455.1.1 = {
+		death = yes
+	}
+}
+greek_19 = {
+	name = "Asklepigeneia"
+	female = yes
+	dynasty = athenaios_dynasty
+	religion = "hellenic_pagan"
+	culture = "greek"
+	father = greek_17
+	trait = education_learning_4
+	trait = scholar
+	trait = lifestyle_mystic
+	trait = zealous
+	400.1.1 = {
+		birth = yes
+	}
+	485.1.1 = {
+		death = yes
+	}
+}
+greek_20 = {
+	name = "Proklos"
+	dynasty = lydos_dynasty
+	religion = "hellenic_pagan"
+	culture = "greek"
+	trait = education_learning_4
+	trait = scholar
+	trait = theologian
+	trait = lifestyle_mystic
+	trait = zealous
+	412.1.1 = {
+		birth = yes
+	}
+	476.1.1 = {
+		set_relation_friend = character:greek_19
+		set_relation_friend = character:aegyptus_89
+		set_relation_friend = character:syria_37
+	}
+	485.1.1 = {
+		death = yes
+	}
+}
+greek_21 = {
+	name = "Hegias"
+	dynasty = athenaios_dynasty
+	religion = "hellenic_pagan"
+	culture = "greek"
+	father = greek_18
+	trait = education_learning_3
+	trait = scholar
+	trait = zealous
+	440.1.1 = {
+		birth = yes
+	}
+	510.1.1 = {
+		death = yes
+	}
+}
+greek_22 = {
+	name = "Eunapios"
+	religion = "hellenic_pagan"
+	culture = "greek"
+	347.1.1 = {
+		birth = yes
+	}
+	395.1.1 = {
+		employer = 145071
+		trait = education_learning_3
+		trait = scholar
+		trait = zealous
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+
+#############################################################
+# 
+# MISC PLACEHOLDERS
+# 
+# Done by Cybrxkhan
+# 
+#############################################################
+
+greek_misc_001 = {
+	name = "Boethios"
+	religion = "chalcedonian"
+	culture = "greek"
+	497.1.1 = {
+		birth = yes
+	}
+	537.1.1 = {
+		death = yes
+	}
+}
+
+greek_misc_002 = {
+	name = "Theodoros"
+	religion = "chalcedonian"
+	culture = "greek"
+	502.3.9 = {
+		birth = yes
+	}
+	559.1.14 = {
+		death = yes
+	}
+}
+
+greek_misc_003 = {
+	name = "Antiochos"
+	religion = "chalcedonian"
+	culture = "greek"
+	490.1.12 = {
+		birth = yes
+	}
+	560.3.8 = {
+		death = yes
+	}
+}
+
+greek_misc_004 = {
+	name = "Adrianos"
+	religion = "chalcedonian"
+	culture = "greek"
+	499.1.7 = {
+		birth = yes
+	}
+	543.1.23 = {
+		death = yes
+	}
+}
+
+greek_misc_005 = {
+	name = "Sergios"
+	religion = "chalcedonian"
+	culture = "greek"
+	482.3.19 = {
+		birth = yes
+	}
+	570.3.21 = {
+		death = yes
+	}
+}
+
+greek_misc_006 = {
+	name = "Polykarpos"
+	religion = "chalcedonian"
+	culture = "greek"
+	500.4.9 = {
+		birth = yes
+	}
+	563.2.11 = {
+		death = yes
+	}
+}

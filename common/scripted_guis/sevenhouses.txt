@@ -1,0 +1,78 @@
+﻿sevenhouseswindow_visible = { #used for button in HUD
+	scope = character 
+
+	is_valid = {
+		any_player = {
+			root = THIS
+		}
+		AND = {
+			OR = {
+				has_title = title:e_persia
+				top_liege = {
+					has_title = title:e_persia
+				}
+			}
+			NOT = {
+				exists = global_var:sevenhouses_dead
+			}
+			government_has_flag = government_is_eranshar 
+		}
+	}
+
+	effect = {
+	
+	}	 			
+}
+
+open_sevenhouses = {
+	scope = character 
+	effect = {
+		set_global_variable = {
+			name = shah_persia_window_var
+			value = title:e_persia.holder
+		}
+
+		add_to_variable_list = {
+			name = zik_persia_window
+			target = dynasty:900021
+		}
+
+		add_to_variable_list = {
+			name = mihran_persia_window
+			target = dynasty:mihran_dynasty
+		}
+
+		add_to_variable_list = {
+			name = suren_persia_window
+			target = dynasty:suren_dynasty
+		}
+
+		add_to_variable_list = {
+			name = varaz_persia_window
+			target = dynasty:varaz_dynasty
+		}
+
+		add_to_variable_list = {
+			name = spandiyadh_persia_window
+			target = dynasty:spandiyadh_dynasty
+		}
+
+		add_to_variable_list = {
+			name = karen_persia_window
+			target = dynasty:7511
+		}
+	}	
+}
+
+close_sevenhouses = {
+	scope = character
+	effect = {
+		clear_variable_list = shah_persia_window
+		clear_variable_list = karen_persia_window
+		clear_variable_list = spandiyadh_persia_window
+		clear_variable_list = varaz_persia_window
+		clear_variable_list = suren_persia_window
+		clear_variable_list = mihran_persia_window
+		clear_variable_list = zik_persia_window
+	}
+}

@@ -1,0 +1,738 @@
+﻿#Gudalans -- Fake Tribal Holders
+gudala_01 = {
+	name = "Masinissa"
+	religion = "amazigh_pagan"
+	culture = gaetulian
+	dynasty = gudala
+	340.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+gudala_02 = {
+	name = "Afalawas"
+	religion = "amazigh_pagan"
+	culture = gaetulian
+	dynasty = gudala
+	father = gudala_01 #Massinisa
+	385.1.1 = {
+		birth = yes
+	}
+	440.1.1 = {
+		death = yes
+	}
+}
+gudala_03 = {
+	name = "Aghecher"
+	religion = "amazigh_pagan"
+	culture = gaetulian
+	dynasty = gudala
+	father = gudala_02 #Afalawas
+	431.1.1 = {
+		birth = yes
+	}
+	489.1.1 = {
+		death = yes
+	}
+}
+
+#Messufa -- Fake Tribal Holders
+
+messufa_01 = {
+	name = "Berkan"
+	religion = "amazigh_pagan"
+	culture = gaetulian
+	dynasty = messufa
+	338.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+messufa_02 = {
+	name = "Misagenes"
+	religion = "amazigh_pagan"
+	culture = gaetulian
+	dynasty = messufa
+	father = messufa_01 #Berkan
+	388.1.1 = {
+		birth = yes
+	}
+	456.1.1 = {
+		death = yes
+	}
+}
+messufa_03 = {
+	name = "Mastanabal"
+	religion = "amazigh_pagan"
+	culture = gaetulian
+	dynasty = messufa
+	father = messufa_02 #Misagenes
+	423.1.1 = {
+		birth = yes
+	}
+	489.1.1 = {
+		death = yes
+	}
+}
+
+#Lamtuna -- Fake Tribal Holders
+
+lamtuna_01 = {
+	name = "Mennad"
+	religion = "amazigh_pagan"
+	culture = gaetulian
+	dynasty = lamtuna
+	335.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+lamtuna_02 = {
+	name = "Capussa"
+	religion = "amazigh_pagan"
+	culture = gaetulian
+	dynasty = lamtuna
+	father = lamtuna_01 #Mennad
+	389.1.1 = {
+		birth = yes
+	}
+	469.1.1 = {
+		death = yes
+	}
+}
+lamtuna_04 = {
+	name = "Hiba"
+	religion = "amazigh_pagan"
+	culture = gaetulian
+	dynasty = lamtuna
+	father = lamtuna_02 #Capussa
+	429.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+#Lamtuna -- Fake Tribal Holders
+
+gaetuli_01 = {
+	name = "Ighlaf"
+	dynasty = gaetuli_dynasty
+	religion = "amazigh_pagan"
+	culture = gaetulian
+	335.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+gaetuli_02 = {
+	name = "Matiya"
+	dynasty = gaetuli_dynasty
+	religion = "amazigh_pagan"
+	culture = gaetulian
+	father = gaetuli_01
+	389.1.1 = {
+		birth = yes
+	}
+	469.1.1 = {
+		death = yes
+	}
+}
+gaetuli_03 = {
+	name = "Tegama"
+	dynasty = gaetuli_dynasty
+	religion = "amazigh_pagan"
+	culture = gaetulian
+	father = gaetuli_02
+	429.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+
+####
+gaetuli_04 = {
+	name = "Afulay"
+	religion = "amazigh_pagan"
+	culture = gaetulian
+	450.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+gaetuli_05 = {
+	name = "Tacfin"
+	religion = "amazigh_pagan"
+	culture = gaetulian
+	460.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+gaetuli_06 = {
+	name = "Berkan"
+	religion = "amazigh_pagan"
+	culture = gaetulian
+	458.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+
+gaetuli_07 = {
+	name = Iher
+	religion = amazigh_pagan
+	culture = gaetulian
+	dynasty = baniures
+	340.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+
+gaetuli_08 = {
+	name = Matiya
+	religion = amazigh_pagan
+	culture = gaetulian
+	dynasty = baniures
+	father = gaetuli_07
+	380.1.1 = {
+		birth = yes
+	}
+	460.1.1 = {
+		death = yes
+	}
+}
+
+gaetuli_09 = {
+	name = Afulay
+	religion = amazigh_pagan
+	culture = autoleles
+	dynasty = zegrenses
+	335.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+
+gaetuli_10 = {
+	name = Tegama
+	religion = amazigh_pagan
+	culture = autoleles
+	dynasty = zegrenses
+	father = gaetuli_09
+	355.1.1 = {
+		birth = yes
+	}
+	420.1.1 = {
+		death = yes
+	}
+}
+
+gaetuli_11 = {
+	name = Tacfin
+	religion = amazigh_pagan
+	culture = autoleles
+	dynasty = nesimi
+	333.1.1 = {
+		birth = yes
+	}
+	408.1.1 = {
+		death = yes
+	}
+}
+
+gaetuli_12 = {
+	name = Berkan
+	religion = amazigh_pagan
+	culture = autoleles
+	dynasty = nesimi
+	father = gaetuli_11
+	354.1.1 = {
+		birth = yes
+	}
+	418.1.1 = {
+		death = yes
+	}
+}
+
+gaetuli_13 = {
+	name = Hiba
+	religion = amazigh_pagan
+	culture = autoleles
+	dynasty = autoleles
+	332.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+
+gaetuli_14 = {
+	name = Ighlaf
+	religion = amazigh_pagan
+	culture = autoleles
+	dynasty = autoleles
+	father = gaetuli_13
+	353.1.1 = {
+		birth = yes
+	}
+	419.1.1 = {
+		death = yes
+	}
+}
+
+gaetuli_15 = {
+	name = Taganim
+	religion = amazigh_pagan
+	culture = gaetulian
+	dynasty = ucutumani
+	303.1.1 = {
+		birth = yes
+	}
+	360.1.1 = {
+		death = yes
+	}
+}
+
+gaetuli_16 = {
+	name = Berkan
+	religion = amazigh_pagan
+	culture = gaetulian
+	dynasty = ucutumani
+	father = gaetuli_15
+	330.1.1 = {
+		birth = yes
+	}
+	390.1.1 = {
+		death = yes
+	}
+}
+
+gaetuli_17 = {
+	name = Tegama
+	religion = amazigh_pagan
+	culture = gaetulian
+	dynasty = ucutumani
+	father = gaetuli_16
+	375.1.1 = {
+		birth = yes
+	}
+	440.1.1 = {
+		death = yes
+	}
+}
+
+gaetuli_18 = {
+	name = Falem
+	religion = amazigh_pagan
+	culture = gaetulian
+	dynasty = eastbavares
+	322.1.1 = {
+		birth = yes
+	}
+	372.1.1 = {
+		death = yes
+	}
+}
+
+gaetuli_19 = {
+	name = Masmule
+	religion = amazigh_pagan
+	culture = gaetulian
+	dynasty = eastbavares
+	father = gaetuli_18
+	342.1.1 = {
+		birth = yes
+	}
+	405.1.1 = {
+		death = yes
+	}
+}
+
+gaetuli_20 = {
+	name = Hiba
+	religion = amazigh_pagan
+	culture = gaetulian
+	dynasty = eastbavares
+	father = gaetuli_19
+	380.1.1 = {
+		birth = yes
+	}
+	439.1.1 = {
+		death = yes
+	}
+}
+
+gaetuli_21 = {
+	name = Iher
+	religion = amazigh_pagan
+	culture = autoleles
+	dynasty = darian
+	332.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+
+gaetuli_22 = {
+	name = Hiba
+	religion = amazigh_pagan
+	culture = autoleles
+	dynasty = darian
+	father = gaetuli_21
+	355.1.1 = {
+		birth = yes
+	}
+	420.1.1 = {
+		death = yes
+	}
+}
+
+gaetuli_23 = {
+	name = Hiba
+	religion = amazigh_pagan
+	culture = autoleles
+	dynasty = darian
+	father = gaetuli_22
+	400.1.1 = {
+		birth = yes
+	}
+	450.1.1 = {
+		death = yes
+	}
+}
+
+gaetuli_24 = {
+	name = Hiba
+	religion = amazigh_pagan
+	culture = autoleles
+	dynasty = darian
+	father = gaetuli_23
+	435.1.1 = {
+		birth = yes
+	}
+	490.1.1 = {
+		death = yes
+	}
+}
+
+mauri_22 = {
+	name = Amellal
+	religion = amazigh_pagan
+	culture = gaetulian
+	dynasty = westbavares
+	335.1.1 = {
+		birth = yes
+	}
+	385.1.1 = {
+		death = yes
+	}
+}
+
+mauri_23 = {
+	name = Igmi
+	religion = amazigh_pagan
+	culture = gaetulian
+	dynasty = westbavares
+	father = mauri_22
+	365.1.1 = {
+		birth = yes
+	}
+	415.1.1 = {
+		death = yes
+	}
+}
+
+mauri_24 = {
+	name = Agama
+	religion = amazigh_pagan
+	culture = gaetulian
+	dynasty = westbavares
+	father = mauri_23
+	395.1.1 = {
+		birth = yes
+	}
+	445.1.1 = {
+		death = yes
+	}
+}
+
+mauri_25 = {
+	name = Capussa
+	religion = amazigh_pagan
+	culture = gaetulian
+	dynasty = westbavares
+	father = mauri_24
+	425.1.1 = {
+		birth = yes
+	}
+	475.1.1 = {
+		death = yes
+	}
+}
+
+mauri_26 = {
+	name = Iher
+	religion = amazigh_pagan
+	culture = gaetulian
+	dynasty = westbavares
+	father = mauri_25
+	455.1.1 = {
+		birth = yes
+	}
+	505.1.1 = {
+		death = yes
+	}
+}
+
+gaetuli_25 = {
+	name = Falem
+	religion = amazigh_pagan
+	culture = autoleles
+	dynasty = zegrenses
+	father = gaetuli_10
+	400.1.1 = {
+		birth = yes
+	}
+	459.1.1 = {
+		death = yes
+	}
+}
+
+gaetuli_26 = {
+	name = Capussa
+	religion = amazigh_pagan
+	culture = autoleles
+	dynasty = zegrenses
+	father = gaetuli_25
+	455.1.1 = {
+		birth = yes
+	}
+	534.1.1 = {
+		death = yes
+	}
+}
+
+gaetuli_27 = {
+	name = Agama
+	religion = amazigh_pagan
+	culture = autoleles
+	dynasty = autoleles
+	father = gaetuli_14
+	411.1.1 = {
+		birth = yes
+	}
+	470.1.1 = {
+		death = yes
+	}
+}
+
+gaetuli_28 = {
+	name = Iher
+	religion = amazigh_pagan
+	culture = autoleles
+	dynasty = autoleles
+	father = gaetuli_27
+	459.1.1 = {
+		birth = yes
+	}
+	536.1.1 = {
+		death = yes
+	}
+}
+
+gaetuli_29 = {
+	name = Afulay
+	religion = amazigh_pagan
+	culture = autoleles
+	dynasty = nesimi
+	father = gaetuli_12
+	405.1.1 = {
+		birth = yes
+	}
+	461.1.1 = {
+		death = yes
+	}
+}
+
+gaetuli_30 = {
+	name = Taganim
+	religion = amazigh_pagan
+	culture = autoleles
+	dynasty = nesimi
+	father = gaetuli_29
+	454.1.1 = {
+		birth = yes
+	}
+	533.1.1 = {
+		death = yes
+	}
+}
+
+gaetuli_31 = {
+	name = Hiba
+	religion = chalcedonian
+	culture = gaetulian
+	dynasty = westbavares
+	father = mauri_26
+	490.1.1 = {
+		birth = yes
+	}
+	540.1.1 = {
+		death = yes
+	}
+}
+
+gaetuli_32 = {
+	name = Capsur
+	religion = amazigh_pagan
+	culture = gaetulian
+	dynasty = caprapicti
+	trait = education_martial_2
+	trait = cynical
+	trait = brave
+	456.1.1 = {
+		birth = yes
+	}
+	510.1.1 = {
+		death = yes
+	}
+}
+
+gaetuli_33 = {
+	name = Falem
+	religion = amazigh_pagan
+	culture = autoleles
+	dynasty = darian
+	father = gaetuli_24
+	486.1.1 = {
+		birth = yes
+	}
+	544.1.1 = {
+		death = yes
+	}
+}
+
+gaetuli_34 = {
+	name = Cusina
+	religion = chalcedonian
+	culture = gaetulian
+	dynasty = mastraciani
+	trait = deceitful
+	trait = education_martial_3
+	father = gaetuli_38
+	mother = gaetuli_39
+	512.1.1 = {
+		birth = yes
+	}
+	532.1.1 = {
+		set_relation_rival = character:gaetuli_36
+	}
+	563.1.1 = {
+		death = yes
+	}
+}
+
+gaetuli_35 = {
+	name = Guenfan
+	religion = ammon_pagan
+	culture = maurian
+	dynasty = frexes
+	450.1.1 = {
+		birth = yes
+	}
+	515.1.1 = {
+		death = yes
+	}
+}
+
+gaetuli_36 = {
+	name = Antalas
+	religion = ammon_pagan
+	culture = maurian
+	dynasty = frexes
+	father = gaetuli_35
+	trait = ambitious
+	trait = brave
+	trait = education_martial_3
+	493.1.1 = {
+		birth = yes
+	}
+	523.1.1 = {
+		set_relation_rival = character:vandals_005
+		set_relation_rival = character:vandals_148
+	}
+	532.1.1 = {
+		set_relation_rival = character:gaetuli_34
+	}
+	550.1.1 = {
+		death = yes
+	}
+}
+
+gaetuli_37 = {
+	name = Guarzila
+	religion = ammon_pagan
+	culture = maurian
+	dynasty = frexes
+	father = gaetuli_35
+	495.1.1 = {
+		birth = yes
+	}
+	544.1.1 = {
+		death = yes
+	}
+}
+
+gaetuli_38 = {
+	name = Cusina # fictional name
+	religion = chalcedonian
+	culture = gaetulian # massylian
+	dynasty = mastraciani
+	480.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		add_spouse = gaetuli_39
+	}
+	532.1.1 = {
+		death = yes
+	}
+}
+
+gaetuli_39 = {
+	name = Cyra # fictional name
+	female = yes
+	religion = chalcedonian
+	culture = afro_roman
+	482.1.1 = {
+		birth = yes
+	}
+	532.1.1 = {
+		death = yes
+	}
+}

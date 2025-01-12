@@ -1,0 +1,2153 @@
+﻿namespace = senate
+
+senate.0001 = {
+	title = senate.0001.t
+	desc = senate.0001.desc
+	scope = character
+	theme = diplomacy
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	right_portrait = {
+		character = scope:random_high_senator
+		animation = personality_honorable
+	}
+	immediate = {
+		if = {
+			limit = {
+				OR = {
+					access_to_eastern_senate = yes
+					any_liege_or_above = {
+						access_to_eastern_senate = yes
+					}
+				}
+			}
+			random_in_global_list = {
+				variable  = high_senate_eastern
+				save_scope_as = random_high_senator
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					access_to_italian_senate = yes
+					any_liege_or_above = {
+						access_to_italian_senate = yes
+					}
+				}
+			}
+			random_in_global_list = {
+				variable  = high_senate_italy
+				save_scope_as = random_high_senator
+			}
+		}
+	}
+
+	option = {
+		name = senate.0001.a
+		add_prestige = 500
+		if = {
+			limit = {
+				OR = {
+					access_to_eastern_senate = yes
+					any_liege_or_above = {
+						access_to_eastern_senate = yes
+					}
+				}
+			}
+			every_in_global_list = {
+				variable  = all_senate_eastern
+				add_opinion = {
+					target = root
+					opinion = 50
+					years = 5
+					modifier = supported_senate
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					access_to_italian_senate = yes
+					any_liege_or_above = {
+						access_to_italian_senate = yes
+					}
+				}
+			}
+			every_in_global_list = {
+				variable  = all_senate_italy
+				add_opinion = {
+					target = root
+					opinion = 50
+					years = 5
+					modifier = supported_senate
+				}
+			}
+		}
+	}
+}
+senate.0002 = {
+	title = senate.0002.t
+	desc = senate.0002.desc
+	scope = character
+	theme = diplomacy
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	right_portrait = {
+		character = scope:random_high_senator
+		animation = personality_honorable
+	}
+	immediate = {
+		if = {
+			limit = {
+				OR = {
+					access_to_eastern_senate = yes
+					any_liege_or_above = {
+						access_to_eastern_senate = yes
+					}
+				}
+			}
+			random_in_global_list = {
+				variable  = high_senate_eastern
+				save_scope_as = random_high_senator
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					access_to_italian_senate = yes
+					any_liege_or_above = {
+						access_to_italian_senate = yes
+					}
+				}
+			}
+			random_in_global_list = {
+				variable  = high_senate_italy
+				save_scope_as = random_high_senator
+			}
+		}
+	}
+
+	option = {
+		name = senate.0002.a
+		add_prestige = 500
+		add_piety = 200
+		if = {
+			limit = {
+				OR = {
+					access_to_eastern_senate = yes
+					any_liege_or_above = {
+						access_to_eastern_senate = yes
+					}
+				}
+			}
+			every_in_global_list = {
+				variable  = all_senate_eastern
+				add_opinion = {
+					target = root
+					opinion = 50
+					years = 5
+					modifier = supported_senate
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					access_to_italian_senate = yes
+					any_liege_or_above = {
+						access_to_italian_senate = yes
+					}
+				}
+			}
+			every_in_global_list = {
+				variable  = all_senate_italy
+				add_opinion = {
+					target = root
+					opinion = 50
+					years = 5
+					modifier = supported_senate
+				}
+			}
+		}
+	}
+}
+senate.0003 = {	
+	title = senate.0003.t
+	desc = senate.0003.desc
+	scope = character
+	theme = diplomacy
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	right_portrait = {
+		character = scope:random_high_senator
+		animation = personality_honorable
+	}
+	immediate = {
+		if = {
+			limit = {
+				OR = {
+					access_to_eastern_senate = yes
+					any_liege_or_above = {
+						access_to_eastern_senate = yes
+					}
+				}
+			}
+			random_in_global_list = {
+				variable  = high_senate_eastern
+				save_scope_as = random_high_senator
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					access_to_italian_senate = yes
+					any_liege_or_above = {
+						access_to_italian_senate = yes
+					}
+				}
+			}
+			random_in_global_list = {
+				variable  = high_senate_italy
+				save_scope_as = random_high_senator
+			}
+		}
+	}
+
+	option = {
+		name = senate.0003.a
+		add_prestige = 750
+		add_dread = 10
+		if = {
+			limit = {
+				OR = {
+					access_to_eastern_senate = yes
+					any_liege_or_above = {
+						access_to_eastern_senate = yes
+					}
+				}
+			}
+			every_in_global_list = {
+				variable  = all_senate_eastern
+				add_opinion = {
+					target = root
+					opinion = 50
+					years = 5
+					modifier = supported_senate
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					access_to_italian_senate = yes
+					any_liege_or_above = {
+						access_to_italian_senate = yes
+					}
+				}
+			}
+			every_in_global_list = {
+				variable  = all_senate_italy
+				add_opinion = {
+					target = root
+					opinion = 50
+					years = 5
+					modifier = supported_senate
+				}
+			}
+		}
+	}
+}
+senate.0004 = {	
+	title = senate.0004.t
+	desc = senate.0004.desc
+	scope = character
+	theme = diplomacy
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	right_portrait = {
+		character = scope:random_high_senator
+		animation = personality_honorable
+	}
+	immediate = {
+		if = {
+			limit = {
+				OR = {
+					access_to_eastern_senate = yes
+					any_liege_or_above = {
+						access_to_eastern_senate = yes
+					}
+				}
+			}
+			random_in_global_list = {
+				variable  = high_senate_eastern
+				save_scope_as = random_high_senator
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					access_to_italian_senate = yes
+					any_liege_or_above = {
+						access_to_italian_senate = yes
+					}
+				}
+			}
+			random_in_global_list = {
+				variable  = high_senate_italy
+				save_scope_as = random_high_senator
+			}
+		}
+	}
+
+	option = {
+		name = senate.0004.a
+		add_prestige = 500
+		add_stewardship_lifestyle_xp = 200
+		if = {
+			limit = {
+				OR = {
+					access_to_eastern_senate = yes
+					any_liege_or_above = {
+						access_to_eastern_senate = yes
+					}
+				}
+			}
+			every_in_global_list = {
+				variable  = all_senate_eastern
+				add_opinion = {
+					target = root
+					opinion = 50
+					years = 5
+					modifier = supported_senate
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					access_to_italian_senate = yes
+					any_liege_or_above = {
+						access_to_italian_senate = yes
+					}
+				}
+			}
+			every_in_global_list = {
+				variable  = all_senate_italy
+				add_opinion = {
+					target = root
+					opinion = 50
+					years = 5
+					modifier = supported_senate
+				}
+			}
+		}
+	}
+}
+senate.0005 = {	
+	hidden = yes
+	immediate = {
+		title:c_roma.holder.top_liege = {
+			trigger_event = senate.0006
+		}
+	}
+}
+senate.0006 = {	
+	hidden = yes
+	immediate = {
+		title:c_roma.holder.top_liege = {
+			random_neighboring_top_liege_realm_owner = {
+				limit = {
+					trigger_if = {
+						limit = {
+							any_neighboring_top_liege_realm_owner = {
+								max_military_strength <= 2000
+							}
+						}
+						max_military_strength <= 2000
+					}
+					is_alive = yes
+					is_landed = yes
+					NOT = {
+						AND = {
+							exists = var:my_suzerain
+							var:my_suzerain = title:c_roma.holder.top_liege
+							var:my_suzerain = {
+								OR = {
+									is_target_in_variable_list = { name = non_permanent_tributaries target = prev }  #tributaries are gud
+									is_target_in_variable_list = { name = permanent_tributaries target = prev }
+								}
+							}
+						}
+					}
+				}
+				set_global_variable = {
+					name = italy_senate_conquer
+					value = THIS
+				}
+			}
+		}
+	}
+}
+senate.0007 = {	
+	hidden = yes
+	immediate = {
+		title:c_byzantion.holder.top_liege = {
+			random_neighboring_top_liege_realm_owner = {
+				limit = {
+					trigger_if = {
+						limit = {
+							any_neighboring_top_liege_realm_owner = {
+								max_military_strength <= 2000
+							}
+						}
+						max_military_strength <= 2000
+					}
+					is_alive = yes
+					is_landed = yes
+					NOT = {
+						AND = {
+							exists = var:my_suzerain
+							var:my_suzerain = title:c_byzantion.holder.top_liege
+							var:my_suzerain = {
+								OR = {
+									is_target_in_variable_list = { name = non_permanent_tributaries target = prev }  #tributaries are gud
+									is_target_in_variable_list = { name = permanent_tributaries target = prev }
+								}
+							}
+						}
+					}
+				}
+				set_global_variable = {
+					name = eastern_senate_conquer
+					value = THIS
+				}
+			}
+		}
+	}
+}
+
+senate.0008 = {
+	title = senate.0008.t
+	desc = senate.0008.desc
+	scope = character
+	theme = diplomacy
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	right_portrait = {
+		character = scope:random_high_senator
+		animation = personality_honorable
+	}
+	immediate = {
+		save_scope_as = decision_maker_senate
+		primary_title = {
+			random_past_holder = {
+				limit = {
+					faith = root.faith
+				}
+				root = {
+					set_variable = {
+						name = emperor_senate_selected
+						value = PREV
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					access_to_eastern_senate = yes
+					any_liege_or_above = {
+						access_to_eastern_senate = yes
+					}
+				}
+			}
+			random_in_global_list = {
+				variable  = high_senate_eastern
+				save_scope_as = random_high_senator
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					access_to_italian_senate = yes
+					any_liege_or_above = {
+						access_to_italian_senate = yes
+					}
+				}
+			}
+			random_in_global_list = {
+				variable  = high_senate_italy
+				save_scope_as = random_high_senator
+			}
+		}
+	}
+	widgets = {
+		widget = {
+			gui = "event_window_widget_apotheosise_senate"
+			container = "senate_emperor_select"
+			controller = default
+			setup_scope = { root = { save_scope_as = decision_maker_senate } }
+		}
+	}
+	option = {
+		name = senate.0008.a
+		if = {
+			limit = {
+				var:emperor_senate_selected.dynasty = root.dynasty
+			}
+			add_character_modifier = apotheosised_relative
+			dynasty = {
+				add_dynasty_modifier = apotheosised_dynasty
+			}
+		}
+		else = {
+			capital_county = {
+				add_county_modifier = apotheosised_emperor_tomb
+			}
+		}
+		var:emperor_senate_selected = {
+			add_trait = apotheosised_trait
+		}
+		if = {
+			limit = {
+				OR = {
+					var:emperor_senate_selected.martial < 5
+					var:emperor_senate_selected.diplomacy < 5
+					var:emperor_senate_selected.stewardship < 5
+					var:emperor_senate_selected.intrigue < 5
+					var:emperor_senate_selected.learning < 5
+				}
+			}
+			add_prestige_level = -2
+		}
+		else_if = {
+			limit = {
+				OR = {
+					var:emperor_senate_selected.martial < 10
+					var:emperor_senate_selected.diplomacy < 10
+					var:emperor_senate_selected.stewardship < 10
+					var:emperor_senate_selected.intrigue < 10
+					var:emperor_senate_selected.learning < 10
+				}
+			}
+			add_prestige_level = -1
+		}
+		clear_variable_list = available_emperors_to_apotheosise
+	}
+	option = {
+		name = senate.0008.b
+		add_gold = 150
+		add_prestige = 200
+		clear_variable_list = available_emperors_to_apotheosise
+		remove_character_flag = apotheosised_emperor_in_lifetime
+	}
+}
+
+senate.0009 = {	
+	hidden = yes
+	immediate = {
+		decide_senate_idea = yes
+	}
+}
+senate.0010 = {
+	title = senate.0010.t
+	desc = senate.0010.desc
+	scope = character
+	theme = diplomacy
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	right_portrait = {
+		character = scope:revolt_leader
+		animation = rage
+	}
+	trigger = {
+		AND = {
+			highest_held_title_tier >= tier_county
+			any_vassal = {
+				trigger_if = {
+					limit = {
+						root = {
+							highest_held_title_tier = tier_empire
+						}
+					}
+					highest_held_title_tier = tier_kingdom
+				}
+				trigger_else_if = {
+					limit = {
+						root = {
+							highest_held_title_tier = tier_kingdom
+						}
+					}
+					highest_held_title_tier = tier_duchy
+				}
+				trigger_else = {
+					highest_held_title_tier > tier_county
+				}
+				NOT = {
+					is_allied_to  = top_liege
+				}
+				is_ai = yes
+			}
+		}
+	}
+	immediate = {
+		random_list = {
+			33 = {
+				add_character_flag = coup_revolt
+			}
+			33 = {
+				add_character_flag = liberty_revolt
+			}
+			33 = {
+				add_character_flag = depose_revolt
+			}
+		}
+		ordered_vassal = {
+			limit = {
+				trigger_if = {
+					limit = {
+						root = {
+							highest_held_title_tier = tier_empire
+						}
+					}
+					highest_held_title_tier = tier_kingdom
+				}
+				trigger_else_if = {
+					limit = {
+						root = {
+							highest_held_title_tier = tier_kingdom
+						}
+					}
+					highest_held_title_tier = tier_duchy
+				}
+				trigger_else = {
+					highest_held_title_tier > tier_county
+				}
+				NOT = {
+					is_allied_to  = top_liege
+				}
+				is_ai = yes
+			}
+			order_by = lol_opinion_value
+			position = 0
+			save_scope_as = revolt_leader
+		}
+	}
+
+	option = {
+		name = senate.0010.a
+		if = {
+			limit = {
+				access_to_italian_senate = yes
+			}
+			remove_gold_to_revolting_party_italy = {
+				GOLD_REMOVED = 500
+			}
+			add_opinion_to_revolting_party_italy = yes
+		}
+		if = {
+			limit = {
+				access_to_eastern_senate = yes
+			}
+			remove_gold_to_revolting_party_eastern = {
+				GOLD_REMOVED = 500
+			}
+			add_opinion_to_revolting_party_eastern = yes
+		}
+		add_dread = -35
+		add_prestige = -500
+		remove_character_flag = coup_revolt
+		remove_character_flag = liberty_revolt
+		remove_character_flag = depose_revolt
+	}
+	option = {
+		name = senate.0010.b
+		if = {
+			limit = {
+				access_to_italian_senate = yes
+			}
+			scope:revolt_leader = {
+				remove_gold_from_revolting_party_italy = {
+					GOLD_REMOVED = 500
+				}
+			}
+		}
+		if = {
+			limit = {
+				access_to_eastern_senate = yes
+			}
+			scope:revolt_leader = {
+				remove_gold_from_revolting_party_eastern = {
+					GOLD_REMOVED = 500
+				}
+			}
+		}
+		scope:revolt_leader = {
+			if = {
+				limit = {
+					root = {
+						has_character_flag = coup_revolt
+					}
+				}
+				add_pressed_claim = root.primary_title
+				start_war = {
+					cb = claim_cb
+					target = root
+					claimant = scope:revolt_leader
+					target_title = root.primary_title
+				}
+			}
+			else_if = {
+				limit = {
+					root = {
+						has_character_flag = liberty_revolt
+					}
+				}
+				start_war = {
+					cb = liberty_faction_war
+					target = root
+				}
+			}
+			else = {
+				start_war = {
+					cb = depose_war
+					target = root
+				}
+			}
+		}
+		scope:revolt_leader = {
+			random_character_war = {
+				limit = {
+					any_war_defender = {
+						THIS = scope:revolt_leader.top_liege
+					}
+				}
+				save_scope_as = lol_revolt_war
+			}
+		}
+		if = {
+			limit = {
+				access_to_italian_senate = yes
+			}
+			if = {
+				limit = {
+					senate_italy_two_party_revolting = yes
+				}
+				ordered_vassal = {
+					limit = {
+						highest_held_title_tier = tier_kingdom
+						NOT = {
+							is_allied_to  = top_liege
+						}
+						is_ai = yes
+					}
+					order_by = lol_opinion_value
+					position = 2
+					remove_gold_from_revolting_party_italy = {
+						GOLD_REMOVED = 500
+					}
+					hidden_effect = {
+						scope:lol_revolt_war = {
+							add_attacker = PREV
+						}
+					}
+					
+				}
+			}
+			else_if = {
+				limit = {
+					senate_italy_all_party_revolting = yes
+				}
+				ordered_vassal = {
+					limit = {
+						highest_held_title_tier = tier_kingdom
+						NOT = {
+							is_allied_to  = top_liege
+						}
+						is_ai = yes
+					}
+					order_by = lol_opinion_value
+					position = 2
+					remove_gold_from_revolting_party_italy = {
+						GOLD_REMOVED = 500
+					}
+					hidden_effect = {
+						scope:lol_revolt_war = {
+							add_attacker = PREV
+						}
+					}
+				}
+				ordered_vassal = {
+					limit = {
+						highest_held_title_tier = tier_kingdom
+						NOT = {
+							is_allied_to  = top_liege
+						}
+						is_ai = yes
+					}
+					order_by = lol_opinion_value
+					position = 3
+					remove_gold_from_revolting_party_italy = {
+						GOLD_REMOVED = 500
+					}
+					hidden_effect = {
+						scope:lol_revolt_war = {
+							add_attacker = PREV
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				access_to_eastern_senate = yes
+			}
+			if = {
+				limit = {
+					senate_eastern_two_party_revolting = yes
+				}
+				ordered_vassal = {
+					limit = {
+						highest_held_title_tier = tier_kingdom
+						NOT = {
+							is_allied_to  = top_liege
+						}
+						is_ai = yes
+					}
+					order_by = lol_opinion_value
+					position = 2
+					remove_gold_from_revolting_party_eastern = {
+						GOLD_REMOVED = 500
+					}
+					hidden_effect = {
+						scope:lol_revolt_war = {
+							add_attacker = PREV
+						}
+					}
+					
+				}
+			}
+			else_if = {
+				limit = {
+					senate_eastern_all_party_revolting = yes
+				}
+				ordered_vassal = {
+					limit = {
+						highest_held_title_tier = tier_kingdom
+						NOT = {
+							is_allied_to  = top_liege
+						}
+						is_ai = yes
+					}
+					order_by = lol_opinion_value
+					position = 2
+					remove_gold_from_revolting_party_eastern = {
+						GOLD_REMOVED = 500
+					}
+					hidden_effect = {
+						scope:lol_revolt_war = {
+							add_attacker = PREV
+						}
+					}
+				}
+				ordered_vassal = {
+					limit = {
+						highest_held_title_tier = tier_kingdom
+						NOT = {
+							is_allied_to  = top_liege
+						}
+						is_ai = yes
+					}
+					order_by = lol_opinion_value
+					position = 3
+					remove_gold_from_revolting_party_eastern = {
+						GOLD_REMOVED = 500
+					}
+					hidden_effect = {
+						scope:lol_revolt_war = {
+							add_attacker = PREV
+						}
+					}
+				}
+			}
+		}
+		remove_character_flag = coup_revolt
+		remove_character_flag = liberty_revolt
+		remove_character_flag = depose_revolt
+	}
+}
+senate.0011 = {
+	title = senate.0011.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { access_to_italian_senate = yes }
+				desc = senate.0011.desc_italy
+			}
+			triggered_desc = {
+				trigger = { access_to_eastern_senate = yes }
+				desc = senate.0011.desc_eastern
+			}
+		}
+	}
+	scope = character
+	theme = diplomacy
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+
+	option = {
+		name = senate.0011.a
+		capital_county = {
+			add_county_modifier = {
+				modifier = unruly_lords
+				years = 3
+			}
+		}
+	}
+}
+senate.0012 = {
+	title = senate.0012.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { access_to_italian_senate = yes }
+				desc = senate.0012.desc_italy
+			}
+			triggered_desc = {
+				trigger = { access_to_eastern_senate = yes }
+				desc = senate.0012.desc_eastern
+			}
+		}
+	}
+	scope = character
+	theme = diplomacy
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+
+	option = {
+		name = senate.0012.a
+		add_character_modifier = {
+			modifier = bought_out_retinue
+			years = 3
+		}
+	}
+}
+senate.0013 = {
+	title = senate.0013.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { access_to_italian_senate = yes }
+				desc = senate.0013.desc_italy
+			}
+			triggered_desc = {
+				trigger = { access_to_eastern_senate = yes }
+				desc = senate.0013.desc_eastern
+			}
+		}
+	}
+	scope = character
+	theme = diplomacy
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	option = {
+		name = senate.0013.a
+		remove_short_term_gold = 250
+	}
+	option = {
+		name = senate.0013.b
+		add_character_modifier = {
+			modifier = salaries_increased
+			years = 3
+		}
+	}
+}
+senate.0014 = {
+	title = senate.0014.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { access_to_italian_senate = yes }
+				desc = senate.0014.desc_italy
+			}
+			triggered_desc = {
+				trigger = { access_to_eastern_senate = yes }
+				desc = senate.0014.desc_eastern
+			}
+		}
+	}
+	scope = character
+	theme = diplomacy
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	option = {
+		name = senate.0014.a
+		remove_short_term_gold = 250
+		add_dread = -10
+	}
+	option = {
+		name = senate.0014.b
+		capital_county = {
+			add_county_modifier = {
+				modifier = missing_scholars
+				years = 3
+			}
+		}
+	}
+}
+senate.0015 = {
+	title = senate.0015.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { access_to_italian_senate = yes }
+				desc = senate.0015.desc_italy
+			}
+			triggered_desc = {
+				trigger = { access_to_eastern_senate = yes }
+				desc = senate.0015.desc_eastern
+			}
+		}
+	}
+	scope = character
+	theme = diplomacy
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	option = {
+		name = senate.0015.a
+		every_sub_realm_county = {
+			limit = {
+				holder = root
+			}
+			change_development_level = -2
+		}
+	}
+	option = {
+		name = senate.0015.b
+		every_sub_realm_county = {
+			limit = {
+				holder = root
+			}
+			add_county_modifier = {
+				modifier = sown_dissent_opinion
+				years = 3
+			}
+		}
+	}
+	option = {
+		name = senate.0015.c
+		every_sub_realm_county = {
+			limit = {
+				holder = root
+			}
+			change_county_control = -80
+		}
+	}
+}
+senate.0016 = {
+	title = senate.0016.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { access_to_italian_senate = yes }
+				desc = senate.0016.desc_italy
+			}
+			triggered_desc = {
+				trigger = { access_to_eastern_senate = yes }
+				desc = senate.0016.desc_eastern
+			}
+		}
+	}
+	scope = character
+	theme = diplomacy
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	option = {
+		name = senate.0016.a
+		capital_county = {
+			add_county_modifier = {
+				modifier = new_markets
+				years = 1
+			}
+		}
+	}
+}
+senate.0017 = {
+	title = senate.0017.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { access_to_italian_senate = yes }
+				desc = senate.0017.desc_italy
+			}
+			triggered_desc = {
+				trigger = { access_to_eastern_senate = yes }
+				desc = senate.0017.desc_eastern
+			}
+		}
+	}
+	scope = character
+	theme = diplomacy
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	option = {
+		name = senate.0017.a
+		capital_county = {
+			add_county_modifier = {
+				modifier = new_forests
+				years = 1
+			}
+		}
+	}
+}
+senate.0018 = {
+	title = senate.0018.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { access_to_italian_senate = yes }
+				desc = senate.0018.desc_italy
+			}
+			triggered_desc = {
+				trigger = { access_to_eastern_senate = yes }
+				desc = senate.0018.desc_eastern
+			}
+		}
+	}
+	scope = character
+	theme = diplomacy
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	option = {
+		name = senate.0018.a
+		capital_county = {
+			add_county_modifier = {
+				modifier = field_workers
+				years = 1
+			}
+		}
+	}
+}
+senate.0019 = {
+	title = senate.0019.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { access_to_italian_senate = yes }
+				desc = senate.0019.desc_italy
+			}
+			triggered_desc = {
+				trigger = { access_to_eastern_senate = yes }
+				desc = senate.0019.desc_eastern
+			}
+		}
+	}
+	scope = character
+	theme = diplomacy
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	option = {
+		name = senate.0019.a
+		capital_county = {
+			add_county_modifier = {
+				modifier = increased_traders
+				years = 1
+			}
+		}
+	}
+	option = {
+		name = senate.0019.b
+		capital_county = {
+			add_county_modifier = {
+				modifier = increased_field_workers
+				years = 1
+			}
+		}
+	}
+}
+senate.0020 = {
+	title = senate.0020.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { access_to_italian_senate = yes }
+				desc = senate.0020.desc_italy
+			}
+			triggered_desc = {
+				trigger = { access_to_eastern_senate = yes }
+				desc = senate.0020.desc_eastern
+			}
+		}
+	}
+	scope = character
+	theme = diplomacy
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	option = {
+		name = senate.0020.a
+		every_sub_realm_county = {
+			limit = {
+				holder = root
+			}
+			add_county_modifier = {
+				modifier = senators_solved_popular_issues
+				years = 1
+			}
+		}
+	}
+}
+senate.0021 = {
+	title = senate.0021.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { access_to_italian_senate = yes }
+				desc = senate.0021.desc_italy
+			}
+			triggered_desc = {
+				trigger = { access_to_eastern_senate = yes }
+				desc = senate.0021.desc_eastern
+			}
+		}
+	}
+	scope = character
+	theme = diplomacy
+	trigger = {
+		NOT = {
+			game_start_date = 532.2.1
+		}
+		if = {
+			limit = {
+				access_to_italian_senate = yes
+			}
+			OR = {
+				AND = {
+					OR = {
+						senate_italy_aristocratic_loyal = yes
+						senate_italy_aristocratic_supportive = yes
+					}
+					global_var:aristocratic_senate_italy_gold >= TFE_games_predicted_cost_half
+				}
+				AND = {
+					OR = {
+						senate_italy_populist_loyal = yes
+						senate_italy_populist_supportive = yes
+					}
+					global_var:populist_senate_italy_gold >= TFE_games_predicted_cost_half
+				}
+				AND = {
+					OR = {
+						senate_italy_traditionalist_loyal = yes
+						senate_italy_traditionalist_supportive = yes
+					}
+					global_var:traditionalist_senate_italy_gold >= TFE_games_predicted_cost_half
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				access_to_eastern_senate = yes
+			}
+			OR = {
+				AND = {
+					OR = {
+						senate_eastern_aristocratic_loyal = yes
+						senate_eastern_aristocratic_supportive = yes
+					}
+					global_var:aristocratic_senate_eastern_gold >= TFE_games_predicted_cost_half
+				}
+				AND = {
+					OR = {
+						senate_eastern_populist_loyal = yes
+						senate_eastern_populist_supportive = yes
+					}
+					global_var:populist_senate_eastern_gold >= TFE_games_predicted_cost_half
+				}
+				AND = {
+					OR = {
+						senate_eastern_traditionalist_loyal = yes
+						senate_eastern_traditionalist_supportive = yes
+					}
+					global_var:traditionalist_senate_eastern_gold >= TFE_games_predicted_cost_half
+				}
+			}
+		}
+	}
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	option = {
+		name = senate.0021.a
+		#remove_short_term_gold = half_activity_mny
+		#custom_tooltip = sponsor_gladiator_games_decision_effect
+		#custom_tooltip = sponsor_gladiator_games_decision_effect_2
+		#create_story = story_sponsor_gladiator_games_decision
+		custom_tooltip = senate_funds_games_half_tt
+		root = {
+			add_character_flag = senate_funds_games_half
+		}
+		if = {
+			limit = {
+				access_to_italian_senate = yes
+			}
+			remove_gold_from_loyal_or_supportive_party_italy = { GOLD_REMOVED = TFE_games_predicted_cost_half }
+		}
+		else_if = {
+			limit = {
+				access_to_eastern_senate = yes
+			}
+			remove_gold_from_loyal_or_supportive_party_eastern = { GOLD_REMOVED = TFE_games_predicted_cost_half }
+		}
+	}
+	option = {
+		name = senate.0021.b
+		if = {
+			limit = {
+				access_to_italian_senate = yes
+			}
+			remove_gold_from_loyal_or_supportive_party_italy = { GOLD_REMOVED = TFE_games_predicted_cost_half }
+		}
+		else_if = {
+			limit = {
+				access_to_eastern_senate = yes
+			}
+			remove_gold_from_loyal_or_supportive_party_eastern = { GOLD_REMOVED = TFE_games_predicted_cost_half }
+		}
+		add_gold = TFE_games_predicted_cost_half
+	}
+}
+
+senate.0022 = {
+	title = senate.0022.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { access_to_italian_senate = yes }
+				desc = senate.0022.desc_italy
+			}
+			triggered_desc = {
+				trigger = { access_to_eastern_senate = yes }
+				desc = senate.0022.desc_eastern
+			}
+		}
+	}
+	scope = character
+	theme = diplomacy
+	trigger = {
+		if = {
+			limit = {
+				access_to_italian_senate = yes
+			}
+			OR = {
+				AND = {
+					OR = {
+						senate_italy_aristocratic_loyal = yes
+						senate_italy_aristocratic_supportive = yes
+					}
+					global_var:aristocratic_senate_italy_gold >= root.capital_county.duchy.distribute_bread_price
+				}
+				AND = {
+					OR = {
+						senate_italy_populist_loyal = yes
+						senate_italy_populist_supportive = yes
+					}
+					global_var:populist_senate_italy_gold >= root.capital_county.duchy.distribute_bread_price
+				}
+				AND = {
+					OR = {
+						senate_italy_traditionalist_loyal = yes
+						senate_italy_traditionalist_supportive = yes
+					}
+					global_var:traditionalist_senate_italy_gold >= root.capital_county.duchy.distribute_bread_price
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				access_to_eastern_senate = yes
+			}
+			OR = {
+				AND = {
+					OR = {
+						senate_eastern_aristocratic_loyal = yes
+						senate_eastern_aristocratic_supportive = yes
+					}
+					global_var:aristocratic_senate_eastern_gold >= root.capital_county.duchy.distribute_bread_price
+				}
+				AND = {
+					OR = {
+						senate_eastern_populist_loyal = yes
+						senate_eastern_populist_supportive = yes
+					}
+					global_var:populist_senate_eastern_gold >= root.capital_county.duchy.distribute_bread_price
+				}
+				AND = {
+					OR = {
+						senate_eastern_traditionalist_loyal = yes
+						senate_eastern_traditionalist_supportive = yes
+					}
+					global_var:traditionalist_senate_eastern_gold >= root.capital_county.duchy.distribute_bread_price
+				}
+			}
+		}
+	}
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	option = {
+		name = senate.0022.a
+		capital_county.duchy = {
+			save_temporary_scope_as = current_title
+			every_in_de_jure_hierarchy = {
+				limit = {
+					tier = tier_county
+					
+					holder = {
+						OR = {
+							this = scope:current_title.holder
+							is_vassal_or_below_of = scope:current_title.holder
+						}
+					}
+				}
+				add_county_modifier = {
+					modifier = distribute_bread_modifier
+					years = 10
+				}
+			}
+		}
+		if = {
+			limit = {
+				access_to_italian_senate = yes
+			}
+			remove_gold_from_loyal_or_supportive_party_italy = { GOLD_REMOVED = root.capital_county.duchy.distribute_bread_price }
+		}
+		else_if = {
+			limit = {
+				access_to_eastern_senate = yes
+			}
+			remove_gold_from_loyal_or_supportive_party_eastern = { GOLD_REMOVED = root.capital_county.duchy.distribute_bread_price }
+		}
+	}
+	option = {
+		name = senate.0022.b
+		if = {
+			limit = {
+				access_to_italian_senate = yes
+			}
+			remove_gold_from_loyal_or_supportive_party_italy = { GOLD_REMOVED = root.capital_county.duchy.distribute_bread_price }
+		}
+		else_if = {
+			limit = {
+				access_to_eastern_senate = yes
+			}
+			remove_gold_from_loyal_or_supportive_party_eastern = { GOLD_REMOVED = root.capital_county.duchy.distribute_bread_price }
+		}
+		add_gold = root.capital_county.duchy.distribute_bread_price
+		capital_county.duchy = {
+			save_temporary_scope_as = current_title
+			every_in_de_jure_hierarchy = {
+				limit = {
+					tier = tier_county
+					
+					holder = {
+						OR = {
+							this = scope:current_title.holder
+							is_vassal_or_below_of = scope:current_title.holder
+						}
+					}
+				}
+				add_county_modifier = {
+					modifier = withheld_bread_modifier
+					years = 10
+				}
+			}
+		}
+	}
+}
+
+senate.0023 = {
+	title = senate.0023.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { access_to_italian_senate = yes }
+				desc = senate.0023.desc_italy
+			}
+			triggered_desc = {
+				trigger = { access_to_eastern_senate = yes }
+				desc = senate.0023.desc_eastern
+			}
+		}
+	}
+	scope = character
+	theme = diplomacy
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	option = {
+		name = senate.0023.a
+		add_gold = 250
+		
+	}
+	option = {
+		name = senate.0023.b
+		add_character_modifier = {
+			modifier = reinvested_gift
+			years = 5
+		}
+	}
+}
+
+senate.0024 = {
+	title = senate.0024.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { access_to_italian_senate = yes }
+				desc = senate.0024.desc_italy
+			}
+			triggered_desc = {
+				trigger = { access_to_eastern_senate = yes }
+				desc = senate.0024.desc_eastern
+			}
+		}
+	}
+	scope = character
+	theme = diplomacy
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	option = {
+		name = senate.0024.a
+		add_character_modifier = {
+			modifier = rearmed_personal_guard
+			years = 5
+		}
+		
+	}
+	option = {
+		name = senate.0024.b
+		add_gold = 250
+	}
+}
+
+senate.0025 = {
+	title = senate.0025.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { access_to_italian_senate = yes }
+				desc = senate.0025.desc_italy
+			}
+			triggered_desc = {
+				trigger = { access_to_eastern_senate = yes }
+				desc = senate.0025.desc_eastern
+			}
+		}
+	}
+	immediate = {
+		random_vassal = {
+			save_scope_as = senate25vassal
+		}
+	}
+	scope = character
+	theme = diplomacy
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	right_portrait = {
+		character = scope:senate25vassal
+		animation = personality_honorable
+	}
+	option = {
+		name = senate.0025.a
+		scope:senate25vassal = {
+			add_opinion = {
+				target = root
+					opinion = 30
+					years = 5
+					modifier = influenced_by_senate
+			}
+		}
+	}
+}
+
+senate.0026 = {
+	title = senate.0026.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { access_to_italian_senate = yes }
+				desc = senate.0026.desc_italy
+			}
+			triggered_desc = {
+				trigger = { access_to_eastern_senate = yes }
+				desc = senate.0026.desc_eastern
+			}
+		}
+	}
+	trigger = {
+		if = {
+			limit = {
+				access_to_italian_senate = yes
+			}
+			OR = {
+				AND = {
+					OR = {
+						senate_italy_aristocratic_loyal = yes
+						senate_italy_aristocratic_supportive = yes
+					}
+					global_var:aristocratic_senate_italy_gold >= 400
+				}
+				AND = {
+					OR = {
+						senate_italy_populist_loyal = yes
+						senate_italy_populist_supportive = yes
+					}
+					global_var:populist_senate_italy_gold >= 400
+				}
+				AND = {
+					OR = {
+						senate_italy_traditionalist_loyal = yes
+						senate_italy_traditionalist_supportive = yes
+					}
+					global_var:traditionalist_senate_italy_gold >= 400
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				access_to_eastern_senate = yes
+			}
+			OR = {
+				AND = {
+					OR = {
+						senate_eastern_aristocratic_loyal = yes
+						senate_eastern_aristocratic_supportive = yes
+					}
+					global_var:aristocratic_senate_eastern_gold >= 400
+				}
+				AND = {
+					OR = {
+						senate_eastern_populist_loyal = yes
+						senate_eastern_populist_supportive = yes
+					}
+					global_var:populist_senate_eastern_gold >= 400
+				}
+				AND = {
+					OR = {
+						senate_eastern_traditionalist_loyal = yes
+						senate_eastern_traditionalist_supportive = yes
+					}
+					global_var:traditionalist_senate_eastern_gold >= 400
+				}
+			}
+		}
+	}
+	scope = character
+	theme = diplomacy
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	option = {
+		name = senate.0026.a
+		add_character_modifier = {
+			modifier = maa_expenses_paid
+			years = 5
+		}
+		if = {
+			limit = {
+				access_to_italian_senate = yes
+			}
+			remove_gold_from_loyal_or_supportive_party_italy = { GOLD_REMOVED = 400 }
+		}
+		else_if = {
+			limit = {
+				access_to_eastern_senate = yes
+			}
+			remove_gold_from_loyal_or_supportive_party_eastern = { GOLD_REMOVED = 400 }
+		}
+	}
+	option = {
+		name = senate.0026.b
+		add_gold = 400
+		if = {
+			limit = {
+				access_to_italian_senate = yes
+			}
+			remove_gold_from_loyal_or_supportive_party_italy = { GOLD_REMOVED = 400 }
+		}
+		else_if = {
+			limit = {
+				access_to_eastern_senate = yes
+			}
+			remove_gold_from_loyal_or_supportive_party_eastern = { GOLD_REMOVED = 400 }
+		}
+	}
+}
+
+senate.0027 = {
+	title = senate.0027.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { access_to_italian_senate = yes }
+				desc = senate.0027.desc_italy
+			}
+			triggered_desc = {
+				trigger = { access_to_eastern_senate = yes }
+				desc = senate.0027.desc_eastern
+			}
+		}
+	}
+	immediate = {
+		random_vassal = {
+			save_scope_as = vassal1senate27
+		}
+		random_vassal = {
+			limit = {
+				NOT = {
+					THIS = scope:vassal1senate27
+				}
+			}
+			save_scope_as = vassal2senate27
+		}
+		random_vassal = {
+			limit = {
+				AND = {
+					NOT = {
+						THIS = scope:vassal1senate27
+					}
+					NOT = {
+						THIS = scope:vassal2senate27
+					}
+				}
+			}
+			save_scope_as = vassal3senate27
+		}
+	}
+	scope = character
+	theme = diplomacy
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	lower_left_portrait = {
+		character = scope:vassal1senate27
+	}
+	lower_center_portrait = {
+		character = scope:vassal2senate27
+	}
+	lower_right_portrait = {
+		character = scope:vassal3senate27
+	}
+	option = {
+		name = senate.0027.a
+		scope:vassal1senate27 = {
+			add_opinion = {
+				target = root
+				opinion = 80
+				years = 5
+				modifier = influenced_by_senate
+			}
+		}
+		scope:vassal2senate27 = {
+			add_opinion = {
+				target = root
+				opinion = 40
+				years = 5
+				modifier = influenced_by_senate
+			}
+		}
+		scope:vassal3senate27 = {
+			add_opinion = {
+				target = root
+				opinion = 40
+				years = 5
+				modifier = influenced_by_senate
+			}
+		}
+	}
+	option = {
+		name = senate.0027.b
+		scope:vassal1senate27 = {
+			add_opinion = {
+				target = root
+				opinion = 40
+				years = 5
+				modifier = influenced_by_senate
+			}
+		}
+		scope:vassal2senate27 = {
+			add_opinion = {
+				target = root
+				opinion = 80
+				years = 5
+				modifier = influenced_by_senate
+			}
+		}
+		scope:vassal3senate27 = {
+			add_opinion = {
+				target = root
+				opinion = 40
+				years = 5
+				modifier = influenced_by_senate
+			}
+		}
+	}
+	option = {
+		name = senate.0027.c
+		scope:vassal1senate27 = {
+			add_opinion = {
+				target = root
+				opinion = 40
+				years = 5
+				modifier = influenced_by_senate
+			}
+		}
+		scope:vassal2senate27 = {
+			add_opinion = {
+				target = root
+				opinion = 40
+				years = 5
+				modifier = influenced_by_senate
+			}
+		}
+		scope:vassal3senate27 = {
+			add_opinion = {
+				target = root
+				opinion = 80
+				years = 5
+				modifier = influenced_by_senate
+			}
+		}
+	}
+}
+
+senate.0028 = {
+	title = senate.0028.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { access_to_italian_senate = yes }
+				desc = senate.0028.desc_italy
+			}
+			triggered_desc = {
+				trigger = { access_to_eastern_senate = yes }
+				desc = senate.0028.desc_eastern
+			}
+		}
+	}
+	trigger = {
+		NOT = {
+			game_start_date = 532.2.1
+		}
+		if = {
+			limit = {
+				access_to_italian_senate = yes
+			}
+			OR = {
+				AND = {
+					OR = {
+						senate_italy_aristocratic_loyal = yes
+						senate_italy_aristocratic_supportive = yes
+					}
+					global_var:aristocratic_senate_italy_gold >= TFE_games_predicted_cost
+				}
+				AND = {
+					OR = {
+						senate_italy_populist_loyal = yes
+						senate_italy_populist_supportive = yes
+					}
+					global_var:populist_senate_italy_gold >= TFE_games_predicted_cost
+				}
+				AND = {
+					OR = {
+						senate_italy_traditionalist_loyal = yes
+						senate_italy_traditionalist_supportive = yes
+					}
+					global_var:traditionalist_senate_italy_gold >= TFE_games_predicted_cost
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				access_to_eastern_senate = yes
+			}
+			OR = {
+				AND = {
+					OR = {
+						senate_eastern_aristocratic_loyal = yes
+						senate_eastern_aristocratic_supportive = yes
+					}
+					global_var:aristocratic_senate_eastern_gold >= TFE_games_predicted_cost
+				}
+				AND = {
+					OR = {
+						senate_eastern_populist_loyal = yes
+						senate_eastern_populist_supportive = yes
+					}
+					global_var:populist_senate_eastern_gold >= TFE_games_predicted_cost
+				}
+				AND = {
+					OR = {
+						senate_eastern_traditionalist_loyal = yes
+						senate_eastern_traditionalist_supportive = yes
+					}
+					global_var:traditionalist_senate_eastern_gold >= TFE_games_predicted_cost
+				}
+			}
+		}
+	}
+	scope = character
+	theme = diplomacy
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	option = {
+		name = senate.0028.a
+		#custom_tooltip = sponsor_gladiator_games_decision_effect
+		#custom_tooltip = sponsor_gladiator_games_decision_effect_2
+		#create_story = story_sponsor_gladiator_games_decision
+		custom_tooltip = senate_funds_games_full_tt
+		root = {
+			add_character_flag = senate_funds_games
+		}
+		if = {
+			limit = {
+				access_to_italian_senate = yes
+			}
+			remove_gold_from_loyal_or_supportive_party_italy = { GOLD_REMOVED = TFE_games_predicted_cost }
+		}
+		else_if = {
+			limit = {
+				access_to_eastern_senate = yes
+			}
+			remove_gold_from_loyal_or_supportive_party_eastern = { GOLD_REMOVED = TFE_games_predicted_cost }
+		}
+		
+	}
+	option = {
+		name = senate.0028.b
+		add_piety = 500
+	}
+}
+senate.0029 = {
+	title = senate.0029.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { access_to_italian_senate = yes }
+				desc = senate.0029.desc_italy
+			}
+			triggered_desc = {
+				trigger = { access_to_eastern_senate = yes }
+				desc = senate.0029.desc_eastern
+			}
+		}
+	}
+
+	immediate = {
+		random_held_title = {
+			limit = {
+				tier = tier_kingdom
+				is_titular = no
+			}
+			save_scope_as = kingdombreadsenate
+		}
+	}
+	scope = character
+	theme = diplomacy
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	option = {
+		name = senate.0029.a
+		scope:kingdombreadsenate = {
+			save_temporary_scope_as = current_title
+			every_in_de_jure_hierarchy = {
+				limit = {
+					tier = tier_county
+					
+					holder = {
+						OR = {
+							this = scope:current_title.holder
+							is_vassal_or_below_of = scope:current_title.holder
+						}
+					}
+				}
+				add_county_modifier = {
+					modifier = distribute_bread_modifier
+					years = 10
+				}
+			}
+		}
+	}
+	option = {
+		name = senate.0029.b
+		add_gold = scope:kingdombreadsenate.distribute_bread_price
+	}
+}
+senate.0030 = {
+	title = senate.0030.t
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { access_to_italian_senate = yes }
+				desc = senate.0030.desc_italy
+			}
+			triggered_desc = {
+				trigger = { access_to_eastern_senate = yes }
+				desc = senate.0030.desc_eastern
+			}
+		}
+	}
+
+	immediate = {
+		random_neighboring_top_liege_realm_owner = {
+			save_scope_as = neighborrulersenate
+		}
+	}
+	scope = character
+	theme = diplomacy
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	lower_left_portrait = {
+		character = scope:neighborrulersenate
+	}
+	option = {
+		name = senate.0030.a
+		scope:neighborrulersenate = {
+			add_opinion = {
+				target = root
+				opinion = 40
+				years = 5
+				modifier = influenced_by_senate
+			}
+		}
+		add_character_modifier = {
+			modifier = trade_deal_established
+			years = 5
+		}
+	}
+}

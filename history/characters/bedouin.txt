@@ -1,0 +1,8681 @@
+﻿33900 = {
+	name = "Abbas" # Muhammad's paternal half-uncle
+	dynasty = 101727
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 33924
+	trait = sayyid
+	566.1.1 = {
+		birth = "566.1.1"
+	}
+	653.1.1 = {
+		death = "653.1.1"
+	}
+}
+
+33901 = {
+	name = "Abdullah"
+	dynasty = 101727
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 33900
+	trait = sayyid
+	618.1.1 = {
+		birth = "618.1.1"
+	}
+	687.1.1 = {
+		death = "687.1.1"
+	}
+}
+
+33902 = {
+	name = "Ali"
+	dynasty = 101727
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 33901
+	trait = sayyid
+	648.1.1 = {
+		birth = "648.1.1"
+	}
+	737.1.1 = {
+		death = "737.1.1"
+	}
+}
+
+33910 = {
+	name = "Abu_Talib" # Muhammad's paternal uncle
+	dynasty = 7296
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 33924
+	trait = sayyid
+	549.1.1 = {
+		birth = "549.1.1"
+	}
+	619.1.1 = {
+		death = "619.1.1"
+	}
+}
+
+33911 = {
+	name = "Ali" # The Fourth Caliph & First Imam
+	dynasty = 7296
+	religion = "ismaili"
+	culture = "bedouin"
+	father = 33910
+	trait = sayyid
+	trait = sahabi_trait
+	598.10.23 = {
+		birth = "598.10.23"
+	}
+	623.1.1 = {
+		add_spouse = 33921 # Fatimah
+	}
+	661.2.28 = {
+		death = "661.2.28"
+	}
+}
+
+33912 = {
+	name = "Hussayn" # Son of ali and Fatimah
+	dynasty = 589
+	religion = "ismaili"
+	culture = "bedouin"
+	father = 33911
+	mother = 33921
+	trait = sayyid
+	626.1.8 = {
+		birth = "626.1.8"
+	}
+	680.10.10 = {
+		death = "680.10.10"
+	}
+}
+
+33913 = {
+	name = "ali" # Zayn al-Abidin
+	dynasty = 589
+	religion = "ismaili"
+	culture = "bedouin"
+	father = 33912
+	trait = sayyid
+	659.1.1 = {
+		birth = "659.1.1"
+	}
+	712.1.1 = {
+		death = "712.1.1"
+	}
+}
+
+33914 = {
+	name = "Muhammad" # al-Baqir
+	dynasty = 589
+	religion = "ismaili"
+	culture = "bedouin"
+	father = 33913
+	trait = sayyid
+	676.1.1 = {
+		birth = "676.1.1"
+	}
+	733.1.1 = {
+		death = "733.1.1"
+	}
+}
+
+33915 = {
+	name = "Jafar" # al-Sadiq
+	dynasty = 589
+	religion = "ismaili"
+	culture = "bedouin"
+	father = 33914
+	trait = sayyid
+	702.4.20 = {
+		birth = "702.4.20"
+	}
+	765.12.14 = {
+		death = "765.12.14"
+	}
+}
+
+33916 = {
+	name = "Ismail" # The Sixth Ismaili Imam
+	dynasty = 589
+	religion = "ismaili"
+	culture = "bedouin"
+	father = 33915
+	trait = sayyid
+	721.1.1 = {
+		birth = "721.1.1"
+	}
+	755.1.1 = {
+		death = "755.1.1"
+	}
+}
+
+33917 = {
+	name = "Muhammad"
+	dynasty = 589
+	religion = "ismaili"
+	culture = "bedouin"
+	father = 33916
+	trait = sayyid
+	740.1.1 = {
+		birth = "740.1.1"
+	}
+	813.1.1 = {
+		death = "813.1.1"
+	}
+}
+
+33921 = {
+	name = "Fatimah" # Daughter of the Prophet Muhammad
+	female = yes
+	dynasty = 589
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 33922
+	605.1.1 = {
+		birth = "605.1.1"
+	}
+	633.1.1 = {
+		death = "633.1.1"
+	}
+}
+
+33922 = {
+	name = "Muhammad" # The Prophet
+	dynasty = 7296
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 33923
+	martial = 6
+	diplomacy = 8
+	intrigue = 5
+	stewardship = 8
+	learning = 10
+	trait = education_learning_4
+	trait = sayyid
+	trait = zealous
+	trait = calm
+	trait = gregarious
+	trait = ambitious
+	sexuality = heterosexual
+	570.4.26 = {
+		birth = "570.4.26"
+	}
+	632.6.8 = {
+		death = "632.6.8"
+	}
+}
+33923 = {
+	name = "Abdullah"
+	dynasty = 7296
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	father = 33924
+	545.1.1 = {
+		birth = "545.1.1"
+	}
+	570.1.1 = {
+		death = "570.1.1"
+	}
+}
+33924 = {
+	name = "Shaiba" # Abdul Muttalib
+	dynasty = 7296
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	father = 33925
+	497.1.1 = {
+		birth = "497.1.1"
+	}
+	578.1.1 = {
+		death = "578.1.1"
+	}
+}
+
+33925 = {
+	name = "Hashim" # Founder of the great Hashemite dynasty
+	dynasty = 7296
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	trait = "twin"
+	father = 163004
+	464.1.1 = {
+		birth = "464.1.1"
+	}
+	497.1.1 = {
+		death = "497.1.1"
+	}
+}
+
+33926 = {
+	name = "Hasan" # Son of ali and Fatimah. The Second Imam of Shi'a Islam
+	dynasty = 7296
+	religion = "ismaili"
+	culture = "bedouin"
+	father = 33911
+	mother = 33921
+	trait = sayyid
+	625.3.1 = {
+		birth = "625.3.1"
+	}
+	670.3.6 = {
+		death = "670.3.6"
+	}
+}
+
+33927 = {
+	name = "Hasan" # al-Hasan al-Muthanna
+	dynasty = 7296
+	religion = "ismaili"
+	culture = "bedouin"
+	father = 33926
+	trait = sayyid
+	664.1.1 = {
+		birth = "664.1.1"
+	}
+	720.3.6 = {
+		death = "720.3.6"
+	}
+}
+
+34000 = {
+	name = "Muhammad"
+	dynasty = 101727
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 33902
+	trait = sayyid
+	690.1.1 = {
+		birth = "690.1.1"
+	}
+	750.1.1 = {
+		death = "750.1.1"
+	}
+}
+
+34001 = {
+	name = "As-Saffah"
+	dynasty = 101727
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 34000
+	trait = sayyid
+	721.1.1 = {
+		birth = "721.1.1"
+	}
+	754.6.10 = {
+		death = "754.6.10"
+	}
+}
+
+33928 = {
+	name = "Abdullah" # son of Hassan al-Muthanna
+	dynasty = 7296
+	religion = "ismaili"
+	culture = "bedouin"
+	father = 33927
+	trait = sayyid
+	700.1.1 = {
+		birth = "700.1.1"
+	}
+	767.1.1 = {
+		death = "767.1.1"
+	}
+}
+
+33929 = {
+	name = "Musa"
+	dynasty = 7296
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 33928
+	trait = sayyid
+	720.1.1 = {
+		birth = "720.1.1"
+	}
+	770.1.1 = {
+		death = "770.1.1"
+	}
+}
+
+33930 = {
+	name = "Abdullah"
+	dynasty = 7296
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 33929
+	trait = sayyid
+	740.1.1 = {
+		birth = "740.1.1"
+	}
+	790.1.1 = {
+		death = "790.1.1"
+	}
+}
+
+73679 = {
+	name = "Abd-al-Rahman"
+	dynasty = 597
+
+	father = 163000
+
+	religion = united_islam
+	culture = bedouin
+	dna = abd_al_rahman_i_dna
+
+	trait = sayyid
+	trait = callous
+	trait = ambitious
+	trait = arrogant
+	trait = strategist
+	trait = education_martial_3
+
+	731.3.1 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+	788.10.7 = {
+		death = yes
+	}
+}
+
+73680 = {
+	name = "Hisham"
+	dynasty = 597
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 73679
+	trait = sayyid
+	757.4.26 = {
+		birth = "757.4.26"
+	}
+	796.6.12 = {
+		death = "796.6.12"
+	}
+}
+
+163000 = {
+	name = "Mu_awiyah"
+	dynasty = 597
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 163001
+	trait = sayyid
+	705.1.1 = {
+		birth = "705.1.1"
+	}
+	737.1.1 = {
+		death = "737.1.1"
+	}
+}
+
+163001 = {
+	name = "Hisham"
+	dynasty = 597
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 163002
+	trait = sayyid
+	691.1.1 = {
+		birth = "691.1.1"
+	}
+	743.2.6 = {
+		death = "743.2.6"
+	}
+}
+
+163002 = {
+	name = "Abu-al-Malik"
+	dynasty = 597
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 163003
+	trait = sayyid
+	646.1.1 = {
+		birth = "646.1.1"
+	}
+	705.1.1 = {
+		death = "705.1.1"
+	}
+}
+
+163003 = {
+	name = "Marwan"
+	dynasty = 597
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 163019
+	trait = sayyid
+	623.1.1 = {
+		birth = "623.1.1"
+	}
+	650.1.1 = {
+		add_spouse = nusayrid_02 #Ruqayya
+	}
+	685.5.7 = {
+		death = "685.5.7"
+	}
+}
+
+163004 = {
+	name = "Abd_Manaf"
+	dynasty = 7296
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	father = 163005
+	444.1.1 = {
+		birth = "444.1.1"
+	}
+	487.1.1 = {
+		death = "487.1.1"
+	}
+}
+
+163005 = {
+	name = "Qusai"
+	dynasty = 7296
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	father = 163006
+	400.1.1 = {
+		birth = "400.1.1"
+	}
+	480.1.1 = {
+		death = "480.1.1"
+	}
+}
+
+163006 = {
+	name = "Kilab"
+	dynasty = 7296
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	father = 163007
+	373.1.1 = {
+		birth = "373.1.1"
+	}
+	423.1.1 = {
+		death = "423.1.1"
+	}
+}
+
+163007 = {
+	name = "Murrah"
+	dynasty = 7296
+	religion = "arabic_pagan"
+	culture = "bedouin"
+
+	333.1.1 = {
+		birth = "333.1.1"
+	}
+	393.1.1 = {
+		death = "393.1.1"
+	}
+}
+
+163008 = {
+	name = "Taym"
+	dynasty = 7296
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	father = 163007
+	375.1.1 = {
+		birth = "375.1.1"
+	}
+	423.1.1 = {
+		death = "423.1.1"
+	}
+}
+
+163009 = {
+	name = "Saad"
+	dynasty = 7296
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	father = 163008
+	405.1.1 = {
+		birth = "405.1.1"
+	}
+	453.1.1 = {
+		death = "453.1.1"
+	}
+}
+
+163010 = {
+	name = "Abdul"
+	dynasty = 7296
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	father = 163009
+	435.1.1 = {
+		birth = "435.1.1"
+	}
+	483.1.1 = {
+		death = "483.1.1"
+	}
+}
+
+163011 = {
+	name = "Umru"
+	dynasty = 7296
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	father = 163010
+	465.1.1 = {
+		birth = "465.1.1"
+	}
+	523.1.1 = {
+		death = "523.1.1"
+	}
+}
+
+163012 = {
+	name = "Amar"
+	dynasty = 7296
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	father = 163011
+	495.1.1 = {
+		birth = "495.1.1"
+	}
+	563.1.1 = {
+		death = "563.1.1"
+	}
+}
+
+163013 = {
+	name = "Uthman"
+	dynasty = 7296
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 163012
+	trait = sahabi_trait
+	542.7.1 = {
+		birth = "542.7.1"
+	}
+	635.8.1 = {
+		death = "635.8.1"
+	}
+}
+
+163014 = {
+	name = "Abu_Bakr"
+	dynasty = 7296
+	religion = "united_islam"
+	culture = "bedouin"
+	trait = sahabi_trait
+	father = 163013
+	573.1.1 = {
+		birth = "573.1.1"
+	}
+	643.8.23 = {
+		death = "643.8.23"
+	}
+}
+
+163015 = {
+	name = "Umar"
+	dynasty = 7296
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 159480
+	586.1.1 = {
+		birth = "586.1.1"
+	}
+	644.11.7 = {
+		death = "644.11.7"
+	}
+}
+
+163016 = {
+	name = "Adb_Shams"
+	dynasty = 7296
+	religion = "united_islam"
+	culture = "bedouin"
+	trait = "twin"
+	father = 163004
+	464.1.1 = {
+		birth = "464.1.1"
+	}
+	499.1.1 = {
+		death = "499.1.1"
+	}
+}
+
+163017 = {
+	name = "Umayyah"
+	dynasty = 597
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	father = 163016
+	trait = sayyid
+	490.1.1 = {
+		birth = "490.1.1"
+	}
+	540.1.1 = {
+		death = "540.1.1"
+	}
+}
+
+163018 = {
+	name = "Abdul-al-As"
+	dynasty = 597
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	father = 163017
+	trait = sayyid
+	520.1.1 = {
+		birth = "520.1.1"
+	}
+	590.1.1 = {
+		death = "590.1.1"
+	}
+}
+
+163019 = {
+	name = "al-Hakim"
+	dynasty = 597
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 163018
+	trait = sayyid
+	550.1.1 = {
+		birth = "550.1.1"
+	}
+	630.1.1 = {
+		death = "630.1.1"
+	}
+}
+
+163020 = {
+	name = "Affan"
+	dynasty = 597
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	father = 163017
+	trait = sayyid
+	522.1.1 = {
+		birth = "522.1.1"
+	}
+	597.1.1 = {
+		death = "597.1.1"
+	}
+}
+
+163021 = {
+	name = "Uthan"
+	dynasty = 597
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 163020
+	trait = sayyid
+	579.1.1 = {
+		birth = "579.1.1"
+	}
+	656.7.17 = {
+		death = "656.7.17"
+	}
+}
+
+163022 = {
+	name = "Musa"
+	dynasty = 589
+	religion = "ismaili"
+	culture = "bedouin"
+	father = 33915
+	trait = sayyid
+	745.11.6 = {
+		birth = "745.11.6"
+	}
+	799.9.1 = {
+		death = "799.9.1"
+	}
+}
+
+163023 = {
+	name = "ali"
+	dynasty = 589
+	religion = "ismaili"
+	culture = "bedouin"
+	father = 163022
+	trait = sayyid
+	765.12.9 = {
+		birth = "765.12.9"
+	}
+	818.8.23 = {
+		death = "818.8.23"
+	}
+}
+
+163028 = {
+	name = "Abu-Sufyan"
+	dynasty = 597
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 163020
+	trait = sayyid
+	560.9.1 = {
+		birth = "560.9.1"
+	}
+	650.8.1 = {
+		death = "650.8.1"
+	}
+}
+
+163029 = {
+	name = "Muawiyah"
+	dynasty = 597
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 163028
+	trait = sayyid
+	trait = deceitful
+	trait = ambitious
+	trait = diligent
+	intrigue = 9
+	trait = education_intrigue_4
+	602.1.1 = {
+		birth = "602.1.1"
+	}
+	680.5.6 = {
+		death = "680.5.6"
+	}
+}
+
+163030 = {
+	name = "Yazid"
+	dynasty = 597
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 163029
+	trait = sayyid
+	645.1.1 = {
+		birth = "645.1.1"
+	}
+	683.1.1 = {
+		death = "683.1.1"
+	}
+}
+
+163031 = {
+	name = "Muawiyah"
+	dynasty = 597
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 163030
+	trait = sayyid
+	661.3.28 = {
+		birth = "661.3.28"
+	}
+	684.12.1 = {
+		death = "684.12.1"
+	}
+}
+
+163032 = {
+	name = "al-Walid"
+	dynasty = 597
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 163002
+	trait = sayyid
+	668.1.1 = {
+		birth = "668.1.1"
+	}
+	715.1.1 = {
+		death = "715.1.1"
+	}
+}
+
+163033 = {
+	name = "Sulayman"
+	dynasty = 597
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 163002
+	trait = sayyid
+	674.1.1 = {
+		birth = "674.1.1"
+	}
+	717.10.1 = {
+		death = "717.10.1"
+	}
+}
+
+163034 = {
+	name = "Abdul-Aziz"
+	dynasty = 597
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 163003
+	trait = sayyid
+	648.1.1 = {
+		birth = "648.1.1"
+	}
+	706.1.1 = {
+		death = "706.1.1"
+	}
+}
+
+163035 = {
+	name = "Umar"
+	dynasty = 597
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 163034
+	trait = sayyid
+	680.1.1 = {
+		birth = yes
+	}
+	720.2.10 = {
+		death = "720.2.10"
+	}
+}
+
+163036 = {
+	name = "Yazid"
+	dynasty = 597
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 163002
+	trait = sayyid
+	677.1.1 = {
+		birth = "687.1.1"
+	}
+	724.1.1 = {
+		death = "724.1.1"
+	}
+}
+
+163037 = {
+	name = "al-Walid"
+	dynasty = 597
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 163036
+	trait = sayyid
+	697.1.1 = {
+		birth = "697.1.1"
+	}
+	744.6.16 = {
+		death = "744.6.16"
+	}
+}
+
+163038 = {
+	name = "Yazid"
+	dynasty = 597
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 163032
+	trait = sayyid
+	701.1.1 = {
+		birth = "701.1.1"
+	}
+	744.10.3 = {
+		death = "744.10.3"
+	}
+}
+
+163039 = {
+	name = "Ibrahim"
+	dynasty = 597
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 163032
+	trait = sayyid
+	703.1.1 = {
+		birth = "703.1.1"
+	}
+	744.11.3 = {
+		death = "744.11.3"
+	}
+}
+
+163040 = {
+	name = "al-Himar"
+	dynasty = 597
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 163003
+	trait = sayyid
+	650.1.1 = {
+		birth = "650.1.1"
+	}
+	709.1.1 = {
+		death = "709.1.1"
+	}
+}
+
+163041 = {
+	name = "Marwan"
+	dynasty = 597
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 163040
+	trait = sayyid
+	688.1.1 = {
+		birth = "688.1.1"
+	}
+	750.1.1 = {
+		death = "750.1.1"
+	}
+}
+
+163042 = {
+	name = "Muhammad" # Kaysanite Imam
+	dynasty = 589
+	religion = "ismaili"
+	culture = "bedouin"
+	father = 33911
+	mother = 33921
+	trait = sayyid
+	633.1.1 = {
+		birth = "633.1.1"
+	}
+	700.1.1 = {
+		death = "700.1.1"
+	}
+}
+
+163043 = {
+	name = "Zayd" # Zaidi Imam
+	dynasty = 589
+	religion = "ismaili"
+	culture = "bedouin"
+	father = 33913
+	trait = sayyid
+	695.1.1 = {
+		birth = "695.1.1"
+	}
+	740.1.1 = {
+		death = "740.1.1"
+	}
+}
+
+163044 = {
+	name = "Abdullah" # Fathite Imam
+	dynasty = 589
+	religion = "ismaili"
+	culture = "bedouin"
+	father = 33915
+	trait = sayyid
+	720.1.1 = {
+		birth = yes
+	}
+	766.1.1 = {
+		death = yes
+	}
+}
+
+163140 = {
+	name = "Ibrahim"
+	dynasty = 807
+	religion = united_islam
+	culture = bedouin # Banu Tamim tribe
+	746.1.1 = {
+		birth = yes
+	}
+	812.1.1 = {
+		death = yes
+	}
+}
+
+163141 = {
+	name = "Adballah"
+	dynasty = 807
+	religion = united_islam
+	culture = bedouin # Banu Tamim tribe
+	father = 163140
+	766.1.1 = {
+		birth = yes
+	}
+	817.1.1 = {
+		death = yes
+	}
+}
+
+163142 = {
+	name = "Ziyadat_allah"
+	dynasty = 807
+	religion = united_islam
+	culture = bedouin # Banu Tamim tribe
+	father = 163140
+	767.1.1 = {
+		birth = yes
+	}
+	838.6.10 = {
+		death = yes
+	}
+}
+
+163143 = {
+	name = "Abu_Iqal"
+	dynasty = 807
+	religion = united_islam
+	culture = bedouin # Banu Tamim tribe
+	father = 163140
+	768.1.1 = {
+		birth = yes
+	}
+	841.1.1 = {
+		death = "841.1.1"
+	}
+}
+
+159473 = {
+	name = "Adi" #
+	dynasty = 7296
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	father = 163007
+	385.1.1 = {
+		birth = "385.1.1" #Unknown
+	}
+	435.1.1 = {
+		death = "435.1.1"
+	}
+}
+159474 = {
+	name = "Qurat" #
+	dynasty = 7296
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	father = 159473
+	410.1.1 = {
+		birth = "410.1.1" #Unknown
+	}
+	460.1.1 = {
+		death = "460.1.1"
+	}
+}
+159475 = {
+	name = "Ribah" #
+	dynasty = 7296
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	father = 159474
+	440.1.1 = {
+		birth = "440.1.1" #Unknown
+	}
+	500.1.1 = {
+		death = "500.1.1"
+	}
+}
+159476 = {
+	name = "Ribah" #
+	dynasty = 7296
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	father = 159475
+	460.1.1 = {
+		birth = "460.1.1" #Unknown
+	}
+	550.1.1 = {
+		death = "550.1.1"
+	}
+}
+159477 = {
+	name = "Riza" #
+	dynasty = 7296
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	father = 159476
+	490.1.1 = {
+		birth = "490.1.1" #Unknown
+	}
+	580.1.1 = {
+		death = "580.1.1"
+	}
+}
+159478 = {
+	name = "Abul_Uzza" #
+	dynasty = 7296
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	father = 159477
+	510.1.1 = {
+		birth = "510.1.1" #Unknown
+	}
+	580.1.1 = {
+		death = "580.1.1"
+	}
+}
+159479 = {
+	name = "Nufail" #
+	dynasty = 7296
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	father = 159478
+	530.1.1 = {
+		birth = "530.1.1" #Unknown
+	}
+	580.1.1 = {
+		death = "580.1.1"
+	}
+}
+159480 = {
+	name = "Khattab" #
+	dynasty = 7296
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	father = 159479
+	565.1.1 = {
+		birth = "565.1.1" #Unknown
+	}
+	620.1.1 = {
+		death = "620.1.1"
+	}
+}
+
+159393 = {
+	name = "Hussayn" # al-Athram
+	dynasty = 7296
+	religion = "ismaili"
+	culture = "bedouin"
+	trait = sayyid
+	father = 33926
+	655.1.1 = {
+		birth = "655.1.1" #Unknown
+	}
+	701.1.1 = {
+		death = "701.1.1"
+	}
+}
+159394 = {
+	name = "Ibrahim" #
+	dynasty = 7296
+	religion = "ismaili"
+	culture = "bedouin"
+	trait = sayyid
+	father = 159393
+	685.1.1 = {
+		birth = "685.1.1" #Unknown
+	}
+	751.1.1 = {
+		death = "751.1.1"
+	}
+}
+159395 = {
+	name = "Ismail" #
+	dynasty = 7296
+	religion = "ismaili"
+	culture = "bedouin"
+	trait = sayyid
+	father = 159394
+	715.1.1 = {
+		birth = "715.1.1" #Unknown
+	}
+	782.1.1 = {
+		death = "782.1.1"
+	}
+}
+159396 = {
+	name = "Ibrahim" #
+	dynasty = 7296
+	religion = "ismaili"
+	culture = "bedouin"
+	trait = sayyid
+	father = 159395
+	745.1.1 = {
+		birth = "745.1.1" #Unknown
+	}
+	811.1.1 = {
+		death = "811.1.1"
+	}
+}
+159376 = {
+	name = "Amir" #
+	dynasty = 1029034
+	martial = 7
+	diplomacy = 6
+	intrigue = 5
+	stewardship = 7
+	religion = "united_islam"
+	culture = "bedouin"
+	
+	760.1.1 = {
+		birth = "760.1.1" #Unknown
+	}
+	840.1.1 = {
+		death = "840.1.1"
+	}
+}
+159501 = {
+	name = "Idris" #ibn Abdullah ibn Hasan ibn Hasan ibn ali
+	dynasty = 1029055
+	religion = "ismaili"
+	culture = "bedouin"
+	trait = sayyid
+	father = 33928
+	745.1.2 = {
+		birth = "745.1.2"
+	}
+	791.12.16 = {
+		death = "791.12.16"
+	}
+}
+
+163124 = {
+	name = "Zayd"
+	dynasty = 7296
+	religion = "ismaili"
+	culture = "bedouin"
+	trait = sayyid
+	father = 33926
+	653.1.1 = {
+		birth = "653.1.1" #Unknown
+	}
+	743.1.1 = {
+		death = "743.1.1"
+	}
+}
+
+163125 = {
+	name = "Hasan"
+	dynasty = 7296
+	religion = "ismaili"
+	culture = "bedouin"
+	trait = sayyid
+	father = 163124
+	703.1.1 = {
+		birth = "703.1.1" #Unknown
+	}
+	783.1.1 = {
+		death = "783.1.1"
+	}
+}
+
+163126 = {
+	name = "Ismail"
+	dynasty = 7296
+	religion = "ismaili"
+	culture = "bedouin"
+	trait = sayyid
+	father = 163125
+	740.1.1 = {
+		birth = "740.1.1" #Unknown
+	}
+	800.1.1 = {
+		death = "800.1.1"
+	}
+}
+
+73787 = {
+	name = "Fadl"
+	dynasty = 596
+
+	religion = "united_islam"
+	culture = "bedouin"
+
+	750.1.1 = {
+		birth = "750.1.1"
+	}
+	813.1.1 = {
+		death = "813.1.1"
+	}
+}
+
+73903 = {
+	name = "ali"
+	dynasty = 1046000
+
+	father = 200025
+	mother = 73902
+
+	religion = united_islam
+	culture = bedouin
+
+	725.1.1 = {
+		birth = yes
+	}
+	789.1.1 = {
+		death = yes
+	}
+}
+
+73904 = {
+	name = "Ghalib"
+	dynasty = 1046000
+
+	father = 73903
+
+	religion = united_islam
+	culture = bedouin
+
+	757.1.1 = {
+		birth = yes
+	}
+	812.1.1 = {
+		death = yes
+	}
+}
+
+188527 = {
+	name = "Sama"
+	dynasty = 1042099 # Banu Sama
+	religion = "united_islam"
+	culture = "bedouin"
+	685.1.1 = {
+		birth = yes
+	}
+	740.1.1 = {
+		death = yes
+	}
+}
+
+188533 = {
+	name = "Hisam"
+	dynasty = 582 # al-Taghlibi
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 188536
+	730.1.1 = {
+		birth = yes
+	}
+	790.1.1 = {
+		death = yes
+	}
+}
+
+188534 = {
+	name = "Sufyah"
+	dynasty = 582 # al-Taghlibi
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 188536
+	732.1.1 = {
+		birth = yes
+	}
+	792.1.1 = {
+		death = yes
+	}
+}
+
+188535 = {
+	name = "Bistam"
+	dynasty = 582 # al-Taghlibi
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 188536
+	735.1.1 = {
+		birth = yes
+	}
+	795.1.1 = {
+		death = yes
+	}
+}
+
+188536 = {
+	name = "Amr"
+	dynasty = 582 # al-Taghlibi
+	religion = "united_islam"
+	culture = "bedouin"
+	700.1.1 = {
+		birth = yes
+	}
+	750.1.1 = {
+		death = yes
+	}
+}
+
+145968 = {
+	name = "Talut"
+	dynasty = 100667
+	religion = "united_islam"
+	culture = "bedouin"
+
+	748.1.1 = {
+		birth = "748.1.1"
+	}
+	806.1.1 = {
+		death = "806.1.1"
+	}
+}
+
+200020 = {
+	name = "Abd-al-Rahman"
+	dynasty = 597
+
+	father = 73679
+	
+	trait = sayyid
+
+	religion = united_islam
+	culture = bedouin
+
+	747.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+
+200021 = {
+	name = "Abdallah"
+	dynasty = 597
+
+	father = 73679
+	
+	trait = sayyid
+
+	religion = united_islam
+	culture = bedouin
+
+	760.1.1 = {
+		birth = yes
+	}
+	805.1.1 = {
+		death = yes
+	}
+}
+
+200022 = {
+	name = "al-Qasim"
+	dynasty = 597
+
+	father = 73679
+	
+	trait = sayyid
+
+	religion = united_islam
+	culture = bedouin
+
+	762.1.1 = {
+		birth = yes
+	}
+	803.1.1 = {
+		death = yes
+	}
+}
+
+200023 = {
+	name = "Abd-al-Aziz"
+	dynasty = 1046001
+
+	father = 200024
+	mother = nusayrid_01 #Amina
+
+	religion = united_islam
+	culture = bedouin
+	trait = sayyid
+
+	673.1.1 = {
+		birth = yes
+	}
+	714.1.1 = {
+		add_spouse = 200063
+	}
+	715.8.1 = {
+		death = yes
+	}
+}
+
+200024 = {
+	name = "Musa"
+	dynasty = 1046001
+
+	martial = 10
+
+	religion = united_islam
+	culture = bedouin
+
+	trait = education_martial_4
+
+	640.1.1 = {
+		birth = yes
+	}
+	664.1.1 = {
+		add_spouse = nusayrid_01 #Amina Marwan
+	}
+	716.1.1 = {
+		death = yes
+	}
+}
+
+nusayrid_01 = {
+	name = "Amina"
+	dynasty = 597
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 163003
+	trait = sayyid
+	female = yes
+	652.1.1 = {
+		birth = yes
+	}
+	723.5.7 = {
+		death = yes
+	}
+}
+nusayrid_02 = {
+	name = "Ruqayya"
+	dynasty = 7296
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 163015
+	trait = sayyid
+	female = yes
+	mother = fatimid_01 #Umm Kuthum
+	652.1.1 = {
+		birth = yes
+	}
+	723.5.7 = {
+		death = yes
+	}
+}
+
+fatimid_01 = {
+	name = "Umm Kuthum" # Daughter of ali and Fatimah
+	dynasty = 589
+	religion = "ismaili"
+	culture = "bedouin"
+	father = 33911
+	mother = 33921
+	trait = sayyid
+	female = yes
+	630.1.8 = {
+		birth = "626.1.8"
+	}
+	680.10.10 = {
+		death = "680.10.10"
+	}
+}
+
+200025 = {
+	name = "Abd-al-Yabbar"
+	dynasty = 1046000
+
+	religion = united_islam
+	culture = bedouin
+
+	690.1.1 = {
+		birth = yes
+	}
+	723.1.1 = {
+		add_spouse = 73902
+	}
+	743.1.1 = {
+		death = yes
+	}
+}
+
+200032 = {
+	name = "Suleyman"
+	dynasty = 1046002
+
+	religion = united_islam
+	culture = bedouin
+
+	725.1.1 = {
+		birth = yes
+	}
+	779.1.1 = {
+		death = yes
+	}
+}
+
+200034 = {
+	name = "Jalid"
+	dynasty = 12308
+
+	father = 200035
+	mother = 200037
+
+	religion = united_islam
+	culture = bedouin
+
+	762.1.1 = {
+		birth = yes
+	}
+	820.1.1 = {
+		death = yes
+	}
+}
+
+200035 = {
+	name = "Abdallah"
+	dynasty = 12308
+
+	religion = united_islam
+	culture = bedouin
+
+	738.1.1 = {
+		birth = yes
+	}
+	760.1.1 = {
+		add_spouse = 200037
+	}
+	789.1.1 = {
+		death = yes
+	}
+}
+
+200042 = {
+	name = "Hakam"
+	dynasty = 1046003
+
+	religion = united_islam
+	culture = bedouin
+
+	734.1.1 = {
+		birth = yes
+	}
+	757.1.1 = {
+		add_spouse = 200044
+	}
+	789.1.1 = {
+		death = yes
+	}
+}
+
+200043 = {
+	name = "Abd-al-Rahman"
+	dynasty = 1046003
+
+	father = 200042
+
+	religion = united_islam
+	culture = bedouin
+
+	758.1.1 = {
+		birth = yes
+	}
+	806.1.1 = {
+		death = yes
+	}
+}
+
+200046 = {
+	name = "Husayn"
+	dynasty = 1046004
+
+	religion = united_islam
+	culture = bedouin
+
+	740.1.1 = {
+		birth = yes
+	}
+	768.1.1 = {
+		add_spouse = 200047
+	}
+	788.6.10 = {
+		death = yes
+	}
+}
+
+200049 = {
+	name = "Suleyman"
+	dynasty = 1046005
+
+	religion = united_islam
+	culture = bedouin
+
+	733.1.1 = {
+		birth = yes
+	}
+	761.1.1 = {
+		add_spouse = 200050
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+
+200051 = {
+	name = "Matruh"
+	dynasty = 1046005
+
+	father = 200049
+	mother = 200050
+
+	religion = united_islam
+	culture = bedouin
+
+	762.1.1 = {
+		birth = yes
+	}
+	792.1.1 = {
+		death = yes
+	}
+}
+
+200052 = {
+	name = "Sadun"
+	dynasty = 1046006
+
+	religion = united_islam
+	culture = bedouin
+
+	760.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+
+200054 = {
+	name = "Suleyman"
+	dynasty = 1046007
+
+	religion = united_islam
+	culture = bedouin
+
+	736.1.1 = {
+		birth = yes
+	}
+	793.1.1 = {
+		death = yes
+	}
+}
+
+200202 = {
+	name = "Asima"
+	female = yes
+	dynasty = 1046001
+
+	father = 200023
+	mother = 200063
+
+	religion = united_islam
+	culture = bedouin
+
+	715.1.1 = {
+		birth = yes
+	}
+	775.1.1 = {
+		death = yes
+	}
+}
+188608 = {
+	name = "Jabir" # Jabir b Tubah, governor of Basra
+	dynasty = 1042113 # Kilabid
+	religion = "united_islam"
+	culture = "bedouin"
+	725.1.1 = {
+		birth = yes
+	}
+	790.1.1 = {
+		death = yes
+	}
+}
+
+188609 = {
+	name = "Muhammad" # Muhammad b Sulayman b ali, governor of Kufa
+	dynasty = 1042114 # Kufahyid
+	religion = "united_islam"
+	culture = "bedouin"
+	729.1.1 = {
+		birth = yes
+	}
+	790.1.1 = {
+		death = yes
+	}
+}
+
+188624 = {
+	name = "Hakim"
+	dynasty = 1042121 # Abd al-Qays
+	religion = "united_islam"
+	culture = "bedouin"
+	father = abd_ul_qays_11
+	711.1.1 = {
+		birth = yes
+	}
+	764.1.1 = {
+		death = yes
+	}
+}
+
+188625 = {
+	name = "Aghlab" # fictitious
+	dynasty = 1042121 # Abd al-Qays
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 188624
+	741.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+
+188626 = {
+	name = "Sulayman" # leader in Bahrain
+	dynasty = 1042121 # Abd al-Qays
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 188624
+	738.1.1 = {
+		birth = yes
+	}
+	770.1.1 = { # actually 768
+		death = yes
+	}
+}
+
+188627 = {
+	name = "Ibrahim" # fictitious
+	dynasty = 1042121 # Abd al-Qays
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 188626
+	760.1.1 = {
+		birth = yes
+	}
+	810.1.1 = {
+		death = yes
+	}
+}
+188610 = {
+	name = "Muhammad" # Muhammad b Ibrahim, governor of Mecca
+	dynasty = 1042115 # Ibrahimid
+	religion = "united_islam"
+	culture = "bedouin"
+	729.1.1 = {
+		birth = yes
+	}
+	783.1.1 = {
+		death = yes
+	}
+}
+
+188611 = {
+	name = "Abbas"
+	dynasty = 101727
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 188671
+	trait = sayyid
+	665.1.1 = {
+		birth = yes
+	}
+	730.1.1 = {
+		death = yes
+	}
+}
+
+188612 = {
+	name = "Qutham" # governor of Yamamah
+	dynasty = 101727
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 188611
+	trait = sayyid
+	700.1.1 = {
+		birth = yes
+	}
+	776.1.1 = {
+		death = yes
+	}
+}
+
+188620 = {
+	name = "Nizam" # fictitious holder of Hijaz
+	dynasty = 1042119 # Banu Udhrah
+	religion = "united_islam"
+	culture = "bedouin"
+	742.1.1 = {
+		birth = yes
+	}
+	795.1.1 = {
+		death = yes
+	}
+}
+
+188621 = {
+	name = "Kilab" # fictitious holder of Asir
+	dynasty = 1042120 # Banu Kinanah
+	religion = "united_islam"
+	culture = "bedouin"
+	720.1.1 = {
+		birth = yes
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+
+188622 = {
+	name = "Qusayy" # fictitious
+	dynasty = 1042120 # Banu Kinanah
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 188621
+	745.1.1 = {
+		birth = yes
+	}
+	795.1.1 = {
+		death = yes
+	}
+}
+
+188623 = {
+	name = "Yasmin" # fictitious
+	female = yes
+	dynasty = 1042120 # Banu Kinanah
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 188621
+	751.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+188551 = {
+	name = "Ubayd" # fictitious
+	dynasty = 1042103
+	religion = "united_islam"
+	culture = "bedouin"
+	730.4.4 = {
+		birth = yes
+	}
+	789.4.4 = {
+		death = yes
+	}
+}
+
+200222 = {
+	name = "Marwan"
+	dynasty = 1046024
+
+	religion = united_islam
+	culture = bedouin
+
+	741.1.1 = {
+		birth = yes
+	}
+	799.1.1 = {
+		death = yes
+	}
+}
+200226 = {
+	name = "Hisham"
+	dynasty = 1046026
+
+	religion = united_islam
+	culture = bedouin
+
+	728.1.1 = {
+		birth = yes
+	}
+	758.1.1 = {
+		add_spouse = 200227
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+
+200228 = {
+	name = "Ibrahim"
+	dynasty = 1046026
+
+	father = 200226
+	mother = 200227
+
+	religion = united_islam
+	culture = bedouin
+
+	760.1.1 = {
+		birth = yes
+	}
+	813.1.1 = {
+		death = yes
+	}
+}
+188605 = {
+	name = "Uways" # fictitious governor of Makran
+	dynasty = 1042133
+	religion = "united_islam"
+	culture = "bedouin"
+	723.1.1 = {
+		birth = yes
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+
+188606 = {
+	name = "Hisham" # fictitious governor of Kerman
+	dynasty = 1042137
+	religion = "united_islam"
+	culture = "bedouin"
+	729.1.1 = {
+		birth = yes
+	}
+	788.1.1 = {
+		death = yes
+	}
+}
+188604 = {
+	name = "Ma_n" # governor of Sistan
+	dynasty = 1029123 # Shaybanid
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 146067
+	712.1.1 = {
+		birth = yes
+	}
+	769.6.1 = {
+		death = yes
+	}
+}
+188602 = {
+	# Governor of Khorasan
+	name = "Homayd"
+	dynasty = 602 # Taid or al-Ta'i
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 188574
+	720.1.1 = {
+		birth = yes
+	}
+	776.1.1 = {
+		death = yes
+	}
+}
+
+188574 = {
+	name = "Qahtaba"
+	dynasty = 602 # Taid or al-Ta'i
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 146022
+	690.1.1 = {
+		birth = yes
+	}
+	749.8.27 = {
+		death = yes
+	}
+}
+
+188575 = {
+	name = "al-Hasan"
+	dynasty = 602 # Taid or al-Ta'i
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 188574
+	713.1.1 = {
+		birth = yes
+	}
+	797.1.1 = {
+		death = yes
+	}
+}
+
+188576 = {
+	name = "Muhammad"
+	dynasty = 602 # Taid or al-Ta'i
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 188575
+	738.1.1 = {
+		birth = yes
+	}
+	815.1.1 = {
+		death = yes
+	}
+}
+
+188577 = {
+	name = "ali"
+	dynasty = 602 # Taid or al-Ta'i
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 188575
+	740.1.1 = {
+		birth = yes
+	}
+	815.1.1 = {
+		death = yes
+	}
+}
+
+188578 = {
+	name = "Sa_id"
+	dynasty = 602 # Taid or al-Ta'i
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 188575
+	742.1.1 = {
+		birth = yes
+	}
+	815.1.1 = {
+		death = yes
+	}
+}
+
+188579 = {
+	name = "Abdallah"
+	dynasty = 602 # Taid or al-Ta'i
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 188602
+	749.1.1 = {
+		birth = yes
+	}
+	815.1.1 = {
+		death = yes
+	}
+}
+
+188690 = {
+	# Governor of Khorasan, 780 & 782
+	name = "al-Musayyab"
+	dynasty = 1042152 # Dabbid
+	religion = "united_islam"
+	culture = "bedouin"
+	730.1.1 = {
+		birth = yes
+	}
+	790.1.1 = {
+		death = yes
+	}
+}
+
+188691 = {
+	name = "Zuhayr"
+	dynasty = 1042152 # Dabbid
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 188690
+	755.1.1 = {
+		birth = yes
+	}
+	820.1.1 = {
+		death = yes
+	}
+}
+
+188692 = {
+	name = "al-Harith"
+	dynasty = 101727 # Abbasid
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 33901
+	665.1.1 = {
+		birth = yes
+	}
+	715.1.1 = {
+		death = yes
+	}
+}
+
+188693 = {
+	name = "al-Sariyy"
+	dynasty = 101727 # Abbasid
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 188692
+	705.1.1 = {
+		birth = yes
+	}
+	770.1.1 = {
+		death = yes
+	}
+}
+
+188696 = {
+	name = "Hammad" # general that fought Ustadhsis
+	dynasty = 1042155 # Amrid
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 188692
+	715.1.1 = {
+		birth = yes
+	}
+	775.1.1 = {
+		death = yes
+	}
+}
+146014 = {
+	name = "Zafir"
+	dynasty = 1022357 # Sulamid or al-Sulami
+	religion = "united_islam"
+	culture = "bedouin"
+
+	681.1.1 = {
+		birth = "681.1.1"
+	}
+	735.1.1 = {
+		death = "735.1.1"
+	}
+}
+
+146015 = {
+	name = "Asid"
+	dynasty = 1022357
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 146014
+	700.1.1 = {
+		birth = "700.1.1"
+	}
+	754.1.1 = {
+		death = "754.1.1"
+	}
+}
+
+146016 = {
+	name = "Yazid"
+	dynasty = 1022357
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 146015
+	720.1.1 = {
+		birth = "720.1.1"
+	}
+	783.1.1 = {
+		death = "783.1.1"
+	}
+}
+
+146017 = {
+	name = "Rashid"
+	dynasty = 1022357
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 146015
+	732.1.1 = {
+		birth = "732.1.1"
+	}
+	782.1.1 = {
+		death = "782.1.1"
+	}
+}
+
+146018 = {
+	name = "Khalid"
+	dynasty = 1022357
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 146016
+	741.1.1 = {
+		birth = "741.1.1"
+	}
+	779.1.1 = {
+		death = "779.1.1"
+	}
+}
+
+146019 = {
+	name = "Ahmad"
+	dynasty = 1022357
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 146016
+	743.1.1 = {
+		birth = "743.1.1"
+	}
+	794.1.1 = {
+		death = "794.1.1"
+	}
+}
+
+146020 = {
+	name = "Yusuf"
+	dynasty = 1022357
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 146017
+	749.1.1 = {
+		birth = "749.1.1"
+	}
+	814.1.1 = {
+		death = "814.1.1"
+	}
+}
+
+146021 = {
+	name = "Abdallah"
+	dynasty = 1022357
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 146019
+	760.1.1 = {
+		birth = "760.1.1"
+	}
+	819.1.1 = {
+		death = "819.1.1"
+	}
+}
+
+146022 = {
+	name = "Shabib"
+	dynasty = 602 # Taid or al-Ta'i
+	religion = "united_islam"
+	culture = "bedouin"
+	father = banu_tayy_01
+	670.1.1 = {
+		birth = yes
+	}
+	735.1.1 = {
+		death = yes
+	}
+}
+
+146023 = {
+	name = "Subai"
+	dynasty = 1022358 # Kindid or al-Kindi
+	religion = "united_islam"
+	culture = "bedouin"
+
+	723.1.1 = {
+		birth = yes
+	}
+	778.1.1 = {
+		death = yes
+	}
+}
+
+146024 = {
+	name = "Salih"
+	dynasty = 1022358
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 146023
+	740.1.1 = {
+		birth = yes
+	}
+	795.1.1 = {
+		death = yes
+	}
+}
+
+146025 = {
+	name = "Amer"
+	dynasty = 101731 # asadid or al-asadi
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 146026
+	760.1.1 = {
+		birth = yes
+	}
+	825.1.1 = {
+		death = yes
+	}
+}
+
+146026 = {
+	name = "Zufar"
+	dynasty = 101731
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 146027
+	741.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+
+146027 = {
+	name = "Asim"
+	dynasty = 101731
+	religion = "united_islam"
+	culture = "bedouin"
+
+	713.1.1 = {
+		birth = yes
+	}
+	767.1.1 = {
+		death = yes
+	}
+}
+
+146028 = {
+	name = "Yahya"
+	dynasty = 1022359 # Hajurid or al-Hajuri
+	religion = "united_islam"
+	culture = "bedouin"
+
+	719.1.1 = {
+		birth = yes
+	}
+	777.1.1 = {
+		death = yes
+	}
+}
+
+146029 = {
+	name = "Mayuf"
+	dynasty = 1022359
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 146028
+	739.1.1 = {
+		birth = yes
+	}
+	805.1.1 = {
+		death = yes
+	}
+}
+
+146030 = {
+	name = "Asim"
+	dynasty = 101862 # asadid or al-asadi
+	religion = "united_islam"
+	culture = "bedouin"
+
+	610.1.1 = {
+		birth = yes
+	}
+	658.1.1 = {
+		death = yes
+	}
+}
+
+146031 = {
+	name = "Rabi_a"
+	dynasty = 101862
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 146030
+	627.1.1 = {
+		birth = yes
+	}
+	656.11.7 = {
+		death = yes
+	}
+}
+
+146032 = {
+	name = "Muslim"
+	dynasty = 101862
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 146031
+	655.1.1 = {
+		birth = yes
+	}
+	732.1.1 = {
+		death = yes
+	}
+}
+
+146033 = {
+	name = "Ishaq"
+	dynasty = 101862
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 146032
+	708.1.1 = {
+		birth = yes
+	}
+	766.1.1 = {
+		death = yes
+	}
+}
+
+146034 = {
+	name = "Abd_al-Malik"
+	dynasty = 101862
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 146032
+	710.1.1 = {
+		birth = yes
+	}
+	772.1.1 = {
+		death = yes
+	}
+}
+
+146035 = {
+	name = "Isa"
+	dynasty = 101862
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 146032
+	715.1.1 = {
+		birth = yes
+	}
+	782.1.1 = {
+		death = yes
+	}
+}
+
+146036 = {
+	name = "Bakkar"
+	dynasty = 101862
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 146032
+	725.1.1 = {
+		birth = yes
+	}
+	790.1.1 = {
+		death = yes
+	}
+}
+
+146037 = {
+	name = "Amir"
+	dynasty = 101862
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 146036
+	755.1.1 = {
+		birth = yes
+	}
+	817.1.1 = {
+		death = yes
+	}
+}
+
+146054 = {
+	name = "Amr"
+	dynasty = 1022364 # al-Harashi or Harashid
+	religion = "united_islam"
+	culture = "bedouin"
+
+	670.1.1 = {
+		birth = yes
+	}
+	721.1.1 = {
+		death = yes
+	}
+}
+
+146055 = {
+	name = "Sa_id"
+	dynasty = 1022364
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 146054
+	690.1.1 = {
+		birth = yes
+	}
+	749.1.1 = {
+		death = yes
+	}
+}
+
+146056 = {
+	name = "Yazid"
+	dynasty = 1022364
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 146055
+	710.1.1 = {
+		birth = yes
+	}
+	744.1.1 = {
+		death = yes
+	}
+}
+
+146057 = {
+	name = "Nadr"
+	dynasty = 1022364
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 146055
+	715.1.1 = {
+		birth = yes
+	}
+	752.1.1 = {
+		death = yes
+	}
+}
+
+146058 = {
+	name = "Anbasa"
+	dynasty = 1022364
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 146055
+	735.1.1 = {
+		birth = yes
+	}
+	798.1.1 = {
+		death = yes
+	}
+}
+
+146059 = {
+	name = "Yahya"
+	dynasty = 1022364
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 146055
+	740.1.1 = {
+		birth = yes
+	}
+	807.1.1 = {
+		death = yes
+	}
+}
+
+146060 = {
+	name = "Salih"
+	dynasty = 101727 # Abbasid
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 33902
+	trait = sayyid
+	711.1.1 = {
+		birth = yes
+	}
+	769.1.1 = {
+		death = yes
+	}
+}
+
+146061 = {
+	name = "Abdallah"
+	dynasty = 101727
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 33902
+	trait = sayyid
+	712.1.1 = {
+		birth = yes
+	}
+	764.1.1 = {
+		death = yes
+	}
+}
+
+146062 = {
+	name = "al-Fadl"
+	dynasty = 101727
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 146060
+	trait = sayyid
+	740.1.1 = {
+		birth = yes
+	}
+	789.1.1 = {
+		death = yes
+	}
+}
+
+146063 = {
+	name = "Ibrahim"
+	dynasty = 101727
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 146060
+	trait = sayyid
+	742.1.1 = {
+		birth = yes
+	}
+	793.1.1 = {
+		death = yes
+	}
+}
+
+146064 = {
+	name = "Abd_al-Malik"
+	dynasty = 101727
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 146060
+	trait = sayyid
+	750.1.1 = {
+		birth = yes
+	}
+	812.1.1 = {
+		death = yes
+	}
+}
+
+146065 = {
+	name = "Abdallah"
+	dynasty = 101727
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 146060
+	trait = sayyid
+	755.1.1 = {
+		birth = yes
+	}
+	813.1.1 = {
+		death = yes
+	}
+}
+
+146066 = {
+	name = "Abd_ar-Rahman"
+	dynasty = 101727
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 146064
+	trait = sayyid
+	768.1.1 = {
+		birth = yes
+	}
+	813.1.1 = {
+		death = yes
+	}
+}
+
+146067 = {
+	name = "Za_ida"
+	dynasty = 1029123 # al-Shaybani or Shaybanid
+	religion = "united_islam"
+	culture = "bedouin"
+
+	690.1.1 = {
+		birth = yes
+	}
+	747.1.1 = {
+		death = yes
+	}
+}
+
+146068 = {
+	name = "Za_ida"
+	dynasty = 1029123
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 188604
+	743.1.1 = {
+		birth = yes
+	}
+	801.1.1 = {
+		death = yes
+	}
+}
+
+146069 = {
+	name = "Sharahil"
+	dynasty = 1029123
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 188604
+	755.1.1 = {
+		birth = yes
+	}
+	819.1.1 = {
+		death = yes
+	}
+}
+
+146070 = {
+	name = "Mazyad"
+	dynasty = 1029123
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 146067
+	714.1.1 = {
+		birth = yes
+	}
+	761.1.1 = {
+		death = yes
+	}
+}
+
+146071 = {
+	name = "Yazid"
+	dynasty = 1029123
+	religion = "united_islam"
+	culture = "bedouin"
+	trait = education_martial_3
+	trait = diligent
+	father = 146070
+	735.1.1 = {
+		birth = yes
+	}
+	801.1.1 = {
+		death = yes
+	}
+}
+
+146072 = {
+	name = "Ahmad"
+	dynasty = 1029123
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 146070
+	740.1.1 = {
+		birth = yes
+	}
+	795.1.1 = {
+		death = yes
+	}
+}
+
+146073 = {
+	name = "Salil"
+	dynasty = 1029123
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 146072
+	766.1.1 = {
+		birth = yes
+	}
+	822.1.1 = {
+		death = yes
+	}
+}
+
+146074 = {
+	name = "Asad"
+	dynasty = 1029123
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 146071
+	752.1.1 = {
+		birth = yes
+	}
+	816.1.1 = {
+		death = yes
+	}
+}
+
+146075 = {
+	name = "Muhammad"
+	dynasty = 1029123
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 146071
+	765.1.1 = {
+		birth = yes
+	}
+	823.1.1 = {
+		death = yes
+	}
+}
+
+146126 = {
+	name = "Ibrahim"
+	dynasty = 101727 # Abbasid
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 33902
+	trait = sayyid
+	714.1.1 = {
+		birth = yes
+	}
+	762.1.1 = {
+		death = yes
+	}
+}
+
+146127 = {
+	name = "Abd_al-Bahhab"
+	dynasty = 101727
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 146126
+	trait = sayyid
+	734.1.1 = {
+		birth = yes
+	}
+	781.1.1 = {
+		death = yes
+	}
+}
+
+146132 = {
+	name = "Muhammad"
+	dynasty = 1022366 # Taglibid or al-Taglibi
+	religion = "united_islam"
+	culture = "bedouin"
+
+	722.1.1 = {
+		birth = yes
+	}
+	773.1.1 = {
+		death = yes
+	}
+}
+
+146133 = {
+	name = "Fuad"
+	dynasty = 1022366
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 146132
+	741.1.1 = {
+		birth = yes
+	}
+	803.1.1 = {
+		death = yes
+	}
+}
+
+146134 = {
+	name = "Musa"
+	dynasty = 1022366
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 146132
+	743.1.1 = {
+		birth = yes
+	}
+	807.1.1 = {
+		death = yes
+	}
+}
+
+146135 = {
+	name = "Sauq"
+	dynasty = 1022366
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 146134
+	765.1.1 = {
+		birth = yes
+	}
+	822.1.1 = {
+		death = yes
+	}
+}
+
+188653 = {
+	name = "Shu_ayb"
+	dynasty = 1042122 # Banu Tamim
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 188630
+	trait = education_martial_3
+	753.1.1 = {
+		birth = yes
+	}
+	821.1.1 = {
+		death = yes
+	}
+}
+188603 = {
+	name = "Jibril" # governor of Samarkand in 775
+	dynasty = 1042147
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 188685
+	732.1.1 = {
+		birth = yes
+	}
+	785.1.1 = {
+		death = yes
+	}
+}
+
+188680 = {
+	name = "Maslama" # governor of Egypt in 789
+	dynasty = 1042147
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 188685
+	737.1.1 = {
+		birth = yes
+	}
+	795.1.1 = {
+		death = yes
+	}
+}
+
+188685 = {
+	name = "Yahya"
+	dynasty = 1042147
+	religion = "united_islam"
+	culture = "bedouin"
+	710.1.1 = {
+		birth = yes
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+
+188683 = {
+	# general who fought al-Muqanna
+	name = "Uqbah"
+	dynasty = 1042150
+	religion = "united_islam"
+	culture = "bedouin"
+	725.1.1 = {
+		birth = yes
+	}
+	783.1.1 = {
+		death = yes
+	}
+}
+188649 = {
+	name = "Umarah" # governor of Ahwaz in 773
+	dynasty = 1042139 # Hamzahbid
+	religion = "united_islam"
+	culture = "bedouin"
+	trait = education_stewardship_3
+	trait = greedy
+	738.1.1 = {
+		birth = yes
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+188607 = {
+	name = "Nasr" # governor of Fars in 775
+	dynasty = 1042142 # Tamimi
+	religion = "united_islam"
+	culture = "bedouin"
+	736.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+188667 = {
+	name = "Isa"
+	dynasty = 101727 # Abbasid
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 33902
+	703.1.1 = {
+		birth = yes
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+
+188668 = {
+	name = "Musa"
+	dynasty = 101727 # Abbasid
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 33902
+	trait = sayyid
+	695.1.1 = {
+		birth = yes
+	}
+	760.1.1 = {
+		death = yes
+	}
+}
+
+188669 = {
+	name = "Isa"
+	dynasty = 101727 # Abbasid
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 188668
+	trait = sayyid
+	720.1.1 = {
+		birth = yes
+	}
+	783.1.1 = {
+		death = yes
+	}
+}
+
+188670 = {
+	name = "Ubaydallah"
+	dynasty = 101727 # Abbasid
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 188612
+	trait = sayyid
+	732.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+
+188671 = {
+	name = "Ubaydallah"
+	dynasty = 101727 # Abbasid
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 33900
+	trait = sayyid
+	625.1.1 = {
+		birth = yes
+	}
+	700.1.1 = {
+		death = yes
+	}
+}
+
+188672 = {
+	name = "Asma"
+	female = yes
+	dynasty = 101727 # Abbasid
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 33901
+	trait = sayyid
+	660.1.1 = {
+		birth = yes
+	}
+	715.1.1 = {
+		death = yes
+	}
+}
+
+188673 = {
+	name = "Abdullah"
+	dynasty = 101727 # Abbasid
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 188671
+	trait = sayyid
+	660.1.1 = {
+		birth = yes
+	}
+	710.1.1 = {
+		death = yes
+	}
+}
+
+188674 = {
+	name = "Ubaydallah" # made up name
+	dynasty = 101727 # Abbasid
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 188673
+	trait = sayyid
+	700.1.1 = {
+		birth = yes
+	}
+	770.1.1 = {
+		death = yes
+	}
+}
+
+188675 = {
+	name = "Isa" # made up name
+	dynasty = 101727 # Abbasid
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 188673
+	trait = sayyid
+	704.1.1 = {
+		birth = yes
+	}
+	772.1.1 = {
+		death = yes
+	}
+}
+
+188698 = {
+	name = "Isa"
+	dynasty = 809 # Dulafid
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 188699
+	745.1.1 = {
+		birth = yes
+	}
+	810.1.1 = {
+		death = yes
+	}
+}
+
+188699 = {
+	name = "Edris"
+	dynasty = 809 # Dulafid
+	religion = "united_islam"
+	culture = "bedouin"
+	720.1.1 = {
+		birth = yes
+	}
+	765.1.1 = {
+		death = yes
+	}
+}
+
+188725 = {
+	name = "Ramadan" # fictitious holder of Qazim
+	dynasty = 1042158
+	religion = "united_islam"
+	culture = "bedouin"
+	726.1.1 = {
+		birth = yes
+	}
+	790.1.1 = {
+		death = yes
+	}
+}
+
+188742 = {
+	name = "Talib" # fictitious holder of Taizz
+	dynasty = 1042166 # Hashid
+	religion = "united_islam"
+	culture = "bedouin"
+	738.1.1 = {
+		birth = yes
+	}
+	795.1.1 = {
+		death = yes
+	}
+}
+
+188743 = {
+	name = "Qawurd" # fictitious holder of Bayid
+	dynasty = 1042167 # Bakil
+	religion = "united_islam"
+	culture = "bedouin"
+	732.1.1 = {
+		birth = yes
+	}
+	793.1.1 = {
+		death = yes
+	}
+}
+
+188744 = {
+	name = "Yusuf" # fictitious holder of Aden
+	dynasty = 1042168 # Modharite
+	religion = "ismaili"
+	culture = "bedouin"
+	728.1.1 = {
+		birth = yes
+	}
+	785.1.1 = {
+		death = yes
+	}
+}
+
+188745 = {
+	name = "Youkhanna" # fictitious holder of Mahra
+	dynasty = 1042169 # Kathirid
+	religion = "united_islam"
+	culture = "bedouin"
+	735.1.1 = {
+		birth = yes
+	}
+	785.1.1 = {
+		death = yes
+	}
+}
+
+188746 = {
+	name = "Arwa" # wife of al-Mansur Abbasid
+	female = yes
+	dynasty = 1042170 # Arwadid
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 188749
+	716.1.1 = {
+		birth = yes
+	}
+	770.1.1 = {
+		death = yes
+	}
+}
+
+188748 = {
+	name = "Yazid" # governor of Yemen and Basra
+	dynasty = 1042170 # Arwadid
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 188749
+	718.1.1 = {
+		birth = yes
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+
+188749 = {
+	name = "Mansur"
+	dynasty = 1042170 # Arwadid
+	religion = "united_islam"
+	culture = "bedouin"
+	690.1.1 = {
+		birth = yes
+	}
+	740.1.1 = {
+		death = yes
+	}
+}
+210001  = {
+	name = "Muhallab"
+	dynasty = 1048001 #Muhallabid
+	religion = "united_islam"
+	culture = "bedouin"
+	632.1.1 = {
+		birth = "632.1.1"
+	}
+	702.1.2 = {
+		death = "702.1.2"
+	}
+}
+210002  = {
+	name = "Yazid"
+	dynasty = 1048001 #Muhallabid
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 210001
+	670.1.1 = {
+		birth = "670.1.1"
+	}
+	720.1.1 = {
+		death = "720.1.1"
+	}
+}
+
+210003 = {
+	name = "Habib"
+	dynasty = 1048001 #Muhallabid
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 210001
+	673.1.1 = {
+		birth = "673.1.1"
+	}
+	720.1.1 = {
+		death = "720.1.1"
+	}
+}
+210004 = {
+	name = "al-Mufaddal"
+	dynasty = 1048001 #muhallabid
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 210001
+	674.1.1 = {
+		birth = "674.1.1"
+	}
+	720.1.1 = {
+		death = "720.1.1"
+	}
+}
+210005 = {
+	name = "Marwan"
+	dynasty = 1048001 #Muhallabid
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 210001
+	675.1.1 = {
+		birth = "675.1.1"
+	}
+	720.1.1 = {
+		death = "720.1.1"
+	}
+}
+210006 = {
+	name = "Abd_al-malik"
+	dynasty = 1048001 #Muhallabid
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 210001
+	676.1.1 = {
+		birth = "676.1.1"
+	}
+	720.1.1 = {
+		death = "720.1.1"
+	}
+}
+
+210007	= {
+	name = "Mu_awiyah"
+	dynasty = 1048001 #Muhallabid
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 210002
+	700.1.1 = {
+		birth = "700.1.1"
+	}
+	750.1.2 = {
+		death = "750.1.2"
+	}
+}
+210008  = {
+	name = "Hatim"
+	dynasty = 1048001 #Muhallabid
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 210002
+	702.1.1 = {
+		birth = "702.1.1"
+	}
+	755.1.1 = {
+		death = "755.1.1"
+	}
+}
+
+210009 = {
+	name = "Yazid"
+	dynasty = 1048001 #Muhallabid
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 210008
+	720.1.1 = {
+		birth = "720.1.1"
+	}
+	787.1.1 = {
+		death = "787.1.1"
+	}
+}
+210010 = {
+	name = "Dawud"
+	dynasty = 1048001 #muhallabid
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 210009
+	740.1.1 = {
+		birth = "740.1.1"
+	}
+	820.1.1 = {
+		death = "820.1.1"
+	}
+}
+210011 = {
+	name = "al-Mughirah"
+	dynasty = 1048001 #Muhallabid
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 210009
+	751.1.1 = {
+		birth = "751.1.1"
+	}
+	822.1.1 = {
+		death = "822.1.1"
+	}
+}
+210013 = {
+	name = "Hafs"
+	dynasty = 1048001 #Muhallabid
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 210005
+	710.1.1 = {
+		birth = "710.1.1"
+	}
+	777.1.1 = {
+		death = "777.1.1"
+	}
+}
+210014 = {
+	name = "Umar"
+	dynasty = 1048001 #muhallabid
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 210013
+	735.1.1 = {
+		birth = "735.1.1"
+	}
+	769.1.1 = {
+		add_pressed_claim = title:d_tripolitania
+	}
+	771.11.27 = {
+		death = yes
+	}
+}
+210015 = {
+	name = "Habib"
+	dynasty = 1048001 #Muhallabid
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 210003
+	703.1.1 = {
+		birth = "703.1.1"
+	}
+	771.1.1 = {
+		death = "771.1.1"
+	}
+}
+210016 = {
+	name = "Rawh"
+	dynasty = 1048001 #Muhallabid
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 210008
+	725.1.1 = {
+		birth = "725.1.1"
+	}
+	791.1.1 = {
+		death = "791.1.1"
+	}
+}
+210017 = {
+	name = "Nasr"
+	dynasty = 1048001 #Muhallabid
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 210015
+	740.1.1 = {
+		birth = "740.1.1"
+	}
+	793.1.1 = {
+		death = "793.1.1"
+	}
+}
+210018 = {
+	name = "al-Fadl"
+	dynasty = 1048001 #muhallabid
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 210016
+	760.1.1 = {
+		birth = "760.1.1"
+	}
+	820.1.1 = {
+		death = "820.1.1"
+	}
+}
+210019	= {
+	name = "Hudayj_al-Tujibi"
+	dynasty = 1048002 #Tujibid
+	religion = "united_islam"
+	culture = "bedouin"
+	640.1.1 = {
+		birth = "640.1.1"
+	}
+	712.1.2 = {
+		death = "712.1.2"
+	}
+}
+210020  = {
+	name = "Mu_awiyah"
+	dynasty = 1048002 # Tujibid
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 210019
+	675.1.1 = {
+		birth = "675.1.1"
+	}
+	730.1.1 = {
+		death = "730.1.1"
+	}
+}
+188763 = {
+	name = "al-Julanda"	
+	dynasty = 1042181
+	religion = "ibadi"
+	culture = "bedouin"
+	711.1.1 = {
+		birth = yes
+	}
+	775.1.1 = {
+		death = yes
+	}
+}
+194176 = {
+	name = "Muhammad"	
+	dynasty = 1042181
+	religion = "ibadi"
+	culture = "bedouin"
+	father = 188763
+	734.1.1 = {
+		birth = yes
+	}
+	790.1.1 = {
+		death = yes
+	}
+}
+
+188764 = {
+	name = "Ka_ab"
+	dynasty = 1042182
+	religion = "ibadi"
+	culture = "bedouin"
+	733.1.1 = {
+		birth = yes
+	}
+	785.1.1 = {
+		death = yes
+	}
+}
+
+188765 = {
+	name = "Burhanaddin"	# fictitious holder of Dhofar
+	dynasty = 1042183
+	religion = "ibadi"
+	culture = "bedouin"
+	738.1.1 = {
+		birth = yes
+	}
+	796.1.1 = {
+		death = yes
+	}
+}
+
+188766 = {
+	name = "Jalil"	# fictitious holder of Dhu Zabi
+	dynasty = 1042184
+	religion = "ibadi"
+	culture = "bedouin"
+	728.1.1 = {
+		birth = yes
+	}
+	779.1.1 = {
+		death = yes
+	}
+}
+
+168728 = {
+	name = Aisa
+	#dynasty = 1046037
+
+	religion = united_islam
+	culture = bedouin
+
+	710.1.1 = {
+		birth = yes
+	}
+	736.1.1 = {
+		add_spouse = 168721
+	}
+	755.1.1 = {
+		death = yes
+	}
+}
+
+168729 = {
+	name = "Umar"
+	#dynasty = 1046038
+
+	religion = "united_islam"
+	culture = "bedouin"
+
+	720.1.1 = {
+		birth = yes
+	}
+	755.1.1 = {
+		add_spouse = 168721
+	}
+	770.1.1 = {
+		death = yes
+	}
+}
+
+168731 = {
+	name = "Ibrahim"
+	#dynasty = 1046037
+
+	father = 168728
+	mother = 168721
+
+	religion = "united_islam"
+	culture = "bedouin"
+
+	737.1.1 = {
+		birth = yes
+	}	
+	790.1.1 = {
+		death = yes
+	}
+}
+
+168732 = {
+	name = "Ishaq"
+	#dynasty = 1046037
+
+	father = 168728
+	mother = 168721
+
+	religion = united_islam
+	culture = bedouin
+
+	740.1.1 = {
+		birth = yes
+	}	
+	797.1.1 = {
+		death = yes
+	}
+}
+217320 = {
+	name = Qutayba
+	dynasty = 1051142
+	religion = united_islam
+	culture = bedouin
+	
+	trait = education_martial_4
+	trait = diligent
+	trait = brave
+	trait = intellect_good_1
+	
+	669.4.17 = {
+		birth = yes
+	}
+	715.9.22 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+#Banu Kharus tribe - of Oman
+bedouin0119 = {
+	name = "Ka_b" #
+	dynasty = bedouindyn012 #Banu Kharus
+	religion = "ibadi"
+	culture = "bedouin"
+	748.1.1 = {
+		birth = yes
+	}
+	799.1.1 = {
+		death = yes
+	}
+}
+
+#Yahmadi of Oman
+bedouin0144 = {
+	name = "AbI__AffA_n" #
+	dynasty = 1042182 #Yahmad
+	religion = "ibadi"
+	culture = "bedouin"
+	733.1.1 = {
+		birth = yes
+	}
+	792.1.1 = {
+		death = yes
+	}
+}
+bedouin0145 = {
+	name = "Muhammad" # b. Abi Affan 793 founded Nizwa
+	dynasty = 1042182 #Yahmad
+	religion = "ibadi"
+	culture = "bedouin"
+	father = bedouin0144
+	768.1.1 = {
+		birth = yes
+	}
+	805.1.1 = {
+		death = yes
+	}
+}
+
+#Vassals of Somalia
+umayyad_001 = {
+	name= "Azd"
+	religion="united_islam"
+	culture="bedouin"
+	732.1.1 = {
+		birth = yes
+	}
+	788.1.1 = {
+		death = yes
+	}
+}
+
+#Africa history
+muhallabid_01 = {
+	name = "Umar"
+	religion = "united_islam"
+	culture = "butr"
+	735.1.1 = {
+		birth = "735.1.1"
+	}
+	771.1.1 = {
+		death = yes
+	}
+}
+muhallabid_02 = {
+	name = "Abbas"
+	religion = "united_islam"
+	culture = "baranis"
+	743.1.1 = {
+		birth = yes
+	}
+	789.1.1 = {
+		death = yes
+	}
+}
+muhallabid_03 = {
+	name = "Masud"
+	religion = "united_islam"
+	culture = "butr"
+	737.1.1 = {
+		birth = yes
+	}
+	789.1.1 = {
+		death = yes
+	}
+}
+muhallabid_04 = {
+	name = "Suud"
+	religion = "ibadi"
+	culture = "butr"
+	729.1.1 = {
+		birth = yes
+	}
+	789.1.1 = {
+		death = yes
+	}
+}
+
+### al Andalus
+al_andalus_01 = {
+	name = "Abd-al-Rahman"
+	religion = "united_islam"
+	culture = "bedouin"
+	698.1.1 = {
+		birth = yes
+	}
+	732.1.1 = {
+		death = yes
+	}
+}
+al_andalus_02 = {
+	name = "Yusuf"
+	religion = "united_islam"
+	culture = "bedouin"
+	father = al_andalus_01 #Abd al Rahman
+	698.1.1 = {
+		birth = yes
+	}
+	732.1.1 = {
+		death = yes
+	}
+}
+
+##Lakhmids
+
+lakhmid_03 = {
+	name = "'Amr"
+	dynasty = lakhmid_dynasty
+	religion = "manichean"
+	culture = "bedouin"
+	father = lakhmid_02 # Imru' al-Qays, still yemeni
+
+	trait = impatient
+	trait = wrathful
+	trait = fickle
+	trait = agressive_attacker
+	trait = education_martial_4
+
+	martial = 12
+	299.1.1 = {
+		birth = yes
+	}
+	340.1.1 = {
+		give_nickname = nick_the_warmonger
+	}
+	363.1.1 = {
+		death = yes
+	}
+}
+
+lakhmid_04 = {
+	name = "Aws"
+	religion = "nicene"
+	culture = "bedouin"
+	331.1.1 = {
+		birth = yes
+	}
+	368.1.1 = {
+		death = yes
+	}
+}
+
+lakhmid_05 = {
+	name = "Imru' al-Qays"
+	dynasty = lakhmid_dynasty
+	religion = "nicene"
+	culture = "bedouin"
+	father = lakhmid_03 # 'Amr II, The Warmonger
+	trait = sadistic
+	331.1.1 = {
+		birth = yes
+	}
+	368.1.1 = {
+		give_nickname = nick_the_incendiarist
+	}
+	390.1.1 = {
+		death = yes
+	}
+}
+
+lakhmid_06 = {
+	name = "al-Nu'man" ##ATENTION ADD MARRIAGE TO GHAZZANID PRINCESS and Friend of Yazdegard
+	dynasty = lakhmid_dynasty
+	dna = 983004_alnuman
+	religion = "nicene"
+	culture = "bedouin"
+	father = lakhmid_05 # Imru' al-Qays II, the Incediarist
+	trait = architect
+	trait = education_stewardship_4
+	trait = humble
+	trait = arbitrary
+	trait = calm
+	trait = one_eyed
+	373.1.1 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+	390.1.1 = {
+		give_nickname = nick_the_one_eyed
+	}
+	415.1.1 = {
+		trait = pilgrim
+	}
+	430.1.1 = {
+		death = yes
+	}
+}
+
+lakhmid_07 = {
+	name = "al-Mundhir" 
+	dynasty = lakhmid_dynasty
+	religion = "nestorian"
+	culture = "bedouin"
+	father = lakhmid_06 # al-Nu'man the One Eyed
+	trait = architect
+	trait = education_martial_2
+
+	391.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = nestorian
+	}
+	462.1.1 = {
+		death = yes
+	}
+}
+
+lakhmid_08 = {
+	name = "al-Aswad" ##ATENTION ADD KINDITE PRINCESS WIFE
+	dynasty = lakhmid_dynasty
+	religion = "nicene"
+	culture = "bedouin"
+	father = lakhmid_07 # al-Mundhir
+	436.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = nestorian
+	}
+	490.1.1 = {
+		death = yes
+	}
+}
+
+lakhmid_09 = {
+	name = "al-Mundhir" 
+	dynasty = lakhmid_dynasty
+	religion = "nicene"
+	culture = "bedouin"
+	father = lakhmid_07 # al-Mundhir
+	439.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = nestorian
+	}
+	497.1.1 = {
+		death = yes
+	}
+}
+lakhmid_10 = {
+	name = "al-Nu'man" 
+	dynasty = lakhmid_dynasty
+	religion = "nicene"
+	culture = "bedouin"
+	father = lakhmid_07 # al-Mundhir
+	430.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = nestorian
+	}
+	457.1.1 = {
+		death = {
+			death_reason = death_batlle
+		}
+	}
+}
+
+lakhmid_11 = {
+	name = "al-Nu'man" 
+	dynasty = lakhmid_dynasty
+	religion = "nestorian"
+	culture = "bedouin"
+	father = lakhmid_08 # al-Aswad
+	mother = kindha_125
+	462.1.1 = {
+		birth = yes
+	}
+	503.1.1 = {
+		death = yes
+	}
+}
+
+lakhmid_12 = {
+	name = "alqama" 
+	dynasty = dhumayl_dynasty
+	religion = "nicene"
+	culture = "bedouin"
+	443.1.1 = {
+		birth = yes
+	}	
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	510.1.1 = {
+		death = yes
+	}
+}
+lakhmid_13 = {
+	name = "Abu Ya'fur" 
+	dynasty = dhumayl_dynasty
+	religion = "chalcedonian"
+	culture = "bedouin"
+	father = lakhmid_12 #alqama
+	489.1.1 = {
+		birth = yes
+	}
+	540.1.1 = {
+		death = yes
+	}
+}
+
+# LE EPIC RAIDER AGAINST JUSTINIAN
+lakhmid_14 = {
+	name = "al-Mundhir" 
+	dynasty = lakhmid_dynasty
+	religion = "nestorian"
+	culture = "bedouin"
+	father = lakhmid_11 # al-Nu'man II
+	trait = education_martial_4
+	trait = reaver
+	trait = viking
+	trait = ambitious
+	trait = callous
+	trait = strategist
+	trait = brave
+	486.1.1 = {
+		birth = yes
+	}
+	554.1.1 = {
+		death = {
+			death_reason = death_batlle
+		}
+	}
+}
+
+lakhmid_15 = {
+	name = "'Amr" 
+	dynasty = lakhmid_dynasty
+	religion = "nestorian"
+	culture = "bedouin"
+	father = lakhmid_14 # al-Mundhir III
+	mother=kindha_135
+	trait = sadistic
+	trait = wrathful
+	trait = callous
+	trait = education_martial_3
+	515.1.1 = {
+		birth = yes
+	}
+	532.1.1 = {
+		give_nickname = nick_the_burner
+	}
+	569.1.1 = {
+		death = yes
+	}
+}
+
+lakhmid_16 = {
+	name = "Qabus" 
+	dynasty = lakhmid_dynasty
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	father = lakhmid_14 # al-Mundhir III
+	525.1.1 = {
+		birth = yes
+	}
+	573.1.1 = {
+		death = yes
+	}
+}
+
+lakhmid_17 = {
+	name = "al-Mundhir" 
+	dynasty = lakhmid_dynasty
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	father = lakhmid_14 # al-Mundhir III
+	trait = sadisctic
+	trait = wrathful
+	525.1.1 = {
+		birth = yes
+	}
+	580.1.1 = {
+		death = yes
+	}
+}
+lakhmid_18 = {
+	name = "al-Nu'man" 
+	dynasty = lakhmid_dynasty
+	religion = "nestorian"
+	culture = "bedouin"
+	father = lakhmid_17 # al-Mundhir IV
+	trait = beauty_bad_2
+	trait = education_learning_3
+	trait = generous
+	550.1.1 = {
+		birth = yes
+	}
+	602.1.1 = {
+		death = yes
+	}
+}
+lakhmid_24 = {
+	name = "al-Mundhir" 
+	dynasty = lakhmid_dynasty
+	religion = "nestorian"
+	culture = "bedouin"
+	father = lakhmid_18 # al-Nu'man III
+	587.1.1 = {
+		birth = yes
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+lakhmid_19 = {
+	name = "al-Aswad" 
+	dynasty = lakhmid_dynasty
+	religion = "nestorian"
+	culture = "bedouin"
+	father = lakhmid_17 # al-Mundhir IV
+	555.1.1 = {
+		birth = yes
+	}
+	615.1.1 = {
+		death = yes
+	}
+}
+lakhmid_20 = {
+	name = "Qabisah" 
+	dynasty = al_tai_dynasty
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	520.1.1 = {
+		birth = yes
+	}
+	580.1.1 = {
+		death = yes
+	}
+}
+lakhmid_21 = {
+	name = "Iyas" 
+	dynasty = al_tai_dynasty
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	father = lakhmid_20 #Qabisah
+	trait = education_martial_2
+	555.1.1 = {
+		birth = yes
+	}
+	627.1.1 = {
+		death = yes
+	}
+}
+lakhmid_22 = {
+	name = "Hayyah" 
+	dynasty = al_tai_dynasty
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	father = lakhmid_21 #Iyas
+	581.1.1 = {
+		birth = yes
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+lakhmid_23 = {
+	name = "Farwah" 
+	dynasty = al_tai_dynasty
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	father = lakhmid_21 #Iyas
+	584.1.1 = {
+		birth = yes
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+##Banu Tamim
+banu_tamim_01 = {
+	name = "Manat" 
+	dynasty = banu_tamim_dynasty
+	religion = "manichean"
+	culture = "bedouin"
+	340.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+banu_tamim_02 = {
+	name = "Ilyas" 
+	dynasty = banu_tamim_dynasty
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	father = banu_tamim_01
+	375.1.1 = {
+		birth = yes
+	}
+	440.1.1 = {
+		death = yes
+	}
+}
+banu_tamim_03 = {
+	name = "Mow" 
+	dynasty = banu_tamim_dynasty
+	religion = "nicene"
+	culture = "bedouin"
+	father = banu_tamim_02
+	410.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = nestorian
+	}
+	480.1.1 = {
+		death = yes
+	}
+}
+banu_tamim_04 = {
+	name = "Mudar" 
+	dynasty = banu_tamim_dynasty
+	religion = "nicene"
+	culture = "bedouin"
+	father = banu_tamim_03
+	444.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = nestorian
+	}
+	514.1.1 = {
+		death = yes
+	}
+}
+banu_tamim_05 = {
+	name = "Ilyas" 
+	dynasty = banu_tamim_dynasty
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	father = banu_tamim_04
+	476.1.1 = {
+		birth = yes
+	}
+	540.1.1 = {
+		death = yes
+	}
+}
+banu_tamim_06 = {
+	name = "Nizar" 
+	dynasty = banu_tamim_dynasty
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	father = banu_tamim_05
+	501.1.1 = {
+		birth = yes
+	}
+	582.1.1 = {
+		death = yes
+	}
+}
+banu_tamim_07 = {
+	name = "Nuwera" 
+	dynasty = banu_tamim_dynasty
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	father = banu_tamim_06
+	543.1.1 = {
+		birth = yes
+	}
+	610.1.1 = {
+		death = yes
+	}
+}
+banu_tamim_08 = {
+	name = "Malik" 
+	dynasty = banu_tamim_dynasty
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	father = banu_tamim_07
+	trait = deceitful
+	trait = arrogant
+	trait = education_stewardship_3
+	trait = stubborn
+	trait = blademaster_3
+
+	588.1.1 = {
+		birth = yes
+	}
+	627.1.1 = {
+		religion = united_islam
+	}
+	654.1.1 = {
+		death = yes
+	}
+}
+
+##Banu Tayy
+
+banu_tayy_11 = {
+	name = "Ghalib" # fictitious
+	dynasty = 1042117 # Banu Tayy
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	332.1.1 = {
+		birth = yes
+	}
+	392.1.1 = {
+		death = yes
+	}
+}
+
+banu_tayy_10 = {
+	name = "Ilyas" # fictitious
+	dynasty = 1042117 # Banu Tayy
+	religion = "nicene"
+	culture = "bedouin"
+	father = banu_tayy_11
+	360.1.1 = {
+		birth = yes
+	}
+	420.1.1 = {
+		death = yes
+	}
+}
+
+banu_tayy_09 = {
+	name = "Nu'man" # fictitious
+	dynasty = 1042117 # Banu Tayy
+	religion = "nicene"
+	culture = "bedouin"
+	father = banu_tayy_10
+	405.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = syriac
+	}
+	475.1.1 = {
+		death = yes
+	}
+}
+
+banu_tayy_08 = {
+	name = "Sa'ad" # fictitious
+	dynasty = 1042117 # Banu Tayy
+	religion = "nicene"
+	culture = "bedouin"
+	father = banu_tayy_09
+	443.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = syriac
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+
+banu_tayy_07 = {
+	name = "Abd-Allah" # fictitious
+	dynasty = 1042117 # Banu Tayy
+	religion = "syriac"
+	culture = "bedouin"
+	father = banu_tayy_08
+	470.1.1 = {
+		birth = yes
+	}
+	550.1.1 = {
+		death = yes
+	}
+}
+
+banu_tayy_06 = {
+	name = "Hatim" # fictitious
+	dynasty = 1042117 # Banu Tayy
+	religion = "syriac"
+	culture = "bedouin"
+	father = banu_tayy_07
+	trait = generous
+	trait = poet
+	trait = compassionate
+	trait = calm
+	trait = blademaster_3
+	540.1.1 = {
+		birth = yes
+	}
+	578.1.1 = {
+		death = yes
+	}
+}
+
+banu_tayy_05 = {
+	name = "Adi" # fictitious
+	dynasty = 1042117 # Banu Tayy
+	religion = "syriac"
+	culture = "bedouin"
+	father = banu_tayy_06
+	trait = blademaster_3
+	trait = zealous
+	trait = education_martial_3
+	trait = callous
+	trait = fickle
+	572.1.1 = {
+		birth = yes
+	}
+	627.1.1 = {
+		religion = united_islam
+	}
+	640.1.1 = {
+		death = yes
+	}
+}
+
+banu_tayy_03 = {
+	name = "Mirza" # fictitious
+	dynasty = 1042117 # Banu Tayy
+	religion = "syriac"
+	culture = "bedouin"
+	father = banu_tayy_05
+	600.1.1 = {
+		birth = yes
+	}
+	627.1.1 = {
+		religion = united_islam
+	}
+	648.1.1 = {
+		death = yes
+	}
+}
+
+banu_tayy_02 = {
+	name = "Ghalib" # fictitious
+	dynasty = 1042117 # Banu Tayy
+	religion = "united_islam"
+	culture = "bedouin"
+	father = banu_tayy_03
+	632.1.1 = {
+		birth = yes
+	}
+	678.1.1 = {
+		death = yes
+	}
+}
+
+banu_tayy_01 = {
+	name = "Ubayd" # fictitious
+	dynasty = 1042117 # Banu Tayy
+	religion = "united_islam"
+	culture = "bedouin"
+	father = banu_tayy_02
+	660.1.1 = {
+		birth = yes
+	}
+	715.1.1 = {
+		death = yes
+	}
+}
+
+188614 = {
+	name = "Mirza" # fictitious
+	dynasty = 1042117 # Banu Tayy
+	religion = "united_islam"
+	culture = "bedouin"
+	father = banu_tayy_02
+	700.1.1 = {
+		birth = yes
+	}
+	760.1.1 = {
+		death = yes
+	}
+}
+
+188615 = {
+	name = "Ubayd" # fictitious holder of Rafha
+	dynasty = 1042117 # Banu Tayy
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 188614
+	734.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+
+188616 = {
+	name = "Ghalib" # fictitious holder of Hail
+	dynasty = 1042117 # Banu Tayy
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 188614
+	736.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+
+##Banu Kalb
+
+
+kalb_10 = {
+	name = "Kinana" # 
+	dynasty = 1042116 # Banu Kalb
+	religion = "nicene"
+	culture = "bedouin"
+	340.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+kalb_09 = {
+	name = "Abd_allah" # 
+	dynasty = 1042116 # Banu Kalb
+	religion = "nicene"
+	culture = "bedouin"
+	father = kalb_10
+	390.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = syriac
+	}
+	460.1.1 = {
+		death = yes
+	}
+}
+kalb_08 = {
+	name = "Hubai" # 
+	dynasty = 1042116 # Banu Kalb
+	religion = "nicene"
+	culture = "bedouin"
+	father = kalb_09
+	421.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = syriac
+	}
+	489.1.1 = {
+		death = yes
+	}
+}
+kalb_07 = {
+	name = "Janab" # 
+	dynasty = 1042116 # Banu Kalb
+	religion = "syriac"
+	culture = "bedouin"
+	father = kalb_08
+	464.1.1 = {
+		birth = yes
+	}
+	528.1.1 = {
+		death = yes
+	}
+}
+kalb_06 = {
+	name = "Zuhayr" # 
+	dynasty = 1042116 # Banu Kalb
+	religion = "syriac"
+	culture = "bedouin"
+	father = kalb_07
+	trait = callous
+	trait = brave
+	trait = ambitious
+	trait = poet
+	trait = blademaster_3
+	496.1.1 = {
+		birth = yes
+	}
+	588.1.1 = {
+		death = yes
+	}
+}
+kalb_05 = {
+	name = "Janab" # 
+	dynasty = 1042116 # Banu Kalb
+	religion = "syriac"
+	culture = "bedouin"
+	father = kalb_06
+	573.1.1 = {
+		birth = yes
+	}
+	634.1.1 = {
+		religion = united_islam
+	}
+	642.1.1 = {
+		death = yes
+	}
+}
+kalb_04 = {
+	name = "Zeyd" # 
+	dynasty = 1042116 # Banu Kalb
+	religion = "syriac"
+	culture = "bedouin"
+	father = kalb_05
+	600.1.1 = {
+		birth = yes
+	}
+	634.1.1 = {
+		religion = united_islam
+	}
+	673.1.1 = {
+		death = yes
+	}
+}
+kalb_03 = {
+	name = "Mirza" # 
+	dynasty = 1042116 # Banu Kalb
+	religion = "united_islam"
+	culture = "bedouin"
+	father = kalb_04
+	645.1.1 = {
+		birth = yes
+	}
+	700.1.1 = {
+		death = yes
+	}
+}
+kalb_02 = {
+	name = "Zeyd" # 
+	dynasty = 1042116 # Banu Kalb
+	religion = "united_islam"
+	culture = "bedouin"
+	father = kalb_03
+	677.1.1 = {
+		birth = yes
+	}
+	740.1.1 = {
+		death = yes
+	}
+}
+kalb_01 = {
+	name = "Ghalib" # 
+	dynasty = 1042116 # Banu Kalb
+	religion = "united_islam"
+	culture = "bedouin"
+	father = kalb_02
+	712.1.1 = {
+		birth = yes
+	}
+	770.1.1 = {
+		death = yes
+	}
+}
+188613 = {
+	name = "Zeyd" # fictitious holder of Ar Ar/Shaka
+	dynasty = 1042116 # Banu Kalb
+	religion = "united_islam"
+	culture = "bedouin"
+	father = kalb_01
+	740.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_01 = {
+	name = "'Amr"
+	religion = "nicene"
+	culture = "bedouin"
+	180.1.1 = {
+		birth = yes
+	}
+	220.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_02 = {
+	name = "Jafnah"
+	dynasty = 99820002
+	religion = "nicene"
+	culture = "bedouin"
+	father = ghassanid_01 # 'Amr
+	200.1.1 = {
+		birth = yes
+	}
+	265.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_03 = {
+	name = "'Amr"
+	dynasty = 99820002
+	religion = "nicene"
+	culture = "bedouin"
+	father = ghassanid_02 # Jafnah I
+	227.1.1 = {
+		birth = yes
+	}
+	270.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_04 = {
+	name = "Tha'labah"
+	dynasty = 99820002
+	religion = "nicene"
+	culture = "bedouin"
+	father = ghassanid_03 # 'Amr I
+	245.1.1 = {
+		birth = yes
+	}
+	287.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_05 = {
+	name = "al-Harith"
+	dynasty = 99820002
+	religion = "nicene"
+	culture = "bedouin"
+	father = ghassanid_04 # Tha'labah
+	267.1.1 = {
+		birth = yes
+	}
+	307.1.1 = {
+		death = yes
+	}
+}
+
+983019 = {
+	name = "Mariya"
+	female = yes
+	dynasty = 99820002
+	religion = "nicene"
+	culture = "bedouin"
+	father = ghassanid_04
+	270.1.1 = {
+		birth = yes
+	}
+	325.1.1 = {
+		death = yes
+	}
+}
+ghassanid_06 = {
+	name = "Jabalah"
+	dynasty = 99820002
+	religion = "nicene"
+	culture = "bedouin"
+	father = ghassanid_05 # al-Harith
+	280.1.1 = {
+		birth = yes
+	}
+	317.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_07 = {
+	name = "al-Harith"
+	dynasty = 99820002
+	religion = "nicene"
+	culture = "bedouin"
+	father = ghassanid_06 # Jabalah
+	297.1.1 = {
+		birth = yes
+	}
+	327.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_08 = {
+	name = "al-Mundhir"
+	dynasty = 99820002
+	religion = "nicene"
+	culture = "bedouin"
+	father = ghassanid_07 # al-Harith
+	313.1.1 = {
+		birth = yes
+	}
+	330.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_09 = {
+	name = "al-Aiham"
+	dynasty = 99820002
+	religion = "nicene"
+	culture = "bedouin"
+	father = ghassanid_07 # al-Harith
+	314.1.1 = {
+		birth = yes
+	}
+	330.1.2 = {
+		death = yes
+	}
+}
+
+ghassanid_10 = {
+	name = "al-Mundhir"
+	dynasty = 99820002
+	religion = "nicene"
+	culture = "bedouin"
+	father = ghassanid_07 # al-Harith
+	315.1.1 = {
+		birth = yes
+	}
+	340.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_14 = {
+	name = "Jafnah"
+	dynasty = 99820002
+	religion = "nicene"
+	culture = "bedouin"
+	father = ghassanid_10 # al-Mundhir
+	330.1.1 = {
+		birth = yes
+	}
+	391.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_15 = {
+	name = "al-Nu'man"
+	dynasty = 99820002
+	religion = "nicene"
+	culture = "bedouin"
+	father = ghassanid_10 # al-Mundhir
+	332.1.1 = {
+		birth = yes
+	}
+	362.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_16 = {
+	name = "'Amr"
+	dynasty = 99820002
+	religion = "nicene"
+	culture = "bedouin"
+	father = ghassanid_10 # al-Mundhir
+	334.1.1 = {
+		birth = yes
+	}
+	387.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_17 = {
+	name = "al-Nu'man"
+	dynasty = 99820002
+	religion = "nicene"
+	culture = "bedouin"
+	father = ghassanid_16 # 'Amr
+	357.1.1 = {
+		birth = yes
+	}
+	418.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_19 = {
+	name = "al-Aiham"
+	dynasty = 99820002
+	religion = "nicene"
+	culture = "bedouin"
+	father = ghassanid_16 # 'Amr
+	358.1.1 = {
+		birth = yes
+	}
+	420.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_20 = {
+	name = "al-Nu'man"
+	dynasty = 99820002
+	religion = "nicene"
+	culture = "bedouin"
+	father = ghassanid_19 # al-Aiham
+	400.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = syriac
+	}
+	455.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_21 = {
+	name = "al-Harith"
+	dynasty = 99820002
+	religion = "nicene"
+	culture = "bedouin"
+	father = ghassanid_19 # al-Aiham
+	401.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = syriac
+	}
+	453.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_22 = {
+	name = "al-Nu'man"
+	dynasty = 99820002
+	religion = "nicene"
+	culture = "bedouin"
+	father = ghassanid_21 # al-Harith
+	422.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = syriac
+	}
+	453.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_23 = {
+	name = "al-Mundhir"
+	dynasty = 99820002
+	religion = "nicene"
+	culture = "bedouin"
+	father = ghassanid_22 # al Nu'man
+	441.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = syriac
+	}
+	472.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_43 = {
+	name = "'Amr"
+	dynasty = 99820002
+	religion = "nicene"
+	culture = "bedouin"
+	father = ghassanid_22 # al Nu'man
+	441.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = syriac
+	}
+	486.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_24 = {
+	name = "Hijr"
+	dynasty = 99820002
+	religion = "nicene"
+	culture = "bedouin"
+	father = ghassanid_22 # al Nu'man
+	442.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = syriac
+	}
+	465.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_25 = {
+	name = "al-Harith"
+	dynasty = 99820002
+	religion = "syriac"
+	culture = "bedouin"
+	father = ghassanid_24 # Hijr
+	461.1.1 = {
+		birth = yes
+	}
+	512.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_26 = {
+	name = "Jabalah"
+	dynasty = 99820002
+	religion = "syriac"
+	culture = "bedouin"
+	father = ghassanid_25 # al-Harith
+	trait = viking
+	485.1.1 = {
+		birth = yes
+	}
+	501.1.1 = {
+		add_spouse = kindha_26
+	}
+	528.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+ghassanid_27 = {
+	name = "al-Harith" ###ATENTION FRIEND OF JUSTINIAN AND HIS WIFE
+	dynasty = 99820002
+	religion = "syriac"
+	culture = "bedouin"
+	father = ghassanid_26 # Jablah
+	mother = kindha_26
+	martial = 12
+	trait = flexible_leader
+	trait = education_learning_3
+	trait = theologian
+	trait = zealous
+	trait = callous
+	trait = just
+	trait = physique_good_3
+	502.1.1 = {
+		birth = yes
+	}
+	532.1.1 = {
+		add_character_modifier = TFE_arethas_modifier
+		set_relation_friend = character:70512	
+		set_relation_friend = character:syria_19	
+	}
+	569.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_30 = {
+	name = "Jabalah"
+	dynasty = 99820002
+	religion = "syriac"
+	culture = "bedouin"
+	father = ghassanid_27 # al-Harith
+	trait = education_martial_4
+	trait = stubborn
+	trait = zealous
+	trait = ambitious
+	530.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_32 = { ###ADD EMPLOYER IN SICILY
+	name = "al-Nu'man"
+	dynasty = 99820002
+	religion = "syriac"
+	culture = "bedouin"
+	father = ghassanid_30 # al-Mundhir
+	trait = education_martial_4
+	trait = stubborn
+	trait = zealous
+	trait = vengeful
+	564.1.1 = {
+		birth = yes
+	}
+	582.1.1 = {
+		add_pressed_claim = title:c_al_jawf
+	}
+	640.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_31 = {
+	name = "Abu Kirab"
+	dynasty = 99820002
+	religion = "chalcedonian"
+	culture = "bedouin"
+	father = ghassanid_27 # al-Harith
+	531.1.1 = {
+		birth = yes
+	}
+	582.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_34 = {
+	name = "al-Nu'man"
+	dynasty = 99820002
+	religion = "chalcedonian"
+	culture = "bedouin"
+	father = ghassanid_31 # Abu Kirab
+	551.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_35 = {
+	name = "Jabalah"
+	dynasty = 99820002
+	religion = "chalcedonian"
+	culture = "bedouin"
+	father = ghassanid_31 # Abu Kirab
+	553.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_40 = {
+	name = "al-Harith"
+	dynasty = 99820002
+	religion = "chalcedonian"
+	culture = "bedouin"
+	father = ghassanid_31 # Abu Kirab
+	554.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_41 = {
+	name = "Jabalah"
+	dynasty = 99820002
+	religion = "chalcedonian"
+	culture = "bedouin"
+	father = ghassanid_40 # al-Harith
+	585.1.1 = {
+		birth = yes
+	}
+	632.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_36 = {
+	name = "al-Aiham"
+	dynasty = 99820002
+	religion = "chalcedonian"
+	culture = "bedouin"
+	father = ghassanid_35 # Jabalah
+	576.1.1 = {
+		birth = yes
+	}
+	614.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_42 = {
+	name = "Jabalah"
+	dynasty = 99820002
+	religion = "chalcedonian"
+	culture = "bedouin"
+	father = ghassanid_36 # al-Aiham´
+	trait = wrathful
+	trait = arrogant
+	trait = stubborn
+	599.1.1 = {
+		birth = yes
+	}
+	638.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_37 = {
+	name = "al-Mundhir"
+	dynasty = 99820002
+	religion = "chalcedonian"
+	culture = "bedouin"
+	father = ghassanid_35 # Jabalah
+	577.1.1 = {
+		birth = yes
+	}
+	616.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_38 = {
+	name = "Sarahil"
+	dynasty = 99820002
+	religion = "chalcedonian"
+	culture = "bedouin"
+	father = ghassanid_35 # Jabalah
+	579.1.1 = {
+		birth = yes
+	}
+	618.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_39 = {
+	name = "'Amr"
+	dynasty = 99820002
+	religion = "chalcedonian"
+	culture = "bedouin"
+	father = ghassanid_35 # Jabalah
+	580.1.1 = {
+		birth = yes
+	}
+	628.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_33 = {
+	name = "Al-Mundhir"
+	dynasty = 99820002
+	religion = "chalcedonian"
+	culture = "bedouin"
+	father = ghassanid_27 # al-Harith
+	532.1.1 = {
+		birth = yes
+	}
+	583.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_28 = {
+	name = "Shamir"
+	dynasty = 99820002
+	religion = "syriac"
+	culture = "bedouin"
+	father = ghassanid_26 # Jablah
+	mother = kindha_26
+	505.1.1 = {
+		birth = yes
+	}
+	560.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_29 = {
+	name = "Abu_Karib"
+	dynasty = 99820002
+	religion = "syriac"
+	culture = "bedouin"
+	father = ghassanid_26 # Jablah
+	mother = kindha_26
+	507.1.1 = {
+		birth = yes
+	}
+	560.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_18 = {
+	name = "Jabalah"
+	dynasty = 99820002
+	religion = "nicene"
+	culture = "bedouin"
+	father = ghassanid_17 # al-Nu'man
+	394.1.1 = {
+		birth = yes
+	}
+	434.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_11 = {
+	name = "al-Nu'man"
+	dynasty = 99820002
+	religion = "nicene"
+	culture = "bedouin"
+	father = ghassanid_07 # al-Harith
+	316.1.1 = {
+		birth = yes
+	}
+	342.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_12 = {
+	name = "'Amr"
+	dynasty = 99820002
+	religion = "nicene"
+	culture = "bedouin"
+	father = ghassanid_07 # al-Harith
+	317.1.1 = {
+		birth = yes
+	}
+	356.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_13 = {
+	name = "Jabalah"
+	dynasty = 99820002
+	religion = "nicene"
+	culture = "bedouin"
+	father = ghassanid_07 # al-Harith
+	318.1.1 = {
+		birth = yes
+	}
+	361.1.1 = {
+		death = yes
+	}
+}
+
+##Banu Judham
+judham_11 = {
+	name = "Hasan" # fictitious
+	dynasty = 1042118 # Banu Judham
+	religion = "nicene"
+	culture = "bedouin"
+	337.1.1 = {
+		birth = yes
+	}
+	402.1.1 = {
+		death = yes
+	}
+}
+judham_10 = {
+	name = "al-Mundhir" # fictitious
+	dynasty = 1042118 # Banu Judham
+	religion = "nicene"
+	culture = "bedouin"
+	father = judham_11
+	381.1.1 = {
+		birth = yes
+	}	
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	455.1.1 = {
+		death = yes
+	}
+}
+judham_09 = {
+	name = "Hasan" # fictitious
+	dynasty = 1042118 # Banu Judham
+	religion = "nicene"
+	culture = "bedouin"
+	father = judham_10
+	411.1.1 = {
+		birth = yes
+	}	
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	482.1.1 = {
+		death = yes
+	}
+}
+judham_08 = {
+	name = "'Amr" # fictitious
+	dynasty = 1042118 # Banu Judham
+	religion = "nicene"
+	culture = "bedouin"
+	father = judham_09
+	446.1.1 = {
+		birth = yes
+	}	
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+judham_07 = {
+	name = "'Amr" # fictitious
+	dynasty = 1042118 # Banu Judham
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	father = judham_08
+	470.1.1 = {
+		birth = yes
+	}
+	543.1.1 = {
+		death = yes
+	}
+}
+judham_06 = {
+	name = "Jabalah" # fictitious
+	dynasty = 1042118 # Banu Judham
+	religion = "chalcedonian"
+	culture = "bedouin"
+	father = judham_07
+	503.1.1 = {
+		birth = yes
+	}
+	577.1.1 = {
+		death = yes
+	}
+}
+judham_05 = {
+	name = "Hasan" # fictitious
+	dynasty = 1042118 # Banu Judham
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	father = judham_06
+	544.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+judham_04 = {
+	name = "Hasan" # fictitious
+	dynasty = 1042118 # Banu Judham
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	father = judham_05
+	573.1.1 = {
+		birth = yes
+	}
+	629.1.1 = {
+		death = yes
+	}
+}
+judham_03 = {
+	name = "Jabalah" # fictitious
+	dynasty = 1042118 # Banu Judham
+	religion = "chalcedonian"
+	culture = "bedouin"
+	father = judham_04
+	600.1.1 = {
+		birth = yes
+	}
+	672.1.1 = {
+		death = yes
+	}
+}
+judham_02 = {
+	name = "Ya_qub" # fictitious
+	dynasty = 1042118 # Banu Judham
+	religion = "chalcedonian"
+	culture = "bedouin"
+	father = judham_03
+	632.1.1 = {
+		birth = yes
+	}
+	700.1.1 = {
+		death = yes
+	}
+}
+judham_01 = {
+	name = "Hasan" # fictitious
+	dynasty = 1042118 # Banu Judham
+	religion = "united_islam"
+	culture = "bedouin"
+	father = judham_02
+	668.1.1 = {
+		birth = yes
+	}
+	723.1.1 = {
+		death = yes
+	}
+}
+188617 = {
+	name = "Ya_qub" # fictitious
+	dynasty = 1042118 # Banu Judham
+	religion = "united_islam"
+	culture = "bedouin"
+	father = judham_01
+	700.1.1 = {
+		birth = yes
+	}
+	755.1.1 = {
+		death = yes
+	}
+}
+
+188618 = {
+	name = "Ya_qub" # fictitious holder of al Aqabah
+	dynasty = 1042118 # Banu Judham
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 188617
+	725.1.1 = {
+		birth = yes
+	}
+	790.1.1 = {
+		death = yes
+	}
+}
+
+188619 = {
+	name = "Hasan" # fictitious holder of Tabuk
+	dynasty = 1042118 # Banu Judham
+	religion = "united_islam"
+	culture = "bedouin"
+	father = 188617
+	728.1.1 = {
+		birth = yes
+	}
+	790.1.1 = {
+		death = yes
+	}
+}
+
+
+## Banu Amilah
+amilah_01 = {
+	name = "al-Harith"
+	dynasty = banu_amilah_dynasty
+	religion = "nicene"
+	culture = bedouin
+	344.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+amilah_02 = {
+	name = "al-Harith"
+	dynasty = banu_amilah_dynasty
+	religion = "nicene"
+	culture = bedouin
+	father = amilah_01
+	388.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = syriac
+	}
+	455.1.1 = {
+		death = yes
+	}
+}
+amilah_03 = {
+	name = "Zayd"
+	dynasty = banu_amilah_dynasty
+	religion = "nicene"
+	culture = bedouin
+	father = amilah_02
+	433.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = syriac
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+amilah_04 = {
+	name = "'Udi"
+	dynasty = banu_amilah_dynasty
+	religion = "syriac"
+	culture = bedouin
+	father = amilah_03
+	466.1.1 = {
+		birth = yes
+	}
+	533.1.1 = {
+		death = yes
+	}
+}
+amilah_05 = {
+	name = "'Udi"
+	dynasty = banu_amilah_dynasty
+	religion = "syriac"
+	culture = bedouin
+	father = amilah_04
+	500.1.1 = {
+		birth = yes
+	}
+	567.1.1 = {
+		death = yes
+	}
+}
+amilah_06 = {
+	name = "Zayd"
+	dynasty = banu_amilah_dynasty
+	religion = "syriac"
+	culture = bedouin
+	father = amilah_05
+	528.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+amilah_07 = {
+	name = "al-Harith"
+	dynasty = banu_amilah_dynasty
+	religion = "syriac"
+	culture = bedouin
+	father = amilah_06
+	554.1.1 = {
+		birth = yes
+	}
+	623.1.1 = {
+		death = yes
+	}
+}
+amilah_08 = {
+	name = "'Udi"
+	dynasty = banu_amilah_dynasty
+	religion = "syriac"
+	culture = bedouin
+	father = amilah_07
+	589.1.1 = {
+		birth = yes
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+amilah_09 = {
+	name = "Zayd"
+	dynasty = banu_amilah_dynasty
+	religion = "syriac"
+	culture = bedouin
+	father = amilah_08
+	613.1.1 = {
+		birth = yes
+	}
+	643.1.1 = {
+		religion = united_islam
+	}
+	670.1.1 = {
+		death = yes
+	}
+}
+
+## Banu uqayl
+uqayl_01 = {
+	name = "Zayd"
+	dynasty = banu_uqayl_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	344.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+uqayl_02 = {
+	name = "Uqayl"
+	dynasty = banu_uqayl_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = uqayl_01
+	388.1.1 = {
+		birth = yes
+	}
+	455.1.1 = {
+		death = yes
+	}
+}
+uqayl_03 = {
+	name = "Amir"
+	dynasty = banu_uqayl_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = uqayl_02
+	433.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+uqayl_04 = {
+	name = "Ghassan"
+	dynasty = banu_uqayl_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = uqayl_03
+	466.1.1 = {
+		birth = yes
+	}
+	533.1.1 = {
+		death = yes
+	}
+}
+uqayl_05 = {
+	name = "Mansur"
+	dynasty = banu_uqayl_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = uqayl_04
+	500.1.1 = {
+		birth = yes
+	}
+	567.1.1 = {
+		death = yes
+	}
+}
+uqayl_06 = {
+	name = "Mansur"
+	dynasty = banu_uqayl_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = uqayl_05
+	528.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+uqayl_07 = {
+	name = "Uqayl"
+	dynasty = banu_uqayl_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = uqayl_06
+	554.1.1 = {
+		birth = yes
+	}
+	623.1.1 = {
+		death = yes
+	}
+}
+uqayl_08 = {
+	name = "Jafnah"
+	dynasty = banu_uqayl_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = uqayl_07
+	589.1.1 = {
+		birth = yes
+	}
+	627.1.1 = {
+		religion = united_islam
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+uqayl_09 = {
+	name = "Shaiban"
+	dynasty = banu_uqayl_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = uqayl_08
+	613.1.1 = {
+		birth = yes
+	}
+	627.1.1 = {
+		religion = united_islam
+	}
+	670.1.1 = {
+		death = yes
+	}
+}
+
+## Banu midhhal
+midhhal_01 = {
+	name = "Shaiban"
+	dynasty = banu_midhhal_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	333.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+midhhal_02 = {
+	name = "Jibril"
+	dynasty = banu_midhhal_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = midhhal_01
+	379.1.1 = {
+		birth = yes
+	}
+	455.1.1 = {
+		death = yes
+	}
+}
+midhhal_03 = {
+	name = "Husam"
+	dynasty = banu_midhhal_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = midhhal_02
+	430.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+midhhal_04 = {
+	name = "Yahya"
+	dynasty = banu_midhhal_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = midhhal_03
+	462.1.1 = {
+		birth = yes
+	}
+	533.1.1 = {
+		death = yes
+	}
+}
+midhhal_05 = {
+	name = "Ghassan"
+	dynasty = banu_midhhal_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = midhhal_04
+	501.1.1 = {
+		birth = yes
+	}
+	567.1.1 = {
+		death = yes
+	}
+}
+midhhal_06 = {
+	name = "Mansur"
+	dynasty = banu_midhhal_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = midhhal_05
+	522.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+midhhal_07 = {
+	name = "Mukhtar"
+	dynasty = banu_midhhal_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = midhhal_06
+	557.1.1 = {
+		birth = yes
+	}
+	623.1.1 = {
+		death = yes
+	}
+}
+midhhal_08 = {
+	name = "Jafnah"
+	dynasty = banu_midhhal_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = midhhal_07
+	582.1.1 = {
+		birth = yes
+	}
+	627.1.1 = {
+		religion = united_islam
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+midhhal_09 = {
+	name = "Yazd"
+	dynasty = banu_midhhal_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = midhhal_08
+	610.1.1 = {
+		birth = yes
+	}
+	627.1.1 = {
+		religion = united_islam
+	}
+	670.1.1 = {
+		death = yes
+	}
+}
+
+## Banu daws
+daws_01 = {
+	name = "Harb"
+	dynasty = banu_daws_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	329.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+daws_02 = {
+	name = "Amkarib"
+	dynasty = banu_daws_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = daws_01
+	381.1.1 = {
+		birth = yes
+	}
+	455.1.1 = {
+		death = yes
+	}
+}
+daws_03 = {
+	name = "Yusuf"
+	dynasty = banu_daws_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = daws_02
+	432.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+daws_04 = {
+	name = "Akin"
+	dynasty = banu_daws_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = daws_03
+	467.1.1 = {
+		birth = yes
+	}
+	533.1.1 = {
+		death = yes
+	}
+}
+daws_05 = {
+	name = "Alhan"
+	dynasty = banu_daws_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = daws_04
+	508.1.1 = {
+		birth = yes
+	}
+	567.1.1 = {
+		death = yes
+	}
+}
+daws_06 = {
+	name = "Akin"
+	dynasty = banu_daws_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = daws_05
+	529.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+daws_07 = {
+	name = "'Amr"
+	dynasty = banu_daws_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = daws_06
+	556.1.1 = {
+		birth = yes
+	}
+	623.1.1 = {
+		death = yes
+	}
+}
+daws_08 = {
+	name = "Tufayl"
+	dynasty = banu_daws_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = daws_07
+	trait = blademaster_3
+	trait = poet
+	trait = education_martial_4
+	584.1.1 = {
+		birth = yes
+	}
+	623.1.1 = {
+		religion = united_islam
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+
+## Banu hawazan
+hawazan_01 = {
+	name = "Thanukh"
+	dynasty = banu_hawazan_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	347.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+hawazan_02 = {
+	name = "Hussayn"
+	dynasty = banu_hawazan_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = hawazan_01
+	382.1.1 = {
+		birth = yes
+	}
+	455.1.1 = {
+		death = yes
+	}
+}
+hawazan_03 = {
+	name = "Amkarib"
+	dynasty = banu_hawazan_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = hawazan_02
+	431.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+hawazan_04 = {
+	name = "Sadiq"
+	dynasty = banu_hawazan_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = hawazan_03
+	460.1.1 = {
+		birth = yes
+	}
+	533.1.1 = {
+		death = yes
+	}
+}
+hawazan_05 = {
+	name = "Amkarib"
+	dynasty = banu_hawazan_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = hawazan_04
+	501.1.1 = {
+		birth = yes
+	}
+	567.1.1 = {
+		death = yes
+	}
+}
+hawazan_06 = {
+	name = "Alhan"
+	dynasty = banu_hawazan_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = hawazan_05
+	521.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+hawazan_07 = {
+	name = "Muhammad"
+	dynasty = banu_hawazan_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = hawazan_06
+	552.1.1 = {
+		birth = yes
+	}
+	623.1.1 = {
+		death = yes
+	}
+}
+hawazan_08 = {
+	name = "Shaiban"
+	dynasty = banu_hawazan_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = hawazan_07
+	581.1.1 = {
+		birth = yes
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+hawazan_09 = {
+	name = "Mansur"
+	dynasty = banu_hawazan_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = hawazan_08
+	610.1.1 = {
+		birth = yes
+	}
+	670.1.1 = {
+		death = yes
+	}
+}
+## Banu abs
+abs_01 = {
+	name = "al-'Absi"
+	dynasty = banu_abs_dynasty
+	religion = "nicene"
+	culture = bedouin
+	342.1.1 = {
+		birth = yes
+	}	
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+abs_02 = {
+	name = "Hassan"
+	dynasty = banu_abs_dynasty
+	religion = "nicene"
+	culture = bedouin
+	father = abs_01
+	383.1.1 = {
+		birth = yes
+	}	
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	455.1.1 = {
+		death = yes
+	}
+}
+abs_03 = {
+	name = "al-'Absi"
+	dynasty = banu_abs_dynasty
+	religion = "nicene"
+	culture = bedouin
+	father = abs_02
+	434.1.1 = {
+		birth = yes
+	}	
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+abs_04 = {
+	name = "Yigal"
+	dynasty = banu_abs_dynasty
+	religion = "chalcedonian"
+	culture = bedouin
+	father = abs_03
+	466.1.1 = {
+		birth = yes
+	}
+	533.1.1 = {
+		death = yes
+	}
+}
+abs_05 = {
+	name = "Zuhayr"
+	dynasty = banu_abs_dynasty
+	religion = "chalcedonian"
+	culture = bedouin
+	father = abs_04
+	505.1.1 = {
+		birth = yes
+	}
+	567.1.1 = {
+		death = yes
+	}
+}
+abs_10 = {
+	name = "Shaddad"
+	dynasty = banu_abs_dynasty
+	religion = "chalcedonian"
+	culture = bedouin
+	father = abs_04
+	trait = blademaster_3
+	503.1.1 = {
+		birth = yes
+	}
+	520.1.1 = {
+		add_spouse = abs_12 #Zabiba
+	}
+	567.1.1 = {
+		death = yes
+	}
+}
+abs_11 = {
+	name = "Antarah"
+	dynasty = banu_abs_dynasty
+	religion = "chalcedonian"
+	culture = bedouin
+	father = abs_10
+	mother = abs_12
+	trait = blademaster_3
+	trait = poet
+	525.1.1 = {
+		birth = yes
+	}
+	615.1.1 = {
+		death = yes
+	}
+}
+abs_06 = {
+	name = "Muhammad"
+	dynasty = banu_abs_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = abs_05
+	522.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+abs_07 = {
+	name = "Najib"
+	dynasty = banu_abs_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = abs_06
+	554.1.1 = {
+		birth = yes
+	}
+	623.1.1 = {
+		death = yes
+	}
+}
+abs_08 = {
+	name = "Shaiban"
+	dynasty = banu_abs_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = abs_07
+	586.1.1 = {
+		birth = yes
+	}
+	627.1.1 = {
+		religion = united_islam
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+abs_09 = {
+	name = "Mansur"
+	dynasty = banu_abs_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = abs_08
+	612.1.1 = {
+		birth = yes
+	}
+	627.1.1 = {
+		religion = united_islam
+	}
+	670.1.1 = {
+		death = yes
+	}
+}
+## Banu asad
+asad_01 = {
+	name = "Mansur"
+	dynasty = banu_asad_dynasty
+	religion = "rabbinism"
+	culture = bedouin
+	340.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+asad_02 = {
+	name = "Asad"
+	dynasty = banu_asad_dynasty
+	religion = "rabbinism"
+	culture = bedouin
+	father = asad_01
+	382.1.1 = {
+		birth = yes
+	}
+	455.1.1 = {
+		death = yes
+	}
+}
+asad_03 = {
+	name = "Khuzayma"
+	dynasty = banu_asad_dynasty
+	religion = "rabbinism"
+	culture = bedouin
+	father = asad_02
+	438.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+asad_04 = {
+	name = "Muhammad"
+	dynasty = banu_asad_dynasty
+	religion = "rabbinism"
+	culture = bedouin
+	father = asad_03
+	462.1.1 = {
+		birth = yes
+	}
+	533.1.1 = {
+		death = yes
+	}
+}
+asad_05 = {
+	name = "Husam"
+	dynasty = banu_asad_dynasty
+	religion = "rabbinism"
+	culture = bedouin
+	father = asad_04
+	507.1.1 = {
+		birth = yes
+	}
+	567.1.1 = {
+		death = yes
+	}
+}
+asad_06 = {
+	name = "Sulaym"
+	dynasty = banu_asad_dynasty
+	religion = "rabbinism"
+	culture = bedouin
+	father = asad_05
+	522.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+asad_07 = {
+	name = "Nasr"
+	dynasty = banu_asad_dynasty
+	religion = "rabbinism"
+	culture = bedouin
+	father = asad_06
+	549.1.1 = {
+		birth = yes
+	}
+	623.1.1 = {
+		death = yes
+	}
+}
+asad_08 = {
+	name = "Harb"
+	dynasty = banu_asad_dynasty
+	religion = "rabbinism"
+	culture = bedouin
+	father = asad_07
+	590.1.1 = {
+		birth = yes
+	}
+	627.1.1 = {
+		religion = united_islam
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+asad_09 = {
+	name = "Najib"
+	dynasty = banu_asad_dynasty
+	religion = "rabbinism"
+	culture = bedouin
+	father = asad_08
+	617.1.1 = {
+		birth = yes
+	}
+	627.1.1 = {
+		religion = united_islam
+	}
+	670.1.1 = {
+		death = yes
+	}
+}
+
+
+## Banu ghatafan
+ghatafan_01 = {
+	name = "Shaiban"
+	dynasty = banu_ghatafan_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	340.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+ghatafan_02 = {
+	name = "Nasar"
+	dynasty = banu_ghatafan_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = ghatafan_01
+	385.1.1 = {
+		birth = yes
+	}
+	455.1.1 = {
+		death = yes
+	}
+}
+ghatafan_03 = {
+	name = "Zayd"
+	dynasty = banu_ghatafan_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = ghatafan_02
+	436.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+ghatafan_04 = {
+	name = "Ghatafan"
+	dynasty = banu_ghatafan_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = ghatafan_03
+	467.1.1 = {
+		birth = yes
+	}
+	533.1.1 = {
+		death = yes
+	}
+}
+ghatafan_05 = {
+	name = "'Amr"
+	dynasty = banu_ghatafan_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = ghatafan_04
+	500.1.1 = {
+		birth = yes
+	}
+	567.1.1 = {
+		death = yes
+	}
+}
+ghatafan_06 = {
+	name = "Mukhtar"
+	dynasty = banu_ghatafan_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = ghatafan_05
+	522.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+ghatafan_07 = {
+	name = "Ghatafan"
+	dynasty = banu_ghatafan_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = ghatafan_06
+	551.1.1 = {
+		birth = yes
+	}
+	623.1.1 = {
+		death = yes
+	}
+}
+ghatafan_08 = {
+	name = "Tufayl"
+	dynasty = banu_ghatafan_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = ghatafan_07
+	587.1.1 = {
+		birth = yes
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+ghatafan_09 = {
+	name = "Nasar"
+	dynasty = banu_ghatafan_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = ghatafan_08
+	613.1.1 = {
+		birth = yes
+	}
+	670.1.1 = {
+		death = yes
+	}
+}
+
+## Banu hilal
+hilal_01 = {
+	name = "Tufayl"
+	dynasty = banu_hilal_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	342.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+hilal_02 = {
+	name = "Zayd"
+	dynasty = banu_hilal_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = hilal_01
+	381.1.1 = {
+		birth = yes
+	}
+	455.1.1 = {
+		death = yes
+	}
+}
+hilal_03 = {
+	name = "'Amr"
+	dynasty = banu_hilal_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = hilal_02
+	430.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+hilal_04 = {
+	name = "hilal"
+	dynasty = banu_hilal_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = hilal_03
+	469.1.1 = {
+		birth = yes
+	}
+	533.1.1 = {
+		death = yes
+	}
+}
+hilal_05 = {
+	name = "'Amr"
+	dynasty = banu_hilal_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = hilal_04
+	511.1.1 = {
+		birth = yes
+	}
+	567.1.1 = {
+		death = yes
+	}
+}
+hilal_06 = {
+	name = "Tufayl"
+	dynasty = banu_hilal_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = hilal_05
+	521.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+hilal_07 = {
+	name = "'Amr"
+	dynasty = banu_hilal_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = hilal_06
+	543.1.1 = {
+		birth = yes
+	}
+	623.1.1 = {
+		death = yes
+	}
+}
+hilal_08 = {
+	name = "Hilal"
+	dynasty = banu_hilal_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = hilal_07
+	582.1.1 = {
+		birth = yes
+	}
+	627.1.1 = {
+		religion = united_islam
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+hilal_09 = {
+	name = "Tufayl"
+	dynasty = banu_hilal_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = hilal_08
+	603.1.1 = {
+		birth = yes
+	}
+	627.1.1 = {
+		religion = united_islam
+	}
+	670.1.1 = {
+		death = yes
+	}
+}
+
+## Banu bakr
+bakr_01 = {
+	name = "'Amr"
+	dynasty = banu_bakr_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	342.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+bakr_02 = {
+	name = "Tufayl"
+	dynasty = banu_bakr_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = bakr_01
+	386.1.1 = {
+		birth = yes
+	}
+	455.1.1 = {
+		death = yes
+	}
+}
+bakr_03 = {
+	name = "Abu Bakr"
+	dynasty = banu_bakr_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = bakr_02
+	429.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+bakr_04 = {
+	name = "Bakr"
+	dynasty = banu_bakr_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = bakr_03
+	462.1.1 = {
+		birth = yes
+	}
+	533.1.1 = {
+		death = yes
+	}
+}
+bakr_05 = {
+	name = "Ali"
+	dynasty = banu_bakr_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = bakr_04
+	501.1.1 = {
+		birth = yes
+	}
+	567.1.1 = {
+		death = yes
+	}
+}
+bakr_06 = {
+	name = "Nadir"
+	dynasty = banu_bakr_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = bakr_05
+	528.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+bakr_07 = {
+	name = "Yusuf"
+	dynasty = banu_bakr_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = bakr_06
+	552.1.1 = {
+		birth = yes
+	}
+	623.1.1 = {
+		death = yes
+	}
+}
+bakr_08 = {
+	name = "Bakr"
+	dynasty = banu_bakr_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = bakr_07
+	589.1.1 = {
+		birth = yes
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+bakr_09 = {
+	name = "Thalib"
+	dynasty = banu_bakr_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = bakr_08
+	616.1.1 = {
+		birth = yes
+	}
+	670.1.1 = {
+		death = yes
+	}
+}
+
+## Banu azd_uman
+azd_uman_01 = {
+	name = "Azd"
+	dynasty = banu_azd_uman_dynasty
+	religion = "south_arabian_pagan"
+	culture = bedouin
+	343.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+azd_uman_02 = {
+	name = "Alhan"
+	dynasty = banu_azd_uman_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = azd_uman_01
+	382.1.1 = {
+		birth = yes
+	}
+	455.1.1 = {
+		death = yes
+	}
+}
+azd_uman_03 = {
+	name = "Uman"
+	dynasty = banu_azd_uman_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = azd_uman_02
+	431.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+azd_uman_04 = {
+	name = "Azd"
+	dynasty = banu_azd_uman_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = azd_uman_03
+	463.1.1 = {
+		birth = yes
+	}
+	533.1.1 = {
+		death = yes
+	}
+}
+azd_uman_05 = {
+	name = "Tufayl"
+	dynasty = banu_azd_uman_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = azd_uman_04
+	505.1.1 = {
+		birth = yes
+	}
+	567.1.1 = {
+		death = yes
+	}
+}
+azd_uman_06 = {
+	name = "Jabal"
+	dynasty = banu_azd_uman_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = azd_uman_05
+	522.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+azd_uman_07 = {
+	name = "al-Jehani"
+	dynasty = banu_azd_uman_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = azd_uman_06
+	554.1.1 = {
+		birth = yes
+	}
+	623.1.1 = {
+		death = yes
+	}
+}
+azd_uman_08 = {
+	name = "Uman"
+	dynasty = banu_azd_uman_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = azd_uman_07
+	589.1.1 = {
+		birth = yes
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+azd_uman_10 = {
+	name = "Jabal"
+	dynasty = banu_azd_uman_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = azd_uman_07
+	591.1.1 = {
+		birth = yes
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+azd_uman_09 = {
+	name = "'Amr'"
+	dynasty = banu_azd_uman_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = azd_uman_08
+	617.1.1 = {
+		birth = yes
+	}
+	670.1.1 = {
+		death = yes
+	}
+}
+## Banu juhaynah
+juhaynah_01 = {
+	name = "al-Jehani"
+	dynasty = banu_juhaynah_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	344.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+juhaynah_02 = {
+	name = "al-Jehani"
+	dynasty = banu_juhaynah_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = juhaynah_01
+	388.1.1 = {
+		birth = yes
+	}
+	455.1.1 = {
+		death = yes
+	}
+}
+juhaynah_03 = {
+	name = "'Amr"
+	dynasty = banu_juhaynah_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = juhaynah_02
+	433.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+juhaynah_04 = {
+	name = "al-Nu'man"
+	dynasty = banu_juhaynah_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = juhaynah_03
+	466.1.1 = {
+		birth = yes
+	}
+	533.1.1 = {
+		death = yes
+	}
+}
+juhaynah_05 = {
+	name = "al-Jehani"
+	dynasty = banu_juhaynah_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = juhaynah_04
+	500.1.1 = {
+		birth = yes
+	}
+	567.1.1 = {
+		death = yes
+	}
+}
+juhaynah_06 = {
+	name = "al-Jehani"
+	dynasty = banu_juhaynah_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = juhaynah_05
+	528.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+juhaynah_07 = {
+	name = "al-Mundhir"
+	dynasty = banu_juhaynah_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = juhaynah_06
+	554.1.1 = {
+		birth = yes
+	}
+	623.1.1 = {
+		death = yes
+	}
+}
+juhaynah_08 = {
+	name = "al-Jehani"
+	dynasty = banu_juhaynah_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = juhaynah_07
+	589.1.1 = {
+		birth = yes
+	}
+	627.1.1 = {
+		religion = united_islam
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+juhaynah_09 = {
+	name = "Bali"
+	dynasty = banu_juhaynah_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = juhaynah_08
+	613.1.1 = {
+		birth = yes
+	}
+	670.1.1 = {
+		death = yes
+	}
+}
+
+## Banu sulaym
+sulaym_01 = {
+	name = "Sulaym"
+	dynasty = banu_sulaym_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	344.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+sulaym_02 = {
+	name = "Sulaym"
+	dynasty = banu_sulaym_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = sulaym_01
+	388.1.1 = {
+		birth = yes
+	}
+	455.1.1 = {
+		death = yes
+	}
+}
+sulaym_03 = {
+	name = "Mansur"
+	dynasty = banu_sulaym_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = sulaym_02
+	433.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+sulaym_04 = {
+	name = "al-Jehani"
+	dynasty = banu_sulaym_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = sulaym_03
+	466.1.1 = {
+		birth = yes
+	}
+	533.1.1 = {
+		death = yes
+	}
+}
+sulaym_05 = {
+	name = "Mansur"
+	dynasty = banu_sulaym_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = sulaym_04
+	500.1.1 = {
+		birth = yes
+	}
+	567.1.1 = {
+		death = yes
+	}
+}
+sulaym_06 = {
+	name = "Sulaym"
+	dynasty = banu_sulaym_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = sulaym_05
+	528.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+sulaym_07 = {
+	name = "Ka'b"
+	dynasty = banu_sulaym_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = sulaym_06
+	554.1.1 = {
+		birth = yes
+	}
+	623.1.1 = {
+		death = yes
+	}
+}
+sulaym_08 = {
+	name = "Mansur"
+	dynasty = banu_sulaym_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = sulaym_07
+	589.1.1 = {
+		birth = yes
+	}
+	627.1.1 = {
+		religion = united_islam
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+sulaym_09 = {
+	name = "Yazd"
+	dynasty = banu_sulaym_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = sulaym_08
+	613.1.1 = {
+		birth = yes
+	}
+	627.1.1 = {
+		religion = united_islam
+	}
+	670.1.1 = {
+		death = yes
+	}
+}
+## Banu thaqif
+thaqif_01 = {
+	name = "Shariq"
+	dynasty = banu_thaqif_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	342.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+thaqif_02 = {
+	name = "Taqifi"
+	dynasty = banu_thaqif_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = thaqif_01
+	385.1.1 = {
+		birth = yes
+	}
+	455.1.1 = {
+		death = yes
+	}
+}
+thaqif_03 = {
+	name = "Akhnas"
+	dynasty = banu_thaqif_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = thaqif_02
+	437.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+thaqif_04 = {
+	name = "Akhnas"
+	dynasty = banu_thaqif_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = thaqif_03
+	460.1.1 = {
+		birth = yes
+	}
+	533.1.1 = {
+		death = yes
+	}
+}
+thaqif_05 = {
+	name = "Urwah"
+	dynasty = banu_thaqif_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = thaqif_04
+	510.1.1 = {
+		birth = yes
+	}
+	567.1.1 = {
+		death = yes
+	}
+}
+thaqif_06 = {
+	name = "Mas'ud"
+	dynasty = banu_thaqif_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = thaqif_05
+	522.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+thaqif_07 = {
+	name = "Urwah"
+	dynasty = banu_thaqif_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = thaqif_06
+	551.1.1 = {
+		birth = yes
+	}
+	623.1.1 = {
+		death = yes
+	}
+}
+thaqif_08 = {
+	name = "Taqif"
+	dynasty = banu_thaqif_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = thaqif_07
+	582.1.1 = {
+		birth = yes
+	}
+	627.1.1 = {
+		religion = united_islam
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+thaqif_09 = {
+	name = "Shariq"
+	dynasty = banu_thaqif_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = thaqif_08
+	610.1.1 = {
+		birth = yes
+	}
+	627.1.1 = {
+		religion = united_islam
+	}
+	670.1.1 = {
+		death = yes
+	}
+}
+
+## Banu quraysh
+quraysh_01 = {
+	name = "Qurashi"
+	dynasty = banu_quraysh_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	336.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+quraysh_02 = {
+	name = "Malik"
+	dynasty = banu_quraysh_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = quraysh_01
+	391.1.1 = {
+		birth = yes
+	}
+	455.1.1 = {
+		death = yes
+	}
+}
+quraysh_03 = {
+	name = "Hashim"
+	dynasty = banu_quraysh_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = quraysh_02
+	422.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+quraysh_04 = {
+	name = "Muhra"
+	dynasty = banu_quraysh_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = quraysh_03
+	459.1.1 = {
+		birth = yes
+	}
+	533.1.1 = {
+		death = yes
+	}
+}
+quraysh_05 = {
+	name = "Qurashi"
+	dynasty = banu_quraysh_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = quraysh_04
+	503.1.1 = {
+		birth = yes
+	}
+	567.1.1 = {
+		death = yes
+	}
+}
+quraysh_06 = {
+	name = "Muhra"
+	dynasty = banu_quraysh_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = quraysh_05
+	521.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+quraysh_07 = {
+	name = "Qusayy"
+	dynasty = banu_quraysh_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = quraysh_06
+	570.1.1 = {
+		birth = yes
+	}
+	623.1.1 = {
+		death = yes
+	}
+}
+quraysh_08 = {
+	name = "Asad"
+	dynasty = banu_quraysh_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = quraysh_07
+	581.1.1 = {
+		birth = yes
+	}
+	627.1.1 = {
+		religion = united_islam
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+
+## Banu kaab
+kaab_01 = {
+	name = "Jumah"
+	dynasty = banu_kaab_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	342.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+kaab_02 = {
+	name = "Mansur"
+	dynasty = banu_kaab_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = kaab_01
+	383.1.1 = {
+		birth = yes
+	}
+	455.1.1 = {
+		death = yes
+	}
+}
+kaab_03 = {
+	name = "Asad"
+	dynasty = banu_kaab_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = kaab_02
+	434.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+kaab_04 = {
+	name = "Muhammad"
+	dynasty = banu_kaab_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = kaab_03
+	466.1.1 = {
+		birth = yes
+	}
+	533.1.1 = {
+		death = yes
+	}
+}
+kaab_05 = {
+	name = "Ali"
+	dynasty = banu_kaab_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = kaab_04
+	502.1.1 = {
+		birth = yes
+	}
+	567.1.1 = {
+		death = yes
+	}
+}
+kaab_06 = {
+	name = "Qusayy"
+	dynasty = banu_kaab_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = kaab_05
+	526.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+kaab_07 = {
+	name = "Jumah"
+	dynasty = banu_kaab_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = kaab_06
+	557.1.1 = {
+		birth = yes
+	}
+	623.1.1 = {
+		death = yes
+	}
+}
+kaab_08 = {
+	name = "Bali"
+	dynasty = banu_kaab_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = kaab_07
+	587.1.1 = {
+		birth = yes
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+kaab_09 = {
+	name = "Mansur"
+	dynasty = banu_kaab_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = kaab_08
+	612.1.1 = {
+		birth = yes
+	}
+	670.1.1 = {
+		death = yes
+	}
+}
+## Banu abd_ul_qays
+abd_ul_qays_01 = {
+	name = "Mansur"
+	dynasty = 1042121
+	religion = "nicene"
+	culture = bedouin
+	342.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+abd_ul_qays_02 = {
+	name = "Abd-ul-Qays"
+	dynasty = 1042121
+	religion = "nicene"
+	culture = bedouin
+	father = abd_ul_qays_01
+	382.1.1 = {
+		birth = yes
+	}	
+	451.1.1 = {
+		religion = "nicene"
+	}
+	455.1.1 = {
+		death = yes
+	}
+}
+abd_ul_qays_03 = {
+	name = "Muhammad"
+	dynasty = 1042121
+	religion = "nicene"
+	culture = bedouin
+	father = abd_ul_qays_02
+	431.1.1 = {
+		birth = yes
+	}	
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+abd_ul_qays_04 = {
+	name = "al-Mundhir"
+	dynasty = 1042121
+	religion = "chalcedonian"
+	culture = bedouin
+	father = abd_ul_qays_03
+	466.1.1 = {
+		birth = yes
+	}
+	533.1.1 = {
+		death = yes
+	}
+}
+abd_ul_qays_05 = {
+	name = "Hashim"
+	dynasty = 1042121
+	religion = "chalcedonian"
+	culture = bedouin
+	father = abd_ul_qays_04
+	503.1.1 = {
+		birth = yes
+	}
+	567.1.1 = {
+		death = yes
+	}
+}
+abd_ul_qays_06 = {
+	name = "Yazd"
+	dynasty = 1042121
+	religion = "chalcedonian"
+	culture = bedouin
+	father = abd_ul_qays_05
+	524.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+abd_ul_qays_07 = {
+	name = "Hatim"
+	dynasty = 1042121
+	religion = "chalcedonian"
+	culture = bedouin
+	father = abd_ul_qays_06
+	558.1.1 = {
+		birth = yes
+	}
+	623.1.1 = {
+		death = yes
+	}
+}
+abd_ul_qays_08 = {
+	name = "'Amr"
+	dynasty = 1042121
+	religion = "chalcedonian"
+	culture = bedouin
+	father = abd_ul_qays_07
+	589.1.1 = {
+		birth = yes
+	}
+	627.1.1 = {
+		religion = united_islam
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+abd_ul_qays_09 = {
+	name = "Husayn"
+	dynasty = 1042121
+	religion = "chalcedonian"
+	culture = bedouin
+	father = abd_ul_qays_08
+	611.1.1 = {
+		birth = yes
+	}
+	627.1.1 = {
+		religion = united_islam
+	}
+	670.1.1 = {
+		death = yes
+	}
+}
+abd_ul_qays_10 = {
+	name = "Husayn"
+	dynasty = 1042121
+	religion = "united_islam"
+	culture = bedouin
+	father = abd_ul_qays_09
+	642.1.1 = {
+		birth = yes
+	}
+	700.1.1 = {
+		death = yes
+	}
+}
+abd_ul_qays_11 = {
+	name = "Ali"
+	dynasty = 1042121
+	religion = "united_islam"
+	culture = bedouin
+	father = abd_ul_qays_10
+	681.1.1 = {
+		birth = yes
+	}
+	715.1.1 = {
+		death = yes
+	}
+}
+## Banu bali
+bali_01 = {
+	name = "Bali"
+	dynasty = banu_bali_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	340.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+bali_02 = {
+	name = "al-Nu'man"
+	dynasty = banu_bali_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = bali_01
+	382.1.1 = {
+		birth = yes
+	}
+	455.1.1 = {
+		death = yes
+	}
+}
+bali_03 = {
+	name = "Jabalah"
+	dynasty = banu_bali_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = bali_02
+	435.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+bali_04 = {
+	name = "Hasan"
+	dynasty = banu_bali_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = bali_03
+	461.1.1 = {
+		birth = yes
+	}
+	533.1.1 = {
+		death = yes
+	}
+}
+bali_05 = {
+	name = "Bali"
+	dynasty = banu_bali_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = bali_04
+	502.1.1 = {
+		birth = yes
+	}
+	567.1.1 = {
+		death = yes
+	}
+}
+bali_06 = {
+	name = "'Amr'"
+	dynasty = banu_bali_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = bali_05
+	526.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+bali_07 = {
+	name = "Jafnah"
+	dynasty = banu_bali_dynasty
+	religion = "arabic_pagan"
+	culture = bedouin
+	father = bali_06
+	552.1.1 = {
+		birth = yes
+	}
+	623.1.1 = {
+		death = yes
+	}
+}
+bali_08 = {
+	name = "al-Mundhir"
+	dynasty = banu_bali_dynasty
+	religion = "chalcedonian"
+	culture = bedouin
+	father = bali_07
+	583.1.1 = {
+		birth = yes
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+bali_09 = {
+	name = "Husayn"
+	dynasty = banu_bali_dynasty
+	religion = "chalcedonian"
+	culture = bedouin
+	father = bali_08
+	612.1.1 = {
+		birth = yes
+	}
+	642.1.1 = {
+		religion = united_islam
+	}
+	670.1.1 = {
+		death = yes
+	}
+}
+
+##Jewish khaybar
+khaybar_01 = {
+	name = "Yazd"
+	religion = rabbinism
+	culture = bedouin
+	340.1.1 = {
+		birth = yes
+	}
+	415.1.1 = {
+		death = yes
+	}
+}
+khaybar_02 = {
+	name = "Hatim"
+	religion = rabbinism
+	culture = bedouin
+	450.1.1 = {
+		birth = yes
+	}
+	537.1.1 = {
+		death = yes
+	}
+}
+khaybar_03 = {
+	name = "'Amr"
+	religion = rabbinism
+	culture = bedouin
+	600.1.1 = {
+		birth = yes
+	}
+	680.1.1 = {
+		death = yes
+	}
+}
+tayma_01 = {
+	name = "Husayn"
+	religion = ebionite # Ebionite communities possibly survived in NW Arabia, particularl Tayma, into the 11th century
+	culture = bedouin
+	340.1.1 = {
+		birth = yes
+	}
+	415.1.1 = {
+		death = yes
+	}
+}
+tayma_02 = {
+	name = "Jafnah"
+	religion = ebionite # Ebionite communities possibly survived in NW Arabia, particularl Tayma, into the 11th century
+	culture = bedouin
+	450.1.1 = {
+		birth = yes
+	}
+	537.1.1 = {
+		death = yes
+	}
+}
+tayma_03 = {
+	name = "Hasan"
+	religion = ebionite # Ebionite communities possibly survived in NW Arabia, particularl Tayma, into the 11th century
+	culture = bedouin
+	600.1.1 = {
+		birth = yes
+	}
+	680.1.1 = {
+		death = yes
+	}
+}
+##MEdina
+yatrib_05 = {
+	name = "Jafnah"
+	religion = rabbinism
+	dynasty = banu_qainuqa_dynasty
+	culture = bedouin
+	340.1.1 = {
+		birth = yes
+	}
+	430.1.1 = {
+		death = yes
+	}
+}
+yatrib_04 = {
+	name = "Hasan"
+	religion = rabbinism
+	dynasty = banu_qainuqa_dynasty
+	culture = bedouin
+	father = yatrib_05
+	423.1.1 = {
+		birth = yes
+	}
+	480.1.1 = {
+		death = yes
+	}
+}
+yatrib_03 = {
+	name = "Asad"
+	religion = rabbinism
+	dynasty = banu_nadir_dynasty
+	culture = bedouin
+	500.1.1 = {
+		birth = yes
+	}
+	560.1.1 = {
+		death = yes
+	}
+}
+yatrib_02 = {
+	name = "Asad"
+	religion = rabbinism
+	dynasty = banu_qurayza_dynasty
+	culture = bedouin
+	544.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+yatrib_01 = {
+	name = "Ka'b"
+	religion = rabbinism
+	dynasty = banu_qurayza_dynasty
+	culture = bedouin
+	father = yatrib_02
+	trait = beauty_good_2
+	580.1.1 = {
+		birth = yes
+	}
+	627.1.1 = {
+		death = yes
+	}
+}
+
+###Kindha
+kindha_02 = {
+	name = "Mutri"
+	religion = "nicene"
+	dynasty = kindahites_dynasty
+	culture = bedouin
+	280.1.1 = {
+		birth = yes
+	}
+	325.1.1 = {
+		death = yes
+	}
+}
+kindha_03 = {
+	name = "Muwiyah"
+	religion = "nicene"
+	dynasty = kindahites_dynasty
+	culture = bedouin
+	father = kindha_02
+	300.1.1 = {
+		birth = yes
+	}
+	360.1.1 = {
+		death = yes
+	}
+}
+kindha_04 = {
+	name = "Murti"
+	religion = "nicene"
+	dynasty = kindahites_dynasty
+	culture = bedouin
+	father = kindha_03
+	stewardship = 7
+	330.1.1 = {
+		birth = yes
+	}
+	379.1.1 = {
+		death = yes
+	}
+}
+kindha_05 = {
+	name = "Thaur"
+	religion = "nicene"
+	dynasty = kindahites_dynasty
+	culture = bedouin
+	father = kindha_02
+	320.1.1 = {
+		birth = yes
+	}
+	360.1.1 = {
+		death = yes
+	}
+}
+kindha_06 = {
+	name = "Muawiyah"
+	religion = "nicene"
+	dynasty = kindahites_dynasty
+	culture = bedouin
+	father = kindha_05
+	350.1.1 = {
+		birth = yes
+	}
+	390.1.1 = {
+		death = yes
+	}
+}
+kindha_07 = {
+	name = "'Amr"
+	religion = "nicene"
+	dynasty = kindahites_dynasty
+	culture = bedouin
+	father = kindha_06
+	372.1.1 = {
+		birth = yes
+	}
+	402.1.1 = {
+		death = yes
+	}
+}
+kindha_11 = {
+	name = "Hujr"
+	religion = rabbinism
+	dynasty = kindahites_dynasty
+	culture = bedouin
+	father = kindha_07
+	401.1.1 = {
+		birth = yes
+	}
+	455.1.1 = {
+		death = yes
+	}
+}
+kindha_12 = {
+	name = "'Amr"
+	religion = rabbinism
+	dynasty = kindahites_dynasty
+	culture = bedouin
+	father = kindha_11
+	430.1.1 = {
+		birth = yes
+	}
+	504.1.1 = {
+		death = yes
+	}
+}
+kindha_125 = {
+	name = "Umm al-Malik"
+	religion = rabbinism
+	dynasty = kindahites_dynasty
+	female=yes
+	culture = bedouin
+	father = kindha_12
+	mother = himyarite_40
+	450.1.1 = {
+		birth = yes
+	}
+	470.1.1={
+		add_spouse=lakhmid_10
+	}
+	504.1.1 = {
+		death = yes
+	}
+}
+kindha_13 = {
+	name = "al-Harith"
+	religion = rabbinism
+	dynasty = kindahites_dynasty
+	culture = bedouin
+	father = kindha_12
+	mother = himyarite_40
+	trait = brave
+	trait = education_martial_3
+	martial = 9
+	460.1.1 = {
+		birth = yes
+	}
+	529.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = lakhmid_14
+		}
+	}
+}
+
+kindha_135 = {
+	name = "Hind"
+	religion = rabbinism
+	dynasty = kindahites_dynasty
+	culture = bedouin
+	father = kindha_13
+	female=yes
+	481.1.1 = {
+		birth = yes
+	}
+	504.1.1={
+		add_spouse=lakhmid_14
+	}
+	532.1.1 = {
+		death = yes
+	}
+}
+kindha_15 = {
+	name = "Hujr"
+	religion = rabbinism
+	dynasty = kindahites_dynasty
+	culture = bedouin
+	father = kindha_13
+	481.1.1 = {
+		birth = yes
+	}
+	532.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+kindha_19 = {
+	name = "Imru-al-Qays"
+	religion = rabbinism
+	dynasty = kindahites_dynasty
+	culture = bedouin
+	father = kindha_15
+	trait = education_diplomacy_4
+	trait = vengeful
+	trait = brave
+	trait = diligent
+	trait = lustful
+	trait = poet
+	trait = blademaster_3
+	diplomacy = 7
+	learning = 7
+	501.1.1 = {
+		birth = yes
+		effect = { add_character_flag = do_not_generate_starting_family }
+	}
+	532.1.1 = {		
+		add_character_modifier = TFE_imru_al_qays_modifier
+		set_relation_rival = character:asad_04
+		set_relation_rival = character:asad_05
+		set_relation_rival = character:asad_06
+	}
+	544.1.1 = {
+		death = yes
+	}
+}
+kindha_16 = {
+	name = "Salama"
+	religion = rabbinism
+	dynasty = kindahites_dynasty
+	culture = bedouin
+	father = kindha_13
+	485.1.1 = {
+		birth = yes
+	}
+	544.1.1 = {
+		death = yes
+	}
+}
+kindha_20 = {
+	name = "'Amr"
+	religion = rabbinism
+	dynasty = kindahites_dynasty
+	culture = bedouin
+	father = kindha_16
+	501.1.1 = {
+		birth = yes
+	}
+	567.1.1 = {
+		death = yes
+	}
+}
+kindha_23 = {
+	name = "Kayz"
+	religion = rabbinism
+	dynasty = kindahites_dynasty
+	culture = bedouin
+	father = kindha_20
+	535.1.1 = {
+		birth = yes
+	}
+	589.1.1 = {
+		death = yes
+	}
+}
+kindha_24 = {
+	name = "Salama"
+	religion = rabbinism
+	dynasty = kindahites_dynasty
+	culture = bedouin
+	father = kindha_23
+	572.1.1 = {
+		birth = yes
+	}
+	618.1.1 = {
+		death = yes
+	}
+}
+kindha_25 = {
+	name = "Yazid"
+	religion = rabbinism
+	dynasty = kindahites_dynasty
+	culture = bedouin
+	father = kindha_23
+	599.1.1 = {
+		birth = yes
+	}
+	659.1.1 = {
+		death = yes
+	}
+}
+kindha_21 = {
+	name = "Kayz"
+	religion = rabbinism
+	dynasty = kindahites_dynasty
+	culture = bedouin
+	father = kindha_16
+	502.1.1 = {
+		birth = yes
+	}
+	544.1.1 = {
+		death = yes
+	}
+}
+kindha_22 = {
+	name = "Yazid"
+	religion = rabbinism
+	dynasty = kindahites_dynasty
+	culture = bedouin
+	father = kindha_16
+	502.1.1 = {
+		birth = yes
+	}
+	544.1.1 = {
+		death = yes
+	}
+}
+kindha_17 = {
+	name = "Shurahbil"
+	religion = chalcedonian
+	dynasty = kindahites_dynasty
+	culture = bedouin
+	father = kindha_13
+	487.1.1 = {
+		birth = yes
+	}
+	547.1.1 = {
+		death = yes
+	}
+}
+kindha_18 = {
+	name = "Madi-Karib"
+	religion = chalcedonian
+	dynasty = kindahites_dynasty
+	culture = bedouin
+	father = kindha_13
+	490.1.1 = {
+		birth = yes
+	}
+	560.1.1 = {
+		death = yes
+	}
+}
+kindha_14 = {
+	name = "Muawiyah"
+	religion = rabbinism
+	dynasty = kindahites_dynasty
+	culture = bedouin
+	father = kindha_11
+	442.1.1 = {
+		birth = yes
+	}
+	504.1.1 = {
+		death = yes
+	}
+}
+kindha_08 = {
+	name = "Rabiah"
+	religion = rabbinism
+	dynasty = kindahites_dynasty
+	culture = bedouin
+	father = kindha_05
+	352.1.1 = {
+		birth = yes
+	}
+	390.1.1 = {
+		death = yes
+	}
+}
+kindha_09 = {
+	name = "Muawiyah"
+	religion = rabbinism
+	dynasty = kindahites_dynasty
+	culture = bedouin
+	father = kindha_08
+	375.1.1 = {
+		birth = yes
+	}
+	412.1.1 = {
+		death = yes
+	}
+}
+kindha_10 = {
+	name = "Hijr"
+	religion = rabbinism
+	dynasty = kindahites_dynasty
+	culture = bedouin
+	father = kindha_09
+	400.1.1 = {
+		birth = yes
+	}
+	425.1.1 = {
+		death = yes
+	}
+}
+
+kindha_26 = {
+	name = "Mariya"
+	female = yes
+	religion = nestorian
+	dynasty = kindahites_dynasty
+	culture = bedouin
+	father = kindha_13
+	485.1.1 = {
+		birth = yes
+	}
+	501.1.1 = {
+		add_spouse = ghassanid_26
+	}
+	540.1.1 = {
+		death = yes
+	}
+}
+
+##Persian Vassals
+mazun_03 = {
+	name = "al-Mundhir"
+	dynasty = al_tamimi_dynasty
+	religion = "nestorian"
+	culture = "bedouin"
+	father = mazun_04
+	trait = education_diplomacy_3
+	590.1.1 = {
+		birth = yes
+	}
+	628.1.1 = {
+		religion = united_islam
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+mazun_04 = {
+	name = "Sawa"
+	dynasty = al_tamimi_dynasty
+	religion = "nestorian"
+	culture = "bedouin"
+	father = banu_tamim_07
+	572.1.1 = {
+		birth = yes
+	}
+	612.1.1 = {
+		death = yes
+	}
+}
+
+##Umayyad Caliphate
+yusuf_01 = {
+	name = "Yusuf"
+	religion = "muwalladi"
+	culture = "bedouin"
+	739.1.1 = {
+		birth = yes
+	}
+	810.1.1 = {
+		death = yes
+	}
+}
+### Roman Emperors
+70526 = {
+	name = "Philip"
+	# Caesar Marcus Iulius Philippus Augustus
+	dynasty = 1022210
+	martial = 6
+	diplomacy = 4
+	intrigue = 7
+	stewardship = 5
+	religion = "hellenic_pagan"
+	culture = "bedouin"
+	trait = reveler_1
+	trait = ambitious
+	trait = education_intrigue_2
+	trait = apotheosised_trait
+	
+	204.1.1 = {
+		birth = "204.1.1"
+	}
+	249.9.1 = {
+		death = "249.9.1"
+	}
+}
+#### Basianus
+basianus_01 = {
+	name = "Iulius"
+	dynasty = dynasty_Bassianus
+	religion = "hellenic_pagan"
+	culture = "bedouin"
+	140.7.1 = {
+		birth = "140.7.1"
+	}
+	200.1.1 = {
+		death = "200.1.1"
+	}
+}
+basianus_02 = {
+	name = "Domna"
+	dynasty = dynasty_Bassianus
+	religion = "hellenic_pagan"
+	culture = "bedouin"
+	female = yes
+	father = basianus_01
+	160.2.1 = {
+		birth = "160.2.1"
+	}
+	217.1.1 = {
+		death = "217.1.1"
+	}
+}
+basianus_021 = {
+	name = "Maesa"
+	dynasty = dynasty_Bassianus
+	religion = "hellenic_pagan"
+	culture = "bedouin"
+	female = yes
+	father = basianus_01
+	162.5.1 = {
+		birth = "162.5.1"
+	}
+	217.1.1 = {
+		death = "217.1.1"
+	}
+}
+### Tanukhids
+tanukhid_00 = {
+	name = "Sawa"
+	dynasty = dynasty_Tanukhid
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	310.1.1 = {
+		birth = yes
+	}
+	361.1.1 = {
+		death = yes
+	}
+}
+tanukhid_01 = {
+	name = "Al-Hawari"
+	dynasty = dynasty_Tanukhid
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	father = tanukhid_00
+	332.1.1 = {
+		birth = yes
+	}
+	361.1.1 = {
+		add_spouse = tanukhid_011
+	}
+	375.1.1 = {
+		death = yes
+	}
+}
+tanukhid_012 = {
+	name = "Yazid"
+	dynasty = dynasty_Tanukhid
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	father = tanukhid_00
+	352.1.1 = {
+		birth = yes
+	}
+	378.1.1 = {
+		religion = "nicene"
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+tanukhid_021 = {
+	name = "Al-Hawari"
+	dynasty = dynasty_Tanukhid
+	religion = "nicene"
+	culture = "bedouin"
+	father = tanukhid_012
+	389.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	456.1.1 = {
+		death = yes
+	}
+}
+tanukhid_03 = {
+	name = "Philip"
+	dynasty = dynasty_Tanukhid
+	religion = "nicene"
+	culture = "bedouin"
+	father = tanukhid_012
+	429.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	480.1.1 = {
+		death = yes
+	}
+}
+tanukhid_011 = {
+	name = "Mawwiya"
+	dna = DNA_mawwiya
+	dynasty = dynasty_Mawwiyid
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	female = yes
+	trait = intellect_good_2
+	trait = brave
+	trait = gregarious
+	trait = just
+	trait = education_martial_4
+	trait = blademaster_3
+	trait = strong
+	342.1.1 = {
+		birth = yes
+	}
+	378.1.1 = {
+		religion = "nicene"
+	}
+	425.1.1 = {
+		death = yes
+	}
+}
+tanukhid_02 = {
+	name = "Khasidat"
+	dynasty = dynasty_Mawwiyid
+	religion = "arabic_pagan"
+	culture = "bedouin"
+	female = yes
+	father = tanukhid_01
+	mother = tanukhid_011
+	372.1.1 = {
+		birth = yes
+	}
+	378.1.1 = {
+		religion = "nicene"
+	}
+	446.1.1 = {
+		death = yes
+	}
+}
+
+# Jewish Scholars who converted Abu Karib of Himyar, as per the request of Huriale
+
+kaab_jewish_scholar = {
+	name = "Ka'ab"
+	religion = "rabbinism"
+	culture = "bedouin"
+	trait = intellect_good_3
+	trait = education_learning_4
+	trait = physician_3
+	330.1.1 = {
+		birth = yes
+	}
+	361.1.1 = {
+		employer = yatrib_05
+		give_council_position = councillor_court_chaplain
+	}
+	390.1.1 = {
+		religion = "rahmanani"
+		employer = 982001
+		give_council_position = councillor_court_chaplain
+	}
+	408.1.1 = {
+		death = yes
+	}
+}
+
+asad_jewish_scholar = {
+	name = "As'ad"
+	religion = "rabbinism"
+	culture = "bedouin"
+	trait = intellect_good_3
+	trait = education_learning_4
+	trait = physician_3
+	332.1.1 = {
+		birth = yes
+	}
+	361.1.1 = {
+		employer = yatrib_05
+		effect = {
+			title:c_medina.holder = {
+				appoint_court_position = {
+					recipient = ROOT
+					court_position = court_physician_court_position
+				}
+			}
+		}
+	}
+	390.1.1 = {
+		religion = "rahmanani"
+		employer = 982001
+		effect = {
+			title:k_yemen.holder = {
+				appoint_court_position = {
+					recipient = ROOT
+					court_position = court_physician_court_position
+				}
+			}
+		}
+	}
+	412.1.1 = {
+		death = yes
+	}
+}
+
+ghassanid_50 = {
+	name = "Sarahil"
+	dynasty = 99820002
+	religion = "syriac"
+	culture = "bedouin"
+	father = ghassanid_29 # Fictional for gameplay purposes
+	530.1.1 = {
+		birth = yes
+	}
+	580.1.1 = {
+		death = yes
+	}
+}

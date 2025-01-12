@@ -1,0 +1,825 @@
+﻿# Convert to Visigothic culture in Hispania or Gallia
+embrace_visigothic_identity_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	}
+	decision_group_type = major
+
+	ai_check_interval = 120
+
+	desc = embrace_visigothic_identity_decision_desc
+
+	is_shown = {
+		culture = culture:gothic
+		NOR = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_formed_visigothic_culture_decision
+			}
+		}
+		NOT = {
+			any_ruler = {
+				culture = culture:visigothic
+			}
+		}
+	}
+
+	is_valid = {
+		is_landed_or_landless_administrative = yes
+		culture = culture:gothic
+		capital_province = {
+			geographical_region = custom_visigothic
+		}
+		custom_description = {
+			text = visigothic_decision_requirement
+			any_realm_county = {
+				count >= 8
+				culture = culture:gothic
+			}
+		}
+		NOT = {
+			has_primary_title = title:k_ostrogoths
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_at_war = no
+		is_imprisoned = no
+	}
+
+	effect = {
+		hidden_effect = {
+			every_county = {
+				limit = {
+					culture = culture:gothic
+					title_province = {	
+						geographical_region = custom_visigothic
+					}
+				}
+				add_to_list = gothic_counties
+			}
+
+			# Perform the culture flip
+			every_in_list = {
+				list = gothic_counties
+				convert_county_and_holder_if_in_region_effect = {
+					OLD_CULTURE = culture:gothic
+					NEW_CULTURE = culture:visigothic
+					REGION = custom_visigothic
+				}
+			}
+
+			# Send all players in the game a notification event about the flip.
+			save_scope_as = visigothic_founder
+			culture:gothic = {save_scope_as = old_culture}
+			culture:visigothic = {
+				reset_culture_creation_date = yes
+				get_all_innovations_from = scope:old_culture
+				save_scope_as = new_culture
+			}
+			every_player = {
+				if = {
+					limit = { this = root }
+					trigger_event = tfe_culture.1001
+				}
+				else_if = {
+					limit = {
+						exists = capital_province
+						capital_province = { geographical_region = world_europe }
+					}
+					trigger_event = tfe_culture.1002
+				}
+			}
+
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_formed_visigothic_culture_decision
+			}
+		}
+
+		# Player changes culture
+		set_culture = culture:visigothic
+		add_character_flag = converted_culture_this_lifetime
+		hidden_effect = {
+			every_in_list = {
+				list = gothic_counties
+				limit = {
+					holder.capital_county = { is_in_list = gothic_counties }
+				}
+				holder = {
+					add_to_list = mass_melting_pot_list
+					every_courtier = { add_to_list = mass_melting_pot_list }
+					every_courtier_away = { add_to_list = mass_melting_pot_list }
+				}
+				every_in_list = {
+					list = mass_melting_pot_list
+					limit = {
+						culture = culture:gothic
+					}
+					set_culture = culture:visigothic
+				}
+			}
+		}
+
+		# Summary of above hidden effects to inform players of the decision's impact.
+		show_as_tooltip = {
+			custom_tooltip = embrace_visigothic_identity_decision_effect.tt
+			culture:visigothic = {
+				get_all_innovations_from = scope:old_culture
+			}
+		}
+	}
+
+	cost = {
+		prestige = 500
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 0
+
+		modifier = {
+			add = 100
+			sub_realm_size >= 12
+		}
+	}
+}
+
+# Convert to Ostrogothic culture in Italia or Illyria
+embrace_ostrogothic_identity_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	}
+	decision_group_type = major
+
+	ai_check_interval = 120
+
+	desc = embrace_ostrogothic_identity_decision_desc
+
+	is_shown = {
+		culture = culture:gothic
+		NOR = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_formed_ostrogothic_culture_decision
+			}
+		}
+		NOT = {
+			any_ruler = {
+				culture = culture:ostrogothic
+			}
+		}
+	}
+
+	is_valid = {
+		is_landed_or_landless_administrative = yes
+		culture = culture:gothic
+		capital_province = {
+			geographical_region = custom_ostrogothic
+		}
+		custom_description = {
+			text = ostrogothic_decision_requirement
+			any_realm_county = {
+				count >= 8
+				culture = culture:gothic
+			}
+		}
+		NOT = {
+			has_primary_title = title:k_visigoths
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_at_war = no
+		is_imprisoned = no
+	}
+
+	effect = {
+		hidden_effect = {
+			every_county = {
+				limit = {
+					culture = culture:gothic
+					title_province = {	
+						geographical_region = custom_ostrogothic
+					}
+				}
+				add_to_list = gothic_counties
+			}
+
+			# Perform the culture flip
+			every_in_list = {
+				list = gothic_counties
+				convert_county_and_holder_if_in_region_effect = {
+					OLD_CULTURE = culture:gothic
+					NEW_CULTURE = culture:ostrogothic
+					REGION = custom_ostrogothic
+				}
+			}
+
+			# Send all players in the game a notification event about the flip.
+			save_scope_as = ostrogothic_founder
+			culture:gothic = {save_scope_as = old_culture}
+			culture:ostrogothic = {
+				reset_culture_creation_date = yes
+				get_all_innovations_from = scope:old_culture
+				save_scope_as = new_culture
+			}
+			every_player = {
+				if = {
+					limit = { this = root }
+					trigger_event = tfe_culture.1001
+				}
+				else_if = {
+					limit = {
+						exists = capital_province
+						capital_province = { geographical_region = world_europe }
+					}
+					trigger_event = tfe_culture.1002
+				}
+			}
+
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_formed_ostrogothic_culture_decision
+			}
+		}
+
+		# Player changes culture
+		set_culture = culture:ostrogothic
+		add_character_flag = converted_culture_this_lifetime
+		hidden_effect = {
+			every_in_list = {
+				list = gothic_counties
+				limit = {
+					holder.capital_county = { is_in_list = gothic_counties }
+				}
+				holder = {
+					add_to_list = mass_melting_pot_list
+					every_courtier = { add_to_list = mass_melting_pot_list }
+					every_courtier_away = { add_to_list = mass_melting_pot_list }
+				}
+				every_in_list = {
+					list = mass_melting_pot_list
+					limit = {
+						culture = culture:gothic
+					}
+					set_culture = culture:ostrogothic
+				}
+			}
+		}
+
+		# Summary of above hidden effects to inform players of the decision's impact.
+		show_as_tooltip = {
+			custom_tooltip = embrace_ostrogothic_identity_decision_effect.tt
+			culture:ostrogothic = {
+				get_all_innovations_from = scope:old_culture
+			}
+		}
+	}
+
+	cost = {
+		prestige = 500
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 0
+
+		modifier = {
+			add = 100
+			sub_realm_size >= 12
+		}
+	}
+}
+
+### Cultural traditions decisions
+## Distribute Bread, pay cash to get county opinion in your capital
+distribute_bread_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_roman_city.dds"
+	}
+	decision_group_type = roman
+
+	ai_check_interval = 120
+	cooldown = { years = 10 }
+
+	desc = distribute_bread_decision_desc
+	selection_tooltip = distribute_bread_decision_tooltip
+
+	is_shown = {
+		is_landed_or_landless_administrative = yes
+		OR = {
+			culture = { has_cultural_parameter = can_use_distribute_bread_decision }
+			AND = {
+				OR = {
+					government_has_flag = government_is_autocratic
+					government_has_flag = government_is_autocratic_ep3
+					AND = {
+						government_has_flag = government_is_roman
+						highest_held_title_tier > tier_county
+					}
+				}
+				completely_controls = title:c_roma
+			}
+		}
+	}
+
+	is_valid = {
+	}
+
+	is_valid_showing_failures_only = {
+		is_imprisoned = no
+	}
+
+	effect = {
+		# Get some good county opinion, and prevent said counties from joining popular revolts
+		show_as_tooltip = {
+			capital_county = {
+				add_county_modifier = {
+					modifier = distribute_bread_modifier
+					years = 10
+				}
+			}
+		}
+		custom_tooltip = distribute_bread_decision_extend_to_county
+		if = {
+			limit = {
+				NOT = {
+					culture = { has_cultural_parameter = can_use_distribute_bread_decision }
+				}
+			}
+			every_character_struggle = {
+				involvement = involved
+				activate_struggle_catalyst = {
+					catalyst = catalyst_TFE_roman_grain
+					character = root
+				}
+			}
+		}
+		if = {
+			limit = { AND = { primary_title.tier >= tier_duchy any_held_title = { tier = tier_duchy } } }
+			custom_tooltip = distribute_bread_decision_extend_to_duchy
+		}
+		if = {
+			limit = { AND = { primary_title.tier >= tier_kingdom any_held_title = { tier = tier_kingdom } } }
+			custom_tooltip = distribute_bread_decision_extend_to_kingdom
+		}
+		if = {
+			limit = { primary_title.tier >= tier_empire }
+			custom_tooltip = distribute_bread_decision_extend_to_empire
+		}
+		
+		trigger_event = TFE_culture_decisions.0001
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 0
+		
+		# TODO: AI weights
+		# + lots of money
+		# + generosity
+		# + county unrest
+	}
+}
+
+## Gladiatorial combat, spend cash to get prestige
+# Can lead to religious tensions if you're an Abrahamic faith tho
+sponsor_gladiator_games_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_gladiator.dds"
+	}
+	decision_group_type = roman
+
+	ai_check_interval = 120
+	cooldown = { years = 10 }
+
+	desc = sponsor_gladiator_games_decision_desc
+	selection_tooltip = sponsor_gladiator_games_decision_tooltip
+
+	is_shown = {
+		#culture = { has_cultural_parameter = can_use_sponsor_gladiator_games_decision }
+		#NOT = {
+		#	any_owned_story = {
+		#		story_type = story_sponsor_gladiator_games_decision
+		#	}
+		#}
+		always = no
+	}
+
+	is_valid = {
+		always = no
+	}
+
+	#is_valid_showing_failures_only = {
+	#	is_imprisoned = no
+	#}
+	
+	cost = {
+		#gold = standard_activity_cost
+		gold = 100000
+		prestige = 100000
+		piety = 100000
+	}
+
+	effect = {
+		custom_tooltip = sponsor_gladiator_games_decision_effect
+		custom_tooltip = sponsor_gladiator_games_decision_effect_2
+		
+		# Religious authorities might complain if they're Abrahamic, unless you made human sacrifice pretty poggers
+		if = {
+			limit = {
+				faith = {
+					religion = { is_in_family = rf_abrahamic }
+					NOT = { has_doctrine_parameter = human_sacrifice_active }
+				}
+			}
+			custom_tooltip = sponsor_gladiator_games_decision_abrahamic_religions_reaction
+		}
+		# Abrahamic counties might complain too again, unless they consider human sacrifice hecking poggies
+		if = {
+			limit = {
+				any_held_county = {
+					faith = {
+						religion = { is_in_family = rf_abrahamic }
+						NOT = { has_doctrine_parameter = human_sacrifice_active }
+					}
+				}
+			}
+			custom_tooltip = sponsor_gladiator_games_decision_county_abrahamic_religions_reaction
+		}
+		
+		create_story = story_sponsor_gladiator_games_decision
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 10
+	}
+}
+
+dong_zhuo_culture_decision = {
+	ai_check_interval = 0
+	is_shown = {
+		has_game_rule = larp_enabled
+		NOT = {
+			culture = {
+				this = culture:soissons
+			}
+		}
+		dynasty = dynasty:syagri
+		game_start_date = 395.1.17
+	}
+	is_valid = {
+		culture = { has_cultural_pillar = heritage_levantine }
+		custom_description = {
+			text = soissonstrigger1
+			culture = { any_parent_culture_or_above = { this = culture:han } }
+		}
+		dynasty = dynasty:syagri
+		has_title = title:k_israel
+		custom_description = {
+			text = soissonstrigger2
+			current_date = 690.4.20
+		}
+	}
+	effect = {
+		save_scope_as = soi
+		#Convert your, and your whole family's, culture
+		set_culture = culture:soissons
+		add_prestige = 10000
+		hidden_effect = {
+			if = {
+				limit = { any_spouse = { is_landed = no } }
+				every_spouse = {
+					limit = {
+						is_landed = no
+					}
+					set_culture = culture:soissons
+				}
+			}
+			if = {
+				limit = {
+					any_close_family_member = {
+						is_landed = no
+						NOT = { is_spouse_of = root }
+					}
+				}
+				every_close_family_member = {
+					limit = {
+						is_landed = no
+						NOT = { is_spouse_of = root }
+					}
+					custom = all_unlanded_family_members
+					set_culture = culture:soissons
+				}
+			}
+
+			#Convert appropriate vassals, and their family
+			if = {
+				limit = {
+					any_vassal_or_below = {
+						is_ai = yes
+					}
+				}
+				every_vassal_or_below = {
+					limit = {
+						is_ai = yes
+					}
+					set_culture = culture:soissons
+				}
+			}
+
+			#Flip Counties
+			every_realm_county = {
+				set_county_culture = culture:soissons
+			}
+
+			culture:soissons = {
+				hidden_effect = {
+					reset_culture_creation_date = yes
+					get_all_innovations_from = culture:han
+					get_all_innovations_from = culture:hebrew
+				}
+			}
+
+			trigger_event = tfe_culture.9900
+		}
+	}
+	cost = { gold = 69 }
+}
+
+## Proclaim A New Law ##
+# Maek germanic do the thingy with the books 
+proclaim_a_new_law = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_roman_officers.dds"
+	}
+	decision_group_type = roman
+
+	ai_check_interval = 120
+	desc = proclaim_a_new_law_desc
+	selection_tooltip = proclaim_a_new_law_tooltip
+
+	is_shown = {
+		is_landed_or_landless_administrative = yes
+		AND = {
+			exists = culture
+			culture = {
+				OR = {
+					has_cultural_pillar = heritage_central_germanic
+					has_cultural_pillar = heritage_east_germanic
+					has_cultural_pillar = heritage_west_germanic
+					THIS = culture:alan
+				}
+			}
+		}
+	}
+
+	is_valid = {
+		custom_description = {
+			text = lawtrigger0
+			culture.culture_head = root
+		}
+		
+		highest_held_title_tier >= tier_kingdom
+		culture = {
+			OR = {
+				has_cultural_pillar = heritage_central_germanic
+				has_cultural_pillar = heritage_east_germanic
+				has_cultural_pillar = heritage_west_germanic
+				THIS = culture:alan
+			}
+		}
+		custom_description = {
+			text = lawtrigger1
+			any_realm_county = {
+				percent >= 0.6
+				culture = {
+					has_cultural_pillar = heritage_latin
+				}
+			}
+		}
+		learning >= 12
+		custom_description = {
+			text = lawtrigger2
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = unavailable_unique_decisions_law
+					target = root.culture
+				}
+			}
+		}
+		
+	}
+
+	effect = {
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions_law
+			target = root.culture
+		}
+		dynasty = {
+			add_dynasty_modifier = {
+				modifier = romano_barb_law
+				years = 50
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					culture = culture:frankish
+					culture = culture:salian
+					culture = culture:ripurian
+				}
+			}
+			create_artifact = {
+				name = artifact_saliclaw_name
+				description = artifact_saliclaw_description
+				visuals = book 
+				type = book 
+				modifier = artifact_saliclaw_modifier
+				wealth = 20
+				quality = 100
+				history = {
+					type = created
+					recipient = root
+					location = root.capital_province
+				}
+				save_scope_as = saliclaw
+			}
+			scope:saliclaw = {
+				set_variable = { name = historical_unique_artifact value = yes }
+			}
+		}
+		else_if = {
+			limit = {
+				culture = culture:visigothic
+			}
+			create_artifact = {
+				name = artifact_visigothiclaw_name
+				description = artifact_visigothic_description
+				visuals = book 
+				type = book 
+				modifier = artifact_visigothiclaw_modifier
+				wealth = 20
+				quality = 100
+				history = {
+					type = created
+					recipient = root
+					location = root.capital_province
+				}
+				save_scope_as = visigothiclaw
+			}
+			scope:visigothiclaw = {
+				set_variable = { name = historical_unique_artifact value = yes }
+			}
+		}
+		else_if = {
+			limit = {
+				culture = culture:burgundian
+			}
+			create_artifact = {
+				name = artifact_burgundianlaw_name
+				description = artifact_burgundianlaw_description
+				visuals = book 
+				type = book 
+				modifier = artifact_burgundianlaw_modifier
+				wealth = 20
+				quality = 100
+				history = {
+					type = created
+					recipient = root
+					location = root.capital_province
+				}
+				save_scope_as = burgundianlaw
+			}
+			scope:burgundianlaw = {
+				set_variable = { name = historical_unique_artifact value = yes }
+			}
+		}
+		every_culture_global = {
+			limit = {
+				has_cultural_pillar = heritage_latin
+			}
+			change_cultural_acceptance = {
+				target = root.culture
+				value = 50
+				desc = CULTURE_ACCEPTANCE_PROCLAIM_LAW
+			}
+		}
+	}
+
+	cost = {
+		gold = 100
+		prestige = 200
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+## Djeddar
+build_djeddar_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	}
+
+	#build_djeddar replaces give_sky_burial
+
+	desc = build_djeddar_decision_desc
+	selection_tooltip = build_djeddar_decision_tooltip
+
+	ai_check_interval = 36
+	cooldown = { months = 12 }
+
+	is_shown = {
+		is_landed_or_landless_administrative = yes
+		culture = {
+			has_cultural_pillar = heritage_berber
+		}
+		NOT = { religion = religion:islam_religion }
+		has_variable = berber_ancestor_to_bury
+	}
+
+	cost = {
+		gold = 250
+	}
+
+	is_valid = {
+	}
+
+	is_valid_showing_failures_only = {
+
+	}
+
+	effect = {
+		show_as_tooltip = {
+			add_piety = major_piety_value
+			#capital_province = {
+			#	county = {
+			#		add_county_modifier = {
+			#			modifier = county_built_djeddar_modifier
+			#			years = 5
+			#		}
+			#	}
+			#}
+		}
+			capital_province = {
+				county = {
+					add_county_modifier = {
+						modifier = county_built_djeddar_modifier
+						years = 5
+					}
+				}
+			}
+			if = {
+				limit = {
+					any_vassal = {
+						culture = {
+							has_cultural_pillar = heritage_berber
+						}
+						religion = religion:christianity_religion
+					}
+				}
+				every_vassal = {
+					limit = {
+						culture = {
+							has_cultural_pillar = heritage_berber
+						}
+						religion = religion:christianity_religion
+					}
+					custom = build_djeddar_vassals
+					add_opinion = {
+						modifier = pleased_opinion
+						target = root
+						opinion = 20
+					}
+				}
+			}
+		trigger_event = {
+			id = tfe_culture.4000
+			days = 1
+		}
+	}
+	
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}

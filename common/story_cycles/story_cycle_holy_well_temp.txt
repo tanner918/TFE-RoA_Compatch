@@ -1,0 +1,92 @@
+﻿# Story cycle used by the Sponsor Gladiatorial Games decision
+# Get four events (one per week), and then end it
+
+story_TFE_visit_holy_well = {
+	on_setup = {
+		story_owner = {
+
+			var:county_well = {
+				save_scope_as = county
+			}
+			# Need to do this in case the modifier disappears before the event triggers
+			if = {
+				limit = {
+					scope:county = {
+						has_county_modifier = TFE_holy_well_level_3
+					}
+				}
+				add_character_flag = TFE_visiting_holy_well_level_3
+			}
+			else_if = {
+				limit = {
+					scope:county = {
+						has_county_modifier = TFE_holy_well_level_2
+					}
+				}
+				add_character_flag = TFE_visiting_holy_well_level_2
+			}
+			# Failsafe
+			else = {
+				add_character_flag = TFE_visiting_holy_well_level_1
+			}
+			trigger_event = {
+				id = TFE_minor_decisions.0004
+				days = { 7 21 }
+			}
+		}
+	}
+
+	on_end = {
+		story_owner = {
+			if = {
+				limit = {
+					has_character_flag = planning_an_activity
+				}
+				remove_character_flag = planning_an_activity
+			}
+			if = {
+				limit = {
+					has_character_flag = TFE_holy_well_level_3
+				}
+				remove_character_flag = TFE_holy_well_level_3
+			}
+			if = {
+				limit = {
+					has_character_flag = TFE_holy_well_level_2
+				}
+				remove_character_flag = TFE_holy_well_level_2
+			}
+			if = {
+				limit = {
+					has_character_flag = TFE_holy_well_level_1
+				}
+				remove_character_flag = TFE_holy_well_level_1
+			}
+
+			if = {
+				limit = {
+					has_character_flag = TFE_visiting_holy_well_level_3
+				}
+				remove_character_flag = TFE_visiting_holy_well_level_3
+			}
+			if = {
+				limit = {
+					has_character_flag = TFE_visiting_holy_well_level_2
+				}
+				remove_character_flag = TFE_visiting_holy_well_level_2
+			}
+			if = {
+				limit = {
+					has_character_flag = TFE_visiting_holy_well_level_1
+				}
+				remove_character_flag = TFE_visiting_holy_well_level_1
+			}
+			remove_variable = county_well
+		}	
+	}
+
+	# Cancel the games
+	on_owner_death = {
+		end_story = yes
+	}
+}

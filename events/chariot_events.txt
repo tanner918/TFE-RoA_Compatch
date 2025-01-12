@@ -1,0 +1,69 @@
+﻿namespace = chariots
+
+chariots.0001 = {
+	title = "A Blue Victory!"
+	desc = "After an intense race, the blues came out victorious. A shameful day for the green supporters."
+	scope = character
+	theme = diplomacy
+	trigger = {
+		OR = {
+			has_trait = blue_support
+			has_trait = green_support
+		}
+	}
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+	}
+
+	option = {
+		name = "A day of celebration!"
+		trigger = {
+			has_trait = blue_support
+		}
+		add_prestige = 100
+	}
+	option = {
+		name = "A day of shame"
+		trigger = {
+			has_trait = green_support
+		}
+		add_prestige = -100
+	}
+}
+
+chariots.0002 = {
+	title = "A Green Victory!"
+	desc = "After an intense race, the green came out victorious. A shameful day for the blue supporters."
+	scope = character
+	theme = diplomacy
+	trigger = {
+		OR = {
+			has_trait = blue_support
+			has_trait = green_support
+		}
+	}
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+	}
+
+	option = {
+		name = "A day of celebration!"
+		trigger = {
+			has_trait = green_support
+		}
+		add_prestige = 100
+	}
+	option = {
+		name = "A day of shame"
+		trigger = {
+			has_trait = blue_support
+		}
+		add_prestige = -100
+	}
+}

@@ -1,0 +1,23 @@
+﻿namespace = TFE_misc_decisions
+TFE_misc_decisions.0001 = {
+	type = character_event
+	title = TFE_misc_decisions.0001.t
+	desc = {
+		desc = TFE_misc_decisions.0001.desc
+	}
+	theme = realm
+	left_portrait = {
+		character = root
+		animation = celebrate_sword
+	}
+	
+	immediate = {
+		show_as_tooltip = {
+			set_primary_title_to = scope:new_title
+		}
+	}
+
+	option = {
+		name = TFE_misc_decisions.0001.a
+	}
+}

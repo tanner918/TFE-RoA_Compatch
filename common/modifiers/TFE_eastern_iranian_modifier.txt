@@ -1,0 +1,71 @@
+﻿
+struggle_eastern_iranian_house_offense_modifier = {
+	icon = prowess_positive
+	attacker_advantage = 4
+	men_at_arms_limit = 1
+	men_at_arms_maintenance = -0.05
+	martial = 1
+}
+
+struggle_eastern_iranian_house_defense_modifier = {
+	icon = county_modifier_control_positive
+	defender_advantage = 4
+	castle_holding_build_gold_cost = -0.1
+	castle_holding_build_speed = -0.1
+	intrigue = 1
+}
+
+struggle_eastern_iranian_house_political_modifier = {
+	icon = prestige_positive
+	vassal_opinion = 10
+	vassal_levy_contribution_mult = 0.2
+	dread_baseline_add = 5
+	domain_limit = 3
+	diplomacy = 1
+}
+
+struggle_eastern_iranian_house_urban_modifier = {
+	icon = prestige_positive
+	city_holding_build_gold_cost = -0.15
+	city_holding_build_speed = -0.15
+	county_opinion_add = 5
+	diplomacy = 1
+}
+
+struggle_eastern_iranian_house_trade_modifier = {
+	icon = prestige_positive
+	domain_tax_mult = 0.1
+	republic_government_tax_contribution_mult = 0.15
+	republic_government_levy_contribution_mult = 0.15
+	stewardship = 1
+}
+
+struggle_eastern_iranian_house_culture_modifier = {
+	icon = prestige_positive
+	monthly_prestige_gain_mult = 0.1
+	monthly_piety_gain_mult = 0.1
+	different_culture_opinion = 10
+	opinion_of_different_culture = 10
+	different_faith_opinion = 10
+	opinion_of_different_faith = 10
+	learning = 1
+}
+
+struggle_eastern_iranian_compromise_house_reward_modifier = {
+	icon = county_modifier_development_positive
+	same_heritage_county_advantage_add = 5
+	independent_ruler_opinion = 15
+}
+
+struggle_eastern_iranian_compromise_defensive_reward_modifier = {
+	icon = rock_positive
+	development_growth_factor = 0.1
+	additional_fort_level = 2
+	garrison_size = 0.25
+}
+peroz_pearl_modifier = {
+	court_grandeur_baseline_add = 5
+	monthly_dynasty_prestige_mult = 0.04
+	monthly_prestige = 1
+	attraction_opinion = 5
+}

@@ -1,0 +1,363 @@
+﻿mars_god = {
+	scope = character 
+
+	effect = {
+		set_variable = {
+			name = deity
+			value = flag:mars
+		}
+		remove_character_modifier = venus_god
+		remove_character_modifier = mercury_god
+		remove_character_modifier = minerva_god
+		remove_character_modifier = laverna_god
+		add_character_modifier = mars_god
+	}
+}
+
+venus_god = {
+	scope = character 
+
+	effect = {
+		set_variable = {
+			name = deity
+			value = flag:venus
+		}
+		remove_character_modifier = mars_god
+		remove_character_modifier = mercury_god
+		remove_character_modifier = minerva_god
+		remove_character_modifier = laverna_god
+		add_character_modifier = venus_god
+	}
+}
+
+mercury_god = {
+	scope = character 
+
+	effect = {
+		set_variable = {
+			name = deity
+			value = flag:mercury
+		}
+		remove_character_modifier = mars_god
+		remove_character_modifier = venus_god
+		remove_character_modifier = minerva_god
+		remove_character_modifier = laverna_god
+		add_character_modifier = mercury_god
+	}
+}
+
+minerva_god = {
+	scope = character 
+
+	effect = {
+		set_variable = {
+			name = deity
+			value = flag:minerva
+		}
+		remove_character_modifier = mars_god
+		remove_character_modifier = venus_god
+		remove_character_modifier = mercury_god
+		remove_character_modifier = laverna_god
+		add_character_modifier = minerva_god
+	}
+}
+
+laverna_god = {
+	scope = character 
+
+	effect = {
+		set_variable = {
+			name = deity
+			value = flag:laverna
+		}
+		remove_character_modifier = mars_god
+		remove_character_modifier = venus_god
+		remove_character_modifier = mercury_god
+		remove_character_modifier = minerva_god
+		add_character_modifier = laverna_god
+	}
+}
+
+high_god = {
+	scope = character 
+
+
+	effect = {
+		set_variable = {
+			name = deity
+			value = flag:high
+		}
+		remove_character_modifier = health_god
+		remove_character_modifier = war_god
+		remove_character_modifier = wealth_god
+		remove_character_modifier = knowledge_god
+		add_character_modifier = high_god
+	}
+}
+
+health_god = {
+	scope = character 
+
+
+	effect = {
+		set_variable = {
+			name = deity
+			value = flag:health
+		}
+		remove_character_modifier = high_god
+		remove_character_modifier = wealth_god
+		remove_character_modifier = war_god
+		remove_character_modifier = knowledge_god
+		add_character_modifier = health_god
+	}
+}
+
+wealth_god = {
+	scope = character 
+
+
+	effect = {
+		set_variable = {
+			name = deity
+			value = flag:wealth
+		}
+		remove_character_modifier = high_god
+		remove_character_modifier = health_god
+		remove_character_modifier = knowledge_god
+		remove_character_modifier = war_god
+		add_character_modifier = wealth_god
+	}
+}
+
+knowledge_god = {
+	scope = character 
+
+	effect = {
+		set_variable = {
+			name = deity
+			value = flag:knowledge
+		}
+		remove_character_modifier = high_god
+		remove_character_modifier = health_god
+		remove_character_modifier = war_god
+		remove_character_modifier = wealth_god
+		add_character_modifier = knowledge_god
+	}
+}
+
+war_god = {
+	scope = character 
+
+	effect = {
+		set_variable = {
+			name = deity
+			value = flag:war
+		}
+		remove_character_modifier = high_god
+		remove_character_modifier = health_god
+		remove_character_modifier = knowledge_god
+		remove_character_modifier = wealth_god
+		add_character_modifier = war_god
+	}
+}
+
+
+isis_god = {
+	scope = character 
+	effect = {
+		set_variable = {
+			name = deity
+			value = flag:isis
+		}
+		remove_character_modifier = isis_god
+		remove_character_modifier = isis_greater_god
+		remove_character_modifier = osiris_god
+		remove_character_modifier = serapis_god
+		remove_character_modifier = horus_god
+		remove_character_modifier = hermes_trismegistus_god
+		remove_character_modifier = ammon_god
+		remove_character_modifier = gurzil_god
+		remove_character_modifier = apedemak_god
+		remove_character_modifier = mandulis_god
+		if = {
+			limit = {
+				faith = {
+					has_doctrine = egyptian_cult_isis_doctrine
+				}
+			}
+			add_character_modifier = isis_greater_god
+		}
+		else = {
+			add_character_modifier = isis_god
+		}
+	}
+}
+
+osiris_god = {
+	scope = character 
+	effect = {
+		set_variable = {
+			name = deity
+			value = flag:osiris
+		}
+		remove_character_modifier = isis_god
+		remove_character_modifier = isis_greater_god
+		remove_character_modifier = osiris_god
+		remove_character_modifier = serapis_god
+		remove_character_modifier = horus_god
+		remove_character_modifier = hermes_trismegistus_god
+		remove_character_modifier = ammon_god
+		remove_character_modifier = gurzil_god
+		remove_character_modifier = apedemak_god
+		remove_character_modifier = mandulis_god
+		add_character_modifier = osiris_god
+	}
+}
+
+serapis_god = {
+	scope = character 
+	effect = {
+		set_variable = {
+			name = deity
+			value = flag:serapis
+		}
+		remove_character_modifier = isis_god
+		remove_character_modifier = isis_greater_god
+		remove_character_modifier = osiris_god
+		remove_character_modifier = serapis_god
+		remove_character_modifier = horus_god
+		remove_character_modifier = hermes_trismegistus_god
+		remove_character_modifier = ammon_god
+		remove_character_modifier = gurzil_god
+		remove_character_modifier = apedemak_god
+		remove_character_modifier = mandulis_god
+		add_character_modifier = serapis_god
+	}
+}
+
+horus_god = {
+	scope = character 
+	effect = {
+		set_variable = {
+			name = deity
+			value = flag:horus
+		}
+		remove_character_modifier = isis_god
+		remove_character_modifier = isis_greater_god
+		remove_character_modifier = osiris_god
+		remove_character_modifier = serapis_god
+		remove_character_modifier = horus_god
+		remove_character_modifier = hermes_trismegistus_god
+		remove_character_modifier = ammon_god
+		remove_character_modifier = gurzil_god
+		remove_character_modifier = apedemak_god
+		remove_character_modifier = mandulis_god
+		add_character_modifier = horus_god
+	}
+}
+
+hermes_trismegistus_god = {
+	scope = character 
+	effect = {
+		set_variable = {
+			name = deity
+			value = flag:hermes
+		}
+		remove_character_modifier = isis_god
+		remove_character_modifier = isis_greater_god
+		remove_character_modifier = osiris_god
+		remove_character_modifier = serapis_god
+		remove_character_modifier = horus_god
+		remove_character_modifier = hermes_trismegistus_god
+		remove_character_modifier = ammon_god
+		remove_character_modifier = gurzil_god
+		remove_character_modifier = apedemak_god
+		remove_character_modifier = mandulis_god
+		add_character_modifier = hermes_trismegistus_god
+	}
+}
+
+ammon_god = {
+	scope = character 
+	effect = {
+		set_variable = {
+			name = deity
+			value = flag:ammon
+		}
+		remove_character_modifier = isis_god
+		remove_character_modifier = isis_greater_god
+		remove_character_modifier = osiris_god
+		remove_character_modifier = serapis_god
+		remove_character_modifier = horus_god
+		remove_character_modifier = hermes_trismegistus_god
+		remove_character_modifier = ammon_god
+		remove_character_modifier = gurzil_god
+		remove_character_modifier = apedemak_god
+		remove_character_modifier = mandulis_god
+		add_character_modifier = ammon_god
+	}
+}
+
+gurzil_god = {
+	scope = character 
+	effect = {
+		set_variable = {
+			name = deity
+			value = flag:gurzil
+		}
+		remove_character_modifier = isis_god
+		remove_character_modifier = isis_greater_god
+		remove_character_modifier = osiris_god
+		remove_character_modifier = serapis_god
+		remove_character_modifier = horus_god
+		remove_character_modifier = hermes_trismegistus_god
+		remove_character_modifier = ammon_god
+		remove_character_modifier = gurzil_god
+		remove_character_modifier = apedemak_god
+		remove_character_modifier = mandulis_god
+		add_character_modifier = gurzil_god
+	}
+}
+
+apedemak_god = {
+	scope = character 
+	effect = {
+		set_variable = {
+			name = deity
+			value = flag:apedmak
+		}
+		remove_character_modifier = isis_god
+		remove_character_modifier = isis_greater_god
+		remove_character_modifier = osiris_god
+		remove_character_modifier = serapis_god
+		remove_character_modifier = horus_god
+		remove_character_modifier = hermes_trismegistus_god
+		remove_character_modifier = ammon_god
+		remove_character_modifier = gurzil_god
+		remove_character_modifier = apedemak_god
+		remove_character_modifier = mandulis_god
+		add_character_modifier = apedemak_god
+	}
+}
+
+mandulis_god = {
+	scope = character 
+	effect = {
+		set_variable = {
+			name = deity
+			value = flag:mandulis
+		}
+		remove_character_modifier = isis_god
+		remove_character_modifier = isis_greater_god
+		remove_character_modifier = osiris_god
+		remove_character_modifier = serapis_god
+		remove_character_modifier = horus_god
+		remove_character_modifier = hermes_trismegistus_god
+		remove_character_modifier = ammon_god
+		remove_character_modifier = gurzil_god
+		remove_character_modifier = apedemak_god
+		remove_character_modifier = mandulis_god
+		add_character_modifier = mandulis_god
+	}
+}
+

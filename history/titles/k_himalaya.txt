@@ -1,0 +1,1087 @@
+﻿k_himalaya = {
+	361.1.1 = { change_development_level = 3 }
+	532.1.1 = { change_development_level = 4 }
+	768.1.1 = { change_development_level = 5 }
+	#Licchavi Dynasty
+	289.1.1 = {
+		holder = licchavi_06
+		government = feudal_government
+	}
+	316.1.1 = {
+		holder = licchavi_04
+	}
+	347.1.1 = {
+		holder = licchavi_03
+	}
+	360.1.1 = {
+		holder = licchavi_02
+	}
+	400.1.1 = {
+		holder = licchavi_01
+	}
+	425.1.1 = {
+		holder=247408 #Sankaradeva I
+	}
+	450.1.1 = {
+		holder=247409 #Dharmadeva
+	}
+	464.1.1 = {
+		holder=247410 #Manadeva I
+	}
+	505.1.1 = {
+		holder=247411 #Mahideva
+	}
+	506.1.1 = {
+		holder=247412 #Vasantadeva
+	}
+	532.1.1 = {
+		holder=247413 #Manudeva
+	}
+	538.1.1 = {
+		holder=247414 #Vamanadeva
+	}
+	545.1.1 = {
+		holder=247415 #Ramadeva
+	}
+	550.1.1 = {
+		holder=247416 #Amaradeva
+	}
+	555.1.1 = {
+		holder=247417 #Gunakamadeva I
+	}
+	560.1.1 = {
+		holder=247418 #Ganadeva
+	}
+	567.1.1 = {
+		holder=247419 #Gangadeva
+	}
+	573.1.1 = {
+		holder=247420 #Manadeva II
+	}
+	590.1.1 = {
+		holder=247421 #Shivadeva I
+	}
+	604.1.1 = {
+		holder=247422 #Amshuvarman
+	}
+	621.1.1 = {
+		holder=247423 #Udayadeva I
+	}
+	624.1.1 = {
+		holder=247424 #Dhruvadeva
+	}
+	625.1.1 = {
+		holder=247425 #Bhimarjunadeva
+	}
+	643.1.1 = {
+		holder=247426 #Narendradeva I
+		liege="e_tibet"
+	}#Narendradeva seeks aid from Tibet to regain his father’s throne
+	679.1.1 = {
+		holder=247427 #Shivadeva II
+	}
+	705.1.1 = {
+		holder=247428 #Jayadeva I
+	}
+	733.1.1 = {
+		holder=247429 #Sankaradeva II
+	}
+	749.1.1 = {
+		holder=247430 #Manadeva III
+	}
+	756.1.1 = {
+		holder=247431 #Baliraja
+	}
+	826.1.1 = {
+		holder=247432 #Baladeva
+	}
+	842.1.1 = {
+		liege=0
+	}#Fall of Tibetan Empire
+	847.1.1 = {
+		holder=247433 #Manadeva IV
+	}
+}
+
+d_kurmanchal = {
+	350.1.1 = {
+		holder = kuninda_01
+		government = feudal_government
+	}
+	395.1.1 = {
+		liege = e_bengal
+	}
+	600.1.1={
+		liege="k_guge"
+	}
+	#Katyuri Dynasty
+	620.1.1 = {
+		holder=247478 #Vashudeva
+	}
+	625.1.1={
+		liege="e_tibet"
+	}#Zhangzhung conquered by Tibet
+	658.1.1 = {
+		holder=247479 #Ashokdeva
+	}
+	684.1.1 = {
+		holder=247480 #Rawatdeva
+	}
+	716.1.1 = {
+		holder=247481 #Basudeva
+	}
+}
+
+
+c_kumaon = {
+	## Auduvabmras
+	350.1.1 = {
+		holder = kuninda_01
+		government = feudal_government
+	}
+	395.1.1 = {
+		liege = e_bengal
+	}
+	476.1.1 = {
+		holder = guptasad_43
+		government = gupta_government
+	}	
+	532.1.1 = {
+		holder = pahari_001
+		government = feudal_government
+		liege = k_himalaya
+	}
+	600.1.1={
+		liege="d_kurmanchal"
+	}
+	#Katyuri-Vasu Dynasty
+	620.1.1 = {
+		holder=247478 #Vashudeva
+	}
+	658.1.1 = {
+		holder=247479 #Ashokdeva
+	}
+	684.1.1 = {
+		holder=247480 #Rawatdeva
+	}
+	716.1.1 = {
+		holder=247481 #Basudeva
+	}
+
+}
+
+
+c_garwhal = {
+	## Auduvabmras
+	350.1.1 = {
+		holder = kuninda_01
+		government = feudal_government
+	}
+	395.1.1 = {
+		liege = e_bengal
+	}
+	476.1.1 = {
+		holder = guptasad_43
+		government = gupta_government
+	}
+	532.1.1 = {
+		holder = pahari_001
+		government = feudal_government
+		liege = k_himalaya
+	}
+	600.1.1={
+		liege="d_kurmanchal"
+	}
+	#Katyuri-Vasu Dynasty
+	620.1.1 = {
+		holder=247478 #Vashudeva
+	}
+	658.1.1 = {
+		holder=247479 #Ashokdeva
+	}
+	684.1.1 = {
+		holder=247480 #Rawatdeva
+	}
+	716.1.1 = {
+		holder=247481 #Basudeva
+	}
+
+}
+
+
+c_kali_kumaon = {
+	361.1.1 = { change_development_level = 4 }
+	532.1.1 = { change_development_level = 5 }
+	768.1.1 = { change_development_level = 6 }
+	350.1.1 = {
+		holder = kuninda_01
+		government = gupta_government
+	}
+	476.1.1 = {
+		holder = guptasad_43
+	}
+	532.1.1 = {
+		holder = pahari_001
+		government = feudal_government
+		liege = k_himalaya
+	}
+	600.1.1={
+		liege="k_guge"
+	}
+	600.1.1={
+		liege="d_kurmanchal"
+	}
+	#Katyuri-Vasu Dynasty
+	620.1.1 = {
+		holder=247478 #Vashudeva
+	}
+	658.1.1 = {
+		holder=247479 #Ashokdeva
+	}
+	684.1.1 = {
+		holder=247480 #Rawatdeva
+	}
+	716.1.1 = {
+		holder=247481 #Basudeva
+	}
+
+}
+
+
+c_doti = {
+	## Auduvabmras
+	350.1.1 = {
+		holder = kuninda_01
+		government = feudal_government
+	}
+	395.1.1 = {
+		liege = e_bengal
+	}
+	476.1.1 = {
+		holder = guptasad_43
+		government = gupta_government
+	}
+	532.1.1 = {
+		holder = pahari_002
+		government = feudal_government
+		liege = k_himalaya
+	}
+	625.1.1={
+		liege="d_kurmanchal"
+		holder=247478 #Vashudev
+	}#Katyuri vassals
+	658.1.1 = {
+		holder=247479 #Ashokdeva
+	}
+	684.1.1 = {
+		holder=247480 #Rawatdeva
+	}
+	716.1.1 = {
+		holder=247481 #Basudeva
+	}
+
+}
+
+
+d_khasa = {
+	# Katrripur
+	350.1.1 = {
+		holder = karttripura_01
+		government = feudal_government
+	}
+	372.1.1 = {
+		holder = karttripura_02
+	}
+	412.1.1 = {
+		holder = karttripura_03
+	}
+	445.1.1 = {
+		holder = karttripura_04
+	}
+
+}
+
+
+c_jumla = {
+	# Katrripur
+	350.1.1 = {
+		holder = karttripura_01
+		government = feudal_government
+	}
+	372.1.1 = {
+		holder = karttripura_02
+	}
+	412.1.1 = {
+		holder = karttripura_03
+	}
+	445.1.1 = {
+		holder = karttripura_04
+	}
+	476.1.1 = {
+		holder = guptasad_44
+		liege = e_bengal
+	}	
+	532.1.1 = {
+		holder = pahari_002
+		government = feudal_government
+		liege = k_himalaya
+	}
+	571.1.1={
+		holder = 247000
+		liege = e_bengal
+	}
+	608.1.1={
+		holder = 247001
+	}
+	625.1.1={
+		liege="d_kurmanchal"
+		holder=247478 #Vashudev
+	}#Zhangzhung conquered by Tibet (Katyuri vassals)
+	658.1.1 = {
+		holder=247479 #Ashokdeva
+	}
+	684.1.1 = {
+		holder=247480 #Rawatdeva
+	}
+	716.1.1 = {
+		holder=247481 #Basudeva
+	}
+
+}
+
+
+c_bajura = {
+	# Katrripur
+	350.1.1 = {
+		holder = karttripura_01
+		government = feudal_government
+	}
+	372.1.1 = {
+		holder = karttripura_02
+	}
+	412.1.1 = {
+		holder = karttripura_03
+	}
+	445.1.1 = {
+		holder = karttripura_04
+	}
+	455.1.1 = {
+		holder = zhangzhung_06
+		government = feudal_government
+		liege = 0
+	}	
+	532.1.1 = {
+		holder = pahari_002
+		liege = k_himalaya
+	}
+	571.1.1={
+		holder = 247000
+		liege = 0
+	}
+	608.1.1={
+		holder = 247001
+	}
+	625.1.1={
+		liege="d_kurmanchal"
+		holder=247478 #Vashudev
+	}#Zhangzhung conquered by Tibet (Katyuri vassals)
+	658.1.1 = {
+		holder=247479 #Ashokdeva
+	}
+	684.1.1 = {
+		holder=247480 #Rawatdeva
+	}
+	716.1.1 = {
+		holder=247481 #Basudeva
+	}
+
+}
+
+
+c_jagatipur = {
+	# Katrripur
+	350.1.1 = {
+		holder = karttripura_01
+		government = feudal_government
+	}
+	372.1.1 = {
+		holder = karttripura_02
+	}
+	412.1.1 = {
+		holder = karttripura_03
+	}
+	445.1.1 = {
+		holder = karttripura_04
+	}
+	476.1.1 = {
+		holder = guptasad_44
+		liege = e_bengal
+	}
+	532.1.1 = {
+		holder = pahari_003
+		government = feudal_government
+		liege = k_himalaya
+	}
+	571.1.1={
+		holder = 247000
+		liege = e_bengal
+	}
+	608.1.1={
+		holder = 247001
+	}
+	625.1.1={
+		liege="d_kurmanchal"
+		holder=247478 #Vashudev
+	}#Zhangzhung conquered by Tibet (Katyuri vassals)
+	658.1.1 = {
+		holder=247479 #Ashokdeva
+	}
+	684.1.1 = {
+		holder=247480 #Rawatdeva
+	}
+	716.1.1 = {
+		holder=247481 #Basudeva
+	}
+
+}
+
+
+c_dang = {
+	# Katrripur
+	350.1.1 = {
+		holder = karttripura_01
+		government = feudal_government
+	}
+	372.1.1 = {
+		holder = karttripura_02
+	}
+	412.1.1 = {
+		holder = karttripura_03
+	}
+	445.1.1 = {
+		holder = karttripura_04
+	}
+	476.1.1 = {
+		holder = guptasad_44
+		liege = e_bengal
+	}	
+	532.1.1 = {
+		holder = pahari_003
+		government = feudal_government
+		liege = k_himalaya
+	}
+	571.1.1={
+		holder = 247000
+		liege = e_bengal
+	}
+	608.1.1={
+		holder = 247001
+	}
+	625.1.1={
+		liege="d_kurmanchal"
+		holder=247478 #Vashudev
+	}#Zhangzhung conquered by Tibet (Katyuri vassals)
+	658.1.1 = {
+		holder=247479 #Ashokdeva
+	}
+	684.1.1 = {
+		holder=247480 #Rawatdeva
+	}
+	716.1.1 = {
+		holder=247481 #Basudeva
+	}
+
+}
+
+
+c_lumbini = {
+	361.1.1 = { change_development_level = 6 }
+	476.1.1 = { change_development_level = 7 }
+	532.1.1 = { change_development_level = 8 }
+	632.1.1 = { change_development_level = 9 }
+	768.1.1 = { change_development_level = 10 }
+	#Licchavi Dynasty
+	289.1.1 = {
+		holder = licchavi_06
+		government = feudal_government
+	}
+	316.1.1 = {
+		holder = licchavi_04
+	}
+	347.1.1 = {
+		holder = licchavi_03
+	}
+	360.1.1 = {
+		holder = licchavi_02
+	}
+	400.1.1 = {
+		holder = licchavi_01
+	}
+	425.1.1 = {
+		holder=247408 #Sankaradeva I
+	}
+	450.1.1 = {
+		holder=247409 #Dharmadeva
+	}
+	464.1.1 = {
+		holder=247410 #Manadeva I
+	}
+	505.1.1 = {
+		holder=247411 #Mahideva
+	}
+	506.1.1 = {
+		holder=247412 #Vasantadeva
+	}
+	532.1.1 = {
+		holder=247413 #Manudeva
+	}
+	571.1.1={
+		holder = 247000
+		liege="k_guge"
+	}
+	608.1.1={
+		holder = 247001
+	}
+	625.1.1={
+		liege="d_kurmanchal"
+		holder=247478 #Vashudev
+	}#Zhangzhung conquered by Tibet (Katyuri vassals)
+	658.1.1 = {
+		holder=247479 #Ashokdeva
+	}
+	684.1.1 = {
+		holder=247480 #Rawatdeva
+	}
+	716.1.1 = {
+		holder=247481 #Basudeva
+	}
+
+}
+
+
+c_kaski = {
+	#Licchavi Dynasty
+	289.1.1 = {
+		holder = licchavi_06
+		government = feudal_government
+	}
+	316.1.1 = {
+		holder = licchavi_04
+	}
+	347.1.1 = {
+		holder = licchavi_03
+	}
+	360.1.1 = {
+		holder = licchavi_02
+	}
+	400.1.1 = {
+		holder = licchavi_01
+	}
+	425.1.1 = {
+		holder=247408 #Sankaradeva I
+	}
+	450.1.1 = {
+		holder=247409 #Dharmadeva
+	}
+	464.1.1 = {
+		holder=247410 #Manadeva I
+	}
+	505.1.1 = {
+		holder=247411 #Mahideva
+	}
+	506.1.1 = {
+		holder=247412 #Vasantadeva
+	}
+	532.1.1 = {
+		holder=247413 #Manudeva
+	}
+	571.1.1={
+		holder = 247000
+		liege="k_guge"
+	}
+	608.1.1={
+		holder = 247001
+	}
+	625.1.1={
+		liege="d_kurmanchal"
+		holder=247478 #Vashudev
+	}#Zhangzhung conquered by Tibet (Katyuri vassals)
+	658.1.1 = {
+		holder=247479 #Ashokdeva
+	}
+	684.1.1 = {
+		holder=247480 #Rawatdeva
+	}
+	716.1.1 = {
+		holder=247481 #Basudeva
+	}
+
+}
+
+
+d_nepal = {
+	361.1.1 = { change_development_level = 6 }
+	476.1.1 = { change_development_level = 7 }
+	532.1.1 = { change_development_level = 8 }
+	632.1.1 = { change_development_level = 9 }
+	768.1.1 = { change_development_level = 10 }
+	#Licchavi Dynasty
+	289.1.1 = {
+		holder = licchavi_06
+		government = feudal_government
+	}
+	316.1.1 = {
+		holder = licchavi_04
+	}
+	347.1.1 = {
+		holder = licchavi_03
+	}
+	360.1.1 = {
+		holder = licchavi_02
+	}
+	400.1.1 = {
+		holder = licchavi_01
+	}
+	425.1.1 = {
+		holder=247408 #Sankaradeva I
+	}
+	450.1.1 = {
+		holder=247409 #Dharmadeva
+	}
+	464.1.1 = {
+		holder=247410 #Manadeva I
+	}
+	505.1.1 = {
+		holder=247411 #Mahideva
+	}
+	506.1.1 = {
+		holder=247412 #Vasantadeva
+	}
+	532.1.1 = {
+		holder=247413 #Manudeva
+	}
+	538.1.1 = {
+		holder=247414 #Vamanadeva
+	}
+	545.1.1 = {
+		holder=247415 #Ramadeva
+	}
+	550.1.1 = {
+		holder=247416 #Amaradeva
+	}
+	555.1.1 = {
+		holder=247417 #Gunakamadeva I
+	}
+	560.1.1 = {
+		holder=247418 #Ganadeva
+	}
+	567.1.1 = {
+		holder=247419 #Gangadeva
+	}
+	573.1.1 = {
+		holder=247420 #Manadeva II
+	}
+	590.1.1 = {
+		holder=247421 #Shivadeva I
+	}
+	604.1.1 = {
+		holder=247422 #Amshuvarman
+	}
+	621.1.1 = {
+		holder=247423 #Udayadeva I
+	}
+	624.1.1 = {
+		holder=247424 #Dhruvadeva
+	}
+	625.1.1 = {
+		holder=247425 #Bhimarjunadeva
+	}
+	643.1.1 = {
+		holder=247426 #Narendradeva I
+		liege="e_tibet"
+	}#Narendradeva seeks aid from Tibet to regain his fatherâ€™s throne
+	679.1.1 = {
+		holder=247427 #Shivadeva II
+	}
+	705.1.1 = {
+		holder=247428 #Jayadeva I
+	}
+	733.1.1 = {
+		holder=247429 #Sankaradeva II
+	}
+	749.1.1 = {
+		holder=247430 #Manadeva III
+	}
+	756.1.1 = {
+		holder=247431 #Baliraja
+	}
+
+}
+
+
+c_kathmandu = {
+	#Licchavi Dynasty
+	289.1.1 = {
+		holder = licchavi_06
+		government = feudal_government
+	}
+	316.1.1 = {
+		holder = licchavi_04
+	}
+	347.1.1 = {
+		holder = licchavi_03
+	}
+	360.1.1 = {
+		holder = licchavi_02
+	}
+	400.1.1 = {
+		holder = licchavi_01
+	}
+	425.1.1 = {
+		holder=247408 #Sankaradeva I
+	}
+	450.1.1 = {
+		holder=247409 #Dharmadeva
+	}
+	464.1.1 = {
+		holder=247410 #Manadeva I
+	}
+	505.1.1 = {
+		holder=247411 #Mahideva
+	}
+	506.1.1 = {
+		holder=247412 #Vasantadeva
+	}
+	532.1.1 = {
+		holder=247413 #Manudeva
+	}
+	538.1.1 = {
+		holder=247414 #Vamanadeva
+	}
+	545.1.1 = {
+		holder=247415 #Ramadeva
+	}
+	550.1.1 = {
+		holder=247416 #Amaradeva
+	}
+	555.1.1 = {
+		holder=247417 #Gunakamadeva I
+	}
+	560.1.1 = {
+		holder=247418 #Ganadeva
+	}
+	567.1.1 = {
+		holder=247419 #Gangadeva
+	}
+	573.1.1 = {
+		holder=247420 #Manadeva II
+	}
+	590.1.1 = {
+		holder=247421 #Shivadeva I
+	}
+	604.1.1 = {
+		holder=247422 #Amshuvarman
+	}
+	621.1.1 = {
+		holder=247423 #Udayadeva I
+	}
+	624.1.1 = {
+		holder=247424 #Dhruvadeva
+	}
+	625.1.1 = {
+		holder=247425 #Bhimarjunadeva
+	}
+	643.1.1 = {
+		holder=247426 #Narendradeva I
+	}#Narendradeva seeks aid from Tibet to regain his fatherâ€™s throne
+	679.1.1 = {
+		holder=247427 #Shivadeva II
+	}
+	705.1.1 = {
+		holder=247428 #Jayadeva I
+	}
+	733.1.1 = {
+		holder=247429 #Sankaradeva II
+	}
+	749.1.1 = {
+		holder=247430 #Manadeva III
+	}
+	756.1.1 = {
+		holder=247431 #Baliraja
+	}
+}
+
+
+c_bhaktapur = {
+	#Licchavi Dynasty
+	289.1.1 = {
+		holder = licchavi_06
+		government = feudal_government
+		liege = k_himalaya
+	}
+	316.1.1 = {
+		holder = licchavi_04
+	}
+	347.1.1 = {
+		holder = licchavi_03
+	}
+	360.1.1 = {
+		holder = licchavi_02
+	}
+	400.1.1 = {
+		holder = licchavi_01
+	}
+	425.1.1 = {
+		holder=247408 #Sankaradeva I
+	}
+	450.1.1 = {
+		holder=247409 #Dharmadeva
+	}
+	464.1.1 = {
+		holder=247410 #Manadeva I
+	}
+	505.1.1 = {
+		holder=247411 #Mahideva
+	}
+	506.1.1 = {
+		holder=247412 #Vasantadeva
+	}
+	# 532.1.1 = {
+	# 	holder=247413 #Manudeva
+	# }
+	532.1.1 = {
+		holder = newari_misc_001
+	}
+	538.1.1 = {
+		holder=247414 #Vamanadeva
+	}
+	545.1.1 = {
+		holder=247415 #Ramadeva
+	}
+	550.1.1 = {
+		holder=247416 #Amaradeva
+	}
+	555.1.1 = {
+		holder=247417 #Gunakamadeva I
+	}
+	560.1.1 = {
+		holder=247418 #Ganadeva
+	}
+	567.1.1 = {
+		holder=247419 #Gangadeva
+	}
+	573.1.1 = {
+		holder=247420 #Manadeva II
+	}
+	590.1.1 = {
+		holder=247421 #Shivadeva I
+	}
+	604.1.1 = {
+		holder=247422 #Amshuvarman
+	}
+	621.1.1 = {
+		holder=247423 #Udayadeva I
+	}
+	624.1.1 = {
+		holder=247424 #Dhruvadeva
+	}
+	625.1.1 = {
+		holder=247425 #Bhimarjunadeva
+	}
+	643.1.1 = {
+		holder=247426 #Narendradeva I
+	}#Narendradeva seeks aid from Tibet to regain his fatherâ€™s throne
+	679.1.1 = {
+		holder=247427 #Shivadeva II
+	}
+	705.1.1 = {
+		holder=247428 #Jayadeva I
+	}
+	733.1.1 = {
+		holder=247429 #Sankaradeva II
+	}
+	749.1.1 = {
+		holder=247430 #Manadeva III
+	}
+	756.1.1 = {
+		holder=247431 #Baliraja
+	}
+}
+
+
+c_janakpur = {
+	#Licchavi Dynasty
+	289.1.1 = {
+		holder = licchavi_06
+		government = feudal_government
+		liege = k_himalaya
+	}
+	316.1.1 = {
+		holder = licchavi_04
+	}
+	347.1.1 = {
+		holder = licchavi_03
+	}
+	360.1.1 = {
+		holder = licchavi_02
+	}
+	400.1.1 = {
+		holder = licchavi_01
+	}
+	425.1.1 = {
+		holder=247408 #Sankaradeva I
+	}
+	450.1.1 = {
+		holder=247409 #Dharmadeva
+	}
+	464.1.1 = {
+		holder=247410 #Manadeva I
+	}
+	505.1.1 = {
+		holder=247411 #Mahideva
+	}
+	506.1.1 = {
+		holder=247412 #Vasantadeva
+	}
+	# 532.1.1 = {
+	# 	holder=247413 #Manudeva
+	# }
+	532.1.1 = {
+		holder = newari_misc_001
+	}
+	538.1.1 = {
+		holder=247414 #Vamanadeva
+	}
+	545.1.1 = {
+		holder=247415 #Ramadeva
+	}
+	550.1.1 = {
+		holder=247416 #Amaradeva
+	}
+	555.1.1 = {
+		holder=247417 #Gunakamadeva I
+	}
+	560.1.1 = {
+		holder=247418 #Ganadeva
+	}
+	567.1.1 = {
+		holder=247419 #Gangadeva
+	}
+	573.1.1 = {
+		holder=247420 #Manadeva II
+	}
+	590.1.1 = {
+		holder=247421 #Shivadeva I
+	}
+	604.1.1 = {
+		holder=247422 #Amshuvarman
+	}
+	621.1.1 = {
+		holder=247423 #Udayadeva I
+	}
+	624.1.1 = {
+		holder=247424 #Dhruvadeva
+	}
+	625.1.1 = {
+		holder=247425 #Bhimarjunadeva
+	}
+	643.1.1 = {
+		holder=247426 #Narendradeva I
+	}#Narendradeva seeks aid from Tibet to regain his fatherâ€™s throne
+	679.1.1 = {
+		holder=247427 #Shivadeva II
+	}
+	705.1.1 = {
+		holder=247428 #Jayadeva I
+	}
+	733.1.1 = {
+		holder=247429 #Sankaradeva II
+	}
+	749.1.1 = {
+		holder=247430 #Manadeva III
+	}
+	756.1.1 = {
+		holder=247431 #Baliraja
+	}
+}
+
+
+d_limbuwan = {
+	361.1.1 = { change_development_level = 1 }
+	532.1.1 = { change_development_level = 2 }
+	768.1.1 = { change_development_level = 3 }
+	361.1.1 = {
+		holder = licchavi_021
+		government = feudal_government
+		liege = k_himalaya
+	}
+	476.1.1 = {
+		holder = licchavi_07
+	}
+	532.1.1 = {
+		holder = kirati_001
+	}
+	643.1.1 = {
+		liege="e_tibet"
+	}
+	#Mung Mawrong Hang
+	760.1.1 = {
+		holder=304000 #Mung Mawrong Hang
+	}
+
+}
+
+
+c_ilam = {
+	361.1.1 = {
+		holder = licchavi_021
+		government = feudal_government
+	}
+	476.1.1 = {
+		holder = licchavi_07
+	}
+	760.1.1 = {
+		liege="d_limbuwan"
+	}
+	#Mung Mawrong Hang
+	760.1.1 = {
+		holder=304000 #Mung Mawrong Hang
+	}
+}
+
+
+c_yangwarok = {
+	361.1.1 = {
+		holder = licchavi_021
+		government = feudal_government
+	}
+	476.1.1 = {
+		holder = licchavi_07
+	}
+	760.1.1 = {
+		liege="d_limbuwan"
+	}
+	#Mung Mawrong Hang
+	760.1.1 = {
+		holder=304000 #Mung Mawrong Hang
+	}
+}
+
+c_khotang = {
+	## Lichavis
+	361.1.1 = {
+		holder = licchavi_021
+		government = feudal_government
+	}
+	476.1.1 = {
+		holder = licchavi_07
+	}
+	760.1.1 = {
+		liege="d_limbuwan"
+	}
+	#Mung Mawrong Hang
+	760.1.1 = {
+		holder=304000 #Mung Mawrong Hang
+	}
+}
+

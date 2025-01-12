@@ -1,0 +1,605 @@
+﻿
+d_pommerania = {
+	532.1.1 = { change_development_level = 1 }
+	768.1.1 = { change_development_level = 2 }
+}
+
+
+c_stettin = {
+	361.1.1 = { change_development_level = 2 }
+	532.1.1 = { change_development_level = 3 }
+	768.1.1 = { change_development_level = 4 }
+	
+	###361-532 Rugian Tribes
+	361.1.1 = {
+		government = tribal_government
+		holder = rugian_13
+	}
+	395.1.1 = {
+		government = tribal_government
+		holder = rugian_14
+	}
+	476.1.1 = {
+		government = tribal_government
+		holder = rugian_15
+	}
+	530.1.1 = {
+		holder = wendish_02
+	}
+	###867 Pomeranian tribes
+	500.1.1 = {
+		liege = 0
+
+		government = tribal_government
+	}
+
+}
+
+
+c_kolobrzeg = {
+	532.1.1 = { change_development_level = 1 }
+	768.1.1 = { change_development_level = 2 }
+	
+	###361-532 Rugian Tribes
+	361.1.1 = {
+		government = tribal_government
+		holder = rugian_13
+	}
+	395.1.1 = {
+		government = tribal_government
+		holder = rugian_14
+	}
+	476.1.1 = {
+		government = tribal_government
+		holder = rugian_15
+	}
+	530.1.1 = {
+		holder = wendish_02
+	}
+	###867 Pommeranian tribes
+	500.1.1 = {
+		liege = 0
+	}
+}
+
+
+c_soldin = {
+	###361-768 Wendish Tribes
+	361.1.1 = {
+		government = tribal_government
+		holder = pomerania_01
+	}
+	395.1.1 = {
+		government = tribal_government
+		holder = pomerania_02
+	}
+	476.1.1 = {
+		government = tribal_government
+		holder = pomerania_03
+	}
+	530.1.1 = {
+		holder = wendish_02
+	}
+	###867 Pommeranian tribes
+	500.1.1 = {
+		liege = 0
+
+		government = tribal_government
+	}
+}
+
+
+c_cammin = {
+	532.1.1 = { change_development_level = 1 }
+	768.1.1 = { change_development_level = 2 }
+	
+	###361-532 Rugian Tribes
+	361.1.1 = {
+		government = tribal_government
+		holder = rugian_13
+	}
+	395.1.1 = {
+		government = tribal_government
+		holder = rugian_14
+	}
+	476.1.1 = {
+		government = tribal_government
+		holder = rugian_15
+	}
+	530.1.1 = {
+		holder = vidivari_01
+	}
+}
+
+
+c_pila = {
+	###361-768 Wendish Tribes
+	361.1.1 = {
+		government = tribal_government
+		holder = pomerania_01
+	}
+	395.1.1 = {
+		government = tribal_government
+		holder = pomerania_02
+	}
+	476.1.1 = {
+		government = tribal_government
+		holder = pomerania_03
+	}
+	530.1.1 = {
+		holder = wendish_02
+	}
+	###867 Pommeranian tribes
+	500.1.1 = {
+		liege = 0
+
+		government = tribal_government
+	}
+
+}
+
+
+c_landsberg = {
+	###361-768 Wendish Tribes
+	361.1.1 = {
+		government = tribal_government
+		holder = pomerania_01
+	}
+	395.1.1 = {
+		government = tribal_government
+		holder = pomerania_02
+	}
+	476.1.1 = {
+		government = tribal_government
+		holder = pomerania_03
+	}
+	530.1.1 = {
+		holder = wendish_02
+	}
+	###867 Pommeranian tribes
+	500.1.1 = {
+		liege = 0
+
+		government = tribal_government
+	}
+
+}
+
+
+d_nordmark = {
+	361.1.1 = { change_development_level = 0 }
+	532.1.1 = { change_development_level = 1 }
+	768.1.1 = { change_development_level = 2 }
+	
+	# Kingdom of the Varini
+	361.1.1 = {
+		holder = varini_01
+		government = tribal_government
+	}
+	380.1.1 = {
+		holder = varini_02
+	}
+	409.1.1 = {
+		holder = varini_03
+	}
+	460.1.1 = {
+		holder = varini_04
+	}
+	510.1.1 = {
+		holder = varini_05
+	}
+	540.1.1 = {
+		holder = varini_06
+	}
+	#750.1.1 = {
+	#	holder = 194062
+	#}
+}
+
+
+c_mecklenburg = {
+	
+	# Kingdom of the Varini
+	361.1.1 = {
+		holder = varini_01
+		government = tribal_government
+	}
+	380.1.1 = {
+		holder = varini_02
+	}
+	409.1.1 = {
+		holder = varini_03
+	}
+	460.1.1 = {
+		holder = varini_04
+	}
+	510.1.1 = {
+		holder = varini_05
+	}
+	540.1.1 = {
+		holder = varini_06
+	}
+}
+c_wolgast = {
+	
+	# Kingdom of the Varini
+	361.1.1 = {
+		holder = varini_01
+		government = tribal_government
+	}
+	380.1.1 = {
+		holder = varini_02
+	}
+	409.1.1 = {
+		holder = varini_03
+	}
+	460.1.1 = {
+		holder = varini_04
+	}
+	510.1.1 = {
+		holder = varini_05
+	}
+	540.1.1 = {
+		holder = varini_06
+	}
+	###867 Pommeranian tribes
+	500.1.1 = {
+		liege = 0
+
+		government = tribal_government
+	}
+}
+
+
+c_rugen = {
+	
+	# Kingdom of the Varini
+	361.1.1 = {
+		holder = varini_01
+		government = tribal_government
+	}
+	380.1.1 = {
+		holder = varini_02
+	}
+	409.1.1 = {
+		holder = varini_03
+	}
+	460.1.1 = {
+		holder = varini_04
+	}
+	510.1.1 = {
+		holder = varini_05
+	}
+	540.1.1 = {
+		holder = varini_06
+	}
+	###867 Pommeranian tribes
+	500.1.1 = {
+		liege = 0
+
+		government = tribal_government
+	}
+}
+
+
+c_rostock = {
+	
+	# Kingdom of the Varini
+	361.1.1 = {
+		holder = varini_01
+		government = tribal_government
+	}
+	380.1.1 = {
+		holder = varini_02
+	}
+	409.1.1 = {
+		holder = varini_03
+	}
+	460.1.1 = {
+		holder = varini_04
+	}
+	510.1.1 = {
+		holder = varini_05
+	}
+	540.1.1 = {
+		holder = varini_06
+	}
+	###867 Pommeranian tribes
+	500.1.1 = {
+		liege = 0
+	}
+}
+
+
+c_werle = {
+	
+	# Kingdom of the Varini
+	361.1.1 = {
+		holder = varini_01
+		government = tribal_government
+	}
+	380.1.1 = {
+		holder = varini_02
+	}
+	409.1.1 = {
+		holder = varini_03
+	}
+	460.1.1 = {
+		holder = varini_04
+	}
+	510.1.1 = {
+		holder = varini_05
+	}
+	540.1.1 = {
+		holder = varini_06
+	}
+	###867 Pommeranian tribes
+	500.1.1 = {
+		liege = 0
+	}
+}
+
+
+d_pomerelia = {
+	361.1.1 = { change_development_level = 0 }
+	532.1.1 = { change_development_level = 1 }
+	768.1.1 = { change_development_level = 2 }
+}
+
+
+c_danzig = {
+	361.1.1 = { change_development_level = 1 }
+	532.1.1 = { change_development_level = 2 }
+	768.1.1 = { change_development_level = 3 }
+	
+	### Gothic remnants
+	361.1.1 = {
+		holder = gothones_01
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = gothones_02
+	}
+	421.1.1 = {
+		holder = arngrymr_23
+	}
+	446.1.1 = {
+		holder = arngrymr_26
+	}
+	475.1.1 = {
+		holder = arngrymr_29
+	}
+	530.1.1 = {
+		holder = vidivari_01
+	}
+}
+
+
+c_slupsk = {
+	### Gothic remnants
+	361.1.1 = {
+		holder = gothones_01
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = gothones_02
+	}
+	421.1.1 = {
+		holder = arngrymr_23
+	}
+	446.1.1 = {
+		holder = arngrymr_26
+	}
+	475.1.1 = {
+		holder = arngrymr_29
+	}
+	530.1.1 = {
+		holder = vidivari_01
+	}
+}
+
+
+c_miastko = {
+	### Gothic remnants
+	361.1.1 = {
+		holder = gothones_04
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = gothones_02
+	}
+	421.1.1 = {
+		holder = arngrymr_23
+	}
+	446.1.1 = {
+		holder = arngrymr_26
+	}
+	475.1.1 = {
+		holder = pomerania_04
+	}
+	530.1.1 = {
+		holder = vidivari_01
+	}
+}
+
+
+c_berent = {
+	### Gothic remnants
+	361.1.1 = {
+		holder = gothones_04
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = gothones_02
+	}
+	421.1.1 = {
+		holder = arngrymr_23
+	}
+	446.1.1 = {
+		holder = arngrymr_26
+	}
+	476.1.1 = {
+		holder = pomerania_04
+	}
+	530.1.1 = {
+		holder = vidivari_01
+	}
+	860.1.1 = {
+		holder = 302068
+	}
+}
+
+
+d_ostmark = {
+	361.1.1 = { change_development_level = 0 }
+	532.1.1 = { change_development_level = 1 }
+	768.1.1 = { change_development_level = 2 }
+	
+	## Lemovi
+	361.1.1 = {
+		holder = lemovi_01
+		government = tribal_government
+	}
+	382.1.1 = {
+		holder = lemovi_02
+	}
+	423.1.1 = {
+		holder = lemovi_03
+	}
+	456.1.1 = {
+		holder = lemovi_04
+	}
+}
+
+
+c_brandenburg = {
+
+	
+	## Lemovi
+	361.1.1 = {
+		holder = lemovi_01
+		government = tribal_government
+	}
+	382.1.1 = {
+		holder = lemovi_02
+	}
+	423.1.1 = {
+		holder = lemovi_03
+	}
+	456.1.1 = {
+		holder = lemovi_04
+	}
+	530.1.1 = {
+		holder = wendish_01
+	}
+	#867 Polabian tribes
+	768.1.1 = {
+		holder = 168600
+		liege = 0
+
+		government = tribal_government
+	}
+
+}
+
+
+c_ruppin = {
+	
+	## Lemovi
+	361.1.1 = {
+		holder = lemovi_01
+		government = tribal_government
+	}
+	382.1.1 = {
+		holder = lemovi_02
+	}
+	423.1.1 = {
+		holder = lemovi_03
+	}
+	456.1.1 = {
+		holder = lemovi_04
+	}
+	530.1.1 = {
+		holder = wendish_01
+	}
+	#867 Polabian tribes
+	768.1.1 = {
+		holder = 168600
+		liege = 0
+
+		government = tribal_government
+	}
+
+}
+
+
+c_berlin = {
+	
+	## Lemovi
+	361.1.1 = {
+		holder = lemovi_01
+		government = tribal_government
+	}
+	382.1.1 = {
+		holder = lemovi_02
+	}
+	423.1.1 = {
+		holder = lemovi_03
+	}
+	456.1.1 = {
+		holder = lemovi_04
+	}
+	530.1.1 = {
+		holder = wendish_01
+	}
+}
+
+
+c_havelberg = {
+	
+	## Lemovi
+	361.1.1 = {
+		holder = lemovi_01
+		government = tribal_government
+	}
+	382.1.1 = {
+		holder = lemovi_02
+	}
+	423.1.1 = {
+		holder = lemovi_03
+	}
+	456.1.1 = {
+		holder = lemovi_04
+	}
+	530.1.1 = {
+		holder = wendish_01
+	}
+	#867 Polabian tribes
+	768.1.1 = {
+		holder = 168600
+		liege = 0
+	}
+}
+
+
+c_prenzlau = {
+	
+	## Lemovi
+	361.1.1 = {
+		holder = lemovi_01
+		government = tribal_government
+	}
+	382.1.1 = {
+		holder = lemovi_02
+	}
+	423.1.1 = {
+		holder = lemovi_03
+	}
+	456.1.1 = {
+		holder = lemovi_04
+	}
+	530.1.1 = {
+		holder = wendish_01
+	}
+}
+

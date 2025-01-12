@@ -1,0 +1,73 @@
+﻿
+three_year_playable_pulse = {
+	on_actions = {
+		delay = { days = { 13 333 } }
+		VIET_celtic_events_tri_yearly_pulse
+		delay = { days = { 13 333 } }
+		britannia_flavor_events_tri_yearly_pulse
+	}
+}
+
+
+# VIET Celtic Flavor Events
+VIET_celtic_events_tri_yearly_pulse = {
+	trigger = {
+		basic_is_valid_for_yearly_events_trigger = yes
+		religion = religion:druidism_religion
+		#is_RICE_loaded = no
+	}
+	random_events = {
+		chance_of_no_event = {
+			value = 30
+		}
+		
+		1500 = 0
+		
+		10 = VIETceltic.0001		# Holy spring sacred to Celtic pagans discovered nearby
+		10 = VIETceltic.0002		# Make an offering of a shield and helmet to the waters
+		10 = VIETceltic.0003		# Servant caught trying to curse another through Sulis
+		10 = VIETceltic.0004		# Come across a tiny shrine to Sirona on the road
+		10 = VIETceltic.0005		# Make an offering to Sequana or not?
+		10 = VIETceltic.0006		# Reading about Romans vs Celts
+		10 = VIETceltic.0007		# Worship Belatucadros and Cocidius like the common soldiers?
+		10 = VIETceltic.0008		# Worship Vosegus
+		10 = VIETceltic.0009		# Nuts are a symbol of Vosegus
+		10 = VIETceltic.0010		# Eye irritation - ask for help from Belenus
+		10 = VIETceltic.0011		# Folklore about Belenus helping protect a town
+		10 = VIETceltic.0012		# Dedicate an altar to Boann
+		10 = VIETceltic.0013		# Dreamt of Manannán
+		10 = VIETceltic.0014		# Shrine to Atepomarus
+		10 = VIETceltic.0015		# Statues of Sucellus and Nantosuelta given as gifts
+		10 = VIETceltic.0016		# Reflecting on Ogmios
+		10 = VIETceltic.0017		# Boar feast
+		10 = VIETceltic.0018		# Shoemakers make offering to Lugh
+		10 = VIETceltic.0019		# Make votive offering to Lugh
+		10 = VIETceltic.0020		# Sacred tree nearby should be given offerings
+		10 = VIETceltic.0021		# Offering to Taranis by throwing a little stone wheel into a river
+		
+	}
+}
+
+
+# Britannia generic flavor events
+britannia_flavor_events_tri_yearly_pulse = {
+	trigger = {
+		basic_is_valid_for_yearly_events_trigger = yes
+		any_held_title = {
+			tier = tier_county
+			any_county_province = {
+				geographical_region = world_europe_west_britannia	
+			}
+		}	
+	}
+	random_events = {
+		chance_of_no_event = {
+			value = 30
+		}
+		
+		1000 = 0
+		
+		10 = britannia_flavor.0001		# Discover a Kentish Ragstone = Dragons!
+		
+	}
+}

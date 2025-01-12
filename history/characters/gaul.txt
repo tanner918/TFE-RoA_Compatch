@@ -1,0 +1,39 @@
+﻿gauls_01 = {
+	name = "Alan"
+	religion = "celto_hellenic_syncretism"
+	culture = "gaul"
+	dynasty = osismii
+	320.1.1 = {
+		birth = "320.1.1"
+	}
+	370.1.1 = {
+		death = "370.1.1"
+	}
+}
+### Africanus
+africanus_01 = {
+	name = "Iulius"
+	religion = "celto_hellenic_syncretism"
+	culture = "gaul"
+	dynasty = africanus_dynasty
+	3.1.12 = {
+		birth = "3.1.12"
+	}
+	40.1.1 = {
+		death = "40.1.1"
+	}
+}
+africanus_02 = {
+	name = "Iulia"
+	religion = "celto_hellenic_syncretism"
+	culture = "gaul"
+	dynasty = africanus_dynasty
+	female = yes
+	father = africanus_01
+	30.6.3 = {
+		birth = "30.6.3"
+	}
+	60.1.1 = {
+		death = "60.1.1"
+	}
+}

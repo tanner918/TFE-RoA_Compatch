@@ -1,0 +1,319 @@
+﻿
+k_volga_bulgaria = {
+	867.1.1 = { change_development_level = 0 }
+	
+}
+
+
+d_volga_bulgaria = {
+	20.1.1 = {
+		government = tribal_government
+	}
+	632.1.1 = {
+		holder = 159117
+	}
+	665.1.1 = {
+		holder = 159127
+	}
+	680.1.1 = {
+		holder = 159119
+	}
+	
+	#Tributary of Khazaria
+	702.1.2 = {
+		holder = 159134 #Kubar
+		liege = e_caspian-pontic_steppe
+	}
+	715.1.2 = {
+		holder = 159133 #Sevar
+	}
+	735.1.2 = {
+		holder = 159132 #Toktu
+	}
+}
+
+
+c_bolghar = {
+	867.1.1 = { change_development_level = 7 }
+	
+	20.1.1 = {
+		government = tribal_government
+	}
+	361.1.1 = {
+		holder = mari_04
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = mari_05
+	}
+	476.1.1 = {
+		holder = mari_06
+	}
+	632.1.1 = {
+		holder = 159117
+		liege = d_volga_bulgaria
+	}
+	665.1.1 = {
+		holder = 159127
+	}
+	680.1.1 = {
+		holder = 159119
+	}
+	
+	#Tributary of Khazaria
+	702.1.2 = {
+		holder = 159134 #Kubar
+	}
+	715.1.2 = {
+		holder = 159133 #Sevar
+	}
+	735.1.2 = {
+		holder = 159132 #Toktu
+	}
+}
+
+
+c_ashli = {
+	20.1.1 = {
+		government = tribal_government
+	}
+	632.1.1 = {
+		holder = 159117
+		liege = d_volga_bulgaria
+	}
+	665.1.1 = {
+		holder = 159127
+	}
+	680.1.1 = {
+		holder = 159119
+	}
+	
+	#Tributary of Khazaria
+	702.1.2 = {
+		holder = 159134 #Kubar
+	}
+	715.1.2 = {
+		holder = 159133 #Sevar
+	}
+	735.1.2 = {
+		holder = 159132 #Toktu
+	}
+}
+
+
+c_yar-calli = {
+	361.1.1 = {
+		holder = komi_06
+		government = tribal_government
+	}
+	395.1.17 = {
+		holder = mari_07
+	}
+	476.1.1 = {
+		holder = mari_08
+	}
+}
+
+
+c_karabolam = {
+	20.1.1 = {
+		government = tribal_government
+	}
+	361.1.1 = {
+		holder = mari_04
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = mari_05
+	}
+	476.1.1 = {
+		holder = mari_06
+	}
+	632.1.1 = {
+		holder = 159117
+		liege = d_volga_bulgaria
+	}
+	665.1.1 = {
+		holder = 159127
+	}
+	680.1.1 = {
+		holder = 159119
+	}
+	
+	#Tributary of Khazaria
+	702.1.2 = {
+		holder = 159134 #Kubar
+	}
+	715.1.2 = {
+		holder = 159133 #Sevar
+	}
+	735.1.2 = {
+		holder = 159132 #Toktu
+	}
+}
+
+
+c_samar_VB = {
+	361.1.1 = {
+		holder = komi_06
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = mari_07
+	}
+	476.1.1 = {
+		holder = mari_08
+	}
+}
+
+
+c_kazan = {
+	361.1.1 = {
+		holder = mari_04
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = mari_05
+	}
+	476.1.1 = {
+		holder = mari_06
+	}
+	#Maris
+	750.1.1 = {
+		holder = 194162
+		government = tribal_government
+	}
+}
+
+
+c_yoshkar-ola = {
+	361.1.1 = {
+		holder = mari_01
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = mari_02
+	}
+	476.1.1 = {
+		holder = mari_03
+	}
+	#Maris
+	750.1.1 = {
+		holder = 194162
+		government = tribal_government
+	}
+}
+
+
+c_elabuga = {
+	361.1.1 = {
+		holder = komi_12
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = mari_13
+	}
+	476.1.1 = {
+		holder = mari_14
+	}
+	# c_perm
+	768.1.1 = {
+		holder = 188803
+		government = tribal_government
+	}
+}
+
+
+c_jalmat = {
+	361.1.1 = {
+		holder = komi_06
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = mari_07
+	}
+	476.1.1 = {
+		holder = mari_08
+	}
+}
+
+
+c_belebey = {
+	361.1.1 = {
+		holder = komi_09
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = mari_10
+	}
+	476.1.1 = {
+		holder = mari_11
+	}
+}
+
+
+c_bugurslan = {
+	361.1.1 = {
+		holder = komi_09
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = mari_10
+	}
+	476.1.1 = {
+		holder = mari_11
+	}
+}
+
+
+c_salavat = {
+	361.1.1 = {
+		holder = komi_09
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = mari_10
+	}
+	476.1.1 = {
+		holder = mari_11
+	}
+}
+
+
+c_martyuba = {
+	361.1.1 = {
+		holder = mari_01
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = mari_02
+	}
+	476.1.1 = {
+		holder = mari_03
+	}
+	#Maris
+	750.1.1 = {
+		holder = 194162
+		government = tribal_government
+	}
+}
+
+
+c_cykma = {
+	361.1.1 = {
+		holder = mari_01
+		government = tribal_government
+	}
+	395.1.1 = {
+		holder = mari_02
+	}
+	476.1.1 = {
+		holder = mari_03
+	}
+	#Maris
+	750.1.1 = {
+		holder = 194162
+		government = tribal_government
+	}
+}
+

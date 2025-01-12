@@ -1,0 +1,124 @@
+﻿#############################################
+# CCU Patcher
+# by Vertimnus
+# This file was compiled by a machine.
+# It should never be manually edited.
+#############################################
+
+ccu_initialize_culture = {
+
+	if = { limit = { has_cultural_parameter = heritage_group_arabian } set_variable = { name = heritage_group value = 0 } }
+	else_if = { limit = { has_cultural_parameter = heritage_group_balkan } set_variable = { name = heritage_group value = 1 } }
+	else_if = { limit = { has_cultural_parameter = heritage_group_balto_slavic } set_variable = { name = heritage_group value = 2 } }
+	else_if = { limit = { has_cultural_parameter = heritage_group_burmese } set_variable = { name = heritage_group value = 3 } }
+	else_if = { limit = { has_cultural_parameter = heritage_group_byzantine } set_variable = { name = heritage_group value = 4 } }
+	else_if = { limit = { has_cultural_parameter = heritage_group_celtic } set_variable = { name = heritage_group value = 5 } }
+	else_if = { limit = { has_cultural_parameter = heritage_group_central_african } set_variable = { name = heritage_group value = 6 } }
+	else_if = { limit = { has_cultural_parameter = heritage_group_chinese } set_variable = { name = heritage_group value = 7 } }
+	else_if = { limit = { has_cultural_parameter = heritage_group_dravidian } set_variable = { name = heritage_group value = 8 } }
+	else_if = { limit = { has_cultural_parameter = heritage_group_east_african } set_variable = { name = heritage_group value = 9 } }
+	else_if = { limit = { has_cultural_parameter = heritage_group_finnic } set_variable = { name = heritage_group value = 10 } }
+	else_if = { limit = { has_cultural_parameter = heritage_group_germanic } set_variable = { name = heritage_group value = 11 } }
+	else_if = { limit = { has_cultural_parameter = heritage_group_indo_aryan } set_variable = { name = heritage_group value = 12 } }
+	else_if = { limit = { has_cultural_parameter = heritage_group_iranian } set_variable = { name = heritage_group value = 13 } }
+	else_if = { limit = { has_cultural_parameter = heritage_group_latin } set_variable = { name = heritage_group value = 14 } }
+	else_if = { limit = { has_cultural_parameter = heritage_group_levantine } set_variable = { name = heritage_group value = 15 } }
+	else_if = { limit = { has_cultural_parameter = heritage_group_mongolic } set_variable = { name = heritage_group value = 16 } }
+	else_if = { limit = { has_cultural_parameter = heritage_group_north_african } set_variable = { name = heritage_group value = 17 } }
+	else_if = { limit = { has_cultural_parameter = heritage_group_paleo_siberian } set_variable = { name = heritage_group value = 18 } }
+	else_if = { limit = { has_cultural_parameter = heritage_group_tibetan } set_variable = { name = heritage_group value = 19 } }
+	else_if = { limit = { has_cultural_parameter = heritage_group_turkic } set_variable = { name = heritage_group value = 20 } }
+	else_if = { limit = { has_cultural_parameter = heritage_group_ugric } set_variable = { name = heritage_group value = 21 } }
+	else_if = { limit = { has_cultural_parameter = heritage_group_west_african } set_variable = { name = heritage_group value = 22 } }
+
+
+	if = { limit = { has_cultural_parameter = heritage_family_african } set_variable = { name = heritage_family value = 0 } }
+	else_if = { limit = { has_cultural_parameter = heritage_family_american } set_variable = { name = heritage_family value = 1 } }
+	else_if = { limit = { has_cultural_parameter = heritage_family_east_asian } set_variable = { name = heritage_family value = 2 } }
+	else_if = { limit = { has_cultural_parameter = heritage_family_mediterranean } set_variable = { name = heritage_family value = 3 } }
+	else_if = { limit = { has_cultural_parameter = heritage_family_middle_eastern } set_variable = { name = heritage_family value = 4 } }
+	else_if = { limit = { has_cultural_parameter = heritage_family_northern } set_variable = { name = heritage_family value = 5 } }
+	else_if = { limit = { has_cultural_parameter = heritage_family_persian } set_variable = { name = heritage_family value = 6 } }
+	else_if = { limit = { has_cultural_parameter = heritage_family_south_asian } set_variable = { name = heritage_family value = 7 } }
+	else_if = { limit = { has_cultural_parameter = heritage_family_steppe } set_variable = { name = heritage_family value = 8 } }
+
+
+	if = { limit = { has_cultural_parameter = language_group_abazgi } set_variable = { name = language_group value = 0 } }
+	else_if = { limit = { has_cultural_parameter = language_group_anatolian } set_variable = { name = language_group value = 1 } }
+	else_if = { limit = { has_cultural_parameter = language_group_armenian } set_variable = { name = language_group value = 2 } }
+	else_if = { limit = { has_cultural_parameter = language_group_ayneha } set_variable = { name = language_group value = 3 } }
+	else_if = { limit = { has_cultural_parameter = language_group_baltic } set_variable = { name = language_group value = 4 } }
+	else_if = { limit = { has_cultural_parameter = language_group_balto_finnic } set_variable = { name = language_group value = 5 } }
+	else_if = { limit = { has_cultural_parameter = language_group_basque } set_variable = { name = language_group value = 6 } }
+	else_if = { limit = { has_cultural_parameter = language_group_berber } set_variable = { name = language_group value = 7 } }
+	else_if = { limit = { has_cultural_parameter = language_group_celtic } set_variable = { name = language_group value = 8 } }
+	else_if = { limit = { has_cultural_parameter = language_group_chadic } set_variable = { name = language_group value = 9 } }
+	else_if = { limit = { has_cultural_parameter = language_group_cushitic } set_variable = { name = language_group value = 10 } }
+	else_if = { limit = { has_cultural_parameter = language_group_dacian } set_variable = { name = language_group value = 11 } }
+	else_if = { limit = { has_cultural_parameter = language_group_daco_thracian } set_variable = { name = language_group value = 12 } }
+	else_if = { limit = { has_cultural_parameter = language_group_egyptian } set_variable = { name = language_group value = 13 } }
+	else_if = { limit = { has_cultural_parameter = language_group_elamite } set_variable = { name = language_group value = 14 } }
+	else_if = { limit = { has_cultural_parameter = language_group_etruscan } set_variable = { name = language_group value = 15 } }
+	else_if = { limit = { has_cultural_parameter = language_group_germanic } set_variable = { name = language_group value = 16 } }
+	else_if = { limit = { has_cultural_parameter = language_group_gondi_kuvi } set_variable = { name = language_group value = 17 } }
+	else_if = { limit = { has_cultural_parameter = language_group_hellenic } set_variable = { name = language_group value = 18 } }
+	else_if = { limit = { has_cultural_parameter = language_group_illyrian } set_variable = { name = language_group value = 19 } }
+	else_if = { limit = { has_cultural_parameter = language_group_indo_aryan } set_variable = { name = language_group value = 20 } }
+	else_if = { limit = { has_cultural_parameter = language_group_iranian } set_variable = { name = language_group value = 21 } }
+	else_if = { limit = { has_cultural_parameter = language_group_kartvelian } set_variable = { name = language_group value = 22 } }
+	else_if = { limit = { has_cultural_parameter = language_group_kru } set_variable = { name = language_group value = 23 } }
+	else_if = { limit = { has_cultural_parameter = language_group_kukish } set_variable = { name = language_group value = 24 } }
+	else_if = { limit = { has_cultural_parameter = language_group_kwa } set_variable = { name = language_group value = 25 } }
+	else_if = { limit = { has_cultural_parameter = language_group_lezgic } set_variable = { name = language_group value = 26 } }
+	else_if = { limit = { has_cultural_parameter = language_group_mon_khmer } set_variable = { name = language_group value = 27 } }
+	else_if = { limit = { has_cultural_parameter = language_group_mongolic } set_variable = { name = language_group value = 28 } }
+	else_if = { limit = { has_cultural_parameter = language_group_munda } set_variable = { name = language_group value = 29 } }
+	else_if = { limit = { has_cultural_parameter = language_group_north_dravidian } set_variable = { name = language_group value = 30 } }
+	else_if = { limit = { has_cultural_parameter = language_group_oghur } set_variable = { name = language_group value = 31 } }
+	else_if = { limit = { has_cultural_parameter = language_group_omotic } set_variable = { name = language_group value = 32 } }
+	else_if = { limit = { has_cultural_parameter = language_group_permic } set_variable = { name = language_group value = 33 } }
+	else_if = { limit = { has_cultural_parameter = language_group_phrygian } set_variable = { name = language_group value = 34 } }
+	else_if = { limit = { has_cultural_parameter = language_group_qiangic } set_variable = { name = language_group value = 35 } }
+	else_if = { limit = { has_cultural_parameter = language_group_romance } set_variable = { name = language_group value = 36 } }
+	else_if = { limit = { has_cultural_parameter = language_group_sami } set_variable = { name = language_group value = 37 } }
+	else_if = { limit = { has_cultural_parameter = language_group_savannas } set_variable = { name = language_group value = 38 } }
+	else_if = { limit = { has_cultural_parameter = language_group_semitic } set_variable = { name = language_group value = 39 } }
+	else_if = { limit = { has_cultural_parameter = language_group_senegambian } set_variable = { name = language_group value = 40 } }
+	else_if = { limit = { has_cultural_parameter = language_group_shaz_turkic } set_variable = { name = language_group value = 41 } }
+	else_if = { limit = { has_cultural_parameter = language_group_sinitic } set_variable = { name = language_group value = 42 } }
+	else_if = { limit = { has_cultural_parameter = language_group_slavic } set_variable = { name = language_group value = 43 } }
+	else_if = { limit = { has_cultural_parameter = language_group_sudanic } set_variable = { name = language_group value = 44 } }
+	else_if = { limit = { has_cultural_parameter = language_group_svan } set_variable = { name = language_group value = 45 } }
+	else_if = { limit = { has_cultural_parameter = language_group_tamil_kannada } set_variable = { name = language_group value = 46 } }
+	else_if = { limit = { has_cultural_parameter = language_group_telugu } set_variable = { name = language_group value = 47 } }
+	else_if = { limit = { has_cultural_parameter = language_group_tibeto_burman } set_variable = { name = language_group value = 48 } }
+	else_if = { limit = { has_cultural_parameter = language_group_tocharian } set_variable = { name = language_group value = 49 } }
+	else_if = { limit = { has_cultural_parameter = language_group_tubu } set_variable = { name = language_group value = 50 } }
+	else_if = { limit = { has_cultural_parameter = language_group_tungusic } set_variable = { name = language_group value = 51 } }
+	else_if = { limit = { has_cultural_parameter = language_group_ugric } set_variable = { name = language_group value = 52 } }
+	else_if = { limit = { has_cultural_parameter = language_group_volta } set_variable = { name = language_group value = 53 } }
+	else_if = { limit = { has_cultural_parameter = language_group_western_mande } set_variable = { name = language_group value = 54 } }
+	else_if = { limit = { has_cultural_parameter = language_group_yeniseian } set_variable = { name = language_group value = 55 } }
+
+
+	if = { limit = { has_cultural_parameter = language_family_afro_asiatic } set_variable = { name = language_family value = 0 } }
+	else_if = { limit = { has_cultural_parameter = language_family_atlantic_congo } set_variable = { name = language_family value = 1 } }
+	else_if = { limit = { has_cultural_parameter = language_family_austroasiatic } set_variable = { name = language_family value = 2 } }
+	else_if = { limit = { has_cultural_parameter = language_family_basque } set_variable = { name = language_family value = 3 } }
+	else_if = { limit = { has_cultural_parameter = language_family_dene_yeniseian } set_variable = { name = language_family value = 4 } }
+	else_if = { limit = { has_cultural_parameter = language_family_dravidian } set_variable = { name = language_family value = 5 } }
+	else_if = { limit = { has_cultural_parameter = language_family_elamite } set_variable = { name = language_family value = 6 } }
+	else_if = { limit = { has_cultural_parameter = language_family_indo_european } set_variable = { name = language_family value = 7 } }
+	else_if = { limit = { has_cultural_parameter = language_family_kartvelian } set_variable = { name = language_family value = 8 } }
+	else_if = { limit = { has_cultural_parameter = language_family_kru } set_variable = { name = language_family value = 9 } }
+	else_if = { limit = { has_cultural_parameter = language_family_lezgic } set_variable = { name = language_family value = 10 } }
+	else_if = { limit = { has_cultural_parameter = language_family_mande } set_variable = { name = language_family value = 11 } }
+	else_if = { limit = { has_cultural_parameter = language_family_mongolic } set_variable = { name = language_family value = 12 } }
+	else_if = { limit = { has_cultural_parameter = language_family_nilo_saharan } set_variable = { name = language_family value = 13 } }
+	else_if = { limit = { has_cultural_parameter = language_family_pontic } set_variable = { name = language_family value = 14 } }
+	else_if = { limit = { has_cultural_parameter = language_family_sino_tibetan } set_variable = { name = language_family value = 15 } }
+	else_if = { limit = { has_cultural_parameter = language_family_tungusic } set_variable = { name = language_family value = 16 } }
+	else_if = { limit = { has_cultural_parameter = language_family_turkic } set_variable = { name = language_family value = 17 } }
+	else_if = { limit = { has_cultural_parameter = language_family_tyrsenian } set_variable = { name = language_family value = 18 } }
+	else_if = { limit = { has_cultural_parameter = language_family_uralic } set_variable = { name = language_family value = 19 } }
+}

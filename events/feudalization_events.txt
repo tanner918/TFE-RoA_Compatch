@@ -1,0 +1,133 @@
+﻿namespace = feudalization
+
+feudalization.0001 = {
+	hidden = yes
+	trigger = {
+		AND = {
+			exists = culture
+			culture = {
+				has_innovation = innovation_feudalism
+			}
+			government_has_flag = government_is_roman
+			NOT = {
+				top_liege = {
+					has_imperial_laws = yes
+				}
+			}
+			any_sub_realm_county = {
+				title_province = {
+					has_holding_type = estate_holding
+				}
+			}
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				AND = {
+					exists = culture
+					culture = {
+						has_innovation = innovation_feudalism
+					}
+					government_has_flag = government_is_roman
+					NOT = {
+						top_liege = {
+							has_imperial_laws = yes
+						}
+					}
+					any_sub_realm_county = {
+						title_province = {
+							has_holding_type = estate_holding
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					any_sub_realm_county = {
+						percent < 0.6
+						title_province = {
+							has_holding_type = castle_holding
+						}
+					}
+				}
+				trigger_event = feudalization.0002 #switches an estate to a castle
+			}
+			else_if = {
+				limit = {
+					any_sub_realm_county = {
+						percent >= 0.6
+						title_province = {
+							has_holding_type = castle_holding
+						}
+					}
+				}
+				trigger_event = feudalization.0003 #switches you to feudal
+			}
+		}
+	}
+}
+
+feudalization.0002 = {
+	title = feudalization.0002.t
+	desc = feudalization.0002.desc
+	scope = character
+	theme = diplomacy
+	override_background = {
+		reference = bp1_crossroads_inn
+	}
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	immediate = {
+		random_sub_realm_county = {
+			limit = {
+				title_province = {
+					has_holding_type = estate_holding
+				}
+			}
+			title_province = {
+				set_holding_type = castle_holding
+			}
+			save_scope_as = county_being_castled
+		}
+	}
+	option = {
+		name = feudalization.0002.option.a
+		custom_tooltip = feudalization.0002.option.a.tooltip
+		
+	}
+}
+
+feudalization.0003 = {
+	title = feudalization.0003.t
+	desc = feudalization.0003.desc
+	scope = character
+	theme = diplomacy
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	immediate = {
+		change_government = feudal_government
+		every_sub_realm_county = {
+			limit = {
+				title_province = {
+					has_holding_type = estate_holding
+				}
+			}
+			title_province = {
+				set_holding_type = castle_holding
+			}
+		}
+	}
+	option = {
+		name = feudalization.0002.option.a
+		
+		
+	}
+}

@@ -1,0 +1,861 @@
+﻿create_artifact_roman_sarcophagus_effect = {
+	$OWNER$ = { save_scope_as = owner }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_illustrious = yes
+	
+	create_artifact = {
+		name = artifact_roman_sarcophagus_name
+		description = artifact_roman_sarcophagus_description
+		template = roman_sarcophagus_template
+		visuals = roman_sarcophagus
+		type = sculpture
+		modifier = artifact_roman_sarcophagus_modifier
+		wealth = scope:wealth
+		quality = scope:quality
+		history = {
+			type = created_before_history
+		}
+		save_scope_as = roman_sarcophagus
+	}
+	scope:roman_sarcophagus = {
+		set_variable = { name = roman_sarcophagus value = yes }
+	}
+}
+
+create_artifact_golden_diadem_effect = {
+	$OWNER$ = { save_scope_as = owner }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_illustrious = yes
+	
+	create_artifact = {
+		name = artifact_golden_diadem_name
+		description = artifact_golden_diadem_description
+		visuals = golden_diadem
+		template = golden_diadem_template
+		type = pedestal
+		modifier = artifact_golden_diadem_modifier
+		wealth = scope:wealth
+		quality = scope:quality
+		history = {
+			type = created_before_history
+		}
+		save_scope_as = golden_diadem
+	}
+	scope:golden_diadem = {
+		set_variable = { name = golden_diadem value = yes }
+	}
+}
+
+create_artifact_donatistclub_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+		create_artifact = {
+			name = artifact_donatistclub_name
+			description = artifact_donatistclub_description
+			visuals = mace
+			template = donatistclub_template
+			type = mace
+			modifier = donatistclub_modifier
+			wealth = 100
+			quality = 100
+			history = {
+				type = created_before_history
+			}
+			decaying = no
+			save_scope_as = newly_created_artifact
+		}
+		scope:newly_created_artifact = {
+			set_variable = { name = historical_unique_artifact value = yes }
+			set_variable = {
+				name = donatistclub
+				value = yes
+			}
+		}
+}
+
+create_artifact_telekdagger_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	# Create the artifact
+		create_artifact = {
+			name = artifact_telekdagger_name
+			description = artifact_telekdagger_description
+			visuals = dagger
+			template = telekdagger_template
+			type = dagger
+			modifier = telekdagger_modifier
+			wealth = 20
+			quality = 20
+			history = {
+				type = created_before_history
+			}
+			save_scope_as = newly_created_artifact
+		}
+		scope:newly_created_artifact = {
+			set_variable = {
+				name = telekdagger
+				value = yes
+			}
+		}
+}
+
+create_artifact_teleksword_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	# Create the artifact
+		create_artifact = {
+			name = artifact_teleksword_name
+			description = artifact_teleksword_description
+			visuals = sword
+			template = teleksword_template
+			type = sword
+			modifier = teleksword_modifier
+			wealth = 20
+			quality = 20
+			history = {
+				type = created_before_history
+			}
+			save_scope_as = newly_created_artifact
+		}
+		scope:newly_created_artifact = {
+			set_variable = {
+				name = teleksword
+				value = yes
+			}
+		}
+}
+
+create_artifact_adarga_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	# Create the artifact
+		create_artifact = {
+			name = artifact_adarga_name
+			description = artifact_adarga_description
+			visuals = wall_shield
+			template = adarga_template
+			type = wall_shield
+			modifier = adarga_modifier
+			wealth = 20
+			quality = 20
+			history = {
+				type = created_before_history
+			}
+			save_scope_as = newly_created_artifact
+		}
+		scope:newly_created_artifact = {
+			set_variable = {
+				name = adarga
+				value = yes
+			}
+		}
+}
+
+create_artifact_ahrer_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	# Create the artifact
+		create_artifact = {
+			name = artifact_ahrer_name
+			description = artifact_ahrer_description
+			visuals = wall_shield
+			template = ahrer_template
+			type = wall_shield
+			modifier = ahrer_modifier
+			wealth = 20
+			quality = 20
+			history = {
+				type = created_before_history
+			}
+			save_scope_as = newly_created_artifact
+		}
+		scope:newly_created_artifact = {
+			set_variable = {
+				name = ahrer
+				value = yes
+			}
+		}
+}
+
+create_artifact_mythicharpoon_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	# Create the artifact
+		create_artifact = {
+			name = artifact_mythicharpoon_name
+			description = artifact_mythicharpoon_description
+			visuals = spear
+			template = mythicharpoon_template
+			type = spear
+			modifier = mythicharpoon_modifier
+			wealth = 75
+			quality = 75
+			history = {
+				type = created_before_history
+			}
+			save_scope_as = newly_created_artifact
+		}
+		scope:newly_created_artifact = {
+			set_variable = {
+				name = mythicharpoon
+				value = yes
+			}
+		}
+}
+
+create_artifact_globa_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	# Create the artifact
+		create_artifact = {
+			name = artifact_globa_name
+			description = artifact_globa_description
+			visuals = armor
+			template = globa_template
+			type = armor_laminar
+			modifier = globa_modifier
+			wealth = 20
+			quality = 20
+			history = {
+				type = created_before_history
+			}
+			save_scope_as = newly_created_artifact
+		}
+		scope:newly_created_artifact = {
+			set_variable = {
+				name = globa
+				value = yes
+			}
+		}
+}
+
+create_artifact_lorica_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	# Create the artifact
+		create_artifact = {
+			name = artifact_lorica_name
+			description = artifact_lorica_description
+			visuals = armor
+			template = lorica_template
+			type = armor_scale
+			modifier = lorica_modifier
+			wealth = 50
+			quality = 50
+			history = {
+				type = created_before_history
+			}
+			save_scope_as = newly_created_artifact
+		}
+		scope:newly_created_artifact = {
+			set_variable = {
+				name = lorica
+				value = yes
+			}
+		}
+}
+
+create_artifact_aksumhalberd_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	# Create the artifact
+		create_artifact = {
+			name = artifact_aksumhalberd_name
+			description = artifact_aksumhalberd_description
+			visuals = spear
+			template = aksumhalberd_template
+			type = spear
+			modifier = aksumhalberd_modifier
+			wealth = 50
+			quality = 50
+			history = {
+				type = created_before_history
+			}
+			save_scope_as = newly_created_artifact
+		}
+		scope:newly_created_artifact = {
+			set_variable = {
+				name = aksumhalberd
+				value = yes
+			}
+		}
+}
+
+create_artifact_nubianshield_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	# Create the artifact
+		create_artifact = {
+			name = artifact_nubianshield_name
+			description = artifact_nubianshield_description
+			visuals = wall_shield
+			template = nubianshield_template
+			type = wall_shield
+			modifier = nubianshield_modifier
+			wealth = 20
+			quality = 20
+			history = {
+				type = created_before_history
+			}
+			save_scope_as = newly_created_artifact
+		}
+		scope:newly_created_artifact = {
+			set_variable = {
+				name = nubianshield
+				value = yes
+			}
+		}
+}
+
+create_artifact_lancehatchet_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	# Create the artifact
+		create_artifact = {
+			name = artifact_lancehatchet_name
+			description = artifact_lancehatchet_description
+			visuals = spear
+			template = lancehatchet_template
+			type = spear
+			modifier = lancehatchet_modifier
+			wealth = 20
+			quality = 20
+			history = {
+				type = created_before_history
+			}
+			save_scope_as = newly_created_artifact
+		}
+		scope:newly_created_artifact = {
+			set_variable = {
+				name = lancehatchet
+				value = yes
+			}
+		}
+}
+
+create_artifact_crocodilehelmet_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	# Create the artifact
+		create_artifact = {
+			name = artifact_crocodilehelmet_name
+			description = artifact_crocodilehelmet_description
+			visuals = crown
+			template = crocodilehelmet_template
+			type = helmet
+			modifier = crocodilehelmet_modifier
+			wealth = 20
+			quality = 20
+			history = {
+				type = created_before_history
+			}
+			save_scope_as = newly_created_artifact
+		}
+		scope:newly_created_artifact = {
+			set_variable = {
+				name = crocodilehelmet
+				value = yes
+			}
+		}
+}
+
+create_artifact_crocodilearmor_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	# Create the artifact
+		create_artifact = {
+			name = artifact_crocodilearmor_name
+			description = artifact_crocodilearmor_description
+			visuals = armor
+			template = crocodilearmor_template
+			type = armor_scale
+			modifier = crocodilearmor_modifier
+			wealth = 20
+			quality = 20
+			history = {
+				type = created_before_history
+			}
+			save_scope_as = newly_created_artifact
+		}
+		scope:newly_created_artifact = {
+			set_variable = {
+				name = crocodilearmor
+				value = yes
+			}
+		}
+}
+
+create_artifact_wickershield_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	# Create the artifact
+		create_artifact = {
+			name = artifact_wickershield_name
+			description = artifact_wickershield_description
+			visuals = wall_shield
+			template = wickershield_template
+			type = wall_shield
+			modifier = wickershield_modifier
+			wealth = 20
+			quality = 20
+			history = {
+				type = created_before_history
+			}
+			save_scope_as = newly_created_artifact
+		}
+		scope:newly_created_artifact = {
+			set_variable = {
+				name = wickershield
+				value = yes
+			}
+		}
+}
+
+create_artifact_zandeshield_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	# Create the artifact
+		create_artifact = {
+			name = artifact_zandeshield_name
+			description = artifact_zandeshield_description
+			visuals = wall_shield
+			template = zandeshield_template
+			type = wall_shield
+			modifier = zandeshield_modifier
+			wealth = 50
+			quality = 50
+			history = {
+				type = created_before_history
+			}
+			save_scope_as = newly_created_artifact
+		}
+		scope:newly_created_artifact = {
+			set_variable = {
+				name = zandeshield
+				value = yes
+			}
+		}
+}
+
+create_artifact_opiasword_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	# Create the artifact
+		create_artifact = {
+			name = artifact_opiasword_name
+			description = artifact_opiasword_description
+			visuals = sword
+			template = opiasword_template
+			type = sword
+			modifier = opiasword_modifier
+			wealth = 20
+			quality = 20
+			history = {
+				type = created_before_history
+			}
+			save_scope_as = newly_created_artifact
+		}
+		scope:newly_created_artifact = {
+			set_variable = {
+				name = opiasword
+				value = yes
+			}
+		}
+}
+
+create_artifact_crocodilearmorreal_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	# Create the artifact
+		create_artifact = {
+			name = artifact_crocodilearmorreal_name
+			description = artifact_crocodilearmorreal_description
+			visuals = armor
+			template = crocodilearmorreal_template
+			type = armor_scale
+			modifier = crocodilearmorreal_modifier
+			wealth = 50
+			quality = 50
+			history = {
+				type = created_before_history
+			}
+			save_scope_as = newly_created_artifact
+		}
+		scope:newly_created_artifact = {
+			set_variable = {
+				name = crocodilearmorreal
+				value = yes
+			}
+		}
+}
+
+create_artifact_ivoryscepter_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	# Create the artifact
+		create_artifact = {
+			name = artifact_ivoryscepter_name
+			description = artifact_ivoryscepter_description
+			visuals = regalia
+			template = ivoryscepter_template
+			type = regalia
+			modifier = ivoryscepter_modifier
+			wealth = 50
+			quality = 50
+			history = {
+				type = created_before_history
+			}
+			save_scope_as = newly_created_artifact
+		}
+		scope:newly_created_artifact = {
+			set_variable = {
+				name = ivoryscepter
+				value = yes
+			}
+		}
+}
+
+create_artifact_festooncrown_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	# Create the artifact
+		create_artifact = {
+			name = artifact_festooncrown_name
+			description = artifact_festooncrown_description
+			visuals = crown
+			template = festooncrown_template
+			type = helmet
+			modifier = festooncrown_modifier
+			wealth = 50
+			quality = 50
+			history = {
+				type = created_before_history
+			}
+			save_scope_as = newly_created_artifact
+		}
+		scope:newly_created_artifact = {
+			set_variable = {
+				name = festooncrown
+				value = yes
+			}
+		}
+}
+
+create_artifact_goldchlamys_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	# Create the artifact
+		create_artifact = {
+			name = artifact_goldchlamys_name
+			description = artifact_goldchlamys_description
+			visuals = armor
+			template = goldchlamys_template
+			type = armor_scale
+			modifier = goldchlamys_modifier
+			wealth = 50
+			quality = 50
+			history = {
+				type = created_before_history
+			}
+			save_scope_as = newly_created_artifact
+		}
+		scope:newly_created_artifact = {
+			set_variable = {
+				name = goldchlamys
+				value = yes
+			}
+		}
+}
+
+create_artifact_trishula_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	# Create the artifact
+		create_artifact = {
+			name = artifact_trishula_name
+			description = artifact_trishula_description
+			visuals = sword
+			template = trishula_template
+			type = sword
+			modifier = trishula_modifier
+			wealth = 50
+			quality = 50
+			history = {
+				type = created_before_history
+			}
+			save_scope_as = newly_created_artifact
+		}
+		scope:newly_created_artifact = {
+			set_variable = {
+				name = trishula
+				value = yes
+			}
+		}
+}
+
+create_artifact_sosunpattah_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	# Create the artifact
+		create_artifact = {
+			name = artifact_sosunpattah_name
+			description = artifact_sosunpattah_description
+			visuals = sword
+			template = sosunpattah_template
+			type = sword
+			modifier = sosunpattah_modifier
+			wealth = 50
+			quality = 50
+			history = {
+				type = created_before_history
+			}
+			save_scope_as = newly_created_artifact
+		}
+		scope:newly_created_artifact = {
+			set_variable = {
+				name = sosunpattah
+				value = yes
+			}
+		}
+}
+
+create_artifact_kukridagger_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	# Create the artifact
+		create_artifact = {
+			name = artifact_kukridagger_name
+			description = artifact_kukridagger_description
+			visuals = dagger
+			template = kukridagger_template
+			type = dagger
+			modifier = kukridagger_modifier
+			wealth = 20
+			quality = 20
+			history = {
+				type = created_before_history
+			}
+			save_scope_as = newly_created_artifact
+		}
+		scope:newly_created_artifact = {
+			set_variable = {
+				name = kukridagger
+				value = yes
+			}
+		}
+}
+
+create_artifact_khandasword_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	# Create the artifact
+		create_artifact = {
+			name = artifact_khandasword_name
+			description = artifact_khandasword_description
+			visuals = sword
+			template = khandasword_template
+			type = sword
+			modifier = khandasword_modifier
+			wealth = 50
+			quality = 50
+			history = {
+				type = created_before_history
+			}
+			save_scope_as = newly_created_artifact
+		}
+		scope:newly_created_artifact = {
+			set_variable = {
+				name = khandasword
+				value = yes
+			}
+		}
+}
+
+create_artifact_charmadhal_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	# Create the artifact
+		create_artifact = {
+			name = artifact_charmadhal_name
+			description = artifact_charmadhal_description
+			visuals = wall_shield
+			template = charmadhal_template
+			type = wall_shield
+			modifier = charmadhal_modifier
+			wealth = 20
+			quality = 20
+			history = {
+				type = created_before_history
+			}
+			save_scope_as = newly_created_artifact
+		}
+		scope:newly_created_artifact = {
+			set_variable = {
+				name = charmadhal
+				value = yes
+			}
+		}
+}
+
+create_artifact_nachakh_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	# Create the artifact
+		create_artifact = {
+			name = artifact_nachakh_name
+			description = artifact_nachakh_description
+			visuals = axe
+			template = nachakh_template
+			type = axe
+			modifier = nachakh_modifier
+			wealth = 20
+			quality = 20
+			history = {
+				type = created_before_history
+			}
+			save_scope_as = newly_created_artifact
+		}
+		scope:newly_created_artifact = {
+			set_variable = {
+				name = nachakh
+				value = yes
+			}
+		}
+}
+
+create_artifact_reedshield_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	# Create the artifact
+		create_artifact = {
+			name = artifact_reedshield_name
+			description = artifact_reedshield_description
+			visuals = wall_shield
+			template = reedshield_template
+			type = wall_shield
+			modifier = reedshield_modifier
+			wealth = 20
+			quality = 20
+			history = {
+				type = created_before_history
+			}
+			save_scope_as = newly_created_artifact
+		}
+		scope:newly_created_artifact = {
+			set_variable = {
+				name = reedshield
+				value = yes
+			}
+		}
+}
+
+create_artifact_persianmace_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	# Create the artifact
+		create_artifact = {
+			name = artifact_persianmace_name
+			description = artifact_persianmace_description
+			visuals = mace
+			template = persianmace_template
+			type = mace
+			modifier = persianmace_modifier
+			wealth = 75
+			quality = 75
+			history = {
+				type = created_before_history
+			}
+			save_scope_as = newly_created_artifact
+		}
+		scope:newly_created_artifact = {
+			set_variable = {
+				name = persianmace
+				value = yes
+			}
+		}
+}
+
+create_artifact_zhupinspear_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	# Create the artifact
+		create_artifact = {
+			name = artifact_zhupinspear_name
+			description = artifact_zhupinspear_description
+			visuals = spear
+			template = zhupinspear_template
+			type = spear
+			modifier = zhupinspear_modifier
+			wealth = 20
+			quality = 20
+			history = {
+				type = created_before_history
+			}
+			save_scope_as = newly_created_artifact
+		}
+		scope:newly_created_artifact = {
+			set_variable = {
+				name = zhupinspear
+				value = yes
+			}
+		}
+}
+
+create_artifact_zirah_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+
+	# Create the artifact
+		create_artifact = {
+			name = artifact_zirah_name
+			description = artifact_zirah_description
+			visuals = armor
+			template = zirah_template
+			type = armor_scale
+			modifier = zirah_modifier
+			wealth = 20
+			quality = 20
+			history = {
+				type = created_before_history
+			}
+			save_scope_as = newly_created_artifact
+		}
+		scope:newly_created_artifact = {
+			set_variable = {
+				name = zirah
+				value = yes
+			}
+		}
+}

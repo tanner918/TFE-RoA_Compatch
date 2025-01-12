@@ -1,0 +1,750 @@
+﻿namespace = religion
+
+religion.0001 = {
+	title = religion.0001.t
+	desc = religion.0001.desc
+	scope = character
+	theme = faith
+	immediate = {
+		save_scope_as = mission_sender
+	}
+	override_background = {
+		reference = temple
+	}
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+
+	option = {
+		name = religion.0001.option.a
+		remove_long_term_gold = 100
+
+		random_list = {
+			20 = {
+				custom_tooltip = religion.0001.county
+				random = {
+					chance = 5
+					modifier = {
+						add = 5
+						any_court_position_holder = {
+							type = head_missionary
+							aptitude = { court_position = head_missionary value >= 3 }
+						}
+					}
+					modifier = {
+						add = 5
+						any_court_position_holder = {
+							type = head_missionary
+							aptitude = { court_position = head_missionary value >= 4 }
+						}
+					}
+					modifier = {
+						add = 5
+						any_court_position_holder = {
+							type = head_missionary
+							aptitude = { court_position = head_missionary value >= 5 }
+						}
+					}
+					modifier = {
+						add = missionary_chance
+					}
+					random_county = {
+						limit = {
+							NOT = {
+								faith = root.faith
+							}
+						}
+						set_county_faith = root.faith
+					}
+				}
+			}
+			15 = {
+				custom_tooltip = religion.0001.count
+				trigger_event = {
+					on_action = TFE_missionary_county
+					years = {1 2}
+				}
+			}
+			10 = {
+				custom_tooltip = religion.0001.duke
+				trigger_event = {
+					on_action = TFE_missionary_duchy
+					years = {1 2}
+				}
+			}
+			5 = {
+				custom_tooltip = religion.0001.king
+				trigger_event = {
+					on_action = TFE_missionary_kingdom
+					years = {1 2}
+				}
+			}
+		}
+			
+			
+		
+	}
+	option = {
+		name = religion.0001.option.b
+		remove_long_term_gold = 300
+		random_list = {
+			15 = {
+				custom_tooltip = religion.0001.county
+				random = {
+					chance = 5
+					modifier = {
+						add = 5
+						any_court_position_holder = {
+							type = head_missionary
+							aptitude = { court_position = head_missionary value >= 3 }
+						}
+					}
+					modifier = {
+						add = 5
+						any_court_position_holder = {
+							type = head_missionary
+							aptitude = { court_position = head_missionary value >= 4 }
+						}
+					}
+					modifier = {
+						add = 5
+						any_court_position_holder = {
+							type = head_missionary
+							aptitude = { court_position = head_missionary value >= 5 }
+						}
+					}
+					modifier = {
+						add = missionary_chance
+					}
+					random_county = {
+						limit = {
+							NOT = {
+								faith = root.faith
+							}
+						}
+						set_county_faith = root.faith
+					}
+				}
+			}
+			10 = {
+				custom_tooltip = religion.0001.count
+				trigger_event = {
+					on_action = TFE_missionary_county
+					years = {1 2}
+				}
+			}
+			15 = {
+				custom_tooltip = religion.0001.duke
+				trigger_event = {
+					on_action = TFE_missionary_duchy
+					years = {1 2}
+				}
+			}
+			10 = {
+				custom_tooltip = religion.0001.king
+				trigger_event = {
+					on_action = TFE_missionary_kingdom
+					years = {1 2}
+				}
+			}
+		}
+	}
+	option = {
+		name = religion.0001.option.c
+		remove_long_term_gold = 500
+		random_list = {
+			10 = {
+				custom_tooltip = religion.0001.county
+				random = {
+					chance = 5
+					modifier = {
+						add = 5
+						any_court_position_holder = {
+							type = head_missionary
+							aptitude = { court_position = head_missionary value >= 3 }
+						}
+					}
+					modifier = {
+						add = 5
+						any_court_position_holder = {
+							type = head_missionary
+							aptitude = { court_position = head_missionary value >= 4 }
+						}
+					}
+					modifier = {
+						add = 5
+						any_court_position_holder = {
+							type = head_missionary
+							aptitude = { court_position = head_missionary value >= 5 }
+						}
+					}
+					modifier = {
+						add = missionary_chance
+					}
+					random_county = {
+						limit = {
+							NOT = {
+								faith = root.faith
+							}
+						}
+						set_county_faith = root.faith
+					}
+				}
+			}
+			5 = {
+				custom_tooltip = religion.0001.count
+				trigger_event = {
+					on_action = TFE_missionary_county
+					years = {1 2}
+				}
+			}
+			10 = {
+				custom_tooltip = religion.0001.duke
+				trigger_event = {
+					on_action = TFE_missionary_duchy
+					years = {1 2}
+				}
+			}
+			20 = {
+				custom_tooltip = religion.0001.king
+				trigger_event = {
+					on_action = TFE_missionary_kingdom
+					years = {1 2}
+				}
+			}
+		}
+	}
+	option = {
+		name = religion.0001.option.d
+		hidden_effect = {
+			add_prestige = 100
+		}
+	}
+}
+
+religion.0002 = {
+	title = religion.0002.t
+	desc = religion.0002.desc
+	scope = character
+	theme = faith
+	immediate = {
+		save_scope_as = mission_receiver
+	}
+	override_background = {
+		reference = temple
+	}
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	right_portrait = {
+		character = scope:mission_sender
+		animation = personality_honorable
+	}
+
+	option = {
+		name = religion.0002.option.a
+		faith = {
+			change_fervor = {
+				value = -1
+			}
+		}
+		set_character_faith = scope:mission_sender.faith
+		scope:mission_sender.faith = {
+			change_fervor = {
+				value = 1
+			}
+		}
+		scope:mission_sender = {
+			trigger_event = {
+				id = religion.0004
+				years = {1 2}
+			}
+		}
+		scope:mission_sender = {
+			add_opinion = {
+				target = root
+				opinion = 150
+				years = 30
+				modifier = grateful_opinion	
+			}
+		}
+		ai_chance = { 
+			base = 5 
+			modifier = {
+				add = 5
+				scope:mission_sender = {
+					any_court_position_holder = {
+						type = head_missionary
+						aptitude = { court_position = head_missionary value >= 3 }
+					}
+				}
+			}
+			modifier = {
+				add = 5
+				scope:mission_sender = {
+					any_court_position_holder = {
+						type = head_missionary
+						aptitude = { court_position = head_missionary value >= 4 }
+					}
+				}
+			}
+			modifier = {
+				add = 5
+				scope:mission_sender = {
+					any_court_position_holder = {
+						type = head_missionary
+						aptitude = { court_position = head_missionary value >= 5 }
+					}
+				}
+			}
+			modifier = {
+				scope:mission_sender = {
+					add = missionary_chance
+				}
+			}
+		}
+	}
+	option = {
+		name = religion.0002.option.b
+		faith = {
+			change_fervor = {
+				value = 1
+			}
+		}
+		add_piety = 100
+		scope:mission_sender = {
+			trigger_event = {
+				id = religion.0003
+				years = {1 2}
+			}
+		}
+		scope:mission_sender = {
+			add_opinion = {
+				target = root
+				opinion = -150
+				years = 30
+				modifier = hate_opinion	
+			}
+		}
+		ai_chance = { 
+			base = 10 
+			modifier = { #Organized faiths are harder to convert
+				add = 10
+				AND = {
+					faith = {
+						NOT = {
+							has_doctrine_parameter = unreformed
+						}
+					}
+					NOT = {
+						faith.religion = scope:mission_sender.religion
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = religion.0002.option.c
+		faith = {
+			change_fervor = {
+				value = 2
+			}
+		}
+		add_piety = 200
+		add_dread = 10
+		scope:mission_sender = {
+			trigger_event = {
+				id = religion.0007
+				years = {1 2}
+			}
+		}
+		scope:mission_sender = {
+			add_opinion = {
+				target = root
+				opinion = -200
+				years = 30
+				modifier = hate_opinion	
+			}
+		}
+		scope:mission_sender = {
+			every_court_position_holder = {
+				type = head_missionary
+				death = { killer = root death_reason = death_burned_missionary }
+			}
+			every_court_position_holder = {
+				type = missionary
+				death = { killer = root death_reason = death_burned_missionary }
+			}
+		}
+		ai_chance = { 
+			base = 2
+			modifier = {
+				add = 2
+				has_trait = zealous
+			}
+			modifier = {
+				add = 2
+				has_trait = sadistic
+			}
+			modifier = {
+				add = -5
+				scope:mission_sender = {
+					any_court_position_holder = {
+						type = head_missionary
+						aptitude = { court_position = head_missionary value >= 3 }
+					}
+				}
+			}
+			modifier = {
+				add = -5
+				scope:mission_sender = {
+					any_court_position_holder = {
+						type = head_missionary
+						aptitude = { court_position = head_missionary value >= 4 }
+					}
+				}
+			}
+			modifier = {
+				add = -5
+				scope:mission_sender = {
+					any_court_position_holder = {
+						type = head_missionary
+						aptitude = { court_position = head_missionary value >= 5 }
+					}
+				}
+			}
+		}
+	}
+}
+
+religion.0003 = {
+	title = religion.0003.t
+	desc = religion.0003.desc
+	scope = character
+	theme = faith
+	override_background = {
+		reference = temple
+	}
+	left_portrait = {
+		character = root
+		animation = anger
+	}
+	right_portrait = {
+		character = scope:mission_receiver
+		animation = personality_honorable
+	}
+
+	option = {
+		name = religion.0003.option.a
+	}
+}
+
+religion.0004 = {
+	title = religion.0004.t
+	desc = religion.0004.desc
+	scope = character
+	theme = faith
+	override_background = {
+		reference = temple
+	}
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	right_portrait = {
+		character = scope:mission_receiver
+		animation = personality_honorable
+	}
+
+	option = {
+		name = religion.0004.option.a
+	}
+}
+
+religion.0005 = {
+	title = religion.0005.t
+	desc = religion.0005.desc
+	scope = character
+	theme = faith
+	override_background = {
+		reference = temple
+	}
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+
+	option = {
+		name = religion.0005.option.a
+		custom_tooltip = religion.0005.option
+		hidden_effect = {
+			every_ruler = {
+				limit = {
+					AND = {
+						any_county_in_region = {
+							region = world_europe_west
+							THIS = PREV.capital_county
+						}
+						faith = root.faith
+						employs_court_position = head_missionary
+					}
+				}
+				trigger_event = {
+					id = religion.0006
+					days = {10 30}
+				}
+			}
+		}
+	}
+}
+
+religion.0006 = {
+	title = religion.0006.t
+	desc = religion.0006.desc
+	scope = character
+	theme = faith
+	override_background = {
+		reference = temple
+	}
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+
+	option = {
+		name = religion.0001.option.a
+		remove_long_term_gold = 100
+
+		random_list = {
+			20 = {
+				custom_tooltip = religion.0001.county
+				random = {
+					chance = 5
+					modifier = {
+						add = 5
+						any_court_position_holder = {
+							type = head_missionary
+							aptitude = { court_position = head_missionary value >= 3 }
+						}
+					}
+					modifier = {
+						add = 5
+						any_court_position_holder = {
+							type = head_missionary
+							aptitude = { court_position = head_missionary value >= 4 }
+						}
+					}
+					modifier = {
+						add = 5
+						any_court_position_holder = {
+							type = head_missionary
+							aptitude = { court_position = head_missionary value >= 5 }
+						}
+					}
+					modifier = {
+						add = missionary_chance
+					}
+					random_county_in_region = {
+						limit = {
+							NOT = {
+								faith = root.faith
+							}
+						}
+						set_county_faith = root.faith
+					}
+				}
+			}
+			15 = {
+				custom_tooltip = religion.0001.count
+				trigger_event = {
+					on_action = TFE_missionary_county_britan
+					years = {1 2}
+				}
+			}
+			10 = {
+				custom_tooltip = religion.0001.duke
+				trigger_event = {
+					on_action = TFE_missionary_duchy_britan
+					years = {1 2}
+				}
+			}
+			5 = {
+				custom_tooltip = religion.0001.king
+				trigger_event = {
+					on_action = TFE_missionary_kingdom_britan
+					years = {1 2}
+				}
+			}
+		}
+			
+			
+		
+	}
+	option = {
+		name = religion.0001.option.b
+		remove_long_term_gold = 300
+		random_list = {
+			15 = {
+				custom_tooltip = religion.0001.county
+				random = {
+					chance = 5
+					modifier = {
+						add = 5
+						any_court_position_holder = {
+							type = head_missionary
+							aptitude = { court_position = head_missionary value >= 3 }
+						}
+					}
+					modifier = {
+						add = 5
+						any_court_position_holder = {
+							type = head_missionary
+							aptitude = { court_position = head_missionary value >= 4 }
+						}
+					}
+					modifier = {
+						add = 5
+						any_court_position_holder = {
+							type = head_missionary
+							aptitude = { court_position = head_missionary value >= 5 }
+						}
+					}
+					modifier = {
+						add = missionary_chance
+					}
+					random_county = {
+						limit = {
+							NOT = {
+								faith = root.faith
+							}
+						}
+						set_county_faith = root.faith
+					}
+				}
+			}
+			10 = {
+				custom_tooltip = religion.0001.count
+				trigger_event = {
+					on_action = TFE_missionary_county_britan
+					years = {1 2}
+				}
+			}
+			15 = {
+				custom_tooltip = religion.0001.duke
+				trigger_event = {
+					on_action = TFE_missionary_duchy_britan
+					years = {1 2}
+				}
+			}
+			10 = {
+				custom_tooltip = religion.0001.king
+				trigger_event = {
+					on_action = TFE_missionary_kingdom_britan
+					years = {1 2}
+				}
+			}
+		}
+	}
+	option = {
+		name = religion.0001.option.c
+		remove_long_term_gold = 500
+		random_list = {
+			10 = {
+				custom_tooltip = religion.0001.county
+				random = {
+					chance = 5
+					modifier = {
+						add = 5
+						any_court_position_holder = {
+							type = head_missionary
+							aptitude = { court_position = head_missionary value >= 3 }
+						}
+					}
+					modifier = {
+						add = 5
+						any_court_position_holder = {
+							type = head_missionary
+							aptitude = { court_position = head_missionary value >= 4 }
+						}
+					}
+					modifier = {
+						add = 5
+						any_court_position_holder = {
+							type = head_missionary
+							aptitude = { court_position = head_missionary value >= 5 }
+						}
+					}
+					modifier = {
+						add = missionary_chance
+					}
+					random_county = {
+						limit = {
+							NOT = {
+								faith = root.faith
+							}
+						}
+						set_county_faith = root.faith
+					}
+				}
+			}
+			5 = {
+				custom_tooltip = religion.0001.count
+				trigger_event = {
+					on_action = TFE_missionary_county_britan
+					years = {1 2}
+				}
+			}
+			10 = {
+				custom_tooltip = religion.0001.duke
+				trigger_event = {
+					on_action = TFE_missionary_duchy_britan
+					years = {1 2}
+				}
+			}
+			20 = {
+				custom_tooltip = religion.0001.king
+				trigger_event = {
+					on_action = TFE_missionary_kingdom_britan
+					years = {1 2}
+				}
+			}
+		}
+	}
+	option = {
+		name = religion.0001.option.d
+	}
+}
+
+religion.0007 = {
+	title = religion.0007.t
+	desc = religion.0007.desc
+	scope = character
+	theme = faith
+	override_background = {
+		reference = temple
+	}
+	left_portrait = {
+		character = root
+		animation = anger
+	}
+	right_portrait = {
+		character = scope:mission_receiver
+		animation = anger
+	}
+	immediate = {
+		scope:mission_receiver = {
+			add_opinion = {
+				target = root
+				opinion = -200
+				years = 30
+				modifier = hate_opinion	
+			}
+		}
+	}
+
+	option = {
+		name = religion.0007.option.a
+	}
+}

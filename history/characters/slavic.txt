@@ -1,0 +1,234 @@
+﻿# King Bož and family
+slavs_01 = {
+	name = BoZ_
+	dna = 999700_boz
+	dynasty = antes
+	religion = slavic_pagan
+	culture = slavic
+	335.1.1 = {
+		birth = yes
+	}
+	354.1.1 = {
+		add_spouse = slavs_02
+	}
+	383.1.1 = {
+		death = yes
+	}
+
+	diplomacy = 3
+	martial = 11
+	stewardship = 9
+	intrigue = 4
+	learning = 8
+	trait = fickle
+	trait = zealous
+	trait = diligent
+	trait = education_martial_2
+	trait = cautious_leader
+	disallow_random_traits = yes
+}
+slavs_02 = {  # Fictional, Bož's wife
+	name = Vera
+	dna = slavs_02_vera
+	female = yes
+	religion = slavic_pagan
+	culture = slavic
+	338.1.1 = {
+		birth = yes
+	}
+	399.1.1 = {
+		death = yes
+	}
+
+	diplomacy = 5
+	martial = 1
+	stewardship = 8
+	intrigue = 4
+	learning = 4
+	trait = brave
+	trait = content
+	trait = cynical
+	trait = education_stewardship_1
+	disallow_random_traits = yes
+}
+slavs_03 = {  # Fictional
+	name = Gleb
+	religion = slavic_pagan
+	culture = slavic
+	father = slavs_01
+	mother = slavs_02
+	357.1.1 = {
+		birth = yes
+	}
+	405.1.1 = {
+		death = yes
+	}
+}
+slavs_04 = {  # Fictional
+	name = Dusa
+	female = yes
+	religion = slavic_pagan
+	culture = slavic
+	father = slavs_01
+	mother = slavs_02
+	360.1.1 = {
+		birth = yes
+	}
+	415.1.1 = {
+		death = yes
+	}
+}
+
+# Chornobyl
+slavs_11 = {
+	name = Tatyana
+	dna = slavs_11_tatyana
+	female = yes
+	religion = slavic_pagan
+	culture = slavic
+	360.1.1 = {
+		birth = yes
+		effect = {
+			make_trait_inactive = intellect_good_2  # Make the trait recessive
+		}
+	}
+	395.1.1 = {
+		effect = {
+			add_secret = {
+				type = secret_lover
+				target = character:anteans_01
+			}
+		}
+	}
+	410.1.1 = {
+		death = yes
+	}
+
+	trait = intellect_good_2
+}
+
+# Lech, Czech, and Rus
+slavs_21 = {
+	name = Pan
+	religion = slavic_pagan
+	culture = sclavenian
+	dynasty = dynasty_Pan
+	423.1.1 = {
+		birth = yes
+	}
+	474.1.1 = {
+		death = yes
+	}
+}
+slavs_22 = {
+	name = C_ech
+	dna = slavs_22_czech
+	religion = slavic_pagan
+	dynasty = dynasty_Pan
+	culture = sclavenian
+	father = slavs_21
+
+	trait = patient
+	trait = zealous
+	trait = greedy
+	trait = education_stewardship_2
+	diplomacy = 4
+	martial = 7
+	stewardship = 8
+	intrigue = 5
+	learning = 5
+	disallow_random_traits = yes
+
+	449.1.1 = {
+		birth = yes
+	}
+	460.1.1 = {
+		effect = {
+			create_alliance = character:slavs_23
+			create_alliance = character:slavs_25
+		}
+	}
+	511.1.1 = {
+		death = yes
+	}
+}
+slavs_23 = {
+	name = Rus_
+	dna = slavs_23_rus
+	religion = slavic_pagan
+	dynasty = dynasty_Pan
+	culture = sclavenian
+	father = slavs_21
+
+	trait = diligent
+	trait = stubborn
+	trait = honest
+	trait = education_intrigue_2
+	diplomacy = 4
+	martial = 8
+	stewardship = 5
+	intrigue = 7
+	learning = 4
+
+	452.1.1 = {
+		birth = yes
+	}
+	460.1.1 = {
+		effect = {
+			create_alliance = character:slavs_25
+		}
+	}
+	504.1.1 = {
+		death = yes
+	}
+}
+slavs_24 = {  # Not part of the Lech, Czech, and Rus legend but why not
+	name = Vilina
+	dna = slavs_24_vilina
+	female = yes
+	religion = slavic_pagan
+	dynasty = dynasty_Pan
+	culture = sclavenian
+	father = slavs_21
+	454.1.1 = {
+		birth = yes
+	}
+	523.1.1 = {
+		death = yes
+	}
+}
+slavs_25 = {
+	name = Lech
+	dna = slavs_25_lech
+	religion = slavic_pagan
+	dynasty = dynasty_Pan
+	culture = sclavenian
+	father = slavs_21
+
+	trait = fickle
+	trait = gregarious
+	trait = brave
+	#trait = hunter
+	trait = education_martial_2
+	diplomacy = 8
+	martial = 9
+	stewardship = 6
+	intrigue = 2
+	learning = 2
+	prowess = 6
+	disallow_random_traits = yes
+
+	458.1.1 = {
+		birth = yes
+		#effect = {
+		#	add_trait_xp = {
+		#		trait = hunter
+		#		track = falconer
+		#		value = 50
+		#	}
+		#}
+	}
+	506.1.1 = {
+		death = yes
+	}
+}

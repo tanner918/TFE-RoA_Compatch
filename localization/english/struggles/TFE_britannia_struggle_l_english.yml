@@ -1,0 +1,175 @@
+﻿l_english:
+ # Generic
+ britannia_struggle_house_tt: "All [house|E] members:"
+ britannia_struggle_can_create_empire_of_britannia_tt: "Unlocks creation of the [empire|E] of [GetTitleByKey('e_britannia').GetNameNoTier]"
+ britannia_struggle_get_empire_of_britannia_tt: "You get [GetTitleByKey('e_britannia').GetName]"
+ britannia_struggle_can_keep_using_struggle_clash_tt: "[struggle_conquest|E] remains available"
+ FORM_BRITANNIA_MUST_END_STRUGGLE_TRIGGER: "$e_britannia$ cannot be formed until the [britannia_struggle|E] has been resolved"
+ britannia_color_change_tt: "The [GetTitleByKey('e_britannia').GetName] changes its color to #N red#!"
+ NO_OTHER_DECISION_AVAILABLE: "None of the other culture-specific ending decisions are available to you"
+ RECLAIMED_BRITANNIA: "You have taken the Reclaim Britannia decision"
+ CREATED_CALEDONIA: "You have taken the Create the Province of Caledonia decision"
+ CREATED_HIBERNIA: "You have taken the Create the Province of Hibernia decision"
+ AT_LEAST_THREE_DUCHY_TITLES: "You hold at least 3 [duchy|E] titles"
+
+ # Phases
+ britannia_struggle: "Struggle for Britannia"
+ struggle_britannia_phase_migration: "Migration"
+ struggle_britannia_phase_migration_desc: "$game_concept_struggle_phase_britannia_migration_desc$"
+ struggle_britannia_phase_opportunity: "Opportunity"
+ struggle_britannia_phase_opportunity_desc: "$game_concept_struggle_phase_britannia_migration_desc$"
+ struggle_britannia_phase_hostility: "Hostility"
+ struggle_britannia_phase_hostility_desc: "$game_concept_struggle_phase_britannia_hostility_desc$"
+ struggle_britannia_phase_conciliation: "Conciliation"
+ struggle_britannia_phase_conciliation_desc: "$game_concept_struggle_phase_britannia_conciliation_desc$"
+ struggle_britannia_phase_compromise: "Compromise"
+ struggle_britannia_phase_compromise_desc: "$game_concept_struggle_phase_britannia_compromise_desc$"
+
+ # Parameters
+ struggle_parameter_cheaper_migrations_within_struggle_region: "Cheaper migrations to the [struggle_region|E] for [struggle_involved_cultures|E]"
+ struggle_parameter_involved_cultures_may_migrate: "All [struggle_involved_cultures|E] may migrate within the [struggle_region|E], regardless of [culture_traditions|E]"
+ struggle_parameter_more_migration_armies: "Larger armies spawn for migration wars"
+ struggle_parameter_faster_enforce_de_jure: "The [integrate_title|E] [chancellor|E] task progresses faster"
+
+ # Triggers
+ is_struggle_phase_TRIGGER: "Current phase of [STRUGGLE.GetName] is [StrugglePhase.GetName]"
+ NOT_is_struggle_phase_TRIGGER: "Current phase of [STRUGGLE.GetName] is not [StrugglePhase.GetName]"
+ britannia_struggle_is_celtic_desc: "[GetPlayer.GetCulture.GetName] belongs to the Celtic [heritage_group|E]"
+
+ # Other stuff I guess
+ BRITANNIA_STRUGGLE: "[britannia_struggle|E]"
+ CANNOT_MIGRATE_OUTSIDE_STRUGGLE_REGION: "Cannot migrate outside [struggle_region|E]"
+
+ # Phases
+
+ # Ending decisions
+ # Hostility - Generic
+ struggle_britannia_ending_hostility_decision_generic: "[ROOT.Char.GetPrimaryTitle.GetAdjectiveNoTooltip] Dominance"
+ struggle_britannia_ending_hostility_decision_generic_desc: "It is time for a strong leader to finally drag this island from the mire of war and division. Britannia will be united under a [ROOT.Char.GetCulture.GetNameNoTooltip] [ROOT.Char.Custom('GetQueenKing')|l] flying the [ROOT.Char.GetPrimaryTitle.GetAdjectiveNoTooltip] banner!"
+ struggle_britannia_ending_hostility_decision_tooltip: "End the [struggle|E] for Britannia"
+ struggle_britannia_ending_hostility_decision_generic_confirm: "End the Struggle for Britannia"
+
+ # Hostility - Germanic
+ struggle_britannia_ending_hostility_decision_germanic: "Become the Bretwalda"
+ struggle_britannia_ending_hostility_decision_germanic_desc: "Though our ancestors origially came from foreign shores, Britannia is now truly our home. It is time for a strong leader to finally drag this island from the mire of war and division. Britannia will be united under a [ROOT.Char.GetCulture.GetNameNoTooltip] [ROOT.Char.Custom('GetQueenKing')|l] flying the [ROOT.Char.GetPrimaryTitle.GetAdjectiveNoTooltip] banner!"
+ struggle_britannia_ending_hostility_decision_germanic_confirm: "End the Struggle for Britannia"
+
+ # Hostility - Celtic
+ struggle_britannia_ending_hostility_decision_celtic: "Britannia for the Celts"
+ struggle_britannia_ending_hostility_decision_celtic_desc: "Despite centuries of foreign invasions, the Celts of Britannia have endured. Now is time for the Celtic peoples of Britannia to take charge of their own destiny. Britannia will be united under a [ROOT.Char.GetCulture.GetNameNoTooltip] [ROOT.Char.Custom('GetQueenKing')|l] flying the [ROOT.Char.GetPrimaryTitle.GetAdjectiveNoTooltip] banner!"
+ struggle_britannia_ending_hostility_decision_celtic_confirm: "End the Struggle for Britannia"
+
+ # Hostility - Roman (This can actually be taken by either Roman emperor in _any_ phase, not just the hostility phase)
+ struggle_britannia_ending_hostility_decision_roman: "Reclaim Greater Britannia"
+ struggle_britannia_ending_hostility_decision_roman_desc: "Once an integral frontier province of the Roman Empire, Britannia was abandoned by the Empire in less than ideal circumstances. That tragedy should be rectified. Britannia should no longer suffer the ravages of barbarism and instability: it will be part of the Roman Empire once more!"
+ struggle_britannia_ending_hostility_decision_roman_confirm: "End the Struggle for Britannia"
+
+ # Conciliation
+ struggle_britannia_ending_conciliation_decision: "Détente"
+ struggle_britannia_ending_conciliation_decision_desc: "While the wounds of the conflict still remain, we should do our best to let Britannia heal. The Roman Empire is no longer here to enforce stability and peace. Therefore, we must learn to work together towards a lasting peace in the British Isles, no matter our differences."
+ struggle_britannia_ending_conciliation_decision_tooltip: "$struggle_britannia_ending_hostility_decision_tooltip$"
+ struggle_britannia_ending_conciliation_decision_confirm: "$struggle_britannia_ending_hostility_decision_generic_confirm$"
+
+ # Compromise
+ struggle_britannia_ending_compromise_decision:1 "Status Quo"
+ struggle_britannia_ending_compromise_decision_desc:0 "It is increasingly clear that without the Roman Empire to enforce stability and peace in Britannia, the British Isles will forever be ravaged by conflict. It is time to accept that Britannia was never meant to be united after the Romans left, and we should instead be content with [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip]."
+ struggle_britannia_ending_compromise_decision_tooltip:0 "$struggle_britannia_ending_hostility_decision_tooltip$"
+ struggle_britannia_ending_compromise_decision_confirm:0 "$struggle_britannia_ending_hostility_decision_generic_confirm$"
+ struggle_britannia_ending_compromise_decision_region_tt: "You control less than 50% of the [GetGeographicalRegion('world_europe_west_britannia').GetName] [region|E] (Current: [SCOPE.ScriptValue('struggle_britannia_ending_compromise_decision_region_owned_percent_value')|0]%)"
+
+
+ # Ending decision triggers
+ #struggle_britannia_ending_compromise_decision_correct_phase_tt: "The current [struggle_phase|E] is the  [struggle_phase_britannia_compromise|E]"
+ #struggle_britannia_ending_compromise_decision_correct_phase_tt: "The current [struggle_phase|E] is the [struggle_phase_britannia_compromise|E]" # Game concept for latter isn't working for some reason, only works if I put something between the "the [struggle_phase_britannia_compromise|E]" like an extra space
+ struggle_britannia_ending_conciliation_decision_correct_phase_tt: "The current [struggle_phase|E] is the [struggle_phase_britannia_conciliation|E]"
+
+ struggle_britannia_ending_hostility_decision_correct_phase_tt: "The current [struggle_phase|E] is the [struggle_phase_britannia_hostility|E]"
+ struggle_britannia_ending_hostility_decision_kingdom_tt: "You [hold|E] and [completely_control|E] at least 2 [de_jure|E] [kingdoms|E] of [GetTitleByKey('e_britannia').GetNameNoTier]"
+ struggle_britannia_ending_hostility_decision_county_tt: "80% of the [de_jure|E] [counties|E] of your [capital|E] [kingdom|E] ([THIS.Char.GetCapitalLocation.GetCounty.GetTitle.GetDeJureLiege.GetDeJureLiege.GetNameNoTier]) must be [THIS.Char.GetCulture.GetName] and [THIS.Char.GetFaith.GetAdjective] ([SCOPE.ScriptValue('tfe_struggle_britannia_hostility_county_counter_value')|0]/[SCOPE.ScriptValue('tfe_struggle_britannia_hostility_county_total_value')|0]) ([SCOPE.ScriptValue('tfe_struggle_britannia_hostility_county_percent')|0]%)"
+ struggle_britannia_ending_hostility_decision_region_tt: "No other [independent|E] [struggle_involved|E] [ruler|E] controls more than 20% of [GetGeographicalRegion('world_europe_west_britannia').GetName]"
+ struggle_britannia_ending_compromise_decision_kingdom_tt: "You [hold|E] and [completely_control|E] any [de_jure|E] [kingdom|E] of [GetTitleByKey('e_britannia').GetNameNoTier] ([SCOPE.ScriptValue('britannia_struggle_ending_kingdom_counter_value')|0]/[SCOPE.ScriptValue('britannia_struggle_conciliation_kingdom_total_value')|0])"
+ #struggle_britannia_ending_compromise_decision_region_tt: "You control less than [SCOPE.ScriptValue('britannia_struggle_compromise_owned_percent_value')|0]% of the [GetGeographicalRegion('world_europe_west_britannia').GetName] [region|E] (Current: [SCOPE.ScriptValue('struggle_britannia_ending_compromise_decision_region_owned_percent_value')|0]%)"
+ struggle_britannia_ending_compromise_decision_other_region_tt: "No other [independent|E] [struggle_involved|E] [ruler|E] controls [SCOPE.ScriptValue('britannia_struggle_compromise_involved_percent_value')|0]% or more of the [GetGeographicalRegion('world_europe_west_britannia').GetName] [region|E]"
+ struggle_britannia_ending_compromise_decision_opinion_tt: "All other [independent|E] [struggle_involved|E] [rulers|E] have at least [SCOPE.ScriptValue('struggle_britannia_ending_compromise_decision_opinion_value')|0] [opinion|E] of you or are the target of a [strong_hook|E] ([SCOPE.ScriptValue('struggle_britannia_ending_compromise_decision_opinion_counter_value')|0]/[SCOPE.ScriptValue('struggle_britannia_ending_ending_decision_foreign_realm_total_value')|0])"
+ struggle_britannia_ending_compromise_decision_independent_tt: "No other [independent|E] [struggle_involved|E] [rulers|E] are [king|E] or [emperor|E] [rank|E] (Current: [SCOPE.ScriptValue('struggle_britannia_ending_compromise_decision_independent_counter_value')|0])"
+ struggle_britannia_ending_compromise_decision_interloper_tt: "More than [SCOPE.ScriptValue('britannia_struggle_compromise_uninvolved_percent_value')]% of the [GetGeographicalRegion('world_europe_west_britannia').GetName] [region|E] is held by [struggle_interloper|E] or [struggle_uninvolved|E] [rulers|E] (Current: [SCOPE.ScriptValue('struggle_britannia_ending_compromise_decision_region_interloper_percent_value')|1]%)"
+ struggle_britannia_ending_compromise_truce_tt: "No [wars|E] between [struggle_involved|E] [independent|E] [rulers|E] (Current: [SCOPE.ScriptValue('struggle_britannia_ending_compromise_decision_war_counter_value')|0])"
+ struggle_britannia_ending_conciliation_decision_alliance_tt: "All other [independent|E] [struggle_involved|E] [rulers|E] have an [alliance|E] with you ([SCOPE.ScriptValue('struggle_britannia_ending_conciliation_decision_alliance_counter_value')|0]/[SCOPE.ScriptValue('struggle_britannia_ending_ending_decision_foreign_realm_total_value')|0])"
+
+ # Ending decision effects
+ britannia_struggle_hostility_opinion_tt: "[characters|E] of same [faith|E] and/or [culture|E] [opinion|E]: #positive_value +15#!"
+ britannia_struggle_hostility_opinion_negative_tt: "[characters|E] of other [struggle_involved|E] [faiths|E] and/or [cultures|E] [opinion|E]: #negative_value -15#!"
+ britannia_struggle_hostility_conversion_tt: "$task_conversion$ and/or $task_promote_culture$ [councillor_tasks|E] speed in [GetGeographicalRegion('world_europe_west_britannia').GetName] [region|E]: #P +50%#!"
+ britannia_struggle_hostility_conversion_holy_tt: "$task_conversion$ [councillor_task|E] speed in [GetGeographicalRegion('world_europe_west_britannia').GetName] [region|E]: #P +50%#!"
+ britannia_struggle_hostility_conversion_culture_tt: "$task_promote_culture$ [councillor_task|E] speed in [GetGeographicalRegion('world_europe_west_britannia').GetName] [region|E]: #P +50%#!"
+ britannia_struggle_hostility_list_tt: "Select one of the following modifiers for your [house|E]:\n$EFFECT_LIST_BULLET$[GetStaticModifier('britannia_struggle_hostility_house_faith_modifier').GetNameWithTooltip|L]. In addition, some [holy_wars|E] will be easier to wage.\n$EFFECT_LIST_BULLET$[GetStaticModifier('britannia_struggle_hostility_house_culture_modifier').GetNameWithTooltip|L]. In addition, some Conquest [wars|E] will be easier to wage.\n$EFFECT_LIST_BULLET$[GetStaticModifier('britannia_struggle_hostility_house_combined_modifier').GetNameWithTooltip|L]. In addition, some [holy_war|E] and Conquest [wars|E] will be easier to wage."
+ britannia_struggle_hostility_holy_cb_tt: "$HOLY_WAR_DUCHY_NAME$ [casus_bellis|E] against other [struggle_involved|E] [faiths|E]: #positive_value -50%#!"
+ britannia_struggle_hostility_holy_cb_joint_tt: "$HOLY_WAR_DUCHY_NAME$ [casus_bellis|E] against other [struggle_involved|E] [faiths|E]: #positive_value -50%#!\n$culture_parameter_cb_lower_piety_level_requirement$"
+ britannia_struggle_hostility_culture_cb_tt: "$CONQUEST_DUCHY_CB_NAME$ [casus_bellis|E] against other [struggle_involved|E] [cultures|E]: #positive_value -50%#!"
+ britannia_struggle_hostility_culture_tt: "All [struggle_involved|E] [cultures|E] lose #negative_value [SCOPE.ScriptValue('britannia_struggle_hostility_culture_acceptance_value')]%#! [cultural_acceptance|E] of each other"
+ britannia_struggle_hostility_culture_large_tt: "All [struggle_involved|E] [cultures|E] lose #negative_value [SCOPE.ScriptValue('britannia_struggle_hostility_culture_acceptance_large_value')]%#! [cultural_acceptance|E] of each other"
+ britannia_struggle_hostility_acceptance_tt: "Hostility in Britannia"
+ britannia_struggle_conciliation_marriage_unlocked_tt: "Permanently #positive_value allow#! interfaith [marriage|E] between all [struggle_involved|E] [cultures|E]"
+ britannia_struggle_conciliation_holy_war_disabled_tt: "Permanently #negative_value disable#! offensive [holy_wars|E] between all [struggle_involved|E] [cultures|E]"
+ britannia_struggle_conciliation_acceptance_tt: "Conciliation in Britannia"
+ britannia_struggle_conciliation_culture_tt: "All [struggle_involved|E] [cultures|E] gain #positive_value +50%#! [cultural_acceptance|E] of each other"
+ britannia_struggle_conciliation_join_war_tt: "Permanently allows [struggle_involved|E] [culture|E] and [faith|E] [rulers|E] to join each other's defensive [wars|E] against outside invaders of [GetGeographicalRegion('world_europe_west_britannia').GetName]"
+ britannia_struggle_compromise_house_rewards_tt: "Your and [independent|E] [struggle_involved|E] [rulerpossessive|E] [houses|E]"
+
+ # Modifiers
+ britannia_struggle_hostility_house_faith_modifier: "Faith Hostility"
+ britannia_struggle_hostility_house_faith_modifier_desc: "This house has conquered most of Britannia in the name of their faith."
+ britannia_struggle_hostility_house_culture_modifier: "Cultural Hostility"
+ britannia_struggle_hostility_house_culture_modifier_desc: "This house has conquered most of Britannia in the name of their people."
+ britannia_struggle_hostility_house_combined_modifier: "Domination Hostility"
+ britannia_struggle_hostility_house_combined_modifier_desc: "This house has conquered most of Britannia in the name of their faith and people."
+ britannia_struggle_hostility_faith_conversion_task_desc: "$britannia_struggle_hostility_house_faith_modifier$"
+ britannia_struggle_hostility_culture_conversion_task_desc: "$britannia_struggle_hostility_house_culture_modifier$"
+ britannia_struggle_conciliation_house_reward_modifier: "Conciliation"
+
+ # Ending Events
+ # Hostility - Generic
+ britannia_struggle.9000.t: "$struggle_britannia_ending_hostility_decision_generic$"
+ britannia_struggle.9000.desc: "We have fought long and hard to become the true masters of the British Isles, and none can deny us our moment of triumph. There is now no other realm that can truly contest [ROOT.Char.GetPrimaryTitle.GetAdjectiveNoTooltip] dominance in Britannia, nor the [ROOT.Char.GetFaith.PriestNeuterPlural] and settlers who bring the word of [ROOT.Char.GetFaith.HighGodName] and [ROOT.Char.GetCulture.GetName] civilization to its villages.\n\nAll that remains is to declare this victory and decide how to proceed with our rule."
+ britannia_struggle.90xx.a: "This shall be a land of [ROOT.Char.GetFaith.HighGodName]!"
+ britannia_struggle.90xx.b: "The settlement of Britannia will be our focus."
+ britannia_struggle.90xx.c: "[ROOT.Char.GetFaith.HighGodName] has given Britannia to the [ROOT.Char.GetCulture.GetCollectiveNounNoTooltip]!"
+ britannia_struggle.9010.opening.involved: "The Romans were once a stabilizing presence in the British Isles. When they left, all hell broke loose as petty warlords of all manner of cultures and faiths battled one another in the power vacuum that was left. Today, that ends – even if it thanks to the efforts of others."
+ britannia_struggle.9010.opening: "The Romans were once a stabilizing presence in the British Isles. When they left, all hell broke loose as petty warlords, of all manner of cultures and faiths, battled one another in the power vacuum that was left. Today, that ends... supposedly."
+ britannia_struggle.9010.desc: "\n\nThe mighty [struggle_ender.GetTitledFirstName] now controls much of the British Isles, and has proclaimed [struggle_ender.GetHerselfHimself] the ultimate victor of the struggles set in motion long ago when the Romans abandoned Britannia.\n\n"
+ britannia_struggle.9010.closing.faith: "[struggle_ender.GetSheHe|U] has proclaimed Britannia to be a [struggle_ender.GetFaith.GetAdjective] land, and that, [struggle_ender.GetFaith.HighGodName] willing, all heretics and infidels will be driven from [struggle_ender.GetHerHis] domain."
+ britannia_struggle.9010.closing.culture: "[struggle_ender.GetSheHe|U] has proclaimed Britannia belongs to the [struggle_ender.GetCulture.GetName], and that all foreign peoples – whether invaders or the subjugated – accept this reality."
+ britannia_struggle.9010.closing.combined: "[struggle_ender.GetSheHe|U] has proclaimed Britannia and [struggle_ender.GetPrimaryTitle.GetNameNoTier] to be one and the same, now delivered to the hands of the [struggle_ender.GetFaith.GetAdjective] [struggle_ender.GetCulture.GetName] by [struggle_ender.GetFaith.HighGodName]..."
+ britannia_struggle.9010.a: "The situation has not developed necessarily to our advantage, has it?"
+ britannia_struggle.9010.b: "Interesting.... Who knows what will happen next in Britannia?"
+
+ # Hostility - Germanic
+ britannia_struggle.9001.t: "$struggle_britannia_ending_hostility_decision_generic$"
+ britannia_struggle.9001.desc: "\n\nThe history of our people is as complex as we are diverse, and as fraught as we are strong. Though our forefathers came here from continental Europe, we [ROOT.Char.GetCulture.GetCollectiveNoun] can without a doubt call the British Isles our home now, for we are no longer strangers or foreigners to this land: we are its masters! There is now no other realm that can truly contest [ROOT.Char.GetPrimaryTitle.GetAdjectiveNoTooltip] dominance in Britannia, nor the [ROOT.Char.GetFaith.PriestNeuterPlural] and settlers who bring the word of [ROOT.Char.GetFaith.HighGodName] and [ROOT.Char.GetCulture.GetName] civilization to its villages.\n\nAll that remains is to declare this victory and decide how to proceed with our rule."
+
+ # Hostility - Celtic
+ britannia_struggle.9002.t: "$struggle_britannia_ending_hostility_decision_generic$"
+ britannia_struggle.9002.desc: "\n\nWe [ROOT.Char.GetCulture.GetNameNoTooltip] have endured centuries of encroachment: Romans, Saxons, Vikings... but, with time, each of them faltered. Today, the fate of Britannia is in #EMP our#! hands once more. There is now no other realm that can truly contest [ROOT.Char.GetPrimaryTitle.GetAdjectiveNoTooltip] dominance in Britannia, nor the [ROOT.Char.GetFaith.PriestNeuterPlural] and settlers who bring the word of [ROOT.Char.GetFaith.HighGodName] and [ROOT.Char.GetCulture.GetName] civilization to its villages.\n\nAll that remains is to declare this victory and decide how to proceed with our rule."
+
+ # Hostility - Roman
+ britannia_struggle.9003.t: "$struggle_britannia_ending_hostility_decision_generic$"
+ britannia_struggle.9003.desc: "\n\nAfter centuries of raids by the barbarians of the north, the lands of Britannia are once again under the rule of Romans, and we in particular are at the forefront of this return to true civilization. There is now no other realm that can truly contest [ROOT.Char.GetPrimaryTitle.GetAdjectiveNoTooltip] dominance in Britannia, nor the [ROOT.Char.GetFaith.PriestNeuterPlural] and settlers who bring the word of [ROOT.Char.GetFaith.HighGodName] and [ROOT.Char.GetCulture.GetName] civilization to its villages.\n\nAll that remains is to declare this victory and decide how to proceed with our rule."
+
+ # Conciliation
+ britannia_struggle.9100.t: "$struggle_britannia_ending_conciliation_decision$"
+ britannia_struggle.9100.desc: "\n\nWe should always strive for greater peace, even if strife and bloodshed may still sometimes occur. Although the Roman Empire is no longer here as a stabilizing element in Britannia, that does not mean we cannot unite to bring stability to this land together. There is no doubt we have what it takes.\n\nAs one of the most influential and respected leaders in the British Isles, I am now in a position to enforce a sworn guarantee of protection, ensuring that the diverse peoples of the region live and worship freely.\n\nNow, as a new chapter dawns in the history of Britannia, one can only hope this era of peace and harmony will stay for the long run."
+ britannia_struggle.9100.a: "A good day for the British Isles!"
+ britannia_struggle.9110.desc: "\n\nSome are now cautiously optimistic about the future. It appears the great [struggle_ender.GetTitledFirstName], who is respected throughout the British Isles and wields great political influence, has sent heralds to proclaim guarantees of free passage and worship for all, stating that [struggle_ender.GetSheHe] will enforce these guarantees through means of diplomacy."
+ britannia_struggle.9110.a: "The people of Britannia now look to a better tomorrow!"
+ tfe_struggle_compromise_destroy_britannia_tt:0 "The [empire|E] of [GetTitleByKey('e_britannia').GetNameNoTier] is permanently #negative_value destroyed#!""
+ tfe_struggle_compromise_create_new_kingdoms_tt:0 "Every [independent|E] or separated [duchy|E] in the [GetGeographicalRegion('world_europe_west_britannia').GetName] [region|E] becomes a [de_jure|E] [kingdom|E]"
+ tfe_struggle_compromise_create_new_empires_tt:1 "Every [de_jure|E] [kingdom|E] in the [GetGeographicalRegion('world_europe_west_britannia').GetName] [region|E] with more than [EmptyScope.ScriptValue('fp2_struggle_compromise_ending_minimal_empire_size')|0] [counties|E] becomes a [de_jure|E] [empire|E]. The remaining [kingdoms|E] will fall under the [de_jure|E] of a neighboring [empire|E]."
+
+ # Compromise
+ britannia_struggle.0901.t:0 "$struggle_britannia_ending_compromise_decision$"
+ britannia_struggle.0901.desc:1 "\n\nConstant bloodshed and devastation has taken its toll on this land. And for what? Nothing. It is clear that the British Isles were never meant to be reunified after the old Roman Empire departed from these shores, at least not for a very long time.\n\nAlas, we must be content with [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip]. The rest of Britannia will have to remain a divided mess of different peoples and beliefs."
+ britannia_struggle.0901.a:0 "It is what it is."
+ britannia_struggle.0911.desc:0 "\n\n[struggle_ender.GetTitledFirstName], one of the mightiest rulers in Britannia, has officially renounced any intentions to unite the British Isles under one banner. Even someone as great and influential as [struggle_ender.GetHerHim] knows that Britannia has become too divided after the Romans left.\n\nThe British Isles, as it were, will remain a divided mess of different peoples and beliefs for the foreseeable future. The future is most uncertain, and not necessarily in a good way, either."
+ britannia_struggle.0911.a:0 "The legacy of Britannia will live on in our hearts, nonetheless."
+ britannia_struggle_compromise_create_new_kingdoms_tt:0 "Every [independent|E] or separated [duchy|E] in the [GetGeographicalRegion('world_europe_west_britannia').GetName] [region|E] becomes a [de_jure|E] [kingdom|E]"
+ struggle_britannia_ending_compromise_decision_correct_phase_tt:1 "The current [struggle_phase|E] is the [struggle_britannia_phase_compromise|E]"

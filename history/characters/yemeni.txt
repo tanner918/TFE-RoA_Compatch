@@ -1,0 +1,78 @@
+﻿
+#Yufirids
+188732 = {
+	name = "Muhammad" # fictitious
+	dynasty = 1042164 # Yufirid
+	religion = "ashari"
+	culture = "yemeni"
+	739.8.12 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+
+188733 = {
+	name = "Yu_fir" # fictitious
+	dynasty = 1042164 # Yufirid
+	religion = "ashari"
+	culture = "yemeni"
+	father = 188732
+	765.1.1 = {
+		birth = yes
+	}
+	825.1.1 = {
+		death = yes
+	}
+}
+
+145965 = {
+	name = "Philemon"
+	dynasty = 1022236
+	religion = "nestorian"
+	culture = "yemeni"
+
+	737.1.1 = {
+		birth = "737.1.1"
+	}
+	789.1.1 = {
+		death = "789.1.1"
+	}
+}
+
+145966 = {
+	name = "Athanasios"
+	dynasty = 1022236
+	religion = "nestorian"
+	culture = "yemeni"
+	father = 145965
+	757.1.1 = {
+		birth = "757.1.1"
+	}
+	822.1.1 = {
+		death = "822.1.1"
+	}
+}
+
+
+200046 = {
+	name = "Husayn" # Husayn ibn Yahya al-Ansari, Walih of Zaragoza (771-788) & Sheik of Albarracin, Calatayud, Fraga & Zaragoza (771-788)
+	dynasty = 1046004 # Ansarid Dynasty
+	religion = ashari
+	culture = yemeni
+	trait = education_intrigue_3
+
+	740.1.1 = {
+		birth = yes
+	}
+	768.1.1 = {
+		add_spouse = 200047 # Ayab (visigothic.txt)
+	}
+	788.6.10 = {
+		death = {
+			death_reason = death_battle
+			killer = 73810 # Walih Musa ibn Furtun of Zaragoza
+		}
+	}
+}

@@ -1,0 +1,259 @@
+﻿#### Local Types ####
+@administration_1 = "gfx/interface/icons/culture_innovations/innovation_administration_01.dds"
+@administration_2 = "gfx/interface/icons/culture_innovations/innovation_administration_02.dds"
+@administration_3 = "gfx/interface/icons/culture_innovations/innovation_administration_03.dds"
+@civil_construction_1 = "gfx/interface/icons/culture_innovations/innovation_civil_construction_01.dds"
+@civil_construction_2 = "gfx/interface/icons/culture_innovations/innovation_civil_construction_02.dds"
+@leadership_1 = "gfx/interface/icons/culture_innovations/innovation_leadership_01.dds"
+@leadership_2 = "gfx/interface/icons/culture_innovations/innovation_leadership_02.dds"
+@raised_banner = "gfx/interface/icons/culture_innovations/innovation_raised_banner.dds"
+@fortifications = "gfx/interface/icons/culture_innovations/innovation_fortifications.dds"
+@siege_weapons = "gfx/interface/icons/culture_innovations/innovation_siege_weapons.dds"
+@levy_building = "gfx/interface/icons/culture_innovations/innovation_levy_building.dds"
+@maa_01 = "gfx/interface/icons/culture_innovations/innovation_maa_01.dds"
+@maa_02 = "gfx/interface/icons/culture_innovations/innovation_maa_02.dds"
+@weapons_and_armor_01 = "gfx/interface/icons/culture_innovations/innovation_weapons_and_armor_01.dds"
+@weapons_and_armor_02 = "gfx/interface/icons/culture_innovations/innovation_weapons_and_armor_02.dds"
+@knight = "gfx/interface/icons/culture_innovations/innovation_knight.dds"
+@hird = "gfx/interface/icons/culture_innovations/innovation_hird.dds"
+@longboats = "gfx/interface/icons/culture_innovations/innovation_longboats.dds"
+@majesty_01 = "gfx/interface/icons/culture_innovations/innovation_majesty_01.dds"
+@majesty_02 = "gfx/interface/icons/culture_innovations/innovation_majesty_02.dds"
+@majesty_03 = "gfx/interface/icons/culture_innovations/innovation_majesty_03.dds"
+@nobility_01 = "gfx/interface/icons/culture_innovations/innovation_nobility_01.dds"
+@nobility_02 = "gfx/interface/icons/culture_innovations/innovation_nobility_02.dds"
+@nobility_03 = "gfx/interface/icons/culture_innovations/innovation_nobility_03.dds"
+@nobility_04 = "gfx/interface/icons/culture_innovations/innovation_nobility_04.dds"
+@misc_inventions = "gfx/interface/icons/culture_innovations/innovation_misc_inventions.dds"
+
+@camel = "gfx/interface/icons/culture_innovations/innovation_camel.dds"
+@elephant = "gfx/interface/icons/culture_innovations/innovation_elephant.dds"
+@special_maa_01 = "gfx/interface/icons/culture_innovations/innovation_special_maa_01.dds"
+@special_maa_02 = "gfx/interface/icons/culture_innovations/innovation_special_maa_02.dds"
+
+#culture_group_military
+##### MILITARY INOVATIONS
+innovation_scorpio = {
+	group = culture_group_military
+	culture_era = culture_era_classical_antiquity
+	icon = @siege_weapons
+
+	unlock_maa = scorpio
+
+	flag = global_regular
+	flag = classical_antiquity_era_regular
+}
+innovation_war_dogs = {
+	group = culture_group_military
+	culture_era = culture_era_classical_antiquity
+	icon = @knight
+
+	unlock_maa = war_dogs
+
+	flag = global_regular
+	flag = classical_antiquity_era_regular
+}
+innovation_tanning_tables = {
+	group = culture_group_military
+	culture_era = culture_era_classical_antiquity
+	icon = @weapons_and_armor_01
+
+	maa_upgrade = {
+		type = light_infantry
+		damage = 2
+		toughness = 2
+	}
+
+	flag = global_regional
+	flag = classical_antiquity_era_regional
+}
+innovation_mustering_grounds = {
+	group = culture_group_military
+	culture_era = culture_era_classical_antiquity
+	icon = @leadership_2
+
+        character_modifier = {
+		men_at_arms_cap = 1
+		men_at_arms_limit = 2
+	}
+
+	flag = global_regular
+	flag = classical_antiquity_era_regional
+}
+innovation_animal_husbandry = {
+	group = culture_group_military
+	culture_era = culture_era_classical_antiquity
+	icon = @knight
+
+	maa_upgrade = {
+		type = light_cavalry
+		toughness = 2
+	}
+	maa_upgrade = {
+		type = heavy_cavalry
+		toughness = 2
+	}
+
+	flag = global_regional
+	flag = classical_antiquity_era_regional
+}
+# 				MISSING THREE CIVIC INNOVATIONS
+#
+#
+#
+#
+#
+#
+#				FORTIFICATION RELATED
+#
+#
+#				MISCELLANEOUS STAT BOOST
+#
+#
+#				(Army Size) MISCELLANEOUS STAT BOOST
+#
+#
+##### CIVIC INOVATIONS
+innovation_development_01 = {
+	group = culture_group_civic
+	culture_era = culture_era_classical_antiquity
+	icon = @civil_construction_1
+
+	custom = reduce_develop_county_penalty_01
+
+	flag = global_regular
+	flag = classical_antiquity_era_regular
+}
+innovation_city_planning = {
+	group = culture_group_civic
+	culture_era = culture_era_classical_antiquity
+	icon = @fortifications
+
+	unlock_building = city_01
+	unlock_building = temple_01
+	unlock_building = monastic_schools_01
+	unlock_building = megalith_01
+	unlock_building = market_villages_01
+
+	flag = global_regular
+	flag = classical_antiquity_era_regular
+}
+innovation_casus_belli = {
+	group = culture_group_civic
+	culture_era = culture_era_classical_antiquity
+	icon = @administration_1
+
+	unlock_casus_belli = individual_county_de_jure_cb
+
+	flag = global_regular
+	flag = classical_antiquity_era_regular
+}
+# innovation_armilary_sphere = {
+# 	group = culture_group_civic
+# 	culture_era = culture_era_classical_antiquity
+# 	icon = @misc_inventions
+
+#         character_modifier = {
+# 		naval_movement_speed_mult = 0.25
+# 	}
+
+# 	flag = global_regular
+# 	flag = classical_antiquity_era_regular
+# }
+innovation_heavy_plow = {
+	group = culture_group_civic
+	culture_era = culture_era_classical_antiquity
+	icon = @civil_construction_2
+
+        character_modifier = {
+		farmlands_attrition_mult = -0.05
+		farmlands_advantage = 2
+	}
+	custom = innovation_heavy_plow_farms_modifier
+
+	flag = global_regular
+	flag = classical_antiquity_era_regular
+}
+
+innovation_imperial_divinity = {
+	group = culture_group_regional
+	culture_era = culture_era_classical_antiquity
+	icon = @leadership_1
+
+	custom = unlocks_imperial_authority_unlock
+        character_modifier = {
+		levy_reinforcement_rate_same_faith = 0.05
+		domain_tax_same_faith_mult = 0.01
+	}
+	potential = {
+		has_cultural_pillar = heritage_latin
+	}
+
+	flag = global_regional
+	flag = classical_antiquity_era_regional
+}
+
+innovation_client_states = {
+	group = culture_group_military
+	culture_era = culture_era_classical_antiquity
+	icon = @raised_banner
+
+	custom = unlocks_tributaries
+
+	flag = global_regular
+	flag = classical_antiquity_era_regular
+}
+innovation_imperial_faith = {
+	group = culture_group_civic
+	culture_era = culture_era_classical_antiquity
+	icon = @administration_3
+
+	custom = unlocks_imperial_faiths
+
+	flag = global_regular
+	flag = classical_antiquity_era_regular
+}
+# 				MISSING TWO CIVIC INNOVATIONS
+#
+#
+#
+#
+#
+#
+#				INHERITENCE RELATED
+#
+#
+#				MISCELLANEOUS STAT BOOST
+#
+#
+
+
+innovation_plane_astrolabe = {
+	group = culture_group_civic
+	culture_era = culture_era_classical_antiquity
+	icon = @misc_inventions
+
+	character_modifier = {
+		naval_movement_speed_mult = 0.05
+		build_gold_cost = -0.05
+	}
+
+	flag = global_regular
+	flag = classical_antiquity_era_regular
+}
+
+innovation_constitutio_geiserici = {
+	group = culture_group_regional
+	culture_era = culture_era_classical_antiquity
+	icon = @nobility_01
+	
+	potential = {
+		this = culture:vandal
+	}
+	
+	unlock_law = single_heir_dynasty_house
+	custom = unlock_single_heir_dynasty_house_changing
+	
+	flag = global_regional
+	flag = tribal_era_regional
+}

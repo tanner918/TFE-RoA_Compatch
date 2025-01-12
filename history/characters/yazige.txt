@@ -1,0 +1,76 @@
+﻿limigantes_01 = {
+	name = "Zantik"
+	dynasty = limigantes_dynasty
+	culture = "yazige"
+	religion = "scythian_pagan"
+	339.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+yazige_01 = {
+	name = "Babay"
+	dynasty = babay_dynasty
+	culture = "yazige"
+	religion = "scythian_pagan"
+	425.1.1 = {
+		birth = yes
+	}
+	470.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = 992016 # Theodoric the great
+		}
+	}
+}
+yazige_02 = {
+	name = "Beuka"
+	dynasty = babay_dynasty
+	culture = "yazige"
+	religion = "scythian_pagan"
+	father = yazige_01
+	455.1.1 = {
+		birth = yes
+	}
+	510.1.1 = {
+		death = yes
+	}
+}
+yazige_03 = {
+	name = "Buzan"
+	dynasty = babay_dynasty
+	culture = "yazige"
+	religion = "scythian_pagan"
+	father = yazige_02
+	485.1.1 = {
+		birth = yes
+	}
+	540.1.1 = {
+		death = yes
+	}
+}
+
+
+
+##################################################################################
+# 
+# FICTITIOUS PLACEHOLDERS
+# By Cybrxkhan
+# 
+##################################################################################
+
+
+
+yazige_misc_001 = {
+	name = "Ber"
+	culture = "yazige"
+	religion = "scythian_pagan"
+	492.5.10 = {
+		birth = yes
+	}
+	546.7.30 = {
+		death = yes
+	}
+}

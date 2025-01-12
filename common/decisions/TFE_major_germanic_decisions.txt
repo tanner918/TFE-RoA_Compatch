@@ -1,0 +1,1322 @@
+﻿# Modernize the Frankish Kingdom
+#modernize_franks_decision = {
+#	picture = "gfx/interface/illustrations/decisions/decision_knight_kneeling.dds"
+#	desc = modernize_franks_decision_desc
+#	selection_tooltip = modernize_franks_decision_tooltip
+#	major = yes
+
+#	ai_check_interval = 120
+
+#	is_shown = {
+#		is_ruler = yes
+#		is_landed = yes
+#		OR = {
+#			has_title = title:k_franks
+#			AND = {
+#				title:k_franks = {
+#					is_title_created = no
+#				}
+#				culture = {
+#					any_parent_culture_or_above = {
+#						THIS = culture:frankish
+#					}
+#				}
+#			}
+#		}
+#		NOT = {  #Can only do it once.
+#			is_target_in_global_variable_list = {
+#				name = unavailable_unique_decisions
+#				target = flag:modernized_franks
+#			}
+#		}		
+#	}
+
+#	is_valid = {
+#		prestige_level >= high_prestige_level
+
+#		OR = {
+#			religion = religion:christianity_religion
+#			religion = religion:germanic_religion
+#			culture = culture:frankish
+#		}
+
+#		is_independent_ruler = yes
+
+#		completely_controls_region = custom_rhineland
+#	}
+
+#	is_valid_showing_failures_only = {
+#		is_imprisoned = no
+#		is_independent_ruler = yes
+#	}
+
+#	effect = {
+#		add_prestige = 200
+#		give_nickname = nick_the_great
+#		if = {
+#			limit = {
+#				title:k_franks = {
+#					is_title_created = no
+#				}
+				
+#			}
+#			create_title_and_vassal_change = {
+#				type = usurped
+#				save_scope_as = title_change
+#				add_claim_on_loss = no
+#			}
+#			title:k_franks = {
+#				change_title_holder = {
+#					holder = root
+#					change = scope:title_change
+#				}
+#			}
+#			resolve_title_and_vassal_change = scope:title_change
+#		}
+#		hidden_effect = {
+#			every_county_in_region = {
+#				region = custom_rhineland
+#				duchy = {
+#					set_de_jure_liege_title = title:k_franks
+#				}
+#			}
+#			title:k_franks = {
+#				set_de_jure_liege_title = title:e_germany
+#			}
+			
+			
+#			add_to_global_variable_list = {
+#				name = unavailable_unique_decisions
+#				target = flag:modernized_franks
+#			}
+#		}
+		
+#		trigger_event = germanic_events.0001
+#	}
+
+#	ai_potential = {
+#		always = yes
+#	}
+
+#	cost = {
+#		gold = 100
+#	}
+
+#	ai_will_do = {
+#		base = 100
+#	}
+#}
+
+# Unite the Frankish Tribes
+unite_franks_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_unite_the_franks.dds"
+	}
+	decision_group_type = cultural
+
+	desc = unite_franks_decision_desc
+	selection_tooltip = unite_franks_decision_tooltip
+
+	ai_check_interval = 120
+
+	is_shown = {
+		is_ruler = yes
+		is_landed_or_landless_administrative = yes
+		OR = {
+			culture = culture:salian
+			culture = culture:ripurian
+		}
+		NOT = {  #Can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:united_franks
+			}
+		}
+	}
+
+	is_valid = {
+		is_independent_ruler = yes
+		highest_held_title_tier > 2
+
+		OR = {
+			culture = culture:salian
+			culture = culture:ripurian
+		}
+
+		custom_description = {
+			text = hold_frankish_land
+			NOT = {
+				culture:salian = {
+					any_culture_county = {
+						NOT = { 
+							holder.top_liege = root 
+						}
+					}
+				}
+				culture:ripurian = {
+					any_culture_county = {
+						NOT = { 
+							holder.top_liege = root 
+						}
+					}
+				}
+			}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_imprisoned = no
+		is_independent_ruler = yes
+	}
+
+	effect = {
+		custom_tooltip = unite_the_franks_effect_tooltip_1
+		#add_prestige = 750
+		give_nickname = nick_the_great
+		
+		trigger_event = germanic_events.0002
+
+		show_as_tooltip = {
+			unite_franks_culture_effect = yes
+		}
+
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:united_franks
+		}
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	cost = {
+		gold = 250
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+###############################################################
+#															  #
+# 			Establish a new Capital for the Visigoths 		  #
+# 							by Juli				 			  #
+#															  #
+###############################################################
+visigothic_capital_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+	}
+	decision_group_type = cultural
+
+	desc = visigothic_capital_decision_desc
+	selection_tooltip = visigothic_capital_decision_tooltip
+
+	ai_check_interval = 120
+
+	is_shown = {
+		exists = global_var:wre_collapsed #WRE has fallen
+		# Only should be visible for Recently established Visigoths
+		is_ruler = yes
+		is_landed_or_landless_administrative = yes
+		exists = dynasty
+		NOT = {  #Can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:founded_visigothic_capital
+			}
+		}
+		OR ={
+			culture = { has_cultural_pillar = heritage_east_germanic } # This way other germanic lords that end up being Visigoth Kings may do it too
+			culture = culture:visigothic # This way other post-roman Visigothic lords can also take the decision
+			culture = culture:ostrogothic # This way other post-roman Visigothic lords can also take the decision
+		}
+		root.faith = {
+			religion_tag = christianity_religion
+		}
+		has_title = title:k_visigoths
+		# Must hold a county in Hispania or France
+		any_held_title = {
+			tier = tier_county
+			OR = {
+				title_province = { geographical_region = world_europe_west_iberia }
+				title_province = { geographical_region = world_europe_west_francia }
+			}
+		}
+		# By 567 Toledo became Capital
+		NOT = { game_start_date >= 567.1.1 }
+	}
+
+	is_valid = {
+		#Must be independent.
+		is_independent_ruler = yes
+		#Has to be around to organise the construction.
+		is_imprisoned = no
+		#Must have a capital within title:e_spain or e_france, as we'll use this as a fallback.
+		
+		custom_description = {
+			text = visigothic_capital_decision_your_capital_is_in_spain_or_gaul
+			OR = {
+				capital_county = { title_province = { geographical_region = world_europe_west_iberia }}
+				capital_county = { title_province = { geographical_region = world_europe_west_francia }}
+			}
+		}
+		OR = {
+			religion = religion:christianity_religion
+		}
+		#Should have a decent prestige level.
+		OR = {
+			prestige_level >= very_high_prestige_level
+			AND = {
+				prestige_level >= high_prestige_level
+				completely_controls = title:c_toledo
+			}
+			AND = {
+				prestige_level >= high_prestige_level
+				completely_controls = title:c_toulouse
+			}
+		}
+		#Repeat the time limit concern just so that the player knows it's a thing.
+		custom_description = {
+			text = found_capital_of_the_visigoths_decision_before_last_date
+			current_date <= 600.1.1
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_available_at_peace_adult = yes
+	}
+
+	effect = {
+		save_scope_as = founder
+		#Nab scope:founder's capital for the initial tooltip; this may be changed in the actual event.
+		scope:founder.capital_county = { save_scope_as = new_visigothic_capital }
+		show_as_tooltip = { found_capital_of_visigoths_scripted_effect = yes }
+		trigger_event = { id = TFE_major_decisions.0020 }
+		#Notifying other players is done in scope:founder's event, as scope:founder may change the circumstances of the decision with their option choice.
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:founded_visigothic_capital
+			}
+		}
+	}
+
+	cost = {
+		gold = 500
+		prestige = 1000
+		piety = 500	
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 0
+
+		# Weight up for traits.
+		modifier = {
+			add = 25
+			has_trait = ambitious
+		}
+		modifier = {
+			add = 25
+			has_trait = arrogant
+		}
+		modifier = {
+			add = 25
+			has_trait = architect
+		}
+		modifier = {
+			add = 25
+			has_trait = administrator
+		}
+		modifier = {
+			add = 25
+			has_trait = viking
+		}
+
+		# Weight up for game year.
+		modifier = {
+			add = 25
+			current_year >= 476
+		}
+		modifier = {
+			add = 25
+			current_year >= 500
+		}
+	}
+}
+
+secure_gaul_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_germanic_warrior.dds"
+	}
+	decision_group_type = cultural
+
+	desc = secure_gaul_decision_desc
+	selection_tooltip = secure_gaul_decision_tooltip
+
+	ai_check_interval = 10
+
+	is_shown = {
+		game_start_date = 476.9.4
+		is_ruler = yes
+		is_landed_or_landless_administrative = yes
+		has_title = title:k_visigoths
+		AND = {
+			title:k_france = {
+				is_title_created = yes
+			}
+			title:k_france.holder = {
+				OR = {
+					culture = culture:frankish
+					culture = culture:salian
+					culture = culture:ripurian
+				}
+			}
+		}
+		NOT = {  #Can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:secure_gaul_decision
+			}
+		}
+		any_neighboring_realm_same_rank_owner = {
+			THIS = title:k_france.holder
+		}
+
+	}
+
+	is_valid = {
+		is_independent_ruler = yes
+		
+	}
+
+	is_valid_showing_failures_only = {
+		is_imprisoned = no
+	}
+
+	effect = {
+		custom_tooltip = secure_gaul_decision_effect_tooltip_1
+		add_prestige = 350
+		add_unpressed_claim = title:k_france
+		trigger_event = germanic_events.0005
+		title:k_france.holder= {
+			trigger_event = germanic_events.0006
+		}
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:secure_gaul_decision
+		}
+		every_realm_county = {
+			limit = {
+				any_title_to_title_neighboring_county = {
+					OR = {
+						holder = {
+							has_title = title:k_france
+						}
+						holder = {
+							any_liege_or_above = {
+								has_title = title:k_france
+							}
+						}
+					}
+				}
+			}
+			title_province = {
+				add_province_modifier = {
+					modifier = secured_gaul_border
+					years = 5
+				}
+			}
+		}
+	}
+
+	ai_potential = {
+		always = yes
+	}
+	cost = {
+		gold = 100
+	}
+	ai_will_do = {
+		base = 100
+	}
+}
+
+sow_dissent_ere_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_roman_generic.dds"
+	}
+	decision_group_type = major
+
+	desc = sow_dissent_ere_decision_desc
+	selection_tooltip = sow_dissent_ere_decision_tooltip
+
+	ai_goal = yes
+
+	is_shown = {
+		game_start_date = 476.9.4
+		is_ruler = yes
+		is_landed_or_landless_administrative = yes
+		has_title = title:k_italy
+		title:e_byzantium = {
+			is_title_created = yes
+		}
+		NOT = {  #Can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:sow_dissent_ere_decision
+			}
+		}
+		NOT = {
+			has_title = title:e_byzantium
+		}
+
+	}
+
+	is_valid = {
+		is_independent_ruler = yes
+		NOT = {
+			is_greek_or_roman = yes
+		}
+		NOT = {
+			is_allied_to = title:e_byzantium.holder
+		}
+		NOT = {
+			is_imprisoned_by = title:e_byzantium.holder
+		}
+		has_councillor_for_skill = intrigue
+
+	}
+
+	is_valid_showing_failures_only = {
+		is_imprisoned = no
+	}
+
+	effect = {
+		custom_tooltip = sow_dissent_ere_decision_effect_tooltip_1
+		add_prestige = 350
+		show_as_tooltip = {
+			title:e_byzantium.holder= {
+				add_character_modifier = {
+					modifier = sow_dissent_ere
+					years = 2
+				}
+				add_prestige = -200
+			}
+		}
+		save_scope_as = italy_holder_dissent
+		title:e_byzantium.holder= {
+			trigger_event = germanic_events.0010
+		}
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:sow_dissent_ere_decision
+		}
+		set_global_variable = {
+			name = ere_push_in_italy
+			value = flag:yes
+		}
+		
+		if = {
+			limit = {
+				title:e_byzantium.holder = {
+					is_permanent_tributary = {
+						SUZERAIN = title:e_byzantium.holder
+						TRIBUTARY = root
+					}
+				}
+			}
+			title:e_byzantium.holder = {
+				unset_tributary = {
+					TRIBUTARY = root
+					TRIBUTARY_BASE_TYPE = flag:permanent
+				}
+			}
+		}
+		
+	}
+
+	ai_potential = {
+		always = yes
+	}
+	cost = {
+		gold = 100
+	}
+	ai_will_do = {
+		base = 100
+	}
+}
+
+avenge_worms_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_germanic_auxiliaries.dds"
+	}
+	decision_group_type = major
+
+	desc = avenge_worms_decision_desc
+	selection_tooltip = avenge_worms_decision_tooltip
+
+	ai_check_interval = 10
+
+	is_shown = {
+		game_start_date = 476.9.4
+		is_ruler = yes
+		is_landed_or_landless_administrative = yes
+		has_title = title:k_burgundy
+		NOT = {  #Can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:avenge_worms_decision
+			}
+		}
+
+	}
+
+	is_valid = {
+		is_independent_ruler = yes
+		has_title = title:k_burgundy
+		completely_controls_region = custom_worms
+		prestige_level >= 3
+	}
+
+	is_valid_showing_failures_only = {
+		is_imprisoned = no
+	}
+
+	effect = {
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:avenge_worms_decision
+		}
+		add_character_modifier = avenged_worms_modifier
+		title:d_upper_lorraine = {
+			set_de_jure_liege_title = title:k_burgundy
+		}
+		title:d_west_franconia = {
+			set_de_jure_liege_title = title:k_burgundy
+		}
+		title:d_alsace = {
+			set_de_jure_liege_title = title:k_burgundy
+		}
+		random = {
+			chance = 25
+			custom_tooltip = avenge_worms_decision_tooltip_1
+			trigger_event = TFE_flavour_events.0006
+		}
+	}
+
+	ai_potential = {
+		always = yes
+	}
+	cost = {
+		prestige = 500
+	}
+	ai_will_do = {
+		base = 100
+	}
+}
+
+establish_true_suebian_kingdom = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_germanic_warrior_2.dds"
+	}
+	decision_group_type = major
+
+	desc = establish_true_suebian_kingdom_desc
+	selection_tooltip = establish_true_suebian_kingdom_tooltip
+	major = yes
+
+	ai_check_interval = 10
+
+	is_shown = {
+		game_start_date = 476.9.4
+		is_ruler = yes
+		is_landed_or_landless_administrative = yes
+		has_title = title:k_suebi
+		NOT = {  #Can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:establish_true_suebian_kingdom
+			}
+		}
+
+	}
+
+	is_valid = {
+		is_independent_ruler = yes
+		prestige_level >= 3
+		AND = {
+			has_title = title:k_suebi
+			has_title = title:k_spanish_galicia
+		}
+		completely_controls = title:k_spanish_galicia
+	}
+
+	is_valid_showing_failures_only = {
+		is_imprisoned = no
+	}
+
+	effect = {
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:establish_true_suebian_kingdom
+		}
+		change_government = feudal_government
+		get_title = title:k_suebians_of_gallicia
+		destroy_title = title:k_suebi
+		destroy_title = title:k_spanish_galicia
+		custom_tooltip = establish_true_suebian_kingdom_tooltip.a
+		custom_tooltip = establish_true_suebian_kingdom_tooltip.b
+		hidden_effect = {
+			title:k_spanish_galicia = {
+				every_in_de_jure_hierarchy = {
+					limit = {
+						tier = tier_duchy
+					}
+					set_de_jure_liege_title = title:k_suebians_of_gallicia
+				}
+			}
+			title:k_suebi = {
+				every_in_de_jure_hierarchy = {
+					limit = {
+						tier = tier_duchy
+					}
+					set_de_jure_liege_title = title:k_suebians_of_gallicia
+				}
+			}
+			title:k_suebians_of_gallicia = {
+				set_de_jure_liege_title = title:e_spain
+				set_coa = title:k_suebi
+				every_in_de_jure_hierarchy = {
+					limit = {
+						tier = tier_county
+					}
+					if ={
+						limit = {
+							culture = culture:old_suebi
+						}
+						set_county_culture = culture:western_suebi
+					}
+					if = {
+						limit = {
+							holder = {
+								culture = culture:old_suebi
+							}
+						}
+						holder = {
+							set_culture = culture:western_suebi
+						}
+					}
+				}
+			}
+			culture:western_suebi = {
+				reset_culture_creation_date = yes
+			}
+		}
+		add_character_modifier = {
+			modifier = established_suebians
+			years = 10
+		}
+	}
+
+	ai_potential = {
+		always = yes
+	}
+	cost = {
+		prestige = 500
+		gold = 100
+	}
+	ai_will_do = {
+		base = 100
+	}
+}
+
+#Hegemony Over Hispania By Sherif
+hegemony_over_hispania_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+	}
+	decision_group_type = major
+
+	title = hegemony_over_hispania
+	desc = hegemony_over_hispania_desc
+	selection_tooltip = hegemony_over_hispania_tooltip
+
+	is_shown = {
+		is_ruler = yes
+		is_landed_or_landless_administrative = yes
+		has_title = title:k_visigoths
+		highest_held_title_tier < tier_empire
+		game_start_date = 476.9.4
+	}
+
+	is_valid = {
+		has_primary_title = title:k_visigoths
+		completely_controls = title:k_andalusia
+		completely_controls = title:d_castilla
+		completely_controls = title:d_navarra
+		completely_controls = title:d_viscaya
+		completely_controls = title:c_cordoba
+		completely_controls = title:c_cordoba
+		completely_controls = title:c_murcia
+		completely_controls = title:c_tarragona
+		completely_controls = title:c_zaragoza
+		completely_controls = title:c_sevilla
+		completely_controls = title:c_merida
+		completely_controls = title:c_toledo
+
+		
+	}
+
+	is_valid_showing_failures_only = {
+		is_independent_ruler = yes
+		is_imprisoned = no
+		is_at_war = no
+	}
+
+	effect = {
+
+		if = {
+			limit = {
+				OR = {
+					title:k_suebians_of_gallicia = {
+						is_title_created = yes
+					}
+					title:k_suebi = {
+						is_title_created = yes
+					}
+				}
+			}
+			trigger_event = TFE_major_decisions.0023
+		}
+		custom_tooltip = hegemony_over_hispania_tooltip2
+		hidden_effect = {
+			title:d_cordoba = {
+				set_de_jure_liege_title = title:k_visigoths
+			}
+			title:d_murcia = {
+				set_de_jure_liege_title = title:k_visigoths
+			}
+			title:d_aragon = {
+				set_de_jure_liege_title = title:k_visigoths
+			}
+			title:d_sevilla = {
+				set_de_jure_liege_title = title:k_visigoths
+			}
+			title:d_barcelona = {
+				set_de_jure_liege_title = title:k_visigoths
+			}
+			title:d_tarraconensis = {
+				set_de_jure_liege_title = title:k_visigoths
+			}
+			title:d_toledo = {
+				set_de_jure_liege_title = title:k_visigoths
+			}
+			title:d_navarra = {
+				set_de_jure_liege_title = title:k_visigoths
+			}
+			title:d_viscaya = {
+				set_de_jure_liege_title = title:k_visigoths
+			}
+			title:d_castilla = {
+				set_de_jure_liege_title = title:k_visigoths
+			}
+			title:d_cantabria = {
+				set_de_jure_liege_title = title:k_visigoths
+			}
+			title:d_asturias = {
+				set_de_jure_liege_title = title:k_visigoths
+			}
+			title:d_leon = {
+				set_de_jure_liege_title = title:k_visigoths
+			}
+			title:d_galicia = {
+				set_de_jure_liege_title = title:k_visigoths
+			}
+			title:d_porto = {
+				set_de_jure_liege_title = title:k_visigoths
+			}
+			title:d_coimbra = {
+				set_de_jure_liege_title = title:k_visigoths
+			}
+			title:d_beja = {
+				set_de_jure_liege_title = title:k_visigoths
+			}
+			title:d_badajoz = {
+				set_de_jure_liege_title = title:k_visigoths
+			}
+			title:d_algarve = {
+				set_de_jure_liege_title = title:k_visigoths
+			}
+			title:d_granada = {
+				set_de_jure_liege_title = title:k_visigoths
+			}
+			title:d_carthaginensis = {
+				set_de_jure_liege_title = title:k_visigoths
+			}
+			title:d_mallorca = {
+				set_de_jure_liege_title = title:k_visigoths
+			}
+		}
+		
+		ai_goal = yes
+
+		ai_will_do = {
+			base = 100
+		}
+
+	}
+
+	cost = { prestige  = 500 }
+	ai_potential = {
+		always = yes
+	}
+	ai_will_do = {
+		base = 100
+	}
+}
+
+concession_of_italy = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_germanic_warrior.dds"
+	}
+	decision_group_type = major
+
+	desc = concession_of_italy_decision_desc
+	selection_tooltip = concession_of_italy_decision_tooltip
+
+	ai_check_interval = 5
+	cooldown = { years = 5 }
+
+	is_shown = {
+		is_ruler = yes
+		is_landed_or_landless_administrative = yes
+		is_independent_ruler = yes
+		game_start_date = 476.9.4
+		NOT = { has_title = title:e_italy }
+		AND = {
+			NOT = { has_title = title:e_byzantium }
+			NOT = { has_title = title:e_western_roman_empire }
+			NOT = { has_title = title:e_roman_empire }
+		}
+		OR = {
+			title:e_italy = {
+				is_title_created = yes
+			}
+			AND = {
+				title:k_italy = {
+					is_title_created = yes
+				}
+				NOT = { has_title = title:k_italy }
+				title:k_italy.holder = {
+					is_independent_ruler = yes
+				}
+			}
+			AND = {
+				title:k_sicily = {
+					is_title_created = yes
+				}
+				NOT = { has_title = title:k_sicily }
+				title:k_sicily.holder = {
+					is_independent_ruler = yes
+				}
+			}
+		}
+		any_sub_realm_county = {
+			NOT = { this = title:c_trapani }
+			NOT = { this = title:c_malta }
+			duchy = title:d_sicily
+			count >= 2
+		}
+		NOT = {
+			capital_county = {
+				duchy = title:d_sicily
+			}
+		}
+		NOT = {  #Can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:concession_of_italy_decision
+			}
+		}
+	}
+	is_valid = {
+		is_at_war = no
+		is_imprisoned = no
+	}
+	effect = {
+		trigger_event = germanic_events.0012
+		show_as_tooltip = {
+			every_held_title = {
+				limit = {
+					tier = tier_county
+					duchy = title:d_sicily
+					NOT = { this = title:c_trapani }
+					NOT = { this = title:c_malta }
+				}
+				create_title_and_vassal_change = {
+					type = granted
+					save_scope_as = change
+					add_claim_on_loss = no
+				}
+				change_title_holder_include_vassals = {
+					holder = title:k_italy.holder
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+			every_vassal = {
+				limit = {
+					capital_county = {
+						duchy = title:d_sicily
+					}
+				}
+				create_title_and_vassal_change = {
+					type = granted
+					save_scope_as = change
+					add_claim_on_loss = no
+				}
+				change_liege = {
+					liege = title:k_italy.holder
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+			add_opinion = {
+				target = title:k_italy.holder
+				opinion = 20
+				modifier = friendliness_opinion
+			}
+			title:k_italy.holder = {
+				add_opinion = {
+					target = root
+					opinion = 20
+					modifier = friendliness_opinion
+				}
+			}
+			title:k_italy.holder = {
+				add_truce_both_ways = {
+					character = root
+					years = 10
+					name = SICILY_TRUCE
+					result = white_peace
+				}
+			}
+		}
+	}
+	ai_potential = {
+		always = yes
+	}
+	cost = { prestige = { value = 250 if = { limit = { is_ai = yes } multiply = 0 } } }
+	ai_will_do = {
+		base = 100
+	}
+}
+
+reunite_franks_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_germanic_warrior_2.dds"
+	}
+	decision_group_type = cultural
+
+	desc = unite_franks_decision_desc
+	selection_tooltip = unite_franks_decision_tooltip
+
+	ai_check_interval = 120
+
+	is_shown = {
+		game_start_date = 532.2.1
+		is_ruler = yes
+		is_landed_or_landless_administrative = yes
+		culture = culture:frankish
+		highest_held_title_tier >= tier_kingdom
+		NOT = {  #Can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:reunite_franks_decision
+			}
+		}
+		title:k_franks = {
+			is_title_created = no
+		}
+	}
+
+	is_valid = {
+		is_independent_ruler = yes
+		culture = culture:frankish
+		highest_held_title_tier >= tier_kingdom
+		custom_tooltip = reunite_franks_decision_trigger_01
+		culture:frankish = {
+			any_culture_county = {
+				percent >= 0.6
+				holder.top_liege = root
+			}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_imprisoned = no
+		is_independent_ruler = yes
+	}
+
+	effect = {
+		give_nickname = nick_the_great
+		get_title = title:k_franks
+		set_primary_title_to = title:k_franks
+		add_prestige = 1000
+		every_vassal = {
+			limit = {
+				culture = culture:frankish
+			}
+			add_opinion = {
+				target = root
+				opinion = 50
+				years = 10
+				modifier = united_our_people
+			}
+		}
+		trigger_event = germanic_events.0024
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:reunite_franks_decision
+		}
+		
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	cost = {
+		gold = 250
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+form_the_hre_TFE = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_emperor_apotheosis.dds"
+	}
+	decision_group_type = major
+	
+	desc = form_the_hre_TFE_desc
+	selection_tooltip = form_the_hre_TFE_tooltip
+
+	ai_check_interval = 250
+
+	is_shown = {
+		is_ruler = yes
+		is_landed_or_landless_administrative = yes
+		highest_held_title_tier >= tier_kingdom
+		religion = religion:christianity_religion
+		NOT = {  #Can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:form_the_hre_TFE
+			}
+		}
+		AND = {
+			title:e_western_roman_empire = {
+				is_title_created = no
+			}
+			title:e_roman_empire = {
+				is_title_created = no
+			}
+		}
+		capital_county.title_province = {
+			geographical_region = world_europe_west
+		}
+		NOT = {
+			has_title = title:e_byzantium
+		}
+		NOT = {
+			culture = {
+				has_cultural_pillar = heritage_latin
+			}
+		}
+	}
+
+	is_valid = {
+		is_independent_ruler = yes
+		highest_held_title_tier >= tier_kingdom
+		religion = religion:christianity_religion
+		realm_size >= 60
+		completely_controls = title:c_ravenna
+		custom_description = {
+			text = form_the_hre_TFE_trigger_01
+			trigger_if = {
+				limit = {
+					title:e_byzantium = {
+						is_title_created = yes
+					}
+				}
+				title:e_byzantium.holder = {
+					any_realm_county = {
+						count <= form_hre_TFE_county_trigger
+						title_province = { geographical_region = form_the_hre_TFE_ere_region }
+					}
+				}
+			}
+		}
+		custom_description = {
+			text = form_the_hre_TFE_trigger_02
+			NOT = {
+				any_independent_ruler = {
+					AND = {
+						is_landed_or_landless_administrative = yes
+						capital_county.title_province ?= {
+							geographical_region = world_europe_west
+						}
+						highest_held_title_tier >= tier_kingdom
+						current_military_strength > form_hre_TFE_strength_trigger
+					}
+				}
+			}
+		}
+		
+	}
+
+	is_valid_showing_failures_only = {
+		is_imprisoned = no
+		is_independent_ruler = yes
+	}
+
+	effect = {
+		give_nickname = nick_the_great
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:form_the_hre_TFE
+		}
+
+		show_as_tooltip = {
+			restore_holy_roman_empire_decision_scripted_effect = yes
+		}
+		save_scope_as = founder
+		faith.religious_head = { save_scope_as = founder_hof }
+		if = {
+			limit = {
+				faith.religious_head = { is_landed = yes }
+			}
+			faith.religious_head.capital_province = { save_scope_as = ceremony_locale }
+		}
+		else = {
+			capital_province = { save_scope_as = ceremony_locale }
+		}
+		trigger_event = {
+			id = tfe_title_event.0010
+		}
+		#Notify other players.
+		every_player = {
+			limit = {
+				NOT = { this = root }
+				is_within_diplo_range = { CHARACTER = root }
+			}
+			trigger_event = tfe_title_event.0011
+		}
+		if = {
+			limit = {
+				is_ai = no
+				NOT = { exists = global_var:restore_holy_roman_empire_decision  }
+			}
+			set_global_variable = {
+				name = restore_holy_roman_empire_decision
+				value = root
+			}
+		}
+		# Assign Dynamic Prince-Electors
+		hidden_effect = {
+			if = {
+				limit = { has_global_variable_list = hre_elector_list }
+				clear_global_variable_list = hre_elector_list
+			}
+			while = {
+				count = 7
+				random_vassal = {
+					limit = {
+						capital_province.empire = title:e_hre # must be de-jure vassal of empire
+						OR = { # prince-bishopric or duchy
+							AND = {
+								government_has_flag = government_is_theocracy
+								primary_title.tier >= tier_county
+							}
+							primary_title.tier >= tier_duchy
+						}
+						NOT = { # not already selected
+							is_target_in_global_variable_list = {
+								name = hre_elector_list
+								target = primary_title
+							}
+						}
+					}
+					weight = {
+						modifier = { # major vassals heavily weighted
+							factor = 10
+							is_powerful_vassal = yes
+						}
+						modifier = { # same culture as emperor preferred
+							factor = 4
+							culture = root.culture
+						}
+						modifier = { # we don't mind going outside Germania, but prefer it
+							factor = 1.5
+							trigger = { exists = primary_title.title_province }
+							primary_title.title_province.barony = {
+								OR = {
+									target_is_de_jure_liege_or_above = title:k_bavaria
+									target_is_de_jure_liege_or_above = title:k_bohemia
+									target_is_de_jure_liege_or_above = title:k_east_francia
+									target_is_de_jure_liege_or_above = title:k_frisia
+									target_is_de_jure_liege_or_above = title:k_lotharingia
+									target_is_de_jure_liege_or_above = title:k_pomerania
+								}
+							}
+						}
+						modifier = { # we want at least 3 theocracies ideally
+							factor = 10
+							any_in_global_list = {
+								variable = hre_elector_list
+								count < 3
+								holder = { government_has_flag = government_is_theocracy }
+							}
+							government_has_flag = government_is_theocracy
+						}
+						modifier = { # 3 is enough theocracies unless we can't find feudal
+							factor = 0.1
+							any_in_global_list = {
+								variable = hre_elector_list
+								count >= 3
+								holder = { government_has_flag = government_is_theocracy }
+							}
+							government_has_flag = government_is_theocracy
+						}
+					}
+					add_to_global_variable_list = {
+						name = hre_elector_list
+						target = primary_title
+					}
+				}
+			}
+			hre_elector_list_save_effect = yes # saves list scopes to title as variables for tooltip
+		}
+		
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	cost = {
+		gold = 250
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}

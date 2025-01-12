@@ -1,0 +1,790 @@
+﻿namespace = islam
+
+islam.0001 = {
+	hidden = yes
+	scope = none
+
+	immediate = {
+		faith:united_islam = {
+			remove_doctrine = unavailable_doctrine
+		}
+		create_character = {
+			name = "Muhammed"
+			gender = male
+			location = title:b_al-madina
+			age = 57
+			faith = faith:united_islam
+			culture = culture:bedouin
+			dynasty_house = house:house_hashmid
+			trait = sayyid
+			trait = temperate
+			trait = generous
+			trait = just
+			trait = holy_warrior
+			trait = paragon
+			trait = zealous
+			trait = ambitious
+			trait = honest
+			trait = education_stewardship_3
+			save_scope_as = islam_prophet
+		}
+		scope:islam_prophet = {
+			set_sexuality = heterosexual
+			add_character_flag = {
+				flag = immune_to_disease
+				years = 15
+			}
+
+			add_character_flag = islam_prophet
+			set_global_variable = {
+				name = prophet
+				value = THIS
+			}
+
+			add_gold = 5000
+			add_prestige = 1000
+			add_piety = 50000
+
+			if = {
+				limit = {
+					title:d_medina = {
+						is_title_created = yes
+					}
+				}
+				title:d_medina = {
+					random_in_de_facto_hierarchy = {
+						limit = {
+							NOT = {
+								THIS = title:c_medina
+							}
+							tier = tier_county
+						}
+						save_scope_as = new_capital_not_medina
+					}
+					holder = {
+						set_realm_capital = scope:new_capital_not_medina
+					}
+				}
+			}
+
+			create_title_and_vassal_change = {
+				type = usurped
+				save_scope_as = title_change
+				add_claim_on_loss = no
+			}
+			title:c_medina = {
+				change_title_holder = {
+					holder = scope:islam_prophet
+					change = scope:title_change
+				}
+				set_title_name = ALMEDINA
+			}
+			title:d_medina = {
+				set_title_name = ALMEDINA
+			}
+			resolve_title_and_vassal_change = scope:title_change
+
+			title:c_medina = {
+				set_county_faith = faith:united_islam
+			}
+			
+
+			add_unpressed_claim = title:c_mecca
+
+			set_variable = {
+				name = cal_authority
+				value = 100
+			}
+			while = {
+				count = var:cal_authority
+				add_character_modifier = caliph_auth
+			}
+
+			spawn_army = {
+				name = "Muslim Mujahideen"
+				levies = 15000
+				men_at_arms = {
+					type = light_horsemen
+					stacks = 150
+				}
+				men_at_arms = {
+					type = light_footmen
+					stacks = 200
+				}
+				location = capital_province
+				uses_supply = no
+			}
+			change_government = caliphate_government
+			create_title_and_vassal_change = {
+				type = usurped
+				save_scope_as = title_change
+				add_claim_on_loss = no
+			}
+			title:e_rashidun = {
+				change_title_holder = {
+					holder = scope:islam_prophet
+					change = scope:title_change
+				}
+			}
+			resolve_title_and_vassal_change = scope:title_change
+			start_war = {
+				cb = county_conquest_cb 
+				target = title:c_mecca.holder
+				target_title = title:c_mecca
+			}
+		}
+		title:e_rashidun = {
+			add_title_law = rashidun_elective_succession_law
+		}
+		create_character = {
+			name = "AbuBakr"
+			gender = male
+			location = scope:islam_prophet.capital_province
+			age = 49
+			faith = faith:united_islam
+			culture = culture:bedouin
+			employer = scope:islam_prophet
+			trait = generous
+			trait = just
+			trait = holy_warrior
+			trait = paragon
+			trait = zealous
+			trait = honest
+			trait = sahabi_trait
+			trait = education_diplomacy_4
+			save_scope_as = AbuBakr
+		}
+		create_character = {
+			name = "Umar"
+			gender = male
+			location = scope:islam_prophet.capital_province
+			employer = scope:islam_prophet
+			age = 38
+			faith = faith:united_islam
+			culture = culture:bedouin
+			trait = generous
+			trait = just
+			trait = holy_warrior
+			trait = paragon
+			trait = zealous
+			trait = sahabi_trait
+			trait = honest
+			trait = education_martial_4
+			save_scope_as = Umar
+		}
+		create_character = {
+			name = "Uthman"
+			gender = male
+			location = scope:islam_prophet.capital_province
+			employer = scope:islam_prophet
+			age = 46
+			faith = faith:united_islam
+			dynasty_house = house:house_umayyad
+			culture = culture:bedouin
+			trait = generous
+			trait = just
+			trait = holy_warrior
+			trait = paragon
+			trait = zealous
+			trait = honest
+			trait = sahabi_trait
+			trait = education_stewardship_4
+			save_scope_as = Uthman
+		}
+		create_character = {
+			name = "Ali"
+			gender = male
+			location = title:c_medina.capital_province
+			employer = scope:islam_prophet
+			age = 23
+			faith = faith:united_islam
+			dynasty_house = house:house_hashmid
+			culture = culture:bedouin
+			trait = generous
+			trait = just
+			trait = sayyid
+			trait = holy_warrior
+			trait = paragon
+			trait = zealous
+			trait = honest
+			trait = sahabi_trait
+			trait = education_learning_4
+			save_scope_as = Ali
+		}
+		create_character = {
+			name = "KhalidIbnAlWalid"
+			gender = male
+			location = title:c_medina.capital_province
+			employer = scope:islam_prophet
+			age = 30
+			faith = faith:united_islam
+			culture = culture:bedouin
+			trait = just
+			trait = holy_warrior
+			trait = zealous
+			trait = education_martial_4
+			trait = logistician
+			trait = organizer
+			trait = military_engineer
+			trait = aggressive_attacker
+			trait = unyielding_defender
+			trait = forder
+			trait = flexible_leader
+			trait = desert_warrior
+			trait = open_terrain_expert
+			trait = sahabi_trait
+			save_scope_as = Khalid
+		}
+		scope:Ali = {
+			add_character_flag = {
+				flag = immune_to_disease
+				years = 15
+			}
+			set_sexuality = heterosexual
+			add_gold = 1000
+			add_prestige = 1000
+			add_piety = 5000
+			add_unpressed_claim = title:e_rashidun
+			add_character_flag = ali_flag
+		}
+		scope:AbuBakr = {
+			add_character_flag = {
+				flag = immune_to_disease
+				years = 15
+			}
+			set_sexuality = heterosexual
+			add_gold = 300
+			add_prestige = 500
+			add_piety = 5000
+			add_unpressed_claim = title:e_rashidun
+		}
+		scope:Umar = {
+			add_character_flag = {
+				flag = immune_to_disease
+				years = 15
+			}
+			set_sexuality = heterosexual
+			add_gold = 500
+			add_prestige = 1000
+			add_piety = 5000
+			add_unpressed_claim = title:e_rashidun
+		}
+		scope:Khalid = {
+			add_character_flag = {
+				flag = immune_to_disease
+				years = 15
+			}
+			set_sexuality = heterosexual
+			add_gold = 500
+			add_prestige = 1000
+			add_piety = 5000
+			add_unpressed_claim = title:e_rashidun
+		}
+		scope:Uthman = {
+			add_character_flag = {
+				flag = immune_to_disease
+				years = 15
+			}
+			set_sexuality = heterosexual
+			add_gold = 1000
+			add_prestige = 1000
+			add_piety = 5000
+			add_unpressed_claim = title:e_rashidun
+		}
+		
+	}
+}
+
+islam.0002 = {
+	title = islam.0002.t
+	desc = islam.0002.desc
+	scope = character
+	theme = faith
+
+	immediate = {
+		save_scope_as = tmp_zakah_giver
+		set_variable = {
+			name = tmp_zakah
+			value = gold
+		}
+		change_variable = {
+			name = tmp_zakah
+			multiply = 0.02
+		}
+	}
+
+	override_background = {
+		reference = throne_room
+	}
+	right_portrait = {
+		character = root
+		animation = worry
+	}
+
+	option = {
+		name = islam.0002.option.a
+		custom_tooltip = islam.0002.option.a.tooltip
+		remove_short_term_gold = var:tmp_zakah
+
+		if = {
+			limit = {
+				government_has_flag = government_is_caliphate
+			}
+			change_variable = {
+				name = zakah_balance
+				add = var:tmp_zakah
+			}
+		}
+		else_if = {
+			limit = {
+				is_independent_ruler = no
+				vassal_contract_has_flag = caliphate_zakah_enforced
+			}
+			liege = {
+				if = {
+					limit = {
+						government_has_flag = government_is_caliphate
+					}
+					change_variable = {
+						name = zakah_balance
+						add = PREV.var:tmp_zakah
+					}
+				}
+				else_if = {
+					limit = {
+						any_relation = {
+							type = preferred_caliph
+							count >= 1
+						}
+					}
+					every_relation = {
+						type = preferred_caliph
+						change_variable = {
+							name = zakah_balance
+							add = scope:tmp_zakah_giver.var:tmp_zakah
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						faith = {
+							exists = religious_head
+						}
+					}
+					faith = {
+						religious_head = {
+							change_variable = {
+								name = zakah_balance
+								add = scope:tmp_zakah_giver.var:tmp_zakah
+							}
+						}
+					}
+				}
+				else = {
+					set_variable = {
+						name = dev_zakah_tmp
+						value = scope:tmp_zakah_giver.var:tmp_zakah
+					}
+					change_variable = {
+						name = dev_zakah_tmp
+						divide = 1000
+					}
+					hidden_effect = {
+						every_realm_county = {
+							change_development_level = PREV.var:dev_zakah_tmp
+						}
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				any_relation = {
+					type = preferred_caliph
+					count >= 1
+				}
+			}
+			every_relation = {
+				type = preferred_caliph
+				change_variable = {
+					name = zakah_balance
+					add = scope:tmp_zakah_giver.var:tmp_zakah
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				faith = {
+					exists = religious_head
+				}
+			}
+			faith = {
+				religious_head = {
+					change_variable = {
+						name = zakah_balance
+						add = scope:tmp_zakah_giver.var:tmp_zakah
+					}
+				}
+			}
+		}
+		else = {
+			set_variable = {
+				name = dev_zakah_tmp
+				value = scope:tmp_zakah_giver.var:tmp_zakah
+			}
+			change_variable = {
+				name = dev_zakah_tmp
+				divide = 1000
+			}
+			hidden_effect = {
+				every_realm_county = {
+					change_development_level = PREV.var:dev_zakah_tmp
+				}
+			}
+		}
+
+		ai_chance = { base = 10 }
+	}
+	option = {
+		name = islam.0002.option.b
+
+		add_piety = -200
+		if = {
+			limit = {
+				exists = var:cal_authority
+			}
+			change_variable = {
+				name = cal_authority
+				subtract = 2
+			}
+		}
+		ai_chance = { base = 0.5 }
+	}
+}
+
+islam.0003 = {
+	title = islam.0003.t
+	desc = islam.0003.desc
+	scope = character
+	theme = diplomacy
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	right_portrait = {
+		character = title:e_rashidun.holder
+	}
+
+	option = {
+		name = islam.0003.option.a
+		custom_tooltip = islam.0003.option.a.tooltip
+
+		create_title_and_vassal_change = {
+            type = conquest
+            save_scope_as = change
+        }
+		change_liege = {
+			liege = title:e_rashidun.holder
+			change = scope:change
+		}
+		resolve_title_and_vassal_change = scope:change
+
+		set_character_faith = faith:united_islam
+		change_government = muslim_government
+		every_realm_county = {
+			set_county_faith = faith:united_islam
+		}
+
+		ai_chance = { base = 20 }
+	}
+	option = {
+		name = islam.0003.option.b
+		custom_tooltip = islam.0003.option.b.tooltip
+		add_piety = 1000
+		title:e_rashidun.holder = {
+			add_unpressed_claim = root.primary_title
+		}
+
+		ai_chance = { base = 1 }
+	}
+}
+
+islam.0004 = {
+	title = islam.0004.t
+	desc = islam.0004.desc
+	scope = character
+	theme = diplomacy
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	right_portrait = {
+		character = scope:attacker
+		animation = anger
+	}
+
+	option = {
+		name = islam.0004.option.a
+
+		trigger = {
+			highest_held_title_tier < tier_empire
+		}
+
+		set_character_faith = scope:attacker.faith
+		change_government = muslim_government
+		ai_chance = { base = 0.01 }
+
+		create_title_and_vassal_change = {
+            type = conquest
+            save_scope_as = change
+        }
+		change_liege = {
+			liege = scope:attacker
+			change = scope:change
+		}
+		resolve_title_and_vassal_change = scope:change
+	}
+	option = {
+		name = islam.0004.option.b
+		custom_tooltip = islam.0004.b.tooltip
+		add_piety = 300
+		ai_chance = { base = 10 }
+	}
+
+	option = {
+		name = islam.0004.option.c
+
+		trigger = {
+			highest_held_title_tier = tier_empire
+		}
+		set_character_faith = scope:attacker.faith
+		ai_chance = { base = 0.01 }
+	}
+}
+
+islam.0005 = {
+	title = islam.0005.t
+	desc = islam.0005.desc
+	scope = character
+	theme = martial
+	immediate = {
+		spawn_army = {
+			name = "Muslim Mujahideen"
+			levies = 10000
+			men_at_arms = {
+				type = light_horsemen
+				stacks = 50
+			}
+			men_at_arms = {
+				type = light_footmen
+				stacks = 100
+			}
+			location = capital_province
+		}
+	}
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+
+	option = {
+		name = islam.0005.option.a
+		
+	}
+}
+
+islam.0006 = {
+	title = islam.0006.t
+	desc = islam.0006.desc
+	scope = character
+	theme = martial
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = anger
+	}
+	right_portrait = {
+		character = scope:defender
+		animation = anger
+	}
+
+	option = {
+		name = islam.0006.option.a
+		scope:war = {
+			end_war = attacker
+		}
+		hidden_effect = {
+			every_ruler = {
+				limit = {
+					has_religion = religion:islam_religion
+					has_trait = cynical
+					is_ai = yes
+				}
+				set_character_faith = faith:khawariji
+				every_sub_realm_county = {
+					set_county_faith = faith:khawariji
+				}
+			}
+			faith:khawariji = {
+				remove_doctrine = unavailable_doctrine
+			}
+		}
+		custom_tooltip = islam.0006.option.a.tooltip
+		ai_chance = { base = 10 }
+	}
+	option = {
+		name = islam.0006.option.b
+		custom_tooltip = islam.0006.option.b.tooltip
+		ai_chance = { base = 0.1 }
+	}
+}
+
+islam.0007 = {
+	title = islam.0007.t
+	desc = islam.0007.desc
+	scope = character
+	theme = martial
+	immediate = {
+		create_character = {
+			name = "Husayn"
+			gender = male
+			location = root.capital_province
+			employer = root
+			age = 54
+			faith = faith:united_islam
+			dynasty_house = house:house_hashmid
+			culture = culture:bedouin
+			trait = generous
+			trait = just
+			trait = holy_warrior
+			trait = paragon
+			trait = zealous
+			trait = honest
+			trait = education_martial_4
+			save_scope_as = husayn
+		}
+		scope:husayn = {
+			create_title_and_vassal_change = {
+				type = usurped
+				save_scope_as = change
+				add_claim_on_loss = yes
+			}
+			title:c_kufa = {
+				change_title_holder_include_vassals = {
+					holder = scope:husayn
+					change = scope:change
+				}
+			}
+			add_character_flag = husayn
+				
+			resolve_title_and_vassal_change = scope:change
+		}
+	}
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	right_portrait = {
+		character = scope:husayn
+		animation = anger
+	}
+
+	option = {
+		name = islam.0007.option.a
+		scope:husayn = {
+			start_war = {
+				cb = claim_caliphate_cb
+				target = root
+			}
+			spawn_army = {
+				name = "Muslim Mujahideen"
+				levies = 2000
+				men_at_arms = {
+					type = light_horsemen
+					stacks = 10
+				}
+				men_at_arms = {
+					type = light_footmen
+					stacks = 10
+				}
+				location = scope:husayn.capital_province
+			}
+		}
+	}
+}
+
+islam.0008 = {
+	title = islam.0008.t
+	desc = islam.0008.desc
+	scope = character
+	theme = martial
+	override_background = {
+		reference = throne_room
+	}
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	right_portrait = {
+		character = scope:husayn
+		animation = personality_honorable
+	}
+
+	option = {
+		name = islam.0008.option.a
+		scope:war = {
+			add_attacker = root
+		}
+		liege = {
+			add_opinion = {
+				target = root
+				opinion = -150
+				years = 30
+				modifier = hate_opinion
+			}
+		}
+		scope:husayn = {
+			add_opinion = {
+				target = root
+				opinion = 200
+				years = 30
+				modifier = grateful_opinion
+			}
+		}
+		ai_chance = { base = 0.5 }
+	}
+	option = {
+		name = islam.0008.option.b
+		liege = {
+			add_opinion = {
+				target = root
+				opinion = 100
+				years = 30
+				modifier = grateful_opinion
+			}
+		}
+		scope:husayn = {
+			add_opinion = {
+				target = root
+				opinion = -200
+				years = 30
+				modifier = hate_opinion
+			}
+		}
+		ai_chance = { base = 10 }
+	}
+}

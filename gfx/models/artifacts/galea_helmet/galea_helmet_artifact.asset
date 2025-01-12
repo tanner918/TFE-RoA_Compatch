@@ -1,0 +1,40 @@
+
+
+
+
+#################
+#	Meshes	#
+#################
+
+##### Unique -----------------------------------------
+
+
+pdxmesh = {
+	name = "galea_helmet_artifact_mesh"
+	file = "galea_helmet_artifact.mesh"
+
+	meshsettings = {
+		name = "galea_helmet_artifactShape"
+		index = 0
+		texture_diffuse = "galea_helmet_diffuse.dds"
+		texture_normal = "galea_helmet_normal.dds"
+		texture_specular = "galea_helmet_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+}
+
+
+
+
+#################
+#	Entities	#
+#################
+
+
+
+##### Unique -----------------------------------------
+entity = {
+	name = "galea_helmet_artifact_entity"
+	pdxmesh = "galea_helmet_artifact_mesh"
+}

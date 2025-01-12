@@ -1,0 +1,236 @@
+﻿# standard costs
+@maa_buy_cost = 150
+@maa_low_maintenance_cost = 1.0
+@maa_high_maintenance_cost = 5.0
+@cultural_maa_extra_ai_score = 60 # Equivalent to having 6 extra regiments beyond what the code scoring would indicate (see NEGATIVE_SCORE_PER_EXISTING_REGIMENT)
+
+# Must be synced between files with the values located at "# Provisions Costs #".
+@provisions_cost_infantry_cheap = 3
+@provisions_cost_infantry_moderate = 7
+@provisions_cost_infantry_expensive = 12
+@provisions_cost_infantry_bankrupting = 15
+
+@provisions_cost_cavalry_cheap = 7
+@provisions_cost_cavalry_moderate = 15
+@provisions_cost_cavalry_expensive = 21
+@provisions_cost_cavalry_bankrupting = 30
+
+@provisions_cost_special_cheap = 6
+@provisions_cost_special_moderate = 12
+@provisions_cost_special_expensive = 18
+@provisions_cost_special_bankrupting = 24
+
+legions = {
+	icon = heavy_infantry
+	type = heavy_infantry
+	
+	damage = 50
+	toughness = 50
+	pursuit = 5
+	screen = 10
+	
+	terrain_bonus = {
+		hills = { damage = 10 toughness = 10 }
+		wetlands = { damage = -30 toughness = -15 pursuit = -5 }
+		plains = { damage = 5 toughness = 10 }
+		drylands = { damage = 5 toughness = 10 }
+	}
+	
+	counters = {
+		pikemen = 2
+		light_cavalry = 1
+	}
+	can_recruit = { 
+		has_government = legion_government
+		NOT = {
+			scope:capital_county = {
+				has_variable = prae_guard
+			}
+		}
+		NOT = {
+			culture = { has_cultural_parameter = strength_in_numbers_heavy_maa_ban }
+		}
+	}
+
+	allowed_in_hired_troops = no
+
+	buy_cost = { gold = 0 }
+	low_maintenance_cost = { gold = 0 }
+	high_maintenance_cost = { gold = 0 }
+	provision_cost = @provisions_cost_special_cheap
+
+	stack = 800
+	ai_quality = { value = 500 }
+	max_sub_regiments = 1
+}
+
+legion_cataphract = {
+	type = heavy_cavalry
+	
+	damage = 120
+	toughness = 35
+	pursuit = 25
+	screen = 10
+	
+	terrain_bonus = {
+		plains = { damage = 30 }
+		drylands = { damage = 30 }
+		hills = { damage = -10 }
+		mountains = { damage = -50 }
+		desert_mountains = { damage = -50 }
+		wetlands = { damage = -80 toughness = -15 pursuit = -20 }
+	}
+
+	counters = {
+		archers = 1
+	}
+
+	winter_bonus = {
+		normal_winter = { damage = -15 toughness = -5 }
+		harsh_winter = { damage = -30 toughness = -10 }
+	}
+	
+	can_recruit = { 
+		has_government = legion_government
+		NOT = {
+			scope:capital_county = {
+				has_variable = prae_guard
+			}
+		}
+		NOT = {
+			culture = { has_cultural_parameter = strength_in_numbers_heavy_maa_ban }
+		}
+	}
+	allowed_in_hired_troops = no
+
+	buy_cost = { gold = 0 }
+	low_maintenance_cost = { gold = 0 }
+	high_maintenance_cost = { gold = 0 }
+	provision_cost = @provisions_cost_special_cheap
+	
+	stack = 200
+	max_sub_regiments = 1
+	ai_quality = { value = 500 }
+	icon = heavy_cavalry
+}
+
+prae_legions = {
+	icon = heavy_infantry
+	type = heavy_infantry
+	
+	damage = 50
+	toughness = 50
+	pursuit = 5
+	screen = 10
+	
+	terrain_bonus = {
+		hills = { damage = 10 toughness = 10 }
+		wetlands = { damage = -30 toughness = -15 pursuit = -5 }
+		plains = { damage = 5 toughness = 10 }
+		drylands = { damage = 5 toughness = 10 }
+	}
+	
+	counters = {
+		pikemen = 2
+		light_cavalry = 1
+	}
+	can_recruit = { 
+		has_government = legion_government
+		scope:capital_county = {
+			has_variable = prae_guard
+		}
+		NOT = {
+			culture = { has_cultural_parameter = strength_in_numbers_heavy_maa_ban }
+		}
+	}
+	allowed_in_hired_troops = no
+
+	buy_cost = { gold = 0 }
+	low_maintenance_cost = { gold = 0 }
+	high_maintenance_cost = { gold = 0 }
+	provision_cost = @provisions_cost_special_cheap
+	
+	stack = 1200
+	ai_quality = { value = 500 }
+
+	max_sub_regiments = 1
+}
+
+prae_cataphract = {
+	type = heavy_cavalry
+	
+	damage = 120
+	toughness = 35
+	pursuit = 25
+	screen = 10
+	
+	terrain_bonus = {
+		plains = { damage = 30 }
+		drylands = { damage = 30 }
+		hills = { damage = -10 }
+		mountains = { damage = -50 }
+		desert_mountains = { damage = -50 }
+		wetlands = { damage = -80 toughness = -15 pursuit = -20 }
+	}
+
+	counters = {
+		archers = 1
+	}
+
+	winter_bonus = {
+		normal_winter = { damage = -15 toughness = -5 }
+		harsh_winter = { damage = -30 toughness = -10 }
+	}
+	
+	can_recruit = { 
+		has_government = legion_government
+		scope:capital_county = {
+			has_variable = prae_guard
+		}
+		NOT = {
+			culture = { has_cultural_parameter = strength_in_numbers_heavy_maa_ban }
+		}
+	}
+	allowed_in_hired_troops = no
+
+	buy_cost = { gold = 0 }
+	low_maintenance_cost = { gold = 0 }
+	high_maintenance_cost = { gold = 0 }
+	provision_cost = @provisions_cost_special_cheap
+	
+	stack = 300
+	max_sub_regiments = 1
+	ai_quality = { value = 500 }
+	icon = heavy_cavalry
+}
+
+illyrian_pirates = {
+	type = skirmishers
+	
+	damage = 30
+	toughness = 25
+	pursuit = 25
+	screen = 10
+
+	terrain_bonus = {
+		hills = { damage = 10 toughness = 10 }
+		plains = { damage = 10 }
+	}
+
+	can_recruit = {
+		valid_for_maa_trigger = { PARAMETER = unlock_tfe_maa_illyrian_pirates }
+	}
+	counters = {
+		pikemen = 1
+	}
+	
+	buy_cost = { gold = 60 }
+	low_maintenance_cost = { gold = 0.3 }
+	high_maintenance_cost = { gold = 0.9 }
+	provision_cost = @provisions_cost_infantry_cheap
+
+	stack = 100
+	ai_quality = { value = 50 }
+	icon = skirmishers
+
+}

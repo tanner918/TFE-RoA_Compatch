@@ -1,0 +1,517 @@
+﻿994000 = {
+	name = "Gebicca"
+	dynasty = 99940000
+	religion = "gothic_pagan"
+	culture = "burgundian"
+	340.1.1 = {
+		birth = yes
+	}
+	390.1.1 = {
+		religion = "arianism"
+	}
+	407.1.1 = {
+		death = yes
+	}
+}
+994001 = {
+	name = "Gundemar"
+	dynasty = 99940000
+	religion = "arianism"
+	culture = "burgundian"
+	father = 994000
+	377.1.1 = {
+		birth = yes
+	}
+	411.1.1 = {
+		death = yes
+	}
+}
+994002 = {
+	name = "Gislahar"
+	dynasty = 99940000
+	religion = "arianism"
+	culture = "burgundian"
+	father = 994000
+	380.1.1 = {
+		birth = yes
+	}
+	413.1.1 = {
+		death = yes
+	}
+}
+994003 = {
+	name = "Gundahar"
+	dynasty = 99940000
+	religion = "arianism"
+	culture = "burgundian"
+	father = 994000
+	384.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		add_spouse = 992056 # Athanaric's daughter
+	}
+	420.1.1 = {
+		religion = "nicene"
+	}	
+	436.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+994004 = {
+	name = "Gunderic"
+	dynasty = 99940000
+	religion = "arianism"
+	culture = "burgundian"
+	father = 994003
+	mother = 992056
+	410.1.1 = {
+		birth = yes
+	}
+	440.1.1 = {
+		add_spouse = 999608 # suebian princess
+	}
+	470.1.1 = {
+		death = yes
+	}
+}
+gunderic_01 = {
+	name = "Chlothilda"
+	female = yes
+	religion = "arianism"
+	culture = "burgundian"
+	423.1.1 = {
+		birth = yes
+	}
+	478.1.1 = {
+		death = yes
+	}
+}
+994005 = {
+	name = "Chilperic"
+	dynasty = 99940000
+	religion = "arianism"
+	culture = "burgundian"
+	father = 994003
+	mother = 992056
+	415.1.1 = {
+		birth = yes
+	}
+	480.1.1 = {
+		death = yes
+	}
+}
+994006 = {
+	name = "Gundemar"
+	dynasty = 99940000
+	religion = "arianism"
+	culture = "burgundian"
+	father = 994004
+	mother = 999608
+	435.1.1 = {
+		birth = yes
+	}
+	486.1.1 = {
+		death = yes
+	}
+}
+994007 = {
+	name = "Chilperic"
+	dynasty = 99940000
+	religion = "arianism"
+	culture = "burgundian"
+	father = 994004
+	mother = 999608
+	440.1.1 = {
+		birth = yes
+	}
+	493.1.1 = {
+		death = yes
+	}
+}
+994011 = {
+	name = "Chlothilda"
+	female = yes
+	religion = chalcedonian
+	culture = burgundian
+	father = 994007 # Chilperic II, not Chilperic I
+	dynasty = 99940000
+	trait = zealous
+	learning = 14
+	474.1.1 = {
+		birth = yes
+	}
+	476.9.4 = {
+		employer = 997004
+	}
+	548.6.3 = {
+		add_trait = saint
+		death = yes
+	}
+}
+chilperic_01 = {
+	name = "Sedeleuva"
+	dynasty = 99940000
+	religion = "arianism"
+	culture = "burgundian"
+	father = 994007
+	female = yes
+	467.1.1 = {
+		birth = yes
+	}
+	493.1.1 = {
+		trait = devoted
+		name = "Chroma" # nun name, afther father's execution
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+chilperic_02 = {
+	name = "Gundeberga" # fictional name, spouse of Sigemar
+	female = yes
+	dynasty = 99940000
+	religion = "arianism"
+	culture = "burgundian"
+	father = 994005
+	435.1.1 = {
+		birth = yes
+	}
+	476.1.1 = {
+		death = yes
+	}
+}
+994008 = {
+	name = "Gundebald"
+	dynasty = 99940000
+	religion = "arianism"
+	culture = "burgundian"
+	father = 994004
+	mother = 999608
+	trait = deceitful
+	trait = greedy
+	trait = ambitious
+	450.1.1 = {
+		birth = yes
+	}
+	468.1.1 = {
+		add_spouse = 994017
+	}
+	515.1.1 = {
+		religion = "chalcedonian"
+	}
+	516.1.1 = {
+		death = yes
+	}
+}
+994009 = {
+	name = "Godegisel"
+	dynasty = 99940000
+	religion = "arianism"
+	culture = "burgundian"
+	father = 994004
+	mother = 999608
+	455.1.1 = {
+		birth = yes
+	}
+	501.1.1 = {
+		death = yes
+	}
+}
+994010 = {
+	name = "Ragnahilda"
+	female = yes
+	dynasty = 99940000
+	religion = "arianism"
+	culture = "burgundian"
+	father = 994005
+	440.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+994012 = {
+	name = "Sigismund"
+	dynasty = 99940000
+	religion = "arianism"
+	culture = "burgundian"
+	father = 994008
+	mother = 994017
+	470.1.1 = {
+		birth = yes
+	}
+	491.1.1 = {
+		add_spouse = 992019
+	}
+	517.1.1 = {
+		religion = "chalcedonian"
+	}
+	523.1.1 = {
+		death = yes
+	}
+}
+994013 = {
+	name = "Gundemar"
+	dynasty = 99940000
+	religion = "arianism"
+	culture = "burgundian"
+	father = 994008
+	mother = 994017
+	475.1.1 = {
+		birth = yes
+	}
+	534.1.1 = {
+		death = {
+			death_reason = death_execution
+		}
+	}
+}
+gundebald_01 = {
+	name = "Agia"
+	female = yes
+	religion = "arianism"
+	culture = "burgundian"
+	477.1.1 = {
+		birth = yes
+	}
+	534.1.1 = {
+		death = yes
+	}
+}
+burgundy_13 = {
+	name = "Josfrid"
+	religion = "arianism"
+	culture = "burgundian"
+	500.1.1 = {
+		birth = yes
+	}
+	534.1.1 = {
+		death = yes
+	}
+}
+burgundy_11 = {
+	name = "Gundahar"
+	religion = "gothic_pagan"
+	culture = "burgundian"
+	496.1.1 = {
+		birth = yes
+	}
+	534.1.1 = {
+		death = yes
+	}
+}
+burgundy_12 = {
+	name = "Gundebald"
+	religion = "arianism"
+	culture = "burgundian"
+	502.1.1 = {
+		birth = yes
+	}
+	534.1.1 = {
+		death = yes
+	}
+}
+994014 = {
+	name = "Sigeric"
+	dynasty = 99940000
+	religion = "arianism"
+	culture = "burgundian"
+	father = 994012
+	mother = 992019
+	492.1.1 = {
+		birth = yes
+	}
+	517.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = 994012
+		}
+	}
+}
+168754 = {
+	name = "Suavegotha"
+	female = yes
+	dynasty = 99940000
+	religion = "chalcedonian"
+	culture = "burgundian"
+	father = 994012
+	mother = 992019
+	489.1.1 = {
+		birth = yes
+	}
+	555.1.1 = {
+		death = yes
+	}
+}
+994016 = {
+	name = "Gundeoca"
+	female = yes
+	dynasty = 99940000
+	religion = "arianism"
+	culture = "burgundian"
+	father = 994009
+	480.1.1 = {
+		birth = yes
+	}
+	532.1.1 = {
+		death = yes
+	}
+}
+994017 = {
+	name = "Caretena"
+	female = yes
+	religion = "chalcedonian"
+	culture = "roman"
+	451.1.1 = {
+		birth = yes
+	}
+	506.1.1 = {
+		death = yes
+	}
+}
+
+##Aquitania
+aquitania_01 = {
+	name = "Bodilon"
+	culture = burgundian
+	religion = chalcedonian
+	587.1.1 = {
+		birth = yes
+	}
+	638.1.1 = {
+		death = yes
+	}
+}
+aquitania_02 = {
+	name = "Warin"
+	culture = burgundian
+	religion = chalcedonian
+	father = aquitania_01 ##Bodilon
+	610.1.1 = {
+		birth = yes
+	}
+	677.1.1 = {
+		death = yes
+	}
+}
+aquitania_03 = {
+	name = "Leodegarius"
+	culture = burgundian
+	religion = chalcedonian
+	father = aquitania_01 ##Bodilon
+	615.1.1 = {
+		birth = yes
+	}
+	679.1.1 = {
+		death = yes
+	}
+}
+
+burgundian_01 = {
+	name = Chrodomar
+	culture = burgundian
+	religion = gothic_pagan
+	321.1.1 = {
+		birth = yes
+	}
+	371.1.1 = {
+		death = yes
+	}
+}
+burgundian_02 = {
+	name = Alberic
+	culture = burgundian
+	religion = gothic_pagan
+	father = burgundian_01
+	351.1.1 = {
+		birth = yes
+	}
+	401.1.1 = {
+		death = yes
+	}
+}
+burgundian_03 = {
+	name = Milo
+	culture = burgundian
+	religion = gothic_pagan
+	father = burgundian_02
+	381.1.1 = {
+		birth = yes
+	}
+	431.1.1 = {
+		death = yes
+	}
+}
+burgundian_04 = {
+	name = Eginolf
+	culture = burgundian
+	religion = gothic_pagan
+	father = burgundian_03
+	411.1.1 = {
+		birth = yes
+	}
+	461.1.1 = {
+		death = yes
+	}
+}
+burgundian_05 = {
+	name = Alaric
+	culture = burgundian
+	religion = gothic_pagan
+	father = burgundian_04
+	441.1.1 = {
+		birth = yes
+	}
+	491.1.1 = {
+		death = yes
+	}
+}
+burgundian_06 = {
+	name = Folkmar
+	culture = burgundian
+	religion = gothic_pagan
+	father = burgundian_05
+	471.1.1 = {
+		birth = yes
+	}
+	521.1.1 = {
+		death = yes
+	}
+}
+
+
+##################################################################################
+# 
+# FICTITIOUS PLACEHOLDERS
+# By Cybrxkhan
+# 
+##################################################################################
+
+
+burgundian_misc_001 = {
+	name = "Hermanfrid"
+	religion = "arianism"
+	culture = "burgundian"
+	499.8.27 = {
+		birth = yes
+	}
+	548.7.23 = {
+		death = yes
+	}
+}
+
+burgundian_misc_002 = {
+	name = "Rutger"
+	religion = "arianism"
+	culture = "burgundian"
+	499.8.27 = {
+		birth = yes
+	}
+	548.7.23 = {
+		death = yes
+	}
+}

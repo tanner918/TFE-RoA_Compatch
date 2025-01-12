@@ -1,0 +1,213 @@
+﻿has_imperial_laws = {
+	is_landed = yes
+	OR = {
+		AND = {
+			highest_held_title_tier = tier_empire
+			OR = {
+				government_has_flag = government_is_imperial
+				government_has_flag = government_is_administrative
+				government_has_flag = government_is_imperial_cult
+			}
+		}
+		AND = {
+			OR = {
+			government_has_flag = government_is_autocratic
+			government_has_flag = government_is_autocratic_ep3
+			}
+			is_independent_ruler = yes
+		}
+	}
+}
+
+sevenhouses_enabled = {
+	AND = {
+		has_title = title:e_persia
+		NOT = {
+			exists = global_var:sevenhouses_dead
+		}
+		government_has_flag = government_is_eranshar 
+	}
+}
+
+has_imperial_vassal_laws = {
+	OR = {
+		government_has_flag = government_is_imperial
+		government_has_flag = government_is_autocratic
+		government_has_flag = government_is_autocratic_ep3
+		government_has_flag = government_is_administrative
+		government_has_flag = government_is_imperial_cult
+	}
+	is_landed = yes
+	any_liege_or_above = {
+		has_imperial_laws = yes
+	}
+	NOT = {
+		is_independent_ruler = yes
+	}
+}
+
+# Idk if that's the best place, but whatevs
+ruler_can_use_legions = {
+	ruler_can_use_legions_no_primary_title_tier = yes
+	primary_title.tier > tier_county
+}
+
+ruler_can_use_legions_no_primary_title_tier = {
+	OR = {
+		government_has_flag = government_is_imperial
+		government_has_flag = government_is_autocratic
+		government_has_flag = government_is_autocratic_ep3
+		government_has_flag = government_is_administrative
+		government_has_flag = government_is_imperial_cult
+	}
+	culture = { has_cultural_parameter = powerful_rulers_raise_legions }
+}
+
+access_to_italian_senate = {
+	global_var:italian_senate_dismantle = flag:no
+	OR = {
+		government_has_flag = government_is_imperial
+		government_has_flag = government_is_autocratic
+		government_has_flag = government_is_autocratic_ep3
+		government_has_flag = government_is_administrative
+		government_has_flag = government_is_imperial_cult
+		government_has_flag = government_is_roman
+	}
+	any_realm_county = {
+		THIS = title:c_roma
+	}
+	is_independent_ruler = yes
+}
+
+access_to_eastern_senate = {
+	global_var:eastern_senate_dismantle = flag:no
+	access_to_italian_senate = no
+	OR = {
+		government_has_flag = government_is_imperial
+		government_has_flag = government_is_autocratic
+		government_has_flag = government_is_autocratic_ep3
+		government_has_flag = government_is_administrative
+		government_has_flag = government_is_imperial_cult
+		government_has_flag = government_is_roman
+	}
+	any_realm_county = {
+		THIS = title:c_byzantion
+	}
+	is_independent_ruler = yes
+}
+
+tfe_imperial_competence_enabled = {
+	OR = {
+		has_game_rule = imperial_competence_enabled
+		AND = {
+			has_game_rule = imperial_competence_enabled_in_430
+			current_date >= 430.1.1
+		}
+	}
+}
+
+tfe_has_at_least_amount_mil_competence_trigger = {
+	trigger_if = {
+		limit = {
+			tfe_imperial_competence_enabled = yes
+		}
+		exists = var:mil_comp
+		custom_description = {
+			text = TFE_HAS_AMOUNT_MIL_COMPETENCE_FIRST
+			value = $AMOUNT$
+			var:mil_comp >= $AMOUNT$
+		}
+	} trigger_else = {
+		always = yes
+	}
+}
+
+tfe_has_at_least_amount_civic_competence_trigger = {
+	trigger_if = {
+		limit = {
+			tfe_imperial_competence_enabled = yes
+		}
+		custom_description = {
+			text = tfe_has_at_least_amount_civic_competence
+			value = $AMOUNT$
+
+			exists = var:civic_comp
+			var:civic_comp >= $AMOUNT$
+		}
+	} trigger_else = {
+		always = no
+	}
+}
+
+tfe_has_at_least_amount_diplo_competence_trigger = {
+	trigger_if = {
+		limit = {
+			tfe_imperial_competence_enabled = yes
+		}
+		custom_description = {
+			text = tfe_has_at_least_amount_diplo_competence
+			value = $AMOUNT$
+
+			exists = var:diplo_comp
+			var:diplo_comp >= $AMOUNT$
+		}
+	} trigger_else = {
+		always = no
+	}
+}
+
+tfe_has_won_at_least_amount_wars = {
+	custom_description = {
+		text = tfe_has_won_amount_wars
+		value = $AMOUNT$
+
+		any_memory = {
+			custom = tfe_wars_won_desc
+			count = $AMOUNT$
+			has_memory_type = war_won
+		}
+	}
+}
+
+was_in_western_empire = {
+	OR = {
+		#root = title:e_western_roman_empire.previous_holder
+		top_liege = title:e_western_roman_empire.holder
+		top_liege = title:e_western_roman_empire.previous_holder
+	}
+}
+
+was_in_eastern_empire = {
+	OR = {
+		root = title:e_byzantium.previous_holder
+		top_liege = title:e_byzantium.holder
+	}
+}
+
+is_in_western_empire = {
+	OR = {
+		has_title = title:e_western_roman_empire
+		top_liege = title:e_western_roman_empire.holder
+	}
+}
+
+is_in_eastern_empire = {
+	OR = {
+		has_title = title:e_byzantium
+		top_liege = title:e_byzantium.holder
+	}
+}
+
+is_in_roman_empire = {
+	OR = {
+		has_title = title:e_roman_empire
+		top_liege = title:e_roman_empire.holder
+	}
+}
+
+is_in_persian_empire = {
+	OR = {
+		has_title = title:e_persia
+		top_liege = title:e_persia.holder
+	}
+}

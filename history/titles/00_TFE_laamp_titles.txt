@@ -1,0 +1,386 @@
+﻿
+
+
+
+
+############################################################
+# 
+# 361 LAAMP TITLES
+# 
+############################################################
+
+# Nanaidhat, 4th century Sogdian merchant mentioned in his wife's Miwnay's letters
+d_laamp_TFE_nanaidhat_merchant = {
+	361.1.1 = {
+		liege = 0
+		holder = sogdian_misc_024
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+		}
+	}
+	361.11.17 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 361.11.17 }
+		}
+	}
+	# Give Nanidhat's son Shayn the title later on
+	# We don't know what happened to Shayn, but I figure it's better to have a historical character than not have one
+	385.2.10 = {
+		holder = sogdian_misc_027
+	}
+	409.4.3 = {
+		holder = 0
+	}
+}
+
+# Charietto, 4th century Germanic bandit and later Roman military officer
+d_laamp_TFE_charietto = {
+	361.1.1 = {
+		liege = 0
+		holder = ripurian_misc_001
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+		}
+	}
+	361.11.17 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 361.11.17 }
+		}
+	}
+	365.4.21 = {
+		holder = 0
+	}
+}
+
+# Wahb'el, likely Arabic convert to Christianity traveling through the Jordanian desert (see his character history for more info)
+d_laamp_TFE_wahbel = {
+	361.1.1 = {
+		liege = 0
+		holder = nabatean_misc_001
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+		}
+	}
+	361.11.17 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 361.11.17 }
+		}
+	}
+	393.1.26 = {
+		holder = 0
+	}
+}
+
+# Moses the Black as a bandit
+d_laamp_TFE_moses_the_black_361 = {
+	361.1.1 = {
+		liege = 0
+		holder = nobatia_12
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+		}
+	}
+	361.11.17 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 361.11.17 }
+		}
+	}
+	370.1.1 = {
+		holder = 0
+	}
+}
+
+
+############################################################
+# 
+# 395 LAAMP TITLES
+# 
+############################################################
+
+# Egeria, 4th century pilgrim
+d_laamp_TFE_egeria = {
+	395.1.1 = {
+		liege = 0
+		holder = hispano_roman_misc_004
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+		}
+	}
+	395.1.17 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 395.1.17 }
+		}
+	}
+	420.4.27 = {
+		holder = 0
+	}
+}
+
+# Olympiodorus, Roman historian, poet, philosopher, diplomat
+d_laamp_TFE_olympiodorus = {
+	395.1.1 = {
+		liege = 0
+		holder = aegyptian_misc_009
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+		}
+	}
+	395.1.17 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 395.1.17 }
+		}
+	}
+	420.4.27 = {
+		holder = 0
+	}
+}
+
+# Claudius Marius Victorius/Victorinus, a little known 5th century rhetor/teacher and poet from Marseille
+d_laamp_TFE_claudius_marius_victorius = {
+	395.1.1 = {
+		liege = 0
+		holder = gallo_roman_misc_010
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+		}
+	}
+	395.1.17 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 395.1.17 }
+		}
+	}
+	420.4.27 = {
+		holder = 0
+	}
+}
+
+# Fravitta, Gothic commander in Eastern Rome
+d_laamp_TFE_fravitta = {
+	395.1.1 = {
+		liege = 0
+		holder = 992079
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+		}
+	}
+	395.1.17 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 395.1.17 }
+		}
+	}
+	404.1.1 = {
+		holder = 0
+	}
+}
+
+
+
+############################################################
+# 
+# 476 LAAMP TITLES
+# 
+############################################################
+
+
+# Damascius, Neoplatonist philosopher
+d_laamp_TFE_damascius = {
+	476.1.1 = {
+		liege = 0
+		holder = syrian_misc_06
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+		}
+	}
+	476.9.4 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 476.9.4 }
+		}
+	}
+	538.11.2 = {
+		holder = 0
+	}
+}
+
+# Pamprepius, pagan poet, scholar, and rebel
+d_laamp_TFE_pamprepius = {
+	476.1.1 = {
+		liege = 0
+		holder = aegyptus_84
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+		}
+	}
+	476.9.4 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 476.9.4 }
+		}
+	}
+	484.11.1 = {
+		holder = 0
+	}
+}
+
+# Family of Wirkak, a major merchant leader born in Sogdia and died in China
+d_laamp_TFE_wirkak_family_476 = {
+	476.1.1 = {
+		liege = 0
+		holder = sogdian_misc_030 # Rashtvandak, Wirkak's grandfather
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+		}
+	}
+	476.9.4 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 476.9.4 }
+		}
+	}
+	519.4.28 = {
+		holder = 0
+	}
+}
+
+
+############################################################
+# 
+# 532 LAAMP TITLES
+# 
+############################################################
+
+# Cosmas Indicopleustes, 6th century merchant and later hermit
+d_laamp_TFE_cosmas_indicopleustes = {
+	532.1.1 = {
+		liege = 0
+		holder = aegyptian_misc_008
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+		}
+	}
+	532.2.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 532.2.1 }
+		}
+	}
+	578.9.2 = {
+		holder = 0
+	}
+}
+
+# Taliesin, Welsh poet and legendary hero
+d_laamp_TFE_taliesin = {
+	532.1.1 = {
+		liege = 0
+		holder = briton_misc_001
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+		}
+	}
+	532.2.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 532.2.1 }
+		}
+	}
+	589.8.2 = {
+		holder = 0
+	}
+}
+
+# Family of Wirkak, a major merchant leader born in Sogdia and died in China
+d_laamp_TFE_wirkak_family_532 = {
+	532.1.1 = {
+		liege = 0
+		holder = sogdian_misc_028
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+		}
+	}
+	532.2.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 532.2.1 }
+		}
+	}
+	579.11.3 = {
+		holder = 0
+	}
+}
+
+# Imru al-Qays, famous Arab prince-poet
+d_laamp_TFE_imru_al_qays = {
+	532.1.1 = {
+		liege = 0
+		holder = kindha_19
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+		}
+	}
+	532.2.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 532.2.1 }
+		}
+	}
+	544.1.1 = {
+		holder = 0
+	}
+}
+
+
+############################################################
+# 
+# 632 LAAMP TITLES
+# 
+############################################################
+
+
+
+
+
+
+
+
+
+
+

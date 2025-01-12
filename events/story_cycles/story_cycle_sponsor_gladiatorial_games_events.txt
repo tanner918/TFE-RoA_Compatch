@@ -1,0 +1,1053 @@
+﻿namespace = sponsor_gladiatorial_games
+
+### Setup and end
+# Let the Gladiatorial Games begin!
+sponsor_gladiatorial_games.0001 = {
+	type = activity_event
+	title = sponsor_gladiatorial_games.0001.t
+	desc = sponsor_gladiatorial_games.0001.desc
+	
+	theme = war
+	override_background = {
+		reference = circuit
+	}
+	left_portrait = {
+		character = root
+		animation = ecstasy
+	}
+	
+	option = {
+		name = sponsor_gladiatorial_games.0001.a
+		
+		custom_tooltip = sponsor_gladiatorial_games.0001_effect
+	}
+}
+
+# End of the Gladiatorial Games
+sponsor_gladiatorial_games.0002 = {
+	type = activity_event
+	title = sponsor_gladiatorial_games.0002.t
+	
+	### TODO: Better desc (kinda tired atm lol)
+	desc = sponsor_gladiatorial_games.0002.desc
+	
+	theme = war
+	override_background = {
+		reference = circuit
+	}
+	left_portrait = {
+		character = root
+		animation = ecstasy
+	}
+	
+	# That went horribly lmao
+	option = {
+		trigger = {
+			exists = scope:story.var:result_counter
+			scope:story.var:result_counter <= -3
+		}
+		name = sponsor_gladiatorial_games.0002.a
+		
+		add_prestige = medium_prestige_loss
+		add_piety = minor_piety_loss
+		capital_county = {
+			change_county_control = -50
+			add_county_modifier = { modifier = gladiatorial_games_very_bad_modifier years = 10 }
+		}
+	}
+	# Bad, but could have been worse
+	option = {
+		trigger = {
+			exists = scope:story.var:result_counter
+			scope:story.var:result_counter > -3
+			scope:story.var:result_counter <= -1
+		}
+		name = sponsor_gladiatorial_games.0002.b
+		
+		add_prestige = minor_prestige_loss
+		capital_county = {
+			change_county_control = -20
+			add_county_modifier = { modifier = gladiatorial_games_bad_modifier years = 10 }
+		}
+	}
+	# Meh
+	option = {
+		trigger = {
+			OR = {
+				NOT = { exists = scope:story.var:result_counter }
+				scope:story.var:result_counter = 0
+			}
+		}
+		name = sponsor_gladiatorial_games.0002.c
+		
+		add_prestige = minor_prestige_gain
+	}
+	# It went well
+	option = {
+		trigger = {
+			exists = scope:story.var:result_counter
+			scope:story.var:result_counter >= 1
+			scope:story.var:result_counter < 3
+		}
+		name = sponsor_gladiatorial_games.0002.d
+		
+		add_prestige = medium_prestige_gain
+		add_piety = minor_piety_gain
+		capital_county = {
+			change_county_control = 10
+			add_county_modifier = { modifier = gladiatorial_games_good_modifier years = 10 }
+		}
+	}
+	# It went really well!
+	option = {
+		trigger = {
+			exists = scope:story.var:result_counter
+			scope:story.var:result_counter >= 3
+		}
+		name = sponsor_gladiatorial_games.0002.e
+		
+		add_prestige = major_prestige_gain
+		add_piety = medium_piety_gain
+		capital_county = {
+			change_county_control = 25
+			add_county_modifier = { modifier = gladiatorial_games_very_good_modifier years = 10 }
+		}
+		if = {
+			limit = { exists = dynasty }
+			dynasty = { add_dynasty_prestige = miniscule_dynasty_prestige_gain }
+		}
+	}
+	
+	after = {
+		scope:story = { end_story = yes }
+	}
+}
+
+### Gladiatorial Games events
+# Fight to the death, decide if the loser lives or dies!
+sponsor_gladiatorial_games.0010 = {
+	type = activity_event
+	title = sponsor_gladiatorial_games.0010.t
+	desc = {
+		desc = sponsor_gladiatorial_games.0010.desc_intro
+		first_valid = {
+			triggered_desc = {
+				trigger = { local_var:crowd_wants = flag:death }
+				desc = sponsor_gladiatorial_games.0010.desc_death
+			}
+			triggered_desc = {
+				trigger = { local_var:crowd_wants = flag:spare }
+				desc = sponsor_gladiatorial_games.0010.desc_spare
+			}
+		}
+		desc = sponsor_gladiatorial_games.0010.desc_outro
+	}
+	
+	theme = war
+	override_background = {
+		reference = circuit
+	}
+	left_portrait = {
+		character = scope:victorious_gladiator
+		animation = ecstasy
+	}
+	right_portrait = {
+		character = scope:defeated_gladiator
+		animation = beg
+	}
+	
+	#trigger = { scope:story = { NOT = { has_variable = had_event_sponsor_gladiatorial_games_0010 } } }
+	immediate = {
+		#scope:story = { set_variable = { name = had_event_sponsor_gladiatorial_games_0010 value = 1 } }
+		
+		random_list = {
+			50 = {
+				set_local_variable = { name = crowd_wants value = flag:death }
+			}
+			50 = {
+				set_local_variable = { name = crowd_wants value = flag:spare }
+			}
+		}
+		
+		# The Gladiator that might die
+		create_character = {
+			gender_female_chance = 10
+			employer = root
+			template = middle_gladiator
+			faith = root.faith
+			culture = root.culture
+			dynasty = none
+			trait = gladiator_trait
+			
+			save_scope_as = defeated_gladiator
+		}
+
+		create_character = {
+			gender_female_chance = 10
+			employer = root
+			template = middle_gladiator
+			faith = root.faith
+			culture = root.culture
+			dynasty = none
+			trait = gladiator_trait
+			
+			save_scope_as = victorious_gladiator
+		}
+	}
+	
+	# Let them live!
+	option = {
+		name = sponsor_gladiatorial_games.0010.a
+		
+		# Displease the crowd, that's a paddling
+		if = {
+			limit = { local_var:crowd_wants = flag:death }
+			custom_tooltip = sponsor_gladiatorial_games.0010_effect_against_crowd
+			#custom_tooltip = sponsor_gladiatorial_games.bad_effect
+			add_prestige = minor_prestige_loss
+			
+			if = {
+				limit = {
+					this = scope:host
+				}
+				scope:activity = {
+					if = {
+						limit = { exists = var:result_counter }
+						change_variable = {
+							name = result_counter
+							add = -1
+						}
+					}
+					else = {
+						set_variable = {
+							name = result_counter
+							value = -1
+						}
+					}
+				}
+			}
+		}
+		else = {
+			custom_tooltip = sponsor_gladiatorial_games.good_effect
+			if = {
+				limit = {
+					this = scope:host
+				}
+				scope:activity = {
+					if = {
+						limit = { exists = var:result_counter }
+						change_variable = {
+							name = result_counter
+							add = 1
+						}
+					}
+					else = {
+						set_variable = {
+							name = result_counter
+							value = 1
+						}
+					}
+				}
+			}
+		}
+		
+		add_prestige = medium_prestige_value
+		
+		stress_impact = {
+			vengeful = minor_stress_impact_gain
+			sadistic = minor_stress_impact_gain
+			compassionate = minor_stress_impact_loss
+		}
+		
+		hidden_effect = { 
+			scope:defeated_gladiator = { 
+				death = { 
+					death_reason = death_vanished 
+				} 
+			}
+			scope:victorious_gladiator = { 
+				death = { 
+					death_reason = death_vanished 
+				} 
+			}
+		}
+	}
+	
+	# They should die!
+	option = {
+		name = sponsor_gladiatorial_games.0010.b
+		
+		# Displease the crowd, that's a paddling
+		if = {
+			limit = { local_var:crowd_wants = flag:spare }
+			custom_tooltip = sponsor_gladiatorial_games.0010_effect_against_crowd
+			custom_tooltip = sponsor_gladiatorial_games.bad_effect
+			add_prestige = minor_prestige_loss
+			
+			if = {
+				limit = {
+					this = scope:host
+				}
+				scope:activity = {
+					if = {
+						limit = { exists = var:result_counter }
+						change_variable = {
+							name = result_counter
+							add = -1
+						}
+					}
+					else = {
+						set_variable = {
+							name = result_counter
+							value = -1
+						}
+					}
+				}
+			}
+		}
+		else = {
+			custom_tooltip = sponsor_gladiatorial_games.good_effect
+			
+			if = {
+				limit = {
+					this = scope:host
+				}
+				scope:activity = {
+					if = {
+						limit = { exists = var:result_counter }
+						change_variable = {
+							name = result_counter
+							add = 1
+						}
+					}
+					else = {
+						set_variable = {
+							name = result_counter
+							value = 1
+						}
+					}
+				}
+			}
+		}
+		
+		add_prestige = medium_prestige_value
+		hidden_effect = { 
+			scope:defeated_gladiator = { 
+				death = { 
+					death_reason = death_died_gladiator 
+				} 
+			}
+			scope:victorious_gladiator = { 
+				death = { 
+					death_reason = death_vanished 
+				} 
+			}
+		}
+		
+		stress_impact = {
+			vengeful = minor_stress_impact_loss
+			sadistic = minor_stress_impact_loss
+			compassionate = minor_stress_impact_gain
+		}
+	}
+
+	# Hire the victor!
+	option = {
+		name = sponsor_gladiatorial_games.0010.c
+		
+		# Displease the crowd, that's a paddling
+		custom_tooltip = sponsor_gladiatorial_games.0010_effect_ignore_crowd
+		add_prestige = medium_prestige_loss
+		add_piety = minor_piety_loss
+		add_courtier = scope:victorious_gladiator
+		scope:victorious_gladiator = {
+			change_trait_rank = {
+				trait = gladiator_group
+				rank = 2
+			}
+		}
+		hidden_effect = { 
+			scope:defeated_gladiator = { 
+				death = { 
+					death_reason = death_died_gladiator 
+				} 
+			}
+		}
+		stress_impact = {
+			arbitrary = minor_stress_impact_loss
+			brave = minor_stress_impact_loss
+			just = minor_stress_impact_gain
+			paranoid = minor_stress_impact_gain
+		}
+	}
+}
+
+# A Gladiator won their last fight, they are free!
+sponsor_gladiatorial_games.0011 = {
+	type = activity_event
+	title = sponsor_gladiatorial_games.0011.t
+	desc = sponsor_gladiatorial_games.0011.desc
+	
+	theme = war
+	override_background = {
+		reference = circuit
+	}
+	left_portrait = {
+		character = root
+		animation = ecstasy
+	}
+	right_portrait = {
+		character = scope:liberated_gladiator
+		animation = happiness
+	}
+	
+	#trigger = { scope:story = { NOT = { has_variable = had_event_sponsor_gladiatorial_games_0011 } } }
+	immediate = {
+		#scope:story = { set_variable = { name = had_event_sponsor_gladiatorial_games_0011 value = 1 } }
+		
+		# The Gladiator that won their freedom
+		create_character = {
+			gender_female_chance = 10
+			employer = root
+			template = old_gladiator
+			faith = root.faith
+			culture = root.culture
+			dynasty = none
+			trait = gladiator_trait
+			save_scope_as = liberated_gladiator
+		}
+		hidden_effect = {
+			scope:liberated_gladiator = {
+				random_list = {
+					50 = {
+						add_trait = shrewd
+					}
+					50 = {
+						add_trait = strong
+					}
+					10 = {
+						add_trait = shrewd
+						add_trait = strong
+					}
+				}
+			}
+		}
+	}
+	
+	# Give them the honours of a winner
+	option = {
+		name = sponsor_gladiatorial_games.0011.a
+		
+		add_prestige = medium_prestige_value
+		custom_tooltip = sponsor_gladiatorial_games.0011_effect_freed
+		custom_tooltip = sponsor_gladiatorial_games.good_effect
+		if = {
+			limit = {
+				this = scope:host
+			}
+			scope:activity = {
+				if = {
+					limit = { exists = var:result_counter }
+					change_variable = {
+						name = result_counter
+						add = 1
+					}
+				}
+				else = {
+					set_variable = {
+						name = result_counter
+						value = 1
+					}
+				}
+			}
+		}
+		
+		hidden_effect = { scope:liberated_gladiator = { death = { death_reason = death_vanished } } }
+	}
+	
+	# They should join me!
+	option = {
+		name = sponsor_gladiatorial_games.0011.b
+		
+		add_prestige = minor_prestige_value
+		
+		custom_tooltip = sponsor_gladiatorial_games.0011_effect_recruited
+		add_courtier = scope:liberated_gladiator
+		scope:liberated_gladiator = {
+			change_trait_rank = {
+				trait = gladiator_group
+				rank = 2
+			}
+		}
+	}
+	
+	# Did you really think you would leave the arena?
+	option = {
+		trigger = {
+			OR = {
+				has_trait = lunatic
+				has_trait = arbitrary
+				has_trait = sadistic
+			}
+		}
+		name = sponsor_gladiatorial_games.0011.c
+		
+		custom_tooltip = sponsor_gladiatorial_games.0011_effect_forced_back_arena
+		custom_tooltip = sponsor_gladiatorial_games.bad_effect
+		if = {
+			limit = {
+				this = scope:host
+			}
+			scope:activity = {
+				if = {
+					limit = { exists = var:result_counter }
+					change_variable = {
+						name = result_counter
+						add = -1
+					}
+				}
+				else = {
+					set_variable = {
+						name = result_counter
+						value = -1
+					}
+				}
+			}
+		}
+		add_piety = medium_piety_loss
+		
+		stress_impact = {
+			sadistic = minor_stress_impact_loss
+			arbitrary = minor_stress_impact_loss
+		}
+		
+		hidden_effect = { scope:liberated_gladiator = { death = { death_reason = death_vanished } } }
+	}
+}
+
+# Gladiators are tired, should they continue or not?
+sponsor_gladiatorial_games.0012 = {
+	type = activity_event
+	title = sponsor_gladiatorial_games.0012.t
+	desc = sponsor_gladiatorial_games.0012.desc
+	
+	theme = war
+	override_background = {
+		reference = circuit
+	}
+	left_portrait = {
+		character = scope:tired_gladiator_1
+		animation = beg
+	}
+	right_portrait = {
+		character = scope:tired_gladiator_2
+		animation = beg
+	}
+	
+	#trigger = { scope:story = { NOT = { has_variable = had_event_sponsor_gladiatorial_games_0012 } } }
+	immediate = {
+		#scope:story = { set_variable = { name = had_event_sponsor_gladiatorial_games_0012 value = 1 } }
+		# Both Gladiators
+		create_character = {
+			gender_female_chance = 10
+			employer = root
+			template = young_gladiator
+			faith = root.faith
+			culture = root.culture
+			dynasty = none
+			trait = gladiator_trait
+			
+			save_scope_as = tired_gladiator_1
+		}
+		create_character = {
+			gender_female_chance = 10
+			employer = root
+			template = middle_gladiator
+			faith = root.faith
+			culture = root.culture
+			dynasty = none
+			trait = gladiator_trait
+			
+			save_scope_as = tired_gladiator_2
+		}
+	}
+	
+	# Lets end the games
+	option = {
+		name = sponsor_gladiatorial_games.0012.a
+		custom_tooltip = sponsor_gladiatorial_games.bad_effect
+		
+		# Displease the crowd
+		if = {
+			limit = {
+				this = scope:host
+			}
+			scope:activity = {
+				if = {
+					limit = { exists = var:result_counter }
+					change_variable = {
+						name = result_counter
+						add = -1
+					}
+				}
+				else = {
+					set_variable = {
+						name = result_counter
+						value = -1
+					}
+				}
+			}
+		}
+		
+		add_prestige = minor_prestige_loss
+		
+		stress_impact = {
+			sadistic = minor_stress_impact_gain
+			compassionate = minor_stress_impact_loss
+		}
+		
+		hidden_effect = { 
+			scope:tired_gladiator_1 = { death = { death_reason = death_vanished } } 
+			scope:tired_gladiator_2 = { death = { death_reason = death_vanished } } 
+		}
+	}
+	
+	# Continue the games!
+	option = {
+		name = sponsor_gladiatorial_games.0012.b
+		custom_tooltip = sponsor_gladiatorial_games.good_effect
+		
+		if = {
+			limit = {
+				this = scope:host
+			}
+			scope:activity = {
+				if = {
+					limit = { exists = var:result_counter }
+					change_variable = {
+						name = result_counter
+						add = 1
+					}
+				}
+				else = {
+					set_variable = {
+						name = result_counter
+						value = 1
+					}
+				}
+			}
+		}
+		
+		hidden_effect = { 
+			scope:tired_gladiator_1 = { death = { death_reason = death_vanished } } 
+			scope:tired_gladiator_2 = { death = { death_reason = death_vanished } } 
+		}
+		
+		stress_impact = {
+			compassionate = minor_stress_impact_loss
+		}
+	}
+
+	# Lions AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+	option = {
+		trigger = {
+			OR = {
+				scope:activity = { is_gladiator_fights_very_good = yes }
+				scope:activity = { is_gladiator_fights_excellent = yes }
+			}
+		}
+		name = sponsor_gladiatorial_games.0012.c
+		custom_tooltip = sponsor_gladiatorial_games.great_effect
+		
+		if = {
+			limit = {
+				this = scope:host
+			}
+			scope:activity = {
+				if = {
+					limit = { exists = var:result_counter }
+					change_variable = {
+						name = result_counter
+						add = 2
+					}
+				}
+				else = {
+					set_variable = {
+						name = result_counter
+						value = 2
+					}
+				}
+			}
+		}
+		add_prestige = medium_prestige_gain
+		add_piety = minor_piety_loss
+		add_dread = 10
+		hidden_effect = { 
+			scope:tired_gladiator_1 = { death = { death_reason = death_vanished } } 
+			scope:tired_gladiator_2 = { death = { death_reason = death_vanished } } 
+		}
+		
+		stress_impact = {
+			compassionate = major_stress_impact_gain
+			sadistic = major_stress_impact_loss
+		}
+	}
+}
+
+# No Gladiators? https://i.kym-cdn.com/photos/images/newsfeed/002/297/355/cb3
+sponsor_gladiatorial_games.0013 = {
+	type = activity_event
+	title = sponsor_gladiatorial_games.0013.t
+	desc = sponsor_gladiatorial_games.0013.desc
+	
+	theme = war
+	override_background = {
+		reference = circuit
+	}
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	
+	#trigger = { scope:story = { NOT = { has_variable = had_event_sponsor_gladiatorial_games_0013 } } }
+	#immediate = {
+		#scope:story = { set_variable = { name = had_event_sponsor_gladiatorial_games_0013 value = 1 } }
+	#}
+	
+	# No fights
+	option = {
+		name = sponsor_gladiatorial_games.0013.a
+		custom_tooltip = sponsor_gladiatorial_games.very_bad_effect
+		
+		# Displease the crowd
+		if = {
+			limit = {
+				this = scope:host
+			}
+			scope:activity = {
+				if = {
+					limit = { exists = var:result_counter }
+					change_variable = {
+						name = result_counter
+						add = -2
+					}
+				}
+				else = {
+					set_variable = {
+						name = result_counter
+						value = -2
+					}
+				}
+			}
+		}
+		
+		add_prestige = major_prestige_loss
+		
+		stress_impact = {
+			sadistic = minor_stress_impact_gain
+			compassionate = minor_stress_impact_loss
+		}
+	}
+	
+	# Execute prisoners
+	option = {
+		name = sponsor_gladiatorial_games.0013.b
+		custom_tooltip = sponsor_gladiatorial_games.good_effect
+		trigger = {
+			any_prisoner = {
+				count = 2
+			}
+		}
+		
+		if = {
+			limit = {
+				this = scope:host
+			}
+			scope:activity = {
+				if = {
+					limit = { exists = var:result_counter }
+					change_variable = {
+						name = result_counter
+						add = 1
+					}
+				}
+				else = {
+					set_variable = {
+						name = result_counter
+						value = 1
+					}
+				}
+			}
+		}
+		random_prisoner = {
+			death = {
+				death_reason = death_execution
+				killer = root
+			}
+		}
+		random_prisoner = {
+			death = {
+				death_reason = death_execution
+				killer = root
+			}
+		}
+		add_prestige = minor_prestige_gain
+		add_piety = minor_piety_loss
+		stress_impact = {
+			callous = minor_stress_impact_gain
+			just = minor_stress_impact_loss
+		}
+	}
+
+	# Crowd should fight
+	option = {
+		name = sponsor_gladiatorial_games.0013.c
+		custom_tooltip = sponsor_gladiatorial_games.great_effect
+		
+		if = {
+			limit = {
+				this = scope:host
+			}
+			scope:activity = {
+				if = {
+					limit = { exists = var:result_counter }
+					change_variable = {
+						name = result_counter
+						add = 2
+					}
+				}
+				else = {
+					set_variable = {
+						name = result_counter
+						value = 2
+					}
+				}
+			}
+		}
+		remove_short_term_gold = 250
+		add_prestige = medium_prestige_gain
+		
+		stress_impact = {
+			compassionate = major_stress_impact_gain
+			greedy = major_stress_impact_gain
+			sadistic = minor_stress_impact_loss
+		}
+	}
+}
+
+# A new foe has appeared 
+sponsor_gladiatorial_games.0014 = {
+	type = activity_event
+	title = sponsor_gladiatorial_games.0014.t
+	desc = sponsor_gladiatorial_games.0014.desc
+	
+	theme = war
+	override_background = {
+		reference = circuit
+	}
+	left_portrait = {
+		character = root
+		animation = ecstasy
+	}
+	right_portrait = {
+		character = scope:new_gladiator
+		animation = personality_honorable
+	}
+	
+	#trigger = { scope:story = { NOT = { has_variable = had_event_sponsor_gladiatorial_games_0014 } } }
+	immediate = {
+		#scope:story = { set_variable = { name = had_event_sponsor_gladiatorial_games_0014 value = 1 } }
+		# Creating the gladiator
+		create_character = {
+			gender_female_chance = 10
+			employer = root
+			template = young_gladiator
+			faith = root.faith
+			culture = root.culture
+			dynasty = none
+			trait = gladiator_trait
+			save_scope_as = new_gladiator
+		}
+		hidden_effect = {
+		scope:new_gladiator = {
+			add_prowess_skill = 5
+		}
+		if = {
+            limit = {
+                OR = {
+                    scope:activity = { is_gladiator_fights_very_good = yes }
+                    scope:activity = { is_gladiator_fights_excellent = yes }
+					scope:activity = { is_gladiator_fights_good = yes }
+                }
+            }
+            scope:new_gladiator = {
+                add_trait = strong
+                add_prowess_skill = 3
+                add_trait = lifestyle_blademaster
+                add_trait_xp = {
+                    trait = lifestyle_blademaster
+                    value = 50
+                }
+            }
+        }
+		}
+		scope:new_gladiator = {
+			give_nickname = nick_ignotus_eques
+		}
+	}
+	# no reaction
+	option = {
+		name = sponsor_gladiatorial_games.0014.a
+		custom_tooltip = sponsor_gladiatorial_games.bad_effect
+		
+		# Displease the crowd
+		if = {
+			limit = {
+				this = scope:host
+			}
+			scope:activity = {
+				if = {
+					limit = { exists = var:result_counter }
+					change_variable = {
+						name = result_counter
+						add = -1
+					}
+				}
+				else = {
+					set_variable = {
+						name = result_counter
+						value = -1
+					}
+				}
+			}
+		}
+		
+		add_prestige = minor_prestige_gain
+
+		hidden_effect = { 
+			scope:new_gladiator = { death = { death_reason = death_vanished } } 
+		}
+		
+		stress_impact = {
+			arrogant = minor_stress_impact_loss
+			arbitrary = minor_stress_impact_loss
+		}
+	}
+	
+	# minor reaction
+	option = {
+		name = sponsor_gladiatorial_games.0014.b
+		custom_tooltip = sponsor_gladiatorial_games.good_effect
+		
+		if = {
+			limit = {
+				this = scope:host
+			}
+			scope:activity = {
+				if = {
+					limit = { exists = var:result_counter }
+					change_variable = {
+						name = result_counter
+						add = 1
+					}
+				}
+				else = {
+					set_variable = {
+						name = result_counter
+						value = 1
+					}
+				}
+			}
+		}
+		add_prestige = minor_prestige_gain
+		hidden_effect = { 
+			scope:new_gladiator = { death = { death_reason = death_vanished } } 
+		}
+		stress_impact = {
+			callous = minor_stress_impact_gain
+			arrogant = minor_stress_impact_gain
+			humble = minor_stress_loss
+			honest = minor_stress_loss
+		}
+	}
+
+	# recruit + money
+	option = {
+		name = sponsor_gladiatorial_games.0014.c
+		custom_tooltip = sponsor_gladiatorial_games.great_effect
+		
+		if = {
+			limit = {
+				this = scope:host
+			}
+			scope:activity = {
+				if = {
+					limit = { exists = var:result_counter }
+					change_variable = {
+						name = result_counter
+						add = 2
+					}
+				}
+				else = {
+					set_variable = {
+						name = result_counter
+						value = 2
+					}
+				}
+			}
+		}
+		pay_short_term_gold = {
+			target = scope:new_gladiator
+			gold = 250
+		}
+		add_prestige = medium_prestige_gain
+		add_courtier = scope:new_gladiator
+		scope:new_gladiator = {
+			change_trait_rank = {
+				trait = gladiator_group
+				rank = 2
+			}
+		}
+		
+		stress_impact = {
+			just = minor_stress_impact_loss
+			trusting = minor_stress_impact_loss
+			greedy = minor_stress_impact_gain
+			shy = minor_stress_impact_gain
+		}
+	}
+}
+
+#Senate Funds Games -- Character Event
+sponsor_gladiatorial_games.0015 = {
+	type = character_event
+	title = sponsor_gladiatorial_games.0015.t
+	desc = sponsor_gladiatorial_games.0015.desc
+	
+	theme = war
+	override_background = {
+		reference = circuit
+	}
+	left_portrait = {
+		character = root
+		animation = ecstasy
+	}
+	right_portrait = {
+		character = scope:random_senator
+		animation = ecstasy
+	}
+	immediate = {
+		random_in_global_list = {
+			variable = all_senate_italy
+			save_scope_as = random_senator
+		}
+	}
+	option = {
+		name = sponsor_gladiatorial_games.0015.a
+		custom_tooltip = senate_funds_games_full_tt
+		root = {
+			add_character_flag = senate_funds_games
+		}
+	}
+}
+

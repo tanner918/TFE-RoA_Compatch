@@ -1,0 +1,239 @@
+﻿on_game_start = {
+	on_actions = {
+		on_varna_start
+	}
+	
+}
+
+on_varna_start = {
+	effect = {
+		ordered_living_character = {
+			limit = {
+				AND = {
+					culture ?= {
+						has_cultural_parameter = varna_system_unlocked
+					}
+					NOT = {
+						OR = {
+							has_trait = brahmin
+							has_trait = kshatriya
+							has_trait = vaishya
+							has_trait = shudra
+						}
+					}
+				}
+			}
+			order_by = age
+			max = 500000
+			check_range_bounds = no
+			if = {
+				limit = {
+					is_landed = yes
+					highest_held_title_tier >= tier_kingdom
+				}
+				ordered_ancestor = {
+					even_if_dead = yes 
+					order_by = age
+					max = 500000
+					check_range_bounds = no
+					limit = {
+						culture ?= {
+							has_cultural_parameter = varna_system_unlocked
+						}
+					}
+					caste_trait_assign = {
+						TRAIT_THINKER = brahmin
+						TRAIT_RULER = kshatriya
+						TRAIT_TRADER = vaishya
+						TRAIT_WORKER = shudra
+					}
+				}
+			}
+			caste_trait_assign = {
+				TRAIT_THINKER = brahmin
+				TRAIT_RULER = kshatriya
+				TRAIT_TRADER = vaishya
+				TRAIT_WORKER = shudra
+			}
+		}
+	}
+	on_actions = {
+		delay = { days = 1 }
+		on_varna_start_check
+	}
+}
+on_varna_start_check = {
+	effect = {
+		ordered_living_character = {
+			limit = {
+				AND = {
+					culture ?= {
+						has_cultural_parameter = varna_system_unlocked
+					}
+					NOT = {
+						OR = {
+							has_trait = brahmin
+							has_trait = kshatriya
+							has_trait = vaishya
+							has_trait = shudra
+						}
+					}
+				}
+			}
+			order_by = age
+			max = 500000
+			check_range_bounds = no
+			if = {
+				limit = {
+					is_landed = yes
+					highest_held_title_tier >= tier_kingdom
+				}
+				ordered_ancestor = {
+					even_if_dead = yes 
+					order_by = age
+					max = 500000
+					check_range_bounds = no
+					limit = {
+						culture ?= {
+							has_cultural_parameter = varna_system_unlocked
+						}
+					}
+					caste_trait_assign = {
+						TRAIT_THINKER = brahmin
+						TRAIT_RULER = kshatriya
+						TRAIT_TRADER = vaishya
+						TRAIT_WORKER = shudra
+					}
+				}
+			}
+			caste_trait_assign = {
+				TRAIT_THINKER = brahmin
+				TRAIT_RULER = kshatriya
+				TRAIT_TRADER = vaishya
+				TRAIT_WORKER = shudra
+			}
+		}
+	}
+}
+
+on_character_culture_change = {
+	on_actions = {
+		on_varna_converted
+	}
+}
+
+on_birth_child = {
+	on_actions = {
+		on_varna_newborn
+	}
+}
+
+on_varna_newborn = {
+	effect = {
+		scope:child = {
+			if = {
+				limit = {
+					culture ?= {
+						has_cultural_parameter = varna_system_unlocked
+					}
+				}
+				caste_trait_newborn = {
+					TRAIT_THINKER = brahmin
+					TRAIT_RULER = kshatriya
+					TRAIT_TRADER = vaishya
+					TRAIT_WORKER = shudra
+				}
+			}
+		}
+	}
+}
+
+on_varna_converted = {
+	effect = {
+		if = {
+			limit = {
+				culture ?= {
+					has_cultural_parameter = varna_system_unlocked
+				}
+				NOT = {
+					OR = {
+						has_trait = brahmin
+						has_trait = kshatriya
+						has_trait = vaishya
+						has_trait = shudra
+					}
+				}
+			}
+			caste_trait_assign = {
+				TRAIT_THINKER = brahmin
+				TRAIT_RULER = kshatriya
+				TRAIT_TRADER = vaishya
+				TRAIT_WORKER = shudra
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					culture ?= {
+						has_cultural_parameter = varna_system_unlocked
+					}
+				}
+				OR = {
+					has_trait = brahmin
+					has_trait = kshatriya
+					has_trait = vaishya
+					has_trait = shudra
+				}
+			}
+			switch = {
+				trigger = has_trait
+				brahmin = {
+					remove_trait = brahmin
+				}
+				kshatriya = {
+					remove_trait = kshatriya
+				}
+				vaishya = {
+					remove_trait = vaishya
+				}
+				shudra = {
+					remove_trait = shudra
+				}
+			}
+		}
+	}
+}
+
+on_birthday = {
+	on_actions = {
+		on_varna_birthday_check
+	}
+}
+
+on_varna_birthday_check = {
+	effect = {
+		if = {
+			limit = {
+				AND = {
+					culture ?= {
+						has_cultural_parameter = varna_system_unlocked
+					}
+					NOT = {
+						OR = {
+							has_trait = brahmin
+							has_trait = kshatriya
+							has_trait = vaishya
+							has_trait = shudra
+						}
+					}
+				}
+			}
+			caste_trait_assign = {
+				TRAIT_THINKER = brahmin
+				TRAIT_RULER = kshatriya
+				TRAIT_TRADER = vaishya
+				TRAIT_WORKER = shudra
+			}
+		}
+	}
+}

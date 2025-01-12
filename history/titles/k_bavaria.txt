@@ -1,0 +1,2040 @@
+﻿k_bavaria = {
+	361.1.1 = { change_development_level = 4 }
+	768.1.1 = { change_development_level = 5 }
+	
+	548.1.1 = {
+		holder = 190178 #Garibald I
+		liege = e_france
+	}
+	591.1.1 = {
+		holder = 190179 #Tassilo I
+	}
+	610.1.1 = {
+		holder = 190336 #Garibald II
+	}
+	630.1.1 = {
+		holder = 190337 #Theodo I
+	}
+	680.1.1 = {
+		holder = 190338 #Lantpert
+	}
+	680.6.1 = {
+		holder = 190339 #Theodo II
+	}
+	716.1.1 = {
+		holder = 190334 #Theodbert I
+	}
+	719.1.1 = {
+		holder = 190370 #Theobald I
+	}
+	719.4.1 = {
+		holder = 190371 #Tassilo II
+	}
+	719.8.1 = {
+		holder = 190372 #Grimoald
+	}
+	725.1.1 = {
+		holder = 190226 #Hugbert
+	}
+	736.1.1 = {
+		holder = 190227 #Odilo
+	}
+	748.1.1 = {
+		holder = 144989 #Grifo
+	}
+	748.6.1 = {
+		holder = 190228 #Tassilo III
+	}
+}
+
+
+d_bavaria = {
+	632.1.1 = { change_development_level = 6 }
+	768.1.1 = { change_development_level = 7 }
+	#Bavari
+	470.1.1 = {
+		holder = bavari_01
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = tribal_government
+				}
+			}
+		}
+	}
+	500.1.1 = {
+		holder = bavari_07
+	}
+	548.1.1={
+		holder = 190178 #Garibald I
+	}
+	591.1.1={
+		holder = 190179 #Tassilo I
+	}
+	610.1.1={
+		holder = 190336 #Garibald II
+	}
+	630.1.1={
+		holder = 190337 #Theodo I
+	}
+}
+
+
+c_munchen = {
+	##Roman Province
+	200.1.1 = {
+		de_jure_liege = d_augsburg
+	}
+	361.1.1 = {
+		holder = bavaria_03
+		liege = d_augsburg
+	}
+	395.1.1 = {
+		holder = bavaria_04
+		liege = d_augsburg
+	}
+	476.1.1 = {
+		de_jure_liege = d_bavaria
+		government = tribal_government
+	}
+
+	#Bavari
+	476.1.1 = {
+		holder = alamannic_01
+		liege = d_bavaria
+	}
+	493.1.1 = {
+		holder = alamannic_04
+	}
+	530.1.1 = {
+		holder = alamannic_03
+		government = feudal_government
+	}
+	530.1.1 = {
+		holder = alamannic_05
+		liege = d_bavaria
+	}
+	547.1.1 = {
+		holder = bavari_18
+	}
+	600.1.1 = {
+		holder = bavari_08
+	}
+	640.1.1 = {
+		holder = bavari_23
+	}
+	678.1.1 = {
+		holder = bavari_24
+	}
+	700.1.1 = {
+		holder = bavari_25
+	}
+	740.1.1 = {
+		holder = 190369 #Hahilingis
+		liege = k_bavaria
+	}
+}
+
+
+c_eschenlohe = {
+	361.1.1 = { change_development_level = 5 }
+	##Roman Province
+	200.1.1 = {
+		de_jure_liege = d_augsburg
+	}
+	361.1.1 = {
+		holder = bavaria_03
+		liege = d_augsburg
+	}
+	395.1.1 = {
+		holder = bavaria_04
+		liege = d_augsburg
+	}
+	476.1.1 = {
+		de_jure_liege = d_bavaria
+	}
+
+	#Rugiland
+	476.1.1 = {
+		holder = rugian_09
+		liege = d_osterreich
+	}
+	530.1.1 = {
+		holder = alamannic_05
+		liege = d_bavaria
+	}
+
+	
+	547.1.1 = {
+		holder = bavari_18
+		government = feudal_government
+		liege = d_bavaria
+	}
+	600.1.1 = {
+		holder = bavari_08
+	}
+	640.1.1 = {
+		holder = bavari_26
+	}
+	678.1.1 = {
+		holder = bavari_27
+	}
+	700.1.1 = {
+		holder = bavari_28
+	}
+	757.1.1 = {
+		holder = 190373 #Hosi
+		liege = k_bavaria
+	}
+}
+
+
+c_regensburg = {
+	467.1.1 = { change_development_level = 5 }
+	532.1.1 = { change_development_level = 6 }
+	632.1.1 = { change_development_level = 8 }
+	768.1.1 = { change_development_level = 10 }
+	200.1.1 = { }
+	476.1.1 = { }
+	540.1.1 = { government = feudal_government }
+
+	##Roman Province
+	200.1.1 = {
+		de_jure_liege = d_augsburg
+	}
+	361.1.1 = {
+		holder = bavaria_01
+		liege = d_augsburg
+	}
+	395.1.1 = {
+		holder = bavaria_02
+		liege = d_augsburg
+	}
+	476.1.1 = {
+		de_jure_liege = d_bavaria
+	}
+
+	#Bavari
+	470.1.1 = {
+		holder = bavari_01
+	}
+	500.1.1 = {
+		holder = bavari_07
+	}
+	548.1.1 = {
+		holder = 190178 #Garibald I
+	}
+	591.1.1 = {
+		holder = 190179 #Tassilo I
+	}
+	610.1.1 = {
+		holder = 190336 #Garibald II
+	}
+	630.1.1 = {
+		holder = 190337 #Theodo I
+	}
+	680.1.1 = {
+		holder = 190338 #Lantpert
+	}
+	680.6.1 = {
+		holder = 190339 #Theodo II
+	}
+	716.1.1 = {
+		holder = 190334 #Theodbert I
+	}
+	719.1.1 = {
+		holder = 190370 #Theobald I
+	}
+	719.4.1 = {
+		holder = 190371 #Tassilo II
+	}
+	719.8.1 = {
+		holder = 190372 #Grimoald
+	}
+	725.1.1 = {
+		holder = 190226 #Hugbert
+	}
+	736.1.1 = {
+		holder = 190227 #Odilo
+	}
+	748.1.1 = {
+		holder = 144989 #Grifo
+	}
+	748.6.1 = {
+		holder = 190228 #Tassilo III
+	}
+}
+
+
+c_rothenburg = {
+	##Roman Province
+	200.1.1 = {
+		de_jure_liege = d_augsburg
+	}
+	361.1.1 = {
+		holder = bavaria_01
+		liege = d_augsburg
+	}
+	395.1.1 = {
+		holder = bavaria_02
+		liege = d_augsburg
+	}
+	476.1.1 = {
+		de_jure_liege = d_bavaria
+	}
+
+	#Bavari
+	476.1.1 = {
+		holder = alamannic_01
+		liege = d_bavaria
+	}
+	493.1.1 = {
+		holder = alamannic_04
+	}
+	530.1.1 = {
+		holder = alamannic_05
+		liege = d_bavaria
+	}
+	548.1.1 = {
+		holder = 190178 #Garibald I
+	}
+	591.1.1 = {
+		holder = 190179 #Tassilo I
+	}
+	610.1.1 = {
+		holder = 190336 #Garibald II
+	}
+	630.1.1 = {
+		holder = 190337 #Theodo I
+	}
+	680.1.1 = {
+		holder = 190338 #Lantpert
+	}
+	680.6.1 = {
+		holder = 190339 #Theodo II
+	}
+	716.1.1 = {
+		holder = 190334 #Theodbert I
+	}
+	719.1.1 = {
+		holder = 190370 #Theobald I
+	}
+	719.4.1 = {
+		holder = 190371 #Tassilo II
+	}
+	719.8.1 = {
+		holder = 190372 #Grimoald
+	}
+	725.1.1 = {
+		holder = 190226 #Hugbert
+	}
+	736.1.1 = {
+		holder = 190227 #Odilo
+	}
+	748.1.1 = {
+		holder = 144989 #Grifo
+	}
+	748.6.1 = {
+		holder = 190228 #Tassilo III
+	}
+}
+
+
+c_geisenhausen = {
+	200.1.1 = {
+		de_jure_liege = d_augsburg
+	}
+	361.1.1 = {
+		holder = bavaria_05
+		liege = d_augsburg
+	}
+	476.1.1 = {
+		de_jure_liege = d_bavaria
+	}
+	#Bavari
+	476.1.1 = {
+		holder = bavaria_17
+		liege = d_bavaria
+	}
+	500.1.1 = {
+		holder = bavari_02
+		government = tribal_government
+	}
+	547.1.1 = {
+		holder = bavari_18
+		government = feudal_government
+		liege = d_bavaria
+	}
+	600.1.1 = {
+		holder = bavari_08
+	}
+	640.1.1 = {
+		holder = bavari_23
+	}
+	678.1.1 = {
+		holder = bavari_24
+	}
+	700.1.1 = {
+		holder = bavari_25
+	}
+	740.1.1 = {
+		holder = 190369 #Hahilingis
+		liege = k_bavaria
+	}
+}
+
+
+c_frontenhausen = {
+	200.1.1 = {
+		de_jure_liege = d_augsburg
+	}
+	361.1.1 = {
+		holder = bavaria_05
+		liege = d_augsburg
+	}
+	476.1.1 = {
+		de_jure_liege = d_bavaria
+	}
+
+	#Bavari
+	476.1.1 = {
+		holder = bavaria_17
+		liege = d_bavaria
+	}
+	500.1.1 = {
+		holder = bavari_02
+	}
+	547.1.1 = {
+		holder = bavari_18
+		government = feudal_government
+	}
+	600.1.1 = {
+		holder = bavari_08
+	}
+	640.1.1 = {
+		holder = bavari_23
+	}
+	678.1.1 = {
+		holder = bavari_24
+	}
+	700.1.1 = {
+		holder = bavari_25
+	}
+	740.1.1 = {
+		holder = 190369 #Hahilingis
+		liege = k_bavaria
+	}
+}
+
+
+c_falkenstein = {
+	##Roman Province
+	200.1.1 = {
+		de_jure_liege = d_augsburg
+	}
+	361.1.1 = {
+		holder = bavaria_03
+		liege = d_augsburg
+	}
+	395.1.1 = {
+		holder = bavaria_04
+		liege = d_augsburg
+	}
+	476.1.1 = {
+		de_jure_liege = d_bavaria
+	}
+
+	#Rugiland
+	476.1.1 = {
+		holder = rugian_05
+		liege = d_osterreich
+	}
+	530.1.1 = {
+		holder = bavari_05
+		liege = d_bavaria
+		government = tribal_government
+	}
+	547.1.1 = {
+		holder = bavari_16
+		government = feudal_government
+	}
+	588.1.1 = {
+		holder = bavari_17
+	}
+	640.1.1 = {
+		holder = bavari_26
+	}
+	678.1.1 = {
+		holder = bavari_27
+	}
+	700.1.1 = {
+		holder = bavari_28
+	}
+	757.1.1 = {
+		holder = 190373 #Hosi
+		liege = k_bavaria
+	}
+}
+
+c_passau = {
+	361.1.1 = { change_development_level = 4 }
+	200.1.1 = {
+		de_jure_liege = d_augsburg
+	}
+	361.1.1 = {
+		holder = bavaria_05
+		liege = d_augsburg
+	}
+	476.1.1 = {
+		de_jure_liege = d_bavaria
+	}
+	
+	#Bavari
+	476.1.1 = {
+		holder = bavaria_18
+		liege = d_bavaria
+	}
+	530.1.1 = {
+		holder = bavari_03
+		government = tribal_government
+	}
+	547.1.1 = {
+		holder = bavari_11
+		government = feudal_government
+	}
+	600.1.1 = {
+		holder = bavari_15
+	}
+	640.1.1 = {
+		holder = bavari_25
+	}
+	678.1.1 = {
+		holder = bavari_36
+	}
+	700.1.1 = {
+		holder = bavari_37
+	}
+	751.1.1 = {
+		holder = 190367 #Anniona
+		liege = k_bavaria
+	}
+}
+
+
+d_nordgau = {
+	##Silingi Vandals
+	532.1.1 = {	change_development_level = 3 }
+	768.1.1 = { change_development_level = 4 }
+	200.1.1 = {
+		de_jure_liege = k_east_francia
+		name = JUTHUNGIA
+	}
+	360.1.1 = {
+		holder = alamannic_17
+	}
+	476.1.1 = {
+		reset_name = yes
+	}
+	548.1.1={
+		holder = 190178 #Garibald I
+	}
+	591.1.1={
+		holder = 190179 #Tassilo I
+	}
+	610.1.1={
+		holder = 190336 #Garibald II
+	}
+	630.1.1={
+		holder = 190337 #Theodo I
+	}
+	680.1.1={
+		holder = 190338 #Lantpert
+	}
+	680.6.1={
+		holder = 190339 #Theodo II
+	}
+	716.1.1={
+		holder = 190334 #Theodbert I
+	}
+	719.1.1={
+		holder = 190370 #Theobald I
+	}
+	719.4.1={
+		holder = 190371 #Tassilo II
+	}
+	719.8.1={
+		holder = 190372 #Grimoald
+	}
+	725.1.1={
+		holder = 190226 #Hugbert
+	}
+	736.1.1={
+		holder = 190227 #Odilo
+	}
+	748.1.1={
+		holder = 144989 #Grifo
+	}
+	748.6.1={
+		holder = 190228 #Tassilo III
+	}
+}
+
+
+c_ingolstadt = {
+	361.1.1 = { change_development_level = 2 }
+	##Silingi Vandals
+	360.1.1 = {
+		holder = alamannic_17
+	}
+
+	#Alemanni
+	470.1.1 = {
+		holder = alamannic_28
+		liege = k_east_francia
+	}
+	530.1.1 = {
+		holder = alamannic_07
+	}
+	548.1.1 = {
+		holder = 190178 #Garibald I
+	}
+	591.1.1 = {
+		holder = 190179 #Tassilo I
+	}
+	610.1.1 = {
+		holder = 190336 #Garibald II
+	}
+	630.1.1 = {
+		holder = 190337 #Theodo I
+	}
+	680.1.1 = {
+		holder = 190338 #Lantpert
+	}
+	680.6.1 = {
+		holder = 190339 #Theodo II
+	}
+	716.1.1 = {
+		holder = 190334 #Theodbert I
+	}
+	719.1.1 = {
+		holder = 190370 #Theobald I
+	}
+	719.4.1 = {
+		holder = 190371 #Tassilo II
+	}
+	719.8.1 = {
+		holder = 190372 #Grimoald
+	}
+	725.1.1 = {
+		holder = 190226 #Hugbert
+	}
+	736.1.1 = {
+		holder = 190227 #Odilo
+	}
+	748.1.1 = {
+		holder = 144989 #Grifo
+	}
+	748.6.1 = {
+		holder = 190228 #Tassilo III
+	}
+}
+
+
+c_eichstadt = {
+	361.1.1 = { change_development_level = 2 }
+	##Silingi Vandals
+	360.1.1 = {
+		holder = alamannic_17
+	}
+
+	#Alemanni
+	470.1.1 = {
+		holder = alamannic_28
+		liege = k_east_francia
+	}
+	530.1.1 = {
+		holder = alamannic_07
+	}
+	600.1.1 = {
+		holder = bavari_19
+		liege = d_bavaria
+	}
+	680.1.1={
+		holder = 190338 #Lantpert
+	}
+	680.6.1={
+		holder = 190339 #Theodo II
+	}
+	716.1.1={
+		holder = 190334 #Theodbert I
+	}
+	719.1.1={
+		holder = 190370 #Theobald I
+	}
+	719.4.1={
+		holder = 190371 #Tassilo II
+	}
+	719.8.1={
+		holder = 190372 #Grimoald
+	}
+	725.1.1={
+		holder = 190226 #Hugbert
+	}
+	736.1.1={
+		holder = 190227 #Odilo
+	}
+	748.1.1={
+		holder = 144989 #Grifo
+	}
+	748.6.1={
+		holder = 190228 #Tassilo III
+	}
+}
+
+
+c_leuchtenburg = {
+	361.1.1 = { change_development_level = 2 }
+	##Silingi Vandals
+	360.1.1 = {
+		holder = alamannic_17
+	}
+
+	#Alemanni
+	470.1.1 = {
+		holder = alamannic_02
+		liege = k_east_francia
+	}
+	530.1.1 = {
+		holder = alamannic_06
+		liege = k_frankish_rheims
+	}
+	600.1.1 = {
+		holder = bavari_19
+		liege = d_bavaria
+	}
+	757.1.1 = {
+		holder = bavari_38 #Hosi
+		liege = k_bavaria
+	}
+}
+
+
+c_parsberg = {
+	361.1.1 = { change_development_level = 2 }
+	##Silingi Vandals
+	
+	360.1.1 = {
+		holder = alamannic_17
+	}
+
+	#Alemanni
+	470.1.1 = {
+		holder = alamannic_02
+		liege = k_east_francia
+	}
+	530.1.1 = {
+		holder = alamannic_06
+		liege = k_frankish_rheims
+	}
+	600.1.1 = {
+		holder = bavari_19
+		liege = d_bavaria
+	}
+
+	757.1.1 = {
+		holder = bavari_38 #Hosi
+		liege = k_bavaria
+	}
+}
+
+
+c_hohenburg = {
+	361.1.1 = { change_development_level = 2 }
+	##Silingi Vandals
+	360.1.1 = {
+		holder = alamannic_18
+		liege = d_nordgau
+	}
+
+	#Bavari
+	470.1.1 = {
+		holder = bavari_01
+	}
+	500.1.1 = {
+		holder = bavari_07
+	}
+	547.1.1 = {
+		holder = bavari_14
+		government = feudal_government
+	}
+	600.1.1 = {
+		holder = bavari_15
+		liege = d_bavaria
+	}
+	751.1.1 = {
+		liege = k_bavaria
+	}
+	640.1.1 = {
+		holder = bavari_25
+	}
+	678.1.1 = {
+		holder = bavari_36
+	}
+	700.1.1 = {
+		holder = bavari_37
+	}
+	751.1.1 = {
+		holder = 190367 #Anniona
+	}
+}
+
+c_waldkirchen = {
+	361.1.1 = { change_development_level = 2 }
+	##Silingi Vandals
+	360.1.1 = {
+		holder = alamannic_18
+		liege = d_nordgau
+	}
+	#Marcomanni
+	470.1.1 = {
+		holder = marcomani_01
+		liege = k_bohemia
+	}
+	489.1.1 = {
+		holder = bavari_04
+		liege = d_bavaria
+	}
+	547.1.1 = {
+		holder = bavari_14
+		government = feudal_government
+	}
+	600.1.1 = {
+		holder = bavari_15
+	}
+	751.1.1 = {
+		liege = k_bavaria
+	}
+	640.1.1 = {
+		holder = bavari_25
+	}
+	678.1.1 = {
+		holder = bavari_36
+	}
+	700.1.1 = {
+		holder = bavari_37
+	}
+	751.1.1 = {
+		holder = 190367 #Anniona
+	}
+}
+
+d_salzburg = {
+	360.1.1 = { change_development_level = 4 }
+	768.1.1 = { change_development_level = 6 }
+	200.1.1 = {
+		de_jure_liege = k_pannonia
+		name = NORICUMRIPENSIS
+	}
+	361.1.1 = {
+		holder = bavaria_06
+		liege = k_pannonia
+	}
+	395.1.11 = {
+		liege = k_pannonia
+	}
+	476.1.1 = {
+		de_jure_liege = k_bavaria
+		reset_name = yes
+	}
+	
+	640.1.1 = {
+		holder = bavari_32
+	}
+	678.1.1 = {
+		holder = bavari_33
+	}
+	700.1.1 = {
+		holder = bavari_34
+	}
+	751.1.1 = {
+		holder = 190368 #Fagana
+		liege = k_bavaria
+		government = feudal_government
+	}
+}
+
+
+c_salzburg = {
+	361.1.1 = { change_development_level = 6 }
+	#Roman Province
+	361.1.1 = {
+		holder = bavaria_06
+	}
+
+	#Rugiland
+	476.1.1 = {
+		holder = rugian_05
+		liege = d_osterreich
+	}
+	530.1.1 = {
+		holder = bavari_05
+		liege = d_bavaria
+	}
+	547.1.1 = {
+		holder = bavari_16
+		government = feudal_government
+	}
+	588.1.1 = {
+		holder = bavari_17
+	}
+	640.1.1 = {
+		holder = bavari_32
+	}
+	678.1.1 = {
+		holder = bavari_33
+	}
+	700.1.1 = {
+		holder = bavari_34
+	}
+	751.1.1 = {
+		holder = 190368 #Fagana
+		liege = k_bavaria
+		government = feudal_government
+	}
+}
+
+
+c_berchtesgaden = {
+	361.1.1 = { change_development_level = 5 }
+	#Roman Province
+	361.1.1 = {
+		holder = bavaria_06
+	}
+
+	#Rugiland
+	476.1.1 = {
+		holder = rugian_05
+		liege = d_osterreich
+	}
+	530.1.1 = {
+		holder = bavari_05
+		liege = d_bavaria
+	}
+	547.1.1 = {
+		holder = bavari_16
+		government = feudal_government
+	}
+	588.1.1 = {
+		holder = bavari_17
+	}
+	640.1.1 = {
+		holder = bavari_26
+	}
+	678.1.1 = {
+		holder = bavari_27
+	}
+	700.1.1 = {
+		holder = bavari_28
+	}
+	757.1.1 = {
+		holder = 190373 #Hosi
+		liege = k_bavaria
+	}
+}
+
+
+c_hallstatt = {
+	361.1.1 = { change_development_level = 5 }
+	361.1.1 = {
+		holder = bavaria_07
+		liege = d_salzburg
+	}
+
+	##Indepentennt 
+	470.1.1 = {
+		holder = bavaria_16
+	}
+	500.1.1 = {
+		holder = bavari_06
+		liege = d_bavaria
+		government = tribal_government
+	}
+	547.1.1 = {
+		holder = bavari_09
+		government = feudal_government
+	}
+	589.1.1 = {
+		holder = bavari_12
+	}
+	600.1.1 = {
+		holder = bavari_13
+	}
+	640.1.1 = {
+		holder = bavari_32
+	}
+	678.1.1 = {
+		holder = bavari_33
+	}
+	700.1.1 = {
+		holder = bavari_34
+	}
+	751.1.1 = {
+		holder = 190368 #Fagana
+		liege = k_bavaria
+	}
+}
+
+
+c_linz = {
+	467.1.1 = { change_development_level = 5 }
+	768.1.1 = { change_development_level = 8 }
+	
+	361.1.1 = {
+		holder = bavaria_07
+		liege = d_salzburg
+	}
+
+	##Indepentennt 
+	470.1.1 = {
+		holder = bavaria_16
+	}
+	500.1.1 = {
+		holder = bavari_06
+		liege = d_bavaria
+	}
+	547.1.1 = {
+		holder = bavari_09
+		government = feudal_government
+	}
+	589.1.1 = {
+		holder = bavari_12
+	}
+	600.1.1 = {
+		holder = bavari_13
+	}
+	640.1.1 = {
+		holder = bavari_32
+	}
+	678.1.1 = {
+		holder = bavari_33
+	}
+	700.1.1 = {
+		holder = bavari_34
+	}
+	751.1.1 = {
+		holder = 190368 #Fagana
+		liege = k_bavaria
+	}
+}
+
+
+c_schaumberg = {
+	361.1.1 = { change_development_level = 5 }
+	#Roman Province
+	361.1.1 = {
+		holder = bavaria_06
+	}
+
+	#Bavari
+	476.1.1 = {
+		holder = bavaria_18
+		liege = d_bavaria
+	}
+	530.1.1 = {
+		holder = bavari_03
+	}
+	547.1.1 = {
+		holder = bavari_11
+		government = feudal_government
+	}
+	589.1.1 = {
+		holder = bavari_12
+	}
+	600.1.1 = {
+		holder = bavari_13
+	}
+	640.1.1 = {
+		holder = bavari_32
+	}
+	678.1.1 = {
+		holder = bavari_33
+	}
+	700.1.1 = {
+		holder = bavari_34
+	}
+	751.1.1 = {
+		holder = 190368 #Fagana
+		liege = k_bavaria
+	}
+}
+
+d_augsburg = {
+	# Roman Province
+	361.1.1 = { change_development_level = 4 }
+	476.1.1 = { change_development_level = 4 }
+	768.1.1 = { change_development_level = 5 }
+	200.1.1 = {
+		de_jure_liege = k_italia_annonariae
+		name = RhaetiaII
+	}
+	476.1.1 = {
+		de_jure_liege = k_east_francia
+		reset_name = yes
+	}
+	360.1.1 = {
+		holder = bavaria_08
+		liege = k_italia_annonariae
+	}
+}
+
+c_augsburg = {
+	361.1.1 = { change_development_level = 6 }
+	768.1.1 = { change_development_level = 8 }
+	# Roman Province
+	361.1.1 = {
+		holder = bavaria_08
+	}
+	#Alemanni
+	470.1.1 = {
+		holder = alamannic_25
+		liege = k_east_francia
+		government = feudal_government
+	}
+	#Bavari
+	476.1.1 = {
+		holder = alamannic_01
+		liege = d_bavaria
+	}
+	493.1.1 = {
+		holder = alamannic_04
+	}
+	530.1.1 = {
+		holder = alamannic_08
+		liege = k_east_francia
+	}
+	623.1.1 = {
+		holder = alamannic_11
+		liege = k_east_francia
+	}
+	757.1.1 = {
+		liege = k_bavaria
+	}
+	757.1.1 = {
+		holder = bavari_22 #
+		government = feudal_government
+	}
+}
+
+
+c_alpsee = {
+	# Roman Province
+	361.1.1 = { change_development_level = 5 }
+	200.1.1 = {
+		de_jure_liege = d_currezia
+		liege = d_currezia
+	}
+	361.1.1 = {
+		holder = bavaria_09
+		liege = d_currezia
+	}
+	#Alemanni
+	470.1.1 = {
+		holder = alamannic_25
+		liege = k_east_francia
+		de_jure_liege = d_augsburg
+		government = feudal_government
+	}
+	530.1.1 = {
+		holder = alamannic_09
+		liege = k_east_francia
+		government = tribal_government
+	}
+	623.1.1 = {
+		holder = victorids_01
+	}
+	757.1.1 = {
+		liege = k_bavaria
+	}
+	757.1.1 = {
+		holder = bavari_22 #
+	}
+}
+
+
+c_kempten = {
+	# Roman Province
+	361.1.1 = {
+		holder = bavaria_08
+	}
+	#Alemanni
+	470.1.1 = {
+		holder = alamannic_03
+		liege = k_east_francia
+		government = feudal_government
+	}
+	530.1.1 = {
+		holder = alamannic_08
+		liege = k_east_francia
+	}
+	623.1.1 = {
+		holder = alamannic_11
+		liege = k_east_francia
+	}
+	640.1.1 = {
+		holder = bavari_23
+	}
+	678.1.1 = {
+		holder = bavari_24
+	}
+	700.1.1 = {
+		holder = bavari_25
+	}
+	739.1.1 = {
+		holder = 190369 #Hahilingis
+		liege = k_bavaria
+	}
+}
+
+
+c_ravensburg = {
+	361.1.1 = { change_development_level = 5 }
+	# Roman Province
+	200.1.1 = {
+		de_jure_liege = d_currezia
+		liege = d_currezia
+	}
+	361.1.1 = {
+		holder = bavaria_09
+		liege = d_currezia
+	}
+	#Alemanni
+	470.1.1 = {
+		holder = alamannic_25
+		liege = k_east_francia
+		government = tribal_government
+		de_jure_liege = d_augsburg
+	}
+	530.1.1 = {
+		holder = alamannic_09
+		liege = k_east_francia
+	}
+	623.1.1 = {
+		holder = victorids_01
+	}
+	693.1.1 = {
+		holder = 190335 #Gotfrid
+	}
+	709.1.1 = {
+		holder = 190230 #Lantfrid
+	}
+	730.1.1 = {
+		holder = 190232 #Theobald
+	}
+	745.1.1 = {
+		holder = 190231 #Lantfrid II
+	}
+	751.1.1 = {
+		liege = k_lotharingia
+		holder = 190234 #Hnabi
+	}
+}
+
+
+c_burgau = {
+	# Roman Province
+	361.1.1 = { change_development_level = 4 }
+	361.1.1 = {
+		holder = bavaria_08
+	}
+	#Alemanni
+	470.1.1 = {
+		holder = alamannic_03
+		liege = k_east_francia
+		government = feudal_government
+	}
+	530.1.1 = {
+		holder = alamannic_08
+		liege = k_east_francia
+	}
+	623.1.1 = {
+		holder = alamannic_11
+		liege = k_east_francia
+	}
+	757.1.1 = {
+		liege = k_bavaria
+	}
+	757.1.1 = {
+		holder = bavari_22 #
+	}
+}
+
+
+d_steyermark = {
+	#Ostrogothica
+	530.1.1 = {
+		holder = rhaetia_03
+		liege = k_italy
+	}
+	
+	757.1.1 = {
+		holder = 190373 #Hosi
+		liege = k_bavaria
+	}
+}
+
+
+c_graz = {
+	200.1.1 = {
+		de_jure_liege = d_carinthia
+	}
+	361.1.1 = {
+		holder = bavaria_10
+		liege = d_carinthia
+	}
+	476.1.1 = {
+		de_jure_liege = d_steyermark
+		government = feudal_government
+	}
+
+	#Rugiland
+	476.1.1 = {
+		holder = rugian_06
+		liege = d_osterreich
+	}
+	#Ostrogothica
+	530.1.1 = {
+		holder = rhaetia_03
+	}
+	
+	#Avar Khaganate
+	628.1.1 = {
+		holder = venedian_02
+		liege = d_osterreich
+		government = tribal_government
+	}
+	757.1.1 = {
+		liege = k_bavaria
+	}
+	757.1.1 = {
+		holder = croatian_01 #
+		liege = d_steyermark
+		government = feudal_government
+	}
+}
+
+
+c_pitten = {
+	467.1.1 = { change_development_level = 5 }
+	200.1.1 = {
+		de_jure_liege = d_carinthia
+	}
+	361.1.1 = {
+		holder = bavaria_10
+		liege = d_carinthia
+	}
+	476.1.1 = {
+		de_jure_liege = d_steyermark
+	}
+
+	##Rugiland
+	445.1.1 = {
+		holder = rugian_02 # Flaccitheus
+	}
+	455.1.1 = {
+		holder = rugian_03 # Feletheus
+	}
+	493.1.1 = {
+		holder = hungary_08
+	}
+	532.1.1 = {
+		holder = 190167
+	}
+	#Avar Khaganate
+	628.1.1 = {
+		holder = venedian_02
+		liege = d_osterreich
+	}
+	757.1.1 = {
+		liege = k_bavaria
+	}
+	757.1.1 = {
+		holder = croatian_01 #
+		liege = d_steyermark
+	}
+}
+
+
+c_liebnitz = {
+	200.1.1 = {
+		de_jure_liege = d_carinthia
+	}
+	361.1.1 = {
+		holder = bavaria_11
+		liege = d_carinthia
+	}
+	476.1.1 = {
+		de_jure_liege = d_steyermark
+	}
+
+	#Rugiland
+	476.1.1 = {
+		holder = rugian_06
+		liege = d_osterreich
+	}
+	#Ostrogothica
+	530.1.1 = {
+		holder = rhaetia_03
+	}
+	
+	#Avar Khaganate
+	628.1.1 = {
+		holder = venedian_03
+		liege = d_osterreich
+		government = tribal_government
+	}
+	757.1.1 = {
+		liege = k_bavaria
+	}
+	757.1.1 = {
+		holder = croatian_01 #
+		liege = d_steyermark
+	}
+}
+
+
+c_murzzuschlag = {
+	200.1.1 = {
+		de_jure_liege = d_carinthia
+	}
+	361.1.1 = {
+		holder = bavaria_10
+		liege = d_carinthia
+	}
+	476.1.1 = {
+		de_jure_liege = d_steyermark
+	}
+
+	#Rugiland
+	476.1.1 = {
+		holder = rugian_06
+		liege = d_osterreich
+	}
+	530.1.1 = {
+		holder = rhaetia_03
+	}
+	532.1.1 = {
+		holder = 190167
+	}
+	#Avar Khaganate
+	628.1.1 = {
+		holder = venedian_02
+		liege = d_osterreich
+	}
+	757.1.1 = {
+		liege = k_bavaria
+	}
+	757.1.1 = {
+		holder = croatian_01 #
+		liege = d_steyermark
+	}
+}
+
+
+d_osterreich = {
+	768.1.1 = { change_development_level = 6 }
+	##Rugiland
+	445.1.1 = {
+		holder = rugian_02 # Flaccitheus
+	}
+	455.1.1 = {
+		holder = rugian_03 # Feletheus
+	}
+	628.1.1 = {
+		holder = venedian_01
+		government = tribal_government
+		liege = k_bohemia
+	}
+	757.1.1 = {
+		holder = 190374 #Draozza
+		liege = k_bavaria
+	}
+}
+
+
+c_vienna = {
+	361.1.1 = { change_development_level = 5 }
+	467.1.1 = { change_development_level = 6 }
+	768.1.1 = { change_development_level = 7 }
+	
+	200.1.1 = {
+		de_jure_liege = d_salzburg
+	}
+	361.1.1 = {
+		holder = bavaria_12
+		liege = d_salzburg
+	}
+	476.1.1 = {
+		de_jure_liege = d_osterreich
+	}
+
+	##Rugiland
+	445.1.1 = {
+		holder = rugian_02 # Flaccitheus
+	}
+	454.1.1 = {
+		holder = rugian_03 # Feletheus
+	}
+	#Lombardia
+	490.1.1 = {
+		holder = 993004 # Tato
+	}
+	510.1.1 = {
+		holder = 993008 # Wacho
+	}
+	538.1.1 = {
+		holder = 993011 # Walthar
+	}
+	#Avar Khaganate
+	628.1.1 = {
+		holder = venedian_01
+		government = tribal_government
+	}
+	757.1.1 = {
+		holder = 190374 #Draozza
+		liege = k_bavaria
+	}
+}
+
+
+c_hohenau = {
+	361.1.1 = { change_development_level = 2 }
+	467.1.1 = { change_development_level = 3 }
+	#Quadi Suebi
+	350.1.1 = {
+		holder = quadi_01
+		liege = k_quadi
+	}
+
+	##Rugiland
+	434.1.1 = {
+		holder = rugian_02 # Flaccitheus
+		liege = k_hungary
+	}
+	475.1.1 = {
+		holder = rugian_03 # Feletheus
+	}
+	#Lombardia
+	490.1.1 = {
+		holder = 993004 # Tato
+	}
+	510.1.1 = {
+		holder = 993008 # Wacho
+	}
+	538.1.1 = {
+		holder = 993011 # Walthar
+	}
+	#Avar Khaganate
+	628.1.1 = {
+		holder = venedian_01
+	}
+	757.1.1 = {
+		liege = k_bavaria
+	}
+	757.1.1 = {
+		holder = croatian_02 #
+	}
+}
+
+
+c_sankt_polten = {
+	467.1.1 = { change_development_level = 5 }
+	#Roman Province
+	200.1.1 = {
+		de_jure_liege = d_salzburg
+	}
+	361.1.1 = {
+		holder = bavaria_12
+		liege = d_salzburg
+	}
+	476.1.1 = {
+		de_jure_liege = d_osterreich
+	}
+
+	##Rugiland
+	445.1.1 = {
+		holder = rugian_02 # Flaccitheus
+	}
+	455.1.1 = {
+		holder = rugian_03 # Feletheus
+	}
+	#Lombardia
+	490.1.1 = {
+		holder = 993004 # Tato
+	}
+	510.1.1 = {
+		holder = 993008 # Wacho
+	}
+	538.1.1 = {
+		holder = 993011 # Walthar
+	}
+	#Avar Khaganate
+	628.1.1 = {
+		holder = venedian_01
+	}
+	757.1.1 = {
+		liege = k_bavaria
+	}
+	757.1.1 = {
+		holder = 190374 #Draozza
+		liege = k_bavaria
+	}
+
+}
+
+d_freistadt = {
+	200.1.1 = {
+		de_jure_liege = k_bohemia
+	}
+	476.1.1 = {
+		de_jure_liege = k_bavaria
+	}
+	532.1.1 = {
+		change_development_level = 3
+	}
+}
+
+
+c_freistadt = {
+	#Quadi Suebi
+	##Silingi Vandals
+	361.1.1 = { change_development_level = 2 }
+	
+	350.1.1 = {
+		holder = quadi_01
+		liege = k_quadi
+	}
+
+	#Marcomanni
+	470.1.1 = {
+		holder = marcomani_01
+		liege = k_bohemia
+	}
+	489.1.1 = {
+		holder = bavari_04
+		liege = d_bavaria
+	}
+	547.1.1 = {
+		holder = bavari_14
+		government = feudal_government
+	}
+	600.1.1 = {
+		holder = bavari_15
+	}
+	640.1.1 = {
+		holder = bavari_25
+	}
+	678.1.1 = {
+		holder = bavari_36
+	}
+	700.1.1 = {
+		holder = bavari_37
+	}
+	751.1.1 = {
+		holder = 190367 #Anniona
+		liege = k_bavaria
+	}
+}
+
+
+c_amstetten = {
+	361.1.1 = { change_development_level = 5 }
+	467.1.1 = { change_development_level = 6 }
+	200.1.1 = {
+		de_jure_liege = d_salzburg
+	}
+	361.1.1 = {
+		holder = bavaria_07
+		liege = d_salzburg
+	}
+	476.1.1 = {
+		de_jure_liege = d_osterreich
+		liege = d_bavaria
+	}
+
+	##Indepentennt 
+	465.1.1 = {
+		holder = bavaria_16
+	}
+	500.1.1 = {
+		holder = bavari_06
+		liege = d_bavaria
+	}
+	547.1.1 = {
+		holder = bavari_09
+		government = feudal_government
+	}
+	600.1.1 = {
+		holder = bavari_10
+	}
+	640.1.1 = {
+		holder = bavari_29
+	}
+	678.1.1 = {
+		holder = bavari_30
+	}
+	700.1.1 = {
+		holder = bavari_31
+	}
+	757.1.1 = {
+		holder = 190374 #Draozza
+		liege = k_bavaria
+	}
+}
+
+
+c_krems = {
+	#Quadi Suebi
+	361.1.1 = { change_development_level = 2 }
+	467.1.1 = { change_development_level = 3 }
+	350.1.1 = {
+		holder = quadi_01
+		liege = k_quadi
+	}
+
+	##Rugiland
+	445.1.1 = {
+		holder = rugian_02 # Flaccitheus
+	}
+	455.1.1 = {
+		holder = rugian_03 # Feletheus
+	}
+	#Lombardia
+	490.1.1 = {
+		holder = 993004 # Tato
+	}
+	510.1.1 = {
+		holder = 993008 # Wacho
+	}
+	538.1.1 = {
+		holder = 993011 # Walthar
+	}
+
+	#Avar Khaganate
+	628.1.1 = {
+		holder = venedian_01
+	}
+	757.1.1 = {
+		liege = k_bavaria
+	}
+	757.1.1 = {
+		holder = croatian_02 #
+	}
+}
+
+
+d_tyrol = {
+
+	768.1.1 = { change_development_level = 6 }
+	#Ostrogothica
+	530.1.1 = {
+		holder = rhaetia_01
+		liege = k_italy
+	}
+	
+	739.1.1 = {
+		holder = 190369 #Hahilingis
+		liege = k_bavaria
+	}
+}
+
+
+c_innsbruck = {
+	768.1.1 = { change_development_level = 8 }
+	200.1.1 = {
+		de_jure_liege = d_currezia
+		liege = d_currezia
+	}
+	361.1.1 = { change_development_level = 5 }
+	361.1.1 = {
+		holder = bavaria_13
+	}
+	476.1.1 = {
+		de_jure_liege = d_tyrol
+	}
+
+	#Rugiland
+	476.1.1 = {
+		holder = rugian_09
+		liege = d_osterreich
+	}
+
+	#Ostrogothica
+	530.1.1 = {
+		holder = rhaetia_01
+	}
+	628.1.1 = {
+		holder = bavari_20
+		liege = k_bavaria
+	}
+	640.1.1 = {
+		holder = bavari_26
+	}
+	678.1.1 = {
+		holder = bavari_27
+	}
+	700.1.1 = {
+		holder = bavari_28
+	}
+	757.1.1 = {
+		holder = 190373 #Hosi
+		liege = k_bavaria
+		government = feudal_government
+	}
+}
+
+
+c_brixen = {
+	#Roman Province
+	361.1.1 = { change_development_level = 5 }
+	200.1.1 = {
+		de_jure_liege = d_currezia
+		liege = d_currezia
+	}
+	361.1.1 = {
+		holder = bavaria_13
+	}
+	476.1.1 = {
+		de_jure_liege = d_tyrol
+	}
+
+	#Rugiland
+	476.1.1 = {
+		holder = rugian_08
+		liege = d_osterreich
+	}
+	#Ostrogothica
+	530.1.1 = {
+		holder = rhaetia_01
+	}
+	628.1.1 = {
+		holder = bavari_20
+		liege = k_bavaria
+	}
+	757.1.1 = {
+		liege = k_bavaria
+	}
+	757.1.1 = {
+		holder = bavari_21 #
+		liege = d_tyrol
+	}
+}
+
+
+c_lienz = {
+	#Roman Province
+	361.1.1 = { change_development_level = 5 }
+	200.1.1 = {
+		de_jure_liege = d_currezia
+		liege = d_currezia
+	}
+	361.1.1 = {
+		holder = bavaria_13
+		liege = d_currezia
+	}
+	476.1.1 = {
+		de_jure_liege = d_tyrol
+	}
+
+	#Rugiland
+	476.1.1 = {
+		holder = rugian_08
+		liege = d_osterreich
+	}
+
+	#Ostrogothica
+	530.1.1 = {
+		holder = rhaetia_01
+	}
+	628.1.1 = {
+		holder = bavari_20
+		liege = k_bavaria
+	}
+	757.1.1 = {
+		liege = k_bavaria
+	}
+	757.1.1 = {
+		holder = bavari_21 #
+		liege = d_tyrol
+	}
+}
+
+
+d_carinthia = {
+	360.1.1 = { change_development_level = 4 }
+	200.1.1 = {
+		de_jure_liege = k_pannonia
+		name = NORICUMMEDITERRANEUM
+	}
+	360.1.1 = {
+		holder = bavaria_11
+		liege = k_pannonia
+	}
+	395.1.10 = {
+		liege = k_pannonia
+	}
+	476.1.1 = {
+		de_jure_liege = k_bavaria
+		reset_name = yes
+	}
+	#Ostrogothica
+	530.1.1 = {
+		holder = rhaetia_02
+		liege = k_italy
+		government = feudal_government
+	}
+	600.1.1 = {
+		holder = 0
+	}
+}
+
+
+c_karnten = {
+	768.1.1 = { change_development_level = 7 }
+	
+	200.1.1 = {
+		de_jure_liege = k_pannonia
+	}
+	361.1.1 = {
+		holder = bavaria_11
+		liege = k_pannonia
+	}
+	476.1.1 = {
+		de_jure_liege = k_pannonia
+	}
+
+	#Rugiland
+	476.1.1 = {
+		holder = rugian_07
+		liege = d_osterreich
+	}
+	#Ostrogothica
+	530.1.1 = {
+		holder = rhaetia_02
+		government = feudal_government
+	}
+	#Avar Khaganate
+	628.1.1 = {
+		holder = venedian_05
+		liege = d_osterreich
+	}
+	764.1.1 = {
+		liege = k_bavaria
+	}
+	764.1.1 = {
+		holder = 190567 #Jesen
+	}
+	
+}
+
+
+c_kammersberg = {
+	#Roman Province
+	361.1.1 = {
+		holder = bavaria_14
+		liege = d_carinthia
+	}
+	#Rugiland
+	476.1.1 = {
+		holder = rugian_07
+		liege = d_osterreich
+	}
+	#Ostrogothica
+	530.1.1 = {
+		holder = rhaetia_04
+		liege = d_carinthia
+		government = feudal_government
+	}
+	#Avar Khaganate
+	628.1.1 = {
+		holder = venedian_04
+		liege = d_osterreich
+	}
+	764.1.1 = {
+		liege = k_bavaria
+	}
+	764.1.1 = {
+		holder = 190567 #Jesen
+	}
+	
+}
+
+c_knittelfeld = {
+	#Roman Province
+	361.1.1 = {
+		holder = bavaria_14
+		liege = d_carinthia
+	}
+	#Rugiland
+	476.1.1 = {
+		holder = rugian_07
+		liege = d_osterreich
+	}
+	#Ostrogothica
+	530.1.1 = {
+		holder = rhaetia_04
+		liege = d_carinthia
+	}
+	#Avar Khaganate
+	628.1.1 = {
+		holder = venedian_04
+		liege = d_osterreich
+	}
+	764.1.1 = {
+		liege = k_bavaria
+	}
+	764.1.1 = {
+		holder = 190567 #Jesen
+	}
+}
+
+
+c_villach = {
+	768.1.1 = { change_development_level = 7 }
+	
+	200.1.1 = {
+		de_jure_liege = k_pannonia
+	}
+	361.1.1 = {
+		holder = bavaria_11
+		liege = k_pannonia
+	}
+	476.1.1 = {
+		de_jure_liege = k_pannonia
+	}
+
+	#Rugiland
+	476.1.1 = {
+		holder = rugian_07
+		liege = d_osterreich
+	}
+	#Ostrogothica
+	530.1.1 = {
+		holder = rhaetia_02
+	}
+	#Avar Khaganate
+	628.1.1 = {
+		holder = venedian_05
+		liege = d_osterreich
+	}
+	764.1.1 = {
+		liege = k_bavaria
+	}
+	764.1.1 = {
+		holder = 190567 #Jesen
+	}
+}
+
+### KRAIN MOVED TO ITALY FOR REASONS

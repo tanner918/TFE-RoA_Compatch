@@ -1,0 +1,378 @@
+﻿# These assets are then used in the genes (game/common/genes/..) at the bottom of the file. 
+##################
+#The Fallen Eagle#
+##################
+## Roman ##
+# War
+male_headgear_secular_roman_war_01 = {
+	set_tags = "helmet,cap"
+	set_tags = "no_hair"
+	entity = {
+		required_tags = ""
+		shared_pose_entity = head
+		entity = male_headgear_secular_roman_war_01_entity
+	}
+}
+
+male_headgear_secular_roman_war_02 = {
+	set_tags = "helmet,cap"
+	set_tags = "no_hair"
+	entity = {
+		required_tags = ""
+		shared_pose_entity = head
+		entity = male_headgear_secular_roman_war_02_entity
+	}
+}
+
+male_headgear_secular_roman_war_03 = {
+	set_tags = "helmet,cap"
+	set_tags = "no_hair"
+	entity = {
+		required_tags = ""
+		shared_pose_entity = head
+		entity = male_headgear_secular_roman_war_03_entity
+	}
+}
+
+male_headgear_secular_roman_war_04 = {
+	set_tags = "helmet,cap"
+	set_tags = "no_hair"
+	entity = {
+		required_tags = ""
+		shared_pose_entity = head
+		entity = male_headgear_secular_roman_war_04_entity
+	}
+}
+
+male_headgear_secular_roman_war_05 = {
+	set_tags = "helmet,cap"
+	set_tags = "no_hair"
+	set_tags = "no_beard"
+	entity = {
+		required_tags = ""
+		shared_pose_entity = head
+		entity = male_headgear_secular_roman_war_05_entity
+	}
+}
+
+female_headgear_secular_roman_war_01 = {
+	set_tags = "no_hair"
+	set_tags = "helmet"
+	entity = {
+		required_tags = ""
+		shared_pose_entity = head
+		entity = female_headgear_secular_roman_war_01_entity
+	}
+}
+
+# Diadem
+female_headgear_secular_roman_diadem = {
+	set_tags = "crown"
+	entity = {
+		required_tags = ""
+		shared_pose_entity = head
+		entity = female_headgear_secular_roman_diadem_entity
+	}
+}
+
+male_headgear_secular_roman_diadem = {
+	set_tags = "crown"
+	entity = {
+		required_tags = ""
+		shared_pose_entity = head
+		entity = male_headgear_secular_roman_diadem_entity
+	}
+}
+
+female_headgear_secular_pref_diadem = {
+	set_tags = "crown"
+	entity = {
+		required_tags = ""
+		shared_pose_entity = head
+		entity = female_headgear_secular_prefect_diadem_entity
+	}
+}
+
+male_headgear_secular_pref_diadem = {
+	set_tags = "crown"
+	entity = {
+		required_tags = ""
+		shared_pose_entity = head
+		entity = male_headgear_secular_prefect_diadem_entity
+	}
+}
+
+# Justinian Crown
+male_crown_of_justinian_01 = {
+	set_tags = "crown"
+	entity = {
+		required_tags = ""
+		shared_pose_entity = head
+		entity = male_crown_of_justinian_01_entity
+	}
+}
+
+# Theodora Crown
+fem_byz_crown_of_theodora_01 = {
+	set_tags = "no_hair"
+	entity = {
+		required_tags = ""
+		shared_pose_entity = head
+		entity = fem_byz_crown_of_theodora_01_entity
+	}
+}
+
+# Artifacts
+male_headgear_secular_aurelian_helmet = {
+	set_tags = "helmet,cap"
+	set_tags = "no_hair"
+	set_tags = "no_beard"
+	entity = {
+		required_tags = ""
+		shared_pose_entity = head
+		entity = aurelian_helmet_entity
+	}
+}
+
+female_headgear_secular_aurelian_helmet = {
+	set_tags = "helmet,cap"
+	set_tags = "no_hair"
+	set_tags = "no_beard"
+	entity = {
+		required_tags = ""
+		shared_pose_entity = head
+		entity = female_aurelian_helmet_entity
+	}
+}
+
+male_headgear_secular_centurion_helmet = {
+	set_tags = "helmet,cap"
+	set_tags = "no_hair"
+	entity = {
+		required_tags = ""
+		shared_pose_entity = head
+		entity = centurion_helmet_entity
+	}
+}
+
+female_headgear_secular_centurion_helmet = {
+	set_tags = "helmet,cap"
+	set_tags = "no_hair"
+	entity = {
+		required_tags = ""
+		shared_pose_entity = head
+		entity = female_centurion_helmet_entity
+	}
+}
+
+male_headgear_secular_galea_helmet = {
+	set_tags = "helmet,cap"
+	set_tags = "no_hair"
+	entity = {
+		required_tags = ""
+		shared_pose_entity = head
+		entity = galea_helmet_entity
+	}
+}
+
+female_headgear_secular_galea_helmet = {
+	set_tags = "helmet,cap"
+	set_tags = "no_hair"
+	entity = {
+		required_tags = ""
+		shared_pose_entity = head
+		entity = female_galea_helmet_entity
+	}
+}
+
+## Hunnic ##
+male_headgear_secular_hunnic_royal_diadem_01 = {
+	set_tags = "crown"
+	entity = {
+		required_tags = ""
+		shared_pose_entity = head
+		entity = male_headgear_secular_hunnic_royal_diadem_01_entity
+	}
+}
+
+female_headgear_secular_hunnic_royal_diadem_01 = {
+	set_tags = "crown"
+	entity = {
+		required_tags = ""
+		shared_pose_entity = head
+		entity = female_headgear_secular_hunnic_royal_diadem_01_entity
+	}
+}
+
+## Celtic ##
+male_headgear_secular_celtic_waterloo = {
+	set_tags = "helmet,cap"
+	set_tags = "no_hair"
+	entity = {
+		required_tags = ""
+		shared_pose_entity = head
+		entity = male_headgear_secular_celtic_waterloo_entity
+	}
+}
+
+female_headgear_secular_celtic_waterloo = {
+	set_tags = "helmet,cap"
+	set_tags = "no_hair"
+	entity = {
+		required_tags = ""
+		shared_pose_entity = head
+		entity = female_headgear_secular_celtic_waterloo_entity
+	}
+}
+
+male_headgear_secular_celtic_berru = {
+	set_tags = "helmet,cap"
+	set_tags = "no_hair"
+	entity = {
+		required_tags = ""
+		shared_pose_entity = head
+		entity = male_headgear_secular_celtic_berru_entity
+	}
+}
+
+female_headgear_secular_celtic_berru = {
+	set_tags = "helmet,cap"
+	set_tags = "no_hair"
+	entity = {
+		required_tags = ""
+		shared_pose_entity = head
+		entity = female_headgear_secular_celtic_berru_entity
+	}
+}
+
+# Torques
+male_headgear_secular_celtic_torque_01 = {
+	entity = {
+		required_tags = ""
+		shared_pose_entity = head
+		entity = male_headgear_secular_celtic_torque_01_entity
+	}
+}
+
+female_headgear_secular_celtic_torque_01 = {
+	entity = {
+		required_tags = ""
+		shared_pose_entity = head
+		entity = female_headgear_secular_celtic_torque_01_entity
+	}
+}
+
+male_headgear_secular_celtic_torque_02 = {
+	entity = {
+		required_tags = ""
+		shared_pose_entity = head
+		entity = male_headgear_secular_celtic_torque_02_entity
+	}
+}
+
+female_headgear_secular_celtic_torque_02 = {
+	entity = {
+		required_tags = ""
+		shared_pose_entity = head
+		entity = female_headgear_secular_celtic_torque_02_entity
+	}
+}
+
+male_headgear_secular_celtic_torque_03 = {
+	entity = {
+		required_tags = ""
+		shared_pose_entity = head
+		entity = male_headgear_secular_celtic_torque_03_entity
+	}
+}
+
+female_headgear_secular_celtic_torque_03 = {
+	entity = {
+		required_tags = ""
+		shared_pose_entity = head
+		entity = female_headgear_secular_celtic_torque_03_entity
+	}
+}
+
+## Gladiator ##
+male_headgear_special_gladiator_murmillo_01 = {
+	set_tags = "helmet,cap"
+	set_tags = "no_hair"
+	set_tags = "no_beard"
+	entity = {
+		required_tags = ""
+		shared_pose_entity = head
+		entity = male_headgear_special_gladiator_murmillo_01_entity
+	}
+}
+
+## EPE-Imported models ##
+male_imperial_crown_zoroastrian = {
+	set_tags = "crown"
+	entity = {
+		required_tags = ""
+		shared_pose_entity = head
+		entity = iranian_imperial_crown_zoroastrian_male_01_entity
+	}
+}
+
+male_epe_byz_pannonian_hat_01_common = {    
+    set_tags = "cap"
+    entity = { required_tags = ""            shared_pose_entity = head        entity = male_epe_byz_pannonian_hat_01_common_entity      }        
+}
+male_epe_byz_pannonian_hat_01_low = {    
+    set_tags = "cap"
+    entity = { required_tags = ""            shared_pose_entity = head        entity = male_epe_byz_pannonian_hat_01_low_entity      }        
+}
+male_epe_byz_pannonian_hat_02_common = {    
+    set_tags = "cap"
+    entity = { required_tags = ""            shared_pose_entity = head        entity = male_epe_byz_pannonian_hat_02_common_entity      }        
+}
+male_epe_byz_pannonian_hat_02_low = {    
+    set_tags = "cap"
+    entity = { required_tags = ""            shared_pose_entity = head        entity = male_epe_byz_pannonian_hat_02_low_entity      }        
+}
+
+male_epe_byz_pannonian_hat_03_common = {    
+    set_tags = "cap"
+    entity = { required_tags = ""            shared_pose_entity = head        entity = male_epe_byz_pannonian_hat_03_common_entity      }        
+}
+male_epe_byz_pannonian_hat_03_low = {    
+    set_tags = "cap"
+    entity = { required_tags = ""            shared_pose_entity = head        entity = male_epe_byz_pannonian_hat_03_low_entity      }        
+}
+
+male_epe_byz_pannonian_hat_04_common = {    
+    set_tags = "cap"
+    entity = { required_tags = ""            shared_pose_entity = head        entity = male_epe_byz_pannonian_hat_04_common_entity      }        
+}
+male_epe_byz_pannonian_hat_04_low = {    
+    set_tags = "cap"
+    entity = { required_tags = ""            shared_pose_entity = head        entity = male_epe_byz_pannonian_hat_04_low_entity      }        
+}
+
+
+male_epe_byz_pannonian_hat_01_high = {    
+    set_tags = "cap"
+    entity = { required_tags = ""            shared_pose_entity = head        entity = male_epe_byz_pannonian_hat_01_high_entity      }        
+}
+male_epe_byz_pannonian_hat_03_high = {    
+    set_tags = "cap"
+    entity = { required_tags = ""            shared_pose_entity = head        entity = male_epe_byz_pannonian_hat_03_high_entity      }        
+}
+male_epe_byz_pannonian_hat_04_high = {    
+    set_tags = "cap"
+    entity = { required_tags = ""            shared_pose_entity = head        entity = male_epe_byz_pannonian_hat_04_high_entity      }        
+}
+
+#Thracian
+male_headgear_secular_thracianInfantry = {
+	set_tags = "helmet,cap"
+	set_tags = "no_hair"
+	set_tags = "no_beard"
+	entity = {
+		required_tags = ""
+		shared_pose_entity = head
+		entity = male_headgear_secular_thracianInfantry_entity
+	}
+}

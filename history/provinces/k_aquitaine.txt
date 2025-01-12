@@ -1,0 +1,739 @@
+﻿#k_brittany
+##d_gascogne ###################################
+###c_bordeaux
+2142 = {	#BORDEAUX
+	culture = gallo_roman
+	religion = nicene
+	holding = castle_holding
+
+	476.1.1 = {
+		religion = arianism
+		culture = visigothic
+	}
+	532.1.1 = {
+		religion = chalcedonian
+		culture = gallo_roman
+	}
+
+}
+2141 = {	#MEDOC
+	holding = church_holding
+}
+2144 = {	#BLAYE
+	holding = city_holding
+}
+2143 = {	#FRONSAC
+	holding = none
+}
+
+###c_labourd
+2012 = {	#BAYONNE
+	culture = basque
+	religion = basque_pagan
+	holding = castle_holding
+
+	532.1.1 = {
+		religion = chalcedonian
+	}
+}
+2138 = {	#DAX
+	holding = church_holding
+}
+2139 = {	#MIMIZAN
+	holding = city_holding
+}
+
+###c_albret
+2196 = {	#ALBRET
+	culture = basque
+	religion = nicene
+	holding = tribal_holding
+
+	476.1.1 = {
+		holding = castle_holding
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+}
+2195 = {	#TARTAS
+	holding = none
+}
+2140 = {	#LA TESTE DE BUCH
+	holding = none
+}
+2197 = {	#LANGON
+	holding = none
+}
+
+###c_marsan
+2199 = {	#MARSAN
+	culture = basque
+	religion = nicene
+	holding = castle_holding
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	
+}
+2198 = {	#BAZADAIS
+	holding = none
+}
+2200 = {	#GABARDAN
+	holding = none
+}
+
+###c_agenais
+2232 = {	#AGEN
+	culture = gallo_roman
+	religion = nicene
+	holding = castle_holding
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	
+}
+2235 = {	#AGENAIS
+	holding = none
+}
+
+##d_aquitaine ###################################
+###c_angouleme
+2244 = {	#ANGOULEME
+	culture = gallo_roman
+	religion = roman_pagan
+	holding = castle_holding
+
+	476.1.1 = {
+		religion = chalcedonian
+	}
+}
+2245 = {	#SAINT JUNIEN
+	holding = church_holding
+}
+2462 = {	#COGNAC
+	holding = city_holding
+}
+
+###c_perigord
+2237 = {	#PERIGUEUX
+	culture = gallo_roman
+	religion = roman_pagan
+	holding = castle_holding
+
+	532.1.1 = {
+		religion = chalcedonian
+	}
+}
+2239 = {	#NONTRON
+	holding = church_holding
+}
+2238 = {	#MONTIGNAC
+	holding = city_holding
+}
+2236 = {	#BERGERAC
+	holding = none
+}
+
+###c_limousin
+2248 = {	#LIMGOES
+	culture = gallo_roman
+	religion = roman_pagan
+	holding = castle_holding
+
+	532.1.1 = {
+		religion = chalcedonian
+	}
+}
+2246 = {	#CHALUS
+	holding = none
+}
+2247 = {	#VENTADOUR
+	holding = none
+}
+2240 = {	#TURENNE
+	holding = city_holding
+}
+
+###c_saintonge
+2241 = {	#SAINTONGE
+	culture = gallo_roman
+	religion = roman_pagan
+	holding = castle_holding
+
+	476.1.1 = {
+		religion = chalcedonian
+	}
+}
+2145 = {	#JONZAC
+	holding = church_holding
+}
+2146 = {	#ROYAN
+	holding = none
+}
+2242 = {	#SAINTES
+	holding = city_holding
+}
+
+###c_aunis
+2147 = {	#LA ROCHELLE
+	culture = gallo_roman
+	religion = roman_pagan
+	holding = castle_holding
+
+	768.1.1 = {
+		religion = chalcedonian
+	}
+}
+2243 = {	#TAILLEBOURG
+	holding = none
+}
+
+##d_toulouse ###################################
+###c_toulouse
+2214 = {	#TOULOUSE
+	culture = gallo_roman
+	religion = nicene
+	holding = castle_holding
+	476.1.1 = {
+		religion = arianism
+		culture = visigothic
+	}
+	532.1.1 = {
+		religion = chalcedonian
+		culture = gallo_roman
+	}
+}
+2211 = {	#PAMIERS
+}
+2213 = {	#CASTELSARRASIN
+	holding = none
+}
+2208 = {	#BEAUMONT SUR LEZE
+	holding = none
+}
+
+###c_quercy
+2231 = {	#QUERCY
+	culture = gallo_roman
+	religion = nicene
+	holding = castle_holding
+
+	451.1.1 = {
+		religion = chalcedonian
+	}
+
+}
+2230 = {	#MONTAUBAN
+	holding = none
+}
+2233 = {	#CAHORS
+	holding = city_holding
+}
+2234 = {	#FIGEAC
+	holding = church_holding
+}
+
+###c_gevaudan
+2223 = {	#GEVAUDAN
+	culture = gallo_roman
+	religion = valentinianism # manichean
+	holding = castle_holding
+
+	500.1.1 = {
+		religion = valentinianism
+	}
+	632.1.1 = {
+		religion = chalcedonian
+	}
+
+}
+2221 = {	#MENDE
+	holding = city_holding
+}
+2224 = {	#SAINT FLOUR
+	holding = church_holding
+}
+2291 = {	#LANGEAC
+	holding = none
+}
+
+###c_rouergue
+2226 = {	#RODEZ
+	culture = gallo_roman
+	religion = valentinianism # manichean
+	holding = castle_holding
+
+	500.1.1 = {
+		religion = manichean
+	}
+	632.1.1 = {
+		religion = chalcedonian
+	}
+
+}
+2228 = {	#LA SALLE
+	holding = none
+}
+2227 = {	#MARVEJOLS
+	holding = city_holding
+}
+2229 = {	#LA PEYRADE
+	holding = none
+}
+
+###c_millau
+2222 = {	#MILLAU
+	culture = gallo_roman
+	religion = manichean
+	holding = castle_holding
+
+	476.1.1 = {
+		religion = chalcedonian
+	}
+}
+2220 = {	#NAVACELLES
+	holding = none
+}
+
+##d_languedoc ###################################
+###c_albi
+2215 = {	#ALBI
+	culture = gallo_roman
+	religion = nicene
+	holding = castle_holding
+
+	476.1.1 = {
+		religion = arianism
+		culture = visigothic
+	}
+	632.1.1 = {
+		religion = chalcedonian
+	}
+	768.1.1 = {
+		culture = gallo_roman
+	}
+	
+
+}
+2212 = {	#CASTELNAUDARY
+	holding = none
+	1103.1.1 = {
+		holding = city_holding
+	}
+}
+
+###c_uses
+2217 = {	#MONTLAUR
+	culture = gallo_roman
+	religion = roman_pagan
+	holding = castle_holding
+
+	476.1.1 = {
+		religion = chalcedonian
+	}
+}
+2216 = {	#USES
+	holding = none
+}
+
+###c_montpellier
+2015 = {	#MONTPELLIER
+	culture = gallo_roman
+	religion = nicene
+	holding = castle_holding
+
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	532.1.1 = {
+		religion = arianism
+		culture = visigothic
+	}
+	632.1.1 = {
+		religion = chalcedonian
+	}
+	768.1.1 = {
+		culture = gallo_roman
+	}
+}
+2016 = {	#NIMES
+	holding = city_holding
+}
+2218 = {	#CEVENNES
+	holding = none
+}
+
+###c_carcassonne
+2006 = {	#CARCASSONNE
+	culture = gallo_roman
+	religion = manichean
+	holding = castle_holding
+	476.1.1 = {
+		religion = arianism
+		culture = visigothic
+	}
+	632.1.1 = {
+		religion = chalcedonian
+	}
+}
+2447 = {	#LIMOUX
+	holding = church_holding
+}
+2005 = {	#NARBONNE
+	holding = city_holding
+}
+
+###c_beziers
+2013 = {	#BEZIERS
+	culture = gallo_roman
+	religion = manichean
+	holding = castle_holding
+	
+	476.1.1 = {
+		religion = arianism
+		culture = visigothic
+	}
+	632.1.1 = {
+		religion = chalcedonian
+	}
+}
+2219 = {	#LODEVE
+	holding = none
+}
+2014 = {	#AGDE
+	holding = city_holding
+}
+
+###c_foix
+2209 = {	#FOIX
+	culture = basque
+	religion = basque_pagan
+	holding = tribal_holding
+
+	632.1.1 = {
+		religion = chalcedonian
+	}
+
+}
+2210 = {	#TARASCON
+	holding = none
+}
+2007 = {	#MONTBEL
+	holding = none
+}
+
+##d_armagnac ###################################
+###c_armagnac
+2201 = {	#ARMAGNAC
+	culture = basque
+	religion = nicene
+	holding = tribal_holding
+
+	476.1.1 = {
+		holding = castle_holding
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+}
+2204 = {	#LECTOURE
+	holding = tribal_holding
+}
+2205 = {	#LOMAGNE
+	holding = none
+}
+2203 = {	#FESENSAC
+	holding = none
+}
+
+###c_bigorre
+2010 = {	#TARBES
+	culture = basque
+	religion = basque_pagan
+	holding = tribal_holding
+
+	768.1.1 = {
+		religion = chalcedonian
+	}
+}
+2202 = {	#PARDIAC
+	holding = none
+}
+
+###c_bearn
+2193 = {	#PAU
+	culture = basque
+	religion = basque_pagan
+	holding = tribal_holding
+
+	632.1.1 = {
+		religion = chalcedonian
+	}
+
+}
+2194 = {	#TURSAN
+	holding = none
+}
+2011 = {	#OLORON
+	holding = none
+}
+
+###c_comminges
+2009 = {	#BERTRAND DE COMMINGES
+	culture = basque
+	religion = basque_pagan
+	holding = tribal_holding
+
+	632.1.1 = {
+		religion = chalcedonian
+	}
+
+}
+2008 = {	#SAINT LIZIER
+	holding = none
+}
+2206 = {	#ASTARAC
+	holding = none
+}
+2207 = {	#MURET
+	holding = none
+}
+
+##d_poitou ###################################
+###c_poitiers
+2252 = {	#POITIERS
+	culture = taifal
+	religion = nicene
+	holding = castle_holding
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	632.1.1 = {
+		culture = gallo_roman
+	}
+}
+2251 = {	#RUFFEC
+	holding = none
+}
+2253 = {	#CHATELLERAULT
+	holding = none
+	952.1.1 = {
+		holding = city_holding
+	}
+}
+2256 = {	#LOUDUN
+	holding = none
+}
+
+###c_lusignan
+2249 = {	#LUSIGNAN
+	culture = taifal
+	religion = nicene
+	holding = castle_holding
+	451.1.1 = {
+		religion = chalcedonian
+		culture = gallo_roman
+	}
+}
+2250 = {	#MELLE
+	holding = city_holding
+}
+2254 = {	#NIORT
+	holding = none
+	1000.1.1 = {
+		holding = church_holding
+	}
+}
+
+###c_montaigu
+2150 = {	#MONTAIGU
+	culture = gallo_roman
+	religion = roman_pagan
+	holding = castle_holding
+
+	395.1.1 = {
+		religion = nicene
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	532.1.1 = {
+		culture = taifal
+	}
+	632.1.1 = {
+		culture = gallo_roman
+	}
+}
+2149 = {	#TALMONT
+	holding = none
+}
+2259 = {	#MAULEVRIER
+	holding = none
+	1000.1.1 = {
+		holding = church_holding
+	}
+}
+###c_thouars
+2257 = {	#THOUARS
+	culture = gallo_roman
+	religion = roman_pagan
+	holding = castle_holding
+
+	395.1.1 = {
+		religion = nicene
+	}
+	451.1.1 = {
+		religion = chalcedonian
+		culture = taifal
+	}
+	632.1.1 = {
+		culture = gallo_roman
+	}
+}
+2255 = {	#PARTHENAY
+	holding = none
+	1010.1.1 = {
+		holding = city_holding
+	}
+}
+2258 = {	#BRESSUIRE
+	holding = none
+	1000.1.1 = {
+		holding = church_holding
+	}
+}
+2148 = {	#FONTENAY
+	holding = none
+}
+
+##d_auvergne ###################################
+###c_auvergne
+2294 = {	#AURILLAC
+	culture = gallo_roman
+	religion = roman_pagan
+	holding = castle_holding
+
+	476.1.1 = {
+		religion = chalcedonian
+	}
+}
+2293 = {	#CARLAT
+	holding = castle_holding
+}
+2292 = {	#MURAT
+	holding = none
+}
+
+###c_clermont_sur_allier
+2289 = {	#CLERMONT SUR AILLER
+	culture = gallo_roman
+	religion = roman_pagan
+	holding = castle_holding
+
+	476.1.1 = {
+		religion = chalcedonian
+	}
+}
+2295 = {	#LA TOUR
+	holding = none
+}
+2290 = {	#MERCAEUR
+	holding = none
+}
+2288 = {	#MONTPENSIER
+	holding = none
+}
+
+###c_thiers
+2299 = {	#THIERS
+	culture = gallo_roman
+	religion = roman_pagan
+	holding = castle_holding
+
+	632.1.1 = {
+		religion = chalcedonian
+	}
+}
+2300 = {	#AMBERT
+	holding = none
+}
+
+###c_velay
+2225 = {	#LE PUY
+	culture = gallo_roman
+	religion = roman_pagan
+	holding = castle_holding
+
+	632.1.1 = {
+		religion = chalcedonian
+	}
+}
+2296 = {	#VELAY
+	holding = city_holding
+}
+
+##d_bourbon ###################################
+###c_bourbon
+2310 = {	#BOURBON-LARCHEMBAULT
+	culture = gallo_roman
+	religion = celto_hellenic_syncretism
+	holding = castle_holding
+
+	476.1.1 = {
+		religion = chalcedonian
+	}
+}
+2311 = {	#ORVAL
+	holding = none
+}
+2308 = {	#MONTLUCON
+	holding = city_holding
+}
+2281 = {	#BOUSSAC
+	holding = none
+}
+
+###c_bellac
+2284 = {	#BELLAC
+	culture = gallo_roman
+	religion = manichean
+	holding = castle_holding
+
+	532.1.1 = {
+		religion = chalcedonian
+	}
+}
+2464 = {	#LA TREMOUILLE
+	holding = none
+}
+###c_jaligny
+2309 = {	#SAINT POURCAIN
+	culture = gallo_roman
+	religion = celto_hellenic_syncretism
+	holding = castle_holding
+
+	632.1.1 = {
+		religion = chalcedonian
+	}
+}
+2306 = {	#JALIGNY
+	holding = city_holding
+}
+
+###c_la_marche
+2285 = {	#GRANDMONT
+	culture = gallo_roman
+	religion = celto_hellenic_syncretism
+	holding = castle_holding
+
+	476.1.1 = {
+		religion = chalcedonian
+	}
+}
+2286 = {	#GUERET
+	holding = church_holding
+}
+2287 = {	#AUBUSSON
+	holding = none
+}

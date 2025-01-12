@@ -1,0 +1,278 @@
+﻿k_galicia-volhynia = {
+	361.1.1 = { change_development_level = 0 }
+	532.1.1 = { change_develompent_level = 1 }
+	768.1.1 = { change_development_level = 2 }
+	200.1.1 = {
+		de_jure_liege = e_west_slavia
+	}
+}
+
+d_volhynia = {
+	395.1.1 = {
+		holder = 999701
+		government = tribal_government
+		liege = k_galicia-volhynia
+	}
+	430.1.1 = {
+		holder = anteans_03
+	}
+}
+
+d_halych = {
+	476.1.1 = {
+		holder = anteans_04
+	}
+	530.1.1 = {
+		holder = anteans_18
+	}
+}
+
+
+c_cherven = {
+	### Vistula Venedi
+	340.1.1 = {
+		holder = volynhia_01
+	}
+	#Antean Federation
+	460.1.1 = {
+		holder = slavs_25
+	}
+	530.1.1 = {
+		holder = dslavs_18
+		government = tribal_government
+	}
+}
+
+
+c_volodymyr = {
+	768.1.1 = { change_development_level = 2 }
+	### Vistula Venedi
+	340.1.1 = {
+		holder = volynhia_01
+	}
+	#Anteans Penetrate into Volyshnia and Galicia
+	395.1.1 = {
+		holder = 999701
+	}
+	430.1.1 = {
+		holder = anteans_03
+	}
+	450.1.1 = {
+		holder = anteans_04
+	}
+	460.1.1 = {
+		holder = slavs_25
+	}
+	530.1.1 = {
+		holder = anteans_19
+	}
+}
+
+
+c_peresopnytsia = {
+	# King Bož
+	335.1.1 = {
+		holder = slavs_01
+		government = tribal_government
+	}
+	#Anteans Penetrate into Volyshnia and Galicia
+	395.1.1 = {
+		holder = 999701
+	}
+	430.1.1 = {
+		holder = anteans_03
+	}
+	450.1.1 = {
+		holder = anteans_04
+	}
+	530.1.1 = {
+		holder = anteans_19
+	}
+}
+
+
+c_berestye = {
+	367.1.1 = {
+		holder = sudovian_02
+	}
+	# Hunnic vassal
+	385.1.1 = {
+		liege = k_galicia-volhynia
+	}
+	476.1.1 = {
+		holder = volynhia_03
+		liege = 0
+	}
+	###Pre-Kievan Rus'
+	500.1.1 = {
+		liege = 0
+		government = tribal_government
+	}
+	530.1.1 = {
+		holder = sudovian_43
+	}
+}
+
+
+c_dorohychyn = {
+	367.1.1 = {
+		holder = sudovian_02
+	}
+	476.1.1 = {
+		holder = volynhia_03
+	}
+	###Pre-Kievan Rus'
+	500.1.1 = {
+		liege = 0
+		government = tribal_government
+	}
+	530.1.1 = {
+		holder = sudovian_43
+	}
+}
+
+
+c_halych = {
+	768.1.1 = { change_development_level = 2 }
+	###Dacian leftovers
+	340.1.1 = {
+		holder = cosotoboci_01
+		government = tribal_government
+	}
+	##Huns Invade
+	395.1.1 = {
+		liege = k_galicia-volhynia
+	}
+	#Antean Federation
+	476.1.1 = {
+		holder = anteans_04
+		liege = 0
+	}
+	###Pre-Kievan Rus'
+	500.1.1 = {
+		liege = 0
+		government = tribal_government
+	}
+	530.1.1 = {
+		holder = anteans_18
+	}
+}
+
+
+c_lviv = {
+	# King Bož
+	335.1.1 = {
+		holder = slavs_01
+		government = tribal_government
+		change_development_level = 1
+	}
+	#Anteans Penetrate into Volyshnia and Galicia
+	395.1.1 = {
+		holder = anteans_01
+		liege = d_volhynia
+	}
+	476.1.1 = {
+		holder = anteans_04
+		liege = 0
+	}
+	###Pre-Kievan Rus'
+	500.1.1 = {
+		liege = 0
+		government = tribal_government
+	}
+	530.1.1 = {
+		holder = anteans_18
+	}
+}
+
+
+c_terebovl = {
+	# King Bož
+	335.1.1 = {
+		holder = slavs_01
+		government = tribal_government
+	}
+	#Anteans Penetrate into Volyshnia and Galicia
+	395.1.1 = {
+		holder = anteans_01
+		liege = d_volhynia
+	}
+	476.1.1 = {
+		holder = anteans_04
+		liege = 0
+	}
+	###Pre-Kievan Rus'
+	500.1.1 = {
+		liege = 0
+		government = tribal_government
+	}
+	530.1.1 = {
+		holder = anteans_18
+	}
+}
+
+
+c_zaslavl = {
+	# King Bož
+	335.1.1 = {
+		holder = slavs_01
+		government = tribal_government
+	}
+	#Anteans Penetrate into Volyshnia and Galicia
+	395.1.1 = {
+		holder = anteans_01
+		liege = d_volhynia
+	}
+	#Antean Federation
+	476.1.1 = {
+		holder = anteans_04
+		liege = 0
+	}
+	530.1.1 = {
+		holder = anteans_18
+	}
+}
+
+
+c_belz = {
+	### Vistula Venedi
+	340.1.1 = {
+		holder = volynhia_01
+	}
+	#Anteans Penetrate into Volyshnia and Galicia
+	395.1.1 = {
+		holder = anteans_01
+		liege = d_volhynia
+	}
+	#Antean Federation
+	460.1.1 = {
+		holder = slavs_25
+	}
+	530.1.1 = {
+		holder = dslavs_18
+		government = tribal_government
+		liege = 0
+	}
+}
+
+
+c_peremyshl = {
+	###Dacian leftovers
+	340.1.1 = {
+		holder = cosotoboci_01
+		government = tribal_government
+	}
+	##Huns Invade
+	395.1.1 = {
+		liege = e_hunnic_empire
+	}
+	# Czech
+	461.1.1 = {
+		holder = slavs_22
+	}
+	530.1.1 = {
+		holder = dslavs_18
+		liege = 0
+	}
+}
+

@@ -1,0 +1,56 @@
+﻿# Effects for testing various things
+
+TFE_roman_empire_make_incompetent = {
+	title:e_roman_empire.holder = {
+		set_variable = {
+			name = civic_comp
+			value = 0
+		}
+		set_variable = {
+			name = diplo_comp
+			value = 0
+		}
+		set_variable = {
+			name = mil_comp
+			value = 0
+		}
+	}
+}
+
+TFE_western_roman_empire_make_incompetent = {
+	title:e_western_roman_empire.holder = {
+		set_variable = {
+			name = civic_comp
+			value = 0
+		}
+		set_variable = {
+			name = diplo_comp
+			value = 0
+		}
+		set_variable = {
+			name = mil_comp
+			value = 0
+		}
+	}
+}
+
+TFE_eastern_roman_empire_make_incompetent = {
+	title:e_byzantium.holder = {
+		set_variable = {
+			name = civic_comp
+			value = 0
+		}
+		set_variable = {
+			name = diplo_comp
+			value = 0
+		}
+		set_variable = {
+			name = mil_comp
+			value = 0
+		}
+	}
+}
+
+
+
+

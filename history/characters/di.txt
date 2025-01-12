@@ -1,0 +1,315 @@
+﻿#############################################################
+# 
+# DI PEOPLE (Later Liang)
+# 
+# Done by Cybrxkhan
+# 
+#############################################################
+
+di_001 = { # Later Liang / Lu Guang himself
+	name = "Guang"
+	dynasty = dynasty_lu_later_liang
+	religion = "mahayana" # Major patron of Buddhism
+	culture = "di"
+	father = di_007
+	trait = wrathful
+	trait = paranoid
+	trait = arbitrary
+	trait = hunter_1
+	trait = education_martial_3
+	337.12.8 = {
+		birth = yes
+	}
+	360.1.1 = {
+		add_spouse = di_006
+	}
+	395.1.1 = {
+		effect = {
+			add_pressed_claim = title:d_liangzhou
+			add_pressed_claim = title:d_shanzhou
+			add_pressed_claim = title:d_qilin
+			add_pressed_claim = title:d_ganzhou
+			add_pressed_claim = title:d_yijinai
+			add_pressed_claim = title:d_guiyi
+			add_pressed_claim = title:d_aksay
+		}
+	}
+	399.1.1 = {
+		death = yes
+	}
+}
+# Lu Zuan
+# Lu Guang's son who he relied on heavily as a general
+# Seized the throne from Lu Shao, Lu Guang's heir
+# Overall sounds like a huge asshole
+di_002 = { 
+	name = "Zuan"
+	dynasty = dynasty_lu_later_liang
+	religion = "mahayana"
+	culture = "di"
+	father = di_001
+	#mother = di_006
+	trait = education_martial_3 # Skilled tactically but not strategically
+	trait = ambitious
+	trait = wrathful
+	trait = sadistic
+	trait = gluttonous
+	trait = disloyal
+	trait = bastard # Technically son of concubine, but this is the only way to ensure Lu Shao takes the throne
+	370.10.9 = {
+		birth = yes
+	}
+	394.1.1 = {
+		add_spouse = di_011
+	}
+	401.5.1 = {
+		death = yes
+	}
+}
+
+di_003 = { # Later Liang
+	name = "Hong"
+	dynasty = dynasty_lu_later_liang
+	religion = "mahayana"
+	culture = "di"
+	father = di_001
+	#mother = di_006
+	trait = ambitious
+	trait = paranoid
+	trait = fickle
+	trait = education_martial_2
+	trait = disloyal
+	trait = bastard # Technically son of concubine, but this is the only way to ensure Lu Shao takes the throne
+	372.9.17 = {
+		birth = yes
+	}
+	400.3.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = 1240009
+		}
+	}
+}
+
+di_004 = { # Later Liang
+	name = "Shao"
+	dynasty = dynasty_lu_later_liang
+	religion = "mahayana"
+	culture = "di"
+	father = di_001
+	mother = di_006
+	trait = craven
+	trait = lazy
+	trait = humble
+	trait = education_diplomacy_1
+	378.6.1 = {
+		birth = yes
+	}
+	395.1.1 = {
+		add_spouse = di_015
+	}
+	400.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = 1240009
+		}
+	}
+}
+
+di_005 = { # Later Liang
+	name = "Wei"
+	dynasty = dynasty_lu_later_liang
+	religion = "mahayana"
+	culture = "di"
+	father = di_001
+	mother = di_006
+	384.4.9 = {
+		birth = yes
+	}
+	401.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = 1240009
+		}
+	}
+}
+
+di_006 = { # Lu Guang's Empress, name unknown
+	name = "Shi"
+	female = yes
+	religion = "mahayana"
+	culture = "di"
+	341.2.8 = {
+		birth = yes
+	}
+	398.5.3 = {
+		death = yes
+	}
+}
+
+di_007 = { # Lu Guang's father
+	name = "Polou"
+	dynasty = dynasty_lu_later_liang
+	religion = "zhengyi"
+	culture = "di"
+	301.9.22 = { # Unknown
+		birth = yes
+	}
+	357.3.29 = { # Unknown, but served court of Former Qin as late as the 350s
+		death = yes
+	}
+}
+
+di_008 = { # Lu Guang's brother
+	name = "Bao"
+	dynasty = dynasty_lu_later_liang
+	religion = "mahayana"
+	culture = "di"
+	father = di_007
+	trait = education_martial_3
+	342.7.18 = { # Unknown
+		birth = yes
+	}
+	392.6.14 = { # Killed in battle in 392 against Western Qin
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+di_009 = { # Lu Guang's nephew, last ruler of Later Liang
+	name = "Long"
+	dynasty = dynasty_lu_later_liang
+	religion = "mahayana"
+	culture = "di"
+	father = di_008
+	prowess = 8 # Skilled at horsemanship and archery
+	trait = education_martial_1 # Served as general but did not rise to prominence
+	trait = beauty_good_2 # Said to be handsome
+	trait = arbitrary # Continued his uncle Zuan's policy of violence to secure control
+	trait = vengeful # Very disproportionate punishments
+	trait = wrathful # Very disproportionate punishments
+	369.12.17 = { # Unknown
+		birth = yes
+	}
+	394.1.1 = {
+		set_relation_friend = character:di_010	
+	}
+	416.4.4 = { # Executed by Later Qin Dynasty
+		death = {
+			death_reason = death_execution
+		}
+	}
+}
+
+di_010 = { # Lu Guang's nephew, brother of Lu Bao
+	name = "Chao"
+	dynasty = dynasty_lu_later_liang
+	religion = "mahayana"
+	culture = "di"
+	father = di_008
+	prowess = 8 # Skilled at horsemanship and archery
+	trait = education_martial_3 # Said to be a better general than his brother
+	trait = diligent # Was trusted with most governmental affairs by his brother
+	trait = ambitious # Led a coup against Lu Zuan to put his brother on the throne without his brother agreeing to it
+	trait = lustful # Wanted to take Lu Zuan's beautiful concubine as his own
+	sexuality = heterosexual
+	374.3.15 = { # Unknown
+		birth = yes
+	}
+	416.4.4 = { # Executed by Later Qin Dynasty
+		death = {
+			death_reason = death_execution
+		}
+	}
+}
+
+di_011 = { # Lu Zuan's wife
+	name = "Mu"
+	female=yes
+	dynasty = dynasty_yang_liang
+	religion = "zhengyi"
+	culture = "han"
+	father = di_012
+	trait = beauty_good_3 # Said to be very beautiful
+	trait = chaste # Refused to become Lu Chao's concubine and killed herself
+	trait = brave # Tried to organize the palace guards to fight Lu Chao during the coup against Lu Zuan
+	trait = just # Told Lu Chao to buzz off after he killed Lu Zuan
+	trait = calm # Remained calm and brave in the face of death and the coup against her husband
+	375.3.15 = { # Unknown
+		birth = yes
+	}
+	401.5.10 = { # Committed suicide shortly after the coup against Lu Zuan
+		death = {
+			death_reason = death_suicide
+		}
+	}
+}
+
+di_012 = { # Lu Zuan's father in law, a Later Liang official
+	name = "Huan"
+	dynasty = dynasty_yang_liang
+	religion = "zhengyi"
+	culture = "han"
+	345.1.10 = { # Unknown
+		birth = yes
+	}
+	419.2.74 = { # Lived after his daughter's death, fled to Southern Liang, unknown otherwise
+		death = yes
+	}
+}
+
+di_013 = { # Lu Guang's nephew, brother of Lu Bao
+	name = "Miao"
+	dynasty = dynasty_lu_later_liang
+	religion = "mahayana"
+	culture = "di"
+	father = di_008
+	375.7.18 = { # Unknown
+		birth = yes
+	}
+	416.4.4 = { # Unknown but presumably executed by Later Qin Dynasty with his brothers
+		death = {
+			death_reason = death_execution
+		}
+	}
+}
+
+di_014 = { # Lu Guang's younger brother
+	name = "Yan"
+	dynasty = dynasty_lu_later_liang
+	religion = "mahayana"
+	culture = "di"
+	father = di_007
+	trait=education_martial_2
+	# Brave but reckless
+	trait=brave
+	trait=impatient
+	trait=arrogant
+	351.2.27 = { # Unknown
+		birth = yes
+	}
+	397.3.13 = { # Killed in battle in 397 against Western Qin
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+di_015 = { # Lu Shao's wife
+	name = "Mei"
+	religion = "mahayana"
+	culture = "di"
+	trait=beauty_good_3
+	trait=zealous # When her husband was killed, asked to become a nun
+	trait=brave # When Lu Long tried to rape her after her husband was killed, she told him to fuck off and committed suicide
+	trait=calm # Died calmly while committing suicide, chanting sutras
+	379.1.1 = { # Around 386, but moved to 379 to be closer to Shao's age
+		birth = yes
+	}
+	400.1.1 = { # Suicide after Lu Long tried to rape her
+		death = {
+			death_reason = death_suicide
+		}
+	}
+}

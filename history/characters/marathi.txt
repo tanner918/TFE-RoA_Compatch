@@ -1,0 +1,859 @@
+﻿191323 = {
+	name = "Kurumpruhoda"
+	dynasty = 1044336	#Mana
+	religion = "shaivism"
+	culture = "gond"
+	620.1.1 = {
+		birth = yes
+	}
+	700.1.1 = {
+		death = yes
+	}
+}
+
+191324 = {
+	name = "Soorjat_Badwaik"
+	dynasty = 1044336	#Mana
+	religion = "shaivism"
+	culture = "gond"
+	father = 191323
+	680.1.1 = {
+		birth = yes
+	}
+	750.1.1 = {
+		death = yes
+	}
+}
+
+191325 = {
+	name = "Kurumpruhoda"	#Names are really only known for the first two rulers
+	dynasty = 1044336	#Mana
+	religion = "shaivism"
+	culture = "gond"
+	father = 191324
+	700.1.1 = {
+		birth = yes
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+
+191326 = {
+	name = "Soorjat_Badwaik"
+	dynasty = 1044336	#Mana
+	religion = "shaivism"
+	culture = "gond"
+	father = 191325
+	730.1.1 = {
+		birth = yes
+	}
+	820.1.1 = {
+		death = yes
+	}
+}
+
+191327 = {
+	name = "Kurumpruhoda"
+	dynasty = 1044336	#Mana
+	religion = "shaivism"
+	culture = "gond"
+	father = 191326
+	753.1.1 = {
+		birth = yes
+	}
+	850.1.1 = {
+		death = yes
+	}
+}
+
+191377 = {
+	name = "Durgaraja"
+	dynasty = 1044339 #Rashtrakuta of Betul
+	religion = "shaivism"
+	culture = "marathi"
+	580.1.1 = {
+		birth = yes
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+
+191378 = {
+	name = "Govindaraja"
+	dynasty = 1044339 #Rashtrakuta of Betul
+	religion = "shaivism"
+	culture = "marathi"
+	father = 191377
+	620.1.1 = {
+		birth = yes
+	}
+	680.1.1 = {
+		death = yes
+	}
+}
+
+191379 = {
+	name = "Svamikaraja"
+	dynasty = 1044339 #Rashtrakuta of Betul
+	religion = "shaivism"
+	culture = "marathi"
+	father = 191378
+	640.1.1 = {
+		birth = yes
+	}
+	700.1.1 = {
+		death = yes
+	}
+}
+
+191380 = {
+	name = "Nandaraja"
+	dynasty = 1044339 #Rashtrakuta of Betul
+	religion = "shaivism"
+	culture = "marathi"
+	father = 191379
+	680.1.1 = {
+		birth = yes
+	}
+	775.1.1 = {
+		death = yes
+	}
+}
+
+191362 = {
+	name = "Brijnath"	#Fictional
+	dynasty = 1044340 #Malviyas of Ramagiri
+	religion = "digambara"
+	culture = "marathi"
+	700.1.1 = {
+		birth = yes
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+
+191363 = {
+	name = "Radhakant"	#Fictional
+	dynasty = 1044340 #Malviyas of Ramagiri
+	religion = "digambara"
+	culture = "marathi"
+	father = 191362
+	750.1.1 = {
+		birth = yes
+	}
+	830.1.1 = {
+		death = yes
+	}
+}
+
+191636 = {
+	name = "Aniruddha"
+	dynasty = 1044366
+	religion = "smartism"
+	culture = "marathi"
+	730.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+191989 = {
+	name = "Munja"	#Fictional
+	dynasty = 1044398 #Sinda
+	religion = "shaivism"
+	culture = "marathi"
+
+	740.1.1 = {
+		birth = yes
+	}
+	762.1.1 = {
+		add_spouse = 191990
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+
+191990 = {
+	name = "Sunita"	#Fictional
+	female = yes
+	religion = "shaivism"
+	culture = "marathi"
+
+	742.1.1 = {
+		birth = yes
+	}
+	790.1.1 = {
+		death = yes
+	}
+}
+
+191991 = {
+	name = "Bhima"	#Fictional
+	dynasty = 1044398 #Sinda
+	religion = "shaivism"
+	culture = "marathi"
+	father = 191989
+	mother = 191990
+
+	763.1.1 = {
+		birth = yes
+	}
+	840.1.1 = {
+		death = yes
+	}
+}
+
+#Vakatakas
+900900  = {
+	name = "Vindhyashakti"
+	# Vindhyashakti Founder of house Vakataka
+	dynasty = 900024
+	religion = "shaivism"
+	culture = "kaushali"
+	trait = zealous
+	trait = content
+	trait = brahmin
+	223.1.1 = {
+		birth = 223.1.1
+	}
+	270.1.1 = {
+		death = 270.1.1
+	}
+}
+900901  = {
+	name = "Pravasena"
+	# Pravasena I The sole emperor of the dynasty
+	dynasty = 900024
+	religion = "shaivism"
+	culture = "marathi"
+	give_nickname = nick_dharmamaharaj
+	trait = brahmin
+	father = 900900
+	trait = education_martial_4
+	trait = strategist
+	trait = ambitious
+	trait = arrogant
+	trait = brave
+	251.1.1 = {
+		birth = 251.1.1
+	}
+	330.1.1 = {
+		death = 330.1.1
+	}
+}
+900902  = {
+	name = "Gautamiputra"
+	# Gautamiputra First Born, died before Pravasena
+	dynasty = 900024
+	religion = "shaivism"
+	culture = "marathi"
+	trait = brahmin
+	father = 900901
+	285.1.1 = {
+		birth = 285.1.1
+	}
+	300.1.1 = {
+		add_spouse = bhavanaga_01
+	}
+	327.1.1 = {
+		death = 327.1.1
+	}
+}
+900903  = {
+	name = "Rudrasena"
+	# Rudrasena I 
+	dynasty = 900024
+	dynasty_house = house_Pravarapura
+	religion = "shaivism"
+	culture = "marathi"
+	trait = brahmin
+	father = 900902
+	mother = bhavanaga_01
+	300.1.1 = {
+		birth = 300.1.1
+	}
+	355.1.1 = {
+		death = 355.1.1
+	}
+}
+900904  = {
+	name = "Prithivishena"
+	# Prithivishena I 
+	dynasty = 900024
+	dynasty_house = house_Pravarapura
+	religion = "shaivism"
+	culture = "marathi"
+	trait = brahmin
+	father = 900903
+	323.1.1 = {
+		birth = 323.1.1
+	}
+	380.1.1 = {
+		death = 380.1.1
+	}
+}
+900905  = {
+	name = "Rudrasena"
+	# Rudrasena II Ded
+	dynasty = 900024
+	dynasty_house = house_Pravarapura
+	religion = "shaivism"
+	culture = "marathi"
+	trait = brahmin
+	father = 900904
+	350.1.1 = {
+		birth = 350.1.1
+	}
+	380.1.1 = {
+		add_spouse = 900907
+		religion = shaivism
+	}
+	385.1.1 = {
+		death = 385.1.1
+	}
+}
+900906  = {
+	name = "Divakarasena"
+	# Divakarasena Ded
+	dynasty = 900024
+	dynasty_house = house_Pravarapura
+	religion = "shaivism"
+	culture = "marathi"
+	trait = brahmin
+	father = 900905
+	mother = 900907
+	380.1.1 = {
+		birth = 380.1.1
+	}
+	394.1.1 = {
+		death = 394.1.1
+	}
+}
+900908  = {
+	name = "Damodarasena"
+	# Damodarasena  I
+	dynasty = 900024
+	dynasty_house = house_Pravarapura
+	religion = "shaivism"
+	culture = "marathi"
+	trait = brahmin
+	trait = kshatriya
+	father = 900905
+	mother = 900907
+	384.1.1 = {
+		birth = 384.1.1
+	}
+	420.1.1 = {
+		death = 420.1.1
+	}
+}
+vakataka_01  = {
+	name = "Pravasena"
+	# Pravasena  II
+	dynasty = 900024
+	dynasty_house = house_Pravarapura
+	religion = "shaivism"
+	culture = "marathi"
+	trait = brahmin
+	father = 900905
+	mother = 900907
+	385.1.1 = {
+		birth = 385.1.1
+	}
+	455.1.1 = {
+		death = 455.1.1
+	}
+}
+vakataka_02  = {
+	name = "Narendrasena"
+	# Narendrasena
+	dynasty = 900024
+	dynasty_house = house_Pravarapura
+	religion = "shaivism"
+	culture = "marathi"
+	trait = brahmin
+	father = vakataka_01
+	420.1.1 = {
+		birth = 420.1.1
+	}
+	450.1.1 = {
+		add_spouse = kadamaba_021
+	}
+	480.1.1 = {
+		death = 480.1.1
+	}
+}
+vakataka_021  = {
+	name = "Mahadevi"
+	# Narendrasena
+	female = yes
+	dynasty = 900024
+	dynasty_house = house_Pravarapura
+	religion = "shaivism"
+	culture = "marathi"
+	trait = brahmin
+	father = vakataka_01
+	422.1.1 = {
+		birth = 422.1.1
+	}
+	480.1.1 = {
+		death = 480.1.1
+	}
+}
+vakataka_03  = {
+	name = "Prithivishena"
+	# Prithivishena II
+	dynasty = 900024
+	dynasty_house = house_Pravarapura
+	religion = "shaivism"
+	culture = "marathi"
+	trait = brahmin
+	father = vakataka_02
+	mother = kadamaba_021
+	452.1.1 = {
+		birth = 452.1.1
+	}
+	500.1.1 = {
+		death = 500.1.1
+	}
+}
+#Vakataka Vatsagulma
+
+900910  = {
+	name = "Sarvasena"
+	# Sarvasena Second Born, founder of house Vatsagulma
+	dynasty_house = house_Vatsagulma
+	religion = "shaivism"
+	culture = "marathi"
+	trait = brahmin
+	father = 900901
+	trait = poet
+	299.1.1 = {
+		birth = 299.1.1
+	}
+	355.1.1 = {
+		death = 355.1.1
+	}
+}
+900911  = {
+	name = "Vindhyasena"
+	# Son of Sarvasena
+	dynasty_house = house_Vatsagulma
+	religion = "shaivism"
+	culture = "marathi"
+	trait = brahmin
+	father = 900910
+	trait = generous
+	trait = diligent
+	trait = content
+	330.1.1 = {
+		birth = 330.1.1
+	}
+	400.1.1 = {
+		death = 400.1.1
+	}
+}
+900912  = {
+	name = "Pravarasena"
+	# Son of Vindhyasena
+	dynasty_house = house_Vatsagulma
+	religion = "shaivism"
+	culture = "marathi"
+	trait = brahmin
+	father = 900911
+	trait = content
+	trait = humble
+	369.1.1 = {
+		birth = 369.1.1
+	}
+	415.1.1 = {
+		death = 415.1.1
+	}
+}
+vatsugulma_01 = {
+	name = "Sarvasena"
+	# Son of Pravarasena
+	dynasty_house = house_Vatsagulma
+	religion = "shaivism"
+	culture = "marathi"
+	trait = brahmin
+	father = 900912
+	trait = generous
+	trait = diligent
+	trait = content
+	407.1.1 = {
+		birth = 407.1.1
+	}
+	455.1.1 = {
+		death = 455.1.1
+	}
+}
+vatsugulma_02 = {
+	name = "Devasena"
+	# Son of Pravarasena
+	dynasty_house = house_Vatsagulma
+	religion = "shaivism"
+	culture = "marathi"
+	trait = brahmin
+	father = vatsugulma_01
+	trait = generous
+	trait = ambitious
+	trait = arrogant
+	trait = education_diplomacy_3
+	432.1.1 = {
+		birth = 432.1.1
+	}
+	476.1.1 = {
+		death = 476.1.1
+	}
+}
+vatsugulma_03 = {
+	name = "Harishena"
+	# Son of Pravarasena
+	dynasty_house = house_Vatsagulma
+	religion = "shaivism"
+	culture = "marathi"
+	trait = brahmin
+	father = vatsugulma_02
+	trait = brave
+	trait = ambitious
+	trait = arrogant
+	trait = education_martial_3
+	452.1.1 = {
+		birth = 452.1.1
+	}
+	510.1.1 = {
+		death = 510.1.1
+	}
+}
+
+#Vakataka Kondana
+kondana_01  = {
+	name = "Mahadji"
+	# Mahadji Third Born, founder of house Kondana
+	dynasty_house = house_Kondana
+	religion = "shaivism"
+	culture = "marathi"
+	trait = brahmin
+	father = 900901
+	310.1.1 = {
+		birth = 310.1.1
+	}
+	367.1.1 = {
+		death = 367.1.1
+	}
+}
+kondana_02  = {
+	name = "Nagarjuna"
+	# Mahadji Third Born, founder of house Kondana
+	dynasty_house = house_Kondana
+	religion = "shaivism"
+	culture = "marathi"
+	trait = brahmin
+	father = kondana_01
+	341.1.1 = {
+		birth = 341.1.1
+	}
+	410.1.1 = {
+		death = 410.1.1
+	}
+}
+#Vakataka Kalyani
+kalyani_01  = {
+	name = "Mankoji"
+	# Mahadji Third Born, founder of house Kalyani
+	dynasty_house = house_Kalyani
+	religion = "shaivism"
+	culture = "marathi"
+	trait = brahmin
+	father = 900901
+	325.1.1 = {
+		birth = 325.1.1
+	}
+	378.1.1 = {
+		death = 378.1.1
+	}
+}
+kalyani_02  = {
+	name = "Adityavarman"
+	# Mahadji Third Born, founder of house Kalyani
+	dynasty_house = house_Kalyani
+	religion = "shaivism"
+	culture = "marathi"
+	trait = brahmin
+	father = kalyani_01
+	354.1.1 = {
+		birth = 354.1.1
+	}
+	423.1.1 = {
+		death = 423.1.1
+	}
+}
+### Abhiras
+abhira_01 = {
+	name = "Sivadatta"
+	dynasty = abhira_dynasty
+	religion = "digambara"
+	culture = "abhira"
+	trait = kshatriya
+	167.1.1 = {
+		birth = 146.1.1
+	}
+	223.1.1 = {
+		death = 223.1.1
+	}
+}
+abhira_02 = {
+	name = "Sakasena"
+	dynasty = abhira_dynasty
+	religion = "digambara"
+	culture = "abhira"
+	trait = kshatriya
+	father = abhira_01
+	215.1.1 = {
+		birth = 215.1.1
+	}
+	248.1.1 = {
+		death = 248.1.1
+	}
+}
+abhira_03 = {
+	name = "Isvaradatta"
+	dynasty = abhira_dynasty
+	religion = "digambara"
+	culture = "abhira"
+	trait = kshatriya
+	father = abhira_01
+	220.1.1 = {
+		birth = 320.1.1
+	}
+	276.1.1 = {
+		death = 176.1.1
+	}
+}
+abhira_04 = {
+	name = "Hamiradatta"
+	dynasty = abhira_dynasty
+	religion = "digambara"
+	culture = "abhira"
+	trait = kshatriya
+	father = abhira_03
+	248.1.1 = {
+		birth = 248.1.1
+	}
+	302.1.1 = {
+		death = 302.1.1
+	}
+}
+abhira_05 = {
+	name = "Sakasena"
+	dynasty = abhira_dynasty
+	religion = "digambara"
+	culture = "abhira"
+	trait = kshatriya
+	father = abhira_04
+	283.1.1 = {
+		birth = 283.1.1
+	}
+	345.1.1 = {
+		death = 345.1.1
+	}
+}
+abhira_06 = {
+	name = "Sivadatta"
+	dynasty = abhira_dynasty
+	religion = "digambara"
+	culture = "abhira"
+	trait = kshatriya
+	father = abhira_05
+	319.1.1 = {
+		birth = 319.1.1
+	}
+	367.1.1 = {
+		death = 367.1.1
+	}
+}
+abhira_07 = {
+	name = "Jayadatta"
+	dynasty = abhira_dynasty
+	religion = "digambara"
+	culture = "abhira"
+	trait = kshatriya
+	father = abhira_06
+	348.1.1 = {
+		birth = 348.1.1
+	}
+	410.1.1 = {
+		death = 410.1.1
+	}
+}
+## Trikutaka
+traikutaka_01 = {
+	name = "Madhyamasena"
+	dynasty_house = house_traikutana
+	religion = "digambara"
+	culture = "abhira"
+	trait = kshatriya
+	father = abhira_02
+	232.1.1 = {
+		birth = 232.1.1
+	}
+	288.1.1 = {
+		death = 288.1.1
+	}
+}
+traikutaka_02 = {
+	name = "Sakasena"
+	dynasty_house = house_traikutana
+	religion = "digambara"
+	culture = "abhira"
+	trait = kshatriya
+	father = traikutaka_01
+	278.1.1 = {
+		birth = 278.1.1
+	}
+	343.1.1 = {
+		death = 343.1.1
+	}
+}
+traikutaka_03 = {
+	name = "Vikramasena"
+	dynasty_house = house_traikutana
+	religion = "digambara"
+	culture = "abhira"
+	trait = kshatriya
+	father = traikutaka_02
+	300.1.1 = {
+		birth = 300.1.1
+	}
+	378.1.1 = {
+		death = 378.1.1
+	}
+}
+traikutaka_04 = {
+	name = "Isvaradatta"
+	dynasty_house = house_traikutana
+	religion = "digambara"
+	culture = "abhira"
+	trait = kshatriya
+	father = traikutaka_03
+	345.1.1 = {
+		birth = 345.1.1
+	}
+	402.1.1 = {
+		death = 402.1.1
+	}
+}
+traikutaka_05 = {
+	name = "Indradatta"
+	dynasty_house = house_traikutana
+	religion = "digambara"
+	culture = "abhira"
+	trait = kshatriya
+	father = traikutaka_04
+	378.1.1 = {
+		birth = 378.1.1
+	}
+	442.1.1 = {
+		death = 442.1.1
+	}
+}
+traikutaka_06 = {
+	name = "Dahrasena"
+	dynasty_house = house_traikutana
+	religion = "digambara"
+	culture = "abhira"
+	trait = kshatriya
+	father = traikutaka_05
+	413.1.1 = {
+		birth = 413.1.1
+	}
+	479.1.1 = {
+		death = 479.1.1
+	}
+}
+traikutaka_07 = {
+	name = "Vyaghrasena"
+	dynasty_house = house_traikutana
+	religion = "digambara"
+	culture = "abhira"
+	trait = kshatriya
+	father = traikutaka_06
+	445.1.1 = {
+		birth = 445.1.1
+	}
+	499.1.1 = {
+		death = 499.1.1
+	}
+}
+traikutaka_08 = {
+	name = "Madhyamasena"
+	dynasty_house = house_traikutana
+	religion = "digambara"
+	culture = "abhira"
+	trait = kshatriya
+	father = traikutaka_07
+	469.1.1 = {
+		birth = 569.1.1
+	}
+	520.1.1 = {
+		death = 520.1.1
+	}
+}
+traikutaka_09 = {
+	name = "Vikramasena"
+	dynasty_house = house_traikutana
+	religion = "digambara"
+	culture = "abhira"
+	trait = kshatriya
+	father = traikutaka_08
+	492.1.1 = {
+		birth = 492.1.1
+	}
+	545.1.1 = {
+		death = 545.1.1
+	}
+}
+
+hastibhoja_01 = {
+	name = "Hastibhoja"
+	religion = "shaivism"
+	culture = "marathi"
+	trait = brahmin
+	443.1.1 = {
+		birth = 443.1.1
+	}
+	479.1.1 = {
+		death = 479.1.1
+	}
+}
+hastibhoja_02 = {
+	name = "Varahadeva"
+	religion = "shaivism"
+	culture = "marathi"
+	trait = brahmin
+	father = hastibhoja_01
+	460.1.1 = {
+		birth = 460.1.1
+	}
+	490.1.1 = {
+		death = 490.1.1
+	}
+}
+hastibhoja_03 = {
+	name = "Svamilladeva"
+	religion = "shaivism"
+	culture = "marathi"
+	trait = brahmin
+	438.1.1 = {
+		birth = 438.1.1
+	}
+	479.1.1 = {
+		death = 479.1.1
+	}
+}

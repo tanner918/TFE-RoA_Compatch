@@ -1,0 +1,134 @@
+﻿l_english:
+ TFE_roman_persian_struggle_region: "Near East"
+ roman_persian_struggle_ending_persia_destroyed:0 "[GetTitleByKey('e_persia').GetName] is destroyed"
+ roman_persian_struggle_ending_roman_empire_destroyed:0 "[GetTitleByKey('e_roman_empire').GetName] is destroyed"
+ roman_persian_struggle_ending_byzantium_destroyed:0 "[GetTitleByKey('e_byzantium').GetName] is destroyed"
+ TFE_roman_persian_struggle_roman_core_region:0 "Rome's Eastern Core"
+ TFE_roman_persian_struggle_persian_core_region:0 "Ērān's Western Core"
+ TFE_roman_persian_struggle_ends_tt:0 "The [roman_persian_struggle|E] ends"
+
+ # Phases
+ roman_persian_struggle: "Romano-Ērānian Wars"
+ struggle_TFE_roman_persian_phase_contention: "Contention"
+ struggle_TFE_roman_persian_phase_contention_desc: "$game_concept_struggle_phase_TFE_roman_persian_contention_desc$"
+
+ struggle_TFE_roman_persian_phase_cold_war: "Cold War"
+ struggle_TFE_roman_persian_phase_cold_war_desc: "$game_concept_struggle_phase_TFE_roman_persian_cold_war_desc$"
+ struggle_parameter_involved_rulers_more_likely_to_proxy_war: "[struggle_involved|E] [rulers|E] are #P more#! likely to arrange [proxy_wars|E]"
+ catalyst_low_favor_with_houses: "Shah has low [great_house_favor|E] with the Persian [great_houses|E] (yearly)"
+ catalyst_low_mil_competence: "Low [military_comp|E] for the Roman Emperor (yearly)"
+ catalyst_low_favor_with_houses_desc: "Shah has low [great_house_favor|E] with the Persian [great_houses|E] (yearly)"
+ catalyst_low_mil_competence_desc: "Low [military_comp|E] for the Roman Emperor (yearly)"
+
+ struggle_TFE_roman_persian_phase_total_war: "Total War"
+ struggle_TFE_roman_persian_phase_total_war_desc: "$game_concept_struggle_phase_TFE_roman_persian_total_war_desc$"
+ struggle_parameter_involved_rulers_less_likely_to_proxy_war: "[struggle_involved|E] [rulers|E] are #N less#! likely to arrange [proxy_wars|E]"
+ catalyst_high_favor_with_houses: "Shah has high [great_house_favor|E] with the Persian [great_houses|E] (yearly)"
+ catalyst_high_mil_competence: "High [military_comp|E] for the Roman Emperor (yearly)"
+ catalyst_high_favor_with_houses_desc: "Shah has high [great_house_favor|E] with the Persian [great_houses|E] (yearly)"
+ catalyst_high_mil_competence_desc: "High [military_comp|E] for the Roman Emperor (yearly)"
+ struggle_parameter_mega_wars_enabled: "Unlocks the [great_war|E] [casus_belli|E] for [struggle_involved|E] [rulers|E]"
+
+ # Ending decisions
+
+ # Total Victory - Roman
+ struggle_roman_persian_ending_roman_decision: "Roman Total Victory"
+ struggle_roman_persian_ending_roman_decision_desc: "For generations, the Romans and Ērānians have warred against each other, with neither side gaining the upper hand. It is time for this never-ending conflict to be settled once and for all. We will prove the superiority of Rome over those barbarous Ērānians!"
+ struggle_roman_persian_ending_roman_decision_tooltip: "End the [roman_persian_struggle|E]"
+ struggle_roman_persian_ending_roman_decision_confirm: "End the $roman_persian_struggle$"
+ struggle_roman_persian_total_victory_rome_de_jure_tt: "[GetTitleByKey('e_roman_empire').GetName] becomes the [de_jure|E] [liege|E] of every [kingdom|E] in the [GetGeographicalRegion('TFE_roman_persian_struggle_region').GetName] [region|E]"
+ struggle_roman_persian_total_victory_ere_de_jure_tt: "[GetTitleByKey('e_byzantium').GetName] becomes the [de_jure|E] [liege|E] of every [kingdom|E] in the [GetGeographicalRegion('TFE_roman_persian_struggle_region').GetName] [region|E]"
+ struggle_roman_persian_total_victory_wre_de_jure_tt: "[GetTitleByKey('e_western_roman_empire').GetName] becomes the [de_jure|E] [liege|E] of every [kingdom|E] in the [GetGeographicalRegion('TFE_roman_persian_struggle_region').GetName] [region|E]"
+
+
+ # Total Victory - Persian
+ struggle_roman_persian_ending_persian_decision: "Ērānian Total Victory"
+ struggle_roman_persian_ending_persian_decision_desc: "For generations, the Ērānians and Romans have warred against each other, with neither side gaining the upper hand. It is time for this never-ending conflict to be settled once and for all. We will prove the superiority of Ērān over those barbarous Romans!"
+ struggle_roman_persian_ending_persian_decision_tooltip: "End the [roman_persian_struggle|E]"
+ struggle_roman_persian_ending_persian_decision_confirm: "End the $roman_persian_struggle$"
+ struggle_roman_persian_total_victory_persian_de_jure_tt: "[GetTitleByKey('e_persia').GetName] becomes the [de_jure|E] [liege|E] of every [kingdom|E] in the [GetGeographicalRegion('TFE_roman_persian_struggle_region').GetName] [region|E]"
+
+ # Regional Independence
+ struggle_roman_persian_ending_regional_decision: "Regional Independence"
+ struggle_roman_persian_ending_regional_decision_desc: "For generations, the Romans and Ērānians have warred against each other, with neither side gaining the upper hand. We have been caught in the crossfire of this conflict for far too long. We must throw off the yoke of these Romans and Ērānians, establish ourselves as a new power in the [GetGeographicalRegion('TFE_roman_persian_struggle_region').GetName], and chart our own destiny!"
+ struggle_roman_persian_ending_regional_decision_tooltip: "End the [roman_persian_struggle|E]"
+ struggle_roman_persian_ending_regional_decision_confirm: "End the $roman_persian_struggle$"
+ struggle_roman_persian_regional_victory_explain_de_jure_tt: "Your [empire|E] [title|E] becomes the [de_jure|E] [liege|E] of:\n$EFFECT_LIST_BULLET$[kingdoms|E] in [GetGeographicalRegion('TFE_roman_persian_struggle_roman_core_region').GetName] #bold IF#! you [completely_control|E] [GetTitleByKey('d_thrace').GetName]\n$EFFECT_LIST_BULLET$[kingdoms|E] in [GetGeographicalRegion('TFE_roman_persian_struggle_persian_core_region').GetName] #bold IF#! you [completely_control|E] [GetTitleByKey('d_baghdad').GetName]\n$EFFECT_LIST_BULLET$All [kingdoms|E] outside these two [regions|E], which are automatically included"
+ struggle_roman_persian_regional_victory_all_de_jure_tt: "[struggle_ender.GetPrimaryTitle.GetNameNoTier] becomes the [de_jure|E] [liege|E] of every [kingdom|E] in the [GetGeographicalRegion('TFE_roman_persian_struggle_region').GetName] [region|E]"
+ struggle_roman_persian_regional_victory_none_de_jure_tt: "[struggle_ender.GetPrimaryTitle.GetNameNoTier] becomes the [de_jure|E] [liege|E] of every [kingdom|E] in the [GetGeographicalRegion('TFE_roman_persian_struggle_region').GetName] [region|E] outside of [GetGeographicalRegion('TFE_roman_persian_struggle_roman_core_region').GetName] and [GetGeographicalRegion('TFE_roman_persian_struggle_persian_core_region').GetName]"
+ struggle_roman_persian_regional_victory_rome_only_de_jure_tt: "[struggle_ender.GetPrimaryTitle.GetNameNoTier] becomes the [de_jure|E] [liege|E] of every [kingdom|E] in the [GetGeographicalRegion('TFE_roman_persian_struggle_region').GetName] [region|E] outside of [GetGeographicalRegion('TFE_roman_persian_struggle_persian_core_region').GetName]"
+ struggle_roman_persian_regional_victory_persia_only_de_jure_tt: "[struggle_ender.GetPrimaryTitle.GetNameNoTier] becomes the [de_jure|E] [liege|E] of every [kingdom|E] in the [GetGeographicalRegion('TFE_roman_persian_struggle_region').GetName] [region|E] outside of [GetGeographicalRegion('TFE_roman_persian_struggle_roman_core_region').GetName]"
+
+ # Outsider Victory
+ struggle_roman_persian_ending_outsider_decision: "Supplant the Romans and Ērānians"
+ struggle_roman_persian_ending_outsider_decision_desc: "For generations, the Romans and Ērānians have warred against each other, with neither side gaining the upper hand. They have, however, grown arrogant and exhausted from the constant fighting. Now is the time for us to strike and take advantage of the chaos they have sown by unseating both in their very heartlands!"
+ struggle_roman_persian_ending_outsider_decision_tooltip: "End the [roman_persian_struggle|E]"
+ struggle_roman_persian_ending_outsider_decision_confirm: "End the $roman_persian_struggle$"
+ struggle_roman_persian_uninvolved_or_external_tt: "Your capital isn't in the [GetGeographicalRegion('TFE_roman_persian_struggle_region').GetName]"
+ struggle_roman_persian_empire_tt:0 "You don't hold any of the involved empires"
+
+ # Ending Bonuses
+ struggle_roman_persian_ending_total_victory_conversion_tt:1 "$task_conversion$ and/or $task_promote_culture$ [councillor_tasks|E] speed in the [GetGeographicalRegion('TFE_roman_persian_struggle_region').GetName] [region|E]: #P +50%#!"
+ struggle_roman_persian_modifier_list_tt:1 "Select one of the following modifiers for your [house|E]:\n$EFFECT_LIST_BULLET$[GetStaticModifier('struggle_roman_persian_house_war_modifier').GetNameWithTooltip|L]\n$EFFECT_LIST_BULLET$[GetStaticModifier('struggle_roman_persian_house_culture_modifier').GetNameWithTooltip|L]\n$EFFECT_LIST_BULLET$[GetStaticModifier('struggle_roman_persian_house_politics_modifier').GetNameWithTooltip|L]"
+
+ # Ending Events
+
+ # Roman Total Victory
+ roman_persian_struggle.1000.t:0 "$struggle_roman_persian_ending_roman_decision$"
+ roman_persian_struggle.1000.desc:1 "It's done.\n\nWe have won. Ērān is no more.\n\nAfter centuries of bloodshed that began when the Roman Republic and Parthian Empire came into conflict, we Romans have defeated our bitter long-time foes, the Ērānians, at long last. If only our predecessors like Mark Anthony, Trajan, or Valerian could see what we've achieved! Few thought this day would come, but we persevered, and [ROOT.Char.GetFaith.HighGodName] has granted us our hard-earned victory.\n\nRegardless, all that remains is to declare this victory and decide how to proceed with our rule."
+ roman_persian_struggle.1000.a:0 "Establish an unstoppable military juggernaut"
+ roman_persian_struggle.1000.b:0 "Spread and promote our superior culture"
+ roman_persian_struggle.1000.c:0 "Control the lesser polities that remain"
+ roman_persian_struggle.1001.t:0 "$struggle_roman_persian_ending_roman_decision$"
+ roman_persian_struggle.1001.desc:1 "It is #italic finally#! over.\n\nFor the first time in generations, the Roman and Ērānian empires are no longer at war or preparing for war. Rome, under the leadership of [struggle_ender.GetTitledFirstName], has emerged victorious over the Ērānians. Now that Rome is now the greatest power in the [GetGeographicalRegion('TFE_roman_persian_struggle_region').GetName], [struggle_ender.GetSheHe] will undoubtedly be remembered as one of the greatest Roman leaders, perhaps even surpassing Caesar or Octavian.\n\n"
+ roman_persian_struggle.1001.desc.closing.war:1 "[struggle_ender.GetTitledFirstNameNoTooltip] intends to continue using the Roman military, which has demonstrated its superiority, to dominate this region for the foreseeable future. Only through brute force can Rome ensure that no one challenges them like the Ērānians once did."
+ roman_persian_struggle.1001.desc.closing.culture:1 "[struggle_ender.GetTitledFirstNameNoTooltip] intends to spread and promote the culture of [struggle_ender.GetHerHis] people to dominate this region for the foreseeable future. [struggle_ender.GetSheHe|U] believes that from the ashes of Ērān, a new, Roman world can grow and blossom."
+ roman_persian_struggle.1001.desc.closing.politics:1 "[struggle_ender.GetTitledFirstNameNoTooltip] intends to use intrigue and political cunning to make the lesser polities bend to Rome's will to dominate this region for the foreseeable future. In order to maintain control over this region in the long run, a firm but careful approach is needed, after all."
+ roman_persian_struggle.1001.desc.closing:1 "\n\nA new age dawns. The shape of the future, the fate of the world... these things now clearly belong to #bold Rome#!."
+ roman_persian_struggle.1001.a:0 "The $roman_persian_struggle$ now pass into history...."
+
+ # Iranian Total Victory
+ roman_persian_struggle.1002.t:0 "$struggle_roman_persian_ending_persian_decision$"
+ roman_persian_struggle.1002.desc:1 "It's done.\n\nWe have won. Rome is no more.\n\nAfter centuries of bloodshed that began when the Roman Republic and Parthian Empire came into conflict, we Ērānians have defeated our bitter long-time foes, the Romans, at long last. If only our predecessors like Ardashir or Shapur could see what we've achieved! Few thought this day would come, but we persevered, and [ROOT.Char.GetFaith.HighGodName] has granted us our hard-earned victory.\n\nRegardless, all that remains is to declare this victory and decide how to proceed with our rule."
+ roman_persian_struggle.1002.a:0 "$roman_persian_struggle.1000.a$"
+ roman_persian_struggle.1002.b:0 "$roman_persian_struggle.1000.b$"
+ roman_persian_struggle.1002.c:0 "$roman_persian_struggle.1000.c$"
+ roman_persian_struggle.1003.t:0 "$struggle_roman_persian_ending_persian_decision$"
+ roman_persian_struggle.1003.desc:1 "It is #italic finally#! over.\n\nFor the first time in generations, the Roman and Ērānian empires are no longer at war or preparing for war. Ērān, under the leadership of [struggle_ender.GetTitledFirstName], has emerged victorious over the Romans. Now that we are the greatest power in the [GetGeographicalRegion('TFE_roman_persian_struggle_region').GetName], [struggle_ender.GetSheHe] will undoubtedly be remembered as one of the greatest Ērānian leaders, perhaps even surpassing Cyrus or Ardashir.\n\n"
+ roman_persian_struggle.1003.desc.closing.war:1 "[struggle_ender.GetTitledFirstNameNoTooltip] intends to continue using the Ērānian military, which has demonstrated its superiority, to dominate this region for the foreseeable future. Only through brute force can Ērān ensure that no one challenges them like the Rome once did."
+ roman_persian_struggle.1003.desc.closing.culture:1 "[struggle_ender.GetTitledFirstNameNoTooltip] intends to spread and promote the culture of [struggle_ender.GetHerHis] people to dominate this region for the foreseeable future. [struggle_ender.GetSheHe|U] believes that from the ashes of Rome, a new, Ērānian world can grow and blossom."
+ roman_persian_struggle.1003.desc.closing.politics:1 "[struggle_ender.GetTitledFirstNameNoTooltip] intends to use intrigue and political cunning to make the lesser polities bend to Ērān's will to dominate this region for the foreseeable future. In order to maintain control over this region in the long run, a firm but careful approach is needed, after all."
+ roman_persian_struggle.1003.desc.closing:1 "\n\nA new age dawns. The shape of the future, the fate of the world... these things now clearly belong to #bold Ērān#!."
+ roman_persian_struggle.1003.a:0 "$roman_persian_struggle.1001.a$"
+
+ # Regional Independence
+ roman_persian_struggle.1004.t:0 "$struggle_roman_persian_ending_regional_decision$"
+ roman_persian_struggle.1004.desc:1 "It's done.\n\nWe have won. Rome #italic and#! Ērān are defeated.\n\nAfter centuries of bloodshed that began when the Roman Republic and Parthian Empire came into conflict, the Romans and Ērānians remained bitter long-time foes to the end. Ironic, then, that #italic we#! have emerged supreme over both. Now, the peoples of the [GetGeographicalRegion('TFE_roman_persian_struggle_region').GetName] will no longer be slaves to the whims of Rome and Ērān!\n\nIf only our forefathers could see what we've achieved! Few thought this day would come, but we persevered, and [ROOT.Char.GetFaith.HighGodName] has granted us our hard-earned victory.\n\nRegardless, all that remains is to declare this victory and decide how to proceed with our rule."
+ roman_persian_struggle.1004.a:0 "$roman_persian_struggle.1000.a$"
+ roman_persian_struggle.1004.b:0 "$roman_persian_struggle.1000.b$"
+ roman_persian_struggle.1004.c:0 "$roman_persian_struggle.1000.c$"
+ roman_persian_struggle.1005.t:0 "$struggle_roman_persian_ending_regional_decision$"
+ roman_persian_struggle.1005.desc:1 "It is #italic finally#! over.\n\nFor the first time in generations, the Roman and Ērānian empires are no longer at war or preparing for war. Ironically, it was neither Rome nor Ērān that won in the end. The winner of these wars was actually [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip], under the leadership of [struggle_ender.GetTitledFirstName]. [struggle_ender.GetSheHe|U] will undoubtedly be remembered as one of the greatest leaders in history. Now, the peoples of the [GetGeographicalRegion('TFE_roman_persian_struggle_region').GetName] will no longer be slaves to the whims of Rome and Ērān.\n\n"
+ roman_persian_struggle.1005.desc.closing.war:1 "[struggle_ender.GetTitledFirstNameNoTooltip] intends to continue using the [struggle_ender.GetPrimaryTitle.GetAdjectiveNoTooltip] military, which has demonstrated its superiority, to dominate this region for the foreseeable future. Only through brute force can [struggle_ender.GetSheHe] ensure that no one challenges them like the Ērānians once did."
+ roman_persian_struggle.1005.desc.closing.culture:1 "[struggle_ender.GetTitledFirstNameNoTooltip] intends to spread and promote the culture of [struggle_ender.GetHerHis] people to dominate this region for the foreseeable future. [struggle_ender.GetSheHe|U] believes that from the ashes of Rome and Ērān, a new world can grow and blossom."
+ roman_persian_struggle.1005.desc.closing.politics:1 "[struggle_ender.GetTitledFirstNameNoTooltip] intends to use intrigue and political cunning to make the lesser polities bend to [struggle_ender.GetPrimaryTitle.GetAdjectiveNoTooltip] will to dominate this region for the foreseeable future. In order to maintain control over this region in the long run, a firm but careful approach is needed, after all."
+ roman_persian_struggle.1005.desc.closing:1 "\n\nA new age dawns. The shape of the future, the fate of the world... these things now clearly belong to #bold [struggle_ender.GetPrimaryTitle.GetNameNoTierNoTooltip]#!."
+ roman_persian_struggle.1005.a:0 "$roman_persian_struggle.1001.a$"
+
+
+ struggle_roman_persian_ending_regional_decision_heritage_tt:0 "You are not of Italic, Hellenic, Iranian or Serindinan heritage"
+ struggle_roman_persian_ending_total_victory_decision_region_tt:0 "No other realm controls more than 20% of the [GetGeographicalRegion('TFE_roman_persian_struggle_region').GetName]"
+ struggle_roman_persian_ending_regional_decision_region_tt:0 "Control at least 75% of the [GetGeographicalRegion('TFE_roman_persian_struggle_region').GetName]"
+
+
+
+ # Outsider Victory
+ roman_persian_struggle.1006.t:0 "[struggle_ender.GetPrimaryTitle.GetNameNoTierNoTooltip] Supplants Rome and Ērān"
+ roman_persian_struggle.1006.desc:1 "It is #italic finally#! over.\n\nFor the first time in generations, the Roman and Ērānian empires are no longer at war or preparing for war. Ironically, it was neither Rome nor Ērān that won in the end, nor even any of the indigenous inhabitants of the [GetGeographicalRegion('TFE_roman_persian_struggle_region').GetName]. #italic We#!, the [struggle_ender.GetCulture.GetCollectiveNoun] of [struggle_ender.GetPrimaryTitle.GetNameNoTierNoTooltip], under my leadership, have emerged victorious.\n\nFew could have seen this coming, but in hindsight, the conclusion to Rome and Ērān's terrible wars was inevitable: the two formerly mighty empires weakened each other with their pointless conflicts. Someone would have eventually taken advantage of that.\n\nNow, we have done what the foolish Romans and Ērānians could not, and have stabilized the region under the [struggle_ender.GetPrimaryTitle.GetAdjectiveNoTooltip] banner. The old empires of this region are collapsing, or are at least in great decline. #italic We#! are the masters of the world now."
+ roman_persian_struggle.1006.a:0 "Glory to [struggle_ender.GetFaith.HighGodName] and glory to our new empire!"
+ roman_persian_struggle.1007.t:0 "$roman_persian_struggle.1006.t$"
+ roman_persian_struggle.1007.desc:0 "For centuries, the Romans and Ērānians fought. For centuries, the Romans and Ērānians murdered each other by the thousands for mere scraps of land. For centuries, the Romans and Ērānians and their lackeys destroyed each others' civilizations and societies in an endless cycle of violence.\n\nNow? Only their ashes remain.\n\nHow ironic that in the end, neither side vanquished each other: it was the [struggle_ender.GetCulture.GetCollectiveNoun], under [struggle_ender.GetTitledFirstName], who wrestled control of the [GetGeographicalRegion('TFE_roman_persian_struggle_region').GetName] from the two, old, decaying Empires, and, in doing so, established a new power in the region!\n\nThe folly of the Romans and Ērānians, who warred bitterly with each other for so long, yet were unable to see their own approaching downfall, will be told for generations to come.\n\nA new age dawns. The shape of the future, the fate of the world... these things now clearly belong to #bold [struggle_ender.GetPrimaryTitle.GetNameNoTierNoTooltip]#!."
+ roman_persian_struggle.1007.a:0 "$roman_persian_struggle.1001.a$"
+
+
+

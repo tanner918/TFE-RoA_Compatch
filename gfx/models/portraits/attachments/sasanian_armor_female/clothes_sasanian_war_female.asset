@@ -1,0 +1,143 @@
+pdxmesh = {
+	name = "clothes_sasanian_war_female_01_mesh"
+	file = "clothes_sasanian_war_female_01.mesh"
+
+	blend_shape = { id = "clothes_sasanian_war_female_01_bs_infant"		type = "clothes_sasanian_war_female_01_bs_infant.mesh" }
+	blend_shape = { id = "clothes_sasanian_war_female_01_bs_fat"		type = "clothes_sasanian_war_female_01_bs_fat.mesh" }
+	blend_shape = { id = "clothes_sasanian_war_female_01_bs_gaunt"		type = "clothes_sasanian_war_female_01_bs_gaunt.mesh" }
+	blend_shape = { id = "clothes_sasanian_war_female_01_bs_muscular"		type = "clothes_sasanian_war_female_01_bs_muscular.mesh" }	
+	blend_shape = { id = "clothes_sasanian_war_female_01_bs_old"		type = "clothes_sasanian_war_female_01_bs_old.mesh" }
+	blend_shape = { id = "clothes_sasanian_war_female_01_bs_dwarf"		type = "clothes_sasanian_war_female_01_bs_dwarf.mesh" }
+	blend_shape = { id = "clothes_sasanian_war_female_01_bs_breast_size_max"		type = "clothes_sasanian_war_female_01_bs_breast_size_max.mesh" }
+	blend_shape = { id = "clothes_sasanian_war_female_01_bs_pregnant"			type = "clothes_sasanian_war_female_01_bs_pregnant.mesh" }
+
+	meshsettings = {
+		name = "sasanian_mail_f"
+		index = 0
+		texture_diffuse = "sasanian_armor_diffuse.dds"
+		texture_normal = "sasanian_armor_normal.dds"
+		texture_specular = "sasanian_armor_properties.dds"
+		shader = "portrait_attachment_pattern"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "clothes_sasanian_war_female_01_entity"
+	pdxmesh = "clothes_sasanian_war_female_01_mesh"
+
+	attribute = { name = "bs_body_infant_1"					blend_shape = "clothes_sasanian_war_female_01_bs_infant" }
+	attribute = { name = "bs_body_fat_1"					blend_shape = "clothes_sasanian_war_female_01_bs_fat" }
+	attribute = { name = "bs_body_gaunt_1"					blend_shape = "clothes_sasanian_war_female_01_bs_gaunt" }
+	attribute = { name = "bs_body_muscular_1"					blend_shape = "clothes_sasanian_war_female_01_bs_muscular" }	
+	attribute = { name = "bs_body_old_1"					blend_shape = "clothes_sasanian_war_female_01_bs_old" }
+	attribute = { name = "bs_body_dwarf_1"					blend_shape = "clothes_sasanian_war_female_01_bs_dwarf" }
+	attribute = { name = "bs_body_pregnant_1"				blend_shape = "clothes_sasanian_war_female_01_bs_pregnant" }
+	attribute = { name = "bs_body_breast_size_max"		blend_shape = "clothes_sasanian_war_female_01_bs_bust" }
+	
+	game_data = {
+        portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/sasanian_armor/sasanian_armor_masks.dds"	#Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
+				variation = "iranian_armor_high_01"	#A "variation" object in gfx/portraits/accessory_variations/
+			}
+        }
+	}
+	
+}
+
+pdxmesh = {
+	name = "clothes_sasanian_war_female_02_mesh"
+	file = "clothes_sasanian_war_female_02.mesh"
+	
+	blend_shape = { id = "clothes_sasanian_war_female_02_bs_infant"		type = "clothes_sasanian_war_female_02_bs_infant.mesh" }
+	blend_shape = { id = "clothes_sasanian_war_female_02_bs_fat"		type = "clothes_sasanian_war_female_02_bs_fat.mesh" }
+	blend_shape = { id = "clothes_sasanian_war_female_02_bs_gaunt"		type = "clothes_sasanian_war_female_02_bs_gaunt.mesh" }
+	blend_shape = { id = "clothes_sasanian_war_female_02_bs_muscular"		type = "clothes_sasanian_war_female_02_bs_muscular.mesh" }	
+	blend_shape = { id = "clothes_sasanian_war_female_02_bs_old"		type = "clothes_sasanian_war_female_02_bs_old.mesh" }
+	blend_shape = { id = "clothes_sasanian_war_female_02_bs_dwarf"		type = "clothes_sasanian_war_female_02_bs_dwarf.mesh" }
+	blend_shape = { id = "clothes_sasanian_war_female_02_bs_breast_size_max"		type = "clothes_sasanian_war_female_02_bs_breast_size_max.mesh" }
+	blend_shape = { id = "clothes_sasanian_war_female_02_bs_pregnant"			type = "clothes_sasanian_war_female_02_bs_pregnant.mesh" }
+
+	meshsettings = {
+		name = "sasanian_mail_m.001"
+		index = 0
+		texture_diffuse = "sasanian_armor_diffuse.dds"
+		texture_normal = "sasanian_armor_normal.dds"
+		texture_specular = "sasanian_armor_properties.dds"
+		shader = "portrait_attachment_pattern"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "clothes_sasanian_war_female_02_entity"
+	pdxmesh = "clothes_sasanian_war_female_02_mesh"
+
+	attribute = { name = "bs_body_infant_1"					blend_shape = "clothes_sasanian_war_female_02_bs_infant" }
+	attribute = { name = "bs_body_fat_1"					blend_shape = "clothes_sasanian_war_female_02_bs_fat" }
+	attribute = { name = "bs_body_gaunt_1"					blend_shape = "clothes_sasanian_war_female_02_bs_gaunt" }
+	attribute = { name = "bs_body_muscular_1"					blend_shape = "clothes_sasanian_war_female_02_bs_muscular" }	
+	attribute = { name = "bs_body_old_1"					blend_shape = "clothes_sasanian_war_female_02_bs_old" }
+	attribute = { name = "bs_body_dwarf_1"					blend_shape = "clothes_sasanian_war_female_02_bs_dwarf" }
+	attribute = { name = "bs_body_pregnant_1"				blend_shape = "clothes_sasanian_war_female_02_bs_pregnant" }
+	attribute = { name = "bs_body_breast_size_max"		blend_shape = "clothes_sasanian_war_female_02_bs_breast_size_max" }
+
+	game_data = {
+        portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/sasanian_armor/sasanian_armor_masks.dds"	#Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
+				variation = "iranian_armor_high_01"	#A "variation" object in gfx/portraits/accessory_variations/
+			}
+        }
+	}
+}
+
+pdxmesh = {
+	name = "cloak_sasanian_war_female_01_mesh"
+	file = "cloak_sasanian_war_female_01.mesh"
+
+	blend_shape = { id = "cloak_sasanian_war_female_01_bs_infant"		type = "cloak_sasanian_war_female_01_bs_infant.mesh" }
+	blend_shape = { id = "cloak_sasanian_war_female_01_bs_fat"		type = "cloak_sasanian_war_female_01_bs_fat.mesh" }
+	blend_shape = { id = "cloak_sasanian_war_female_01_bs_gaunt"		type = "cloak_sasanian_war_female_01_bs_gaunt.mesh" }
+	blend_shape = { id = "cloak_sasanian_war_female_01_bs_muscular"		type = "cloak_sasanian_war_female_01_bs_muscular.mesh" }	
+	blend_shape = { id = "cloak_sasanian_war_female_01_bs_old"		type = "cloak_sasanian_war_female_01_bs_old.mesh" }
+	blend_shape = { id = "cloak_sasanian_war_female_01_bs_dwarf"		type = "cloak_sasanian_war_female_01_bs_dwarf.mesh" }
+	blend_shape = { id = "cloak_sasanian_war_female_01_bs_breast_size_max"		type = "cloak_sasanian_war_female_01_bs_breast_size_max.mesh" }
+	blend_shape = { id = "cloak_sasanian_war_female_01_bs_pregnant"			type = "cloak_sasanian_war_female_01_bs_pregnant.mesh" }
+	
+	meshsettings = {
+		name = "sasanian_pauldrons_m"
+		index = 0
+		texture_diffuse = "sasanian_helm_diffuse.dds"
+		texture_normal = "sasanian_helm_normal.dds"
+		texture_specular = "sasanian_helm_properties.dds"
+		shader = "portrait_attachment_pattern"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "cloak_sasanian_war_female_01_entity"
+	pdxmesh = "cloak_sasanian_war_female_01_mesh"
+
+	attribute = { name = "bs_body_infant_1"					blend_shape = "cloak_sasanian_war_female_01_bs_infant" }
+	attribute = { name = "bs_body_fat_1"					blend_shape = "cloak_sasanian_war_female_01_bs_fat" }
+	attribute = { name = "bs_body_gaunt_1"					blend_shape = "cloak_sasanian_war_female_01_bs_gaunt" }
+	attribute = { name = "bs_body_muscular_1"					blend_shape = "cloak_sasanian_war_female_01_bs_muscular" }	
+	attribute = { name = "bs_body_old_1"					blend_shape = "cloak_sasanian_war_female_01_bs_old" }
+	attribute = { name = "bs_body_dwarf_1"					blend_shape = "cloak_sasanian_war_female_01_bs_dwarf" }
+	attribute = { name = "bs_body_pregnant_1"				blend_shape = "cloak_sasanian_war_female_01_bs_pregnant" }
+	attribute = { name = "bs_body_breast_size_max"		blend_shape = "cloak_sasanian_war_female_01_bs_breast_size_max" }
+
+	
+	game_data = {
+        portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/sasanian_armor/sasanian_helm_masks.dds"	#Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
+				variation = "iranian_armor_high_01"	#A "variation" object in gfx/portraits/accessory_variations/
+			}
+        }
+	}
+}
+

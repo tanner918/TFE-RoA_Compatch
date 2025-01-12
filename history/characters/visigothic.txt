@@ -1,0 +1,1401 @@
+﻿##### Ummayad Vassals
+omeya_01 = {
+	name = "Adelfonso"
+	religion = muwalladi
+	culture = visigothic
+	733.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+omeya_02 = {
+	name = "Atawulfo"
+	religion = muwalladi
+	culture = visigothic
+	739.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+#####Visigothic Regal Families// Vanilla
+70000 = {
+	name = "Pelagio" # Pelayo (I) Fafílaz de Asturias
+	dynasty_house = house_asturias
+
+	father = 200252
+
+	religion = chalcedonian
+	culture = visigothic
+
+	martial = 9
+	diplomacy = 4
+	intrigue = 5
+	stewardship = 5
+
+	trait = brave
+	trait = temperate
+	trait = education_martial_4
+
+	681.1.1 = {
+		birth = yes
+	}
+	704.1.1 = {
+		add_spouse = 70001
+	}
+	737.1.1 = {
+		death = yes
+	}
+}
+
+70001 = {
+	name = "Gaudiosa" # Gaudiosa, Queen of Asturias
+	female = yes
+
+	religion = chalcedonian
+	culture = visigothic
+
+	688.1.1 = {
+		birth = yes
+	}
+	743.1.1 = {
+		death = yes
+	}
+}
+
+70002 = {
+	name = "Ermenisinda" # Ermenesinda Peláez de Asturias
+	female = yes
+	dynasty_house = house_asturias
+
+	father = 70000
+	mother = 70001
+
+	religion = chalcedonian
+	culture = visigothic
+
+	706.1.1 = {
+		birth = yes
+	}
+	760.1.1 = {
+		death = yes
+	}
+}
+
+70003 = {
+	name = "Adelfonso" # Alfonso (I) Pérez de Cantabria 'el Catolico'
+	dynasty_house = house_cantabria
+
+	father = 70010
+
+	religion = chalcedonian
+	culture = visigothic
+
+	martial = 6
+	diplomacy = 5
+	intrigue = 8
+	stewardship = 6
+
+	trait = intellect_good_1
+	trait = education_martial_2
+
+	693.1.1 = {
+		birth = yes
+	}
+	721.1.1 = {
+		add_spouse = 70002
+	}
+	757.1.1 = {
+		death = yes
+	}
+}
+
+70004 = {
+	name = "Fruella" # Fruela (I) Adefónsiz de Asturias 'el Cruel'
+	dynasty_house = house_asturias
+
+	father = 70003
+	mother = 70002
+
+	religion = chalcedonian
+	culture = visigothic
+
+	martial = 6
+	diplomacy = 5
+	intrigue = 6
+	stewardship = 5
+
+	trait = lunatic_1
+	trait = kinslayer_3
+	trait = education_martial_2
+
+	722.1.1 = {
+		birth = yes
+	}
+	763.1.1 = {
+		add_spouse = 70005
+	}
+	765.1.1 = {
+		give_nickname = nick_the_cruel
+	}
+	768.1.1 = {
+		death = {
+			death_reason = death_murder
+		}
+	}
+}
+
+70006 = {
+	name = "Adelfonso" # Alfonso (II) Froilaz de Asturias 'el Casto'
+	dynasty_house = house_asturias
+
+	father = 70004
+	mother = 70005
+
+	religion = chalcedonian
+	culture = visigothic
+
+	martial = 4
+	diplomacy = 6
+	intrigue = 3
+	stewardship = 8
+
+	trait = just
+	trait = chaste
+	trait = education_diplomacy_2
+
+	765.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		give_nickname = nick_the_chaste
+	}
+	842.3.20 = {
+		death = yes
+	}
+}
+
+70010 = {
+	name = "Petro" # Pedro de Cantabria
+	dynasty_house = house_cantabria
+	
+	father = 200237
+	mother = 200257
+
+	religion = chalcedonian
+	culture = visigothic
+	
+	670.1.1 = {
+		birth = yes
+	}
+	720.1.1 = {
+		death = yes
+	}
+}
+
+70011 = {
+	name = "Fruella" # Fruela Pérez de Cantabria
+	dynasty_house = house_cantabria
+
+	father = 70010
+
+	religion = chalcedonian
+	culture = visigothic
+	
+	695.1.1 = {
+		birth = yes
+	}
+	757.1.1 = {
+		death = yes
+	}
+}
+
+70012 = {
+	name = "Aurelio" # Aurelio (I) Froilaz de Cantabria
+	dynasty_house = house_cantabria
+
+	father = 70011
+
+	religion = chalcedonian
+	culture = visigothic
+
+	martial = 5
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 5
+
+	
+	trait = content
+	trait = education_stewardship_1
+
+	715.1.1 = {
+		birth = yes
+	}
+	773.1.1 = {
+		death = yes
+	}
+}
+
+70013 = {
+	name = "Veremondo" # Bermudo (I) Froilaz de Cantabria 'el Diacono'
+	dynasty_house = house_cantabria
+
+	father = 70011
+
+	religion = chalcedonian
+	culture = visigothic
+
+	martial = 3
+	diplomacy = 4
+	intrigue = 6
+	stewardship = 5
+
+	trait = honest
+	trait = education_diplomacy_1
+
+	740.1.1 = {
+		birth = yes
+	}
+	788.1.1 = {
+		add_spouse = 70014
+	}
+	797.1.1 = {
+		death = yes
+	}
+}
+
+70115 = {
+	name = "Fafila" # Favila (I) Peláez de Asturias
+	dynasty_house = house_asturias
+
+	father = 70000
+	mother = 70001
+
+	religion = chalcedonian
+	culture = visigothic
+
+	martial = 6
+	diplomacy = 5
+	intrigue = 3
+	stewardship = 5
+
+	trait = greedy
+	trait = hunter_1
+	trait = education_martial_1
+
+	705.1.1 = {
+		birth = yes
+	}
+	727.1.1 = {
+		add_spouse = 200056
+	}
+	739.6.15 = {
+		death = {
+			death_reason = death_accident
+		}
+	}
+}
+
+70116 = {
+	name = "Mauregato" # Mauregato (I) Adefónsiz de Cantabria
+
+	dynasty_house = house_cantabria
+
+	father = 70003
+	trait = bastard
+
+	religion = chalcedonian
+	culture = visigothic
+
+	martial = 4
+	diplomacy = 4
+	intrigue = 4
+	stewardship = 4
+
+	trait = deceitful
+	trait = greedy
+	trait = education_intrigue_1
+
+	730.1.1 = {
+		birth = yes
+	}
+	764.1.1 = {
+		add_spouse = 200059
+	}
+	788.1.1 = {
+		death = yes
+	}
+}
+
+70117 = {
+	name = "Adosinda" # Adosinda Adefónsiz de Asturias
+	female = yes
+	dynasty_house = house_asturias
+
+	father = 70003
+	mother = 70002
+
+	religion = chalcedonian
+	culture = visigothic
+	
+	744.1.1 = {
+		birth = yes
+	}
+	794.1.1 = {
+		death = yes
+	}
+}
+
+70118 = {
+	name = "Silo" # Silo I, King of Asturias
+	dynasty = 8625
+
+	religion = chalcedonian
+	culture = visigothic
+
+	martial = 5
+	diplomacy = 6
+	intrigue = 5
+	stewardship = 6
+
+	
+	trait = scholar
+	trait = education_stewardship_2
+
+	733.1.1 = {
+		birth = yes
+	}
+	769.1.1 = {
+		add_matrilineal_spouse = 70117
+	}
+	783.1.1 = {
+		death = yes
+	}
+}
+
+73798 = {
+	name = "YuC_uf"
+	dynasty = 12291
+
+	religion = muwalladi
+	culture = visigothic
+
+	735.1.1 = {
+		birth = yes
+	}
+	791.1.1 = {
+		death = yes
+	}
+}
+
+73799 = {
+	name = "Ambroz"
+	dynasty = 12291
+
+	father = 73798
+
+	religion = muwalladi
+	culture = visigothic
+
+	760.1.1 = {
+		birth = yes
+	}
+	814.1.1 = {
+		death = yes
+	}
+}
+
+73873 = {
+	name = "Wimaran"
+	dynasty_house = house_asturias
+
+	father = 70003
+	mother = 70002
+
+	religion = chalcedonian
+	culture = visigothic
+
+	725.1.1 = {
+		birth = yes
+	}
+	767.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = 70004
+		}
+	}
+}
+
+73874 = {
+	name = "Veremond"
+	dynasty_house = house_asturias
+
+	father = 73873
+
+	religion = chalcedonian
+	culture = visigothic
+
+	760.1.1 = {
+		birth = yes
+	}
+	812.1.1 = {
+		death = yes
+	}
+}
+
+73901 = {
+	name = "Theodemir"
+	dynasty = 12295
+
+	religion = chalcedonian
+	culture = visigothic
+
+	670.1.1 = {
+		birth = yes
+	}
+	743.1.1 = {
+		death = yes
+	}
+}
+
+73902 = {
+	name = "Adelgundis"
+	female = yes
+	dynasty = 12295
+
+	father = 73901
+
+	religion = chalcedonian
+	culture = visigothic
+
+	700.1.1 = {
+		birth = yes
+	}
+	782.1.1 = {
+		death = yes
+	}
+}
+
+73908 = {
+	name = "AlgaC_i"
+	dynasty = 12296
+
+	religion = muwalladi
+	culture = visigothic
+
+	748.1.1 = {
+		birth = yes
+	}
+	814.1.1 = {
+		death = yes
+	}
+}
+
+73980 = {
+	name = "Julian"
+	dynasty = 12312
+
+	religion = chalcedonian
+	culture = visigothic
+
+	672.1.1 = {
+		birth = yes
+	}
+	710.1.1 = {
+		add_spouse = 168733
+	}
+	747.1.1 = {
+		death = yes
+	}
+}
+
+73981 = {
+	name = "Pelagio"
+	dynasty = 12312
+
+	father = 73980
+	mother = 168733
+
+	religion = muwalladi
+	culture = visigothic
+
+	732.1.1 = {
+		birth = yes
+	}
+	810.1.1 = {
+		death = yes
+	}
+}
+
+73982 = {
+	name = "Abdela"
+	dynasty = 12312
+
+	father = 73981
+
+	religion = muwalladi
+	culture = visigothic
+
+	760.1.1 = {
+		birth = yes
+	}
+	833.1.1 = {
+		death = yes
+	}
+}
+
+91392 = {
+	name = "Ercheswintha" #Ercheswinda, used as wife of Riculfe, the fantasy brother of Fulrad
+	female = yes
+
+	religion = "chalcedonian"
+	culture = "visigothic"
+	
+	690.1.1 = {
+		birth = yes
+	}
+	760.1.1 = {
+		death = yes
+	}
+}
+
+168720 = {
+	name = "Olmond"
+	dynasty = 1046032
+
+	father = 200244
+
+	religion = "chalcedonian"
+	culture = "visigothic"
+
+	704.1.1 = {
+		birth = yes
+	}
+	758.1.1 = {
+		death = yes
+	}
+}
+
+168721 = {
+	name = "Sara"
+	female = yes
+	dynasty = 1046032
+
+	father = 168720
+	
+	religion = "muwalladi"
+	culture = "visigothic"
+
+	720.1.1 = {
+		birth = yes
+	}
+	776.1.1 = {
+		death = yes
+	}
+}
+
+168722 = {
+	name = "Madrubal"
+	dynasty = 1046032
+
+	father = 168720
+
+	religion = "muwalladi"
+	culture = "visigothic"
+
+	722.1.1 = {
+		birth = yes
+	}
+	770.1.1 = {
+		death = yes
+	}
+}
+
+168723 = {
+	name = "Oppas"
+	dynasty = 1046032
+
+	father = 168720
+
+	religion = "chalcedonian"
+	culture = "visigothic"
+
+	724.1.1 = {
+		birth = yes
+	}
+	749.1.1 = {
+		add_spouse = 168724
+	}
+	777.1.1 = {
+		death = yes
+	}
+}
+
+168724 = {
+	name = "Ricilo"
+	female = yes
+
+	religion = "chalcedonian"
+	culture = "visigothic"
+
+	730.1.1 = {
+		birth = yes
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+
+168727 = {
+	name = "Witiza"
+	dynasty = 1046032
+
+	father = 168723
+	mother = 168724
+
+	religion = "chalcedonian"
+	culture = "visigothic"
+
+	750.1.1 = {
+		birth = yes
+	}
+	
+	815.1.1 = {
+		death = yes
+	}
+}
+
+190550 = {
+	name = "Bego" #count of Narbonne
+	dynasty = 1044118 #Begonid
+
+	religion = "chalcedonian"
+	culture = "visigothic"
+
+	750.1.1 = {
+		birth = yes
+	}
+	816.10.28 = {
+		death = yes
+	}
+}
+
+200031 = {
+	name = "MuC_a"
+	dynasty = 1046013
+
+	religion = muwalladi
+	culture = visigothic
+
+	733.1.1 = {
+		birth = yes
+	}
+	790.1.1 = {
+		death = yes
+	}
+}
+
+200037 = {
+	name = "Abda"
+	female = yes
+
+	religion = muwalladi
+	culture = visigothic
+
+	744.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+
+200041 = {
+	name = "YuC_uf"
+	dynasty = 1046014
+
+	religion = muwalladi
+	culture = visigothic
+
+	727.1.1 = {
+		birth = yes
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+
+200044 = {
+	name = "Emira"
+	female = yes
+
+	religion = muwalladi
+	culture = visigothic
+
+	740.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+
+200045 = {
+	name = "Abderrabmen"
+	dynasty = 1046015
+
+	religion = muwalladi
+	culture = visigothic
+
+	738.1.1 = {
+		birth = yes
+	}
+	791.1.1 = {
+		death = yes
+	}
+}
+
+200047 = {
+	name = "Ayab"
+	female = yes
+
+	religion = muwalladi
+	culture = visigothic
+
+	750.1.1 = {
+		birth = yes
+	}
+	810.1.1 = {
+		death = yes
+	}
+}
+
+200050 = {
+	name = "Nadira"
+	female = yes
+
+	religion = muwalladi
+	culture = visigothic
+
+	743.1.1 = {
+		birth = yes
+	}
+	808.1.1 = {
+		death = yes
+	}
+}
+
+200053 = {
+	name = "Harun"
+
+	religion = muwalladi
+	culture = visigothic
+
+	768.1.1 = {
+		birth = yes
+	}
+	801.1.1 = {
+		death = yes
+	}
+}
+
+200055 = {
+	name = "C_ulema"
+	dynasty = 1046016
+
+	religion = muwalladi
+	culture = visigothic
+
+	737.1.1 = {
+		birth = yes
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+
+200056 = {
+	name = "Froiliuva"
+	female = yes
+
+	religion = chalcedonian
+	culture = visigothic
+
+	710.1.1 = {
+		birth = yes
+	}
+	763.1.1 = {
+		death = yes
+	}
+}
+
+200057 = {
+	name = "Fafinia"
+	female = yes
+	dynasty_house = house_asturias
+
+	father = 70115
+	mother = 200056
+
+	religion = chalcedonian
+	culture = visigothic
+
+	729.1.1 = {
+		birth = yes
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+
+200059 = {
+	name = "Creusa"
+	female = yes
+
+	religion = chalcedonian
+	culture = visigothic
+
+	745.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+
+200060 = {
+	name = "Ermenisinda"
+	female = yes
+	dynasty_house = house_cantabria
+
+	father = 70011
+
+	religion = chalcedonian
+	culture = visigothic
+
+	729.1.1 = {
+		birth = yes
+	}
+	787.1.1 = {
+		death = yes
+	}
+}
+
+200062 = {
+	name = "Adelgaster"
+	dynasty = 8625
+
+	father = 70118
+
+	religion = chalcedonian
+	culture = visigothic
+
+	761.1.1 = {
+		birth = yes
+	}
+	810.1.1 = {
+		death = yes
+	}
+}
+
+200063 = {
+	name = "Egilona"
+	female = yes
+
+	religion = chalcedonian
+	culture = visigothic
+
+	689.1.1 = {
+		birth = yes
+	}
+	745.1.1 = {
+		death = yes
+	}
+}
+
+200064 = {
+	name = "Athanagild"
+	dynasty = 12295
+
+	father = 73901
+
+	religion = chalcedonian
+	culture = visigothic
+
+	698.1.1 = {
+		birth = yes
+	}
+	745.1.1 = {
+		death = yes
+	}
+}
+
+200149 = {
+	name = "Rostan"
+
+	religion = chalcedonian
+	culture = visigothic
+
+	740.1.1 = {
+		birth = yes
+	}
+	811.1.1 = {
+		death = yes
+	}
+}
+
+200150 = {
+	name = "Oddilon"
+
+	religion = chalcedonian
+	culture = visigothic
+
+	756.1.1 = {
+		birth = yes
+	}
+	813.1.1 = {
+		death = yes
+	}
+}
+
+200151 = {
+	name = "Ermengar"
+
+	religion = chalcedonian
+	culture = visigothic
+
+	758.1.1 = {
+		birth = yes
+	}
+	817.1.1 = {
+		death = yes
+	}
+}
+
+200154 = {
+	name = "Roderic"
+	dynasty = 1046019
+
+	religion = chalcedonian
+	culture = visigothic
+
+	747.1.1 = {
+		birth = yes
+	}
+	790.1.1 = {
+		death = yes
+	}
+}
+
+200156 = {
+	name = "Fredol"
+
+	religion = chalcedonian
+	culture = visigothic
+
+	768.1.1 = {
+		birth = yes
+	}
+	820.1.1 = {
+		death = yes
+	}
+}
+
+200198 = {
+	name = "Nur"
+	female = yes
+
+	religion = chalcedonian
+	culture = visigothic
+
+	722.1.1 = {
+		birth = yes
+	}
+	783.1.1 = {
+		death = yes
+	}
+}
+
+200199 = {
+	name = "YaC_mina"
+	female = yes
+
+	religion = chalcedonian
+	culture = visigothic
+
+	724.1.1 = {
+		birth = yes
+	}
+	789.1.1 = {
+		death = yes
+	}
+}
+
+200204 = {
+	name = "Nadia"
+	female = yes
+
+	religion = chalcedonian
+	culture = visigothic
+
+	750.1.1 = {
+		birth = yes
+	}
+	802.1.1 = {
+		death = yes
+	}
+}
+
+200252 = {
+	name = "Fafila"
+	dynasty = 1046033
+
+	father = 200240
+	mother = 168735
+
+	religion = chalcedonian
+	culture = visigothic
+
+	650.1.1 = {
+		birth = yes
+	}
+	702.1.1 = {
+		death = yes
+	}
+}
+
+200243 = {
+	name = "Egica"
+	dynasty = 1046032
+
+	father = 200247
+	mother = 200246
+
+	religion = chalcedonian
+	culture = visigothic
+
+	650.1.1 = {
+		birth = yes
+	}
+	685.1.1 = {
+		add_spouse = 200236
+	}
+	702.1.1 = {
+		death = yes
+	}
+}
+
+200244 = {
+	name = "Witiza"
+	dynasty = 1046032
+
+	father = 200243
+	mother = 200236
+
+	religion = chalcedonian
+	culture = visigothic
+
+	686.1.1 = {
+		birth = yes
+	}
+	710.1.1 = {
+		death = {
+			death_reason = death_murder
+		}
+	}
+}
+
+200245 = {
+	name = "Agila"
+	dynasty = 1046032
+
+	father = 200244
+
+	religion = chalcedonian
+	culture = visigothic
+
+	702.1.1 = {
+		birth = yes
+	}
+	713.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+200251 = {
+	name = "Roderic"
+	dynasty = 1046033
+
+	father = 200250
+
+	religion = chalcedonian
+	culture = visigothic
+
+	688.1.1 = {
+		birth = yes
+	}
+	705.1.1 = {
+		add_spouse = 200063
+	}
+	711.7.20 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+200253 = {
+	name = "Ardo"
+
+	religion = chalcedonian
+	culture = visigothic
+
+	678.1.1 = {
+		birth = yes
+	}
+	720.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+200215 = {
+	name = "C_eida"
+	female = yes
+
+	religion = muwalladi
+	culture = visigothic
+
+	746.1.1 = {
+		birth = yes
+	}
+	808.1.1 = {
+		death = yes
+	}
+}
+
+200218 = {
+	name = "Monnia"
+	female = yes
+
+	religion = muwalladi
+	culture = visigothic
+
+	743.1.1 = {
+		birth = yes
+	}
+	805.1.1 = {
+		death = yes
+	}
+}
+
+200223 = {
+	name = "Theoderic"
+	dynasty = 1046025
+
+	religion = chalcedonian
+	culture = visigothic
+
+	718.1.1 = {
+		birth = yes
+	}
+	741.1.1 = {
+		add_spouse = 200224
+	}
+	779.1.1 = {
+		death = yes
+	}
+}
+
+200224 = {
+	name = "Ermenisinda"
+	female = yes
+
+	religion = chalcedonian
+	culture = visigothic
+
+	723.1.1 = {
+		birth = yes
+	}
+	788.1.1 = {
+		death = yes
+	}
+}
+
+200225 = {
+	name = "Liuveric"
+	dynasty = 1046025
+
+	father = 200223
+	mother = 200224
+
+	religion = chalcedonian
+	culture = visigothic
+
+	742.1.1 = {
+		birth = yes
+	}
+	795.1.1 = {
+		death = yes
+	}
+}
+
+200227 = {
+	name = "Abda"
+	female = yes
+
+	religion = muwalladi
+	culture = visigothic
+
+	740.1.1 = {
+		birth = yes
+	}
+	802.1.1 = {
+		death = yes
+	}
+}
+
+200231 = {
+	name = "Onecca"
+	female = yes
+
+	religion = muwalladi
+	culture = visigothic
+
+	744.1.1 = {
+		birth = yes
+	}
+	810.1.1 = {
+		death = yes
+	}
+}
+
+200236 = {
+	name = "Cixillo"
+	female = yes
+	dynasty = 1046033
+
+	father = 200237
+	mother = 200257
+
+	religion = chalcedonian
+	culture = visigothic
+
+	669.1.1 = {
+		birth = yes
+	}
+	721.1.1 = {
+		death = yes
+	}
+}
+
+200237 = {
+	name = "Erwig"
+	dynasty = 1046033
+
+	father = 200238
+	mother = 200239
+
+	religion = chalcedonian
+	culture = visigothic
+	
+	trait = ill
+
+	652.1.1 = {
+		birth = yes
+	}
+	668.1.1 = {
+		add_spouse = 200257
+	}
+	687.11.15 = {
+		death = {
+			death_reason = death_ill
+		}
+	}
+}
+
+200156 = {
+	name = "Fredol"
+
+	religion = chalcedonian
+	culture = visigothic
+
+	768.1.1 = {
+		birth = yes
+	}
+	820.1.1 = {
+		death = yes
+	}
+}
+
+200198 = {
+	name = "Nur"
+	female = yes
+
+	religion = chalcedonian
+	culture = visigothic
+
+	722.1.1 = {
+		birth = yes
+	}
+	783.1.1 = {
+		death = yes
+	}
+}
+
+200199 = {
+	name = "YaC_mina"
+	female = yes
+
+	religion = chalcedonian
+	culture = visigothic
+
+	724.1.1 = {
+		birth = yes
+	}
+	789.1.1 = {
+		death = yes
+	}
+}
+
+200204 = {
+	name = "Nadia"
+	female = yes
+
+	religion = chalcedonian
+	culture = visigothic
+
+	750.1.1 = {
+		birth = yes
+	}
+	802.1.1 = {
+		death = yes
+	}
+}
+
+200280 = {
+	name = "Theudis" # Teudis, King of the Visigoths (531-548)
+	dna = theudis_dna
+	dynasty=99920001
+	religion = arianism
+	culture = ostrogothic # An Ostrogoth
+	trait = callous
+	trait = ambitious
+	trait = diligent
+	trait = education_martial_3
+	father = 992026
+	490.1.1 = {
+		birth = yes
+	}
+	531.1.1 = {
+		add_spouse = 200280_spouse
+	}
+	548.1.1 = {
+		death = {
+			death_reason = death_murder
+		}
+	}
+}

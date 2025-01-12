@@ -1,0 +1,438 @@
+﻿
+# tuareg_01, tuareg_02, and tuareg_03 moved to and replaced below
+
+tuareg_04 = {
+	name = "Thakiya"
+	religion = "tuareg_pagan"
+	culture = tuareg
+	dynasty = tuareg
+	mother = tin_hinan_02
+	381.1.1 = {
+		birth = yes
+	}
+	448.1.1 = {
+		death = yes
+	}
+}
+tuareg_05 = {
+	name = "Xamida"
+	religion = "tuareg_pagan"
+	culture = tuareg
+	dynasty = tuareg
+	father = tuareg_04 #Thakiya
+	415.1.1 = {
+		birth = yes
+	}
+	478.1.1 = {
+		death = yes
+	}
+}
+tuareg_06 = {
+	name = "Iher"
+	religion = "tuareg_pagan"
+	culture = tuareg
+	dynasty = tuareg
+	father = tuareg_05 #Xamida
+	444.1.1 = {
+		birth = yes
+	}
+	504.1.1 = {
+		death = yes
+	}
+}
+tuareg_07 = {
+	name = "Misagenes"
+	religion = "tuareg_pagan"
+	culture = tuareg
+	dynasty = tuareg
+	father = tuareg_06 #Iher
+	477.1.1 = {
+		birth = yes
+	}
+	545.1.1 = {
+		death = yes
+	}
+}
+tuareg_08 = {
+	name = "Zayar"
+	religion = "tuareg_pagan"
+	culture = tuareg
+	dynasty = tuareg
+	father = tuareg_07 #Misagenes
+	504.1.1 = {
+		birth = yes
+	}
+	577.1.1 = {
+		death = yes
+	}
+}
+tuareg_09 = {
+	name = "Massiva"
+	religion = "tuareg_pagan"
+	culture = tuareg
+	dynasty = tuareg
+	father = tuareg_08 #Zayar
+	546.1.1 = {
+		birth = yes
+	}
+	610.1.1 = {
+		death = yes
+	}
+}
+tuareg_10 = {
+	name = "Wattas"
+	religion = "tuareg_pagan"
+	culture = tuareg
+	dynasty = tuareg
+	father = tuareg_09 #Massiva
+	581.1.1 = {
+		birth = yes
+	}
+	653.1.1 = {
+		death = yes
+	}
+}
+tuareg_11 = {
+	name = "Alyamas"
+	religion = "tuareg_pagan"
+	culture = tuareg
+	dynasty = tuareg
+	father = tuareg_10 #Wattas
+	615.1.1 = {
+		birth = yes
+	}
+	677.1.1 = {
+		death = yes
+	}
+}
+tuareg_12 = {
+	name = "Berkan"
+	religion = "tuareg_pagan"
+	culture = tuareg
+	dynasty = tuareg
+	father = tuareg_11 #Alyamas
+	649.1.1 = {
+		birth = yes
+	}
+	712.1.1 = {
+		death = yes
+	}
+}
+tuareg_13 = {
+	name = "Afalku"
+	religion = "tuareg_pagan"
+	culture = tuareg
+	dynasty = tuareg
+	father = tuareg_12 #Berkan
+	688.1.1 = {
+		birth = yes
+	}
+	715.1.1 = {
+		religion = ibadi
+	}
+	749.1.1 = {
+		death = yes
+	}
+}
+tuareg_14 = {
+	name = "Tegama"
+	religion = "ibadi"
+	culture = tuareg
+	dynasty = tuareg
+	father = tuareg_13 #Afalku
+	718.1.1 = {
+		birth = yes
+	}
+	779.1.1 = {
+		death = yes
+	}
+}
+
+tuareg_15 = {
+	name = "Massiva"
+	religion = tuareg_pagan
+	culture = tuareg
+	dynasty = jabbaren
+	340.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+
+tuareg_16 = {
+	name = "Afalku"
+	religion = tuareg_pagan
+	culture = tuareg
+	dynasty = jabbaren
+	father = tuareg_15
+	390.1.1 = {
+		birth = yes
+	}
+	460.1.1 = {
+		death = yes
+	}
+}
+
+tuareg_17 = {
+	name = "Alyamas"
+	religion = tuareg_pagan
+	culture = tuareg
+	dynasty = jabbaren
+	father = tuareg_16
+	450.1.1 = {
+		birth = yes
+	}
+	520.1.1 = {
+		death = yes
+	}
+}
+
+tuareg_18 = {
+	name = "Afalku"
+	religion = tuareg_pagan
+	culture = tuareg
+	dynasty = jabbaren
+	father = tuareg_17
+	510.1.1 = {
+		birth = yes
+	}
+	580.1.1 = {
+		death = yes
+	}
+}
+
+# Legendary king of the Issabaten
+# Supposedly killed by rebellious subjects after he told them to drive all the mouflons of Atakor towards the large wadi Amded to exterminate them
+# But the mouflons represented important hunting reserves for the mountaineers
+tuareg_19 = {
+	name = "Akkar"
+	religion = tuareg_pagan
+	culture = tuareg
+	dynasty = issabaten
+	trait = ambitious
+	trait = trusting
+	trait = arrogant
+	341.1.1 = {
+		birth = yes
+	}
+	# Technically stoned to death
+	411.1.1 = {
+		death = { death_reason = death_beaten_by_mob }
+	}
+}
+
+tuareg_20 = {
+	name = "Berkan"
+	religion = tuareg_pagan
+	culture = tuareg
+	dynasty = issabaten
+	father = tuareg_19
+	391.1.1 = {
+		birth = yes
+	}
+	461.1.1 = {
+		death = yes
+	}
+}
+
+tuareg_21 = {
+	name = "Iher"
+	religion = tuareg_pagan
+	culture = tuareg
+	dynasty = issabaten
+	father = tuareg_20
+	451.1.1 = {
+		birth = yes
+	}
+	521.1.1 = {
+		death = yes
+	}
+}
+
+tuareg_22 = {
+	name = "Zayar"
+	religion = tuareg_pagan
+	culture = tuareg
+	dynasty = issabaten
+	father = tuareg_21
+	511.1.1 = {
+		birth = yes
+	}
+	581.1.1 = {
+		death = yes
+	}
+}
+
+tuareg_23 = {
+	name = "Misagenes"
+	religion = tuareg_pagan
+	culture = tuareg
+	dynasty = imededeyen
+	339.1.1 = {
+		birth = yes
+	}
+	409.1.1 = {
+		death = yes
+	}
+}
+
+tuareg_24 = {
+	name = "Xamida"
+	religion = tuareg_pagan
+	culture = tuareg
+	dynasty = imededeyen
+	father = tuareg_23
+	389.1.1 = {
+		birth = yes
+	}
+	459.1.1 = {
+		death = yes
+	}
+}
+
+tuareg_25 = {
+	name = "Melek"
+	religion = tuareg_pagan
+	culture = tuareg
+	dynasty = imededeyen
+	father = tuareg_24
+	449.1.1 = {
+		birth = yes
+	}
+	519.1.1 = {
+		death = yes
+	}
+}
+
+tuareg_26 = {
+	name = "Thakiya"
+	religion = tuareg_pagan
+	culture = tuareg
+	dynasty = imededeyen
+	father = tuareg_25
+	509.1.1 = {
+		birth = yes
+	}
+	579.1.1 = {
+		death = yes
+	}
+}
+
+#################################################################################
+# 
+# REVISED TIN HINAN FAMILY
+# by Cybrkxhan
+# 
+#################################################################################
+
+
+
+
+# Tin Hinan, legendary progenitor and matriarch of the Tuaregs
+tin_hinan_01 = {
+	name = "Tin Hinan"
+	religion = "tuareg_pagan"
+	culture = tuareg
+	female = yes
+	dynasty = tamenoukalt
+	trait = brave
+	trait = diligent
+	trait = just
+	trait = intellect_good_2
+	trait = beauty_good_2
+	324.5.16 = {
+		birth = yes
+	}
+	388.5.2 = {
+		death = yes
+	}
+}
+
+# Kella, Tin Hinan's legendary daughter
+tin_hinan_02 = {
+	name = "Kella"
+	religion = "tuareg_pagan"
+	culture = tuareg
+	female = yes
+	father = tin_hinan_04
+	mother = tin_hinan_01 #Tin Hinan
+	dynasty = tamenoukalt
+	352.6.14 = {
+		birth = yes
+	}
+	411.4.19 = {
+		death = yes
+	}
+}
+
+# Takamat, Tin Hinan's legendary handmaid and companion
+# General History of Africa II, chapter on the peoples of Sudan lists her as the ancestor of the Dag Rali
+tin_hinan_03 = {
+	name = "Takamat"
+	religion = "tuareg_pagan"
+	culture = tuareg
+	female = yes
+	dynasty = dag_rali 
+	trait = brave
+	trait = diligent
+	trait = generous
+	trait = loyal
+	trait = intellect_good_1
+	trait = beauty_good_1
+	330.3.3 = {
+		birth = yes
+	}
+	350.1.1 = {
+		set_relation_best_friend = character:tin_hinan_01
+	}
+	382.5.8 = {
+		death = yes
+	}
+}
+
+
+# Tin Hinan's fictitious husband
+tin_hinan_04 = {
+	name = "Buxtuc"
+	religion = "tuareg_pagan"
+	culture = tuareg 
+	328.4.10 = {
+		birth = yes
+	}
+	350.1.1 = {
+		add_matrilineal_spouse = tin_hinan_01
+	}
+	380.8.8 = {
+		death = yes
+	}
+}
+
+
+# Takamat's fictitious husband
+tin_hinan_05 = {
+	name = "Ixfensen"
+	religion = "tuareg_pagan"
+	culture = tuareg 
+	328.8.8 = {
+		birth = yes
+	}
+	350.1.1 = {
+		add_matrilineal_spouse = tin_hinan_03
+	}
+	388.8.8 = {
+		death = yes
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

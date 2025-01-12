@@ -1,0 +1,47 @@
+﻿current_date_above_1200_trigger = {
+	global = current_date_above_1200_trigger
+}
+has_game_rule_dead_cultures_trigger = { # TFE
+	third = has_game_rule_dead_cultures_trigger
+	third_not = has_game_rule_dead_cultures_trigger_not
+}
+eastern_religion_trigger = {
+	third = eastern_religion_trigger
+	third_not = eastern_religion_trigger_not
+	global = eastern_religion_trigger
+	global_not = eastern_religion_trigger_not
+}
+christianity_religion_trigger = {
+	third = christianity_religion_trigger
+	third_not = christianity_religion_trigger_not
+	global = christianity_religion_trigger
+	global_not = christianity_religion_trigger_not
+}
+has_western_building_gfx_trigger = {
+	first = has_western_building_gfx_trigger_first
+	first_not = has_western_building_gfx_trigger_first_not
+	third = has_western_building_gfx_trigger_third
+	third_not = has_western_building_gfx_trigger_third_not
+	global = has_western_building_gfx_trigger_third
+}
+has_mediterranean_building_gfx_trigger = {
+	first = has_mediterranean_building_gfx_trigger_first
+	first_not = has_mediterranean_building_gfx_trigger_first_not
+	third = has_mediterranean_building_gfx_trigger_third
+	third_not = has_mediterranean_building_gfx_trigger_third_not
+	global = has_mediterranean_building_gfx_trigger_third
+}
+has_indian_building_gfx_trigger = {
+	first = has_indian_building_gfx_trigger_first
+	first_not = has_indian_building_gfx_trigger_first_not
+	third = has_indian_building_gfx_trigger_third
+	third_not = has_indian_building_gfx_trigger_third_not
+	global = has_indian_building_gfx_trigger_third
+}
+has_mena_building_gfx_trigger = {
+	first = has_mena_building_gfx_trigger_first
+	first_not = has_mena_building_gfx_trigger_first_not
+	third = has_mena_building_gfx_trigger_third
+	third_not = has_mena_building_gfx_trigger_third_not
+	global = has_mena_building_gfx_trigger_third
+}

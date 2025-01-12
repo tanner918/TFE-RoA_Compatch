@@ -1,0 +1,57 @@
+﻿tfe_britannia_struggle_starting_events = {
+	events = {
+		neutral_struggle.0001
+		britannia_struggle.0003
+	}
+}
+
+yearly_global_pulse = {
+	on_actions = { TFE_struggle_yearly_global_pulse }
+}
+
+TFE_struggle_yearly_global_pulse = {
+	effect = {
+		if = {
+			limit = {
+				AND = {
+					exists = struggle:britannia_struggle
+					struggle:britannia_struggle = {
+						any_involved_ruler = {
+							THIS = title:c_kent.holder
+						}
+					}
+					NOT = {
+						exists = global_var:kent_quarry_found
+					}
+				}
+			}
+			title:c_kent.holder = {
+				random = {
+					chance = 20
+					trigger_event = tfe_britannia_struggle_flavour.0001
+				}
+			}
+		}
+	}
+}
+
+tfe_eastern_iranian_struggle_starting_events = {
+	events = {
+		neutral_struggle.0001
+		eastern_iranian_struggle.0003
+	}
+}
+
+tfe_roman_persian_struggle_starting_events = {
+	events = {
+		neutral_struggle.0001
+		roman_persian_struggle.0003
+	}
+}
+
+tfe_italian_struggle_starting_events = {
+	events = {
+		neutral_struggle.0001
+		#italian_struggle.0001
+	}
+}

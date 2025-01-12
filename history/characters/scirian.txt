@@ -1,0 +1,264 @@
+﻿996000 = {
+	name = "Tufa"
+	dynasty = 99960001
+	religion = "gothic_pagan"
+	culture = "scirian"
+	340.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+996001 = {
+	name = "Malgirda"
+	female = yes
+	religion = "arianism"
+	culture = "scirian"
+	400.1.1 = {
+		birth = yes
+	}
+	460.1.1 = {
+		death = yes
+	}
+}
+996002 = {
+	name = "Odovacar" #Odoacer
+	dna = odoacer
+	dynasty = 99960000
+	religion = "arianism"
+	culture = "scirian"
+	trait = ambitious
+	trait = temperate
+	trait = diligent
+	trait = education_martial_4
+	martial = 8
+	diplomacy = 9
+	stewardship = 8
+	intrigue = 7
+	learning = 5
+	prowess = 2
+	father = 990012
+	mother = 996001
+	sexuality = heterosexual
+	431.1.1 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+	470.1.1 = {
+		add_spouse = 996004
+		add_gold = 250
+		add_perk = serve_the_crown_perk
+		add_perk = strict_organization_perk
+		add_perk = hard_rule_perk
+		add_perk = meritocracy_perk
+		add_perk = chains_of_loyalty_perk
+		add_perk = likable_perk
+		add_perk = large_levies_perk
+		add_perk = soon_forgiven_perk
+		add_perk = toe_the_line_perk
+		learn_language = language_latin
+	}
+	476.9.4 = {
+		add_courtier = character:rugian_16
+		add_courtier = character:roman_12
+		add_character_modifier = {
+			modifier = governor_of_italy
+			years = 10
+		}
+	}
+	493.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = 992016
+		}
+	}
+}
+996003 = {
+	name = "Hunulf"
+	dynasty = 99960000
+	religion = "arianism"
+	culture = "scirian"
+	trait = education_martial_4
+	trait = ambitious
+	trait = brave
+	father = 990012
+	mother = 996001
+	435.1.1 = {
+		birth = yes
+		learn_language = language_latin
+	}
+	470.1.1 = {
+		set_relation_friend = character:leo_06
+	}
+	493.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = 992016
+		}
+	}
+}
+996004 = {
+	name = "Sunihilda"
+	female = yes
+	dynasty = 99950000
+	religion = "arianism"
+	culture = "herulian"
+	father = 995001
+	435.1.1 = {
+		birth = yes
+	}
+	493.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = 992016
+		}
+	}
+}
+996005 = {
+	name = "Thela"
+	dynasty = 99960000
+	religion = "arianism"
+	culture = "scirian"
+	father = 996002
+	mother = 996004
+	471.1.1 = {
+		birth = yes
+	}
+	495.1.1 = {
+		death = {
+			death_reason = death_execution
+			killer = 992016
+		}
+	}
+}
+996006 = {
+	name = "Brachila" # scirian nobleman
+	religion = "arianism"
+	culture = "scirian"
+	431.1.1 = {
+		birth = yes
+	}
+	495.1.1 = {
+		death = yes
+	}
+}
+996007 = {
+	name = "Tulga"
+	dynasty = 99960001
+	religion = "gothic_pagan"
+	culture = "scirian"
+	father = 996000
+	393.1.1 = {
+		birth = yes
+	}
+	453.1.1 = {
+		death = yes
+	}
+}
+996008 = {
+	name = "Tufa"
+	dynasty = 99960001
+	religion = "arianism"
+	culture = "scirian"
+	father = 996007
+	trait = education_martial_3
+	trait = ambitious
+	trait = deceitful
+	trait = brave
+	trait = disloyal
+	martial = 9
+	intrigue = 10
+	433.1.1 = {
+		birth = yes
+	}
+	493.6.1 = {
+		death = {
+			death_reason = death_battle
+			killer = rugian_05 # Frederic
+		}
+	}
+}
+
+#Fictional Vasal
+1100007 = { #Fictional
+	name = "Genobald"
+	religion = "gothic_pagan"
+	culture = "bastarnian"
+	363.1.1 = {
+		birth = yes
+	}
+	430.1.1 = {
+		death = yes
+	}
+}
+scirian_01 = {
+	name = "Reptila"
+	religion = "arianism"
+	culture = "scirian"
+	363.1.1 = {
+		birth = yes
+	}
+	430.1.1 = {
+		death = yes
+	}
+}
+scyri_01 = {
+	name = "Nebigast"
+	culture = "scirian"
+	religion = "gothic_pagan"
+	338.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+
+
+##################################################################################
+# 
+# FICTITIOUS PLACEHOLDERS
+# By Cybrxkhan
+# 
+##################################################################################
+
+
+
+scirian_misc_001 = {
+	name = "Hunila"
+	culture = "scirian"
+	religion = "arianism"
+	444.7.3 = {
+		birth = yes
+	}
+	496.6.2 = {
+		death = yes
+	}
+}
+
+scirian_misc_002 = {
+	name = "Theodofrid"
+	culture = "scirian"
+	religion = "gothic_pagan"
+	444.7.3 = {
+		birth = yes
+	}
+	496.6.2 = {
+		death = yes
+	}
+}
+
+scirian_misc_003 = {
+	name = "Hildifuns"
+	culture = "scirian"
+	religion = "arianism"
+	503.7.11 = {
+		birth = yes
+	}
+	569.4.10 = {
+		death = yes
+	}
+}

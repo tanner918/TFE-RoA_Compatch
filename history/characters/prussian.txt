@@ -1,0 +1,166 @@
+﻿# Pruthenians
+prussia_01 = {  # Ruler
+	name = "Klukis"
+	dynasty = dynasty_prussia
+	culture = prussian
+	religion = baltic_pagan
+	339.10.13 = {
+		birth = yes
+	}
+	404.7.17 = {
+		death = yes
+	}
+}
+
+prussia_11 = {  # Ruler
+	name = "Arelis"
+	dynasty = dynasty_prussia
+	culture = prussian
+	religion = baltic_pagan
+	father = prussia_01
+	384.3.6 = {
+		birth = yes
+	}
+	444.5.2 = {
+		death = yes
+	}
+}
+
+prussia_21 = {  # Ruler
+	name = "Kugis"
+	dynasty = dynasty_prussia
+	culture = prussian
+	religion = baltic_pagan
+	father = prussia_11
+	415.2.28 = {
+		birth = yes
+	}
+	485.3.11 = {
+		death = yes
+	}
+}
+
+prussia_31 = {  # Ruler
+	name = "Sergonis"
+	dynasty = dynasty_prussia
+	culture = prussian
+	religion = baltic_pagan
+	father = prussia_21
+	445.3.18 = {
+		birth = yes
+	}
+	504.7.13 = {
+		death = yes
+	}
+}
+
+prussia_41 = {  # Ruler
+	name = "Bajoras"
+	dynasty = dynasty_prussia
+	culture = prussian
+	religion = baltic_pagan
+	father = prussia_31
+	470.8.22 = {
+		birth = yes
+	}
+	529.5.12 = {
+		death = yes
+	}
+}
+prussia_42 = {  # Ruler
+	name = "Klukis"
+	dynasty = dynasty_prussia
+	culture = prussian
+	religion = baltic_pagan
+	father = prussia_41
+	495.1.1 = {
+		birth = yes
+	}
+	555.1.1 = {
+		death = yes
+	}
+}
+
+# Scalovians
+scalovia_01 = {  # Ruler
+	name = "Arelis"
+	dynasty = dynasty_scalovia
+	culture = prussian
+	religion = baltic_pagan
+	326.3.11 = {
+		birth = yes
+	}
+	362.12.1 = {
+		death = yes
+	}
+}
+
+scalovia_11 = {  # Ruler
+	name = "Jauguttis"
+	dynasty = dynasty_scalovia
+	culture = prussian
+	religion = baltic_pagan
+	father = scalovia_01
+	354.10.28 = {
+		birth = yes
+	}
+	423.6.4 = {
+		death = yes
+	}
+}
+
+scalovia_21 = {  # Ruler
+	name = "Kugis"
+	dynasty = dynasty_scalovia
+	culture = prussian
+	religion = baltic_pagan
+	father = scalovia_11
+	376.1.13 = {
+		birth = yes
+	}
+	437.3.29 = {
+		death = yes
+	}
+}
+
+scalovia_31 = {  # Ruler
+	name = "Gerdautas"
+	dynasty = dynasty_scalovia
+	culture = prussian
+	religion = baltic_pagan
+	father = scalovia_21
+	402.6.20 = {
+		birth = yes
+	}
+	448.2.20 = {
+		death = yes
+	}
+}
+
+scalovia_41 = {  # Ruler
+	name = "Budo"
+	dynasty = dynasty_scalovia
+	culture = prussian
+	religion = baltic_pagan
+	father = scalovia_31
+	444.8.16 = {
+		birth = yes
+	}
+	490.7.17 = {
+		death = yes
+	}
+}
+
+scalovia_42 = {  # Ruler
+	name = "Karatas"
+	dynasty = dynasty_scalovia
+	culture = prussian
+	religion = baltic_pagan
+	father = scalovia_41
+	477.1.1 = {
+		birth = yes
+	}
+	540.1.1 = {
+		death = yes
+	}
+}

@@ -1,0 +1,541 @@
+﻿
+k_bohemia = {
+	200.1.1 = {
+		#de_jure_liege = e_germany
+	}
+	401.1.1 = {
+		holder = 999602
+	}
+	469.1.1 = {
+		holder = 999605
+	}
+	623.1.1 = {
+		holder = samo_01
+	}
+}
+
+
+d_bohemia = {
+	361.1.1 = { change_development_level = 1 }
+	532.1.1 = { change_development_level = 2 }
+	768.1.1 = { change_development_level = 3 }
+	
+	
+	401.1.1 = {
+		holder = 999602
+	}
+	469.1.1 = {
+		holder = 999605
+	}
+	623.1.1 = {
+		holder = samo_01
+	}
+	720.1.1 = {
+		holder = 168345
+	}
+	745.1.1 = {
+		holder = 168346
+	}
+}
+
+
+c_praha = {
+	361.1.1 = { change_development_level = 1 }
+	476.1.1 = { change_development_level = 2 }
+	532.1.1 = { change_development_level = 3 }
+	632.1.1 = { change_development_level = 4 }
+	768.1.1 = { change_development_level = 5 }
+	
+	360.1.1 = {
+		holder = old_marcomanni_01
+	}
+	
+	401.1.1 = {
+		holder = 999602
+	}
+	469.1.1 = {
+		holder = 999605
+	}
+	528.1.1 = {
+		holder = wendish_08
+	}
+	623.1.1 = {
+		holder = samo_01
+	}
+	720.1.1 = {
+		liege = "d_bohemia"
+		holder = 168345
+	}
+	745.1.1 = {
+		holder = 168346
+	}
+}
+
+
+c_litomerice = {
+
+	360.1.1 = {
+		holder = bauvari_03
+	}
+	459.1.1 = {
+		holder = lombard_02
+		liege = d_lombards
+	}
+	528.1.1 = {
+		holder = wendish_08
+	}
+	623.1.1 = {
+		holder = czechs_02
+		liege = d_bohemia
+	}
+	720.1.1 = {
+		liege = "d_bohemia"
+		holder = 168345
+		government = tribal_government
+	}
+	731.1.1 = {
+		holder = 168346
+	}
+	748.1.1 = {
+		holder = 168347
+	}
+	764.1.1 = {
+		holder = 168348
+	}
+}
+
+
+c_zatec = {
+	361.1.1 = { change_development_level = 1 }
+	532.1.1 = { change_development_level = 2 }
+	632.1.1 = { change_development_level = 3 }
+	768.1.1 = { change_development_level = 4 }
+	
+	360.1.1 = {
+		holder = old_marcomanni_01
+	}
+	
+	401.1.1 = {
+		holder = 999602
+	}
+	469.1.1 = {
+		holder = 999605
+	}
+	528.1.1 = {
+		holder = wendish_08
+	}
+	623.1.1 = {
+		holder = czechs_02
+		liege = d_bohemia
+	}
+	720.1.1 = {
+		liege = "d_bohemia"
+		holder = 168345
+		government = tribal_government
+	}
+	745.1.1 = {
+		holder = 168346
+	}
+
+}
+
+
+c_plzen = {
+
+	361.1.1 = {
+		holder = old_marcomanni_02
+		liege = k_marcomanni
+	}
+	469.1.1 = {
+		holder = marcomani_03
+		liege = k_bohemia
+	}
+	528.1.1 = {
+		holder = wendish_10
+	}
+	623.1.1 = {
+		holder = samo_01
+	}
+
+	720.1.1 = {
+		liege = "d_bohemia"
+		holder = 168345
+		government = tribal_government
+	}
+	738.1.1 = {
+		holder = 146174
+	}
+}
+
+
+c_doudleby = {
+
+	361.1.1 = {
+		holder = old_marcomanni_02
+		liege = k_marcomanni
+	}
+	469.1.1 = {
+		holder = marcomani_03
+		liege = k_bohemia
+	}
+	528.1.1 = {
+		holder = wendish_10
+	}
+	623.1.1 = {
+		holder = samo_01
+	}
+	720.1.1 = {
+		liege = "d_bohemia"
+		holder = 168345
+		government = tribal_government
+	}
+	745.1.1 = {
+		holder = 168346
+	}
+}
+
+
+c_boleslav = {
+
+	360.1.1 = {
+		holder = bauvari_03
+	}
+	459.1.1 = {
+		holder = lombard_02
+		liege = d_lombards
+	}
+	528.1.1 = {
+		holder = wendish_08
+	}
+	623.1.1 = {
+		holder = czechs_01
+		liege = d_bohemia
+	}
+	720.1.1 = {
+		liege = "d_bohemia"
+		holder = 168345
+	}
+	745.1.1 = {
+		holder = 168346
+	}
+}
+
+
+c_hradec = {
+
+	360.1.1 = {
+		holder = bauvari_03
+	}
+	469.1.1 = {
+		holder = marcomani_04
+		liege = k_bohemia
+	}
+	528.1.1 = {
+		holder = wendish_09
+		liege = 0
+	}
+	623.1.1 = {
+		holder = czechs_01
+		liege = d_bohemia
+	}
+	750.1.1 = {
+		holder = 146177
+		liege = d_moravia
+	}
+}
+
+
+c_caslav = {
+
+	360.1.1 = {
+		holder = old_marcomanni_01
+	}
+	469.1.1 = {
+		holder = marcomani_04
+		liege = k_bohemia
+	}
+	528.1.1 = {
+		holder = wendish_09
+	}
+	623.1.1 = {
+		holder = czechs_01
+		liege = d_bohemia
+	}
+	720.1.1 = {
+		liege = "d_bohemia"
+		holder = 168345
+		government = tribal_government
+	}
+	750.1.1 = {
+		holder = 146177
+		liege = d_moravia
+	}
+}
+
+
+d_moravia = {
+	361.1.1 = { change_development_level = 1 }
+	476.1.1 = { change_development_level = 2 }
+	532.1.1 = { change_development_level = 3 }
+	632.1.1 = { change_development_level = 4 }
+	768.1.1 = { change_development_level = 5 }
+	
+	801.1.1 = {
+		change_development_level = 5
+	}
+
+	741.1.1 = {
+		liege = 0
+		holder = 187000
+	}
+}
+
+
+c_olomouc = {
+	361.1.1 = { change_development_level = 1 }
+	476.1.1 = { change_development_level = 2 }
+	532.1.1 = { change_development_level = 3 }
+	632.1.1 = { change_development_level = 4 }
+	768.1.1 = { change_development_level = 5 }
+	
+	340.1.1 = {
+		holder = quadi_03
+		liege = k_quadi
+	}
+	374.1.1 = {
+		holder = quadi_04
+		liege = k_quadi
+	}
+	390.1.1 = {
+		holder = 999602
+		liege = k_quadi
+	}
+	400.1.1 = {
+		holder = quadi_07
+		liege = k_quadi
+	}
+	443.1.1 = {
+		holder = quadi_05
+		liege = k_quadi
+	}
+	459.1.1 = {
+		holder = quadi_06
+		liege = k_bohemia
+	}
+	520.1.1 = {
+		holder = wendish_12
+	}
+	623.1.1 = {
+		holder = czechs_03
+		liege = d_bohemia
+	}
+	741.1.1 = {
+		liege = "d_moravia"
+		holder = 187000
+	}
+}
+
+
+c_opava = {
+	340.1.1 = {
+		holder = quadi_03
+		liege = k_quadi
+	}
+	374.1.1 = {
+		holder = quadi_04
+		liege = k_quadi
+	}
+	390.1.1 = {
+		holder = quadi_032
+		liege = k_quadi
+	}
+	400.1.1 = {
+		holder = quadi_07
+		liege = k_quadi
+	}
+	443.1.1 = {
+		holder = quadi_05
+		liege = k_quadi
+	}
+	459.1.1 = {
+		holder = quadi_06
+		liege = k_bohemia
+	}
+	520.1.1 = {
+		holder = wendish_12
+	}
+	623.1.1 = {
+		holder = czechs_03
+		liege = d_bohemia
+	}
+	741.1.1 = {
+		liege = "d_moravia"
+		holder = 187000
+	}
+}
+
+
+c_prerov = {
+	361.1.1 = { change_development_level = 2 }
+	476.1.1 = { change_development_level = 3 }
+	532.1.1 = { change_development_level = 4 }
+	632.1.1 = { change_development_level = 5 }
+	768.1.1 = { change_development_level = 6 }
+	
+	340.1.1 = {
+		holder = quadi_02
+	}
+	374.1.1 = {
+		holder = quadi_03
+	}
+	394.1.1 = {
+		holder = quadi_04
+	}
+	400.1.1 = {
+		holder = quadi_07
+		liege = k_quadi
+	}
+	443.1.1 = {
+		holder = quadi_05
+		liege = k_quadi
+	}
+	459.1.1 = {
+		holder = quadi_06
+		liege = k_bohemia
+	}
+	520.1.1 = {
+		holder = wendish_12
+	}
+	623.1.1 = {
+		holder = moravian_01
+		liege = d_bohemia
+	}
+	741.1.1 = {
+		liege = "d_moravia"
+		holder = 187000
+	}
+}
+
+
+c_brno = {
+
+	340.1.1 = {
+		holder = quadi_03
+		liege = k_quadi
+	}
+	374.1.1 = {
+		holder = quadi_04
+		liege = k_quadi
+	}
+	390.1.1 = {
+		holder = quadi_032
+		liege = k_quadi
+	}
+	400.1.1 = {
+		holder = quadi_07
+		liege = k_quadi
+	}
+	443.1.1 = {
+		holder = quadi_05
+		liege = k_quadi
+	}
+	459.1.1 = {
+		holder = quadi_06
+		liege = k_bohemia
+	}
+	## Langobardi
+	# 520.1.1 = {
+	# 	holder = 190167 # Beleo
+	# 	liege = d_lombards
+	# }
+	532.1.1 = {
+		holder = wendish_11
+	}
+	623.1.1 = {
+		holder = czechs_04
+		liege = d_bohemia
+	}
+	741.1.1 = {
+		liege = "d_moravia"
+		holder = 187000
+	}
+}
+
+
+c_jihlava = {
+
+	340.1.1 = {
+		holder = quadi_02
+	}
+	374.1.1 = {
+		holder = quadi_03
+	}
+	394.1.1 = {
+		holder = quadi_04
+	}
+	469.1.1 = {
+		holder = rugian_10
+		liege = k_rugiland
+	}
+	## Langobardi
+	## Langobardi
+	# 520.1.1 = {
+	# 	holder = 190167 # Beleo
+	# 	liege = d_lombards
+	# }
+	532.1.1 = {
+		holder = wendish_11
+	}
+	623.1.1 = {
+		holder = czechs_04
+		liege = d_bohemia
+	}
+	750.1.1 = {
+		holder = 146177
+		liege = d_moravia
+	}
+}
+
+
+c_znojmo = {
+	361.1.1 = { change_development_level = 2 }
+	476.1.1 = { change_development_level = 3 }
+	532.1.1 = { change_development_level = 4 }
+	632.1.1 = { change_development_level = 5 }
+	768.1.1 = { change_development_level = 6 }
+	
+	340.1.1 = {
+		holder = quadi_02
+	}
+	374.1.1 = {
+		holder = quadi_03
+	}
+	394.1.1 = {
+		holder = quadi_04
+	}
+	434.1.1 = {
+		holder = rugian_02
+		liege = k_hungary
+	}
+	469.1.1 = {
+		holder = rugian_10
+		liege = k_rugiland
+	}
+	532.1.1 = {
+		holder = wendish_11
+	}
+	623.1.1 = {
+		holder = moravian_01
+		liege = d_bohemia
+	}
+	731.1.1 = {
+		liege = "d_visegrad"
+		holder = 146137
+	}
+	751.1.1 = {
+		liege = k_bavaria
+	}
+	751.1.1 = {
+		holder = 190367 #Anniulf
+	}
+}

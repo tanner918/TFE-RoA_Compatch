@@ -1,0 +1,2199 @@
+﻿#### Érainn
+Erainn_01 = { # Fidach
+	name= "Fidach"
+	religion="irish_druidism"
+	culture="gaelic"
+    dynasty = 900100 #Érainn 
+	310.1.1 = {
+		birth = yes
+	}
+	389.1.1 = {
+		death = yes
+	}
+}
+Erainn_02 = { # Crimthann
+	name= "Crimthann"
+	religion="irish_druidism"
+	culture="gaelic"
+    dynasty = 900100 #Érainn 
+    father = Erainn_01 #Fidach
+	324.1.1 = {
+		birth = yes
+	}
+	390.1.1 = {
+		death = yes
+	}
+}
+Erainn_04 = { # Crimthann
+	name= "Finnbar"
+	religion="irish_druidism"
+	culture="gaelic"
+    dynasty = 900100 #Érainn 
+    father = Erainn_01 #Fidach
+	334.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+Erainn_03 = { # Mongfind
+	name= "Mongfind"
+	religion="irish_druidism"
+	culture="gaelic"
+    dynasty = 900100 #Érainn 
+    father = Erainn_01 #Fidach
+    female = yes
+    trait = herbalist
+    trait = deviant
+	trait = sadistic
+	trait = ambitious
+	trait = deceitful
+	345.1.1 = {
+		birth = yes
+	}
+	430.1.1 = {
+		death = yes
+	}
+}
+#Laigin
+Laigin_001 = { # Cu Corb
+	name= "Cu_Corb"
+	religion="irish_druidism"
+	culture="gaelic"
+    dynasty = 9208 #Laigin
+	253.1.1 = {
+		birth = yes
+	}
+	315.1.1 = {
+		death = yes
+	}
+}
+Laigin_002 = { # Nia Corb
+	name= "Nia Corb"
+	religion="irish_druidism"
+	culture="gaelic"
+    dynasty = 9208 #Laigin
+    father = Laigin_001 # Cu Corb
+	283.1.1 = {
+		birth = yes
+	}
+	350.1.1 = {
+		death = yes
+	}
+}
+Laigin_003 = { # Fedelmid
+	name= "Fedelmid"
+	religion="irish_druidism"
+	culture="gaelic"
+    dynasty = 9208 #Laigin
+    father = Laigin_002 # Nia Corb
+	309.1.1 = {
+		birth = yes
+	}
+	372.1.1 = {
+		death = yes
+	}
+}
+Laigin_004 = { # Cathair
+	name= "Cathair"
+	religion="irish_druidism"
+	culture="gaelic"
+    dynasty = 9208 #Laigin
+    father = Laigin_003 # Fedelmid
+	332.1.1 = {
+		birth = yes
+	}
+	401.1.1 = {
+		death = yes
+	}
+}
+Laigin_005 = { # Fiachu
+	name= "Fiachu"
+	religion="irish_druidism"
+	culture="gaelic"
+    dynasty = 9208 #Laigin
+    father = Laigin_004 # Cathair
+	361.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+Laigin_006 = { # BRessal
+	name= "Bressal"
+	religion="irish_druidism"
+	culture="gaelic"
+    dynasty = 9208 #Laigin
+    father = Laigin_005 # Fiachu
+	381.1.1 = {
+		birth = yes
+	}
+	438.1.1 = {
+		death = yes
+	}
+}
+
+#Cénnslach, descendants of the Laigin
+
+83160 = {
+	name = "E_nna" #Énna Cennsalach king of Leinster founder of the Ui Cheinnselaig
+	dynasty = 9208
+	martial = 7
+	diplomacy = 6
+	intrigue = 5
+	stewardship = 4
+	religion = "nicene"
+	culture = "gaelic"
+	father = Laigin_006
+	410.1.1 = {
+		birth = "410.1.1"
+	}
+	450.7.1 = {
+		death = "450.7.1"
+	}
+}
+
+83161 = {
+	name = "Crimthann" #King of Leinster
+	dynasty = 9208
+	martial = 5
+	diplomacy = 5
+	intrigue = 7
+	stewardship = 7
+	religion = "nicene"
+	culture = "gaelic"
+	father = 83160
+	425.1.1 = {
+		birth = "425.1.1"
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	483.7.1 = {
+		death = "483.7.1"
+	}
+}
+
+83162 = {
+	name = "Nath-I_" #King of Leinster
+	dynasty = 9208
+	martial = 5
+	diplomacy = 6
+	intrigue = 7
+	stewardship = 5
+	religion = "chalcedonian"
+	culture = "gaelic"
+	father = 83161
+	451.1.1 = {
+		birth = "451.1.1"
+	}
+	512.7.1 = {
+		death = "512.7.1"
+	}
+}
+
+83163 = {
+	name = "Cormac"
+	dynasty = 9208
+	martial = 5
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 5
+	religion = "chalcedonian"
+	culture = "gaelic"
+	father = 83162
+	490.1.1 = {
+		birth = "490.1.1"
+	}
+	545.7.1 = {
+		death = "545.7.1"
+	}
+}
+
+83164 = {
+	name = "EO_gan" #Eógan Cáech King of Leinster
+	dynasty = 9208
+	martial = 5
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 5
+	religion = "chalcedonian"
+	culture = "gaelic"
+	father = 83162
+	474.1.1 = {
+		birth = "474.1.1"
+	}
+	540.7.1 = {
+		death = "540.7.1"
+	}
+}
+
+#MUnster
+
+###### Vanilla dudes
+
+7254 = {
+	name = "Conall_Cremthainne"
+	dynasty_house = house_british_isles_neill
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 7255
+	429.1.1 = {
+		birth = "429.1.1"
+	}
+	480.1.1 = {
+		death = "480.1.1"
+	}
+}
+
+7256 = {
+	name = "Fergus"
+	dynasty_house = house_british_isles_neill
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 7254
+	460.1.1 = {
+		birth = "460.1.1"
+	}
+	525.1.1 = {
+		death = "525.1.1"
+	}
+}
+
+7258 = {
+	name = "Diarmait"
+	dynasty_house = house_british_isles_neill
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 7256
+	505.1.1 = {
+		birth = "505.1.1"
+	}
+	565.1.1 = {
+		death = "565.1.1"
+	}
+}
+
+159332 = {
+	name = "Fiachra_Suighe" #
+	dynasty_house = house_british_isles_dalfiachrachsuighe #Dal Fiachrach Suighe
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 159331
+	130.1.1 = {
+		birth = "130.1.1"
+	}
+	181.7.1 = {
+		death = "181.7.1"
+	}
+}
+159333 = {
+	name = "Cairpre_Rigronn" #
+	dynasty_house = house_british_isles_dalfiachrachsuighe #Dal Fiachrach Suighe
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 159332
+	150.1.1 = {
+		birth = "150.1.1"
+	}
+	201.7.1 = {
+		death = "201.7.1"
+	}
+}
+159334 = {
+	name = "Corp" #
+	dynasty_house = house_british_isles_dalfiachrachsuighe #Dal Fiachrach Suighe
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 159333
+	170.1.1 = {
+		birth = "170.1.1"
+	}
+	231.7.1 = {
+		death = "231.7.1"
+	}
+}
+159335 = {
+	name = "Mes_Gegra" #
+	dynasty_house = house_british_isles_dalfiachrachsuighe #Dal Fiachrach Suighe
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 159334
+	190.1.1 = {
+		birth = "190.1.1"
+	}
+	251.7.1 = {
+		death = "251.7.1"
+	}
+}
+159336 = {
+	name = "Mes_Corp" #
+	dynasty_house = house_british_isles_dalfiachrachsuighe #Dal Fiachrach Suighe
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 159335
+	210.1.1 = {
+		birth = "210.1.1"
+	}
+	269.7.1 = {
+		death = "269.7.1"
+	}
+}
+159337 = {
+	name = "Art_Corp" #
+	dynasty_house = house_british_isles_dalfiachrachsuighe #Dal Fiachrach Suighe
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 159336
+	230.1.1 = {
+		birth = "230.1.1"
+	}
+	271.7.1 = {
+		death = "271.7.1"
+	}
+}
+83600 = { #Debated existence, and probably part of the Clanna Dergthened "dynasty"
+	name = "EO_gan_Taidlech" #AKA Mug Nuadat
+	religion = "irish_druidism"
+	culture = "gaelic"
+	140.1.1 = {
+		birth = "140.1.1"
+	}
+	200.1.1 = {
+		death = "200.1.1"
+	}
+}
+
+
+83601 = { #Probably part of the Clanna Dergthened "dynasty"
+	name = "Ailill_O_lomm"
+	father = 83600
+	religion = "irish_druidism"
+	culture = "gaelic"
+	175.1.1 = {
+		birth = "175.1.1"
+	}
+	195.1.1 = {
+		add_spouse = 83602
+	}
+	240.1.1 = {
+		death = "240.1.1"
+	}
+}
+
+83603 = {
+	name = "EO_gan_MO_r"
+	father = 83601
+	mother = 83602
+	dynasty_house = house_british_isles_eoganachta
+	religion = "irish_druidism"
+	culture = "gaelic"
+	197.1.1 = {
+		birth = "197.1.1"
+	}
+	250.1.1 = {
+		death = "250.1.1"
+	}
+}
+
+83604 = {
+	name = "Fiachu_Mullethan"
+	father = 83603
+	dynasty_house = house_british_isles_eoganachta
+	religion = "irish_druidism"
+	culture = "gaelic"
+	220.1.1 = {
+		birth = "220.1.1"
+	}
+	270.1.1 = {
+		death = "270.1.1"
+	}
+}
+
+83605 = {
+	name = "Aillil_Fland_Becc"
+	father = 83604
+	dynasty_house = house_british_isles_eoganachta
+	religion = "irish_druidism"
+	culture = "gaelic"
+	250.1.1 = {
+		birth = "250.1.1"
+	}
+	330.1.1 = {
+		death = "330.1.1"
+	}
+}
+
+83606 = {
+	name = "Luigthech"
+	father = 83605
+	dynasty_house = house_british_isles_eoganachta
+	religion = "irish_druidism"
+	culture = "gaelic"
+	300.1.1 = {
+		birth = "300.1.1"
+	}
+	370.1.1 = {
+		death = "370.1.1"
+	}
+}
+
+83607 = {
+	name = "Conall_Corc"
+	father = 83606
+	dynasty_house = house_british_isles_eoganachta
+	religion = "irish_druidism"
+	culture = "gaelic"
+	340.1.1 = {
+		birth = "340.1.1"
+	}
+	420.1.1 = {
+		death = "420.1.1"
+	}
+}
+
+83608 = {
+	name = "Nad-Froich"
+	father = 83607
+	dynasty_house = house_british_isles_eoganachta
+	religion = "irish_druidism"
+	culture = "gaelic"
+	380.1.1 = {
+		birth = "380.1.1"
+	}
+	450.1.1 = {
+		death = "450.1.1"
+	}
+}
+
+83610 = {
+	name = "Eochaid"
+	father = 83609
+	dynasty_house = house_british_isles_eoganacht_chaisil
+	religion = "irish_druidism"
+	culture = "gaelic"
+	470.1.1 = {
+		birth = "470.1.1"
+	}
+	520.1.1 = {
+		death = "520.1.1"
+	}
+}
+
+83611 = {
+	name = "Feidelmid"
+	father = 83609
+	dynasty_house = house_british_isles_eoganacht_chaisil
+	religion = "irish_druidism"
+	culture = "gaelic"
+	472.1.1 = {
+		birth = "472.1.1"
+	}
+	533.1.1 = {
+		death = "533.1.1"
+	}
+}
+
+
+83612 = {
+	name = "Bressal"
+	father = 83609
+	dynasty_house = house_british_isles_eoganacht_chaisil
+	religion = "irish_druidism"
+	culture = "gaelic"
+	474.1.1 = {
+		birth = "474.1.1"
+	}
+	544.1.1 = {
+		death = "544.1.1"
+	}
+}
+
+
+83613 = {
+	name = "Ailill"
+	father = 83610
+	dynasty_house = house_british_isles_eoganacht_chaisil
+	religion = "irish_druidism"
+	culture = "gaelic"
+	490.1.1 = {
+		birth = "490.1.1"
+	}
+	545.1.1 = {
+		death = "555.1.1"
+	}
+}
+
+
+83614 = {
+	name = "EO_gan"
+	father = 83610
+	dynasty_house = house_british_isles_eoganacht_chaisil
+	religion = "irish_druidism"
+	culture = "gaelic"
+	492.1.1 = {
+		birth = "492.1.1"
+	}
+	545.1.1 = {
+		death = "555.1.1"
+	}
+}
+
+83615 = {
+	name = "Crimthann"
+	father = 83613
+	dynasty_house = house_british_isles_eoganacht_chaisil
+	religion = "irish_druidism"
+	culture = "gaelic"
+	520.1.1 = {
+		birth = "520.1.1"
+	}
+	545.1.1 = {
+		dynasty = 9226 #Eóganacht-Airthir Chliach
+	}
+	595.1.1 = {
+		death = "595.1.1"
+	}
+}
+
+
+83616 = {
+	name = "Crimthann"
+	father = 83614
+	dynasty_house = house_british_isles_eoganacht_chaisil
+	religion = "irish_druidism"
+	culture = "gaelic"
+	521.1.1 = {
+		birth = "521.1.1"
+	}
+	545.1.1 = {
+		dynasty = 9227 #Eóganacht-Glendamnach
+	}
+	562.1.1 = {
+		death = "562.1.1"
+	}
+}
+
+83693 = {
+	name = "Mac-Cass"
+	father = 83607 #Conall Corc
+	dynasty_house = house_british_isles_eoganachta
+	religion = "irish_druidism"
+	culture = "gaelic"
+	384.1.1 = {
+		birth = "384.1.1"
+	}
+	460.1.1 = {
+		death = "460.1.1"
+	}
+}
+
+83694 = {
+	name = "Echu"
+	father = 83693
+	dynasty_house = house_british_isles_eoganachta
+	religion = "irish_druidism"
+	culture = "gaelic"
+	430.1.1 = {
+		birth = "430.1.1"
+	}
+	460.1.1 = {
+		dynasty = 9228 #Eóganacht-Raithlind
+	}
+	500.1.1 = {
+		death = "500.1.1"
+	}
+}
+
+83695 = {
+	name = "Crimthann"
+	father = 83694
+	dynasty = 9228
+	religion = "irish_druidism"
+	culture = "gaelic"
+	484.1.1 = {
+		birth = "484.1.1"
+	}
+	550.1.1 = {
+		death = "550.1.1"
+	}
+}
+
+
+83735 = {
+	name = "Ailill"
+	father = 83608 #Nad Froich
+	dynasty_house = house_british_isles_eoganachta
+	religion = "irish_druidism"
+	culture = "gaelic"
+	440.1.1 = {
+		birth = "440.1.1"
+	}
+	490.1.1 = {
+		death = "490.1.1"
+	}
+}
+
+83778 = {
+	name = "Coirpe_Luachra"
+	father = 83607 #Conall Corcc
+	dynasty_house = house_british_isles_eoganachta
+	religion = "irish_druidism"
+	culture = "gaelic"
+	400.1.1 = {
+		birth = "400.1.1"
+	}
+	470.1.1 = {
+		death = "470.1.1"
+	}
+}
+
+83779 = {
+	name = "Maithne"
+	father = 83778
+	dynasty_house = house_british_isles_eoganachta
+	religion = "irish_druidism"
+	culture = "gaelic"
+	430.1.1 = {
+		birth = "430.1.1"
+	}
+	460.1.1 = {
+		dynasty = 9230 #Eóganacht-Locha Léin
+	}
+	490.1.1 = {
+		death = "490.1.1"
+	}
+}
+
+83780 = {
+	name = "DauI__Iarlaithe"
+	father = 83779
+	dynasty = 9230
+	religion = "irish_druidism"
+	culture = "gaelic"
+	460.1.1 = {
+		birth = "460.1.1"
+	}
+	510.1.1 = {
+		death = "510.1.1"
+	}
+}
+
+
+
+83782 = {
+	name = "Cobthach"
+	father = 83780
+	dynasty = 9230
+	religion = "irish_druidism"
+	culture = "gaelic"
+	490.1.1 = {
+		birth = "490.1.1"
+	}
+	530.1.1 = {
+		death = "530.1.1"
+	}
+}
+160272 = {
+	name = "Blat" #mac Tháil Cass
+	dynasty = 100009
+	martial = 5
+	diplomacy = 5
+	intrigue = 6
+	stewardship = 7
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 160273
+	450.1.1 = {
+		birth = "450.1.1"
+	}
+	515.7.1 = {
+		death = "515.7.1"
+	}
+}
+160273 = {
+	name = "TA_l_Cas" # mac Conaill Echluaith
+	dynasty = 100009
+	martial = 5
+	diplomacy = 5
+	intrigue = 6
+	stewardship = 7
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 160274
+	400.1.1 = {
+		birth = "400.1.1"
+	}
+	458.7.1 = {
+		death = "458.7.1"
+	}
+}
+160274 = {
+	name = "Conall_Echluaith" # mac Luigdech Mind
+	dynasty = 100009
+	martial = 5
+	diplomacy = 5
+	intrigue = 6
+	stewardship = 7
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 160275
+	365.1.1 = {
+		birth = "365.1.1"
+	}
+	450.7.1 = {
+		death = "450.7.1"
+	}
+}
+160275 = {
+	name = "Luigdech_Mind" # mac Óengusa Tirich
+	dynasty = 100009
+	martial = 5
+	diplomacy = 5
+	intrigue = 6
+	stewardship = 7
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 160276
+	320.1.1 = {
+		birth = "320.1.1"
+	}
+	412.7.1 = {
+		death = "412.7.1"
+	}
+}
+160276 = {
+	name = "O_engus_TI_rich" # mac Fir Choirb
+	dynasty = 100009
+	martial = 5
+	diplomacy = 5
+	intrigue = 6
+	stewardship = 7
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 160277
+	280.1.1 = {
+		birth = "280.1.1"
+	}
+	360.7.1 = {
+		death = "360.7.1"
+	}
+}
+160277 = {
+	name = "Fir_Corb" # mac Moga Coirb
+	dynasty = 100009
+	martial = 5
+	diplomacy = 5
+	intrigue = 6
+	stewardship = 7
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 160278
+	245.1.1 = {
+		birth = "245.1.1"
+	}
+	299.1.1 = {
+		death = "299.1.1"
+	}
+}
+160278 = {
+	name = "Mog_Corb" # mac Cormaic Caiss
+	dynasty = 100009
+	martial = 5
+	diplomacy = 5
+	intrigue = 6
+	stewardship = 7
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 160279
+	220.1.1 = {
+		birth = "220.1.1"
+	}
+	292.1.1 = {
+		death = "292.1.1"
+	}
+}
+160279 = {
+	name = "Cormac_Cas" #
+	dynasty = 100009
+	martial = 5
+	diplomacy = 5
+	intrigue = 6
+	stewardship = 7
+	religion = "irish_druidism"
+	culture = "gaelic"
+	200.1.1 = {
+		birth = "200.1.1"
+	}
+	250.1.1 = {
+		death = "250.1.1"
+	}
+}
+
+160176 = {
+	name = "FI_atach_Finn"
+	dynasty = 819
+	martial = 6
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 5
+	religion = "irish_druidism"
+	culture = "gaelic"
+	trait = brave
+	trait = education_martial_3
+	2.1.1 = {
+		birth = "2.1.1"
+	}
+	39.1.1 = {
+		death = "39.1.1"
+	}
+}
+160177 = {
+	name = "E_rimO_n"
+	dynasty = 819
+	martial = 6
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 5
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 160176
+	20.1.1 = {
+		birth = "20.1.1"
+	}
+	70.1.1 = {
+		death = "70.1.1"
+	}
+}
+160178 = {
+	name = "Findchad"
+	dynasty = 819
+	martial = 6
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 5
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 160177
+	55.1.1 = {
+		birth = "55.1.1"
+	}
+	100.1.1 = {
+		death = "100.1.1"
+	}
+}
+160179 = {
+	name = "Imchad"
+	dynasty = 819
+	martial = 6
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 5
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 160178
+	90.1.1 = {
+		birth = "90.1.1"
+	}
+	160.1.1 = {
+		death = "160.1.1"
+	}
+}
+160180 = {
+	name = "Fergus_DubdE_tach"
+	dynasty = 819
+	martial = 6
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 5
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 160179
+	130.1.1 = {
+		birth = "130.1.1"
+	}
+	192.1.1 = {
+		death = "192.1.1"
+	}
+}
+160181 = {
+	name = "O_engus_Finn"
+	dynasty = 819
+	martial = 6
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 5
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 160180
+	160.1.1 = {
+		birth = "160.1.1"
+	}
+	222.1.1 = {
+		death = "222.1.1"
+	}
+}
+160182 = {
+	name = "Lugaid"
+	dynasty = 819
+	martial = 6
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 5
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 160181
+	190.1.1 = {
+		birth = "190.1.1"
+	}
+	252.1.1 = {
+		death = "252.1.1"
+	}
+}
+160183 = {
+	name = "Miennach"
+	dynasty = 819
+	martial = 6
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 5
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 160182
+	230.1.1 = {
+		birth = "230.1.1"
+	}
+	290.1.1 = {
+		death = "290.1.1"
+	}
+}
+160184 = {
+	name = "Dubthach"
+	dynasty = 819
+	martial = 6
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 5
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 160183
+	280.1.1 = {
+		birth = "280.1.1"
+	}
+	360.1.1 = {
+		death = "360.1.1"
+	}
+}
+160185 = {
+	name = "Dallan"
+	dynasty = 819
+	martial = 6
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 5
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 160184
+	320.1.1 = {
+		birth = "320.1.1"
+	}
+	392.1.1 = {
+		death = "392.1.1"
+	}
+}
+160186 = {
+	name = "Forgg"
+	dynasty = 819
+	martial = 6
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 5
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 160185
+	360.1.1 = {
+		birth = "360.1.1"
+	}
+	420.1.1 = {
+		death = "420.1.1"
+	}
+}
+
+#### Nial Family
+
+7255 = {
+	name = "Niall"
+	dynasty = 9217
+	martial = 11
+	diplomacy = 12
+	intrigue = 9
+	stewardship = 12
+	trait = arrogant
+	trait = education_martial_2
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 83432
+    mother = BVicarius_02 # Carina
+	395.1.1 = {
+		birth = "395.1.1"
+	}
+	418.1.1 = {
+		dynasty_house = house_british_isles_neill #Ua Niall Noigiallaigh
+		give_nickname = nick_of_the_nine_hostages
+		trait = sadistic
+		trait = ambitious
+		trait = lustful
+	}
+	450.1.1 = {
+		death = "450.1.1"
+	}
+}
+
+83426 = {
+	name = "Conn" #Conn Cétchathach
+	dynasty = 9217
+	martial = 7
+	diplomacy = 7
+	intrigue = 7
+	stewardship = 11
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 159331
+	120.1.1 = {
+		birth = "120.1.1"
+	}
+	201.7.1 = {
+		death = "201.7.1"
+	}
+}
+
+83427 = {
+	name = "Art" #Art Óenfher
+	dynasty = 9217
+	martial = 7
+	diplomacy = 9
+	intrigue = 7
+	stewardship = 7
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 83426
+	165.1.1 = {
+		birth = "165.1.1"
+	}
+	235.7.1 = {
+		death = "235.7.1"
+	}
+}
+
+83428 = {
+	name = "Cormac" #Cormac mac Airt
+	dynasty = 9217
+	martial = 7
+	diplomacy = 9
+	intrigue = 7
+	stewardship = 11
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 83427
+	200.1.1 = {
+		birth = "200.1.1"
+	}
+	277.7.1 = {
+		death = "277.7.1"
+	}
+}
+
+83429 = {
+	name = "Cairpre" #Caipre mac Cormaicc
+	dynasty = 9217
+	martial = 7
+	diplomacy = 9
+	intrigue = 7
+	stewardship = 11
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 83428
+	249.1.1 = {
+		birth = "249.1.1"
+	}
+	325.7.1 = {
+		death = "325.7.1"
+	}
+}
+
+83430 = {
+	name = "Fiachu" #Fiachu Sraibtine
+	dynasty = 9217
+	martial = 7
+	diplomacy = 7
+	intrigue = 7
+	stewardship = 7
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 83429
+	290.1.1 = {
+		birth = "290.1.1"
+	}
+	355.7.1 = {
+		death = "355.7.1"
+	}
+}
+colla_01 = {
+	name = "Eochaid" #Fiachu Sraibtine
+	dynasty_house = house_colla
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 83429
+	298.1.1 = {
+		birth = "298.1.1"
+	}
+	355.7.1 = {
+		death = "355.7.1"
+	}
+}
+colla_02 = {
+	name = "Cairell" #Fiachu Sraibtine
+	dynasty_house = house_colla
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = colla_01
+	312.1.1 = {
+		birth = "312.1.1"
+	}
+	355.7.1 = {
+		death = "355.7.1"
+	}
+}
+colla_03 = {
+	name = "Muiredach" #Fiachu Sraibtine
+	dynasty_house = house_colla
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = colla_01
+	314.1.1 = {
+		birth = "314.1.1"
+	}
+	355.7.1 = {
+		death = "355.7.1"
+	}
+}
+colla_04 = {
+	name = "A_ed" #Fiachu Sraibtine
+	dynasty_house = house_colla
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = colla_01
+	314.1.1 = {
+		birth = "314.1.1"
+	}
+	355.7.1 = {
+		death = "355.7.1"
+	}
+}
+
+
+83431 = {
+	name = "Muiredach" #Muiredach Tirech
+	dynasty = 9217
+	martial = 7
+	diplomacy = 7
+	intrigue = 7
+	stewardship = 11
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 83430
+	340.1.1 = {
+		birth = "340.1.1"
+	}
+	390.7.1 = {
+		death = "390.7.1"
+	}
+}
+
+83432 = {
+	name = "Eochaid" #Eochaid Mugmedón
+	dynasty_house = house_connachta
+	martial = 7
+	diplomacy = 7
+	intrigue = 7
+	stewardship = 11
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 83431
+	dna = Connachta_006
+	362.1.1 = {
+		birth = "362.1.1"
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+    361.1.1 = {
+    	add_spouse = Erainn_03 #Mongfind
+    }
+	420.7.1 = {
+		death = "420.7.1"
+	}
+}
+
+83433 = {
+	name = "BriO_n"
+	dynasty_house = house_connachta
+	martial = 7
+	diplomacy = 7
+	intrigue = 7
+	stewardship = 11
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 83432 #Eochaid Mugmedón
+	390.1.1 = {
+		birth = "390.1.1"
+	}
+	440.7.1 = {
+		death = "440.7.1"
+	}
+}
+
+83434 = {
+	name = "Fiachra"
+	dynasty_house = house_connachta
+	martial = 7
+	diplomacy = 7
+	intrigue = 7
+	stewardship = 11
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 83432 #Eochaid Mugmedón
+	392.1.1 = {
+		birth = "392.1.1"
+	}
+	445.7.1 = {
+		death = "445.7.1"
+	}
+}
+fiachra_01 = {
+	name = "Amalgaid"
+	dynasty_house = house_connachta
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 83434 #Fiachra
+	418.1.1 = {
+		birth = "418.1.1"
+	}
+	467.7.1 = {
+		death = "467.7.1"
+	}
+}
+fiachra_02 = {
+	name = "Nath-I_"
+	dynasty_house = house_connachta
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 83434 #Fiachra
+	419.1.1 = {
+		birth = "419.1.1"
+	}
+	452.7.1 = {
+		death = "452.7.1"
+	}
+}
+fiachra_03 = {
+	name = "Alill"
+	dynasty_house = house_connachta
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = fiachra_02 #Nath
+	434.1.1 = {
+		birth = "434.1.1"
+	}
+	482.7.1 = {
+		death = "482.7.1"
+	}
+}
+
+
+83436 = {
+	name = "DauI__Tenga_Uma"
+	dynasty_house = house_connachta
+	martial = 7
+	diplomacy = 7
+	intrigue = 7
+	stewardship = 11
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 83433 #Brión mac Echdach
+	430.1.1 = {
+		birth = "430.1.1"
+	}
+	502.7.1 = {
+		death = "502.7.1"
+	}
+}
+
+159331 = {
+	name = "Fedlimid_Rechtmar" #
+	dynasty = 9217
+	religion = "irish_druidism"
+	culture = "gaelic"
+	100.1.1 = {
+		birth = "100.1.1"
+	}
+	171.7.1 = {
+		death = "171.7.1"
+	}
+}
+
+
+83602 = {
+	name = "Sadb"
+	female = yes
+	dynasty = 9217
+	father = 83426 #Conn Cétchathach
+	religion = "irish_druidism"
+	culture = "gaelic"
+	179.1.1 = {
+		birth = "179.1.1"
+	}
+	210.1.1 = { #We don't know when Eógan Mór (83603) founded the house
+		dynasty_house = house_british_isles_eoganachta
+	}
+	255.1.1 = {
+		death = "255.1.1"
+	}
+}
+
+166468 = {
+	name = "Loarn"
+	dynasty = 9217
+	martial = 7
+	diplomacy = 7
+	intrigue = 7
+	stewardship = 7
+	religion = "nicene"
+	culture = "gaelic"
+	father = 83573 #Erc son of Eochaid Mugmedón
+	450.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	480.1.1 = {
+		dynasty_house = house_british_isles_loairn
+	}
+	497.1.1 = {
+		death = yes
+	}
+}
+
+166469 = {
+	name = "Comgall"
+	dynasty = 9217
+	martial = 7
+	diplomacy = 7
+	intrigue = 7
+	stewardship = 7
+	religion = "chalcedonian"
+	culture = "gaelic"
+	father = 83575 #Domangart Réti mac Fergusa Mór
+	507.1.1 = {
+		birth = yes
+	}
+	540.1.1 = {
+		death = yes
+	}
+}
+
+166470 = {
+	name = "Conall"
+	dynasty = 9217
+	martial = 7
+	diplomacy = 7
+	intrigue = 7
+	stewardship = 7
+	religion = "chalcedonian"
+	culture = "gaelic"
+	father = 166469 #Comgall
+	544.1.1 = {
+		birth = yes
+	}
+	574.1.1 = {
+		death = yes
+	}
+}
+
+166471 = {
+	name = "Connad" #Cerr
+	dynasty = 9217
+	martial = 7
+	diplomacy = 7
+	intrigue = 7
+	stewardship = 7
+	religion = "chalcedonian"
+	culture = "gaelic"
+	father = 166470 #Conall
+	568.1.1 = {
+		birth = yes
+	}
+	629.1.1 = {
+		death = yes
+	}
+}
+
+166472 = {
+	name = "Ferchar"
+	dynasty = 9217
+	martial = 7
+	diplomacy = 7
+	intrigue = 7
+	stewardship = 7
+	religion = "chalcedonian"
+	culture = "gaelic"
+	father = 166470 #Connad
+	604.1.1 = {
+		birth = yes
+	}
+	649.1.1 = {
+		death = yes
+	}
+}
+83573 = {
+	name = "Erc"
+	dynasty = 9217
+	martial = 7
+	diplomacy = 7
+	intrigue = 7
+	stewardship = 11
+	religion = "nicene"
+	culture = "gaelic"
+	father = 83432 #Eochaid Mugmedón
+	405.1.1 = {
+		birth = "405.1.1"
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	488.7.1 = {
+		death = "488.7.1"
+	}
+}
+
+83574 = {
+	name = "Fergus" #Mór
+	dynasty = 9217
+	martial = 7
+	diplomacy = 7
+	intrigue = 7
+	stewardship = 7
+	religion = "chalcedonian"
+	culture = "gaelic"
+	father = 83573 #Erc son of Eochaid Mugmedón
+	457.1.1 = {
+		birth = "457.1.1"
+	}
+	501.1.1 = {
+		death = "501.1.1"
+	}
+}
+
+83575 = {
+	name = "Domangart" #Réti
+	dynasty = 9217
+	martial = 7
+	diplomacy = 7
+	intrigue = 7
+	stewardship = 7
+	religion = "chalcedonian"
+	culture = "gaelic"
+	father = 83574 #Fergus Mór mac Eirc
+	487.1.1 = {
+		birth = "487.1.1"
+	}
+	507.1.1 = {
+		death = "507.1.1"
+	}
+}
+
+83576 = {
+	name = "GabrA_n"
+	dynasty = 9217
+	martial = 7
+	diplomacy = 7
+	intrigue = 7
+	stewardship = 7
+	religion = "chalcedonian"
+	culture = "gaelic"
+	father = 83575 #Domangart Réti mac Fergusa Mór
+	502.1.1 = {
+		birth = "502.1.1"
+	}
+	560.1.1 = {
+		death = "560.1.1"
+	}
+}
+
+83577 = {
+	name = "A_edA_n" #Áedán mac Gabráin
+	dynasty = 9217
+	martial = 7
+	diplomacy = 7
+	intrigue = 7
+	stewardship = 7
+	religion = "chalcedonian"
+	culture = "gaelic"
+	father = 83576 #Gabrán mac Domangairt
+	550.1.1 = {
+		birth = "550.1.1"
+	}
+	570.1.1 = {
+		dynasty_house = house_british_isles_gabrain #Gabrán
+	}
+	606.1.1 = {
+		death = "606.1.1"
+	}
+}
+
+83435 = {
+	name = "Ailill"
+	dynasty = 9217
+	martial = 7
+	diplomacy = 7
+	intrigue = 7
+	stewardship = 11
+	religion = "nicene"
+	culture = "gaelic"
+	father = 83432 #Eochaid Mugmedón
+	394.1.1 = {
+		birth = "394.1.1"
+	}
+	446.7.1 = {
+		death = "446.7.1"
+	}
+}
+
+83437 = {
+	name = "EO_gan" #Eógan Srem
+	dynasty = 9217
+	martial = 7
+	diplomacy = 7
+	intrigue = 7
+	stewardship = 11
+	religion = "chalcedonian"
+	culture = "gaelic"
+	father = 83436 #Daui Tenga Uma
+	470.1.1 = {
+		birth = "470.1.1"
+	}
+	509.7.1 = {
+		death = "509.7.1"
+	}
+}
+
+83438 = {
+	name = "Fergus"
+	dynasty = 9217
+	martial = 7
+	diplomacy = 7
+	intrigue = 7
+	stewardship = 11
+	religion = "chalcedonian"
+	culture = "gaelic"
+	father = 83437 #Eógan Srem
+	499.1.1 = {
+		birth = "499.1.1"
+	}
+	520.1.1 = {
+		dynasty = 9218 #Ua Briuin Bréifne
+	}
+	544.7.1 = {
+		death = "544.7.1"
+	}
+}
+
+83439 = {
+	name = "Muiredach" #Muiredach Mál
+	dynasty = 9217
+	martial = 7
+	diplomacy = 7
+	intrigue = 7
+	stewardship = 11
+	religion = "chalcedonian"
+	culture = "gaelic"
+	father = 83437 #Eógan Srem
+	502.1.1 = {
+		birth = "502.1.1"
+	}
+	520.1.1 = {
+		dynasty = 9216 #Ua Briuin Ai
+	}
+	549.7.1 = {
+		death = "549.7.1"
+	}
+}
+83444 = {
+	name = "Senach"
+	dynasty = 9217
+	martial = 7
+	diplomacy = 7
+	intrigue = 7
+	stewardship = 5
+	religion = "chalcedonian"
+	culture = "gaelic"
+	father = 83436 #Daui Tenga Uma
+	472.1.1 = {
+		birth = "472.1.1"
+	}
+	506.7.1 = {
+		death = "506.7.1"
+	}
+}
+
+83445 = {
+	name = "A_ed"
+	dynasty = 9217
+	martial = 7
+	diplomacy = 7
+	intrigue = 7
+	stewardship = 5
+	religion = "chalcedonian"
+	culture = "gaelic"
+	father = 83444
+	498.1.1 = {
+		birth = "498.1.1"
+	}
+	520.1.1 = {
+		dynasty_house = house_british_isles_gabrain #Ua Briuin Seóla
+	}
+	574.7.1 = {
+		death = "574.7.1"
+	}
+}
+#### Kings of Munster
+
+
+159317 = {
+	name = "Aed_Brosc"
+	dynasty_house = house_british_isles_dalfiachrachsuighe #Dal Fiachrach Suighe
+	martial = 7
+	religion = "nicene"
+	culture = "gaelic"
+	trait = education_martial_2
+	father = 159339
+	320.1.1 = {
+		birth = "320.1.1"
+	}
+	391.1.1 = {
+		death = "391.1.1"
+	}
+}
+159318 = {
+	name = "Urb"
+	dynasty_house = house_british_isles_dalfiachrachsuighe #Dal Fiachrach Suighe
+	religion = "nicene"
+	culture = "gaelic"
+	father = 159317
+	340.1.1 = {
+		birth = "340.1.1"
+	}
+	407.1.1 = {
+		death = "407.1.1"
+	}
+}
+159319 = {
+	name = "Cormac"
+	dynasty_house = house_british_isles_dalfiachrachsuighe #Dal Fiachrach Suighe
+	religion = "nicene"
+	culture = "gaelic"
+	father = 159318
+	360.1.1 = {
+		birth = "360.1.1"
+	}
+	420.1.1 = {
+		death = "420.1.1"
+	}
+}
+159320 = {
+	name = "Anlach"
+	dynasty_house = house_british_isles_dalfiachrachsuighe #Dal Fiachrach Suighe
+	religion = "nicene"
+	culture = "gaelic"
+	father = 159319
+	390.1.1 = {
+		birth = "390.1.1"
+	}
+	415.1.1 = {
+		add_spouse = 159815
+	}
+	450.1.1 = {
+		death = "450.1.1"
+	}
+}
+159321 = {
+	name = "Triffin"
+	dynasty_house = house_british_isles_dalfiachrachsuighe #Dal Fiachrach Suighe
+	religion = "nicene"
+	culture = "gaelic"
+	father = 159317
+	385.1.1 = {
+		birth = "385.1.1"
+	}
+	437.1.1 = {
+		add_spouse = 159820
+	}
+	445.1.1 = {
+		death = "445.1.1"
+	}
+}
+159322 = {
+	name = "Aergul" #Aircol
+	dynasty_house = house_british_isles_dyfed #Dyfed
+	religion = "nicene"
+	culture = "gaelic"
+	father = 159321
+	mother = 159820
+	437.1.1 = {
+		birth = "437.1.1"
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	495.1.1 = {
+		death = "495.1.1"
+	}
+}
+
+159338 = {
+	name = "Eochaid_Allmuir" #
+	dynasty_house = house_british_isles_dalfiachrachsuighe #Dal Fiachrach Suighe
+	religion = "irish_druidism"
+	culture = "gaelic"
+	father = 159337
+	250.1.1 = {
+		birth = "250.1.1"
+	}
+	321.7.1 = {
+		death = "321.7.1"
+	}
+}
+159339 = {
+	name = "Corath" #
+	dynasty_house = house_british_isles_dalfiachrachsuighe #Dal Fiachrach Suighe
+	religion = "nicene"
+	culture = "gaelic"
+	father = 159338
+	280.1.1 = {
+		birth = "280.1.1"
+	}
+	341.7.1 = {
+		death = "341.7.1"
+	}
+}
+
+
+83609 = {
+	name = "O_engus"
+	father = 83608
+	dynasty_house = house_british_isles_eoganachta
+	religion = "nicene"
+	culture = "gaelic"
+	445.1.1 = {
+		birth = "445.1.1"
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	450.1.1 = {
+		dynasty_house = house_british_isles_eoganacht_chaisil #Eóganacht-Chaisil
+	}
+	492.1.1 = {
+		death = "492.1.1"
+	}
+}
+
+83736 = {
+	name = "Crimthann"
+	father = 83735 #Ailill son of Nad Froich
+	dynasty_house = house_british_isles_eoganachta
+	religion = "chalcedonian"
+	culture = "gaelic"
+	460.1.1 = {
+		birth = "460.1.1"
+	}
+	492.1.1 = {
+		death = "492.1.1"
+	}
+}
+
+83737 = {
+	name = "E_ndae"
+	father = 83736
+	dynasty_house = house_british_isles_eoganachta
+	religion = "chalcedonian"
+	culture = "gaelic"
+	480.1.1 = {
+		birth = "480.1.1"
+	}
+	492.1.1 = {
+		dynasty = 9229 #Eóganacht-Áine
+	}
+	551.1.1 = {
+		death = "551.1.1"
+	}
+}
+
+160282 = {
+	name = "Muiredach_Muinderg"
+	dynasty = 819
+	martial = 6
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 5
+	religion = "nicene"
+	culture = "gaelic"
+	father = 160186
+	400.1.1 = {
+		birth = "400.1.1"
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	489.1.1 = {
+		death = "489.1.1"
+	}
+}
+160187 = {
+	name = "Cairell_Coscrach"
+	dynasty = 819
+	martial = 6
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 5
+	religion = "nicene"
+	culture = "gaelic"
+	father = 160282
+	450.1.1 = {
+		birth = "450.1.1"
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	532.1.1 = {
+		death = "532.1.1"
+	}
+}
+160271 = {
+	name = "CA_rthind" #mac Blait
+	dynasty = 100009
+	martial = 5
+	diplomacy = 5
+	intrigue = 6
+	stewardship = 7
+	religion = "chalcedonian"
+	culture = "gaelic"
+	father = 160272
+	495.1.1 = {
+		birth = "495.1.1"
+	}
+	540.1.1 = {
+		death = "540.1.1"
+	}
+}
+166361 = {
+	name = "Doi"
+	dynasty_house = house_british_isles_neill
+	religion = "chalcedonian"
+	culture = "gaelic"
+	father = 7252
+	455.1.1 = {
+		birth = "455.1.1"
+	}
+	502.1.1 = {
+		death = "502.1.1"
+	}
+}
+
+166362 = {
+	name = "Dungal"
+	dynasty_house = house_british_isles_neill
+	religion = "chalcedonian"
+	culture = "gaelic"
+	father = 166361
+	473.1.1 = {
+		birth = "473.1.1"
+	}
+	513.1.1 = {
+		death = "513.1.1"
+	}
+}
+
+166353 = {
+	name = "E_nna"
+	dynasty_house = house_british_isles_neill
+	religion = "chalcedonian"
+	culture = "gaelic"
+	father = 7252
+	460.1.1 = {
+		birth = "460.1.1"
+	}
+	511.1.1 = {
+		death = "511.1.1"
+	}
+}
+
+166354 = {
+	name = "Melge"
+	dynasty_house = house_british_isles_neill
+	religion = "chalcedonian"
+	culture = "gaelic"
+	father = 166353
+	483.1.1 = {
+		birth = "483.1.1"
+	}
+	519.1.1 = {
+		death = "519.1.1"
+	}
+}
+
+166334 = {
+	name = "Brenan"
+	dynasty_house = house_british_isles_neill
+	religion = "chalcedonian"
+	culture = "gaelic"
+	father = 7251
+	485.1.1 = {
+		birth = "485.1.1"
+	}
+	550.1.1 = {
+		death = "550.1.1"
+	}
+}
+
+166129 = {
+	name = "Fedlimid"
+	dynasty_house = house_british_isles_neill
+	religion = "chalcedonian"
+	culture = "gaelic"
+	father = 7251
+	480.1.1 = {
+		birth = "480.1.1"
+	}
+	510.1.1 = {
+		add_spouse = 166130
+	}
+	540.1.1 = {
+		death = "540.1.1"
+	}
+}
+
+166130 = {
+	name = "Eithne"
+	female = yes
+	religion = "chalcedonian"
+	culture = "gaelic"
+	father = 166362
+	490.1.1 = {
+		birth = "490.1.1"
+	}
+	530.1.1 = {
+		death = "530.1.1"
+	}
+}
+
+7250 = {
+	name = "Senta"
+	dynasty_house = house_british_isles_neill
+	religion = "chalcedonian"
+	culture = "gaelic"
+	father = 7251
+	470.1.1 = {
+		birth = "470.1.1"
+	}
+	540.1.1 = {
+		death = "540.1.1"
+	}
+}
+
+7251 = {
+	name = "Fergus"
+	dynasty_house = house_british_isles_neill
+	religion = "nicene"
+	culture = "gaelic"
+	father = 7252
+	450.1.1 = {
+		birth = "450.1.1"
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	490.1.1 = {
+		death = "490.1.1"
+	}
+}
+
+7252 = {
+	name = "Conall_Gulban"
+	dynasty_house = house_british_isles_neill
+	religion = "nicene"
+	culture = "gaelic"
+	father = 7255
+	428.1.1 = {
+		birth = "428.1.1"
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	464.1.1 = {
+		death = "464.1.1"
+	}
+}
+
+7257 = {
+	name = "EO_gA_n"
+	dynasty_house = house_british_isles_neill
+	religion = "nicene"
+	culture = "gaelic"
+	father = 7255
+	430.1.1 = {
+		birth = "430.1.1"
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	465.1.1 = {
+		death = "465.1.1"
+	}
+}
+
+7259 = {
+	name = "Muiredach"
+	dynasty_house = house_british_isles_neill
+	religion = "nicene"
+	culture = "gaelic"
+	father = 7257
+	445.1.1 = {
+		birth = "445.1.1"
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	489.1.1 = {
+		death = "489.1.1"
+	}
+}
+
+7261 = {
+	name = "Muirchertach"
+	dynasty_house = house_british_isles_neill
+	religion = "chalcedonian"
+	culture = "gaelic"
+	father = 7259
+	469.1.1 = {
+		birth = "469.1.1"
+	}
+	534.1.1 = {
+		death = "534.1.1"
+	}
+}
+83172 = {
+	name = "Feidlimid"
+	dynasty = 9208
+	martial = 4
+	diplomacy = 7
+	intrigue = 5
+	stewardship = 3
+	religion = "nicene"
+	culture = "gaelic"
+	father = 83160
+	438.1.1 = {
+		birth = "438.1.1"
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	497.7.1 = {
+		death = "497.7.1"
+	}
+}
+
+83173 = {
+	name = "A_engus"
+	dynasty = 9208
+	martial = 3
+	diplomacy = 5
+	intrigue = 7
+	stewardship = 5
+	religion = "chalcedonian"
+	culture = "gaelic"
+	father = 83172
+	459.1.1 = {
+		birth = "459.1.1"
+	}
+	522.7.1 = {
+		death = "522.7.1"
+	}
+}
+
+83174 = {
+	name = "Muiredach"
+	dynasty = 9208
+	martial = 5
+	diplomacy = 6
+	intrigue = 3
+	stewardship = 6
+	religion = "chalcedonian"
+	culture = "gaelic"
+	father = 83173
+	484.1.1 = {
+		birth = "484.1.1"
+	}
+	544.7.1 = {
+		death = "544.7.1"
+	}
+}
+
+ynis_mon_01 = {
+	name = "Muiredach"
+	religion = "chalcedonian"
+	culture = "gaelic"
+	452.1.1 = {
+		birth = "452.1.1"
+	}
+	500.1.1 = {
+		death = "500.1.1"
+	}
+}
+
+isles_01 = {
+	name = "Fedlimid"
+	religion = "irish_druidism"
+	culture = "gaelic"
+	450.1.1 = {
+		birth = "450.1.1"
+	}
+	500.1.1 = {
+		death = "500.1.1"
+	}
+}
+isles_02 = {
+	name = "Cormac"
+	religion = "irish_druidism"
+	culture = "gaelic"
+	449.1.1 = {
+		birth = "449.1.1"
+	}
+	500.1.1 = {
+		death = "500.1.1"
+	}
+}
+isles_03 = {
+	name = "Dungal"
+	religion = "irish_druidism"
+	culture = "gaelic"
+	456.1.1 = {
+		birth = "456.1.1"
+	}
+	500.1.1 = {
+		death = "500.1.1"
+	}
+}

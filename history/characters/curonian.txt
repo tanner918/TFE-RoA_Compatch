@@ -1,0 +1,110 @@
+﻿# Curonians
+kurzeme_01 = {  # Ruler
+	name = "Vishly"
+	dynasty = dynasty_kurzeme
+	culture = aestian
+	religion = baltic_pagan
+	323.1.2 = {
+		birth = yes
+	}
+	366.4.8 = {
+		death = yes
+	}
+}
+
+kurzeme_11 = {  # Ruler
+	name = "Darate"
+	dynasty = dynasty_kurzeme
+	culture = aestian
+	religion = baltic_pagan
+	female = yes
+	father = kurzeme_01
+	359.1.27 = {
+		birth = yes
+	}
+	395.6.28 = {
+		death = yes
+	}
+}
+
+kurzeme_21 = {  # Ruler
+	name = "Pukiik"
+	dynasty = dynasty_kurzeme
+	culture = aestian
+	religion = baltic_pagan
+	mother = kurzeme_11
+	388.2.18 = {
+		birth = yes
+	}
+	423.10.15 = {
+		death = yes
+	}
+}
+
+kurzeme_22 = {
+	name = "Kaire"
+	dynasty = dynasty_kurzeme
+	culture = aestian
+	religion = baltic_pagan
+	mother = kurzeme_11
+	394.12.16 = {
+		birth = yes
+	}
+	441.10.26 = {
+		death = yes
+	}
+}
+
+kurzeme_31 = {  # Ruler
+	name = "Stegut"
+	dynasty = dynasty_kurzeme
+	culture = aestian
+	religion = baltic_pagan
+	father = kurzeme_22
+	430.11.18 = {
+		birth = yes
+	}
+	463.3.31 = {
+		death = yes
+	}
+}
+
+kurzeme_41 = {  # Ruler
+	name = "Gunvald"
+	dynasty = dynasty_kurzeme
+	culture = aestian
+	religion = baltic_pagan
+	father = kurzeme_31
+	457.8.18 = {
+		birth = yes
+	}
+	496.8.14 = {
+		death = yes
+	}
+}
+kurzeme_42 = {  # Ruler
+	name = "Kaire"
+	dynasty = dynasty_kurzeme
+	culture = aestian
+	religion = baltic_pagan
+	father = kurzeme_41
+	479.1.1 = {
+		birth = yes
+	}
+	530.1.11 = {
+		death = yes
+	}
+}
+kurzeme_43 = {  # Ruler
+	name = "Vishly"
+	dynasty = dynasty_kurzeme
+	culture = aestian
+	religion = baltic_pagan
+	father = kurzeme_42
+	498.1.1 = {
+		birth = yes
+	}
+	555.1.1 = {
+		death = yes
+	}
+}

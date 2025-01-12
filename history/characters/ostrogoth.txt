@@ -1,0 +1,645 @@
+﻿992016 = {
+	name = "Theodoric"
+	dna = 992016_theodoric_the_great
+	dynasty = 99920000
+	religion = "arianism"
+	culture = "ostrogothic"
+	father = 992013
+	mother = 992015
+	trait = education_diplomacy_5
+	trait = vengeful
+	trait = ambitious
+	trait = gregarious
+	trait = intellect_good_1
+	trait = strong
+	diplomacy = 9
+	martial = 12
+	stewardship = 4
+	intrigue = 8
+	learning = 9
+	prowess = 8
+	sexuality = heterosexual
+	454.1.1 = {
+		birth = yes
+	}
+	476.1.1 = {
+		set_realm_capital = title:c_nikopolis
+	}
+	476.1.2 = {
+		learn_language = language_latin
+		#add_unpressed_claim = title:k_croatia
+		add_prestige = 1000
+		add_gold = 250
+		set_relation_rival = character:strabo_02 #Theodoric Strabo
+		add_character_modifier = king_of_the_ostrogoths
+		add_truce_both_ways = {
+			character = character:70515
+			years = 3
+			name = GOTH_TRUCE
+			result = white_peace
+		}
+	}
+	484.1.1 = {
+		add_spouse = 997006
+	}
+	526.1.1 = {
+		death = yes
+	}
+}
+992017 = {
+	name = "Amalafrida"
+	female = yes
+	dynasty = 99920000
+	religion = "arianism"
+	culture = "ostrogothic"
+	father = 992013
+	mother = 992015
+	450.1.1 = {
+		birth = yes
+	}
+	523.1.1 = {
+		death = yes
+	}
+}
+992107 = {
+	name = "Theodomund"
+	dynasty = 99920000
+	religion = "arianism"
+	culture = "ostrogothic"
+	father = 992013
+	mother = 992015
+	455.1.1 = {
+		birth = yes
+	}
+	480.1.1 = {
+		death = yes
+	}
+}
+992018 = {
+	name = "Theodegotha"
+	female = yes
+	dynasty = 99920000
+	religion = "arianism"
+	culture = "ostrogothic"
+	father = 992016
+	471.1.1 = {
+		birth = yes
+	}
+	494.1.1 = {
+		add_spouse = 200283
+	}
+	510.1.1 = {
+		death = yes
+	}
+}
+992019 = {
+	name = "Ostrogotha"
+	female = yes
+	dynasty = 99920000
+	religion = "arianism"
+	culture = "ostrogothic"
+	father = 992016
+	473.1.1 = {
+		birth = yes
+	}
+	523.1.1 = {
+		death = yes
+	}
+}
+992020 = {
+	name = "Amalasuntha"
+	female = yes
+	dna = dna_amalasuntha
+	dynasty = 99920000
+	religion = "arianism"
+	culture = "ostrogothic"
+	trait = ambitious
+	trait = diligent
+	trait = trusting
+	trait = education_learning_3
+	martial = 4
+	diplomacy = 13
+	stewardship = 8
+	intrigue = 2
+	learning = 14
+	father = 992016
+	mother = 997006
+	sexuality = heterosexual
+
+	485.1.1 = {
+		birth = yes
+	}
+	532.1.1 = {
+		set_relation_rival = character:992022
+	}
+	535.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = 992022
+		}
+	}
+}
+992021 = {
+	name = "Amalaberga"
+	female = yes
+	dynasty = 99920000
+	religion = "arianism"
+	culture = "ostrogothic"
+	mother = 992017
+	480.1.1 = {
+		birth = yes
+	}
+	545.1.1 = {
+		death = yes
+	}
+}
+992022 = {
+	name = "Theodahad"
+	dna = dna_theodahad
+	dynasty = 99920000
+	religion = "arianism"
+	culture = "ostrogothic"
+	mother = 992017
+	intrigue = 6
+	martial = 0
+	diplomacy = 9
+	trait = education_intrigue_2
+	trait = ambitious
+	trait = disloyal
+	trait = deceitful
+	trait = callous
+	trait = greedy
+	trait = scholar
+	sexuality = heterosexual
+
+	485.1.1 = {
+		birth = yes
+	}
+	504.1.1 = {
+		add_spouse = 992022_spouse
+	}
+	532.1.1 = {
+		set_relation_rival = character:992020
+		create_alliance = character:992022_son_in_law
+		add_unpressed_claim = title:k_italy
+		add_unpressed_claim = title:k_croatia
+	}
+	536.1.1 = {
+		death = {
+			death_reason = death_murder
+		}
+	}
+}
+992022_spouse = {
+	name = "Gudeliva"
+	female = yes
+	religion = "arianism"
+	culture = "ostrogothic"
+	486.1.1 = {
+		birth = yes
+	}
+	538.1.1 = {
+		death = yes
+	}
+}
+992022_daughter = {
+	name = "Theodenantha"
+	female = yes
+	dynasty = 99920000
+	religion = "arianism"
+	culture = "ostrogothic"
+	father = 992022
+	mother = 992022_spouse
+	515.1.1 = {
+		birth = yes
+	}
+	565.1.1 = {
+		death = yes
+	}
+}
+992022_son_in_law = {
+	name = "Ebrimund"
+	dynasty = 99920003
+	religion = "arianism"
+	culture = "ostrogothic"
+	trait = diligent
+	stewardship = 5
+	trait = education_stewardship_3
+	502.1.1 = {
+		birth = yes
+	}
+	531.6.1 = {
+		add_spouse = 992022_daughter
+	}
+	532.1.1 = {
+		create_alliance = character:992022_son_in_law
+	}
+	565.1.1 = {
+		death = yes
+	}
+}
+992023 = {
+	name = "Athalaric"
+	dna = dna_athalaric
+	dynasty = 99920000
+	religion = "arianism"
+	culture = "ostrogothic"
+	trait = arrogant
+	trait = lazy
+	trait = gluttonous
+	trait = drunkard
+	trait = education_stewardship_1
+	martial = 5
+	diplomacy = 4
+	stewardship = 4
+	intrigue = 1
+	learning = 3
+	father = 992009
+	mother = 992020
+	sexuality = heterosexual
+
+	516.1.1 = {
+		birth = yes
+	}
+	532.1.1 = {
+		add_courtier = character:roman_13
+		add_courtier = character:roman_18
+		add_courtier = character:roman_19
+	}
+	534.1.1 = {
+		death = yes
+	}
+}
+992024 = {
+	name = "Matasuntha"
+	female = yes
+	dynasty = 99920000
+	religion = "arianism"
+	culture = "ostrogothic"
+	father = 992009
+	mother = 992020
+	517.1.1 = {
+		birth = yes
+	}
+	570.1.1 = {
+		death = yes
+	}
+}
+
+992030 = {
+	name = "Hildibald" # Ostrogothic king
+	dynasty = 99920001
+	religion = "arianism"
+	culture = "ostrogothic"
+	father = 992027
+	trait = chaste
+	trait = infertile
+	504.1.1 = {
+		birth = yes
+	}
+	532.1.1 = {
+		add_courtier = character:roman_16
+	}
+	541.1.1 = {
+		death = yes
+	}
+}
+992026 = {
+	name = "Theodulf"
+	dynasty = 99920001
+	religion = "arianism"
+	culture = "ostrogothic"
+	470.1.1 = {
+		birth = yes
+	}
+	520.1.1 = {
+		death = yes
+	}
+}
+992027 = {
+	name = "Hildulf"
+	dynasty = 99920001
+	religion = "arianism"
+	culture = "ostrogothic"
+	father = 992026
+	485.1.1 = {
+		birth = yes
+	}
+	525.1.1 = {
+		death = yes
+	}
+}
+992028 = {
+	name = "Ansila"
+	dynasty = 99920001
+	religion = "arianism"
+	culture = "ostrogothic"
+	father = 992027
+	493.1.1 = {
+		birth = yes
+	}
+	532.1.1 = {
+		death = yes
+	}
+}
+992029 = {
+	name = "Baduila" # Ostrogothic king
+	dynasty = 99920001
+	religion = "arianism"
+	culture = "ostrogothic"
+	father = 992028
+	martial = 9
+	diplomacy = 8
+	intrigue = 8
+	trait = shrewd
+	trait = ambitious
+	trait = brave
+	trait = diligent
+	trait = just
+	trait = rowdy
+	disallow_random_traits = yes
+	sexuality = heterosexual
+
+	518.1.1 = {
+		birth = yes
+	}
+	534.1.1 = {
+		trait = education_martial_4
+	}
+	535.1.1 = {
+		name = "Totila"
+	}
+	552.7.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+200280_spouse = {
+	name = "Iberia" # fictional name, hispanic woman married with Theodis
+	female = yes
+	religion = "chalcedonian"
+	culture = "hispano_roman"
+	495.1.1 = {
+		birth = yes
+	}
+	532.1.1 = {
+		effect = {
+			add_gold = 300
+		}
+	}
+	555.1.1 = {
+		death = yes
+	}
+}
+992100 = {
+	name = "Withigis" # Ostrogothic king
+	dynasty = 99920004
+	religion = "arianism"
+	culture = "ostrogothic"
+	father = 992103
+	sstewardship = 8
+	martial = 6
+	diplomacy = 8
+	trait = diligent
+	trait = ambitious
+	trait = education_martial_3
+	500.1.1 = {
+		birth = yes
+	}
+	532.1.1 = {
+		add_courtier = character:roman_17
+		effect = {
+			add_prestige = massive_prestige_gain
+		}
+	}
+	536.1.1 = {
+		add_spouse = 992024
+	}
+	542.1.1 = {
+		death = yes
+	}
+}
+992101 = {
+	name = "Uraia"
+	dynasty = 99920004
+	religion = "arianism"
+	culture = "ostrogothic"
+	father = 992102
+	510.1.1 = {
+		birth = yes
+	}
+	541.1.1 = {
+		death = yes
+	}
+}
+992102 = {
+	name = "Wulia"
+	dynasty = 99920004
+	religion = "arianism"
+	culture = "ostrogothic"
+	father = 992103
+	495.1.1 = {
+		birth = yes
+	}
+	532.1.1 = {
+		death = yes
+	}
+}
+992103 = {
+	name = "Within"
+	dynasty = 99920004
+	religion = "arianism"
+	culture = "ostrogothic"
+	475.1.1 = {
+		birth = yes
+	}
+	524.1.1 = {
+		death = yes
+	}
+}
+992104 = {
+	name = "Theia" # Ostrogothic king
+	religion = "arianism"
+	culture = "ostrogothic"
+	518.1.1 = {
+		birth = yes
+	}
+	553.1.1 = {
+		death = yes
+	}
+}
+992105 = {
+	name = "Sisigis" # ostrogothic general in Cottian Alps
+	religion = "arianism"
+	culture = "ostrogothic"
+	500.1.1 = {
+		birth = yes
+	}
+	540.1.1 = {
+		death = yes
+	}
+}
+992106 = {
+	name = "Pitzia" # ostrogothic general
+	religion = "arianism"
+	culture = "ostrogothic"
+	trait = disloyal
+	trait = cynical
+	500.1.1 = {
+		birth = yes
+	}
+	535.1.1 = {
+		death = yes
+	}
+}
+992108 = {
+	name = "Asinar" # ostrogothic general
+	religion = "arianism"
+	culture = "ostrogothic"
+	martial = 10
+	497.1.1 = {
+		birth = yes
+	}
+	535.1.1 = {
+		death = yes
+	}
+}
+992109 = {
+	name = "Gibal" # ostrogothic general
+	religion = "arianism"
+	culture = "ostrogothic"
+	martial = 10
+	505.1.1 = {
+		birth = yes
+	}
+	551.1.1 = {
+		death = yes
+	}
+}
+992110 = {
+	name = "Indulf" # ostrogothic general
+	religion = "arianism"
+	culture = "ostrogothic"
+	martial = 10
+	505.1.1 = {
+		birth = yes
+	}
+	551.1.1 = {
+		death = yes
+	}
+}
+992111 = {
+	name = "Scipuar" # ostrogothic general
+	religion = "arianism"
+	culture = "ostrogothic"
+	martial = 10
+	505.1.1 = {
+		birth = yes
+	}
+	551.1.1 = {
+		death = yes
+	}
+}
+992112 = {
+	name = "Vacis" # ostrogothic general
+	religion = "arianism"
+	culture = "ostrogothic"
+	martial = 10
+	490.1.1 = {
+		birth = yes
+	}
+	535.1.1 = {
+		death = yes
+	}
+}
+992113 = {
+	name = "Gripa" # ostrogothic general
+	religion = "arianism"
+	culture = "ostrogothic"
+	martial = 6
+	trait = education_martial_3
+	500.1.1 = {
+		birth = yes
+	}
+	535.1.1 = {
+		death = yes
+	}
+}
+992114 = {
+	name = "Soas" # ostrogothic rehen
+	religion = "arianism"
+	culture = "ostrogothic"
+	diplomacy = 10
+	454.1.1 = {
+		birth = yes
+	}
+	515.1.1 = {
+		death = yes
+	}
+}
+992115 = {
+	name = "Dagistheus" # ostrogothic rehen
+	religion = "arianism"
+	culture = "ostrogothic"
+	diplomacy = 10
+	455.1.1 = {
+		birth = yes
+	}
+	515.1.1 = {
+		death = yes
+	}
+}
+992116 = {
+	name = "Dagistheus" # Justinian general
+	religion = "chalcedonian"
+	culture = "ostrogothic"
+	father = 992115
+	martial = 15
+	495.1.1 = {
+		birth = yes
+	}
+	530.1.1 = {
+		culture = "roman"
+	}
+	564.1.1 = {
+		death = yes
+	}
+}
+7761 = {
+	name = "Athalaric" # Pope
+	religion = "chalcedonian"
+	culture = "ostrogothic"
+	trait = diligent
+	trait = calm
+	trait = zealous
+	trait = education_diplomacy_3
+	470.1.1 = {
+		birth = yes
+	}
+	530.11.22 = {
+		name = "Bonifatius"
+	}
+	532.10.17 = {
+		death = yes
+	}
+}
+optaris = {
+	name = "Optaris"
+	religion = "arianism"
+	culture = "ostrogothic"
+	trait = wrathful
+	trait = impatient 
+	trait = lustful
+	trait = education_intrigue_3
+	prowess = 10
+	500.1.1 = {
+		birth = yes
+	}
+	530.1.1 = {
+		set_relation_rival = character:992022 
+	}
+	550.1.17 = {
+		death = yes
+	}
+}

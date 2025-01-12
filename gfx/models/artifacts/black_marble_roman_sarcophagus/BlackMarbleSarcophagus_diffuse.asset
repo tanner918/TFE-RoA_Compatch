@@ -1,0 +1,40 @@
+
+
+
+
+#################
+#	Meshes	#
+#################
+
+##### Unique -----------------------------------------
+
+
+pdxmesh = {
+	name = "roman_sarcophagus_mesh"
+	file = "Black_marble_roman_sarcophagus.mesh"
+
+	meshsettings = {
+		name = "Cube.005"
+		index = 0
+		texture_diffuse = "BlackMarbleSarcophagus_diffuse.dds"
+		texture_normal = "BlackMarbleSarcophagus_normal.dds"
+		texture_specular = "BlackMarbleSarcophagus_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+}
+
+
+
+
+#################
+#	Entities	#
+#################
+
+
+
+##### Unique -----------------------------------------
+entity = {
+	name = "roman_sarcophagus_entity"
+	pdxmesh = "roman_sarcophagus_mesh"
+}

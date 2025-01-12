@@ -1,0 +1,19 @@
+﻿l_english:
+ donatist.1001.t:0 "Rebellion of the Donatist Circumcellions"
+ donatist.1001.desc:0 "It seems that bands of Roman Christian radicals have started attacking landowners in [donatist_county.GetName]. The religious movement, called the Donatists, demands the cancellation of all debt and promises remedies for the social grievances of the peasants.\n\nThe local magistrates are concerned, but surely a fringe religious group led by circum cellas (seasonal agricultural workers) is nothing to worry about?"
+ donatist.1001.a:0 "Why would this be of any concern to me?"
+ donatist.1001.a.flavor:0 "When has a fringe religious group in the provinces ever caused trouble for anyone?"
+ donatist.1001.b:0 "Let's root this out before it takes proper hold..."
+ donatist.1001.b.conversion_tt:0 "If you are already converting the faith in [donatist_county.GetName], progress may be lost if you choose this option!"
+ donatist.1001.player_warning:0 "@warning_icon! #X Failing to convert [donatist_county.GetNameNoTier] away from [donatism.GetName] swiftly enough will lead to a rebellion of the Donatists. Be prepared.#!"
+
+ donatist.1002.desc:0 "The religious movement known as the Donatists have erupted forth from the peasantry, intent on "reclaiming Africa from the oppressors", by force if necessary!\n\nTheir leaders were mocked for being a bunch of opportunistic preachers and uppity peasants. The Donatists, however, have now found a strong core of followers and have declared themselves the true followers of Christ!"
+ donatist.1002.a:0 "As if these lowly peasants pose any threat!"
+ donatist.1002.a.target.tt:0 "The Donatists go to war!"
+ donatist.1002.a.not_target.tt:0 "The Donatists go to war!"
+ donatist.1002.b:0 "[donatist_leader.GetSheHe|U] has some very good points, actually."
+ donatist.1002.b.flavor:0 "I can hardly call myself a worthy faithful..."
+
+ donatist_africa.tt:0 "You are not ruler of Africa"
+ donatist_religion_trigger.tt:0 "You are neither a Donatist nor a non-Zealous non-Donatist"
+ donatist_culture_trigger.tt:0 "You are not a part of the Nubelan dynasty or either of Afro-Roman culture or one with Berber heritage"

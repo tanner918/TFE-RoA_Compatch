@@ -1,0 +1,1921 @@
+﻿k_aquitaine = {
+	361.1.1 = { 
+		change_development_level = 3
+		liege = e_roman_empire
+		de_jure_liege = e_roman_empire
+	}
+	395.1.1 = {
+		de_jure_liege = e_western_roman_empire
+	}
+	768.1.1 = { change_development_level = 5 }
+
+	###Roman Administration
+	476.1.1 = {
+		insert_title_history = k_septem_provinciae
+		de_jure_liege = e_france
+	}
+	629.10.18 = {
+		holder = 168697 # Caribert
+	}
+	632.4.8 = {
+		holder = 168698 # Chilperic
+	}
+	632.5.1 = {
+		holder = 168696 # Dagobert
+	}
+}
+
+
+c_toulouse = {
+	361.1.1 = { change_development_level = 5 }
+	476.1.1 = { change_development_level = 7 }
+	532.1.1 = {	change_development_level = 6 }
+	200.1.1 = {
+		de_jure_liege = d_languedoc
+	}
+	476.1.1 = {
+		government = feudal_government
+	}
+	##Visigothic Control
+	415.1.1 = {
+		de_jure_liege = d_toulouse
+	}
+	415.7.8 = {
+		holder = 200288 # Wallia
+	}
+	418.1.1 = {
+		holder = 200287 # Theoderic I
+	}
+	451.6.20 = {
+		holder = 200286 # Thorismund
+	}
+	453.1.1 = {
+		holder = 200285 # Theoderic II
+	}
+	466.1.1 = {
+		holder = 200284 # Evaric
+	}
+
+	##Frankish Control
+	523.1.1 = {
+		holder = gallo_roman_misc_008
+		liege = d_valois
+	}
+
+	##Independent Aquitaine
+	629.10.18 = {
+		holder = 168697 # Caribert
+	}
+
+	632.5.1 = {
+		holder = boggis_01 # Boggis
+	}
+	735.1.1 = {
+		holder = 190480 #Hunoald
+	}
+
+	361.1.1 = {
+		holder = septem_02
+		liege = d_languedoc
+	}
+}
+
+d_gascogne = {	#AKA Vasconia
+
+	361.1.1 = { change_development_level = 2 }
+	200.1.1 = {
+		de_jure_liege = k_septem_provinciae ##Roman Dejure
+	}
+	476.1.1 = {
+		de_jure_liege = k_aquitaine
+		government = feudal_government
+	}
+
+	##Roman Administration
+	350.1.1 = {
+		holder = basque_04
+	}
+	361.2.1 = {
+		liege = k_septem_provinciae
+	}	
+
+	##Frankish Control
+	511.1.1 = {
+		de_jure_liege = k_aquitaine ##Kingdom of the Franks
+	}
+	507.1.1 = {
+		name = VASCONIA
+	}
+	
+	602.1.1 = {
+		holder = vasconia_01 # Genial
+		liege = k_aquitaine
+	}
+	626.1.1 = {
+		holder = vasconia_02 # Aeghyna
+		liege = k_aquitaine
+	}
+	631.1.1 = {
+		liege = k_aquitaine
+	}
+	632.5.1 = {
+		holder = boggis_01 # Boggis
+	}
+	638.1.1 = {
+		holder = vasconia_03 # Amando
+	}
+	670.1.1 = {
+		holder = 168145	#Lop / Loup I
+	}
+	768.1.1 = {
+		holder = 168104	#Lop / Loup II
+		liege = k_france
+	}
+}
+
+c_labourd = {
+	361.1.1 = { change_development_level = 4 }
+	532.1.1 = { change_development_level = 5 }
+	632.1.1 = { change_development_level = 6 }
+	768.1.1 = { change_development_level = 8 }
+	
+	200.1.1 = {
+		government = tribal_government
+		liege = d_gascogne
+	}
+	476.1.1 = {
+		government = feudal_government
+	}
+	357.1.1 = {
+		holder = basque_10
+	}
+	
+	410.1.1 = {
+		holder = basque_15
+	}
+
+	##Gothic Control
+	415.1.1 = {
+		liege = d_toulouse
+	}
+	460.1.1 = {
+		holder = basque_16
+	}
+
+	##Frankish Control
+	523.1.1 = {
+		holder = basque_23
+		liege = d_valois
+	}
+	626.1.1 = {
+		holder = vasconia_03 # Amando
+		liege = d_gascogne
+	}
+
+	735.1.1 = {
+		holder = 190483 #Hatto
+	}
+	735.1.1 = {
+		liege = 0
+	}
+	744.1.1 = {
+		liege = k_france
+	}
+	759.1.1 = {
+		holder = 190484 #Loup
+	}
+}
+
+
+c_albret = {
+	
+	361.1.1 = { change_development_level = 3 }
+	
+	200.1.1 = {
+		government = tribal_government
+		liege = d_gascogne
+	}
+	476.1.1 = {
+		government = feudal_government
+	}
+	357.1.1 = {
+		holder = basque_01 
+	}
+	371.1.1 = {
+		holder = basque_02
+	}
+	410.1.1 = {
+		holder = basque_11
+	}
+
+	##Gothic Control
+	415.1.1 = {
+		liege = d_toulouse
+	}
+	460.1.1 = {
+		holder = basque_12
+	}
+
+	##Frankish Control
+	523.1.1 = {
+		holder = basque_23
+		liege = d_valois
+	}
+	626.1.1 = {
+		holder = vasconia_02 # Aeghyna
+		liege = k_aquitaine
+	}
+	735.1.1 = {
+		holder = 190483 #Hatto
+	}
+	735.1.1 = {
+		liege = 0
+	}
+	744.1.1 = {
+		liege = k_france
+	}
+	759.1.1 = {
+		holder = 190484 #Loup
+	}
+}
+
+
+c_marsan = {
+
+	361.1.1 = { change_development_level = 4 }
+	200.1.1 = {
+		government = tribal_government
+		liege = d_gascogne
+	}
+	476.1.1 = {
+		government = feudal_government
+	}
+	357.1.1 = {
+		holder = basque_04 
+	}
+
+	##Visigothic Control
+	466.1.1 = {
+		holder = tolosa_01 # Fictional Vassal under Evaric
+		liege = d_toulouse
+	}
+
+	##Frankish Control
+	523.1.1 = {
+		holder = basque_23
+		liege = d_valois
+	}
+	626.1.1 = {
+		holder = vasconia_02 # Aeghyna
+		liege = k_aquitaine
+	}
+
+	760.1.1 = {
+		holder = 190499 #Guillaume
+	}
+	760.1.1 = {
+		liege = d_aquitaine
+	}
+}
+
+
+c_armagnac = {
+
+	361.1.1 = { change_development_level = 3 }
+	200.1.1 = {
+		government = tribal_government
+		liege = d_gascogne
+	}
+	351.1.1 = {
+		holder = basque_05 
+	}
+	358.1.1 = {
+		liege = d_gascogne
+	}
+	388.1.1 = {
+		holder = basque_06 
+	}
+	395.1.1 = {
+		liege = d_gascogne
+	}
+	
+
+	##Visigothic Control
+	466.1.1 = {
+		holder = tolosa_01 # Fictional Vassal under Evaric
+		liege = d_toulouse
+	}
+
+	##Frankish Control
+	523.1.1 = {
+		holder = basque_24
+		liege = d_valois
+	}	
+	626.1.1 = {
+		holder = vasconia_02 # Aeghyna
+		liege = k_aquitaine
+	}
+
+	759.1.1 = {
+		holder = 190494 #Artgarius
+	}
+	759.1.1 = {
+		liege = d_gascogne
+	}
+	768.1.1 = {
+		holder = 168104 #Lope II de Vasconia
+	}
+}
+
+c_bigorre = {
+	200.1.1 = {
+		government = tribal_government
+		liege = d_gascogne
+	}
+	351.1.1 = {
+		holder = basque_07
+	}
+	358.1.1 = {
+		liege = d_gascogne
+	}
+	395.1.1 = {
+		liege = d_gascogne
+	}
+
+	410.1.1 = {
+		holder = basque_17
+	}
+	##Gothic Control
+	415.1.1 = {
+		liege = d_toulouse
+	}
+	460.1.1 = {
+		holder = basque_18
+	}
+	523.1.1 = {
+		holder = basque_24
+		liege = d_valois
+	}
+	626.1.1 = {
+		holder = vasconia_03 # Amando
+		liege = d_gascogne
+	}
+	
+	735.1.1 = {
+		holder = 190483 #Hatto
+	}
+	735.1.1 = {
+		liege = 0
+	}
+	744.1.1 = {
+		liege = k_france
+	}
+	759.1.1 = {
+		holder = 190484 #Loup
+	}
+}
+
+c_bearn = {
+
+	200.1.1 = {
+		government = tribal_government
+		liege = d_gascogne
+	}
+	351.1.1 = {
+		holder = basque_08
+	}
+	395.1.1 = {
+		liege = d_gascogne
+	}
+	410.1.1 = {
+		holder = basque_19
+	}
+
+	##Gothic Control
+	415.1.1 = {
+		liege = d_toulouse
+	}
+	460.1.1 = {
+		holder = basque_20
+	}
+
+	##Frankish Control
+	523.1.1 = {
+		holder = basque_23
+		liege = d_valois
+	}
+	626.1.1 = {
+		holder = vasconia_03 # Amando
+		liege = d_gascogne
+	}
+
+	735.1.1 = {
+		holder = 190483 #Hatto
+		liege = 0
+	}
+	744.1.1 = {
+		liege = k_france
+	}
+	759.1.1 = {
+		holder = 190484 #Loup
+	}
+}
+
+c_comminges = {
+
+	200.1.1 = {
+		government = tribal_government
+		liege = d_gascogne
+	}
+	351.1.1 = {
+		holder = basque_09
+	}
+	358.1.1 = {
+		liege = d_gascogne
+	}
+	395.1.1 = {
+		liege = d_gascogne
+	}
+	410.1.1 = {
+		holder = basque_21
+	}
+
+	##Gothic Control
+	415.1.1 = {
+		liege = d_toulouse
+	}
+	460.1.1 = {
+		holder = basque_22
+	}
+
+	##Frankish Control
+	523.1.1 = {
+		holder = basque_24
+		liege = d_valois
+	}
+	626.1.1 = {
+		holder = vasconia_05 # Etor
+		liege = d_gascogne
+	}
+	759.1.1 = {
+		holder = 190494 #Artgarius
+	}
+	759.1.1 = {
+		liege = d_gascogne
+	}
+	768.1.1 = {
+		holder = 168104 #Lope II de Vasconia
+	}
+}
+
+c_foix = {
+
+	200.1.1 = {
+		government = tribal_government
+		liege = d_gascogne
+	}
+	357.1.1 = {
+		holder = basque_03 
+	}
+	410.1.1 = {
+		holder = basque_13
+	}
+	##Gothic Control
+	415.1.1 = {
+		liege = d_toulouse
+	}
+	460.1.1 = {
+		holder = basque_14
+	}
+
+	##Frankish Control
+	523.1.1 = {
+		holder = gallo_roman_misc_008
+		liege = d_valois
+	}
+	626.1.1 = {
+		holder = vasconia_05 # Etor
+		liege = d_gascogne
+	}
+
+	759.1.1 = {
+		holder = 190495 #Icterius
+		liege = d_gascogne
+	}
+}
+
+
+d_aquitaine = {
+	361.1.1 = { change_development_level = 5 }
+	768.1.1 = { change_development_level = 6 }
+	
+	200.1.1 = {
+		de_jure_liege = k_septem_provinciae
+	}
+	476.1.1 = {
+		de_jure_liege = k_aquitaine
+		government = feudal_government
+	}
+	361.1.1 = {
+		holder = sallustian_01
+	}
+	395.1.1 = {
+		holder = 900058
+		liege = "e_western_roman_empire"
+		reset_name = yes
+	}
+	# 511.11.27 = {
+	# 	holder = 997013
+	# 	liege = k_frankish_soissons
+	# }
+
+	632.5.1 = {
+		holder = boggis_01 # Boggis
+	}
+	660.1.1 = {
+		holder = vasconia_04 #Felix
+	}
+	671.1.1 = {
+		holder = 168145	#Lop / Loup I
+	}
+	678.1.1 = {
+		holder = 190478 #Boggis
+	}
+	678.1.1 = {
+		liege = k_france
+	}
+	707.1.1 = {
+		holder = 190479 #Eudes
+	}
+	735.1.1 = {
+		holder = 190480 #Hunoald
+	}
+	735.1.1 = {
+		liege = 0
+	}
+	744.1.1 = {
+		holder = 190481 #Waifar
+	}
+	744.1.1 = {
+		liege = k_france
+	}
+	766.1.1 = {
+		liege = 0
+	}
+	768.6.2 = {
+		holder = 190480 #Hunoald
+		liege = k_france
+	}
+}
+
+
+c_bordeaux = {
+	361.1.1 = { change_development_level = 7 }
+	476.1.1 = {	change_development_level = 5 }
+	532.1.1 = {	change_development_level = 7 }
+	768.1.1 = { change_development_level = 8 }
+	
+	200.1.1 = {
+	}
+	476.1.1 = {
+		government = feudal_government
+	}
+	361.1.1 = {
+		holder = sallustian_01 # Vicarius Flavius Sallustius
+	}
+	395.1.1 = {
+		holder = 900058
+		liege = "e_western_roman_empire"
+		reset_name = yes
+	}
+
+	##Visigothic Control
+	466.1.1 = {
+		holder = tolosa_01 # Fictional Vassal under Evaric
+		liege = d_toulouse
+	}
+
+	##Frankish Control
+	523.1.1 = {
+		holder = soissons_01
+		liege = d_valois
+	}
+	626.1.1 = {
+		holder = vasconia_02 # Aeghyna
+		liege = k_aquitaine
+	}
+
+	760.1.1 = {
+		holder = 190499 #Guillaume
+	}
+	760.1.1 = {
+		liege = d_aquitaine
+	}
+}
+
+c_angouleme = {
+
+	361.1.1 = { change_development_level = 4 }
+	200.1.1 = {
+	}
+	476.1.1 = {
+		government = feudal_government
+	}
+	361.1.1 = {
+		holder = septem_01 #
+		liege = d_aquitaine
+	}
+	395.1.1 = {
+		liege = d_aquitaine
+	}
+	##Visigothic Control
+	412.1.1 = {
+		liege = d_toulouse
+	}
+	466.1.1 = {
+		holder = tolosa_02 # Fictional Vassal under Evaric
+	}
+
+	##Frankish Control
+	523.1.1 = {
+		holder = soissons_01
+		liege = d_valois
+	}
+	620.1.1 = {
+		holder = aquitania_09
+		liege = k_aquitaine
+	}
+	765.1.1 = {
+		holder = 190504 #Wulgrin
+		liege = d_aquitaine
+	}
+}
+
+c_agenais = {
+
+	476.1.1 = {
+		government = feudal_government
+	}
+	361.1.1 = { change_development_level = 6 }
+	200.1.1 = {
+	}
+	361.1.1 = {
+		holder = sallustian_01 # Vicarius Flavius Sallustius
+	}
+	395.1.1 = {
+		holder = 900058
+		liege = "e_western_roman_empire"
+		reset_name = yes
+	}
+
+	##Visigothic Control
+
+	466.1.1 = {
+		holder = tolosa_01 # Fictional Vassal under Evaric
+		liege = d_toulouse
+	}
+
+	##Frankish Control
+	523.1.1 = {
+		holder = soissons_02
+		liege = d_valois
+	}
+	620.1.1 = {
+		holder = aquitania_10
+		liege = k_aquitaine
+	}
+
+	768.1.1 = {
+		holder = 190502
+		liege = d_aquitaine
+	}
+}
+
+c_perigord = {
+
+	200.1.1 = {
+	}
+	476.1.1 = {
+		government = feudal_government
+	}
+	361.1.1 = {
+		holder = sallustian_01 # Vicarius Flavius Sallustius
+	}
+	395.1.1 = {
+		holder = 900058
+		liege = "e_western_roman_empire"
+		reset_name = yes
+	}
+
+	##Visigothic Control
+	412.1.1 = {
+		liege = d_toulouse
+	}
+	466.1.1 = {
+		holder = tolosa_02 # Fictional Vassal under Evaric
+	}
+
+	##Frankish Control
+	523.1.1 = {
+		holder = soissons_02
+		liege = d_valois
+	}
+	620.1.1 = {
+		holder = aquitania_10
+		liege = k_aquitaine
+	}
+	765.1.1 = {
+		holder = 190504 #Wulgrin
+		liege = d_aquitaine
+	}
+}
+
+c_limousin = {
+
+	361.1.1 = { change_development_level = 3 }
+	200.1.1 = {
+		de_jure_liege = d_bourbon
+	}
+	476.1.1 = {
+		government = feudal_government
+	}
+	361.1.1 = {
+		holder = septem_05
+		liege = d_bourbon
+	}
+
+	##Visigothic Control
+	412.1.1 = {
+		liege = d_toulouse
+	}
+	466.1.1 = {
+		holder = tolosa_02 # Fictional Vassal under Evaric
+	}
+
+	##Frankish Control
+	523.1.1 = {
+		holder = metz_02
+		liege = k_frankish_rheims
+	}
+	620.1.1 = {
+		holder = aquitania_10
+		liege = k_aquitaine
+	}
+	767.1.1 = {
+		holder = 190561 #Geofrey
+		liege = k_lotharingia
+	}
+}
+
+c_saintonge = {
+
+	200.1.1 = {
+	}
+	476.1.1 = {
+		government = feudal_government
+	}
+	361.1.1 = {
+		holder = septem_01 #
+		liege = d_aquitaine
+	}
+	395.1.1 = {
+		liege = d_aquitaine
+	}
+
+	##Visigothic Control
+	412.1.1 = {
+		liege = d_toulouse
+	}
+	466.1.1 = {
+		holder = tolosa_02 # Fictional Vassal under Evaric
+	}
+
+	##Frankish Control
+	523.1.1 = {
+		holder = soissons_01
+		liege = d_valois
+	}
+	620.1.1 = {
+		holder = aquitania_09
+		liege = k_aquitaine
+	}
+
+	678.1.1 = {
+		holder = 190478 #Boggis
+		liege = k_france
+	}
+	707.1.1 = {
+		holder = 190479 #Eudes
+	}
+	735.1.1 = {
+		holder = 190480 #Hunoald
+		liege = 0
+	}
+	744.1.1 = {
+		holder = 190481 #Waifar
+		liege = k_france
+	}
+	766.1.1 = {
+		liege = 0
+	}
+	768.6.2 = {
+		holder = 190480 #Hunoald
+		liege = k_france
+	}
+}
+
+
+c_aunis = {
+
+	200.1.1 = {
+	}
+	476.1.1 = {
+		government = feudal_government
+	}
+	361.1.1 = {
+		holder = septem_01 #
+		liege = d_aquitaine
+	}
+	395.1.1 = {
+		liege = d_aquitaine
+	}
+
+	##Visigothic Control
+	412.1.1 = {
+		liege = d_toulouse
+	}
+	476.1.1 = {
+		holder = tolosa_07 # Fictional Vassal under Evaric
+	}
+
+	##Frankish Control
+	523.1.1 = {
+		holder = soissons_03
+		liege = d_valois
+	}
+	620.1.1 = {
+		holder = aquitania_09
+		liege = k_aquitaine
+	}
+
+	678.1.1 = {
+		holder = 190478 #Boggis
+	}
+	678.1.1 = {
+		liege = k_france
+	}
+	707.1.1 = {
+		holder = 190479 #Eudes
+	}
+	735.1.1 = {
+		holder = 190480 #Hunoald
+	}
+	735.1.1 = {
+		liege = 0
+	}
+	744.1.1 = {
+		holder = 190481 #Waifar
+	}
+	744.1.1 = {
+		liege = k_france
+	}
+	766.1.1 = {
+		liege = 0
+	}
+	768.6.2 = {
+		holder = 190480 #Hunoald
+	}
+	768.6.2 = {
+		liege = k_france
+	}
+}
+
+d_toulouse = {
+
+	361.1.1 = { change_development_level = 4 }
+	
+	476.1.1 = {
+		government = feudal_government
+	}
+	200.1.1 = {
+	}
+
+	##Visigothic Control
+	415.7.8 = {
+		holder = 200288 # Wallia
+	}
+	418.1.1 = {
+		holder = 200287 # Theoderic I
+	}
+	451.6.20 = {
+		holder = 200286 # Thorismund
+	}
+	453.1.1 = {
+		holder = 200285 # Theoderic II
+	}
+	466.1.1 = {
+		holder = 200284 # Evaric
+	}
+
+	##Frankish Control
+	# 502.1.1 = {
+	# 	holder = 168673 #Clovis I
+	# }
+	# 511.11.27 = {
+	# 	holder = 997009 #Theoderic
+	# }
+
+	632.5.1 = {
+		holder = boggis_01 # Boggis
+	}
+}
+
+c_quercy = {
+
+	361.1.1 = { change_development_level = 4 }
+	532.1.1 = {	change_development_level = 5 }
+
+	200.1.1 = {
+		de_jure_liege = d_bourbon
+		liege = d_bourbon
+	}
+	361.1.2 = {
+		holder = septem_04
+		liege = d_bourbon
+	}
+
+	##Visigothic Control
+	415.1.1 = {
+		de_jure_liege = d_toulouse
+	}
+	415.7.8 = {
+		holder = 200288 # Wallia
+	}
+	418.1.1 = {
+		holder = 200287 # Theoderic I
+	}
+	451.6.20 = {
+		holder = 200286 # Thorismund
+	}
+	453.1.1 = {
+		holder = 200285 # Theoderic II
+	}
+	466.1.1 = {
+		holder = 200284 # Evaric
+	}
+
+	##Frankish Control
+	523.1.1 = {
+		holder = metz_01
+		liege = k_frankish_rheims
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+	}
+	629.10.18 = {
+		holder = 168697 # Caribert
+	}
+
+	620.1.1 = {
+		holder = aquitania_11
+		liege = k_aquitaine
+	}
+	632.5.1 = {
+		holder = boggis_01 # Boggis
+	}
+	768.1.1 = {
+		holder = aquitania_13
+		liege = k_lotharingia
+	}
+}
+
+c_gevaudan = {
+
+	361.1.1 = { change_development_level = 4 }
+	200.1.1 = {
+		de_jure_liege = d_bourbon
+		liege = d_bourbon
+	}
+	476.1.1 = {
+		government = feudal_government
+	}
+	361.1.2 = {
+		holder = septem_04
+		liege = d_aquitaine
+	}
+	395.1.1 = {
+		liege = d_bourbon
+	}
+
+	415.1.1 = {
+		de_jure_liege = d_toulouse
+	}
+	688.1.1 = {
+		liege = d_aquitaine
+	}
+	##Frankish Control
+	523.1.1 = {
+		holder = metz_02
+		liege = d_metz
+	}
+	629.10.18 = {
+		holder = 168697 # Caribert
+	}
+	632.5.1 = {
+		holder = boggis_01 # Boggis
+	}
+	765.1.1 = {
+		holder = 190506 # Stephan
+		liege = k_lotharingia
+	}
+	
+}
+
+c_rouergue = {
+
+	361.1.1 = { change_development_level = 4 }
+	532.1.1 = {	change_development_level = 5 }
+	200.1.1 = {
+		de_jure_liege = d_bourbon
+		liege = d_bourbon
+	}
+	476.1.1 = {
+		government = feudal_government
+	}
+	361.1.2 = {
+		holder = septem_04
+		liege = d_aquitaine
+	}
+	395.1.1 = {
+		liege = d_bourbon
+	}
+	415.1.1 = {
+		de_jure_liege = d_toulouse
+	}
+	##Frankish Control
+	523.1.1 = {
+		holder = metz_01
+		liege = d_metz
+	}
+	629.10.18 = {
+		holder = 168697 # Caribert
+	}
+	632.5.1 = {
+		holder = boggis_01 # Boggis
+	}
+	768.1.1 = {
+		holder = aquitania_13
+		liege = k_lotharingia
+	}
+
+}
+
+c_millau = {
+	
+	361.1.1 = { change_development_level = 4 }
+
+	200.1.1 = {
+		de_jure_liege = d_bourbon
+		liege = d_bourbon
+	}
+	476.1.1 = {
+		government = feudal_government
+	}
+	361.1.2 = {
+		holder = septem_04
+		liege = d_aquitaine
+	}
+	395.1.1 = {
+		liege = d_bourbon
+	}
+	415.1.1 = {
+		de_jure_liege = d_toulouse
+	}
+	##Frankish Control
+	523.1.1 = {
+		holder = metz_01
+		liege = d_metz
+	}
+	768.1.1 = {
+		holder = aquitania_13
+		liege = k_lotharingia
+	}
+	
+}
+
+d_languedoc = {
+
+	361.1.1 = { change_development_level = 6 }
+	200.1.1 = {
+		de_jure_liege = k_septem_provinciae
+		liege = k_septem_provinciae
+	}
+	476.1.1 = {
+		government = feudal_government
+	}
+	476.1.1 = {
+		de_jure_liege = k_aquitaine
+	}
+	361.1.1 = {
+		holder = septem_02
+	}
+
+	##Visigothic Control
+	514.1.1 = {
+		name = SEPTIMANIA
+		holder = 200276
+		liege = k_visigoths
+	}
+	631.3.26 = {
+		holder = 200278 # Sisenand
+	}
+	740.1.1 = {
+		liege = "k_lotharingia"
+		holder = 91475 #ADELARD, count of Cavalonensis (Languedoc)
+	}
+	
+}
+c_albi = {
+	
+	361.1.1 = { change_development_level = 5 }
+	532.1.1 = {	change_development_level = 6 }
+	200.1.1 = {
+	}
+	476.1.1 = {
+		government = feudal_government
+	}
+	361.1.1 = {
+		holder = septem_02
+		liege = d_languedoc
+	}
+	##Visigothic Control
+	412.1.1 = {
+		liege = d_toulouse
+	}
+	466.1.1 = {
+		holder = tolosa_03 # Fictional Vassal under Evaric
+	}
+	514.1.1 = {
+		holder = 200276
+		liege = d_languedoc
+	}
+	620.1.1 = {
+		holder = septimania_03
+		liege = k_visigoths
+	}
+	740.1.1 = {
+		liege = "k_lotharingia"
+		holder = 91475 #ADELARD, count of Cavalonensis (Languedoc)
+	}
+}
+
+c_uses = {
+
+	200.1.1 = {
+	}
+	476.1.1 = {
+		government = feudal_government
+	}
+	361.1.1 = {
+		holder = septem_03
+		liege = d_languedoc
+	}
+	
+	
+	#Burgundy
+	473.1.2 = {
+		holder = 994007 #Chilperic II
+		government = feudal_government
+	}
+
+	##Visigothic Control
+	530.1.1 = {
+		holder = 200274
+		liege = d_languedoc
+	}
+	620.1.1 = {
+		holder = septimania_04
+		liege = k_visigoths
+	}
+	740.1.1 = {
+		liege = "d_languedoc"
+		holder = septimania_05 #Argimund
+	}
+	
+}
+
+c_montpellier = {
+	
+	200.1.1 = {
+	}
+	476.1.1 = {
+		government = feudal_government
+	}
+	361.1.1 = {
+		holder = septem_03
+		liege = d_languedoc
+	}
+	##Visigothic Control
+	412.1.1 = {
+		liege = d_toulouse
+	}
+	466.1.1 = {
+		holder = tolosa_04 # Fictional Vassal under Evaric
+	}
+	530.1.1 = {
+		holder = 200274
+		liege = d_languedoc
+	}
+	620.1.1 = {
+		holder = septimania_04
+		liege = k_visigoths
+	}
+	740.1.1 = {
+		liege = "d_languedoc"
+		holder = septimania_05 #Argimund
+	}
+
+}
+
+c_carcassonne = {
+
+	361.1.1 = { change_development_level = 7 }
+	532.1.1 = { change_development_level = 5 }
+	768.1.1 = { change_development_level = 6 }
+	
+	200.1.1 = {
+	}
+	476.1.1 = {
+		government = feudal_government
+	}
+	361.1.1 = {
+		holder = septem_02
+		liege = d_languedoc
+	}
+	##Visigothic Control
+	412.1.1 = {
+		liege = d_toulouse
+	}
+	466.1.1 = {
+		holder = tolosa_03 # Fictional Vassal under Evaric
+	}
+	530.1.1 = {
+		holder = 200276
+		liege = d_languedoc
+	}
+	620.1.1 = {
+		holder = septimania_03
+		liege = k_visigoths
+	}
+	740.1.1 = {
+		liege = "k_lotharingia"
+		holder = 91475 #ADELARD, count of Cavalonensis (Languedoc)
+	}
+	
+}
+
+c_beziers = {
+
+	361.1.1 = { change_development_level = 7 }
+	200.1.1 = {
+	}
+	476.1.1 = {
+		government = feudal_government
+	}
+	361.1.1 = {
+		holder = septem_03
+		liege = d_languedoc
+	}
+	##Visigothic Control
+	412.1.1 = {
+		liege = d_toulouse
+	}
+	466.1.1 = {
+		holder = tolosa_03 # Fictional Vassal under Evaric
+	}
+	530.1.1 = {
+		holder = septimania_01 # Fictional vassal of Theudis
+		liege = d_languedoc
+	}
+	531.1.1={
+		holder=deuteria
+	}
+	620.1.1 = {
+		holder = septimania_03
+		liege = k_visigoths
+	}
+	740.1.1 = {
+		liege = "k_lotharingia"
+		holder = 91475 #ADELARD, count of Cavalonensis (Languedoc)
+	}
+
+}
+
+c_auvergne = {
+	
+	361.1.1 = { change_development_level = 3 }
+	200.1.1 = {
+		de_jure_liege = d_bourbon
+		liege = d_bourbon
+	}
+	476.1.1 = {
+		government = feudal_government
+	}
+
+	632.1.1 = {
+		de_jure_liege = d_auvergne
+	}
+	
+	361.1.2 = {
+		holder = septem_05
+		liege = d_aquitaine
+	}
+	395.1.1 = {
+		liege = d_bourbon
+	}
+
+	##Visigothic Control
+	412.1.1 = {
+		liege = d_toulouse
+	}
+	466.1.1 = {
+		holder = tolosa_05 # Fictional Vassal under Evaric
+	}
+
+	##Frankish Control
+	523.1.1 = {
+		holder = metz_02
+		liege = d_metz
+	}
+
+	629.1.1 = {
+		holder = aquitania_11 # Abibus
+		liege = k_aquitaine
+	}
+	765.1.1 = {
+		holder = 190506 # Stephan
+		liege = k_lotharingia
+	}
+}
+
+
+c_clermont_sur_allier = {
+	
+	361.1.1 = { change_development_level = 3 }
+	200.1.1 = {
+		de_jure_liege = d_bourbon
+		liege = d_bourbon
+	}
+	476.1.1 = {
+		government = feudal_government
+	}
+	632.1.1 = {
+		de_jure_liege = d_auvergne
+	}
+	
+	361.1.2 = {
+		holder = septem_05
+		liege = d_aquitaine
+	}
+	395.1.1 = {
+		liege = d_bourbon
+	}
+	471.1.1 = {
+		holder = avitian_03
+	}
+
+	##Visigothic Control
+	412.1.1 = {
+		liege = d_toulouse
+	}
+	476.1.1 = {
+		holder = tolosa_05 # Fictional Vassal under Evaric
+	}
+
+	##Frankish Control
+	523.1.1 = {
+		holder = metz_02
+		liege = d_metz
+	}
+	629.1.1 = {
+		holder = aquitania_11 # Abibus
+		liege = k_aquitaine
+	}
+	768.1.1 = {
+		holder = aquitania_14
+		liege = k_lotharingia
+	}
+}
+
+c_thiers = {
+	
+	361.1.1 = { change_development_level = 3 }
+	200.1.1 = {
+		de_jure_liege = d_lugdunensis_prima
+		liege = k_gallia
+	}
+	476.1.1 = {
+		government = feudal_government
+		de_jure_liege = d_bourbon
+	}
+	632.1.1 = {
+		de_jure_liege = d_auvergne
+	}
+	361.1.2 = {
+		holder = septem_06
+		liege = k_gallia
+	}
+	395.1.1 = {
+		liege = k_gallia
+	}
+
+	##Visigothic Control
+	412.1.1 = {
+		liege = d_toulouse
+	}
+	476.1.1 = {
+		holder = tolosa_05 # Fictional Vassal under Evaric
+	}
+
+	##Frankish Control
+	523.1.1 = {
+		holder = metz_03
+		liege = k_frankish_rheims
+	}
+	629.1.1 = {
+		holder = aquitania_11 # Abibus
+		liege = k_aquitaine
+	}
+	768.1.1 = {
+		holder = aquitania_14
+		liege = k_lotharingia
+	}
+}
+
+
+c_velay = {
+
+	361.1.1 = { change_development_level = 3 }
+	200.1.1 = {
+		de_jure_liege = d_lugdunensis_prima
+		liege = k_gallia
+	}
+	476.1.1 = {
+		government = feudal_government
+		de_jure_liege = d_dauphine
+	}
+	632.1.1 = {
+		de_jure_liege = d_auvergne
+	}
+	361.1.1 = {
+		holder = septem_06
+		liege = k_gallia
+	}
+	395.1.1 = {
+		liege = k_gallia
+	}
+
+	
+	#Burgundy
+	473.1.2 = {
+		holder = 994007 #Chilperic II
+		government = feudal_government
+	}
+
+	##Frankish Control
+	523.1.1 = {
+		holder = metz_03
+		liege = d_metz
+	}
+
+	629.1.1 = {
+		holder = aquitania_11 # Abibus
+		liege = k_aquitaine
+	}
+	688.1.1 = {
+		liege = d_aquitaine
+	}
+	768.1.1 = {
+		holder = aquitania_14
+		liege = k_lotharingia
+	}
+	
+	
+}
+
+d_bourbon = {
+	
+	200.1.1 = {
+		de_jure_liege = k_septem_provinciae
+		liege = k_septem_provinciae
+	}
+	361.1.1 = {
+		holder = septem_09
+	}
+	476.1.1 = {
+		de_jure_liege = k_aquitaine
+	}
+
+	##Frankish Control
+	# 502.1.1 = {
+	# 	holder = 168673 #Clovis I
+	# }
+	# 511.11.27 = {
+	# 	holder = 997009 #Theoderic
+	# }
+}
+
+c_bourbon = {
+
+	361.1.1 = { change_development_level = 5 }
+	200.1.1 = {
+	}
+	476.1.1 = {
+		government = feudal_government
+	}
+
+	361.1.1 = {
+		holder = septem_09
+		liege = d_aquitaine
+	}
+
+	##Visigothic Control
+	412.1.1 = {
+		liege = d_toulouse
+	}
+	476.1.1 = {
+		holder = tolosa_06 # Fictional Vassal under Evaric
+	}
+
+	##Frankish Control
+	523.1.1 = {
+		holder = metz_04
+		liege = k_frankish_paris
+	}
+	629.1.1 = {
+		holder = aquitania_12 # Sallustius
+		liege = k_aquitaine
+	}
+	768.1.1 = {
+		holder = aquitania_15
+		liege = k_lotharingia
+	}
+}
+
+c_bellac = {
+
+	361.1.1 = { change_development_level = 4 }
+	200.1.1 = {
+	}
+	476.1.1 = {
+		government = feudal_government
+	}
+
+	361.1.1 = {
+		holder = septem_09
+		liege = d_aquitaine
+	}
+
+	##Visigothic Control
+	412.1.1 = {
+		liege = d_toulouse
+	}
+	476.1.1 = {
+		holder = tolosa_06 # Fictional Vassal under Evaric
+	}
+
+	##Frankish Control
+	523.1.1 = {
+		holder = metz_04
+		liege = d_metz
+	}
+
+	629.1.1 = {
+		holder = aquitania_12 # Sallustius
+		liege = k_aquitaine
+	}
+	767.1.1 = {
+		holder = 190561 #Geofrey
+		liege = k_lotharingia
+	}
+	
+}
+
+c_jaligny = {
+	
+	361.1.1 = { change_development_level = 4 }
+	200.1.1 = {
+	}
+	476.1.1 = {
+		government = feudal_government
+	}
+
+	361.1.1 = {
+		holder = septem_09
+		liege = d_aquitaine
+	}
+
+	##Visigothic Control
+	412.1.1 = {
+		liege = d_toulouse
+	}
+	476.1.1 = {
+		holder = tolosa_06 # Fictional Vassal under Evaric
+	}
+	##Frankish Control
+	523.1.1 = {
+		holder = metz_04
+		liege = d_metz
+	}
+	629.1.1 = {
+		holder = aquitania_12 # Sallustius
+		liege = k_aquitaine
+	}
+	768.1.1 = {
+		holder = aquitania_15
+		liege = k_lotharingia
+	}
+}
+
+c_la_marche = {
+
+	361.1.1 = { change_development_level = 4 }
+	200.1.1 = {
+	}
+	476.1.1 = {
+		government = feudal_government
+	}
+
+	361.1.1 = {
+		holder = septem_09
+		liege = d_aquitaine
+	}
+	
+	##Visigothic Control
+	412.1.1 = {
+		liege = d_toulouse
+	}
+	476.1.1 = {
+		holder = tolosa_06 # Fictional Vassal under Evaric
+	}
+
+	##Frankish Control
+	523.1.1 = {
+		holder = metz_04
+		liege = d_metz
+	}
+	629.1.1 = {
+		holder = aquitania_12 # Sallustius
+		liege = k_aquitaine
+	}
+	767.1.1 = {
+		holder = 190561 #Geofrey
+		liege = k_lotharingia
+	}
+	
+}
+
+d_poitou = {
+	200.1.1 = {
+	}
+	476.1.1 = {
+		government = feudal_government
+	}
+	476.1.1 = {
+		holder = taifal_03 # Taifal Fiction
+		name = TAIFALIA
+	}
+	# 511.11.27 = {
+	# 	holder = 997012
+	# }
+	620.1.1 = {
+		holder = aquitania_01 # Bodilon
+		reset_name = yes
+	}
+	630.1.1 = {
+		liege = k_aquitaine
+	}
+	638.1.1 = {
+		holder = aquitania_02 # Warin
+	}
+	735.1.1 = {
+		holder = 190483 # Hatto
+	}
+	768.1.1 = {
+		holder = 0
+	}
+}
+
+
+c_poitiers = {
+	532.1.1 = { change_development_level = 5 }
+	768.1.1 = { change_development_level = 6 }
+	
+	200.1.1 = {
+		de_jure_liege = d_aquitaine
+		liege = d_aquitaine
+	}
+	476.1.1 = {
+		government = feudal_government
+	}
+	361.1.1 = {
+		holder = septem_07
+	}
+	365.1.1 = {
+		holder = taifal_01
+		government = feudal_government
+	}
+	395.1.1 = {
+		liege = d_aquitaine
+	}
+	476.1.1 = {
+		de_jure_liege = d_poitou
+	}
+	476.1.1 = {
+		holder = taifal_03 # Taifal Fiction
+	}
+	##Frankish Control
+	523.1.1 = {
+		holder = taifal_05 # Taifal Fiction
+		liege = k_frankish_paris
+	}
+	620.1.1 = {
+		holder = aquitania_01 # Bodilon
+		liege = k_aquitaine
+	}
+	638.1.1 = {
+		holder = aquitania_02 # Warin
+	}
+	735.1.1 = {
+		holder = 190483 # Hatto
+	}
+
+	768.1.1 = {
+		holder = 190510 #Abbon
+		liege = d_aquitaine
+	}
+	
+}
+
+c_lusignan = {
+
+	200.1.1 = {
+		de_jure_liege = d_aquitaine
+		liege = d_aquitaine
+	}
+	476.1.1 = {
+		government = feudal_government
+	}
+	361.1.1 = {
+		holder = septem_07
+	}
+	365.1.1 = {
+		holder = taifal_01
+		government = feudal_government
+	}
+	395.1.1 = {
+		liege = d_aquitaine
+	}
+	476.1.1 = {
+		de_jure_liege = d_poitou
+	}
+	476.1.1 = {
+		holder = tolosa_07 # Fictional Vassal under Evaric
+	}
+
+	523.1.1 = {
+		holder = taifal_05 # Taifal Fiction
+		liege = d_valois
+	}
+
+	620.1.1 = {
+		holder = aquitania_01 # Bodilon
+		liege = k_aquitaine
+	}
+	638.1.1 = {
+		holder = aquitania_02 # Warin
+	}
+	678.1.1 = {
+		holder = 190478 #Boggis
+		liege = k_france
+	}
+	707.1.1 = {
+		holder = 190479 #Eudes
+	}
+	735.1.1 = {
+		holder = 190480 #Hunoald
+		liege = 0
+	}
+	744.1.1 = {
+		holder = 190481 #Waifar
+		liege = k_france
+	}
+	766.1.1 = {
+		liege = 0
+	}
+	768.6.2 = {
+		holder = 190480 #Hunoald
+		liege = k_france
+	}
+	
+}
+
+c_montaigu = {
+
+	200.1.1 = {
+		de_jure_liege = d_aquitaine
+		liege = d_aquitaine
+	}
+	476.1.1 = {
+		government = feudal_government
+	}
+
+	361.1.1 = {
+		holder = septem_07
+	}
+	395.1.1 = {
+		liege = d_aquitaine
+	}
+	476.1.1 = {
+		de_jure_liege = d_poitou
+	}
+	##Visigothic Control
+	
+	476.1.1 = {
+		holder = taifal_03 # Taifal Fiction
+	}
+
+	523.1.1 = {
+		holder = taifal_05 # Taifal Fiction
+		liege = d_valois
+	}
+	620.1.1 = {
+		holder = aquitania_01 # Bodilon
+		liege = k_aquitaine
+	}
+	638.1.1 = {
+		holder = aquitania_02 # Warin
+	}
+	735.1.1 = {
+		holder = 190483 # Hatto
+	}
+	768.1.1 = {
+		holder = 190510 #Abbon
+		liege = d_aquitaine
+	}
+}
+
+
+c_thouars = {
+
+	200.1.1 = {
+		de_jure_liege = d_aquitaine
+		liege = d_aquitaine
+	}
+	476.1.1 = {
+		government = feudal_government
+	}
+	361.1.1 = {
+		holder = septem_07
+	}
+	395.1.1 = {
+		liege = d_aquitaine
+	}
+	476.1.1 = {
+		de_jure_liege = d_poitou
+	}
+	##Visigothic Control
+	
+	476.1.1 = {
+		holder = taifal_03 # Taifal Fiction
+	}
+
+	523.1.1 = {
+		holder = taifal_05 # Taifal Fiction
+		liege = d_valois
+	}
+	620.1.1 = {
+		holder = aquitania_01 # Bodilon
+		liege = k_aquitaine
+	}
+	638.1.1 = {
+		holder = aquitania_02 # Warin
+	}
+	735.1.1 = {
+		holder = 190483 # Hatto
+	}
+	768.1.1 = {
+		holder = 190510 #Abbon
+		liege = d_aquitaine
+	}
+}

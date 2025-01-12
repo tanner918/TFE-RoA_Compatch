@@ -1,0 +1,960 @@
+﻿namespace = north_indian_struggle
+
+### SYSTEM EVENTS #################################################################
+## # Parameter Events
+## # Other Events
+### EVENT LIST ####################################################################
+###################################################################################
+
+# Setting AI Intent
+north_indian_struggle.0003 = {
+	hidden = yes
+	scope = none
+	scope = struggle
+
+	trigger = { # Should not need this, but, redundancy check! -h
+		exists = struggle:north_indian_struggle
+		struggle:north_indian_struggle = { any_involved_ruler = { count > 0 } } # For when the conflict is ongoing but nobody is left to fight it
+	}
+
+	immediate = {
+		# prepare needed variables; they will be destroyed at the end of the immediate
+		set_variable = {
+			name = agents_for_escalation
+			value = 0
+		}
+		set_variable = {
+			name = agents_for_deescalation
+			value = 0
+		}
+
+		# Go through the characters to distribute them between the potential transitions
+		struggle:north_indian_struggle = {
+			every_involved_ruler = {
+				limit = { is_alive = yes }
+				#######################
+				# Play cue track
+				######################
+				if = {
+					limit = { is_ai = no }
+					play_music_cue = "mx_Struggle_Opening"
+				}
+
+				#######################
+				# Check existing flags
+				######################
+				if = {
+					limit = { has_character_flag = agenda_towards_escalation }
+					change_variable = {
+						name = agents_for_escalation
+						add = 1
+					}
+				}
+				else_if = {
+					limit = { has_character_flag = agenda_towards_deescalation }
+					change_variable = {
+						name = agents_for_deescalation
+						add = 1
+					}
+				}
+				else = { # Set a flag
+				
+					#############################
+					# Current Phase: EXPANSION
+					#############################
+					if = {
+						limit = { root = { is_struggle_phase = struggle_TFE_eastern_iranian_phase_expansion } }
+						random_list = {
+							# Working towards hostility
+							# It should be for characters looking for direct conflicts and domination, with the will and ability to expand their realms
+							100 = {
+								# Odds modifiers
+								north_indian_struggle_set_ai_agenda_common_modifiers = {
+									PHASE = hostility
+									INTENT = escalation
+								}
+
+								# Apply effects
+								north_indian_struggle_apply_ai_agenda_effect = {
+									INTENT = escalation
+								}
+							}
+							# Working towards development
+							100 = {
+								# Odds modifiers
+								north_indian_struggle_set_ai_agenda_common_modifiers = {
+									PHASE = development
+									INTENT = deescalation
+								}
+
+								# Apply effects
+								north_indian_struggle_apply_ai_agenda_effect = {
+									INTENT = deescalation
+								}
+							}
+						}
+					}
+
+					#############################
+					# Current Phase: DEVELOPMENT
+					#############################
+					if = {
+						limit = { root = { is_struggle_phase = struggle_TFE_eastern_iranian_phase_development } }
+						random_list = {
+							# Working towards compromise
+							# It should be for characters looking for direct conflicts and domination, with the will and ability to expand their realms
+							100 = {
+								# Odds modifiers
+								north_indian_struggle_set_ai_agenda_common_modifiers = {
+									PHASE = compromise
+									INTENT = escalation
+								}
+
+								# Apply effects
+								north_indian_struggle_apply_ai_agenda_effect = {
+									INTENT = escalation
+								}
+							}
+						}
+					}
+					#############################
+					# Current Phase: Hostility
+					#############################
+					if = {
+						limit = { root = { is_struggle_phase = struggle_TFE_eastern_iranian_phase_hostility } }
+						random_list = {
+							# Working towards Compromise
+							100 = {
+								# Odds modifiers
+								north_indian_struggle_set_ai_agenda_common_modifiers = {
+									PHASE = compromise
+									INTENT = deescalation
+								}
+
+								# Apply effects
+								north_indian_struggle_apply_ai_agenda_effect = {
+									INTENT = deescalation
+								}
+							}
+						}
+					}
+
+					#############################
+					# Current Phase: Compromise
+					#############################
+					if = {
+						limit = { root = { is_struggle_phase = struggle_TFE_eastern_iranian_phase_compromise } }
+						random_list = {
+							# Working towards expansion
+							100 = {
+								# Odds modifiers
+								north_indian_struggle_set_ai_agenda_common_modifiers = {
+									PHASE = expansion
+									INTENT = escalation
+								}
+
+								# Apply effects
+								north_indian_struggle_apply_ai_agenda_effect = {
+									INTENT = escalation
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		# Clean variables
+		remove_variable = agents_for_escalation
+		remove_variable = agents_for_deescalation
+	}
+}
+
+# Set AI Intent on join
+north_indian_struggle.0004 = {
+	hidden = yes
+	scope = none
+
+	immediate = {
+		set_variable = {
+			name = agents_for_escalation
+			value = 0
+		}
+		set_variable = {
+			name = agents_for_deescalation
+			value = 0
+		}
+
+		############################
+		# Update the variables
+		############################
+		every_character_struggle = {
+			every_involved_ruler = {
+				limit = { is_alive = yes }
+				if = {
+					limit = { has_character_flag = agenda_towards_escalation }
+					root = {
+						change_variable = {
+							name = agents_for_escalation
+							add = 1
+						}
+					}
+				}
+				else_if = {
+					limit = { has_character_flag = agenda_towards_deescalation }
+					root = {
+						change_variable = {
+							name = agents_for_deescalation
+							add = 1
+						}
+					}
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				NOR = {
+					has_character_flag = agenda_towards_escalation
+					has_character_flag = agenda_towards_deescalation
+				}
+			}
+
+			#############################
+			# Current Phase: EXPANSION
+			#############################
+			if = {
+				limit = { any_character_struggle = { AND = { is_struggle_type = north_indian_struggle is_struggle_phase = struggle_TFE_eastern_iranian_phase_expansion } } }
+				random_list = {
+					# Working towards hostility
+					# It should be for characters looking for direct conflicts and domination, with the will and ability to expand their realms
+					100 = {
+						# Odds modifiers
+						north_indian_struggle_set_ai_agenda_common_modifiers = {
+							PHASE = hostility
+							INTENT = escalation
+						}
+
+						# Apply effects
+						north_indian_struggle_apply_ai_agenda_effect = {
+							INTENT = escalation
+						}
+					}
+					# Working towards development
+					100 = {
+						# Odds modifiers
+						north_indian_struggle_set_ai_agenda_common_modifiers = {
+							PHASE = development
+							INTENT = deescalation
+						}
+
+						# Apply effects
+						north_indian_struggle_apply_ai_agenda_effect = {
+							INTENT = deescalation
+						}
+					}
+				}
+			}
+
+			#############################
+			# Current Phase: DEVELOPMENT
+			#############################
+			if = {
+				limit = { any_character_struggle = { AND = { is_struggle_type = north_indian_struggle is_struggle_phase = struggle_TFE_eastern_iranian_phase_development } } }
+				random_list = {
+					# Working towards compromise
+					# It should be for characters looking for direct conflicts and domination, with the will and ability to expand their realms
+					100 = {
+						# Odds modifiers
+						north_indian_struggle_set_ai_agenda_common_modifiers = {
+							PHASE = compromise
+							INTENT = escalation
+						}
+
+						# Apply effects
+						north_indian_struggle_apply_ai_agenda_effect = {
+							INTENT = escalation
+						}
+					}
+				}
+			}
+			#############################
+			# Current Phase: Hostility
+			#############################
+			if = {
+				limit = { any_character_struggle = { AND = { is_struggle_type = north_indian_struggle is_struggle_phase = struggle_TFE_eastern_iranian_phase_hostility } } }
+				random_list = {
+					# Working towards Compromise
+					100 = {
+						# Odds modifiers
+						north_indian_struggle_set_ai_agenda_common_modifiers = {
+							PHASE = compromise
+							INTENT = deescalation
+						}
+
+						# Apply effects
+						north_indian_struggle_apply_ai_agenda_effect = {
+							INTENT = deescalation
+						}
+					}
+				}
+			}
+
+			#############################
+			# Current Phase: Compromise
+			#############################
+			if = {
+				limit = { any_character_struggle = { AND = { is_struggle_type = north_indian_struggle is_struggle_phase = struggle_TFE_eastern_iranian_phase_compromise } } }
+				random_list = {
+					# Working towards expansion
+					100 = {
+						# Odds modifiers
+						north_indian_struggle_set_ai_agenda_common_modifiers = {
+							PHASE = expansion
+							INTENT = escalation
+						}
+
+						# Apply effects
+						north_indian_struggle_apply_ai_agenda_effect = {
+							INTENT = escalation
+						}
+					}
+				}
+			}
+		}
+
+		# Clean variables
+		remove_variable = agents_for_escalation
+		remove_variable = agents_for_deescalation
+	}
+}
+
+###################################
+# North Indian Struggle Intro Events
+# 0501 - 599
+###################################
+north_indian_struggle.0501 = { # Fullscreen Intro Event
+	type = character_event
+	window = fullscreen_event
+	title = north_indian_struggle.0501.t
+	desc = {
+		desc = north_indian_struggle.0501.desc
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					any_character_struggle = {
+						involvement = involved
+						is_struggle_type = north_indian_struggle
+					}
+				}
+				desc = fp2_struggle.0501.desc.involved
+			}
+			triggered_desc = {
+				trigger = {
+					any_character_struggle = {
+						involvement = interloper
+						is_struggle_type = north_indian_struggle
+					}
+				}
+				desc = fp2_struggle.0501.desc.interloper
+			}
+		}
+	}
+	theme = realm
+	trigger = { # we need to prevent this from firing for all players when a new player joins in MP
+		is_ai = no
+		NOT = { has_character_flag = north_indian_struggle_intro_event_flag }
+		tfe_character_any_involvement_north_indian_struggle_trigger = yes
+ 	}
+	override_background = { reference = TFE_struggle_bg_indian_palace }
+	override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_animate" }
+
+	widgets = {
+		widget = {
+ 			gui = "event_window_widget_struggle_info"
+ 			container = "dynamic_content_widget"
+ 			controller = struggle_info
+ 			setup_scope = { struggle:north_indian_struggle = { save_scope_as = struggle } }
+		}
+	}
+	immediate = {
+		play_music_cue = "mood_alexandria"
+		add_character_flag = north_indian_struggle_intro_event_flag
+		save_scope_value_as = {
+			name = start
+			value = yes
+		}
+	}
+	option = {
+		name = north_indian_struggle.0501.a
+		clicksound = "event:/DLC/FP2/SFX/UI/fp2_struggle_start_select"
+	}
+}
+
+
+
+
+###################################
+# North Indian Struggle Ending Events
+# 1000 - 1099
+###################################
+
+
+
+# Hunas/Foreign Victory Ending
+north_indian_struggle.1000 = { 
+	type = character_event
+	window = fullscreen_event
+	title = north_indian_struggle.1000.t
+	desc = north_indian_struggle.1000.desc
+	theme = court
+	override_background = { reference = TFE_struggle_bg_nomad_feast }
+	override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_end_animate" }
+
+	immediate = {
+
+		play_music_cue = "mx_Struggle_ending_hostility"
+
+		dynasty = { add_dynasty_prestige = 10000 }
+		give_nickname = nick_the_great
+
+		save_scope_as = struggle_ender
+	}
+
+	# terror
+	option = {
+		name = north_indian_struggle.1000.a
+		house = {
+			add_house_modifier = {
+				modifier = struggle_north_indian_house_terror_modifier
+			}
+		}		
+		stress_impact = {
+			compassionate = minor_stress_impact_gain
+			calm = minor_stress_impact_gain
+		}
+		set_global_variable = {
+			name = TFE_struggle_north_indian_terror_victory
+			value = yes
+			days = 15 # Clear out eventually, just in case
+		}
+	}
+
+	# mastery
+	option = {
+		name = north_indian_struggle.1000.b
+		house = {
+			add_house_modifier = {
+				modifier = struggle_north_indian_house_mastery_modifier
+			}
+		}
+		stress_impact = {
+			brave = minor_stress_impact_gain
+			impatient = minor_stress_impact_gain
+		}
+		set_global_variable = {
+			name = TFE_struggle_north_indian_mastery_victory
+			value = yes
+			days = 15 # Clear out eventually, just in case
+		}
+	}
+
+	# authority
+	option = {
+		name = north_indian_struggle.1000.c
+		house = {
+			add_house_modifier = {
+				modifier = struggle_north_indian_house_authority_modifier
+			}
+		}
+		stress_impact = {
+			arrogant = minor_stress_impact_gain
+			sadistic = minor_stress_impact_gain
+		}
+		set_global_variable = {
+			name = TFE_struggle_north_indian_authority_victory
+			value = yes
+			days = 15 # Clear out eventually, just in case
+		}
+	}
+
+	after = {
+		# End Struggle
+		struggle:north_indian_struggle = {
+			end_struggle = struggle_north_indian_ending_foreign_domination_decision
+		}
+		# Notify
+		every_player = {
+			limit = {
+				OR = {
+					this = root
+					capital_province = {
+						OR = {
+							geographical_region = world_india
+							geographical_region = world_burma
+							geographical_region = world_tibet
+							geographical_region = world_middle_east
+							geographical_region = world_africa_east
+							geographical_region = world_steppe_tarim
+							geographical_region = world_steppe_east
+						}
+					}					
+				}
+			}
+			trigger_event = north_indian_struggle.1001
+		}
+	}
+}
+
+
+
+
+
+# Hun/Foreign Ending notification
+north_indian_struggle.1001 = { # Fullscreen Intro Event
+	type = character_event
+	window = fullscreen_event
+	title = north_indian_struggle.1001.t
+	desc = {
+		desc = north_indian_struggle.1001.desc
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					has_global_variable = TFE_struggle_north_indian_terror_victory
+				}
+				desc = north_indian_struggle.1001.desc.closing.terror
+			}
+			triggered_desc = {
+				trigger = {
+					has_global_variable = TFE_struggle_north_indian_mastery_victory
+				}
+				desc = north_indian_struggle.1001.desc.closing.mastery
+			}
+			triggered_desc = {
+				trigger = {
+					has_global_variable = TFE_struggle_north_indian_authority_victory
+				}
+				desc = north_indian_struggle.1001.desc.closing.authority
+			}
+		}
+	}
+	theme = court
+	override_background = { reference = TFE_struggle_bg_nomad_feast }
+	override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_animate" }
+
+	immediate = {
+		play_music_cue = "mx_Struggle_ending_hostility"
+		scope:struggle_ender = {
+			show_as_tooltip = {
+				if = {
+					limit = {
+						has_global_variable = TFE_struggle_north_indian_terror_victory
+					}
+					house = {
+						add_house_modifier = {
+							modifier = struggle_north_indian_house_terror_modifier
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_global_variable = TFE_struggle_north_indian_mastery_victory
+					}
+					house = {
+						add_house_modifier = {
+							modifier = struggle_north_indian_house_mastery_modifier
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_global_variable = TFE_struggle_north_indian_authority_victory
+					}
+					house = {
+						add_house_modifier = {
+							modifier = struggle_north_indian_house_authority_modifier
+						}
+					}
+				}
+			}			
+		}
+	}
+	option = {
+		name = north_indian_struggle.1001.a
+	}
+}
+
+
+
+# Indian Victory Ending
+north_indian_struggle.1002 = { 
+	type = character_event
+	window = fullscreen_event
+	title = north_indian_struggle.1002.t
+	desc = north_indian_struggle.1002.desc
+	theme = court
+	override_background = { reference = TFE_struggle_bg_indian_palace }
+	override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_end_animate" }
+
+	immediate = {
+
+		play_music_cue = "mx_Struggle_ending_compromise"
+
+		dynasty = { add_dynasty_prestige = 10000 }
+		give_nickname = nick_the_great
+
+		save_scope_as = struggle_ender
+	}
+
+	# majesty
+	option = {
+		name = north_indian_struggle.1002.a
+		house = {
+			add_house_modifier = {
+				modifier = struggle_north_indian_house_majesty_modifier
+			}
+		}		
+		stress_impact = {
+			humble = minor_stress_impact_gain
+			shy = minor_stress_impact_gain
+		}
+		set_global_variable = {
+			name = TFE_struggle_north_indian_majesty_victory
+			value = yes
+			days = 15 # Clear out eventually, just in case
+		}
+	}
+
+	# might
+	option = {
+		name = north_indian_struggle.1002.b
+		house = {
+			add_house_modifier = {
+				modifier = struggle_north_indian_house_might_modifier
+			}
+		}
+		stress_impact = {
+			compassionate = minor_stress_impact_gain
+			trusting = minor_stress_impact_gain
+		}
+		set_global_variable = {
+			name = TFE_struggle_north_indian_might_victory
+			value = yes
+			days = 15 # Clear out eventually, just in case
+		}
+	}
+
+	# opulence
+	option = {
+		name = north_indian_struggle.1002.c
+		house = {
+			add_house_modifier = {
+				modifier = struggle_north_indian_house_opulence_modifier
+			}
+		}
+		stress_impact = {
+			temperate = minor_stress_impact_gain
+			zealous = minor_stress_impact_gain
+		}
+		set_global_variable = {
+			name = TFE_struggle_north_indian_opulence_victory
+			value = yes
+			days = 15 # Clear out eventually, just in case
+		}
+	}
+
+	after = {
+		# End Struggle
+		struggle:north_indian_struggle = {
+			end_struggle = struggle_north_indian_ending_indian_domination_decision
+		}
+		# Notify
+		every_player = {
+			limit = {
+				OR = {
+					this = root
+					capital_province = {
+						OR = {
+							geographical_region = world_india
+							geographical_region = world_burma
+							geographical_region = world_tibet
+							geographical_region = world_middle_east
+							geographical_region = world_africa_east
+							geographical_region = world_steppe_tarim
+							geographical_region = world_steppe_east
+						}
+					}					
+				}
+			}
+			trigger_event = north_indian_struggle.1003
+		}
+	}
+}
+
+
+
+
+
+# Indian Ending notification
+north_indian_struggle.1003 = { # Fullscreen Intro Event
+	type = character_event
+	window = fullscreen_event
+	title = north_indian_struggle.1003.t
+	desc = {
+		desc = north_indian_struggle.1003.desc
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					has_global_variable = TFE_struggle_north_indian_majesty_victory
+				}
+				desc = north_indian_struggle.1003.desc.closing.majesty
+			}
+			triggered_desc = {
+				trigger = {
+					has_global_variable = TFE_struggle_north_indian_might_victory
+				}
+				desc = north_indian_struggle.1003.desc.closing.might
+			}
+			triggered_desc = {
+				trigger = {
+					has_global_variable = TFE_struggle_north_indian_opulence_victory
+				}
+				desc = north_indian_struggle.1003.desc.closing.opulence
+			}
+		}
+	}
+	theme = court
+	override_background = { reference = TFE_struggle_bg_indian_palace }
+	override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_animate" }
+
+	immediate = {
+		play_music_cue = "mx_Struggle_ending_compromise"
+		scope:struggle_ender = {
+			show_as_tooltip = {
+				if = {
+					limit = {
+						has_global_variable = TFE_struggle_north_indian_majesty_victory
+					}
+					house = {
+						add_house_modifier = {
+							modifier = struggle_north_indian_house_majesty_modifier
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_global_variable = TFE_struggle_north_indian_might_victory
+					}
+					house = {
+						add_house_modifier = {
+							modifier = struggle_north_indian_house_might_modifier
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_global_variable = TFE_struggle_north_indian_opulence_victory
+					}
+					house = {
+						add_house_modifier = {
+							modifier = struggle_north_indian_house_opulence_modifier
+						}
+					}
+				}
+			}			
+		}
+	}
+	option = {
+		name = north_indian_struggle.1003.a
+	}
+}
+
+
+
+# Confluence Ending
+north_indian_struggle.1004 = { 
+	type = character_event
+	window = fullscreen_event
+	title = north_indian_struggle.1004.t
+	desc = north_indian_struggle.1004.desc
+	theme = court
+	override_background = { reference = TFE_struggle_bg_indian_holy_site }
+	override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_end_animate" }
+
+	immediate = {
+
+		play_music_cue = "mx_Struggle_ending_conciliation"
+
+		dynasty = { add_dynasty_prestige = 10000 }
+		give_nickname = nick_the_great
+
+		save_scope_as = struggle_ender
+	}
+
+	# Religious
+	option = {
+		name = north_indian_struggle.1004.a
+		house = {
+			add_house_modifier = {
+				modifier = struggle_north_indian_house_religious_modifier
+			}
+		}		
+		stress_impact = {
+			zealous = minor_stress_impact_gain
+			sadistic = minor_stress_impact_gain
+		}
+		set_global_variable = {
+			name = TFE_struggle_north_indian_religious_victory
+			value = yes
+			days = 15 # Clear out eventually, just in case
+		}
+	}
+
+	# Cultural
+	option = {
+		name = north_indian_struggle.1004.b
+		house = {
+			add_house_modifier = {
+				modifier = struggle_north_indian_house_cultural_modifier
+			}
+		}
+		stress_impact = {
+			paranoid = minor_stress_impact_gain
+			arrogant = minor_stress_impact_gain
+		}
+		set_global_variable = {
+			name = TFE_struggle_north_indian_cultural_victory
+			value = yes
+			days = 15 # Clear out eventually, just in case
+		}
+	}
+
+	# Economical
+	option = {
+		name = north_indian_struggle.1004.c
+		house = {
+			add_house_modifier = {
+				modifier = struggle_north_indian_house_economical_modifier
+			}
+		}
+		stress_impact = {
+			temperate = minor_stress_impact_gain
+			lazy = minor_stress_impact_gain
+		}
+		set_global_variable = {
+			name = TFE_struggle_north_indian_economical_victory
+			value = yes
+			days = 15 # Clear out eventually, just in case
+		}
+	}
+
+	after = {
+		# End Struggle
+		struggle:north_indian_struggle = {
+			end_struggle = struggle_north_indian_ending_confluence_decision
+		}
+		set_global_variable = {
+			name = TFE_struggle_north_indian_ending_confluence
+			value = yes
+		}
+		# Notify
+		every_player = {
+			limit = {
+				OR = {
+					this = root
+					capital_province = {
+						OR = {
+							geographical_region = world_india
+							geographical_region = world_burma
+							geographical_region = world_tibet
+							geographical_region = world_middle_east
+							geographical_region = world_africa_east
+							geographical_region = world_steppe_tarim
+							geographical_region = world_steppe_east
+						}
+					}					
+				}
+			}
+			trigger_event = north_indian_struggle.1005
+		}
+	}
+}
+
+
+
+
+
+# Hun/Foreign Ending notification
+north_indian_struggle.1005 = { # Fullscreen Intro Event
+	type = character_event
+	window = fullscreen_event
+	title = north_indian_struggle.1005.t
+	desc = {
+		desc = north_indian_struggle.1005.desc
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					has_global_variable = TFE_struggle_north_indian_religious_victory
+				}
+				desc = north_indian_struggle.1005.desc.closing.religious
+			}
+			triggered_desc = {
+				trigger = {
+					has_global_variable = TFE_struggle_north_indian_cultural_victory
+				}
+				desc = north_indian_struggle.1005.desc.closing.cultural
+			}
+			triggered_desc = {
+				trigger = {
+					has_global_variable = TFE_struggle_north_indian_economical_victory
+				}
+				desc = north_indian_struggle.1005.desc.closing.economical
+			}
+		}
+		desc = north_indian_struggle.1005.desc.closing
+	}
+	theme = court
+	override_background = { reference = TFE_struggle_bg_indian_holy_site }
+	override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_animate" }
+
+	immediate = {
+		play_music_cue = "mx_Struggle_ending_conciliation"
+		scope:struggle_ender = {
+			show_as_tooltip = {
+				if = {
+					limit = {
+						has_global_variable = TFE_struggle_north_indian_religious_victory
+					}
+					house = {
+						add_house_modifier = {
+							modifier = struggle_north_indian_house_religious_modifier
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_global_variable = TFE_struggle_north_indian_cultural_victory
+					}
+					house = {
+						add_house_modifier = {
+							modifier = struggle_north_indian_house_cultural_modifier
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_global_variable = TFE_struggle_north_indian_economical_victory
+					}
+					house = {
+						add_house_modifier = {
+							modifier = struggle_north_indian_house_economical_modifier
+						}
+					}
+				}
+			}			
+		}
+	}
+	option = {
+		name = north_indian_struggle.1005.a
+	}
+}

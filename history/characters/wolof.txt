@@ -1,0 +1,163 @@
+﻿
+wolof_01 = {
+	name = "War_Ndyabe"
+	dynasty = wolofdyn001
+	religion = west_african_roog_pagan
+	culture = pulaar
+	330.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+wolof_02 = {
+	name = "Labi"
+	dynasty = wolofdyn001
+	religion = west_african_roog_pagan
+	culture = pulaar
+	354.12.12 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+wolof_03 = {
+	name = "Ndyabe" #fictional placeholder
+	dynasty = wolofdyn001
+	religion = west_african_roog_pagan
+	culture = pulaar
+	443.12.12 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+wolof_04 = {
+	name = "Lamane" #fictional placeholder
+	dynasty = wolofdyn001
+	religion = west_african_roog_pagan
+	culture = pulaar
+	324.12.12 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+wolof_05 = {
+	name = "Labi" #fictional placeholder
+	dynasty = wolofdyn001
+	religion = west_african_roog_pagan
+	culture = pulaar
+	360.12.12 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+wolof_06 = {
+	name = "Ndyabe" #fictional placeholder
+	dynasty = wolofdyn001
+	religion = west_african_roog_pagan
+	culture = pulaar
+	450.12.12 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+
+wolof_07 = {
+	name = Harwanu
+	dynasty = ogo
+	religion = west_african_roog_pagan
+	culture = pulaar
+	trait = strong
+	trait = physique_good_2
+	trait = education_martial_3
+	trait = aggressive_attacker
+	trait = brave
+	trait = ambitious
+	trait = arrogant
+	martial = 8
+	prowess = 8
+	492.1.1 = {
+		birth = yes
+		give_nickname = nick_dyaukka
+	}
+	530.1.1 = {
+		set_relation_rival = character:wolof_09
+	}
+	590.1.1 = {
+		death = yes
+	}
+}
+
+wolof_08 = {
+	name = Pendo
+	female = yes
+	dynasty = ogo
+	father = wolof_07
+	religion = west_african_roog_pagan
+	culture = pulaar
+	trait = physique_good_1
+	530.1.1 = {
+		birth = yes
+		give_nickname = nick_dyaukka
+	}
+	610.1.1 = {
+		death = yes
+	}
+}
+
+wolof_09 = {
+	name = Musd
+	dynasty = mind
+	religion = west_african_roog_pagan
+	culture = serer
+	trait = strong
+	trait = physique_good_2
+	trait = education_intrigue_3
+	trait = brave
+	trait = ambitious
+	trait = arrogant
+	intrigue = 7
+	prowess = 8
+	510.1.1 = {
+		birth = yes
+		give_nickname = nick_manna
+	}
+	526.1.1 = {
+		effect = {
+			add_trait = lifestyle_blademaster
+			add_trait_xp = {
+				trait = lifestyle_blademaster
+				value = 100
+			}
+		}
+	}
+	530.1.1 = {
+		set_relation_rival = character:wolof_07
+		add_unpressed_claim = title:d_silla
+	}
+	610.1.1 = {
+		death = yes
+	}
+}
+
+wolof_10 = {
+	name = "Ndyabe" #fictional placeholder
+	religion = west_african_bidu_pagan
+	culture = soninke
+	500.12.12 = {
+		birth = yes
+	}
+	590.1.1 = {
+		death = yes
+	}
+}

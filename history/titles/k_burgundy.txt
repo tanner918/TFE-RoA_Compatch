@@ -1,0 +1,857 @@
+﻿k_burgundy = {
+	361.1.1 = { change_development_level = 4 }
+	768.1.1 = { change_development_level = 5 }
+	
+	443.1.1 = {
+		holder = 994004 #Gundeoc
+		succession_laws = { male_only_law }
+		government = feudal_government
+	}
+	470.1.1 = {
+		holder = 994005 # Chilperic I
+	}
+	480.1.1 = {
+		holder = 994008 #Gundebad
+	}
+	516.1.1 = {
+		holder = 994012 #Sigismund
+	}
+	523.1.1 = {
+		holder = 994013 #Gundemar
+	}
+	534.1.1 = {
+		holder = 0
+	}
+	558.1.1 = {
+		holder = 168681 #Clothar
+	}
+	561.3.28 = {
+		holder = 168686 #Gontran
+	}
+	592.1.1 = {
+		holder = 168691 #Childibert
+	}
+	595.1.1 = {
+		holder = 168693 #Theoderic
+	}
+	613.1.1 = {
+		holder = 168694 #Sigisbert
+	}
+	613.7.1 = {
+		holder = 168695 #Clothar II
+	}
+	629.1.1 = {
+		holder = 168696 #Dagobert
+	}
+}
+
+d_provence = {
+	361.1.1 = {
+		holder = burgundy_03
+		liege = k_septem_provinciae
+		de_jure_liege = k_septem_provinciae
+	}
+	476.1.1 = {
+		de_jure_liege = k_burgundy
+	}
+	510.1.1 = {
+		holder = aegyptus_21
+		liege = k_italy
+	}
+	763.1.1 = {
+		liege = k_lotharingia
+	}
+	763.1.1 = {
+		holder = 194040 #Thomas
+	}
+}
+
+
+c_provence = {
+	361.1.1 = { change_development_level = 7 }
+	768.1.1 = { change_development_level = 8 }
+	
+	#Roman
+	361.1.1 = {
+		holder = burgundy_03
+		liege = k_septem_provinciae
+	}
+	395.1.17 = {
+		liege = k_septem_provinciae
+	}
+	476.1.1 = {
+		holder = burgundy_07 #
+		government = feudal_government
+		liege = k_visigoths
+	}
+	510.1.1 = {
+		holder = aegyptus_21 #Liberius, Praetorian Prefect of Gaul
+		liege = k_italy
+	}
+	#Merovingina
+	620.1.1 = {
+		holder = burgundy_15 #Fictional vassal
+		liege = d_dauphine
+	}
+	#Karling
+	763.1.1 = {
+		liege = k_lotharingia
+	}
+	763.1.1 = {
+		holder = 194040 #Thomas
+	}
+}
+
+
+c_nice = {
+	361.1.1 = { change_development_level = 6 }
+	361.1.1 = {
+		holder = burgundy_02
+		liege = k_septem_provinciae
+		de_jure_liege = d_alpes_maritimae
+	}
+	395.1.17 = {
+		liege = k_septem_provinciae
+	}
+	476.1.1 = {
+		holder = burgundy_08 #
+		de_jure_liege = d_provence
+		government = feudal_government
+		liege = k_visigoths
+	}
+	523.1.1 = {
+		holder = aegyptus_21 #Liberius, Praetorian Prefect of Gaul
+		liege = k_italy
+	}
+	#Merovingina
+	620.1.1 = {
+		holder = burgundy_15 #Fictional vassal
+		liege = d_dauphine
+	}
+	756.1.1 = {
+		liege = k_italy
+	}
+	756.1.1 = {
+		holder = 190330 #Liutprand
+	}
+}
+
+
+c_forcalquier = {
+	#Roman
+	361.1.1 = {
+		holder = burgundy_03
+		liege = k_septem_provinciae
+	}
+	395.1.17 = {
+		liege = k_septem_provinciae
+	}
+	476.1.1 = {
+		holder = 994007 #
+		government = feudal_government
+		liege = k_burgundy
+		de_jure_liege = d_dauphine
+	}
+	523.1.1 = {
+		holder = 994013
+		liege = k_italy
+	}		
+	532.1.1 = {
+		holder = gallo_roman_misc_004
+		liege = d_burgundy
+	}
+	#Merovingina
+	620.1.1 = {
+		holder = burgundy_15 #Fictional vassal
+		liege = d_dauphine
+	}
+	765.1.1 = {
+		liege = "d_provence"
+		holder = 91500 #Welentus, historical as placeholder
+	}
+
+}
+
+c_embrun = {
+	361.1.1 = { change_development_level = 6 }
+	361.1.1 = {
+		holder = burgundy_02
+		liege = k_septem_provinciae
+		de_jure_liege = d_alpes_maritimae
+	}
+	395.1.17 = {
+		liege = k_septem_provinciae
+	}
+	#Burgundy
+	473.1.2 = {
+		holder = 994006 #GUndemar
+		government = feudal_government
+		liege = k_burgundy
+		de_jure_liege = d_provence
+	}
+	523.1.1 = {
+		holder = 994013 #Gundemar
+	}
+	532.1.1 = {
+		holder = burgundian_misc_002
+		liege = d_burgundy
+	}
+	#Merovingina
+	620.1.1 = {
+		holder = burgundy_15 #Fictional vassal
+		liege = d_dauphine
+	}
+	765.1.1 = {
+		liege = "d_provence"
+		holder = 91500 #Welentus, historical as placeholder
+	}
+
+}
+
+c_arles = {
+	361.1.1 = { change_development_level = 6 }
+	#Roman
+	361.1.1 = {
+		holder = burgundy_01
+		liege = k_septem_provinciae
+		de_jure_liege = d_dauphine
+	}
+	395.1.17 = {
+		liege = k_septem_provinciae
+	}
+	476.1.1 = {
+		holder = burgundy_09 #
+		government = feudal_government
+		liege = k_visigoths
+		de_jure_liege = d_provence
+	}
+	523.1.1 = {
+		holder = aegyptus_21 #Liberius, Praetorian Prefect of Gaul
+		liege = k_italy
+	}
+	#Merovingina
+	620.1.1 = {
+		holder = burgundy_15 #Fictional vassal
+		liege = d_dauphine
+	}
+	765.1.1 = {
+		liege = "d_provence"
+		holder = 91500 #Welentus, historical as placeholder
+	}
+}
+
+c_venaissin = {
+	361.1.1 = { change_development_level = 6 }
+	#Roman
+	361.1.1 = {
+		holder = burgundy_01
+		liege = k_septem_provinciae
+		de_jure_liege = d_dauphine
+	}
+	395.1.17 = {
+		liege = k_septem_provinciae
+	}
+	476.1.1 = {
+		holder = 994007 #
+		government = feudal_government
+		liege = k_burgundy
+		de_jure_liege = d_dauphine
+	}
+	523.1.1 = {
+		holder = 994013
+	}		
+	532.1.1 = {
+		holder = gallo_roman_misc_004
+		#liege = d_burgundy
+	}
+	#Merovingina
+	620.1.1 = {
+		holder = burgundy_15 #Fictional vassal
+		liege = d_dauphine
+	}
+	765.1.1 = {
+		liege = "d_provence"
+		holder = 91500 #Welentus, historical as placeholder
+	}
+}	
+
+c_viviers = {
+	361.1.1 = { change_development_level = 5 }
+	
+	#Roman
+	361.1.1 = {
+		holder = septem_03
+		liege = d_languedoc
+		de_jure_liege = d_languedoc
+	}
+	395.1.17 = {
+		liege = d_languedoc
+	}
+	#Burgundy
+	473.1.2 = {
+		holder = 994007 #Chilperic II
+		government = feudal_government
+		de_jure_liege = d_dauphine
+		liege = k_burgundy
+	}
+	523.1.1 = {
+		holder = 994013 #Gundemar
+	}		
+	532.1.1 = {
+		holder = gallo_roman_misc_002
+		#liege = d_burgundy
+	}
+	#Merovingina
+	620.1.1 = {
+		holder = burgundy_16 #Fictional vassal
+		liege = k_burgundy
+	}
+	745.1.1 = {
+		liege = "d_upper_burgundy"
+		holder = 91494 #Wegelenzo, historical as placeholder
+	}
+
+}
+
+
+d_savoie = {
+	361.1.1 = { change_development_level = 4 }
+	532.1.1 = { change_development_level = 5 }
+	768.1.1 = { change_development_level = 6 }
+	361.1.1 = {
+		de_jure_liege = k_gallia
+	}
+	361.1.1 = {
+		holder = burgundy_06
+		liege = k_gallia
+	}
+	476.1.1 = {
+		de_jure_liege = k_burgundy
+		government = feudal_government
+	}
+	523.1.1 = {
+		holder = burgundy_13 #Gundemar's Fictional son
+		liege = k_burgundy
+	}
+}
+
+
+c_savoie = {
+	361.1.1 = { change_development_level = 5 }
+	360.1.1 = {
+		holder = burgundy_01
+		de_jure_liege = d_dauphine
+		liege = k_septem_provinciae
+	}
+	395.1.17 = {
+		liege = k_septem_provinciae
+	}
+	
+	#Burgundy
+	473.1.2 = {
+		holder = 994006 #GUndemar
+		government = feudal_government
+		liege = k_burgundy
+	}
+	523.1.1 = {
+		holder = burgundy_13 #Gundemar's Fictional son
+		liege = k_burgundy
+	}
+	#Merovingina
+	620.1.1 = {
+		holder = burgundy_18 #Fictional vassal
+		liege = d_dauphine
+	}
+	760.1.1 = {
+		liege = k_lotharingia
+	}
+	760.1.1 = {
+		holder = 190562 #Hugh I
+	}
+}
+
+
+c_aosta = {
+	361.1.1 = {
+		holder = burgundy_06
+	}
+	#Burgundy
+	473.1.2 = {
+		holder = 994009 #Godegisel
+		government = feudal_government
+		liege = k_burgundy
+	}
+	523.1.1 = {
+		holder = burgundy_13 #Gundemar's Fictional son
+		liege = k_burgundy
+	}
+	#Merovingina
+	620.1.1 = {
+		holder = burgundy_18 #Fictional vassal
+		liege = d_dauphine
+	}
+	760.1.1 = {
+		liege = k_lotharingia
+	}
+	760.1.1 = {
+		holder = 190562 #Hugh I
+	}
+}
+
+
+c_canavese = {
+	361.1.1 = {
+		holder = burgundy_06
+	}
+	#Burgundy
+	473.1.2 = {
+		holder = 994006 #GUndemar
+		government = feudal_government
+		liege = k_burgundy
+	}
+	523.1.1 = {
+		holder = burgundy_13 #Gundemar's Fictional son
+		liege = k_burgundy
+	}
+	#Merovingina
+	620.1.1 = {
+		holder = burgundy_18 #Fictional vassal
+		liege = d_dauphine
+	}
+	760.1.1 = {
+		liege = k_lotharingia
+	}
+	760.1.1 = {
+		holder = 190562 #Hugh I
+	}
+}
+
+d_dauphine = {
+	361.1.1 = {
+		de_jure_liege = k_septem_provinciae
+	}
+	#Roman
+	360.1.1 = {
+		holder = burgundy_01
+		liege = k_septem_provinciae
+	}
+	395.1.17 = {
+		liege = k_septem_provinciae
+	}
+	476.1.1 = {
+		de_jure_liege = k_burgundy
+	}
+	523.1.1 = {
+		holder = 994013 #Gundemar
+		government = feudal_government
+	}
+	#Merovingina
+	620.1.1 = {
+		holder = burgundy_16 #Fictional vassal
+		liege = k_burgundy
+	}
+}
+
+c_lyon = {
+	361.1.1 = { change_development_level = 7 }
+	768.1.1 = { change_development_level = 8 }
+	#Roman Province
+	360.1.1 = {
+		holder = septem_10
+		de_jure_liege = d_lugdunensis_prima
+	}
+	395.1.17 = {
+		holder = gallia_01
+	}
+	#Burgundian Kingdom
+	443.1.1 = {
+		holder = 994004 #Gundeoc
+		government = feudal_government
+		de_jure_liege = d_dauphine
+	}
+	473.1.1 = {
+		holder = 994008 #Gundebald
+		liege = k_burgundy
+	}
+	523.1.1 = {
+		holder = 994013 #Gundemar
+	}
+	#Merovingina
+	620.1.1 = {
+		holder = burgundy_17 #Fictional vassal
+		liege = d_dauphine
+	}
+	765.1.1 = {
+		liege = "k_lotharingia"
+		holder = 91491 #VUODO, historical count as placeholder
+	}
+
+}
+
+
+c_viennois = {
+	361.1.1 = { change_development_level = 6 }
+	#Roman
+	360.1.1 = {
+		holder = burgundy_01
+		liege = k_septem_provinciae
+	}
+	395.1.17 = {
+		liege = k_septem_provinciae
+	}
+	#Burgundy
+	443.1.1 = {
+		holder = 994004 #Gundeoc
+		government = feudal_government
+	}
+	473.1.1 = {
+		holder = 994006 #GUndemar
+		liege = k_burgundy
+	}
+	523.1.1 = {
+		holder = 994013 #Gundemar
+	}
+	#Merovingina
+	620.1.1 = {
+		holder = burgundy_16 #Fictional vassal
+		liege = k_burgundy
+	}
+	750.1.1 = {
+		liege = "d_upper_burgundy"
+		holder = 91490 #VULFARD, historical placeholder
+	}
+}
+
+
+c_valentinois = {
+	361.1.1 = { change_development_level = 5 }
+	#Roman
+	361.1.1 = {
+		holder = burgundy_01
+		liege = k_septem_provinciae
+	}
+	395.1.17 = {
+		liege = k_septem_provinciae
+	}
+	440.1.1 = {
+		holder = 999507 # Sambida
+	}
+	450.1.1 = {
+		holder = 999508 # Buurgur
+	}
+	#Burgundy
+	464.1.1 = {
+		holder = 994004 #Gunderic
+		government = feudal_government
+	}
+	473.1.1 = {
+		holder = 994007 #Chilperic II
+		liege = k_burgundy
+	}
+	523.1.1 = {
+		holder = 994013 #Gundemar
+	}
+	532.1.1 = {
+		holder = burgundian_misc_002
+		liege = d_burgundy
+	}
+	#Merovingina
+	620.1.1 = {
+		holder = burgundy_16 #Fictional vassal
+		liege = k_burgundy
+	}
+	750.1.1 = {
+		liege = "d_upper_burgundy"
+		holder = 91490 #VULFARD, historical placeholder
+	}
+}
+
+
+c_forez = {
+	361.1.1 = {
+		holder = septem_10
+		de_jure_liege = d_lugdunensis_prima
+	}
+	395.1.17 = {
+		holder = gallia_01
+	}
+	#Burgundians
+	
+	473.1.1 = {
+		holder = 994008 #Gundebald
+		government = feudal_government
+		de_jure_liege = d_dauphine
+		liege = k_burgundy
+	}
+	523.1.1 = {
+		holder = 994013 #Gundemar
+	}	
+	532.1.1 = {
+		holder = gallo_roman_misc_002
+		#liege = d_burgundy
+	}
+	#Merovingina
+	620.1.1 = {
+		holder = burgundy_17 #Fictional vassal
+		liege = d_dauphine
+	}
+	765.1.1 = {
+		liege = "k_lotharingia"
+		holder = 91491 #VUODO, historical count as placeholder
+	}
+}
+
+
+d_upper_burgundy = {
+	361.1.1 = {
+		de_jure_liege = k_gallia
+		holder = burgundy_04
+		liege = k_gallia
+	}
+	395.1.17 = {
+		liege = k_gallia
+	}
+	476.1.1 = {
+		de_jure_liege = k_burgundy
+		government = feudal_government
+	}
+	523.1.1 = {
+		holder = burgundy_11 #Gundemar's Fictional Sons
+		liege = k_burgundy
+	}
+	760.1.1 = {
+		liege = k_lotharingia
+	}
+	760.1.1 = {
+		holder = 190562 #Hugh I
+	}
+}
+
+
+c_besancon = {
+	361.1.1 = { change_development_level = 4 }
+	532.1.1 = { change_development_level = 5 }
+	768.1.1 = { change_development_level = 6 }
+	361.1.1 = {
+		holder = burgundy_04
+	}
+	#Burgundian Kingdom
+	443.1.1 = {
+		holder = 994005 #Chilperic
+		government = feudal_government
+	}
+	523.1.1 = {
+		holder = burgundy_11 #Gundemar's Fictional Sons
+		liege = k_burgundy
+	}
+	#Merovingina
+	620.1.1 = {
+		holder = burgundy_20 #Fictional vassal
+		liege = d_dauphine
+	}
+}
+
+c_geneva = {
+	361.1.1 = { change_development_level = 5 }
+	360.1.1 = {
+		holder = burgundy_01
+		liege = k_septem_provinciae
+		de_jure_liege = d_dauphine
+	}
+	395.1.17 = {
+		liege = k_septem_provinciae
+	}
+
+	#Burgundian Kingdom
+	
+	443.1.1 = {
+		holder = 994005 #Chilperic
+		government = feudal_government
+		de_jure_liege = d_transjurania
+	}
+	473.1.1 = {
+		holder = 994009 #Godegisel
+		liege = k_burgundy
+	}
+	523.1.1 = {
+		holder = 994013 #Gundemar's Fictional Sons
+		liege = k_burgundy
+	}
+	#Merovingina
+	620.1.1 = {
+		holder = burgundy_19 #Fictional vassal
+		liege = d_dauphine
+	}
+	760.1.1 = {
+		liege = "k_lotharingia"
+		holder = 91482 #FREDERIC, count of Transjuranie
+	}
+}
+
+
+c_dole = {
+	361.1.1 = {
+		holder = burgundy_04
+	}
+	#Burgundian Kingdom
+	443.1.1 = {
+		holder = 994005 #Chilperic
+		government = feudal_government
+	}
+	523.1.1 = {
+		holder = burgundy_11 #Gundemar's Fictional Sons
+		liege = k_burgundy
+	}
+	#Merovingina
+	620.1.1 = {
+		holder = burgundy_20 #Fictional vassal
+		liege = d_dauphine
+	}
+	769.1.1 = {
+		holder = 144999
+	}
+}
+
+c_bresse = {
+	361.1.1 = { change_development_level = 5 }
+	361.1.1 = {
+		holder = burgundy_04
+	}
+	#Burgundian Kingdom
+	443.1.1 = {
+		holder = 994005 #Chilperic
+		government = feudal_government
+	}
+	523.1.1 = {
+		holder = burgundy_11 #Gundemar's Fictional Sons
+		liege = k_burgundy
+	}
+	#Merovingina
+	620.1.1 = {
+		holder = burgundy_20 #Fictional vassal
+		liege = d_dauphine
+	}
+	769.1.1 = {
+		holder = 144999
+	}
+}
+
+d_transjurania = {
+	
+	523.1.1 = {
+		holder = burgundy_12 #Gundemar's Fictional son
+		liege = k_burgundy
+	}
+}
+c_bern = {
+	361.1.1 = {
+		holder = burgundy_05
+		liege = d_upper_burgundy
+		de_jure_liege = d_upper_burgundy
+	}
+	395.1.17 = {
+		liege = d_upper_burgundy
+	}
+	#Burgundian Kingdom
+	443.1.1 = {
+		holder = 994005 #Chilperic
+		government = feudal_government
+		de_jure_liege = d_transjurania
+	}
+	473.1.2 = {
+		holder = 994009 #Godegisel
+		liege = k_burgundy
+	}
+	523.1.1 = {
+		holder = burgundy_12 #Gundemar's Fictional son
+		liege = k_burgundy
+	}
+	#Merovingina
+	620.1.1 = {
+		holder = burgundy_19 #Fictional vassal
+		liege = d_dauphine
+	}
+	760.1.1 = {
+		liege = d_swabia
+	}
+	760.1.1 = {
+		holder = 167825 #Gerold
+	}
+}
+
+
+c_aargau = {
+	361.1.1 = {
+		holder = burgundy_05
+		liege = d_upper_burgundy
+		de_jure_liege = d_upper_burgundy
+	}
+	395.1.17 = {
+		liege = d_upper_burgundy
+	}
+	
+	476.1.1 = {
+		holder = burgundy_10 #
+		de_jure_liege = d_transjurania
+		liege = k_burgundy
+	}
+	523.1.1 = {
+		holder = burgundy_12 #Gundemar's Fictional son
+		liege = k_burgundy
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+	#Merovingina
+	620.1.1 = {
+		holder = burgundy_19 #Fictional vassal
+		liege = d_dauphine
+	}
+	740.1.1 = {
+		liege = d_swabia
+	}
+	740.1.1 = {
+		holder = 161481 #Hugo
+	}
+
+}
+
+
+c_neuchatel = {
+	361.1.1 = {
+		holder = burgundy_05
+		liege = d_upper_burgundy
+		de_jure_liege = d_upper_burgundy
+	}
+	395.1.17 = {
+		liege = d_upper_burgundy
+	}
+	#Burgundy
+	473.1.2 = {
+		holder = 994009 #Godegisel
+		government = feudal_government
+		de_jure_liege = d_transjurania
+		liege = k_burgundy
+	}
+	523.1.1 = {
+		holder = burgundy_12 #Gundemar's Fictional son
+		liege = k_burgundy
+	}
+	#Merovingina
+	620.1.1 = {
+		holder = burgundy_19 #Fictional vassal
+		liege = d_dauphine
+	}
+	760.1.1 = {
+		liege = "k_lotharingia"
+		holder = 91482 #FREDERIC, count of Transjuranie
+	}
+}
+

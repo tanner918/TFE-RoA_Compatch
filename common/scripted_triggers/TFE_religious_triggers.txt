@@ -1,0 +1,16 @@
+﻿###TRIGGER LIST
+
+# can_join_clergy
+can_join_clergy = {
+	trigger_if = {
+		limit = { faith ?= { has_doctrine_parameter = sinful_characters_no_priesthood_active } }
+		num_sinful_traits = 0
+	}
+}
+
+donatist_religion_trigger = {
+	OR = {
+		faith = faith:donatism
+		NOT = { has_trait = zealous }
+	}
+}

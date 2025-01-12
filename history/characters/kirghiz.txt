@@ -1,0 +1,190 @@
+﻿#### yenisei
+tiele_04 = {
+	name = Sokal # Fictional
+	dynasty = yenisei # yenisei tribe
+	religion = tengri_pagan
+	culture = kirghiz
+	stewardship = 8
+	
+	330.1.1 = { birth = yes }
+	399.1.1 = { death = yes }
+}
+tiele_05 = {
+	name = Manas # Fictional
+	dynasty = yenisei # yenisei tribe
+	religion = tengri_pagan
+	culture = kirghiz 
+	father = tiele_04 # yenisei Sokal
+	
+	364.1.1 = { birth = yes }
+	420.1.1 = { death = yes }
+}
+tiele_16 = {
+	name = Sukhrab # Fictional
+	dynasty = yenisei # yenisei tribe
+	religion = tengri_pagan
+	culture = kirghiz
+	father = tiele_05 # kyrgiz Manas
+	
+	399.1.1 = { birth = yes }
+	455.1.1 = { death = yes }
+}
+tiele_17 = {
+	name = TO_rtogul # Fictional
+	dynasty = yenisei # yenisei tribe
+	religion = tengri_pagan
+	culture = kirghiz
+	father = tiele_16 # kyrgiz Sukhrab
+	
+	430.1.1 = { birth = yes }
+	512.1.1 = { death = yes }
+}
+yeniseian_21 = {
+	name = "Ureltu"
+	culture = "kirghiz"
+	religion = "siberian_pagan"
+	495.1.1 = {
+		birth = yes
+	}
+	540.1.1 = {
+		death = yes
+	}
+}
+yeniseian_22 = {
+	name = "Alitet"
+	culture = "kirghiz"
+	religion = "siberian_pagan"
+	495.1.1 = {
+		birth = yes
+	}
+	540.1.1 = {
+		death = yes
+	}
+}
+yeniseian_23 = {
+	name = "Dular"
+	culture = "kirghiz"
+	religion = "siberian_pagan"
+	495.1.1 = {
+		birth = yes
+	}
+	540.1.1 = {
+		death = yes
+	}
+}
+kyrghiz_01 = {
+	name = Sotan # Fictional
+	dynasty = yenisei # yenisei tribe
+	religion = tengri_pagan
+	culture = kirghiz
+	father = tiele_17 # kyrgiz TO_rtogul
+	
+	472.1.1 = { birth = yes }
+	500.1.1 = { culture = kirghiz }
+	544.1.1 = { death = yes }
+}
+kyrghiz_02 = {
+	name = Tardush # Fictional
+	dynasty = yenisei # yenisei tribe
+	religion = tengri_pagan
+	culture = kirghiz
+	father = kyrghiz_01 # kyrgiz Sotan
+	
+	503.1.1 = { birth = yes }
+	589.1.1 = { death = yes }
+}
+kyrghiz_03 = {
+	name = Uzur # Fictional
+	dynasty = yenisei # yenisei tribe
+	religion = tengri_pagan
+	culture = kirghiz
+	father = kyrghiz_02 # kyrgiz Tardush
+	
+	541.1.1 = { birth = yes }
+	623.1.1 = { death = yes }
+}
+kyrghiz_04 = {
+	name = SirC_an # Fictional
+	dynasty = yenisei # yenisei tribe
+	religion = tengri_pagan
+	culture = kirghiz
+	father = kyrghiz_03 # kyrgiz Uzur
+	
+	589.1.1 = { birth = yes }
+	669.1.1 = { death = yes }
+}
+kyrghiz_05 = {
+	name = Sokal # Fictional
+	dynasty = yenisei # yenisei tribe
+	religion = tengri_pagan
+	culture = kirghiz
+	father = kyrghiz_04 # kyrgiz Uzur
+	
+	634.1.1 = { birth = yes }
+	710.1.1 = { death = yes }
+}
+kyrghiz_06 = {
+	name = Sukhrab # Fictional
+	dynasty = yenisei # yenisei tribe
+	religion = tengri_pagan
+	culture = kirghiz
+	father = kyrghiz_05 # kyrgiz Sokal
+	
+	688.1.1 = { birth = yes }
+	758.1.1 = { death = yes } ##ATTENTION MUST BE KILLED BY UGHYUR KHAGANATE
+}
+kyrghiz_07 = {
+	name = Gzi # Fictional
+	dynasty = yenisei # yenisei tribe
+	religion = tengri_pagan
+	culture = kirghiz
+	father = kyrghiz_05 # kyrgiz Sokal
+	
+	699.1.1 = { birth = yes }
+	774.1.1 = { death = yes }
+}
+
+##Vanilla
+
+217310 = {
+	name = Seitek # fictional
+	dynasty = 1051141 # Tiele
+	religion = manichean
+	culture = kirghiz
+	
+	732.4.15 = { birth = yes }
+	751.10.7 = { add_spouse = 217311 }
+	775.5.12 = { death = yes }
+}
+217311 = {
+	name = Sirma # fictional
+	religion = vajrayana
+	culture = kirghiz
+	female = yes
+	
+	734.5.9 = { birth = yes }
+	774.2.16 = { death = yes }
+}
+217312 = {
+	name = Dilek
+	dynasty = 1051141 # Tiele
+	religion = manichean
+	culture = kirghiz
+	female = yes
+	father = 217310
+	mother = 217311
+	755.4.16 = { birth = yes }
+	793.5.12 = { death = yes }
+}
+217313 = {
+	name = Sotan
+	dynasty = 1051141 # Tiele
+	religion = manichean
+	culture = kirghiz
+	father = 217310
+	mother = 217311
+	752.3.24 = { birth = yes }
+	784.5.11 = { death = yes }
+}
+
+##Fictinal Kyrgiz Tribes

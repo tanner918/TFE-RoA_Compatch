@@ -1,0 +1,2649 @@
+﻿k_mauro_roman_kingdom = {
+	508.1.1 = {
+		holder = mauro_roman_kings_02 # Massonas
+		government = autocratic_government_ep3
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = autocratic_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+		}
+		succession_laws = { feudal_elective_succession_law }
+	}
+	535.1.1 = {
+		holder = mauro_roman_05 # Mastigas
+	}
+	541.1.1 = {
+		holder = thracio_03 # Stotzas
+	}
+	546.1.1 = {
+		holder = mauro_roman_07 # Garmul
+	}
+}
+k_frankish_soissons = {
+	511.11.27 = {
+		holder = 997013
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+}
+k_frankish_paris = {
+	511.11.27 = {
+		holder = 997012
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+}
+k_frankish_rheims = {
+	511.11.27 = {
+		holder = 997009 #Thierry Ier
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+}
+k_frankish_orleans = {
+	511.11.27 = {
+		holder = 997011 #Thierry Ier
+		effect = {		
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+}
+d_alpes_maritimae = {
+	361.1.1 = {
+		holder = burgundy_02
+		liege = k_septem_provinciae
+		de_jure_liege = k_septem_provinciae	
+}
+	395.1.17 = {
+		liege = k_septem_provinciae
+	}
+	476.1.1 = {
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+				}
+				holder = {
+					change_government = feudal_government
+				}
+			}
+		}
+	}
+}
+
+e_hunnic_empire = {
+	350.1.1 = {
+		holder = 990016 #Balamer	
+		government = nomadic_government
+		succession_laws = { hunnic_elective_succession_law }
+	}
+	385.1.1 = {
+		holder = balamer_01 #Kursich
+	}
+	399.1.1 = {
+		holder = 990000 # Uldin
+	}
+	412.1.1 = {
+		holder = 990002 #Oktar
+	}
+	430.1.1 = {
+		holder = 990003 #Rugila
+	}
+	434.1.1 = {
+		holder = 990005 #Bleda
+	}
+	445.1.1 = {
+		holder = 990006 #Attila
+	}
+	454.3.1 = {
+		holder = 990008 #Dengizik
+	}
+	469.1.1 = {
+		holder = 990009 #Ernak
+	}
+	473.1.1 = {
+		holder = 0
+	}
+}
+
+d_burgundians = {
+	360.1.1 = {
+		holder = 994000 #Gebecca
+		government = tribal_government
+	}
+	407.1.1 = {
+		holder = 994001 #Gundemar
+	}
+	411.1.1 = {
+		holder = 994002 #Gislashar
+	}
+	436.1.1 = {
+		holder = 994003 #GUndahar
+	}
+	443.1.1 = {
+		holder = 0
+	}
+}
+k_daciae = {
+	200.1.1 = {
+		de_jure_liege = e_roman_empire
+		
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					has_dlc_feature = royal_court
+				}
+				holder = {
+					set_court_language = language_latin # Latin was the language of the roman court
+					if = {
+						limit = { NOT = { knows_court_language_of = this } }
+						learn_court_language_of = this
+					}
+				}
+			}
+		}
+	}
+	360.1.1 = {
+		holder = daciae_07 #Fake Vicar
+		liege = "e_roman_empire"
+	}
+	395.1.17 = {
+		holder = daciae_12
+		de_jure_liege = e_byzantium
+		liege = "e_byzantium"
+	}
+	460.1.1 = {
+		holder = daciae_17
+	}
+	532.1.1 = {
+		#holder = daciae_31
+		holder = 991004
+	}
+	620.1.1 = {
+		holder = 0
+	}
+}
+k_hispania = {
+	361.1.1 = { change_development_level = 6 }
+	
+	200.1.1 = {
+		de_jure_liege = e_roman_empire
+		
+	}
+	360.1.1 = {
+		holder = hispania_03 #Fake Vicar
+		liege = "e_roman_empire"
+	}
+	384.1.1 = {
+		holder = hispania_01 #Marinianus
+	}
+	395.1.1 = {
+		de_jure_liege = e_western_roman_empire
+		holder = hispania_02 #Fake Vicar
+		liege = "e_western_roman_empire"
+	}
+	410.1.1 = {
+		holder = 0
+	}
+}
+
+k_septem_provinciae = {
+
+	200.1.1 = {
+		de_jure_liege = e_roman_empire
+		
+	}
+	361.1.1 = {
+		holder = sallustian_01 # Vicarius Flavius Sallustius
+		liege = "e_roman_empire"
+		
+	}
+	395.1.1 = {
+		de_jure_liege = e_western_roman_empire
+		holder = 900058
+		liege = "e_western_roman_empire"
+		reset_name = yes
+	}
+}
+d_seven_slavic_tribes = {
+	
+	630.1.1 = {
+		holder = dslavs_04 #Fictional Slav
+		government = tribal_government
+	}
+	760.1.1 = {
+		holder = dslavs_10
+		liege = k_bulgaria
+	}
+}
+k_gallia = {
+	361.1.1 = {
+		holder = septem_10
+		liege = "e_roman_empire"
+		
+		de_jure_liege = e_roman_empire
+	}
+	395.1.17 = {
+		de_jure_liege = e_western_roman_empire
+		holder = gallia_01
+		liege = "e_western_roman_empire"
+	}
+	458.1.1 = {
+		holder = syagri_05
+	}
+	464.1.1 = {
+		holder = 0
+	}
+}
+d_lugdunensis_prima = {
+	361.1.1 = { change_development_level = 5 }
+	361.1.1 = {
+		holder = septem_10
+		
+	}
+	395.1.17 = {
+		holder = gallia_01
+	}
+	417.1.1 = {
+		holder = 0
+	}
+}
+d_lugdunensis_senonia = {
+	361.1.1 = { change_development_level = 4 }
+	361.1.1 = {
+		holder = senonia_01
+		liege = k_gallia
+		
+	}
+	395.1.1 = {
+		holder = senonia_02
+	}
+}
+d_lugdunensis_tertia = {
+	361.1.1 = { change_development_level = 4 }
+	361.1.1 = {
+		holder = lug_tertia_01
+		liege = k_gallia
+		
+	}
+	395.1.1 = {
+		holder = lug_tertia_02
+	}
+}
+k_tuyuhun = {
+	#Tuyuhun Kingdom (284 - 670)
+	284.1.1={
+		#liege = "d_tuyuhun"
+		holder = 247346
+	}
+	317.1.1={
+		holder = 247347
+	}
+	329.1.1={
+		holder = 247348
+	}
+	351.1.1={
+		holder = 247349
+	}
+	371.1.1={
+		holder = 247350
+	}
+	390.1.1={
+		holder = 247351
+	}
+	400.1.1={
+		holder = 247352
+	}
+	405.1.1={
+		holder = 247353
+	}
+	417.1.1={
+		holder = 247355
+	}
+	424.1.1={
+		holder = 247357
+	}
+	436.1.1={
+		holder = 247358
+	}
+	452.1.1={
+		holder = 247368
+	}
+	481.1.1={
+		holder = 247371
+	}
+	490.1.1={
+		holder = 247373
+	}
+	529.1.1={
+		holder = 247375
+	}
+	530.1.1={
+		holder = 247376
+	}
+	534.1.1={
+		holder = 247377
+	}
+	540.1.1={
+		holder = 247378
+	}
+	591.1.1={
+		holder = 247381
+	}
+	597.1.1={
+		holder = 247382
+	}
+	635.1.1={
+		holder = 247384
+	}
+	635.11.1={
+		holder = 247381
+	}
+	663.1.1={
+		holder = 247386
+	}
+	665.1.1={
+		holder = 247387
+	}
+	670.1.1={
+		holder = 0
+	}
+	#Tuyuhun conquered by Tibetan Empire. The King escapes to China.
+}
+d_hasdingi_vandals = {
+	350.1.1 = {
+		holder = vandals_001
+		government = tribal_government
+	}
+	406.1.1 = {
+		holder = vandals_002
+	}
+	418.1.1 = {
+		holder = 0
+	}
+}
+k_vandals = {
+	418.1.1 = {
+		holder = vandals_002 #Gunderic
+		#succession_laws = { scandinavian_elective_succession_law }
+	}
+	428.1.1 = {	
+		holder = vandals_003 #Genseric	
+		government = feudal_government
+		de_jure_liege = e_maghreb
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					has_dlc_feature = royal_court
+				}
+				holder = {
+					culture = {
+						add_innovation = innovation_constitutio_geiserici
+					}
+					add_realm_law_skip_effects = single_heir_dynasty_house
+					set_court_language = language_latin # Latin was the language of the Germanic Kingdoms
+					if = {
+						limit = { NOT = { knows_court_language_of = this } }
+						learn_court_language_of = this
+					}
+				}
+			}
+		}
+	}
+	477.1.25 = {
+		holder = vandals_004 #Huneric
+	}
+	484.12.23 = {
+		holder = vandals_007 #Gunthamund
+	}
+	496.1.1 = {
+		holder = vandals_010 #Tharasmund
+	}
+	523.1.1 = {
+		holder = vandals_005 #Hilderic
+	}
+	530.1.1 = {
+		holder = vandals_012 #Gelimer
+	}
+	533.1.1 = {
+		holder = 0
+	}
+}
+d_silingi_vandals = {
+	200.1.1 = { government = tribal_government }
+	##Silingi Vandals
+	360.1.1 = {
+		holder = silingi_01
+	}
+	390.1.1 = {
+		holder = silingi_03
+	}
+	417.1.1 = {
+		holder = 0
+	}
+}
+d_ostrogoths = {
+	351.1.1 = {
+		holder = 992003 # Hermanaric
+		government = tribal_government
+	}
+	376.1.1 = {
+		holder = 992010 # Withimir
+	}
+	376.6.1 = {
+		holder = 992059 # Winithar
+	}
+	377.6.1 = {
+		holder = 992005 # Hunimund
+		liege = k_pontic_steppe
+		government = tribal_government
+	}
+	380.1.1 = {
+		holder = 992006 # Thorismund
+	}
+	405.1.1 = {
+		holder = 0
+	}
+}
+k_ostrogoths = {
+	405.1.1 = {
+		insert_title_history = d_ostrogoths
+	}
+	445.1.1 = {
+		holder = 992012 # Valamir
+		government = tribal_government
+	}
+	468.1.1 = {
+		holder = 992013 # Theodomir
+		government = tribal_government
+	}
+	475.1.1 = {
+		holder = 992016
+		government = tribal_government
+		de_jure_liege = e_italy
+		liege = e_byzantium
+	}
+	526.1.1 = {
+		holder = 992023 # Athalaric
+		government = roman_government
+		liege = 0
+		#succession_laws = { scandinavian_elective_succession_law male_only_law }
+		succession_laws = { gothic_elective_succession_law male_only_law }
+	}
+	534.1.1 = {
+		holder = 992020 # Amalasuntha
+	}
+	535.1.1 = {
+		holder = 992022 # Theodahad
+	}
+	536.1.1 = {
+		holder = 992100 # Withigis
+	}
+	540.1.1 = {
+		holder = 992030 # Hildibald
+	}
+	541.1.1 = {
+		holder = rugian_17 # Eraric
+	}
+	541.6.1 = {
+		holder = 992029 # Totila
+	}
+	552.7.1 = {
+		holder = 992104 # Teia
+	}
+}
+d_visigoths = {
+
+	200.1.1 = {
+		government = tribal_government
+	}
+	325.1.1 = {
+		holder = 200295 #Aoric
+	}
+	369.1.1 = {
+		holder = 200296 #Athanaric
+	}
+	381.1.25 = {
+		liege = "e_byzantium"
+		holder = 999103 # Alaric I
+	}
+	410.1.1 = {
+		liege = "e_western_roman_empire"
+		holder = 200290 # Athawulf
+	}
+	415.8.15 = {
+		holder = 200289 # Sigeric
+	}
+}
+k_visigoths = {
+	400.1.1 = {
+		insert_title_history = d_visigoths
+	}
+	395.1.17 = {
+		liege = "e_byzantium"
+		holder = 999103 # Alaric I
+		government = tribal_government
+		#succession_laws = { scandinavian_elective_succession_law }
+		succession_laws = { gothic_elective_succession_law }
+	}
+	410.1.1 = {
+		holder = 200290 # Athaulf
+	}
+	415.8.15 = {
+		holder = 200289 # Sigeric
+	}
+	415.8.23 = {
+		holder = 200288 # Wallia
+	}
+	418.1.1 = {
+		holder = 200287 # Theoderic I
+	}
+	451.6.20 = {
+		holder = 200286 # Thorismund
+	}
+	453.1.1 = {
+		holder = 200285 # Theoderic II
+	}
+	466.1.1 = {
+		holder = 200284 # Evaric
+	}
+	475.1.1 = {
+		liege = 0
+		government = feudal_government
+		de_jure_liege = e_spain
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					has_dlc_feature = royal_court
+				}
+				holder = {
+					set_court_language = language_latin # Latin was the language of the Germanic Kingdoms
+					if = {
+						limit = { NOT = { knows_court_language_of = this } }
+						learn_court_language_of = this
+					}
+				}
+			}
+		}
+	}
+	484.1.1 = {
+		holder = 200283 # Alaric II
+	}
+	507.4.1 = {
+		holder = 200282 # Gaisalec
+	}
+	513.1.1 = {
+		holder = 200281 # Amalaric
+		liege = e_italy
+	}
+	531.1.1 = {
+		holder = 200280 # Theudis
+	}
+	548.1.1 = {
+		holder = 200279 # Theudigisel
+	}
+	549.12.1 = {
+		holder = 200277 # Agila I
+		liege = 0
+	}
+	554.3.1 = {
+		holder = 200276 # Athanagild
+	}
+	567.1.1 = {
+		holder = 200275 # Liuva
+	}
+	572.1.1 = {
+		holder = 200273 # Leovigild
+	}
+	586.4.1 = {
+		holder = 200272 # Rekkared
+	}
+	601.12.21 = {
+		holder = 200271 # Liuva II
+	}
+	603.7.1 = {
+		holder = 200270 # Witteric
+	}
+	610.4.1 = {
+		holder = 200269 # Gundemar
+	}
+	612.2.1 = {
+		holder = 200259 # Sisebut
+	}
+	621.2.1 = {
+		holder = 200258 # Rekkared II
+	}
+	621.3.1 = {
+		holder = 200256 # Suinthila
+	}
+	631.3.26 = {
+		holder = 200278 # Sisenand
+	}
+	636.3.12 = {
+		holder = 200254 # Khintila
+	}
+	639.12.20 = {
+		holder = 200255 # Tulga
+	}
+	642.4.16 = {
+		holder = 200240 # Khindasvint
+	}
+	653.9.30 = {
+		holder = 200249 # Rekkeswinth
+	}
+	672.9.1 = {
+		holder = 200248 # Wamba
+	}
+	680.1.1 = {
+		holder = 200237 # Erwig
+	}
+	687.11.15 = {
+		holder = 200243 # Egica
+	}
+	702.1.1 = {
+		holder = 168727 # Wittiza
+	}
+	710.1.1 = {
+		holder = 200251 # Roderic
+	}
+	711.7.20 = {
+		holder = 0
+	}
+}
+k_goths = {
+	405.1.1 = {
+		holder = radagaisian_02
+		government = tribal_government
+	}
+	406.8.23 = {
+		holder = 0
+	}
+}
+
+############PLACEGOLDERS
+d_valois = {
+	511.11.27 = {
+		holder = 997013 #Clotair
+	}
+}
+d_rugians = {
+	368.1.1 = {
+		holder = rugian_01
+	}
+}
+k_rugiland = {
+	##Rugiland
+	455.1.1 = {
+		holder = rugian_02 # Flaccitheus
+	}
+	455.1.1 = {
+		holder = rugian_03 # Feletheus
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					has_dlc_feature = royal_court
+				}
+				holder = {
+					set_court_language = language_latin # Latin was the language of the Germanic Kingdoms
+					if = {
+						limit = { NOT = { knows_court_language_of = this } }
+						learn_court_language_of = this
+					}
+				}
+			}
+		}
+	}
+}
+d_bructeria = {
+	### Frankish COnfederations
+	361.1.1 = {
+		change_development_level = 0
+	}
+	361.1.1 = {
+		government = tribal_government
+		holder = 900013
+	}
+	395.1.1 = {
+		holder = genobaud_01
+	}
+}
+d_lombards = {
+	281.1.1 = {
+		holder = gambaring_01
+		government = tribal_government
+	}
+	300.1.1 = {
+		holder = gambaring_02
+	}
+	320.1.1 = {
+		holder = gambaring_03
+	}
+	351.1.1 = {
+		holder = gambaring_04
+	}
+	380.1.1 = {
+		holder = 993000 # Lethuc
+	}
+	425.1.1 = {
+		holder = 993001 # Hildehoc
+	}
+	450.1.1 = {
+		holder = 993002 # Goldehoc
+	}
+	470.1.1 = {
+		holder = 993003 # Claffo
+	}
+	490.1.1 = {
+		holder = 993004 # Tato
+	}
+	510.1.1 = {
+		holder = 993008 # Wacho
+	}
+	538.1.1 = {
+		holder = 993011 # Walthar
+	}
+}
+k_macedon = {
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = e_roman_empire
+		liege = e_roman_empire
+		
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					has_dlc_feature = royal_court
+				}
+				holder = {
+					set_court_language = language_latin # Latin was the language of the Roman administration
+					if = {
+						limit = { NOT = { knows_court_language_of = this } }
+						learn_court_language_of = this
+					}
+				}
+			}
+		}
+	}
+	361.1.1 = {
+		holder = thessalonika_04
+	}
+	395.1.1 = {
+		de_jure_liege = e_byzantium
+		holder = thessalonika_05
+		liege = e_byzantium
+	}
+	476.1.1 = {
+		holder = thessalonika_06
+	}
+	532.1.1 = {
+		holder = thessalonika_13
+	}
+}
+k_marcomanni = {
+	361.1.1 = {
+		holder = old_marcomanni_01
+	}
+}
+
+k_quadi = {
+	340.1.1 = {
+		holder = quadi_02
+	}
+	374.1.1 = {
+		holder = quadi_03
+	}
+	394.1.1 = {
+		holder = quadi_04
+	}
+	401.1.1 = {
+		holder = 0
+	}
+}
+
+c_serres = {
+	
+	650.1.1 = {
+		holder = dacias_15
+	}
+	689.1.1 = {
+		holder = dacias_16
+	}
+	730.1.1 = {
+		holder = dacias_17
+	}
+	750.1.1 = {
+		holder = dacias_18
+	}
+}
+
+
+k_africae = { #Africa Proconsularis
+	200.1.1 = {
+		de_jure_liege = e_roman_empire
+	}
+	395.1.1 = {
+		de_jure_liege = e_western_roman_empire
+	}
+	301.1.1 = {
+		holder = anicia_12 #Julianus
+		
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					has_dlc_feature = royal_court
+				}
+				holder = {
+					set_court_language = language_latin # Latin was the language of the Roman administration
+					if = {
+						limit = { NOT = { knows_court_language_of = this } }
+						learn_court_language_of = this
+					}
+				}
+			}
+		}
+	}
+	302.1.1 = {
+		holder = africae_01 #Anullinus
+	}
+	305.1.1 = {
+		holder = africae_02 #Volusianus
+	}
+	315.1.1 = {
+		holder = petronii_01 #Probus
+	}
+	317.1.1 = {
+		holder = africae_04 #Catullinus
+	}
+	333.1.1 = {
+		holder = africae_05 #Maternianus
+	}
+	336.1.1 = {
+		holder = africae_06 #Mavortius
+	}
+	337.1.1 = {
+		holder = africae_10 #Marcellinus
+	}
+	338.1.1 = {
+		holder = africae_07 #Catullinus II
+	}
+	340.1.1 = {
+		holder = africae_12 #Proculus
+	}
+	351.1.1 = {
+		holder = petronii_08 #Celsius
+	}
+	357.1.1 = {
+		holder = africae_13 #Flavianus
+	}
+	358.1.1 = {
+		holder = petronii_05 #Probus
+	}
+	359.1.1 = {
+		holder = africae_14 #Proclianus
+	}
+	361.1.1 = {
+		holder = anicia_23 #Olybrus
+		liege = "e_roman_empire"
+		
+	}
+	363.1.1 = {
+		holder = africae_15 #Octavianus
+	}
+	364.1.1 = {
+		holder = africae_16 #Ampelius
+	}
+	365.1.1 = {
+		holder = africae_17 #Caesarius
+	}
+	366.1.1 = {
+		holder = africae_18 #Hymetius
+	}
+	368.1.1 = {
+		holder = africae_19 #Claudius
+	}
+	371.1.1 = {
+		holder = africae_20 #Julianus
+	}
+	373.1.1 = {
+		holder = symmachi_03 #Symmachus
+	}
+	374.1.1 = {
+		holder = africae_21 #Constantius
+	}
+	375.1.1 = {
+		holder = africae_22 #Chilo
+	}
+	376.1.1 = {
+		holder = ausoni_03 #Hesperius
+	}
+	377.1.1 = {
+		holder = ausoni_05 #Thalassius
+	}
+	379.1.1 = {
+		holder = syagri_01 #Afrianus
+	}
+	380.1.1 = {
+		holder = africae_23 #Vindicianus
+	}
+	381.1.1 = {
+		holder = africae_24 #Herasius
+	}
+	382.1.1 = {
+		holder = africae_25 #Audentius
+	}
+	383.1.1 = {
+		holder = africae_26 #Eusegnius
+	}
+	381.1.1 = {
+		holder = africae_27 #Messianus
+	}
+	388.1.1 = {
+		holder = africae_28 #Polemius
+	}
+	390.1.1 = {
+		holder = africae_29 #Pacatus
+	}
+	391.1.1 = {
+		holder = africae_30 #Rhodinus
+	}
+	392.1.1 = {
+		holder = africae_31 #Paternus
+	}
+	393.1.1 = {
+		holder = africae_32 #Flaccianus
+	}
+	394.1.1 = {
+		holder = nuvelan_11 #Gildo
+	}
+	395.1.17 = {
+		liege = "e_western_roman_empire"
+	}
+	396.1.1 = {
+		holder = africae_36 #Theodorus
+	}
+	397.1.1 = {
+		holder = anicia_25 #Probinus Anicius
+	}
+	398.1.1 = {
+		holder = africae_37 #Seranus
+	}
+	399.1.1 = {
+		holder = africae_38 #Victorinu
+	}
+	400.1.1 = {
+		holder = africae_39 #Apollodrus
+	}
+	401.1.1 = {
+		holder = africae_40 #Pomepianus
+	}
+	402.1.1 = {
+		holder = africae_43 #Helpidius
+	}
+	403.1.1 = {
+		holder = africae_44 #Septiminus
+	}
+	404.1.1 = {
+		holder = africae_42 #Volusianus
+	}
+	405.1.1 = {
+		holder = africae_45 #Diotimus
+	}
+	407.1.1 = {
+		holder = africae_46 #Proculus
+	}
+	408.1.1 = {
+		holder = africae_47 #Donatus
+	}
+	409.1.1 = {
+		holder = africae_48 #Paladius
+	}
+	411.1.1 = {
+		holder = africae_49 #Apriginius
+	}
+	412.1.1 = {
+		holder = africae_50 #Eucharius
+	}
+	413.1.1 = {
+		holder = africae_51 #Julianus
+	}
+	414.1.1 = {
+		holder = symmachi_09 #Aurelius
+	}
+	420.1.1 = {
+		holder = africae_53 #Bonifatius
+	}
+	439.10.19 = {
+		holder = 0
+	}
+	#Africa is conquered by the Vandals
+
+	## Justinian of the Byzantine Empire reconquers the former province and creates The Excarchate of Africa
+	534.1.1 = {
+		insert_title_history = k_africa
+		de_jure_liege = e_byzantium
+	}
+	591.1.1 = {
+		holder = exarchate_01 #Gennadius
+	}
+	598.1.1 = {
+		holder = heraclian_01 #Heraclius
+	}
+	611.1.1 = {
+		holder = heraclian_03 #Nicetas
+	}
+	629.1.1 = {
+		holder = heraclian_04 #Gregorius
+	}
+	647.1.1 = {
+		holder = exarchate_02 #Gennadius
+	}
+	665.1.1 = {
+		holder = exarchate_03 #Eleutherios
+	}
+	695.1.1 = {
+		holder = exarchate_04 #Ioannes
+	}
+	695.1.1 = {
+		holder = exarchate_05 #Iulianus
+	}
+	709.1.1 = {
+		holder = 0
+	}
+}
+k_asiae = {
+	300.1.1 = {
+		liege = e_roman_empire
+		de_jure_liege = e_roman_empire
+		
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					has_dlc_feature = royal_court
+				}
+				holder = {
+					set_court_language = language_latin # Latin was the language of the Roman administration
+					if = {
+						limit = { NOT = { knows_court_language_of = this } }
+						learn_court_language_of = this
+					}
+				}
+			}
+		}
+	}
+	324.1.1 = {
+		holder = ablabian_01 #Flacius Ablabius
+	}
+	330.1.1 = {
+		holder = asiae_01 #Tertulianus
+	}
+	334.1.1 = {
+		holder = asiae_02 #Veronicianus
+	}
+	343.1.1 = {
+		holder = asiae_03 #Scylacius
+	}
+	352.1.1 = {
+		holder = asiae_04 #Anatolius
+	}
+	353.1.1 = {
+		holder = asiae_05 #Araxius
+	}
+	360.1.1 = {
+		holder = asiae_06 # Germanus
+	}
+	361.1.1 = {
+		holder = asiae_07 # Italicianus
+	}
+	362.1.1 = {
+		holder = asiae_08 #Caesarius
+	}
+	363.1.1 = {
+		holder = asiae_09 #Clearchus
+	}
+	366.1.1 = {
+		holder = asiae_10 #Auxionus
+	}
+	366.1.1 = {
+		holder = asiae_11 #Musionus
+	}
+	395.1.1 = {
+		holder = asiae_04 #Anatolius
+		liege = e_byzantium
+		de_jure_liege = e_byzantium
+	}
+	432.1.1 = {
+		holder = asiae_12 # Zosimius
+	}
+	530.1.1 = {
+		holder = asiae_13 # Theodosius
+	}
+	535.1.1 = {
+		holder = 0
+	}
+}
+
+k_italia_annonariae = { 
+	286.4.1 = {
+		de_jure_liege = e_roman_empire
+		insert_title_history = e_roman_empire # Dioceltians Reforms
+		
+		succession_laws = { imperial_elective_succession_law }
+	}
+	286.4.1 = {
+		holder = 145293 # Maximianus
+	}
+	305.5.1 = {
+		holder = 70524 # Constantius Chlorus
+	}
+	306.7.25 = {
+		holder = 70523 # Constantine I
+	}
+	311.5.5 = {
+		holder = 145294
+	} # Maxentius
+	325.4.1 = {
+		holder = 0 # Constantine the I Reunites the Empire
+	}
+	337.5.22 = {
+		holder = 70520 # Constantinus the II
+	}
+	340.4.1 = {
+		holder = 70521 # Constantinus the II
+	}
+	340.4.1 = {
+		holder = 70521 # Constans the II
+	}
+	350.2.1 = {
+		holder = 0 # Constantius the II Reunifies the Empire
+	}
+	325.4.1 = {
+		holder = 70523 # Constantine the I Reunites the Empire
+	}
+	350.2.1 = {
+		holder = 70521 # Constantius the II Reunites the Empire
+	}
+	361.11.3 = {
+		holder = italia_01 # Faventius- Semi historical
+		liege = e_roman_empire
+		
+	}
+	363.6.26 = {
+		holder = 145235 # Iovianus
+	}
+	364.2.17 = {
+		holder = 145231 #Valentianus
+	}
+	378.8.9 = {
+		holder = 145233
+	}
+	378.12.19 = {
+		holder = 145234
+	} # Valentinian II
+	379.1.19 = {
+		holder = 70534 # Theodosius
+	}
+	383.8.25 = {
+		holder = 159807 # Magnus Maximus
+	}
+	395.1.17 = {
+		de_jure_liege = e_western_roman_empire
+		holder = 145227 #Honorius
+	}
+	#### Last Emperors
+	407.1.1 = {
+		holder = constantinus_01 # Usurper
+	}
+	421.2.8 = {
+		holder = 145228 # Constantius III
+	}
+	421.9.2 = {
+		holder = 145227 # Honorius Again
+	}
+	425.10.23 = {
+		holder = 145229 # Valentinian III
+	}
+	455.3.17 = {
+		holder = anicia_28 # Petronius Maximus
+	}
+	455.7.9 = {
+		holder = avitian_02 # Eparchius
+	}
+	456.10.17 = {
+		holder = 999604 # Ricimer
+	}
+	457.12.28 = {
+		holder = maiorian_01 # Majorian
+	}
+	461.11.19 = {
+		holder = libius_01 # Libius Severus
+	}
+	465.11.14 = {
+		holder = 999604 # Ricimer
+	}
+	467.4.12 = {
+		holder = prokopios_04 # Anthemius
+	}
+	472.7.11 = {
+		holder = anicia_29 # Olybrius
+	}
+	472.11.2 = {
+		holder = 994008 # Gundebauld
+	}
+	472.11.2 = {
+		holder = glycerius_01 # Glycerius
+	}
+	474.7.24 = {
+		holder = nepos_02 # Iulius Nepos
+	}
+	475.10.31 = {
+		holder = orestes_03 # Romulus Augustulus
+	}
+	476.9.4 = {
+		holder = 0 #Destroyed by Odoarcer
+	}
+}
+k_italia_suburbicariae = {
+	361.1.1 = { change_development_level = 4 }
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = e_roman_empire
+		liege = e_roman_empire
+		
+	}
+	360.1.1 = {
+		holder = roma_11
+	}
+	395.1.1 = {
+		de_jure_liege = e_western_roman_empire
+	}
+	395.1.1 = {
+		liege = e_western_roman_empire
+		holder = 900062 # Flavius Stilicho
+	}
+}
+k_pannonia = {
+	200.1.1 = {
+		de_jure_liege = e_roman_empire
+	}
+	314.1.1 = {
+		name = PANNONIARUM
+	}
+	360.1.1 = {
+		holder = hungary_05 #Valentian I
+		liege = "e_roman_empire"
+		
+	}
+	394.1.1 = {
+		holder = hungary_06
+		change_development_level = 5
+		liege = e_western_roman_empire
+		
+		de_jure_liege = e_western_roman_empire
+		name = ILLYRICUM
+	}
+	448.1.1 = {
+		holder = hormazdline_04
+	}
+	450.1.1 = {
+		holder = 0
+	}
+}
+
+e_egypt = {
+
+	# NOTE FOR BC DATES:
+	# NEGATIVE DATES ARE **ONE YEAR** AFTER BC DATES
+	# i.e., a date of "-100.1.1" will be 101 BC in the game!!!
+
+
+	# Nectanebo I
+	-378.1.1 = {
+		holder = 30th_dynasty_002
+		government = feudal_government
+	}	
+
+	# Teos/Djedhor
+	-359.1.1 = {
+		holder = 30th_dynasty_003
+	}	
+
+	# Nectanebo II
+	-357.1.1 = {
+		holder = 30th_dynasty_005
+	}	
+
+	-339.1.1 = {
+		holder = 0
+	}
+
+	# Khababash
+	-338.1.1 = {
+		holder = ancient_egyptian_001
+	}	
+
+	-334.1.1 = {
+		holder = 0
+	}
+
+
+	# Ptolemy I
+	-304.1.1 = {
+		holder = ptolemy_001
+	}	
+
+	# Ptolemy II
+	-281.1.10 = {
+		holder = ptolemy_006
+	}
+
+	# Ptolemy III
+	-245.1.28 = {
+		holder = ptolemy_007
+	}
+
+	# Ptolemy IV
+	-221.11.30 = {
+		holder = ptolemy_010
+	}
+
+	# Ptolemy V
+	-203.7.27 = {
+		holder = ptolemy_016
+	}
+
+	# Ptolemy VI
+	-179.9.27 = {
+		holder = ptolemy_017
+	}
+
+	# Ptolemy VII
+	-144.4.5 = {
+		holder = ptolemy_020
+	}
+
+	# Ptolemy VIII
+	-143.1.1 = {
+		holder = ptolemy_019
+	}
+
+	# Cleopatra II
+	# Cybr: Strictly speaking, in late 132 BCE a civil war erupted between Ptolemy VIII and Cleopatra III vs Cleopatra II
+	# Latter in the south supported by native Egyptians, and former in the north supported by Greeks and Jews
+	# However, Cleopatra II is the first Ptolemaic queen to claim to rule by herself in the capital, so I've made her sole ruler
+	# Somehow they later reconciled, I have no idea wtf is going on with these Ptolemies
+	-131.10.1 = {
+		holder = ptolemy_018
+	}
+
+	# Ptolemy VIII
+	-125.1.1 = {
+		holder = ptolemy_019
+	}
+
+	# Ptolemy IX
+	-115.6.28 = {
+		holder = ptolemy_026
+	}
+
+	# Ptolemy X
+	-106.1.1 = {
+		holder = ptolemy_027
+	}
+
+	# Ptolemy IX
+	-87.6.5 = {
+		holder = ptolemy_026
+	}
+
+	# Berenice III
+	-80.12.5 = {
+		holder = ptolemy_033
+	}
+
+	# Ptolemy XI
+	-79.4.22 = {
+		holder = ptolemy_034
+	}
+
+	# Ptolemy XII
+	-79.4.23 = {
+		holder = ptolemy_031
+	}
+
+	# Cleopatra V/VI, with Berenice IV until 57 BCE
+	-57.1.1 = {
+		holder = ptolemy_035
+	}
+
+	# Berenice IV as sole ruler until 55 BCE when Ptolemy XII reclaimed his throne and executed his daughter for treason
+	-56.1.1 = {
+		holder = ptolemy_036
+	}
+
+	# Ptolemy XII (restoration)
+	-54.4.1 = {
+		holder = ptolemy_031
+	}
+
+	# Cleopatra VII (*that* Cleopatra)
+	-50.2.8 = {
+		holder = ptolemy_037
+	}
+
+	# Ptolemy XV Caesarion as sole ruler after his mother's suicide
+	-29.8.10 = {
+		holder = ptolemy_041
+	}
+
+	# Egypt annexed into the Roman Empire
+	# Although Roman Emperors would be formally acknowledged as Pharaohs into the early 4th century
+	-29.8.29 = {
+		holder = 0
+	}
+
+}
+
+
+
+
+
+k_aegyptus = {
+
+	# NOTE FOR BC DATES:
+	# NEGATIVE DATES ARE **ONE YEAR** AFTER BC DATES
+	# i.e., a date of "-100.1.1" will be 101 BC in the game!!!
+
+	# Nectanebo I
+	-378.1.1 = {
+		holder = 30th_dynasty_002
+		government = feudal_government
+	}	
+
+	# Teos/Djedhor
+	-359.1.1 = {
+		holder = 30th_dynasty_003
+	}	
+
+	# Nectanebo II
+	-357.1.1 = {
+		holder = 30th_dynasty_005
+	}	
+
+	-339.1.1 = {
+		holder = 0
+	}
+
+	# Khababash
+	-338.1.1 = {
+		holder = ancient_egyptian_001
+	}	
+
+	-334.1.1 = {
+		holder = 0
+	}
+
+	# Ptolemy I
+	-304.1.1 = {
+		holder = ptolemy_001
+		liege = e_egypt
+	}	
+
+	# Ptolemy II
+	-281.1.10 = {
+		holder = ptolemy_006
+	}
+
+	# Ptolemy III
+	-245.1.28 = {
+		holder = ptolemy_007
+	}
+
+
+	# Ptolemy IV
+	-221.11.30 = {
+		holder = ptolemy_010
+	}
+
+	# Rebel Pharaohs
+	-205.1.1 = {
+		holder = ancient_egyptian_002
+		liege = 0
+	}	
+
+	-197.1.1 = {
+		holder = ancient_egyptian_003
+	}	
+	
+	-185.1.1 = {
+		holder = ptolemy_010
+	}
+
+	# Ptolemy VI
+	-179.9.27 = {
+		holder = ptolemy_017
+	}
+
+	# Ptolemy VII
+	-144.4.5 = {
+		holder = ptolemy_020
+	}
+
+	# Ptolemy VIII
+	-143.1.1 = {
+		holder = ptolemy_019
+	}
+	# Rebel Pharaohs
+	-131.1.1 = {
+		holder = ancient_egyptian_004
+	}
+
+	# Cleopatra II
+	# Cybr: Strictly speaking, in late 132 BCE a civil war erupted between Ptolemy VIII and Cleopatra III vs Cleopatra II
+	# Latter in the south supported by native Egyptians, and former in the north supported by Greeks and Jews
+	# However, Cleopatra II is the first Ptolemaic queen to claim to rule by herself in the capital, so I've made her sole ruler
+	# Somehow they later reconciled, I have no idea wtf is going on with these Ptolemies
+	-129.1.1 = {
+		holder = ptolemy_018
+	}
+
+	# Ptolemy VIII
+	-125.1.1 = {
+		holder = ptolemy_019
+	}
+
+	# Ptolemy IX
+	-115.6.28 = {
+		holder = ptolemy_026
+	}
+
+	# Ptolemy X
+	-106.1.1 = {
+		holder = ptolemy_027
+	}
+
+	# Ptolemy IX
+	-87.6.5 = {
+		holder = ptolemy_026
+	}
+
+	# Berenice III
+	-80.12.5 = {
+		holder = ptolemy_033
+	}
+
+	# Ptolemy XI
+	-79.4.22 = {
+		holder = ptolemy_034
+	}
+
+	# Ptolemy XII
+	-79.4.23 = {
+		holder = ptolemy_031
+	}
+
+	# Cleopatra V/VI, with Berenice IV until 57 BCE
+	-57.1.1 = {
+		holder = ptolemy_035
+	}
+
+	# Berenice IV as sole ruler until 55 BCE when Ptolemy XII reclaimed his throne and executed his daughter for treason
+	-56.1.1 = {
+		holder = ptolemy_036
+	}
+
+	# Ptolemy XII (restoration)
+	-54.4.1 = {
+		holder = ptolemy_031
+	}
+
+	# Cleopatra VII (*that* Cleopatra)
+	-50.2.8 = {
+		holder = ptolemy_037
+	}
+
+	# Ptolemy XV Caesarion as sole ruler after his mother's suicide
+	-29.8.10 = {
+		holder = ptolemy_041
+	}
+
+	# Egypt annexed into the Roman Empire
+	# Although Roman Emperors would be formally acknowledged as Pharaohs into the early 4th century
+	-29.8.29 = {
+		holder = 0
+		de_jure_liege = e_roman_empire
+	}
+
+	# Isidorus, rebel leader of the Boukoloi
+	# See here for more info: https://www.academia.edu/36906583/Boukoloi_Banditry_Greek_Perspectives_on_Native_Resistance
+	172.1.1 = {
+		holder = kemetic_001
+	}
+
+	173.1.1 = {
+		holder = 0
+	}
+	
+	303.1.1 = {
+		de_jure_liege = e_roman_empire
+		holder = aegyptus_53
+		
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					has_dlc_feature = royal_court
+				}
+				holder = {
+					set_court_language = language_latin # Latin was the language of the Roman administration
+					if = {
+						limit = { NOT = { knows_court_language_of = this } }
+						learn_court_language_of = this
+					}
+				}
+			}
+		}
+	}
+	304.1.1 = {
+		holder = aegyptus_52
+	}
+	305.1.1 = {
+		holder = aegyptus_51
+	}
+	307.1.1 = {
+		holder = aegyptus_50
+	}
+	308.1.1 = {
+		holder = aegyptus_49
+	}
+	309.1.1 = {
+		holder = aegyptus_48
+	}
+	310.1.1 = {
+		holder = aegyptus_47
+	}
+	312.1.1 = {
+		holder = aegyptus_46
+	}
+	314.1.1 = {
+		holder = aegyptus_54
+	}
+	328.1.1 = {
+		holder = aegyptus_55
+	}
+	329.1.1 = {
+		holder = aegyptus_45
+	}
+	330.1.1 = {
+		holder = aegyptus_56
+	}
+	331.1.1 = {
+		holder = aegyptus_12
+	}
+	332.1.1 = {
+		holder = aegyptus_44
+	}
+	333.1.1 = {
+		holder = aegyptus_43
+	}
+	335.1.1 = {
+		holder = aegyptus_41
+	}
+	337.1.1 = {
+		holder = aegyptus_42
+	}
+	338.1.1 = {
+		holder = aegyptus_40
+	}
+	340.1.1 = {
+		holder = aegyptus_39
+	}
+	341.1.1 = {
+		holder = aegyptus_39
+	}
+	344.1.1 = {
+		holder = aegyptus_38
+	}
+	345.1.1 = {
+		holder = aegyptus_37
+	}
+	353.1.1 = {
+		holder = aegyptus_36
+	}
+	355.1.1 = {
+		holder = aegyptus_35
+	}
+	# 356.1.1 = {
+	# 	holder = aegyptus_34
+	# }
+	# 357.1.1 = {
+	# 	holder = aegyptus_33
+	# }
+	# 358.1.1 = {
+	# 	holder = aegyptus_32
+	# }
+	# 359.1.1 = {
+	# 	holder = aegyptus_31
+	# }
+	# 360.1.1 = {
+	# 	holder = aegyptus_30
+	# }
+	356.1.1 = {
+		holder = sebastianos_01
+		liege = "e_roman_empire"
+		
+	}
+	362.1.1 = {
+		holder = aegyptus_01
+	}
+	367.1.1 = {
+		holder = aegyptus_02
+	}
+	370.1.1 = {
+		holder = aegyptus_03
+	}
+	371.1.1 = {
+		holder = aegyptus_04
+	}
+	374.1.1 = {
+		holder = aegyptus_05
+	}
+	376.1.1 = {
+		holder = aegyptus_06
+	}
+	379.1.1 = {
+		holder = aegyptus_07
+	}
+	380.1.1 = {
+		holder = aegyptus_08
+	}
+	381.1.1 = {
+		holder = aegyptus_09
+	}
+	382.1.1 = {
+		holder = aegyptus_04
+	}
+	383.1.1 = {
+		holder = aegyptus_10
+	}
+	384.1.1 = {
+		holder = aegyptus_11
+	}
+	385.1.1 = {
+		holder = aegyptus_12
+	}
+	386.1.1 = {
+		holder = aegyptus_13
+	}
+	387.1.1 = {
+		holder = aegyptus_14
+	}
+	388.1.1 = {
+		holder = aegyptus_15
+	}
+	389.1.1 = {
+		holder = aegyptus_16
+	}
+	391.1.1 = {
+		holder = aegyptus_17
+	}
+	392.1.1 = {
+		holder = aegyptus_57
+	}
+	393.1.1 = {
+		holder = aegyptus_18
+		liege = "e_byzantium"
+		
+		de_jure_liege = e_byzantium
+	}
+	396.1.1 = {
+		holder = aegyptus_23
+	}
+	397.1.1 = {
+		holder = aegyptus_24
+	}
+	398.1.1 = {
+		holder = aegyptus_58
+	}
+	400.1.1 = {
+		holder = aegyptus_59
+	}
+	403.1.1 = {
+		holder = aegyptus_60
+	}
+	415.1.1 = {
+		holder = aegyptus_19
+	}
+	422.1.1 = {
+		holder = aegyptus_61
+	}
+	435.1.1 = {
+		holder = aegyptus_62
+	}
+	443.1.1 = {
+		holder = aegyptus_63
+	}
+	451.1.1 = {
+		holder = aegyptus_64
+	}
+	453.1.1 = {
+		holder = aegyptus_65
+	}
+	457.1.1 = {
+		holder = aegyptus_66
+	}
+	468.1.1 = {
+		holder = aegyptus_67
+	}
+	475.1.1 = {
+		holder = aegyptus_68
+	}
+	477.1.1 = {
+		holder = aegyptus_69
+	}
+	478.1.1 = {
+		holder = aegyptus_70
+	}
+	481.1.1 = {
+		holder = aegyptus_71
+	}
+	482.1.1 = {
+		holder = aegyptus_72
+	}
+	483.1.1 = {
+		holder = aegyptus_73
+	}
+	487.1.1 = {
+		holder = aegyptus_64
+	}
+	488.1.1 = {
+		holder = aegyptus_74
+	}
+	501.1.1 = {
+		holder = aegyptus_77
+	}
+	510.1.1 = {
+		holder = aegyptus_78
+	}
+	520.1.1 = {
+		holder = aegyptus_79
+	}
+	527.1.1 = {
+		holder = aegyptus_80
+	}
+	535.1.1 = {
+		holder = aegyptus_81
+	}
+	537.1.1 = {
+		holder = aegyptus_82
+	}
+	539.1.1 = {
+		holder = aegyptus_21
+	}
+}
+k_britannia = {
+	319.1.1 = {
+		holder = britannia_01 #Pacatianus
+		liege = e_roman_empire
+		
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					has_dlc_feature = royal_court
+				}
+				holder = {
+					set_court_language = language_latin # Latin was the language of the Roman administration
+					if = {
+						limit = { NOT = { knows_court_language_of = this } }
+						learn_court_language_of = this
+					}
+				}
+			}
+		}
+	}
+	350.1.1 = {
+		holder = magnetius_03 # Magnetius
+	}
+	353.8.11 = {
+		holder = britannia_02 #Martinus
+	}
+	361.1.1 = {
+		holder = britannia_03 #ALypius
+		liege = "e_roman_empire"
+		de_jure_liege = e_roman_empire
+	}
+	
+	369.1.1 = {
+		holder = britannia_04 #Civilis
+	}
+	383.1.1 = {
+		holder = 159807 #Magnus Maximus
+	}
+	394.1.1 = {
+		holder = britannia_06 #Chrysanthus Vicarius Britannica
+	}
+	395.1.1 = {
+		holder = britannia_05 #Victorinus
+		liege = "e_western_roman_empire"
+		de_jure_liege = e_western_roman_empire
+	}
+	406.6.1 = {
+		holder = BUsuprer_01 #Marcus the Usurper
+	}
+	406.10.1 = {
+		holder = BUsuprer_02 #Gratianus the Usurper
+	}
+	407.2.4 = {
+		holder = constantinus_01 #Constantinus the Usurper
+	}
+	411.9.18 = {
+		holder = 0
+		de_jure_liege = e_britannia
+		effect = {
+			set_color_from_title = title:k_britannia_2
+		}
+	}
+}
+k_oman = {
+	361.1.1 = {
+		name = k_mazun
+		government = eranshar_government
+		de_jure_liege = e_arabia
+	}
+	##Sassanid Oman
+	360.1.1 = {
+		holder = mazun_01
+		liege = e_persia
+	}
+	395.1.17 = {
+		liege = e_persia
+	}
+	460.1.1 = {
+		holder = mazun_02
+		liege = e_persia
+	}
+	#532.1.1 = {
+	#	holder = lakhmid_14
+	#	liege = e_persia
+	#}
+	627.1.1 = {
+		holder = 0
+		reset_name = yes
+	}
+}
+d_pannonia_valeria = {
+	361.1.1 = { change_development_level = 3 }
+	361.1.1 = {
+		
+		liege = k_pannonia
+		holder = hungary_01
+	}
+	395.1.1 = {
+		holder = hungary_04
+		liege = k_pannonia
+	}
+}
+#Gepids
+k_gepids = {
+	## Gepid Tribes
+	350.1.1 = {
+		holder = gepids_01
+		government = tribal_government
+	}
+	453.1.1 = {
+		holder = 991001 #Ardaric
+	}
+	460.1.1 = {
+		holder = 991002 #Giesmus
+	}
+	480.1.1 = {
+		holder = 991003 #Thrapstila
+	}
+	488.1.1 = {
+		holder = 991005 #Thrasaric
+	}
+	504.1.1 = {
+		holder = 991007 #Gelemund
+	}
+	549.1.1 = {
+		holder = 991008 #Thorisind
+	}
+}
+k_thracian_goths = {
+	476.1.1 = {
+		holder = strabo_02
+		liege = e_byzantium
+		government = tribal_government
+	}
+}
+e_western_roman_empire = {
+	286.4.1 = {
+		insert_title_history = e_roman_empire # Dioceltians Reforms
+		succession_laws = { imperial_elective_succession_law }
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					has_dlc_feature = royal_court
+				}
+				holder = {
+					set_court_language = language_latin # Latin was the language of the Roman administration
+					if = {
+						limit = { NOT = { knows_court_language_of = this } }
+						learn_court_language_of = this
+					}
+				}
+			}
+		}
+	}
+	286.4.1 = {
+		holder = 145293 # Maximianus
+	}
+	305.5.1 = {
+		holder = 70524 # Constantius Chlorus
+	}
+	306.7.25 = {
+		holder = 70523 # Constantine I
+	}
+	311.5.5 = {
+		holder = 145294
+	} # Maxentius
+	325.4.1 = {
+		holder = 0 # Constantine the I Reunites the Empire
+	}
+	337.5.22 = {
+		holder = 70520 # Constantinus the II
+	}
+	340.4.1 = {
+		holder = 70521 # Constantinus the II
+	}
+	340.4.1 = {
+		holder = 70521 # Constans the II
+	}
+	350.2.1 = {
+		holder = 0 # Constantius the II Reunifies the Empire
+	}
+	364.2.17 = {
+		holder = 145231 #Valentianus
+	}
+	378.8.9 = {
+		holder = 145233
+	}
+	378.12.19 = {
+		holder = 145234
+	} # Valentinian II
+	379.1.19 = {
+		holder = 70534 # Theodosius
+	}
+	383.8.25 = {
+		holder = 159807 # Magnus Maximus
+	}
+	395.1.17 = {
+		holder = 145227 #Honorius
+		government = administrative_government
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				holder = {
+					change_government = imperial_government
+					add_realm_law_skip_effects = single_heir_succession_law
+				}
+			}
+			if = {
+				limit = {
+					exists = holder
+					holder = { has_government = administrative_government }
+				}
+				set_state_faith = faith:nicene
+			}
+			if = {
+				limit = {
+					exists = holder
+					has_dlc_feature = royal_court
+				}
+				holder = {
+					set_court_type = court_warlike
+				}
+			}
+		}
+	}
+	#### Last Emperors
+	407.1.1 = {
+		holder = constantinus_01 # Usurper
+	}
+	421.2.8 = {
+		holder = 145228 # Constantius III
+	}
+	421.9.2 = {
+		holder = 145227 # Honorius Again
+	}
+	425.10.23 = {
+		holder = 145229 # Valentinian III
+	}
+	455.3.17 = {
+		holder = anicia_28 # Petronius Maximus
+	}
+	455.7.9 = {
+		holder = avitian_02 # Eparchius
+	}
+	456.10.17 = {
+		holder = 999604 # Ricimer
+	}
+	457.12.28 = {
+		holder = maiorian_01 # Majorian
+	}
+	461.11.19 = {
+		holder = libius_01 # Libius Severus
+	}
+	465.11.14 = {
+		holder = 999604 # Ricimer
+	}
+	467.4.12 = {
+		holder = prokopios_04 # Anthemius
+	}
+	472.7.11 = {
+		holder = anicia_29 # Olybrius
+	}
+	472.11.2 = {
+		holder = 994008 # Gundebauld
+	}
+	472.11.2 = {
+		holder = glycerius_01 # Glycerius
+	}
+	474.7.24 = {
+		holder = nepos_02 # Iulius Nepos
+	}
+	475.10.31 = {
+		holder = orestes_03 # Romulus Augustulus
+	}
+	476.9.4 = {
+		holder = 0 #Destroyed by Odoarcer
+	}
+}
+k_orientis = {
+	## Diocletian Division
+	200.1.1 = {
+		liege = e_roman_empire
+		de_jure_liege = e_roman_empire
+		
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					has_dlc_feature = royal_court
+				}
+				holder = {
+					set_court_language = language_latin # Latin was the language of the Roman administration
+					if = {
+						limit = { NOT = { knows_court_language_of = this } }
+						learn_court_language_of = this
+					}
+				}
+			}
+		}
+	}
+	360.1.1 = {
+		holder = syria_04
+	}
+	395.1.1 = {
+		holder = syria_05 
+		liege = e_byzantium
+		de_jure_liege = e_byzantium
+	}
+	476.1.1 = {
+		holder = isaurian_10
+	}
+	532.1.1 = {
+		holder = cappadocia_07
+	}
+}
+d_salutaris = {
+	361.1.1 = {	change_development_level = 6 }
+	476.1.1 = {	change_development_level = 7 }
+	532.1.1 = {	change_development_level = 8 }
+	632.1.1 = {	change_development_level = 9 }
+	768.1.1 = {	change_development_level = 10 }
+	
+	361.1.1 = {
+		holder = salutaris_01
+		
+		de_jure_liege = k_orientis
+		liege = k_orientis
+	}
+	395.1.1 = {
+		holder = salutaris_02
+	}
+	476.1.1 = {
+		holder = salutaris_03
+		liege = k_orientis
+	}
+	530.1.1 = {
+		holder = ghassanid_29
+	}
+}
+k_tanukhids = {
+	200.1.1 = {
+		liege = e_roman_empire
+	}
+	361.1.1 = {
+		holder = tanukhid_01
+		government = tribal_government
+	}
+	375.1.1 = {
+		holder = tanukhid_011
+	}
+	425.1.1 = {
+		holder = tanukhid_021
+	}
+	456.1.1 = {
+		holder = tanukhid_03
+	}
+}
+k_ghassanid = {
+	486.1.1 = {
+		holder = ghassanid_25 ##Al-Harith IV
+	}
+	512.1.1 = {
+		holder = ghassanid_26 ##Jabalah IV
+	}
+	528.1.1 = {
+		holder = ghassanid_27 ##Al-Harith V
+	}
+	569.1.1 = {
+		holder = ghassanid_30 ##Al-Mundhir III
+	}
+	581.1.1 = {
+		holder = ghassanid_31 ##Abu Kirab
+	}
+	582.1.1 = {
+		holder = ghassanid_32 ##Al-Nu'man VI
+	}
+	583.1.1 = {
+		holder = ghassanid_33 ##Al-Harith VI
+	}
+	583.1.1 = {
+		holder = ghassanid_34 ##Al-Nu'man VII
+	}
+	600.1.1 = {
+		holder = ghassanid_36 ##Al-Aiham
+	}
+	614.1.1 = {
+		holder = ghassanid_37 ##Al-Mundhir IV
+	}
+	616.1.1 = {
+		holder = ghassanid_38 ##Sarahil
+	}
+	618.1.1 = {
+		holder = ghassanid_39 ##'Amr IV
+	}
+	628.1.1 = {
+		holder = ghassanid_41 ##Jabalah V
+	}
+	632.1.1 = {
+		holder = ghassanid_42 ##Jabalah VI
+	}
+}
+d_palestina_prima = {
+	361.1.1 = {
+		holder = palestina_01
+		liege = k_orientis
+		
+	}
+	395.1.1 = {
+		holder = palestina_02
+		liege = k_orientis
+	}
+	476.1.1 = {
+		holder = palestina_07
+	}
+	532.1.1 = {
+		holder = syrian_misc_01
+	}
+}
+#d_phoenicia = {
+#	361.1.1 = {
+#		holder = palestina_05
+#		liege = k_orientis
+#		government = administrative_government
+#	}
+#	395.1.1 = {
+#		holder = palestina_06
+#		liege = k_orientis
+#	}
+#	476.1.1 = {
+#		holder = palestina_09
+#	}
+#}
+
+k_franks = {
+	362.1.1 = {
+		holder = 900016
+		liege = "e_roman_empire"
+		government = tribal_government
+	}
+	395.1.17 = {
+		liege = "e_western_roman_empire"
+	}
+	415.1.1 = {
+		holder = 997001 # Theodomar
+	}
+	428.1.1 = {
+		holder = 997002 # Chlodio
+	}
+	432.1.1 = {
+		liege = 0
+	}
+}
+
+k_varini = {
+	# Kingdom of the Varini
+	361.1.1 = {
+		holder = varini_01
+		government = tribal_government
+	}
+	380.1.1 = {
+		holder = varini_02
+	}
+	409.1.1 = {
+		holder = varini_03
+	}
+	460.1.1 = {
+		holder = varini_04
+	}
+	510.1.1 = {
+		holder = varini_05
+	}
+	540.1.1 = {
+		holder = varini_06
+	}
+}
+k_suebi = {
+	400.1.1 = {
+		government = tribal_government
+		liege = 0
+	}
+	406.1.1 = {
+		holder = quadi_04 # Hermenerich, First King, Abdicated and Died later
+	}
+	438.1.1 = {
+		holder = 999601 # Rechila, son of Hermerich
+	}
+	448.1.1 = {
+		holder = 999603 # Rechiar, son of Rechila
+	}
+	456.1.1 = {
+		holder = suevi_01 # Agiulf, Gothic Usurper 
+	}
+	457.1.1 = {
+		holder = maldras_02 # Maldras, Usurper
+	}
+	460.1.1 = {
+		holder = maldras_03 # Rechimund, son of Maldra
+	}
+	463.1.1 = {
+		holder = maldras_04 # Frumar, son of Maldra
+	}
+	464.1.1 = {
+		holder = maldras_05 # Remismund, son of Maldra
+	}
+	469.1.1 = {
+		holder = maldras_06 # Hermenerich, son of Maldra
+		de_jure_liege = e_spain
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					has_dlc_feature = royal_court
+				}
+				holder = {
+					set_court_language = language_latin # Latin was the language of the Roman administration
+					if = {
+						limit = { NOT = { knows_court_language_of = this } }
+						learn_court_language_of = this
+					}
+				}
+			}
+		}
+	}
+	532.1.1 = {
+		holder = theodemund_the_unknown
+	}
+}
+
+# Titular Baquates Tribe
+d_baquates = {
+	340.1.1 = {
+		holder = mauri_17
+		government = tribal_government
+		#liege = d_fes 
+	}
+	385.1.1 = {
+		holder = mauri_18
+	}
+	415.1.1 = {
+		holder = mauri_19
+	}
+	445.1.1 = {
+		holder = mauri_20
+	}
+	475.1.1 = {
+		holder = mauri_21
+		#holder = 0
+		#liege = 0
+	}
+	505.1.1 = {
+		holder = mauri_32
+	}
+	508.1.1 = {
+		liege = k_mauro_roman_kingdom
+	}
+}
+
+# Titular Bavares Tribe
+d_bavares = {
+	200.1.1 = {
+		#de_jure_liege = d_tlemcen
+		#liege = d_tlemcen
+		#government = administrative_government
+	}
+
+	340.1.1 = {
+		holder = mauri_22
+		government = tribal_government
+	}
+	385.1.1 = {
+		holder = mauri_23
+	}
+	415.1.1 = {
+		holder = mauri_24
+	}
+	445.1.1 = {
+		holder = mauri_25
+	}
+	475.1.1 = {
+		holder = mauri_26
+	}
+	505.1.1 = {
+		holder = gaetuli_31
+		#liege = k_mauro_roman_kingdom
+	}
+	508.1.1 = {
+		liege = k_mauro_roman_kingdom
+	}
+}
+
+# East Bavares
+
+d_eastbavares = {
+	200.1.1 = {
+		#de_jure_liege = d_tlemcen
+		#liege = d_tlemcen
+		#government = administrative_government
+	}
+
+	330.1.1 = {
+		holder = gaetuli_15
+		government = tribal_government
+		liege = k_africae
+	}
+	360.1.1 = {
+		holder = gaetuli_18
+	}
+	372.1.1 = {
+		holder = gaetuli_19
+	}
+	405.1.1 = {
+		holder = gaetuli_20
+	}
+}
+
+# Titular Aures Dux Title
+d_avaritana = {
+	447.1.1 = {
+		holder = mauri_36 # Masties
+		liege = k_vandals
+	}
+	516.1.1 = {
+		holder = mauri_42 # Iabdas
+		liege = 0
+	}
+}
+
+# Titular Zaba Dux Title
+d_zaba = {
+	494.1.1 = {
+		holder = mauri_38
+		liege = 0
+	}
+	539.1.1 = {
+		holder = 0
+	}
+}
+
+# Titular Heruli Tribe
+k_heruli = {
+	#340.1.1 = {
+	#	holder = mauri_17
+	#	government = tribal_government
+		#liege = d_fes 
+	#}
+	#385.1.1 = {
+	#	holder = mauri_18
+	#}
+	#415.1.1 = {
+	#	holder = mauri_19
+	#}
+	#445.1.1 = {
+	#	holder = mauri_20
+	#}
+	470.1.1 = {
+		holder = 996002 # Odovacar
+		government = tribal_government
+	}
+	476.1.1 = {
+		holder = 995002 # Alaric
+	}
+	489.1.1 = {
+		holder = 995003 # Rodulf
+	}
+	512.1.1 = {
+		holder = 995006 # Gripa
+		liege = e_byzantium
+	}
+	530.1.1 = {
+		holder = 995007 # Ocho
+	}
+	566.1.1 = {
+		holder = 995015 # Sindebald, heruli general in Italy
+		liege = 0
+	}
+}
+
+k_antes = {
+	335.1.1 = {
+		holder = slavs_01
+		government = tribal_government
+	}
+}
+
+d_venedia = {
+	### Vistula Venedi
+	340.1.1 = {
+		holder = volynhia_01
+	}
+	385.1.1 = {
+		liege = k_galicia-volhynia
+	}
+}
+
+d_bug = {
+	460.1.1 = {
+		holder = slavs_25
+	}
+}
+
+d_san = {
+	461.1.1 = {
+		holder = slavs_22
+	}
+}
+
+d_naffur = {
+	500.1.1 = {
+		holder = garamantian_22 # Naffur Confederacy
+	}
+	525.8.28 = {
+		holder = garamantian_20
+	}
+	546.7.8 = {
+		holder = garamantian_21
+	}
+}

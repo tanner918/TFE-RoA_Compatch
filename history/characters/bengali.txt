@@ -1,0 +1,2399 @@
+﻿190025 = {
+	name = "Dayitavishnu"
+	dynasty = 1043000
+	religion = "mahayana"
+	culture = "varendri"
+	trait = kshatriya
+	682.1.1 = {
+		birth = yes
+	}
+	727.1.1 = {
+		death = yes
+	}
+}
+190026 = {
+	name = "Vapyata"
+	dynasty = 1043000
+	religion = "mahayana"
+	culture = "varendri"
+	trait = kshatriya
+	father = 190025
+	701.1.1 = {
+		birth = yes
+	}
+	748.1.1 = {
+		death = yes
+	}
+}
+
+190027 = {
+	name = "Gopala"
+	dynasty = 1043000
+	religion = "mahayana"
+	culture = "varendri"
+	trait = kshatriya
+	father = 190026
+	734.1.1 = {
+		birth = yes
+	}
+	750.1.1 = {
+		add_spouse = 191301
+	}
+	769.1.1 = {
+		death = yes
+	}
+}
+190028 = {
+	name = "Dharmapala"
+	dynasty = 1043000
+	religion = "mahayana"
+	culture = "varendri"
+	trait = kshatriya
+	father = 190027
+	mother = 191301
+	trait = brave
+	trait = arrogant
+	trait = ambitious
+	753.1.1 = {
+		birth = yes
+	}
+	769.1.1 = {
+		trait = education_martial_4
+	}
+	775.1.1 = {
+		add_spouse = 191302
+	}
+	810.1.1 = {
+		death = yes
+	}
+}
+190006 = {
+	name = "Vakapala"
+	dynasty = 1043000
+	religion = "mahayana"
+	culture = "varendri"
+	trait = kshatriya
+	father = 190027
+	mother = 191301
+	757.1.1 = {
+		birth = yes
+	}
+	809.1.1 = {
+		death = yes
+	}
+}
+190084 = {
+	name = "Shantideva"
+	dynasty = 1044008
+	religion = "vaishnavism"
+	culture = "bengali"
+	trait = brahmin
+	703.1.1 = {
+		birth = yes
+	}
+	750.1.1 = {
+		death = yes
+	}
+}
+190085 = {
+	name = "Viradeva"
+	dynasty = 1044008
+	religion = "vaishnavism"
+	culture = "bengali"
+	trait = brahmin
+	father = 190084
+	743.1.1 = {
+		birth = yes
+	}
+	802.1.1 = {
+		death = yes
+	}
+}
+
+191421 = {
+	name = "Pasna"	#Fictional
+	dynasty = 1044320 #Munda
+	religion = "kalikula_shaktism"
+	culture = "kaushali"
+	730.1.1 = {
+		birth = yes
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+
+191422 = {
+	name = "Kramaditya"	#Fictional
+	dynasty = 1044320 #Munda
+	religion = "kalikula_shaktism"
+	culture = "kaushali"
+	father = 191421
+	750.1.1 = {
+		birth = yes
+	}
+	820.1.1 = {
+		death = yes
+	}
+}
+
+191088 = {
+	name = "Krisnagupta"
+	dynasty = 1044321 #(later) Gupta, years are guesses before Mahasenagupta
+	religion = "srikula_shaktism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = gupta_08
+	460.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+
+191089 = {
+	name = "Harsagupta"
+	dynasty = 1044321 #Gupta
+	religion = "srikula_shaktism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = 191088
+	480.1.1 = {
+		birth = yes
+	}
+	530.1.1 = {
+		death = yes
+	}
+}
+
+191090 = {
+	name = "Jivatagupta"
+	dynasty = 1044321 #Gupta
+	religion = "srikula_shaktism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = 191089
+	510.1.1 = {
+		birth = yes
+	}
+	546.1.1 = {
+		death = yes
+	}
+}
+
+191091 = {
+	name = "Kumaragupta"
+	dynasty = 1044321 #Gupta
+	religion = "srikula_shaktism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = 191090
+	530.1.1 = {
+		birth = yes
+	}
+	580.1.1 = {
+		death = yes
+	}
+}
+
+191092 = {
+	name = "Damodaragupta"
+	dynasty = 1044321 #Gupta
+	religion = "srikula_shaktism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = 191091
+	546.1.1 = {
+		birth = yes
+	}
+	605.1.1 = {
+		death = yes
+	}
+}
+guptasad_36 = {
+	name = "Mahasenagupta"
+	female = yes
+	dynasty = 1044321 #Gupta
+	religion = "srikula_shaktism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = 191092
+	562.1.1 = {
+		birth = yes
+	}
+	630.1.1 = {
+		death = yes
+	}
+}
+191093 = {
+	name = "Mahasenagupta"
+	dynasty = 1044321 #Gupta
+	religion = "srikula_shaktism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = 191092
+	580.1.1 = {
+		birth = yes
+	}
+	630.1.1 = {
+		death = yes
+	}
+}
+
+191094 = {
+	name = "Kumaragupta"
+	dynasty = 1044321 #Gupta
+	religion = "srikula_shaktism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = 191093
+	600.1.1 = {
+		birth = yes
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+
+191095 = {
+	name = "Madhavagupta"
+	dynasty = 1044321 #Gupta
+	religion = "srikula_shaktism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = 191093
+	610.1.1 = {
+		birth = yes
+	}
+	672.1.1 = {
+		death = yes
+	}
+}
+
+191096 = {
+	name = "Adityasenagupta"
+	dynasty = 1044321 #Gupta
+	religion = "srikula_shaktism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = 191095
+	630.1.1 = {
+		birth = yes
+	}
+	685.1.1 = {
+		death = yes
+	}
+}
+
+191097 = {
+	name = "Devagupta"
+	dynasty = 1044321 #Gupta
+	religion = "srikula_shaktism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = 191096
+	650.1.1 = {
+		birth = yes
+	}
+	690.1.1 = {
+		death = yes
+	}
+}
+
+191098 = {
+	name = "Visnugupta"
+	dynasty = 1044321 #Gupta
+	religion = "srikula_shaktism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = 191097
+	670.1.1 = {
+		birth = yes
+	}
+	710.1.1 = {
+		death = yes
+	}
+}
+
+191099 = {
+	name = "Jivatagupta"	#II
+	dynasty = 1044321 #Gupta
+	religion = "srikula_shaktism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = 191098
+	690.1.1 = {
+		birth = yes
+	}
+	727.1.1 = {
+		death = yes
+	}
+}
+
+191303 = {
+	name = "Ramagupta"	#last of the later Guptas, said to have taken control over northern Bihar after Jivatagupta was killed by Yashorvarman of Kannauj.
+	dynasty = 1044321 #Gupta
+	religion = "srikula_shaktism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = 191099
+	720.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+
+191105 = {
+	name = "Lokhanata"
+	dynasty = 1044323 #Visayapati
+	religion = "vajrayana"
+	culture = "kaushali"
+	trait = kshatriya
+	730.1.1 = {
+		birth = yes
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+
+191106 = {
+	name = "Adi"
+	dynasty = 1044324 #Malla
+	religion = "srikula_shaktism"
+	culture = "kaushali"
+	trait = kshatriya
+	630.1.1 = {
+		birth = yes
+	}
+	710.1.1 = {
+		death = yes
+	}
+}
+
+191107 = {
+	name = "Jai"
+	dynasty = 1044324 #Malla
+	religion = "shaivism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = 191106
+	650.1.1 = {
+		birth = yes
+	}
+	720.1.1 = {
+		death = yes
+	}
+}
+
+191108 = {
+	name = "Benu"
+	dynasty = 1044324 #Malla
+	religion = "shaivism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = 191106
+	655.1.1 = {
+		birth = yes
+	}
+	733.1.1 = {
+		death = yes
+	}
+}
+
+191109 = {
+	name = "Kinu"
+	dynasty = 1044324 #Malla
+	religion = "shaivism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = 191106
+	660.1.1 = {
+		birth = yes
+	}
+	742.1.1 = {
+		death = yes
+	}
+}
+
+191110 = {
+	name = "Indra"
+	dynasty = 1044324 #Malla
+	religion = "shaivism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = 191109
+	680.1.1 = {
+		birth = yes
+	}
+	757.1.1 = {
+		death = yes
+	}
+}
+
+191111 = {
+	name = "Kau"
+	dynasty = 1044324 #Malla
+	religion = "shaivism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = 191109
+	681.1.1 = {
+		birth = yes
+	}
+	764.1.1 = {
+		death = yes
+	}
+}
+
+191112 = {
+	name = "Jhau"
+	dynasty = 1044324 #Malla
+	religion = "shaivism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = 191111
+	720.1.1 = {
+		birth = yes
+	}
+	775.1.1 = {
+		death = yes
+	}
+}
+
+191113 = {
+	name = "Shur"
+	dynasty = 1044324 #Malla
+	religion = "shaivism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = 191112
+	750.1.1 = {
+		birth = yes
+	}
+	795.1.1 = {
+		death = yes
+	}
+}
+
+191114 = {
+	name = "Kanak"
+	dynasty = 1044324 #Malla
+	religion = "shaivism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = 191112
+	751.1.1 = {
+		birth = yes
+	}
+	807.1.1 = {
+		death = yes
+	}
+}
+
+191152 = {
+	name = "Adnata"
+	dynasty = 1044316 # Sura
+	religion = "srikula_shaktism"
+	culture = "kaushali"
+	trait = kshatriya
+	730.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+
+191153 = {
+	name = "Bhusura"
+	dynasty = 1044316 # Sura
+	father = 191152
+	religion = "srikula_shaktism"
+	culture = "kaushali"
+	trait = kshatriya
+	760.1.1 = {
+		birth = yes
+	}
+	850.1.1 = {
+		death = yes
+	}
+}
+
+191510 = {
+	name = "Pandita"	#Fictional
+	dynasty = 1044331
+	religion = "mahasanghika"
+	culture = "kaushali"
+	trait = kshatriya
+	700.1.1 = {
+		birth = yes
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+
+191511 = {
+	name = "Ranaka"	#Fictional
+	dynasty = 1044331
+	religion = "mahasanghika"
+	culture = "kaushali"
+	trait = kshatriya
+	father = 191510
+	760.1.1 = {
+		birth = yes
+	}
+	820.1.1 = {
+		death = yes
+	}
+}
+
+191301 = {
+	name = "Dedadevi"
+	female = yes
+	religion = "mahasanghika"
+	culture = "kaushali"
+	trait = kshatriya
+	730.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+
+191405 = {
+	name = "Varnamana" #Fictional
+	dynasty = 1044346 # Mana of Jharkand
+	religion = "shaivism"
+	culture = "kaushali"
+	trait = kshatriya
+	740.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+
+191522 = {
+	name = "Gandadeva" #Fictional
+	dynasty = 1044354 #Sonhat
+	religion = "shaivism"
+	culture = "kaushali"
+	trait = kshatriya
+	700.1.1 = {
+		birth = yes
+	}
+	719.1.1 = {
+		add_spouse = 191524
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+
+191523 = {
+	name = "Varnamana" #Fictional
+	dynasty = 1044354 #Sonhat
+	religion = "shaivism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = 191522
+	mother = 191524
+	720.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+
+191524 = {
+	name = "Mahidevi" #Fictional
+	female = yes
+	religion = "shaivism"
+	culture = "kaushali"
+	trait = kshatriya
+	702.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+
+191525 = {
+	name = "Devarshi" #Fictional
+	dynasty = 1044355 #
+	religion = "svetambara"
+	culture = "kaushali"
+	trait = kshatriya
+	720.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+
+191526 = {
+	name = "Jinabhata" #Fictional
+	dynasty = 1044355 #
+	religion = "svetambara"
+	culture = "kaushali"
+	trait = kshatriya
+	father = 191525
+	760.1.1 = {
+		birth = yes
+	}
+	850.1.1 = {
+		death = yes
+	}
+}
+
+##Gupta Administration
+
+guptasad_01 = {
+	name = "Jinabhata" #Fictional
+	religion = "vaishnavism"
+	culture = "kaushali"
+	trait = brahmin
+	330.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+guptasad_02 = {
+	name = "Varnamana" #Fictional
+	religion = "vaishnavism"
+	culture = "kaushali"
+	trait = vaishya
+	434.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+guptasad_03 = {
+	name = "Gandadeva" #Fictional
+	religion = "mahasanghika"
+	culture = "radhi"
+	trait = brahmin
+	339.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+guptasad_04 = {
+	name = "Ranaka" #Fictional
+	religion = "mahasanghika"
+	culture = "radhi"
+	trait = shudra
+	442.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+guptasad_05 = {
+	name = "Jadu" #Fictional
+	religion = "mahasanghika"
+	culture = "kaushali"
+	trait = shudra
+	332.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+guptasad_06 = {
+	name = "Rajkumar" #Fictional
+	religion = "mahasanghika"
+	culture = "kaushali"
+	trait = kshatriya
+	435.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+901064 = {
+	name = "Simhavarmana"
+	religion = "mahasanghika"
+	culture = "kaushali"
+	trait = kshatriya
+	300.1.1 = {
+		birth = yes
+	}
+	347.1.1 = {
+		death = yes
+	}
+}
+901065 = {
+	name = "Chandravarman"
+	religion = "vaishnavism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = 901064
+	322.1.1 = {
+		birth = yes
+	}
+	357.1.1 = {
+		death = yes
+	}
+}
+guptasad_08 = {
+	name = "Narvarman"
+	religion = "krishnaism"
+	culture = "magadhi"
+	trait = kshatriya
+	father = 901064
+	334.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+guptasad_07 = {
+	name = "Chaturanan" #Fictional
+	religion = "mahasanghika"
+	culture = "varendri"
+	trait = vaishya
+	430.1.1 = {
+		birth = yes
+	}
+	490.1.1 = {
+		death = yes
+	}
+}
+guptasad_09 = {
+	name = "Kalyanachandra" #Fictional
+	religion = "mahasanghika"
+	culture = "kaushali"
+	trait = vaishya
+	503.1.1 = {
+		birth = yes
+	}
+	590.1.1 = {
+		death = yes
+	}
+}
+guptasad_10 = {
+	name = "Shivanarayan" #Fictional
+	religion = "mahasanghika"
+	culture = "varendri"
+	trait = brahmin
+	498.1.1 = {
+		birth = yes
+	}
+	590.1.1 = {
+		death = yes
+	}
+}
+guptasad_11 = {
+	name = "Uditanarayan" #Fictional
+	religion = "mahasanghika"
+	culture = "radhi"
+	trait = brahmin
+	498.1.1 = {
+		birth = yes
+	}
+	590.1.1 = {
+		death = yes
+	}
+}
+guptasad_12 = {
+	name = "Kalyanachandra" #Fictional
+	religion = "mahasanghika"
+	culture = "kaushali"
+	trait = brahmin
+	330.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+guptasad_13 = {
+	name = "Shivanarayan" #Fictional
+	religion = "mahasanghika"
+	culture = "kaushali"
+	trait = vaishya
+	430.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+guptasad_14 = {
+	name = "Shukladhwaj" #Fictional
+	religion = "mahasanghika"
+	culture = "kaushali"
+	trait = vaishya
+	498.1.1 = {
+		birth = yes
+	}
+	590.1.1 = {
+		death = yes
+	}
+}
+guptasad_15 = {
+	name = "Shukladhwaj" #Fictional
+	religion = "mahasanghika"
+	culture = "kashika"
+	trait = vaishya
+	332.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+guptasad_16 = {
+	name = "Prananarayan" #Fictional
+	religion = "mahasanghika"
+	culture = "maithili"
+	trait = brahmin
+	338.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+guptasad_17 = {
+	name = "Mahendra" #Fictional
+	religion = "kaula_kapalika"
+	culture = "kaushali"
+	trait = brahmin
+	336.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+guptasad_18 = {
+	name = "Mahipala" #Fictional
+	religion = "vaishnavism"
+	culture = "kaushali"
+	trait = kshatriya
+	329.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+guptasad_19 = {
+	name = "Ramapala" #Fictional
+	religion = "mahasanghika"
+	culture = "kaushali"
+	trait = brahmin
+	430.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+guptasad_20 = {
+	name = "Rajadinaj" #Fictional
+	religion = "mahasanghika"
+	culture = "kashika"
+	trait = brahmin
+	438.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+guptasad_21 = {
+	name = "Kalyanachandra" #Fictional
+	religion = "pudgalavada"
+	culture = "kaushali"
+	trait = shudra
+	440.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+guptasad_22 = {
+	name = "Naranarayan" #Fictional
+	religion = "mahasanghika"
+	culture = "kaushali"
+	trait = shudra
+	429.1.1 = {
+		birth = yes
+	}
+	480.1.1 = {
+		death = yes
+	}
+}
+guptasad_23 = {
+	name = "Narayanpala" #Fictional
+	religion = "vaishnavism"
+	culture = "kaushali"
+	trait = shudra
+	496.1.1 = {
+		birth = yes
+	}
+	560.1.1 = {
+		death = yes
+	}
+}
+guptasad_24 = {
+	name = "Pratapnarayan" #Fictional
+	religion = "shaivism"
+	culture = "kashika"
+	trait = shudra
+	500.1.1 = {
+		birth = yes
+	}
+	560.1.1 = {
+		death = yes
+	}
+}
+guptasad_25 = {
+	name = "Shivendranarayan" #Fictional
+	religion = "vaishnavism"
+	culture = "kaushali"
+	trait = shudra
+	506.1.1 = {
+		birth = yes
+	}
+	560.1.1 = {
+		death = yes
+	}
+}
+guptasad_26 = {
+	name = "Susarman" #Fictional
+	religion = "vaishnavism"
+	culture = "kaushali"
+	trait = kshatriya
+	601.1.1 = {
+		birth = yes
+	}
+	680.1.1 = {
+		death = yes
+	}
+}
+guptasad_27 = {
+	name = "Susarman" #Fictional
+	religion = "vaishnavism"
+	culture = "kaushali"
+	trait = vaishya
+	589.1.1 = {
+		birth = yes
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+guptasad_28 = {
+	name = "Susarman" #Fictional
+	religion = "shaivism"
+	culture = "kaushali"
+	trait = shudra
+	602.1.1 = {
+		birth = yes
+	}
+	680.1.1 = {
+		death = yes
+	}
+}
+guptasad_29 = {
+	name = "Susarman" #Fictional
+	religion = "vaishnavism"
+	culture = "kaushali"
+	trait = brahmin
+	592.1.1 = {
+		birth = yes
+	}
+	660.1.1 = {
+		death = yes
+	}
+}
+guptasad_31 = {
+	name = "Hajo" #Fictional
+	religion = "krishnaism"
+	culture = "kaushali"
+	trait = shudra
+	328.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+guptasad_33 = {
+	name = "Bhatta" #Fictional
+	religion = "krishnaism"
+	culture = "kaushali"
+	trait = shudra
+	455.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+guptasad_34 = {
+	name = "Mukundanarayan" #Fictional
+	religion = "krishnaism"
+	culture = "kaushali"
+	trait = shudra
+	445.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+guptasad_35 = {
+	name = "Bhogishwar" #Fictional
+	religion = "pudgalavada"
+	culture = "kaushali"
+	trait = shudra
+	438.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+#Vangas
+vanga_06 = {
+	name = "Vijayasena" #Fictional
+	religion = "mahasanghika"
+	culture = "bengali"
+	trait = vaishya
+	485.1.1 = {
+		birth = yes
+	}
+	555.1.1 = {
+		death = yes
+	}
+}
+vanga_01 = {
+	name = "Gopachandra" #Fictional
+	religion = "mahasanghika"
+	culture = "bengali"
+	trait = vaishya
+	dynasty = vanga_dynasty
+	500.1.1 = {
+		birth = yes
+	}
+	547.1.1 = {
+		death = yes
+	}
+}
+vanga_02 = {
+	name = "Dharmaditya" #Fictional
+	religion = "mahasanghika"
+	culture = "bengali"
+	trait = vaishya
+	dynasty = vanga_dynasty
+	father = vanga_01
+	518.1.1 = {
+		birth = yes
+	}
+	550.1.1 = {
+		death = yes
+	}
+}
+vanga_03 = {
+	name = "Smacharadeva" #Fictional
+	religion = "mahasanghika"
+	culture = "bengali"
+	trait = vaishya
+	dynasty = vanga_dynasty
+	father = vanga_02
+	536.1.1 = {
+		birth = yes
+	}
+	564.1.1 = {
+		death = yes
+	}
+}
+vanga_04 = {
+	name = "Prithuvira" #Fictional
+	religion = "mahasanghika"
+	culture = "bengali"
+	trait = vaishya
+	dynasty = vanga_dynasty
+	father = vanga_03
+	554.1.1 = {
+		birth = yes
+	}
+	570.1.1 = {
+		death = yes
+	}
+}
+
+#Gauda
+
+gauda_01 = {
+	name = "Shashanka" #Fictional
+	religion = "shaivism"
+	culture = "magadhi"
+	trait = shudra
+	568.1.1 = {
+		birth = yes
+	}
+	625.1.1 = {
+		death = yes
+	}
+}
+gauda_02 = {
+	name = "Manava" #Fictional
+	religion = "shaivism"
+	culture = "magadhi"
+	trait = shudra
+	father = gauda_01
+	600.1.1 = {
+		birth = yes
+	}
+	625.6.1 = {
+		death = yes
+	}
+}
+gauda_03 = {
+	name = "Bhairav" #Fictional
+	religion = "shaivism"
+	culture = "magadhi"
+	trait = shudra
+	607.1.1 = {
+		birth = yes
+	}
+	670.1.1 = {
+		death = yes
+	}
+}
+gauda_04 = {
+	name = "Vasudeva" #Fictional
+	religion = "shaivism"
+	culture = "magadhi"
+	trait = shudra
+	596.1.1 = {
+		birth = yes
+	}
+	670.1.1 = {
+		death = yes
+	}
+}
+gauda_05 = {
+	name = "Susarman" #Fictional
+	religion = "mahasanghika"
+	culture = "magadhi"
+	trait = shudra
+	601.1.1 = {
+		birth = yes
+	}
+	670.1.1 = {
+		death = yes
+	}
+}
+#Khadga
+khadga_01 = {
+	name = "Khadgodyama" #Fictional
+	religion = "mahasanghika"
+	culture = "bengali"
+	trait = shudra
+	dynasty = khadga_dynasty
+	600.1.1 = {
+		birth = yes
+	}
+	640.1.1 = {
+		death = yes
+	}
+}
+khadga_02 = {
+	name = "Jata" #Fictional
+	religion = "mahasanghika"
+	culture = "bengali"
+	trait = shudra
+	dynasty = khadga_dynasty
+	father = khadga_01
+	618.1.1 = {
+		birth = yes
+	}
+	658.1.1 = {
+		death = yes
+	}
+}
+khadga_03 = {
+	name = "Deva" #Fictional
+	religion = "mahasanghika"
+	culture = "bengali"
+	trait = shudra
+	dynasty = khadga_dynasty
+	father = khadga_02
+	637.1.1 = {
+		birth = yes
+	}
+	673.1.1 = {
+		death = yes
+	}
+}
+khadga_04 = {
+	name = "Rajabhatta" #Fictional
+	religion = "mahasanghika"
+	culture = "bengali"
+	trait = shudra
+	dynasty = khadga_dynasty
+	father = khadga_03
+	658.1.1 = {
+		birth = yes
+	}
+	707.1.1 = {
+		death = yes
+	}
+}
+khadga_05 = {
+	name = "Balabhatta" #Fictional
+	religion = "mahasanghika"
+	culture = "bengali"
+	trait = shudra
+	dynasty = khadga_dynasty
+	father = khadga_04
+	678.1.1 = {
+		birth = yes
+	}
+	716.1.1 = {
+		death = yes
+	}
+}
+#Guptas
+900960  = {
+	name = "Gupta"
+	# Gupta founder of the Gupta house and realm
+	dynasty = 1044321
+	religion = "krishnaism"
+	culture = "kaushali"
+	trait = kshatriya
+	217.1.1 = {
+		birth = 217.1.1
+	}
+	233.1.1 = {
+		trait = education_martial_4
+	}
+	280.1.1 = {
+		death = 280.1.1
+	}
+}
+900961  = {
+	name = "Ghatotkacha"
+	# Ghatat, son of Gupta
+	dynasty = 1044321
+	religion = "krishnaism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = 900960 #Gupta Gupta
+	258.1.1 = {
+		birth = 258.1.1
+	}
+	319.1.1 = {
+		death = 319.1.1
+	}
+}
+900962  = {
+	name = "Chandragupta"
+	# Chandragupta I, son of Ghatat Gupta
+	dynasty = 1044321
+	religion = "krishnaism"
+	culture = "kaushali"
+	trait = kshatriya
+	trait = ambitious
+	trait = temperate
+	trait = honest
+	trait = education_diplomacy_4
+	martial = 7
+	diplomacy = 9
+	father = 900961 #Ghatatkacha
+	290.1.1 = {
+		birth = 290.1.1
+	}
+	308.1.1 = {
+		add_spouse = licchavi_05 #Lichavi princess
+	}
+	335.1.1 = {
+		death = 335.1.1
+	}
+}
+gupta_03  = {
+	name = "Dattadevi"
+	religion = "krishnaism"
+	culture = "maithili"
+	trait = kshatriya
+	female = yes
+	325.1.1 = {
+		birth = 325.1.1
+	}
+	375.1.1 = {
+		death = 375.1.1
+	}
+}
+900963  = {
+	name = "Samudragupta"
+	# Samudragupta, son of Chandragupta I
+	dynasty = 1044321
+	religion = "krishnaism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = 900962 #Chandragupta
+	mother = licchavi_05 #Lichavi princess
+	trait = ambitious
+	trait = callous
+	trait = brave
+	trait = poet
+	trait = education_martial_4
+	trait = strategist
+	martial = 9
+	diplomacy = 7
+	stewardship = 9
+	prowess = 6
+	311.1.1 = {
+		birth = 311.1.1
+	}
+	335.5.1 = {
+		set_relation_rival = character:gupta_01 # Khacha, son of Chandragupta I
+		add_spouse = gupta_03 #Dattadevi
+	}
+	375.1.1 = {
+		death = 375.1.1
+	}
+}
+gupta_01  = {
+	name = "Khacha"
+	# Khacha, son of Chandragupta I
+	dynasty = 1044321
+	religion = "krishnaism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = 900962 #Chandragupta
+	mother = licchavi_05 #Lichavi princess
+	306.1.1 = {
+		birth = 306.1.1
+	}
+	335.5.1 = {
+		death = 335.5.1
+	}
+}
+gupta_02  = {
+	name = "Ghatatkacha"
+	# Ghatatkacha, son of Khacha
+	dynasty = 1044321
+	religion = "krishnaism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = gupta_01 #Khacha
+	338.1.1 = {
+		birth = 338.1.1
+	}
+	400.1.1 = {
+		death = 400.1.1
+	}
+}
+900964  = {
+	name = "Ramagupta"
+	# Ramagupta son of Samudragupta
+	dynasty = 1044321
+	religion = "krishnaism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = 900963 #Samudragupta
+	mother = gupta_03 #Dattadevi
+	349.1.1 = {
+		birth = 349.1.1
+	}
+	375.1.1 = {
+		add_spouse = gupta_04
+	}
+	394.1.1 = {
+		religion = "svetambara"
+	}
+	395.9.1 = {
+		death = 395.9.1
+	}
+}
+gupta_04  = {
+	name = "Dhruvadevi"
+	religion = "krishnaism"
+	culture = "kaushali"
+	trait = kshatriya
+	female = yes
+	trait = beauty_good_2
+	356.1.1 = {
+		birth = 356.1.1
+	}
+	400.1.1 = {
+		death = 400.1.1
+	}
+}
+2020123  = {
+	name = "Chandragupta"
+	# Chandragupta II son and succesor of Samudragupta
+	dna = 989177893_changragupta
+	dynasty = 1044321
+	religion = "krishnaism"
+	culture = "kaushali"
+	trait = kshatriya
+	father = 900963 #Samudragupta
+	mother = gupta_03 #Dattadevi
+	trait = ambitious
+	trait = diligent
+	trait = forgiving
+	education_trait = diplomacy_3
+	352.1.1 = {
+		birth = 352.1.1
+		add_prestige = 1000
+	}
+	395.9.1 = {
+		add_spouse = gupta_04
+		culture = "magadhi"
+	}
+	415.1.1 = {
+		death = 415.1.1
+	}
+}
+900907  = {
+	name = "Prabhavatigupta"
+	# Prabhavatigupta Regent Queen of Vakataka
+	dynasty = 1044321
+	religion = "krishnaism"
+	culture = "magadhi"
+	trait = kshatriya
+	female = yes
+	father = 2020123
+	372.1.1 = {
+		birth = 372.1.1
+	}
+	405.1.1 = {
+		death = 405.1.1
+	}
+}
+gupta_05  = {
+	name = "Kumaragupta"
+	# Kumaragupta, succesor of Chandragupta
+	dynasty = 1044321
+	religion = "krishnaism"
+	culture = "magadhi"
+	trait = kshatriya
+	father = 2020123
+	mother = gupta_04
+	396.1.1 = {
+		birth = 396.1.1
+	}
+	419.1.1 = {
+		add_spouse = gupta_07
+	}
+	455.1.1 = {
+		death = 455.1.1
+	}
+}
+gupta_07  = {
+	name = "Anantadevi"
+	# Anantadevi, wife of Kumaragupta
+	religion = "krishnaism"
+	culture = "kaushali"
+	trait = vaishya
+	female = yes
+	400.1.1 = {
+		birth = 400.1.1
+	}
+	466.1.1 = {
+		death = 466.1.1
+	}
+}
+gupta_08  = {
+	name = "Skandagutpa"
+	# Skandagupta, succesor to Kumaragupta
+	dynasty = 1044321
+	religion = "krishnaism"
+	culture = "magadhi"
+	trait = kshatriya
+	father = gupta_05
+	trait = bastard
+	trait = honest
+	trait = ambitious
+	420.1.1 = {
+		birth = 400.1.1
+	}
+	466.1.1 = {
+		death = 466.1.1
+	}
+}
+gupta_09  = {
+	name = "Purugupta"
+	# Purugupta, succesor to Skandagupta
+	dynasty = 1044321
+	religion = "krishnaism"
+	culture = "magadhi"
+	trait = kshatriya
+	father = gupta_05
+	mother = gupta_07
+	435.1.1 = {
+		birth = 435.1.1
+	}
+	473.1.1 = {
+		death = 473.1.1
+	}
+}
+gupta_10  = {
+	name = "Kumaragupta"
+	# Kumaragupta II, succesor to Purugupta
+	dynasty = 1044321
+	religion = "krishnaism"
+	culture = "magadhi"
+	trait = kshatriya
+	father = gupta_09
+	453.1.1 = {
+		birth = 453.1.1
+	}
+	476.1.1 = {
+		death = 476.1.1
+	}
+}
+gupta_11  = {
+	name = "Vishnugupta"
+	# Vishnugupta, son of Kumaragupta II
+	dynasty = 1044321
+	religion = "krishnaism"
+	culture = "magadhi"
+	trait = kshatriya
+	father = gupta_10
+	471.1.1 = {
+		birth = 471.1.1
+	}
+	482.1.1 = {
+		add_courtier = character:aryabhata
+	}
+	540.1.1 = {
+		death = 540.1.1
+	}
+}
+gupta_12  = {
+	name = "Budhagupta"
+	# Kumaragupta II, succesor to Purugupta
+	dynasty = 1044321
+	religion = "krishnaism"
+	culture = "magadhi"
+	trait = kshatriya
+	father = gupta_09
+	trait = education_diplomacy_3
+	diplomacy = 10
+	trait = diplomat
+	456.1.1 = {
+		birth = 456.1.1
+	}
+	495.1.1 = {
+		death = 495.1.1
+	}
+}
+gupta_13  = {
+	name = "Narasimhagupta"
+	# Narasimhagupta, succesor to Budhagupta
+	dynasty = 1044321
+	religion = "mahasanghika"
+	culture = "magadhi"
+	trait = kshatriya
+	father = gupta_09
+	470.1.1 = {
+		birth = 470.1.1
+	}
+	499.1.1 = {
+		add_spouse = gupta_16
+	}
+	530.1.1 = {
+		death = 530.1.1
+	}
+}
+gupta_16  = {
+	name = "Shrimitradevi"
+	female = yes
+	religion = "mahasanghika"
+	culture = "magadhi"
+	trait = kshatriya
+	476.1.1 = {
+		birth = 476.1.1
+	}
+	530.1.1 = {
+		death = 530.1.1
+	}
+}
+gupta_14  = {
+	name = "Kumaragupta"
+	# Kumaragupta III, succesor to Narasimhagupta
+	dynasty = 1044321
+	religion = "mahasanghika"
+	culture = "magadhi"
+	trait = kshatriya
+	father = gupta_13
+	mother = gupta_16
+	495.1.1 = {
+		birth = 495.1.1
+	}
+	540.1.1 = {
+		death = 540.1.1
+	}
+}
+gupta_17  = {
+	name = "Vainyagupta"
+	# Vainyagupta, succesor to Narasimhagupta
+	dynasty = 1044321
+	religion = "mahasanghika"
+	culture = "magadhi"
+	trait = kshatriya
+	father = gupta_13
+	mother = gupta_16
+	510.1.1 = {
+		birth = 510.1.1
+	}
+	540.1.1 = {
+		death = 540.1.1
+	}
+}
+gupta_15  = {
+	name = "Vishnugupta"
+	# Vishnugupta, succesor Kumaragupta III
+	dynasty = 1044321
+	religion = "mahasanghika"
+	culture = "magadhi"
+	trait = kshatriya
+	father = gupta_14
+	502.1.1 = {
+		birth = 502.1.1
+	}
+	555.1.1 = {
+		death = 555.1.1
+	}
+}
+gupta_06  = {
+	name = "Govindagupta"
+	# Govindagupta coruler with Chandragupta
+	dynasty = 1044321
+	religion = "vaishnavism"
+	culture = "magadhi"
+	trait = kshatriya
+	father = 2020123
+	mother = gupta_04
+	400.1.1 = {
+		birth = 400.1.1
+	}
+	477.1.1 = {
+		death = 477.1.1
+	}
+}
+
+
+##Gupta Administration
+
+samatata_01 = {
+	name = "Bhusura" #Fictional
+	religion = "vaishnavism"
+	culture = "kaushali"
+	trait = vaishya
+	dynasty = samatata_dynasty
+	333.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+samatata_02 = {
+	name = "Ghatatkacha" #Fictional
+	religion = "vaishnavism"
+	culture = "kaushali"
+	father = samatata_01
+	dynasty = samatata_dynasty
+	trait = vaishya
+	380.1.1 = {
+		birth = yes
+	}
+	450.1.1 = {
+		death = yes
+	}
+}
+samatata_03 = {
+	name = "Ghatatkacha" #Fictional
+	religion = "mahasanghika"
+	culture = "kaushali"
+	father = samatata_02
+	dynasty = samatata_dynasty
+	trait = vaishya
+	410.1.1 = {
+		birth = yes
+	}
+	470.1.1 = {
+		death = yes
+	}
+}
+samatata_04 = {
+	name = "Jadamarah" #Fictional
+	religion = "mahasanghika"
+	culture = "kaushali"
+	father = samatata_03
+	dynasty = samatata_dynasty
+	trait = shudra
+	440.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+guptasad_40 = {
+	name = "Narayana"
+	religion = "krishnaism"
+	culture = "kaushali"
+	trait = brahmin
+	340.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+guptasad_41 = {
+	name = "Jadamarah"
+	religion = "krishnaism"
+	culture = "kaushali"
+	trait = vaishya
+	443.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+guptasad_42 = {
+	name = "Jadu"
+	religion = "krishnaism"
+	culture = "kaushali"
+	trait = shudra
+	441.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+guptasad_43 = {
+	name = "Ayusha"
+	religion = "shaivism"
+	culture = "kaushali"
+	trait = kshatriya
+	450.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+guptasad_60 = {
+	name = "Ayusha"
+	religion = "krishnaism"
+	culture = "kaushali"
+	trait = brahmin
+	339.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+guptasad_61 = {
+	name = "Jadu"
+	religion = "krishnaism"
+	culture = "kaushali"
+	trait = shudra
+	434.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+guptasad_62 = {
+	name = "Gopala"
+	religion = "shaivism"
+	culture = "avantika"
+	trait = brahmin
+	444.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+guptasad_63 = {
+	name = "Govindapala"
+	religion = "shaivism"
+	culture = "kashika"
+	trait = brahmin
+	341.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+guptasad_64 = {
+	name = "Devapala"
+	religion = "shaivism"
+	culture = "kashika"
+	trait = shudra
+	446.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+guptasad_65 = {
+	name = "Samudrasena"
+	religion = "krishnaism"
+	culture = "kashika"
+	trait = vaishya
+	446.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+
+
+guptasad_66 = {
+	name = "Srimanta"
+	religion = "shaivism"
+	culture = "maithili"
+	trait = brahmin
+	446.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+guptasad_67 = {
+	name = "Andhraka"
+	religion = "shaivism"
+	culture = "telugu"
+	trait = shudra
+	446.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+
+
+
+
+
+guptasad_68 = {
+	name = "Andhraka"
+	religion = "shaivism"
+	culture = "gond"
+	323.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+guptasad_69 = {
+	name = "Madanapala"
+	religion = "shaivism"
+	culture = "kaushali"
+	trait = kshatriya
+	434.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+guptasad_70 = {
+	name = "Jadu"
+	religion = "shaivism"
+	culture = "kaushali"
+	trait = shudra
+	323.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+guptasad_71 = {
+	name = "Kumarapala"
+	religion = "shaivism"
+	culture = "kaushali"
+	trait = kshatriya
+	434.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+
+#### Chandra Dynasty
+chandra_01 = {
+	name = "Chandrodaya"
+	dynasty = 1044006
+	religion = "mahayana"
+	culture = "bengali"
+	trait = kshatriya
+	176.1.1 = {
+		birth = yes
+	}
+	229.1.1 = {
+		death = yes
+	}
+}
+chandra_02 = {
+	name = "Annaveta"
+	dynasty = 1044006
+	religion = "mahayana"
+	culture = "bengali"
+	trait = kshatriya
+	father = chandra_01
+	192.1.1 = {
+		birth = yes
+	}
+	239.1.1 = {
+		death = yes
+	}
+}
+chandra_03 = {
+	name = "Mahataing"
+	dynasty = 1044006
+	religion = "mahayana"
+	culture = "bengali"
+	trait = kshatriya
+	father = chandra_02
+	210.1.1 = {
+		birth = yes
+	}
+	311.1.1 = {
+		death = yes
+	}
+}
+chandra_04 = {
+	name = "Rimbhiappa"
+	dynasty = 1044006
+	religion = "mahayana"
+	culture = "bengali"
+	trait = kshatriya
+	father = chandra_02
+	269.1.1 = {
+		birth = yes
+	}
+	298.1.1 = {
+		add_spouse = chandra_06
+	}
+	334.1.1 = {
+		death = yes
+	}
+}
+chandra_06 = {
+	name = "Kuverami"
+	female = yes
+	religion = "mahayana"
+	culture = "bengali"
+	trait = kshatriya
+	280.1.1 = {
+		birth = yes
+	}
+	341.1.1 = {
+		death = yes
+	}
+}
+chandra_05 = {
+	name = "Umavira"
+	female = yes
+	dynasty = 1044006
+	religion = "mahayana"
+	culture = "bengali"
+	trait = kshatriya
+	father = chandra_04
+	mother = chandra_06
+	316.1.1 = {
+		birth = yes
+	}
+	361.1.1 = {
+		death = yes
+	}
+}
+chandra_07 = {
+	name = "Jugna"
+	dynasty = 1044006
+	religion = "mahayana"
+	culture = "bengali"
+	trait = kshatriya
+	mother = chandra_05
+	325.1.1 = {
+		birth = yes
+	}
+	368.1.1 = {
+		death = yes
+	}
+}
+chandra_08 = {
+	name = "Lanki"
+	dynasty = 1044006
+	religion = "mahayana"
+	culture = "bengali"
+	trait = kshatriya
+	mother = chandra_05
+	339.1.1 = {
+		birth = yes
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+chandra_09 = {
+	name = "Dvenchandra"
+	dynasty = 1044006
+	religion = "mahayana"
+	culture = "bengali"
+	trait = kshatriya
+	father = chandra_07
+	352.1.1 = {
+		birth = yes
+	}
+	425.1.1 = {
+		death = yes
+	}
+}
+chandra_10 = {
+	name = "Rajachandra"
+	dynasty = 1044006
+	religion = "mahayana"
+	culture = "bengali"
+	trait = kshatriya
+	father = chandra_09
+	389.1.1 = {
+		birth = yes
+	}
+	445.1.1 = {
+		death = yes
+	}
+}
+chandra_11 = {
+	name = "Kalachandra"
+	dynasty = 1044006
+	religion = "mahayana"
+	culture = "bengali"
+	trait = kshatriya
+	father = chandra_10
+	407.1.1 = {
+		birth = yes
+	}
+	454.1.1 = {
+		death = yes
+	}
+}
+chandra_12 = {
+	name = "Devachandra"
+	dynasty = 1044006
+	religion = "mahayana"
+	culture = "bengali"
+	trait = kshatriya
+	father = chandra_11
+	425.1.1 = {
+		birth = yes
+	}
+	476.1.1 = {
+		death = yes
+	}
+}
+chandra_13 = {
+	name = "Yajnachandra"
+	dynasty = 1044006
+	religion = "mahayana"
+	culture = "bengali"
+	trait = kshatriya
+	father = chandra_12
+	443.1.1 = {
+		birth = yes
+	}
+	483.1.1 = {
+		death = yes
+	}
+}
+
+chandra_14 = {
+	name = "Chandrabandu"
+	dynasty = 1044006
+	religion = "mahayana"
+	culture = "bengali"
+	trait = kshatriya
+	father = chandra_13
+	461.1.1 = {
+		birth = yes
+	}
+	489.1.1 = {
+		death = yes
+	}
+}
+
+chandra_15 = {
+	name = "Bhumichandra"
+	dynasty = 1044006
+	religion = "mahayana"
+	culture = "bengali"
+	trait = kshatriya
+	father = chandra_14
+	479.1.1 = {
+		birth = yes
+	}
+	496.1.1 = {
+		death = yes
+	}
+}
+
+chandra_16 = {
+	name = "Bhutichandra"
+	dynasty = 1044006
+	religion = "mahayana"
+	culture = "bengali"
+	trait = kshatriya
+	father = chandra_14
+	482.1.1 = {
+		birth = yes
+	}
+	520.1.1 = {
+		death = yes
+	}
+}
+
+chandra_17 = {
+	name = "Nitichandra"
+	dynasty = 1044006
+	religion = "mahayana"
+	culture = "bengali"
+	trait = kshatriya
+	father = chandra_16
+	505.1.1 = {
+		birth = yes
+	}
+	575.1.1 = {
+		death = yes
+	}
+}
+
+chandra_18 = {
+	name = "Virachandra"
+	dynasty = 1044006
+	religion = "mahayana"
+	culture = "bengali"
+	trait = kshatriya
+	father = chandra_17
+	530.1.1 = {
+		birth = yes
+	}
+	578.1.1 = {
+		death = yes
+	}
+}
+
+chandra_19 = {
+	name = "Pritichandra"
+	dynasty = 1044006
+	religion = "mahayana"
+	culture = "bengali"
+	trait = kshatriya
+	father = chandra_18
+	550.1.1 = {
+		birth = yes
+	}
+	590.1.1 = {
+		death = yes
+	}
+}
+
+chandra_20 = {
+	name = "Prithvichandra"
+	dynasty = 1044006
+	religion = "mahayana"
+	culture = "bengali"
+	trait = kshatriya
+	father = chandra_19
+	569.1.1 = {
+		birth = yes
+	}
+	597.1.1 = {
+		death = yes
+	}
+}
+
+chandra_21 = {
+	name = "Dhirtichandra"
+	dynasty = 1044006
+	religion = "mahayana"
+	culture = "bengali"
+	trait = kshatriya
+	father = chandra_19
+	570.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+
+chandra_22 = {
+	name = "Mahavira"
+	dynasty = 1044006
+	religion = "mahayana"
+	culture = "bengali"
+	trait = kshatriya
+	father = chandra_19
+	571.1.1 = {
+		birth = yes
+	}
+	612.1.1 = {
+		death = yes
+	}
+}
+
+chandra_23 = {
+	name = "Virayajap"
+	dynasty = 1044006
+	religion = "mahayana"
+	culture = "bengali"
+	trait = kshatriya
+	father = chandra_22
+	589.1.1 = {
+		birth = yes
+	}
+	624.1.1 = {
+		death = yes
+	}
+}
+
+chandra_24 = {
+	name = "Sevinren"
+	dynasty = 1044006
+	religion = "mahayana"
+	culture = "bengali"
+	trait = kshatriya
+	father = chandra_23
+	610.1.1 = {
+		birth = yes
+	}
+	636.1.1 = {
+		death = yes
+	}
+}
+
+aryabhata = {
+	name = "Aryabhata"
+	# Dank philosopher
+	religion = "smartism"
+	culture = "telugu"
+	trait = brahmin
+	trait = intellect_good_3
+	trait = patient
+	trait = calm
+	trait = diligent
+	trait = scholar
+	trait = curious
+	diplomacy = 7
+	learning = 8
+	disallow_random_traits = yes
+	476.1.1 = {
+		birth = yes
+	}
+	482.1.1 = {
+		remove_trait = curious
+		add_trait = education_learning_4
+		effect = {
+			employer = 900963
+			title:c_magadha.holder = {
+				appoint_court_position = {
+					recipient = ROOT
+					court_position = court_tutor_court_position
+				}
+			}
+		}
+	}
+	540.1.1 = {
+		death = yes
+	}
+}
+
+kalidasa = {
+	name = "Kalidasa"
+	# Dank poet
+	religion = "krishnaism"
+	culture = "pahari"
+	trait = brahmin
+	trait = education_diplomacy_4
+	trait = compassionate
+	trait = gregarious
+	trait = diligent
+	trait = poet
+	diplomacy = 10
+	learning = 8
+	disallow_random_traits = yes
+	340.1.1 = {
+		birth = yes
+	}
+	420.1.1 = {
+		death = yes
+	}
+}
+
+harishena = {
+	name = "Harishena"
+	religion = "krishnaism"
+	culture = "kaushali"
+	trait = education_diplomacy_4
+	trait = gregarious
+	trait = poet
+	trait = loyal
+	330.1.1 = {
+		birth = yes
+	}
+	361.1.1 = {
+		employer = 900963
+		effect = {
+			title:c_magadha.holder = {
+				appoint_court_position = {
+					recipient = ROOT
+					court_position = court_physician_court_poet
+				}
+			}
+		}
+	}
+	420.1.1 = {
+		death = yes
+	}
+}

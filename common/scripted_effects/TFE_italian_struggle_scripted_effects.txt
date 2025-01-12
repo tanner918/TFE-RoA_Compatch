@@ -1,0 +1,504 @@
+﻿
+
+##### Struggle Endings #####
+TFE_italian_struggle_end_effect = {
+	every_in_global_list = { # We de-flag chars (surprisingly performance friendly, from all possible options)
+		variable = TFE_italian_struggle_intro_flag_character_list
+		if = {
+			limit = { has_character_flag = TFE_italian_struggle_intro_event_flag } # Since only alive chars have flags, we don't need to check for anything else
+			remove_character_flag = TFE_italian_struggle_intro_event_flag
+		}
+	}
+
+	# Global variable tracking.
+	## For usage in councillor tasks.
+	set_global_variable = {
+		name = TFE_italian_struggle_ending
+		value = $FLAG$
+	}
+
+	# I'm too dumb to understand what this means
+	# ## For debug purposes.
+	# if = {
+	# 	limit = { gather_debug_variables_for_persian_struggle_trigger = yes }
+	# 	increment_global_variable_effect = {
+	# 		VAL = current_year
+	# 		VAR = sp_end_date
+	# 	}
+	# }
+
+	every_player = {
+		limit = { TFE_does_this_player_care_about_the_italian_struggle = yes } # Needs to be checked before the struggle ends due to race condition issues
+		add_to_list = player_to_notify # Making a list so stuff is tiggered after the struggle ends, to make extra sure I don't break anything.
+	}
+
+	every_in_list = { # Then we *actually* notify palyers, making sure the struggle has already ended
+		list = player_to_notify
+		# limit = {
+		# 	NOT = { this = root }
+		# }
+		trigger_event = $EVENT$
+	}
+	struggle:italian_struggle ?= { end_struggle = $ENDING$ }
+}
+
+
+TFE_italian_struggle_devastation_county_effect = {
+	every_county_in_region = {
+		region = TFE_italian_struggle_region_minus_constantinople
+		custom = TFE_every_county_in_italian_struggle_region
+		change_county_control = major_county_control_loss
+		change_development_level = -4
+		add_county_modifier = {
+			modifier = TFE_post_roman_devastation
+			years = 50
+		}
+	}
+}
+
+TFE_italian_struggle_devastation_ruler_effect = {
+	every_ruler = {
+		limit = {
+			any_held_title = {
+				tier = tier_county
+				any_county_province = {
+					geographical_region = TFE_italian_struggle_region	
+				}
+			}	
+		}
+		custom = TFE_every_ruler_in_italia
+		add_legitimacy = medium_legitimacy_loss
+	}
+}
+
+
+
+TFE_italian_struggle_synthesis_county_effect = {
+	every_county_in_region = {
+		region = TFE_italian_struggle_region_minus_constantinople
+		custom = TFE_every_county_in_italian_struggle_region
+		change_development_level = 2
+		change_county_control = minor_county_control_gain
+		add_county_modifier = {
+			modifier = TFE_post_roman_synthesis
+			years = 50
+		}
+	}
+}
+
+TFE_italian_struggle_synthesis_tooltip_effect = {
+	# All Involved cultures gain acceptance of each other
+	custom_tooltip = TFE_italian_struggle_synthesis_culture_tt
+}
+
+
+# Add all Involved cultures with counties to a list
+TFE_italian_struggle_ending_culture_list_effect = {
+	every_culture_global = {		
+		limit = {
+			save_temporary_scope_as = this_culture
+			struggle:italian_struggle = { is_culture_involved_in_struggle = scope:this_culture }
+			culture_number_of_counties > 0
+		}
+		save_scope_as = culture_scope
+		add_to_global_variable_list = {
+			name = TFE_italian_struggle_ending_culture_list
+			target = scope:culture_scope
+		}
+	}
+}
+
+# Add cultural acceptance between Involved cultures
+TFE_italian_struggle_synthesis_cultural_acceptance_effect = {
+	hidden_effect = {
+		while = {
+			limit = {
+				any_in_global_list = {
+					variable = TFE_italian_struggle_ending_culture_list
+					NOT = { has_variable = TFE_italian_struggle_synthesis_flag }
+				}
+			}
+			ordered_in_global_list = {
+				variable = TFE_italian_struggle_ending_culture_list
+				limit = {
+					NOT = { has_variable = TFE_italian_struggle_synthesis_flag }
+				}
+				order_by = culture_number_of_counties
+				save_scope_as = culture_scope
+				set_variable = TFE_italian_struggle_synthesis_flag # variable ensures acceptance is only gained once per couple
+			}
+			every_in_global_list = {
+				variable = TFE_italian_struggle_ending_culture_list
+				limit = {
+					NOR = {
+						has_variable = TFE_italian_struggle_synthesis_flag
+						this = scope:culture_scope
+					}
+				}
+				change_cultural_acceptance = {
+					target = scope:culture_scope
+					value = TFE_italian_struggle_synthesis_culture_acceptance_value
+					desc = TFE_italian_struggle_synthesis_acceptance_tt
+				}
+			}
+		}
+		every_in_global_list = {
+			variable = TFE_italian_struggle_ending_culture_list
+			remove_variable = TFE_italian_struggle_synthesis_flag
+		}
+	}
+}
+
+
+
+TFE_italian_struggle_incorporation_county_effect = {
+	every_county_in_region = {
+		region = TFE_italian_struggle_region_minus_constantinople
+		custom = TFE_every_county_in_italian_struggle_region
+		change_development_level = 2
+		change_county_control = minor_county_control_gain
+		add_county_modifier = {
+			modifier = TFE_roman_incorporation
+			years = 50
+		}
+	}
+}
+
+
+
+TFE_italian_struggle_incorporation_vassal_effect = {
+	if = {
+		limit = {
+			highest_held_title_tier = tier_empire
+		}
+		every_held_title = {
+			limit = {
+				tier >= tier_empire
+			}
+			root = { destroy_title = prev }
+		}
+	}
+	if = {
+		limit = {
+			exists = title:e_western_roman_empire.holder
+		}		
+		every_kingdom = {
+			limit = {
+				is_titular = no
+				title_capital_county.title_province = { geographical_region = TFE_italian_struggle_region_minus_constantinople }
+			}
+			set_de_jure_liege_title = title:e_western_roman_empire
+		}
+		create_title_and_vassal_change = {
+			type = swear_fealty
+			save_scope_as = change
+		}
+		root = {
+			change_liege = {
+				liege = title:e_western_roman_empire.holder
+				change = scope:change
+			}
+			resolve_title_and_vassal_change = scope:change
+		}
+	}
+	else_if = {
+		limit = {
+			exists = title:e_byzantium.holder
+		}		
+		every_kingdom = {
+			limit = {
+				is_titular = no
+				title_capital_county.title_province = { geographical_region = TFE_italian_struggle_region_minus_constantinople }
+			}
+			set_de_jure_liege_title = title:e_byzantium
+		}
+		create_title_and_vassal_change = {
+			type = swear_fealty
+			save_scope_as = change
+		}
+		root = {
+			change_liege = {
+				liege = title:e_byzantium.holder
+				change = scope:change
+			}
+			resolve_title_and_vassal_change = scope:change
+		}
+	}
+	else_if = {
+		limit = {
+			exists = title:e_roman_empire.holder
+		}		
+		every_kingdom = {
+			limit = {
+				is_titular = no
+				title_capital_county.title_province = { geographical_region = TFE_italian_struggle_region_minus_constantinople }
+			}
+			set_de_jure_liege_title = title:e_roman_empire
+		}
+		create_title_and_vassal_change = {
+			type = swear_fealty
+			save_scope_as = change
+		}
+		root = {
+			change_liege = {
+				liege = title:e_roman_empire.holder
+				change = scope:change
+			}
+			resolve_title_and_vassal_change = scope:change
+		}
+	}
+}
+
+
+TFE_italian_struggle_incorporation_personal_effect = {
+	add_character_modifier = {
+		modifier = TFE_italian_struggle_roman_incorporator
+	}
+	if = {
+		limit = {
+			exists = title:e_western_roman_empire.holder
+		}		
+		title:e_western_roman_empire.holder = {
+			add_opinion = {
+				target = root
+				modifier = pleased_opinion
+				opinion = 30
+			}
+			every_vassal_or_below = {
+				custom = every_direct_and_indirect_vassal
+				add_opinion = {
+					target = root
+					modifier = admiration_opinion
+					opinion = 20
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			exists = title:e_byzantium.holder
+		}		
+		title:e_byzantium.holder = {
+			add_opinion = {
+				target = root
+				modifier = pleased_opinion
+				opinion = 30
+			}
+			every_vassal_or_below = {
+				custom = every_direct_and_indirect_vassal
+				add_opinion = {
+					target = root
+					modifier = admiration_opinion
+					opinion = 20
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			exists = title:e_roman_empire.holder
+		}		
+		title:e_roman_empire.holder = {
+			add_opinion = {
+				target = root
+				modifier = pleased_opinion
+				opinion = 30
+			}
+			every_vassal_or_below = {
+				custom = every_direct_and_indirect_vassal
+				add_opinion = {
+					target = root
+					modifier = admiration_opinion
+					opinion = 20
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+TFE_italian_struggle_restoration_county_effect = {
+	every_county_in_region = {
+		region = TFE_italian_struggle_region_minus_constantinople
+		custom = TFE_every_county_in_italian_struggle_region
+		change_development_level = 1
+		change_county_control = medium_county_control_gain
+		add_county_modifier = {
+			modifier = TFE_roman_restoration
+			years = 50
+		}
+	}
+}
+
+TFE_italian_struggle_restoration_vassal_effect = {
+	if = {
+		limit = {
+			title:d_freistadt = {
+				kingdom = {
+					title_capital_county.title_province = { geographical_region = TFE_italian_struggle_region_minus_constantinople }
+				}
+			}
+		}
+		title:d_freistadt = {
+			set_de_jure_liege_title = title:k_bohemia
+		}
+	}
+	if = {
+		limit = {
+			has_title = title:e_western_roman_empire
+		}		
+		every_kingdom = {
+			limit = {
+				is_titular = no
+				title_capital_county.title_province = { geographical_region = TFE_italian_struggle_region_minus_constantinople }
+			}
+			set_de_jure_liege_title = title:e_western_roman_empire
+		}
+	}
+	else_if = {
+		limit = {
+			has_title = title:e_byzantium
+		}		
+		every_kingdom = {
+			limit = {
+				is_titular = no
+				title_capital_county.title_province = { geographical_region = TFE_italian_struggle_region_minus_constantinople }
+			}
+			set_de_jure_liege_title = title:e_byzantium
+		}
+	}
+	else_if = {
+		limit = {
+			has_title = title:e_roman_empire
+		}		
+		every_kingdom = {
+			limit = {
+				is_titular = no
+				title_capital_county.title_province = { geographical_region = TFE_italian_struggle_region_minus_constantinople }
+			}
+			set_de_jure_liege_title = title:e_roman_empire
+		}
+	}
+}
+
+
+TFE_italian_struggle_restoration_personal_effect = {
+	add_character_modifier = {
+		modifier = TFE_italian_struggle_roman_restorer
+	}
+	every_vassal_or_below = {
+		custom = every_direct_and_indirect_vassal
+		add_opinion = {
+			target = root
+			modifier = admiration_opinion
+			opinion = 20
+		}
+	}
+	every_courtier_or_guest = {
+		custom = court_6000_all_courtiers_and_guests
+		add_opinion = {
+			target = root
+			modifier = admiration_opinion
+			opinion = 20
+		}		
+	}
+}
+
+
+
+
+
+
+
+TFE_italian_struggle_subjugation_county_effect = {
+	every_county_in_region = {
+		region = TFE_italian_struggle_region_minus_constantinople
+		custom = TFE_every_county_in_italian_struggle_region
+		change_county_control = major_county_control_gain
+		add_county_modifier = {
+			modifier = TFE_roman_subjugation
+			years = 50
+		}
+	}
+}
+
+TFE_italian_struggle_subjugation_vassal_effect = {
+	primary_title = { save_scope_as = primary_title }
+	if = {
+		limit = {
+			OR = {
+				has_title = title:e_italy
+				highest_held_title_tier < tier_empire
+			}
+		}	
+		every_kingdom = {
+			limit = {
+				is_titular = no
+				title_capital_county.title_province = { geographical_region = TFE_italian_struggle_region_minus_constantinople }
+			}
+			set_de_jure_liege_title = title:e_italy
+		}
+	}
+	else_if = {
+		limit = {
+			highest_held_title_tier = tier_empire
+		}
+		every_kingdom = {
+			limit = {
+				is_titular = no
+				title_capital_county.title_province = { geographical_region = TFE_italian_struggle_region_minus_constantinople }
+			}
+			set_de_jure_liege_title = scope:primary_title
+		}		
+	}
+	if = {
+		limit = {
+			highest_held_title_tier < tier_empire
+		}
+		get_title = title:e_italy
+	}
+}
+
+
+TFE_italian_struggle_subjugation_personal_effect = {
+	add_character_modifier = {
+	 	modifier = TFE_italian_struggle_roman_subjugator
+	}
+	every_vassal_or_below = {
+		custom = every_direct_and_indirect_non_roman_vassal
+		add_opinion = {
+			target = root
+			modifier = respect_opinion
+			opinion = 20
+		}
+	}
+	every_courtier_or_guest = {
+		custom = every_courtier_and_guest_non_roman
+		add_opinion = {
+			target = root
+			modifier = respect_opinion
+			opinion = 20
+		}		
+	}
+	every_vassal_or_below = {
+		custom = every_direct_and_indirect_non_roman_vassal
+		add_opinion = {
+			target = root
+			modifier = subjugator_opinion
+			opinion = -20
+		}
+	}
+	every_courtier_or_guest = {
+		custom = every_courtier_and_guest_non_roman
+		add_opinion = {
+			target = root
+			modifier = subjugator_opinion
+			opinion = -20
+		}		
+	}
+}

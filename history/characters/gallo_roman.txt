@@ -1,0 +1,3329 @@
+﻿###Random Gaullic Vassals for Euric
+tolosa_05 = {
+	name = "Magnus"
+	culture = gallo_roman
+	religion = "nicene"
+	450.1.1 = {
+		birth = yes
+	}	
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	523.1.1 = {
+		death= yes
+	}
+}
+deuteria = {
+	name = "Deuteria"
+	female = yes
+	dynasty = apollinarian # 
+	culture = gallo_roman
+	religion = "chalcedonian"
+	trait=deceitful
+	trait=physique_good_2
+	father = apollinarian_09
+	502.1.1 = {
+		birth = yes
+	}
+	543.1.1 = {
+		death= yes
+	}
+}
+deuteria_02 = {
+	name = "Adia"
+	female = yes
+	dynasty = apollinarian 
+	culture = gallo_roman
+	religion = "chalcedonian"
+	mother = deuteria
+	520.1.1 = {
+		birth = yes
+	}
+	536.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = deuteria
+		}
+	}
+}
+tolosa_06 = {
+	name = "Cassius"
+	culture = gallo_roman
+	religion = "nicene"
+	443.1.1 = {
+		birth = yes
+	}	
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	512.1.1 = {
+		death= yes
+	}
+}
+tolosa_07 = {
+	name = "Faustus"
+	culture = gallo_roman
+	religion = "nicene"
+	443.1.1 = {
+		birth = yes
+	}	
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	512.1.1 = {
+		death= yes
+	}
+}
+tolosa_02 = {
+	name = "Rufinus"
+	culture = gallo_roman
+	religion = "nicene"
+	430.1.1 = {
+		birth = yes
+	}	
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	501.1.1 = {
+		death = yes
+	}
+}
+
+##gallo_roman Soissons
+soissons_01 = {
+	name = "Marcus"
+	culture = gallo_roman
+	religion = "chalcedonian"
+	497.1.1 = {
+		birth = yes
+	}
+	578.1.1 = {
+		death = yes
+	}
+}
+soissons_02 = {
+	name = "Crispus"
+	culture = gallo_roman
+	religion = "chalcedonian"
+	491.1.1 = {
+		birth = yes
+	}
+	578.1.1 = {
+		death = yes
+	}
+}
+soissons_03 = {
+	name = "Donatus"
+	culture = gallo_roman
+	religion = "chalcedonian"
+	502.1.1 = {
+		birth = yes
+	}
+	578.1.1 = {
+		death = yes
+	}
+}
+soissons_04 = {
+	name = "Leo"
+	culture = gallo_roman
+	religion = "chalcedonian"
+	489.1.1 = {
+		birth = yes
+	}
+	578.1.1 = {
+		death = yes
+	}
+}
+
+##Metz
+metz_01 = {
+	name = "Albus"
+	culture = gallo_roman
+	religion = "chalcedonian"
+	495.1.1 = {
+		birth = yes
+	}
+	578.1.1 = {
+		death = yes
+	}
+}
+
+metz_03 = {
+	name = "Ieronimus"
+	culture = gallo_roman
+	religion = "chalcedonian"
+	502.1.1 = {
+		birth = yes
+	}
+	578.1.1 = {
+		death = yes
+	}
+}
+metz_04 = {
+	name = "Ulpius"
+	culture = gallo_roman
+	religion = "chalcedonian"
+	481.1.1 = {
+		birth = yes
+	}
+	578.1.1 = {
+		death = yes
+	}
+}
+rheims_01 = {
+	name = "Asteriolus"
+	culture = gallo_roman
+	religion = "chalcedonian"
+	trait=vengeful
+	learning=12
+	trait=physique_good_1
+	491.1.1 = {
+		birth = yes
+	}
+	538.1.1 = {
+		death = yes
+	}
+}
+rheims_02 = {
+	name = "Secundinus"
+	culture = gallo_roman
+	religion = "chalcedonian"
+	trait = vengeful
+	trait = wrathful
+	trait = physique_good_2
+	learning = 10
+	489.1.1 = {
+		birth = yes
+	}
+	538.1.1 = {
+		death = yes
+	}
+}
+rheims_03 = {
+	name = "Parthenius"
+	culture = gallo_roman
+	religion = "chalcedonian"
+	trait = vengeful
+	trait = gluttonous
+	trait = physique_good_2
+	learning = 10
+	481.1.1 = {
+		birth = yes
+	}
+	538.1.1 = {
+		death = yes
+	}
+}
+##Independent Aquitaine
+vasconia_01 = {
+	name = "Genial"
+	culture = gallo_roman
+	religion = "chalcedonian"
+	589.1.1 = {
+		birth = yes
+	}
+	627.1.1 = {
+		death = yes
+	}
+}
+vasconia_04 = {
+	name = "Felix"
+	culture = gallo_roman
+	religion = "chalcedonian"
+	638.1.1 = {
+		birth = yes
+	}
+	660.1.1 = {
+		death = yes
+	}
+}
+
+## Auvergne
+auvergne_01 = {
+	name = "Bertmond"
+	culture = gallo_roman
+	religion = "chalcedonian"
+	732.1.1 = {
+		birth = yes
+	}
+	778.1.1 = {
+		death = yes
+	}
+}
+##Gaulic Anicians
+anicia_36 = {
+	name = "Magnus"
+	religion = roman_pagan
+	culture = gallo_roman
+	father = anicia_14 #Paulinus
+	dynasty = anicii
+	322.1.1 = {
+		birth = yes
+	}
+	361.1.1 = {
+		religion = "nicene"
+	}
+	392.1.1 = {
+		death = yes
+	}
+}
+anicia_37 = {
+	name = "Ennodius"
+	religion = "nicene"
+	culture = gallo_roman
+	father = anicia_36 #Magnus
+	dynasty = anicii
+	344.1.1 = {
+		birth = yes
+	}
+	407.1.1 = {
+		death = yes
+	}
+}
+anicia_38 = {
+	name = "Felix"
+	religion = "nicene"
+	culture = gallo_roman
+	father = anicia_37 #Ennodius
+	dynasty = anicii
+	371.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		add_spouse = avitian_07 # Padusia
+	}
+	430.1.1 = {
+		death = yes
+	}
+}
+anicia_39 = {
+	name = "Magnus"
+	religion = "nicene"
+	culture = gallo_roman
+	father = anicia_38 #Felix
+	mother = avitian_07 # Padusia
+	dynasty = anicii
+	399.1.1 = {
+		birth = yes
+	}	
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	478.1.1 = {
+		death = yes
+	}
+}
+anicia_40 = {
+	name = "Felix"
+	religion = "nicene"
+	culture = gallo_roman
+	father = anicia_38 #Felix
+	mother = avitian_07 # Padusia
+	dynasty = anicii
+	400.1.1 = {
+		birth = yes
+	}
+	438.1.1 = {
+		add_spouse = pontius_10
+	}	
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	459.1.1 = {
+		death = yes
+	}
+}
+anicia_45 = {
+	name = "Probus"
+	religion = "nicene"
+	culture = gallo_roman
+	father = anicia_39 # Magnus 
+	dynasty = anicii
+	420.1.1 = {
+		birth = yes
+	}
+	449.1.1 = {
+		add_spouse = apollinarian_08
+	}	
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	475.1.1 = {
+		death = yes
+	}
+}
+anicia_46 = {
+	name = "Industria"
+	female = yes
+	dynasty = anicii
+	religion = "nicene"
+	culture = gallo_roman
+	father = anicia_45 # Probus
+	mother = apollinarian_08
+	450.1.1 = {
+		birth = yes
+	}	
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	495.1.1 = {
+		death = yes
+	}
+}
+anicia_41 = {
+	name = "Ruricius"
+	religion = "nicene"
+	culture = gallo_roman
+	father = anicia_40 #Felix
+	mother = pontius_10
+	dynasty = anicii
+	440.1.1 = {
+		birth = yes
+	}	
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	467.1.1 = {
+		add_pressed_claim = title:c_limousin
+	}
+	474.1.1 = {
+		add_spouse = anicia_42
+	}
+	510.1.1 = {
+		death = yes
+	}
+}
+anicia_42 = {
+	name = "Hiberia"
+	religion = "nicene"
+	culture = gallo_roman
+	female = yes
+	445.1.1 = {
+		birth = yes
+	}	
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	510.1.1 = {
+		death = yes
+	}
+}
+anicia_43 = {
+	name = "Ommatius"
+	religion = "chalcedonian"
+	culture = gallo_roman
+	father = anicia_41 #Ruricus
+	mother = anicia_42 #Hiberia
+	dynasty = anicii
+	476.1.1 = {
+		birth = yes
+	}
+	543.1.1 = {
+		death = yes
+	}
+}
+#Apollinarians
+apollinarian_01 = {
+	name = "Sidonius"
+	religion = "nicene"
+	culture = gallo_roman
+	dynasty = apollinarian
+	father = apollinarian_06
+	430.1.1 = {
+		birth = yes
+	}
+	450.1.1 = {
+		add_spouse = avitian_06
+		set_relation_friend = character:avitian_03
+	}	
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	471.1.1 = {
+		add_pressed_claim = title:c_clermont_sur_allier
+		add_pressed_claim = title:c_lyon
+		add_pressed_claim = title:c_auvergne
+	}
+	485.1.1 = {
+		death = yes
+	}
+}
+apollinarian_02 = {
+	name = "Apollinar"
+	religion = "chalcedonian"
+	culture = gallo_roman
+	dynasty = apollinarian
+	father = apollinarian_01
+	mother = avitian_06
+	453.1.1 = {
+		birth = yes
+	}
+	471.1.1 = {
+		set_relation_friend = character:200283 # Alaric II, who later apointed him as a count in Clermont
+	}
+	515.1.1 = {
+		death = yes
+	}
+}
+apollinarian_09 = {
+	name = "Arcadius"
+	religion = "chalcedonian"
+	culture = gallo_roman
+	dynasty = apollinarian
+	father = apollinarian_02
+	trait = callous
+	trait = deceitful
+	trait = ambitious
+	476.1.1 = {
+		birth = yes
+	}
+	550.1.1 = {
+		death = yes
+	}
+}
+apollinarian_03 = {
+	name = "Severiana"
+	religion = "chalcedonian"
+	female=yes
+	culture = gallo_roman
+	dynasty = apollinarian
+	father = apollinarian_01
+	mother = avitian_06
+	female = yes
+	453.1.1 = {
+		birth = yes
+	}
+	515.1.1 = {
+		death = yes
+	}
+}
+apollinarian_04 = {
+	name = "Roscia"
+	religion = "chalcedonian"
+	female=yes
+	culture = gallo_roman
+	dynasty = apollinarian
+	father = apollinarian_01
+	mother = avitian_06
+	female = yes
+	453.1.1 = {
+		birth = yes
+	}
+	515.1.1 = {
+		death = yes
+	}
+}
+apollinarian_05 = {
+	name = "Apollinar"
+	religion = "nicene"
+	culture = gallo_roman
+	dynasty = apollinarian
+	375.1.1 = {
+		birth = yes
+	}
+	411.9.1 = {
+		death = {
+			death_reason = death_execution
+			killer = 145228 # Constantius
+		}
+	}
+}
+apollinarian_06 = {
+	name = "Apollinar"
+	religion = "nicene"
+	culture = gallo_roman
+	dynasty = apollinarian
+	father = apollinarian_05
+	398.1.1 = {
+		birth = yes
+	}
+	448.1.1 = {
+		death = yes
+	}
+}
+apollinarian_07 = {
+	name = "Thaumastus"
+	religion = "nicene"
+	culture = gallo_roman
+	dynasty = apollinarian
+	father = apollinarian_05
+	400.1.1 = {
+		birth = yes
+	}
+	450.1.1 = {
+		death = yes
+	}
+}
+apollinarian_08 = {
+	name = "Eulalia"
+	female = yes
+	religion = "nicene"
+	culture = gallo_roman
+	dynasty = apollinarian
+	father = apollinarian_07
+	425.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	475.1.1 = {
+		death = yes
+	}
+}
+#Avitians
+avitian_01 = {
+	name = "Agricola"
+	religion = "nicene"
+	culture = gallo_roman
+	dynasty = avitian
+	365.1.1 = {
+		birth = yes
+	}
+	421.1.1 = {
+		death = yes
+	}
+}
+avitian_02 = {
+	name = "Eparchius" #Emperor Avitius
+	religion = "nicene"
+	culture = gallo_roman
+	dynasty = avitian
+	father = avitian_01
+	395.1.1 = {
+		birth = yes
+	}	
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	456.1.1 = {
+		death = yes
+	}
+}
+avitian_07 = {
+	name = "Padusia" #Emperor Avitius
+	religion = "nicene"
+	culture = gallo_roman
+	dynasty = avitian
+	father = avitian_01
+	female = yes
+	398.1.1 = {
+		birth = yes
+	}	
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	456.1.1 = {
+		death = yes
+	}
+}
+avitian_08 = {
+	name = "Papianilla" #Emperor Avitius
+	religion = "nicene"
+	culture = gallo_roman
+	dynasty = avitian
+	father = avitian_01
+	female = yes
+	410.1.1 = {
+		birth = yes
+	}	
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	465.1.1 = {
+		death = yes
+	}
+}
+avitian_05 = {
+	name = "Agricola" #Emperor Avitius son
+	religion = "nicene"
+	culture = gallo_roman
+	dynasty = avitian
+	father = avitian_02
+	415.1.1 = {
+		birth = yes
+	}	
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	467.1.1 = {
+		death = yes
+	}
+}
+avitian_06 = {
+	name = "Papianilla" #Emperor Avitius son
+	religion = "nicene"
+	culture = gallo_roman
+	dynasty = avitian
+	father = avitian_02
+	female = yes
+	432.1.1 = {
+		birth = yes
+	}	
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	515.1.1 = {
+		death = yes
+	}
+}
+avitian_03 = {
+	name = "Ecdicus" #Emperor Avitius son
+	religion = "nicene"
+	culture = gallo_roman
+	dynasty = avitian
+	father = avitian_02
+	420.1.1 = {
+		birth = yes
+	}	
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	490.1.1 = {
+		death = yes
+	}
+}
+avitian_04 = {
+	name = "Agricola" #Ecdicus son
+	religion = "chalcedonian"
+	culture = gallo_roman
+	dynasty = avitian
+	father = avitian_03
+	451.1.1 = {
+		birth = yes
+		add_pressed_claim = title:c_clermont_sur_allier
+	}
+	520.1.1 = {
+		death = yes
+	}
+}
+
+#Ausoni
+ausoni_01 = {
+	name = "Iulius"
+	religion = roman_pagan
+	culture = gallo_roman
+	dynasty = ausoni
+	trait = lifestyle_herbalist
+	290.1.1 = {
+		birth = yes
+	}
+	310.1.1 = {
+		add_spouse = arbori_03 #Aeonia
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+ausoni_02 = {
+	name = "Decimus_Magnus"
+	religion = roman_pagan
+	culture = gallo_roman
+	dynasty = ausoni
+	father = ausoni_01 #Julius
+	mother = arbori_03 #Aeonia
+	trait = poet
+	trait = education_learning_3
+	310.1.1 = {
+		birth = yes
+	}
+	330.1.1 = {
+		add_spouse = attusius_03
+	}
+	340.1.1 = {
+		set_relation_friend = character:syagri_01 #Afrianus Syagrus
+		set_relation_friend = character:africae_29 #Pacatus
+		set_relation_friend = character:pontius_03 #Pontius
+	}
+	396.1.1 = {
+		death = yes
+	}
+}
+ausoni_03 = {
+	name = "Hesperius"
+	religion = roman_pagan
+	culture = gallo_roman
+	dynasty = ausoni
+	father = ausoni_02 #Magnus
+	mother = attusius_03
+	330.1.1 = {
+		birth = yes
+	}
+	405.1.1 = {
+		death = yes
+	}
+}
+ausoni_04 = {
+	name = "Paulina"
+	religion = roman_pagan
+	culture = gallo_roman
+	dynasty = ausoni
+	father = ausoni_02 #Magnus
+	mother = attusius_03
+	female = yes
+	333.1.1 = {
+		birth = yes
+	}
+	405.1.1 = {
+		death = yes
+	}
+}
+pontius_01 = {
+	name = "Paulinus"
+	dynasty = dynasty_Pontius
+	religion = nicene
+	culture = gallo_roman
+	306.1.1 = {
+		birth = yes
+	}
+	327.1.1 = {
+		add_spouse = attusius_02
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+ausoni_05 = {
+	name = "Thalassius"
+	dynasty = dynasty_Pontius
+	religion = roman_pagan
+	culture = gallo_roman
+	father = pontius_01
+	mother = attusius_02
+	341.1.1 = {
+		birth = yes
+	}
+	375.1.1 = {
+		add_spouse = ausoni_04
+	}
+	404.1.1 = {
+		death = yes
+	}
+}
+ausoni_06 = {
+	name = "Paulinus"
+	dynasty = dynasty_Pontius
+	religion = nicene
+	culture = gallo_roman
+	father = ausoni_05 #Thalassius
+	mother = ausoni_04 #Paulina
+	trait = poet
+	377.1.1 = {
+		birth = yes
+	}
+	449.1.1 = {
+		death = yes
+	}
+}
+pontius_02 = {
+	name = "Sabina"
+	female = yes
+	dynasty = dynasty_Pontius
+	religion = nicene
+	culture = gallo_roman
+	father = ausoni_05 #Thalassius
+	mother = ausoni_04 #Paulina
+	379.1.1 = {
+		birth = yes
+	}
+	445.1.1 = {
+		death = yes
+	}
+}
+pontius_03 = {
+	name = "Paulinus"
+	dynasty = dynasty_Pontius
+	religion = roman_pagan
+	culture = gallo_roman
+	father = pontius_01
+	mother = attusius_02
+	338.1.1 = {
+		birth = yes
+	}
+	394.1.1 = {
+		death = yes
+	}
+}
+pontius_04 = {
+	name = "Paulinus" # Paulinus of Nola
+	dynasty = dynasty_Pontius
+	religion = roman_pagan
+	culture = gallo_roman
+	father = pontius_03
+	trait = education_learning_3
+	trait = poet
+	353.1.1 = {
+		birth = yes
+	}
+	382.1.1 = {
+		add_spouse = hispano_roman_03
+		religion = nicene
+	}
+	394.6.1 = {
+		trait = devoted
+		set_relation_friend = character:augustine_03
+		set_relation_friend = character:hispano_roman_02
+	}
+	431.1.1 = {
+		death = yes
+	}
+}
+pontius_05 = {
+	name = "Celsus"
+	dynasty = dynasty_Pontius
+	religion = roman_pagan
+	culture = gallo_roman
+	father = pontius_04
+	mother = hispano_roman_03
+	394.1.1 = {
+		birth = yes
+	}
+	394.1.9 = {
+		death = yes
+	}
+}
+pontius_06 = {
+	name = "Celsus"
+	dynasty = dynasty_Pontius
+	religion = nicene
+	culture = gallo_roman
+	father = pontius_03
+	357.1.1 = {
+		birth = yes
+	}
+	380.1.1 = {
+		add_spouse = anicia_31
+	}
+	394.1.1 = {
+		death = yes
+	}
+}
+pontius_07 = {
+	name = "Paulinus"
+	dynasty = dynasty_Pontius
+	religion = nicene
+	culture = gallo_roman
+	father = pontius_06 
+	mother = anicia_31
+	381.1.1 = {
+		birth = yes
+	}
+	415.1.1 = {
+		trait = devoted
+	}
+	440.1.1 = {
+		death = yes
+	}
+}
+pontius_08 = {
+	name = "Hermogenianus"
+	dynasty = dynasty_Pontius
+	religion = nicene
+	culture = gallo_roman
+	father = pontius_06 
+	mother = anicia_31
+	385.1.1 = {
+		birth = yes
+	}
+	415.1.1 = {
+		trait = devoted
+	}
+	440.1.1 = {
+		death = yes
+	}
+}
+pontius_09 = {
+	name = "Adelfius"
+	dynasty = dynasty_Pontius
+	religion = nicene
+	culture = gallo_roman
+	father = pontius_06 
+	mother = anicia_31
+	388.1.1 = {
+		birth = yes
+	}
+	415.1.1 = {
+		trait = devoted
+	}
+	443.1.1 = {
+		death = yes
+	}
+}
+pontius_10 = {
+	name = "Leontia"
+	female = yes
+	dynasty = dynasty_Pontius
+	religion = nicene
+	culture = gallo_roman
+	father = pontius_09 
+	415.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	470.1.1 = {
+		death = yes
+	}
+}
+#Arbori
+arbori_01 = {
+	name = "Argicius"
+	religion = roman_pagan
+	culture = gallo_roman
+	dynasty = arbori
+	265.1.1 = {
+		birth = yes
+	}
+	352.1.1 = {
+		death = yes
+	}
+}
+arbori_02 = {
+	name = "Magnus" #Friend of Constantines brothers
+	religion = roman_pagan
+	culture = gallo_roman
+	dynasty = arbori
+	father = arbori_01 #Agricius
+	trait = poet
+	289.1.1 = {
+		birth = yes
+	}
+	368.1.1 = {
+		death = yes
+	}
+}
+arbori_03 = {
+	name = "Aeonia"
+	religion = roman_pagan
+	culture = gallo_roman
+	dynasty = arbori
+	father = arbori_01 #Agricius
+	female = yes
+	292.1.1 = {
+		birth = yes
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+arbori_04 = {
+	name = "Hilaria"
+	religion = roman_pagan
+	culture = gallo_roman
+	dynasty = arbori
+	father = arbori_01 #Agricius
+	female = yes
+	trait = education_learning_3
+	trait = lifestyle_herbalist
+	296.1.1 = {
+		birth = yes
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+aureli_01 = {
+	name = "Ambrosius"
+	dynasty = aurelius_dynasty
+	culture = gallo_roman
+	religion = "nicene"
+	300.1.1 = {
+		birth = yes
+	}
+	361.1.1 = {
+		death = yes
+	}
+}
+aureli_02 = {
+	name = "Marcellina"
+	female = yes
+	dynasty = aurelius_dynasty
+	culture = gallo_roman
+	religion = "nicene"
+	father = aureli_01
+	trait = education_learning_2
+	trait = chaste
+	trait = devoted
+	327.1.1 = {
+		birth = yes
+	}
+	397.1.1 = {
+		death = yes
+	}
+}
+aureli_03 = {
+	name = "Satyrus"
+	dynasty = aurelius_dynasty
+	culture = gallo_roman
+	religion = "nicene"
+	father = aureli_01
+	trait = education_learning_2
+	trait = devoted
+	331.1.1 = {
+		birth = yes
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+aureli_04 = {
+	name = "Ambrosius"
+	dynasty = aurelius_dynasty
+	culture = gallo_roman
+	religion = "nicene"
+	father = aureli_01
+	trait = education_learning_3
+	trait = diligent
+	trait = gregerious
+	trait = callous
+	trait = devoted
+	339.1.1 = {
+		birth = yes
+	}
+	381.1.1 = {
+		trait = theologian
+		effect = { learn_language = language_greek }
+	}
+	393.1.1 = {
+		set_relation_friend = character:augustine_03
+	}
+	397.1.1 = {
+		death = yes
+	}
+}
+#Syagrii
+syagri_03 = {
+	name = "Flavius"
+	religion = "nicene"
+	culture = gallo_roman
+	dynasty = syagri
+	321.1.1 = {
+		birth = yes
+	}
+	382.1.1 = {
+		death = yes
+	}
+}
+syagri_01 = {
+	name = "Afrianus"
+	religion = "nicene"
+	culture = gallo_roman
+	dynasty = syagri
+	father = syagri_03
+	345.1.1 = {
+		birth = yes
+	}
+	396.1.1 = {
+		death = yes
+	}
+}
+syagri_02 = {
+	name = "Afriana"
+	religion = "nicene"
+	culture = gallo_roman
+	dynasty = syagri
+	female = yes
+	father = syagri_01 #Afrianus
+	370.1.1 = {
+		birth = yes
+	}
+	423.1.1 = {
+		death = yes
+	}
+}
+syagri_04 = {
+	name = "Flavius"
+	religion = "nicene"
+	culture = gallo_roman
+	dynasty = syagri
+	father = syagri_01 #Afrianus
+	375.1.1 = {
+		birth = yes
+	}
+	442.1.1 = {
+		death = yes
+	}
+}
+syagri_05 = {
+	name = "Aegidius"
+	religion = "nicene"
+	culture = gallo_roman
+	dynasty = syagri
+	father = syagri_04 #Afrianus
+	408.1.1 = {
+		birth = yes
+	}
+	424.1.1 = {
+		trait = arrogant
+		trait = brave
+		trait = ambitious
+		trait = education_martial_4
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	465.1.1 = {
+		death = yes
+	}
+}
+syagri_06 = {
+	name = "Syagrius"
+	religion = "nicene"
+	culture = gallo_roman
+	dynasty = syagri
+	dna = syagrius 
+	father = syagri_05 #Afrianus
+	trait = diligent
+	trait = brave
+	trait = stubborn
+	trait = education_martial_3
+	trait = unyielding_defender
+	diplomacy = 4
+	martial = 7
+	stewardship = 6
+	intrigue = 3
+	learning = 4
+	prowess = 8
+	441.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	486.1.1 = {
+		death = yes
+	}
+}
+syagri_07 = {
+	name = "Flavius"
+	religion = "chalcedonian"
+	culture = gallo_roman
+	dynasty = syagri
+	father = syagri_05 #Afrianus
+	438.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	486.1.1 = {
+		death = yes
+	}
+}
+syagri_08 = {
+	name = "Flavia"
+	religion = "chalcedonian"
+	culture = gallo_roman
+	dynasty = syagri
+	father = syagri_07 #Afrianus
+	female = yes
+	451.1.1 = {
+		birth = yes
+	}
+	486.1.1 = {
+		death = yes
+	}
+}
+## Latinus
+latinus_01 = {
+	name = "Alethius"
+	religion = "arianism"
+	culture = gallo_roman
+	423.1.1 = {
+		birth = yes
+	}
+	446.1.1 = {
+		add_spouse = gunderic_01
+	}
+	479.1.1 = {
+		death = yes
+	}
+}
+latinus_02 = {
+	name = "Latinus"
+	religion = "arinaism"
+	culture = gallo_roman
+	father = latinus_01
+	mother = gunderic_01
+	448.1.1 = {
+		birth = yes
+	}
+	469.1.1 = {
+		add_spouse = syagri_08
+		religion = chalcedonian
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+latinus_03 = {
+	name = "Gundebauld"
+	religion = "chalcedonian"
+	culture = gallo_roman
+	father = latinus_02
+	mother = syagri_08
+	477.1.1 = {
+		birth = yes
+	}
+	498.1.1 = {
+		add_spouse = gundebald_01
+	}
+	502.1.1 = {
+		death = yes
+	}
+}
+latinus_04 = {
+	name = "Desiderianus"
+	religion = "chalcedonian"
+	culture = gallo_roman
+	father = latinus_03
+	mother = gundebald_01
+	500.1.1 = {
+		birth = yes
+	}
+	532.1.1 = {
+		death = yes
+	}
+}
+#Africae
+africae_29	= {
+	name = "Pacatus"
+	religion = "nicene"
+	culture = gallo_roman
+	trait = education_learning_4
+	trait = scholar
+	trait = poet
+	339.1.1 = {
+		birth = yes
+	}
+	401.1.1 = {
+		death = yes
+	}
+}
+
+##Septem Provinciae
+septem_01 = {
+	name = "Olybrus"
+	religion = roman_pagan
+	culture = gallo_roman
+	339.1.1 = {
+		birth = yes
+	}
+	401.1.1 = {
+		death = yes
+	}
+}
+septem_02 = {
+	name = "Fabianus"
+	religion = roman_pagan
+	culture = gallo_roman
+	341.1.1 = {
+		birth = yes
+	}
+	361.1.1 = {
+		add_courtier = character:avitian_01 # Father of emperor Avitus
+	}
+	401.1.1 = {
+		death = yes
+	}
+}
+septem_03 = {
+	name = "Leo"
+	religion = roman_pagan
+	culture = gallo_roman
+	339.1.1 = {
+		birth = yes
+	}
+	401.1.1 = {
+		death = yes
+	}
+}
+septem_04 = {
+	name = "Rufinus"
+	religion = roman_pagan
+	culture = gallo_roman
+	340.1.1 = {
+		birth = yes
+	}
+	401.1.1 = {
+		death = yes
+	}
+}
+septem_05 = {
+	name = "Probinus"
+	religion = roman_pagan
+	culture = gallo_roman
+	342.1.1 = {
+		birth = yes
+	}
+	401.1.1 = {
+		death = yes
+	}
+}
+septem_06 = {
+	name = "Demetrius"
+	religion = roman_pagan
+	culture = gallo_roman
+	340.1.1 = {
+		birth = yes
+	}
+	401.1.1 = {
+		death = yes
+	}
+}
+septem_07 = {
+	name = "Aemilianus"
+	religion = roman_pagan
+	culture = gallo_roman
+	332.1.1 = {
+		birth = yes
+	}
+	401.1.1 = {
+		death = yes
+	}
+}
+septem_08 = {
+	name = "Quintus"
+	religion = roman_pagan
+	culture = gallo_roman
+	339.1.1 = {
+		birth = yes
+	}
+	401.1.1 = {
+		death = yes
+	}
+}
+septem_09 = {
+	name = "Hadrianus"
+	religion = roman_pagan
+	culture = gallo_roman
+	340.1.1 = {
+		birth = yes
+	}
+	401.1.1 = {
+		death = yes
+	}
+}
+septem_10 = {
+	name = "Sidonius"
+	religion = roman_pagan
+	culture = gallo_roman
+	331.1.1 = {
+		birth = yes
+	}
+	401.1.1 = {
+		death = yes
+	}
+}
+septem_11 = {
+	name = "Agricola"
+	religion = "nicene"
+	culture = gallo_roman
+	378.1.1 = {
+		birth = yes
+	}
+	401.1.1 = {
+		death = yes
+	}
+}
+
+###gallo_romans
+168145 = {
+	name = "Lop"
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	635.1.1 = {
+		birth = "635.1.1"
+	}
+	675.1.1 = {
+		death = "675.1.1"
+	}
+}
+190477 = {
+	name = "Loup"
+	dynasty = 1044111 #Louping
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	635.1.1 = {
+		birth = yes
+	}
+	677.1.1 = {
+		death = yes
+	}
+}
+190478 = {
+	name = "Boggis" #Boggis duke of Aquitaine
+	dynasty = 1044111 #Louping
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	father = 190477
+	658.1.1 = {
+		birth = yes
+	}
+	707.1.1 = {
+		death = yes
+	}
+}
+190479 = {
+	name = "Eudes" #duke of Aquitaine
+	dynasty = 1044111 #Louping
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	father = 190478
+	681.1.1 = {
+		birth = yes
+	}
+	697.1.1 = {
+		add_spouse = 190452 #Waltrude Karling
+	}
+	735.1.1 = {
+		death = yes
+	}
+}
+190480 = {
+	name = "Hunoald" #duke of Aquitaine
+	dynasty = 1044111 #Louping
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	trait = ambitious
+	trait = greedy
+	trait = diligent
+	trait = education_diplomacy_4
+	trait = intellect_good_1
+	father = 190479
+	mother = 190452
+	716.1.1 = {
+		birth = yes
+	}
+	769.1.1 = {
+		effect = {
+			add_opinion = {
+				target = liege
+				modifier = hate_opinion
+				opinion = -120
+			}
+			add_opinion = {
+				target = title:k_lotharingia.holder
+				modifier = hate_opinion
+				opinion = -120
+			}
+		}
+	}
+	774.1.1 = {
+		death = yes
+	}
+}
+190481 = {
+	name = "Waifar" #duke of Aquitaine
+	dynasty = 1044111 #Louping
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	father = 190480
+	732.1.1 = {
+		birth = yes
+	}
+	768.1.1 = {
+		add_spouse = 190493 #Adela Louping
+	}
+	768.6.2 = {
+		death = yes
+	}
+}
+190482 = {
+	name = "Loup"
+	dynasty = 1044111 #Louping
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	father = 190481
+	mother = 190493
+	768.1.1 = {
+		birth = yes
+	}
+	790.6.2 = {
+		death = yes
+	}
+}
+190483 = {
+	name = "Hatto" #duke of Gascony
+	dynasty = 1044111 #Louping
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	father = 190479
+	mother = 190452
+	719.1.1 = {
+		birth = yes
+	}
+	759.1.1 = {
+		death = yes
+	}
+}
+190484 = {
+	name = "Loup" #duke of Gascony
+	dynasty = 1044111 #Louping
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	father = 190483
+	736.1.1 = {
+		birth = yes
+	}
+	769.1.1 = {
+		effect = {
+			add_opinion = {
+				target = liege
+				modifier = hate_opinion
+				opinion = -120
+			}
+			add_opinion = {
+				target = title:k_lotharingia.holder
+				modifier = hate_opinion
+				opinion = -120
+			}
+		}
+	}
+	775.1.1 = {
+		death = yes
+	}
+}
+190485 = {
+	name = "Adalric" #duke of Gascony
+	dynasty = 1044111 #Louping
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	father = 190484
+	753.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+190486 = {
+	name = "Jimeno" #duke of Gascony
+	dynasty = 1044111 #Louping
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	father = 190485
+	769.1.1 = {
+		birth = yes
+	}
+	816.1.1 = {
+		death = yes
+	}
+}
+190488 = {
+	name = "Centule"
+	dynasty = 1044111 #Louping
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	father = 190485
+	771.1.1 = {
+		birth = yes
+	}
+	812.1.1 = {
+		death = yes
+	}
+}
+190492 = {
+	name = "Loup_Sancho"
+	dynasty = 1044111 #Louping
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	father = 190484
+	754.1.1 = {
+		birth = yes
+	}
+	792.1.1 = {
+		death = yes
+	}
+}
+190493 = {
+	name = "Adela" #wife of Waifer of Aquitaine
+	female = yes
+	dynasty = 1044111 #Louping
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	father = 190484
+	752.1.1 = {
+		birth = yes
+	}
+	807.1.1 = {
+		death = yes
+	}
+}
+190494 = {
+	name = "Artgarius" #count of Armagnac
+	dynasty = 1044111 #Louping
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	father = 190483
+	740.1.1 = {
+		birth = yes
+	}
+	791.1.1 = {
+		death = yes
+	}
+}
+190495 = {
+	name = "Icterius" #count of Foix
+	dynasty = 1044111 #Louping
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	father = 190483
+	742.1.1 = {
+		birth = yes
+	}
+	792.1.1 = {
+		death = yes
+	}
+}
+190496 = {
+	name = "Remistan"
+	dynasty = 1044111 #Louping
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	father = 190479
+	mother = 190452
+	723.1.1 = {
+		birth = yes
+	}
+	768.1.1 = {
+		death = yes
+	}
+}
+190497 = {
+	name = "Lampagie"
+	female = yes
+	dynasty = 1044111 #Louping
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	father = 190479
+	mother = 190452
+	727.1.1 = {
+		birth = yes
+	}
+	731.1.1 = {
+		death = yes
+	}
+}
+190498 = {
+	name = "Imitarius"
+	dynasty = 1044111 #Louping
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	father = 190478
+	685.1.1 = {
+		birth = yes
+	}
+	740.1.1 = {
+		death = yes
+	}
+}
+190499 = {
+	name = "Guillaume" #count of Bordeaux
+	dynasty = 1044112 #Bertranding
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	739.1.1 = {
+		birth = yes
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+190500 = {
+	name = "Bertrand" #count of Bordeaux
+	dynasty = 1044112 #Bertranding
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	father = 190499
+	761.1.1 = {
+		birth = yes
+	}
+	839.1.1 = {
+		death = yes
+	}
+}
+190502 = {
+	name = "Burgundio" #count of Agen
+	dynasty = 1044113 #Burgunding
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	742.1.1 = {
+		birth = yes
+	}
+	801.1.1 = {
+		death = yes
+	}
+}
+190503 = {
+	name = "Liuthard" #count of Agen
+	dynasty = 1044113 #Burgunding
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	father = 190502
+	765.1.1 = {
+		birth = yes
+	}
+	817.1.1 = {
+		death = yes
+	}
+}
+190504 = {
+	name = "Wulgrin" #count of Angouleme and Perigod
+	dynasty = 541
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	745.1.1 = {
+		birth = yes
+	}
+	806.1.1 = {
+		death = yes
+	}
+}
+190505 = {
+	name = "Wulgrin" #count of Angouleme and Perigod
+	dynasty = 541
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	father = 190504
+	766.1.1 = {
+		birth = yes
+	}
+	822.1.1 = {
+		death = yes
+	}
+}
+190506 = {
+	name = "Stephan" #count of Auvergne and Gevauden
+	dynasty = 1044114 #Stephenid
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	721.1.1 = {
+		birth = yes
+	}
+	770.1.1 = {
+		death = yes
+	}
+}
+190507 = {
+	name = "Hugh" #count of Auvergne and Gevauden
+	dynasty = 1044114 #Stephenid
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	father = 190506
+	742.1.1 = {
+		birth = yes
+	}
+	819.1.1 = {
+		death = yes
+	}
+}
+190510 = {
+	name = "Abbon" #count of Poitou and Tours
+	dynasty = 1044115 #Abbonid
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	747.1.1 = {
+		birth = yes
+	}
+	798.1.1 = {
+		death = yes
+	}
+}
+
+aquitania_09 = {
+	name = "Abbon" 
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	600.1.1 = {
+		birth = yes
+	}
+	678.1.1 = {
+		death = yes
+	}
+}
+aquitania_10 = {
+	name = "Varanes" 
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	593.1.1 = {
+		birth = yes
+	}
+	678.1.1 = {
+		death = yes
+	}
+}
+aquitania_11 = {
+	name = "Abibus" 
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	589.1.1 = {
+		birth = yes
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+aquitania_12 = {
+	name = "Sallustius" 
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	601.1.1 = {
+		birth = yes
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+aquitania_13 = {
+	name = "Eulalius" 
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	729.1.1 = {
+		birth = yes
+	}
+	790.1.1 = {
+		death = yes
+	}
+}
+aquitania_14 = {
+	name = "Faustus" 
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	740.1.1 = {
+		birth = yes
+	}
+	790.1.1 = {
+		death = yes
+	}
+}
+aquitania_15 = {
+	name = "Carus" 
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	734.1.1 = {
+		birth = yes
+	}
+	790.1.1 = {
+		death = yes
+	}
+}
+
+#159656 = {
+#	name = "Teudric" #Theodoric
+#	religion = "chalcedonian"
+#	culture = "briton"
+#	dynasty_house = house_british_isles_breizh #Breizh
+#	father = 159655
+#	520.1.1 = {
+#		birth = "520.1.1"
+#	}
+#	584.1.1 = {
+#		death = "584.1.1"
+#	}
+#}
+#Turonum
+turonum_01 = {
+	name = "Carus" 
+	religion = "celto_hellenic_syncretism"
+	culture = "gallo_roman"
+	340.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+turonum_02 = {
+	name = "Sallustius" 
+	religion = "celto_hellenic_syncretism"
+	culture = "gallo_roman"
+	337.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+veneti_01 = {
+	name = "Donatus" 
+	religion = "nicene"
+	culture = "gallo_roman"
+	dynasty = venetii
+	438.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+brittany_03 = {
+	name = "Macrinus"
+	culture = gallo_roman
+	religion = chalcedonian
+	499.1.1 = {
+		birth = yes
+	}
+	570.1.1 = {
+		death = yes
+	}
+}
+brittany_04 = {
+	name = "Marcianus"
+	culture = gallo_roman
+	religion = chalcedonian
+	597.1.1 = {
+		birth = yes
+	}
+	670.1.1 = {
+		death = yes
+	}
+}
+
+burgundy_01 = {
+	name = "Marcianus"
+	culture = gallo_roman
+	religion = roman_pagan
+	330.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+burgundy_02 = {
+	name = "Flavius"
+	culture = gallo_roman
+	religion = roman_pagan
+	336.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+burgundy_03 = {
+	name = "Martinus"
+	culture = gallo_roman
+	religion = nicene
+	332.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+burgundy_04 = {
+	name = "Honorius"
+	culture = gallo_roman
+	religion = roman_pagan
+	340.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+burgundy_05 = {
+	name = "Valentianus"
+	culture = gallo_roman
+	religion = roman_pagan
+	338.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+burgundy_06 = {
+	name = "Theodosius"
+	culture = gallo_roman
+	religion = nicene
+	341.1.1 = {
+		birth = yes
+	}
+	390.1.1 = {
+		religion = jovinian
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+burgundy_07 = {
+	name = "Ioannes"
+	culture = gallo_roman
+	religion = chalcedonian
+	452.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+burgundy_08 = {
+	name = "Aetius"
+	culture = gallo_roman
+	religion = chalcedonian
+	453.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+burgundy_09 = {
+	name = "Octavius"
+	culture = gallo_roman
+	religion = nicene
+	448.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+burgundy_10 = {
+	name = "Victor"
+	culture = gallo_roman
+	religion = chalcedonian
+	454.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+burgundy_14 = {
+	name = "Aemilianus"
+	culture = gallo_roman
+	religion = chalcedonian
+	501.1.1 = {
+		birth = yes
+	}
+	570.1.1 = {
+		death = yes
+	}
+}
+gallia_01 = {
+	name = "Desiderius"
+	culture = gallo_roman
+	religion = nicene
+	367.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+germania_01 = {
+	name = "Desiderius"
+	culture = gallo_roman
+	religion = nicene
+	334.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+germania_02 = {
+	name = "Magnus"
+	culture = gallo_roman
+	religion = roman_pagan
+	332.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+germania_03 = {
+	name = "Cornelius"
+	culture = gallo_roman
+	religion = nicene
+	328.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+900075 = { #Belgica
+	name= "Tetricus"
+	religion="nicene"
+	culture="gallo_roman"
+	357.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+
+900056 = { #Lugdunensis
+	name= "Tiberius"
+	dna = ruler_lugdunensis
+	religion="nicene"
+	culture="gallo_roman"
+	trait = brave
+	trait = forgiving
+	trait = ambitious
+	sexuality = heterosexual
+	367.1.1 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+	431.1.1 = {
+		death = yes
+	}
+}
+900058 = { #Aquitainia
+	name= "Cassius"
+	religion="nicene"
+	culture="gallo_roman"
+	370.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+900059 = { #Narbonensis
+	name= "Decimus"
+	religion="nicene"
+	culture="gallo_roman"
+	361.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+britannia_05 = {
+	name = "Victorinus"
+	religion = "roman_pagan"
+	culture = "gallo_roman"
+	350.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+sanctus_01 = {
+	name = "Flavius"
+	religion = "nicene"
+	culture = "gallo_roman"
+	dynasty = dynasty_Sanctus
+	250.1.1 = {
+		birth = yes
+	}
+	300.1.1 = {
+		death = yes
+	}
+}
+sanctus_02 = {
+	name = "Romanus"
+	religion = "nicene"
+	culture = "gallo_roman"
+	dynasty = dynasty_Sanctus
+	father = sanctus_01
+	290.1.1 = {
+		birth = yes
+	}
+	360.1.1 = {
+		death = yes
+	}
+}
+sanctus_03 = {
+	name = "Flavius"
+	religion = "nicene"
+	culture = "gallo_roman"
+	dynasty = dynasty_Sanctus
+	father = sanctus_02
+	322.1.1 = {
+		birth = yes
+	}
+	340.1.1 = {
+		add_spouse = attusius_04
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+
+attusius_01 = {
+	name = "Lucanus"
+	religion = "roman_pagan"
+	culture = "gallo_roman"
+	dynasty = dynasty_Attusius
+	270.1.1 = {
+		birth = yes
+	}
+	340.1.1 = {
+		death = yes
+	}
+}
+attusius_02 = {
+	name = "Sabina"
+	female = yes
+	religion = "roman_pagan"
+	culture = "gallo_roman"
+	dynasty = dynasty_Attusius
+	father = attusius_01
+	300.1.1 = {
+		birth = yes
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+attusius_03 = {
+	name = "Lucana"
+	female = yes
+	religion = "roman_pagan"
+	culture = "gallo_roman"
+	dynasty = dynasty_Attusius
+	father = attusius_01
+	312.1.1 = {
+		birth = yes
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+attusius_04 = {
+	name = "Pudentilla"
+	female = yes
+	religion = "roman_pagan"
+	culture = "gallo_roman"
+	dynasty = dynasty_Attusius
+	father = attusius_01
+	324.1.1 = {
+		birth = yes
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+septimus_01 = {
+	name = "Lucius"
+	religion = "roman_pagan"
+	culture = "gallo_roman"
+	dynasty = dynasty_Septimus
+	324.1.1 = {
+		birth = yes
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+### Gaul Proper
+senonia_01 = {
+	name = "Lucius"
+	religion = "celto_hellenic_syncretism"
+	culture = "gallo_roman"
+	324.1.1 = {
+		birth = yes
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+senonia_02 = {
+	name = "Hierax"
+	religion = "nicene"
+	culture = "gallo_roman"
+	360.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+senonia_03 = {
+	name = "Aelius"
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	451.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+senonia_04 = {
+	name = "Apolonius"
+	religion = "celto_hellenic_syncretism"
+	culture = "gallo_roman"
+	324.1.1 = {
+		birth = yes
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+senonia_05 = {
+	name = "Gaius"
+	religion = "nicene"
+	culture = "gallo_roman"
+	360.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+senonia_06 = {
+	name = "Petronius"
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	452.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+senonia_07 = {
+	name = "Auxentius"
+	religion = "celto_hellenic_syncretism"
+	culture = "gallo_roman"
+	332.1.1 = {
+		birth = yes
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+senonia_08 = {
+	name = "Nepotianus"
+	religion = "nicene"
+	culture = "gallo_roman"
+	372.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+senonia_09 = {
+	name = "Octavius"
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	451.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+senonia_10 = {
+	name = "Marcus"
+	religion = "celto_hellenic_syncretism"
+	culture = "gallo_roman"
+	337.1.1 = {
+		birth = yes
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+senonia_11 = {
+	name = "Sergius"
+	religion = "celto_hellenic_syncretism"
+	culture = "gallo_roman"
+	362.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+senonia_12 = {
+	name = "Iannus"
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	452.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+## Lugdunensis II
+lug_secunda_01 = {
+	name = "Augustinus"
+	religion = "celto_hellenic_syncretism"
+	culture = "gallo_roman"
+	331.1.1 = {
+		birth = yes
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+lug_secunda_02 = {
+	name = "Caecilianus"
+	religion = "nicene"
+	culture = "gallo_roman"
+	378.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+lug_secunda_03 = {
+	name = "Hubaldus"
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	452.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+lug_secunda_04 = {
+	name = "Brutus"
+	religion = "celto_hellenic_syncretism"
+	culture = "gallo_roman"
+	329.1.1 = {
+		birth = yes
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+lug_secunda_05 = {
+	name = "Leo"
+	religion = "celto_hellenic_syncretism"
+	culture = "gallo_roman"
+	376.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+lug_secunda_06 = {
+	name = "Gaianus"
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	451.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+## Belgica I
+belgica_01 = {
+	name = "Andronicus"
+	religion = "celto_hellenic_syncretism"
+	culture = "gallo_roman"
+	324.1.1 = {
+		birth = yes
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+belgica_02 = {
+	name = "Antoninus"
+	religion = "nicene"
+	culture = "gallo_roman"
+	360.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+belgica_03 = {
+	name = "Gratianus"
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	451.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+belgica_04 = {
+	name = "Aemilianus"
+	religion = "celto_hellenic_syncretism"
+	culture = "gallo_roman"
+	330.1.1 = {
+		birth = yes
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+belgica_05 = {
+	name = "Romanus"
+	religion = "celto_hellenic_syncretism"
+	culture = "gallo_roman"
+	370.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+belgica_06 = {
+	name = "Dalmaticus"
+	religion = "nicene"
+	culture = "gallo_roman"
+	442.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+belgica_10 = {
+	name = "Germanus"
+	religion = "celto_hellenic_syncretism"
+	culture = "gallo_roman"
+	331.1.1 = {
+		birth = yes
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+belgica_11 = {
+	name = "Dexippus"
+	religion = "nicene"
+	culture = "gallo_roman"
+	368.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+belgica_12 = {
+	name = "Pelagius"
+	religion = "nicene"
+	culture = "gallo_roman"
+	439.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+belgica_13 = {
+	name = "Decius"
+	religion = "celto_hellenic_syncretism"
+	culture = "gallo_roman"
+	321.1.1 = {
+		birth = yes
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+belgica_14 = {
+	name = "Nicetas"
+	religion = "nicene"
+	culture = "gallo_roman"
+	350.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+belgica_15 = {
+	name = "Marcianus"
+	religion = "nicene"
+	culture = "gallo_roman"
+	423.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+belgica_16 = {
+	name = "Iovianus"
+	religion = "celto_hellenic_syncretism"
+	culture = "gallo_roman"
+	329.1.1 = {
+		birth = yes
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+belgica_17 = {
+	name = "Trajan"
+	religion = "celto_hellenic_syncretism"
+	culture = "gallo_roman"
+	355.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+belgica_18 = {
+	name = "Tracitus"
+	religion = "nicene"
+	culture = "gallo_roman"
+	440.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+## Belgica II
+belgica_07 = {
+	name = "Aetius"
+	religion = "celto_hellenic_syncretism"
+	culture = "gallo_roman"
+	327.1.1 = {
+		birth = yes
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+belgica_08 = {
+	name = "Galerius"
+	religion = "celto_hellenic_syncretism"
+	culture = "gallo_roman"
+	371.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+belgica_09 = {
+	name = "Sebastianus"
+	religion = "nicene"
+	culture = "gallo_roman"
+	442.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+## Lugdunensis Terthia
+lug_tertia_01 = {
+	name = "Nectarius"
+	religion = "celto_hellenic_syncretism"
+	culture = "gallo_roman"
+	334.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+lug_tertia_02 = {
+	name = "Sallustius"
+	religion = "manichean"
+	culture = "gallo_roman"
+	359.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+lug_tertia_03 = {
+	name = "Philagrius"
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	452.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+lug_tertia_04 = {
+	name = "Cassius"
+	religion = "celto_hellenic_syncretism"
+	culture = "gallo_roman"
+	322.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+lug_tertia_05 = {
+	name = "Phaustus"
+	religion = "nicene"
+	culture = "gallo_roman"
+	358.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+lug_tertia_06 = {
+	name = "Eparchius"
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	451.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+##
+berry_01 = {
+	name = "Dalmaticus"
+	religion = "celto_hellenic_syncretism"
+	culture = "gallo_roman"
+	327.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+berry_02 = {
+	name = "Numerius"
+	religion = "nicene"
+	culture = "gallo_roman"
+	369.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+berry_03 = {
+	name = "Palladius"
+	religion = "nicene"
+	culture = "gallo_roman"
+	441.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+zeeland_01 = {
+	name = "Palladius"
+	religion = "celto_hellenic_syncretism"
+	culture = "gallo_roman"
+	320.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+zeeland_02 = {
+	name = "Numerius"
+	religion = "celto_hellenic_syncretism"
+	culture = "gallo_roman"
+	324.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+
+## Gens Ascieta
+ascietus_01 = {
+	name = "Decimus"
+	dynasty = ascietus_dynasty
+	religion = "celto_hellenic_syncretism"
+	culture = "gallo_roman"
+	0.4.31 = {
+		birth = yes
+	}
+	47.1.1 = {
+		death = yes
+	}
+}
+ascietus_02 = {
+	name = "Valerius"
+	dynasty = ascietus_dynasty
+	religion = "celto_hellenic_syncretism"
+	culture = "gallo_roman"
+	father = ascietus_01
+	35.2.12 = {
+		birth = yes
+	}
+	60.1.1 = {
+		add_spouse = vitellius_01 # Vitellia
+	}
+	69.1.1 = {
+		death = yes
+	}
+}
+ascietus_03 = {
+	name = "Saturnius"
+	dynasty = ascietus_dynasty
+	religion = "celto_hellenic_syncretism"
+	culture = "gallo_roman"
+	father = ascietus_02
+	mother = vitellius_01
+	68.2.12 = {
+		birth = yes
+	}
+	135.1.1 = {
+		death = yes
+	}
+}
+### Roman Emperors
+145242 = {
+	name = "Carus"
+	# Caesar Marcus Aurelius Carus Augustus
+	dynasty = 1022200
+	religion = "roman_pagan"
+	culture = "gallo_roman"
+	trait = education_diplomacy_3
+	224.1.1 = {
+		birth = "224.1.1"
+	}
+	283.8.1 = {
+		death = "283.8.1"
+	}
+}
+### Lotharingia
+lotharingia_01 = {
+	name = "Carus"
+	religion = "celto_hellenic_syncretism"
+	culture = "gallo_roman"
+	332.1.1 = {
+		birth = yes
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+lotharingia_02 = {
+	name = "Clearchus"
+	religion = "celto_hellenic_syncretism"
+	culture = "gallo_roman"
+	353.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+lotharingia_03 = {
+	name = "Hierax"
+	religion = "nicene"
+	culture = "gallo_roman"
+	328.1.1 = {
+		birth = yes
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+lotharingia_04 = {
+	name = "Abibus"
+	religion = "nicene"
+	culture = "gallo_roman"
+	357.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+lotharingia_05 = {
+	name = "Heraclius"
+	religion = "nicene"
+	culture = "gallo_roman"
+	341.1.1 = {
+		birth = yes
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+lotharingia_06 = {
+	name = "Fidelis"
+	religion = "nicene"
+	culture = "gallo_roman"
+	372.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+lotharingia_07 = {
+	name = "Fidelis"
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	452.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+#####
+rufinus_01 = {
+	name = "Gaius"
+	dynasty = rufinus_dynasty
+	religion = "nicene"
+	culture = "gallo_roman"
+	322.1.1 = {
+		birth = yes
+	}
+	358.1.1 = {
+		death = yes
+	}
+}
+rufinus_02 = {
+	name = "Rufinus"
+	dynasty = rufinus_dynasty
+	father = rufinus_01
+	religion = "nicene"
+	culture = "gallo_roman"
+	trait = education_martial_4
+	trait = greedy
+	trait = ambitious
+	trait = zealous
+	345.1.1 = {
+		birth = yes
+	}
+	395.1.17 = {
+		employer = 70519 #Flavius Arcadius Theodosian
+		set_relation_rival = character:900062
+		effect = {
+			add_hook = {
+				type = loyalty_hook
+				character = 70519
+			}
+		}
+	}
+	399.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = 992078 # Gainas
+		}
+	}
+}
+rufinus_04 = {
+	name = "Silvia"
+	dynasty = rufinus_dynasty
+	father = rufinus_01
+	religion = "nicene"
+	culture = "gallo_roman"
+	trait = education_stewardship_3
+	trait = content
+	trait = humble
+	trait = zealous
+	female = yes
+	352.1.1 = {
+		birth = yes
+	}
+	395.1.1 = {
+		trait = devoted
+	}
+	423.1.1 = {
+		death = yes
+	}
+}
+rufinus_03 = {
+	name = "Rufina"
+	dynasty = rufinus_dynasty
+	father = rufinus_02
+	religion = "nicene"
+	culture = "gallo_roman"
+	female = yes
+	378.1.1 = {
+		birth = yes
+	}
+	423.1.1 = {
+		death = yes
+	}
+}
+ferreolus_01 = {
+	name = "Ferreolus"
+	dynasty = ferreolus_dynasty
+	religion = "nicene"
+	culture = "gallo_roman"
+	375.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		add_spouse = syagri_02
+	}
+	425.1.1 = {
+		death = yes
+	}
+}
+ferreolus_02 = {
+	name = "Tonantius"
+	dynasty = ferreolus_dynasty
+	religion = "nicene"
+	culture = "gallo_roman"
+	father = ferreolus_01
+	mother = syagri_02
+	410.1.1 = {
+		birth = yes
+	}
+	441.1.1 = {
+		add_spouse = avitian_08
+	}
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	473.1.1 = {
+		death = yes
+	}
+}
+ferreolus_03 = {
+	name = "Tonantius"
+	dynasty = ferreolus_dynasty
+	religion = "nicene"
+	culture = "gallo_roman"
+	father = ferreolus_02
+	mother = avitian_08
+	447.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	476.1.1 = {
+		add_spouse = anicia_46 # Industria
+	}
+	517.1.1 = {
+		death = yes
+	}
+}
+ferreolus_04 = {
+	name = "Ferreolus"
+	dynasty = ferreolus_dynasty
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	father = ferreolus_03
+	mother = anicia_46 # Industria
+	484.1.1 = {
+		birth = yes
+	}
+	509.1.1 = {
+		add_spouse = 997133 # Doda
+	}
+	540.1.1 = {
+		death = yes
+	}
+}
+ferreolus_05 = {
+	name = "Firminus"
+	dynasty = ferreolus_dynasty
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	father = ferreolus_03
+	mother = anicia_46 # Industria
+	486.1.1 = {
+		birth = yes
+	}
+	553.1.1 = {
+		death = yes
+	}
+}
+
+
+
+
+##################################################################################
+# 
+# MISCELLANEOUS (Mostly fictional placeholders)
+# By Cybrxkhan
+# 
+##################################################################################
+
+
+gallo_roman_misc_001 = {
+	name = "Palladius"
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	505.3.21 = {
+		birth = yes
+	}
+	584.6.2 = {
+		death = yes
+	}
+}
+
+gallo_roman_misc_002 = {
+	name = "Triphyllius"
+	religion = "manichean"
+	culture = "gallo_roman"
+	498.7.12 = {
+		birth = yes
+	}
+	572.4.13 = {
+		death = yes
+	}
+}
+
+gallo_roman_misc_003 = {
+	name = "Ulpius"
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	488.11.13 = {
+		birth = yes
+	}
+	541.3.19 = {
+		death = yes
+	}
+}
+
+gallo_roman_misc_004 = {
+	name = "Callinicus"
+	religion = "valentinianism"
+	culture = "gallo_roman"
+	507.9.4 = {
+		birth = yes
+	}
+	562.7.19 = {
+		death = yes
+	}
+}
+
+gallo_roman_misc_005 = {
+	name = "Flavianus"
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	489.2.14 = {
+		birth = yes
+	}
+	562.7.16 = {
+		death = yes
+	}
+}
+
+gallo_roman_misc_006 = {
+	name = "Germanus"
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	501.3.16 = {
+		birth = yes
+	}
+	548.5.23 = {
+		death = yes
+	}
+}
+
+gallo_roman_misc_007 = {
+	name = "Taurus"
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	498.7.20 = {
+		birth = yes
+	}
+	578.12.19 = {
+		death = yes
+	}
+}
+
+gallo_roman_misc_008 = {
+	name = "Hannibalianus"
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	513.8.28 = {
+		birth = yes
+	}
+	570.3.22 = {
+		death = yes
+	}
+}
+
+gallo_roman_misc_009 = {
+	name = "Aedesius"
+	religion = "chalcedonian"
+	culture = "gallo_roman"
+	511.4.12 = {
+		birth = yes
+	}
+	576.1.15 = {
+		death = yes
+	}
+}
+
+# Claudius Marius Victorius/Victorinus, a little known 5th century rhetor/teacher and poet from Marseille
+# Composed a poem on Genesis and a letter to the abbot Salmon complaining about the moral degradation of the era
+gallo_roman_misc_010 = {
+	name = "Victorinus"
+	dynasty = TFE_dynasty_claudius_marius_victorius
+	religion = "nicene"
+	culture = "gallo_roman"
+	trait = education_learning_2 	# Said to not be well-trained in scripture, according to contemporary scholar Gennadius of Massilia
+	trait = zealous  		# Railed against moral degradation
+	trait = chaste 			# Blames sexuality/moral degradation for causing contemporary ruin of Rome
+	trait = arrogant 		# Based on Gennadius' description of him, for funsies
+	trait = poet
+	375.1.9 = { # Unknown
+		birth = yes
+		effect = { add_character_flag = do_not_generate_starting_family }
+	}
+	449.2.17 = { # Unknown
+		death = yes
+	}
+}
+
+# Etherius, son of Claudius Marius Victorius
+gallo_roman_misc_011 = {
+	name = "Etherius"
+	dynasty = TFE_dynasty_claudius_marius_victorius
+	religion = "nicene"
+	culture = "gallo_roman"
+	father=gallo_roman_misc_010
+	409.2.11 = { # Unknown
+		birth = yes
+	}
+	462.12.13 = { # Unknown
+		death = yes
+	}
+}
+
+
+

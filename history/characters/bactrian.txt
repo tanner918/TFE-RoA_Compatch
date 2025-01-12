@@ -1,0 +1,264 @@
+﻿############################################################
+# 
+# MISC BACTRIAN RULERS
+# 
+# By Cybrxkhan
+# 
+############################################################
+
+# Fictitious local rulers of Chaghanian under the Hephthalites
+bactrian_misc_001 = {
+	name="Bazodeo"
+	dynasty=dynasty_chehanna
+	religion="mahayana"
+	culture="bactrian"
+	342.2.2={
+		birth=yes
+	}
+	360.1.1 = {
+		add_spouse = bactrian_misc_006
+	}
+	389.7.9={
+		death=yes
+	}
+}
+
+bactrian_misc_002 = {
+	name="Orshvadata"
+	dynasty=dynasty_chehanna
+	religion="mahayana"
+	culture="bactrian"
+	father=bactrian_misc_001
+	mother=bactrian_misc_006
+	371.8.12={
+		birth=yes
+	}
+	395.1.1 = {
+		add_spouse = bactrian_misc_014
+	}
+	457.9.17={
+		death=yes
+	}
+}
+
+bactrian_misc_003 = {
+	name="Kanarang"
+	dynasty=dynasty_chehanna
+	religion="mahayana"
+	culture="bactrian"
+	father=bactrian_misc_002
+	mother=bactrian_misc_014
+	410.3.14={
+		birth=yes
+	}
+	472.10.1={
+		death=yes
+	}
+}
+
+bactrian_misc_004 = {
+	name="Khono"
+	dynasty=dynasty_chehanna
+	religion="mahayana"
+	culture="bactrian"
+	father=bactrian_misc_003
+	439.3.29={
+		birth=yes
+	}
+	498.12.11={
+		death=yes
+	}
+}
+
+# Fictitious rulers of Kobadian/Kobadiyan in Wakhsh
+# Sent an envoy to China in c. 516-520 along with Hephthalites
+bactrian_misc_005 = {
+	name="Dathshmareg"
+	dynasty=dynasty_hebatan
+	religion="zun_pagan"
+	culture="bactrian"
+	319.5.14={
+		birth=yes
+	}
+	340.1.1 = {
+		add_spouse = bactrian_misc_007
+	}
+	392.7.10={
+		death=yes
+	}
+}
+
+bactrian_misc_006 = {
+	name="Firyid"
+	female=yes
+	dynasty=dynasty_hebatan
+	religion="zun_pagan"
+	culture="bactrian"
+	father=bactrian_misc_005
+	mother=bactrian_misc_007
+	341.1.12={
+		birth=yes
+	}
+	407.8.7={
+		death=yes
+	}
+}
+
+bactrian_misc_007 = {
+	name="Fordams"
+	female=yes
+	religion="zun_pagan"
+	culture="bactrian"
+	320.1.11={
+		birth=yes
+	}
+	380.5.2={
+		death=yes
+	}
+}
+
+bactrian_misc_008 = {
+	name="Shodila"
+	dynasty=dynasty_hebatan
+	religion="zun_pagan"
+	culture="bactrian"
+	father=bactrian_misc_005
+	mother=bactrian_misc_007
+	352.12.18={
+		birth=yes
+	}
+	378.1.1 = {
+		add_spouse = bactrian_misc_009
+	}
+	419.2.17={
+		death=yes
+	}
+}
+
+bactrian_misc_009 = {
+	name="Zhindag"
+	female=yes
+	religion="zun_pagan"
+	culture="bactrian"
+	361.11.7={
+		birth=yes
+	}
+	436.6.14={
+		death=yes
+	}
+}
+
+bactrian_misc_010 = {
+	name="Gunavarman"
+	dynasty=dynasty_hebatan
+	religion="zun_pagan"
+	culture="bactrian"
+	father=bactrian_misc_008
+	mother=bactrian_misc_009
+	386.4.2={
+		birth=yes
+	}
+	467.1.9={
+		death=yes
+	}
+}
+
+bactrian_misc_011 = {
+	name="Zmik"
+	dynasty=dynasty_hebatan
+	religion="zun_pagan"
+	culture="bactrian"
+	father=bactrian_misc_010
+	410.3.12={
+		birth=yes
+	}
+	475.9.1={
+		death=yes
+	}
+}
+
+bactrian_misc_012 = {
+	name="Ukhshebovak"
+	dynasty=dynasty_hebatan
+	religion="mahayana"
+	culture="bactrian"
+	father=bactrian_misc_011
+	455.9.16={
+		birth=yes
+	}
+	513.7.24={
+		death=yes
+	}
+}
+
+bactrian_misc_013 = {
+	name="Awishka"
+	dynasty=dynasty_hebatan
+	religion="mahayana"
+	culture="bactrian"
+	father=bactrian_misc_012
+	491.3.27={
+		birth=yes
+	}
+	546.9.10={
+		death=yes
+	}
+}
+
+bactrian_misc_014 = {
+	name="Mapresey"
+	female=yes
+	dynasty=dynasty_hebatan
+	religion="mahayana"
+	culture="bactrian"
+	father=bactrian_misc_008
+	mother=bactrian_misc_009
+	379.1.2={
+		birth=yes
+	}
+	424.9.13={
+		death=yes
+	}
+}
+
+# Fictitious local chieftain in Ghur
+# Darmashan
+bactrian_misc_015 = {
+	name="Loikhobosar"
+	religion="zun_pagan"
+	culture="bactrian"
+	496.12.19={
+		birth=yes
+	}
+	577.8.9={
+		death=yes
+	}
+}
+
+# Fictitious local chieftain in Ghur
+# Ghur
+bactrian_misc_016 = {
+	name="Kozgashka"
+	religion="mahayana"
+	culture="bactrian"
+	506.7.2={
+		birth=yes
+	}
+	568.3.1={
+		death=yes
+	}
+}
+
+# Fictitious local chieftain in Ghur
+# Upper Ghur
+bactrian_misc_017 = {
+	name="Shafar"
+	religion="mahasanghika"
+	culture="bactrian"
+	510.4.6={
+		birth=yes
+	}
+	559.12.17={
+		death=yes
+	}
+}

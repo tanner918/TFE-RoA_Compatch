@@ -1,0 +1,310 @@
+﻿#Fictionals
+
+1100008 = { #Fictional
+	name = "Igor"
+	religion = "slavic_pagan"
+	culture = "antean"
+	365.1.1 = {
+		birth = yes
+	}
+	430.1.1 = {
+		death = yes
+	}
+}
+1100009 = { #Fictional
+	name = "Mojmir"
+	religion = "slavic_pagan"
+	culture = "antean"
+	359.1.1 = {
+		birth = yes
+	}
+	430.1.1 = {
+		death = yes
+	}
+}
+1100010 = { #Fictional
+	name = "Pribislav"
+	religion = "slavic_pagan"
+	culture = "antean"
+	361.1.1 = {
+		birth = yes
+	}
+	430.1.1 = {
+		death = yes
+	}
+}
+1100011 = { #Fictional
+	name = "Vysheslav"
+	religion = "slavic_pagan"
+	culture = "antean"
+	356.1.1 = {
+		birth = yes
+	}
+	430.1.1 = {
+		death = yes
+	}
+}
+moldavia_03 = {
+	name = "Igor"
+	religion = "slavic_pagan"
+	culture = "antean"
+	450.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+moldavia_05 = {
+	name = "Prohor"
+	religion = "slavic_pagan"
+	culture = "antean"
+	father = moldavia_03
+	484.1.1 = {
+		birth = yes
+	}
+	540.1.1 = {
+		death = yes
+	}
+}
+moldavia_06 = {
+	name = "Idariz"
+	religion = "slavic_pagan"
+	culture = "antean"
+	484.1.1 = {
+		birth = yes
+	}
+	545.1.1 = {
+		death = yes
+	}
+}
+moldavia_07 = {
+	name = "Mezamir"
+	religion = "slavic_pagan"
+	culture = "antean"
+	father = moldavia_06
+	505.1.1 = {
+		birth = yes
+	}
+	565.1.1 = {
+		death = yes
+	}
+}
+moldavia_08 = {
+	name = "Kelagast"
+	religion = "slavic_pagan"
+	culture = "antean"
+	father = moldavia_06
+	510.1.1 = {
+		birth = yes
+	}
+	565.1.1 = {
+		death = yes
+	}
+}
+moldavia_09 = {
+	name = "Trpimir"
+	religion = "slavic_pagan"
+	culture = "antean"
+	500.1.1 = {
+		birth = yes
+	}
+	555.1.1 = {
+		death = yes
+	}
+}
+
+# Kyi and siblings
+anteans_11 = { # Fictional father, needed for siblings
+	name = Kasimir
+	religion = slavic_pagan
+	culture = antean
+	dynasty = kyi
+	422.1.1 = {
+		birth = yes
+	}
+	470.1.1 = {
+		death = yes
+	}
+}
+anteans_12 = {
+	name = Lybid
+	dna = anteans_12_lybid
+	female = yes
+	religion = slavic_pagan
+	culture = antean
+	father = anteans_11
+	dynasty = kyi
+	444.1.1 = {
+		birth = yes
+	}
+	493.1.1 = {
+		death = yes
+	}
+}
+anteans_13 = {
+	name = Kyi
+	dna = anteans_13_kyi
+	religion = slavic_pagan
+	culture = antean
+	father = anteans_11
+	dynasty = kyi
+
+	trait = gregarious
+	trait = calm
+	trait = arbitrary
+	trait = education_learning_1
+	diplomacy = 9
+	martial = 8
+	stewardship = 10
+	intrigue = 8
+	learning = 8
+	disallow_random_traits = yes
+
+	449.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+anteans_14 = {
+	name = Shchek
+	religion = slavic_pagan
+	culture = antean
+	father = anteans_11
+	dynasty = kyi
+	452.1.1 = {
+		birth = yes
+	}
+	491.1.1 = {
+		death = yes
+	}
+}
+anteans_15 = {
+	name = Khoryv
+	religion = slavic_pagan
+	culture = antean
+	father = anteans_11
+	dynasty = kyi
+	454.1.1 = {
+		birth = yes
+	}
+	510.1.1 = {
+		death = yes
+	}
+}
+anteans_16 = {
+	name = Valuk
+	dynasty = kyi
+	culture = antean
+	religion = slavic_pagan
+	father = anteans_13
+	477.1.1 = {
+		birth = yes
+	}
+	533.1.1 = {
+		death = yes
+	}
+}
+anteans_17 = {
+	name = Zvonimir
+	culture = antean
+	religion = slavic_pagan
+	501.1.1 = {
+		birth = yes
+	}
+	555.1.1 = {
+		death = yes
+	}
+}
+anteans_18 = {
+	name = Vladimir
+	culture = antean
+	religion = slavic_pagan
+	503.1.1 = {
+		birth = yes
+	}
+	555.1.1 = {
+		death = yes
+	}
+}
+anteans_19 = {
+	name = Nebigast
+	culture = antean
+	religion = slavic_pagan
+	497.1.1 = {
+		birth = yes
+	}
+	555.1.1 = {
+		death = yes
+	}
+}
+dslavs_01 = {
+	name = "Dobrogast"
+	religion = "slavic_pagan"
+	culture = "antean"
+	trait = adventurer
+	510.1.1 = {
+		birth = yes
+	}
+	560.1.1 = {
+		death = yes
+	}
+}
+dslavs_02 = {
+	name = "Chilbud"
+	religion = "slavic_pagan"
+	culture = "antean"
+	trait = adventurer
+	500.1.1 = {
+		birth = yes
+	}
+	534.1.1 = {
+		death = yes
+	}
+}
+dslavs_03 = {
+	name = "Vsegord"
+	religion = "slavic_pagan"
+	culture = "antean"
+	trait = adventurer
+	510.1.1 = {
+		birth = yes
+	}
+	560.1.1 = {
+		death = yes
+	}
+}
+
+
+##################################################################################
+# 
+# FICTITIOUS PLACEHOLDERS
+# By Cybrxkhan
+# 
+##################################################################################
+
+antean_misc_001 = {
+	name = "Trifon"
+	religion = "slavic_pagan"
+	culture = "antean"
+	499.2.26 = {
+		birth = yes
+	}
+	547.8.16 = {
+		death = yes
+	}
+}
+
+antean_misc_002 = {
+	name = "Rodislav"
+	religion = "slavic_pagan"
+	culture = "antean"
+	514.4.29 = {
+		birth = yes
+	}
+	572.8.19 = {
+		death = yes
+	}
+}

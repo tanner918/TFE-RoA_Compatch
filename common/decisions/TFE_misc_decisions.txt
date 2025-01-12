@@ -1,0 +1,2477 @@
+﻿change_to_city_state = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_roman_city.dds"
+	}
+
+	desc = change_to_city_state_desc
+	selection_tooltip = change_to_city_state_tooltip
+	
+	ai_check_interval = 500
+
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		any_held_title = {
+			count <= 5
+			tier = tier_county
+		}
+		realm_size <= 30
+		NOT = {
+			government_has_flag = government_is_city_state
+		}
+		NOT = {
+			government_has_flag = government_is_tribal
+		}
+	}
+
+	is_valid = {
+		is_independent_ruler = yes
+		prestige_level >= 3
+		any_held_title = {
+			count <= 2
+			tier = tier_county
+		}
+	}
+
+	effect = {
+		every_realm_province = { limit = { has_holding_type = estate_holding } set_holding_type = castle_holding }
+		if = {
+			limit = {
+				OR = {
+					capital_province = {
+						geographical_region = TFE_oasis_city_state_region
+					}
+					any_held_county = {
+						title_province = {
+							terrain = oasis
+						}
+					}
+				}
+			}
+			change_government = trade_city_state_government
+		}
+		else = { change_government = city_state_government }
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 30
+	}
+	cost = { gold = { value = 150 } prestige = { value = 200 } }
+}
+
+change_to_gupta = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_indian_throne_room.dds"
+	}
+
+	desc = change_to_gupta_desc
+	selection_tooltip = change_to_gupta_tooltip
+	ai_goal = yes
+
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		NOT = {
+			government_has_flag = government_is_gupta
+		}
+		NOT = {
+			government_has_flag = government_is_gana_sangha
+		}
+		NOT = {
+			government_has_flag = government_is_tribal
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_indo_aryan }
+			culture = { has_cultural_pillar = heritage_dravidian }
+		}
+	}
+
+	is_valid = {
+		trigger_if = {
+			limit = {
+				is_ai = no
+			}
+			prestige_level >= 2
+		}
+	}
+
+	effect = {
+		change_government = gupta_government
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 100
+			NOT = {
+				government_has_flag = government_is_gupta
+			}
+		}
+	}
+	cost = { gold = { value = 50 if = { limit = { is_ai = yes } multiply = 0 } } prestige = { value = 200 if = { limit = { is_ai = yes } multiply = 0 } } }
+}
+
+TFE_change_to_feudal_or_clan = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	}
+
+	desc = TFE_change_to_feudal_or_clan_desc
+	selection_tooltip = TFE_change_to_feudal_or_clan_tooltip
+	ai_goal = yes
+
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		NOT = {
+			OR = {
+				has_government = feudal_government
+				has_government = clan_government
+				has_government = tribal_government
+				has_government = gana_sangha_government
+				has_government = nomadic_government
+				government_has_flag = government_is_tribal
+			}
+		}
+		OR = {
+			AND = {
+				has_government = gupta_government
+				NOT = {
+					OR = {
+						culture = { has_cultural_pillar = heritage_indo_aryan }
+						culture = { has_cultural_pillar = heritage_dravidian }
+						culture = { has_cultural_tradition = tradition_caste_system }
+					}
+				}
+			}
+			AND = {
+				has_government = eranshar_government
+				NOT = {
+					culture = { has_cultural_pillar = heritage_iranian }
+				}
+				OR = {
+					is_independent_ruler = yes
+					AND = {
+						is_independent_ruler = no
+						NOT = {
+							top_liege = {
+								has_title = title:e_persia
+							}
+						}
+					}
+				}
+			}
+			AND = {
+				OR = {
+					has_government = caliphate_government
+					has_government = muslim_government
+				}
+				NOT = { religion = religion:islam_religion }
+			}
+			AND = {
+				OR = {
+					has_government = city_state_government
+					has_government = trade_city_state_government
+				}
+				realm_size >= 51
+			}
+		}
+	}
+
+	is_valid = {
+		always = yes
+	}
+
+	effect = {
+		if = {
+			limit = { capital_province = { has_holding_type = tribal_holding } }
+			change_government = tribal_government
+		}
+		else_if = {
+			limit = { religion = religion:islam_religion }
+			change_government = muslim_government
+		}
+		else = {
+			trigger_event = TFE_minor_decisions.0013
+		}
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+change_to_tribal_or_nomadic = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	}
+
+	desc = change_to_tribal_or_nomadic_desc
+	selection_tooltip = change_to_tribal_or_nomadic_tooltip
+	ai_goal = yes
+
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		OR = {
+			AND = {
+				has_government = tribal_government
+				culture = { has_cultural_tradition = tradition_nomadic_migrations }
+				NOT = { culture = { has_cultural_tradition = tradition_migrations } }
+			}
+			AND = {
+				has_government = nomadic_government
+				culture = { has_cultural_tradition = tradition_migrations }
+				NOT = { culture = { has_cultural_tradition = tradition_nomadic_migrations } }
+			}
+		}
+	}
+
+	is_valid = {
+		trigger_if = {
+			limit = {
+				is_ai = no
+			}
+			prestige_level >= 2
+		}
+	}
+
+	effect = {
+		if = {
+			limit = { has_government = tribal_government }
+			change_government = nomadic_government
+		}
+		else_if = {
+			limit = { has_government = nomadic_government }
+			change_government = tribal_government
+		}
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+central_claim = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_roman_proclamation.dds"
+	}
+	decision_group_type = roman
+
+	desc = central_claim_desc
+	selection_tooltip = central_claim_tooltip
+	ai_goal = yes
+
+	is_shown = {
+		is_landed = yes
+		OR = {
+			any_liege_or_above = {
+				has_title = title:e_byzantium
+			}
+			any_liege_or_above = {
+				has_title = title:e_western_roman_empire
+			}
+			any_liege_or_above = {
+				has_title = title:e_roman_empire
+			}
+			AND = {
+				is_independent_ruler = no
+				top_liege = {
+					highest_held_title_tier = tier_empire
+					OR = {
+					government_has_flag = government_is_imperial
+					government_has_flag = government_is_administrative
+					}
+				}
+			}
+		}
+		OR = {
+			government_has_flag = government_is_administrative
+			government_has_flag = government_is_imperial
+		}
+		NOT = {
+			has_claim_on = root.liege.primary_title
+		}
+	}
+
+	is_valid = {
+		has_realm_law = centeral_law_policy_4
+		prestige_level >= 3
+	}
+
+	effect = {
+		add_pressed_claim = root.liege.primary_title
+		liege = {
+			add_opinion = {
+				target = root
+				opinion = -100
+				years = 10
+				modifier = hate_opinion
+			}
+		}
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+	cost = { gold = { value = 300 } prestige = { value = 200 } }
+}
+
+change_to_imperial = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_roman_proclamation.dds"
+	}
+	decision_group_type = major
+
+	desc = change_to_imperial_desc
+	selection_tooltip = change_to_imperial_tooltip
+	ai_goal = yes
+
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		NOT = {
+			#We have another decision for the empires
+			OR = {
+				has_title = title:e_byzantium
+				has_title = title:e_western_roman_empire
+				has_title = title:e_roman_empire
+			}
+			OR = {
+			government_has_flag = government_is_imperial
+			government_has_flag = government_is_administrative
+			}
+		}
+		OR = {
+			OR = {
+				any_liege_or_above = {
+					has_title = title:e_byzantium
+				}
+				any_liege_or_above = {
+					has_title = title:e_western_roman_empire
+				}
+				any_liege_or_above = {
+					has_title = title:e_roman_empire
+				}
+			}
+			AND = {
+				is_independent_ruler = no
+				top_liege = {
+					highest_held_title_tier = tier_empire
+					OR = {
+					government_has_flag = government_is_administrative
+					government_has_flag = government_is_imperial
+					}
+				}
+			}
+		}
+		NOT = {
+			government_has_flag = government_is_legion
+		}
+		NOT = {
+			government_has_flag = government_is_roman
+		}
+		NOT = {
+			government_has_flag = government_is_administrative
+		}
+		NOT = {
+			government_has_flag = government_is_imperial
+		}
+		NOT = {
+			government_has_flag = government_is_tribal
+		}
+	}
+
+	is_valid = {
+		prestige_level >= 3
+	}
+
+	effect = {
+		if = {
+			limit = {
+			has_dlc_feature = roads_to_power
+		}
+			change_government = administrative_government
+		}
+		else = {
+			change_government = imperial_government
+		}
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+	cost = { gold = { value = 50 } prestige = { value = 200 } }
+}
+
+change_to_autocratic = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_roman_officers.dds"
+	}
+	decision_group_type = major
+
+	desc = change_to_autocratic_desc
+	selection_tooltip = change_to_autocratic_tooltip
+	ai_goal = yes
+
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		NOT = {
+			OR = {
+				has_title = title:e_byzantium
+				has_title = title:e_western_roman_empire
+				has_title = title:e_roman_empire
+			}
+		}
+		OR = {
+			AND = {
+				is_independent_ruler = yes
+				OR = {
+				government_has_flag = government_is_imperial
+				government_has_flag = government_is_administrative
+				}
+				NOT = {
+					highest_held_title_tier = tier_empire
+				}
+			}
+			AND = {
+				is_independent_ruler = no
+				liege = {
+					OR = {
+					government_has_flag = government_is_autocratic
+					government_has_flag = government_is_autocratic_ep3
+					}
+				}
+			}
+		}
+		NOT = {
+			government_has_flag = government_is_autocratic
+		}
+		NOT = {
+			government_has_flag = government_is_autocratic_ep3
+		}
+		NOT = {
+			government_has_flag = government_is_legion
+		}
+		NOT = {
+			government_has_flag = government_is_roman
+		}
+		NOT = {
+			government_has_flag = government_is_tribal
+		}
+		trigger_if = {
+			limit = {
+				NOT  = {
+					liege = {
+						OR = {
+						government_has_flag = government_is_autocratic
+						government_has_flag = government_is_autocratic_ep3
+					}
+				}
+			}
+			is_independent_ruler = yes
+		}
+	}
+
+	is_valid = {
+		prestige_level >= 1
+		trigger_if = {
+			limit = {
+				NOT  = {
+					liege = {
+						OR = {
+						government_has_flag = government_is_autocratic
+						government_has_flag = government_is_autocratic_ep3
+						}
+					}
+				}
+			}
+			is_independent_ruler = yes
+		}
+	}
+}
+
+	effect = {
+		if = {
+			limit = {
+			has_dlc_feature = roads_to_power
+		}
+			change_government = autocratic_government_ep3
+		}
+		else = {
+			change_government = autocratic_government
+		}
+		every_vassal_or_below = {
+			limit = {
+				OR = {
+				government_has_flag = government_is_imperial
+				government_has_flag = government_is_administrative
+				}
+			}
+		if = {
+			limit = {
+				has_dlc_feature = roads_to_power
+			}
+			change_government = autocratic_government_ep3
+			}
+		else = {
+			change_government = autocratic_government
+		}
+		}
+		set_variable = {
+			name = mil_comp
+			value = 1500
+		}
+		set_variable = {
+			name = civic_comp
+			value = 1500
+		}
+		set_variable = {
+			name = diplo_comp
+			value = 1500
+		}
+		if = {
+			limit = {
+				has_character_modifier = broken_bureaucratic_chain
+			}
+			remove_character_modifier = broken_bureaucratic_chain
+		}
+		if = {
+			limit = {
+				AND = {
+					exists = primary_heir
+					primary_heir = {
+						has_character_modifier = broken_bureaucratic_chain
+					}
+				}
+			}
+			primary_heir = {
+				remove_character_modifier = broken_bureaucratic_chain
+			}
+		}
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+#Establish Supremacy over the Red Sea - Hróðvitnir
+establish_red_sea = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_red_sea_empire.dds"
+	}
+	decision_group_type = major
+	
+	desc = establish_red_sea_desc
+	selection_tooltip = establish_red_sea_tooltip
+	ai_check_interval = 24
+
+	is_shown = {
+		#Standard filter checks.
+		is_landed = yes
+		exists = dynasty
+		#Must be within the Red Sea culture sphere.
+		OR = {
+			culture = { has_cultural_pillar = heritage_east_african }
+			culture = { has_cultural_pillar = heritage_somalian }
+			culture = { has_cultural_pillar = heritage_south_semitic }
+		}
+		#Must be in the vague region.
+		any_held_title = {
+			tier = tier_county
+			title_province = {
+				OR = {
+					geographical_region = custom_red_sea
+				}
+			}
+		}
+		#Can't already be an empire.
+		highest_held_title_tier <= tier_kingdom
+		#Not repeatable.
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_established_red_sea
+			}
+		}
+		#Eliminate edge-cases where we've lost all territory in one of the component kingdoms.
+		title:k_abyssinia = { is_titular = no }
+		title:k_adal = { is_titular = no }
+		title:k_blemmyia = { is_titular = no }
+		title:k_yemen = { is_titular = no }
+	}
+
+	is_valid = {
+		is_independent_ruler = yes
+		prestige_level >= high_prestige_level
+		completely_controls_region = custom_red_sea_entrance
+		has_title = title:k_abyssinia
+		has_title = title:k_adal
+		has_title = title:k_blemmyia
+		has_title = title:k_yemen
+		highest_held_title_tier < tier_empire
+	}
+
+	is_valid_showing_failures_only = {
+		is_independent_ruler = yes
+		is_available_adult = yes
+		is_at_war = no
+	}
+	
+	effect = {
+		save_scope_as = founder
+		show_as_tooltip = { establish_red_sea_effect = yes }
+		trigger_event = { id = formation_events.0001 }
+		#Notify other players.
+		every_player = {
+			limit = {
+				NOT = { this = scope:founder }
+			}
+			#Vassal players get a separate event.
+			if = {
+				limit = {
+					any_liege_or_above = { this = scope:founder }
+				}
+				trigger_event = formation_events.0002
+			}
+			#Everyone else within range gets a less personal version.
+			else = { trigger_event = formation_events.0003 }
+		}
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_established_red_sea
+			}
+		}
+	}
+	
+	cost = {
+		gold = 1000
+		prestige = 1500
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+change_to_islamic = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	}
+	decision_group_type = major
+
+	desc = change_to_islamic_desc
+	selection_tooltip = change_to_islamic_tooltip
+	ai_goal = yes
+
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		has_religion = religion:islam_religion
+		NOT = {
+			government_has_flag = government_is_muslim
+		}
+		NOT = {
+			government_has_flag = government_is_caliphate
+		}
+	}
+
+	is_valid = {
+		piety_level >= 2
+		OR = {
+			has_government = feudal_government
+			has_government = clan_government
+			government_has_flag = government_is_city_state
+		}
+	}
+
+	effect = {
+		change_government = muslim_government
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+	cost = { gold = { value = 50 } prestige = { value = 200 } }
+}
+
+change_to_caliphate = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	}
+	decision_group_type = major
+
+	desc = change_to_caliphate_desc
+	selection_tooltip = change_to_caliphate_tooltip
+	ai_goal = yes
+
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		has_religion = religion:islam_religion
+		government_has_flag = government_is_muslim
+		NOT = {
+			government_has_flag = government_is_caliphate
+		}
+		any_liege_or_above = {
+			NOT = {
+				has_title = title:e_rashidun
+			}
+		}
+	}
+
+	is_valid = {
+		piety_level >= 2
+	}
+
+	effect = {
+		change_government = caliphate_government
+		if = {
+			limit = {
+				faith = {
+					exists = religious_head
+				}
+			}
+			faith = {
+				religious_head = {
+					add_opinion = {
+						target = root
+						opinion = -150
+						years = 30
+						modifier = hate_opinion
+					}
+				}
+			}
+		}
+		save_scope_as = caliph
+		set_variable = {
+			name = cal_authority
+			value = 10
+		}
+		set_variable = {
+			name = zakah_balance
+			value = 0
+		}
+
+		every_realm_province = {
+			limit = {
+				barony = { is_holy_site_of = scope:caliph.faith }
+			}
+
+			scope:caliph = {
+				change_variable = {
+					name = cal_authority
+					add = 2
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				NOT = { any_realm_province = { barony = { is_holy_site_of = scope:caliph.faith } } } 
+			}
+			change_variable = {
+				name = cal_authority
+				subtract = 2
+			}
+		}
+
+		if = {
+			limit = {
+				piety_level = max_piety_level
+			}
+			change_variable = {
+				name = cal_authority
+				add = 5
+			}
+		}
+		if = {
+			limit = {
+				piety_level = very_high_piety_level
+			}
+			change_variable = {
+				name = cal_authority
+				add = 2
+			}
+		}
+		if = {
+			limit = {
+				piety_level = high_piety_level
+			}
+			change_variable = {
+				name = cal_authority
+				add = 1
+			}
+		}
+		if = {
+			limit = {
+				piety_level = low_piety_level
+			}
+			change_variable = {
+				name = cal_authority
+				subtract = 2
+			}
+		}
+		
+		clamp_variable = {
+			name = cal_authority
+			max = 100
+			min = 0
+		}
+		hidden_effect = {
+			while = {
+				count = var:cal_authority
+				add_character_modifier = caliph_auth
+			}
+		}
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 10
+	}
+	cost = { gold = { value = 500 } prestige = { value = 500 } piety = { value = 700 } }
+}
+
+restore_military_comp = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_roman_officers.dds"
+	}
+	decision_group_type = major
+
+	desc = restore_military_comp_desc
+	selection_tooltip = restore_military_comp_tooltip
+	ai_goal = yes
+
+	is_shown = {
+		has_imperial_laws = yes
+		is_landed = yes
+		OR = {
+			government_has_flag = government_is_imperial 
+			government_has_flag = government_is_autocratic
+			government_has_flag = government_is_autocratic_ep3
+			government_has_flag = government_is_imperial_cult
+			government_has_flag = government_is_administrative
+		}
+		is_independent_ruler = yes
+		OR = {
+			has_character_modifier = mil_collapse
+			trigger_if = {
+				limit = {
+					exists = var:mil_comp
+				}
+				var:mil_comp = 0
+			}
+		}
+		#trigger_else = {
+		#	always = no
+		#}
+	}
+
+	is_valid = {
+		custom_description = {
+			text = mil_restore_effect
+			subject = root
+			mil_competence_net >= 200
+		}
+		prestige_level >= 3
+	}
+
+	effect = {
+		if = {
+			limit = {
+				exists = var:mil_comp
+			}
+			change_variable = {
+				name = mil_comp
+				add = 1500
+			}
+		}
+		remove_character_modifier = mil_collapse
+		every_courtier = {
+			if = {
+				limit = {
+					has_character_modifier = mil_collapse
+				}
+				remove_character_modifier = mil_collapse
+			}
+		}
+		every_vassal_or_below = {
+			if = {
+				limit = {
+					has_character_modifier = mil_collapse
+				}
+				remove_character_modifier = mil_collapse
+			}
+			every_courtier = {
+				if = {
+					limit = {
+						has_character_modifier = mil_collapse
+					}
+					remove_character_modifier = mil_collapse
+				}
+			}
+		}
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+	cost = { gold = { value = 500 } prestige = { value = 1000 } }
+}
+
+restore_civic_comp = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_roman_officers.dds"
+	}
+	decision_group_type = major
+
+	desc = restore_civic_comp_desc
+	selection_tooltip = restore_civic_comp_tooltip
+	ai_goal = yes
+
+	is_shown = {
+		has_imperial_laws = yes
+		is_landed = yes
+		OR = {
+			government_has_flag = government_is_imperial 
+			government_has_flag = government_is_autocratic
+			government_has_flag = government_is_autocratic_ep3
+			government_has_flag = government_is_imperial_cult
+			government_has_flag = government_is_administrative
+		}
+		is_independent_ruler = yes
+		OR = {
+			has_character_modifier = civic_collapse
+			trigger_if = {
+				limit = {
+					exists = var:civic_comp
+				}
+				var:civic_comp = 0
+			}
+		}
+		#trigger_else = {
+		#	always = no
+		#}
+	}
+
+	is_valid = {
+		custom_description = {
+			text = civic_restore_effect
+			subject = root
+			civic_competence_net >= 200
+		}
+		prestige_level >= 2
+	}
+
+	effect = {
+		if = {
+			limit = {
+				exists = var:civic_comp
+			}
+			change_variable = {
+				name = civic_comp
+				add = 1500
+			}
+		}
+		remove_character_modifier = civic_collapse
+		every_courtier = {
+			if = {
+				limit = {
+					has_character_modifier = civic_collapse
+				}
+				remove_character_modifier = civic_collapse
+			}
+		}
+		every_vassal_or_below = {
+			if = {
+				limit = {
+					has_character_modifier = civic_collapse
+				}
+				remove_character_modifier = civic_collapse
+			}
+			every_courtier = {
+				if = {
+					limit = {
+						has_character_modifier = civic_collapse
+					}
+					remove_character_modifier = civic_collapse
+				}
+			}
+		}
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+	cost = { gold = { value = 500 } prestige = { value = 1000 } }
+}
+
+restore_diplo_comp = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_roman_officers.dds"
+	}
+	decision_group_type = major
+
+	desc = restore_diplo_comp_desc
+	selection_tooltip = restore_diplo_comp_tooltip
+	ai_goal = yes
+
+	is_shown = {
+		has_imperial_laws = yes
+		is_landed = yes
+		OR = {
+			government_has_flag = government_is_imperial 
+			government_has_flag = government_is_autocratic
+			government_has_flag = government_is_autocratic_ep3
+			government_has_flag = government_is_imperial_cult
+			government_has_flag = government_is_administrative
+		}
+		is_independent_ruler = yes
+		trigger_if = {
+			limit = {
+				exists = var:diplo_comp
+			}
+			var:diplo_comp = 0
+		}
+		trigger_else = {
+			always = no
+		}
+	}
+
+	is_valid = {
+		custom_description = {
+			text = diplo_restore_effect
+			subject = root
+			diplo_competence_net >= 100
+		}
+		prestige_level >= 3
+	}
+
+	effect = {
+		if = {
+			limit = {
+				exists = var:diplo_comp
+			}
+			change_variable = {
+				name = diplo_comp
+				add = 1500
+			}
+		}
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+	cost = { gold = { value = 500 } prestige = { value = 1000 } }
+}
+
+titular_tribe_settle = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	}
+	decision_group_type = major
+
+	desc = titular_tribe_settle_desc
+	selection_tooltip = titular_tribe_settle_tooltip
+	ai_goal = yes
+
+	is_shown = {
+		#Standard filter checks.
+		is_landed = yes
+		exists = dynasty
+		#Must be titular.
+		any_held_title = {
+			tier > tier_duchy
+			is_titular = yes
+		}
+		any_held_title = {
+			tier = tier_duchy
+			is_titular = no
+		}
+		NOT = {
+			any_held_title = {
+				tier > tier_duchy
+				is_titular = no
+			}
+		}
+		#Can't have settled before.
+		NOT = {
+			has_character_flag = flag_settled_titular_kingdom
+		}
+		#Can't be an empire.
+		highest_held_title_tier <= tier_kingdom
+		#Must be tribal.
+		OR = {
+			government_has_flag = government_is_tribal
+			government_has_flag = government_is_roman
+		}
+		OR = {
+			culture = { has_cultural_tradition = tradition_nomadic_migrations }
+			culture = { has_cultural_tradition = tradition_migrations }
+		}
+	}
+
+	is_valid = {
+		is_independent_ruler = yes
+		prestige_level >= high_prestige_level
+		highest_held_title_tier < tier_empire
+		OR = {
+			government_has_flag = government_is_tribal
+			government_has_flag = government_is_roman
+		}
+		OR = {
+			culture = { has_cultural_tradition = tradition_nomadic_migrations }
+			culture = { has_cultural_tradition = tradition_migrations }
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_independent_ruler = yes
+		is_available_adult = yes
+		is_at_war = no
+	}
+	
+	effect = {
+		save_scope_as = founder
+		show_as_tooltip = { titular_settle_effect = yes }
+		trigger_event = { id = formation_events.0011 }
+		#Notify other players.
+		every_player = {
+			limit = {
+				NOT = { this = scope:founder }
+			}
+			#Vassal players get a separate event.
+			if = {
+				limit = {
+					any_liege_or_above = { this = scope:founder }
+				}
+				trigger_event = formation_events.0012
+			}
+			#Everyone else within range gets a less personal version.
+			else = { trigger_event = formation_events.0013 }
+		}
+		hidden_effect = {
+			scope:founder = {
+				add_character_flag = flag_settled_titular_kingdom
+			}
+		}
+	}
+	
+	cost = {
+		gold = 250
+		prestige = 500
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+find_aurelian_helmet = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_roman_officers.dds"
+	}
+	decision_group_type = religious
+
+	desc = find_aurelian_helmet_desc
+	selection_tooltip = find_aurelian_helmet_tooltip
+	ai_check_interval = 36
+	cooldown = { days = 100 }
+
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		has_religion = religion:hellenism_religion
+		NOT = { has_global_variable = aurelianhelmet_found }
+	}
+
+	is_valid = {
+		prestige_level >= 3
+		is_imprisoned = no
+		employs_court_position = antiquarian_court_position
+	}
+
+	effect = {
+		trigger_event = province_events.0038
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 25
+	}
+	cost = { prestige = { value = 200 } gold = { value = 10 } }
+}
+
+forge_roman_regalia = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_roman_dux.dds"
+	}
+	decision_group_type = major
+
+	desc = forge_roman_regalia_desc
+	selection_tooltip = forge_roman_regalia_tooltip
+	ai_check_interval = 60
+	cooldown = { days = 500 }
+
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		
+		any_character_artifact = {
+			has_variable = regaliaeast
+		}
+		any_character_artifact = {
+			has_variable = regaliawest
+		}
+		OR = {
+			has_title = title:e_roman_empire
+			has_title = title:e_byzantium
+			has_title = title:e_western_roman_empire
+		}
+	}
+
+	is_valid = {
+		prestige_level >= 3
+		has_title = title:e_roman_empire
+	}
+
+	effect = {
+		hidden_effect = {
+			global_var:regaliaeast = {
+				save_scope_as = regaliaeast
+			}
+			global_var:regaliawest = {
+				save_scope_as = regaliawest
+			}
+			destroy_artifact = scope:regaliawest
+			destroy_artifact = scope:regaliaeast
+		}
+		create_artifact = {
+			name = artifact_romanregalia_name
+			description = artifact_romanregalia_description
+			visuals = regalia
+			type = regalia
+			modifier = artifact_romanregalia_modifier
+			wealth = 20
+			quality = 100
+			history = {
+				type = created
+				recipient = root
+				location = root.capital_province
+			}
+			save_scope_as = regaliaroman
+		}
+		scope:regaliaroman = {
+			set_variable = { name = historical_unique_artifact value = yes }
+			set_variable = { name = regaliaroman value = yes }
+			set_global_variable = {
+				name = regaliaroman
+				value = THIS
+			}
+		}
+		trigger_event = western_roman.0026
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 50
+	}
+	cost = { gold = { value = 150 } prestige = { value = 200 } }
+}
+
+
+
+#ripped directly from Gov + 
+change_to_imperial_byz = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_senate.dds"
+	}
+	decision_group_type = major
+
+	desc = change_to_imperial_byz_desc
+	selection_tooltip = change_to_imperial_byz_tooltip
+	ai_goal = yes
+
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		OR = {
+			has_title = title:e_byzantium
+			has_title = title:e_roman_empire
+			has_title = title:e_western_roman_empire
+		}
+		NOT = {
+			government_has_flag = government_is_imperial
+		}
+		NOT = {
+			government_has_flag = government_is_administrative
+		}
+	}
+
+	is_valid = {
+		trigger_if = {
+			limit = {
+				is_ai = no
+			}
+			prestige_level >= 2
+		}
+	}
+
+	effect = {
+		if = {
+			limit = {
+			has_dlc_feature = roads_to_power
+		}
+			change_government = administrative_government
+		}
+		else = {
+			change_government = imperial_government
+		}
+		set_variable = {
+			name = mil_comp
+			value = 1500
+		}
+		set_variable = {
+			name = civic_comp
+			value = 1500
+		}
+		set_variable = {
+			name = diplo_comp
+			value = 1500
+		}
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 100
+			NOT = {
+				government_has_flag = government_is_imperial_cult
+			}
+		}
+	}
+	cost = { gold = { value = 50 if = { limit = { is_ai = yes } multiply = 0 } } prestige = { value = 200 if = { limit = { is_ai = yes } multiply = 0 } } }
+}
+
+change_to_imperial_feudal = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_roman_proclamation.dds"
+	}
+	decision_group_type = major
+
+	desc = change_to_imperial_feudal_desc
+	selection_tooltip = change_to_imperial_feudal_tooltip
+	ai_goal = yes
+
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		OR = {
+			has_government = feudal_government
+			government_has_flag = government_is_city_state
+		}
+		is_independent_ruler = yes
+	}
+
+	is_valid = {
+		prestige_level >= 3
+		highest_held_title_tier = tier_empire
+		any_vassal = {
+			count = all
+			OR = {
+				custom_description = {
+					text = change_government_hook_requirement
+					subject = root
+					root = {
+						has_hook = PREV
+					}
+				}
+				opinion = {
+					target = root
+					value >= 30
+				}
+			}
+		}
+	}
+
+	effect = {
+		if = {
+			limit = {
+			has_dlc_feature = roads_to_power
+		}
+			change_government = administrative_government
+		}
+		else = {
+			change_government = imperial_government
+		}
+		set_variable = {
+			name = mil_comp
+			value = 1500
+		}
+		set_variable = {
+			name = civic_comp
+			value = 1500
+		}
+		set_variable = {
+			name = diplo_comp
+			value = 1500
+		}
+		hidden_effect = {
+			every_vassal_or_below = {
+				limit = {
+					OR = {
+						has_government = feudal_government
+						government_has_flag = government_is_city_state
+					}
+				}
+				if = {
+					limit = {
+					has_dlc_feature = roads_to_power
+				}
+					change_government = administrative_government
+				}
+				else = {
+					change_government = imperial_government
+				}
+			}
+		}
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+	cost = { gold = { value = 500 } prestige = { value = 1000 } }
+}
+
+send_missionaries = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+	}
+	decision_group_type = religious
+
+	desc = send_missionaries_desc
+	selection_tooltip = send_missionaries_tooltip
+	ai_check_interval = 60
+	cooldown = { years = 5 }
+
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		faith = {
+			has_doctrine_parameter = allowed_to_hire_missionaries
+		}
+	}
+
+	is_valid = {
+		employs_court_position = head_missionary
+		piety_level >= 2
+	}
+
+	effect = {
+		custom_tooltip = send_missionaries_effect_tooltip_1
+		custom_tooltip = send_missionaries_effect_tooltip_2
+		trigger_event = religion.0001
+	}
+
+	ai_potential = {
+		short_term_gold > 100 # Should only do it if they have some money to spend
+	}
+
+	ai_will_do = {
+		base = 10
+		modifier = {
+			add = 20
+			faith = {
+				has_doctrine_parameter = missionary_bonus_aptitude
+			}
+		}
+		modifier = {
+			add = 10
+			has_trait = zealous
+		}
+		modifier = {
+			add = -40
+			has_trait = cynical
+		}
+	}
+	cost = { prestige = { value = 100 } }
+}
+
+gregorian_mission = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+	}
+	decision_group_type = religious
+
+	desc = gregorian_mission_desc
+	selection_tooltip = gregorian_mission_tooltip
+	ai_check_interval = 60
+
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		faith = {
+			has_doctrine_parameter = allowed_to_hire_missionaries
+		}
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:gregorian_mission
+			}
+		}
+		any_county_in_region = {
+			region = wre_britannia
+			THIS = PREV.capital_county
+		}
+		religion = religion:christianity_religion
+		any_county_in_region = {
+			region = wre_britannia
+			percent >= 0.5
+			NOT = {
+				religion = religion:christianity_religion
+			}
+		}
+		any_county_in_region = {
+			region = wre_britannia
+			percent >= 0.3
+			NOT = {
+				OR = {
+					culture = culture:britano_roman
+					culture = culture:briton
+				}
+			}
+		}
+		NOT = {
+			any_county_in_region = {
+				region = wre_britannia
+				holder = {
+					highest_held_title_tier = tier_empire
+				}
+			}
+		}
+	}
+
+	is_valid = {
+		employs_court_position = head_missionary
+		piety_level >= 3
+	}
+
+	effect = {
+		trigger_event = religion.0005
+		add_piety = 200
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:gregorian_mission
+			}
+		}
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 40
+		modifier = {
+			add = 20
+			faith = {
+				has_doctrine_parameter = missionary_bonus_aptitude
+			}
+		}
+		modifier = {
+			add = 10
+			has_trait = zealous
+		}
+		modifier = {
+			add = -20
+			has_trait = cynical
+		}
+	}
+	cost = { prestige = { value = 500 } }
+}
+
+change_to_eranshar = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_realm_persia.dds"
+	}
+	decision_group_type = major
+
+	desc = change_to_eranshar_desc
+	selection_tooltip = change_to_eranshar_tooltip
+	ai_goal = yes
+
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		OR = {
+			has_title = title:e_persia
+			top_liege = {
+				has_title = title:e_persia
+				government_has_flag = government_is_eranshar
+			}
+		}
+		NOT = {
+			government_has_flag = government_is_eranshar
+		}
+		#OR = {
+		#	has_government = feudal_government
+		#	has_government = clan_government
+		#	government_has_flag = government_is_imperial
+		#	government_has_flag = government_is_autocratic
+		#	government_has_flag = government_is_roman
+		#	government_has_flag = government_is_gupta
+		#}
+	}
+
+	is_valid = {
+		trigger_if = {
+			limit = {
+				is_ai = no
+			}
+			prestige_level >= 2
+		}
+		#OR = {
+		#	has_government = feudal_government
+		#	has_government = clan_government
+		#	government_has_flag = government_is_imperial
+		#	government_has_flag = government_is_autocratic
+		#	government_has_flag = government_is_roman
+		#	government_has_flag = government_is_gupta
+		#}
+	}
+
+	effect = {
+		change_government = eranshar_government
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 100
+			NOT = {
+				government_has_flag = government_is_eranshar
+			}
+		}
+	}
+	cost = { gold = { value = 50 if = { limit = { is_ai = yes } multiply = 0 } } prestige = { value = 200 if = { limit = { is_ai = yes } multiply = 0 } } }
+}
+
+aksum_monument_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+	}
+
+	desc = aksum_monument_decision_desc
+	selection_tooltip = aksum_monument_decision_tooltip
+
+	ai_check_interval = 12
+
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		is_imprisoned = no
+		has_title = title:k_abyssinia
+	}
+
+	cooldown = { years = 5 }
+
+	is_valid = {
+		has_title = title:k_abyssinia
+		custom_description = {
+			text = aksum_monument_decision_custom
+			has_character_flag = recent_victory_5_years
+		}
+		
+	}
+
+	is_valid_showing_failures_only = {
+		is_available = yes
+	}
+	
+	cost = {
+		gold = 100
+	}
+
+	effect = {
+		trigger_event = {
+			id = aksum_monument.0001
+			days = 1
+		}
+		capital_province = {
+			county = {
+				add_county_modifier = {
+					modifier = county_raised_monument_modifier
+					years = 5
+				}
+			}
+		}
+
+		custom_tooltip = aksum_monument_decision_effect_tooltip
+	}
+	
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+
+
+#Recruit Regional units for Eran - Juli
+TFE_regional_units_eran_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_realm_persia.dds"
+	}
+	decision_group_type = cultural
+
+	desc = TFE_regional_units_eran_decision_desc
+	selection_tooltip = TFE_regional_units_eran_decision_tooltip
+
+	ai_check_interval = 120
+
+	is_shown = {
+		is_landed = yes # Normally this will always be true, but if in DEBUG mode and playing as an unlanded ruler this will cause error spam without it.
+		highest_held_title_tier = tier_empire
+		government_has_flag = government_is_eranshar
+		culture = {
+			has_cultural_parameter = unlock_eranian_specialists
+		}
+	}
+
+	cooldown = { days = 3650 }
+
+	is_valid = {
+		is_independent_ruler = yes
+
+		OR = {
+			#Elephants
+			custom_description = {
+				text = TFE_region_units_iran_elephant_req
+				any_realm_county = {	
+					count >= 1
+					culture = { has_innovation = innovation_elephantry }
+				}
+			}
+			#Daylami
+			custom_description = {
+				text = TFE_region_units_iran_daylami_req
+				any_realm_county = {
+					count >= 1
+					culture = { has_cultural_parameter = unlock_maa_daylami }
+				}
+			}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_available_adult = yes
+		gold >= 500
+	}
+
+	cost = {
+		prestige = 200
+	}
+
+	#minimum_cost = {
+	#	gold = 500
+	#}
+
+	widget = {
+    	gui = "decision_view_widget_TFE_regional_units_eran"
+		controller = decision_option_list_controller
+    	
+		decision_has_second_step = yes
+		decision_custom_widget_container = "custom_widgets_container_step_two"
+		decision_to_second_step_button = "TFE_regional_units_eran_decision_choose_type" 
+
+
+		# Conscript Elephants
+		item = {
+			value = TFE_regional_units_eran_war_elephants_decision_option
+			current_description = TFE_regional_units_eran_war_elephants_decision_option_desc
+			localization = TFE_regional_units_eran_war_elephants_decision_option
+			icon = "gfx/interface/icons/regimenttypes/war_elephants.dds"
+			is_valid = { 
+				#Elephants
+				any_realm_county = {	
+					count >= 1
+					culture = { has_innovation = innovation_elephantry }
+				}
+				NOT = {
+					culture = {
+						has_innovation = innovation_elephantry
+					}
+				}
+			}
+			ai_chance = {
+				value = 1
+			}
+		}
+		# Conscript Daylamis
+		item = {
+			value = TFE_regional_units_eran_daylami_decision_option
+			current_description = TFE_regional_units_eran_daylami_decision_option_desc
+			localization = TFE_regional_units_eran_daylami_decision_option
+			icon = "gfx/interface/icons/regimenttypes/heavy_infantry.dds"
+			is_valid = {
+				#Daylami
+				any_realm_county = {
+					count >= 1
+					culture = { has_cultural_parameter = unlock_maa_daylami }
+				}
+				NOT = {
+					culture = {
+						has_cultural_parameter = unlock_maa_daylami
+					}
+				}
+			}
+			ai_chance = {
+				value = 1
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = TFE_regional_units_eran_decision_tooltip_1
+		custom_tooltip = TFE_regional_units_eran_decision_tooltip_2
+
+		if = { # War Elephants
+			limit = { scope:TFE_regional_units_eran_war_elephants_decision_option = yes }
+			set_variable = {
+				name = TFE_regional_units_eran
+				value = flag:war_elephants
+			}
+		}
+
+		else_if = { # Daylami
+			limit = { scope:TFE_regional_units_eran_daylami_decision_option = yes }
+			set_variable = {
+				name = TFE_regional_units_eran
+				value = flag:daylami
+			}
+		}
+
+		trigger_event = {
+			id = TFE_middle_east.0001
+		}
+	}
+	
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 80
+		modifier = {
+			add = -60
+			gold < 600
+		}
+		modifier = {
+			add = -60
+			is_at_war = no
+		}
+	}
+}
+
+centralize_gana_sangha = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_indian_throne_room.dds"
+	}
+	decision_group_type = major
+
+	desc = centralize_gana_sangha_desc
+	selection_tooltip = centralize_gana_sangha_tooltip
+	ai_check_interval = 36
+
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		government_has_flag = government_is_gana_sangha
+		is_independent_ruler = yes
+	}
+
+	is_valid = {
+		is_independent_ruler = yes
+		prestige_level >= 3
+		has_realm_law = gana_sangha_authority_3
+		any_vassal = {
+			count = all
+			OR = {
+				custom_description = {
+					text = change_government_hook_requirement
+					subject = root
+					root = {
+						has_hook = PREV
+					}
+				}
+				opinion = {
+					target = root
+					value >= 30
+				}
+			}
+		}
+	}
+
+	effect = {
+		hidden_effect = { every_realm_province = { limit = { has_holding_type = tribal_holding } set_holding_type = castle_holding } }
+		change_government = gupta_government
+		every_vassal_or_below = {
+			limit = {
+				has_government = gana_sangha_government
+			}
+			change_government = gupta_government
+		}
+		primary_title = {
+			if = {
+				limit = {
+					has_title_law = gana_sangha_elective_succession_law
+				}
+				remove_title_law = gana_sangha_elective_succession_law
+			}
+		}
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 50
+	}
+	cost = { gold = { value = 200 } prestige = { value = 500 } }
+}
+
+form_gana_sangha = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_indian_throne_room.dds"
+	}
+
+	desc = form_gana_sangha_desc
+	selection_tooltip = form_gana_sangha_tooltip
+	ai_goal = yes
+
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		culture ?= {
+			has_cultural_tradition = tradition_gana_sangha
+		}
+		NOT = {
+			government_has_flag = government_is_gana_sangha
+		}
+	}
+
+	is_valid = {
+		is_independent_ruler = yes
+		prestige_level >= 3
+		government_has_flag = government_is_tribal
+		culture ?= {
+			has_cultural_tradition = tradition_gana_sangha
+		}
+	}
+
+	effect = {
+		change_government = gana_sangha_government
+		every_vassal_or_below = {
+			limit = {
+				government_has_flag = government_is_tribal
+			}
+			change_government = gana_sangha_government
+			add_opinion = {
+				target = root
+				opinion = 50
+				years = 10
+				modifier = respect_opinion
+			}
+		}
+		primary_title = {
+			clear_title_laws = yes
+			add_title_law = gana_sangha_elective_succession_law
+		}
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+	cost = { gold = { value = 200 } prestige = { value = 500 } }
+}
+
+establish_chariot_team = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_knight_kneeling.dds"
+	}
+
+	desc = establish_chariot_team_desc
+	selection_tooltip = establish_chariot_team_tooltip
+	ai_goal = yes
+
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		OR = {
+			government_has_flag = government_is_imperial
+			government_has_flag = government_is_imperial_cult
+			government_has_flag = government_is_administrative
+		}
+		OR = {
+			highest_held_title_tier = tier_empire
+			highest_held_title_tier = tier_kingdom
+		}
+		NOT = {
+			any_in_global_list = {
+				variable = TFE_chariot_titles
+				this = root.primary_title
+			}
+		}
+	}
+
+	is_valid = {
+		is_independent_ruler = yes
+	}
+
+	effect = {
+		custom_tooltip = establish_chariot_team_effect_tt
+		primary_title = {
+			add_to_global_variable_list = {
+				name = TFE_chariot_titles
+				target = THIS
+			}
+			save_scope_as = TFE_chariot_title_current
+		}
+		root = {
+			save_scope_as = TFE_chariot_ruler_current
+		}
+		populate_TFE_charioteers_effect = yes
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+TFE_adopt_higher_varna_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_indian_throne_room.dds"
+	}
+	decision_group_type = cultural
+
+	desc = TFE_adopt_higher_varna_decision_desc
+	selection_tooltip = TFE_adopt_higher_varna_decision_tooltip
+	ai_goal = yes
+
+	is_shown = {
+		is_playable_character = yes
+		has_trait = shudra
+	}
+
+	is_valid = {
+		is_adult = yes
+		is_imprisoned = no
+		OR = {
+			piety_level >= 3
+			prestige_level >= 3
+		}
+	}
+
+	cost = {
+		prestige = {
+			value = 500
+			if = {
+				limit = { AND = { exists = scope:TFE_adopt_higher_varna_brahmin scope:TFE_adopt_higher_varna_brahmin = yes } }
+				add = 200
+			}
+			else_if = {
+				limit = { AND = { exists = scope:TFE_adopt_higher_varna_kshatriya scope:TFE_adopt_higher_varna_kshatriya = yes } }
+				add = 100
+			}
+			else = {
+				add = 0
+			}
+		}
+		piety = {
+			value = 0
+			if = {
+				limit = {
+					faith.religion = religion:hinduism_religion
+				}
+				if = {
+					limit = { AND = { exists = scope:TFE_adopt_higher_varna_brahmin scope:TFE_adopt_higher_varna_brahmin = yes } }
+					add = 600
+				}
+				else_if = {
+					limit = { AND = { exists = scope:TFE_adopt_higher_varna_kshatriya scope:TFE_adopt_higher_varna_kshatriya = yes } }
+					add = 500
+				}
+				else = {
+					add = 300
+				}
+			}
+		}
+	}
+
+	widget = {
+    	gui = "decision_view_widget_TFE_adopt_higher_varna"
+		controller = decision_option_list_controller
+    	
+		decision_has_second_step = yes
+		decision_custom_widget_container = "custom_widgets_container_step_two"
+		decision_to_second_step_button = "TFE_adopt_higher_varna_decision_choose_type" 
+
+		item = {
+			value = TFE_adopt_higher_varna_brahmin
+			current_description = TFE_adopt_higher_varna_brahmin_desc
+			localization = TFE_adopt_higher_varna_brahmin_loc
+			icon = "gfx/interface/icons/traits/brahmin.dds"
+			is_valid = { 
+				OR = {
+					piety_level >= 5
+					prestige_level >= 5
+				}
+			}
+			ai_chance = {
+				value = 3
+			}
+		}
+		item = {
+			value = TFE_adopt_higher_varna_kshatriya
+			current_description = TFE_adopt_higher_varna_kshatriya_desc
+			localization = TFE_adopt_higher_varna_kshatriya_loc
+			icon = "gfx/interface/icons/traits/kshatriya.dds"
+			is_valid = { 
+				OR = {
+					piety_level >= 4
+					prestige_level >= 4
+				}
+			}
+			ai_chance = {
+				value = 2
+			}
+		}
+		item = {
+			value = TFE_adopt_higher_varna_vaishya
+			current_description = TFE_adopt_higher_varna_vaishya_desc
+			localization = TFE_adopt_higher_varna_vaishya_loc
+			icon = "gfx/interface/icons/traits/vaishya.dds"
+			is_valid = { 
+				OR = {
+					piety_level >= 3
+					prestige_level >= 3
+				}
+			}
+			ai_chance = {
+				value = 1
+			}
+		}
+	}
+
+	effect = {
+		if = {
+			limit = {
+				faith.religion = religion:hinduism_religion
+			}
+			custom_tooltip = TFE_adopt_higher_varna_decision_tooltip_hindu_brahmin
+			trigger_event = TFE_flavour_events.0017
+		}
+		remove_trait = shudra
+		
+		if = {
+			limit = { scope:TFE_adopt_higher_varna_brahmin = yes }
+			add_trait = brahmin
+		}
+		else_if = {
+			limit = { scope:TFE_adopt_higher_varna_kshatriya = yes }
+			add_trait = kshatriya
+		}
+		else = {
+			add_trait = vaishya
+		}
+		hidden_effect = {
+			every_child = {
+				limit = {
+					culture ?= {
+						has_cultural_parameter = varna_system_unlocked
+					}
+				}
+				caste_trait_assign = {
+					TRAIT_THINKER = brahmin
+					TRAIT_RULER = kshatriya
+					TRAIT_TRADER = vaishya
+					TRAIT_WORKER = shudra
+				}
+			}
+		}
+		RICE_TFE_struggle_adopt_higher_varna_catalyst_effect = yes
+	}
+	
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+
+TFE_adopt_kshatriya_varna = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_indian_throne_room.dds"
+	}
+	decision_group_type = cultural
+
+	desc = TFE_adopt_kshatriya_varna_desc
+	selection_tooltip = TFE_adopt_kshatriya_varna_tooltip
+	ai_goal = yes
+
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		culture ?= {
+			NOT = {
+				has_cultural_parameter = varna_system_unlocked
+			}
+		}
+		OR = {
+			AND = {
+				exists = struggle:north_indian_struggle
+				struggle:north_indian_struggle = {
+					is_culture_involved_in_struggle = root.culture
+				}
+			}
+			exists = global_var:TFE_struggle_north_indian_ending_confluence
+		}
+		NOT = {
+			OR = {
+				has_trait = brahmin
+				has_trait = kshatriya
+				has_trait = vaishya
+				has_trait = shudra
+			}
+		}
+	}
+	is_valid = {
+		prestige_level >= 3
+		capital_province = {
+			geographical_region = TFE_north_indian_struggle_region
+		}
+		culture = {
+			NOT = {
+				has_cultural_parameter = varna_system_unlocked
+			}
+		}
+		custom_description = {
+			text = TFE_north_indian_struggle_interchange_phase
+			struggle:north_indian_struggle = {
+				has_struggle_phase_parameter = kshatriya_varna_for_non_indian_rulers
+			}
+		}
+	}
+
+	effect = {
+		add_trait = kshatriya
+		RICE_TFE_struggle_adopt_kshatriya_varna_catalyst_effect = yes
+	}
+
+	ai_potential = {
+		always = yes
+	}
+	cost = {
+		prestige = {
+			value = 600
+		}
+	}
+	ai_will_do = {
+		base = 100
+	}
+}
+
+found_unlanded_kingdom_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	}
+	decision_group_type = major
+	ai_check_interval = 240
+	major = yes
+
+	desc = found_kingdom_decision_desc
+
+	is_shown = {
+		highest_held_title_tier = tier_duchy
+		NOT = { has_game_rule = off_custom_kingdoms }
+		is_landed = yes
+		government_has_flag = government_is_tribal
+		is_independent_ruler = yes
+	}
+
+	is_valid = {
+		is_independent_ruler = yes
+		government_has_flag = government_is_tribal
+		prestige_level >= 3
+		OR={
+			AND={
+				culture={
+					has_cultural_tradition=tradition_migrations
+				}
+			sub_realm_size >= 3
+			}
+			sub_realm_size >= 8
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_available_adult = yes
+		is_at_war = no
+	}
+
+	cost = {
+		gold = 50
+		prestige = 500
+	}
+
+	effect = {
+		create_custom_unlanded_kingdom_effect = yes
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 50
+			has_trait = ambitious
+		}
+		modifier = {
+			add = 50
+			has_trait = ambitious
+		}
+		modifier = {
+			add = 50
+			has_trait = arrogant
+		}
+		modifier = {
+			add = 25
+			has_trait = diligent
+		}
+		modifier = {
+			add = 25
+			has_trait = brave
+		}
+
+		modifier = {
+			add = -50
+			has_trait = lazy
+		}
+		modifier = {
+			add = -50
+			has_trait = greedy
+		}
+		modifier = {
+			add = -50
+			has_trait = craven
+		}
+		modifier = {
+			add = -50
+			has_trait = content
+		}
+		modifier = {
+			add = -50
+			has_trait = humble
+		}
+		modifier = {
+			add = -25
+			has_trait = shy
+		}
+	}
+}

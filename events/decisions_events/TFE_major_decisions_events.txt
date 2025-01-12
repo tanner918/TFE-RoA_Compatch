@@ -1,0 +1,522 @@
+﻿namespace = TFE_major_decisions
+
+### A New Imperial Faith
+### Reopening the Catechetical School of Alexandria
+
+
+################
+# A New Imperial Faith
+# TFE_major_decisions.0001
+
+# For the one who proclaimed the new Imperial faith...
+TFE_major_decisions.0001 = {
+	type = character_event
+	title = TFE_major_decisions.0001.t
+	desc = {
+		desc = TFE_major_decisions.0001.desc_intro
+		first_valid = {
+			triggered_desc = {
+				trigger = { scope:new_faith = { has_doctrine = doctrine_pluralism_pluralistic } }
+				desc = TFE_major_decisions.0001.desc_pluralistic
+			}
+			triggered_desc = {
+				trigger = { scope:new_faith = { has_doctrine = doctrine_pluralism_righteous } }
+				desc = TFE_major_decisions.0001.desc_righteous
+			}
+			triggered_desc = {
+				trigger = { scope:new_faith = { has_doctrine = doctrine_pluralism_fundamentalist } }
+				desc = TFE_major_decisions.0001.desc_fundamentalist
+			}
+		}
+		desc = TFE_major_decisions.0001.desc_end
+	}
+	
+	theme = faith
+	
+	left_portrait = {
+		character = root
+		animation = personality_zealous
+	}
+	
+	immediate = {
+		new_official_imperial_faith_effect = yes
+	}
+
+	option = {
+		name = TFE_major_decisions.0001.a
+	}
+}
+
+TFE_major_decisions.0002 = {
+	type = character_event
+	title = TFE_major_decisions.0002.t
+	desc = {
+		desc = TFE_major_decisions.0002.desc
+	}
+	
+	theme = faith
+	
+	left_portrait = {
+		character = root
+		animation = personality_zealous
+	}
+	
+	immediate = {
+		reject_official_imperial_faith_effect = yes
+	}
+
+	option = {
+		name = TFE_major_decisions.0002.a
+	}
+}
+
+# # And everyone else!
+# TFE_major_decisions.0002 = {
+	# type = character_event
+	# title = TFE_major_decisions.0001.t
+	# desc = TFE_major_decisions.0002.desc
+	# theme = faith
+	
+	# left_portrait = {
+		# character = root
+		# animation = personality_zealous
+	# }
+	
+	# immediate = {
+		# show_as_tooltip = { new_official_imperial_faith_effect = yes }
+	# }
+
+	# # Poggerino
+	# option = {
+		# trigger = { faith = scope:new_faith }
+		# name = TFE_major_decisions.0002.a
+	# }
+
+	# # Interesting...
+	# option = {
+		# trigger = {
+			# NOT = { faith = scope:new_faith  }
+			# faith = { faith_hostility_level = { target = scope:new_faith value <= faith_astray_level } }
+		# }
+		# name = TFE_major_decisions.0002.b
+	# }
+
+	# # A worrying development
+	# option = {
+		# trigger = { faith = { faith_hostility_level = { target = scope:new_faith value = faith_hostile_level } } }
+		# name = TFE_major_decisions.0002.c
+	# }
+
+	# # This won't save them!
+	# option = {
+		# trigger = { faith = { faith_hostility_level = { target = scope:new_faith value = faith_evil_level } } }
+		# name = TFE_major_decisions.0002.d
+	# }
+# }
+
+################
+# Reopening the Catechetical School of Alexandria
+# TFE_major_decisions.0010
+TFE_major_decisions.0010 = {
+	type = character_event
+	title = TFE_major_decisions.0010.t
+	desc = TFE_major_decisions.0010.desc
+	
+	theme = faith
+	
+	left_portrait = {
+		character = root
+		animation = personality_zealous
+	}
+	
+	immediate = { reopen_catechetical_school_alexandria_effect = { MAIN_FAITH = root.faith } }
+
+	option = {
+		name = TFE_major_decisions.0010.a
+	}
+}
+
+###############################################################
+#															  #
+# 			Establish a new Capital for the Visigoths 		  #
+# 							by Juli				 			  #
+#						   0020-0022						  #
+###############################################################
+
+#	Founder event
+TFE_major_decisions.0020 = {
+	type = character_event
+	title = TFE_major_decisions.0020.t
+	desc = TFE_major_decisions.0020.desc
+	theme = realm
+	left_portrait = {
+		character = scope:founder
+		animation = personality_honorable
+	}
+
+	override_background = { reference = market_west }
+
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+	}
+
+	#Toledo shall be my capital.
+	option = {
+		name = TFE_major_decisions.0020.a
+
+		trigger = {
+			#Must have title:c_toledo in order to make it your capital.
+			any_sub_realm_county = { this = title:c_toledo }
+			#And Kiev cannot be held by a player who has _only_ title:c_toledo, unless that player is you.
+			title:c_toledo.holder = {
+				OR = {
+					is_ai = yes
+					any_held_title = {
+						count >= 1
+						tier = tier_county
+						NOT = { this = title:c_toledo }
+					}
+					this = scope:founder
+				}
+			}
+		}
+
+		#Organise the usurpation/capital move of title:c_toledo if appropriate.
+		if = {
+			limit = {
+				NOT = { title:c_toledo.holder = scope:founder }
+			}
+			create_title_and_vassal_change = {
+				type = usurped
+				save_scope_as = change
+				add_claim_on_loss = yes
+			}
+			title:c_toledo = {
+				change_title_holder = {
+					holder = root
+					change = scope:change
+				}
+			}
+			resolve_title_and_vassal_change = scope:change
+		}
+		set_realm_capital = title:c_toledo
+		#Otherwise, set title:c_toledo to be scope:new_visigothic_capital & go through with the effect.
+		title:c_toledo = {
+			save_scope_as = new_visigothic_capital
+			found_capital_of_visigoths_scripted_effect = yes
+		}
+
+		ai_chance = {
+			#AI should always take this option if it's available.
+			base = 100
+		}
+	}
+
+	#My current capital shall be my capital!
+	option = {
+		name = TFE_major_decisions.0020.b
+
+		#Not generally necessary, but just to stop some weird loc eventualities.
+		trigger = {
+			NOT = { capital_county = title:c_toledo }
+		}
+
+		#We try to use the player's current capital, but if they've moved it outside of e_spain, then we go with the default set in the standard decision entry.
+		if = {
+			limit = { capital_county.empire = title:e_spain }
+			#Formatted a little inefficiently for readability.
+			capital_county = { save_scope_as = new_visigothic_capital }
+		}
+		#Then enact the actual effects.
+		found_capital_of_visigothic_scripted_effect = yes
+
+		ai_chance = {
+			#AI will only take this option if they have no other choice (i.e., can't get Kiev).
+			base = 0
+		}
+	}
+
+	after = {
+		#Take care of notification events.
+		every_player = {
+			limit = {
+				capital_province = {
+					OR = {
+						geographical_region = world_europe_west
+						geographical_region = world_europe_south
+						geographical_region = world_africa_north
+					}
+				}
+				#Obviously, we exempt scope:founder themselves.
+				NOT = { this = scope:founder }
+			}
+			#Vassal players get a separate event.
+			if = {
+				limit = {
+					any_liege_or_above = { this = scope:founder }
+				}
+				trigger_event = TFE_major_decisions.0021
+			}
+			#Everyone else within range gets a less personal version.
+			else = { trigger_event = TFE_major_decisions.0022 }
+		}
+	}
+}
+
+#	Vassal notification event
+TFE_major_decisions.0021 = {
+	type = character_event
+	title = TFE_major_decisions.0021.t
+	desc = TFE_major_decisions.0021.desc
+	theme = realm
+	left_portrait = {
+		character = scope:founder
+		animation = personality_honorable
+	}
+	
+	override_background = { reference = market_west }
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		show_as_tooltip = { found_capital_of_visigothic_scripted_effect = yes }
+	}
+
+	#A worthy capital!
+	option = {
+		name = TFE_major_decisions.0021.a
+
+		ai_chance = {
+			#Doesn't especially matter.
+			base = 100
+		}
+	}
+
+	#Bah, ain't no city of mine.
+	option = {
+		name = TFE_major_decisions.0021.b
+
+		ai_chance = {
+			#Doesn't especially matter.
+			base = 100
+		}
+	}
+}
+
+#	Distant players notification event
+TFE_major_decisions.0022 = {
+	type = character_event
+	title = TFE_major_decisions.0022.t
+	desc = TFE_major_decisions.0022.desc
+	theme = realm
+	left_portrait = {
+		character = scope:founder
+		animation = personality_honorable
+	}
+	
+	override_background = { reference = market_west }
+
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		show_as_tooltip = { found_capital_of_visigothic_scripted_effect = yes }
+	}
+
+	#This scope:new_visigothic_capital sounds intriguingly rich...
+	option = {
+		name = TFE_major_decisions.0022.a
+		trigger = {
+			OR = {
+				culture = { has_cultural_pillar = heritage_east_germanic }
+			}
+		}
+
+		ai_chance = {
+			#Doesn't especially matter.
+			base = 100
+		}
+	}
+
+	#They're still just backwards foreigners.
+	option = {
+		name = TFE_major_decisions.0022.b
+		trigger = {
+			NOR = {
+				culture = { has_cultural_pillar = heritage_east_germanic }
+			}
+		}
+
+		ai_chance = {
+			#Doesn't especially matter.
+			base = 100
+		}
+	}
+
+	#I don't really see how this concerns me?
+	option = {
+		name = TFE_major_decisions.0022.c
+
+		ai_chance = {
+			#Doesn't especially matter.
+			base = 100
+		}
+	}
+}
+
+#Case of the Suebians By Sherif
+TFE_major_decisions.0023 = {
+	type = character_event
+	title = TFE_major_decisions.0023.t
+	desc = TFE_major_decisions.0023.desc
+	immediate = { 
+		if = {
+			limit = {
+				title:k_suebians_of_gallicia = {
+					is_title_created = yes
+				}
+			}
+			title:k_suebians_of_gallicia.holder = { save_scope_as = scope:event_target }
+		}
+		else = {
+			title:k_suebi.holder = { save_scope_as = scope:event_target }
+		}
+	}
+	theme = martial
+	right_portrait = {
+		character = root
+		animation = war_attacker
+	}
+	option = { #They are part of Hispania and therefore must be subject to our power
+		name = TFE_major_decisions.0023.a
+		if = {
+			limit = {
+				title:k_suebians_of_gallicia = {
+					is_title_created = yes
+				}
+			}
+			add_pressed_claim = title:k_suebians_of_gallicia
+		}
+		else = {
+			add_pressed_claim = title:k_suebi
+		}
+			
+	}
+	option = { #Galicia is a territory apart from Hispania now. We must focus on our own lands.
+		name = TFE_major_decisions.0023.b
+		if = {
+			limit = {
+				title:k_suebians_of_gallicia = {
+					is_title_created = yes
+				}
+			}
+			reverse_add_opinion = {
+				opinion = 200
+				modifier = respected_independece
+				years = 10
+				target = title:k_suebians_of_gallicia.holder
+			}
+		}
+		else = {
+			reverse_add_opinion = {
+				opinion = 200
+				modifier = respected_independece
+				years = 10
+				target = title:k_suebi.holder
+			}
+		}
+	}
+}
+
+TFE_major_decisions.6666 = {
+	type = character_event
+	title = TFE_major_decisions.6666.t
+	desc = TFE_major_decisions.6666.desc
+	theme = war
+	left_portrait = {
+		character = root
+		animation = personality_vengeful
+	}
+	override_background = { reference = wilderness_steppe }
+	
+	immediate = {
+		play_music_cue = "mx_cue_crusade_starts"
+		reunite_black_huns_effect = yes	
+	}
+
+	option = {
+		name = TFE_major_decisions.6666.a
+		add_trait = heir_of_attila
+		if = {
+			limit = { has_any_nickname = yes }
+			remove_nickname = yes
+		}
+		give_nickname = nick_scourge_of_god
+		if = {
+			limit = {
+				prestige_level < 5
+			}
+			add_prestige_level = 1
+		}
+	}
+}
+
+#My ruler became heir to Attila
+TFE_major_decisions.6667 = {
+	type = character_event
+	title = TFE_major_decisions.6667.t
+	desc = TFE_major_decisions.6667.desc
+	theme = war
+	left_portrait = {
+		character = scope:heir_of_attila
+		animation = personality_vengeful
+	}
+	override_background = { reference = wilderness_steppe }
+	
+	immediate = {
+		play_music_cue = "mx_cue_crusade_starts"
+		show_as_tooltip = {
+			scope:heir_of_attila = {
+				add_trait_force_tooltip = heir_of_attila
+				hidden_effect = { set_primary_title_to = title:e_hunnic_empire }
+			}
+		}
+	}
+
+	option = {
+		name = TFE_major_decisions.6667.a
+	}
+}
+
+#Someone became heir to Attila
+TFE_major_decisions.6668 = {
+	type = character_event
+	title = TFE_major_decisions.6667.t
+	desc = TFE_major_decisions.6668.desc
+	theme = war
+	left_portrait = {
+		character = scope:heir_of_attila
+		animation = personality_vengeful
+	}
+	override_background = { reference = wilderness_steppe }
+
+	immediate = {
+		play_music_cue = "mx_cue_combat_2"
+		show_as_tooltip = {
+			scope:heir_of_attila = {
+				add_trait_force_tooltip = heir_of_attila
+				hidden_effect = { set_primary_title_to = title:e_hunnic_empire }
+			}
+		}
+	}
+
+	option = {
+		name = {
+			text = TFE_major_decisions.6668.a.neighbor
+			trigger = {
+				any_neighboring_top_liege_realm_owner = {
+					this = scope:heir_of_attila
+				}
+			}
+		}
+		name = {
+			text = TFE_major_decisions.6668.a.distant
+		}
+	}
+}

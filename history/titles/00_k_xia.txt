@@ -1,0 +1,1393 @@
+﻿k_xia = {
+	320.1.1 = {
+		change_development_level = 5
+	}
+	# Former Liang
+	320.6.25 = {
+		holder = former_liang_006
+		government = feudal_government
+	}
+	324.5.16 = {
+		holder = former_liang_008
+	}
+	346.9.20 = {
+		holder = former_liang_010
+	}
+	353.11.2 = {
+		holder = former_liang_012
+	}
+	353.12.15 = {
+		holder = former_liang_009
+	}
+	355.9.11 = {
+		holder = former_liang_013
+	}
+	363.8.25 = {
+		holder = former_liang_011
+	}
+	376.8.1 = {
+		holder = 0
+	}
+	# Technically under Northern Wei
+	442.1.1 = {
+		holder = western_liang_030 
+	}
+	459.10.15 = {
+		holder = western_liang_033 
+	}
+	467.1.1 = {
+		change_development_level = 6
+	}
+	502.5.28 = {
+		holder = western_liang_034 
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		holder = tuoba_wei_001 
+		effect = {
+			set_capital_county = title:c_guazhou
+		}
+	}
+	532.1.1 = {
+		change_development_level = 7
+	}
+	542.12.7 = {
+		holder = tuoba_wei_003 
+	}
+	544.1.1 = {
+		holder = han_misc_11 
+	}
+	632.1.1 = {
+		change_development_level = 8
+	}
+	768.1.1 = {
+		change_development_level = 9
+	}
+}
+d_ganzhou = {
+	# Zhang Gui appointed governor of Liang province
+	301.1.1 = {
+		holder = former_liang_003
+		government = feudal_government
+	}
+	314.6.22 = {
+		holder = former_liang_005
+	}
+	320.6.25 = {
+		holder = former_liang_006
+		liege="k_xia"
+	}
+	324.5.16 = {
+		holder = former_liang_008
+	}
+	346.9.20 = {
+		holder = former_liang_010
+	}
+	353.11.2 = {
+		holder = former_liang_012
+	}
+	353.12.15 = {
+		holder = former_liang_009
+	}
+	355.9.11 = {
+		holder = former_liang_013
+	}
+	361.11.1 = {
+		holder = former_liang_011
+	}
+	#363.8.25 = {
+	#	holder = former_liang_011
+	#}
+	376.8.1 = {
+		liege = 0
+		holder = 0
+	}
+	388.1.1 = { # First known mention of Duan Ye
+		holder = liang_001
+		#liege = k_liang_later #k_xia
+	}
+	397.6.1 = {
+		liege = k_liang_north		
+	}
+	401.7.1 = {
+		holder = xiongnu_008
+	}
+	433.1.1 = {
+		holder = xiongnu_013
+	}
+	444.4.4 = { # Conquered by Rouran
+		holder = 0
+		liege = 0
+	}
+	474.1.1 = { # Awarded for defeating Rouran attack on Dunhuang
+		holder = liang_014
+		liege = k_xia
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		holder = linghu_liang_005
+	}
+}
+c_ganzhou = {
+	# Zhang Gui appointed governor of Liang province
+	301.1.1 = {
+		holder = former_liang_003
+		government = feudal_government
+	}
+	314.6.22 = {
+		holder = former_liang_005
+	}
+	320.6.25 = {
+		holder = former_liang_006
+		liege="k_xia"
+	}
+	324.5.16 = {
+		holder = former_liang_008
+	}
+	346.9.20 = {
+		holder = former_liang_010
+	}
+	353.11.2 = {
+		holder = former_liang_012
+	}
+	353.12.15 = {
+		holder = former_liang_009
+	}
+	355.9.11 = {
+		holder = former_liang_013
+	}
+	361.11.1 = {
+		holder = former_liang_011
+	}
+	388.1.1 = { # First known mention of Duan Ye
+		holder = liang_001
+		#liege = k_liang_later #k_xia
+	}
+	397.6.1 = {
+		liege = k_liang_north		
+	}
+	401.7.1 = {
+		holder = xiongnu_008
+	}
+	433.1.1 = {
+		holder = xiongnu_013
+	}
+	474.1.1 = { # Awarded for defeating Rouran attack on Dunhuang
+		holder = liang_014
+		liege = k_xia
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		holder = linghu_liang_005
+	}
+}
+d_liangzhou = {
+	# Zhang Gui appointed governor of Liang province
+	301.1.1 = {
+		holder = former_liang_003
+		government = feudal_government
+	}
+	314.6.22 = {
+		holder = former_liang_005
+	}
+	320.6.25 = {
+		holder = former_liang_006
+		liege="k_xia"
+	}
+	324.5.16 = {
+		holder = former_liang_008
+	}
+	346.9.20 = {
+		holder = former_liang_010
+	}
+	353.11.2 = {
+		holder = former_liang_012
+	}
+	353.12.15 = {
+		holder = former_liang_009
+	}
+	355.9.11 = {
+		holder = former_liang_013
+	}
+	# Date that Tufa Sifujan became chief of the Tufa Xianbei
+	356.1.1 = {
+		holder = xianbei_001
+		liege=0
+	}
+	370.9.17 = {
+		holder = xianbei_002
+	}
+	# 395.1.1 = {
+	# 	liege = k_liang_later #k_xia
+	# }
+	397.6.1 = {
+		liege = k_liang_south
+	}
+	400.2.1 = {
+		holder = xianbei_008
+	}
+	402.9.4 = {
+		holder = xianbei_011
+	}
+	414.1.1 = { # Defeated by Western Qin
+		liege = 0
+		holder = 0
+	}
+	440.1.1 = { # Hu family, officials under Northern Wei whose hometown was in Anding (modern-day Zhenyuan County, Gansu)
+		liege = k_xia
+		holder = hu_liang_002
+	}
+	460.7.12 = { 
+		holder = hu_liang_003
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		holder = tuoba_wei_004 
+	}
+}
+c_liangzhou = {	
+	361.1.1 = {	change_development_level = 8 }
+	476.1.1 = {	change_development_level = 10 }
+	532.1.1 = {	change_development_level = 12 }
+	632.1.1 = {	change_development_level = 14 }
+	768.1.1 = {	change_development_level = 16 }
+	# Zhang Gui appointed governor of Liang province
+	301.1.1 = {
+		holder = former_liang_003
+		government = feudal_government
+	}
+	314.6.22 = {
+		holder = former_liang_005
+	}
+	320.6.25 = {
+		holder = former_liang_006
+		liege="k_xia"
+	}
+	324.5.16 = {
+		holder = former_liang_008
+	}
+	346.9.20 = {
+		holder = former_liang_010
+	}
+	353.11.2 = {
+		holder = former_liang_012
+	}
+	353.12.15 = {
+		holder = former_liang_009
+	}
+	355.9.11 = {
+		holder = former_liang_013
+	}
+	# Date that Tufa Sifujan became chief of the Tufa Xianbei
+	356.1.1 = {
+		holder = xianbei_001
+		liege=0
+	}
+	370.9.17 = {
+		holder = xianbei_002
+	}
+	# 395.1.1 = {
+	# 	liege = k_liang_later #k_xia
+	# }
+	397.6.1 = {
+		liege = k_liang_south
+	}
+	400.2.1 = {
+		holder = xianbei_008
+	}
+	402.9.4 = {
+		holder = xianbei_011
+	}
+	414.1.1 = {
+		holder = xianbei_023
+	}
+	440.1.1 = { # Hu family, officials under Northern Wei whose hometown was in Anding (modern-day Zhenyuan County, Gansu)
+		liege = k_xia
+		holder = hu_liang_002
+	}
+	460.7.12 = { 
+		holder = hu_liang_003
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		holder = tuoba_wei_004
+	}
+}
+#Yongdeng
+#Zhejue tribal clan
+c_yongdeng = {
+	# Zhang Gui appointed governor of Liang province
+	301.1.1 = {
+		holder = former_liang_003
+	}
+	314.6.22 = {
+		holder = former_liang_005
+	}
+	320.6.25 = {
+		holder = former_liang_006
+	}
+	324.5.16 = {
+		holder = former_liang_008
+	}
+	346.9.20 = {
+		holder = former_liang_010
+	}
+	353.11.2 = {
+		holder = former_liang_012
+	}
+	353.12.15 = {
+		holder = former_liang_009
+	}
+	355.9.11 = {
+		holder = former_liang_013
+	}
+	# Date that Tufa Sifujan became chief of the Tufa Xianbei
+	# Zhejue Xianbei
+	356.1.1 = {
+		holder = xianbei_015
+		liege = d_liangzhou
+	}
+	378.4.5 = {
+		holder = xianbei_016
+	}
+	# 395.1.1 = {
+	# 	liege = k_liang_later #k_xia
+	# }
+	397.6.1 = {
+		liege = k_liang_south
+	}
+	400.2.1 = {
+		holder = xianbei_008
+	}
+	402.9.4 = {
+		holder = xianbei_011
+	}
+	414.1.1 = { # Defeated by Western Qin
+		liege = 0
+		holder = xianbei_016
+	}
+	440.1.1 = { # Hu family, officials under Northern Wei whose hometown was in Anding (modern-day Zhenyuan County, Gansu)
+		holder = hu_liang_002
+	}
+	460.7.12 = { 
+		holder = hu_liang_003
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		holder = tuoba_wei_004
+	}
+}
+d_guiyi = {
+	# Zhang Gui appointed governor of Liang province
+	301.1.1 = {
+		holder = former_liang_003
+		government = feudal_government
+	}
+	314.6.22 = {
+		holder = former_liang_005
+	}
+	320.6.25 = {
+		holder = former_liang_006
+		liege="k_xia"
+	}
+	324.5.16 = {
+		holder = former_liang_008
+	}
+	346.9.20 = {
+		holder = former_liang_010
+	}
+	350.1.1 = {
+		holder = yin_001
+	}
+	395.1.1 = {
+		holder = western_liang_043
+	}
+	# Formally independent from Later Liang
+	400.1.1 = {
+		holder = western_liang_005
+		liege = k_liang_west
+	}
+	417.5.5 = {
+		holder = western_liang_009
+	}
+	420.6.12 = {
+		holder = western_liang_011
+	}
+	421.1.1 = { # Conquered by Northern Liang
+		holder=0
+		liege=0
+	}
+	474.1.1 = { # Awarded for defeating Rouran attack on Dunhuang
+		holder = liang_013
+		liege = k_xia
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		holder = tuoba_wei_001 
+	}
+	542.12.7 = {
+		holder = tuoba_wei_003 
+	}
+	544.1.1 = {
+		holder = han_misc_11 
+	}
+}
+c_guazhou = {
+	# Zhang Gui appointed governor of Liang province
+	301.1.1 = {
+		holder = former_liang_003
+		government = feudal_government
+	}
+	314.6.22 = {
+		holder = former_liang_005
+	}
+	320.6.25 = {
+		holder = former_liang_006
+		liege="k_xia"
+	}
+	324.5.16 = {
+		holder = former_liang_008
+	}
+	346.9.20 = {
+		holder = former_liang_010
+	}
+	350.1.1 = {
+		holder = yin_001
+	}
+	395.1.1 = {
+		holder = western_liang_043
+	}
+	# Formally independent from Later Liang
+	400.1.1 = {
+		holder = western_liang_005
+		liege = k_liang_west
+	}
+	417.5.5 = {
+		holder = western_liang_009
+	}
+	420.6.12 = {
+		holder = western_liang_011
+	}
+	474.1.1 = { # Awarded for defeating Rouran attack on Dunhuang
+		holder = liang_013
+		liege = k_xia
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		holder = tuoba_wei_001 
+	}
+	542.12.7 = {
+		holder = tuoba_wei_003 
+	}
+	544.1.1 = {
+		holder = han_misc_11 
+	}
+}
+#Dajing
+#Yifu tribal clan
+c_dajing = {
+	# Zhang Gui appointed governor of Liang province
+	301.1.1 = {
+		holder = former_liang_003
+	}
+	314.6.22 = {
+		holder = former_liang_005
+	}
+	320.6.25 = {
+		holder = former_liang_006
+	}
+	324.5.16 = {
+		holder = former_liang_008
+	}
+	346.9.20 = {
+		holder = former_liang_010
+	}
+	353.11.2 = {
+		holder = former_liang_012
+	}
+	353.12.15 = {
+		holder = former_liang_009
+	}
+	355.9.11 = {
+		holder = former_liang_013
+	}
+	# Date that Tufa Sifujan became chief of the Tufa Xianbei
+	# Zhejue Xianbei
+	356.1.1 = {
+		holder = xianbei_018
+		liege = d_liangzhou
+	}
+	389.1.27 = {
+		holder = xianbei_019
+	}
+	397.6.1 = {
+		liege = k_liang_south	
+	}
+	401.7.1 = {
+		holder = xiongnu_008
+	}
+	433.1.1 = {
+		holder = xiongnu_013
+	}
+	444.4.4 = { # Conquered by Rouran
+		holder = xiongnu_016
+		liege = 0
+	}
+	474.1.1 = { # Awarded for defeating Rouran attack on Dunhuang
+		holder = liang_014
+		liege = k_xia
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		holder = tuoba_wei_004
+	}
+}
+c_shazhou = {
+	361.1.1 = {	change_development_level = 8 }
+	476.1.1 = {	change_development_level = 10 }
+	532.1.1 = {	change_development_level = 12 }
+	632.1.1 = {	change_development_level = 14 }
+	768.1.1 = {	change_development_level = 16 }
+	361.1.1 = {
+		holder = western_liang_043
+		government = feudal_government
+		liege = d_guiyi
+	}
+	# A bit early but to give him a head start
+	395.1.1 = {
+		holder = western_liang_005
+	}
+	417.5.5 = {
+		holder = western_liang_009
+	}
+	420.6.12 = {
+		holder = western_liang_011
+	}
+	474.1.1 = { # Awarded for defeating Rouran attack on Dunhuang
+		holder = liang_013
+		liege = k_xia
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		holder = tuoba_wei_001 
+	}
+	542.12.7 = {
+		holder = tuoba_wei_003 
+	}
+	544.1.1 = {
+		holder = han_misc_11 
+	}
+}
+c_shunzhou = {
+	320.6.25 = {
+		holder = former_liang_006
+	}
+	324.5.16 = {
+		holder = former_liang_008
+	}
+	346.9.20 = {
+		holder = former_liang_010
+	}
+	353.11.2 = {
+		holder = former_liang_012
+	}
+	353.12.15 = {
+		holder = former_liang_009
+	}
+	355.9.11 = {
+		holder = former_liang_013
+	}
+	363.8.25 = {
+		holder = former_liang_011
+	}
+	395.1.1 = {
+		holder = liang_011
+		liege = k_liang_later
+	}
+	# 398.1.1 = {
+	# 	liege = 0
+	# }
+	# Technically under Northern Wei
+	442.1.1 = {
+		holder = western_liang_030 
+	}
+	459.10.15 = {
+		holder = western_liang_033 
+	}
+	502.5.28 = {
+		holder = western_liang_034 
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		holder = han_misc_11
+	}
+}
+d_wuluhai = {
+	# Helan tribe of Xianbei
+	320.1.1 = {
+		holder = xianbei_032
+		government = nomadic_government
+	}
+	349.3.22 = {
+		holder = xianbei_033
+	}
+	387.4.8 = {
+		holder = xianbei_036
+	}
+	440.1.1 = { # Hu family, officials under Northern Wei whose hometown was in Anding (modern-day Zhenyuan County, Gansu)
+		liege = k_xia
+		holder = hu_liang_002
+	}
+	460.7.12 = { 
+		holder = hu_liang_008
+	}
+	490.3.7 = { 
+		holder = hu_liang_010
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		holder = hu_liang_014
+	}
+}
+c_wuda = {
+	320.1.1 = {
+		holder = xianbei_032
+		government = nomadic_government
+	}
+	349.3.22 = {
+		holder = xianbei_033
+	}
+	387.4.8 = {
+		holder = xianbei_036
+	}
+	440.1.1 = { # Hu family, officials under Northern Wei whose hometown was in Anding (modern-day Zhenyuan County, Gansu)
+		liege = k_xia
+		holder = hu_liang_002
+	}
+	460.7.12 = { 
+		holder = hu_liang_008
+	}
+	490.3.7 = { 
+		holder = hu_liang_010
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		holder = hu_liang_014
+	}
+}
+d_qilin = {
+	# Temporary placeholder for now
+	476.1.1 = {
+		holder = western_liang_046
+		liege = k_xia
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		holder = tuoba_wei_001 
+	}
+	542.12.7 = {
+		holder = tuoba_wei_003 
+	}
+	544.1.1 = {
+		holder = han_misc_11 
+	}
+}
+c_qilin = {
+	320.1.1 = {
+		holder = xiongnu_001
+		government = nomadic_government
+	}
+	357.8.10 = {
+		holder = xiongnu_002
+		government = feudal_government
+		liege = d_ganzhou
+	}
+	383.12.16 = {
+		holder = xiongnu_008
+	}
+	433.1.1 = {
+		holder = xiongnu_013
+	}
+	476.1.1 = {
+		holder = western_liang_046
+		liege = k_xia
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		holder = tuoba_wei_001 
+	}
+	542.12.7 = {
+		holder = tuoba_wei_003 
+	}
+	544.1.1 = {
+		holder = han_misc_11 
+	}
+}
+d_yijinai = {
+	# Temporary placeholder for now
+	476.1.1 = {
+		holder = western_liang_048
+		liege = k_xia
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		holder = hu_liang_014
+	}
+}
+c_yijinai = {
+	320.1.1 = {
+		holder = xianbei_032
+		government = nomadic_government
+		liege = d_wuluhai
+	}
+	349.3.22 = {
+		holder = xianbei_033
+	}
+	387.4.8 = {
+		holder = xianbei_038
+	}
+	476.1.1 = {
+		holder = western_liang_048
+		liege = d_yijinai
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		holder = hu_liang_016
+	}
+}
+k_liang_later = {
+	386.1.1 = {
+		holder = di_001
+		government = feudal_government	
+	}
+	399.1.1 = {
+		holder = di_004
+	}
+	400.1.1 = {
+		holder = di_002
+	}
+	400.5.1 = { # technically from 397
+		holder = liang_001
+	}
+	401.7.1 = {
+		holder = 0
+	}
+	# 401.7.1 = {
+	# 	holder = xiongnu_008
+	# }
+	# 433.1.1 = {
+	# 	holder = xiongnu_013
+	# }
+	# # Technically under Northern Wei
+	# 442.1.1 = {
+	# 	holder = western_liang_030 
+	# }
+	# 459.10.15 = {
+	# 	holder = western_liang_033 
+	# }
+	# 502.5.28 = {
+	# 	holder = western_liang_034 
+	# }
+}
+k_liang_north = {
+	397.6.1 = {
+		holder = liang_001
+		government = feudal_government	
+	}
+	401.7.1 = {
+		holder = xiongnu_008
+	}
+	433.1.1 = {
+		holder = xiongnu_013
+	}
+	439.1.1 = { # Conquered by Northern Wei
+		holder = 0
+	}
+	# Juqu remnants fled to Gaochang
+	442.1.1 = {
+		holder = xiongnu_015
+	}
+	444.4.4 = {
+		holder = xiongnu_016
+	}
+	460.9.29 = { # Conquered by Rouran
+		holder = 0
+	}
+}
+c_suzhou = {
+	361.1.1 = {
+		holder = han_misc_4
+		government = feudal_government
+		liege = d_ganzhou
+	}
+	383.12.16 = {
+		holder = xiongnu_008
+		#government = feudal_government
+	}
+	388.1.1 = {		
+		liege = d_ganzhou
+	}
+	433.1.1 = {
+		holder = xiongnu_013
+	}
+	476.1.1 = {
+		holder = han_misc_3
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		holder = linghu_liang_005
+	}
+}
+c_yalong = {
+	320.1.1 = {
+		holder = xiongnu_001
+		government = nomadic_government
+	}
+	357.8.10 = {
+		holder = xiongnu_002
+		government = feudal_government
+		liege = d_ganzhou
+	}
+	383.12.16 = {
+		holder = xiongnu_008
+	}
+	433.1.1 = {
+		holder = xiongnu_013
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		holder = tuoba_wei_005
+	}
+}
+c_yumen = {
+	388.1.1 = {
+		holder = western_liang_035
+		government = feudal_government
+		liege = d_ganzhou
+	}
+	476.1.1 = {
+		holder = han_misc_3
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		holder = linghu_liang_005
+	}
+}
+c_linze = {
+	361.1.1 = {
+		holder = han_misc_7
+		government = feudal_government
+		liege = d_ganzhou
+	}
+	388.1.1 = {
+		holder = liang_006
+		#government = feudal_government
+		#liege = d_ganzhou
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		holder = linghu_liang_005
+	}
+}
+c_gaotai = {
+	350.1.1 = {
+		holder = han_misc_6
+		government = feudal_government
+		liege = d_ganzhou
+	}
+	390.1.1 = {
+		holder = xiongnu_007
+		#liege = d_ganzhou
+	}
+	401.6.1 = {
+		holder = xiongnu_008
+	}
+	433.1.1 = {
+		holder = xiongnu_013
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		holder = linghu_liang_005
+	}
+}
+c_jinta = {
+	385.1.1 = {
+		holder = liang_004
+		government = feudal_government
+		liege = k_liang_later
+	}
+	388.1.1 = {
+		liege = d_ganzhou
+	}
+	476.1.1 = {
+		holder = han_misc_3
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		holder = linghu_liang_006 # linghu_liang_005 
+	}
+}
+c_heihe = {
+	385.1.1 = {
+		holder = liang_005
+		government = feudal_government
+		liege = k_liang_later
+	}
+	388.1.1 = {
+		liege = d_ganzhou
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		holder = linghu_liang_006 # linghu_liang_005 
+	}
+}
+c_wentugaole = {
+	320.1.1 = {
+		holder = xianbei_032
+		government = nomadic_government
+		liege = d_wuluhai
+	}
+	349.3.22 = {
+		holder = xianbei_033
+	}
+	387.4.8 = {
+		holder = xianbei_037
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		holder = hu_liang_016
+	}
+}
+k_liang_west = {
+	# Formally independent from Later Liang
+	400.1.1 = {
+		holder = western_liang_005
+	}
+	417.5.5 = {
+		holder = western_liang_009
+	}
+	420.6.12 = {
+		holder = western_liang_011
+	}
+	421.1.1 = { # Conquered by Northern Liang
+		holder=0
+	}
+}
+c_yumenguan = {
+	350.1.1 = {
+		holder = western_liang_038
+		government = feudal_government
+		liege = d_guiyi
+	}
+	395.1.1 = {
+		holder = western_liang_005
+	}
+	476.1.1 = {
+		holder = yin_003
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		holder = linghu_liang_003
+	}
+}
+c_subei = {
+	395.1.1 = {
+		holder = western_liang_020
+		government = feudal_government
+		liege = d_guiyi
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		holder = tuoba_wei_005
+	}
+}
+c_aksay = {
+	350.1.1 = {
+		holder = western_liang_038
+		government = feudal_government
+		liege = d_guiyi
+	}
+	395.1.1 = {
+		holder = yin_002
+	}
+	417.5.5 = {
+		holder = western_liang_009
+	}
+	420.6.12 = {
+		holder = western_liang_011
+	}
+	476.1.1 = {
+		holder = western_liang_047
+		liege = k_xia
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		holder = tuoba_wei_005 
+	}
+}
+c_haltang = {
+	350.1.1 = {
+		holder = western_liang_038
+		government = feudal_government
+		liege = d_guiyi
+	}
+	395.1.1 = {
+		holder = yin_002
+	}
+	417.5.5 = {
+		holder = western_liang_009
+	}
+	420.6.12 = {
+		holder = western_liang_011
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		holder = tuoba_wei_005
+	}
+}
+c_hongliuyuan = {
+	361.1.1 = {
+		holder = western_liang_043
+		government = feudal_government
+		liege = d_guiyi
+	}
+	380.1.1 = {
+		holder = western_liang_022
+	}
+	388.1.1 = {		
+		liege = d_ganzhou
+	}
+	476.1.1 = {
+		holder = yin_003
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		holder = linghu_liang_003
+	}
+}
+c_mazongshan = {
+	361.1.1 = {
+		holder = western_liang_003
+		government = feudal_government
+		liege = d_guiyi
+	}
+	380.1.1 = {
+		holder = western_liang_022
+	}
+	388.1.1 = {		
+		liege = d_ganzhou
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		holder = hu_liang_016
+		liege = d_yijinai
+	}
+}
+c_changma = {
+	395.1.1 = {
+		holder = western_liang_004
+		government = feudal_government
+		liege = d_guiyi
+	}
+	476.1.1 = {
+		holder = yin_003
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		holder = han_misc_13
+	}
+}
+d_aksay = {
+	# Temporary placeholder for now
+	476.1.1 = {
+		holder = western_liang_047
+		liege = k_xia
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		holder = tuoba_wei_005
+	}
+}
+c_xingqing = {
+	360.1.1 = {
+		holder = liang_007
+		government = feudal_government
+		liege = k_xia
+	}
+	386.1.1 = {
+		holder = di_001
+		government = feudal_government	
+	}
+	395.1.1 = {
+		liege = k_liang_later #k_xia
+	}
+	399.1.1 = {
+		holder = di_004
+	}
+	400.1.1 = {
+		holder = di_002
+	}
+	400.5.1 = { # technically from 397
+		holder = liang_001
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		holder = han_misc_11
+	}
+}
+
+d_zhenfan = {
+	350.1.1 = {
+		holder = han_misc_5
+		liege = k_xia
+	}
+	476.1.1 = { # Hu family, officials under Northern Wei whose hometown was in Anding (modern-day Zhenyuan County, Gansu)
+		#government = feudal_government
+		holder = hu_liang_010
+		#liege = k_xia
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		government = feudal_government
+		holder = han_misc_11
+	}
+}
+c_tenggeli = {
+	# Wang Qiji
+	395.1.1 = {
+		holder = liang_010
+		government = tribal_government
+		liege = k_liang_later #k_xia
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		government = feudal_government
+		holder = han_misc_11 
+	}
+}
+c_zhenfan = {
+	350.1.1 = {
+		holder = han_misc_5
+		liege = k_xia
+	}
+	# Lu Zuan
+	395.1.1 = {
+		holder = di_002
+		government = tribal_government
+		liege = k_liang_later #k_xia
+	}
+	476.1.1 = { # Hu family, officials under Northern Wei whose hometown was in Anding (modern-day Zhenyuan County, Gansu)
+		#government = feudal_government
+		holder = hu_liang_010
+		#liege = k_xia
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		government = feudal_government
+		holder = han_misc_11
+	}
+}
+c_alxa = {
+	# Lu Hong
+	395.1.1 = {
+		holder = di_003
+		government = tribal_government
+		liege = k_liang_later #k_xia
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		government = feudal_government
+		holder = han_misc_11
+	}
+}
+k_liang_south = {
+	397.6.1 = {
+		holder = xianbei_002
+	}
+	400.2.1 = {
+		holder = xianbei_008
+	}
+	402.9.4 = {
+		holder = xianbei_011
+	}
+	414.1.1 = { # Defeated by Western Qin
+		holder = 0
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		holder = tuoba_wei_001 
+	}
+	542.12.7 = {
+		holder = tuoba_wei_003 
+	}
+	544.1.1 = {
+		holder = han_misc_11 
+	}
+}
+
+#Baiyin
+c_baiyin = {
+	350.1.1 = {
+		holder = han_misc_8
+		government = feudal_government
+	}
+	371.9.5 = {
+		holder = han_misc_9
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		holder = tuoba_wei_004 
+	}
+}
+#Fanhe
+c_fanhe = {
+	# Guo Nen
+	395.1.1 = {
+		holder = liang_007
+		government = feudal_government
+		liege = k_liang_later #k_xia
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		holder = han_misc_12
+		liege="d_liangzhou"
+	}
+}
+d_shanzhou = {
+	# Zhang Gui appointed governor of Liang province
+	# Zhang Gui appointed governor of Liang province
+	301.1.1 = {
+		holder = former_liang_003
+		government = feudal_government
+	}
+	314.6.22 = {
+		holder = former_liang_005
+	}
+	320.6.25 = {
+		holder = former_liang_006
+		liege="k_xia"
+	}
+	324.5.16 = {
+		holder = former_liang_008
+	}
+	346.9.20 = {
+		holder = former_liang_010
+	}
+	353.11.2 = {
+		holder = former_liang_012
+	}
+	353.12.15 = {
+		holder = former_liang_009
+	}
+	355.9.11 = {
+		holder = former_liang_013
+	}
+	360.1.1 = {
+		holder = xianbei_028
+		government = tribal_government
+		liege=0
+	}
+	390.2.8 = {
+		holder = xianbei_029
+	}
+	398.1.1 = { # Submits to Southern Liang
+		liege=k_liang_south
+	}
+	414.1.1 = { # Defeated by Western Qin
+		liege = 0
+		holder = 0
+	}
+	# Temporary placeholder for now
+	476.1.1 = {
+		holder = western_liang_034
+		liege = k_xia
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		holder = tuoba_wei_001 
+	}
+	542.12.7 = {
+		holder = tuoba_wei_003 
+	}
+	544.1.1 = {
+		holder = han_misc_11 
+	}
+}
+
+c_shanzhou = {
+	# Zhang Gui appointed governor of Liang province
+	# Zhang Gui appointed governor of Liang province
+	301.1.1 = {
+		holder = former_liang_003
+		government = feudal_government
+	}
+	314.6.22 = {
+		holder = former_liang_005
+	}
+	320.6.25 = {
+		holder = former_liang_006
+		liege="k_xia"
+	}
+	324.5.16 = {
+		holder = former_liang_008
+	}
+	346.9.20 = {
+		holder = former_liang_010
+	}
+	353.11.2 = {
+		holder = former_liang_012
+	}
+	353.12.15 = {
+		holder = former_liang_009
+	}
+	355.9.11 = {
+		holder = former_liang_013
+	}
+	360.1.1 = {
+		holder = xianbei_028
+		government = tribal_government
+		liege=0
+	}
+	390.2.8 = {
+		holder = xianbei_029
+	}
+	398.1.1 = { # Submits to Southern Liang
+		liege=k_liang_south
+	}
+	414.1.1 = { # Defeated by Western Qin
+		liege = 0
+		holder = 0
+	}
+	# Temporary placeholder for now
+	476.1.1 = {
+		holder = western_liang_034
+		liege = k_xia
+	}
+	525.10.18 = { # When Yuan Rong arrived in Dunhuang to formally take over as governor of Guanzhou
+		holder = tuoba_wei_001 
+	}
+	542.12.7 = {
+		holder = tuoba_wei_003 
+	}
+	544.1.1 = {
+		holder = han_misc_11 
+	}
+}
+
+
+#copied from dzungaria 
+c_chamil = {
+	361.1.1 = {
+		holder = yin_001
+		liege=d_guiyi
+	}
+	395.1.1 = {
+		holder = kan_04 # To represent Chinese noble families in Gaochang
+		government = trade_city_state_government
+		liege=d_ganzhou
+	}
+	# Northern Liang rump state goes down, Rouran establish semi-independent state in Gaochang under local Chinese elite families
+	# Northern Liang rump state goes down, Rouran establish semi-independent state in Gaochang under local Chinese elite families
+	476.1.1 = {
+		holder = ma_01
+		liege = d_kara_khoja
+	}
+	768.1.1 = {
+		holder = xizhou_01
+	}
+}
+c_kara_khoja = {
+	361.1.1 = { change_development_level = 6 }
+	476.1.1 = { change_development_level = 7 }
+	768.1.1 = { change_development_level = 8 }
+
+	361.1.1 = {
+		holder = gaochang_placeholder_01
+		government = trade_city_state_government
+		liege=d_kara_khoja
+	}
+	395.1.1 = {
+		holder = kan_04 # To represent Chinese noble families in Gaochang
+		liege=d_ganzhou
+	}
+	435.1.1 = {
+		liege = d_kara_khoja
+	}
+	# Northern Liang rump state goes down, Rouran establish semi-independent state in Gaochang under local Chinese elite families
+	460.9.29 = {
+		holder = kan_01
+	}
+	477.3.24 = {
+		holder = kan_02
+	}
+	478.2.10 = {
+		holder = kan_03
+	}
+	488.4.2 = {
+		holder = zhang_gaochang_01
+	}
+	496.6.1 = {
+		holder = ma_01
+	}
+	768.1.1 = {
+		holder = xizhou_01
+	}
+}

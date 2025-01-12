@@ -1,0 +1,1045 @@
+﻿#Constantian
+
+constantian_01 = {
+	name = "Constantius"
+	dynasty = constantian
+	religion = "nicene"
+	culture = "thracio_roman"
+	356.1.1 = {
+		birth = yes
+	}
+	417.1.1 = {
+		add_spouse = 145229 #Galla Placidia
+	}
+	421.1.25 = {
+		death = yes
+	}
+}
+
+##Spania
+spania_03 = {
+	name = "Comentiolus"
+	culture = "thracio_roman"
+	religion = "chalcedonian"
+	541.1.1 = {
+		birth = yes
+	}
+	602.1.1 = {
+		death = yes
+	}
+}
+daciae_03 = {
+	name = "Lupicinus" # roman general against goths
+	culture = "thracio_roman"
+	religion = "nicene"
+	trait = deceitful
+	trait = cynical
+	trait = stubborn
+	335.1.1 = {
+		birth = yes
+	}
+	361.1.1 = {
+		add_courtier = character:992042
+		add_courtier = character:992043
+	}
+	381.1.26 = {
+		death = yes
+	}
+}
+daciae_04 = {
+	name = "Theodorus"
+	culture = "thracio_roman"
+	religion = "arianism"
+	321.1.1 = {
+		birth = yes
+	}
+	381.1.1 = {
+		death = yes
+	}
+}
+daciae_10 = {
+	name = "Bardas"
+	culture = "thracio_roman"
+	religion = "messalian"
+	334.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+daciae_11 = {
+	name = "Hieron"
+	culture = "thracio_roman"
+	religion = "hellenic_pagan"
+	334.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+daciae_20 = {
+	name = "Procopius"
+	culture = "thracio_roman"
+	religion = "chalcedonian"
+	439.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+daciae_21 = {
+	name = "Zoilus"
+	culture = "thracio_roman"
+	religion = "messalian"
+	442.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+daciae_22 = {
+	name = "Phocas"
+	culture = "thracio_roman"
+	religion = "chalcedonian"
+	446.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+daciae_25 = {
+	name = "Godila"
+	religion = chalcedonian
+	culture = "gothic"
+	495.1.1 = {
+		birth = yes
+	}
+	550.1.1 = {
+		death = yes
+	}
+}
+daciae_26 = {
+	name = "Constantiolus"
+	religion = chalcedonian
+	culture = "thracio_roman"
+	500.1.1 = {
+		birth = yes
+	}
+	582.1.1 = {
+		death = yes
+	}
+}
+daciae_32 = {
+	name = "Avienus"
+	culture = "thracio_roman"
+	religion = "chalcedonian"
+	501.1.1 = {
+		birth = yes
+	}
+	578.1.1 = {
+		death = yes
+	}
+}
+daciae_33 = {
+	name = "Dalmatius"
+	culture = "thracio_roman"
+	religion = "chalcedonian"
+	503.1.1 = {
+		birth = yes
+	}
+	578.1.1 = {
+		death = yes
+	}
+}
+daciae_35 = {
+	name = "Dalmatius"
+	culture = "thracio_roman"
+	religion = "chalcedonian"
+	503.1.1 = {
+		birth = yes
+	}
+	578.1.1 = {
+		death = yes
+	}
+}
+
+#Leo
+70517 = {
+	name = "Leon"
+	# AKA: Leon 'the Thracian'
+	dna = 70517_leon
+	dynasty = 1022188
+	martial = 4
+	diplomacy = 6
+	intrigue = 5
+	stewardship = 6
+	religion = "nicene"
+	culture = "thracio_roman"
+	trait = trusting
+	trait = content
+	trait = education_diplomacy_1
+	401.1.1 = {
+		birth = "401.1.1"
+	}
+	445.1.1 = {
+		add_spouse = leo_02
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	474.1.18 = {
+		death = "474.1.18"
+	}
+}
+70530 = {
+	name = "Ariadna"
+	dynasty = 1022188
+	female = yes
+	martial = 3
+	diplomacy = 6
+	intrigue = 8
+	stewardship = 5
+	religion = "nicene"
+	culture = "thracio_roman"
+	trait = greedy
+	trait = lustful
+	trait = education_intrigue_2
+	father = 70517
+	mother = leo_02
+	450.1.1 = {
+		birth = "450.1.1"
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	515.1.1 = {
+		death = "515.1.1"
+	}
+}
+leo_08 = {
+	name= "Leontia"
+	female = yes
+	dynasty = 1022188
+	religion= "chalcedonian"
+	culture= "thracio_roman"
+	father = 70517
+	mother = leo_02
+	451.1.1 = {
+		birth = yes
+	}
+	486.1.1 = {
+		death = yes
+	}
+}
+leo_07 = {
+	name= "Leo"
+	dynasty = 1022188
+	religion= "chalcedonian"
+	culture= "thracio_roman"
+	father = 70517
+	mother = leo_02
+	463.1.1 = {
+		birth = yes
+	}
+	463.6.1 = {
+		death = yes
+	}
+}
+leo_01 = {
+	name= "Verinus"
+	dynasty = verinus_dynasty
+	religion= "nicene"
+	culture= "thracio_roman"
+	395.1.1 = {
+		birth = yes
+	}
+	445.1.1 = {
+		death = yes
+	}
+}
+leo_02 = {
+	name= "Verina"
+	female = yes
+	dynasty = verinus_dynasty
+	religion= "nicene"
+	culture= "thracio_roman"
+	father = leo_01
+	420.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = "coptic"
+	}
+	484.1.1 = {
+		death = yes
+	}
+}
+leo_05 = {
+	name= "Ariadna"
+	female = yes
+	dynasty = verinus_dynasty
+	religion= "nicene"
+	culture= "thracio_roman"
+	father = leo_01
+	425.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = "coptic"
+	}
+	475.1.1 = {
+		death = yes
+	}
+}
+basiliscus = {
+	name = "Basiliscus"
+	dynasty = verinus_dynasty
+	martial = 2
+	diplomacy = 4
+	intrigue = 1
+	stewardship = 1
+	religion = "nicene"
+	culture = "thracio_roman"
+	father = leo_01
+	trait = stubborn
+	trait = greedy
+	trait = arrogant
+	trait = education_diplomacy_1
+	430.3.13 = {
+		birth = "441.3.13"
+	}
+	451.1.1 = {
+		religion = "coptic"
+	}
+	476.8.18 = {
+		death = "476.8.18"
+	}
+}
+leo_03 = {
+	name= "Marcus"
+	dynasty = verinus_dynasty
+	religion= "coptic"
+	culture= "thracio_roman"
+	father = basiliscus
+	460.1.1 = {
+		birth = yes
+	}
+	485.1.1 = {
+		death = yes
+	}
+}
+leo_04 = {
+	name= "Aelia"
+	female = yes
+	dynasty = verinus_dynasty
+	religion= "nicene"
+	culture= "thracio_roman"
+	mother = leo_05
+	442.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = "coptic"
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+leo_06 = {
+	name= "Armatus"
+	dynasty = verinus_dynasty
+	religion= "nicene"
+	culture= "thracio_roman"
+	mother = leo_05
+	trait = arrogant
+	trait = eccentric
+	trait = deceitful
+	trait = ambitious
+	440.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = "coptic"
+	}
+	477.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = 996003 # Hunulf
+		}
+	}
+}
+
+#Belisarius Dynasty
+
+belisarius_001 = {
+	name = "Belisarius"
+	dynasty = belisarius_dynasty
+	dna = reconquest_belisarius
+	martial = 12
+	diplomacy = 7
+	intrigue = 2
+	stewardship = 5
+	learning = 5
+	prowess = 10
+	religion = "chalcedonian"
+	culture = "thracio_roman"
+	trait = calm
+	trait = diligent
+	trait = just
+	trait = education_martial_5
+	trait = strategist
+	trait = cautious_leader
+	trait = shrewd
+	trait = physique_good_2
+	sexuality = heterosexual
+	500.8.28 = {
+		birth = yes
+		learn_language = language_greek
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+	519.10.21 = {
+		add_character_modifier = last_of_the_romans
+		add_spouse = belisarius_002
+		effect = {
+			set_relation_soulmate = character:belisarius_002
+		}
+	}
+	530.1.1 = {
+		effect = {
+			add_opinion = {
+				target = character:cappadocia_07
+				modifier = disrespect_opinion
+				opinion = -100
+			}
+		}
+	}
+	532.1.1 = {
+		set_relation_friend = character:70512
+		set_relation_friend = character:armenian_02
+		add_courtier = character:greek_03
+		add_courtier = character:995008 # Faras the herulian
+		add_courtier = character:thracio_06 # Rufinus the thracian
+		add_courtier = character:hun_10 # Aigan
+		add_courtier = character:hun_13 # Ricila
+		add_courtier = character:hun_14 # Uliaris
+		add_courtier = character:hun_15 # Zarter
+		add_courtier = character:hun_16 # Eskam
+		add_courtier = character:hun_17 # Corsoman
+		add_courtier = character:990026 # Sinnion
+		add_courtier = character:thracio_03 # Stotzas
+	}
+	565.3.3 = {
+		death = yes
+	}
+}
+
+belisarius_002 = {
+	name = "Antonina"
+	female = yes
+	dna = dna_antonina
+	martial = 5
+	diplomacy = 10
+	intrigue = 12
+	stewardship = 3
+	learning = 3
+	prowess = 3
+	religion = "chalcedonian"
+	culture = "greek"
+	trait = shrewd
+	trait = deceitful
+	trait = calm
+	trait = ambitious
+	trait = confider
+	trait = beauty_good_01
+	trait = education_intrigue_3
+	
+	495.8.28 = {
+		birth = yes
+	}
+	532.1.1 = {
+		set_relation_friend = character:syria_19
+	}
+	570.5.11 = {
+		death = yes
+	}
+}
+
+belisarius_003 = {
+	name = "Ioannina"
+	female = yes
+	dynasty = belisarius_dynasty
+	religion = "chalcedonian"
+	culture = "thracio_roman"
+	father = belisarius_001
+	mother = belisarius_002
+	520.1.1 = {
+		birth = yes
+	}
+	585.1.1 = {
+		death = yes
+	}
+}
+### Roman Emperors
+145265 = {
+	name = "Maximinus"
+	# Caesar Gaius Julius Verus Maximinus Augustus
+	dynasty = 1022214
+	religion = "hellenic_pagan"
+	culture = "thracio_roman"
+	father = 145265_father
+	mother = 145265_mother
+	trait = strong
+	trait = callous
+	trait = zealous
+	trait = education_martial_2
+	170.1.1 = {
+		birth = "170.1.1"
+	}
+	238.7.29 = {
+		death = "238.7.29"
+	}
+}
+145265_father = {
+	name = "Micca"
+	dynasty = 1022214
+	religion = "hellenic_pagan"
+	culture = "thracio_roman"
+	145.1.1 = {
+		birth = yes
+	}
+	169.1.1 = {
+		add_spouse = 145265_mother
+	}
+	195.1.1 = {
+		death = yes
+	}
+}
+145073 = {
+	name = "Tiberius"
+	dynasty = tiberius_dynasty
+	religion = "chalcedonian"
+	culture = "thracio_roman"
+	trait = education_stewardship_2
+	trait = generous
+	trait = temperate
+	trait = honest
+	trait = cynical
+	532.1.1 = {
+		birth = yes
+	}
+	552.1.1 = {
+		set_relation_friend = character:70511 # Iustinus
+	}
+	570.1.1 = {
+		add_spouse = greek_10 # Ino Anastasia
+	}
+	582.8.14 = {
+		death = yes
+	}
+}
+thracio_24 = {
+	name = "Constantina"
+	female = yes
+	dynasty = tiberius_dynasty
+	religion = "chalcedonian"
+	culture = "thracio_roman"
+	father = 145073
+	mother = greek_10
+	558.1.1 = {
+		birth = yes
+	}
+	605.1.1 = {
+		death = {
+			death_reason = death_execution
+			killer = 145072 # Focas
+		}
+	}
+}
+thracio_25 = {
+	name = "Charito"
+	female = yes
+	dynasty = tiberius_dynasty
+	religion = "chalcedonian"
+	culture = "thracio_roman"
+	father = 145073
+	mother = greek_10
+	560.1.1 = {
+		birth = yes
+	}
+	605.1.1 = {
+		death = yes
+	}
+}
+
+thracio_01 = {
+	name = "Sittas"
+	dynasty = sittas_dynasty
+	religion = "chalcedonian"
+	culture = "thracio_roman"
+	martial = 5
+	diplomacy = 6
+	stewardship = 5
+	trait = brave
+	trait = trusting
+	trait = diligent
+	trait = education_martial_3
+	trait = rough_terrain_expert
+	490.1.1 = {
+		birth = yes
+	}
+	530.1.1 = {
+		add_spouse = syria_23
+	}
+	532.1.1 = {
+		add_courtier = character:thracio_10 # Buzes
+		add_courtier = character:thracio_13 # Domentiolus
+		add_courtier = character:hun_11 # Sunicas ?
+		add_courtier = character:hun_12 # Simmas ?
+	}
+	539.10.1 = {
+		death = {
+			death_reason = death_battle
+			killer = arsacid_63 # Artabanes
+		}
+	}
+}
+70511_spouse = {
+	name = "Sophia"
+	female = yes
+	dynasty = sittas_dynasty
+	religion = "coptic"
+	culture = "thracio_roman"
+	father = thracio_01
+	mother = syria_23
+	527.1.1 = {
+		birth = yes
+	}
+	601.1.1 = {
+		death = yes
+	}
+}
+thracio_02 = {
+	name = "Ioannes"
+	religion = "chalcedonian"
+	culture = "thracio_roman"
+	martial = 10
+	diplomacy = 5
+	stewardship = 5
+	intrigue = 9
+	learning = 3
+	prowess = 10
+	trait = brave
+	trait = ambitious
+	trait = callous
+	trait = education_martial_3
+	trait = reckless
+	trait = disloyal
+	trait = athletic
+	510.1.1 = {
+		birth = yes
+	}
+	543.1.1 = {
+		add_spouse = illyro_roman_04
+	}
+	560.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+thracio_03 = {
+	name = "Stotzas"
+	religion = "chalcedonian"
+	culture = "thracio_roman"
+	martial = 5
+	diplomacy = 10
+	stewardship = 5
+	intrigue = 15
+	learning = 3
+	prowess = 10
+	trait = ambitious
+	trait = disloyal
+	trait = brave
+	trait = callous
+	trait = education_martial_3
+	510.1.1 = {
+		birth = yes
+	}
+	541.1.1 = {
+		add_spouse = mauro_roman_06
+	}
+	545.9.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+thracio_04 = {
+	name = "Baduarius"
+	dynasty = baduarius_dynasty
+	religion = "chalcedonian"
+	culture = "thracio_roman"
+	502.1.1 = {
+		birth = yes
+	}
+	545.1.1 = {
+		death = yes
+	}
+}
+thracio_05 = {
+	name = "Baduarius"
+	dynasty = baduarius_dynasty
+	religion = "chalcedonian"
+	culture = "thracio_roman"
+	father = thracio_04
+	532.1.1 = {
+		birth = yes
+	}
+	565.1.1 = {
+		add_spouse = illyro_roman_16 # Arabia
+	}
+	576.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+thracio_06 = {
+	name = "Rufinus" # thracian commander under Belisarius
+	religion = "chalcedonian"
+	culture = "thracian"
+	martial = 10
+	prowess = 10
+	500.1.1 = {
+		birth = yes
+	}
+	540.1.1 = {
+		death = yes
+	}
+}
+thracio_07 = {
+	name = "Vitalianus"
+	dynasty = zaldapa_dynasty
+	religion = "chalcedonian"
+	culture = "thracio_roman"
+	martial = 10
+	477.1.1 = {
+		birth = yes
+	}
+	513.1.1 = {
+		effect = {
+			set_relation_rival = character:70514 # Anastasius
+		}
+	}
+	520.1.1 = {
+		effect = {
+			set_relation_rival = character:70512 # Iustinianus
+		}
+	}
+	520.7.1 = {
+		death = {
+			death_reason = death_murder
+		}
+	}
+}
+thracio_08 = {
+	name = "Venilus"
+	dynasty = zaldapa_dynasty
+	religion = "chalcedonian"
+	culture = "thracio_roman"
+	father = thracio_07
+	494.1.1 = {
+		birth = yes
+	}
+	533.1.1 = {
+		death = yes
+	}
+}
+thracio_09 = {
+	name = "Venila"
+	female = yes
+	dynasty = zaldapa_dynasty
+	religion = "chalcedonian"
+	culture = "thracio_roman"
+	father = thracio_07
+	495.1.1 = {
+		birth = yes
+	}
+	545.1.1 = {
+		death = yes
+	}
+}
+thracio_10 = {
+	name = "Buzes"
+	dynasty = zaldapa_dynasty
+	religion = "chalcedonian"
+	culture = "thracio_roman"
+	father = thracio_07
+	trait = education_martial_2
+	501.1.1 = {
+		birth = yes
+	}
+	559.1.1 = {
+		death = yes
+	}
+}
+thracio_11 = {
+	name = "Cutzes"
+	dynasty = zaldapa_dynasty
+	religion = "chalcedonian"
+	culture = "thracio_roman"
+	father = thracio_07
+	503.1.1 = {
+		birth = yes
+	}
+	528.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+thracio_12 = {
+	name = "Domentius" # fictional name
+	dynasty = domentius_dynasty
+	religion = "chalcedonian"
+	culture = "thracio_roman"
+	482.1.1 = {
+		birth = yes
+	}
+	515.1.1 = {
+		add_spouse = thracio_09
+	}
+	533.1.1 = {
+		death = yes
+	}
+}
+145072 = {
+	name = "Focas"
+	dynasty = domentius_dynasty
+	religion = "chalcedonian"
+	culture = "thracio_roman"
+	mother = thracio_14
+	trait = education_martial_2
+	trait = arrogant
+	trait = callous
+	trait = arbitrary
+	547.1.1 = {
+		birth = yes
+	}
+	575.1.1 = {
+		add_spouse = thracio_22
+	}
+	610.10.5 = {
+		death = {
+			death_reason = death_execution
+			killer = 145071 # Heraclius
+		}
+	}
+}
+thracio_13 = {
+	name = "Domentiolus"
+	dynasty = domentius_dynasty
+	religion = "chalcedonian"
+	culture = "thracio_roman"
+	father = thracio_12
+	mother = thracio_09
+	517.1.1 = {
+		birth = yes
+	}
+	565.1.1 = {
+		death = yes
+	}
+}
+thracio_14 = {
+	name = "Domentia" # mother of Focas
+	female = yes
+	dynasty = domentius_dynasty
+	religion = "chalcedonian"
+	culture = "thracio_roman"
+	father = thracio_12
+	mother = thracio_09
+	520.1.1 = {
+		birth = yes
+	}
+	575.1.1 = {
+		death = yes
+	}
+}
+thracio_19 = {
+	name = "Comentiolus"
+	dynasty = domentius_dynasty
+	religion = "chalcedonian"
+	culture = "thracio_roman"
+	mother = thracio_14
+	trait = education_martial_2
+	trait = vengeful
+	548.1.1 = {
+		birth = yes
+	}
+	611.1.1 = {
+		death = {
+			death_reason = death_murder
+		}
+	}
+}
+thracio_20 = {
+	name = "Domentiolus"
+	dynasty = domentius_dynasty
+	religion = "chalcedonian"
+	culture = "thracio_roman"
+	mother = thracio_14
+	549.1.1 = {
+		birth = yes
+	}
+	610.10.5 = {
+		death = {
+			death_reason = death_execution
+			killer = 145071 # Heraclius
+		}
+	}
+}
+thracio_21 = {
+	name = "Domentiolus"
+	dynasty = domentius_dynasty
+	religion = "chalcedonian"
+	culture = "thracio_roman"
+	father = thracio_20
+	trait = zealous
+	576.1.1 = {
+		birth = yes
+	}
+	630.1.1 = {
+		death = yes
+	}
+}
+thracio_22 = {
+	name = "Leontia"
+	female = yes
+	religion = "chalcedonian"
+	culture = "thracio_roman"
+	550.1.1 = {
+		birth = yes
+	}
+	616.1.1 = {
+		death = yes
+	}
+}
+thracio_23 = {
+	name = "Domentia"
+	female = yes
+	dynasty = domentius_dynasty
+	religion = "chalcedonian"
+	culture = "thracio_roman"
+	father = 145072
+	mother = thracio_22
+	577.1.1 = {
+		birth = yes
+	}
+	635.1.1 = {
+		death = yes
+	}
+}
+thracio_15 = {
+	name = "Cyrilus" #
+	religion = "chalcedonian"
+	culture = "thracio_roman"
+	trait=education_martial_2
+	500.1.1 = {
+		birth = yes
+	}
+	532.1.1={
+		employer=belisarius_001
+	}
+	575.1.1 = {
+		death = yes
+	}
+}
+thracio_16 = {
+	name = "Constantinus"
+	religion = "chalcedonian"
+	culture = "thracio_roman"
+	trait = education_martial_3
+	trait = wrathful
+	trait = paranoid
+	trait = greedy
+	500.1.1 = {
+		birth = yes
+	}
+	532.1.1={
+		employer = belisarius_001
+	}
+	575.1.1 = {
+		death = yes
+	}
+}
+thracio_17 = {
+	name = "Firmina"
+	female = yes
+	dynasty = baduarius_dynasty
+	religion = "chalcedonian"
+	culture = "thracio_roman"
+	father = thracio_05
+	mother = illyro_roman_16
+	570.1.1 = {
+		birth = yes
+	}
+	633.1.1 = {
+		death = yes
+	}
+}
+thracio_18 = {
+	name = "Hermogenes"
+	religion = "chalcedonian"
+	culture = "thracio_roman"
+	trait = education_diplomacy_4
+	trait = organizer # battle of Dara
+	484.1.1 = {
+		birth = yes
+	}
+	531.1.1 = {
+		employer = 70512 # Justinian
+	}
+	536.1.1 = {
+		death = yes
+	}
+}
+thracio_19 = {
+	name = "Ioannes" # Gibbus
+	religion = "chalcedonian"
+	culture = "thracio_roman"
+	trait = education_martial_3
+	trait = hunchbacked
+	450.1.1 = {
+		birth = yes
+		give_nickname = nick_the_gibbus
+	}
+	515.1.1 = {
+		death = yes
+	}
+}
+thracio_26 = {
+	name = "Theodosius"
+	religion = "chalcedonian"
+	culture = "thracio_roman"
+	trait = education_diplomacy_2
+	trait = deceitful
+	trait = craven
+	trait = humble
+	trait = beauty_good_2
+	516.1.1 = {
+		birth = yes
+	}
+	532.1.1 = {
+		employer = belisarius_001
+	}
+	556.1.1 = {
+		death = yes
+	}
+}

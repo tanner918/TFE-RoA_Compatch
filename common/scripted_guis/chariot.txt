@@ -1,0 +1,25 @@
+﻿blue_support = {
+	scope = character 
+
+	effect = {
+		remove_trait = green_support
+		add_trait = blue_support
+		set_variable = {
+			name = team
+			value = flag:blue
+		}
+	}
+}
+
+green_support = {
+	scope = character 
+
+	effect = {
+		remove_trait = blue_support
+		add_trait = green_support
+		set_variable = {
+			name = team
+			value = flag:green
+		}
+	}
+}

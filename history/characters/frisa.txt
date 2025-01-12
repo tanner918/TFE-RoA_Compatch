@@ -1,0 +1,75 @@
+﻿frisi_01 = {
+	name = "Gerbruht"
+	religion = "saxon_pagan"
+	culture = "frisa"
+	dynasty = dynsaty_Frisi
+	331.1.1 = {
+		birth = yes
+	}
+	395.1.1 = {
+		death = yes
+	}
+}
+frisi_02 = {
+	name = "Finn"
+	dynasty = folcwalding_dynasty
+	religion = "saxon_pagan"
+	culture = "frisa"
+	father = frisi_03
+	trait = honest
+	trait = brave
+	trait = arrogant
+	420.1.1 = {
+		birth = yes
+	}
+	441.1.1 = {
+		add_spouse = haking_03
+	}
+	476.1.1 = {
+		set_relation_rival = character:vigg_04 # Hengest
+	}
+	480.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+frisi_03 = {
+	name = "Folcwald"
+	dynasty = folcwalding_dynasty
+	religion = "saxon_pagan"
+	culture = "frisa"
+	375.1.1 = {
+		birth = yes
+	}
+	435.1.1 = {
+		death = yes
+	}
+}
+frisi_04 = {
+	name = "Folcwald"
+	dynasty = folcwalding_dynasty
+	religion = "saxon_pagan"
+	culture = "frisa"
+	father = frisi_02
+	mother = haking_03
+	450.1.1 = {
+		birth = yes
+	}
+	510.1.1 = {
+		death = yes
+	}
+}
+frisi_05 = {
+	name = "Radbod"
+	dynasty = folcwalding_dynasty
+	religion = "saxon_pagan"
+	culture = "frisa"
+	father = frisi_04
+	480.1.1 = {
+		birth = yes
+	}
+	535.1.1 = {
+		death = yes
+	}
+}

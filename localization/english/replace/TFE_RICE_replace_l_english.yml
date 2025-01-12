@@ -1,0 +1,48 @@
+﻿l_english:
+
+ #####################################
+ #
+ # OVERRIDE FOR RICE LOC
+ # WHEN RUNNING RICE+TFE
+ # DO NOT ALTER/MODIFY TO ENSURE IT WORKS WITH RICE
+ #
+ #####################################
+
+ # Indian Land Grants from RICE
+ RICE_india_land_grant_decision_req:0 "Own at least one [county|E] that in [GetGeographicalRegion('world_india').GetName]"
+ RICE_india_land_grant_decision_effect_tooltip_4:0 "There is a very small chance your [counties|E] will get a [minority_faiths|E] of a random [faith|E] of the [religion|E] you chose, or, even more rarely, convert to that [faith|E]"
+ game_concept_RICE_grant:0 "Grant"
+ game_concept_RICE_grants:0 "Grants"
+ game_concept_RICE_land_grant:0 "Land Grant"
+ game_concept_RICE_land_grants:0 "Land Grants"
+ game_concept_RICE_land_grants_desc:0 "[rulers|E] who follow $buddhism_religion_adj$, $hinduism_religion_adj$, or $jainism_religion_adj$ [faiths|E] can [decide|E] to $RICE_india_land_grant_decision$.\n\nWhen taking this [decision|E], you need to choose to grant land to one of the three [religions|E]. This means it is possible to grant land to a [religion|E] you don't follow.\n\nDoing so grants you a [character_modifier|E] boosting [opinion|E] for followers of that [religion|E] and adds [county_modifiers|E] to your [counties|E] with several benefits. The [county_modifier|E] reduces [tax|E] but increase and [development_growth|E]. If you follow a [faith|E] of the [religion|E] you chose, the [modifier|E] also improves [county_opinion|E], while if you don't, the [modifier|E] improves [development_growth|E] even more instead. Qualifying [counties|E] with a [church_holding|E] receive a more powerful version of the [modifier|E] you get.\n\nAdditionally, in affected [counties|E], the [decision|E] has a small chance of adding [minority_faiths|E] of a random [faith|E] of the [religion|E] you chose, or, even more rarely, outright converting the [counties|E] to that [faith|E]."
+
+
+ # Yazidi Rework
+ yazidi_religion:0 "West Iranic"
+ yazidi_religion_adj:0 "West Iranic"
+ yazidi_religion_adherent:0 "West Iranian"
+ yazidi_religion_adherent_plural:0 "West Iranians"
+ yazidi_religion_desc:0 "The mountains of northern Mesopotamia and Western Iran are home to Iranian-speaking peoples, who have, over centuries, strengthened their existing beliefs by syncretizing ideas from a multitude of spiritual traditions, including Zoroastrianism, Gnosticism, and the Abrahmic faiths."
+
+ meshefaresism:0 "Yarsanism"
+ meshefares_adj:0 "Yarsani"
+ meshefaresism_adj:0 "Yarsani"
+ meshefares_adherent:0 "Yarsani"
+ meshefaresism_adherent:0 "$meshefares_adherent$"
+ meshefares_adherent_plural:0 "Yarsanis"
+ meshefaresism_adherent_plural:0 "$meshefares_adherent_plural$"
+ meshefares_desc:0 "The "Group of Friends," also known as Ahl-e Haqq, or "People of Truth," believe that God manifests in one primary and seven secondary incarnations in each epoch of the world. These seven persons are called the #Italic Haft Tan#!. The primary incarnation of the current, fourth epoch is Sultan Sahak."
+ meshefaresism_desc:0 "$meshefares_desc$"
+ meshefaresism_holy_text:0 "$yarsani_religious_text$"
+ meshefaresism_holy_text_2:0 "$yarsani_religious_text$" # Optional translation alt
+ meshefaresism_holy_text_3:0 "$yarsani_religious_text$" # Optional translation alt
+
+ kitebacilweism:0 "Mehrism" # Dar = Tree # Kutayeism - Kutaye
+ kitebacilweism_adj:0 "Mehrist"
+ kitebacilweism_adherent:0 "Mehrist"
+ kitebacilweism_adherent_plural:0 "Mehrists"
+ kitebacilweism_desc:0 "The Northwest Iranians' old religious beliefs are related to but distinct from orthodox Zoroastrianism, which it may have coexisted during the Sassanids' heyday. Veneration of nature is prominent, and the old Iranian deity Mithra, or Mehr, plays an key cosmological role as the demiurge and common object of worship – a role that might have inspired the Roman Cult of Mithras centuries before."
+ kitebacilweism_holy_text:0 "$kurdish_pagan_religious_text$"
+ kitebacilweism_holy_text_2:0 "$kurdish_pagan_religious_text$" # Optional translation alt
+ kitebacilweism_holy_text_3:0 "$kurdish_pagan_religious_text$" # Optional translation alt

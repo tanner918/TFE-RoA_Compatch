@@ -1,0 +1,38 @@
+﻿
+leon_03 = {
+	name = "Taximagulos"
+	culture = "castran"
+	religion = "celto_hellenic_syncretism"
+	331.1.1 = {
+		birth = yes
+	}
+	375.1.1 = {
+		death = yes
+	}
+}
+leon_06 = {
+	name = "Fabius"
+	culture = "castran"
+	religion = "celto_hellenic_syncretism"
+	father = leon_03
+	369.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+leon_09 = {
+	name = "Segobax"
+	culture = "castran"
+	religion = "nicene"
+	446.1.1 = {
+		birth = yes
+	}
+	476.1.1 = {
+		religion = "chalcedonian"
+	}
+	500.1.1 = {
+		death = yes
+	}
+}

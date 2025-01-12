@@ -1,0 +1,398 @@
+﻿cultural_reconquest_cb = {
+	group = conquest
+	
+	allowed_for_character = {
+		OR = {
+			has_title = title:k_cantabria 
+			has_title = title:k_england
+		}
+		NOT = { 
+			scope:defender.culture = { 
+				OR = {
+					has_cultural_pillar = heritage_brythonic
+					has_cultural_pillar = heritage_goidelic
+					has_cultural_pillar = heritage_celtic
+				}
+			} 
+		}
+		scope:attacker.culture = { 
+			OR = {
+				has_cultural_pillar = heritage_brythonic
+				has_cultural_pillar = heritage_goidelic
+				has_cultural_pillar = heritage_celtic
+			}
+		}
+		NOT = {
+			has_character_flag = used_lifetime_culturalcb
+		}
+		NOT = {
+			government_has_flag = government_is_landless_adventurer
+		}
+	}
+	allowed_against_character_display_regardless = {
+		### TFE EDIT: War dec check
+		casus_belli_block = { SCOPEATK = scope:attacker SCOPEDEF = root }
+	}
+
+	combine_into_one = yes
+	target_titles = all
+	ignore_effect = change_title_holder
+
+	should_invalidate = {
+		NOT = {
+			any_in_list = {
+				list = target_titles
+				any_in_de_jure_hierarchy = {
+					tier = tier_county
+					holder = {
+						target_is_same_character_or_above = scope:defender
+					}
+				}
+			}
+		}
+	}
+
+	on_invalidated_desc = {
+		desc = msg_invalidate_war_title
+	}
+
+	on_invalidated = {
+		scope:attacker = {
+			remove_character_flag = used_lifetime_culturalcb
+		}
+	}
+
+	on_declaration = {
+		on_declared_war = yes
+		scope:attacker = {
+			add_character_flag = used_lifetime_culturalcb
+		}
+	}	
+
+	valid_to_start = {
+		scope:target = {
+			tier = tier_county
+			culture = scope:attacker.culture
+		}
+	}
+
+	cost = {
+		piety = {
+			value = 0
+			if = {
+				limit = {
+					scope:attacker.faith = scope:defender.faith
+					scope:defender = {
+						has_government = theocracy_government
+					}
+				}
+				add = {
+					value = 1000
+					desc = CB_ATTACKER_THEOCRACY
+				}
+			}
+			if = {
+				limit = {
+					scope:attacker = {
+						has_perk = bellum_justum_perk
+					}
+				}
+				multiply = {
+					add = bellum_justum_discount_percentage
+					divide = 100
+					desc = CB_ATTACKER_BELLUM_JUSTUM
+				}
+			}
+			if = {
+				limit = {
+					scope:attacker = {
+						has_dynasty = yes
+						dynasty = {
+							has_dynasty_perk = warfare_legacy_2
+						}
+					}
+				}
+				multiply = {
+					value = warfare_legacy_2_discount
+					desc = CB_ATTACKER_DYNASTY_WARFARE
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = no_cost_casus_belli_costs
+				}
+				multiply = {
+					value = 0
+					desc = CB_GAME_RULE_NO_COST
+				}
+			}
+		}
+		prestige = {
+			value = 0
+			if = {
+				limit = {
+					NOT = { scope:defender.faith = scope:attacker.faith }
+				}
+				add = {
+					value = 1000
+					desc = CB_COST_DIFFERENT_FAITH
+				}
+			}
+			if = {
+				limit = {
+					scope:attacker = {
+						has_perk = bellum_justum_perk
+					}
+				}
+				multiply = {
+					add = bellum_justum_discount_percentage
+					divide = 100
+					desc = CB_ATTACKER_BELLUM_JUSTUM
+				}
+			}
+			if = {
+				limit = {
+					scope:attacker = {
+						has_dynasty = yes
+						dynasty = {
+							has_dynasty_perk = warfare_legacy_2
+						}
+					}
+				}
+				multiply = {
+					value = warfare_legacy_2_discount
+					desc = CB_ATTACKER_DYNASTY_WARFARE
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = no_cost_casus_belli_costs
+				}
+				multiply = {
+					value = 0
+					desc = CB_GAME_RULE_NO_COST
+				}
+			}
+		}
+	}
+
+	on_victory_desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { scope:attacker = { is_local_player = yes } }
+				desc = cultural_war_victory_desc
+			}
+		}
+		triggered_desc = {
+			trigger = { scope:attacker = { is_local_player = yes } }
+			desc = cultural_war_warning_desc
+		}
+	}
+
+	on_victory = {
+		# Legitimacy
+		add_legitimacy_attacker_victory_effect = yes
+
+        #EP2 accolade glory gain for winning against higher ranked enemy
+		scope:attacker = { accolade_attacker_war_end_glory_gain_high_effect = yes }
+		scope:attacker = { show_pow_release_message_effect = yes }
+		create_title_and_vassal_change = {
+			type = conquest
+			save_scope_as = change
+			add_claim_on_loss = yes
+		}
+
+		every_in_list = {
+			list = target_titles
+			custom_tooltip = CONQUEST_CB_TITLE
+
+			conquest_cb_title_transfer = {
+				RELIGIOUS_WAR = no
+			}
+		}
+
+		
+		every_in_list = {
+			list = titles_taken
+			if = {
+				limit = {
+					holder = {
+						culture = scope:attacker.culture
+					}
+				}
+				holder = {
+					add_to_list = vassals_taken
+				}
+			}
+			if = {
+				limit = {
+					holder = {
+						NOT = { culture = scope:attacker.culture }
+					}
+				}
+				change_title_holder = {
+					holder = scope:attacker
+					change = scope:change
+					take_baronies = yes
+				}
+			}
+		}
+
+		every_in_list = {
+			list = vassals_taken
+			change_liege = {
+				liege = scope:attacker
+				change = scope:change
+			}
+		}
+
+		resolve_title_and_vassal_change = scope:change
+
+		scope:attacker = {
+			add_prestige_experience = 500
+		}
+
+		add_from_contribution_defenders = {
+			prestige = medium_prestige_value
+			opinion = {
+				modifier = contributed_in_war
+			}
+		}
+
+		add_from_contribution_attackers = {
+			prestige = medium_prestige_value
+			opinion = {
+				modifier = contributed_in_war
+			}
+		}
+
+		add_truce_attacker_victory_effect = yes
+	}
+
+	on_white_peace_desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { scope:defender = { is_local_player = yes } }
+				desc = county_conquest_cb_white_peace_desc_defender
+			}
+			desc = county_conquest_cb_white_peace_desc
+		}
+	}
+
+	on_white_peace = {
+        #EP2 accolade glory gain for doing ok against higher ranked enemy
+		scope:attacker = { accolade_attacker_war_end_glory_gain_low_effect = yes }
+		scope:defender = { accolade_defender_war_end_glory_gain_med_effect = yes }
+		scope:attacker = { show_pow_release_message_effect = yes }
+
+		scope:attacker = {
+			add_prestige = {
+				value = medium_prestige_value
+				multiply = -1.0
+			}
+		}
+
+		add_from_contribution_attackers = {
+			prestige = medium_prestige_value
+			opinion = {
+				modifier = contributed_in_war
+			}
+		}
+
+		add_from_contribution_defenders = {
+			prestige = medium_prestige_value
+			opinion = {
+				modifier = contributed_in_war
+			}
+		}
+
+		add_truce_white_peace_effect = yes
+	}
+
+	on_defeat_desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { scope:defender = { is_local_player = yes } }
+				desc = county_conquest_cb_defeat_desc_defender
+			}
+			triggered_desc = {
+				trigger = {
+					scope:attacker = {
+						is_local_player = yes
+						has_targeting_faction = yes
+					}
+				}
+				desc = county_conquest_cb_defeat_desc_attacker
+			}
+			desc = county_conquest_cb_defeat_desc
+		}
+	}
+
+	on_defeat = {
+		# Legitimacy
+		add_legitimacy_attacker_defeat_effect = yes
+
+        #EP2 accolade glory gain for winning against higher ranked enemy
+		scope:defender = { accolade_attacker_war_end_glory_gain_high_effect = yes }
+		scope:attacker = { show_pow_release_message_effect = yes }
+
+
+		scope:attacker = {
+			pay_short_term_gold = {
+				gold = 3
+				target = scope:defender
+				yearly_income = yes
+			}
+			add_prestige = {
+				value = major_prestige_value
+				multiply = -1.0
+			}
+		}
+
+		add_from_contribution_attackers = {
+			prestige = medium_prestige_value
+			opinion = {
+				modifier = contributed_in_war
+			}
+		}
+
+		scope:defender = {
+			add_prestige = major_prestige_value
+			
+		}
+
+		add_from_contribution_defenders = {
+			prestige = medium_prestige_value
+			opinion = {
+				modifier = contributed_in_war
+			}
+		}
+
+		add_truce_attacker_defeat_effect = yes
+
+		scope:attacker = {
+			save_temporary_scope_as = loser
+		}
+		on_lost_aggression_war_discontent_loss = yes
+	}
+
+	transfer_behavior = transfer
+
+	on_primary_attacker_death = inherit
+	on_primary_defender_death = inherit
+
+	attacker_allies_inherit = yes
+	defender_allies_inherit = yes
+
+	war_name = CULTURAL_RECONQUEST_NAME_BASE
+	war_name_base = CULTURAL_RECONQUEST_NAME_BASE
+	cb_name = CULTURAL_RECONQUEST_CB
+
+	interface_priority = 79
+
+	#This doesn't work
+	#min_ai_score = 100
+}
+
+
+

@@ -1,0 +1,222 @@
+﻿
+
+##############################################################
+# 
+# MEROE/POST-MEROE REMNANTS
+#  
+# Cybrxkhan
+# 
+# Note: The chronology of Kushite rulers after Yesebokheamani is extremely uncertain.
+# Attested names could be local warlords/officials/chiefs or actual rulers, it is hard to say.
+# I have therefore done a plausible sequence of rulers, but it should NOT be understood as accurate.
+# This is merely a convenience for gameplay purposes to give some background for the final Kushite rulers.
+# So that they are at least not some made up fantasy rulers.
+# 
+##############################################################
+
+# Cybrxkhan:
+# Amanipilade is a very late ruler of Meroe attested in an offering table dating to c. 350 CE, unknown if male or female.
+# It is hard to even say if he or she was an actual King of Kush, ruler of a rump state.
+# It is possible Amanipilade was just a local chief/noble/official who adopted royal elements in the offering table.
+# Pyramid Beg N. 25 is the last known Meroitic Pyramid dedicated to a ruler, which is cautiously confirmed to be that of a queen.
+# It has been theorized that if Amanipilade *was* the final Kushite ruler, and is the same as the ruler who built Beg N. 25, then she was a queen.
+# I thus go with the interpretation of Amanipilade as the final (known) queen of Meroe, but this is highly speculative and not guaranteed fact.
+meroe_01 = {
+	name = "Amanipilade"
+	female=yes
+	dynasty = dynasty_meroe_rulers_1
+	religion = "meroitic_pagan"
+	culture = "meroitic"
+	father=meroe_02
+	mother=meroe_03
+	330.1.3 = { # Unknown
+		birth = yes
+	}
+	375.6.9 = { # Unknown
+		death = yes
+	}
+}
+
+# Tehye, Amanipilade's father
+# Surprisingly, Amanipilade's parents are known, but there is no evidence that they were monarchs in their own right.
+# This does not necessarily disqualify Amanipilade as having been a king or queen, however.
+# Succession in Meroe was not necessarily parent to child.
+meroe_02 = {
+	name = "Tehye"
+	dynasty = dynasty_meroe_rulers_1
+	religion = "meroitic_pagan"
+	culture = "meroitic"
+	father=meroe_04
+	294.3.3 = { # Unknown
+		birth = yes
+	}
+	320.1.1 = {
+		add_spouse = meroe_03
+	}
+	358.8.2 = { # Unknown
+		death = yes
+	}
+}
+
+# Mkeḫñye, Amanipilade's mother
+# Surprisingly, Amanipilade's parents are known, but there is no evidence that they were monarchs in their own right.
+meroe_03 = {
+	name = "Mkehñye"
+	female = yes
+	dynasty = dynasty_meroe_rulers_1
+	religion = "meroitic_pagan"
+	culture = "meroitic"
+	father=meroe_04
+	300.9.3 = { # Unknown
+		birth = yes
+	}
+	360.2.8 = { # Unknown
+		death = yes
+	}
+}
+
+# Yesebokheamani, Kushite King in the late 3rd/early 4th century who took control of Dodekaschoinos when the Romans abandoned the region in c. 298 CE
+# Thus he was a contemporary of Emperor Diocletian
+# Possibly buried in Pyramid Beg N 51 at Meroe
+# Connection if any to the last couple Kushite kings is uncertain, but for convenience I've made him Amanipilade's grandfather
+# From what I've read, he appears to have been one of the last powerful rulers of Kush/Meroe
+meroe_04 = {
+	name = "Yesebokheamani"
+	dynasty = dynasty_meroe_rulers_1
+	religion = "meroitic_pagan"
+	culture = "meroitic"
+	269.4.19 = { # Unknown
+		birth = yes
+	}
+	324.1.5 = { # Unknown
+		death = yes
+	}
+}
+
+# Father of Patrapeamani, a Kushite local warlord/chief/official or King
+meroe_05 = {
+	name = "Delitey"
+	dynasty = dynasty_meroe_rulers_1
+	religion = "meroitic_pagan"
+	culture = "meroitic"
+	father=meroe_04
+	287.5.25 = { # Unknown
+		birth = yes
+	}
+	318.7.12 = { # Unknown
+		death = yes
+	}
+}
+
+# Patrapeamani
+# Similar to Amanipilade, hard to know if he or she was actually a ruler, or just a local warlord/chief/official who used royal elements in their offering table
+# Also unknown what their gender was, and relation to other rulers, if any
+# For convenience, I've made her the second to last queen of Kush, who is attested but whose name is unknown and/or not reliably identified with any known names
+# This queen was buried in Beg N 26
+meroe_06 = {
+	name = "Patrapeamani"
+	female=yes
+	dynasty = dynasty_meroe_rulers_1
+	religion = "meroitic_pagan"
+	culture = "meroitic"
+	father=meroe_05
+	305.5.25 = { # Unknown
+		birth = yes
+	}
+	348.12.14 = { # Unknown
+		death = yes
+	}
+}
+
+
+
+
+
+
+
+##############################################################
+# 
+# MEROITIC MISC/PLACEHOLDERS
+# 
+##############################################################
+
+
+
+meroitic_misc_01 = {
+	name = "Hornakhtyotef"
+	culture = "meroitic"
+	religion = "meroitic_pagan"
+	342.1.1 = {
+		birth = yes
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+
+
+meroitic_misc_02 = {
+	name = "Arotnide"
+	culture = "meroitic"
+	religion = "meroitic_pagan"
+	342.1.1 = {
+		birth = yes
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+
+meroitic_misc_03 = {
+	name = "Shorkaror"
+	culture = "meroitic"
+	religion = "meroitic_pagan"
+	342.1.1 = {
+		birth = yes
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+
+meroitic_misc_04 = {
+	name = "TaEse"
+	female=yes
+	culture = "meroitic"
+	religion = "meroitic_pagan"
+	342.1.1 = {
+		birth = yes
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+
+meroitic_misc_05 = {
+	name = "Nawidemak"
+	female=yes
+	culture = "meroitic"
+	religion = "meroitic_pagan"
+	369.4.2 = {
+		birth = yes
+	}
+	409.6.16 = {
+		death = yes
+	}
+}
+
+meroitic_misc_06 = {
+	name = "ArqtNmaks"
+	culture = "meroitic"
+	religion = "meroitic_pagan"
+	362.4.30 = {
+		birth = yes
+	}
+	419.8.17 = {
+		death = yes
+	}
+}
+
+
+
+

@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "male_headgear_special_gladiator_murmillo_01_mesh"
+	file = "male_headgear_special_gladiator_murmillo_01.mesh"
+
+	meshsettings = {
+		name = "male_headgear_special_gladiator_murmillo_01Shape"
+		index = 0
+		texture_diffuse = "gladiator_helmet_01_diffuse.dds"
+		texture_normal = "gladiator_helmet_01_normal.dds"
+		texture_specular = "gladiator_helmet_01_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "male_headgear_special_gladiator_murmillo_01_entity"
+	pdxmesh = "male_headgear_special_gladiator_murmillo_01_mesh"
+}

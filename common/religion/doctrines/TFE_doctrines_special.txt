@@ -1,0 +1,166 @@
+﻿### This faith doesn't exist yet/anymore, so it can't be accessed in the list and shouldn't be able to pop up via heresy outbreaks and whatnot
+unavailable = {
+	group = "special"
+	is_available_on_create = { always = no }
+
+	unavailable_doctrine = { visible = no }
+}
+
+### Some faiths have a special relationship and need to see each other in a better way
+# Since faiths probably can only have a single special heritage, the doctrines can be put in the same group
+has_special_heritage = {
+	group = "main_group"
+	is_available_on_create = {
+		OR = {
+			has_doctrine = special_faith_has_germanic_heritage
+			has_doctrine = special_faith_has_hellenic_syncretism
+			has_doctrine = special_faith_has_hellenic_heritage
+		}
+	}
+	
+	# The former Germanic faiths see each other as Righteous, and they see faiths with the 'Teachings of Ulfilas' doctrine as Astray
+	special_faith_has_germanic_heritage = {
+		is_shown = {
+			has_doctrine = special_faith_has_germanic_heritage
+		}
+		parameters = {
+			hostility_override_special_faith_has_germanic_heritage = 0
+			hostility_override_special_faith_teachings_of_ulfilas = 1
+		}
+	}
+
+	special_faith_has_hellenic_heritage = {
+	 	is_shown = {
+	 		has_doctrine = special_faith_has_hellenic_heritage
+	 	}
+	 	parameters = {
+	 		hostility_override_special_faith_has_hellenic_heritage = 0
+	 	}
+	}
+	
+	# Hellenism and its syncretic faiths see each other as Righteous
+	special_faith_has_hellenic_syncretism = {
+		is_shown = {
+			has_doctrine = special_faith_has_hellenic_syncretism
+		}
+		parameters = {
+			hostility_override_special_faith_has_hellenic_syncretism = 0
+		}
+	}
+	
+	special_faith_has_balto_slavic_heritage = {
+		is_shown = {
+			has_doctrine = special_faith_has_balto_slavic_heritage
+		}
+		parameters = {
+			hostility_override_special_faith_has_balto_slavic_heritage = 1
+		}
+	}
+	
+	# Just in case you want to discard your special heritage
+	special_faith_no_special_heritage = {
+		parameters = {
+			no_effect_removed_upon_creation = yes
+		}
+	}
+}
+
+### Teachings of Ulfilas, makes it so Germanic faiths like you
+teachings_of_ulfilas = {
+	group = "main_group"
+	is_available_on_create = { always = no }
+	
+	special_faith_teachings_of_ulfilas = {
+		parameters = {
+			hostility_override_special_faith_has_germanic_heritage = 1
+		}
+	}
+}
+
+# Just in case we need to revert that
+# has_germanic_heritage = {
+	# group = "main_group"
+	# is_available_on_create = { always = no }
+	
+	# # The former Germanic faiths see each other as Righteous
+	# special_faith_has_germanic_heritage = {
+		# parameters = {
+			# hostility_override_special_faith_has_germanic_heritage = 0
+		# }
+	# }
+# }
+
+# has_hellenic_syncretism = {
+	# group = "main_group"
+	# is_available_on_create = { always = no }
+	
+	# # Hellenism and its syncretic faiths see each other as Righteous
+	# special_faith_has_hellenic_syncretism = {
+		# parameters = {
+			# hostility_override_special_faith_has_hellenic_syncretism = 0
+		# }
+	# }
+# }
+# Hellenism and its syncretic faiths see each other as Righteous
+is_hellenic_faith = {
+	group = "special"
+
+	is_available_on_create = {
+		has_doctrine = special_doctrine_is_hellenic_faith
+	}
+
+	special_doctrine_is_hellenic_faith = {
+		parameters = {
+			hostility_override_tenet_hellenic_syncretism = 1
+			hellenic_syncretic_recipient_opinion_active = yes
+			opinion_of_hellenic_syncretic_actor_opinion_active = 30
+		}
+	}
+}
+
+doctrine_missionary = {
+	group = "main_group"
+	doctrine_missionary_encouraged = {
+		piety_cost = {
+			value = 700
+		}
+		
+
+		parameters = {
+			allowed_to_hire_missionaries = yes
+			missionary_bonus_aptitude = yes
+			can_spread_to_other_heritages = yes
+		}
+	}
+	doctrine_missionary_allowed = {
+		piety_cost = {
+			value = 400
+		}
+		
+
+		parameters = {
+			allowed_to_hire_missionaries = yes
+			slower_spread_to_other_heritages = yes
+		}
+		character_modifier = {
+			levy_reinforcement_rate_same_faith = 0.2
+		}
+	}
+	doctrine_missionary_not_allowed = {
+		piety_cost = {
+			value = 0
+		}
+		
+
+		parameters = {
+			cant_spread_to_other_heritages = yes
+		}
+		character_modifier = {
+			domain_tax_same_faith_mult = 0.1
+			levy_reinforcement_rate_same_faith = 0.2
+			levy_reinforcement_rate_different_faith = -0.2
+		}
+	}
+}
+
+

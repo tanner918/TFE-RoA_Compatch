@@ -1,0 +1,630 @@
+﻿on_culture_created = {
+	on_actions = {
+		TFE_on_culture_created
+	}
+}
+
+TFE_on_culture_created = {
+	effect = {
+		random_parent_culture = { save_scope_as = parent_culture_1 }
+		if = {
+			limit = {
+				any_parent_culture = { count >= 2 }
+			}
+			random_parent_culture = {
+				limit = {
+					NOT = { this = scope:parent_culture_1 }
+				}
+				save_scope_as = parent_culture_2
+			}
+		}
+		if = {
+			limit = {
+				scope:founder = {
+					is_ai = yes
+					NOT = { is_literate = yes }
+				}
+			}
+			if = {
+				limit = {
+					#scope:parent_culture_1 = {
+					#	NOT = { has_no_other_script_trigger = yes }
+					#}
+					NOT = {
+						always = yes
+					}
+				}
+				scope:parent_culture_1 = {
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_arabic
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_arabic
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_aramaic
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_aramaic
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_armenian
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_armenian
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_brahmi
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_brahmi
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_coptic
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_coptic
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_cuneiform
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_cuneiform
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_cyrillic
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_cyrillic
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_devanagari
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_devanagari
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_etruscan
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_etruscan
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_geez
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_geez
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_georgian
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_georgian
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_glagolitic
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_glagolitic
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_gothic
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_gothic
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_greek
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_greek
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_gupta
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_gupta
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_han
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_han
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_hebrew
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_hebrew
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_hieroglyphic
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_hieroglyphic
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_hungarian
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_hungarian
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_latin
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_latin
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_manichean
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_manichean
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_meroitic
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_meroitic
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_mon
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_mon
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_nabatean
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_nabatean
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_ogham
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_ogham
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_pahlavi
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_pahlavi
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_phoenician
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_phoenician
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_runic
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_runic
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_sinhala
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_sinhala
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_sogdian
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_sogdian
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_south_arabian
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_south_arabian
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_syriac
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_syriac
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_tamil
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_tamil
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_tibetan
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_tibetan
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_tifinagh
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_tifinagh
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_turkic
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_turkic
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					#scope:parent_culture_2 = {
+					#	NOT = { has_no_other_script_trigger = yes }
+					#}
+					NOT = {
+						always = yes
+					}
+				}
+				scope:parent_culture_2 = {
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_arabic
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_arabic
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_aramaic
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_aramaic
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_armenian
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_armenian
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_brahmi
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_brahmi
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_coptic
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_coptic
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_cuneiform
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_cuneiform
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_cyrillic
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_cyrillic
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_devanagari
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_devanagari
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_etruscan
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_etruscan
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_geez
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_geez
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_georgian
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_georgian
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_glagolitic
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_glagolitic
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_gothic
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_gothic
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_greek
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_greek
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_gupta
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_gupta
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_han
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_han
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_hebrew
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_hebrew
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_hieroglyphic
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_hieroglyphic
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_hungarian
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_hungarian
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_latin
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_latin
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_manichean
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_manichean
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_meroitic
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_meroitic
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_mon
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_mon
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_nabatean
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_nabatean
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_ogham
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_ogham
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_pahlavi
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_pahlavi
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_phoenician
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_phoenician
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_runic
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_runic
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_sinhala
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_sinhala
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_sogdian
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_sogdian
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_south_arabian
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_south_arabian
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_syriac
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_syriac
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_tamil
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_tamil
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_tibetan
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_tibetan
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_tifinagh
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_tifinagh
+						}
+					}
+					if = {
+						limit = {
+							has_cultural_tradition = tradition_script_turkic
+						}
+						scope:founder.culture = {
+							add_culture_tradition = tradition_script_turkic
+						}
+					}
+				}
+			}
+		}
+	}
+}

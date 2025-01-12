@@ -1,0 +1,716 @@
+﻿#k_tahert = {
+#	361.1.1 = {	change_development_level = 1 }
+#	532.1.1 = {	change_development_level = 2 }
+#	768.1.1 = {	change_development_level = 3 }
+#}
+
+
+
+d_tlemcen = {
+	361.1.1 = {	change_development_level = 6 }
+	532.1.1 = {	change_development_level = 7 }
+	768.1.1 = {	change_development_level = 8 }
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = k_africae
+		liege = k_africae
+	}
+	361.1.1 = {
+		holder = tahert_01
+	}
+	395.1.1 = {
+		holder = tahert_02
+	}
+	476.1.1 = {
+		de_jure_liege = k_tahert
+	}
+	508.1.1 = {
+		holder = mauro_roman_kings_02
+	}
+	741.1.1 = {
+		government = clan_government
+		holder = 210032
+	}
+
+}
+
+
+c_tlemcen = {
+	361.1.1 = {	change_development_level = 8 }
+	532.1.1 = {	change_development_level = 9 }
+	768.1.1 = {	change_development_level = 10 }
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = d_tlemcen
+		#liege = d_tlemcen
+	}
+	#361.1.1 = {
+	#	holder = tahert_05
+	#}
+	#395.1.1 = {
+	#	holder = tahert_06
+	#}
+
+	340.1.1 = {
+		holder = mauri_22
+		government = tribal_government
+	}
+	385.1.1 = {
+		holder = mauri_23
+	}
+	415.1.1 = {
+		holder = mauri_24
+	}
+	445.1.1 = {
+		holder = mauri_25
+	}
+	475.1.1 = {
+		holder = mauri_26
+		#liege = 0
+	}
+	
+	## Mauro-Roman kingdoms
+	#476.1.1 = {
+	#	liege = 0
+	#	holder = gaetuli_06
+	#	government = autocratic_government
+	#}
+	741.1.1 = {
+		holder = 210032
+		liege = d_tlemcen
+		government = clan_government
+	}
+}
+
+
+c_wajda = {
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = d_tlemcen
+		liege = d_tlemcen
+	}
+	#361.1.1 = {
+	#	holder = tahert_07
+	#}
+	#395.1.1 = {
+	#	holder = tahert_08
+	#}
+
+	340.1.1 = {
+		holder = mauri_17
+		government = tribal_government
+		#liege = d_fes 
+	}
+	385.1.1 = {
+		holder = mauri_18
+	}
+	415.1.1 = {
+		holder = mauri_19
+	}
+	445.1.1 = {
+		holder = mauri_20
+	}
+	475.1.1 = {
+		holder = mauri_21
+		#liege = 0
+	}
+	505.1.1 = {
+		holder = mauri_32
+	}
+	## Mauro-Roman kingdoms
+	#476.1.1 = {
+	#	liege = 0
+	#	holder = gaetuli_05
+	#	government = autocratic_government
+	#}
+	767.1.1 = {
+		holder = 210037
+	}
+
+}
+
+
+c_orania = {
+	361.1.1 = {	change_development_level = 8 }
+	532.1.1 = {	change_development_level = 9 }
+	768.1.1 = {	change_development_level = 10 }
+	
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = d_tlemcen
+		liege = k_africae
+	}
+	361.1.1 = {
+		holder = tahert_01
+	}
+	395.1.1 = {
+		holder = tahert_02
+	}
+	## Mauro-Roman kingdoms
+	476.1.1 = {
+		liege = 0
+		holder = gaetuli_06
+		government = feudal_government
+	}
+	741.1.1 = {
+		government = clan_government
+		liege = "d_tlemcen"
+		holder = 210032
+	}
+	
+
+}
+
+
+c_hunyan = {
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = d_tlemcen
+		liege = k_africae
+	}
+	361.1.1 = {
+		holder = tahert_01
+	}
+	395.1.1 = {
+		holder = tahert_02
+	}
+	340.1.1 = {
+		holder = mauri_17
+		government = tribal_government
+		#liege = d_fes 
+	}
+	385.1.1 = {
+		holder = mauri_18
+	}
+	415.1.1 = {
+		holder = mauri_19
+	}
+	445.1.1 = {
+		holder = mauri_20
+	}
+	475.1.1 = {
+		holder = mauri_21
+		#liege = 0
+	}
+	505.1.1 = {
+		holder = mauri_32
+	}
+	## Mauro-Roman kingdoms
+	#476.1.1 = {
+	#	liege = 0
+	#	holder = gaetuli_05
+	#	government = autocratic_government
+	#}
+	741.1.1 = {
+		liege = "d_tlemcen"
+		holder = 210032
+		government = clan_government
+	}
+
+}
+
+c_tahert = {
+	361.1.1 = {	change_development_level = 8 }
+	532.1.1 = {	change_development_level = 9 }
+	768.1.1 = {	change_development_level = 10 }
+
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = d_tlemcen
+		#liege = d_tlemcen
+	}
+	#361.1.1 = {
+	#	holder = tahert_05
+	#}
+	#395.1.1 = {
+	#	holder = tahert_06
+	#}
+
+	340.1.1 = {
+		holder = mauri_22
+		government = tribal_government
+		#liege = d_fes 
+	}
+	385.1.1 = {
+		holder = mauri_23
+	}
+	415.1.1 = {
+		holder = mauri_24
+	}
+	445.1.1 = {
+		holder = mauri_25
+	}
+	475.1.1 = {
+		holder = mauri_26
+		#liege = 0
+	}
+	505.1.1 = {
+		holder = gaetuli_31
+	}
+
+	## Mauro-Roman kingdoms
+	#476.1.1 = {
+	#	liege = 0
+	#	holder = gaetuli_06
+	#	government = autocratic_government
+	#}
+	768.1.1 = {
+		holder = 210029
+	}
+}
+
+
+c_yalala = {
+	361.1.1 = {	change_development_level = 5 }
+	532.1.1 = {	change_development_level = 6 }
+	768.1.1 = {	change_development_level = 7 }
+	
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = d_tlemcen
+		#liege = k_africae
+	}
+	#361.1.1 = {
+	#	holder = tahert_01
+	#}
+	#395.1.1 = {
+	#	holder = tahert_02
+	#}
+
+	340.1.1 = {
+		holder = mauri_22
+		government = tribal_government
+		#liege = d_fes 
+	}
+	385.1.1 = {
+		holder = mauri_23
+	}
+	415.1.1 = {
+		holder = mauri_24
+	}
+	445.1.1 = {
+		holder = mauri_25
+	}
+	475.1.1 = {
+		holder = mauri_26
+		#liege = 0
+	}
+	505.1.1 = {
+		holder = gaetuli_31
+	}
+
+	## Mauro-Roman kingdoms
+	#476.1.1 = {
+	#	liege = 0
+	#	holder = gaetuli_06
+	#	government = autocratic_government
+	#}
+	767.1.1 = {
+		holder = 210036
+	}
+}
+
+
+c_ashir = {
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = d_bejaia
+		liege = d_bejaia
+	}
+	361.1.1 = {
+		holder = tahert_09
+		liege = d_bejaia
+	}
+	395.1.1 = {
+		holder = tahert_10
+	}
+	## Mauro-Roman kingdoms
+	476.1.1 = {
+		liege = 0
+		holder = mauri_43
+		government = feudal_government
+	}
+	508.1.1 = {
+		liege = k_mauro_roman_kingdom
+		holder = mauri_44
+	}
+	#508.1.1 = {
+	#	holder = mauro_roman_kings_02
+	#}
+	768.1.1 = {
+		government = clan_government
+		holder = 210029
+	}
+}
+
+
+c_figuig = {
+	355.1.1 = {
+		holder = gaetuli_01
+		government = tribal_government
+	}
+	410.1.1 = {
+		holder = gaetuli_02
+	}
+	469.1.1 = {
+		holder = gaetuli_03
+	}
+	768.1.1 = {
+		government = tribal_government
+		holder = 210029
+	}
+}
+
+
+d_alger = {
+	361.1.1 = {	change_development_level = 6 }
+	532.1.1 = {	change_development_level = 7 }
+	768.1.1 = {	change_development_level = 8 }
+	
+}
+
+
+c_algier = {
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = d_bejaia
+		liege = k_africae
+	}
+	361.1.1 = {
+		#holder = tahert_03
+		holder = nuvelan_01
+	}
+	395.1.1 = {
+		#holder = tahert_04
+		holder = nuvelan_06
+	}
+	## Vandal kingdoms
+	476.1.1 = {
+		liege = d_bejaia
+		holder = alan_africa_02
+		government = feudal_government
+	}
+	500.1.1 = {
+		holder = alan_africa_03
+	}
+	767.1.1 = {
+		liege = "d_alger"
+		holder = 210035
+	}
+}
+
+
+c_tanas = {
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = d_tlemcen
+		liege = k_africae
+	}
+	361.1.1 = {
+		holder = tahert_01
+	}
+	395.1.1 = {
+		holder = tahert_02
+	}
+	## Vandal kingdoms
+	476.1.1 = {
+		liege = d_bejaia
+		holder = alan_africa_02
+		government = feudal_government
+	}
+	510.1.1 = {
+		holder = mauro_roman_05 # Mastigas
+		liege = k_vandals
+	}
+	767.1.1 = {
+		holder = "210036"
+	}
+}
+
+d_bejaia = {
+	361.1.1 = {	change_development_level = 6 }
+	532.1.1 = {	change_development_level = 7 }
+	768.1.1 = {	change_development_level = 8 }
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = k_africae
+		liege = k_africae
+	}
+	361.1.1 = {
+		#holder = tahert_03
+		holder = nuvelan_01
+	}
+	395.1.1 = {
+		holder = tahert_04
+		holder = nuvelan_06
+	}
+	## Vandal kingdoms
+	476.1.1 = {
+		liege = k_vandals
+		holder = alan_africa_01
+		government = feudal_government
+		de_jure_liege = k_tahert
+	}
+	500.1.1 = {
+		holder = alan_africa_03
+	}
+}
+
+
+c_bejaia = {
+	361.1.1 = {	change_development_level = 8 }
+	532.1.1 = {	change_development_level = 9 }	
+	768.1.1 = {	change_development_level = 10 }
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = d_bejaia
+		liege = k_africae
+		#government = administrative_government
+	}
+	330.1.1 = {
+		holder = gaetuli_18
+		government = tribal_government
+	}
+	372.1.1 = {
+		holder = gaetuli_19
+	}
+	405.1.1 = {
+		holder = gaetuli_20
+	}
+	## Vandal kingdoms
+	476.1.1 = {
+		liege = k_vandals
+		holder = alan_africa_01
+		government = feudal_government
+	}
+	500.1.1 = {
+		holder = alan_africa_03
+	}
+	767.1.1 = {
+		government = clan_government
+		liege = "d_alger"
+		holder = 210035
+	}
+}
+
+
+c_satif = {
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = d_bejaia
+		liege = k_africae
+	}
+	361.1.1 = {
+		#holder = tahert_03
+		holder = nuvelan_01
+	}
+	395.1.1 = {
+		#holder = tahert_04
+		holder = nuvelan_06
+	}
+	## Vandal kingdoms
+	476.1.1 = {
+		liege = k_vandals
+		holder = alan_africa_01
+		government = feudal_government
+	}
+	494.1.1 = {
+		holder = mauri_38
+	}
+	#500.1.1 = {
+	#	holder = alan_africa_03
+	#}
+	767.1.1 = {
+		government = clan_government
+		liege = "d_alger"
+		holder = 210035
+	}
+}
+
+d_zab = {
+}
+
+
+c_hodna = {
+	## Diocletian Division
+	200.1.1 = {
+		de_jure_liege = d_bejaia
+		liege = d_bejaia
+	}
+	361.1.1 = {
+		holder = tahert_09
+		liege = d_bejaia
+	}
+	395.1.1 = {
+		holder = tahert_10
+	}
+	## Mauro-Roman kingdoms
+	476.1.1 = {
+		liege = d_avaritana
+		holder = mauri_37
+		government = feudal_government
+	}
+	494.1.1 = {
+		holder = mauri_38
+	}
+	#508.1.1 = {
+	#	holder = mauro_roman_kings_02
+	#}
+	767.1.1 = {	
+		government = clan_government
+		liege = "d_alger"
+		holder = 210035
+	}
+}
+
+
+c_biskra = {
+	####
+	330.1.1 = {
+		holder = africae_03 #Albinus Rufi
+	}
+	370.1.1 = {
+		holder = africae_42 #Volusianus Rufi
+	}
+	#447.1.1 = {
+	#	holder = mauri_36
+	#}
+	476.1.1 = {
+		holder = mauri_36
+	}
+	## Mauro-Roman kingdoms
+	#476.1.1 = {
+	#	liege = 0
+	#	holder = gaetuli_04
+	#	government = autocratic_government
+	#}
+	516.1.1 = {
+		holder = mauri_42
+	}
+	767.1.1 = {	
+		government = clan_government
+		liege = "d_alger"
+		holder = 210035
+	}
+	
+}
+
+c_bilizma = {
+	####
+	#330.1.1 = {
+	#	holder = africae_03 #Albinus Rufi
+	#	government = administrative_government
+	#}
+	#370.1.1 = {
+	#	holder = africae_42 #Volusianus Rufi
+	#}
+	330.1.1 = {
+		holder = gaetuli_15
+		government = tribal_government
+		liege = d_eastbavares
+	}
+	360.1.1 = {
+		holder = gaetuli_16
+	}
+	390.1.1 = {
+		holder = gaetuli_17
+	}
+	447.1.1 = {
+		holder = mauri_36
+	}
+	#476.1.1 = {
+	#	holder = vandals_014 #Frederic
+	#	government = feudal_government
+	#}
+	532.1.1 = {
+		holder = mauri_42
+	}
+	767.1.1 = {	
+		government = clan_government
+		liege = "d_alger"
+		holder = 210035
+	}
+	
+}
+d_mzab = {
+	355.1.1 = {
+		holder = gaetuli_01
+		government = tribal_government
+	}
+	410.1.1 = {
+		holder = gaetuli_02
+	}
+	469.1.1 = {
+		holder = gaetuli_03
+	}
+}
+
+c_wargla = {
+	355.1.1 = {
+		holder = gaetuli_01
+		government = tribal_government
+	}
+	410.1.1 = {
+		holder = gaetuli_02
+	}
+	469.1.1 = {
+		holder = gaetuli_03
+	}
+}
+
+c_laghwat = {
+	355.1.1 = {
+		holder = gaetuli_01
+		government = tribal_government
+	}
+	410.1.1 = {
+		holder = gaetuli_02
+	}
+	469.1.1 = {
+		holder = gaetuli_03
+	}
+	767.1.1 = {	
+		liege = "d_alger"
+		holder = 210035
+		government = tribal_government
+	}
+}
+
+
+c_ghardaia = {
+	355.1.1 = {
+		holder = gaetuli_01
+		government = tribal_government
+	}
+	410.1.1 = {
+		holder = gaetuli_02
+	}
+	469.1.1 = {
+		holder = gaetuli_03
+	}
+	767.1.1 = {	
+		liege = "d_alger"
+		holder = 210035
+		government = tribal_government
+	}
+	
+}
+
+
+c_arigh = {
+	355.1.1 = {
+		holder = gaetuli_01
+		government = tribal_government
+	}
+	410.1.1 = {
+		holder = gaetuli_02
+	}
+	469.1.1 = {
+		holder = gaetuli_03
+	}
+	767.1.1 = {	
+		liege = "d_alger"
+		holder = 210035
+		government = tribal_government
+	}
+}

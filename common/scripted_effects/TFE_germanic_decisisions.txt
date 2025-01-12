@@ -1,0 +1,483 @@
+﻿
+found_capital_of_visigoths_scripted_effect = {
+	#Reward fame to compensate for reduced development gain.
+	add_prestige_experience = major_prestige_gain
+	scope:new_visigothic_capital = {
+		#Boost local development a few levels; majority of development gain is handled in the modifiers now.
+		if = {
+			limit = { development_level < 10 }
+			change_development_level = {
+				value = 10
+				subtract = scope:new_visigothic_capital.development_level
+			}
+		}
+		else_if = {
+			limit = { development_level < 12 }
+			change_development_level = {
+				value = 12
+				subtract = scope:new_visigothic_capital.development_level
+			}
+		}
+		else_if = {
+			limit = { development_level < 14 }
+			change_development_level = {
+				value = 14
+				subtract = scope:new_visigothic_capital.development_level
+			}
+		}
+		#If control is less than full, boost it to full.
+		if = {
+			limit = { county_control < full_county_control }
+			change_county_control = 100
+		}
+		#Add county modifier giving solid opinion for a decent chunk of time.
+		add_county_modifier = {
+			modifier = capital_of_visigoths_opinion_modifier
+			years = 20
+		}
+		#Add county modifier giving intense benefits for a century.
+		add_county_modifier = {
+			modifier = capital_of_visigoths_misc_benefits_modifier
+			years = 100
+		}
+		#If this county isn't the de jure capital of k_visigoths, make it so.
+		if = {
+			limit = {
+				NOT = { this = title:k_visigoths.title_capital_county }
+			}
+			title:k_visigoths = { set_capital_county = scope:new_visigothic_capital }
+		}
+		#If this county isn't the de jure capital of e_spain, make it so.
+		if = {
+			limit = {
+				NOT = { this = title:e_spain.title_capital_county }
+			}
+			title:e_spain = { set_capital_county = scope:new_visigothic_capital }
+		}
+	}
+}
+
+unite_franks_culture_effect = {
+	# Scopes saves for localization
+	root = {
+		save_scope_as = embracer
+	}
+
+	# Prestige Bonus
+	add_prestige = 750
+
+	#Convert your, and your whole family's, culture
+	set_culture = culture:frankish
+	if = {
+		limit = { any_spouse = { is_landed = no } }
+		every_spouse = {
+			limit = {
+				is_landed = no
+				OR = {
+					culture = culture:salian
+					culture = culture:ripurian
+				}
+			}
+			set_culture = culture:frankish
+		}
+	}
+	if = {
+		limit = {
+			any_close_family_member = {
+				is_landed = no
+				NOT = { is_spouse_of = root }
+			}
+		}
+		every_close_family_member = {
+			limit = {
+				is_landed = no
+				NOT = { is_spouse_of = root }
+			}
+			custom = all_unlanded_family_members
+			set_culture = culture:frankish
+		}
+	}
+	if = {
+		limit = {
+			any_child = {
+				NOT = { is_spouse_of = root }
+			}
+		}
+		every_child = {
+			limit = {
+				NOT = { is_spouse_of = root }
+			}
+			custom = all_children_custom
+			set_culture = culture:frankish
+		}
+	}
+
+	#Convert appropriate vassals, and their family
+	if = {
+		limit = {
+			any_vassal_or_below = {
+				is_ai = yes
+				OR = {
+					culture = culture:salian
+					culture = culture:ripurian
+				}
+				primary_title = {
+					OR = {
+						de_jure_liege = title:k_lotharingia
+						de_jure_liege.de_jure_liege = title:k_lotharingia
+						de_jure_liege.de_jure_liege.de_jure_liege = title:k_lotharingia
+					}
+				}
+			}
+		}
+		every_vassal_or_below = {
+			custom = embrace_english_culture_vassals_custom
+			limit = {
+				is_ai = yes
+				OR = {
+					culture = culture:salian
+					culture = culture:ripurian
+				}
+				primary_title = {
+					OR = {
+						de_jure_liege = title:k_lotharingia
+						de_jure_liege.de_jure_liege = title:k_lotharingia
+						de_jure_liege.de_jure_liege.de_jure_liege = title:k_lotharingia
+					}
+				}
+			}
+			set_culture = culture:frankish
+			hidden_effect = {
+				if = {
+					limit = { any_spouse = { is_landed = no } }
+					every_spouse = {
+						limit = {
+							is_landed = no
+							OR = {
+								culture = culture:salian
+								culture = culture:ripurian
+							}
+						}
+						set_culture = culture:frankish
+					}
+				}
+				if = {
+					limit = {
+						any_close_family_member = {
+							is_landed = no
+							NOT = { is_spouse_of = prev }
+						}
+					}
+					every_close_family_member = {
+						limit = {
+							is_landed = no
+							NOT = { is_spouse_of = prev }
+						}
+						custom = all_unlanded_family_members
+						set_culture = culture:frankish
+					}
+				}
+				if = {
+					limit = {
+						any_child = {
+							NOT = { is_spouse_of = prev }
+						}
+					}
+					every_child = {
+						limit = {
+							NOT = { is_spouse_of = prev }
+						}
+						custom = all_children_custom
+						set_culture = culture:frankish
+					}
+				}
+				if = {
+					limit = {
+						any_vassal_or_below = {
+							is_ai = yes
+							OR = {
+								culture = culture:salian
+								culture = culture:ripurian
+							}
+							primary_title = {
+								OR = {
+									de_jure_liege = title:k_lotharingia
+									de_jure_liege.de_jure_liege = title:k_lotharingia
+									de_jure_liege.de_jure_liege.de_jure_liege = title:k_lotharingia
+								}
+							}
+						}
+					}
+					every_vassal_or_below = {
+						custom = unite_franks_culture_vassals_custom
+						limit = {
+							is_ai = yes
+							OR = {
+								culture = culture:salian
+								culture = culture:ripurian
+							}
+							primary_title = {
+								OR = {
+									de_jure_liege = title:k_lotharingia
+									de_jure_liege.de_jure_liege = title:k_lotharingia
+									de_jure_liege.de_jure_liege.de_jure_liege = title:k_lotharingia
+								}
+							}
+						}
+						set_culture = culture:frankish
+						hidden_effect = {
+							if = {
+								limit = { any_spouse = { is_landed = no } }
+								every_spouse = {
+									limit = {
+										is_landed = no
+										OR = {
+											culture = culture:salian
+											culture = culture:ripurian
+										}
+									}
+									set_culture = culture:frankish
+								}
+							}
+							if = {
+								limit = {
+									any_close_family_member = {
+										is_landed = no
+										NOT = { is_spouse_of = prev }
+									}
+								}
+								every_close_family_member = {
+									limit = {
+										is_landed = no
+										NOT = { is_spouse_of = prev }
+									}
+									custom = all_unlanded_family_members
+									set_culture = culture:frankish
+								}
+							}
+							if = {
+								limit = {
+									any_child = {
+										NOT = { is_spouse_of = prev }
+									}
+								}
+								every_child = {
+									limit = {
+										NOT = { is_spouse_of = prev }
+									}
+									custom = all_children_custom
+									set_culture = culture:frankish
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#Flip Counties
+	every_county_in_region = {
+		region = custom_austrasia
+		custom = unite_salian_culture_counties_custom
+		limit = {
+			culture = culture:salian
+		}
+		random = {
+			chance = 100
+			set_county_culture = culture:frankish
+		}
+	}
+	every_county_in_region = {
+		region = custom_austrasia
+		custom = unite_ripurian_culture_counties_custom
+		limit = {
+			culture = culture:ripurian
+		}
+		random = {
+			chance = 60
+			set_county_culture = culture:frankish
+		}
+	}
+
+	culture:frankish = {
+		custom_tooltip = decision_unite_franks_culture_get_innovations
+		hidden_effect = {
+			reset_culture_creation_date = yes
+			get_all_innovations_from = culture:salian
+			get_all_innovations_from = culture:ripurian
+		}
+	}
+}
+
+restore_holy_roman_empire_decision_scripted_effect = {
+	save_scope_as = founder
+	create_title_and_vassal_change = {
+		type = created
+		save_scope_as = title_change
+		add_claim_on_loss = no
+	}
+	title:e_hre = {
+		change_title_holder = {
+			holder = root
+			change = scope:title_change
+		}
+	}
+	resolve_title_and_vassal_change = scope:title_change
+	set_primary_title_to = title:e_hre
+
+	#Papal hook management.
+	if = {
+		limit = {
+			faith.religious_head = {
+				exists = this
+				opinion = {
+					target = root
+					value < high_positive_opinion
+				}
+			}
+			OR = {
+				has_weak_hook = faith.religious_head
+				has_strong_usable_hook = faith.religious_head
+			}
+		}
+		use_hook = faith.religious_head
+	}
+
+	#Sort title laws.
+	if = {
+		limit = {
+			OR = {
+				has_title = title:k_east_francia
+				any_vassal = {
+					has_title = title:k_east_francia
+				}
+			}
+		}
+		destroy_title = title:k_east_francia	#Make Germany inalienable.
+	}
+	title:e_hre = {
+		add_title_law = princely_elective_succession_law
+		if = {	#Add Salic law.
+			limit = {
+				root = {
+					OR = {
+						has_realm_law = male_preference_law
+						has_realm_law = male_only_law
+					}
+				}
+			}
+			add_title_law = male_only_law
+		}
+		if = {	#Ignore Salic law.
+			limit = {
+				root = { has_realm_law = equal_law }
+			}
+			add_title_law = equal_law
+		}
+		if = {	#Invert Salic law. Take that, Clovis, y'big nerd.
+			limit = {
+				root = {
+					OR = {
+						has_realm_law = female_preference_law
+						has_realm_law = female_only_law
+					}
+				}
+			}
+			add_title_law = female_only_law
+		}
+		custom_tooltip = hre_elector_list_creation_tt
+	}
+
+	#Add de jures.
+	hidden_effect = {
+		if = {	#If Germania is nae a thing, merge it into the HRE.
+			limit = {
+				OR = {
+					NOT = { exists = title:e_germany.holder }
+					title:e_germany.holder ?= root
+				}
+			}
+			title:e_germany = {
+				every_in_de_jure_hierarchy = {
+					limit = { tier = tier_kingdom }
+					set_de_jure_liege_title = title:e_hre
+				}
+			}
+		}
+		every_held_title = {
+			limit = {
+				tier = tier_kingdom
+				NOT = {	#The Pope retains vague dibs on Italy.
+					any_this_title_or_de_jure_above = { this = title:e_italy }
+				}
+				save_temporary_scope_as = this_title
+				#root = { completely_controls = scope:this_title }
+			}
+			set_de_jure_liege_title = title:e_hre
+		}
+		every_vassal = {
+			every_held_title = {
+				limit = {
+					tier = tier_kingdom
+					NOT = {	#The Pope retains vague dibs on Italy.
+						any_this_title_or_de_jure_above = { this = title:e_italy }
+					}
+					save_temporary_scope_as = this_title
+					#prev = { completely_controls = scope:this_title }
+				}
+				set_de_jure_liege_title = title:e_hre
+			}
+		}
+		if = { # Merge Francia into the HRE under certain conditions
+			limit = {
+				OR = {
+					NOT = { exists = title:e_france.holder }
+					title:e_france.holder ?= root
+				}
+				OR = {
+					any_county_in_region = {
+						percent > 0.6
+						region = world_europe_west_francia
+						holder.top_liege = root
+					}
+				}
+			}
+			title:e_france = {
+				every_in_de_jure_hierarchy = {
+					limit = { tier = tier_kingdom }
+					set_de_jure_liege_title = title:e_hre
+				}
+			}
+		}
+		every_vassal = {
+			limit = {
+				is_ai = yes
+			}
+			every_held_title = {
+				limit = {
+					tier = tier_kingdom
+				}
+				root = {
+					destroy_title = prev
+				}
+			}
+		}
+		every_held_title = {
+			limit = {
+				tier >= tier_kingdom
+				NOT = {
+					this = title:e_hre
+				}
+				save_temporary_scope_as = this_title
+			}
+			root = {
+				destroy_title = prev
+			}
+		}
+	}
+	custom_tooltip = restore_holy_roman_empire_decision_effects_de_jure.tt
+
+	#And add a bit of prestige for the trouble.
+	add_prestige = massive_prestige_value
+}

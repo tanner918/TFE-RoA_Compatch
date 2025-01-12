@@ -1,0 +1,334 @@
+﻿k_epirus = {
+
+}
+
+
+d_epirus = {
+	330.1.1 = {
+		liege = "k_macedon"
+		de_jure_liege = k_macedon
+		name = EPIRUS_VETUS
+		change_development_level = 4
+	}
+	361.1.1 = {
+		holder = epirus_01
+	}
+	395.1.1 = {
+		holder = epirus_02
+	}
+	423.1.1 = {
+		holder = epirus_03
+	}
+	476.1.1 = {
+		holder = epirus_04
+		liege = k_macedon
+	}
+	500.1.1 = {
+		holder = epirus_13
+		liege = k_macedon
+	}
+	766.1.1 = {
+		holder = 145799
+	}
+}
+
+
+c_nicopolis = {
+	330.1.1 = {
+		liege = "d_epirus"
+		change_development_level = 6
+	}
+	361.1.1 = {
+		holder = epirus_01
+	}
+	395.1.1 = {
+		holder = epirus_02
+	}
+	423.1.1 = {
+		holder = epirus_03
+	}
+	476.1.1 = {
+		holder = epirus_04
+	}
+	764.1.1 = {
+		holder = 145800
+	}
+}
+
+
+c_epeiros = {
+	330.1.1 = {
+		liege = "d_epirus"
+	}
+	361.1.1 = {
+		holder = epirus_01
+	}
+	395.1.1 = {
+		holder = epirus_02
+	}
+	423.1.1 = {
+		holder = epirus_03
+	}
+	476.1.1 = {
+		holder = epirus_04
+	}
+	766.1.1 = {
+		holder = 145799
+	}
+}
+
+
+c_aetolia = {
+	330.1.1 = {
+		de_jure_liege = d_achaia
+		change_development_level = 4
+	}
+	361.1.1 = {
+		holder = achaia_01
+		liege = "d_achaia"
+	}
+	395.1.1 = {
+		holder = achaia_02
+	}
+	423.1.1 = {
+		holder = achaia_03
+	}
+	476.1.1 = {
+		holder = achaia_04
+	}
+	500.1.1 = {
+		holder = achaia_05
+	}
+	#Skleros
+	752.1.1 = {
+		holder = 145806
+	}
+}
+
+
+c_metzovo = {
+	330.1.1 = {
+		liege = "d_epirus"
+	}
+	361.1.1 = {
+		holder = epirus_01
+	}
+	395.1.1 = {
+		holder = epirus_02
+	}
+	423.1.1 = {
+		holder = epirus_03
+	}
+	476.1.1 = {
+		holder = epirus_04
+	}
+	766.1.1 = {
+		holder = 145799
+	}
+}
+
+
+d_dyrrachion = {
+	330.1.1 = {
+		liege = "k_macedon"
+		de_jure_liege = k_macedon
+		name = EPIRUS_NOVA
+		change_development_level = 4
+	}
+	361.1.1 = {
+		holder = epirus_05
+	}
+	395.1.1 = {
+		holder = epirus_06
+	}
+	423.1.1 = {
+		holder = epirus_07
+	}
+	476.1.1 = {
+		holder = epirus_08
+		liege = k_macedon
+	}
+	532.1.1 = {
+		holder = greek_misc_005
+	}
+	759.1.1 = {
+		holder = 145817
+	}
+
+}
+
+
+c_dyrrachion = {
+	361.1.1 = {	change_development_level = 6 }
+	
+	330.1.1 = {
+		liege = "d_dyrrachion"
+	}
+	361.1.1 = {
+		holder = epirus_05
+	}
+	395.1.1 = {
+		holder = epirus_06
+	}
+	423.1.1 = {
+		holder = epirus_07
+	}
+	476.1.1 = {
+		holder = epirus_08
+	}
+	759.1.1 = {
+		holder = 145817
+	}
+}
+
+
+c_arbanon = {
+	330.1.1 = {
+		liege = "d_dyrrachion"
+	}
+	361.1.1 = {
+		holder = epirus_05
+	}
+	395.1.1 = {
+		holder = epirus_06
+	}
+	423.1.1 = {
+		holder = epirus_07
+	}
+	476.1.1 = {
+		holder = epirus_08
+	}
+	759.1.1 = {
+		holder = 145817
+	}
+}
+
+
+c_debar = {
+	330.1.1 = {
+		liege = "d_dyrrachion"
+	}
+	361.1.1 = {
+		holder = epirus_05
+	}
+	395.1.1 = {
+		holder = epirus_06
+	}
+	423.1.1 = {
+		holder = epirus_07
+	}
+	476.1.1 = {
+		holder = epirus_08
+	}
+	640.1.1 = {
+		liege = "d_rashka"
+	}
+	748.1.1 = {
+		holder = 146011
+	}
+}
+
+
+c_antipatreia = {
+	330.1.1 = {
+		liege = "d_epirus"
+	}
+	361.1.1 = {
+		holder = epirus_05
+	}
+	395.1.1 = {
+		holder = epirus_06
+	}
+	423.1.1 = {
+		holder = epirus_07
+	}
+	476.1.1 = {
+		holder = epirus_08
+	}
+	766.1.1 = {
+		holder = 145799
+	}
+}
+
+
+c_avlonas = {
+	330.1.1 = {
+		liege = "d_epirus"
+		de_jure_liege = d_epirus
+	}
+	361.1.1 = {
+		holder = epirus_09
+	}
+	395.1.1 = {
+		holder = epirus_10
+	}
+	423.1.1 = {
+		holder = epirus_11
+	}
+	476.1.1 = {
+		holder = epirus_12
+	}
+	500.1.1 = {
+		holder = epirus_13
+		liege = k_macedon
+	}
+	766.1.1 = {
+		holder = 145799
+	}
+}
+
+
+d_cephalonia = {
+	330.1.1 = {
+		liege = "e_byzantium"
+		change_development_level = 4
+	}
+	766.1.1 = {
+		holder = 145799
+	}
+}
+
+
+c_cephalonia = {
+	330.1.1 = {
+		liege = "d_epirus"
+		de_jure_liege = d_epirus
+		change_development_level = 3
+	}
+	361.1.1 = {
+		holder = epirus_01
+	}
+	395.1.1 = {
+		holder = epirus_02
+	}
+	423.1.1 = {
+		holder = epirus_03
+	}
+	476.1.1 = {
+		holder = epirus_04
+	}
+}
+
+
+c_buthrotum = {
+	330.1.1 = {
+		liege = "d_epirus"
+		de_jure_liege = d_epirus
+	}
+	361.1.1 = {
+		holder = epirus_01
+	}
+	395.1.1 = {
+		holder = epirus_02
+	}
+	423.1.1 = {
+		holder = epirus_03
+	}
+	476.1.1 = {
+		holder = epirus_04
+	}
+	766.1.1 = {
+		holder = 145799
+	}
+}
+

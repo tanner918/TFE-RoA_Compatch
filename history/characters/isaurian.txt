@@ -1,0 +1,355 @@
+﻿70515 = {
+	name = "Tarasis" # Emperor Zenon
+	dynasty = kodissa_dynasty
+	dna = ravenna_zeno
+	martial = 7
+	diplomacy = 6
+	intrigue = 6
+	stewardship = 4
+	culture = "isaurian"
+	religion = "nicene"
+	father = isaurian_01
+	mother = isaurian_02
+	trait = honest
+	trait = gregarious
+	trait = diligent
+	trait = diplomat
+	trait = education_diplomacy_3
+	425.1.1 = {
+		birth = yes
+	}
+	443.1.1 = {
+		add_spouse = isaurian_05
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	466.10.1 = {
+		add_spouse = 70530
+		culture = "greek"
+		name = "Zenon"
+	}
+	476.8.25 = {
+		add_courtier = character:70514
+		add_courtier = character:70513
+		add_courtier = character:70528
+		add_courtier = character:illyro_roman_02
+		add_courtier = character:168790
+		add_courtier = character:996003
+	}
+	491.4.9 = {
+		death = yes
+	}
+}
+70516 = {
+	name = "Leon" # Leon 'the Younger'
+	dynasty = kodissa_dynasty
+	martial = 4
+	diplomacy = 3
+	intrigue = 6
+	stewardship = 5
+	culture = "greek"
+	religion = "chalcedonian"
+	trait = ill
+	trait = education_diplomacy_1
+	father = 70515
+	mother = 70530
+	467.1.1 = {
+		birth = yes
+	}
+	474.11.17 = {
+		death = yes
+	}
+}
+isaurian_01 = {
+	name = "Kodissa"
+	dynasty = kodissa_dynasty
+	culture = "isaurian"
+	religion = "nicene"
+	395.1.1 = {
+		birth = yes
+	}
+	420.1.1 = {
+		add_spouse = isaurian_02
+	}
+	445.1.1 = {
+		death = yes
+	}
+}
+isaurian_02 = {
+	name = "Lallis"
+	female = yes
+	dna = ravenna_zeno
+	culture = "isaurian"
+	religion = "nicene"
+	409.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	480.1.1 = {
+		death = yes
+	}
+}
+isaurian_03 = {
+	name = "Longinos"
+	dynasty = kodissa_dynasty
+	culture = "isaurian"
+	religion = "nicene"
+	father = isaurian_01
+	mother = isaurian_02
+	430.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		add_spouse = isaurian_04
+		religion = chalcedonian
+	}
+	495.1.1 = {
+		death = yes
+	}
+}
+isaurian_04 = {
+	name = "Valeria"
+	female = yes
+	culture = "roman"
+	religion = "nicene"
+	430.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	490.1.1 = {
+		death = yes
+	}
+}
+isaurian_05 = {
+	name = "Arcadia"
+	female = yes
+	culture = "roman"
+	religion = "nicene"
+	420.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	463.1.1 = {
+		death = yes
+	}
+}
+isaurian_06 = {
+	name = "Zenon"
+	dynasty = kodissa_dynasty
+	culture = "isaurian"
+	religion = "nicene"
+	father = 70515
+	mother = isaurian_05
+	446.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	466.10.1 = {
+		culture = "greek"
+	}
+	476.1.1 = {
+		death = yes
+	}
+}
+isaurian_07 = {
+	name = "Helena"
+	female = yes
+	dynasty = kodissa_dynasty
+	culture = "isaurian"
+	religion = "nicene"
+	father = 70515
+	mother = isaurian_05
+	450.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	466.10.1 = {
+		culture = "greek"
+	}
+	505.1.1 = {
+		death = yes
+	}
+}
+isaurian_08 = {
+	name = "Longina"
+	female = yes
+	dynasty = kodissa_dynasty
+	culture = "isaurian"
+	religion = "chalcedonian"
+	father = isaurian_03
+	mother = isaurian_04
+	452.1.1 = {
+		birth = yes
+	}
+	505.1.1 = {
+		death = yes
+	}
+}
+isaurian_09 = {
+	name = "Appallios"
+	dynasty = appallios_dynasty
+	culture = "isaurian"
+	religion = "nicene"
+	405.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	455.1.1 = {
+		death = yes
+	}
+}
+isaurian_10 = {
+	name = "Illos"
+	dynasty = appallios_dynasty
+	culture = "isaurian"
+	religion = "nicene"
+	father = isaurian_09
+	trait = ambitious
+	trait = disloyal
+	trait = education_martial_3
+	trait = gregarious
+	trait = paranoid
+	433.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	488.1.1 = {
+		death = {
+			death_reason = death_execution
+			killer = 70515 # Zenon
+		}
+	}
+}
+isaurian_11 = {
+	name = "Trokondas"
+	dynasty = appallios_dynasty
+	culture = "isaurian"
+	religion = "nicene"
+	father = isaurian_09
+	438.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	486.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+isaurian_12 = {
+	name = "Lilingis"
+	dynasty = lilingis_dynasty
+	culture = "isaurian"
+	religion = "nicene"
+	father = isaurian_09
+	trait = bastard
+	442.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	492.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+isaurian_13 = {
+	name = "Longinos"
+	dynasty = selinuntios_dynasty
+	culture = "isaurian"
+	religion = "nicene"
+	447.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	497.1.1 = {
+		death = {
+			death_reason = death_execution
+		}
+	}
+}
+isaurian_14 = {
+	name = "Longinos"
+	dynasty = cardala_dynasty
+	culture = "isaurian"
+	religion = "nicene"
+	446.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	497.1.1 = {
+		death = {
+			death_reason = death_execution
+		}
+	}
+}
+isaurian_15 = {
+	name = "Konon" # Justinian general
+	culture = "isaurian"
+	religion = "chalcedonian"
+	trait = greedy
+	trait = unyielding_defender
+	martial = 10
+	prowess = 10
+	508.1.1 = {
+		birth = yes
+	}
+	532.1.1 = {
+		employer = 70512 # Justinian
+	}
+	548.1.1 = {
+		death = {
+			death_reason = death_murder
+		}
+	}
+}
+lycaonia_03 = {
+	name = "Athenodoros"
+	culture = "isaurian"
+	religion = "nicene"
+	440.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = "chalcedonian"
+	}
+	497.1.1 = {
+		death = {
+			death_reason = death_execution
+		}
+	}
+}
+lycaonia_04 = {
+	name = "Oadas"
+	culture = "isaurian"
+	religion = "chalcedonian"
+	505.1.1 = {
+		birth = yes
+	}
+	567.1.1 = {
+		death = yes
+	}
+}

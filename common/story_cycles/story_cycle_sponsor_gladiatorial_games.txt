@@ -1,0 +1,68 @@
+﻿# Story cycle used by the Sponsor Gladiatorial Games decision
+# Get four events (one per week), and then end it
+
+story_sponsor_gladiator_games_decision = {
+	on_setup = {
+		set_variable = {
+			name = event_counter
+			value = 0
+		}
+		set_variable = { # From -4 (crowd hates it, riots break out, revolt is imminent) to +4 (crowd loved it, they chant your name, it was very poggers as the kiddos say)
+			name = result_counter
+			value = 0
+		}
+		# Fire the event to recap the games
+		story_owner = {
+			trigger_event = {
+				id = sponsor_gladiatorial_games.0001
+			}
+		}
+	}
+
+	on_end = {
+	}
+
+	# Cancel the games
+	on_owner_death = {
+		end_story = yes
+	}
+
+	# Fire the events!
+	effect_group = {
+		days = 7
+		trigger = {
+			always = yes
+		}
+
+		triggered_effect = {
+			trigger = {
+				var:event_counter < 4 # 4 events and then we bail
+			}
+			effect = {
+				story_owner = {
+					trigger_event = {
+						on_action = sponsor_gladiatorial_games_pulse
+					}
+				}
+				change_variable = {
+					name = event_counter
+					add = 1
+				}
+			}
+		}
+		
+		triggered_effect = {
+			trigger = {
+				var:event_counter >= 4 # 4 events and then we bail
+			}
+			effect = {
+				# Need an event to do a quick recap on how the games went, and then we end the story
+				story_owner = {
+					trigger_event = {
+						id = sponsor_gladiatorial_games.0002
+					}
+				}
+			}
+		}
+	}
+}

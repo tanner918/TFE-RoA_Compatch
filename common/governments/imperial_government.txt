@@ -1,0 +1,344 @@
+﻿imperial_government = {
+	government_rules = {
+		create_cadet_branches = yes
+		rulers_should_have_dynasty = yes
+		dynasty_named_realms = yes
+		royal_court = yes
+		legitimacy = yes
+	}
+
+
+	fallback = 1
+	#flag = government_is_feudal
+	flag = government_is_imperial
+	flag = may_elevate_co_monarch
+	primary_holding = castle_holding
+	required_county_holdings = { castle_holding city_holding church_holding }
+	valid_holdings = { city_holding trade_center_holding estate_holding }
+
+	ai = {
+		use_legends = yes
+	}
+	
+	can_get_government = { 
+		OR = { 
+			has_title = title:e_western_roman_empire
+			has_title = title:e_byzantium
+			has_title = title:e_roman_empire
+
+
+			AND = {
+				exists = top_liege
+				scope:top_liege = {
+					OR = { 
+						has_title = title:e_western_roman_empire
+						has_title = title:e_byzantium
+						has_title = title:e_roman_empire
+					}
+				}
+			}
+		}
+		NOT = {
+			faith = {
+				has_doctrine_parameter = imperial_head_of_faith_hof_imperial_cult_government
+				religious_head = root
+			}
+		}
+	}
+	character_modifier = {
+		autocratic_government_opinion = -50
+	}
+
+	vassal_contract = {
+		imperial_government_taxes
+		imperial_government_levies
+		special_contract
+		religious_rights
+		
+		fortification_rights
+		coinage_rights
+		succession_rights
+		war_declaration_rights
+		council_rights
+		title_revocation_rights
+		imperial_special_contracts_de_central
+		imperial_special_contracts_central
+	}
+	
+	color = hsv{ 0.9 0.85 0.28 }
+}
+
+autocratic_government = {
+	government_rules = {
+		create_cadet_branches = yes
+		rulers_should_have_dynasty = yes
+		dynasty_named_realms = yes
+		royal_court = yes
+		legitimacy = yes
+	}
+	ai = {
+		use_legends = yes
+	}
+
+	fallback = 1
+	#flag = government_is_feudal
+	flag = government_is_autocratic
+	flag = may_elevate_co_monarch
+	primary_holding = castle_holding
+	required_county_holdings = { castle_holding city_holding church_holding }
+	valid_holdings = { city_holding trade_center_holding estate_holding }
+	
+	can_get_government = { 
+		AND = {
+			is_independent_ruler = yes
+			has_government = imperial_government
+		}
+		NOT = {
+			faith = {
+				has_doctrine_parameter = imperial_head_of_faith_hof_imperial_cult_government
+				religious_head = root
+			}
+		}
+	}
+
+	character_modifier = {
+		imperial_government_opinion = -50
+		autocratic_government_opinion = -30
+		autocratic_government_vassal_opinion = 30
+	}
+
+	vassal_contract = {
+		imperial_government_taxes
+		imperial_government_levies
+		special_contract
+		religious_rights
+		
+		fortification_rights
+		coinage_rights
+		succession_rights
+		war_declaration_rights
+		council_rights
+		title_revocation_rights
+		imperial_special_contracts_de_central
+		imperial_special_contracts_central
+	}
+	
+	color = hsv{ 1 0.85 0.58 }
+}
+
+autocratic_government_ep3 = {
+	government_rules = {
+		create_cadet_branches = yes
+		rulers_should_have_dynasty = yes
+		dynasty_named_realms = yes
+		royal_court = yes
+		legitimacy = yes
+		administrative = yes
+		landless_playable = yes
+		state_faith = yes
+		use_as_base_on_landed = yes
+		use_as_base_on_rank_up = yes
+		inherit_from_dynastic_government = no
+	}
+
+	ai = {
+		use_legends = yes
+	}
+
+	domicile_type = estate
+
+	fallback = 1
+	#flag = government_is_feudal
+	flag = government_is_autocratic_ep3
+	flag = may_elevate_co_monarch
+	flag = government_has_influence
+	flag = government_has_title_men_at_arms
+	flag = government_has_powerful_families
+	primary_holding = castle_holding
+	required_county_holdings = { castle_holding city_holding church_holding }
+	valid_holdings = { city_holding trade_center_holding estate_holding }
+	
+	can_get_government = { 
+		AND = {
+			is_independent_ruler = yes
+			has_government = administrative_government
+		}
+		NOT = {
+			faith = {
+				has_doctrine_parameter = imperial_head_of_faith_hof_imperial_cult_government
+				religious_head = root
+			}
+		}
+	}
+
+	character_modifier = {
+		imperial_government_opinion = -50
+		autocratic_government_opinion = -30
+		autocratic_government_vassal_opinion = 30
+		levy_size = -0.25
+		feudal_government_tax_contribution_mult = -0.5
+		feudal_government_levy_contribution_mult = -0.5
+		clan_government_tax_contribution_mult = -0.5
+		clan_government_levy_contribution_mult = -0.5
+		men_at_arms_cap = -2
+		men_at_arms_limit = -2
+		knight_limit = -5
+		vassal_limit = 100
+		active_accolades = -1
+	}
+
+	vassal_contract = {
+		administrative_obligations
+		administrative_themes
+	}
+	
+	color = hsv{ 1 0.85 0.58 }
+}
+
+legion_government = {
+	government_rules = {
+		create_cadet_branches = yes
+		rulers_should_have_dynasty = yes
+		dynasty_named_realms = no
+		landless_playable = yes
+	}
+
+	fallback = 1
+	flag = government_is_feudal
+	flag = government_is_legion
+	primary_holding = castle_holding
+	required_county_holdings = { castle_holding city_holding church_holding }
+	valid_holdings = { city_holding trade_center_holding estate_holding }
+
+	#domicile_type = camp
+	
+	can_get_government = { 
+		is_independent_ruler = no
+	}
+
+	vassal_contract = {
+		imperial_government_taxes
+		imperial_government_levies
+		special_contract
+		religious_rights
+		
+		fortification_rights
+		coinage_rights
+		succession_rights
+		war_declaration_rights
+		council_rights
+		title_revocation_rights
+		imperial_special_contracts_de_central
+		imperial_special_contracts_central
+	}
+	
+	color = hsv{ 1 0.5 0.58 }
+}
+
+roman_government = {
+	government_rules = {
+		create_cadet_branches = yes
+		rulers_should_have_dynasty = yes
+		dynasty_named_realms = no
+		royal_court = yes
+		legitimacy = yes
+		use_as_base_on_landed = yes
+		use_as_base_on_rank_up = yes
+	}
+	fallback = 1
+	flag = government_is_feudal
+	flag = government_is_roman
+	primary_holding = estate_holding
+	required_county_holdings = { castle_holding city_holding church_holding estate_holding }
+	valid_holdings = { city_holding trade_center_holding estate_holding castle_holding }
+
+	ai = {
+		use_legends = yes
+	}
+
+	domicile_type = estate
+	
+	can_get_government = { 
+		OR = {
+			AND = {
+				is_independent_ruler = no
+				top_liege = {
+					has_imperial_laws = yes
+				}
+			}
+			is_independent_ruler = yes
+		}
+	}
+	character_modifier = {
+		autocratic_government_opinion = -50
+	}
+
+	vassal_contract = {
+		imperial_government_taxes
+		imperial_government_levies
+		special_contract
+		religious_rights
+		
+		fortification_rights
+		coinage_rights
+		succession_rights
+		war_declaration_rights
+		council_rights
+		title_revocation_rights
+	}
+	
+	color = hsv{ 0.9 0.85 0.58 }
+}
+
+imperial_cult_government = {
+	primary_holding = castle_holding
+	valid_holdings = { castle_holding city_holding trade_center_holding estate_holding  }
+	required_county_holdings = { castle_holding city_holding church_holding }
+	government_rules = {
+		create_cadet_branches = yes
+		rulers_should_have_dynasty = yes
+		dynasty_named_realms = no
+		royal_court = yes
+		legitimacy = yes
+		state_faith = yes
+	}
+	ai = {
+		use_legends = yes
+	}
+	#flag = government_is_feudal
+	flag = government_is_imperial_cult
+	flag = government_is_imperial
+	fallback = 1
+
+	domicile_type = estate
+	
+	can_get_government = { 
+		faith = {
+			has_doctrine_parameter = imperial_head_of_faith_hof_imperial_cult_government
+			religious_head = root
+		}
+	}
+
+	character_modifier = {
+		levy_reinforcement_rate_same_faith = 0.3
+		levy_reinforcement_rate_different_faith = -0.3
+		same_faith_opinion = 10
+		different_faith_opinion = -10
+	}
+	vassal_contract = {
+		imperial_government_taxes
+		imperial_government_levies
+		special_contract
+		eranshar_special_contracts
+		religious_rights
+		
+		fortification_rights
+		coinage_rights
+		succession_rights
+		war_declaration_rights
+		council_rights
+		title_revocation_rights
+	}
+	
+	color = { 200 20 10 }
+}

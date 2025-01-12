@@ -1,0 +1,210 @@
+﻿TFE_funded_qanat_small = {
+	icon = county_modifier_development_positive
+	stewardship = 1
+	county_opinion_add = 2
+	monthly_prestige = 0.2
+}
+TFE_qanat_constructed_small = {
+	icon = county_modifier_development_positive
+	development_growth = 0.2
+	tax_mult = 0.04
+	county_opinion_add = 2
+}
+TFE_funded_qanat_medium = {
+	icon = county_modifier_development_positive
+	stewardship = 1
+	county_opinion_add = 4
+	monthly_prestige = 0.4
+}
+TFE_qanat_constructed_medium = {
+	icon = county_modifier_development_positive
+	development_growth = 0.4
+	tax_mult = 0.06
+	county_opinion_add = 4
+}
+TFE_funded_qanat_large = {
+	icon = county_modifier_development_positive
+	stewardship = 1
+	county_opinion_add = 6
+	monthly_prestige = 0.6
+}
+TFE_qanat_constructed_large = {
+	icon = county_modifier_development_positive
+	development_growth = 0.6
+	tax_mult = 0.08
+	county_opinion_add = 6
+}
+TFE_funded_qanat_grand = {
+	icon = county_modifier_development_positive
+	stewardship = 1
+	county_opinion_add = 8
+	monthly_prestige = 0.8
+}
+TFE_qanat_constructed_grand = {
+	icon = county_modifier_development_positive
+	development_growth = 0.8
+	tax_mult = 0.10
+	county_opinion_add = 8
+}
+
+
+TFE_funded_irrigation_tank_small = {
+	icon = county_modifier_development_positive
+	stewardship = 1
+	same_faith_opinion = 3
+	monthly_prestige = 0.1
+	monthly_piety = 0.1
+}
+TFE_irrigation_tank_constructed_small = {
+	icon = county_modifier_development_positive
+	development_growth = 0.2
+	tax_mult = 0.04
+	county_opinion_add = 2
+}
+TFE_funded_irrigation_tank_medium = {
+	icon = county_modifier_development_positive
+	stewardship = 1
+	same_faith_opinion = 6
+	monthly_prestige = 0.2
+	monthly_piety = 0.2
+}
+TFE_irrigation_tank_constructed_medium = {
+	icon = county_modifier_development_positive
+	development_growth = 0.4
+	tax_mult = 0.06
+	county_opinion_add = 4
+}
+TFE_funded_irrigation_tank_large = {
+	icon = county_modifier_development_positive
+	stewardship = 1
+	same_faith_opinion = 9
+	monthly_prestige = 0.3
+	monthly_piety = 0.3
+}
+TFE_irrigation_tank_constructed_large = {
+	icon = county_modifier_development_positive
+	development_growth = 0.6
+	tax_mult = 0.08
+	county_opinion_add = 6
+}
+TFE_funded_irrigation_tank_grand = {
+	icon = county_modifier_development_positive
+	stewardship = 1
+	same_faith_opinion = 12
+	monthly_prestige = 0.4
+	monthly_piety = 0.4
+}
+TFE_irrigation_tank_constructed_grand = {
+	icon = county_modifier_development_positive
+	development_growth = 0.8
+	tax_mult = 0.10
+	county_opinion_add = 8
+}
+
+
+
+RICE_india_land_grant_buddhist_character_modifier = {
+	icon = piety_positive
+	buddhism_religion_opinion = 10
+}
+
+RICE_india_land_grant_hindu_character_modifier = {
+	icon = piety_positive
+	hinduism_religion_opinion = 10
+}
+
+RICE_india_land_grant_jain_character_modifier = {
+	icon = piety_positive
+	jainism_religion_opinion = 10
+}
+
+RICE_india_land_grant_buddhist_county_same_modifier = {
+	icon = piety_positive
+	tax_mult = -0.15
+	development_growth = 0.05
+	development_growth_factor = 0.05
+	county_opinion_add = 5
+}
+
+RICE_india_land_grant_hindu_county_same_modifier = {
+	icon = piety_positive
+	tax_mult = -0.15
+	development_growth = 0.05
+	development_growth_factor = 0.05	
+	county_opinion_add = 5
+}
+
+RICE_india_land_grant_jain_county_same_modifier = {
+	icon = piety_positive
+	tax_mult = -0.15
+	development_growth = 0.05
+	development_growth_factor = 0.05
+	county_opinion_add = 5
+}
+
+RICE_india_land_grant_buddhist_county_strong_same_modifier = {
+	icon = piety_positive
+	tax_mult = -0.3
+	development_growth = 0.1
+	development_growth_factor = 0.1
+	county_opinion_add = 10
+}
+
+RICE_india_land_grant_hindu_county_strong_same_modifier = {
+	icon = piety_positive
+	tax_mult = -0.3
+	development_growth = 0.1
+	development_growth_factor = 0.1
+	county_opinion_add = 10
+}
+
+RICE_india_land_grant_jain_county_strong_same_modifier = {
+	icon = piety_positive
+	tax_mult = -0.3
+	development_growth = 0.1
+	development_growth_factor = 0.1	
+	county_opinion_add = 10
+}
+
+RICE_india_land_grant_buddhist_county_different_modifier = {
+	icon = piety_positive
+	tax_mult = -0.15
+	development_growth = 0.1
+	development_growth_factor = 0.1
+	county_opinion_add = 5
+}
+
+RICE_india_land_grant_hindu_county_different_modifier = {
+	icon = piety_positive
+	tax_mult = -0.15
+	development_growth = 0.1
+	development_growth_factor = 0.1
+}
+
+RICE_india_land_grant_jain_county_different_modifier = {
+	icon = piety_positive
+	tax_mult = -0.15
+	development_growth = 0.1
+	development_growth_factor = 0.1
+}
+
+RICE_india_land_grant_buddhist_county_strong_different_modifier = {
+	icon = piety_positive
+	tax_mult = -0.3
+	development_growth = 0.2
+	development_growth_factor = 0.2
+}
+
+RICE_india_land_grant_hindu_county_strong_different_modifier = {
+	icon = piety_positive
+	tax_mult = -0.3
+	development_growth = 0.2
+	development_growth_factor = 0.2
+}
+
+RICE_india_land_grant_jain_county_strong_different_modifier = {
+	icon = piety_positive
+	tax_mult = -0.3
+	development_growth = 0.2
+	development_growth_factor = 0.2
+}

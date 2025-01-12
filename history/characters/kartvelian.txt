@@ -1,0 +1,90 @@
+﻿986011 = {
+	name = "Osdukhtia"
+	female = yes
+	dynasty_house = house_khosroviani
+	religion = "nicene"
+	culture = "kartvelian"
+	father = 159770
+	mother = salome_02
+	375.1.1 = {
+		birth = yes
+	}
+	430.1.1 = {
+		death = yes
+	}
+}
+986021 = {
+	name = "Buzmar" # Buzmarid
+	dynasty = 99860001
+	religion = "nicene"
+	culture = "kartvelian"
+	374.1.1 = {
+		birth = yes
+	}
+	394.1.1 = {
+		add_spouse = 986011
+	}
+	425.1.1 = {
+		death = yes
+	}
+}
+986022 = {
+	name = "Buzmar" # Buzmarid
+	dynasty = 99860001
+	religion = "nicene"
+	culture = "kartvelian"
+	father = 986021
+	mother = 986011
+	396.1.1 = {
+		birth = yes
+	}
+	450.1.1 = {
+		death = yes
+	}
+}
+986023 = {
+	name = "Murvan" # Buzmarid
+	dynasty = 99860001
+	religion = "nicene"
+	culture = "kartvelian"
+	father = 986022
+	417.1.1 = {
+		birth = yes
+	}
+	429.1.1 = {
+		name = "Petrus"
+		trait = devoted
+	}
+	451.1.1 = {
+		religion = "chalcedonian"
+		trait = theologian
+	}
+	491.1.1 = {
+		death = yes
+	}
+}
+kartvelian_01 = {
+	name = "Tzath" # Gubazid
+	religion = "armaz"
+	culture = "kartvelian"
+	334.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+kartvelian_02 = {
+	name = "Artashes" # Gubazid
+	religion = "armaz"
+	culture = "kartvelian"
+	433.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+
+
+

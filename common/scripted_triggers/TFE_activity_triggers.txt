@@ -1,0 +1,111 @@
+﻿#UNUSED
+is_gladiator_games = {
+	scope:activity = {
+		has_activity_option = {
+			category = special_type
+			option = TFE_games_type_gladiator
+		}
+	}
+}
+
+is_gladiator_fights_bad = {
+	scope:activity = {
+		has_activity_option = {
+			category = TFE_games_option_fights
+			option = TFE_games_option_fights_bad
+		}
+	}
+}
+
+is_gladiator_fights_good = {
+	scope:activity = {
+		has_activity_option = {
+			category = TFE_games_option_fights
+			option = TFE_games_option_fights_good
+		}
+	}
+}
+
+is_gladiator_fights_very_good = {
+	scope:activity = {
+		has_activity_option = {
+			category = TFE_games_option_fights
+			option = TFE_games_option_fights_very_good
+		}
+	}
+}
+
+is_gladiator_fights_excellent = {
+	scope:activity = {
+		has_activity_option = {
+			category = TFE_games_option_fights
+			option = TFE_games_option_fights_excellent
+		}
+	}
+}
+
+is_lodgings_bad = {
+	scope:activity = {
+		has_activity_option = {
+			category = TFE_activities_option_accommodations
+			option = TFE_activities_option_accommodations_bad
+		}
+	}
+}
+
+is_lodgings_good = {
+	scope:activity = {
+		has_activity_option = {
+			category = TFE_activities_option_accommodations
+			option = TFE_activities_option_accommodations_good
+		}
+	}
+}
+
+is_lodgings_very_good = {
+	scope:activity = {
+		has_activity_option = {
+			category = TFE_activities_option_accommodations
+			option = TFE_activities_option_accommodations_very_good
+		}
+	}
+}
+
+is_chariots_races_bad = {
+	scope:activity = {
+		has_activity_option = {
+			category = TFE_races_option_chariots
+			option = TFE_races_option_chariots_bad
+		}
+	}
+}
+
+is_chariots_races_good = {
+	scope:activity = {
+		has_activity_option = {
+			category = TFE_races_option_chariots
+			option = TFE_races_option_chariots_good
+		}
+	}
+}
+
+is_chariots_races_very_good = {
+	scope:activity = {
+		has_activity_option = {
+			category = TFE_races_option_chariots
+			option = TFE_races_option_chariots_very_good
+		}
+	}
+}
+
+has_university_building_trigger = {
+	OR = {
+		has_building_or_higher = generic_university
+		has_building_or_higher = al_azhar_university
+		has_building_or_higher = sankore_university
+		has_building_or_higher = siena_university
+		has_building_or_higher = nalanda_university
+		has_building_or_higher = beirut_university
+		has_building_or_higher = house_of_wisdom_01
+	}
+}

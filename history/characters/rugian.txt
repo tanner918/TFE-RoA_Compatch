@@ -1,0 +1,207 @@
+﻿rugian_01 = {
+	name = "Cissa"
+	dynasty = 99993000
+	religion = "gothic_pagan"
+	culture = "rugian"
+	342.5.3 = {
+		birth = yes
+	}
+	420.1.1 = {
+		religion = "arianism"
+	}
+	425.1.1 = {
+		death = yes
+	}
+}
+rugian_02 = {
+	name = "Flaccitheus"
+	dynasty = 99993001
+	religion = "arianism"
+	culture = "rugian"
+	415.1.1 = {
+		birth = yes
+	}
+	475.1.1 = {
+		death = yes
+		trait = adventurer
+	}
+}
+rugian_03 = {
+	name = "Feletheus"
+	dna = feletheus_476
+	dynasty = 99993001
+	religion = "arianism"
+	culture = "rugian"
+	father = rugian_02
+	435.1.1 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+	454.1.1 = {
+		add_spouse = rugian_04
+	}
+	487.1.1 = {
+		death = {
+			death_reason = death_execution
+			killer = 996002
+		}
+	}
+}
+rugian_05 = {
+	name = "Frederic"
+	dynasty = 99993001
+	religion = "arianism"
+	culture = "rugian"
+	father = rugian_03
+	mother  = rugian_04
+	455.1.1 = {
+		birth = yes
+	}
+	493.6.1 = {
+		death = {
+			death_reason = death_battle
+			killer = 996008 # Tufa
+		}
+	}
+}
+
+rugian_06 = {
+	name = "Baldric"
+	religion = "gothic_pagan"
+	culture = "rugian"
+	455.1.1 = {
+		birth = yes
+	}
+	493.1.1 = {
+		death = yes
+	}
+}
+rugian_07 = {
+	name = "Agelmund"
+	religion = "gothic_pagan"
+	culture = "rugian"
+	451.1.1 = {
+		birth = yes
+	}
+	493.1.1 = {
+		death = yes
+	}
+}
+rugian_08 = {
+	name = "Thela"
+	religion = "gothic_pagan"
+	culture = "rugian"
+	438.1.1 = {
+		birth = yes
+	}
+	493.1.1 = {
+		death = yes
+	}
+}
+rugian_09 = {
+	name = "Hunulf"
+	religion = "gothic_pagan"
+	culture = "rugian"
+	444.1.1 = {
+		birth = yes
+	}
+	493.1.1 = {
+		death = yes
+	}
+}
+rugian_10 = {
+	name = "Agenaric"
+	religion = "gothic_pagan"
+	culture = "rugian"
+	438.1.1 = {
+		birth = yes
+	}
+	493.1.1 = {
+		death = yes
+	}
+}
+rugian_11 = {
+	name = "Agenaric"
+	religion = "gothic_pagan"
+	culture = "rugian"
+	332.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+rugian_12 = {
+	name = "Agenaric"
+	religion = "gothic_pagan"
+	culture = "rugian"
+	454.2.19 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+rugian_13 = {
+	name = "Gundogast"
+	religion = "gothic_pagan"
+	culture = "rugian"
+	340.6.13 = {
+		birth = yes
+	}
+	395.1.1 = {
+		death = yes
+	}
+}
+rugian_14 = {
+	name = "Wultulf"
+	religion = "gothic_pagan"
+	culture = "rugian"
+	368.2.19 = {
+		birth = yes
+	}
+	423.1.1 = {
+		death = yes
+	}
+}
+rugian_15 = {
+	name = "Evaric"
+	religion = "gothic_pagan"
+	culture = "rugian"
+	446.8.1 = {
+		birth = yes
+	}
+	489.1.1 = {
+		death = yes
+	}
+}
+rugian_17 = {
+	name = "Eraric" # ostrogothic king
+	dynasty = 99993001
+	religion = "arianism"
+	culture = "rugian"
+	father = rugian_05
+	stewardship = 7
+	trait = education_stewardship_3
+	478.1.1 = {
+		birth = yes
+	}
+	541.1.1 = {
+		death = {
+			death_reason = death_murder
+		}
+	}
+}
+vidivari_01 = {
+	name = "Gizur"
+	religion = "gothic_pagan"
+	culture = "gothonic"
+	505.1.1 = {
+		birth = yes
+	}
+	555.1.1 = {
+		death = yes
+	}
+}

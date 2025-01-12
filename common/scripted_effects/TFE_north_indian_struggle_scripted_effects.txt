@@ -1,0 +1,213 @@
+﻿
+
+RICE_TFE_struggle_irrigation_tank_small_effect = {
+	if = {
+		limit = {
+			exists = struggle:north_indian_struggle
+			any_character_struggle = {
+				involvement = involved
+				is_struggle_type = north_indian_struggle
+			}
+		}
+		struggle:north_indian_struggle = {
+			activate_struggle_catalyst = {
+				catalyst = catalyst_TFE_irrigation_tank_small
+				character = root
+			}
+		}
+	}
+}
+
+RICE_TFE_struggle_irrigation_tank_medium_effect = {
+	if = {
+		limit = {
+			exists = struggle:north_indian_struggle
+			any_character_struggle = {
+				involvement = involved
+				is_struggle_type = north_indian_struggle
+			}
+		}
+		struggle:north_indian_struggle = {
+			activate_struggle_catalyst = {
+				catalyst = catalyst_TFE_irrigation_tank_medium
+				character = root
+			}
+		}
+	}
+}
+
+RICE_TFE_struggle_irrigation_tank_large_effect = {
+	if = {
+		limit = {
+			exists = struggle:north_indian_struggle
+			any_character_struggle = {
+				involvement = involved
+				is_struggle_type = north_indian_struggle
+			}
+		}
+		struggle:north_indian_struggle = {
+			activate_struggle_catalyst = {
+				catalyst = catalyst_TFE_irrigation_tank_large
+				character = root
+			}
+		}
+	}
+}
+
+RICE_TFE_struggle_irrigation_tank_huge_effect = {
+	if = {
+		limit = {
+			exists = struggle:north_indian_struggle
+			any_character_struggle = {
+				involvement = involved
+				is_struggle_type = north_indian_struggle
+			}
+		}
+		struggle:north_indian_struggle = {
+			activate_struggle_catalyst = {
+				catalyst = catalyst_TFE_irrigation_tank_huge
+				character = root
+			}
+		}
+	}
+}
+
+RICE_TFE_struggle_adopt_higher_varna_catalyst_effect = {
+	if = {
+		limit = {
+			exists = struggle:north_indian_struggle
+			any_character_struggle = {
+				involvement = involved
+				is_struggle_type = north_indian_struggle
+			}
+		}
+		struggle:north_indian_struggle = {
+			activate_struggle_catalyst = {
+				catalyst = catalyst_TFE_adopt_higher_varna
+				character = root
+			}
+		}
+	}
+}
+
+RICE_TFE_struggle_adopt_kshatriya_varna_catalyst_effect = {
+	if = {
+		limit = {
+			exists = struggle:north_indian_struggle
+			any_character_struggle = {
+				involvement = involved
+				is_struggle_type = north_indian_struggle
+			}
+		}
+		struggle:north_indian_struggle = {
+			activate_struggle_catalyst = {
+				catalyst = catalyst_TFE_adopt_kshatriya_varna
+				character = root
+			}
+		}
+	}
+}
+
+
+RICE_TFE_struggle_land_grant_buddhist_effect = {
+	if = {
+		limit = {
+			exists = struggle:north_indian_struggle
+			any_character_struggle = {
+				involvement = involved
+				is_struggle_type = north_indian_struggle
+			}
+		}
+		if = {
+			limit = {
+				religion = religion:buddhism_religion
+			}
+			struggle:north_indian_struggle = {
+				activate_struggle_catalyst = {
+					catalyst = catalyst_TFE_indian_land_grant_same_religion
+					character = root
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { religion = religion:buddhism_religion }
+			}
+			struggle:north_indian_struggle = {
+				activate_struggle_catalyst = {
+					catalyst = catalyst_TFE_indian_land_grant_different_religion
+					character = root
+				}
+			}
+		}
+	}
+}
+
+RICE_TFE_struggle_land_grant_hindu_effect = {
+	if = {
+		limit = {
+			exists = struggle:north_indian_struggle
+			any_character_struggle = {
+				involvement = involved
+				is_struggle_type = north_indian_struggle
+			}
+		}
+		if = {
+			limit = {
+				religion = religion:hinduism_religion
+			}
+			struggle:north_indian_struggle = {
+				activate_struggle_catalyst = {
+					catalyst = catalyst_TFE_indian_land_grant_same_religion
+					character = root
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { religion = religion:hinduism_religion }
+			}
+			struggle:north_indian_struggle = {
+				activate_struggle_catalyst = {
+					catalyst = catalyst_TFE_indian_land_grant_different_religion
+					character = root
+				}
+			}
+		}
+	}
+}
+
+RICE_TFE_struggle_land_grant_jain_effect = {
+	if = {
+		limit = {
+			exists = struggle:north_indian_struggle
+			any_character_struggle = {
+				involvement = involved
+				is_struggle_type = north_indian_struggle
+			}
+		}
+		if = {
+			limit = {
+				religion = religion:jainism_religion
+			}
+			struggle:north_indian_struggle = {
+				activate_struggle_catalyst = {
+					catalyst = catalyst_TFE_indian_land_grant_same_religion
+					character = root
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { religion = religion:jainism_religion }
+			}
+			struggle:north_indian_struggle = {
+				activate_struggle_catalyst = {
+					catalyst = catalyst_TFE_indian_land_grant_different_religion
+					character = root
+				}
+			}
+		}
+	}
+}
+

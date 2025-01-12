@@ -1,0 +1,25 @@
+﻿on_siege_completion = {
+    on_actions = { TFE_on_siege_completion }
+}
+
+TFE_on_siege_completion = {
+    effect = {
+        scope:previous_controller = {
+            if = {
+                limit = {
+                    scope:previous_controller = {
+                        any_character_struggle = {                                
+                            phase_has_catalyst = catalyst_TFE_siege_victory
+                        }  
+                    }                  
+                }
+                every_character_struggle = {
+                    activate_struggle_catalyst = {
+                        catalyst = catalyst_TFE_siege_victory
+                        character = scope:previous_controller
+                    }
+                }                 
+            }         	
+        }
+    }
+}

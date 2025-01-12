@@ -1,0 +1,369 @@
+﻿start_monument = {
+	scope = landed_title 
+
+	effect = {
+		save_scope_as = tmp_statue_title
+		set_variable = {
+			name = statue
+			value = flag:stone
+		}
+		set_variable = {
+			name = statue_pose
+			value = flag:proud
+		}
+		set_variable = {
+			name = statue_reference
+			value = holder
+		}
+		add_to_variable_list = {
+			name = statue_reference_list
+			target = holder
+		}
+		holder = {
+			every_close_or_extended_family_member = {
+				save_scope_as = tmp_statue
+				scope:tmp_statue_title = {
+					add_to_variable_list = {
+						name = statue_reference_list
+						target = scope:tmp_statue
+					}
+				}
+			}
+		}
+	}	
+}
+
+statue_gold = { 
+	scope = landed_title 
+
+	effect = {
+		set_variable = {
+			name = statue
+			value = flag:gold
+		}
+	}	 			
+}
+
+statue_marble = { 
+	scope = landed_title 
+
+	effect = {
+		set_variable = {
+			name = statue
+			value = flag:marble
+		}
+	}	 			
+}
+
+statue_limestone = { 
+	scope = landed_title 
+
+	effect = {
+		set_variable = {
+			name = statue
+			value = flag:limestone
+		}
+	}	 			
+}
+
+statue_stone = { 
+	scope = landed_title 
+
+	effect = {
+		set_variable = {
+			name = statue
+			value = flag:stone
+		}
+	}	 			
+}
+
+statue_copper = { 
+	scope = landed_title 
+
+	effect = {
+		set_variable = {
+			name = statue
+			value = flag:copper
+		}
+	}	 			
+}
+
+statue_proud = { 
+	scope = landed_title 
+
+	effect = {
+		set_variable = {
+			name = statue_pose
+			value = flag:proud
+		}
+	}	 			
+}
+
+statue_diplo = { 
+	scope = landed_title 
+
+	effect = {
+		set_variable = {
+			name = statue_pose
+			value = flag:diplo
+		}
+	}	 			
+}
+
+statue_martial = { 
+	scope = landed_title 
+
+	effect = {
+		set_variable = {
+			name = statue_pose
+			value = flag:marshal
+		}
+	}	 			
+}
+
+statue_sword = { 
+	scope = landed_title 
+
+	effect = {
+		set_variable = {
+			name = statue_pose
+			value = flag:sword
+		}
+	}	 			
+}
+statue_idle = { 
+	scope = landed_title 
+
+	effect = {
+		set_variable = {
+			name = statue_pose
+			value = flag:idle
+		}
+	}	 			
+}
+
+end_monument = {
+	scope = landed_title 
+
+	effect = {
+		remove_variable = statue
+		remove_variable = statue_pose
+		remove_variable = statue_reference
+		clear_variable_list = statue_reference_list
+	}	
+}
+
+statue_change_reference = {
+	scope = character
+	saved_scopes = {
+		target
+	}
+
+	effect = {
+		scope:target = {
+			set_variable = {
+				name = statue_reference
+				value = root
+			}
+		}
+	}
+}
+
+statue_construct = {
+	scope = landed_title
+	saved_scopes = {
+		target
+	}
+
+	effect = {
+			scope:target = {
+				remove_short_term_gold = root.monument_price
+				
+			}
+			set_variable = {
+				name = monument_cooldown
+				value = 120
+			}
+			set_variable = {
+				name = monument_existing
+				value = yes
+			}
+			set_variable = {
+				name = monument_material
+				value = var:statue
+			}
+			set_variable = {
+				name = monument_pose
+				value = var:statue_pose
+			}
+			set_variable = {
+				name = monument_refrence
+				value = var:statue_reference
+			}
+			set_variable = {
+				name = monument_date
+				value = current_year
+			}
+			trigger_event = {
+				on_action = on_monument_building
+				months = 1
+			}
+			if = {
+				limit = {
+					var:monument_material = flag:copper
+				}
+				trigger_event = {
+					on_action = on_monument_rust
+					years = 20
+				}
+			}
+	}
+}
+
+statue_destroy = {
+	effect = {
+		if = {
+			limit = {
+				exists = var:statue
+			}
+			if = {
+				limit = {
+					var:monument_material = flag:gold
+				}
+				remove_county_modifier = statue_gold
+				holder = {
+					remove_character_modifier = statue_char_gold
+				}
+				
+			}
+			if = {
+				limit = {
+					var:monument_material = flag:marble
+				}
+				remove_county_modifier = statue_marble
+				holder = {
+					remove_character_modifier = statue_char_marble
+				}
+			}
+			if = {
+				limit = {
+					var:monument_material = flag:limestone
+				}
+				remove_county_modifier = statue_limestone
+				holder = {
+					remove_character_modifier = statue_char_limestone
+				}
+			}
+			if = {
+				limit = {
+					var:monument_material = flag:stone
+				}
+				remove_county_modifier = statue_stone
+				holder = {
+					remove_character_modifier = statue_char_stone
+				}
+			}
+			if = {
+				limit = {
+					var:monument_material = flag:copper
+				}
+				remove_county_modifier = statue_copper
+				holder = {
+					remove_character_modifier = statue_char_copper
+				}
+			}
+		}
+		if = {
+			limit = {
+				exists = var:historical_monument
+			}
+			remove_variable = historical_monument
+		}
+		if = {
+			limit = {
+				exists = var:colossus_monument
+			}
+			remove_variable = colossus_monument
+		}
+		if = {
+			limit = {
+				exists = var:monument_gardens
+			}
+			remove_variable = monument_gardens
+			remove_county_modifier = monument_gardens
+			holder = {
+				remove_character_modifier = monument_gardens_char
+			}
+		}
+		if = {
+			limit = {
+				exists = var:monument_fences
+			}
+			remove_variable = monument_fences
+			remove_county_modifier = monument_fences
+			holder = {
+				remove_character_modifier = monument_fences_char
+			}
+		}
+		if = {
+			limit = {
+				var:monument_material = flag:copper
+			}
+			remove_county_modifier = statue_copper
+			holder = {
+				remove_character_modifier = statue_char_copper
+			}
+		}
+		scope:target = {
+			add_gold = root.monument_refund
+			
+		}
+		remove_variable = monument_existing
+		remove_variable = monument_pose
+		remove_variable = monument_material
+		remove_variable =  monument_refrence
+		remove_variable = monument_date
+	}
+}
+
+monument_gardens = { 
+	scope = landed_title 
+	saved_scopes = {
+		target
+	}
+
+	effect = {
+		scope:target = {
+			remove_short_term_gold = 500
+		}
+		set_variable = {
+			name = monument_gardens
+			value = yes
+		}
+		add_county_modifier = monument_gardens
+		holder = {
+			add_character_modifier = monument_gardens_char
+		}
+	}	 			
+}
+
+monument_fences = { 
+	scope = landed_title 
+	saved_scopes = {
+		target
+	}
+
+	effect = {
+		scope:target = {
+			remove_short_term_gold = 500
+		}
+		set_variable = {
+			name = monument_fences
+			value = yes
+		}
+		add_county_modifier = monument_fences
+		holder = {
+			add_character_modifier = monument_fences_char
+		}
+	}	 			
+}

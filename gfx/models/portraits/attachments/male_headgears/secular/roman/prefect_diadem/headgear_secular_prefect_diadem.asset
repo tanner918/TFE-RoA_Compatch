@@ -1,0 +1,21 @@
+pdxmesh = {
+	name = "male_headgear_secular_prefect_diadem_mesh"
+	file = "male_headgear_secular_pref_diadem.mesh"
+
+	meshsettings = {
+		name = "male_headgear_secular_roman_diademShape"
+		index = 0
+		texture_diffuse = "roman_pref_diadem_diffuse.dds"
+		texture_normal = "roman_pref_diadem_normal.dds"
+		texture_specular = "roman_pref_diadem_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "male_headgear_secular_prefect_diadem_entity"
+	pdxmesh = "male_headgear_secular_prefect_diadem_mesh"
+	
+	
+}

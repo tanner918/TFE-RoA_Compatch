@@ -1,0 +1,1831 @@
+﻿k_scotland = {
+	361.1.1 = { change_development_level = 0 }
+	532.1.1 = { change_development_level = 1 }
+	768.1.1 = { change_development_level = 2 }
+	
+	480.1.1 = {
+		holder = 166530
+	}
+	510.1.1 = {
+		holder = 166531
+	}
+	522.1.1 = {
+		holder = 166533
+	}
+	530.1.1 = {
+		holder = 166535
+	}
+	531.1.1 = {
+		holder = 166536
+	}
+	537.1.1 = {
+		holder = 166537
+	}
+	538.1.1 = {
+		holder = 166540
+	}
+	549.1.1 = {
+		holder = 166541
+	}
+	550.1.1 = {
+		holder = 166542
+	}
+	555.1.1 = {
+		holder = 166545
+	}
+	584.1.1 = {
+		holder = 166547
+	}
+	595.1.1 = {
+		holder = 166549
+	}
+	616.1.1 = {
+		holder = 166551
+	}
+	631.1.1 = {
+		holder = 166555
+	}
+	635.1.1 = {
+		holder = 166556
+	}
+	641.1.1 = {
+		holder = 166557
+	}
+	653.1.1 = {
+		holder = 166559
+	}
+	657.1.1 = {
+		holder = 166561
+	}
+	663.1.1 = {
+		holder = 166562
+	}
+	672.1.1 = {
+		holder = 166566
+	}
+	693.1.1 = {
+		holder = 166571
+	}
+	697.1.1 = {
+		holder = 166573
+	}
+	706.1.1 = {
+		holder = 166574
+	}
+	724.1.1 = {
+		holder = 166575
+	}
+	726.1.1 = {
+		holder = 166576
+	}
+	728.1.1 = {
+		holder = 166574
+	}
+	729.1.1 = {
+		holder = 166597
+	}
+	736.1.1 = {
+		holder = 166598
+	}
+	750.1.1 = {
+		holder = 166597
+	}
+	761.1.1 = {
+		holder = 166599
+	}
+	763.1.1 = {
+		holder = 166583
+	}
+}
+
+
+d_albany = {
+	# Kingdom of Circin
+	350.1.1 = {
+		holder = circin_01
+		government = tribal_government
+		liege = 0
+	}
+	368.1.1 = {
+		holder = circin_02
+	}
+	423.1.1 = {
+		holder = circin_03
+	}
+	452.1.1 = {
+		holder = circin_04
+	}
+
+
+	555.1.1 = {
+		holder = 166542
+	}
+	580.1.1 = {
+		holder = 166553
+	}
+	627.1.1 = {
+		holder = 166554
+	}
+	668.1.1 = {
+		holder = 0
+	}
+	#TODO
+	#REMOVE FOR RELEASE
+	#Here to fix mapmode
+	1058.1.1 = {
+		holder = 984 # Malcolm Canmore
+	}
+
+}
+
+
+c_gowrie = {
+	361.1.1 = { change_development_level = 2 }
+	531.1.1 = { change_development_level = 3 }
+	768.1.1 = { change_development_level = 4 }
+	
+	## Kingdom of Fothla
+	361.1.1 = {
+		holder = fotla_01
+		government = tribal_government
+		liege = d_albany
+	}
+	378.1.1 = {
+		holder = fotla_02
+	}
+	429.1.1 = {
+		holder = fotla_03
+	}
+	467.1.1 = {
+		holder = fotla_04
+	}
+
+	695.1.1 = {
+		liege = "d_moray"
+		holder = 166595
+		government = tribal_government
+	}
+	725.1.1 = {
+		holder = 166597
+	}
+	736.1.1 = {
+		holder = 166598
+	}
+	750.1.1 = {
+		holder = 166597
+	}
+	761.1.1 = {
+		holder = 166599
+	}
+	763.1.1 = {
+		holder = 166603
+	}
+}
+
+
+c_fife = {
+	# Kingdom of Fib
+	360.1.1 = {
+		holder = fib_01
+		government = tribal_government
+		liege = d_albany
+	}
+	368.1.1 = {
+		holder = fib_02
+	}
+	416.1.1 = {
+		holder = fib_03
+	}
+	452.1.1 = {
+		holder = fib_04
+	}
+}
+
+
+c_strathearn = {
+	# Kingdom of Fib
+	360.1.1 = {
+		holder = fib_01
+		government = tribal_government
+		liege = d_albany
+	}
+	368.1.1 = {
+		holder = fib_02
+	}
+	416.1.1 = {
+		holder = fib_03
+	}
+	452.1.1 = {
+		holder = fib_04
+	}
+	
+	480.1.1 = {
+		holder = 166530
+	}
+	510.1.1 = {
+		holder = 166531
+	}
+	522.1.1 = {
+		holder = 166533
+	}
+	530.1.1 = {
+		holder = 166535
+	}
+	531.1.1 = {
+		holder = 166536
+	}
+	537.1.1 = {
+		holder = 166537
+	}
+	538.1.1 = {
+		holder = 166540
+	}
+	549.1.1 = {
+		holder = 166541
+	}
+	550.1.1 = {
+		holder = 166542
+	}
+	555.1.1 = {
+		liege = "d_albany"
+	}
+	580.1.1 = {
+		holder = 166553
+	}
+	627.1.1 = {
+		holder = 166554
+	}
+	668.1.1 = {
+		liege = "k_scotland"
+		holder = 166577
+	}
+	673.1.1 = {
+		holder = 166578
+	}
+	687.1.1 = {
+		holder = 166579
+	}
+	712.1.1 = {
+		holder = 166580
+	}
+	737.1.1 = {
+		holder = 166581
+	}
+	742.1.1 = {
+		holder = 166583
+	}
+}
+
+
+c_atholl = {
+	## Kingdom of Fothla
+	361.1.1 = {
+		holder = fotla_01
+		government = tribal_government
+		liege = d_albany
+	}
+	378.1.1 = {
+		holder = fotla_02
+	}
+	429.1.1 = {
+		holder = fotla_03
+	}
+	467.1.1 = {
+		holder = fotla_04
+	}
+	760.1.1 = {
+		liege = "d_moray"
+		holder = 166618
+		government = tribal_government
+	}
+}
+
+
+c_angus = {
+	# Kingdom of Circin
+	350.1.1 = {
+		holder = circin_01
+		government = tribal_government
+		liege = 0
+	}
+	368.1.1 = {
+		holder = circin_02
+	}
+	423.1.1 = {
+		holder = circin_03
+	}
+	452.1.1 = {
+		holder = circin_04
+	}
+	695.1.1 = {
+		liege = "d_moray"
+		holder = 166595
+		government = tribal_government
+	}
+	725.1.1 = {
+		holder = 166597
+	}
+	736.1.1 = {
+		holder = 166598
+	}
+	750.1.1 = {
+		holder = 166597
+	}
+	761.1.1 = {
+		holder = 166599
+	}
+	763.1.1 = {
+		holder = 166603
+	}
+}
+
+
+c_mearns = {
+	361.1.1 = { change_development_level = 2 }
+	532.1.1 = { change_development_level = 3 }
+	768.1.1 = { change_development_level = 4 }
+	
+	# Kingdom of Circin
+	350.1.1 = {
+		holder = circin_01
+		government = tribal_government
+		liege = 0
+	}
+	368.1.1 = {
+		holder = circin_02
+	}
+	423.1.1 = {
+		holder = circin_03
+	}
+	452.1.1 = {
+		holder = circin_04
+	}
+
+	695.1.1 = {
+		liege = "d_moray"
+		holder = 166595
+		government = tribal_government
+	}
+	725.1.1 = {
+		holder = 166597
+	}
+	736.1.1 = {
+		holder = 166598
+	}
+	750.1.1 = {
+		holder = 166597
+	}
+	761.1.1 = {
+		holder = 166599
+	}
+	763.1.1 = {
+		holder = 166603
+	}
+}
+
+
+d_the_isles = {
+	361.1.1 = { change_development_level = 0 }
+	532.1.1 = { change_development_level = 1 }
+	768.1.1 = { change_development_level = 2 }
+	
+	431.1.1 = {
+		holder = 159935 #Dingad ap Tudwal
+		government = tribal_government
+	}
+	481.1.1 = {
+		holder = 159936 #Senyllt ap Dingad
+	}
+	501.1.1 = {
+		holder = 159937 #Neithon ap Senyllt
+	}
+	549.1.1 = {
+		holder = 159938 #Rhun ap Neithon
+	}
+	577.1.1 = {
+		holder = 159939 #Tudwal ap Rhun
+	}
+	598.1.1 = {
+		holder = 159940 #Anllech ap Tudwal
+	}
+	634.1.1 = {
+		holder = 159941 #Cynin ap Anllech
+	}
+	650.1.1 = {
+		holder = 159942 #Merfyn ap Cynin
+	}
+	681.1.1 = {
+		holder = 159943 #Anarawd Gwalchcrwn ap Merfyn
+	}
+	691.1.1 = {
+		holder = 159934 #Tudwal ap Anarawd
+	}
+	720.1.1 = {
+		holder = 159029 #Sandde ap Algwyn
+	}
+	730.1.1 = {
+		holder = 159028 #Elidyr ap Sandde
+	}
+	800.1.1 = {
+		holder = 159026 #Gwriad ap Elidyr, King of Manaw
+	}
+	825.1.1 = {
+		holder = 159027 #Merfyn ap Gwriad, father of Rhodri Mawr
+	}
+	836.1.1 = {
+		holder = 0
+	}
+	935.1.1 = {
+		government = feudal_government	#Ahistorical, just for ease of bookmarks.
+	}
+}
+
+
+c_isle_of_man = {
+	361.1.1 = {
+		holder = welsh_02 # 
+	}
+	# Sub-Roman Isles
+	380.1.1 = {
+		holder = 159808 #Anwwn Dynod
+		government = tribal_government
+	}
+	428.1.1 = {
+		holder = 159813 #Tudwal Dingad
+	}
+	431.1.1 = {
+		holder = 159935 #Dingad ap Tudwal
+	}
+	481.1.1 = {
+		holder = 159936 #Senyllt ap Dingad
+	}
+	501.1.1 = {
+		holder = 159937 #Neithon ap Senyllt
+	}
+	549.1.1 = {
+		holder = 159938 #Rhun ap Neithon
+	}
+	577.1.1 = {
+		holder = 159939 #Tudwal ap Rhun
+	}
+	598.1.1 = {
+		holder = 159940 #Anllech ap Tudwal
+	}
+	634.1.1 = {
+		holder = 159941 #Cynin ap Anllech
+	}
+	650.1.1 = {
+		holder = 159942 #Merfyn ap Cynin
+	}
+	681.1.1 = {
+		holder = 159943 #Anarawd Gwalchcrwn ap Merfyn
+	}
+	691.1.1 = {
+		holder = 159934 #Tudwal ap Anarawd
+	}
+	720.1.1 = {
+		holder = 159029 #Sandde ap Algwyn
+	}
+	730.1.1 = {
+		holder = 159028 #Elidyr ap Sandde
+	}
+}
+
+
+d_galloway = {
+	## Kingdom of Stratchlyde
+	355.1.1 = {
+		holder = 166466
+	}
+	384.1.1 = {
+		holder = 166465
+	}
+	412.1.1 = {
+		holder = 166464
+	}
+	436.1.1 = {
+		holder = 166463
+	}
+	488.1.1 = {
+		holder = 166462
+	}
+	501.1.1 = {
+		holder = 166461
+	}
+	525.1.1 = {
+		holder = 166459
+	}
+	535.1.1 = {
+		holder = 166458
+	}
+	562.1.1 = {
+		holder = 166457
+	}
+	612.1.1 = {
+		holder = 166456
+	}
+	618.1.1 = {
+		holder = 166455
+	}
+	620.1.1 = {
+		holder = 166454
+	}
+	627.1.1 = {
+		holder = 166453
+	}
+	652.1.1 = {
+		holder = 166452
+	}
+	658.1.1 = {
+		holder = 166451
+	}
+	686.1.1 = {
+		holder = 166450
+	}
+	694.1.1 = {
+		holder = 166449
+	}
+	722.1.1 = {
+		holder = 166448
+	}
+	752.1.1 = {
+		holder = 159021
+	}
+	754.1.1 = {
+		holder = 166447
+	}
+	760.1.1 = {
+		holder = 166446
+	}
+}
+
+
+c_galloway = {
+	# Sub-Roman Isles
+	380.1.1 = {
+		holder = 159808 #Anwwn Dynod
+		government = tribal_government
+	}
+	428.1.1 = {
+		holder = 159813 #Tudwal Dingad
+	}
+	431.1.1 = {
+		holder = 159935 #Dingad ap Tudwal
+	}
+
+	765.1.1 = {
+		liege = "d_northumberland"
+		holder = 205246
+		government = tribal_government
+	}
+}
+
+
+c_carrick = {
+	## Kingdom of Stratchlyde
+	355.1.1 = {
+		holder = 166466
+	}
+	384.1.1 = {
+		holder = 166465
+	}
+	412.1.1 = {
+		holder = 166464
+	}
+	436.1.1 = {
+		holder = 166463
+	}
+
+	765.1.1 = {
+		liege = "d_northumberland"
+		holder = 205246
+		government = tribal_government
+	}
+}
+
+
+c_ayrshire = {
+	## Kingdom of Stratchlyde
+	355.1.1 = {
+		holder = 166466
+	}
+	384.1.1 = {
+		holder = 166465
+	}
+	412.1.1 = {
+		holder = 166464
+	}
+	436.1.1 = {
+		holder = 166463
+	}
+	
+	765.1.1 = {
+		liege = "d_northumberland"
+		holder = 205246
+		government = tribal_government
+	}
+}
+
+
+c_annandale = {
+	## Kingdom of Stratchlyde
+	355.1.1 = {
+		holder = 166466
+	}
+	384.1.1 = {
+		holder = 166465
+	}
+	412.1.1 = {
+		holder = 166464
+	}
+	436.1.1 = {
+		holder = 166463
+	}
+	
+	765.1.1 = {
+		holder = 205050
+		liege = d_northumberland
+	}
+}
+
+
+c_lennox = {
+	355.1.1 = {
+		holder = 166466
+	}
+	384.1.1 = {
+		holder = 166465
+	}
+	412.1.1 = {
+		holder = 166464
+	}
+	436.1.1 = {
+		holder = 166463
+	}
+	488.1.1 = {
+		holder = 166462
+	}
+	501.1.1 = {
+		holder = 166461
+	}
+	525.1.1 = {
+		holder = 166459
+	}
+	535.1.1 = {
+		holder = 166458
+	}
+	562.1.1 = {
+		holder = 166457
+	}
+	612.1.1 = {
+		holder = 166456
+	}
+	618.1.1 = {
+		holder = 166455
+	}
+	620.1.1 = {
+		holder = 166454
+	}
+	627.1.1 = {
+		holder = 166453
+	}
+	652.1.1 = {
+		holder = 166452
+	}
+	658.1.1 = {
+		holder = 166451
+	}
+	686.1.1 = {
+		holder = 166450
+	}
+	694.1.1 = {
+		holder = 166449
+	}
+	722.1.1 = {
+		holder = 166448
+	}
+	752.1.1 = {
+		holder = 159021
+	}
+	754.1.1 = {
+		holder = 166447
+	}
+	760.1.1 = {
+		holder = 166446
+	}
+}
+
+
+d_western_isles = {
+	#Dal Riata
+	490.1.1 = {
+		holder = 166468
+		government = tribal_government
+	}
+	497.1.1 = {
+		holder = 83574
+	}
+	501.1.1 = {
+		holder = 83575
+	}
+	507.1.1 = {
+		holder = 166469
+	}
+	540.1.1 = {
+		holder = 83576
+	}
+	560.1.1 = {
+		holder = 166470
+	}
+	574.1.1 = {
+		holder = 83577
+	}
+	606.1.1 = {
+		holder = 166471
+	}
+	622.1.1 = {
+		holder = 83578
+	}
+	629.7.1 = {
+		holder = 83579
+	}
+	642.1.1 = {
+		holder = 166472
+	}
+	649.1.1 = {
+		holder = 166474
+	}
+	654.1.1 = {
+		holder = 166475
+	}
+	660.1.1 = {
+		holder = 83580
+	}
+	672.1.1 = {
+		holder = 166476
+	}
+	689.1.1 = {
+		holder = 166477
+	}
+	696.1.1 = {
+		holder = 166484
+	}
+	697.1.1 = {
+		holder = 83581
+	}
+	697.7.1 = {
+		holder = 166485
+	}
+	698.1.1 = {
+		holder = 166489
+	}
+	700.1.1 = {
+		holder = 166490
+	}
+	707.1.1 = {
+		holder = 166491
+	}
+	721.1.1 = {
+		holder = 166486
+	}
+	723.1.1 = {
+		holder = 166492
+	}
+	726.1.1 = {
+		holder = 83582
+	}
+	733.1.1 = {
+		holder = 166493
+	}
+	736.1.1 = {
+		liege = "k_scotland"
+	}
+	736.1.1 = {
+		holder = 166494
+	}
+	738.1.1 = {
+		holder = 166495
+	}
+	740.1.1 = {
+		holder = 166496
+	}
+	741.1.1 = {
+		holder = 166498
+	}
+	749.1.1 = {
+		holder = 166499
+	}
+	762.1.1 = {
+		liege = 0
+	}
+	762.1.1 = {
+		holder = 83583
+	}
+}
+
+
+c_inner_hebrides = {
+	#### Pictish Stuff
+	361.1.1 = {
+		holder = pict_05
+		government = tribal_government
+		liege = 0
+	}
+	476.1.1 = {
+		holder = isles_01
+	}
+	#Dal Riata
+	490.1.1 = {
+		holder = 166468
+		government = tribal_government
+	}
+	497.1.1 = {
+		holder = 83574
+	}
+	501.1.1 = {
+		holder = 83575
+	}
+	507.1.1 = {
+		holder = 166469
+	}
+	540.1.1 = {
+		holder = 83576
+	}
+	560.1.1 = {
+		holder = 166470
+	}
+	574.1.1 = {
+		holder = 83577
+	}
+	606.1.1 = {
+		holder = 166471
+	}
+	622.1.1 = {
+		holder = 83578
+	}
+	629.7.1 = {
+		holder = 83579
+	}
+	642.1.1 = {
+		holder = 166472
+	}
+	649.1.1 = {
+		holder = 166474
+	}
+	654.1.1 = {
+		holder = 166475
+	}
+	660.1.1 = {
+		holder = 83580
+	}
+	672.1.1 = {
+		holder = 166476
+	}
+	689.1.1 = {
+		holder = 166477
+	}
+	696.1.1 = {
+		holder = 166484
+	}
+	697.1.1 = {
+		holder = 83581
+	}
+	697.7.1 = {
+		holder = 166485
+	}
+	698.1.1 = {
+		holder = 166489
+	}
+	700.1.1 = {
+		holder = 166490
+	}
+	707.1.1 = {
+		holder = 166491
+	}
+	721.1.1 = {
+		holder = 166486
+	}
+	723.1.1 = {
+		holder = 166492
+	}
+	726.1.1 = {
+		holder = 83582
+	}
+	733.1.1 = {
+		holder = 166493
+	}
+	736.1.1 = {
+		liege = "k_scotland"
+	}
+	736.1.1 = {
+		holder = 166494
+	}
+	738.1.1 = {
+		holder = 166495
+	}
+	740.1.1 = {
+		holder = 166496
+	}
+	741.1.1 = {
+		holder = 166498
+	}
+	749.1.1 = {
+		holder = 166499
+	}
+	762.1.1 = {
+		liege = 0
+	}
+	762.1.1 = {
+		holder = 83583
+	}
+}
+
+
+c_outer_hebrides = {
+	#### Pictish Stuff
+	361.1.1 = {
+		holder = pict_05
+		government = tribal_government
+		liege = 0
+	}
+	476.1.1 = {
+		holder = isles_02
+	}
+	#Dal Riata
+	490.1.1 = {
+		holder = 166468
+		government = tribal_government
+	}
+	497.1.1 = {
+		holder = 83574
+	}
+	501.1.1 = {
+		holder = 83575
+	}
+	507.1.1 = {
+		holder = 166469
+	}
+	540.1.1 = {
+		holder = 83576
+	}
+	560.1.1 = {
+		holder = 166470
+	}
+	574.1.1 = {
+		holder = 83577
+	}
+	606.1.1 = {
+		holder = 166471
+	}
+	622.1.1 = {
+		holder = 83578
+	}
+	629.7.1 = {
+		holder = 83579
+	}
+	642.1.1 = {
+		holder = 166472
+	}
+	649.1.1 = {
+		holder = 166474
+	}
+	654.1.1 = {
+		holder = 166475
+	}
+	660.1.1 = {
+		holder = 83580
+	}
+	672.1.1 = {
+		holder = 166476
+	}
+	689.1.1 = {
+		holder = 166477
+	}
+	696.1.1 = {
+		holder = 166484
+	}
+	697.1.1 = {
+		holder = 83581
+	}
+	697.7.1 = {
+		holder = 166485
+	}
+	698.1.1 = {
+		holder = 166489
+	}
+	700.1.1 = {
+		holder = 166490
+	}
+	707.1.1 = {
+		holder = 166491
+	}
+	721.1.1 = {
+		holder = 166486
+	}
+	723.1.1 = {
+		holder = 166492
+	}
+	726.1.1 = {
+		holder = 83582
+	}
+	733.1.1 = {
+		holder = 166493
+	}
+	736.1.1 = {
+		liege = "k_scotland"
+	}
+	736.1.1 = {
+		holder = 166494
+	}
+	738.1.1 = {
+		holder = 166495
+	}
+	740.1.1 = {
+		holder = 166496
+	}
+	741.1.1 = {
+		holder = 166498
+	}
+	749.1.1 = {
+		holder = 166499
+	}
+	762.1.1 = {
+		liege = 0
+	}
+	762.1.1 = {
+		holder = 83583
+	}
+}
+
+
+c_argyll = {
+	#### Pictish Stuff
+	361.1.1 = {
+		holder = pict_05
+		government = tribal_government
+		liege = 0
+	}
+	476.1.1 = {
+		holder = isles_03
+	}
+	490.1.1 = {
+		liege = "d_western_isles"
+		government = tribal_government
+	}
+	490.1.1 = {
+		holder = 166468
+	}
+	497.1.1 = {
+		holder = 83574
+	}
+	501.1.1 = {
+		holder = 83575
+	}
+	507.1.1 = {
+		holder = 166469
+	}
+	540.1.1 = {
+		holder = 83576
+	}
+	560.1.1 = {
+		holder = 166470
+	}
+	574.1.1 = {
+		holder = 83577
+	}
+	606.1.1 = {
+		holder = 166471
+	}
+	622.1.1 = {
+		holder = 83578
+	}
+	629.7.1 = {
+		holder = 83579
+	}
+	642.1.1 = {
+		holder = 166472
+	}
+	649.1.1 = {
+		holder = 166474
+	}
+	654.1.1 = {
+		holder = 166475
+	}
+	660.1.1 = {
+		holder = 83580
+	}
+	672.1.1 = {
+		holder = 166476
+	}
+	689.1.1 = {
+		holder = 166477
+	}
+	696.1.1 = {
+		holder = 166484
+	}
+	697.1.1 = {
+		holder = 83581
+	}
+	697.7.1 = {
+		holder = 166485
+	}
+	698.1.1 = {
+		holder = 166489
+	}
+	700.1.1 = {
+		holder = 166490
+	}
+	707.1.1 = {
+		holder = 166491
+	}
+	721.1.1 = {
+		holder = 166486
+	}
+	723.1.1 = {
+		holder = 166492
+	}
+	726.1.1 = {
+		holder = 83582
+	}
+	733.1.1 = {
+		holder = 166493
+	}
+	736.1.1 = {
+		holder = 166494
+	}
+	738.1.1 = {
+		holder = 166495
+	}
+	740.1.1 = {
+		holder = 166496
+	}
+	741.1.1 = {
+		holder = 166498
+	}
+	749.1.1 = {
+		holder = 166499
+	}
+	762.1.1 = {
+		holder = 83583
+	}
+}
+
+
+d_lothian = {
+
+	290.1.1 = {
+		holder = 159007 #Tegid
+		government = tribal_government
+	}
+	360.1.1 = {
+		holder = 159008 #Padarn Beisrudd
+	}
+	402.1.1 = {
+		holder = 159009 #Edern
+	}
+	407.1.1 = {
+		holder = goddodin_01 #Tinkomaros
+	}
+	## Goddodyn
+	410.1.2 = {
+		holder = 159038 #Coel Hen
+	}
+	412.1.1 = {
+		holder = goddodin_01 #Tinkomaros
+	}
+	440.1.1 = {
+		holder = goddodin_02 #Amlaib
+	}
+	456.1.1 = {
+		holder = goddodin_03 #Gwgon
+	}
+	532.1.1 = {
+		holder = 166537
+		liege = k_scotland
+	}
+}
+
+
+c_lothian = {
+	361.1.1 = { change_development_level = 2 }
+	532.1.1 = { change_development_level = 3 }
+	768.1.1 = { change_development_level = 4 }
+
+	### Goddodin
+	290.1.1 = {
+		holder = 159007 #Tegid
+		government = tribal_government
+	}
+	360.1.1 = {
+		holder = 159008 #Padarn Beisrudd
+	}
+	402.1.1 = {
+		holder = 159009 #Edern
+	}
+	407.1.1 = {
+		holder = goddodin_01 #Tinkomaros
+	}
+	440.1.1 = {
+		holder = goddodin_02 #Amlaib
+	}
+	456.1.1 = {
+		holder = goddodin_03 #Gwgon
+	}
+	765.1.1 = {
+		liege = "d_northumberland"
+		holder = 205250
+	}
+}
+
+
+c_dunbar = {
+	361.1.1 = { change_development_level = 2 }
+	532.1.1 = { change_development_level = 3 }
+	768.1.1 = { change_development_level = 4 }
+
+	### Goddodin
+	290.1.1 = {
+		holder = 159007 #Tegid
+		government = tribal_government
+	}
+	360.1.1 = {
+		holder = 159008 #Padarn Beisrudd
+	}
+	402.1.1 = {
+		holder = 159009 #Edern
+	}
+	407.1.1 = {
+		holder = goddodin_01 #Tinkomaros
+	}
+	440.1.1 = {
+		holder = goddodin_02 #Amlaib
+	}
+	# Bernicia
+	440.1.1 = {
+		holder = 205199 #Ingvi
+		government = tribal_government
+	}
+	765.1.1 = {
+		liege = "d_northumberland"
+		holder = 205249
+	}
+}
+
+
+c_teviotdale = {
+	### Goddodin
+	290.1.1 = {
+		holder = 159007 #Tegid
+		government = tribal_government
+	}
+	360.1.1 = {
+		holder = 159008 #Padarn Beisrudd
+	}
+	402.1.1 = {
+		holder = 159009 #Edern
+	}
+	407.1.1 = {
+		holder = goddodin_01 #Tinkomaros
+	}
+	440.1.1 = {
+		holder = goddodin_02 #Amlaib
+	}
+	456.1.1 = {
+		holder = goddodin_03 #Gwgon
+	}
+	765.1.1 = {
+		holder = 205050
+		liege = d_northumberland
+	}
+
+}
+
+
+c_linlithgowshire = {
+	### Goddodin
+	290.1.1 = {
+		holder = 159007 #Tegid
+		government = tribal_government
+	}
+	360.1.1 = {
+		holder = 159008 #Padarn Beisrudd
+	}
+	402.1.1 = {
+		holder = 159009 #Edern
+	}
+	407.1.1 = {
+		holder = goddodin_01 #Tinkomaros
+	}
+	440.1.1 = {
+		holder = goddodin_02 #Amlaib
+	}
+	456.1.1 = {
+		holder = goddodin_03 #Gwgon
+	}
+	
+}
+
+
+c_lanarkshire = {
+	## Kingdom of Stratchlyde
+	355.1.1 = {
+		holder = 166466
+	}
+	384.1.1 = {
+		holder = 166465
+	}
+	412.1.1 = {
+		holder = 166464
+	}
+	436.1.1 = {
+		holder = 166463
+	}
+	765.1.1 = {
+		holder = 205050
+		liege = d_northumberland
+		government = tribal_government
+	}
+
+}
+
+d_moray = {
+	361.1.1 = { change_development_level = 0 }
+	532.1.1 = { change_development_level = 1 }
+	768.1.1 = { change_development_level = 2 }
+	
+	### Kingdom of Fortriu
+	210.1.1 = {
+		holder = 166513 #Argentocoxos
+		government = tribal_government
+	}
+	248.1.1 = {
+		holder = 166514 #Ru
+	}
+	271.1.1 = {
+		holder = 166515 #Buthut
+	}
+	295.1.1 = {
+		holder = 166516 #Ganhant I
+	}
+	304.1.1 = {
+		holder = 166517 #Breth
+	}
+	311.1.1 = {
+		holder = 166518 #Uipog
+	}
+	341.1.1 = {
+		holder = 166519 #Canutulachama
+	}
+	345.1.1 = {
+		holder = 166520 #Uuredach
+	}
+	347.1.1 = {
+		holder = 166521 #Ganant II
+	}
+	387.1.1 = {
+		holder = 166525 #Telurg
+	}
+	412.1.1 = {
+		holder = 166527 #Drest
+	}
+	452.1.1 = {
+		holder = 166524
+	}
+	456.1.1 = {
+		holder = 166528
+	}
+
+	517.1.1 = {
+		holder = 166543
+		liege = "k_scotland"
+		government = tribal_government
+	}
+	531.1.1 = {
+		holder = 166544
+	}
+	552.1.1 = {
+		holder = 166545
+	}
+	584.1.1 = {
+		holder = 166547
+	}
+	595.1.1 = {
+		holder = 166549
+	}
+	616.1.1 = {
+		holder = 166551
+	}
+	631.1.1 = {
+		holder = 166555
+	}
+	635.1.1 = {
+		holder = 166556
+	}
+	641.1.1 = {
+		holder = 166557
+	}
+	653.1.1 = {
+		holder = 166559
+	}
+	657.1.1 = {
+		holder = 166561
+	}
+	663.1.1 = {
+		holder = 166562
+	}
+	672.1.1 = {
+		holder = 166566
+	}
+	693.1.1 = {
+		holder = 166571
+	}
+	697.1.1 = {
+		holder = 166573
+	}
+	706.1.1 = {
+		holder = 166574
+	}
+	724.1.1 = {
+		holder = 166575
+	}
+	726.1.1 = {
+		holder = 166576
+	}
+	728.1.1 = {
+		holder = 166574
+	}
+	729.1.1 = {
+		holder = 166597
+	}
+	736.1.1 = {
+		holder = 166598
+	}
+	750.1.1 = {
+		holder = 166597
+	}
+	761.1.1 = {
+		holder = 166599
+	}
+	763.1.1 = {
+		holder = 166603
+	}
+}
+
+
+c_moray = {
+	### Kingdom of Fortriu
+	210.1.1 = {
+		holder = 166513 #Argentocoxos
+		government = tribal_government
+	}
+	248.1.1 = {
+		holder = 166514 #Ru
+	}
+	271.1.1 = {
+		holder = 166515 #Buthut
+	}
+	295.1.1 = {
+		holder = 166516 #Ganhant I
+	}
+	304.1.1 = {
+		holder = 166517 #Breth
+	}
+	311.1.1 = {
+		holder = 166518 #Uipog
+	}
+	341.1.1 = {
+		holder = 166519 #Canutulachama
+	}
+	345.1.1 = {
+		holder = 166520 #Uuredach
+	}
+	347.1.1 = {
+		holder = 166521 #Ganant II
+	}
+	387.1.1 = {
+		holder = 166525 #Telurg
+	}
+	412.1.1 = {
+		holder = 166527 #Drest
+	}
+	452.1.1 = {
+		holder = 166524
+	}
+	456.1.1 = {
+		holder = 166528
+	}
+
+	517.1.1 = {
+		holder = 166543
+		liege = "d_moray"
+		government = tribal_government
+	}
+	531.1.1 = {
+		holder = 166544
+	}
+	552.1.1 = {
+		holder = 166545
+	}
+	584.1.1 = {
+		holder = 166547
+	}
+	595.1.1 = {
+		holder = 166549
+	}
+	616.1.1 = {
+		holder = 166551
+	}
+	631.1.1 = {
+		holder = 166555
+	}
+	635.1.1 = {
+		holder = 166556
+	}
+	641.1.1 = {
+		holder = 166557
+	}
+	653.1.1 = {
+		holder = 166559
+	}
+	657.1.1 = {
+		holder = 166561
+	}
+	663.1.1 = {
+		holder = 166562
+	}
+	672.1.1 = {
+		holder = 166566
+	}
+	693.1.1 = {
+		holder = 166571
+	}
+	697.1.1 = {
+		holder = 166573
+	}
+	706.1.1 = {
+		holder = 166574
+	}
+	724.1.1 = {
+		holder = 166575
+	}
+	726.1.1 = {
+		holder = 166576
+	}
+	728.1.1 = {
+		holder = 166574
+	}
+	734.1.1 = {
+		holder = 166619
+	}
+	749.1.1 = {
+		holder = 166620
+	}
+}
+
+
+c_ross = {
+	## Kingdom of Fothla
+	361.1.1 = {
+		holder = fidach_01
+		government = tribal_government
+		liege = 0
+	}
+	378.1.1 = {
+		holder = fidach_02
+	}
+	429.1.1 = {
+		holder = fidach_03
+	}
+	467.1.1 = {
+		holder = fidach_04
+	}
+	760.1.1 = {
+		liege = "d_moray"
+		holder = 166617
+		government = tribal_government
+	}
+}
+
+
+c_buchan = {
+	## Kingdom of Cé
+	361.1.1 = {
+		holder = ce_01
+		government = tribal_government
+		liege = 0
+	}
+	378.1.1 = {
+		holder = ce_02
+	}
+	429.1.1 = {
+		holder = ce_03
+	}
+	467.1.1 = {
+		holder = ce_04
+	}
+	760.1.1 = {
+		liege = "d_moray"
+		holder = 166612
+		government = tribal_government
+	}
+}
+
+
+c_caithness = {
+	## Kingdom of Caitt
+	361.1.1 = {
+		holder = cat_01
+		government = tribal_government
+		liege = 0
+	}
+	378.1.1 = {
+		holder = cat_02
+	}
+	430.1.1 = {
+		holder = cat_03
+	}
+	450.1.1 = {
+		holder = cat_04
+	}
+	760.1.1 = {
+		liege = "d_moray"
+		holder = 166614
+		government = tribal_government
+	}
+}
+
+c_sutherland = {
+	## Kingdom of Caitt
+	361.1.1 = {
+		holder = cat_01
+		government = tribal_government
+		liege = 0
+	}
+	378.1.1 = {
+		holder = cat_02
+	}
+	430.1.1 = {
+		holder = cat_03
+	}
+	450.1.1 = {
+		holder = cat_04
+	}
+	760.1.1 = {
+		liege = "d_moray"
+		holder = 166614
+		government = tribal_government
+	}
+}
+
+
+c_inverness = {
+	## Kingdom of Fothla
+	361.1.1 = {
+		holder = fidach_01
+		government = tribal_government
+		liege = 0
+	}
+	378.1.1 = {
+		holder = fidach_02
+	}
+	429.1.1 = {
+		holder = fidach_03
+	}
+	467.1.1 = {
+		holder = fidach_04
+	}
+
+
+	517.1.1 = {
+		holder = 166543
+		liege = "d_moray"
+		government = tribal_government
+	}
+	531.1.1 = {
+		holder = 166544
+	}
+	552.1.1 = {
+		holder = 166545
+	}
+	584.1.1 = {
+		holder = 166547
+	}
+	595.1.1 = {
+		holder = 166549
+	}
+	616.1.1 = {
+		holder = 166551
+	}
+	631.1.1 = {
+		holder = 166555
+	}
+	635.1.1 = {
+		holder = 166556
+	}
+	641.1.1 = {
+		holder = 166557
+	}
+	653.1.1 = {
+		holder = 166559
+	}
+	657.1.1 = {
+		holder = 166561
+	}
+	663.1.1 = {
+		holder = 166562
+	}
+	672.1.1 = {
+		holder = 166566
+	}
+	693.1.1 = {
+		holder = 166571
+	}
+	697.1.1 = {
+		holder = 166573
+	}
+	706.1.1 = {
+		holder = 166574
+	}
+	724.1.1 = {
+		holder = 166575
+	}
+	726.1.1 = {
+		holder = 166576
+	}
+	728.1.1 = {
+		holder = 166574
+	}
+	734.1.1 = {
+		holder = 166619
+	}
+	749.1.1 = {
+		holder = 166620
+	}
+}
+
+
+d_northern_isles = {
+	
+	
+
+}
+
+
+c_orkney = {
+	## Kingdom of Caitt
+	361.1.1 = {
+		holder = cat_01
+		government = tribal_government
+		liege = 0
+	}
+	378.1.1 = {
+		holder = cat_02
+	}
+	430.1.1 = {
+		holder = cat_03
+	}
+	450.1.1 = {
+		holder = cat_04
+	}
+	760.1.1 = {
+		liege = "d_moray"
+		holder = 166615
+		government = tribal_government
+	}
+}
+
+
+c_faereyar = {
+	#### Pictish Stuff
+	361.1.1 = {
+		holder = pict_03
+		government = tribal_government
+		liege = 0
+	}
+	476.1.1 = {
+		holder = pict_04
+	}
+	760.1.1 = {
+		holder = 166616
+		government = tribal_government
+	}
+}
+
+
+c_shetland = {
+	#### Pictish Stuff
+	361.1.1 = {
+		holder = pict_01
+		government = tribal_government
+		liege = 0
+	}
+	476.1.1 = {
+		holder = pict_02
+	}
+	760.1.1 = {
+		liege = "d_moray"
+		holder = 166613
+		government = tribal_government
+	}
+}
+

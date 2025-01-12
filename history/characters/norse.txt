@@ -1,0 +1,4597 @@
+﻿hrethling_1 = {
+	name = "Hredel" # Hrethel
+	dynasty = hredeling_dynasty
+	culture = "norse"
+	religion = "norse_pagan"	
+	trait = compassionate
+	trait = family_first
+	441.1.1 = {
+		birth = yes
+	}
+	457.1.1 = {
+		add_spouse = hrethling_2
+	}
+	497.1.1 = {
+		trait = depressed_1
+	}
+	498.1.1 = {
+		death = yes
+	}
+}
+hrethling_2 = {
+	name = "Thyra"
+	dynasty = swerting_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	female = yes
+	trait = compassionate
+	trait = family_first
+	father = hrethling_8
+	443.2.1 = {
+		birth = yes
+	}
+	508.1.1 = {
+		death = yes
+	}
+}
+hrethling_3 = {
+	name = "Herebald"
+	dynasty = hredeling_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father=hrethling_1
+	mother=hrethling_2
+	458.1.1 = {
+		birth = yes
+	}
+	497.1.1 = {
+		death = {
+			death_reason = death_accident
+		}
+	}
+}
+hrethling_4 = {
+	name = "Hedkyn" # Hæthcyn
+	dynasty = hredeling_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father=hrethling_1
+	mother=hrethling_2
+	trait=hunter
+	460.1.1 = {
+		birth = yes
+	}
+	497.1.1 = {
+		trait=kinslayer_3
+	}
+	503.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = yngling_21 # Egill
+		}
+	}
+}
+hrethling_5 = {
+	name = "Hafdis"
+	female = yes
+	dynasty = hredeling_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father=hrethling_1
+	mother=hrethling_2
+	trait=physique_good_2
+	464.1.1 = {
+		birth = yes
+	}
+	510.1.1={
+		death=yes
+	}
+}
+hrethling_6 = {
+	name = "Hugleik" # Hygelac
+	dynasty = hredeling_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father=hrethling_1
+	mother=hrethling_2
+	trait=education_martial_3
+	461.1.1 = {
+		birth = yes
+	}
+	478.1.1 = {
+		add_spouse = geat_10
+	}	
+	516.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = 997015 # Theodobert
+		}
+	}
+}
+hrethling_7 = {
+	name = "Hardurad" # Heardred
+	dynasty = hredeling_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father = hrethling_6
+	mother = geat_10
+	504.1.1 = {
+		birth = yes
+	}
+	523.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = yngling_23 # Onela
+		}
+	}
+}
+hrethling_8 = {
+	name = "Swerting"
+	dynasty = swerting_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	423.1.1 = {
+		birth = yes
+	}
+	475.1.1 = {
+		death = yes
+	}
+}
+hrethling_9 = {
+	name = "Hafdis"
+	female = yes
+	dynasty = hredeling_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father = hrethling_6
+	mother = geat_10
+	500.1.1 = {
+		birth = yes
+	}
+	550.1.1 = {
+		death = yes
+	}
+}
+wonreding_1 = {
+	name = "Wonred"
+	dynasty = wonreding_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	455.1.1 = {
+		birth = yes
+	}
+	515.1.1 = {
+		death = yes
+	}
+}
+wonreding_2 = {
+	name = "Eofor"
+	dynasty = wonreding_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father = wonreding_1
+	prowess = 10
+	480.1.1 = {
+		birth = yes
+	}
+	520.1.1 = {
+		add_spouse = hrethling_9
+	}
+	540.1.1 = {
+		death = yes
+	}
+}
+wonreding_3 = {
+	name = "Wulf"
+	dynasty = wonreding_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father = wonreding_1
+	prowess = 10
+	482.1.1 = {
+		birth = yes
+	}
+	540.1.1 = {
+		death = yes
+	}
+}
+waegmunding_1 = {
+	name = "Ecgtheow"
+	dynasty = waegmunding_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father = waegmunding_4
+	468.1.1 = {
+		birth = yes
+	}
+	486.1.1 = {
+		add_spouse = hrethling_5
+	}	
+	504.1.1={
+		death = yes
+	}
+}
+waegmunding_2 ={
+	name = "Beowulf"
+	dna = dna_beowulf
+	dynasty = waegmunding_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father = waegmunding_1
+	mother = hrethling_5
+	trait = brave
+	trait = diligent
+	trait = generous
+	trait = physique_good_3
+	trait = education_martial_4
+	prowess = 20
+	492.1.1 = {
+		birth = yes
+	}
+	495.1.1 = {
+		set_relation_friend = character:bronding_2 # Breca
+	}
+	550.1.1 = {
+		death = yes
+	}
+}
+waegmunding_3 = {
+	name = "Waegmund"
+	dna = dna_beowulf
+	dynasty = waegmunding_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	395.1.1 = {
+		birth = yes
+	}	
+	450.1.1={
+		death = yes
+	}
+}
+waegmunding_4 = {
+	name = "Aelfhere"
+	dynasty = waegmunding_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father = waegmunding_3
+	425.1.1 = {
+		birth = yes
+	}	
+	475.1.1={
+		death = yes
+	}
+}
+waegmunding_5 = {
+	name = "Weohstan"
+	dynasty = waegmunding_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father = waegmunding_4
+	470.1.1 = {
+		birth = yes
+	}	
+	525.1.1={
+		death = yes
+	}
+}
+waegmunding_6 = {
+	name = "Wiglaf"
+	dynasty = waegmunding_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father = waegmunding_5
+	498.1.1 = {
+		birth = yes
+	}	
+	570.1.1={
+		death = yes
+	}
+}
+bronding_1 = {
+	name = "Brond"
+	dynasty = bronding_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	456.1.1 = {
+		birth = yes
+	}	
+	510.1.1={
+		death = yes
+	}
+}
+bronding_2 = {
+	name = "Breca"
+	dynasty = bronding_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father = bronding_1
+	492.1.1 = {
+		birth = yes
+	}	
+	550.1.1={
+		death = yes
+	}
+}
+168316 = {
+	name = "Halfdan"
+	dynasty = 499
+	religion = "norse_pagan"
+	culture = "norse"
+	705.1.1 = {
+		birth = "705.1.1"
+	}
+	755.1.1 = {
+		death = "755.1.1"
+	}
+}
+
+168317 = {
+	name = "O_ysteinn"
+	dynasty = 499
+	religion = "norse_pagan"
+	culture = "norse"
+	father = 168316
+	740.1.1 = {
+		birth = "740.1.1"
+	}
+	790.1.1 = {
+		death = "790.1.1"
+	}
+}
+
+168318 = {
+	name = "GuT_rO_T_r"
+	dynasty = 499
+	religion = "norse_pagan"
+	culture = "norse"
+	father = 168316
+	745.1.1 = {
+		birth = "745.1.1"
+	}
+	795.1.1 = {
+		death = "795.1.1"
+	}
+}
+
+168647 = {
+	name = "Haraldr"
+	dynasty = 9552
+	religion = "norse_pagan"
+	culture = "norse"
+	710.1.1 = {
+		birth = yes
+	}
+	770.1.1 = {
+		death = yes
+	}
+}
+
+194004 = {
+	name = Sigurdr  # Sigurd Ring
+	dynasty = 490 #af Sigurd, father of Ragnarr Lodbrok
+	father = 194028
+	religion = norse_pagan
+	culture = norse
+	trait = intellect_good_1
+	trait = brave
+	trait = education_martial_3
+	730.12.12 = {
+		birth = yes
+	}
+	750.1.1 = {
+		give_nickname = nick_ring
+	}
+	766.1.1 = {
+		add_spouse = 194056 # Alfhild
+	}
+	800.2.5 = {
+		death = yes
+	}
+}
+194005 = {
+	name = HjO_rvardr
+	dynasty = 821 # Ulfing
+	religion = norse_pagan
+	culture = norse
+	722.10.1 = {
+		birth = "722.10.1"
+	}
+	788.12.1 = {
+		death = "788.12.1"
+	}
+}
+194007 = {
+	name = "T_orfinn"
+	dynasty = 825 # Gute
+	religion = "norse_pagan"
+	culture = norse
+	731.1.1 = {
+		birth = yes
+	}
+	790.1.1 = {
+		death = yes
+	}
+}
+194008 = {
+	name = "Geir"
+	dynasty = 1045010
+	religion = "norse_pagan"
+	culture = norse
+	735.1.1 = {
+		birth = yes
+	}
+	810.1.1 = {
+		death = yes
+	}
+}
+194009 = {
+	name = "Alfr"
+	dynasty = 1045022
+	religion = norse_pagan
+	culture = norse
+	730.1.1 = {
+		birth = yes
+	}
+	749.1.1 = {
+		add_spouse = 194057
+		capital = c_vingulmork
+	}
+	790.1.1 = {
+		death = yes
+	}
+}
+194010 = {
+	name = "Oddr"
+	dynasty = 822
+	religion = norse_pagan
+	culture = norse
+	731.1.1 = {
+		birth = yes
+	}
+	798.1.1 = {
+		death = yes
+	}
+}
+194011 = {
+	name = "Haukr"
+	dynasty = 1045019
+	religion = norse_pagan
+	culture = norse
+	741.1.1 = {
+		birth = yes
+	}
+	790.1.1 = {
+		death = yes
+	}
+}
+194012 = {
+	name = "Hrafn"
+	dynasty = 1045011
+	religion = norse_pagan
+	culture = norse
+	744.1.1 = {
+		birth = yes
+	}
+	788.1.1 = {
+		death = yes
+	}
+}
+194013 = {
+	name = "Grimr"
+	dynasty = 1045012
+	religion = norse_pagan
+	culture = norse
+	733.1.1 = {
+		birth = yes
+	}
+	790.1.1 = {
+		death = yes
+	}
+}
+194014 = {
+	name = "T_orsteinn"
+	dynasty = 836
+	religion = norse_pagan
+	culture = norse
+	740.1.1 = {
+		birth = yes
+	}
+	790.1.1 = {
+		death = yes
+	}
+}
+194015 = {
+	name = "T_orbjO_rn"
+	dynasty = 1045016
+	religion = norse_pagan
+	culture = norse
+	735.1.1 = {
+		birth = yes
+	}
+	795.1.1 = {
+		death = yes
+	}
+}
+194016 = {
+	name = "O_rvar"
+	dynasty = 1045013
+	religion = norse_pagan
+	culture = norse
+	733.1.1 = {
+		birth = yes
+	}
+	791.1.1 = {
+		death = yes
+	}
+}
+194017 = {
+	name = "Ulfr"
+	dynasty = 1045014
+	religion = norse_pagan
+	culture = norse
+	739.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+194018 = {
+	name = "Ormr"
+	dynasty = 1045015
+	religion = norse_pagan
+	culture = norse
+	740.1.1 = {
+		birth = yes
+	}
+	795.1.1 = {
+		death = yes
+	}
+}
+194019 = {
+	name = "Sigtrygg"
+	dynasty = 1045018
+	religion = norse_pagan
+	culture = norse
+	737.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+194020 = {
+	name = "Ragnarr"
+	dynasty = 1180
+	religion = norse_pagan
+	culture = norse
+	750.1.1 = {
+		birth = yes
+	}
+	820.1.1 = {
+		death = yes
+	}
+}
+194021 = {
+	name = "Steinn"
+	dynasty = 1045017
+	religion = norse_pagan
+	culture = norse
+	740.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+194022 = {
+	name = "Tryggve"
+	dynasty = 1183
+	religion = norse_pagan
+	culture = norse
+	742.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+194023 = {
+	name = "Tjudmund"
+	dynasty = 1175
+	religion = norse_pagan
+	culture = norse
+	739.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+194028 = {
+	name = "Randver"
+	dynasty = 490 #af Sigurd, father of Ragnarr Lodbrok
+	religion = norse_pagan
+	culture = norse
+	father = 194029
+	700.1.1 = {
+		birth = yes
+	}
+	761.1.1 = {
+		death = yes
+	}
+}
+
+194029 = {
+	name = "Valdar"
+	dynasty = 490 #af Sigurd, father of Ragnarr Lodbrok
+	religion = norse_pagan
+	culture = norse
+	father = 194030
+	668.1.1 = {
+		birth = yes
+	}
+	729.1.1 = {
+		death = yes
+	}
+}
+
+194030 = {
+	name = "Olafr"
+	dynasty = 490 #af Sigurd, father of Ragnarr Lodbrok
+	religion = norse_pagan
+	culture = norse
+	father = 194031
+	640.1.1 = {
+		birth = yes
+	}
+	700.1.1 = {
+		death = yes
+	}
+}
+
+194033 = {
+	name = "Ingild"
+	dynasty = 490 #af Sigurd, father of Ragnarr Lodbrok
+	religion = norse_pagan
+	culture = norse
+	female = yes
+	father = 194029
+	700.1.1 = {
+		birth = yes
+	}
+	720.1.1 = {
+		add_spouse = 194003
+	}
+	776.1.1 = {
+		death = yes
+	}
+}
+180770 = {
+	name = "Grip"
+	dynasty = 1043504
+	religion = "norse_pagan"
+	culture = "norse"
+	725.1.1 = {
+		birth = "725.1.1"
+	}
+	775.1.1 = {
+		death = "775.1.1"
+	}
+}
+180771 = {
+	name = "HrO_mundar"
+	dynasty = 1043504
+	religion = "norse_pagan"
+	culture = "norse"
+	father = 180770
+	750.1.1 = {
+		birth = "750.1.1"
+	}
+	800.1.1 = {
+		death = "800.1.1"
+	}
+}
+194044 = {
+	name = "Eirikr"
+	dynasty = 1045008
+	religion = norse_pagan
+	culture = norse
+	745.1.1 = {
+		birth = yes
+	}
+	820.1.1 = {
+		death = yes
+	}
+}
+194045 = {
+	name = "FroT_i"
+	dynasty = 1045009
+	religion = norse_pagan
+	culture = norse
+	742.1.1 = {
+		birth = yes
+	}
+	820.1.1 = {
+		death = yes
+	}
+}
+194046 = {
+	name = "Oddr"
+	dynasty = 825 # Gute
+	religion = "norse_pagan"
+	culture = norse
+	father = 194007
+	761.1.1 = {
+		birth = yes
+	}
+	830.1.1 = {
+		death = yes
+	}
+}
+194050 = {
+	name = "Hrafn"
+	dynasty = 822
+	religion = norse_pagan
+	culture = norse
+	father = 194010
+	750.1.1 = {
+		birth = yes
+	}
+	830.1.1 = {
+		death = yes
+	}
+}
+194051 = {
+	name = "HO_gne"
+	dynasty = 821
+	religion = norse_pagan
+	culture = norse
+	father = 194005
+	760.1.1 = {
+		birth = yes
+	}
+	835.1.1 = {
+		death = yes
+	}
+}
+194053 = {
+	name = "Tjudmund"
+	dynasty = 822
+	religion = norse_pagan
+	culture = norse
+	father = 194010
+	755.1.1 = {
+		birth = yes
+	}
+	825.1.1 = {
+		death = yes
+	}
+}
+194054 = {
+	name = "Alfr"
+	dynasty = 1045021
+	religion = norse_pagan
+	culture = norse
+	730.1.1 = {
+		birth = yes
+	}
+	799.1.1 = {
+		death = yes
+	}
+}
+194055 = {
+	name = "Eirikr"
+	dynasty = 1045021
+	religion = norse_pagan
+	culture = norse
+	father = 194054
+	mother = 194059
+	750.1.1 = {
+		birth = yes
+	}
+	812.1.1 = {
+		death = yes
+	}
+}
+194056 = {
+	name = "Alfhildr"
+	female = yes
+	dynasty = 1045022
+	religion = norse_pagan
+	culture = norse
+	father = 194009
+	mother = 194057
+	760.1.1 = {
+		birth = yes
+	}
+	810.1.1 = {
+		death = yes
+	}
+}
+194057 = {
+	name = "RO_gnfriT_"
+	female = yes
+	religion = norse_pagan
+	culture = norse
+	730.1.1 = {
+		birth = yes
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+194058 = {
+	name = "Alfsol"
+	female = yes
+	dynasty = 1045021
+	religion = norse_pagan
+	culture = norse
+	father = 194054
+	mother = 194059
+	768.12.12 = {
+		birth = yes
+	}
+	799.1.1 = {
+		death = yes
+	}
+}
+194059 = {
+	name = "GerT_r"
+	female = yes
+	religion = norse_pagan
+	culture = norse
+	728.1.1 = {
+		birth = yes
+	}
+	799.1.1 = {
+		death = yes
+	}
+}
+194060 = {
+	name = "Sverker"
+	dynasty = 1045023
+	religion = norse_pagan
+	culture = norse
+	733.1.1 = {
+		birth = yes
+	}
+	799.1.1 = {
+		death = yes
+	}
+}
+194061 = {
+	name = "Tryggve"
+	dynasty = 1045020
+	religion = norse_pagan
+	culture = norse
+	733.1.1 = {
+		birth = yes
+	}
+	799.1.1 = {
+		death = yes
+	}
+}
+### Norsemen
+agdyr_01 = {
+	name = "Haraldr"
+	dynasty = haraldrid_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	trait = generous
+	trait = compassionate
+	322.1.1 = {
+		birth = yes
+	}
+	362.1.1 = {
+		death = yes
+	}
+}
+agdyr_02 = {
+	name = "Vikar"
+	culture = "norse"
+	religion = "norse_pagan"
+	father = agdyr_01
+	trait = vengeful
+	trait = ambitious
+	trait = wrathful
+	trait = education_martial_3
+	trait = physique_good_2
+	343.1.1 = {
+		birth = yes
+	}
+	390.1.1 = {
+		death = yes
+	}
+}
+agdyr_03 = {
+	name = "Harald"
+	culture = "norse"
+	religion = "norse_pagan"
+	father = agdyr_02
+	367.1.1 = {
+		birth = yes
+	}
+	423.1.1 = {
+		death = yes
+	}
+}
+agdyr_05 = {
+	name = "Björn"
+	culture = "norse"
+	religion = "norse_pagan"
+	father = agdyr_03
+	402.1.1 = {
+		birth = yes
+	}
+	467.1.1 = {
+		death = yes
+	}
+}
+agdyr_06 = {
+	name = "Ketill"
+	culture = "norse"
+	religion = "norse_pagan"
+	father = agdyr_05
+	439.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+agdyr_09 = {
+	name = "Steinn"
+	culture = "norse"
+	religion = "norse_pagan"
+	father = agdyr_06
+	443.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+agdyr_04 = {
+	name = "Neri"
+	culture = "norse"
+	religion = "norse_pagan"
+	father = agdyr_02
+	372.1.1 = {
+		birth = yes
+	}
+	432.1.1 = {
+		death = yes
+	}
+}
+agdyr_07 = {
+	name = "Olaf"
+	culture = "norse"
+	religion = "norse_pagan"
+	father = agdyr_04
+	402.1.1 = {
+		birth = yes
+	}
+	456.1.1 = {
+		death = yes
+	}
+}
+agdyr_08 = {
+	name = "Sveigdir"
+	culture = "norse"
+	religion = "norse_pagan"
+	father = agdyr_07
+	441.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+agdyr_10 = {
+	name = "Harald"
+	culture = "norse"
+	religion = "norse_pagan"
+	father = agdyr_07
+	445.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+### Hordaland
+hordaland_01 = {
+	name = "Fridthjóf"
+	dynasty = fridthjof_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	284.1.1 = {
+		birth = yes
+	}
+	346.1.1 = {
+		death = yes
+	}
+}
+hordaland_02 = {
+	name = "Hunthjóf"
+	dynasty = fridthjof_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father = hordaland_01
+	302.1.1 = {
+		birth = yes
+	}
+	359.1.1 = {
+		death = yes
+	}
+}
+hordaland_03 = {
+	name = "Herthjóf"
+	dynasty = fridthjof_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father = hordaland_02
+	trait = greedy
+	trait = ambitious
+	trait = sadistic
+	trait = education_martial_2
+	325.1.1 = {
+		birth = yes
+	}
+	373.1.1 = {
+		death = yes
+	}
+}
+hordaland_04 = {
+	name = "Fridthjóf"
+	dynasty = fridthjof_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father = hordaland_02
+	trait = vengeful
+	trait = arrogant
+	trait = wrathful
+	322.1.1 = {
+		birth = yes
+	}
+	376.1.1 = {
+		death = yes
+	}
+}
+hordaland_05 = {
+	name = "Geirthjóf"
+	dynasty = fridthjof_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father = hordaland_02
+	trait = calm
+	trait = humble
+	trait = honest
+	328.1.1 = {
+		birth = yes
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+### Närke
+narke_01 = {
+	name = "Olaf"
+	dynasty = narke_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	trait = ambitious
+	trait = gregarious
+	trait = honest
+	trait = one_eyed
+	trait = education_diplomacy_3
+	516.1.1 = {
+		birth = yes
+		give_nickname = nick_the_sharp_sighted
+	}
+	578.1.1 = {
+		death = yes
+	}
+}
+narke_02 = {
+	name = "Alof"
+	female = yes
+	dynasty = narke_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father = narke_01
+	544.1.1 = {
+		birth = yes
+	}
+	615.1.1 = {
+		death = yes
+	}
+}
+### Sweedish Kings
+yngling_01 = {
+	name = "Fjölnir"
+	dynasty = 499
+	culture = "norse"
+	religion = "norse_pagan"
+	trait = vengeful
+	trait = brave
+	trait = wrathful
+	162.1.1 = {
+		birth = yes
+	}
+	206.1.1 = {
+		death = yes
+	}
+}
+yngling_02 = {
+	name = "Sveigdir"
+	dynasty = 499
+	culture = "norse"
+	religion = "norse_pagan"
+	father = yngling_01
+	189.1.1 = {
+		birth = yes
+	}
+	235.1.1 = {
+		death = yes
+	}
+}
+yngling_03 = {
+	name = "Vanlandi"
+	dynasty = 499
+	culture = "norse"
+	religion = "norse_pagan"
+	father = yngling_02
+	trait = callous
+	trait = arrogant
+	trait = generous
+	201.1.1 = {
+		birth = yes
+	}
+	222.1.1 = {
+		add_spouse = finland_30
+	}
+	252.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = finland_30
+		}
+	}
+}
+yngling_04 = {
+	name = "Visbur"
+	dynasty = 499
+	culture = "norse"
+	religion = "norse_pagan"
+	father = yngling_03
+	mother = finland_30
+	trait = bastard
+	trait = callous
+	223.1.1 = {
+		birth = yes
+	}
+	278.1.1 = {
+		death = yes
+	}
+}
+yngling_05 = {
+	name = "Dómaldr"
+	dynasty = 499
+	culture = "norse"
+	religion = "norse_pagan"
+	father = yngling_04
+	trait = bastard
+	trait = vengeful
+	245.1.1 = {
+		birth = yes
+	}
+	288.1.1 = {
+		death = {
+			death_reason = death_sacrificed_to_gods
+		}
+	}
+}
+yngling_06 = {
+	name = "Dómarr"
+	dynasty = 499
+	culture = "norse"
+	religion = "norse_pagan"
+	father = yngling_05
+	263.1.1 = {
+		birth = yes
+	}
+	308.1.1 = {
+		death = yes
+	}
+}
+yngling_07 = {
+	name = "Dyggve"
+	dynasty = 499
+	culture = "norse"
+	religion = "norse_pagan"
+	father = yngling_06
+	282.1.1 = {
+		birth = yes
+	}
+	340.1.1 = {
+		death = yes
+	}
+}
+yngling_08 = {
+	name = "Dag"
+	dynasty = 499
+	culture = "norse"
+	religion = "norse_pagan"
+	father = yngling_07
+	trait = intellect_good_2
+	trait = lifestyle_mystic
+	trait = honest
+	trait = vengeful
+	trait = calm
+	300.1.1 = {
+		birth = yes
+	}
+	350.1.1 = {
+		death = yes
+	}
+}
+yngling_12 = {
+	name = "Agni"
+	dynasty = 499
+	culture = "norse"
+	religion = "norse_pagan"
+	father = yngling_08
+	trait = sadistic
+	trait = generous
+	trait = brave
+	324.1.1 = {
+		birth = yes
+	}
+	341.1.1 = {
+		add_spouse = frosti_02
+	}
+	370.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = frosti_02
+		}
+	}
+}
+yngling_09 = {
+	name = "Alrek"
+	dynasty = 499
+	culture = "norse"
+	religion = "norse_pagan"
+	father = yngling_12
+	mother = frosti_02
+	trait = wrathful
+	trait = humble
+	trait = vengeful
+	trait = twin	
+	343.1.1 = {
+		birth = yes
+	}
+	361.1.1 = {
+		add_spouse = dagling_02
+	}
+	380.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = yngling_10
+		}
+	}
+}
+yngling_10 = {
+	name = "Eirik"
+	dynasty = 499
+	culture = "norse"
+	religion = "norse_pagan"
+	father = yngling_12
+	mother = frosti_02
+	trait = deceitful
+	trait = gregarious
+	trait = wrathful
+	trait = kinslayer_3
+	trait = twin
+	345.1.1 = {
+		birth = yes
+	}
+	390.1.1 = {
+		death = yes
+	}
+}
+yngling_13 = {
+	name = "Yngvi"
+	dynasty = 499
+	culture = "norse"
+	religion = "norse_pagan"
+	father = yngling_09
+	mother = dagling_02
+	trait = brave
+	trait = gregarious
+	trait = generous
+	362.1.1 = {
+		birth = yes
+	}
+	398.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = yngling_14
+		}
+	}
+}
+yngling_14 = {
+	name = "Alfr"
+	dynasty = 499
+	culture = "norse"
+	religion = "norse_pagan"
+	father = yngling_09
+	mother = dagling_02
+	trait = reclusive
+	trait = shy
+	trait = arbitrary
+	trait = callous
+	365.1.1 = {
+		birth = yes
+	}
+	395.1.1 = {
+		add_spouse = yngling_20
+	}
+	398.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = yngling_13
+		}
+	}
+}
+yngling_20 = {
+	name = "Bera"
+	female = yes
+	culture = "norse"
+	religion = "norse_pagan"
+	376.1.1 = {
+		birth = yes
+	}
+	440.1.1 = {
+		death = yes
+	}
+}
+yngling_15 = {
+	name = "Hugleik"
+	dynasty = 499
+	culture = "norse"
+	religion = "norse_pagan"
+	father = yngling_14
+	mother = yngling_20
+	trait = greedy
+	trait = shy
+	trait = arrogant
+	397.1.1 = {
+		birth = yes
+	}
+	437.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+yngling_17 = {
+	name = "Jörundr"
+	dynasty = 499
+	culture = "norse"
+	religion = "norse_pagan"
+	father = yngling_13
+	trait = sadistic
+	trait = wrathful
+	trait = ambitious
+	trait = viking
+	trait = blademaster_3
+	383.1.1 = {
+		birth = yes
+	}
+	445.1.1 = {
+		death = {
+			death_reason = death_execution
+			killer = halogaland_04 # Gylaug
+		}
+	}
+}
+yngling_19 = {
+	name = "Eirik"
+	dynasty = 499
+	culture = "norse"
+	religion = "norse_pagan"
+	father = yngling_13
+	trait = honest
+	trait = wrathful
+	trait = brave
+	trait = viking
+	trait = blademaster_2
+	385.1.1 = {
+		birth = yes
+	}
+	440.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = haking_01 # Haki
+		}
+	}
+}
+yngling_16 = {
+	name = "Ingeborg"
+	female = yes
+	dynasty = 499
+	culture = "norse"
+	religion = "norse_pagan"
+	father = yngling_13
+	trait = beauty_good_1
+	trait = calm
+	trait = stubborn
+	trait = honest
+	379.1.1 = {
+		birth = yes
+	}
+	445.1.1 = {
+		death = yes
+	}
+}
+yngling_18 = {
+	name = "Aunn"
+	dynasty = 499
+	culture = "norse"
+	religion = "norse_pagan"
+	father = yngling_17
+	trait = arbitrary
+	trait = zealous
+	trait = stubborn
+	trait = education_diplomacy_3
+	trait = physique_good_1
+	409.1.1 = {
+		birth = yes
+		give_nickname = nick_the_old
+	}
+	485.1.1 = {
+		death = yes
+	}
+}
+yngling_11 = {
+	name = "Þornbjorg"
+	female = yes
+	dynasty = 499
+	culture = "norse"
+	religion = "norse_pagan"
+	father = yngling_10
+	trait = brave
+	trait = honest
+	trait = ambitious
+	trait = education_martial_3
+	trait = shieldmaiden
+	trait = blademaster_3
+	trait = disinherited
+	370.1.1 = {
+		birth = yes
+	}
+	426.1.1 = {
+		death = yes
+	}
+}
+yngling_21 = {
+	name = "Egil"
+	dynasty = 499
+	culture = "norse"
+	religion = "norse_pagan"
+	father = yngling_18
+	trait = viking
+	450.1.1 = {
+		birth = yes
+	}
+	510.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = wonreding_2  # Eofor
+		}
+	}
+}
+yngling_22 = {
+	name = "Ottar"
+	dynasty = 499
+	culture = "norse"
+	religion = "norse_pagan"
+	father = yngling_21
+	470.1.1 = {
+		birth = yes
+	}
+	512.1.1 = {
+		death = yes
+	}
+}
+yngling_23 = {
+	name = "Ali"
+	dynasty = 499
+	culture = "norse"
+	religion = "norse_pagan"
+	father = yngling_21
+	473.1.1 = {
+		birth = yes
+	}
+	525.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = yngling_24 # Adils
+		}
+	}
+}
+yngling_24 = {
+	name = "Adils"
+	dynasty = 499
+	culture = "norse"
+	religion = "norse_pagan"
+	father = yngling_22
+	495.1.1 = {
+		birth = yes
+	}
+	514.1.1 = {
+		add_spouse = skjolding_16
+	}
+	550.1.1 = {
+		death = yes
+	}
+}
+yngling_25 = {
+	name = "Enmund"
+	dynasty = 499
+	culture = "norse"
+	religion = "norse_pagan"
+	father = yngling_22
+	498.1.1 = {
+		birth = yes
+	}
+	523.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = waegmunding_5 # Weohstan
+		}
+	}
+}
+yngling_26 = {
+	name = "Skuld"
+	female = yes
+	dynasty = 499
+	culture = "norse"
+	religion = "norse_pagan"
+	father = yngling_24
+	mother = skjolding_16
+	trait = deceitful
+	514.1.1 = {
+		birth = yes
+	}
+	550.1.1 = {
+		death = yes
+	}
+}
+yngling_27 = {
+	name = "Östen"
+	dynasty = 499
+	culture = "norse"
+	religion = "norse_pagan"
+	father = yngling_24
+	mother = skjolding_16
+	516.1.1 = {
+		birth = yes
+	}
+	560.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = nording_32
+		}
+	}
+}
+yngling_28 = {
+	name = "Yngvar"
+	dynasty = 499
+	culture = "norse"
+	religion = "norse_pagan"
+	father = yngling_27
+	546.1.1 = {
+		birth = yes
+	}
+	603.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+yngling_29 = {
+	name = "Anund"
+	dynasty = 499
+	culture = "norse"
+	religion = "norse_pagan"
+	father = yngling_28
+	572.1.1 = {
+		birth = yes
+	}
+	630.1.1 = {
+		death = yes
+	}
+}
+yngling_30 = {
+	name = "Sigvard"
+	dynasty = 499
+	culture = "norse"
+	religion = "norse_pagan"
+	father = yngling_28
+	574.1.1 = {
+		birth = yes
+	}
+	619.1.1 = {
+		death = yes
+	}
+}
+yngling_31 = {
+	name = "Ingjald"
+	dynasty = 499
+	culture = "norse"
+	religion = "norse_pagan"
+	father = yngling_29
+	trait = cynical
+	trait = deceitful
+	trait = arbitrary
+	597.1.1 = {
+		birth = yes
+	}
+	620.1.1 = {
+		add_spouse = geat_15
+		set_relation_rival = character:wulfing_14 # Granmar
+		set_relation_rival = character:wulfing_10 # Högni
+		set_relation_rival = character:geat_14 # Algaut
+	}
+	655.1.1 = {
+		death = yes
+	}
+}
+yngling_32 = {
+	name = "Olaf" # Trätälja
+	dynasty = 499
+	culture = "norse"
+	religion = "norse_pagan"
+	father = yngling_31
+	mother = geat_15
+	623.1.1 = {
+		birth = yes
+	}
+	685.1.1 = {
+		death = yes
+	}
+}
+yngling_33 = {
+	name = "Asa"
+	female = yes
+	dynasty = 499
+	culture = "norse"
+	religion = "norse_pagan"
+	father = yngling_31
+	mother = geat_15
+	trait = deceitful
+	615.1.1 = {
+		birth = yes
+	}
+	670.1.1 = {
+		death = yes
+	}
+}
+## Dagling 
+dagling_01 = {
+	name = "Dag"
+	dynasty = dagling_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	320.1.1 = {
+		birth = yes
+		give_nickname = nick_the_great
+	}
+	341.1.1 = {
+		add_spouse = dagling_06
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+dagling_02 = {
+	name = "Dageid"
+	female = yes
+	dynasty = dagling_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father = dagling_01
+	mother = dagling_06
+	342.1.1 = {
+		birth = yes
+	}
+	395.1.1 = {
+		death = yes
+	}
+}
+dagling_03 = {
+	name = "Oli"
+	dynasty = dagling_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father = dagling_01
+	mother = dagling_06
+	346.1.1 = {
+		birth = yes
+	}
+	395.1.1 = {
+		death = yes
+	}
+}
+dagling_04 = {
+	name = "Amr"
+	dynasty = dagling_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father = dagling_01
+	mother = dagling_06
+	348.1.1 = {
+		birth = yes
+	}
+	390.1.1 = {
+		death = yes
+	}
+}
+dagling_05 = {
+	name = "Jöfur"
+	dynasty = dagling_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father = dagling_01
+	mother = dagling_06
+	350.1.1 = {
+		birth = yes
+	}
+	390.1.1 = {
+		death = yes
+	}
+}
+dagling_06 = {
+	name = "Thora"
+	female = yes
+	culture = "norse"
+	religion = "norse_pagan"
+	323.1.1 = {
+		birth = yes
+	}
+	383.1.1 = {
+		death = yes
+	}
+}
+dagling_07 = {
+	name = "Dag"
+	dynasty = dagling_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father = dagling_03
+	379.1.1 = {
+		birth = yes
+	}
+	453.1.1 = {
+		death = yes
+	}
+}
+dagling_08 = {
+	name = "Oleif"
+	dynasty = dagling_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father = dagling_07
+	430.1.1 = {
+		birth = yes
+	}
+	490.1.1 = {
+		death = yes
+	}
+}
+dagling_09 = {
+	name = "Hring"
+	dynasty = dagling_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father = dagling_08
+	465.1.1 = {
+		birth = yes
+	}
+	520.1.1 = {
+		death = yes
+	}
+}
+## Angrymr
+arngrymr_00 = {
+	name = "Arngrym"
+	dynasty = tyrfing_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = dagling_01
+	mother = dagling_06
+	trait = sadistic
+	trait = brave
+	trait = arrogant
+	trait = viking
+	345.1.1 = {
+		birth = yes
+	}
+	361.1.1 = {
+		add_spouse = arngrymr_01
+	}
+	395.1.1 = {
+		death = yes
+	}
+}
+arngrymr_01 = {
+	name = "Eyfura"
+	female = yes
+	religion = "norse_pagan"
+	culture = "norse"
+	father = arngrymr_19
+	344.1.1 = {
+		birth = yes
+	}
+	394.1.1 = {
+		death = yes
+	}
+}
+arngrymr_02 = {
+	name = "Angantyr"
+	dynasty = tyrfing_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = arngrymr_00
+	mother = arngrymr_01
+	trait = sadistic
+	trait = brave
+	trait = arrogant
+	trait = viking
+	prowess = 10
+	370.1.1 = {
+		birth = yes
+	}
+	392.1.1 = {
+		add_spouse = arngrymr_18
+	}
+	396.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = hoengs_04  # Hjalmar
+		}
+	}
+}
+arngrymr_03 = {
+	name = "Hervör"
+	female = yes
+	dynasty = tyrfing_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = arngrymr_02
+	mother = arngrymr_18
+	389.1.1 = {
+		birth = yes
+	}
+	439.1.1 = {
+		death = yes
+	}
+}
+arngrymr_06 = {
+	name = "Hjörvard"
+	dynasty = tyrfing_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = arngrymr_00
+	mother = arngrymr_01
+	trait = viking
+	369.1.1 = {
+		birth = yes
+	}
+	396.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = hoengs_03  # Orvar
+		}
+	}
+}
+arngrymr_07 = {
+	name = "Hervard"
+	dynasty = tyrfing_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = arngrymr_00
+	mother = arngrymr_01
+	trait = viking
+	371.1.1 = {
+		birth = yes
+	}
+	396.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = hoengs_03  # Orvar
+		}
+	}
+}
+arngrymr_08 = {
+	name = "Hrani"
+	dynasty = tyrfing_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = arngrymr_00
+	mother = arngrymr_01
+	trait = viking
+	372.1.1 = {
+		birth = yes
+	}
+	396.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = hoengs_03  # Orvar
+		}
+	}
+}
+arngrymr_09 = {
+	name = "Hadding"
+	dynasty = tyrfing_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = arngrymr_00
+	mother = arngrymr_01
+	trait = twin
+	trait = viking
+	373.1.1 = {
+		birth = yes
+	}
+	396.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = hoengs_03  # Orvar
+		}
+	}
+}
+arngrymr_10 = {
+	name = "Hadding"
+	dynasty = tyrfing_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = arngrymr_00
+	mother = arngrymr_01
+	trait = twin
+	trait = viking
+	373.1.1 = {
+		birth = yes
+	}
+	396.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = hoengs_03  # Orvar
+		}
+	}
+}
+arngrymr_11 = {
+	name = "Barri"
+	dynasty = tyrfing_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = arngrymr_00
+	mother = arngrymr_01
+	trait = viking
+	374.1.1 = {
+		birth = yes
+	}
+	396.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = hoengs_03  # Orvar
+		}
+	}
+}
+arngrymr_12 = {
+	name = "Tind"
+	dynasty = tyrfing_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = arngrymr_00
+	mother = arngrymr_01
+	trait = viking
+	375.1.1 = {
+		birth = yes
+	}
+	396.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = hoengs_03  # Orvar
+		}
+	}
+}
+arngrymr_13 = {
+	name = "Tyrfing"
+	dynasty = tyrfing_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = arngrymr_00
+	mother = arngrymr_01
+	trait = viking
+	376.1.1 = {
+		birth = yes
+	}
+	396.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = hoengs_03  # Orvar
+		}
+	}
+}
+arngrymr_14 = {
+	name = "Brand"
+	dynasty = tyrfing_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = arngrymr_00
+	mother = arngrymr_01
+	trait = viking
+	377.1.1 = {
+		birth = yes
+	}
+	396.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = hoengs_03  # Orvar
+		}
+	}
+}
+arngrymr_15 = {
+	name = "Brodd"
+	dynasty = tyrfing_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = arngrymr_00
+	mother = arngrymr_01
+	trait = viking
+	378.1.1 = {
+		birth = yes
+	}
+	396.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = hoengs_03  # Orvar
+		}
+	}
+}
+arngrymr_16 = {
+	name = "Reifnir"
+	dynasty = tyrfing_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = arngrymr_00
+	mother = arngrymr_01
+	trait = viking
+	379.1.1 = {
+		birth = yes
+	}
+	396.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = hoengs_03  # Orvar
+		}
+	}
+}
+arngrymr_17 = {
+	name = "Bjarmar"
+	religion = "norse_pagan"
+	culture = "norse"
+	335.1.1 = {
+		birth = yes
+	}
+	385.1.1 = {
+		death = yes
+	}
+}
+arngrymr_18 = {
+	name = "Svafa"
+	female = yes
+	religion = "norse_pagan"
+	culture = "norse"
+	father = arngrymr_17
+	368.1.1 = {
+		birth = yes
+	}
+	420.1.1 = {
+		death = yes
+	}
+}
+arngrymr_19 = {
+	name = "Svafrlami"
+	religion = "norse_pagan"
+	culture = "norse"
+	316.1.1 = {
+		birth = yes
+	}
+	361.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = arngrymr_00
+		}
+	}
+}
+arngrymr_20 = {
+	name = "Gundmund"
+	dynasty = glaesisvellir_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	362.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+arngrymr_21 = {
+	name = "Höfund"
+	dynasty = glaesisvellir_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = arngrymr_20
+	385.1.1 = {
+		birth = yes
+	}
+	405.1.1 = {
+		add_spouse = arngrymr_03
+	}
+	425.1.1 = {
+		death = yes
+	}
+}
+arngrymr_22 = {
+	name = "Angantyr"
+	dynasty = tyrfing_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = arngrymr_21
+	mother = arngrymr_03
+	405.1.1 = {
+		birth = yes
+	}
+	423.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = arngrymr_23
+		}
+	}
+}
+arngrymr_23 = {
+	name = "Heidrek"
+	dynasty = tyrfing_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = arngrymr_21
+	mother = arngrymr_03
+	trait = ambitious
+	trait = callous
+	trait = lustful
+	406.1.1 = {
+		birth = yes
+	}
+	423.1.1 = {
+		add_spouse = gothones_05
+	}
+	427.1.1 = {
+		add_spouse = arngrymr_25
+	}
+	446.1.1 = {
+		death = {
+			death_reason = death_murder
+		}
+	}
+}
+arngrymr_24 = {
+	name = "Rollaug"
+	religion = "norse_pagan"
+	culture = "norse"
+	370.1.1 = {
+		birth = yes
+	}
+	415.1.1 = {
+		death = yes
+	}
+}
+arngrymr_25 = {
+	name = "Hergerda"
+	female = yes
+	religion = "norse_pagan"
+	culture = "norse"
+	father = arngrymr_24
+	402.1.1 = {
+		birth = yes
+	}
+	442.1.1 = {
+		death = yes
+	}
+}
+arngrymr_26 = {
+	name = "Angantyr"
+	dynasty = tyrfing_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = arngrymr_23
+	mother = gothones_05
+	trait = brave
+	trait = just
+	trait = patient
+	423.1.1 = {
+		birth = yes
+	}
+	475.1.1 = {
+		death = yes
+	}
+}
+arngrymr_27 = {
+	name = "Hlöd"
+	dynasty = tyrfing_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = arngrymr_23
+	mother = hun_18
+	trait = ambitious
+	trait = vengeful
+	trait = arrogant
+	423.1.1 = {
+		birth = yes
+	}
+	447.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = arngrymr_26
+		}
+	}
+}
+arngrymr_28 = {
+	name = "Hervör"
+	female = yes
+	dynasty = tyrfing_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = arngrymr_23
+	mother = arngrymr_25
+	trait = brave
+	trait = trusting
+	trait = shieldmaiden
+	427.1.1 = {
+		birth = yes
+	}
+	447.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+arngrymr_29 = {
+	name = "Heidrek"
+	dynasty = tyrfing_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = arngrymr_26
+	453.1.1 = {
+		birth = yes
+	}
+	513.1.1 = {
+		death = yes
+	}
+}
+### Halogaland
+halogaland_01 = {
+	name = "Saemingr"
+	dynasty = haloygering_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	140.1.1 = {
+		birth = yes
+	}
+	202.1.1 = {
+		death = yes
+	}
+}
+halogaland_02 = {
+	name = "Godhjalt"
+	dynasty = haloygering_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father = halogaland_01
+	trait = vengeful
+	trait = sadistic
+	trait = wrathful
+	trait = viking
+	165.1.1 = {
+		birth = yes
+	}
+	221.1.1 = {
+		death = yes
+	}
+}
+halogaland_03 = {
+	name = "Gudlog"
+	dynasty = haloygering_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father = halogaland_11
+	trait = arrogant
+	trait = sadistic
+	trait = callous
+	trait = viking
+	378.1.1 = {
+		birth = yes
+	}
+	430.1.1 = {
+		death = {
+			death_reason = death_execution
+			killer = yngling_17 # Jörundr
+		}
+	}
+}
+halogaland_04 = {
+	name = "Gylaug"
+	dynasty = haloygering_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father = halogaland_03
+	trait = vengeful
+	trait = sadistic
+	trait = wrathful
+	trait = viking
+	415.1.1 = {
+		birth = yes
+	}
+	475.1.1 = {
+		death = yes
+	}
+}
+halogaland_05 = {
+	name = "Sverdhjalt"
+	dynasty = haloygering_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father = halogaland_02
+	189.1.1 = {
+		birth = yes
+	}
+	239.1.1 = {
+		death = yes
+	}
+}
+halogaland_06 = {
+	name = "Höddbrodd"
+	dynasty = haloygering_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father = halogaland_05
+	214.1.1 = {
+		birth = yes
+	}
+	272.1.1 = {
+		death = yes
+	}
+}
+halogaland_07 = {
+	name = "Himileig"
+	dynasty = haloygering_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father = halogaland_06
+	236.1.1 = {
+		birth = yes
+	}
+	303.1.1 = {
+		death = yes
+	}
+}
+halogaland_08 = {
+	name = "Vedurhals"
+	dynasty = haloygering_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father = halogaland_07
+	263.1.1 = {
+		birth = yes
+	}
+	318.1.1 = {
+		death = yes
+	}
+}
+halogaland_09 = {
+	name = "Haavard"
+	dynasty = haloygering_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father = halogaland_08
+	288.1.1 = {
+		birth = yes
+	}
+	342.1.1 = {
+		death = yes
+	}
+}
+halogaland_10 = {
+	name = "Godgest"
+	dynasty = haloygering_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father = halogaland_09
+	313.1.1 = {
+		birth = yes
+	}
+	371.1.1 = {
+		death = yes
+	}
+}
+halogaland_11 = {
+	name = "Hemgest"
+	dynasty = haloygering_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father = halogaland_10
+	345.1.1 = {
+		birth = yes
+	}
+	395.1.1 = {
+		death = yes
+	}
+}
+halogaland_12 = {
+	name = "Mundil"
+	dynasty = haloygering_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father = halogaland_04
+	445.1.1 = {
+		birth = yes
+	}
+	515.1.1 = {
+		death = yes
+	}
+}
+halogaland_13 = {
+	name = "Herse"
+	dynasty = haloygering_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father = halogaland_12
+	495.1.1 = {
+		birth = yes
+	}
+	532.1.1 = {
+		death = yes
+	}
+}
+halogaland_14 = {
+	name = "Brand"
+	dynasty = haloygering_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father = halogaland_13
+	514.1.1 = {
+		birth = yes
+	}
+	582.1.1 = {
+		death = yes
+	}
+}
+halogaland_15 = {
+	name = "Brynjulf"
+	dynasty = haloygering_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father = halogaland_14
+	554.1.1 = {
+		birth = yes
+	}
+	605.1.1 = {
+		death = yes
+	}
+}
+halogaland_16 = {
+	name = "Baard"
+	dynasty = haloygering_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father = halogaland_15
+	592.1.1 = {
+		birth = yes
+	}
+	646.1.1 = {
+		death = yes
+	}
+}
+halogaland_17 = {
+	name = "Hergils"
+	dynasty = haloygering_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father = halogaland_16
+	630.1.1 = {
+		birth = yes
+	}
+	692.1.1 = {
+		death = yes
+	}
+}
+halogaland_18 = {
+	name = "Haavard"
+	dynasty = haloygering_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father = halogaland_17
+	660.1.1 = {
+		birth = yes
+	}
+	714.1.1 = {
+		death = yes
+	}
+}
+halogaland_19 = {
+	name = "Harald"
+	dynasty = haloygering_dynasty
+	culture = "norse"
+	religion = "norse_pagan"
+	father = halogaland_18
+	688.1.1 = {
+		birth = yes
+	}
+	695.1.1 = {
+		death = yes
+	}
+}
+## 
+starkad_01 = {
+	name = "Starkadr"
+	dynasty = storvirkr_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	martial = 10
+	trait = blademaster_3
+	trait = education_martial_4
+	trait = zealous
+	trait = brave
+	trait = deceitful
+	trait = physique_good_3
+	trait = strong
+	trait = giant
+	340.1.1 = {
+		birth = yes
+	}
+	360.1.1 = {
+		effect = {
+			set_relation_friend = character:agdyr_02
+		}
+	}
+	390.1.1 = {
+		death = yes
+	}
+}
+### Thrandheimr
+hoengs_01 = {
+	name = "Ketill"
+	dynasty = hoengs_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	trait = deceitful
+	trait = fickle
+	332.1.1 = {
+		birth = yes
+	}
+	361.1.1 = {
+		set_relation_rival = character:finnmark_01 # Gusir
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+hoengs_02 = {
+	name = "Grimr"
+	dynasty = hoengs_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = hoengs_01
+	359.1.1 = {
+		birth = yes
+	}
+	375.1.1 = {
+		add_spouse = hoengs_06
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+hoengs_03 = {
+	name = "Orvar"
+	dynasty = hoengs_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = hoengs_02
+	mother = hoengs_06
+	trait = education_martial_prowess_3
+	trait = honest
+	trait = just
+	trait = humble
+	trait = lifestyle_hunter
+	376.1.1 = {
+		birth = yes
+	}
+	438.1.1 = {
+		death = yes
+	}
+}
+hoengs_04 = {
+	name = "Hjalmar"
+	religion = "norse_pagan"
+	culture = "norse"
+	trait = education_martial_prowess_3
+	trait = temperate
+	trait = brave
+	trait = diligent
+	376.1.1 = {
+		birth = yes
+	}
+	395.1.1 = {
+		effect = {
+			set_relation_soulmate = character:yngling_16 #Ingeborg
+			set_relation_friend = character:hoengs_03 # Orvar
+		}
+	}
+	396.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = arngrymr_02  # Angantyr
+		}
+	}
+}
+hoengs_05 = {
+	name = "Harald"
+	religion = "norse_pagan"
+	culture = "norse"
+	333.1.1 = {
+		birth = yes
+	}
+	381.1.1 = {
+		death = yes
+	}
+}
+hoengs_06 = {
+	name = "Lofthena"
+	female = yes
+	religion = "norse_pagan"
+	culture = "norse"
+	father = hoengs_05
+	359.1.1 = {
+		birth = yes
+	}
+	397.1.1 = {
+		death = yes
+	}
+}
+
+### Danes
+
+skjolding_15 = {
+	name = "Seskef"
+	dynasty = 102013
+	religion = norse_pagan
+	culture = norse
+	230.1.1 = {
+		birth = yes
+	}
+	285.1.1 = {
+		death = yes
+	}
+}
+skjolding_09 = {
+	name = "Bedwig"
+	dynasty = 102013
+	religion = norse_pagan
+	culture = norse
+	father = skjolding_15
+	255.1.1 = {
+		birth = yes
+	}
+	310.1.1 = {
+		death = yes
+	}
+}
+skjolding_08 = {
+	name = "Annarr"
+	dynasty = 102013
+	religion = norse_pagan
+	culture = norse
+	father = skjolding_09
+	280.1.1 = {
+		birth = yes
+	}
+	330.1.1 = {
+		death = yes
+	}
+}
+skjolding_07 = {
+	name = "Itermann"
+	dynasty = 102013
+	religion = norse_pagan
+	culture = norse
+	father = skjolding_08
+	300.1.1 = {
+		birth = yes
+	}
+	355.1.1 = {
+		death = yes
+	}
+}
+skjolding_06 = {
+	name = "Heremód"
+	dynasty = 102013
+	religion = norse_pagan
+	culture = norse
+	father = skjolding_07
+	320.1.1 = {
+		birth = yes
+	}
+	361.1.1 = {
+		death = {
+			death_reason = death_murder
+		}
+	}
+}
+skjolding_05 = {
+	name = "Skjöldr"
+	dynasty = 102013
+	religion = norse_pagan
+	culture = norse
+	father = skjolding_06
+	343.1.1 = {
+		birth = yes
+	}
+	361.1.1 = {
+		add_spouse = saxon_09
+	}
+	395.1.1 = {
+		death = yes
+	}
+}
+skjolding_04 = {
+	name = "Gram"
+	dynasty = 102013
+	religion = norse_pagan
+	culture = norse
+	father = skjolding_05
+	mother = saxon_09
+	trait = viking
+	363.1.1 = {
+		birth = yes
+	}
+	381.1.1 = {
+		add_spouse = sigtyrg_03
+	}
+	388.1.1 = {
+		add_spouse = finland_29
+	}
+	395.1.1 = {
+		set_relation_rival = character:sigtyrg_02
+	}
+	415.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = sigtyrg_03 # Swipdeag
+		}
+	}
+}
+skjolding_03 = {
+	name = "Hadding"
+	dynasty = 102013
+	religion = norse_pagan
+	culture = norse
+	father = skjolding_04
+	mother = finland_29
+	trait = vengeful
+	trait = diligent
+	trait = patient
+	389.1.1 = {
+		birth = yes
+	}
+	440.1.1 = {
+		death = yes
+	}
+}
+skjolding_02 = {
+	name = "Guthorm"
+	dynasty = 102013
+	religion = norse_pagan
+	culture = norse
+	father = skjolding_04
+	mother = sigtyrg_03
+	385.1.1 = {
+		birth = yes
+	}
+	430.1.1 = {
+		death = yes
+	}
+}
+skjolding_171 = {
+	name = "Frodi"
+	dynasty = 102013
+	religion = norse_pagan
+	culture = norse
+	father = skjolding_03
+	trait = ambitious
+	trait = diligent
+	trait = brave
+	410.1.1 = {
+		birth = yes
+		give_nickname = nick_the_valiant
+	}
+	460.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = hrethling_8 # Swerting
+		}
+	}
+}
+skjolding_17 = {
+	name = "Halfdan"
+	dynasty = 102013
+	religion = norse_pagan
+	culture = norse
+	father = skjolding_171
+	435.1.1 = {
+		birth = yes
+	}
+	463.1.1 = {
+		add_spouse = skjolding_23
+	}
+	476.1.1 = {
+		set_relation_rival = character:yngling_18 # Aunn
+		add_pressed_claim = title:d_svealand
+	}
+	487.1.1 = {
+		death = yes
+	}
+}
+skjolding_01 = {
+	name = "Helgi"
+	dynasty = 102013
+	religion = norse_pagan
+	culture = norse
+	father = skjolding_17
+	mother = skjolding_23
+	trait = lustful
+	trait = arbitrary
+	trait = trusting
+	470.1.1 = {
+		birth = yes
+	}
+	528.1.1 = {
+		death = yes
+	}
+}
+skjolding_001 = {
+	name = "Hrodgar"
+	dynasty = 102013
+	religion = norse_pagan
+	culture = norse
+	father = skjolding_17
+	mother = skjolding_23
+	trait = gregarious
+	trait = generous
+	trait = patient
+	467.1.1 = {
+		birth = yes
+	}
+	488.1.1 = {
+		add_spouse = wulfing_03 # Wealhtheow
+	}
+	525.1.1 = {
+		death = yes
+	}
+}
+skjolding_10 = {
+	name = "Hjörgar"
+	dynasty = 102013
+	religion = norse_pagan
+	culture = norse
+	father = skjolding_17
+	mother = skjolding_23
+	465.1.1 = {
+		birth = yes
+	}
+	489.1.1 = {
+		death = yes
+	}
+}
+skjolding_16 = {
+	name = "Yrsa"
+	female = yes
+	dynasty = 102013
+	religion = norse_pagan
+	culture = norse
+	father = skjolding_01
+	trait = deceitful
+	487.1.1 = {
+		birth = yes
+	}
+	545.1.1 = {
+		death = yes
+	}
+}
+skjolding_18 = {
+	name = "Hrolf" # Kraki
+	dynasty = 102013
+	religion = norse_pagan
+	culture = norse
+	father = skjolding_01
+	mother = skjolding_16
+	trait = brave
+	trait = generous
+	trait = forgiving
+	503.1.1 = {
+		birth = yes
+		give_nickname = nick_kraki
+	}
+	540.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = skjolding_19 # Heoroweard
+		}
+	}
+}
+skjolding_19 = {
+	name = "Hjörvard"
+	dynasty = 102013
+	religion = norse_pagan
+	culture = norse
+	father = skjolding_10
+	487.1.1 = {
+		birth = yes
+	}
+	521.1.1 = {
+		add_spouse = yngling_26
+	}
+	545.1.1 = {
+		death = yes
+	}
+}
+skjolding_20 = {
+	name = "Hrodrik"
+	dynasty = 102013
+	religion = norse_pagan
+	culture = norse
+	father = skjolding_001
+	mother = wulfing_03
+	497.1.1 = {
+		birth = yes
+	}
+	555.1.1 = {
+		death = yes
+	}
+}
+skjolding_21 = {
+	name = "Hrodmund"
+	dynasty = 102013
+	religion = norse_pagan
+	culture = norse
+	father = skjolding_001
+	mother = wulfing_03
+	495.1.1 = {
+		birth = yes
+	}
+	532.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = skjolding_18 # Hrolf Kraki
+		}
+	}
+}
+skjolding_22 = {
+	name = "Drifa"
+	female = yes
+	dynasty = 102013
+	religion = norse_pagan
+	culture = norse
+	father = skjolding_18
+	527.1.1 = {
+		birth = yes
+	}
+	565.1.1 = {
+		death = yes
+	}
+}
+skjolding_23 = {
+	name = "Sigrid"
+	female = yes
+	religion = norse_pagan
+	culture = norse
+	436.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+skjolding_11 = {
+	name = "Valdar"
+	dynasty = 102013
+	religion = norse_pagan
+	culture = norse
+	father = skjolding_001
+	mother = wulfing_03
+	510.1.1 = {
+		birth = yes
+	}
+	577.1.1 = {
+		death = yes
+	}
+}
+skjolding_12 = {
+	name = "Harald" the Old
+	dynasty = 102013
+	religion = norse_pagan
+	culture = norse
+	father = skjolding_11
+	560.1.1 = {
+		birth = yes
+	}
+	632.1.1 = {
+		death = yes
+		give_nickname = nick_the_old
+	}
+}
+skjolding_13 = {
+	name = "Halfdan" the Valiant
+	dynasty = 102013
+	religion = norse_pagan
+	culture = norse
+	father = skjolding_12
+	590.1.1 = {
+		birth = yes
+		give_nickname = nick_the_valiant
+	}
+	650.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = skjolding_26 # Gudröd
+		}
+	}
+}
+skjolding_24 = {
+	name = "Fridleif"
+	dynasty = 102013
+	religion = norse_pagan
+	culture = norse
+	father = skjolding_171
+	428.1.1 = {
+		birth = yes
+	}
+	462.1.1 = {
+		death = yes
+	}
+}
+skjolding_25 = {
+	name = "Ali" the Strong
+	dynasty = 102013
+	religion = norse_pagan
+	culture = norse
+	father = skjolding_24
+	trait = strong
+	trait = viking
+	451.1.1 = {
+		birth = yes
+		give_nickname = nick_the_strong
+	}
+	476.1.1 = {
+		set_relation_rival = character:yngling_18 # Aunn
+		add_pressed_claim = title:d_svealand
+	}
+	483.1.1 = {
+		death = yes
+	}
+}
+skjolding_26 = {
+	name = "Gudröd"
+	dynasty = 102013
+	religion = norse_pagan
+	culture = norse
+	father = skjolding_12
+	595.1.1 = {
+		birth = yes
+	}
+	632.1.1 = {
+		add_spouse = yngling_33
+	}
+	652.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = yngling_33 # Gudröd
+		}
+	}
+}
+skjolding_27 = {
+	name = "Grima"
+	female = yes
+	dynasty = 102013
+	religion = norse_pagan
+	culture = norse
+	father = skjolding_04
+	mother = sigtyrg_03
+	379.1.1 = {
+		birth = yes
+	}
+	430.1.1 = {
+		death = yes
+	}
+}
+
+194036 = {
+	name = "T_rA_ndr"
+	dynasty = 102013
+	religion = norse_pagan
+	culture = norse
+	father = 194003
+	mother = 194033
+	730.1.1 = {
+		birth = yes
+	}
+	780.1.1 = {
+		death = yes
+	}
+}
+194037 = {
+	name = "HrO_rekr"
+	dynasty = 102013
+	religion = norse_pagan
+	culture = norse
+	father = 194003
+	mother = 194033
+	733.1.1 = {
+		birth = yes
+	}
+	757.1.1 = {
+		add_spouse = 194038
+	}
+	784.1.1 = {
+		death = yes
+	}
+}
+194038 = {
+	name = "RO_gnfriT_"
+	religion = norse_pagan
+	culture = norse
+	female = yes
+	738.1.1 = {
+		birth = yes
+	}
+	757.1.1 = {
+		add_spouse = 194037
+	}
+	799.1.1 = {
+		death = yes
+	}
+}
+194039 = {
+	name = "T_orolfr"
+	dynasty = 102013
+	religion = norse_pagan
+	culture = norse
+	father = 194037
+	mother = 194038
+	758.1.1 = {
+		birth = yes
+	}
+	810.1.1 = {
+		death = yes
+	}
+}
+194003 = {
+	name = Haraldr
+	dynasty = 102013 # Skjöldung
+	martial = 10
+	religion = norse_pagan
+	culture = norse
+	father = 194035
+	mother = 194034
+	690.6.12 = {
+		birth = yes
+	}
+	730.1.1 = {
+		give_nickname = nick_hildetand
+	}
+	770.7.7 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+194027 = {
+	name = "Ivar"
+	dynasty = 1045002
+	religion = norse_pagan
+	culture = norse
+	father = skjolding_13
+	645.1.1 = {
+		birth = yes
+	}
+	720.1.1 = {
+		death = yes
+	}
+}
+
+194034 = {
+	name = "AuT_r"
+	dynasty = 1045002
+	religion = norse_pagan
+	culture = norse
+	female = yes
+	father = 194027
+	672.1.1 = {
+		birth = yes
+	}
+	735.1.1 = {
+		death = yes
+	}
+}
+
+### Custom Characters
+jutland_01 = {
+	name = "Heming"
+	religion = norse_pagan
+	culture = norse
+	341.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+jutland_02 = {
+	name = "Sogni"
+	religion = norse_pagan
+	culture = norse
+	343.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = fornjot_04
+		}
+	}
+}
+jutland_05 = {
+	name = "Sölvi"
+	religion = norse_pagan
+	culture = norse
+	503.1.1 = {
+		birth = yes
+	}
+	565.1.1 = {
+		death = yes
+	}
+}
+jutland_06 = {
+	name = "Sverker"
+	religion = norse_pagan
+	culture = norse
+	498.1.1 = {
+		birth = yes
+	}
+	567.1.1 = {
+		death = yes
+	}
+}
+jutland_07 = {
+	name = "Vei"
+	religion = norse_pagan
+	culture = norse
+	344.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+jutland_08 = {
+	name = "Hunding"
+	religion = norse_pagan
+	culture = norse
+	341.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+jutland_09 = {
+	name = "Fialler"
+	religion = norse_pagan
+	culture = norse
+	375.1.1 = {
+		birth = yes
+	}
+	435.1.1 = {
+		death = yes
+	}
+}
+jutland_10 = {
+	name = "Skalk"
+	religion = norse_pagan
+	culture = norse
+	326.1.1 = {
+		birth = yes
+	}
+	375.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = arngrymr_00
+		}
+	}
+}
+jutland_11 = {
+	name = "Svadi"
+	religion = norse_pagan
+	culture = norse
+	331.1.1 = {
+		birth = yes
+	}
+	385.1.1 = {
+		death = yes
+	}
+}
+jutland_12 = {
+	name = "Hrolf"
+	religion = norse_pagan
+	culture = norse
+	father = jutland_11
+	361.1.1 = {
+		birth = yes
+	}
+	383.1.1 = {
+		add_spouse = fornjot_06
+	}
+	405.1.1 = {
+		death = yes
+	}
+}
+jutland_13 = {
+	name = "Hodd"
+	female = yes
+	religion = norse_pagan
+	culture = norse
+	father = jutland_11
+	365.1.1 = {
+		birth = yes
+	}
+	415.1.1 = {
+		death = yes
+	}
+}
+jutland_20 = {
+	name = "Alfr"
+	religion = norse_pagan
+	culture = norse
+	430.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+### Sweedish counts
+sigtyrg_01 = {
+	name = "Sigtyrg"
+	dynasty = sigtyrging_dynasty
+	religion = norse_pagan
+	culture = norse
+	330.1.1 = {
+		birth = yes
+	}
+	380.1.1 = {
+		death = yes
+	}
+}
+sigtyrg_02 = {
+	name = "Svipdag"
+	dynasty = sigtyrging_dynasty
+	religion = norse_pagan
+	culture = norse
+	father = sigtyrg_01
+	trait = vengeful
+	365.1.1 = {
+		birth = yes
+	}
+	395.1.1 = {
+		add_spouse = skjolding_27
+	}
+	420.1.1 = {
+		death = yes
+	}
+}
+sigtyrg_03 = {
+	name = "Groa"
+	female = yes
+	dynasty = sigtyrging_dynasty
+	religion = norse_pagan
+	culture = norse
+	father = sigtyrg_01
+	354.1.1 = {
+		birth = yes
+	}
+	394.1.1 = {
+		death = yes
+	}
+}
+sigtyrg_04 = {
+	name = "Asmund"
+	dynasty = sigtyrging_dynasty
+	religion = norse_pagan
+	culture = norse
+	father = sigtyrg_02
+	mother = sigtyrg_03
+	396.1.1 = {
+		birth = yes
+	}
+	440.1.1 = {
+		death = yes
+	}
+}
+wulfing_01 = {
+	name = "Wulf"
+	dynasty = wulfing_dynasty
+	religion = norse_pagan
+	culture = norse
+	412.1.1 = {
+		birth = yes
+	}
+	465.1.1 = {
+		death = yes
+	}
+}
+wulfing_02 = {
+	name = "Yngvi"
+	dynasty = wulfing_dynasty
+	religion = norse_pagan
+	culture = norse
+	father = wulfing_01
+	433.1.1 = {
+		birth = yes
+	}
+	476.1.1 = {
+		set_relation_friend = character:skjolding_17 # Halfdan
+		add_pressed_claim = title:d_smaland
+	}
+	483.1.1 = {
+		death = yes
+	}
+}
+wulfing_03 = {
+	name = "Wealhtheow"
+	female = yes
+	dynasty = wulfing_dynasty
+	religion = norse_pagan
+	culture = norse
+	father = wulfing_06
+	trait = generous
+	trait = temperate
+	trait = gregarious
+	475.1.1 = {
+		birth = yes
+	}
+	530.1.1 = {
+		death = yes
+	}
+}
+wulfing_04 = {
+	name = "Sibald"
+	dynasty = wulfing_dynasty
+	religion = norse_pagan
+	culture = norse
+	father = wulfing_07
+	490.1.1 = {
+		birth = yes
+	}
+	540.1.1 = {
+		death = yes
+	}
+}
+wulfing_05 = {
+	name = "Sigar"
+	dynasty = wulfing_dynasty
+	religion = norse_pagan
+	culture = norse
+	father = wulfing_04
+	518.1.1 = {
+		birth = yes
+	}
+	578.1.1 = {
+		death = yes
+	}
+}
+wulfing_06 = {
+	name = "Helm"
+	dynasty = wulfing_dynasty
+	religion = norse_pagan
+	culture = norse
+	father = wulfing_02
+	452.1.1 = {
+		birth = yes
+	}
+	476.1.1 = {
+		add_pressed_claim = title:d_smaland
+	}
+	498.1.1 = {
+		death = yes
+	}
+}
+wulfing_07 = {
+	name = "Hadolaf"
+	dynasty = wulfing_dynasty
+	religion = norse_pagan
+	culture = norse
+	father = wulfing_06
+	469.1.1 = {
+		birth = yes
+	}
+	494.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = waegmunding_1 # Ecgtheow
+		}
+	}
+}
+wulfing_08 = {
+	name = "Wulf"
+	dynasty = wulfing_dynasty
+	religion = norse_pagan
+	culture = norse
+	father = wulfing_05
+	543.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+wulfing_09 = {
+	name = "Helm"
+	dynasty = wulfing_dynasty
+	religion = norse_pagan
+	culture = norse
+	father = wulfing_08
+	563.1.1 = {
+		birth = yes
+	}
+	620.1.1 = {
+		death = yes
+	}
+}
+wulfing_10 = {
+	name = "Högni"
+	dynasty = wulfing_dynasty
+	religion = norse_pagan
+	culture = norse
+	father = wulfing_09
+	584.1.1 = {
+		birth = yes
+	}
+	655.1.1 = {
+		death = yes
+	}
+}
+wulfing_11 = {
+	name = "Hilda"
+	female = yes
+	dynasty = wulfing_dynasty
+	religion = norse_pagan
+	culture = norse
+	father = wulfing_10
+	605.1.1 = {
+		birth = yes
+	}
+	655.1.1 = {
+		death = yes
+	}
+}
+wulfing_12 = {
+	name = "Hildur"
+	dynasty = wulfing_dynasty
+	religion = norse_pagan
+	culture = norse
+	father = wulfing_10
+	603.1.1 = {
+		birth = yes
+	}
+	655.1.1 = {
+		death = yes
+	}
+}
+wulfing_13 = {
+	name = "Hjörvard"
+	dynasty = wulfing_dynasty
+	religion = norse_pagan
+	culture = norse
+	father = wulfing_10
+	607.1.1 = {
+		birth = yes
+	}
+	640.1.1 = {
+		add_spouse = wulfing_15
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+wulfing_14 = {
+	name = "Granmar"
+	religion = norse_pagan
+	culture = norse
+	597.1.1 = {
+		birth = yes
+	}
+	623.1.1 = {
+		add_spouse = wulfing_11
+	}
+	650.1.1 = {
+		death = yes
+	}
+}
+wulfing_15 = {
+	name = "Hildagun"
+	female = yes
+	religion = norse_pagan
+	culture = norse
+	father = wulfing_14
+	mother = wulfing_11
+	624.1.1 = {
+		birth = yes
+	}
+	670.1.1 = {
+		death = yes
+	}
+}
+wulfing_16 = {
+	name = "Hjörmund"
+	dynasty = wulfing_dynasty
+	religion = norse_pagan
+	culture = norse
+	father = wulfing_13
+	mother = wulfing_15
+	645.1.1 = {
+		birth = yes
+	}
+	705.1.1 = {
+		death = yes
+	}
+}
+haking_01 = {
+	name = "Haki"
+	dynasty = haking_dynasty
+	religion = norse_pagan
+	culture = norse
+	trait = viking
+	395.1.1 = {
+		birth = yes
+	}
+	440.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+haking_02 = {
+	name = "Hnavi"
+	dynasty = haking_dynasty
+	religion = norse_pagan
+	culture = norse
+	father = haking_01
+	trait = viking
+	415.1.1 = {
+		birth = yes
+	}
+	480.1.1 = {
+		death = yes
+	}
+}
+haking_03 = {
+	name = "Hildeburh"
+	female = yes
+	dynasty = haking_dynasty
+	religion = norse_pagan
+	culture = norse
+	father = haking_01
+	418.1.1 = {
+		birth = yes
+	}
+	481.1.1 = {
+		death = yes
+	}
+}
+
+nording_01 = {
+	name = "Raum"
+	dynasty = fornjot_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = fornjot_04
+	mother = jutland_13
+	392.1.1 = {
+		birth = yes
+	}
+	415.1.1 = {
+		dynasty = rauming_dynasty
+	}
+	443.1.1 = {
+		give_nickname = nick_the_old
+		death = yes
+	}
+}
+nording_02 = {
+	name = "Gard"
+	dynasty = fornjot_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = fornjot_04
+	mother = jutland_13
+	394.1.1 = {
+		birth = yes
+	}
+	415.1.1 = {
+		dynasty = garding_dynasty
+		give_nickname = nick_agdir
+	}
+	444.1.1 = {
+		death = yes
+	}
+}
+nording_03 = {
+	name = "Thrand"
+	dynasty = fornjot_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = fornjot_04
+	mother = jutland_13
+	391.1.1 = {
+		birth = yes
+	}
+	435.1.1 = {
+		death = yes
+	}
+}
+nording_04 = {
+	name = "Hörd"
+	dynasty = garding_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_02
+	416.1.1 = {
+		birth = yes
+	}
+	460.1.1 = {
+		death = yes
+	}
+}
+nording_05 = {
+	name = "Rugalf"
+	dynasty = garding_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_02
+	417.1.1 = {
+		birth = yes
+	}
+	463.1.1 = {
+		death = yes
+	}
+}
+nording_06 = {
+	name = "Thrym"
+	dynasty = garding_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_02
+	419.1.1 = {
+		birth = yes
+	}
+	457.1.1 = {
+		death = yes
+	}
+}
+nording_07 = {
+	name = "Vegard"
+	dynasty = garding_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_02
+	420.1.1 = {
+		birth = yes
+	}
+	466.1.1 = {
+		death = yes
+	}
+}
+nording_08 = {
+	name = "Freygard"
+	dynasty = garding_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_02
+	421.1.1 = {
+		birth = yes
+	}
+	470.1.1 = {
+		death = yes
+	}
+}
+nording_09 = {
+	name = "Högni"
+	dynasty = garding_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_50
+	490.1.1 = {
+		birth = yes
+	}
+	540.1.1 = {
+		death = yes
+	}
+}
+nording_10 = {
+	name = "Grjotgard"
+	dynasty = garding_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_02
+	424.1.1 = {
+		birth = yes
+	}
+	474.1.1 = {
+		death = yes
+	}
+}
+nording_11 = {
+	name = "Gudbrand"
+	dynasty = rauming_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_01
+	417.1.1 = {
+		birth = yes
+	}
+	467.1.1 = {
+		death = yes
+	}
+}
+nording_12 = {
+	name = "Jötunbjörn"
+	dynasty = rauming_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_01
+	418.1.1 = {
+		birth = yes
+	}
+	466.1.1 = {
+		death = yes
+	}
+}
+nording_13 = {
+	name = "Finalf"
+	dynasty = rauming_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_01
+	419.1.1 = {
+		birth = yes
+	}
+	476.1.1 = {
+		death = yes
+	}
+}
+nording_14 = {
+	name = "Gudröd"
+	dynasty = rauming_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_01
+	424.1.1 = {
+		birth = yes
+	}
+	473.1.1 = {
+		death = yes
+	}
+}
+nording_15 = {
+	name = "Höd"
+	dynasty = rauming_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_01
+	425.1.1 = {
+		birth = yes
+	}
+	476.1.1 = {
+		death = yes
+	}
+}
+nording_16 = {
+	name = "Hadding"
+	dynasty = rauming_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_01
+	427.1.1 = {
+		birth = yes
+	}
+	473.1.1 = {
+		death = yes
+	}
+}
+nording_17 = {
+	name = "Hring"
+	dynasty = rauming_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_01
+	428.1.1 = {
+		birth = yes
+	}
+	476.1.1 = {
+		death = yes
+	}
+}
+nording_18 = {
+	name = "Audleif"
+	dynasty = rauming_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_11
+	436.1.1 = {
+		birth = yes
+	}
+	488.1.1 = {
+		death = yes
+	}
+}
+nording_19 = {
+	name = "Raum"
+	dynasty = rauming_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_12
+	438.1.1 = {
+		birth = yes
+	}
+	488.1.1 = {
+		death = yes
+	}
+}
+nording_20 = {
+	name = "Svan"
+	dynasty = rauming_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_13
+	437.1.1 = {
+		birth = yes
+	}
+	486.1.1 = {
+		death = yes
+	}
+}
+nording_21 = {
+	name = "Eystein"
+	dynasty = rauming_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_14
+	trait = arbitrary
+	trait = wrathful
+	trait = sadistic
+	440.1.1 = {
+		birth = yes
+	}
+	476.1.1 = {
+		give_nickname = nick_the_wicked
+	}
+	488.1.1 = {
+		death = yes
+	}
+}
+nording_22 = {
+	name = "Höddbrodd"
+	dynasty = rauming_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_15
+	443.1.1 = {
+		birth = yes
+	}
+	490.1.1 = {
+		death = yes
+	}
+}
+nording_23 = {
+	name = "Hadding"
+	dynasty = rauming_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_16
+	445.1.1 = {
+		birth = yes
+	}
+	493.1.1 = {
+		death = yes
+	}
+}
+nording_24 = {
+	name = "Halfdan"
+	dynasty = rauming_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_17
+	mother = fornjot_13
+	445.1.1 = {
+		birth = yes
+	}
+	520.1.1 = {
+		give_nickname = nick_the_old
+		death = yes
+	}
+}
+nording_25 = {
+	name = "Jösur"
+	dynasty = garding_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_04
+	438.1.1 = {
+		birth = yes
+	}
+	489.1.1 = {
+		death = yes
+	}
+}
+nording_26 = {
+	name = "Rögnvald"
+	dynasty = garding_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_05
+	436.1.1 = {
+		birth = yes
+	}
+	487.1.1 = {
+		death = yes
+	}
+}
+nording_27 = {
+	name = "Agdi"
+	dynasty = garding_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_06
+	439.1.1 = {
+		birth = yes
+	}
+	494.1.1 = {
+		death = yes
+	}
+}
+nording_28 = {
+	name = "Agnar"
+	dynasty = garding_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_06
+	441.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+nording_29 = {
+	name = "Vedrorm"
+	dynasty = garding_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_07
+	436.1.1 = {
+		birth = yes
+	}
+	490.1.1 = {
+		death = yes
+	}
+}
+nording_30 = {
+	name = "Freystein"
+	dynasty = garding_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_08
+	441.1.1 = {
+		birth = yes
+	}
+	488.1.1 = {
+		death = yes
+	}
+}
+nording_31 = {
+	name = "Freybjörn"
+	dynasty = garding_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_08
+	445.1.1 = {
+		birth = yes
+	}
+	492.1.1 = {
+		death = yes
+	}
+}
+nording_32 = {
+	name = "Sölvi"
+	dynasty = garding_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_09
+	trait = viking
+	514.1.1 = {
+		birth = yes
+	}
+	563.1.1 = {
+		death = yes
+	}
+}
+nording_33 = {
+	name = "Salgard"
+	dynasty = garding_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_10
+	445.1.1 = {
+		birth = yes
+	}
+	491.1.1 = {
+		death = yes
+	}
+}
+nording_34 = {
+	name = "Gudmund"
+	dynasty = rauming_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_18
+	455.1.1 = {
+		birth = yes
+	}
+	501.1.1 = {
+		death = yes
+	}
+}
+nording_35 = {
+	name = "Hrossbjörn"
+	dynasty = rauming_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_19
+	457.1.1 = {
+		birth = yes
+	}
+	507.1.1 = {
+		death = yes
+	}
+}
+nording_36 = {
+	name = "Eirik"
+	dynasty = skilfing_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_55
+	509.1.1 = {
+		birth = yes
+	}
+	560.1.1 = {
+		death = yes
+	}
+}
+nording_37 = {
+	name = "Önund"
+	dynasty = rauming_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_21
+	459.1.1 = {
+		birth = yes
+	}
+	479.1.1 = {
+		death = yes
+	}
+}
+nording_38 = {
+	name = "Hrolf"
+	dynasty = rauming_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_22
+	462.1.1 = {
+		birth = yes
+	}
+	511.1.1 = {
+		death = yes
+	}
+}
+nording_39 = {
+	name = "Hadding"
+	dynasty = rauming_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_23
+	464.1.1 = {
+		birth = yes
+	}
+	511.1.1 = {
+		death = yes
+	}
+}
+nording_40 = {
+	name = "Skilfi"
+	dynasty = rauming_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_24
+	465.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		dynasty = skilfing_dynasty
+	}
+	515.1.1 = {
+		death = yes
+	}
+}
+nording_41 = {
+	name = "Geirmund"
+	dynasty = rauming_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_52
+	505.1.1 = {
+		birth = yes
+	}
+	565.1.1 = {
+		death = yes
+	}
+}
+nording_42 = {
+	name = "Bragi"
+	dynasty = rauming_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_24
+	469.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		dynasty = braging_dynasty
+	}
+	512.1.1 = {
+		death = yes
+	}
+}
+nording_43 = {
+	name = "Hildi"
+	dynasty = rauming_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_24
+	470.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		dynasty = hilding_dynasty
+	}
+	520.1.1 = {
+		death = yes
+	}
+}
+nording_44 = {
+	name = "Lofdi"
+	dynasty = rauming_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_24
+	471.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		dynasty = lofding_dynasty
+	}
+	519.1.1 = {
+		death = yes
+	}
+}
+nording_45 = {
+	name = "Hjör"
+	dynasty = garding_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_25
+	470.1.1 = {
+		birth = yes
+	}
+	520.1.1 = {
+		death = yes
+	}
+}
+nording_46 = {
+	name = "Ögvald"
+	dynasty = garding_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_26
+	455.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+nording_47 = {
+	name = "Ketill"
+	dynasty = garding_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_28
+	472.1.1 = {
+		birth = yes
+	}
+	533.1.1 = {
+		death = yes
+	}
+}
+nording_48 = {
+	name = "Vemund"
+	dynasty = garding_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_29
+	457.1.1 = {
+		birth = yes
+	}
+	507.1.1 = {
+		death = yes
+	}
+}
+nording_49 = {
+	name = "Audbjörn"
+	dynasty = garding_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_31
+	474.1.1 = {
+		birth = yes
+	}
+	517.1.1 = {
+		death = yes
+	}
+}
+nording_50 = {
+	name = "Sölvi"
+	dynasty = garding_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_33
+	470.1.1 = {
+		birth = yes
+	}
+	515.1.1 = {
+		death = yes
+	}
+}
+nording_51 = {
+	name = "Hilda"
+	female = yes
+	dynasty = garding_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_09
+	515.1.1 = {
+		birth = yes
+	}
+	570.1.1 = {
+		death = yes
+	}
+}
+nording_52 = {
+	name = "Gudbrand"
+	dynasty = rauming_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_34
+	486.1.1 = {
+		birth = yes
+	}
+	545.1.1 = {
+		death = yes
+	}
+}
+nording_53 = {
+	name = "Orm"
+	dynasty = rauming_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_35
+	486.1.1 = {
+		birth = yes
+	}
+	545.1.1 = {
+		death = yes
+	}
+}
+nording_54 = {
+	name = "Hromund"
+	dynasty = rauming_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_38
+	487.1.1 = {
+		birth = yes
+	}
+	542.1.1 = {
+		death = yes
+	}
+}
+nording_55 = {
+	name = "Skjöld"
+	dynasty = skilfing_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_40
+	485.1.1 = {
+		birth = yes
+	}
+	535.1.1 = {
+		death = yes
+	}
+}
+nording_56 = {
+	name = "Knati"
+	dynasty = rauming_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_53
+	505.1.1 = {
+		birth = yes
+	}
+	565.1.1 = {
+		death = yes
+	}
+}
+nording_57 = {
+	name = "Höd"
+	dynasty = rauming_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_54
+	507.1.1 = {
+		birth = yes
+	}
+	570.1.1 = {
+		death = yes
+	}
+}
+nording_58 = {
+	name = "Skuli"
+	dynasty = lofding_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_44
+	497.1.1 = {
+		birth = yes
+	}
+	550.1.1 = {
+		death = yes
+	}
+}
+nording_59 = {
+	name = "Hildibrand"
+	dynasty = hilding_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_43
+	500.1.1 = {
+		birth = yes
+	}
+	560.1.1 = {
+		death = yes
+	}
+}
+nording_60 = {
+	name = "Hjörleif"
+	dynasty = garding_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_45
+	trait = lustful
+	498.1.1 = {
+		birth = yes
+	}
+	532.1.1 = {
+		add_spouse = nording_51
+	}
+	567.1.1 = {
+		death = yes
+	}
+}
+nording_61 = {
+	name = "Arinbjörn"
+	dynasty = garding_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_49
+	492.1.1 = {
+		birth = yes
+	}
+	540.1.1 = {
+		death = yes
+	}
+}
+nording_62 = {
+	name = "Agnar"
+	dynasty = braging_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_42
+	493.1.1 = {
+		birth = yes
+	}
+	550.1.1 = {
+		death = yes
+	}
+}
+nording_63 = {
+	name = "Alf"
+	dynasty = braging_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_62
+	515.1.1 = {
+		birth = yes
+	}
+	550.1.1 = {
+		death = yes
+	}
+}
+nording_64 = {
+	name = "Herbrand"
+	dynasty = hilding_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_59
+	530.1.1 = {
+		birth = yes
+	}
+	595.1.1 = {
+		death = yes
+	}
+}
+nording_65 = {
+	name = "Egdir"
+	dynasty = lofding_dynasty
+	religion = "norse_pagan"
+	culture = "norse"
+	father = nording_58
+	525.1.1 = {
+		birth = yes
+	}
+	585.1.1 = {
+		death = yes
+	}
+}

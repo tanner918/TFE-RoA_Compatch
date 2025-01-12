@@ -1,0 +1,302 @@
+﻿#k_romagna
+##d_romagna ###################################
+###c_ravenna
+2546 = {	#RAVENNA
+	culture = roman
+	religion = nicene
+	holding = castle_holding
+	#404.1.1={
+	#	buildings = {
+	#		castle_01
+	#		castle_02
+	#		curtain_walls_01
+	#		curtain_walls_02
+	#	}
+	#}
+	303.1.1 = {
+		special_building_slot = apollinare_nuovo
+	}
+	504.1.1 = {
+		special_building = apollinare_nuovo
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+}
+2549 = {	#IMOLA
+	holding = castle_holding
+}
+2548 = {	#FORLI
+	holding = city_holding
+}
+2547 = {	#RIMINI
+	holding = city_holding
+}
+
+###c_bologna
+2542 = {	#BOLOGNA
+	culture = roman
+	religion = nicene
+	holding = castle_holding
+	451.1.1 = {
+		religion = chalcedonian
+	}
+}
+2529 = {	#CONA
+	holding = none
+}
+2550 = {	#MONTE SOLE
+	holding = none
+}
+
+###c_ferrara
+2527 = {	#FERRARA
+	culture = roman
+	religion = roman_pagan
+	holding = castle_holding
+	451.1.1 = {
+		religion = chalcedonian
+	}
+}
+2526 = {	#POMPOSA
+	holding = church_holding
+}
+2528 = {	#COMACCHIO
+	holding = city_holding
+}
+
+###c_casentino
+2553 = {	#CASENTINO
+	culture = roman
+	religion = nicene
+	holding = castle_holding
+	451.1.1 = {
+		religion = chalcedonian
+	}
+}
+2552 = {	#MONTEFELTRO
+	holding = none
+}
+2551 = {	#CAMALDOLI
+	holding = none
+	1010 = {
+		holding = church_holding
+	}
+}
+
+##d_ancona ###################################
+###c_ancona
+2594 = {	#ANCONA
+	culture = roman
+	religion = manichean
+	holding = castle_holding
+}
+2583 = {	#CAGLI
+	holding = city_holding
+}
+2582 = {	#GUBBIO
+	holding = castle_holding
+}
+2587 = {	#CAMERINO
+	holding = none
+}
+
+###c_urbino
+2555 = {	#URBINO
+	culture = roman
+	religion = nicene
+	holding = castle_holding
+	451.1.1 = {
+		religion = chalcedonian
+	}
+}
+2584 = {	#CIVITAS CASTELLI = Citta di Castello
+	holding = city_holding
+}
+2556 = {	#PESARO
+	holding = none
+}
+
+###c_fermo
+2598 = {	#FERMO
+	culture = roman
+	religion = manichean
+	holding = castle_holding
+	451.1.1 = {
+		religion = chalcedonian
+	}
+}
+2597 = {	#ASCOLI PICENO
+	holding = church_holding
+}
+2599 = {	#MACERATA
+	holding = none
+}
+
+##d_spoleto ###################################
+###c_spoleto
+2585 = {	#SPOLETO
+	culture = roman
+	religion = nicene
+	holding = castle_holding		
+	390.1.1 = {
+		religion = jovinian # Jovinian community around Rome, probably declined after Jovinian was declared a heretic at synods
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+}
+2581 = {	#ASSISSI
+	holding = none
+}
+2586 = {	#TERNI
+	holding = city_holding
+}
+
+###c_orvieto
+2568 = {	#ORVIETO
+	culture = roman
+	religion = nicene
+	holding = castle_holding	
+	390.1.1 = {
+		religion = jovinian # Jovinian community around Rome, probably declined after Jovinian was declared a heretic at synods
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+}
+2566 = {	#PERUGIA
+	holding = church_holding
+}
+
+###c_teramo
+2596 = {	#TERAMO
+	culture = roman
+	religion = marcionite # Marcionite community in Rome and Italy according to Epiphanius
+	holding = castle_holding
+	500.1.1 = {
+		religion = chalcedonian
+	}
+}
+2588 = {	#RIETI
+	holding = city_holding
+}
+
+###c_lanciano
+2604 = {	#LANCIANO
+	culture = roman
+	religion = marcionite # Marcionite community in Rome and Italy according to Epiphanius
+	holding = castle_holding
+	451.1.1 = {
+		religion = chalcedonian
+	}
+}
+2603 = {	#CLUIELI
+	holding = none
+}
+
+###c_abruzzi
+2600 = {	#AVEZZANO
+	culture = roman
+	religion = marcionite # Marcionite community in Rome and Italy according to Epiphanius
+	holding = castle_holding
+	500.1.1 = {
+		religion = chalcedonian
+	}
+}
+2595 = {	#ATRI
+	holding = city_holding
+}
+
+##d_latium ###################################
+###c_roma
+2575 = {	#ROMA
+	culture = roman
+	religion = nicene
+	holding = castle_holding
+	special_building_slot = the_colosseum_01
+
+	80.1.1 = {
+		special_building = the_colosseum_01
+	}
+	275.1.1 = {
+		duchy_capital_building = aurelian_walls_01 
+	}
+	395.1.1 = {
+		buildings = {
+			castle_02
+			farm_estates_01
+		}
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	532.1.1 = {
+		buildings = {
+			castle_02
+			farm_estates_02
+			curtain_walls_01
+			cereal_fields_02
+		}
+	}
+}
+2576 = {	#OSTIA
+	holding = city_holding
+}
+2577 = {	#VATICAN
+	holding = church_holding
+}
+2578 = {	#PALO
+	holding = none
+}
+2574 = {	#PATERNO
+	holding = none
+}
+2579 = {	#FARFA
+	holding = church_holding
+}
+
+###c_viterbo
+2572 = {	#VITERBO
+	culture = roman	
+	religion = novatianism # Simulating their presence in Rome until expelled by Pope/Saint Celestine in the early 400s
+	holding = castle_holding
+	451.1.1 = {
+		religion = chalcedonian
+	}
+}
+2573 = {	#SUTRI
+	holding = church_holding
+}
+2571 = {	#CIVITAVECCHIA
+	holding = city_holding
+}
+
+###c_tivoli
+2589 = {	#TIVOLI
+	culture = roman
+	religion = nicene
+	holding = castle_holding
+	451.1.1 = {
+		religion = chalcedonian
+	}
+}
+2590 = {	#VELLETRI
+	holding = church_holding
+}
+2591 = {	#SEGNI
+	holding = city_holding
+}
+2592 = {	#TERRACINA
+	holding = castle_holding
+}
+
+9676 = {	#SAN MARINO
+	culture = roman
+	religion = nicene
+	holding = church_holding
+
+	451.1.1 = {
+		religion = chalcedonian
+	}
+}

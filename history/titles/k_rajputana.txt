@@ -1,0 +1,979 @@
+﻿k_rajputana = {
+	361.1.1 = { change_development_level = 5 }
+	532.1.1 = { change_development_level = 6 }
+	768.1.1 = { change_development_level = 7 }
+
+	### Aulikaras
+	528.1.1 = {
+		holder = aulikara_09
+	}
+
+	550.1.1 = {
+		holder = 191605 #Harichandra
+	}
+	580.1.1 = {
+		holder = 191607 #Rajjila
+	}
+	600.1.1 = {
+		holder = 191608 #Narabbhata
+	}
+	625.1.1 = {
+		holder = 191609 #Nagabhata
+	}
+	650.1.1 = {
+		holder = 191610 #Tata
+	}
+	690.1.1 = {
+		holder = 191611 #Yashovardhana
+	}
+	720.1.1 = {
+		holder = 188000 #Chanduka
+	}
+	730.1.1 = {
+		holder = 191613 #Siluka
+	}
+	750.1.1 = {
+		holder = 0 #Main branch is now the one at Ujjayin
+	}
+}
+
+
+d_maru = {
+	361.1.1 = { change_development_level = 3 }
+	532.1.1 = { change_development_level = 4 }
+	768.1.1 = { change_development_level = 5 }
+		
+	## Abhiras
+
+	361.1.1 = {
+		holder = shaka_07
+		government = gana_sangha_government
+		succession_laws = { gana_sangha_elective_succession_law }
+	}
+	395.1.1 = {
+		liege = e_bengal
+	}
+	476.1.1 = {
+		holder = shaka_08
+	}
+
+	530.1.1 = {
+		holder = 191605 #Harichandra
+		liege = k_rajputana
+	}
+	580.1.1 = {
+		holder = 191607 #Rajjila
+	}
+	600.1.1 = {
+		holder = 191608 #Narabbhata
+	}
+	625.1.1 = {
+		holder = 191609 #Nagabhata
+	}
+	650.1.1 = {
+		holder = 191610 #Tata
+	}
+	690.1.1 = {
+		holder = 191611 #Yashovardhana
+	}
+	720.1.1 = {
+		holder = 188000 #Chanduka
+	}
+	730.1.1 = {
+		holder = 191613 #Siluka
+	}
+	750.1.1 = {
+		holder = 191615 #Jhota
+		liege = k_malwa
+	}
+	
+}
+
+
+c_mandavyapura = {
+	## Abhiras
+
+	361.1.1 = {
+		holder = shaka_07
+		government = gana_sangha_government
+		succession_laws = { gana_sangha_elective_succession_law }
+	}
+	476.1.1 = {
+		holder = shaka_08
+	}
+	530.1.1 = {
+		holder = 191605 #Harichandra
+		liege = d_maru
+	}
+	580.1.1 = {
+		holder = 191607 #Rajjila
+	}
+	600.1.1 = {
+		holder = 191608 #Narabbhata
+	}
+	625.1.1 = {
+		holder = 191609 #Nagabhata
+	}
+	650.1.1 = {
+		holder = 191610 #Tata
+	}
+	690.1.1 = {
+		holder = 191611 #Yashovardhana
+	}
+	720.1.1 = {
+		holder = 188000 #Chanduka
+	}
+	730.1.1 = {
+		holder = 191613 #Siluka
+	}
+	750.1.1 = {
+		holder = 191615 #Jhota
+	}
+	
+}
+
+
+c_medantaka = {
+	## Abhiras
+
+	361.1.1 = {
+		holder = shaka_07
+		government = gana_sangha_government
+		succession_laws = { gana_sangha_elective_succession_law }
+	}
+	400.1.1 = {
+		liege = e_bengal
+	}
+	476.1.1 = {
+		holder = shaka_08
+	}
+	530.1.1 = {
+		holder = 191605 #Harichandra
+		liege = d_maru
+	}
+	580.1.1 = {
+		holder = 191607 #Rajjila
+	}
+	600.1.1 = {
+		holder = 191608 #Narabbhata
+	}
+	625.1.1 = {
+		holder = 191609 #Nagabhata
+		liege = d_dadhipadra
+	}
+	650.1.1 = {
+		holder = 191612 #Bhoja
+	}
+	690.1.1 = {
+		holder = 188000 #Chanduka
+	}
+	730.1.1 = {
+		holder = 188001 #Nagabhata
+	}
+	765.1.1 = {
+		holder = 188003 # Kakustha
+	}
+}
+
+
+c_godwad = {
+			
+	## Alukiaras
+	361.1.1 = {
+		holder = shaka_06
+		government = gana_sangha_government
+		succession_laws = { gana_sangha_elective_succession_law }
+		liege = k_gujarat
+	}
+	
+	530.1.1 = {
+		holder = 191605 #Harichandra
+		liege = d_maru
+	}
+	532.1.1 = {
+		holder = abhira_misc_002
+	}
+	580.1.1 = {
+		holder = 191607 #Rajjila
+	}
+	600.1.1 = {
+		holder = 191608 #Narabbhata
+	}
+	625.1.1 = {
+		holder = 191609 #Nagabhata
+	}
+	650.1.1 = {
+		holder = 191610 #Tata
+	}
+	690.1.1 = {
+		holder = 191611 #Yashovardhana
+	}
+	720.1.1 = {
+		holder = 188000 #Chanduka
+	}
+	730.1.1 = {
+		holder = 191613 #Siluka
+	}
+	750.1.1 = {
+		holder = 191615 #Jhota
+	}
+
+}
+
+
+c_naddula = {		
+	## Abhiras
+	361.1.1 = {
+		holder = shaka_07
+		government = gana_sangha_government
+		succession_laws = { gana_sangha_elective_succession_law }
+	}
+	400.1.1 = {
+		liege = e_bengal
+	}
+	530.1.1 = {
+		holder = 191605 #Harichandra
+		liege = d_maru
+	}
+	532.1.1 = {
+		holder = arjunayana_misc_001
+		liege = d_maru
+		government = gana_sangha_government
+		succession_laws = { gana_sangha_elective_succession_law }
+	}
+	580.1.1 = {
+		holder = 191607 #Rajjila
+	}
+	600.1.1 = {
+		holder = 191608 #Narabbhata
+	}
+	625.1.1 = {
+		holder = 191609 #Nagabhata
+	}
+	650.1.1 = {
+		holder = 191610 #Tata
+	}
+	690.1.1 = {
+		holder = 191611 #Yashovardhana
+	}
+	720.1.1 = {
+		holder = 188000 #Chanduka
+	}
+	730.1.1 = {
+		holder = 191613 #Siluka
+	}
+	750.1.1 = {
+		holder = 191615 #Jhota
+	}
+	
+}
+
+
+d_jangladesh = {
+	361.1.1 = { change_development_level = 3 }
+	361.1.1 = {
+		holder = yaudheya_01
+		government = gana_sangha_government
+		succession_laws = { gana_sangha_elective_succession_law }
+	}
+	392.1.1 = {
+		liege = e_bengal
+	}
+	400.1.1 = {
+		holder = yaudheya_02
+	}
+	433.1.1 = {
+		holder = yaudheya_03
+	}
+	456.1.1 = {
+		holder = yaudheya_04
+	}
+	530.1.1 = {
+		holder = 191605 #Harichandra
+		liege = k_rajputana
+	}
+	
+	551.1.1 = {
+		liege = k_malwa
+		holder = 188100 # Vasudeva
+	}
+	595.1.1 = {
+		holder = 188101 # Samanta
+	}
+	668.1.1 = {
+		holder = 188102 # Naradeva
+	}
+	693.1.1 = {
+		holder = 188103 # Jayaraja
+	}
+	718.1.1 = {
+		holder = 188104 # Vigrharaja I
+	}
+	743.1.1 = {
+		holder = 188105 # Chandraraja I
+	}
+	768.1.1 = {
+		holder = 188106 # Gopendraraja
+	}
+}
+
+
+c_vikramapura = {
+	## Abhiras
+
+	#Arjunayanas
+	361.1.1 = {
+		holder = yaudheya_01
+		government = gana_sangha_government
+		succession_laws = { gana_sangha_elective_succession_law }
+	}
+	400.1.1 = {
+		holder = yaudheya_02
+	}
+	433.1.1 = {
+		holder = yaudheya_03
+		government = gupta_government
+	}
+	456.1.1 = {
+		holder = yaudheya_04
+	}
+	550.1.1 = {
+		holder = 188321 #Bahubal
+	}
+	570.1.1 = {
+		holder = 188322 #Subahu
+	}
+	590.1.1 = {
+		holder = 188323 #Rajh
+	}
+	610.1.1 = {
+		holder = 188324 #Gaj
+	}
+	630.1.1 = {
+		holder = 188325 #Salivahan I
+	}
+	650.1.1 = {
+		holder = 188326 #Baland
+	}
+	670.1.1 = {
+		holder = 188327 #Bhati
+	}
+	690.1.1 = {
+		holder = 188328 #Mangal-Rao
+	}
+	710.1.1 = {
+		holder = 188329 #Majam-Rao
+	}
+	731.1.1 = {
+		holder = 188330 #Kehar I
+	}
+}
+
+
+c_reni = {
+	361.1.1 = {
+		holder = yaudheya_01
+		government = tribal_government
+	}
+	400.1.1 = {
+		holder = yaudheya_02
+	}
+	433.1.1 = {
+		holder = yaudheya_03
+		government = gupta_government
+	}
+	456.1.1 = {
+		holder = yaudheya_04
+	}
+	532.1.1 = {
+		holder = arjunayana_misc_002
+		liege = d_maru
+		government = gana_sangha_government
+		succession_laws = { gana_sangha_elective_succession_law }
+	}
+	765.1.1 = {
+		holder = 191011	#Balan Singh Burdak
+		liege = d_jangladesh
+	}
+	768.1.1 = {
+		holder = 191012 #Mal Singh Burdak
+	}
+}
+
+
+c_nagauda = {	
+	#Arjunayanas
+	361.1.1 = {
+		holder = yaudheya_01
+		government = gana_sangha_government
+		succession_laws = { gana_sangha_elective_succession_law }
+	}
+	400.1.1 = {
+		holder = yaudheya_02
+	}
+	433.1.1 = {
+		holder = yaudheya_03
+		government = gupta_government
+	}
+	456.1.1 = {
+		holder = yaudheya_04
+	}
+	551.1.1 = {
+		liege = d_jangladesh
+		holder = 188100 # Vasudeva
+	}
+	595.1.1 = {
+		holder = 188101 # Samanta
+	}
+	668.1.1 = {
+		holder = 188102 # Naradeva
+	}
+	693.1.1 = {
+		holder = 188103 # Jayaraja
+	}
+	718.1.1 = {
+		holder = 188104 # Vigrharaja I
+	}
+	743.1.1 = {
+		holder = 188105 # Chandraraja I
+	}
+	768.1.1 = {
+		holder = 188106 # Gopendraraja
+	}
+}
+
+
+d_stravani = {
+	361.1.1 = { change_development_level = 3 }
+	532.1.1 = { change_development_level = 4 }
+	768.1.1 = { change_development_level = 5 }
+	
+	530.1.1 = {
+		holder = 188320 #Jaisimha
+		liege = k_malwa
+	}
+	540.1.1 = {
+		liege = 0
+	}
+	550.1.1 = {
+		holder = 188321 #Bahubal
+	}
+	570.1.1 = {
+		holder = 188322 #Subahu
+	}
+	590.1.1 = {
+		holder = 188323 #Rajh
+	}
+	610.1.1 = {
+		holder = 188324 #Gaj
+	}
+	630.1.1 = {
+		holder = 188325 #Salivahan I
+	}
+	650.1.1 = {
+		holder = 188326 #Baland
+	}
+	670.1.1 = {
+		holder = 188327 #Bhati
+	}
+	690.1.1 = {
+		holder = 188328 #Mangal-Rao
+	}
+	710.1.1 = {
+		holder = 188329 #Majam-Rao
+	}
+	731.1.1 = {
+		liege = k_rajputana
+		holder = 188330 #Kehar I
+	}
+	750.1.1 = {
+		liege = k_malwa
+	}
+}
+
+
+c_ludrava = {	
+
+	361.1.1 = {
+		holder = shaka_07
+		government = gana_sangha_government
+		succession_laws = { gana_sangha_elective_succession_law }
+	}
+	400.1.1 = {
+		liege = e_bengal
+	}
+	476.1.1 = {
+		holder = shaka_08
+	}
+	530.1.1 = {
+		liege = d_stravani
+		holder = 188320 #Jaisimha
+	}
+	550.1.1 = {
+		holder = 188321 #Bahubal
+	}
+	570.1.1 = {
+		holder = 188322 #Subahu
+	}
+	590.1.1 = {
+		holder = 188323 #Rajh
+	}
+	610.1.1 = {
+		holder = 188324 #Gaj
+	}
+	630.1.1 = {
+		holder = 188325 #Salivahan I
+	}
+	650.1.1 = {
+		holder = 188326 #Baland
+	}
+	670.1.1 = {
+		holder = 188327 #Bhati
+	}
+	690.1.1 = {
+		holder = 188328 #Mangal-Rao
+	}
+	710.1.1 = {
+		holder = 188329 #Majam-Rao
+	}
+	731.1.1 = {
+		holder = 188330 #Kehar I
+	}
+}
+
+
+c_satyapura = {
+	361.1.1 = {
+		holder = shaka_06
+		government = gupta_government
+		liege = k_gujarat
+	}
+	472.1.1 = {
+		holder = shaka_08
+	}
+	530.1.1 = {
+		liege = d_stravani
+		holder = 188320 #Jaisimha
+	}
+	550.1.1 = {
+		holder = 188321 #Bahubal
+	}
+	570.1.1 = {
+		holder = 188322 #Subahu
+	}
+	590.1.1 = {
+		holder = 188323 #Rajh
+	}
+	610.1.1 = {
+		holder = 188324 #Gaj
+	}
+	630.1.1 = {
+		holder = 188325 #Salivahan I
+	}
+	650.1.1 = {
+		holder = 188326 #Baland
+	}
+	670.1.1 = {
+		holder = 188327 #Bhati
+	}
+	690.1.1 = {
+		holder = 188328 #Mangal-Rao
+	}
+	710.1.1 = {
+		holder = 188329 #Majam-Rao
+	}
+	731.1.1 = {
+		holder = 188330 #Kehar I
+	}
+}
+
+
+d_medapata = {
+	# malavas
+	358.1.1 = {
+		holder = aulikara_01
+		government = gana_sangha_government
+		succession_laws = { gana_sangha_elective_succession_law }
+	}
+	388.1.1 = {
+		holder = aulikara_02
+	}
+	395.1.1 = {
+		liege = e_bengal
+	}
+	423.1.1 = {
+		holder = aulikara_03
+	}
+	446.1.1 = {
+		holder = aulikara_04
+	}
+	458.1.1 = {
+		holder = aulikara_05
+	}
+	467.1.1 = {
+		holder = aulikara_06
+		liege = 0
+	}
+	478.1.1 = {
+		holder = aulikara_07
+	}
+	489.1.1 = {
+		holder = aulikara_08
+	}
+	518.1.1 = {
+		holder = aulikara_09
+	}
+	734.1.1 = {
+		liege = k_rajputana
+		holder = 188470 # Kalbhoj Guhilot
+	}
+	750.1.1 = {
+		liege = k_malwa
+	}
+	753.1.1 = {
+		holder = 188471 # Khuman
+	}
+}
+
+
+c_medapata = {		
+	# malavas
+	358.1.1 = {
+		holder = aulikara_01
+		government = gana_sangha_government
+		succession_laws = { gana_sangha_elective_succession_law }
+		liege = k_gujarat
+	}
+	388.1.1 = {
+		holder = aulikara_02
+		liege = e_bengal
+	}
+	423.1.1 = {
+		holder = aulikara_03
+	}
+	446.1.1 = {
+		holder = aulikara_04
+	}
+	458.1.1 = {
+		holder = aulikara_05
+	}
+	467.1.1 = {
+		holder = aulikara_06
+		liege = 0
+	}
+	478.1.1 = {
+		holder = aulikara_07
+	}
+	489.1.1 = {
+		holder = aulikara_08
+	}
+	518.1.1 = {
+		holder = aulikara_09
+	}
+	734.1.1 = {
+		liege = d_medapata
+		holder = 188470 # Kalbhoj Guhilot
+	}
+	753.1.1 = {
+		holder = 188471 # Khuman
+	}
+}
+
+
+c_chitrakut = { #Chittor
+	358.1.1 = {
+		holder = aulikara_01
+		government = gana_sangha_government
+		succession_laws = { gana_sangha_elective_succession_law }
+		liege = k_gujarat
+	}
+	388.1.1 = {
+		holder = aulikara_02
+		liege = e_bengal
+	}
+	423.1.1 = {
+		holder = aulikara_03
+	}
+	446.1.1 = {
+		holder = aulikara_04
+	}
+	458.1.1 = {
+		holder = aulikara_05
+	}
+	467.1.1 = {
+		holder = aulikara_06
+		liege = 0
+	}
+	478.1.1 = {
+		holder = aulikara_07
+	}
+	489.1.1 = {
+		holder = aulikara_08
+	}
+	518.1.1 = {
+		holder = aulikara_09
+	}
+
+	734.1.1 = {
+		liege = d_medapata
+		holder = 188470 # Kalbhoj Guhilot
+	}
+	753.1.1 = {
+		holder = 188471 # Khuman
+	}
+}
+
+
+c_kota = {
+	# malavas
+	358.1.1 = {
+		holder = aulikara_01
+		government = gana_sangha_government
+		succession_laws = { gana_sangha_elective_succession_law }
+	}
+	388.1.1 = {
+		holder = aulikara_02
+	}
+	400.1.1 = {
+		liege = e_bengal
+	}
+	423.1.1 = {
+		holder = aulikara_03
+	}
+	446.1.1 = {
+		holder = aulikara_04
+	}
+	458.1.1 = {
+		holder = aulikara_05
+	}
+	467.1.1 = {
+		holder = aulikara_06
+		liege = 0
+	}
+	478.1.1 = {
+		holder = aulikara_07
+	}
+	489.1.1 = {
+		holder = aulikara_08
+	}
+	518.1.1 = {
+		holder = aulikara_09
+	}
+	760.1.1 = {
+		holder = 191685 #Simhavarman Chaulukya (Mattamayura branch)
+		liege = k_malwa
+	}
+}
+
+
+d_ajmer = {
+	
+}
+
+
+c_ajayameru = {
+	#Arjunayanas
+	361.1.1 = {
+		holder = yaudheya_01
+		government = gana_sangha_government
+		succession_laws = { gana_sangha_elective_succession_law }
+	}
+	400.1.1 = {
+		holder = yaudheya_02
+	}
+	433.1.1 = {
+		holder = yaudheya_03
+		government = gupta_government
+	}
+	456.1.1 = {
+		holder = yaudheya_04
+	}
+	532.1.1 = {
+		holder = arjunayana_misc_001
+		liege = d_maru
+		government = gana_sangha_government
+		succession_laws = { gana_sangha_elective_succession_law }
+	}
+	551.1.1 = {
+		liege = d_jangladesh
+		holder = 188100 # Vasudeva
+	}
+	595.1.1 = {
+		holder = 188101 # Samanta
+	}
+	668.1.1 = {
+		holder = 188102 # Naradeva
+	}
+	693.1.1 = {
+		holder = 188103 # Jayaraja
+	}
+	718.1.1 = {
+		holder = 188104 # Vigrharaja I
+	}
+	743.1.1 = {
+		holder = 188105 # Chandraraja I
+	}
+	768.1.1 = {
+		holder = 188106 # Gopendraraja
+	}
+}
+
+
+c_ranthambore = {
+	#Arjunayanas
+	361.1.1 = {
+		holder = yaudheya_01
+		government = gana_sangha_government
+		succession_laws = { gana_sangha_elective_succession_law }
+	}
+	400.1.1 = {
+		holder = yaudheya_02
+	}
+	433.1.1 = {
+		holder = yaudheya_03
+		government = gupta_government
+	}
+	456.1.1 = {
+		holder = yaudheya_04
+	}
+	743.1.1 = {
+		holder = 188105 # Chandraraja I
+		liege = d_jangladesh
+	}
+	768.1.1 = {
+		holder = 188106 # Gopendraraja
+	}
+}
+
+
+c_vairata = {
+	#Arjunayanas
+	361.1.1 = {
+		holder = yaudheya_01
+		government = gana_sangha_government
+		succession_laws = { gana_sangha_elective_succession_law }
+	}
+	400.1.1 = {
+		holder = yaudheya_02
+	}
+	433.1.1 = {
+		holder = yaudheya_03
+		government = gupta_government
+	}
+	456.1.1 = {
+		holder = yaudheya_04
+	}	
+	532.1.1 = {
+		holder = arjunayana_misc_001
+		liege = d_maru
+		government = gana_sangha_government
+		succession_laws = { gana_sangha_elective_succession_law }
+	}
+	740.1.1 = {
+		holder = 191866 #Auka Guhila
+		liege = 0
+	}
+	765.1.1 = {
+		holder = 191768 #Krishna
+		liege = k_malwa
+	}
+
+}
+
+
+c_gwalior = {
+	# Nagas
+	178.1.1 = {
+		holder = 901050
+	}
+	210.1.1 = {
+		holder = 901051
+	}
+	230.1.1 = {
+		holder = 901052
+	}
+	252.1.1 = {
+		holder = 901053
+	}
+	257.1.1 = {
+		holder = 901054
+	}
+	269.1.1 = {
+		holder = 901055
+	}
+	287.1.1 = {
+		holder = 901056
+	}
+	288.1.1 = {
+		holder = 901057
+	}
+	289.1.1 = {
+		holder = 901058
+	}
+	300.1.1 = {
+		holder = 901059
+	}
+	310.1.1 = {
+		holder = 901060
+	}
+	339.1.1 = {
+		holder = 901061
+	}
+	476.1.1 = {
+		holder = bharatiya_02
+		liege = e_bengal
+	}
+	532.1.1 = {
+		holder = bharatiya_01
+		liege = d_mathura
+	}
+	725.1.1 = {
+		holder = 191000 #Yasovarman
+		liege = d_kanyakubja
+	}
+	752.1.1 = {
+		holder = 191002 #Ama
+	}
+	762.1.1 = {
+		holder = 191003 #Dundaka
+	}
+}
+
+
+b_gwalior = {
+	
+}
+
+
+c_sakarai = {
+	361.1.1 = {
+		holder = yaudheya_01
+		government = tribal_government
+	}
+	400.1.1 = {
+		holder = yaudheya_02
+	}
+	433.1.1 = {
+		holder = yaudheya_03
+		government = gupta_government
+	}
+	456.1.1 = {
+		holder = yaudheya_04
+	}
+	532.1.1 = {
+		holder = arjunayana_misc_002
+		liege = d_maru
+		government = gana_sangha_government
+		succession_laws = { gana_sangha_elective_succession_law }
+	}
+	740.1.1 = {
+		holder = 191866 #Auka Guhila
+		liege = 0
+	}
+	765.1.1 = {
+		holder = 191768 #Krishna
+		liege = k_malwa
+	}
+
+}
+

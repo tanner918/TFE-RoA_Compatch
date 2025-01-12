@@ -1,0 +1,467 @@
+﻿k_kashmir = {
+	361.1.1 = { change_development_level = 8 }
+	476.1.1 = { change_development_level = 9 }
+	532.1.1 = { change_development_level = 10 }
+	632.1.1 = { change_development_level = 11 }
+	768.1.1 = { change_development_level = 12 }
+	600.1.1 = {
+		holder = 188373 # Durlabhavardhana Karkota
+	}
+	636.1.1 = {
+		holder = 188374 # Durlabhaka
+	}
+	686.1.1 = {
+		holder = 188375 # Chandrapida
+	}
+	695.1.1 = {
+		holder = 188376 # Tarapida
+	}
+	699.1.1 = {
+		holder = 188377 # Lalitaditya Muktapida
+	}
+	736.1.1 = {
+		holder = 188378 # Kuvalayapida
+	}
+	737.1.1 = {
+		holder = 188379 # Vajraditya
+	}
+	744.1.1 = {
+		holder = 188380 # Prithvyapida
+	}
+	# Samgramapida, son of Vajraditya ruled for 7 days or 7 years depending on source
+	748.1.1 = {
+		holder = 188381 # Jayapida
+	}
+}
+d_kasmira = {
+	317.1.1 = {
+		holder = gonanda_01
+		government = gupta_government
+	}
+	347.1.1 = {
+		holder = gonanda_02
+	}
+	381.1.1 = {
+		holder = gonanda_04
+	}
+	395.1.1 = {
+		holder = xionite_012
+		government = nomadic_government 
+		liege = "k_kidaria"
+	}
+	440.1.1 = {
+		holder = alchonid_006
+		liege = "k_alchon_hun"
+	}
+	497.3.6 = {
+		holder = alchonid_008
+	}
+	497.4.11 = {
+		holder = alchonid_010
+	}
+	515.4.6 = {
+		holder = alchonid_011
+	}
+	542.3.16 = {
+		holder = alchonid_012
+	}
+	548.9.10 = {
+		holder = alchonid_013
+	}
+	570.1.4 = {
+		holder = alchonid_014
+	}
+	590.6.4 = {
+		holder = alchonid_015
+	}
+	597.5.2 = {
+		holder = alchonid_016
+	}
+	633.1.24 = {
+		holder = alchonid_017
+	}
+	670.1.1 = {
+		holder = 0
+	}
+}
+c_kasmira = {	
+	317.1.1 = {
+		holder = gonanda_01
+		government = gupta_government
+	}
+	347.1.1 = {
+		holder = gonanda_02
+	}
+	381.1.1 = {
+		holder = gonanda_04
+	}
+	395.1.1 = {
+		holder = xionite_012
+		government = nomadic_government 
+		liege = "k_kidaria"
+	}
+	440.1.1 = {
+		holder = alchonid_006
+		liege = "k_alchon_hun"
+	}
+	532.1.1 = {
+		holder = alchonid_013
+	}
+	600.1.1 = {
+		liege = k_kashmir
+		holder = 188373 # Durlabhavardhana Karkota
+	}
+	636.1.1 = {
+		holder = 188374 # Durlabhaka
+	}
+	686.1.1 = {
+		holder = 188375 # Chandrapida
+	}
+	695.1.1 = {
+		holder = 188376 # Tarapida
+	}
+	699.1.1 = {
+		holder = 188377 # Lalitaditya Muktapida
+	}
+	736.1.1 = {
+		holder = 188378 # Kuvalayapida
+	}
+	737.1.1 = {
+		holder = 188379 # Vajraditya
+	}
+	744.1.1 = {
+		holder = 188380 # Prithvyapida
+	}
+	# Samgramapida, son of Vajraditya ruled for 7 days or 7 years depending on source
+	748.1.1 = {
+		holder = 188381 # Jayapida
+	}
+}
+
+
+c_allai = {
+	317.1.1 = {
+		holder = gonanda_01
+		government = gupta_government
+	}
+	347.1.1 = {
+		holder = gonanda_02
+	}
+	381.1.1 = {
+		holder = gonanda_04
+	}
+	395.1.1 = {
+		liege = d_kasmira
+	}
+	441.1.1 = {
+		holder = gonanda_05
+	}
+	532.1.1 = {
+		holder = alchonid_012
+	}
+	600.1.1 = {
+		holder = 188373 # Durlabhavardhana Karkota
+	}
+	636.1.1 = {
+		holder = 188374 # Durlabhaka
+	}
+	686.1.1 = {
+		holder = 188375 # Chandrapida
+	}
+	695.1.1 = {
+		holder = 188376 # Tarapida
+	}
+	699.1.1 = {
+		holder = 188377 # Lalitaditya Muktapida
+	}
+	736.1.1 = {
+		holder = 188378 # Kuvalayapida
+	}
+	737.1.1 = {
+		holder = 188379 # Vajraditya
+	}
+	744.1.1 = {
+		holder = 188380 # Prithvyapida
+	}
+	# Samgramapida, son of Vajraditya ruled for 7 days or 7 years depending on source
+	748.1.1 = {
+		holder = 188381 # Jayapida
+	}
+}
+
+
+c_astore = {
+	317.1.1 = {
+		holder = gonanda_01
+		government = gupta_government
+	}
+	347.1.1 = {
+		holder = gonanda_02
+	}
+	381.1.1 = {
+		holder = gonanda_04
+	}
+	395.1.1 = {
+		holder = 1250015
+		liege = "d_kasmira"
+		government = nomadic_government 
+	}
+	532.1.1 = {
+		holder = alchonid_014
+	}
+	#Palolashahi Dynasty of Palolo Kingdom (c.400-727)
+	#Conquered by Tibetan Empire
+	727.1.1={
+		liege = "d_baltiyul"
+	}
+	#Astore
+	740.1.1={
+		holder = 304691
+	}
+}
+
+d_pamir = {
+	361.1.1 = {	change_development_level = 2 }
+	476.1.1 = {	change_development_level = 3 }
+	532.1.1 = {	change_development_level = 4 }
+	632.1.1 = {	change_development_level = 5 }
+	768.1.1 = {	change_development_level = 6 }
+	361.1.1 = {
+		holder = xionite_08
+		government = nomadic_government 
+		liege = "k_kidaria"
+	}
+	380.1.1 = {
+		holder = xionite_002
+		government = nomadic_government 
+		liege = "k_kidaria"
+	}
+	450.1.1 = {
+		holder = alchonid_005
+		liege = "k_alchon_hun"
+	}
+	493.6.2 = {
+		holder = alchonid_008
+	}
+	497.4.11 = {
+		holder = alchonid_010
+	}
+	515.4.6 = {
+		holder = alchonid_011
+	}
+	542.3.16 = {
+		holder = alchonid_012
+	}
+	548.9.10 = {
+		holder = alchonid_013
+	}
+	570.1.4 = {
+		holder = alchonid_014
+	}
+	590.6.4 = {
+		holder = alchonid_015
+	}
+	597.5.2 = {
+		holder = alchonid_016
+	}
+	633.1.24 = {
+		holder = alchonid_017
+	}
+	670.1.1 = {
+		holder = 0
+	}
+}
+
+c_gilgit = {
+	108.8.8 = {
+		holder = tashkurgan_001
+		government = feudal_government
+	}
+	125.8.8 = {
+		holder = tashkurgan_002
+	}
+	188.8.8 = {
+		holder = tashkurgan_004
+	}
+	208.8.8 = {
+		holder = tashkurgan_005
+	}
+	224.2.4 = {
+		holder = tashkurgan_006
+	}
+	240.12.3 = {
+		holder = tashkurgan_008
+	}
+	285.8.25 = {
+		holder = tashkurgan_009
+	}
+	303.3.3 = {
+		holder = tashkurgan_010
+	}
+	339.3.6 = {
+		holder = tashkurgan_011
+	}
+	357.1.9 = {
+		holder = tashkurgan_012
+	}
+	361.1.1 = {
+		liege = "d_badakhshan"
+	}
+	395.1.1 = {
+		liege = "d_pamir"
+	}
+	409.7.14 = {
+		holder = tashkurgan_013
+	}
+	418.3.19 = {
+		holder = tashkurgan_014
+	}
+	472.3.17 = {
+		holder = tashkurgan_015
+	}
+	516.5.30 = {
+		holder = tashkurgan_016
+	}
+	531.2.9 = {
+		holder = tashkurgan_017
+	}
+	568.9.27 = {
+		holder = tashkurgan_018
+	}
+	602.9.24 = {
+		holder = tashkurgan_019
+	}
+	619.10.14 = {
+		holder = tashkurgan_020
+	}
+	670.1.1 = {
+		liege = k_kashmir
+	}
+	686.1.1 = {
+		holder = 188375 # Chandrapida
+	}
+	695.1.1 = {
+		holder = 188376 # Tarapida
+	}
+	699.1.1 = {
+		holder = 188377 # Lalitaditya Muktapida
+	}
+	736.1.1 = {
+		holder = 188378 # Kuvalayapida
+	}
+	737.1.1 = {
+		holder = 188379 # Vajraditya
+	}
+	744.1.1 = {
+		holder = 188380 # Prithvyapida
+	}
+	# Samgramapida, son of Vajraditya ruled for 7 days or 7 years depending on source
+	748.1.1 = {
+		holder = 188381 # Jayapida
+	}
+}
+
+
+c_yasin = {
+	361.1.1 = {
+		holder = xionite_08
+		government = nomadic_government 
+		liege = "k_kidaria"
+	}
+	380.1.1 = {
+		holder = xionite_002
+		government = nomadic_government 
+		liege = "k_kidaria"
+	}
+	476.1.1 = {
+		holder = xionite_misc_001
+		liege = "d_pamir"
+	}
+	530.1.1 = {
+		holder = xionite_misc_003
+	}
+
+	600.1.1 = {
+		liege = k_kashmir
+		holder = 188373 # Durlabhavardhana Karkota
+	}
+	636.1.1 = {
+		holder = 188374 # Durlabhaka
+	}
+	686.1.1 = {
+		holder = 188375 # Chandrapida
+	}
+	695.1.1 = {
+		holder = 188376 # Tarapida
+	}
+	699.1.1 = {
+		holder = 188377 # Lalitaditya Muktapida
+	}
+	736.1.1 = {
+		holder = 188378 # Kuvalayapida
+	}
+	737.1.1 = {
+		holder = 188379 # Vajraditya
+	}
+	744.1.1 = {
+		holder = 188380 # Prithvyapida
+	}
+	# Samgramapida, son of Vajraditya ruled for 7 days or 7 years depending on source
+	748.1.1 = {
+		holder = 188381 # Jayapida
+	}
+}
+
+
+c_golaghmuli = {
+	361.1.1 = {
+		holder = xionite_08
+		government = nomadic_government 
+		liege = "k_kidaria"
+	}
+	380.1.1 = {
+		holder = xionite_002
+		government = nomadic_government 
+		liege = "k_kidaria"
+	}
+	441.1.1 = {
+		holder = gonanda_05
+	}
+	476.1.1 = {
+		holder = xionite_misc_002
+		liege = "d_pamir"
+	}
+	530.1.1 = {
+		holder = xionite_misc_003
+	}
+	600.1.1 = {
+		liege = k_kashmir
+		holder = 188373 # Durlabhavardhana Karkota
+	}
+	636.1.1 = {
+		holder = 188374 # Durlabhaka
+	}
+	686.1.1 = {
+		holder = 188375 # Chandrapida
+	}
+	695.1.1 = {
+		holder = 188376 # Tarapida
+	}
+	699.1.1 = {
+		holder = 188377 # Lalitaditya Muktapida
+	}
+	736.1.1 = {
+		holder = 188378 # Kuvalayapida
+	}
+	737.1.1 = {
+		holder = 188379 # Vajraditya
+	}
+	744.1.1 = {
+		holder = 188380 # Prithvyapida
+	}
+	# Samgramapida, son of Vajraditya ruled for 7 days or 7 years depending on source
+	748.1.1 = {
+		holder = 188381 # Jayapida
+	}
+}
+

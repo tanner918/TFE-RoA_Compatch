@@ -1,0 +1,40 @@
+
+
+
+
+#################
+#	Meshes	#
+#################
+
+##### Unique -----------------------------------------
+
+
+pdxmesh = {
+	name = "aurelian_helmet_artifact_mesh"
+	file = "aurelian_helmet_artifact.mesh"
+
+	meshsettings = {
+		name = "aurelian_helmet_artifactShape"
+		index = 0
+		texture_diffuse = "aurelian_helmet_diffuse.dds"
+		texture_normal = "aurelian_helmet_normal.dds"
+		texture_specular = "aurelian_helmet_properties.dds"
+		shader = "court"
+		shader_file = "gfx/FX/court_scene.shader"
+	}
+}
+
+
+
+
+#################
+#	Entities	#
+#################
+
+
+
+##### Unique -----------------------------------------
+entity = {
+	name = "aurelian_helmet_artifact_entity"
+	pdxmesh = "aurelian_helmet_artifact_mesh"
+}

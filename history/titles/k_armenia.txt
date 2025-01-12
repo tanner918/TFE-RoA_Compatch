@@ -1,0 +1,1242 @@
+﻿k_armenia = { ##### REPLACE ALL INSTANCES OF k_nikaea for k_nikaea
+	361.1.1 = {	change_development_level = 3 }
+	476.1.1 = {	change_development_level = 5 }
+
+	#Arsacid rulers of Armenia
+	35.1.1 = {
+		holder = parsman_03
+		effect = {
+			if = {
+				limit = {
+					exists = holder
+					has_dlc_feature = royal_court
+				}
+				holder = {
+					set_court_language = language_iranian # Iranian was the official court language of the Seljuks
+					if = {
+						limit = { NOT = { knows_court_language_of = this } }
+						learn_court_language_of = this
+					}
+				}
+			}
+		}
+	}
+	51.1.1 = {
+		holder = parsman_04 #Zenobia
+	}
+	52.1.1 = {
+		holder = arsacid_04 # Tiridates I
+		de_jure_liege = e_armenia
+	}
+	88.1.1 = {
+		holder = arsacid_36 # Sanatruk
+	}
+	110.1.1 = {
+		holder = arsacid_11 # Ashkadar
+	}
+	113.1.1 = {
+		holder = arsacid_13 # Parthamasir
+	}
+	117.1.1 = {
+		holder = arsacid_37 # Walagash I 
+	}
+	161.1.1 = {
+		holder = arsacid_17 # Pakur
+	}
+	186.1.1 = {
+		holder = arsacid_16 # Wagalash II
+	}
+	198.1.1 = {
+		holder = arsacid_20 #Khosrov I
+	}
+	217.1.1 = {
+		holder = arsacid_38 #Tiridat II
+	}
+	252.1.1 = {
+		holder = arsacid_39 # Khosrov II
+	}
+	297.1.1 = {
+		holder = arsacid_41 # Tiridat III
+	}
+	330.1.1 = {
+		holder = arsacid_42 # Khosrov III
+	}
+	339.1.1 = {
+		holder = arsacid_44 # Tiran
+	}
+	350.1.1 = {
+		holder = arsacid_46 # Arshak  II
+		de_jure_liege = e_persia
+	}
+	370.1.1 = {
+		holder = arsacid_51 # Pap
+	}
+	374.1.1 = {
+		holder = arsacid_54 # Varazdat
+	}
+	378.1.1 = {
+		holder = arsacid_55 # Arshak III
+	}
+	384.1.1 = {
+		holder = 159847
+	}
+	385.1.1 = {
+		holder = arsacid_57 # Khosrov IV
+	}
+	389.1.1 = {
+		holder = arsacid_58 # Bahram Shapur
+	}
+	422.1.1 = {
+		holder = arsacid_59 # Arshak IV
+	}
+	436.1.1 = {
+		holder = 159850
+	}
+	451.1.1 = {
+		holder = 159853
+	}
+
+	465.1.1 = {
+		holder = persian_armenia_01
+		liege = e_persia
+		government = feudal_government
+	}
+	518.1.1 = {
+		holder = gnuni_01
+		liege = e_persia
+	}
+	505.1.1 = {
+		holder = 159854
+	}
+
+	628.1.1 = {
+		holder = 159918
+	}
+	632.1.1 = {
+		liege = e_byzantium
+	}
+	654.1.1 = {
+		liege = e_arabia
+		holder = 145996
+	}
+	655.1.1 = {
+		holder = 159871
+	}
+	661.1.1 = {
+		holder = 70452
+	}
+	684.1.1 = {
+		holder = 70448
+	}
+	690.1.1 = {
+		holder = 159571
+	}
+	693.8.29 = {
+		holder = 70447
+	}
+	726.1.1 = {
+		holder = 41500
+	}
+	745.1.1 = {
+		holder = 70451
+	}
+	746.1.1 = {
+		holder = 41500
+	}
+	749.1.1 = {
+		holder = 70451
+	}
+	750.1.1 = {
+		holder = 70450
+	}
+	754.1.1 = {
+		holder = 145998
+	}
+	761.1.1 = {
+		holder = 41501
+	}
+}
+
+d_western_armenia = {
+	428.1.1 = {
+		de_jure_liege = k_armenia
+		liege = k_nikaea
+	}
+	450.1.1 = {
+		holder = byz_armenia_02
+		liege = k_nikaea
+	}
+	532.1.1 = {
+		holder = byz_armenia_05
+		liege = k_armenia
+	}
+	628.1.1 = {
+		holder = 159918
+	}
+}
+c_tao = {
+	301.1.1 = {
+		holder = 159920 # Smbat I
+		liege = k_armenia
+	}
+	320.1.1 = {
+		holder = 159921 # Bagrat I
+	}
+	343.1.1 = {
+		holder = 159922 # Smbat II
+	}
+	370.1.1 = {
+		holder = 159923 # Sahak
+	}
+	390.1.1 = {
+		holder = 159924 # Smbat
+	}
+	450.1.1 = {
+		holder = byz_armenia_02
+		liege = k_nikaea
+	}
+	465.1.1 = {
+		holder = persian_armenia_01
+		liege = k_armenia
+	}
+	532.1.1 = {
+		holder = byz_armenia_05
+		liege = k_nikaea
+	}
+	628.1.1 = {
+		holder = 159918
+	}
+	646.1.1 = {
+		liege = d_greater_armenia
+	}
+	646.1.1 = {
+		holder = 159918
+	}
+	673.1.1 = {
+		holder = 70448
+	}
+	690.1.1 = {
+		holder = 70447
+	}
+	726.1.1 = {
+		holder = 41500
+	}
+	749.1.1 = {
+		holder = 41538
+	}
+	765.1.1 = {
+		holder = 41539
+		de_jure_liege = d_tao-klarjeti
+	}
+}
+
+d_mesopotamia = {
+	361.1.1 = {	change_development_level = 4 }
+	476.1.1 = {	change_development_level = 5 }
+	361.1.1 = {
+		holder = byz_armenia_01
+		liege = k_nikaea
+		de_jure_liege = k_nikaea
+	}
+	395.1.1 = {
+		holder = byz_armenia_001
+	}
+	450.1.1 = {
+		holder = byz_armenia_03
+		liege = k_nikaea
+	}
+	530.1.1 = {
+		holder = thracio_01
+		liege = k_nikaea
+	}
+	632.1.1 = {
+		holder = byz_armenia_06
+		liege = k_armenia
+	}
+}
+d_melitene = {
+	361.1.1 = {
+		holder = pontus_13
+		liege = k_nikaea
+		de_jure_liege = k_nikaea
+	}
+	395.1.1 = {
+		holder = pontus_14
+	}
+	476.1.1 = {
+		holder = pontus_15
+	}
+	532.1.1 = {
+		holder = pontus_27
+		liege = k_nikaea
+	}
+}
+c_melitene = {
+		
+	361.1.1 = {
+		holder = pontus_13
+		liege = k_nikaea
+		de_jure_liege = d_melitene
+	}
+	395.1.1 = {
+		holder = pontus_14
+	}
+	476.1.1 = {
+		holder = pontus_15
+	}
+	532.1.1 = {
+		holder = pontus_27
+		liege = k_nikaea
+	}
+	632.1.1 = {
+		holder = byz_armenia_06
+		liege = k_armenia
+	}
+	714.1.1 = {
+		liege = "d_greater_armenia"
+	}
+	714.1.1 = {
+		holder = 70451
+	}
+	750.1.1 = {
+		holder = 159877
+	}
+}
+
+d_sophene = {
+	361.1.1 = {
+		holder = pontus_10
+		liege = k_nikaea
+		de_jure_liege = k_nikaea
+	}
+	395.1.1 = {
+		holder = pontus_11
+		liege = k_nikaea
+	}
+	476.1.1 = {
+		holder = pontus_12
+	}
+}
+c_arsamosata = {
+		
+	361.1.1 = {
+		holder = pontus_13
+		liege = k_nikaea
+		de_jure_liege = d_melitene
+	}
+	395.1.1 = {
+		holder = pontus_14
+	}
+	476.1.1 = {
+		holder = pontus_15
+	}
+	532.1.1 = {
+		holder = pontus_27
+		liege = k_nikaea
+	}
+	632.1.1 = {
+		holder = byz_armenia_06
+		liege = k_armenia
+	}
+	714.1.1 = {
+		liege = "d_greater_armenia"
+	}
+	714.1.1 = {
+		holder = 70451
+	}
+	750.1.1 = {
+		holder = 159877
+	}
+}
+
+
+c_theodosiopolis = {
+	361.1.1 = {	change_development_level = 5 }
+	301.1.1 = {
+		holder = 159920 # Smbat I
+		liege = k_armenia
+	}
+	320.1.1 = {
+		holder = 159921 # Bagrat I
+	}
+	343.1.1 = {
+		holder = 159922 # Smbat II
+	}
+	361.1.1 = {
+		holder = byz_armenia_01
+	}
+	370.1.1 = {
+		holder = 159923 # Sahak
+	}
+	387.1.1 = {
+		holder = byz_armenia_001 # Chavash
+	}
+	450.1.1 = {
+		holder = byz_armenia_02
+		liege = k_nikaea
+	}
+	530.1.1 = {
+		holder = thracio_01
+		liege = k_nikaea
+	}
+	628.1.1 = {
+		holder = 159918
+	}
+	714.1.1 = {
+		holder = 159875
+	}
+	744.1.1 = {
+		holder = 159876
+		liege = k_armenia
+	}
+}
+
+
+c_mesopotamia = {
+		
+	361.1.1 = {
+		holder = byz_armenia_01
+		liege = "k_nikaea"
+	}
+	395.1.1 = {
+		holder = byz_armenia_001
+	}
+	450.1.1 = {
+		holder = byz_armenia_03
+		liege = k_nikaea
+	}
+	530.1.1 = {
+		holder = thracio_01
+		liege = k_nikaea
+	}
+	632.1.1 = {
+		holder = byz_armenia_06
+		liege = k_armenia
+	}
+	714.1.1 = {
+		liege = "d_greater_armenia"
+	}
+	714.1.1 = {
+		holder = 70451
+	}
+	750.1.1 = {
+		holder = 159877
+	}
+}
+
+
+d_vaspurakan = {
+	300.1.1 = {
+		holder = 159885
+		liege = k_armenia
+	}
+	350.1.1 = {
+		holder = 159886
+	}
+	357.1.1 = {
+		holder = 159887
+	}
+	381.1.1 = {
+		holder = 159888
+	}
+	432.1.1 = {
+		holder = 159889
+	}
+	441.1.1 = {
+		holder = 159890
+	}
+	451.1.1 = {
+		holder = 159891
+	}
+	475.1.1 = {
+		holder = 159892
+	}
+	484.1.1 = {
+		holder = 159893
+	}
+	532.1.1 = {
+		holder = 159894
+	}
+	532.1.1 = {
+		liege = k_armenia
+	}
+	567.1.1 = {
+		holder = 159895
+	}
+	594.1.1 = {
+		holder = 159897
+	}
+	607.1.1 = {
+		holder = 159898
+	}
+	647.1.1 = {
+		holder = 159899
+	}
+	654.1.1 = {
+		liege = k_armenia
+	}
+	693.1.1 = {
+		holder = 159900
+	}
+	705.1.1 = {
+		holder = 159902
+	}
+	708.1.1 = {
+		holder = 159903
+	}
+	748.1.1 = {
+		holder = 159904
+	}
+	762.1.1 = {
+		holder = 159906
+	}
+}
+
+
+c_turuberan = {
+	361.1.1 = {	change_development_level = 4 }
+	476.1.1 = {	change_development_level = 6 }
+	#Mamikonian
+	300.1.1 = {
+		holder = armenian_000011
+		liege = k_armenia
+		government = theocracy_government
+	}
+	325.1.1 = {
+		holder = armenian_000013
+	}
+	333.1.1 = {
+		holder = armenian_000014
+	}
+	341.1.1 = {
+		holder = armenian_000015
+	}
+	347.1.1 = {
+		holder = gregorid_02
+	}
+	353.1.1 = {
+		holder = gregorid_01
+	}
+	358.1.1 = {
+		holder = gregorid_04
+		government = theocracy_government
+	}
+	373.1.1 = {
+		holder = gregorid_05
+	}
+	428.1.1 = {
+		holder = gregorid_06
+	}
+	436.1.1 = {
+		holder = 159850
+		
+	}
+	451.1.1 = {
+		holder = 159858
+		liege = k_armenia # d_western_armenia
+		government = feudal_government
+	}
+	494.1.1 = {
+		holder = 159859
+	}
+	532.1.1 = {
+		liege = d_western_armenia
+	}
+	
+	553.1.1 = {
+		holder = 159865
+	}
+	593.1.1 = {
+		holder = 70455
+	}
+	607.1.1 = {
+		holder = 70454
+	}
+	660.1.1 = {
+		holder = 159871
+	}
+	661.1.1 = {
+		holder = 159873
+	}
+	709.1.1 = {
+		holder = 159874
+	}
+	714.1.1 = {
+		holder = 159875
+	}
+	744.1.1 = {
+		holder = 159876
+		liege = k_armenia
+	}
+}
+
+
+c_apahunik = {
+	#Mamikonian
+	300.1.1 = {
+		holder = 159839
+		liege = k_armenia
+	}
+	338.1.1 = {
+		holder = 159843
+	}
+	370.1.1 = {
+		holder = 159844
+	}
+	374.1.1 = {
+		holder = 159847
+	}
+	385.1.1 = {
+		holder = 159849
+	}
+	436.1.1 = {
+		holder = 159850
+	}
+	451.1.1 = {
+		holder = 159853
+	}
+	
+	505.1.1 = {
+		holder = 159854
+	}
+	508.1.1 = {
+		holder = 159864
+	}
+	532.1.1 = {
+		liege = k_armenia
+	}
+	553.1.1 = {
+		holder = 159865
+	}
+	593.1.1 = {
+		holder = 70455
+	}
+	607.1.1 = {
+		holder = 70454
+	}
+	660.1.1 = {
+		holder = 159871
+	}
+	661.1.1 = {
+		holder = 159873
+	}
+	709.1.1 = {
+		holder = 159874
+	}
+	714.1.1 = {
+		holder = 159875
+	}
+	744.1.1 = {
+		holder = 159876
+		liege = k_armenia
+	}
+}
+
+
+c_vaspurakan = {
+	300.1.1 = {
+		holder = 159885
+		liege = k_armenia
+	}
+	350.1.1 = {
+		holder = 159886
+	}
+	357.1.1 = {
+		holder = 159887
+	}
+	381.1.1 = {
+		holder = 159888
+	}
+	432.1.1 = {
+		holder = 159889
+	}
+	441.1.1 = {
+		holder = 159890
+	}
+	451.1.1 = {
+		holder = 159891
+	}
+	475.1.1 = {
+		holder = 159892
+	}
+	484.1.1 = {
+		holder = 159893
+	}
+	532.1.1 = {
+		holder = 159894
+	}
+	567.1.1 = {
+		holder = 159895
+	}
+	594.1.1 = {
+		holder = 159897
+	}
+	607.1.1 = {
+		holder = 159898
+	}
+	647.1.1 = {
+		holder = 159899
+	}
+	654.1.1 = {
+		liege = k_armenia
+	}
+	693.1.1 = {
+		holder = 159900
+	}
+	705.1.1 = {
+		holder = 159902
+	}
+	708.1.1 = {
+		holder = 159903
+	}
+	748.1.1 = {
+		holder = 159904
+	}
+	762.1.1 = {
+		holder = 159906
+	}
+}
+
+
+d_greater_armenia = {
+	646.1.1 = {
+		holder = 145996
+	}
+	653.1.1 = {
+		holder = 70454
+	}
+	654.1.1 = {
+		holder = 145996
+		liege = k_armenia
+	}
+	655.1.1 = {
+		holder = 159871
+	}
+	661.1.1 = {
+		holder = 70452
+	}
+	684.1.1 = {
+		holder = 70448
+	}
+	690.1.1 = {
+		holder = 159571
+	}
+	693.8.29 = {
+		holder = 70447
+	}
+	726.1.1 = {
+		holder = 41500
+	}
+	745.1.1 = {
+		holder = 70451
+	}
+	746.1.1 = {
+		holder = 41500
+	}
+	749.1.1 = {
+		holder = 70451
+	}
+	750.1.1 = {
+		holder = 70450
+	}
+	754.1.1 = {
+		holder = 145998
+	}
+	761.1.1 = {
+		holder = 41501
+	}
+}
+
+
+c_hayk = {
+	361.1.1 = {	change_development_level = 5 }
+	476.1.1 = {	change_development_level = 6 }
+	768.1.1 = {	change_development_level = 7 }
+	
+	52.1.1 = {
+		holder = arsacid_04 # Tiridates I
+	}
+	88.1.1 = {
+		holder = arsacid_36 # Sanatruk
+	}
+	110.1.1 = {
+		holder = arsacid_11 # Ashkadar
+	}
+	113.1.1 = {
+		holder = arsacid_13 # Parthamasir
+	}
+	117.1.1 = {
+		holder = arsacid_37 # Walagash I 
+	}
+	161.1.1 = {
+		holder = arsacid_17 # Pakur
+	}
+	186.1.1 = {
+		holder = arsacid_18 # Wagalash II
+	}
+	198.1.1 = {
+		holder = arsacid_20 #Khosrov I
+	}
+	217.1.1 = {
+		holder = arsacid_38 #Tiridat II
+	}
+	252.1.1 = {
+		holder = arsacid_39 # Khosrov II
+	}
+	297.1.1 = {
+		holder = arsacid_41 # Tiridat III
+	}
+	330.1.1 = {
+		holder = arsacid_42 # Khosrov III
+	}
+	339.1.1 = {
+		holder = arsacid_44 # Tiran
+	}
+	350.1.1 = {
+		holder = arsacid_46 # Arshak  II
+	}
+	370.1.1 = {
+		holder = arsacid_51 # Pap
+	}
+	374.1.1 = {
+		holder = arsacid_54 # Varazdat
+	}
+	378.1.1 = {
+		holder = arsacid_55 # Arshak III
+	}
+	384.1.1 = {
+		holder = 159847
+	}
+	385.1.1 = {
+		holder = arsacid_57 # Khosrov IV
+	}
+	389.1.1 = {
+		holder = arsacid_58 # Bahram Shapur
+	}
+	422.1.1 = {
+		holder = arsacid_59 # Arshak IV
+	}
+	465.1.1 = {
+		holder = persian_armenia_01
+		liege = e_persia
+	}
+	518.1.1 = {
+		holder = gnuni_01
+		liege = e_persia
+	}
+	628.1.1 = {
+		holder = 159918
+	}
+	646.1.1 = {
+		liege = d_mesopotamia
+	}
+	714.1.1 = {
+		holder = 159875
+	}
+	744.1.1 = {
+		holder = 159876
+		liege = k_armenia
+	}
+	
+	646.1.1 = {
+		liege = d_vaspurakan
+	}
+	646.1.1 = {
+		holder = 159898
+	}
+	647.1.1 = {
+		holder = 159899
+	}
+	693.1.1 = {
+		holder = 159900
+	}
+	705.1.1 = {
+		holder = 159902
+	}
+	708.1.1 = {
+		holder = 159903
+	}
+	748.1.1 = {
+		holder = 159904
+	}
+	762.1.1 = {
+		holder = 159906
+	}
+}
+
+
+c_bagrewand = {
+	361.1.1 = {	change_development_level = 4 }
+	#Mamikonian
+	300.1.1 = {
+		holder = 159839
+		liege = k_armenia
+	}
+	338.1.1 = {
+		holder = 159843
+	}
+	370.1.1 = {
+		holder = 159844
+	}
+	374.1.1 = {
+		holder = 159847
+	}
+	385.1.1 = {
+		holder = 159849
+	}
+	436.1.1 = {
+		holder = 159850
+	}
+	451.1.1 = {
+		holder = 159853
+	}
+	505.1.1 = {
+		holder = 159854
+	}
+	508.1.1 = {
+		holder = 159864
+	}
+	532.1.1 = {
+		liege = k_armenia
+	}
+	553.1.1 = {
+		holder = 159865
+	}
+	593.1.1 = {
+		holder = 70455
+	}
+	607.1.1 = {
+		holder = 70454
+	}
+	654.1.1 = {
+		liege = k_armenia
+	}
+	693.1.1 = {
+		holder = 159900
+	}
+	705.1.1 = {
+		holder = 159902
+	}
+	708.1.1 = {
+		holder = 159903
+	}
+	748.1.1 = {
+		holder = 159904
+	}
+	762.1.1 = {
+		holder = 159906
+	}
+}
+
+
+c_vanand = {
+	361.1.1 = {	change_development_level = 4 }
+	300.1.1 = {
+		holder = 159558
+		liege = k_armenia
+	}
+	325.8.29 = {
+		holder = 159559
+	}
+	353.8.29 = {
+		holder = 159560
+	}
+	369.8.29 = {
+		holder = 159561
+	}
+	392.8.29 = {
+		holder = 159562
+	}
+	428.8.29 = {
+		holder = 159563
+	}
+	440.8.29 = {
+		holder = 159564
+	}
+	467.1.1 = {
+		liege = k_armenia # d_western_armenia
+	}
+	490.8.29 = {
+		holder = 159565
+	}
+	505.8.29 = {
+		holder = 159566
+	}
+	532.1.1 = {
+		liege = d_western_armenia
+	}
+	555.8.29 = {
+		holder = 159567
+	}
+	560.8.29 = {
+		holder = 159568
+	}
+	590.8.29 = {
+		holder = 159569
+	}
+	620.8.29 = {
+		holder = 159570
+	}
+	646.1.1 = {
+		liege = d_mesopotamia
+	}
+	714.1.1 = {
+		holder = 159875
+	}
+	744.1.1 = {
+		holder = 159876
+		liege = k_armenia
+	}
+}
+
+
+c_khachen = {
+	# Mihranids
+	330.1.1 = {
+		holder = mihranid_01
+		liege = d_georgia
+	}
+	361.1.1 = {
+		holder = mihranid_03
+	}
+	430.1.1 = {
+		holder = mihranid_04
+	}
+	440.1.1 = {
+		holder = mihranid_06
+	}
+	450.1.1 = {
+		holder = mihranid_07
+	}
+	480.1.1 = {
+		holder = mihranid_08
+	}
+	510.1.1 = {
+		holder = mihranid_09
+	}
+	540.1.1 = {
+		holder = mihranid_10
+	}
+	570.1.1 = {
+		holder = mihranid_11
+	}
+
+	# Bagratuni
+	600.1.1 = {
+		holder = 159919 # Varaz
+	}
+	#VIIth century onwards : Arab rule
+	654.1.1 = {
+		liege = e_arabia
+	}
+}
+
+
+c_suenik = {
+	330.1.1 = {
+		holder = 159988
+		liege = k_armenia
+	}
+	340.1.1 = {
+		holder = 159989
+	}
+	344.1.1 = {
+		holder = 159990
+	}
+	387.1.1 = {
+		holder = 159991
+		liege = d_azerbaijan
+		government = eranshar_government
+	}
+	409.1.1 = {
+		holder = 159992
+	}
+	452.1.1 = {
+		holder = 159993
+	}
+	472.1.1 = {
+		holder = 159995
+		liege = k_armenia
+		government = feudal_government
+	}
+	523.1.1 = {
+		holder = 160001
+	}
+	532.1.1 = {
+		liege = k_armenia
+	}
+	570.1.1 = {
+		holder = siwnik_04
+	}
+	584.1.1 = {
+		holder = 160004
+	}
+	593.1.1 = {
+		holder = 160005
+	}
+	598.1.1 = {
+		holder = 160006
+	}
+	621.1.1 = {
+		holder = 160007
+	}
+	636.1.1 = {
+		liege = "d_greater_armenia"
+		holder = 160008
+	}
+	652.1.1 = {
+		holder = 160009
+	}
+	679.1.1 = {
+		holder = 160010
+	}
+	698.1.1 = {
+		holder = 160011
+	}
+	741.1.1 = {
+		holder = 160012
+	}
+	750.1.1 = {
+		holder = 160013
+		liege = k_armenia
+	}
+}
+
+
+c_dvin = {
+	361.1.1 = {	change_development_level = 6 }
+	768.1.1 = {	change_development_level = 7 }
+	
+	52.1.1 = {
+		holder = arsacid_04 # Tiridates I
+	}
+	88.1.1 = {
+		holder = arsacid_36 # Sanatruk
+	}
+	110.1.1 = {
+		holder = arsacid_11 # Ashkadar
+	}
+	113.1.1 = {
+		holder = arsacid_13 # Parthamasir
+	}
+	117.1.1 = {
+		holder = arsacid_37 # Walagash I 
+	}
+	161.1.1 = {
+		holder = arsacid_17 # Pakur
+	}
+	186.1.1 = {
+		holder = arsacid_18 # Wagalash II
+	}
+	198.1.1 = {
+		holder = arsacid_20 #Khosrov I
+	}
+	217.1.1 = {
+		holder = arsacid_38 #Tiridat II
+	}
+	252.1.1 = {
+		holder = arsacid_39 # Khosrov II
+	}
+	297.1.1 = {
+		holder = arsacid_41 # Tiridat III
+	}
+	330.1.1 = {
+		holder = arsacid_42 # Khosrov III
+	}
+	339.1.1 = {
+		holder = arsacid_44 # Tiran
+	}
+	350.1.1 = {
+		holder = arsacid_46 # Arshak  II
+	}
+	370.1.1 = {
+		holder = arsacid_51 # Pap
+	}
+	374.1.1 = {
+		holder = arsacid_54 # Varazdat
+	}
+	378.1.1 = {
+		holder = arsacid_55 # Arshak III
+	}
+	384.1.1 = {
+		holder = 159847
+	}
+	385.1.1 = {
+		holder = arsacid_57 # Khosrov IV
+	}
+	389.1.1 = {
+		holder = arsacid_58 # Bahram Shapur
+	}
+	422.1.1 = {
+		holder = arsacid_59 # Arshak IV
+	}
+	436.1.1 = {
+		holder = 159850
+	}
+	
+	465.1.1 = {
+		holder = persian_armenia_01
+		liege = e_persia
+	}
+	518.1.1 = {
+		holder = gnuni_01
+		liege = e_persia
+	}
+	505.1.1 = {
+		holder = 159854
+	}
+	628.1.1 = {
+		holder = 159918
+	}
+	646.1.1 = {
+		liege = d_mesopotamia
+		holder = 145996
+	}
+	653.1.1 = {
+		holder = 70454
+	}
+	654.1.1 = {
+		holder = 145996
+	}
+	655.1.1 = {
+		holder = 159871
+	}
+	661.1.1 = {
+		holder = 70452
+	}
+	684.1.1 = {
+		holder = 70448
+	}
+	690.1.1 = {
+		holder = 159571
+	}
+	693.8.29 = {
+		holder = 70447
+	}
+	726.1.1 = {
+		holder = 41500
+	}
+	745.1.1 = {
+		holder = 70451
+	}
+	746.1.1 = {
+		holder = 41500
+	}
+	749.1.1 = {
+		holder = 70451
+	}
+	750.1.1 = {
+		holder = 70450
+	}
+	754.1.1 = {
+		holder = 145998
+	}
+	761.1.1 = {
+		holder = 41501
+	}
+	767.1.1 = {
+		liege = d_mesopotamia
+		holder = 146024
+	}
+}
+

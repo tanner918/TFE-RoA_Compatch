@@ -1,0 +1,175 @@
+﻿l_english:
+
+ # TFE_flavour_events
+ TFE_flavour_events.0001.t:0 "The Monastery of Saint Germain l'Auxerrois"
+  TFE_flavour_events.0001.desc:0 "In the year of the Lord 448, the pious and clement Saint Germanus of Auxerre died in Ravenna, pleading for leniency from the Romans towards the barbarians of Armorica. A monastery was founded in his name in [auxerre.GetNameNoTier], an institution which is now very prosperous and which has been educating devotees from all around the world!"
+  TFE_flavour_events.0001.a:0 "Praise Sanctus Germanus!"
+ TFE_flavour_events.0002.t:0 "Of hair and pants"
+  TFE_flavour_events.0002.desc:0 "The city center of [county.GetNameNoTier] has been overrun by people dressing with pants! and boots! Can you believe that? I even saw a man with long hair! Where have the old ROMAN manners gone?? We need to put an end to this!"
+  TFE_flavour_events.0002.a:0 "Ban everything remotely barbaric!"
+  TFE_flavour_events.0002.b:0 "We need to go further... ban long hair and beards!!"
+
+ TFE_flavour_events.0003.t:0 "Restoring the Ma'rib Dam"
+ TFE_flavour_events.0003.desc:0 "The Ma'rib Dam is a great wonder visited by many to witness our ancient might and innovation. However, the dam can also help protect our lands and fields from the floods the commoners have been reporting.\n\nEven temporarily, the dam can greatly improve our realm and living conditions and thus we should consider investing to restore it to its old Sabaean might.\n\n Failing to restoring it properly will be rather embarrassing for our people and realm."
+ TFE_flavour_events.0003.a:0 "Proceed with the restoration"
+ TFE_flavour_events.0003.b:0 "....Nevermind"
+
+ TFE_flavour_events.0004.t:0 "Restoring the Ma'rib Dam"
+ TFE_flavour_events.0004.desc:0 "The Ma'rib Dam is a great wonder visited by many to witness our ancient might and innovation. However, the dam can also help protect our lands and fields from the floods the commoners have been reporting.\n\nAfter meeting with my council, we decided that restoring the dam for the foreseeable future is the best and most efficient path to follow."
+ TFE_flavour_events.0004.a:0 "It's time to rebuild our might!"
+
+ TFE_flavour_events.0005.t:0 "Persecution of Christians in Arabia"
+ TFE_flavour_events.0005.desc:0 "We have just received the news that our Christian brothers in Arabia are being persecuted by their king. We could lead an expedition to avenge this affront and put an end to this pagan kingdom"
+ TFE_flavour_events.0005.a:0 "To arms!"
+ TFE_flavour_events.0005.b:0 "We have to prepare"
+ TFE_flavour_events.0005.c:0 "Let's pretend nothing happened"
+ AKSUM_CHRISTIAN_ARMY:0 "Christian Zealots"
+
+ TFE_flavour_events.0006.t:0 "The Treasure of the Nibelungens"
+ TFE_flavour_events.0006.desc:0 "In our quest for revenge, some ancient legends of a mythical treasure resurfaced. Imagine our surprise when one of our men told us that he had got his hands on the riches of the Nibelungs."
+ TFE_flavour_events.0006.a:0 "Interesting"
+
+ TFE_flavour_events.0007.t:0 "Cenmar's Compensation"
+ TFE_flavour_events.0007.desc:0 "After years of continuous construction, Cenmar approaches me stating that the palace at Khawarnaq is at last complete. But there is something strange about his demeanor, and I paid close attention as we began to converse.\n\n"Your majesty, before I conclude my presence here, I must warn you that there is a brick within the palace that can cause its utter collapse with a single move -- and only I know of its location. And if you require my services once again, I am also capable of constructing an even grander palace, one that moves with the light of the sun wherever it may go."\n\nMy eyes widen and I can't help but feel rage boiling inside of me. His knowledge of the brick is far too dangerous and I cannot even stand the idea of him receiving the patronage of another ruler and constructing a palace more grand than what he had offered me with his services. Cenmar takes notice.\n\n"Your majesty?""
+ TFE_flavour_events.0007.a:0 "Guards, grant Cenmar his #italic well-deserved #!compensation"
+ TFE_flavour_events.0007.b:0 "May [ROOT.Char.GetFaith.HighGodName] provide you with safe passage"
+
+
+ TFE_flavour_events.0009.t:0 "Our Dynasty Elevated!"
+ TFE_flavour_events.0009.desc:0 "After the death of one of our great houses, our great Shah has decided to elevate our dynasty to become one of the great houses of Eran!\nThis position will come with many rewards as well as many dangers as we guide this great empire to prosperity."
+ TFE_flavour_events.0009.a:0 "Our name will echo for a millennia"
+ TFE_flavour_events.0009.a.tt:0 "[recipient.GetDynasty.GetName] is now a [great_house|E]"
+
+ # Scapulimancy
+ TFE_flavour_events.0010.t:0 "Consult the Bones"
+ TFE_flavour_events.0010.desc.beginning:0 "I have called for a shaman to burn bones and interpret them for me, hoping that the shaman's results may hold some inght into my future.\n\nThe shaman has asked me what type of events they should focus on. I decide to ask them about..."
+ TFE_flavour_events.0010.a:0 "...my relationships with those around me"
+ TFE_flavour_events.0010.b:0 "...any battles and wars on the horizon"
+ TFE_flavour_events.0010.c:0 "...the prosperity of my lands and people"
+ TFE_flavour_events.0010.d:0 "...schemes and those lurking in the shadows"
+ TFE_flavour_events.0010.e:0 "...my faith and any personal revelations"
+ TFE_flavour_events.0011.t:0 "Consulting the Bones"
+ TFE_flavour_events.0011.a:0 "What else will the future bring?"
+ TFE_flavour_events.0011.desc.insane_outcome:0 "I could scarcely believe the amazing news the shaman, his face lit with joy, brought me. Truly, I have been blessed!"
+ TFE_flavour_events.0011.desc.great_outcome:0 "Great news! The shaman has told me that the bones have great portents for my future."
+ TFE_flavour_events.0011.desc.good_outcome:0 "The shaman happily informs me that the signs are encouraging, and that my future endeavors appear to be well on track for success."
+ TFE_flavour_events.0011.desc.neutral_outcome:0 "The signs, for once, are ambiguous. The shaman is unable to discern a clear path forward for me."
+ TFE_flavour_events.0011.desc.bad_outcome:0 "The shaman informs me gravely that the signs are grim; my future appears to be most troublesome..."
+ TFE_flavour_events.0011.desc.terrible_outcome:0 "Woe! Just moments ago, the shaman came rushing to me, his face pale and his hands shaking in fear. It appears that my future looks dire indeed..."
+
+ TFE_flavour_events.0016.t:0 "The New Pirate King"
+ TFE_flavour_events.0016.desc:0 "The ancient Illyrians were infamous pirates. Thanks to their expertise in naval warfare, and the cunning of their chieftains like Queen Teuta, other civilizations feared them greatly. Let us emulate these ancient Illyrians!"
+ TFE_flavour_events.0016.a:0 "The Adriatic Sea Will Know Our Wrath!"
+
+ TFE_flavour_events.0017.t:0 "The Brahmanas"
+ TFE_flavour_events.0017.desc:0 "As we adopt a higher varna, It is vital that we are accepted by the Brahmanas to be legitimate members of the nobility. This situation must be approached carefully as relations with the Brahmanas may decide the fate of our house and its status within the higher Varnas of India. After discussing the situation with my councillors, I'm presented with 3 options."
+ TFE_flavour_events.0017.a:0 "A large donation to the local temples should suffice"
+ TFE_flavour_events.0017.b:0 "We can offer the local temples a representative in our councils"
+ TFE_flavour_events.0017.c:0 "I'm the ruler and no Brahmana can doubt my nobility!"
+ shared_power_with_clergy:0 "Shared Power With Clergy"
+ disrespected_clergy:0 "Disrespected Clergy"
+
+
+ steppe.0012.t:0 "Calling for Aid"
+ steppe.0012.desc:0 "Our situation is dire and we have to call our neighboring rulers to help us win our war.\nConvincing them won't be easy even if our relations with [recipient.GetName] are well. To seal the deal and make sure they accept our call, we have to provide some monetary support."
+ steppe.0012.option.a:0 "Some gold should be enough"
+ steppe.0012.option.b:0 "A large sum of gold is needed"
+ steppe.0012.option.c:0 "We should leave no room for refusal"
+ steppe.0012.option.a.tooltip:0 "You will send the call of aid with 50 [gold|E]"
+ steppe.0012.option.b.tooltip:0 "You will send the call of aid with 200 [gold|E]"
+ steppe.0012.option.c.tooltip:0 "You will send the call of aid with 500 [gold|E]"
+ steppe.0012.option.d:0 "Nevermind"
+
+ steppe.0013.t:0 "A Call for Aid"
+ steppe.0013.desc:0 "We have recieved a call from [actor.GetName] to help them against [empire_enemy.GetName]. Our involvment will bring us greater influence in their court as well as gold and prestige."
+ steppe.0013.option.a:0 "We accept their call!"
+ steppe.0013.option.b:0 "We don't need to involve ourselves with their games"
+
+ calling_nomadic_empire_accepted:0 "Our Call Accepted!"
+ calling_nomadic_empire_accepted_desc:0 "[recipient.GetName] has accepted our call for war!"
+
+ calling_nomadic_empire_denied:0 "Our Call Denied!"
+ calling_nomadic_empire_denied_desc:0 "[recipient.GetName] has denied our call for war!"
+ ignored_call_for_help:0 "Ignored call for help"
+
+ ROURAN_INVADERS:0 "Rouran Invaders"
+
+ TFE_flavour_events.0018.t:0 "Gold Mine Opens (World Event)"
+ TFE_flavour_events.0018.desc:0 "Gold has been found during some initial surface mining expeditions. A gold mine can now be constructed after the proper innovations are unlocked."
+ TFE_flavour_events.0018.a:0 "Interesting..."
+
+ TFE_flavour_events.0052.t:0 "Salt Mine Opens (World Event)"
+ TFE_flavour_events.0052.desc:0 "Salt has been found during some initial surface mining expeditions. A salt mine can now be constructed after the proper innovations are unlocked."
+ TFE_flavour_events.0052.a:0 "Interesting..."
+
+ TFE_flavour_events.0054.t:0 "Copper Mine Opens (World Event)"
+ TFE_flavour_events.0054.desc:0 "Copper has been found during some initial surface mining expeditions. A copper mine can now be constructed after the proper innovations are unlocked."
+ TFE_flavour_events.0054.a:0 "Interesting..."
+
+ TFE_flavour_events.0033.t:0 "The Göktürk Rebellion"
+ TFE_flavour_events.0033.desc:0 "For years, we have toiled under the Rouran Khaganate, fighting their wars and bringing prosperity to their clans at the expense of our own. For years, our resentment and anger grew with each and every insult and injustice. Yet, for years, we tolerated these abuses, and merely fumed to ourselves.\n\nRecently, however, Rouran leaders gave me a rather degrading response when I politely requested that we receive more acknowledgement for our efforts to help them. "You are a blacksmith slave. How dare you utter these words?"\n\nI am not some mere slave. I am #bold [ROOT.Char.GetTitledFirstName]#!! I am the descendant of the great [ROOT.Char.GetDynasty.GetName] clan!\n\nMy people and my vassals are enraged, too, and demand that we not only humiliate the Rouran, but overthrow them, and take our place as the preeminent power in the steppes."
+ TFE_flavour_events.0033.a:0 "They will know the wrath of these 'slaves' they scorn!"
+
+ TFE_flavour_events.0034.t:0 "$TFE_flavour_events.0033.t$"
+ TFE_flavour_events.0034.desc:0 "For years, the Göktürk clans have toiled under the Rouran Khaganate, fighting their wars and bringing prosperity to the Rouran at the expense of our own.  For years, Göktürk resentment and anger grew with each and every insult and injustice. Yet, for years, they tolerated these abuses, and merely fumed to themselves.\n\nRecently, however, one of their chiefs, [gokturk_leader.GetName], politely requested more acknowledgement for their efforts to help the Rouran, they received the following, degrading response from the Rouran leaders: "You are a blacksmith slave. How dare you utter these words?"\n\n[gokturk_leader.GetFirstNameNoTooltip], as a descendant of the great [gokturk_leader.GetDynasty.GetName] clan, is enraged, and [gokturk_leader.GetHerHis] people are too. Now, [gokturk_leader.GetSheHe] seeks to not only humiliate the Rouran, but overthrow them and take their place as the preeminent power in the steppes. Could this be the end of the Rouran Khaganate?"
+ TFE_flavour_events.0034.a:0 "A bad omen for the Rourans..."
+
+ TFE_flavour_events.0035.t:0 "The Eternal Peace is Broken!"
+ TFE_flavour_events.0035.desc:0 "The court erupted in dismay after a messanger approached me with an alarming development from the east: [truce_breaker.GetName] has declared our 'perpetual' peace to be null and void. \n\nWhile the peace was fragile at best, it nonetheless warranted shock and outrage among my courtiers and government officials. The threat of another war between the two empires is on the horizon. It is now only a matter of #italic when#! it will come..."
+ TFE_flavour_events.0035.a:0 "This is an outrage!"
+
+ TFE_flavour_events.0036.t:0 "The Eternal Peace is Broken!"
+ TFE_flavour_events.0036.desc:0 "I have just received word that [truce_breaker.GetName] has declared their 'perpetual' peace with [truce_breakee.GetName] to be null and void. War is on the horizon..."
+ TFE_flavour_events.0036.a:0 "Interesting..."
+
+ TFE_flavour_events.0037.t:0 "A Worthy Victory Site? (World Event)"
+ TFE_flavour_events.0037.desc:0 "A successful Islamic conqueror (or convert) can now construct the Minarets of Jam"
+ TFE_flavour_events.0037.a:0 "Interesting..."
+
+ #TFE_flavour_events.0039.t:0 "A Solid Vantage Point (World Event)"
+ #TFE_flavour_events.0039.desc:0 "A keen-eyed ruler can now construct Alamut Castle"
+ #TFE_flavour_events.0039.a:0 "Interesting..."
+
+ TFE_flavour_events.0039.t:0 "The Plague of [ROOT.Char.GetFirstName]"
+ TFE_flavour_events.0039.desc:0 "It was an otherwise inconspicuous banquet: goblets brimming with wine were slammed upon the polished tables, the air was choked by a cacaphony of lively conversations - mostly in [ROOT.Char.GetCulture.GetLanguage.GetName], but also in other languages of the empire - and each course was succeeded by the next; more spoilsome and extravagent than the last. \n\nAll the guests were startled as [first_blood_plague.GetName] burst into the room, with a visible corruption upon their face and body caused by some horrid malady. The hall was emptied as I called my councilors into a separate chamber to discuss the dire matter at hand. A stench of dread filled the air as a frantic messanger burst in with a troubling report; a new disease is spreading rapidly across the empire. \n\n\n#N Death Toll: 1#!"
+ TFE_flavour_events.0039.a:0 "[ROOT.Char.GetFaith.HighGodName] preserve us from what may come..."
+ TFE_flavour_events.0039.a.tt:0 "#low A plague started! You will get a random event once a year until the situation is concluded.#!"
+
+ epidemic_bubonic_plague_justinian: "Bubonic Plague"
+ epidemic_bubonic_plague_justinian_global_notification: "haunts the lands"
+ epidemic_black_death_justinian: "Plague of Justinian"
+
+ TFE_flavour_events.0040.desc:0 "It started with whispers, but now the streets echo with the agonizing wails of the afflicted. The clergy's efforts have proven effective in mitigating the devastation. Blessed priests tirelessly work to soothe the suffering and provide solace to those on the brink of despair. Though the situation remains dire, there is a glimmer of hope amidst the darkness.\n\n\n#N Death Toll: [GetGlobalVariable('plague_event_counter').GetValue|0] #!"
+
+ TFE_flavour_events.0041.desc:0 "The once bustling trade routes now lie dormant, shrouded in the fear of the spreading plague. The merchants have shuttered their shops, and the marketplaces stand eerily silent. The economic heartbeat of the realm falters, its pulse weakened by the merciless grip of the insidious disease.\n\n\n#N Death Toll: [GetGlobalVariable('plague_event_counter').GetValue|0] #!"
+
+ TFE_flavour_events.0042.desc:0 "The garrison, once a stalwart defender of the realm, has been diminished by the relentless onslaught of the plague. The soldiers, bravely standing guard, are now afflicted and weakened. The defenses that once inspired confidence now stand vulnerable, a shadow of their former strength.\n\n\n#N Death Toll: [GetGlobalVariable('plague_event_counter').GetValue|0] #!"
+
+ TFE_flavour_events.0043.desc:0 "A solemn atmosphere pervades the court as the once vibrant gatherings now bear the weight of sorrow, for [plague_kill.GetName] has succumbed to the merciless grasp of the plague. The loss is felt deeply, a poignant reminder of the fragility of life in the face of an unseen enemy.\n\n\n#N Death Toll: [GetGlobalVariable('plague_event_counter').GetValue|0] #!"
+
+ TFE_flavour_events.0044.desc:0 "Skilled physicians tirelessly toil to curb the advance of the plague. Their efforts yield some success, as the number of casualties is kept in check. The realm owes a debt of gratitude to these healers, who work tirelessly to mend the wounds inflicted by the merciless scourge.\n\n\n#N Death Toll: [GetGlobalVariable('plague_event_counter').GetValue|0] #!"
+
+ TFE_flavour_events.0045.desc:0 "The once peaceful streets now echo with the sounds of unrest. Riots erupt as the people, gripped by fear and desperation, demand a better solution. The delicate balance between order and chaos teeters on the edge, threatening to plunge the realm into further turmoil.\n\n\n#N Death Toll: [GetGlobalVariable('plague_event_counter').GetValue|0] #!"
+
+ TFE_flavour_events.0046.desc:0 "The skills of the physicians prove lacking in the face of the relentless plague. Despite their best efforts, the disease persists, claiming lives unabated. The realm grapples with the harsh reality that not all healers possess the expertise needed to combat this unseen adversary.\n\n\n#N Death Toll: [GetGlobalVariable('plague_event_counter').GetValue|0] #!"
+
+ TFE_flavour_events.0047.desc:0 "While returning to your palace, you come across a tavern, its doors swinging open in the breeze. The choice lies before you — will you seek solace within its walls, embracing a temporary reprieve from the grim reality, or will you close it down, acknowledging the need for strict measures in the face of the spreading plague?\n\n\n#N Death Toll: [GetGlobalVariable('plague_event_counter').GetValue|0] #!"
+
+ TFE_flavour_events.0048.desc:0 "The relentless advance of the plague takes its toll, Supplies dwindle as the disease disrupts the flow of goods and resources. The once plentiful storerooms now stand depleted, and the realm must grapple with the challenges of sustaining itself in the midst of the relentless onslaught.\n\n\n#N Death Toll: [GetGlobalVariable('plague_event_counter').GetValue|0] #!"
+
+ TFE_flavour_events.0049.desc:0 "A somber decree echoes through the realm. A curfew is enacted, a measure deemed necessary to contain the spread of the plague. The once bustling streets now lie deserted after nightfall, the silence broken only by the distant wails of the afflicted. The people, though subdued, cling to the hope that these sacrifices will pave the way to a brighter tomorrow.\n\n\n#N Death Toll: [GetGlobalVariable('plague_event_counter').GetValue|0] #!"
+
+ TFE_flavour_events.0040.a:0 "Praise our faithful priests!"
+ TFE_flavour_events.0041.a:0 "When will our prayers be answered?!"
+ TFE_flavour_events.0042.a:0 "When will our prayers be answered?!"
+ TFE_flavour_events.0043.a:0 "Another life lost in this terrible war"
+ TFE_flavour_events.0044.a:0 "Praise our diligent physicians!"
+ TFE_flavour_events.0045.a:0 "What more can we do?!"
+ TFE_flavour_events.0046.a:0 "There is no room for incompetence in this time!"
+ TFE_flavour_events.0047.a:0 "Some pleasure in this dark time"
+ TFE_flavour_events.0047.b:0 "We can't be leisured when our subjects are dying!"
+ TFE_flavour_events.0048.a:0 "We need to find a way to sustain our realm."
+ TFE_flavour_events.0049.a:0 "It is necessary"
+
+ TFE_flavour_events.0050.desc:0 "The relentless grip of the plague begins to loosen its hold on our realm. As the days pass, a collective sigh of relief echoes through the land. The once-fearful whispers are replaced by the sounds of rebuilding and renewal. The city now stands as a solemn testament to the sacrifices endured and the lives forever changed.\n\n\n#N Death Toll: [GetGlobalVariable('plague_event_counter').GetValue|0] #!" # ending event
+ TFE_flavour_events.0050.a:0 "Alas"

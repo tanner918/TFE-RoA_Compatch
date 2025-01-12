@@ -1,0 +1,206 @@
+﻿k_hellas = {
+}
+
+
+d_athens = {
+	361.1.1 = { change_development_level = 6 }
+	476.1.1 = { change_development_level = 7 }
+	532.1.1 = { change_development_level = 8 }
+	632.1.1 = { change_development_level = 9 }
+	768.1.1 = { change_development_level = 10 }
+	330.1.1 = {
+		de_jure_liege = k_macedon
+	}
+	733.1.1 = {
+		holder = 145802
+	}
+	765.1.1 = {
+		holder = 145804
+	}
+}
+
+
+c_attica = {
+	361.1.1 = {
+		holder = leontios_01
+		liege = d_achaia
+		de_jure_liege = d_achaia
+	}
+	395.1.1 = {
+		holder = leontios_02
+	}
+	476.1.1 = {
+		holder = hellas_06
+	}
+	500.1.1 = {
+		holder = hellas_07
+	}
+	733.1.1 = {
+		holder = 145802
+	}
+	765.1.1 = {
+		holder = 145804
+	}
+}
+
+
+c_boeotia = {
+	361.1.1 = {
+		holder = leontios_01
+		liege = d_achaia
+		de_jure_liege = d_achaia
+	}
+	395.1.1 = {
+		holder = leontios_02
+	}
+	476.1.1 = {
+		holder = hellas_06
+	}
+	500.1.1 = {
+		holder = hellas_07
+	}
+	733.1.1 = {
+		holder = 145802
+	}
+	765.1.1 = {
+		holder = 145804
+	}
+}
+
+
+c_euboea = {
+	361.1.1 = {
+		holder = leontios_01
+		liege = d_achaia
+		de_jure_liege = d_achaia
+	}
+	395.1.1 = {
+		holder = leontios_02
+	}
+	476.1.1 = {
+		holder = hellas_06
+	}
+	500.1.1 = {
+		holder = hellas_07
+	}
+	768.1.1 = {
+		holder = 145821
+	}
+}
+
+
+d_achaia = {
+	360.1.1 = {
+		holder = hellas_01
+	}
+	361.1.1 = {
+		liege = k_macedon
+		de_jure_liege = k_macedon
+	}
+	395.1.1 = {
+		holder = hellas_02
+	}
+	476.1.1 = {
+		holder = hellas_03
+		liege = k_macedon
+	}
+	500.1.1 = {
+		holder = hellas_08
+	}
+	530.1.1 = {
+		liege = k_macedon
+	}
+	736.1.1 = {
+		holder = 145807
+	}
+}
+
+
+c_achaia = {
+	330.1.1 = {
+	}
+	361.1.1 = {
+		holder = achaia_01
+		liege = "d_achaia"
+	}
+	395.1.1 = {
+		holder = achaia_02
+	}
+	423.1.1 = {
+		holder = achaia_03
+	}
+	476.1.1 = {
+		holder = achaia_04
+	}
+	500.1.1 = {
+		holder = achaia_05
+	}
+	762.1.1 = {
+		holder = 145809
+	}
+}
+
+
+c_korinthos = {
+	361.1.1 = {
+		holder = hellas_01
+	}
+	395.1.1 = {
+		holder = hellas_02
+	}
+	476.1.1 = {
+		holder = hellas_03
+	}
+	500.1.1 = {
+		holder = hellas_08
+	}
+	736.1.1 = {
+		holder = 145807
+	}
+
+}
+
+
+c_messenia = {
+	361.1.1 = {
+		holder = hellas_01
+	}
+	395.1.1 = {
+		holder = hellas_02
+	}
+	476.1.1 = {
+		holder = hellas_03
+	}
+	500.1.1 = {
+		holder = hellas_08
+	}
+	767.1.1 = {
+		holder = 145810
+	}
+}
+
+
+c_laconia = {
+	361.1.1 = { change_development_level = 4 }
+	476.1.1 = { change_development_level = 5 }
+	532.1.1 = { change_development_level = 6 }
+	632.1.1 = { change_development_level = 7 }
+	768.1.1 = {	change_development_level = 8 }
+	
+	361.1.1 = {
+		holder = hellas_01
+	}
+	395.1.1 = {
+		holder = hellas_02
+	}
+	476.1.1 = {
+		holder = hellas_03
+	}
+	500.1.1 = {
+		holder = hellas_08
+	}
+	764.1.1 = {
+		holder = 145811
+	}
+}
+

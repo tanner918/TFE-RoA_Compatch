@@ -1,0 +1,1116 @@
+﻿on_game_start = {
+	on_actions = {
+		on_trading_start
+	}
+}
+
+#wowee code
+on_trading_start = {
+	effect = {
+		title:b_london.title_province = {
+			add_to_global_variable_list = {
+				name = tradenodes
+				target = THIS
+			}
+			set_variable = {
+				name = trade_node_cap
+				value = 5
+			}
+			set_variable = {
+				name = node
+				value = trade_node_strength
+			}
+			set_global_variable = {
+				name = temp_var
+				value = var:node
+			}
+			set_variable = {
+				name = global_power
+				value = global_var:temp_var
+			}
+			change_global_variable = {
+				name = temp_var
+				divide = 2
+			}
+			while = {
+				count = global_var:temp_var
+				add_province_modifier = base_income
+			}
+		}
+
+
+		title:b_lyon.title_province = {
+			add_to_global_variable_list = {
+				name = tradenodes
+				target = THIS
+			}
+			set_variable = {
+				name = trade_node_cap
+				value = 5
+			}
+			set_variable = {
+				name = node
+				value = trade_node_strength
+			}
+			set_global_variable = {
+				name = temp_temp_var
+				value = var:node
+			}
+			change_global_variable = {
+				name = temp_var
+				add = global_var:temp_temp_var
+			}
+			set_variable = {
+				name = global_power
+				value = global_var:temp_var
+			}
+			change_global_variable = {
+				name = temp_var
+				divide = 2
+			}
+			while = {
+				count = global_var:temp_var
+				add_province_modifier = base_income
+			}
+		}
+
+
+		title:b_murcia.title_province = {
+			add_to_global_variable_list = {
+				name = tradenodes
+				target = THIS
+			}
+			set_variable = {
+				name = trade_node_cap
+				value = 5
+			}
+			set_variable = {
+				name = node
+				value = trade_node_strength
+			}
+			set_global_variable = {
+				name = bottom_temp_var
+				value = var:node
+			}
+			set_variable = {
+				name = global_power
+				value = global_var:bottom_temp_var
+			}
+			change_global_variable = {
+				name = bottom_temp_var
+				divide = 2
+			}
+			while = {
+				count = global_var:bottom_temp_var
+				add_province_modifier = base_income
+			}
+		}
+
+
+		title:b_tunis.title_province = {
+			add_to_global_variable_list = {
+				name = tradenodes
+				target = THIS
+			}
+			set_variable = {
+				name = trade_node_cap
+				value = 5
+			}
+			set_variable = {
+				name = node
+				value = trade_node_strength
+			}
+			set_global_variable = {
+				name = temp_temp_var
+				value = var:node
+			}
+			change_global_variable = {
+				name = bottom_temp_var
+				add = global_var:temp_temp_var
+			}
+			set_variable = {
+				name = global_power
+				value = global_var:bottom_temp_var
+			}
+			change_global_variable = {
+				name = bottom_temp_var
+				divide = 2
+			}
+			change_global_variable = {
+				name = temp_var
+				add = global_var:bottom_temp_var
+			}
+			while = {
+				count = global_var:bottom_temp_var
+				add_province_modifier = base_income
+			}
+		}
+
+
+		title:b_roma.title_province = {
+			add_to_global_variable_list = {
+				name = tradenodes
+				target = THIS
+			}
+			set_variable = {
+				name = trade_node_cap
+				value = 5
+			}
+			set_variable = {
+				name = node
+				value = trade_node_strength
+			}
+			set_global_variable = {
+				name = temp_temp_var
+				value = var:node
+			}
+			change_global_variable = {
+				name = temp_var
+				add = global_var:temp_temp_var
+			}
+			set_variable = {
+				name = global_power
+				value = global_var:temp_var
+			}
+			change_global_variable = {
+				name = temp_var
+				divide = 2
+			}
+			while = {
+				count = global_var:temp_var
+				add_province_modifier = base_income
+			}
+		}
+
+		title:b_alexandria.title_province = {
+			add_to_global_variable_list = {
+				name = tradenodes
+				target = THIS
+			}
+			set_variable = {
+				name = trade_node_cap
+				value = 5
+			}
+			set_variable = {
+				name = node
+				value = trade_node_strength
+			}
+			set_global_variable = {
+				name = temp_temp_var
+				value = var:node
+			}
+			set_global_variable = {
+				name = bottom_temp_var
+				value = global_var:temp_var
+			}
+			change_global_variable = {
+				name = bottom_temp_var
+				add = global_var:temp_temp_var
+			}
+			set_variable = {
+				name = global_power
+				value = global_var:bottom_temp_var
+			}
+			change_global_variable = {
+				name = bottom_temp_var
+				divide = 2
+			}
+			while = {
+				count = global_var:bottom_temp_var
+				add_province_modifier = base_income
+			}
+		}
+
+		title:b_constantinople.title_province = {
+			add_to_global_variable_list = {
+				name = tradenodes
+				target = THIS
+			}
+			set_variable = {
+				name = trade_node_cap
+				value = 5
+			}
+			set_variable = {
+				name = node
+				value = trade_node_strength
+			}
+			set_global_variable = {
+				name = temp_temp_var
+				value = var:node
+			}
+			set_global_variable = {
+				name = top_temp_var
+				value = global_var:temp_var
+			}
+			change_global_variable = {
+				name = top_temp_var
+				add = global_var:temp_temp_var
+			}
+			set_variable = {
+				name = global_power
+				value = global_var:top_temp_var
+			}
+			change_global_variable = {
+				name = top_temp_var
+				divide = 2
+			}
+			while = {
+				count = global_var:top_temp_var
+				add_province_modifier = base_income
+			}
+		}
+
+		title:b_makka.title_province = {
+			add_to_global_variable_list = {
+				name = tradenodes
+				target = THIS
+			}
+			set_variable = {
+				name = trade_node_cap
+				value = 5
+			}
+			set_variable = {
+				name = node
+				value = trade_node_strength
+			}
+			set_global_variable = {
+				name = temp_temp_var
+				value = var:node
+			}
+			change_global_variable = {
+				name = bottom_temp_var
+				add = global_var:temp_temp_var
+			}
+			set_variable = {
+				name = global_power
+				value = global_var:bottom_temp_var
+			}
+			change_global_variable = {
+				name = bottom_temp_var
+				divide = 2
+			}
+			while = {
+				count = global_var:bottom_temp_var
+				add_province_modifier = base_income
+			}
+		}
+
+		title:b_zaila.title_province = {
+			add_to_global_variable_list = {
+				name = tradenodes
+				target = THIS
+			}
+			set_variable = {
+				name = trade_node_cap
+				value = 5
+			}
+			set_variable = {
+				name = node
+				value = trade_node_strength
+			}
+			set_global_variable = {
+				name = temp_temp_var
+				value = var:node
+			}
+			change_global_variable = {
+				name = bottom_temp_var
+				add = global_var:temp_temp_var
+			}
+			set_variable = {
+				name = global_power
+				value = global_var:bottom_temp_var
+			}
+			change_global_variable = {
+				name = bottom_temp_var
+				divide = 2
+			}
+			while = {
+				count = global_var:bottom_temp_var
+				add_province_modifier = base_income
+			}
+		}
+
+		title:b_madurai.title_province = {
+			add_to_global_variable_list = {
+				name = tradenodes
+				target = THIS
+			}
+			set_variable = {
+				name = trade_node_cap
+				value = 5
+			}
+			set_variable = {
+				name = node
+				value = trade_node_strength
+			}
+			set_global_variable = {
+				name = temp_temp_var
+				value = var:node
+			}
+			change_global_variable = {
+				name = bottom_temp_var
+				add = global_var:temp_temp_var
+			}
+			set_variable = {
+				name = global_power
+				value = global_var:bottom_temp_var
+			}
+			while = {
+				count = global_var:bottom_temp_var
+				add_province_modifier = base_income
+			}
+		}
+
+		title:b_an-nahrawan.title_province = {
+			add_to_global_variable_list = {
+				name = tradenodes
+				target = THIS
+			}
+			set_variable = {
+				name = trade_node_cap
+				value = 5
+			}
+			set_variable = {
+				name = node
+				value = trade_node_strength
+			}
+			set_global_variable = {
+				name = temp_temp_var
+				value = var:node
+			}
+			change_global_variable = {
+				name = top_temp_var
+				add = global_var:temp_temp_var
+			}
+			set_variable = {
+				name = global_power
+				value = global_var:top_temp_var
+			}
+			while = {
+				count = global_var:top_temp_var
+				add_province_modifier = base_income
+			}
+		}
+	}
+	on_actions = {
+		delay = { days = { 365 420 } }
+		on_trading_modified
+	}
+}
+
+on_trading_modified = {
+	effect = {
+		title:b_london.title_province = {
+			set_variable = {
+				name = node
+				value = trade_node_strength
+			}
+			set_global_variable = {
+				name = temp_var
+				value = var:node
+			}
+			set_variable = {
+				name = global_power
+				value = global_var:temp_var
+			}
+			change_global_variable = {
+				name = temp_var
+				divide = 2
+			}
+			if = {
+				limit = {
+					exists = var:blockade
+				}
+				if = {
+					limit = {
+						AND = {
+							var:blockade = yes
+							NOT = {
+								county_controller = {
+									any_liege_or_above = {
+										is_at_war = yes
+									}
+								}
+							}
+							county_controller = {
+								is_at_war = no
+							}
+						}
+					}
+					set_variable = {
+						name = blockade
+						value = no
+					}
+					remove_variable = blockade
+				}
+				if = {
+					limit = {
+						var:blockade = yes
+					}
+					set_global_variable = {
+						name = temp_var
+						value = 0
+					}
+				}
+			}
+			remove_all_province_modifier_instances = base_income
+			while = {
+				count = global_var:temp_var
+				add_province_modifier = base_income
+			}
+		}
+
+
+		title:b_lyon.title_province = {
+			set_variable = {
+				name = node
+				value = trade_node_strength
+			}
+			set_global_variable = {
+				name = temp_temp_var
+				value = var:node
+			}
+			change_global_variable = {
+				name = temp_var
+				add = global_var:temp_temp_var
+			}
+			set_variable = {
+				name = global_power
+				value = global_var:temp_var
+			}
+			change_global_variable = {
+				name = temp_var
+				divide = 2
+			}
+			if = {
+				limit = {
+					exists = var:blockade
+				}
+				if = {
+					limit = {
+						AND = {
+							var:blockade = yes
+							NOT = {
+								county_controller = {
+									any_liege_or_above = {
+										is_at_war = yes
+									}
+								}
+							}
+							county_controller = {
+								is_at_war = no
+							}
+						}
+					}
+					set_variable = {
+						name = blockade
+						value = no
+					}
+					remove_variable = blockade
+				}
+				if = {
+					limit = {
+						var:blockade = yes
+					}
+					set_global_variable = {
+						name = temp_var
+						value = 0
+					}
+				}
+			}
+			remove_all_province_modifier_instances = base_income
+			while = {
+				count = global_var:temp_var
+				add_province_modifier = base_income
+			}
+		}
+
+
+		title:b_murcia.title_province = {
+			set_variable = {
+				name = node
+				value = trade_node_strength
+			}
+			set_global_variable = {
+				name = bottom_temp_var
+				value = var:node
+			}
+			set_variable = {
+				name = global_power
+				value = global_var:bottom_temp_var
+			}
+			change_global_variable = {
+				name = bottom_temp_var
+				divide = 2
+			}
+			if = {
+				limit = {
+					exists = var:blockade
+				}
+				if = {
+					limit = {
+						AND = {
+							var:blockade = yes
+							NOT = {
+								county_controller = {
+									any_liege_or_above = {
+										is_at_war = yes
+									}
+								}
+							}
+							county_controller = {
+								is_at_war = no
+							}
+						}
+					}
+					set_variable = {
+						name = blockade
+						value = no
+					}
+					remove_variable = blockade
+				}
+				if = {
+					limit = {
+						var:blockade = yes
+					}
+					set_global_variable = {
+						name = bottom_temp_var
+						value = 0
+					}
+				}
+			}
+			remove_all_province_modifier_instances = base_income
+			while = {
+				count = global_var:bottom_temp_var
+				add_province_modifier = base_income
+			}
+		}
+
+
+		title:b_tunis.title_province = {
+			set_variable = {
+				name = node
+				value = trade_node_strength
+			}
+			set_global_variable = {
+				name = temp_temp_var
+				value = var:node
+			}
+			change_global_variable = {
+				name = bottom_temp_var
+				add = global_var:temp_temp_var
+			}
+			set_variable = {
+				name = global_power
+				value = global_var:bottom_temp_var
+			}
+			change_global_variable = {
+				name = bottom_temp_var
+				divide = 2
+			}
+			change_global_variable = {
+				name = temp_var
+				add = global_var:bottom_temp_var
+			}
+			if = {
+				limit = {
+					exists = var:blockade
+				}
+				if = {
+					limit = {
+						AND = {
+							var:blockade = yes
+							NOT = {
+								county_controller = {
+									any_liege_or_above = {
+										is_at_war = yes
+									}
+								}
+							}
+							county_controller = {
+								is_at_war = no
+							}
+						}
+					}
+					set_variable = {
+						name = blockade
+						value = no
+					}
+					remove_variable = blockade
+				}
+				if = {
+					limit = {
+						var:blockade = yes
+					}
+					set_global_variable = {
+						name = bottom_temp_var
+						value = 0
+					}
+				}
+			}
+			remove_all_province_modifier_instances = base_income
+			while = {
+				count = global_var:bottom_temp_var
+				add_province_modifier = base_income
+			}
+		}
+
+
+		title:b_roma.title_province = {
+			set_variable = {
+				name = node
+				value = trade_node_strength
+			}
+			set_global_variable = {
+				name = temp_temp_var
+				value = var:node
+			}
+			change_global_variable = {
+				name = temp_var
+				add = global_var:temp_temp_var
+			}
+			set_variable = {
+				name = global_power
+				value = global_var:temp_var
+			}
+			change_global_variable = {
+				name = temp_var
+				divide = 2
+			}
+			if = {
+				limit = {
+					exists = var:blockade
+				}
+				if = {
+					limit = {
+						AND = {
+							var:blockade = yes
+							NOT = {
+								county_controller = {
+									any_liege_or_above = {
+										is_at_war = yes
+									}
+								}
+							}
+							county_controller = {
+								is_at_war = no
+							}
+						}
+					}
+					set_variable = {
+						name = blockade
+						value = no
+					}
+					remove_variable = blockade
+				}
+				if = {
+					limit = {
+						var:blockade = yes
+					}
+					set_global_variable = {
+						name = temp_var
+						value = 0
+					}
+				}
+			}
+			remove_all_province_modifier_instances = base_income
+			while = {
+				count = global_var:temp_var
+				add_province_modifier = base_income
+			}
+		}
+
+		title:b_alexandria.title_province = {
+			set_variable = {
+				name = node
+				value = trade_node_strength
+			}
+			set_global_variable = {
+				name = temp_temp_var
+				value = var:node
+			}
+			set_global_variable = {
+				name = bottom_temp_var
+				value = global_var:temp_var
+			}
+			change_global_variable = {
+				name = bottom_temp_var
+				add = global_var:temp_temp_var
+			}
+			set_variable = {
+				name = global_power
+				value = global_var:bottom_temp_var
+			}
+			change_global_variable = {
+				name = bottom_temp_var
+				divide = 2
+			}
+			if = {
+				limit = {
+					exists = var:blockade
+				}
+				if = {
+					limit = {
+						AND = {
+							var:blockade = yes
+							NOT = {
+								county_controller = {
+									any_liege_or_above = {
+										is_at_war = yes
+									}
+								}
+							}
+							county_controller = {
+								is_at_war = no
+							}
+						}
+					}
+					set_variable = {
+						name = blockade
+						value = no
+					}
+					remove_variable = blockade
+				}
+				if = {
+					limit = {
+						var:blockade = yes
+					}
+					set_global_variable = {
+						name = bottom_temp_var
+						value = 0
+					}
+				}
+			}
+			remove_all_province_modifier_instances = base_income
+			while = {
+				count = global_var:bottom_temp_var
+				add_province_modifier = base_income
+			}
+		}
+
+		title:b_constantinople.title_province = {
+			set_variable = {
+				name = node
+				value = trade_node_strength
+			}
+			set_global_variable = {
+				name = temp_temp_var
+				value = var:node
+			}
+			set_global_variable = {
+				name = top_temp_var
+				value = global_var:temp_var
+			}
+			change_global_variable = {
+				name = top_temp_var
+				add = global_var:temp_temp_var
+			}
+			set_variable = {
+				name = global_power
+				value = global_var:top_temp_var
+			}
+			change_global_variable = {
+				name = top_temp_var
+				divide = 2
+			}
+			if = {
+				limit = {
+					exists = var:blockade
+				}
+				if = {
+					limit = {
+						AND = {
+							var:blockade = yes
+							NOT = {
+								county_controller = {
+									any_liege_or_above = {
+										is_at_war = yes
+									}
+								}
+							}
+							county_controller = {
+								is_at_war = no
+							}
+						}
+					}
+					set_variable = {
+						name = blockade
+						value = no
+					}
+					remove_variable = blockade
+				}
+				if = {
+					limit = {
+						var:blockade = yes
+					}
+					set_global_variable = {
+						name = top_temp_var
+						value = 0
+					}
+				}
+			}
+			remove_all_province_modifier_instances = base_income
+			while = {
+				count = global_var:top_temp_var
+				add_province_modifier = base_income
+			}
+		}
+
+		title:b_makka.title_province = {
+			set_variable = {
+				name = node
+				value = trade_node_strength
+			}
+			set_global_variable = {
+				name = temp_temp_var
+				value = var:node
+			}
+			change_global_variable = {
+				name = bottom_temp_var
+				add = global_var:temp_temp_var
+			}
+			set_variable = {
+				name = global_power
+				value = global_var:bottom_temp_var
+			}
+			change_global_variable = {
+				name = bottom_temp_var
+				divide = 2
+			}
+			if = {
+				limit = {
+					exists = var:blockade
+				}
+				if = {
+					limit = {
+						AND = {
+							var:blockade = yes
+							NOT = {
+								county_controller = {
+									any_liege_or_above = {
+										is_at_war = yes
+									}
+								}
+							}
+							county_controller = {
+								is_at_war = no
+							}
+						}
+					}
+					set_variable = {
+						name = blockade
+						value = no
+					}
+					remove_variable = blockade
+				}
+				if = {
+					limit = {
+						var:blockade = yes
+					}
+					set_global_variable = {
+						name = bottom_temp_var
+						value = 0
+					}
+				}
+			}
+			remove_all_province_modifier_instances = base_income
+			while = {
+				count = global_var:bottom_temp_var
+				add_province_modifier = base_income
+			}
+		}
+
+		title:b_zaila.title_province = {
+			set_variable = {
+				name = node
+				value = trade_node_strength
+			}
+			set_global_variable = {
+				name = temp_temp_var
+				value = var:node
+			}
+			change_global_variable = {
+				name = bottom_temp_var
+				add = global_var:temp_temp_var
+			}
+			set_variable = {
+				name = global_power
+				value = global_var:bottom_temp_var
+			}
+			change_global_variable = {
+				name = bottom_temp_var
+				divide = 2
+			}
+			if = {
+				limit = {
+					exists = var:blockade
+				}
+				if = {
+					limit = {
+						AND = {
+							var:blockade = yes
+							NOT = {
+								county_controller = {
+									any_liege_or_above = {
+										is_at_war = yes
+									}
+								}
+							}
+							county_controller = {
+								is_at_war = no
+							}
+						}
+					}
+					set_variable = {
+						name = blockade
+						value = no
+					}
+					remove_variable = blockade
+				}
+				if = {
+					limit = {
+						var:blockade = yes
+					}
+					set_global_variable = {
+						name = bottom_temp_var
+						value = 0
+					}
+				}
+			}
+			remove_all_province_modifier_instances = base_income
+			while = {
+				count = global_var:bottom_temp_var
+				add_province_modifier = base_income
+			}
+		}
+
+		title:b_madurai.title_province = {
+			set_variable = {
+				name = node
+				value = trade_node_strength
+			}
+			set_global_variable = {
+				name = temp_temp_var
+				value = var:node
+			}
+			change_global_variable = {
+				name = bottom_temp_var
+				add = global_var:temp_temp_var
+			}
+			set_variable = {
+				name = global_power
+				value = global_var:bottom_temp_var
+			}
+			if = {
+				limit = {
+					exists = var:blockade
+				}
+				if = {
+					limit = {
+						AND = {
+							var:blockade = yes
+							NOT = {
+								county_controller = {
+									any_liege_or_above = {
+										is_at_war = yes
+									}
+								}
+							}
+							county_controller = {
+								is_at_war = no
+							}
+						}
+					}
+					set_variable = {
+						name = blockade
+						value = no
+					}
+					remove_variable = blockade
+				}
+				if = {
+					limit = {
+						var:blockade = yes
+					}
+					set_global_variable = {
+						name = bottom_temp_var
+						value = 0
+					}
+				}
+			}
+			remove_all_province_modifier_instances = base_income
+			while = {
+				count = global_var:bottom_temp_var
+				add_province_modifier = base_income
+			}
+		}
+
+		title:b_an-nahrawan.title_province = {
+			set_variable = {
+				name = node
+				value = trade_node_strength
+			}
+			set_variable = {
+				name = node
+				value = 2
+			}
+			set_global_variable = {
+				name = temp_temp_var
+				value = var:node
+			}
+			change_global_variable = {
+				name = top_temp_var
+				add = global_var:temp_temp_var
+			}
+			set_variable = {
+				name = global_power
+				value = global_var:top_temp_var
+			}
+			if = {
+				limit = {
+					exists = var:blockade
+				}
+				if = {
+					limit = {
+						AND = {
+							var:blockade = yes
+							NOT = {
+								county_controller = {
+									any_liege_or_above = {
+										is_at_war = yes
+									}
+								}
+							}
+							county_controller = {
+								is_at_war = no
+							}
+						}
+					}
+					set_variable = {
+						name = blockade
+						value = no
+					}
+					remove_variable = blockade
+				}
+				if = {
+					limit = {
+						var:blockade = yes
+					}
+					set_global_variable = {
+						name = top_temp_var
+						value = 0
+					}
+				}
+			}
+			remove_all_province_modifier_instances = base_income
+			while = {
+				count = global_var:top_temp_var
+				add_province_modifier = base_income
+			}
+		}
+	}
+	on_actions = {
+		delay = { days = { 365 420 } }
+		on_trading_modified
+	}
+	
+}

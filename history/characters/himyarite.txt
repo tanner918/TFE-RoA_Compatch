@@ -1,0 +1,1073 @@
+﻿
+### Kingdom of Himyar
+himyar_01 = {
+	name = "Shammar"
+	dynasty = himyar_dynasty
+	religion = "south_arabian_pagan"
+	culture = "himyarite"
+	trait = education_military_3
+	trait = wrathful
+	trait = arrogant
+	trait = ambitious
+	250.1.1 = {
+		birth = yes
+	}
+	299.1.1 = {
+		death = yes
+	}
+}
+himyar_02 = {
+	name = "Yarim"
+	dynasty = himyar_dynasty
+	religion = "south_arabian_pagan"
+	culture = "himyarite"
+	father = himyar_01
+	278.1.1 = {
+		birth = yes
+	}
+	312.1.1 = {
+		death = yes
+	}
+}
+himyar_03 = {
+	name = "Yasir"
+	dynasty = himyar_dynasty
+	religion = "south_arabian_pagan"
+	culture = "himyarite"
+	father = himyar_01
+	280.1.1 = {
+		birth = yes
+	}
+	322.1.1 = {
+		death = yes
+	}
+}
+himyar_04 = {
+	name = "Tharin"
+	dynasty = himyar_dynasty
+	religion = "south_arabian_pagan"
+	culture = "himyarite"
+	father = himyar_03
+	301.1.1 = {
+		birth = yes
+	}
+	325.1.1 = {
+		death = yes
+	}
+}
+himyar_05 = {
+	name = "Dhara'amar"
+	dynasty = himyar_dynasty
+	religion = "south_arabian_pagan"
+	culture = "himyarite"
+	father = himyar_03
+	305.1.1 = {
+		birth = yes
+	}
+	327.1.1 = {
+		death = yes
+	}
+}
+himyar_06 = {
+	name = "Dhara'amar"
+	dynasty = himyar_dynasty
+	religion = "south_arabian_pagan"
+	culture = "himyarite"
+	father = himyar_01
+	284.1.1 = {
+		birth = yes
+	}
+	342.1.1 = {
+		death = yes
+	}
+}
+himyar_07 = {
+	name = "Tharin"
+	dynasty = himyar_dynasty
+	religion = "south_arabian_pagan"
+	culture = "himyarite"
+	father = himyar_01
+	280.1.1 = {
+		birth = yes
+	}
+	350.1.1 = {
+		death = yes
+	}
+}
+himyar_071 = {
+	name = "Zamir"
+	dynasty = himyar_dynasty
+	religion = "south_arabian_pagan"
+	culture = "himyarite"
+	father = himyar_06
+	307.1.1 = {
+		birth = yes
+	}
+	356.1.1 = {
+		death = yes
+	}
+}
+himyar_08 = {
+	name = "Tharin"
+	dynasty = himyar_dynasty
+	religion = "south_arabian_pagan"
+	culture = "himyarite"
+	father = himyar_07
+	322.1.1 = {
+		birth = yes
+	}
+	364.1.1 = {
+		death = yes
+	}
+}
+himyar_09 = {
+	name = "Karab"
+	dynasty = himyar_dynasty
+	religion = "south_arabian_pagan"
+	culture = "himyarite"
+	father = himyar_08
+	340.1.1 = {
+		birth = yes
+	}
+	372.1.1 = {
+		death = yes
+	}
+}
+himyar_10 = {
+	name = "Dhara'amar"
+	dynasty = himyar_dynasty
+	religion = "south_arabian_pagan"
+	culture = "himyarite"
+	father = himyar_09
+	360.1.1 = {
+		birth = yes
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+982001 = {
+	name = "Abu_Karib"
+	dna = DNA_abu_karib
+	dynasty = himyar_dynasty
+	religion = "south_arabian_pagan"
+	culture = "himyarite"
+	father = himyar_10
+	trait = stubborn
+	trait = humble
+	trait = brave
+	362.1.1 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+	390.1.1 = {
+		religion = rahmanani
+	}
+	420.1.1 = {
+		death = yes
+	}
+}
+982002 = {
+	name = "Amr"
+	dynasty = himyar_dynasty
+	religion = "south_arabian_pagan"
+	culture = "himyarite"
+	father = himyar_10
+	371.1.1 = {
+		birth = yes
+	}
+	390.1.1 = {
+		religion = "rahmanani"
+	}
+	395.1.1 = {
+		death = yes
+	}
+}
+982003 = {
+	name = "Hassan"
+	dynasty = himyar_dynasty
+	religion = "rahmanani"
+	culture = "himyarite"
+	father = 982001
+	390.1.1 = {
+		birth = yes
+	}
+	448.1.1 = {
+		death = yes
+	}
+}
+himyar_11 = {
+	name = "Sharhabil"
+	dynasty = himyar_dynasty
+	religion = "rahmanani"
+	culture = "himyarite"
+	father = 982003
+	trait = scholar
+	trait = arrogant
+	trait = education_learning_3
+	438.1.1 = {
+		birth = yes
+	}
+	480.1.1 = {
+		death = yes
+	}
+}
+himyar_12 = {
+	name = "Mu'di Karab"
+	dynasty = himyar_dynasty
+	religion = "rahmanani"
+	culture = "himyarite"
+	father = himyar_11
+	450.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+himyar_13 = {
+	name = "Lahi'ah Yanuf"
+	dynasty = himyar_dynasty
+	religion = "rahmanani"
+	culture = "himyarite"
+	father = himyar_11
+	454.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+himyar_14 = {
+	name = "Nawfim"
+	dynasty = himyar_dynasty
+	religion = "rahmanani"
+	culture = "himyarite"
+	father = himyar_11
+	457.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+982004 = {
+	name = "Sharhabil"
+	dynasty = himyar_dynasty
+	religion = "rahmanani"
+	culture = "himyarite"
+	father = 982001
+	393.1.1 = {
+		birth = yes
+	}
+	457.1.1 = {
+		death = yes
+	}
+}
+982005 = {
+	name = "Zorah"
+	dynasty = himyar_dynasty
+	religion = "rahmanani"
+	culture = "himyarite"
+	father = 982001
+	395.1.1 = {
+		birth = yes
+	}
+	450.1.1 = {
+		death = yes
+	}
+}
+982006 = {
+	name = "al-Harith"
+	dynasty = himyar_dynasty
+	religion = "rahmanani"
+	culture = "himyarite"
+	father = 982002
+	390.1.1 = {
+		birth = yes
+	}
+	440.1.1 = {
+		death = yes
+	}
+}
+
+### Himyar Administrators
+himyarite_01 = {
+	name = "al-Harith"
+	religion = "south_arabian_pagan"
+	culture = "himyarite"
+	332.1.1 = {
+		birth = yes
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+himyarite_02 = {
+	name = "Sahar"
+	religion = "south_arabian_pagan"
+	culture = "himyarite"
+	368.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+himyarite_03 = {
+	name = "Shammar"
+	religion = "rahmanani"
+	culture = "himyarite"
+	438.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+himyarite_04 = {
+	name = "Anmarum"
+	religion = "south_arabian_pagan"
+	culture = "himyarite"
+	338.1.1 = {
+		birth = yes
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+himyarite_05 = {
+	name = "Shammar"
+	religion = "south_arabian_pagan"
+	culture = "himyarite"
+	362.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+himyarite_06 = {
+	name = "Summhaumar"
+	religion = "rahmanani"
+	culture = "himyarite"
+	448.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+himyarite_07 = {
+	name = "Zammir"
+	religion = "south_arabian_pagan"
+	culture = "himyarite"
+	340.1.1 = {
+		birth = yes
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+himyarite_08 = {
+	name = "Rabbshams"
+	religion = "south_arabian_pagan"
+	culture = "himyarite"
+	370.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+himyarite_09 = {
+	name = "Yuhargeb"
+	religion = "rahmanani"
+	culture = "himyarite"
+	443.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+himyarite_10 = {
+	name = "Ammyata"
+	religion = "south_arabian_pagan"
+	culture = "himyarite"
+	332.1.1 = {
+		birth = yes
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+himyarite_11 = {
+	name = "Ilsharah"
+	religion = "south_arabian_pagan"
+	culture = "himyarite"
+	368.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+himyarite_12 = {
+	name = "Dawaman"
+	religion = "rahmanani"
+	culture = "himyarite"
+	438.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+himyarite_13 = {
+	name = "Karibathat"
+	religion = "south_arabian_pagan"
+	culture = "himyarite"
+	338.1.1 = {
+		birth = yes
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+himyarite_14 = {
+	name = "Hammatat"
+	religion = "south_arabian_pagan"
+	culture = "himyarite"
+	362.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+himyarite_15 = {
+	name = "Barig"
+	religion = "rahmanani"
+	culture = "himyarite"
+	448.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+himyarite_16 = {
+	name = "Sahar"
+	religion = "south_arabian_pagan"
+	culture = "south_arabian"
+	340.1.1 = {
+		birth = yes
+	}
+	378.1.1 = {
+		death = yes
+	}
+}
+himyarite_17 = {
+	name = "Yahtuff"
+	religion = "south_arabian_pagan"
+	culture = "south_arabian"
+	370.1.1 = {
+		birth = yes
+	}
+	400.1.1 = {
+		death = yes
+	}
+}
+himyarite_18 = {
+	name = "Yarum"
+	religion = "south_arabian_pagan"
+	culture = "south_arabian"
+	443.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = yes
+	}
+}
+
+himyarite_19 = {
+	name = "Sahar"
+	religion = "rahmanani"
+	culture = "himyarite"
+	dynasty = himyar_dynasty
+	403.1.1 = {
+		birth = yes
+	}
+	464.1.1 = {
+		death = yes
+	}
+}
+
+himyarite_20 = {
+	name = "Ya'fur"
+	religion = "rahmanani"
+	culture = "himyarite"
+	father = himyarite_19
+	dynasty = himyar_dynasty
+	trait = kinslayer
+	trait = ambitious
+	trait = sadistic
+	trait = education_intrigue_3
+	445.1.1 = {
+		birth = yes
+	}
+	495.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = himyarite_22
+		}
+	}
+}
+
+himyarite_21 = {
+	name = "Barig"
+	religion = "rahmanani"
+	culture = "himyarite"
+	father = himyarite_19
+	dynasty = himyar_dynasty
+	trait = ambitious
+	trait = trusting
+	450.1.1 = {
+		birth = yes
+	}
+	484.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = himyarite_20
+		}
+	}
+}
+
+himyarite_22 = {
+	name = "Lakhni'ah Dhu Shanatir"
+	religion = "rahmanani"
+	culture = "himyarite"
+	sexuality = homosexual
+	dynasty = none
+	trait = murderer
+	trait = deviant
+	trait = sadistic
+	trait = ambitious
+	trait = education_stewardship_3
+	intrigue = 12
+	471.1.1 = {
+		birth = yes
+	}
+	522.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = himyarite_26
+		}
+	}
+}
+
+himyarite_23 = {
+	name = "Yahtuff"
+	religion = "rahmanani"
+	culture = "himyarite"
+	dynasty = none
+	484.1.1 = {
+		birth = yes
+	}
+	491.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = himyarite_22
+		}
+	}
+}
+
+himyarite_24 = {
+	name = "Yarum"
+	religion = "rahmanani"
+	culture = "himyarite"
+	dynasty = none
+	490.1.1 = {
+		birth = yes
+	}
+	500.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = himyarite_22
+		}
+	}
+}
+
+himyarite_25 = {
+	name = "Dawaman"
+	religion = "rahmanani"
+	culture = "himyarite"
+	dynasty = none
+	505.1.1 = {
+		birth = yes
+	}
+	513.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = himyarite_22
+		}
+	}
+}
+
+himyarite_26 = {
+	name = "Zur'a dhu Nuwas"
+	religion = "rahmanani"
+	culture = "himyarite"
+	intrigue = 10
+	trait = ambitious
+	trait = zealous
+	trait = arrogant
+	trait = education_diplomacy_2
+	480.1.1 = {
+		birth = yes
+	}
+	527.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+himyarite_27 = {
+	name = "Sumyafa Ashwa"
+	dynasty = dynasty_sumyafa_ashwa
+	religion = "coptic"
+	culture = "himyarite"
+	trait = craven
+	trait = greedy
+	trait = education_stewardship_3
+	474.1.1 = {
+		birth = yes
+	}
+	532.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = himyarite_30
+		}
+	}
+}
+
+himyarite_28 = {
+	name = "Shurihbil Yakmul"
+	dynasty = dynasty_sumyafa_ashwa
+	religion = "coptic"
+	culture = "himyarite"
+	father = himyarite_27
+	504.1.1 = {
+		birth = yes
+	}
+	532.1.1 = {
+		set_relation_rival = character:himyarite_30
+	}
+	540.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = himyarite_30
+		}
+	}
+}
+
+himyarite_29 = {
+	name = "Ma'dikarib Yafur"
+	dynasty = dynasty_sumyafa_ashwa
+	religion = "coptic"
+	culture = "himyarite"
+	father = himyarite_27
+	trait = ambitious
+	trait = arrogant
+	trait = brave
+	512.1.1 = {
+		birth = yes
+	}
+	532.1.1 = {
+		set_relation_rival = character:himyarite_30
+	}
+	540.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = himyarite_30
+		}
+	}
+}
+
+himyarite_30 = {
+	name = "Abraha al-Ashram"
+	dna = dna_abraha
+	dynasty = dynasty_abraha
+	religion = "coptic"
+	culture = "ethiopian"
+	trait = ambitious
+	trait = brave
+	trait = zealous
+	trait = education_martial_3
+	intrigue = 14
+	martial = 10
+	493.1.1 = {
+		birth = yes
+	}
+	532.1.1 = {
+		set_relation_rival = character:himyarite_28
+		set_relation_rival = character:himyarite_29
+		set_relation_rival = character:himyarite_32
+		set_relation_rival = character:aksum_21
+		add_spouse = himyarite_34
+		add_courtier = character:himyarite_34
+		spawn_army = {
+			name = "Abraha's Invaders"
+			levies = 400
+			men_at_arms = {
+				type = light_horsemen
+				stacks = 1
+			}
+			men_at_arms = {
+				type = bowmen
+				stacks = 1
+			}
+			location = province:6286
+			origin = province:6286
+			inheritable = no
+		}
+	}
+	555.1.1 = {
+		death = yes
+	}
+}
+
+himyarite_31 = {
+	name = "Masruq"
+	dynasty = dynasty_abraha
+	religion = "coptic"
+	culture = "ethiopian"
+	father = himyarite_30
+	mother = himyarite_34
+	532.1.1 = {
+		birth = yes
+	}
+	575.1.1 = {
+		death = yes
+	}
+}
+
+himyarite_32 = {
+	name = "Murra Dhu Yazan"
+	dynasty = dynasty_murra_dhu_yazan
+	religion = "rahmanani"
+	culture = "himyarite"
+	trait = ambitious
+	trait = arrogant
+	trait = education_stewardship_3
+	482.1.1 = {
+		birth = yes
+	}
+	528.1.1 = {
+		add_spouse = himyarite_34
+	}
+	532.1.1 = {
+		set_relation_rival = character:himyarite_30
+		remove_spouse = himyarite_34
+	}
+	540.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+himyarite_33 = {
+	name = "Yazid"
+	dynasty = dynasty_yazid_ibn_kabasha
+	religion = "rahmanani"
+	culture = "himyarite"
+	trait = ambitious
+	trait = just
+	trait = patient
+	trait = education_stewardship_4
+	father=himyarite_33a
+	484.1.1 = {
+		birth = yes
+	}
+	532.1.1 = {
+		add_pressed_claim = title:k_yemen
+	}
+	540.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+himyarite_33a = {
+	name = "Kabasha"
+	dynasty = dynasty_yazid_ibn_kabasha
+	religion = "rahmanani"
+	culture = "himyarite"
+	451.3.26 = {
+		birth = yes
+	}
+	519.4.17 = {
+		death = yes
+	}
+}
+
+himyarite_34 = {
+	name = "Rihana"
+	female = yes
+	religion = "rahmanani"
+	culture = "himyarite"
+	trait = compassionate
+	trait = generous
+	trait = gregarious
+	trait = education_diplomacy_3
+	trait = beauty_good_1
+	510.1.1 = {
+		birth = yes
+	}
+	528.1.1 = {
+		add_spouse = himyarite_32
+	}
+	530.1.1 = {
+		remove_spouse = himyarite_32
+		add_spouse = himyarite_30
+	}
+	565.1.1 = {
+		death = yes
+	}
+}
+
+
+himyarite_35 = {
+	name = "Yaksum"
+	dynasty = dynasty_abraha
+	religion = "coptic"
+	culture = "ethiopian"
+	father = himyarite_30
+	mother = himyarite_34
+	531.1.1 = {
+		birth = yes
+	}
+	575.1.1 = {
+		death = yes
+	}
+}
+
+himyarite_36 = {
+	name = "Yarum"
+	religion = "rahmanani"
+	culture = "himyarite"
+	480.1.1 = {
+		birth = yes
+	}
+	540.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+himyarite_37 = {
+	name = "Zammir"
+	religion = "rahmanani"
+	culture = "himyarite"
+	475.1.1 = {
+		birth = yes
+	}
+	540.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+himyarite_38 = {
+	name = "Sahar"
+	religion = "rahmanani"
+	culture = "himyarite"
+	490.1.1 = {
+		birth = yes
+	}
+	540.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+himyarite_39 = {
+	name = "Barig"
+	religion = "rahmanani"
+	culture = "himyarite"
+	495.1.1 = {
+		birth = yes
+	}
+	540.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+himyarite_40 = {
+	name = "Amatthawn"
+	religion = "rahmanani"
+	culture = "himyarite"
+	female=yes
+	dynasty=himyar_dynasty
+	father=982003
+	424.1.1 = {
+		birth = yes
+	}
+	460.1.1={
+		add_spouse=kindha_12
+	}
+	490.1.1 = {
+		death = yes
+	}
+}
+
+#Clans of Medina
+
+aws_01 = {
+	name = "Yarum"
+	culture = himyarite
+	religion = arabic_pagan
+	dynasty = banuaws
+	345.1.1 = {
+		birth = yes
+	}
+	410.1.1 = {
+		death = yes
+	}
+}
+
+aws_02 = {
+	name = "Barig"
+	culture = himyarite
+	religion = arabic_pagan
+	father = aws_01
+	dynasty = banuaws
+	385.1.1 = {
+		birth = yes
+	}
+	450.1.1 = {
+		death = yes
+	}
+}
+
+aws_03 = {
+	name = "Sahar"
+	culture = himyarite
+	religion = arabic_pagan
+	father = aws_02
+	dynasty = banuaws
+	430.1.1 = {
+		birth = yes
+	}
+	525.1.1 = {
+		death = yes
+	}
+}
+
+aws_04 = {
+	name = "Sahar"
+	culture = himyarite
+	religion = arabic_pagan
+	father = aws_02
+	dynasty = banuaws
+	505.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+
+aws_05 = {
+	name = "Sahar"
+	culture = himyarite
+	religion = arabic_pagan
+	father = aws_02
+	dynasty = banuaws
+	580.1.1 = {
+		birth = yes
+	}
+	640.1.1 = {
+		death = yes
+	}
+}
+
+khazraj_01 = {
+	name = "Yuhargeb"
+	culture = himyarite
+	religion = arabic_pagan
+	dynasty = banukhazraj
+	340.1.1 = {
+		birth = yes
+	}
+	430.1.1 = {
+		death = yes
+	}
+}
+
+khazraj_02 = {
+	name = "Dawaman"
+	culture = himyarite
+	religion = arabic_pagan
+	father = khazraj_01
+	dynasty = banukhazraj
+	420.1.1 = {
+		birth = yes
+	}
+	525.1.1 = {
+		death = yes
+	}
+}
+
+
+khazraj_03 = {
+	name = "Ilsharah"
+	culture = himyarite
+	religion = arabic_pagan
+	father = khazraj_02
+	dynasty = banukhazraj
+	500.1.1 = {
+		birth = yes
+	}
+	560.1.1 = {
+		death = yes
+	}
+}
+
+khazraj_04 = {
+	name = "Summhaumar"
+	culture = himyarite
+	religion = arabic_pagan
+	father = khazraj_03
+	dynasty = banukhazraj
+	540.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+
+khazraj_05 = {
+	name = "Zammir"
+	culture = himyarite
+	religion = arabic_pagan
+	father = khazraj_04
+	dynasty = banukhazraj
+	580.1.1 = {
+		birth = yes
+	}
+	640.1.1 = {
+		death = yes
+	}
+}

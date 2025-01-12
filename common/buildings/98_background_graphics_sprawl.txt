@@ -1,0 +1,173 @@
+﻿### CUSTOM SPRAWL GRAPHICS ###
+
+# Great Walls of Benin
+#great_walls_of_benin_palace_sprawl = {
+#	is_graphical_background = yes
+#	asset = { type = entity name = great_walls_of_benin_palace_sprawl }
+#	is_enabled = {
+#		exists = barony.holder
+#		county = { development_level > terrible_development_level }
+#		has_building_or_higher = "walls_of_benin_02"
+#	}
+#}
+great_walls_of_benin_sprawl = {
+	is_graphical_background = yes
+	asset = { type = entity name = great_walls_of_benin_sprawl }
+	is_enabled = {
+		exists = barony.holder
+		barony = title:b_benin-city
+		county = { development_level > terrible_development_level }
+		has_building_or_higher = "walls_of_benin_01"
+	}
+}
+
+# Carthage
+carthage_trade_carthage_cothon_sprawl = {
+	is_graphical_background = yes
+	asset = { type = entity name = carthage_trade_carthage_cothon_sprawl }
+	is_enabled = {
+		exists = barony.holder
+		barony = title:b_tunis
+		county = { development_level > terrible_development_level }
+		OR = {
+			has_building_or_higher = "castle_04"
+			has_building_or_higher = "city_04"
+			has_building_or_higher = "temple_04"
+			has_building_or_higher = "trade_center_04"
+		}
+		has_building_or_higher = "cothon_01"
+	}
+}
+carthage_trade_sprawl = {
+	is_graphical_background = yes
+	asset = { type = entity name = carthage_trade_sprawl }
+	is_enabled = {
+		exists = barony.holder
+		barony = title:b_tunis
+		county = { development_level > terrible_development_level }
+		OR = {
+			has_building_or_higher = "castle_04"
+			has_building_or_higher = "city_04"
+			has_building_or_higher = "temple_04"
+			has_building_or_higher = "trade_center_04"
+		}
+		NOT = { has_building_or_higher = "cothon_01" }
+	}
+}
+carthage_sprawl = {
+	is_graphical_background = yes
+	asset = { type = entity name = carthage_sprawl }
+	is_enabled = {
+		exists = barony.holder
+		barony = title:b_tunis
+		county = { development_level > terrible_development_level }
+		NOR = {
+			has_building_or_higher = "castle_04"
+			has_building_or_higher = "city_04"
+			has_building_or_higher = "temple_04"
+			has_building_or_higher = "trade_center_04"
+		}
+		NOT = { has_building_or_higher = "cothon_01" }
+	}
+}
+# Athens
+athens_piraeus_athens_acropolis_sprawl = {
+	is_graphical_background = yes
+	asset = { type = entity name = athens_piraeus_athens_acropolis_sprawl }
+	is_enabled = {
+		exists = barony.holder
+		barony = title:b_athens
+		county = { development_level > terrible_development_level }
+		OR = {
+			has_building_or_higher = "castle_04"
+			has_building_or_higher = "city_04"
+			has_building_or_higher = "temple_04"
+			has_building_or_higher = "estate_03"
+		}
+		has_building_or_higher = "common_tradeport_01"
+	}
+}
+athens_piraeus_sprawl = {
+	is_graphical_background = yes
+	asset = { type = entity name = athens_piraeus_sprawl }
+	is_enabled = {
+		exists = barony.holder
+		barony = title:b_athens
+		county = { development_level > terrible_development_level }
+		NOR = {
+			has_building_or_higher = "castle_04"
+			has_building_or_higher = "city_04"
+			has_building_or_higher = "temple_04"
+			has_building_or_higher = "estate_03"
+		}
+		has_building_or_higher = "common_tradeport_01"
+	}
+}
+athens_sprawl = {
+	is_graphical_background = yes
+	asset = { type = entity name = athens_piraeus_athens_acropolis_sprawl }
+	is_enabled = {
+		exists = barony.holder
+		barony = title:b_athens
+		NOR = {
+			has_building_or_higher = "castle_04"
+			has_building_or_higher = "city_04"
+			has_building_or_higher = "temple_04"
+			has_building_or_higher = "estate_03"
+		}
+		NOT = { has_building_or_higher = "common_tradeport_01" }
+	}
+}
+
+# Jerusalem
+jerusalem_sprawl_03 = {
+	is_graphical_background = yes
+	asset = { type = entity name = jerusalem_sprawl_03 }
+	is_enabled = {
+		exists = barony.holder
+		barony = title:b_jerusalem
+		OR = {
+			has_building_or_higher = "dome_of_the_rock_01"
+			has_building_or_higher = "temple_in_jerusalem_01"
+		}
+		county = { development_level > terrible_development_level }
+	}
+}
+jerusalem_sprawl_02 = {
+	is_graphical_background = yes
+	asset = { type = entity name = jerusalem_sprawl_02 }
+	is_enabled = {
+		exists = barony.holder
+		barony = title:b_jerusalem
+		OR = {
+			has_building_or_higher = "dome_of_the_rock_01"
+			has_building_or_higher = "temple_in_jerusalem_01"
+		}
+		NOT = { county = { development_level > terrible_development_level } }
+	}
+}
+jerusalem_sprawl_01 = {
+	is_graphical_background = yes
+	asset = { type = entity name = jerusalem_sprawl_01 }
+	is_enabled = {
+		exists = barony.holder
+		barony = title:b_jerusalem
+		NOR = {
+			has_building_or_higher = "dome_of_the_rock_01"
+			has_building_or_higher = "temple_in_jerusalem_01"
+		}
+		NOT = { county = { development_level > terrible_development_level } }
+	}
+}
+
+### SPECIAL NO HOLDING VISIBLE ###
+
+walls_00_no_holding = {
+	is_graphical_background = yes
+	# This is an empty asset with no locators to spawn holding graphics.
+	is_enabled = {
+		OR = {
+			has_building_or_higher = "walls_of_benin_01"
+		}
+	}
+}

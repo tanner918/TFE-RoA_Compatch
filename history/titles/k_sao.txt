@@ -1,0 +1,77 @@
+﻿k_sao = {
+	361.1.1 = {	change_development_level = 0 }
+	761.1.1 = {	change_development_level = 1 }
+
+	340.1.1 = {
+		holder = sao_09
+		government = tribal_government
+	}
+	419.1.1= {
+		holder = 0
+	}
+}
+
+d_baguirmi = {
+	361.1.1 = {	change_development_level = 1 }
+	532.1.1 = { change_development_level = 2 }
+	761.1.1 = {	change_development_level = 3 }
+
+	340.1.1 = {
+		holder = sao_09
+		government = tribal_government
+	}
+	419.1.1= {
+		holder = 0
+	}
+}
+
+c_baguirmi = {
+	340.1.1 = {
+		holder = sao_09
+		government = tribal_government
+	}
+}
+
+d_wandala = {
+	361.1.1 = {	change_development_level = 1 }
+	532.1.1 = { change_development_level = 2 }
+	761.1.1 = {	change_development_level = 3 }
+
+	340.1.1 = {
+		holder = sao_10
+		government = tribal_government
+		liege = k_sao
+	}
+	419.1.1= {
+		holder = 0
+	}
+}
+
+c_wandala = {
+	340.1.1 = {
+		holder = sao_10
+		government = tribal_government
+	}
+}
+
+d_salamat = {
+	361.1.1 = {	change_development_level = 1 }
+	532.1.1 = { change_development_level = 2 }
+	761.1.1 = {	change_development_level = 3 }
+
+	340.1.1 = {
+		holder = sao_11
+		government = tribal_government
+		liege = k_sao
+	}
+	419.1.1= {
+		holder = 0
+	}
+}
+
+c_salamat = {
+	340.1.1 = {
+		holder = sao_11
+		government = tribal_government
+	}
+}

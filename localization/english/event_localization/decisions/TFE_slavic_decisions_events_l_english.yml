@@ -1,0 +1,15 @@
+﻿l_english:
+
+ TFE_slavic_decisions_event.0001.t:0 "The Birth of Croatia"
+ TFE_slavic_decisions_event.0001.desc:0 "Years ago, Slavic tribes made their way to the land the Romans once called [GetGeographicalRegion('custom_roman_illyricum').GetName]. The ancient Illyrians, once feared across the Mediterranean, are no longer the masters of this region. These Slavs, dominated by the [founder.GetCulture.GetName] tribes, have since successfully settled across the rugged mountains and sprawling coastlines of their new homes.\n\nNow that they have established themselves in this region, under the leadership of [founder.GetFirstName], they have formed a new kingdom, and given Illyria a new name: [GetTitleByKey('k_croatia_slav').GetNameNoTier]. Perhaps under [founder.GetHerHis] rule and that of [founder.GetHerHis] descendants, this land will become wealthy and feared once more – this time, however, instead of looking to the Mediterranean as the source of its prosperity and culture, perhaps it will look towards the other lands settled by the Slavic peoples in Eastern Europe."
+ TFE_slavic_decisions_event.0001.a:0 "Who knows what the fate of these Slavs will be?"
+ TFE_slavic_decisions_event.0002.t:0 "The Birth of Poland"
+ TFE_slavic_decisions_event.0002.desc:0 "Years ago, Slavic tribes made their way to the lands in the middle and lower reaches of the Vistula River. These meadows, forests, and hills were once inhabited by Germanic peoples, but are now home to great numbers of Slavs, in particular the dominant [founder.GetCulture.GetName] tribes. They have made this fertile land their home, and few doubt that they will stay there for generations to come.\n\nBecause of this, these tribes, under the guiding hand of [founder.GetFirstName], have come to the realization that if they are to solidify their rule, they need to establish a kingdom there for themselves. [founder.GetFirstNameNoTooltip] has settled on calling this new kingdom [GetTitleByKey('k_poland_slav').GetNameNoTier]. There is, regardless, no doubt that this is an important day in this history's region."
+ TFE_slavic_decisions_event.0002.a:0 "$TFE_slavic_decisions_event.0001.a$"
+ TFE_slavic_decisions_event.0003.t:0 "The Birth of Czechia"
+ TFE_slavic_decisions_event.0003.desc:0 "Years ago, Slavic tribes trekked across the Carpathians, heading westwards, and found themselves in the hilly lands by the Elbe river and its tributaries. The region's former Germanic inhabitants gave way to these new Slavic arrivals, who have been dominated in particular by the [founder.GetCulture.GetName] tribes.\n\nThe Slavs here have worked hard to make for themselves a new home in this region. As such, one of their leaders, [founder.GetFirstName], has decided it is time to establish a new kingdom in this land, called [GetTitleByKey('k_bohemia_slav').GetNameNoTier] In doing so, the Slavs here can rest assured that they have a homeland to call their own for many years to come.."
+ TFE_slavic_decisions_event.0003.a:0 "$TFE_slavic_decisions_event.0001.a$"
+
+
+ # Whether they displaced, eradicated, or assimilated the local inhabitants, 
+ # Croatia now stands where Illyria once stood.

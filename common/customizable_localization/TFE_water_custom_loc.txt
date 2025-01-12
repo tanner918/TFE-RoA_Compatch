@@ -1,0 +1,15 @@
+﻿sea_black = {
+	type = character
+	text = {
+		trigger = {
+			culture = {
+				is_roman = yes
+			}
+		}
+		localization_key = sea_black_latin
+	}
+	text = {
+		localization_key = sea_black_common
+		fallback = yes
+	}
+}

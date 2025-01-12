@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "male_headgear_secular_celtic_torque_03_mesh"
+	file = "male_headgear_secular_celtic_torque_03.mesh"
+
+	meshsettings = {
+		name = "male_headgear_secular_celtic_torque_03Shape"
+		index = 0
+		texture_diffuse = "torque_03_diffuse.dds"
+		texture_normal = "torque_03_normal.dds"
+		texture_specular = "torque_03_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "male_headgear_secular_celtic_torque_03_entity"
+	pdxmesh = "male_headgear_secular_celtic_torque_03_mesh"
+}

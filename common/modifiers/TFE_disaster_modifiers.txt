@@ -1,0 +1,32 @@
+﻿
+TFE_365_earthquake_earthquake_damage = {
+	icon = county_modifier_development_negative
+	build_gold_cost = 0.1
+	epidemic_resistance = -5
+	tax_mult = -0.1
+	county_opinion_add = -5
+	travel_danger = 5
+	monthly_county_control_decline_add = -0.2
+	development_decline_factor = 0.2
+	development_decline = -0.1
+}
+
+TFE_365_earthquake_tsunami_damage = {
+	icon = county_modifier_development_negative
+	build_gold_cost = 0.05
+	epidemic_resistance = -10
+	tax_mult = -0.1
+	monthly_county_control_decline_add = -0.1
+	development_decline_factor = 0.1
+	development_decline = -0.05
+}
+
+TFE_365_earthquake_tsunami_damage_alexandria = {
+	icon = county_modifier_development_negative
+	build_gold_cost = 0.15
+	epidemic_resistance = -15
+	tax_mult = -0.15
+	monthly_county_control_decline_add = -0.2
+	development_decline_factor = 0.2
+	development_decline = -0.1
+}

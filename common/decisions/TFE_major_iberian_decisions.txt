@@ -1,0 +1,111 @@
+﻿become_king_of_cantabria = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	}
+	decision_group_type = major
+
+	desc = become_king_of_cantabria_desc
+	
+	ai_goal = yes
+	ai_will_do = {
+		base = 100
+	}
+	#ai_check_interval = 120
+
+	is_shown = {
+		is_ruler = yes
+		is_landed_or_landless_administrative = yes
+		NOT = { exists = global_var:cantabria_exists }
+		culture = culture:cantabrian
+	}
+
+	is_valid = {
+		prestige_level >= high_prestige_level
+		completely_controls_region = custom_cantabria
+	}
+
+	is_valid_showing_failures_only = {
+		is_independent_ruler = yes
+	}
+
+	effect = {
+		set_global_variable = {
+			name = cantabria_exists
+			value = yes
+		}
+		custom_tooltip = become_king_of_cantabria_tooltip
+		
+
+		trigger_event = {
+			id = cantabria.0001
+			days = 5
+		}
+		
+		hidden_effect = {
+			title:k_cantabria = {
+				set_de_jure_liege_title = title:c_ipuskoa.empire
+			}
+			title:c_ipuskoa = {
+				set_de_jure_liege_title = title:d_south_cantabria
+			}
+			title:c_viscaya = {
+				set_de_jure_liege_title = title:d_south_cantabria
+			}
+			title:c_asturias_de_santillana = {
+				set_de_jure_liege_title = title:d_south_cantabria
+			}
+			title:c_asturias_de_oviedo = {
+				set_de_jure_liege_title = title:d_south_cantabria
+			}
+			title:c_pravia = {
+				set_de_jure_liege_title = title:d_south_cantabria
+			}
+			title:c_coruna = {
+				set_de_jure_liege_title = title:d_south_cantabria
+			}
+			title:c_santiago = {
+				set_de_jure_liege_title = title:d_south_cantabria
+			}
+			title:c_labourd = {
+				set_de_jure_liege_title = title:d_east_cantabria
+			}
+			title:c_albret = {
+				set_de_jure_liege_title = title:d_east_cantabria
+			}
+			title:c_bordeaux = {
+				set_de_jure_liege_title = title:d_east_cantabria
+			}
+			title:c_albret = {
+				set_de_jure_liege_title = title:d_east_cantabria
+			}
+			title:d_east_cantabria = {
+				set_de_jure_liege_title = title:k_cantabria
+			}
+			title:d_south_cantabria = {
+				set_de_jure_liege_title = title:k_cantabria
+			}
+			title:d_aragon = {
+				set_de_jure_liege_title = title:k_cantabria
+			}
+			
+		}
+		create_title_and_vassal_change = {
+			type = created
+			save_scope_as = title_change
+			add_claim_on_loss = no
+		}
+		title:k_cantabria = {
+			save_scope_as = title_k_cantabria
+		}
+		title:k_cantabria = {
+			change_title_holder = {
+				holder = root
+				change = scope:title_change
+			}
+			save_scope_as = title_k_cantabria
+		}
+		resolve_title_and_vassal_change = scope:title_change
+	}
+
+	cost = { gold = { value = 500 } }
+}
