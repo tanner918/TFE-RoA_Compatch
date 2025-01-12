@@ -16,19 +16,14 @@
 #	These groups are mutually exclusive on the same tier & should cover every part of the map
 ###########################################################################
 
-
-
-world_europe_north_longboats = { # Is same as world_europe_north, with the Estonia stuff added on
+world_europe_north_longboats = { # GOOD
 	duchies = {
 		#Sweden
 		d_ostergotland d_gotland d_vastergotland d_svealand d_norrland d_smaland d_bergslagen
-		# d_uppland d_bergslagen
 		#Norway
 		d_viken d_agder d_vestlandi d_trandalog d_dalir d_halogaland d_iceland d_northern_isles d_jamtland
-		# d_orkney d_vestlandet d_ostlandet d_trondelag
 		#Finland
 		d_karelia d_finland d_savo d_pohjanmaa
-		# d_kola
 		#Denmark
 		d_skane d_sjaelland d_jylland d_slesvig
 		#Sapmi
@@ -37,23 +32,31 @@ world_europe_north_longboats = { # Is same as world_europe_north, with the Eston
 		d_esthonia d_livonia d_latgalians d_courland
 	}
 }
-world_europe_east_minus_hungary = {
+world_europe_east_minus_hungary = { # GOOD
 	duchies = {
 		#Wendish minus Pomerania minus Bohemia
-		d_mazovia d_upper_silesia d_lower_silesia d_lesser_poland d_wielkopolska d_kuyavia d_livonia d_prussia d_masuria d_grodno d_pinsk d_minsk d_polotsk d_smolensk d_lithuanians d_courland d_latgalians d_samogitia
-		# d_greater_poland d_silesia d_yatviags
-		#Russia
-		d_novgorod d_vepsia d_luki d_kiev d_karachev d_novosil d_opolye d_nizhny_novgorod d_turov d_chernigov d_ryazan d_pereyaslavl
-		# d_beloozero d_pskov
+		#Poland
+		d_mazovia d_upper_silesia d_lower_silesia d_lesser_poland d_wielkopolska d_kuyavia
+		#Lithuania
+		d_prussia d_masuria d_samogitia d_lithuanians d_courland d_latgalians
+		#White Rus
+		d_grodno d_pinsk d_minsk d_polotsk d_smolensk
+		#Novgorod
+		d_novgorod d_vepsia d_luki
+		#Ruthenia
+		d_kiev d_karachev d_novosil d_chernigov d_turov d_pereyaslavl
+		#Vladimir
+		d_opolye d_nizhny_novgorod d_ryazan
 		#Bjarmaland
 		d_biarmia d_vologda d_chudia d_ustyug
 		#Galicia-Volhynia
 		d_volhynia d_halych d_cherven_cities
-		#West Perm
 		#Estonia
-		d_esthonia
+		d_esthonia d_livonia
 		#Wallachia
-		d_oltenia d_muntenia d_transylvanian_alps d_moldova d_bugeac d_bukovina
+		d_oltenia d_muntenia d_transylvanian_alps
+		#Moldavia
+		d_moldova d_bugeac d_bukovina
 	}
 }
 
@@ -61,35 +64,11 @@ world_europe_east_minus_hungary = {
 # Custom Regions
 ###########################################################################
 
-custom_western_roman_empire = {
-	regions = { 
-		africae_diocese_region 
-		hispania_diocese_region  
-		italia_suburbicariae_diocese_region
-		italia_annonariae_diocese_region
-		illyricum_pannoniae_diocese_region
-		gallia_diocese_region
-		britannia_diocese_region
-		septem_provinciae_diocese_region
-	}
-}
-custom_western_roman_empire_no_britain = {
-	regions = { 
-		africae_diocese_region 
-		hispania_diocese_region  
-		italia_suburbicariae_diocese_region
-		italia_annonariae_diocese_region
-		illyricum_pannoniae_diocese_region
-		gallia_diocese_region
-		septem_provinciae_diocese_region
-	}
-}
 
-# Find where d_pisidia is in TFE and find its best alternative in RoA
-custom_core_galatia = {
+custom_core_galatia = { # Find where d_pisidia is in TFE and find its best alternative in RoA
 
 	duchies = {
-		d_bucellaria d_charsianon d_opsikion d_cappadocia d_anatolia d_pisidia # removed in TFE ## added back in ERE province rework
+		d_bucellaria d_charsianon d_opsikion d_cappadocia d_anatolia d_pisidia
 	}
 	counties = {
 		c_euchaita
@@ -97,8 +76,7 @@ custom_core_galatia = {
 	
 }
 
-# Check if d_tmutarakan exists (in RoA it is just right of Crimea), and if it is not (which likely means either d_crimea or d_azov takes its place), then add d_tmutarakan to custom_core_bosporus
-custom_core_bosporus = {
+custom_core_bosporus = { # Check if d_tmutarakan exists (in RoA it is just right of Crimea), and if it is not (which likely means either d_crimea or d_azov takes its place), then add d_tmutarakan to custom_core_bosporus
 	
 	duchies = {
 		d_crimea d_azov
@@ -108,7 +86,7 @@ custom_core_bosporus = {
 	}
 }
 
-custom_cumbrian = {
+custom_cumbrian = { # GOOD
 
 	duchies = {
 		d_york d_northumberland d_lothian d_galloway d_lancaster
@@ -116,51 +94,61 @@ custom_cumbrian = {
 	
 }
 
-# PICK UP HERE
-custom_cornish = {
+custom_cornish = { # GOOD
+
+	duchies = {
+		d_somerset d_cornwall d_canterbury d_bedford d_norfolk
+	}
 
 	counties = {
-		c_berkshire c_wiltshire c_hampton c_dorset c_somerset c_devon c_cornwall c_middlesex c_essex c_bedford c_hertfordshire c_buckinghamshire c_huntingdonshire c_kent c_surrey c_sussex c_norfolk c_suffolk c_cambridgeshire c_isle_of_wight
+		c_berkshire c_wiltshire c_huntingdonshire
 	}
 	
 }
 
-custom_welsh = {
+custom_welsh = { # GOOD
+
+	duchies = {
+		d_gwynedd d_powys d_deheubarth
+	}
 
 	counties = {
-		c_hereford c_gloucestershire c_oxfordshire c_worcestershire c_shropshire c_warwickshire c_leicestershire c_nottinghamshire c_staffordshire c_northamptonshire c_carmarthenshire c_pembrokeshire c_glamorgan c_monmouthshire c_brecknockshire c_maldwyn c_sir_faesyfed c_cardiganshire c_merioneth c_caernarfonshire c_anglesey c_denbighshire
+		c_hereford c_gloucestershire c_oxfordshire c_worcestershire c_shropshire c_warwickshire c_leicestershire c_nottinghamshire c_staffordshire c_northamptonshire
 	}
 	
 }
 
-custom_roman_britannia = {
+custom_roman_britannia = { # GOOD
 	duchies = {
 		d_bedford d_northumberland d_lancaster d_york d_norfolk d_hereford d_gloucester d_canterbury d_somerset d_cornwall d_gwynedd d_powys d_deheubarth
 	}
 }
 
-custom_gaul = {
+custom_gaul = { # GOOD
 	duchies = {
-		d_gascogne d_armagnac d_aquitaine d_toulouse d_languedoc d_provence d_savoie d_burgundy d_upper_burgundy d_alsace d_upper_lorraine d_normandy d_brittany d_poitou d_anjou d_berry d_orleans d_bourbon d_auvergne d_valois d_champagne d_brabant d_flanders d_luxembourg d_bar d_dauphine d_transjurania
+		d_gascogne d_armagnac d_aquitaine d_toulouse d_languedoc d_provence d_savoie d_burgundy d_upper_burgundy d_alsace d_upper_lorraine d_normandy d_brittany d_poitou d_anjou d_berry d_orleans d_bourbon d_auvergne d_valois d_champagne d_brabant d_flanders d_luxembourg d_bar d_dauphine d_transjurania d_julich
 	}
 	counties = {
-		c_zeeland c_guelders c_cleves c_cologne c_koblenz c_mainz c_kaiserslautern c_speyer c_worms c_maastricht c_aachen
+		c_zeeland c_guelders c_cologne c_koblenz c_mainz c_kaiserslautern c_speyer c_worms
 	}
 }
 
-custom_brittany = {
-	counties = {
-		c_vannes c_nantes c_cornouaille c_french_leon c_penthievre c_rennes
+custom_brittany = { # GOOD
+	duchies = {
+		d_brittany
 	}
 }
 
-custom_cantabria = {
+custom_cantabria = { # GOOD
+	duchies = {
+		d_viscaya d_asturias
+	}
 	counties = {
-		c_ipuskoa c_viscaya c_asturias_de_santillana c_asturias_de_oviedo c_pravia c_coruna c_santiago c_labourd c_albret c_bordeaux
+		c_asturias_de_santillana c_coruna c_santiago c_labourd c_albret c_bordeaux
 	}
 }
 
-custom_red_sea = {
+custom_red_sea = { # GOOD, but check if d_cairo is in TFE, as d_delta and d_al-said border it in RoA, but its not in this list
 	duchies = {
 		#outside the regular kingdoms
 		d_al-said d_delta d_mecca d_medina d_shammar d_sinai
@@ -175,7 +163,7 @@ custom_red_sea = {
 	}
 }
 
-custom_red_sea_entrance = {
+custom_red_sea_entrance = { # GOOD
 	duchies = {
 		d_aksum d_dahlaks d_danakil d_sanaa d_taizz
 	}
@@ -186,35 +174,35 @@ custom_red_sea_entrance = {
 #####################
 
 ### Special Anglo-Saxon region
-special_anglo_saxon_culture_region = {
+special_anglo_saxon_culture_region = { # GOOD
 	duchies = {
 		#England
 		d_bedford d_northumberland d_york d_norfolk d_hereford d_gloucester d_canterbury d_somerset
 	}
 }
 
-region_norway = {
+region_norway = { # GOOD
 	duchies = {
 		#k_norway
 		d_viken d_agder d_vestlandi d_trandalog d_dalir d_halogaland d_jamtland
 	}
 }
 
-custom_jerusalem = {
-	counties = {
-		c_jaffa c_ghazza c_jerusalem c_acre c_tiberias c_irbid c_negev c_kerak
+custom_jerusalem = { # GOOD
+	duchies = {
+		d_palestine d_urdunn d_oultrejourdain
 	}
 }
 
 # TFE CULTURE REGIONS
 # Aestian split
-custom_igaunian = {
+custom_igaunian = { # GOOD
 	duchies = {
 		# Estonia
 		d_esthonia d_livonia
 	}
 }
-custom_latgalian = {
+custom_latgalian = { # GOOD
 	duchies = {
 		# Estonia
 		d_esthonia d_livonia
@@ -229,25 +217,25 @@ custom_latgalian = {
 		d_finland d_savo d_karelia d_pohjanmaa
 	}
 }
-custom_curonian = {
+custom_curonian = { # GOOD
 	counties = {
 		# Vanemane and Grobin
 		c_vanemane c_grobin
 	}
 }
-custom_semigallian = {
+custom_semigallian = { # GOOD
 	counties = {
 		# Zemigalians
 		c_zemigalians
 	}
 }
-custom_selonian = {
+custom_selonian = { # GOOD
 	counties = {
 		# Selpils
 		c_selpils
 	}
 }
-custom_lithuanian = {
+custom_lithuanian = { # GOOD
 	duchies = {
 		# Lithuania
 		d_lithuanians
@@ -255,23 +243,20 @@ custom_lithuanian = {
 		# White Rus
 		d_grodno d_pinsk d_minsk d_polotsk d_smolensk d_samogitia
 	}
-	counties = {
-		c_grodno c_trakai
-	}
 }
-custom_samogitian = {
+custom_samogitian = { # Commented out, doesn't seem like its actually used
 	duchies = {
 		# Samogitia
 		# d_samogitia
 	}
 }
-custom_sudovian = {
+custom_sudovian = { # GOOD
 	counties = {
 		# Sudovian and Yatvyagi
 		c_angerburg c_yatvyagi
 	}
 }
-custom_prussian = {
+custom_prussian = { # GOOD
 	duchies = {
 		# Prussia
 		d_prussia
@@ -283,24 +268,24 @@ custom_prussian = {
 		d_wielkopolska d_kuyavia d_lesser_poland d_upper_silesia d_lower_silesia
 	}
 }
-custom_galindian = {
+custom_galindian = { # GOOD
 	duchies = {
 		# PÅ‚ock and Mazovia
-		d_plock d_mazovia
+		d_mazovia
 	}
 	counties = {
 		# Galindia except Sudovian
 		c_torun c_osterode c_allenstein c_bartenstein
 	}
 }
-custom_aestian = {
+custom_aestian = { # GOOD
 	regions = {
 		custom_igaunian custom_latgalian custom_curonian custom_semigallian custom_selonian custom_lithuanian custom_samogitian custom_sudovian custom_prussian custom_galindian
 	}
 }
 
 # Fenni split
-custom_finnish = {
+custom_finnish = { # GOOD
 	duchies = {
 		# Finland except Karelia
 		d_finland d_savo d_karelia d_pohjanmaa
@@ -312,7 +297,7 @@ custom_finnish = {
 		d_viken d_agder d_vestlandi d_dalir d_trandalog d_halogaland
 	}
 }
-custom_karelian = {
+custom_karelian = { # GOOD
 	duchies = {
 		# Karelia
 		d_karelia
@@ -321,7 +306,7 @@ custom_karelian = {
 		d_biarmia d_ustyug d_chudia d_vologda
 	}
 }
-custom_estonian = {
+custom_estonian = { # GOOD
 	duchies = {
 		# Estonia
 		d_esthonia
@@ -330,28 +315,28 @@ custom_estonian = {
 		d_novgorod d_luki d_vepsia
 	}
 }
-custom_livonian = {
+custom_livonian = { # GOOD
 	duchies = {
 		# Livonia
 		d_livonia d_latgalians d_courland
 
 		# Lithuania
-		d_lithuanians d_samogitia d_sudovia
+		d_lithuanians d_samogitia
 
 		# Prussia
-		d_prussia d_masuria d_plock
+		d_prussia d_masuria
 
 		# White Rus
 		d_grodno d_pinsk d_minsk d_polotsk d_smolensk
 	}
 }
-custom_sami = {
+custom_sami = { # GOOD
 	duchies = {
 		# SÃ¡pmi
 		d_guoldat d_giemajohka d_vuovdisamieana d_duortnoseatnu d_aarjetje
 	}
 }
-custom_fenni = {
+custom_fenni = { # GOOD
 	regions = {
 		custom_finnish custom_karelian custom_estonian custom_livonian custom_sami
 	}
@@ -2143,6 +2128,30 @@ africae_diocese_region = {
 		c_djerba
 		c_syrte
 		c_west_qamuda
+	}
+}
+
+custom_western_roman_empire = {
+	regions = { 
+		africae_diocese_region 
+		hispania_diocese_region  
+		italia_suburbicariae_diocese_region
+		italia_annonariae_diocese_region
+		illyricum_pannoniae_diocese_region
+		gallia_diocese_region
+		britannia_diocese_region
+		septem_provinciae_diocese_region
+	}
+}
+custom_western_roman_empire_no_britain = {
+	regions = { 
+		africae_diocese_region 
+		hispania_diocese_region  
+		italia_suburbicariae_diocese_region
+		italia_annonariae_diocese_region
+		illyricum_pannoniae_diocese_region
+		gallia_diocese_region
+		septem_provinciae_diocese_region
 	}
 }
 
