@@ -132,7 +132,7 @@ custom_roman_britannia = { # GOOD
 	}
 }
 
-custom_gaul = { # GOOD ENOUGH, CHECK WITH TFE
+custom_gaul = { # GOOD ENOUGH, CHECKED WITH TFE
 	duchies = {
 		d_gascogne d_armagnac d_aquitaine d_toulouse d_languedoc d_provence d_savoie d_burgundy d_upper_burgundy d_alsace d_upper_lorraine d_normandy d_brittany d_poitou d_anjou d_berry d_orleans d_bourbon d_auvergne d_valois d_champagne d_brabant d_flanders d_luxembourg d_bar d_dauphine d_transjurania d_julich
 	}
@@ -534,7 +534,7 @@ custom_antean = { # GOOD, CHECKED WITH TFE
 
 # Sclavenian split
 # All of this is very much subject to change, this currently follows the migration of White Croats and White Serbs
-custom_croatian = { # GOOD
+custom_croatian = { # GOOD ENOUGH, CHECKED WITH TFE
 	duchies = {
 		# Bjarmaland
 		d_biarmia d_ustyug d_chudia d_vologda
@@ -589,13 +589,13 @@ custom_croatian = { # GOOD
 
 		# Italia Suburbicariae
 		d_ancona d_toscana d_spoleto d_latium d_benevento d_apulia d_calabria d_sicily d_corsica d_sardinia
-		d_salerno # Had to add to cover same area
+		d_salerno d_capua d_venice # Had to add to cover same area
 
 		# Part of Galicia-Volhynia
 		d_volhynia d_cherven_cities
 	}
 }
-custom_serbian = { # GOOD
+custom_serbian = { # GOOD ENOUGH, CHECKED WITH TFE
 	duchies = {
 		# Vladimir
 		d_nizhny_novgorod d_opolye d_ryazan
@@ -623,6 +623,7 @@ custom_serbian = { # GOOD
 
 		# Dacia 2
 		d_macva d_vidin d_duklja d_bulgaria
+		d_rashka # had to add to cover same area
 		#d_dacia_mediterrania # custom duchy for TFE, but it is already covered by other included titles
 
 		# Getia
@@ -640,7 +641,7 @@ custom_serbian = { # GOOD
 		#d_skopje # custom duchy for TFE, but it is already covered by other included titles
 	}
 }
-custom_sclavenian = { # GOOD
+custom_sclavenian = { # GOOD ENOUGH, CHECKED WITH TFE (MIGHT NEED TO GO THROUGH AND EDIT REGIONS TO REMOVE GAPS WHERE THEY DON'T MAKE SENSE)
 	regions = {
 		custom_croatian custom_serbian
 	}
@@ -648,35 +649,42 @@ custom_sclavenian = { # GOOD
 
 # Franks
 
-# Tiele
-custom_kirghiz = { # NEED TO LOOK AT IN TFE TO DETERMINE WHAT EXACTLY THIS IS
+# Tiele (Not a easy to match up given this is where RoA's map begins differing from TFE and base game a lot)
+custom_kirghiz = { # GOOD ENOUGH, CHECKED WITH TFE (JUST CHOSE THE DUCHIES THAT SEEMED TO MATCH THE BEST)
 	duchies = {
-		d_yenisei_kan
+		d_sagay d_biryus # roughly equivalent duchies from RoA
+		#d_yenisei_kan # TFE duchy
 	}
 }
-custom_uyghur = { # NEED TO LOOK AT IN TFE TO DETERMINE WHAT EXACTLY THIS IS
+custom_uyghur = { # GOOD ENOUGH, CHECKED WITH TFE (JUST CHOSE THE DUCHIES THAT SEEMED TO MATCH THE BEST)
 	duchies = {
-		d_naiman_gobi d_kara_khoja d_tarbagatai
+		d_tarbagatai
+		d_manas d_beiting d_turpan # had to add to cover roughly the same area
+		#d_naiman_gobi d_kara_khoja # TFE DUCHIES
 	}
 }
-custom_uriankhai = { # NEED TO LOOK AT IN TFE TO DETERMINE WHAT EXACTLY THIS IS
+custom_uriankhai = { # GOOD ENOUGH, CHECKED WITH TFE (JUST CHOSE THE DUCHIES THAT SEEMED TO MATCH THE BEST)
 	duchies = {
-		d_khakass_hollow d_shoria
+		d_shoria
+		d_min_usa # added to cover roughly the same region
+		#d_khakass_hollow $ TFE duchy
 	}
 }
-custom_tujue = { # NEED TO LOOK AT IN TFE TO DETERMINE WHAT EXACTLY THIS IS
+custom_tujue = { # GOOD ENOUGH, CHECKED WITH TFE (JUST CHOSE THE DUCHIES THAT SEEMED TO MATCH THE BEST) [Gokturks]
 	duchies = {
-		d_altay d_gurbantunggut d_semey d_alakol
+		d_altai d_semey d_alakol
+		d_qobaq d_dzungar # added to cover roughly same area
+		#d_gurbantunggut # TFE duchy
 	}
 }
-custom_tiele = { # NEED TO LOOK AT IN TFE TO DETERMINE WHAT EXACTLY THIS IS
+custom_tiele = { # GOOD ENOUGH, CHECKED WITH TFE (JUST CHOSE THE DUCHIES THAT SEEMED TO MATCH THE BEST)
 	regions = {
 		custom_kirghiz custom_uyghur custom_uriankhai custom_tujue
 	}
 }
 
 # Gothones
-custom_gothonic = { # GOOD
+custom_gothonic = { # GOOD, CHECKED WITH TFE
 	duchies = {
 		# d_pomerelia and neighboring duchies
 		d_pomerelia d_pommerania d_wielkopolska d_kuyavia d_mazovia d_plock d_masuria d_prussia
@@ -685,7 +693,7 @@ custom_gothonic = { # GOOD
 
 ### COUNCIL OF CHALCEDONIA REGIONS (might need to look into these regions and add the corresponding regions from RoA where they make sense)
 # Coptic: Eastern Africa + Yemen
-custom_council_chalcedonia_coptic = { # GOOD
+custom_council_chalcedonia_coptic = { # GOOD, CHECKED WITH TFE
 	regions = { world_africa_east }
 	duchies = {
 		# Egypt
@@ -695,12 +703,15 @@ custom_council_chalcedonia_coptic = { # GOOD
 	}
 }
 # Nestorian: Iran + Mesopotamia + Arabia and all that is east of that
-custom_council_chalcedonia_nestorian = { # GOOD
-	regions = { world_middle_east_persia world_mesopotamia world_india world_burma world_tibet world_steppe_east world_steppe_tarim }
+custom_council_chalcedonia_nestorian = { # GOOD, CHECKED WITH TFE
+	regions = {
+		world_middle_east_persia world_mesopotamia world_india world_burma world_tibet world_steppe_east world_steppe_tarim
+		world_manchuria world_china world_japan world_korea world_southeast_asia world_papua_new_guinea # Added from RoA to cover rest of Asia
+	}
 	duchies = { d_jawf d_najd d_asir d_yamama d_medina d_mecca d_al-hasa d_bahrain d_oman }
 }
 # Apostolic: Armenia
-custom_council_chalcedonia_apostolic = { # GOOD
+custom_council_chalcedonia_apostolic = { # GOOD ENOUGH, CHECKED WITH TFE
 	duchies = {
 		d_vaspurakan d_greater_armenia
 		#d_western_armenia # TFE duchy, adding the corresponding counties/provinces separately
@@ -713,34 +724,44 @@ custom_council_chalcedonia_apostolic = { # GOOD
 	}
 }
 # Syriac: Eastern Mediterranean like Jerusalem, Syria, etc.
-custom_council_chalcedonia_syriac = { # GOOD
+custom_council_chalcedonia_syriac = { # GOOD ENOUGH, CHECKED WITH TFE
 	regions = { world_middle_east_jerusalem world_jazira }
 	duchies = { d_amman }
 }
+# LOOK INTO ADDING THESE FAITH REGIONS WHERE APPLICABLE: Nasrani (Indian Christianity), Chiristenighe (Caucassian Christianity), Krstjani (Bosnian Christianity)
 # Note, counties not within any of these regions will default to Chalcedonian
 
 
-# Liang reigon
-custom_liang = { # NEED TO LOOK AT IN TFE TO DETERMINE WHAT EXACTLY THIS IS
+# Liang region
+custom_liang = { # GOOD ENOUGH, CHECKED WITH TFE (NEED TO SEE EXACTLY WHAT THIS REGION IS USED FOR TO DETERMINE WHETHER THIS SHOULD BE CHANGED/EXPANDED)
 	duchies = {
 		#Xia
-		d_xia d_wuluhai d_zhenfan d_liangzhou d_shanzhou d_qilin d_ganzhou d_yijinai d_guiyi d_aksay
+		d_xia d_liangzhou d_shanzhou d_qilin d_ganzhou d_yijinai d_guiyi d_aksay
+		d_fengzhou_china # added to cover roughly the same region
+		#d_wuluhai d_zhenfan
 	}
 }
 
-# Chinese influence reigon
-custom_chinese_influence_region = { # NEED TO LOOK AT IN TFE TO DETERMINE WHAT EXACTLY THIS IS
+# Chinese influence region
+custom_chinese_influence_region = { # GOOD ENOUGH, CHECKED WITH TFE (NEED TO SEE EXACTLY WHAT THIS REGION IS USED FOR TO DETERMINE WHETHER THIS SHOULD BE CHANGED/EXPANDED)
 	duchies = {
-		#Xia
-		d_xia d_wuluhai d_zhenfan d_liangzhou d_shanzhou d_qilin d_ganzhou d_yijinai d_guiyi d_aksay
 		#Dzungaria
-		d_altay d_kara_khoja d_gurbantunggut d_naiman_gobi
+		d_dzungar d_beiting d_turpan # added to cover roughly same region
+		#d_kara_khoja d_gurbantunggut d_naiman_gobi d_altai
 		# k_khotan
-		d_karashar d_khotan d_kashgar d_charkliq d_kucha
+		d_khotan d_kucha
+		d_yettishar d_konchi d_shanshan # added to cover roughly same region
+		#d_karashar d_kashgar d_charkliq
 		#Amdo
 		d_xining d_tuyuhun d_nagormo d_amdo d_zadoi d_qumarleb
 		#Gyalrong
 		d_gyalrong d_chakla d_golog d_malho d_gainlho
+	}
+	regions = {
+		custom_liang # Using this inplace of the equivalent titles to make it easier in case anything needs to be changed
+	}
+	counties = {
+		c_karasahr c_kuruk_tagh # added to cover roughly same region
 	}
 }
 
@@ -762,7 +783,7 @@ britannia_england_decision = { # GOOD
 }
 
 # Kushan Empire Core
-TFE_core_kushan_territories = {
+TFE_core_kushan_territories = { # GOOD, CHECKED WITH TFE
 	duchies = {
 		#Punjab
 		d_multan d_lahore d_gandhara
@@ -776,7 +797,7 @@ TFE_core_kushan_territories = {
 }
 
 # Kushan Empire Territories
-TFE_former_kushan_empire = { # GOOD
+TFE_former_kushan_empire = { # GOOD, CHECKED WITH TFE
 	duchies = {
 		#Punjab
 		d_multan d_lahore d_gandhara
@@ -796,7 +817,7 @@ TFE_former_kushan_empire = { # GOOD
 }
 
 # Palmyrene Empire Region
-custom_palmyrene_empire = { # GOOD
+custom_palmyrene_empire = { # GOOD, CHECKED WITH TFE
 	duchies = {
 		d_cilicia d_cappadocia d_charsianon d_sebasteia d_antioch d_aleppo d_diyarmudar d_palmyra d_homs d_lebanon d_damascus d_urdunn d_palestine d_amman d_shammar d_sinai d_delta d_alexandria d_cairo d_al-wahat d_al-said d_eastern_desert d_edessa d_diyarrabia d_mesopotamia
 		#d_sophene # TFE duchy, already covered by other titles
@@ -804,32 +825,33 @@ custom_palmyrene_empire = { # GOOD
 	}
 	counties = {
 		c_pamphylia c_selge c_philomelium c_galatia_salutaris c_galatia c_tall_basma c_amida c_bakriya c_isauria c_lycaonia c_mayyafariqin c_negev c_kerak
+		c_wajh # added to cover same region
 	}
 }
 
 # Hispano-Roman Split
-custom_balearic = { # GOOD
+custom_balearic = { # GOOD, CHECKED WITH TFE
 	duchies = {
 		# k_hispania
 		d_mallorca
 	}
 }
 
-custom_galecian = { # GOOD
+custom_galecian = { # GOOD, CHECKED WITH TFE
 	duchies = {
 		# k_spanish_galicia
 		d_galicia d_porto d_leon d_asturias d_castilla d_cantabria
 	}
 }
 
-custom_lusitanian = { # GOOD
+custom_lusitanian = { # GOOD, CHECKED WITH TFE
 	duchies = {
 		# k_badajoz
 		d_algarve d_beja d_coimbra d_badajoz
 	}
 }
 
-custom_baetican = { # GOOD
+custom_baetican = { # GOOD, CHECKED WITH TFE
 	duchies = {
 		# k_andalusia
 		d_cordoba d_sevilla d_granada
@@ -838,14 +860,14 @@ custom_baetican = { # GOOD
 
 # Gallo-Roman Split
 
-custom_armorican = { # GOOD
+custom_armorican = { # GOOD, CHECKED WITH TFE
 	duchies = {
 		# Brittany
 		d_brittany
 	}
 }
 
-custom_germanian = { # GOOD
+custom_germanian = { # GOOD, CHECKED WITH TFE
 	duchies = {
 		# k_lotharingia
 		d_brabant d_luxembourg d_julich d_upper_lorraine d_lower_lorraine d_alsace
@@ -855,7 +877,7 @@ custom_germanian = { # GOOD
 	}
 }
 
-custom_helvetian = { # GOOD
+custom_helvetian = { # GOOD, CHECKED WITH TFE
 	duchies = {
 		# k_burgundy
 		d_provence d_savoie d_upper_burgundy d_dauphine 
@@ -864,17 +886,18 @@ custom_helvetian = { # GOOD
 
 	counties = {
 		c_neuchatel c_bern c_aargau c_zurich c_grunningen c_sankt_gallen c_grisons
+		c_furstenberg # added to cover same region
 	}
 }
 
-custom_aquitan = { # GOOD
+custom_aquitan = { # GOOD, CHECKED WITH TFE
 	duchies = {
 		# k_aquitaine
 		d_poitou d_aquitaine d_bourbon d_auvergne d_toulouse d_languedoc d_armagnac d_gascogne
 	}
 }
 
-custom_worms = { # GOOD
+custom_worms = { # GOOD, CHECKED WITH TFE
 	duchies = {
 		d_alsace
 		d_west_franconia
@@ -882,7 +905,7 @@ custom_worms = { # GOOD
 	}
 }
 
-custom_gallo_roman = { # GOOD
+custom_gallo_roman = { # GOOD, CHECKED WITH TFE
 	regions = { custom_gaul }
 	duchies = {
 		#Extra from custom_germanian
@@ -929,7 +952,7 @@ old_north = { # GOOD
 		d_northumberland d_lancaster d_lothian d_galloway
 	}
 }
-custom_caucasian_empire = { # NEED TO CHECK TFE TO SEE EXACTLY WHAT THIS IS
+custom_caucasian_empire = { # NEED TO CHECK TFE TO SEE EXACTLY WHAT THIS IS (Allows the TFE_create_caucasian_empire decision to be taken if character owns entire region)
 	duchies = {
 		d_vaspurakan
 		d_greater_armenia
@@ -1105,7 +1128,7 @@ TFE_roman_persian_struggle_not_core_region = { # GOOD
 	}
 }
 
-region_rouran_lands = { # NEED TO SEE TFE FOR EXACTLY WHAT THIS REGION IS
+region_rouran_lands = { # NEED TO SEE TFE FOR EXACTLY WHAT THIS REGION IS (Used to have Rouran characters prefer conquering this region, and then to take the TFE_establish_the_rouran_khaganate decision)
 	duchies = {
 		d_ovorkhangai
 		d_arkhangai
