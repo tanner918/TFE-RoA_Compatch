@@ -1023,19 +1023,20 @@ region_gurgan_wall = { # GOOD, CHECKED WITH TFE
 	}
 }
 
-TFE_qanat_region = { # GOOD
+TFE_qanat_region = { # GOOD ENOUGH, CHECKED WITH TFE (i THINK THIS IS USED FOR AN INNOVATION, BUT NEED TO SEE WHAT IT REALLY REPRESENTS TO SEE IF THIS SHOULD BE EXPANDED/CHANGED)
 	regions = {
 		world_middle_east world_africa_north world_africa_sahara world_steppe_tarim world_europe_west_iberia custom_sicily
+		world_middle_east_persia # added to cover roughly same region
 	}
 }
 
-TFE_roman_persian_struggle_region = { # GOOD ENOUGH, CHECK WITH TFE (CHANGED TO JUST BE BASED OFF THE CORRESPONDING REGIONS SINCE ITS PRETTY MUCH THE SAME THING)
+TFE_roman_persian_struggle_region = { # GOOD ENOUGH, CHECKED WITH TFE
 	regions = {
 		TFE_roman_persian_struggle_roman_core_region TFE_roman_persian_struggle_persian_core_region TFE_roman_persian_struggle_not_core_region
 	}
 }
 
-TFE_roman_persian_struggle_roman_core_region = { # GOOD
+TFE_roman_persian_struggle_roman_core_region = { # GOOD ENOUGH, CHECKED WITH TFE
 	duchies = {
 		#Anatolia
 		d_ephese d_opsikion d_cilicia d_cibyrrhaeot d_anatolia d_thracesia d_optimatoi d_bucellaria d_paphlagonia d_armeniac d_sebasteia d_charsianon d_cappadocia d_chaldia d_hellespontus d_caria d_lycia d_honorias d_phyrgia_pacatiana d_phyrgia_salutaris d_galatia_salutaris d_isauria d_cilicia_secunda d_pisidia
@@ -1056,7 +1057,7 @@ TFE_roman_persian_struggle_roman_core_region = { # GOOD
 	}
 }
 
-TFE_roman_persian_struggle_persian_core_region = { # GOOD
+TFE_roman_persian_struggle_persian_core_region = { # GOOD ENOUGH, CHECKED WITH TFE
 	duchies = {
 		#Persia
 		d_khuzestan 	
@@ -1067,7 +1068,7 @@ TFE_roman_persian_struggle_persian_core_region = { # GOOD
 	}
 }
 
-TFE_roman_persian_struggle_not_core_region = { # GOOD
+TFE_roman_persian_struggle_not_core_region = { # GOOD ENOUGH, CHECKED WITH TFE
 	duchies = {
 		#k_daylam
 		d_azerbaijan 
@@ -1082,6 +1083,7 @@ TFE_roman_persian_struggle_not_core_region = { # GOOD
 		d_mesopotamia d_vaspurakan d_greater_armenia 
 		#Georgia
 		d_tao-klarjeti d_abkhazia d_georgia
+		d_odishi # added to cover same region
 		#Azerbaijan
 		d_shirvan d_albania
 	}
@@ -1090,31 +1092,34 @@ TFE_roman_persian_struggle_not_core_region = { # GOOD
 	}
 }
 
-region_rouran_lands = { # NEED TO SEE TFE FOR EXACTLY WHAT THIS REGION IS (Used to have Rouran characters prefer conquering this region, and then to take the TFE_establish_the_rouran_khaganate decision)
+region_rouran_lands = { # GOOD ENOUGH, CHECKED WITH TFE (MIGHT NEED TO SEE IF IT'D MAKE SENSE TO EXPAND THIS) (Used to have Rouran characters prefer conquering this region, and then to take the TFE_establish_the_rouran_khaganate decision)
 	duchies = {
 		d_ovorkhangai
-		d_arkhangai
 		d_otuken
 		d_ogrash
-		d_selenga_valley
-		d_uda_valley
-
+		d_khori-tumat d_khamar-daban d_khilok d_khentii # added to cover roughly the same region
+		#d_arkhangai d_selenga_valley d_uda_valley # TFE Duchies
 	}
 	counties = {
 		c_kotokel
-		c_yera
+		c_chikoi c_togochak c_bukhan_khaldun c_khuduu_aral c_telmen c_oold c_yeson_bulag c_jiucai_TEMP # added to cover roughly same region
+		#c_yera # TFE county
 	}
 }
 
-region_assyria = { # GOOD
+region_assyria = { # GOOD ENOUGH, CHECKED WITH TFE
 	duchies = {
 		d_diyarrabia d_diyarmudar d_diyarbakr d_euphrates
-		d_kermanshah d_basra d_baghdad d_samarra d_kurdistan d_wasit d_kufa		
+		d_kermanshah d_basra d_baghdad d_samarra d_kurdistan d_wasit 		
 		d_aleppo d_edessa d_palmyra d_homs d_antioch d_cilicia
+		#d_kufa # Need to do by counties instead
+	}
+	counties = {
+		c_batiha c_kufa c_akhadid c_qadisiya c_damascus c_baalbek c_juwair # added to cover roughly same region
 	}
 }
 
-region_assyria_greater = { # GOOD
+region_assyria_greater = { # GOOD ENOUGH, CHECKED WITH TFE
 	regions = {
 		region_assyria
 
@@ -1134,13 +1139,17 @@ region_assyria_greater = { # GOOD
 	}
 }
 
-region_pirate_illyria = { # GOOD
+region_pirate_illyria = { # GOOD ENOUGH, CHECKED WITH TFE
 	duchies = {
 		d_apulia d_benevento d_spoleto d_ancona d_romagna d_verona d_friuli d_croatia d_dalmatia d_usora d_duklja
+		d_venice # added to cover same region
+	}
+	counties = {
+		c_rashka c_zlatibor c_podrinje # added to cover same region
 	}
 }
 
-region_pirate_illyria_greater = { # GOOD
+region_pirate_illyria_greater = { # GOOD ENOUGH, CHECKED WITH TFE
 	regions = {
 		region_pirate_illyria
 
@@ -1155,7 +1164,21 @@ region_pirate_illyria_greater = { # GOOD
 	}
 }
 
-TFE_eastern_iranian_struggle_region = { # NEED TO LOOK AT TFE TO SEE WHAT REGION IS
+TFE_eastern_iranian_struggle_region = { # GOOD ENOUGH, CHECKED WITH TFE (NEED TO FIGURE OUT WHAT I AM DOING WITH c_baghdad SINCE IT WAS ONLY INCLUDED SO SASSANID EMPIRE WAS INVOLVED IN STRUGGLE)
+	regions = {	
+		# changed definition to just be based off the minus_counties version since they are pretty much the same except for the three counties
+		TFE_eastern_iranian_struggle_region_minus_counties
+	}	
+	counties = {
+		# Persian Capital
+		c_baghdad # added to cover roughly same region
+		#c_ctesiphon # TFE county
+		# Daylam
+		c_gurgan c_dihistan
+	}
+}
+
+TFE_eastern_iranian_struggle_region_minus_counties = { # GOOD ENOUGH, CHECKED WITH TFE
 	duchies = {	
 		#k_khorasan
 		d_nishapur d_merv d_ghur d_herat d_balkh d_nasa d_kohestan
@@ -1165,6 +1188,7 @@ TFE_eastern_iranian_struggle_region = { # NEED TO LOOK AT TFE TO SEE WHAT REGION
 		d_kabul d_zabulistan
 		#Syr Darya
 		d_chah d_syr_darya
+		d_talas # added to cover roughly same region
 		#d_muyunkum # TFE duchy, adding counties separately
 		#Kashmir
 		d_pamir
@@ -1178,79 +1202,55 @@ TFE_eastern_iranian_struggle_region = { # NEED TO LOOK AT TFE TO SEE WHAT REGION
 		d_aral_il d_transcaspiana d_jemba
 	}	
 	counties = {
-		# Persian Capital
-		c_ctesiphon
-		# Daylam
-		c_gurgan c_dihistan
 		# d_muyunkum
 		c_balashagun 
+		c_barsghan c_naryn c_chun-illi c_muyunkum c_zhuan_tobe c_sarysu # added to cover roughly same region
 	}
 }
 
-TFE_eastern_iranian_struggle_region_minus_counties = { # NEED TO LOOK AT TFE TO SEE WHAT REGION IS
-	duchies = {	
-		#k_khorasan
-		d_nishapur d_merv d_ghur d_herat d_balkh d_nasa d_kohestan
-		#k_transoxiana
-		d_soghd d_badakhshan d_khuttal d_osrushana d_ferghana d_khorezm d_uzboy
-		#k_kabulistan
-		d_kabul d_zabulistan
-		#Syr Darya
-		d_chah d_syr_darya d_muyunkum
-		#Kashmir
-		d_pamir
-		#Makran
-		d_sistan		
-		#Punjab
-		d_gandhara
-		#Kashmir
-		d_kasmira		
-		# k_oghuz_il
-		d_aral_il d_transcaspiana d_jemba
-	}	
-	# counties = {
-	# 	# Persian Capital
-	# 	c_ctesiphon
-	# 	# Daylam
-	# 	c_gurgan c_dihistan
-	# }
-}
-
-TFE_nubia_and_ethiopia = { # NEED TO LOOK AT TFE TO SEE WHAT REGION IS
+TFE_nubia_and_ethiopia = { # GOOD, CHECKED WITH TFE
 	duchies = {
 		#Abyssinia
 		d_aksum d_dahlaks d_lasta d_gondar d_gojjam d_showa
 		#Nubia
-		d_nobatia d_makuria d_alwa d_sennar d_kush # d_shamir removed in TFE
+		d_nobatia d_makuria d_alwa d_sennar d_kush
+		d_shamir # added to cover same region
 		#Blemmyia
 		d_naqis d_bazin d_baqlin
 	}
 }
 
-custom_roman_germania = { # GOOD
+custom_roman_germania = { # GOOD ENOUGH, CHECKED WITH TFE
 	duchies = {
-		d_westfalen d_thuringia d_angria d_meissen d_anhalt d_ostfalen d_hesse d_west_franconia d_east_franconia d_swabia d_nordgau d_bructeria d_frisia d_utrecht d_holland
+		d_westfalen d_thuringia d_angria d_anhalt d_ostfalen d_hesse d_west_franconia d_east_franconia d_swabia d_nordgau d_bructeria d_frisia d_utrecht d_holland
+		d_gelre # added to cover roughly same region
+		# d_meissen # need to do by county
+	}
+	counties = {
+		c_stade c_naumburg c_vogtland c_wolkenstein c_osterland c_dresden c_meissen c_brene # added to cover roughly same region
 	}
 }
 
-custom_roman_heartland = { # GOOD
+custom_roman_heartland = { # GOOD ENOUGH, CHECKED WITH TFE
 	duchies = {
 		d_latium d_sardinia d_corsica d_apulia d_calabria d_benevento d_spoleto d_ancona d_romagna d_toscana d_genoa d_lombardia d_emilia d_friuli d_dalmatia d_slavonia d_syrmia d_croatia d_somogy d_carinthia d_salzburg d_currezia d_augsburg d_sicily d_pisa d_piedmonte d_istria d_krain d_bosna d_lower_bosna d_usora d_ragusa d_steyermark d_osterreich d_gyor d_verona
+		d_salerno d_capua # added to cover same region
 	}
 	counties = {
 		c_grunningen c_brixen c_lienz c_innsbruck c_falkenstein c_munchen c_frontenhausen c_geisenhausen c_rothenburg c_regensburg c_passau c_szekesfehervar c_visegrad c_eschenlohe
+		c_furstenberg # added to cover roughly same region
 	}
 }
 
-custom_roman_egypt = { # GOOD
+custom_roman_egypt = { # GOOD ENOUGH, CHECKED WITH TFE
 	duchies = {
 		d_alexandria
 		d_delta
 		d_cairo
 		d_al-said
 		d_cyrenaica
-		d_syrte
 		d_eastern_desert
+		#d_syrte # TFE changed the duchy, having it doesn't match for RoA
 	}
 	counties = {
 		c_kharga
@@ -1260,13 +1260,13 @@ custom_roman_egypt = { # GOOD
 	}
 }
 
-custom_roman_africae = { # GOOD
+custom_roman_africae = { # GOOD ENOUGH, CHECKED WITH TFE
 	duchies = {
 		d_tunis
 		d_kairouan
-		d_jerid
 		d_tripolitania
 		d_gabes
+		#d_jerid # having entire duchy doesn't match for RoA
 	}
 	counties = {
 		c_satif
@@ -1277,20 +1277,22 @@ custom_roman_africae = { # GOOD
 		c_constantine
 		c_tabassa
 		c_qashtiliya
+		c_labda c_syrte # added to cover roughly same region
 	}
 }
 
-custom_eastern_roman_heartland = {
+custom_eastern_roman_heartland = { # GOOD ENOUGH, CHECKED WITH TFE
 	duchies = {
 		d_thrace d_strymon d_thessalonika d_thessaly d_epirus d_dyrrachion d_cephalonia d_athens d_achaia d_skopje d_bulgaria d_duklja d_macva d_vidin d_philippopolis d_adrianopolis d_turnovo d_dobrudja d_dacia_mediterrania d_krete d_aegean_islands
 		d_cibyrrhaeot d_ephese d_thracesia d_opsikion d_optimatoi d_anatolia d_cyprus d_cilicia d_cappadocia d_charsianon d_armeniac d_paphlagonia d_bucellaria d_chaldia d_sebasteia d_sophene d_mesopotamia d_antioch d_melitene d_hellespontus d_caria d_lycia d_honorias d_phyrgia_pacatiana d_phyrgia_salutaris d_galatia_salutaris d_isauria d_cilicia_secunda d_pisidia
+		d_rashka # added to cover roughly same region
+		#d_macedonia_salutaris # TFE duchy
 
-		d_macedonia_salutaris
 
 	}
 }
 
-custom_roman_dacia = {
+custom_roman_dacia = { # GOOD, CHECKED WITH TFE
 	duchies = {
 		d_oltenia d_transylvania d_temes d_bihar
 	}
