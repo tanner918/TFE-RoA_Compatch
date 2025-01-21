@@ -1,0 +1,27 @@
+Depending on how TFE's scripts, events, effects, etc. reference its duchies, that might affect how we decide what we should do with the landed titles setup (i.e. modify the county/duchy setup of ROA to match TFE's changes, or use ROA's setup but modify TFE's kingdoms/empires to match that setup)
+
+------------------------------------------------------------------
+Events
+- briton_events.txt
+-- briton.0007 references d_bedford
+
+- celtic_events.txt
+-- celtic.0003 references d_bucellaria, d_charsianon, d_opsikion, d_pisidia, d_cappadocia, d_anatolia
+
+- collapse.txt
+-- collapse.0001 references d_galicia, d_badajoz, d_murcia, d_rif, d_aragon
+-- collapse.0006 references d_transjurania
+
+- game_rule_events.txt
+-- game_rule.1021 references d_normandy
+
+- germanic_events.txt
+-- 
+
+
+
+
+
+
+
+
