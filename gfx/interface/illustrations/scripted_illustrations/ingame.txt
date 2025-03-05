@@ -6394,7 +6394,10 @@ character_view_bg = {
 			OR = {
 				AND = { # Governor
 					is_landed = yes
+					OR = {
 					government_has_flag = government_is_administrative
+					government_has_flag = government_is_autocratic_ep3
+					}
 					exists = liege
 					liege = {
 						OR = {
@@ -6415,7 +6418,10 @@ character_view_bg = {
 				AND = { # Spouse
 					primary_spouse ?= {
 						is_landed = yes
+						OR = {
 						government_has_flag = government_is_administrative
+						government_has_flag = government_is_autocratic_ep3
+						}
 						exists = liege
 						liege = {
 							OR = {
@@ -6438,7 +6444,10 @@ character_view_bg = {
 					any_close_family_member = {
 						location = prev.location
 						is_landed = yes
+						OR = {
 						government_has_flag = government_is_administrative
+						government_has_flag = government_is_autocratic_ep3
+						}
 						exists = top_liege
 						top_liege = {
 							OR = {
@@ -6468,7 +6477,10 @@ character_view_bg = {
 			OR = {
 				AND = {
 					is_landed = yes
+					OR = {
 					government_has_flag = government_is_administrative
+					government_has_flag = government_is_autocratic_ep3
+					}
 					exists = liege
 					liege = {
 						OR = {
@@ -6489,7 +6501,10 @@ character_view_bg = {
 				AND = { # Spouse
 					primary_spouse ?= {
 						is_landed = yes
+						OR = {
 						government_has_flag = government_is_administrative
+						government_has_flag = government_is_autocratic_ep3
+						}
 						exists = liege
 						liege = {
 							OR = {
@@ -6512,7 +6527,10 @@ character_view_bg = {
 					any_close_family_member = {
 						location = prev.location
 						is_landed = yes
+						OR = {
 						government_has_flag = government_is_administrative
+						government_has_flag = government_is_autocratic_ep3
+						}
 						exists = top_liege
 						top_liege = {
 							OR = {
@@ -6543,7 +6561,10 @@ character_view_bg = {
 			OR = {
 				AND = {
 					is_landed = yes
+					OR = {
 					government_has_flag = government_is_administrative
+					government_has_flag = government_is_autocratic_ep3
+					}
 					exists = liege
 					liege = {
 						OR = {
@@ -6565,7 +6586,10 @@ character_view_bg = {
 					exists = primary_spouse
 					primary_spouse = {
 						is_landed = yes
+						OR = {
 						government_has_flag = government_is_administrative
+						government_has_flag = government_is_autocratic_ep3
+						}
 						exists = liege
 						liege = {
 							OR = {
@@ -6588,7 +6612,10 @@ character_view_bg = {
 					exists = betrothed
 					betrothed = {
 						is_landed = yes
+						OR = {
 						government_has_flag = government_is_administrative
+						government_has_flag = government_is_autocratic_ep3
+						}
 						exists = liege
 						liege = {
 							OR = {
@@ -6611,7 +6638,10 @@ character_view_bg = {
 					liege.diarch ?= this
 					liege = {
 						is_landed = yes
+						OR = {
 						government_has_flag = government_is_administrative
+						government_has_flag = government_is_autocratic_ep3
+						}
 						OR = {
 							primary_title = title:e_byzantium
 							primary_title = title:e_roman_empire 
@@ -6631,7 +6661,10 @@ character_view_bg = {
 					any_close_family_member = {
 						location = prev.location
 						is_landed = yes
+						OR = {
 						government_has_flag = government_is_administrative
+						government_has_flag = government_is_autocratic_ep3
+						}
 						exists = top_liege
 						top_liege = {
 							OR = {
@@ -6662,7 +6695,10 @@ character_view_bg = {
 			OR = {
 				AND = { # Lower Noble
 					is_landed = yes
+					OR = {
 					government_has_flag = government_is_administrative
+					government_has_flag = government_is_autocratic_ep3
+					}
 					exists = top_liege
 					top_liege = {
 						OR = {
@@ -6683,7 +6719,10 @@ character_view_bg = {
 				AND = { # Primary Spouse
 					primary_spouse ?= {
 						is_landed = yes
+						OR = {
 						government_has_flag = government_is_administrative
+						government_has_flag = government_is_autocratic_ep3
+						}
 						exists = top_liege
 						top_liege = {
 							OR = {
@@ -6706,7 +6745,10 @@ character_view_bg = {
 					any_close_family_member = {
 						location = prev.location
 						is_landed = yes
+						OR = {
 						government_has_flag = government_is_administrative
+						government_has_flag = government_is_autocratic_ep3
+						}
 						exists = top_liege
 						top_liege = {
 							OR = {
@@ -6734,7 +6776,10 @@ character_view_bg = {
 
 		trigger = {
 			is_landed = yes
-			government_has_flag = government_is_administrative
+			OR = {
+				government_has_flag = government_is_administrative
+				government_has_flag = government_is_autocratic_ep3
+				}
 			exists = liege
 			top_liege = {
 				OR = {
@@ -6764,7 +6809,10 @@ character_view_bg = {
 					exists = primary_spouse
 					primary_spouse = {
 						is_landed = yes
+						OR = {
 						government_has_flag = government_is_administrative
+						government_has_flag = government_is_autocratic_ep3
+						}
 						exists = top_liege
 						top_liege = {
 							OR = {

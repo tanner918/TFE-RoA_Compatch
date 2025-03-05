@@ -7,6 +7,47 @@ historical_artifacts.0023 = {
 	hidden = yes
 
 	immediate = {
+		if = {
+			limit = {
+				has_dlc_feature = royal_court
+				exists = title:e_persia.holder
+			}
+			title:e_persia.holder = {
+				create_artifact_wall_banner_kaviani_effect = { OWNER = this }
+			}
+		}
+		if = {
+			limit = {
+				has_dlc_feature = legacy_of_persia
+				exists = title:e_persia
+			}
+			title:e_persia.holder = {
+				create_artifact_oxus_bracelet_effect = { 
+					OWNER = this
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_dlc_feature = legacy_of_persia
+				exists = title:e_persia
+			}
+			title:e_persia.holder = {
+				create_artifact = {
+					name = fp3_incense_burner_sculpture
+					description = fp3_incense_burner_sculpture_desc
+					visuals = fp3_incense_burner_sculpture
+					type = sculpture
+					wealth = 80
+					quality = 80
+					modifier = artifact_negate_health_penalty_add_2_modifier
+					modifier = artifact_stress_gain_3_modifier
+					modifier = artifact_attraction_opinion_2_modifier
+					modifier = artifact_court_grandeur_baseline_add_3_modifier
+					history = { type = created_before_history }
+				}
+			}
+		}
 		# Seeded Court Artifacts
 		if = {
 			limit = { has_dlc_feature = royal_court } 

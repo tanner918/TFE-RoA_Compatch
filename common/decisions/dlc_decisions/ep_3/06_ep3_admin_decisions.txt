@@ -847,7 +847,7 @@ convert_to_administrative_decision = {
 
 	effect = {
 		save_scope_as = actor
-		convert_to_administrative_from_feudalism_effect = yes
+		TFE_convert_to_administrative_from_feudalism_effect = yes
 		trigger_event = ep3_decisions_event.4060 #Also sends information event to human vassals
 		#Letter event for the vassals
 		hidden_effect = {
@@ -1214,7 +1214,10 @@ change_imperial_aspirations_decision = {
 	is_shown = {
 		has_ep3_dlc_trigger = yes
 		is_playable_character = yes
+		OR = {
 		government_has_flag = government_is_administrative
+		government_has_flag = government_is_autocratic_ep3
+		}
 		liege ?= {
 			has_realm_law = acclamation_succession_law
 		}
@@ -1223,7 +1226,10 @@ change_imperial_aspirations_decision = {
 	is_valid = {
 		custom_tooltip = {
 			text = has_admin_government
+			OR = {
 			government_has_flag = government_is_administrative
+			government_has_flag = government_is_autocratic_ep3
+			}
 		}
 		trigger_if = { # Unavailable if you are the top liege - Unless you have either modifier, so you may remove it.
 			limit = {

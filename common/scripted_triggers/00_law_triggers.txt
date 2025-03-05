@@ -127,6 +127,7 @@ realm_law_use_imperial_bureaucracy = {
 	NOT = { government_has_flag = government_is_feudal }
 	NOT = { government_has_flag = government_is_clan }
 	NOT = { government_has_flag = government_is_republic }
+	NOT = { government_has_flag = government_is_theocracy }
 }
 realm_law_use_imperial_authority = {
 	OR = {
@@ -206,7 +207,7 @@ can_keep_high_partition_succession_law_trigger = {
 			has_title = title:e_baruun_khanate
 		}
 	}
-	NOT = { government_has_flag = government_is_clan}
+	NOT = { government_has_flag = government_is_clan }
 }
 
 can_have_high_partition_succession_law_trigger = {

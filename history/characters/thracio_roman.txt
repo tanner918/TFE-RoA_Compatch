@@ -311,13 +311,16 @@ basiliscus = {
 	trait = arrogant
 	trait = education_diplomacy_1
 	430.3.13 = {
-		birth = "441.3.13"
+		birth = yes
 	}
 	451.1.1 = {
 		religion = "coptic"
 	}
+	460.1.1 = {
+		add_spouse = greek_23
+	}
 	476.8.18 = {
-		death = "476.8.18"
+		death = yes
 	}
 }
 leo_03 = {
@@ -326,10 +329,14 @@ leo_03 = {
 	religion= "coptic"
 	culture= "thracio_roman"
 	father = basiliscus
-	460.1.1 = {
+	mother = greek_23
+	461.1.1 = {
 		birth = yes
 	}
-	485.1.1 = {
+	476.1.1 = {
+		employer = pontus_18
+	}
+	477.1.1 = {
 		death = yes
 	}
 }
@@ -359,12 +366,17 @@ leo_06 = {
 	trait = arrogant
 	trait = eccentric
 	trait = deceitful
-	trait = ambitious
+	trait = seducer
 	440.1.1 = {
 		birth = yes
 	}
 	451.1.1 = {
 		religion = "coptic"
+	}
+	470.1.1 = {
+		effect = {
+			set_relation_soulmate = character:greek_23 # Zenonis
+		}
 	}
 	477.1.1 = {
 		death = {
@@ -380,22 +392,24 @@ belisarius_001 = {
 	name = "Belisarius"
 	dynasty = belisarius_dynasty
 	dna = reconquest_belisarius
-	martial = 12
-	diplomacy = 7
-	intrigue = 2
-	stewardship = 5
+	martial = 14
+	diplomacy = 8
+	intrigue = 5
+	stewardship = 3
 	learning = 5
 	prowess = 10
 	religion = "chalcedonian"
 	culture = "thracio_roman"
-	trait = calm
-	trait = diligent
+	trait = temperate
 	trait = just
-	trait = education_martial_5
+	trait = diligent
+	trait = brave
+	trait = education_martial_4
 	trait = strategist
 	trait = cautious_leader
-	trait = shrewd
-	trait = physique_good_2
+	trait = flexible_leader
+	trait = loyal
+	trait = intellect_good_1
 	sexuality = heterosexual
 	500.8.28 = {
 		birth = yes
@@ -729,6 +743,11 @@ thracio_07 = {
 	dynasty = zaldapa_dynasty
 	religion = "chalcedonian"
 	culture = "thracio_roman"
+	father = thracio_27
+	trait = education_martial_3
+	trait = brave
+	trait = zealous
+	trait = ambitious
 	martial = 10
 	477.1.1 = {
 		birth = yes
@@ -757,6 +776,9 @@ thracio_08 = {
 	father = thracio_07
 	494.1.1 = {
 		birth = yes
+	}
+	532.1.1 = {
+		employer = daciae_25
 	}
 	533.1.1 = {
 		death = yes
@@ -1040,6 +1062,36 @@ thracio_26 = {
 		employer = belisarius_001
 	}
 	556.1.1 = {
+		death = yes
+	}
+}
+thracio_27 = {
+	name = "Patriciolus"
+	dynasty = zaldapa_dynasty
+	religion = "chalcedonian"
+	culture = "thracio_roman"
+	456.1.1 = {
+		birth = yes
+	}
+	476.1.1 = {
+		employer = 992047
+	}
+	510.1.1 = {
+		death = yes
+	}
+}
+thracio_28 = {
+	name = "Coccas"
+	religion = "chalcedonian"
+	culture = "thracio_roman"
+	trait = education_martial_3
+	trait = brave
+	trait = strong
+	trait = disloyal
+	512.1.1 = {
+		birth = yes
+	}
+	552.1.1 = {
 		death = yes
 	}
 }

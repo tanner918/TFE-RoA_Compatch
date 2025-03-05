@@ -298,3 +298,15 @@
  recently_changed_mil_focus_4_tt:0 "Changed This Focus Level In The Last Year (can't change until [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope, 'recently_changed_mil_focus_4') )])"
  recently_changed_civ_focus_4_tt:0 "Changed This Focus Level In The Last Year (can't change until [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope, 'recently_changed_civ_focus_4') )])"
  recently_changed_dip_focus_4_tt:0 "Changed This Focus Level In The Last Year (can't change until [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope, 'recently_changed_dip_focus_4') )])"
+
+ have_authority_2_or_higher: "Your Imperial Authority is #bold not#! at #high [GetLaw('imperial_authority_2').GetName]#! or better"
+ have_authority_3_or_higher: "Your Imperial Authority is #bold not#! at #high [GetLaw('imperial_authority_3').GetName]#! or better"
+ have_authority_4_or_higher: "Your Imperial Authority is #bold not#! at #high [GetLaw('imperial_authority_4').GetName]#! or better"
+
+ province_vassal_law: "Administrative laws"
+ province_vassal_law_0: "Lowest Bureaucracy"
+ province_vassal_law_1: "Low Bureaucracy"
+ province_vassal_law_2: "Balanced Bureaucracy"
+ province_vassal_law_3: "Slightly increasing Bureaucracy"
+ province_vassal_law_4: "Increasing Bureaucracy"
+ province_vassal_law_5: "Maximum Bureaucracy"

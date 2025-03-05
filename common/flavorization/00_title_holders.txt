@@ -7873,28 +7873,120 @@ king_administrative_female_byzantine_group = {
 		spouse_takes_title = no
 	}
 }
-king_administrative_male_roman = {
+TFE_count_administrative_male_roman = {
 	type = character
 	gender = male
 	special = holder
-	tier = kingdom
-	priority = 76
+	tier = county
+	priority = 500
 	governments = { administrative_government }
-	name_lists = { name_list_roman }
+	name_lists = { name_list_roman name_list_afro_roman name_list_britano_roman name_list_caledo_roman name_list_dacio_roman name_list_gallo_roman name_list_hiberno_roman name_list_hispano_roman name_list_illyro_roman name_list_thracio_roman }
 
 	flavourization_rules = {
 		top_liege = no
 		spouse_takes_title = no
 	}
 }
-king_administrative_female_roman = {
+TFE_count_administrative_female_roman = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 500
+	governments = { administrative_government }
+	name_lists = { name_list_roman name_list_afro_roman name_list_britano_roman name_list_caledo_roman name_list_dacio_roman name_list_gallo_roman name_list_hiberno_roman name_list_hispano_roman name_list_illyro_roman name_list_thracio_roman }
+
+	flavourization_rules = {
+		top_liege = no
+		spouse_takes_title = no
+	}
+}
+TFE_county_administrative_roman = {
+	type = title
+	tier = county
+	priority = 500
+	governments = { administrative_government }
+	name_lists = { name_list_roman name_list_afro_roman name_list_britano_roman name_list_caledo_roman name_list_dacio_roman name_list_gallo_roman name_list_hiberno_roman name_list_hispano_roman name_list_illyro_roman name_list_thracio_roman }
+
+	flavourization_rules = {
+		top_liege = no
+		spouse_takes_title = no
+	}
+}
+TFE_duke_administrative_male_roman = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 500
+	governments = { administrative_government }
+	name_lists = { name_list_roman name_list_afro_roman name_list_britano_roman name_list_caledo_roman name_list_dacio_roman name_list_gallo_roman name_list_hiberno_roman name_list_hispano_roman name_list_illyro_roman name_list_thracio_roman }
+
+	flavourization_rules = {
+		top_liege = no
+		spouse_takes_title = no
+	}
+}
+TFE_duke_administrative_female_roman = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 500
+	governments = { administrative_government }
+	name_lists = { name_list_roman name_list_afro_roman name_list_britano_roman name_list_caledo_roman name_list_dacio_roman name_list_gallo_roman name_list_hiberno_roman name_list_hispano_roman name_list_illyro_roman name_list_thracio_roman }
+
+	flavourization_rules = {
+		top_liege = no
+		spouse_takes_title = no
+	}
+}
+TFE_duchy_administrative_roman = {
+	type = title
+	tier = duchy
+	priority = 500
+	governments = { administrative_government }
+	name_lists = { name_list_roman name_list_afro_roman name_list_britano_roman name_list_caledo_roman name_list_dacio_roman name_list_gallo_roman name_list_hiberno_roman name_list_hispano_roman name_list_illyro_roman name_list_thracio_roman }
+
+	flavourization_rules = {
+		top_liege = no
+		spouse_takes_title = no
+	}
+}
+TFE_king_administrative_male_roman = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 500
+	governments = { administrative_government }
+	name_lists = { name_list_roman name_list_afro_roman name_list_britano_roman name_list_caledo_roman name_list_dacio_roman name_list_gallo_roman name_list_hiberno_roman name_list_hispano_roman name_list_illyro_roman name_list_thracio_roman }
+
+	flavourization_rules = {
+		top_liege = no
+		spouse_takes_title = no
+	}
+}
+TFE_king_administrative_female_roman = {
 	type = character
 	gender = female
 	special = holder
 	tier = kingdom
-	priority = 76
+	priority = 500
 	governments = { administrative_government }
-	name_lists = { name_list_roman }
+	name_lists = { name_list_roman name_list_afro_roman name_list_britano_roman name_list_caledo_roman name_list_dacio_roman name_list_gallo_roman name_list_hiberno_roman name_list_hispano_roman name_list_illyro_roman name_list_thracio_roman }
+
+	flavourization_rules = {
+		top_liege = no
+		spouse_takes_title = no
+	}
+}
+TFE_kingdom_administrative_roman = {
+	type = title
+	tier = kingdom
+	priority = 500
+	governments = { administrative_government }
+	name_lists = { name_list_roman name_list_afro_roman name_list_britano_roman name_list_caledo_roman name_list_dacio_roman name_list_gallo_roman name_list_hiberno_roman name_list_hispano_roman name_list_illyro_roman name_list_thracio_roman }
 
 	flavourization_rules = {
 		top_liege = no
@@ -7958,7 +8050,7 @@ king_administrative_independent_male_roman = {
 	tier = kingdom
 	priority = 108
 	governments = { administrative_government }
-	name_lists = { name_list_roman }
+	name_lists = { name_list_roman name_list_afro_roman name_list_britano_roman name_list_caledo_roman name_list_dacio_roman name_list_gallo_roman name_list_hiberno_roman name_list_hispano_roman name_list_illyro_roman name_list_thracio_roman }
 
 	flavourization_rules = {
 		only_independent = yes
@@ -7971,8 +8063,8 @@ king_administrative_independent_female_roman = {
 	tier = kingdom
 	priority = 108
 	governments = { administrative_government }
-	name_lists = { name_list_roman }
-	
+	name_lists = { name_list_roman name_list_afro_roman name_list_britano_roman name_list_caledo_roman name_list_dacio_roman name_list_gallo_roman name_list_hiberno_roman name_list_hispano_roman name_list_illyro_roman name_list_thracio_roman }
+
 	flavourization_rules = {
 		only_independent = yes
 	}
@@ -8005,8 +8097,9 @@ emperor_administrative_male_roman = {
 	tier = empire
 	priority = 108
 	governments = { administrative_government }
-	name_lists = { name_list_roman }
-	titles = { e_roman_empire }
+	name_lists = { name_list_roman name_list_afro_roman name_list_britano_roman name_list_caledo_roman name_list_dacio_roman name_list_gallo_roman name_list_hiberno_roman name_list_hispano_roman name_list_illyro_roman name_list_thracio_roman }
+
+	titles = { e_roman_empire e_byzantium e_western_roman_empire }
 }
 emperor_administrative_female_roman = {
 	type = character
@@ -8015,8 +8108,9 @@ emperor_administrative_female_roman = {
 	tier = empire
 	priority = 108
 	governments = { administrative_government }
-	name_lists = { name_list_roman }
-	titles = { e_roman_empire }
+	name_lists = { name_list_roman name_list_afro_roman name_list_britano_roman name_list_caledo_roman name_list_dacio_roman name_list_gallo_roman name_list_hiberno_roman name_list_hispano_roman name_list_illyro_roman name_list_thracio_roman }
+
+	titles = { e_roman_empire e_byzantium e_western_roman_empire }
 }
 
 ### LANDLESS ADVENTURERS
@@ -8490,7 +8584,7 @@ han_male_count = {
 	tier = county
 	priority = 49
 	governments = { feudal_government eranshar_government gupta_government gana_sangha_government }
-	name_lists = { name_list_han }
+	name_lists = { name_list_han name_list_xiongnu name_list_di name_list_xianbei name_list_khitan name_list_shatuo }
 }
 han_female_count = {
 	type = character
@@ -8499,7 +8593,7 @@ han_female_count = {
 	tier = county
 	priority = 49
 	governments = { feudal_government eranshar_government gupta_government gana_sangha_government }
-	name_lists = { name_list_han }
+	name_lists = { name_list_han name_list_xiongnu name_list_di name_list_xianbei name_list_khitan name_list_shatuo }
 }
 barony_han = {
 	type = title

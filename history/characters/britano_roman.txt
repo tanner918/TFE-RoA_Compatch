@@ -38,14 +38,17 @@ britano_roman_01 = {
 	religion = "pelagianism"
 	culture = "britano_roman"
 	trait = education_learning_3
-	trait = theologian
-	trait = devoted
 	355.1.1 = {
 		birth = yes
 	}
-	395.1.1 = {
+	390.1.1 = {
 		set_relation_friend = character:pontius_04
 		set_relation_rival = character:augustine_03
+		trait = theologian
+		trait = devoted
+	}
+	395.1.1 = {
+		employer = 900062
 	}
 	420.1.1 = {
 		death = yes
@@ -95,14 +98,17 @@ valentia_01 = {
 	}
 }
 britannia_secunda_01 = {
-	name = "Romulus"
+	name = "Fullofaudes"
 	religion = "britano_roman_pagan"
 	culture = "britano_roman"
+	trait = education_martial_2
 	323.1.1 = {
 		birth = yes
 	}
-	389.1.1 = {
-		death = yes
+	369.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
 	}
 }
 constantinus_01 = {
@@ -447,7 +453,7 @@ Trinovantes_02 = { #Trinovantes
 	}
 }
 Trinovantes_01 = { #Trinovantes
-	name= "Gracianus"
+	name= "Gratianus"
 	religion="nicene"
 	culture="britano_roman"
 	dynasty = 900078
@@ -815,15 +821,20 @@ BComes_02 = { #Leo
 		death = yes
 	}
 }
-BComes_03 = { #Marianus
-	name= "Marianus"
-	religion="britano_roman_pagan"
-	culture="britano_roman"
-	319.1.1 = {
+
+# Count of the Saxon Shore
+BComes_03 = {
+	name= "Nectaridus"
+	religion = "nicene"
+	culture = "britano_roman"
+	trait = education_martial_2
+	317.1.1 = {
 		birth = yes
 	}
-	400.1.1 = {
-		death = yes
+	367.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
 	}
 }
 

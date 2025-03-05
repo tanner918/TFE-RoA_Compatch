@@ -385,11 +385,14 @@ salome_02 = {
 	religion = "nicene"
 	culture = "kartvelian"
 	father = 159763
-	370.1.1 = {
-		birth = "370.1.1"
+	390.1.1 = {
+		birth = yes
+	}
+	412.1.1 = {
+		add_spouse = illyro_roman_20
 	}
 	435.1.1 = {
-		death = "435.1.1"
+		death = yes
 	}
 }
 159765 = {
@@ -398,7 +401,8 @@ salome_02 = {
 	religion = "nicene"
 	culture = "kartvelian"
 	father = 159764
-	390.1.1 = {
+	mother = illyro_roman_20
+	412.1.1 = {
 		birth = "390.1.1"
 	}
 	430.1.1 = {

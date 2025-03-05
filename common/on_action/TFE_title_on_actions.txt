@@ -114,6 +114,58 @@ admin_autocratic_gov_changes_church_holdings = {
 	}
 }
 
+admin_autocratic_gov_changes_city_holding = {
+	effect = {
+		if = {
+			limit = {
+				scope:previous_holder ?= {
+					is_alive = yes
+					OR = {
+						has_government = administrative_government
+						has_government = autocratic_government_ep3
+					}
+				}
+				scope:title = {
+                    tier = tier_barony
+                    title_province = {
+                        has_holding_type = city_holding
+                    }
+                }
+				highest_held_title_tier = tier_barony
+			}
+			root = {
+				change_government = republic_government
+			}
+		}
+	}
+}
+
+admin_autocratic_gov_changes_castle_holding = {
+	effect = {
+		if = {
+			limit = {
+				scope:previous_holder ?= {
+					is_alive = yes
+					OR = {
+						has_government = administrative_government
+						has_government = autocratic_government_ep3
+					}
+				}
+				scope:title = {
+                    tier = tier_barony
+                    title_province = {
+                        has_holding_type = castle_holding
+                    }
+                }
+				highest_held_title_tier = tier_barony
+			}
+			root = {
+				change_government = feudal_government
+			}
+		}
+	}
+}
+
 admin_autocratic_gov_changes_tribal = {
 	effect = {
 		if = {
@@ -146,6 +198,8 @@ on_title_gain = {
 	on_actions = { admin_autocratic_gov_changes }
 	on_actions = { admin_autocratic_gov_changes_church_holdings }
 	on_actions = { admin_autocratic_gov_changes_tribal }
+	on_actions = { admin_autocratic_gov_changes_city_holding }
+	on_actions = { admin_autocratic_gov_changes_castle_holding }
 }
 
 TFE_on_title_gain = {
@@ -153,6 +207,29 @@ TFE_on_title_gain = {
 		tfe_title_event.0001
 	}
 	effect = {
+		#if = {
+		#	limit = {
+		#		scope:previous_holder.faith = root.faith
+		#		scope:title = { exists = var:removed_official_imperial_faith }
+		#	}
+		#	scope:title = {
+		#		set_variable = {
+		#			name = official_imperial_faith
+		#			value = root.faith
+		#		}
+		#	}
+		#	root.faith = { set_religious_head_title = scope:title }
+		#	scope:title.holder = { add_trait = immortal }
+		#}
+		#scope:title = { remove_variable = removed_official_imperial_faith }
+		if = {
+			limit = {
+				scope:previous_holder.faith = { religious_head_title = scope:title }
+				root = { NOT = { faith = scope:previous_holder.faith } }
+			}
+			scope:title = { remove_variable = official_imperial_faith }
+			scope:previous_holder.faith = { remove_religious_head_title = yes }
+		}
 		if = {
 			limit = {
 				scope:previous_holder ?= {
@@ -1011,6 +1088,18 @@ TFE_on_rank_up = {
 					has_dlc_feature = roads_to_power
 				}
 				change_government = administrative_government
+				if = {
+					limit = { 
+						NOT = { any_held_title = { is_noble_family_title = yes } } 
+							highest_held_title_tier >= tier_duchy
+						}
+					if = {
+						limit = { is_house_head = no }
+						found_cadet_house_decision_effect = { CHARACTER = root }
+					}
+					create_noble_family_effect = yes
+					domicile ?= { set_up_domicile_estate_effect = yes }
+				}
 			}
 			else = {
 			change_government = imperial_government

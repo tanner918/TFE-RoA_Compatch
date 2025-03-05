@@ -3041,6 +3041,16 @@ torture_grants_influence_effect = {
 create_noble_family_effect = {
 	debug_log = create_noble_family_title
 
+	if = {
+		limit = { 
+			is_independent_ruler = no 
+			NOT = { top_liege = liege }
+			liege = { highest_held_title_tier = tier_kingdom }
+		}
+		add_character_flag = not_indy
+		liege = { save_scope_as = old_liege }
+	}
+
 	save_scope_as = new_noble_family_holder
 	hidden_effect = { # NF can only be held by house heads
 		house ?= {
@@ -3078,6 +3088,21 @@ create_noble_family_effect = {
 			}
 		}
 	}
+
+	if = {
+		limit = { has_character_flag = not_indy }
+		create_title_and_vassal_change = {
+			type = swear_fealty
+			save_scope_as = change
+			add_claim_on_loss = no
+		}
+		change_liege = {
+			liege = scope:old_liege
+			change = scope:change
+		}
+		resolve_title_and_vassal_change = scope:change
+	}
+	remove_character_flag = not_indy
 
 	debug_log_scopes = yes
 }

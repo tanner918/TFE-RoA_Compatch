@@ -36,20 +36,23 @@ hispania_03 = {
 	}
 }
 baetica_01 = {
-	name = "Celestinus"
+	name = "Asellus"
+	dynasty = asellus_dynasty
 	culture = hispano_roman
 	religion = nicene
 	330.1.1 = {
 		birth = yes
 	}
-	397.1.1 = {
+	395.1.1 = {
 		death = yes
 	}
 }
 baetica_02 = {
-	name = "Castinus"
+	name = "Felix"
+	dynasty = asellus_dynasty
 	culture = hispano_roman
 	religion = nicene
+	father = baetica_01
 	364.1.1 = {
 		birth = yes
 	}
@@ -118,6 +121,7 @@ baetica_04 = { #Biggus Dickus
 	dynasty = 900022
 	religion="manichean"
 	culture="hispano_roman"
+	trait=fecund
 	352.1.1 = {
 		birth = yes
 	}
@@ -143,8 +147,10 @@ baetica_05 = { #Incontinentia Buttocks
 }
 baetica_06 = { #Baetica vassal 1
 	name= "Sextus"
-	religion="nicene"
-	culture="hispano_roman"
+	dynasty = herculis_dynasty
+	religion = nicene
+	culture = hispano_roman
+	father = baetica_08
 	364.1.1 = {
 		birth = yes
 	}
@@ -165,12 +171,13 @@ baetica_07 = { #Baetica vassal 1
 }
 baetica_08 = { #Baetica vassal 1
 	name= "Liberius"
+	dynasty = herculis_dynasty
 	religion="nicene"
 	culture="hispano_roman"
 	332.1.1 = {
 		birth = yes
 	}
-	397.1.1 = {
+	395.1.1 = {
 		death = yes
 	}
 }
@@ -251,9 +258,11 @@ baetica_15 = { #Baetica vassal 1
 }
 baetica_16 = { #Lusitania vassal 5
 	name= "Crassus"
-	religion="nicene"
-	culture="hispano_roman"
-	374.1.1 = {
+	dynasty = cilaucius_dynasty
+	religion = nicene
+	culture = hispano_roman
+	father = baetica_18
+	363.1.1 = {
 		birth = yes
 	}
 	410.1.1 = {
@@ -261,9 +270,10 @@ baetica_16 = { #Lusitania vassal 5
 	}
 }
 baetica_18 = { #Lusitania vassal 5
-	name= "Julian"
-	religion="nicene"
-	culture="hispano_roman"
+	name= "Cilaucius"
+	dynasty = cilaucius_dynasty
+	religion = nicene
+	culture = hispano_roman
 	329.1.1 = {
 		birth = yes
 	}
@@ -273,6 +283,7 @@ baetica_18 = { #Lusitania vassal 5
 }
 baetica_19 = { #Lusitania vassal 5
 	name= "Aemilianus"
+	dynasty = astigitanus_dynasty
 	religion="nicene"
 	culture="hispano_roman"
 	334.1.1 = {
@@ -285,8 +296,10 @@ baetica_19 = { #Lusitania vassal 5
 
 baetica_20 = { #Lusitania vassal 5
 	name= "Lucius"
-	religion="nicene"
-	culture="hispano_roman"
+	dynasty = astigitanus_dynasty
+	religion= nicene
+	culture= hispano_roman
+	father = baetica_19
 	365.1.1 = {
 		birth = yes
 	}
@@ -397,7 +410,7 @@ baetica_29 = { #Segontia
 ####Carthaginensis
 
 nebridian_01 = {
-	name= "Gaius"
+	name= "Claudius"
 	religion="nicene"
 	culture="hispano_roman"
 	dynasty = dynasty_antonius
@@ -593,7 +606,7 @@ theodosian_014 = {
 	}
 }
 theodosian_013 = {
-	name = "Julius"
+	name = "Iulius"
 	culture = "hispano_roman"
 	religion = "nicene"
 	dynasty = 1022191
@@ -627,8 +640,10 @@ theodosian_011 = {
 	339.1.1 = {
 		birth = yes
 	}
-	389.1.1 = {
-		death = yes
+	388.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
 	}
 }
 theodosian_012 = {
@@ -1179,7 +1194,7 @@ galeica_09 = {
 
 #Magnus Maximus and his descendants
 159807 = { #Magnus Maximus
-	name= "Magnus Maximus"
+	name= "Magnus_Maximus"
 	dynasty=1022191
 	religion="nicene"
 	culture="hispano_roman"
@@ -1278,14 +1293,22 @@ galeica_09 = {
 }
 #####
 leon_01 = {
-	name = "Aelius"
+	name = "Priscillianus"
 	culture = "hispano_roman"
 	religion = "nicene"
-	332.1.1 = {
+	trait = education_learning_3
+	336.1.1 = {
 		birth = yes
 	}
-	375.1.1 = {
-		death = yes
+	370.1.1 = {
+		religion = "priscillianism"
+		trait = devoted
+	}
+	385.1.1 = {
+		death = {
+			death_reason = death_execution
+			killer = 159807
+		}
 	}
 }
 leon_02 = {
@@ -1593,6 +1616,27 @@ galicia_08 = {
 	}
 	400.1.1 = {
 		death = yes
+	}
+}
+
+### Comes of tarraconensis
+euric_01 = {
+	name = "Burdunellus"
+	dynasty = burdunellus_dynasty
+	culture = hispano_roman
+	religion = chalcedonian
+	trait = education_martial_4
+	trait = brave
+	trait = trusting
+	trait = deceitful
+	trait = blademaster_3
+	451.6.1 = {
+		birth = yes
+	}
+	497.1.1 = {
+		death = {
+			death_reason = death_execution
+		}
 	}
 }
 

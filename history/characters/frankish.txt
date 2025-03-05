@@ -3525,6 +3525,9 @@ burgundy_20 = {
 	484.1.1 = {
 		religion = "arianism"
 	}
+	532.1.1 = {
+		employer = 992023
+	}
 	534.1.1 = {
 		death = {
 			death_reason = death_murder
@@ -4302,6 +4305,9 @@ burgundy_20 = {
 	508.1.1 = {
 		religion = "chalcedonian"
 	}
+	525.1.1 = {
+		add_spouse = florentius_06
+	}
 	532.1.1 = {
 		effect = {
 			set_relation_rival = { target = character:997009 reason = rival_historical }
@@ -4366,7 +4372,8 @@ burgundy_20 = {
 	religion = "chalcedonian"
 	culture = "frankish"
 	father = 997132 # Munderic
-	525.1.1 = {
+	mother = florentius_06
+	526.1.1 = {
 		birth = yes
 	}
 	589.1.1 = {
@@ -4379,6 +4386,7 @@ burgundy_20 = {
 	religion = "chalcedonian"
 	culture = "frankish"
 	father = 997132 # Munderic
+	mother = florentius_06
 	527.1.1 = {
 		birth = yes
 	}
@@ -4771,7 +4779,7 @@ hildebert_03 = {
 }
 
 faramund_04 = {
-	name="Ragamblad"
+	name="Ragambald"
 	religion="central_pagan"
 	culture="salian"
 	440.1.1 = {

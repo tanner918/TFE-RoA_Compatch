@@ -8,6 +8,73 @@ TFE_yearly_global_pulse = {
 	effect = {
 		if = {
 			limit = {
+				any_liege_or_above = {
+					government_has_flag = government_is_administrative
+				}
+			}
+			every_vassal_or_below = {
+				limit = {
+					is_independent_ruler = no
+					highest_held_title_tier >= tier_duchy
+					government_has_flag = government_is_roman
+				}
+			}
+			change_government = administrative_government
+		}
+		if = {
+			limit = {
+				any_liege_or_above = {
+					government_has_flag = government_is_autocratic_ep3
+				}
+			}
+			every_vassal_or_below = {
+				limit = {
+					is_independent_ruler = no
+					highest_held_title_tier >= tier_duchy
+					government_has_flag = government_is_roman
+				}
+			}
+			change_government = autocratic_governnment_ep3
+		}
+		if = {
+  			limit = { 
+       			NOT = { any_held_title = { is_noble_family_title = yes } } 
+        		highest_held_title_tier >= tier_duchy
+				government_allows = administrative
+				is_independent_ruler = no
+   			}
+     		if = {
+        		limit = { is_house_head = no }
+      			found_cadet_house_decision_effect = { CHARACTER = root }
+    		}
+ 		    create_noble_family_effect = yes
+    		domicile ?= { set_up_domicile_estate_effect = yes }
+		}
+		if = {
+  			limit = { 
+       			NOT = { any_held_title = { is_noble_family_title = yes } } 
+        		highest_held_title_tier >= tier_kingdom
+				government_allows = administrative
+				is_independent_ruler = yes
+   			}
+     		if = {
+         		limit = { is_house_head = no }
+      		    found_cadet_house_decision_effect = { CHARACTER = root }
+    		}
+ 		    create_noble_family_effect = yes
+    		domicile ?= { set_up_domicile_estate_effect = yes }
+		}
+		# Historical character spawner
+		if = {
+			limit = {
+				NOT = {
+					has_game_rule = no_historical_characters
+				}
+			}
+			tfe_spawn_historical_characters_effect = yes
+		}
+		if = {
+			limit = {
 				AND = {
 					exists = global_var:islam_spawned
 					OR = {

@@ -98,7 +98,7 @@ change_to_administrative_interaction_effect = {
 			}
 		}
 	}
-	scope:recipient = { change_to_administrative_effect = yes }
+	scope:recipient = { TFE_change_to_administrative_effect = yes }
 	if = {
 		limit = {
 			scope:hook = yes

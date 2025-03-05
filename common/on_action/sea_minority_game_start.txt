@@ -287,6 +287,7 @@ set_minorities_game_start = {
 		if = {
 			limit = {
 				game_start_date >= 400.1.1
+				game_start_date < 600.1.1
 			}
 			add_culture_minority_effect = {
 				CULTURE = culture:alan
@@ -3023,6 +3024,429 @@ set_minorities_game_start = {
 				COUNTY = title:c_homs
 			}
 		}
+
+		# Sarmatians/Alans in Britannia
+		if = {
+			limit = {
+				game_start_date < 600.1.1
+			}
+			add_culture_minority_effect = {
+				CULTURE = culture:alan
+				SIZE = large
+				COUNTY = title:c_middlesex
+			}
+			add_culture_minority_effect = { # Alan grave found here
+				CULTURE = culture:alan
+				SIZE = small
+				COUNTY = title:c_cambridgeshire
+			}
+			add_culture_minority_effect = {
+				CULTURE = culture:alan
+				SIZE = small
+				COUNTY = title:c_somerset
+			}
+			add_culture_minority_effect = {
+				CULTURE = culture:alan
+				SIZE = small
+				COUNTY = title:c_north_riding # York
+			}
+		}
+
+		# Old Saxons in the Saxon Shore/both sides of the Channel
+		if = {
+			limit = {
+				game_start_date < 600.1.1
+			}
+			add_culture_minority_effect = {
+				CULTURE = culture:old_saxon
+				SIZE = small
+				COUNTY = title:c_rouen
+			}
+			add_culture_minority_effect = {
+				CULTURE = culture:old_saxon
+				SIZE = small
+				COUNTY = title:c_brugge
+			}
+			add_culture_minority_effect = {
+				CULTURE = culture:old_saxon
+				SIZE = small
+				COUNTY = title:c_avranches
+			}
+			add_culture_minority_effect = {
+				CULTURE = culture:old_saxon
+				SIZE = small
+				COUNTY = title:c_vannes
+			}
+			add_culture_minority_effect = {
+				CULTURE = culture:old_saxon
+				SIZE = small
+				COUNTY = title:c_nantes
+			}
+			add_culture_minority_effect = {
+				CULTURE = culture:old_saxon
+				SIZE = small
+				COUNTY = title:c_middlesex
+			}
+			add_culture_minority_effect = {
+				CULTURE = culture:old_saxon
+				SIZE = small
+				COUNTY = title:c_kent
+			}
+			add_culture_minority_effect = {
+				CULTURE = culture:old_saxon
+				SIZE = small
+				COUNTY = title:c_hampton
+			}
+			add_culture_minority_effect = {
+				CULTURE = culture:old_saxon
+				SIZE = small
+				COUNTY = title:c_norfolk
+			}
+			add_culture_minority_effect = {
+				CULTURE = culture:old_saxon
+				SIZE = small
+				COUNTY = title:c_kent
+			}
+		}
+
+		# Ethiopians in Yemen
+		add_culture_minority_effect = {
+			CULTURE = culture:ethiopian
+			SIZE = large
+			COUNTY = title:c_sanaa
+		}
+		add_culture_minority_effect = {
+			CULTURE = culture:ethiopian
+			SIZE = large
+			COUNTY = title:c_tihamat-al-yamani
+		}
+		add_culture_minority_effect = {
+			CULTURE = culture:ethiopian
+			SIZE = large
+			COUNTY = title:c_najran
+		}
+		add_culture_minority_effect = {
+			CULTURE = culture:ethiopian
+			SIZE = large
+			COUNTY = title:c_zabid
+		}
+		add_culture_minority_effect = {
+			CULTURE = culture:ethiopian
+			SIZE = large
+			COUNTY = title:c_jawf-al-yamani
+		}
+		add_culture_minority_effect = {
+			CULTURE = culture:ethiopian
+			SIZE = large
+			COUNTY = title:c_wabar
+		}
+		add_culture_minority_effect = {
+			CULTURE = culture:ethiopian
+			SIZE = large
+			COUNTY = title:c_hadramawt
+		}
+		add_culture_minority_effect = {
+			CULTURE = culture:ethiopian
+			SIZE = large
+			COUNTY = title:c_ahqaf
+		}
+		add_culture_minority_effect = {
+			CULTURE = culture:ethiopian
+			SIZE = large
+			COUNTY = title:c_kinda_sakun
+		}
+		add_culture_minority_effect = {
+			CULTURE = culture:ethiopian
+			SIZE = large
+			COUNTY = title:c_taizz
+		}
+		add_culture_minority_effect = {
+			CULTURE = culture:ethiopian
+			SIZE = large
+			COUNTY = title:c_mandab
+		}
+		add_culture_minority_effect = {
+			CULTURE = culture:ethiopian
+			SIZE = large
+			COUNTY = title:c_dathina
+		}
+
+		if = {
+			limit = {
+				game_start_date < 451.1.1
+			}
+			add_faith_minority_effect = {
+				FAITH = faith:nicene
+				SIZE = large
+				COUNTY = title:c_sanaa
+			}
+			add_faith_minority_effect = {
+				FAITH = faith:nicene
+				SIZE = large
+				COUNTY = title:c_tihamat-al-yamani
+			}
+			add_faith_minority_effect = {
+				FAITH = faith:nicene
+				SIZE = large
+				COUNTY = title:c_najran
+			}
+			add_faith_minority_effect = {
+				FAITH = faith:nicene
+				SIZE = large
+				COUNTY = title:c_zabid
+			}
+			add_faith_minority_effect = {
+				FAITH = faith:nicene
+				SIZE = large
+				COUNTY = title:c_jawf-al-yamani
+			}
+			add_faith_minority_effect = {
+				FAITH = faith:nicene
+				SIZE = large
+				COUNTY = title:c_wabar
+			}
+			add_faith_minority_effect = {
+				FAITH = faith:nicene
+				SIZE = large
+				COUNTY = title:c_hadramawt
+			}
+			add_faith_minority_effect = {
+				FAITH = faith:nicene
+				SIZE = large
+				COUNTY = title:c_ahqaf
+			}
+			add_faith_minority_effect = {
+				FAITH = faith:nicene
+				SIZE = large
+				COUNTY = title:c_kinda_sakun
+			}
+			add_faith_minority_effect = {
+				FAITH = faith:nicene
+				SIZE = large
+				COUNTY = title:c_taizz
+			}
+			add_faith_minority_effect = {
+				FAITH = faith:nicene
+				SIZE = large
+				COUNTY = title:c_mandab
+			}
+			add_faith_minority_effect = {
+				FAITH = faith:nicene
+				SIZE = large
+				COUNTY = title:c_dathina
+			}
+		}
+		else = {
+			add_faith_minority_effect = {
+				FAITH = faith:coptic
+				SIZE = large
+				COUNTY = title:c_sanaa
+			}
+			add_faith_minority_effect = {
+				FAITH = faith:coptic
+				SIZE = large
+				COUNTY = title:c_tihamat-al-yamani
+			}
+			add_faith_minority_effect = {
+				FAITH = faith:coptic
+				SIZE = large
+				COUNTY = title:c_najran
+			}
+			add_faith_minority_effect = {
+				FAITH = faith:coptic
+				SIZE = large
+				COUNTY = title:c_zabid
+			}
+			add_faith_minority_effect = {
+				FAITH = faith:coptic
+				SIZE = large
+				COUNTY = title:c_jawf-al-yamani
+			}
+			add_faith_minority_effect = {
+				FAITH = faith:coptic
+				SIZE = large
+				COUNTY = title:c_wabar
+			}
+			add_faith_minority_effect = {
+				FAITH = faith:coptic
+				SIZE = large
+				COUNTY = title:c_hadramawt
+			}
+			add_faith_minority_effect = {
+				FAITH = faith:coptic
+				SIZE = large
+				COUNTY = title:c_ahqaf
+			}
+			add_faith_minority_effect = {
+				FAITH = faith:coptic
+				SIZE = large
+				COUNTY = title:c_kinda_sakun
+			}
+			add_faith_minority_effect = {
+				FAITH = faith:coptic
+				SIZE = large
+				COUNTY = title:c_taizz
+			}
+			add_faith_minority_effect = {
+				FAITH = faith:coptic
+				SIZE = large
+				COUNTY = title:c_mandab
+			}
+			add_faith_minority_effect = {
+				FAITH = faith:coptic
+				SIZE = large
+				COUNTY = title:c_dathina
+			}
+		}
+
+		
+		# Sogdians and Tocharians and other non-Chinese in the Gansu region
+		add_culture_minority_effect = {
+			CULTURE = culture:sogdian
+			SIZE = small
+			COUNTY = title:c_xingqing
+		}
+		add_faith_minority_effect = {
+			FAITH = faith:khurmazta
+			SIZE = small
+			COUNTY = title:c_xingqing
+		}
+		add_culture_minority_effect = {
+			CULTURE = culture:sogdian
+			SIZE = small
+			COUNTY = title:c_liangzhou
+		}
+		add_faith_minority_effect = {
+			FAITH = faith:khurmazta
+			SIZE = small
+			COUNTY = title:c_liangzhou
+		}
+		add_culture_minority_effect = {
+			CULTURE = culture:sogdian
+			SIZE = small
+			COUNTY = title:c_ganzhou
+		}
+		add_faith_minority_effect = {
+			FAITH = faith:khurmazta
+			SIZE = small
+			COUNTY = title:c_ganzhou
+		}
+		add_culture_minority_effect = {
+			CULTURE = culture:sogdian
+			SIZE = small
+			COUNTY = title:c_guazhou
+		}
+		add_faith_minority_effect = {
+			FAITH = faith:khurmazta
+			SIZE = small
+			COUNTY = title:c_guazhou
+		}
+		add_culture_minority_effect = {
+			CULTURE = culture:sogdian
+			SIZE = small
+			COUNTY = title:c_yumenguan
+		}
+		add_faith_minority_effect = {
+			FAITH = faith:khurmazta
+			SIZE = small
+			COUNTY = title:c_yumenguan
+		}
+		add_culture_minority_effect = {
+			CULTURE = culture:tocharian
+			SIZE = small
+			COUNTY = title:c_shazhou
+		}
+		add_faith_minority_effect = {
+			FAITH = faith:sarvastivada
+			SIZE = small
+			COUNTY = title:c_shazhou
+		}
+		add_culture_minority_effect = {
+			CULTURE = culture:saka
+			SIZE = small
+			COUNTY = title:c_xingqing
+		}
+		add_culture_minority_effect = {
+			CULTURE = culture:saka
+			SIZE = small
+			COUNTY = title:c_liangzhou
+		}
+		add_culture_minority_effect = {
+			CULTURE = culture:saka
+			SIZE = small
+			COUNTY = title:c_ganzhou
+		}
+		add_culture_minority_effect = {
+			CULTURE = culture:saka
+			SIZE = small
+			COUNTY = title:c_guazhou
+		}
+		add_culture_minority_effect = {
+			CULTURE = culture:saka
+			SIZE = small
+			COUNTY = title:c_yumenguan
+		}
+		add_culture_minority_effect = {
+			CULTURE = culture:tocharian
+			SIZE = small
+			COUNTY = title:c_shazhou
+		}
+		add_faith_minority_effect = {
+			FAITH = faith:sarvastivada
+			SIZE = small
+			COUNTY = title:c_shazhou
+		}
+		add_culture_minority_effect = {
+			CULTURE = culture:tocharian
+			SIZE = small
+			COUNTY = title:c_xingqing
+		}
+		add_faith_minority_effect = {
+			FAITH = faith:sarvastivada
+			SIZE = small
+			COUNTY = title:c_xingqing
+		}
+		add_culture_minority_effect = {
+			CULTURE = culture:tocharian
+			SIZE = small
+			COUNTY = title:c_liangzhou
+		}
+		add_faith_minority_effect = {
+			FAITH = faith:sarvastivada
+			SIZE = small
+			COUNTY = title:c_liangzhou
+		}
+		add_culture_minority_effect = {
+			CULTURE = culture:tocharian
+			SIZE = small
+			COUNTY = title:c_ganzhou
+		}
+		add_faith_minority_effect = {
+			FAITH = faith:sarvastivada
+			SIZE = small
+			COUNTY = title:c_ganzhou
+		}
+		add_culture_minority_effect = {
+			CULTURE = culture:tocharian
+			SIZE = small
+			COUNTY = title:c_guazhou
+		}
+		add_faith_minority_effect = {
+			FAITH = faith:sarvastivada
+			SIZE = small
+			COUNTY = title:c_guazhou
+		}
+		add_culture_minority_effect = {
+			CULTURE = culture:tocharian
+			SIZE = small
+			COUNTY = title:c_yumenguan
+		}
+		add_faith_minority_effect = {
+			FAITH = faith:sarvastivada
+			SIZE = small
+			COUNTY = title:c_yumenguan
+		}
+
 	}
 }
 

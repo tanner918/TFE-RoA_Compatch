@@ -21,6 +21,10 @@ garamantes_flavour_effect = {
 
 TFE_on_game_start = {
 	effect = {
+		set_global_variable = {
+			name = active_conquerors
+			value = 0
+		}
 		title:b_alexandria.title_province = {
 			add_province_modifier = library_construct
 		}
@@ -44,10 +48,8 @@ TFE_on_game_start = {
 		}
 		every_ruler = {
 			limit = {
-				OR = {
-					government_allows = administrative
-					top_liege = { government_allows = administrative }
-				}
+				government_allows = administrative
+				top_liege = { government_allows = administrative }
 				OR = {
 					is_house_head = yes
 					house.house_head = { is_landed = no }
@@ -505,13 +507,13 @@ TFE_on_game_start = {
 			save_scope_as = current_emperor
 			
 			
-			#new_official_imperial_faith_effect_skip_effects = { EMPIRE = scope:current_emperor.primary_title FAITH = scope:current_emperor.faith }
-			#title:e_roman_empire = {
-			#	set_variable = {
-			#		name = official_imperial_faith
-			#		value = faith:nicene
-			#	}
-			#}
+			new_official_imperial_faith_effect_skip_effects = { EMPIRE = scope:current_emperor.primary_title FAITH = scope:current_emperor.faith }
+			title:e_roman_empire = {
+				set_variable = {
+					name = official_imperial_faith
+					value = faith:nicene
+				}
+			}
 		}
 		character:2000003 ?= {
 			make_trait_inactive = intellect_good_3

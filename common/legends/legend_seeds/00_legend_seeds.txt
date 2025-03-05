@@ -634,7 +634,7 @@ corineus = {
 			culture = culture:briton
 			culture = {
 				any_parent_culture_or_above = {
-					culture = culture:briton #when cornish becomes available, briton will be its ancestor anyways.
+					this = culture:briton #when cornish becomes available, briton will be its ancestor anyways.
 				}
 			}
 		}

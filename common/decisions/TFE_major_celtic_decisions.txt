@@ -701,8 +701,9 @@ become_emperor_of_gaul_decision = {
 		if = {
 			limit = {
 			has_dlc_feature = roads_to_power
-		}
-			change_government = administrative_government
+			}
+			save_scope_as = actor
+			TFE_convert_to_administrative_from_feudalism_effect = yes
 		}
 		else = {
 			change_government = imperial_government

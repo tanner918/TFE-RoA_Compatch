@@ -1088,12 +1088,12 @@ pool_repopulate_local_flavor = {
 				20 = {
 					set_character_faith = faith:yapaniya
 				}
-				35 = {
-					trigger = {
-						culture = culture:abhira
-					}
-					set_character_faith = faith:zurvanism
-				}
+				# 35 = {
+				# 	trigger = {
+				# 		culture = culture:abhira
+				# 	}
+				# 	set_character_faith = faith:zurvanism
+				# }
 				100 = {
 					trigger = {
 						culture = culture:burmese
@@ -1101,6 +1101,13 @@ pool_repopulate_local_flavor = {
 					set_character_faith = faith:ari
 				}
 				5 = {
+					trigger = {
+						faith:nestorian = {
+							NOT = {
+								has_doctrine = unavailable_doctrine
+							}
+						}
+					}
 					set_character_faith = faith:nestorian
 				}
 				25 = {
@@ -1189,6 +1196,11 @@ pool_repopulate_local_flavor = {
 		else_if = {
 			limit = {
 				culture = culture:assyrian
+				faith:nestorian = {
+					NOT = {
+						has_doctrine = unavailable_doctrine
+					}
+				}
 			}
 			set_character_faith = faith:nestorian
 		}
@@ -1236,6 +1248,13 @@ pool_repopulate_local_flavor = {
 			}
 			random_list = {
 				10 = {
+					trigger = {						
+						faith:bon = {
+							NOT = {
+								has_doctrine = unavailable_doctrine
+							}
+						}
+					}
 					set_character_faith = faith:bon
 				}
 				10 = {
@@ -1332,9 +1351,23 @@ pool_repopulate_local_flavor = {
 					set_character_faith = faith:celto_hellenic_syncretism
 				}
 				10 = {
+					trigger = {											
+						faith:chalcedonian = {
+							NOT = {
+								has_doctrine = unavailable_doctrine
+							}
+						}
+					}
 					set_character_faith = faith:chalcedonian
 				}
 				5 = {
+					trigger = {											
+						faith:nicene = {
+							NOT = {
+								has_doctrine = unavailable_doctrine
+							}
+						}
+					}
 					set_character_faith = faith:nicene
 				}
 			}

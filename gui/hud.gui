@@ -609,6 +609,7 @@ widget = {
 
 				widget_hud_main_tab = {
 					name = "tab_council"
+					visible = "[Not( IsLandlessAdventurer( GetPlayer ) )]"
 
 					blockoverride "maintab_button"
 					{
@@ -710,6 +711,7 @@ widget = {
 
 				widget_hud_main_tab = {
 					name = "tab_factions"
+					visible = "[Or( Not( IsLandlessAdventurer( GetPlayer ) ), GetPlayer.IsInAFaction)]"
 
 					blockoverride "maintab_button"
 					{
@@ -782,13 +784,14 @@ widget = {
 				}
 
 				widget = {
+					visible = "[Not(GetPlayer.GetGovernment.IsType( 'landless_adventurer_government' ))]"
 					layoutpolicy_horizontal = expanding
 					size = { 0 15 }
 	
 					icon = {
 						visible = "[And( Not( IsPauseMenuShown ), And(Or(Not(IsObserver), GetPlayer.IsValid), IsDefaultGUIMode))]"
 						parentanchor = right|vcenter
-						position = { -5 0 }
+						position = { -3 0 }
 						texture = "gfx/interface/skinned/hud_spike_big.dds"
 						size = { 25 15 }
 	
@@ -808,6 +811,10 @@ widget = {
 						shortcut = "decision_window"
 						tooltip = "DECISIONS_BUTTON_CONTAINER"
 						down = "[IsGameViewOpen('decisions')]"
+
+						background = {
+							texture = "gfx/interface/skinned/hud_maintab/maintab_economy_bg.dds"
+						}
 					}
 				}
 
@@ -3088,14 +3095,14 @@ widget = {
 
 				progresspie = {
 					name = "progress"
-					size = { 48 48 }
+					size = { 56 56 }
 					texture = "gfx/interface/progressbars/action_progress_thin.dds"
 					framesize = { 128 128 }
 					frame = 2
 					value = "[GetPlayer.GetLifestyleExperienceProgress( GetPlayer.GetLifestyle.Self )]"
 					widgetanchor = center
 					parentanchor = center
-					position = { 0 0 }
+					position = { 3 2 }
 					min = 0
 					max = 1
 				}
@@ -4778,6 +4785,55 @@ types HUD
 				}
 			}
 		}
+	}
+
+	type button_task_contract_banner = button_normal {
+		size = { 100 100 }
+
+		icon = {
+			visible = "[And( TaskContract.IsEasy, Not(TaskContract.IsCriminal) )]"
+			size = { 100% 100% }
+			texture = "gfx/interface/window_contract/pin_contract_1.dds"
+		}
+		icon = {
+			visible = "[And( TaskContract.IsEasy, TaskContract.IsCriminal )]"
+			size = { 100% 100% }
+			texture = "gfx/interface/window_contract/pin_contract_1_crime.dds"
+		}
+
+		icon = {
+			visible = "[And( TaskContract.IsMedium, Not(TaskContract.IsCriminal) )]"
+			size = { 100% 100% }
+			texture = "gfx/interface/window_contract/pin_contract_2.dds"
+		}
+		icon = {
+			visible = "[And( TaskContract.IsMedium, TaskContract.IsCriminal )]"
+			size = { 100% 100% }
+			texture = "gfx/interface/window_contract/pin_contract_2_crime.dds"
+		}
+
+		icon = {
+			visible = "[And( TaskContract.IsHard, Not(TaskContract.IsCriminal) )]"
+			size = { 100% 100% }
+			texture = "gfx/interface/window_contract/pin_contract_3.dds"
+		}
+		icon = {
+			visible = "[And( TaskContract.IsHard, TaskContract.IsCriminal )]"
+			size = { 100% 100% }
+			texture = "gfx/interface/window_contract/pin_contract_3_crime.dds"
+		}
+
+		highlight_icon = {
+			parentanchor = center
+			alwaystransparent = yes
+			texture = "[TaskContract.GetType.GetIcon]"
+			size = { 40% 40% }
+			position = { 0 -2 }
+		}
+
+		onclick = "[ToggleGameViewData('task_contract', TaskContract.Self )]"
+		tooltip = "[TaskContract.GetName]"
+		using = tooltip_ne
 	}
 
 	type button_struggle_banner = button_normal {

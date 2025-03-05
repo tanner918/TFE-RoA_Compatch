@@ -1504,7 +1504,22 @@ change_state_faith = {
 
 	is_valid = {
 		government_allows = state_faith
+		custom_tooltip = {
+  		text = change_official_faith_localization
+ 		NOT = { has_character_flag = change_official_faith }
+		}
 		NOT = { faith ?= top_liege.primary_title.state_faith }
+		piety_level >= 3
+		
+		# Maybe make it more difficult if it's unreformed?
+		custom_description = {
+			text = faith_is_reformed
+			subject = root
+			faith = { NOT = { has_doctrine_parameter = unreformed } }
+		}
+		culture = {
+			has_innovation = innovation_imperial_faith
+		}
 	}
 
 	is_valid_showing_failures_only = {
@@ -1576,8 +1591,18 @@ change_state_faith = {
 			}
 		}
 	}
-
 	effect = {
+		save_scope_as = emperor
+		faith = { save_scope_as = new_faith }
+		primary_title = { save_scope_as = empire }
+		if = {
+			limit = { exists = primary_title.var:official_imperial_faith }
+			primary_title.var:official_imperial_faith = { save_scope_as = old_faith }
+		}
+		
+		show_as_tooltip = { new_official_imperial_faith_effect_ep3 = yes }
+		
+		trigger_event = TFE_major_decisions_ep3.0001
 		hidden_effect = {
 			primary_title.state_faith = { save_scope_as = old_faith }
 			root.faith = { save_scope_as = new_faith }
@@ -1660,6 +1685,12 @@ change_state_faith = {
 			trigger_event = {
 				id = ep3_emperor_yearly.2300
 				days = 1
+			}
+		}
+		top_liege = {
+			add_character_flag = {
+					flag = change_official_faith
+					years = 20
 			}
 		}
 	}
@@ -1825,7 +1856,10 @@ adopt_state_faith = {
 	}
 
 	ai_potential = {
+		OR = {
 		government_has_flag = government_is_administrative
+		government_has_flag = government_is_autocratic_ep3
+		}
 		NOT = { has_trait = zealous } # A zealous vassal would presumably not want to change their faith
 		exists = top_liege.primary_title.state_faith
 		faith != top_liege.primary_title.state_faith
@@ -1902,6 +1936,7 @@ adopt_state_faith = {
 		# Non-admin vassals only consider converting if their faith hostility is low enough
 		modifier = {
 			NOT = { government_has_flag = government_is_administrative }
+			NOT = { government_has_flag = government_is_autocratic_ep3 }
 			faith ?= {
 				faith_hostility_level = {
 					target = root.top_liege.primary_title.state_faith

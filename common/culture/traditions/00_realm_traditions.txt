@@ -104,6 +104,7 @@ tradition_legalistic = {
 				has_doctrine = doctrine_temporal_head
 			}
 		}
+		NOT = { has_dlc_feature = roads_to_power }
 	}
 	
 	parameters = {
@@ -118,7 +119,108 @@ tradition_legalistic = {
 		vassal_limit = 30
 		monthly_prestige_gain_per_dread_mult = -0.01
 		tyranny_gain_mult = 0.25
-		tax_slot_add  = 1
+		tax_slot_add = 1
+	}
+	
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						culture_pillar:ethos_communal = { is_in_list = traits }
+						culture_pillar:ethos_egalitarian = { is_in_list = traits }
+						culture_pillar:ethos_courtly = { is_in_list = traits }					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_communal_egalitarian_or_courtly_desc
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_innovation = innovation_baliffs
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = lacks_baliffs_innovation_desc
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_innovation = innovation_development_02
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = lacks_development_02_innovation_desc
+				}
+			}
+			
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	
+	ai_will_do = {
+		value = 50
+		if = {
+			limit = {
+				scope:character = {
+					any_vassal = {
+						count < 30
+					}
+				}
+			}
+			multiply = 0.5
+		}
+		if = {
+			limit = {
+				NOR = {
+					has_innovation = innovation_baliffs
+					has_innovation = innovation_development_02
+				}
+			}
+			multiply = 0.25
+		}
+	}
+}
+
+tradition_legalistic_ep3 = {
+	category = realm
+
+	layers = {
+		0 = learning
+		1 = mediterranean
+		4 = quill.dds
+	}
+
+	is_shown = { # strict laws are heavily tied to the Religion during this era
+		scope:character.faith = {
+			OR = {
+				has_doctrine = doctrine_spiritual_head
+				has_doctrine = doctrine_temporal_head
+			}
+		}
+		has_ep3_dlc_trigger = yes
+	}
+	
+	parameters = {
+		cheaper_to_change_laws = yes
+		just_trait_more_common = yes
+		just_trait_gives_bonuses = yes
+		ambitious_trait_more_common = yes
+	}
+	character_modifier = {
+		title_creation_cost_mult = -0.3
+		monthly_prestige_gain_per_dread_mult = -0.01
+		tax_slot_add = 1 #let it for the rare Clan ruler that can spawn on the map and want to use admin gov
 	}
 	
 	cost = {
@@ -1054,6 +1156,7 @@ tradition_roman_legacy = {
 			has_cultural_pillar = heritage_latin
 			has_cultural_pillar = heritage_caucasian
 		}
+		NOT = { has_dlc_feature = roads_to_power }
 	}
 	can_pick = {
 	}
@@ -1064,6 +1167,7 @@ tradition_roman_legacy = {
 		unlock_maa_palatinae = yes
 		unlock_maa_comitatenses = yes
 		powerful_rulers_raise_legions = yes
+		poorly_educated_leaders_distrusted = yes
 	}
 	province_modifier = {
 	}
@@ -1074,6 +1178,88 @@ tradition_roman_legacy = {
 		levy_reinforcement_rate = -0.25
 		heavy_infantry_max_size_add = 2
 		heavy_cavalry_max_size_add = 2
+	}
+	
+	cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						culture_pillar:ethos_bellicose = { is_in_list = traits }
+						culture_pillar:ethos_egalitarian = { is_in_list = traits }
+						culture_pillar:ethos_courtly = { is_in_list = traits }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_bellicose_egalitarian_or_courtly_desc
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						any_culture_county = {
+							count >= 50
+							any_county_province = {
+								geographical_region = custom_eastern_roman_empire
+							}
+						}
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = culture_in_roman_empire_desc
+				}
+			}
+			
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	
+	ai_will_do = {
+		value = 100
+	}
+}
+
+tradition_roman_legacy_ep3 = {
+	category = realm
+
+	layers = {
+		0 = martial
+		1 = mediterranean
+		4 = laurel.dds
+	}
+
+	is_shown = {
+		OR = {
+			has_cultural_pillar = heritage_byzantine
+			has_cultural_pillar = heritage_latin
+			has_cultural_pillar = heritage_caucasian
+		}
+		has_ep3_dlc_trigger = yes
+	}
+	can_pick = {
+	}
+	
+	parameters = {
+		unlock_maa_cataphract = yes
+		unlock_maa_clibanarius = yes
+		unlock_maa_palatinae = yes
+		unlock_maa_comitatenses = yes
+		poorly_educated_leaders_distrusted = yes
+	}
+	province_modifier = {
+	}
+	character_modifier = {
+		knight_effectiveness_mult = -0.25
+		men_at_arms_recruitment_cost = -0.15
+		men_at_arms_maintenance = -0.15
+		men_at_arms_title_limit = 2
 	}
 	
 	cost = {

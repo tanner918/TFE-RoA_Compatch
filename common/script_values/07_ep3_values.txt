@@ -655,7 +655,7 @@ appointment_score_interaction_multiplier_modifiers_value = {
 }
 
 # State Faith
-ep3_state_faith_conversion_mult_value = 2
+ep3_state_faith_conversion_mult_value = 1.2
 
 # Hold Triumph Decision
 ep3_triumph_gold_cost = {
@@ -3168,7 +3168,7 @@ house_power_score = {
 		# Add a small amount of score for each house member within the realm
 		add = {
 			every_house_member = {
-				add = 3
+				add = 1
 			}
 			desc = members_in_realm_desc
 		}
@@ -3192,7 +3192,7 @@ house_power_score = {
 					limit = {
 						house = scope:target_house
 					}
-					add = 15
+					add = 5
 				}
 			}
 			desc = house_members_on_council_desc
@@ -3204,7 +3204,7 @@ house_power_score = {
 				NOT = { house_head.top_liege.primary_title.state_faith ?= house_head.faith }
 			}
 			add = {
-				value = -25
+				value = -50
 				desc = house_head_different_faith_powerful_family_rating
 			}
 		}
@@ -3315,7 +3315,7 @@ house_power_score = {
 		if = {
 			limit = { house_head = { has_character_flag = mass_arrests_house_power_malus } }
 			add = {
-				value = -15
+				value = -200
 				desc = ep3_mass_arrests_house_power_malus
 			}
 		}
@@ -3343,7 +3343,7 @@ house_power_score = {
 				}
 			}
 			add = {
-				value = 100
+				value = 30
 				desc = imperial_house_desc
 			}
 		}

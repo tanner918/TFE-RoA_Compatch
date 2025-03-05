@@ -57,7 +57,8 @@
 
  innovation_writing:0 "Writing"
  unlock_writing_traditions:0 "Unlocks Writing traditions, which give:\n[diplomacy|E]: [diplomacy_i]#P +1#!\n[learning|E]: [learning_i]#P +1#!\n[diplomatic_range|E]: #P +25%#!\n[development|E] Growth: #P +10%#!\n[cultural_fascination|E] Progress: #P +5%#!"
- 
+ eligible_accolade_vanguard_attribute_ACCOLADES_DLC:0 "[knights|E] of this [culture|E] become eligible for [GetAccoladeType('vanguard_attribute').GetName] [accolades|E]"
+ eligible_accolade_vanguard_attribute:1 "[AddLocalizationIf( HasDlcFeature( 'accolades' ), 'eligible_accolade_vanguard_attribute_ACCOLADES_DLC')]"
 
  #vanilla
 

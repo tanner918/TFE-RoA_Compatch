@@ -2,6 +2,7 @@
 wolof_01 = {
 	name = "War_Ndyabe"
 	dynasty = wolofdyn001
+	father = wolof_11
 	religion = west_african_roog_pagan
 	culture = pulaar
 	330.1.1 = {
@@ -14,6 +15,7 @@ wolof_01 = {
 wolof_02 = {
 	name = "Labi"
 	dynasty = wolofdyn001
+	father = wolof_01
 	religion = west_african_roog_pagan
 	culture = pulaar
 	354.12.12 = {
@@ -38,6 +40,7 @@ wolof_03 = {
 wolof_04 = {
 	name = "Lamane" #fictional placeholder
 	dynasty = wolofdyn001
+	father = wolof_11
 	religion = west_african_roog_pagan
 	culture = pulaar
 	324.12.12 = {
@@ -49,6 +52,7 @@ wolof_04 = {
 }
 wolof_05 = {
 	name = "Labi" #fictional placeholder
+	father = wolof_04
 	dynasty = wolofdyn001
 	religion = west_african_roog_pagan
 	culture = pulaar
@@ -158,6 +162,18 @@ wolof_10 = {
 		birth = yes
 	}
 	590.1.1 = {
+		death = yes
+	}
+}
+wolof_11 = {
+	name = Musd
+	dynasty = wolofdyn001
+	religion = west_african_roog_pagan
+	culture = pulaar
+	300.1.1 = {
+		birth = yes
+	}
+	360.1.1 = {
 		death = yes
 	}
 }

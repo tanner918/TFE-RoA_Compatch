@@ -6,14 +6,28 @@
 	language = language_latin
 	martial_custom = martial_custom_male_only
 	traditions = {
+		#tradition_legalistic
+		#tradition_roman_legacy
+		#tradition_roman_hubris
 		tradition_formation_fighting
-		tradition_legalistic
-		tradition_roman_legacy
-		tradition_roman_hubris
 		tradition_bread_and_circuses
 		tradition_roman_architecture
 	}
-	
+	dlc_tradition = {
+		trait = tradition_roman_legacy_ep3
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_roman_legacy
+	}
+	dlc_tradition = {
+		trait = tradition_legalistic_ep3
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_legalistic
+	}
+	dlc_tradition = {
+		trait = tradition_roman_hubris_ep3
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_roman_hubris
+	}
 	name_list = name_list_roman
 	
 	coa_gfx = { latin_group_coa_gfx }
@@ -70,8 +84,13 @@ illyro_roman = {
 		tradition_strength_in_numbers # Juli: Illyria was the source for most of the Roman Army
 		tradition_loyal_soldiers # Juli: Illyria was the source for most of the Roman Army
 		tradition_hill_dwellers # Juli: Illyria is a hilly area
-		tradition_roman_legacy # Juli: Standard Roman
+		#tradition_roman_legacy # Juli: Standard Roman
 		tradition_bread_and_circuses # Juli: Standard Roman
+	}
+	dlc_tradition = {
+		trait = tradition_roman_legacy_ep3
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_roman_legacy
 	}
 	
 	name_list = name_list_illyro_roman
@@ -100,8 +119,13 @@ hispano_roman = {
 		tradition_fp2_ritualised_friendship # Juli: A lot of Hispano Roman aristorcatic families where friends of imperial officers and Emperors, and Vanilla Spanish cultures have this so cheks out
 		tradition_legalistic # Juli: Roman filler tradition, but also roman law and later visigothic law where very valued and strong parameters of their culture and tradition
 		tradition_ancient_miners # Juli: Hispania means land of metals lmao, no seriously Iberian cultures had long and strong ties to metalurgy and Iberian Peninsula is still a very minerally rich culture
-		tradition_roman_legacy # Juli: Standard Roman
+		#tradition_roman_legacy # Juli: Standard Roman
 		tradition_bread_and_circuses # Juli: Standard Roman
+	}
+	dlc_tradition = {
+		trait = tradition_roman_legacy_ep3
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_roman_legacy
 	}
 	
 	name_list = name_list_hispano_roman
@@ -130,8 +154,13 @@ gallo_roman = {
 		tradition_zealous_people # Juli: A lot of Gaullish noblemen where notable scholars and poets during our timeframe
 		tradition_legalistic # Juli: Standard Roman, but also Gallo-Romans culture valued law strongly, visible with the later Frankish need and importance of respectivg roman law
 		tradition_poetry # Juli: A lot of Gaullish noblemen where notable scholars and poets during our timeframe
-		tradition_roman_legacy # Juli: Standard Roman
+		#tradition_roman_legacy # Juli: Standard Roman
 		tradition_bread_and_circuses # Juli: Standard Roman
+	}
+	dlc_tradition = {
+		trait = tradition_roman_legacy_ep3
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_roman_legacy
 	}
 	
 	name_list = name_list_gallo_roman
@@ -163,8 +192,13 @@ afro_roman = {
 		tradition_african_agriculture
 		#tradition_religion_blending # Juli: Africa was home to many many different christian sects, pagan cults and jewish
 		tradition_philosopher_culture # Cybr: Replacing Religion Blending per Huriale's suggestion
-		tradition_roman_legacy # Juli: Standard Roman
+		#tradition_roman_legacy # Juli: Standard Roman
 		tradition_bread_and_circuses # Juli: Standard Roman
+	}
+	dlc_tradition = {
+		trait = tradition_roman_legacy_ep3
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_roman_legacy
 	}
 	
 	name_list = name_list_afro_roman
@@ -195,8 +229,13 @@ mauro_roman = {
 		tradition_concubines # Cybr: Replacing Saharan Nomads per Huriale's suggestion
 		tradition_desert_horsemen
 		tradition_stalwart_defenders # Soraya: The Mauro-Roman states resisted conquest by the WRE, WRE, and Caliphate
-		tradition_roman_legacy # Soraya: Standard Roman
+		#tradition_roman_legacy # Soraya: Standard Roman
 		tradition_bread_and_circuses # Soraya: Standard Roman
+	}
+	dlc_tradition = {
+		trait = tradition_roman_legacy_ep3
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_roman_legacy
 	}
 	
 	name_list = name_list_mauro_roman
@@ -226,9 +265,14 @@ britano_roman = {
 		tradition_quarrelsome # Juli: Britano-Romans brought their own demise by constantly fighting each other (goofy ahh)
 		tradition_loyal_soldiers # Juli: Britano-Romans where proud to be part of the Roman Empire and where later quickly assimilated by the Anglo-Saxon overlords
 		tradition_martial_admiration # Juli: To represent the constant Usurpers and Britannia being a powerhouse for soldiers
-		tradition_roman_legacy # Juli: Standard Roman
+		#tradition_roman_legacy # Juli: Standard Roman
 		tradition_bread_and_circuses # Juli: Standard Roman
 		tradition_sacred_springs # Cybr: Roman/Celtic veneration in the region
+	}
+	dlc_tradition = {
+		trait = tradition_roman_legacy_ep3
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_roman_legacy
 	}
 	
 	name_list = name_list_britano_roman
@@ -261,8 +305,13 @@ thracio_roman = {
 		tradition_orpheus # Cybr: Orpheus was an important figure in Thracian culture and religion
 		tradition_stalwart_defenders # Juli: Thracians are noted for taking care of their land
 		tradition_loyal_soldiers # Juli: Thracians are and where mainly noted for being part of the army lmao goofy
-		tradition_roman_legacy # Juli: Standard Roman
+		#tradition_roman_legacy # Juli: Standard Roman
 		tradition_bread_and_circuses # Juli: Standard Roman
+	}
+	dlc_tradition = {
+		trait = tradition_roman_legacy_ep3
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_roman_legacy
 	}
 	
 	name_list = name_list_thracio_roman
@@ -290,8 +339,13 @@ dacio_roman = {
 		tradition_ancient_miners # Cybr: Apparently Dacia's mines were in demand
 		tradition_highland_warriors # Juli: Dacia lived in Highlands all the time lmao
 		tradition_stalwart_defenders # Juli: Dacia are noted for taking care of their land
-		tradition_roman_legacy # Juli: Standard Roman
+		#tradition_roman_legacy # Juli: Standard Roman
 		tradition_bread_and_circuses # Juli: Standard Roman
+	}
+	dlc_tradition = {
+		trait = tradition_roman_legacy_ep3
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_roman_legacy
 	}
 	
 	name_list = name_list_dacio_roman
@@ -383,8 +437,13 @@ rhaetio_roman = {
 		tradition_stalwart_defenders # Cybr: Described as savage warriors by Strabo, but could be bias from the Roman POV
 		tradition_mountain_homes # Cybr: They're in the Alps
 		tradition_mountaineers # Cybr: Alpine legions
-		tradition_roman_legacy # Juli: Standard Roman
+		#tradition_roman_legacy # Juli: Standard Roman
 		tradition_bread_and_circuses # Juli: Standard Roman
+	}
+	dlc_tradition = {
+		trait = tradition_roman_legacy_ep3
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_roman_legacy
 	}
 	
 	name_list = name_list_rhaetian

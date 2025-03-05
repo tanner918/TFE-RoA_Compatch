@@ -29,6 +29,15 @@
 				}
 				government_has_flag = government_is_tribal
 			}
+			NOT = {
+				AND = {
+					AND = {
+					government_has_flag = government_is_roman
+					government_has_flag = government_is_feudal
+					}
+					top_liege = { government_allows = administrative }
+				}
+			}
 		}
 		succession = {
 			order_of_succession = inheritance
@@ -50,7 +59,16 @@
 
 		potential = {
 			NOT = { government_has_flag = government_is_clan }
-			NOT = { government_has_flag = government_is_administrative }
+			NOT = { government_allows = administrative }
+			NOT = {
+				AND = {
+					AND = {
+					government_has_flag = government_is_roman
+					government_has_flag = government_is_feudal
+					}
+					top_liege = { government_allows = administrative }
+				}
+			}
 		}
 	}
 
@@ -105,7 +123,16 @@
 
 		potential = {
 			NOT = { government_has_flag = government_is_clan }
-			NOT = { government_has_flag = government_is_administrative }
+			NOT = { government_allows = administrative }
+			NOT = {
+				AND = {
+					AND = {
+					government_has_flag = government_is_roman
+					government_has_flag = government_is_feudal
+					}
+					top_liege = { government_allows = administrative }
+				}
+			}
 		}
 	}
 
@@ -164,7 +191,16 @@
 
 		potential = {
 			NOT = { government_has_flag = government_is_clan }
-			NOT = { government_has_flag = government_is_administrative }
+			NOT = { government_allows = administrative }
+			NOT = {
+				AND = {
+					AND = {
+					government_has_flag = government_is_roman
+					government_has_flag = government_is_feudal
+					}
+					top_liege = { government_allows = administrative }
+				}
+			}
 		}
 	}
 
@@ -233,7 +269,16 @@
 		}
 
 		potential = {
-			NOT = { government_has_flag = government_is_administrative }
+			NOT = { government_allows = administrative }
+			NOT = {
+				AND = {
+					AND = {
+					government_has_flag = government_is_roman
+					government_has_flag = government_is_feudal
+					}
+					top_liege = { government_allows = administrative }
+				}
+			}
 		}
 	}
 
@@ -295,7 +340,16 @@
 		}
 
 		potential = {
-			NOT = { government_has_flag = government_is_administrative }
+			NOT = { government_allows = administrative }
+			NOT = {
+				AND = {
+					AND = {
+					government_has_flag = government_is_roman
+					government_has_flag = government_is_feudal
+					}
+					top_liege = { government_allows = administrative }
+				}
+			}
 		}
 	}
 
@@ -373,7 +427,16 @@
 		}
 
 		potential = {
-			NOT = { government_has_flag = government_is_administrative }
+			NOT = { government_allows = administrative }
+			NOT = {
+				AND = {
+					AND = {
+					government_has_flag = government_is_roman
+					government_has_flag = government_is_feudal
+					}
+					top_liege = { government_allows = administrative }
+				}
+			}
 		}
 	}
 
@@ -414,8 +477,13 @@
 
 	appointment_succession_law = {
 		can_keep = {
-			government_allows = administrative
+			OR = {
+			government_has_flag = government_is_autocratic_ep3
+			government_has_flag = government_is_administrative
+			government_has_flag = government_is_roman
+			}
 			is_independent_ruler = no
+			top_liege = { government_allows = administrative }
 
 			# Vassal Contract allows it
 			custom_description = {
@@ -428,17 +496,32 @@
 		}
 		can_have = {
 			#can_have_single_heir_succession_law_trigger = yes
-			government_allows = administrative
+			OR = {
+			government_has_flag = government_is_autocratic_ep3
+			government_has_flag = government_is_administrative
+			government_has_flag = government_is_roman
+			}
 			is_independent_ruler = no
+			top_liege = { government_allows = administrative }
 		}
 		can_pass = {
 			can_change_succession_law_trigger = yes
-			government_allows = administrative
+			OR = {
+			government_has_flag = government_is_autocratic_ep3
+			government_has_flag = government_is_administrative
+			government_has_flag = government_is_roman
+			}
 			is_independent_ruler = no
+			top_liege = { government_allows = administrative }
 		}
 		should_start_with = {
-			government_allows = administrative
+			OR = {
+			government_has_flag = government_is_autocratic_ep3
+			government_has_flag = government_is_administrative
+			government_has_flag = government_is_roman
+			}
 			is_independent_ruler = no
+			top_liege = { government_allows = administrative }
 		}
 		succession = {
 			order_of_succession = appointment
@@ -472,7 +555,11 @@
 		}
 
 		potential = {
-			government_allows = administrative
+			OR = {
+			government_has_flag = government_is_autocratic_ep3
+			government_has_flag = government_is_administrative
+			government_has_flag = government_is_roman
+			}
 		}
 	}
 

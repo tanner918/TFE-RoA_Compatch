@@ -20,7 +20,19 @@
                 has_title = title:e_western_roman_empire #West
 				has_title = title:e_roman_empire	#Full
 
-                has_court_position = succ_exp_co_emperor_court_position # Co-emperor
+                AND = {
+					is_diarch = yes
+					liege_has_co_emperorship_trigger = yes
+					liege = {
+						OR = {
+							has_title = title:e_palmyrene	#Palmyrene
+      			        	has_title = title:e_gaul	#Gaul
+							has_title = title:e_byzantium	#East
+                			has_title = title:e_western_roman_empire #West
+							has_title = title:e_roman_empire	#Full
+						}
+					}
+				}
 			}
 			#capital_county = title:c_byzantion	#Must rule from the Bucoleon Palace.
 		}

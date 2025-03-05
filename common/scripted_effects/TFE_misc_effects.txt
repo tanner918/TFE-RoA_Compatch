@@ -668,3 +668,33 @@ create_custom_unlanded_kingdom_effect = {
 		trigger_event = TFE_misc_decisions.0001
 	}
 }
+migrate_people_effect={
+	$COUNTY$={
+		save_scope_as=county
+	}
+	while={
+		count=3
+		scope:county = {
+			if = {
+				limit = {scope:county.culture = $CHARACTER$.culture }
+				demote_random_culture_minority_effect = yes
+			}
+			else = {
+				promote_culture_minority_effect = { 
+					CULTURE = $CHARACTER$.culture 
+				}
+			}
+		}
+		scope:county = {
+			if = {
+				limit = { scope:county.faith = $CHARACTER$.faith }
+				demote_random_faith_minority_effect = yes
+			}
+			else = {
+				promote_faith_minority_effect = {
+					FAITH = $CHARACTER$.faith
+				}
+			}
+		}
+	}
+}

@@ -601,6 +601,10 @@ gothic_duchy_conquest_cb = {
 	on_invalidated_desc = msg_subjugation_war_invalidated_message
 	
 	on_invalidated = {
+		scope:attacker = {
+			limit = { has_title = title:d_belisarius_expedition }
+			scope:attacker = {destroy_title = title:d_belisarius_expedition }
+		}
 	}
 
 	on_declaration = {
@@ -722,6 +726,11 @@ gothic_duchy_conquest_cb = {
 	}
 
 	on_victory = {
+		scope:attacker = {
+			limit = { has_title = title:d_belisarius_expedition }
+			scope:attacker = {destroy_title = title:d_belisarius_expedition }
+			add_character_flag = STOP_ADMIN
+		}
 		scope:attacker = { show_pow_release_message_effect = yes }
 		custom_tooltip = gothic_war_end_effect2
 
@@ -862,6 +871,9 @@ gothic_duchy_conquest_cb = {
 				}
 			}
 		}
+		scope:attacker = {
+			remove_character_flag = STOP_ADMIN
+		}
 	}
 
 	on_white_peace_desc = {
@@ -875,6 +887,10 @@ gothic_duchy_conquest_cb = {
 	}
 
 	on_white_peace = {
+		scope:attacker = {
+			limit = { has_title = title:d_belisarius_expedition }
+			scope:attacker = {destroy_title = title:d_belisarius_expedition }
+		}
 		scope:attacker = { show_pow_release_message_effect = yes }
 		# Prestige loss for the attacker
 
@@ -921,6 +937,10 @@ gothic_duchy_conquest_cb = {
 	}
 
 	on_defeat = {
+		scope:attacker = {
+			limit = { has_title = title:d_belisarius_expedition }
+			scope:attacker = {destroy_title = title:d_belisarius_expedition }
+		}
 		scope:attacker = { show_pow_release_message_effect = yes }
 
 		#EP2 accolade glory gain for winning against higher ranked enemy

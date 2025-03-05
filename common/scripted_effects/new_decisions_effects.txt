@@ -1028,6 +1028,83 @@ new_official_imperial_faith_effect = {
 	}
 }
 
+new_official_imperial_faith_effect_ep3 = {
+	### Set the Empire as the religious head title if you have the Imperial Head of Faith doctrine
+	if = {
+		limit = { exists = scope:old_faith }
+		scope:old_faith = {
+			custom_tooltip = new_official_imperial_faith_decision_effect_old_faith_tt
+			change_fervor = {
+				value = medium_fervor_loss
+				desc = fervor_loss_official_imperial_faith
+			}
+		}
+	}
+	scope:empire = {
+		set_variable = {
+			name = official_imperial_faith
+			value = scope:new_faith
+		}
+	}
+	scope:new_faith = {
+		custom_tooltip = new_official_imperial_faith_decision_effect_new_faith_tt
+		change_fervor = {
+			value = medium_fervor_gain
+			desc = fervor_gain_official_imperial_faith
+		}
+	}
+	
+	scope:emperor = {
+		every_realm_county = {
+			custom = new_official_imperial_faith_decision_effect_conversion_tt
+			
+			custom_tooltip = new_official_imperial_faith_decision_effect_conversion_non_religion_tt
+			custom_tooltip = new_official_imperial_faith_decision_effect_conversion_religion_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { faith = scope:new_faith }
+						NOT = { religion = scope:new_faith.religion }
+					}
+					random = {
+						chance = 10
+						set_county_faith = scope:new_faith
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = { faith = scope:new_faith }
+						religion = scope:new_faith.religion
+					}
+					random = {
+						chance = 40
+						set_county_faith = scope:new_faith
+					}
+				}
+			}
+		}
+	}
+	
+	### Set the Empire as the religious head title if you have the Imperial Head of Faith doctrine
+	if = {
+		limit = { scope:new_faith = { has_doctrine = doctrine_imperial_head } }
+		
+		# It doesn't exist? We create it!
+		if = {
+			limit = { NOT = { exists = scope:new_faith.religious_head_title } }
+			custom_tooltip = new_official_imperial_faith_effect_primary_empire_becomes_hof_title_tt
+			scope:new_faith = { set_religious_head_title = scope:empire }
+		}
+		
+		### TODO: That
+		# # It exists? We actually get a cb to become the new rel head!
+		# else_if = {
+			# limit = { NOT = { has_title = scope:new_faith.religious_head_title } }
+			# custom_tooltip = new_official_imperial_faith_effect_can_challenge_hof_title_tt
+		# }
+	}
+}
+
 # Just give the variable to the title
 new_official_imperial_faith_effect_skip_effects = {
 	$EMPIRE$ = {
@@ -1051,7 +1128,13 @@ reject_official_imperial_faith_effect = {
 			}
 		}
 		faith = { remove_religious_head_title = yes }
-		change_government = imperial_government
+		if = {
+			limit = {
+				NOT = { has_dlc_feature = roads_to_power }
+			}
+			change_government = imperial_government
+		}
+		else = {}
 	}
 }
 

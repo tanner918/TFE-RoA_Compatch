@@ -1525,7 +1525,7 @@ widget = {
 										}
 
 										icon = { #Chamber
-											datacontext = "[BookmarkCharacterGUI.GetCharacter]"
+											datacontext = "[BookmarkCharacter.Self]"
 											#visible = "[Not( BookmarkCharacter.HasDynastyHouse )]"
 											parentanchor = bottom|hcenter
 											size = { 420 280 }

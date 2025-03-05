@@ -455,7 +455,7 @@ sow_dissent_ere_decision = {
 	desc = sow_dissent_ere_decision_desc
 	selection_tooltip = sow_dissent_ere_decision_tooltip
 
-	ai_goal = yes
+	ai_check_interval = 12
 
 	is_shown = {
 		game_start_date = 476.9.4
@@ -543,6 +543,18 @@ sow_dissent_ere_decision = {
 	ai_potential = {
 		always = yes
 	}
+	cost = {
+        gold = {
+            value = 0
+            if = {
+                limit = {
+                    is_ai = yes
+                }
+                add = 0
+            }
+            else = { add = 100 }
+        }
+    }
 	cost = {
 		gold = 100
 	}

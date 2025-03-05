@@ -5856,6 +5856,11 @@ vandalic_war_cb = {
 	on_invalidated_desc = msg_subjugation_war_invalidated_message
 	
 	on_invalidated = {
+		scope:attacker = {
+			limit = { has_title = title:d_belisarius_expedition }
+			scope:attacker = {destroy_title = title:d_belisarius_expedition }
+			add_character_flag = STOP_ADMIN
+		}
 	}
 
 	on_victory_desc = {
@@ -5890,6 +5895,11 @@ vandalic_war_cb = {
 				}
 				scope:defender = { destroy_title = prev }
 			}
+		}
+		scope:attacker = {
+			limit = { has_title = title:d_belisarius_expedition }
+			scope:attacker = {destroy_title = title:d_belisarius_expedition }
+			add_character_flag = STOP_ADMIN
 		}
 		scope:attacker = {
 			top_liege = {
@@ -6062,6 +6072,7 @@ vandalic_war_cb = {
 			global_var:hildirix ?= { release_from_prison = yes }
 			global_var:hildirix ?= { remove_character_flag = is_being_tortured }
 		}
+		scope:attacker = { remove_character_flag = STOP_ADMIN }
 	}
 
 	on_white_peace_desc = {
@@ -6076,6 +6087,11 @@ vandalic_war_cb = {
 	}
 
 	on_white_peace = {
+		scope:attacker = {
+			limit = { has_title = title:d_belisarius_expedition }
+			scope:attacker = {destroy_title = title:d_belisarius_expedition }
+			add_character_flag = STOP_ADMIN
+		}
         #EP2 accolade glory gain for doing ok against higher ranked enemy
 		scope:attacker = { accolade_attacker_war_end_glory_gain_low_effect = yes }
 		scope:defender = { accolade_defender_war_end_glory_gain_med_effect = yes }
@@ -6130,6 +6146,7 @@ vandalic_war_cb = {
 
 		# Truce
 		add_truce_white_peace_effect = yes
+		scope:attacker = { remove_character_flag = STOP_ADMIN }
 	}
 
 	on_defeat_desc = {
@@ -6152,6 +6169,11 @@ vandalic_war_cb = {
 	}
 
 	on_defeat = {
+		scope:attacker = {
+			limit = { has_title = title:d_belisarius_expedition }
+			scope:attacker = {destroy_title = title:d_belisarius_expedition }
+			add_character_flag = STOP_ADMIN
+		}
         #EP2 accolade glory gain for winning against higher ranked enemy
 		scope:defender = { accolade_attacker_war_end_glory_gain_high_effect = yes }
 		scope:attacker = { show_pow_release_message_effect = yes }
@@ -6301,6 +6323,7 @@ vandalic_war_cb = {
 			save_temporary_scope_as = loser
 		}
 		on_lost_aggression_war_discontent_loss = yes
+		scope:attacker = { remove_character_flag = STOP_ADMIN }
 	}
 
 	on_primary_attacker_death = inherit

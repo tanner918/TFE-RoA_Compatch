@@ -727,8 +727,10 @@
 								limit = {
 									tier = tier_county
 								}
-								set_county_culture = scope:attacker.culture
-								set_county_faith = scope:attacker.faith
+								migrate_people_effect={
+									CHARACTER = scope:attacker
+									COUNTY = this
+								}
 							}
 						}
 					}
@@ -2091,8 +2093,10 @@ nomadic_migration_cb = {
 								limit = {
 									tier = tier_county
 								}
-								set_county_culture = scope:attacker.culture
-								set_county_faith = scope:attacker.faith
+								migrate_people_effect={
+									CHARACTER = scope:attacker
+									COUNTY = this
+								}
 							}
 						}
 					}
@@ -3036,8 +3040,10 @@ germanic_mass_migration_cb = {
 					while = {
 						count = var:culture_province
 						random_realm_county = {
-							set_county_culture = scope:attacker.culture
-							set_county_faith = scope:attacker.faith
+							migrate_people_effect={
+								CHARACTER = scope:attacker
+								COUNTY = this
+							}
 						}
 					}
 
@@ -4246,8 +4252,10 @@ tfe_slavic_migration = {
 								limit = {
 									tier = tier_county
 								}
-								set_county_culture = scope:attacker.culture
-								set_county_faith = scope:attacker.faith
+								migrate_people_effect={
+									CHARACTER = scope:attacker
+									COUNTY = this
+								}
 							}
 						}
 					}
@@ -5478,8 +5486,10 @@ event_germanic_migration_cb = {
 								limit = {
 									tier = tier_county
 								}
-								set_county_culture = scope:attacker.culture
-								set_county_faith = scope:attacker.faith
+								migrate_people_effect={
+									CHARACTER = scope:attacker
+									COUNTY = this
+								}
 							}
 						}
 					}
@@ -6567,8 +6577,10 @@ event_nomadic_migration_cb = {
 								limit = {
 									tier = tier_county
 								}
-								set_county_culture = scope:attacker.culture
-								set_county_faith = scope:attacker.faith
+								migrate_people_effect={
+									CHARACTER = scope:attacker
+									COUNTY = this
+								}
 							}
 						}
 					}

@@ -258,7 +258,7 @@ exarchate_08 = {
 	}
 }
 70506 = {
-	name = "Ioustinianos" #Rhinotmetos
+	name = "Ioustinianos" # Rhinotmetos
 	dynasty = dynasty_herakleios
 	martial = 3
 	diplomacy = 3
@@ -5712,8 +5712,8 @@ greek_01 = {
 	martial = 5
 	diplomacy = 9
 	intrigue = 5
-	stewardship = 10
-	learning = 15
+	stewardship = 9
+	learning = 10
 	prowess = 3
 	trait = greedy
 	trait = diligent
@@ -5754,6 +5754,7 @@ greek_02 = {
 		birth = yes
 	}
 	532.1.1 = {
+		add_courtier = character:afroroman_08
 		add_courtier = character:greek_08
 	}
 	552.1.1 = {
@@ -5762,22 +5763,22 @@ greek_02 = {
 }
 
 greek_03 = {
-	name = "Procopius of Caesarea"
+	name = "Procopius"
+	dynasty = caesarensis_dynasty
 	religion = "chalcedonian"
 	culture = "greek"
 	martial = 3
 	diplomacy = 7
-	intrigue = 7
+	intrigue = 8
 	stewardship = 5
 	learning = 10
 	prowess = 5
-	trait = cynical
-	trait = wrathful
 	trait = ambitious
+	trait = zealous
+	trait = fickle
 	trait = scholar
 	trait = journaller
-	trait = education_learning_4
-	
+	trait = education_learning_3
 	510.1.1 = {
 		birth = yes
 	}
@@ -6085,7 +6086,26 @@ greek_22 = {
 		death = yes
 	}
 }
-
+greek_23 = {
+	name = "Zenonis"
+	female = yes
+	culture = "greek"
+	religion = "nicene"
+	trait = lustful
+	trait = beauty_good_2
+	441.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = "coptic"
+	}
+	476.1.1 = {
+		employer = pontus_18
+	}
+	477.1.1 = {
+		death = yes
+	}
+}
 #############################################################
 # 
 # MISC PLACEHOLDERS

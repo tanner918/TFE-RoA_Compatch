@@ -1,0 +1,517 @@
+{
+	"ExportMask":	"ExportMask.png",
+	"object_masks":	[{
+			"path":	"MapObjectMasks/reeds_01_mask.png",
+			"id":	"reeds_01_mask",
+			"name":	"reeds_01_mask"
+		}, {
+			"path":	"MapObjectMasks/steppe_bush_01_mask.png",
+			"id":	"steppe_bush_01_mask",
+			"name":	"steppe_bush_01_mask"
+		}, {
+			"path":	"MapObjectMasks/tree_cypress_01_mask.png",
+			"id":	"tree_cypress_01_mask",
+			"name":	"tree_cypress_01_mask"
+		}, {
+			"path":	"MapObjectMasks/tree_jungle_01_c_mask.png",
+			"id":	"tree_jungle_01_c_mask",
+			"name":	"tree_jungle_01_c_mask"
+		}, {
+			"path":	"MapObjectMasks/tree_jungle_01_d_mask.png",
+			"id":	"tree_jungle_01_d_mask",
+			"name":	"tree_jungle_01_d_mask"
+		}, {
+			"path":	"MapObjectMasks/tree_leaf_01_mask.png",
+			"id":	"tree_leaf_01_mask",
+			"name":	"tree_leaf_01_mask"
+		}, {
+			"path":	"MapObjectMasks/tree_leaf_01_single_mask.png",
+			"id":	"tree_leaf_01_single_mask",
+			"name":	"tree_leaf_01_single_mask"
+		}, {
+			"path":	"MapObjectMasks/tree_leaf_02_mask.png",
+			"id":	"tree_leaf_02_mask",
+			"name":	"tree_leaf_02_mask"
+		}, {
+			"path":	"MapObjectMasks/tree_palm_01_mask.png",
+			"id":	"tree_palm_01_mask",
+			"name":	"tree_palm_01_mask"
+		}, {
+			"path":	"MapObjectMasks/tree_pine_01_a_mask.png",
+			"id":	"tree_pine_01_a_mask",
+			"name":	"tree_pine_01_a_mask"
+		}, {
+			"path":	"MapObjectMasks/tree_pine_01_b_mask.png",
+			"id":	"tree_pine_01_b_mask",
+			"name":	"tree_pine_01_b_mask"
+		}, {
+			"path":	"MapObjectMasks/tree_pine_impassable_01_a_mask.png",
+			"id":	"tree_pine_impassable_01_a_mask",
+			"name":	"tree_pine_impassable_01_a_mask"
+		}],
+	"heightmap_data":	{
+		"indirection_file":	"Heightmap/Indirection",
+		"heightmap":	"Heightmap/Heightmap.png",
+		"should_wrap_x":	false,
+		"tile_size":	33
+	},
+	"material_masks":	[{
+			"path":	"MaterialMasks/plains_01.png",
+			"id":	"plains_01",
+			"name":	"Plains 01"
+		}, {
+			"path":	"MaterialMasks/plains_01_dry.png",
+			"id":	"plains_01_dry",
+			"name":	"Plains 01 dry"
+		}, {
+			"path":	"MaterialMasks/plains_01_dry_mud.png",
+			"id":	"plains_01_dry_mud",
+			"name":	"Plains 01 dry_mud"
+		}, {
+			"path":	"MaterialMasks/plains_01_rough.png",
+			"id":	"plains_01_rough",
+			"name":	"Plains 01 rough"
+		}, {
+			"path":	"MaterialMasks/plains_01_noisy.png",
+			"id":	"plains_01_noisy",
+			"name":	"Plains 01 noisy"
+		}, {
+			"path":	"MaterialMasks/farmland_01.png",
+			"id":	"farmland_01",
+			"name":	"Farmland 01"
+		}, {
+			"path":	"MaterialMasks/mud_wet_01.png",
+			"id":	"mud_wet_01",
+			"name":	"Mud wet 01"
+		}, {
+			"path":	"MaterialMasks/beach_02.png",
+			"id":	"beach_02",
+			"name":	"Beach 02"
+		}, {
+			"path":	"MaterialMasks/beach_02_pebbles.png",
+			"id":	"beach_02_pebbles",
+			"name":	"Beach 02 pebbles"
+		}, {
+			"path":	"MaterialMasks/beach_02_mediterranean.png",
+			"id":	"beach_02_mediterranean",
+			"name":	"Beach 02 mediterranean"
+		}, {
+			"path":	"MaterialMasks/hills_01.png",
+			"id":	"hills_01",
+			"name":	"Hills 01"
+		}, {
+			"path":	"MaterialMasks/hills_01_rocks.png",
+			"id":	"hills_01_rocks",
+			"name":	"Hills 01 rocks"
+		}, {
+			"path":	"MaterialMasks/hills_01_rocks_medi.png",
+			"id":	"hills_01_rocks_medi",
+			"name":	"Hills 01 rock Medi"
+		}, {
+			"path":	"MaterialMasks/hills_01_rocks_small.png",
+			"id":	"hills_01_rocks_small",
+			"name":	"Hills 01 rocks small"
+		}, {
+			"path":	"MaterialMasks/floodplains_01.png",
+			"id":	"floodplains_01",
+			"name":	"Floodplains 01"
+		}, {
+			"path":	"MaterialMasks/wetlands_02.png",
+			"id":	"wetlands_02",
+			"name":	"Wetlands 02"
+		}, {
+			"path":	"MaterialMasks/wetlands_02_mud.png",
+			"id":	"wetlands_02_mud",
+			"name":	"Wetlands 02_mud"
+		}, {
+			"path":	"MaterialMasks/coastline_cliff_grey.png",
+			"id":	"coastline_cliff_grey",
+			"name":	"Coastline cliff grey"
+		}, {
+			"path":	"MaterialMasks/coastline_cliff_desert.png",
+			"id":	"coastline_cliff_desert",
+			"name":	"Coastline cliff_desert"
+		}, {
+			"path":	"MaterialMasks/mountain_02.png",
+			"id":	"mountain_02",
+			"name":	"Mountain 02"
+		}, {
+			"path":	"MaterialMasks/mountain_02_b.png",
+			"id":	"mountain_02_b",
+			"name":	"Mountain 02 b"
+		}, {
+			"path":	"MaterialMasks/mountain_02_d.png",
+			"id":	"mountain_02_d",
+			"name":	"Mountain 02 d"
+		}, {
+			"path":	"MaterialMasks/mountain_02_d_valleys.png",
+			"id":	"mountain_02_d_valleys",
+			"name":	"Mountain 02 d valleys"
+		}, {
+			"path":	"MaterialMasks/mountain_02_d_snow.png",
+			"id":	"mountain_02_d_snow",
+			"name":	"Mountain 02 d snow"
+		}, {
+			"path":	"MaterialMasks/mountain_02_d_desert.png",
+			"id":	"mountain_02_d_desert",
+			"name":	"Mountain 02 d desert"
+		}, {
+			"path":	"MaterialMasks/mountain_02_snow.png",
+			"id":	"mountain_02_snow",
+			"name":	"Mountain 02 snow"
+		}, {
+			"path":	"MaterialMasks/mountain_02_c.png",
+			"id":	"mountain_02_c",
+			"name":	"Mountain 02 c"
+		}, {
+			"path":	"MaterialMasks/mountain_02_c_snow.png",
+			"id":	"mountain_02_c_snow",
+			"name":	"Mountain 02 c snow"
+		}, {
+			"path":	"MaterialMasks/forest_leaf_01.png",
+			"id":	"forest_leaf_01",
+			"name":	"Forest leaf 01"
+		}, {
+			"path":	"MaterialMasks/forest_jungle_01.png",
+			"id":	"forest_jungle_01",
+			"name":	"Forest jungle 01"
+		}, {
+			"path":	"MaterialMasks/forest_pine_01.png",
+			"id":	"forest_pine_01",
+			"name":	"Forest pine 01"
+		}, {
+			"path":	"MaterialMasks/forestfloor.png",
+			"id":	"forestfloor",
+			"name":	"Forestfloor"
+		}, {
+			"path":	"MaterialMasks/desert_01.png",
+			"id":	"desert_01",
+			"name":	"Desert 01 / beach"
+		}, {
+			"path":	"MaterialMasks/desert_02.png",
+			"id":	"desert_02",
+			"name":	"Desert 02"
+		}, {
+			"path":	"MaterialMasks/desert_cracked.png",
+			"id":	"desert_cracked",
+			"name":	"Desert cracked"
+		}, {
+			"path":	"MaterialMasks/desert_wavy_01.png",
+			"id":	"desert_wavy_01",
+			"name":	"Desert wavy 01"
+		}, {
+			"path":	"MaterialMasks/desert_wavy_01_larger.png",
+			"id":	"desert_wavy_01_larger",
+			"name":	"Desert wavy 01 larger"
+		}, {
+			"path":	"MaterialMasks/desert_flat_01.png",
+			"id":	"desert_flat_01",
+			"name":	"Desert_flat_01"
+		}, {
+			"path":	"MaterialMasks/desert_rocky.png",
+			"id":	"desert_rocky",
+			"name":	"Desert_rocky"
+		}, {
+			"path":	"MaterialMasks/mountain_02_desert.png",
+			"id":	"mountain_02_desert",
+			"name":	"Mountain 02 desert"
+		}, {
+			"path":	"MaterialMasks/mountain_02_desert_c.png",
+			"id":	"mountain_02_desert_c",
+			"name":	"Mountain 02 desert c"
+		}, {
+			"path":	"MaterialMasks/drylands_01.png",
+			"id":	"drylands_01",
+			"name":	"Drylands 01"
+		}, {
+			"path":	"MaterialMasks/drylands_01_grassy.png",
+			"id":	"drylands_01_grassy",
+			"name":	"Drylands 01 grassy"
+		}, {
+			"path":	"MaterialMasks/drylands_01_cracked.png",
+			"id":	"drylands_01_cracked",
+			"name":	"Drylands 01 cracked"
+		}, {
+			"path":	"MaterialMasks/oasis.png",
+			"id":	"oasis",
+			"name":	"Oasis"
+		}, {
+			"path":	"MaterialMasks/medi_dry_mud.png",
+			"id":	"medi_dry_mud",
+			"name":	"Medi Dry Mud"
+		}, {
+			"path":	"MaterialMasks/medi_grass_01.png",
+			"id":	"medi_grass_01",
+			"name":	"Medi Grass 01"
+		}, {
+			"path":	"MaterialMasks/medi_lumpy_grass.png",
+			"id":	"medi_lumpy_grass",
+			"name":	"Medi Lumpy Grass"
+		}, {
+			"path":	"MaterialMasks/medi_noisy_grass.png",
+			"id":	"medi_noisy_grass",
+			"name":	"Medi Noisy Grass"
+		}, {
+			"path":	"MaterialMasks/medi_farmlands.png",
+			"id":	"medi_farmlands",
+			"name":	"Medi Farmlands"
+		}, {
+			"path":	"MaterialMasks/northern_plains_01.png",
+			"id":	"northern_plains_01",
+			"name":	"Northern Plains 01"
+		}, {
+			"path":	"MaterialMasks/steppe_grass.png",
+			"id":	"steppe_grass",
+			"name":	"Steppe grass"
+		}, {
+			"path":	"MaterialMasks/steppe_rocks.png",
+			"id":	"steppe_rocks",
+			"name":	"Steppe rocks"
+		}, {
+			"path":	"MaterialMasks/steppe_bushes.png",
+			"id":	"steppe_bushes",
+			"name":	"Steppe bushes"
+		}, {
+			"path":	"MaterialMasks/snow.png",
+			"id":	"snow",
+			"name":	"Snow"
+		}, {
+			"path":	"MaterialMasks/india_farmlands.png",
+			"id":	"india_farmlands",
+			"name":	"India Farmlands"
+		}],
+	"map_objects":	[{
+			"name":	"bridge 01",
+			"filename":	"gfx/map/map_object_data/bridges.txt"
+		}, {
+			"name":	"cliff big 01",
+			"filename":	"gfx/map/map_object_data/cliffs_rock.txt"
+		}, {
+			"name":	"cliff big 02",
+			"filename":	"gfx/map/map_object_data/cliffs_rock.txt"
+		}, {
+			"name":	"cliff coastline 01",
+			"filename":	"gfx/map/map_object_data/cliffs_coastline.txt"
+		}, {
+			"name":	"cliff coastline 02",
+			"filename":	"gfx/map/map_object_data/cliffs_coastline.txt"
+		}, {
+			"name":	"cliff coastline 03",
+			"filename":	"gfx/map/map_object_data/cliffs_coastline.txt"
+		}, {
+			"name":	"cliff coastline 04",
+			"filename":	"gfx/map/map_object_data/cliffs_coastline.txt"
+		}, {
+			"name":	"cliff end 01",
+			"filename":	"gfx/map/map_object_data/cliffs_rock.txt"
+		}, {
+			"name":	"cliff end 02",
+			"filename":	"gfx/map/map_object_data/cliffs_rock.txt"
+		}, {
+			"name":	"cliff rock 01",
+			"filename":	"gfx/map/map_object_data/cliffs_rock.txt"
+		}, {
+			"name":	"cliff rock 02",
+			"filename":	"gfx/map/map_object_data/cliffs_rock.txt"
+		}, {
+			"name":	"cliff rock 03",
+			"filename":	"gfx/map/map_object_data/cliffs_rock.txt"
+		}, {
+			"name":	"cliff small 01",
+			"filename":	"gfx/map/map_object_data/cliffs_rock.txt"
+		}, {
+			"name":	"hadrians wall 01",
+			"filename":	"gfx/map/map_object_data/special.txt"
+		}, {
+			"name":	"hadrians wall 02",
+			"filename":	"gfx/map/map_object_data/special.txt"
+		}, {
+			"name":	"hadrians wall 03",
+			"filename":	"gfx/map/map_object_data/special.txt"
+		}, {
+			"name":	"hadrians wall 04",
+			"filename":	"gfx/map/map_object_data/special.txt"
+		}, {
+			"name":	"lakes",
+			"filename":	"gfx/map/map_object_data/lakes.txt"
+		}, {
+			"name":	"mines",
+			"filename":	"gfx/map/map_object_data/special.txt"
+		}, {
+			"name":	"new_mapobject_1",
+			"filename":	"gfx/map/map_object_data/new_mapobject_1.txt"
+		}, {
+			"name":	"new_mapobject_2",
+			"filename":	"gfx/map/map_object_data/new_mapobject_2.txt"
+		}, {
+			"name":	"new_mapobject_3",
+			"filename":	"gfx/map/map_object_data/new_mapobject_3.txt"
+		}, {
+			"name":	"new_mapobject_4",
+			"filename":	"gfx/map/map_object_data/new_mapobject_4.txt"
+		}, {
+			"name":	"new_mapobject_5",
+			"filename":	"gfx/map/map_object_data/new_mapobject_5.txt"
+		}, {
+			"name":	"special_brihadeeswarar_temple",
+			"filename":	"gfx/map/map_object_data/special.txt"
+		}, {
+			"name":	"special_building_petra",
+			"filename":	"gfx/map/map_object_data/special.txt"
+		}, {
+			"name":	"special_cathedral_generic",
+			"filename":	"gfx/map/map_object_data/special.txt"
+		}, {
+			"name":	"special_cathedral_pagan",
+			"filename":	"gfx/map/map_object_data/special.txt"
+		}, {
+			"name":	"special_colosseum",
+			"filename":	"gfx/map/map_object_data/special.txt"
+		}, {
+			"name":	"special_great_mosque_of_djenne",
+			"filename":	"gfx/map/map_object_data/special.txt"
+		}, {
+			"name":	"special_great_mosque_of_mecca",
+			"filename":	"gfx/map/map_object_data/special.txt"
+		}, {
+			"name":	"special_notre_dame",
+			"filename":	"gfx/map/map_object_data/special.txt"
+		}, {
+			"name":	"special_palace_of_aachen",
+			"filename":	"gfx/map/map_object_data/special.txt"
+		}, {
+			"name":	"special_pyramids_giza",
+			"filename":	"gfx/map/map_object_data/special.txt"
+		}, {
+			"name":	"special_stonehenge",
+			"filename":	"gfx/map/map_object_data/special.txt"
+		}, {
+			"name":	"special_tower_of_london",
+			"filename":	"gfx/map/map_object_data/special.txt"
+		}, {
+			"name":	"amb_3D_desert_emitter",
+			"filename":	"gfx/map/map_object_data/audio_emitters.txt"
+		}, {
+			"name":	"amb_3D_field_emitter",
+			"filename":	"gfx/map/map_object_data/audio_emitters.txt"
+		}, {
+			"name":	"amb_3D_forest_emitter",
+			"filename":	"gfx/map/map_object_data/audio_emitters.txt"
+		}, {
+			"name":	"amb_3D_mountain_emitter",
+			"filename":	"gfx/map/map_object_data/audio_emitters.txt"
+		}, {
+			"name":	"amb_3D_ocean_emitter",
+			"filename":	"gfx/map/map_object_data/audio_emitters.txt"
+		}, {
+			"name":	"amb_3D_river_emitter",
+			"filename":	"gfx/map/map_object_data/audio_emitters.txt"
+		}, {
+			"name":	"env_coast_foam_l",
+			"filename":	"gfx/map/map_object_data/coast_foam.txt"
+		}, {
+			"name":	"env_coast_foam_m",
+			"filename":	"gfx/map/map_object_data/coast_foam.txt"
+		}, {
+			"name":	"env_coast_foam_s",
+			"filename":	"gfx/map/map_object_data/coast_foam.txt"
+		}, {
+			"name":	"env_desert_ambient_close",
+			"filename":	"gfx/map/map_object_data/env_effects.txt"
+		}, {
+			"name":	"env_desert_mountains",
+			"filename":	"gfx/map/map_object_data/env_effects.txt"
+		}, {
+			"name":	"env_desert_plains",
+			"filename":	"gfx/map/map_object_data/env_effects.txt"
+		}, {
+			"name":	"env_desert_plains_ambient",
+			"filename":	"gfx/map/map_object_data/env_effects.txt"
+		}, {
+			"name":	"env_forest_mountains",
+			"filename":	"gfx/map/map_object_data/env_effects.txt"
+		}, {
+			"name":	"env_mist_forest",
+			"filename":	"gfx/map/map_object_data/env_effects.txt"
+		}, {
+			"name":	"env_snow_mountains",
+			"filename":	"gfx/map/map_object_data/env_effects.txt"
+		}, {
+			"name":	"env_snow_plains",
+			"filename":	"gfx/map/map_object_data/env_effects.txt"
+		}, {
+			"name":	"env_snow_plains_ambient",
+			"filename":	"gfx/map/map_object_data/env_effects.txt"
+		}, {
+			"name":	"waterfall",
+			"filename":	"gfx/map/map_object_data/env_effects.txt"
+		}, {
+			"name":	"waterfall_bottom",
+			"filename":	"gfx/map/map_object_data/env_effects.txt"
+		}, {
+			"name":	"buildings",
+			"filename":	"gfx/map/map_object_data/building_locators.txt"
+		}, {
+			"name":	"combat",
+			"filename":	"gfx/map/map_object_data/combat_locators.txt"
+		}, {
+			"name":	"siege",
+			"filename":	"gfx/map/map_object_data/siege_locators.txt"
+		}, {
+			"name":	"special_building",
+			"filename":	"gfx/map/map_object_data/special_building_locators.txt"
+		}, {
+			"name":	"unit_stack",
+			"filename":	"gfx/map/map_object_data/stack_locators.txt"
+		}, {
+			"name":	"unit_stack_other_owner",
+			"filename":	"gfx/map/map_object_data/other_stack_locators.txt"
+		}, {
+			"name":	"unit_stack_player_owned",
+			"filename":	"gfx/map/map_object_data/player_stack_locators.txt"
+		}],
+	"map_object_layers":	[{
+			"name":	"building_layer",
+			"filename":	"gfx/map/map_object_data/game_object_layers.txt"
+		}, {
+			"name":	"coast_foam_layer",
+			"filename":	"gfx/map/map_object_data/effect_layers.txt"
+		}, {
+			"name":	"env_effect_layer",
+			"filename":	"gfx/map/map_object_data/effect_layers.txt"
+		}, {
+			"name":	"env_effect_mountains_layer",
+			"filename":	"gfx/map/map_object_data/effect_layers.txt"
+		}, {
+			"name":	"grass_layer",
+			"filename":	"gfx/map/map_object_data/layers.txt"
+		}, {
+			"name":	"lake_layer",
+			"filename":	"gfx/map/map_object_data/layers.txt"
+		}, {
+			"name":	"temp_layer",
+			"filename":	"gfx/map/map_object_data/test_objects.txt"
+		}, {
+			"name":	"test_object_layer",
+			"filename":	"gfx/map/map_object_data/test_objects.txt"
+		}, {
+			"name":	"tree_high_layer",
+			"filename":	"gfx/map/map_object_data/layers.txt"
+		}, {
+			"name":	"tree_low_layer",
+			"filename":	"gfx/map/map_object_data/layers.txt"
+		}, {
+			"name":	"tree_medium_layer",
+			"filename":	"gfx/map/map_object_data/layers.txt"
+		}, {
+			"name":	"unit_layer",
+			"filename":	"gfx/map/map_object_data/game_object_layers.txt"
+		}],
+	"mask_painter_masks":	[{
+			"path":	"MaskPainterMasks/new_mask.png",
+			"id":	"new_mask",
+			"name":	"new_mask"
+		}],
+	"notes":	"",
+	"game_name":	"Crusader Kings III"
+}

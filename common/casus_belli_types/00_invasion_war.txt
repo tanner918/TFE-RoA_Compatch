@@ -1768,10 +1768,7 @@ pax_romana_invasion_war = {
 
 	allow_hostages = no
 	allowed_for_character = {
-		this = title:e_roman_empire.holder
-		government_has_flag = government_is_administrative
-		any_owned_story = { story_type = ep3_story_cycle_restoring_rome }
-		prestige_level >= 1
+		always = no
 	}
 
 	allowed_against_character = {

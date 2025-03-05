@@ -171,7 +171,29 @@ sards_11 = {
 	}
 }
 
-
+7766 = {
+	name = "Symmachus" # Pope
+	religion = "roman_pagan"
+	culture = "sardinian"
+	trait = diligent
+	trait = calm
+	trait = zealous
+	trait = education_diplomacy_3
+	440.1.1 = {
+		birth = yes
+	}
+	476.1.1 = {
+		religion = chalcedonian
+		set_relation_friend = character:7765
+		employer = 7770
+	}
+	498.11.19 = {
+		name = "Symmachus"
+	}
+	514.7.19 = {
+		death = yes
+	}
+}
 
 
 #############################################################

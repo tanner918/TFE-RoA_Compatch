@@ -1,0 +1,48 @@
+﻿tfe_spawn_historical_characters_effect = {
+	if = { # Arnulf of Metz (some ancestor of big carl)
+		limit = {
+            limit = {
+			    current_year >= 608
+			    current_year <= 608
+			    NOT = { exists = global_var:hcar_arnulf_of_metz }
+		    }		
+        }
+		set_global_variable = { name = hcar_arnulf_of_metz value = yes }
+		title:b_metz = {
+			save_scope_as = birth_location
+			create_character = {
+				age = 20
+				name = Arnulf
+				dynasty_house = house:house_historic_karling
+				gender_female_chance = 0
+				random_traits = no
+				location = scope:birth_location.title_province
+				faith = faith:chalcedonian
+				culture = scope:birth_location.title_province.culture
+				trait = education_learning_4
+				trait = loyal
+				random_traits_list = {
+					count = 3
+					patient = {}
+					generous = {}
+					humble = {}
+					zealous = {}
+				}
+				diplomacy = { min_template_decent_skill max_template_decent_skill }
+				martial = { min_template_decent_skill max_template_decent_skill }
+				stewardship = { min_template_high_skill max_template_high_skill }
+				intrigue = { min_template_decent_skill max_template_decent_skill }
+				learning = { min_template_high_skill max_template_high_skill }
+				prowess = { min_template_decent_skill max_template_decent_skill }
+				save_scope_as = historical_character
+			}
+			scope:historical_character ?= {
+				historical_character_finalization_effect = yes
+				set_variable = arnulf_of_metz
+				add_character_flag = ai_will_not_convert
+			}
+			if = { limit = { has_variable = arnulf_of_metz 	 } } # Error suppression
+			spawn_historical_characters_boilerplate_effect = yes
+		}
+	}
+}

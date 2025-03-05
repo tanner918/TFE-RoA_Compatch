@@ -535,14 +535,26 @@ province_events.0014 = {
 			resolve_title_and_vassal_change = scope:vassal_change
 		}
 		if = {
-					limit = {
-						has_dlc_feature = roads_to_power
-					}
-						change_government = administrative_government
-					}
-				else = {
-						change_government = imperial_government
-					}
+			limit = {
+				has_dlc_feature = roads_to_power
+			}
+			change_government = administrative_government
+			if = {
+				limit = { 
+					NOT = { any_held_title = { is_noble_family_title = yes } } 
+					highest_held_title_tier >= tier_duchy
+				}
+				if = {
+					limit = { is_house_head = no }
+					found_cadet_house_decision_effect = { CHARACTER = root }
+				}
+				create_noble_family_effect = yes
+				domicile ?= { set_up_domicile_estate_effect = yes }
+			}
+		}
+		else = {
+			change_government = imperial_government
+		}
     }
 	option = {
 		name = province_events.0014.option.b
@@ -701,11 +713,23 @@ province_events.0016 = {
 					limit = {
 						has_dlc_feature = roads_to_power
 					}
-						change_government = administrative_government
+					change_government = administrative_government
+					if = {
+						limit = { 
+							NOT = { any_held_title = { is_noble_family_title = yes } } 
+							highest_held_title_tier >= tier_duchy
+						}
+						if = {
+							limit = { is_house_head = no }
+							found_cadet_house_decision_effect = { CHARACTER = root }
+						}
+						create_noble_family_effect = yes
+						domicile ?= { set_up_domicile_estate_effect = yes }
 					}
+				}
 				else = {
-						change_government = imperial_government
-					}
+					change_government = imperial_government
+				}
 				pay_long_term_gold = {
 					target = title:c_viterbo.holder
 					gold = 1000
@@ -795,11 +819,23 @@ province_events.0016 = {
 					limit = {
 						has_dlc_feature = roads_to_power
 					}
-						change_government = administrative_government
+					change_government = administrative_government
+					if = {
+						limit = { 
+							NOT = { any_held_title = { is_noble_family_title = yes } } 
+							highest_held_title_tier >= tier_duchy
+						}
+						if = {
+							limit = { is_house_head = no }
+							found_cadet_house_decision_effect = { CHARACTER = root }
+						}
+						create_noble_family_effect = yes
+						domicile ?= { set_up_domicile_estate_effect = yes }
 					}
+				}
 				else = {
-						change_government = imperial_government
-					}
+					change_government = imperial_government
+				}
 				pay_long_term_gold = {
 					target = title:c_viterbo.holder
 					gold = 1000
@@ -889,11 +925,23 @@ province_events.0016 = {
 					limit = {
 						has_dlc_feature = roads_to_power
 					}
-						change_government = administrative_government
+					change_government = administrative_government
+					if = {
+						limit = { 
+							NOT = { any_held_title = { is_noble_family_title = yes } } 
+							highest_held_title_tier >= tier_duchy
+						}
+						if = {
+							limit = { is_house_head = no }
+							found_cadet_house_decision_effect = { CHARACTER = root }
+						}
+						create_noble_family_effect = yes
+						domicile ?= { set_up_domicile_estate_effect = yes }
 					}
+				}
 				else = {
-						change_government = imperial_government
-					}
+					change_government = imperial_government
+				}
 				pay_long_term_gold = {
 					target = title:c_viterbo.holder
 					gold = 1000

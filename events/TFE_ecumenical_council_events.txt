@@ -31,6 +31,16 @@ tfe_ecumenical_council.0001 = {
 		faith:nicene = {
 			add_doctrine = unavailable_doctrine
 		}
+		every_independent_ruler = {
+		primary_title = {
+            if = {
+                limit = {
+                    state_faith = faith:nicene
+                }
+      	    	    set_state_faith = faith:chalcedonian
+				}
+            }
+        }
 		every_county = {
 			limit = {
 				OR = {

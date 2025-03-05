@@ -6,7 +6,10 @@
 	# can this character benefit from the full modifiers of the artifact?
 	can_benefit = {
 		culture = {
+			OR = {
 			has_cultural_tradition = tradition_roman_legacy
+			has_cultural_tradition = tradition_roman_legacy_ep3
+			}
 		}
 	}
 
@@ -27,8 +30,24 @@ obeliskfull_template = {
 
 	# can this character benefit from the full modifiers of the artifact?
 	can_benefit = {
-		culture = {
+		OR = {
+			culture = {
+				OR = {
 			has_cultural_tradition = tradition_roman_legacy
+			has_cultural_tradition = tradition_roman_legacy_ep3
+			}
+		}
+			culture = {
+				has_cultural_pillar = heritage_kemetic
+			}
+			culture = {
+				has_cultural_pillar = heritage_east_african
+			}
+			culture = {
+				has_cultural_pillar = heritage_berber
+			}
+			religion = religion:kushitism_religion
+			religion = religion:amazigh_religion
 		}
 	}
 
@@ -50,8 +69,24 @@ obeliskdamaged_template = {
 
 	# can this character benefit from the full modifiers of the artifact?
 	can_benefit = {
-		culture = {
+		OR = {
+			culture = {
+				OR = {
 			has_cultural_tradition = tradition_roman_legacy
+			has_cultural_tradition = tradition_roman_legacy_ep3
+			}
+		}
+			culture = {
+				has_cultural_pillar = heritage_kemetic
+			}
+			culture = {
+				has_cultural_pillar = heritage_east_african
+			}
+			culture = {
+				has_cultural_pillar = heritage_berber
+			}
+			religion = religion:kushitism_religion
+			religion = religion:amazigh_religion
 		}
 	}
 
@@ -73,7 +108,10 @@ marcus_bust_template = {
 	# can this character benefit from the full modifiers of the artifact?
 	can_benefit = {
 		culture = {
+			OR = {
 			has_cultural_tradition = tradition_roman_legacy
+			has_cultural_tradition = tradition_roman_legacy_ep3
+			}
 		}
 	}
 
@@ -95,7 +133,10 @@ aurelianhelmet_template = {
 	# can this character benefit from the full modifiers of the artifact?
 	can_benefit = {
 		culture = {
+			OR = {
 			has_cultural_tradition = tradition_roman_legacy
+			has_cultural_tradition = tradition_roman_legacy_ep3
+			}
 		}
 	}
 
@@ -120,7 +161,10 @@ centurionhelmet_template = {
 	# can this character benefit from the full modifiers of the artifact?
 	can_benefit = {
 		culture = {
+			OR = {
 			has_cultural_tradition = tradition_roman_legacy
+			has_cultural_tradition = tradition_roman_legacy_ep3
+			}
 		}
 	}
 
@@ -143,7 +187,10 @@ galeahelmet_template = {
 	# can this character benefit from the full modifiers of the artifact?
 	can_benefit = {
 		culture = {
+			OR = {
 			has_cultural_tradition = tradition_roman_legacy
+			has_cultural_tradition = tradition_roman_legacy_ep3
+			}
 		}
 	}
 
@@ -167,7 +214,10 @@ spatha_template = {
 	# can this character benefit from the full modifiers of the artifact?
 	can_benefit = {
 		culture = {
+			OR = {
 			has_cultural_tradition = tradition_roman_legacy
+			has_cultural_tradition = tradition_roman_legacy_ep3
+			}
 		}
 	}
 
@@ -191,7 +241,10 @@ roman_sarcophagus_template = {
 	# can this character benefit from the full modifiers of the artifact?
 	can_benefit = {
 		culture = {
+			OR = {
 			has_cultural_tradition = tradition_roman_legacy
+			has_cultural_tradition = tradition_roman_legacy_ep3
+			}
 		}
 	}
 
@@ -213,7 +266,10 @@ golden_diadem_template = {
 	# can this character benefit from the full modifiers of the artifact?
 	can_benefit = {
 		culture = {
+			OR = {
 			has_cultural_tradition = tradition_roman_legacy
+			has_cultural_tradition = tradition_roman_legacy_ep3
+			}
 		}
 	}
 

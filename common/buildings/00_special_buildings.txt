@@ -1380,6 +1380,7 @@ doges_palace_01 = { # Should technically be burnt down/rebuilt, but this is most
 				OR = {
 					government_has_flag = government_is_republic
 					government_has_flag = government_is_administrative
+					government_has_flag = government_is_autocratic_ep3
 				}
 			}
 		}
@@ -4876,23 +4877,28 @@ minarets_and_remains_of_jam_01 = {
 
 great_wall_of_gorgan_01 = {
 
+	asset = {
+		type = pdxmesh
+		name = "fp3_building_special_great_wall_of_gorgan_01_a_mesh"
+	}
+
 	construction_time = very_slow_construction_time
 	
 	type_icon = "icon_structure_great_wall_of_gorgan.dds" 
 	
 	can_construct = {
 		scope:holder.culture = {
-			has_innovation = innovation_hoardings 
+			has_innovation = innovation_motte 
 		}
 	}
 	
 	cost_gold = 1000
 	
 	province_modifier = {
-		build_gold_cost = -0.1
-		fort_level = 1
-		garrison_size = 0.25
-		hostile_raid_time = 0.25
+		fort_level = 3
+		hostile_raid_time = 1.00
+		garrison_size = 1.00
+
 	}
 	
 	ai_value = {

@@ -754,11 +754,17 @@ claim_cb = {
 				scope:attacker = {
 					government_has_flag = government_is_feudal
 					liege ?= {
+						OR = {
 						government_has_flag = government_is_administrative
+						government_has_flag = government_is_autocratic_ep3
+						}
 					}
 				}
 				scope:defender = {
+					OR = {
 					government_has_flag = government_is_administrative
+					government_has_flag = government_is_autocratic_ep3
+					}					
 					liege ?= scope:attacker.liege
 				}
 			}

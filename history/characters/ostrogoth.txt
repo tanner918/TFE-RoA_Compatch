@@ -7,18 +7,23 @@
 	father = 992013
 	mother = 992015
 	trait = education_diplomacy_5
-	trait = vengeful
+	trait = brave
+	trait = diligent
 	trait = ambitious
-	trait = gregarious
-	trait = intellect_good_1
-	trait = strong
-	diplomacy = 9
+	trait = just
+	trait = intellect_good_2
+	diplomacy = 7
 	martial = 12
-	stewardship = 4
+	stewardship = 7
 	intrigue = 8
 	learning = 9
-	prowess = 8
+	prowess = 9
 	sexuality = heterosexual
+	470.1.1 = {
+		effect = {
+			learn_language = language_greek
+		}
+	}
 	454.1.1 = {
 		birth = yes
 	}
@@ -26,10 +31,6 @@
 		set_realm_capital = title:c_nikopolis
 	}
 	476.1.2 = {
-		learn_language = language_latin
-		#add_unpressed_claim = title:k_croatia
-		add_prestige = 1000
-		add_gold = 250
 		set_relation_rival = character:strabo_02 #Theodoric Strabo
 		add_character_modifier = king_of_the_ostrogoths
 		add_truce_both_ways = {
@@ -37,6 +38,14 @@
 			years = 3
 			name = GOTH_TRUCE
 			result = white_peace
+		}
+	}
+	476.1.3 = {
+		effect = {
+			learn_language = language_latin
+			#add_unpressed_claim = title:k_croatia
+			add_prestige = 1000
+			add_gold = 250
 		}
 	}
 	484.1.1 = {
@@ -426,6 +435,7 @@
 	religion = "arianism"
 	culture = "ostrogothic"
 	father = 992102
+	trait = education_martial_2
 	510.1.1 = {
 		birth = yes
 	}
@@ -473,6 +483,7 @@
 	name = "Sisigis" # ostrogothic general in Cottian Alps
 	religion = "arianism"
 	culture = "ostrogothic"
+	trait = education_martial_2
 	500.1.1 = {
 		birth = yes
 	}
@@ -484,8 +495,9 @@
 	name = "Pitzia" # ostrogothic general
 	religion = "arianism"
 	culture = "ostrogothic"
-	trait = disloyal
+	trait = education_martial_2
 	trait = cynical
+	trait = disloyal
 	500.1.1 = {
 		birth = yes
 	}
@@ -497,7 +509,8 @@
 	name = "Asinar" # ostrogothic general
 	religion = "arianism"
 	culture = "ostrogothic"
-	martial = 10
+	trait = education_martial_2
+	martial = 8
 	497.1.1 = {
 		birth = yes
 	}
@@ -509,7 +522,8 @@
 	name = "Gibal" # ostrogothic general
 	religion = "arianism"
 	culture = "ostrogothic"
-	martial = 10
+	trait = education_martial_2
+	martial = 8
 	505.1.1 = {
 		birth = yes
 	}
@@ -521,7 +535,8 @@
 	name = "Indulf" # ostrogothic general
 	religion = "arianism"
 	culture = "ostrogothic"
-	martial = 10
+	trait = education_martial_2
+	martial = 8
 	505.1.1 = {
 		birth = yes
 	}
@@ -533,7 +548,8 @@
 	name = "Scipuar" # ostrogothic general
 	religion = "arianism"
 	culture = "ostrogothic"
-	martial = 10
+	trait = education_martial_2
+	martial = 8
 	505.1.1 = {
 		birth = yes
 	}
@@ -545,7 +561,8 @@
 	name = "Vacis" # ostrogothic general
 	religion = "arianism"
 	culture = "ostrogothic"
-	martial = 10
+	trait = education_martial_2
+	martial = 8
 	490.1.1 = {
 		birth = yes
 	}
@@ -557,8 +574,8 @@
 	name = "Gripa" # ostrogothic general
 	religion = "arianism"
 	culture = "ostrogothic"
-	martial = 6
 	trait = education_martial_3
+	martial = 6
 	500.1.1 = {
 		birth = yes
 	}
@@ -595,7 +612,8 @@
 	religion = "chalcedonian"
 	culture = "ostrogothic"
 	father = 992115
-	martial = 15
+	trait = education_martial_2
+	martial = 10
 	495.1.1 = {
 		birth = yes
 	}
@@ -607,7 +625,7 @@
 	}
 }
 7761 = {
-	name = "Athalaric" # Pope
+	name = "Sigibald" # Pope
 	religion = "chalcedonian"
 	culture = "ostrogothic"
 	trait = diligent

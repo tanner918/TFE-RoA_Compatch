@@ -186,6 +186,7 @@ tradition_roman_hubris = {
 	
 	is_shown = {
 		NOT = { has_cultural_tradition = tradition_xenophilic }
+		NOT = { has_dlc_feature = roads_to_power }
 	}
 
 	can_pick = {
@@ -207,6 +208,73 @@ tradition_roman_hubris = {
 	character_modifier = {
 		different_culture_opinion = -10
 		same_culture_opinion = 10
+	}
+	
+	cost = {
+		prestige = {
+			# Base cost.
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			# Ethos requirement.
+			if = {
+				limit = {
+					culture_pillar:ethos_communal = { is_in_list = traits }
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = culture_not_bellicose
+				}
+			}
+			
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	
+	ai_will_do = {
+		value = 60
+	}
+}
+
+tradition_roman_hubris_ep3 = {
+	category = realm
+
+	layers = {
+		0 = martial
+		1 = western
+		4 = laurel.dds
+	}
+	
+	is_shown = {
+		NOT = { has_cultural_tradition = tradition_xenophilic }
+		has_ep3_dlc_trigger = yes
+	}
+
+	can_pick = {
+		has_cultural_pillar = heritage_latin
+	}
+
+	parameters = {
+		# harder_to_hybridize = yes
+		weak_traits_looked_down_upon = yes
+		hybridize_keep_heritage = yes
+		less_likely_to_culture_convert = yes
+		estate_building_upgrade_development_gain = yes
+		allows_noble_family_adoption = yes
+		allows_adoption = yes
+		free_adoption = yes
+	}
+	
+	culture_modifier = {
+		cultural_acceptance_gain_mult = -0.25
+	}
+	character_modifier = {
+		different_culture_opinion = -10
+		same_culture_opinion = 10
+		monthly_influence_mult = 0.1
+		cultural_head_fascination_mult = -0.10
 	}
 	
 	cost = {

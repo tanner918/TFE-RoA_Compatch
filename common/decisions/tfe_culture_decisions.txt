@@ -70,7 +70,7 @@ embrace_visigothic_identity_decision = {
 			}
 
 			# Send all players in the game a notification event about the flip.
-			save_scope_as = visigothic_founder
+			save_scope_as = gothic_founder
 			culture:gothic = {save_scope_as = old_culture}
 			culture:visigothic = {
 				reset_culture_creation_date = yes
@@ -220,7 +220,7 @@ embrace_ostrogothic_identity_decision = {
 			}
 
 			# Send all players in the game a notification event about the flip.
-			save_scope_as = ostrogothic_founder
+			save_scope_as = gothic_founder
 			culture:gothic = {save_scope_as = old_culture}
 			culture:ostrogothic = {
 				reset_culture_creation_date = yes

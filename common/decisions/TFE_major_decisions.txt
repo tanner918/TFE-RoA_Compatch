@@ -15,7 +15,7 @@ new_official_imperial_faith_decision = {
 	ai_check_interval = 36
 	
 	is_shown = {
-		always = no
+		NOT = { has_dlc_feature = roads_to_power }
 		is_landed_or_landless_administrative = yes
 		# Obviously only Emperors can declare their faith to be the official faith of the Empire
 		primary_title.tier >= tier_empire
@@ -29,6 +29,10 @@ new_official_imperial_faith_decision = {
 	}
 	
 	is_valid = {
+		custom_tooltip = {
+  		text = change_official_faith_localization
+ 		NOT = { has_character_flag = change_official_faith }
+		}
 		piety_level >= 3
 		
 		# Maybe make it more difficult if it's unreformed?
@@ -43,7 +47,7 @@ new_official_imperial_faith_decision = {
 	}
 	
 	cost = {
-		piety = 1000
+		piety = 4000
 	}
 	
 	effect = {
@@ -63,6 +67,92 @@ new_official_imperial_faith_decision = {
 			# # limit = { NOT = { this = root } }
 			# trigger_event = TFE_major_decisions.0002
 		# }
+		hidden_effect = {
+			add_character_flag = {
+				flag = change_official_faith
+				years = 20
+			}
+		}
+	}
+	
+	ai_potential = {
+		#always = yes
+	}
+	
+	ai_will_do = {
+		base = 100
+	}
+}
+
+new_official_imperial_faith_decision_ep3 = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_imperial_faith.dds"
+	}
+	decision_group_type = religious
+
+	desc = new_official_imperial_faith_decision_ep3_desc
+	
+	ai_check_interval = 36
+	
+	is_shown = {
+		faith ?= top_liege.primary_title.state_faith
+		has_dlc_feature = roads_to_power
+		is_landed_or_landless_administrative = yes
+		# Obviously only Emperors can declare their faith to be the official faith of the Empire
+		primary_title.tier >= tier_empire
+		OR = {
+			# Either the Empire has no official faith...
+			NOT = { exists = primary_title.var:official_imperial_faith }
+			# ... or you don't have it
+			NOT = { faith = primary_title.var:official_imperial_faith }
+		}
+	}
+	
+	is_valid = {
+		custom_tooltip = {
+  		text = change_official_faith_localization
+ 		NOT = { has_character_flag = change_official_faith }
+		}
+		piety_level >= 3
+		
+		# Maybe make it more difficult if it's unreformed?
+		custom_description = {
+			text = faith_is_reformed
+			subject = root
+			faith = { NOT = { has_doctrine_parameter = unreformed } }
+		}
+		culture = {
+			has_innovation = innovation_imperial_faith
+		}
+	}
+	
+	cost = {
+		piety = 4000
+	}
+	
+	effect = {
+		save_scope_as = emperor
+		faith = { save_scope_as = new_faith }
+		primary_title = { save_scope_as = empire }
+		if = {
+			limit = { exists = primary_title.var:official_imperial_faith }
+			primary_title.var:official_imperial_faith = { save_scope_as = old_faith }
+		}
+		
+		show_as_tooltip = { new_official_imperial_faith_effect_ep3 = yes }
+		
+		trigger_event = TFE_major_decisions_ep3.0001
+		
+		# every_player = {
+			# # limit = { NOT = { this = root } }
+			# trigger_event = TFE_major_decisions.0002
+		# }
+		hidden_effect = {
+			add_character_flag = {
+				flag = change_official_faith
+				years = 20
+			}
+		}
 	}
 	
 	ai_potential = {
@@ -280,9 +370,10 @@ restore_palmyrene_empire_decision = {
 	effect = {
 		if = {
 			limit = {
-			has_dlc_feature = roads_to_power
-		}
-			change_government = administrative_government
+				has_dlc_feature = roads_to_power
+			}
+			save_scope_as = actor
+			TFE_convert_to_administrative_from_feudalism_effect = yes
 		}
 		else = {
 			change_government = imperial_government
@@ -355,8 +446,8 @@ restore_the_mardib_dam = {
 	is_shown = {
 		is_landed_or_landless_administrative = yes
 		primary_title.tier >= tier_duchy
-		any_realm_province = {
-			has_building_or_higher = marib_dam
+		any_sub_realm_barony = {
+			title_province = { has_building = marib_dam }
 		}
 		NOT = {  #Can only do it once.
 			is_target_in_global_variable_list = {
@@ -369,8 +460,8 @@ restore_the_mardib_dam = {
 	is_valid = {
 		prestige_level >= 2
 		is_independent_ruler = yes
-		any_realm_province = {
-			has_building_or_higher = marib_dam
+		any_sub_realm_barony = {
+			title_province = { has_building = marib_dam }
 		}
 	}
 	
@@ -409,8 +500,8 @@ rebuild_the_mardib_dam = {
 	is_shown = {
 		is_landed_or_landless_administrative = yes
 		primary_title.tier >= tier_duchy
-		any_realm_province = {
-			has_building_or_higher = marib_dam
+		any_sub_realm_barony = {
+			title_province = { has_building = marib_dam }
 		}
 		NOT = {  #Can only do it once.
 			is_target_in_global_variable_list = {
@@ -427,8 +518,8 @@ rebuild_the_mardib_dam = {
 			learning >= 10
 		}
 		is_independent_ruler = yes
-		any_realm_province = {
-			has_building_or_higher = marib_dam
+		any_sub_realm_barony = {
+			title_province = { has_building = marib_dam }
 		}
 	}
 	

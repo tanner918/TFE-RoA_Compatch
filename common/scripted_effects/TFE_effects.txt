@@ -2653,6 +2653,25 @@ start_vandalic_war_effect = {
 	}
 	resolve_title_and_vassal_change = scope:change
 
+	title:d_belisarius_expedition = {
+		save_temporary_scope_as = current_duchy
+	}
+	create_title_and_vassal_change = {
+		type = usurped
+		save_scope_as = change
+		add_claim_on_loss = no
+	}
+	scope:current_duchy = {
+		change_title_holder = {
+			holder = global_var:justinian_commander
+			change = scope:change
+			take_baronies = yes
+		}
+	}
+	resolve_title_and_vassal_change = scope:change
+
+	title:d_belisarius_expedition = { set_coa = title:d_belisarius_expedition.holder.house }
+
 	if = {
 		limit = {
 			exists = title:e_byzantium.holder
@@ -2790,6 +2809,18 @@ start_vandalic_war_effect = {
 			claimant = global_var:justinian_commander
 		}
 	}
+
+	global_var:justinian_commander = {
+		limit = { 
+			liege = { has_government = administrative_government }
+			NOT = { has_government = administrative_government } 
+		}
+		change_government = administrative_government
+	}
+
+	global_var:justinian_commander = {
+		remove_character_flag = STOP_ADMIN
+	}
 }
 
 end_vandalic_war_africae_effect = {
@@ -2869,6 +2900,26 @@ start_gothic_war_effect = {
 		}
 		resolve_title_and_vassal_change = scope:change
 	}
+
+	#title:d_belisarius_expedition = {
+	#	save_temporary_scope_as = current_duchy
+	#}
+	#create_title_and_vassal_change = {
+	#	type = usurped
+	#	save_scope_as = change
+	#	add_claim_on_loss = no
+	#}
+	#scope:current_duchy = {
+	#	change_title_holder = {
+	#		holder = global_var:justinian_gothic_commander
+	#		change = scope:change
+	#		take_baronies = yes
+	#	}
+	#}
+	#resolve_title_and_vassal_change = scope:change
+
+	#title:d_belisarius_expedition = { set_coa = title:d_belisarius_expedition.holder.house }
+
 	#title:k_ostrogoths.holder = {
 	#	every_sub_realm_county = {
 	#		limit = {
@@ -2973,6 +3024,7 @@ start_gothic_war_effect = {
 		every_held_title = {
 			limit = {
 				tier >= tier_duchy
+				is_titular = no
 			}
 			add_to_list = list_to_return
 		}
@@ -3940,4 +3992,551 @@ ep3_become_landed_transfer_effect = {
 		}
 	}
 	destroy_laamp_effect = { ADVENTURER = $TITLE_RECEIVER$ }
+}
+
+TFE_convert_to_administrative_from_feudalism_effect = {
+	save_scope_as = administrative_liege
+	
+	TFE_change_to_administrative_effect = yes
+
+	save_scope_as = administrative_liege
+
+	#Direct Vassals who fulfill the ep3_vassal_will_become_admin criteria are converted. Vassals above 25 opinion always accept
+	#Vassals are converted as a hierarchy. If a king is converted we convert all who are valid below that king (so his dukes, their counts, and their barons) are all converted.
+	#If a vassal does not convert (because of not accepting or because they are outside of the de jure empire, etc) then the vassals below them are _not_ converted either.
+
+	#Human vassals are given a choice to convert or not in the ping event, even if powerful or having very good relation.
+
+	hidden_effect = { 
+		save_scope_as = actor
+		every_powerful_vassal = { #All valid powerful vassals auto convert - their support was required to take the decision.
+			limit = {
+				ep3_vassal_will_become_admin = yes
+				is_ai = yes
+			}
+			save_scope_as = recipient
+			TFE_change_to_administrative_effect = yes	
+			every_vassal = { #Everyone below also converts
+				limit = {
+					ep3_vassal_will_become_admin = yes #We still don't want mayors and bishops
+					is_ai = yes
+				}
+				save_scope_as = recipient	
+				TFE_change_to_administrative_effect = yes
+				every_vassal = { #Everyone below also converts (could be Counts, could be Barons)
+					limit = {
+						ep3_vassal_will_become_admin = yes #We still don't want mayors and bishops
+						is_ai = yes
+					}
+					save_scope_as = recipient	
+					TFE_change_to_administrative_effect = yes
+					every_vassal = { #Everyone below also converts could be Barons
+						limit = {
+							ep3_vassal_will_become_admin = yes #We still don't want mayors and bishops
+							is_ai = yes
+						}
+						save_scope_as = recipient
+						TFE_change_to_administrative_effect = yes
+					}
+				}
+			}
+		}
+		every_vassal = {
+			limit = {
+				ep3_vassal_will_become_admin = yes
+				trigger_if = { #Dukes and above can say no
+					limit = {
+						primary_title.tier >= tier_duchy
+						is_ai = yes
+					}
+					opinion = {
+						target = scope:administrative_liege
+						value > 25
+					}
+				}
+			}
+			save_scope_as = recipient
+			TFE_change_to_administrative_effect = yes
+			every_vassal = { #Everyone below also converts (could be Counts, could be Dukes)
+				limit = {
+					ep3_vassal_will_become_admin = yes #We still don't want mayors and bishops
+					is_ai = yes
+				}
+				save_scope_as = recipient	
+				TFE_change_to_administrative_effect = yes
+				every_vassal = { #Everyone below also converts (Could be Counts, could be Barons)
+					limit = {
+						ep3_vassal_will_become_admin = yes #We still don't want mayors and bishops
+						is_ai = yes
+					}
+					save_scope_as = recipient	
+					TFE_change_to_administrative_effect = yes
+					every_vassal = { #Everyone below also converts (could be Barons)
+						limit = {
+							ep3_vassal_will_become_admin = yes #We still don't want mayors and bishops
+							is_ai = yes
+						}
+						save_scope_as = recipient
+						TFE_change_to_administrative_effect = yes
+					}
+				}
+			}
+		}
+		every_vassal = {
+			limit = {
+				ep3_vassal_will_become_admin = yes
+				trigger_if = { #Dukes and above can say no
+					limit = {
+						primary_title.tier >= tier_duchy
+						is_ai = yes
+					}
+					opinion = {
+						target = scope:administrative_liege
+						value > 0
+					}
+				}
+			}
+			random_list = {
+				10 = { } #10% of the vassals that like us less than 25 but more than 0 still convert.
+				90 = {
+					save_scope_as = recipient
+					TFE_change_to_administrative_effect = yes
+					every_vassal = { #Everyone below also converts (could be Counts, could be Dukes)
+						limit = {
+							ep3_vassal_will_become_admin = yes #We still don't want mayors and bishops
+							is_ai = yes
+						}
+						save_scope_as = recipient	
+						TFE_change_to_administrative_effect = yes
+						every_vassal = { #Everyone below also converts (Could be Counts, could be Barons)
+							limit = {
+								ep3_vassal_will_become_admin = yes #We still don't want mayors and bishops
+								is_ai = yes
+							}
+							save_scope_as = recipient	
+							TFE_change_to_administrative_effect = yes
+							every_vassal = { #Everyone below also converts (could be Barons)
+								limit = {
+									ep3_vassal_will_become_admin = yes #We still don't want mayors and bishops
+									is_ai = yes
+								}
+								save_scope_as = recipient	
+								TFE_change_to_administrative_effect = yes
+							}
+						}
+					}
+				}
+			}
+		}
+		every_vassal = {
+			limit = {
+				highest_held_title_tier >= tier_duchy
+				house.house_head ?= this
+				government_has_flag = government_is_administrative
+				NOT = {
+					any_held_title = { is_noble_family_title = yes }
+				}
+			}
+			create_noble_family_effect = yes
+		}
+	}
+
+	if = {
+		limit = {
+			NOT = {
+				has_character_flag = latin_emp_force_admin_flag
+			}
+			is_independent_ruler = yes
+		}
+		add_character_modifier = {
+			modifier = first_admin_emperor
+		}
+	}
+	
+	change_influence = admin_convert_influence_value
+	if = {
+		limit = {
+			is_independent_ruler = yes
+		}
+		add_legitimacy_effect = { LEGITIMACY = admin_convert_legitimacy_value } #One Time Legitimacy Boost
+	}
+
+	custom_description_no_bullet = {
+		text = vassals_can_become_administrative
+	}
+	custom_tooltip = powerful_vassals_become_administrative
+	custom_tooltip = vassals_become_administrative
+	custom_tooltip = vassals_who_may_switch_to_administrative
+}
+
+TFE_change_to_administrative_effect = {
+	save_scope_as = governor
+	if = {
+		limit = {
+			NOT = { government_has_flag = government_is_administrative }
+		}
+		change_government = administrative_government
+		save_scope_as = new_admin
+	}
+	if = {
+		limit = {
+			OR = {
+				AND = {
+					is_independent_ruler = yes
+					primary_title.tier >= tier_duchy
+					government_allows = administrative
+				}
+				AND = {
+					AND = {
+						primary_title.tier >= tier_duchy
+						is_independent_ruler = no
+					}
+					liege = {
+						is_independent_ruler = yes
+						government_allows = administrative
+					}
+				}
+			}
+			house.house_head = {
+				NOT = {
+					any_held_title = { is_noble_family_title = yes }
+				}
+			}
+		}
+		create_noble_family_effect = yes
+	}
+
+	hidden_effect = {
+		if = {
+			limit = {
+				is_governor = yes
+				NOT = { has_trait = governor }
+			}
+			add_trait = governor
+		}
+	}
+	if = {
+		limit = { exists = scope:new_admin }
+		domicile ?= {
+			set_up_domicile_estate_effect = yes
+		}
+	}
+}
+
+TFE_split_empire_effect = {
+	get_title = title:e_western_roman_empire
+	get_title = title:e_byzantium
+	scope:roman_split_secondary_heir = {
+		create_cadet_branch = yes
+	}
+	title:e_roman_empire = {
+		every_in_de_jure_hierarchy = {
+			limit = { tier = tier_kingdom }
+			if = {
+				limit = { title_capital_county = { title_province = { geographical_region = custom_potential_wre } } }
+				set_de_jure_liege_title = title:e_western_roman_empire
+			}
+			else = {
+				set_de_jure_liege_title = title:e_byzantium
+			}
+			if = {
+				limit = {
+					exists = yes
+					holder = { is_independent_ruler = no }
+					holder.liege = title:e_roman_empire.holder
+				}
+				holder = { add_character_flag = not_indy }
+			}
+		}
+	}
+	scope:roman_split_secondary_heir = {
+		get_title = title:c_byzantion
+		title:c_kalliopolis = { add_to_list = transfer_ere_list }
+		title:c_brysis = { add_to_list = transfer_ere_list }
+		title:d_thrace = { add_to_list = transfer_ere_list }
+		title:k_thrace = { add_to_list = transfer_ere_list }
+		every_in_list = {
+			list = transfer_ere_list
+			if = {
+				limit = {
+					is_title_created = yes
+					holder = title:e_roman_empire.holder
+				}
+			}
+			save_scope_as = transfer_title
+			scope:transfer_title = {
+				create_title_and_vassal_change = {
+					type = granted
+					save_scope_as = change
+					add_claim_on_loss = no
+				}
+				change_title_holder_include_vassals = {
+					holder = scope:roman_split_secondary_heir
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+		}
+		title:e_byzantium = {
+			create_title_and_vassal_change = {
+				type = granted
+				save_scope_as = change
+				add_claim_on_loss = no
+			}
+			change_title_holder_include_vassals = {
+				holder = scope:roman_split_secondary_heir
+				change = scope:change
+			}
+			resolve_title_and_vassal_change = scope:change
+		}
+	}
+	scope:roman_split_primary_heir = {
+		get_title = title:c_lombardia
+		get_title = title:c_roma
+		if = {
+			limit = {
+				AND = {
+					title:k_italia_annonariae = {
+						is_title_created = yes
+					}
+					title:e_roman_empire.holder = title:k_italia_annonariae.holder
+				}
+			}
+			title:k_italia_annonariae = {
+				create_title_and_vassal_change = {
+					type = granted
+					save_scope_as = change
+					add_claim_on_loss = no
+				}
+				change_title_holder_include_vassals = {
+					holder = PREV
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+		}
+		title:e_western_roman_empire = {
+			create_title_and_vassal_change = {
+				type = granted
+				save_scope_as = change
+				add_claim_on_loss = no
+			}
+			change_title_holder_include_vassals = {
+				holder = PREV
+				change = scope:change
+			}
+			resolve_title_and_vassal_change = scope:change
+		}
+	}
+
+	set_designated_heir = scope:roman_split_primary_heir
+
+	title:e_roman_empire = {
+		holder = { 
+			remove_trait = augustus
+			every_held_title = {
+				limit = { 
+					OR = {
+						tier = tier_empire
+						is_noble_family_title = yes
+					}
+				}
+				holder = { destroy_title = PREV }
+			}
+		}
+	}
+
+	create_title_and_vassal_change = {
+		type = usurped
+		save_scope_as = change
+		add_claim_on_loss = no
+	}
+	root = {
+		change_liege = {
+			liege = scope:roman_split_primary_heir
+			change = scope:change
+		}
+	}
+	resolve_title_and_vassal_change = scope:change
+		
+	depose = yes
+
+	title:e_western_roman_empire.holder = {
+		every_held_title = {
+			limit = {
+				trigger_if = {
+					limit = {
+						exists = title_province
+					}
+					title_province = {
+						geographical_region = custom_potential_ere
+					}
+				}
+				trigger_else = {
+					title_capital_county = {
+						title_province = {
+							geographical_region = custom_potential_ere
+						}
+					}
+				}
+			}
+			create_title_and_vassal_change = {
+				type = granted
+				save_scope_as = change
+				add_claim_on_loss = no
+			}
+			change_title_holder_include_vassals = {
+				holder = title:e_byzantium.holder
+				change = scope:change
+			}
+			resolve_title_and_vassal_change = scope:change
+		}
+		every_vassal = {
+			limit = {
+				capital_county = {
+					title_province = {
+						geographical_region = custom_potential_ere
+					}
+				}
+			}
+			create_title_and_vassal_change = {
+				type = granted
+				save_scope_as = change
+				add_claim_on_loss = no
+			}
+			change_liege = {
+				liege = title:e_byzantium.holder
+				change = scope:change
+			}
+			resolve_title_and_vassal_change = scope:change
+		}
+		set_variable = {
+			name = mil_comp
+			value = 1500
+		}
+		set_variable = {
+			name = civic_comp
+			value = 1500
+		}
+		set_variable = {
+			name = diplo_comp
+			value = 1500
+		}
+		if = {
+			limit = {
+				has_dlc_feature = roads_to_power
+			}
+			change_government = administrative_government
+			if = {
+				limit = { 
+					NOT = { any_held_title = { is_noble_family_title = yes } } 
+					highest_held_title_tier >= tier_duchy
+				}
+				if = {
+					limit = { is_house_head = no }
+					found_cadet_house_decision_effect = { CHARACTER = title:e_western_roman_empire.holder }
+				}
+				create_noble_family_effect = yes
+				domicile ?= { set_up_domicile_estate_effect = yes }
+			}
+		}
+		else = {
+			change_government = imperial_government
+		}
+	}
+	title:e_byzantium.holder = {
+		set_variable = {
+			name = mil_comp
+			value = 1500
+		}
+		set_variable = {
+			name = civic_comp
+			value = 1500
+		}
+		set_variable = {
+			name = diplo_comp
+			value = 1500
+		}
+		if = {
+			limit = {
+				has_dlc_feature = roads_to_power
+			}
+			change_government = administrative_government
+			if = {
+				limit = { 
+					NOT = { any_held_title = { is_noble_family_title = yes } } 
+					highest_held_title_tier >= tier_duchy
+				}
+				if = {
+					limit = { is_house_head = no }
+					found_cadet_house_decision_effect = { CHARACTER = title:e_byzantium.holder }
+				}
+				create_noble_family_effect = yes
+				domicile ?= { set_up_domicile_estate_effect = yes }
+			}
+		}
+		else = {
+			change_government = imperial_government
+		}
+	}
+	scope:split_emperor = {
+		every_child = {
+			if = {
+				limit = {
+					has_trait = augustus
+				}
+				remove_trait = augustus
+			}
+		}
+	}
+	title:e_byzantium.holder = { remove_trait = augustus }
+	title:e_western_roman_empire.holder = { remove_trait = augustus }
+	every_ruler = {
+		limit = {
+			is_independent_ruler = yes
+			has_character_flag = not_indy
+			primary_title.empire = {
+				exists = yes
+			}
+		}
+		save_scope_as = vassal_ruler
+		create_title_and_vassal_change = {
+			type = usurped
+			save_scope_as = change
+			add_claim_on_loss = no
+		}
+		scope:vassal_ruler = {
+			change_liege = {
+					liege = primary_title.empire.holder
+				change = scope:change
+			}
+		}
+		resolve_title_and_vassal_change = scope:change
+	}
+	every_ruler = {
+		limit = { has_character_flag = not_indy }
+		remove_character_flag = not_indy
+	}
+	if = {
+		limit = {
+			title:e_western_roman_empire = {
+				holder = { government_has_flag = government_is_administrative }
+				has_title_law = imperial_elective_succession_law
+			}
+		}
+		title:e_western_roman_empire = {
+			clear_title_laws = yes
+		}
+	}
+	if = {
+		limit = {
+			title:e_byzantium = {
+				holder = { government_has_flag = government_is_administrative }
+				has_title_law = imperial_elective_succession_law
+			}
+		}
+		title:e_byzantium = {
+			clear_title_laws = yes
+		}
+	}
 }

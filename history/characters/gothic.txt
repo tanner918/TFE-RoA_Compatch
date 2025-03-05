@@ -1,21 +1,4 @@
 ﻿### Comes of tarraconensis
-euric_01 = {
-	name = "Burdunellus"
-	culture = hispano_roman
-	religion = chalcedonian
-	trait = education_martial_4
-	trait = brave
-	trait = blademaster_3
-	trait = trusting
-	451.6.1 = {
-		birth = yes
-	}
-	497.1.1 = {
-		death = {
-			death_reason = death_execution
-		}
-	}
-}
 euric_02 = {
 	name = "Edelfred"
 	culture = visigothic
@@ -1039,18 +1022,23 @@ iudila = {
 	father = 200287
 	mother = 200293
 
-	martial = 6
-	diplomacy = 8
-	stewardship = 10
-	intrigue = 9
+	martial = 7
+	diplomacy = 6
+	stewardship = 8
+	intrigue = 11
 	learning = 5
+	prowess = 8
 
-	trait = education_diplomacy_4
+	trait = education_martial_3
+	trait = education_martial_prowess_3
 	trait = kinslayer_3
 	trait = hunter_2
-	trait = fickle
+	trait = zealous
+	trait = arrogant
 	trait = ambitious
-	trait = gregarious
+	trait = just
+	trait = shrewd
+	trait = aggressive_attacker
 	religion = arianism
 	culture = visigothic
 
@@ -1396,7 +1384,7 @@ iudila = {
 	culture = "gothic"
 	father = 200292
 	diplomacy = 9
-	martial = 7
+	martial = 11
 	stewardship = 8
 	intrigue = 9
 	learning = 4
@@ -1405,7 +1393,7 @@ iudila = {
 	trait = arrogant
 	trait = brave
 	trait = ambitious
-	trait = education_martial_4
+	trait = education_martial_3
 	trait = reckless
 	trait = reaver
 	sexuality = heterosexual
@@ -2035,9 +2023,13 @@ strabo_02 = { #### ATTENTION MAKE HIM RIVAL OF ZENO
 	460.1.1 = {
 		add_spouse = strabo_06
 	}
+	461.1.1 = {
+		effect = {
+			add_gold = 250
+		}
+	}
 	475.1.1 = {
 		set_relation_rival = character:992016 #Theodoric Amaling
-		add_gold = 250
 		add_character_modifier = zenos_blessing
 		add_truce_both_ways = {
 			character = character:70515
@@ -2799,6 +2791,7 @@ hermanaric_01 = {
 	360.1.1 = {
 		employer = 145237
 		set_relation_friend = character:145237
+		add_character_flag = no_headgear
 	}
 	370.1.1 = {
 		death = yes

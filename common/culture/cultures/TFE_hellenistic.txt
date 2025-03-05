@@ -7,11 +7,26 @@
 	language = language_greek
 	martial_custom = martial_custom_male_only
 	traditions = {
-		tradition_legalistic
-		tradition_roman_legacy
+		#tradition_legalistic
+		#tradition_roman_legacy
 		tradition_formation_fighting
-		tradition_byzantine_succession
+		#tradition_byzantine_succession
 		tradition_philosopher_culture # Duh
+	}
+	dlc_tradition = {
+		trait = tradition_roman_legacy_ep3
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_roman_legacy
+	}
+	dlc_tradition = {
+		trait = tradition_legalistic_ep3
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_legalistic
+	}
+	dlc_tradition = {
+		trait = tradition_byzantine_succession_ep3
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_byzantine_succession
 	}
 	
 	name_list = name_list_greek
@@ -37,10 +52,20 @@ aegyptian = {
 	language = language_greek
 	martial_custom = martial_custom_male_only
 	traditions = {
-		tradition_legalistic
-		tradition_roman_legacy
+		#tradition_legalistic
+		#tradition_roman_legacy
 		tradition_agrarian # Cybr: One word: Nile
 		tradition_monastic_communities # Cybr: Desert Church fathers
+	}
+	dlc_tradition = {
+		trait = tradition_legalistic_ep3
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_legalistic
+	}
+	dlc_tradition = {
+		trait = tradition_roman_legacy_ep3
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_roman_legacy
 	}
 
 	dlc_tradition = { # Cybr: Melting pot of cultures
@@ -68,10 +93,20 @@ cappadocian = {
 	language = language_luwian # Could be called Luwian or Luwic, maybe Anatolian; Isaurian and Ancient Cappadocian attested into the 5th and 6th centuries, probably just by local commoners though and not elites
 	martial_custom = martial_custom_male_only
 	traditions = {
-		tradition_legalistic
-		tradition_roman_legacy
+		#tradition_legalistic
+		#tradition_roman_legacy
 		tradition_hill_dwellers # Cybr: In the rugged parts of Anatolia
 		tradition_underground_cities # Cybr: famous underground cities of Cappadocia
+	}
+	dlc_tradition = {
+		trait = tradition_legalistic_ep3
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_legalistic
+	}
+	dlc_tradition = {
+		trait = tradition_roman_legacy_ep3
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_roman_legacy
 	}
 	
 	name_list = name_list_greek
@@ -93,11 +128,21 @@ phrygian = {
 	language = language_phrygian # Inscription evidence as late as the 3rd century, attested as still existing in the 5th century, probably just by local commoners though and not elites
 	martial_custom = martial_custom_male_only
 	traditions = {
-		tradition_legalistic
-		tradition_roman_legacy
+		#tradition_legalistic
+		#tradition_roman_legacy
 		tradition_hill_dwellers # Cybr: Anatolian highlands
 		tradition_festivities # Cybr: Wikipedia says religious rituals in honor of the Imperial Cult were very common, don't know how reliable but putting here so they have something unique for now
 		tradition_music_theory # Cybr: Phrygian music influenced ancient Greek music
+	}
+	dlc_tradition = {
+		trait = tradition_legalistic_ep3
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_legalistic
+	}
+	dlc_tradition = {
+		trait = tradition_roman_legacy_ep3
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_roman_legacy
 	}
 	
 	name_list = name_list_greek
@@ -123,10 +168,20 @@ pontic = {
 	language = language_greek
 	martial_custom = martial_custom_male_only
 	traditions = {
-		tradition_legalistic
-		tradition_roman_legacy
+		#tradition_legalistic
+		#tradition_roman_legacy
 		tradition_hill_dwellers # Cybr: Anatolian highlands
 		tradition_maritime_mercantilism # Cybr: Black Sea trade		
+	}
+	dlc_tradition = {
+		trait = tradition_legalistic_ep3
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_legalistic
+	}
+	dlc_tradition = {
+		trait = tradition_roman_legacy_ep3
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_roman_legacy
 	}
 
 	dlc_tradition = { # Cybr: Different Hellenized cultures, I guess
@@ -186,11 +241,15 @@ syrian = {
 	language = language_greek
 	martial_custom = martial_custom_male_only
 	traditions = {
-		tradition_roman_legacy
+		#tradition_roman_legacy
 		tradition_hard_working # Juli: Famous for being Cheap labour hand in the germanic kingdoms
 		tradition_artisans # Juli: Also Famous for being the best mosaic workers in the Mediterranean, Worked in Gothic, Byzantine, Aegyptian, Lombardic and early Islamic temples
 	}
-
+	dlc_tradition = {
+		trait = tradition_roman_legacy_ep3
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_roman_legacy
+	}
 	dlc_tradition = { # Cybr: Melting pot of cultures
 		trait = tradition_culture_blending
 		requires_dlc_flag = hybridize_culture

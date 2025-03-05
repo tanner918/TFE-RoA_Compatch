@@ -8,51 +8,95 @@ justinianline = {
 		color1=yellow
 		texture="ce_tamgha_regular_circle_frame.dds"
 		instance={
-			scale={ 0.320000 0.320000 }
+			scale={ 0.920000 0.920000 }
+			depth=11.010000
 		}
+
 	}
 
 	colored_emblem={
 		color1=yellow
-		color2=blue_light
-		texture="ce_star_ten_02.dds"
+		texture="ce_religion_bogomilist.dds"
 		instance={
-			position={ 0.800000 0.500000 }
-			scale={ 0.330000 0.330000 }
-			depth=2.010000
+			position={ 0.290000 0.270000 }
+			scale={ 0.190000 0.190000 }
+			depth=9.010000
 		}
-		instance={
-			position={ 0.500000 0.800000 }
-			scale={ 0.330000 0.330000 }
-			depth=3.010000
-		}
-		instance={
-			position={ 0.200000 0.500000 }
-			scale={ 0.330000 0.330000 }
-			depth=4.010000
-		}
+
 	}
 
 	colored_emblem={
 		color1=yellow
-		color2=red
-		color3=white
-		texture="ce_star_ten_04.dds"
+		texture="ce_column.dds"
 		instance={
-			scale={ 0.400000 0.400000 }
+			position={ 0.400000 0.760000 }
+			scale={ 0.310000 0.300000 }
+			rotation=137
+		}
+
+		instance={
+			position={ 0.460000 0.750000 }
+			scale={ 0.280000 0.290000 }
 			depth=1.010000
+			rotation=26
 		}
-	}
 
-	colored_emblem={
-		color1=blue
-		color2=yellow
-		color3=yellow
-		texture="ce_eagle_01.dds"
 		instance={
+			position={ 0.650000 0.350000 }
+			scale={ 0.250000 0.260000 }
+			depth=2.010000
+			rotation=327
+		}
+
+		instance={
+			position={ 0.720000 0.360000 }
+			scale={ 0.260000 0.250000 }
+			depth=3.010000
+			rotation=28
+		}
+
+		instance={
+			position={ 0.740000 0.670000 }
+			scale={ 0.220000 0.340000 }
+			depth=4.010000
+			rotation=92
+		}
+
+		instance={
+			position={ 0.680000 0.420000 }
+			scale={ 0.380000 0.300000 }
+			depth=5.010000
+			rotation=90
+		}
+
+		instance={
+			position={ 0.570000 0.620000 }
+			scale={ 0.300000 0.360000 }
+			depth=6.010000
+			rotation=122
+		}
+
+		instance={
+			position={ 0.400000 0.500000 }
+			scale={ 0.270000 0.380000 }
+			depth=7.010000
+			rotation=117
+		}
+
+		instance={
+			position={ 0.690000 0.630000 }
+			scale={ 0.350000 0.460000 }
 			depth=8.010000
 		}
+
+		instance={
+			position={ 0.290000 0.580000 }
+			scale={ 0.380000 0.530000 }
+			depth=10.010000
+		}
+
 	}
+
 }
 
 anicii = {
@@ -275,7 +319,7 @@ nuvelan={
 		}
 	}
 }
-99993000={
+99993001={
 	pattern="pattern_solid.dds"
 	color1=black
 	color2=yellow
@@ -944,7 +988,7 @@ theodosian_west = { # Theodosius
 	}	
 }	
 
-7632 = { Pharamonderic
+7632 = { # Pharamonderic
 	pattern = "pattern_solid.dds"	
 		color1 = "blue"	
 		color2 = "blue"
@@ -3272,7 +3316,7 @@ dynasty_ptolemy = {
 	}
 
 }
-tyrfing_dynasty = {
+tyrfing_house = {
 	pattern="pattern__solid_designer.dds"
 	color1=rgb { 22 37 53 }
 	color2=yellow
@@ -3361,6 +3405,727 @@ dynasty_isis_priests = { # Family of Isis Priests at Philae in Aswan
 	}		
 } 
 
+99940000 ={ # Gebiccing/Nibelung
+	custom=yes
+	pattern="pattern_solid.dds"
+	color1=purple
+	colored_emblem={
+		color1=yellow
+		texture="ce_india_doted_frame_02.dds"
+		instance={
+			scale={ 0.870000 0.870000 }
+		}
 
+	}
+
+	colored_emblem={
+		color1=yellow
+		texture="ce_norse_triskele_snakes.dds"
+		instance={
+			scale={ 0.750000 0.750000 }
+			depth=1.010000
+		}
+
+	}
+
+}
+
+dynasty_herakleios = { # heraclids
+	pattern="pattern_solid.dds"
+	color1=black
+	color2=yellow
+	colored_emblem={
+		color1=yellow
+		texture="ce_tamgha_regular_circle_frame.dds"
+		instance={
+			position={ 0.500000 0.510000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		texture="ce_circle_mask.dds"
+		instance={
+			position={ 0.320000 0.825000 }
+			scale={ 0.040000 0.070000 }
+			depth=1.010000
+		}
+
+		instance={
+			position={ 0.680000 0.825000 }
+			scale={ 0.040000 0.070000 }
+			depth=2.010000
+		}
+
+		instance={
+			position={ 0.550000 0.645000 }
+			scale={ 0.040000 0.070000 }
+			depth=3.010000
+		}
+
+		instance={
+			position={ 0.595000 0.705000 }
+			scale={ 0.040000 0.070000 }
+			depth=4.010000
+		}
+
+		instance={
+			position={ 0.635000 0.765000 }
+			scale={ 0.040000 0.070000 }
+			depth=5.010000
+		}
+
+		instance={
+			position={ 0.450000 0.645000 }
+			scale={ 0.040000 0.070000 }
+			depth=6.010000
+		}
+
+		instance={
+			position={ 0.405000 0.705000 }
+			scale={ 0.040000 0.070000 }
+			depth=7.010000
+		}
+
+		instance={
+			position={ 0.365000 0.765000 }
+			scale={ 0.040000 0.070000 }
+			depth=8.010000
+		}
+
+		instance={
+			position={ 0.415000 0.190000 }
+			scale={ 0.075000 0.075000 }
+			depth=9.010000
+		}
+
+		instance={
+			position={ 0.585000 0.190000 }
+			scale={ 0.075000 0.075000 }
+			depth=10.010000
+		}
+
+		instance={
+			position={ 0.360000 0.285000 }
+			scale={ 0.075000 0.075000 }
+			depth=11.010000
+		}
+
+		instance={
+			position={ 0.360000 0.460000 }
+			scale={ 0.075000 0.075000 }
+			depth=12.010000
+		}
+
+		instance={
+			position={ 0.640000 0.460000 }
+			scale={ 0.075000 0.075000 }
+			depth=13.010000
+		}
+
+		instance={
+			position={ 0.640000 0.285000 }
+			scale={ 0.075000 0.075000 }
+			depth=14.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		texture="ce_block_05.dds"
+		instance={
+			position={ 0.500000 0.370000 }
+			scale={ 0.300000 0.800000 }
+			depth=15.010000
+		}
+
+		instance={
+			position={ 0.500000 0.825000 }
+			scale={ 0.400000 0.800000 }
+			depth=16.010000
+		}
+
+		instance={
+			position={ 0.500000 0.765000 }
+			scale={ 0.270000 0.800000 }
+			depth=17.010000
+		}
+
+		instance={
+			position={ 0.500000 0.705000 }
+			scale={ 0.200000 0.800000 }
+			depth=18.010000
+		}
+
+		instance={
+			position={ 0.500000 0.645000 }
+			scale={ 0.090000 0.800000 }
+			depth=19.010000
+		}
+
+		instance={
+			position={ 0.360000 0.370000 }
+			scale={ 0.800000 0.230000 }
+			depth=20.010000
+			rotation=90
+		}
+
+		instance={
+			position={ 0.640000 0.370000 }
+			scale={ 0.800000 0.230000 }
+			depth=21.010000
+			rotation=90
+		}
+
+		instance={
+			position={ 0.500000 0.400000 }
+			scale={ 0.800000 0.455000 }
+			depth=22.010000
+			rotation=90
+		}
+
+		instance={
+			position={ 0.500000 0.190000 }
+			scale={ 0.230000 0.800000 }
+			depth=23.010000
+		}
+
+	}
+
+}
+
+
+99950000 = { # Heruli
+    custom=yes
+    pattern="pattern_solid.dds"
+    color1=red
+    colored_emblem={
+        color1=rgb { 239 107 89 }
+        texture="ce_circle_mask.dds"
+        instance={
+            scale={ 0.770000 0.770000 }
+            depth=3.010000
+        }
+
+    }
+
+    colored_emblem={
+        color1=rgb { 60 7 0 }
+        texture="ce_religion_bogomilist.dds"
+        instance={
+            scale={ 0.300000 0.300000 }
+        }
+
+    }
+
+    colored_emblem={
+        color1=rgb { 57 6 0 }
+        texture="ce_circle_mask.dds"
+        instance={
+            scale={ 0.900000 0.900000 }
+            depth=4.010000
+        }
+
+    }
+
+    colored_emblem={
+        color1=rgb { 255 125 108 }
+        texture="ce_tamgha_roundel_frame.dds"
+        instance={
+            scale={ 0.290000 0.290000 }
+            depth=1.010000
+        }
+
+    }
+
+    colored_emblem={
+        color1=red
+        color2=rgb { 53 6 0 }
+        texture="ce_tamgha_roundel_frame.dds"
+        instance={
+            scale={ 0.500000 0.500000 }
+            depth=2.010000
+        }
+
+    }
+
+}
+
+99920007 = { # Thervingi
+    custom=yes
+    pattern="pattern_vertical_split_01.dds"
+    color1=yellow
+    color2=rgb { 69 42 27 }
+    colored_emblem={
+        color1=rgb { 84 50 31 }
+        color2=yellow
+        color3=yellow
+        texture="ce_visigoth_eagle.dds"
+        instance={
+            position={ 0.300000 0.510000 }
+            scale={ 0.600000 0.600000 }
+            depth=1.010000
+        }
+
+    }
+
+    colored_emblem={
+        color1=yellow
+        color2=red
+        color3=red
+        texture="ce_visigoth_eagle.dds"
+        instance={
+            position={ 0.700000 0.500000 }
+            scale={ -0.610000 0.610000 }
+        }
+
+    }
+
+}
+
+siling = {
+    pattern="pattern_solid.dds"
+    color1=rgb { 38 23 15 }
+    color2=black
+    color3=white
+    colored_emblem={
+        color1=yellow
+        texture="ce_frame_circle_broa.dds"
+        instance={
+            depth=1.010000
+        }
+
+    }
+
+    colored_emblem={
+        color1=yellow
+        color2=white
+        texture="ce_snake_witch.dds"
+        instance={
+            position={ 0.500000 0.560000 }
+            scale={ 0.530000 0.530000 }
+            depth=2.010000
+        }
+
+    }
+
+    colored_emblem={
+        color1=yellow
+        texture="ce_attire.dds"
+        instance={
+            position={ 0.500000 0.350000 }
+            scale={ 0.320000 0.320000 }
+        }
+
+    }
+
+    colored_emblem={
+        color1=brown
+        texture="ce_circle_mask.dds"
+        instance={
+            scale={ 0.765000 0.765000 }
+            depth=3.010000
+        }
+
+    }
+
+}
+
+waegmunding_dynasty = {
+    pattern="pattern_solid.dds"
+    color1=blue
+    color2=yellow
+    color3=red
+    colored_emblem={
+        color1=yellow
+        color2=yellow_light
+        texture="ce_dragon_urnes.dds"
+        instance={
+            position={ 0.500000 0.530000 }
+            scale={ 0.820000 0.820000 }
+        }
+
+    }
+
+    colored_emblem={
+        color1=yellow
+        color2=blue_light
+        texture="ce_fess_checky.dds"
+        instance={
+            position={ 0.500000 0.000000 }
+            scale={ 1.000000 -1.000000 }
+            depth=1.010000
+            rotation=360
+        }
+
+        instance={
+            position={ 0.500000 1.000000 }
+            depth=2.010000
+        }
+
+    }
+
+}
+
+asellus_dynasty = {
+	custom=yes
+	pattern="pattern_solid.dds"
+	color1=rgb { 68 8 0 }
+	colored_emblem={
+		color1=yellow
+		texture="ce_tamgha_regular_circle_frame.dds"
+	}
+
+	colored_emblem={
+		color1=rgb { 68 8 0 }
+		texture="ce_circle_mask.dds"
+		instance={
+			scale={ 0.540000 0.540000 }
+			depth=2.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow_light
+		color2=yellow
+		color3=yellow
+		texture="ce_theodosian_chi_rho.dds"
+		instance={
+			scale={ 0.430000 0.430000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		color2=red
+		texture="ce_sun_india.dds"
+		instance={
+			depth=3.010000
+		}
+
+	}
+
+}
+
+herculis_dynasty = {
+	custom=yes
+	pattern="pattern_solid.dds"
+	color1=blue_light
+	color2=yellow
+	color3=red
+	colored_emblem={
+		color1=rgb { 156 114 139 }
+		color2=white
+		texture="ce_wildman.dds"
+		instance={
+			position={ 0.500000 0.570000 }
+			scale={ 0.800000 0.800000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		color2=yellow_light
+		texture="ce_star_08.dds"
+		instance={
+			position={ 0.750000 0.200000 }
+			scale={ 0.160000 0.160000 }
+			depth=2.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		color2=rgb { 255 0 255 }
+		color3=white
+		texture="ce_star_08.dds"
+		instance={
+			position={ 0.250000 0.200000 }
+			scale={ 0.160000 0.160000 }
+			depth=3.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		color2=yellow
+		color3=black
+		texture="ce_column.dds"
+		instance={
+			position={ 0.750000 0.500000 }
+			scale={ 0.500000 0.500000 }
+			depth=4.010000
+		}
+
+		instance={
+			position={ 0.250000 0.500000 }
+			scale={ 0.500000 0.500000 }
+			depth=5.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=rgb { 146 145 145 }
+		color2=rgb { 146 119 135 }
+		color3=purple
+		texture="ce_lion_head.dds"
+		instance={
+			position={ 0.500000 0.290000 }
+			scale={ 0.230000 0.230000 }
+		}
+
+	}
+
+}
+
+cilaucius_dynasty = {
+	custom=yes
+	pattern="pattern_solid.dds"
+	color1=blue
+	colored_emblem={
+		color1=white
+		color2=blue
+		texture="ce_cross_chi_rho_crude_2.dds"
+		instance={
+			position={ 0.500000 0.480000 }
+			scale={ 0.290000 0.290000 }
+			depth=6.010000
+			rotation=39
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		texture="ce_tamgha_regular_circle_frame.dds"
+		instance={
+			position={ 0.500000 0.490000 }
+			scale={ 0.400000 0.400000 }
+			depth=2.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		texture="ce_circles_01.dds"
+		instance={
+			position={ 0.790000 0.470000 }
+			scale={ 0.270000 -0.270000 }
+			rotation=270
+		}
+
+		instance={
+			position={ 0.210000 0.470000 }
+			scale={ 0.270000 0.270000 }
+			depth=1.010000
+			rotation=271
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		color2=blue_light
+		texture="ce_amazonian_01.dds"
+		instance={
+			position={ 0.650000 0.790000 }
+			scale={ 0.550000 -0.550000 }
+			depth=3.010000
+		}
+
+		instance={
+			position={ 0.350000 0.790000 }
+			scale={ 0.550000 -0.550000 }
+			depth=4.010000
+		}
+
+		instance={
+			position={ 0.650000 0.190000 }
+			scale={ 0.550000 0.550000 }
+			depth=5.010000
+		}
+
+		instance={
+			position={ 0.350000 0.190000 }
+			scale={ 0.550000 0.550000 }
+			depth=7.010000
+		}
+
+	}
+
+}
+astigitanus_dynasty = {
+	custom=yes
+	pattern="pattern_solid.dds"
+	color1=rgb { 215 183 134 }
+	color2=yellow
+	color3=green
+	colored_emblem={
+		color1=green
+		color2=green_light
+		color3=red
+		texture="ce_thistle_grass.dds"
+		instance={
+			position={ 0.750000 0.630000 }
+			scale={ 0.260000 0.260000 }
+			depth=1.010000
+		}
+
+		instance={
+			position={ 0.250000 0.630000 }
+			scale={ 0.260000 0.260000 }
+			depth=2.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		color2=green
+		texture="ce_block_05.dds"
+		instance={
+			position={ 0.500000 0.750000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=red
+		color2=rgb { 255 0 255 }
+		color3=black
+		texture="ce_eagle_02.dds"
+		instance={
+			position={ 0.500000 0.450000 }
+			scale={ 0.700000 0.700000 }
+			depth=3.010000
+		}
+
+	}
+
+}
+burdunellus_dynasty = {
+    custom=yes
+    pattern="pattern_solid.dds"
+    color1=red
+    colored_emblem={
+        color1=yellow
+        color2=yellow
+        texture="ce_religion_custom_faith_7.dds"
+        instance={
+            position={ 0.500000 0.480000 }
+            scale={ 0.470000 0.470000 }
+            depth=1.010000
+        }
+
+    }
+
+    colored_emblem={
+        color1=yellow
+        texture="ce_wreath_circle.dds"
+        instance={
+            position={ 0.500000 0.460000 }
+            scale={ 0.630000 0.630000 }
+            depth=3.010000
+        }
+
+    }
+
+    colored_emblem={
+        color1=red
+        texture="ce_cross_roman_04.dds"
+        instance={
+            position={ 0.430000 0.450000 }
+            scale={ 0.080000 0.080000 }
+        }
+
+    }
+
+    colored_emblem={
+        color1=yellow
+        color2=yellow
+        color3=red
+        texture="ce_eagle_01.dds"
+        instance={
+            position={ 0.500000 0.200000 }
+            scale={ 0.340000 0.340000 }
+            depth=2.010000
+        }
+
+    }
+
+}
+
+kodissa_dynasty = {
+	pattern="pattern__solid_designer.dds"
+	color1=yellow
+	color2=red
+	colored_emblem={
+		color1=yellow
+		texture="ce_tamgha_regular_circle_frame.dds"
+		instance={
+			scale={ 0.320000 0.320000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=orange
+		color2=blue_light
+		texture="ce_star_ten_02.dds"
+		instance={
+			position={ 0.800000 0.500000 }
+			scale={ 0.330000 0.330000 }
+			depth=2.010000
+		}
+
+		instance={
+			position={ 0.500000 0.800000 }
+			scale={ 0.330000 0.330000 }
+			depth=3.010000
+		}
+
+		instance={
+			position={ 0.200000 0.500000 }
+			scale={ 0.330000 0.330000 }
+			depth=4.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=red
+		color2=rgb { 72 20 12 }
+		color3=orange
+		texture="ce_eagle_01.dds"
+		instance={
+			depth=5.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		color2=red
+		color3=white
+		texture="ce_star_ten_04.dds"
+		instance={
+			scale={ 0.400000 0.400000 }
+			depth=1.010000
+		}
+
+	}
+
+}
 
 

@@ -409,9 +409,21 @@ change_to_imperial = {
 	effect = {
 		if = {
 			limit = {
-			has_dlc_feature = roads_to_power
-		}
+				has_dlc_feature = roads_to_power
+			}
 			change_government = administrative_government
+			if = {
+				limit = { 
+					NOT = { any_held_title = { is_noble_family_title = yes } } 
+					highest_held_title_tier >= tier_duchy
+				}
+				if = {
+					limit = { is_house_head = no }
+					found_cadet_house_decision_effect = { CHARACTER = root }
+				}
+				create_noble_family_effect = yes
+				domicile ?= { set_up_domicile_estate_effect = yes }
+			}
 		}
 		else = {
 			change_government = imperial_government
@@ -582,6 +594,34 @@ change_to_autocratic = {
 
 	ai_will_do = {
 		base = 100
+	}
+	cost = {
+		gold = {
+			value = 0
+			if = {
+				limit = {
+					OR = {
+						government_has_flag = government_is_administrative
+						government_has_flag = government_is_imperial
+					}
+				}
+				add = 0
+			}
+			else = { add = 50 }
+		}
+		prestige = {
+			value = 0
+			if = {
+				limit = {
+					OR = {
+						government_has_flag = government_is_administrative
+						government_has_flag = government_is_imperial
+					}
+				}
+				add = 0
+			}
+			else = { add = 200 }
+		}
 	}
 }
 
@@ -963,7 +1003,28 @@ restore_military_comp = {
 	ai_will_do = {
 		base = 100
 	}
-	cost = { gold = { value = 500 } prestige = { value = 1000 } }
+	cost = {
+        gold = {
+            value = 0
+            if = {
+                limit = {
+                    is_ai = yes
+                }
+                add = 0
+            }
+            else = { add = 600 }
+        }
+        prestige = {
+            value = 0
+            if = {
+                limit = {
+                    is_ai = yes
+                }
+                add = 0
+            }
+            else = { add = 1000 }
+        }
+    }
 }
 
 restore_civic_comp = {
@@ -1054,7 +1115,28 @@ restore_civic_comp = {
 	ai_will_do = {
 		base = 100
 	}
-	cost = { gold = { value = 500 } prestige = { value = 1000 } }
+	cost = {
+        gold = {
+            value = 0
+            if = {
+                limit = {
+                    is_ai = yes
+                }
+                add = 0
+            }
+            else = { add = 600 }
+        }
+        prestige = {
+            value = 0
+            if = {
+                limit = {
+                    is_ai = yes
+                }
+                add = 0
+            }
+            else = { add = 1000 }
+        }
+    }
 }
 
 restore_diplo_comp = {
@@ -1117,7 +1199,28 @@ restore_diplo_comp = {
 	ai_will_do = {
 		base = 100
 	}
-	cost = { gold = { value = 500 } prestige = { value = 1000 } }
+	cost = {
+        gold = {
+            value = 0
+            if = {
+                limit = {
+                    is_ai = yes
+                }
+                add = 0
+            }
+            else = { add = 600 }
+        }
+        prestige = {
+            value = 0
+            if = {
+                limit = {
+                    is_ai = yes
+                }
+                add = 0
+            }
+            else = { add = 1000 }
+        }
+    }
 }
 
 titular_tribe_settle = {
@@ -1385,9 +1488,10 @@ change_to_imperial_byz = {
 	effect = {
 		if = {
 			limit = {
-			has_dlc_feature = roads_to_power
-		}
-			change_government = administrative_government
+				has_dlc_feature = roads_to_power
+			}
+			save_scope_as = actor
+			TFE_convert_to_administrative_from_feudalism_effect = yes
 		}
 		else = {
 			change_government = imperial_government
@@ -1466,9 +1570,10 @@ change_to_imperial_feudal = {
 	effect = {
 		if = {
 			limit = {
-			has_dlc_feature = roads_to_power
-		}
-			change_government = administrative_government
+				has_dlc_feature = roads_to_power
+			}
+			save_scope_as = actor
+			TFE_convert_to_administrative_from_feudalism_effect = yes
 		}
 		else = {
 			change_government = imperial_government
@@ -1495,9 +1600,21 @@ change_to_imperial_feudal = {
 				}
 				if = {
 					limit = {
-					has_dlc_feature = roads_to_power
-				}
+						has_dlc_feature = roads_to_power
+					}
 					change_government = administrative_government
+					if = {
+						limit = { 
+							NOT = { any_held_title = { is_noble_family_title = yes } } 
+							highest_held_title_tier >= tier_duchy
+						}
+						if = {
+							limit = { is_house_head = no }
+							found_cadet_house_decision_effect = { CHARACTER = root }
+						}
+						create_noble_family_effect = yes
+						domicile ?= { set_up_domicile_estate_effect = yes }
+					}
 				}
 				else = {
 					change_government = imperial_government

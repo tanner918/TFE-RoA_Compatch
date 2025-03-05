@@ -345,8 +345,25 @@
 		}
 		if = { # Safety flag to ensure admin revocations behave properly
 			limit = {
-				scope:actor = { government_has_flag = government_is_administrative }
-				scope:recipient = { government_has_flag = government_is_administrative }
+				scope:actor = { 
+					OR = {
+					government_has_flag = government_is_administrative 
+					government_has_flag = government_is_autocratic_ep3
+					}
+				}
+				scope:recipient = { 
+					OR = {
+						AND = {
+							AND = {
+							government_has_flag = government_is_roman
+							government_has_flag = government_is_feudal
+							}
+							top_liege = { government_allows = administrative }
+						}
+					government_has_flag = government_is_administrative 
+					government_has_flag = government_is_autocratic_ep3
+					} 
+				}
 			}
 			save_scope_value_as = {
 				name = administrative_revocation

@@ -4322,7 +4322,12 @@ populist_war = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
-					scope:defender = { government_has_flag = government_is_administrative }
+					scope:defender = { 
+						OR = {
+						government_has_flag = government_is_administrative
+						government_has_flag = government_is_autocratic_ep3
+						}
+					}
 				}
 				desc = populist_war_victory_desc_admin
 			}
@@ -4436,7 +4441,12 @@ populist_war = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
-					scope:defender = { government_has_flag = government_is_administrative }
+					scope:defender = { 
+						OR = {
+						government_has_flag = government_is_administrative
+						government_has_flag = government_is_autocratic_ep3
+						}
+					}
 				}
 				desc = populist_war_white_peace_desc_admin
 			}
@@ -4492,7 +4502,12 @@ populist_war = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
-					scope:defender = { government_has_flag = government_is_administrative }
+					scope:defender = {
+						OR = {
+						government_has_flag = government_is_administrative
+						government_has_flag = government_is_autocratic_ep3
+						}
+					}
 				}
 				desc = populist_war_defeat_desc_admin
 			}

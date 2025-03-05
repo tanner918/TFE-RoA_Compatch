@@ -2600,20 +2600,17 @@ scripted_trigger valid_for_russian_culture_trigger = {
 	}
 }
 
-# Visigothic notification events
+# Visigothic notification events -- we also use for Ostrogoths
 tfe_culture.1001 = {
 	type = character_event
 	title = tfe_culture.1001.t
 	desc = tfe_culture.1001.desc
 	theme = culture_change
-	left_portrait = scope:visigothic_founder
+	left_portrait = scope:gothic_founder
 
 	immediate = {
-		show_as_tooltip = {
-			custom_tooltip = tfe_culture.custom.change_culture
-			culture:visigothic = {
-				get_all_innovations_from = culture:gothic
-			}
+		scope:new_culture = {
+			get_all_innovations_from = culture:gothic
 		}
 	}
 
@@ -4115,11 +4112,11 @@ tfe_culture.1002 = {
 	title = tfe_culture.1002.t
 	desc = tfe_culture.1002.desc
 	theme = culture_change
-	left_portrait = scope:visigothic_founder
+	left_portrait = scope:gothic_founder
 
 	immediate = {
 		show_as_tooltip = {
-			culture:visigothic = {
+			scope:new_culture = {
 				get_all_innovations_from = culture:gothic
 			}
 		}

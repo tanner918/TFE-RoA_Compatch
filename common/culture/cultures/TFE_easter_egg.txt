@@ -15,9 +15,14 @@
 	unit_gfx = { northern_unit_gfx }
 
 	traditions = {
-		tradition_roman_legacy
+		#tradition_roman_legacy
 		tradition_life_is_just_a_joke
 		tradition_varangians
+	}
+	dlc_tradition = {
+		trait = tradition_roman_legacy_ep3
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_roman_legacy
 	}
 	ethnicities = {
 		10 = mediterranean

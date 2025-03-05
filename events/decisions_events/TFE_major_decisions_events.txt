@@ -47,6 +47,44 @@ TFE_major_decisions.0001 = {
 	}
 }
 
+TFE_major_decisions_ep3.0001 = {
+	type = character_event
+	title = TFE_major_decisions.0001.t
+	desc = {
+		desc = TFE_major_decisions.0001.desc_intro
+		first_valid = {
+			triggered_desc = {
+				trigger = { scope:new_faith = { has_doctrine = doctrine_pluralism_pluralistic } }
+				desc = TFE_major_decisions.0001.desc_pluralistic
+			}
+			triggered_desc = {
+				trigger = { scope:new_faith = { has_doctrine = doctrine_pluralism_righteous } }
+				desc = TFE_major_decisions.0001.desc_righteous
+			}
+			triggered_desc = {
+				trigger = { scope:new_faith = { has_doctrine = doctrine_pluralism_fundamentalist } }
+				desc = TFE_major_decisions.0001.desc_fundamentalist
+			}
+		}
+		desc = TFE_major_decisions.0001.desc_end
+	}
+	
+	theme = faith
+	
+	left_portrait = {
+		character = root
+		animation = personality_zealous
+	}
+	
+	immediate = {
+		new_official_imperial_faith_effect_ep3 = yes
+	}
+
+	option = {
+		name = TFE_major_decisions.0001.a
+	}
+}
+
 TFE_major_decisions.0002 = {
 	type = character_event
 	title = TFE_major_decisions.0002.t

@@ -100,6 +100,7 @@ eranshar_authority = {
 		flag = vassal_retraction_allowed
 		flag = title_revocation_allowed
 		flag = can_change_succession_laws
+		flag = vassal_internal_wars_banned
 		
 		can_keep = { 
 			realm_law_use_eranshar_authority = yes
@@ -168,6 +169,7 @@ eranshar_authority = {
 		flag = can_change_succession_laws
 		flag = titles_cannot_leave_realm_on_succession
 		flag = can_designate_heirs
+		flag = vassal_all_wars_banned
 		can_keep = { 
 			realm_law_use_eranshar_authority = yes 
 			realm_law_use_nomadic_authority = no

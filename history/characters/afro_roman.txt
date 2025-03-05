@@ -168,60 +168,6 @@ africae_01 = {
 		death = yes
 	}
 }
-africae_02 = {
-	name = "Volusianus"
-	religion = roman_pagan
-	culture = afro_roman
-	dynasty = rufi
-	246.1.1 = {
-		birth = yes
-	}
-	330.1.1 = {
-		death = yes
-	}
-}
-africae_03 = {
-	name = "Albinus"
-	religion = roman_pagan
-	culture = afro_roman
-	father = africae_02 #Volusianus
-	dynasty = rufi
-	289.1.1 = {
-		birth = yes
-	}
-	340.1.1 = {
-		add_spouse = africae_41 #Albina
-	}
-	370.1.1 = {
-		death = yes
-	}
-}
-africae_41 = {
-	name = "Albina"
-	religion = nicene
-	culture = afro_roman
-	female = yes
-	320.1.1 = {
-		birth = yes
-	}
-	379.1.1 = {
-		death = yes
-	}
-}
-africae_42 = {
-	name = "Volusianus"
-	religion = roman_pagan
-	culture = afro_roman
-	dynasty = rufi
-	father = africae_03 #Albinus
-	mother = africae_41 #Albina
-	358.1.1 = {
-		birth = yes
-	}
-	437.1.1 = {
-		death = yes
-	}
-}
 africae_43 = {
 	name = "Helpidius"
 	religion = nicene
@@ -657,114 +603,6 @@ severans_051 = {
 	}
 }
 
-### Gens Fulvia
-fulvi_0 = {
-	name = "Pius"
-	dynasty = dynasty_fulvius
-	religion = "roman_pagan"
-	culture = "afro_roman"
-	80.9.30 = {
-		birth = "80.9.30"
-	}
-	140.1.1 = {
-		death = "140.1.1"
-	}
-}
-fulvi_001 = {
-	name = "Plautius"
-	dynasty = dynasty_fulvius
-	religion = "roman_pagan"
-	culture = "afro_roman"
-	father = fulvi_0
-	100.1.3 = {
-		birth = "100.1.3"
-	}
-	175.1.1 = {
-		death = "175.1.1"
-	}
-}
-fulvi_011 = {
-	name = "Plautius"
-	dynasty = dynasty_fulvius
-	religion = "roman_pagan"
-	culture = "afro_roman"
-	father = fulvi_001
-	143.1.30 = {
-		birth = "143.1.30"
-	}
-	175.1.1 = {
-		death = "175.1.1"
-	}
-}
-fulvi_03 = {
-	name = "Plautilla"
-	dynasty = dynasty_fulvius
-	religion = "roman_pagan"
-	culture = "afro_roman"
-	father = fulvi_011
-	female = yes
-	185.9.12 = {
-		birth = "185.9.12"
-	}
-	211.1.1 = {
-		death = "211.1.1"
-	}
-}
-fulvi_031 = {
-	name = "Plautius"
-	dynasty = dynasty_fulvius
-	religion = "roman_pagan"
-	culture = "afro_roman"
-	father = fulvi_011
-	185.9.12 = {
-		birth = "185.9.12"
-	}
-	211.1.1 = {
-		death = "211.1.1"
-	}
-}
-fulvi_0311 = {
-	name = "Plautilla"
-	dynasty = dynasty_fulvius
-	religion = "roman_pagan"
-	culture = "afro_roman"
-	father = fulvi_031
-	female = yes
-	200.9.12 = {
-		birth = "200.9.12"
-	}
-	240.1.1 = {
-		death = "240.1.1"
-	}
-}
-fulvi_01 = {
-	name = "Pius"
-	dynasty = dynasty_fulvius
-	religion = "roman_pagan"
-	culture = "afro_roman"
-	father = fulvi_0
-	102.2.21 = {
-		birth = "102.2.21"
-	}
-	175.1.1 = {
-		death = "175.1.1"
-	}
-}
-fulvi_02 = {
-	name = "Pia"
-	female = yes
-	dynasty = dynasty_fulvius
-	religion = "roman_pagan"
-	culture = "afro_roman"
-	father = fulvi_01
-	120.9.30 = {
-		birth = "120.9.30"
-	}
-	200.1.1 = {
-		death = "200.1.1"
-	}
-}
-
 ##############################################################################
 # 
 # FAMILY OF SAINT AUGUSTINE
@@ -992,6 +830,47 @@ afroroman_07 = { # Real
 		birth = yes
 	}
 	515.1.1 = {
+		death = yes
+	}
+}
+afroroman_08 = { # Real
+	name = "Corippus" # afroroman poet
+	dynasty = cresconius_dynasty
+	religion = chalcedonian
+	culture = afro_roman
+	trait = education_learning_3
+	trait = poet
+	506.1.1 = {
+		birth = yes
+	}
+	532.1.1 = {
+		set_relation_friend = character:greek_02
+		set_relation_friend = character:sabinianus_05
+	}
+	576.1.1 = {
+		death = yes
+	}
+}
+
+7768 = {
+	name = "Gelasius" # Pope
+	religion = "nicene"
+	culture = "afro_roman"
+	trait = zealous
+	trait = callous
+	trait = calm
+	trait = education_diplomacy_2
+	420.1.1 = {
+		birth = yes
+	}
+	451.1.1 = {
+		religion = chalcedonian
+	}
+	492.1.1 = {
+		name = "Gelasius"
+	# AKA: Acacius
+	}
+	496.11.21 = {
 		death = yes
 	}
 }

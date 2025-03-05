@@ -2072,7 +2072,7 @@ anushvram_02 = {
 	}
 }
 159921 = {
-	name = "Bagrat" #
+	name = "Smbat" #
 	dynasty = 507
 	religion = "urartuism"
 	culture = "armenian"
@@ -2085,13 +2085,16 @@ anushvram_02 = {
 	}
 }
 159922 = {
-	name = "Smbat" #
+	name = "Trdat" #
 	dynasty = 507
 	religion = "nicene"
 	culture = "armenian"
 	father = 159921
 	310.1.1 = {
 		birth = "310.1.1"
+	}
+	340.1.1 = {
+		add_spouse = arsacid_48
 	}
 	370.1.1 = {
 		death = "370.1.1"
@@ -2103,6 +2106,7 @@ anushvram_02 = {
 	religion = "nicene"
 	culture = "armenian"
 	father = 159922
+	mother = arsacid_48
 	340.1.1 = {
 		birth = "340.1.1"
 	}
@@ -3622,7 +3626,7 @@ salome_01 = {
 	}
 }
 arsacid_43 = {
-	name = "Beoun" # Arshakid
+	name = "Khosrowdukht" # Arshakid
 	female = yes
 	dynasty_house = arshakuni
 	religion = "mazdayasna"
@@ -3633,9 +3637,6 @@ arsacid_43 = {
 	}
 	301.1.1 = {
 		religion = "nicene"
-	}
-	325.1.1 = {
-		name = "Salome"
 	}
 	361.1.1 = {
 		death = yes
@@ -3716,7 +3717,7 @@ arsacid_48 = {
 	325.1.1 = {
 		birth = yes
 	}
-	358.1.1 = {
+	375.1.1 = {
 		death = yes
 	}
 }
@@ -4217,10 +4218,10 @@ armenian_01 = {
 	dna = dna_narses
 	culture = "armenian"
 	religion = "chalcedonian"
-	intrigue = 12
-	diplomacy = 9
+	intrigue = 11
+	diplomacy = 7
 	martial = 10
-	stewardship = 9
+	stewardship = 7
 	learning = 2
 	prowess = 4
 	health = 7

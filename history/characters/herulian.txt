@@ -124,6 +124,7 @@
 	name = "Faras" # heruli leader in Justinian's army under Belisarius
 	religion = "chalcedonian"
 	culture = "herulian"
+	trait = education_martial_2
 	martial = 10
 	prowess = 10
 	501.1.1 = {
@@ -139,8 +140,13 @@
 	name = "Suartuas" # heruli pretendient of Justinian
 	religion = "chalcedonian"
 	culture = "herulian"
+	trait = education_diplomacy_1
 	505.1.1 = {
 		birth = yes
+	}
+	532.1.1 = {
+		add_pressed_claim = title:k_heruli
+		employer = 
 	}
 	552.1.1 = {
 		death = {

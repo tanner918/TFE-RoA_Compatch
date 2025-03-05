@@ -13,7 +13,12 @@ western_roman.0001 = { #Abandon Britannia Emperor
 	type = character_event
 	title = western_roman.0001.t
 	desc = western_roman.0001.desc
-	theme = realm
+	override_icon = { reference = "gfx/interface/icons/event_types/special_abandon_britannia.dds" }
+	theme = martial
+
+	override_background = {
+		reference = ocean
+	}
 	
 	left_portrait = {
 		character = root
@@ -200,7 +205,12 @@ western_roman.0002 = { #Abandon Britannia - Vassals
 	type = character_event
 	title = western_roman.0001.t
 	desc = western_roman.0001.desc
-	theme = realm
+	override_icon = { reference = "gfx/interface/icons/event_types/special_abandon_britannia.dds" }
+	theme = martial
+
+	override_background = {
+		reference = ocean
+	}
 	
 	left_portrait = {
 		character = title:e_western_roman_empire.holder
@@ -1932,6 +1942,7 @@ western_roman.0039 = {
 			limit = {
 				global_var:belisarius = {
 					is_alive = yes
+					NOT = { highest_held_title_tier >= tier_kingdom }
 				}
 			}
 			global_var:belisarius = {
@@ -2115,7 +2126,7 @@ western_roman.0041 = {
 				save_temporary_scope_as = current_county
 			}
 			create_title_and_vassal_change = {
-				type = usurped
+				type = revoked
 				save_scope_as = change
 				add_claim_on_loss = no
 			}
@@ -2136,7 +2147,7 @@ western_roman.0041 = {
 				save_temporary_scope_as = current_county
 			}
 			create_title_and_vassal_change = {
-				type = usurped
+				type = revoked
 				save_scope_as = change
 				add_claim_on_loss = no
 			}
@@ -2168,7 +2179,7 @@ western_roman.0041 = {
 			save_temporary_scope_as = current_county
 		}
 		create_title_and_vassal_change = {
-			type = usurped
+			type = revoked
 			save_scope_as = change
 			add_claim_on_loss = no
 		}
@@ -2185,7 +2196,7 @@ western_roman.0041 = {
 			save_temporary_scope_as = current_county
 		}
 		create_title_and_vassal_change = {
-			type = usurped
+			type = revoked
 			save_scope_as = change
 			add_claim_on_loss = no
 		}
@@ -2203,7 +2214,7 @@ western_roman.0041 = {
 			save_temporary_scope_as = current_county
 		}
 		create_title_and_vassal_change = {
-			type = usurped
+			type = revoked
 			save_scope_as = change
 			add_claim_on_loss = no
 		}
@@ -2239,7 +2250,7 @@ western_roman.0041 = {
 			save_temporary_scope_as = current_county
 		}
 		create_title_and_vassal_change = {
-			type = usurped
+			type = revoked
 			save_scope_as = change
 			add_claim_on_loss = no
 		}
@@ -2268,7 +2279,7 @@ western_roman.0041 = {
 		}
 
 		create_title_and_vassal_change = {
-			type = usurped
+			type = revoked
 			save_scope_as = title_change
 			add_claim_on_loss = no
 		}
@@ -2293,7 +2304,7 @@ western_roman.0041 = {
 			save_temporary_scope_as = current_county
 		}
 		create_title_and_vassal_change = {
-			type = usurped
+			type = revoked
 			save_scope_as = change
 			add_claim_on_loss = no
 		}
@@ -2316,7 +2327,7 @@ western_roman.0041 = {
 			save_temporary_scope_as = current_county
 		}
 		create_title_and_vassal_change = {
-			type = usurped
+			type = revoked
 			save_scope_as = change
 			add_claim_on_loss = no
 		}
@@ -2352,7 +2363,7 @@ western_roman.0041 = {
 			save_temporary_scope_as = current_county
 		}
 		create_title_and_vassal_change = {
-			type = usurped
+			type = revoked
 			save_scope_as = change
 			add_claim_on_loss = no
 		}
@@ -2423,7 +2434,7 @@ western_roman.0041 = {
 			save_temporary_scope_as = current_county
 		}
 		create_title_and_vassal_change = {
-			type = usurped
+			type = revoked
 			save_scope_as = change
 			add_claim_on_loss = no
 		}
@@ -2440,7 +2451,7 @@ western_roman.0041 = {
 			save_temporary_scope_as = current_county
 		}
 		create_title_and_vassal_change = {
-			type = usurped
+			type = revoked
 			save_scope_as = change
 			add_claim_on_loss = no
 		}
@@ -2721,7 +2732,7 @@ western_roman.0044 = {
 		}
 		scope:emperor = {
 			remove_trait = paranoid
-			add_trait = stubborn
+			#add_trait = stubborn
 			send_interface_toast = {
 				title = western_roman.0044.tt
 				left_icon = root
@@ -2817,10 +2828,22 @@ western_roman.0044 = {
 					limit = {
 						has_dlc_feature = roads_to_power
 					}
-						change_government = administrative_government
+					change_government = administrative_government
+					if = {
+						limit = { 
+							NOT = { any_held_title = { is_noble_family_title = yes } } 
+							highest_held_title_tier >= tier_duchy
+						}
+						if = {
+							limit = { is_house_head = no }
+							found_cadet_house_decision_effect = { CHARACTER = root }
+						}
+						create_noble_family_effect = yes
+						domicile ?= { set_up_domicile_estate_effect = yes }
 					}
-					else = {
-						change_government = imperial_government
+				}
+				else = {
+					change_government = imperial_government
 				} 
 			}
 		}
@@ -2909,10 +2932,22 @@ western_roman.0045 = {
 					limit = {
 						has_dlc_feature = roads_to_power
 					}
-						change_government = administrative_government
+					change_government = administrative_government
+					if = {
+						limit = { 
+							NOT = { any_held_title = { is_noble_family_title = yes } } 
+							highest_held_title_tier >= tier_duchy
+						}
+						if = {
+							limit = { is_house_head = no }
+							found_cadet_house_decision_effect = { CHARACTER = root }
+						}
+						create_noble_family_effect = yes
+						domicile ?= { set_up_domicile_estate_effect = yes }
 					}
-					else = {
-						change_government = imperial_government
+				}
+				else = {
+					change_government = imperial_government
 				} 
 			}
 		}
@@ -2978,10 +3013,22 @@ western_roman.0045 = {
 					limit = {
 						has_dlc_feature = roads_to_power
 					}
-						change_government = administrative_government
+					change_government = administrative_government
+					if = {
+						limit = { 
+							NOT = { any_held_title = { is_noble_family_title = yes } } 
+							highest_held_title_tier >= tier_duchy
+						}
+						if = {
+							limit = { is_house_head = no }
+							found_cadet_house_decision_effect = { CHARACTER = root }
+						}
+						create_noble_family_effect = yes
+						domicile ?= { set_up_domicile_estate_effect = yes }
 					}
-					else = {
-						change_government = imperial_government
+				}
+				else = {
+					change_government = imperial_government
 				}  
 			}
 		}
@@ -4009,8 +4056,8 @@ western_roman.0071 = {
 					is_landed = yes
 					top_liege = scope:truce_breakee
 				}
-				exists = title:k_pontus.holder
-				title:k_pontus.holder.top_liege = scope:truce_breakee
+				exists = title:k_nikaea.holder
+				title:k_nikaea.holder.top_liege = scope:truce_breakee
 			}
 			character:belisarius_001 = {
 				every_held_title = {
@@ -4037,7 +4084,7 @@ western_roman.0071 = {
 			}
 			resolve_title_and_vassal_change = scope:change
 
-			title:k_pontus = {
+			title:k_nikaea = {
 				save_temporary_scope_as = current_county
 			}
 			create_title_and_vassal_change = {
@@ -4075,6 +4122,15 @@ western_roman.0071 = {
 				}
 			}
 			resolve_title_and_vassal_change = scope:title_change
+
+			title:k_nikaea.holder.top_liege = { 
+				every_character_war = { 
+					limit = { 
+						top_liege = { is_defender = yes } 
+					} 
+					add_defender = title:k_nikaea.holder 
+				}
+			}
 		}
 	}
 

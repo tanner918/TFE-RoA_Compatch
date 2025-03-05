@@ -628,15 +628,7 @@ savran = {
 	}
 
 	can_recruit = {
-		OR = {
-			valid_for_maa_trigger = { PARAMETER = unlock_maa_savran }
-			AND = {
-				exists = dynasty
-				dynasty = {
-					has_dynasty_perk = fp3_khvarenah_legacy_4
-				}
-			}
-		}
+		valid_for_maa_trigger = { PARAMETER = unlock_maa_savran }
 	}
 
 	buy_cost = { gold = 175 }
@@ -646,7 +638,7 @@ savran = {
 	
 	stack = 100
 	ai_quality = { value = @cultural_maa_extra_ai_score }
-	icon = horse_archers
+	icon = savran
 }
 
 #Savran replace this
@@ -725,4 +717,47 @@ reindeer_cavalry = {
 	ai_quality = { value = @cultural_maa_extra_ai_score }
 	icon = light_cavalry
 
+}
+
+pushtigban = {
+	type = heavy_cavalry
+	
+	damage = 130
+	toughness = 40
+	pursuit = 15
+	screen = 0
+	
+	terrain_bonus = {
+		plains = { damage = 30 }
+		drylands = { damage = 30 }
+		desert_mountains = { damage = 10 pursuit = 10 }
+		hills = { damage = -10 }
+		mountains = { damage = -50 }
+		wetlands = { damage = -50 toughness = -15 pursuit = -20 }
+	}
+
+	counters = {
+		archers = 1
+	}
+
+	winter_bonus = {
+		normal_winter = { damage = -15 toughness = -5 }
+		harsh_winter = { damage = -30 toughness = -10 }
+	}
+	
+	can_recruit = {
+		exists = dynasty
+		dynasty = {
+			has_dynasty_perk = fp3_khvarenah_legacy_4
+		}
+	}
+
+	buy_cost = { gold = 270 }
+	low_maintenance_cost = { gold = asawira_low_maint_cost }
+	high_maintenance_cost = { gold = asawira_high_maint_cost }
+	provision_cost = @provisions_cost_infantry_expensive
+	
+	stack = 50
+	ai_quality = { value = @[cultural_maa_extra_ai_score + 30] }
+	icon = pushtigban
 }

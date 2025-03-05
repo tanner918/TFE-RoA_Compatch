@@ -160,3 +160,94 @@ shemi_11 = {
 		death = yes
 	}
 }
+
+
+
+
+
+#############################################################
+# 
+# KINGDOM OF SUVARNAGOTRA (Indian POV) (aka the "Gold Race Country") (rulers are fictitious)
+# Per Bettina Zeisler, Suvarnagotra confusingly refers to three different areas depending on whether one uses Indian, Chinese, and Khotanese historical sources
+# The Chinese sources are very uncertain and may be mixing up things more than the other two (if I read her conclusions correctly)
+# Therefore, I've decided to just have the Indian and Khotanese understandings of Suvarnagotra as two separate kingdoms since they're quite far apart
+# And quite possibly refer to two distinct (but perhaps similar) polities.
+# Suvarnagotra from the Indian POV will be referred to as Suvarnabhu, which means Goldland and was a land mentioned in an Indian text, the Brihat-Samhita
+# And *might* be the same as or related to Suvarnagotra form the Indian POV.
+# All in all, this is extremely hypothetical and likely probably wrong in reality, but a rough approximation based on what we have.
+#  
+# Done by Cybrxkhan
+# 
+#############################################################
+
+gold_country_indian_001 = {
+	name="Jivan"
+	dynasty=dynasty_suvarnabhu
+	religion="mahayana"
+	culture="nuristani"
+	333.3.3={
+		birth=yes
+	}
+	388.9.6={
+		death=yes
+	}
+}
+
+gold_country_indian_002 = {
+	name="Kailash"
+	dynasty=dynasty_suvarnabhu
+	religion="mahayana"
+	culture="nuristani"
+	father=gold_country_indian_001
+	367.4.17={
+		birth=yes
+	}
+	421.10.27={
+		death=yes
+	}
+}
+
+gold_country_indian_003 = {
+	name="Motilal"
+	dynasty=dynasty_suvarnabhu
+	religion="mahayana"
+	culture="nuristani"
+	father=gold_country_indian_002
+	408.11.19={
+		birth=yes
+	}
+	474.1.28={
+		death=yes
+	}
+}
+
+gold_country_indian_004 = {
+	name="Srivar"
+	dynasty=dynasty_suvarnabhu
+	religion="mahayana"
+	culture="nuristani"
+	father=gold_country_indian_003
+	451.9.13={
+		birth=yes
+	}
+	519.10.19={
+		death=yes
+	}
+}
+
+gold_country_indian_005 = {
+	name="Birbal"
+	dynasty=dynasty_suvarnabhu
+	religion="mahayana"
+	culture="nuristani"
+	father=gold_country_indian_004
+	496.12.2={
+		birth=yes
+	}
+	546.12.30={
+		death=yes
+	}
+}
+
+
+

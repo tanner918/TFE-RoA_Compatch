@@ -2155,6 +2155,11 @@ e_western_roman_empire = {
 			}
 		}
 	}
+	402.1.1 = {
+		effect = {
+		set_capital_county = title:c_ravenna
+		}
+	}
 	#### Last Emperors
 	407.1.1 = {
 		holder = constantinus_01 # Usurper
@@ -2645,5 +2650,13 @@ d_naffur = {
 	}
 	546.7.8 = {
 		holder = garamantian_21
+	}
+}
+
+e_italy = {
+	476.1.1 = {
+		effect = {
+		set_capital_county = title:c_ravenna
+		}
 	}
 }

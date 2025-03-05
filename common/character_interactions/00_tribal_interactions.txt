@@ -179,7 +179,10 @@ support_feudalize_tribal_holding_interaction = {
 				}
 				if = {
 					limit = { # More expensive for admin to make these barbarians civilized...
+					OR = {
 						government_has_flag = government_is_administrative
+						government_has_flag = government_is_autocratic_ep3
+						}
 					}
 					add = {
 						value = feudalize_tribal_holding_interaction_cost
@@ -219,7 +222,10 @@ support_feudalize_tribal_holding_interaction = {
 				value = feudalize_tribal_holding_interaction_cost
 				if = {
 					limit = { # More expensive for admin to convert these... Barbarians...
+					OR = {
 						government_has_flag = government_is_administrative
+						government_has_flag = government_is_autocratic_ep3
+						}
 					}
 					multiply = {
 						value = 1.25
@@ -260,7 +266,12 @@ support_feudalize_tribal_holding_interaction = {
 		scope:actor = {
 			# If you are admin, you get some influence for your efforts
 			if = {
-				limit = { government_has_flag = government_is_administrative } 
+				limit = { 
+					OR = {
+					government_has_flag = government_is_administrative
+					government_has_flag = government_is_autocratic_ep3
+					}
+				} 
 				change_influence = medium_influence_gain
 			}
 		}

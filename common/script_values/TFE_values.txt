@@ -533,397 +533,92 @@ mil_competence_knights_prowess = {
 }
 
 # Having lots of MaA regiments is GOOD
-mil_competence_maa_regiments_skirmishers_points = 5
-mil_competence_maa_regiments_archers_points = 10
-mil_competence_maa_regiments_pikemen_points = 10
-mil_competence_maa_regiments_light_cavalry_points = 15
-mil_competence_maa_regiments_heavy_infantry_points = 20
-mil_competence_maa_regiments_heavy_cavalry_points = 25
+mil_competence_maa_regiments_skirmishers_points = 2
+mil_competence_maa_regiments_archers_points = 2
+mil_competence_maa_regiments_pikemen_points = 2
+mil_competence_maa_regiments_light_cavalry_points = 4
+mil_competence_maa_regiments_heavy_infantry_points = 5
+mil_competence_maa_regiments_heavy_cavalry_points = 5
 # Special
-mil_competence_maa_regiments_archer_cavalry_points = 20
-mil_competence_maa_regiments_camel_cavalry_points = 20
-mil_competence_maa_regiments_elephant_cavalry_points = 25
+mil_competence_maa_regiments_archer_cavalry_points = 5
+mil_competence_maa_regiments_camel_cavalry_points = 4
+mil_competence_maa_regiments_elephant_cavalry_points = 10
+
+maa_regiments_skirmishers_count = {
+	every_maa_regiment = {
+		limit = { is_unit_type = skirmishers }
+		add = maa_size
+	}
+	multiply = mil_competence_maa_regiments_skirmishers_points
+}
+maa_regiments_archers_count = {
+	every_maa_regiment = {
+		limit = { is_unit_type = archers }
+		add = maa_size
+	}
+	multiply = mil_competence_maa_regiments_archers_points
+}
+maa_regiments_pikemen_count = {
+	every_maa_regiment = {
+		limit = { is_unit_type = pikemen }
+		add = maa_size
+	}
+	multiply = mil_competence_maa_regiments_pikemen_points
+}
+maa_regiments_heavy_infantry_count = {
+	every_maa_regiment = {
+		limit = { is_unit_type = heavy_infantry }
+		add = maa_size
+	}
+	multiply = mil_competence_maa_regiments_heavy_infantry_points
+}
+maa_regiments_light_cavalry_count = {
+	every_maa_regiment = {
+		limit = { is_unit_type = light_cavalry }
+		add = maa_size
+	}
+	multiply = mil_competence_maa_regiments_light_cavalry_points
+}
+maa_regiments_heavy_cavalry_count = {
+	every_maa_regiment = {
+		limit = { is_unit_type = heavy_cavalry }
+		add = maa_size
+	}
+	multiply = mil_competence_maa_regiments_heavy_cavalry_points
+}
+maa_regiments_archer_cavalry_count = {
+	every_maa_regiment = {
+		limit = { is_unit_type = archer_cavalry }
+		add = maa_size
+	}
+	multiply = mil_competence_maa_regiments_archer_cavalry_points
+}
+maa_regiments_camel_cavalry_count = {
+	every_maa_regiment = {
+		limit = { is_unit_type = camel_cavalry }
+		add = maa_size
+	}
+	multiply = mil_competence_maa_regiments_camel_cavalry_points
+}
+maa_regiments_elephant_cavalry_count = {
+	every_maa_regiment = {
+		limit = { is_unit_type = elephant_cavalry }
+		add = maa_size
+	}
+	multiply = mil_competence_maa_regiments_elephant_cavalry_points
+}
 
 mil_competence_maa_regiments = {
 	value = 0
-	
-	# # Skirmishers (light infantry)
-	# if = {
-		# limit = { number_maa_regiments_of_base_type = { type = skirmishers value = 1 } }
-		# add = { value = mil_competence_maa_regiments_skirmishers_points multiply = 1 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = skirmishers value = 2 } }
-		# add = { value = mil_competence_maa_regiments_skirmishers_points multiply = 2 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = skirmishers value = 3 } }
-		# add = { value = mil_competence_maa_regiments_skirmishers_points multiply = 3 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = skirmishers value = 4 } }
-		# add = { value = mil_competence_maa_regiments_skirmishers_points multiply = 4 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = skirmishers value = 5 } }
-		# add = { value = mil_competence_maa_regiments_skirmishers_points multiply = 5 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = skirmishers value = 6 } }
-		# add = { value = mil_competence_maa_regiments_skirmishers_points multiply = 6 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = skirmishers value = 7 } }
-		# add = { value = mil_competence_maa_regiments_skirmishers_points multiply = 7 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = skirmishers value = 8 } }
-		# add = { value = mil_competence_maa_regiments_skirmishers_points multiply = 8 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = skirmishers value = 9 } }
-		# add = { value = mil_competence_maa_regiments_skirmishers_points multiply = 9 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = skirmishers value >= 10 } }
-		# add = { value = mil_competence_maa_regiments_skirmishers_points multiply = 10 }
-	# }
-	
-	# # Archers
-	# if = {
-		# limit = { number_maa_regiments_of_base_type = { type = archers value = 1 } }
-		# add = { value = mil_competence_maa_regiments_archers_points multiply = 1 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = archers value = 2 } }
-		# add = { value = mil_competence_maa_regiments_archers_points multiply = 2 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = archers value = 3 } }
-		# add = { value = mil_competence_maa_regiments_archers_points multiply = 3 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = archers value = 4 } }
-		# add = { value = mil_competence_maa_regiments_archers_points multiply = 4 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = archers value = 5 } }
-		# add = { value = mil_competence_maa_regiments_archers_points multiply = 5 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = archers value = 6 } }
-		# add = { value = mil_competence_maa_regiments_archers_points multiply = 6 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = archers value = 7 } }
-		# add = { value = mil_competence_maa_regiments_archers_points multiply = 7 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = archers value = 8 } }
-		# add = { value = mil_competence_maa_regiments_archers_points multiply = 8 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = archers value = 9 } }
-		# add = { value = mil_competence_maa_regiments_archers_points multiply = 9 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = archers value >= 10 } }
-		# add = { value = mil_competence_maa_regiments_archers_points multiply = 10 }
-	# }
-	
-	# # Pikemen
-	# if = {
-		# limit = { number_maa_regiments_of_base_type = { type = pikemen value = 1 } }
-		# add = { value = mil_competence_maa_regiments_pikemen_points multiply = 1 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = pikemen value = 2 } }
-		# add = { value = mil_competence_maa_regiments_pikemen_points multiply = 2 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = pikemen value = 3 } }
-		# add = { value = mil_competence_maa_regiments_pikemen_points multiply = 3 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = pikemen value = 4 } }
-		# add = { value = mil_competence_maa_regiments_pikemen_points multiply = 4 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = pikemen value = 5 } }
-		# add = { value = mil_competence_maa_regiments_pikemen_points multiply = 5 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = pikemen value = 6 } }
-		# add = { value = mil_competence_maa_regiments_pikemen_points multiply = 6 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = pikemen value = 7 } }
-		# add = { value = mil_competence_maa_regiments_pikemen_points multiply = 7 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = pikemen value = 8 } }
-		# add = { value = mil_competence_maa_regiments_pikemen_points multiply = 8 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = pikemen value = 9 } }
-		# add = { value = mil_competence_maa_regiments_pikemen_points multiply = 9 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = pikemen value >= 10 } }
-		# add = { value = mil_competence_maa_regiments_pikemen_points multiply = 10 }
-	# }
-	
-	# # Light Cavalry
-	# if = {
-		# limit = { number_maa_regiments_of_base_type = { type = light_cavalry value = 1 } }
-		# add = { value = mil_competence_maa_regiments_light_cavalry_points multiply = 1 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = light_cavalry value = 2 } }
-		# add = { value = mil_competence_maa_regiments_light_cavalry_points multiply = 2 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = light_cavalry value = 3 } }
-		# add = { value = mil_competence_maa_regiments_light_cavalry_points multiply = 3 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = light_cavalry value = 4 } }
-		# add = { value = mil_competence_maa_regiments_light_cavalry_points multiply = 4 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = light_cavalry value = 5 } }
-		# add = { value = mil_competence_maa_regiments_light_cavalry_points multiply = 5 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = light_cavalry value = 6 } }
-		# add = { value = mil_competence_maa_regiments_light_cavalry_points multiply = 6 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = light_cavalry value = 7 } }
-		# add = { value = mil_competence_maa_regiments_light_cavalry_points multiply = 7 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = light_cavalry value = 8 } }
-		# add = { value = mil_competence_maa_regiments_light_cavalry_points multiply = 8 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = light_cavalry value = 9 } }
-		# add = { value = mil_competence_maa_regiments_light_cavalry_points multiply = 9 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = light_cavalry value >= 10 } }
-		# add = { value = mil_competence_maa_regiments_light_cavalry_points multiply = 10 }
-	# }
-	
-	# # Heavy Infantry
-	# if = {
-		# limit = { number_maa_regiments_of_base_type = { type = heavy_infantry value = 1 } }
-		# add = { value = mil_competence_maa_regiments_heavy_infantry_points multiply = 1 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = heavy_infantry value = 2 } }
-		# add = { value = mil_competence_maa_regiments_heavy_infantry_points multiply = 2 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = heavy_infantry value = 3 } }
-		# add = { value = mil_competence_maa_regiments_heavy_infantry_points multiply = 3 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = heavy_infantry value = 4 } }
-		# add = { value = mil_competence_maa_regiments_heavy_infantry_points multiply = 4 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = heavy_infantry value = 5 } }
-		# add = { value = mil_competence_maa_regiments_heavy_infantry_points multiply = 5 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = heavy_infantry value = 6 } }
-		# add = { value = mil_competence_maa_regiments_heavy_infantry_points multiply = 6 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = heavy_infantry value = 7 } }
-		# add = { value = mil_competence_maa_regiments_heavy_infantry_points multiply = 7 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = heavy_infantry value = 8 } }
-		# add = { value = mil_competence_maa_regiments_heavy_infantry_points multiply = 8 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = heavy_infantry value = 9 } }
-		# add = { value = mil_competence_maa_regiments_heavy_infantry_points multiply = 9 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = heavy_infantry value >= 10 } }
-		# add = { value = mil_competence_maa_regiments_heavy_infantry_points multiply = 10 }
-	# }
-	
-	# # Heavy Cavalry
-	# if = {
-		# limit = { number_maa_regiments_of_base_type = { type = heavy_cavalry value = 1 } }
-		# add = { value = mil_competence_maa_regiments_heavy_cavalry_points multiply = 1 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = heavy_cavalry value = 2 } }
-		# add = { value = mil_competence_maa_regiments_heavy_cavalry_points multiply = 2 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = heavy_cavalry value = 3 } }
-		# add = { value = mil_competence_maa_regiments_heavy_cavalry_points multiply = 3 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = heavy_cavalry value = 4 } }
-		# add = { value = mil_competence_maa_regiments_heavy_cavalry_points multiply = 4 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = heavy_cavalry value = 5 } }
-		# add = { value = mil_competence_maa_regiments_heavy_cavalry_points multiply = 5 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = heavy_cavalry value = 6 } }
-		# add = { value = mil_competence_maa_regiments_heavy_cavalry_points multiply = 6 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = heavy_cavalry value = 7 } }
-		# add = { value = mil_competence_maa_regiments_heavy_cavalry_points multiply = 7 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = heavy_cavalry value = 8 } }
-		# add = { value = mil_competence_maa_regiments_heavy_cavalry_points multiply = 8 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = heavy_cavalry value = 9 } }
-		# add = { value = mil_competence_maa_regiments_heavy_cavalry_points multiply = 9 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = heavy_cavalry value >= 10 } }
-		# add = { value = mil_competence_maa_regiments_heavy_cavalry_points multiply = 10 }
-	# }
-	
-	# # Archer Cavalry
-	# if = {
-		# limit = { number_maa_regiments_of_base_type = { type = archer_cavalry value = 1 } }
-		# add = { value = mil_competence_maa_regiments_archer_cavalry_points multiply = 1 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = archer_cavalry value = 2 } }
-		# add = { value = mil_competence_maa_regiments_archer_cavalry_points multiply = 2 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = archer_cavalry value = 3 } }
-		# add = { value = mil_competence_maa_regiments_archer_cavalry_points multiply = 3 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = archer_cavalry value = 4 } }
-		# add = { value = mil_competence_maa_regiments_archer_cavalry_points multiply = 4 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = archer_cavalry value = 5 } }
-		# add = { value = mil_competence_maa_regiments_archer_cavalry_points multiply = 5 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = archer_cavalry value = 6 } }
-		# add = { value = mil_competence_maa_regiments_archer_cavalry_points multiply = 6 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = archer_cavalry value = 7 } }
-		# add = { value = mil_competence_maa_regiments_archer_cavalry_points multiply = 7 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = archer_cavalry value = 8 } }
-		# add = { value = mil_competence_maa_regiments_archer_cavalry_points multiply = 8 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = archer_cavalry value = 9 } }
-		# add = { value = mil_competence_maa_regiments_archer_cavalry_points multiply = 9 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = archer_cavalry value >= 10 } }
-		# add = { value = mil_competence_maa_regiments_archer_cavalry_points multiply = 10 }
-	# }
-	
-	# # Camel Cavalry
-	# if = {
-		# limit = { number_maa_regiments_of_base_type = { type = camel_cavalry value = 1 } }
-		# add = { value = mil_competence_maa_regiments_camel_cavalry_points multiply = 1 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = camel_cavalry value = 2 } }
-		# add = { value = mil_competence_maa_regiments_camel_cavalry_points multiply = 2 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = camel_cavalry value = 3 } }
-		# add = { value = mil_competence_maa_regiments_camel_cavalry_points multiply = 3 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = camel_cavalry value = 4 } }
-		# add = { value = mil_competence_maa_regiments_camel_cavalry_points multiply = 4 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = camel_cavalry value = 5 } }
-		# add = { value = mil_competence_maa_regiments_camel_cavalry_points multiply = 5 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = camel_cavalry value = 6 } }
-		# add = { value = mil_competence_maa_regiments_camel_cavalry_points multiply = 6 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = camel_cavalry value = 7 } }
-		# add = { value = mil_competence_maa_regiments_camel_cavalry_points multiply = 7 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = camel_cavalry value = 8 } }
-		# add = { value = mil_competence_maa_regiments_camel_cavalry_points multiply = 8 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = camel_cavalry value = 9 } }
-		# add = { value = mil_competence_maa_regiments_camel_cavalry_points multiply = 9 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = camel_cavalry value >= 10 } }
-		# add = { value = mil_competence_maa_regiments_camel_cavalry_points multiply = 10 }
-	# }
-	
-	# # Elephant Cavalry
-	# if = {
-		# limit = { number_maa_regiments_of_base_type = { type = elephant_cavalry value = 1 } }
-		# add = { value = mil_competence_maa_regiments_elephant_cavalry_points multiply = 1 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = elephant_cavalry value = 2 } }
-		# add = { value = mil_competence_maa_regiments_elephant_cavalry_points multiply = 2 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = elephant_cavalry value = 3 } }
-		# add = { value = mil_competence_maa_regiments_elephant_cavalry_points multiply = 3 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = elephant_cavalry value = 4 } }
-		# add = { value = mil_competence_maa_regiments_elephant_cavalry_points multiply = 4 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = elephant_cavalry value = 5 } }
-		# add = { value = mil_competence_maa_regiments_elephant_cavalry_points multiply = 5 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = elephant_cavalry value = 6 } }
-		# add = { value = mil_competence_maa_regiments_elephant_cavalry_points multiply = 6 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = elephant_cavalry value = 7 } }
-		# add = { value = mil_competence_maa_regiments_elephant_cavalry_points multiply = 7 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = elephant_cavalry value = 8 } }
-		# add = { value = mil_competence_maa_regiments_elephant_cavalry_points multiply = 8 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = elephant_cavalry value = 9 } }
-		# add = { value = mil_competence_maa_regiments_elephant_cavalry_points multiply = 9 }
-	# }
-	# else_if = {
-		# limit = { number_maa_regiments_of_base_type = { type = elephant_cavalry value >= 10 } }
-		# add = { value = mil_competence_maa_regiments_elephant_cavalry_points multiply = 10 }
-	# }
+	add = maa_regiments_skirmishers_count
+	add = maa_regiments_archers_count
+	add = maa_regiments_pikemen_count
+	add = maa_regiments_heavy_infantry_count
+	add = maa_regiments_light_cavalry_count
+	add = maa_regiments_heavy_cavalry_count
+	add = maa_regiments_archer_cavalry_count
+	add = maa_regiments_camel_cavalry_count
+	add = maa_regiments_elephant_cavalry_count
 }
 
 # Nb of max soldiers / 1000

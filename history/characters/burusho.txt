@@ -1,0 +1,98 @@
+﻿
+#############################################################
+# 
+# KINGDOM OF SUVARNAGOTRA (Khotanese POV) (aka the "Gold Race Country") (rulers are fictitious)
+# (See comment paragraph above for more info)
+# This is the Khotanese understanding of Suvarnagotra, which is roughly in the Skardu/Baltistan area as opposed to the southern Ladakh of the Indian POV
+# Possibly the most historically attested Suvarnagotra (assuming they are different polities, which I am doing here)
+# Connected to Skardu and Khotan through political and possibly even marriage/kinship ties, and was possibly a vassal of Skardu (maybe in the 600s)
+#  
+# Addendum: Appears connected to Hunza somehow, so I've made them Burusho so we have at least one Burusho ruler at all start dates 
+#  
+# Done by Cybrxkhan
+# 
+#############################################################
+
+gold_country_khotanese_001 = {
+	name="Gonoolanas"
+	dynasty=dynasty_suvarnagotra
+	religion="mahayana"
+	culture="burusho"
+	344.6.19={
+		birth=yes
+	}
+	394.12.2={
+		death=yes
+	}
+}
+
+gold_country_khotanese_002 = {
+	name="Chumo"
+	dynasty=dynasty_suvarnagotra
+	religion="mahayana"
+	culture="burusho"
+	father=gold_country_khotanese_001
+	378.11.3={
+		birth=yes
+	}
+	435.2.9={
+		death=yes
+	}
+}
+
+gold_country_khotanese_003 = {
+	name="Qhulpi"
+	dynasty=dynasty_suvarnagotra
+	religion="mahayana"
+	culture="burusho"
+	father=gold_country_khotanese_002
+	416.2.4={
+		birth=yes
+	}
+	470.11.15={
+		death=yes
+	}
+}
+
+gold_country_khotanese_004 = {
+	name="Partaawuus"
+	dynasty=dynasty_suvarnagotra
+	religion="mahayana"
+	culture="burusho"
+	father=gold_country_khotanese_003
+	450.10.28={
+		birth=yes
+	}
+	524.6.1={
+		death=yes
+	}
+}
+
+gold_country_khotanese_005 = {
+	name="Niyo"
+	dynasty=dynasty_suvarnagotra
+	religion="mahayana"
+	culture="burusho"
+	father=gold_country_khotanese_004
+	489.1.30={
+		birth=yes
+	}
+	537.3.7={
+		death=yes
+	}
+}
+
+gold_country_khotanese_006 = {
+	name="Sa"
+	dynasty=dynasty_suvarnagotra
+	religion="mahayana"
+	culture="burusho"
+	father=gold_country_khotanese_005
+	524.3.16={
+		birth=yes
+	}
+	579.7.12={
+		death=yes
+	}
+}
+

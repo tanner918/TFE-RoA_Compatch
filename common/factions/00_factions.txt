@@ -431,7 +431,12 @@ liberty_faction = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
-					faction_target = { government_has_flag = government_is_administrative }
+					faction_target = { 
+						OR = {
+						government_has_flag = government_is_administrative 
+						government_has_flag = government_is_autocratic_ep3
+						}
+					}
 				}
 				desc = liberty_faction_desc_admin
 			}
@@ -455,7 +460,12 @@ liberty_faction = {
 		first_valid = {
 			triggered_desc = {
 				trigger = {
-					faction_target = { government_has_flag = government_is_administrative }
+					faction_target = { 
+						OR = {
+						government_has_flag = government_is_administrative 
+						government_has_flag = government_is_autocratic_ep3
+						} 
+					}
 				}
 				desc = liberty_faction_short_effect_desc_admin
 			}
@@ -595,7 +605,14 @@ liberty_faction = {
 		}
 
 		trigger_if = {
-			limit = { scope:target = { government_has_flag = government_is_administrative } }
+			limit = { 
+				scope:target = { 
+				OR = {
+					government_has_flag = government_is_administrative 
+					government_has_flag = government_is_autocratic_ep3
+						}  
+					} 
+				}
 			custom_description = {
 				text = has_lowest_imperial_bureaucracy
 				subject = scope:target
@@ -624,7 +641,12 @@ liberty_faction = {
 		
 		trigger_if = {
 			limit = {
-				scope:target = { government_has_flag = government_is_administrative }
+				scope:target = { 
+					OR = {
+						government_has_flag = government_is_administrative 
+						government_has_flag = government_is_autocratic_ep3
+					}  
+				}
 			}
 			scope:target = {
 				is_independent_ruler = yes
@@ -638,7 +660,14 @@ liberty_faction = {
 		}
 
 		trigger_if = {
-			limit = { scope:target = { government_has_flag = government_is_administrative } }
+			limit = { 
+				scope:target = { 
+							OR = {
+								government_has_flag = government_is_administrative 
+								government_has_flag = government_is_autocratic_ep3
+						}
+					}  
+				} 
 			custom_description = {
 				text = has_lowest_imperial_bureaucracy
 				subject = scope:target
@@ -667,7 +696,12 @@ liberty_faction = {
 		
 		trigger_if = {
 			limit = {
-				scope:target = { government_has_flag = government_is_administrative }
+				scope:target = { 
+					OR = {
+						government_has_flag = government_is_administrative 
+						government_has_flag = government_is_autocratic_ep3
+						} 
+					}
 			}
 			scope:target = {
 				is_independent_ruler = yes
@@ -683,7 +717,12 @@ liberty_faction = {
 			is_ai = no
 			scope:faction.faction_target = {
 				trigger_if = {
-					limit = { government_has_flag = government_is_administrative }
+					limit = { 
+						OR = {
+						government_has_flag = government_is_administrative 
+						government_has_flag = government_is_autocratic_ep3
+						}  
+					}
 					OR = {
 						has_realm_law = imperial_bureaucracy_1
 						has_realm_law = imperial_bureaucracy_2
@@ -702,7 +741,12 @@ liberty_faction = {
 		
 		trigger_if = {
 			limit = {
-				scope:faction.faction_target = { government_has_flag = government_is_administrative }
+				scope:faction.faction_target = { 
+					OR = {
+						government_has_flag = government_is_administrative 
+						government_has_flag = government_is_autocratic_ep3
+					}  
+				}
 			}
 			scope:faction.faction_target = {
 				is_independent_ruler = yes
