@@ -137,7 +137,7 @@ TFE_on_game_start = {
 				set_holding_type = castle_holding
 			}
 		}
-		title:b_bamiyan.title_province = {
+		title:b_bamian.title_province = { # TFE-ROA: TFE has this barony as b_bamiyan, but ROA uses b_bamian
 			if = {
 				limit = {
 					OR = {

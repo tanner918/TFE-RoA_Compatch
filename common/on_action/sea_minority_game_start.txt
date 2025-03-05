@@ -1621,12 +1621,32 @@ set_minorities_game_start = {
 		add_culture_minority_effect = {
 			CULTURE = culture:sogdian
 			SIZE = small
-			COUNTY = title:c_kara_khoja
+			COUNTY = title:c_wupu # TFE-ROA: TFE has this as c_kara_khoja. In ROA, this county corresponds to approximately c_wupu, c_piqan, and c_turfan, so I changed it so that minorities going to c_kara_khoja go to all three of those counties instead.
+		}
+		add_culture_minority_effect = {
+			CULTURE = culture:sogdian
+			SIZE = small
+			COUNTY = title:c_piqan # TFE-ROA: TFE has this as c_kara_khoja. In ROA, this county corresponds to approximately c_wupu, c_piqan, and c_turfan, so I changed it so that minorities going to c_kara_khoja go to all three of those counties instead.
+		}
+		add_culture_minority_effect = {
+			CULTURE = culture:sogdian
+			SIZE = small
+			COUNTY = title:c_turfan # TFE-ROA: TFE has this as c_kara_khoja. In ROA, this county corresponds to approximately c_wupu, c_piqan, and c_turfan, so I changed it so that minorities going to c_kara_khoja go to all three of those counties instead.
 		}
 		add_faith_minority_effect = {
 			FAITH = faith:khurmazta
 			SIZE = small
-			COUNTY = title:c_kara_khoja
+			COUNTY = title:c_wupu # TFE-ROA: TFE has this as c_kara_khoja. In ROA, this county corresponds to approximately c_wupu, c_piqan, and c_turfan, so I changed it so that minorities going to c_kara_khoja go to all three of those counties instead.
+		}
+		add_culture_minority_effect = {
+			CULTURE = faith:khurmazta
+			SIZE = small
+			COUNTY = title:c_piqan # TFE-ROA: TFE has this as c_kara_khoja. In ROA, this county corresponds to approximately c_wupu, c_piqan, and c_turfan, so I changed it so that minorities going to c_kara_khoja go to all three of those counties instead.
+		}
+		add_culture_minority_effect = {
+			CULTURE = faith:khurmazta
+			SIZE = small
+			COUNTY = title:c_turfan # TFE-ROA: TFE has this as c_kara_khoja. In ROA, this county corresponds to approximately c_wupu, c_piqan, and c_turfan, so I changed it so that minorities going to c_kara_khoja go to all three of those counties instead.
 		}
 		add_culture_minority_effect = {
 			CULTURE = culture:sogdian
@@ -1643,7 +1663,17 @@ set_minorities_game_start = {
 		add_faith_minority_effect = {
 			FAITH = faith:zhengyi
 			SIZE = small
-			COUNTY = title:c_kara_khoja
+			COUNTY = title:c_wupu # TFE-ROA: TFE has this as c_kara_khoja. In ROA, this county corresponds to approximately c_wupu, c_piqan, and c_turfan, so I changed it so that minorities going to c_kara_khoja go to all three of those counties instead.
+		}
+		add_culture_minority_effect = {
+			CULTURE = faith:zhengyi
+			SIZE = small
+			COUNTY = title:c_piqan # TFE-ROA: TFE has this as c_kara_khoja. In ROA, this county corresponds to approximately c_wupu, c_piqan, and c_turfan, so I changed it so that minorities going to c_kara_khoja go to all three of those counties instead.
+		}
+		add_culture_minority_effect = {
+			CULTURE = faith:zhengyi
+			SIZE = small
+			COUNTY = title:c_turfan # TFE-ROA: TFE has this as c_kara_khoja. In ROA, this county corresponds to approximately c_wupu, c_piqan, and c_turfan, so I changed it so that minorities going to c_kara_khoja go to all three of those counties instead.
 		}
 		add_faith_minority_effect = {
 			FAITH = faith:zhengyi
@@ -1658,18 +1688,18 @@ set_minorities_game_start = {
 		add_faith_minority_effect = {
 			FAITH = faith:zhengyi
 			SIZE = small
-			COUNTY = title:c_shunzhou
+			COUNTY = title:c_zhongwei # TFE-ROA: TFE had this as c_shunzhou. Changed to ROA county that seemed like best fit
 		}
 		add_faith_minority_effect = {
 			FAITH = faith:zhengyi
 			SIZE = large
 			COUNTY = title:c_liangzhou
 		}
-		add_faith_minority_effect = {
-			FAITH = faith:zhengyi
-			SIZE = large
-			COUNTY = title:c_fanhe
-		}
+		# add_faith_minority_effect = { # TFE-ROA: TFE has this county get this minority. But it doesn't exist in ROA. This county overlaps with c_liangzhou in ROA, so I am just commenting this out since c_liangzhou already has an entry 
+		# 	FAITH = faith:zhengyi
+		# 	SIZE = large
+		# 	COUNTY = title:c_fanhe
+		# }
 		add_faith_minority_effect = {
 			FAITH = faith:zhengyi
 			SIZE = large
@@ -1678,63 +1708,63 @@ set_minorities_game_start = {
 		add_faith_minority_effect = {
 			FAITH = faith:zhengyi
 			SIZE = large
-			COUNTY = title:c_baiyin
+			COUNTY = title:c_huanzhouliangzhou # TFE-ROA: TFE had this as c_baiyin. Changed this to ROA county that makes most sense.
 		}
 		add_faith_minority_effect = {
 			FAITH = faith:zhengyi
 			SIZE = large
-			COUNTY = title:c_yongdeng
+			COUNTY = title:c_tiantishan # TFE-ROA: TFE had this as c_yongdeng. Changed to ROA county that makes most sense.
 		}
 		add_faith_minority_effect = {
 			FAITH = faith:zhengyi
 			SIZE = large
 			COUNTY = title:c_ganzhou
 		}
+		# add_faith_minority_effect = { # TFE-ROA: TFE has this county get this minority, but the county doesn't exist in ROA. It overlaps with c_ganzhou, which already gets this minority, so I will just comment this out for now.
+		# 	FAITH = faith:zhengyi
+		# 	SIZE = small
+		# 	COUNTY = title:c_linze
+		# }
+		# add_faith_minority_effect = { # TFE-ROA: TFE has this county get this minority, but the county doesn't exist in ROA. It overlaps with c_suzhou and c_ganzhou, and since those are both getting this minority, just commenting this out for now.
+		# 	FAITH = faith:zhengyi
+		# 	SIZE = small
+		# 	COUNTY = title:c_gaotai
+		# }
 		add_faith_minority_effect = {
 			FAITH = faith:zhengyi
 			SIZE = small
-			COUNTY = title:c_linze
-		}
-		add_faith_minority_effect = {
-			FAITH = faith:zhengyi
-			SIZE = small
-			COUNTY = title:c_gaotai
-		}
-		add_faith_minority_effect = {
-			FAITH = faith:zhengyi
-			SIZE = small
-			COUNTY = title:c_jinta
+			COUNTY = title:c_baichengzi # TFE-ROA: TFE has this as c_jinta. Changed to ROA county that seemed like best fit.
 		}
 		add_faith_minority_effect = {
 			FAITH = faith:zhengyi
 			SIZE = small
 			COUNTY = title:c_suzhou
 		}
+		# add_faith_minority_effect = { # TFE-ROA: TFE has this county get this minority, but the county doesn't exist in ROA. It overlaps with c_yulin_guiyi, so since that was changed to get the minority below, I will just comment this out for now.
+		# 	FAITH = faith:zhengyi
+		# 	SIZE = small
+		# 	COUNTY = title:c_yumen
+		# }
 		add_faith_minority_effect = {
 			FAITH = faith:zhengyi
 			SIZE = small
-			COUNTY = title:c_yumen
+			COUNTY = title:c_yulin_guiyi # TFE-ROA: TFE had this as c_changma. Changed this to ROA that seemed like best fit
 		}
 		add_faith_minority_effect = {
 			FAITH = faith:zhengyi
 			SIZE = small
-			COUNTY = title:c_changma
-		}
-		add_faith_minority_effect = {
-			FAITH = faith:zhengyi
-			SIZE = small
-			COUNTY = title:c_hongliuyuan
+			COUNTY = title:c_shouchang # TFE-ROA: TFE had this as c_hongliuyuan. Changed to ROA county that seemed like best fit
 		}
 		add_faith_minority_effect = {
 			FAITH = faith:zhengyi
 			SIZE = small
 			COUNTY = title:c_shazhou
 		}
-		add_faith_minority_effect = {
-			FAITH = faith:zhengyi
-			SIZE = small
-			COUNTY = title:c_yumenguan
-		}
+		# add_faith_minority_effect = { TFE-ROA: TFE has this county get this minority. But this county doesn't exist in ROA. This county overlaps with c_shouchang in ROA, so since I changed it so c_shouchang gets the minority above, I will comment this out for now.
+		# 	FAITH = faith:zhengyi
+		# 	SIZE = small
+		# 	COUNTY = title:c_yumenguan
+		# }
 		add_faith_minority_effect = {
 			FAITH = faith:zhengyi
 			SIZE = small

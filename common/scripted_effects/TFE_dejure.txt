@@ -245,7 +245,7 @@
 	title:c_merida = {
 		set_de_jure_liege_title = title:d_badajoz
 	}
-	title:c_placensia = {
+	title:c_plasencia = { # TFE-ROA: TFE had this down as c_placensia, but the actual county ID should have been c_plasencia according to the landed_titles files. Fixed it here.
 		set_de_jure_liege_title = title:d_badajoz
 	}
 
@@ -805,10 +805,10 @@ dejure_shift_gallia_effect = {
 		set_de_jure_liege_title = title:d_dauphine
 	}
 	title:c_venaissin = {
-		set_de_jure_liege_title = title:d_dauphine
+		set_de_jure_liege_title = title:d_provence # TFE-ROA: TFE has this county normally go under d_dauphine in this scripted effect, but due to the map changes, this would cause d_provence to end up with only two counties, so I moved this one for a little balance, and makes it align a bit more with the normal ROA map setup.
 	}
 	title:c_forcalquier = {
-		set_de_jure_liege_title = title:d_dauphine
+		set_de_jure_liege_title = title:d_provence # TFE-ROA: TFE has this county normally go under d_dauphine in this scripted effect, but due to the map changes, this would cause d_provence to end up with only two counties, so I moved this one for a little balance, and makes it align a bit more with the normal ROA map setup.
 	}
 	title:c_savoie = {
 		set_de_jure_liege_title = title:d_dauphine
@@ -847,7 +847,7 @@ dejure_shift_gallia_effect = {
 		set_de_jure_liege_title = title:d_languedoc
 	}
 
-	title:c_clemont_sur_allier = {
+	title:c_clermont_sur_allier = { # TFE-ROA: TFE had this as c_clemont_sur_allier, a spelling mistake. Fixed it.
 		set_de_jure_liege_title = title:d_auvergne
 	}
 
@@ -896,12 +896,12 @@ dejure_shift_gallia_effect = {
 	title:c_provence = {
 		set_de_jure_liege_title = title:d_provence
 	}
-	title:c_arles = {
-		set_de_jure_liege_title = title:d_provence
-	}
-	title:c_embrun = {
-		set_de_jure_liege_title = title:d_provence
-	}
+	# title:c_arles = { # TFE-ROA: TFE creates c_arles by moving b_arles from being under c_venaissin in ROA. Commenting this out for now since it doesn't exist in ROA, but will need to figure out exactly what should be done regarding this. c_venaissin is normally put under d_dauphine through this scripted effect, but in ROA it is under d_provence. I have changed it in this script to go under d_provence mainly for balance reasons (since d_dauphine gets a lot of counties and d_provence would be left with two counties otherwise)
+	# 	set_de_jure_liege_title = title:d_provence
+	# }
+	# title:c_embrun = { # TFE-ROA: TFE creates c_embrun by taking b_embrun, b_briancon, and b_gap from being under c_forcalquier in ROA. I am commenting this out since it doesn't exist in ROA, and I have already modified this effect so c_forcalquier gets put under d_provence, so the relevant baronies are also properly changed.
+	# 	set_de_jure_liege_title = title:d_provence
+	# }
 
 	title:c_alencon = {
 		set_de_jure_liege_title = title:d_normandy
@@ -1602,9 +1602,9 @@ dejure_shift_restore_septem_provinciae_effect = {
 	title:c_viviers = {
 		set_de_jure_liege_title = title:d_languedoc
 	}
-	title:c_arles = {
-		set_de_jure_liege_title = title:d_dauphine
-	}
+	# title:c_arles = { # TFE-ROA: TFE creates c_arles by moving b_arles from being under c_venaissin in ROA. Commenting this out for now since it doesn't exist in ROA, but will need to figure out exactly what should be done regarding this.
+	# 	set_de_jure_liege_title = title:d_dauphine
+	# }
 	title:c_geneva = {
 		set_de_jure_liege_title = title:d_dauphine
 	}
@@ -1614,7 +1614,7 @@ dejure_shift_restore_septem_provinciae_effect = {
 	title:c_issoudun = {
 		set_de_jure_liege_title = title:d_bourbon
 	}
-	title:c_embrun = {
+	title:c_forcalquier = { # TFE-ROA: TFE normally has this as c_embrun. c_embrun doesn't exist in ROA, as its counties were taken from c_forcalquier. Changed this to c_forcalquier for a little balance.
 		set_de_jure_liege_title = title:d_alpes_maritimae
 	}
 	title:c_nice = {
