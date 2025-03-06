@@ -939,7 +939,7 @@ concession_of_italy = {
 			}
 		}
 		any_sub_realm_county = {
-			NOT = { this = title:c_trapani }
+			NOT = { this = title:c_palermo } # TFE-ROA: TFE has this as c_trapani, but that doesn't exist in ROA. TFE takes b_trapani from being under c_palermo in ROA
 			NOT = { this = title:c_malta }
 			duchy = title:d_sicily
 			count >= 2
@@ -967,7 +967,7 @@ concession_of_italy = {
 				limit = {
 					tier = tier_county
 					duchy = title:d_sicily
-					NOT = { this = title:c_trapani }
+					NOT = { this = title:c_palermo } # TFE-ROA: TFE has this as c_trapani, but that doesn't exist in ROA. TFE takes b_trapani from being under c_palermo in ROA
 					NOT = { this = title:c_malta }
 				}
 				create_title_and_vassal_change = {

@@ -515,11 +515,11 @@ set_minorities_game_start = {
 			SIZE = large
 			COUNTY = title:c_cholamandalam
 		}
-		add_faith_minority_effect = {
-			FAITH = faith:dravida_saiva
-			SIZE = large
-			COUNTY = title:c_korkai
-		}
+		# add_faith_minority_effect = { # TFE-ROA: TFE has this county made by taking most of the baronies from c_madurai, and it doesn't exist in ROA. I am commenting this out since c_madurai already gets this minority
+		# 	FAITH = faith:dravida_saiva
+		# 	SIZE = large
+		# 	COUNTY = title:c_korkai
+		# }
 		add_faith_minority_effect = {
 			FAITH = faith:dravida_saiva
 			SIZE = large
@@ -535,11 +535,11 @@ set_minorities_game_start = {
 			SIZE = large
 			COUNTY = title:c_kongu
 		}
-		add_faith_minority_effect = {
-			FAITH = faith:dravida_saiva
-			SIZE = large
-			COUNTY = title:c_korkai
-		}
+		# add_faith_minority_effect = { # TFE-ROA: This minority assignment is repeated above, and that got commented out, so commenting this out as well
+		# 	FAITH = faith:dravida_saiva
+		# 	SIZE = large
+		# 	COUNTY = title:c_korkai
+		# }
 
 		# Digambaras in Tamilakam
 		add_faith_minority_effect = {
@@ -547,21 +547,21 @@ set_minorities_game_start = {
 			SIZE = large
 			COUNTY = title:c_cholamandalam
 		}
-		add_faith_minority_effect = {
-			FAITH = faith:digambara
-			SIZE = large
-			COUNTY = title:c_korkai
-		}
+		# add_faith_minority_effect = { # TFE-ROA: TFE has this county made by taking most of the baronies from c_madurai, and it doesn't exist in ROA. I am commenting this out since c_madurai already gets this minority
+		# 	FAITH = faith:digambara
+		# 	SIZE = large
+		# 	COUNTY = title:c_korkai
+		# }
 		add_faith_minority_effect = {
 			FAITH = faith:digambara
 			SIZE = large
 			COUNTY = title:c_madurai
 		}
-		add_faith_minority_effect = {
-			FAITH = faith:dravida_saiva
-			SIZE = large
-			COUNTY = title:c_korkai
-		}
+		# add_faith_minority_effect = { # TFE-ROA: This minority assignment is repeated above, and that got commented out, so commenting this out as well
+		# 	FAITH = faith:dravida_saiva
+		# 	SIZE = large
+		# 	COUNTY = title:c_korkai
+		# }
 
 		# Tamils in Tambapanni
 		add_culture_minority_effect = {
@@ -1064,7 +1064,7 @@ set_minorities_game_start = {
 		add_culture_minority_effect = {
 			CULTURE = culture:mon
 			SIZE = large
-			COUNTY = title:c_kusumi
+			COUNTY = title:c_kusima # TFE-ROA: TFE had this as c_kusumi, but in ROA the associated county is c_kusima
 		}
 
 		add_culture_minority_effect = {
@@ -1076,7 +1076,7 @@ set_minorities_game_start = {
 		add_faith_minority_effect = {
 			FAITH = faith:theravada
 			SIZE = large
-			COUNTY = title:c_kusumi
+			COUNTY = title:c_kusima # TFE-ROA: TFE had this as c_kusumi, but in ROA the associated county is c_kusima
 		}
 
 		add_faith_minority_effect = {
@@ -1234,11 +1234,11 @@ set_minorities_game_start = {
 		}
 
 		#Jews in Mesopotamia ##Add more later
-		add_faith_minority_effect = {
-			FAITH = faith:malabarism
-			SIZE = large
-			COUNTY = title:c_ctesiphon
-		}
+		# add_faith_minority_effect = { # TFE-ROA: ROA doesn't have this county, its baronies were taken from c_baghdad and since that gets this minority already, I am commenting this out
+		# 	FAITH = faith:malabarism
+		# 	SIZE = large
+		# 	COUNTY = title:c_ctesiphon
+		# }
 
 		add_faith_minority_effect = {
 			FAITH = faith:malabarism
@@ -1415,27 +1415,27 @@ set_minorities_game_start = {
 		add_faith_minority_effect = {
 			FAITH = faith:manichean
 			SIZE = large
-			COUNTY = title:c_ctesiphon
+			COUNTY = title:c_baghdad # TFE-ROA: TFE has this as c_ctesiphon, but ROA doesn't have that county. It takes it baronies from c_baghdad
 		}
 		add_culture_minority_effect = {
 			CULTURE = culture:assyrian
 			SIZE = large
-			COUNTY = title:c_ctesiphon
+			COUNTY = title:c_baghdad # TFE-ROA: TFE has this as c_ctesiphon, but ROA doesn't have that county. It takes it baronies from c_baghdad
 		}
 		add_culture_minority_effect = {
 			CULTURE = culture:parthian
 			SIZE = small
-			COUNTY = title:c_ctesiphon
+			COUNTY = title:c_baghdad # TFE-ROA: TFE has this as c_ctesiphon, but ROA doesn't have that county. It takes it baronies from c_baghdad
 		}
 		add_culture_minority_effect = {
 			CULTURE = culture:aramean
 			SIZE = small
-			COUNTY = title:c_ctesiphon
+			COUNTY = title:c_baghdad # TFE-ROA: TFE has this as c_ctesiphon, but ROA doesn't have that county. It takes it baronies from c_baghdad
 		}
 		add_culture_minority_effect = {
 			CULTURE = culture:greek
 			SIZE = small
-			COUNTY = title:c_ctesiphon
+			COUNTY = title:c_baghdad # TFE-ROA: TFE has this as c_ctesiphon, but ROA doesn't have that county. It takes it baronies from c_baghdad
 		}
 		if = {
 			limit = {
@@ -1444,7 +1444,7 @@ set_minorities_game_start = {
 			add_faith_minority_effect = {
 				FAITH = faith:nicene
 				SIZE = large
-				COUNTY = title:c_ctesiphon
+				COUNTY = title:c_baghdad # TFE-ROA: TFE has this as c_ctesiphon, but ROA doesn't have that county. It takes it baronies from c_baghdad
 			}
 		}
 		if = {
@@ -1454,7 +1454,7 @@ set_minorities_game_start = {
 			add_faith_minority_effect = {
 				FAITH = faith:nestorian
 				SIZE = large
-				COUNTY = title:c_ctesiphon
+				COUNTY = title:c_baghdad # TFE-ROA: TFE has this as c_ctesiphon, but ROA doesn't have that county. It takes it baronies from c_baghdad
 			}
 		}
 
@@ -1611,12 +1611,12 @@ set_minorities_game_start = {
 		add_culture_minority_effect = {
 			CULTURE = culture:sogdian
 			SIZE = small
-			COUNTY = title:c_karashar
+			COUNTY = title:c_karasahr # TFE-ROA: TFE has this as c_karashar, but in ROA the associated county is c_karasahr
 		}
 		add_faith_minority_effect = {
 			FAITH = faith:khurmazta
 			SIZE = small
-			COUNTY = title:c_karashar
+			COUNTY = title:c_karasahr # TFE-ROA: TFE has this as c_karashar, but in ROA the associated county is c_karasahr
 		}
 		add_culture_minority_effect = {
 			CULTURE = culture:sogdian
@@ -2163,11 +2163,11 @@ set_minorities_game_start = {
 			SIZE = small
 			COUNTY = title:c_ahvaz
 		}
-		add_faith_minority_effect = {
-			FAITH = faith:south_mesopotamian_pagan
-			SIZE = large
-			COUNTY = title:c_ctesiphon
-		}
+		# add_faith_minority_effect = { # TFE-ROA: ROA doesn't have this county. TFE takes its baronies from c_baghdad, and that is assigned this minority already, so commenting this out for now
+		# 	FAITH = faith:south_mesopotamian_pagan
+		# 	SIZE = large
+		# 	COUNTY = title:c_ctesiphon
+		# }
 		add_faith_minority_effect = {
 			FAITH = faith:south_mesopotamian_pagan
 			SIZE = large
@@ -2382,11 +2382,11 @@ set_minorities_game_start = {
 		}
 
 		# Latins/Greeks in Sicily
-		add_culture_minority_effect = {
-			CULTURE = culture:greek
-			SIZE = large
-			COUNTY = title:c_trapani
-		}
+		# add_culture_minority_effect = { # TFE-ROA: TFE makes this county by taking b_trapani from being under c_palermo in ROA. Commenting out since c_palermo already gets this minority
+		# 	CULTURE = culture:greek
+		# 	SIZE = large
+		# 	COUNTY = title:c_trapani
+		# }
 		add_culture_minority_effect = {
 			CULTURE = culture:greek
 			SIZE = large

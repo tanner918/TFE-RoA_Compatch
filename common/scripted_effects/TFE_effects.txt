@@ -2851,16 +2851,16 @@ end_vandalic_war_africae_effect = {
 start_gothic_war_effect = {
 	if = {
 		limit = {
-			NOT = { title:c_trapani.holder = global_var:justinian_gothic_commander }
-			NOT = { title:c_trapani.holder = character:belisarius_001 }
+			NOT = { title:c_palermo.holder = global_var:justinian_gothic_commander } # TFE-ROA: TFE has this as c_trapani, but that doesn't exist in ROA. TFE takes b_trapani from being under c_palermo in ROA
+			NOT = { title:c_palermo.holder = character:belisarius_001 } # TFE-ROA: TFE has this as c_trapani, but that doesn't exist in ROA. TFE takes b_trapani from being under c_palermo in ROA
 			trigger_if = {
 				limit = {
 					exists = title:k_vandals.holder
 				}
-				NOT = { title:c_trapani.holder.top_liege = title:k_vandals.holder }
+				NOT = { title:c_palermo.holder.top_liege = title:k_vandals.holder } # TFE-ROA: TFE has this as c_trapani, but that doesn't exist in ROA. TFE takes b_trapani from being under c_palermo in ROA
 			}
 		}
-		title:c_trapani = {
+		title:c_palermo = { # TFE-ROA: TFE has this as c_trapani, but that doesn't exist in ROA. TFE takes b_trapani from being under c_palermo in ROA
 			save_temporary_scope_as = current_county
 		}
 		create_title_and_vassal_change = {

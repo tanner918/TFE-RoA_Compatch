@@ -7025,14 +7025,14 @@ on_resource_start = {
 				
 				}
 			}
-			title:c_korkai = {
-				add_county_modifier = {
-				modifier = cloth_resources_modifier
-				}
-				title_province = {
+			# title:c_korkai = { # TFE-ROA: TFE has this county, but it doesn't exist in ROA. Most of its baronies overlap with c_madurai in ROA, and that is already assigned a resource in this effect, so I am commenting this out just in case
+			# 	add_county_modifier = {
+			# 	modifier = cloth_resources_modifier
+			# 	}
+			# 	title_province = {
 				
-				}
-			}
+			# 	}
+			# }
 			title:c_cholamandalam = {
 				add_county_modifier = {
 				modifier = cloth_resources_modifier

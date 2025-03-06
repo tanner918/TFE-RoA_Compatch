@@ -605,7 +605,7 @@ TFE_yearly_global_pulse = {
 				current_date >= 488.1.1
 				NOT = { exists = global_var:mazdakism_spawned }
 			}
-			title:c_ctesiphon.holder = {
+			title:c_baghdad.holder = { # TFE-ROA: TFE has this as c_ctesiphon, but ROA doesn't have this county. Its baronies are taken from c_baghdad in ROA.
 				trigger_event = {
 					id = TFE_zoroastrian.0001
 					days = {30 50}
@@ -643,7 +643,7 @@ TFE_yearly_global_pulse = {
 				}
 				NOT = { exists = global_var:khurramism_spawned }
 			}
-			title:c_ctesiphon.holder = {
+			title:c_baghdad.holder = { # TFE-ROA: TFE has this as c_ctesiphon, but ROA doesn't have this county. Its baronies are taken from c_baghdad in ROA.
 				trigger_event = TFE_zoroastrian.0003
 			}
 			
@@ -695,7 +695,7 @@ TFE_yearly_global_pulse = {
 				}
 				NOT = { exists = global_var:zurvanism_spawned }
 			}
-			title:c_ctesiphon.holder = {
+			title:c_baghdad.holder = { # TFE-ROA: TFE has this as c_ctesiphon, but ROA doesn't have this county. Its baronies are taken from c_baghdad in ROA.
 				trigger_event = TFE_zoroastrian.0005
 			}
 			

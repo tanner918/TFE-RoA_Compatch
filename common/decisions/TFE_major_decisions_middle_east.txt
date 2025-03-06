@@ -787,12 +787,12 @@ set_capital_ctesiphon_decision = {
 		is_ruler = yes
 		is_landed_or_landless_administrative = yes
 		has_title = title:e_persia
-		NOT = { capital_county = { this = title:c_ctesiphon } }
+		NOT = { capital_county = { this = title:c_baghdad } } # TFE-ROA: TFE has this as c_ctesiphon, ROA doesn't have that county. TFE Takes its baronies from c_baghdad.
 		OR = {
-			title:c_ctesiphon.holder = { 	
+			title:c_baghdad.holder = {  # TFE-ROA: TFE has this as c_ctesiphon, ROA doesn't have that county. TFE Takes its baronies from c_baghdad.	
 				any_liege_or_above = { this = root }
 			}
-			title:c_ctesiphon.holder = { this = root }
+			title:c_baghdad.holder = { this = root } # TFE-ROA: TFE has this as c_ctesiphon, ROA doesn't have that county. TFE Takes its baronies from c_baghdad.
 		}
 		NOT = {
 			religion = religion:islam_religion
@@ -808,14 +808,14 @@ set_capital_ctesiphon_decision = {
 	effect = {
 		if = { #Usurp if not held personally.
 			limit = {
-				NOT = { title:c_ctesiphon.holder = { this = root } }
+				NOT = { title:c_baghdad.holder = { this = root } } # TFE-ROA: TFE has this as c_ctesiphon, ROA doesn't have that county. TFE Takes its baronies from c_baghdad.
 			}
 			create_title_and_vassal_change = {
 				type = returned
 				save_scope_as = change
 				add_claim_on_loss = no
 			}
-			title:c_ctesiphon = {
+			title:c_baghdad = { # TFE-ROA: TFE has this as c_ctesiphon, ROA doesn't have that county. TFE Takes its baronies from c_baghdad.
 				change_title_holder = {
 					holder = root
 					change = scope:change
@@ -824,7 +824,7 @@ set_capital_ctesiphon_decision = {
 			resolve_title_and_vassal_change = scope:change
 
 		}
-		set_realm_capital = title:c_ctesiphon
+		set_realm_capital = title:c_baghdad # TFE-ROA: TFE has this as c_ctesiphon, ROA doesn't have that county. TFE Takes its baronies from c_baghdad.
 		change_government = eranshar_government
 	}
 	

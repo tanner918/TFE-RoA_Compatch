@@ -735,7 +735,7 @@ germanic_events.0013 = {
 		scope:seller = {
 			every_sub_realm_county = {
 				limit = {
-					NOT = { this = title:c_trapani }
+					NOT = { this = title:c_palermo } # TFE-ROA: TFE has this as c_trapani, but ROA doesn't have that county. It takes b_trapani from c_palermo in ROA.
 					NOT = { this = title:c_malta }
 					duchy = title:d_sicily
 				}
@@ -763,7 +763,7 @@ germanic_events.0013 = {
 				limit = {
 					NOT = { holder = scope:seller }
 					OR = {
-						this = title:c_trapani
+						this = title:c_palermo # TFE-ROA: TFE has this as c_trapani, but ROA doesn't have that county. It takes b_trapani from c_palermo in ROA.
 						this = title:c_malta
 					}
 				}
@@ -782,7 +782,7 @@ germanic_events.0013 = {
 				limit = {
 					tier = tier_county
 					duchy = title:d_sicily
-					NOT = { this = title:c_trapani }
+					NOT = { this = title:c_palermo } # TFE-ROA: TFE has this as c_trapani, but ROA doesn't have that county. It takes b_trapani from c_palermo in ROA.
 					NOT = { this = title:c_malta }
 				}
 				create_title_and_vassal_change = {

@@ -92,7 +92,7 @@
 	}
 
 	on_victory = {
-		title:c_trapani = {
+		title:c_palermo = { # TFE-ROA: TFE has this as c_trapani, but that doesn't exist in ROA. TFE takes b_trapani from being under c_palermo in ROA
 			remove_county_modifier = roman_camps
 		}
 		scope:defender = {
@@ -402,7 +402,7 @@
 		scope:defender = { accolade_attacker_war_end_glory_gain_high_effect = yes }
 		scope:attacker = { show_pow_release_message_effect = yes }
 
-		title:c_trapani = {
+		title:c_palermo = { # TFE-ROA: TFE has this as c_trapani, but that doesn't exist in ROA. TFE takes b_trapani from being under c_palermo in ROA
 			remove_county_modifier = roman_camps
 		}
 
@@ -491,7 +491,7 @@
 		}
 		resolve_title_and_vassal_change = scope:change
 
-		title:c_trapani = {
+		title:c_palermo = { # TFE-ROA: TFE has this as c_trapani, but that doesn't exist in ROA. TFE takes b_trapani from being under c_palermo in ROA
 			save_temporary_scope_as = current_county
 		}
 		create_title_and_vassal_change = {

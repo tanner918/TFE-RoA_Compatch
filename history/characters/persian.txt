@@ -2360,7 +2360,7 @@ sassanid_60	= {
 		#add_pressed_claim = title:d_tabaristan
 		#add_pressed_claim = title:c_tabaristan
 		#add_pressed_claim = title:c_alamut
-		add_pressed_claim = title:c_daylam
+		#add_pressed_claim = title:c_daylam # TFE-ROA: TFE has this character get this claim. This county doesn't exist in ROA, and the baronies that make it up in TFE are split. The most likely replacement would be c_gilan since it is the capital of d_daylam in ROA, but not sure if it would make sense to have that replacement for this case.
 	}
 	771.1.1={
 		death=yes

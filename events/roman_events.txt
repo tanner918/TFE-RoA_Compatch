@@ -2192,7 +2192,7 @@ western_roman.0041 = {
 		}
 		resolve_title_and_vassal_change = scope:change
 
-		title:c_trapani = {
+		title:c_palermo = { # TFE-ROA: TFE has this as c_trapani, which doesn't exist in ROA. TFE takes b_trapani from being under c_palermo in ROA
 			save_temporary_scope_as = current_county
 		}
 		create_title_and_vassal_change = {
@@ -2300,7 +2300,7 @@ western_roman.0041 = {
 		}
 		resolve_title_and_vassal_change = scope:title_change
 
-		title:c_trapani = {
+		title:c_palermo = { # TFE-ROA: TFE has this as c_trapani, which doesn't exist in ROA. TFE takes b_trapani from being under c_palermo in ROA
 			save_temporary_scope_as = current_county
 		}
 		create_title_and_vassal_change = {
@@ -2430,7 +2430,7 @@ western_roman.0041 = {
 			TRIBUTARY = global_var:hildirix
 		}
 
-		title:c_trapani = {
+		title:c_palermo = { # TFE-ROA: TFE has this as c_trapani, which doesn't exist in ROA. TFE takes b_trapani from being under c_palermo in ROA
 			save_temporary_scope_as = current_county
 		}
 		create_title_and_vassal_change = {
@@ -2740,7 +2740,7 @@ western_roman.0044 = {
 			}
 		}
 
-		title:c_trapani = {
+		title:c_palermo = { # TFE-ROA: TFE has this as c_trapani, which doesn't exist in ROA. TFE takes b_trapani from being under c_palermo in ROA
 			save_temporary_scope_as = current_county
 		}
 		create_title_and_vassal_change = {
@@ -2765,7 +2765,7 @@ western_roman.0044 = {
 
 		every_held_title = {
 			limit = {
-				NOT = { this = title:c_trapani }
+				NOT = { this = title:c_palermo } # TFE-ROA: TFE has this as c_trapani, which doesn't exist in ROA. TFE takes b_trapani from being under c_palermo in ROA
 			}
 			add_to_list = titles_to_usurp
 		}
@@ -2849,7 +2849,7 @@ western_roman.0044 = {
 		}
 
 		#I hate admin
-		title:c_trapani = {
+		title:c_palermo = { # TFE-ROA: TFE has this as c_trapani, which doesn't exist in ROA. TFE takes b_trapani from being under c_palermo in ROA
 			save_temporary_scope_as = current_county
 		}
 		create_title_and_vassal_change = {
